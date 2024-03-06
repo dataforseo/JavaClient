@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KnowledgeGraphPartItemDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**text** | **String** | content within the item |  [optional] |
 |**links** | [**List&lt;LinkElement&gt;**](LinkElement.md) | link of the element |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

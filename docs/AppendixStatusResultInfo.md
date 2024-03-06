@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixStatusResultInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**status** | **String** | current status you can find all information about your API statuses for the last 60 days here the list of possible current statuses: major_outage partial_outage long_response_time long_execution_time webhook_delay send_delay |  [optional] |
 |**endpoints** | [**List&lt;AppendixStatusEndpointsInfo&gt;**](AppendixStatusEndpointsInfo.md) | array of objects that contain status information for API endpoints |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

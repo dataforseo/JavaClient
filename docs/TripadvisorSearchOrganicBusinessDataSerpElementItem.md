@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TripadvisorSearchOrganicBusinessDataSerpElementItem
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**priceRate** | **String** | average price rate |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ImagesSerpElementItem
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**relatedImageSearches** | [**List&lt;RelatedImageSearchesElement&gt;**](RelatedImageSearchesElement.md) | contains keywords and images related to the specified search term if there are none, equals null |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

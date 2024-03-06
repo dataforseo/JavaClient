@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleReviewsTaskPostRequestInfo
-
 
 ## Properties
 
@@ -22,5 +23,6 @@
 |**depth** | **Integer** | parsing depth optional field number of reviews in SERP we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten reviews in a row default value: 10 maximum value: 4490 |  [optional] |
 |**sortBy** | **String** | results sorting parameters optional field you can use this field to sort the results possible types of sorting: newest – sort by newest first highest_rating – sort by highest rating lowest_rating – sort by lowest rating relevant – sort by relevance default value: relevant |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

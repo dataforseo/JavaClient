@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsAmazonProductCompetitorsLiveResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsAmazonProductCompetitorsLiveItem&gt;**](DataforseoLabsAmazonProductCompetitorsLiveItem.md) | contains detected Amazon product competitors and related data |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

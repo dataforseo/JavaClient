@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleReviewsDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**feature** | **String** | the additional feature of the review |  [optional] |
 |**cid** | **String** | google-defined client id |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AmazonKeywordData
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**keywordInfo** | [**AmazonKeywordInfo**](AmazonKeywordInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

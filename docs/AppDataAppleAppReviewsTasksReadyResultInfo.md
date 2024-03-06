@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataAppleAppReviewsTasksReadyResultInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**endpointAdvanced** | **String** | URL for collecting the results of the Apple App Reviews task |  [optional] |
 |**endpointHtml** | **String** | URL for collecting the results of the Apple App Reviews HTML task if HTML tasks are not supported in the specified endpoint, the value will be null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

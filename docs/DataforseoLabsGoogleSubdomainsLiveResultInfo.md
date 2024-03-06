@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleSubdomainsLiveResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsSubdomainsLiveItem&gt;**](DataforseoLabsSubdomainsLiveItem.md) | contains subdomains and related data |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

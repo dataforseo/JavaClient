@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleHotelsDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**hotelIdentifier** | **String** | unique hotel identifier unique hotel identifier assigned by Google; example: \&quot;CgoIjaeSlI6CnNpVEAE\&quot; |  [optional] |
 |**url** | **String** | URL link |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

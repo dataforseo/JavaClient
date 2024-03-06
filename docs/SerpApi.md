@@ -1,3 +1,7 @@
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")
+
 # SerpApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -144,16 +148,16 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**youtubeVideoSubtitlesTasksFixed**](SerpApi.md#youtubeVideoSubtitlesTasksFixed) | **GET** /v3/serp/youtube/video_subtitles/tasks_fixed |  |
 | [**youtubeVideoSubtitlesTasksReady**](SerpApi.md#youtubeVideoSubtitlesTasksReady) | **GET** /v3/serp/youtube/video_subtitles/tasks_ready |  |
 
-
 <a id="aiSummary"></a>
+
 # **aiSummary**
+
 > SerpAiSummaryResponseInfo aiSummary(serpAiSummaryRequestInfo)
-
-
 
 ‌‌ The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt. To obtain results, you have to specify task_id, which you can find in the response to the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/ai_summary/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -205,23 +209,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="baiduOrganicTaskGetAdvanced"></a>
+
 # **baiduOrganicTaskGetAdvanced**
+
 > SerpBaiduOrganicTaskGetAdvancedResponseInfo baiduOrganicTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -273,23 +279,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="baiduOrganicTaskGetHtml"></a>
+
 # **baiduOrganicTaskGetHtml**
+
 > SerpBaiduOrganicTaskGetHtmlResponseInfo baiduOrganicTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -341,23 +349,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="baiduOrganicTaskGetRegular"></a>
+
 # **baiduOrganicTaskGetRegular**
+
 > SerpBaiduOrganicTaskGetRegularResponseInfo baiduOrganicTaskGetRegular(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -409,23 +419,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="baiduOrganicTaskPost"></a>
+
 # **baiduOrganicTaskPost**
+
 > SerpBaiduOrganicTaskPostResponseInfo baiduOrganicTaskPost(serpBaiduOrganicTaskPostRequestInfo)
-
-
 
 ‌‌ Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -477,23 +489,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="baiduOrganicTasksFixed"></a>
+
 # **baiduOrganicTasksFixed**
+
 > SerpBaiduOrganicTasksFixedResponseInfo baiduOrganicTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -529,6 +543,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -541,23 +556,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="baiduOrganicTasksReady"></a>
+
 # **baiduOrganicTasksReady**
+
 > SerpBaiduOrganicTasksReadyResponseInfo baiduOrganicTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -593,6 +610,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -605,23 +623,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingLocalPackLiveHtml"></a>
+
 # **bingLocalPackLiveHtml**
+
 > SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -673,23 +693,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingLocalPackLiveRegular"></a>
+
 # **bingLocalPackLiveRegular**
+
 > SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular(serpTaskRequestInfo)
-
-
 
 ‌‌ Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -741,23 +763,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingLocalPackTaskGetHtml"></a>
+
 # **bingLocalPackTaskGetHtml**
+
 > SerpBingLocalPackTaskGetHtmlResponseInfo bingLocalPackTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -809,23 +833,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingLocalPackTaskGetRegular"></a>
+
 # **bingLocalPackTaskGetRegular**
+
 > SerpBingLocalPackTaskGetRegularResponseInfo bingLocalPackTaskGetRegular(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -877,23 +903,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingLocalPackTaskPost"></a>
+
 # **bingLocalPackTaskPost**
+
 > SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -945,23 +973,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingLocalPackTasksFixed"></a>
+
 # **bingLocalPackTasksFixed**
+
 > SerpBingLocalPackTasksFixedResponseInfo bingLocalPackTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -997,6 +1027,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1009,23 +1040,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingLocalPackTasksReady"></a>
+
 # **bingLocalPackTasksReady**
+
 > SerpBingLocalPackTasksReadyResponseInfo bingLocalPackTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1061,6 +1094,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1073,23 +1107,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicLiveAdvanced"></a>
+
 # **bingOrganicLiveAdvanced**
+
 > SerpBingOrganicLiveAdvancedResponseInfo bingOrganicLiveAdvanced(serpTaskRequestInfo)
-
-
 
 ‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1141,23 +1177,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicLiveHtml"></a>
+
 # **bingOrganicLiveHtml**
+
 > SerpBingOrganicLiveHtmlResponseInfo bingOrganicLiveHtml(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1209,23 +1247,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicLiveRegular"></a>
+
 # **bingOrganicLiveRegular**
+
 > SerpBingOrganicLiveRegularResponseInfo bingOrganicLiveRegular(serpTaskRequestInfo)
-
-
 
 ‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/live/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1277,23 +1317,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicTaskGetAdvanced"></a>
+
 # **bingOrganicTaskGetAdvanced**
+
 > SerpBingOrganicTaskGetAdvancedResponseInfo bingOrganicTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1345,23 +1387,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicTaskGetHtml"></a>
+
 # **bingOrganicTaskGetHtml**
+
 > SerpBingOrganicTaskGetHtmlResponseInfo bingOrganicTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1413,23 +1457,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicTaskGetRegular"></a>
+
 # **bingOrganicTaskGetRegular**
+
 > SerpBingOrganicTaskGetRegularResponseInfo bingOrganicTaskGetRegular(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_get/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1481,23 +1527,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicTaskPost"></a>
+
 # **bingOrganicTaskPost**
+
 > SerpBingOrganicTaskPostResponseInfo bingOrganicTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1549,23 +1597,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicTasksFixed"></a>
+
 # **bingOrganicTasksFixed**
+
 > SerpBingOrganicTasksFixedResponseInfo bingOrganicTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1601,6 +1651,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1613,23 +1664,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingOrganicTasksReady"></a>
+
 # **bingOrganicTasksReady**
+
 > SerpBingOrganicTasksReadyResponseInfo bingOrganicTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1665,6 +1718,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1677,23 +1731,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetInfoLiveAdvanced"></a>
+
 # **googleDatasetInfoLiveAdvanced**
+
 > SerpGoogleDatasetInfoLiveAdvancedResponseInfo googleDatasetInfoLiveAdvanced(serpGoogleDatasetInfoLiveAdvancedRequestInfo)
-
-
 
 ‌ Live Google Dataset Info provides real-time data on the dataset you specify in the request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1745,23 +1801,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetInfoTaskGetAdvanced"></a>
+
 # **googleDatasetInfoTaskGetAdvanced**
+
 > SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo googleDatasetInfoTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1813,23 +1871,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetInfoTaskPost"></a>
+
 # **googleDatasetInfoTaskPost**
+
 > SerpGoogleDatasetInfoTaskPostResponseInfo googleDatasetInfoTaskPost(serpGoogleDatasetInfoTaskPostRequestInfo)
-
-
 
 ‌‌ Google Dataset Info API provides detailed information about the dataset you specify in the POST request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1881,23 +1941,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetInfoTasksFixed"></a>
+
 # **googleDatasetInfoTasksFixed**
+
 > SerpGoogleDatasetInfoTasksFixedResponseInfo googleDatasetInfoTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1933,6 +1995,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1945,23 +2008,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetInfoTasksReady"></a>
+
 # **googleDatasetInfoTasksReady**
+
 > SerpGoogleDatasetInfoTasksReadyResponseInfo googleDatasetInfoTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1997,6 +2062,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2009,23 +2075,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetSearchLiveAdvanced"></a>
+
 # **googleDatasetSearchLiveAdvanced**
+
 > SerpGoogleDatasetSearchLiveAdvancedResponseInfo googleDatasetSearchLiveAdvanced(serpGoogleDatasetSearchLiveAdvancedRequestInfo)
-
-
 
 ‌ Live Google Dataset Search provides real-time data on the top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2077,23 +2145,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetSearchTaskGetAdvanced"></a>
+
 # **googleDatasetSearchTaskGetAdvanced**
+
 > SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo googleDatasetSearchTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2145,23 +2215,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetSearchTaskPost"></a>
+
 # **googleDatasetSearchTaskPost**
+
 > SerpGoogleDatasetSearchTaskPostResponseInfo googleDatasetSearchTaskPost(serpGoogleDatasetSearchTaskPostRequestInfo)
-
-
 
 ‌‌ Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2213,23 +2285,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetSearchTasksFixed"></a>
+
 # **googleDatasetSearchTasksFixed**
+
 > SerpGoogleDatasetSearchTasksFixedResponseInfo googleDatasetSearchTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2265,6 +2339,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2277,23 +2352,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDatasetSearchTasksReady"></a>
+
 # **googleDatasetSearchTasksReady**
+
 > SerpGoogleDatasetSearchTasksReadyResponseInfo googleDatasetSearchTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2329,6 +2406,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2341,23 +2419,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleEventsLiveAdvanced"></a>
+
 # **googleEventsLiveAdvanced**
+
 > SerpGoogleEventsLiveAdvancedResponseInfo googleEventsLiveAdvanced(serpGoogleEventsLiveAdvancedRequestInfo)
-
-
 
 ‌‌ Live Google Events SERP provides real-time data from Google Events Search for the specified keyword and location. Note that Google Events SERP API works for the English language only. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2409,23 +2489,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleEventsTaskGetAdvanced"></a>
+
 # **googleEventsTaskGetAdvanced**
+
 > SerpGoogleEventsTaskGetAdvancedResponseInfo googleEventsTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2477,23 +2559,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleEventsTaskPost"></a>
+
 # **googleEventsTaskPost**
+
 > SerpGoogleEventsTaskPostResponseInfo googleEventsTaskPost(serpGoogleEventsTaskPostRequestInfo)
-
-
 
 ‌‌ Google Events SERP provides data from Google Events Search for the specified keyword and location (see the List of Locations). Note that Google Events SERP API works for the English language only. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2545,23 +2629,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleEventsTasksFixed"></a>
+
 # **googleEventsTasksFixed**
+
 > SerpGoogleEventsTasksFixedResponseInfo googleEventsTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2597,6 +2683,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2609,23 +2696,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleEventsTasksReady"></a>
+
 # **googleEventsTasksReady**
+
 > SerpGoogleEventsTasksReadyResponseInfo googleEventsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2661,6 +2750,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2673,23 +2763,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleImagesLiveAdvanced"></a>
+
 # **googleImagesLiveAdvanced**
+
 > SerpGoogleImagesLiveAdvancedResponseInfo googleImagesLiveAdvanced(serpTaskRequestInfo)
-
-
 
 ‌ Live Google Images SERP provides real-time data on top 100 images results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2741,23 +2833,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleImagesLiveHtml"></a>
+
 # **googleImagesLiveHtml**
+
 > SerpGoogleImagesLiveHtmlResponseInfo googleImagesLiveHtml(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2809,23 +2903,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleImagesTaskGetAdvanced"></a>
+
 # **googleImagesTaskGetAdvanced**
+
 > SerpGoogleImagesTaskGetAdvancedResponseInfo googleImagesTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2877,23 +2973,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleImagesTaskGetHtml"></a>
+
 # **googleImagesTaskGetHtml**
+
 > SerpGoogleImagesTaskGetHtmlResponseInfo googleImagesTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2945,23 +3043,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleImagesTaskPost"></a>
+
 # **googleImagesTaskPost**
+
 > SerpGoogleImagesTaskPostResponseInfo googleImagesTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3013,23 +3113,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleImagesTasksFixed"></a>
+
 # **googleImagesTasksFixed**
+
 > SerpGoogleImagesTasksFixedResponseInfo googleImagesTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3065,6 +3167,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3077,23 +3180,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleImagesTasksReady"></a>
+
 # **googleImagesTasksReady**
+
 > SerpGoogleImagesTasksReadyResponseInfo googleImagesTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3129,6 +3234,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3141,23 +3247,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleJobsTaskGetAdvanced"></a>
+
 # **googleJobsTaskGetAdvanced**
+
 > SerpGoogleJobsTaskGetAdvancedResponseInfo googleJobsTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3209,23 +3317,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleJobsTaskGetHtml"></a>
+
 # **googleJobsTaskGetHtml**
+
 > SerpGoogleJobsTaskGetHtmlResponseInfo googleJobsTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3277,23 +3387,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleJobsTaskPost"></a>
+
 # **googleJobsTaskPost**
+
 > SerpGoogleJobsTaskPostResponseInfo googleJobsTaskPost(serpGoogleJobsTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint will provide you with SERP data from the Google Jobs search engine. The returned results are specific to the keyword as well as the language and location parameters of the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3345,23 +3457,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleJobsTasksFixed"></a>
+
 # **googleJobsTasksFixed**
+
 > SerpGoogleJobsTasksFixedResponseInfo googleJobsTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3397,6 +3511,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3409,23 +3524,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleJobsTasksReady"></a>
+
 # **googleJobsTasksReady**
+
 > SerpGoogleJobsTasksReadyResponseInfo googleJobsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3461,6 +3578,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3473,23 +3591,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleLocalFinderLiveAdvanced"></a>
+
 # **googleLocalFinderLiveAdvanced**
+
 > SerpGoogleLocalFinderLiveAdvancedResponseInfo googleLocalFinderLiveAdvanced(serpGoogleLocalFinderLiveAdvancedRequestInfo)
-
-
 
 ‌‌ Live Google Local finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3541,23 +3661,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleLocalFinderLiveHtml"></a>
+
 # **googleLocalFinderLiveHtml**
+
 > SerpGoogleLocalFinderLiveHtmlResponseInfo googleLocalFinderLiveHtml(serpGoogleLocalFinderLiveHtmlRequestInfo)
-
-
 
 ‌ Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3609,23 +3731,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleLocalFinderTaskGetAdvanced"></a>
+
 # **googleLocalFinderTaskGetAdvanced**
+
 > SerpGoogleLocalFinderTaskGetAdvancedResponseInfo googleLocalFinderTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3677,23 +3801,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleLocalFinderTaskGetHtml"></a>
+
 # **googleLocalFinderTaskGetHtml**
+
 > SerpGoogleLocalFinderTaskGetHtmlResponseInfo googleLocalFinderTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3745,23 +3871,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleLocalFinderTaskPost"></a>
+
 # **googleLocalFinderTaskPost**
+
 > SerpGoogleLocalFinderTaskPostResponseInfo googleLocalFinderTaskPost(serpGoogleLocalFinderTaskPostRequestInfo)
-
-
 
 ‌‌ Google Local Finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3813,23 +3941,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleLocalFinderTasksFixed"></a>
+
 # **googleLocalFinderTasksFixed**
+
 > SerpGoogleLocalFinderTasksFixedResponseInfo googleLocalFinderTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3865,6 +3995,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3877,23 +4008,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleLocalFinderTasksReady"></a>
+
 # **googleLocalFinderTasksReady**
+
 > SerpGoogleLocalFinderTasksReadyResponseInfo googleLocalFinderTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3929,6 +4062,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3941,23 +4075,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMapsLiveAdvanced"></a>
+
 # **googleMapsLiveAdvanced**
+
 > SerpGoogleMapsLiveAdvancedResponseInfo googleMapsLiveAdvanced(serpGoogleMapsLiveAdvancedRequestInfo)
-
-
 
 ‌‌ Live Google Maps SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4009,23 +4145,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMapsTaskGetAdvanced"></a>
+
 # **googleMapsTaskGetAdvanced**
+
 > SerpGoogleMapsTaskGetAdvancedResponseInfo googleMapsTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4077,23 +4215,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMapsTaskPost"></a>
+
 # **googleMapsTaskPost**
+
 > SerpGoogleMapsTaskPostResponseInfo googleMapsTaskPost(serpGoogleMapsTaskPostRequestInfo)
-
-
 
 ‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4145,23 +4285,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMapsTasksFixed"></a>
+
 # **googleMapsTasksFixed**
+
 > SerpGoogleMapsTasksFixedResponseInfo googleMapsTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4197,6 +4339,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -4209,23 +4352,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMapsTasksReady"></a>
+
 # **googleMapsTasksReady**
+
 > SerpGoogleMapsTasksReadyResponseInfo googleMapsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4261,6 +4406,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -4273,23 +4419,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleNewsLiveAdvanced"></a>
+
 # **googleNewsLiveAdvanced**
+
 > SerpGoogleNewsLiveAdvancedResponseInfo googleNewsLiveAdvanced(serpTaskRequestInfo)
-
-
 
 ‌‌ Live Google News SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4341,23 +4489,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleNewsLiveHtml"></a>
+
 # **googleNewsLiveHtml**
+
 > SerpGoogleNewsLiveHtmlResponseInfo googleNewsLiveHtml(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4409,23 +4559,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleNewsTaskGetAdvanced"></a>
+
 # **googleNewsTaskGetAdvanced**
+
 > SerpGoogleNewsTaskGetAdvancedResponseInfo googleNewsTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4477,23 +4629,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleNewsTaskGetHtml"></a>
+
 # **googleNewsTaskGetHtml**
+
 > SerpGoogleNewsTaskGetHtmlResponseInfo googleNewsTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4545,23 +4699,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleNewsTaskPost"></a>
+
 # **googleNewsTaskPost**
+
 > SerpGoogleNewsTaskPostResponseInfo googleNewsTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4613,23 +4769,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleNewsTasksFixed"></a>
+
 # **googleNewsTasksFixed**
+
 > SerpGoogleNewsTasksFixedResponseInfo googleNewsTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4665,6 +4823,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -4677,23 +4836,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleNewsTasksReady"></a>
+
 # **googleNewsTasksReady**
+
 > SerpGoogleNewsTasksReadyResponseInfo googleNewsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4729,6 +4890,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -4741,23 +4903,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicLiveAdvanced"></a>
+
 # **googleOrganicLiveAdvanced**
+
 > SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4809,23 +4973,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicLiveHtml"></a>
+
 # **googleOrganicLiveHtml**
+
 > SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4877,23 +5043,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicLiveRegular"></a>
+
 # **googleOrganicLiveRegular**
+
 > SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular(serpTaskRequestInfo)
-
-
 
 ‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -4945,23 +5113,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicTaskGetAdvanced"></a>
+
 # **googleOrganicTaskGetAdvanced**
+
 > SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5013,23 +5183,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicTaskGetHtml"></a>
+
 # **googleOrganicTaskGetHtml**
+
 > SerpGoogleOrganicTaskGetHtmlResponseInfo googleOrganicTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5081,23 +5253,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicTaskGetRegular"></a>
+
 # **googleOrganicTaskGetRegular**
+
 > SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_get/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5149,23 +5323,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicTaskPost"></a>
+
 # **googleOrganicTaskPost**
+
 > SerpGoogleOrganicTaskPostResponseInfo googleOrganicTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5217,23 +5393,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicTasksFixed"></a>
+
 # **googleOrganicTasksFixed**
+
 > SerpGoogleOrganicTasksFixedResponseInfo googleOrganicTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5269,6 +5447,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -5281,23 +5460,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleOrganicTasksReady"></a>
+
 # **googleOrganicTasksReady**
+
 > SerpGoogleOrganicTasksReadyResponseInfo googleOrganicTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5333,6 +5514,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -5345,23 +5527,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSearchByImageTaskGetAdvanced"></a>
+
 # **googleSearchByImageTaskGetAdvanced**
+
 > SerpGoogleSearchByImageTaskGetAdvancedResponseInfo googleSearchByImageTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5413,23 +5597,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSearchByImageTaskPost"></a>
+
 # **googleSearchByImageTaskPost**
+
 > SerpGoogleSearchByImageTaskPostResponseInfo googleSearchByImageTaskPost(serpGoogleSearchByImageTaskPostRequestInfo)
-
-
 
 ‌‌ Google Search By Image SERP API provides up to top 100 search engine results based on the image you specified. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5481,23 +5667,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSearchByImageTasksFixed"></a>
+
 # **googleSearchByImageTasksFixed**
+
 > SerpGoogleSearchByImageTasksFixedResponseInfo googleSearchByImageTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5533,6 +5721,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -5545,23 +5734,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSearchByImageTasksReady"></a>
+
 # **googleSearchByImageTasksReady**
+
 > SerpGoogleSearchByImageTasksReadyResponseInfo googleSearchByImageTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5597,6 +5788,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -5609,23 +5801,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="naverOrganicTaskGetAdvanced"></a>
+
 # **naverOrganicTaskGetAdvanced**
+
 > SerpNaverOrganicTaskGetAdvancedResponseInfo naverOrganicTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5677,23 +5871,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="naverOrganicTaskGetHtml"></a>
+
 # **naverOrganicTaskGetHtml**
+
 > SerpNaverOrganicTaskGetHtmlResponseInfo naverOrganicTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5745,23 +5941,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="naverOrganicTaskGetRegular"></a>
+
 # **naverOrganicTaskGetRegular**
+
 > SerpNaverOrganicTaskGetRegularResponseInfo naverOrganicTaskGetRegular(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_get/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5813,23 +6011,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="naverOrganicTaskPost"></a>
+
 # **naverOrganicTaskPost**
+
 > SerpNaverOrganicTaskPostResponseInfo naverOrganicTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ Naver SERP API provides top 100 search engine results. Naver search results do not vary by location and language, and the search parameters for this search engine do not contain language and location variables. However, you can specify a keyword in any language, and the search engine results may vary depending on the language you used for specifying the search query. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5881,23 +6081,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="naverOrganicTasksFixed"></a>
+
 # **naverOrganicTasksFixed**
+
 > SerpNaverOrganicTasksFixedResponseInfo naverOrganicTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5933,6 +6135,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -5945,23 +6148,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="naverOrganicTasksReady"></a>
+
 # **naverOrganicTasksReady**
+
 > SerpNaverOrganicTasksReadyResponseInfo naverOrganicTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -5997,6 +6202,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6009,23 +6215,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="screenshot"></a>
+
 # **screenshot**
+
 > SerpScreenshotResponseInfo screenshot(serpScreenshotRequestInfo)
-
-
 
 ‌‌ Using the Live Page Screenshot endpoint, you can capture a screenshot of any SERP page. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/screenshot/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6077,23 +6285,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpBaiduLanguages"></a>
+
 # **serpBaiduLanguages**
+
 > SerpBaiduLanguagesResponseInfo serpBaiduLanguages()
-
-
 
 You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02). for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6129,6 +6339,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6141,23 +6352,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpBaiduLocations"></a>
+
 # **serpBaiduLocations**
+
 > SerpBaiduLocationsResponseInfo serpBaiduLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6193,6 +6406,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6205,23 +6419,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpBaiduLocationsCountry"></a>
+
 # **serpBaiduLocationsCountry**
+
 > SerpBaiduLocationsCountryResponseInfo serpBaiduLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6273,23 +6489,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpBingLanguages"></a>
+
 # **serpBingLanguages**
+
 > SerpBingLanguagesResponseInfo serpBingLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6325,6 +6543,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6337,23 +6556,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpBingLocations"></a>
+
 # **serpBingLocations**
+
 > SerpBingLocationsResponseInfo serpBingLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6389,6 +6610,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6401,23 +6623,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpBingLocationsCountry"></a>
+
 # **serpBingLocationsCountry**
+
 > SerpBingLocationsCountryResponseInfo serpBingLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6469,23 +6693,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpErrors"></a>
+
 # **serpErrors**
+
 > SerpErrorsResponseInfo serpErrors(serpErrorsRequestInfo)
-
-
 
 By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/errors/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6537,23 +6763,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpGoogleLanguages"></a>
+
 # **serpGoogleLanguages**
+
 > SerpGoogleLanguagesResponseInfo serpGoogleLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6589,6 +6817,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6601,23 +6830,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpGoogleLocations"></a>
+
 # **serpGoogleLocations**
+
 > SerpGoogleLocationsResponseInfo serpGoogleLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6653,6 +6884,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6665,23 +6897,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpGoogleLocationsCountry"></a>
+
 # **serpGoogleLocationsCountry**
+
 > SerpGoogleLocationsCountryResponseInfo serpGoogleLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6733,23 +6967,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpIdList"></a>
+
 # **serpIdList**
+
 > SerpIdListResponseInfo serpIdList(serpIdListRequestInfo)
-
-
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed SERP tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/id_list/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6801,23 +7037,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpSeznamLanguages"></a>
+
 # **serpSeznamLanguages**
+
 > SerpSeznamLanguagesResponseInfo serpSeznamLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6853,6 +7091,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6865,23 +7104,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpSeznamLocations"></a>
+
 # **serpSeznamLocations**
+
 > SerpSeznamLocationsResponseInfo serpSeznamLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6917,6 +7158,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -6929,23 +7171,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpSeznamLocationsCountry"></a>
+
 # **serpSeznamLocationsCountry**
+
 > SerpSeznamLocationsCountryResponseInfo serpSeznamLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -6997,23 +7241,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpYahooLanguages"></a>
+
 # **serpYahooLanguages**
+
 > SerpYahooLanguagesResponseInfo serpYahooLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7049,6 +7295,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -7061,23 +7308,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpYahooLocations"></a>
+
 # **serpYahooLocations**
+
 > SerpYahooLocationsResponseInfo serpYahooLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7113,6 +7362,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -7125,23 +7375,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpYahooLocationsCountry"></a>
+
 # **serpYahooLocationsCountry**
+
 > SerpYahooLocationsCountryResponseInfo serpYahooLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7193,23 +7445,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpYoutubeLanguages"></a>
+
 # **serpYoutubeLanguages**
+
 > SerpYoutubeLanguagesResponseInfo serpYoutubeLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7245,6 +7499,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -7257,23 +7512,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpYoutubeLocations"></a>
+
 # **serpYoutubeLocations**
+
 > SerpYoutubeLocationsResponseInfo serpYoutubeLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7309,6 +7566,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -7321,23 +7579,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="serpYoutubeLocationsCountry"></a>
+
 # **serpYoutubeLocationsCountry**
+
 > SerpYoutubeLocationsCountryResponseInfo serpYoutubeLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7389,23 +7649,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="seznamOrganicTaskGetAdvanced"></a>
+
 # **seznamOrganicTaskGetAdvanced**
+
 > SerpSeznamOrganicTaskGetAdvancedResponseInfo seznamOrganicTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7457,23 +7719,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="seznamOrganicTaskGetHtml"></a>
+
 # **seznamOrganicTaskGetHtml**
+
 > SerpSeznamOrganicTaskGetHtmlResponseInfo seznamOrganicTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7525,23 +7789,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="seznamOrganicTaskGetRegular"></a>
+
 # **seznamOrganicTaskGetRegular**
+
 > SerpSeznamOrganicTaskGetRegularResponseInfo seznamOrganicTaskGetRegular(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7593,23 +7859,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="seznamOrganicTaskPost"></a>
+
 # **seznamOrganicTaskPost**
+
 > SerpSeznamOrganicTaskPostResponseInfo seznamOrganicTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ Seznam SERP API provides top 10 search engine results from one of the most popular search engines in the Czech Republic. Seznam is focused on the local search market, and thus supports the Czech language only. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7661,23 +7929,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="seznamOrganicTasksFixed"></a>
+
 # **seznamOrganicTasksFixed**
+
 > SerpSeznamOrganicTasksFixedResponseInfo seznamOrganicTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7713,6 +7983,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -7725,23 +7996,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="seznamOrganicTasksReady"></a>
+
 # **seznamOrganicTasksReady**
+
 > SerpSeznamOrganicTasksReadyResponseInfo seznamOrganicTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7777,6 +8050,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -7789,23 +8063,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicLiveAdvanced"></a>
+
 # **yahooOrganicLiveAdvanced**
+
 > SerpYahooOrganicLiveAdvancedResponseInfo yahooOrganicLiveAdvanced(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7857,23 +8133,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicLiveHtml"></a>
+
 # **yahooOrganicLiveHtml**
+
 > SerpYahooOrganicLiveHtmlResponseInfo yahooOrganicLiveHtml(serpTaskRequestInfo)
-
-
 
 ‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7925,23 +8203,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicLiveRegular"></a>
+
 # **yahooOrganicLiveRegular**
+
 > SerpYahooOrganicLiveRegularResponseInfo yahooOrganicLiveRegular(serpTaskRequestInfo)
-
-
 
 ‌‌ Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -7993,23 +8273,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicTaskGetAdvanced"></a>
+
 # **yahooOrganicTaskGetAdvanced**
+
 > SerpYahooOrganicTaskGetAdvancedResponseInfo yahooOrganicTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8061,23 +8343,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicTaskGetHtml"></a>
+
 # **yahooOrganicTaskGetHtml**
+
 > SerpYahooOrganicTaskGetHtmlResponseInfo yahooOrganicTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8129,23 +8413,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicTaskGetRegular"></a>
+
 # **yahooOrganicTaskGetRegular**
+
 > SerpYahooOrganicTaskGetRegularResponseInfo yahooOrganicTaskGetRegular(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/regular/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8197,23 +8483,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicTaskPost"></a>
+
 # **yahooOrganicTaskPost**
+
 > SerpYahooOrganicTaskPostResponseInfo yahooOrganicTaskPost(serpTaskRequestInfo)
-
-
 
 ‌‌ SERP API provides top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8265,23 +8553,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicTasksFixed"></a>
+
 # **yahooOrganicTasksFixed**
+
 > SerpYahooOrganicTasksFixedResponseInfo yahooOrganicTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8317,6 +8607,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -8329,23 +8620,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yahooOrganicTasksReady"></a>
+
 # **yahooOrganicTasksReady**
+
 > SerpYahooOrganicTasksReadyResponseInfo yahooOrganicTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8381,6 +8674,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -8393,23 +8687,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoCommentsLiveAdvanced"></a>
+
 # **youtubeVideoCommentsLiveAdvanced**
+
 > SerpYoutubeVideoCommentsLiveAdvancedResponseInfo youtubeVideoCommentsLiveAdvanced(serpYoutubeVideoCommentsLiveAdvancedRequestInfo)
-
-
 
 ‌ Live YouTube Comments provides real-time data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8461,23 +8757,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoCommentsTaskGetAdvanced"></a>
+
 # **youtubeVideoCommentsTaskGetAdvanced**
+
 > SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo youtubeVideoCommentsTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8529,23 +8827,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoCommentsTaskPost"></a>
+
 # **youtubeVideoCommentsTaskPost**
+
 > SerpYoutubeVideoCommentsTaskPostResponseInfo youtubeVideoCommentsTaskPost(serpYoutubeVideoCommentsTaskPostRequestInfo)
-
-
 
 ‌‌ YouTube Comments API provides data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8597,23 +8897,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoCommentsTasksFixed"></a>
+
 # **youtubeVideoCommentsTasksFixed**
+
 > SerpYoutubeVideoCommentsTasksFixedResponseInfo youtubeVideoCommentsTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8649,6 +8951,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -8661,23 +8964,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoCommentsTasksReady"></a>
+
 # **youtubeVideoCommentsTasksReady**
+
 > SerpYoutubeVideoCommentsTasksReadyResponseInfo youtubeVideoCommentsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8713,6 +9018,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -8725,23 +9031,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoInfoLiveAdvanced"></a>
+
 # **youtubeVideoInfoLiveAdvanced**
+
 > SerpYoutubeVideoInfoLiveAdvancedResponseInfo youtubeVideoInfoLiveAdvanced(serpYoutubeVideoInfoLiveAdvancedRequestInfo)
-
-
 
 ‌ Live YouTube Video Info provides real-time data on the video you specify in the request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8793,23 +9101,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoInfoTaskGetAdvanced"></a>
+
 # **youtubeVideoInfoTaskGetAdvanced**
+
 > SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo youtubeVideoInfoTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8861,23 +9171,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoInfoTaskPost"></a>
+
 # **youtubeVideoInfoTaskPost**
+
 > SerpYoutubeVideoInfoTaskPostResponseInfo youtubeVideoInfoTaskPost(serpYoutubeVideoInfoTaskPostRequestInfo)
-
-
 
 ‌‌ YouTube Video Info API provides detailed information about the video you specify in the POST request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8929,23 +9241,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoInfoTasksFixed"></a>
+
 # **youtubeVideoInfoTasksFixed**
+
 > SerpYoutubeVideoInfoTasksFixedResponseInfo youtubeVideoInfoTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -8981,6 +9295,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -8993,23 +9308,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoInfoTasksReady"></a>
+
 # **youtubeVideoInfoTasksReady**
+
 > SerpYoutubeVideoInfoTasksReadyResponseInfo youtubeVideoInfoTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -9045,6 +9362,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -9057,23 +9375,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoSubtitlesLiveAdvanced"></a>
+
 # **youtubeVideoSubtitlesLiveAdvanced**
+
 > SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo youtubeVideoSubtitlesLiveAdvanced(serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo)
-
-
 
 ‌ Live YouTube Subtitles provides real-time data on subtitles in the video you specify in the request. You will get data from the watching page containing subtitled text, its language, and duration in the video. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -9125,23 +9445,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoSubtitlesTaskGetAdvanced"></a>
+
 # **youtubeVideoSubtitlesTaskGetAdvanced**
+
 > SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo youtubeVideoSubtitlesTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -9193,23 +9515,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoSubtitlesTaskPost"></a>
+
 # **youtubeVideoSubtitlesTaskPost**
+
 > SerpYoutubeVideoSubtitlesTaskPostResponseInfo youtubeVideoSubtitlesTaskPost(serpYoutubeVideoSubtitlesTaskPostRequestInfo)
-
-
 
 ‌‌ YouTube Subtitles API provides data on all subtitles in the video you specify in the POST request. You will get data from the watching page containing subtitled text, its language, and duration in the video. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -9261,23 +9585,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoSubtitlesTasksFixed"></a>
+
 # **youtubeVideoSubtitlesTasksFixed**
+
 > SerpYoutubeVideoSubtitlesTasksFixedResponseInfo youtubeVideoSubtitlesTasksFixed()
-
-
 
 ‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_fixed/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -9313,6 +9639,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -9325,23 +9652,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="youtubeVideoSubtitlesTasksReady"></a>
+
 # **youtubeVideoSubtitlesTasksReady**
+
 > SerpYoutubeVideoSubtitlesTasksReadyResponseInfo youtubeVideoSubtitlesTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -9377,6 +9706,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -9389,11 +9719,15 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")

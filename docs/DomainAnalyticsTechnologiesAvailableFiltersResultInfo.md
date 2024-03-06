@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainAnalyticsTechnologiesAvailableFiltersResultInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**technologiesSummary** | **Map&lt;String, String&gt;** |  |  [optional] |
 |**domainsByHtmlTerms** | **Map&lt;String, String&gt;** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

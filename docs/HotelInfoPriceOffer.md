@@ -1,4 +1,6 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HotelInfoPriceOffer
 
@@ -17,5 +19,6 @@ featured price offers
 |**offerImages** | **List&lt;String&gt;** | price offer images URLs of the images featured in the price offer |  [optional] |
 |**freeCancellationUntil** | **String** | date until free cancellation is available in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” equals null if free cancellation is not available for the selected dates |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

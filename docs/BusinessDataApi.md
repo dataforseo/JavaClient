@@ -1,3 +1,7 @@
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")
+
 # BusinessDataApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -61,16 +65,16 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**yelpSearchTaskPost**](BusinessDataApi.md#yelpSearchTaskPost) | **POST** /v3/business_data/yelp/search/task_post |  |
 | [**yelpSearchTasksReady**](BusinessDataApi.md#yelpSearchTasksReady) | **GET** /v3/business_data/yelp/search/tasks_ready |  |
 
-
 <a id="businessDataBusinessListingsLocations"></a>
+
 # **businessDataBusinessListingsLocations**
+
 > BusinessDataBusinessListingsLocationsResponseInfo businessDataBusinessListingsLocations()
-
-
 
 You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2023-12-29). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -106,6 +110,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -118,23 +123,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataErrors"></a>
+
 # **businessDataErrors**
+
 > BusinessDataErrorsResponseInfo businessDataErrors(businessDataErrorsRequestInfo)
-
-
 
 By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -186,23 +193,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataGoogleLanguages"></a>
+
 # **businessDataGoogleLanguages**
+
 > BusinessDataGoogleLanguagesResponseInfo businessDataGoogleLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -238,6 +247,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -250,23 +260,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataGoogleLocations"></a>
+
 # **businessDataGoogleLocations**
+
 > BusinessDataGoogleLocationsResponseInfo businessDataGoogleLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -302,6 +314,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -314,23 +327,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataGoogleLocationsCountry"></a>
+
 # **businessDataGoogleLocationsCountry**
+
 > BusinessDataGoogleLocationsCountryResponseInfo businessDataGoogleLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -382,23 +397,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataIdList"></a>
+
 # **businessDataIdList**
+
 > BusinessDataIdListResponseInfo businessDataIdList(businessDataIdListRequestInfo)
-
-
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Business Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/id_list/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -450,23 +467,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataTripadvisorLanguages"></a>
+
 # **businessDataTripadvisorLanguages**
+
 > BusinessDataTripadvisorLanguagesResponseInfo businessDataTripadvisorLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -502,6 +521,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -514,23 +534,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataTripadvisorLocations"></a>
+
 # **businessDataTripadvisorLocations**
+
 > BusinessDataTripadvisorLocationsResponseInfo businessDataTripadvisorLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -566,6 +588,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -578,23 +601,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataTripadvisorLocationsCountry"></a>
+
 # **businessDataTripadvisorLocationsCountry**
+
 > BusinessDataTripadvisorLocationsCountryResponseInfo businessDataTripadvisorLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. Note that supported location types in Tripadvisor Business Data API are City and Region only. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -646,23 +671,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataYelpLanguages"></a>
+
 # **businessDataYelpLanguages**
+
 > BusinessDataYelpLanguagesResponseInfo businessDataYelpLanguages()
-
-
 
 You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -698,6 +725,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -710,23 +738,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataYelpLocations"></a>
+
 # **businessDataYelpLocations**
+
 > BusinessDataYelpLocationsResponseInfo businessDataYelpLocations()
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -762,6 +792,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -774,23 +805,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessDataYelpLocationsCountry"></a>
+
 # **businessDataYelpLocationsCountry**
+
 > BusinessDataYelpLocationsCountryResponseInfo businessDataYelpLocationsCountry(country)
-
-
 
 You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -842,23 +875,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessListingsAvailableFilters"></a>
+
 # **businessListingsAvailableFilters**
+
 > BusinessDataBusinessListingsAvailableFiltersResponseInfo businessListingsAvailableFilters()
-
-
 
 ‌‌ Here you will find all the necessary information about filters that can be used with Business Listings API. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/filters/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -894,6 +929,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -906,23 +942,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessListingsCategories"></a>
+
 # **businessListingsCategories**
+
 > BusinessDataBusinessListingsCategoriesResponseInfo businessListingsCategories()
-
-
 
 This endpoint will provide you with the list of top categories by business count. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/categories/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -958,6 +996,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -970,23 +1009,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessListingsCategoriesAggregationLive"></a>
+
 # **businessListingsCategoriesAggregationLive**
+
 > BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo businessListingsCategoriesAggregationLive(businessDataBusinessListingsCategoriesAggregationLiveRequestInfo)
-
-
 
 ‌‌ Business Listings Categories Aggregation endpoint provides results containing information about groups of related categories along with the number of entities in each category. The provided results are specific to the specified parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/categories_aggregation/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1038,23 +1079,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="businessListingsSearchLive"></a>
+
 # **businessListingsSearchLive**
+
 > BusinessDataBusinessListingsSearchLiveResponseInfo businessListingsSearchLive(businessDataBusinessListingsSearchLiveRequestInfo)
-
-
 
 ‌‌ Business Listings Search API provides results containing information about business entities listed on Google Maps in the specified categories. You will receive the address, contacts, rating, working hours, and other relevant data. The provided results are specific to the selected location (see the List of Locations) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/search/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1106,23 +1149,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelInfoLiveAdvanced"></a>
+
 # **googleHotelInfoLiveAdvanced**
+
 > BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo googleHotelInfoLiveAdvanced(businessDataGoogleHotelInfoLiveAdvancedRequestInfo)
-
-
 
 ‌‌ Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1174,23 +1219,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelInfoLiveHtml"></a>
+
 # **googleHotelInfoLiveHtml**
+
 > BusinessDataGoogleHotelInfoLiveHtmlResponseInfo googleHotelInfoLiveHtml(businessDataGoogleHotelInfoLiveHtmlRequestInfo)
-
-
 
 ‌‌ Google Hotel Info will provide you with unstructured HTML data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1242,23 +1289,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelInfoTaskGetAdvanced"></a>
+
 # **googleHotelInfoTaskGetAdvanced**
+
 > BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo googleHotelInfoTaskGetAdvanced(id)
-
-
 
 for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1310,23 +1359,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelInfoTaskGetHtml"></a>
+
 # **googleHotelInfoTaskGetHtml**
+
 > BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo googleHotelInfoTaskGetHtml(id)
-
-
 
 for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1378,23 +1429,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelInfoTaskPost"></a>
+
 # **googleHotelInfoTaskPost**
+
 > BusinessDataGoogleHotelInfoTaskPostResponseInfo googleHotelInfoTaskPost(businessDataGoogleHotelInfoTaskPostRequestInfo)
-
-
 
 ‌‌ Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_info/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1446,23 +1499,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelInfoTasksReady"></a>
+
 # **googleHotelInfoTasksReady**
+
 > BusinessDataGoogleHotelInfoTasksReadyResponseInfo googleHotelInfoTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_info/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1498,6 +1553,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1510,23 +1566,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelSearchesLive"></a>
+
 # **googleHotelSearchesLive**
+
 > BusinessDataGoogleHotelSearchesLiveResponseInfo googleHotelSearchesLive(businessDataGoogleHotelSearchesLiveRequestInfo)
-
-
 
 ‌‌ Hotel Searches API provides results containing information about different hotels listed on Google Hotels. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_searches/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1578,23 +1636,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelSearchesTaskGet"></a>
+
 # **googleHotelSearchesTaskGet**
+
 > BusinessDataGoogleHotelSearchesTaskGetResponseInfo googleHotelSearchesTaskGet(id)
-
-
 
 for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1646,23 +1706,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelSearchesTaskPost"></a>
+
 # **googleHotelSearchesTaskPost**
+
 > BusinessDataGoogleHotelSearchesTaskPostResponseInfo googleHotelSearchesTaskPost(businessDataGoogleHotelSearchesTaskPostRequestInfo)
-
-
 
 ‌‌ Hotel Searches API provides results containing information about different hotels listed on Google. The provided results are specific to the keyword, selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_searches/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1714,23 +1776,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHotelSearchesTasksReady"></a>
+
 # **googleHotelSearchesTasksReady**
+
 > BusinessDataGoogleHotelSearchesTasksReadyResponseInfo googleHotelSearchesTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_searches/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1766,6 +1830,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1778,23 +1843,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMyBusinessInfoTaskGet"></a>
+
 # **googleMyBusinessInfoTaskGet**
+
 > BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo googleMyBusinessInfoTaskGet(id)
-
-
 
 for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1846,23 +1913,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMyBusinessInfoTaskPost"></a>
+
 # **googleMyBusinessInfoTaskPost**
+
 > BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo googleMyBusinessInfoTaskPost(businessDataTaskRequestInfo)
-
-
 
 ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1914,23 +1983,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMyBusinessInfoTasksReady"></a>
+
 # **googleMyBusinessInfoTasksReady**
+
 > BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo googleMyBusinessInfoTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1966,6 +2037,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1978,23 +2050,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMyBusinessUpdatesTaskGet"></a>
+
 # **googleMyBusinessUpdatesTaskGet**
+
 > BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo googleMyBusinessUpdatesTaskGet(id)
-
-
 
 for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2046,23 +2120,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMyBusinessUpdatesTaskPost"></a>
+
 # **googleMyBusinessUpdatesTaskPost**
+
 > BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo googleMyBusinessUpdatesTaskPost(businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoints provides the latest updates of a specific business entity from Google SERP. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_updates/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2114,23 +2190,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleMyBusinessUpdatesTasksReady"></a>
+
 # **googleMyBusinessUpdatesTasksReady**
+
 > BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo googleMyBusinessUpdatesTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_updates/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2166,6 +2244,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2178,23 +2257,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleReviewsTaskGet"></a>
+
 # **googleReviewsTaskGet**
+
 > BusinessDataGoogleReviewsTaskGetResponseInfo googleReviewsTaskGet(id)
-
-
 
 The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/reviews/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2246,23 +2327,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleReviewsTaskPost"></a>
+
 # **googleReviewsTaskPost**
+
 > BusinessDataGoogleReviewsTaskPostResponseInfo googleReviewsTaskPost(businessDataGoogleReviewsTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides results from the “Reviews” element of Google SERPs. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/reviews/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2314,23 +2397,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleReviewsTasksReady"></a>
+
 # **googleReviewsTasksReady**
+
 > BusinessDataGoogleReviewsTasksReadyResponseInfo googleReviewsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/reviews/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2366,6 +2451,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2378,23 +2464,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="socialMediaFacebookLive"></a>
+
 # **socialMediaFacebookLive**
+
 > BusinessDataSocialMediaFacebookLiveResponseInfo socialMediaFacebookLive(businessDataSocialMediaFacebookLiveRequestInfo)
-
-
 
 ‌‌ Social Media Facebook API will provide you with the number of likes a certain page received through the Facebook Like button embed. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/social_media/facebook/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2446,23 +2534,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="socialMediaPinterestLive"></a>
+
 # **socialMediaPinterestLive**
+
 > BusinessDataSocialMediaPinterestLiveResponseInfo socialMediaPinterestLive(businessDataSocialMediaPinterestLiveRequestInfo)
-
-
 
 ‌‌ Social Media Pinterest API will provide you with data on pins made from the specified URLs. Pins on Pinterest correspond to content saves. For each specified page URL, you will get the number of content saves to Pinterest made using the Pinterest Save Button placed on that page. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/social_media/pinterest/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2514,23 +2604,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="socialMediaRedditLive"></a>
+
 # **socialMediaRedditLive**
+
 > BusinessDataSocialMediaRedditLiveResponseInfo socialMediaRedditLive(businessDataSocialMediaRedditLiveRequestInfo)
-
-
 
 Social Media Reddit API provides information for each share of the target webpage on Reddit. For each specified Reddit URL, you will get subreddit and author names, permalink, title, and the number of subreddit members. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/social_media/reddit/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2582,23 +2674,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="tripadvisorReviewsTaskGet"></a>
+
 # **tripadvisorReviewsTaskGet**
+
 > BusinessDataTripadvisorReviewsTaskGetResponseInfo tripadvisorReviewsTaskGet(id)
-
-
 
 This endpoint provides feedback data on businesses listed on the Tripadvisor platform, including their locations, ratings, review content and count. The results are specific to the URL path indicated in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2650,23 +2744,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="tripadvisorReviewsTaskPost"></a>
+
 # **tripadvisorReviewsTaskPost**
+
 > BusinessDataTripadvisorReviewsTaskPostResponseInfo tripadvisorReviewsTaskPost(businessDataTripadvisorReviewsTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides results from the “Reviews” element on the Tripadvisor platform. The results are specific to the URL path or keyword you indicate, and and the selected location (see the List of Locations). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2718,23 +2814,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="tripadvisorReviewsTasksReady"></a>
+
 # **tripadvisorReviewsTasksReady**
+
 > BusinessDataTripadvisorReviewsTasksReadyResponseInfo tripadvisorReviewsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/reviews/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2770,6 +2868,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2782,23 +2881,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="tripadvisorSearchTaskGet"></a>
+
 # **tripadvisorSearchTaskGet**
+
 > BusinessDataTripadvisorSearchTaskGetResponseInfo tripadvisorSearchTaskGet(id)
-
-
 
 This endpoint will provide you with data on businesses listed on the Tripadvisor platform. The results obtained through this endpoint are specific to the location (see the List of Tripadvisor Locations) and keyword parameters used in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2850,23 +2951,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="tripadvisorSearchTaskPost"></a>
+
 # **tripadvisorSearchTaskPost**
+
 > BusinessDataTripadvisorSearchTaskPostResponseInfo tripadvisorSearchTaskPost(businessDataTripadvisorSearchTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides a list of business profiles listed on the Tripadvisor platform. The returned results are relevant to the specified keyword and the selected location (see the List of Locations). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/search/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2918,23 +3021,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="tripadvisorSearchTasksReady"></a>
+
 # **tripadvisorSearchTasksReady**
+
 > BusinessDataTripadvisorSearchTasksReadyResponseInfo tripadvisorSearchTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/tripadvisor/search/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2970,6 +3075,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2982,23 +3088,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="trustpilotReviewsTaskGet"></a>
+
 # **trustpilotReviewsTaskGet**
+
 > BusinessDataTrustpilotReviewsTaskGetResponseInfo trustpilotReviewsTaskGet(id)
-
-
 
 This endpoint provides reviews published on the Trustpilot platform The returned results are specific to the indicated business entity. We emulate set parameters with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3050,23 +3158,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="trustpilotReviewsTaskPost"></a>
+
 # **trustpilotReviewsTaskPost**
+
 > BusinessDataTrustpilotReviewsTaskPostResponseInfo trustpilotReviewsTaskPost(businessDataTrustpilotReviewsTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides reviews published on the Trustpilot platform for the local establishment specified in the domain field. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3118,23 +3228,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="trustpilotReviewsTasksReady"></a>
+
 # **trustpilotReviewsTasksReady**
+
 > BusinessDataTrustpilotReviewsTasksReadyResponseInfo trustpilotReviewsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/trustpilot/reviews/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3170,6 +3282,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3182,23 +3295,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="trustpilotSearchTaskGet"></a>
+
 # **trustpilotSearchTaskGet**
+
 > BusinessDataTrustpilotSearchTaskGetResponseInfo trustpilotSearchTaskGet(id)
-
-
 
 This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the keyword specified in a POST request. We emulate set parameters with the highest accuracy so that the results you receive match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus will not be reflected in the returned results. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3250,23 +3365,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="trustpilotSearchTaskPost"></a>
+
 # **trustpilotSearchTaskPost**
+
 > BusinessDataTrustpilotSearchTaskPostResponseInfo trustpilotSearchTaskPost(businessDataTrustpilotSearchTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides a list of business profiles listed on the Trustpilot platform. The returned results are relevant to the specified keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/trustpilot/search/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3318,23 +3435,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="trustpilotSearchTasksReady"></a>
+
 # **trustpilotSearchTasksReady**
+
 > BusinessDataTrustpilotSearchTasksReadyResponseInfo trustpilotSearchTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/trustpilot/search/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3370,6 +3489,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3382,23 +3502,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yelpReviewsTaskGet"></a>
+
 # **yelpReviewsTaskGet**
+
 > BusinessDataYelpReviewsTaskGetResponseInfo yelpReviewsTaskGet(id)
-
-
 
 This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3450,23 +3572,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yelpReviewsTaskPost"></a>
+
 # **yelpReviewsTaskPost**
+
 > BusinessDataYelpReviewsTaskPostResponseInfo yelpReviewsTaskPost(businessDataYelpReviewsTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3518,23 +3642,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yelpReviewsTasksReady"></a>
+
 # **yelpReviewsTasksReady**
+
 > BusinessDataYelpReviewsTasksReadyResponseInfo yelpReviewsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3570,6 +3696,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3582,23 +3709,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yelpSearchTaskGet"></a>
+
 # **yelpSearchTaskGet**
+
 > BusinessDataYelpSearchTaskGetResponseInfo yelpSearchTaskGet(id)
-
-
 
 This endpoint will provide you with data on businesses listed on the Yelp platform. The results obtained through this endpoint are specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3650,23 +3779,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yelpSearchTaskPost"></a>
+
 # **yelpSearchTaskPost**
+
 > BusinessDataYelpSearchTaskPostResponseInfo yelpSearchTaskPost(businessDataYelpSearchTaskPostRequestInfo)
-
-
 
 ‌‌ By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3718,23 +3849,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="yelpSearchTasksReady"></a>
+
 # **yelpSearchTasksReady**
+
 > BusinessDataYelpSearchTasksReadyResponseInfo yelpSearchTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -3770,6 +3903,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -3782,11 +3916,15 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")

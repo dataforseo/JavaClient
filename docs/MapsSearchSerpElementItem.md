@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MapsSearchSerpElementItem
-
 
 ## Properties
 
@@ -36,5 +37,6 @@
 |**localJustifications** | [**List&lt;LocalJustificationInfo&gt;**](LocalJustificationInfo.md) | Google local justifications snippets of text that “justify” why the business is showing up for search query |  [optional] |
 |**isDirectoryItem** | **Boolean** | indicates whether this local establishment is a directory |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

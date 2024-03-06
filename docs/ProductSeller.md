@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ProductSeller
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**deliveryInfo** | [**DeliveryInfo**](DeliveryInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

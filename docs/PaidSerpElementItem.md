@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PaidSerpElementItem
-
 
 ## Properties
 
@@ -27,5 +28,6 @@
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 |**websiteName** | **String** | website name in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,4 +1,6 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentAnalysisRatingInfo
 
@@ -14,5 +16,6 @@ content rating rating related to content_info
 |**maxRatingValue** | **String** |  maximum value for the rating name |  [optional] |
 |**relativeRating** | **Double** | relative rating |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

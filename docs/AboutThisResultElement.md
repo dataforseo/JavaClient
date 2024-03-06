@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AboutThisResultElement
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**searchTerms** | **List&lt;String&gt;** | matching search terms that appear in the result |  [optional] |
 |**relatedTerms** | **List&lt;String&gt;** | related search terms that appear in the result |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

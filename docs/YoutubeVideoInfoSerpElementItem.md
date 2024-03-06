@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # YoutubeVideoInfoSerpElementItem
-
 
 ## Properties
 
@@ -31,5 +32,6 @@
 |**subtitles** | **String** | subtitles in the video |  [optional] |
 |**streamingQuality** | [**List&lt;StreamingQualityElement&gt;**](StreamingQualityElement.md) | array of elements that contain information about all possible streaming qualities of the video |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # EventsElement
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**snippet** | **String** | text alongside the link title |  [optional] |
 |**url** | **String** | URL |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

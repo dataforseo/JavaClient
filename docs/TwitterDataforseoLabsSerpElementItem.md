@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TwitterDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**url** | **String** | URL link |  [optional] |
 |**items** | [**List&lt;TwitterElement&gt;**](TwitterElement.md) | elements of search results found in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

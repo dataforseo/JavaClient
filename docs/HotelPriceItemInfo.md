@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HotelPriceItemInfo
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**freeCancellationUntil** | **String** | date until which free cancellation is available in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” equals null if free cancellation is not available for the selected dates |  [optional] |
 |**offers** | [**List&lt;HotelInfoPriceOffer&gt;**](HotelInfoPriceOffer.md) | featured price offers |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

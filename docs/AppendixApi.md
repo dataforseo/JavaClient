@@ -1,3 +1,7 @@
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")
+
 # AppendixApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -9,16 +13,16 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**userData**](AppendixApi.md#userData) | **GET** /v3/appendix/user_data |  |
 | [**webhookResend**](AppendixApi.md#webhookResend) | **POST** /v3/appendix/webhook_resend |  |
 
-
 <a id="appendixErrors"></a>
+
 # **appendixErrors**
+
 > AppendixErrorsResponseInfo appendixErrors()
-
-
 
 This endpoint returns a list of possible DataForSEO API errors and general status codes. Below you will find a list of HTTP response codes and internal messages. We recommend storing the data connected to error codes in your application log and designing a necessary system for handling related exceptional or error conditions. for more info please visit &#39;https://docs.dataforseo.com/v3/appendix/errors/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -54,6 +58,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -66,23 +71,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appendixStatus"></a>
+
 # **appendixStatus**
+
 > AppendixStatusResponseInfo appendixStatus()
-
-
 
 By calling this API you will receive detailed information about the current status of all our APIs and endpoints. You will also get a full issue description if a problem occurs. for more info please visit &#39;https://docs.dataforseo.com/v3/appendix/status/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -118,6 +125,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -130,23 +138,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="userData"></a>
+
 # **userData**
+
 > AppendixUserDataResponseInfo userData()
-
-
 
 You will receive detailed information about your API usage, prices, spending and other account details by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/appendix/user_data/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -182,6 +192,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -194,23 +205,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="webhookResend"></a>
+
 # **webhookResend**
+
 > AppendixWebhookResendResponseInfo webhookResend(appendixWebhookResendRequestInfo)
-
-
 
 Using this endpoint you can resend webhooks (pingbacks and postbacks) for up to 100 specified tasks. Note: Your account will not be double-charged for resending a webhook. for more info please visit &#39;https://docs.dataforseo.com/v3/appendix/webhook_resend/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -262,11 +275,15 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")

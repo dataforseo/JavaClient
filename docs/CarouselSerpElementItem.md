@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # CarouselSerpElementItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**items** | [**List&lt;CarouselElement&gt;**](CarouselElement.md) | contains results featured in the ‘hotels_pack’ element of SERP |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

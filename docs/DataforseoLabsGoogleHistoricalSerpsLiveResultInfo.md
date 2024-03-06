@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleHistoricalSerpsLiveResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsGoogleHistoricalSerpsLiveItem&gt;**](DataforseoLabsGoogleHistoricalSerpsLiveItem.md) | contains results featured in the ‘hotels_pack’ element of SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

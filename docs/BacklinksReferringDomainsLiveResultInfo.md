@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksReferringDomainsLiveResultInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**itemsCount** | **Long** | number of items in the items array |  [optional] |
 |**items** | [**List&lt;BacklinksReferringDomainsLiveItem&gt;**](BacklinksReferringDomainsLiveItem.md) | items array |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

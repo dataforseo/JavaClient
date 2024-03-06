@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataGooglePlaySearchOrganicSerpElementItem
-
 
 ## Properties
 
@@ -21,5 +22,6 @@
 |**developer** | **String** | name of the app developer |  [optional] |
 |**developerUrl** | **String** | URL to the developer page on Google Play |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

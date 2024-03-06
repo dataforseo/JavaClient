@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataAppStoreInfoOrganicSerpElementItem
-
 
 ## Properties
 
@@ -36,5 +37,6 @@
 |**similarApps** | [**List&lt;AppsInfo&gt;**](AppsInfo.md) | similar apps displays apps similar to the app in a POST request |  [optional] |
 |**moreAppsByDeveloper** | [**List&lt;AppsInfo&gt;**](AppsInfo.md) | similar apps information about apps built by the same developer |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

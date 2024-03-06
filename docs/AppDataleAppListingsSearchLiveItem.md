@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataleAppListingsSearchLiveItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**timeUpdate** | **String** | date and time when SERP data was last updated in the ISO 8601 format: “YYYY-MM-DDThh:mm:ss.sssssssZ” example: 2023-05-23 10:16:19 +00:00 |  [optional] |
 |**item** | [**BaseAppDataSerpElementItem**](BaseAppDataSerpElementItem.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

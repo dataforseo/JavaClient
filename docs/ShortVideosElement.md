@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ShortVideosElement
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**url** | **String** | URL |  [optional] |
 |**source** | **String** | web source of the hotel booking element indicates the source of information included in the element |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

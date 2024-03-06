@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataAppStoreSearchOrganicSerpElementItem
-
 
 ## Properties
 
@@ -19,5 +20,6 @@
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

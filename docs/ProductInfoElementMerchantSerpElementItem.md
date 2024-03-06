@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ProductInfoElementMerchantSerpElementItem
-
 
 ## Properties
 
@@ -21,5 +22,6 @@
 |**sellers** | [**List&lt;ProductSeller&gt;**](ProductSeller.md) | sellers of the product number of reviews on the product seller’s account |  [optional] |
 |**variations** | [**List&lt;ProductVariation&gt;**](ProductVariation.md) | variations of the product contains brief information about different product variations |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

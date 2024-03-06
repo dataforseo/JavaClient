@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleBulkAppMetricsLiveResultInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsleBulkAppMetricsLiveItem&gt;**](DataforseoLabsleBulkAppMetricsLiveItem.md) | contains data related to the ranking app metrics of the specified application |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

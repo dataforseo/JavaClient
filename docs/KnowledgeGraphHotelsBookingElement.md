@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KnowledgeGraphHotelsBookingElement
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**isPaid** | **Boolean** | indicates whether the element is an ad |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

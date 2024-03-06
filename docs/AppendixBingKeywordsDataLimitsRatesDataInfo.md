@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixBingKeywordsDataLimitsRatesDataInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordsForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

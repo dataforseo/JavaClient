@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixBusinessDataPriceData
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**trustpilot** | [**AppendixTrBusinessDataPriceDataInfo**](AppendixTrBusinessDataPriceDataInfo.md) |  |  [optional] |
 |**yelp** | [**AppendixTrBusinessDataPriceDataInfo**](AppendixTrBusinessDataPriceDataInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

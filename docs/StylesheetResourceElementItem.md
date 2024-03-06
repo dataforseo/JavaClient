@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # StylesheetResourceElementItem
-
 
 ## Properties
 
@@ -30,5 +31,6 @@
 |**fetchEnd** | **Integer** | time to complete downloading the resource the amount of time the browser needs to complete downloading a resource |  [optional] |
 |**isRenderBlocking** | **Boolean** | indicates whether the resource blocks rendering |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

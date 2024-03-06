@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleTrendsQueriesListElementItem
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**keywords** | **List&lt;String&gt;** | relevant keywords the data included in the google_trends_queries_list element is based on the keywords listed in this array |  [optional] |
 |**data** | [**QueriesListDataInfo**](QueriesListDataInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MapDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**url** | **String** | URL link |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

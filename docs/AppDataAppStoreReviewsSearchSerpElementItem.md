@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataAppStoreReviewsSearchSerpElementItem
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**reviewText** | **String** | content of the review |  [optional] |
 |**userProfile** | [**AppUserProfileInfo**](AppUserProfileInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

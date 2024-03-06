@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleShoppingSponsoredCarouselMerchantSerpElementItem
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**title** | **String** | product title |  [optional] |
 |**items** | [**List&lt;GoogleShoppingSponsoredCarouselElement&gt;**](GoogleShoppingSponsoredCarouselElement.md) | items in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

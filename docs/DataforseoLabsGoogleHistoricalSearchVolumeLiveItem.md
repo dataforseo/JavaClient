@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleHistoricalSearchVolumeLiveItem
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**impressionsInfo** | [**ImpressionsInfo**](ImpressionsInfo.md) |  |  [optional] |
 |**serpInfo** | [**SerpInfo**](SerpInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # StreamingQualityElement
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**mimeType** | **String** | media type of the video |  [optional] |
 |**fps** | **Integer** | frame rate of the video |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

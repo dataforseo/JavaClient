@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # YelpSearchOrganicBusinessDataSerpElementItem
-
 
 ## Properties
 
@@ -25,5 +26,6 @@
 |**businessHighlights** | **List&lt;String&gt;** | highlights describing business offerings example: \&quot;casual_dining\&quot; |  [optional] |
 |**serviceOfferings** | [**List&lt;ServiceOfferingsElement&gt;**](ServiceOfferingsElement.md) | tags corresponding to the availability of certain business offerings |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

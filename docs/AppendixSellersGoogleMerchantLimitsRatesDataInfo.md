@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixSellersGoogleMerchantLimitsRatesDataInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**taskGet** | [**AppendixFunctionTypeInfo**](AppendixFunctionTypeInfo.md) |  |  [optional] |
 |**adUrl** | **Double** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

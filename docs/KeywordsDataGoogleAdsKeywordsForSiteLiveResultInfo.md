@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo
-
 
 ## Properties
 
@@ -20,5 +21,6 @@
 |**monthlySearches** | [**List&lt;MonthlySearches&gt;**](MonthlySearches.md) | monthly searches represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations if there is no data, the value is null |  [optional] |
 |**keywordAnnotations** | [**KeywordAnnotations**](KeywordAnnotations.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

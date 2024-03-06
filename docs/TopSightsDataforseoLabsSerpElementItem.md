@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TopSightsDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**items** | [**List&lt;TopSightsElement&gt;**](TopSightsElement.md) | elements of search results found in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

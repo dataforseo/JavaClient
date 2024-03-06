@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksIdListRequestInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**sort** | **String** | sorting by task execution time optional field possible values: \&quot;asc\&quot;, \&quot;desc\&quot; default value: \&quot;asc\&quot; |  [optional] |
 |**includeMetadata** | **Boolean** | include task metadata in the respond optional field default value: false |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

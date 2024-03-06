@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixKeywordsDataPriceData
-
 
 ## Properties
 
@@ -22,5 +23,6 @@
 |**searchVolume** | [**AppendixKeywordsKeywordsDataPriceDataInfo**](AppendixKeywordsKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**explore** | [**AppendixExploreKeywordsDataPriceData**](AppendixExploreKeywordsDataPriceData.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

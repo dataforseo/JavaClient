@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MicrodataFieldsInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**testResults** | [**MicrodataTestResultsInfo**](MicrodataTestResultsInfo.md) |  |  [optional] |
 |**fields** | [**List&lt;MicrodataFieldsInfo&gt;**](MicrodataFieldsInfo.md) | microdata fields an array of objects containing data fields related to the certain microdata type |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

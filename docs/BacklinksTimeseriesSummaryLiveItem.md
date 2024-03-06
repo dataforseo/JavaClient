@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksTimeseriesSummaryLiveItem
-
 
 ## Properties
 
@@ -20,5 +21,6 @@
 |**referringIps** | **Long** | number of referring IP addresses for the given date number of IP addresses pointing to this page |  [optional] |
 |**referringSubnets** | **Long** | number of referring subnetworks for the given date |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PeopleAlsoSearchDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**items** | **List&lt;String&gt;** | elements of search results found in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

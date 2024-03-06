@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksBulkNewLostBacklinksLiveRequestInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**dateFrom** | **String** | starting date of the time range optional field this field indicates the date which will be used as a threshold for new and lost backlinks; the backlinks that appeared in our index after the specified date will be considered as new; the backlinks that weren’t found after the specified date, but were present before, will be considered as lost; default value: today’s date -(minus) one month; e.g. if today is 2021-10-13, default date_from will be 2021-09-13. minimum value equals today’s date -(minus) one year; e.g. if today is 2021-10-13, minimum date_from will be 2020-10-13. date format: \&quot;yyyy-mm-dd\&quot; example: \&quot;2021-01-01\&quot; |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo
-
 
 ## Properties
 
@@ -24,5 +25,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;BaseSerpElementItem&gt;**](BaseSerpElementItem.md) | elements of search results found in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

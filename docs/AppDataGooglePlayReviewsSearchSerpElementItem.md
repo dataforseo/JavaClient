@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataGooglePlayReviewsSearchSerpElementItem
-
 
 ## Properties
 
@@ -20,5 +21,6 @@
 |**userProfile** | [**AppUserProfileInfo**](AppUserProfileInfo.md) |  |  [optional] |
 |**responses** | [**List&lt;ResponseDataInfo&gt;**](ResponseDataInfo.md) | response from the developer |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

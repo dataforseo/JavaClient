@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageDuplicateContentResultInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**itemsCount** | **Long** | number of items in the results array |  [optional] |
 |**items** | [**List&lt;OnPageDuplicateContentItem&gt;**](OnPageDuplicateContentItem.md) | items array |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

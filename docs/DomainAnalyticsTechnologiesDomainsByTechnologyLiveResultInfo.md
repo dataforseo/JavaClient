@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainAnalyticsTechnologiesDomainsByTechnologyLiveResultInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**offsetToken** | **String** | token for subsequent requests by specifying the unique offset_token when setting a new task, you will get the subsequent results of the initial task; offset_token values are unique for each subsequent task |  [optional] |
 |**items** | [**List&lt;DomainAnalyticsTechnologiesDomainsByLiveItem&gt;**](DomainAnalyticsTechnologiesDomainsByLiveItem.md) | items array |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

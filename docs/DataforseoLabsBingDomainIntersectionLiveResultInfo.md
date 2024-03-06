@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsBingDomainIntersectionLiveResultInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsDomainIntersectionLiveItem&gt;**](DataforseoLabsDomainIntersectionLiveItem.md) | contains keywords, relevant SERP elements and related data |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

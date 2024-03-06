@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleJobsItemSerpElementItem
-
 
 ## Properties
 
@@ -25,5 +26,6 @@
 |**timeAgo** | **String** | indicates how long ago the job vacancy was posted |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

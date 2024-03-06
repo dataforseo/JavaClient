@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ResourceMetaInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**width** | **Long** | image width in px |  [optional] |
 |**height** | **Integer** | image height in px |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

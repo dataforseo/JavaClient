@@ -1,3 +1,7 @@
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")
+
 # OnPageApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -35,16 +39,16 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**tasksReady**](OnPageApi.md#tasksReady) | **GET** /v3/on_page/tasks_ready |  |
 | [**waterfall**](OnPageApi.md#waterfall) | **POST** /v3/on_page/waterfall |  |
 
-
 <a id="contentParsing"></a>
+
 # **contentParsing**
+
 > OnPageContentParsingResponseInfo contentParsing(onPageContentParsingRequestInfo)
-
-
 
 ‌‌ This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/content_parsing/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -96,23 +100,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentParsingLive"></a>
+
 # **contentParsingLive**
+
 > OnPageContentParsingLiveResponseInfo contentParsingLive(onPageContentParsingLiveRequestInfo)
-
-
 
 ‌‌ This endpoint allows parsing the content on any page you specify and will return the structured content of the target page, including link URLs, anchors, headings, and textual content. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/content_parsing/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -164,23 +170,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="duplicateContent"></a>
+
 # **duplicateContent**
+
 > OnPageDuplicateContentResponseInfo duplicateContent(onPageDuplicateContentRequestInfo)
-
-
 
 ‌‌ This endpoint returns a list of pages that have content similar to the page specified in the request. The response also contains data related to page performance and the similarity index that indicates how similar the compared pages are. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/duplicate_content/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -232,23 +240,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="duplicateTags"></a>
+
 # **duplicateTags**
+
 > OnPageDuplicateTagsResponseInfo duplicateTags(onPageDuplicateTagsRequestInfo)
-
-
 
 ‌‌ This endpoint returns a list of pages that contain duplicate title or description tags. The response also contains data related to page performance. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/duplicate_tags/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -300,23 +310,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="forceStop"></a>
+
 # **forceStop**
+
 > OnPageForceStopResponseInfo forceStop(onPageForceStopRequestInfo)
-
-
 
 ‌‌ This endpoint is designed to force stop the crawl process of websites you specified in a task. The execution of all the tasks associated with the IDs indicated in your request to this endpoint will be stopped. You will still be able to obtain the data on pages that have been scanned until the crawling process was stopped. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/force_stop/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -368,23 +380,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="instantPages"></a>
+
 # **instantPages**
+
 > OnPageInstantPagesResponseInfo instantPages(onPageInstantPagesRequestInfo)
-
-
 
 ‌‌ Using this function you will get page-specific data with detailed information on how well a particular page is optimized for organic search. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/instant_pages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -436,23 +450,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="keywordDensity"></a>
+
 # **keywordDensity**
+
 > OnPageKeywordDensityResponseInfo keywordDensity(onPageKeywordDensityRequestInfo)
-
-
 
 ‌‌ This endpoint will provide you with keyword density and keyword frequency data for terms appearing on the specified website or web page. You can filter and sort the data that will be retrieved with this API call. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/keyword_density/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -504,23 +520,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="lighthouseAudits"></a>
+
 # **lighthouseAudits**
+
 > OnPageLighthouseAuditsResponseInfo lighthouseAudits()
-
-
 
 The OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/lighthouse/audits/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -556,6 +574,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -568,23 +587,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="lighthouseLiveJson"></a>
+
 # **lighthouseLiveJson**
+
 > OnPageLighthouseLiveJsonResponseInfo lighthouseLiveJson(onPageLighthouseLiveJsonRequestInfo)
-
-
 
 ‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/lighthouse/live/json/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -636,23 +657,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="lighthouseTaskGetJson"></a>
+
 # **lighthouseTaskGetJson**
+
 > OnPageLighthouseTaskGetJsonResponseInfo lighthouseTaskGetJson(id)
-
-
 
 ‌ The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. This endpoint will provide you with the results of Lighthouse Audit. Use the id received in the response of your Task POST request to get the results. The response will include data about all categories and audits specified in the Task POST. By default, the response will include all available data about the webpage including its performance, accessibility, progressive web apps, SEO, and compliance with best practices. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/lighthouse/task_get/json/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -704,23 +727,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="lighthouseTaskPost"></a>
+
 # **lighthouseTaskPost**
+
 > OnPageLighthouseTaskPostResponseInfo lighthouseTaskPost(onPageLighthouseTaskPostRequestInfo)
-
-
 
 ‌The OnPage Lighthouse API is based on Google’s open-source Lighthouse project for measuring the quality of web pages and web apps. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/lighthouse/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -772,23 +797,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="lighthouseTasksReady"></a>
+
 # **lighthouseTasksReady**
+
 > OnPageLighthouseTasksReadyResponseInfo lighthouseTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/lighthouse/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -824,6 +851,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -836,23 +864,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="lighthouseVersions"></a>
+
 # **lighthouseVersions**
+
 > OnPageLighthouseVersionsResponseInfo lighthouseVersions()
-
-
 
 OnPage Lighthouse API is based on Google’s open-source Lighthouse project and provides data on the quality of web pages. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/lighthouse/versions/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -888,6 +918,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -900,23 +931,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="links"></a>
+
 # **links**
+
 > OnPageLinksResponseInfo links(onPageLinksRequestInfo)
-
-
 
 ‌‌ This endpoint will provide you with a list of internal and external links detected on a target website. The following link types are supported: anchor, image, link, canonical, meta, alternate, redirect. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/links/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -968,23 +1001,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="microdata"></a>
+
 # **microdata**
+
 > OnPageMicrodataResponseInfo microdata(onPageMicrodataRequestInfo)
-
-
 
 ‌‌ This endpoint is designed to validate structured JSON-LD data and Microdata. Using this function you will obtain microdata available on the specified page of the target website and detailed results of its validation. To use this endpoint, set the validate_micromarkup parameter to true in the POST request to OnPage API. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/microdata/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1036,23 +1071,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="nonIndexable"></a>
+
 # **nonIndexable**
+
 > OnPageNonIndexableResponseInfo nonIndexable(onPageNonIndexableRequestInfo)
-
-
 
 ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1104,23 +1141,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="onPageAvailableFilters"></a>
+
 # **onPageAvailableFilters**
+
 > OnPageAvailableFiltersResponseInfo onPageAvailableFilters()
-
-
 
 OnPage API supports plenty of customizable crawling parameters that allow you to adapt the extraction of website data to your requirements and modify the thresholds for various performance indicators. ‌‌ Here you will find all the necessary information about filters and thresholds that can be used with DataForSEO OnPage API endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/filters_and_thresholds/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1156,6 +1195,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1168,23 +1208,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="onPageErrors"></a>
+
 # **onPageErrors**
+
 > OnPageErrorsResponseInfo onPageErrors(onPageErrorsRequestInfo)
-
-
 
 By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1236,23 +1278,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="onPageIdList"></a>
+
 # **onPageIdList**
+
 > OnPageIdListResponseInfo onPageIdList(onPageIdListRequestInfo)
-
-
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed On Page tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/id_list/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1304,23 +1348,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="onPageLighthouseLanguages"></a>
+
 # **onPageLighthouseLanguages**
+
 > OnPageLighthouseLanguagesResponseInfo onPageLighthouseLanguages()
-
-
 
 You will receive the list of languages by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/lighthouse/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1356,6 +1402,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1368,23 +1415,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="pageScreenshot"></a>
+
 # **pageScreenshot**
+
 > OnPagePageScreenshotResponseInfo pageScreenshot(onPagePageScreenshotRequestInfo)
-
-
 
 ‌‌ Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1436,23 +1485,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="pages"></a>
+
 # **pages**
+
 > OnPagePagesResponseInfo pages(onPagePagesRequestInfo)
-
-
 
 ‌‌ This endpoint returns a list of crawled pages with on-page check-ups and other metrics related to the page performance. Using this function you will get page-specific data with detailed information on how well your pages are optimized for search. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/pages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1504,23 +1555,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="pagesByResource"></a>
+
 # **pagesByResource**
+
 > OnPagePagesByResourceResponseInfo pagesByResource(onPagePagesByResourceRequestInfo)
-
-
 
 ‌‌ This endpoint will return the list of pages where a specific resource is located. Using this function you will also get the data related to the pages that contain a specified resource. You can get the URL of a resource using the Resources endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/page_by_resource/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1572,23 +1625,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="rawHtml"></a>
+
 # **rawHtml**
+
 > OnPageRawHtmlResponseInfo rawHtml(onPageRawHtmlRequestInfo)
-
-
 
 ‌‌ This endpoint returns the HTML of a page you indicate in the request. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/raw_html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1640,23 +1695,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="redirectChains"></a>
+
 # **redirectChains**
+
 > OnPageRedirectChainsResponseInfo redirectChains(onPageRedirectChainsRequestInfo)
-
-
 
 ‌‌ Redirect chains occur when there are at least two redirects between the initial URL and the destination URL. For example, if page A redirects to page B which redirects to page C, such a series of redirects is considered a redirect chain. Sometimes, if page B redirects back to page A, the redirect chain becomes closed and is considered a redirect loop. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/redirect_chains/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1708,23 +1765,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="resources"></a>
+
 # **resources**
+
 > OnPageResourcesResponseInfo resources(onPageResourcesRequestInfo)
-
-
 
 ‌‌ This endpoint will provide you with a list of resources, including images, scripts, stylesheets, and broken elements. You will get a detailed overview of every resource found on the crawled pages. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/resources/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1776,23 +1835,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="summary"></a>
+
 # **summary**
+
 > OnPageSummaryResponseInfo summary(id)
-
-
 
 ‌ Using this function, you can get the overall information on a website as well as drill down into exact on-page issues of a website that has been scanned. As a result, you will know what functions to use for receiving detailed data for each of the found issues. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/summary/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1844,23 +1905,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="taskPost"></a>
+
 # **taskPost**
+
 > OnPageTaskPostResponseInfo taskPost(onPageTaskRequestInfo)
-
-
 
 ‌ OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1912,23 +1975,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="tasksReady"></a>
+
 # **tasksReady**
+
 > OnPageTasksReadyResponseInfo tasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1964,6 +2029,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1976,23 +2042,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="waterfall"></a>
+
 # **waterfall**
+
 > OnPageWaterfallResponseInfo waterfall(onPageWaterfallRequestInfo)
-
-
 
 ‌‌ This endpoint is designed to provide you with the page speed insights. Using this function you can get detailed information about the page loading time, time to secure connection, the time it takes to load page resources, and so on. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/waterfall/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2044,11 +2112,15 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")

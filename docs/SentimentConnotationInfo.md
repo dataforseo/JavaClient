@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SentimentConnotationInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**share** | **Double** | share |  [optional] |
 |**fun** | **Double** | fun |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

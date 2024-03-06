@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # InformationAndTicketsElement
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**url** | **String** | relevant URL |  [optional] |
 |**domain** | **String** | domain in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

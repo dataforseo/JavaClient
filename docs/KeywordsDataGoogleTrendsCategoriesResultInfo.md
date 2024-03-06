@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleTrendsCategoriesResultInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**categoryName** | **String** | name of the google trends category |  [optional] |
 |**categoryCodeParent** | **Integer** | the code of the superordinate category example: \&quot;category_code\&quot;: 1100, \&quot;category_name\&quot;: \&quot;Superhero Films\&quot;, \&quot;category_code_parent\&quot;: 1097 where category_code_parent corresponds to: \&quot;category_code\&quot;: 1097, \&quot;category_name\&quot;: \&quot;Action &amp; Adventure Films\&quot; |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

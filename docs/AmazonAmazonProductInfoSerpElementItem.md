@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AmazonAmazonProductInfoSerpElementItem
-
 
 ## Properties
 
@@ -32,5 +33,6 @@
 |**description** | **String** | contains description of the product |  [optional] |
 |**isAvailable** | **Boolean** | indicates whether the product is available for ordering if the value is true, the product can be ordered |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

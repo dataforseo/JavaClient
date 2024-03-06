@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleMyBusinessInfoTaskGetResultInfo
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**itemsCount** | **Long** | item types the number of items in the items array |  [optional] |
 |**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | array of directory items |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

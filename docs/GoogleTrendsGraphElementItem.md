@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleTrendsGraphElementItem
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**data** | [**List&lt;TrendsGraphDataInfo&gt;**](TrendsGraphDataInfo.md) | Google Trends data for the specified parameters |  [optional] |
 |**averages** | **List&lt;Double&gt;** | keyword popularity values averaged over the whole time range |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageLinksRequestInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**filters** | **List&lt;Object&gt;** | array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;direction\&quot;,\&quot;&#x3D;\&quot;,\&quot;external\&quot;] [[\&quot;domain_to\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;example.com\&quot;], \&quot;and\&quot;, [\&quot;link_from\&quot;,\&quot;not_like\&quot;,\&quot;%example.com/blog%\&quot;]] [[\&quot;direction\&quot;,\&quot;&#x3D;\&quot;,\&quot;external\&quot;], \&quot;and\&quot;, [[\&quot;link_from\&quot;,\&quot;like\&quot;,\&quot;%example.com/blog%\&quot;],\&quot;or\&quot;,[\&quot;link_from\&quot;,\&quot;like\&quot;,\&quot;%example.com/help%\&quot;]]] The full list of possible filters is available by this link. |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

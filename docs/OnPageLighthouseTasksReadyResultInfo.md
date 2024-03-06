@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageLighthouseTasksReadyResultInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**tag** | **String** | user-defined task identifier |  [optional] |
 |**endpointJson** | **String** | URL for collecting the results of the OnPage Lighthouse JSON task |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

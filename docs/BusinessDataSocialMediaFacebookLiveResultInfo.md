@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataSocialMediaFacebookLiveResultInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**pageUrl** | **String** | URL of the page the data is provided for corresponding URL you specified in the targets array when setting a task |  [optional] |
 |**likeCount** | **Long** | number of likes for the related page_url this field shows the number of likes a page received through the Facebook Like Button embed |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

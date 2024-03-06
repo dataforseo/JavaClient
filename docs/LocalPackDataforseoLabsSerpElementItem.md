@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # LocalPackDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -28,5 +29,6 @@
 |**backlinksInfo** | [**AvgBacklinksInfo**](AvgBacklinksInfo.md) |  |  [optional] |
 |**rankInfo** | [**RankInfo**](RankInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpGoogleMapsLiveAdvancedRequestInfo
-
 
 ## Properties
 
@@ -23,5 +24,6 @@
 |**searchPlaces** | **Boolean** | search places mode optional field the search places mode allows to obtain Google Maps results on a certain place (e.g., Apple Store in New York) however, due to the pecularities of our data mining algorithm, this mode might interfere with some local-intent queries – and display results for a location that is different from that specified in the request; to prevent this interference and obtain correct results for keywords with local intent you may set this parameter to false; default value: true Note: if the search_places mode is turned off and no results were found in the search area, the results array will be empty |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

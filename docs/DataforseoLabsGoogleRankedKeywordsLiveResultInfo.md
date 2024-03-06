@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleRankedKeywordsLiveResultInfo
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**metricsAbsolute** | [**Map&lt;String, MetricsInfo&gt;**](MetricsInfo.md) | ranking data relevant to the specified domain ranking data is provided by the rank_absolute parameters that indicate the result’s position among all SERP elements |  [optional] |
 |**items** | [**List&lt;DataforseoLabsGoogleRankedKeywordsLiveItem&gt;**](DataforseoLabsGoogleRankedKeywordsLiveItem.md) | contains ranked keywords and related data |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

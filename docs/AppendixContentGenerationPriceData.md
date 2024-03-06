@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixContentGenerationPriceData
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**paraphrase** | [**AppendixKeywordBingKeywordsDataPriceDataInfo**](AppendixKeywordBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**textSummary** | [**AppendixContentGenerationPriceDataInfo**](AppendixContentGenerationPriceDataInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

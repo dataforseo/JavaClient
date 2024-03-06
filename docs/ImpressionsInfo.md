@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ImpressionsInfo
-
 
 ## Properties
 
@@ -27,5 +28,6 @@
 |**dailyCostMax** | **Float** | the maximum daily charge value represents the maximum daily cost of the advertisement (USD) |  [optional] |
 |**dailyCostAverage** | **Double** | the average daily charge value represents the average daily cost of the advertisement (USD) |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

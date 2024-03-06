@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AmazonRelatedSearchesSerpElementItem
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**items** | [**List&lt;RelatedSearchesElement&gt;**](RelatedSearchesElement.md) | Amazon product items |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

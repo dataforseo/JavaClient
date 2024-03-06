@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**tasksError** | **Long** | the number of tasks in the tasks array returned with an error |  [optional] |
 |**tasks** | [**List&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostTaskInfo&gt;**](KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostTaskInfo.md) | array of tasks |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

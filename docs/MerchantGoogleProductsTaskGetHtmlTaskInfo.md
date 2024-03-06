@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantGoogleProductsTaskGetHtmlTaskInfo
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**data** | **Object** | contains the same parameters that you specified in the POST request |  [optional] |
 |**result** | [**List&lt;MerchantGoogleProductsTaskGetHtmlResultInfo&gt;**](MerchantGoogleProductsTaskGetHtmlResultInfo.md) | array of results |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppElement
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**url** | **String** | URL |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ShopsListMerchantSerpElementItem
-
 
 ## Properties
 
@@ -26,5 +27,6 @@
 |**productCondition** | **String** | indicated condition of the product possible values: Used, Refurbished, New, null |  [optional] |
 |**productAnnotation** | **String** | data from annotations and badges with special offers if there is no annotation for this product, the value will be null examples: LOW PRICE, SPECIAL OFFER, SALE, PRICE DROP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

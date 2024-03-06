@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PeopleAlsoAskDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**items** | [**List&lt;PeopleAlsoAskElement&gt;**](PeopleAlsoAskElement.md) | elements of search results found in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

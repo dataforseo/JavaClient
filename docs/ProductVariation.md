@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ProductVariation
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**title** | **String** | name of the product seller |  [optional] |
 |**url** | **String** | seller url url of the webpage on the seller’s website where the product is sold |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

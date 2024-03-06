@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # LocalServicesDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**domain** | **String** | domain where a link points |  [optional] |
 |**items** | [**List&lt;LocalServicesElement&gt;**](LocalServicesElement.md) | elements of search results found in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

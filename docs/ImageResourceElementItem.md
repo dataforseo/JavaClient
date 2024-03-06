@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ImageResourceElementItem
-
 
 ## Properties
 
@@ -25,5 +26,6 @@
 |**lastModified** | [**LastModified**](LastModified.md) |  |  [optional] |
 |**resourceErrors** | [**OnPageResourceIssueInfo**](OnPageResourceIssueInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

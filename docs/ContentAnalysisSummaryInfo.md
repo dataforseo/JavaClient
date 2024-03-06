@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentAnalysisSummaryInfo
-
 
 ## Properties
 
@@ -19,5 +20,6 @@
 |**countries** | **Map&lt;String, Long&gt;** | countries contains countries and citation count in each country to obtain a full list of available countries, refer to the Locations endpoint |  [optional] |
 |**languages** | **Map&lt;String, Long&gt;** | languages contains languages and citation count in each language to obtain a full list of available languages, refer to the Languages endpoint |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

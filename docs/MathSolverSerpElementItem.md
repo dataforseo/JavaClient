@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MathSolverSerpElementItem
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**links** | [**List&lt;LinkElement&gt;**](LinkElement.md) | link of the element |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

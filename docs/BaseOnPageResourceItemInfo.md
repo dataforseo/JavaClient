@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BaseOnPageResourceItemInfo
-
 
 ## Properties
 
@@ -9,5 +10,6 @@
 |------------ | ------------- | ------------- | -------------|
 |**resourceType** | **String** | type of the returned resource |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

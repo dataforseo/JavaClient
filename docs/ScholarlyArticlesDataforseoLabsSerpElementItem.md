@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ScholarlyArticlesDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**url** | **String** | URL link |  [optional] |
 |**items** | [**List&lt;ScholarlyArticlesElement&gt;**](ScholarlyArticlesElement.md) | elements of search results found in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

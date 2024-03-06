@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleTrendsMapElementItem
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**keywords** | **List&lt;String&gt;** | relevant keywords the data included in the google_trends_map element is based on the keywords listed in this array |  [optional] |
 |**data** | [**List&lt;TrendsMapDataInfo&gt;**](TrendsMapDataInfo.md) | Google Trends data from the corresponding item |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

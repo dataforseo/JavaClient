@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PeopleAlsoAskElement
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**expandedElement** | [**List&lt;PeopleAlsoAskExpandedElement&gt;**](PeopleAlsoAskExpandedElement.md) | expanded element |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

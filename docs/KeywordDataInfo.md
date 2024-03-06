@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordDataInfo
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**avgBacklinksInfo** | [**AvgBacklinksInfo**](AvgBacklinksInfo.md) |  |  [optional] |
 |**searchIntentInfo** | [**SearchIntentInfo**](SearchIntentInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # StocksBoxSerpElementItem
-
 
 ## Properties
 
@@ -21,5 +22,6 @@
 |**table** | [**Table**](Table.md) |  |  [optional] |
 |**graph** | [**Graph**](Graph.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

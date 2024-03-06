@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleCategoriesForDomainLiveResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsGoogleCategoriesForDomainLiveItem&gt;**](DataforseoLabsGoogleCategoriesForDomainLiveItem.md) | contains relevant categories and related ranking data |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

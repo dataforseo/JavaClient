@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # FoundOnWebElement
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**subtitle** | **String** | subtitle of the element |  [optional] |
 |**image** | [**ImagesElement**](ImagesElement.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

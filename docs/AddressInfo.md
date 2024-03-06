@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AddressInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**region** | **String** | DMA region the local establishment belongs to |  [optional] |
 |**countryCode** | **String** | ISO country code of the local establishment |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AmazonAmazonSerpSerpElementItem
-
 
 ## Properties
 
@@ -29,5 +30,6 @@
 |**boughtPastMonth** | **Integer** | number of product purchases in the past month |  [optional] |
 |**dataAsin** | **String** | unique product identifier on Amazon note that there is no full list of possible values as the data_asin is a dynamic value assigned by Amazon example: B07G82D89J |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

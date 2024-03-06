@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpBingOrganicLiveRegularResultInfo
-
 
 ## Properties
 
@@ -20,5 +21,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;BaseSerpElementItem&gt;**](BaseSerpElementItem.md) | items inside the element array of 8 search queries related to the keyword |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataBingKeywordPerformanceTaskGetResultInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**month** | **Integer** | indicates the month for which the data is provided for example: 10 |  [optional] |
 |**keywordKpi** | [**KeywordKpi**](KeywordKpi.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

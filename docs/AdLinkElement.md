@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AdLinkElement
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**domain** | **String** | website domain |  [optional] |
 |**adAclk** | **String** | the identifier of the ad |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

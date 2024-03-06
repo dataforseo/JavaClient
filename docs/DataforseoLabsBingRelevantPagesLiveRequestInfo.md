@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsBingRelevantPagesLiveRequestInfo
-
 
 ## Properties
 
@@ -20,5 +21,6 @@
 |**orderBy** | **List&lt;String&gt;** | results sorting rules optional field you can use the same values as in the filters array to sort the results possible sorting types: asc – results will be sorted in the ascending order desc – results will be sorted in the descending order you should use a comma to specify a sorting type example: [\&quot;metrics.paid.etv,asc\&quot;] Note: you can set no more than three sorting rules in a single request you should use a comma to separate several sorting rules example: [\&quot;metrics.organic.etv,desc\&quot;,\&quot;metrics.paid.count,asc\&quot;] default rule: [\&quot;metrics.organic.count,desc\&quot;] Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ImagesSearchSerpElementItem
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**sourceUrl** | **String** | the URL of the source image |  [optional] |
 |**encodedUrl** | **String** | the URL of the cached version of the image stored on Google’s servers |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MentionCarouselElement
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**mentionedIn** | [**List&lt;LinkElement&gt;**](LinkElement.md) | additional elements in the mention_carousel item |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

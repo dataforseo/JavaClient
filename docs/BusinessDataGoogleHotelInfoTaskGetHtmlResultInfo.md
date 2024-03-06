@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**type** | **String** |  |  [optional] |
 |**seDomain** | **String** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

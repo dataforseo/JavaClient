@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ImagesDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**items** | [**List&lt;ImagesElement&gt;**](ImagesElement.md) | elements of search results found in SERP |  [optional] |
 |**relatedImageSearches** | [**List&lt;RelatedImageSearchesElement&gt;**](RelatedImageSearchesElement.md) | contains keywords and images related to the specified search term if there are none, equals null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

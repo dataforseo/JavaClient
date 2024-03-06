@@ -1,3 +1,7 @@
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")
+
 # ContentAnalysisApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -16,16 +20,16 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**searchLive**](ContentAnalysisApi.md#searchLive) | **POST** /v3/content_analysis/search/live |  |
 | [**sentimentAnalysisLive**](ContentAnalysisApi.md#sentimentAnalysisLive) | **POST** /v3/content_analysis/sentiment_analysis/live |  |
 
-
 <a id="categoryTrendsLive"></a>
+
 # **categoryTrendsLive**
+
 > ContentAnalysisCategoryTrendsLiveResponseInfo categoryTrendsLive(contentAnalysisCategoryTrendsLiveRequestInfo)
-
-
 
 ‌ This endpoint will provide you with data on all citations in the target category for the indicated date range. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -77,23 +81,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentAnalysisAvailableFilters"></a>
+
 # **contentAnalysisAvailableFilters**
+
 > ContentAnalysisAvailableFiltersResponseInfo contentAnalysisAvailableFilters()
-
-
 
 ‌‌ Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/filters/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -129,6 +135,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -141,23 +148,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentAnalysisCategories"></a>
+
 # **contentAnalysisCategories**
+
 > ContentAnalysisCategoriesResponseInfo contentAnalysisCategories()
-
-
 
 We use Google product and service categories. This endpoint will provide you with the full list of available categories. You can also download the CSV file by this link. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/categories/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -193,6 +202,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -205,23 +215,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentAnalysisIdList"></a>
+
 # **contentAnalysisIdList**
+
 > ContentAnalysisIdListResponseInfo contentAnalysisIdList(contentAnalysisIdListRequestInfo)
-
-
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Content Analysis tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/id_list/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -273,23 +285,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentAnalysisLanguages"></a>
+
 # **contentAnalysisLanguages**
+
 > ContentAnalysisLanguagesResponseInfo contentAnalysisLanguages()
-
-
 
 You will receive the list of languages by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -325,6 +339,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -337,23 +352,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentAnalysisLocations"></a>
+
 # **contentAnalysisLocations**
+
 > ContentAnalysisLocationsResponseInfo contentAnalysisLocations()
-
-
 
 You will receive the list of locations by this API call. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -389,6 +406,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -401,23 +419,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentAnalysisSummaryLive"></a>
+
 # **contentAnalysisSummaryLive**
+
 > ContentAnalysisSummaryLiveResponseInfo contentAnalysisSummaryLive(contentAnalysisSummaryLiveRequestInfo)
-
-
 
 ‌ This endpoint will provide you with an overview of citation data available for the target keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -469,23 +489,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="phraseTrendsLive"></a>
+
 # **phraseTrendsLive**
+
 > ContentAnalysisPhraseTrendsLiveResponseInfo phraseTrendsLive(contentAnalysisPhraseTrendsLiveRequestInfo)
-
-
 
 ‌ This endpoint will provide you with data on all citations of the target keyword for the indicated date range. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -537,23 +559,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="ratingDistributionLive"></a>
+
 # **ratingDistributionLive**
+
 > ContentAnalysisRatingDistributionLiveResponseInfo ratingDistributionLive(contentAnalysisRatingDistributionLiveRequestInfo)
-
-
 
 ‌ This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -605,23 +629,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="searchLive"></a>
+
 # **searchLive**
+
 > ContentAnalysisSearchLiveResponseInfo searchLive(contentAnalysisSearchLiveRequestInfo)
-
-
 
 ‌ This endpoint will provide you with detailed citation data available for the target keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/search/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -673,23 +699,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="sentimentAnalysisLive"></a>
+
 # **sentimentAnalysisLive**
+
 > ContentAnalysisSentimentAnalysisLiveResponseInfo sentimentAnalysisLive(contentAnalysisSentimentAnalysisLiveRequestInfo)
-
-
 
 ‌ This endpoint will provide you with sentiment analysis data for the citations available for the target keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -741,11 +769,15 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")

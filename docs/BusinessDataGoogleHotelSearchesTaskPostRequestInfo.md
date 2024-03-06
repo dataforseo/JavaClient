@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleHotelSearchesTaskPostRequestInfo
-
 
 ## Properties
 
@@ -32,5 +33,6 @@
 |**isVacationRentals** | **Boolean** | search for vacation rentals optional field set this field to true if you want to get the list of vacation rentals instead of hotels default value: false |  [optional] |
 |**amenities** | **List&lt;String&gt;** | hotel amenities optional field you can use this field to specify different hotel amenities example:   [             \&quot;free_parking\&quot;,             \&quot;pets_allowed\&quot;         ]  possible values: \&quot;air_conditioning\&quot;, \&quot;all_inclusive_available\&quot;, \&quot;bar\&quot;, \&quot;free_breakfast\&quot;, \&quot;fitness_center\&quot;, \&quot;kid_friendly\&quot;, \&quot;free_parking\&quot;, \&quot;pets_allowed\&quot;, \&quot;pool\&quot;, \&quot;restaurant\&quot;, \&quot;room_service\&quot;, \&quot;spa\&quot;, \&quot;free_wifi\&quot;, \&quot;parking\&quot;, \&quot;indoor_pool\&quot;, \&quot;outdoor_pool\&quot;, \&quot;wheelchair_accessible\&quot;, \&quot;beach_access\&quot; |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

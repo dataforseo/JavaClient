@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # RelatedSearchesMerchantSerpElementItem
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**xpath** | **String** | XPath of the element |  [optional] |
 |**items** | **List&lt;String&gt;** | additional items present in the element if there are none, equals null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

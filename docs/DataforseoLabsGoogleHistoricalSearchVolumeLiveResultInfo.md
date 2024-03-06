@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleHistoricalSearchVolumeLiveResultInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveItem&gt;**](DataforseoLabsGoogleHistoricalSearchVolumeLiveItem.md) | contains keywords and related data |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixBusinessListingsBusinessDataLimitsRatesDataInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**categories** | **Double** |  |  [optional] |
 |**locations** | **Double** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

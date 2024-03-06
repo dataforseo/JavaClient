@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TechnologiesInfo
-
 
 ## Properties
 
@@ -24,5 +25,6 @@
 |**communication** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
 |**utilities** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

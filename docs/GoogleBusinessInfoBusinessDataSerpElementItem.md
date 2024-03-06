@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleBusinessInfoBusinessDataSerpElementItem
-
 
 ## Properties
 
@@ -44,5 +45,6 @@
 |**isDirectoryItem** | **Boolean** | business establishment is a part of the directory indicates whether the business establishment is a part of the directory; if true, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre); note: if the business establishment is a parent item in the directory, the value will be null |  [optional] |
 |**directory** | [**BusinessDirectoryInfo**](BusinessDirectoryInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

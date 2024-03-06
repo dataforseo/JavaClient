@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataGoogleAppInfoTaskGetAdvancedResultInfo
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**itemsCount** | **Long** | the number of items in the results array |  [optional] |
 |**items** | [**List&lt;BaseAppDataSerpElementItem&gt;**](BaseAppDataSerpElementItem.md) | found app info |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

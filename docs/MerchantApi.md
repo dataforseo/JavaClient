@@ -1,3 +1,7 @@
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")
+
 # MerchantApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -45,16 +49,16 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**merchantGoogleLocationsCountry**](MerchantApi.md#merchantGoogleLocationsCountry) | **GET** /v3/merchant/google/locations/{country} |  |
 | [**merchantIdList**](MerchantApi.md#merchantIdList) | **POST** /v3/merchant/id_list |  |
 
-
 <a id="amazonAsinTaskGetAdvanced"></a>
+
 # **amazonAsinTaskGetAdvanced**
+
 > MerchantAmazonAsinTaskGetAdvancedResponseInfo amazonAsinTaskGetAdvanced(id)
-
-
 
 This endpoint will provide you with information about the product and ASINs of all its modifications listed on Amazon. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -106,23 +110,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonAsinTaskGetHtml"></a>
+
 # **amazonAsinTaskGetHtml**
+
 > MerchantAmazonAsinTaskGetHtmlResponseInfo amazonAsinTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/asin/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -174,23 +180,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonAsinTaskPost"></a>
+
 # **amazonAsinTaskPost**
+
 > MerchantAmazonAsinTaskPostResponseInfo amazonAsinTaskPost(merchantAmazonAsinTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint will provide you with a full list of ASINs assigned to different modifications of a product. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/asin/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -242,23 +250,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonAsinTasksReady"></a>
+
 # **amazonAsinTasksReady**
+
 > MerchantAmazonAsinTasksReadyResponseInfo amazonAsinTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/asin/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -294,6 +304,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -306,23 +317,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonProductsTaskGetAdvanced"></a>
+
 # **amazonProductsTaskGetAdvanced**
+
 > MerchantAmazonProductsTaskGetAdvancedResponseInfo amazonProductsTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -374,23 +387,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonProductsTaskGetHtml"></a>
+
 # **amazonProductsTaskGetHtml**
+
 > MerchantAmazonProductsTaskGetHtmlResponseInfo amazonProductsTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/products/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -442,23 +457,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonProductsTaskPost"></a>
+
 # **amazonProductsTaskPost**
+
 > MerchantAmazonProductsTaskPostResponseInfo amazonProductsTaskPost(merchantAmazonProductsTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides results from Amazon product listings according to the specified keyword (product name), location, and language parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/products/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -510,23 +527,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonProductsTasksReady"></a>
+
 # **amazonProductsTasksReady**
+
 > MerchantAmazonProductsTasksReadyResponseInfo amazonProductsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/products/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -562,6 +581,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -574,23 +594,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonReviewsTaskGetAdvanced"></a>
+
 # **amazonReviewsTaskGetAdvanced**
+
 > MerchantAmazonReviewsTaskGetAdvancedResponseInfo amazonReviewsTaskGetAdvanced(id)
-
-
 
 This endpoint provides feedback data on products listed on the Amazon marketplace, including their titles, images, ratings, review content, user profile info, review publication dates, and more. The results are specific to the asin specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -642,23 +664,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonReviewsTaskGetHtml"></a>
+
 # **amazonReviewsTaskGetHtml**
+
 > MerchantAmazonReviewsTaskGetHtmlResponseInfo amazonReviewsTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -710,23 +734,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonReviewsTaskPost"></a>
+
 # **amazonReviewsTaskPost**
+
 > MerchantAmazonReviewsTaskPostResponseInfo amazonReviewsTaskPost(merchantAmazonReviewsTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint will provide you with a list of reviews for the target Amazon product. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -778,23 +804,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonReviewsTasksReady"></a>
+
 # **amazonReviewsTasksReady**
+
 > MerchantAmazonReviewsTasksReadyResponseInfo amazonReviewsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -830,6 +858,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -842,23 +871,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonSellersTaskGetAdvanced"></a>
+
 # **amazonSellersTaskGetAdvanced**
+
 > MerchantAmazonSellersTaskGetAdvancedResponseInfo amazonSellersTaskGetAdvanced(id)
-
-
 
 This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -910,23 +941,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonSellersTaskGetHtml"></a>
+
 # **amazonSellersTaskGetHtml**
+
 > MerchantAmazonSellersTaskGetHtmlResponseInfo amazonSellersTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -978,23 +1011,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonSellersTaskPost"></a>
+
 # **amazonSellersTaskPost**
+
 > MerchantAmazonSellersTaskPostResponseInfo amazonSellersTaskPost(merchantAmazonSellersTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides a list of sellers of the specified product on Amazon. The data provided for each seller includes related product condition, pricing, shipment, and rating details. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/sellers/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1046,23 +1081,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonSellersTasksReady"></a>
+
 # **amazonSellersTasksReady**
+
 > MerchantAmazonSellersTasksReadyResponseInfo amazonSellersTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/sellers/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1098,6 +1135,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1110,23 +1148,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductInfoTaskGetAdvanced"></a>
+
 # **googleProductInfoTaskGetAdvanced**
+
 > MerchantGoogleProductInfoTaskGetAdvancedResponseInfo googleProductInfoTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/product_info/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1178,23 +1218,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductInfoTaskPost"></a>
+
 # **googleProductInfoTaskPost**
+
 > MerchantGoogleProductInfoTaskPostResponseInfo googleProductInfoTaskPost(merchantGoogleProductInfoTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides data on a product listed on Google Shopping, including product description, images, rating, variations, and sellers. In order to set a task, you have to specify the  product_id. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/product_info/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1246,23 +1288,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductInfoTasksReady"></a>
+
 # **googleProductInfoTasksReady**
+
 > MerchantGoogleProductInfoTasksReadyResponseInfo googleProductInfoTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/product_info/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1298,6 +1342,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1310,23 +1355,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductSpecTaskGetAdvanced"></a>
+
 # **googleProductSpecTaskGetAdvanced**
+
 > MerchantGoogleProductSpecTaskGetAdvancedResponseInfo googleProductSpecTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1378,23 +1425,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductSpecTaskGetHtml"></a>
+
 # **googleProductSpecTaskGetHtml**
+
 > MerchantGoogleProductSpecTaskGetHtmlResponseInfo googleProductSpecTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/product_spec/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1446,23 +1495,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductSpecTaskPost"></a>
+
 # **googleProductSpecTaskPost**
+
 > MerchantGoogleProductSpecTaskPostResponseInfo googleProductSpecTaskPost(merchantGoogleProductSpecTaskPostRequestInfo)
-
-
 
 ‌‌ This endpoint provides product data from Google Shopping based on the specified product_id. You will get a full detailed product description as it is given on the Google Shopping product specification page. Product data can include parameters of the product, brand name, part numbers, GTIN, etc. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/product_spec/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1514,23 +1565,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductSpecTasksReady"></a>
+
 # **googleProductSpecTasksReady**
+
 > MerchantGoogleProductSpecTasksReadyResponseInfo googleProductSpecTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/product_spec/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1566,6 +1619,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1578,23 +1632,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductsTaskGetAdvanced"></a>
+
 # **googleProductsTaskGetAdvanced**
+
 > MerchantGoogleProductsTaskGetAdvancedResponseInfo googleProductsTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1646,23 +1702,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductsTaskGetHtml"></a>
+
 # **googleProductsTaskGetHtml**
+
 > MerchantGoogleProductsTaskGetHtmlResponseInfo googleProductsTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1714,23 +1772,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductsTaskPost"></a>
+
 # **googleProductsTaskPost**
+
 > MerchantGoogleProductsTaskPostResponseInfo googleProductsTaskPost(merchantTaskRequestInfo)
-
-
 
 ‌‌ Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1782,23 +1842,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleProductsTasksReady"></a>
+
 # **googleProductsTasksReady**
+
 > MerchantGoogleProductsTasksReadyResponseInfo googleProductsTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1834,6 +1896,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1846,23 +1909,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSellersAdUrl"></a>
+
 # **googleSellersAdUrl**
+
 > MerchantGoogleSellersAdUrlResponseInfo googleSellersAdUrl(shopAdAclk)
-
-
 
 Google Shopping Sellers Ad URL is designed to provide you with a full URL of the advertisement containing all additional parameters set by the seller. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/sellers/ad_url/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1914,23 +1979,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSellersTaskGetAdvanced"></a>
+
 # **googleSellersTaskGetAdvanced**
+
 > MerchantGoogleSellersTaskGetAdvancedResponseInfo googleSellersTaskGetAdvanced(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -1982,23 +2049,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSellersTaskGetHtml"></a>
+
 # **googleSellersTaskGetHtml**
+
 > MerchantGoogleSellersTaskGetHtmlResponseInfo googleSellersTaskGetHtml(id)
-
-
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/sellers/task_get/html/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2050,23 +2119,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSellersTaskPost"></a>
+
 # **googleSellersTaskPost**
+
 > MerchantGoogleSellersTaskPostResponseInfo googleSellersTaskPost(merchantGoogleSellersTaskPostRequestInfo)
-
-
 
 ‌‌ Google Shopping Sellers endpoint will provide you with the list of sellers that listed the specified product on Google Shopping. The provided data for each seller includes related product base and total price, shipment and purchase details and special offers. The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/sellers/task_post/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2118,23 +2189,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSellersTasksReady"></a>
+
 # **googleSellersTasksReady**
+
 > MerchantGoogleSellersTasksReadyResponseInfo googleSellersTasksReady()
-
-
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/sellers/tasks_ready/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2170,6 +2243,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2182,23 +2256,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantAmazonLanguages"></a>
+
 # **merchantAmazonLanguages**
+
 > MerchantAmazonLanguagesResponseInfo merchantAmazonLanguages()
-
-
 
 You will receive the list of supported Amazon languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2234,6 +2310,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2246,23 +2323,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantAmazonLocations"></a>
+
 # **merchantAmazonLocations**
+
 > MerchantAmazonLocationsResponseInfo merchantAmazonLocations()
-
-
 
 You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2298,6 +2377,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2310,23 +2390,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantAmazonLocationsCountry"></a>
+
 # **merchantAmazonLocationsCountry**
+
 > MerchantAmazonLocationsCountryResponseInfo merchantAmazonLocationsCountry(country)
-
-
 
 You will receive the list of supported Amazon locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2378,23 +2460,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantErrors"></a>
+
 # **merchantErrors**
+
 > MerchantErrorsResponseInfo merchantErrors(merchantErrorsRequestInfo)
-
-
 
 By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2446,23 +2530,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantGoogleLanguages"></a>
+
 # **merchantGoogleLanguages**
+
 > MerchantGoogleLanguagesResponseInfo merchantGoogleLanguages()
-
-
 
 You will receive the list of supported Google Shopping languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/languages/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2498,6 +2584,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2510,23 +2597,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantGoogleLocations"></a>
+
 # **merchantGoogleLocations**
+
 > MerchantGoogleLocationsResponseInfo merchantGoogleLocations()
-
-
 
 for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2562,6 +2651,7 @@ public class Example {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2574,23 +2664,25 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantGoogleLocationsCountry"></a>
+
 # **merchantGoogleLocationsCountry**
+
 > MerchantGoogleLocationsCountryResponseInfo merchantGoogleLocationsCountry(country)
-
-
 
 for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/locations/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2642,23 +2734,25 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="merchantIdList"></a>
+
 # **merchantIdList**
+
 > MerchantIdListResponseInfo merchantIdList(merchantIdListRequestInfo)
-
-
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Merchant tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/id_list/?bash&#39;
 
 ### Example
+
 ```java
 // Import classes:
 import io.github.dataforseo.dataforseo_client.ApiClient;
@@ -2710,11 +2804,15 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+[root](./../ "root") / [docs](./ "docs")
+
+[[Back to README.md]](./../README.md "[Back to README.md]")

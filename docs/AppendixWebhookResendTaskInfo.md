@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixWebhookResendTaskInfo
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**data** | **Object** | contains the same parameters that you specified in the POST request |  [optional] |
 |**result** | **Object** | array of results the value of this array is always null; you can get the results by the preferred method of results delivery (pingback or postback) you specified when setting a task |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

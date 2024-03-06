@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksPageIntersectionLiveItem
-
 
 ## Properties
 
@@ -10,5 +11,6 @@
 |**pageIntersection** | **Map&lt;String, List&lt;BacklinksPageIntersectionInfo&gt;&gt;** | contains data on pages that link to the corresponding targets specified in the POST array data is provided in separate objects corresponding to pages specified in the targets object |  [optional] |
 |**summary** | [**Summary**](Summary.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

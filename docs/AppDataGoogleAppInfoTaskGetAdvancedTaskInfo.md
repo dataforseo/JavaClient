@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataGoogleAppInfoTaskGetAdvancedTaskInfo
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**data** | **Object** | contains the same parameters that you specified in the POST request |  [optional] |
 |**result** | [**List&lt;AppDataGoogleAppInfoTaskGetAdvancedResultInfo&gt;**](AppDataGoogleAppInfoTaskGetAdvancedResultInfo.md) | array of results |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

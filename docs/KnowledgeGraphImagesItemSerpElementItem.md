@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KnowledgeGraphImagesItemSerpElementItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**items** | [**List&lt;KnowledgeGraphImagesElement&gt;**](KnowledgeGraphImagesElement.md) | items featured in the faq_box |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

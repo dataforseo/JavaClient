@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo
-
 
 ## Properties
 
@@ -22,5 +23,6 @@
 |**socialGraphUrls** | **List&lt;String&gt;** | social media links and handles social media URLs detected in the social graphs of the target website |  [optional] |
 |**technologies** | [**TechnologiesInfo**](TechnologiesInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

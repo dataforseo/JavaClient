@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleReviewsSearchBusinessDataSerpElementItem
-
 
 ## Properties
 
@@ -30,5 +31,6 @@
 |**reviewId** | **String** | the unique identifier of a review on Google example: ChZDSUhNMG9nS0VJQ0FnSUMxbHFyMFlnEAE |  [optional] |
 |**images** | [**List&lt;ImagesElement&gt;**](ImagesElement.md) | images submitted by the reviewer |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

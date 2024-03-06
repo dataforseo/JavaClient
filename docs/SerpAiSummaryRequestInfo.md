@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpAiSummaryRequestInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**fetchContent** | **Boolean** | fetch content from pages in SERPs optional field if set to true, the API will fetch the content from pages featured in SERP results, and the AI model will consider this content when generating the summary in the result; default value: false |  [optional] |
 |**includeLinks** | **Boolean** | include source links in the summary optional field if set to true, the summary field in the API response will contain links to sources of the generated summary; default value: false |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

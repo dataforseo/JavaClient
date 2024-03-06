@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleShoppingSerpMerchantSerpElementItem
-
 
 ## Properties
 
@@ -33,5 +34,6 @@
 |**deliveryInfo** | [**DeliveryInfo**](DeliveryInfo.md) |  |  [optional] |
 |**storesCountInfo** | [**StoresCountInfo**](StoresCountInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

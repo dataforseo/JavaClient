@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # Location
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**longitude** | **Float** | hotel longitude latitude coordinates of the hotel’s location example: -106.0512973 |  [optional] |
 |**locationChain** | [**List&lt;LocationChain&gt;**](LocationChain.md) | elements of the location chain additional parameters of each element of the location chain |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

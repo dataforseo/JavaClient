@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ProductConsiderationsExpandedElement
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**relatedSearches** | **List&lt;String&gt;** | search queries related to the elment |  [optional] |
 |**aboutThisResult** | [**AboutThisResultElement**](AboutThisResultElement.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

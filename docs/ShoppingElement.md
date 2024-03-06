@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ShoppingElement
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**marketplaceUrl** | **String** | relevant marketplace URL URL of the page on the marketplace website where the product is hosted |  [optional] |
 |**url** | **String** | URL |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ShoppingSpecificationMerchantSerpElementItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**specificationName** | **String** | product attribute attribute name of the product data specification |  [optional] |
 |**specificationValue** | **String** | content of the specification |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

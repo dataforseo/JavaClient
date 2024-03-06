@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # UserProfileInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**reviewsCount** | **Long** | total number of reviews submitted by the reviewer |  [optional] |
 |**locations** | **String** | country of the reviewer |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

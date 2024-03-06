@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo
-
 
 ## Properties
 
@@ -23,5 +24,6 @@
 |**overviewImages** | **List&lt;String&gt;** | images displayed in the hotel overview array containing URLs to images displayed in the hotel overview |  [optional] |
 |**prices** | [**HotelPriceInfo**](HotelPriceInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

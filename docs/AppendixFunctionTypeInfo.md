@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixFunctionTypeInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**advanced** | **Double** |  |  [optional] |
 |**html** | **Double** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

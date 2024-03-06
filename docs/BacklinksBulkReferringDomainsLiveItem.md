@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksBulkReferringDomainsLiveItem
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**referringMainDomains** | **Long** | number of referring main domains pointing to the target the number of primary (root) domains referring to your target |  [optional] |
 |**referringMainDomainsNofollow** | **Long** | number of main domains pointing at least one nofollow link to the target |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

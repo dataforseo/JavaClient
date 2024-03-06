@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixErrorsResultInfo
-
 
 ## Properties
 
@@ -10,5 +11,6 @@
 |**code** | **Integer** | code |  [optional] |
 |**message** | **String** | message |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsCompetitorsDomainLiveItem
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**metrics** | [**Map&lt;String, MetricsInfo&gt;**](MetricsInfo.md) | metrics for intersecting keywords ranking and traffic data relevant to the keywords that the provided domain shares with the target domain note: in this array ranking and traffic data is provided for the target considering the keywords target shares in search with the competitor’s domain |  [optional] |
 |**competitorMetrics** | [**Map&lt;String, MetricsInfo&gt;**](MetricsInfo.md) | metrics for intersecting keywords ranking and traffic data relevant to the keywords that the provided domain shares with the target domain note: in this array ranking and traffic data is provided for the returned competitor’s domain |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

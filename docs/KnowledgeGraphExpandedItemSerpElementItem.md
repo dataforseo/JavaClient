@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KnowledgeGraphExpandedItemSerpElementItem
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**expandedElement** | [**List&lt;KnowledgeGraphExpandedElement&gt;**](KnowledgeGraphExpandedElement.md) | link of the element |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

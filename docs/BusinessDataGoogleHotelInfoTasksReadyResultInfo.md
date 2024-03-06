@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleHotelInfoTasksReadyResultInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**endpointAdvanced** | **String** | URL for collecting the results of the task |  [optional] |
 |**endpointHtml** | **String** | URL for collecting the results of the task |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

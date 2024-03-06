@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksBacklinksLiveItem
-
 
 ## Properties
 
@@ -55,5 +56,6 @@
 |**isIndirectLink** | **Boolean** | indicates whether the backlink is an indirect link if true, the backlink is an indirect link pointing to a page that either redirects to url_to, or points to a canonical page |  [optional] |
 |**indirectLinkPath** | [**List&lt;Redirect&gt;**](Redirect.md) | indirect link path indicates a URL or a sequence of URLs that lead to url_to |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

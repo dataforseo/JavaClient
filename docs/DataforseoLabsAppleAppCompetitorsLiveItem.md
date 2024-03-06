@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsAppleAppCompetitorsLiveItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**competitorMetrics** | [**AppStoreMetricsBundleInfo**](AppStoreMetricsBundleInfo.md) |  |  [optional] |
 |**fullMetrics** | [**AppStoreMetricsBundleInfo**](AppStoreMetricsBundleInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

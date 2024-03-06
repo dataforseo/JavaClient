@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KnowledgeGraphExpandedItemDataforseoLabsSerpElementItem
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**dataAttrid** | **String** | google defined data attribute ID example: kc:/local:place qa |  [optional] |
 |**expandedElement** | [**List&lt;KnowledgeGraphExpandedElement&gt;**](KnowledgeGraphExpandedElement.md) | link of the element |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

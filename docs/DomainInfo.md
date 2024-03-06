@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainInfo
-
 
 ## Properties
 
@@ -23,5 +24,6 @@
 |**wwwRedirectStatusCode** | **Integer** | redirect status code the status code of the www to non-www redirect in most cases, it is recommended that redirect returns a 301 status code |  [optional] |
 |**mainDomain** | **String** | root domain name |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # EventItemSerpElementItem
-
 
 ## Properties
 
@@ -19,5 +20,6 @@
 |**locationInfo** | [**LocationInfo**](LocationInfo.md) |  |  [optional] |
 |**informationAndTickets** | [**List&lt;InformationAndTicketsElement&gt;**](InformationAndTicketsElement.md) | additional information and ticket purchase options if there is none, equals null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

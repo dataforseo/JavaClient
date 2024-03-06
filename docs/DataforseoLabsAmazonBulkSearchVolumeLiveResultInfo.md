@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsAmazonBulkSearchVolumeLiveResultInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsAmazonBulkSearchVolumeLiveItem&gt;**](DataforseoLabsAmazonBulkSearchVolumeLiveItem.md) | contains keyword search volume data data |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

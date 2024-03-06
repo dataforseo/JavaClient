@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksIndexResultInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**totalDomains** | **Long** | total number of domains our database contains for the moment of checking |  [optional] |
 |**indexHistory** | [**List&lt;IndexHistory&gt;**](IndexHistory.md) | index volume data for the past 12 months |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

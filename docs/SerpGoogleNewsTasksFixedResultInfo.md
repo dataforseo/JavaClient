@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpGoogleNewsTasksFixedResultInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**endpointAdvanced** | **String** | URL for collecting the results of the SERP Advanced task if SERP Advanced is not supported in the specified endpoint, the value will be null |  [optional] |
 |**endpointHtml** | **String** | URL for collecting the results of the SERP HTML task if SERP HTML is not supported in the specified endpoint, the value will be null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HotelPriceInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**visitors** | **Integer** | number of hotel visitors for this price |  [optional] |
 |**items** | [**List&lt;HotelPriceItemInfo&gt;**](HotelPriceItemInfo.md) | encountered item types types of search engine results encountered in the items array; possible item types: hotel_search_item |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

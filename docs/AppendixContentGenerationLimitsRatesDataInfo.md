@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixContentGenerationLimitsRatesDataInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**textSummary** | [**AppendixContentGenerationDayLimitsRatesDataInfo**](AppendixContentGenerationDayLimitsRatesDataInfo.md) |  |  [optional] |
 |**generateSubTopics** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

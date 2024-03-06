@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksPageMeta
-
 
 ## Properties
 
@@ -25,5 +26,6 @@
 |**platformType** | **List&lt;String&gt;** | type of a platform |  [optional] |
 |**technologies** | **Map&lt;String, String&gt;** | website technologies |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsStatusResultInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**bing** | [**DataforseoLabsStatusInfo**](DataforseoLabsStatusInfo.md) |  |  [optional] |
 |**amazon** | [**DataforseoLabsStatusInfo**](DataforseoLabsStatusInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantGoogleProductSpecTaskGetHtmlResultInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;HtmlItem&gt;**](HtmlItem.md) | elements of search results found on Google Shopping |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

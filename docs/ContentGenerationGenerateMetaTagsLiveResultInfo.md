@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentGenerationGenerateMetaTagsLiveResultInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**title** | **String** | generated title |  [optional] |
 |**description** | **String** | generated description |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

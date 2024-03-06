@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsSearchVolumeLiveResultInfo
-
 
 ## Properties
 
@@ -20,5 +21,6 @@
 |**cpc** | **Float** | cost per click indicates the amount paid for each click on the ad displayed for a given keyword |  [optional] |
 |**monthlySearches** | [**List&lt;MonthlySearches&gt;**](MonthlySearches.md) | monthly searches represents the (approximate) number of searches on this keyword idea (as available for the past twelve months by default), targeted to the specified geographic locations; if there is no data then the value is null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

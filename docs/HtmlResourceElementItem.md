@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HtmlResourceElementItem
-
 
 ## Properties
 
@@ -36,5 +37,6 @@
 |**relativeUrlLength** | **Integer** | relative URL length in characters |  [optional] |
 |**lastModified** | [**LastModified**](LastModified.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageKeywordDensityResultInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**itemsCount** | **Long** | number of items in the results array |  [optional] |
 |**items** | [**List&lt;OnPageKeywordDensityItem&gt;**](OnPageKeywordDensityItem.md) | items array |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

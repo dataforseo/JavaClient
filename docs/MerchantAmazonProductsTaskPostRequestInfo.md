@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantAmazonProductsTaskPostRequestInfo
-
 
 ## Properties
 
@@ -28,5 +29,6 @@
 |**pingbackUrl** | **String** | notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in pingback_url will be urlencoded; i.a., the # symbol will be encoded into %23 |  [optional] |
 |**department** | **String** | amazon product department optional field specify one of the following amazon departments for extracting product listings: \&quot;Arts &amp; Crafts\&quot;, \&quot;Automotive\&quot;, \&quot;Baby\&quot;, \&quot;Beauty &amp; Personal Care\&quot;, \&quot;Books\&quot;, \&quot;Computers\&quot;, \&quot;Digital Music\&quot;, \&quot;Electronics\&quot;, \&quot;Kindle Store\&quot;, \&quot;Prime Video\&quot;, \&quot;Women&#39;s Fashion\&quot;, \&quot;Men&#39;s Fashion\&quot;, \&quot;Girls&#39; Fashion\&quot;, \&quot;Boys&#39; Fashion\&quot;, \&quot;Deals\&quot;, \&quot;Health &amp; Household\&quot;, \&quot;Home &amp; Kitchen\&quot;, \&quot;Industrial &amp; Scientific\&quot;, \&quot;Luggage\&quot;, \&quot;Movies &amp; TV\&quot;, \&quot;Music, CDs &amp; Vinyl\&quot;, \&quot;Pet Supplies\&quot;, \&quot;Software\&quot;, \&quot;Sports &amp; Outdoors\&quot;, \&quot;Tools &amp; Home Improvement\&quot;, \&quot;Toys &amp; Games\&quot;, \&quot;Video Games\&quot; |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

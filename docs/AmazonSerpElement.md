@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AmazonSerpElement
-
 
 ## Properties
 
@@ -24,5 +25,6 @@
 |**isBestSeller** | **Boolean** | “Best Seller” label if the value is true, the product is marked with the “Best Seller” label |  [optional] |
 |**deliveryInfo** | [**AmazonDeliveryInfo**](AmazonDeliveryInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

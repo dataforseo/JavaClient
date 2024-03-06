@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # LocalServicesSerpElementItem
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**items** | [**List&lt;LocalServicesElement&gt;**](LocalServicesElement.md) | contains results featured in the ‘hotels_pack’ element of SERP |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

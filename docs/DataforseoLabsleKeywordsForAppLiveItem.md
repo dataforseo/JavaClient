@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsleKeywordsForAppLiveItem
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**keywordData** | [**KeywordData**](KeywordData.md) |  |  [optional] |
 |**rankedSerpElement** | [**AppRankedSerpElementInfo**](AppRankedSerpElementInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

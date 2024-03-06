@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataErrorsResultInfo
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**httpTime** | **Float** | time taken by HTTP request for tasks set with a pingback/postback, this field will show the time it took your server to respond |  [optional] |
 |**httpResponse** | **String** | HTTP response server response |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

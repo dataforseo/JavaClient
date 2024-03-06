@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # YoutubeSubtitlesSerpElementItem
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**endTime** | **Integer** | the second subtitled text ends |  [optional] |
 |**durationTime** | **Integer** | duration of subtitles in seconds |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

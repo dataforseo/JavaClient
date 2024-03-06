@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantAmazonSellersTasksReadyResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**endpointAdvanced** | **String** | URL for collecting the results of Amazon Sellers Advanced task |  [optional] |
 |**endpointHtml** | **String** | URL for collecting the results of Amazon Sellers HTML task |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

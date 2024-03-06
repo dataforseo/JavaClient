@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TargetInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**isIp** | **Boolean** | indicates if the target is IP if true, the domain, subdomain or webpage functions as an IP address and does not have a domain name |  [optional] |
 |**targetSpamScore** | **Integer** | spam score of the target if the target is a domain/subdomain, this fields indicates the average spam score of all pages of that domain/subdomain; learn more about how the metric is calculated on this help center page |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

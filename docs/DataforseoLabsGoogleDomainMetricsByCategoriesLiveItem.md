@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**metricsHistory** | **Map&lt;String, Map&lt;String, MetricsInfo&gt;&gt;** | historical ranking and traffic data of the domain |  [optional] |
 |**metricsDifference** | [**Map&lt;String, MetricsInfo&gt;**](MetricsInfo.md) | metrics difference between first_date and second_date calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,4 +1,6 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem
 
@@ -16,5 +18,6 @@ items array
 |**categoriesCount** | **Long** | technology categories count number of domains that match the parameters you specified and are using technologies from the indicated category |  [optional] |
 |**technologiesCount** | **Long** | technologies count number of domains that match the parameters you specified and are using the indicated technology |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

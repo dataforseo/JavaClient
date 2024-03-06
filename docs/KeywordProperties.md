@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordProperties
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**detectedLanguage** | **String** | detected language of the keyword indicates the language of the keyword as identified by our system |  [optional] |
 |**isAnotherLanguage** | **Boolean** | detected language of the keyword is different from the set language if true, the language set in the request does not match the language determined by our system for a given keyword |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

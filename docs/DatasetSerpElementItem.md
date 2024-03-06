@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DatasetSerpElementItem
-
 
 ## Properties
 
@@ -28,5 +29,6 @@
 |**periodCovered** | [**PeriodCovered**](PeriodCovered.md) |  |  [optional] |
 |**datasetDescription** | [**DatasetDescription**](DatasetDescription.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

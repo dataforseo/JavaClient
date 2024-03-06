@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsAppleAppCompetitorsLiveResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsAppleAppCompetitorsLiveItem&gt;**](DataforseoLabsAppleAppCompetitorsLiveItem.md) | contains data related to the app_id and competitor applications |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

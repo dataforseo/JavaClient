@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # QuestionsAndAnswersElement
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**domain** | **String** | domain where a link points |  [optional] |
 |**votes** | **Integer** | answer upvotes from the source |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

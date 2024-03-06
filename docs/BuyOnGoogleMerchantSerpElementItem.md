@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BuyOnGoogleMerchantSerpElementItem
-
 
 ## Properties
 
@@ -25,5 +26,6 @@
 |**shopAdAclk** | **String** | unique ad click referral parameter using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL in this case, the value equals null |  [optional] |
 |**productCondition** | **String** | indicated condition of the product possible values: Used, Refurbished, New, null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

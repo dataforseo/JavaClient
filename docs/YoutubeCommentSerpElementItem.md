@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # YoutubeCommentSerpElementItem
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**likesCount** | **Long** | number of likes on the comment |  [optional] |
 |**replyCount** | **Long** | number of replies on the comment |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

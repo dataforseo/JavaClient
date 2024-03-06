@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # RatingElement
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**votesCount** | **Long** | the amount of feedback |  [optional] |
 |**ratingMax** | **Integer** | the maximum value for a rating_type |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ImageLinkElementItem
-
 
 ## Properties
 
@@ -25,5 +26,6 @@
 |**isLinkRelationConflict** | **Boolean** | indicates that the link may have a conflict with another link if true, at least one link pointing to link_to has a rel&#x3D;\&quot;nofollow\&quot; attribute and at least one is dofollow |  [optional] |
 |**pageToStatusCode** | **Integer** | status code of the referenced page status code of the page to which the link is pointing |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

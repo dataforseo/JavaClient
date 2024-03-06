@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessListingAggregationInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**topAttributes** | **Map&lt;String, Long&gt;** | the most mentioned service details service details of a business entity displayed in a form of checks and the number of entities mentioning each attribute |  [optional] |
 |**topPlaceTopics** | **Map&lt;String, Long&gt;** | top keywords mentioned in customer reviews contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

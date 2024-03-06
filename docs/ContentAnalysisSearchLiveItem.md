@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentAnalysisSearchLiveItem
-
 
 ## Properties
 
@@ -24,5 +25,6 @@
 |**socialMetrics** | [**List&lt;SocialMetricsInfo&gt;**](SocialMetricsInfo.md) | social media engagement metrics data on social media interactions associated with the content based on website embeds developed and supported by social media platforms |  [optional] |
 |**contentInfo** | [**AnalysisContentInfo**](AnalysisContentInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

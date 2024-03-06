@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageIdListResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**cost** | **Float** | cost of the task, USD |  [optional] |
 |**metadata** | **Map&lt;String, String&gt;** | contains parameters you specified in the POST request |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

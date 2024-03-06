@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageInstantPagesRequestInfo
-
 
 ## Properties
 
@@ -25,5 +26,6 @@
 |**checkSpell** | **Boolean** | check spelling optional field set to true to check spelling on a website using Hunspell library default value: false |  [optional] |
 |**checksThreshold** | **Map&lt;String, Long&gt;** | custom threshold values for checks optional field you can specify custom threshold values for the parameters included in the checks array of OnPage API responses; Note: only integer threshold values can be modified; |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

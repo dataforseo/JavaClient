@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataContactInfo
-
 
 ## Properties
 
@@ -11,5 +12,6 @@
 |**value** | **String** | contact displayed in SERP  example: \&quot;+119797979736\&quot; |  [optional] |
 |**source** | **String** | data source |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

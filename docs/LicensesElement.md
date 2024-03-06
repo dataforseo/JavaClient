@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # LicensesElement
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**url** | **String** | URL |  [optional] |
 |**domain** | **String** | domain where a link points |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

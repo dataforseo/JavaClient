@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo
-
 
 ## Properties
 
@@ -23,5 +24,6 @@
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data array of the response |  [optional] |
 |**target** | **String** | target website optional field specify a website or URL to get a list of keywords relevant to it; Note: if a website url is specified, you will still get keywords relevant for the entire website |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

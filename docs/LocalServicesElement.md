@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # LocalServicesElement
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**profileImageUrl** | **String** | URL of the image featured in the element |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

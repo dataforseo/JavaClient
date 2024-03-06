@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataYelpSearchTaskGetResultInfo
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**itemsCount** | **Long** | the number of items in the results array you can get more results by using the depth parameter when setting a task |  [optional] |
 |**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | Yelp search listing results you can get more results by using the depth parameter when setting a task |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleTopSearchesLiveResponseInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**tasksError** | **Long** | the number of tasks in the tasks array returned with an error |  [optional] |
 |**tasks** | [**List&lt;DataforseoLabsGoogleTopSearchesLiveTaskInfo&gt;**](DataforseoLabsGoogleTopSearchesLiveTaskInfo.md) | array of tasks |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

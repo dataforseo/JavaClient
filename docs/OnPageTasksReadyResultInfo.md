@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageTasksReadyResultInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**datePosted** | **String** | date when the task was posted (in the UTC format) |  [optional] |
 |**tag** | **String** | user-defined task identifier |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SearchIntentInfo
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**foreignIntent** | **List&lt;String&gt;** | supplementary search intents possible values: informational, navigational, commercial, transactional |  [optional] |
 |**lastUpdatedTime** | **String** | date and time when search intent data was last updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

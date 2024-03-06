@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpGoogleLocalFinderLiveAdvancedRequestInfo
-
 
 ## Properties
 
@@ -21,5 +22,6 @@
 |**timeFilter** | **String** | filter results by open hours optional field using this field, you can filter places in the results by the time a place is open for visitors note that Google may also provide results that do not match this filter possible values: \&quot;open_now\&quot;, \&quot;24_hours\&quot;, \&quot;$day_value\&quot;, \&quot;$day_value;$time_value\&quot;; instead of $day_value use one of these values: \&quot;monday\&quot;, \&quot;tuesday\&quot;, \&quot;wednesday\&quot;, \&quot;thursday\&quot;, \&quot;friday\&quot;, \&quot;saturday\&quot;, \&quot;sunday\&quot;; instead of $time_value use one of these values: \&quot;00\&quot;, \&quot;01\&quot;, \&quot;02\&quot;, \&quot;03\&quot;, \&quot;04\&quot;, \&quot;05\&quot;, \&quot;06\&quot;, \&quot;07\&quot;, \&quot;08\&quot;, \&quot;09\&quot;, \&quot;10\&quot;, \&quot;11\&quot;, \&quot;12\&quot;, \&quot;13\&quot;, \&quot;14\&quot;, \&quot;15\&quot;, \&quot;16\&quot;, \&quot;17\&quot;, \&quot;18\&quot;, \&quot;19\&quot;, \&quot;20\&quot;, \&quot;21\&quot;, \&quot;22\&quot;, \&quot;23\&quot; example: \&quot;tuesday;18\&quot; |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

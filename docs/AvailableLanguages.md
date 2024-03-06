@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AvailableLanguages
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**keywords** | **Integer** | the number of keywords available for the given location and language |  [optional] |
 |**serps** | **Integer** | the number of SERP pages available for the given location and language |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

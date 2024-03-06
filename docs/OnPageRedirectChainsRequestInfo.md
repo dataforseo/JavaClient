@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageRedirectChainsRequestInfo
-
 
 ## Properties
 
@@ -14,5 +15,6 @@
 |**filters** | **List&lt;Object&gt;** | array of results filtering parameters optional field you can use only one filtering parameter with this endpoint the following filtering parameter is supported: is_redirect_loop the following operators are supported: regex, &#x3D;, &lt;&gt; examples: [\&quot;is_redirect_loop\&quot;,\&quot;&#x3D;\&quot;,\&quot;true\&quot;] [\&quot;is_redirect_loop\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;false\&quot;] |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataBingKeywordsForSiteTaskGetResultInfo
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**categories** | **List&lt;String&gt;** | product and service categories legacy field, the value will always be null |  [optional] |
 |**monthlySearches** | [**List&lt;MonthlySearches&gt;**](MonthlySearches.md) | monthly searches represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations search volume is rounded to the closest decimal values if there is no data the value is null |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

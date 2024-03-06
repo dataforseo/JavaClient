@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # JobsElement
-
 
 ## Properties
 
@@ -17,5 +18,6 @@
 |**salary** | **String** | salary |  [optional] |
 |**url** | **String** | URL |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

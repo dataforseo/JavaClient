@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # IndexHistory
-
 
 ## Properties
 
@@ -12,5 +13,6 @@
 |**totalPages** | **Long** | total number of pages our database contained on the given date |  [optional] |
 |**totalDomains** | **Long** | total number of domains our database contained on the given date |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

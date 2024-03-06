@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsSerpCompetitorsLiveItem
-
 
 ## Properties
 
@@ -18,5 +19,6 @@
 |**relevantSerpItems** | **Integer** | the number of SERP elements relevant to the domain represents the number of search results in SERP relevant to the domain for the specified keywords |  [optional] |
 |**keywordsPositions** | **Map&lt;String, List&lt;BigDecimal&gt;&gt;** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

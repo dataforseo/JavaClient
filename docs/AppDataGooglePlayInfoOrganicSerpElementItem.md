@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataGooglePlayInfoOrganicSerpElementItem
-
 
 ## Properties
 
@@ -41,5 +42,6 @@
 |**genres** | **List&lt;String&gt;** | app genres contains relevant app categories |  [optional] |
 |**tags** | **List&lt;String&gt;** | app tags contains relevant app tags |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

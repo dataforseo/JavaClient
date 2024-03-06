@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleHotelSearchesTaskGetResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**itemsCount** | **Long** | item types the number of items in the items array |  [optional] |
 |**items** | [**List&lt;BusinessDataGoogleHotelSearchesItem&gt;**](BusinessDataGoogleHotelSearchesItem.md) | array of items note: this field always equals null; use it to facilitate integration and ensure interoperability with the Hotel Info endpoint |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

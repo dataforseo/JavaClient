@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageLighthouseVersionsResultInfo
-
 
 ## Properties
 
@@ -9,5 +10,6 @@
 |------------ | ------------- | ------------- | -------------|
 |**availibleVersions** | [**List&lt;AvailibleVersions&gt;**](AvailibleVersions.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

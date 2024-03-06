@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # RedirectLinkElementItem
-
 
 ## Properties
 
@@ -20,5 +21,6 @@
 |**isBroken** | **Boolean** | link is broken indicates whether a link is directing to a broken page or resource |  [optional] |
 |**isLinkRelationConflict** | **Boolean** | indicates that the link may have a conflict with another link if true, at least one link pointing to the URL in link_to has a rel&#x3D;\&quot;nofollow\&quot; attribute and at least one is dofollow |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

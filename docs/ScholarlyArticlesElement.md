@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ScholarlyArticlesElement
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**author** | **String** | author |  [optional] |
 |**description** | **String** | description of the results element in SERP |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

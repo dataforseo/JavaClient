@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixBacklinksLimitsRatesDataInfo
-
 
 ## Properties
 
@@ -28,5 +29,6 @@
 |**timeseriesNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**competitors** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

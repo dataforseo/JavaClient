@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentGenerationGenerateLiveResultInfo
-
 
 ## Properties
 
@@ -13,5 +14,6 @@
 |**generatedText** | **String** | resulting text |  [optional] |
 |**supplementToken** | **String** | token for generating subsequent results you can use this parameter to continue the generation from the end of the current result; supplement_token values are unique for each subsequent task |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

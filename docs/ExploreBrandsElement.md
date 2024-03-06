@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ExploreBrandsElement
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**imageUrl** | **String** | URL of the image |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageAvailableFiltersResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**redirectChains** | **Map&lt;String, String&gt;** |  |  [optional] |
 |**keywordDensity** | **Map&lt;String, String&gt;** |  |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

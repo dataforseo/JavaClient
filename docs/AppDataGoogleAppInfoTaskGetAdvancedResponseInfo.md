@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataGoogleAppInfoTaskGetAdvancedResponseInfo
-
 
 ## Properties
 
@@ -16,5 +17,6 @@
 |**tasksError** | **Long** | the number of tasks in the tasks array returned with an error |  [optional] |
 |**tasks** | [**List&lt;AppDataGoogleAppInfoTaskGetAdvancedTaskInfo&gt;**](AppDataGoogleAppInfoTaskGetAdvancedTaskInfo.md) | array of tasks |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,7 +1,8 @@
+[root](./../ "root") / [docs](./ "docs")
 
+[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantGoogleProductSpecTasksReadyResultInfo
-
 
 ## Properties
 
@@ -15,5 +16,6 @@
 |**endpointAdvanced** | **String** | URL for collecting the results of the Google Shopping Product Specifications Advanced task |  [optional] |
 |**endpointHtml** | **String** | URL for collecting the results of the Google Shopping Product Specifications HTML task |  [optional] |
 
+[root](./../ "root") / [docs](./ "docs")
 
-
+[[Back to README.md]](./../README.md "[Back to README.md]")
