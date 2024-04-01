@@ -2,12 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.dataforseo</groupId>
-    <artifactId>dataforseo_client_preview</artifactId>
+    <artifactId>dataforseo-client</artifactId>
     <packaging>jar</packaging>
-    <name>dataforseo_client_preview</name>
-    <version>1.0.0</version>
+    <name>dataforseo-client</name>
+    <version>1.0.3</version>
     <url>https://github.com/dataforseo/JavaClient</url>
-    <description>description</description>
+    <description>API client that provide services of DataForSeo API. For more information about client code generation, please follow to github </description>
     <scm>
         <connection></connection>
         <developerConnection></developerConnection>
@@ -33,6 +33,17 @@
 
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.3.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <tokenAuth>true</tokenAuth>
+                </configuration>
+            </plugin>
 
            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

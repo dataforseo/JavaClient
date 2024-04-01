@@ -1,7 +1,7 @@
 lazy val root = (project in file(".")).
   settings(
-    organization := "io.github.dataforseo",
-    name := "dataforseo_client_preview",
+    organization := "org.dataforseo",
+    name := "dataforseo-client",
     version := "1.0.0-SNAPSHOT",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),
