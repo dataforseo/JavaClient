@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpBingOrganicLiveAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class SerpBingOrganicLiveAdvancedResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -338,7 +338,7 @@ public class SerpBingOrganicLiveAdvancedResultInfo {
   }
 
    /**
-   * additional items present in the element if there are none, equals null
+   * items featured in the faq_box
    * @return items
   **/
   @javax.annotation.Nullable

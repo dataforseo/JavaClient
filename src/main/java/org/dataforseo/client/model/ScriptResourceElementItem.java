@@ -58,7 +58,7 @@ import org.dataforseo.client.JSON;
 /**
  * ScriptResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -104,6 +104,10 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
   @SerializedName(SERIALIZED_NAME_CHECKS)
   private Map<String, Boolean> checks;
 
+  public static final String SERIALIZED_NAME_RESOURCE_ERRORS = "resource_errors";
+  @SerializedName(SERIALIZED_NAME_RESOURCE_ERRORS)
+  private OnPageResourceIssueInfo resourceErrors;
+
   public static final String SERIALIZED_NAME_CONTENT_ENCODING = "content_encoding";
   @SerializedName(SERIALIZED_NAME_CONTENT_ENCODING)
   private String contentEncoding;
@@ -123,10 +127,6 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_LAST_MODIFIED = "last_modified";
   @SerializedName(SERIALIZED_NAME_LAST_MODIFIED)
   private LastModified lastModified;
-
-  public static final String SERIALIZED_NAME_RESOURCE_ERRORS = "resource_errors";
-  @SerializedName(SERIALIZED_NAME_RESOURCE_ERRORS)
-  private OnPageResourceIssueInfo resourceErrors;
 
   public ScriptResourceElementItem() {
     this.resourceType = this.getClass().getSimpleName();
@@ -349,6 +349,25 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
 
+  public ScriptResourceElementItem resourceErrors(OnPageResourceIssueInfo resourceErrors) {
+    this.resourceErrors = resourceErrors;
+    return this;
+  }
+
+   /**
+   * Get resourceErrors
+   * @return resourceErrors
+  **/
+  @javax.annotation.Nullable
+  public OnPageResourceIssueInfo getResourceErrors() {
+    return resourceErrors;
+  }
+
+  public void setResourceErrors(OnPageResourceIssueInfo resourceErrors) {
+    this.resourceErrors = resourceErrors;
+  }
+
+
   public ScriptResourceElementItem contentEncoding(String contentEncoding) {
     this.contentEncoding = contentEncoding;
     return this;
@@ -444,25 +463,6 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
 
-  public ScriptResourceElementItem resourceErrors(OnPageResourceIssueInfo resourceErrors) {
-    this.resourceErrors = resourceErrors;
-    return this;
-  }
-
-   /**
-   * Get resourceErrors
-   * @return resourceErrors
-  **/
-  @javax.annotation.Nullable
-  public OnPageResourceIssueInfo getResourceErrors() {
-    return resourceErrors;
-  }
-
-  public void setResourceErrors(OnPageResourceIssueInfo resourceErrors) {
-    this.resourceErrors = resourceErrors;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -484,12 +484,12 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
         Objects.equals(this.fetchTiming, scriptResourceElementItem.fetchTiming) &&
         Objects.equals(this.cacheControl, scriptResourceElementItem.cacheControl) &&
         Objects.equals(this.checks, scriptResourceElementItem.checks) &&
+        Objects.equals(this.resourceErrors, scriptResourceElementItem.resourceErrors) &&
         Objects.equals(this.contentEncoding, scriptResourceElementItem.contentEncoding) &&
         Objects.equals(this.mediaType, scriptResourceElementItem.mediaType) &&
         Objects.equals(this.acceptType, scriptResourceElementItem.acceptType) &&
         Objects.equals(this.server, scriptResourceElementItem.server) &&
         Objects.equals(this.lastModified, scriptResourceElementItem.lastModified) &&
-        Objects.equals(this.resourceErrors, scriptResourceElementItem.resourceErrors) &&
         super.equals(o);
   }
 
@@ -499,7 +499,7 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(meta, statusCode, location, url, size, encodedSize, totalTransferSize, fetchTime, fetchTiming, cacheControl, checks, contentEncoding, mediaType, acceptType, server, lastModified, resourceErrors, super.hashCode());
+    return Objects.hash(meta, statusCode, location, url, size, encodedSize, totalTransferSize, fetchTime, fetchTiming, cacheControl, checks, resourceErrors, contentEncoding, mediaType, acceptType, server, lastModified, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -525,12 +525,12 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
     sb.append("    fetchTiming: ").append(toIndentedString(fetchTiming)).append("\n");
     sb.append("    cacheControl: ").append(toIndentedString(cacheControl)).append("\n");
     sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
+    sb.append("    resourceErrors: ").append(toIndentedString(resourceErrors)).append("\n");
     sb.append("    contentEncoding: ").append(toIndentedString(contentEncoding)).append("\n");
     sb.append("    mediaType: ").append(toIndentedString(mediaType)).append("\n");
     sb.append("    acceptType: ").append(toIndentedString(acceptType)).append("\n");
     sb.append("    server: ").append(toIndentedString(server)).append("\n");
     sb.append("    lastModified: ").append(toIndentedString(lastModified)).append("\n");
-    sb.append("    resourceErrors: ").append(toIndentedString(resourceErrors)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -565,12 +565,12 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
     openapiFields.add("fetch_timing");
     openapiFields.add("cache_control");
     openapiFields.add("checks");
+    openapiFields.add("resource_errors");
     openapiFields.add("content_encoding");
     openapiFields.add("media_type");
     openapiFields.add("accept_type");
     openapiFields.add("server");
     openapiFields.add("last_modified");
-    openapiFields.add("resource_errors");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * AnchorLinkElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class AnchorLinkElementItem extends BaseOnPageLinkItemInfo {
   public static final String SERIALIZED_NAME_DOMAIN_FROM = "domain_from";
   @SerializedName(SERIALIZED_NAME_DOMAIN_FROM)

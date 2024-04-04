@@ -176,12 +176,4 @@ public class BuyOnGoogleMerchantSerpElementItemTest {
         // TODO: test shopAdAclk
     }
 
-    /**
-     * Test the property 'productCondition'
-     */
-    @Test
-    public void productConditionTest() {
-        // TODO: test productCondition
-    }
-
 }

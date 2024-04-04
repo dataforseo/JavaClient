@@ -259,7 +259,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 67e7365e-4253-4743-97eb-f3532eee3b26
+          example: edef67da-fcf7-439e-ba32-6d5aa7ab418e
       responses:
         '200':
           description: Successful operation
@@ -520,7 +520,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 2946e7dd-d12c-481f-acc2-3b60020d440a
+          example: 62997a6d-293a-4177-962b-79b5a80916ef
       responses:
         '200':
           description: Successful operation
@@ -662,7 +662,7 @@ paths:
           required: true
           schema:
             type: string
-          example: da1362eb-eef6-4758-a9d0-e2c86fc4f7d0
+          example: 1b2380a6-3f9e-4e17-b943-3e3365167a4f
       responses:
         '200':
           description: Successful operation
@@ -901,7 +901,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 80237f88-3532-4bf3-9dc0-fbdd6c084b16
+          example: 84c3cfd4-229f-45a4-a4d8-0f3ffeedbc29
       responses:
         '200':
           description: Successful operation
@@ -1118,7 +1118,7 @@ paths:
           required: true
           schema:
             type: string
-          example: dc15bd51-7e35-4529-8347-a3561ef7f51b
+          example: 75cae887-bba0-403c-aaf3-4feb3be37036
       responses:
         '200':
           description: Successful operation
@@ -1583,7 +1583,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 406620b6-32f0-4948-8791-736319081e15
+          example: c0c52173-43aa-4431-b810-63de51783f1a
       responses:
         '200':
           description: Successful operation
@@ -1747,7 +1747,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 9a6cf3a6-263e-4e1c-8b41-8a4e3cd6f294
+          example: b5664cb9-155b-4ff7-a126-d5da08a35cca
       responses:
         '200':
           description: Successful operation
@@ -2309,7 +2309,7 @@ paths:
           required: true
           schema:
             type: string
-          example: aba8ae40-63ff-420b-bb95-93806695205e
+          example: 029952fc-514d-4d0e-83fa-e855eb6f2faf
       responses:
         '200':
           description: Successful operation
@@ -2549,7 +2549,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 1538542b-c713-4e0c-999d-c81ee7cbacae
+          example: 0d758039-7446-4303-83fb-7ce5eb326c32
       responses:
         '200':
           description: Successful operation
@@ -2670,7 +2670,7 @@ paths:
           required: true
           schema:
             type: string
-          example: d03f1345-faca-4b7b-b1f1-792364318e46
+          example: 2a3e9d2f-9be2-4b4f-9bf9-46b36f44dd30
       responses:
         '200':
           description: Successful operation
@@ -2844,7 +2844,7 @@ paths:
           required: true
           schema:
             type: string
-          example: e8b4955d-51c7-453f-8815-b4b9e171f2ac
+          example: d85dca1d-1682-4861-9e39-4974d7b42f07
       responses:
         '200':
           description: Successful operation
@@ -4463,7 +4463,7 @@ paths:
           required: true
           schema:
             type: string
-          example: a0868d28-e4b0-47f7-8389-41cd38858aa8
+          example: 07f3259e-8ae6-4b00-a0ec-7aad45ee0c52
       responses:
         '200':
           description: Successful operation
@@ -4545,7 +4545,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 56066c13-9229-45a2-aaec-0111d406677b
+          example: 4d2d2fda-04f6-4b0a-85b8-0fdcea3b23c4
       responses:
         '200':
           description: Successful operation
@@ -4627,7 +4627,7 @@ paths:
           required: true
           schema:
             type: string
-          example: fbc76092-2d5e-46da-a0df-48208ba29538
+          example: 6247a92b-5b9c-429a-addf-135b5894b8bc
       responses:
         '200':
           description: Successful operation
@@ -4709,7 +4709,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 4fee3af9-43e0-473b-b866-3e70f5cf9e6b
+          example: 0d525887-8e4d-429f-8ec4-43884ae3d979
       responses:
         '200':
           description: Successful operation
@@ -4859,7 +4859,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 61d52d11-ee59-4ba1-860c-5b15150ee01d
+          example: d41c3dc2-ba2d-46c7-a33d-4cdd88d43db9
       responses:
         '200':
           description: Successful operation
@@ -5097,7 +5097,7 @@ paths:
           required: true
           schema:
             type: string
-          example: e351b919-1b71-4204-9aff-11f45ff2634e
+          example: bde40a74-a907-4aee-8fa6-a15b58e21cb7
       responses:
         '200':
           description: Successful operation
@@ -5179,7 +5179,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 8afb22b8-17ed-4740-90cb-6e483e048752
+          example: a683899f-c18f-4262-872a-758c42f6a5a0
       responses:
         '200':
           description: Successful operation
@@ -5261,7 +5261,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 9a23a013-85fb-4fc8-a5ca-cfd5e34f7e83
+          example: 0a93c0cc-4eb4-4968-a3b4-2987023e3254
       responses:
         '200':
           description: Successful operation
@@ -5358,7 +5358,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 9de512a2-7fcc-486f-b406-6767cb16715d
+          example: c90234f2-bee6-47f9-978a-b4afbe55d942
       responses:
         '200':
           description: Successful operation
@@ -7085,7 +7085,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 88ecc92c-8b71-446d-b55c-bade0482dbad
+          example: dddf7b02-7fb3-4a0d-b077-2a797afac73e
       responses:
         '200':
           description: Successful operation
@@ -7168,7 +7168,7 @@ paths:
           required: true
           schema:
             type: string
-          example: dbcadd8c-c4b8-4187-ab99-9792bd5abc37
+          example: b7b21b63-8d6e-437b-bd0c-d11cbc754737
       responses:
         '200':
           description: Successful operation
@@ -7251,7 +7251,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 9de9cd66-d151-4c2c-a07c-336b7a94772c
+          example: 4a1897ad-7d32-4828-9b07-4f87b67ca3e9
       responses:
         '200':
           description: Successful operation
@@ -7470,7 +7470,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 48c7faf0-b22c-4a7c-95b1-1bf04ca8bac5
+          example: dea6262d-1875-49e1-b26e-0ab526cccc86
       responses:
         '200':
           description: Successful operation
@@ -7553,7 +7553,7 @@ paths:
           required: true
           schema:
             type: string
-          example: da55d041-3068-47cc-b865-48cdd75b73d9
+          example: faf178fb-52e4-4688-a234-549a64164a96
       responses:
         '200':
           description: Successful operation
@@ -7636,7 +7636,7 @@ paths:
           required: true
           schema:
             type: string
-          example: a0eae651-5964-4edd-ab18-0dbc81c095be
+          example: 2df22924-2f34-4a96-be1d-d192387721a3
       responses:
         '200':
           description: Successful operation
@@ -7719,7 +7719,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 1d90743b-af19-4708-886f-45978e12a825
+          example: 67451b3e-2c9e-43a7-bdd3-aacb4f851ebd
       responses:
         '200':
           description: Successful operation
@@ -7868,7 +7868,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 04f60b55-c13e-438d-beff-ad6c4e994ded
+          example: 2068c15b-54dc-48c5-8ec5-de7dd8db21a6
       responses:
         '200':
           description: Successful operation
@@ -7891,7 +7891,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 8257efa6-fef7-4415-a4a5-cdc0be5146e4
+          example: 0658d0e9-6c8a-4af2-82a1-7a0cfb5ac2ff
       responses:
         '200':
           description: Successful operation
@@ -7951,7 +7951,7 @@ paths:
           required: true
           schema:
             type: string
-          example: d082a0ad-482d-4194-8b1f-f0a21652f8ef
+          example: 14d5fba8-77e8-46f9-aa91-0a8ce17b55b3
       responses:
         '200':
           description: Successful operation
@@ -7974,7 +7974,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 625e42e3-41ec-4aeb-9cef-7596b29f9d62
+          example: 9d7961c2-6845-4bdd-861e-39cec452959a
       responses:
         '200':
           description: Successful operation
@@ -8034,7 +8034,7 @@ paths:
           required: true
           schema:
             type: string
-          example: f98729ba-3d75-4eef-a0aa-27dce7794263
+          example: 5f62f4a0-d888-419a-b377-b375ec9833df
       responses:
         '200':
           description: Successful operation
@@ -8057,7 +8057,7 @@ paths:
           required: true
           schema:
             type: string
-          example: af4a5e64-375d-4eed-b6e4-83d6d0a61ad4
+          example: 354a2830-14b8-4220-8888-1eabc8a47338
       responses:
         '200':
           description: Successful operation
@@ -8117,7 +8117,7 @@ paths:
           required: true
           schema:
             type: string
-          example: b0d1f8e9-d617-4180-ba61-2819bb6f265d
+          example: 92fefa11-b45f-4346-b9c5-9605cd0aeae3
       responses:
         '200':
           description: Successful operation
@@ -8140,7 +8140,7 @@ paths:
           required: true
           schema:
             type: string
-          example: d5837730-00b3-4fc6-a090-c14d20345c21
+          example: 65ab6168-71da-4473-ba17-bb91f2f34dfe
       responses:
         '200':
           description: Successful operation
@@ -8282,7 +8282,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 6f542e0d-4561-4752-8a9e-210923d96eb6
+          example: 0b5116d3-6692-4b74-9343-7404803563be
       responses:
         '200':
           description: Successful operation
@@ -8342,7 +8342,7 @@ paths:
           required: true
           schema:
             type: string
-          example: e2b13434-cd90-4329-a89f-8068e5b0d2c9
+          example: 099dbbed-b589-49a3-9ba9-84ef85d21ac9
       responses:
         '200':
           description: Successful operation
@@ -8402,7 +8402,7 @@ paths:
           required: true
           schema:
             type: string
-          example: dd862e0d-86e5-4316-953f-bd8bf5c8a127
+          example: 795c68e8-e2f5-4959-8a7c-aafca8f5577e
       responses:
         '200':
           description: Successful operation
@@ -8462,7 +8462,7 @@ paths:
           required: true
           schema:
             type: string
-          example: a777b3b5-0046-4e1d-a233-e4cfa70678d4
+          example: 5249b9c2-6f14-4ba5-be13-7311c39e656e
       responses:
         '200':
           description: Successful operation
@@ -8970,7 +8970,7 @@ paths:
           required: true
           schema:
             type: string
-          example: 125090da-e4a7-4a93-9b50-c3b0a3b2c5a1
+          example: eeef0fdb-cc9f-4561-aaca-6df034c61019
       responses:
         '200':
           description: Successful operation
@@ -9867,8 +9867,8 @@ components:
         propertyName: resource_type
         mapping:
           html: '#/components/schemas/HtmlResourceElementItem'
-          stylesheet: '#/components/schemas/StylesheetResourceElementItem'
           script: '#/components/schemas/ScriptResourceElementItem'
+          stylesheet: '#/components/schemas/StylesheetResourceElementItem'
           image: '#/components/schemas/ImageResourceElementItem'
           broken: '#/components/schemas/BrokenResourceElementItem'
     ReviewResponseItemInfo:
@@ -13521,6 +13521,10 @@ components:
           type: string
           description: description
           nullable: true
+        seller:
+          type: string
+          description: seller of the product
+          nullable: true
         price:
           $ref: '#/components/schemas/PriceInfo'
         rating:
@@ -16738,7 +16742,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/BaseSerpElementItem'
-          description: elements of search results found in SERP
+          description: "additional items present in the element\nif there are none, equals null"
           nullable: true
     SerpGoogleNewsLiveAdvancedTaskInfo:
       type: object
@@ -20494,7 +20498,7 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/BaseSerpElementItem'
-          description: "additional items present in the element\nif there are none, equals null"
+          description: items featured in the faq_box
           nullable: true
     SerpBingOrganicLiveAdvancedTaskInfo:
       type: object
@@ -45260,6 +45264,74 @@ components:
           type: integer
           description: "time to complete downloading the resource\nthe amount of time a browser needs to complete downloading a resource"
           nullable: true
+    ScriptResourceElementItem:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/BaseOnPageResourceItemInfo'
+        - type: object
+          properties:
+            meta:
+              $ref: '#/components/schemas/ResourceMetaInfo'
+            status_code:
+              type: integer
+              description: status code of the page where a given resource is located
+              nullable: true
+            location:
+              type: string
+              description: "location header\nindicates the URL to redirect a page to"
+              nullable: true
+            url:
+              type: string
+              description: resource URL
+              nullable: true
+            size:
+              type: integer
+              description: "resource size\nindicates the size of a given resource measured in bytes"
+              nullable: true
+            encoded_size:
+              type: integer
+              description: "resource size after encoding\nindicates the size of the encoded resource measured in bytes"
+              nullable: true
+            total_transfer_size:
+              type: integer
+              description: "compressed resource size\nindicates the compressed size of a given resource in bytes"
+              format: int64
+              nullable: true
+            fetch_time:
+              type: string
+              description: "date and time when a resource was fetched\nin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”\nexample:\n2021-02-17 13:54:15 +00:00"
+              nullable: true
+            fetch_timing:
+              $ref: '#/components/schemas/FetchTiming'
+            cache_control:
+              $ref: '#/components/schemas/CacheControl'
+            checks:
+              type: object
+              additionalProperties:
+                type: boolean
+                nullable: true
+              description: "resource check-ups\ncontents of the array depend on the resource_type"
+              nullable: true
+            resource_errors:
+              $ref: '#/components/schemas/OnPageResourceIssueInfo'
+            content_encoding:
+              type: string
+              description: type of encoding
+              nullable: true
+            media_type:
+              type: string
+              description: types of media used to display a resource
+              nullable: true
+            accept_type:
+              type: string
+              description: "indicates the expected type of resource\nfor example, if \"resource_type\": \"broken\", accept_type will indicate the type of the broken resource\npossible values:\nany, none, image, sitemap, robots, script, stylesheet, redirect, html, text, other, font"
+              nullable: true
+            server:
+              type: string
+              description: server version
+              nullable: true
+            last_modified:
+              $ref: '#/components/schemas/LastModified'
     StylesheetResourceElementItem:
       type: object
       allOf:
@@ -45385,74 +45457,6 @@ components:
                 $ref: '#/components/schemas/OnPageResourcesResultInfo'
               description: array of results
               nullable: true
-    ScriptResourceElementItem:
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/BaseOnPageResourceItemInfo'
-        - type: object
-          properties:
-            meta:
-              $ref: '#/components/schemas/ResourceMetaInfo'
-            status_code:
-              type: integer
-              description: status code of the page where a given resource is located
-              nullable: true
-            location:
-              type: string
-              description: "location header\nindicates the URL to redirect a page to"
-              nullable: true
-            url:
-              type: string
-              description: resource URL
-              nullable: true
-            size:
-              type: integer
-              description: "resource size\nindicates the size of a given resource measured in bytes"
-              nullable: true
-            encoded_size:
-              type: integer
-              description: "resource size after encoding\nindicates the size of the encoded resource measured in bytes"
-              nullable: true
-            total_transfer_size:
-              type: integer
-              description: "compressed resource size\nindicates the compressed size of a given resource in bytes"
-              format: int64
-              nullable: true
-            fetch_time:
-              type: string
-              description: "date and time when a resource was fetched\nin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”\nexample:\n2021-02-17 13:54:15 +00:00"
-              nullable: true
-            fetch_timing:
-              $ref: '#/components/schemas/FetchTiming'
-            cache_control:
-              $ref: '#/components/schemas/CacheControl'
-            checks:
-              type: object
-              additionalProperties:
-                type: boolean
-                nullable: true
-              description: "resource check-ups\ncontents of the array depend on the resource_type"
-              nullable: true
-            content_encoding:
-              type: string
-              description: type of encoding
-              nullable: true
-            media_type:
-              type: string
-              description: types of media used to display a resource
-              nullable: true
-            accept_type:
-              type: string
-              description: "indicates the expected type of resource\nfor example, if \"resource_type\": \"broken\", accept_type will indicate the type of the broken resource\npossible values:\nany, none, image, sitemap, robots, script, stylesheet, redirect, html, text, other, font"
-              nullable: true
-            server:
-              type: string
-              description: server version
-              nullable: true
-            last_modified:
-              $ref: '#/components/schemas/LastModified'
-            resource_errors:
-              $ref: '#/components/schemas/OnPageResourceIssueInfo'
     ImageResourceElementItem:
       type: object
       allOf:
@@ -50389,7 +50393,7 @@ components:
               nullable: true
             position:
               type: string
-              description: "the alignment of the element in Google Shopping SERP\npossible values:\nleft, right"
+              description: "alignment of the element in SERP\ncan take the following values:\nleft, right"
               nullable: true
             xpath:
               type: string
@@ -50466,7 +50470,7 @@ components:
               nullable: true
             position:
               type: string
-              description: "the alignment of the element in Google Shopping SERP\npossible values:\nleft, right"
+              description: "alignment of the element in SERP\ncan take the following values:\nleft, right"
               nullable: true
             xpath:
               type: string
@@ -50518,10 +50522,6 @@ components:
             shop_ad_aclk:
               type: string
               description: "unique ad click referral parameter\nusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL\nin this case, the value equals null"
-              nullable: true
-            product_condition:
-              type: string
-              description: "indicated condition of the product\npossible values: Used, Refurbished, New, null"
               nullable: true
     MerchantGoogleSellersTaskGetAdvancedResultInfo:
       type: object

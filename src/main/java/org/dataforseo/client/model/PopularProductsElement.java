@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * PopularProductsElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class PopularProductsElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -65,6 +65,10 @@ public class PopularProductsElement {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
   private String description;
+
+  public static final String SERIALIZED_NAME_SELLER = "seller";
+  @SerializedName(SERIALIZED_NAME_SELLER)
+  private String seller;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
@@ -134,6 +138,25 @@ public class PopularProductsElement {
   }
 
 
+  public PopularProductsElement seller(String seller) {
+    this.seller = seller;
+    return this;
+  }
+
+   /**
+   * seller of the product
+   * @return seller
+  **/
+  @javax.annotation.Nullable
+  public String getSeller() {
+    return seller;
+  }
+
+  public void setSeller(String seller) {
+    this.seller = seller;
+  }
+
+
   public PopularProductsElement price(PriceInfo price) {
     this.price = price;
     return this;
@@ -185,6 +208,7 @@ public class PopularProductsElement {
     return Objects.equals(this.type, popularProductsElement.type) &&
         Objects.equals(this.title, popularProductsElement.title) &&
         Objects.equals(this.description, popularProductsElement.description) &&
+        Objects.equals(this.seller, popularProductsElement.seller) &&
         Objects.equals(this.price, popularProductsElement.price) &&
         Objects.equals(this.rating, popularProductsElement.rating);
   }
@@ -195,7 +219,7 @@ public class PopularProductsElement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, title, description, price, rating);
+    return Objects.hash(type, title, description, seller, price, rating);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -212,6 +236,7 @@ public class PopularProductsElement {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    seller: ").append(toIndentedString(seller)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("}");
@@ -239,6 +264,7 @@ public class PopularProductsElement {
     openapiFields.add("type");
     openapiFields.add("title");
     openapiFields.add("description");
+    openapiFields.add("seller");
     openapiFields.add("price");
     openapiFields.add("rating");
 
@@ -275,6 +301,9 @@ public class PopularProductsElement {
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
+      }
+      if ((jsonObj.get("seller") != null && !jsonObj.get("seller").isJsonNull()) && !jsonObj.get("seller").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `seller` to be a primitive type in the JSON string but got `%s`", jsonObj.get("seller").toString()));
       }
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {

@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * RankedKeywordsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class RankedKeywordsInfo {
   public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP3 = "page_from_keywords_count_top_3";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP3)

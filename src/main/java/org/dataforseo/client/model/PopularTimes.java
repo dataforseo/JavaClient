@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * PopularTimes
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class PopularTimes {
   public static final String SERIALIZED_NAME_POPULAR_TIMES_BY_DAYS = "popular_times_by_days";
   @SerializedName(SERIALIZED_NAME_POPULAR_TIMES_BY_DAYS)

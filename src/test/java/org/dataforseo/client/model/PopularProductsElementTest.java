@@ -65,6 +65,14 @@ public class PopularProductsElementTest {
     }
 
     /**
+     * Test the property 'seller'
+     */
+    @Test
+    public void sellerTest() {
+        // TODO: test seller
+    }
+
+    /**
      * Test the property 'price'
      */
     @Test

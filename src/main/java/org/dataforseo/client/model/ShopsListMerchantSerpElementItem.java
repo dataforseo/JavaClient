@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * ShopsListMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -174,7 +174,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
    /**
-   * the alignment of the element in Google Shopping SERP possible values: left, right
+   * alignment of the element in SERP can take the following values: left, right
    * @return position
   **/
   @javax.annotation.Nullable

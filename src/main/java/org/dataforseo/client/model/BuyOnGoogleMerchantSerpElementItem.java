@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BuyOnGoogleMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -118,10 +118,6 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
   @SerializedName(SERIALIZED_NAME_SHOP_AD_ACLK)
   private String shopAdAclk;
 
-  public static final String SERIALIZED_NAME_PRODUCT_CONDITION = "product_condition";
-  @SerializedName(SERIALIZED_NAME_PRODUCT_CONDITION)
-  private String productCondition;
-
   public BuyOnGoogleMerchantSerpElementItem() {
     this.type = this.getClass().getSimpleName();
   }
@@ -170,7 +166,7 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
   }
 
    /**
-   * the alignment of the element in Google Shopping SERP possible values: left, right
+   * alignment of the element in SERP can take the following values: left, right
    * @return position
   **/
   @javax.annotation.Nullable
@@ -430,25 +426,6 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
   }
 
 
-  public BuyOnGoogleMerchantSerpElementItem productCondition(String productCondition) {
-    this.productCondition = productCondition;
-    return this;
-  }
-
-   /**
-   * indicated condition of the product possible values: Used, Refurbished, New, null
-   * @return productCondition
-  **/
-  @javax.annotation.Nullable
-  public String getProductCondition() {
-    return productCondition;
-  }
-
-  public void setProductCondition(String productCondition) {
-    this.productCondition = productCondition;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -475,7 +452,6 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
         Objects.equals(this.sellerName, buyOnGoogleMerchantSerpElementItem.sellerName) &&
         Objects.equals(this.rating, buyOnGoogleMerchantSerpElementItem.rating) &&
         Objects.equals(this.shopAdAclk, buyOnGoogleMerchantSerpElementItem.shopAdAclk) &&
-        Objects.equals(this.productCondition, buyOnGoogleMerchantSerpElementItem.productCondition) &&
         super.equals(o);
   }
 
@@ -485,7 +461,7 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, xpath, domain, title, url, details, basePrice, tax, shippingPrice, totalPrice, currency, sellerName, rating, shopAdAclk, productCondition, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, position, xpath, domain, title, url, details, basePrice, tax, shippingPrice, totalPrice, currency, sellerName, rating, shopAdAclk, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -516,7 +492,6 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
     sb.append("    sellerName: ").append(toIndentedString(sellerName)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    shopAdAclk: ").append(toIndentedString(shopAdAclk)).append("\n");
-    sb.append("    productCondition: ").append(toIndentedString(productCondition)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -556,7 +531,6 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
     openapiFields.add("seller_name");
     openapiFields.add("rating");
     openapiFields.add("shop_ad_aclk");
-    openapiFields.add("product_condition");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

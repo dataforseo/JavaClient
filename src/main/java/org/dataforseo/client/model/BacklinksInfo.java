@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-01T20:18:33.613150200+03:00[Europe/Kiev]", comments = "Generator version: 7.4.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
 public class BacklinksInfo {
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS = "referring_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS)
