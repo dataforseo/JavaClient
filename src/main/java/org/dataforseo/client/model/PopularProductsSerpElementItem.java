@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * PopularProductsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
 public class PopularProductsSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -72,6 +72,10 @@ public class PopularProductsSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
   private String xpath;
+
+  public static final String SERIALIZED_NAME_TITLE = "title";
+  @SerializedName(SERIALIZED_NAME_TITLE)
+  private String title;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -161,6 +165,25 @@ public class PopularProductsSerpElementItem extends BaseSerpElementItem {
   }
 
 
+  public PopularProductsSerpElementItem title(String title) {
+    this.title = title;
+    return this;
+  }
+
+   /**
+   * title of the row
+   * @return title
+  **/
+  @javax.annotation.Nullable
+  public String getTitle() {
+    return title;
+  }
+
+  public void setTitle(String title) {
+    this.title = title;
+  }
+
+
   public PopularProductsSerpElementItem items(List<PopularProductsElement> items) {
     this.items = items;
     return this;
@@ -221,6 +244,7 @@ public class PopularProductsSerpElementItem extends BaseSerpElementItem {
         Objects.equals(this.rankAbsolute, popularProductsSerpElementItem.rankAbsolute) &&
         Objects.equals(this.position, popularProductsSerpElementItem.position) &&
         Objects.equals(this.xpath, popularProductsSerpElementItem.xpath) &&
+        Objects.equals(this.title, popularProductsSerpElementItem.title) &&
         Objects.equals(this.items, popularProductsSerpElementItem.items) &&
         Objects.equals(this.rectangle, popularProductsSerpElementItem.rectangle) &&
         super.equals(o);
@@ -232,7 +256,7 @@ public class PopularProductsSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, xpath, items, rectangle, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, position, xpath, title, items, rectangle, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -251,6 +275,7 @@ public class PopularProductsSerpElementItem extends BaseSerpElementItem {
     sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
+    sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
     sb.append("}");
@@ -280,6 +305,7 @@ public class PopularProductsSerpElementItem extends BaseSerpElementItem {
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("title");
     openapiFields.add("items");
     openapiFields.add("rectangle");
 

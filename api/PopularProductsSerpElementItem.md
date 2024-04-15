@@ -11,6 +11,7 @@
 |**rankAbsolute** | **Integer** | absolute rank in SERP absolute position among all the elements in SERP always equals 0 for desktop |  [optional] |
 |**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
+|**title** | **String** | title of the row |  [optional] |
 |**items** | [**List&lt;PopularProductsElement&gt;**](PopularProductsElement.md) | additional items present in the element if there are none, equals null |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 

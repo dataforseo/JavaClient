@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AppRankedSerpElementInfo;
-import org.dataforseo.client.model.KeywordData;
+import org.dataforseo.client.model.KeywordDataKeywordDataInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsleKeywordsForAppLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
 public class DataforseoLabsleKeywordsForAppLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -60,7 +60,7 @@ public class DataforseoLabsleKeywordsForAppLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORD_DATA = "keyword_data";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DATA)
-  private KeywordData keywordData;
+  private KeywordDataKeywordDataInfo keywordData;
 
   public static final String SERIALIZED_NAME_RANKED_SERP_ELEMENT = "ranked_serp_element";
   @SerializedName(SERIALIZED_NAME_RANKED_SERP_ELEMENT)
@@ -88,7 +88,7 @@ public class DataforseoLabsleKeywordsForAppLiveItem {
   }
 
 
-  public DataforseoLabsleKeywordsForAppLiveItem keywordData(KeywordData keywordData) {
+  public DataforseoLabsleKeywordsForAppLiveItem keywordData(KeywordDataKeywordDataInfo keywordData) {
     this.keywordData = keywordData;
     return this;
   }
@@ -98,11 +98,11 @@ public class DataforseoLabsleKeywordsForAppLiveItem {
    * @return keywordData
   **/
   @javax.annotation.Nullable
-  public KeywordData getKeywordData() {
+  public KeywordDataKeywordDataInfo getKeywordData() {
     return keywordData;
   }
 
-  public void setKeywordData(KeywordData keywordData) {
+  public void setKeywordData(KeywordDataKeywordDataInfo keywordData) {
     this.keywordData = keywordData;
   }
 
@@ -220,7 +220,7 @@ public class DataforseoLabsleKeywordsForAppLiveItem {
       }
       // validate the optional field `keyword_data`
       if (jsonObj.get("keyword_data") != null && !jsonObj.get("keyword_data").isJsonNull()) {
-        KeywordData.validateJsonElement(jsonObj.get("keyword_data"));
+        KeywordDataKeywordDataInfo.validateJsonElement(jsonObj.get("keyword_data"));
       }
       // validate the optional field `ranked_serp_element`
       if (jsonObj.get("ranked_serp_element") != null && !jsonObj.get("ranked_serp_element").isJsonNull()) {

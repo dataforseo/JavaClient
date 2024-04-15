@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.dataforseo.client.model.DataforseoLabsBulkTrafficEstimationLiveItem;
+import org.dataforseo.client.model.DataforseoLabsBBulkTrafficEstimationLiveItem;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingBulkTrafficEstimationLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
 public class DataforseoLabsBingBulkTrafficEstimationLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -77,7 +77,7 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsBulkTrafficEstimationLiveItem> items;
+  private List<DataforseoLabsBBulkTrafficEstimationLiveItem> items;
 
   public DataforseoLabsBingBulkTrafficEstimationLiveResultInfo() {
   }
@@ -177,12 +177,12 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveResultInfo {
   }
 
 
-  public DataforseoLabsBingBulkTrafficEstimationLiveResultInfo items(List<DataforseoLabsBulkTrafficEstimationLiveItem> items) {
+  public DataforseoLabsBingBulkTrafficEstimationLiveResultInfo items(List<DataforseoLabsBBulkTrafficEstimationLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsBingBulkTrafficEstimationLiveResultInfo addItemsItem(DataforseoLabsBulkTrafficEstimationLiveItem itemsItem) {
+  public DataforseoLabsBingBulkTrafficEstimationLiveResultInfo addItemsItem(DataforseoLabsBBulkTrafficEstimationLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -195,11 +195,11 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<DataforseoLabsBulkTrafficEstimationLiveItem> getItems() {
+  public List<DataforseoLabsBBulkTrafficEstimationLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsBulkTrafficEstimationLiveItem> items) {
+  public void setItems(List<DataforseoLabsBBulkTrafficEstimationLiveItem> items) {
     this.items = items;
   }
 
@@ -318,7 +318,7 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsBulkTrafficEstimationLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsBBulkTrafficEstimationLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

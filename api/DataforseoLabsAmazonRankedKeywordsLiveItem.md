@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**seType** | **String** | search engine type |  [optional] |
-|**keywordData** | [**KeywordData**](KeywordData.md) |  |  [optional] |
+|**keywordData** | [**KeywordDataKeywordDataInfo**](KeywordDataKeywordDataInfo.md) |  |  [optional] |
 |**rankedSerpElement** | [**AmazonRankedSerpElement**](AmazonRankedSerpElement.md) |  |  [optional] |
 
 

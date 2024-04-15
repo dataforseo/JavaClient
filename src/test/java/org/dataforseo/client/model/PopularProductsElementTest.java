@@ -73,6 +73,14 @@ public class PopularProductsElementTest {
     }
 
     /**
+     * Test the property 'imageUrl'
+     */
+    @Test
+    public void imageUrlTest() {
+        // TODO: test imageUrl
+    }
+
+    /**
      * Test the property 'price'
      */
     @Test

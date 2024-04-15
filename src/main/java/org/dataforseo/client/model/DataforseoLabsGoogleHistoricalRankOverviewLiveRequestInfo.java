@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -83,6 +83,10 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   public static final String SERIALIZED_NAME_CORRELATE = "correlate";
   @SerializedName(SERIALIZED_NAME_CORRELATE)
   private Boolean correlate;
+
+  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
+  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
+  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -243,6 +247,25 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+    return this;
+  }
+
+   /**
+   * ignore highly similar keywords optional field if set to true, only data based on core keywords will be returned, data for all highly similar keywords will be excluded; default value: false
+   * @return ignoreSynonyms
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIgnoreSynonyms() {
+    return ignoreSynonyms;
+  }
+
+  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+  }
+
+
   public DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -280,6 +303,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
         Objects.equals(this.dateFrom, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.dateFrom) &&
         Objects.equals(this.dateTo, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.dateTo) &&
         Objects.equals(this.correlate, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.correlate) &&
+        Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.tag, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.tag);
   }
 
@@ -289,7 +313,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, dateFrom, dateTo, correlate, tag);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, dateFrom, dateTo, correlate, ignoreSynonyms, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -311,6 +335,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
     sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
     sb.append("    correlate: ").append(toIndentedString(correlate)).append("\n");
+    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -342,6 +367,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
     openapiFields.add("date_from");
     openapiFields.add("date_to");
     openapiFields.add("correlate");
+    openapiFields.add("ignore_synonyms");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

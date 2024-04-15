@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGETS = "targets";
   @SerializedName(SERIALIZED_NAME_TARGETS)
@@ -81,6 +81,10 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   public static final String SERIALIZED_NAME_DATE_TO = "date_to";
   @SerializedName(SERIALIZED_NAME_DATE_TO)
   private String dateTo;
+
+  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
+  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
+  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
@@ -234,6 +238,25 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   }
 
 
+  public DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+    return this;
+  }
+
+   /**
+   * ignore highly similar keywords optional field if set to true only core keywords will be returned, all highly similar keywords will be excluded; default value: false
+   * @return ignoreSynonyms
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIgnoreSynonyms() {
+    return ignoreSynonyms;
+  }
+
+  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+  }
+
+
   public DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo itemTypes(List<String> itemTypes) {
     this.itemTypes = itemTypes;
     return this;
@@ -297,6 +320,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
         Objects.equals(this.languageCode, dataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.languageCode) &&
         Objects.equals(this.dateFrom, dataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.dateFrom) &&
         Objects.equals(this.dateTo, dataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.dateTo) &&
+        Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.itemTypes, dataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.itemTypes) &&
         Objects.equals(this.tag, dataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo.tag);
   }
@@ -307,7 +331,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
 
   @Override
   public int hashCode() {
-    return Objects.hash(targets, locationName, locationCode, languageName, languageCode, dateFrom, dateTo, itemTypes, tag);
+    return Objects.hash(targets, locationName, locationCode, languageName, languageCode, dateFrom, dateTo, ignoreSynonyms, itemTypes, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -328,6 +352,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
+    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
@@ -359,6 +384,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
     openapiFields.add("language_code");
     openapiFields.add("date_from");
     openapiFields.add("date_to");
+    openapiFields.add("ignore_synonyms");
     openapiFields.add("item_types");
     openapiFields.add("tag");
 

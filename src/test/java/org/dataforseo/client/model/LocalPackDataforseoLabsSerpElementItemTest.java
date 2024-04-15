@@ -20,10 +20,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.BacklinksInfo;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import org.dataforseo.client.model.RankChanges;
-import org.dataforseo.client.model.RankInfo;
 import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -185,30 +183,6 @@ public class LocalPackDataforseoLabsSerpElementItemTest {
     @Test
     public void rankChangesTest() {
         // TODO: test rankChanges
-    }
-
-    /**
-     * Test the property 'seType'
-     */
-    @Test
-    public void seTypeTest() {
-        // TODO: test seType
-    }
-
-    /**
-     * Test the property 'backlinksInfo'
-     */
-    @Test
-    public void backlinksInfoTest() {
-        // TODO: test backlinksInfo
-    }
-
-    /**
-     * Test the property 'rankInfo'
-     */
-    @Test
-    public void rankInfoTest() {
-        // TODO: test rankInfo
     }
 
 }

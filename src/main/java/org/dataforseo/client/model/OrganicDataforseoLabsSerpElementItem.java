@@ -23,10 +23,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.dataforseo.client.model.AboutThisResultElement;
 import org.dataforseo.client.model.BacklinksInfo;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
-import org.dataforseo.client.model.LinkElement;
 import org.dataforseo.client.model.RankChanges;
 import org.dataforseo.client.model.RankInfo;
 import org.dataforseo.client.model.RatingInfo;
@@ -59,7 +57,7 @@ import org.dataforseo.client.JSON;
 /**
  * OrganicDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
 public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -143,11 +141,11 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<LinkElement> links;
+  private Object links;
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
-  private AboutThisResultElement aboutThisResult;
+  private Object aboutThisResult;
 
   public static final String SERIALIZED_NAME_MAIN_DOMAIN = "main_domain";
   @SerializedName(SERIALIZED_NAME_MAIN_DOMAIN)
@@ -573,16 +571,8 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem links(List<LinkElement> links) {
+  public OrganicDataforseoLabsSerpElementItem links(Object links) {
     this.links = links;
-    return this;
-  }
-
-  public OrganicDataforseoLabsSerpElementItem addLinksItem(LinkElement linksItem) {
-    if (this.links == null) {
-      this.links = new ArrayList<>();
-    }
-    this.links.add(linksItem);
     return this;
   }
 
@@ -591,30 +581,30 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
    * @return links
   **/
   @javax.annotation.Nullable
-  public List<LinkElement> getLinks() {
+  public Object getLinks() {
     return links;
   }
 
-  public void setLinks(List<LinkElement> links) {
+  public void setLinks(Object links) {
     this.links = links;
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem aboutThisResult(AboutThisResultElement aboutThisResult) {
+  public OrganicDataforseoLabsSerpElementItem aboutThisResult(Object aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
     return this;
   }
 
    /**
-   * Get aboutThisResult
+   * contains information from the ‘About this result’ panel ‘About this result’ panel provides additional context about why Google returned this result for the given query; this feature appears after clicking on the three dots next to most results
    * @return aboutThisResult
   **/
   @javax.annotation.Nullable
-  public AboutThisResultElement getAboutThisResult() {
+  public Object getAboutThisResult() {
     return aboutThisResult;
   }
 
-  public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
+  public void setAboutThisResult(Object aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }
 

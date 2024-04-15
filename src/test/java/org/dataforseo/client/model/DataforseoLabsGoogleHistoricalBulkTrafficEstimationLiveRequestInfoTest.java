@@ -97,6 +97,14 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfoT
     }
 
     /**
+     * Test the property 'ignoreSynonyms'
+     */
+    @Test
+    public void ignoreSynonymsTest() {
+        // TODO: test ignoreSynonyms
+    }
+
+    /**
      * Test the property 'itemTypes'
      */
     @Test

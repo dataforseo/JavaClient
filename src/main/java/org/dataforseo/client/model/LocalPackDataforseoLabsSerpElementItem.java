@@ -21,10 +21,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.BacklinksInfo;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import org.dataforseo.client.model.RankChanges;
-import org.dataforseo.client.model.RankInfo;
 import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -55,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * LocalPackDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
 public class LocalPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -124,18 +122,6 @@ public class LocalPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
   public static final String SERIALIZED_NAME_RANK_CHANGES = "rank_changes";
   @SerializedName(SERIALIZED_NAME_RANK_CHANGES)
   private RankChanges rankChanges;
-
-  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
-  @SerializedName(SERIALIZED_NAME_SE_TYPE)
-  private String seType;
-
-  public static final String SERIALIZED_NAME_BACKLINKS_INFO = "backlinks_info";
-  @SerializedName(SERIALIZED_NAME_BACKLINKS_INFO)
-  private BacklinksInfo backlinksInfo;
-
-  public static final String SERIALIZED_NAME_RANK_INFO = "rank_info";
-  @SerializedName(SERIALIZED_NAME_RANK_INFO)
-  private RankInfo rankInfo;
 
   public LocalPackDataforseoLabsSerpElementItem() {
     this.type = this.getClass().getSimpleName();
@@ -464,63 +450,6 @@ public class LocalPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
   }
 
 
-  public LocalPackDataforseoLabsSerpElementItem seType(String seType) {
-    this.seType = seType;
-    return this;
-  }
-
-   /**
-   * search engine type
-   * @return seType
-  **/
-  @javax.annotation.Nullable
-  public String getSeType() {
-    return seType;
-  }
-
-  public void setSeType(String seType) {
-    this.seType = seType;
-  }
-
-
-  public LocalPackDataforseoLabsSerpElementItem backlinksInfo(BacklinksInfo backlinksInfo) {
-    this.backlinksInfo = backlinksInfo;
-    return this;
-  }
-
-   /**
-   * Get backlinksInfo
-   * @return backlinksInfo
-  **/
-  @javax.annotation.Nullable
-  public BacklinksInfo getBacklinksInfo() {
-    return backlinksInfo;
-  }
-
-  public void setBacklinksInfo(BacklinksInfo backlinksInfo) {
-    this.backlinksInfo = backlinksInfo;
-  }
-
-
-  public LocalPackDataforseoLabsSerpElementItem rankInfo(RankInfo rankInfo) {
-    this.rankInfo = rankInfo;
-    return this;
-  }
-
-   /**
-   * Get rankInfo
-   * @return rankInfo
-  **/
-  @javax.annotation.Nullable
-  public RankInfo getRankInfo() {
-    return rankInfo;
-  }
-
-  public void setRankInfo(RankInfo rankInfo) {
-    this.rankInfo = rankInfo;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -548,9 +477,6 @@ public class LocalPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
         Objects.equals(this.impressionsEtv, localPackDataforseoLabsSerpElementItem.impressionsEtv) &&
         Objects.equals(this.estimatedPaidTrafficCost, localPackDataforseoLabsSerpElementItem.estimatedPaidTrafficCost) &&
         Objects.equals(this.rankChanges, localPackDataforseoLabsSerpElementItem.rankChanges) &&
-        Objects.equals(this.seType, localPackDataforseoLabsSerpElementItem.seType) &&
-        Objects.equals(this.backlinksInfo, localPackDataforseoLabsSerpElementItem.backlinksInfo) &&
-        Objects.equals(this.rankInfo, localPackDataforseoLabsSerpElementItem.rankInfo) &&
         super.equals(o);
   }
 
@@ -560,7 +486,7 @@ public class LocalPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, xpath, title, description, domain, phone, url, isPaid, rating, mainDomain, relativeUrl, etv, impressionsEtv, estimatedPaidTrafficCost, rankChanges, seType, backlinksInfo, rankInfo, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, position, xpath, title, description, domain, phone, url, isPaid, rating, mainDomain, relativeUrl, etv, impressionsEtv, estimatedPaidTrafficCost, rankChanges, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -592,9 +518,6 @@ public class LocalPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
     sb.append("    impressionsEtv: ").append(toIndentedString(impressionsEtv)).append("\n");
     sb.append("    estimatedPaidTrafficCost: ").append(toIndentedString(estimatedPaidTrafficCost)).append("\n");
     sb.append("    rankChanges: ").append(toIndentedString(rankChanges)).append("\n");
-    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
-    sb.append("    backlinksInfo: ").append(toIndentedString(backlinksInfo)).append("\n");
-    sb.append("    rankInfo: ").append(toIndentedString(rankInfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -635,9 +558,6 @@ public class LocalPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
     openapiFields.add("impressions_etv");
     openapiFields.add("estimated_paid_traffic_cost");
     openapiFields.add("rank_changes");
-    openapiFields.add("se_type");
-    openapiFields.add("backlinks_info");
-    openapiFields.add("rank_info");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

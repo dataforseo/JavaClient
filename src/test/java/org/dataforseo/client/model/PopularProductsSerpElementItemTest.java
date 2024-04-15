@@ -84,6 +84,14 @@ public class PopularProductsSerpElementItemTest {
     }
 
     /**
+     * Test the property 'title'
+     */
+    @Test
+    public void titleTest() {
+        // TODO: test title
+    }
+
+    /**
      * Test the property 'items'
      */
     @Test
