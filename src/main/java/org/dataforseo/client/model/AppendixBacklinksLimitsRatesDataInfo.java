@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBacklinksLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
 public class AppendixBacklinksLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
@@ -132,6 +132,10 @@ public class AppendixBacklinksLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_COMPETITORS = "competitors";
   @SerializedName(SERIALIZED_NAME_COMPETITORS)
   private AppendixFunctionInfo competitors;
+
+  public static final String SERIALIZED_NAME_BULK_PAGES_SUMMARY = "bulk_pages_summary";
+  @SerializedName(SERIALIZED_NAME_BULK_PAGES_SUMMARY)
+  private AppendixFunctionInfo bulkPagesSummary;
 
   public AppendixBacklinksLimitsRatesDataInfo() {
   }
@@ -516,6 +520,25 @@ public class AppendixBacklinksLimitsRatesDataInfo {
   }
 
 
+  public AppendixBacklinksLimitsRatesDataInfo bulkPagesSummary(AppendixFunctionInfo bulkPagesSummary) {
+    this.bulkPagesSummary = bulkPagesSummary;
+    return this;
+  }
+
+   /**
+   * Get bulkPagesSummary
+   * @return bulkPagesSummary
+  **/
+  @javax.annotation.Nullable
+  public AppendixFunctionInfo getBulkPagesSummary() {
+    return bulkPagesSummary;
+  }
+
+  public void setBulkPagesSummary(AppendixFunctionInfo bulkPagesSummary) {
+    this.bulkPagesSummary = bulkPagesSummary;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -545,7 +568,8 @@ public class AppendixBacklinksLimitsRatesDataInfo {
         Objects.equals(this.domainPagesSummary, appendixBacklinksLimitsRatesDataInfo.domainPagesSummary) &&
         Objects.equals(this.timeseriesSummary, appendixBacklinksLimitsRatesDataInfo.timeseriesSummary) &&
         Objects.equals(this.timeseriesNewLostSummary, appendixBacklinksLimitsRatesDataInfo.timeseriesNewLostSummary) &&
-        Objects.equals(this.competitors, appendixBacklinksLimitsRatesDataInfo.competitors);
+        Objects.equals(this.competitors, appendixBacklinksLimitsRatesDataInfo.competitors) &&
+        Objects.equals(this.bulkPagesSummary, appendixBacklinksLimitsRatesDataInfo.bulkPagesSummary);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -554,7 +578,7 @@ public class AppendixBacklinksLimitsRatesDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(summary, history, contentDuplicates, domainIntersection, backlinks, domainPages, anchors, referringDomains, pageIntersection, referringNetworks, bulkRanks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkReferringDomains, errors, domainPagesSummary, timeseriesSummary, timeseriesNewLostSummary, competitors);
+    return Objects.hash(summary, history, contentDuplicates, domainIntersection, backlinks, domainPages, anchors, referringDomains, pageIntersection, referringNetworks, bulkRanks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkReferringDomains, errors, domainPagesSummary, timeseriesSummary, timeseriesNewLostSummary, competitors, bulkPagesSummary);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -588,6 +612,7 @@ public class AppendixBacklinksLimitsRatesDataInfo {
     sb.append("    timeseriesSummary: ").append(toIndentedString(timeseriesSummary)).append("\n");
     sb.append("    timeseriesNewLostSummary: ").append(toIndentedString(timeseriesNewLostSummary)).append("\n");
     sb.append("    competitors: ").append(toIndentedString(competitors)).append("\n");
+    sb.append("    bulkPagesSummary: ").append(toIndentedString(bulkPagesSummary)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -630,6 +655,7 @@ public class AppendixBacklinksLimitsRatesDataInfo {
     openapiFields.add("timeseries_summary");
     openapiFields.add("timeseries_new_lost_summary");
     openapiFields.add("competitors");
+    openapiFields.add("bulk_pages_summary");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -731,6 +757,10 @@ public class AppendixBacklinksLimitsRatesDataInfo {
       // validate the optional field `competitors`
       if (jsonObj.get("competitors") != null && !jsonObj.get("competitors").isJsonNull()) {
         AppendixFunctionInfo.validateJsonElement(jsonObj.get("competitors"));
+      }
+      // validate the optional field `bulk_pages_summary`
+      if (jsonObj.get("bulk_pages_summary") != null && !jsonObj.get("bulk_pages_summary").isJsonNull()) {
+        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_pages_summary"));
       }
   }
 

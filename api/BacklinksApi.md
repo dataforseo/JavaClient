@@ -12,6 +12,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**bulkBacklinksLive**](BacklinksApi.md#bulkBacklinksLive) | **POST** /v3/backlinks/bulk_backlinks/live |  |
 | [**bulkNewLostBacklinksLive**](BacklinksApi.md#bulkNewLostBacklinksLive) | **POST** /v3/backlinks/bulk_new_lost_backlinks/live |  |
 | [**bulkNewLostReferringDomainsLive**](BacklinksApi.md#bulkNewLostReferringDomainsLive) | **POST** /v3/backlinks/bulk_new_lost_referring_domains/live |  |
+| [**bulkPagesSummaryLive**](BacklinksApi.md#bulkPagesSummaryLive) | **POST** /v3/backlinks/bulk_pages_summary/live |  |
 | [**bulkRanksLive**](BacklinksApi.md#bulkRanksLive) | **POST** /v3/backlinks/bulk_ranks/live |  |
 | [**bulkReferringDomainsLive**](BacklinksApi.md#bulkReferringDomainsLive) | **POST** /v3/backlinks/bulk_referring_domains/live |  |
 | [**bulkSpamScoreLive**](BacklinksApi.md#bulkSpamScoreLive) | **POST** /v3/backlinks/bulk_spam_score/live |  |
@@ -554,6 +555,74 @@ public class Example {
 ### Return type
 
 [**BacklinksBulkNewLostReferringDomainsLiveResponseInfo**](BacklinksBulkNewLostReferringDomainsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bulkPagesSummaryLive"></a>
+# **bulkPagesSummaryLive**
+> BacklinksBulkPagesSummaryLiveResponseInfo bulkPagesSummaryLive(backlinksBulkPagesSummaryLiveRequestInfo)
+
+
+
+This endpoint will provide you with a comprehensive overview of backlinks and related data for a bulk of up to 1000 pages, domains, or subdomains. If you indicate a single page as a target, you will get comprehensive summary data on all backlinks for that page. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/bulk_pages_summary/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.BacklinksApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BacklinksApi apiInstance = new BacklinksApi(defaultClient);
+    List<BacklinksBulkPagesSummaryLiveRequestInfo> backlinksBulkPagesSummaryLiveRequestInfo = Arrays.asList(); // List<BacklinksBulkPagesSummaryLiveRequestInfo> | 
+    try {
+      BacklinksBulkPagesSummaryLiveResponseInfo result = apiInstance.bulkPagesSummaryLive(backlinksBulkPagesSummaryLiveRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BacklinksApi#bulkPagesSummaryLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **backlinksBulkPagesSummaryLiveRequestInfo** | [**List&lt;BacklinksBulkPagesSummaryLiveRequestInfo&gt;**](BacklinksBulkPagesSummaryLiveRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**BacklinksBulkPagesSummaryLiveResponseInfo**](BacklinksBulkPagesSummaryLiveResponseInfo.md)
 
 ### Authorization
 
@@ -1251,7 +1320,7 @@ public class Example {
 
 
 
-‌‌ This endpoint will provide you with a detailed overview of referring domains pointing to the target domain you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/referring_domains/live/?bash&#39;
+‌‌ This endpoint will provide you with a detailed overview of referring domains pointing to the target you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/referring_domains/live/?bash&#39;
 
 ### Example
 ```java

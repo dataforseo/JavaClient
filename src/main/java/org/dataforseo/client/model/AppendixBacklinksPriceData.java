@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBacklinksPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
 public class AppendixBacklinksPriceData {
   public static final String SERIALIZED_NAME_ANCHORS = "anchors";
   @SerializedName(SERIALIZED_NAME_ANCHORS)
@@ -72,6 +72,10 @@ public class AppendixBacklinksPriceData {
   public static final String SERIALIZED_NAME_BULK_NEW_LOST_REFERRING_DOMAINS = "bulk_new_lost_referring_domains";
   @SerializedName(SERIALIZED_NAME_BULK_NEW_LOST_REFERRING_DOMAINS)
   private AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains;
+
+  public static final String SERIALIZED_NAME_BULK_PAGES_SUMMARY = "bulk_pages_summary";
+  @SerializedName(SERIALIZED_NAME_BULK_PAGES_SUMMARY)
+  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkPagesSummary;
 
   public static final String SERIALIZED_NAME_BULK_RANKS = "bulk_ranks";
   @SerializedName(SERIALIZED_NAME_BULK_RANKS)
@@ -228,6 +232,25 @@ public class AppendixBacklinksPriceData {
 
   public void setBulkNewLostReferringDomains(AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains) {
     this.bulkNewLostReferringDomains = bulkNewLostReferringDomains;
+  }
+
+
+  public AppendixBacklinksPriceData bulkPagesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo bulkPagesSummary) {
+    this.bulkPagesSummary = bulkPagesSummary;
+    return this;
+  }
+
+   /**
+   * Get bulkPagesSummary
+   * @return bulkPagesSummary
+  **/
+  @javax.annotation.Nullable
+  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkPagesSummary() {
+    return bulkPagesSummary;
+  }
+
+  public void setBulkPagesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo bulkPagesSummary) {
+    this.bulkPagesSummary = bulkPagesSummary;
   }
 
 
@@ -531,6 +554,7 @@ public class AppendixBacklinksPriceData {
         Objects.equals(this.bulkBacklinks, appendixBacklinksPriceData.bulkBacklinks) &&
         Objects.equals(this.bulkNewLostBacklinks, appendixBacklinksPriceData.bulkNewLostBacklinks) &&
         Objects.equals(this.bulkNewLostReferringDomains, appendixBacklinksPriceData.bulkNewLostReferringDomains) &&
+        Objects.equals(this.bulkPagesSummary, appendixBacklinksPriceData.bulkPagesSummary) &&
         Objects.equals(this.bulkRanks, appendixBacklinksPriceData.bulkRanks) &&
         Objects.equals(this.bulkReferringDomains, appendixBacklinksPriceData.bulkReferringDomains) &&
         Objects.equals(this.competitors, appendixBacklinksPriceData.competitors) &&
@@ -550,7 +574,7 @@ public class AppendixBacklinksPriceData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(anchors, backlinks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkRanks, bulkReferringDomains, competitors, contentDuplicates, domainIntersection, domainPages, domainPagesSummary, errors, history, pageIntersection, referringDomains, referringNetworks, summary, timeseriesNewLostSummary, timeseriesSummary);
+    return Objects.hash(anchors, backlinks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkPagesSummary, bulkRanks, bulkReferringDomains, competitors, contentDuplicates, domainIntersection, domainPages, domainPagesSummary, errors, history, pageIntersection, referringDomains, referringNetworks, summary, timeseriesNewLostSummary, timeseriesSummary);
   }
 
   @Override
@@ -562,6 +586,7 @@ public class AppendixBacklinksPriceData {
     sb.append("    bulkBacklinks: ").append(toIndentedString(bulkBacklinks)).append("\n");
     sb.append("    bulkNewLostBacklinks: ").append(toIndentedString(bulkNewLostBacklinks)).append("\n");
     sb.append("    bulkNewLostReferringDomains: ").append(toIndentedString(bulkNewLostReferringDomains)).append("\n");
+    sb.append("    bulkPagesSummary: ").append(toIndentedString(bulkPagesSummary)).append("\n");
     sb.append("    bulkRanks: ").append(toIndentedString(bulkRanks)).append("\n");
     sb.append("    bulkReferringDomains: ").append(toIndentedString(bulkReferringDomains)).append("\n");
     sb.append("    competitors: ").append(toIndentedString(competitors)).append("\n");
@@ -604,6 +629,7 @@ public class AppendixBacklinksPriceData {
     openapiFields.add("bulk_backlinks");
     openapiFields.add("bulk_new_lost_backlinks");
     openapiFields.add("bulk_new_lost_referring_domains");
+    openapiFields.add("bulk_pages_summary");
     openapiFields.add("bulk_ranks");
     openapiFields.add("bulk_referring_domains");
     openapiFields.add("competitors");
@@ -664,6 +690,10 @@ public class AppendixBacklinksPriceData {
       // validate the optional field `bulk_new_lost_referring_domains`
       if (jsonObj.get("bulk_new_lost_referring_domains") != null && !jsonObj.get("bulk_new_lost_referring_domains").isJsonNull()) {
         AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_new_lost_referring_domains"));
+      }
+      // validate the optional field `bulk_pages_summary`
+      if (jsonObj.get("bulk_pages_summary") != null && !jsonObj.get("bulk_pages_summary").isJsonNull()) {
+        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_pages_summary"));
       }
       // validate the optional field `bulk_ranks`
       if (jsonObj.get("bulk_ranks") != null && !jsonObj.get("bulk_ranks").isJsonNull()) {

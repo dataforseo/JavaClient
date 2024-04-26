@@ -91,19 +91,19 @@ public class AppendixBusinessDataPriceDataTest {
     }
 
     /**
-     * Test the property 'trustpilot'
-     */
-    @Test
-    public void trustpilotTest() {
-        // TODO: test trustpilot
-    }
-
-    /**
      * Test the property 'tripadvisor'
      */
     @Test
     public void tripadvisorTest() {
         // TODO: test tripadvisor
+    }
+
+    /**
+     * Test the property 'trustpilot'
+     */
+    @Test
+    public void trustpilotTest() {
+        // TODO: test trustpilot
     }
 
     /**

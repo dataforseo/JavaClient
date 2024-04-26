@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.dataforseo.client.model.AdLinkElement;
 import org.dataforseo.client.model.BacklinksInfo;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import org.dataforseo.client.model.RankChanges;

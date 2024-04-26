@@ -199,4 +199,12 @@ public class AppendixBacklinksLimitsRatesDataInfoTest {
         // TODO: test competitors
     }
 
+    /**
+     * Test the property 'bulkPagesSummary'
+     */
+    @Test
+    public void bulkPagesSummaryTest() {
+        // TODO: test bulkPagesSummary
+    }
+
 }

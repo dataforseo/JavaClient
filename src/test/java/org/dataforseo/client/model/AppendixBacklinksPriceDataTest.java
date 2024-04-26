@@ -80,6 +80,14 @@ public class AppendixBacklinksPriceDataTest {
     }
 
     /**
+     * Test the property 'bulkPagesSummary'
+     */
+    @Test
+    public void bulkPagesSummaryTest() {
+        // TODO: test bulkPagesSummary
+    }
+
+    /**
      * Test the property 'bulkRanks'
      */
     @Test

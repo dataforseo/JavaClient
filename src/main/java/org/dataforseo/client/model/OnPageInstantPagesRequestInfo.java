@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageInstantPagesRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
 public class OnPageInstantPagesRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -131,7 +131,7 @@ public class OnPageInstantPagesRequestInfo {
   }
 
    /**
-   * target page url required field absolute URL of the target page Note: results will be returned for the specified URL only Note: to prevent denial-of-service events, tasks that contain a duplicate crawl host will be returned with a 40501 error; to prevent this error from occuring, avoid setting tasks with the same domain if at least one of your previous tasks with this domain (including a page URL on the domain) is still in a crawling queue
+   * target page url required field absolute URL of the target page; Note #1: results will be returned for the specified URL only; Note #2: to prevent denial-of-service events, tasks that contain a duplicate crawl host will be returned with a 40501 error; to prevent this error from occurring, avoid setting tasks with the same domain if at least one of your previous tasks with this domain (including a page URL on the domain) is still in a crawling queue
    * @return url
   **/
   @javax.annotation.Nullable

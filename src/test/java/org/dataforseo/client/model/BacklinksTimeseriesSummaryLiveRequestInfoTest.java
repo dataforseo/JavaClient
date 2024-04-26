@@ -71,6 +71,14 @@ public class BacklinksTimeseriesSummaryLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'includeSubdomains'
+     */
+    @Test
+    public void includeSubdomainsTest() {
+        // TODO: test includeSubdomains
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

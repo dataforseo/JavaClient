@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksTimeseriesNewLostSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
 public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -67,6 +67,10 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_GROUP_RANGE = "group_range";
   @SerializedName(SERIALIZED_NAME_GROUP_RANGE)
   private String groupRange;
+
+  public static final String SERIALIZED_NAME_INCLUDE_SUBDOMAINS = "include_subdomains";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_SUBDOMAINS)
+  private Boolean includeSubdomains;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -151,6 +155,25 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo {
   }
 
 
+  public BacklinksTimeseriesNewLostSummaryLiveRequestInfo includeSubdomains(Boolean includeSubdomains) {
+    this.includeSubdomains = includeSubdomains;
+    return this;
+  }
+
+   /**
+   * indicates if the subdomains of the target will be included in the search optional field if set to false, the subdomains will be ignored default value: true
+   * @return includeSubdomains
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeSubdomains() {
+    return includeSubdomains;
+  }
+
+  public void setIncludeSubdomains(Boolean includeSubdomains) {
+    this.includeSubdomains = includeSubdomains;
+  }
+
+
   public BacklinksTimeseriesNewLostSummaryLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -184,6 +207,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo {
         Objects.equals(this.dateFrom, backlinksTimeseriesNewLostSummaryLiveRequestInfo.dateFrom) &&
         Objects.equals(this.dateTo, backlinksTimeseriesNewLostSummaryLiveRequestInfo.dateTo) &&
         Objects.equals(this.groupRange, backlinksTimeseriesNewLostSummaryLiveRequestInfo.groupRange) &&
+        Objects.equals(this.includeSubdomains, backlinksTimeseriesNewLostSummaryLiveRequestInfo.includeSubdomains) &&
         Objects.equals(this.tag, backlinksTimeseriesNewLostSummaryLiveRequestInfo.tag);
   }
 
@@ -193,7 +217,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, dateFrom, dateTo, groupRange, tag);
+    return Objects.hash(target, dateFrom, dateTo, groupRange, includeSubdomains, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -211,6 +235,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo {
     sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
     sb.append("    groupRange: ").append(toIndentedString(groupRange)).append("\n");
+    sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -238,6 +263,7 @@ public class BacklinksTimeseriesNewLostSummaryLiveRequestInfo {
     openapiFields.add("date_from");
     openapiFields.add("date_to");
     openapiFields.add("group_range");
+    openapiFields.add("include_subdomains");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

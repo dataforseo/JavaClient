@@ -2216,6 +2216,11 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkNewLostReferringDomainsLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkNewLostReferringDomainsLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkNewLostReferringDomainsLiveTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkPagesSummaryLiveItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkPagesSummaryLiveRequestInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkPagesSummaryLiveResponseInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkPagesSummaryLiveResultInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkPagesSummaryLiveTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkRanksLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkRanksLiveRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BacklinksBulkRanksLiveResponseInfo.CustomTypeAdapterFactory());

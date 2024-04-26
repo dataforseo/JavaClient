@@ -249,12 +249,4 @@ public class BacklinksSummaryLiveResultInfoTest {
         // TODO: test referringPagesNofollow
     }
 
-    /**
-     * Test the property 'backlinksNofollow'
-     */
-    @Test
-    public void backlinksNofollowTest() {
-        // TODO: test backlinksNofollow
-    }
-
 }

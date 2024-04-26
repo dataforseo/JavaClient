@@ -59,8 +59,12 @@ import org.dataforseo.client.JSON;
 /**
  * PaidDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
 public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
   private Integer rankGroup;
@@ -137,10 +141,6 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   @SerializedName(SERIALIZED_NAME_RANK_CHANGES)
   private RankChanges rankChanges;
 
-  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
-  @SerializedName(SERIALIZED_NAME_SE_TYPE)
-  private String seType;
-
   public static final String SERIALIZED_NAME_BACKLINKS_INFO = "backlinks_info";
   @SerializedName(SERIALIZED_NAME_BACKLINKS_INFO)
   private BacklinksInfo backlinksInfo;
@@ -152,6 +152,25 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   public PaidDataforseoLabsSerpElementItem() {
     this.type = this.getClass().getSimpleName();
   }
+
+  public PaidDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+   /**
+   * search engine type
+   * @return seType
+  **/
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public PaidDataforseoLabsSerpElementItem rankGroup(Integer rankGroup) {
     this.rankGroup = rankGroup;
@@ -254,7 +273,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
    /**
-   * domain where a link points
+   * subdomain in SERP
    * @return domain
   **/
   @javax.annotation.Nullable
@@ -292,7 +311,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
    /**
-   * breadcrumb of the Ad element in SERP
+   * breadcrumb in SERP
    * @return breadcrumb
   **/
   @javax.annotation.Nullable
@@ -311,7 +330,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
    /**
-   * relevant URL of the Ad element in SERP
+   * relevant URL in SERP
    * @return url
   **/
   @javax.annotation.Nullable
@@ -419,7 +438,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
    /**
-   * link of the element
+   * sitelinks the links shown below some of Google’s search results if there are none, equals null
    * @return links
   **/
   @javax.annotation.Nullable
@@ -476,7 +495,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
    /**
-   * estimated traffic volume estimated organic monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword learn more about how the metric is calculated in this help center article
+   * estimated traffic volume estimated paid monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
    * @return etv
   **/
   @javax.annotation.Nullable
@@ -495,7 +514,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
    /**
-   * estimated traffic volume based on impressions estimated organic monthly traffic to the domain calculated as the product of CTR (click-through-rate) and impressions values of the returned keyword learn more about how the metric is calculated in this help center article
+   * estimated traffic volume based on impressions estimated paid monthly traffic to the domain calculated as the product of CTR (click-through-rate) and impressions values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
    * @return impressionsEtv
   **/
   @javax.annotation.Nullable
@@ -514,7 +533,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
    /**
-   * estimated cost of converting organic search traffic into paid represents the estimated monthly cost of running ads for the returned keyword the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search learn more about how the metric is calculated in this help center article
+   * estimated cost of monthly search traffic represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
   **/
   @javax.annotation.Nullable
@@ -543,25 +562,6 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
 
   public void setRankChanges(RankChanges rankChanges) {
     this.rankChanges = rankChanges;
-  }
-
-
-  public PaidDataforseoLabsSerpElementItem seType(String seType) {
-    this.seType = seType;
-    return this;
-  }
-
-   /**
-   * search engine type
-   * @return seType
-  **/
-  @javax.annotation.Nullable
-  public String getSeType() {
-    return seType;
-  }
-
-  public void setSeType(String seType) {
-    this.seType = seType;
   }
 
 
@@ -613,7 +613,8 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
       return false;
     }
     PaidDataforseoLabsSerpElementItem paidDataforseoLabsSerpElementItem = (PaidDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.rankGroup, paidDataforseoLabsSerpElementItem.rankGroup) &&
+    return Objects.equals(this.seType, paidDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.rankGroup, paidDataforseoLabsSerpElementItem.rankGroup) &&
         Objects.equals(this.rankAbsolute, paidDataforseoLabsSerpElementItem.rankAbsolute) &&
         Objects.equals(this.position, paidDataforseoLabsSerpElementItem.position) &&
         Objects.equals(this.xpath, paidDataforseoLabsSerpElementItem.xpath) &&
@@ -632,7 +633,6 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
         Objects.equals(this.impressionsEtv, paidDataforseoLabsSerpElementItem.impressionsEtv) &&
         Objects.equals(this.estimatedPaidTrafficCost, paidDataforseoLabsSerpElementItem.estimatedPaidTrafficCost) &&
         Objects.equals(this.rankChanges, paidDataforseoLabsSerpElementItem.rankChanges) &&
-        Objects.equals(this.seType, paidDataforseoLabsSerpElementItem.seType) &&
         Objects.equals(this.backlinksInfo, paidDataforseoLabsSerpElementItem.backlinksInfo) &&
         Objects.equals(this.rankInfo, paidDataforseoLabsSerpElementItem.rankInfo) &&
         super.equals(o);
@@ -644,7 +644,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, xpath, title, domain, description, breadcrumb, url, highlighted, extra, descriptionRows, links, mainDomain, relativeUrl, etv, impressionsEtv, estimatedPaidTrafficCost, rankChanges, seType, backlinksInfo, rankInfo, super.hashCode());
+    return Objects.hash(seType, rankGroup, rankAbsolute, position, xpath, title, domain, description, breadcrumb, url, highlighted, extra, descriptionRows, links, mainDomain, relativeUrl, etv, impressionsEtv, estimatedPaidTrafficCost, rankChanges, backlinksInfo, rankInfo, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -659,6 +659,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
     StringBuilder sb = new StringBuilder();
     sb.append("class PaidDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    rankGroup: ").append(toIndentedString(rankGroup)).append("\n");
     sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
@@ -678,7 +679,6 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
     sb.append("    impressionsEtv: ").append(toIndentedString(impressionsEtv)).append("\n");
     sb.append("    estimatedPaidTrafficCost: ").append(toIndentedString(estimatedPaidTrafficCost)).append("\n");
     sb.append("    rankChanges: ").append(toIndentedString(rankChanges)).append("\n");
-    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    backlinksInfo: ").append(toIndentedString(backlinksInfo)).append("\n");
     sb.append("    rankInfo: ").append(toIndentedString(rankInfo)).append("\n");
     sb.append("}");
@@ -704,6 +704,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
+    openapiFields.add("se_type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
@@ -723,7 +724,6 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
     openapiFields.add("impressions_etv");
     openapiFields.add("estimated_paid_traffic_cost");
     openapiFields.add("rank_changes");
-    openapiFields.add("se_type");
     openapiFields.add("backlinks_info");
     openapiFields.add("rank_info");
 

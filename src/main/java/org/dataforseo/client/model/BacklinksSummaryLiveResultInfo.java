@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksSummaryLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
 public class BacklinksSummaryLiveResultInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -158,10 +158,6 @@ public class BacklinksSummaryLiveResultInfo {
   public static final String SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW = "referring_pages_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW)
   private Long referringPagesNofollow;
-
-  public static final String SERIALIZED_NAME_BACKLINKS_NOFOLLOW = "backlinks_nofollow";
-  @SerializedName(SERIALIZED_NAME_BACKLINKS_NOFOLLOW)
-  private Long backlinksNofollow;
 
   public BacklinksSummaryLiveResultInfo() {
   }
@@ -708,25 +704,6 @@ public class BacklinksSummaryLiveResultInfo {
   }
 
 
-  public BacklinksSummaryLiveResultInfo backlinksNofollow(Long backlinksNofollow) {
-    this.backlinksNofollow = backlinksNofollow;
-    return this;
-  }
-
-   /**
-   * number of nofollow backlinks pointing to the target
-   * @return backlinksNofollow
-  **/
-  @javax.annotation.Nullable
-  public Long getBacklinksNofollow() {
-    return backlinksNofollow;
-  }
-
-  public void setBacklinksNofollow(Long backlinksNofollow) {
-    this.backlinksNofollow = backlinksNofollow;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -762,8 +739,7 @@ public class BacklinksSummaryLiveResultInfo {
         Objects.equals(this.referringLinksPlatformTypes, backlinksSummaryLiveResultInfo.referringLinksPlatformTypes) &&
         Objects.equals(this.referringLinksSemanticLocations, backlinksSummaryLiveResultInfo.referringLinksSemanticLocations) &&
         Objects.equals(this.referringLinksCountries, backlinksSummaryLiveResultInfo.referringLinksCountries) &&
-        Objects.equals(this.referringPagesNofollow, backlinksSummaryLiveResultInfo.referringPagesNofollow) &&
-        Objects.equals(this.backlinksNofollow, backlinksSummaryLiveResultInfo.backlinksNofollow);
+        Objects.equals(this.referringPagesNofollow, backlinksSummaryLiveResultInfo.referringPagesNofollow);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -772,7 +748,7 @@ public class BacklinksSummaryLiveResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, firstSeen, lostDate, rank, backlinks, backlinksSpamScore, crawledPages, info, internalLinksCount, externalLinksCount, brokenBacklinks, brokenPages, referringDomains, referringDomainsNofollow, referringMainDomains, referringMainDomainsNofollow, referringIps, referringSubnets, referringPages, referringLinksTld, referringLinksTypes, referringLinksAttributes, referringLinksPlatformTypes, referringLinksSemanticLocations, referringLinksCountries, referringPagesNofollow, backlinksNofollow);
+    return Objects.hash(target, firstSeen, lostDate, rank, backlinks, backlinksSpamScore, crawledPages, info, internalLinksCount, externalLinksCount, brokenBacklinks, brokenPages, referringDomains, referringDomainsNofollow, referringMainDomains, referringMainDomainsNofollow, referringIps, referringSubnets, referringPages, referringLinksTld, referringLinksTypes, referringLinksAttributes, referringLinksPlatformTypes, referringLinksSemanticLocations, referringLinksCountries, referringPagesNofollow);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -812,7 +788,6 @@ public class BacklinksSummaryLiveResultInfo {
     sb.append("    referringLinksSemanticLocations: ").append(toIndentedString(referringLinksSemanticLocations)).append("\n");
     sb.append("    referringLinksCountries: ").append(toIndentedString(referringLinksCountries)).append("\n");
     sb.append("    referringPagesNofollow: ").append(toIndentedString(referringPagesNofollow)).append("\n");
-    sb.append("    backlinksNofollow: ").append(toIndentedString(backlinksNofollow)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -861,7 +836,6 @@ public class BacklinksSummaryLiveResultInfo {
     openapiFields.add("referring_links_semantic_locations");
     openapiFields.add("referring_links_countries");
     openapiFields.add("referring_pages_nofollow");
-    openapiFields.add("backlinks_nofollow");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

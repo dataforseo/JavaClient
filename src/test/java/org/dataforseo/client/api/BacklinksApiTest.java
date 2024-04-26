@@ -25,6 +25,8 @@ import org.dataforseo.client.model.BacklinksBulkNewLostBacklinksLiveRequestInfo;
 import org.dataforseo.client.model.BacklinksBulkNewLostBacklinksLiveResponseInfo;
 import org.dataforseo.client.model.BacklinksBulkNewLostReferringDomainsLiveRequestInfo;
 import org.dataforseo.client.model.BacklinksBulkNewLostReferringDomainsLiveResponseInfo;
+import org.dataforseo.client.model.BacklinksBulkPagesSummaryLiveRequestInfo;
+import org.dataforseo.client.model.BacklinksBulkPagesSummaryLiveResponseInfo;
 import org.dataforseo.client.model.BacklinksBulkRanksLiveRequestInfo;
 import org.dataforseo.client.model.BacklinksBulkRanksLiveResponseInfo;
 import org.dataforseo.client.model.BacklinksBulkReferringDomainsLiveRequestInfo;
@@ -170,6 +172,18 @@ public class BacklinksApiTest {
     }
 
     /**
+     * This endpoint will provide you with a comprehensive overview of backlinks and related data for a bulk of up to 1000 pages, domains, or subdomains. If you indicate a single page as a target, you will get comprehensive summary data on all backlinks for that page. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/bulk_pages_summary/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bulkPagesSummaryLiveTest() throws ApiException {
+        List<BacklinksBulkPagesSummaryLiveRequestInfo> backlinksBulkPagesSummaryLiveRequestInfo = null;
+        BacklinksBulkPagesSummaryLiveResponseInfo response = api.bulkPagesSummaryLive(backlinksBulkPagesSummaryLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
      * ‌ This endpoint will provide you with rank scores of the domains, subdomains, and pages specified in the targets array. The score is based on the number of referring domains pointing to the specified domains, subdomains, or pages. rank values range from 0 (no backlinks detected) to 1,000 (highest rank). A similar scoring system is used in Google’s Page Rank algorithm. You can learn more about rank scores in this help center article for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/bulk_ranks/live/?bash&#39;
      *
      * @throws ApiException if the Api call fails
@@ -289,7 +303,7 @@ public class BacklinksApiTest {
     }
 
     /**
-     * ‌‌ This endpoint will provide you with a detailed overview of referring domains pointing to the target domain you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/referring_domains/live/?bash&#39;
+     * ‌‌ This endpoint will provide you with a detailed overview of referring domains pointing to the target you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/referring_domains/live/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

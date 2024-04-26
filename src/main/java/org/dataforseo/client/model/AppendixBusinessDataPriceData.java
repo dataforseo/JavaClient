@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T10:15:18.753898100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
 public class AppendixBusinessDataPriceData {
   public static final String SERIALIZED_NAME_BUSINESS_LISTINGS = "business_listings";
   @SerializedName(SERIALIZED_NAME_BUSINESS_LISTINGS)
@@ -80,13 +80,13 @@ public class AppendixBusinessDataPriceData {
   @SerializedName(SERIALIZED_NAME_LOCATIONS)
   private AppendixTaskKeywordsDataPriceDataInfo locations;
 
-  public static final String SERIALIZED_NAME_TRUSTPILOT = "trustpilot";
-  @SerializedName(SERIALIZED_NAME_TRUSTPILOT)
-  private AppendixTrBusinessDataPriceDataInfo trustpilot;
-
   public static final String SERIALIZED_NAME_TRIPADVISOR = "tripadvisor";
   @SerializedName(SERIALIZED_NAME_TRIPADVISOR)
   private AppendixTrBusinessDataPriceDataInfo tripadvisor;
+
+  public static final String SERIALIZED_NAME_TRUSTPILOT = "trustpilot";
+  @SerializedName(SERIALIZED_NAME_TRUSTPILOT)
+  private AppendixTrBusinessDataPriceDataInfo trustpilot;
 
   public static final String SERIALIZED_NAME_YELP = "yelp";
   @SerializedName(SERIALIZED_NAME_YELP)
@@ -209,25 +209,6 @@ public class AppendixBusinessDataPriceData {
   }
 
 
-  public AppendixBusinessDataPriceData trustpilot(AppendixTrBusinessDataPriceDataInfo trustpilot) {
-    this.trustpilot = trustpilot;
-    return this;
-  }
-
-   /**
-   * Get trustpilot
-   * @return trustpilot
-  **/
-  @javax.annotation.Nullable
-  public AppendixTrBusinessDataPriceDataInfo getTrustpilot() {
-    return trustpilot;
-  }
-
-  public void setTrustpilot(AppendixTrBusinessDataPriceDataInfo trustpilot) {
-    this.trustpilot = trustpilot;
-  }
-
-
   public AppendixBusinessDataPriceData tripadvisor(AppendixTrBusinessDataPriceDataInfo tripadvisor) {
     this.tripadvisor = tripadvisor;
     return this;
@@ -244,6 +225,25 @@ public class AppendixBusinessDataPriceData {
 
   public void setTripadvisor(AppendixTrBusinessDataPriceDataInfo tripadvisor) {
     this.tripadvisor = tripadvisor;
+  }
+
+
+  public AppendixBusinessDataPriceData trustpilot(AppendixTrBusinessDataPriceDataInfo trustpilot) {
+    this.trustpilot = trustpilot;
+    return this;
+  }
+
+   /**
+   * Get trustpilot
+   * @return trustpilot
+  **/
+  @javax.annotation.Nullable
+  public AppendixTrBusinessDataPriceDataInfo getTrustpilot() {
+    return trustpilot;
+  }
+
+  public void setTrustpilot(AppendixTrBusinessDataPriceDataInfo trustpilot) {
+    this.trustpilot = trustpilot;
   }
 
 
@@ -282,14 +282,14 @@ public class AppendixBusinessDataPriceData {
         Objects.equals(this.google, appendixBusinessDataPriceData.google) &&
         Objects.equals(this.languages, appendixBusinessDataPriceData.languages) &&
         Objects.equals(this.locations, appendixBusinessDataPriceData.locations) &&
-        Objects.equals(this.trustpilot, appendixBusinessDataPriceData.trustpilot) &&
         Objects.equals(this.tripadvisor, appendixBusinessDataPriceData.tripadvisor) &&
+        Objects.equals(this.trustpilot, appendixBusinessDataPriceData.trustpilot) &&
         Objects.equals(this.yelp, appendixBusinessDataPriceData.yelp);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(businessListings, errors, socialMedia, google, languages, locations, trustpilot, tripadvisor, yelp);
+    return Objects.hash(businessListings, errors, socialMedia, google, languages, locations, tripadvisor, trustpilot, yelp);
   }
 
   @Override
@@ -302,8 +302,8 @@ public class AppendixBusinessDataPriceData {
     sb.append("    google: ").append(toIndentedString(google)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
-    sb.append("    trustpilot: ").append(toIndentedString(trustpilot)).append("\n");
     sb.append("    tripadvisor: ").append(toIndentedString(tripadvisor)).append("\n");
+    sb.append("    trustpilot: ").append(toIndentedString(trustpilot)).append("\n");
     sb.append("    yelp: ").append(toIndentedString(yelp)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -333,8 +333,8 @@ public class AppendixBusinessDataPriceData {
     openapiFields.add("google");
     openapiFields.add("languages");
     openapiFields.add("locations");
-    openapiFields.add("trustpilot");
     openapiFields.add("tripadvisor");
+    openapiFields.add("trustpilot");
     openapiFields.add("yelp");
 
     // a set of required properties/fields (JSON key names)
@@ -386,13 +386,13 @@ public class AppendixBusinessDataPriceData {
       if (jsonObj.get("locations") != null && !jsonObj.get("locations").isJsonNull()) {
         AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("locations"));
       }
-      // validate the optional field `trustpilot`
-      if (jsonObj.get("trustpilot") != null && !jsonObj.get("trustpilot").isJsonNull()) {
-        AppendixTrBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("trustpilot"));
-      }
       // validate the optional field `tripadvisor`
       if (jsonObj.get("tripadvisor") != null && !jsonObj.get("tripadvisor").isJsonNull()) {
         AppendixTrBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("tripadvisor"));
+      }
+      // validate the optional field `trustpilot`
+      if (jsonObj.get("trustpilot") != null && !jsonObj.get("trustpilot").isJsonNull()) {
+        AppendixTrBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("trustpilot"));
       }
       // validate the optional field `yelp`
       if (jsonObj.get("yelp") != null && !jsonObj.get("yelp").isJsonNull()) {
