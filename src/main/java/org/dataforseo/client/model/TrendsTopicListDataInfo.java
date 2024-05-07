@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * TrendsTopicListDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
 public class TrendsTopicListDataInfo {
   public static final String SERIALIZED_NAME_TOP = "top";
   @SerializedName(SERIALIZED_NAME_TOP)

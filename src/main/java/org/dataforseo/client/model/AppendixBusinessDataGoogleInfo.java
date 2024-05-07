@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataGoogleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
 public class AppendixBusinessDataGoogleInfo {
   public static final String SERIALIZED_NAME_MY_BUSINESS_INFO = "my_business_info";
   @SerializedName(SERIALIZED_NAME_MY_BUSINESS_INFO)
@@ -72,6 +72,10 @@ public class AppendixBusinessDataGoogleInfo {
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
   private AppendixFunctionInfo reviews;
+
+  public static final String SERIALIZED_NAME_QUESTIONS_AND_ANSWERS = "questions_and_answers";
+  @SerializedName(SERIALIZED_NAME_QUESTIONS_AND_ANSWERS)
+  private AppendixFunctionInfo questionsAndAnswers;
 
   public AppendixBusinessDataGoogleInfo() {
   }
@@ -171,6 +175,25 @@ public class AppendixBusinessDataGoogleInfo {
   }
 
 
+  public AppendixBusinessDataGoogleInfo questionsAndAnswers(AppendixFunctionInfo questionsAndAnswers) {
+    this.questionsAndAnswers = questionsAndAnswers;
+    return this;
+  }
+
+   /**
+   * Get questionsAndAnswers
+   * @return questionsAndAnswers
+  **/
+  @javax.annotation.Nullable
+  public AppendixFunctionInfo getQuestionsAndAnswers() {
+    return questionsAndAnswers;
+  }
+
+  public void setQuestionsAndAnswers(AppendixFunctionInfo questionsAndAnswers) {
+    this.questionsAndAnswers = questionsAndAnswers;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -185,12 +208,13 @@ public class AppendixBusinessDataGoogleInfo {
         Objects.equals(this.myBusinessUpdates, appendixBusinessDataGoogleInfo.myBusinessUpdates) &&
         Objects.equals(this.hotelInfo, appendixBusinessDataGoogleInfo.hotelInfo) &&
         Objects.equals(this.hotelSearches, appendixBusinessDataGoogleInfo.hotelSearches) &&
-        Objects.equals(this.reviews, appendixBusinessDataGoogleInfo.reviews);
+        Objects.equals(this.reviews, appendixBusinessDataGoogleInfo.reviews) &&
+        Objects.equals(this.questionsAndAnswers, appendixBusinessDataGoogleInfo.questionsAndAnswers);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(myBusinessInfo, myBusinessUpdates, hotelInfo, hotelSearches, reviews);
+    return Objects.hash(myBusinessInfo, myBusinessUpdates, hotelInfo, hotelSearches, reviews, questionsAndAnswers);
   }
 
   @Override
@@ -202,6 +226,7 @@ public class AppendixBusinessDataGoogleInfo {
     sb.append("    hotelInfo: ").append(toIndentedString(hotelInfo)).append("\n");
     sb.append("    hotelSearches: ").append(toIndentedString(hotelSearches)).append("\n");
     sb.append("    reviews: ").append(toIndentedString(reviews)).append("\n");
+    sb.append("    questionsAndAnswers: ").append(toIndentedString(questionsAndAnswers)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -229,6 +254,7 @@ public class AppendixBusinessDataGoogleInfo {
     openapiFields.add("hotel_info");
     openapiFields.add("hotel_searches");
     openapiFields.add("reviews");
+    openapiFields.add("questions_and_answers");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -274,6 +300,10 @@ public class AppendixBusinessDataGoogleInfo {
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
         AppendixFunctionInfo.validateJsonElement(jsonObj.get("reviews"));
+      }
+      // validate the optional field `questions_and_answers`
+      if (jsonObj.get("questions_and_answers") != null && !jsonObj.get("questions_and_answers").isJsonNull()) {
+        AppendixFunctionInfo.validateJsonElement(jsonObj.get("questions_and_answers"));
       }
   }
 

@@ -115,8 +115,10 @@ import org.dataforseo.client.model.SerpGoogleNewsTaskGetHtmlResponseInfo;
 import org.dataforseo.client.model.SerpGoogleNewsTaskPostResponseInfo;
 import org.dataforseo.client.model.SerpGoogleNewsTasksFixedResponseInfo;
 import org.dataforseo.client.model.SerpGoogleNewsTasksReadyResponseInfo;
+import org.dataforseo.client.model.SerpGoogleOrganicLiveAdvancedRequestInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicLiveAdvancedResponseInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicLiveHtmlResponseInfo;
+import org.dataforseo.client.model.SerpGoogleOrganicLiveRegularRequestInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicLiveRegularResponseInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicTaskGetAdvancedResponseInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicTaskGetHtmlResponseInfo;
@@ -1072,8 +1074,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleOrganicLiveAdvancedTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleOrganicLiveAdvancedResponseInfo response = api.googleOrganicLiveAdvanced(serpTaskRequestInfo);
+        List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo = null;
+        SerpGoogleOrganicLiveAdvancedResponseInfo response = api.googleOrganicLiveAdvanced(serpGoogleOrganicLiveAdvancedRequestInfo);
         // TODO: test validations
     }
 
@@ -1096,8 +1098,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleOrganicLiveRegularTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleOrganicLiveRegularResponseInfo response = api.googleOrganicLiveRegular(serpTaskRequestInfo);
+        List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo = null;
+        SerpGoogleOrganicLiveRegularResponseInfo response = api.googleOrganicLiveRegular(serpGoogleOrganicLiveRegularRequestInfo);
         // TODO: test validations
     }
 

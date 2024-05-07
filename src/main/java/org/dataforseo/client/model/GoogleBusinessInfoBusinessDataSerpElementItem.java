@@ -63,7 +63,7 @@ import org.dataforseo.client.JSON;
 /**
  * GoogleBusinessInfoBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
 public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -160,6 +160,10 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   public static final String SERIALIZED_NAME_IS_CLAIMED = "is_claimed";
   @SerializedName(SERIALIZED_NAME_IS_CLAIMED)
   private Boolean isClaimed;
+
+  public static final String SERIALIZED_NAME_QUESTIONS_AND_ANSWERS_COUNT = "questions_and_answers_count";
+  @SerializedName(SERIALIZED_NAME_QUESTIONS_AND_ANSWERS_COUNT)
+  private Integer questionsAndAnswersCount;
 
   public static final String SERIALIZED_NAME_ATTRIBUTES = "attributes";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTES)
@@ -685,6 +689,25 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   }
 
 
+  public GoogleBusinessInfoBusinessDataSerpElementItem questionsAndAnswersCount(Integer questionsAndAnswersCount) {
+    this.questionsAndAnswersCount = questionsAndAnswersCount;
+    return this;
+  }
+
+   /**
+   * Get questionsAndAnswersCount
+   * @return questionsAndAnswersCount
+  **/
+  @javax.annotation.Nullable
+  public Integer getQuestionsAndAnswersCount() {
+    return questionsAndAnswersCount;
+  }
+
+  public void setQuestionsAndAnswersCount(Integer questionsAndAnswersCount) {
+    this.questionsAndAnswersCount = questionsAndAnswersCount;
+  }
+
+
   public GoogleBusinessInfoBusinessDataSerpElementItem attributes(BusinessDataAttributesInfo attributes) {
     this.attributes = attributes;
     return this;
@@ -979,6 +1002,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
         Objects.equals(this.latitude, googleBusinessInfoBusinessDataSerpElementItem.latitude) &&
         Objects.equals(this.longitude, googleBusinessInfoBusinessDataSerpElementItem.longitude) &&
         Objects.equals(this.isClaimed, googleBusinessInfoBusinessDataSerpElementItem.isClaimed) &&
+        Objects.equals(this.questionsAndAnswersCount, googleBusinessInfoBusinessDataSerpElementItem.questionsAndAnswersCount) &&
         Objects.equals(this.attributes, googleBusinessInfoBusinessDataSerpElementItem.attributes) &&
         Objects.equals(this.placeTopics, googleBusinessInfoBusinessDataSerpElementItem.placeTopics) &&
         Objects.equals(this.rating, googleBusinessInfoBusinessDataSerpElementItem.rating) &&
@@ -1000,7 +1024,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, position, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1039,6 +1063,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     sb.append("    latitude: ").append(toIndentedString(latitude)).append("\n");
     sb.append("    longitude: ").append(toIndentedString(longitude)).append("\n");
     sb.append("    isClaimed: ").append(toIndentedString(isClaimed)).append("\n");
+    sb.append("    questionsAndAnswersCount: ").append(toIndentedString(questionsAndAnswersCount)).append("\n");
     sb.append("    attributes: ").append(toIndentedString(attributes)).append("\n");
     sb.append("    placeTopics: ").append(toIndentedString(placeTopics)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
@@ -1098,6 +1123,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     openapiFields.add("latitude");
     openapiFields.add("longitude");
     openapiFields.add("is_claimed");
+    openapiFields.add("questions_and_answers_count");
     openapiFields.add("attributes");
     openapiFields.add("place_topics");
     openapiFields.add("rating");

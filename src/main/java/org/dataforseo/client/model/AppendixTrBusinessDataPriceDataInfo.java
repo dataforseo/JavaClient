@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixHotelSearchesGoogleBusinessDataPriceData;
+import org.dataforseo.client.model.AppendixsGoogleBusinessDataPriceDataInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,20 +50,20 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixTrBusinessDataPriceDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
 public class AppendixTrBusinessDataPriceDataInfo {
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixHotelSearchesGoogleBusinessDataPriceData reviews;
+  private AppendixsGoogleBusinessDataPriceDataInfo reviews;
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixHotelSearchesGoogleBusinessDataPriceData search;
+  private AppendixsGoogleBusinessDataPriceDataInfo search;
 
   public AppendixTrBusinessDataPriceDataInfo() {
   }
 
-  public AppendixTrBusinessDataPriceDataInfo reviews(AppendixHotelSearchesGoogleBusinessDataPriceData reviews) {
+  public AppendixTrBusinessDataPriceDataInfo reviews(AppendixsGoogleBusinessDataPriceDataInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -73,16 +73,16 @@ public class AppendixTrBusinessDataPriceDataInfo {
    * @return reviews
   **/
   @javax.annotation.Nullable
-  public AppendixHotelSearchesGoogleBusinessDataPriceData getReviews() {
+  public AppendixsGoogleBusinessDataPriceDataInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixHotelSearchesGoogleBusinessDataPriceData reviews) {
+  public void setReviews(AppendixsGoogleBusinessDataPriceDataInfo reviews) {
     this.reviews = reviews;
   }
 
 
-  public AppendixTrBusinessDataPriceDataInfo search(AppendixHotelSearchesGoogleBusinessDataPriceData search) {
+  public AppendixTrBusinessDataPriceDataInfo search(AppendixsGoogleBusinessDataPriceDataInfo search) {
     this.search = search;
     return this;
   }
@@ -92,11 +92,11 @@ public class AppendixTrBusinessDataPriceDataInfo {
    * @return search
   **/
   @javax.annotation.Nullable
-  public AppendixHotelSearchesGoogleBusinessDataPriceData getSearch() {
+  public AppendixsGoogleBusinessDataPriceDataInfo getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixHotelSearchesGoogleBusinessDataPriceData search) {
+  public void setSearch(AppendixsGoogleBusinessDataPriceDataInfo search) {
     this.search = search;
   }
 
@@ -178,11 +178,11 @@ public class AppendixTrBusinessDataPriceDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixHotelSearchesGoogleBusinessDataPriceData.validateJsonElement(jsonObj.get("reviews"));
+        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("reviews"));
       }
       // validate the optional field `search`
       if (jsonObj.get("search") != null && !jsonObj.get("search").isJsonNull()) {
-        AppendixHotelSearchesGoogleBusinessDataPriceData.validateJsonElement(jsonObj.get("search"));
+        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("search"));
       }
   }
 

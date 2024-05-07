@@ -315,7 +315,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "7c9dce8c-abac-48e6-8010-b93b2b3f2dca"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "ae3f6931-46f5-4e81-bb37-c3c3b4fe9849"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBaiduOrganicTaskGetHtmlResponseInfo result = apiInstance.baiduOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -783,7 +783,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "bb239f8e-47ab-4f8b-b8e5-7161488b95a8"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "3148aa55-75de-4bca-9057-d9826d4e4b71"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingLocalPackTaskGetHtmlResponseInfo result = apiInstance.bingLocalPackTaskGetHtml(id);
       System.out.println(result);
@@ -1387,7 +1387,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "6e91a86d-7eed-435d-9d2b-2202fd0b1bd3"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "f68b3aa7-366e-4d66-a132-28777d24af79"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingOrganicTaskGetHtmlResponseInfo result = apiInstance.bingOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -3251,7 +3251,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "68e7e55e-cb32-4b83-a616-f738600283d0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "6bc4f04c-0580-4d1a-ab24-35b3c3514c35"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleImagesTaskGetHtmlResponseInfo result = apiInstance.googleImagesTaskGetHtml(id);
       System.out.println(result);
@@ -3583,7 +3583,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "d5099c99-e559-4e45-9345-793731901543"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "57211205-4ad5-464b-bd5b-67534968a122"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleJobsTaskGetHtmlResponseInfo result = apiInstance.googleJobsTaskGetHtml(id);
       System.out.println(result);
@@ -4051,7 +4051,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "c099be90-1a8d-4740-9d61-69feb30e317c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "9f356a06-66f8-4bd4-b9d9-961ce8ec78cd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleLocalFinderTaskGetHtmlResponseInfo result = apiInstance.googleLocalFinderTaskGetHtml(id);
       System.out.println(result);
@@ -4851,7 +4851,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "f4b34187-6830-477b-9afe-f06df1f80cfc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "72f26a54-3d6a-4314-8b23-b17ea5a2467a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleNewsTaskGetHtmlResponseInfo result = apiInstance.googleNewsTaskGetHtml(id);
       System.out.println(result);
@@ -5088,7 +5088,7 @@ This endpoint does not need any parameter.
 
 <a id="googleOrganicLiveAdvanced"></a>
 # **googleOrganicLiveAdvanced**
-> SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced(serpTaskRequestInfo)
+> SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced(serpGoogleOrganicLiveAdvancedRequestInfo)
 
 
 
@@ -5115,9 +5115,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicLiveAdvancedRequestInfo> | 
     try {
-      SerpGoogleOrganicLiveAdvancedResponseInfo result = apiInstance.googleOrganicLiveAdvanced(serpTaskRequestInfo);
+      SerpGoogleOrganicLiveAdvancedResponseInfo result = apiInstance.googleOrganicLiveAdvanced(serpGoogleOrganicLiveAdvancedRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicLiveAdvanced");
@@ -5134,7 +5134,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleOrganicLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;**](SerpGoogleOrganicLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -5224,7 +5224,7 @@ public class Example {
 
 <a id="googleOrganicLiveRegular"></a>
 # **googleOrganicLiveRegular**
-> SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular(serpTaskRequestInfo)
+> SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular(serpGoogleOrganicLiveRegularRequestInfo)
 
 
 
@@ -5251,9 +5251,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicLiveRegularRequestInfo> | 
     try {
-      SerpGoogleOrganicLiveRegularResponseInfo result = apiInstance.googleOrganicLiveRegular(serpTaskRequestInfo);
+      SerpGoogleOrganicLiveRegularResponseInfo result = apiInstance.googleOrganicLiveRegular(serpGoogleOrganicLiveRegularRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicLiveRegular");
@@ -5270,7 +5270,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleOrganicLiveRegularRequestInfo** | [**List&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;**](SerpGoogleOrganicLiveRegularRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -5387,7 +5387,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "018f785e-c9f4-4271-81b3-b1107f9bdf5a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "e52e670e-9907-48b6-a30c-ae4c46bb8109"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleOrganicTaskGetHtmlResponseInfo result = apiInstance.googleOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -6051,7 +6051,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "1568f4b7-ff93-4ed7-8588-ee7f17e13ac0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "a075fac1-4fa3-49a6-9c62-c7ef76500cfe"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpNaverOrganicTaskGetHtmlResponseInfo result = apiInstance.naverOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -7831,7 +7831,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "59c6bcb4-71cd-4c4a-a8bf-a82c5bbae1aa"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "0ae7bc0e-c5ed-47f7-8fc7-458007cc4a7b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpSeznamOrganicTaskGetHtmlResponseInfo result = apiInstance.seznamOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -8435,7 +8435,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "09325fe4-5d68-47ad-a9d6-3c32f6533089"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "4461bc5c-6d5c-44b0-b89a-a8d3d9388421"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpYahooOrganicTaskGetHtmlResponseInfo result = apiInstance.yahooOrganicTaskGetHtml(id);
       System.out.println(result);

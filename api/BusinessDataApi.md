@@ -36,6 +36,10 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleMyBusinessUpdatesTaskGet**](BusinessDataApi.md#googleMyBusinessUpdatesTaskGet) | **GET** /v3/business_data/google/my_business_updates/task_get/{id} |  |
 | [**googleMyBusinessUpdatesTaskPost**](BusinessDataApi.md#googleMyBusinessUpdatesTaskPost) | **POST** /v3/business_data/google/my_business_updates/task_post |  |
 | [**googleMyBusinessUpdatesTasksReady**](BusinessDataApi.md#googleMyBusinessUpdatesTasksReady) | **GET** /v3/business_data/google/my_business_updates/tasks_ready |  |
+| [**googleQuestionsAndAnswersLive**](BusinessDataApi.md#googleQuestionsAndAnswersLive) | **POST** /v3/business_data/google/questions_and_answers/live |  |
+| [**googleQuestionsAndAnswersTaskGet**](BusinessDataApi.md#googleQuestionsAndAnswersTaskGet) | **GET** /v3/business_data/google/questions_and_answers/task_get/{id} |  |
+| [**googleQuestionsAndAnswersTaskPost**](BusinessDataApi.md#googleQuestionsAndAnswersTaskPost) | **POST** /v3/business_data/google/questions_and_answers/task_post |  |
+| [**googleQuestionsAndAnswersTasksReady**](BusinessDataApi.md#googleQuestionsAndAnswersTasksReady) | **GET** /v3/business_data/google/questions_and_answers/tasks_ready |  |
 | [**googleReviewsTaskGet**](BusinessDataApi.md#googleReviewsTaskGet) | **GET** /v3/business_data/google/reviews/task_get/{id} |  |
 | [**googleReviewsTaskPost**](BusinessDataApi.md#googleReviewsTaskPost) | **POST** /v3/business_data/google/reviews/task_post |  |
 | [**googleReviewsTasksReady**](BusinessDataApi.md#googleReviewsTasksReady) | **GET** /v3/business_data/google/reviews/tasks_ready |  |
@@ -1347,7 +1351,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = "9581ef78-04ad-4192-a821-6b92ba452cd5"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "4fde18dd-ed19-4bc7-914a-2f060d8be9ce"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo result = apiInstance.googleHotelInfoTaskGetHtml(id);
       System.out.println(result);
@@ -2171,6 +2175,274 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo**](BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleQuestionsAndAnswersLive"></a>
+# **googleQuestionsAndAnswersLive**
+> BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo googleQuestionsAndAnswersLive(businessDataGoogleQuestionsAndAnswersLiveRequestInfo)
+
+
+
+‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> businessDataGoogleQuestionsAndAnswersLiveRequestInfo = Arrays.asList(); // List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> | 
+    try {
+      BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo result = apiInstance.googleQuestionsAndAnswersLive(businessDataGoogleQuestionsAndAnswersLiveRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleQuestionsAndAnswersLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **businessDataGoogleQuestionsAndAnswersLiveRequestInfo** | [**List&lt;BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo&gt;**](BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo**](BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleQuestionsAndAnswersTaskGet"></a>
+# **googleQuestionsAndAnswersTaskGet**
+> BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo googleQuestionsAndAnswersTaskGet(id)
+
+
+
+for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo result = apiInstance.googleQuestionsAndAnswersTaskGet(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleQuestionsAndAnswersTaskGet");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+### Return type
+
+[**BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo**](BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleQuestionsAndAnswersTaskPost"></a>
+# **googleQuestionsAndAnswersTaskPost**
+> BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo googleQuestionsAndAnswersTaskPost(businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo)
+
+
+
+‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo = Arrays.asList(); // List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> | 
+    try {
+      BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo result = apiInstance.googleQuestionsAndAnswersTaskPost(businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleQuestionsAndAnswersTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo** | [**List&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo&gt;**](BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo**](BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleQuestionsAndAnswersTasksReady"></a>
+# **googleQuestionsAndAnswersTasksReady**
+> BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo googleQuestionsAndAnswersTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    try {
+      BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo result = apiInstance.googleQuestionsAndAnswersTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleQuestionsAndAnswersTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo**](BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo.md)
 
 ### Authorization
 

@@ -48,6 +48,12 @@ import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskGetRes
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleReviewsTaskGetResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleReviewsTaskPostRequestInfo;
 import org.dataforseo.client.model.BusinessDataGoogleReviewsTaskPostResponseInfo;
@@ -475,6 +481,53 @@ public class BusinessDataApiTest {
     @Test
     public void googleMyBusinessUpdatesTasksReadyTest() throws ApiException {
         BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo response = api.googleMyBusinessUpdatesTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleQuestionsAndAnswersLiveTest() throws ApiException {
+        List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> businessDataGoogleQuestionsAndAnswersLiveRequestInfo = null;
+        BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo response = api.googleQuestionsAndAnswersLive(businessDataGoogleQuestionsAndAnswersLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleQuestionsAndAnswersTaskGetTest() throws ApiException {
+        String id = null;
+        BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo response = api.googleQuestionsAndAnswersTaskGet(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleQuestionsAndAnswersTaskPostTest() throws ApiException {
+        List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo = null;
+        BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo response = api.googleQuestionsAndAnswersTaskPost(businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleQuestionsAndAnswersTasksReadyTest() throws ApiException {
+        BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo response = api.googleQuestionsAndAnswersTasksReady();
         // TODO: test validations
     }
 

@@ -61,6 +61,12 @@ import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskGetRes
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleReviewsTaskGetResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleReviewsTaskPostRequestInfo;
 import org.dataforseo.client.model.BusinessDataGoogleReviewsTaskPostResponseInfo;
@@ -3896,6 +3902,478 @@ public class BusinessDataApi {
 
         okhttp3.Call localVarCall = googleMyBusinessUpdatesTasksReadyValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<BusinessDataGoogleMyBusinessUpdatesTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleQuestionsAndAnswersLive
+     * @param businessDataGoogleQuestionsAndAnswersLiveRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersLiveCall(List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> businessDataGoogleQuestionsAndAnswersLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = businessDataGoogleQuestionsAndAnswersLiveRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/questions_and_answers/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleQuestionsAndAnswersLiveValidateBeforeCall(List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> businessDataGoogleQuestionsAndAnswersLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleQuestionsAndAnswersLiveCall(businessDataGoogleQuestionsAndAnswersLiveRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash&#39;
+     * @param businessDataGoogleQuestionsAndAnswersLiveRequestInfo  (optional)
+     * @return BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo googleQuestionsAndAnswersLive(List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> businessDataGoogleQuestionsAndAnswersLiveRequestInfo) throws ApiException {
+        ApiResponse<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> localVarResp = googleQuestionsAndAnswersLiveWithHttpInfo(businessDataGoogleQuestionsAndAnswersLiveRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash&#39;
+     * @param businessDataGoogleQuestionsAndAnswersLiveRequestInfo  (optional)
+     * @return ApiResponse&lt;BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> googleQuestionsAndAnswersLiveWithHttpInfo(List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> businessDataGoogleQuestionsAndAnswersLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersLiveValidateBeforeCall(businessDataGoogleQuestionsAndAnswersLiveRequestInfo, null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/live/?bash&#39;
+     * @param businessDataGoogleQuestionsAndAnswersLiveRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersLiveAsync(List<BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo> businessDataGoogleQuestionsAndAnswersLiveRequestInfo, final ApiCallback<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersLiveValidateBeforeCall(businessDataGoogleQuestionsAndAnswersLiveRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleQuestionsAndAnswersTaskGet
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/questions_and_answers/task_get/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleQuestionsAndAnswersTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleQuestionsAndAnswersTaskGet(Async)");
+        }
+
+        return googleQuestionsAndAnswersTaskGetCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo googleQuestionsAndAnswersTaskGet(String id) throws ApiException {
+        ApiResponse<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> localVarResp = googleQuestionsAndAnswersTaskGetWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> googleQuestionsAndAnswersTaskGetWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersTaskGetValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersTaskGetAsync(String id, final ApiCallback<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersTaskGetValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleQuestionsAndAnswersTaskPost
+     * @param businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersTaskPostCall(List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/questions_and_answers/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleQuestionsAndAnswersTaskPostValidateBeforeCall(List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleQuestionsAndAnswersTaskPostCall(businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash&#39;
+     * @param businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo  (optional)
+     * @return BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo googleQuestionsAndAnswersTaskPost(List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo) throws ApiException {
+        ApiResponse<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> localVarResp = googleQuestionsAndAnswersTaskPostWithHttpInfo(businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash&#39;
+     * @param businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> googleQuestionsAndAnswersTaskPostWithHttpInfo(List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersTaskPostValidateBeforeCall(businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌ This endpoint will provide you with a detailed overview of questions and answers associated with a specific business entity listed on Google My Business. By submitting a request to this endpoint, you can access comprehensive data on the inquiries and responses related to a particular business, including the full text of the questions and answers, as well as metadata such as timestamps, user information.   The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings.   Your account will be billed for every 20 questions, the maximum number of answers returned for each question is 5. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/task_post/?bash&#39;
+     * @param businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersTaskPostAsync(List<BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo> businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo, final ApiCallback<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersTaskPostValidateBeforeCall(businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleQuestionsAndAnswersTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/questions_and_answers/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleQuestionsAndAnswersTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return googleQuestionsAndAnswersTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash&#39;
+     * @return BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo googleQuestionsAndAnswersTasksReady() throws ApiException {
+        ApiResponse<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> localVarResp = googleQuestionsAndAnswersTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> googleQuestionsAndAnswersTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/questions_and_answers/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleQuestionsAndAnswersTasksReadyAsync(final ApiCallback<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleQuestionsAndAnswersTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleQuestionsAndAnswersTasksReadyResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

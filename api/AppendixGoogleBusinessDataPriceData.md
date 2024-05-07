@@ -8,10 +8,11 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**hotelInfo** | [**AppendixHotelInfoGoogleBusinessDataPriceData**](AppendixHotelInfoGoogleBusinessDataPriceData.md) |  |  [optional] |
-|**hotelSearches** | [**AppendixHotelSearchesGoogleBusinessDataPriceData**](AppendixHotelSearchesGoogleBusinessDataPriceData.md) |  |  [optional] |
-|**myBusinessInfo** | [**AppendixHotelSearchesGoogleBusinessDataPriceData**](AppendixHotelSearchesGoogleBusinessDataPriceData.md) |  |  [optional] |
-|**myBusinessUpdates** | [**AppendixHotelSearchesGoogleBusinessDataPriceData**](AppendixHotelSearchesGoogleBusinessDataPriceData.md) |  |  [optional] |
-|**reviews** | [**AppendixHotelSearchesGoogleBusinessDataPriceData**](AppendixHotelSearchesGoogleBusinessDataPriceData.md) |  |  [optional] |
+|**hotelSearches** | [**AppendixsGoogleBusinessDataPriceDataInfo**](AppendixsGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
+|**myBusinessInfo** | [**AppendixsGoogleBusinessDataPriceDataInfo**](AppendixsGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
+|**myBusinessUpdates** | [**AppendixsGoogleBusinessDataPriceDataInfo**](AppendixsGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
+|**questionsAndAnswers** | [**AppendixsGoogleBusinessDataPriceDataInfo**](AppendixsGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
+|**reviews** | [**AppendixsGoogleBusinessDataPriceDataInfo**](AppendixsGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
 
 
 

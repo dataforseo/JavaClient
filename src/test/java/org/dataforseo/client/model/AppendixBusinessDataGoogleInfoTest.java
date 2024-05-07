@@ -79,4 +79,12 @@ public class AppendixBusinessDataGoogleInfoTest {
         // TODO: test reviews
     }
 
+    /**
+     * Test the property 'questionsAndAnswers'
+     */
+    @Test
+    public void questionsAndAnswersTest() {
+        // TODO: test questionsAndAnswers
+    }
+
 }

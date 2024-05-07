@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AppendixHotelInfoGoogleBusinessDataPriceData;
-import org.dataforseo.client.model.AppendixHotelSearchesGoogleBusinessDataPriceData;
+import org.dataforseo.client.model.AppendixsGoogleBusinessDataPriceDataInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -69,6 +69,14 @@ public class AppendixGoogleBusinessDataPriceDataTest {
     @Test
     public void myBusinessUpdatesTest() {
         // TODO: test myBusinessUpdates
+    }
+
+    /**
+     * Test the property 'questionsAndAnswers'
+     */
+    @Test
+    public void questionsAndAnswersTest() {
+        // TODO: test questionsAndAnswers
     }
 
     /**

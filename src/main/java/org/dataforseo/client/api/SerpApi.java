@@ -128,8 +128,10 @@ import org.dataforseo.client.model.SerpGoogleNewsTaskGetHtmlResponseInfo;
 import org.dataforseo.client.model.SerpGoogleNewsTaskPostResponseInfo;
 import org.dataforseo.client.model.SerpGoogleNewsTasksFixedResponseInfo;
 import org.dataforseo.client.model.SerpGoogleNewsTasksReadyResponseInfo;
+import org.dataforseo.client.model.SerpGoogleOrganicLiveAdvancedRequestInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicLiveAdvancedResponseInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicLiveHtmlResponseInfo;
+import org.dataforseo.client.model.SerpGoogleOrganicLiveRegularRequestInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicLiveRegularResponseInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicTaskGetAdvancedResponseInfo;
 import org.dataforseo.client.model.SerpGoogleOrganicTaskGetHtmlResponseInfo;
@@ -8961,7 +8963,7 @@ public class SerpApi {
     }
     /**
      * Build call for googleOrganicLiveAdvanced
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveAdvancedRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -8971,7 +8973,7 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleOrganicLiveAdvancedCall(List<SerpTaskRequestInfo> serpTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleOrganicLiveAdvancedCall(List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -8985,7 +8987,7 @@ public class SerpApi {
             basePath = null;
         }
 
-        Object localVarPostBody = serpTaskRequestInfo;
+        Object localVarPostBody = serpGoogleOrganicLiveAdvancedRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/serp/google/organic/live/advanced";
@@ -9017,15 +9019,15 @@ public class SerpApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleOrganicLiveAdvancedValidateBeforeCall(List<SerpTaskRequestInfo> serpTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleOrganicLiveAdvancedCall(serpTaskRequestInfo, _callback);
+    private okhttp3.Call googleOrganicLiveAdvancedValidateBeforeCall(List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleOrganicLiveAdvancedCall(serpGoogleOrganicLiveAdvancedRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash&#39;
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveAdvancedRequestInfo  (optional)
      * @return SerpGoogleOrganicLiveAdvancedResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -9034,15 +9036,15 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced(List<SerpTaskRequestInfo> serpTaskRequestInfo) throws ApiException {
-        ApiResponse<SerpGoogleOrganicLiveAdvancedResponseInfo> localVarResp = googleOrganicLiveAdvancedWithHttpInfo(serpTaskRequestInfo);
+    public SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced(List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleOrganicLiveAdvancedResponseInfo> localVarResp = googleOrganicLiveAdvancedWithHttpInfo(serpGoogleOrganicLiveAdvancedRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash&#39;
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveAdvancedRequestInfo  (optional)
      * @return ApiResponse&lt;SerpGoogleOrganicLiveAdvancedResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -9051,8 +9053,8 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<SerpGoogleOrganicLiveAdvancedResponseInfo> googleOrganicLiveAdvancedWithHttpInfo(List<SerpTaskRequestInfo> serpTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleOrganicLiveAdvancedValidateBeforeCall(serpTaskRequestInfo, null);
+    public ApiResponse<SerpGoogleOrganicLiveAdvancedResponseInfo> googleOrganicLiveAdvancedWithHttpInfo(List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleOrganicLiveAdvancedValidateBeforeCall(serpGoogleOrganicLiveAdvancedRequestInfo, null);
         Type localVarReturnType = new TypeToken<SerpGoogleOrganicLiveAdvancedResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -9060,7 +9062,7 @@ public class SerpApi {
     /**
      *  (asynchronously)
      * ‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash&#39;
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveAdvancedRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -9070,9 +9072,9 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleOrganicLiveAdvancedAsync(List<SerpTaskRequestInfo> serpTaskRequestInfo, final ApiCallback<SerpGoogleOrganicLiveAdvancedResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleOrganicLiveAdvancedAsync(List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo, final ApiCallback<SerpGoogleOrganicLiveAdvancedResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleOrganicLiveAdvancedValidateBeforeCall(serpTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleOrganicLiveAdvancedValidateBeforeCall(serpGoogleOrganicLiveAdvancedRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<SerpGoogleOrganicLiveAdvancedResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -9197,7 +9199,7 @@ public class SerpApi {
     }
     /**
      * Build call for googleOrganicLiveRegular
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveRegularRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -9207,7 +9209,7 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleOrganicLiveRegularCall(List<SerpTaskRequestInfo> serpTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleOrganicLiveRegularCall(List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -9221,7 +9223,7 @@ public class SerpApi {
             basePath = null;
         }
 
-        Object localVarPostBody = serpTaskRequestInfo;
+        Object localVarPostBody = serpGoogleOrganicLiveRegularRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/serp/google/organic/live/regular";
@@ -9253,15 +9255,15 @@ public class SerpApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleOrganicLiveRegularValidateBeforeCall(List<SerpTaskRequestInfo> serpTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleOrganicLiveRegularCall(serpTaskRequestInfo, _callback);
+    private okhttp3.Call googleOrganicLiveRegularValidateBeforeCall(List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleOrganicLiveRegularCall(serpGoogleOrganicLiveRegularRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash&#39;
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveRegularRequestInfo  (optional)
      * @return SerpGoogleOrganicLiveRegularResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -9270,15 +9272,15 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular(List<SerpTaskRequestInfo> serpTaskRequestInfo) throws ApiException {
-        ApiResponse<SerpGoogleOrganicLiveRegularResponseInfo> localVarResp = googleOrganicLiveRegularWithHttpInfo(serpTaskRequestInfo);
+    public SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular(List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleOrganicLiveRegularResponseInfo> localVarResp = googleOrganicLiveRegularWithHttpInfo(serpGoogleOrganicLiveRegularRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash&#39;
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveRegularRequestInfo  (optional)
      * @return ApiResponse&lt;SerpGoogleOrganicLiveRegularResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -9287,8 +9289,8 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<SerpGoogleOrganicLiveRegularResponseInfo> googleOrganicLiveRegularWithHttpInfo(List<SerpTaskRequestInfo> serpTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleOrganicLiveRegularValidateBeforeCall(serpTaskRequestInfo, null);
+    public ApiResponse<SerpGoogleOrganicLiveRegularResponseInfo> googleOrganicLiveRegularWithHttpInfo(List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleOrganicLiveRegularValidateBeforeCall(serpGoogleOrganicLiveRegularRequestInfo, null);
         Type localVarReturnType = new TypeToken<SerpGoogleOrganicLiveRegularResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -9296,7 +9298,7 @@ public class SerpApi {
     /**
      *  (asynchronously)
      * ‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash&#39;
-     * @param serpTaskRequestInfo  (optional)
+     * @param serpGoogleOrganicLiveRegularRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -9306,9 +9308,9 @@ public class SerpApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleOrganicLiveRegularAsync(List<SerpTaskRequestInfo> serpTaskRequestInfo, final ApiCallback<SerpGoogleOrganicLiveRegularResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleOrganicLiveRegularAsync(List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo, final ApiCallback<SerpGoogleOrganicLiveRegularResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleOrganicLiveRegularValidateBeforeCall(serpTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleOrganicLiveRegularValidateBeforeCall(serpGoogleOrganicLiveRegularRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<SerpGoogleOrganicLiveRegularResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

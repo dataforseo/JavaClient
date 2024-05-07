@@ -252,6 +252,14 @@ public class GoogleBusinessInfoBusinessDataSerpElementItemTest {
     }
 
     /**
+     * Test the property 'questionsAndAnswersCount'
+     */
+    @Test
+    public void questionsAndAnswersCountTest() {
+        // TODO: test questionsAndAnswersCount
+    }
+
+    /**
      * Test the property 'attributes'
      */
     @Test

@@ -62,7 +62,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-26T17:31:56.777561200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
 public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -159,6 +159,14 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
   private RatingInfo rating;
+
+  public static final String SERIALIZED_NAME_HOTEL_RATING = "hotel_rating";
+  @SerializedName(SERIALIZED_NAME_HOTEL_RATING)
+  private Integer hotelRating;
+
+  public static final String SERIALIZED_NAME_PRICE_LEVEL = "price_level";
+  @SerializedName(SERIALIZED_NAME_PRICE_LEVEL)
+  private String priceLevel;
 
   public static final String SERIALIZED_NAME_RATING_DISTRIBUTION = "rating_distribution";
   @SerializedName(SERIALIZED_NAME_RATING_DISTRIBUTION)
@@ -675,6 +683,44 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
 
+  public BusinessDataBusinessListingsSearchLiveItem hotelRating(Integer hotelRating) {
+    this.hotelRating = hotelRating;
+    return this;
+  }
+
+   /**
+   * hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null
+   * @return hotelRating
+  **/
+  @javax.annotation.Nullable
+  public Integer getHotelRating() {
+    return hotelRating;
+  }
+
+  public void setHotelRating(Integer hotelRating) {
+    this.hotelRating = hotelRating;
+  }
+
+
+  public BusinessDataBusinessListingsSearchLiveItem priceLevel(String priceLevel) {
+    this.priceLevel = priceLevel;
+    return this;
+  }
+
+   /**
+   * property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null
+   * @return priceLevel
+  **/
+  @javax.annotation.Nullable
+  public String getPriceLevel() {
+    return priceLevel;
+  }
+
+  public void setPriceLevel(String priceLevel) {
+    this.priceLevel = priceLevel;
+  }
+
+
   public BusinessDataBusinessListingsSearchLiveItem ratingDistribution(Map<String, Integer> ratingDistribution) {
     this.ratingDistribution = ratingDistribution;
     return this;
@@ -781,7 +827,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
    /**
-   * available interactions with the business list of options to interact with the business directly from search results
+   * Get localBusinessLinks
    * @return localBusinessLinks
   **/
   @javax.annotation.Nullable
@@ -893,6 +939,8 @@ public class BusinessDataBusinessListingsSearchLiveItem {
         Objects.equals(this.attributes, businessDataBusinessListingsSearchLiveItem.attributes) &&
         Objects.equals(this.placeTopics, businessDataBusinessListingsSearchLiveItem.placeTopics) &&
         Objects.equals(this.rating, businessDataBusinessListingsSearchLiveItem.rating) &&
+        Objects.equals(this.hotelRating, businessDataBusinessListingsSearchLiveItem.hotelRating) &&
+        Objects.equals(this.priceLevel, businessDataBusinessListingsSearchLiveItem.priceLevel) &&
         Objects.equals(this.ratingDistribution, businessDataBusinessListingsSearchLiveItem.ratingDistribution) &&
         Objects.equals(this.peopleAlsoSearch, businessDataBusinessListingsSearchLiveItem.peopleAlsoSearch) &&
         Objects.equals(this.workTime, businessDataBusinessListingsSearchLiveItem.workTime) &&
@@ -909,7 +957,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime);
+    return Objects.hash(type, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -947,6 +995,8 @@ public class BusinessDataBusinessListingsSearchLiveItem {
     sb.append("    attributes: ").append(toIndentedString(attributes)).append("\n");
     sb.append("    placeTopics: ").append(toIndentedString(placeTopics)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
+    sb.append("    hotelRating: ").append(toIndentedString(hotelRating)).append("\n");
+    sb.append("    priceLevel: ").append(toIndentedString(priceLevel)).append("\n");
     sb.append("    ratingDistribution: ").append(toIndentedString(ratingDistribution)).append("\n");
     sb.append("    peopleAlsoSearch: ").append(toIndentedString(peopleAlsoSearch)).append("\n");
     sb.append("    workTime: ").append(toIndentedString(workTime)).append("\n");
@@ -1001,6 +1051,8 @@ public class BusinessDataBusinessListingsSearchLiveItem {
     openapiFields.add("attributes");
     openapiFields.add("place_topics");
     openapiFields.add("rating");
+    openapiFields.add("hotel_rating");
+    openapiFields.add("price_level");
     openapiFields.add("rating_distribution");
     openapiFields.add("people_also_search");
     openapiFields.add("work_time");
@@ -1096,6 +1148,9 @@ public class BusinessDataBusinessListingsSearchLiveItem {
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
         RatingInfo.validateJsonElement(jsonObj.get("rating"));
+      }
+      if ((jsonObj.get("price_level") != null && !jsonObj.get("price_level").isJsonNull()) && !jsonObj.get("price_level").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `price_level` to be a primitive type in the JSON string but got `%s`", jsonObj.get("price_level").toString()));
       }
       if (jsonObj.get("people_also_search") != null && !jsonObj.get("people_also_search").isJsonNull()) {
         JsonArray jsonArraypeopleAlsoSearch = jsonObj.getAsJsonArray("people_also_search");

@@ -157,7 +157,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "81805516-3f54-40ef-84e1-4b0389152c14"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "c1267788-3683-49b4-9695-f14e3cc66f9f"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordPerformanceTaskGetResponseInfo result = apiInstance.bingKeywordPerformanceTaskGet(id);
       System.out.println(result);
@@ -425,7 +425,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "dae72764-91cc-4336-b5e3-1a88438869a7"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "8d8615e7-4a52-4a42-8082-1ebc08170aff"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo result = apiInstance.bingKeywordsForKeywordsTaskGet(id);
       System.out.println(result);
@@ -693,7 +693,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "9fc5361d-b31c-456c-afed-0b5555c55dbc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "fea903ac-8473-44d7-a712-36e0754a8bc6"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordsForSiteTaskGetResponseInfo result = apiInstance.bingKeywordsForSiteTaskGet(id);
       System.out.println(result);
@@ -961,7 +961,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "9de34050-b553-4fcd-ae8c-7e85d3c5a6bd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "7f0cdb7a-ef94-411c-aad8-2e22f9973fbb"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingSearchVolumeTaskGetResponseInfo result = apiInstance.bingSearchVolumeTaskGet(id);
       System.out.println(result);
@@ -1501,7 +1501,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "14242cc9-9140-4e0f-adce-c2e6b7c41db8"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "043e32e1-2856-4dc3-bdf1-216c79128f7b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo result = apiInstance.googleAdsAdTrafficByKeywordsTaskGet(id);
       System.out.println(result);
@@ -1769,7 +1769,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "78de3ee9-a67f-4e08-ad6e-9f1447c84f73"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "7966886b-fd65-4993-b1b7-5712a0a75cb7"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo result = apiInstance.googleAdsKeywordsForKeywordsTaskGet(id);
       System.out.println(result);
@@ -2037,7 +2037,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "40ee63d3-5a11-43ab-b383-0d385d9aaea0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "7cf94f41-d391-498b-a30d-645ab7f62b39"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo result = apiInstance.googleAdsKeywordsForSiteTaskGet(id);
       System.out.println(result);
@@ -2305,7 +2305,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "11919733-f818-422d-a296-23a1bc6f3d6b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "32cfe3cb-0eb9-4245-8bf7-650455f33725"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo result = apiInstance.googleAdsSearchVolumeTaskGet(id);
       System.out.println(result);
@@ -2701,7 +2701,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "fd70d5f1-ca28-4779-9898-4f031cd9a692"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "e716b739-9dd9-4bd7-8e7c-ac855085f75a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleTrendsExploreTaskGetResponseInfo result = apiInstance.googleTrendsExploreTaskGet(id);
       System.out.println(result);

@@ -12,6 +12,7 @@
 |**hotelInfo** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
 |**hotelSearches** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
 |**reviews** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**questionsAndAnswers** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
 
 
 

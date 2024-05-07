@@ -243,6 +243,22 @@ public class BusinessDataBusinessListingsSearchLiveItemTest {
     }
 
     /**
+     * Test the property 'hotelRating'
+     */
+    @Test
+    public void hotelRatingTest() {
+        // TODO: test hotelRating
+    }
+
+    /**
+     * Test the property 'priceLevel'
+     */
+    @Test
+    public void priceLevelTest() {
+        // TODO: test priceLevel
+    }
+
+    /**
      * Test the property 'ratingDistribution'
      */
     @Test
