@@ -23,8 +23,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.dataforseo.client.model.MainTopic;
 import org.dataforseo.client.model.PageSectionContentInfo;
-import org.dataforseo.client.model.TopicInfo;
+import org.dataforseo.client.model.SecondaryTopic;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * PageContentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class PageContentInfo {
   public static final String SERIALIZED_NAME_HEADER = "header";
   @SerializedName(SERIALIZED_NAME_HEADER)
@@ -66,11 +67,11 @@ public class PageContentInfo {
 
   public static final String SERIALIZED_NAME_MAIN_TOPIC = "main_topic";
   @SerializedName(SERIALIZED_NAME_MAIN_TOPIC)
-  private List<TopicInfo> mainTopic;
+  private List<MainTopic> mainTopic;
 
   public static final String SERIALIZED_NAME_SECONDARY_TOPIC = "secondary_topic";
   @SerializedName(SERIALIZED_NAME_SECONDARY_TOPIC)
-  private List<TopicInfo> secondaryTopic;
+  private List<SecondaryTopic> secondaryTopic;
 
   public PageContentInfo() {
   }
@@ -113,12 +114,12 @@ public class PageContentInfo {
   }
 
 
-  public PageContentInfo mainTopic(List<TopicInfo> mainTopic) {
+  public PageContentInfo mainTopic(List<MainTopic> mainTopic) {
     this.mainTopic = mainTopic;
     return this;
   }
 
-  public PageContentInfo addMainTopicItem(TopicInfo mainTopicItem) {
+  public PageContentInfo addMainTopicItem(MainTopic mainTopicItem) {
     if (this.mainTopic == null) {
       this.mainTopic = new ArrayList<>();
     }
@@ -131,21 +132,21 @@ public class PageContentInfo {
    * @return mainTopic
   **/
   @javax.annotation.Nullable
-  public List<TopicInfo> getMainTopic() {
+  public List<MainTopic> getMainTopic() {
     return mainTopic;
   }
 
-  public void setMainTopic(List<TopicInfo> mainTopic) {
+  public void setMainTopic(List<MainTopic> mainTopic) {
     this.mainTopic = mainTopic;
   }
 
 
-  public PageContentInfo secondaryTopic(List<TopicInfo> secondaryTopic) {
+  public PageContentInfo secondaryTopic(List<SecondaryTopic> secondaryTopic) {
     this.secondaryTopic = secondaryTopic;
     return this;
   }
 
-  public PageContentInfo addSecondaryTopicItem(TopicInfo secondaryTopicItem) {
+  public PageContentInfo addSecondaryTopicItem(SecondaryTopic secondaryTopicItem) {
     if (this.secondaryTopic == null) {
       this.secondaryTopic = new ArrayList<>();
     }
@@ -158,11 +159,11 @@ public class PageContentInfo {
    * @return secondaryTopic
   **/
   @javax.annotation.Nullable
-  public List<TopicInfo> getSecondaryTopic() {
+  public List<SecondaryTopic> getSecondaryTopic() {
     return secondaryTopic;
   }
 
-  public void setSecondaryTopic(List<TopicInfo> secondaryTopic) {
+  public void setSecondaryTopic(List<SecondaryTopic> secondaryTopic) {
     this.secondaryTopic = secondaryTopic;
   }
 
@@ -277,7 +278,7 @@ public class PageContentInfo {
 
           // validate the optional field `main_topic` (array)
           for (int i = 0; i < jsonArraymainTopic.size(); i++) {
-            TopicInfo.validateJsonElement(jsonArraymainTopic.get(i));
+            MainTopic.validateJsonElement(jsonArraymainTopic.get(i));
           };
         }
       }
@@ -291,7 +292,7 @@ public class PageContentInfo {
 
           // validate the optional field `secondary_topic` (array)
           for (int i = 0; i < jsonArraysecondaryTopic.size(); i++) {
-            TopicInfo.validateJsonElement(jsonArraysecondaryTopic.get(i));
+            SecondaryTopic.validateJsonElement(jsonArraysecondaryTopic.get(i));
           };
         }
       }

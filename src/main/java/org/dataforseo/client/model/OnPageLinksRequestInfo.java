@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageLinksRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class OnPageLinksRequestInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -194,7 +194,7 @@ public class OnPageLinksRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;direction\&quot;,\&quot;&#x3D;\&quot;,\&quot;external\&quot;] [[\&quot;domain_to\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;example.com\&quot;], \&quot;and\&quot;, [\&quot;link_from\&quot;,\&quot;not_like\&quot;,\&quot;%example.com/blog%\&quot;]] [[\&quot;direction\&quot;,\&quot;&#x3D;\&quot;,\&quot;external\&quot;], \&quot;and\&quot;, [[\&quot;link_from\&quot;,\&quot;like\&quot;,\&quot;%example.com/blog%\&quot;],\&quot;or\&quot;,[\&quot;link_from\&quot;,\&quot;like\&quot;,\&quot;%example.com/help%\&quot;]]] The full list of possible filters is available by this link.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;direction\&quot;,\&quot;&#x3D;\&quot;,\&quot;external\&quot;] [[\&quot;domain_to\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;example.com\&quot;], \&quot;and\&quot;, [\&quot;link_from\&quot;,\&quot;not_like\&quot;,\&quot;%example.com/blog%\&quot;]] [[\&quot;direction\&quot;,\&quot;&#x3D;\&quot;,\&quot;external\&quot;], \&quot;and\&quot;, [[\&quot;link_from\&quot;,\&quot;like\&quot;,\&quot;%example.com/blog%\&quot;],\&quot;or\&quot;,[\&quot;link_from\&quot;,\&quot;like\&quot;,\&quot;%example.com/help%\&quot;]]] The full list of possible filters is available by this link.
    * @return filters
   **/
   @javax.annotation.Nullable

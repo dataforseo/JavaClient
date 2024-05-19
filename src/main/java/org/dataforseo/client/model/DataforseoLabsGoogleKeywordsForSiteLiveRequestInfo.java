@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -336,7 +336,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters note that you can not filter the results by relevance example: [\&quot;keyword_info.search_volume\&quot;,\&quot;&gt;\&quot;,0] [[\&quot;impressions_info.daily_impressions_average\&quot;,\&quot;in\&quot;,[0,1000]], \&quot;and\&quot;, [\&quot;impressions_info.ad_position_average\&quot;,\&quot;&lt;\&quot;,3]][[\&quot;impressions_info.ad_position_average\&quot;,\&quot;&gt;\&quot;,0], \&quot;and\&quot;, [[\&quot;impressions_info.cpc_max\&quot;,\&quot;&lt;\&quot;,0.5],\&quot;or\&quot;,[\&quot;impressions_info.daily_clicks_max\&quot;,\&quot;&gt;&#x3D;\&quot;,10]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters note that you can not filter the results by relevance example: [\&quot;keyword_info.search_volume\&quot;,\&quot;&gt;\&quot;,0] [[\&quot;impressions_info.daily_impressions_average\&quot;,\&quot;in\&quot;,[0,1000]], \&quot;and\&quot;, [\&quot;impressions_info.ad_position_average\&quot;,\&quot;&lt;\&quot;,3]][[\&quot;impressions_info.ad_position_average\&quot;,\&quot;&gt;\&quot;,0], \&quot;and\&quot;, [[\&quot;impressions_info.cpc_max\&quot;,\&quot;&lt;\&quot;,0.5],\&quot;or\&quot;,[\&quot;impressions_info.daily_clicks_max\&quot;,\&quot;&gt;&#x3D;\&quot;,10]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
    * @return filters
   **/
   @javax.annotation.Nullable

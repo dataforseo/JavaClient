@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksPageIntersectionLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class BacklinksPageIntersectionLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGETS = "targets";
   @SerializedName(SERIALIZED_NAME_TARGETS)
@@ -194,7 +194,7 @@ public class BacklinksPageIntersectionLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;1.rank\&quot;,\&quot;&gt;\&quot;,\&quot;80\&quot;] [[\&quot;2.page_from_rank\&quot;,\&quot;&gt;\&quot;,\&quot;55\&quot;], \&quot;and\&quot;, [\&quot;1.original\&quot;,\&quot;&#x3D;\&quot;,\&quot;true\&quot;]] [[\&quot;1.first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;1.acnhor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;1.text_pre\&quot;,\&quot;not_like\&quot;,\&quot;%seo%\&quot;]]] The full list of possible filters is available here.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;1.rank\&quot;,\&quot;&gt;\&quot;,\&quot;80\&quot;] [[\&quot;2.page_from_rank\&quot;,\&quot;&gt;\&quot;,\&quot;55\&quot;], \&quot;and\&quot;, [\&quot;1.original\&quot;,\&quot;&#x3D;\&quot;,\&quot;true\&quot;]] [[\&quot;1.first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;1.acnhor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;1.text_pre\&quot;,\&quot;not_like\&quot;,\&quot;%seo%\&quot;]]] The full list of possible filters is available here.
    * @return filters
   **/
   @javax.annotation.Nullable
@@ -335,7 +335,7 @@ public class BacklinksPageIntersectionLiveRequestInfo {
   }
 
    /**
-   * indicates whether to intersect backlinks optional field use this field to intersect or merge results for the specified URLs possible values: all, partical all – results are based on all backlinks; partial – results are based on the intersecting backlinks only; default value: all
+   * indicates whether to intersect backlinks optional field use this field to intersect or merge results for the specified URLs possible values: all, partial all – results are based on all backlinks; partial – results are based on the intersecting backlinks only; default value: all
    * @return intersectionMode
   **/
   @javax.annotation.Nullable

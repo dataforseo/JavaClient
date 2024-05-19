@@ -13,7 +13,7 @@
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**title** | **String** | title of the link |  [optional] |
 |**dataAttrid** | **String** | google defined data attribute ID example: ss:/webfacts:net_worth |  [optional] |
-|**link** | **Object** | link of the element |  [optional] |
+|**link** | [**LinkElement**](LinkElement.md) |  |  [optional] |
 |**items** | [**List&lt;KnowledgeGraphListElement&gt;**](KnowledgeGraphListElement.md) | additional items present in the element if there are none, equals null |  [optional] |
 
 

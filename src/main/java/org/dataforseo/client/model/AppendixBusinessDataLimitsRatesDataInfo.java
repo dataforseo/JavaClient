@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class AppendixBusinessDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_GOOGLE = "google";
   @SerializedName(SERIALIZED_NAME_GOOGLE)
@@ -91,6 +91,10 @@ public class AppendixBusinessDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_BUSINESS_LISTINGS = "business_listings";
   @SerializedName(SERIALIZED_NAME_BUSINESS_LISTINGS)
   private AppendixBusinessListingsBusinessDataLimitsRatesDataInfo businessListings;
+
+  public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
+  @SerializedName(SERIALIZED_NAME_TASKS_READY)
+  private Double tasksReady;
 
   public AppendixBusinessDataLimitsRatesDataInfo() {
   }
@@ -266,6 +270,25 @@ public class AppendixBusinessDataLimitsRatesDataInfo {
   }
 
 
+  public AppendixBusinessDataLimitsRatesDataInfo tasksReady(Double tasksReady) {
+    this.tasksReady = tasksReady;
+    return this;
+  }
+
+   /**
+   * Get tasksReady
+   * @return tasksReady
+  **/
+  @javax.annotation.Nullable
+  public Double getTasksReady() {
+    return tasksReady;
+  }
+
+  public void setTasksReady(Double tasksReady) {
+    this.tasksReady = tasksReady;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -284,7 +307,8 @@ public class AppendixBusinessDataLimitsRatesDataInfo {
         Objects.equals(this.socialMedia, appendixBusinessDataLimitsRatesDataInfo.socialMedia) &&
         Objects.equals(this.tripadvisor, appendixBusinessDataLimitsRatesDataInfo.tripadvisor) &&
         Objects.equals(this.trustpilot, appendixBusinessDataLimitsRatesDataInfo.trustpilot) &&
-        Objects.equals(this.businessListings, appendixBusinessDataLimitsRatesDataInfo.businessListings);
+        Objects.equals(this.businessListings, appendixBusinessDataLimitsRatesDataInfo.businessListings) &&
+        Objects.equals(this.tasksReady, appendixBusinessDataLimitsRatesDataInfo.tasksReady);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -293,7 +317,7 @@ public class AppendixBusinessDataLimitsRatesDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(google, locations, languages, errors, yelp, socialMedia, tripadvisor, trustpilot, businessListings);
+    return Objects.hash(google, locations, languages, errors, yelp, socialMedia, tripadvisor, trustpilot, businessListings, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -316,6 +340,7 @@ public class AppendixBusinessDataLimitsRatesDataInfo {
     sb.append("    tripadvisor: ").append(toIndentedString(tripadvisor)).append("\n");
     sb.append("    trustpilot: ").append(toIndentedString(trustpilot)).append("\n");
     sb.append("    businessListings: ").append(toIndentedString(businessListings)).append("\n");
+    sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -347,6 +372,7 @@ public class AppendixBusinessDataLimitsRatesDataInfo {
     openapiFields.add("tripadvisor");
     openapiFields.add("trustpilot");
     openapiFields.add("business_listings");
+    openapiFields.add("tasks_ready");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

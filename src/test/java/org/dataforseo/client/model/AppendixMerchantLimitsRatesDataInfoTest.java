@@ -89,4 +89,12 @@ public class AppendixMerchantLimitsRatesDataInfoTest {
         // TODO: test reviews
     }
 
+    /**
+     * Test the property 'tasksReady'
+     */
+    @Test
+    public void tasksReadyTest() {
+        // TODO: test tasksReady
+    }
+
 }

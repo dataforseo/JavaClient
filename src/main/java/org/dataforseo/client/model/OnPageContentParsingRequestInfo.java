@@ -49,7 +49,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageContentParsingRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class OnPageContentParsingRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -68,7 +68,7 @@ public class OnPageContentParsingRequestInfo {
   }
 
    /**
-   * URL of the content to parse required field URL of the page to parse example: https://www.fujielectric.com/
+   * URL of the content to parse required field URL of the page to parse example: https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api
    * @return url
   **/
   @javax.annotation.Nullable

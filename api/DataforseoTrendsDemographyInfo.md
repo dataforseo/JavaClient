@@ -11,7 +11,7 @@
 |**type** | **String** | type of element |  [optional] |
 |**keywords** | **List&lt;String&gt;** | relevant keywords the data included in the demography and demography_comparison is based on the keywords listed in this array |  [optional] |
 |**demography** | [**Demography**](Demography.md) |  |  [optional] |
-|**demographyComparison** | [**DemographyComparison**](DemographyComparison.md) |  |  [optional] |
+|**demographyComparison** | [**DemographyComparisonInfo**](DemographyComparisonInfo.md) |  |  [optional] |
 
 
 

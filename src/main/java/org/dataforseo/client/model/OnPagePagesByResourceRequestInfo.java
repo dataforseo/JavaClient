@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPagePagesByResourceRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class OnPagePagesByResourceRequestInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -175,7 +175,7 @@ public class OnPagePagesByResourceRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;meta.external_links_count\&quot;,\&quot;&lt;&#x3D;\&quot;,50][\&quot;url\&quot;,\&quot;like\&quot;,\&quot;https://dataforseo.com/apis/dataforseo-labs-api\&quot;] [[\&quot;checks.high_waiting_time\&quot;,\&quot;&#x3D;\&quot;,false], \&quot;and\&quot;,[\&quot;resource_type\&quot;,\&quot;&#x3D;\&quot;,\&quot;html\&quot;]] [[\&quot;page_timing.duration_time\&quot;,\&quot;&lt;\&quot;,100],\&quot;and\&quot;,[[\&quot;checks.large_page_size\&quot;,\&quot;&#x3D;\&quot;,false],\&quot;or\&quot;,[\&quot;checks.high_waiting_time\&quot;,\&quot;&#x3D;\&quot;,false]]] The full list of possible filters is available by this link.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;meta.external_links_count\&quot;,\&quot;&lt;&#x3D;\&quot;,50][\&quot;url\&quot;,\&quot;like\&quot;,\&quot;https://dataforseo.com/apis/dataforseo-labs-api\&quot;] [[\&quot;checks.high_waiting_time\&quot;,\&quot;&#x3D;\&quot;,false], \&quot;and\&quot;,[\&quot;resource_type\&quot;,\&quot;&#x3D;\&quot;,\&quot;html\&quot;]] [[\&quot;page_timing.duration_time\&quot;,\&quot;&lt;\&quot;,100],\&quot;and\&quot;,[[\&quot;checks.large_page_size\&quot;,\&quot;&#x3D;\&quot;,false],\&quot;or\&quot;,[\&quot;checks.high_waiting_time\&quot;,\&quot;&#x3D;\&quot;,false]]] The full list of possible filters is available by this link.
    * @return filters
   **/
   @javax.annotation.Nullable

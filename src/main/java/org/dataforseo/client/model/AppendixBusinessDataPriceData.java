@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class AppendixBusinessDataPriceData {
   public static final String SERIALIZED_NAME_BUSINESS_LISTINGS = "business_listings";
   @SerializedName(SERIALIZED_NAME_BUSINESS_LISTINGS)
@@ -91,6 +91,10 @@ public class AppendixBusinessDataPriceData {
   public static final String SERIALIZED_NAME_YELP = "yelp";
   @SerializedName(SERIALIZED_NAME_YELP)
   private AppendixTrBusinessDataPriceDataInfo yelp;
+
+  public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
+  @SerializedName(SERIALIZED_NAME_TASKS_READY)
+  private AppendixTaskKeywordsDataPriceDataInfo tasksReady;
 
   public AppendixBusinessDataPriceData() {
   }
@@ -266,6 +270,25 @@ public class AppendixBusinessDataPriceData {
   }
 
 
+  public AppendixBusinessDataPriceData tasksReady(AppendixTaskKeywordsDataPriceDataInfo tasksReady) {
+    this.tasksReady = tasksReady;
+    return this;
+  }
+
+   /**
+   * Get tasksReady
+   * @return tasksReady
+  **/
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getTasksReady() {
+    return tasksReady;
+  }
+
+  public void setTasksReady(AppendixTaskKeywordsDataPriceDataInfo tasksReady) {
+    this.tasksReady = tasksReady;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -284,12 +307,13 @@ public class AppendixBusinessDataPriceData {
         Objects.equals(this.locations, appendixBusinessDataPriceData.locations) &&
         Objects.equals(this.tripadvisor, appendixBusinessDataPriceData.tripadvisor) &&
         Objects.equals(this.trustpilot, appendixBusinessDataPriceData.trustpilot) &&
-        Objects.equals(this.yelp, appendixBusinessDataPriceData.yelp);
+        Objects.equals(this.yelp, appendixBusinessDataPriceData.yelp) &&
+        Objects.equals(this.tasksReady, appendixBusinessDataPriceData.tasksReady);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(businessListings, errors, socialMedia, google, languages, locations, tripadvisor, trustpilot, yelp);
+    return Objects.hash(businessListings, errors, socialMedia, google, languages, locations, tripadvisor, trustpilot, yelp, tasksReady);
   }
 
   @Override
@@ -305,6 +329,7 @@ public class AppendixBusinessDataPriceData {
     sb.append("    tripadvisor: ").append(toIndentedString(tripadvisor)).append("\n");
     sb.append("    trustpilot: ").append(toIndentedString(trustpilot)).append("\n");
     sb.append("    yelp: ").append(toIndentedString(yelp)).append("\n");
+    sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -336,6 +361,7 @@ public class AppendixBusinessDataPriceData {
     openapiFields.add("tripadvisor");
     openapiFields.add("trustpilot");
     openapiFields.add("yelp");
+    openapiFields.add("tasks_ready");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -397,6 +423,10 @@ public class AppendixBusinessDataPriceData {
       // validate the optional field `yelp`
       if (jsonObj.get("yelp") != null && !jsonObj.get("yelp").isJsonNull()) {
         AppendixTrBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("yelp"));
+      }
+      // validate the optional field `tasks_ready`
+      if (jsonObj.get("tasks_ready") != null && !jsonObj.get("tasks_ready").isJsonNull()) {
+        AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("tasks_ready"));
       }
   }
 

@@ -22,7 +22,10 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import org.dataforseo.client.model.AboutThisResultElement;
 import org.dataforseo.client.model.AdLinkElement;
 import org.dataforseo.client.model.BacklinksInfo;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
@@ -58,7 +61,7 @@ import org.dataforseo.client.JSON;
 /**
  * OrganicDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -146,7 +149,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
-  private Object aboutThisResult;
+  private Map<String, AboutThisResultElement> aboutThisResult;
 
   public static final String SERIALIZED_NAME_MAIN_DOMAIN = "main_domain";
   @SerializedName(SERIALIZED_NAME_MAIN_DOMAIN)
@@ -599,8 +602,16 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem aboutThisResult(Object aboutThisResult) {
+  public OrganicDataforseoLabsSerpElementItem aboutThisResult(Map<String, AboutThisResultElement> aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
+    return this;
+  }
+
+  public OrganicDataforseoLabsSerpElementItem putAboutThisResultItem(String key, AboutThisResultElement aboutThisResultItem) {
+    if (this.aboutThisResult == null) {
+      this.aboutThisResult = new HashMap<>();
+    }
+    this.aboutThisResult.put(key, aboutThisResultItem);
     return this;
   }
 
@@ -609,11 +620,11 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
    * @return aboutThisResult
   **/
   @javax.annotation.Nullable
-  public Object getAboutThisResult() {
+  public Map<String, AboutThisResultElement> getAboutThisResult() {
     return aboutThisResult;
   }
 
-  public void setAboutThisResult(Object aboutThisResult) {
+  public void setAboutThisResult(Map<String, AboutThisResultElement> aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }
 

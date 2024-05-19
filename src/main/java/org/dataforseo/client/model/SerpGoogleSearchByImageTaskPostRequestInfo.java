@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleSearchByImageTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class SerpGoogleSearchByImageTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_IMAGE_URL = "image_url";
   @SerializedName(SERIALIZED_NAME_IMAGE_URL)
@@ -437,7 +437,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo {
   }
 
    /**
-   * postback_url datatype required field if you specify postback_url corresponds to the datatype that will be sent to your server possible values: advanced
+   * postback_url datatype required field if you specify postback_url corresponds to the datatype that will be sent to your server possible values: advanced, html
    * @return postbackData
   **/
   @javax.annotation.Nullable

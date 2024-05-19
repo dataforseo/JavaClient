@@ -15,6 +15,7 @@
 |**languages** | **Double** |  |  [optional] |
 |**locations** | **Double** |  |  [optional] |
 |**categories** | **Double** |  |  [optional] |
+|**tasksReady** | **Double** |  |  [optional] |
 
 
 

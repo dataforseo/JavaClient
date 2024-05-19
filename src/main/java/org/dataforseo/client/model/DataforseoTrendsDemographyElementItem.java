@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.BaseDataforseoTrendsItem;
 import org.dataforseo.client.model.Demography;
+import org.dataforseo.client.model.DemographyComparisonInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoTrendsDemographyElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class DataforseoTrendsDemographyElementItem extends BaseDataforseoTrendsItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -70,7 +71,7 @@ public class DataforseoTrendsDemographyElementItem extends BaseDataforseoTrendsI
 
   public static final String SERIALIZED_NAME_DEMOGRAPHY_COMPARISON = "demography_comparison";
   @SerializedName(SERIALIZED_NAME_DEMOGRAPHY_COMPARISON)
-  private Object demographyComparison;
+  private DemographyComparisonInfo demographyComparison;
 
   public DataforseoTrendsDemographyElementItem() {
     this.type = this.getClass().getSimpleName();
@@ -141,21 +142,21 @@ public class DataforseoTrendsDemographyElementItem extends BaseDataforseoTrendsI
   }
 
 
-  public DataforseoTrendsDemographyElementItem demographyComparison(Object demographyComparison) {
+  public DataforseoTrendsDemographyElementItem demographyComparison(DemographyComparisonInfo demographyComparison) {
     this.demographyComparison = demographyComparison;
     return this;
   }
 
    /**
-   * comparison of demographic data on keyword popularity for the specified parameters conains keyword popularity data by age and gender if you specified a single keyword, the value will be null
+   * Get demographyComparison
    * @return demographyComparison
   **/
   @javax.annotation.Nullable
-  public Object getDemographyComparison() {
+  public DemographyComparisonInfo getDemographyComparison() {
     return demographyComparison;
   }
 
-  public void setDemographyComparison(Object demographyComparison) {
+  public void setDemographyComparison(DemographyComparisonInfo demographyComparison) {
     this.demographyComparison = demographyComparison;
   }
 

@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataTripadvisorSearchTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -59,6 +59,10 @@ public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_SE = "se";
   @SerializedName(SERIALIZED_NAME_SE)
   private String se;
+
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
 
   public static final String SERIALIZED_NAME_DATE_POSTED = "date_posted";
   @SerializedName(SERIALIZED_NAME_DATE_POSTED)
@@ -110,6 +114,25 @@ public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
 
   public void setSe(String se) {
     this.se = se;
+  }
+
+
+  public BusinessDataTripadvisorSearchTasksReadyResultInfo seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+   /**
+   * Get seType
+   * @return seType
+  **/
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
   }
 
 
@@ -182,6 +205,7 @@ public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
     BusinessDataTripadvisorSearchTasksReadyResultInfo businessDataTripadvisorSearchTasksReadyResultInfo = (BusinessDataTripadvisorSearchTasksReadyResultInfo) o;
     return Objects.equals(this.id, businessDataTripadvisorSearchTasksReadyResultInfo.id) &&
         Objects.equals(this.se, businessDataTripadvisorSearchTasksReadyResultInfo.se) &&
+        Objects.equals(this.seType, businessDataTripadvisorSearchTasksReadyResultInfo.seType) &&
         Objects.equals(this.datePosted, businessDataTripadvisorSearchTasksReadyResultInfo.datePosted) &&
         Objects.equals(this.tag, businessDataTripadvisorSearchTasksReadyResultInfo.tag) &&
         Objects.equals(this.endpoint, businessDataTripadvisorSearchTasksReadyResultInfo.endpoint);
@@ -193,7 +217,7 @@ public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, se, datePosted, tag, endpoint);
+    return Objects.hash(id, se, seType, datePosted, tag, endpoint);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -209,6 +233,7 @@ public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
     sb.append("class BusinessDataTripadvisorSearchTasksReadyResultInfo {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    se: ").append(toIndentedString(se)).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    endpoint: ").append(toIndentedString(endpoint)).append("\n");
@@ -236,6 +261,7 @@ public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("id");
     openapiFields.add("se");
+    openapiFields.add("se_type");
     openapiFields.add("date_posted");
     openapiFields.add("tag");
     openapiFields.add("endpoint");
@@ -270,6 +296,9 @@ public class BusinessDataTripadvisorSearchTasksReadyResultInfo {
       }
       if ((jsonObj.get("se") != null && !jsonObj.get("se").isJsonNull()) && !jsonObj.get("se").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `se` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se").toString()));
+      }
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
       }
       if ((jsonObj.get("date_posted") != null && !jsonObj.get("date_posted").isJsonNull()) && !jsonObj.get("date_posted").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `date_posted` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date_posted").toString()));

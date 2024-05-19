@@ -114,4 +114,12 @@ public class AppendixBusinessDataLimitsRatesDataInfoTest {
         // TODO: test businessListings
     }
 
+    /**
+     * Test the property 'tasksReady'
+     */
+    @Test
+    public void tasksReadyTest() {
+        // TODO: test tasksReady
+    }
+
 }

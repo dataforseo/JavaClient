@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import org.dataforseo.client.model.KnowledgeGraphListElement;
+import org.dataforseo.client.model.LinkElement;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -82,7 +83,7 @@ public class KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem extends Bas
 
   public static final String SERIALIZED_NAME_LINK = "link";
   @SerializedName(SERIALIZED_NAME_LINK)
-  private Object link;
+  private LinkElement link;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -206,21 +207,21 @@ public class KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem extends Bas
   }
 
 
-  public KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem link(Object link) {
+  public KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem link(LinkElement link) {
     this.link = link;
     return this;
   }
 
    /**
-   * link of the element
+   * Get link
    * @return link
   **/
   @javax.annotation.Nullable
-  public Object getLink() {
+  public LinkElement getLink() {
     return link;
   }
 
-  public void setLink(Object link) {
+  public void setLink(LinkElement link) {
     this.link = link;
   }
 

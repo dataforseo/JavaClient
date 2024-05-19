@@ -104,4 +104,12 @@ public class AppendixAppDataPriceDataTest {
         // TODO: test locations
     }
 
+    /**
+     * Test the property 'tasksReady'
+     */
+    @Test
+    public void tasksReadyTest() {
+        // TODO: test tasksReady
+    }
+
 }

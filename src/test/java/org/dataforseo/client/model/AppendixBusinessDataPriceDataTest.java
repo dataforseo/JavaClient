@@ -114,4 +114,12 @@ public class AppendixBusinessDataPriceDataTest {
         // TODO: test yelp
     }
 
+    /**
+     * Test the property 'tasksReady'
+     */
+    @Test
+    public void tasksReadyTest() {
+        // TODO: test tasksReady
+    }
+
 }

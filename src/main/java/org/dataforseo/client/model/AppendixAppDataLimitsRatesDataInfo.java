@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixAppDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class AppendixAppDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_APP_INFO = "app_info";
   @SerializedName(SERIALIZED_NAME_APP_INFO)
@@ -84,6 +84,10 @@ public class AppendixAppDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
   private Double categories;
+
+  public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
+  @SerializedName(SERIALIZED_NAME_TASKS_READY)
+  private Double tasksReady;
 
   public AppendixAppDataLimitsRatesDataInfo() {
   }
@@ -240,6 +244,25 @@ public class AppendixAppDataLimitsRatesDataInfo {
   }
 
 
+  public AppendixAppDataLimitsRatesDataInfo tasksReady(Double tasksReady) {
+    this.tasksReady = tasksReady;
+    return this;
+  }
+
+   /**
+   * Get tasksReady
+   * @return tasksReady
+  **/
+  @javax.annotation.Nullable
+  public Double getTasksReady() {
+    return tasksReady;
+  }
+
+  public void setTasksReady(Double tasksReady) {
+    this.tasksReady = tasksReady;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -257,7 +280,8 @@ public class AppendixAppDataLimitsRatesDataInfo {
         Objects.equals(this.errors, appendixAppDataLimitsRatesDataInfo.errors) &&
         Objects.equals(this.languages, appendixAppDataLimitsRatesDataInfo.languages) &&
         Objects.equals(this.locations, appendixAppDataLimitsRatesDataInfo.locations) &&
-        Objects.equals(this.categories, appendixAppDataLimitsRatesDataInfo.categories);
+        Objects.equals(this.categories, appendixAppDataLimitsRatesDataInfo.categories) &&
+        Objects.equals(this.tasksReady, appendixAppDataLimitsRatesDataInfo.tasksReady);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -266,7 +290,7 @@ public class AppendixAppDataLimitsRatesDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories);
+    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, tasksReady);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -288,6 +312,7 @@ public class AppendixAppDataLimitsRatesDataInfo {
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
+    sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -318,6 +343,7 @@ public class AppendixAppDataLimitsRatesDataInfo {
     openapiFields.add("languages");
     openapiFields.add("locations");
     openapiFields.add("categories");
+    openapiFields.add("tasks_ready");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

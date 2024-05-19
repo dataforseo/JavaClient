@@ -13,6 +13,7 @@
 |**languages** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
 |**reviews** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**tasksReady** | **Double** |  |  [optional] |
 
 
 

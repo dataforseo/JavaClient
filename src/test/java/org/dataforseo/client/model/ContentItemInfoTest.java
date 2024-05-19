@@ -19,7 +19,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import org.dataforseo.client.model.ContentUrlInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -52,6 +55,14 @@ public class ContentItemInfoTest {
     @Test
     public void urlTest() {
         // TODO: test url
+    }
+
+    /**
+     * Test the property 'urls'
+     */
+    @Test
+    public void urlsTest() {
+        // TODO: test urls
     }
 
 }

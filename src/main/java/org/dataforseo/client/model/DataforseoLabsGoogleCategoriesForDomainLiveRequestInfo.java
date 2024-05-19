@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -260,7 +260,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in example: [\&quot;metrics.organic.pos_1,\&quot;&gt;\&quot;,0] [[\&quot;metrics.organic.count\&quot;,\&quot;&gt;&#x3D;\&quot;,100], \&quot;and\&quot;, [\&quot;metrics.organic.impressions_etv\&quot;,\&quot;in\&quot;,[10,100]]] [[[\&quot;metrics.organic.count\&quot;,\&quot;&gt;&#x3D;\&quot;,100],\&quot;and\&quot;,[\&quot;metrics.organic.pos_1\&quot;,\&quot;&gt;\&quot;,0]], \&quot;or\&quot;, [\&quot;metrics.organic.impressions_etv\&quot;,\&quot;in\&quot;,[10,100]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in example: [\&quot;metrics.organic.pos_1,\&quot;&gt;\&quot;,0] [[\&quot;metrics.organic.count\&quot;,\&quot;&gt;&#x3D;\&quot;,100], \&quot;and\&quot;, [\&quot;metrics.organic.impressions_etv\&quot;,\&quot;in\&quot;,[10,100]]] [[[\&quot;metrics.organic.count\&quot;,\&quot;&gt;&#x3D;\&quot;,100],\&quot;and\&quot;,[\&quot;metrics.organic.pos_1\&quot;,\&quot;&gt;\&quot;,0]], \&quot;or\&quot;, [\&quot;metrics.organic.impressions_etv\&quot;,\&quot;in\&quot;,[10,100]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
    * @return filters
   **/
   @javax.annotation.Nullable

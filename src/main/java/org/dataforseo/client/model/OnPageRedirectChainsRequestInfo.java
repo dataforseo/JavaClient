@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageRedirectChainsRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class OnPageRedirectChainsRequestInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -171,7 +171,7 @@ public class OnPageRedirectChainsRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can use only one filtering parameter with this endpoint the following filtering parameter is supported: is_redirect_loop the following operators are supported: regex, &#x3D;, &lt;&gt; examples: [\&quot;is_redirect_loop\&quot;,\&quot;&#x3D;\&quot;,\&quot;true\&quot;] [\&quot;is_redirect_loop\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;false\&quot;]
+   * array of results filtering parameters optional field you can use only one filtering parameter with this endpoint the following filtering parameter is supported: is_redirect_loop the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt; examples: [\&quot;is_redirect_loop\&quot;,\&quot;&#x3D;\&quot;,\&quot;true\&quot;] [\&quot;is_redirect_loop\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;false\&quot;]
    * @return filters
   **/
   @javax.annotation.Nullable

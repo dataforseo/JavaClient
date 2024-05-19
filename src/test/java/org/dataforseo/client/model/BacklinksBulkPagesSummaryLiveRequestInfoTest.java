@@ -49,14 +49,6 @@ public class BacklinksBulkPagesSummaryLiveRequestInfoTest {
     }
 
     /**
-     * Test the property 'limit'
-     */
-    @Test
-    public void limitTest() {
-        // TODO: test limit
-    }
-
-    /**
      * Test the property 'offset'
      */
     @Test

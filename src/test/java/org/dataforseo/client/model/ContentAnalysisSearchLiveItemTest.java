@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.AnalysisContentInfo;
+import org.dataforseo.client.model.RatingInfo;
 import org.dataforseo.client.model.SocialMetricsInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;

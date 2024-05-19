@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksBacklinksLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class BacklinksBacklinksLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -232,7 +232,7 @@ public class BacklinksBacklinksLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;rank\&quot;,\&quot;&gt;\&quot;,\&quot;80\&quot;] [[\&quot;page_from_rank\&quot;,\&quot;&gt;\&quot;,\&quot;55\&quot;], \&quot;and\&quot;, [\&quot;dofollow\&quot;,\&quot;&#x3D;\&quot;,true]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;text_pre\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;]]] The full list of possible filters is available here.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike, regex, not_regex you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;rank\&quot;,\&quot;&gt;\&quot;,\&quot;80\&quot;] [[\&quot;page_from_rank\&quot;,\&quot;&gt;\&quot;,\&quot;55\&quot;], \&quot;and\&quot;, [\&quot;dofollow\&quot;,\&quot;&#x3D;\&quot;,true]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;text_pre\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;]]] The full list of possible filters is available here.
    * @return filters
   **/
   @javax.annotation.Nullable

@@ -20,7 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import org.dataforseo.client.model.ContentUrlInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -50,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * ContentItemInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class ContentItemInfo {
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
@@ -59,6 +62,10 @@ public class ContentItemInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
+
+  public static final String SERIALIZED_NAME_URLS = "urls";
+  @SerializedName(SERIALIZED_NAME_URLS)
+  private List<ContentUrlInfo> urls;
 
   public ContentItemInfo() {
   }
@@ -101,6 +108,33 @@ public class ContentItemInfo {
   }
 
 
+  public ContentItemInfo urls(List<ContentUrlInfo> urls) {
+    this.urls = urls;
+    return this;
+  }
+
+  public ContentItemInfo addUrlsItem(ContentUrlInfo urlsItem) {
+    if (this.urls == null) {
+      this.urls = new ArrayList<>();
+    }
+    this.urls.add(urlsItem);
+    return this;
+  }
+
+   /**
+   * contains other URLs and anchors found in the content element
+   * @return urls
+  **/
+  @javax.annotation.Nullable
+  public List<ContentUrlInfo> getUrls() {
+    return urls;
+  }
+
+  public void setUrls(List<ContentUrlInfo> urls) {
+    this.urls = urls;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -112,7 +146,8 @@ public class ContentItemInfo {
     }
     ContentItemInfo contentItemInfo = (ContentItemInfo) o;
     return Objects.equals(this.text, contentItemInfo.text) &&
-        Objects.equals(this.url, contentItemInfo.url);
+        Objects.equals(this.url, contentItemInfo.url) &&
+        Objects.equals(this.urls, contentItemInfo.urls);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -121,7 +156,7 @@ public class ContentItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(text, url);
+    return Objects.hash(text, url, urls);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -137,6 +172,7 @@ public class ContentItemInfo {
     sb.append("class ContentItemInfo {\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    urls: ").append(toIndentedString(urls)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -161,6 +197,7 @@ public class ContentItemInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("text");
     openapiFields.add("url");
+    openapiFields.add("urls");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -192,6 +229,20 @@ public class ContentItemInfo {
       }
       if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if (jsonObj.get("urls") != null && !jsonObj.get("urls").isJsonNull()) {
+        JsonArray jsonArrayurls = jsonObj.getAsJsonArray("urls");
+        if (jsonArrayurls != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("urls").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `urls` to be an array in the JSON string but got `%s`", jsonObj.get("urls").toString()));
+          }
+
+          // validate the optional field `urls` (array)
+          for (int i = 0; i < jsonArrayurls.size(); i++) {
+            ContentUrlInfo.validateJsonElement(jsonArrayurls.get(i));
+          };
+        }
       }
   }
 

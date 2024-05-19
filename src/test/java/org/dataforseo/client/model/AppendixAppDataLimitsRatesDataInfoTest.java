@@ -103,4 +103,12 @@ public class AppendixAppDataLimitsRatesDataInfoTest {
         // TODO: test categories
     }
 
+    /**
+     * Test the property 'tasksReady'
+     */
+    @Test
+    public void tasksReadyTest() {
+        // TODO: test tasksReady
+    }
+
 }

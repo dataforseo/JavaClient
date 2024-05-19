@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.Demography;
-import org.dataforseo.client.model.DemographyComparison;
+import org.dataforseo.client.model.DemographyComparisonInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoTrendsDemographyInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class DataforseoTrendsDemographyInfo {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -74,7 +74,7 @@ public class DataforseoTrendsDemographyInfo {
 
   public static final String SERIALIZED_NAME_DEMOGRAPHY_COMPARISON = "demography_comparison";
   @SerializedName(SERIALIZED_NAME_DEMOGRAPHY_COMPARISON)
-  private DemographyComparison demographyComparison;
+  private DemographyComparisonInfo demographyComparison;
 
   public DataforseoTrendsDemographyInfo() {
   }
@@ -163,7 +163,7 @@ public class DataforseoTrendsDemographyInfo {
   }
 
 
-  public DataforseoTrendsDemographyInfo demographyComparison(DemographyComparison demographyComparison) {
+  public DataforseoTrendsDemographyInfo demographyComparison(DemographyComparisonInfo demographyComparison) {
     this.demographyComparison = demographyComparison;
     return this;
   }
@@ -173,11 +173,11 @@ public class DataforseoTrendsDemographyInfo {
    * @return demographyComparison
   **/
   @javax.annotation.Nullable
-  public DemographyComparison getDemographyComparison() {
+  public DemographyComparisonInfo getDemographyComparison() {
     return demographyComparison;
   }
 
-  public void setDemographyComparison(DemographyComparison demographyComparison) {
+  public void setDemographyComparison(DemographyComparisonInfo demographyComparison) {
     this.demographyComparison = demographyComparison;
   }
 
@@ -290,7 +290,7 @@ public class DataforseoTrendsDemographyInfo {
       }
       // validate the optional field `demography_comparison`
       if (jsonObj.get("demography_comparison") != null && !jsonObj.get("demography_comparison").isJsonNull()) {
-        DemographyComparison.validateJsonElement(jsonObj.get("demography_comparison"));
+        DemographyComparisonInfo.validateJsonElement(jsonObj.get("demography_comparison"));
       }
   }
 

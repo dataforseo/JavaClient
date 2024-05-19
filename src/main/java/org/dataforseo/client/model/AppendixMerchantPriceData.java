@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixMerchantPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class AppendixMerchantPriceData {
   public static final String SERIALIZED_NAME_GOOGLE = "google";
   @SerializedName(SERIALIZED_NAME_GOOGLE)
@@ -78,6 +78,10 @@ public class AppendixMerchantPriceData {
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
   private AppendixProductGoogleMerchantPriceDataInfo reviews;
+
+  public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
+  @SerializedName(SERIALIZED_NAME_TASKS_READY)
+  private AppendixTaskKeywordsDataPriceDataInfo tasksReady;
 
   public AppendixMerchantPriceData() {
   }
@@ -196,6 +200,25 @@ public class AppendixMerchantPriceData {
   }
 
 
+  public AppendixMerchantPriceData tasksReady(AppendixTaskKeywordsDataPriceDataInfo tasksReady) {
+    this.tasksReady = tasksReady;
+    return this;
+  }
+
+   /**
+   * Get tasksReady
+   * @return tasksReady
+  **/
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getTasksReady() {
+    return tasksReady;
+  }
+
+  public void setTasksReady(AppendixTaskKeywordsDataPriceDataInfo tasksReady) {
+    this.tasksReady = tasksReady;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -211,12 +234,13 @@ public class AppendixMerchantPriceData {
         Objects.equals(this.errors, appendixMerchantPriceData.errors) &&
         Objects.equals(this.languages, appendixMerchantPriceData.languages) &&
         Objects.equals(this.locations, appendixMerchantPriceData.locations) &&
-        Objects.equals(this.reviews, appendixMerchantPriceData.reviews);
+        Objects.equals(this.reviews, appendixMerchantPriceData.reviews) &&
+        Objects.equals(this.tasksReady, appendixMerchantPriceData.tasksReady);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(google, amazon, errors, languages, locations, reviews);
+    return Objects.hash(google, amazon, errors, languages, locations, reviews, tasksReady);
   }
 
   @Override
@@ -229,6 +253,7 @@ public class AppendixMerchantPriceData {
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    reviews: ").append(toIndentedString(reviews)).append("\n");
+    sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -257,6 +282,7 @@ public class AppendixMerchantPriceData {
     openapiFields.add("languages");
     openapiFields.add("locations");
     openapiFields.add("reviews");
+    openapiFields.add("tasks_ready");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -306,6 +332,10 @@ public class AppendixMerchantPriceData {
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
         AppendixProductGoogleMerchantPriceDataInfo.validateJsonElement(jsonObj.get("reviews"));
+      }
+      // validate the optional field `tasks_ready`
+      if (jsonObj.get("tasks_ready") != null && !jsonObj.get("tasks_ready").isJsonNull()) {
+        AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("tasks_ready"));
       }
   }
 

@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageResourcesRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class OnPageResourcesRequestInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -179,7 +179,7 @@ public class OnPageResourcesRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;resource_type\&quot;,\&quot;&#x3D;\&quot;,\&quot;stylesheet\&quot;] [[\&quot;resource_type\&quot;,\&quot;&#x3D;\&quot;,\&quot;image\&quot;], \&quot;and\&quot;,[\&quot;checks.is_https\&quot;,\&quot;&#x3D;\&quot;,false]] [[\&quot;fetch_timing.duration_time\&quot;,\&quot;&gt;\&quot;,1],\&quot;and\&quot;,[[\&quot;total_transfer_size\&quot;,\&quot;&gt;\&quot;,100],\&quot;or\&quot;,[\&quot;checks.high_loading_time\&quot;,\&quot;&#x3D;\&quot;,true]]] The full list of possible filters is available by this link.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;resource_type\&quot;,\&quot;&#x3D;\&quot;,\&quot;stylesheet\&quot;] [[\&quot;resource_type\&quot;,\&quot;&#x3D;\&quot;,\&quot;image\&quot;], \&quot;and\&quot;,[\&quot;checks.is_https\&quot;,\&quot;&#x3D;\&quot;,false]] [[\&quot;fetch_timing.duration_time\&quot;,\&quot;&gt;\&quot;,1],\&quot;and\&quot;,[[\&quot;total_transfer_size\&quot;,\&quot;&gt;\&quot;,100],\&quot;or\&quot;,[\&quot;checks.high_loading_time\&quot;,\&quot;&#x3D;\&quot;,true]]] The full list of possible filters is available by this link.
    * @return filters
   **/
   @javax.annotation.Nullable
@@ -206,7 +206,7 @@ public class OnPageResourcesRequestInfo {
   }
 
    /**
-   * filter the resources by relevant pages optional field you can use this field to obtain resources from pages matching to the defined parameters you can apply the same filters here as available for the pages endpoint you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;checks.no_image_title\&quot;,\&quot;&#x3D;\&quot;,true]
+   * filter the resources by relevant pages optional field you can use this field to obtain resources from pages matching to the defined parameters you can apply the same filters here as available for the pages endpoint you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;checks.no_image_title\&quot;,\&quot;&#x3D;\&quot;,true]
    * @return relevantPagesFilters
   **/
   @javax.annotation.Nullable

@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.dataforseo.client.model.GoogleBusinessAnswerElement;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -50,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * ItemsWithoutAnswers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class ItemsWithoutAnswers {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -102,7 +103,7 @@ public class ItemsWithoutAnswers {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private Object items;
+  private GoogleBusinessAnswerElement items;
 
   public ItemsWithoutAnswers() {
   }
@@ -335,21 +336,21 @@ public class ItemsWithoutAnswers {
   }
 
 
-  public ItemsWithoutAnswers items(Object items) {
+  public ItemsWithoutAnswers items(GoogleBusinessAnswerElement items) {
     this.items = items;
     return this;
   }
 
    /**
-   * array of items items within google_business_question_item
+   * Get items
    * @return items
   **/
   @javax.annotation.Nullable
-  public Object getItems() {
+  public GoogleBusinessAnswerElement getItems() {
     return items;
   }
 
-  public void setItems(Object items) {
+  public void setItems(GoogleBusinessAnswerElement items) {
     this.items = items;
   }
 
@@ -502,6 +503,10 @@ public class ItemsWithoutAnswers {
       }
       if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
+      }
+      // validate the optional field `items`
+      if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
+        GoogleBusinessAnswerElement.validateJsonElement(jsonObj.get("items"));
       }
   }
 

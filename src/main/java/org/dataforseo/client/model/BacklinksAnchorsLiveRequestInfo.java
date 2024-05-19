@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksAnchorsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class BacklinksAnchorsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -214,7 +214,7 @@ public class BacklinksAnchorsLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;referring_links_types.anchors\&quot;,\&quot;&gt;\&quot;,\&quot;1\&quot;] [[\&quot;broken_pages\&quot;,\&quot;&gt;\&quot;,\&quot;2\&quot;], \&quot;and\&quot;, [\&quot;backlinks\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;referring_domains\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]]] The full list of possible filters is available here.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;referring_links_types.anchors\&quot;,\&quot;&gt;\&quot;,\&quot;1\&quot;] [[\&quot;broken_pages\&quot;,\&quot;&gt;\&quot;,\&quot;2\&quot;], \&quot;and\&quot;, [\&quot;backlinks\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;referring_domains\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]]] The full list of possible filters is available here.
    * @return filters
   **/
   @javax.annotation.Nullable

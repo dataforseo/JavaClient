@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixAppDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class AppendixAppDataPriceData {
   public static final String SERIALIZED_NAME_APP_INFO = "app_info";
   @SerializedName(SERIALIZED_NAME_APP_INFO)
@@ -85,6 +85,10 @@ public class AppendixAppDataPriceData {
   public static final String SERIALIZED_NAME_LOCATIONS = "locations";
   @SerializedName(SERIALIZED_NAME_LOCATIONS)
   private AppendixTaskKeywordsDataPriceDataInfo locations;
+
+  public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
+  @SerializedName(SERIALIZED_NAME_TASKS_READY)
+  private AppendixTaskKeywordsDataPriceDataInfo tasksReady;
 
   public AppendixAppDataPriceData() {
   }
@@ -241,6 +245,25 @@ public class AppendixAppDataPriceData {
   }
 
 
+  public AppendixAppDataPriceData tasksReady(AppendixTaskKeywordsDataPriceDataInfo tasksReady) {
+    this.tasksReady = tasksReady;
+    return this;
+  }
+
+   /**
+   * Get tasksReady
+   * @return tasksReady
+  **/
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getTasksReady() {
+    return tasksReady;
+  }
+
+  public void setTasksReady(AppendixTaskKeywordsDataPriceDataInfo tasksReady) {
+    this.tasksReady = tasksReady;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -258,12 +281,13 @@ public class AppendixAppDataPriceData {
         Objects.equals(this.categories, appendixAppDataPriceData.categories) &&
         Objects.equals(this.errors, appendixAppDataPriceData.errors) &&
         Objects.equals(this.languages, appendixAppDataPriceData.languages) &&
-        Objects.equals(this.locations, appendixAppDataPriceData.locations);
+        Objects.equals(this.locations, appendixAppDataPriceData.locations) &&
+        Objects.equals(this.tasksReady, appendixAppDataPriceData.tasksReady);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(appInfo, appList, appReviews, appSearches, categories, errors, languages, locations);
+    return Objects.hash(appInfo, appList, appReviews, appSearches, categories, errors, languages, locations, tasksReady);
   }
 
   @Override
@@ -278,6 +302,7 @@ public class AppendixAppDataPriceData {
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
+    sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -308,6 +333,7 @@ public class AppendixAppDataPriceData {
     openapiFields.add("errors");
     openapiFields.add("languages");
     openapiFields.add("locations");
+    openapiFields.add("tasks_ready");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -365,6 +391,10 @@ public class AppendixAppDataPriceData {
       // validate the optional field `locations`
       if (jsonObj.get("locations") != null && !jsonObj.get("locations").isJsonNull()) {
         AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("locations"));
+      }
+      // validate the optional field `tasks_ready`
+      if (jsonObj.get("tasks_ready") != null && !jsonObj.get("tasks_ready").isJsonNull()) {
+        AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("tasks_ready"));
       }
   }
 

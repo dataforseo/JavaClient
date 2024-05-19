@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.AnalysisContentInfo;
+import org.dataforseo.client.model.RatingInfo;
 import org.dataforseo.client.model.SocialMetricsInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -54,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * ContentAnalysisSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class ContentAnalysisSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -110,7 +111,7 @@ public class ContentAnalysisSearchLiveItem {
 
   public static final String SERIALIZED_NAME_RATINGS = "ratings";
   @SerializedName(SERIALIZED_NAME_RATINGS)
-  private Object ratings;
+  private List<RatingInfo> ratings;
 
   public static final String SERIALIZED_NAME_SOCIAL_METRICS = "social_metrics";
   @SerializedName(SERIALIZED_NAME_SOCIAL_METRICS)
@@ -386,8 +387,16 @@ public class ContentAnalysisSearchLiveItem {
   }
 
 
-  public ContentAnalysisSearchLiveItem ratings(Object ratings) {
+  public ContentAnalysisSearchLiveItem ratings(List<RatingInfo> ratings) {
     this.ratings = ratings;
+    return this;
+  }
+
+  public ContentAnalysisSearchLiveItem addRatingsItem(RatingInfo ratingsItem) {
+    if (this.ratings == null) {
+      this.ratings = new ArrayList<>();
+    }
+    this.ratings.add(ratingsItem);
     return this;
   }
 
@@ -396,11 +405,11 @@ public class ContentAnalysisSearchLiveItem {
    * @return ratings
   **/
   @javax.annotation.Nullable
-  public Object getRatings() {
+  public List<RatingInfo> getRatings() {
     return ratings;
   }
 
-  public void setRatings(Object ratings) {
+  public void setRatings(List<RatingInfo> ratings) {
     this.ratings = ratings;
   }
 
@@ -616,6 +625,20 @@ public class ContentAnalysisSearchLiveItem {
       // ensure the optional json data is an array if present
       if (jsonObj.get("page_types") != null && !jsonObj.get("page_types").isJsonNull() && !jsonObj.get("page_types").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `page_types` to be an array in the JSON string but got `%s`", jsonObj.get("page_types").toString()));
+      }
+      if (jsonObj.get("ratings") != null && !jsonObj.get("ratings").isJsonNull()) {
+        JsonArray jsonArrayratings = jsonObj.getAsJsonArray("ratings");
+        if (jsonArrayratings != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("ratings").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `ratings` to be an array in the JSON string but got `%s`", jsonObj.get("ratings").toString()));
+          }
+
+          // validate the optional field `ratings` (array)
+          for (int i = 0; i < jsonArrayratings.size(); i++) {
+            RatingInfo.validateJsonElement(jsonArrayratings.get(i));
+          };
+        }
       }
       if (jsonObj.get("social_metrics") != null && !jsonObj.get("social_metrics").isJsonNull()) {
         JsonArray jsonArraysocialMetrics = jsonObj.getAsJsonArray("social_metrics");

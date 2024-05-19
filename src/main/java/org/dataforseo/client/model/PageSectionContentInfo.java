@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.ContentItemInfo;
+import org.dataforseo.client.model.TableContent;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * PageSectionContentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class PageSectionContentInfo {
   public static final String SERIALIZED_NAME_PRIMARY_CONTENT = "primary_content";
   @SerializedName(SERIALIZED_NAME_PRIMARY_CONTENT)
@@ -62,6 +63,10 @@ public class PageSectionContentInfo {
   public static final String SERIALIZED_NAME_SECONDARY_CONTENT = "secondary_content";
   @SerializedName(SERIALIZED_NAME_SECONDARY_CONTENT)
   private List<ContentItemInfo> secondaryContent;
+
+  public static final String SERIALIZED_NAME_TABLE_CONTENT = "table_content";
+  @SerializedName(SERIALIZED_NAME_TABLE_CONTENT)
+  private List<TableContent> tableContent;
 
   public PageSectionContentInfo() {
   }
@@ -120,6 +125,33 @@ public class PageSectionContentInfo {
   }
 
 
+  public PageSectionContentInfo tableContent(List<TableContent> tableContent) {
+    this.tableContent = tableContent;
+    return this;
+  }
+
+  public PageSectionContentInfo addTableContentItem(TableContent tableContentItem) {
+    if (this.tableContent == null) {
+      this.tableContent = new ArrayList<>();
+    }
+    this.tableContent.add(tableContentItem);
+    return this;
+  }
+
+   /**
+   * content of the table on the page
+   * @return tableContent
+  **/
+  @javax.annotation.Nullable
+  public List<TableContent> getTableContent() {
+    return tableContent;
+  }
+
+  public void setTableContent(List<TableContent> tableContent) {
+    this.tableContent = tableContent;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -131,7 +163,8 @@ public class PageSectionContentInfo {
     }
     PageSectionContentInfo pageSectionContentInfo = (PageSectionContentInfo) o;
     return Objects.equals(this.primaryContent, pageSectionContentInfo.primaryContent) &&
-        Objects.equals(this.secondaryContent, pageSectionContentInfo.secondaryContent);
+        Objects.equals(this.secondaryContent, pageSectionContentInfo.secondaryContent) &&
+        Objects.equals(this.tableContent, pageSectionContentInfo.tableContent);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -140,7 +173,7 @@ public class PageSectionContentInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(primaryContent, secondaryContent);
+    return Objects.hash(primaryContent, secondaryContent, tableContent);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -156,6 +189,7 @@ public class PageSectionContentInfo {
     sb.append("class PageSectionContentInfo {\n");
     sb.append("    primaryContent: ").append(toIndentedString(primaryContent)).append("\n");
     sb.append("    secondaryContent: ").append(toIndentedString(secondaryContent)).append("\n");
+    sb.append("    tableContent: ").append(toIndentedString(tableContent)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -180,6 +214,7 @@ public class PageSectionContentInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("primary_content");
     openapiFields.add("secondary_content");
+    openapiFields.add("table_content");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -231,6 +266,20 @@ public class PageSectionContentInfo {
           // validate the optional field `secondary_content` (array)
           for (int i = 0; i < jsonArraysecondaryContent.size(); i++) {
             ContentItemInfo.validateJsonElement(jsonArraysecondaryContent.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("table_content") != null && !jsonObj.get("table_content").isJsonNull()) {
+        JsonArray jsonArraytableContent = jsonObj.getAsJsonArray("table_content");
+        if (jsonArraytableContent != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("table_content").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `table_content` to be an array in the JSON string but got `%s`", jsonObj.get("table_content").toString()));
+          }
+
+          // validate the optional field `table_content` (array)
+          for (int i = 0; i < jsonArraytableContent.size(); i++) {
+            TableContent.validateJsonElement(jsonArraytableContent.get(i));
           };
         }
       }

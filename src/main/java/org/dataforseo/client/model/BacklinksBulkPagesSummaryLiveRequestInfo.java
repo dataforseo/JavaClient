@@ -52,15 +52,11 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksBulkPagesSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
 public class BacklinksBulkPagesSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGETS = "targets";
   @SerializedName(SERIALIZED_NAME_TARGETS)
   private List<String> targets;
-
-  public static final String SERIALIZED_NAME_LIMIT = "limit";
-  @SerializedName(SERIALIZED_NAME_LIMIT)
-  private Integer limit;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
@@ -129,25 +125,6 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
 
   public void setTargets(List<String> targets) {
     this.targets = targets;
-  }
-
-
-  public BacklinksBulkPagesSummaryLiveRequestInfo limit(Integer limit) {
-    this.limit = limit;
-    return this;
-  }
-
-   /**
-   * the maximum number of returned pages optional field default value: 100 maximum value: 1000
-   * @return limit
-  **/
-  @javax.annotation.Nullable
-  public Integer getLimit() {
-    return limit;
-  }
-
-  public void setLimit(Integer limit) {
-    this.limit = limit;
   }
 
 
@@ -222,7 +199,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;referring_links_types.anchors\&quot;,\&quot;&gt;\&quot;,\&quot;1\&quot;] [[\&quot;broken_pages\&quot;,\&quot;&gt;\&quot;,\&quot;2\&quot;], \&quot;and\&quot;, [\&quot;backlinks\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;referring_domains\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]]] The full list of possible filters is available here.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;referring_links_types.anchors\&quot;,\&quot;&gt;\&quot;,\&quot;1\&quot;] [[\&quot;broken_pages\&quot;,\&quot;&gt;\&quot;,\&quot;2\&quot;], \&quot;and\&quot;, [\&quot;backlinks\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;referring_domains\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]]] The full list of possible filters is available here.
    * @return filters
   **/
   @javax.annotation.Nullable
@@ -376,7 +353,6 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
     }
     BacklinksBulkPagesSummaryLiveRequestInfo backlinksBulkPagesSummaryLiveRequestInfo = (BacklinksBulkPagesSummaryLiveRequestInfo) o;
     return Objects.equals(this.targets, backlinksBulkPagesSummaryLiveRequestInfo.targets) &&
-        Objects.equals(this.limit, backlinksBulkPagesSummaryLiveRequestInfo.limit) &&
         Objects.equals(this.offset, backlinksBulkPagesSummaryLiveRequestInfo.offset) &&
         Objects.equals(this.internalListLimit, backlinksBulkPagesSummaryLiveRequestInfo.internalListLimit) &&
         Objects.equals(this.backlinksStatusType, backlinksBulkPagesSummaryLiveRequestInfo.backlinksStatusType) &&
@@ -395,7 +371,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(targets, limit, offset, internalListLimit, backlinksStatusType, filters, orderBy, backlinksFilters, includeSubdomains, includeIndirectLinks, excludeInternalBacklinks, tag);
+    return Objects.hash(targets, offset, internalListLimit, backlinksStatusType, filters, orderBy, backlinksFilters, includeSubdomains, includeIndirectLinks, excludeInternalBacklinks, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -410,7 +386,6 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class BacklinksBulkPagesSummaryLiveRequestInfo {\n");
     sb.append("    targets: ").append(toIndentedString(targets)).append("\n");
-    sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    internalListLimit: ").append(toIndentedString(internalListLimit)).append("\n");
     sb.append("    backlinksStatusType: ").append(toIndentedString(backlinksStatusType)).append("\n");
@@ -444,7 +419,6 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("targets");
-    openapiFields.add("limit");
     openapiFields.add("offset");
     openapiFields.add("internal_list_limit");
     openapiFields.add("backlinks_status_type");

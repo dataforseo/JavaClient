@@ -19,7 +19,7 @@
 |**originalQuestionText** | **String** | original text of the question |  [optional] |
 |**timeAgo** | **String** | estimated time when the question was posted |  [optional] |
 |**timestamp** | **String** | exact time when the question was posted |  [optional] |
-|**items** | **Object** | array of items items within google_business_question_item |  [optional] |
+|**items** | [**GoogleBusinessAnswerElement**](GoogleBusinessAnswerElement.md) |  |  [optional] |
 
 
 
