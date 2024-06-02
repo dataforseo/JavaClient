@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessAddressLocationInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
 public class BusinessAddressLocationInfo {
   public static final String SERIALIZED_NAME_ADDRESS_LINES = "address_lines";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINES)

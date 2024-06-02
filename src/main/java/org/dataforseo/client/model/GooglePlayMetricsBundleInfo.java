@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * GooglePlayMetricsBundleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
 public class GooglePlayMetricsBundleInfo {
   public static final String SERIALIZED_NAME_GOOGLE_PLAY_SEARCH_ORGANIC = "google_play_search_organic";
   @SerializedName(SERIALIZED_NAME_GOOGLE_PLAY_SEARCH_ORGANIC)

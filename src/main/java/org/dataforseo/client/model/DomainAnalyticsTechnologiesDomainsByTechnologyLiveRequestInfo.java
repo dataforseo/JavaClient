@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-19T23:45:33.338179400+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo {
   public static final String SERIALIZED_NAME_TECHNOLOGY_PATHS = "technology_paths";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY_PATHS)
