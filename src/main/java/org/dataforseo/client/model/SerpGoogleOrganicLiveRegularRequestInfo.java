@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleOrganicLiveRegularRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class SerpGoogleOrganicLiveRegularRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -99,6 +99,10 @@ public class SerpGoogleOrganicLiveRegularRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
   private String target;
+
+  public static final String SERIALIZED_NAME_GROUP_ORGANIC_RESULTS = "group_organic_results";
+  @SerializedName(SERIALIZED_NAME_GROUP_ORGANIC_RESULTS)
+  private Boolean groupOrganicResults;
 
   public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
   @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
@@ -343,6 +347,25 @@ public class SerpGoogleOrganicLiveRegularRequestInfo {
   }
 
 
+  public SerpGoogleOrganicLiveRegularRequestInfo groupOrganicResults(Boolean groupOrganicResults) {
+    this.groupOrganicResults = groupOrganicResults;
+    return this;
+  }
+
+   /**
+   * display related results optional field if set to true, the related_result element in the response will be provided as a snippet of its parent organic result; if set to false, the related_result element will be provided as a separate organic result; default value: true
+   * @return groupOrganicResults
+  **/
+  @javax.annotation.Nullable
+  public Boolean getGroupOrganicResults() {
+    return groupOrganicResults;
+  }
+
+  public void setGroupOrganicResults(Boolean groupOrganicResults) {
+    this.groupOrganicResults = groupOrganicResults;
+  }
+
+
   public SerpGoogleOrganicLiveRegularRequestInfo maxCrawlPages(Integer maxCrawlPages) {
     this.maxCrawlPages = maxCrawlPages;
     return this;
@@ -422,6 +445,7 @@ public class SerpGoogleOrganicLiveRegularRequestInfo {
         Objects.equals(this.seDomain, serpGoogleOrganicLiveRegularRequestInfo.seDomain) &&
         Objects.equals(this.depth, serpGoogleOrganicLiveRegularRequestInfo.depth) &&
         Objects.equals(this.target, serpGoogleOrganicLiveRegularRequestInfo.target) &&
+        Objects.equals(this.groupOrganicResults, serpGoogleOrganicLiveRegularRequestInfo.groupOrganicResults) &&
         Objects.equals(this.maxCrawlPages, serpGoogleOrganicLiveRegularRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpGoogleOrganicLiveRegularRequestInfo.searchParam) &&
         Objects.equals(this.tag, serpGoogleOrganicLiveRegularRequestInfo.tag);
@@ -433,7 +457,7 @@ public class SerpGoogleOrganicLiveRegularRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, target, maxCrawlPages, searchParam, tag);
+    return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, target, groupOrganicResults, maxCrawlPages, searchParam, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -459,6 +483,7 @@ public class SerpGoogleOrganicLiveRegularRequestInfo {
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
+    sb.append("    groupOrganicResults: ").append(toIndentedString(groupOrganicResults)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -496,6 +521,7 @@ public class SerpGoogleOrganicLiveRegularRequestInfo {
     openapiFields.add("se_domain");
     openapiFields.add("depth");
     openapiFields.add("target");
+    openapiFields.add("group_organic_results");
     openapiFields.add("max_crawl_pages");
     openapiFields.add("search_param");
     openapiFields.add("tag");

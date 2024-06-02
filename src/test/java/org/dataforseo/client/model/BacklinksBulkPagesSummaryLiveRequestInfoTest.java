@@ -49,75 +49,11 @@ public class BacklinksBulkPagesSummaryLiveRequestInfoTest {
     }
 
     /**
-     * Test the property 'offset'
-     */
-    @Test
-    public void offsetTest() {
-        // TODO: test offset
-    }
-
-    /**
-     * Test the property 'internalListLimit'
-     */
-    @Test
-    public void internalListLimitTest() {
-        // TODO: test internalListLimit
-    }
-
-    /**
-     * Test the property 'backlinksStatusType'
-     */
-    @Test
-    public void backlinksStatusTypeTest() {
-        // TODO: test backlinksStatusType
-    }
-
-    /**
-     * Test the property 'filters'
-     */
-    @Test
-    public void filtersTest() {
-        // TODO: test filters
-    }
-
-    /**
-     * Test the property 'orderBy'
-     */
-    @Test
-    public void orderByTest() {
-        // TODO: test orderBy
-    }
-
-    /**
-     * Test the property 'backlinksFilters'
-     */
-    @Test
-    public void backlinksFiltersTest() {
-        // TODO: test backlinksFilters
-    }
-
-    /**
      * Test the property 'includeSubdomains'
      */
     @Test
     public void includeSubdomainsTest() {
         // TODO: test includeSubdomains
-    }
-
-    /**
-     * Test the property 'includeIndirectLinks'
-     */
-    @Test
-    public void includeIndirectLinksTest() {
-        // TODO: test includeIndirectLinks
-    }
-
-    /**
-     * Test the property 'excludeInternalBacklinks'
-     */
-    @Test
-    public void excludeInternalBacklinksTest() {
-        // TODO: test excludeInternalBacklinks
     }
 
     /**

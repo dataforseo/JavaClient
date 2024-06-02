@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * AutocompleteSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AutocompleteSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -78,6 +78,10 @@ public class AutocompleteSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_SEARCH_QUERY_URL = "search_query_url";
   @SerializedName(SERIALIZED_NAME_SEARCH_QUERY_URL)
   private String searchQueryUrl;
+
+  public static final String SERIALIZED_NAME_THUMBNAIL_URL = "thumbnail_url";
+  @SerializedName(SERIALIZED_NAME_THUMBNAIL_URL)
+  private String thumbnailUrl;
 
   public static final String SERIALIZED_NAME_HIGHLIGHTED = "highlighted";
   @SerializedName(SERIALIZED_NAME_HIGHLIGHTED)
@@ -201,6 +205,25 @@ public class AutocompleteSerpElementItem extends BaseSerpElementItem {
   }
 
 
+  public AutocompleteSerpElementItem thumbnailUrl(String thumbnailUrl) {
+    this.thumbnailUrl = thumbnailUrl;
+    return this;
+  }
+
+   /**
+   * url of the thumbnail image url of the thumbnail image of the google autocomplete suggestion Note: only available for the following client: gws-wiz gws-wiz-serp
+   * @return thumbnailUrl
+  **/
+  @javax.annotation.Nullable
+  public String getThumbnailUrl() {
+    return thumbnailUrl;
+  }
+
+  public void setThumbnailUrl(String thumbnailUrl) {
+    this.thumbnailUrl = thumbnailUrl;
+  }
+
+
   public AutocompleteSerpElementItem highlighted(List<String> highlighted) {
     this.highlighted = highlighted;
     return this;
@@ -244,6 +267,7 @@ public class AutocompleteSerpElementItem extends BaseSerpElementItem {
         Objects.equals(this.suggestion, autocompleteSerpElementItem.suggestion) &&
         Objects.equals(this.suggestionType, autocompleteSerpElementItem.suggestionType) &&
         Objects.equals(this.searchQueryUrl, autocompleteSerpElementItem.searchQueryUrl) &&
+        Objects.equals(this.thumbnailUrl, autocompleteSerpElementItem.thumbnailUrl) &&
         Objects.equals(this.highlighted, autocompleteSerpElementItem.highlighted) &&
         super.equals(o);
   }
@@ -254,7 +278,7 @@ public class AutocompleteSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, relevance, suggestion, suggestionType, searchQueryUrl, highlighted, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, relevance, suggestion, suggestionType, searchQueryUrl, thumbnailUrl, highlighted, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -275,6 +299,7 @@ public class AutocompleteSerpElementItem extends BaseSerpElementItem {
     sb.append("    suggestion: ").append(toIndentedString(suggestion)).append("\n");
     sb.append("    suggestionType: ").append(toIndentedString(suggestionType)).append("\n");
     sb.append("    searchQueryUrl: ").append(toIndentedString(searchQueryUrl)).append("\n");
+    sb.append("    thumbnailUrl: ").append(toIndentedString(thumbnailUrl)).append("\n");
     sb.append("    highlighted: ").append(toIndentedString(highlighted)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -305,6 +330,7 @@ public class AutocompleteSerpElementItem extends BaseSerpElementItem {
     openapiFields.add("suggestion");
     openapiFields.add("suggestion_type");
     openapiFields.add("search_query_url");
+    openapiFields.add("thumbnail_url");
     openapiFields.add("highlighted");
 
     // a set of required properties/fields (JSON key names)

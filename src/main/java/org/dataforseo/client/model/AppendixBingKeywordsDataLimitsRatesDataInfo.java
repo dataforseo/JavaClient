@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,32 +50,32 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBingKeywordsDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixBingKeywordsDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_KEYWORD_PERFORMANCE = "keyword_performance";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PERFORMANCE)
-  private AppendixFunctionInfo keywordPerformance;
+  private AppendixInfo keywordPerformance;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
-  private AppendixFunctionInfo searchVolumeHistory;
+  private AppendixInfo searchVolumeHistory;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private AppendixFunctionInfo searchVolume;
+  private AppendixInfo searchVolume;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_SITE = "keywords_for_site";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_SITE)
-  private AppendixFunctionInfo keywordsForSite;
+  private AppendixInfo keywordsForSite;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
-  private AppendixFunctionInfo keywordsForKeywords;
+  private AppendixInfo keywordsForKeywords;
 
   public AppendixBingKeywordsDataLimitsRatesDataInfo() {
   }
 
-  public AppendixBingKeywordsDataLimitsRatesDataInfo keywordPerformance(AppendixFunctionInfo keywordPerformance) {
+  public AppendixBingKeywordsDataLimitsRatesDataInfo keywordPerformance(AppendixInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
     return this;
   }
@@ -85,16 +85,16 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
    * @return keywordPerformance
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordPerformance() {
+  public AppendixInfo getKeywordPerformance() {
     return keywordPerformance;
   }
 
-  public void setKeywordPerformance(AppendixFunctionInfo keywordPerformance) {
+  public void setKeywordPerformance(AppendixInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
   }
 
 
-  public AppendixBingKeywordsDataLimitsRatesDataInfo searchVolumeHistory(AppendixFunctionInfo searchVolumeHistory) {
+  public AppendixBingKeywordsDataLimitsRatesDataInfo searchVolumeHistory(AppendixInfo searchVolumeHistory) {
     this.searchVolumeHistory = searchVolumeHistory;
     return this;
   }
@@ -104,16 +104,16 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
    * @return searchVolumeHistory
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSearchVolumeHistory() {
+  public AppendixInfo getSearchVolumeHistory() {
     return searchVolumeHistory;
   }
 
-  public void setSearchVolumeHistory(AppendixFunctionInfo searchVolumeHistory) {
+  public void setSearchVolumeHistory(AppendixInfo searchVolumeHistory) {
     this.searchVolumeHistory = searchVolumeHistory;
   }
 
 
-  public AppendixBingKeywordsDataLimitsRatesDataInfo searchVolume(AppendixFunctionInfo searchVolume) {
+  public AppendixBingKeywordsDataLimitsRatesDataInfo searchVolume(AppendixInfo searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -123,16 +123,16 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
    * @return searchVolume
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSearchVolume() {
+  public AppendixInfo getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(AppendixFunctionInfo searchVolume) {
+  public void setSearchVolume(AppendixInfo searchVolume) {
     this.searchVolume = searchVolume;
   }
 
 
-  public AppendixBingKeywordsDataLimitsRatesDataInfo keywordsForSite(AppendixFunctionInfo keywordsForSite) {
+  public AppendixBingKeywordsDataLimitsRatesDataInfo keywordsForSite(AppendixInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
     return this;
   }
@@ -142,16 +142,16 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
    * @return keywordsForSite
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordsForSite() {
+  public AppendixInfo getKeywordsForSite() {
     return keywordsForSite;
   }
 
-  public void setKeywordsForSite(AppendixFunctionInfo keywordsForSite) {
+  public void setKeywordsForSite(AppendixInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
   }
 
 
-  public AppendixBingKeywordsDataLimitsRatesDataInfo keywordsForKeywords(AppendixFunctionInfo keywordsForKeywords) {
+  public AppendixBingKeywordsDataLimitsRatesDataInfo keywordsForKeywords(AppendixInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
     return this;
   }
@@ -161,11 +161,11 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
    * @return keywordsForKeywords
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordsForKeywords() {
+  public AppendixInfo getKeywordsForKeywords() {
     return keywordsForKeywords;
   }
 
-  public void setKeywordsForKeywords(AppendixFunctionInfo keywordsForKeywords) {
+  public void setKeywordsForKeywords(AppendixInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
   }
 
@@ -256,23 +256,23 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `keyword_performance`
       if (jsonObj.get("keyword_performance") != null && !jsonObj.get("keyword_performance").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keyword_performance"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keyword_performance"));
       }
       // validate the optional field `search_volume_history`
       if (jsonObj.get("search_volume_history") != null && !jsonObj.get("search_volume_history").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("search_volume_history"));
+        AppendixInfo.validateJsonElement(jsonObj.get("search_volume_history"));
       }
       // validate the optional field `search_volume`
       if (jsonObj.get("search_volume") != null && !jsonObj.get("search_volume").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("search_volume"));
+        AppendixInfo.validateJsonElement(jsonObj.get("search_volume"));
       }
       // validate the optional field `keywords_for_site`
       if (jsonObj.get("keywords_for_site") != null && !jsonObj.get("keywords_for_site").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
       }
       // validate the optional field `keywords_for_keywords`
       if (jsonObj.get("keywords_for_keywords") != null && !jsonObj.get("keywords_for_keywords").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
       }
   }
 

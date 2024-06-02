@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageContentParsingLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class OnPageContentParsingLiveRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -59,6 +59,10 @@ public class OnPageContentParsingLiveRequestInfo {
   public static final String SERIALIZED_NAME_CUSTOM_USER_AGENT = "custom_user_agent";
   @SerializedName(SERIALIZED_NAME_CUSTOM_USER_AGENT)
   private String customUserAgent;
+
+  public static final String SERIALIZED_NAME_CUSTOM_JS = "custom_js";
+  @SerializedName(SERIALIZED_NAME_CUSTOM_JS)
+  private String customJs;
 
   public static final String SERIALIZED_NAME_BROWSER_PRESET = "browser_preset";
   @SerializedName(SERIALIZED_NAME_BROWSER_PRESET)
@@ -138,6 +142,25 @@ public class OnPageContentParsingLiveRequestInfo {
 
   public void setCustomUserAgent(String customUserAgent) {
     this.customUserAgent = customUserAgent;
+  }
+
+
+  public OnPageContentParsingLiveRequestInfo customJs(String customJs) {
+    this.customJs = customJs;
+    return this;
+  }
+
+   /**
+   * custom javascript optional field Note that the execution time for the script you enter here should be 700 ms maximum, for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute: let meta &#x3D; { haveGoogleAnalytics: false, haveTagManager: false };\\r\\nfor (var i &#x3D; 0; i &lt; document.scripts.length; i++) {\\r\\n let src &#x3D; document.scripts[i].getAttribute(\\\&quot;src\\\&quot;);\\r\\n if (src !&#x3D; undefined) {\\r\\n if (src.indexOf(\\\&quot;analytics.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveGoogleAnalytics &#x3D; true;\\r\\n\\tif (src.indexOf(\\\&quot;gtm.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveTagManager &#x3D; true;\\r\\n  }\\r\\n}\\r\\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script: meta &#x3D; {}; meta.url &#x3D; document.URL; meta.test &#x3D; &#39;test&#39;; meta; as a response you will receive the following data: \&quot;custom_js_response\&quot;: { \&quot;url\&quot;: \&quot;https://dataforseo.com/\&quot;, \&quot;test\&quot;: \&quot;test\&quot; } Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * @return customJs
+  **/
+  @javax.annotation.Nullable
+  public String getCustomJs() {
+    return customJs;
+  }
+
+  public void setCustomJs(String customJs) {
+    this.customJs = customJs;
   }
 
 
@@ -343,6 +366,7 @@ public class OnPageContentParsingLiveRequestInfo {
     OnPageContentParsingLiveRequestInfo onPageContentParsingLiveRequestInfo = (OnPageContentParsingLiveRequestInfo) o;
     return Objects.equals(this.url, onPageContentParsingLiveRequestInfo.url) &&
         Objects.equals(this.customUserAgent, onPageContentParsingLiveRequestInfo.customUserAgent) &&
+        Objects.equals(this.customJs, onPageContentParsingLiveRequestInfo.customJs) &&
         Objects.equals(this.browserPreset, onPageContentParsingLiveRequestInfo.browserPreset) &&
         Objects.equals(this.browserScreenWidth, onPageContentParsingLiveRequestInfo.browserScreenWidth) &&
         Objects.equals(this.browserScreenHeight, onPageContentParsingLiveRequestInfo.browserScreenHeight) &&
@@ -361,7 +385,7 @@ public class OnPageContentParsingLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, disableCookiePopup, acceptLanguage, enableJavascript, enableBrowserRendering, enableXhr);
+    return Objects.hash(url, customUserAgent, customJs, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, disableCookiePopup, acceptLanguage, enableJavascript, enableBrowserRendering, enableXhr);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -377,6 +401,7 @@ public class OnPageContentParsingLiveRequestInfo {
     sb.append("class OnPageContentParsingLiveRequestInfo {\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    customUserAgent: ").append(toIndentedString(customUserAgent)).append("\n");
+    sb.append("    customJs: ").append(toIndentedString(customJs)).append("\n");
     sb.append("    browserPreset: ").append(toIndentedString(browserPreset)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
@@ -411,6 +436,7 @@ public class OnPageContentParsingLiveRequestInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("url");
     openapiFields.add("custom_user_agent");
+    openapiFields.add("custom_js");
     openapiFields.add("browser_preset");
     openapiFields.add("browser_screen_width");
     openapiFields.add("browser_screen_height");
@@ -452,6 +478,9 @@ public class OnPageContentParsingLiveRequestInfo {
       }
       if ((jsonObj.get("custom_user_agent") != null && !jsonObj.get("custom_user_agent").isJsonNull()) && !jsonObj.get("custom_user_agent").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `custom_user_agent` to be a primitive type in the JSON string but got `%s`", jsonObj.get("custom_user_agent").toString()));
+      }
+      if ((jsonObj.get("custom_js") != null && !jsonObj.get("custom_js").isJsonNull()) && !jsonObj.get("custom_js").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `custom_js` to be a primitive type in the JSON string but got `%s`", jsonObj.get("custom_js").toString()));
       }
       if ((jsonObj.get("browser_preset") != null && !jsonObj.get("browser_preset").isJsonNull()) && !jsonObj.get("browser_preset").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `browser_preset` to be a primitive type in the JSON string but got `%s`", jsonObj.get("browser_preset").toString()));

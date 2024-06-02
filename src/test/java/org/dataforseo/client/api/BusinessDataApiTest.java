@@ -86,17 +86,6 @@ import org.dataforseo.client.model.BusinessDataTrustpilotSearchTaskGetResponseIn
 import org.dataforseo.client.model.BusinessDataTrustpilotSearchTaskPostRequestInfo;
 import org.dataforseo.client.model.BusinessDataTrustpilotSearchTaskPostResponseInfo;
 import org.dataforseo.client.model.BusinessDataTrustpilotSearchTasksReadyResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpLanguagesResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpLocationsCountryResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpLocationsResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpReviewsTaskGetResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpReviewsTaskPostRequestInfo;
-import org.dataforseo.client.model.BusinessDataYelpReviewsTaskPostResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpReviewsTasksReadyResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpSearchTaskGetResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpSearchTaskPostRequestInfo;
-import org.dataforseo.client.model.BusinessDataYelpSearchTaskPostResponseInfo;
-import org.dataforseo.client.model.BusinessDataYelpSearchTasksReadyResponseInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -213,40 +202,6 @@ public class BusinessDataApiTest {
     public void businessDataTripadvisorLocationsCountryTest() throws ApiException {
         String country = null;
         BusinessDataTripadvisorLocationsCountryResponseInfo response = api.businessDataTripadvisorLocationsCountry(country);
-        // TODO: test validations
-    }
-
-    /**
-     * You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/languages/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void businessDataYelpLanguagesTest() throws ApiException {
-        BusinessDataYelpLanguagesResponseInfo response = api.businessDataYelpLanguages();
-        // TODO: test validations
-    }
-
-    /**
-     * You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void businessDataYelpLocationsTest() throws ApiException {
-        BusinessDataYelpLocationsResponseInfo response = api.businessDataYelpLocations();
-        // TODO: test validations
-    }
-
-    /**
-     * You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/locations/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void businessDataYelpLocationsCountryTest() throws ApiException {
-        String country = null;
-        BusinessDataYelpLocationsCountryResponseInfo response = api.businessDataYelpLocationsCountry(country);
         // TODO: test validations
     }
 
@@ -739,76 +694,6 @@ public class BusinessDataApiTest {
     @Test
     public void trustpilotSearchTasksReadyTest() throws ApiException {
         BusinessDataTrustpilotSearchTasksReadyResponseInfo response = api.trustpilotSearchTasksReady();
-        // TODO: test validations
-    }
-
-    /**
-     * This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_get/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void yelpReviewsTaskGetTest() throws ApiException {
-        String id = null;
-        BusinessDataYelpReviewsTaskGetResponseInfo response = api.yelpReviewsTaskGet(id);
-        // TODO: test validations
-    }
-
-    /**
-     * ‌‌ This endpoint provides reviews published on the Yelp platform. The results are specific to the selected alias and language (see the List of Languages) parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/reviews/task_post/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void yelpReviewsTaskPostTest() throws ApiException {
-        List<BusinessDataYelpReviewsTaskPostRequestInfo> businessDataYelpReviewsTaskPostRequestInfo = null;
-        BusinessDataYelpReviewsTaskPostResponseInfo response = api.yelpReviewsTaskPost(businessDataYelpReviewsTaskPostRequestInfo);
-        // TODO: test validations
-    }
-
-    /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/reviews/tasks_ready/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void yelpReviewsTasksReadyTest() throws ApiException {
-        BusinessDataYelpReviewsTasksReadyResponseInfo response = api.yelpReviewsTasksReady();
-        // TODO: test validations
-    }
-
-    /**
-     * This endpoint will provide you with data on businesses listed on the Yelp platform. The results obtained through this endpoint are specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/search/task_get/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void yelpSearchTaskGetTest() throws ApiException {
-        String id = null;
-        BusinessDataYelpSearchTaskGetResponseInfo response = api.yelpSearchTaskGet(id);
-        // TODO: test validations
-    }
-
-    /**
-     * ‌‌ By using this endpoint you can request data on businesses listed on the Yelp platform. The results will be specific to the location (see the List of Yelp Locations) and keyword parameters used in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/search/task_post/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void yelpSearchTaskPostTest() throws ApiException {
-        List<BusinessDataYelpSearchTaskPostRequestInfo> businessDataYelpSearchTaskPostRequestInfo = null;
-        BusinessDataYelpSearchTaskPostResponseInfo response = api.yelpSearchTaskPost(businessDataYelpSearchTaskPostRequestInfo);
-        // TODO: test validations
-    }
-
-    /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/yelp/search/tasks_ready/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void yelpSearchTasksReadyTest() throws ApiException {
-        BusinessDataYelpSearchTasksReadyResponseInfo response = api.yelpSearchTasksReady();
         // TODO: test validations
     }
 

@@ -98,6 +98,14 @@ public class AutocompleteSerpElementItemTest {
     }
 
     /**
+     * Test the property 'thumbnailUrl'
+     */
+    @Test
+    public void thumbnailUrlTest() {
+        // TODO: test thumbnailUrl
+    }
+
+    /**
      * Test the property 'highlighted'
      */
     @Test

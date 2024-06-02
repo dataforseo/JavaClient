@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksDomainPagesSummaryLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class BacklinksDomainPagesSummaryLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -193,7 +193,7 @@ public class BacklinksDomainPagesSummaryLiveItem {
   }
 
    /**
-   * page rank rank of the page on the target website rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
+   * page rank rank of the page rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
    * @return rank
   **/
   @javax.annotation.Nullable
@@ -345,7 +345,7 @@ public class BacklinksDomainPagesSummaryLiveItem {
   }
 
    /**
-   * number of domains pointing at least one nofollow link to the target
+   * number of domains pointing at least one nofollow link to the page
    * @return referringDomainsNofollow
   **/
   @javax.annotation.Nullable
@@ -383,7 +383,7 @@ public class BacklinksDomainPagesSummaryLiveItem {
   }
 
    /**
-   * number of main domains pointing at least one nofollow link to the target
+   * number of main domains pointing at least one nofollow link to the page
    * @return referringMainDomainsNofollow
   **/
   @javax.annotation.Nullable
@@ -621,7 +621,7 @@ public class BacklinksDomainPagesSummaryLiveItem {
   }
 
    /**
-   * number of referring pages pointing at least one nofollow link to the target
+   * number of referring pages pointing at least one nofollow link to the page
    * @return referringPagesNofollow
   **/
   @javax.annotation.Nullable

@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,15 +51,15 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBusinessListingsBusinessDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixBusinessListingsBusinessDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixFunctionInfo search;
+  private AppendixInfo search;
 
   public static final String SERIALIZED_NAME_CATEGORIES_AGGREGATION = "categories_aggregation";
   @SerializedName(SERIALIZED_NAME_CATEGORIES_AGGREGATION)
-  private AppendixFunctionInfo categoriesAggregation;
+  private AppendixInfo categoriesAggregation;
 
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
@@ -72,7 +72,7 @@ public class AppendixBusinessListingsBusinessDataLimitsRatesDataInfo {
   public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo() {
   }
 
-  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo search(AppendixFunctionInfo search) {
+  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo search(AppendixInfo search) {
     this.search = search;
     return this;
   }
@@ -82,16 +82,16 @@ public class AppendixBusinessListingsBusinessDataLimitsRatesDataInfo {
    * @return search
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSearch() {
+  public AppendixInfo getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixFunctionInfo search) {
+  public void setSearch(AppendixInfo search) {
     this.search = search;
   }
 
 
-  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo categoriesAggregation(AppendixFunctionInfo categoriesAggregation) {
+  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo categoriesAggregation(AppendixInfo categoriesAggregation) {
     this.categoriesAggregation = categoriesAggregation;
     return this;
   }
@@ -101,11 +101,11 @@ public class AppendixBusinessListingsBusinessDataLimitsRatesDataInfo {
    * @return categoriesAggregation
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getCategoriesAggregation() {
+  public AppendixInfo getCategoriesAggregation() {
     return categoriesAggregation;
   }
 
-  public void setCategoriesAggregation(AppendixFunctionInfo categoriesAggregation) {
+  public void setCategoriesAggregation(AppendixInfo categoriesAggregation) {
     this.categoriesAggregation = categoriesAggregation;
   }
 
@@ -242,11 +242,11 @@ public class AppendixBusinessListingsBusinessDataLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `search`
       if (jsonObj.get("search") != null && !jsonObj.get("search").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("search"));
+        AppendixInfo.validateJsonElement(jsonObj.get("search"));
       }
       // validate the optional field `categories_aggregation`
       if (jsonObj.get("categories_aggregation") != null && !jsonObj.get("categories_aggregation").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("categories_aggregation"));
+        AppendixInfo.validateJsonElement(jsonObj.get("categories_aggregation"));
       }
   }
 

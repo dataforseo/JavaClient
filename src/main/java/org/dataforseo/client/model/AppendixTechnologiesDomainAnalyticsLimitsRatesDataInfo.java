@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,15 +51,15 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_DOMAIN_TECHNOLOGIES = "domain_technologies";
   @SerializedName(SERIALIZED_NAME_DOMAIN_TECHNOLOGIES)
-  private AppendixFunctionInfo domainTechnologies;
+  private AppendixInfo domainTechnologies;
 
   public static final String SERIALIZED_NAME_DOMAINS_BY_TECHNOLOGY = "domains_by_technology";
   @SerializedName(SERIALIZED_NAME_DOMAINS_BY_TECHNOLOGY)
-  private AppendixFunctionInfo domainsByTechnology;
+  private AppendixInfo domainsByTechnology;
 
   public static final String SERIALIZED_NAME_LANGUAGES = "languages";
   @SerializedName(SERIALIZED_NAME_LANGUAGES)
@@ -75,24 +75,24 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
 
   public static final String SERIALIZED_NAME_AGGREGATION_TECHNOLOGIES = "aggregation_technologies";
   @SerializedName(SERIALIZED_NAME_AGGREGATION_TECHNOLOGIES)
-  private AppendixFunctionInfo aggregationTechnologies;
+  private AppendixInfo aggregationTechnologies;
 
   public static final String SERIALIZED_NAME_TECHNOLOGIES_SUMMARY = "technologies_summary";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGIES_SUMMARY)
-  private AppendixFunctionInfo technologiesSummary;
+  private AppendixInfo technologiesSummary;
 
   public static final String SERIALIZED_NAME_DOMAINS_BY_HTML_TERMS = "domains_by_html_terms";
   @SerializedName(SERIALIZED_NAME_DOMAINS_BY_HTML_TERMS)
-  private AppendixFunctionInfo domainsByHtmlTerms;
+  private AppendixInfo domainsByHtmlTerms;
 
   public static final String SERIALIZED_NAME_TECHNOLOGY_STATS = "technology_stats";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY_STATS)
-  private AppendixFunctionInfo technologyStats;
+  private AppendixInfo technologyStats;
 
   public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo() {
   }
 
-  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo domainTechnologies(AppendixFunctionInfo domainTechnologies) {
+  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo domainTechnologies(AppendixInfo domainTechnologies) {
     this.domainTechnologies = domainTechnologies;
     return this;
   }
@@ -102,16 +102,16 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
    * @return domainTechnologies
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainTechnologies() {
+  public AppendixInfo getDomainTechnologies() {
     return domainTechnologies;
   }
 
-  public void setDomainTechnologies(AppendixFunctionInfo domainTechnologies) {
+  public void setDomainTechnologies(AppendixInfo domainTechnologies) {
     this.domainTechnologies = domainTechnologies;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo domainsByTechnology(AppendixFunctionInfo domainsByTechnology) {
+  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo domainsByTechnology(AppendixInfo domainsByTechnology) {
     this.domainsByTechnology = domainsByTechnology;
     return this;
   }
@@ -121,11 +121,11 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
    * @return domainsByTechnology
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainsByTechnology() {
+  public AppendixInfo getDomainsByTechnology() {
     return domainsByTechnology;
   }
 
-  public void setDomainsByTechnology(AppendixFunctionInfo domainsByTechnology) {
+  public void setDomainsByTechnology(AppendixInfo domainsByTechnology) {
     this.domainsByTechnology = domainsByTechnology;
   }
 
@@ -187,7 +187,7 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo aggregationTechnologies(AppendixFunctionInfo aggregationTechnologies) {
+  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo aggregationTechnologies(AppendixInfo aggregationTechnologies) {
     this.aggregationTechnologies = aggregationTechnologies;
     return this;
   }
@@ -197,16 +197,16 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
    * @return aggregationTechnologies
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getAggregationTechnologies() {
+  public AppendixInfo getAggregationTechnologies() {
     return aggregationTechnologies;
   }
 
-  public void setAggregationTechnologies(AppendixFunctionInfo aggregationTechnologies) {
+  public void setAggregationTechnologies(AppendixInfo aggregationTechnologies) {
     this.aggregationTechnologies = aggregationTechnologies;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo technologiesSummary(AppendixFunctionInfo technologiesSummary) {
+  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo technologiesSummary(AppendixInfo technologiesSummary) {
     this.technologiesSummary = technologiesSummary;
     return this;
   }
@@ -216,16 +216,16 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
    * @return technologiesSummary
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getTechnologiesSummary() {
+  public AppendixInfo getTechnologiesSummary() {
     return technologiesSummary;
   }
 
-  public void setTechnologiesSummary(AppendixFunctionInfo technologiesSummary) {
+  public void setTechnologiesSummary(AppendixInfo technologiesSummary) {
     this.technologiesSummary = technologiesSummary;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo domainsByHtmlTerms(AppendixFunctionInfo domainsByHtmlTerms) {
+  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo domainsByHtmlTerms(AppendixInfo domainsByHtmlTerms) {
     this.domainsByHtmlTerms = domainsByHtmlTerms;
     return this;
   }
@@ -235,16 +235,16 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
    * @return domainsByHtmlTerms
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainsByHtmlTerms() {
+  public AppendixInfo getDomainsByHtmlTerms() {
     return domainsByHtmlTerms;
   }
 
-  public void setDomainsByHtmlTerms(AppendixFunctionInfo domainsByHtmlTerms) {
+  public void setDomainsByHtmlTerms(AppendixInfo domainsByHtmlTerms) {
     this.domainsByHtmlTerms = domainsByHtmlTerms;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo technologyStats(AppendixFunctionInfo technologyStats) {
+  public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo technologyStats(AppendixInfo technologyStats) {
     this.technologyStats = technologyStats;
     return this;
   }
@@ -254,11 +254,11 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
    * @return technologyStats
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getTechnologyStats() {
+  public AppendixInfo getTechnologyStats() {
     return technologyStats;
   }
 
-  public void setTechnologyStats(AppendixFunctionInfo technologyStats) {
+  public void setTechnologyStats(AppendixInfo technologyStats) {
     this.technologyStats = technologyStats;
   }
 
@@ -372,27 +372,27 @@ public class AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `domain_technologies`
       if (jsonObj.get("domain_technologies") != null && !jsonObj.get("domain_technologies").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_technologies"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_technologies"));
       }
       // validate the optional field `domains_by_technology`
       if (jsonObj.get("domains_by_technology") != null && !jsonObj.get("domains_by_technology").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domains_by_technology"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domains_by_technology"));
       }
       // validate the optional field `aggregation_technologies`
       if (jsonObj.get("aggregation_technologies") != null && !jsonObj.get("aggregation_technologies").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("aggregation_technologies"));
+        AppendixInfo.validateJsonElement(jsonObj.get("aggregation_technologies"));
       }
       // validate the optional field `technologies_summary`
       if (jsonObj.get("technologies_summary") != null && !jsonObj.get("technologies_summary").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("technologies_summary"));
+        AppendixInfo.validateJsonElement(jsonObj.get("technologies_summary"));
       }
       // validate the optional field `domains_by_html_terms`
       if (jsonObj.get("domains_by_html_terms") != null && !jsonObj.get("domains_by_html_terms").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domains_by_html_terms"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domains_by_html_terms"));
       }
       // validate the optional field `technology_stats`
       if (jsonObj.get("technology_stats") != null && !jsonObj.get("technology_stats").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("technology_stats"));
+        AppendixInfo.validateJsonElement(jsonObj.get("technology_stats"));
       }
   }
 

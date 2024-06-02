@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,20 +50,20 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixNaverKeywordsDataDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixNaverKeywordsDataDataInfo {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_CATEGORY = "keywords_for_category";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_CATEGORY)
-  private AppendixFunctionInfo keywordsForCategory;
+  private AppendixInfo keywordsForCategory;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private AppendixFunctionInfo searchVolume;
+  private AppendixInfo searchVolume;
 
   public AppendixNaverKeywordsDataDataInfo() {
   }
 
-  public AppendixNaverKeywordsDataDataInfo keywordsForCategory(AppendixFunctionInfo keywordsForCategory) {
+  public AppendixNaverKeywordsDataDataInfo keywordsForCategory(AppendixInfo keywordsForCategory) {
     this.keywordsForCategory = keywordsForCategory;
     return this;
   }
@@ -73,16 +73,16 @@ public class AppendixNaverKeywordsDataDataInfo {
    * @return keywordsForCategory
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordsForCategory() {
+  public AppendixInfo getKeywordsForCategory() {
     return keywordsForCategory;
   }
 
-  public void setKeywordsForCategory(AppendixFunctionInfo keywordsForCategory) {
+  public void setKeywordsForCategory(AppendixInfo keywordsForCategory) {
     this.keywordsForCategory = keywordsForCategory;
   }
 
 
-  public AppendixNaverKeywordsDataDataInfo searchVolume(AppendixFunctionInfo searchVolume) {
+  public AppendixNaverKeywordsDataDataInfo searchVolume(AppendixInfo searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -92,11 +92,11 @@ public class AppendixNaverKeywordsDataDataInfo {
    * @return searchVolume
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSearchVolume() {
+  public AppendixInfo getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(AppendixFunctionInfo searchVolume) {
+  public void setSearchVolume(AppendixInfo searchVolume) {
     this.searchVolume = searchVolume;
   }
 
@@ -178,11 +178,11 @@ public class AppendixNaverKeywordsDataDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `keywords_for_category`
       if (jsonObj.get("keywords_for_category") != null && !jsonObj.get("keywords_for_category").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keywords_for_category"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keywords_for_category"));
       }
       // validate the optional field `search_volume`
       if (jsonObj.get("search_volume") != null && !jsonObj.get("search_volume").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("search_volume"));
+        AppendixInfo.validateJsonElement(jsonObj.get("search_volume"));
       }
   }
 

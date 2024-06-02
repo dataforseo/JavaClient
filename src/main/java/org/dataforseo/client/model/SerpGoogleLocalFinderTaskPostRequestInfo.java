@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleLocalFinderTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class SerpGoogleLocalFinderTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -201,7 +201,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo {
   }
 
    /**
-   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,zoom” format if “zoom” is not specified, 17z will be applied as a default value the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “zoom”: 4z the maximum value for “zoom”: 18z example: 52.6178549,-155.352142,20z
+   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,zoom” format if “zoom” is not specified, 17z will be applied as a default value the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “zoom”: 4z the maximum value for “zoom”: 18z example: 52.6178549,-155.352142,18z
    * @return locationCoordinate
   **/
   @javax.annotation.Nullable

@@ -124,6 +124,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**seznamOrganicTaskPost**](SerpApi.md#seznamOrganicTaskPost) | **POST** /v3/serp/seznam/organic/task_post |  |
 | [**seznamOrganicTasksFixed**](SerpApi.md#seznamOrganicTasksFixed) | **GET** /v3/serp/seznam/organic/tasks_fixed |  |
 | [**seznamOrganicTasksReady**](SerpApi.md#seznamOrganicTasksReady) | **GET** /v3/serp/seznam/organic/tasks_ready |  |
+| [**tasksReady**](SerpApi.md#tasksReady) | **GET** /v3/serp/tasks_ready |  |
 | [**yahooOrganicLiveAdvanced**](SerpApi.md#yahooOrganicLiveAdvanced) | **POST** /v3/serp/yahoo/organic/live/advanced |  |
 | [**yahooOrganicLiveHtml**](SerpApi.md#yahooOrganicLiveHtml) | **POST** /v3/serp/yahoo/organic/live/html |  |
 | [**yahooOrganicLiveRegular**](SerpApi.md#yahooOrganicLiveRegular) | **POST** /v3/serp/yahoo/organic/live/regular |  |
@@ -315,7 +316,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "c2f78c03-b64c-41e5-8892-655a448939cf"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "cf54a564-0fe6-46a5-8c0e-99b308e2a043"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBaiduOrganicTaskGetHtmlResponseInfo result = apiInstance.baiduOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -560,7 +561,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -783,7 +784,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "2d0805ff-5544-4121-93d6-1fa1d31e9e4c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "12eb75fe-e7b4-47ef-a196-000f4a8f9d2d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingLocalPackTaskGetHtmlResponseInfo result = apiInstance.bingLocalPackTaskGetHtml(id);
       System.out.println(result);
@@ -1028,7 +1029,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -1387,7 +1388,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "22678d33-57ea-4172-bf93-a4e3f8667424"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "a0ee8d68-51ce-4749-a4ec-3985e99ba88c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingOrganicTaskGetHtmlResponseInfo result = apiInstance.bingOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -1632,7 +1633,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -1964,7 +1965,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -2296,7 +2297,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -2628,7 +2629,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -2960,7 +2961,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -3251,7 +3252,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "634b0cb6-5c8d-46b2-8b98-b743b6a59bb0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "f224a930-7628-4676-a2bd-e8d551fa8c9f"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleImagesTaskGetHtmlResponseInfo result = apiInstance.googleImagesTaskGetHtml(id);
       System.out.println(result);
@@ -3428,7 +3429,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -3583,7 +3584,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "021378c1-6b2f-4362-9b7c-f6762adf1362"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "79816780-7dbe-47ac-9fa3-df2c402dfbae"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleJobsTaskGetHtmlResponseInfo result = apiInstance.googleJobsTaskGetHtml(id);
       System.out.println(result);
@@ -3760,7 +3761,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -4051,7 +4052,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "b627e76d-40f2-4bf4-93cd-c242480753ac"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "ef806c1a-c0d8-4af5-a51f-65b0239c2a92"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleLocalFinderTaskGetHtmlResponseInfo result = apiInstance.googleLocalFinderTaskGetHtml(id);
       System.out.println(result);
@@ -4228,7 +4229,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -4560,7 +4561,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -4851,7 +4852,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "2978faf5-e58f-472b-9817-b60abfbdc7a0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "c2c38888-cc97-4f4b-ba1e-a7e06e6971a8"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleNewsTaskGetHtmlResponseInfo result = apiInstance.googleNewsTaskGetHtml(id);
       System.out.println(result);
@@ -5028,7 +5029,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -5387,7 +5388,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "855780b2-ce7c-4b43-b47c-8c9a10a91e24"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "e82f1cec-cf41-443c-974e-75337487bd98"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleOrganicTaskGetHtmlResponseInfo result = apiInstance.googleOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -5632,7 +5633,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -6051,7 +6052,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "40ea9c0e-461a-4c76-8c74-35b08dd29144"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "1fdd1218-ee02-407e-87f0-5f2963853cdc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpNaverOrganicTaskGetHtmlResponseInfo result = apiInstance.naverOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -6296,7 +6297,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -7831,7 +7832,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "3ac9ece3-0305-4512-b547-0c12fef01c2e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "747503f4-166f-42f6-a5d1-80601cb2cd9c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpSeznamOrganicTaskGetHtmlResponseInfo result = apiInstance.seznamOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -8076,7 +8077,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -8119,6 +8120,70 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**SerpSeznamOrganicTasksReadyResponseInfo**](SerpSeznamOrganicTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="tasksReady"></a>
+# **tasksReady**
+> SerpTasksReadyResponseInfo tasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpTasksReadyResponseInfo result = apiInstance.tasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#tasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpTasksReadyResponseInfo**](SerpTasksReadyResponseInfo.md)
 
 ### Authorization
 
@@ -8435,7 +8500,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "395b6e82-39d1-4897-90f6-586a367eb8f1"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "9c2d51f5-e0a4-4981-abc3-1137211aac6d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpYahooOrganicTaskGetHtmlResponseInfo result = apiInstance.yahooOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -8680,7 +8745,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -9012,7 +9077,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -9344,7 +9409,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash&#39;
 
 ### Example
 ```java
@@ -9676,7 +9741,7 @@ This endpoint does not need any parameter.
 
 
 
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash&#39;
 
 ### Example
 ```java

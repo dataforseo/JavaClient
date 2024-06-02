@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixOnPageLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixOnPageLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_TASK_POST = "task_post";
   @SerializedName(SERIALIZED_NAME_TASK_POST)
@@ -115,7 +115,7 @@ public class AppendixOnPageLimitsRatesDataInfo {
 
   public static final String SERIALIZED_NAME_LIGHTHOUSE = "lighthouse";
   @SerializedName(SERIALIZED_NAME_LIGHTHOUSE)
-  private AppendixFunctionInfo lighthouse;
+  private AppendixInfo lighthouse;
 
   public static final String SERIALIZED_NAME_KEYWORD_DENSITY = "keyword_density";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DENSITY)
@@ -421,7 +421,7 @@ public class AppendixOnPageLimitsRatesDataInfo {
   }
 
 
-  public AppendixOnPageLimitsRatesDataInfo lighthouse(AppendixFunctionInfo lighthouse) {
+  public AppendixOnPageLimitsRatesDataInfo lighthouse(AppendixInfo lighthouse) {
     this.lighthouse = lighthouse;
     return this;
   }
@@ -431,11 +431,11 @@ public class AppendixOnPageLimitsRatesDataInfo {
    * @return lighthouse
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getLighthouse() {
+  public AppendixInfo getLighthouse() {
     return lighthouse;
   }
 
-  public void setLighthouse(AppendixFunctionInfo lighthouse) {
+  public void setLighthouse(AppendixInfo lighthouse) {
     this.lighthouse = lighthouse;
   }
 
@@ -658,7 +658,7 @@ public class AppendixOnPageLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `lighthouse`
       if (jsonObj.get("lighthouse") != null && !jsonObj.get("lighthouse").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("lighthouse"));
+        AppendixInfo.validateJsonElement(jsonObj.get("lighthouse"));
       }
   }
 

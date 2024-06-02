@@ -21,8 +21,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.dataforseo.client.model.AppendixGoogleBusinessDataPriceDataInfo;
 import org.dataforseo.client.model.AppendixHotelInfoGoogleBusinessDataPriceData;
-import org.dataforseo.client.model.AppendixsGoogleBusinessDataPriceDataInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixGoogleBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixGoogleBusinessDataPriceData {
   public static final String SERIALIZED_NAME_HOTEL_INFO = "hotel_info";
   @SerializedName(SERIALIZED_NAME_HOTEL_INFO)
@@ -59,23 +59,23 @@ public class AppendixGoogleBusinessDataPriceData {
 
   public static final String SERIALIZED_NAME_HOTEL_SEARCHES = "hotel_searches";
   @SerializedName(SERIALIZED_NAME_HOTEL_SEARCHES)
-  private AppendixsGoogleBusinessDataPriceDataInfo hotelSearches;
+  private AppendixGoogleBusinessDataPriceDataInfo hotelSearches;
 
   public static final String SERIALIZED_NAME_MY_BUSINESS_INFO = "my_business_info";
   @SerializedName(SERIALIZED_NAME_MY_BUSINESS_INFO)
-  private AppendixsGoogleBusinessDataPriceDataInfo myBusinessInfo;
+  private AppendixGoogleBusinessDataPriceDataInfo myBusinessInfo;
 
   public static final String SERIALIZED_NAME_MY_BUSINESS_UPDATES = "my_business_updates";
   @SerializedName(SERIALIZED_NAME_MY_BUSINESS_UPDATES)
-  private AppendixsGoogleBusinessDataPriceDataInfo myBusinessUpdates;
+  private AppendixGoogleBusinessDataPriceDataInfo myBusinessUpdates;
 
   public static final String SERIALIZED_NAME_QUESTIONS_AND_ANSWERS = "questions_and_answers";
   @SerializedName(SERIALIZED_NAME_QUESTIONS_AND_ANSWERS)
-  private AppendixsGoogleBusinessDataPriceDataInfo questionsAndAnswers;
+  private AppendixGoogleBusinessDataPriceDataInfo questionsAndAnswers;
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixsGoogleBusinessDataPriceDataInfo reviews;
+  private AppendixGoogleBusinessDataPriceDataInfo reviews;
 
   public AppendixGoogleBusinessDataPriceData() {
   }
@@ -99,7 +99,7 @@ public class AppendixGoogleBusinessDataPriceData {
   }
 
 
-  public AppendixGoogleBusinessDataPriceData hotelSearches(AppendixsGoogleBusinessDataPriceDataInfo hotelSearches) {
+  public AppendixGoogleBusinessDataPriceData hotelSearches(AppendixGoogleBusinessDataPriceDataInfo hotelSearches) {
     this.hotelSearches = hotelSearches;
     return this;
   }
@@ -109,16 +109,16 @@ public class AppendixGoogleBusinessDataPriceData {
    * @return hotelSearches
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getHotelSearches() {
+  public AppendixGoogleBusinessDataPriceDataInfo getHotelSearches() {
     return hotelSearches;
   }
 
-  public void setHotelSearches(AppendixsGoogleBusinessDataPriceDataInfo hotelSearches) {
+  public void setHotelSearches(AppendixGoogleBusinessDataPriceDataInfo hotelSearches) {
     this.hotelSearches = hotelSearches;
   }
 
 
-  public AppendixGoogleBusinessDataPriceData myBusinessInfo(AppendixsGoogleBusinessDataPriceDataInfo myBusinessInfo) {
+  public AppendixGoogleBusinessDataPriceData myBusinessInfo(AppendixGoogleBusinessDataPriceDataInfo myBusinessInfo) {
     this.myBusinessInfo = myBusinessInfo;
     return this;
   }
@@ -128,16 +128,16 @@ public class AppendixGoogleBusinessDataPriceData {
    * @return myBusinessInfo
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getMyBusinessInfo() {
+  public AppendixGoogleBusinessDataPriceDataInfo getMyBusinessInfo() {
     return myBusinessInfo;
   }
 
-  public void setMyBusinessInfo(AppendixsGoogleBusinessDataPriceDataInfo myBusinessInfo) {
+  public void setMyBusinessInfo(AppendixGoogleBusinessDataPriceDataInfo myBusinessInfo) {
     this.myBusinessInfo = myBusinessInfo;
   }
 
 
-  public AppendixGoogleBusinessDataPriceData myBusinessUpdates(AppendixsGoogleBusinessDataPriceDataInfo myBusinessUpdates) {
+  public AppendixGoogleBusinessDataPriceData myBusinessUpdates(AppendixGoogleBusinessDataPriceDataInfo myBusinessUpdates) {
     this.myBusinessUpdates = myBusinessUpdates;
     return this;
   }
@@ -147,16 +147,16 @@ public class AppendixGoogleBusinessDataPriceData {
    * @return myBusinessUpdates
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getMyBusinessUpdates() {
+  public AppendixGoogleBusinessDataPriceDataInfo getMyBusinessUpdates() {
     return myBusinessUpdates;
   }
 
-  public void setMyBusinessUpdates(AppendixsGoogleBusinessDataPriceDataInfo myBusinessUpdates) {
+  public void setMyBusinessUpdates(AppendixGoogleBusinessDataPriceDataInfo myBusinessUpdates) {
     this.myBusinessUpdates = myBusinessUpdates;
   }
 
 
-  public AppendixGoogleBusinessDataPriceData questionsAndAnswers(AppendixsGoogleBusinessDataPriceDataInfo questionsAndAnswers) {
+  public AppendixGoogleBusinessDataPriceData questionsAndAnswers(AppendixGoogleBusinessDataPriceDataInfo questionsAndAnswers) {
     this.questionsAndAnswers = questionsAndAnswers;
     return this;
   }
@@ -166,16 +166,16 @@ public class AppendixGoogleBusinessDataPriceData {
    * @return questionsAndAnswers
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getQuestionsAndAnswers() {
+  public AppendixGoogleBusinessDataPriceDataInfo getQuestionsAndAnswers() {
     return questionsAndAnswers;
   }
 
-  public void setQuestionsAndAnswers(AppendixsGoogleBusinessDataPriceDataInfo questionsAndAnswers) {
+  public void setQuestionsAndAnswers(AppendixGoogleBusinessDataPriceDataInfo questionsAndAnswers) {
     this.questionsAndAnswers = questionsAndAnswers;
   }
 
 
-  public AppendixGoogleBusinessDataPriceData reviews(AppendixsGoogleBusinessDataPriceDataInfo reviews) {
+  public AppendixGoogleBusinessDataPriceData reviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -185,11 +185,11 @@ public class AppendixGoogleBusinessDataPriceData {
    * @return reviews
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getReviews() {
+  public AppendixGoogleBusinessDataPriceDataInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixsGoogleBusinessDataPriceDataInfo reviews) {
+  public void setReviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
     this.reviews = reviews;
   }
 
@@ -287,23 +287,23 @@ public class AppendixGoogleBusinessDataPriceData {
       }
       // validate the optional field `hotel_searches`
       if (jsonObj.get("hotel_searches") != null && !jsonObj.get("hotel_searches").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("hotel_searches"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("hotel_searches"));
       }
       // validate the optional field `my_business_info`
       if (jsonObj.get("my_business_info") != null && !jsonObj.get("my_business_info").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("my_business_info"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("my_business_info"));
       }
       // validate the optional field `my_business_updates`
       if (jsonObj.get("my_business_updates") != null && !jsonObj.get("my_business_updates").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("my_business_updates"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("my_business_updates"));
       }
       // validate the optional field `questions_and_answers`
       if (jsonObj.get("questions_and_answers") != null && !jsonObj.get("questions_and_answers").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("questions_and_answers"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("questions_and_answers"));
       }
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("reviews"));
       }
   }
 

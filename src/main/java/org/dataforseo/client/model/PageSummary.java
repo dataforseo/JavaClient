@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * PageSummary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class PageSummary {
   public static final String SERIALIZED_NAME_FIRST_SEEN = "first_seen";
   @SerializedName(SERIALIZED_NAME_FIRST_SEEN)
@@ -185,7 +185,7 @@ public class PageSummary {
   }
 
    /**
-   * page rank rank of the page on the target website rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
+   * page rank rank of the page rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
    * @return rank
   **/
   @javax.annotation.Nullable
@@ -242,7 +242,7 @@ public class PageSummary {
   }
 
    /**
-   * number of broken backlinks number of broken backlinks pointing to the target
+   * number of broken backlinks number of broken backlinks pointing to the page
    * @return brokenBacklinks
   **/
   @javax.annotation.Nullable
@@ -299,7 +299,7 @@ public class PageSummary {
   }
 
    /**
-   * number of domains pointing at least one nofollow link to the target
+   * number of domains pointing at least one nofollow link to the page
    * @return referringDomainsNofollow
   **/
   @javax.annotation.Nullable
@@ -337,7 +337,7 @@ public class PageSummary {
   }
 
    /**
-   * number of main domains pointing at least one nofollow link to the target
+   * number of main domains pointing at least one nofollow link to the page
    * @return referringMainDomainsNofollow
   **/
   @javax.annotation.Nullable
@@ -394,7 +394,7 @@ public class PageSummary {
   }
 
    /**
-   * indicates the number of pages pointing to the target
+   * indicates the number of pages pointing to the page
    * @return referringPages
   **/
   @javax.annotation.Nullable
@@ -413,7 +413,7 @@ public class PageSummary {
   }
 
    /**
-   * number of referring pages pointing at least one nofollow link to the target
+   * number of referring pages pointing at least one nofollow link to the page
    * @return referringPagesNofollow
   **/
   @javax.annotation.Nullable

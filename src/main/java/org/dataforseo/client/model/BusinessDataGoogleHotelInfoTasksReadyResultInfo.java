@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelInfoTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -127,7 +127,7 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
   }
 
    /**
-   * Get seType
+   * search engine specified when setting the task
    * @return seType
   **/
   @javax.annotation.Nullable

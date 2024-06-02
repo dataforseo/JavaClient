@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,28 +50,28 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_EXPLORE = "explore";
   @SerializedName(SERIALIZED_NAME_EXPLORE)
-  private AppendixFunctionInfo explore;
+  private AppendixInfo explore;
 
   public static final String SERIALIZED_NAME_SUBREGION_INTERESTS = "subregion_interests";
   @SerializedName(SERIALIZED_NAME_SUBREGION_INTERESTS)
-  private AppendixFunctionInfo subregionInterests;
+  private AppendixInfo subregionInterests;
 
   public static final String SERIALIZED_NAME_DEMOGRAPHY = "demography";
   @SerializedName(SERIALIZED_NAME_DEMOGRAPHY)
-  private AppendixFunctionInfo demography;
+  private AppendixInfo demography;
 
   public static final String SERIALIZED_NAME_MERGED_DATA = "merged_data";
   @SerializedName(SERIALIZED_NAME_MERGED_DATA)
-  private AppendixFunctionInfo mergedData;
+  private AppendixInfo mergedData;
 
   public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo() {
   }
 
-  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo explore(AppendixFunctionInfo explore) {
+  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo explore(AppendixInfo explore) {
     this.explore = explore;
     return this;
   }
@@ -81,16 +81,16 @@ public class AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo {
    * @return explore
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getExplore() {
+  public AppendixInfo getExplore() {
     return explore;
   }
 
-  public void setExplore(AppendixFunctionInfo explore) {
+  public void setExplore(AppendixInfo explore) {
     this.explore = explore;
   }
 
 
-  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo subregionInterests(AppendixFunctionInfo subregionInterests) {
+  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo subregionInterests(AppendixInfo subregionInterests) {
     this.subregionInterests = subregionInterests;
     return this;
   }
@@ -100,16 +100,16 @@ public class AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo {
    * @return subregionInterests
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSubregionInterests() {
+  public AppendixInfo getSubregionInterests() {
     return subregionInterests;
   }
 
-  public void setSubregionInterests(AppendixFunctionInfo subregionInterests) {
+  public void setSubregionInterests(AppendixInfo subregionInterests) {
     this.subregionInterests = subregionInterests;
   }
 
 
-  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo demography(AppendixFunctionInfo demography) {
+  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo demography(AppendixInfo demography) {
     this.demography = demography;
     return this;
   }
@@ -119,16 +119,16 @@ public class AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo {
    * @return demography
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDemography() {
+  public AppendixInfo getDemography() {
     return demography;
   }
 
-  public void setDemography(AppendixFunctionInfo demography) {
+  public void setDemography(AppendixInfo demography) {
     this.demography = demography;
   }
 
 
-  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo mergedData(AppendixFunctionInfo mergedData) {
+  public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo mergedData(AppendixInfo mergedData) {
     this.mergedData = mergedData;
     return this;
   }
@@ -138,11 +138,11 @@ public class AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo {
    * @return mergedData
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getMergedData() {
+  public AppendixInfo getMergedData() {
     return mergedData;
   }
 
-  public void setMergedData(AppendixFunctionInfo mergedData) {
+  public void setMergedData(AppendixInfo mergedData) {
     this.mergedData = mergedData;
   }
 
@@ -230,19 +230,19 @@ public class AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `explore`
       if (jsonObj.get("explore") != null && !jsonObj.get("explore").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("explore"));
+        AppendixInfo.validateJsonElement(jsonObj.get("explore"));
       }
       // validate the optional field `subregion_interests`
       if (jsonObj.get("subregion_interests") != null && !jsonObj.get("subregion_interests").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("subregion_interests"));
+        AppendixInfo.validateJsonElement(jsonObj.get("subregion_interests"));
       }
       // validate the optional field `demography`
       if (jsonObj.get("demography") != null && !jsonObj.get("demography").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("demography"));
+        AppendixInfo.validateJsonElement(jsonObj.get("demography"));
       }
       // validate the optional field `merged_data`
       if (jsonObj.get("merged_data") != null && !jsonObj.get("merged_data").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("merged_data"));
+        AppendixInfo.validateJsonElement(jsonObj.get("merged_data"));
       }
   }
 

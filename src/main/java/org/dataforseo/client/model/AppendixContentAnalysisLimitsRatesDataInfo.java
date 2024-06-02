@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,31 +51,31 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixContentAnalysisLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixContentAnalysisLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixFunctionInfo search;
+  private AppendixInfo search;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
-  private AppendixFunctionInfo summary;
+  private AppendixInfo summary;
 
   public static final String SERIALIZED_NAME_SENTIMENT_ANALYSIS = "sentiment_analysis";
   @SerializedName(SERIALIZED_NAME_SENTIMENT_ANALYSIS)
-  private AppendixFunctionInfo sentimentAnalysis;
+  private AppendixInfo sentimentAnalysis;
 
   public static final String SERIALIZED_NAME_RATING_DISTRIBUTION = "rating_distribution";
   @SerializedName(SERIALIZED_NAME_RATING_DISTRIBUTION)
-  private AppendixFunctionInfo ratingDistribution;
+  private AppendixInfo ratingDistribution;
 
   public static final String SERIALIZED_NAME_PHRASE_TRENDS = "phrase_trends";
   @SerializedName(SERIALIZED_NAME_PHRASE_TRENDS)
-  private AppendixFunctionInfo phraseTrends;
+  private AppendixInfo phraseTrends;
 
   public static final String SERIALIZED_NAME_CATEGORY_TRENDS = "category_trends";
   @SerializedName(SERIALIZED_NAME_CATEGORY_TRENDS)
-  private AppendixFunctionInfo categoryTrends;
+  private AppendixInfo categoryTrends;
 
   public static final String SERIALIZED_NAME_LOCATIONS = "locations";
   @SerializedName(SERIALIZED_NAME_LOCATIONS)
@@ -96,7 +96,7 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
   public AppendixContentAnalysisLimitsRatesDataInfo() {
   }
 
-  public AppendixContentAnalysisLimitsRatesDataInfo search(AppendixFunctionInfo search) {
+  public AppendixContentAnalysisLimitsRatesDataInfo search(AppendixInfo search) {
     this.search = search;
     return this;
   }
@@ -106,16 +106,16 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
    * @return search
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSearch() {
+  public AppendixInfo getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixFunctionInfo search) {
+  public void setSearch(AppendixInfo search) {
     this.search = search;
   }
 
 
-  public AppendixContentAnalysisLimitsRatesDataInfo summary(AppendixFunctionInfo summary) {
+  public AppendixContentAnalysisLimitsRatesDataInfo summary(AppendixInfo summary) {
     this.summary = summary;
     return this;
   }
@@ -125,16 +125,16 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
    * @return summary
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSummary() {
+  public AppendixInfo getSummary() {
     return summary;
   }
 
-  public void setSummary(AppendixFunctionInfo summary) {
+  public void setSummary(AppendixInfo summary) {
     this.summary = summary;
   }
 
 
-  public AppendixContentAnalysisLimitsRatesDataInfo sentimentAnalysis(AppendixFunctionInfo sentimentAnalysis) {
+  public AppendixContentAnalysisLimitsRatesDataInfo sentimentAnalysis(AppendixInfo sentimentAnalysis) {
     this.sentimentAnalysis = sentimentAnalysis;
     return this;
   }
@@ -144,16 +144,16 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
    * @return sentimentAnalysis
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSentimentAnalysis() {
+  public AppendixInfo getSentimentAnalysis() {
     return sentimentAnalysis;
   }
 
-  public void setSentimentAnalysis(AppendixFunctionInfo sentimentAnalysis) {
+  public void setSentimentAnalysis(AppendixInfo sentimentAnalysis) {
     this.sentimentAnalysis = sentimentAnalysis;
   }
 
 
-  public AppendixContentAnalysisLimitsRatesDataInfo ratingDistribution(AppendixFunctionInfo ratingDistribution) {
+  public AppendixContentAnalysisLimitsRatesDataInfo ratingDistribution(AppendixInfo ratingDistribution) {
     this.ratingDistribution = ratingDistribution;
     return this;
   }
@@ -163,16 +163,16 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
    * @return ratingDistribution
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getRatingDistribution() {
+  public AppendixInfo getRatingDistribution() {
     return ratingDistribution;
   }
 
-  public void setRatingDistribution(AppendixFunctionInfo ratingDistribution) {
+  public void setRatingDistribution(AppendixInfo ratingDistribution) {
     this.ratingDistribution = ratingDistribution;
   }
 
 
-  public AppendixContentAnalysisLimitsRatesDataInfo phraseTrends(AppendixFunctionInfo phraseTrends) {
+  public AppendixContentAnalysisLimitsRatesDataInfo phraseTrends(AppendixInfo phraseTrends) {
     this.phraseTrends = phraseTrends;
     return this;
   }
@@ -182,16 +182,16 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
    * @return phraseTrends
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getPhraseTrends() {
+  public AppendixInfo getPhraseTrends() {
     return phraseTrends;
   }
 
-  public void setPhraseTrends(AppendixFunctionInfo phraseTrends) {
+  public void setPhraseTrends(AppendixInfo phraseTrends) {
     this.phraseTrends = phraseTrends;
   }
 
 
-  public AppendixContentAnalysisLimitsRatesDataInfo categoryTrends(AppendixFunctionInfo categoryTrends) {
+  public AppendixContentAnalysisLimitsRatesDataInfo categoryTrends(AppendixInfo categoryTrends) {
     this.categoryTrends = categoryTrends;
     return this;
   }
@@ -201,11 +201,11 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
    * @return categoryTrends
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getCategoryTrends() {
+  public AppendixInfo getCategoryTrends() {
     return categoryTrends;
   }
 
-  public void setCategoryTrends(AppendixFunctionInfo categoryTrends) {
+  public void setCategoryTrends(AppendixInfo categoryTrends) {
     this.categoryTrends = categoryTrends;
   }
 
@@ -398,27 +398,27 @@ public class AppendixContentAnalysisLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `search`
       if (jsonObj.get("search") != null && !jsonObj.get("search").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("search"));
+        AppendixInfo.validateJsonElement(jsonObj.get("search"));
       }
       // validate the optional field `summary`
       if (jsonObj.get("summary") != null && !jsonObj.get("summary").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("summary"));
+        AppendixInfo.validateJsonElement(jsonObj.get("summary"));
       }
       // validate the optional field `sentiment_analysis`
       if (jsonObj.get("sentiment_analysis") != null && !jsonObj.get("sentiment_analysis").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("sentiment_analysis"));
+        AppendixInfo.validateJsonElement(jsonObj.get("sentiment_analysis"));
       }
       // validate the optional field `rating_distribution`
       if (jsonObj.get("rating_distribution") != null && !jsonObj.get("rating_distribution").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("rating_distribution"));
+        AppendixInfo.validateJsonElement(jsonObj.get("rating_distribution"));
       }
       // validate the optional field `phrase_trends`
       if (jsonObj.get("phrase_trends") != null && !jsonObj.get("phrase_trends").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("phrase_trends"));
+        AppendixInfo.validateJsonElement(jsonObj.get("phrase_trends"));
       }
       // validate the optional field `category_trends`
       if (jsonObj.get("category_trends") != null && !jsonObj.get("category_trends").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("category_trends"));
+        AppendixInfo.validateJsonElement(jsonObj.get("category_trends"));
       }
   }
 

@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixsGoogleBusinessDataPriceDataInfo;
+import org.dataforseo.client.model.AppendixGoogleBusinessDataPriceDataInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,20 +50,20 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixTrBusinessDataPriceDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixTrBusinessDataPriceDataInfo {
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixsGoogleBusinessDataPriceDataInfo reviews;
+  private AppendixGoogleBusinessDataPriceDataInfo reviews;
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixsGoogleBusinessDataPriceDataInfo search;
+  private AppendixGoogleBusinessDataPriceDataInfo search;
 
   public AppendixTrBusinessDataPriceDataInfo() {
   }
 
-  public AppendixTrBusinessDataPriceDataInfo reviews(AppendixsGoogleBusinessDataPriceDataInfo reviews) {
+  public AppendixTrBusinessDataPriceDataInfo reviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -73,16 +73,16 @@ public class AppendixTrBusinessDataPriceDataInfo {
    * @return reviews
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getReviews() {
+  public AppendixGoogleBusinessDataPriceDataInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixsGoogleBusinessDataPriceDataInfo reviews) {
+  public void setReviews(AppendixGoogleBusinessDataPriceDataInfo reviews) {
     this.reviews = reviews;
   }
 
 
-  public AppendixTrBusinessDataPriceDataInfo search(AppendixsGoogleBusinessDataPriceDataInfo search) {
+  public AppendixTrBusinessDataPriceDataInfo search(AppendixGoogleBusinessDataPriceDataInfo search) {
     this.search = search;
     return this;
   }
@@ -92,11 +92,11 @@ public class AppendixTrBusinessDataPriceDataInfo {
    * @return search
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getSearch() {
+  public AppendixGoogleBusinessDataPriceDataInfo getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixsGoogleBusinessDataPriceDataInfo search) {
+  public void setSearch(AppendixGoogleBusinessDataPriceDataInfo search) {
     this.search = search;
   }
 
@@ -178,11 +178,11 @@ public class AppendixTrBusinessDataPriceDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("reviews"));
       }
       // validate the optional field `search`
       if (jsonObj.get("search") != null && !jsonObj.get("search").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("search"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("search"));
       }
   }
 

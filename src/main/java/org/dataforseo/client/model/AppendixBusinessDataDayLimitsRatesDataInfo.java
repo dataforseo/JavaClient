@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,20 +50,20 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataDayLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixBusinessDataDayLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixFunctionInfo reviews;
+  private AppendixInfo reviews;
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixFunctionInfo search;
+  private AppendixInfo search;
 
   public AppendixBusinessDataDayLimitsRatesDataInfo() {
   }
 
-  public AppendixBusinessDataDayLimitsRatesDataInfo reviews(AppendixFunctionInfo reviews) {
+  public AppendixBusinessDataDayLimitsRatesDataInfo reviews(AppendixInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -73,16 +73,16 @@ public class AppendixBusinessDataDayLimitsRatesDataInfo {
    * @return reviews
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getReviews() {
+  public AppendixInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixFunctionInfo reviews) {
+  public void setReviews(AppendixInfo reviews) {
     this.reviews = reviews;
   }
 
 
-  public AppendixBusinessDataDayLimitsRatesDataInfo search(AppendixFunctionInfo search) {
+  public AppendixBusinessDataDayLimitsRatesDataInfo search(AppendixInfo search) {
     this.search = search;
     return this;
   }
@@ -92,11 +92,11 @@ public class AppendixBusinessDataDayLimitsRatesDataInfo {
    * @return search
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSearch() {
+  public AppendixInfo getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixFunctionInfo search) {
+  public void setSearch(AppendixInfo search) {
     this.search = search;
   }
 
@@ -178,11 +178,11 @@ public class AppendixBusinessDataDayLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixInfo.validateJsonElement(jsonObj.get("reviews"));
       }
       // validate the optional field `search`
       if (jsonObj.get("search") != null && !jsonObj.get("search").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("search"));
+        AppendixInfo.validateJsonElement(jsonObj.get("search"));
       }
   }
 

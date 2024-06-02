@@ -7,27 +7,27 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**summary** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**history** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**contentDuplicates** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**domainIntersection** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**backlinks** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**domainPages** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**anchors** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**referringDomains** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**pageIntersection** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**referringNetworks** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**bulkRanks** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**bulkBacklinks** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**bulkNewLostBacklinks** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**bulkNewLostReferringDomains** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**bulkReferringDomains** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**summary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**history** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**contentDuplicates** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**domainIntersection** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**backlinks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**domainPages** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**anchors** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**referringDomains** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**pageIntersection** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**referringNetworks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**bulkRanks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**bulkBacklinks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**bulkNewLostBacklinks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**bulkNewLostReferringDomains** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**bulkReferringDomains** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
-|**domainPagesSummary** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**timeseriesSummary** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**timeseriesNewLostSummary** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**competitors** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**bulkPagesSummary** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**domainPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**timeseriesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**timeseriesNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**competitors** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**bulkPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

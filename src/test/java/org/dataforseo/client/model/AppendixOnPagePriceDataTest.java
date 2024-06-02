@@ -20,8 +20,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.dataforseo.client.model.AppendixGoogleBusinessDataPriceDataInfo;
 import org.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
-import org.dataforseo.client.model.AppendixsGoogleBusinessDataPriceDataInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

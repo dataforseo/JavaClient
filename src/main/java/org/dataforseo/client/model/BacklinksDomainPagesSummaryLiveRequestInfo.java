@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksDomainPagesSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class BacklinksDomainPagesSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -287,7 +287,7 @@ public class BacklinksDomainPagesSummaryLiveRequestInfo {
   }
 
    /**
-   * indicates if the subdomains of the target will be included in the search optional field if set to false, the subdomains will be ignored default value: true
+   * indicates if the subdomains of the target domain will be included in the search optional field if set to false, the subdomains will be ignored default value: true
    * @return includeSubdomains
   **/
   @javax.annotation.Nullable
@@ -325,7 +325,7 @@ public class BacklinksDomainPagesSummaryLiveRequestInfo {
   }
 
    /**
-   * indicates whether the backlinks from subdomains of the target are excluded optional field if set to false, the backlinks from subdomains of the target will be ommited and you won’t receive the same domain in the response; default value: true
+   * indicates whether the backlinks from subdomains of the target are excluded optional field if set to false, backlinks from the subdomains of the target domain will be ommited and you won’t receive the same domain in the response; default value: true
    * @return excludeInternalBacklinks
   **/
   @javax.annotation.Nullable

@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**errors** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**lighthouse** | [**AppendixsGoogleBusinessDataPriceDataInfo**](AppendixsGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
+|**lighthouse** | [**AppendixGoogleBusinessDataPriceDataInfo**](AppendixGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
 |**contentParsing** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**contentParsingLive** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**duplicateContent** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |

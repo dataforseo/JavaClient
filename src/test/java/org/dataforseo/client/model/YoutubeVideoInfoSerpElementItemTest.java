@@ -24,6 +24,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.BaseSerpElementItem;
 import org.dataforseo.client.model.StreamingQualityElement;
+import org.dataforseo.client.model.Subtitles;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

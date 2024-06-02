@@ -299,9 +299,6 @@ public class JSON {
                         classByDiscriminatorValue.put("tripadvisor_search_organic", org.dataforseo.client.model.TripadvisorSearchOrganicBusinessDataSerpElementItem.class);
                         classByDiscriminatorValue.put("trustpilot_review_search", org.dataforseo.client.model.TrustpilotReviewSearchBusinessDataSerpElementItem.class);
                         classByDiscriminatorValue.put("trustpilot_search_organic", org.dataforseo.client.model.TrustpilotSearchOrganicBusinessDataSerpElementItem.class);
-                        classByDiscriminatorValue.put("yelp_reviews_search", org.dataforseo.client.model.YelpReviewsSearchBusinessDataSerpElementItem.class);
-                        classByDiscriminatorValue.put("yelp_search_organic", org.dataforseo.client.model.YelpSearchOrganicBusinessDataSerpElementItem.class);
-                        classByDiscriminatorValue.put("yelp_search_paid", org.dataforseo.client.model.YelpSearchPaidBusinessDataSerpElementItem.class);
                         classByDiscriminatorValue.put("BaseBusinessDataSerpElementItem", org.dataforseo.client.model.BaseBusinessDataSerpElementItem.class);
                         return getClassByDiscriminator(classByDiscriminatorValue,
                                 getDiscriminatorValue(readElement, "type"));
@@ -1838,33 +1835,6 @@ public class JSON {
                                 getDiscriminatorValue(readElement, "type"));
                     }
           })
-                .registerTypeSelector(org.dataforseo.client.model.YelpReviewsSearchBusinessDataSerpElementItem.class, new TypeSelector<org.dataforseo.client.model.YelpReviewsSearchBusinessDataSerpElementItem>() {
-                    @Override
-                    public Class<? extends org.dataforseo.client.model.YelpReviewsSearchBusinessDataSerpElementItem> getClassForElement(JsonElement readElement) {
-                        Map<String, Class> classByDiscriminatorValue = new HashMap<String, Class>();
-                        classByDiscriminatorValue.put("YelpReviewsSearchBusinessDataSerpElementItem", org.dataforseo.client.model.YelpReviewsSearchBusinessDataSerpElementItem.class);
-                        return getClassByDiscriminator(classByDiscriminatorValue,
-                                getDiscriminatorValue(readElement, "type"));
-                    }
-          })
-                .registerTypeSelector(org.dataforseo.client.model.YelpSearchOrganicBusinessDataSerpElementItem.class, new TypeSelector<org.dataforseo.client.model.YelpSearchOrganicBusinessDataSerpElementItem>() {
-                    @Override
-                    public Class<? extends org.dataforseo.client.model.YelpSearchOrganicBusinessDataSerpElementItem> getClassForElement(JsonElement readElement) {
-                        Map<String, Class> classByDiscriminatorValue = new HashMap<String, Class>();
-                        classByDiscriminatorValue.put("YelpSearchOrganicBusinessDataSerpElementItem", org.dataforseo.client.model.YelpSearchOrganicBusinessDataSerpElementItem.class);
-                        return getClassByDiscriminator(classByDiscriminatorValue,
-                                getDiscriminatorValue(readElement, "type"));
-                    }
-          })
-                .registerTypeSelector(org.dataforseo.client.model.YelpSearchPaidBusinessDataSerpElementItem.class, new TypeSelector<org.dataforseo.client.model.YelpSearchPaidBusinessDataSerpElementItem>() {
-                    @Override
-                    public Class<? extends org.dataforseo.client.model.YelpSearchPaidBusinessDataSerpElementItem> getClassForElement(JsonElement readElement) {
-                        Map<String, Class> classByDiscriminatorValue = new HashMap<String, Class>();
-                        classByDiscriminatorValue.put("YelpSearchPaidBusinessDataSerpElementItem", org.dataforseo.client.model.YelpSearchPaidBusinessDataSerpElementItem.class);
-                        return getClassByDiscriminator(classByDiscriminatorValue,
-                                getDiscriminatorValue(readElement, "type"));
-                    }
-          })
                 .registerTypeSelector(org.dataforseo.client.model.YoutubeCommentSerpElementItem.class, new TypeSelector<org.dataforseo.client.model.YoutubeCommentSerpElementItem>() {
                     @Override
                     public Class<? extends org.dataforseo.client.model.YoutubeCommentSerpElementItem> getClassForElement(JsonElement readElement) {
@@ -2122,13 +2092,14 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixErrorsResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixErrorsTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixExploreKeywordsDataPriceData.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixFunctionInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixFunctionTypeInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixGoogleAdsKeywordsDataPriceData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixGoogleBusinessDataPriceData.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixGoogleBusinessDataPriceDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixGoogleMerchantPriceData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixHotelInfoGoogleBusinessDataPriceData.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo.CustomTypeAdapterFactory());
@@ -2179,7 +2150,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixWebhookResendTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixWhoisDomainAnalyticsLimitsRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixWhoisDomainAnalyticsPriceData.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixsGoogleBusinessDataPriceDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppsInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AuthorsElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AutocompleteSerpElementItem.CustomTypeAdapterFactory());
@@ -2308,7 +2278,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BaseResponseTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BrokenResourceElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BulkMetricsInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessAddressLocationInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataAttributesInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataBusinessListingsAvailableFiltersResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataBusinessListingsAvailableFiltersResultInfo.CustomTypeAdapterFactory());
@@ -2480,33 +2449,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataTrustpilotSearchTasksReadyResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataTrustpilotSearchTasksReadyTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataUserProfileInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLanguagesResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLanguagesResultInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLanguagesTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLocationsCountryResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLocationsCountryResultInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLocationsCountryTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLocationsResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLocationsResultInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpLocationsTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTaskGetResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTaskGetResultInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTaskGetTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTaskPostRequestInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTaskPostResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTaskPostTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTasksReadyResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTasksReadyResultInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpReviewsTasksReadyTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTaskGetResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTaskGetResultInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTaskGetTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTaskPostRequestInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTaskPostResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTaskPostTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTasksReadyResponseInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTasksReadyResultInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDataYelpSearchTasksReadyTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessDirectoryInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusinessListingAggregationInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.BusyWorkingTimeInfo.CustomTypeAdapterFactory());
@@ -2518,6 +2460,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.CommercialUnitsDataforseoLabsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.CommercialUnitsElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.CommercialUnitsSerpElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.CompareSitesElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ConceptGroupInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ConceptInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ContentAnalysisAvailableFiltersResponseInfo.CustomTypeAdapterFactory());
@@ -3929,6 +3872,9 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpSeznamOrganicTasksReadyResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpSeznamOrganicTasksReadyTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpTaskRequestInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpTasksReadyResponseInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpTasksReadyResultInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpTasksReadyTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpYahooLanguagesResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpYahooLanguagesResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpYahooLanguagesTaskInfo.CustomTypeAdapterFactory());
@@ -4021,7 +3967,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpYoutubeVideoSubtitlesTasksReadyResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpYoutubeVideoSubtitlesTasksReadyResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.SerpYoutubeVideoSubtitlesTasksReadyTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ServiceOfferingsElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ShoppingDataforseoLabsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ShoppingElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ShoppingSerpElementItem.CustomTypeAdapterFactory());
@@ -4037,6 +3982,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.StoresCountInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.StreamingQualityElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.StylesheetResourceElementItem.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.Subtitles.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.Table.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.TableContent.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.TableContentItemInfo.CustomTypeAdapterFactory());
@@ -4073,9 +4019,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.WorkHours.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.WorkInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.WorkTimeInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.YelpReviewsSearchBusinessDataSerpElementItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.YelpSearchOrganicBusinessDataSerpElementItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.YelpSearchPaidBusinessDataSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.YoutubeCommentSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.YoutubeSubtitlesSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.YoutubeVideoInfoSerpElementItem.CustomTypeAdapterFactory());

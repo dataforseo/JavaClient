@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -60,7 +60,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo {
 
   public static final String SERIALIZED_NAME_BID = "bid";
   @SerializedName(SERIALIZED_NAME_BID)
-  private Float bid;
+  private Long bid;
 
   public static final String SERIALIZED_NAME_MATCH = "match";
   @SerializedName(SERIALIZED_NAME_MATCH)
@@ -140,7 +140,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo {
   }
 
 
-  public KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo bid(Float bid) {
+  public KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo bid(Long bid) {
     this.bid = bid;
     return this;
   }
@@ -150,11 +150,11 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo {
    * @return bid
   **/
   @javax.annotation.Nullable
-  public Float getBid() {
+  public Long getBid() {
     return bid;
   }
 
-  public void setBid(Float bid) {
+  public void setBid(Long bid) {
     this.bid = bid;
   }
 

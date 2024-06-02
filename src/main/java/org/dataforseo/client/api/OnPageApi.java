@@ -2464,6 +2464,119 @@ public class OnPageApi {
         return localVarCall;
     }
     /**
+     * Build call for onPageTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call onPageTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/on_page/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call onPageTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return onPageTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
+     * @return OnPageTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public OnPageTasksReadyResponseInfo onPageTasksReady() throws ApiException {
+        ApiResponse<OnPageTasksReadyResponseInfo> localVarResp = onPageTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;OnPageTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<OnPageTasksReadyResponseInfo> onPageTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = onPageTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<OnPageTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call onPageTasksReadyAsync(final ApiCallback<OnPageTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = onPageTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<OnPageTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for pageScreenshot
      * @param onPagePageScreenshotRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
@@ -3409,119 +3522,6 @@ public class OnPageApi {
 
         okhttp3.Call localVarCall = taskPostValidateBeforeCall(onPageTaskRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<OnPageTaskPostResponseInfo>(){}.getType();
-        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-        return localVarCall;
-    }
-    /**
-     * Build call for tasksReady
-     * @param _callback Callback for upload/download progress
-     * @return Call to execute
-     * @throws ApiException If fail to serialize the request body object
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public okhttp3.Call tasksReadyCall(final ApiCallback _callback) throws ApiException {
-        String basePath = null;
-        // Operation Servers
-        String[] localBasePaths = new String[] {  };
-
-        // Determine Base Path to Use
-        if (localCustomBaseUrl != null){
-            basePath = localCustomBaseUrl;
-        } else if ( localBasePaths.length > 0 ) {
-            basePath = localBasePaths[localHostIndex];
-        } else {
-            basePath = null;
-        }
-
-        Object localVarPostBody = null;
-
-        // create path and map variables
-        String localVarPath = "/v3/on_page/tasks_ready";
-
-        List<Pair> localVarQueryParams = new ArrayList<Pair>();
-        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-        Map<String, String> localVarCookieParams = new HashMap<String, String>();
-        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-        final String[] localVarAccepts = {
-            "application/json"
-        };
-        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-        if (localVarAccept != null) {
-            localVarHeaderParams.put("Accept", localVarAccept);
-        }
-
-        final String[] localVarContentTypes = {
-        };
-        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-        if (localVarContentType != null) {
-            localVarHeaderParams.put("Content-Type", localVarContentType);
-        }
-
-        String[] localVarAuthNames = new String[] { "basicAuth" };
-        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call tasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-        return tasksReadyCall(_callback);
-
-    }
-
-    /**
-     * 
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
-     * @return OnPageTasksReadyResponseInfo
-     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public OnPageTasksReadyResponseInfo tasksReady() throws ApiException {
-        ApiResponse<OnPageTasksReadyResponseInfo> localVarResp = tasksReadyWithHttpInfo();
-        return localVarResp.getData();
-    }
-
-    /**
-     * 
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
-     * @return ApiResponse&lt;OnPageTasksReadyResponseInfo&gt;
-     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public ApiResponse<OnPageTasksReadyResponseInfo> tasksReadyWithHttpInfo() throws ApiException {
-        okhttp3.Call localVarCall = tasksReadyValidateBeforeCall(null);
-        Type localVarReturnType = new TypeToken<OnPageTasksReadyResponseInfo>(){}.getType();
-        return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    /**
-     *  (asynchronously)
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
-     * @param _callback The callback to be executed when the API call finishes
-     * @return The request call
-     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public okhttp3.Call tasksReadyAsync(final ApiCallback<OnPageTasksReadyResponseInfo> _callback) throws ApiException {
-
-        okhttp3.Call localVarCall = tasksReadyValidateBeforeCall(_callback);
-        Type localVarReturnType = new TypeToken<OnPageTasksReadyResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -28,7 +28,7 @@
 |**isLive** | **Boolean** | indicates whether the video is on live |  [optional] |
 |**durationTime** | **String** | duration of the video |  [optional] |
 |**durationTimeSeconds** | **Integer** | duration of the video in seconds |  [optional] |
-|**subtitles** | **String** | subtitles in the video |  [optional] |
+|**subtitles** | [**List&lt;Subtitles&gt;**](Subtitles.md) | array of elements describing properties of subtitles in the video |  [optional] |
 |**streamingQuality** | [**List&lt;StreamingQualityElement&gt;**](StreamingQualityElement.md) | array of elements that contain information about all possible streaming qualities of the video |  [optional] |
 
 

@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleOrganicLiveAdvancedRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -468,7 +468,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   }
 
    /**
-   * browser screen resolution ratio optional field you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device; by default, the parameter is set to: 1 for desktop; 3 for mobile on android; 3 for mobile on iOS; Note: to use this parameter, set calculate_rectangles to true
+   * browser screen resolution ratio optional field you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device; possible values: from 1 to 3; by default, the parameter is set to: 1 for desktop; 3 for mobile on android; 3 for mobile on iOS; Note: to use this parameter, set calculate_rectangles to true
    * @return browserScreenResolutionRatio
   **/
   @javax.annotation.Nullable

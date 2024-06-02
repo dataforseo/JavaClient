@@ -7,15 +7,15 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**domainTechnologies** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**domainsByTechnology** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**domainTechnologies** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**domainsByTechnology** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**languages** | **Double** |  |  [optional] |
 |**locations** | **Double** |  |  [optional] |
 |**technologies** | **Double** |  |  [optional] |
-|**aggregationTechnologies** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**technologiesSummary** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**domainsByHtmlTerms** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**technologyStats** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**aggregationTechnologies** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**technologiesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**domainsByHtmlTerms** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**technologyStats** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

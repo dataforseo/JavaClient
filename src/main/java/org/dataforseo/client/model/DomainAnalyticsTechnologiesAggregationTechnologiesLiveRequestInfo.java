@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   public static final String SERIALIZED_NAME_GROUP = "group";
   @SerializedName(SERIALIZED_NAME_GROUP)
@@ -119,7 +119,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * id of the target technology group required field if you don’t specify technology or category you can find the full list of technology group ids on this page example: \&quot;marketing\&quot;
+   * id of the target technology group required field if you don’t specify technology or category at least one field (group, category, technology) must be set you can find the full list of technology group ids on this page example: \&quot;marketing\&quot;
    * @return group
   **/
   @javax.annotation.Nullable
@@ -138,7 +138,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * id of the target technology category required field if you don’t specify group or technology you can find the full list of technology category ids on this page example: \&quot;crm\&quot;
+   * id of the target technology category required field if you don’t specify group or technology at least one field (group, category, technology) must be set you can find the full list of technology category ids on this page example: \&quot;crm\&quot;
    * @return category
   **/
   @javax.annotation.Nullable
@@ -157,7 +157,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * target technology required field if you don’t specify group or category you can find the full list of technologies on this page example: \&quot;Salesforce\&quot;
+   * target technology required field if you don’t specify group or category at least one field (group, category, technology) must be set you can find the full list of technologies on this page example: \&quot;Salesforce\&quot;
    * @return technology
   **/
   @javax.annotation.Nullable

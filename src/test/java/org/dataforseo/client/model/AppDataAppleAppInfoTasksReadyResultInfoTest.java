@@ -55,6 +55,14 @@ public class AppDataAppleAppInfoTasksReadyResultInfoTest {
     }
 
     /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
+    }
+
+    /**
      * Test the property 'datePosted'
      */
     @Test

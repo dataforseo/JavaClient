@@ -151,6 +151,7 @@ import org.dataforseo.client.model.SerpSeznamOrganicTaskPostResponseInfo;
 import org.dataforseo.client.model.SerpSeznamOrganicTasksFixedResponseInfo;
 import org.dataforseo.client.model.SerpSeznamOrganicTasksReadyResponseInfo;
 import org.dataforseo.client.model.SerpTaskRequestInfo;
+import org.dataforseo.client.model.SerpTasksReadyResponseInfo;
 import org.dataforseo.client.model.SerpYahooLanguagesResponseInfo;
 import org.dataforseo.client.model.SerpYahooLocationsCountryResponseInfo;
 import org.dataforseo.client.model.SerpYahooLocationsResponseInfo;
@@ -275,7 +276,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -357,7 +358,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -463,7 +464,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -521,7 +522,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -579,7 +580,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -637,7 +638,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -695,7 +696,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -777,7 +778,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -835,7 +836,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -917,7 +918,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -975,7 +976,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1057,7 +1058,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1163,7 +1164,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1279,7 +1280,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1589,13 +1590,24 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
     @Test
     public void seznamOrganicTasksReadyTest() throws ApiException {
         SerpSeznamOrganicTasksReadyResponseInfo response = api.seznamOrganicTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void tasksReadyTest() throws ApiException {
+        SerpTasksReadyResponseInfo response = api.tasksReady();
         // TODO: test validations
     }
 
@@ -1695,7 +1707,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1753,7 +1765,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1811,7 +1823,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1869,7 +1881,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash&#39;
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

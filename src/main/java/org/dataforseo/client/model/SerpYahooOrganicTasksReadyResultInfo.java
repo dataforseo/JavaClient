@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpYahooOrganicTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class SerpYahooOrganicTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -131,7 +131,7 @@ public class SerpYahooOrganicTasksReadyResultInfo {
   }
 
    /**
-   * type of search engine can take the following values: organic
+   * type of search engine example: organic
    * @return seType
   **/
   @javax.annotation.Nullable

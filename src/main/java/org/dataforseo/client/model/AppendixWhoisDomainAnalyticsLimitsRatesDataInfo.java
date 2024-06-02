@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,16 +50,16 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixWhoisDomainAnalyticsLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixWhoisDomainAnalyticsLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_OVERVIEW = "overview";
   @SerializedName(SERIALIZED_NAME_OVERVIEW)
-  private AppendixFunctionInfo overview;
+  private AppendixInfo overview;
 
   public AppendixWhoisDomainAnalyticsLimitsRatesDataInfo() {
   }
 
-  public AppendixWhoisDomainAnalyticsLimitsRatesDataInfo overview(AppendixFunctionInfo overview) {
+  public AppendixWhoisDomainAnalyticsLimitsRatesDataInfo overview(AppendixInfo overview) {
     this.overview = overview;
     return this;
   }
@@ -69,11 +69,11 @@ public class AppendixWhoisDomainAnalyticsLimitsRatesDataInfo {
    * @return overview
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getOverview() {
+  public AppendixInfo getOverview() {
     return overview;
   }
 
-  public void setOverview(AppendixFunctionInfo overview) {
+  public void setOverview(AppendixInfo overview) {
     this.overview = overview;
   }
 
@@ -152,7 +152,7 @@ public class AppendixWhoisDomainAnalyticsLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `overview`
       if (jsonObj.get("overview") != null && !jsonObj.get("overview").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("overview"));
+        AppendixInfo.validateJsonElement(jsonObj.get("overview"));
       }
   }
 

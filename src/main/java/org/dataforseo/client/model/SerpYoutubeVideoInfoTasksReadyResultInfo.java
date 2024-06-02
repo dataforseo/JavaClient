@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpYoutubeVideoInfoTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class SerpYoutubeVideoInfoTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -131,7 +131,7 @@ public class SerpYoutubeVideoInfoTasksReadyResultInfo {
   }
 
    /**
-   * type of search engine can take the following values: video_info
+   * type of search engine example: video_info
    * @return seType
   **/
   @javax.annotation.Nullable

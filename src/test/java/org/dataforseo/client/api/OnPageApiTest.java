@@ -318,6 +318,17 @@ public class OnPageApiTest {
     }
 
     /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void onPageTasksReadyTest() throws ApiException {
+        OnPageTasksReadyResponseInfo response = api.onPageTasksReady();
+        // TODO: test validations
+    }
+
+    /**
      * ‌‌ Using this endpoint, you can capture a full high-quality screenshot of any webpage. In this way, you can review the target page as the DataForSEO crawler and Googlebot see it. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/page_screenshot/?bash&#39;
      *
      * @throws ApiException if the Api call fails
@@ -410,17 +421,6 @@ public class OnPageApiTest {
     public void taskPostTest() throws ApiException {
         List<OnPageTaskRequestInfo> onPageTaskRequestInfo = null;
         OnPageTaskPostResponseInfo response = api.taskPost(onPageTaskRequestInfo);
-        // TODO: test validations
-    }
-
-    /**
-     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void tasksReadyTest() throws ApiException {
-        OnPageTasksReadyResponseInfo response = api.tasksReady();
         // TODO: test validations
     }
 

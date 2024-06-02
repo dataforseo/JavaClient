@@ -24,6 +24,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**onPageErrors**](OnPageApi.md#onPageErrors) | **POST** /v3/on_page/errors |  |
 | [**onPageIdList**](OnPageApi.md#onPageIdList) | **POST** /v3/on_page/id_list |  |
 | [**onPageLighthouseLanguages**](OnPageApi.md#onPageLighthouseLanguages) | **GET** /v3/on_page/lighthouse/languages |  |
+| [**onPageTasksReady**](OnPageApi.md#onPageTasksReady) | **GET** /v3/on_page/tasks_ready |  |
 | [**pageScreenshot**](OnPageApi.md#pageScreenshot) | **POST** /v3/on_page/page_screenshot |  |
 | [**pages**](OnPageApi.md#pages) | **POST** /v3/on_page/pages |  |
 | [**pagesByResource**](OnPageApi.md#pagesByResource) | **POST** /v3/on_page/pages_by_resource |  |
@@ -32,7 +33,6 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**resources**](OnPageApi.md#resources) | **POST** /v3/on_page/resources |  |
 | [**summary**](OnPageApi.md#summary) | **GET** /v3/on_page/summary/{id} |  |
 | [**taskPost**](OnPageApi.md#taskPost) | **POST** /v3/on_page/task_post |  |
-| [**tasksReady**](OnPageApi.md#tasksReady) | **GET** /v3/on_page/tasks_ready |  |
 | [**waterfall**](OnPageApi.md#waterfall) | **POST** /v3/on_page/waterfall |  |
 
 
@@ -1376,6 +1376,70 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="onPageTasksReady"></a>
+# **onPageTasksReady**
+> OnPageTasksReadyResponseInfo onPageTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.OnPageApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    OnPageApi apiInstance = new OnPageApi(defaultClient);
+    try {
+      OnPageTasksReadyResponseInfo result = apiInstance.onPageTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling OnPageApi#onPageTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**OnPageTasksReadyResponseInfo**](OnPageTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="pageScreenshot"></a>
 # **pageScreenshot**
 > OnPagePageScreenshotResponseInfo pageScreenshot(onPagePageScreenshotRequestInfo)
@@ -1913,70 +1977,6 @@ public class Example {
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="tasksReady"></a>
-# **tasksReady**
-> OnPageTasksReadyResponseInfo tasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks, which results haven’t been collected yet. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page-tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.OnPageApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    OnPageApi apiInstance = new OnPageApi(defaultClient);
-    try {
-      OnPageTasksReadyResponseInfo result = apiInstance.tasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling OnPageApi#tasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**OnPageTasksReadyResponseInfo**](OnPageTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

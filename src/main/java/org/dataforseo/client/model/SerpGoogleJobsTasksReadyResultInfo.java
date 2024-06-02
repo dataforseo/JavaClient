@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleJobsTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class SerpGoogleJobsTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -131,7 +131,7 @@ public class SerpGoogleJobsTasksReadyResultInfo {
   }
 
    /**
-   * type of search engine can take the following values: jobs
+   * type of search engine example: jobs
    * @return seType
   **/
   @javax.annotation.Nullable

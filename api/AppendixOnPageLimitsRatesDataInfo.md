@@ -22,7 +22,7 @@
 |**rawHtml** | **Double** |  |  [optional] |
 |**instantPages** | **Double** |  |  [optional] |
 |**redirectChains** | **Double** |  |  [optional] |
-|**lighthouse** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**lighthouse** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordDensity** | **Double** |  |  [optional] |
 |**pageScreenshot** | **Double** |  |  [optional] |
 |**contentParsing** | **Double** |  |  [optional] |

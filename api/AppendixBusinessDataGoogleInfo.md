@@ -7,12 +7,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**myBusinessInfo** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**myBusinessUpdates** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**myBusinessInfo** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**myBusinessUpdates** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**hotelInfo** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
-|**hotelSearches** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**reviews** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**questionsAndAnswers** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**hotelSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**reviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**questionsAndAnswers** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

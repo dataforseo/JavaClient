@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,24 +50,24 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixSocialMediaBusinessDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixSocialMediaBusinessDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_FACEBOOK = "facebook";
   @SerializedName(SERIALIZED_NAME_FACEBOOK)
-  private AppendixFunctionInfo facebook;
+  private AppendixInfo facebook;
 
   public static final String SERIALIZED_NAME_PINTEREST = "pinterest";
   @SerializedName(SERIALIZED_NAME_PINTEREST)
-  private AppendixFunctionInfo pinterest;
+  private AppendixInfo pinterest;
 
   public static final String SERIALIZED_NAME_REDDIT = "reddit";
   @SerializedName(SERIALIZED_NAME_REDDIT)
-  private AppendixFunctionInfo reddit;
+  private AppendixInfo reddit;
 
   public AppendixSocialMediaBusinessDataLimitsRatesDataInfo() {
   }
 
-  public AppendixSocialMediaBusinessDataLimitsRatesDataInfo facebook(AppendixFunctionInfo facebook) {
+  public AppendixSocialMediaBusinessDataLimitsRatesDataInfo facebook(AppendixInfo facebook) {
     this.facebook = facebook;
     return this;
   }
@@ -77,16 +77,16 @@ public class AppendixSocialMediaBusinessDataLimitsRatesDataInfo {
    * @return facebook
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getFacebook() {
+  public AppendixInfo getFacebook() {
     return facebook;
   }
 
-  public void setFacebook(AppendixFunctionInfo facebook) {
+  public void setFacebook(AppendixInfo facebook) {
     this.facebook = facebook;
   }
 
 
-  public AppendixSocialMediaBusinessDataLimitsRatesDataInfo pinterest(AppendixFunctionInfo pinterest) {
+  public AppendixSocialMediaBusinessDataLimitsRatesDataInfo pinterest(AppendixInfo pinterest) {
     this.pinterest = pinterest;
     return this;
   }
@@ -96,16 +96,16 @@ public class AppendixSocialMediaBusinessDataLimitsRatesDataInfo {
    * @return pinterest
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getPinterest() {
+  public AppendixInfo getPinterest() {
     return pinterest;
   }
 
-  public void setPinterest(AppendixFunctionInfo pinterest) {
+  public void setPinterest(AppendixInfo pinterest) {
     this.pinterest = pinterest;
   }
 
 
-  public AppendixSocialMediaBusinessDataLimitsRatesDataInfo reddit(AppendixFunctionInfo reddit) {
+  public AppendixSocialMediaBusinessDataLimitsRatesDataInfo reddit(AppendixInfo reddit) {
     this.reddit = reddit;
     return this;
   }
@@ -115,11 +115,11 @@ public class AppendixSocialMediaBusinessDataLimitsRatesDataInfo {
    * @return reddit
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getReddit() {
+  public AppendixInfo getReddit() {
     return reddit;
   }
 
-  public void setReddit(AppendixFunctionInfo reddit) {
+  public void setReddit(AppendixInfo reddit) {
     this.reddit = reddit;
   }
 
@@ -204,15 +204,15 @@ public class AppendixSocialMediaBusinessDataLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `facebook`
       if (jsonObj.get("facebook") != null && !jsonObj.get("facebook").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("facebook"));
+        AppendixInfo.validateJsonElement(jsonObj.get("facebook"));
       }
       // validate the optional field `pinterest`
       if (jsonObj.get("pinterest") != null && !jsonObj.get("pinterest").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("pinterest"));
+        AppendixInfo.validateJsonElement(jsonObj.get("pinterest"));
       }
       // validate the optional field `reddit`
       if (jsonObj.get("reddit") != null && !jsonObj.get("reddit").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("reddit"));
+        AppendixInfo.validateJsonElement(jsonObj.get("reddit"));
       }
   }
 

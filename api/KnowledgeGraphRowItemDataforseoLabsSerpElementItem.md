@@ -11,7 +11,7 @@
 |**rankAbsolute** | **Integer** | absolute rank in SERP absolute position among all the elements in SERP |  [optional] |
 |**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
-|**title** | **String** | title of the item |  [optional] |
+|**title** | **String** | title of the link |  [optional] |
 |**dataAttrid** | **String** | google defined data attribute ID example: action:listen_artist |  [optional] |
 |**text** | **String** | row content |  [optional] |
 |**links** | [**List&lt;LinkElement&gt;**](LinkElement.md) | sitelinks the links shown below some of Google’s search results if there are none, equals null |  [optional] |

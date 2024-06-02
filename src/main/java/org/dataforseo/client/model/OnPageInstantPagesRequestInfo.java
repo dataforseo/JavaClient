@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageInstantPagesRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class OnPageInstantPagesRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -85,6 +85,10 @@ public class OnPageInstantPagesRequestInfo {
   public static final String SERIALIZED_NAME_ACCEPT_LANGUAGE = "accept_language";
   @SerializedName(SERIALIZED_NAME_ACCEPT_LANGUAGE)
   private String acceptLanguage;
+
+  public static final String SERIALIZED_NAME_LOAD_RESOURCES = "load_resources";
+  @SerializedName(SERIALIZED_NAME_LOAD_RESOURCES)
+  private Boolean loadResources;
 
   public static final String SERIALIZED_NAME_ENABLE_JAVASCRIPT = "enable_javascript";
   @SerializedName(SERIALIZED_NAME_ENABLE_JAVASCRIPT)
@@ -277,6 +281,25 @@ public class OnPageInstantPagesRequestInfo {
   }
 
 
+  public OnPageInstantPagesRequestInfo loadResources(Boolean loadResources) {
+    this.loadResources = loadResources;
+    return this;
+  }
+
+   /**
+   * load resources optional field set to true if you want to load image, stylesheets, scripts, and broken resources default value: false Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * @return loadResources
+  **/
+  @javax.annotation.Nullable
+  public Boolean getLoadResources() {
+    return loadResources;
+  }
+
+  public void setLoadResources(Boolean loadResources) {
+    this.loadResources = loadResources;
+  }
+
+
   public OnPageInstantPagesRequestInfo enableJavascript(Boolean enableJavascript) {
     this.enableJavascript = enableJavascript;
     return this;
@@ -302,7 +325,7 @@ public class OnPageInstantPagesRequestInfo {
   }
 
    /**
-   * emulate browser rendering to measure Core Web Vitals optional field by using this parameter you will be able to emulate a browser when loading a web page; enable_browser_rendering loads styles, images, fonts, animations, videos, and other resources on a page; default value: false set to true to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response; if you use this field, enable_javascript, and load_resources parameters must be set to true Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * emulate browser rendering to measure Core Web Vitals optional field by using this parameter you will be able to emulate a browser when loading a web page; enable_browser_rendering loads styles, images, fonts, animations, videos, and other resources on a page; default value: false set to true to obtain Core Web Vitals (FID, CLS, LCP) metrics in the response; if you use this field, parameters enable_javascript, and load_resources are enabled automatically; Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
    * @return enableBrowserRendering
   **/
   @javax.annotation.Nullable
@@ -474,6 +497,7 @@ public class OnPageInstantPagesRequestInfo {
         Objects.equals(this.browserScreenScaleFactor, onPageInstantPagesRequestInfo.browserScreenScaleFactor) &&
         Objects.equals(this.storeRawHtml, onPageInstantPagesRequestInfo.storeRawHtml) &&
         Objects.equals(this.acceptLanguage, onPageInstantPagesRequestInfo.acceptLanguage) &&
+        Objects.equals(this.loadResources, onPageInstantPagesRequestInfo.loadResources) &&
         Objects.equals(this.enableJavascript, onPageInstantPagesRequestInfo.enableJavascript) &&
         Objects.equals(this.enableBrowserRendering, onPageInstantPagesRequestInfo.enableBrowserRendering) &&
         Objects.equals(this.disableCookiePopup, onPageInstantPagesRequestInfo.disableCookiePopup) &&
@@ -491,7 +515,7 @@ public class OnPageInstantPagesRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, acceptLanguage, enableJavascript, enableBrowserRendering, disableCookiePopup, returnDespiteTimeout, enableXhr, customJs, validateMicromarkup, checkSpell, checksThreshold);
+    return Objects.hash(url, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, acceptLanguage, loadResources, enableJavascript, enableBrowserRendering, disableCookiePopup, returnDespiteTimeout, enableXhr, customJs, validateMicromarkup, checkSpell, checksThreshold);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -513,6 +537,7 @@ public class OnPageInstantPagesRequestInfo {
     sb.append("    browserScreenScaleFactor: ").append(toIndentedString(browserScreenScaleFactor)).append("\n");
     sb.append("    storeRawHtml: ").append(toIndentedString(storeRawHtml)).append("\n");
     sb.append("    acceptLanguage: ").append(toIndentedString(acceptLanguage)).append("\n");
+    sb.append("    loadResources: ").append(toIndentedString(loadResources)).append("\n");
     sb.append("    enableJavascript: ").append(toIndentedString(enableJavascript)).append("\n");
     sb.append("    enableBrowserRendering: ").append(toIndentedString(enableBrowserRendering)).append("\n");
     sb.append("    disableCookiePopup: ").append(toIndentedString(disableCookiePopup)).append("\n");
@@ -552,6 +577,7 @@ public class OnPageInstantPagesRequestInfo {
     openapiFields.add("browser_screen_scale_factor");
     openapiFields.add("store_raw_html");
     openapiFields.add("accept_language");
+    openapiFields.add("load_resources");
     openapiFields.add("enable_javascript");
     openapiFields.add("enable_browser_rendering");
     openapiFields.add("disable_cookie_popup");

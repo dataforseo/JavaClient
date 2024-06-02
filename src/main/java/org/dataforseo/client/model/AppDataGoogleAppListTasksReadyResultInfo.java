@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppDataGoogleAppListTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppDataGoogleAppListTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -59,6 +59,10 @@ public class AppDataGoogleAppListTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_SE = "se";
   @SerializedName(SERIALIZED_NAME_SE)
   private String se;
+
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
 
   public static final String SERIALIZED_NAME_DATE_POSTED = "date_posted";
   @SerializedName(SERIALIZED_NAME_DATE_POSTED)
@@ -114,6 +118,25 @@ public class AppDataGoogleAppListTasksReadyResultInfo {
 
   public void setSe(String se) {
     this.se = se;
+  }
+
+
+  public AppDataGoogleAppListTasksReadyResultInfo seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+   /**
+   * Get seType
+   * @return seType
+  **/
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
   }
 
 
@@ -205,6 +228,7 @@ public class AppDataGoogleAppListTasksReadyResultInfo {
     AppDataGoogleAppListTasksReadyResultInfo appDataGoogleAppListTasksReadyResultInfo = (AppDataGoogleAppListTasksReadyResultInfo) o;
     return Objects.equals(this.id, appDataGoogleAppListTasksReadyResultInfo.id) &&
         Objects.equals(this.se, appDataGoogleAppListTasksReadyResultInfo.se) &&
+        Objects.equals(this.seType, appDataGoogleAppListTasksReadyResultInfo.seType) &&
         Objects.equals(this.datePosted, appDataGoogleAppListTasksReadyResultInfo.datePosted) &&
         Objects.equals(this.tag, appDataGoogleAppListTasksReadyResultInfo.tag) &&
         Objects.equals(this.endpointAdvanced, appDataGoogleAppListTasksReadyResultInfo.endpointAdvanced) &&
@@ -217,7 +241,7 @@ public class AppDataGoogleAppListTasksReadyResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, se, datePosted, tag, endpointAdvanced, endpointHtml);
+    return Objects.hash(id, se, seType, datePosted, tag, endpointAdvanced, endpointHtml);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -233,6 +257,7 @@ public class AppDataGoogleAppListTasksReadyResultInfo {
     sb.append("class AppDataGoogleAppListTasksReadyResultInfo {\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    se: ").append(toIndentedString(se)).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    endpointAdvanced: ").append(toIndentedString(endpointAdvanced)).append("\n");
@@ -261,6 +286,7 @@ public class AppDataGoogleAppListTasksReadyResultInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("id");
     openapiFields.add("se");
+    openapiFields.add("se_type");
     openapiFields.add("date_posted");
     openapiFields.add("tag");
     openapiFields.add("endpoint_advanced");
@@ -296,6 +322,9 @@ public class AppDataGoogleAppListTasksReadyResultInfo {
       }
       if ((jsonObj.get("se") != null && !jsonObj.get("se").isJsonNull()) && !jsonObj.get("se").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `se` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se").toString()));
+      }
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
       }
       if ((jsonObj.get("date_posted") != null && !jsonObj.get("date_posted").isJsonNull()) && !jsonObj.get("date_posted").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `date_posted` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date_posted").toString()));

@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleAutocompleteTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class SerpGoogleAutocompleteTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -242,7 +242,7 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo {
   }
 
    /**
-   * search client for autocomplete optional field autocomplete results may differ depending on the search client; possible values: chrome — used when google search is opened in google chrome; chrome-omni — used in the address bar in chrome; gws-wiz — used in google search home page; safari — used when google search is opened in safari browser; firefox — used when google search is opened in firefox browser; psy-ab — may be used when google search is opened in google chrome browser; toolbar — returns XML; youtube — returns JSONP; gws-wiz-local — used in google local; img — used in google’s image search; products-cc — used in google shopping search
+   * search client for autocomplete optional field autocomplete results may differ depending on the search client; possible values: chrome — used when google search is opened in google chrome; chrome-omni — used in the address bar in chrome; gws-wiz — used in google search home page; gws-wiz-serp — used in google search engine results page; safari — used when google search is opened in safari browser; firefox — used when google search is opened in firefox browser; psy-ab — may be used when google search is opened in google chrome browser; toolbar — returns XML; youtube — returns JSONP; gws-wiz-local — used in google local; img — used in google’s image search; products-cc — used in google shopping search
    * @return client
   **/
   @javax.annotation.Nullable

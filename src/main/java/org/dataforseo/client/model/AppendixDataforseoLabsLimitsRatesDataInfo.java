@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixDataforseoLabsLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixDataforseoLabsLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES = "locations_and_languages";
   @SerializedName(SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES)
@@ -67,127 +67,127 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
 
   public static final String SERIALIZED_NAME_PRODUCT_COMPETITORS = "product_competitors";
   @SerializedName(SERIALIZED_NAME_PRODUCT_COMPETITORS)
-  private AppendixFunctionInfo productCompetitors;
+  private AppendixInfo productCompetitors;
 
   public static final String SERIALIZED_NAME_PRODUCT_KEYWORD_INTERSECTIONS = "product_keyword_intersections";
   @SerializedName(SERIALIZED_NAME_PRODUCT_KEYWORD_INTERSECTIONS)
-  private AppendixFunctionInfo productKeywordIntersections;
+  private AppendixInfo productKeywordIntersections;
 
   public static final String SERIALIZED_NAME_PRODUCT_RANK_OVERVIEW = "product_rank_overview";
   @SerializedName(SERIALIZED_NAME_PRODUCT_RANK_OVERVIEW)
-  private AppendixFunctionInfo productRankOverview;
+  private AppendixInfo productRankOverview;
 
   public static final String SERIALIZED_NAME_RANKED_KEYWORDS = "ranked_keywords";
   @SerializedName(SERIALIZED_NAME_RANKED_KEYWORDS)
-  private AppendixFunctionInfo rankedKeywords;
+  private AppendixInfo rankedKeywords;
 
   public static final String SERIALIZED_NAME_SERP_COMPETITORS = "serp_competitors";
   @SerializedName(SERIALIZED_NAME_SERP_COMPETITORS)
-  private AppendixFunctionInfo serpCompetitors;
+  private AppendixInfo serpCompetitors;
 
   public static final String SERIALIZED_NAME_SUBDOMAINS = "subdomains";
   @SerializedName(SERIALIZED_NAME_SUBDOMAINS)
-  private AppendixFunctionInfo subdomains;
+  private AppendixInfo subdomains;
 
   public static final String SERIALIZED_NAME_RELEVANT_PAGES = "relevant_pages";
   @SerializedName(SERIALIZED_NAME_RELEVANT_PAGES)
-  private AppendixFunctionInfo relevantPages;
+  private AppendixInfo relevantPages;
 
   public static final String SERIALIZED_NAME_COMPETITORS_DOMAIN = "competitors_domain";
   @SerializedName(SERIALIZED_NAME_COMPETITORS_DOMAIN)
-  private AppendixFunctionInfo competitorsDomain;
+  private AppendixInfo competitorsDomain;
 
   public static final String SERIALIZED_NAME_RELATED_KEYWORDS = "related_keywords";
   @SerializedName(SERIALIZED_NAME_RELATED_KEYWORDS)
-  private AppendixFunctionInfo relatedKeywords;
+  private AppendixInfo relatedKeywords;
 
   public static final String SERIALIZED_NAME_DOMAIN_RANK_OVERVIEW = "domain_rank_overview";
   @SerializedName(SERIALIZED_NAME_DOMAIN_RANK_OVERVIEW)
-  private AppendixFunctionInfo domainRankOverview;
+  private AppendixInfo domainRankOverview;
 
   public static final String SERIALIZED_NAME_DOMAIN_INTERSECTION = "domain_intersection";
   @SerializedName(SERIALIZED_NAME_DOMAIN_INTERSECTION)
-  private AppendixFunctionInfo domainIntersection;
+  private AppendixInfo domainIntersection;
 
   public static final String SERIALIZED_NAME_PAGE_INTERSECTION = "page_intersection";
   @SerializedName(SERIALIZED_NAME_PAGE_INTERSECTION)
-  private AppendixFunctionInfo pageIntersection;
+  private AppendixInfo pageIntersection;
 
   public static final String SERIALIZED_NAME_BULK_TRAFFIC_ESTIMATION = "bulk_traffic_estimation";
   @SerializedName(SERIALIZED_NAME_BULK_TRAFFIC_ESTIMATION)
-  private AppendixFunctionInfo bulkTrafficEstimation;
+  private AppendixInfo bulkTrafficEstimation;
 
   public static final String SERIALIZED_NAME_BULK_KEYWORD_DIFFICULTY = "bulk_keyword_difficulty";
   @SerializedName(SERIALIZED_NAME_BULK_KEYWORD_DIFFICULTY)
-  private AppendixFunctionInfo bulkKeywordDifficulty;
+  private AppendixInfo bulkKeywordDifficulty;
 
   public static final String SERIALIZED_NAME_BULK_SEARCH_VOLUME = "bulk_search_volume";
   @SerializedName(SERIALIZED_NAME_BULK_SEARCH_VOLUME)
-  private AppendixFunctionInfo bulkSearchVolume;
+  private AppendixInfo bulkSearchVolume;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_SITE = "keywords_for_site";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_SITE)
-  private AppendixFunctionInfo keywordsForSite;
+  private AppendixInfo keywordsForSite;
 
   public static final String SERIALIZED_NAME_KEYWORD_SUGGESTIONS = "keyword_suggestions";
   @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS)
-  private AppendixFunctionInfo keywordSuggestions;
+  private AppendixInfo keywordSuggestions;
 
   public static final String SERIALIZED_NAME_KEYWORD_IDEAS = "keyword_ideas";
   @SerializedName(SERIALIZED_NAME_KEYWORD_IDEAS)
-  private AppendixFunctionInfo keywordIdeas;
+  private AppendixInfo keywordIdeas;
 
   public static final String SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME = "historical_search_volume";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME)
-  private AppendixFunctionInfo historicalSearchVolume;
+  private AppendixInfo historicalSearchVolume;
 
   public static final String SERIALIZED_NAME_CATEGORIES_FOR_DOMAIN = "categories_for_domain";
   @SerializedName(SERIALIZED_NAME_CATEGORIES_FOR_DOMAIN)
-  private AppendixFunctionInfo categoriesForDomain;
+  private AppendixInfo categoriesForDomain;
 
   public static final String SERIALIZED_NAME_DOMAIN_METRICS_BY_CATEGORIES = "domain_metrics_by_categories";
   @SerializedName(SERIALIZED_NAME_DOMAIN_METRICS_BY_CATEGORIES)
-  private AppendixFunctionInfo domainMetricsByCategories;
+  private AppendixInfo domainMetricsByCategories;
 
   public static final String SERIALIZED_NAME_TOP_SEARCHES = "top_searches";
   @SerializedName(SERIALIZED_NAME_TOP_SEARCHES)
-  private AppendixFunctionInfo topSearches;
+  private AppendixInfo topSearches;
 
   public static final String SERIALIZED_NAME_DOMAIN_WHOIS_OVERVIEW = "domain_whois_overview";
   @SerializedName(SERIALIZED_NAME_DOMAIN_WHOIS_OVERVIEW)
-  private AppendixFunctionInfo domainWhoisOverview;
+  private AppendixInfo domainWhoisOverview;
 
   public static final String SERIALIZED_NAME_HISTORICAL_RANK_OVERVIEW = "historical_rank_overview";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_RANK_OVERVIEW)
-  private AppendixFunctionInfo historicalRankOverview;
+  private AppendixInfo historicalRankOverview;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_CATEGORIES = "keywords_for_categories";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_CATEGORIES)
-  private AppendixFunctionInfo keywordsForCategories;
+  private AppendixInfo keywordsForCategories;
 
   public static final String SERIALIZED_NAME_HISTORICAL_SERPS = "historical_serps";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_SERPS)
-  private AppendixFunctionInfo historicalSerps;
+  private AppendixInfo historicalSerps;
 
   public static final String SERIALIZED_NAME_APP_COMPETITORS = "app_competitors";
   @SerializedName(SERIALIZED_NAME_APP_COMPETITORS)
-  private AppendixFunctionInfo appCompetitors;
+  private AppendixInfo appCompetitors;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_APP = "keywords_for_app";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_APP)
-  private AppendixFunctionInfo keywordsForApp;
+  private AppendixInfo keywordsForApp;
 
   public static final String SERIALIZED_NAME_APP_INTERSECTION = "app_intersection";
   @SerializedName(SERIALIZED_NAME_APP_INTERSECTION)
-  private AppendixFunctionInfo appIntersection;
+  private AppendixInfo appIntersection;
 
   public static final String SERIALIZED_NAME_BULK_APP_METRICS = "bulk_app_metrics";
   @SerializedName(SERIALIZED_NAME_BULK_APP_METRICS)
-  private AppendixFunctionInfo bulkAppMetrics;
+  private AppendixInfo bulkAppMetrics;
 
   public static final String SERIALIZED_NAME_SEARCH_INTENT = "search_intent";
   @SerializedName(SERIALIZED_NAME_SEARCH_INTENT)
-  private AppendixFunctionInfo searchIntent;
+  private AppendixInfo searchIntent;
 
   public AppendixDataforseoLabsLimitsRatesDataInfo() {
   }
@@ -249,7 +249,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo productCompetitors(AppendixFunctionInfo productCompetitors) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo productCompetitors(AppendixInfo productCompetitors) {
     this.productCompetitors = productCompetitors;
     return this;
   }
@@ -259,16 +259,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return productCompetitors
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getProductCompetitors() {
+  public AppendixInfo getProductCompetitors() {
     return productCompetitors;
   }
 
-  public void setProductCompetitors(AppendixFunctionInfo productCompetitors) {
+  public void setProductCompetitors(AppendixInfo productCompetitors) {
     this.productCompetitors = productCompetitors;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo productKeywordIntersections(AppendixFunctionInfo productKeywordIntersections) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo productKeywordIntersections(AppendixInfo productKeywordIntersections) {
     this.productKeywordIntersections = productKeywordIntersections;
     return this;
   }
@@ -278,16 +278,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return productKeywordIntersections
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getProductKeywordIntersections() {
+  public AppendixInfo getProductKeywordIntersections() {
     return productKeywordIntersections;
   }
 
-  public void setProductKeywordIntersections(AppendixFunctionInfo productKeywordIntersections) {
+  public void setProductKeywordIntersections(AppendixInfo productKeywordIntersections) {
     this.productKeywordIntersections = productKeywordIntersections;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo productRankOverview(AppendixFunctionInfo productRankOverview) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo productRankOverview(AppendixInfo productRankOverview) {
     this.productRankOverview = productRankOverview;
     return this;
   }
@@ -297,16 +297,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return productRankOverview
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getProductRankOverview() {
+  public AppendixInfo getProductRankOverview() {
     return productRankOverview;
   }
 
-  public void setProductRankOverview(AppendixFunctionInfo productRankOverview) {
+  public void setProductRankOverview(AppendixInfo productRankOverview) {
     this.productRankOverview = productRankOverview;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo rankedKeywords(AppendixFunctionInfo rankedKeywords) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo rankedKeywords(AppendixInfo rankedKeywords) {
     this.rankedKeywords = rankedKeywords;
     return this;
   }
@@ -316,16 +316,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return rankedKeywords
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getRankedKeywords() {
+  public AppendixInfo getRankedKeywords() {
     return rankedKeywords;
   }
 
-  public void setRankedKeywords(AppendixFunctionInfo rankedKeywords) {
+  public void setRankedKeywords(AppendixInfo rankedKeywords) {
     this.rankedKeywords = rankedKeywords;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo serpCompetitors(AppendixFunctionInfo serpCompetitors) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo serpCompetitors(AppendixInfo serpCompetitors) {
     this.serpCompetitors = serpCompetitors;
     return this;
   }
@@ -335,16 +335,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return serpCompetitors
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSerpCompetitors() {
+  public AppendixInfo getSerpCompetitors() {
     return serpCompetitors;
   }
 
-  public void setSerpCompetitors(AppendixFunctionInfo serpCompetitors) {
+  public void setSerpCompetitors(AppendixInfo serpCompetitors) {
     this.serpCompetitors = serpCompetitors;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo subdomains(AppendixFunctionInfo subdomains) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo subdomains(AppendixInfo subdomains) {
     this.subdomains = subdomains;
     return this;
   }
@@ -354,16 +354,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return subdomains
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSubdomains() {
+  public AppendixInfo getSubdomains() {
     return subdomains;
   }
 
-  public void setSubdomains(AppendixFunctionInfo subdomains) {
+  public void setSubdomains(AppendixInfo subdomains) {
     this.subdomains = subdomains;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo relevantPages(AppendixFunctionInfo relevantPages) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo relevantPages(AppendixInfo relevantPages) {
     this.relevantPages = relevantPages;
     return this;
   }
@@ -373,16 +373,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return relevantPages
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getRelevantPages() {
+  public AppendixInfo getRelevantPages() {
     return relevantPages;
   }
 
-  public void setRelevantPages(AppendixFunctionInfo relevantPages) {
+  public void setRelevantPages(AppendixInfo relevantPages) {
     this.relevantPages = relevantPages;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo competitorsDomain(AppendixFunctionInfo competitorsDomain) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo competitorsDomain(AppendixInfo competitorsDomain) {
     this.competitorsDomain = competitorsDomain;
     return this;
   }
@@ -392,16 +392,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return competitorsDomain
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getCompetitorsDomain() {
+  public AppendixInfo getCompetitorsDomain() {
     return competitorsDomain;
   }
 
-  public void setCompetitorsDomain(AppendixFunctionInfo competitorsDomain) {
+  public void setCompetitorsDomain(AppendixInfo competitorsDomain) {
     this.competitorsDomain = competitorsDomain;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo relatedKeywords(AppendixFunctionInfo relatedKeywords) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo relatedKeywords(AppendixInfo relatedKeywords) {
     this.relatedKeywords = relatedKeywords;
     return this;
   }
@@ -411,16 +411,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return relatedKeywords
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getRelatedKeywords() {
+  public AppendixInfo getRelatedKeywords() {
     return relatedKeywords;
   }
 
-  public void setRelatedKeywords(AppendixFunctionInfo relatedKeywords) {
+  public void setRelatedKeywords(AppendixInfo relatedKeywords) {
     this.relatedKeywords = relatedKeywords;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo domainRankOverview(AppendixFunctionInfo domainRankOverview) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo domainRankOverview(AppendixInfo domainRankOverview) {
     this.domainRankOverview = domainRankOverview;
     return this;
   }
@@ -430,16 +430,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return domainRankOverview
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainRankOverview() {
+  public AppendixInfo getDomainRankOverview() {
     return domainRankOverview;
   }
 
-  public void setDomainRankOverview(AppendixFunctionInfo domainRankOverview) {
+  public void setDomainRankOverview(AppendixInfo domainRankOverview) {
     this.domainRankOverview = domainRankOverview;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo domainIntersection(AppendixFunctionInfo domainIntersection) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo domainIntersection(AppendixInfo domainIntersection) {
     this.domainIntersection = domainIntersection;
     return this;
   }
@@ -449,16 +449,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return domainIntersection
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainIntersection() {
+  public AppendixInfo getDomainIntersection() {
     return domainIntersection;
   }
 
-  public void setDomainIntersection(AppendixFunctionInfo domainIntersection) {
+  public void setDomainIntersection(AppendixInfo domainIntersection) {
     this.domainIntersection = domainIntersection;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo pageIntersection(AppendixFunctionInfo pageIntersection) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo pageIntersection(AppendixInfo pageIntersection) {
     this.pageIntersection = pageIntersection;
     return this;
   }
@@ -468,16 +468,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return pageIntersection
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getPageIntersection() {
+  public AppendixInfo getPageIntersection() {
     return pageIntersection;
   }
 
-  public void setPageIntersection(AppendixFunctionInfo pageIntersection) {
+  public void setPageIntersection(AppendixInfo pageIntersection) {
     this.pageIntersection = pageIntersection;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo bulkTrafficEstimation(AppendixFunctionInfo bulkTrafficEstimation) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo bulkTrafficEstimation(AppendixInfo bulkTrafficEstimation) {
     this.bulkTrafficEstimation = bulkTrafficEstimation;
     return this;
   }
@@ -487,16 +487,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return bulkTrafficEstimation
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkTrafficEstimation() {
+  public AppendixInfo getBulkTrafficEstimation() {
     return bulkTrafficEstimation;
   }
 
-  public void setBulkTrafficEstimation(AppendixFunctionInfo bulkTrafficEstimation) {
+  public void setBulkTrafficEstimation(AppendixInfo bulkTrafficEstimation) {
     this.bulkTrafficEstimation = bulkTrafficEstimation;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo bulkKeywordDifficulty(AppendixFunctionInfo bulkKeywordDifficulty) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo bulkKeywordDifficulty(AppendixInfo bulkKeywordDifficulty) {
     this.bulkKeywordDifficulty = bulkKeywordDifficulty;
     return this;
   }
@@ -506,16 +506,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return bulkKeywordDifficulty
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkKeywordDifficulty() {
+  public AppendixInfo getBulkKeywordDifficulty() {
     return bulkKeywordDifficulty;
   }
 
-  public void setBulkKeywordDifficulty(AppendixFunctionInfo bulkKeywordDifficulty) {
+  public void setBulkKeywordDifficulty(AppendixInfo bulkKeywordDifficulty) {
     this.bulkKeywordDifficulty = bulkKeywordDifficulty;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo bulkSearchVolume(AppendixFunctionInfo bulkSearchVolume) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo bulkSearchVolume(AppendixInfo bulkSearchVolume) {
     this.bulkSearchVolume = bulkSearchVolume;
     return this;
   }
@@ -525,16 +525,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return bulkSearchVolume
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkSearchVolume() {
+  public AppendixInfo getBulkSearchVolume() {
     return bulkSearchVolume;
   }
 
-  public void setBulkSearchVolume(AppendixFunctionInfo bulkSearchVolume) {
+  public void setBulkSearchVolume(AppendixInfo bulkSearchVolume) {
     this.bulkSearchVolume = bulkSearchVolume;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo keywordsForSite(AppendixFunctionInfo keywordsForSite) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo keywordsForSite(AppendixInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
     return this;
   }
@@ -544,16 +544,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return keywordsForSite
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordsForSite() {
+  public AppendixInfo getKeywordsForSite() {
     return keywordsForSite;
   }
 
-  public void setKeywordsForSite(AppendixFunctionInfo keywordsForSite) {
+  public void setKeywordsForSite(AppendixInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo keywordSuggestions(AppendixFunctionInfo keywordSuggestions) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo keywordSuggestions(AppendixInfo keywordSuggestions) {
     this.keywordSuggestions = keywordSuggestions;
     return this;
   }
@@ -563,16 +563,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return keywordSuggestions
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordSuggestions() {
+  public AppendixInfo getKeywordSuggestions() {
     return keywordSuggestions;
   }
 
-  public void setKeywordSuggestions(AppendixFunctionInfo keywordSuggestions) {
+  public void setKeywordSuggestions(AppendixInfo keywordSuggestions) {
     this.keywordSuggestions = keywordSuggestions;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo keywordIdeas(AppendixFunctionInfo keywordIdeas) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo keywordIdeas(AppendixInfo keywordIdeas) {
     this.keywordIdeas = keywordIdeas;
     return this;
   }
@@ -582,16 +582,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return keywordIdeas
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordIdeas() {
+  public AppendixInfo getKeywordIdeas() {
     return keywordIdeas;
   }
 
-  public void setKeywordIdeas(AppendixFunctionInfo keywordIdeas) {
+  public void setKeywordIdeas(AppendixInfo keywordIdeas) {
     this.keywordIdeas = keywordIdeas;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo historicalSearchVolume(AppendixFunctionInfo historicalSearchVolume) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo historicalSearchVolume(AppendixInfo historicalSearchVolume) {
     this.historicalSearchVolume = historicalSearchVolume;
     return this;
   }
@@ -601,16 +601,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return historicalSearchVolume
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getHistoricalSearchVolume() {
+  public AppendixInfo getHistoricalSearchVolume() {
     return historicalSearchVolume;
   }
 
-  public void setHistoricalSearchVolume(AppendixFunctionInfo historicalSearchVolume) {
+  public void setHistoricalSearchVolume(AppendixInfo historicalSearchVolume) {
     this.historicalSearchVolume = historicalSearchVolume;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo categoriesForDomain(AppendixFunctionInfo categoriesForDomain) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo categoriesForDomain(AppendixInfo categoriesForDomain) {
     this.categoriesForDomain = categoriesForDomain;
     return this;
   }
@@ -620,16 +620,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return categoriesForDomain
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getCategoriesForDomain() {
+  public AppendixInfo getCategoriesForDomain() {
     return categoriesForDomain;
   }
 
-  public void setCategoriesForDomain(AppendixFunctionInfo categoriesForDomain) {
+  public void setCategoriesForDomain(AppendixInfo categoriesForDomain) {
     this.categoriesForDomain = categoriesForDomain;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo domainMetricsByCategories(AppendixFunctionInfo domainMetricsByCategories) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo domainMetricsByCategories(AppendixInfo domainMetricsByCategories) {
     this.domainMetricsByCategories = domainMetricsByCategories;
     return this;
   }
@@ -639,16 +639,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return domainMetricsByCategories
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainMetricsByCategories() {
+  public AppendixInfo getDomainMetricsByCategories() {
     return domainMetricsByCategories;
   }
 
-  public void setDomainMetricsByCategories(AppendixFunctionInfo domainMetricsByCategories) {
+  public void setDomainMetricsByCategories(AppendixInfo domainMetricsByCategories) {
     this.domainMetricsByCategories = domainMetricsByCategories;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo topSearches(AppendixFunctionInfo topSearches) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo topSearches(AppendixInfo topSearches) {
     this.topSearches = topSearches;
     return this;
   }
@@ -658,16 +658,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return topSearches
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getTopSearches() {
+  public AppendixInfo getTopSearches() {
     return topSearches;
   }
 
-  public void setTopSearches(AppendixFunctionInfo topSearches) {
+  public void setTopSearches(AppendixInfo topSearches) {
     this.topSearches = topSearches;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo domainWhoisOverview(AppendixFunctionInfo domainWhoisOverview) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo domainWhoisOverview(AppendixInfo domainWhoisOverview) {
     this.domainWhoisOverview = domainWhoisOverview;
     return this;
   }
@@ -677,16 +677,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return domainWhoisOverview
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainWhoisOverview() {
+  public AppendixInfo getDomainWhoisOverview() {
     return domainWhoisOverview;
   }
 
-  public void setDomainWhoisOverview(AppendixFunctionInfo domainWhoisOverview) {
+  public void setDomainWhoisOverview(AppendixInfo domainWhoisOverview) {
     this.domainWhoisOverview = domainWhoisOverview;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo historicalRankOverview(AppendixFunctionInfo historicalRankOverview) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo historicalRankOverview(AppendixInfo historicalRankOverview) {
     this.historicalRankOverview = historicalRankOverview;
     return this;
   }
@@ -696,16 +696,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return historicalRankOverview
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getHistoricalRankOverview() {
+  public AppendixInfo getHistoricalRankOverview() {
     return historicalRankOverview;
   }
 
-  public void setHistoricalRankOverview(AppendixFunctionInfo historicalRankOverview) {
+  public void setHistoricalRankOverview(AppendixInfo historicalRankOverview) {
     this.historicalRankOverview = historicalRankOverview;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo keywordsForCategories(AppendixFunctionInfo keywordsForCategories) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo keywordsForCategories(AppendixInfo keywordsForCategories) {
     this.keywordsForCategories = keywordsForCategories;
     return this;
   }
@@ -715,16 +715,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return keywordsForCategories
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordsForCategories() {
+  public AppendixInfo getKeywordsForCategories() {
     return keywordsForCategories;
   }
 
-  public void setKeywordsForCategories(AppendixFunctionInfo keywordsForCategories) {
+  public void setKeywordsForCategories(AppendixInfo keywordsForCategories) {
     this.keywordsForCategories = keywordsForCategories;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo historicalSerps(AppendixFunctionInfo historicalSerps) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo historicalSerps(AppendixInfo historicalSerps) {
     this.historicalSerps = historicalSerps;
     return this;
   }
@@ -734,16 +734,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return historicalSerps
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getHistoricalSerps() {
+  public AppendixInfo getHistoricalSerps() {
     return historicalSerps;
   }
 
-  public void setHistoricalSerps(AppendixFunctionInfo historicalSerps) {
+  public void setHistoricalSerps(AppendixInfo historicalSerps) {
     this.historicalSerps = historicalSerps;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo appCompetitors(AppendixFunctionInfo appCompetitors) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo appCompetitors(AppendixInfo appCompetitors) {
     this.appCompetitors = appCompetitors;
     return this;
   }
@@ -753,16 +753,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return appCompetitors
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getAppCompetitors() {
+  public AppendixInfo getAppCompetitors() {
     return appCompetitors;
   }
 
-  public void setAppCompetitors(AppendixFunctionInfo appCompetitors) {
+  public void setAppCompetitors(AppendixInfo appCompetitors) {
     this.appCompetitors = appCompetitors;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo keywordsForApp(AppendixFunctionInfo keywordsForApp) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo keywordsForApp(AppendixInfo keywordsForApp) {
     this.keywordsForApp = keywordsForApp;
     return this;
   }
@@ -772,16 +772,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return keywordsForApp
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getKeywordsForApp() {
+  public AppendixInfo getKeywordsForApp() {
     return keywordsForApp;
   }
 
-  public void setKeywordsForApp(AppendixFunctionInfo keywordsForApp) {
+  public void setKeywordsForApp(AppendixInfo keywordsForApp) {
     this.keywordsForApp = keywordsForApp;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo appIntersection(AppendixFunctionInfo appIntersection) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo appIntersection(AppendixInfo appIntersection) {
     this.appIntersection = appIntersection;
     return this;
   }
@@ -791,16 +791,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return appIntersection
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getAppIntersection() {
+  public AppendixInfo getAppIntersection() {
     return appIntersection;
   }
 
-  public void setAppIntersection(AppendixFunctionInfo appIntersection) {
+  public void setAppIntersection(AppendixInfo appIntersection) {
     this.appIntersection = appIntersection;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo bulkAppMetrics(AppendixFunctionInfo bulkAppMetrics) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo bulkAppMetrics(AppendixInfo bulkAppMetrics) {
     this.bulkAppMetrics = bulkAppMetrics;
     return this;
   }
@@ -810,16 +810,16 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return bulkAppMetrics
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkAppMetrics() {
+  public AppendixInfo getBulkAppMetrics() {
     return bulkAppMetrics;
   }
 
-  public void setBulkAppMetrics(AppendixFunctionInfo bulkAppMetrics) {
+  public void setBulkAppMetrics(AppendixInfo bulkAppMetrics) {
     this.bulkAppMetrics = bulkAppMetrics;
   }
 
 
-  public AppendixDataforseoLabsLimitsRatesDataInfo searchIntent(AppendixFunctionInfo searchIntent) {
+  public AppendixDataforseoLabsLimitsRatesDataInfo searchIntent(AppendixInfo searchIntent) {
     this.searchIntent = searchIntent;
     return this;
   }
@@ -829,11 +829,11 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
    * @return searchIntent
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSearchIntent() {
+  public AppendixInfo getSearchIntent() {
     return searchIntent;
   }
 
-  public void setSearchIntent(AppendixFunctionInfo searchIntent) {
+  public void setSearchIntent(AppendixInfo searchIntent) {
     this.searchIntent = searchIntent;
   }
 
@@ -1022,127 +1022,127 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `product_competitors`
       if (jsonObj.get("product_competitors") != null && !jsonObj.get("product_competitors").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("product_competitors"));
+        AppendixInfo.validateJsonElement(jsonObj.get("product_competitors"));
       }
       // validate the optional field `product_keyword_intersections`
       if (jsonObj.get("product_keyword_intersections") != null && !jsonObj.get("product_keyword_intersections").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("product_keyword_intersections"));
+        AppendixInfo.validateJsonElement(jsonObj.get("product_keyword_intersections"));
       }
       // validate the optional field `product_rank_overview`
       if (jsonObj.get("product_rank_overview") != null && !jsonObj.get("product_rank_overview").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("product_rank_overview"));
+        AppendixInfo.validateJsonElement(jsonObj.get("product_rank_overview"));
       }
       // validate the optional field `ranked_keywords`
       if (jsonObj.get("ranked_keywords") != null && !jsonObj.get("ranked_keywords").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("ranked_keywords"));
+        AppendixInfo.validateJsonElement(jsonObj.get("ranked_keywords"));
       }
       // validate the optional field `serp_competitors`
       if (jsonObj.get("serp_competitors") != null && !jsonObj.get("serp_competitors").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("serp_competitors"));
+        AppendixInfo.validateJsonElement(jsonObj.get("serp_competitors"));
       }
       // validate the optional field `subdomains`
       if (jsonObj.get("subdomains") != null && !jsonObj.get("subdomains").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("subdomains"));
+        AppendixInfo.validateJsonElement(jsonObj.get("subdomains"));
       }
       // validate the optional field `relevant_pages`
       if (jsonObj.get("relevant_pages") != null && !jsonObj.get("relevant_pages").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("relevant_pages"));
+        AppendixInfo.validateJsonElement(jsonObj.get("relevant_pages"));
       }
       // validate the optional field `competitors_domain`
       if (jsonObj.get("competitors_domain") != null && !jsonObj.get("competitors_domain").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("competitors_domain"));
+        AppendixInfo.validateJsonElement(jsonObj.get("competitors_domain"));
       }
       // validate the optional field `related_keywords`
       if (jsonObj.get("related_keywords") != null && !jsonObj.get("related_keywords").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("related_keywords"));
+        AppendixInfo.validateJsonElement(jsonObj.get("related_keywords"));
       }
       // validate the optional field `domain_rank_overview`
       if (jsonObj.get("domain_rank_overview") != null && !jsonObj.get("domain_rank_overview").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_rank_overview"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_rank_overview"));
       }
       // validate the optional field `domain_intersection`
       if (jsonObj.get("domain_intersection") != null && !jsonObj.get("domain_intersection").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_intersection"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_intersection"));
       }
       // validate the optional field `page_intersection`
       if (jsonObj.get("page_intersection") != null && !jsonObj.get("page_intersection").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("page_intersection"));
+        AppendixInfo.validateJsonElement(jsonObj.get("page_intersection"));
       }
       // validate the optional field `bulk_traffic_estimation`
       if (jsonObj.get("bulk_traffic_estimation") != null && !jsonObj.get("bulk_traffic_estimation").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_traffic_estimation"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_traffic_estimation"));
       }
       // validate the optional field `bulk_keyword_difficulty`
       if (jsonObj.get("bulk_keyword_difficulty") != null && !jsonObj.get("bulk_keyword_difficulty").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_keyword_difficulty"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_keyword_difficulty"));
       }
       // validate the optional field `bulk_search_volume`
       if (jsonObj.get("bulk_search_volume") != null && !jsonObj.get("bulk_search_volume").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_search_volume"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_search_volume"));
       }
       // validate the optional field `keywords_for_site`
       if (jsonObj.get("keywords_for_site") != null && !jsonObj.get("keywords_for_site").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
       }
       // validate the optional field `keyword_suggestions`
       if (jsonObj.get("keyword_suggestions") != null && !jsonObj.get("keyword_suggestions").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keyword_suggestions"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keyword_suggestions"));
       }
       // validate the optional field `keyword_ideas`
       if (jsonObj.get("keyword_ideas") != null && !jsonObj.get("keyword_ideas").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keyword_ideas"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keyword_ideas"));
       }
       // validate the optional field `historical_search_volume`
       if (jsonObj.get("historical_search_volume") != null && !jsonObj.get("historical_search_volume").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("historical_search_volume"));
+        AppendixInfo.validateJsonElement(jsonObj.get("historical_search_volume"));
       }
       // validate the optional field `categories_for_domain`
       if (jsonObj.get("categories_for_domain") != null && !jsonObj.get("categories_for_domain").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("categories_for_domain"));
+        AppendixInfo.validateJsonElement(jsonObj.get("categories_for_domain"));
       }
       // validate the optional field `domain_metrics_by_categories`
       if (jsonObj.get("domain_metrics_by_categories") != null && !jsonObj.get("domain_metrics_by_categories").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_metrics_by_categories"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_metrics_by_categories"));
       }
       // validate the optional field `top_searches`
       if (jsonObj.get("top_searches") != null && !jsonObj.get("top_searches").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("top_searches"));
+        AppendixInfo.validateJsonElement(jsonObj.get("top_searches"));
       }
       // validate the optional field `domain_whois_overview`
       if (jsonObj.get("domain_whois_overview") != null && !jsonObj.get("domain_whois_overview").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_whois_overview"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_whois_overview"));
       }
       // validate the optional field `historical_rank_overview`
       if (jsonObj.get("historical_rank_overview") != null && !jsonObj.get("historical_rank_overview").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("historical_rank_overview"));
+        AppendixInfo.validateJsonElement(jsonObj.get("historical_rank_overview"));
       }
       // validate the optional field `keywords_for_categories`
       if (jsonObj.get("keywords_for_categories") != null && !jsonObj.get("keywords_for_categories").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keywords_for_categories"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keywords_for_categories"));
       }
       // validate the optional field `historical_serps`
       if (jsonObj.get("historical_serps") != null && !jsonObj.get("historical_serps").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("historical_serps"));
+        AppendixInfo.validateJsonElement(jsonObj.get("historical_serps"));
       }
       // validate the optional field `app_competitors`
       if (jsonObj.get("app_competitors") != null && !jsonObj.get("app_competitors").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("app_competitors"));
+        AppendixInfo.validateJsonElement(jsonObj.get("app_competitors"));
       }
       // validate the optional field `keywords_for_app`
       if (jsonObj.get("keywords_for_app") != null && !jsonObj.get("keywords_for_app").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("keywords_for_app"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keywords_for_app"));
       }
       // validate the optional field `app_intersection`
       if (jsonObj.get("app_intersection") != null && !jsonObj.get("app_intersection").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("app_intersection"));
+        AppendixInfo.validateJsonElement(jsonObj.get("app_intersection"));
       }
       // validate the optional field `bulk_app_metrics`
       if (jsonObj.get("bulk_app_metrics") != null && !jsonObj.get("bulk_app_metrics").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_app_metrics"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_app_metrics"));
       }
       // validate the optional field `search_intent`
       if (jsonObj.get("search_intent") != null && !jsonObj.get("search_intent").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("search_intent"));
+        AppendixInfo.validateJsonElement(jsonObj.get("search_intent"));
       }
   }
 

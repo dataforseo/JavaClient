@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AppendixContentGenerationDayLimitsRatesDataInfo;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,23 +51,23 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixContentGenerationLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixContentGenerationLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_GENERATE = "generate";
   @SerializedName(SERIALIZED_NAME_GENERATE)
-  private AppendixFunctionInfo generate;
+  private AppendixInfo generate;
 
   public static final String SERIALIZED_NAME_GENERATE_META_TAGS = "generate_meta_tags";
   @SerializedName(SERIALIZED_NAME_GENERATE_META_TAGS)
-  private AppendixFunctionInfo generateMetaTags;
+  private AppendixInfo generateMetaTags;
 
   public static final String SERIALIZED_NAME_GENERATE_TEXT = "generate_text";
   @SerializedName(SERIALIZED_NAME_GENERATE_TEXT)
-  private AppendixFunctionInfo generateText;
+  private AppendixInfo generateText;
 
   public static final String SERIALIZED_NAME_PARAPHRASE = "paraphrase";
   @SerializedName(SERIALIZED_NAME_PARAPHRASE)
-  private AppendixFunctionInfo paraphrase;
+  private AppendixInfo paraphrase;
 
   public static final String SERIALIZED_NAME_CHECK_GRAMMAR = "check_grammar";
   @SerializedName(SERIALIZED_NAME_CHECK_GRAMMAR)
@@ -79,12 +79,12 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
 
   public static final String SERIALIZED_NAME_GENERATE_SUB_TOPICS = "generate_sub_topics";
   @SerializedName(SERIALIZED_NAME_GENERATE_SUB_TOPICS)
-  private AppendixFunctionInfo generateSubTopics;
+  private AppendixInfo generateSubTopics;
 
   public AppendixContentGenerationLimitsRatesDataInfo() {
   }
 
-  public AppendixContentGenerationLimitsRatesDataInfo generate(AppendixFunctionInfo generate) {
+  public AppendixContentGenerationLimitsRatesDataInfo generate(AppendixInfo generate) {
     this.generate = generate;
     return this;
   }
@@ -94,16 +94,16 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
    * @return generate
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getGenerate() {
+  public AppendixInfo getGenerate() {
     return generate;
   }
 
-  public void setGenerate(AppendixFunctionInfo generate) {
+  public void setGenerate(AppendixInfo generate) {
     this.generate = generate;
   }
 
 
-  public AppendixContentGenerationLimitsRatesDataInfo generateMetaTags(AppendixFunctionInfo generateMetaTags) {
+  public AppendixContentGenerationLimitsRatesDataInfo generateMetaTags(AppendixInfo generateMetaTags) {
     this.generateMetaTags = generateMetaTags;
     return this;
   }
@@ -113,16 +113,16 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
    * @return generateMetaTags
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getGenerateMetaTags() {
+  public AppendixInfo getGenerateMetaTags() {
     return generateMetaTags;
   }
 
-  public void setGenerateMetaTags(AppendixFunctionInfo generateMetaTags) {
+  public void setGenerateMetaTags(AppendixInfo generateMetaTags) {
     this.generateMetaTags = generateMetaTags;
   }
 
 
-  public AppendixContentGenerationLimitsRatesDataInfo generateText(AppendixFunctionInfo generateText) {
+  public AppendixContentGenerationLimitsRatesDataInfo generateText(AppendixInfo generateText) {
     this.generateText = generateText;
     return this;
   }
@@ -132,16 +132,16 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
    * @return generateText
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getGenerateText() {
+  public AppendixInfo getGenerateText() {
     return generateText;
   }
 
-  public void setGenerateText(AppendixFunctionInfo generateText) {
+  public void setGenerateText(AppendixInfo generateText) {
     this.generateText = generateText;
   }
 
 
-  public AppendixContentGenerationLimitsRatesDataInfo paraphrase(AppendixFunctionInfo paraphrase) {
+  public AppendixContentGenerationLimitsRatesDataInfo paraphrase(AppendixInfo paraphrase) {
     this.paraphrase = paraphrase;
     return this;
   }
@@ -151,11 +151,11 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
    * @return paraphrase
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getParaphrase() {
+  public AppendixInfo getParaphrase() {
     return paraphrase;
   }
 
-  public void setParaphrase(AppendixFunctionInfo paraphrase) {
+  public void setParaphrase(AppendixInfo paraphrase) {
     this.paraphrase = paraphrase;
   }
 
@@ -198,7 +198,7 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
   }
 
 
-  public AppendixContentGenerationLimitsRatesDataInfo generateSubTopics(AppendixFunctionInfo generateSubTopics) {
+  public AppendixContentGenerationLimitsRatesDataInfo generateSubTopics(AppendixInfo generateSubTopics) {
     this.generateSubTopics = generateSubTopics;
     return this;
   }
@@ -208,11 +208,11 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
    * @return generateSubTopics
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getGenerateSubTopics() {
+  public AppendixInfo getGenerateSubTopics() {
     return generateSubTopics;
   }
 
-  public void setGenerateSubTopics(AppendixFunctionInfo generateSubTopics) {
+  public void setGenerateSubTopics(AppendixInfo generateSubTopics) {
     this.generateSubTopics = generateSubTopics;
   }
 
@@ -309,19 +309,19 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `generate`
       if (jsonObj.get("generate") != null && !jsonObj.get("generate").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("generate"));
+        AppendixInfo.validateJsonElement(jsonObj.get("generate"));
       }
       // validate the optional field `generate_meta_tags`
       if (jsonObj.get("generate_meta_tags") != null && !jsonObj.get("generate_meta_tags").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("generate_meta_tags"));
+        AppendixInfo.validateJsonElement(jsonObj.get("generate_meta_tags"));
       }
       // validate the optional field `generate_text`
       if (jsonObj.get("generate_text") != null && !jsonObj.get("generate_text").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("generate_text"));
+        AppendixInfo.validateJsonElement(jsonObj.get("generate_text"));
       }
       // validate the optional field `paraphrase`
       if (jsonObj.get("paraphrase") != null && !jsonObj.get("paraphrase").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("paraphrase"));
+        AppendixInfo.validateJsonElement(jsonObj.get("paraphrase"));
       }
       // validate the optional field `check_grammar`
       if (jsonObj.get("check_grammar") != null && !jsonObj.get("check_grammar").isJsonNull()) {
@@ -333,7 +333,7 @@ public class AppendixContentGenerationLimitsRatesDataInfo {
       }
       // validate the optional field `generate_sub_topics`
       if (jsonObj.get("generate_sub_topics") != null && !jsonObj.get("generate_sub_topics").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("generate_sub_topics"));
+        AppendixInfo.validateJsonElement(jsonObj.get("generate_sub_topics"));
       }
   }
 

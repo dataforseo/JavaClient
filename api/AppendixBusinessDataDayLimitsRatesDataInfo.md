@@ -7,8 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**reviews** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**search** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**reviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**search** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

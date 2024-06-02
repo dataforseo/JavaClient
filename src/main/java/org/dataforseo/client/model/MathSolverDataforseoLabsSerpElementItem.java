@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * MathSolverDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class MathSolverDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -221,7 +221,7 @@ public class MathSolverDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
   }
 
    /**
-   * additional items present in the element if there are none, equals null
+   * elements of search results found in SERP
    * @return items
   **/
   @javax.annotation.Nullable

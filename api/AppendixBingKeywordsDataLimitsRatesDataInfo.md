@@ -7,11 +7,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keywordPerformance** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**searchVolumeHistory** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**searchVolume** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**keywordsForSite** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**keywordsForKeywords** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**keywordPerformance** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**searchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordsForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

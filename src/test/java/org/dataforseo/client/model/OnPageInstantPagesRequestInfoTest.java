@@ -105,6 +105,14 @@ public class OnPageInstantPagesRequestInfoTest {
     }
 
     /**
+     * Test the property 'loadResources'
+     */
+    @Test
+    public void loadResourcesTest() {
+        // TODO: test loadResources
+    }
+
+    /**
      * Test the property 'enableJavascript'
      */
     @Test

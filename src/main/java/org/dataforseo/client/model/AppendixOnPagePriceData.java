@@ -21,8 +21,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.dataforseo.client.model.AppendixGoogleBusinessDataPriceDataInfo;
 import org.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
-import org.dataforseo.client.model.AppendixsGoogleBusinessDataPriceDataInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixOnPagePriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixOnPagePriceData {
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
@@ -59,7 +59,7 @@ public class AppendixOnPagePriceData {
 
   public static final String SERIALIZED_NAME_LIGHTHOUSE = "lighthouse";
   @SerializedName(SERIALIZED_NAME_LIGHTHOUSE)
-  private AppendixsGoogleBusinessDataPriceDataInfo lighthouse;
+  private AppendixGoogleBusinessDataPriceDataInfo lighthouse;
 
   public static final String SERIALIZED_NAME_CONTENT_PARSING = "content_parsing";
   @SerializedName(SERIALIZED_NAME_CONTENT_PARSING)
@@ -155,7 +155,7 @@ public class AppendixOnPagePriceData {
   }
 
 
-  public AppendixOnPagePriceData lighthouse(AppendixsGoogleBusinessDataPriceDataInfo lighthouse) {
+  public AppendixOnPagePriceData lighthouse(AppendixGoogleBusinessDataPriceDataInfo lighthouse) {
     this.lighthouse = lighthouse;
     return this;
   }
@@ -165,11 +165,11 @@ public class AppendixOnPagePriceData {
    * @return lighthouse
   **/
   @javax.annotation.Nullable
-  public AppendixsGoogleBusinessDataPriceDataInfo getLighthouse() {
+  public AppendixGoogleBusinessDataPriceDataInfo getLighthouse() {
     return lighthouse;
   }
 
-  public void setLighthouse(AppendixsGoogleBusinessDataPriceDataInfo lighthouse) {
+  public void setLighthouse(AppendixGoogleBusinessDataPriceDataInfo lighthouse) {
     this.lighthouse = lighthouse;
   }
 
@@ -651,7 +651,7 @@ public class AppendixOnPagePriceData {
       }
       // validate the optional field `lighthouse`
       if (jsonObj.get("lighthouse") != null && !jsonObj.get("lighthouse").isJsonNull()) {
-        AppendixsGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("lighthouse"));
+        AppendixGoogleBusinessDataPriceDataInfo.validateJsonElement(jsonObj.get("lighthouse"));
       }
       // validate the optional field `content_parsing`
       if (jsonObj.get("content_parsing") != null && !jsonObj.get("content_parsing").isJsonNull()) {

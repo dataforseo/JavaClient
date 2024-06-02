@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.AppendixFunctionInfo;
+import org.dataforseo.client.model.AppendixInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,67 +51,67 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBacklinksLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class AppendixBacklinksLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
-  private AppendixFunctionInfo summary;
+  private AppendixInfo summary;
 
   public static final String SERIALIZED_NAME_HISTORY = "history";
   @SerializedName(SERIALIZED_NAME_HISTORY)
-  private AppendixFunctionInfo history;
+  private AppendixInfo history;
 
   public static final String SERIALIZED_NAME_CONTENT_DUPLICATES = "content_duplicates";
   @SerializedName(SERIALIZED_NAME_CONTENT_DUPLICATES)
-  private AppendixFunctionInfo contentDuplicates;
+  private AppendixInfo contentDuplicates;
 
   public static final String SERIALIZED_NAME_DOMAIN_INTERSECTION = "domain_intersection";
   @SerializedName(SERIALIZED_NAME_DOMAIN_INTERSECTION)
-  private AppendixFunctionInfo domainIntersection;
+  private AppendixInfo domainIntersection;
 
   public static final String SERIALIZED_NAME_BACKLINKS = "backlinks";
   @SerializedName(SERIALIZED_NAME_BACKLINKS)
-  private AppendixFunctionInfo backlinks;
+  private AppendixInfo backlinks;
 
   public static final String SERIALIZED_NAME_DOMAIN_PAGES = "domain_pages";
   @SerializedName(SERIALIZED_NAME_DOMAIN_PAGES)
-  private AppendixFunctionInfo domainPages;
+  private AppendixInfo domainPages;
 
   public static final String SERIALIZED_NAME_ANCHORS = "anchors";
   @SerializedName(SERIALIZED_NAME_ANCHORS)
-  private AppendixFunctionInfo anchors;
+  private AppendixInfo anchors;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS = "referring_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS)
-  private AppendixFunctionInfo referringDomains;
+  private AppendixInfo referringDomains;
 
   public static final String SERIALIZED_NAME_PAGE_INTERSECTION = "page_intersection";
   @SerializedName(SERIALIZED_NAME_PAGE_INTERSECTION)
-  private AppendixFunctionInfo pageIntersection;
+  private AppendixInfo pageIntersection;
 
   public static final String SERIALIZED_NAME_REFERRING_NETWORKS = "referring_networks";
   @SerializedName(SERIALIZED_NAME_REFERRING_NETWORKS)
-  private AppendixFunctionInfo referringNetworks;
+  private AppendixInfo referringNetworks;
 
   public static final String SERIALIZED_NAME_BULK_RANKS = "bulk_ranks";
   @SerializedName(SERIALIZED_NAME_BULK_RANKS)
-  private AppendixFunctionInfo bulkRanks;
+  private AppendixInfo bulkRanks;
 
   public static final String SERIALIZED_NAME_BULK_BACKLINKS = "bulk_backlinks";
   @SerializedName(SERIALIZED_NAME_BULK_BACKLINKS)
-  private AppendixFunctionInfo bulkBacklinks;
+  private AppendixInfo bulkBacklinks;
 
   public static final String SERIALIZED_NAME_BULK_NEW_LOST_BACKLINKS = "bulk_new_lost_backlinks";
   @SerializedName(SERIALIZED_NAME_BULK_NEW_LOST_BACKLINKS)
-  private AppendixFunctionInfo bulkNewLostBacklinks;
+  private AppendixInfo bulkNewLostBacklinks;
 
   public static final String SERIALIZED_NAME_BULK_NEW_LOST_REFERRING_DOMAINS = "bulk_new_lost_referring_domains";
   @SerializedName(SERIALIZED_NAME_BULK_NEW_LOST_REFERRING_DOMAINS)
-  private AppendixFunctionInfo bulkNewLostReferringDomains;
+  private AppendixInfo bulkNewLostReferringDomains;
 
   public static final String SERIALIZED_NAME_BULK_REFERRING_DOMAINS = "bulk_referring_domains";
   @SerializedName(SERIALIZED_NAME_BULK_REFERRING_DOMAINS)
-  private AppendixFunctionInfo bulkReferringDomains;
+  private AppendixInfo bulkReferringDomains;
 
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
@@ -119,28 +119,28 @@ public class AppendixBacklinksLimitsRatesDataInfo {
 
   public static final String SERIALIZED_NAME_DOMAIN_PAGES_SUMMARY = "domain_pages_summary";
   @SerializedName(SERIALIZED_NAME_DOMAIN_PAGES_SUMMARY)
-  private AppendixFunctionInfo domainPagesSummary;
+  private AppendixInfo domainPagesSummary;
 
   public static final String SERIALIZED_NAME_TIMESERIES_SUMMARY = "timeseries_summary";
   @SerializedName(SERIALIZED_NAME_TIMESERIES_SUMMARY)
-  private AppendixFunctionInfo timeseriesSummary;
+  private AppendixInfo timeseriesSummary;
 
   public static final String SERIALIZED_NAME_TIMESERIES_NEW_LOST_SUMMARY = "timeseries_new_lost_summary";
   @SerializedName(SERIALIZED_NAME_TIMESERIES_NEW_LOST_SUMMARY)
-  private AppendixFunctionInfo timeseriesNewLostSummary;
+  private AppendixInfo timeseriesNewLostSummary;
 
   public static final String SERIALIZED_NAME_COMPETITORS = "competitors";
   @SerializedName(SERIALIZED_NAME_COMPETITORS)
-  private AppendixFunctionInfo competitors;
+  private AppendixInfo competitors;
 
   public static final String SERIALIZED_NAME_BULK_PAGES_SUMMARY = "bulk_pages_summary";
   @SerializedName(SERIALIZED_NAME_BULK_PAGES_SUMMARY)
-  private AppendixFunctionInfo bulkPagesSummary;
+  private AppendixInfo bulkPagesSummary;
 
   public AppendixBacklinksLimitsRatesDataInfo() {
   }
 
-  public AppendixBacklinksLimitsRatesDataInfo summary(AppendixFunctionInfo summary) {
+  public AppendixBacklinksLimitsRatesDataInfo summary(AppendixInfo summary) {
     this.summary = summary;
     return this;
   }
@@ -150,16 +150,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return summary
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getSummary() {
+  public AppendixInfo getSummary() {
     return summary;
   }
 
-  public void setSummary(AppendixFunctionInfo summary) {
+  public void setSummary(AppendixInfo summary) {
     this.summary = summary;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo history(AppendixFunctionInfo history) {
+  public AppendixBacklinksLimitsRatesDataInfo history(AppendixInfo history) {
     this.history = history;
     return this;
   }
@@ -169,16 +169,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return history
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getHistory() {
+  public AppendixInfo getHistory() {
     return history;
   }
 
-  public void setHistory(AppendixFunctionInfo history) {
+  public void setHistory(AppendixInfo history) {
     this.history = history;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo contentDuplicates(AppendixFunctionInfo contentDuplicates) {
+  public AppendixBacklinksLimitsRatesDataInfo contentDuplicates(AppendixInfo contentDuplicates) {
     this.contentDuplicates = contentDuplicates;
     return this;
   }
@@ -188,16 +188,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return contentDuplicates
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getContentDuplicates() {
+  public AppendixInfo getContentDuplicates() {
     return contentDuplicates;
   }
 
-  public void setContentDuplicates(AppendixFunctionInfo contentDuplicates) {
+  public void setContentDuplicates(AppendixInfo contentDuplicates) {
     this.contentDuplicates = contentDuplicates;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo domainIntersection(AppendixFunctionInfo domainIntersection) {
+  public AppendixBacklinksLimitsRatesDataInfo domainIntersection(AppendixInfo domainIntersection) {
     this.domainIntersection = domainIntersection;
     return this;
   }
@@ -207,16 +207,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return domainIntersection
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainIntersection() {
+  public AppendixInfo getDomainIntersection() {
     return domainIntersection;
   }
 
-  public void setDomainIntersection(AppendixFunctionInfo domainIntersection) {
+  public void setDomainIntersection(AppendixInfo domainIntersection) {
     this.domainIntersection = domainIntersection;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo backlinks(AppendixFunctionInfo backlinks) {
+  public AppendixBacklinksLimitsRatesDataInfo backlinks(AppendixInfo backlinks) {
     this.backlinks = backlinks;
     return this;
   }
@@ -226,16 +226,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return backlinks
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBacklinks() {
+  public AppendixInfo getBacklinks() {
     return backlinks;
   }
 
-  public void setBacklinks(AppendixFunctionInfo backlinks) {
+  public void setBacklinks(AppendixInfo backlinks) {
     this.backlinks = backlinks;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo domainPages(AppendixFunctionInfo domainPages) {
+  public AppendixBacklinksLimitsRatesDataInfo domainPages(AppendixInfo domainPages) {
     this.domainPages = domainPages;
     return this;
   }
@@ -245,16 +245,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return domainPages
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainPages() {
+  public AppendixInfo getDomainPages() {
     return domainPages;
   }
 
-  public void setDomainPages(AppendixFunctionInfo domainPages) {
+  public void setDomainPages(AppendixInfo domainPages) {
     this.domainPages = domainPages;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo anchors(AppendixFunctionInfo anchors) {
+  public AppendixBacklinksLimitsRatesDataInfo anchors(AppendixInfo anchors) {
     this.anchors = anchors;
     return this;
   }
@@ -264,16 +264,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return anchors
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getAnchors() {
+  public AppendixInfo getAnchors() {
     return anchors;
   }
 
-  public void setAnchors(AppendixFunctionInfo anchors) {
+  public void setAnchors(AppendixInfo anchors) {
     this.anchors = anchors;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo referringDomains(AppendixFunctionInfo referringDomains) {
+  public AppendixBacklinksLimitsRatesDataInfo referringDomains(AppendixInfo referringDomains) {
     this.referringDomains = referringDomains;
     return this;
   }
@@ -283,16 +283,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return referringDomains
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getReferringDomains() {
+  public AppendixInfo getReferringDomains() {
     return referringDomains;
   }
 
-  public void setReferringDomains(AppendixFunctionInfo referringDomains) {
+  public void setReferringDomains(AppendixInfo referringDomains) {
     this.referringDomains = referringDomains;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo pageIntersection(AppendixFunctionInfo pageIntersection) {
+  public AppendixBacklinksLimitsRatesDataInfo pageIntersection(AppendixInfo pageIntersection) {
     this.pageIntersection = pageIntersection;
     return this;
   }
@@ -302,16 +302,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return pageIntersection
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getPageIntersection() {
+  public AppendixInfo getPageIntersection() {
     return pageIntersection;
   }
 
-  public void setPageIntersection(AppendixFunctionInfo pageIntersection) {
+  public void setPageIntersection(AppendixInfo pageIntersection) {
     this.pageIntersection = pageIntersection;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo referringNetworks(AppendixFunctionInfo referringNetworks) {
+  public AppendixBacklinksLimitsRatesDataInfo referringNetworks(AppendixInfo referringNetworks) {
     this.referringNetworks = referringNetworks;
     return this;
   }
@@ -321,16 +321,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return referringNetworks
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getReferringNetworks() {
+  public AppendixInfo getReferringNetworks() {
     return referringNetworks;
   }
 
-  public void setReferringNetworks(AppendixFunctionInfo referringNetworks) {
+  public void setReferringNetworks(AppendixInfo referringNetworks) {
     this.referringNetworks = referringNetworks;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo bulkRanks(AppendixFunctionInfo bulkRanks) {
+  public AppendixBacklinksLimitsRatesDataInfo bulkRanks(AppendixInfo bulkRanks) {
     this.bulkRanks = bulkRanks;
     return this;
   }
@@ -340,16 +340,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return bulkRanks
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkRanks() {
+  public AppendixInfo getBulkRanks() {
     return bulkRanks;
   }
 
-  public void setBulkRanks(AppendixFunctionInfo bulkRanks) {
+  public void setBulkRanks(AppendixInfo bulkRanks) {
     this.bulkRanks = bulkRanks;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo bulkBacklinks(AppendixFunctionInfo bulkBacklinks) {
+  public AppendixBacklinksLimitsRatesDataInfo bulkBacklinks(AppendixInfo bulkBacklinks) {
     this.bulkBacklinks = bulkBacklinks;
     return this;
   }
@@ -359,16 +359,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return bulkBacklinks
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkBacklinks() {
+  public AppendixInfo getBulkBacklinks() {
     return bulkBacklinks;
   }
 
-  public void setBulkBacklinks(AppendixFunctionInfo bulkBacklinks) {
+  public void setBulkBacklinks(AppendixInfo bulkBacklinks) {
     this.bulkBacklinks = bulkBacklinks;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo bulkNewLostBacklinks(AppendixFunctionInfo bulkNewLostBacklinks) {
+  public AppendixBacklinksLimitsRatesDataInfo bulkNewLostBacklinks(AppendixInfo bulkNewLostBacklinks) {
     this.bulkNewLostBacklinks = bulkNewLostBacklinks;
     return this;
   }
@@ -378,16 +378,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return bulkNewLostBacklinks
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkNewLostBacklinks() {
+  public AppendixInfo getBulkNewLostBacklinks() {
     return bulkNewLostBacklinks;
   }
 
-  public void setBulkNewLostBacklinks(AppendixFunctionInfo bulkNewLostBacklinks) {
+  public void setBulkNewLostBacklinks(AppendixInfo bulkNewLostBacklinks) {
     this.bulkNewLostBacklinks = bulkNewLostBacklinks;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo bulkNewLostReferringDomains(AppendixFunctionInfo bulkNewLostReferringDomains) {
+  public AppendixBacklinksLimitsRatesDataInfo bulkNewLostReferringDomains(AppendixInfo bulkNewLostReferringDomains) {
     this.bulkNewLostReferringDomains = bulkNewLostReferringDomains;
     return this;
   }
@@ -397,16 +397,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return bulkNewLostReferringDomains
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkNewLostReferringDomains() {
+  public AppendixInfo getBulkNewLostReferringDomains() {
     return bulkNewLostReferringDomains;
   }
 
-  public void setBulkNewLostReferringDomains(AppendixFunctionInfo bulkNewLostReferringDomains) {
+  public void setBulkNewLostReferringDomains(AppendixInfo bulkNewLostReferringDomains) {
     this.bulkNewLostReferringDomains = bulkNewLostReferringDomains;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo bulkReferringDomains(AppendixFunctionInfo bulkReferringDomains) {
+  public AppendixBacklinksLimitsRatesDataInfo bulkReferringDomains(AppendixInfo bulkReferringDomains) {
     this.bulkReferringDomains = bulkReferringDomains;
     return this;
   }
@@ -416,11 +416,11 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return bulkReferringDomains
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkReferringDomains() {
+  public AppendixInfo getBulkReferringDomains() {
     return bulkReferringDomains;
   }
 
-  public void setBulkReferringDomains(AppendixFunctionInfo bulkReferringDomains) {
+  public void setBulkReferringDomains(AppendixInfo bulkReferringDomains) {
     this.bulkReferringDomains = bulkReferringDomains;
   }
 
@@ -444,7 +444,7 @@ public class AppendixBacklinksLimitsRatesDataInfo {
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo domainPagesSummary(AppendixFunctionInfo domainPagesSummary) {
+  public AppendixBacklinksLimitsRatesDataInfo domainPagesSummary(AppendixInfo domainPagesSummary) {
     this.domainPagesSummary = domainPagesSummary;
     return this;
   }
@@ -454,16 +454,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return domainPagesSummary
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getDomainPagesSummary() {
+  public AppendixInfo getDomainPagesSummary() {
     return domainPagesSummary;
   }
 
-  public void setDomainPagesSummary(AppendixFunctionInfo domainPagesSummary) {
+  public void setDomainPagesSummary(AppendixInfo domainPagesSummary) {
     this.domainPagesSummary = domainPagesSummary;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo timeseriesSummary(AppendixFunctionInfo timeseriesSummary) {
+  public AppendixBacklinksLimitsRatesDataInfo timeseriesSummary(AppendixInfo timeseriesSummary) {
     this.timeseriesSummary = timeseriesSummary;
     return this;
   }
@@ -473,16 +473,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return timeseriesSummary
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getTimeseriesSummary() {
+  public AppendixInfo getTimeseriesSummary() {
     return timeseriesSummary;
   }
 
-  public void setTimeseriesSummary(AppendixFunctionInfo timeseriesSummary) {
+  public void setTimeseriesSummary(AppendixInfo timeseriesSummary) {
     this.timeseriesSummary = timeseriesSummary;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo timeseriesNewLostSummary(AppendixFunctionInfo timeseriesNewLostSummary) {
+  public AppendixBacklinksLimitsRatesDataInfo timeseriesNewLostSummary(AppendixInfo timeseriesNewLostSummary) {
     this.timeseriesNewLostSummary = timeseriesNewLostSummary;
     return this;
   }
@@ -492,16 +492,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return timeseriesNewLostSummary
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getTimeseriesNewLostSummary() {
+  public AppendixInfo getTimeseriesNewLostSummary() {
     return timeseriesNewLostSummary;
   }
 
-  public void setTimeseriesNewLostSummary(AppendixFunctionInfo timeseriesNewLostSummary) {
+  public void setTimeseriesNewLostSummary(AppendixInfo timeseriesNewLostSummary) {
     this.timeseriesNewLostSummary = timeseriesNewLostSummary;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo competitors(AppendixFunctionInfo competitors) {
+  public AppendixBacklinksLimitsRatesDataInfo competitors(AppendixInfo competitors) {
     this.competitors = competitors;
     return this;
   }
@@ -511,16 +511,16 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return competitors
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getCompetitors() {
+  public AppendixInfo getCompetitors() {
     return competitors;
   }
 
-  public void setCompetitors(AppendixFunctionInfo competitors) {
+  public void setCompetitors(AppendixInfo competitors) {
     this.competitors = competitors;
   }
 
 
-  public AppendixBacklinksLimitsRatesDataInfo bulkPagesSummary(AppendixFunctionInfo bulkPagesSummary) {
+  public AppendixBacklinksLimitsRatesDataInfo bulkPagesSummary(AppendixInfo bulkPagesSummary) {
     this.bulkPagesSummary = bulkPagesSummary;
     return this;
   }
@@ -530,11 +530,11 @@ public class AppendixBacklinksLimitsRatesDataInfo {
    * @return bulkPagesSummary
   **/
   @javax.annotation.Nullable
-  public AppendixFunctionInfo getBulkPagesSummary() {
+  public AppendixInfo getBulkPagesSummary() {
     return bulkPagesSummary;
   }
 
-  public void setBulkPagesSummary(AppendixFunctionInfo bulkPagesSummary) {
+  public void setBulkPagesSummary(AppendixInfo bulkPagesSummary) {
     this.bulkPagesSummary = bulkPagesSummary;
   }
 
@@ -684,83 +684,83 @@ public class AppendixBacklinksLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `summary`
       if (jsonObj.get("summary") != null && !jsonObj.get("summary").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("summary"));
+        AppendixInfo.validateJsonElement(jsonObj.get("summary"));
       }
       // validate the optional field `history`
       if (jsonObj.get("history") != null && !jsonObj.get("history").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("history"));
+        AppendixInfo.validateJsonElement(jsonObj.get("history"));
       }
       // validate the optional field `content_duplicates`
       if (jsonObj.get("content_duplicates") != null && !jsonObj.get("content_duplicates").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("content_duplicates"));
+        AppendixInfo.validateJsonElement(jsonObj.get("content_duplicates"));
       }
       // validate the optional field `domain_intersection`
       if (jsonObj.get("domain_intersection") != null && !jsonObj.get("domain_intersection").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_intersection"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_intersection"));
       }
       // validate the optional field `backlinks`
       if (jsonObj.get("backlinks") != null && !jsonObj.get("backlinks").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("backlinks"));
+        AppendixInfo.validateJsonElement(jsonObj.get("backlinks"));
       }
       // validate the optional field `domain_pages`
       if (jsonObj.get("domain_pages") != null && !jsonObj.get("domain_pages").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_pages"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_pages"));
       }
       // validate the optional field `anchors`
       if (jsonObj.get("anchors") != null && !jsonObj.get("anchors").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("anchors"));
+        AppendixInfo.validateJsonElement(jsonObj.get("anchors"));
       }
       // validate the optional field `referring_domains`
       if (jsonObj.get("referring_domains") != null && !jsonObj.get("referring_domains").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("referring_domains"));
+        AppendixInfo.validateJsonElement(jsonObj.get("referring_domains"));
       }
       // validate the optional field `page_intersection`
       if (jsonObj.get("page_intersection") != null && !jsonObj.get("page_intersection").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("page_intersection"));
+        AppendixInfo.validateJsonElement(jsonObj.get("page_intersection"));
       }
       // validate the optional field `referring_networks`
       if (jsonObj.get("referring_networks") != null && !jsonObj.get("referring_networks").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("referring_networks"));
+        AppendixInfo.validateJsonElement(jsonObj.get("referring_networks"));
       }
       // validate the optional field `bulk_ranks`
       if (jsonObj.get("bulk_ranks") != null && !jsonObj.get("bulk_ranks").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_ranks"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_ranks"));
       }
       // validate the optional field `bulk_backlinks`
       if (jsonObj.get("bulk_backlinks") != null && !jsonObj.get("bulk_backlinks").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_backlinks"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_backlinks"));
       }
       // validate the optional field `bulk_new_lost_backlinks`
       if (jsonObj.get("bulk_new_lost_backlinks") != null && !jsonObj.get("bulk_new_lost_backlinks").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_new_lost_backlinks"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_new_lost_backlinks"));
       }
       // validate the optional field `bulk_new_lost_referring_domains`
       if (jsonObj.get("bulk_new_lost_referring_domains") != null && !jsonObj.get("bulk_new_lost_referring_domains").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_new_lost_referring_domains"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_new_lost_referring_domains"));
       }
       // validate the optional field `bulk_referring_domains`
       if (jsonObj.get("bulk_referring_domains") != null && !jsonObj.get("bulk_referring_domains").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_referring_domains"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_referring_domains"));
       }
       // validate the optional field `domain_pages_summary`
       if (jsonObj.get("domain_pages_summary") != null && !jsonObj.get("domain_pages_summary").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("domain_pages_summary"));
+        AppendixInfo.validateJsonElement(jsonObj.get("domain_pages_summary"));
       }
       // validate the optional field `timeseries_summary`
       if (jsonObj.get("timeseries_summary") != null && !jsonObj.get("timeseries_summary").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("timeseries_summary"));
+        AppendixInfo.validateJsonElement(jsonObj.get("timeseries_summary"));
       }
       // validate the optional field `timeseries_new_lost_summary`
       if (jsonObj.get("timeseries_new_lost_summary") != null && !jsonObj.get("timeseries_new_lost_summary").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("timeseries_new_lost_summary"));
+        AppendixInfo.validateJsonElement(jsonObj.get("timeseries_new_lost_summary"));
       }
       // validate the optional field `competitors`
       if (jsonObj.get("competitors") != null && !jsonObj.get("competitors").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("competitors"));
+        AppendixInfo.validateJsonElement(jsonObj.get("competitors"));
       }
       // validate the optional field `bulk_pages_summary`
       if (jsonObj.get("bulk_pages_summary") != null && !jsonObj.get("bulk_pages_summary").isJsonNull()) {
-        AppendixFunctionInfo.validateJsonElement(jsonObj.get("bulk_pages_summary"));
+        AppendixInfo.validateJsonElement(jsonObj.get("bulk_pages_summary"));
       }
   }
 

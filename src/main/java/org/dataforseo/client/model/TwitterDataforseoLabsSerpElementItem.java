@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * TwitterDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -193,7 +193,7 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
    /**
-   * title of the result in SERP
+   * title of the item
    * @return title
   **/
   @javax.annotation.Nullable
@@ -212,7 +212,7 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
    /**
-   * relevant URL of the Ad element in SERP
+   * URL link
    * @return url
   **/
   @javax.annotation.Nullable
@@ -239,7 +239,7 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
    /**
-   * elements of search results found in SERP
+   * additional items present in the element if there are none, equals null
    * @return items
   **/
   @javax.annotation.Nullable

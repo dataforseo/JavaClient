@@ -143,7 +143,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "17ac3eb7-b642-4163-b4e6-accc2a6c84dd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "81c1a000-b6e1-4981-aa68-0b981d3764b2"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonAsinTaskGetHtmlResponseInfo result = apiInstance.amazonAsinTaskGetHtml(id);
       System.out.println(result);
@@ -411,7 +411,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "dfcc4955-3e5e-4042-8a4d-e02ef3b99e96"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "ae52b22b-95b4-48e2-8d43-b5e8785d94f6"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonProductsTaskGetHtmlResponseInfo result = apiInstance.amazonProductsTaskGetHtml(id);
       System.out.println(result);
@@ -679,7 +679,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "533d5987-4468-4fb7-b6de-b49bc6bda9df"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "42e1cadd-148d-4bb8-a1f7-b578bf382434"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonReviewsTaskGetHtmlResponseInfo result = apiInstance.amazonReviewsTaskGetHtml(id);
       System.out.println(result);
@@ -947,7 +947,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "604d32ec-f526-4e1b-8c74-1f4324ebb557"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "a6ec08c0-f715-4a1b-a94f-fd24c7617974"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonSellersTaskGetHtmlResponseInfo result = apiInstance.amazonSellersTaskGetHtml(id);
       System.out.println(result);
@@ -1415,7 +1415,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "e001ae0f-6b96-44c8-853c-54364ea0e384"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "ac26e1ae-f75c-4057-ba51-0901033e0070"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantGoogleProductSpecTaskGetHtmlResponseInfo result = apiInstance.googleProductSpecTaskGetHtml(id);
       System.out.println(result);
@@ -1683,7 +1683,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "d72be2ee-c1d6-4882-b4da-160582bbdcd6"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "e0567fb1-469f-4ef7-b219-224e94e742b5"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantGoogleProductsTaskGetHtmlResponseInfo result = apiInstance.googleProductsTaskGetHtml(id);
       System.out.println(result);
@@ -2019,7 +2019,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "b0184cc3-25c5-443a-b534-5b481a606a72"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "97df9e02-f2b9-402f-a62d-0b1da328d3ee"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantGoogleSellersTaskGetHtmlResponseInfo result = apiInstance.googleSellersTaskGetHtml(id);
       System.out.println(result);

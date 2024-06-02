@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.BaseSerpElementItem;
 import org.dataforseo.client.model.StreamingQualityElement;
+import org.dataforseo.client.model.Subtitles;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * YoutubeVideoInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T18:32:56.856102800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
 public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -142,7 +143,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
 
   public static final String SERIALIZED_NAME_SUBTITLES = "subtitles";
   @SerializedName(SERIALIZED_NAME_SUBTITLES)
-  private String subtitles;
+  private List<Subtitles> subtitles;
 
   public static final String SERIALIZED_NAME_STREAMING_QUALITY = "streaming_quality";
   @SerializedName(SERIALIZED_NAME_STREAMING_QUALITY)
@@ -559,21 +560,29 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
   }
 
 
-  public YoutubeVideoInfoSerpElementItem subtitles(String subtitles) {
+  public YoutubeVideoInfoSerpElementItem subtitles(List<Subtitles> subtitles) {
     this.subtitles = subtitles;
     return this;
   }
 
+  public YoutubeVideoInfoSerpElementItem addSubtitlesItem(Subtitles subtitlesItem) {
+    if (this.subtitles == null) {
+      this.subtitles = new ArrayList<>();
+    }
+    this.subtitles.add(subtitlesItem);
+    return this;
+  }
+
    /**
-   * subtitles in the video
+   * array of elements describing properties of subtitles in the video
    * @return subtitles
   **/
   @javax.annotation.Nullable
-  public String getSubtitles() {
+  public List<Subtitles> getSubtitles() {
     return subtitles;
   }
 
-  public void setSubtitles(String subtitles) {
+  public void setSubtitles(List<Subtitles> subtitles) {
     this.subtitles = subtitles;
   }
 

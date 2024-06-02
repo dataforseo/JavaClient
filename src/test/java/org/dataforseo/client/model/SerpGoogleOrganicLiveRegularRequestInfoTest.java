@@ -135,6 +135,14 @@ public class SerpGoogleOrganicLiveRegularRequestInfoTest {
     }
 
     /**
+     * Test the property 'groupOrganicResults'
+     */
+    @Test
+    public void groupOrganicResultsTest() {
+        // TODO: test groupOrganicResults
+    }
+
+    /**
      * Test the property 'maxCrawlPages'
      */
     @Test

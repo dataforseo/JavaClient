@@ -8,10 +8,10 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**status** | **Double** |  |  [optional] |
-|**searchVolume** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**keywordsForKeywords** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**keywordsForSite** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
-|**adTrafficByKeywords** | [**AppendixFunctionInfo**](AppendixFunctionInfo.md) |  |  [optional] |
+|**searchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordsForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**adTrafficByKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 
