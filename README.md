@@ -71,13 +71,13 @@ public class App
         SerpApi apiInstance = new SerpApi(defaultClient);
         try {
 
-          SerpTaskRequestInfo task = new SerpTaskRequestInfo();
+          SerpGoogleOrganicLiveAdvancedRequestInfo task = new SerpGoogleOrganicLiveAdvancedRequestInfo();
 
           task.setLocationCode(2840);
           task.setLanguageCode("en");
           task.setKeyword("albert einstein");
     
-          List<SerpTaskRequestInfo> serpTaskRequestInfo = new ArrayList<SerpGoogleOrganicLiveAdvancedRequestInfo>();
+          List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpTaskRequestInfo = new ArrayList<SerpGoogleOrganicLiveAdvancedRequestInfo>();
           serpTaskRequestInfo.add(task);
 
           SerpGoogleOrganicLiveAdvancedResponseInfo result = apiInstance.googleOrganicLiveAdvanced(serpTaskRequestInfo);
