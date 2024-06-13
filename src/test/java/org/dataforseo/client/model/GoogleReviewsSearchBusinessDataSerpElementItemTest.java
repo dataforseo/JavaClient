@@ -25,6 +25,7 @@ import java.util.List;
 import org.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import org.dataforseo.client.model.ImagesElement;
 import org.dataforseo.client.model.RatingInfo;
+import org.dataforseo.client.model.ReviewHighlights;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -225,6 +226,14 @@ public class GoogleReviewsSearchBusinessDataSerpElementItemTest {
     @Test
     public void imagesTest() {
         // TODO: test images
+    }
+
+    /**
+     * Test the property 'reviewHighlights'
+     */
+    @Test
+    public void reviewHighlightsTest() {
+        // TODO: test reviewHighlights
     }
 
 }

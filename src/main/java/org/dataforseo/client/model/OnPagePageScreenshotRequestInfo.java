@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPagePageScreenshotRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class OnPagePageScreenshotRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -88,13 +88,13 @@ public class OnPagePageScreenshotRequestInfo {
   @SerializedName(SERIALIZED_NAME_DISABLE_COOKIE_POPUP)
   private Boolean disableCookiePopup;
 
-  public static final String SERIALIZED_NAME_ENABLE_JAVASCRIPT = "enable_javascript";
-  @SerializedName(SERIALIZED_NAME_ENABLE_JAVASCRIPT)
-  private Boolean enableJavascript;
-
   public static final String SERIALIZED_NAME_CUSTOM_JS = "custom_js";
   @SerializedName(SERIALIZED_NAME_CUSTOM_JS)
   private String customJs;
+
+  public static final String SERIALIZED_NAME_SWITCH_POOL = "switch_pool";
+  @SerializedName(SERIALIZED_NAME_SWITCH_POOL)
+  private Boolean switchPool;
 
   public static final String SERIALIZED_NAME_IP_POOL_FOR_SCAN = "ip_pool_for_scan";
   @SerializedName(SERIALIZED_NAME_IP_POOL_FOR_SCAN)
@@ -166,7 +166,7 @@ public class OnPagePageScreenshotRequestInfo {
   }
 
    /**
-   * preset for browser screen parameters optional field if you use this field, you don’t need to indicate browser_screen_width, browser_screen_height, browser_screen_scale_factor possible values: desktop, mobile, tablet desktop preset will apply the following values: browser_screen_width: 1920 browser_screen_height: 1080 browser_screen_scale_factor: 1 mobile preset will apply the following values: browser_screen_width: 390 browser_screen_height: 844 browser_screen_scale_factor: 3 tablet preset will apply the following values: browser_screen_width: 1024 browser_screen_height: 1366 browser_screen_scale_factor: 2
+   * preset for browser screen parameters optional field if you use this field, you don’t need to indicate browser_screen_width, browser_screen_height, browser_screen_scale_factor possible values: desktop, mobile, tablet desktop preset will apply the following values: browser_screen_width: 1920 browser_screen_height: 1080 browser_screen_scale_factor: 1 mobile preset will apply the following values: browser_screen_width: 390 browser_screen_height: 844 browser_screen_scale_factor: 3 tablet preset will apply the following values: browser_screen_width: 1024 browser_screen_height: 1366 browser_screen_scale_factor: 2 Note: in this endpoint, the enable_browser_rendering, enable_javascript, load_resources, and enable_xhr parameters are always enabled.
    * @return browserPreset
   **/
   @javax.annotation.Nullable
@@ -274,25 +274,6 @@ public class OnPagePageScreenshotRequestInfo {
   }
 
 
-  public OnPagePageScreenshotRequestInfo enableJavascript(Boolean enableJavascript) {
-    this.enableJavascript = enableJavascript;
-    return this;
-  }
-
-   /**
-   * load javascript on a page optional field set to true if you want to load the scripts available on a page default value: false Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
-   * @return enableJavascript
-  **/
-  @javax.annotation.Nullable
-  public Boolean getEnableJavascript() {
-    return enableJavascript;
-  }
-
-  public void setEnableJavascript(Boolean enableJavascript) {
-    this.enableJavascript = enableJavascript;
-  }
-
-
   public OnPagePageScreenshotRequestInfo customJs(String customJs) {
     this.customJs = customJs;
     return this;
@@ -309,6 +290,25 @@ public class OnPagePageScreenshotRequestInfo {
 
   public void setCustomJs(String customJs) {
     this.customJs = customJs;
+  }
+
+
+  public OnPagePageScreenshotRequestInfo switchPool(Boolean switchPool) {
+    this.switchPool = switchPool;
+    return this;
+  }
+
+   /**
+   * switch proxy pool optional field if true, additional proxy pools will be used to obtain the requested data; the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
+   * @return switchPool
+  **/
+  @javax.annotation.Nullable
+  public Boolean getSwitchPool() {
+    return switchPool;
+  }
+
+  public void setSwitchPool(Boolean switchPool) {
+    this.switchPool = switchPool;
   }
 
 
@@ -350,8 +350,8 @@ public class OnPagePageScreenshotRequestInfo {
         Objects.equals(this.browserScreenScaleFactor, onPagePageScreenshotRequestInfo.browserScreenScaleFactor) &&
         Objects.equals(this.fullPageScreenshot, onPagePageScreenshotRequestInfo.fullPageScreenshot) &&
         Objects.equals(this.disableCookiePopup, onPagePageScreenshotRequestInfo.disableCookiePopup) &&
-        Objects.equals(this.enableJavascript, onPagePageScreenshotRequestInfo.enableJavascript) &&
         Objects.equals(this.customJs, onPagePageScreenshotRequestInfo.customJs) &&
+        Objects.equals(this.switchPool, onPagePageScreenshotRequestInfo.switchPool) &&
         Objects.equals(this.ipPoolForScan, onPagePageScreenshotRequestInfo.ipPoolForScan);
   }
 
@@ -361,7 +361,7 @@ public class OnPagePageScreenshotRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, acceptLanguage, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, fullPageScreenshot, disableCookiePopup, enableJavascript, customJs, ipPoolForScan);
+    return Objects.hash(url, acceptLanguage, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, fullPageScreenshot, disableCookiePopup, customJs, switchPool, ipPoolForScan);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -384,8 +384,8 @@ public class OnPagePageScreenshotRequestInfo {
     sb.append("    browserScreenScaleFactor: ").append(toIndentedString(browserScreenScaleFactor)).append("\n");
     sb.append("    fullPageScreenshot: ").append(toIndentedString(fullPageScreenshot)).append("\n");
     sb.append("    disableCookiePopup: ").append(toIndentedString(disableCookiePopup)).append("\n");
-    sb.append("    enableJavascript: ").append(toIndentedString(enableJavascript)).append("\n");
     sb.append("    customJs: ").append(toIndentedString(customJs)).append("\n");
+    sb.append("    switchPool: ").append(toIndentedString(switchPool)).append("\n");
     sb.append("    ipPoolForScan: ").append(toIndentedString(ipPoolForScan)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -418,8 +418,8 @@ public class OnPagePageScreenshotRequestInfo {
     openapiFields.add("browser_screen_scale_factor");
     openapiFields.add("full_page_screenshot");
     openapiFields.add("disable_cookie_popup");
-    openapiFields.add("enable_javascript");
     openapiFields.add("custom_js");
+    openapiFields.add("switch_pool");
     openapiFields.add("ip_pool_for_scan");
 
     // a set of required properties/fields (JSON key names)

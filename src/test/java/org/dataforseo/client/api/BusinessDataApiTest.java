@@ -67,6 +67,7 @@ import org.dataforseo.client.model.BusinessDataSocialMediaPinterestLiveResponseI
 import org.dataforseo.client.model.BusinessDataSocialMediaRedditLiveRequestInfo;
 import org.dataforseo.client.model.BusinessDataSocialMediaRedditLiveResponseInfo;
 import org.dataforseo.client.model.BusinessDataTaskRequestInfo;
+import org.dataforseo.client.model.BusinessDataTasksReadyResponseInfo;
 import org.dataforseo.client.model.BusinessDataTripadvisorLanguagesResponseInfo;
 import org.dataforseo.client.model.BusinessDataTripadvisorLocationsCountryResponseInfo;
 import org.dataforseo.client.model.BusinessDataTripadvisorLocationsResponseInfo;
@@ -168,6 +169,17 @@ public class BusinessDataApiTest {
     public void businessDataIdListTest() throws ApiException {
         List<BusinessDataIdListRequestInfo> businessDataIdListRequestInfo = null;
         BusinessDataIdListResponseInfo response = api.businessDataIdList(businessDataIdListRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void businessDataTasksReadyTest() throws ApiException {
+        BusinessDataTasksReadyResponseInfo response = api.businessDataTasksReady();
         // TODO: test validations
     }
 

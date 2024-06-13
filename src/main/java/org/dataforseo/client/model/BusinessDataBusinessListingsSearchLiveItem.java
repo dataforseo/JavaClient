@@ -62,7 +62,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -827,7 +827,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
    /**
-   * Get localBusinessLinks
+   * available interactions with the business list of options to interact with the business directly from search results
    * @return localBusinessLinks
   **/
   @javax.annotation.Nullable

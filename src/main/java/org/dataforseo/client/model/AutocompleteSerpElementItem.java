@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * AutocompleteSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class AutocompleteSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -238,7 +238,7 @@ public class AutocompleteSerpElementItem extends BaseSerpElementItem {
   }
 
    /**
-   * Get highlighted
+   * keywords highlighted in autocomplete contains a list of google autocomplete suggestions that are highlighted in the search bar; Note: array is only available for the following client: gws-wiz psy-ab gws-wiz-local
    * @return highlighted
   **/
   @javax.annotation.Nullable

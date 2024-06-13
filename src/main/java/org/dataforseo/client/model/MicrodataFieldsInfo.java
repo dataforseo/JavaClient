@@ -23,7 +23,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.dataforseo.client.model.MicrodataTestResultsInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * MicrodataFieldsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class MicrodataFieldsInfo {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -61,7 +60,7 @@ public class MicrodataFieldsInfo {
 
   public static final String SERIALIZED_NAME_TYPES = "types";
   @SerializedName(SERIALIZED_NAME_TYPES)
-  private List<String> types;
+  private Object types;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
@@ -69,7 +68,7 @@ public class MicrodataFieldsInfo {
 
   public static final String SERIALIZED_NAME_TEST_RESULTS = "test_results";
   @SerializedName(SERIALIZED_NAME_TEST_RESULTS)
-  private MicrodataTestResultsInfo testResults;
+  private Object testResults;
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
@@ -97,16 +96,8 @@ public class MicrodataFieldsInfo {
   }
 
 
-  public MicrodataFieldsInfo types(List<String> types) {
+  public MicrodataFieldsInfo types(Object types) {
     this.types = types;
-    return this;
-  }
-
-  public MicrodataFieldsInfo addTypesItem(String typesItem) {
-    if (this.types == null) {
-      this.types = new ArrayList<>();
-    }
-    this.types.add(typesItem);
     return this;
   }
 
@@ -115,11 +106,11 @@ public class MicrodataFieldsInfo {
    * @return types
   **/
   @javax.annotation.Nullable
-  public List<String> getTypes() {
+  public Object getTypes() {
     return types;
   }
 
-  public void setTypes(List<String> types) {
+  public void setTypes(Object types) {
     this.types = types;
   }
 
@@ -143,21 +134,21 @@ public class MicrodataFieldsInfo {
   }
 
 
-  public MicrodataFieldsInfo testResults(MicrodataTestResultsInfo testResults) {
+  public MicrodataFieldsInfo testResults(Object testResults) {
     this.testResults = testResults;
     return this;
   }
 
    /**
-   * Get testResults
+   * microdata validation test results sub-type microdata test results that contain detected errors and related messages
    * @return testResults
   **/
   @javax.annotation.Nullable
-  public MicrodataTestResultsInfo getTestResults() {
+  public Object getTestResults() {
     return testResults;
   }
 
-  public void setTestResults(MicrodataTestResultsInfo testResults) {
+  public void setTestResults(Object testResults) {
     this.testResults = testResults;
   }
 
@@ -287,16 +278,8 @@ public class MicrodataFieldsInfo {
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("types") != null && !jsonObj.get("types").isJsonNull() && !jsonObj.get("types").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `types` to be an array in the JSON string but got `%s`", jsonObj.get("types").toString()));
-      }
       if ((jsonObj.get("value") != null && !jsonObj.get("value").isJsonNull()) && !jsonObj.get("value").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("value").toString()));
-      }
-      // validate the optional field `test_results`
-      if (jsonObj.get("test_results") != null && !jsonObj.get("test_results").isJsonNull()) {
-        MicrodataTestResultsInfo.validateJsonElement(jsonObj.get("test_results"));
       }
       if (jsonObj.get("fields") != null && !jsonObj.get("fields").isJsonNull()) {
         JsonArray jsonArrayfields = jsonObj.getAsJsonArray("fields");

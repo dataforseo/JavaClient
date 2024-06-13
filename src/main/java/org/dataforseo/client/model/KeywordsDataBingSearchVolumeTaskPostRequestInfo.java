@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordsDataBingSearchVolumeTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class KeywordsDataBingSearchVolumeTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -127,7 +127,7 @@ public class KeywordsDataBingSearchVolumeTaskPostRequestInfo {
   }
 
    /**
-   * keywords required field The maximum number of keywords you can specify: 200 The maximum number of characters for each keyword: 100 the specified keywords will be converted to lowercase, data will be provided in a separate array
+   * keywords required field The maximum number of keywords you can specify: 1000 The maximum number of characters for each keyword: 100 the specified keywords will be converted to lowercase, data will be provided in a separate array
    * @return keywords
   **/
   @javax.annotation.Nullable

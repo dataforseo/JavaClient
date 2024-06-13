@@ -77,7 +77,7 @@ public class App
           task.setLanguageCode("en");
           task.setKeyword("albert einstein");
     
-          List<SerpTaskRequestInfo> serpTaskRequestInfo = new ArrayList<SerpTaskRequestInfo>();
+          List<SerpTaskRequestInfo> serpTaskRequestInfo = new ArrayList<SerpGoogleOrganicLiveAdvancedRequestInfo>();
           serpTaskRequestInfo.add(task);
 
           SerpGoogleOrganicLiveAdvancedResponseInfo result = apiInstance.googleOrganicLiveAdvanced(serpTaskRequestInfo);

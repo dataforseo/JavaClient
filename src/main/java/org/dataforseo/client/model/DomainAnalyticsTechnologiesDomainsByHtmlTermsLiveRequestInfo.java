@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo {
   public static final String SERIALIZED_NAME_SEARCH_TERMS = "search_terms";
   @SerializedName(SERIALIZED_NAME_SEARCH_TERMS)
@@ -130,7 +130,7 @@ public class DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo {
   }
 
    /**
-   * target keywords in the domain’s title, description or meta keywords optional field UTF-8 encoding each keyword should be at least 3 characters long maximum number of keywords you can specify: 10 example: [\&quot;seo\&quot;,\&quot;software\&quot;]
+   * target keywords in the domain’s title, description or meta keywords optional field UTF-8 encoding maximum number of keywords you can specify: 10 example: [\&quot;seo\&quot;,\&quot;software\&quot;]
    * @return keywords
   **/
   @javax.annotation.Nullable

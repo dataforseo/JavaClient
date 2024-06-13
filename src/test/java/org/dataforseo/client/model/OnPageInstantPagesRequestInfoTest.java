@@ -184,4 +184,20 @@ public class OnPageInstantPagesRequestInfoTest {
         // TODO: test checksThreshold
     }
 
+    /**
+     * Test the property 'switchPool'
+     */
+    @Test
+    public void switchPoolTest() {
+        // TODO: test switchPool
+    }
+
+    /**
+     * Test the property 'ipPoolForScan'
+     */
+    @Test
+    public void ipPoolForScanTest() {
+        // TODO: test ipPoolForScan
+    }
+
 }

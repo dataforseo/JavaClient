@@ -37,7 +37,7 @@
 |**peopleAlsoSearch** | [**List&lt;PeopleAlsoSearch&gt;**](PeopleAlsoSearch.md) | related business entities |  [optional] |
 |**workTime** | [**WorkInfo**](WorkInfo.md) |  |  [optional] |
 |**popularTimes** | [**PopularTimes**](PopularTimes.md) |  |  [optional] |
-|**localBusinessLinks** | [**List&lt;BaseLocalBusinessLink&gt;**](BaseLocalBusinessLink.md) |  |  [optional] |
+|**localBusinessLinks** | [**List&lt;BaseLocalBusinessLink&gt;**](BaseLocalBusinessLink.md) | available interactions with the business list of options to interact with the business directly from search results |  [optional] |
 |**contactInfo** | [**List&lt;BusinessDataContactInfo&gt;**](BusinessDataContactInfo.md) | available contacts of the business list of contacts to interact with the business |  [optional] |
 |**checkUrl** | **String** | direct URL to search engine results you can use it to make sure that we provided accurate results |  [optional] |
 |**lastUpdatedTime** | **String** | date and time when the data was last updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2023-01-26 09:03:15 +00:00 |  [optional] |

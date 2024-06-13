@@ -25,6 +25,8 @@
 |**validateMicromarkup** | **Boolean** | enable microdata validation optional field if set to true, you can use the OnPage API Microdata endpoint with the id of the task; default value: false |  [optional] |
 |**checkSpell** | **Boolean** | check spelling optional field set to true to check spelling on a website using Hunspell library default value: false |  [optional] |
 |**checksThreshold** | **Map&lt;String, Long&gt;** | custom threshold values for checks optional field you can specify custom threshold values for the parameters included in the checks array of OnPage API responses; Note: only integer threshold values can be modified; |  [optional] |
+|**switchPool** | **Boolean** | switch proxy pool optional field if true, additional proxy pools will be used to obtain the requested data; the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors |  [optional] |
+|**ipPoolForScan** | **String** | proxy pool optional field you can choose a location of the proxy pool that will be used to obtain the requested data; the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errors possible values: us, de |  [optional] |
 
 
 

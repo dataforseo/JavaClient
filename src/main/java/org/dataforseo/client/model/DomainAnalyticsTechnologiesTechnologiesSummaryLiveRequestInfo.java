@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TECHNOLOGY_PATHS = "technology_paths";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY_PATHS)
@@ -215,7 +215,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   }
 
    /**
-   * target keywords in the domain’s title, description or meta keywords optional field UTF-8 encoding each keyword should be at least 3 characters long example: [\&quot;seo\&quot;,\&quot;software\&quot;]
+   * target keywords in the domain’s title, description or meta keywords optional field UTF-8 encoding example: [\&quot;seo\&quot;,\&quot;software\&quot;]
    * @return keywords
   **/
   @javax.annotation.Nullable

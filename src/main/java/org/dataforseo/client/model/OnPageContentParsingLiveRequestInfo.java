@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageContentParsingLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class OnPageContentParsingLiveRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -103,6 +103,14 @@ public class OnPageContentParsingLiveRequestInfo {
   public static final String SERIALIZED_NAME_ENABLE_XHR = "enable_xhr";
   @SerializedName(SERIALIZED_NAME_ENABLE_XHR)
   private Boolean enableXhr;
+
+  public static final String SERIALIZED_NAME_SWITCH_POOL = "switch_pool";
+  @SerializedName(SERIALIZED_NAME_SWITCH_POOL)
+  private Boolean switchPool;
+
+  public static final String SERIALIZED_NAME_IP_POOL_FOR_SCAN = "ip_pool_for_scan";
+  @SerializedName(SERIALIZED_NAME_IP_POOL_FOR_SCAN)
+  private String ipPoolForScan;
 
   public OnPageContentParsingLiveRequestInfo() {
   }
@@ -354,6 +362,44 @@ public class OnPageContentParsingLiveRequestInfo {
   }
 
 
+  public OnPageContentParsingLiveRequestInfo switchPool(Boolean switchPool) {
+    this.switchPool = switchPool;
+    return this;
+  }
+
+   /**
+   * switch proxy pool optional field if true, additional proxy pools will be used to obtain the requested data; the parameter can be used if a multitude of tasks is set simultaneously, resulting in occasional rate-limit and/or site_unreachable errors
+   * @return switchPool
+  **/
+  @javax.annotation.Nullable
+  public Boolean getSwitchPool() {
+    return switchPool;
+  }
+
+  public void setSwitchPool(Boolean switchPool) {
+    this.switchPool = switchPool;
+  }
+
+
+  public OnPageContentParsingLiveRequestInfo ipPoolForScan(String ipPoolForScan) {
+    this.ipPoolForScan = ipPoolForScan;
+    return this;
+  }
+
+   /**
+   * proxy pool optional field you can choose a location of the proxy pool that will be used to obtain the requested data; the parameter can be used if page content is inaccessible in one of the locations, resulting in occasional site_unreachable errors possible values: us, de
+   * @return ipPoolForScan
+  **/
+  @javax.annotation.Nullable
+  public String getIpPoolForScan() {
+    return ipPoolForScan;
+  }
+
+  public void setIpPoolForScan(String ipPoolForScan) {
+    this.ipPoolForScan = ipPoolForScan;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -376,7 +422,9 @@ public class OnPageContentParsingLiveRequestInfo {
         Objects.equals(this.acceptLanguage, onPageContentParsingLiveRequestInfo.acceptLanguage) &&
         Objects.equals(this.enableJavascript, onPageContentParsingLiveRequestInfo.enableJavascript) &&
         Objects.equals(this.enableBrowserRendering, onPageContentParsingLiveRequestInfo.enableBrowserRendering) &&
-        Objects.equals(this.enableXhr, onPageContentParsingLiveRequestInfo.enableXhr);
+        Objects.equals(this.enableXhr, onPageContentParsingLiveRequestInfo.enableXhr) &&
+        Objects.equals(this.switchPool, onPageContentParsingLiveRequestInfo.switchPool) &&
+        Objects.equals(this.ipPoolForScan, onPageContentParsingLiveRequestInfo.ipPoolForScan);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -385,7 +433,7 @@ public class OnPageContentParsingLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, customUserAgent, customJs, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, disableCookiePopup, acceptLanguage, enableJavascript, enableBrowserRendering, enableXhr);
+    return Objects.hash(url, customUserAgent, customJs, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, storeRawHtml, disableCookiePopup, acceptLanguage, enableJavascript, enableBrowserRendering, enableXhr, switchPool, ipPoolForScan);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -412,6 +460,8 @@ public class OnPageContentParsingLiveRequestInfo {
     sb.append("    enableJavascript: ").append(toIndentedString(enableJavascript)).append("\n");
     sb.append("    enableBrowserRendering: ").append(toIndentedString(enableBrowserRendering)).append("\n");
     sb.append("    enableXhr: ").append(toIndentedString(enableXhr)).append("\n");
+    sb.append("    switchPool: ").append(toIndentedString(switchPool)).append("\n");
+    sb.append("    ipPoolForScan: ").append(toIndentedString(ipPoolForScan)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -447,6 +497,8 @@ public class OnPageContentParsingLiveRequestInfo {
     openapiFields.add("enable_javascript");
     openapiFields.add("enable_browser_rendering");
     openapiFields.add("enable_xhr");
+    openapiFields.add("switch_pool");
+    openapiFields.add("ip_pool_for_scan");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -487,6 +539,9 @@ public class OnPageContentParsingLiveRequestInfo {
       }
       if ((jsonObj.get("accept_language") != null && !jsonObj.get("accept_language").isJsonNull()) && !jsonObj.get("accept_language").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `accept_language` to be a primitive type in the JSON string but got `%s`", jsonObj.get("accept_language").toString()));
+      }
+      if ((jsonObj.get("ip_pool_for_scan") != null && !jsonObj.get("ip_pool_for_scan").isJsonNull()) && !jsonObj.get("ip_pool_for_scan").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `ip_pool_for_scan` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ip_pool_for_scan").toString()));
       }
   }
 

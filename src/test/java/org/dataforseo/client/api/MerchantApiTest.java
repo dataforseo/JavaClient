@@ -64,6 +64,7 @@ import org.dataforseo.client.model.MerchantGoogleSellersTasksReadyResponseInfo;
 import org.dataforseo.client.model.MerchantIdListRequestInfo;
 import org.dataforseo.client.model.MerchantIdListResponseInfo;
 import org.dataforseo.client.model.MerchantTaskRequestInfo;
+import org.dataforseo.client.model.MerchantTasksReadyResponseInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -545,6 +546,17 @@ public class MerchantApiTest {
     public void merchantIdListTest() throws ApiException {
         List<MerchantIdListRequestInfo> merchantIdListRequestInfo = null;
         MerchantIdListResponseInfo response = api.merchantIdList(merchantIdListRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void merchantTasksReadyTest() throws ApiException {
+        MerchantTasksReadyResponseInfo response = api.merchantTasksReady();
         // TODO: test validations
     }
 

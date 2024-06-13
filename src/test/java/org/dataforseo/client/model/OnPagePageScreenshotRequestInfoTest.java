@@ -111,19 +111,19 @@ public class OnPagePageScreenshotRequestInfoTest {
     }
 
     /**
-     * Test the property 'enableJavascript'
-     */
-    @Test
-    public void enableJavascriptTest() {
-        // TODO: test enableJavascript
-    }
-
-    /**
      * Test the property 'customJs'
      */
     @Test
     public void customJsTest() {
         // TODO: test customJs
+    }
+
+    /**
+     * Test the property 'switchPool'
+     */
+    @Test
+    public void switchPoolTest() {
+        // TODO: test switchPool
     }
 
     /**

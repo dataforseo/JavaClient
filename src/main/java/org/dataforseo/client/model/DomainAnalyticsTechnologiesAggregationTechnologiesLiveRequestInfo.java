@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   public static final String SERIALIZED_NAME_GROUP = "group";
   @SerializedName(SERIALIZED_NAME_GROUP)
@@ -119,7 +119,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * id of the target technology group required field if you don’t specify technology or category at least one field (group, category, technology) must be set you can find the full list of technology group ids on this page example: \&quot;marketing\&quot;
+   * id of the target technology group required field if you don’t specify technology, category  or keyword at least one field (group, category, keyword, technology) must be set you can find the full list of technology group ids on this page example: \&quot;marketing\&quot;
    * @return group
   **/
   @javax.annotation.Nullable
@@ -138,7 +138,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * id of the target technology category required field if you don’t specify group or technology at least one field (group, category, technology) must be set you can find the full list of technology category ids on this page example: \&quot;crm\&quot;
+   * id of the target technology category required field if you don’t specify group, keyword or technology at least one field (group, category, keyword, technology) must be set you can find the full list of technology category ids on this page example: \&quot;crm\&quot;
    * @return category
   **/
   @javax.annotation.Nullable
@@ -157,7 +157,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * target technology required field if you don’t specify group or category at least one field (group, category, technology) must be set you can find the full list of technologies on this page example: \&quot;Salesforce\&quot;
+   * target technology required field if you don’t specify group, keyword or category at least one field (group, category, keyword, technology) must be set you can find the full list of technologies on this page example: \&quot;Salesforce\&quot;
    * @return technology
   **/
   @javax.annotation.Nullable
@@ -176,7 +176,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * target keyword in the domain’s meta keywords optional field UTF-8 encoding each keyword should be at least 3 characters long example: \&quot;seo\&quot;
+   * target keyword in the domain’s meta keywords required field if you don’t specify group, category or technology at least one field (group, category, keyword, technology) must be set UTF-8 encoding example: \&quot;seo\&quot;
    * @return keyword
   **/
   @javax.annotation.Nullable
@@ -222,7 +222,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like,not_like you can use the % operator with like and not_like to match any string of zero or more characters you can use the following parameters to filter the results: domain_rank, last_visited, country_iso_code, language_code, content_language_code example: [[\&quot;country_iso_code\&quot;,\&quot;&#x3D;\&quot;,\&quot;US\&quot;], \&quot;and\&quot;, [\&quot;domain_rank\&quot;,\&quot;&gt;\&quot;,800]]for more information about filters, please refer to Domain Analytics Technologies API – Filters
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like,not_like you can use the % operator with like and not_like to match any string of zero or more characters you can use the following parameters to filter the results: domain_rank, last_visited, country_iso_code, language_code, content_language_code Note: all filtering parameters are taken from the domain_technology_item of the domain_technologies endpoint; example: [[\&quot;country_iso_code\&quot;,\&quot;&#x3D;\&quot;,\&quot;US\&quot;], \&quot;and\&quot;, [\&quot;domain_rank\&quot;,\&quot;&gt;\&quot;,800]]for more information about filters, please refer to Domain Analytics Technologies API – Filters
    * @return filters
   **/
   @javax.annotation.Nullable

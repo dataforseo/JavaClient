@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleOrganicLiveRegularRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class SerpGoogleOrganicLiveRegularRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -334,7 +334,7 @@ public class SerpGoogleOrganicLiveRegularRequestInfo {
   }
 
    /**
-   * target domain, subdomain, or webpage to get results for optional field a domain or a subdomain should be specified without https:// and www. note that the results of target-specific tasks will only include SERP elements that contain a url string; you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results; examples: example.com  – return results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/; example.com* – returns results for the domain, including all its pages; *example.com* – returns results for the entire domain, including all its pages and subdomains; *example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com; example.com/example-page  – returns results for the exact URL; example.com/example-page*  – returns results for all domain’s URLs that start with the specified string
+   * target domain, subdomain, or webpage to get results for optional field a domain or a subdomain should be specified without https:// and www. note that the results of target-specific tasks will only include SERP elements that contain a url string; you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results; examples: example.com  – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/; example.com* – returns results for the domain, including all its pages; *example.com* – returns results for the entire domain, including all its pages and subdomains; *example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com; example.com/example-page  – returns results for the exact URL; example.com/example-page*  – returns results for all domain’s URLs that start with the specified string
    * @return target
   **/
   @javax.annotation.Nullable

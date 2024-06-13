@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpAiSummaryRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class SerpAiSummaryRequestInfo {
   public static final String SERIALIZED_NAME_TASK_ID = "task_id";
   @SerializedName(SERIALIZED_NAME_TASK_ID)
@@ -100,7 +100,7 @@ public class SerpAiSummaryRequestInfo {
   }
 
    /**
-   * AI prompt optional field additional task for AI summarizer, also referred to as any form of text, question or information that communicates to AI what response you’re looking for; note: your prompt has to be relevant to the keyword specified in the POST request to SERP API
+   * AI prompt optional field additional task for AI summariser; any form of text, question or information that communicates to AI what response you’re looking for; max number of symbols or characters you can specify: 2000; note: your prompt has to be relevant to the keyword specified in the POST request to SERP API
    * @return prompt
   **/
   @javax.annotation.Nullable

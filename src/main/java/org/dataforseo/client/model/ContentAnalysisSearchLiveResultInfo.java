@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * ContentAnalysisSearchLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class ContentAnalysisSearchLiveResultInfo {
   public static final String SERIALIZED_NAME_OFFSET_TOKEN = "offset_token";
   @SerializedName(SERIALIZED_NAME_OFFSET_TOKEN)

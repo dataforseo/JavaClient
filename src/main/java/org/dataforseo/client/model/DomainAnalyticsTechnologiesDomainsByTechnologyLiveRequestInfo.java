@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo {
   public static final String SERIALIZED_NAME_TECHNOLOGY_PATHS = "technology_paths";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY_PATHS)
@@ -115,7 +115,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo {
   }
 
    /**
-   * target technology paths required field if you don’t specify groups, technologies and categories each technology path should be specified as a separate object containing “path” and “name”, where “path” is specified as “$group_id.$category_id” and “name” – as the name of the target technology; each object with a technology path should be separated with a comma you can find the full list of technology group ids, category ids and technology names on this page note: you can specify up to 10 technology paths in this array example: [{\&quot;path\&quot;: \&quot;content.cms\&quot;,\&quot;name\&quot;: \&quot;wordpress\&quot;}, {\&quot;path\&quot;: \&quot;marketing.crm\&quot;,\&quot;name\&quot;: \&quot;salesforce\&quot;}]
+   * target technology paths required field if you don’t specify groups, technologies, keywords or categories at least one field (technology_paths, groups, technologies, keywords or categories) must be set; each technology path should be specified as a separate object containing “path” and “name”, where “path” is specified as “$group_id.$category_id” and “name” – as the name of the target technology; each object with a technology path should be separated with a comma you can find the full list of technology group ids, category ids and technology names on this page note: you can specify up to 10 technology paths in this array example: [{\&quot;path\&quot;: \&quot;content.cms\&quot;,\&quot;name\&quot;: \&quot;wordpress\&quot;}, {\&quot;path\&quot;: \&quot;marketing.crm\&quot;,\&quot;name\&quot;: \&quot;salesforce\&quot;}]
    * @return technologyPaths
   **/
   @javax.annotation.Nullable
@@ -142,7 +142,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo {
   }
 
    /**
-   * ids of the target technology groups required field if you don’t specify technologies, technology_paths or categories you can find the full list of technology group ids on this page note: you can specify up to 10 technology groups in this array example: [\&quot;sales\&quot;, \&quot;marketing\&quot;]
+   * ids of the target technology groups required field if you don’t specify technologies, technology_paths, keywords or categories you can find the full list of technology group ids on this page note: you can specify up to 10 technology groups in this array example: [\&quot;sales\&quot;, \&quot;marketing\&quot;]
    * @return groups
   **/
   @javax.annotation.Nullable
@@ -169,7 +169,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo {
   }
 
    /**
-   * ids of the target technology categories required field if you don’t specify groups, technology_paths or technologies you can find the full list of technology category ids on this page note: you can specify up to 10 technology categories in this array example: [\&quot;payment_processors\&quot;,\&quot;crm\&quot;]
+   * ids of the target technology categories required field if you don’t specify groups, technology_paths, keywords or technologies you can find the full list of technology category ids on this page note: you can specify up to 10 technology categories in this array example: [\&quot;payment_processors\&quot;,\&quot;crm\&quot;]
    * @return categories
   **/
   @javax.annotation.Nullable
@@ -196,7 +196,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo {
   }
 
    /**
-   * target technologies required field if you don’t specify groups, technology_paths or categories you can find the full list of technologies you can specify here on this page note: you can specify up to 10 technologies in this array example: [\&quot;Google Pay\&quot;,\&quot;Salesforce\&quot;]
+   * target technologies required field if you don’t specify groups, technology_paths, keywords or categories you can find the full list of technologies you can specify here on this page note: you can specify up to 10 technologies in this array example: [\&quot;Google Pay\&quot;,\&quot;Salesforce\&quot;]
    * @return technologies
   **/
   @javax.annotation.Nullable
@@ -223,7 +223,7 @@ public class DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo {
   }
 
    /**
-   * target keywords in the domain’s title, description or meta keywords optional field UTF-8 encoding each keyword should be at least 3 characters long example: [\&quot;seo\&quot;,\&quot;software\&quot;]
+   * target keywords in the domain’s title, description or meta keywords required field if you don’t specify groups, technology_paths, technologies or categories optional field UTF-8 encoding example: [\&quot;seo\&quot;,\&quot;software\&quot;]
    * @return keywords
   **/
   @javax.annotation.Nullable

@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppStoreMetricsBundleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class AppStoreMetricsBundleInfo {
   public static final String SERIALIZED_NAME_APP_STORE_SEARCH_ORGANIC = "app_store_search_organic";
   @SerializedName(SERIALIZED_NAME_APP_STORE_SEARCH_ORGANIC)

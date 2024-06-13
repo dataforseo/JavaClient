@@ -74,10 +74,12 @@ import org.dataforseo.client.model.AppDataGoogleAppSearchesTaskPostResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleAppSearchesTasksReadyResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleCategoriesResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleLanguagesResponseInfo;
+import org.dataforseo.client.model.AppDataGoogleLocationsCountryResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleLocationsResponseInfo;
 import org.dataforseo.client.model.AppDataIdListRequestInfo;
 import org.dataforseo.client.model.AppDataIdListResponseInfo;
 import org.dataforseo.client.model.AppDataTaskRequestInfo;
+import org.dataforseo.client.model.AppDataTasksReadyResponseInfo;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -693,6 +695,129 @@ public class AppDataApi {
         return localVarCall;
     }
     /**
+     * Build call for appDataGoogleLocationsCountry
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call appDataGoogleLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/app_data/google/locations/{country}"
+            .replace("{" + "country" + "}", localVarApiClient.escapeString(country.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call appDataGoogleLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'country' is set
+        if (country == null) {
+            throw new ApiException("Missing the required parameter 'country' when calling appDataGoogleLocationsCountry(Async)");
+        }
+
+        return appDataGoogleLocationsCountryCall(country, _callback);
+
+    }
+
+    /**
+     * 
+     * By calling this endpoint you will receive the list of Google locations supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/locations/?bash&#39;
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @return AppDataGoogleLocationsCountryResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public AppDataGoogleLocationsCountryResponseInfo appDataGoogleLocationsCountry(String country) throws ApiException {
+        ApiResponse<AppDataGoogleLocationsCountryResponseInfo> localVarResp = appDataGoogleLocationsCountryWithHttpInfo(country);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * By calling this endpoint you will receive the list of Google locations supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/locations/?bash&#39;
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @return ApiResponse&lt;AppDataGoogleLocationsCountryResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<AppDataGoogleLocationsCountryResponseInfo> appDataGoogleLocationsCountryWithHttpInfo(String country) throws ApiException {
+        okhttp3.Call localVarCall = appDataGoogleLocationsCountryValidateBeforeCall(country, null);
+        Type localVarReturnType = new TypeToken<AppDataGoogleLocationsCountryResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * By calling this endpoint you will receive the list of Google locations supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/locations/?bash&#39;
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call appDataGoogleLocationsCountryAsync(String country, final ApiCallback<AppDataGoogleLocationsCountryResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = appDataGoogleLocationsCountryValidateBeforeCall(country, _callback);
+        Type localVarReturnType = new TypeToken<AppDataGoogleLocationsCountryResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for appDataIdList
      * @param appDataIdListRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
@@ -807,6 +932,119 @@ public class AppDataApi {
 
         okhttp3.Call localVarCall = appDataIdListValidateBeforeCall(appDataIdListRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<AppDataIdListResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for appDataTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call appDataTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/app_data/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call appDataTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return appDataTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash&#39;
+     * @return AppDataTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public AppDataTasksReadyResponseInfo appDataTasksReady() throws ApiException {
+        ApiResponse<AppDataTasksReadyResponseInfo> localVarResp = appDataTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;AppDataTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<AppDataTasksReadyResponseInfo> appDataTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = appDataTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<AppDataTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call appDataTasksReadyAsync(final ApiCallback<AppDataTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = appDataTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<AppDataTasksReadyResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

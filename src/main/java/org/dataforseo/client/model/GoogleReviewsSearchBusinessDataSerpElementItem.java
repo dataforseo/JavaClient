@@ -26,6 +26,7 @@ import java.util.List;
 import org.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import org.dataforseo.client.model.ImagesElement;
 import org.dataforseo.client.model.RatingInfo;
+import org.dataforseo.client.model.ReviewHighlights;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +56,7 @@ import org.dataforseo.client.JSON;
 /**
  * GoogleReviewsSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-02T20:51:42.343286900+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
 public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -144,6 +145,10 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
   private List<ImagesElement> images;
+
+  public static final String SERIALIZED_NAME_REVIEW_HIGHLIGHTS = "review_highlights";
+  @SerializedName(SERIALIZED_NAME_REVIEW_HIGHLIGHTS)
+  private List<ReviewHighlights> reviewHighlights;
 
   public GoogleReviewsSearchBusinessDataSerpElementItem() {
     this.type = this.getClass().getSimpleName();
@@ -575,6 +580,33 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
   }
 
 
+  public GoogleReviewsSearchBusinessDataSerpElementItem reviewHighlights(List<ReviewHighlights> reviewHighlights) {
+    this.reviewHighlights = reviewHighlights;
+    return this;
+  }
+
+  public GoogleReviewsSearchBusinessDataSerpElementItem addReviewHighlightsItem(ReviewHighlights reviewHighlightsItem) {
+    if (this.reviewHighlights == null) {
+      this.reviewHighlights = new ArrayList<>();
+    }
+    this.reviewHighlights.add(reviewHighlightsItem);
+    return this;
+  }
+
+   /**
+   * review highlights contains highlighted review criteria and assessments
+   * @return reviewHighlights
+  **/
+  @javax.annotation.Nullable
+  public List<ReviewHighlights> getReviewHighlights() {
+    return reviewHighlights;
+  }
+
+  public void setReviewHighlights(List<ReviewHighlights> reviewHighlights) {
+    this.reviewHighlights = reviewHighlights;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -607,6 +639,7 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
         Objects.equals(this.ownerTimestamp, googleReviewsSearchBusinessDataSerpElementItem.ownerTimestamp) &&
         Objects.equals(this.reviewId, googleReviewsSearchBusinessDataSerpElementItem.reviewId) &&
         Objects.equals(this.images, googleReviewsSearchBusinessDataSerpElementItem.images) &&
+        Objects.equals(this.reviewHighlights, googleReviewsSearchBusinessDataSerpElementItem.reviewHighlights) &&
         super.equals(o);
   }
 
@@ -616,7 +649,7 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, xpath, reviewText, originalReviewText, timeAgo, timestamp, rating, reviewsCount, photosCount, localGuide, profileName, profileUrl, reviewUrl, profileImageUrl, ownerAnswer, originalOwnerAnswer, ownerTimeAgo, ownerTimestamp, reviewId, images, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, position, xpath, reviewText, originalReviewText, timeAgo, timestamp, rating, reviewsCount, photosCount, localGuide, profileName, profileUrl, reviewUrl, profileImageUrl, ownerAnswer, originalOwnerAnswer, ownerTimeAgo, ownerTimestamp, reviewId, images, reviewHighlights, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -653,6 +686,7 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
     sb.append("    ownerTimestamp: ").append(toIndentedString(ownerTimestamp)).append("\n");
     sb.append("    reviewId: ").append(toIndentedString(reviewId)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
+    sb.append("    reviewHighlights: ").append(toIndentedString(reviewHighlights)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -698,6 +732,7 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
     openapiFields.add("owner_timestamp");
     openapiFields.add("review_id");
     openapiFields.add("images");
+    openapiFields.add("review_highlights");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

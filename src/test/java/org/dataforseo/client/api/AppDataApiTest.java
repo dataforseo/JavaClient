@@ -61,10 +61,12 @@ import org.dataforseo.client.model.AppDataGoogleAppSearchesTaskPostResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleAppSearchesTasksReadyResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleCategoriesResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleLanguagesResponseInfo;
+import org.dataforseo.client.model.AppDataGoogleLocationsCountryResponseInfo;
 import org.dataforseo.client.model.AppDataGoogleLocationsResponseInfo;
 import org.dataforseo.client.model.AppDataIdListRequestInfo;
 import org.dataforseo.client.model.AppDataIdListResponseInfo;
 import org.dataforseo.client.model.AppDataTaskRequestInfo;
+import org.dataforseo.client.model.AppDataTasksReadyResponseInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -138,6 +140,18 @@ public class AppDataApiTest {
     }
 
     /**
+     * By calling this endpoint you will receive the list of Google locations supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/locations/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void appDataGoogleLocationsCountryTest() throws ApiException {
+        String country = null;
+        AppDataGoogleLocationsCountryResponseInfo response = api.appDataGoogleLocationsCountry(country);
+        // TODO: test validations
+    }
+
+    /**
      * This endpoint is designed to provide you with the list of IDs and metadata of the completed App Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/id_list/?bash&#39;
      *
      * @throws ApiException if the Api call fails
@@ -146,6 +160,17 @@ public class AppDataApiTest {
     public void appDataIdListTest() throws ApiException {
         List<AppDataIdListRequestInfo> appDataIdListRequestInfo = null;
         AppDataIdListResponseInfo response = api.appDataIdList(appDataIdListRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void appDataTasksReadyTest() throws ApiException {
+        AppDataTasksReadyResponseInfo response = api.appDataTasksReady();
         // TODO: test validations
     }
 

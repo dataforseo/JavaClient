@@ -14,7 +14,7 @@
 |**suggestionType** | **String** | google autocomplete suggestion type Note: only available for the following client: chrome/chrome-omni |  [optional] |
 |**searchQueryUrl** | **String** | url to search results url to search results relevant to the google autocomplete suggestion |  [optional] |
 |**thumbnailUrl** | **String** | url of the thumbnail image url of the thumbnail image of the google autocomplete suggestion Note: only available for the following client: gws-wiz gws-wiz-serp |  [optional] |
-|**highlighted** | **List&lt;String&gt;** |  |  [optional] |
+|**highlighted** | **List&lt;String&gt;** | keywords highlighted in autocomplete contains a list of google autocomplete suggestions that are highlighted in the search bar; Note: array is only available for the following client: gws-wiz psy-ab gws-wiz-local |  [optional] |
 
 
 
