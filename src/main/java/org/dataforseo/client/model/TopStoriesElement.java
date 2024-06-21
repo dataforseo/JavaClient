@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * TopStoriesElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class TopStoriesElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -83,6 +83,10 @@ public class TopStoriesElement {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
+
+  public static final String SERIALIZED_NAME_IMAGE_URL = "image_url";
+  @SerializedName(SERIALIZED_NAME_IMAGE_URL)
+  private String imageUrl;
 
   public TopStoriesElement() {
   }
@@ -239,6 +243,25 @@ public class TopStoriesElement {
   }
 
 
+  public TopStoriesElement imageUrl(String imageUrl) {
+    this.imageUrl = imageUrl;
+    return this;
+  }
+
+   /**
+   * URL of the image
+   * @return imageUrl
+  **/
+  @javax.annotation.Nullable
+  public String getImageUrl() {
+    return imageUrl;
+  }
+
+  public void setImageUrl(String imageUrl) {
+    this.imageUrl = imageUrl;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -256,7 +279,8 @@ public class TopStoriesElement {
         Objects.equals(this.date, topStoriesElement.date) &&
         Objects.equals(this.ampVersion, topStoriesElement.ampVersion) &&
         Objects.equals(this.timestamp, topStoriesElement.timestamp) &&
-        Objects.equals(this.url, topStoriesElement.url);
+        Objects.equals(this.url, topStoriesElement.url) &&
+        Objects.equals(this.imageUrl, topStoriesElement.imageUrl);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -265,7 +289,7 @@ public class TopStoriesElement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, source, domain, title, date, ampVersion, timestamp, url);
+    return Objects.hash(type, source, domain, title, date, ampVersion, timestamp, url, imageUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -287,6 +311,7 @@ public class TopStoriesElement {
     sb.append("    ampVersion: ").append(toIndentedString(ampVersion)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -317,6 +342,7 @@ public class TopStoriesElement {
     openapiFields.add("amp_version");
     openapiFields.add("timestamp");
     openapiFields.add("url");
+    openapiFields.add("image_url");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -363,6 +389,9 @@ public class TopStoriesElement {
       }
       if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("image_url") != null && !jsonObj.get("image_url").isJsonNull()) && !jsonObj.get("image_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `image_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("image_url").toString()));
       }
   }
 

@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleDomainIntersectionLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleDomainIntersectionLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET1 = "target1";
   @SerializedName(SERIALIZED_NAME_TARGET1)
@@ -89,6 +89,10 @@ public class DataforseoLabsGoogleDomainIntersectionLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SERP_INFO = "include_serp_info";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SERP_INFO)
   private Boolean includeSerpInfo;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
@@ -292,6 +296,25 @@ public class DataforseoLabsGoogleDomainIntersectionLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleDomainIntersectionLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info, and clickstream_etv fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+  }
+
+
   public DataforseoLabsGoogleDomainIntersectionLiveRequestInfo limit(Integer limit) {
     this.limit = limit;
     return this;
@@ -422,6 +445,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveRequestInfo {
         Objects.equals(this.intersections, dataforseoLabsGoogleDomainIntersectionLiveRequestInfo.intersections) &&
         Objects.equals(this.itemTypes, dataforseoLabsGoogleDomainIntersectionLiveRequestInfo.itemTypes) &&
         Objects.equals(this.includeSerpInfo, dataforseoLabsGoogleDomainIntersectionLiveRequestInfo.includeSerpInfo) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleDomainIntersectionLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.limit, dataforseoLabsGoogleDomainIntersectionLiveRequestInfo.limit) &&
         Objects.equals(this.offset, dataforseoLabsGoogleDomainIntersectionLiveRequestInfo.offset) &&
         Objects.equals(this.filters, dataforseoLabsGoogleDomainIntersectionLiveRequestInfo.filters) &&
@@ -435,7 +459,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target1, target2, locationName, locationCode, languageName, languageCode, intersections, itemTypes, includeSerpInfo, limit, offset, filters, orderBy, tag);
+    return Objects.hash(target1, target2, locationName, locationCode, languageName, languageCode, intersections, itemTypes, includeSerpInfo, includeClickstreamData, limit, offset, filters, orderBy, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -458,6 +482,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveRequestInfo {
     sb.append("    intersections: ").append(toIndentedString(intersections)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
@@ -494,6 +519,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveRequestInfo {
     openapiFields.add("intersections");
     openapiFields.add("item_types");
     openapiFields.add("include_serp_info");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("limit");
     openapiFields.add("offset");
     openapiFields.add("filters");

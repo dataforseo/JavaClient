@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -81,6 +81,10 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SERP_INFO = "include_serp_info";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SERP_INFO)
   private Boolean includeSerpInfo;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_EXACT_MATCH = "exact_match";
   @SerializedName(SERIALIZED_NAME_EXACT_MATCH)
@@ -247,6 +251,25 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo {
 
   public void setIncludeSerpInfo(Boolean includeSerpInfo) {
     this.includeSerpInfo = includeSerpInfo;
+  }
+
+
+  public DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
   }
 
 
@@ -435,6 +458,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo {
         Objects.equals(this.languageCode, dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.languageCode) &&
         Objects.equals(this.includeSeedKeyword, dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.includeSeedKeyword) &&
         Objects.equals(this.includeSerpInfo, dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.includeSerpInfo) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.exactMatch, dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.exactMatch) &&
         Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.filters, dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo.filters) &&
@@ -451,7 +475,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, includeSeedKeyword, includeSerpInfo, exactMatch, ignoreSynonyms, filters, orderBy, limit, offset, offsetToken, tag);
+    return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, includeSeedKeyword, includeSerpInfo, includeClickstreamData, exactMatch, ignoreSynonyms, filters, orderBy, limit, offset, offsetToken, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -472,6 +496,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    includeSeedKeyword: ").append(toIndentedString(includeSeedKeyword)).append("\n");
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    exactMatch: ").append(toIndentedString(exactMatch)).append("\n");
     sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
@@ -509,6 +534,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo {
     openapiFields.add("language_code");
     openapiFields.add("include_seed_keyword");
     openapiFields.add("include_serp_info");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("exact_match");
     openapiFields.add("ignore_synonyms");
     openapiFields.add("filters");

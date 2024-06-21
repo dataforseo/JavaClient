@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AvgBacklinksInfo;
+import org.dataforseo.client.model.ClickstreamKeywordInfo;
 import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
 import org.dataforseo.client.model.KeywordProperties;
@@ -56,7 +57,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class KeywordDataInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -77,6 +78,10 @@ public class KeywordDataInfo {
   public static final String SERIALIZED_NAME_KEYWORD_INFO = "keyword_info";
   @SerializedName(SERIALIZED_NAME_KEYWORD_INFO)
   private KeywordInfo keywordInfo;
+
+  public static final String SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO = "clickstream_keyword_info";
+  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO)
+  private ClickstreamKeywordInfo clickstreamKeywordInfo;
 
   public static final String SERIALIZED_NAME_KEYWORD_PROPERTIES = "keyword_properties";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PROPERTIES)
@@ -196,6 +201,25 @@ public class KeywordDataInfo {
   }
 
 
+  public KeywordDataInfo clickstreamKeywordInfo(ClickstreamKeywordInfo clickstreamKeywordInfo) {
+    this.clickstreamKeywordInfo = clickstreamKeywordInfo;
+    return this;
+  }
+
+   /**
+   * Get clickstreamKeywordInfo
+   * @return clickstreamKeywordInfo
+  **/
+  @javax.annotation.Nullable
+  public ClickstreamKeywordInfo getClickstreamKeywordInfo() {
+    return clickstreamKeywordInfo;
+  }
+
+  public void setClickstreamKeywordInfo(ClickstreamKeywordInfo clickstreamKeywordInfo) {
+    this.clickstreamKeywordInfo = clickstreamKeywordInfo;
+  }
+
+
   public KeywordDataInfo keywordProperties(KeywordProperties keywordProperties) {
     this.keywordProperties = keywordProperties;
     return this;
@@ -306,6 +330,7 @@ public class KeywordDataInfo {
         Objects.equals(this.locationCode, keywordDataInfo.locationCode) &&
         Objects.equals(this.languageCode, keywordDataInfo.languageCode) &&
         Objects.equals(this.keywordInfo, keywordDataInfo.keywordInfo) &&
+        Objects.equals(this.clickstreamKeywordInfo, keywordDataInfo.clickstreamKeywordInfo) &&
         Objects.equals(this.keywordProperties, keywordDataInfo.keywordProperties) &&
         Objects.equals(this.impressionsInfo, keywordDataInfo.impressionsInfo) &&
         Objects.equals(this.serpInfo, keywordDataInfo.serpInfo) &&
@@ -319,7 +344,7 @@ public class KeywordDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, keyword, locationCode, languageCode, keywordInfo, keywordProperties, impressionsInfo, serpInfo, avgBacklinksInfo, searchIntentInfo);
+    return Objects.hash(seType, keyword, locationCode, languageCode, keywordInfo, clickstreamKeywordInfo, keywordProperties, impressionsInfo, serpInfo, avgBacklinksInfo, searchIntentInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -338,6 +363,7 @@ public class KeywordDataInfo {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    keywordInfo: ").append(toIndentedString(keywordInfo)).append("\n");
+    sb.append("    clickstreamKeywordInfo: ").append(toIndentedString(clickstreamKeywordInfo)).append("\n");
     sb.append("    keywordProperties: ").append(toIndentedString(keywordProperties)).append("\n");
     sb.append("    impressionsInfo: ").append(toIndentedString(impressionsInfo)).append("\n");
     sb.append("    serpInfo: ").append(toIndentedString(serpInfo)).append("\n");
@@ -370,6 +396,7 @@ public class KeywordDataInfo {
     openapiFields.add("location_code");
     openapiFields.add("language_code");
     openapiFields.add("keyword_info");
+    openapiFields.add("clickstream_keyword_info");
     openapiFields.add("keyword_properties");
     openapiFields.add("impressions_info");
     openapiFields.add("serp_info");
@@ -413,6 +440,10 @@ public class KeywordDataInfo {
       // validate the optional field `keyword_info`
       if (jsonObj.get("keyword_info") != null && !jsonObj.get("keyword_info").isJsonNull()) {
         KeywordInfo.validateJsonElement(jsonObj.get("keyword_info"));
+      }
+      // validate the optional field `clickstream_keyword_info`
+      if (jsonObj.get("clickstream_keyword_info") != null && !jsonObj.get("clickstream_keyword_info").isJsonNull()) {
+        ClickstreamKeywordInfo.validateJsonElement(jsonObj.get("clickstream_keyword_info"));
       }
       // validate the optional field `keyword_properties`
       if (jsonObj.get("keyword_properties") != null && !jsonObj.get("keyword_properties").isJsonNull()) {

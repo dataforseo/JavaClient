@@ -97,6 +97,14 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'includeClickstreamData'
+     */
+    @Test
+    public void includeClickstreamDataTest() {
+        // TODO: test includeClickstreamData
+    }
+
+    /**
      * Test the property 'ignoreSynonyms'
      */
     @Test

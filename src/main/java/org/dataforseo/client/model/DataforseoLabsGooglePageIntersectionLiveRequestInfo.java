@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGooglePageIntersectionLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
   public static final String SERIALIZED_NAME_PAGES = "pages";
   @SerializedName(SERIALIZED_NAME_PAGES)
@@ -103,6 +103,10 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SERP_INFO = "include_serp_info";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SERP_INFO)
   private Boolean includeSerpInfo;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
   @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
@@ -267,7 +271,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
   }
 
    /**
-   * search results type indicates type of search results included in the response optional field possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;]
+   * search results type indicates type of search results included in the response optional field possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;]
    * @return itemTypes
   **/
   @javax.annotation.Nullable
@@ -372,6 +376,25 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
 
   public void setIncludeSerpInfo(Boolean includeSerpInfo) {
     this.includeSerpInfo = includeSerpInfo;
+  }
+
+
+  public DataforseoLabsGooglePageIntersectionLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info, and clickstream_etv fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
   }
 
 
@@ -489,6 +512,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
         Objects.equals(this.includeSubdomains, dataforseoLabsGooglePageIntersectionLiveRequestInfo.includeSubdomains) &&
         Objects.equals(this.intersectionMode, dataforseoLabsGooglePageIntersectionLiveRequestInfo.intersectionMode) &&
         Objects.equals(this.includeSerpInfo, dataforseoLabsGooglePageIntersectionLiveRequestInfo.includeSerpInfo) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGooglePageIntersectionLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.ignoreSynonyms, dataforseoLabsGooglePageIntersectionLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.filters, dataforseoLabsGooglePageIntersectionLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsGooglePageIntersectionLiveRequestInfo.orderBy) &&
@@ -501,7 +525,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(pages, excludePages, locationName, locationCode, languageName, languageCode, itemTypes, limit, offset, includeSubdomains, intersectionMode, includeSerpInfo, ignoreSynonyms, filters, orderBy, tag);
+    return Objects.hash(pages, excludePages, locationName, locationCode, languageName, languageCode, itemTypes, limit, offset, includeSubdomains, intersectionMode, includeSerpInfo, includeClickstreamData, ignoreSynonyms, filters, orderBy, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -527,6 +551,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
     sb.append("    intersectionMode: ").append(toIndentedString(intersectionMode)).append("\n");
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
@@ -565,6 +590,7 @@ public class DataforseoLabsGooglePageIntersectionLiveRequestInfo {
     openapiFields.add("include_subdomains");
     openapiFields.add("intersection_mode");
     openapiFields.add("include_serp_info");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("ignore_synonyms");
     openapiFields.add("filters");
     openapiFields.add("order_by");

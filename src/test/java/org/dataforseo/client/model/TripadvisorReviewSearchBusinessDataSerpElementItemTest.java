@@ -26,6 +26,7 @@ import org.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import org.dataforseo.client.model.BusinessDataUserProfileInfo;
 import org.dataforseo.client.model.ImageUrlInfo;
 import org.dataforseo.client.model.RatingInfo;
+import org.dataforseo.client.model.ReviewHighlights;
 import org.dataforseo.client.model.ReviewResponseItemInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -147,6 +148,14 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItemTest {
     @Test
     public void responsesTest() {
         // TODO: test responses
+    }
+
+    /**
+     * Test the property 'reviewHighlights'
+     */
+    @Test
+    public void reviewHighlightsTest() {
+        // TODO: test reviewHighlights
     }
 
 }

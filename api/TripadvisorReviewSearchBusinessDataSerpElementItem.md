@@ -19,6 +19,7 @@
 |**reviewImages** | [**List&lt;ImageUrlInfo&gt;**](ImageUrlInfo.md) | contains URLs of the images used in the review |  [optional] |
 |**userProfile** | [**BusinessDataUserProfileInfo**](BusinessDataUserProfileInfo.md) |  |  [optional] |
 |**responses** | [**List&lt;ReviewResponseItemInfo&gt;**](ReviewResponseItemInfo.md) | contains information about the owner’s response |  [optional] |
+|**reviewHighlights** | [**List&lt;ReviewHighlights&gt;**](ReviewHighlights.md) | review highlights contains highlighted review criteria and assessments |  [optional] |
 
 
 

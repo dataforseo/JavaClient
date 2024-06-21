@@ -24,7 +24,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.AmazonDeliveryInfo;
 import org.dataforseo.client.model.BaseAmazonSerpElementItem;
-import org.dataforseo.client.model.RatingElement;
+import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -52,6 +52,14 @@ public class AmazonAmazonPaidSerpElementItemTest {
     }
 
     /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
+    }
+
+    /**
      * Test the property 'rankGroup'
      */
     @Test
@@ -65,6 +73,14 @@ public class AmazonAmazonPaidSerpElementItemTest {
     @Test
     public void rankAbsoluteTest() {
         // TODO: test rankAbsolute
+    }
+
+    /**
+     * Test the property 'position'
+     */
+    @Test
+    public void positionTest() {
+        // TODO: test position
     }
 
     /**
@@ -100,19 +116,19 @@ public class AmazonAmazonPaidSerpElementItemTest {
     }
 
     /**
+     * Test the property 'asin'
+     */
+    @Test
+    public void asinTest() {
+        // TODO: test asin
+    }
+
+    /**
      * Test the property 'imageUrl'
      */
     @Test
     public void imageUrlTest() {
         // TODO: test imageUrl
-    }
-
-    /**
-     * Test the property 'boughtPastMonth'
-     */
-    @Test
-    public void boughtPastMonthTest() {
-        // TODO: test boughtPastMonth
     }
 
     /**
@@ -148,19 +164,11 @@ public class AmazonAmazonPaidSerpElementItemTest {
     }
 
     /**
-     * Test the property 'dataAsin'
+     * Test the property 'isBestSeller'
      */
     @Test
-    public void dataAsinTest() {
-        // TODO: test dataAsin
-    }
-
-    /**
-     * Test the property 'rating'
-     */
-    @Test
-    public void ratingTest() {
-        // TODO: test rating
+    public void isBestSellerTest() {
+        // TODO: test isBestSeller
     }
 
     /**
@@ -172,11 +180,11 @@ public class AmazonAmazonPaidSerpElementItemTest {
     }
 
     /**
-     * Test the property 'isBestSeller'
+     * Test the property 'rating'
      */
     @Test
-    public void isBestSellerTest() {
-        // TODO: test isBestSeller
+    public void ratingTest() {
+        // TODO: test rating
     }
 
     /**
@@ -185,6 +193,22 @@ public class AmazonAmazonPaidSerpElementItemTest {
     @Test
     public void deliveryInfoTest() {
         // TODO: test deliveryInfo
+    }
+
+    /**
+     * Test the property 'boughtPastMonth'
+     */
+    @Test
+    public void boughtPastMonthTest() {
+        // TODO: test boughtPastMonth
+    }
+
+    /**
+     * Test the property 'dataAsin'
+     */
+    @Test
+    public void dataAsinTest() {
+        // TODO: test dataAsin
     }
 
 }

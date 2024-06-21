@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleRelevantPagesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -81,6 +81,10 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
   private Integer limit;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
@@ -214,7 +218,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
   }
 
    /**
-   * display results by item type optional field indicates the type of search results included in the response Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response; possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;]
+   * display results by item type optional field indicates the type of search results included in the response Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response; possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;]
    * @return itemTypes
   **/
   @javax.annotation.Nullable
@@ -243,6 +247,25 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
 
   public void setLimit(Integer limit) {
     this.limit = limit;
+  }
+
+
+  public DataforseoLabsGoogleRelevantPagesLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
   }
 
 
@@ -374,6 +397,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
         Objects.equals(this.languageCode, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.languageCode) &&
         Objects.equals(this.itemTypes, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.itemTypes) &&
         Objects.equals(this.limit, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.limit) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.offset, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.offset) &&
         Objects.equals(this.historicalSerpMode, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.historicalSerpMode) &&
         Objects.equals(this.filters, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.filters) &&
@@ -387,7 +411,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, limit, offset, historicalSerpMode, filters, orderBy, tag);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, limit, includeClickstreamData, offset, historicalSerpMode, filters, orderBy, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -408,6 +432,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    historicalSerpMode: ").append(toIndentedString(historicalSerpMode)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
@@ -442,6 +467,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
     openapiFields.add("language_code");
     openapiFields.add("item_types");
     openapiFields.add("limit");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("offset");
     openapiFields.add("historical_serp_mode");
     openapiFields.add("filters");

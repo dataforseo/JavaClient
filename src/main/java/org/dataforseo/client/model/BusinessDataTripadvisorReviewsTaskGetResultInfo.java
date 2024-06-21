@@ -22,7 +22,9 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -54,7 +56,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataTripadvisorReviewsTaskGetResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
   public static final String SERIALIZED_NAME_URL_PATH = "url_path";
   @SerializedName(SERIALIZED_NAME_URL_PATH)
@@ -91,6 +93,10 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
   private RatingInfo rating;
+
+  public static final String SERIALIZED_NAME_RATING_DISTRIBUTION = "rating_distribution";
+  @SerializedName(SERIALIZED_NAME_RATING_DISTRIBUTION)
+  private Map<String, Integer> ratingDistribution;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
@@ -278,6 +284,33 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
   }
 
 
+  public BusinessDataTripadvisorReviewsTaskGetResultInfo ratingDistribution(Map<String, Integer> ratingDistribution) {
+    this.ratingDistribution = ratingDistribution;
+    return this;
+  }
+
+  public BusinessDataTripadvisorReviewsTaskGetResultInfo putRatingDistributionItem(String key, Integer ratingDistributionItem) {
+    if (this.ratingDistribution == null) {
+      this.ratingDistribution = new HashMap<>();
+    }
+    this.ratingDistribution.put(key, ratingDistributionItem);
+    return this;
+  }
+
+   /**
+   * rating distribution by votes the distribution of votes across the rating in the range from 1 to 5
+   * @return ratingDistribution
+  **/
+  @javax.annotation.Nullable
+  public Map<String, Integer> getRatingDistribution() {
+    return ratingDistribution;
+  }
+
+  public void setRatingDistribution(Map<String, Integer> ratingDistribution) {
+    this.ratingDistribution = ratingDistribution;
+  }
+
+
   public BusinessDataTripadvisorReviewsTaskGetResultInfo itemsCount(Long itemsCount) {
     this.itemsCount = itemsCount;
     return this;
@@ -362,6 +395,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
         Objects.equals(this.location, businessDataTripadvisorReviewsTaskGetResultInfo.location) &&
         Objects.equals(this.reviewsCount, businessDataTripadvisorReviewsTaskGetResultInfo.reviewsCount) &&
         Objects.equals(this.rating, businessDataTripadvisorReviewsTaskGetResultInfo.rating) &&
+        Objects.equals(this.ratingDistribution, businessDataTripadvisorReviewsTaskGetResultInfo.ratingDistribution) &&
         Objects.equals(this.itemsCount, businessDataTripadvisorReviewsTaskGetResultInfo.itemsCount) &&
         Objects.equals(this.items, businessDataTripadvisorReviewsTaskGetResultInfo.items) &&
         Objects.equals(this.languageCode, businessDataTripadvisorReviewsTaskGetResultInfo.languageCode);
@@ -373,7 +407,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(urlPath, type, seDomain, checkUrl, datetime, title, location, reviewsCount, rating, itemsCount, items, languageCode);
+    return Objects.hash(urlPath, type, seDomain, checkUrl, datetime, title, location, reviewsCount, rating, ratingDistribution, itemsCount, items, languageCode);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -396,6 +430,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
     sb.append("    location: ").append(toIndentedString(location)).append("\n");
     sb.append("    reviewsCount: ").append(toIndentedString(reviewsCount)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
+    sb.append("    ratingDistribution: ").append(toIndentedString(ratingDistribution)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
@@ -430,6 +465,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
     openapiFields.add("location");
     openapiFields.add("reviews_count");
     openapiFields.add("rating");
+    openapiFields.add("rating_distribution");
     openapiFields.add("items_count");
     openapiFields.add("items");
     openapiFields.add("language_code");

@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -81,6 +81,10 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SUBDOMAINS = "include_subdomains";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SUBDOMAINS)
   private Boolean includeSubdomains;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
   @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
@@ -243,6 +247,25 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
 
   public void setIncludeSubdomains(Boolean includeSubdomains) {
     this.includeSubdomains = includeSubdomains;
+  }
+
+
+  public DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
   }
 
 
@@ -412,6 +435,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
         Objects.equals(this.languageCode, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.languageCode) &&
         Objects.equals(this.includeSerpInfo, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.includeSerpInfo) &&
         Objects.equals(this.includeSubdomains, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.includeSubdomains) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.limit, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.limit) &&
         Objects.equals(this.offset, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.offset) &&
@@ -427,7 +451,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSerpInfo, includeSubdomains, ignoreSynonyms, limit, offset, offsetToken, filters, orderBy, tag);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSerpInfo, includeSubdomains, includeClickstreamData, ignoreSynonyms, limit, offset, offsetToken, filters, orderBy, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -448,6 +472,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
@@ -484,6 +509,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
     openapiFields.add("language_code");
     openapiFields.add("include_serp_info");
     openapiFields.add("include_subdomains");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("ignore_synonyms");
     openapiFields.add("limit");
     openapiFields.add("offset");

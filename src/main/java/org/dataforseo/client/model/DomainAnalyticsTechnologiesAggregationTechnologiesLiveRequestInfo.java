@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   public static final String SERIALIZED_NAME_GROUP = "group";
   @SerializedName(SERIALIZED_NAME_GROUP)
@@ -268,7 +268,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * maximum number of returned technology groups optional field you can use this field to limit the number of items with identical \&quot;group\&quot; in the results default value: 5 maximum value: 10000
+   * maximum number of returned technology groups optional field you can use this field to limit the number of items with identical \&quot;group\&quot; in the results default value: 5 minimum value: 1 maximum value: 10000
    * @return internalGroupsListLimit
   **/
   @javax.annotation.Nullable
@@ -287,7 +287,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * maximum number of returned technology categories within the same group optional field you can use this field to limit the number of items with identical \&quot;category\&quot; in the results default value: 5 maximum value: 10000
+   * maximum number of returned technology categories within the same group optional field you can use this field to limit the number of items with identical \&quot;category\&quot; in the results default value: 5 minimum value: 1 maximum value: 10000
    * @return internalCategoriesListLimit
   **/
   @javax.annotation.Nullable
@@ -306,7 +306,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * maximum number of returned technologies within the same category optional field you can use this field to limit the number of items with identical \&quot;technology\&quot; in the results default value: 10 maximum value: 10000
+   * maximum number of returned technologies within the same category optional field you can use this field to limit the number of items with identical \&quot;technology\&quot; in the results default value: 10 minimum value: 1 maximum value: 10000
    * @return internalTechnologiesListLimit
   **/
   @javax.annotation.Nullable
@@ -325,7 +325,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
    /**
-   * maximum number of items with identical \&quot;category\&quot;, \&quot;group\&quot;, and \&quot;technology\&quot; optional field if you use this field, the values specified in internal_groups_list_limit, internal_categories_list_limit and internal_technologies_list_limit will be ignored; you can use this field to limit the number of items with identical \&quot;category\&quot;, \&quot;group\&quot;, or \&quot;technology\&quot; default value: 10 maximum value: 10000
+   * maximum number of items with identical \&quot;category\&quot;, \&quot;group\&quot;, and \&quot;technology\&quot; optional field if you use this field, the values specified in internal_groups_list_limit, internal_categories_list_limit and internal_technologies_list_limit will be ignored; you can use this field to limit the number of items with identical \&quot;category\&quot;, \&quot;group\&quot;, or \&quot;technology\&quot; default value: 10 minimum value: 1 maximum value: 10000
    * @return internalListLimit
   **/
   @javax.annotation.Nullable

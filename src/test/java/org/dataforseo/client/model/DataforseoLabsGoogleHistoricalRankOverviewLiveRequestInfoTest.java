@@ -111,6 +111,14 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'includeClickstreamData'
+     */
+    @Test
+    public void includeClickstreamDataTest() {
+        // TODO: test includeClickstreamData
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

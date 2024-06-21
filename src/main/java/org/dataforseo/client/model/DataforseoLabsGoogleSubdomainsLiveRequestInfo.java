@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleSubdomainsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -77,6 +77,10 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
   private List<String> itemTypes;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_HISTORICAL_SERP_MODE = "historical_serp_mode";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_SERP_MODE)
@@ -214,7 +218,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
   }
 
    /**
-   * display results by item type optional field indicates the type of search results included in the response Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response; possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;]
+   * display results by item type optional field indicates the type of search results included in the response Note: if the item_types array contains item types that are different from organic, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response; possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;]
    * @return itemTypes
   **/
   @javax.annotation.Nullable
@@ -224,6 +228,25 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
 
   public void setItemTypes(List<String> itemTypes) {
     this.itemTypes = itemTypes;
+  }
+
+
+  public DataforseoLabsGoogleSubdomainsLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
   }
 
 
@@ -373,6 +396,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
         Objects.equals(this.languageName, dataforseoLabsGoogleSubdomainsLiveRequestInfo.languageName) &&
         Objects.equals(this.languageCode, dataforseoLabsGoogleSubdomainsLiveRequestInfo.languageCode) &&
         Objects.equals(this.itemTypes, dataforseoLabsGoogleSubdomainsLiveRequestInfo.itemTypes) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleSubdomainsLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.historicalSerpMode, dataforseoLabsGoogleSubdomainsLiveRequestInfo.historicalSerpMode) &&
         Objects.equals(this.filters, dataforseoLabsGoogleSubdomainsLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsGoogleSubdomainsLiveRequestInfo.orderBy) &&
@@ -387,7 +411,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, historicalSerpMode, filters, orderBy, limit, offset, tag);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, historicalSerpMode, filters, orderBy, limit, offset, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -407,6 +431,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    historicalSerpMode: ").append(toIndentedString(historicalSerpMode)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
@@ -441,6 +466,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
     openapiFields.add("language_name");
     openapiFields.add("language_code");
     openapiFields.add("item_types");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("historical_serp_mode");
     openapiFields.add("filters");
     openapiFields.add("order_by");

@@ -84,6 +84,7 @@ import org.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTaskPostR
 import org.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsLanguagesResponseInfo;
+import org.dataforseo.client.model.KeywordsDataGoogleAdsLocationsCountryResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsLocationsResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo;
@@ -6009,6 +6010,129 @@ public class KeywordsDataApi {
 
         okhttp3.Call localVarCall = keywordsDataGoogleAdsLocationsValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLocationsResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for keywordsDataGoogleAdsLocationsCountry
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call keywordsDataGoogleAdsLocationsCountryCall(String country, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/google_ads/locations/{country}"
+            .replace("{" + "country" + "}", localVarApiClient.escapeString(country.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call keywordsDataGoogleAdsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'country' is set
+        if (country == null) {
+            throw new ApiException("Missing the required parameter 'country' when calling keywordsDataGoogleAdsLocationsCountry(Async)");
+        }
+
+        return keywordsDataGoogleAdsLocationsCountryCall(country, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”. Postal Codes can be used to set a task, albeit API response will not return data for such tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash&#39;
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @return KeywordsDataGoogleAdsLocationsCountryResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataGoogleAdsLocationsCountryResponseInfo keywordsDataGoogleAdsLocationsCountry(String country) throws ApiException {
+        ApiResponse<KeywordsDataGoogleAdsLocationsCountryResponseInfo> localVarResp = keywordsDataGoogleAdsLocationsCountryWithHttpInfo(country);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”. Postal Codes can be used to set a task, albeit API response will not return data for such tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash&#39;
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @return ApiResponse&lt;KeywordsDataGoogleAdsLocationsCountryResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataGoogleAdsLocationsCountryResponseInfo> keywordsDataGoogleAdsLocationsCountryWithHttpInfo(String country) throws ApiException {
+        okhttp3.Call localVarCall = keywordsDataGoogleAdsLocationsCountryValidateBeforeCall(country, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLocationsCountryResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”. Postal Codes can be used to set a task, albeit API response will not return data for such tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash&#39;
+     * @param country country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call keywordsDataGoogleAdsLocationsCountryAsync(String country, final ApiCallback<KeywordsDataGoogleAdsLocationsCountryResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = keywordsDataGoogleAdsLocationsCountryValidateBeforeCall(country, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLocationsCountryResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -12,6 +12,7 @@
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**keywordInfo** | [**KeywordInfo**](KeywordInfo.md) |  |  [optional] |
+|**clickstreamKeywordInfo** | [**ClickstreamKeywordInfo**](ClickstreamKeywordInfo.md) |  |  [optional] |
 |**keywordProperties** | [**KeywordProperties**](KeywordProperties.md) |  |  [optional] |
 |**impressionsInfo** | [**ImpressionsInfo**](ImpressionsInfo.md) |  |  [optional] |
 |**serpInfo** | [**SerpInfo**](SerpInfo.md) |  |  [optional] |

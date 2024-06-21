@@ -59,7 +59,7 @@ import org.dataforseo.client.JSON;
 /**
  * PaidDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -136,6 +136,10 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   public static final String SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST = "estimated_paid_traffic_cost";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST)
   private Float estimatedPaidTrafficCost;
+
+  public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
+  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
+  private Integer clickstreamEtv;
 
   public static final String SERIALIZED_NAME_RANK_CHANGES = "rank_changes";
   @SerializedName(SERIALIZED_NAME_RANK_CHANGES)
@@ -546,6 +550,25 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
   }
 
 
+  public PaidDataforseoLabsSerpElementItem clickstreamEtv(Integer clickstreamEtv) {
+    this.clickstreamEtv = clickstreamEtv;
+    return this;
+  }
+
+   /**
+   * estimated traffic volume based on clickstream data calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for to retrieve results for this field, the parameter include_clickstream_data must be set to true
+   * @return clickstreamEtv
+  **/
+  @javax.annotation.Nullable
+  public Integer getClickstreamEtv() {
+    return clickstreamEtv;
+  }
+
+  public void setClickstreamEtv(Integer clickstreamEtv) {
+    this.clickstreamEtv = clickstreamEtv;
+  }
+
+
   public PaidDataforseoLabsSerpElementItem rankChanges(RankChanges rankChanges) {
     this.rankChanges = rankChanges;
     return this;
@@ -632,6 +655,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
         Objects.equals(this.etv, paidDataforseoLabsSerpElementItem.etv) &&
         Objects.equals(this.impressionsEtv, paidDataforseoLabsSerpElementItem.impressionsEtv) &&
         Objects.equals(this.estimatedPaidTrafficCost, paidDataforseoLabsSerpElementItem.estimatedPaidTrafficCost) &&
+        Objects.equals(this.clickstreamEtv, paidDataforseoLabsSerpElementItem.clickstreamEtv) &&
         Objects.equals(this.rankChanges, paidDataforseoLabsSerpElementItem.rankChanges) &&
         Objects.equals(this.backlinksInfo, paidDataforseoLabsSerpElementItem.backlinksInfo) &&
         Objects.equals(this.rankInfo, paidDataforseoLabsSerpElementItem.rankInfo) &&
@@ -644,7 +668,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, rankGroup, rankAbsolute, position, xpath, title, domain, description, breadcrumb, url, highlighted, extra, descriptionRows, links, mainDomain, relativeUrl, etv, impressionsEtv, estimatedPaidTrafficCost, rankChanges, backlinksInfo, rankInfo, super.hashCode());
+    return Objects.hash(seType, rankGroup, rankAbsolute, position, xpath, title, domain, description, breadcrumb, url, highlighted, extra, descriptionRows, links, mainDomain, relativeUrl, etv, impressionsEtv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -678,6 +702,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
     sb.append("    impressionsEtv: ").append(toIndentedString(impressionsEtv)).append("\n");
     sb.append("    estimatedPaidTrafficCost: ").append(toIndentedString(estimatedPaidTrafficCost)).append("\n");
+    sb.append("    clickstreamEtv: ").append(toIndentedString(clickstreamEtv)).append("\n");
     sb.append("    rankChanges: ").append(toIndentedString(rankChanges)).append("\n");
     sb.append("    backlinksInfo: ").append(toIndentedString(backlinksInfo)).append("\n");
     sb.append("    rankInfo: ").append(toIndentedString(rankInfo)).append("\n");
@@ -723,6 +748,7 @@ public class PaidDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEle
     openapiFields.add("etv");
     openapiFields.add("impressions_etv");
     openapiFields.add("estimated_paid_traffic_cost");
+    openapiFields.add("clickstream_etv");
     openapiFields.add("rank_changes");
     openapiFields.add("backlinks_info");
     openapiFields.add("rank_info");

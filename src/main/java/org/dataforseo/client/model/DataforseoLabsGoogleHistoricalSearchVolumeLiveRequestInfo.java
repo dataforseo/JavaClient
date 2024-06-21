@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -77,6 +77,10 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SERP_INFO = "include_serp_info";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SERP_INFO)
   private Boolean includeSerpInfo;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -207,6 +211,25 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+  }
+
+
   public DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -242,6 +265,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo {
         Objects.equals(this.languageName, dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.languageName) &&
         Objects.equals(this.languageCode, dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.languageCode) &&
         Objects.equals(this.includeSerpInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.includeSerpInfo) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.tag, dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.tag);
   }
 
@@ -251,7 +275,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywords, locationName, locationCode, languageName, languageCode, includeSerpInfo, tag);
+    return Objects.hash(keywords, locationName, locationCode, languageName, languageCode, includeSerpInfo, includeClickstreamData, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -271,6 +295,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -300,6 +325,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo {
     openapiFields.add("language_name");
     openapiFields.add("language_code");
     openapiFields.add("include_serp_info");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

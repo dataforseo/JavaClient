@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleTopSearchesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleTopSearchesLiveRequestInfo {
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
@@ -73,6 +73,10 @@ public class DataforseoLabsGoogleTopSearchesLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SERP_INFO = "include_serp_info";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SERP_INFO)
   private Boolean includeSerpInfo;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
   @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
@@ -197,6 +201,25 @@ public class DataforseoLabsGoogleTopSearchesLiveRequestInfo {
 
   public void setIncludeSerpInfo(Boolean includeSerpInfo) {
     this.includeSerpInfo = includeSerpInfo;
+  }
+
+
+  public DataforseoLabsGoogleTopSearchesLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
   }
 
 
@@ -364,6 +387,7 @@ public class DataforseoLabsGoogleTopSearchesLiveRequestInfo {
         Objects.equals(this.languageName, dataforseoLabsGoogleTopSearchesLiveRequestInfo.languageName) &&
         Objects.equals(this.languageCode, dataforseoLabsGoogleTopSearchesLiveRequestInfo.languageCode) &&
         Objects.equals(this.includeSerpInfo, dataforseoLabsGoogleTopSearchesLiveRequestInfo.includeSerpInfo) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleTopSearchesLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleTopSearchesLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.filters, dataforseoLabsGoogleTopSearchesLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsGoogleTopSearchesLiveRequestInfo.orderBy) &&
@@ -379,7 +403,7 @@ public class DataforseoLabsGoogleTopSearchesLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(locationName, locationCode, languageName, languageCode, includeSerpInfo, ignoreSynonyms, filters, orderBy, tag, limit, offset, offsetToken);
+    return Objects.hash(locationName, locationCode, languageName, languageCode, includeSerpInfo, includeClickstreamData, ignoreSynonyms, filters, orderBy, tag, limit, offset, offsetToken);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -398,6 +422,7 @@ public class DataforseoLabsGoogleTopSearchesLiveRequestInfo {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
@@ -432,6 +457,7 @@ public class DataforseoLabsGoogleTopSearchesLiveRequestInfo {
     openapiFields.add("language_name");
     openapiFields.add("language_code");
     openapiFields.add("include_serp_info");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("ignore_synonyms");
     openapiFields.add("filters");
     openapiFields.add("order_by");

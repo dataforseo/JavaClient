@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -87,6 +87,10 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
   @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
   private Boolean ignoreSynonyms;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -266,6 +270,25 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+  }
+
+
   public DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -304,6 +327,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
         Objects.equals(this.dateTo, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.dateTo) &&
         Objects.equals(this.correlate, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.correlate) &&
         Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.ignoreSynonyms) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.tag, dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo.tag);
   }
 
@@ -313,7 +337,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, dateFrom, dateTo, correlate, ignoreSynonyms, tag);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, dateFrom, dateTo, correlate, ignoreSynonyms, includeClickstreamData, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -336,6 +360,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
     sb.append("    correlate: ").append(toIndentedString(correlate)).append("\n");
     sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -368,6 +393,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
     openapiFields.add("date_to");
     openapiFields.add("correlate");
     openapiFields.add("ignore_synonyms");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

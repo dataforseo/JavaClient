@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AvgBacklinksInfo;
+import org.dataforseo.client.model.ClickstreamKeywordInfo;
 import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
 import org.dataforseo.client.model.KeywordProperties;
@@ -82,6 +83,14 @@ public class KeywordDataInfoTest {
     @Test
     public void keywordInfoTest() {
         // TODO: test keywordInfo
+    }
+
+    /**
+     * Test the property 'clickstreamKeywordInfo'
+     */
+    @Test
+    public void clickstreamKeywordInfoTest() {
+        // TODO: test clickstreamKeywordInfo
     }
 
     /**

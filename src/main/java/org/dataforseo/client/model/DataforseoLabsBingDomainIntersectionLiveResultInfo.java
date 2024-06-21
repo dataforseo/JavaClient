@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.dataforseo.client.model.DataforseoLabsBingDomainIntersectionLiveItem;
+import org.dataforseo.client.model.DataforseoLabsDomainIntersectionLiveItem;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingDomainIntersectionLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsBingDomainIntersectionLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -85,7 +85,7 @@ public class DataforseoLabsBingDomainIntersectionLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsBingDomainIntersectionLiveItem> items;
+  private List<DataforseoLabsDomainIntersectionLiveItem> items;
 
   public DataforseoLabsBingDomainIntersectionLiveResultInfo() {
   }
@@ -223,12 +223,12 @@ public class DataforseoLabsBingDomainIntersectionLiveResultInfo {
   }
 
 
-  public DataforseoLabsBingDomainIntersectionLiveResultInfo items(List<DataforseoLabsBingDomainIntersectionLiveItem> items) {
+  public DataforseoLabsBingDomainIntersectionLiveResultInfo items(List<DataforseoLabsDomainIntersectionLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsBingDomainIntersectionLiveResultInfo addItemsItem(DataforseoLabsBingDomainIntersectionLiveItem itemsItem) {
+  public DataforseoLabsBingDomainIntersectionLiveResultInfo addItemsItem(DataforseoLabsDomainIntersectionLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -241,11 +241,11 @@ public class DataforseoLabsBingDomainIntersectionLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<DataforseoLabsBingDomainIntersectionLiveItem> getItems() {
+  public List<DataforseoLabsDomainIntersectionLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsBingDomainIntersectionLiveItem> items) {
+  public void setItems(List<DataforseoLabsDomainIntersectionLiveItem> items) {
     this.items = items;
   }
 
@@ -376,7 +376,7 @@ public class DataforseoLabsBingDomainIntersectionLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsBingDomainIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsDomainIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

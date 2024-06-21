@@ -27,6 +27,7 @@ import org.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import org.dataforseo.client.model.BusinessDataUserProfileInfo;
 import org.dataforseo.client.model.ImageUrlInfo;
 import org.dataforseo.client.model.RatingInfo;
+import org.dataforseo.client.model.ReviewHighlights;
 import org.dataforseo.client.model.ReviewResponseItemInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -57,7 +58,7 @@ import org.dataforseo.client.JSON;
 /**
  * TripadvisorReviewSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -106,6 +107,10 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
   public static final String SERIALIZED_NAME_RESPONSES = "responses";
   @SerializedName(SERIALIZED_NAME_RESPONSES)
   private List<ReviewResponseItemInfo> responses;
+
+  public static final String SERIALIZED_NAME_REVIEW_HIGHLIGHTS = "review_highlights";
+  @SerializedName(SERIALIZED_NAME_REVIEW_HIGHLIGHTS)
+  private List<ReviewHighlights> reviewHighlights;
 
   public TripadvisorReviewSearchBusinessDataSerpElementItem() {
     this.type = this.getClass().getSimpleName();
@@ -355,6 +360,33 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
   }
 
 
+  public TripadvisorReviewSearchBusinessDataSerpElementItem reviewHighlights(List<ReviewHighlights> reviewHighlights) {
+    this.reviewHighlights = reviewHighlights;
+    return this;
+  }
+
+  public TripadvisorReviewSearchBusinessDataSerpElementItem addReviewHighlightsItem(ReviewHighlights reviewHighlightsItem) {
+    if (this.reviewHighlights == null) {
+      this.reviewHighlights = new ArrayList<>();
+    }
+    this.reviewHighlights.add(reviewHighlightsItem);
+    return this;
+  }
+
+   /**
+   * review highlights contains highlighted review criteria and assessments
+   * @return reviewHighlights
+  **/
+  @javax.annotation.Nullable
+  public List<ReviewHighlights> getReviewHighlights() {
+    return reviewHighlights;
+  }
+
+  public void setReviewHighlights(List<ReviewHighlights> reviewHighlights) {
+    this.reviewHighlights = reviewHighlights;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -377,6 +409,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
         Objects.equals(this.reviewImages, tripadvisorReviewSearchBusinessDataSerpElementItem.reviewImages) &&
         Objects.equals(this.userProfile, tripadvisorReviewSearchBusinessDataSerpElementItem.userProfile) &&
         Objects.equals(this.responses, tripadvisorReviewSearchBusinessDataSerpElementItem.responses) &&
+        Objects.equals(this.reviewHighlights, tripadvisorReviewSearchBusinessDataSerpElementItem.reviewHighlights) &&
         super.equals(o);
   }
 
@@ -386,7 +419,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, url, rating, dateOfVisit, timestamp, title, reviewText, reviewImages, userProfile, responses, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, position, url, rating, dateOfVisit, timestamp, title, reviewText, reviewImages, userProfile, responses, reviewHighlights, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -413,6 +446,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
     sb.append("    reviewImages: ").append(toIndentedString(reviewImages)).append("\n");
     sb.append("    userProfile: ").append(toIndentedString(userProfile)).append("\n");
     sb.append("    responses: ").append(toIndentedString(responses)).append("\n");
+    sb.append("    reviewHighlights: ").append(toIndentedString(reviewHighlights)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -448,6 +482,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
     openapiFields.add("review_images");
     openapiFields.add("user_profile");
     openapiFields.add("responses");
+    openapiFields.add("review_highlights");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

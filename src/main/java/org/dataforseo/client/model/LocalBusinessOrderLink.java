@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * LocalBusinessOrderLink
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class LocalBusinessOrderLink extends BaseLocalBusinessLink {
   public static final String SERIALIZED_NAME_DELIVERY_SERVICES = "delivery_services";
   @SerializedName(SERIALIZED_NAME_DELIVERY_SERVICES)

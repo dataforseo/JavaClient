@@ -89,6 +89,14 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'includeClickstreamData'
+     */
+    @Test
+    public void includeClickstreamDataTest() {
+        // TODO: test includeClickstreamData
+    }
+
+    /**
      * Test the property 'historicalSerpMode'
      */
     @Test

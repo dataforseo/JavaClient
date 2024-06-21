@@ -7,14 +7,17 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**seType** | **String** | search engine type search engine type specified in a POST request; for this endpoint, the field equals bing |  [optional] |
-|**keyword** | **String** | returned keyword |  [optional] |
+|**seType** | **String** | search engine type |  [optional] |
+|**keyword** | **String** | keyword suggestion |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**keywordInfo** | [**KeywordInfo**](KeywordInfo.md) |  |  [optional] |
+|**clickstreamKeywordInfo** | **Object** | clickstream data for the returned keyword to retrieve results for this field, the parameter include_clickstream_data must be set to true |  [optional] |
 |**keywordProperties** | [**KeywordProperties**](KeywordProperties.md) |  |  [optional] |
+|**impressionsInfo** | [**ImpressionsInfo**](ImpressionsInfo.md) |  |  [optional] |
 |**serpInfo** | [**SerpInfo**](SerpInfo.md) |  |  [optional] |
 |**avgBacklinksInfo** | [**AvgBacklinksInfo**](AvgBacklinksInfo.md) |  |  [optional] |
+|**searchIntentInfo** | [**SearchIntentInfo**](SearchIntentInfo.md) |  |  [optional] |
 
 
 

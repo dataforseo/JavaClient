@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.dataforseo.client.model.KeywordDataInfo;
+import org.dataforseo.client.model.KeywordDataKeywordDataInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -95,7 +95,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<KeywordDataInfo> items;
+  private List<KeywordDataKeywordDataInfo> items;
 
   public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo() {
   }
@@ -171,7 +171,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   }
 
    /**
-   * location code in a POST array
+   * location code in a POST array if there is no data, then the value is null
    * @return locationCode
   **/
   @javax.annotation.Nullable
@@ -190,7 +190,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   }
 
    /**
-   * language code in a POST array
+   * language code in a POST array if there is no data, then the value is null
    * @return languageCode
   **/
   @javax.annotation.Nullable
@@ -279,12 +279,12 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo items(List<KeywordDataInfo> items) {
+  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo items(List<KeywordDataKeywordDataInfo> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo addItemsItem(KeywordDataInfo itemsItem) {
+  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo addItemsItem(KeywordDataKeywordDataInfo itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -297,11 +297,11 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<KeywordDataInfo> getItems() {
+  public List<KeywordDataKeywordDataInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<KeywordDataInfo> items) {
+  public void setItems(List<KeywordDataKeywordDataInfo> items) {
     this.items = items;
   }
 
@@ -438,7 +438,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            KeywordDataInfo.validateJsonElement(jsonArrayitems.get(i));
+            KeywordDataKeywordDataInfo.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

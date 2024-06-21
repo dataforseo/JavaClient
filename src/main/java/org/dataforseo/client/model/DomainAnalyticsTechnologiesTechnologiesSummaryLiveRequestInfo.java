@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TECHNOLOGY_PATHS = "technology_paths";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY_PATHS)
@@ -134,7 +134,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   }
 
    /**
-   * ids of the target technology groups required field if you don’t specify technologies, technology_paths or categories you can find the full list of technology group ids on this page note: you can specify up to 10 technology groups in this array example: [\&quot;sales\&quot;, \&quot;marketing\&quot;]
+   * ids of the target technology groups required field if you don’t specify technologies, technology_paths, categories, or keywords you can find the full list of technology group ids on this page note: you can specify up to 10 technology groups in this array example: [\&quot;sales\&quot;, \&quot;marketing\&quot;]
    * @return groups
   **/
   @javax.annotation.Nullable
@@ -161,7 +161,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   }
 
    /**
-   * ids of the target technology categories required field if you don’t specify groups, technology_paths or technologies you can find the full list of technology category ids on this page note: you can specify up to 10 technology categories in this array example: [\&quot;payment_processors\&quot;,\&quot;crm\&quot;]
+   * ids of the target technology categories required field if you don’t specify groups, technology_paths, technologies, or keywords you can find the full list of technology category ids on this page note: you can specify up to 10 technology categories in this array example: [\&quot;payment_processors\&quot;,\&quot;crm\&quot;]
    * @return categories
   **/
   @javax.annotation.Nullable
@@ -188,7 +188,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   }
 
    /**
-   * target technologies required field if you don’t specify groups, technology_paths or categories you can find the full list of technologies you can specify here on this page note: you can specify up to 10 technologies in this array example: [\&quot;Google Pay\&quot;,\&quot;Salesforce\&quot;]
+   * target technologies required field if you don’t specify groups, technology_paths, categories, or keywords you can find the full list of technologies you can specify here on this page note: you can specify up to 10 technologies in this array example: [\&quot;Google Pay\&quot;,\&quot;Salesforce\&quot;]
    * @return technologies
   **/
   @javax.annotation.Nullable
@@ -215,7 +215,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   }
 
    /**
-   * target keywords in the domain’s title, description or meta keywords optional field UTF-8 encoding example: [\&quot;seo\&quot;,\&quot;software\&quot;]
+   * target keywords in the domain’s title, description or meta keywords required field if you don’t specify groups, technology_paths, categories, or technologies you can specify the maximum of 10 keywords; UTF-8 encoding; example: [\&quot;seo\&quot;,\&quot;software\&quot;]
    * @return keywords
   **/
   @javax.annotation.Nullable
@@ -280,7 +280,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   }
 
    /**
-   * maximum number of elements within internal arrays optional field you can use this field to limit the number of elements within the following arrays: countries, languages, content_languages, keywords default value: 10 maximum value: 10000
+   * maximum number of elements within internal arrays optional field you can use this field to limit the number of elements within the following arrays: countries, languages, content_languages, keywords default value: 10 minimum value: 1 maximum value: 10000
    * @return internalListLimit
   **/
   @javax.annotation.Nullable

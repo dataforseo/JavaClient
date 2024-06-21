@@ -21,7 +21,9 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import org.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -112,6 +114,14 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfoTest {
     @Test
     public void ratingTest() {
         // TODO: test rating
+    }
+
+    /**
+     * Test the property 'ratingDistribution'
+     */
+    @Test
+    public void ratingDistributionTest() {
+        // TODO: test ratingDistribution
     }
 
     /**

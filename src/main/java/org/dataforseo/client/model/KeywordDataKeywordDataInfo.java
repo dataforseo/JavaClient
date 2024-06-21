@@ -22,8 +22,10 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AvgBacklinksInfo;
+import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
 import org.dataforseo.client.model.KeywordProperties;
+import org.dataforseo.client.model.SearchIntentInfo;
 import org.dataforseo.client.model.SerpInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -54,7 +56,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordDataKeywordDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class KeywordDataKeywordDataInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -76,9 +78,17 @@ public class KeywordDataKeywordDataInfo {
   @SerializedName(SERIALIZED_NAME_KEYWORD_INFO)
   private KeywordInfo keywordInfo;
 
+  public static final String SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO = "clickstream_keyword_info";
+  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO)
+  private Object clickstreamKeywordInfo;
+
   public static final String SERIALIZED_NAME_KEYWORD_PROPERTIES = "keyword_properties";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PROPERTIES)
   private KeywordProperties keywordProperties;
+
+  public static final String SERIALIZED_NAME_IMPRESSIONS_INFO = "impressions_info";
+  @SerializedName(SERIALIZED_NAME_IMPRESSIONS_INFO)
+  private ImpressionsInfo impressionsInfo;
 
   public static final String SERIALIZED_NAME_SERP_INFO = "serp_info";
   @SerializedName(SERIALIZED_NAME_SERP_INFO)
@@ -87,6 +97,10 @@ public class KeywordDataKeywordDataInfo {
   public static final String SERIALIZED_NAME_AVG_BACKLINKS_INFO = "avg_backlinks_info";
   @SerializedName(SERIALIZED_NAME_AVG_BACKLINKS_INFO)
   private AvgBacklinksInfo avgBacklinksInfo;
+
+  public static final String SERIALIZED_NAME_SEARCH_INTENT_INFO = "search_intent_info";
+  @SerializedName(SERIALIZED_NAME_SEARCH_INTENT_INFO)
+  private SearchIntentInfo searchIntentInfo;
 
   public KeywordDataKeywordDataInfo() {
   }
@@ -97,7 +111,7 @@ public class KeywordDataKeywordDataInfo {
   }
 
    /**
-   * search engine type search engine type specified in a POST request; for this endpoint, the field equals bing
+   * search engine type
    * @return seType
   **/
   @javax.annotation.Nullable
@@ -116,7 +130,7 @@ public class KeywordDataKeywordDataInfo {
   }
 
    /**
-   * returned keyword
+   * keyword suggestion
    * @return keyword
   **/
   @javax.annotation.Nullable
@@ -186,6 +200,25 @@ public class KeywordDataKeywordDataInfo {
   }
 
 
+  public KeywordDataKeywordDataInfo clickstreamKeywordInfo(Object clickstreamKeywordInfo) {
+    this.clickstreamKeywordInfo = clickstreamKeywordInfo;
+    return this;
+  }
+
+   /**
+   * clickstream data for the returned keyword to retrieve results for this field, the parameter include_clickstream_data must be set to true
+   * @return clickstreamKeywordInfo
+  **/
+  @javax.annotation.Nullable
+  public Object getClickstreamKeywordInfo() {
+    return clickstreamKeywordInfo;
+  }
+
+  public void setClickstreamKeywordInfo(Object clickstreamKeywordInfo) {
+    this.clickstreamKeywordInfo = clickstreamKeywordInfo;
+  }
+
+
   public KeywordDataKeywordDataInfo keywordProperties(KeywordProperties keywordProperties) {
     this.keywordProperties = keywordProperties;
     return this;
@@ -202,6 +235,25 @@ public class KeywordDataKeywordDataInfo {
 
   public void setKeywordProperties(KeywordProperties keywordProperties) {
     this.keywordProperties = keywordProperties;
+  }
+
+
+  public KeywordDataKeywordDataInfo impressionsInfo(ImpressionsInfo impressionsInfo) {
+    this.impressionsInfo = impressionsInfo;
+    return this;
+  }
+
+   /**
+   * Get impressionsInfo
+   * @return impressionsInfo
+  **/
+  @javax.annotation.Nullable
+  public ImpressionsInfo getImpressionsInfo() {
+    return impressionsInfo;
+  }
+
+  public void setImpressionsInfo(ImpressionsInfo impressionsInfo) {
+    this.impressionsInfo = impressionsInfo;
   }
 
 
@@ -243,6 +295,25 @@ public class KeywordDataKeywordDataInfo {
   }
 
 
+  public KeywordDataKeywordDataInfo searchIntentInfo(SearchIntentInfo searchIntentInfo) {
+    this.searchIntentInfo = searchIntentInfo;
+    return this;
+  }
+
+   /**
+   * Get searchIntentInfo
+   * @return searchIntentInfo
+  **/
+  @javax.annotation.Nullable
+  public SearchIntentInfo getSearchIntentInfo() {
+    return searchIntentInfo;
+  }
+
+  public void setSearchIntentInfo(SearchIntentInfo searchIntentInfo) {
+    this.searchIntentInfo = searchIntentInfo;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -258,9 +329,12 @@ public class KeywordDataKeywordDataInfo {
         Objects.equals(this.locationCode, keywordDataKeywordDataInfo.locationCode) &&
         Objects.equals(this.languageCode, keywordDataKeywordDataInfo.languageCode) &&
         Objects.equals(this.keywordInfo, keywordDataKeywordDataInfo.keywordInfo) &&
+        Objects.equals(this.clickstreamKeywordInfo, keywordDataKeywordDataInfo.clickstreamKeywordInfo) &&
         Objects.equals(this.keywordProperties, keywordDataKeywordDataInfo.keywordProperties) &&
+        Objects.equals(this.impressionsInfo, keywordDataKeywordDataInfo.impressionsInfo) &&
         Objects.equals(this.serpInfo, keywordDataKeywordDataInfo.serpInfo) &&
-        Objects.equals(this.avgBacklinksInfo, keywordDataKeywordDataInfo.avgBacklinksInfo);
+        Objects.equals(this.avgBacklinksInfo, keywordDataKeywordDataInfo.avgBacklinksInfo) &&
+        Objects.equals(this.searchIntentInfo, keywordDataKeywordDataInfo.searchIntentInfo);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -269,7 +343,7 @@ public class KeywordDataKeywordDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, keyword, locationCode, languageCode, keywordInfo, keywordProperties, serpInfo, avgBacklinksInfo);
+    return Objects.hash(seType, keyword, locationCode, languageCode, keywordInfo, clickstreamKeywordInfo, keywordProperties, impressionsInfo, serpInfo, avgBacklinksInfo, searchIntentInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -288,9 +362,12 @@ public class KeywordDataKeywordDataInfo {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    keywordInfo: ").append(toIndentedString(keywordInfo)).append("\n");
+    sb.append("    clickstreamKeywordInfo: ").append(toIndentedString(clickstreamKeywordInfo)).append("\n");
     sb.append("    keywordProperties: ").append(toIndentedString(keywordProperties)).append("\n");
+    sb.append("    impressionsInfo: ").append(toIndentedString(impressionsInfo)).append("\n");
     sb.append("    serpInfo: ").append(toIndentedString(serpInfo)).append("\n");
     sb.append("    avgBacklinksInfo: ").append(toIndentedString(avgBacklinksInfo)).append("\n");
+    sb.append("    searchIntentInfo: ").append(toIndentedString(searchIntentInfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -318,9 +395,12 @@ public class KeywordDataKeywordDataInfo {
     openapiFields.add("location_code");
     openapiFields.add("language_code");
     openapiFields.add("keyword_info");
+    openapiFields.add("clickstream_keyword_info");
     openapiFields.add("keyword_properties");
+    openapiFields.add("impressions_info");
     openapiFields.add("serp_info");
     openapiFields.add("avg_backlinks_info");
+    openapiFields.add("search_intent_info");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -364,6 +444,10 @@ public class KeywordDataKeywordDataInfo {
       if (jsonObj.get("keyword_properties") != null && !jsonObj.get("keyword_properties").isJsonNull()) {
         KeywordProperties.validateJsonElement(jsonObj.get("keyword_properties"));
       }
+      // validate the optional field `impressions_info`
+      if (jsonObj.get("impressions_info") != null && !jsonObj.get("impressions_info").isJsonNull()) {
+        ImpressionsInfo.validateJsonElement(jsonObj.get("impressions_info"));
+      }
       // validate the optional field `serp_info`
       if (jsonObj.get("serp_info") != null && !jsonObj.get("serp_info").isJsonNull()) {
         SerpInfo.validateJsonElement(jsonObj.get("serp_info"));
@@ -371,6 +455,10 @@ public class KeywordDataKeywordDataInfo {
       // validate the optional field `avg_backlinks_info`
       if (jsonObj.get("avg_backlinks_info") != null && !jsonObj.get("avg_backlinks_info").isJsonNull()) {
         AvgBacklinksInfo.validateJsonElement(jsonObj.get("avg_backlinks_info"));
+      }
+      // validate the optional field `search_intent_info`
+      if (jsonObj.get("search_intent_info") != null && !jsonObj.get("search_intent_info").isJsonNull()) {
+        SearchIntentInfo.validateJsonElement(jsonObj.get("search_intent_info"));
       }
   }
 

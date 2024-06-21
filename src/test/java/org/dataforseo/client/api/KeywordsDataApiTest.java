@@ -71,6 +71,7 @@ import org.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTaskPostR
 import org.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTasksReadyResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsLanguagesResponseInfo;
+import org.dataforseo.client.model.KeywordsDataGoogleAdsLocationsCountryResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsLocationsResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo;
 import org.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo;
@@ -686,6 +687,18 @@ public class KeywordsDataApiTest {
     @Test
     public void keywordsDataGoogleAdsLocationsTest() throws ApiException {
         KeywordsDataGoogleAdsLocationsResponseInfo response = api.keywordsDataGoogleAdsLocations();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ We use Google Geographical Targeting. You can refer to Google Ads Target Types page to review the full list of possible location types. With Keywords Data API, you can select any location type supported by Google, except for “Okrug”. Postal Codes can be used to set a task, albeit API response will not return data for such tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/locations/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void keywordsDataGoogleAdsLocationsCountryTest() throws ApiException {
+        String country = null;
+        KeywordsDataGoogleAdsLocationsCountryResponseInfo response = api.keywordsDataGoogleAdsLocationsCountry(country);
         // TODO: test validations
     }
 

@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -77,6 +77,10 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SUBCATEGORIES = "include_subcategories";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SUBCATEGORIES)
   private Boolean includeSubcategories;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
@@ -219,6 +223,25 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+  }
+
+
   public DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo itemTypes(List<String> itemTypes) {
     this.itemTypes = itemTypes;
     return this;
@@ -233,7 +256,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   }
 
    /**
-   * display results by item type optional field indicates the type of search results included in the response Note: if the item_types array contains item types that are different from the organic object, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response; possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;]
+   * display results by item type optional field indicates the type of search results included in the response Note: if the item_types array contains item types that are different from the organic object, the results will be ordered by the first item type in the array; you will not be able to sort and filter results by the types of search results not included in the response; possible values: [\&quot;organic\&quot;, \&quot;paid\&quot;, \&quot;featured_snippet\&quot;, \&quot;local_pack\&quot;] default value: [\&quot;organic\&quot;, \&quot;paid\&quot;]
    * @return itemTypes
   **/
   @javax.annotation.Nullable
@@ -373,6 +396,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
         Objects.equals(this.languageName, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.languageName) &&
         Objects.equals(this.languageCode, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.languageCode) &&
         Objects.equals(this.includeSubcategories, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.includeSubcategories) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.itemTypes, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.itemTypes) &&
         Objects.equals(this.filters, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.orderBy) &&
@@ -387,7 +411,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSubcategories, itemTypes, filters, orderBy, limit, offset, tag);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSubcategories, includeClickstreamData, itemTypes, filters, orderBy, limit, offset, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -407,6 +431,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    includeSubcategories: ").append(toIndentedString(includeSubcategories)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
@@ -441,6 +466,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
     openapiFields.add("language_name");
     openapiFields.add("language_code");
     openapiFields.add("include_subcategories");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("item_types");
     openapiFields.add("filters");
     openapiFields.add("order_by");

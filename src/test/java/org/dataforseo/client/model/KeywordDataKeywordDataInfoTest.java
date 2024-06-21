@@ -21,8 +21,10 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AvgBacklinksInfo;
+import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
 import org.dataforseo.client.model.KeywordProperties;
+import org.dataforseo.client.model.SearchIntentInfo;
 import org.dataforseo.client.model.SerpInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -83,11 +85,27 @@ public class KeywordDataKeywordDataInfoTest {
     }
 
     /**
+     * Test the property 'clickstreamKeywordInfo'
+     */
+    @Test
+    public void clickstreamKeywordInfoTest() {
+        // TODO: test clickstreamKeywordInfo
+    }
+
+    /**
      * Test the property 'keywordProperties'
      */
     @Test
     public void keywordPropertiesTest() {
         // TODO: test keywordProperties
+    }
+
+    /**
+     * Test the property 'impressionsInfo'
+     */
+    @Test
+    public void impressionsInfoTest() {
+        // TODO: test impressionsInfo
     }
 
     /**
@@ -104,6 +122,14 @@ public class KeywordDataKeywordDataInfoTest {
     @Test
     public void avgBacklinksInfoTest() {
         // TODO: test avgBacklinksInfo
+    }
+
+    /**
+     * Test the property 'searchIntentInfo'
+     */
+    @Test
+    public void searchIntentInfoTest() {
+        // TODO: test searchIntentInfo
     }
 
 }

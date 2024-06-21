@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordIdeasLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -85,6 +85,10 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SERP_INFO = "include_serp_info";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SERP_INFO)
   private Boolean includeSerpInfo;
+
+  public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
+  private Boolean includeClickstreamData;
 
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
@@ -273,6 +277,25 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleKeywordIdeasLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+    return this;
+  }
+
+   /**
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * @return includeClickstreamData
+  **/
+  @javax.annotation.Nullable
+  public Boolean getIncludeClickstreamData() {
+    return includeClickstreamData;
+  }
+
+  public void setIncludeClickstreamData(Boolean includeClickstreamData) {
+    this.includeClickstreamData = includeClickstreamData;
+  }
+
+
   public DataforseoLabsGoogleKeywordIdeasLiveRequestInfo limit(Integer limit) {
     this.limit = limit;
     return this;
@@ -421,6 +444,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
         Objects.equals(this.closelyVariants, dataforseoLabsGoogleKeywordIdeasLiveRequestInfo.closelyVariants) &&
         Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleKeywordIdeasLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.includeSerpInfo, dataforseoLabsGoogleKeywordIdeasLiveRequestInfo.includeSerpInfo) &&
+        Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleKeywordIdeasLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.limit, dataforseoLabsGoogleKeywordIdeasLiveRequestInfo.limit) &&
         Objects.equals(this.offset, dataforseoLabsGoogleKeywordIdeasLiveRequestInfo.offset) &&
         Objects.equals(this.offsetToken, dataforseoLabsGoogleKeywordIdeasLiveRequestInfo.offsetToken) &&
@@ -435,7 +459,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywords, locationName, locationCode, languageName, languageCode, closelyVariants, ignoreSynonyms, includeSerpInfo, limit, offset, offsetToken, filters, orderBy, tag);
+    return Objects.hash(keywords, locationName, locationCode, languageName, languageCode, closelyVariants, ignoreSynonyms, includeSerpInfo, includeClickstreamData, limit, offset, offsetToken, filters, orderBy, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -457,6 +481,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
     sb.append("    closelyVariants: ").append(toIndentedString(closelyVariants)).append("\n");
     sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
+    sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    offsetToken: ").append(toIndentedString(offsetToken)).append("\n");
@@ -493,6 +518,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
     openapiFields.add("closely_variants");
     openapiFields.add("ignore_synonyms");
     openapiFields.add("include_serp_info");
+    openapiFields.add("include_clickstream_data");
     openapiFields.add("limit");
     openapiFields.add("offset");
     openapiFields.add("offset_token");

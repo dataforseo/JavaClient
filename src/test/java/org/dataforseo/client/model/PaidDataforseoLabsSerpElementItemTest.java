@@ -208,6 +208,14 @@ public class PaidDataforseoLabsSerpElementItemTest {
     }
 
     /**
+     * Test the property 'clickstreamEtv'
+     */
+    @Test
+    public void clickstreamEtvTest() {
+        // TODO: test clickstreamEtv
+    }
+
+    /**
      * Test the property 'rankChanges'
      */
     @Test

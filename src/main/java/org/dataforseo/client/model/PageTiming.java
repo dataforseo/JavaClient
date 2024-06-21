@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * PageTiming
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
 public class PageTiming {
   public static final String SERIALIZED_NAME_TIME_TO_INTERACTIVE = "time_to_interactive";
   @SerializedName(SERIALIZED_NAME_TIME_TO_INTERACTIVE)

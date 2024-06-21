@@ -102,4 +102,12 @@ public class TopStoriesElementTest {
         // TODO: test url
     }
 
+    /**
+     * Test the property 'imageUrl'
+     */
+    @Test
+    public void imageUrlTest() {
+        // TODO: test imageUrl
+    }
+
 }
