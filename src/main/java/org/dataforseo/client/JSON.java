@@ -1956,6 +1956,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataAppleAppListingsCategoriesResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataAppleAppListingsCategoriesResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataAppleAppListingsCategoriesTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataAppleAppListingsSearchLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataAppleAppListingsSearchLiveRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataAppleAppListingsSearchLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataAppleAppListingsSearchLiveResultInfo.CustomTypeAdapterFactory());
@@ -2017,6 +2018,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataGoogleAppListingsCategoriesResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataGoogleAppListingsCategoriesResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataGoogleAppListingsCategoriesTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataGoogleAppListingsSearchLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataGoogleAppListingsSearchLiveRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataGoogleAppListingsSearchLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataGoogleAppListingsSearchLiveResultInfo.CustomTypeAdapterFactory());
@@ -2067,7 +2069,6 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataTasksReadyResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataTasksReadyResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataTasksReadyTaskInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppDataleAppListingsSearchLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppMetricsInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppRankedSerpElementInfo.CustomTypeAdapterFactory());
@@ -2118,12 +2119,10 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordPerformanceKeywordsDataPriceData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordsDataDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordsDataDaysRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordsDataPriceData.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordsKeywordsDataPriceDataInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixKeywordsDataPriceDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixLimitsMoneyData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixLimitsRatesData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.AppendixMerchantAmazonInfo.CustomTypeAdapterFactory());
@@ -2567,6 +2566,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ContentGenerationTextSummaryLiveTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ContentItemInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.ContentUrlInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.CoursesElement.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.CrawlStatusInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.CurrencyBoxSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAmazonBulkSearchVolumeLiveItem.CustomTypeAdapterFactory());
@@ -2604,6 +2604,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAppleAppCompetitorsLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAppleAppCompetitorsLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAppleAppCompetitorsLiveTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAppleAppIntersectionLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAppleAppIntersectionLiveRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAppleAppIntersectionLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsAppleAppIntersectionLiveResultInfo.CustomTypeAdapterFactory());
@@ -2681,6 +2682,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleAppCompetitorsLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleAppCompetitorsLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleAppCompetitorsLiveTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleAppIntersectionLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleAppIntersectionLiveRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleAppIntersectionLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleAppIntersectionLiveResultInfo.CustomTypeAdapterFactory());
@@ -2755,6 +2757,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleKeywordSuggestionsLiveTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleKeywordsForAppLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleKeywordsForAppLiveRequestInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleKeywordsForAppLiveResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsGoogleKeywordsForAppLiveResultInfo.CustomTypeAdapterFactory());
@@ -2805,11 +2808,12 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsIdListResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsIdListResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsIdListTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsLocationsAndLanguagesResponseInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsLocationsAndLanguagesResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsLocationsAndLanguagesTaskInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsMetricsInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsPageIntersectionLiveItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsRankedKeywordsLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsRelevantPagesLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsSerpCompetitorsLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsStatusInfo.CustomTypeAdapterFactory());
@@ -2817,9 +2821,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsStatusResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsStatusTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsSubdomainsLiveItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsleAppIntersectionLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsleBulkAppMetricsLiveItem.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoLabsleKeywordsForAppLiveItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoTrendsDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoTrendsDemographyElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new org.dataforseo.client.model.DataforseoTrendsDemographyInfo.CustomTypeAdapterFactory());

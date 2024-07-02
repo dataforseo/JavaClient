@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.BaseAppDataSerpElementItem;
+import org.dataforseo.client.model.AppDataGooglePlaySearchOrganicSerpElementItem;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppRankedSerpElementInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class AppRankedSerpElementInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -59,7 +59,7 @@ public class AppRankedSerpElementInfo {
 
   public static final String SERIALIZED_NAME_SERP_ITEM = "serp_item";
   @SerializedName(SERIALIZED_NAME_SERP_ITEM)
-  private BaseAppDataSerpElementItem serpItem;
+  private AppDataGooglePlaySearchOrganicSerpElementItem serpItem;
 
   public static final String SERIALIZED_NAME_CHECK_URL = "check_url";
   @SerializedName(SERIALIZED_NAME_CHECK_URL)
@@ -99,7 +99,7 @@ public class AppRankedSerpElementInfo {
   }
 
 
-  public AppRankedSerpElementInfo serpItem(BaseAppDataSerpElementItem serpItem) {
+  public AppRankedSerpElementInfo serpItem(AppDataGooglePlaySearchOrganicSerpElementItem serpItem) {
     this.serpItem = serpItem;
     return this;
   }
@@ -109,11 +109,11 @@ public class AppRankedSerpElementInfo {
    * @return serpItem
   **/
   @javax.annotation.Nullable
-  public BaseAppDataSerpElementItem getSerpItem() {
+  public AppDataGooglePlaySearchOrganicSerpElementItem getSerpItem() {
     return serpItem;
   }
 
-  public void setSerpItem(BaseAppDataSerpElementItem serpItem) {
+  public void setSerpItem(AppDataGooglePlaySearchOrganicSerpElementItem serpItem) {
     this.serpItem = serpItem;
   }
 
@@ -297,7 +297,7 @@ public class AppRankedSerpElementInfo {
       }
       // validate the optional field `serp_item`
       if (jsonObj.get("serp_item") != null && !jsonObj.get("serp_item").isJsonNull()) {
-        BaseAppDataSerpElementItem.validateJsonElement(jsonObj.get("serp_item"));
+        AppDataGooglePlaySearchOrganicSerpElementItem.validateJsonElement(jsonObj.get("serp_item"));
       }
       if ((jsonObj.get("check_url") != null && !jsonObj.get("check_url").isJsonNull()) && !jsonObj.get("check_url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `check_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("check_url").toString()));

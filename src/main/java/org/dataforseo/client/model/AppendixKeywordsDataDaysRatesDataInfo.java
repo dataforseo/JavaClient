@@ -25,7 +25,6 @@ import org.dataforseo.client.model.AppendixBingKeywordsDataLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixInfo;
-import org.dataforseo.client.model.AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDaysRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class AppendixKeywordsDataDaysRatesDataInfo {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -103,7 +102,11 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
 
   public static final String SERIALIZED_NAME_KEYWORD_PERFORMANCE = "keyword_performance";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PERFORMANCE)
-  private AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo keywordPerformance;
+  private AppendixInfo keywordPerformance;
+
+  public static final String SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES = "locations_and_languages";
+  @SerializedName(SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES)
+  private Double locationsAndLanguages;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
@@ -329,7 +332,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
   }
 
 
-  public AppendixKeywordsDataDaysRatesDataInfo keywordPerformance(AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo keywordPerformance) {
+  public AppendixKeywordsDataDaysRatesDataInfo keywordPerformance(AppendixInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
     return this;
   }
@@ -339,12 +342,31 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
    * @return keywordPerformance
   **/
   @javax.annotation.Nullable
-  public AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo getKeywordPerformance() {
+  public AppendixInfo getKeywordPerformance() {
     return keywordPerformance;
   }
 
-  public void setKeywordPerformance(AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo keywordPerformance) {
+  public void setKeywordPerformance(AppendixInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
+  }
+
+
+  public AppendixKeywordsDataDaysRatesDataInfo locationsAndLanguages(Double locationsAndLanguages) {
+    this.locationsAndLanguages = locationsAndLanguages;
+    return this;
+  }
+
+   /**
+   * Get locationsAndLanguages
+   * @return locationsAndLanguages
+  **/
+  @javax.annotation.Nullable
+  public Double getLocationsAndLanguages() {
+    return locationsAndLanguages;
+  }
+
+  public void setLocationsAndLanguages(Double locationsAndLanguages) {
+    this.locationsAndLanguages = locationsAndLanguages;
   }
 
 
@@ -427,6 +449,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
         Objects.equals(this.errors, appendixKeywordsDataDaysRatesDataInfo.errors) &&
         Objects.equals(this.bing, appendixKeywordsDataDaysRatesDataInfo.bing) &&
         Objects.equals(this.keywordPerformance, appendixKeywordsDataDaysRatesDataInfo.keywordPerformance) &&
+        Objects.equals(this.locationsAndLanguages, appendixKeywordsDataDaysRatesDataInfo.locationsAndLanguages) &&
         Objects.equals(this.searchVolumeHistory, appendixKeywordsDataDaysRatesDataInfo.searchVolumeHistory) &&
         Objects.equals(this.googleAds, appendixKeywordsDataDaysRatesDataInfo.googleAds) &&
         Objects.equals(this.dataforseoTrends, appendixKeywordsDataDaysRatesDataInfo.dataforseoTrends);
@@ -438,7 +461,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, searchVolumeHistory, googleAds, dataforseoTrends);
+    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, searchVolumeHistory, googleAds, dataforseoTrends);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -464,6 +487,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("    bing: ").append(toIndentedString(bing)).append("\n");
     sb.append("    keywordPerformance: ").append(toIndentedString(keywordPerformance)).append("\n");
+    sb.append("    locationsAndLanguages: ").append(toIndentedString(locationsAndLanguages)).append("\n");
     sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
     sb.append("    googleAds: ").append(toIndentedString(googleAds)).append("\n");
     sb.append("    dataforseoTrends: ").append(toIndentedString(dataforseoTrends)).append("\n");
@@ -501,6 +525,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
     openapiFields.add("errors");
     openapiFields.add("bing");
     openapiFields.add("keyword_performance");
+    openapiFields.add("locations_and_languages");
     openapiFields.add("search_volume_history");
     openapiFields.add("google_ads");
     openapiFields.add("dataforseo_trends");
@@ -556,7 +581,7 @@ public class AppendixKeywordsDataDaysRatesDataInfo {
       }
       // validate the optional field `keyword_performance`
       if (jsonObj.get("keyword_performance") != null && !jsonObj.get("keyword_performance").isJsonNull()) {
-        AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("keyword_performance"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keyword_performance"));
       }
       // validate the optional field `search_volume_history`
       if (jsonObj.get("search_volume_history") != null && !jsonObj.get("search_volume_history").isJsonNull()) {

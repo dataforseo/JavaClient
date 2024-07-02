@@ -25,8 +25,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.dataforseo.client.model.DataforseoLabsRankedKeywordsLiveItem;
-import org.dataforseo.client.model.MetricsInfo;
+import org.dataforseo.client.model.DataforseoLabsLiveItem;
+import org.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -56,7 +56,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingRankedKeywordsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class DataforseoLabsBingRankedKeywordsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -84,15 +84,15 @@ public class DataforseoLabsBingRankedKeywordsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_METRICS = "metrics";
   @SerializedName(SERIALIZED_NAME_METRICS)
-  private Map<String, MetricsInfo> metrics;
+  private Map<String, DataforseoLabsMetricsInfo> metrics;
 
   public static final String SERIALIZED_NAME_METRICS_ABSOLUTE = "metrics_absolute";
   @SerializedName(SERIALIZED_NAME_METRICS_ABSOLUTE)
-  private Map<String, MetricsInfo> metricsAbsolute;
+  private Map<String, DataforseoLabsMetricsInfo> metricsAbsolute;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsRankedKeywordsLiveItem> items;
+  private List<DataforseoLabsLiveItem> items;
 
   public DataforseoLabsBingRankedKeywordsLiveResultInfo() {
   }
@@ -211,12 +211,12 @@ public class DataforseoLabsBingRankedKeywordsLiveResultInfo {
   }
 
 
-  public DataforseoLabsBingRankedKeywordsLiveResultInfo metrics(Map<String, MetricsInfo> metrics) {
+  public DataforseoLabsBingRankedKeywordsLiveResultInfo metrics(Map<String, DataforseoLabsMetricsInfo> metrics) {
     this.metrics = metrics;
     return this;
   }
 
-  public DataforseoLabsBingRankedKeywordsLiveResultInfo putMetricsItem(String key, MetricsInfo metricsItem) {
+  public DataforseoLabsBingRankedKeywordsLiveResultInfo putMetricsItem(String key, DataforseoLabsMetricsInfo metricsItem) {
     if (this.metrics == null) {
       this.metrics = new HashMap<>();
     }
@@ -229,21 +229,21 @@ public class DataforseoLabsBingRankedKeywordsLiveResultInfo {
    * @return metrics
   **/
   @javax.annotation.Nullable
-  public Map<String, MetricsInfo> getMetrics() {
+  public Map<String, DataforseoLabsMetricsInfo> getMetrics() {
     return metrics;
   }
 
-  public void setMetrics(Map<String, MetricsInfo> metrics) {
+  public void setMetrics(Map<String, DataforseoLabsMetricsInfo> metrics) {
     this.metrics = metrics;
   }
 
 
-  public DataforseoLabsBingRankedKeywordsLiveResultInfo metricsAbsolute(Map<String, MetricsInfo> metricsAbsolute) {
+  public DataforseoLabsBingRankedKeywordsLiveResultInfo metricsAbsolute(Map<String, DataforseoLabsMetricsInfo> metricsAbsolute) {
     this.metricsAbsolute = metricsAbsolute;
     return this;
   }
 
-  public DataforseoLabsBingRankedKeywordsLiveResultInfo putMetricsAbsoluteItem(String key, MetricsInfo metricsAbsoluteItem) {
+  public DataforseoLabsBingRankedKeywordsLiveResultInfo putMetricsAbsoluteItem(String key, DataforseoLabsMetricsInfo metricsAbsoluteItem) {
     if (this.metricsAbsolute == null) {
       this.metricsAbsolute = new HashMap<>();
     }
@@ -256,21 +256,21 @@ public class DataforseoLabsBingRankedKeywordsLiveResultInfo {
    * @return metricsAbsolute
   **/
   @javax.annotation.Nullable
-  public Map<String, MetricsInfo> getMetricsAbsolute() {
+  public Map<String, DataforseoLabsMetricsInfo> getMetricsAbsolute() {
     return metricsAbsolute;
   }
 
-  public void setMetricsAbsolute(Map<String, MetricsInfo> metricsAbsolute) {
+  public void setMetricsAbsolute(Map<String, DataforseoLabsMetricsInfo> metricsAbsolute) {
     this.metricsAbsolute = metricsAbsolute;
   }
 
 
-  public DataforseoLabsBingRankedKeywordsLiveResultInfo items(List<DataforseoLabsRankedKeywordsLiveItem> items) {
+  public DataforseoLabsBingRankedKeywordsLiveResultInfo items(List<DataforseoLabsLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsBingRankedKeywordsLiveResultInfo addItemsItem(DataforseoLabsRankedKeywordsLiveItem itemsItem) {
+  public DataforseoLabsBingRankedKeywordsLiveResultInfo addItemsItem(DataforseoLabsLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -283,11 +283,11 @@ public class DataforseoLabsBingRankedKeywordsLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<DataforseoLabsRankedKeywordsLiveItem> getItems() {
+  public List<DataforseoLabsLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsRankedKeywordsLiveItem> items) {
+  public void setItems(List<DataforseoLabsLiveItem> items) {
     this.items = items;
   }
 
@@ -418,7 +418,7 @@ public class DataforseoLabsBingRankedKeywordsLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsRankedKeywordsLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

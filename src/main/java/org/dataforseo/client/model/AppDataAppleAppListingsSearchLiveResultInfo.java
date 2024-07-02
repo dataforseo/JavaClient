@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.dataforseo.client.model.AppDataleAppListingsSearchLiveItem;
+import org.dataforseo.client.model.AppDataAppleAppListingsSearchLiveItem;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppDataAppleAppListingsSearchLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class AppDataAppleAppListingsSearchLiveResultInfo {
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
@@ -73,7 +73,7 @@ public class AppDataAppleAppListingsSearchLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<AppDataleAppListingsSearchLiveItem> items;
+  private List<AppDataAppleAppListingsSearchLiveItem> items;
 
   public AppDataAppleAppListingsSearchLiveResultInfo() {
   }
@@ -154,12 +154,12 @@ public class AppDataAppleAppListingsSearchLiveResultInfo {
   }
 
 
-  public AppDataAppleAppListingsSearchLiveResultInfo items(List<AppDataleAppListingsSearchLiveItem> items) {
+  public AppDataAppleAppListingsSearchLiveResultInfo items(List<AppDataAppleAppListingsSearchLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public AppDataAppleAppListingsSearchLiveResultInfo addItemsItem(AppDataleAppListingsSearchLiveItem itemsItem) {
+  public AppDataAppleAppListingsSearchLiveResultInfo addItemsItem(AppDataAppleAppListingsSearchLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -172,11 +172,11 @@ public class AppDataAppleAppListingsSearchLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<AppDataleAppListingsSearchLiveItem> getItems() {
+  public List<AppDataAppleAppListingsSearchLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<AppDataleAppListingsSearchLiveItem> items) {
+  public void setItems(List<AppDataAppleAppListingsSearchLiveItem> items) {
     this.items = items;
   }
 
@@ -289,7 +289,7 @@ public class AppDataAppleAppListingsSearchLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            AppDataleAppListingsSearchLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            AppDataAppleAppListingsSearchLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

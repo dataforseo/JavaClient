@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.dataforseo.client.model.DataforseoLabsleAppIntersectionLiveItem;
+import org.dataforseo.client.model.DataforseoLabsAppleAppIntersectionLiveItem;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsAppleAppIntersectionLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class DataforseoLabsAppleAppIntersectionLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -83,7 +83,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsleAppIntersectionLiveItem> items;
+  private List<DataforseoLabsAppleAppIntersectionLiveItem> items;
 
   public DataforseoLabsAppleAppIntersectionLiveResultInfo() {
   }
@@ -210,12 +210,12 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo {
   }
 
 
-  public DataforseoLabsAppleAppIntersectionLiveResultInfo items(List<DataforseoLabsleAppIntersectionLiveItem> items) {
+  public DataforseoLabsAppleAppIntersectionLiveResultInfo items(List<DataforseoLabsAppleAppIntersectionLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsAppleAppIntersectionLiveResultInfo addItemsItem(DataforseoLabsleAppIntersectionLiveItem itemsItem) {
+  public DataforseoLabsAppleAppIntersectionLiveResultInfo addItemsItem(DataforseoLabsAppleAppIntersectionLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -228,11 +228,11 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<DataforseoLabsleAppIntersectionLiveItem> getItems() {
+  public List<DataforseoLabsAppleAppIntersectionLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsleAppIntersectionLiveItem> items) {
+  public void setItems(List<DataforseoLabsAppleAppIntersectionLiveItem> items) {
     this.items = items;
   }
 
@@ -354,7 +354,7 @@ public class DataforseoLabsAppleAppIntersectionLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsleAppIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsAppleAppIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

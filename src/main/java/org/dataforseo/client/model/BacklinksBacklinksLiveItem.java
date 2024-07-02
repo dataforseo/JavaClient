@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.RankedKeywordsInfo;
+import org.dataforseo.client.model.Redirect;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksBacklinksLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class BacklinksBacklinksLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -173,7 +174,7 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_ATTRIBUTES = "attributes";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTES)
-  private Object attributes;
+  private List<String> attributes;
 
   public static final String SERIALIZED_NAME_DOFOLLOW = "dofollow";
   @SerializedName(SERIALIZED_NAME_DOFOLLOW)
@@ -241,7 +242,7 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_INDIRECT_LINK_PATH = "indirect_link_path";
   @SerializedName(SERIALIZED_NAME_INDIRECT_LINK_PATH)
-  private Object indirectLinkPath;
+  private List<Redirect> indirectLinkPath;
 
   public BacklinksBacklinksLiveItem() {
   }
@@ -805,8 +806,16 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem attributes(Object attributes) {
+  public BacklinksBacklinksLiveItem attributes(List<String> attributes) {
     this.attributes = attributes;
+    return this;
+  }
+
+  public BacklinksBacklinksLiveItem addAttributesItem(String attributesItem) {
+    if (this.attributes == null) {
+      this.attributes = new ArrayList<>();
+    }
+    this.attributes.add(attributesItem);
     return this;
   }
 
@@ -815,11 +824,11 @@ public class BacklinksBacklinksLiveItem {
    * @return attributes
   **/
   @javax.annotation.Nullable
-  public Object getAttributes() {
+  public List<String> getAttributes() {
     return attributes;
   }
 
-  public void setAttributes(Object attributes) {
+  public void setAttributes(List<String> attributes) {
     this.attributes = attributes;
   }
 
@@ -1128,8 +1137,16 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem indirectLinkPath(Object indirectLinkPath) {
+  public BacklinksBacklinksLiveItem indirectLinkPath(List<Redirect> indirectLinkPath) {
     this.indirectLinkPath = indirectLinkPath;
+    return this;
+  }
+
+  public BacklinksBacklinksLiveItem addIndirectLinkPathItem(Redirect indirectLinkPathItem) {
+    if (this.indirectLinkPath == null) {
+      this.indirectLinkPath = new ArrayList<>();
+    }
+    this.indirectLinkPath.add(indirectLinkPathItem);
     return this;
   }
 
@@ -1138,11 +1155,11 @@ public class BacklinksBacklinksLiveItem {
    * @return indirectLinkPath
   **/
   @javax.annotation.Nullable
-  public Object getIndirectLinkPath() {
+  public List<Redirect> getIndirectLinkPath() {
     return indirectLinkPath;
   }
 
-  public void setIndirectLinkPath(Object indirectLinkPath) {
+  public void setIndirectLinkPath(List<Redirect> indirectLinkPath) {
     this.indirectLinkPath = indirectLinkPath;
   }
 
@@ -1417,6 +1434,10 @@ public class BacklinksBacklinksLiveItem {
       if ((jsonObj.get("item_type") != null && !jsonObj.get("item_type").isJsonNull()) && !jsonObj.get("item_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `item_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("item_type").toString()));
       }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("attributes") != null && !jsonObj.get("attributes").isJsonNull() && !jsonObj.get("attributes").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `attributes` to be an array in the JSON string but got `%s`", jsonObj.get("attributes").toString()));
+      }
       if ((jsonObj.get("alt") != null && !jsonObj.get("alt").isJsonNull()) && !jsonObj.get("alt").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `alt` to be a primitive type in the JSON string but got `%s`", jsonObj.get("alt").toString()));
       }
@@ -1441,6 +1462,20 @@ public class BacklinksBacklinksLiveItem {
       // validate the optional field `ranked_keywords_info`
       if (jsonObj.get("ranked_keywords_info") != null && !jsonObj.get("ranked_keywords_info").isJsonNull()) {
         RankedKeywordsInfo.validateJsonElement(jsonObj.get("ranked_keywords_info"));
+      }
+      if (jsonObj.get("indirect_link_path") != null && !jsonObj.get("indirect_link_path").isJsonNull()) {
+        JsonArray jsonArrayindirectLinkPath = jsonObj.getAsJsonArray("indirect_link_path");
+        if (jsonArrayindirectLinkPath != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("indirect_link_path").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `indirect_link_path` to be an array in the JSON string but got `%s`", jsonObj.get("indirect_link_path").toString()));
+          }
+
+          // validate the optional field `indirect_link_path` (array)
+          for (int i = 0; i < jsonArrayindirectLinkPath.size(); i++) {
+            Redirect.validateJsonElement(jsonArrayindirectLinkPath.get(i));
+          };
+        }
       }
   }
 

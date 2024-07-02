@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.dataforseo.client.model.DataforseoLabsleAppIntersectionLiveItem;
+import org.dataforseo.client.model.DataforseoLabsGoogleAppIntersectionLiveItem;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleAppIntersectionLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -83,7 +83,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsleAppIntersectionLiveItem> items;
+  private List<DataforseoLabsGoogleAppIntersectionLiveItem> items;
 
   public DataforseoLabsGoogleAppIntersectionLiveResultInfo() {
   }
@@ -210,12 +210,12 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleAppIntersectionLiveResultInfo items(List<DataforseoLabsleAppIntersectionLiveItem> items) {
+  public DataforseoLabsGoogleAppIntersectionLiveResultInfo items(List<DataforseoLabsGoogleAppIntersectionLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsGoogleAppIntersectionLiveResultInfo addItemsItem(DataforseoLabsleAppIntersectionLiveItem itemsItem) {
+  public DataforseoLabsGoogleAppIntersectionLiveResultInfo addItemsItem(DataforseoLabsGoogleAppIntersectionLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -228,11 +228,11 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<DataforseoLabsleAppIntersectionLiveItem> getItems() {
+  public List<DataforseoLabsGoogleAppIntersectionLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsleAppIntersectionLiveItem> items) {
+  public void setItems(List<DataforseoLabsGoogleAppIntersectionLiveItem> items) {
     this.items = items;
   }
 
@@ -354,7 +354,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsleAppIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsGoogleAppIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixJobsSerpLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class AppendixJobsSerpLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_TASK_POST = "task_post";
   @SerializedName(SERIALIZED_NAME_TASK_POST)

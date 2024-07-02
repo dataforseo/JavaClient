@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.dataforseo.client.model.MetricsInfo;
+import org.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -91,11 +91,11 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
 
   public static final String SERIALIZED_NAME_METRICS_HISTORY = "metrics_history";
   @SerializedName(SERIALIZED_NAME_METRICS_HISTORY)
-  private Map<String, Map<String, MetricsInfo>> metricsHistory;
+  private Map<String, Map<String, DataforseoLabsMetricsInfo>> metricsHistory;
 
   public static final String SERIALIZED_NAME_METRICS_DIFFERENCE = "metrics_difference";
   @SerializedName(SERIALIZED_NAME_METRICS_DIFFERENCE)
-  private Map<String, MetricsInfo> metricsDifference;
+  private Map<String, DataforseoLabsMetricsInfo> metricsDifference;
 
   public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem() {
   }
@@ -260,12 +260,12 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
   }
 
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem metricsHistory(Map<String, Map<String, MetricsInfo>> metricsHistory) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem metricsHistory(Map<String, Map<String, DataforseoLabsMetricsInfo>> metricsHistory) {
     this.metricsHistory = metricsHistory;
     return this;
   }
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem putMetricsHistoryItem(String key, Map<String, MetricsInfo> metricsHistoryItem) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem putMetricsHistoryItem(String key, Map<String, DataforseoLabsMetricsInfo> metricsHistoryItem) {
     if (this.metricsHistory == null) {
       this.metricsHistory = new HashMap<>();
     }
@@ -278,21 +278,21 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
    * @return metricsHistory
   **/
   @javax.annotation.Nullable
-  public Map<String, Map<String, MetricsInfo>> getMetricsHistory() {
+  public Map<String, Map<String, DataforseoLabsMetricsInfo>> getMetricsHistory() {
     return metricsHistory;
   }
 
-  public void setMetricsHistory(Map<String, Map<String, MetricsInfo>> metricsHistory) {
+  public void setMetricsHistory(Map<String, Map<String, DataforseoLabsMetricsInfo>> metricsHistory) {
     this.metricsHistory = metricsHistory;
   }
 
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem metricsDifference(Map<String, MetricsInfo> metricsDifference) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem metricsDifference(Map<String, DataforseoLabsMetricsInfo> metricsDifference) {
     this.metricsDifference = metricsDifference;
     return this;
   }
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem putMetricsDifferenceItem(String key, MetricsInfo metricsDifferenceItem) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem putMetricsDifferenceItem(String key, DataforseoLabsMetricsInfo metricsDifferenceItem) {
     if (this.metricsDifference == null) {
       this.metricsDifference = new HashMap<>();
     }
@@ -305,11 +305,11 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
    * @return metricsDifference
   **/
   @javax.annotation.Nullable
-  public Map<String, MetricsInfo> getMetricsDifference() {
+  public Map<String, DataforseoLabsMetricsInfo> getMetricsDifference() {
     return metricsDifference;
   }
 
-  public void setMetricsDifference(Map<String, MetricsInfo> metricsDifference) {
+  public void setMetricsDifference(Map<String, DataforseoLabsMetricsInfo> metricsDifference) {
     this.metricsDifference = metricsDifference;
   }
 

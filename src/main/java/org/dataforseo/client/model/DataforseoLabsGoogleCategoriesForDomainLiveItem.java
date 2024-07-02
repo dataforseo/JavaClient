@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.dataforseo.client.model.MetricsInfo;
+import org.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleCategoriesForDomainLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -67,7 +67,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
 
   public static final String SERIALIZED_NAME_METRICS = "metrics";
   @SerializedName(SERIALIZED_NAME_METRICS)
-  private Map<String, MetricsInfo> metrics;
+  private Map<String, DataforseoLabsMetricsInfo> metrics;
 
   public DataforseoLabsGoogleCategoriesForDomainLiveItem() {
   }
@@ -118,12 +118,12 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
   }
 
 
-  public DataforseoLabsGoogleCategoriesForDomainLiveItem metrics(Map<String, MetricsInfo> metrics) {
+  public DataforseoLabsGoogleCategoriesForDomainLiveItem metrics(Map<String, DataforseoLabsMetricsInfo> metrics) {
     this.metrics = metrics;
     return this;
   }
 
-  public DataforseoLabsGoogleCategoriesForDomainLiveItem putMetricsItem(String key, MetricsInfo metricsItem) {
+  public DataforseoLabsGoogleCategoriesForDomainLiveItem putMetricsItem(String key, DataforseoLabsMetricsInfo metricsItem) {
     if (this.metrics == null) {
       this.metrics = new HashMap<>();
     }
@@ -136,11 +136,11 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
    * @return metrics
   **/
   @javax.annotation.Nullable
-  public Map<String, MetricsInfo> getMetrics() {
+  public Map<String, DataforseoLabsMetricsInfo> getMetrics() {
     return metrics;
   }
 
-  public void setMetrics(Map<String, MetricsInfo> metrics) {
+  public void setMetrics(Map<String, DataforseoLabsMetricsInfo> metrics) {
     this.metrics = metrics;
   }
 

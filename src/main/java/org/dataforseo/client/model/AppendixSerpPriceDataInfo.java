@@ -50,12 +50,8 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixSerpPriceDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class AppendixSerpPriceDataInfo {
-  public static final String SERIALIZED_NAME_ADVANCED = "advanced";
-  @SerializedName(SERIALIZED_NAME_ADVANCED)
-  private AppendixTaskKeywordsDataPriceDataInfo advanced;
-
   public static final String SERIALIZED_NAME_REGULAR = "regular";
   @SerializedName(SERIALIZED_NAME_REGULAR)
   private AppendixTaskKeywordsDataPriceDataInfo regular;
@@ -64,27 +60,12 @@ public class AppendixSerpPriceDataInfo {
   @SerializedName(SERIALIZED_NAME_HTML)
   private AppendixTaskKeywordsDataPriceDataInfo html;
 
+  public static final String SERIALIZED_NAME_ADVANCED = "advanced";
+  @SerializedName(SERIALIZED_NAME_ADVANCED)
+  private AppendixTaskKeywordsDataPriceDataInfo advanced;
+
   public AppendixSerpPriceDataInfo() {
   }
-
-  public AppendixSerpPriceDataInfo advanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
-    this.advanced = advanced;
-    return this;
-  }
-
-   /**
-   * Get advanced
-   * @return advanced
-  **/
-  @javax.annotation.Nullable
-  public AppendixTaskKeywordsDataPriceDataInfo getAdvanced() {
-    return advanced;
-  }
-
-  public void setAdvanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
-    this.advanced = advanced;
-  }
-
 
   public AppendixSerpPriceDataInfo regular(AppendixTaskKeywordsDataPriceDataInfo regular) {
     this.regular = regular;
@@ -124,6 +105,25 @@ public class AppendixSerpPriceDataInfo {
   }
 
 
+  public AppendixSerpPriceDataInfo advanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
+    this.advanced = advanced;
+    return this;
+  }
+
+   /**
+   * Get advanced
+   * @return advanced
+  **/
+  @javax.annotation.Nullable
+  public AppendixTaskKeywordsDataPriceDataInfo getAdvanced() {
+    return advanced;
+  }
+
+  public void setAdvanced(AppendixTaskKeywordsDataPriceDataInfo advanced) {
+    this.advanced = advanced;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -134,23 +134,23 @@ public class AppendixSerpPriceDataInfo {
       return false;
     }
     AppendixSerpPriceDataInfo appendixSerpPriceDataInfo = (AppendixSerpPriceDataInfo) o;
-    return Objects.equals(this.advanced, appendixSerpPriceDataInfo.advanced) &&
-        Objects.equals(this.regular, appendixSerpPriceDataInfo.regular) &&
-        Objects.equals(this.html, appendixSerpPriceDataInfo.html);
+    return Objects.equals(this.regular, appendixSerpPriceDataInfo.regular) &&
+        Objects.equals(this.html, appendixSerpPriceDataInfo.html) &&
+        Objects.equals(this.advanced, appendixSerpPriceDataInfo.advanced);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(advanced, regular, html);
+    return Objects.hash(regular, html, advanced);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixSerpPriceDataInfo {\n");
-    sb.append("    advanced: ").append(toIndentedString(advanced)).append("\n");
     sb.append("    regular: ").append(toIndentedString(regular)).append("\n");
     sb.append("    html: ").append(toIndentedString(html)).append("\n");
+    sb.append("    advanced: ").append(toIndentedString(advanced)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -173,9 +173,9 @@ public class AppendixSerpPriceDataInfo {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("advanced");
     openapiFields.add("regular");
     openapiFields.add("html");
+    openapiFields.add("advanced");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -202,10 +202,6 @@ public class AppendixSerpPriceDataInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `advanced`
-      if (jsonObj.get("advanced") != null && !jsonObj.get("advanced").isJsonNull()) {
-        AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("advanced"));
-      }
       // validate the optional field `regular`
       if (jsonObj.get("regular") != null && !jsonObj.get("regular").isJsonNull()) {
         AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("regular"));
@@ -213,6 +209,10 @@ public class AppendixSerpPriceDataInfo {
       // validate the optional field `html`
       if (jsonObj.get("html") != null && !jsonObj.get("html").isJsonNull()) {
         AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("html"));
+      }
+      // validate the optional field `advanced`
+      if (jsonObj.get("advanced") != null && !jsonObj.get("advanced").isJsonNull()) {
+        AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("advanced"));
       }
   }
 

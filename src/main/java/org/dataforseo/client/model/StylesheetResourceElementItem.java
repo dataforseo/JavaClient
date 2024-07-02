@@ -58,7 +58,7 @@ import org.dataforseo.client.JSON;
 /**
  * StylesheetResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -104,6 +104,10 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
   @SerializedName(SERIALIZED_NAME_CHECKS)
   private Map<String, Boolean> checks;
 
+  public static final String SERIALIZED_NAME_RESOURCE_ERRORS = "resource_errors";
+  @SerializedName(SERIALIZED_NAME_RESOURCE_ERRORS)
+  private OnPageResourceIssueInfo resourceErrors;
+
   public static final String SERIALIZED_NAME_CONTENT_ENCODING = "content_encoding";
   @SerializedName(SERIALIZED_NAME_CONTENT_ENCODING)
   private String contentEncoding;
@@ -123,10 +127,6 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_LAST_MODIFIED = "last_modified";
   @SerializedName(SERIALIZED_NAME_LAST_MODIFIED)
   private LastModified lastModified;
-
-  public static final String SERIALIZED_NAME_RESOURCE_ERRORS = "resource_errors";
-  @SerializedName(SERIALIZED_NAME_RESOURCE_ERRORS)
-  private OnPageResourceIssueInfo resourceErrors;
 
   public static final String SERIALIZED_NAME_INITIATOR = "initiator";
   @SerializedName(SERIALIZED_NAME_INITIATOR)
@@ -369,6 +369,25 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
 
+  public StylesheetResourceElementItem resourceErrors(OnPageResourceIssueInfo resourceErrors) {
+    this.resourceErrors = resourceErrors;
+    return this;
+  }
+
+   /**
+   * Get resourceErrors
+   * @return resourceErrors
+  **/
+  @javax.annotation.Nullable
+  public OnPageResourceIssueInfo getResourceErrors() {
+    return resourceErrors;
+  }
+
+  public void setResourceErrors(OnPageResourceIssueInfo resourceErrors) {
+    this.resourceErrors = resourceErrors;
+  }
+
+
   public StylesheetResourceElementItem contentEncoding(String contentEncoding) {
     this.contentEncoding = contentEncoding;
     return this;
@@ -461,25 +480,6 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
 
   public void setLastModified(LastModified lastModified) {
     this.lastModified = lastModified;
-  }
-
-
-  public StylesheetResourceElementItem resourceErrors(OnPageResourceIssueInfo resourceErrors) {
-    this.resourceErrors = resourceErrors;
-    return this;
-  }
-
-   /**
-   * Get resourceErrors
-   * @return resourceErrors
-  **/
-  @javax.annotation.Nullable
-  public OnPageResourceIssueInfo getResourceErrors() {
-    return resourceErrors;
-  }
-
-  public void setResourceErrors(OnPageResourceIssueInfo resourceErrors) {
-    this.resourceErrors = resourceErrors;
   }
 
 
@@ -599,12 +599,12 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
         Objects.equals(this.fetchTiming, stylesheetResourceElementItem.fetchTiming) &&
         Objects.equals(this.cacheControl, stylesheetResourceElementItem.cacheControl) &&
         Objects.equals(this.checks, stylesheetResourceElementItem.checks) &&
+        Objects.equals(this.resourceErrors, stylesheetResourceElementItem.resourceErrors) &&
         Objects.equals(this.contentEncoding, stylesheetResourceElementItem.contentEncoding) &&
         Objects.equals(this.mediaType, stylesheetResourceElementItem.mediaType) &&
         Objects.equals(this.acceptType, stylesheetResourceElementItem.acceptType) &&
         Objects.equals(this.server, stylesheetResourceElementItem.server) &&
         Objects.equals(this.lastModified, stylesheetResourceElementItem.lastModified) &&
-        Objects.equals(this.resourceErrors, stylesheetResourceElementItem.resourceErrors) &&
         Objects.equals(this.initiator, stylesheetResourceElementItem.initiator) &&
         Objects.equals(this.durationTime, stylesheetResourceElementItem.durationTime) &&
         Objects.equals(this.fetchStart, stylesheetResourceElementItem.fetchStart) &&
@@ -619,7 +619,7 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(meta, statusCode, location, url, size, encodedSize, totalTransferSize, fetchTime, fetchTiming, cacheControl, checks, contentEncoding, mediaType, acceptType, server, lastModified, resourceErrors, initiator, durationTime, fetchStart, fetchEnd, isRenderBlocking, super.hashCode());
+    return Objects.hash(meta, statusCode, location, url, size, encodedSize, totalTransferSize, fetchTime, fetchTiming, cacheControl, checks, resourceErrors, contentEncoding, mediaType, acceptType, server, lastModified, initiator, durationTime, fetchStart, fetchEnd, isRenderBlocking, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -645,12 +645,12 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
     sb.append("    fetchTiming: ").append(toIndentedString(fetchTiming)).append("\n");
     sb.append("    cacheControl: ").append(toIndentedString(cacheControl)).append("\n");
     sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
+    sb.append("    resourceErrors: ").append(toIndentedString(resourceErrors)).append("\n");
     sb.append("    contentEncoding: ").append(toIndentedString(contentEncoding)).append("\n");
     sb.append("    mediaType: ").append(toIndentedString(mediaType)).append("\n");
     sb.append("    acceptType: ").append(toIndentedString(acceptType)).append("\n");
     sb.append("    server: ").append(toIndentedString(server)).append("\n");
     sb.append("    lastModified: ").append(toIndentedString(lastModified)).append("\n");
-    sb.append("    resourceErrors: ").append(toIndentedString(resourceErrors)).append("\n");
     sb.append("    initiator: ").append(toIndentedString(initiator)).append("\n");
     sb.append("    durationTime: ").append(toIndentedString(durationTime)).append("\n");
     sb.append("    fetchStart: ").append(toIndentedString(fetchStart)).append("\n");
@@ -690,12 +690,12 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
     openapiFields.add("fetch_timing");
     openapiFields.add("cache_control");
     openapiFields.add("checks");
+    openapiFields.add("resource_errors");
     openapiFields.add("content_encoding");
     openapiFields.add("media_type");
     openapiFields.add("accept_type");
     openapiFields.add("server");
     openapiFields.add("last_modified");
-    openapiFields.add("resource_errors");
     openapiFields.add("initiator");
     openapiFields.add("duration_time");
     openapiFields.add("fetch_start");

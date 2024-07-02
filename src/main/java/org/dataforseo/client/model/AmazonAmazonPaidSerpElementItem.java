@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.AmazonDeliveryInfo;
 import org.dataforseo.client.model.BaseAmazonSerpElementItem;
-import org.dataforseo.client.model.RatingInfo;
+import org.dataforseo.client.model.RatingElement;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,12 +55,8 @@ import org.dataforseo.client.JSON;
 /**
  * AmazonAmazonPaidSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
-  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
-  @SerializedName(SERIALIZED_NAME_SE_TYPE)
-  private String seType;
-
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
   private Integer rankGroup;
@@ -68,10 +64,6 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
   private Integer rankAbsolute;
-
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
 
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -89,13 +81,13 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
 
-  public static final String SERIALIZED_NAME_ASIN = "asin";
-  @SerializedName(SERIALIZED_NAME_ASIN)
-  private String asin;
-
   public static final String SERIALIZED_NAME_IMAGE_URL = "image_url";
   @SerializedName(SERIALIZED_NAME_IMAGE_URL)
   private String imageUrl;
+
+  public static final String SERIALIZED_NAME_BOUGHT_PAST_MONTH = "bought_past_month";
+  @SerializedName(SERIALIZED_NAME_BOUGHT_PAST_MONTH)
+  private Integer boughtPastMonth;
 
   public static final String SERIALIZED_NAME_PRICE_FROM = "price_from";
   @SerializedName(SERIALIZED_NAME_PRICE_FROM)
@@ -113,52 +105,29 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   @SerializedName(SERIALIZED_NAME_SPECIAL_OFFERS)
   private List<String> specialOffers;
 
-  public static final String SERIALIZED_NAME_IS_BEST_SELLER = "is_best_seller";
-  @SerializedName(SERIALIZED_NAME_IS_BEST_SELLER)
-  private Boolean isBestSeller;
+  public static final String SERIALIZED_NAME_DATA_ASIN = "data_asin";
+  @SerializedName(SERIALIZED_NAME_DATA_ASIN)
+  private String dataAsin;
+
+  public static final String SERIALIZED_NAME_RATING = "rating";
+  @SerializedName(SERIALIZED_NAME_RATING)
+  private RatingElement rating;
 
   public static final String SERIALIZED_NAME_IS_AMAZON_CHOICE = "is_amazon_choice";
   @SerializedName(SERIALIZED_NAME_IS_AMAZON_CHOICE)
   private Boolean isAmazonChoice;
 
-  public static final String SERIALIZED_NAME_RATING = "rating";
-  @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  public static final String SERIALIZED_NAME_IS_BEST_SELLER = "is_best_seller";
+  @SerializedName(SERIALIZED_NAME_IS_BEST_SELLER)
+  private Boolean isBestSeller;
 
   public static final String SERIALIZED_NAME_DELIVERY_INFO = "delivery_info";
   @SerializedName(SERIALIZED_NAME_DELIVERY_INFO)
   private AmazonDeliveryInfo deliveryInfo;
 
-  public static final String SERIALIZED_NAME_BOUGHT_PAST_MONTH = "bought_past_month";
-  @SerializedName(SERIALIZED_NAME_BOUGHT_PAST_MONTH)
-  private Integer boughtPastMonth;
-
-  public static final String SERIALIZED_NAME_DATA_ASIN = "data_asin";
-  @SerializedName(SERIALIZED_NAME_DATA_ASIN)
-  private String dataAsin;
-
   public AmazonAmazonPaidSerpElementItem() {
     this.type = this.getClass().getSimpleName();
   }
-
-  public AmazonAmazonPaidSerpElementItem seType(String seType) {
-    this.seType = seType;
-    return this;
-  }
-
-   /**
-   * search engine type
-   * @return seType
-  **/
-  @javax.annotation.Nullable
-  public String getSeType() {
-    return seType;
-  }
-
-  public void setSeType(String seType) {
-    this.seType = seType;
-  }
-
 
   public AmazonAmazonPaidSerpElementItem rankGroup(Integer rankGroup) {
     this.rankGroup = rankGroup;
@@ -185,7 +154,7 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   }
 
    /**
-   * absolute rank in Amazon SERP absolute position among all the elements in SERP
+   * absolute rank in SERP absolute position among all the elements found in Amazon SERP
    * @return rankAbsolute
   **/
   @javax.annotation.Nullable
@@ -195,25 +164,6 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
 
   public void setRankAbsolute(Integer rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
-  }
-
-
-  public AmazonAmazonPaidSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-   /**
-   * the alignment of the element in Amazon SERP can take the following values: left, right
-   * @return position
-  **/
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
   }
 
 
@@ -280,7 +230,7 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   }
 
    /**
-   * URL of the product page
+   * the URL of the product page
    * @return url
   **/
   @javax.annotation.Nullable
@@ -290,25 +240,6 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
 
   public void setUrl(String url) {
     this.url = url;
-  }
-
-
-  public AmazonAmazonPaidSerpElementItem asin(String asin) {
-    this.asin = asin;
-    return this;
-  }
-
-   /**
-   * ASIN of the product learn more about ASIN in this help center guide
-   * @return asin
-  **/
-  @javax.annotation.Nullable
-  public String getAsin() {
-    return asin;
-  }
-
-  public void setAsin(String asin) {
-    this.asin = asin;
   }
 
 
@@ -328,6 +259,25 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
 
   public void setImageUrl(String imageUrl) {
     this.imageUrl = imageUrl;
+  }
+
+
+  public AmazonAmazonPaidSerpElementItem boughtPastMonth(Integer boughtPastMonth) {
+    this.boughtPastMonth = boughtPastMonth;
+    return this;
+  }
+
+   /**
+   * number of product purchases in the past month
+   * @return boughtPastMonth
+  **/
+  @javax.annotation.Nullable
+  public Integer getBoughtPastMonth() {
+    return boughtPastMonth;
+  }
+
+  public void setBoughtPastMonth(Integer boughtPastMonth) {
+    this.boughtPastMonth = boughtPastMonth;
   }
 
 
@@ -415,22 +365,41 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   }
 
 
-  public AmazonAmazonPaidSerpElementItem isBestSeller(Boolean isBestSeller) {
-    this.isBestSeller = isBestSeller;
+  public AmazonAmazonPaidSerpElementItem dataAsin(String dataAsin) {
+    this.dataAsin = dataAsin;
     return this;
   }
 
    /**
-   * “Best Seller” label if the value is true, the product is marked with the “Best Seller” label
-   * @return isBestSeller
+   * unique product identifier on Amazon note that there is no full list of possible values as the data_asin is a dynamic value assigned by Amazon example: B07G82D89J
+   * @return dataAsin
   **/
   @javax.annotation.Nullable
-  public Boolean getIsBestSeller() {
-    return isBestSeller;
+  public String getDataAsin() {
+    return dataAsin;
   }
 
-  public void setIsBestSeller(Boolean isBestSeller) {
-    this.isBestSeller = isBestSeller;
+  public void setDataAsin(String dataAsin) {
+    this.dataAsin = dataAsin;
+  }
+
+
+  public AmazonAmazonPaidSerpElementItem rating(RatingElement rating) {
+    this.rating = rating;
+    return this;
+  }
+
+   /**
+   * Get rating
+   * @return rating
+  **/
+  @javax.annotation.Nullable
+  public RatingElement getRating() {
+    return rating;
+  }
+
+  public void setRating(RatingElement rating) {
+    this.rating = rating;
   }
 
 
@@ -453,22 +422,22 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   }
 
 
-  public AmazonAmazonPaidSerpElementItem rating(RatingInfo rating) {
-    this.rating = rating;
+  public AmazonAmazonPaidSerpElementItem isBestSeller(Boolean isBestSeller) {
+    this.isBestSeller = isBestSeller;
     return this;
   }
 
    /**
-   * Get rating
-   * @return rating
+   * “Best Seller” label if the value is true, the product is marked with the “Best Seller” label
+   * @return isBestSeller
   **/
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
-    return rating;
+  public Boolean getIsBestSeller() {
+    return isBestSeller;
   }
 
-  public void setRating(RatingInfo rating) {
-    this.rating = rating;
+  public void setIsBestSeller(Boolean isBestSeller) {
+    this.isBestSeller = isBestSeller;
   }
 
 
@@ -491,44 +460,6 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
   }
 
 
-  public AmazonAmazonPaidSerpElementItem boughtPastMonth(Integer boughtPastMonth) {
-    this.boughtPastMonth = boughtPastMonth;
-    return this;
-  }
-
-   /**
-   * number of product purchases in the past month
-   * @return boughtPastMonth
-  **/
-  @javax.annotation.Nullable
-  public Integer getBoughtPastMonth() {
-    return boughtPastMonth;
-  }
-
-  public void setBoughtPastMonth(Integer boughtPastMonth) {
-    this.boughtPastMonth = boughtPastMonth;
-  }
-
-
-  public AmazonAmazonPaidSerpElementItem dataAsin(String dataAsin) {
-    this.dataAsin = dataAsin;
-    return this;
-  }
-
-   /**
-   * unique product identifier on Amazon note that there is no full list of possible values as the data_asin is a dynamic value assigned by Amazon example: B07G82D89J
-   * @return dataAsin
-  **/
-  @javax.annotation.Nullable
-  public String getDataAsin() {
-    return dataAsin;
-  }
-
-  public void setDataAsin(String dataAsin) {
-    this.dataAsin = dataAsin;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -539,26 +470,23 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
       return false;
     }
     AmazonAmazonPaidSerpElementItem amazonAmazonPaidSerpElementItem = (AmazonAmazonPaidSerpElementItem) o;
-    return Objects.equals(this.seType, amazonAmazonPaidSerpElementItem.seType) &&
-        Objects.equals(this.rankGroup, amazonAmazonPaidSerpElementItem.rankGroup) &&
+    return Objects.equals(this.rankGroup, amazonAmazonPaidSerpElementItem.rankGroup) &&
         Objects.equals(this.rankAbsolute, amazonAmazonPaidSerpElementItem.rankAbsolute) &&
-        Objects.equals(this.position, amazonAmazonPaidSerpElementItem.position) &&
         Objects.equals(this.xpath, amazonAmazonPaidSerpElementItem.xpath) &&
         Objects.equals(this.domain, amazonAmazonPaidSerpElementItem.domain) &&
         Objects.equals(this.title, amazonAmazonPaidSerpElementItem.title) &&
         Objects.equals(this.url, amazonAmazonPaidSerpElementItem.url) &&
-        Objects.equals(this.asin, amazonAmazonPaidSerpElementItem.asin) &&
         Objects.equals(this.imageUrl, amazonAmazonPaidSerpElementItem.imageUrl) &&
+        Objects.equals(this.boughtPastMonth, amazonAmazonPaidSerpElementItem.boughtPastMonth) &&
         Objects.equals(this.priceFrom, amazonAmazonPaidSerpElementItem.priceFrom) &&
         Objects.equals(this.priceTo, amazonAmazonPaidSerpElementItem.priceTo) &&
         Objects.equals(this.currency, amazonAmazonPaidSerpElementItem.currency) &&
         Objects.equals(this.specialOffers, amazonAmazonPaidSerpElementItem.specialOffers) &&
-        Objects.equals(this.isBestSeller, amazonAmazonPaidSerpElementItem.isBestSeller) &&
-        Objects.equals(this.isAmazonChoice, amazonAmazonPaidSerpElementItem.isAmazonChoice) &&
-        Objects.equals(this.rating, amazonAmazonPaidSerpElementItem.rating) &&
-        Objects.equals(this.deliveryInfo, amazonAmazonPaidSerpElementItem.deliveryInfo) &&
-        Objects.equals(this.boughtPastMonth, amazonAmazonPaidSerpElementItem.boughtPastMonth) &&
         Objects.equals(this.dataAsin, amazonAmazonPaidSerpElementItem.dataAsin) &&
+        Objects.equals(this.rating, amazonAmazonPaidSerpElementItem.rating) &&
+        Objects.equals(this.isAmazonChoice, amazonAmazonPaidSerpElementItem.isAmazonChoice) &&
+        Objects.equals(this.isBestSeller, amazonAmazonPaidSerpElementItem.isBestSeller) &&
+        Objects.equals(this.deliveryInfo, amazonAmazonPaidSerpElementItem.deliveryInfo) &&
         super.equals(o);
   }
 
@@ -568,7 +496,7 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, rankGroup, rankAbsolute, position, xpath, domain, title, url, asin, imageUrl, priceFrom, priceTo, currency, specialOffers, isBestSeller, isAmazonChoice, rating, deliveryInfo, boughtPastMonth, dataAsin, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, xpath, domain, title, url, imageUrl, boughtPastMonth, priceFrom, priceTo, currency, specialOffers, dataAsin, rating, isAmazonChoice, isBestSeller, deliveryInfo, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -583,26 +511,23 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class AmazonAmazonPaidSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    rankGroup: ").append(toIndentedString(rankGroup)).append("\n");
     sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    asin: ").append(toIndentedString(asin)).append("\n");
     sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
+    sb.append("    boughtPastMonth: ").append(toIndentedString(boughtPastMonth)).append("\n");
     sb.append("    priceFrom: ").append(toIndentedString(priceFrom)).append("\n");
     sb.append("    priceTo: ").append(toIndentedString(priceTo)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    specialOffers: ").append(toIndentedString(specialOffers)).append("\n");
-    sb.append("    isBestSeller: ").append(toIndentedString(isBestSeller)).append("\n");
-    sb.append("    isAmazonChoice: ").append(toIndentedString(isAmazonChoice)).append("\n");
-    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
-    sb.append("    deliveryInfo: ").append(toIndentedString(deliveryInfo)).append("\n");
-    sb.append("    boughtPastMonth: ").append(toIndentedString(boughtPastMonth)).append("\n");
     sb.append("    dataAsin: ").append(toIndentedString(dataAsin)).append("\n");
+    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
+    sb.append("    isAmazonChoice: ").append(toIndentedString(isAmazonChoice)).append("\n");
+    sb.append("    isBestSeller: ").append(toIndentedString(isBestSeller)).append("\n");
+    sb.append("    deliveryInfo: ").append(toIndentedString(deliveryInfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -626,26 +551,23 @@ public class AmazonAmazonPaidSerpElementItem extends BaseAmazonSerpElementItem {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
-    openapiFields.add("se_type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
-    openapiFields.add("position");
     openapiFields.add("xpath");
     openapiFields.add("domain");
     openapiFields.add("title");
     openapiFields.add("url");
-    openapiFields.add("asin");
     openapiFields.add("image_url");
+    openapiFields.add("bought_past_month");
     openapiFields.add("price_from");
     openapiFields.add("price_to");
     openapiFields.add("currency");
     openapiFields.add("special_offers");
-    openapiFields.add("is_best_seller");
-    openapiFields.add("is_amazon_choice");
-    openapiFields.add("rating");
-    openapiFields.add("delivery_info");
-    openapiFields.add("bought_past_month");
     openapiFields.add("data_asin");
+    openapiFields.add("rating");
+    openapiFields.add("is_amazon_choice");
+    openapiFields.add("is_best_seller");
+    openapiFields.add("delivery_info");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

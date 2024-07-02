@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import org.dataforseo.client.model.MetricsInfo;
+import org.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsCompetitorsDomainLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class DataforseoLabsCompetitorsDomainLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -77,15 +77,15 @@ public class DataforseoLabsCompetitorsDomainLiveItem {
 
   public static final String SERIALIZED_NAME_FULL_DOMAIN_METRICS = "full_domain_metrics";
   @SerializedName(SERIALIZED_NAME_FULL_DOMAIN_METRICS)
-  private Map<String, MetricsInfo> fullDomainMetrics;
+  private Map<String, DataforseoLabsMetricsInfo> fullDomainMetrics;
 
   public static final String SERIALIZED_NAME_METRICS = "metrics";
   @SerializedName(SERIALIZED_NAME_METRICS)
-  private Map<String, MetricsInfo> metrics;
+  private Map<String, DataforseoLabsMetricsInfo> metrics;
 
   public static final String SERIALIZED_NAME_COMPETITOR_METRICS = "competitor_metrics";
   @SerializedName(SERIALIZED_NAME_COMPETITOR_METRICS)
-  private Map<String, MetricsInfo> competitorMetrics;
+  private Map<String, DataforseoLabsMetricsInfo> competitorMetrics;
 
   public DataforseoLabsCompetitorsDomainLiveItem() {
   }
@@ -185,12 +185,12 @@ public class DataforseoLabsCompetitorsDomainLiveItem {
   }
 
 
-  public DataforseoLabsCompetitorsDomainLiveItem fullDomainMetrics(Map<String, MetricsInfo> fullDomainMetrics) {
+  public DataforseoLabsCompetitorsDomainLiveItem fullDomainMetrics(Map<String, DataforseoLabsMetricsInfo> fullDomainMetrics) {
     this.fullDomainMetrics = fullDomainMetrics;
     return this;
   }
 
-  public DataforseoLabsCompetitorsDomainLiveItem putFullDomainMetricsItem(String key, MetricsInfo fullDomainMetricsItem) {
+  public DataforseoLabsCompetitorsDomainLiveItem putFullDomainMetricsItem(String key, DataforseoLabsMetricsInfo fullDomainMetricsItem) {
     if (this.fullDomainMetrics == null) {
       this.fullDomainMetrics = new HashMap<>();
     }
@@ -203,21 +203,21 @@ public class DataforseoLabsCompetitorsDomainLiveItem {
    * @return fullDomainMetrics
   **/
   @javax.annotation.Nullable
-  public Map<String, MetricsInfo> getFullDomainMetrics() {
+  public Map<String, DataforseoLabsMetricsInfo> getFullDomainMetrics() {
     return fullDomainMetrics;
   }
 
-  public void setFullDomainMetrics(Map<String, MetricsInfo> fullDomainMetrics) {
+  public void setFullDomainMetrics(Map<String, DataforseoLabsMetricsInfo> fullDomainMetrics) {
     this.fullDomainMetrics = fullDomainMetrics;
   }
 
 
-  public DataforseoLabsCompetitorsDomainLiveItem metrics(Map<String, MetricsInfo> metrics) {
+  public DataforseoLabsCompetitorsDomainLiveItem metrics(Map<String, DataforseoLabsMetricsInfo> metrics) {
     this.metrics = metrics;
     return this;
   }
 
-  public DataforseoLabsCompetitorsDomainLiveItem putMetricsItem(String key, MetricsInfo metricsItem) {
+  public DataforseoLabsCompetitorsDomainLiveItem putMetricsItem(String key, DataforseoLabsMetricsInfo metricsItem) {
     if (this.metrics == null) {
       this.metrics = new HashMap<>();
     }
@@ -230,21 +230,21 @@ public class DataforseoLabsCompetitorsDomainLiveItem {
    * @return metrics
   **/
   @javax.annotation.Nullable
-  public Map<String, MetricsInfo> getMetrics() {
+  public Map<String, DataforseoLabsMetricsInfo> getMetrics() {
     return metrics;
   }
 
-  public void setMetrics(Map<String, MetricsInfo> metrics) {
+  public void setMetrics(Map<String, DataforseoLabsMetricsInfo> metrics) {
     this.metrics = metrics;
   }
 
 
-  public DataforseoLabsCompetitorsDomainLiveItem competitorMetrics(Map<String, MetricsInfo> competitorMetrics) {
+  public DataforseoLabsCompetitorsDomainLiveItem competitorMetrics(Map<String, DataforseoLabsMetricsInfo> competitorMetrics) {
     this.competitorMetrics = competitorMetrics;
     return this;
   }
 
-  public DataforseoLabsCompetitorsDomainLiveItem putCompetitorMetricsItem(String key, MetricsInfo competitorMetricsItem) {
+  public DataforseoLabsCompetitorsDomainLiveItem putCompetitorMetricsItem(String key, DataforseoLabsMetricsInfo competitorMetricsItem) {
     if (this.competitorMetrics == null) {
       this.competitorMetrics = new HashMap<>();
     }
@@ -257,11 +257,11 @@ public class DataforseoLabsCompetitorsDomainLiveItem {
    * @return competitorMetrics
   **/
   @javax.annotation.Nullable
-  public Map<String, MetricsInfo> getCompetitorMetrics() {
+  public Map<String, DataforseoLabsMetricsInfo> getCompetitorMetrics() {
     return competitorMetrics;
   }
 
-  public void setCompetitorMetrics(Map<String, MetricsInfo> competitorMetrics) {
+  public void setCompetitorMetrics(Map<String, DataforseoLabsMetricsInfo> competitorMetrics) {
     this.competitorMetrics = competitorMetrics;
   }
 

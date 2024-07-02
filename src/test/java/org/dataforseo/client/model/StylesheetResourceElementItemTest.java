@@ -143,6 +143,14 @@ public class StylesheetResourceElementItemTest {
     }
 
     /**
+     * Test the property 'resourceErrors'
+     */
+    @Test
+    public void resourceErrorsTest() {
+        // TODO: test resourceErrors
+    }
+
+    /**
      * Test the property 'contentEncoding'
      */
     @Test
@@ -180,14 +188,6 @@ public class StylesheetResourceElementItemTest {
     @Test
     public void lastModifiedTest() {
         // TODO: test lastModified
-    }
-
-    /**
-     * Test the property 'resourceErrors'
-     */
-    @Test
-    public void resourceErrorsTest() {
-        // TODO: test resourceErrors
     }
 
     /**

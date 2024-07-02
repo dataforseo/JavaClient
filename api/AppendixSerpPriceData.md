@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**tasksFixed** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**errors** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**jobs** | [**AppendixKeywordsKeywordsDataPriceDataInfo**](AppendixKeywordsKeywordsDataPriceDataInfo.md) |  |  [optional] |
+|**jobs** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**languages** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**live** | [**AppendixSerpPriceDataInfo**](AppendixSerpPriceDataInfo.md) |  |  [optional] |
 |**locations** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |

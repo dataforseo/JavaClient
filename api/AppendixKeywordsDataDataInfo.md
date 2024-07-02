@@ -18,7 +18,8 @@
 |**categories** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
 |**bing** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**keywordPerformance** | [**AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo**](AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**keywordPerformance** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**locationsAndLanguages** | **Double** |  |  [optional] |
 |**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**googleAds** | [**AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo**](AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**dataforseoTrends** | [**AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo**](AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |

@@ -15,8 +15,8 @@
 |**organicIsNew** | **Integer** | current number of new ranked elements indicates how many new ranked elements were found for the domain |  [optional] |
 |**domain** | **String** | domain found for the specified category |  [optional] |
 |**mainDomain** | **String** | primary domain |  [optional] |
-|**metricsHistory** | **Map&lt;String, Map&lt;String, MetricsInfo&gt;&gt;** | historical ranking and traffic data of the domain |  [optional] |
-|**metricsDifference** | [**Map&lt;String, MetricsInfo&gt;**](MetricsInfo.md) | metrics difference between first_date and second_date calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date |  [optional] |
+|**metricsHistory** | **Map&lt;String, Map&lt;String, DataforseoLabsMetricsInfo&gt;&gt;** | historical ranking and traffic data of the domain |  [optional] |
+|**metricsDifference** | [**Map&lt;String, DataforseoLabsMetricsInfo&gt;**](DataforseoLabsMetricsInfo.md) | metrics difference between first_date and second_date calculated by subtracting domain metrics as of the greater date from domain metrics as of the smaller date |  [optional] |
 
 
 

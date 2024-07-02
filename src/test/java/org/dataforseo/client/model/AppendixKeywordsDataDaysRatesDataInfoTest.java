@@ -24,7 +24,6 @@ import org.dataforseo.client.model.AppendixBingKeywordsDataLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixInfo;
-import org.dataforseo.client.model.AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -137,6 +136,14 @@ public class AppendixKeywordsDataDaysRatesDataInfoTest {
     @Test
     public void keywordPerformanceTest() {
         // TODO: test keywordPerformance
+    }
+
+    /**
+     * Test the property 'locationsAndLanguages'
+     */
+    @Test
+    public void locationsAndLanguagesTest() {
+        // TODO: test locationsAndLanguages
     }
 
     /**

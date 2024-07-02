@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * ClickstreamKeywordInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-21T10:44:48.237213300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
 public class ClickstreamKeywordInfo {
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
@@ -132,7 +132,7 @@ public class ClickstreamKeywordInfo {
   }
 
    /**
-   * distribution of estimated clickstream-based metrics by gender
+   * distribution of estimated clickstream-based metrics by gender learn more about how the metric is calculated in this help center article
    * @return genderDistribution
   **/
   @javax.annotation.Nullable
@@ -159,7 +159,7 @@ public class ClickstreamKeywordInfo {
   }
 
    /**
-   * distribution of clickstream-based metrics by age
+   * distribution of clickstream-based metrics by age learn more about how the metric is calculated in this help center article
    * @return ageDistribution
   **/
   @javax.annotation.Nullable
