@@ -17,7 +17,7 @@
 |**reviewsCount** | **Long** | the total number of reviews of the app |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
-|**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
+|**price** | [**Price**](Price.md) |  |  [optional] |
 
 
 

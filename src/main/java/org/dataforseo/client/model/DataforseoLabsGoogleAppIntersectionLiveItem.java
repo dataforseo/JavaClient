@@ -24,7 +24,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import org.dataforseo.client.model.AppDataGooglePlaySearchOrganicSerpElementItem;
-import org.dataforseo.client.model.KeywordDataKeywordDataInfo;
+import org.dataforseo.client.model.KeywordData;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleAppIntersectionLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleAppIntersectionLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -62,7 +62,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORD_DATA = "keyword_data";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DATA)
-  private KeywordDataKeywordDataInfo keywordData;
+  private KeywordData keywordData;
 
   public static final String SERIALIZED_NAME_INTERSECTION_RESULT = "intersection_result";
   @SerializedName(SERIALIZED_NAME_INTERSECTION_RESULT)
@@ -90,7 +90,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveItem {
   }
 
 
-  public DataforseoLabsGoogleAppIntersectionLiveItem keywordData(KeywordDataKeywordDataInfo keywordData) {
+  public DataforseoLabsGoogleAppIntersectionLiveItem keywordData(KeywordData keywordData) {
     this.keywordData = keywordData;
     return this;
   }
@@ -100,11 +100,11 @@ public class DataforseoLabsGoogleAppIntersectionLiveItem {
    * @return keywordData
   **/
   @javax.annotation.Nullable
-  public KeywordDataKeywordDataInfo getKeywordData() {
+  public KeywordData getKeywordData() {
     return keywordData;
   }
 
-  public void setKeywordData(KeywordDataKeywordDataInfo keywordData) {
+  public void setKeywordData(KeywordData keywordData) {
     this.keywordData = keywordData;
   }
 
@@ -230,7 +230,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveItem {
       }
       // validate the optional field `keyword_data`
       if (jsonObj.get("keyword_data") != null && !jsonObj.get("keyword_data").isJsonNull()) {
-        KeywordDataKeywordDataInfo.validateJsonElement(jsonObj.get("keyword_data"));
+        KeywordData.validateJsonElement(jsonObj.get("keyword_data"));
       }
   }
 

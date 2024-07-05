@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleRankedKeywordsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleRankedKeywordsLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)

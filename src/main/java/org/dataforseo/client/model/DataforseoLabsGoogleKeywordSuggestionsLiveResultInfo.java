@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.dataforseo.client.model.KeywordDataKeywordDataInfo;
+import org.dataforseo.client.model.KeywordDataInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -95,7 +95,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<KeywordDataKeywordDataInfo> items;
+  private List<KeywordDataInfo> items;
 
   public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo() {
   }
@@ -279,12 +279,12 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo items(List<KeywordDataKeywordDataInfo> items) {
+  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo items(List<KeywordDataInfo> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo addItemsItem(KeywordDataKeywordDataInfo itemsItem) {
+  public DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo addItemsItem(KeywordDataInfo itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -297,11 +297,11 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<KeywordDataKeywordDataInfo> getItems() {
+  public List<KeywordDataInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<KeywordDataKeywordDataInfo> items) {
+  public void setItems(List<KeywordDataInfo> items) {
     this.items = items;
   }
 
@@ -438,7 +438,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            KeywordDataKeywordDataInfo.validateJsonElement(jsonArrayitems.get(i));
+            KeywordDataInfo.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.BaseAppDataSerpElementItem;
-import org.dataforseo.client.model.PriceInfo;
+import org.dataforseo.client.model.Price;
 import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;

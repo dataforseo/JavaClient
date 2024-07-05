@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.DataforseoLabsBingRelatedKeywordsLiveItem;
-import org.dataforseo.client.model.KeywordDataKeywordDataInfo;
+import org.dataforseo.client.model.KeywordData;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingRelatedKeywordsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -66,7 +66,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_SEED_KEYWORD_DATA = "seed_keyword_data";
   @SerializedName(SERIALIZED_NAME_SEED_KEYWORD_DATA)
-  private KeywordDataKeywordDataInfo seedKeywordData;
+  private KeywordData seedKeywordData;
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
@@ -129,7 +129,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
   }
 
 
-  public DataforseoLabsBingRelatedKeywordsLiveResultInfo seedKeywordData(KeywordDataKeywordDataInfo seedKeywordData) {
+  public DataforseoLabsBingRelatedKeywordsLiveResultInfo seedKeywordData(KeywordData seedKeywordData) {
     this.seedKeywordData = seedKeywordData;
     return this;
   }
@@ -139,11 +139,11 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
    * @return seedKeywordData
   **/
   @javax.annotation.Nullable
-  public KeywordDataKeywordDataInfo getSeedKeywordData() {
+  public KeywordData getSeedKeywordData() {
     return seedKeywordData;
   }
 
-  public void setSeedKeywordData(KeywordDataKeywordDataInfo seedKeywordData) {
+  public void setSeedKeywordData(KeywordData seedKeywordData) {
     this.seedKeywordData = seedKeywordData;
   }
 
@@ -363,7 +363,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
       }
       // validate the optional field `seed_keyword_data`
       if (jsonObj.get("seed_keyword_data") != null && !jsonObj.get("seed_keyword_data").isJsonNull()) {
-        KeywordDataKeywordDataInfo.validateJsonElement(jsonObj.get("seed_keyword_data"));
+        KeywordData.validateJsonElement(jsonObj.get("seed_keyword_data"));
       }
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));

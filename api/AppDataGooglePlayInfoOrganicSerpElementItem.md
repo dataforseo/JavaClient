@@ -17,7 +17,7 @@
 |**description** | **String** | description of the app |  [optional] |
 |**reviewsCount** | **Long** | the total number of reviews the app has |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
-|**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
+|**price** | [**Price**](Price.md) |  |  [optional] |
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
 |**mainCategory** | **String** | main category of the app |  [optional] |
 |**installs** | **String** | number of installs of the app approximate number of installs as displayed on the app page |  [optional] |

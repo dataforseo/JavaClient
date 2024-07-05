@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BaseSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -173,6 +173,9 @@ public class BaseSerpElementItem {
           break;
         case "compare_sites":
           CompareSitesSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "courses":
+          CoursesSerpElementItem.validateJsonElement(jsonElement);
           break;
         case "currency_box":
           CurrencyBoxSerpElementItem.validateJsonElement(jsonElement);

@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**seType** | **String** | search engine type |  [optional] |
 |**seedKeyword** | **String** | keyword in a POST array |  [optional] |
-|**seedKeywordData** | [**KeywordDataKeywordDataInfo**](KeywordDataKeywordDataInfo.md) |  |  [optional] |
+|**seedKeywordData** | [**KeywordData**](KeywordData.md) |  |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**totalCount** | **Long** | total amount of results in our database relevant to your request |  [optional] |

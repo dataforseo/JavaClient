@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.ContentItemInfo;
+import org.dataforseo.client.model.TableContent;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -95,6 +96,14 @@ public class TopicInfoTest {
     @Test
     public void secondaryContentTest() {
         // TODO: test secondaryContent
+    }
+
+    /**
+     * Test the property 'tableContent'
+     */
+    @Test
+    public void tableContentTest() {
+        // TODO: test tableContent
     }
 
 }

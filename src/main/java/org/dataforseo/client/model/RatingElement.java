@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * RatingElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class RatingElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -66,7 +66,7 @@ public class RatingElement {
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
-  private String value;
+  private Float value;
 
   public static final String SERIALIZED_NAME_VOTES_COUNT = "votes_count";
   @SerializedName(SERIALIZED_NAME_VOTES_COUNT)
@@ -136,7 +136,7 @@ public class RatingElement {
   }
 
 
-  public RatingElement value(String value) {
+  public RatingElement value(Float value) {
     this.value = value;
     return this;
   }
@@ -146,11 +146,11 @@ public class RatingElement {
    * @return value
   **/
   @javax.annotation.Nullable
-  public String getValue() {
+  public Float getValue() {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(Float value) {
     this.value = value;
   }
 

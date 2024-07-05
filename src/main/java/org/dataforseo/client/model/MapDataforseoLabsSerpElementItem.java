@@ -51,7 +51,7 @@ import org.dataforseo.client.JSON;
 /**
  * MapDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class MapDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -163,7 +163,7 @@ public class MapDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElem
   }
 
    /**
-   * title of the item
+   * title of the result in SERP
    * @return title
   **/
   @javax.annotation.Nullable
@@ -182,7 +182,7 @@ public class MapDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElem
   }
 
    /**
-   * URL link
+   * relevant URL of the Ad element in SERP
    * @return url
   **/
   @javax.annotation.Nullable

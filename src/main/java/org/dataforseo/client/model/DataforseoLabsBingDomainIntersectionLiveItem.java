@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
-import org.dataforseo.client.model.KeywordDataKeywordDataInfo;
+import org.dataforseo.client.model.KeywordData;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingDomainIntersectionLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-06-13T10:30:03.431691300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class DataforseoLabsBingDomainIntersectionLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -60,7 +60,7 @@ public class DataforseoLabsBingDomainIntersectionLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORD_DATA = "keyword_data";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DATA)
-  private KeywordDataKeywordDataInfo keywordData;
+  private KeywordData keywordData;
 
   public static final String SERIALIZED_NAME_FIRST_DOMAIN_SERP_ELEMENT = "first_domain_serp_element";
   @SerializedName(SERIALIZED_NAME_FIRST_DOMAIN_SERP_ELEMENT)
@@ -92,7 +92,7 @@ public class DataforseoLabsBingDomainIntersectionLiveItem {
   }
 
 
-  public DataforseoLabsBingDomainIntersectionLiveItem keywordData(KeywordDataKeywordDataInfo keywordData) {
+  public DataforseoLabsBingDomainIntersectionLiveItem keywordData(KeywordData keywordData) {
     this.keywordData = keywordData;
     return this;
   }
@@ -102,11 +102,11 @@ public class DataforseoLabsBingDomainIntersectionLiveItem {
    * @return keywordData
   **/
   @javax.annotation.Nullable
-  public KeywordDataKeywordDataInfo getKeywordData() {
+  public KeywordData getKeywordData() {
     return keywordData;
   }
 
-  public void setKeywordData(KeywordDataKeywordDataInfo keywordData) {
+  public void setKeywordData(KeywordData keywordData) {
     this.keywordData = keywordData;
   }
 
@@ -246,7 +246,7 @@ public class DataforseoLabsBingDomainIntersectionLiveItem {
       }
       // validate the optional field `keyword_data`
       if (jsonObj.get("keyword_data") != null && !jsonObj.get("keyword_data").isJsonNull()) {
-        KeywordDataKeywordDataInfo.validateJsonElement(jsonObj.get("keyword_data"));
+        KeywordData.validateJsonElement(jsonObj.get("keyword_data"));
       }
       // validate the optional field `first_domain_serp_element`
       if (jsonObj.get("first_domain_serp_element") != null && !jsonObj.get("first_domain_serp_element").isJsonNull()) {

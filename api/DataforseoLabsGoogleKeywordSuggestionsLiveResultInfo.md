@@ -16,7 +16,7 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**offset** | **Integer** | current offset value |  [optional] |
 |**offsetToken** | **String** | offset token for subsequent requests you can use the string provided in this field to get the subsequent results of the initial task; note: offset_token values are unique for each subsequent task |  [optional] |
-|**items** | [**List&lt;KeywordDataKeywordDataInfo&gt;**](KeywordDataKeywordDataInfo.md) | contains keywords and related data |  [optional] |
+|**items** | [**List&lt;KeywordDataInfo&gt;**](KeywordDataInfo.md) | contains keywords and related data |  [optional] |
 
 
 

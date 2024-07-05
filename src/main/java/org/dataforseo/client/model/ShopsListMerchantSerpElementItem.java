@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.dataforseo.client.model.BaseMerchantSerpElementItem;
 import org.dataforseo.client.model.RatingElement;
@@ -52,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * ShopsListMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -88,19 +89,19 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_BASE_PRICE = "base_price";
   @SerializedName(SERIALIZED_NAME_BASE_PRICE)
-  private Integer basePrice;
+  private BigDecimal basePrice;
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
-  private Integer tax;
+  private BigDecimal tax;
 
   public static final String SERIALIZED_NAME_SHIPPING_PRICE = "shipping_price";
   @SerializedName(SERIALIZED_NAME_SHIPPING_PRICE)
-  private Integer shippingPrice;
+  private BigDecimal shippingPrice;
 
   public static final String SERIALIZED_NAME_TOTAL_PRICE = "total_price";
   @SerializedName(SERIALIZED_NAME_TOTAL_PRICE)
-  private Long totalPrice;
+  private BigDecimal totalPrice;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -282,7 +283,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem basePrice(Integer basePrice) {
+  public ShopsListMerchantSerpElementItem basePrice(BigDecimal basePrice) {
     this.basePrice = basePrice;
     return this;
   }
@@ -292,16 +293,16 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return basePrice
   **/
   @javax.annotation.Nullable
-  public Integer getBasePrice() {
+  public BigDecimal getBasePrice() {
     return basePrice;
   }
 
-  public void setBasePrice(Integer basePrice) {
+  public void setBasePrice(BigDecimal basePrice) {
     this.basePrice = basePrice;
   }
 
 
-  public ShopsListMerchantSerpElementItem tax(Integer tax) {
+  public ShopsListMerchantSerpElementItem tax(BigDecimal tax) {
     this.tax = tax;
     return this;
   }
@@ -311,16 +312,16 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return tax
   **/
   @javax.annotation.Nullable
-  public Integer getTax() {
+  public BigDecimal getTax() {
     return tax;
   }
 
-  public void setTax(Integer tax) {
+  public void setTax(BigDecimal tax) {
     this.tax = tax;
   }
 
 
-  public ShopsListMerchantSerpElementItem shippingPrice(Integer shippingPrice) {
+  public ShopsListMerchantSerpElementItem shippingPrice(BigDecimal shippingPrice) {
     this.shippingPrice = shippingPrice;
     return this;
   }
@@ -330,16 +331,16 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return shippingPrice
   **/
   @javax.annotation.Nullable
-  public Integer getShippingPrice() {
+  public BigDecimal getShippingPrice() {
     return shippingPrice;
   }
 
-  public void setShippingPrice(Integer shippingPrice) {
+  public void setShippingPrice(BigDecimal shippingPrice) {
     this.shippingPrice = shippingPrice;
   }
 
 
-  public ShopsListMerchantSerpElementItem totalPrice(Long totalPrice) {
+  public ShopsListMerchantSerpElementItem totalPrice(BigDecimal totalPrice) {
     this.totalPrice = totalPrice;
     return this;
   }
@@ -349,11 +350,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return totalPrice
   **/
   @javax.annotation.Nullable
-  public Long getTotalPrice() {
+  public BigDecimal getTotalPrice() {
     return totalPrice;
   }
 
-  public void setTotalPrice(Long totalPrice) {
+  public void setTotalPrice(BigDecimal totalPrice) {
     this.totalPrice = totalPrice;
   }
 

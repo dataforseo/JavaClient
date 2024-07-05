@@ -24,7 +24,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
-import org.dataforseo.client.model.PeopleAlsoAskElement;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * KnowledgeGraphDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class KnowledgeGraphDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -110,7 +109,7 @@ public class KnowledgeGraphDataforseoLabsSerpElementItem extends BaseDataforseoL
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<PeopleAlsoAskElement> items;
+  private List<BaseDataforseoLabsSerpElementItem> items;
 
   public KnowledgeGraphDataforseoLabsSerpElementItem() {
     this.type = this.getClass().getSimpleName();
@@ -141,7 +140,7 @@ public class KnowledgeGraphDataforseoLabsSerpElementItem extends BaseDataforseoL
   }
 
    /**
-   * group rank in SERP position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group
+   * position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group
    * @return rankGroup
   **/
   @javax.annotation.Nullable
@@ -293,7 +292,7 @@ public class KnowledgeGraphDataforseoLabsSerpElementItem extends BaseDataforseoL
   }
 
    /**
-   * relevant URL in SERP
+   * relevant URL of the Ad element in SERP
    * @return url
   **/
   @javax.annotation.Nullable
@@ -363,12 +362,12 @@ public class KnowledgeGraphDataforseoLabsSerpElementItem extends BaseDataforseoL
   }
 
 
-  public KnowledgeGraphDataforseoLabsSerpElementItem items(List<PeopleAlsoAskElement> items) {
+  public KnowledgeGraphDataforseoLabsSerpElementItem items(List<BaseDataforseoLabsSerpElementItem> items) {
     this.items = items;
     return this;
   }
 
-  public KnowledgeGraphDataforseoLabsSerpElementItem addItemsItem(PeopleAlsoAskElement itemsItem) {
+  public KnowledgeGraphDataforseoLabsSerpElementItem addItemsItem(BaseDataforseoLabsSerpElementItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -381,11 +380,11 @@ public class KnowledgeGraphDataforseoLabsSerpElementItem extends BaseDataforseoL
    * @return items
   **/
   @javax.annotation.Nullable
-  public List<PeopleAlsoAskElement> getItems() {
+  public List<BaseDataforseoLabsSerpElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<PeopleAlsoAskElement> items) {
+  public void setItems(List<BaseDataforseoLabsSerpElementItem> items) {
     this.items = items;
   }
 

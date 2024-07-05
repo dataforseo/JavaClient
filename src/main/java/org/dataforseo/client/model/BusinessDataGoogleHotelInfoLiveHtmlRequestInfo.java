@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelInfoLiveHtmlRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class BusinessDataGoogleHotelInfoLiveHtmlRequestInfo {
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)

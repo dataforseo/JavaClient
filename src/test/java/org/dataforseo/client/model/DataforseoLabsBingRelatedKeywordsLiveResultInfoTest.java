@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.DataforseoLabsBingRelatedKeywordsLiveItem;
-import org.dataforseo.client.model.KeywordDataKeywordDataInfo;
+import org.dataforseo.client.model.KeywordData;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

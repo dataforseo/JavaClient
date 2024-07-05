@@ -24,7 +24,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.AppsInfo;
 import org.dataforseo.client.model.BaseAppDataSerpElementItem;
-import org.dataforseo.client.model.PriceInfo;
+import org.dataforseo.client.model.Price;
 import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;

@@ -41,6 +41,7 @@ import org.dataforseo.client.model.BusinessDataGoogleHotelSearchesTasksReadyResp
 import org.dataforseo.client.model.BusinessDataGoogleLanguagesResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleLocationsCountryResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleLocationsResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoLiveResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo;
@@ -378,6 +379,18 @@ public class BusinessDataApiTest {
     @Test
     public void googleHotelSearchesTasksReadyTest() throws ApiException {
         BusinessDataGoogleHotelSearchesTasksReadyResponseInfo response = api.googleHotelSearchesTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleMyBusinessInfoLiveTest() throws ApiException {
+        List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo = null;
+        BusinessDataGoogleMyBusinessInfoLiveResponseInfo response = api.googleMyBusinessInfoLive(businessDataTaskRequestInfo);
         // TODO: test validations
     }
 

@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.ContentItemInfo;
+import org.dataforseo.client.model.TableContent;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -53,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * TopicInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-06T20:38:17.939082300+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class TopicInfo {
   public static final String SERIALIZED_NAME_H_TITLE = "h_title";
   @SerializedName(SERIALIZED_NAME_H_TITLE)
@@ -73,7 +74,7 @@ public class TopicInfo {
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
   @SerializedName(SERIALIZED_NAME_LEVEL)
-  private String level;
+  private Integer level;
 
   public static final String SERIALIZED_NAME_PRIMARY_CONTENT = "primary_content";
   @SerializedName(SERIALIZED_NAME_PRIMARY_CONTENT)
@@ -82,6 +83,10 @@ public class TopicInfo {
   public static final String SERIALIZED_NAME_SECONDARY_CONTENT = "secondary_content";
   @SerializedName(SERIALIZED_NAME_SECONDARY_CONTENT)
   private List<ContentItemInfo> secondaryContent;
+
+  public static final String SERIALIZED_NAME_TABLE_CONTENT = "table_content";
+  @SerializedName(SERIALIZED_NAME_TABLE_CONTENT)
+  private List<TableContent> tableContent;
 
   public TopicInfo() {
   }
@@ -162,7 +167,7 @@ public class TopicInfo {
   }
 
 
-  public TopicInfo level(String level) {
+  public TopicInfo level(Integer level) {
     this.level = level;
     return this;
   }
@@ -172,11 +177,11 @@ public class TopicInfo {
    * @return level
   **/
   @javax.annotation.Nullable
-  public String getLevel() {
+  public Integer getLevel() {
     return level;
   }
 
-  public void setLevel(String level) {
+  public void setLevel(Integer level) {
     this.level = level;
   }
 
@@ -235,6 +240,33 @@ public class TopicInfo {
   }
 
 
+  public TopicInfo tableContent(List<TableContent> tableContent) {
+    this.tableContent = tableContent;
+    return this;
+  }
+
+  public TopicInfo addTableContentItem(TableContent tableContentItem) {
+    if (this.tableContent == null) {
+      this.tableContent = new ArrayList<>();
+    }
+    this.tableContent.add(tableContentItem);
+    return this;
+  }
+
+   /**
+   * content of the table on the page
+   * @return tableContent
+  **/
+  @javax.annotation.Nullable
+  public List<TableContent> getTableContent() {
+    return tableContent;
+  }
+
+  public void setTableContent(List<TableContent> tableContent) {
+    this.tableContent = tableContent;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -251,7 +283,8 @@ public class TopicInfo {
         Objects.equals(this.language, topicInfo.language) &&
         Objects.equals(this.level, topicInfo.level) &&
         Objects.equals(this.primaryContent, topicInfo.primaryContent) &&
-        Objects.equals(this.secondaryContent, topicInfo.secondaryContent);
+        Objects.equals(this.secondaryContent, topicInfo.secondaryContent) &&
+        Objects.equals(this.tableContent, topicInfo.tableContent);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -260,7 +293,7 @@ public class TopicInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hTitle, mainTitle, author, language, level, primaryContent, secondaryContent);
+    return Objects.hash(hTitle, mainTitle, author, language, level, primaryContent, secondaryContent, tableContent);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -281,6 +314,7 @@ public class TopicInfo {
     sb.append("    level: ").append(toIndentedString(level)).append("\n");
     sb.append("    primaryContent: ").append(toIndentedString(primaryContent)).append("\n");
     sb.append("    secondaryContent: ").append(toIndentedString(secondaryContent)).append("\n");
+    sb.append("    tableContent: ").append(toIndentedString(tableContent)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -310,6 +344,7 @@ public class TopicInfo {
     openapiFields.add("level");
     openapiFields.add("primary_content");
     openapiFields.add("secondary_content");
+    openapiFields.add("table_content");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -348,9 +383,6 @@ public class TopicInfo {
       if ((jsonObj.get("language") != null && !jsonObj.get("language").isJsonNull()) && !jsonObj.get("language").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language").toString()));
       }
-      if ((jsonObj.get("level") != null && !jsonObj.get("level").isJsonNull()) && !jsonObj.get("level").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `level` to be a primitive type in the JSON string but got `%s`", jsonObj.get("level").toString()));
-      }
       if (jsonObj.get("primary_content") != null && !jsonObj.get("primary_content").isJsonNull()) {
         JsonArray jsonArrayprimaryContent = jsonObj.getAsJsonArray("primary_content");
         if (jsonArrayprimaryContent != null) {
@@ -376,6 +408,20 @@ public class TopicInfo {
           // validate the optional field `secondary_content` (array)
           for (int i = 0; i < jsonArraysecondaryContent.size(); i++) {
             ContentItemInfo.validateJsonElement(jsonArraysecondaryContent.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("table_content") != null && !jsonObj.get("table_content").isJsonNull()) {
+        JsonArray jsonArraytableContent = jsonObj.getAsJsonArray("table_content");
+        if (jsonArraytableContent != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("table_content").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `table_content` to be an array in the JSON string but got `%s`", jsonObj.get("table_content").toString()));
+          }
+
+          // validate the optional field `table_content` (array)
+          for (int i = 0; i < jsonArraytableContent.size(); i++) {
+            TableContent.validateJsonElement(jsonArraytableContent.get(i));
           };
         }
       }

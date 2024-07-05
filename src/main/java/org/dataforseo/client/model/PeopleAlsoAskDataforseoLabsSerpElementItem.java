@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * PeopleAlsoAskDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class PeopleAlsoAskDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -109,7 +109,7 @@ public class PeopleAlsoAskDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
    /**
-   * group rank in SERP position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group
+   * position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group
    * @return rankGroup
   **/
   @javax.annotation.Nullable

@@ -54,6 +54,7 @@ import org.dataforseo.client.model.BusinessDataGoogleHotelSearchesTasksReadyResp
 import org.dataforseo.client.model.BusinessDataGoogleLanguagesResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleLocationsCountryResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleLocationsResponseInfo;
+import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoLiveResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo;
 import org.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo;
@@ -2948,6 +2949,124 @@ public class BusinessDataApi {
 
         okhttp3.Call localVarCall = googleHotelSearchesTasksReadyValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<BusinessDataGoogleHotelSearchesTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleMyBusinessInfoLive
+     * @param businessDataTaskRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleMyBusinessInfoLiveCall(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = businessDataTaskRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/my_business_info/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleMyBusinessInfoLiveValidateBeforeCall(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleMyBusinessInfoLiveCall(businessDataTaskRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
+     * @param businessDataTaskRequestInfo  (optional)
+     * @return BusinessDataGoogleMyBusinessInfoLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleMyBusinessInfoLiveResponseInfo googleMyBusinessInfoLive(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo) throws ApiException {
+        ApiResponse<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> localVarResp = googleMyBusinessInfoLiveWithHttpInfo(businessDataTaskRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
+     * @param businessDataTaskRequestInfo  (optional)
+     * @return ApiResponse&lt;BusinessDataGoogleMyBusinessInfoLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> googleMyBusinessInfoLiveWithHttpInfo(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleMyBusinessInfoLiveValidateBeforeCall(businessDataTaskRequestInfo, null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleMyBusinessInfoLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
+     * @param businessDataTaskRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleMyBusinessInfoLiveAsync(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleMyBusinessInfoLiveValidateBeforeCall(businessDataTaskRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleMyBusinessInfoLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

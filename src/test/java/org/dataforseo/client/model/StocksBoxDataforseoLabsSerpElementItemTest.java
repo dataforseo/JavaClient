@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import org.dataforseo.client.model.Graph;
-import org.dataforseo.client.model.PriceInfo;
+import org.dataforseo.client.model.Price;
 import org.dataforseo.client.model.Table;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;

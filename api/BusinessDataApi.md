@@ -28,6 +28,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleHotelSearchesTaskGet**](BusinessDataApi.md#googleHotelSearchesTaskGet) | **GET** /v3/business_data/google/hotel_searches/task_get/{id} |  |
 | [**googleHotelSearchesTaskPost**](BusinessDataApi.md#googleHotelSearchesTaskPost) | **POST** /v3/business_data/google/hotel_searches/task_post |  |
 | [**googleHotelSearchesTasksReady**](BusinessDataApi.md#googleHotelSearchesTasksReady) | **GET** /v3/business_data/google/hotel_searches/tasks_ready |  |
+| [**googleMyBusinessInfoLive**](BusinessDataApi.md#googleMyBusinessInfoLive) | **POST** /v3/business_data/google/my_business_info/live |  |
 | [**googleMyBusinessInfoTaskGet**](BusinessDataApi.md#googleMyBusinessInfoTaskGet) | **GET** /v3/business_data/google/my_business_info/task_get/{id} |  |
 | [**googleMyBusinessInfoTaskPost**](BusinessDataApi.md#googleMyBusinessInfoTaskPost) | **POST** /v3/business_data/google/my_business_info/task_post |  |
 | [**googleMyBusinessInfoTasksReady**](BusinessDataApi.md#googleMyBusinessInfoTasksReady) | **GET** /v3/business_data/google/my_business_info/tasks_ready |  |
@@ -1211,7 +1212,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = "14f1967c-9503-427a-afca-c94ac7cd6519"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "06c5d218-03de-43b7-a343-4b362773112f"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo result = apiInstance.googleHotelInfoTaskGetHtml(id);
       System.out.println(result);
@@ -1643,6 +1644,74 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleMyBusinessInfoLive"></a>
+# **googleMyBusinessInfoLive**
+> BusinessDataGoogleMyBusinessInfoLiveResponseInfo googleMyBusinessInfoLive(businessDataTaskRequestInfo)
+
+
+
+‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo = Arrays.asList(); // List<BusinessDataTaskRequestInfo> | 
+    try {
+      BusinessDataGoogleMyBusinessInfoLiveResponseInfo result = apiInstance.googleMyBusinessInfoLive(businessDataTaskRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleMyBusinessInfoLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **businessDataTaskRequestInfo** | [**List&lt;BusinessDataTaskRequestInfo&gt;**](BusinessDataTaskRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**BusinessDataGoogleMyBusinessInfoLiveResponseInfo**](BusinessDataGoogleMyBusinessInfoLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

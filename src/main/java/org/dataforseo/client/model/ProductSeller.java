@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.DeliveryInfo;
-import org.dataforseo.client.model.PriceInfo;
+import org.dataforseo.client.model.Price;
 import org.dataforseo.client.model.RatingElement;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * ProductSeller
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class ProductSeller {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -77,7 +77,7 @@ public class ProductSeller {
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private PriceInfo price;
+  private Price price;
 
   public static final String SERIALIZED_NAME_DELIVERY_INFO = "delivery_info";
   @SerializedName(SERIALIZED_NAME_DELIVERY_INFO)
@@ -181,7 +181,7 @@ public class ProductSeller {
   }
 
 
-  public ProductSeller price(PriceInfo price) {
+  public ProductSeller price(Price price) {
     this.price = price;
     return this;
   }
@@ -191,11 +191,11 @@ public class ProductSeller {
    * @return price
   **/
   @javax.annotation.Nullable
-  public PriceInfo getPrice() {
+  public Price getPrice() {
     return price;
   }
 
-  public void setPrice(PriceInfo price) {
+  public void setPrice(Price price) {
     this.price = price;
   }
 
@@ -335,7 +335,7 @@ public class ProductSeller {
       }
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
-        PriceInfo.validateJsonElement(jsonObj.get("price"));
+        Price.validateJsonElement(jsonObj.get("price"));
       }
       // validate the optional field `delivery_info`
       if (jsonObj.get("delivery_info") != null && !jsonObj.get("delivery_info").isJsonNull()) {

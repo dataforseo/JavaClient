@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.BaseAppDataSerpElementItem;
-import org.dataforseo.client.model.PriceInfo;
+import org.dataforseo.client.model.Price;
 import org.dataforseo.client.model.RatingInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppDataGooglePlaySearchOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -97,7 +97,7 @@ public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSe
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private PriceInfo price;
+  private Price price;
 
   public static final String SERIALIZED_NAME_DEVELOPER = "developer";
   @SerializedName(SERIALIZED_NAME_DEVELOPER)
@@ -301,7 +301,7 @@ public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSe
   }
 
 
-  public AppDataGooglePlaySearchOrganicSerpElementItem price(PriceInfo price) {
+  public AppDataGooglePlaySearchOrganicSerpElementItem price(Price price) {
     this.price = price;
     return this;
   }
@@ -311,11 +311,11 @@ public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSe
    * @return price
   **/
   @javax.annotation.Nullable
-  public PriceInfo getPrice() {
+  public Price getPrice() {
     return price;
   }
 
-  public void setPrice(PriceInfo price) {
+  public void setPrice(Price price) {
     this.price = price;
   }
 

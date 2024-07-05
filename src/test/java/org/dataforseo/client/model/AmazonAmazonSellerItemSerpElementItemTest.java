@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AmazonDeliveryInfo;
 import org.dataforseo.client.model.BaseAmazonSerpElementItem;
-import org.dataforseo.client.model.PriceInfo;
+import org.dataforseo.client.model.Price;
 import org.dataforseo.client.model.RatingElement;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;

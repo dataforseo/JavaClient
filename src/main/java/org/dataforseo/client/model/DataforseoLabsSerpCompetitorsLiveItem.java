@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -54,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsSerpCompetitorsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-02T09:14:36.455142500+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class DataforseoLabsSerpCompetitorsLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -94,7 +93,7 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORDS_POSITIONS = "keywords_positions";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_POSITIONS)
-  private Map<String, List<BigDecimal>> keywordsPositions = new HashMap<>();
+  private Map<String, List<Integer>> keywordsPositions;
 
   public DataforseoLabsSerpCompetitorsLiveItem() {
   }
@@ -270,12 +269,12 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
   }
 
 
-  public DataforseoLabsSerpCompetitorsLiveItem keywordsPositions(Map<String, List<BigDecimal>> keywordsPositions) {
+  public DataforseoLabsSerpCompetitorsLiveItem keywordsPositions(Map<String, List<Integer>> keywordsPositions) {
     this.keywordsPositions = keywordsPositions;
     return this;
   }
 
-  public DataforseoLabsSerpCompetitorsLiveItem putKeywordsPositionsItem(String key, List<BigDecimal> keywordsPositionsItem) {
+  public DataforseoLabsSerpCompetitorsLiveItem putKeywordsPositionsItem(String key, List<Integer> keywordsPositionsItem) {
     if (this.keywordsPositions == null) {
       this.keywordsPositions = new HashMap<>();
     }
@@ -284,15 +283,15 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
   }
 
    /**
-   * Get keywordsPositions
+   * keyword positions SERP positions the related domain holds in SERP for the specified keywords
    * @return keywordsPositions
   **/
   @javax.annotation.Nullable
-  public Map<String, List<BigDecimal>> getKeywordsPositions() {
+  public Map<String, List<Integer>> getKeywordsPositions() {
     return keywordsPositions;
   }
 
-  public void setKeywordsPositions(Map<String, List<BigDecimal>> keywordsPositions) {
+  public void setKeywordsPositions(Map<String, List<Integer>> keywordsPositions) {
     this.keywordsPositions = keywordsPositions;
   }
 

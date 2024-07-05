@@ -22,10 +22,8 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AvgBacklinksInfo;
-import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
 import org.dataforseo.client.model.KeywordProperties;
-import org.dataforseo.client.model.SearchIntentInfo;
 import org.dataforseo.client.model.SerpInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -56,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-04T16:50:38.263120800+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
 public class KeywordData {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -82,10 +80,6 @@ public class KeywordData {
   @SerializedName(SERIALIZED_NAME_KEYWORD_PROPERTIES)
   private KeywordProperties keywordProperties;
 
-  public static final String SERIALIZED_NAME_IMPRESSIONS_INFO = "impressions_info";
-  @SerializedName(SERIALIZED_NAME_IMPRESSIONS_INFO)
-  private ImpressionsInfo impressionsInfo;
-
   public static final String SERIALIZED_NAME_SERP_INFO = "serp_info";
   @SerializedName(SERIALIZED_NAME_SERP_INFO)
   private SerpInfo serpInfo;
@@ -93,10 +87,6 @@ public class KeywordData {
   public static final String SERIALIZED_NAME_AVG_BACKLINKS_INFO = "avg_backlinks_info";
   @SerializedName(SERIALIZED_NAME_AVG_BACKLINKS_INFO)
   private AvgBacklinksInfo avgBacklinksInfo;
-
-  public static final String SERIALIZED_NAME_SEARCH_INTENT_INFO = "search_intent_info";
-  @SerializedName(SERIALIZED_NAME_SEARCH_INTENT_INFO)
-  private SearchIntentInfo searchIntentInfo;
 
   public KeywordData() {
   }
@@ -107,7 +97,7 @@ public class KeywordData {
   }
 
    /**
-   * search engine type
+   * search engine type search engine type specified in a POST request; for this endpoint, the field equals bing
    * @return seType
   **/
   @javax.annotation.Nullable
@@ -215,25 +205,6 @@ public class KeywordData {
   }
 
 
-  public KeywordData impressionsInfo(ImpressionsInfo impressionsInfo) {
-    this.impressionsInfo = impressionsInfo;
-    return this;
-  }
-
-   /**
-   * Get impressionsInfo
-   * @return impressionsInfo
-  **/
-  @javax.annotation.Nullable
-  public ImpressionsInfo getImpressionsInfo() {
-    return impressionsInfo;
-  }
-
-  public void setImpressionsInfo(ImpressionsInfo impressionsInfo) {
-    this.impressionsInfo = impressionsInfo;
-  }
-
-
   public KeywordData serpInfo(SerpInfo serpInfo) {
     this.serpInfo = serpInfo;
     return this;
@@ -272,25 +243,6 @@ public class KeywordData {
   }
 
 
-  public KeywordData searchIntentInfo(SearchIntentInfo searchIntentInfo) {
-    this.searchIntentInfo = searchIntentInfo;
-    return this;
-  }
-
-   /**
-   * Get searchIntentInfo
-   * @return searchIntentInfo
-  **/
-  @javax.annotation.Nullable
-  public SearchIntentInfo getSearchIntentInfo() {
-    return searchIntentInfo;
-  }
-
-  public void setSearchIntentInfo(SearchIntentInfo searchIntentInfo) {
-    this.searchIntentInfo = searchIntentInfo;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -307,10 +259,8 @@ public class KeywordData {
         Objects.equals(this.languageCode, keywordData.languageCode) &&
         Objects.equals(this.keywordInfo, keywordData.keywordInfo) &&
         Objects.equals(this.keywordProperties, keywordData.keywordProperties) &&
-        Objects.equals(this.impressionsInfo, keywordData.impressionsInfo) &&
         Objects.equals(this.serpInfo, keywordData.serpInfo) &&
-        Objects.equals(this.avgBacklinksInfo, keywordData.avgBacklinksInfo) &&
-        Objects.equals(this.searchIntentInfo, keywordData.searchIntentInfo);
+        Objects.equals(this.avgBacklinksInfo, keywordData.avgBacklinksInfo);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -319,7 +269,7 @@ public class KeywordData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, keyword, locationCode, languageCode, keywordInfo, keywordProperties, impressionsInfo, serpInfo, avgBacklinksInfo, searchIntentInfo);
+    return Objects.hash(seType, keyword, locationCode, languageCode, keywordInfo, keywordProperties, serpInfo, avgBacklinksInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -339,10 +289,8 @@ public class KeywordData {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    keywordInfo: ").append(toIndentedString(keywordInfo)).append("\n");
     sb.append("    keywordProperties: ").append(toIndentedString(keywordProperties)).append("\n");
-    sb.append("    impressionsInfo: ").append(toIndentedString(impressionsInfo)).append("\n");
     sb.append("    serpInfo: ").append(toIndentedString(serpInfo)).append("\n");
     sb.append("    avgBacklinksInfo: ").append(toIndentedString(avgBacklinksInfo)).append("\n");
-    sb.append("    searchIntentInfo: ").append(toIndentedString(searchIntentInfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -371,10 +319,8 @@ public class KeywordData {
     openapiFields.add("language_code");
     openapiFields.add("keyword_info");
     openapiFields.add("keyword_properties");
-    openapiFields.add("impressions_info");
     openapiFields.add("serp_info");
     openapiFields.add("avg_backlinks_info");
-    openapiFields.add("search_intent_info");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -418,10 +364,6 @@ public class KeywordData {
       if (jsonObj.get("keyword_properties") != null && !jsonObj.get("keyword_properties").isJsonNull()) {
         KeywordProperties.validateJsonElement(jsonObj.get("keyword_properties"));
       }
-      // validate the optional field `impressions_info`
-      if (jsonObj.get("impressions_info") != null && !jsonObj.get("impressions_info").isJsonNull()) {
-        ImpressionsInfo.validateJsonElement(jsonObj.get("impressions_info"));
-      }
       // validate the optional field `serp_info`
       if (jsonObj.get("serp_info") != null && !jsonObj.get("serp_info").isJsonNull()) {
         SerpInfo.validateJsonElement(jsonObj.get("serp_info"));
@@ -429,10 +371,6 @@ public class KeywordData {
       // validate the optional field `avg_backlinks_info`
       if (jsonObj.get("avg_backlinks_info") != null && !jsonObj.get("avg_backlinks_info").isJsonNull()) {
         AvgBacklinksInfo.validateJsonElement(jsonObj.get("avg_backlinks_info"));
-      }
-      // validate the optional field `search_intent_info`
-      if (jsonObj.get("search_intent_info") != null && !jsonObj.get("search_intent_info").isJsonNull()) {
-        SearchIntentInfo.validateJsonElement(jsonObj.get("search_intent_info"));
       }
   }
 
