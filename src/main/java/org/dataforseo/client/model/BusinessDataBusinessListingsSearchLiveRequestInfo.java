@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class BusinessDataBusinessListingsSearchLiveRequestInfo {
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
@@ -191,7 +191,7 @@ public class BusinessDataBusinessListingsSearchLiveRequestInfo {
   }
 
    /**
-   * GPS coordinates of a location optional field location_coordinate parameter should be specified in the “latitude,longitude,radius” format the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “radius”: 1 the maximum value for “radius”: 100000 example: 53.476225,-2.243572,200
+   * GPS coordinates of a location optional field location_coordinate parameter should be specified in the “latitude,longitude,radius” format the maximum number of decimal digits for “latitude” and “longitude”: 7 the value of “radius” is specified in kilometres (km) the minimum value for “radius”: 1 the maximum value for “radius”: 100000 example: 53.476225,-2.243572,200
    * @return locationCoordinate
   **/
   @javax.annotation.Nullable

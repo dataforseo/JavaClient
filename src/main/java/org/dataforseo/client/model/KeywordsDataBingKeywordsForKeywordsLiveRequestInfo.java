@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordsDataBingKeywordsForKeywordsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class KeywordsDataBingKeywordsForKeywordsLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -302,7 +302,7 @@ public class KeywordsDataBingKeywordsForKeywordsLiveRequestInfo {
   }
 
    /**
-   * starting date of the time range optional field you can specify a date from the past 24 months if you don’t specify this field, data will be provided for the last 12 months date format: \&quot;yyyy-mm-dd\&quot; example: \&quot;2020-01-01\&quot;
+   * starting date of the time range optional field you can specify a date from the past 24 months if you don’t specify this field, data will be provided for the last 12 months date format: \&quot;yyyy-mm-dd\&quot; example: \&quot;2020-01-01\&quot; Note: we do not recommend using a custom time range for the past year’s dates
    * @return dateFrom
   **/
   @javax.annotation.Nullable
@@ -321,7 +321,7 @@ public class KeywordsDataBingKeywordsForKeywordsLiveRequestInfo {
   }
 
    /**
-   * ending date of the time range optional field if you don’t specify this field, data will be provided for the last 12 months; minimum value: two years back from today’s date; maximum value: one month from today’s date; note: we do not recommend using a custom time range for the past year’s dates; date format: \&quot;yyyy-mm-dd\&quot; example: \&quot;2020-03-15\&quot;
+   * ending date of the time range optional field if you don’t specify this field, data will be provided for the last 12 months; minimum value: two years back from today’s date; maximum value: one month from today’s date; date format: \&quot;yyyy-mm-dd\&quot; example: \&quot;2020-03-15\&quot; Note: we do not recommend using a custom time range for the past year’s dates
    * @return dateTo
   **/
   @javax.annotation.Nullable

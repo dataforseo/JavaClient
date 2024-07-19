@@ -145,6 +145,14 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'translateReviews'
+     */
+    @Test
+    public void translateReviewsTest() {
+        // TODO: test translateReviews
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

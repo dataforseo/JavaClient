@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksCompetitorsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class BacklinksCompetitorsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -81,6 +81,10 @@ public class BacklinksCompetitorsLiveRequestInfo {
   public static final String SERIALIZED_NAME_EXCLUDE_LARGE_DOMAINS = "exclude_large_domains";
   @SerializedName(SERIALIZED_NAME_EXCLUDE_LARGE_DOMAINS)
   private Boolean excludeLargeDomains;
+
+  public static final String SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS = "exclude_internal_backlinks";
+  @SerializedName(SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS)
+  private Boolean excludeInternalBacklinks;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -238,6 +242,25 @@ public class BacklinksCompetitorsLiveRequestInfo {
   }
 
 
+  public BacklinksCompetitorsLiveRequestInfo excludeInternalBacklinks(Boolean excludeInternalBacklinks) {
+    this.excludeInternalBacklinks = excludeInternalBacklinks;
+    return this;
+  }
+
+   /**
+   * indicates if internal backlinks from subdomains to the target will be excluded from the results optional field if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target if set to false, internal links will be included in the results default value: true
+   * @return excludeInternalBacklinks
+  **/
+  @javax.annotation.Nullable
+  public Boolean getExcludeInternalBacklinks() {
+    return excludeInternalBacklinks;
+  }
+
+  public void setExcludeInternalBacklinks(Boolean excludeInternalBacklinks) {
+    this.excludeInternalBacklinks = excludeInternalBacklinks;
+  }
+
+
   public BacklinksCompetitorsLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -274,6 +297,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
         Objects.equals(this.orderBy, backlinksCompetitorsLiveRequestInfo.orderBy) &&
         Objects.equals(this.mainDomain, backlinksCompetitorsLiveRequestInfo.mainDomain) &&
         Objects.equals(this.excludeLargeDomains, backlinksCompetitorsLiveRequestInfo.excludeLargeDomains) &&
+        Objects.equals(this.excludeInternalBacklinks, backlinksCompetitorsLiveRequestInfo.excludeInternalBacklinks) &&
         Objects.equals(this.tag, backlinksCompetitorsLiveRequestInfo.tag);
   }
 
@@ -283,7 +307,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, limit, offset, filters, orderBy, mainDomain, excludeLargeDomains, tag);
+    return Objects.hash(target, limit, offset, filters, orderBy, mainDomain, excludeLargeDomains, excludeInternalBacklinks, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -304,6 +328,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    mainDomain: ").append(toIndentedString(mainDomain)).append("\n");
     sb.append("    excludeLargeDomains: ").append(toIndentedString(excludeLargeDomains)).append("\n");
+    sb.append("    excludeInternalBacklinks: ").append(toIndentedString(excludeInternalBacklinks)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -334,6 +359,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
     openapiFields.add("order_by");
     openapiFields.add("main_domain");
     openapiFields.add("exclude_large_domains");
+    openapiFields.add("exclude_internal_backlinks");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

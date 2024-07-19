@@ -86,6 +86,9 @@ import org.dataforseo.client.model.DataforseoLabsGoogleBulkTrafficEstimationLive
 import org.dataforseo.client.model.DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo;
+import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo;
+import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo;
+import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleDomainIntersectionLiveRequestInfo;
@@ -3001,6 +3004,119 @@ public class DataforseoLabsApi {
         return localVarCall;
     }
     /**
+     * Build call for dataforseoLabsGoogleCategoriesForKeywordsLanguages
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call dataforseoLabsGoogleCategoriesForKeywordsLanguagesCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/dataforseo_labs/google/categories_for_keywords/languages";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call dataforseoLabsGoogleCategoriesForKeywordsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return dataforseoLabsGoogleCategoriesForKeywordsLanguagesCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash&#39;
+     * @return DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo dataforseoLabsGoogleCategoriesForKeywordsLanguages() throws ApiException {
+        ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> localVarResp = dataforseoLabsGoogleCategoriesForKeywordsLanguagesWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash&#39;
+     * @return ApiResponse&lt;DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> dataforseoLabsGoogleCategoriesForKeywordsLanguagesWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = dataforseoLabsGoogleCategoriesForKeywordsLanguagesValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call dataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync(final ApiCallback<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = dataforseoLabsGoogleCategoriesForKeywordsLanguagesValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for dataforseoLabsIdList
      * @param dataforseoLabsIdListRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
@@ -4162,6 +4278,124 @@ public class DataforseoLabsApi {
 
         okhttp3.Call localVarCall = googleCategoriesForDomainLiveValidateBeforeCall(dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleCategoriesForKeywordsLive
+     * @param dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleCategoriesForKeywordsLiveCall(List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/dataforseo_labs/google/categories_for_keywords/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleCategoriesForKeywordsLiveValidateBeforeCall(List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleCategoriesForKeywordsLiveCall(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash&#39;
+     * @param dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  (optional)
+     * @return DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo googleCategoriesForKeywordsLive(List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo) throws ApiException {
+        ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> localVarResp = googleCategoriesForKeywordsLiveWithHttpInfo(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash&#39;
+     * @param dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  (optional)
+     * @return ApiResponse&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> googleCategoriesForKeywordsLiveWithHttpInfo(List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleCategoriesForKeywordsLiveValidateBeforeCall(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo, null);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash&#39;
+     * @param dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleCategoriesForKeywordsLiveAsync(List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo, final ApiCallback<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleCategoriesForKeywordsLiveValidateBeforeCall(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

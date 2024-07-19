@@ -105,7 +105,7 @@ public class BusinessDataApiTest {
     private final BusinessDataApi api = new BusinessDataApi();
 
     /**
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-06-17). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

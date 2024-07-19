@@ -123,6 +123,14 @@ public class BacklinksPageIntersectionLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'excludeInternalBacklinks'
+     */
+    @Test
+    public void excludeInternalBacklinksTest() {
+        // TODO: test excludeInternalBacklinks
+    }
+
+    /**
      * Test the property 'intersectionMode'
      */
     @Test

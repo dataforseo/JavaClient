@@ -35,6 +35,13 @@ import org.dataforseo.client.model.KeywordsDataBingKeywordsForSiteTaskPostRespon
 import org.dataforseo.client.model.KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingLanguagesResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingLocationsResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryLiveRequestInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeLiveRequestInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeLiveResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskGetResponseInfo;
@@ -245,6 +252,53 @@ public class KeywordsDataApiTest {
     @Test
     public void bingKeywordsForSiteTasksReadyTest() throws ApiException {
         KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo response = api.bingKeywordsForSiteTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingSearchVolumeHistoryLiveTest() throws ApiException {
+        List<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> keywordsDataBingSearchVolumeHistoryLiveRequestInfo = null;
+        KeywordsDataBingSearchVolumeHistoryLiveResponseInfo response = api.bingSearchVolumeHistoryLive(keywordsDataBingSearchVolumeHistoryLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingSearchVolumeHistoryTaskGetTest() throws ApiException {
+        String id = null;
+        KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo response = api.bingSearchVolumeHistoryTaskGet(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingSearchVolumeHistoryTaskPostTest() throws ApiException {
+        List<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo = null;
+        KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo response = api.bingSearchVolumeHistoryTaskPost(keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingSearchVolumeHistoryTasksReadyTest() throws ApiException {
+        KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo response = api.bingSearchVolumeHistoryTasksReady();
         // TODO: test validations
     }
 
@@ -630,6 +684,17 @@ public class KeywordsDataApiTest {
     @Test
     public void keywordsDataBingLocationsTest() throws ApiException {
         KeywordsDataBingLocationsResponseInfo response = api.keywordsDataBingLocations();
+        // TODO: test validations
+    }
+
+    /**
+     * By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesTest() throws ApiException {
+        KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo response = api.keywordsDataBingSearchVolumeHistoryLocationsAndLanguages();
         // TODO: test validations
     }
 

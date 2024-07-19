@@ -147,6 +147,14 @@ public class BacklinksBacklinksLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'excludeInternalBacklinks'
+     */
+    @Test
+    public void excludeInternalBacklinksTest() {
+        // TODO: test excludeInternalBacklinks
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

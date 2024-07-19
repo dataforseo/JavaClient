@@ -48,6 +48,13 @@ import org.dataforseo.client.model.KeywordsDataBingKeywordsForSiteTaskPostRespon
 import org.dataforseo.client.model.KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingLanguagesResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingLocationsResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryLiveRequestInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo;
+import org.dataforseo.client.model.KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeLiveRequestInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeLiveResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskGetResponseInfo;
@@ -1561,6 +1568,478 @@ public class KeywordsDataApi {
 
         okhttp3.Call localVarCall = bingKeywordsForSiteTasksReadyValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<KeywordsDataBingKeywordsForSiteTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingSearchVolumeHistoryLive
+     * @param keywordsDataBingSearchVolumeHistoryLiveRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryLiveCall(List<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> keywordsDataBingSearchVolumeHistoryLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = keywordsDataBingSearchVolumeHistoryLiveRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/search_volume_history/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingSearchVolumeHistoryLiveValidateBeforeCall(List<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> keywordsDataBingSearchVolumeHistoryLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return bingSearchVolumeHistoryLiveCall(keywordsDataBingSearchVolumeHistoryLiveRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash&#39;
+     * @param keywordsDataBingSearchVolumeHistoryLiveRequestInfo  (optional)
+     * @return KeywordsDataBingSearchVolumeHistoryLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingSearchVolumeHistoryLiveResponseInfo bingSearchVolumeHistoryLive(List<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> keywordsDataBingSearchVolumeHistoryLiveRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo> localVarResp = bingSearchVolumeHistoryLiveWithHttpInfo(keywordsDataBingSearchVolumeHistoryLiveRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash&#39;
+     * @param keywordsDataBingSearchVolumeHistoryLiveRequestInfo  (optional)
+     * @return ApiResponse&lt;KeywordsDataBingSearchVolumeHistoryLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo> bingSearchVolumeHistoryLiveWithHttpInfo(List<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> keywordsDataBingSearchVolumeHistoryLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryLiveValidateBeforeCall(keywordsDataBingSearchVolumeHistoryLiveRequestInfo, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/live/?bash&#39;
+     * @param keywordsDataBingSearchVolumeHistoryLiveRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryLiveAsync(List<KeywordsDataBingSearchVolumeHistoryLiveRequestInfo> keywordsDataBingSearchVolumeHistoryLiveRequestInfo, final ApiCallback<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryLiveValidateBeforeCall(keywordsDataBingSearchVolumeHistoryLiveRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingSearchVolumeHistoryTaskGet
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/search_volume_history/task_get/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingSearchVolumeHistoryTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling bingSearchVolumeHistoryTaskGet(Async)");
+        }
+
+        return bingSearchVolumeHistoryTaskGetCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo bingSearchVolumeHistoryTaskGet(String id) throws ApiException {
+        ApiResponse<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo> localVarResp = bingSearchVolumeHistoryTaskGetWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo> bingSearchVolumeHistoryTaskGetWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryTaskGetValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryTaskGetAsync(String id, final ApiCallback<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryTaskGetValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingSearchVolumeHistoryTaskPost
+     * @param keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryTaskPostCall(List<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/search_volume_history/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingSearchVolumeHistoryTaskPostValidateBeforeCall(List<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return bingSearchVolumeHistoryTaskPostCall(keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash&#39;
+     * @param keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  (optional)
+     * @return KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo bingSearchVolumeHistoryTaskPost(List<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo> localVarResp = bingSearchVolumeHistoryTaskPostWithHttpInfo(keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash&#39;
+     * @param keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo> bingSearchVolumeHistoryTaskPostWithHttpInfo(List<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryTaskPostValidateBeforeCall(keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ This endpoint will provide you with historical search volume data for up to 1000 keywords in one request. You can get search volume for keywords in monthly, weekly, or daily format and specify the device type. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/task_post/?bash&#39;
+     * @param keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryTaskPostAsync(List<KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo> keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo, final ApiCallback<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryTaskPostValidateBeforeCall(keywordsDataBingSearchVolumeHistoryTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingSearchVolumeHistoryTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/search_volume_history/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingSearchVolumeHistoryTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return bingSearchVolumeHistoryTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash&#39;
+     * @return KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo bingSearchVolumeHistoryTasksReady() throws ApiException {
+        ApiResponse<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo> localVarResp = bingSearchVolumeHistoryTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo> bingSearchVolumeHistoryTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingSearchVolumeHistoryTasksReadyAsync(final ApiCallback<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingSearchVolumeHistoryTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryTasksReadyResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -5430,6 +5909,119 @@ public class KeywordsDataApi {
 
         okhttp3.Call localVarCall = keywordsDataBingLocationsValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<KeywordsDataBingLocationsResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for keywordsDataBingSearchVolumeHistoryLocationsAndLanguages
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/search_volume_history/locations_and_languages";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesCall(_callback);
+
+    }
+
+    /**
+     * 
+     * By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash&#39;
+     * @return KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo keywordsDataBingSearchVolumeHistoryLocationsAndLanguages() throws ApiException {
+        ApiResponse<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> localVarResp = keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash&#39;
+     * @return ApiResponse&lt;KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * By calling this API you will receive the list of locations and languages supported by Bing ‘Search Volume History’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/search_volume_history/locations_and_languages/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.ClickstreamKeywordInfo;
+import org.dataforseo.client.model.AvgBacklinksInfo;
 import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
 import org.dataforseo.client.model.KeywordProperties;
@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalSearchVolumeLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -83,7 +83,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
 
   public static final String SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO = "clickstream_keyword_info";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO)
-  private ClickstreamKeywordInfo clickstreamKeywordInfo;
+  private Object clickstreamKeywordInfo;
 
   public static final String SERIALIZED_NAME_KEYWORD_PROPERTIES = "keyword_properties";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PROPERTIES)
@@ -96,6 +96,10 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
   public static final String SERIALIZED_NAME_SERP_INFO = "serp_info";
   @SerializedName(SERIALIZED_NAME_SERP_INFO)
   private SerpInfo serpInfo;
+
+  public static final String SERIALIZED_NAME_AVG_BACKLINKS_INFO = "avg_backlinks_info";
+  @SerializedName(SERIALIZED_NAME_AVG_BACKLINKS_INFO)
+  private AvgBacklinksInfo avgBacklinksInfo;
 
   public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem() {
   }
@@ -214,21 +218,21 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
   }
 
 
-  public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem clickstreamKeywordInfo(ClickstreamKeywordInfo clickstreamKeywordInfo) {
+  public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem clickstreamKeywordInfo(Object clickstreamKeywordInfo) {
     this.clickstreamKeywordInfo = clickstreamKeywordInfo;
     return this;
   }
 
    /**
-   * Get clickstreamKeywordInfo
+   * clickstream data for the returned keyword to retrieve results for this field, the parameter include_clickstream_data must be set to true
    * @return clickstreamKeywordInfo
   **/
   @javax.annotation.Nullable
-  public ClickstreamKeywordInfo getClickstreamKeywordInfo() {
+  public Object getClickstreamKeywordInfo() {
     return clickstreamKeywordInfo;
   }
 
-  public void setClickstreamKeywordInfo(ClickstreamKeywordInfo clickstreamKeywordInfo) {
+  public void setClickstreamKeywordInfo(Object clickstreamKeywordInfo) {
     this.clickstreamKeywordInfo = clickstreamKeywordInfo;
   }
 
@@ -290,6 +294,25 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
   }
 
 
+  public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem avgBacklinksInfo(AvgBacklinksInfo avgBacklinksInfo) {
+    this.avgBacklinksInfo = avgBacklinksInfo;
+    return this;
+  }
+
+   /**
+   * Get avgBacklinksInfo
+   * @return avgBacklinksInfo
+  **/
+  @javax.annotation.Nullable
+  public AvgBacklinksInfo getAvgBacklinksInfo() {
+    return avgBacklinksInfo;
+  }
+
+  public void setAvgBacklinksInfo(AvgBacklinksInfo avgBacklinksInfo) {
+    this.avgBacklinksInfo = avgBacklinksInfo;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -309,7 +332,8 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
         Objects.equals(this.clickstreamKeywordInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.clickstreamKeywordInfo) &&
         Objects.equals(this.keywordProperties, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.keywordProperties) &&
         Objects.equals(this.impressionsInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.impressionsInfo) &&
-        Objects.equals(this.serpInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.serpInfo);
+        Objects.equals(this.serpInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.serpInfo) &&
+        Objects.equals(this.avgBacklinksInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.avgBacklinksInfo);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -318,7 +342,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, keyword, locationCode, languageCode, searchPartners, keywordInfo, clickstreamKeywordInfo, keywordProperties, impressionsInfo, serpInfo);
+    return Objects.hash(seType, keyword, locationCode, languageCode, searchPartners, keywordInfo, clickstreamKeywordInfo, keywordProperties, impressionsInfo, serpInfo, avgBacklinksInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -342,6 +366,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
     sb.append("    keywordProperties: ").append(toIndentedString(keywordProperties)).append("\n");
     sb.append("    impressionsInfo: ").append(toIndentedString(impressionsInfo)).append("\n");
     sb.append("    serpInfo: ").append(toIndentedString(serpInfo)).append("\n");
+    sb.append("    avgBacklinksInfo: ").append(toIndentedString(avgBacklinksInfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -374,6 +399,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
     openapiFields.add("keyword_properties");
     openapiFields.add("impressions_info");
     openapiFields.add("serp_info");
+    openapiFields.add("avg_backlinks_info");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -413,10 +439,6 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
       if (jsonObj.get("keyword_info") != null && !jsonObj.get("keyword_info").isJsonNull()) {
         KeywordInfo.validateJsonElement(jsonObj.get("keyword_info"));
       }
-      // validate the optional field `clickstream_keyword_info`
-      if (jsonObj.get("clickstream_keyword_info") != null && !jsonObj.get("clickstream_keyword_info").isJsonNull()) {
-        ClickstreamKeywordInfo.validateJsonElement(jsonObj.get("clickstream_keyword_info"));
-      }
       // validate the optional field `keyword_properties`
       if (jsonObj.get("keyword_properties") != null && !jsonObj.get("keyword_properties").isJsonNull()) {
         KeywordProperties.validateJsonElement(jsonObj.get("keyword_properties"));
@@ -428,6 +450,10 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
       // validate the optional field `serp_info`
       if (jsonObj.get("serp_info") != null && !jsonObj.get("serp_info").isJsonNull()) {
         SerpInfo.validateJsonElement(jsonObj.get("serp_info"));
+      }
+      // validate the optional field `avg_backlinks_info`
+      if (jsonObj.get("avg_backlinks_info") != null && !jsonObj.get("avg_backlinks_info").isJsonNull()) {
+        AvgBacklinksInfo.validateJsonElement(jsonObj.get("avg_backlinks_info"));
       }
   }
 

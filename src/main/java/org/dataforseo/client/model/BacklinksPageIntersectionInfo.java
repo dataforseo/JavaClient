@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksPageIntersectionInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class BacklinksPageIntersectionInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -491,7 +491,7 @@ public class BacklinksPageIntersectionInfo {
   }
 
    /**
-   * domain rank of the referring domain domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
+   * domain rank of the referring domain indicates the rank of the domain at the time our crawler last saw the backlink; domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
    * @return domainFromRank
   **/
   @javax.annotation.Nullable

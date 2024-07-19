@@ -28,6 +28,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**bingSubdomainsLive**](DataforseoLabsApi.md#bingSubdomainsLive) | **POST** /v3/dataforseo_labs/bing/subdomains/live |  |
 | [**categories**](DataforseoLabsApi.md#categories) | **GET** /v3/dataforseo_labs/categories |  |
 | [**dataforseoLabsErrors**](DataforseoLabsApi.md#dataforseoLabsErrors) | **POST** /v3/dataforseo_labs/errors |  |
+| [**dataforseoLabsGoogleCategoriesForKeywordsLanguages**](DataforseoLabsApi.md#dataforseoLabsGoogleCategoriesForKeywordsLanguages) | **GET** /v3/dataforseo_labs/google/categories_for_keywords/languages |  |
 | [**dataforseoLabsIdList**](DataforseoLabsApi.md#dataforseoLabsIdList) | **POST** /v3/dataforseo_labs/id_list |  |
 | [**dataforseoLabsLocationsAndLanguages**](DataforseoLabsApi.md#dataforseoLabsLocationsAndLanguages) | **GET** /v3/dataforseo_labs/locations_and_languages |  |
 | [**dataforseoLabsStatus**](DataforseoLabsApi.md#dataforseoLabsStatus) | **GET** /v3/dataforseo_labs/status |  |
@@ -38,6 +39,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleBulkKeywordDifficultyLive**](DataforseoLabsApi.md#googleBulkKeywordDifficultyLive) | **POST** /v3/dataforseo_labs/google/bulk_keyword_difficulty/live |  |
 | [**googleBulkTrafficEstimationLive**](DataforseoLabsApi.md#googleBulkTrafficEstimationLive) | **POST** /v3/dataforseo_labs/google/bulk_traffic_estimation/live |  |
 | [**googleCategoriesForDomainLive**](DataforseoLabsApi.md#googleCategoriesForDomainLive) | **POST** /v3/dataforseo_labs/google/categories_for_domain/live |  |
+| [**googleCategoriesForKeywordsLive**](DataforseoLabsApi.md#googleCategoriesForKeywordsLive) | **POST** /v3/dataforseo_labs/google/categories_for_keywords/live |  |
 | [**googleCompetitorsDomainLive**](DataforseoLabsApi.md#googleCompetitorsDomainLive) | **POST** /v3/dataforseo_labs/google/competitors_domain/live |  |
 | [**googleDomainIntersectionLive**](DataforseoLabsApi.md#googleDomainIntersectionLive) | **POST** /v3/dataforseo_labs/google/domain_intersection/live |  |
 | [**googleDomainMetricsByCategoriesLive**](DataforseoLabsApi.md#googleDomainMetricsByCategoriesLive) | **POST** /v3/dataforseo_labs/google/domain_metrics_by_categories/live |  |
@@ -1686,6 +1688,70 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="dataforseoLabsGoogleCategoriesForKeywordsLanguages"></a>
+# **dataforseoLabsGoogleCategoriesForKeywordsLanguages**
+> DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo dataforseoLabsGoogleCategoriesForKeywordsLanguages()
+
+
+
+‌ Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.DataforseoLabsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
+    try {
+      DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo result = apiInstance.dataforseoLabsGoogleCategoriesForKeywordsLanguages();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling DataforseoLabsApi#dataforseoLabsGoogleCategoriesForKeywordsLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo**](DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="dataforseoLabsIdList"></a>
 # **dataforseoLabsIdList**
 > DataforseoLabsIdListResponseInfo dataforseoLabsIdList(dataforseoLabsIdListRequestInfo)
@@ -2339,6 +2405,74 @@ public class Example {
 ### Return type
 
 [**DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo**](DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleCategoriesForKeywordsLive"></a>
+# **googleCategoriesForKeywordsLive**
+> DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo googleCategoriesForKeywordsLive(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo)
+
+
+
+This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import org.dataforseo.client.ApiClient;
+import org.dataforseo.client.ApiException;
+import org.dataforseo.client.Configuration;
+import org.dataforseo.client.auth.*;
+import org.dataforseo.client.models.*;
+import org.dataforseo.client.api.DataforseoLabsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
+    List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo = Arrays.asList(); // List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> | 
+    try {
+      DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo result = apiInstance.googleCategoriesForKeywordsLive(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling DataforseoLabsApi#googleCategoriesForKeywordsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo** | [**List&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;**](DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo**](DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo.md)
 
 ### Authorization
 

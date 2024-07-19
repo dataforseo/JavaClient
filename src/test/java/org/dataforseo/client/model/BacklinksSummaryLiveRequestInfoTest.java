@@ -65,6 +65,14 @@ public class BacklinksSummaryLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'excludeInternalBacklinks'
+     */
+    @Test
+    public void excludeInternalBacklinksTest() {
+        // TODO: test excludeInternalBacklinks
+    }
+
+    /**
      * Test the property 'internalListLimit'
      */
     @Test

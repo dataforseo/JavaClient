@@ -63,7 +63,7 @@ import org.dataforseo.client.JSON;
 /**
  * GoogleBusinessInfoBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -171,7 +171,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public static final String SERIALIZED_NAME_PLACE_TOPICS = "place_topics";
   @SerializedName(SERIALIZED_NAME_PLACE_TOPICS)
-  private Map<String, String> placeTopics;
+  private Map<String, Long> placeTopics;
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
@@ -727,12 +727,12 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   }
 
 
-  public GoogleBusinessInfoBusinessDataSerpElementItem placeTopics(Map<String, String> placeTopics) {
+  public GoogleBusinessInfoBusinessDataSerpElementItem placeTopics(Map<String, Long> placeTopics) {
     this.placeTopics = placeTopics;
     return this;
   }
 
-  public GoogleBusinessInfoBusinessDataSerpElementItem putPlaceTopicsItem(String key, String placeTopicsItem) {
+  public GoogleBusinessInfoBusinessDataSerpElementItem putPlaceTopicsItem(String key, Long placeTopicsItem) {
     if (this.placeTopics == null) {
       this.placeTopics = new HashMap<>();
     }
@@ -745,11 +745,11 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
    * @return placeTopics
   **/
   @javax.annotation.Nullable
-  public Map<String, String> getPlaceTopics() {
+  public Map<String, Long> getPlaceTopics() {
     return placeTopics;
   }
 
-  public void setPlaceTopics(Map<String, String> placeTopics) {
+  public void setPlaceTopics(Map<String, Long> placeTopics) {
     this.placeTopics = placeTopics;
   }
 

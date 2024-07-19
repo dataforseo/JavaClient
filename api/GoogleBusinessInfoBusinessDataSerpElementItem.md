@@ -33,7 +33,7 @@
 |**isClaimed** | **Boolean** | shows whether the entity is verified by its owner on Google Maps |  [optional] |
 |**questionsAndAnswersCount** | **Integer** |  |  [optional] |
 |**attributes** | [**BusinessDataAttributesInfo**](BusinessDataAttributesInfo.md) |  |  [optional] |
-|**placeTopics** | **Map&lt;String, String&gt;** | keywords mentioned in customer reviews contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword example:  \&quot;place_topics\&quot;: { \&quot;egg roll\&quot;: 48, \&quot;birthday\&quot;: 33 } |  [optional] |
+|**placeTopics** | **Map&lt;String, Long&gt;** | keywords mentioned in customer reviews contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword example:  \&quot;place_topics\&quot;: { \&quot;egg roll\&quot;: 48, \&quot;birthday\&quot;: 33 } |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**hotelRating** | **Integer** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |

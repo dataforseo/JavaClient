@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataTripadvisorReviewsTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_URL_PATH = "url_path";
   @SerializedName(SERIALIZED_NAME_URL_PATH)
@@ -106,6 +106,10 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_SORT_BY)
   private String sortBy;
 
+  public static final String SERIALIZED_NAME_TRANSLATE_REVIEWS = "translate_reviews";
+  @SerializedName(SERIALIZED_NAME_TRANSLATE_REVIEWS)
+  private Boolean translateReviews;
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -127,7 +131,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
   }
 
    /**
-   * URL path of the business entity required field if you do not specify keyword URL path to the Tripadvisor page of the business entity; can be found in the URL of the business entity on Tripadvisor example: Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html https://www.tripadvisor.com/Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
+   * URL path of the business entity required field if you do not specify keyword URL path to the Tripadvisor page of the business entity; examples: Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html https://www.tripadvisor.com/Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html
    * @return urlPath
   **/
   @javax.annotation.Nullable
@@ -392,6 +396,25 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
   }
 
 
+  public BusinessDataTripadvisorReviewsTaskPostRequestInfo translateReviews(Boolean translateReviews) {
+    this.translateReviews = translateReviews;
+    return this;
+  }
+
+   /**
+   * translate reviews according to the URL path optional field if set to true, returned reviews will be translated to the language matching the specified url_path; for example, if url_path contains tripadvisor.it and translate_reviews is true, reviews will be translated to the Italian language; default value: true
+   * @return translateReviews
+  **/
+  @javax.annotation.Nullable
+  public Boolean getTranslateReviews() {
+    return translateReviews;
+  }
+
+  public void setTranslateReviews(Boolean translateReviews) {
+    this.translateReviews = translateReviews;
+  }
+
+
   public BusinessDataTripadvisorReviewsTaskPostRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -472,6 +495,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
         Objects.equals(this.months, businessDataTripadvisorReviewsTaskPostRequestInfo.months) &&
         Objects.equals(this.searchReviewsKeyword, businessDataTripadvisorReviewsTaskPostRequestInfo.searchReviewsKeyword) &&
         Objects.equals(this.sortBy, businessDataTripadvisorReviewsTaskPostRequestInfo.sortBy) &&
+        Objects.equals(this.translateReviews, businessDataTripadvisorReviewsTaskPostRequestInfo.translateReviews) &&
         Objects.equals(this.tag, businessDataTripadvisorReviewsTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, businessDataTripadvisorReviewsTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.pingbackUrl, businessDataTripadvisorReviewsTaskPostRequestInfo.pingbackUrl);
@@ -483,7 +507,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(urlPath, keyword, locationName, locationCode, priority, languageName, languageCode, depth, ratings, visitType, months, searchReviewsKeyword, sortBy, tag, postbackUrl, pingbackUrl);
+    return Objects.hash(urlPath, keyword, locationName, locationCode, priority, languageName, languageCode, depth, ratings, visitType, months, searchReviewsKeyword, sortBy, translateReviews, tag, postbackUrl, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -510,6 +534,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
     sb.append("    months: ").append(toIndentedString(months)).append("\n");
     sb.append("    searchReviewsKeyword: ").append(toIndentedString(searchReviewsKeyword)).append("\n");
     sb.append("    sortBy: ").append(toIndentedString(sortBy)).append("\n");
+    sb.append("    translateReviews: ").append(toIndentedString(translateReviews)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
@@ -548,6 +573,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
     openapiFields.add("months");
     openapiFields.add("search_reviews_keyword");
     openapiFields.add("sort_by");
+    openapiFields.add("translate_reviews");
     openapiFields.add("tag");
     openapiFields.add("postback_url");
     openapiFields.add("pingback_url");

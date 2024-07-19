@@ -73,6 +73,9 @@ import org.dataforseo.client.model.DataforseoLabsGoogleBulkTrafficEstimationLive
 import org.dataforseo.client.model.DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo;
+import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo;
+import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo;
+import org.dataforseo.client.model.DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo;
 import org.dataforseo.client.model.DataforseoLabsGoogleDomainIntersectionLiveRequestInfo;
@@ -424,6 +427,17 @@ public class DataforseoLabsApiTest {
     }
 
     /**
+     * ‌ Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void dataforseoLabsGoogleCategoriesForKeywordsLanguagesTest() throws ApiException {
+        DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo response = api.dataforseoLabsGoogleCategoriesForKeywordsLanguages();
+        // TODO: test validations
+    }
+
+    /**
      * This endpoint is designed to provide you with the list of IDs and metadata of the completed DataForSEO Labs tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash&#39;
      *
      * @throws ApiException if the Api call fails
@@ -537,6 +551,18 @@ public class DataforseoLabsApiTest {
     public void googleCategoriesForDomainLiveTest() throws ApiException {
         List<DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo> dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo = null;
         DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo response = api.googleCategoriesForDomainLive(dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleCategoriesForKeywordsLiveTest() throws ApiException {
+        List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo = null;
+        DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo response = api.googleCategoriesForKeywordsLive(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo);
         // TODO: test validations
     }
 

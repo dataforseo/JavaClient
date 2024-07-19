@@ -20,7 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.dataforseo.client.model.ClickstreamKeywordInfo;
+import org.dataforseo.client.model.AvgBacklinksInfo;
 import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
 import org.dataforseo.client.model.KeywordProperties;
@@ -121,6 +121,14 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItemTest {
     @Test
     public void serpInfoTest() {
         // TODO: test serpInfo
+    }
+
+    /**
+     * Test the property 'avgBacklinksInfo'
+     */
+    @Test
+    public void avgBacklinksInfoTest() {
+        // TODO: test avgBacklinksInfo
     }
 
 }

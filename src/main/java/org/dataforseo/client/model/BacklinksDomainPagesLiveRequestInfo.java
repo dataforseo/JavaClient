@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksDomainPagesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class BacklinksDomainPagesLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -89,6 +89,10 @@ public class BacklinksDomainPagesLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SUBDOMAINS = "include_subdomains";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SUBDOMAINS)
   private Boolean includeSubdomains;
+
+  public static final String SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS = "exclude_internal_backlinks";
+  @SerializedName(SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS)
+  private Boolean excludeInternalBacklinks;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -292,6 +296,25 @@ public class BacklinksDomainPagesLiveRequestInfo {
   }
 
 
+  public BacklinksDomainPagesLiveRequestInfo excludeInternalBacklinks(Boolean excludeInternalBacklinks) {
+    this.excludeInternalBacklinks = excludeInternalBacklinks;
+    return this;
+  }
+
+   /**
+   * indicates if internal backlinks from subdomains to the target will be excluded from the results optional field if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target if set to false, internal links will be included in the results default value: true
+   * @return excludeInternalBacklinks
+  **/
+  @javax.annotation.Nullable
+  public Boolean getExcludeInternalBacklinks() {
+    return excludeInternalBacklinks;
+  }
+
+  public void setExcludeInternalBacklinks(Boolean excludeInternalBacklinks) {
+    this.excludeInternalBacklinks = excludeInternalBacklinks;
+  }
+
+
   public BacklinksDomainPagesLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -330,6 +353,7 @@ public class BacklinksDomainPagesLiveRequestInfo {
         Objects.equals(this.orderBy, backlinksDomainPagesLiveRequestInfo.orderBy) &&
         Objects.equals(this.backlinksFilters, backlinksDomainPagesLiveRequestInfo.backlinksFilters) &&
         Objects.equals(this.includeSubdomains, backlinksDomainPagesLiveRequestInfo.includeSubdomains) &&
+        Objects.equals(this.excludeInternalBacklinks, backlinksDomainPagesLiveRequestInfo.excludeInternalBacklinks) &&
         Objects.equals(this.tag, backlinksDomainPagesLiveRequestInfo.tag);
   }
 
@@ -339,7 +363,7 @@ public class BacklinksDomainPagesLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, limit, offset, internalListLimit, backlinksStatusType, filters, orderBy, backlinksFilters, includeSubdomains, tag);
+    return Objects.hash(target, limit, offset, internalListLimit, backlinksStatusType, filters, orderBy, backlinksFilters, includeSubdomains, excludeInternalBacklinks, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -362,6 +386,7 @@ public class BacklinksDomainPagesLiveRequestInfo {
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    backlinksFilters: ").append(toIndentedString(backlinksFilters)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
+    sb.append("    excludeInternalBacklinks: ").append(toIndentedString(excludeInternalBacklinks)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -394,6 +419,7 @@ public class BacklinksDomainPagesLiveRequestInfo {
     openapiFields.add("order_by");
     openapiFields.add("backlinks_filters");
     openapiFields.add("include_subdomains");
+    openapiFields.add("exclude_internal_backlinks");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

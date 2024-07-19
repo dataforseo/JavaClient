@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksBulkRanksLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class BacklinksBulkRanksLiveItem {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -88,7 +88,7 @@ public class BacklinksBulkRanksLiveItem {
   }
 
    /**
-   * rank of the target rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
+   * rank of the target values represent real-time data for the date of the request rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article
    * @return rank
   **/
   @javax.annotation.Nullable

@@ -15,7 +15,7 @@
 |**title** | **String** | product title |  [optional] |
 |**url** | **String** | Google Shopping URL forwarding to the product page on the seller’s website if you want to obtain a URL of the advertisement forwarding to the product page on the seller’s website, please refer to the Google Shopping Sellers Ad URL endpoint |  [optional] |
 |**details** | **String** | details and special offers if there are no details, the value will be null |  [optional] |
-|**basePrice** | **BigDecimal** | product price without tax and shipping |  [optional] |
+|**basePrice** | **Integer** | product price without tax and shipping |  [optional] |
 |**tax** | **BigDecimal** | the amount of tax tax is specified as the actual amount of money, not as the percentage |  [optional] |
 |**shippingPrice** | **BigDecimal** | product shipping price |  [optional] |
 |**totalPrice** | **BigDecimal** | product price including tax and shipping |  [optional] |

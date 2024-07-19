@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * ShopsListMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -89,7 +89,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_BASE_PRICE = "base_price";
   @SerializedName(SERIALIZED_NAME_BASE_PRICE)
-  private BigDecimal basePrice;
+  private Integer basePrice;
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
@@ -283,7 +283,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem basePrice(BigDecimal basePrice) {
+  public ShopsListMerchantSerpElementItem basePrice(Integer basePrice) {
     this.basePrice = basePrice;
     return this;
   }
@@ -293,11 +293,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return basePrice
   **/
   @javax.annotation.Nullable
-  public BigDecimal getBasePrice() {
+  public Integer getBasePrice() {
     return basePrice;
   }
 
-  public void setBasePrice(BigDecimal basePrice) {
+  public void setBasePrice(Integer basePrice) {
     this.basePrice = basePrice;
   }
 

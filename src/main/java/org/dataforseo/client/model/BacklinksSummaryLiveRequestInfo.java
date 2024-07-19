@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BacklinksSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-05T09:46:18.018897200+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
 public class BacklinksSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -65,6 +65,10 @@ public class BacklinksSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_INDIRECT_LINKS = "include_indirect_links";
   @SerializedName(SERIALIZED_NAME_INCLUDE_INDIRECT_LINKS)
   private Boolean includeIndirectLinks;
+
+  public static final String SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS = "exclude_internal_backlinks";
+  @SerializedName(SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS)
+  private Boolean excludeInternalBacklinks;
 
   public static final String SERIALIZED_NAME_INTERNAL_LIST_LIMIT = "internal_list_limit";
   @SerializedName(SERIALIZED_NAME_INTERNAL_LIST_LIMIT)
@@ -139,6 +143,25 @@ public class BacklinksSummaryLiveRequestInfo {
 
   public void setIncludeIndirectLinks(Boolean includeIndirectLinks) {
     this.includeIndirectLinks = includeIndirectLinks;
+  }
+
+
+  public BacklinksSummaryLiveRequestInfo excludeInternalBacklinks(Boolean excludeInternalBacklinks) {
+    this.excludeInternalBacklinks = excludeInternalBacklinks;
+    return this;
+  }
+
+   /**
+   * indicates if internal backlinks from subdomains to the target will be excluded from the results optional field if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target if set to false, internal links will be included in the results default value: true
+   * @return excludeInternalBacklinks
+  **/
+  @javax.annotation.Nullable
+  public Boolean getExcludeInternalBacklinks() {
+    return excludeInternalBacklinks;
+  }
+
+  public void setExcludeInternalBacklinks(Boolean excludeInternalBacklinks) {
+    this.excludeInternalBacklinks = excludeInternalBacklinks;
   }
 
 
@@ -239,6 +262,7 @@ public class BacklinksSummaryLiveRequestInfo {
     return Objects.equals(this.target, backlinksSummaryLiveRequestInfo.target) &&
         Objects.equals(this.includeSubdomains, backlinksSummaryLiveRequestInfo.includeSubdomains) &&
         Objects.equals(this.includeIndirectLinks, backlinksSummaryLiveRequestInfo.includeIndirectLinks) &&
+        Objects.equals(this.excludeInternalBacklinks, backlinksSummaryLiveRequestInfo.excludeInternalBacklinks) &&
         Objects.equals(this.internalListLimit, backlinksSummaryLiveRequestInfo.internalListLimit) &&
         Objects.equals(this.backlinksStatusType, backlinksSummaryLiveRequestInfo.backlinksStatusType) &&
         Objects.equals(this.backlinksFilters, backlinksSummaryLiveRequestInfo.backlinksFilters) &&
@@ -251,7 +275,7 @@ public class BacklinksSummaryLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, includeSubdomains, includeIndirectLinks, internalListLimit, backlinksStatusType, backlinksFilters, tag);
+    return Objects.hash(target, includeSubdomains, includeIndirectLinks, excludeInternalBacklinks, internalListLimit, backlinksStatusType, backlinksFilters, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -268,6 +292,7 @@ public class BacklinksSummaryLiveRequestInfo {
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
     sb.append("    includeIndirectLinks: ").append(toIndentedString(includeIndirectLinks)).append("\n");
+    sb.append("    excludeInternalBacklinks: ").append(toIndentedString(excludeInternalBacklinks)).append("\n");
     sb.append("    internalListLimit: ").append(toIndentedString(internalListLimit)).append("\n");
     sb.append("    backlinksStatusType: ").append(toIndentedString(backlinksStatusType)).append("\n");
     sb.append("    backlinksFilters: ").append(toIndentedString(backlinksFilters)).append("\n");
@@ -297,6 +322,7 @@ public class BacklinksSummaryLiveRequestInfo {
     openapiFields.add("target");
     openapiFields.add("include_subdomains");
     openapiFields.add("include_indirect_links");
+    openapiFields.add("exclude_internal_backlinks");
     openapiFields.add("internal_list_limit");
     openapiFields.add("backlinks_status_type");
     openapiFields.add("backlinks_filters");
