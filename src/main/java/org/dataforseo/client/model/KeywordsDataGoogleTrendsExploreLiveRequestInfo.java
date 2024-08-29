@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleTrendsExploreLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -317,7 +317,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   }
 
    /**
-   * types of items returned optional field if you don’t specify this field, all items will be presented in the response; you can set only one item to speed up the execution of the request possible values: \&quot;item_types\&quot;: [ \&quot;google_trends_graph\&quot;, \&quot;google_trends_map\&quot;, \&quot;google_trends_topics_list\&quot;, \&quot;google_trends_queries_list\&quot; ]
+   * types of items returned optional field to speed up the execution of the request, specify one item at a time; possible values: \&quot;google_trends_graph\&quot;, \&quot;google_trends_map\&quot;, \&quot;google_trends_topics_list\&quot;,\&quot;google_trends_queries_list\&quot; default value: \&quot;google_trends_graph\&quot;
    * @return itemTypes
   **/
   @javax.annotation.Nullable

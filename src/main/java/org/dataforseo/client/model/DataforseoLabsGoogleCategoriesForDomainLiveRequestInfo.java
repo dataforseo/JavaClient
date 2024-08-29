@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -229,7 +229,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo {
   }
 
    /**
-   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request Note: clickstream data is available for roughly 15% of keywords in the response learn more about how clickstream-based metrics are calculated in this help center article
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request learn more about how clickstream-based metrics are calculated in this help center article
    * @return includeClickstreamData
   **/
   @javax.annotation.Nullable

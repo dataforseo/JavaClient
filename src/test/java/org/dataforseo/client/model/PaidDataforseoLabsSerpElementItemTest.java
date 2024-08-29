@@ -56,14 +56,6 @@ public class PaidDataforseoLabsSerpElementItemTest {
     }
 
     /**
-     * Test the property 'seType'
-     */
-    @Test
-    public void seTypeTest() {
-        // TODO: test seType
-    }
-
-    /**
      * Test the property 'rankGroup'
      */
     @Test
@@ -208,6 +200,14 @@ public class PaidDataforseoLabsSerpElementItemTest {
     }
 
     /**
+     * Test the property 'rankChanges'
+     */
+    @Test
+    public void rankChangesTest() {
+        // TODO: test rankChanges
+    }
+
+    /**
      * Test the property 'clickstreamEtv'
      */
     @Test
@@ -216,11 +216,11 @@ public class PaidDataforseoLabsSerpElementItemTest {
     }
 
     /**
-     * Test the property 'rankChanges'
+     * Test the property 'seType'
      */
     @Test
-    public void rankChangesTest() {
-        // TODO: test rankChanges
+    public void seTypeTest() {
+        // TODO: test seType
     }
 
     /**

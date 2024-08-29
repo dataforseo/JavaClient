@@ -10,9 +10,9 @@
 |**serp** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
 |**total** | **Double** | total amount of money deposited to your account |  [optional] |
 |**totalSerp** | **Double** |  |  [optional] |
-|**keywordsData** | [**AppendixKeywordsDataDaysRatesDataInfo**](AppendixKeywordsDataDaysRatesDataInfo.md) |  |  [optional] |
+|**keywordsData** | [**AppendixKeywordsDatasRatesDataInfo**](AppendixKeywordsDatasRatesDataInfo.md) |  |  [optional] |
 |**totalKeywordsData** | **Double** |  |  [optional] |
-|**appendix** | [**AppendixAppendixDaysRatesDataInfo**](AppendixAppendixDaysRatesDataInfo.md) |  |  [optional] |
+|**appendix** | [**AppendixAppendixsRatesDataInfo**](AppendixAppendixsRatesDataInfo.md) |  |  [optional] |
 |**totalAppendix** | **Double** |  |  [optional] |
 |**dataforseoLabs** | [**AppendixDataforseoLabsLimitsRatesDataInfo**](AppendixDataforseoLabsLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalDataforseoLabs** | **Double** |  |  [optional] |
@@ -32,9 +32,9 @@
 |**totalContentAnalysis** | **Double** |  |  [optional] |
 |**contentGeneration** | [**AppendixContentGenerationLimitsRatesDataInfo**](AppendixContentGenerationLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalContentGeneration** | **Double** |  |  [optional] |
-|**totalTrafficAnalytics** | **Double** |  |  [optional] |
 |**totalReviews** | **Double** |  |  [optional] |
 |**totalSocial** | **Double** |  |  [optional] |
+|**totalTrafficAnalytics** | **Double** |  |  [optional] |
 
 
 

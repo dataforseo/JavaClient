@@ -25,7 +25,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.dataforseo.client.model.AboutThisResultElement;
-import org.dataforseo.client.model.AdLinkElement;
 import org.dataforseo.client.model.BacklinksInfo;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import org.dataforseo.client.model.RankChanges;

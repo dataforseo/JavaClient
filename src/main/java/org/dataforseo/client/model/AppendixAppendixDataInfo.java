@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixAppendixDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class AppendixAppendixDataInfo {
   public static final String SERIALIZED_NAME_USER_DATA = "user_data";
   @SerializedName(SERIALIZED_NAME_USER_DATA)
@@ -60,13 +60,13 @@ public class AppendixAppendixDataInfo {
   @SerializedName(SERIALIZED_NAME_ERRORS)
   private Double errors;
 
-  public static final String SERIALIZED_NAME_TEST = "test";
-  @SerializedName(SERIALIZED_NAME_TEST)
-  private Double test;
-
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
   private Double status;
+
+  public static final String SERIALIZED_NAME_TEST = "test";
+  @SerializedName(SERIALIZED_NAME_TEST)
+  private Double test;
 
   public AppendixAppendixDataInfo() {
   }
@@ -109,25 +109,6 @@ public class AppendixAppendixDataInfo {
   }
 
 
-  public AppendixAppendixDataInfo test(Double test) {
-    this.test = test;
-    return this;
-  }
-
-   /**
-   * Get test
-   * @return test
-  **/
-  @javax.annotation.Nullable
-  public Double getTest() {
-    return test;
-  }
-
-  public void setTest(Double test) {
-    this.test = test;
-  }
-
-
   public AppendixAppendixDataInfo status(Double status) {
     this.status = status;
     return this;
@@ -147,6 +128,25 @@ public class AppendixAppendixDataInfo {
   }
 
 
+  public AppendixAppendixDataInfo test(Double test) {
+    this.test = test;
+    return this;
+  }
+
+   /**
+   * Get test
+   * @return test
+  **/
+  @javax.annotation.Nullable
+  public Double getTest() {
+    return test;
+  }
+
+  public void setTest(Double test) {
+    this.test = test;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -159,8 +159,8 @@ public class AppendixAppendixDataInfo {
     AppendixAppendixDataInfo appendixAppendixDataInfo = (AppendixAppendixDataInfo) o;
     return Objects.equals(this.userData, appendixAppendixDataInfo.userData) &&
         Objects.equals(this.errors, appendixAppendixDataInfo.errors) &&
-        Objects.equals(this.test, appendixAppendixDataInfo.test) &&
-        Objects.equals(this.status, appendixAppendixDataInfo.status);
+        Objects.equals(this.status, appendixAppendixDataInfo.status) &&
+        Objects.equals(this.test, appendixAppendixDataInfo.test);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -169,7 +169,7 @@ public class AppendixAppendixDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(userData, errors, test, status);
+    return Objects.hash(userData, errors, status, test);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -185,8 +185,8 @@ public class AppendixAppendixDataInfo {
     sb.append("class AppendixAppendixDataInfo {\n");
     sb.append("    userData: ").append(toIndentedString(userData)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
-    sb.append("    test: ").append(toIndentedString(test)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    test: ").append(toIndentedString(test)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -211,8 +211,8 @@ public class AppendixAppendixDataInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("user_data");
     openapiFields.add("errors");
-    openapiFields.add("test");
     openapiFields.add("status");
+    openapiFields.add("test");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

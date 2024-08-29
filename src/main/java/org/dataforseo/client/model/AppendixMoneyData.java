@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AppendixLimitsMoneyData;
-import org.dataforseo.client.model.AppendixStatisticsDataInfo;
+import org.dataforseo.client.model.AppendixStatisticsMoneyData;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class AppendixMoneyData {
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
@@ -68,7 +68,7 @@ public class AppendixMoneyData {
 
   public static final String SERIALIZED_NAME_STATISTICS = "statistics";
   @SerializedName(SERIALIZED_NAME_STATISTICS)
-  private AppendixStatisticsDataInfo statistics;
+  private AppendixStatisticsMoneyData statistics;
 
   public AppendixMoneyData() {
   }
@@ -130,7 +130,7 @@ public class AppendixMoneyData {
   }
 
 
-  public AppendixMoneyData statistics(AppendixStatisticsDataInfo statistics) {
+  public AppendixMoneyData statistics(AppendixStatisticsMoneyData statistics) {
     this.statistics = statistics;
     return this;
   }
@@ -140,11 +140,11 @@ public class AppendixMoneyData {
    * @return statistics
   **/
   @javax.annotation.Nullable
-  public AppendixStatisticsDataInfo getStatistics() {
+  public AppendixStatisticsMoneyData getStatistics() {
     return statistics;
   }
 
-  public void setStatistics(AppendixStatisticsDataInfo statistics) {
+  public void setStatistics(AppendixStatisticsMoneyData statistics) {
     this.statistics = statistics;
   }
 
@@ -247,7 +247,7 @@ public class AppendixMoneyData {
       }
       // validate the optional field `statistics`
       if (jsonObj.get("statistics") != null && !jsonObj.get("statistics").isJsonNull()) {
-        AppendixStatisticsDataInfo.validateJsonElement(jsonObj.get("statistics"));
+        AppendixStatisticsMoneyData.validateJsonElement(jsonObj.get("statistics"));
       }
   }
 

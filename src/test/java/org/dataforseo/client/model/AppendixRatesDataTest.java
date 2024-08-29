@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AppendixLimitsRatesData;
-import org.dataforseo.client.model.AppendixStatisticsDataInfo;
+import org.dataforseo.client.model.AppendixStatisticsRatesData;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

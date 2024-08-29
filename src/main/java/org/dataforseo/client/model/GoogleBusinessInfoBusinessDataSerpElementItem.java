@@ -63,7 +63,7 @@ import org.dataforseo.client.JSON;
 /**
  * GoogleBusinessInfoBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -128,6 +128,10 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   public static final String SERIALIZED_NAME_CONTACT_URL = "contact_url";
   @SerializedName(SERIALIZED_NAME_CONTACT_URL)
   private String contactUrl;
+
+  public static final String SERIALIZED_NAME_CONTRIBUTOR_URL = "contributor_url";
+  @SerializedName(SERIALIZED_NAME_CONTRIBUTOR_URL)
+  private String contributorUrl;
 
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -534,6 +538,25 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public void setContactUrl(String contactUrl) {
     this.contactUrl = contactUrl;
+  }
+
+
+  public GoogleBusinessInfoBusinessDataSerpElementItem contributorUrl(String contributorUrl) {
+    this.contributorUrl = contributorUrl;
+    return this;
+  }
+
+   /**
+   * URL of the user’s or entity’s Local Guides profile, if available
+   * @return contributorUrl
+  **/
+  @javax.annotation.Nullable
+  public String getContributorUrl() {
+    return contributorUrl;
+  }
+
+  public void setContributorUrl(String contributorUrl) {
+    this.contributorUrl = contributorUrl;
   }
 
 
@@ -994,6 +1017,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
         Objects.equals(this.phone, googleBusinessInfoBusinessDataSerpElementItem.phone) &&
         Objects.equals(this.url, googleBusinessInfoBusinessDataSerpElementItem.url) &&
         Objects.equals(this.contactUrl, googleBusinessInfoBusinessDataSerpElementItem.contactUrl) &&
+        Objects.equals(this.contributorUrl, googleBusinessInfoBusinessDataSerpElementItem.contributorUrl) &&
         Objects.equals(this.domain, googleBusinessInfoBusinessDataSerpElementItem.domain) &&
         Objects.equals(this.logo, googleBusinessInfoBusinessDataSerpElementItem.logo) &&
         Objects.equals(this.mainImage, googleBusinessInfoBusinessDataSerpElementItem.mainImage) &&
@@ -1024,7 +1048,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, position, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, position, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, contributorUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1055,6 +1079,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    contactUrl: ").append(toIndentedString(contactUrl)).append("\n");
+    sb.append("    contributorUrl: ").append(toIndentedString(contributorUrl)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
     sb.append("    mainImage: ").append(toIndentedString(mainImage)).append("\n");
@@ -1115,6 +1140,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     openapiFields.add("phone");
     openapiFields.add("url");
     openapiFields.add("contact_url");
+    openapiFields.add("contributor_url");
     openapiFields.add("domain");
     openapiFields.add("logo");
     openapiFields.add("main_image");

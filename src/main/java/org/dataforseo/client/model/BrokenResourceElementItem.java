@@ -27,6 +27,7 @@ import org.dataforseo.client.model.BaseOnPageResourceItemInfo;
 import org.dataforseo.client.model.CacheControl;
 import org.dataforseo.client.model.FetchTiming;
 import org.dataforseo.client.model.LastModified;
+import org.dataforseo.client.model.OnPageResourceIssueInfo;
 import org.dataforseo.client.model.PageMetaInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -57,7 +58,7 @@ import org.dataforseo.client.JSON;
 /**
  * BrokenResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -122,6 +123,10 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_LAST_MODIFIED = "last_modified";
   @SerializedName(SERIALIZED_NAME_LAST_MODIFIED)
   private LastModified lastModified;
+
+  public static final String SERIALIZED_NAME_RESOURCE_ERRORS = "resource_errors";
+  @SerializedName(SERIALIZED_NAME_RESOURCE_ERRORS)
+  private OnPageResourceIssueInfo resourceErrors;
 
   public BrokenResourceElementItem() {
     this.resourceType = this.getClass().getSimpleName();
@@ -439,6 +444,25 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
 
+  public BrokenResourceElementItem resourceErrors(OnPageResourceIssueInfo resourceErrors) {
+    this.resourceErrors = resourceErrors;
+    return this;
+  }
+
+   /**
+   * Get resourceErrors
+   * @return resourceErrors
+  **/
+  @javax.annotation.Nullable
+  public OnPageResourceIssueInfo getResourceErrors() {
+    return resourceErrors;
+  }
+
+  public void setResourceErrors(OnPageResourceIssueInfo resourceErrors) {
+    this.resourceErrors = resourceErrors;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -465,6 +489,7 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
         Objects.equals(this.acceptType, brokenResourceElementItem.acceptType) &&
         Objects.equals(this.server, brokenResourceElementItem.server) &&
         Objects.equals(this.lastModified, brokenResourceElementItem.lastModified) &&
+        Objects.equals(this.resourceErrors, brokenResourceElementItem.resourceErrors) &&
         super.equals(o);
   }
 
@@ -474,7 +499,7 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(meta, statusCode, location, url, size, encodedSize, totalTransferSize, fetchTime, fetchTiming, cacheControl, checks, contentEncoding, mediaType, acceptType, server, lastModified, super.hashCode());
+    return Objects.hash(meta, statusCode, location, url, size, encodedSize, totalTransferSize, fetchTime, fetchTiming, cacheControl, checks, contentEncoding, mediaType, acceptType, server, lastModified, resourceErrors, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -505,6 +530,7 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
     sb.append("    acceptType: ").append(toIndentedString(acceptType)).append("\n");
     sb.append("    server: ").append(toIndentedString(server)).append("\n");
     sb.append("    lastModified: ").append(toIndentedString(lastModified)).append("\n");
+    sb.append("    resourceErrors: ").append(toIndentedString(resourceErrors)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -544,6 +570,7 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
     openapiFields.add("accept_type");
     openapiFields.add("server");
     openapiFields.add("last_modified");
+    openapiFields.add("resource_errors");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

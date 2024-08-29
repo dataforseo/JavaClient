@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * RecipesDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class RecipesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -170,7 +170,7 @@ public class RecipesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
    /**
-   * elements of search results found in SERP
+   * additional items present in the element if there are none, equals null
    * @return items
   **/
   @javax.annotation.Nullable

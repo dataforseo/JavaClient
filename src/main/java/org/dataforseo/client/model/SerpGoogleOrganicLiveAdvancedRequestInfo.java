@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleOrganicLiveAdvancedRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -127,6 +127,10 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   public static final String SERIALIZED_NAME_PEOPLE_ALSO_ASK_CLICK_DEPTH = "people_also_ask_click_depth";
   @SerializedName(SERIALIZED_NAME_PEOPLE_ALSO_ASK_CLICK_DEPTH)
   private Integer peopleAlsoAskClickDepth;
+
+  public static final String SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW = "load_async_ai_overview";
+  @SerializedName(SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW)
+  private Boolean loadAsyncAiOverview;
 
   public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
   @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
@@ -500,6 +504,25 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   }
 
 
+  public SerpGoogleOrganicLiveAdvancedRequestInfo loadAsyncAiOverview(Boolean loadAsyncAiOverview) {
+    this.loadAsyncAiOverview = loadAsyncAiOverview;
+    return this;
+  }
+
+   /**
+   * load asynchronous ai overview optional field set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically; if set to false, you will only obtain ai_overview items from cache; default value: false Note your account will be billed $0.002 extra for each request; if the element is absent or contains \&quot;asynchronous_ai_overview\&quot;: false, all extra charges will be returned to your account balance
+   * @return loadAsyncAiOverview
+  **/
+  @javax.annotation.Nullable
+  public Boolean getLoadAsyncAiOverview() {
+    return loadAsyncAiOverview;
+  }
+
+  public void setLoadAsyncAiOverview(Boolean loadAsyncAiOverview) {
+    this.loadAsyncAiOverview = loadAsyncAiOverview;
+  }
+
+
   public SerpGoogleOrganicLiveAdvancedRequestInfo searchParam(String searchParam) {
     this.searchParam = searchParam;
     return this;
@@ -567,6 +590,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
         Objects.equals(this.browserScreenHeight, serpGoogleOrganicLiveAdvancedRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpGoogleOrganicLiveAdvancedRequestInfo.browserScreenResolutionRatio) &&
         Objects.equals(this.peopleAlsoAskClickDepth, serpGoogleOrganicLiveAdvancedRequestInfo.peopleAlsoAskClickDepth) &&
+        Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicLiveAdvancedRequestInfo.loadAsyncAiOverview) &&
         Objects.equals(this.searchParam, serpGoogleOrganicLiveAdvancedRequestInfo.searchParam) &&
         Objects.equals(this.tag, serpGoogleOrganicLiveAdvancedRequestInfo.tag);
   }
@@ -577,7 +601,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, searchParam, tag);
+    return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, searchParam, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -610,6 +634,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
     sb.append("    peopleAlsoAskClickDepth: ").append(toIndentedString(peopleAlsoAskClickDepth)).append("\n");
+    sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
@@ -653,6 +678,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
     openapiFields.add("browser_screen_height");
     openapiFields.add("browser_screen_resolution_ratio");
     openapiFields.add("people_also_ask_click_depth");
+    openapiFields.add("load_async_ai_overview");
     openapiFields.add("search_param");
     openapiFields.add("tag");
 

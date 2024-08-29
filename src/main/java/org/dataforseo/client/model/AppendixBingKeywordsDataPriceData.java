@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * AppendixBingKeywordsDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class AppendixBingKeywordsDataPriceData {
   public static final String SERIALIZED_NAME_KEYWORD_PERFORMANCE = "keyword_performance";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PERFORMANCE)
@@ -63,10 +63,6 @@ public class AppendixBingKeywordsDataPriceData {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_SITE = "keywords_for_site";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_SITE)
   private AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForSite;
-
-  public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
-  @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo searchVolumeHistory;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
@@ -132,25 +128,6 @@ public class AppendixBingKeywordsDataPriceData {
   }
 
 
-  public AppendixBingKeywordsDataPriceData searchVolumeHistory(AppendixKeywordBingKeywordsDataPriceDataInfo searchVolumeHistory) {
-    this.searchVolumeHistory = searchVolumeHistory;
-    return this;
-  }
-
-   /**
-   * Get searchVolumeHistory
-   * @return searchVolumeHistory
-  **/
-  @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSearchVolumeHistory() {
-    return searchVolumeHistory;
-  }
-
-  public void setSearchVolumeHistory(AppendixKeywordBingKeywordsDataPriceDataInfo searchVolumeHistory) {
-    this.searchVolumeHistory = searchVolumeHistory;
-  }
-
-
   public AppendixBingKeywordsDataPriceData searchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo searchVolume) {
     this.searchVolume = searchVolume;
     return this;
@@ -183,13 +160,12 @@ public class AppendixBingKeywordsDataPriceData {
     return Objects.equals(this.keywordPerformance, appendixBingKeywordsDataPriceData.keywordPerformance) &&
         Objects.equals(this.keywordsForKeywords, appendixBingKeywordsDataPriceData.keywordsForKeywords) &&
         Objects.equals(this.keywordsForSite, appendixBingKeywordsDataPriceData.keywordsForSite) &&
-        Objects.equals(this.searchVolumeHistory, appendixBingKeywordsDataPriceData.searchVolumeHistory) &&
         Objects.equals(this.searchVolume, appendixBingKeywordsDataPriceData.searchVolume);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordPerformance, keywordsForKeywords, keywordsForSite, searchVolumeHistory, searchVolume);
+    return Objects.hash(keywordPerformance, keywordsForKeywords, keywordsForSite, searchVolume);
   }
 
   @Override
@@ -199,7 +175,6 @@ public class AppendixBingKeywordsDataPriceData {
     sb.append("    keywordPerformance: ").append(toIndentedString(keywordPerformance)).append("\n");
     sb.append("    keywordsForKeywords: ").append(toIndentedString(keywordsForKeywords)).append("\n");
     sb.append("    keywordsForSite: ").append(toIndentedString(keywordsForSite)).append("\n");
-    sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
     sb.append("    searchVolume: ").append(toIndentedString(searchVolume)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -226,7 +201,6 @@ public class AppendixBingKeywordsDataPriceData {
     openapiFields.add("keyword_performance");
     openapiFields.add("keywords_for_keywords");
     openapiFields.add("keywords_for_site");
-    openapiFields.add("search_volume_history");
     openapiFields.add("search_volume");
 
     // a set of required properties/fields (JSON key names)
@@ -265,10 +239,6 @@ public class AppendixBingKeywordsDataPriceData {
       // validate the optional field `keywords_for_site`
       if (jsonObj.get("keywords_for_site") != null && !jsonObj.get("keywords_for_site").isJsonNull()) {
         AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
-      }
-      // validate the optional field `search_volume_history`
-      if (jsonObj.get("search_volume_history") != null && !jsonObj.get("search_volume_history").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search_volume_history"));
       }
       // validate the optional field `search_volume`
       if (jsonObj.get("search_volume") != null && !jsonObj.get("search_volume").isJsonNull()) {

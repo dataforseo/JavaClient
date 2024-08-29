@@ -32,12 +32,12 @@
 |**totalContentAnalysis** | **Double** |  |  [optional] |
 |**contentGeneration** | [**AppendixContentGenerationLimitsRatesDataInfo**](AppendixContentGenerationLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalContentGeneration** | **Double** |  |  [optional] |
-|**totalTrafficAnalytics** | **Double** |  |  [optional] |
-|**trafficAnalytics** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalReviews** | **Double** |  |  [optional] |
 |**reviews** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalSocial** | **Double** |  |  [optional] |
 |**social** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**totalTrafficAnalytics** | **Double** |  |  [optional] |
+|**trafficAnalytics** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
 
 
 

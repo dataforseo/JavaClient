@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataTripadvisorReviewsTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_URL_PATH = "url_path";
   @SerializedName(SERIALIZED_NAME_URL_PATH)
@@ -402,7 +402,7 @@ public class BusinessDataTripadvisorReviewsTaskPostRequestInfo {
   }
 
    /**
-   * translate reviews according to the URL path optional field if set to true, returned reviews will be translated to the language matching the specified url_path; for example, if url_path contains tripadvisor.it and translate_reviews is true, reviews will be translated to the Italian language; default value: true
+   * translate reviews according to the URL path optional field if set to true, returned reviews will be translated to the language matching the specified url_path; for example, if url_path contains tripadvisor.it and translate_reviews is true, reviews will be translated to the Italian language; default value: true you can learn more about how reviews are translated in this Help Center article
    * @return translateReviews
   **/
   @javax.annotation.Nullable

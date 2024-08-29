@@ -63,14 +63,6 @@ public class AppendixBingKeywordsDataPriceDataTest {
     }
 
     /**
-     * Test the property 'searchVolumeHistory'
-     */
-    @Test
-    public void searchVolumeHistoryTest() {
-        // TODO: test searchVolumeHistory
-    }
-
-    /**
      * Test the property 'searchVolume'
      */
     @Test

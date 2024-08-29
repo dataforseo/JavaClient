@@ -54,7 +54,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpGoogleOrganicTaskGetRegularResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class SerpGoogleOrganicTaskGetRegularResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -273,7 +273,7 @@ public class SerpGoogleOrganicTaskGetRegularResultInfo {
   }
 
    /**
-   * types of search results found in SERP contains types of all search results (items) found in the returned SERP possible item types: answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, images, jobs, knowledge_graph, local_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel note that this array contains all types of search results found in the returned SERP; however, this endpoint provides data for featured_snippet, organic and paid types only; to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the Google Organiс Advanced SERP endpoint
+   * types of search results found in SERP contains types of all search results (items) found in the returned SERP possible item types: answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, images, jobs, knowledge_graph, local_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, ai_overview note that this array contains all types of search results found in the returned SERP; however, this endpoint provides data for featured_snippet, organic and paid types only; to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the Google Organiс Advanced SERP endpoint
    * @return itemTypes
   **/
   @javax.annotation.Nullable

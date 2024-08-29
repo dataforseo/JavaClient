@@ -41,6 +41,7 @@
 |**contactInfo** | [**List&lt;BusinessDataContactInfo&gt;**](BusinessDataContactInfo.md) | available contacts of the business list of contacts to interact with the business |  [optional] |
 |**checkUrl** | **String** | direct URL to search engine results you can use it to make sure that we provided accurate results |  [optional] |
 |**lastUpdatedTime** | **String** | date and time when the data was last updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2023-01-26 09:03:15 +00:00 |  [optional] |
+|**firstSeen** | **String** | date and time when our crawler found the business listing element for the first time in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2023-03-11 10:04:11 +00:00 |  [optional] |
 
 
 

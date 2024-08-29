@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * AddressInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class AddressInfo {
   public static final String SERIALIZED_NAME_BOROUGH = "borough";
   @SerializedName(SERIALIZED_NAME_BOROUGH)

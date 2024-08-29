@@ -21,8 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -52,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * OnPageIdListResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class OnPageIdListResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -80,7 +78,7 @@ public class OnPageIdListResultInfo {
 
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private Map<String, String> metadata;
+  private Object metadata;
 
   public OnPageIdListResultInfo() {
   }
@@ -199,16 +197,8 @@ public class OnPageIdListResultInfo {
   }
 
 
-  public OnPageIdListResultInfo metadata(Map<String, String> metadata) {
+  public OnPageIdListResultInfo metadata(Object metadata) {
     this.metadata = metadata;
-    return this;
-  }
-
-  public OnPageIdListResultInfo putMetadataItem(String key, String metadataItem) {
-    if (this.metadata == null) {
-      this.metadata = new HashMap<>();
-    }
-    this.metadata.put(key, metadataItem);
     return this;
   }
 
@@ -217,11 +207,11 @@ public class OnPageIdListResultInfo {
    * @return metadata
   **/
   @javax.annotation.Nullable
-  public Map<String, String> getMetadata() {
+  public Object getMetadata() {
     return metadata;
   }
 
-  public void setMetadata(Map<String, String> metadata) {
+  public void setMetadata(Object metadata) {
     this.metadata = metadata;
   }
 

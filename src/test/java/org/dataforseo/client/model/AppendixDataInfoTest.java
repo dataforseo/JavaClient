@@ -251,22 +251,6 @@ public class AppendixDataInfoTest {
     }
 
     /**
-     * Test the property 'totalTrafficAnalytics'
-     */
-    @Test
-    public void totalTrafficAnalyticsTest() {
-        // TODO: test totalTrafficAnalytics
-    }
-
-    /**
-     * Test the property 'trafficAnalytics'
-     */
-    @Test
-    public void trafficAnalyticsTest() {
-        // TODO: test trafficAnalytics
-    }
-
-    /**
      * Test the property 'totalReviews'
      */
     @Test
@@ -296,6 +280,22 @@ public class AppendixDataInfoTest {
     @Test
     public void socialTest() {
         // TODO: test social
+    }
+
+    /**
+     * Test the property 'totalTrafficAnalytics'
+     */
+    @Test
+    public void totalTrafficAnalyticsTest() {
+        // TODO: test totalTrafficAnalytics
+    }
+
+    /**
+     * Test the property 'trafficAnalytics'
+     */
+    @Test
+    public void trafficAnalyticsTest() {
+        // TODO: test trafficAnalytics
     }
 
 }

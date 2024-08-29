@@ -48,6 +48,11 @@ import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskGetResponseIn
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostRequestInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTasksReadyResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo;
 import org.dataforseo.client.model.KeywordsDataDataforseoTrendsDemographyLiveRequestInfo;
 import org.dataforseo.client.model.KeywordsDataDataforseoTrendsDemographyLiveResponseInfo;
 import org.dataforseo.client.model.KeywordsDataDataforseoTrendsExploreLiveRequestInfo;
@@ -346,6 +351,42 @@ public class KeywordsDataApiTest {
     @Test
     public void bingSearchVolumeTasksReadyTest() throws ApiException {
         KeywordsDataBingSearchVolumeTasksReadyResponseInfo response = api.bingSearchVolumeTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌‌  The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters). for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void clickstreamDataBulkSearchVolumeLiveTest() throws ApiException {
+        List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = null;
+        KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo response = api.clickstreamDataBulkSearchVolumeLive(keywordsDataTaskRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/dataforseo_search_volume/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void clickstreamDataDataforseoSearchVolumeLiveTest() throws ApiException {
+        List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo = null;
+        KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo response = api.clickstreamDataDataforseoSearchVolumeLive(keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌‌  The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void clickstreamDataGlobalSearchVolumeLiveTest() throws ApiException {
+        List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = null;
+        KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo response = api.clickstreamDataGlobalSearchVolumeLive(keywordsDataTaskRequestInfo);
         // TODO: test validations
     }
 
@@ -695,6 +736,17 @@ public class KeywordsDataApiTest {
     @Test
     public void keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesTest() throws ApiException {
         KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo response = api.keywordsDataBingSearchVolumeHistoryLocationsAndLanguages();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Using this endpoint you can get the full list of locations and languages supported in DataForSEO Clickstream Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void keywordsDataClickstreamDataLocationsAndLanguagesTest() throws ApiException {
+        KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo response = api.keywordsDataClickstreamDataLocationsAndLanguages();
         // TODO: test validations
     }
 

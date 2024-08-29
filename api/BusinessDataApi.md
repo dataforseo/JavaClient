@@ -1212,7 +1212,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = "5cabb8df-ce12-40b9-98e1-5fd3c54fc83d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "dd09c8da-2180-4fb1-87b0-58ff36b01c8c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo result = apiInstance.googleHotelInfoTaskGetHtml(id);
       System.out.println(result);

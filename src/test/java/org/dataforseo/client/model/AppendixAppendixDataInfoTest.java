@@ -55,19 +55,19 @@ public class AppendixAppendixDataInfoTest {
     }
 
     /**
-     * Test the property 'test'
-     */
-    @Test
-    public void testTest() {
-        // TODO: test test
-    }
-
-    /**
      * Test the property 'status'
      */
     @Test
     public void statusTest() {
         // TODO: test status
+    }
+
+    /**
+     * Test the property 'test'
+     */
+    @Test
+    public void testTest() {
+        // TODO: test test
     }
 
 }

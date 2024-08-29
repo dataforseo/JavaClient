@@ -191,6 +191,22 @@ public class SerpTaskRequestInfoTest {
     }
 
     /**
+     * Test the property 'loadAsyncAiOverview'
+     */
+    @Test
+    public void loadAsyncAiOverviewTest() {
+        // TODO: test loadAsyncAiOverview
+    }
+
+    /**
+     * Test the property 'expandAiOverview'
+     */
+    @Test
+    public void expandAiOverviewTest() {
+        // TODO: test expandAiOverview
+    }
+
+    /**
      * Test the property 'searchParam'
      */
     @Test

@@ -15,7 +15,6 @@
 |**domain** | **String** | Amazon domain |  [optional] |
 |**title** | **String** | product title |  [optional] |
 |**url** | **String** | URL of the product page |  [optional] |
-|**description** | **String** | description of the product |  [optional] |
 |**asin** | **String** | ASIN of the product learn more about ASIN in this help center guide |  [optional] |
 |**imageUrl** | **String** | URL of the product image featured in the results |  [optional] |
 |**priceFrom** | **Float** | the regular price of a product example: 49.98 |  [optional] |
@@ -27,6 +26,7 @@
 |**rating** | [**RatingElement**](RatingElement.md) |  |  [optional] |
 |**deliveryInfo** | [**AmazonDeliveryInfo**](AmazonDeliveryInfo.md) |  |  [optional] |
 |**boughtPastMonth** | **Integer** | number of product purchases in the past month |  [optional] |
+|**description** | **String** | description of the product |  [optional] |
 |**dataAsin** | **String** | unique product identifier on Amazon note that there is no full list of possible values as the data_asin is a dynamic value assigned by Amazon example: B07G82D89J |  [optional] |
 
 

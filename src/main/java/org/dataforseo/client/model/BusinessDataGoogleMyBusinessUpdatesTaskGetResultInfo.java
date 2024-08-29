@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -337,7 +337,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo {
   }
 
    /**
-   * encountered item types types of search engine results encountered in the items array; possible item types: google_business_info
+   * encountered item types types of search engine results encountered in the items array; possible item types: google_business_post
    * @return items
   **/
   @javax.annotation.Nullable

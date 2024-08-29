@@ -18,7 +18,7 @@
 |**featureId** | **String** | the unique identifier of the element in SERP learn more about the identifier in this help center article |  [optional] |
 |**itemTypes** | **List&lt;String&gt;** | item types types of search engine results encountered in the items array; possible item types: google_business_post |  [optional] |
 |**itemsCount** | **Long** | item types the number of items in the items array |  [optional] |
-|**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | encountered item types types of search engine results encountered in the items array; possible item types: google_business_info |  [optional] |
+|**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | encountered item types types of search engine results encountered in the items array; possible item types: google_business_post |  [optional] |
 
 
 

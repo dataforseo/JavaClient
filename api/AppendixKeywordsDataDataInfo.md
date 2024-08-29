@@ -20,9 +20,9 @@
 |**bing** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**keywordPerformance** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**locationsAndLanguages** | **Double** |  |  [optional] |
-|**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**googleAds** | [**AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo**](AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**dataforseoTrends** | [**AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo**](AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**clickstreamData** | [**AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo**](AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**naver** | [**AppendixNaverKeywordsDataDataInfo**](AppendixNaverKeywordsDataDataInfo.md) |  |  [optional] |
 |**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**keywordIdeasAdsApi** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |

@@ -26,7 +26,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.dataforseo.client.model.AboutThisResultElement;
-import org.dataforseo.client.model.AdLinkElement;
 import org.dataforseo.client.model.BacklinksInfo;
 import org.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import org.dataforseo.client.model.RankChanges;
@@ -61,7 +60,7 @@ import org.dataforseo.client.JSON;
 /**
  * OrganicDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -145,7 +144,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<AdLinkElement> links;
+  private Object links;
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
@@ -579,16 +578,8 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem links(List<AdLinkElement> links) {
+  public OrganicDataforseoLabsSerpElementItem links(Object links) {
     this.links = links;
-    return this;
-  }
-
-  public OrganicDataforseoLabsSerpElementItem addLinksItem(AdLinkElement linksItem) {
-    if (this.links == null) {
-      this.links = new ArrayList<>();
-    }
-    this.links.add(linksItem);
     return this;
   }
 
@@ -597,11 +588,11 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
    * @return links
   **/
   @javax.annotation.Nullable
-  public List<AdLinkElement> getLinks() {
+  public Object getLinks() {
     return links;
   }
 
-  public void setLinks(List<AdLinkElement> links) {
+  public void setLinks(Object links) {
     this.links = links;
   }
 

@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.BaseSerpElementItem;
+import org.dataforseo.client.model.ChannelSubscribersCount;
 import org.dataforseo.client.model.StreamingQualityElement;
 import org.dataforseo.client.model.Subtitles;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -161,6 +162,14 @@ public class YoutubeVideoInfoSerpElementItemTest {
     @Test
     public void commentsCountTest() {
         // TODO: test commentsCount
+    }
+
+    /**
+     * Test the property 'channelSubscribersCount'
+     */
+    @Test
+    public void channelSubscribersCountTest() {
+        // TODO: test channelSubscribersCount
     }
 
     /**

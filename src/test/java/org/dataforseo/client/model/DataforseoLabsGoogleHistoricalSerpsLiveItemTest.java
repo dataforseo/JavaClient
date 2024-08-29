@@ -146,4 +146,12 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItemTest {
         // TODO: test items
     }
 
+    /**
+     * Test the property 'clickstreamEtv'
+     */
+    @Test
+    public void clickstreamEtvTest() {
+        // TODO: test clickstreamEtv
+    }
+
 }

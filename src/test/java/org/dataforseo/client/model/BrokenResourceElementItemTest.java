@@ -26,6 +26,7 @@ import org.dataforseo.client.model.BaseOnPageResourceItemInfo;
 import org.dataforseo.client.model.CacheControl;
 import org.dataforseo.client.model.FetchTiming;
 import org.dataforseo.client.model.LastModified;
+import org.dataforseo.client.model.OnPageResourceIssueInfo;
 import org.dataforseo.client.model.PageMetaInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -179,6 +180,14 @@ public class BrokenResourceElementItemTest {
     @Test
     public void lastModifiedTest() {
         // TODO: test lastModified
+    }
+
+    /**
+     * Test the property 'resourceErrors'
+     */
+    @Test
+    public void resourceErrorsTest() {
+        // TODO: test resourceErrors
     }
 
 }

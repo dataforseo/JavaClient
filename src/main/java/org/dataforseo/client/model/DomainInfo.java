@@ -53,7 +53,7 @@ import org.dataforseo.client.JSON;
 /**
  * DomainInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class DomainInfo {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -238,7 +238,7 @@ public class DomainInfo {
   }
 
    /**
-   * crawl status and errors indicates the reason why a website was not crawledcan take the following values: no_errors – no crawling errors were detected; site_unreachable – our crawler could not reach a website and thus was not able to obtain a status code; invalid_page_status_code – status code of the first crawled page &gt;&#x3D; 400; forbidden_meta_tag – the first crawled page contains the &lt;meta robots&#x3D;”noindex”&gt; tag; forbidden_robots – robots.txt forbids crawling the page; forbidden_http_header – HTTP header of the page contains “X-Robots-Tag: noindex” ; too_many_redirects – the first crawled page has more than 10 redirects; unknown – the reason is unknown
+   * crawl status and errors indicates the reason why a website was not crawled; can take the following values: no_errors – no crawling errors were detected; site_unreachable – our crawler could not reach a website and thus was not able to obtain a status code; invalid_page_status_code – status code of the first crawled page &gt;&#x3D; 400; forbidden_meta_tag – the first crawled page contains the &lt;meta robots&#x3D;”noindex”&gt; tag; forbidden_robots – robots.txt forbids crawling the page; forbidden_http_header – HTTP header of the page contains “X-Robots-Tag: noindex” ; too_many_redirects – the first crawled page has more than 10 redirects; unknown – the reason is unknown
    * @return extendedCrawlStatus
   **/
   @javax.annotation.Nullable

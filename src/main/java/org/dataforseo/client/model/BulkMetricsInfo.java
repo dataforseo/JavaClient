@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BulkMetricsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class BulkMetricsInfo {
   public static final String SERIALIZED_NAME_ETV = "etv";
   @SerializedName(SERIALIZED_NAME_ETV)
@@ -59,6 +59,10 @@ public class BulkMetricsInfo {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
   private Long count;
+
+  public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
+  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
+  private Integer clickstreamEtv;
 
   public BulkMetricsInfo() {
   }
@@ -101,6 +105,25 @@ public class BulkMetricsInfo {
   }
 
 
+  public BulkMetricsInfo clickstreamEtv(Integer clickstreamEtv) {
+    this.clickstreamEtv = clickstreamEtv;
+    return this;
+  }
+
+   /**
+   * estimated traffic volume based on clickstream data calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for to retrieve results for this field, the parameter include_clickstream_data must be set to true learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
+   * @return clickstreamEtv
+  **/
+  @javax.annotation.Nullable
+  public Integer getClickstreamEtv() {
+    return clickstreamEtv;
+  }
+
+  public void setClickstreamEtv(Integer clickstreamEtv) {
+    this.clickstreamEtv = clickstreamEtv;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -112,7 +135,8 @@ public class BulkMetricsInfo {
     }
     BulkMetricsInfo bulkMetricsInfo = (BulkMetricsInfo) o;
     return Objects.equals(this.etv, bulkMetricsInfo.etv) &&
-        Objects.equals(this.count, bulkMetricsInfo.count);
+        Objects.equals(this.count, bulkMetricsInfo.count) &&
+        Objects.equals(this.clickstreamEtv, bulkMetricsInfo.clickstreamEtv);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -121,7 +145,7 @@ public class BulkMetricsInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(etv, count);
+    return Objects.hash(etv, count, clickstreamEtv);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -137,6 +161,7 @@ public class BulkMetricsInfo {
     sb.append("class BulkMetricsInfo {\n");
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
     sb.append("    count: ").append(toIndentedString(count)).append("\n");
+    sb.append("    clickstreamEtv: ").append(toIndentedString(clickstreamEtv)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -161,6 +186,7 @@ public class BulkMetricsInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("etv");
     openapiFields.add("count");
+    openapiFields.add("clickstream_etv");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

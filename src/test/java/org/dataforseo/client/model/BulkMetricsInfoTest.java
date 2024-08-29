@@ -54,4 +54,12 @@ public class BulkMetricsInfoTest {
         // TODO: test count
     }
 
+    /**
+     * Test the property 'clickstreamEtv'
+     */
+    @Test
+    public void clickstreamEtvTest() {
+        // TODO: test clickstreamEtv
+    }
+
 }

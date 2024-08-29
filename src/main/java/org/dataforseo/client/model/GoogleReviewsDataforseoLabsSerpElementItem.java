@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * GoogleReviewsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -252,7 +252,7 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
    /**
-   * google-defined client id
+   * google-defined client id unique id of a local establishment; can be used with Google Reviews API to get a full list of reviews
    * @return cid
   **/
   @javax.annotation.Nullable

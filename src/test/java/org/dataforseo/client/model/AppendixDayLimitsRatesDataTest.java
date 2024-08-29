@@ -21,14 +21,14 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AppendixAppDataLimitsRatesDataInfo;
-import org.dataforseo.client.model.AppendixAppendixDaysRatesDataInfo;
+import org.dataforseo.client.model.AppendixAppendixsRatesDataInfo;
 import org.dataforseo.client.model.AppendixBacklinksLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixBusinessDataLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixDataforseoLabsLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
-import org.dataforseo.client.model.AppendixKeywordsDataDaysRatesDataInfo;
+import org.dataforseo.client.model.AppendixKeywordsDatasRatesDataInfo;
 import org.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
 import org.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
@@ -251,14 +251,6 @@ public class AppendixDayLimitsRatesDataTest {
     }
 
     /**
-     * Test the property 'totalTrafficAnalytics'
-     */
-    @Test
-    public void totalTrafficAnalyticsTest() {
-        // TODO: test totalTrafficAnalytics
-    }
-
-    /**
      * Test the property 'totalReviews'
      */
     @Test
@@ -272,6 +264,14 @@ public class AppendixDayLimitsRatesDataTest {
     @Test
     public void totalSocialTest() {
         // TODO: test totalSocial
+    }
+
+    /**
+     * Test the property 'totalTrafficAnalytics'
+     */
+    @Test
+    public void totalTrafficAnalyticsTest() {
+        // TODO: test totalTrafficAnalytics
     }
 
 }

@@ -191,6 +191,14 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfoTest {
     }
 
     /**
+     * Test the property 'loadAsyncAiOverview'
+     */
+    @Test
+    public void loadAsyncAiOverviewTest() {
+        // TODO: test loadAsyncAiOverview
+    }
+
+    /**
      * Test the property 'searchParam'
      */
     @Test

@@ -9,8 +9,8 @@
 |------------ | ------------- | ------------- | -------------|
 |**userData** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
-|**test** | **Double** |  |  [optional] |
 |**status** | **Double** |  |  [optional] |
+|**test** | **Double** |  |  [optional] |
 
 
 

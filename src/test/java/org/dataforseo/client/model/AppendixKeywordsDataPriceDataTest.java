@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import org.dataforseo.client.model.AppendixBingKeywordsDataPriceData;
+import org.dataforseo.client.model.AppendixClickstreamDataKeywordsDataPriceData;
 import org.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataPriceData;
 import org.dataforseo.client.model.AppendixExploreKeywordsDataPriceData;
 import org.dataforseo.client.model.AppendixGoogleAdsKeywordsDataPriceData;
@@ -73,6 +74,14 @@ public class AppendixKeywordsDataPriceDataTest {
     @Test
     public void categoriesTest() {
         // TODO: test categories
+    }
+
+    /**
+     * Test the property 'clickstreamData'
+     */
+    @Test
+    public void clickstreamDataTest() {
+        // TODO: test clickstreamData
     }
 
     /**
@@ -137,14 +146,6 @@ public class AppendixKeywordsDataPriceDataTest {
     @Test
     public void locationsAndLanguagesTest() {
         // TODO: test locationsAndLanguages
-    }
-
-    /**
-     * Test the property 'searchVolumeHistory'
-     */
-    @Test
-    public void searchVolumeHistoryTest() {
-        // TODO: test searchVolumeHistory
     }
 
     /**

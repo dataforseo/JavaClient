@@ -23,6 +23,7 @@ import java.util.Arrays;
 import org.dataforseo.client.model.AvgBacklinksInfo;
 import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
+import org.dataforseo.client.model.KeywordInfoNormalizedWithInfo;
 import org.dataforseo.client.model.KeywordProperties;
 import org.dataforseo.client.model.SerpInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -89,6 +90,22 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItemTest {
     @Test
     public void keywordInfoTest() {
         // TODO: test keywordInfo
+    }
+
+    /**
+     * Test the property 'keywordInfoNormalizedWithBing'
+     */
+    @Test
+    public void keywordInfoNormalizedWithBingTest() {
+        // TODO: test keywordInfoNormalizedWithBing
+    }
+
+    /**
+     * Test the property 'keywordInfoNormalizedWithClickstream'
+     */
+    @Test
+    public void keywordInfoNormalizedWithClickstreamTest() {
+        // TODO: test keywordInfoNormalizedWithClickstream
     }
 
     /**

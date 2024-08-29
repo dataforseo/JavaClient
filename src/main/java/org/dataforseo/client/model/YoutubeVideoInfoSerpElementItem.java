@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.dataforseo.client.model.BaseSerpElementItem;
+import org.dataforseo.client.model.ChannelSubscribersCount;
 import org.dataforseo.client.model.StreamingQualityElement;
 import org.dataforseo.client.model.Subtitles;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -55,7 +56,7 @@ import org.dataforseo.client.JSON;
 /**
  * YoutubeVideoInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -112,6 +113,10 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_COMMENTS_COUNT = "comments_count";
   @SerializedName(SERIALIZED_NAME_COMMENTS_COUNT)
   private Long commentsCount;
+
+  public static final String SERIALIZED_NAME_CHANNEL_SUBSCRIBERS_COUNT = "channel_subscribers_count";
+  @SerializedName(SERIALIZED_NAME_CHANNEL_SUBSCRIBERS_COUNT)
+  private ChannelSubscribersCount channelSubscribersCount;
 
   public static final String SERIALIZED_NAME_PUBLICATION_DATE = "publication_date";
   @SerializedName(SERIALIZED_NAME_PUBLICATION_DATE)
@@ -419,6 +424,25 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
   }
 
 
+  public YoutubeVideoInfoSerpElementItem channelSubscribersCount(ChannelSubscribersCount channelSubscribersCount) {
+    this.channelSubscribersCount = channelSubscribersCount;
+    return this;
+  }
+
+   /**
+   * Get channelSubscribersCount
+   * @return channelSubscribersCount
+  **/
+  @javax.annotation.Nullable
+  public ChannelSubscribersCount getChannelSubscribersCount() {
+    return channelSubscribersCount;
+  }
+
+  public void setChannelSubscribersCount(ChannelSubscribersCount channelSubscribersCount) {
+    this.channelSubscribersCount = channelSubscribersCount;
+  }
+
+
   public YoutubeVideoInfoSerpElementItem publicationDate(String publicationDate) {
     this.publicationDate = publicationDate;
     return this;
@@ -638,6 +662,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
         Objects.equals(this.viewsCount, youtubeVideoInfoSerpElementItem.viewsCount) &&
         Objects.equals(this.likesCount, youtubeVideoInfoSerpElementItem.likesCount) &&
         Objects.equals(this.commentsCount, youtubeVideoInfoSerpElementItem.commentsCount) &&
+        Objects.equals(this.channelSubscribersCount, youtubeVideoInfoSerpElementItem.channelSubscribersCount) &&
         Objects.equals(this.publicationDate, youtubeVideoInfoSerpElementItem.publicationDate) &&
         Objects.equals(this.timestamp, youtubeVideoInfoSerpElementItem.timestamp) &&
         Objects.equals(this.keywords, youtubeVideoInfoSerpElementItem.keywords) &&
@@ -656,7 +681,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, videoId, title, url, thumbnailUrl, channelId, channelName, channelUrl, channelLogo, description, viewsCount, likesCount, commentsCount, publicationDate, timestamp, keywords, category, isLive, durationTime, durationTimeSeconds, subtitles, streamingQuality, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, videoId, title, url, thumbnailUrl, channelId, channelName, channelUrl, channelLogo, description, viewsCount, likesCount, commentsCount, channelSubscribersCount, publicationDate, timestamp, keywords, category, isLive, durationTime, durationTimeSeconds, subtitles, streamingQuality, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -685,6 +710,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
     sb.append("    viewsCount: ").append(toIndentedString(viewsCount)).append("\n");
     sb.append("    likesCount: ").append(toIndentedString(likesCount)).append("\n");
     sb.append("    commentsCount: ").append(toIndentedString(commentsCount)).append("\n");
+    sb.append("    channelSubscribersCount: ").append(toIndentedString(channelSubscribersCount)).append("\n");
     sb.append("    publicationDate: ").append(toIndentedString(publicationDate)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");
@@ -731,6 +757,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseSerpElementItem {
     openapiFields.add("views_count");
     openapiFields.add("likes_count");
     openapiFields.add("comments_count");
+    openapiFields.add("channel_subscribers_count");
     openapiFields.add("publication_date");
     openapiFields.add("timestamp");
     openapiFields.add("keywords");

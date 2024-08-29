@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -171,7 +171,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   }
 
    /**
-   * location code in a POST array if there is no data, then the value is null
+   * location code in a POST array
    * @return locationCode
   **/
   @javax.annotation.Nullable
@@ -190,7 +190,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo {
   }
 
    /**
-   * language code in a POST array if there is no data, then the value is null
+   * language code in a POST array
    * @return languageCode
   **/
   @javax.annotation.Nullable

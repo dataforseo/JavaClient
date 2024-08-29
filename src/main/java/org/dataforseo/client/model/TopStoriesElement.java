@@ -20,7 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -50,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * TopStoriesElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class TopStoriesElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -87,6 +89,10 @@ public class TopStoriesElement {
   public static final String SERIALIZED_NAME_IMAGE_URL = "image_url";
   @SerializedName(SERIALIZED_NAME_IMAGE_URL)
   private String imageUrl;
+
+  public static final String SERIALIZED_NAME_BADGES = "badges";
+  @SerializedName(SERIALIZED_NAME_BADGES)
+  private List<String> badges;
 
   public TopStoriesElement() {
   }
@@ -262,6 +268,33 @@ public class TopStoriesElement {
   }
 
 
+  public TopStoriesElement badges(List<String> badges) {
+    this.badges = badges;
+    return this;
+  }
+
+  public TopStoriesElement addBadgesItem(String badgesItem) {
+    if (this.badges == null) {
+      this.badges = new ArrayList<>();
+    }
+    this.badges.add(badgesItem);
+    return this;
+  }
+
+   /**
+   * badges relevant to the element
+   * @return badges
+  **/
+  @javax.annotation.Nullable
+  public List<String> getBadges() {
+    return badges;
+  }
+
+  public void setBadges(List<String> badges) {
+    this.badges = badges;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -280,7 +313,8 @@ public class TopStoriesElement {
         Objects.equals(this.ampVersion, topStoriesElement.ampVersion) &&
         Objects.equals(this.timestamp, topStoriesElement.timestamp) &&
         Objects.equals(this.url, topStoriesElement.url) &&
-        Objects.equals(this.imageUrl, topStoriesElement.imageUrl);
+        Objects.equals(this.imageUrl, topStoriesElement.imageUrl) &&
+        Objects.equals(this.badges, topStoriesElement.badges);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -289,7 +323,7 @@ public class TopStoriesElement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, source, domain, title, date, ampVersion, timestamp, url, imageUrl);
+    return Objects.hash(type, source, domain, title, date, ampVersion, timestamp, url, imageUrl, badges);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -312,6 +346,7 @@ public class TopStoriesElement {
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
+    sb.append("    badges: ").append(toIndentedString(badges)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -343,6 +378,7 @@ public class TopStoriesElement {
     openapiFields.add("timestamp");
     openapiFields.add("url");
     openapiFields.add("image_url");
+    openapiFields.add("badges");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -392,6 +428,10 @@ public class TopStoriesElement {
       }
       if ((jsonObj.get("image_url") != null && !jsonObj.get("image_url").isJsonNull()) && !jsonObj.get("image_url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `image_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("image_url").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("badges") != null && !jsonObj.get("badges").isJsonNull() && !jsonObj.get("badges").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `badges` to be an array in the JSON string but got `%s`", jsonObj.get("badges").toString()));
       }
   }
 

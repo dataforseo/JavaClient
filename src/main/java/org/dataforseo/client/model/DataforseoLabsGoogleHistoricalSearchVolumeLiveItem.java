@@ -24,6 +24,7 @@ import java.util.Arrays;
 import org.dataforseo.client.model.AvgBacklinksInfo;
 import org.dataforseo.client.model.ImpressionsInfo;
 import org.dataforseo.client.model.KeywordInfo;
+import org.dataforseo.client.model.KeywordInfoNormalizedWithInfo;
 import org.dataforseo.client.model.KeywordProperties;
 import org.dataforseo.client.model.SerpInfo;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -55,7 +56,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalSearchVolumeLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -80,6 +81,14 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
   public static final String SERIALIZED_NAME_KEYWORD_INFO = "keyword_info";
   @SerializedName(SERIALIZED_NAME_KEYWORD_INFO)
   private KeywordInfo keywordInfo;
+
+  public static final String SERIALIZED_NAME_KEYWORD_INFO_NORMALIZED_WITH_BING = "keyword_info_normalized_with_bing";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_INFO_NORMALIZED_WITH_BING)
+  private KeywordInfoNormalizedWithInfo keywordInfoNormalizedWithBing;
+
+  public static final String SERIALIZED_NAME_KEYWORD_INFO_NORMALIZED_WITH_CLICKSTREAM = "keyword_info_normalized_with_clickstream";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_INFO_NORMALIZED_WITH_CLICKSTREAM)
+  private KeywordInfoNormalizedWithInfo keywordInfoNormalizedWithClickstream;
 
   public static final String SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO = "clickstream_keyword_info";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO)
@@ -218,6 +227,44 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
   }
 
 
+  public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem keywordInfoNormalizedWithBing(KeywordInfoNormalizedWithInfo keywordInfoNormalizedWithBing) {
+    this.keywordInfoNormalizedWithBing = keywordInfoNormalizedWithBing;
+    return this;
+  }
+
+   /**
+   * Get keywordInfoNormalizedWithBing
+   * @return keywordInfoNormalizedWithBing
+  **/
+  @javax.annotation.Nullable
+  public KeywordInfoNormalizedWithInfo getKeywordInfoNormalizedWithBing() {
+    return keywordInfoNormalizedWithBing;
+  }
+
+  public void setKeywordInfoNormalizedWithBing(KeywordInfoNormalizedWithInfo keywordInfoNormalizedWithBing) {
+    this.keywordInfoNormalizedWithBing = keywordInfoNormalizedWithBing;
+  }
+
+
+  public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem keywordInfoNormalizedWithClickstream(KeywordInfoNormalizedWithInfo keywordInfoNormalizedWithClickstream) {
+    this.keywordInfoNormalizedWithClickstream = keywordInfoNormalizedWithClickstream;
+    return this;
+  }
+
+   /**
+   * Get keywordInfoNormalizedWithClickstream
+   * @return keywordInfoNormalizedWithClickstream
+  **/
+  @javax.annotation.Nullable
+  public KeywordInfoNormalizedWithInfo getKeywordInfoNormalizedWithClickstream() {
+    return keywordInfoNormalizedWithClickstream;
+  }
+
+  public void setKeywordInfoNormalizedWithClickstream(KeywordInfoNormalizedWithInfo keywordInfoNormalizedWithClickstream) {
+    this.keywordInfoNormalizedWithClickstream = keywordInfoNormalizedWithClickstream;
+  }
+
+
   public DataforseoLabsGoogleHistoricalSearchVolumeLiveItem clickstreamKeywordInfo(Object clickstreamKeywordInfo) {
     this.clickstreamKeywordInfo = clickstreamKeywordInfo;
     return this;
@@ -329,6 +376,8 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
         Objects.equals(this.languageCode, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.languageCode) &&
         Objects.equals(this.searchPartners, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.searchPartners) &&
         Objects.equals(this.keywordInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.keywordInfo) &&
+        Objects.equals(this.keywordInfoNormalizedWithBing, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.keywordInfoNormalizedWithBing) &&
+        Objects.equals(this.keywordInfoNormalizedWithClickstream, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.keywordInfoNormalizedWithClickstream) &&
         Objects.equals(this.clickstreamKeywordInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.clickstreamKeywordInfo) &&
         Objects.equals(this.keywordProperties, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.keywordProperties) &&
         Objects.equals(this.impressionsInfo, dataforseoLabsGoogleHistoricalSearchVolumeLiveItem.impressionsInfo) &&
@@ -342,7 +391,7 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, keyword, locationCode, languageCode, searchPartners, keywordInfo, clickstreamKeywordInfo, keywordProperties, impressionsInfo, serpInfo, avgBacklinksInfo);
+    return Objects.hash(seType, keyword, locationCode, languageCode, searchPartners, keywordInfo, keywordInfoNormalizedWithBing, keywordInfoNormalizedWithClickstream, clickstreamKeywordInfo, keywordProperties, impressionsInfo, serpInfo, avgBacklinksInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -362,6 +411,8 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    searchPartners: ").append(toIndentedString(searchPartners)).append("\n");
     sb.append("    keywordInfo: ").append(toIndentedString(keywordInfo)).append("\n");
+    sb.append("    keywordInfoNormalizedWithBing: ").append(toIndentedString(keywordInfoNormalizedWithBing)).append("\n");
+    sb.append("    keywordInfoNormalizedWithClickstream: ").append(toIndentedString(keywordInfoNormalizedWithClickstream)).append("\n");
     sb.append("    clickstreamKeywordInfo: ").append(toIndentedString(clickstreamKeywordInfo)).append("\n");
     sb.append("    keywordProperties: ").append(toIndentedString(keywordProperties)).append("\n");
     sb.append("    impressionsInfo: ").append(toIndentedString(impressionsInfo)).append("\n");
@@ -395,6 +446,8 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
     openapiFields.add("language_code");
     openapiFields.add("search_partners");
     openapiFields.add("keyword_info");
+    openapiFields.add("keyword_info_normalized_with_bing");
+    openapiFields.add("keyword_info_normalized_with_clickstream");
     openapiFields.add("clickstream_keyword_info");
     openapiFields.add("keyword_properties");
     openapiFields.add("impressions_info");
@@ -438,6 +491,14 @@ public class DataforseoLabsGoogleHistoricalSearchVolumeLiveItem {
       // validate the optional field `keyword_info`
       if (jsonObj.get("keyword_info") != null && !jsonObj.get("keyword_info").isJsonNull()) {
         KeywordInfo.validateJsonElement(jsonObj.get("keyword_info"));
+      }
+      // validate the optional field `keyword_info_normalized_with_bing`
+      if (jsonObj.get("keyword_info_normalized_with_bing") != null && !jsonObj.get("keyword_info_normalized_with_bing").isJsonNull()) {
+        KeywordInfoNormalizedWithInfo.validateJsonElement(jsonObj.get("keyword_info_normalized_with_bing"));
+      }
+      // validate the optional field `keyword_info_normalized_with_clickstream`
+      if (jsonObj.get("keyword_info_normalized_with_clickstream") != null && !jsonObj.get("keyword_info_normalized_with_clickstream").isJsonNull()) {
+        KeywordInfoNormalizedWithInfo.validateJsonElement(jsonObj.get("keyword_info_normalized_with_clickstream"));
       }
       // validate the optional field `keyword_properties`
       if (jsonObj.get("keyword_properties") != null && !jsonObj.get("keyword_properties").isJsonNull()) {

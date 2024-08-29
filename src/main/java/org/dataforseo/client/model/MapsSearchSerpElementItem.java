@@ -59,7 +59,7 @@ import org.dataforseo.client.JSON;
 /**
  * MapsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class MapsSearchSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
@@ -84,6 +84,10 @@ public class MapsSearchSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_CONTACT_URL = "contact_url";
   @SerializedName(SERIALIZED_NAME_CONTACT_URL)
   private String contactUrl;
+
+  public static final String SERIALIZED_NAME_CONTRIBUTOR_URL = "contributor_url";
+  @SerializedName(SERIALIZED_NAME_CONTRIBUTOR_URL)
+  private String contributorUrl;
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
@@ -288,6 +292,25 @@ public class MapsSearchSerpElementItem extends BaseSerpElementItem {
 
   public void setContactUrl(String contactUrl) {
     this.contactUrl = contactUrl;
+  }
+
+
+  public MapsSearchSerpElementItem contributorUrl(String contributorUrl) {
+    this.contributorUrl = contributorUrl;
+    return this;
+  }
+
+   /**
+   * URL of the user’s or entity’s Local Guides profile, if available
+   * @return contributorUrl
+  **/
+  @javax.annotation.Nullable
+  public String getContributorUrl() {
+    return contributorUrl;
+  }
+
+  public void setContributorUrl(String contributorUrl) {
+    this.contributorUrl = contributorUrl;
   }
 
 
@@ -757,6 +780,7 @@ public class MapsSearchSerpElementItem extends BaseSerpElementItem {
         Objects.equals(this.title, mapsSearchSerpElementItem.title) &&
         Objects.equals(this.url, mapsSearchSerpElementItem.url) &&
         Objects.equals(this.contactUrl, mapsSearchSerpElementItem.contactUrl) &&
+        Objects.equals(this.contributorUrl, mapsSearchSerpElementItem.contributorUrl) &&
         Objects.equals(this.rating, mapsSearchSerpElementItem.rating) &&
         Objects.equals(this.hotelRating, mapsSearchSerpElementItem.hotelRating) &&
         Objects.equals(this.priceLevel, mapsSearchSerpElementItem.priceLevel) &&
@@ -788,7 +812,7 @@ public class MapsSearchSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(rankGroup, rankAbsolute, domain, title, url, contactUrl, rating, hotelRating, priceLevel, ratingDistribution, snippet, address, addressInfo, placeId, phone, mainImage, totalPhotos, category, additionalCategories, categoryIds, workHours, featureId, cid, latitude, longitude, isClaimed, localJustifications, isDirectoryItem, super.hashCode());
+    return Objects.hash(rankGroup, rankAbsolute, domain, title, url, contactUrl, contributorUrl, rating, hotelRating, priceLevel, ratingDistribution, snippet, address, addressInfo, placeId, phone, mainImage, totalPhotos, category, additionalCategories, categoryIds, workHours, featureId, cid, latitude, longitude, isClaimed, localJustifications, isDirectoryItem, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -809,6 +833,7 @@ public class MapsSearchSerpElementItem extends BaseSerpElementItem {
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    contactUrl: ").append(toIndentedString(contactUrl)).append("\n");
+    sb.append("    contributorUrl: ").append(toIndentedString(contributorUrl)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    hotelRating: ").append(toIndentedString(hotelRating)).append("\n");
     sb.append("    priceLevel: ").append(toIndentedString(priceLevel)).append("\n");
@@ -860,6 +885,7 @@ public class MapsSearchSerpElementItem extends BaseSerpElementItem {
     openapiFields.add("title");
     openapiFields.add("url");
     openapiFields.add("contact_url");
+    openapiFields.add("contributor_url");
     openapiFields.add("rating");
     openapiFields.add("hotel_rating");
     openapiFields.add("price_level");

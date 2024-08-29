@@ -12,10 +12,10 @@
 |**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**domain** | **String** | domain where a link points |  [optional] |
-|**title** | **String** | title of the result in SERP |  [optional] |
+|**title** | **String** | title of the item |  [optional] |
 |**featuredTitle** | **String** | title |  [optional] |
 |**description** | **String** | description of the results element in SERP |  [optional] |
-|**url** | **String** | relevant URL of the Ad element in SERP |  [optional] |
+|**url** | **String** | URL link |  [optional] |
 |**table** | [**Table**](Table.md) |  |  [optional] |
 |**seType** | **String** | search engine type |  [optional] |
 |**mainDomain** | **String** | primary domain name in SERP |  [optional] |

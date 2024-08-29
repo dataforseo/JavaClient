@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * SerpTaskRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class SerpTaskRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -127,6 +127,14 @@ public class SerpTaskRequestInfo {
   public static final String SERIALIZED_NAME_PEOPLE_ALSO_ASK_CLICK_DEPTH = "people_also_ask_click_depth";
   @SerializedName(SERIALIZED_NAME_PEOPLE_ALSO_ASK_CLICK_DEPTH)
   private Integer peopleAlsoAskClickDepth;
+
+  public static final String SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW = "load_async_ai_overview";
+  @SerializedName(SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW)
+  private Boolean loadAsyncAiOverview;
+
+  public static final String SERIALIZED_NAME_EXPAND_AI_OVERVIEW = "expand_ai_overview";
+  @SerializedName(SERIALIZED_NAME_EXPAND_AI_OVERVIEW)
+  private Boolean expandAiOverview;
 
   public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
   @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
@@ -512,6 +520,44 @@ public class SerpTaskRequestInfo {
   }
 
 
+  public SerpTaskRequestInfo loadAsyncAiOverview(Boolean loadAsyncAiOverview) {
+    this.loadAsyncAiOverview = loadAsyncAiOverview;
+    return this;
+  }
+
+   /**
+   * load asynchronous ai overview optional field set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically; if set to false, you will only obtain ai_overview items from cache; default value: false Note your account will be billed $0.0006-$0.0012 extra for each request, depending on the priority; if the element is absent or contains \&quot;asynchronous_ai_overview\&quot;: false, all extra charges will be returned to your account balance
+   * @return loadAsyncAiOverview
+  **/
+  @javax.annotation.Nullable
+  public Boolean getLoadAsyncAiOverview() {
+    return loadAsyncAiOverview;
+  }
+
+  public void setLoadAsyncAiOverview(Boolean loadAsyncAiOverview) {
+    this.loadAsyncAiOverview = loadAsyncAiOverview;
+  }
+
+
+  public SerpTaskRequestInfo expandAiOverview(Boolean expandAiOverview) {
+    this.expandAiOverview = expandAiOverview;
+    return this;
+  }
+
+   /**
+   * expand ai overview optional field set to true to expand the ai_overview item; default value: false; Note: this parameter applies only to HTML task results
+   * @return expandAiOverview
+  **/
+  @javax.annotation.Nullable
+  public Boolean getExpandAiOverview() {
+    return expandAiOverview;
+  }
+
+  public void setExpandAiOverview(Boolean expandAiOverview) {
+    this.expandAiOverview = expandAiOverview;
+  }
+
+
   public SerpTaskRequestInfo searchParam(String searchParam) {
     this.searchParam = searchParam;
     return this;
@@ -636,6 +682,8 @@ public class SerpTaskRequestInfo {
         Objects.equals(this.browserScreenHeight, serpTaskRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpTaskRequestInfo.browserScreenResolutionRatio) &&
         Objects.equals(this.peopleAlsoAskClickDepth, serpTaskRequestInfo.peopleAlsoAskClickDepth) &&
+        Objects.equals(this.loadAsyncAiOverview, serpTaskRequestInfo.loadAsyncAiOverview) &&
+        Objects.equals(this.expandAiOverview, serpTaskRequestInfo.expandAiOverview) &&
         Objects.equals(this.searchParam, serpTaskRequestInfo.searchParam) &&
         Objects.equals(this.tag, serpTaskRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, serpTaskRequestInfo.postbackUrl) &&
@@ -649,7 +697,7 @@ public class SerpTaskRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, url, priority, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, searchParam, tag, postbackUrl, postbackData, pingbackUrl);
+    return Objects.hash(keyword, url, priority, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, expandAiOverview, searchParam, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -682,6 +730,8 @@ public class SerpTaskRequestInfo {
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
     sb.append("    peopleAlsoAskClickDepth: ").append(toIndentedString(peopleAlsoAskClickDepth)).append("\n");
+    sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
+    sb.append("    expandAiOverview: ").append(toIndentedString(expandAiOverview)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
@@ -728,6 +778,8 @@ public class SerpTaskRequestInfo {
     openapiFields.add("browser_screen_height");
     openapiFields.add("browser_screen_resolution_ratio");
     openapiFields.add("people_also_ask_click_depth");
+    openapiFields.add("load_async_ai_overview");
+    openapiFields.add("expand_ai_overview");
     openapiFields.add("search_param");
     openapiFields.add("tag");
     openapiFields.add("postback_url");

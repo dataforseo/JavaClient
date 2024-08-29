@@ -62,7 +62,7 @@ import org.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -199,6 +199,10 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_LAST_UPDATED_TIME = "last_updated_time";
   @SerializedName(SERIALIZED_NAME_LAST_UPDATED_TIME)
   private String lastUpdatedTime;
+
+  public static final String SERIALIZED_NAME_FIRST_SEEN = "first_seen";
+  @SerializedName(SERIALIZED_NAME_FIRST_SEEN)
+  private String firstSeen;
 
   public BusinessDataBusinessListingsSearchLiveItem() {
   }
@@ -905,6 +909,25 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
 
+  public BusinessDataBusinessListingsSearchLiveItem firstSeen(String firstSeen) {
+    this.firstSeen = firstSeen;
+    return this;
+  }
+
+   /**
+   * date and time when our crawler found the business listing element for the first time in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2023-03-11 10:04:11 +00:00
+   * @return firstSeen
+  **/
+  @javax.annotation.Nullable
+  public String getFirstSeen() {
+    return firstSeen;
+  }
+
+  public void setFirstSeen(String firstSeen) {
+    this.firstSeen = firstSeen;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -948,7 +971,8 @@ public class BusinessDataBusinessListingsSearchLiveItem {
         Objects.equals(this.localBusinessLinks, businessDataBusinessListingsSearchLiveItem.localBusinessLinks) &&
         Objects.equals(this.contactInfo, businessDataBusinessListingsSearchLiveItem.contactInfo) &&
         Objects.equals(this.checkUrl, businessDataBusinessListingsSearchLiveItem.checkUrl) &&
-        Objects.equals(this.lastUpdatedTime, businessDataBusinessListingsSearchLiveItem.lastUpdatedTime);
+        Objects.equals(this.lastUpdatedTime, businessDataBusinessListingsSearchLiveItem.lastUpdatedTime) &&
+        Objects.equals(this.firstSeen, businessDataBusinessListingsSearchLiveItem.firstSeen);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -957,7 +981,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime);
+    return Objects.hash(type, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime, firstSeen);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1005,6 +1029,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
     sb.append("    contactInfo: ").append(toIndentedString(contactInfo)).append("\n");
     sb.append("    checkUrl: ").append(toIndentedString(checkUrl)).append("\n");
     sb.append("    lastUpdatedTime: ").append(toIndentedString(lastUpdatedTime)).append("\n");
+    sb.append("    firstSeen: ").append(toIndentedString(firstSeen)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -1061,6 +1086,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
     openapiFields.add("contact_info");
     openapiFields.add("check_url");
     openapiFields.add("last_updated_time");
+    openapiFields.add("first_seen");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -1207,6 +1233,9 @@ public class BusinessDataBusinessListingsSearchLiveItem {
       }
       if ((jsonObj.get("last_updated_time") != null && !jsonObj.get("last_updated_time").isJsonNull()) && !jsonObj.get("last_updated_time").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `last_updated_time` to be a primitive type in the JSON string but got `%s`", jsonObj.get("last_updated_time").toString()));
+      }
+      if ((jsonObj.get("first_seen") != null && !jsonObj.get("first_seen").isJsonNull()) && !jsonObj.get("first_seen").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `first_seen` to be a primitive type in the JSON string but got `%s`", jsonObj.get("first_seen").toString()));
       }
   }
 

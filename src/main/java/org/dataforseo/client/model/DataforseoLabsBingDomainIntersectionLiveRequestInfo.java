@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingDomainIntersectionLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class DataforseoLabsBingDomainIntersectionLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET1 = "target1";
   @SerializedName(SERIALIZED_NAME_TARGET1)
@@ -344,7 +344,7 @@ public class DataforseoLabsBingDomainIntersectionLiveRequestInfo {
   }
 
    /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;keyword_data.keyword_info.search_volume\&quot;,\&quot;in\&quot;,[100,1000]] [[\&quot;first_domain_serp_element.etv\&quot;,\&quot;&gt;\&quot;,0],\&quot;and\&quot;,[\&quot;first_domain_serp_element.description\&quot;,\&quot;like\&quot;,\&quot;%goat%\&quot;]] [[\&quot;keyword_data.keyword_info.search_volume\&quot;,\&quot;&gt;\&quot;,100], \&quot;and\&quot;, [[\&quot;first_domain_serp_element.description\&quot;,\&quot;like\&quot;,\&quot;%goat%\&quot;], \&quot;or\&quot;, [\&quot;second_domain_serp_element.type\&quot;,\&quot;&#x3D;\&quot;,\&quot;organic\&quot;]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, ilike, not_ilike, like, not_like you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters example: [\&quot;keyword_data.keyword_info.search_volume\&quot;,\&quot;in\&quot;,[100,1000]] [[\&quot;first_domain_serp_element.etv\&quot;,\&quot;&gt;\&quot;,0],\&quot;and\&quot;,[\&quot;first_domain_serp_element.description\&quot;,\&quot;like\&quot;,\&quot;%goat%\&quot;]] [[\&quot;keyword_data.keyword_info.search_volume\&quot;,\&quot;&gt;\&quot;,100], \&quot;and\&quot;, [[\&quot;first_domain_serp_element.description\&quot;,\&quot;like\&quot;,\&quot;%goat%\&quot;], \&quot;or\&quot;, [\&quot;second_domain_serp_element.type\&quot;,\&quot;&#x3D;\&quot;,\&quot;organic\&quot;]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
    * @return filters
   **/
   @javax.annotation.Nullable

@@ -52,7 +52,7 @@ import org.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleTrendsExploreTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class KeywordsDataGoogleTrendsExploreTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -325,7 +325,7 @@ public class KeywordsDataGoogleTrendsExploreTaskPostRequestInfo {
   }
 
    /**
-   * types of items returned optional field to speed up the execution of the request, specify one item at a time; possible values: \&quot;item_types\&quot;: [ \&quot;google_trends_graph\&quot;, \&quot;google_trends_map\&quot;, \&quot;google_trends_topics_list\&quot;, \&quot;google_trends_queries_list\&quot; ] default value: \&quot;item_types\&quot;: [ \&quot;google_trends_graph\&quot; ]
+   * types of items returned optional field to speed up the execution of the request, specify one item at a time; possible values: \&quot;google_trends_graph\&quot;, \&quot;google_trends_map\&quot;, \&quot;google_trends_topics_list\&quot;,\&quot;google_trends_queries_list\&quot; default value: \&quot;google_trends_graph\&quot;
    * @return itemTypes
   **/
   @javax.annotation.Nullable

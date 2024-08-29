@@ -16,6 +16,7 @@
 |**timestamp** | **String** | date and time when the result was published in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 |  [optional] |
 |**url** | **String** | URL |  [optional] |
 |**imageUrl** | **String** | URL of the image |  [optional] |
+|**badges** | **List&lt;String&gt;** | badges relevant to the element |  [optional] |
 
 
 

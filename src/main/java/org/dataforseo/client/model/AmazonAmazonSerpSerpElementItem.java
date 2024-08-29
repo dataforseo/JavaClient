@@ -55,7 +55,7 @@ import org.dataforseo.client.JSON;
 /**
  * AmazonAmazonSerpSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -88,10 +88,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
-
-  public static final String SERIALIZED_NAME_DESCRIPTION = "description";
-  @SerializedName(SERIALIZED_NAME_DESCRIPTION)
-  private String description;
 
   public static final String SERIALIZED_NAME_ASIN = "asin";
   @SerializedName(SERIALIZED_NAME_ASIN)
@@ -136,6 +132,10 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_BOUGHT_PAST_MONTH = "bought_past_month";
   @SerializedName(SERIALIZED_NAME_BOUGHT_PAST_MONTH)
   private Integer boughtPastMonth;
+
+  public static final String SERIALIZED_NAME_DESCRIPTION = "description";
+  @SerializedName(SERIALIZED_NAME_DESCRIPTION)
+  private String description;
 
   public static final String SERIALIZED_NAME_DATA_ASIN = "data_asin";
   @SerializedName(SERIALIZED_NAME_DATA_ASIN)
@@ -294,25 +294,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
 
   public void setUrl(String url) {
     this.url = url;
-  }
-
-
-  public AmazonAmazonSerpSerpElementItem description(String description) {
-    this.description = description;
-    return this;
-  }
-
-   /**
-   * description of the product
-   * @return description
-  **/
-  @javax.annotation.Nullable
-  public String getDescription() {
-    return description;
-  }
-
-  public void setDescription(String description) {
-    this.description = description;
   }
 
 
@@ -533,6 +514,25 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
   }
 
 
+  public AmazonAmazonSerpSerpElementItem description(String description) {
+    this.description = description;
+    return this;
+  }
+
+   /**
+   * description of the product
+   * @return description
+  **/
+  @javax.annotation.Nullable
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+
   public AmazonAmazonSerpSerpElementItem dataAsin(String dataAsin) {
     this.dataAsin = dataAsin;
     return this;
@@ -570,7 +570,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
         Objects.equals(this.domain, amazonAmazonSerpSerpElementItem.domain) &&
         Objects.equals(this.title, amazonAmazonSerpSerpElementItem.title) &&
         Objects.equals(this.url, amazonAmazonSerpSerpElementItem.url) &&
-        Objects.equals(this.description, amazonAmazonSerpSerpElementItem.description) &&
         Objects.equals(this.asin, amazonAmazonSerpSerpElementItem.asin) &&
         Objects.equals(this.imageUrl, amazonAmazonSerpSerpElementItem.imageUrl) &&
         Objects.equals(this.priceFrom, amazonAmazonSerpSerpElementItem.priceFrom) &&
@@ -582,6 +581,7 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
         Objects.equals(this.rating, amazonAmazonSerpSerpElementItem.rating) &&
         Objects.equals(this.deliveryInfo, amazonAmazonSerpSerpElementItem.deliveryInfo) &&
         Objects.equals(this.boughtPastMonth, amazonAmazonSerpSerpElementItem.boughtPastMonth) &&
+        Objects.equals(this.description, amazonAmazonSerpSerpElementItem.description) &&
         Objects.equals(this.dataAsin, amazonAmazonSerpSerpElementItem.dataAsin) &&
         super.equals(o);
   }
@@ -592,7 +592,7 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, rankGroup, rankAbsolute, position, xpath, domain, title, url, description, asin, imageUrl, priceFrom, priceTo, currency, specialOffers, isBestSeller, isAmazonChoice, rating, deliveryInfo, boughtPastMonth, dataAsin, super.hashCode());
+    return Objects.hash(seType, rankGroup, rankAbsolute, position, xpath, domain, title, url, asin, imageUrl, priceFrom, priceTo, currency, specialOffers, isBestSeller, isAmazonChoice, rating, deliveryInfo, boughtPastMonth, description, dataAsin, super.hashCode());
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -615,7 +615,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    asin: ").append(toIndentedString(asin)).append("\n");
     sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
     sb.append("    priceFrom: ").append(toIndentedString(priceFrom)).append("\n");
@@ -627,6 +626,7 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    deliveryInfo: ").append(toIndentedString(deliveryInfo)).append("\n");
     sb.append("    boughtPastMonth: ").append(toIndentedString(boughtPastMonth)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    dataAsin: ").append(toIndentedString(dataAsin)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -659,7 +659,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
     openapiFields.add("domain");
     openapiFields.add("title");
     openapiFields.add("url");
-    openapiFields.add("description");
     openapiFields.add("asin");
     openapiFields.add("image_url");
     openapiFields.add("price_from");
@@ -671,6 +670,7 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
     openapiFields.add("rating");
     openapiFields.add("delivery_info");
     openapiFields.add("bought_past_month");
+    openapiFields.add("description");
     openapiFields.add("data_asin");
 
     // a set of required properties/fields (JSON key names)

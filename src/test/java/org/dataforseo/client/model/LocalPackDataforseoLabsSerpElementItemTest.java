@@ -185,4 +185,12 @@ public class LocalPackDataforseoLabsSerpElementItemTest {
         // TODO: test rankChanges
     }
 
+    /**
+     * Test the property 'clickstreamEtv'
+     */
+    @Test
+    public void clickstreamEtvTest() {
+        // TODO: test clickstreamEtv
+    }
+
 }

@@ -188,6 +188,14 @@ public class GoogleBusinessInfoBusinessDataSerpElementItemTest {
     }
 
     /**
+     * Test the property 'contributorUrl'
+     */
+    @Test
+    public void contributorUrlTest() {
+        // TODO: test contributorUrl
+    }
+
+    /**
      * Test the property 'domain'
      */
     @Test

@@ -39,19 +39,19 @@ public class AppendixSerpPriceDataInfoTest {
     }
 
     /**
-     * Test the property 'regular'
-     */
-    @Test
-    public void regularTest() {
-        // TODO: test regular
-    }
-
-    /**
      * Test the property 'advanced'
      */
     @Test
     public void advancedTest() {
         // TODO: test advanced
+    }
+
+    /**
+     * Test the property 'regular'
+     */
+    @Test
+    public void regularTest() {
+        // TODO: test regular
     }
 
     /**

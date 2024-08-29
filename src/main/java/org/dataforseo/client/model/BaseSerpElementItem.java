@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * BaseSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -156,6 +156,9 @@ public class BaseSerpElementItem {
 
       String discriminatorValue = jsonElement.getAsJsonObject().get("type").getAsString();
       switch (discriminatorValue) {
+        case "ai_overview":
+          AiOverviewSerpElementItem.validateJsonElement(jsonElement);
+          break;
         case "answer_box":
           AnswerBoxSerpElementItem.validateJsonElement(jsonElement);
           break;

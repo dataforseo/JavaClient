@@ -322,4 +322,12 @@ public class BusinessDataBusinessListingsSearchLiveItemTest {
         // TODO: test lastUpdatedTime
     }
 
+    /**
+     * Test the property 'firstSeen'
+     */
+    @Test
+    public void firstSeenTest() {
+        // TODO: test firstSeen
+    }
+
 }

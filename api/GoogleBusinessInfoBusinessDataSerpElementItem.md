@@ -23,6 +23,7 @@
 |**phone** | **String** | phone number of the business entity |  [optional] |
 |**url** | **String** | absolute url of the business entity |  [optional] |
 |**contactUrl** | **String** | URL of the preferred contact page |  [optional] |
+|**contributorUrl** | **String** | URL of the user’s or entity’s Local Guides profile, if available |  [optional] |
 |**domain** | **String** | domain of the business entity |  [optional] |
 |**logo** | **String** | URL of the logo featured in Google My Business profile |  [optional] |
 |**mainImage** | **String** | URL of the main image featured in Google My Business profile |  [optional] |

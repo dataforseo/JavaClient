@@ -50,7 +50,7 @@ import org.dataforseo.client.JSON;
 /**
  * ResourceMetaInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-19T15:18:23.103906100+03:00[Europe/Kiev]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-08-28T19:49:11.515676700+03:00[Europe/Kiev]")
 public class ResourceMetaInfo {
   public static final String SERIALIZED_NAME_ALTERNATIVE_TEXT = "alternative_text";
   @SerializedName(SERIALIZED_NAME_ALTERNATIVE_TEXT)

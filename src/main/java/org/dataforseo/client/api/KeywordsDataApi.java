@@ -61,6 +61,11 @@ import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskGetResponseIn
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostRequestInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostResponseInfo;
 import org.dataforseo.client.model.KeywordsDataBingSearchVolumeTasksReadyResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo;
+import org.dataforseo.client.model.KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo;
 import org.dataforseo.client.model.KeywordsDataDataforseoTrendsDemographyLiveRequestInfo;
 import org.dataforseo.client.model.KeywordsDataDataforseoTrendsDemographyLiveResponseInfo;
 import org.dataforseo.client.model.KeywordsDataDataforseoTrendsExploreLiveRequestInfo;
@@ -2512,6 +2517,360 @@ public class KeywordsDataApi {
 
         okhttp3.Call localVarCall = bingSearchVolumeTasksReadyValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for clickstreamDataBulkSearchVolumeLive
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call clickstreamDataBulkSearchVolumeLiveCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = keywordsDataTaskRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/clickstream_data/bulk_search_volume/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+        return clickstreamDataBulkSearchVolumeLiveCall(keywordsDataTaskRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌  The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters). for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash&#39;
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @return KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo clickstreamDataBulkSearchVolumeLive(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> localVarResp = clickstreamDataBulkSearchVolumeLiveWithHttpInfo(keywordsDataTaskRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌  The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters). for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash&#39;
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @return ApiResponse&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> clickstreamDataBulkSearchVolumeLiveWithHttpInfo(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌  The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters). for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash&#39;
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call clickstreamDataBulkSearchVolumeLiveAsync(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for clickstreamDataDataforseoSearchVolumeLive
+     * @param keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call clickstreamDataDataforseoSearchVolumeLiveCall(List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/clickstream_data/dataforseo_search_volume/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call clickstreamDataDataforseoSearchVolumeLiveValidateBeforeCall(List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return clickstreamDataDataforseoSearchVolumeLiveCall(keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/dataforseo_search_volume/live/?bash&#39;
+     * @param keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  (optional)
+     * @return KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo clickstreamDataDataforseoSearchVolumeLive(List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo> localVarResp = clickstreamDataDataforseoSearchVolumeLiveWithHttpInfo(keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/dataforseo_search_volume/live/?bash&#39;
+     * @param keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  (optional)
+     * @return ApiResponse&lt;KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo> clickstreamDataDataforseoSearchVolumeLiveWithHttpInfo(List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = clickstreamDataDataforseoSearchVolumeLiveValidateBeforeCall(keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/dataforseo_search_volume/live/?bash&#39;
+     * @param keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call clickstreamDataDataforseoSearchVolumeLiveAsync(List<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo, final ApiCallback<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = clickstreamDataDataforseoSearchVolumeLiveValidateBeforeCall(keywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for clickstreamDataGlobalSearchVolumeLive
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call clickstreamDataGlobalSearchVolumeLiveCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = keywordsDataTaskRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/clickstream_data/global_search_volume/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+        return clickstreamDataGlobalSearchVolumeLiveCall(keywordsDataTaskRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌  The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash&#39;
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @return KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo clickstreamDataGlobalSearchVolumeLive(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> localVarResp = clickstreamDataGlobalSearchVolumeLiveWithHttpInfo(keywordsDataTaskRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌  The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash&#39;
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @return ApiResponse&lt;KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> clickstreamDataGlobalSearchVolumeLiveWithHttpInfo(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌  The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash&#39;
+     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call clickstreamDataGlobalSearchVolumeLiveAsync(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -6022,6 +6381,119 @@ public class KeywordsDataApi {
 
         okhttp3.Call localVarCall = keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for keywordsDataClickstreamDataLocationsAndLanguages
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call keywordsDataClickstreamDataLocationsAndLanguagesCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/clickstream_data/locations_and_languages";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call keywordsDataClickstreamDataLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return keywordsDataClickstreamDataLocationsAndLanguagesCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Using this endpoint you can get the full list of locations and languages supported in DataForSEO Clickstream Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages/?bash&#39;
+     * @return KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo keywordsDataClickstreamDataLocationsAndLanguages() throws ApiException {
+        ApiResponse<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> localVarResp = keywordsDataClickstreamDataLocationsAndLanguagesWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Using this endpoint you can get the full list of locations and languages supported in DataForSEO Clickstream Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages/?bash&#39;
+     * @return ApiResponse&lt;KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> keywordsDataClickstreamDataLocationsAndLanguagesWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = keywordsDataClickstreamDataLocationsAndLanguagesValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Using this endpoint you can get the full list of locations and languages supported in DataForSEO Clickstream Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call keywordsDataClickstreamDataLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = keywordsDataClickstreamDataLocationsAndLanguagesValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
