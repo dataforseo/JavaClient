@@ -13,7 +13,7 @@
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**totalCount** | **Integer** | the number of results returned in the items array |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;DataforseoLabsGoogleHistoricalSerpsLiveItem&gt;**](DataforseoLabsGoogleHistoricalSerpsLiveItem.md) | contains results featured in the ‘hotels_pack’ element of SERP |  [optional] |
+|**items** | [**List&lt;DataforseoLabsGoogleHistoricalSerpsLiveItem&gt;**](DataforseoLabsGoogleHistoricalSerpsLiveItem.md) | additional items present in the element if there are none, equals null |  [optional] |
 
 
 

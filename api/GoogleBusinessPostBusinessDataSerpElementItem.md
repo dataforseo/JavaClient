@@ -7,8 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the listed updates absolute position among all present elements |  [optional] |
 |**position** | **String** | the alignment of the element in SERP can take the following values: right |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**author** | **String** | author of the post |  [optional] |

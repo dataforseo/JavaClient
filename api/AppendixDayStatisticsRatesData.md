@@ -12,7 +12,7 @@
 |**totalSerp** | **Double** |  |  [optional] |
 |**keywordsData** | [**AppendixKeywordsDataDayStatisticsRatesData**](AppendixKeywordsDataDayStatisticsRatesData.md) |  |  [optional] |
 |**totalKeywordsData** | **Double** |  |  [optional] |
-|**appendix** | [**AppendixAppendixDayStatisticsRatesData**](AppendixAppendixDayStatisticsRatesData.md) |  |  [optional] |
+|**appendix** | [**AppendixAppendixDaysRatesDataInfo**](AppendixAppendixDaysRatesDataInfo.md) |  |  [optional] |
 |**totalAppendix** | **Double** |  |  [optional] |
 |**dataforseoLabs** | [**AppendixDataforseoLabsDayStatisticsRatesData**](AppendixDataforseoLabsDayStatisticsRatesData.md) |  |  [optional] |
 |**totalDataforseoLabs** | **Double** |  |  [optional] |
@@ -22,7 +22,7 @@
 |**totalMerchant** | **Double** |  |  [optional] |
 |**onPage** | [**AppendixOnPageDayStatisticsRatesData**](AppendixOnPageDayStatisticsRatesData.md) |  |  [optional] |
 |**totalOnPage** | **Double** |  |  [optional] |
-|**businessData** | [**AppendixBusinessDataStatisticsRatesDataInfo**](AppendixBusinessDataStatisticsRatesDataInfo.md) |  |  [optional] |
+|**businessData** | [**AppendixBusinessDataDayStatisticsRatesData**](AppendixBusinessDataDayStatisticsRatesData.md) |  |  [optional] |
 |**totalBusinessData** | **Double** |  |  [optional] |
 |**backlinks** | [**AppendixBacklinksDayStatisticsRatesData**](AppendixBacklinksDayStatisticsRatesData.md) |  |  [optional] |
 |**totalBacklinks** | **Double** |  |  [optional] |
@@ -33,9 +33,9 @@
 |**contentGeneration** | [**AppendixContentGenerationDayStatisticsRatesData**](AppendixContentGenerationDayStatisticsRatesData.md) |  |  [optional] |
 |**totalContentGeneration** | **Double** |  |  [optional] |
 |**value** | **String** | time period for grouping day in the yyyy-MM-dd format minute in the yyyy-MM-dd HH:mm format |  [optional] |
-|**totalTrafficAnalytics** | **Double** |  |  [optional] |
 |**totalReviews** | **Double** |  |  [optional] |
 |**reviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**totalTrafficAnalytics** | **Double** |  |  [optional] |
 
 
 

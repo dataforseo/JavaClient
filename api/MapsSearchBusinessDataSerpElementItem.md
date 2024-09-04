@@ -7,8 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from the rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the elements |  [optional] |
 |**domain** | **String** | domain of the business entity |  [optional] |
 |**title** | **String** | directory title can take the following values: At this place, Directory |  [optional] |
 |**url** | **String** | URL to view the menu |  [optional] |

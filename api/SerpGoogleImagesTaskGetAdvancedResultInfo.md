@@ -18,7 +18,7 @@
 |**itemTypes** | **List&lt;String&gt;** | types of search results in SERP contains types of search results (items) found in SERP. possible item types: carousel, images_search, related_searches |  [optional] |
 |**seResultsCount** | **Long** | total number of results in SERP |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;BaseSerpElementItem&gt;**](BaseSerpElementItem.md) | contains keywords and images related to the specified search term |  [optional] |
+|**items** | [**List&lt;BaseGoogleImagesSerpElementItem&gt;**](BaseGoogleImagesSerpElementItem.md) | contains keywords and images related to the specified search term |  [optional] |
 
 
 

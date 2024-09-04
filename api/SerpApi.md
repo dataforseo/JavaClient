@@ -162,12 +162,12 @@ All URIs are relative to *https://api.dataforseo.com*
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -230,12 +230,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -298,12 +298,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -316,7 +316,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "e13b79da-02b3-462b-93fa-46f29e601965"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "64dd4b74-295f-4e1b-9a57-a2bd245b270c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBaiduOrganicTaskGetHtmlResponseInfo result = apiInstance.baiduOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -366,12 +366,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -434,12 +434,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -502,12 +502,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -566,12 +566,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -630,12 +630,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -698,12 +698,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -766,12 +766,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -784,7 +784,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "09d7e839-0b94-488c-8f94-81ee5a9f3948"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "995b4305-9adb-4b9b-8b94-bcf071ee88ec"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingLocalPackTaskGetHtmlResponseInfo result = apiInstance.bingLocalPackTaskGetHtml(id);
       System.out.println(result);
@@ -834,12 +834,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -902,12 +902,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -970,12 +970,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1034,12 +1034,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1098,12 +1098,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1166,12 +1166,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1234,12 +1234,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1302,12 +1302,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1370,12 +1370,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1388,7 +1388,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "ee27873f-2ba1-490c-94be-d44e13055d2a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "cd9cb809-c1ba-4af2-92b4-9bc589dd5339"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingOrganicTaskGetHtmlResponseInfo result = apiInstance.bingOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -1438,12 +1438,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1506,12 +1506,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1574,12 +1574,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1638,12 +1638,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1702,12 +1702,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1770,12 +1770,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1838,12 +1838,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1906,12 +1906,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1970,12 +1970,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2034,12 +2034,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2102,12 +2102,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2170,12 +2170,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2238,12 +2238,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2302,12 +2302,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2366,12 +2366,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2434,12 +2434,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2502,12 +2502,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2570,12 +2570,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2634,12 +2634,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2698,12 +2698,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2766,12 +2766,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2834,12 +2834,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2902,12 +2902,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2966,12 +2966,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3030,12 +3030,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3098,12 +3098,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3166,12 +3166,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3234,12 +3234,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3252,7 +3252,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "ba2e481e-8b95-41cb-88a3-f741e4538e14"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "f767cdf0-27ad-466c-b52c-bfe90fca7a1e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleImagesTaskGetHtmlResponseInfo result = apiInstance.googleImagesTaskGetHtml(id);
       System.out.println(result);
@@ -3302,12 +3302,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3370,12 +3370,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3434,12 +3434,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3498,12 +3498,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3566,12 +3566,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3584,7 +3584,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "acbe4ed6-e50e-430c-9821-27b4b2dd6601"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "4a2152b1-e16f-4b39-8fb2-3e0d3201100a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleJobsTaskGetHtmlResponseInfo result = apiInstance.googleJobsTaskGetHtml(id);
       System.out.println(result);
@@ -3634,12 +3634,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3702,12 +3702,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3766,12 +3766,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3830,12 +3830,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3898,12 +3898,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3966,12 +3966,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4034,12 +4034,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4052,7 +4052,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "4e225bfa-588f-4a22-b6f6-08f2176d2d55"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "eb05b76a-7519-490e-b5c5-685160e36d69"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleLocalFinderTaskGetHtmlResponseInfo result = apiInstance.googleLocalFinderTaskGetHtml(id);
       System.out.println(result);
@@ -4102,12 +4102,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4170,12 +4170,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4234,12 +4234,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4298,12 +4298,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4366,12 +4366,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4434,12 +4434,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4502,12 +4502,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4566,12 +4566,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4630,12 +4630,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4698,12 +4698,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4766,12 +4766,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4834,12 +4834,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4852,7 +4852,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "6e77dd5f-e5e4-4d43-93bc-3831b9400d23"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "e2aa6454-e57b-4a2c-b4b8-0859f124e06f"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleNewsTaskGetHtmlResponseInfo result = apiInstance.googleNewsTaskGetHtml(id);
       System.out.println(result);
@@ -4902,12 +4902,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4970,12 +4970,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5034,12 +5034,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5098,12 +5098,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5166,12 +5166,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5234,12 +5234,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5302,12 +5302,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5370,12 +5370,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5388,7 +5388,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "19ec1aa2-1334-4292-9d57-49e78113881e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "94fe5472-1c0d-460e-92f4-6dd8cf4fc833"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleOrganicTaskGetHtmlResponseInfo result = apiInstance.googleOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -5438,12 +5438,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5506,12 +5506,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5574,12 +5574,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5638,12 +5638,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5702,12 +5702,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5770,12 +5770,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5838,12 +5838,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5902,12 +5902,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -5966,12 +5966,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6034,12 +6034,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6052,7 +6052,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "f84f09a3-dbe5-45b7-9a47-3f710a1f3110"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "ab283027-6983-47d5-abe6-9f63ba854bf5"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpNaverOrganicTaskGetHtmlResponseInfo result = apiInstance.naverOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -6102,12 +6102,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6170,12 +6170,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6238,12 +6238,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6302,12 +6302,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6366,12 +6366,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6434,12 +6434,12 @@ You will receive the list of languages by calling this API. You can also downloa
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6498,12 +6498,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6562,12 +6562,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6630,12 +6630,12 @@ You will receive the list of languages by calling this API. for more info please
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6694,12 +6694,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6758,12 +6758,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6826,12 +6826,12 @@ By calling this endpoint you will receive information about the SERP API tasks t
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6894,12 +6894,12 @@ You will receive the list of languages by calling this API. for more info please
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -6958,12 +6958,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7022,12 +7022,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7090,12 +7090,12 @@ This endpoint is designed to provide you with the list of IDs and metadata of th
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7158,12 +7158,12 @@ You will receive the list of languages by calling this API. for more info please
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7222,12 +7222,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7286,12 +7286,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7354,12 +7354,12 @@ You will receive the list of languages by calling this API. for more info please
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7418,12 +7418,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7482,12 +7482,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7550,12 +7550,12 @@ You will receive the list of languages by calling this API. for more info please
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7614,12 +7614,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7678,12 +7678,12 @@ You will receive the list of locations by this API call. You can filter the list
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7746,12 +7746,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7814,12 +7814,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7832,7 +7832,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "45d9cb57-6382-43b0-a4aa-6ee24092146b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "333a69e4-bfdc-4987-8c15-4c7ae105972e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpSeznamOrganicTaskGetHtmlResponseInfo result = apiInstance.seznamOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -7882,12 +7882,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -7950,12 +7950,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8018,12 +8018,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8082,12 +8082,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8146,12 +8146,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8210,12 +8210,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8278,12 +8278,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8346,12 +8346,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8414,12 +8414,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8482,12 +8482,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8500,7 +8500,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "901f5b4f-37e3-4a77-ad1a-f6bb111d501e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "d4d05a5a-b9d0-44e2-b3e2-36514e19d441"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpYahooOrganicTaskGetHtmlResponseInfo result = apiInstance.yahooOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -8550,12 +8550,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8618,12 +8618,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8686,12 +8686,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8750,12 +8750,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8814,12 +8814,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8882,12 +8882,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -8950,12 +8950,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9018,12 +9018,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9082,12 +9082,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9146,12 +9146,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9214,12 +9214,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9282,12 +9282,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9350,12 +9350,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9414,12 +9414,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9478,12 +9478,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9546,12 +9546,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9614,12 +9614,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9682,12 +9682,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -9746,12 +9746,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.SerpApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
 
 public class Example {
   public static void main(String[] args) {

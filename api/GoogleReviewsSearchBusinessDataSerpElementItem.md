@@ -7,8 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the listed reviews absolute position among all reviews on the list |  [optional] |
 |**position** | **String** | the alignment of the review in SERP can take the following values: right |  [optional] |
 |**xpath** | **String** | the XPath of the review |  [optional] |
 |**reviewText** | **String** | the content of the review |  [optional] |

@@ -81,12 +81,12 @@ All URIs are relative to *https://api.dataforseo.com*
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -149,12 +149,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -167,7 +167,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "26fe298f-208f-4726-af38-76dcaec866a8"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "0f6cf700-c531-4424-8268-a3b89b5c898a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordPerformanceTaskGetResponseInfo result = apiInstance.bingKeywordPerformanceTaskGet(id);
       System.out.println(result);
@@ -217,12 +217,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -285,12 +285,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -349,12 +349,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -417,12 +417,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -435,7 +435,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "d059ca11-d6e9-4740-b88a-d665cd9d5fef"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "c9374a4b-5223-404e-9718-651563dec775"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo result = apiInstance.bingKeywordsForKeywordsTaskGet(id);
       System.out.println(result);
@@ -485,12 +485,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -553,12 +553,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -617,12 +617,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -685,12 +685,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -703,7 +703,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "6284a11b-0379-4091-8746-d24f87d9485d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "7beffb7b-c14e-4c9d-9c2d-14f2f20a271c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordsForSiteTaskGetResponseInfo result = apiInstance.bingKeywordsForSiteTaskGet(id);
       System.out.println(result);
@@ -753,12 +753,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -821,12 +821,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -885,12 +885,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -953,12 +953,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -971,7 +971,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "7fcd086a-81b5-4c95-9f8b-f01e25c557a4"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "bbe184cb-a5e2-4505-9534-aa6d2bd8b97a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo result = apiInstance.bingSearchVolumeHistoryTaskGet(id);
       System.out.println(result);
@@ -1021,12 +1021,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1089,12 +1089,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1153,12 +1153,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1221,12 +1221,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1239,7 +1239,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "eea6df11-c7ed-4bbb-a73c-dd84bc18271e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "b94d570e-5586-441c-a79c-20071a22bbd1"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingSearchVolumeTaskGetResponseInfo result = apiInstance.bingSearchVolumeTaskGet(id);
       System.out.println(result);
@@ -1289,12 +1289,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1357,12 +1357,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1421,12 +1421,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1489,12 +1489,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1557,12 +1557,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1625,12 +1625,12 @@ This endpoint will provide you with the demographic breakdown (by age and gender
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1693,12 +1693,12 @@ This endpoint will provide you with the keyword popularity data from DataForSEO 
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1761,12 +1761,12 @@ This endpoint will provide you with the keyword popularity data from DataForSEO 
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1829,12 +1829,12 @@ This endpoint will provide you with location-specific keyword popularity data fr
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1897,12 +1897,12 @@ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/goo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1965,12 +1965,12 @@ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/goo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1983,7 +1983,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "4797c77d-213b-4df1-a468-dec9cad24dd2"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "29fb4ffd-5f75-47ed-b92c-4f74c8b54752"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo result = apiInstance.googleAdsAdTrafficByKeywordsTaskGet(id);
       System.out.println(result);
@@ -2033,12 +2033,12 @@ for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/goo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2101,12 +2101,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2165,12 +2165,12 @@ Note that Google Ads Keywords Data API is based on the latest version of the Goo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2233,12 +2233,12 @@ Note that Google Ads Keywords Data API is based on the latest version of the Goo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2251,7 +2251,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "389d886f-ea37-4789-9600-1525c8567c77"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "7a8aedaa-b3a6-420e-9932-f4a407dc24a5"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo result = apiInstance.googleAdsKeywordsForKeywordsTaskGet(id);
       System.out.println(result);
@@ -2301,12 +2301,12 @@ Note that Google Ads Keywords Data API is based on the latest version of the Goo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2369,12 +2369,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2433,12 +2433,12 @@ Note that Google Ads Keywords Data API is based on the latest version of the Goo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2501,12 +2501,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2519,7 +2519,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "b2543ee5-cad8-4cbb-939f-a52077463d5c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "fa20faa9-70ac-4076-9307-54740621c7c3"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo result = apiInstance.googleAdsKeywordsForSiteTaskGet(id);
       System.out.println(result);
@@ -2569,12 +2569,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2637,12 +2637,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2701,12 +2701,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2769,12 +2769,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2787,7 +2787,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "5018f086-0421-4e92-b7db-3ec349130077"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "60fe52fa-a790-4cb2-a960-b66c26826e81"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo result = apiInstance.googleAdsSearchVolumeTaskGet(id);
       System.out.println(result);
@@ -2837,12 +2837,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2905,12 +2905,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2969,12 +2969,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3033,12 +3033,12 @@ By calling this API you will receive the list of categories supported by Google 
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3097,12 +3097,12 @@ This endpoint will provide you with the keyword popularity data from the ‘Expl
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3165,12 +3165,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3183,7 +3183,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "bc293e59-f37d-44e7-8d59-9cff6a90df2a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "8a0a28fd-94a3-4eba-9f83-c9e963220473"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleTrendsExploreTaskGetResponseInfo result = apiInstance.googleTrendsExploreTaskGet(id);
       System.out.println(result);
@@ -3233,12 +3233,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3301,12 +3301,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3365,12 +3365,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3429,12 +3429,12 @@ By calling this API you will receive the list of languages supported by Bing Ads
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3493,12 +3493,12 @@ By calling this API you will receive the list of locations supported in Bing Ads
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3557,12 +3557,12 @@ By calling this API you will receive the list of locations and languages support
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3621,12 +3621,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3685,12 +3685,12 @@ You will receive the list of DataForSEO Trends locations by calling this API. Yo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3749,12 +3749,12 @@ You will receive the list of DataForSEO Trends locations by calling this API. Yo
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3817,12 +3817,12 @@ By calling this endpoint you will receive information about the Keywords Data AP
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3885,12 +3885,12 @@ By calling this API you will receive the list of languages supported by Keywords
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3949,12 +3949,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4013,12 +4013,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4081,12 +4081,12 @@ By calling this API you will receive the list of languages supported by Google T
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4145,12 +4145,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4209,12 +4209,12 @@ This endpoint does not need any parameter.
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -4277,12 +4277,12 @@ This endpoint is designed to provide you with the list of IDs and metadata of th
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.KeywordsDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
 
 public class Example {
   public static void main(String[] args) {

@@ -7,8 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | group rank in SERP position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank in SERP for the target domain absolute position among all the elements in SERP |  [optional] |
 |**videoId** | **String** | ID of the video received in a POST array |  [optional] |
 |**title** | **String** | title of the video |  [optional] |
 |**url** | **String** | URL of the video |  [optional] |
@@ -27,6 +25,7 @@
 |**keywords** | **List&lt;String&gt;** | keywords relevant to the video |  [optional] |
 |**category** | **String** | the category the video belongs to |  [optional] |
 |**isLive** | **Boolean** | indicates whether the video is on live |  [optional] |
+|**isEmbeddable** | **Boolean** | indicates whether the video is embeddable |  [optional] |
 |**durationTime** | **String** | duration of the video |  [optional] |
 |**durationTimeSeconds** | **Integer** | duration of the video in seconds |  [optional] |
 |**subtitles** | [**List&lt;Subtitles&gt;**](Subtitles.md) | array of elements describing properties of subtitles in the video |  [optional] |

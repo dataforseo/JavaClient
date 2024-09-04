@@ -7,8 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | group rank in SERP position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank in SERP for the target domain absolute position among all the elements in SERP |  [optional] |
 |**authorName** | **String** | name of the author of the comment |  [optional] |
 |**authorThumbnail** | **String** | the URL of the page where the author’s channel logo is hosted |  [optional] |
 |**authorUrl** | **String** | URL of the author’s channel |  [optional] |

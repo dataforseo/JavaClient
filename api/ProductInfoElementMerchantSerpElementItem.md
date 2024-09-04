@@ -7,9 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank on the product specification page absolute position among all the elements found on the product specification page |  [optional] |
-|**position** | **String** | alignment of the element on the product specification page can take the following values: right, left |  [optional] |
 |**productId** | **String** | product_id received in a POST array ilearn more about the parameter in this help center guide |  [optional] |
 |**title** | **String** | title of the product |  [optional] |
 |**description** | **String** | description of the product |  [optional] |

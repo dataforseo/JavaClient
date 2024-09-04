@@ -16,8 +16,8 @@
 |**locations** | **Double** |  |  [optional] |
 |**categories** | **Double** |  |  [optional] |
 |**tasksReady** | **Double** |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
 |**appListings** | [**AppendixBusinessListingsBusinessDataLimitsRatesDataInfo**](AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
 
 
 

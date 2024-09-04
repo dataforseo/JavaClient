@@ -58,12 +58,12 @@ This endpoint will provide you with information about the product and ASINs of a
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -126,12 +126,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -144,7 +144,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "6d198e86-7549-49dc-93ab-2b3a79452102"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "4bcfbc77-64f3-42b9-99cd-ccd33f659bcf"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonAsinTaskGetHtmlResponseInfo result = apiInstance.amazonAsinTaskGetHtml(id);
       System.out.println(result);
@@ -194,12 +194,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -262,12 +262,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -326,12 +326,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -394,12 +394,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -412,7 +412,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "3b68b1c8-b2d9-42ef-bf61-ecbb4b2211db"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "1cdc1eda-70e0-422d-9089-8b56bddc8745"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonProductsTaskGetHtmlResponseInfo result = apiInstance.amazonProductsTaskGetHtml(id);
       System.out.println(result);
@@ -462,12 +462,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -530,12 +530,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -594,12 +594,12 @@ This endpoint provides feedback data on products listed on the Amazon marketplac
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -662,12 +662,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -680,7 +680,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "980ffc8b-0ca6-487f-8678-a316ac97e3a3"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "d6d7ab04-148c-4b2f-b025-88e733b3d134"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonReviewsTaskGetHtmlResponseInfo result = apiInstance.amazonReviewsTaskGetHtml(id);
       System.out.println(result);
@@ -730,12 +730,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -798,12 +798,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -862,12 +862,12 @@ This endpoint provides a list of sellers of the specified product on Amazon. The
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -930,12 +930,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -948,7 +948,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "4bce2905-a525-4d9b-9321-338bb0bc415c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "1bac1692-cb78-4653-a82b-776fa7fe1a8d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantAmazonSellersTaskGetHtmlResponseInfo result = apiInstance.amazonSellersTaskGetHtml(id);
       System.out.println(result);
@@ -998,12 +998,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1066,12 +1066,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1130,12 +1130,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1198,12 +1198,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1266,12 +1266,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1330,12 +1330,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1398,12 +1398,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1416,7 +1416,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "144be784-4fb7-4487-ba8d-a773794f176b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "734c2e7f-7e66-45fb-bf09-7ca46ae83e01"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantGoogleProductSpecTaskGetHtmlResponseInfo result = apiInstance.googleProductSpecTaskGetHtml(id);
       System.out.println(result);
@@ -1466,12 +1466,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1534,12 +1534,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1598,12 +1598,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1666,12 +1666,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1684,7 +1684,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "ee9e1222-af09-46bb-9653-45feb4cfcec1"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "64189eda-4b00-4a2d-b688-1d55be1db76b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantGoogleProductsTaskGetHtmlResponseInfo result = apiInstance.googleProductsTaskGetHtml(id);
       System.out.println(result);
@@ -1734,12 +1734,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1802,12 +1802,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1866,12 +1866,12 @@ Google Shopping Sellers Ad URL is designed to provide you with a full URL of the
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1934,12 +1934,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2002,12 +2002,12 @@ Description of the fields for sending a request: for more info please visit &#39
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2020,7 +2020,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = "7a0ec17c-c5dd-4933-9e19-eb828be09c05"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "ed73f429-52db-48ab-82bc-8983f75ce3dd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       MerchantGoogleSellersTaskGetHtmlResponseInfo result = apiInstance.googleSellersTaskGetHtml(id);
       System.out.println(result);
@@ -2070,12 +2070,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2138,12 +2138,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2202,12 +2202,12 @@ You will receive the list of supported Amazon languages by calling this API. for
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2266,12 +2266,12 @@ You will receive the list of supported Amazon locations by this API call. You ca
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2330,12 +2330,12 @@ You will receive the list of supported Amazon locations by this API call. You ca
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2398,12 +2398,12 @@ By calling this endpoint you will receive information about the Merchant API tas
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2466,12 +2466,12 @@ You will receive the list of supported Google Shopping languages by calling this
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2530,12 +2530,12 @@ for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/l
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2594,12 +2594,12 @@ for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/l
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2662,12 +2662,12 @@ This endpoint is designed to provide you with the list of IDs and metadata of th
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2730,12 +2730,12 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import org.dataforseo.client.ApiClient;
-import org.dataforseo.client.ApiException;
-import org.dataforseo.client.Configuration;
-import org.dataforseo.client.auth.*;
-import org.dataforseo.client.models.*;
-import org.dataforseo.client.api.MerchantApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.MerchantApi;
 
 public class Example {
   public static void main(String[] args) {

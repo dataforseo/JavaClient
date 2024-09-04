@@ -7,8 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the elements |  [optional] |
 |**position** | **String** | the alignment in SERP |  [optional] |
 |**title** | **String** | title of the element in SERP the name of the business entity for which the results are collected |  [optional] |
 |**description** | **String** | description of the element in SERP the description of the business entity for which the results are collected |  [optional] |

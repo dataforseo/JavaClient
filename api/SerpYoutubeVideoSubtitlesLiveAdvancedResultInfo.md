@@ -22,7 +22,7 @@
 |**subtitlesCount** | **Long** | number of subtitles in the video |  [optional] |
 |**title** | **String** | title of the video |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;BaseSerpElementItem&gt;**](BaseSerpElementItem.md) | elements of search results found in SERP |  [optional] |
+|**items** | [**List&lt;BaseYoutubeSerpElementItem&gt;**](BaseYoutubeSerpElementItem.md) | elements of search results found in SERP |  [optional] |
 
 
 
