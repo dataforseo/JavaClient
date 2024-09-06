@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AiOverviewReference
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-04T13:45:49.667097300+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AiOverviewReference {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -103,7 +103,7 @@ public class AiOverviewReference {
   }
 
   /**
-   * source of the element indicates the source of information included in the questions_and_answers_element
+   * reference source name or title
    * @return source
    */
   @javax.annotation.Nullable
@@ -122,7 +122,7 @@ public class AiOverviewReference {
   }
 
   /**
-   * domain in SERP
+   * website domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -160,7 +160,7 @@ public class AiOverviewReference {
   }
 
   /**
-   * title of a given shopping element
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -179,7 +179,7 @@ public class AiOverviewReference {
   }
 
   /**
-   * reference text text snippet from the page that was used to generate the ai_overview_element
+   * row content
    * @return text
    */
   @javax.annotation.Nullable

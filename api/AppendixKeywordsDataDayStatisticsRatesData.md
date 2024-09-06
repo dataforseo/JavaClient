@@ -24,8 +24,8 @@
 |**dataforseoTrends** | [**AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo**](AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**clickstreamData** | [**AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo**](AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
+|**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

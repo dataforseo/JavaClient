@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**title** | **String** | title of the row |  [optional] |
 |**url** | **String** | source URL |  [optional] |
-|**items** | [**List&lt;GoogleFlightsElement&gt;**](GoogleFlightsElement.md) | additional items present in the element if there are none, equals null |  [optional] |
+|**items** | [**List&lt;GoogleFlightsElement&gt;**](GoogleFlightsElement.md) | contains arrays of specific images |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
 

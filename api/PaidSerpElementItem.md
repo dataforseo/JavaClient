@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**title** | **String** | title of the result in SERP |  [optional] |
-|**domain** | **String** | website domain |  [optional] |
+|**domain** | **String** | domain name of the reference |  [optional] |
 |**breadcrumb** | **String** | breadcrumb in SERP |  [optional] |
 |**isImage** | **Boolean** | indicates whether the element contains an image |  [optional] |
 |**isVideo** | **Boolean** | indicates whether the element contains a video |  [optional] |

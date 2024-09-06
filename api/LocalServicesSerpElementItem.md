@@ -10,7 +10,7 @@
 |**title** | **String** | title of the row |  [optional] |
 |**url** | **String** | source URL |  [optional] |
 |**domain** | **String** | source domain |  [optional] |
-|**items** | [**List&lt;LocalServicesElement&gt;**](LocalServicesElement.md) | additional items present in the element if there are none, equals null |  [optional] |
+|**items** | [**List&lt;LocalServicesElement&gt;**](LocalServicesElement.md) | contains arrays of specific images |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
 

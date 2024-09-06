@@ -313,35 +313,19 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'status'
-     */
-    @Test
-    public void statusTest() {
-        // TODO: test status
-    }
-
-    /**
-     * Test the property 'amazon'
-     */
-    @Test
-    public void amazonTest() {
-        // TODO: test amazon
-    }
-
-    /**
-     * Test the property 'availableFilters'
-     */
-    @Test
-    public void availableFiltersTest() {
-        // TODO: test availableFilters
-    }
-
-    /**
      * Test the property 'historicalBulkTrafficEstimation'
      */
     @Test
     public void historicalBulkTrafficEstimationTest() {
         // TODO: test historicalBulkTrafficEstimation
+    }
+
+    /**
+     * Test the property 'languages'
+     */
+    @Test
+    public void languagesTest() {
+        // TODO: test languages
     }
 
     /**
@@ -353,11 +337,19 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'availableHistory'
+     * Test the property 'topGoogleSearches'
      */
     @Test
-    public void availableHistoryTest() {
-        // TODO: test availableHistory
+    public void topGoogleSearchesTest() {
+        // TODO: test topGoogleSearches
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
     }
 
     /**
@@ -369,19 +361,27 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'topGoogleSearches'
+     * Test the property 'availableHistory'
      */
     @Test
-    public void topGoogleSearchesTest() {
-        // TODO: test topGoogleSearches
+    public void availableHistoryTest() {
+        // TODO: test availableHistory
     }
 
     /**
-     * Test the property 'languages'
+     * Test the property 'availableFilters'
      */
     @Test
-    public void languagesTest() {
-        // TODO: test languages
+    public void availableFiltersTest() {
+        // TODO: test availableFilters
+    }
+
+    /**
+     * Test the property 'amazon'
+     */
+    @Test
+    public void amazonTest() {
+        // TODO: test amazon
     }
 
 }

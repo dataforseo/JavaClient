@@ -518,6 +518,7 @@ public class JSON {
                         classByDiscriminatorValue.put("images", io.github.dataforseo.client.model.ImagesSerpElementItem.class);
                         classByDiscriminatorValue.put("jobs", io.github.dataforseo.client.model.JobsSerpElementItem.class);
                         classByDiscriminatorValue.put("knowledge_graph", io.github.dataforseo.client.model.KnowledgeGraphSerpElementItem.class);
+                        classByDiscriminatorValue.put("knowledge_graph_ai_overview_item", io.github.dataforseo.client.model.KnowledgeGraphAiOverviewItemSerpElementItem.class);
                         classByDiscriminatorValue.put("knowledge_graph_carousel_item", io.github.dataforseo.client.model.KnowledgeGraphCarouselItemSerpElementItem.class);
                         classByDiscriminatorValue.put("knowledge_graph_description_item", io.github.dataforseo.client.model.KnowledgeGraphDescriptionItemSerpElementItem.class);
                         classByDiscriminatorValue.put("knowledge_graph_expanded_item", io.github.dataforseo.client.model.KnowledgeGraphExpandedItemSerpElementItem.class);
@@ -1080,6 +1081,15 @@ public class JSON {
                     public Class<? extends io.github.dataforseo.client.model.JobsSerpElementItem> getClassForElement(JsonElement readElement) {
                         Map<String, Class> classByDiscriminatorValue = new HashMap<String, Class>();
                         classByDiscriminatorValue.put("JobsSerpElementItem", io.github.dataforseo.client.model.JobsSerpElementItem.class);
+                        return getClassByDiscriminator(classByDiscriminatorValue,
+                                getDiscriminatorValue(readElement, "type"));
+                    }
+          })
+                .registerTypeSelector(io.github.dataforseo.client.model.KnowledgeGraphAiOverviewItemSerpElementItem.class, new TypeSelector<io.github.dataforseo.client.model.KnowledgeGraphAiOverviewItemSerpElementItem>() {
+                    @Override
+                    public Class<? extends io.github.dataforseo.client.model.KnowledgeGraphAiOverviewItemSerpElementItem> getClassForElement(JsonElement readElement) {
+                        Map<String, Class> classByDiscriminatorValue = new HashMap<String, Class>();
+                        classByDiscriminatorValue.put("KnowledgeGraphAiOverviewItemSerpElementItem", io.github.dataforseo.client.model.KnowledgeGraphAiOverviewItemSerpElementItem.class);
                         return getClassByDiscriminator(classByDiscriminatorValue,
                                 getDiscriminatorValue(readElement, "type"));
                     }
@@ -2133,8 +2143,9 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixAppDataLimitsRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixAppDataPriceData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixAppendixDataInfo.CustomTypeAdapterFactory());
-        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixAppendixDaysRatesDataInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixAppendixDayStatisticsRatesData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixAppendixPriceData.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixAppendixsRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixBacklinksDayStatisticsRatesData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixBacklinksLimitsRatesDataInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixBacklinksPriceData.CustomTypeAdapterFactory());
@@ -3284,6 +3295,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataIdListResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataIdListTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KeywordsDataTaskRequestInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KnowledgeGraphAiOverviewItemSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KnowledgeGraphCarouselItemSerpElementItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.KnowledgeGraphDataforseoLabsSerpElementItem.CustomTypeAdapterFactory());

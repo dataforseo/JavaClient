@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixLighthouseOnPageDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-04T13:45:49.667097300+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixLighthouseOnPageDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_TASK_POST = "task_post";
   @SerializedName(SERIALIZED_NAME_TASK_POST)
@@ -67,13 +67,13 @@ public class AppendixLighthouseOnPageDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_LIVE)
   private Double live;
 
-  public static final String SERIALIZED_NAME_LANGUAGES = "languages";
-  @SerializedName(SERIALIZED_NAME_LANGUAGES)
-  private Double languages;
-
   public static final String SERIALIZED_NAME_AUDITS = "audits";
   @SerializedName(SERIALIZED_NAME_AUDITS)
   private Double audits;
+
+  public static final String SERIALIZED_NAME_LANGUAGES = "languages";
+  @SerializedName(SERIALIZED_NAME_LANGUAGES)
+  private Double languages;
 
   public static final String SERIALIZED_NAME_VERSIONS = "versions";
   @SerializedName(SERIALIZED_NAME_VERSIONS)
@@ -158,25 +158,6 @@ public class AppendixLighthouseOnPageDayStatisticsRatesData {
   }
 
 
-  public AppendixLighthouseOnPageDayStatisticsRatesData languages(Double languages) {
-    this.languages = languages;
-    return this;
-  }
-
-  /**
-   * Get languages
-   * @return languages
-   */
-  @javax.annotation.Nullable
-  public Double getLanguages() {
-    return languages;
-  }
-
-  public void setLanguages(Double languages) {
-    this.languages = languages;
-  }
-
-
   public AppendixLighthouseOnPageDayStatisticsRatesData audits(Double audits) {
     this.audits = audits;
     return this;
@@ -193,6 +174,25 @@ public class AppendixLighthouseOnPageDayStatisticsRatesData {
 
   public void setAudits(Double audits) {
     this.audits = audits;
+  }
+
+
+  public AppendixLighthouseOnPageDayStatisticsRatesData languages(Double languages) {
+    this.languages = languages;
+    return this;
+  }
+
+  /**
+   * Get languages
+   * @return languages
+   */
+  @javax.annotation.Nullable
+  public Double getLanguages() {
+    return languages;
+  }
+
+  public void setLanguages(Double languages) {
+    this.languages = languages;
   }
 
 
@@ -273,8 +273,8 @@ public class AppendixLighthouseOnPageDayStatisticsRatesData {
         Objects.equals(this.tasksReady, appendixLighthouseOnPageDayStatisticsRatesData.tasksReady) &&
         Objects.equals(this.taskGet, appendixLighthouseOnPageDayStatisticsRatesData.taskGet) &&
         Objects.equals(this.live, appendixLighthouseOnPageDayStatisticsRatesData.live) &&
-        Objects.equals(this.languages, appendixLighthouseOnPageDayStatisticsRatesData.languages) &&
         Objects.equals(this.audits, appendixLighthouseOnPageDayStatisticsRatesData.audits) &&
+        Objects.equals(this.languages, appendixLighthouseOnPageDayStatisticsRatesData.languages) &&
         Objects.equals(this.versions, appendixLighthouseOnPageDayStatisticsRatesData.versions)&&
         Objects.equals(this.additionalProperties, appendixLighthouseOnPageDayStatisticsRatesData.additionalProperties);
   }
@@ -285,7 +285,7 @@ public class AppendixLighthouseOnPageDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(taskPost, tasksReady, taskGet, live, languages, audits, versions, additionalProperties);
+    return Objects.hash(taskPost, tasksReady, taskGet, live, audits, languages, versions, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -303,8 +303,8 @@ public class AppendixLighthouseOnPageDayStatisticsRatesData {
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("    taskGet: ").append(toIndentedString(taskGet)).append("\n");
     sb.append("    live: ").append(toIndentedString(live)).append("\n");
-    sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    audits: ").append(toIndentedString(audits)).append("\n");
+    sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    versions: ").append(toIndentedString(versions)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -333,8 +333,8 @@ public class AppendixLighthouseOnPageDayStatisticsRatesData {
     openapiFields.add("tasks_ready");
     openapiFields.add("task_get");
     openapiFields.add("live");
-    openapiFields.add("languages");
     openapiFields.add("audits");
+    openapiFields.add("languages");
     openapiFields.add("versions");
 
     // a set of required properties/fields (JSON key names)

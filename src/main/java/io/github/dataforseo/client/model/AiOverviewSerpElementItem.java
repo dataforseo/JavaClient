@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AiOverviewSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-04T13:45:49.667097300+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AiOverviewSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW = "asynchronous_ai_overview";
   @SerializedName(SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW)
@@ -110,7 +110,7 @@ public class AiOverviewSerpElementItem extends BaseSerpElementItem {
   }
 
   /**
-   * additional items present in the element if there are none, equals null
+   * contains arrays of specific images
    * @return items
    */
   @javax.annotation.Nullable

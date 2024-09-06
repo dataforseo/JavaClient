@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**title** | **String** | title of the row |  [optional] |
 |**relatedSearches** | **List&lt;String&gt;** | search queries related to the elment |  [optional] |
-|**items** | [**List&lt;FoundOnWebElement&gt;**](FoundOnWebElement.md) | additional items present in the element if there are none, equals null |  [optional] |
+|**items** | [**List&lt;FoundOnWebElement&gt;**](FoundOnWebElement.md) | contains arrays of specific images |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
 

@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpYoutubeVideoInfoTaskGetAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-04T13:45:49.667097300+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpYoutubeVideoInfoTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_VIDEO_ID = "video_id";
   @SerializedName(SERIALIZED_NAME_VIDEO_ID)

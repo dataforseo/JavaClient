@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AiOverviewElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-04T13:45:49.667097300+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AiOverviewElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -103,7 +103,7 @@ public class AiOverviewElement {
   }
 
   /**
-   * title of a given link element
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -122,7 +122,7 @@ public class AiOverviewElement {
   }
 
   /**
-   * reference text text snippet from the page that was used to generate the ai_overview_element
+   * description content
    * @return text
    */
   @javax.annotation.Nullable
@@ -149,7 +149,7 @@ public class AiOverviewElement {
   }
 
   /**
-   * images of the element if there are none, equals null
+   * images of the element
    * @return images
    */
   @javax.annotation.Nullable
@@ -176,7 +176,7 @@ public class AiOverviewElement {
   }
 
   /**
-   * references relevant to the element includes references to webpages that were used to generate the ai_overview_element
+   * references relevant to the element
    * @return references
    */
   @javax.annotation.Nullable

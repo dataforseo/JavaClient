@@ -19,7 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixAppDataDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixAppendixDaysRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixAppendixDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixBacklinksDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixContentAnalysisDayStatisticsRatesData;
@@ -260,6 +260,14 @@ public class AppendixDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'totalTrafficAnalytics'
+     */
+    @Test
+    public void totalTrafficAnalyticsTest() {
+        // TODO: test totalTrafficAnalytics
+    }
+
+    /**
      * Test the property 'totalReviews'
      */
     @Test
@@ -273,14 +281,6 @@ public class AppendixDayStatisticsRatesDataTest {
     @Test
     public void reviewsTest() {
         // TODO: test reviews
-    }
-
-    /**
-     * Test the property 'totalTrafficAnalytics'
-     */
-    @Test
-    public void totalTrafficAnalyticsTest() {
-        // TODO: test totalTrafficAnalytics
     }
 
 }

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**domain** | **String** | website domain |  [optional] |
+|**domain** | **String** | domain name of the reference |  [optional] |
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**url** | **String** | relevant URL in SERP |  [optional] |
 |**cacheUrl** | **String** | cached version of the page |  [optional] |

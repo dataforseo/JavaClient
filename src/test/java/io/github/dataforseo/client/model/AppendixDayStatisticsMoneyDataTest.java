@@ -19,7 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixAppDataDayStatisticsMoneyData;
-import io.github.dataforseo.client.model.AppendixAppendixDaysRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixAppendixsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixBacklinksDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataInfo;

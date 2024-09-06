@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KnowledgeGraphDescriptionItemSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-04T13:45:49.667097300+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KnowledgeGraphDescriptionItemSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
@@ -78,7 +78,7 @@ public class KnowledgeGraphDescriptionItemSerpElementItem extends BaseSerpElemen
   }
 
   /**
-   * description content
+   * text or description of the element in SERP
    * @return text
    */
   @javax.annotation.Nullable

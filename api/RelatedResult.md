@@ -11,7 +11,7 @@
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**domain** | **String** | domain where a link points |  [optional] |
 |**title** | **String** | title of a given link element |  [optional] |
-|**url** | **String** | URL of element |  [optional] |
+|**url** | **String** | reference page URL |  [optional] |
 |**cacheUrl** | **String** | cached version of the page |  [optional] |
 |**relatedSearchUrl** | **String** | URL to a similar search URL to a new search for the same keyword(s) on related sites |  [optional] |
 |**breadcrumb** | **String** | breadcrumb in SERP |  [optional] |
