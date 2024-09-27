@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleTrendsExploreLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -118,7 +118,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   }
 
   /**
-   * keywords optional field if keywords are not specified, the results will not contain keyword-related data; The maximum number of keywords you can specify: 5 Note: comma symbols (,) in the specified keywords will be unset and ignored
+   * keywords optional field if keywords are not specified, the results will not contain keyword-related data; The maximum number of keywords you can specify: 5 Note: comma symbols (,) in the specified keywords will be unset and ignored learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable

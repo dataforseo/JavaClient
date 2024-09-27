@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KnowledgeGraphPartItemDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KnowledgeGraphPartItemDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -72,7 +72,6 @@ public class KnowledgeGraphPartItemDataforseoLabsSerpElementItem extends BaseDat
   private List<LinkElement> links;
 
   public KnowledgeGraphPartItemDataforseoLabsSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public KnowledgeGraphPartItemDataforseoLabsSerpElementItem title(String title) {
@@ -81,7 +80,7 @@ public class KnowledgeGraphPartItemDataforseoLabsSerpElementItem extends BaseDat
   }
 
   /**
-   * title of a given link element
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -100,7 +99,7 @@ public class KnowledgeGraphPartItemDataforseoLabsSerpElementItem extends BaseDat
   }
 
   /**
-   * google defined data attribute ID example: kc:/local:place qa
+   * google defined data attribute ID example: kc:/shopping/gpc:organic-offers
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -119,7 +118,7 @@ public class KnowledgeGraphPartItemDataforseoLabsSerpElementItem extends BaseDat
   }
 
   /**
-   * content within the item
+   * description content
    * @return text
    */
   @javax.annotation.Nullable
@@ -293,6 +292,30 @@ public class KnowledgeGraphPartItemDataforseoLabsSerpElementItem extends BaseDat
       if (jsonElement == null) {
         if (!KnowledgeGraphPartItemDataforseoLabsSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in KnowledgeGraphPartItemDataforseoLabsSerpElementItem is not found in the empty JSON string", KnowledgeGraphPartItemDataforseoLabsSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("data_attrid") != null && !jsonObj.get("data_attrid").isJsonNull()) && !jsonObj.get("data_attrid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `data_attrid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("data_attrid").toString()));
+      }
+      if ((jsonObj.get("text") != null && !jsonObj.get("text").isJsonNull()) && !jsonObj.get("text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("text").toString()));
+      }
+      if (jsonObj.get("links") != null && !jsonObj.get("links").isJsonNull()) {
+        JsonArray jsonArraylinks = jsonObj.getAsJsonArray("links");
+        if (jsonArraylinks != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("links").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `links` to be an array in the JSON string but got `%s`", jsonObj.get("links").toString()));
+          }
+
+          // validate the optional field `links` (array)
+          for (int i = 0; i < jsonArraylinks.size(); i++) {
+            LinkElement.validateJsonElement(jsonArraylinks.get(i));
+          };
         }
       }
   }

@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleReviewsSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -142,7 +142,6 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
   private List<ReviewHighlights> reviewHighlights;
 
   public GoogleReviewsSearchBusinessDataSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleReviewsSearchBusinessDataSerpElementItem position(String position) {
@@ -743,6 +742,84 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
       if (jsonElement == null) {
         if (!GoogleReviewsSearchBusinessDataSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleReviewsSearchBusinessDataSerpElementItem is not found in the empty JSON string", GoogleReviewsSearchBusinessDataSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
+      if ((jsonObj.get("review_text") != null && !jsonObj.get("review_text").isJsonNull()) && !jsonObj.get("review_text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `review_text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("review_text").toString()));
+      }
+      if ((jsonObj.get("original_review_text") != null && !jsonObj.get("original_review_text").isJsonNull()) && !jsonObj.get("original_review_text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `original_review_text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original_review_text").toString()));
+      }
+      if ((jsonObj.get("time_ago") != null && !jsonObj.get("time_ago").isJsonNull()) && !jsonObj.get("time_ago").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `time_ago` to be a primitive type in the JSON string but got `%s`", jsonObj.get("time_ago").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
+      }
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+      }
+      if ((jsonObj.get("profile_name") != null && !jsonObj.get("profile_name").isJsonNull()) && !jsonObj.get("profile_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `profile_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("profile_name").toString()));
+      }
+      if ((jsonObj.get("profile_url") != null && !jsonObj.get("profile_url").isJsonNull()) && !jsonObj.get("profile_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `profile_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("profile_url").toString()));
+      }
+      if ((jsonObj.get("review_url") != null && !jsonObj.get("review_url").isJsonNull()) && !jsonObj.get("review_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `review_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("review_url").toString()));
+      }
+      if ((jsonObj.get("profile_image_url") != null && !jsonObj.get("profile_image_url").isJsonNull()) && !jsonObj.get("profile_image_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `profile_image_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("profile_image_url").toString()));
+      }
+      if ((jsonObj.get("owner_answer") != null && !jsonObj.get("owner_answer").isJsonNull()) && !jsonObj.get("owner_answer").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `owner_answer` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_answer").toString()));
+      }
+      if ((jsonObj.get("original_owner_answer") != null && !jsonObj.get("original_owner_answer").isJsonNull()) && !jsonObj.get("original_owner_answer").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `original_owner_answer` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original_owner_answer").toString()));
+      }
+      if ((jsonObj.get("owner_time_ago") != null && !jsonObj.get("owner_time_ago").isJsonNull()) && !jsonObj.get("owner_time_ago").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `owner_time_ago` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_time_ago").toString()));
+      }
+      if ((jsonObj.get("owner_timestamp") != null && !jsonObj.get("owner_timestamp").isJsonNull()) && !jsonObj.get("owner_timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `owner_timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_timestamp").toString()));
+      }
+      if ((jsonObj.get("review_id") != null && !jsonObj.get("review_id").isJsonNull()) && !jsonObj.get("review_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `review_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("review_id").toString()));
+      }
+      if (jsonObj.get("images") != null && !jsonObj.get("images").isJsonNull()) {
+        JsonArray jsonArrayimages = jsonObj.getAsJsonArray("images");
+        if (jsonArrayimages != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("images").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `images` to be an array in the JSON string but got `%s`", jsonObj.get("images").toString()));
+          }
+
+          // validate the optional field `images` (array)
+          for (int i = 0; i < jsonArrayimages.size(); i++) {
+            ImagesElement.validateJsonElement(jsonArrayimages.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("review_highlights") != null && !jsonObj.get("review_highlights").isJsonNull()) {
+        JsonArray jsonArrayreviewHighlights = jsonObj.getAsJsonArray("review_highlights");
+        if (jsonArrayreviewHighlights != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("review_highlights").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `review_highlights` to be an array in the JSON string but got `%s`", jsonObj.get("review_highlights").toString()));
+          }
+
+          // validate the optional field `review_highlights` (array)
+          for (int i = 0; i < jsonArrayreviewHighlights.size(); i++) {
+            ReviewHighlights.validateJsonElement(jsonArrayreviewHighlights.get(i));
+          };
         }
       }
   }

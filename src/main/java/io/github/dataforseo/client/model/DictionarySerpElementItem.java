@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DictionarySerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DictionarySerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -93,7 +93,6 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
   private Rectangle rectangle;
 
   public DictionarySerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public DictionarySerpElementItem title(String title) {
@@ -425,6 +424,43 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
         if (!DictionarySerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in DictionarySerpElementItem is not found in the empty JSON string", DictionarySerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("domain") != null && !jsonObj.get("domain").isJsonNull()) && !jsonObj.get("domain").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain").toString()));
+      }
+      if ((jsonObj.get("breadcrumb") != null && !jsonObj.get("breadcrumb").isJsonNull()) && !jsonObj.get("breadcrumb").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `breadcrumb` to be a primitive type in the JSON string but got `%s`", jsonObj.get("breadcrumb").toString()));
+      }
+      if ((jsonObj.get("keyword") != null && !jsonObj.get("keyword").isJsonNull()) && !jsonObj.get("keyword").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `keyword` to be a primitive type in the JSON string but got `%s`", jsonObj.get("keyword").toString()));
+      }
+      if ((jsonObj.get("snippet") != null && !jsonObj.get("snippet").isJsonNull()) && !jsonObj.get("snippet").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `snippet` to be a primitive type in the JSON string but got `%s`", jsonObj.get("snippet").toString()));
+      }
+      if (jsonObj.get("links") != null && !jsonObj.get("links").isJsonNull()) {
+        JsonArray jsonArraylinks = jsonObj.getAsJsonArray("links");
+        if (jsonArraylinks != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("links").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `links` to be an array in the JSON string but got `%s`", jsonObj.get("links").toString()));
+          }
+
+          // validate the optional field `links` (array)
+          for (int i = 0; i < jsonArraylinks.size(); i++) {
+            LinkElement.validateJsonElement(jsonArraylinks.get(i));
+          };
+        }
+      }
+      // validate the optional field `rectangle`
+      if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {
+        Rectangle.validateJsonElement(jsonObj.get("rectangle"));
       }
   }
 

@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleHotelsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
@@ -61,7 +61,6 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
   private String url;
 
   public GoogleHotelsDataforseoLabsSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleHotelsDataforseoLabsSerpElementItem hotelIdentifier(String hotelIdentifier) {
@@ -231,6 +230,13 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
         if (!GoogleHotelsDataforseoLabsSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleHotelsDataforseoLabsSerpElementItem is not found in the empty JSON string", GoogleHotelsDataforseoLabsSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("hotel_identifier") != null && !jsonObj.get("hotel_identifier").isJsonNull()) && !jsonObj.get("hotel_identifier").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `hotel_identifier` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hotel_identifier").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
       }
   }
 

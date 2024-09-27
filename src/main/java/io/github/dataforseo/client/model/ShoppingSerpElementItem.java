@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ShoppingSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ShoppingSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -69,7 +69,6 @@ public class ShoppingSerpElementItem extends BaseSerpElementItem {
   private Rectangle rectangle;
 
   public ShoppingSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public ShoppingSerpElementItem title(String title) {
@@ -269,6 +268,28 @@ public class ShoppingSerpElementItem extends BaseSerpElementItem {
         if (!ShoppingSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in ShoppingSerpElementItem is not found in the empty JSON string", ShoppingSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
+        JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
+        if (jsonArrayitems != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("items").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
+          }
+
+          // validate the optional field `items` (array)
+          for (int i = 0; i < jsonArrayitems.size(); i++) {
+            ShoppingElement.validateJsonElement(jsonArrayitems.get(i));
+          };
+        }
+      }
+      // validate the optional field `rectangle`
+      if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {
+        Rectangle.validateJsonElement(jsonObj.get("rectangle"));
       }
   }
 

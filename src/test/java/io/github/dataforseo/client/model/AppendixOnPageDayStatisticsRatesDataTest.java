@@ -216,19 +216,19 @@ public class AppendixOnPageDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
      * Test the property 'availableFilters'
      */
     @Test
     public void availableFiltersTest() {
         // TODO: test availableFilters
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
     }
 
 }

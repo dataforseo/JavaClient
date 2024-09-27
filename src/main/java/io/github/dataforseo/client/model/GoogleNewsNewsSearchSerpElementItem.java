@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleNewsNewsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleNewsNewsSearchSerpElementItem extends BaseGoogleNewsSerpElementItem {
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -78,7 +78,6 @@ public class GoogleNewsNewsSearchSerpElementItem extends BaseGoogleNewsSerpEleme
   private String timestamp;
 
   public GoogleNewsNewsSearchSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleNewsNewsSearchSerpElementItem domain(String domain) {
@@ -337,6 +336,25 @@ public class GoogleNewsNewsSearchSerpElementItem extends BaseGoogleNewsSerpEleme
         if (!GoogleNewsNewsSearchSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleNewsNewsSearchSerpElementItem is not found in the empty JSON string", GoogleNewsNewsSearchSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("domain") != null && !jsonObj.get("domain").isJsonNull()) && !jsonObj.get("domain").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("image_url") != null && !jsonObj.get("image_url").isJsonNull()) && !jsonObj.get("image_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `image_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("image_url").toString()));
+      }
+      if ((jsonObj.get("snippet") != null && !jsonObj.get("snippet").isJsonNull()) && !jsonObj.get("snippet").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `snippet` to be a primitive type in the JSON string but got `%s`", jsonObj.get("snippet").toString()));
+      }
+      if ((jsonObj.get("time_published") != null && !jsonObj.get("time_published").isJsonNull()) && !jsonObj.get("time_published").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `time_published` to be a primitive type in the JSON string but got `%s`", jsonObj.get("time_published").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
       }
   }
 

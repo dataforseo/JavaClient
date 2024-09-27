@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * YoutubeVideoInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem {
   public static final String SERIALIZED_NAME_VIDEO_ID = "video_id";
   @SerializedName(SERIALIZED_NAME_VIDEO_ID)
@@ -150,7 +150,6 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
   private List<StreamingQualityElement> streamingQuality;
 
   public YoutubeVideoInfoSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public YoutubeVideoInfoSerpElementItem videoId(String videoId) {
@@ -803,6 +802,82 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
       if (jsonElement == null) {
         if (!YoutubeVideoInfoSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in YoutubeVideoInfoSerpElementItem is not found in the empty JSON string", YoutubeVideoInfoSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("video_id") != null && !jsonObj.get("video_id").isJsonNull()) && !jsonObj.get("video_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `video_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("video_id").toString()));
+      }
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("thumbnail_url") != null && !jsonObj.get("thumbnail_url").isJsonNull()) && !jsonObj.get("thumbnail_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `thumbnail_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("thumbnail_url").toString()));
+      }
+      if ((jsonObj.get("channel_id") != null && !jsonObj.get("channel_id").isJsonNull()) && !jsonObj.get("channel_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `channel_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("channel_id").toString()));
+      }
+      if ((jsonObj.get("channel_name") != null && !jsonObj.get("channel_name").isJsonNull()) && !jsonObj.get("channel_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `channel_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("channel_name").toString()));
+      }
+      if ((jsonObj.get("channel_url") != null && !jsonObj.get("channel_url").isJsonNull()) && !jsonObj.get("channel_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `channel_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("channel_url").toString()));
+      }
+      if ((jsonObj.get("channel_logo") != null && !jsonObj.get("channel_logo").isJsonNull()) && !jsonObj.get("channel_logo").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `channel_logo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("channel_logo").toString()));
+      }
+      if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
+      }
+      // validate the optional field `channel_subscribers_count`
+      if (jsonObj.get("channel_subscribers_count") != null && !jsonObj.get("channel_subscribers_count").isJsonNull()) {
+        ChannelSubscribersCount.validateJsonElement(jsonObj.get("channel_subscribers_count"));
+      }
+      if ((jsonObj.get("publication_date") != null && !jsonObj.get("publication_date").isJsonNull()) && !jsonObj.get("publication_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `publication_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("publication_date").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("keywords") != null && !jsonObj.get("keywords").isJsonNull() && !jsonObj.get("keywords").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `keywords` to be an array in the JSON string but got `%s`", jsonObj.get("keywords").toString()));
+      }
+      if ((jsonObj.get("category") != null && !jsonObj.get("category").isJsonNull()) && !jsonObj.get("category").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("category").toString()));
+      }
+      if ((jsonObj.get("duration_time") != null && !jsonObj.get("duration_time").isJsonNull()) && !jsonObj.get("duration_time").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `duration_time` to be a primitive type in the JSON string but got `%s`", jsonObj.get("duration_time").toString()));
+      }
+      if (jsonObj.get("subtitles") != null && !jsonObj.get("subtitles").isJsonNull()) {
+        JsonArray jsonArraysubtitles = jsonObj.getAsJsonArray("subtitles");
+        if (jsonArraysubtitles != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("subtitles").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `subtitles` to be an array in the JSON string but got `%s`", jsonObj.get("subtitles").toString()));
+          }
+
+          // validate the optional field `subtitles` (array)
+          for (int i = 0; i < jsonArraysubtitles.size(); i++) {
+            Subtitles.validateJsonElement(jsonArraysubtitles.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("streaming_quality") != null && !jsonObj.get("streaming_quality").isJsonNull()) {
+        JsonArray jsonArraystreamingQuality = jsonObj.getAsJsonArray("streaming_quality");
+        if (jsonArraystreamingQuality != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("streaming_quality").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `streaming_quality` to be an array in the JSON string but got `%s`", jsonObj.get("streaming_quality").toString()));
+          }
+
+          // validate the optional field `streaming_quality` (array)
+          for (int i = 0; i < jsonArraystreamingQuality.size(); i++) {
+            StreamingQualityElement.validateJsonElement(jsonArraystreamingQuality.get(i));
+          };
         }
       }
   }

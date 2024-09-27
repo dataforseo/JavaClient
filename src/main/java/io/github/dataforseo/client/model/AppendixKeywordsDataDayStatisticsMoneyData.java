@@ -56,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDayStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataDayStatisticsMoneyData {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -122,13 +122,13 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_DATA)
   private AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo clickstreamData;
 
-  public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
-  @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
-  private AppendixJobsSerpLimitsRatesDataInfo searchVolumeHistory;
-
   public static final String SERIALIZED_NAME_GOOGLE = "google";
   @SerializedName(SERIALIZED_NAME_GOOGLE)
   private AppendixBingKeywordsDataLimitsRatesDataInfo google;
+
+  public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
+  @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
+  private AppendixJobsSerpLimitsRatesDataInfo searchVolumeHistory;
 
   public AppendixKeywordsDataDayStatisticsMoneyData() {
   }
@@ -437,25 +437,6 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
   }
 
 
-  public AppendixKeywordsDataDayStatisticsMoneyData searchVolumeHistory(AppendixJobsSerpLimitsRatesDataInfo searchVolumeHistory) {
-    this.searchVolumeHistory = searchVolumeHistory;
-    return this;
-  }
-
-  /**
-   * Get searchVolumeHistory
-   * @return searchVolumeHistory
-   */
-  @javax.annotation.Nullable
-  public AppendixJobsSerpLimitsRatesDataInfo getSearchVolumeHistory() {
-    return searchVolumeHistory;
-  }
-
-  public void setSearchVolumeHistory(AppendixJobsSerpLimitsRatesDataInfo searchVolumeHistory) {
-    this.searchVolumeHistory = searchVolumeHistory;
-  }
-
-
   public AppendixKeywordsDataDayStatisticsMoneyData google(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
     this.google = google;
     return this;
@@ -472,6 +453,25 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
 
   public void setGoogle(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
     this.google = google;
+  }
+
+
+  public AppendixKeywordsDataDayStatisticsMoneyData searchVolumeHistory(AppendixJobsSerpLimitsRatesDataInfo searchVolumeHistory) {
+    this.searchVolumeHistory = searchVolumeHistory;
+    return this;
+  }
+
+  /**
+   * Get searchVolumeHistory
+   * @return searchVolumeHistory
+   */
+  @javax.annotation.Nullable
+  public AppendixJobsSerpLimitsRatesDataInfo getSearchVolumeHistory() {
+    return searchVolumeHistory;
+  }
+
+  public void setSearchVolumeHistory(AppendixJobsSerpLimitsRatesDataInfo searchVolumeHistory) {
+    this.searchVolumeHistory = searchVolumeHistory;
   }
 
   /**
@@ -545,8 +545,8 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
         Objects.equals(this.googleAds, appendixKeywordsDataDayStatisticsMoneyData.googleAds) &&
         Objects.equals(this.dataforseoTrends, appendixKeywordsDataDayStatisticsMoneyData.dataforseoTrends) &&
         Objects.equals(this.clickstreamData, appendixKeywordsDataDayStatisticsMoneyData.clickstreamData) &&
-        Objects.equals(this.searchVolumeHistory, appendixKeywordsDataDayStatisticsMoneyData.searchVolumeHistory) &&
-        Objects.equals(this.google, appendixKeywordsDataDayStatisticsMoneyData.google)&&
+        Objects.equals(this.google, appendixKeywordsDataDayStatisticsMoneyData.google) &&
+        Objects.equals(this.searchVolumeHistory, appendixKeywordsDataDayStatisticsMoneyData.searchVolumeHistory)&&
         Objects.equals(this.additionalProperties, appendixKeywordsDataDayStatisticsMoneyData.additionalProperties);
   }
 
@@ -556,7 +556,7 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, searchVolumeHistory, google, additionalProperties);
+    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, google, searchVolumeHistory, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -586,8 +586,8 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
     sb.append("    googleAds: ").append(toIndentedString(googleAds)).append("\n");
     sb.append("    dataforseoTrends: ").append(toIndentedString(dataforseoTrends)).append("\n");
     sb.append("    clickstreamData: ").append(toIndentedString(clickstreamData)).append("\n");
-    sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
     sb.append("    google: ").append(toIndentedString(google)).append("\n");
+    sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -627,8 +627,8 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
     openapiFields.add("google_ads");
     openapiFields.add("dataforseo_trends");
     openapiFields.add("clickstream_data");
-    openapiFields.add("search_volume_history");
     openapiFields.add("google");
+    openapiFields.add("search_volume_history");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -687,13 +687,13 @@ public class AppendixKeywordsDataDayStatisticsMoneyData {
       if (jsonObj.get("clickstream_data") != null && !jsonObj.get("clickstream_data").isJsonNull()) {
         AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("clickstream_data"));
       }
-      // validate the optional field `search_volume_history`
-      if (jsonObj.get("search_volume_history") != null && !jsonObj.get("search_volume_history").isJsonNull()) {
-        AppendixJobsSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("search_volume_history"));
-      }
       // validate the optional field `google`
       if (jsonObj.get("google") != null && !jsonObj.get("google").isJsonNull()) {
         AppendixBingKeywordsDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("google"));
+      }
+      // validate the optional field `search_volume_history`
+      if (jsonObj.get("search_volume_history") != null && !jsonObj.get("search_volume_history").isJsonNull()) {
+        AppendixJobsSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("search_volume_history"));
       }
   }
 

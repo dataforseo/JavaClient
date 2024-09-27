@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MapSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MapSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -66,7 +66,6 @@ public class MapSerpElementItem extends BaseSerpElementItem {
   private Rectangle rectangle;
 
   public MapSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public MapSerpElementItem title(String title) {
@@ -258,6 +257,17 @@ public class MapSerpElementItem extends BaseSerpElementItem {
         if (!MapSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in MapSerpElementItem is not found in the empty JSON string", MapSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      // validate the optional field `rectangle`
+      if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {
+        Rectangle.validateJsonElement(jsonObj.get("rectangle"));
       }
   }
 

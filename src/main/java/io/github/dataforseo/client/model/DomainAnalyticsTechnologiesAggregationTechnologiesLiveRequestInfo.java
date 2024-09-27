@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   public static final String SERIALIZED_NAME_GROUP = "group";
   @SerializedName(SERIALIZED_NAME_GROUP)
@@ -175,7 +175,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo {
   }
 
   /**
-   * target keyword in the domain’s meta keywords required field if you don’t specify group, category or technology at least one field (group, category, keyword, technology) must be set UTF-8 encoding example: \&quot;seo\&quot;
+   * target keyword in the domain’s meta keywords required field if you don’t specify group, category or technology at least one field (group, category, keyword, technology) must be set UTF-8 encoding example: \&quot;seo\&quot; learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable

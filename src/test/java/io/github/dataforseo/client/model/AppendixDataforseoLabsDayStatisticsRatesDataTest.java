@@ -313,51 +313,11 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'historicalBulkTrafficEstimation'
+     * Test the property 'availableFilters'
      */
     @Test
-    public void historicalBulkTrafficEstimationTest() {
-        // TODO: test historicalBulkTrafficEstimation
-    }
-
-    /**
-     * Test the property 'languages'
-     */
-    @Test
-    public void languagesTest() {
-        // TODO: test languages
-    }
-
-    /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
-     * Test the property 'topGoogleSearches'
-     */
-    @Test
-    public void topGoogleSearchesTest() {
-        // TODO: test topGoogleSearches
-    }
-
-    /**
-     * Test the property 'status'
-     */
-    @Test
-    public void statusTest() {
-        // TODO: test status
-    }
-
-    /**
-     * Test the property 'categoriesForKeywords'
-     */
-    @Test
-    public void categoriesForKeywordsTest() {
-        // TODO: test categoriesForKeywords
+    public void availableFiltersTest() {
+        // TODO: test availableFilters
     }
 
     /**
@@ -369,11 +329,35 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'availableFilters'
+     * Test the property 'historicalBulkTrafficEstimation'
      */
     @Test
-    public void availableFiltersTest() {
-        // TODO: test availableFilters
+    public void historicalBulkTrafficEstimationTest() {
+        // TODO: test historicalBulkTrafficEstimation
+    }
+
+    /**
+     * Test the property 'categoriesForKeywords'
+     */
+    @Test
+    public void categoriesForKeywordsTest() {
+        // TODO: test categoriesForKeywords
+    }
+
+    /**
+     * Test the property 'languages'
+     */
+    @Test
+    public void languagesTest() {
+        // TODO: test languages
+    }
+
+    /**
+     * Test the property 'topGoogleSearches'
+     */
+    @Test
+    public void topGoogleSearchesTest() {
+        // TODO: test topGoogleSearches
     }
 
     /**
@@ -382,6 +366,22 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     @Test
     public void amazonTest() {
         // TODO: test amazon
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
     }
 
 }

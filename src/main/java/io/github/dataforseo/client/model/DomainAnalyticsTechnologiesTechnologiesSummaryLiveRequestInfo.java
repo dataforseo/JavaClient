@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TECHNOLOGY_PATHS = "technology_paths";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY_PATHS)
@@ -214,7 +214,7 @@ public class DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo {
   }
 
   /**
-   * target keywords in the domain’s title, description or meta keywords required field if you don’t specify groups, technology_paths, categories, or technologies you can specify the maximum of 10 keywords; UTF-8 encoding; example: [\&quot;seo\&quot;,\&quot;software\&quot;]
+   * target keywords in the domain’s title, description or meta keywords required field if you don’t specify groups, technology_paths, categories, or technologies you can specify the maximum of 10 keywords; UTF-8 encoding; example: [\&quot;seo\&quot;,\&quot;software\&quot;] learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable

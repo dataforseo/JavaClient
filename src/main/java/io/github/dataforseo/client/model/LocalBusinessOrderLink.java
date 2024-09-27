@@ -53,14 +53,13 @@ import io.github.dataforseo.client.JSON;
 /**
  * LocalBusinessOrderLink
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class LocalBusinessOrderLink extends BaseLocalBusinessLink {
   public static final String SERIALIZED_NAME_DELIVERY_SERVICES = "delivery_services";
   @SerializedName(SERIALIZED_NAME_DELIVERY_SERVICES)
   private List<LocalBusinessDeliveryServiceInfo> deliveryServices;
 
   public LocalBusinessOrderLink() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public LocalBusinessOrderLink deliveryServices(List<LocalBusinessDeliveryServiceInfo> deliveryServices) {
@@ -211,6 +210,21 @@ public class LocalBusinessOrderLink extends BaseLocalBusinessLink {
       if (jsonElement == null) {
         if (!LocalBusinessOrderLink.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in LocalBusinessOrderLink is not found in the empty JSON string", LocalBusinessOrderLink.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if (jsonObj.get("delivery_services") != null && !jsonObj.get("delivery_services").isJsonNull()) {
+        JsonArray jsonArraydeliveryServices = jsonObj.getAsJsonArray("delivery_services");
+        if (jsonArraydeliveryServices != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("delivery_services").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `delivery_services` to be an array in the JSON string but got `%s`", jsonObj.get("delivery_services").toString()));
+          }
+
+          // validate the optional field `delivery_services` (array)
+          for (int i = 0; i < jsonArraydeliveryServices.size(); i++) {
+            LocalBusinessDeliveryServiceInfo.validateJsonElement(jsonArraydeliveryServices.get(i));
+          };
         }
       }
   }

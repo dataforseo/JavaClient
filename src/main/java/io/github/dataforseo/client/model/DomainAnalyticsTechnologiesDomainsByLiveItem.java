@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * items array
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DomainAnalyticsTechnologiesDomainsByLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -96,7 +96,7 @@ public class DomainAnalyticsTechnologiesDomainsByLiveItem {
 
   public static final String SERIALIZED_NAME_PHONE_NUMBERS = "phone_numbers";
   @SerializedName(SERIALIZED_NAME_PHONE_NUMBERS)
-  private List<String> phoneNumbers;
+  private Object phoneNumbers;
 
   public static final String SERIALIZED_NAME_EMAILS = "emails";
   @SerializedName(SERIALIZED_NAME_EMAILS)
@@ -311,16 +311,8 @@ public class DomainAnalyticsTechnologiesDomainsByLiveItem {
   }
 
 
-  public DomainAnalyticsTechnologiesDomainsByLiveItem phoneNumbers(List<String> phoneNumbers) {
+  public DomainAnalyticsTechnologiesDomainsByLiveItem phoneNumbers(Object phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
-    return this;
-  }
-
-  public DomainAnalyticsTechnologiesDomainsByLiveItem addPhoneNumbersItem(String phoneNumbersItem) {
-    if (this.phoneNumbers == null) {
-      this.phoneNumbers = new ArrayList<>();
-    }
-    this.phoneNumbers.add(phoneNumbersItem);
     return this;
   }
 
@@ -329,11 +321,11 @@ public class DomainAnalyticsTechnologiesDomainsByLiveItem {
    * @return phoneNumbers
    */
   @javax.annotation.Nullable
-  public List<String> getPhoneNumbers() {
+  public Object getPhoneNumbers() {
     return phoneNumbers;
   }
 
-  public void setPhoneNumbers(List<String> phoneNumbers) {
+  public void setPhoneNumbers(Object phoneNumbers) {
     this.phoneNumbers = phoneNumbers;
   }
 
@@ -601,10 +593,6 @@ public class DomainAnalyticsTechnologiesDomainsByLiveItem {
       }
       if ((jsonObj.get("content_language_code") != null && !jsonObj.get("content_language_code").isJsonNull()) && !jsonObj.get("content_language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `content_language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("content_language_code").toString()));
-      }
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("phone_numbers") != null && !jsonObj.get("phone_numbers").isJsonNull() && !jsonObj.get("phone_numbers").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `phone_numbers` to be an array in the JSON string but got `%s`", jsonObj.get("phone_numbers").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("emails") != null && !jsonObj.get("emails").isJsonNull() && !jsonObj.get("emails").isJsonArray()) {

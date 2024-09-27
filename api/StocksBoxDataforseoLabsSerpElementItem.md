@@ -12,7 +12,7 @@
 |**snippet** | **String** | text alongside the link title |  [optional] |
 |**price** | [**Price**](Price.md) |  |  [optional] |
 |**url** | **String** | relevant URL of the Ad element in SERP |  [optional] |
-|**domain** | **String** | website domain |  [optional] |
+|**domain** | **String** | domain where a link points |  [optional] |
 |**table** | [**Table**](Table.md) |  |  [optional] |
 |**graph** | [**Graph**](Graph.md) |  |  [optional] |
 

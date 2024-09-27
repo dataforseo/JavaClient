@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDomainAnalyticsDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDomainAnalyticsDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
@@ -69,13 +69,13 @@ public class AppendixDomainAnalyticsDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_TECHNOLOGIES)
   private AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo technologies;
 
-  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
-  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
-  private Double availableFilters;
-
   public static final String SERIALIZED_NAME_ID_LIST = "id_list";
   @SerializedName(SERIALIZED_NAME_ID_LIST)
   private Double idList;
+
+  public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
+  @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
+  private Double availableFilters;
 
   public AppendixDomainAnalyticsDayStatisticsRatesData() {
   }
@@ -156,25 +156,6 @@ public class AppendixDomainAnalyticsDayStatisticsRatesData {
   }
 
 
-  public AppendixDomainAnalyticsDayStatisticsRatesData availableFilters(Double availableFilters) {
-    this.availableFilters = availableFilters;
-    return this;
-  }
-
-  /**
-   * Get availableFilters
-   * @return availableFilters
-   */
-  @javax.annotation.Nullable
-  public Double getAvailableFilters() {
-    return availableFilters;
-  }
-
-  public void setAvailableFilters(Double availableFilters) {
-    this.availableFilters = availableFilters;
-  }
-
-
   public AppendixDomainAnalyticsDayStatisticsRatesData idList(Double idList) {
     this.idList = idList;
     return this;
@@ -191,6 +172,25 @@ public class AppendixDomainAnalyticsDayStatisticsRatesData {
 
   public void setIdList(Double idList) {
     this.idList = idList;
+  }
+
+
+  public AppendixDomainAnalyticsDayStatisticsRatesData availableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
+    return this;
+  }
+
+  /**
+   * Get availableFilters
+   * @return availableFilters
+   */
+  @javax.annotation.Nullable
+  public Double getAvailableFilters() {
+    return availableFilters;
+  }
+
+  public void setAvailableFilters(Double availableFilters) {
+    this.availableFilters = availableFilters;
   }
 
   /**
@@ -252,8 +252,8 @@ public class AppendixDomainAnalyticsDayStatisticsRatesData {
         Objects.equals(this.errors, appendixDomainAnalyticsDayStatisticsRatesData.errors) &&
         Objects.equals(this.whois, appendixDomainAnalyticsDayStatisticsRatesData.whois) &&
         Objects.equals(this.technologies, appendixDomainAnalyticsDayStatisticsRatesData.technologies) &&
-        Objects.equals(this.availableFilters, appendixDomainAnalyticsDayStatisticsRatesData.availableFilters) &&
-        Objects.equals(this.idList, appendixDomainAnalyticsDayStatisticsRatesData.idList)&&
+        Objects.equals(this.idList, appendixDomainAnalyticsDayStatisticsRatesData.idList) &&
+        Objects.equals(this.availableFilters, appendixDomainAnalyticsDayStatisticsRatesData.availableFilters)&&
         Objects.equals(this.additionalProperties, appendixDomainAnalyticsDayStatisticsRatesData.additionalProperties);
   }
 
@@ -263,7 +263,7 @@ public class AppendixDomainAnalyticsDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(tasksReady, errors, whois, technologies, availableFilters, idList, additionalProperties);
+    return Objects.hash(tasksReady, errors, whois, technologies, idList, availableFilters, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -281,8 +281,8 @@ public class AppendixDomainAnalyticsDayStatisticsRatesData {
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
     sb.append("    whois: ").append(toIndentedString(whois)).append("\n");
     sb.append("    technologies: ").append(toIndentedString(technologies)).append("\n");
-    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -310,8 +310,8 @@ public class AppendixDomainAnalyticsDayStatisticsRatesData {
     openapiFields.add("errors");
     openapiFields.add("whois");
     openapiFields.add("technologies");
-    openapiFields.add("available_filters");
     openapiFields.add("id_list");
+    openapiFields.add("available_filters");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

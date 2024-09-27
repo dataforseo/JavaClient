@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**description** | **String** | description of the results element in SERP |  [optional] |
-|**domain** | **String** | website domain |  [optional] |
+|**domain** | **String** | domain where a link points |  [optional] |
 |**phone** | **String** | phone number |  [optional] |
 |**url** | **String** | relevant URL of the Ad element in SERP |  [optional] |
 |**isPaid** | **Boolean** | indicates whether the element is an ad |  [optional] |

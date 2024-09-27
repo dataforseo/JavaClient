@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleTrendsGraphElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleTrendsGraphElementItem extends BaseGoogleTrendsItem {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
@@ -64,7 +64,6 @@ public class GoogleTrendsGraphElementItem extends BaseGoogleTrendsItem {
   private List<Double> averages = new ArrayList<>();
 
   public GoogleTrendsGraphElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleTrendsGraphElementItem data(List<TrendsGraphDataInfo> data) {
@@ -249,6 +248,25 @@ public class GoogleTrendsGraphElementItem extends BaseGoogleTrendsItem {
         if (!GoogleTrendsGraphElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleTrendsGraphElementItem is not found in the empty JSON string", GoogleTrendsGraphElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if (jsonObj.get("data") != null && !jsonObj.get("data").isJsonNull()) {
+        JsonArray jsonArraydata = jsonObj.getAsJsonArray("data");
+        if (jsonArraydata != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("data").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `data` to be an array in the JSON string but got `%s`", jsonObj.get("data").toString()));
+          }
+
+          // validate the optional field `data` (array)
+          for (int i = 0; i < jsonArraydata.size(); i++) {
+            TrendsGraphDataInfo.validateJsonElement(jsonArraydata.get(i));
+          };
+        }
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("averages") != null && !jsonObj.get("averages").isJsonNull() && !jsonObj.get("averages").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `averages` to be an array in the JSON string but got `%s`", jsonObj.get("averages").toString()));
       }
   }
 

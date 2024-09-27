@@ -50,10 +50,9 @@ import io.github.dataforseo.client.JSON;
 /**
  * RedirectLinkElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RedirectLinkElementItem extends BaseOnPageLinkItemInfo {
   public RedirectLinkElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
   /**
    * A container for additional, undeclared properties.

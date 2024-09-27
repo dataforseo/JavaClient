@@ -29,8 +29,8 @@
 |**contentParsingLive** | **Double** |  |  [optional] |
 |**microdata** | **Double** |  |  [optional] |
 |**forceStop** | **Double** |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
 |**availableFilters** | **Double** |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
 
 
 

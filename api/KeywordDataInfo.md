@@ -14,7 +14,7 @@
 |**keywordInfo** | [**KeywordInfo**](KeywordInfo.md) |  |  [optional] |
 |**keywordInfoNormalizedWithBing** | [**KeywordInfoNormalizedWithInfo**](KeywordInfoNormalizedWithInfo.md) |  |  [optional] |
 |**keywordInfoNormalizedWithClickstream** | [**KeywordInfoNormalizedWithInfo**](KeywordInfoNormalizedWithInfo.md) |  |  [optional] |
-|**clickstreamKeywordInfo** | **Object** | clickstream data for the returned keyword to retrieve results for this field, the parameter include_clickstream_data must be set to true |  [optional] |
+|**clickstreamKeywordInfo** | **Object** |  |  [optional] |
 |**keywordProperties** | [**KeywordProperties**](KeywordProperties.md) |  |  [optional] |
 |**impressionsInfo** | [**ImpressionsInfo**](ImpressionsInfo.md) |  |  [optional] |
 |**serpInfo** | [**SerpInfo**](SerpInfo.md) |  |  [optional] |

@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixAppDataDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixAppendixDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixBacklinksDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsRatesData;
+import io.github.dataforseo.client.model.AppendixBusinessDataStatisticsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixContentAnalysisDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixContentGenerationDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;
@@ -62,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
@@ -126,7 +126,7 @@ public class AppendixDayStatisticsRatesData {
 
   public static final String SERIALIZED_NAME_BUSINESS_DATA = "business_data";
   @SerializedName(SERIALIZED_NAME_BUSINESS_DATA)
-  private AppendixBusinessDataDayStatisticsRatesData businessData;
+  private AppendixBusinessDataStatisticsRatesDataInfo businessData;
 
   public static final String SERIALIZED_NAME_TOTAL_BUSINESS_DATA = "total_business_data";
   @SerializedName(SERIALIZED_NAME_TOTAL_BUSINESS_DATA)
@@ -468,7 +468,7 @@ public class AppendixDayStatisticsRatesData {
   }
 
 
-  public AppendixDayStatisticsRatesData businessData(AppendixBusinessDataDayStatisticsRatesData businessData) {
+  public AppendixDayStatisticsRatesData businessData(AppendixBusinessDataStatisticsRatesDataInfo businessData) {
     this.businessData = businessData;
     return this;
   }
@@ -478,11 +478,11 @@ public class AppendixDayStatisticsRatesData {
    * @return businessData
    */
   @javax.annotation.Nullable
-  public AppendixBusinessDataDayStatisticsRatesData getBusinessData() {
+  public AppendixBusinessDataStatisticsRatesDataInfo getBusinessData() {
     return businessData;
   }
 
-  public void setBusinessData(AppendixBusinessDataDayStatisticsRatesData businessData) {
+  public void setBusinessData(AppendixBusinessDataStatisticsRatesDataInfo businessData) {
     this.businessData = businessData;
   }
 
@@ -969,7 +969,7 @@ public class AppendixDayStatisticsRatesData {
       }
       // validate the optional field `business_data`
       if (jsonObj.get("business_data") != null && !jsonObj.get("business_data").isJsonNull()) {
-        AppendixBusinessDataDayStatisticsRatesData.validateJsonElement(jsonObj.get("business_data"));
+        AppendixBusinessDataStatisticsRatesDataInfo.validateJsonElement(jsonObj.get("business_data"));
       }
       // validate the optional field `backlinks`
       if (jsonObj.get("backlinks") != null && !jsonObj.get("backlinks").isJsonNull()) {

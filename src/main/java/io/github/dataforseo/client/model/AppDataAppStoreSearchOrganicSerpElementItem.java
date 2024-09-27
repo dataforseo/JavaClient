@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataAppStoreSearchOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataAppStoreSearchOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_APP_ID = "app_id";
   @SerializedName(SERIALIZED_NAME_APP_ID)
@@ -79,7 +79,6 @@ public class AppDataAppStoreSearchOrganicSerpElementItem extends BaseAppDataSerp
   private Price price;
 
   public AppDataAppStoreSearchOrganicSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public AppDataAppStoreSearchOrganicSerpElementItem appId(String appId) {
@@ -338,6 +337,20 @@ public class AppDataAppStoreSearchOrganicSerpElementItem extends BaseAppDataSerp
         if (!AppDataAppStoreSearchOrganicSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in AppDataAppStoreSearchOrganicSerpElementItem is not found in the empty JSON string", AppDataAppStoreSearchOrganicSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("app_id") != null && !jsonObj.get("app_id").isJsonNull()) && !jsonObj.get("app_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `app_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("app_id").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("icon") != null && !jsonObj.get("icon").isJsonNull()) && !jsonObj.get("icon").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `icon` to be a primitive type in the JSON string but got `%s`", jsonObj.get("icon").toString()));
+      }
+      // validate the optional field `price`
+      if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
+        Price.validateJsonElement(jsonObj.get("price"));
       }
   }
 

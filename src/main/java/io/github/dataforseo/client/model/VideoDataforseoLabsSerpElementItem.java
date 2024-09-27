@@ -53,15 +53,37 @@ import io.github.dataforseo.client.JSON;
 /**
  * VideoDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class VideoDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
   private List<VideoElement> items;
 
   public VideoDataforseoLabsSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
+
+  public VideoDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public VideoDataforseoLabsSerpElementItem items(List<VideoElement> items) {
     this.items = items;
@@ -77,7 +99,7 @@ public class VideoDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEl
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable
@@ -144,7 +166,8 @@ public class VideoDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEl
       return false;
     }
     VideoDataforseoLabsSerpElementItem videoDataforseoLabsSerpElementItem = (VideoDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.items, videoDataforseoLabsSerpElementItem.items)&&
+    return Objects.equals(this.seType, videoDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.items, videoDataforseoLabsSerpElementItem.items)&&
         Objects.equals(this.additionalProperties, videoDataforseoLabsSerpElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -155,7 +178,7 @@ public class VideoDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEl
 
   @Override
   public int hashCode() {
-    return Objects.hash(items, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -170,6 +193,7 @@ public class VideoDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEl
     StringBuilder sb = new StringBuilder();
     sb.append("class VideoDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -199,6 +223,7 @@ public class VideoDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEl
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("items");
 
     // a set of required properties/fields (JSON key names)
@@ -215,6 +240,24 @@ public class VideoDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpEl
       if (jsonElement == null) {
         if (!VideoDataforseoLabsSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in VideoDataforseoLabsSerpElementItem is not found in the empty JSON string", VideoDataforseoLabsSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
+      if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
+        JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
+        if (jsonArrayitems != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("items").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
+          }
+
+          // validate the optional field `items` (array)
+          for (int i = 0; i < jsonArrayitems.size(); i++) {
+            VideoElement.validateJsonElement(jsonArrayitems.get(i));
+          };
         }
       }
   }

@@ -19,10 +19,10 @@
 |**links** | [**List&lt;LinkElement&gt;**](LinkElement.md) | sitelinks the links shown below some of Google Dataset’s search results if there are none, equals null |  [optional] |
 |**datasetProviders** | [**List&lt;LicensesElement&gt;**](LicensesElement.md) | the list of institutions that provided the dataset |  [optional] |
 |**formats** | [**List&lt;FormatsElement&gt;**](FormatsElement.md) | the list of file formats of the dataset |  [optional] |
-|**authors** | **Object** | the list of authors of the dataset |  [optional] |
+|**authors** | [**List&lt;AuthorsElement&gt;**](AuthorsElement.md) |  |  [optional] |
 |**licenses** | [**List&lt;LicensesElement&gt;**](LicensesElement.md) | the list of licenses issued to the dataset |  [optional] |
 |**updatedDate** | **String** | date and time when the result was last updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2022-11-27 02:00:00 +00:00 |  [optional] |
-|**areaCovered** | **Object** | the list of areas covered in the dataset for example: Africa, Global |  [optional] |
+|**areaCovered** | **List&lt;String&gt;** | the list of areas covered in the dataset for example: Africa, Global |  [optional] |
 |**periodCovered** | [**PeriodCovered**](PeriodCovered.md) |  |  [optional] |
 |**datasetDescription** | [**DatasetDescription**](DatasetDescription.md) |  |  [optional] |
 

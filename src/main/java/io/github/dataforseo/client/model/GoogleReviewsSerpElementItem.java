@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleReviewsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleReviewsSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
@@ -79,7 +79,6 @@ public class GoogleReviewsSerpElementItem extends BaseSerpElementItem {
   private Rectangle rectangle;
 
   public GoogleReviewsSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleReviewsSerpElementItem reviewsCount(Long reviewsCount) {
@@ -337,6 +336,24 @@ public class GoogleReviewsSerpElementItem extends BaseSerpElementItem {
         if (!GoogleReviewsSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleReviewsSerpElementItem is not found in the empty JSON string", GoogleReviewsSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+      }
+      if ((jsonObj.get("place_id") != null && !jsonObj.get("place_id").isJsonNull()) && !jsonObj.get("place_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `place_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("place_id").toString()));
+      }
+      if ((jsonObj.get("feature") != null && !jsonObj.get("feature").isJsonNull()) && !jsonObj.get("feature").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `feature` to be a primitive type in the JSON string but got `%s`", jsonObj.get("feature").toString()));
+      }
+      if ((jsonObj.get("cid") != null && !jsonObj.get("cid").isJsonNull()) && !jsonObj.get("cid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `cid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cid").toString()));
+      }
+      // validate the optional field `rectangle`
+      if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {
+        Rectangle.validateJsonElement(jsonObj.get("rectangle"));
       }
   }
 

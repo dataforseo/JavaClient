@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoTrendsDemographyElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoTrendsDemographyElementItem extends BaseDataforseoTrendsItem {
   public static final String SERIALIZED_NAME_DEMOGRAPHY = "demography";
   @SerializedName(SERIALIZED_NAME_DEMOGRAPHY)
@@ -65,7 +65,6 @@ public class DataforseoTrendsDemographyElementItem extends BaseDataforseoTrendsI
   private DemographyComparisonInfo demographyComparison;
 
   public DataforseoTrendsDemographyElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public DataforseoTrendsDemographyElementItem demography(Demography demography) {
@@ -233,6 +232,15 @@ public class DataforseoTrendsDemographyElementItem extends BaseDataforseoTrendsI
         if (!DataforseoTrendsDemographyElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in DataforseoTrendsDemographyElementItem is not found in the empty JSON string", DataforseoTrendsDemographyElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the optional field `demography`
+      if (jsonObj.get("demography") != null && !jsonObj.get("demography").isJsonNull()) {
+        Demography.validateJsonElement(jsonObj.get("demography"));
+      }
+      // validate the optional field `demography_comparison`
+      if (jsonObj.get("demography_comparison") != null && !jsonObj.get("demography_comparison").isJsonNull()) {
+        DemographyComparisonInfo.validateJsonElement(jsonObj.get("demography_comparison"));
       }
   }
 

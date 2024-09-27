@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataAppStoreInfoOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_APP_ID = "app_id";
   @SerializedName(SERIALIZED_NAME_APP_ID)
@@ -150,7 +150,6 @@ public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpEl
   private List<AppsInfo> moreAppsByDeveloper;
 
   public AppDataAppStoreInfoOrganicSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public AppDataAppStoreInfoOrganicSerpElementItem appId(String appId) {
@@ -830,6 +829,97 @@ public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpEl
       if (jsonElement == null) {
         if (!AppDataAppStoreInfoOrganicSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in AppDataAppStoreInfoOrganicSerpElementItem is not found in the empty JSON string", AppDataAppStoreInfoOrganicSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("app_id") != null && !jsonObj.get("app_id").isJsonNull()) && !jsonObj.get("app_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `app_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("app_id").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("icon") != null && !jsonObj.get("icon").isJsonNull()) && !jsonObj.get("icon").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `icon` to be a primitive type in the JSON string but got `%s`", jsonObj.get("icon").toString()));
+      }
+      if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
+      }
+      // validate the optional field `price`
+      if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
+        Price.validateJsonElement(jsonObj.get("price"));
+      }
+      if ((jsonObj.get("main_category") != null && !jsonObj.get("main_category").isJsonNull()) && !jsonObj.get("main_category").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `main_category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("main_category").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("categories") != null && !jsonObj.get("categories").isJsonNull() && !jsonObj.get("categories").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `categories` to be an array in the JSON string but got `%s`", jsonObj.get("categories").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("languages") != null && !jsonObj.get("languages").isJsonNull() && !jsonObj.get("languages").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `languages` to be an array in the JSON string but got `%s`", jsonObj.get("languages").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("advisories") != null && !jsonObj.get("advisories").isJsonNull() && !jsonObj.get("advisories").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `advisories` to be an array in the JSON string but got `%s`", jsonObj.get("advisories").toString()));
+      }
+      if ((jsonObj.get("developer") != null && !jsonObj.get("developer").isJsonNull()) && !jsonObj.get("developer").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `developer` to be a primitive type in the JSON string but got `%s`", jsonObj.get("developer").toString()));
+      }
+      if ((jsonObj.get("developer_id") != null && !jsonObj.get("developer_id").isJsonNull()) && !jsonObj.get("developer_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `developer_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("developer_id").toString()));
+      }
+      if ((jsonObj.get("developer_url") != null && !jsonObj.get("developer_url").isJsonNull()) && !jsonObj.get("developer_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `developer_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("developer_url").toString()));
+      }
+      if ((jsonObj.get("version") != null && !jsonObj.get("version").isJsonNull()) && !jsonObj.get("version").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `version` to be a primitive type in the JSON string but got `%s`", jsonObj.get("version").toString()));
+      }
+      if ((jsonObj.get("minimum_os_version") != null && !jsonObj.get("minimum_os_version").isJsonNull()) && !jsonObj.get("minimum_os_version").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `minimum_os_version` to be a primitive type in the JSON string but got `%s`", jsonObj.get("minimum_os_version").toString()));
+      }
+      if ((jsonObj.get("size") != null && !jsonObj.get("size").isJsonNull()) && !jsonObj.get("size").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `size` to be a primitive type in the JSON string but got `%s`", jsonObj.get("size").toString()));
+      }
+      if ((jsonObj.get("released_date") != null && !jsonObj.get("released_date").isJsonNull()) && !jsonObj.get("released_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `released_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("released_date").toString()));
+      }
+      if ((jsonObj.get("last_update_date") != null && !jsonObj.get("last_update_date").isJsonNull()) && !jsonObj.get("last_update_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `last_update_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("last_update_date").toString()));
+      }
+      if ((jsonObj.get("update_notes") != null && !jsonObj.get("update_notes").isJsonNull()) && !jsonObj.get("update_notes").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `update_notes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("update_notes").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("images") != null && !jsonObj.get("images").isJsonNull() && !jsonObj.get("images").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `images` to be an array in the JSON string but got `%s`", jsonObj.get("images").toString()));
+      }
+      if (jsonObj.get("similar_apps") != null && !jsonObj.get("similar_apps").isJsonNull()) {
+        JsonArray jsonArraysimilarApps = jsonObj.getAsJsonArray("similar_apps");
+        if (jsonArraysimilarApps != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("similar_apps").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `similar_apps` to be an array in the JSON string but got `%s`", jsonObj.get("similar_apps").toString()));
+          }
+
+          // validate the optional field `similar_apps` (array)
+          for (int i = 0; i < jsonArraysimilarApps.size(); i++) {
+            AppsInfo.validateJsonElement(jsonArraysimilarApps.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("more_apps_by_developer") != null && !jsonObj.get("more_apps_by_developer").isJsonNull()) {
+        JsonArray jsonArraymoreAppsByDeveloper = jsonObj.getAsJsonArray("more_apps_by_developer");
+        if (jsonArraymoreAppsByDeveloper != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("more_apps_by_developer").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `more_apps_by_developer` to be an array in the JSON string but got `%s`", jsonObj.get("more_apps_by_developer").toString()));
+          }
+
+          // validate the optional field `more_apps_by_developer` (array)
+          for (int i = 0; i < jsonArraymoreAppsByDeveloper.size(); i++) {
+            AppsInfo.validateJsonElement(jsonArraymoreAppsByDeveloper.get(i));
+          };
         }
       }
   }

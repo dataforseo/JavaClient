@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * YoutubeCommentSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
   public static final String SERIALIZED_NAME_AUTHOR_NAME = "author_name";
   @SerializedName(SERIALIZED_NAME_AUTHOR_NAME)
@@ -85,7 +85,6 @@ public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
   private Long replyCount;
 
   public YoutubeCommentSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public YoutubeCommentSerpElementItem authorName(String authorName) {
@@ -385,6 +384,25 @@ public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
         if (!YoutubeCommentSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in YoutubeCommentSerpElementItem is not found in the empty JSON string", YoutubeCommentSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("author_name") != null && !jsonObj.get("author_name").isJsonNull()) && !jsonObj.get("author_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `author_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("author_name").toString()));
+      }
+      if ((jsonObj.get("author_thumbnail") != null && !jsonObj.get("author_thumbnail").isJsonNull()) && !jsonObj.get("author_thumbnail").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `author_thumbnail` to be a primitive type in the JSON string but got `%s`", jsonObj.get("author_thumbnail").toString()));
+      }
+      if ((jsonObj.get("author_url") != null && !jsonObj.get("author_url").isJsonNull()) && !jsonObj.get("author_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `author_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("author_url").toString()));
+      }
+      if ((jsonObj.get("text") != null && !jsonObj.get("text").isJsonNull()) && !jsonObj.get("text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("text").toString()));
+      }
+      if ((jsonObj.get("publication_date") != null && !jsonObj.get("publication_date").isJsonNull()) && !jsonObj.get("publication_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `publication_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("publication_date").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
       }
   }
 

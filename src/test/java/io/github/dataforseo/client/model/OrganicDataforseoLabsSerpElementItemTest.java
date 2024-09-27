@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AboutThisResultElement;
+import io.github.dataforseo.client.model.AdLinkElement;
 import io.github.dataforseo.client.model.BacklinksInfo;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.RankChanges;

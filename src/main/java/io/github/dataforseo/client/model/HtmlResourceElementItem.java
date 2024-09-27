@@ -57,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * HtmlResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -116,7 +116,6 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   private Integer relativeUrlLength;
 
   public HtmlResourceElementItem() {
-    this.resourceType = this.getClass().getSimpleName();
   }
 
   public HtmlResourceElementItem meta(PageMetaInfo meta) {
@@ -560,6 +559,15 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
         if (!HtmlResourceElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in HtmlResourceElementItem is not found in the empty JSON string", HtmlResourceElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the optional field `meta`
+      if (jsonObj.get("meta") != null && !jsonObj.get("meta").isJsonNull()) {
+        PageMetaInfo.validateJsonElement(jsonObj.get("meta"));
+      }
+      // validate the optional field `page_timing`
+      if (jsonObj.get("page_timing") != null && !jsonObj.get("page_timing").isJsonNull()) {
+        PageTiming.validateJsonElement(jsonObj.get("page_timing"));
       }
   }
 

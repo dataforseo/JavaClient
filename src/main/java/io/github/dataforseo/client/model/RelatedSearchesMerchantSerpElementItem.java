@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * RelatedSearchesMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RelatedSearchesMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -63,7 +63,6 @@ public class RelatedSearchesMerchantSerpElementItem extends BaseMerchantSerpElem
   private List<String> items;
 
   public RelatedSearchesMerchantSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public RelatedSearchesMerchantSerpElementItem xpath(String xpath) {
@@ -240,6 +239,14 @@ public class RelatedSearchesMerchantSerpElementItem extends BaseMerchantSerpElem
         if (!RelatedSearchesMerchantSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in RelatedSearchesMerchantSerpElementItem is not found in the empty JSON string", RelatedSearchesMerchantSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull() && !jsonObj.get("items").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
       }
   }
 

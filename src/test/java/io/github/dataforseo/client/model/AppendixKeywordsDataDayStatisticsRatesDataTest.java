@@ -181,19 +181,19 @@ public class AppendixKeywordsDataDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
      * Test the property 'searchVolumeHistory'
      */
     @Test
     public void searchVolumeHistoryTest() {
         // TODO: test searchVolumeHistory
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
     }
 
 }

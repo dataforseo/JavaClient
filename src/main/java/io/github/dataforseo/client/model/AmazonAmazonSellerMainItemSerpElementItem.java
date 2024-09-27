@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonSellerMainItemSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonSellerMainItemSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -92,7 +92,6 @@ public class AmazonAmazonSellerMainItemSerpElementItem extends BaseAmazonSerpEle
   private AmazonDeliveryInfo deliveryInfo;
 
   public AmazonAmazonSellerMainItemSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public AmazonAmazonSellerMainItemSerpElementItem position(String position) {
@@ -415,6 +414,37 @@ public class AmazonAmazonSellerMainItemSerpElementItem extends BaseAmazonSerpEle
         if (!AmazonAmazonSellerMainItemSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in AmazonAmazonSellerMainItemSerpElementItem is not found in the empty JSON string", AmazonAmazonSellerMainItemSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("seller_name") != null && !jsonObj.get("seller_name").isJsonNull()) && !jsonObj.get("seller_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `seller_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("seller_name").toString()));
+      }
+      if ((jsonObj.get("seller_url") != null && !jsonObj.get("seller_url").isJsonNull()) && !jsonObj.get("seller_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `seller_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("seller_url").toString()));
+      }
+      if ((jsonObj.get("ships_from") != null && !jsonObj.get("ships_from").isJsonNull()) && !jsonObj.get("ships_from").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `ships_from` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ships_from").toString()));
+      }
+      // validate the optional field `price`
+      if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
+        Price.validateJsonElement(jsonObj.get("price"));
+      }
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingElement.validateJsonElement(jsonObj.get("rating"));
+      }
+      if ((jsonObj.get("condition") != null && !jsonObj.get("condition").isJsonNull()) && !jsonObj.get("condition").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `condition` to be a primitive type in the JSON string but got `%s`", jsonObj.get("condition").toString()));
+      }
+      if ((jsonObj.get("condition_description") != null && !jsonObj.get("condition_description").isJsonNull()) && !jsonObj.get("condition_description").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `condition_description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("condition_description").toString()));
+      }
+      // validate the optional field `delivery_info`
+      if (jsonObj.get("delivery_info") != null && !jsonObj.get("delivery_info").isJsonNull()) {
+        AmazonDeliveryInfo.validateJsonElement(jsonObj.get("delivery_info"));
       }
   }
 

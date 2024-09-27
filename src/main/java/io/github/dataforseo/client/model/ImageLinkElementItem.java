@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ImageLinkElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
   public static final String SERIALIZED_NAME_LINK_ATTRIBUTE = "link_attribute";
   @SerializedName(SERIALIZED_NAME_LINK_ATTRIBUTE)
@@ -75,7 +75,6 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
   private Integer pageToStatusCode;
 
   public ImageLinkElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public ImageLinkElementItem linkAttribute(List<String> linkAttribute) {
@@ -327,6 +326,20 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
         if (!ImageLinkElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in ImageLinkElementItem is not found in the empty JSON string", ImageLinkElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("link_attribute") != null && !jsonObj.get("link_attribute").isJsonNull() && !jsonObj.get("link_attribute").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `link_attribute` to be an array in the JSON string but got `%s`", jsonObj.get("link_attribute").toString()));
+      }
+      if ((jsonObj.get("text") != null && !jsonObj.get("text").isJsonNull()) && !jsonObj.get("text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("text").toString()));
+      }
+      if ((jsonObj.get("image_alt") != null && !jsonObj.get("image_alt").isJsonNull()) && !jsonObj.get("image_alt").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `image_alt` to be a primitive type in the JSON string but got `%s`", jsonObj.get("image_alt").toString()));
+      }
+      if ((jsonObj.get("image_src") != null && !jsonObj.get("image_src").isJsonNull()) && !jsonObj.get("image_src").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `image_src` to be a primitive type in the JSON string but got `%s`", jsonObj.get("image_src").toString()));
       }
   }
 

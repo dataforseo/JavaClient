@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TrustpilotReviewSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TrustpilotReviewSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -102,7 +102,6 @@ public class TrustpilotReviewSearchBusinessDataSerpElementItem extends BaseBusin
   private List<ReviewResponseItemInfo> responses;
 
   public TrustpilotReviewSearchBusinessDataSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public TrustpilotReviewSearchBusinessDataSerpElementItem position(String position) {
@@ -483,6 +482,51 @@ public class TrustpilotReviewSearchBusinessDataSerpElementItem extends BaseBusin
       if (jsonElement == null) {
         if (!TrustpilotReviewSearchBusinessDataSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in TrustpilotReviewSearchBusinessDataSerpElementItem is not found in the empty JSON string", TrustpilotReviewSearchBusinessDataSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+      }
+      if ((jsonObj.get("language") != null && !jsonObj.get("language").isJsonNull()) && !jsonObj.get("language").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `language` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
+      }
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("review_text") != null && !jsonObj.get("review_text").isJsonNull()) && !jsonObj.get("review_text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `review_text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("review_text").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("review_images") != null && !jsonObj.get("review_images").isJsonNull() && !jsonObj.get("review_images").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `review_images` to be an array in the JSON string but got `%s`", jsonObj.get("review_images").toString()));
+      }
+      // validate the optional field `user_profile`
+      if (jsonObj.get("user_profile") != null && !jsonObj.get("user_profile").isJsonNull()) {
+        BusinessDataUserProfileInfo.validateJsonElement(jsonObj.get("user_profile"));
+      }
+      if (jsonObj.get("responses") != null && !jsonObj.get("responses").isJsonNull()) {
+        JsonArray jsonArrayresponses = jsonObj.getAsJsonArray("responses");
+        if (jsonArrayresponses != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("responses").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `responses` to be an array in the JSON string but got `%s`", jsonObj.get("responses").toString()));
+          }
+
+          // validate the optional field `responses` (array)
+          for (int i = 0; i < jsonArrayresponses.size(); i++) {
+            ReviewResponseItemInfo.validateJsonElement(jsonArrayresponses.get(i));
+          };
         }
       }
   }

@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * CurrencyBoxSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class CurrencyBoxSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
@@ -88,7 +88,6 @@ public class CurrencyBoxSerpElementItem extends BaseSerpElementItem {
   private Rectangle rectangle;
 
   public CurrencyBoxSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public CurrencyBoxSerpElementItem value(Float value) {
@@ -390,6 +389,28 @@ public class CurrencyBoxSerpElementItem extends BaseSerpElementItem {
         if (!CurrencyBoxSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in CurrencyBoxSerpElementItem is not found in the empty JSON string", CurrencyBoxSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("currency") != null && !jsonObj.get("currency").isJsonNull()) && !jsonObj.get("currency").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency").toString()));
+      }
+      if ((jsonObj.get("converted_currency") != null && !jsonObj.get("converted_currency").isJsonNull()) && !jsonObj.get("converted_currency").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `converted_currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("converted_currency").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
+      }
+      // validate the optional field `table`
+      if (jsonObj.get("table") != null && !jsonObj.get("table").isJsonNull()) {
+        Table.validateJsonElement(jsonObj.get("table"));
+      }
+      // validate the optional field `graph`
+      if (jsonObj.get("graph") != null && !jsonObj.get("graph").isJsonNull()) {
+        Graph.validateJsonElement(jsonObj.get("graph"));
+      }
+      // validate the optional field `rectangle`
+      if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {
+        Rectangle.validateJsonElement(jsonObj.get("rectangle"));
       }
   }
 

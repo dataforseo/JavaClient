@@ -53,14 +53,13 @@ import io.github.dataforseo.client.JSON;
 /**
  * ProductInformationExtendedItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ProductInformationExtendedItem extends BaseProductInformationItem {
   public static final String SERIALIZED_NAME_CONTENTS = "contents";
   @SerializedName(SERIALIZED_NAME_CONTENTS)
   private List<ProductInformationRows> contents;
 
   public ProductInformationExtendedItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public ProductInformationExtendedItem contents(List<ProductInformationRows> contents) {
@@ -212,6 +211,21 @@ public class ProductInformationExtendedItem extends BaseProductInformationItem {
       if (jsonElement == null) {
         if (!ProductInformationExtendedItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in ProductInformationExtendedItem is not found in the empty JSON string", ProductInformationExtendedItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if (jsonObj.get("contents") != null && !jsonObj.get("contents").isJsonNull()) {
+        JsonArray jsonArraycontents = jsonObj.getAsJsonArray("contents");
+        if (jsonArraycontents != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("contents").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `contents` to be an array in the JSON string but got `%s`", jsonObj.get("contents").toString()));
+          }
+
+          // validate the optional field `contents` (array)
+          for (int i = 0; i < jsonArraycontents.size(); i++) {
+            ProductInformationRows.validateJsonElement(jsonArraycontents.get(i));
+          };
         }
       }
   }

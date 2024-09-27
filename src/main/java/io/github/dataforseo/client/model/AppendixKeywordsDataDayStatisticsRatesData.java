@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -125,13 +125,13 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_GOOGLE)
   private AppendixBingKeywordsDataLimitsRatesDataInfo google;
 
-  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
-  @SerializedName(SERIALIZED_NAME_ID_LIST)
-  private Double idList;
-
   public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
   private AppendixInfo searchVolumeHistory;
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
 
   public AppendixKeywordsDataDayStatisticsRatesData() {
   }
@@ -459,25 +459,6 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   }
 
 
-  public AppendixKeywordsDataDayStatisticsRatesData idList(Double idList) {
-    this.idList = idList;
-    return this;
-  }
-
-  /**
-   * Get idList
-   * @return idList
-   */
-  @javax.annotation.Nullable
-  public Double getIdList() {
-    return idList;
-  }
-
-  public void setIdList(Double idList) {
-    this.idList = idList;
-  }
-
-
   public AppendixKeywordsDataDayStatisticsRatesData searchVolumeHistory(AppendixInfo searchVolumeHistory) {
     this.searchVolumeHistory = searchVolumeHistory;
     return this;
@@ -494,6 +475,25 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
 
   public void setSearchVolumeHistory(AppendixInfo searchVolumeHistory) {
     this.searchVolumeHistory = searchVolumeHistory;
+  }
+
+
+  public AppendixKeywordsDataDayStatisticsRatesData idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * Get idList
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
   }
 
   /**
@@ -568,8 +568,8 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
         Objects.equals(this.dataforseoTrends, appendixKeywordsDataDayStatisticsRatesData.dataforseoTrends) &&
         Objects.equals(this.clickstreamData, appendixKeywordsDataDayStatisticsRatesData.clickstreamData) &&
         Objects.equals(this.google, appendixKeywordsDataDayStatisticsRatesData.google) &&
-        Objects.equals(this.idList, appendixKeywordsDataDayStatisticsRatesData.idList) &&
-        Objects.equals(this.searchVolumeHistory, appendixKeywordsDataDayStatisticsRatesData.searchVolumeHistory)&&
+        Objects.equals(this.searchVolumeHistory, appendixKeywordsDataDayStatisticsRatesData.searchVolumeHistory) &&
+        Objects.equals(this.idList, appendixKeywordsDataDayStatisticsRatesData.idList)&&
         Objects.equals(this.additionalProperties, appendixKeywordsDataDayStatisticsRatesData.additionalProperties);
   }
 
@@ -579,7 +579,7 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, google, idList, searchVolumeHistory, additionalProperties);
+    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, google, searchVolumeHistory, idList, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -610,8 +610,8 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
     sb.append("    dataforseoTrends: ").append(toIndentedString(dataforseoTrends)).append("\n");
     sb.append("    clickstreamData: ").append(toIndentedString(clickstreamData)).append("\n");
     sb.append("    google: ").append(toIndentedString(google)).append("\n");
-    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -652,8 +652,8 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
     openapiFields.add("dataforseo_trends");
     openapiFields.add("clickstream_data");
     openapiFields.add("google");
-    openapiFields.add("id_list");
     openapiFields.add("search_volume_history");
+    openapiFields.add("id_list");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordIdeasLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -130,7 +130,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   }
 
   /**
-   * keywords required field UTF-8 encoding The maximum number of keywords you can specify: 200. The minimum number of characters for each keyword: 3. The keywords will be converted to lowercase format
+   * keywords required field UTF-8 encoding The maximum number of keywords you can specify: 200. The minimum number of characters for each keyword: 3. The keywords will be converted to lowercase format learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable

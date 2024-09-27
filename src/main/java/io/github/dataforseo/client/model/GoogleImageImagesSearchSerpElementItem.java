@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleImageImagesSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleImageImagesSearchSerpElementItem extends BaseGoogleImagesSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -77,7 +77,6 @@ public class GoogleImageImagesSearchSerpElementItem extends BaseGoogleImagesSerp
   private String encodedUrl;
 
   public GoogleImageImagesSearchSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleImageImagesSearchSerpElementItem title(String title) {
@@ -334,6 +333,25 @@ public class GoogleImageImagesSearchSerpElementItem extends BaseGoogleImagesSerp
         if (!GoogleImageImagesSearchSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleImageImagesSearchSerpElementItem is not found in the empty JSON string", GoogleImageImagesSearchSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("subtitle") != null && !jsonObj.get("subtitle").isJsonNull()) && !jsonObj.get("subtitle").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `subtitle` to be a primitive type in the JSON string but got `%s`", jsonObj.get("subtitle").toString()));
+      }
+      if ((jsonObj.get("alt") != null && !jsonObj.get("alt").isJsonNull()) && !jsonObj.get("alt").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `alt` to be a primitive type in the JSON string but got `%s`", jsonObj.get("alt").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("source_url") != null && !jsonObj.get("source_url").isJsonNull()) && !jsonObj.get("source_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `source_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("source_url").toString()));
+      }
+      if ((jsonObj.get("encoded_url") != null && !jsonObj.get("encoded_url").isJsonNull()) && !jsonObj.get("encoded_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `encoded_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("encoded_url").toString()));
       }
   }
 

@@ -18,7 +18,7 @@ items array
 |**countryIsoCode** | **String** | domain ISO code ISO code of the country that target domain is determined to belong to |  [optional] |
 |**languageCode** | **String** | domain language code of the language that target domain is determined to be associated with |  [optional] |
 |**contentLanguageCode** | **String** | content language code of the language that content on the target domain is written with |  [optional] |
-|**phoneNumbers** | **List&lt;String&gt;** | phone numbers of the target contact phone numbers indicated on the target website |  [optional] |
+|**phoneNumbers** | **Object** | phone numbers of the target contact phone numbers indicated on the target website |  [optional] |
 |**emails** | **List&lt;String&gt;** | emails of the target emails indicated on the target website |  [optional] |
 |**socialGraphUrls** | **List&lt;String&gt;** | social media links and handles social media URLs detected in the social graphs of the target website |  [optional] |
 |**technologies** | [**TechnologiesInfo**](TechnologiesInfo.md) |  |  [optional] |

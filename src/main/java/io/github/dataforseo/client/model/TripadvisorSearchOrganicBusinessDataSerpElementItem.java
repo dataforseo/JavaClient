@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TripadvisorSearchOrganicBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TripadvisorSearchOrganicBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -82,7 +82,6 @@ public class TripadvisorSearchOrganicBusinessDataSerpElementItem extends BaseBus
   private RatingInfo rating;
 
   public TripadvisorSearchOrganicBusinessDataSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public TripadvisorSearchOrganicBusinessDataSerpElementItem title(String title) {
@@ -360,6 +359,23 @@ public class TripadvisorSearchOrganicBusinessDataSerpElementItem extends BaseBus
         if (!TripadvisorSearchOrganicBusinessDataSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in TripadvisorSearchOrganicBusinessDataSerpElementItem is not found in the empty JSON string", TripadvisorSearchOrganicBusinessDataSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("url_path") != null && !jsonObj.get("url_path").isJsonNull()) && !jsonObj.get("url_path").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url_path` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url_path").toString()));
+      }
+      if ((jsonObj.get("category") != null && !jsonObj.get("category").isJsonNull()) && !jsonObj.get("category").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("category").toString()));
+      }
+      if ((jsonObj.get("price_rate") != null && !jsonObj.get("price_rate").isJsonNull()) && !jsonObj.get("price_rate").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `price_rate` to be a primitive type in the JSON string but got `%s`", jsonObj.get("price_rate").toString()));
+      }
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
   }
 

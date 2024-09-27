@@ -56,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonProductInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -143,7 +143,6 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
   private Boolean isAvailable;
 
   public AmazonAmazonProductInfoSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public AmazonAmazonProductInfoSerpElementItem position(String position) {
@@ -770,6 +769,82 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
         if (!AmazonAmazonProductInfoSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in AmazonAmazonProductInfoSerpElementItem is not found in the empty JSON string", AmazonAmazonProductInfoSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("details") != null && !jsonObj.get("details").isJsonNull()) && !jsonObj.get("details").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `details` to be a primitive type in the JSON string but got `%s`", jsonObj.get("details").toString()));
+      }
+      if ((jsonObj.get("image_url") != null && !jsonObj.get("image_url").isJsonNull()) && !jsonObj.get("image_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `image_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("image_url").toString()));
+      }
+      if ((jsonObj.get("author") != null && !jsonObj.get("author").isJsonNull()) && !jsonObj.get("author").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `author` to be a primitive type in the JSON string but got `%s`", jsonObj.get("author").toString()));
+      }
+      if ((jsonObj.get("data_asin") != null && !jsonObj.get("data_asin").isJsonNull()) && !jsonObj.get("data_asin").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `data_asin` to be a primitive type in the JSON string but got `%s`", jsonObj.get("data_asin").toString()));
+      }
+      if ((jsonObj.get("parent_asin") != null && !jsonObj.get("parent_asin").isJsonNull()) && !jsonObj.get("parent_asin").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `parent_asin` to be a primitive type in the JSON string but got `%s`", jsonObj.get("parent_asin").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("product_asins") != null && !jsonObj.get("product_asins").isJsonNull() && !jsonObj.get("product_asins").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `product_asins` to be an array in the JSON string but got `%s`", jsonObj.get("product_asins").toString()));
+      }
+      if ((jsonObj.get("currency") != null && !jsonObj.get("currency").isJsonNull()) && !jsonObj.get("currency").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency").toString()));
+      }
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingElement.validateJsonElement(jsonObj.get("rating"));
+      }
+      // validate the optional field `newer_model`
+      if (jsonObj.get("newer_model") != null && !jsonObj.get("newer_model").isJsonNull()) {
+        AmazonProductNewerModelInfo.validateJsonElement(jsonObj.get("newer_model"));
+      }
+      if (jsonObj.get("categories") != null && !jsonObj.get("categories").isJsonNull()) {
+        JsonArray jsonArraycategories = jsonObj.getAsJsonArray("categories");
+        if (jsonArraycategories != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("categories").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `categories` to be an array in the JSON string but got `%s`", jsonObj.get("categories").toString()));
+          }
+
+          // validate the optional field `categories` (array)
+          for (int i = 0; i < jsonArraycategories.size(); i++) {
+            ProductCategoryInfo.validateJsonElement(jsonArraycategories.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("product_information") != null && !jsonObj.get("product_information").isJsonNull()) {
+        JsonArray jsonArrayproductInformation = jsonObj.getAsJsonArray("product_information");
+        if (jsonArrayproductInformation != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("product_information").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `product_information` to be an array in the JSON string but got `%s`", jsonObj.get("product_information").toString()));
+          }
+
+          // validate the optional field `product_information` (array)
+          for (int i = 0; i < jsonArrayproductInformation.size(); i++) {
+            BaseProductInformationItem.validateJsonElement(jsonArrayproductInformation.get(i));
+          };
+        }
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("product_images_list") != null && !jsonObj.get("product_images_list").isJsonNull() && !jsonObj.get("product_images_list").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `product_images_list` to be an array in the JSON string but got `%s`", jsonObj.get("product_images_list").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("product_videos_list") != null && !jsonObj.get("product_videos_list").isJsonNull() && !jsonObj.get("product_videos_list").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `product_videos_list` to be an array in the JSON string but got `%s`", jsonObj.get("product_videos_list").toString()));
+      }
+      if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
       }
   }
 

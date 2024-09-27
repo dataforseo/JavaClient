@@ -53,14 +53,13 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleTrendsQueriesListElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleTrendsQueriesListElementItem extends BaseGoogleTrendsItem {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
   private QueriesListDataInfo data;
 
   public GoogleTrendsQueriesListElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleTrendsQueriesListElementItem data(QueriesListDataInfo data) {
@@ -207,6 +206,11 @@ public class GoogleTrendsQueriesListElementItem extends BaseGoogleTrendsItem {
         if (!GoogleTrendsQueriesListElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleTrendsQueriesListElementItem is not found in the empty JSON string", GoogleTrendsQueriesListElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the optional field `data`
+      if (jsonObj.get("data") != null && !jsonObj.get("data").isJsonNull()) {
+        QueriesListDataInfo.validateJsonElement(jsonObj.get("data"));
       }
   }
 

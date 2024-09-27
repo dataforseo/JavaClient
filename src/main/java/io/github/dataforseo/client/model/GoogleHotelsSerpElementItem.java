@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleHotelsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
@@ -70,7 +70,6 @@ public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
   private Rectangle rectangle;
 
   public GoogleHotelsSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public GoogleHotelsSerpElementItem hotelIdentifier(String hotelIdentifier) {
@@ -284,6 +283,20 @@ public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
         if (!GoogleHotelsSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in GoogleHotelsSerpElementItem is not found in the empty JSON string", GoogleHotelsSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("hotel_identifier") != null && !jsonObj.get("hotel_identifier").isJsonNull()) && !jsonObj.get("hotel_identifier").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `hotel_identifier` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hotel_identifier").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("cid") != null && !jsonObj.get("cid").isJsonNull()) && !jsonObj.get("cid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `cid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cid").toString()));
+      }
+      // validate the optional field `rectangle`
+      if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {
+        Rectangle.validateJsonElement(jsonObj.get("rectangle"));
       }
   }
 

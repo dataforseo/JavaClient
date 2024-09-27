@@ -20,7 +20,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.ImagesElement;
-import io.github.dataforseo.client.model.RelatedImageSearchesElement;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -81,6 +80,14 @@ public class ImagesDataforseoLabsSerpElementItemTest {
     @Test
     public void xpathTest() {
         // TODO: test xpath
+    }
+
+    /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
     }
 
     /**

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**domain** | **String** | website domain |  [optional] |
+|**domain** | **String** | domain where a link points |  [optional] |
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**featuredTitle** | **String** | the title of the featured snippets source page |  [optional] |
 |**description** | **String** | description of the results element in SERP |  [optional] |

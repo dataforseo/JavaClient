@@ -18,6 +18,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AuthorsElement;
 import io.github.dataforseo.client.model.DatasetDescription;
 import io.github.dataforseo.client.model.FormatsElement;
 import io.github.dataforseo.client.model.LicensesElement;

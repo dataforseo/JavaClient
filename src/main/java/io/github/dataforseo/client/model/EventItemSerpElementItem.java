@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * EventItemSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class EventItemSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -86,7 +86,6 @@ public class EventItemSerpElementItem extends BaseSerpElementItem {
   private List<InformationAndTicketsElement> informationAndTickets;
 
   public EventItemSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public EventItemSerpElementItem title(String title) {
@@ -373,6 +372,41 @@ public class EventItemSerpElementItem extends BaseSerpElementItem {
       if (jsonElement == null) {
         if (!EventItemSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in EventItemSerpElementItem is not found in the empty JSON string", EventItemSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      if ((jsonObj.get("image_url") != null && !jsonObj.get("image_url").isJsonNull()) && !jsonObj.get("image_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `image_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("image_url").toString()));
+      }
+      // validate the optional field `event_dates`
+      if (jsonObj.get("event_dates") != null && !jsonObj.get("event_dates").isJsonNull()) {
+        EventDates.validateJsonElement(jsonObj.get("event_dates"));
+      }
+      // validate the optional field `location_info`
+      if (jsonObj.get("location_info") != null && !jsonObj.get("location_info").isJsonNull()) {
+        LocationInfo.validateJsonElement(jsonObj.get("location_info"));
+      }
+      if (jsonObj.get("information_and_tickets") != null && !jsonObj.get("information_and_tickets").isJsonNull()) {
+        JsonArray jsonArrayinformationAndTickets = jsonObj.getAsJsonArray("information_and_tickets");
+        if (jsonArrayinformationAndTickets != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("information_and_tickets").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `information_and_tickets` to be an array in the JSON string but got `%s`", jsonObj.get("information_and_tickets").toString()));
+          }
+
+          // validate the optional field `information_and_tickets` (array)
+          for (int i = 0; i < jsonArrayinformationAndTickets.size(); i++) {
+            InformationAndTicketsElement.validateJsonElement(jsonArrayinformationAndTickets.get(i));
+          };
         }
       }
   }

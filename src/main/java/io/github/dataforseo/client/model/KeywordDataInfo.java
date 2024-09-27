@@ -56,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordDataInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -88,7 +88,7 @@ public class KeywordDataInfo {
 
   public static final String SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO = "clickstream_keyword_info";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO)
-  private Object clickstreamKeywordInfo;
+  private Object clickstreamKeywordInfo = null;
 
   public static final String SERIALIZED_NAME_KEYWORD_PROPERTIES = "keyword_properties";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PROPERTIES)
@@ -252,7 +252,7 @@ public class KeywordDataInfo {
   }
 
   /**
-   * clickstream data for the returned keyword to retrieve results for this field, the parameter include_clickstream_data must be set to true
+   * Get clickstreamKeywordInfo
    * @return clickstreamKeywordInfo
    */
   @javax.annotation.Nullable

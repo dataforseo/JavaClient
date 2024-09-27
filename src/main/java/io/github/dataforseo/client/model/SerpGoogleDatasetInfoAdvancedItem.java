@@ -19,6 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AuthorsElement;
 import io.github.dataforseo.client.model.DatasetDescription;
 import io.github.dataforseo.client.model.FormatsElement;
 import io.github.dataforseo.client.model.LicensesElement;
@@ -56,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleDatasetInfoAdvancedItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleDatasetInfoAdvancedItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -108,7 +109,7 @@ public class SerpGoogleDatasetInfoAdvancedItem {
 
   public static final String SERIALIZED_NAME_AUTHORS = "authors";
   @SerializedName(SERIALIZED_NAME_AUTHORS)
-  private Object authors;
+  private List<AuthorsElement> authors;
 
   public static final String SERIALIZED_NAME_LICENSES = "licenses";
   @SerializedName(SERIALIZED_NAME_LICENSES)
@@ -120,7 +121,7 @@ public class SerpGoogleDatasetInfoAdvancedItem {
 
   public static final String SERIALIZED_NAME_AREA_COVERED = "area_covered";
   @SerializedName(SERIALIZED_NAME_AREA_COVERED)
-  private Object areaCovered;
+  private List<String> areaCovered;
 
   public static final String SERIALIZED_NAME_PERIOD_COVERED = "period_covered";
   @SerializedName(SERIALIZED_NAME_PERIOD_COVERED)
@@ -385,21 +386,29 @@ public class SerpGoogleDatasetInfoAdvancedItem {
   }
 
 
-  public SerpGoogleDatasetInfoAdvancedItem authors(Object authors) {
+  public SerpGoogleDatasetInfoAdvancedItem authors(List<AuthorsElement> authors) {
     this.authors = authors;
     return this;
   }
 
+  public SerpGoogleDatasetInfoAdvancedItem addAuthorsItem(AuthorsElement authorsItem) {
+    if (this.authors == null) {
+      this.authors = new ArrayList<>();
+    }
+    this.authors.add(authorsItem);
+    return this;
+  }
+
   /**
-   * the list of authors of the dataset
+   * Get authors
    * @return authors
    */
   @javax.annotation.Nullable
-  public Object getAuthors() {
+  public List<AuthorsElement> getAuthors() {
     return authors;
   }
 
-  public void setAuthors(Object authors) {
+  public void setAuthors(List<AuthorsElement> authors) {
     this.authors = authors;
   }
 
@@ -450,8 +459,16 @@ public class SerpGoogleDatasetInfoAdvancedItem {
   }
 
 
-  public SerpGoogleDatasetInfoAdvancedItem areaCovered(Object areaCovered) {
+  public SerpGoogleDatasetInfoAdvancedItem areaCovered(List<String> areaCovered) {
     this.areaCovered = areaCovered;
+    return this;
+  }
+
+  public SerpGoogleDatasetInfoAdvancedItem addAreaCoveredItem(String areaCoveredItem) {
+    if (this.areaCovered == null) {
+      this.areaCovered = new ArrayList<>();
+    }
+    this.areaCovered.add(areaCoveredItem);
     return this;
   }
 
@@ -460,11 +477,11 @@ public class SerpGoogleDatasetInfoAdvancedItem {
    * @return areaCovered
    */
   @javax.annotation.Nullable
-  public Object getAreaCovered() {
+  public List<String> getAreaCovered() {
     return areaCovered;
   }
 
-  public void setAreaCovered(Object areaCovered) {
+  public void setAreaCovered(List<String> areaCovered) {
     this.areaCovered = areaCovered;
   }
 
@@ -739,6 +756,20 @@ public class SerpGoogleDatasetInfoAdvancedItem {
           };
         }
       }
+      if (jsonObj.get("authors") != null && !jsonObj.get("authors").isJsonNull()) {
+        JsonArray jsonArrayauthors = jsonObj.getAsJsonArray("authors");
+        if (jsonArrayauthors != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("authors").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `authors` to be an array in the JSON string but got `%s`", jsonObj.get("authors").toString()));
+          }
+
+          // validate the optional field `authors` (array)
+          for (int i = 0; i < jsonArrayauthors.size(); i++) {
+            AuthorsElement.validateJsonElement(jsonArrayauthors.get(i));
+          };
+        }
+      }
       if (jsonObj.get("licenses") != null && !jsonObj.get("licenses").isJsonNull()) {
         JsonArray jsonArraylicenses = jsonObj.getAsJsonArray("licenses");
         if (jsonArraylicenses != null) {
@@ -755,6 +786,10 @@ public class SerpGoogleDatasetInfoAdvancedItem {
       }
       if ((jsonObj.get("updated_date") != null && !jsonObj.get("updated_date").isJsonNull()) && !jsonObj.get("updated_date").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `updated_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("updated_date").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("area_covered") != null && !jsonObj.get("area_covered").isJsonNull() && !jsonObj.get("area_covered").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `area_covered` to be an array in the JSON string but got `%s`", jsonObj.get("area_covered").toString()));
       }
       // validate the optional field `period_covered`
       if (jsonObj.get("period_covered") != null && !jsonObj.get("period_covered").isJsonNull()) {

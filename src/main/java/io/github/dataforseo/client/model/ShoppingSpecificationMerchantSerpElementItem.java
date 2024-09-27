@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ShoppingSpecificationMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ShoppingSpecificationMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -69,7 +69,6 @@ public class ShoppingSpecificationMerchantSerpElementItem extends BaseMerchantSe
   private String specificationValue;
 
   public ShoppingSpecificationMerchantSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public ShoppingSpecificationMerchantSerpElementItem xpath(String xpath) {
@@ -282,6 +281,19 @@ public class ShoppingSpecificationMerchantSerpElementItem extends BaseMerchantSe
         if (!ShoppingSpecificationMerchantSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in ShoppingSpecificationMerchantSerpElementItem is not found in the empty JSON string", ShoppingSpecificationMerchantSerpElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
+      if ((jsonObj.get("block_name") != null && !jsonObj.get("block_name").isJsonNull()) && !jsonObj.get("block_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `block_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("block_name").toString()));
+      }
+      if ((jsonObj.get("specification_name") != null && !jsonObj.get("specification_name").isJsonNull()) && !jsonObj.get("specification_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `specification_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specification_name").toString()));
+      }
+      if ((jsonObj.get("specification_value") != null && !jsonObj.get("specification_value").isJsonNull()) && !jsonObj.get("specification_value").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `specification_value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("specification_value").toString()));
       }
   }
 

@@ -7,7 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**items** | [**List&lt;VideoElement&gt;**](VideoElement.md) | contains results featured in the ‘hotels_pack’ element of SERP |  [optional] |
+|**seType** | **String** | search engine type |  [optional] |
+|**items** | [**List&lt;VideoElement&gt;**](VideoElement.md) | elements of search results found in SERP |  [optional] |
 
 
 

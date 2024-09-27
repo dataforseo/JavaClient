@@ -57,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ScriptResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -72,7 +72,6 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
   private String acceptType;
 
   public ScriptResourceElementItem() {
-    this.resourceType = this.getClass().getSimpleName();
   }
 
   public ScriptResourceElementItem meta(ResourceMetaInfo meta) {
@@ -274,6 +273,18 @@ public class ScriptResourceElementItem extends BaseOnPageResourceItemInfo {
         if (!ScriptResourceElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in ScriptResourceElementItem is not found in the empty JSON string", ScriptResourceElementItem.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the optional field `meta`
+      if (jsonObj.get("meta") != null && !jsonObj.get("meta").isJsonNull()) {
+        ResourceMetaInfo.validateJsonElement(jsonObj.get("meta"));
+      }
+      // validate the optional field `fetch_timing`
+      if (jsonObj.get("fetch_timing") != null && !jsonObj.get("fetch_timing").isJsonNull()) {
+        FetchTiming.validateJsonElement(jsonObj.get("fetch_timing"));
+      }
+      if ((jsonObj.get("accept_type") != null && !jsonObj.get("accept_type").isJsonNull()) && !jsonObj.get("accept_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `accept_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("accept_type").toString()));
       }
   }
 

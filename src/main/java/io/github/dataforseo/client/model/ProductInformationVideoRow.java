@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ProductInformationVideoRow
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ProductInformationVideoRow extends BaseProductInformationRowItem {
   public static final String SERIALIZED_NAME_PREVIEW = "preview";
   @SerializedName(SERIALIZED_NAME_PREVIEW)
@@ -61,7 +61,6 @@ public class ProductInformationVideoRow extends BaseProductInformationRowItem {
   private String url;
 
   public ProductInformationVideoRow() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public ProductInformationVideoRow preview(String preview) {
@@ -227,6 +226,13 @@ public class ProductInformationVideoRow extends BaseProductInformationRowItem {
         if (!ProductInformationVideoRow.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in ProductInformationVideoRow is not found in the empty JSON string", ProductInformationVideoRow.openapiRequiredFields.toString()));
         }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("preview") != null && !jsonObj.get("preview").isJsonNull()) && !jsonObj.get("preview").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `preview` to be a primitive type in the JSON string but got `%s`", jsonObj.get("preview").toString()));
+      }
+      if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
       }
   }
 

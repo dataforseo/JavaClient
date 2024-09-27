@@ -83,6 +83,14 @@ public class VideoDataforseoLabsSerpElementItemTest {
     }
 
     /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
+    }
+
+    /**
      * Test the property 'items'
      */
     @Test

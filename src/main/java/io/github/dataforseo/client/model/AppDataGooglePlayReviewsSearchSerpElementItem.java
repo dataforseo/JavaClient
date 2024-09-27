@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGooglePlayReviewsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-06T19:08:02.252153200+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
@@ -86,7 +86,6 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
   private List<ResponseDataInfo> responses;
 
   public AppDataGooglePlayReviewsSearchSerpElementItem() {
-    this.type = this.getClass().getSimpleName();
   }
 
   public AppDataGooglePlayReviewsSearchSerpElementItem version(String version) {
@@ -374,6 +373,37 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
       if (jsonElement == null) {
         if (!AppDataGooglePlayReviewsSearchSerpElementItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in AppDataGooglePlayReviewsSearchSerpElementItem is not found in the empty JSON string", AppDataGooglePlayReviewsSearchSerpElementItem.openapiRequiredFields.toString()));
+        }
+      }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("version") != null && !jsonObj.get("version").isJsonNull()) && !jsonObj.get("version").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `version` to be a primitive type in the JSON string but got `%s`", jsonObj.get("version").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
+      }
+      if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+      }
+      if ((jsonObj.get("review_text") != null && !jsonObj.get("review_text").isJsonNull()) && !jsonObj.get("review_text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `review_text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("review_text").toString()));
+      }
+      // validate the optional field `user_profile`
+      if (jsonObj.get("user_profile") != null && !jsonObj.get("user_profile").isJsonNull()) {
+        AppUserProfileInfo.validateJsonElement(jsonObj.get("user_profile"));
+      }
+      if (jsonObj.get("responses") != null && !jsonObj.get("responses").isJsonNull()) {
+        JsonArray jsonArrayresponses = jsonObj.getAsJsonArray("responses");
+        if (jsonArrayresponses != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("responses").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `responses` to be an array in the JSON string but got `%s`", jsonObj.get("responses").toString()));
+          }
+
+          // validate the optional field `responses` (array)
+          for (int i = 0; i < jsonArrayresponses.size(); i++) {
+            ResponseDataInfo.validateJsonElement(jsonArrayresponses.get(i));
+          };
         }
       }
   }
