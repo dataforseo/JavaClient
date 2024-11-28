@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppsInfo;
 import io.github.dataforseo.client.model.BaseAppDataSerpElementItem;
-import io.github.dataforseo.client.model.Price;
+import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.RatingInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataAppStoreInfoOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_APP_ID = "app_id";
   @SerializedName(SERIALIZED_NAME_APP_ID)
@@ -79,7 +79,7 @@ public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpEl
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private Price price;
+  private PriceInfo price;
 
   public static final String SERIALIZED_NAME_IS_FREE = "is_free";
   @SerializedName(SERIALIZED_NAME_IS_FREE)
@@ -247,7 +247,7 @@ public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpEl
   }
 
 
-  public AppDataAppStoreInfoOrganicSerpElementItem price(Price price) {
+  public AppDataAppStoreInfoOrganicSerpElementItem price(PriceInfo price) {
     this.price = price;
     return this;
   }
@@ -257,11 +257,11 @@ public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpEl
    * @return price
    */
   @javax.annotation.Nullable
-  public Price getPrice() {
+  public PriceInfo getPrice() {
     return price;
   }
 
-  public void setPrice(Price price) {
+  public void setPrice(PriceInfo price) {
     this.price = price;
   }
 
@@ -846,7 +846,7 @@ public class AppDataAppStoreInfoOrganicSerpElementItem extends BaseAppDataSerpEl
       }
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
-        Price.validateJsonElement(jsonObj.get("price"));
+        PriceInfo.validateJsonElement(jsonObj.get("price"));
       }
       if ((jsonObj.get("main_category") != null && !jsonObj.get("main_category").isJsonNull()) && !jsonObj.get("main_category").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `main_category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("main_category").toString()));

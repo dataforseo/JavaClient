@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixBingKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixInfo;
 import java.io.IOException;
@@ -169,6 +170,22 @@ public class AppendixKeywordsDatasRatesDataInfoTest {
     @Test
     public void clickstreamDataTest() {
         // TODO: test clickstreamData
+    }
+
+    /**
+     * Test the property 'audienceEstimation'
+     */
+    @Test
+    public void audienceEstimationTest() {
+        // TODO: test audienceEstimation
+    }
+
+    /**
+     * Test the property 'keywordSuggestionsForUrl'
+     */
+    @Test
+    public void keywordSuggestionsForUrlTest() {
+        // TODO: test keywordSuggestionsForUrl
     }
 
 }

@@ -113,19 +113,19 @@ public class AppendixAppDataDayStatisticsMoneyDataTest {
     }
 
     /**
-     * Test the property 'refundMoney'
-     */
-    @Test
-    public void refundMoneyTest() {
-        // TODO: test refundMoney
-    }
-
-    /**
      * Test the property 'appListings'
      */
     @Test
     public void appListingsTest() {
         // TODO: test appListings
+    }
+
+    /**
+     * Test the property 'refundMoney'
+     */
+    @Test
+    public void refundMoneyTest() {
+        // TODO: test refundMoney
     }
 
 }

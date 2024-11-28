@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataGoogleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixBusinessDataGoogleInfo {
   public static final String SERIALIZED_NAME_MY_BUSINESS_INFO = "my_business_info";
   @SerializedName(SERIALIZED_NAME_MY_BUSINESS_INFO)
@@ -75,6 +75,10 @@ public class AppendixBusinessDataGoogleInfo {
   public static final String SERIALIZED_NAME_QUESTIONS_AND_ANSWERS = "questions_and_answers";
   @SerializedName(SERIALIZED_NAME_QUESTIONS_AND_ANSWERS)
   private AppendixInfo questionsAndAnswers;
+
+  public static final String SERIALIZED_NAME_EXTENDED_REVIEWS = "extended_reviews";
+  @SerializedName(SERIALIZED_NAME_EXTENDED_REVIEWS)
+  private AppendixInfo extendedReviews;
 
   public AppendixBusinessDataGoogleInfo() {
   }
@@ -192,6 +196,25 @@ public class AppendixBusinessDataGoogleInfo {
     this.questionsAndAnswers = questionsAndAnswers;
   }
 
+
+  public AppendixBusinessDataGoogleInfo extendedReviews(AppendixInfo extendedReviews) {
+    this.extendedReviews = extendedReviews;
+    return this;
+  }
+
+  /**
+   * Get extendedReviews
+   * @return extendedReviews
+   */
+  @javax.annotation.Nullable
+  public AppendixInfo getExtendedReviews() {
+    return extendedReviews;
+  }
+
+  public void setExtendedReviews(AppendixInfo extendedReviews) {
+    this.extendedReviews = extendedReviews;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -252,13 +275,14 @@ public class AppendixBusinessDataGoogleInfo {
         Objects.equals(this.hotelInfo, appendixBusinessDataGoogleInfo.hotelInfo) &&
         Objects.equals(this.hotelSearches, appendixBusinessDataGoogleInfo.hotelSearches) &&
         Objects.equals(this.reviews, appendixBusinessDataGoogleInfo.reviews) &&
-        Objects.equals(this.questionsAndAnswers, appendixBusinessDataGoogleInfo.questionsAndAnswers)&&
+        Objects.equals(this.questionsAndAnswers, appendixBusinessDataGoogleInfo.questionsAndAnswers) &&
+        Objects.equals(this.extendedReviews, appendixBusinessDataGoogleInfo.extendedReviews)&&
         Objects.equals(this.additionalProperties, appendixBusinessDataGoogleInfo.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(myBusinessInfo, myBusinessUpdates, hotelInfo, hotelSearches, reviews, questionsAndAnswers, additionalProperties);
+    return Objects.hash(myBusinessInfo, myBusinessUpdates, hotelInfo, hotelSearches, reviews, questionsAndAnswers, extendedReviews, additionalProperties);
   }
 
   @Override
@@ -271,6 +295,7 @@ public class AppendixBusinessDataGoogleInfo {
     sb.append("    hotelSearches: ").append(toIndentedString(hotelSearches)).append("\n");
     sb.append("    reviews: ").append(toIndentedString(reviews)).append("\n");
     sb.append("    questionsAndAnswers: ").append(toIndentedString(questionsAndAnswers)).append("\n");
+    sb.append("    extendedReviews: ").append(toIndentedString(extendedReviews)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -300,6 +325,7 @@ public class AppendixBusinessDataGoogleInfo {
     openapiFields.add("hotel_searches");
     openapiFields.add("reviews");
     openapiFields.add("questions_and_answers");
+    openapiFields.add("extended_reviews");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -341,6 +367,10 @@ public class AppendixBusinessDataGoogleInfo {
       // validate the optional field `questions_and_answers`
       if (jsonObj.get("questions_and_answers") != null && !jsonObj.get("questions_and_answers").isJsonNull()) {
         AppendixInfo.validateJsonElement(jsonObj.get("questions_and_answers"));
+      }
+      // validate the optional field `extended_reviews`
+      if (jsonObj.get("extended_reviews") != null && !jsonObj.get("extended_reviews").isJsonNull()) {
+        AppendixInfo.validateJsonElement(jsonObj.get("extended_reviews"));
       }
   }
 

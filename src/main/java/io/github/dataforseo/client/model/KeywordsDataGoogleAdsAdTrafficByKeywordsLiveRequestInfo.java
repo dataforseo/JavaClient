@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -126,7 +126,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo {
   }
 
   /**
-   * keywords required field The maximum number of keywords you can specify: 1000 The maximum number of characters for each keyword: 80 The maximum number of words for each keyword phrase: 10 the keywords you specify will be converted to a lowercase format Note: Google Ads may return no data for certain groups of keywords visit our Help Center to learn more Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task; to learn more about which symbols can be used, please refer to this article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywords required field The maximum number of keywords you can specify: 1000 The maximum number of characters for each keyword: 80 The maximum number of words for each keyword phrase: 10 the keywords you specify will be converted to a lowercase format Note: Google Ads may return no data for certain groups of keywords visit our Help Center to learn more Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task; to learn more about which symbols and characters can be used, please refer to this article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable

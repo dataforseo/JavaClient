@@ -55,14 +55,6 @@ public class OnPageContentParsingLiveRequestInfoTest {
     }
 
     /**
-     * Test the property 'customJs'
-     */
-    @Test
-    public void customJsTest() {
-        // TODO: test customJs
-    }
-
-    /**
      * Test the property 'browserPreset'
      */
     @Test

@@ -12,7 +12,7 @@
 |**icon** | **String** | URL to the app icon |  [optional] |
 |**description** | **String** | description of the app |  [optional] |
 |**reviewsCount** | **Long** | the total number of reviews of the app |  [optional] |
-|**price** | [**Price**](Price.md) |  |  [optional] |
+|**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
 |**mainCategory** | **String** | main category/genre of the app |  [optional] |
 |**categories** | **List&lt;String&gt;** | all relevant categories/genres of the app |  [optional] |

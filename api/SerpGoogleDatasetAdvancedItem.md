@@ -13,7 +13,7 @@
 |**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**datasetId** | **String** | ID of the dataset |  [optional] |
-|**title** | **String** | title of the result in SERP |  [optional] |
+|**title** | **String** | title of the element |  [optional] |
 |**imageUrl** | **String** | URL of the image the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |  [optional] |
 |**scholarlyCitationsCount** | **Long** | count of articles that refer to the dataset |  [optional] |
 |**scholarlyArticlesUrl** | **String** | url of scholarly articles link to the list of scholarly articles on Google Scholar example: https://scholar.google.com/scholar?q&#x3D;%2210.6084%20m9%20figshare%207427933%20v1%22 |  [optional] |

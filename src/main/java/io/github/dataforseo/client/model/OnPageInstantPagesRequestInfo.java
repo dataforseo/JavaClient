@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageInstantPagesRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class OnPageInstantPagesRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -408,7 +408,7 @@ public class OnPageInstantPagesRequestInfo {
   }
 
   /**
-   * custom javascript optional fieldNote that the execution time for the script you enter here should be 700 ms maximumfor example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute: let meta &#x3D; { haveGoogleAnalytics: false, haveTagManager: false };\\r\\nfor (var i &#x3D; 0; i &lt; document.scripts.length; i++) {\\r\\n let src &#x3D; document.scripts[i].getAttribute(\\\&quot;src\\\&quot;);\\r\\n if (src !&#x3D; undefined) {\\r\\n if (src.indexOf(\\\&quot;analytics.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveGoogleAnalytics &#x3D; true;\\r\\n\\tif (src.indexOf(\\\&quot;gtm.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveTagManager &#x3D; true;\\r\\n  }\\r\\n}\\r\\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script: meta &#x3D; {}; meta.url &#x3D; document.URL; meta.test &#x3D; &#39;test&#39;; meta; as a response you will receive the following data: \&quot;custom_js_response\&quot;: { \&quot;url\&quot;: \&quot;https://dataforseo.com/\&quot;, \&quot;test\&quot;: \&quot;test\&quot; } Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
+   * custom javascript optional fieldNote that the execution time for the script you enter here should be 700 ms maximum; for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute: let meta &#x3D; { haveGoogleAnalytics: false, haveTagManager: false };\\r\\nfor (var i &#x3D; 0; i &lt; document.scripts.length; i++) {\\r\\n let src &#x3D; document.scripts[i].getAttribute(\\\&quot;src\\\&quot;);\\r\\n if (src !&#x3D; undefined) {\\r\\n if (src.indexOf(\\\&quot;analytics.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveGoogleAnalytics &#x3D; true;\\r\\n\\tif (src.indexOf(\\\&quot;gtm.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveTagManager &#x3D; true;\\r\\n  }\\r\\n}\\r\\nmeta;the returned value depends on what you specified in this field. For instance, if you specify the following script: meta &#x3D; {}; meta.url &#x3D; document.URL; meta.test &#x3D; &#39;test&#39;; meta; as a response you will receive the following data: \&quot;custom_js_response\&quot;: { \&quot;url\&quot;: \&quot;https://dataforseo.com/\&quot;, \&quot;test\&quot;: \&quot;test\&quot; } Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
    * @return customJs
    */
   @javax.annotation.Nullable

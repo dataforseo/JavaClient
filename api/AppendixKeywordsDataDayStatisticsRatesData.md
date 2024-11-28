@@ -23,9 +23,13 @@
 |**googleAds** | [**AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo**](AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**dataforseoTrends** | [**AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo**](AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**clickstreamData** | [**AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo**](AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**audienceEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordSuggestionsForUrl** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
+|**industries** | **Double** |  |  [optional] |
+|**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**jobFunctions** | **Double** |  |  [optional] |
 
 
 

@@ -11,6 +11,8 @@
 |**searchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordsForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**audienceEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordSuggestionsForUrl** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

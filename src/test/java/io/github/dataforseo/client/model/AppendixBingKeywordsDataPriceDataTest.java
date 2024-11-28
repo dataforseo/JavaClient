@@ -18,7 +18,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.junit.jupiter.api.Disabled;
@@ -36,6 +36,14 @@ public class AppendixBingKeywordsDataPriceDataTest {
     @Test
     public void testAppendixBingKeywordsDataPriceData() {
         // TODO: test AppendixBingKeywordsDataPriceData
+    }
+
+    /**
+     * Test the property 'audienceEstimation'
+     */
+    @Test
+    public void audienceEstimationTest() {
+        // TODO: test audienceEstimation
     }
 
     /**
@@ -60,6 +68,14 @@ public class AppendixBingKeywordsDataPriceDataTest {
     @Test
     public void keywordsForSiteTest() {
         // TODO: test keywordsForSite
+    }
+
+    /**
+     * Test the property 'keywordSuggestionsForUrl'
+     */
+    @Test
+    public void keywordSuggestionsForUrlTest() {
+        // TODO: test keywordSuggestionsForUrl
     }
 
     /**

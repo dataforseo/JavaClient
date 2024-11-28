@@ -49,6 +49,14 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'target'
+     */
+    @Test
+    public void targetTest() {
+        // TODO: test target
+    }
+
+    /**
      * Test the property 'locationName'
      */
     @Test
@@ -113,19 +121,19 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfoTest {
     }
 
     /**
-     * Test the property 'includeAdultKeywords'
-     */
-    @Test
-    public void includeAdultKeywordsTest() {
-        // TODO: test includeAdultKeywords
-    }
-
-    /**
      * Test the property 'sortBy'
      */
     @Test
     public void sortByTest() {
         // TODO: test sortBy
+    }
+
+    /**
+     * Test the property 'includeAdultKeywords'
+     */
+    @Test
+    public void includeAdultKeywordsTest() {
+        // TODO: test includeAdultKeywords
     }
 
     /**
@@ -150,14 +158,6 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfoTest {
     @Test
     public void tagTest() {
         // TODO: test tag
-    }
-
-    /**
-     * Test the property 'target'
-     */
-    @Test
-    public void targetTest() {
-        // TODO: test target
     }
 
 }

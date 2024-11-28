@@ -9,6 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**tasksReady** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**adTrafficByKeywords** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
+|**audienceEstimation** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**bing** | [**AppendixBingKeywordsDataPriceData**](AppendixBingKeywordsDataPriceData.md) |  |  [optional] |
 |**categories** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**clickstreamData** | [**AppendixClickstreamDataKeywordsDataPriceData**](AppendixClickstreamDataKeywordsDataPriceData.md) |  |  [optional] |
@@ -17,6 +18,7 @@
 |**keywordPerformance** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**keywordsForKeywords** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**keywordsForSite** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
+|**keywordSuggestionsForUrl** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**languages** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**locations** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**locationsAndLanguages** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |

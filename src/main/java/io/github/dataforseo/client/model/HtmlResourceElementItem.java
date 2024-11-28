@@ -57,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * HtmlResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -78,6 +78,10 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_CUSTOM_JS_RESPONSE = "custom_js_response";
   @SerializedName(SERIALIZED_NAME_CUSTOM_JS_RESPONSE)
   private Object customJsResponse;
+
+  public static final String SERIALIZED_NAME_CUSTOM_JS_CLIENT_EXCEPTION = "custom_js_client_exception";
+  @SerializedName(SERIALIZED_NAME_CUSTOM_JS_CLIENT_EXCEPTION)
+  private String customJsClientException;
 
   public static final String SERIALIZED_NAME_BROKEN_RESOURCES = "broken_resources";
   @SerializedName(SERIALIZED_NAME_BROKEN_RESOURCES)
@@ -210,6 +214,25 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
 
   public void setCustomJsResponse(Object customJsResponse) {
     this.customJsResponse = customJsResponse;
+  }
+
+
+  public HtmlResourceElementItem customJsClientException(String customJsClientException) {
+    this.customJsClientException = customJsClientException;
+    return this;
+  }
+
+  /**
+   * error when executing a custom js if the error occurred when executing the script you specified in the custom_js field, the error message would be displayed here
+   * @return customJsClientException
+   */
+  @javax.annotation.Nullable
+  public String getCustomJsClientException() {
+    return customJsClientException;
+  }
+
+  public void setCustomJsClientException(String customJsClientException) {
+    this.customJsClientException = customJsClientException;
   }
 
 
@@ -443,6 +466,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
         Objects.equals(this.onpageScore, htmlResourceElementItem.onpageScore) &&
         Objects.equals(this.totalDomSize, htmlResourceElementItem.totalDomSize) &&
         Objects.equals(this.customJsResponse, htmlResourceElementItem.customJsResponse) &&
+        Objects.equals(this.customJsClientException, htmlResourceElementItem.customJsClientException) &&
         Objects.equals(this.brokenResources, htmlResourceElementItem.brokenResources) &&
         Objects.equals(this.brokenLinks, htmlResourceElementItem.brokenLinks) &&
         Objects.equals(this.duplicateTitle, htmlResourceElementItem.duplicateTitle) &&
@@ -462,7 +486,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(meta, pageTiming, onpageScore, totalDomSize, customJsResponse, brokenResources, brokenLinks, duplicateTitle, duplicateDescription, duplicateContent, clickDepth, isResource, urlLength, relativeUrlLength, super.hashCode(), additionalProperties);
+    return Objects.hash(meta, pageTiming, onpageScore, totalDomSize, customJsResponse, customJsClientException, brokenResources, brokenLinks, duplicateTitle, duplicateDescription, duplicateContent, clickDepth, isResource, urlLength, relativeUrlLength, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -482,6 +506,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
     sb.append("    onpageScore: ").append(toIndentedString(onpageScore)).append("\n");
     sb.append("    totalDomSize: ").append(toIndentedString(totalDomSize)).append("\n");
     sb.append("    customJsResponse: ").append(toIndentedString(customJsResponse)).append("\n");
+    sb.append("    customJsClientException: ").append(toIndentedString(customJsClientException)).append("\n");
     sb.append("    brokenResources: ").append(toIndentedString(brokenResources)).append("\n");
     sb.append("    brokenLinks: ").append(toIndentedString(brokenLinks)).append("\n");
     sb.append("    duplicateTitle: ").append(toIndentedString(duplicateTitle)).append("\n");
@@ -534,6 +559,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
     openapiFields.add("onpage_score");
     openapiFields.add("total_dom_size");
     openapiFields.add("custom_js_response");
+    openapiFields.add("custom_js_client_exception");
     openapiFields.add("broken_resources");
     openapiFields.add("broken_links");
     openapiFields.add("duplicate_title");
@@ -568,6 +594,9 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
       // validate the optional field `page_timing`
       if (jsonObj.get("page_timing") != null && !jsonObj.get("page_timing").isJsonNull()) {
         PageTiming.validateJsonElement(jsonObj.get("page_timing"));
+      }
+      if ((jsonObj.get("custom_js_client_exception") != null && !jsonObj.get("custom_js_client_exception").isJsonNull()) && !jsonObj.get("custom_js_client_exception").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `custom_js_client_exception` to be a primitive type in the JSON string but got `%s`", jsonObj.get("custom_js_client_exception").toString()));
       }
   }
 

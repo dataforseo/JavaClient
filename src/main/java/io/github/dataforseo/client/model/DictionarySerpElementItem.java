@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DictionarySerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DictionarySerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -82,7 +82,7 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
 
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
-  private Boolean text;
+  private String text;
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
@@ -209,7 +209,7 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
   }
 
 
-  public DictionarySerpElementItem text(Boolean text) {
+  public DictionarySerpElementItem text(String text) {
     this.text = text;
     return this;
   }
@@ -219,11 +219,11 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
    * @return text
    */
   @javax.annotation.Nullable
-  public Boolean getText() {
+  public String getText() {
     return text;
   }
 
-  public void setText(Boolean text) {
+  public void setText(String text) {
     this.text = text;
   }
 
@@ -443,6 +443,9 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
       }
       if ((jsonObj.get("snippet") != null && !jsonObj.get("snippet").isJsonNull()) && !jsonObj.get("snippet").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `snippet` to be a primitive type in the JSON string but got `%s`", jsonObj.get("snippet").toString()));
+      }
+      if ((jsonObj.get("text") != null && !jsonObj.get("text").isJsonNull()) && !jsonObj.get("text").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("text").toString()));
       }
       if (jsonObj.get("links") != null && !jsonObj.get("links").isJsonNull()) {
         JsonArray jsonArraylinks = jsonObj.getAsJsonArray("links");

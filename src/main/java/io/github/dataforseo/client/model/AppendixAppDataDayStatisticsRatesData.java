@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixAppDataDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixAppDataDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_APP_INFO = "app_info";
   @SerializedName(SERIALIZED_NAME_APP_INFO)
@@ -89,13 +89,13 @@ public class AppendixAppDataDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
   private Double tasksReady;
 
-  public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
-  @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
-  private AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings;
-
   public static final String SERIALIZED_NAME_ID_LIST = "id_list";
   @SerializedName(SERIALIZED_NAME_ID_LIST)
   private Double idList;
+
+  public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
+  @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
+  private AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings;
 
   public AppendixAppDataDayStatisticsRatesData() {
   }
@@ -271,25 +271,6 @@ public class AppendixAppDataDayStatisticsRatesData {
   }
 
 
-  public AppendixAppDataDayStatisticsRatesData appListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
-    this.appListings = appListings;
-    return this;
-  }
-
-  /**
-   * Get appListings
-   * @return appListings
-   */
-  @javax.annotation.Nullable
-  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo getAppListings() {
-    return appListings;
-  }
-
-  public void setAppListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
-    this.appListings = appListings;
-  }
-
-
   public AppendixAppDataDayStatisticsRatesData idList(Double idList) {
     this.idList = idList;
     return this;
@@ -306,6 +287,25 @@ public class AppendixAppDataDayStatisticsRatesData {
 
   public void setIdList(Double idList) {
     this.idList = idList;
+  }
+
+
+  public AppendixAppDataDayStatisticsRatesData appListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
+    this.appListings = appListings;
+    return this;
+  }
+
+  /**
+   * Get appListings
+   * @return appListings
+   */
+  @javax.annotation.Nullable
+  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo getAppListings() {
+    return appListings;
+  }
+
+  public void setAppListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
+    this.appListings = appListings;
   }
 
   /**
@@ -372,8 +372,8 @@ public class AppendixAppDataDayStatisticsRatesData {
         Objects.equals(this.locations, appendixAppDataDayStatisticsRatesData.locations) &&
         Objects.equals(this.categories, appendixAppDataDayStatisticsRatesData.categories) &&
         Objects.equals(this.tasksReady, appendixAppDataDayStatisticsRatesData.tasksReady) &&
-        Objects.equals(this.appListings, appendixAppDataDayStatisticsRatesData.appListings) &&
-        Objects.equals(this.idList, appendixAppDataDayStatisticsRatesData.idList)&&
+        Objects.equals(this.idList, appendixAppDataDayStatisticsRatesData.idList) &&
+        Objects.equals(this.appListings, appendixAppDataDayStatisticsRatesData.appListings)&&
         Objects.equals(this.additionalProperties, appendixAppDataDayStatisticsRatesData.additionalProperties);
   }
 
@@ -383,7 +383,7 @@ public class AppendixAppDataDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, tasksReady, appListings, idList, additionalProperties);
+    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, tasksReady, idList, appListings, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -406,8 +406,8 @@ public class AppendixAppDataDayStatisticsRatesData {
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
-    sb.append("    appListings: ").append(toIndentedString(appListings)).append("\n");
     sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    appListings: ").append(toIndentedString(appListings)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -440,8 +440,8 @@ public class AppendixAppDataDayStatisticsRatesData {
     openapiFields.add("locations");
     openapiFields.add("categories");
     openapiFields.add("tasks_ready");
-    openapiFields.add("app_listings");
     openapiFields.add("id_list");
+    openapiFields.add("app_listings");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

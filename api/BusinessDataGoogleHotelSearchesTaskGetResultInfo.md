@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character); in order to obtain accurate search results, the location name is appended to the keyword automatically |  [optional] |
+|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character); in order to obtain accurate search results, the location name is appended to the keyword automatically |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**checkUrl** | **String** | direct URL to search engine results you can use it to make sure that we provided accurate results |  [optional] |

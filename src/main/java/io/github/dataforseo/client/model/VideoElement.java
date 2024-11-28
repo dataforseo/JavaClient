@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * VideoElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class VideoElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -70,10 +70,6 @@ public class VideoElement {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
-
-  public static final String SERIALIZED_NAME_PREVIEW = "preview";
-  @SerializedName(SERIALIZED_NAME_PREVIEW)
-  private String preview;
 
   public VideoElement() {
   }
@@ -172,25 +168,6 @@ public class VideoElement {
     this.url = url;
   }
 
-
-  public VideoElement preview(String preview) {
-    this.preview = preview;
-    return this;
-  }
-
-  /**
-   * URL to the video preview image
-   * @return preview
-   */
-  @javax.annotation.Nullable
-  public String getPreview() {
-    return preview;
-  }
-
-  public void setPreview(String preview) {
-    this.preview = preview;
-  }
-
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -250,8 +227,7 @@ public class VideoElement {
         Objects.equals(this.source, videoElement.source) &&
         Objects.equals(this.title, videoElement.title) &&
         Objects.equals(this.timestamp, videoElement.timestamp) &&
-        Objects.equals(this.url, videoElement.url) &&
-        Objects.equals(this.preview, videoElement.preview)&&
+        Objects.equals(this.url, videoElement.url)&&
         Objects.equals(this.additionalProperties, videoElement.additionalProperties);
   }
 
@@ -261,7 +237,7 @@ public class VideoElement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, source, title, timestamp, url, preview, additionalProperties);
+    return Objects.hash(type, source, title, timestamp, url, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -280,7 +256,6 @@ public class VideoElement {
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    preview: ").append(toIndentedString(preview)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -309,7 +284,6 @@ public class VideoElement {
     openapiFields.add("title");
     openapiFields.add("timestamp");
     openapiFields.add("url");
-    openapiFields.add("preview");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -342,9 +316,6 @@ public class VideoElement {
       }
       if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
-      }
-      if ((jsonObj.get("preview") != null && !jsonObj.get("preview").isJsonNull()) && !jsonObj.get("preview").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `preview` to be a primitive type in the JSON string but got `%s`", jsonObj.get("preview").toString()));
       }
   }
 

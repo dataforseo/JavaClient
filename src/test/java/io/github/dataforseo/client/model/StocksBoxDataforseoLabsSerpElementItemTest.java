@@ -20,7 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.Graph;
-import io.github.dataforseo.client.model.Price;
+import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
 import java.util.Arrays;

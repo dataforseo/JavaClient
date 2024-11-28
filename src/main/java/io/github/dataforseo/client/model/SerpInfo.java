@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class SerpInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -67,7 +67,7 @@ public class SerpInfo {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private String seResultsCount;
+  private Long seResultsCount;
 
   public static final String SERIALIZED_NAME_LAST_UPDATED_TIME = "last_updated_time";
   @SerializedName(SERIALIZED_NAME_LAST_UPDATED_TIME)
@@ -145,7 +145,7 @@ public class SerpInfo {
   }
 
 
-  public SerpInfo seResultsCount(String seResultsCount) {
+  public SerpInfo seResultsCount(Long seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
@@ -155,11 +155,11 @@ public class SerpInfo {
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public String getSeResultsCount() {
+  public Long getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(String seResultsCount) {
+  public void setSeResultsCount(Long seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
@@ -347,9 +347,6 @@ public class SerpInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("serp_item_types") != null && !jsonObj.get("serp_item_types").isJsonNull() && !jsonObj.get("serp_item_types").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `serp_item_types` to be an array in the JSON string but got `%s`", jsonObj.get("serp_item_types").toString()));
-      }
-      if ((jsonObj.get("se_results_count") != null && !jsonObj.get("se_results_count").isJsonNull()) && !jsonObj.get("se_results_count").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `se_results_count` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_results_count").toString()));
       }
       if ((jsonObj.get("last_updated_time") != null && !jsonObj.get("last_updated_time").isJsonNull()) && !jsonObj.get("last_updated_time").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `last_updated_time` to be a primitive type in the JSON string but got `%s`", jsonObj.get("last_updated_time").toString()));

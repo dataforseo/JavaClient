@@ -25,7 +25,7 @@ import io.github.dataforseo.client.model.BusinessDataContactInfo;
 import io.github.dataforseo.client.model.PeopleAlsoSearch;
 import io.github.dataforseo.client.model.PopularTimes;
 import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkInfo;
+import io.github.dataforseo.client.model.WorkTime;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

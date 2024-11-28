@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleAutocompleteLiveAdvancedRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class SerpGoogleAutocompleteLiveAdvancedRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -92,7 +92,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo {
   }
 
   /**
-   * keyword required field you can specify up to 700 symbols in the keyword field all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”; if you need to use the “+” symbol for your keyword, please specify it as “%2B”; learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keyword required field you can specify up to 700 characters in the keyword field all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”; if you need to use the “+” character for your keyword, please specify it as “%2B”; learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -187,7 +187,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo {
   }
 
   /**
-   * search bar cursor pointer optional field the horizontal numerical position of the cursor pointer within the keyword in the search bar; by modifying the position of the cursor pointer, you will obtain different autocomplete suggestions for the same seed keyword; minimal value: 0 default value: the number of the last symbol of the specified keyword example: |which query are s – \&quot;cursor_pointer\&quot;: 0 which query is s| – \&quot;cursor_pointer\&quot;: 16 which que|ry is s – \&quot;cursor_pointer\&quot;: 9
+   * search bar cursor pointer optional field the horizontal numerical position of the cursor pointer within the keyword in the search bar; by modifying the position of the cursor pointer, you will obtain different autocomplete suggestions for the same seed keyword; minimal value: 0 default value: the number of the last character of the specified keyword example: |which query are s – \&quot;cursor_pointer\&quot;: 0 which query is s| – \&quot;cursor_pointer\&quot;: 16 which que|ry is s – \&quot;cursor_pointer\&quot;: 9
    * @return cursorPointer
    */
   @javax.annotation.Nullable

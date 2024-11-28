@@ -13,6 +13,7 @@
 |**hotelSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**reviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**questionsAndAnswers** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**extendedReviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

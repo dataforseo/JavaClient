@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -79,6 +79,10 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
 
+  public static final String SERIALIZED_NAME_DEPTH = "depth";
+  @SerializedName(SERIALIZED_NAME_DEPTH)
+  private Integer depth;
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -91,10 +95,6 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
   private String pingbackUrl;
 
-  public static final String SERIALIZED_NAME_DEPTH = "depth";
-  @SerializedName(SERIALIZED_NAME_DEPTH)
-  private Integer depth;
-
   public BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo() {
   }
 
@@ -104,7 +104,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   }
 
   /**
-   * keyword required field the keyword you specify should indicate the name of the local establishment you can specify up to 700 symbols in the keyword filed all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”;  this field can also be used to pass the following parameters: cid – a unique, google-defined id of the business entity; place_id – an identifier of the business entity in Google Maps; spp – a unique identifier of local services featured in the local_pack element of Google SERP example: cid:194604053573767737 place_id:GhIJQWDl0CIeQUARxks3icF8U8A spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30 learn more about the cid and place_id identifiers in this help center article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keyword required field the keyword you specify should indicate the name of the local establishment you can specify up to 700 characters in the keyword filed all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”;this field can also be used to pass cid (unique, google-defined id of the business entity) or place_id (identifier of the business entity in Google Maps) parameters example: cid:194604053573767737 place_id:GhIJQWDl0CIeQUARxks3icF8U8A learn more about the cid and place_id identifiers in this help center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -142,7 +142,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   }
 
   /**
-   * full name of search engine location required field if you don’t specify location_code or location_coordinate if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/locations example: London,England,United Kingdom
+   * full name of search engine location required field if you don’t specify location_code or location_coordinate if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations with location_name by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations example: London,England,United Kingdom
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -180,7 +180,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   }
 
   /**
-   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,radius” format the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “radius”: 199.9 (mm) the maximum value for “radius”: 199999 (mm) example: 53.476225,-2.243572,200
+   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,radius” format the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “radius”: 199.9 example: 53.476225,-2.243572,200
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -199,7 +199,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   }
 
   /**
-   * full name of search engine language required field if you don’t specify language_code if you use this field, you don’t need to specify language_code you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages example: English
+   * full name of search engine language required field if you don’t specify language_code if you use this field, you don’t need to specify language_code you can receive the list of available languages with language_name by making a separate request to the https://api.dataforseo.com/v3/business_data/google/languages example: English
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -218,7 +218,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   }
 
   /**
-   * search engine language code required field if you don’t specify language_name if you use this field, you don’t need to specify language_name you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages example: en
+   * search engine language code required field if you don’t specify language_name if you use this field, you don’t need to specify language_name you can receive the list of available languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/languages example: en
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -228,6 +228,25 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
+  }
+
+
+  public BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo depth(Integer depth) {
+    this.depth = depth;
+    return this;
+  }
+
+  /**
+   * parsing depth optional field number of updates in SERP we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten updates in a row please note that Google returns 4490 updates maximum default value: 10
+   * @return depth
+   */
+  @javax.annotation.Nullable
+  public Integer getDepth() {
+    return depth;
+  }
+
+  public void setDepth(Integer depth) {
+    this.depth = depth;
   }
 
 
@@ -256,7 +275,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   }
 
   /**
-   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in postback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in postback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -275,7 +294,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
   }
 
   /**
-   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in pingback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in pingback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -285,25 +304,6 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
 
   public void setPingbackUrl(String pingbackUrl) {
     this.pingbackUrl = pingbackUrl;
-  }
-
-
-  public BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo depth(Integer depth) {
-    this.depth = depth;
-    return this;
-  }
-
-  /**
-   * parsing depth optional field number of updates in SERP we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten updates in a row please note that Google returns 4490 updates maximum default value: 10
-   * @return depth
-   */
-  @javax.annotation.Nullable
-  public Integer getDepth() {
-    return depth;
-  }
-
-  public void setDepth(Integer depth) {
-    this.depth = depth;
   }
 
   /**
@@ -368,10 +368,10 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
         Objects.equals(this.locationCoordinate, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.depth, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.depth) &&
         Objects.equals(this.tag, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.pingbackUrl, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.pingbackUrl) &&
-        Objects.equals(this.depth, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.depth)&&
+        Objects.equals(this.pingbackUrl, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.pingbackUrl)&&
         Objects.equals(this.additionalProperties, businessDataGoogleMyBusinessUpdatesTaskPostRequestInfo.additionalProperties);
   }
 
@@ -381,7 +381,7 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, tag, postbackUrl, pingbackUrl, depth, additionalProperties);
+    return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, depth, tag, postbackUrl, pingbackUrl, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -402,10 +402,10 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
-    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -436,10 +436,10 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo {
     openapiFields.add("location_coordinate");
     openapiFields.add("language_name");
     openapiFields.add("language_code");
+    openapiFields.add("depth");
     openapiFields.add("tag");
     openapiFields.add("postback_url");
     openapiFields.add("pingback_url");
-    openapiFields.add("depth");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

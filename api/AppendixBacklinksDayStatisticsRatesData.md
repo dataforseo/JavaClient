@@ -27,13 +27,13 @@
 |**timeseriesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**timeseriesNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**competitors** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**index** | **Double** |  |  [optional] |
-|**historicalNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**availableFilters** | **Double** |  |  [optional] |
 |**bulkSpamScore** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
+|**bulkPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**pagesSummaryWithPageInfo** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**historicalNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**index** | **Double** |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
+|**availableFilters** | **Double** |  |  [optional] |
 
 
 

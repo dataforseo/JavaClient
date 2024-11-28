@@ -70,4 +70,20 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfoTest {
         // TODO: test keywordsForKeywords
     }
 
+    /**
+     * Test the property 'audienceEstimation'
+     */
+    @Test
+    public void audienceEstimationTest() {
+        // TODO: test audienceEstimation
+    }
+
+    /**
+     * Test the property 'keywordSuggestionsForUrl'
+     */
+    @Test
+    public void keywordSuggestionsForUrlTest() {
+        // TODO: test keywordSuggestionsForUrl
+    }
+
 }

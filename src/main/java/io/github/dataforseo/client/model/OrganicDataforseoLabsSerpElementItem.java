@@ -20,9 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AboutThisResultElement;
-import io.github.dataforseo.client.model.AdLinkElement;
 import io.github.dataforseo.client.model.BacklinksInfo;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
+import io.github.dataforseo.client.model.LinkElement;
 import io.github.dataforseo.client.model.RankChanges;
 import io.github.dataforseo.client.model.RankInfo;
 import io.github.dataforseo.client.model.RatingInfo;
@@ -60,7 +60,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OrganicDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -128,7 +128,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<AdLinkElement> links;
+  private List<LinkElement> links;
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
@@ -485,12 +485,12 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem links(List<AdLinkElement> links) {
+  public OrganicDataforseoLabsSerpElementItem links(List<LinkElement> links) {
     this.links = links;
     return this;
   }
 
-  public OrganicDataforseoLabsSerpElementItem addLinksItem(AdLinkElement linksItem) {
+  public OrganicDataforseoLabsSerpElementItem addLinksItem(LinkElement linksItem) {
     if (this.links == null) {
       this.links = new ArrayList<>();
     }
@@ -503,11 +503,11 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
    * @return links
    */
   @javax.annotation.Nullable
-  public List<AdLinkElement> getLinks() {
+  public List<LinkElement> getLinks() {
     return links;
   }
 
-  public void setLinks(List<AdLinkElement> links) {
+  public void setLinks(List<LinkElement> links) {
     this.links = links;
   }
 
@@ -961,7 +961,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
           // validate the optional field `links` (array)
           for (int i = 0; i < jsonArraylinks.size(); i++) {
-            AdLinkElement.validateJsonElement(jsonArraylinks.get(i));
+            LinkElement.validateJsonElement(jsonArraylinks.get(i));
           };
         }
       }

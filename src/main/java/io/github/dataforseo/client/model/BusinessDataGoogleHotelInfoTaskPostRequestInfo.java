@@ -51,8 +51,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelInfoTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
+  public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
+  @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
+  private String hotelIdentifier;
+
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
@@ -81,22 +85,6 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
 
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
-  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
-  private String postbackUrl;
-
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
-
-  public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
-  @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
-  private String hotelIdentifier;
-
   public static final String SERIALIZED_NAME_CHECK_IN = "check_in";
   @SerializedName(SERIALIZED_NAME_CHECK_IN)
   private String checkIn;
@@ -117,12 +105,43 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_CHILDREN)
   private List<String> children;
 
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
+  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
+  private String postbackUrl;
+
   public static final String SERIALIZED_NAME_POSTBACK_DATA = "postback_data";
   @SerializedName(SERIALIZED_NAME_POSTBACK_DATA)
   private String postbackData;
 
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
+
   public BusinessDataGoogleHotelInfoTaskPostRequestInfo() {
   }
+
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo hotelIdentifier(String hotelIdentifier) {
+    this.hotelIdentifier = hotelIdentifier;
+    return this;
+  }
+
+  /**
+   * unique hotel identifier required field if you don’t specify keyword if you use this field, you don’t need to specify keyword unique identifier of a hotel entity in Google search; you can obtain the value by making a request to Advanced Google SERP API (enclosed in the hotels_pack element of the response), or the Hotel Searches endpoint of Business Data API example: ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE
+   * @return hotelIdentifier
+   */
+  @javax.annotation.Nullable
+  public String getHotelIdentifier() {
+    return hotelIdentifier;
+  }
+
+  public void setHotelIdentifier(String hotelIdentifier) {
+    this.hotelIdentifier = hotelIdentifier;
+  }
+
 
   public BusinessDataGoogleHotelInfoTaskPostRequestInfo keyword(String keyword) {
     this.keyword = keyword;
@@ -130,7 +149,7 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   }
 
   /**
-   * keyword required field the keyword you specify should indicate the name of the local establishment you can specify up to 700 symbols in the keyword filed all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”;  this field can also be used to pass the following parameters: cid – a unique, google-defined id of the business entity; place_id – an identifier of the business entity in Google Maps; spp – a unique identifier of local services featured in the local_pack element of Google SERP example: cid:194604053573767737 place_id:GhIJQWDl0CIeQUARxks3icF8U8A spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30 learn more about the cid and place_id identifiers in this help center article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keyword required field if you don’t specify hotel_identifier if you use this field, you don’t need to specify hotel_identifier the keyword you specify should indicate the name of the hotel entity you can specify up to 700 characters in the keyword filed all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -206,7 +225,7 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   }
 
   /**
-   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,radius” format the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “radius”: 199.9 (mm) the maximum value for “radius”: 199999 (mm) example: 53.476225,-2.243572,200
+   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude” format the maximum number of decimal digits for “latitude” and “longitude”: 7 Note: if the coordinates are used to set a location, the search will occur in the nearest settlement; example: 53.476225,-2.243572
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -254,82 +273,6 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
-  }
-
-
-  public BusinessDataGoogleHotelInfoTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public BusinessDataGoogleHotelInfoTaskPostRequestInfo postbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-    return this;
-  }
-
-  /**
-   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in postback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
-   * @return postbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPostbackUrl() {
-    return postbackUrl;
-  }
-
-  public void setPostbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-  }
-
-
-  public BusinessDataGoogleHotelInfoTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
-    return this;
-  }
-
-  /**
-   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in pingback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
-   * @return pingbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
-  }
-
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
-  }
-
-
-  public BusinessDataGoogleHotelInfoTaskPostRequestInfo hotelIdentifier(String hotelIdentifier) {
-    this.hotelIdentifier = hotelIdentifier;
-    return this;
-  }
-
-  /**
-   * unique hotel identifier required field if you don’t specify keyword if you use this field, you don’t need to specify keyword unique identifier of a hotel entity in Google search; you can obtain the value by making a request to Advanced Google SERP API (enclosed in the hotels_pack element of the response), or the Hotel Searches endpoint of Business Data API example: ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE
-   * @return hotelIdentifier
-   */
-  @javax.annotation.Nullable
-  public String getHotelIdentifier() {
-    return hotelIdentifier;
-  }
-
-  public void setHotelIdentifier(String hotelIdentifier) {
-    this.hotelIdentifier = hotelIdentifier;
   }
 
 
@@ -436,6 +379,44 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   }
 
 
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier optional field the character limit is 255; you can use this parameter to identify the task and match it with the result; you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo postbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+    return this;
+  }
+
+  /**
+   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified; you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request; example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in postback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
+   * @return postbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPostbackUrl() {
+    return postbackUrl;
+  }
+
+  public void setPostbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+  }
+
+
   public BusinessDataGoogleHotelInfoTaskPostRequestInfo postbackData(String postbackData) {
     this.postbackData = postbackData;
     return this;
@@ -452,6 +433,25 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
 
   public void setPostbackData(String postbackData) {
     this.postbackData = postbackData;
+  }
+
+
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+    return this;
+  }
+
+  /**
+   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified; you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable; we will set the necessary values before sending the request; example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in pingback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
+   * @return pingbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPingbackUrl() {
+    return pingbackUrl;
+  }
+
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
   }
 
   /**
@@ -509,23 +509,23 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
       return false;
     }
     BusinessDataGoogleHotelInfoTaskPostRequestInfo businessDataGoogleHotelInfoTaskPostRequestInfo = (BusinessDataGoogleHotelInfoTaskPostRequestInfo) o;
-    return Objects.equals(this.keyword, businessDataGoogleHotelInfoTaskPostRequestInfo.keyword) &&
+    return Objects.equals(this.hotelIdentifier, businessDataGoogleHotelInfoTaskPostRequestInfo.hotelIdentifier) &&
+        Objects.equals(this.keyword, businessDataGoogleHotelInfoTaskPostRequestInfo.keyword) &&
         Objects.equals(this.priority, businessDataGoogleHotelInfoTaskPostRequestInfo.priority) &&
         Objects.equals(this.locationName, businessDataGoogleHotelInfoTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, businessDataGoogleHotelInfoTaskPostRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, businessDataGoogleHotelInfoTaskPostRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, businessDataGoogleHotelInfoTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, businessDataGoogleHotelInfoTaskPostRequestInfo.languageCode) &&
-        Objects.equals(this.tag, businessDataGoogleHotelInfoTaskPostRequestInfo.tag) &&
-        Objects.equals(this.postbackUrl, businessDataGoogleHotelInfoTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.pingbackUrl, businessDataGoogleHotelInfoTaskPostRequestInfo.pingbackUrl) &&
-        Objects.equals(this.hotelIdentifier, businessDataGoogleHotelInfoTaskPostRequestInfo.hotelIdentifier) &&
         Objects.equals(this.checkIn, businessDataGoogleHotelInfoTaskPostRequestInfo.checkIn) &&
         Objects.equals(this.checkOut, businessDataGoogleHotelInfoTaskPostRequestInfo.checkOut) &&
         Objects.equals(this.currency, businessDataGoogleHotelInfoTaskPostRequestInfo.currency) &&
         Objects.equals(this.adults, businessDataGoogleHotelInfoTaskPostRequestInfo.adults) &&
         Objects.equals(this.children, businessDataGoogleHotelInfoTaskPostRequestInfo.children) &&
-        Objects.equals(this.postbackData, businessDataGoogleHotelInfoTaskPostRequestInfo.postbackData)&&
+        Objects.equals(this.tag, businessDataGoogleHotelInfoTaskPostRequestInfo.tag) &&
+        Objects.equals(this.postbackUrl, businessDataGoogleHotelInfoTaskPostRequestInfo.postbackUrl) &&
+        Objects.equals(this.postbackData, businessDataGoogleHotelInfoTaskPostRequestInfo.postbackData) &&
+        Objects.equals(this.pingbackUrl, businessDataGoogleHotelInfoTaskPostRequestInfo.pingbackUrl)&&
         Objects.equals(this.additionalProperties, businessDataGoogleHotelInfoTaskPostRequestInfo.additionalProperties);
   }
 
@@ -535,7 +535,7 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, tag, postbackUrl, pingbackUrl, hotelIdentifier, checkIn, checkOut, currency, adults, children, postbackData, additionalProperties);
+    return Objects.hash(hotelIdentifier, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, checkIn, checkOut, currency, adults, children, tag, postbackUrl, postbackData, pingbackUrl, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -549,6 +549,7 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class BusinessDataGoogleHotelInfoTaskPostRequestInfo {\n");
+    sb.append("    hotelIdentifier: ").append(toIndentedString(hotelIdentifier)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
@@ -556,16 +557,15 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
-    sb.append("    hotelIdentifier: ").append(toIndentedString(hotelIdentifier)).append("\n");
     sb.append("    checkIn: ").append(toIndentedString(checkIn)).append("\n");
     sb.append("    checkOut: ").append(toIndentedString(checkOut)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    adults: ").append(toIndentedString(adults)).append("\n");
     sb.append("    children: ").append(toIndentedString(children)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -589,6 +589,7 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("hotel_identifier");
     openapiFields.add("keyword");
     openapiFields.add("priority");
     openapiFields.add("location_name");
@@ -596,16 +597,15 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
     openapiFields.add("location_coordinate");
     openapiFields.add("language_name");
     openapiFields.add("language_code");
-    openapiFields.add("tag");
-    openapiFields.add("postback_url");
-    openapiFields.add("pingback_url");
-    openapiFields.add("hotel_identifier");
     openapiFields.add("check_in");
     openapiFields.add("check_out");
     openapiFields.add("currency");
     openapiFields.add("adults");
     openapiFields.add("children");
+    openapiFields.add("tag");
+    openapiFields.add("postback_url");
     openapiFields.add("postback_data");
+    openapiFields.add("pingback_url");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -624,6 +624,9 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("hotel_identifier") != null && !jsonObj.get("hotel_identifier").isJsonNull()) && !jsonObj.get("hotel_identifier").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `hotel_identifier` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hotel_identifier").toString()));
+      }
       if ((jsonObj.get("keyword") != null && !jsonObj.get("keyword").isJsonNull()) && !jsonObj.get("keyword").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `keyword` to be a primitive type in the JSON string but got `%s`", jsonObj.get("keyword").toString()));
       }
@@ -639,18 +642,6 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));
       }
-      if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));
-      }
-      if ((jsonObj.get("postback_url") != null && !jsonObj.get("postback_url").isJsonNull()) && !jsonObj.get("postback_url").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `postback_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("postback_url").toString()));
-      }
-      if ((jsonObj.get("pingback_url") != null && !jsonObj.get("pingback_url").isJsonNull()) && !jsonObj.get("pingback_url").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `pingback_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("pingback_url").toString()));
-      }
-      if ((jsonObj.get("hotel_identifier") != null && !jsonObj.get("hotel_identifier").isJsonNull()) && !jsonObj.get("hotel_identifier").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `hotel_identifier` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hotel_identifier").toString()));
-      }
       if ((jsonObj.get("check_in") != null && !jsonObj.get("check_in").isJsonNull()) && !jsonObj.get("check_in").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `check_in` to be a primitive type in the JSON string but got `%s`", jsonObj.get("check_in").toString()));
       }
@@ -664,8 +655,17 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
       if (jsonObj.get("children") != null && !jsonObj.get("children").isJsonNull() && !jsonObj.get("children").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `children` to be an array in the JSON string but got `%s`", jsonObj.get("children").toString()));
       }
+      if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));
+      }
+      if ((jsonObj.get("postback_url") != null && !jsonObj.get("postback_url").isJsonNull()) && !jsonObj.get("postback_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `postback_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("postback_url").toString()));
+      }
       if ((jsonObj.get("postback_data") != null && !jsonObj.get("postback_data").isJsonNull()) && !jsonObj.get("postback_data").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `postback_data` to be a primitive type in the JSON string but got `%s`", jsonObj.get("postback_data").toString()));
+      }
+      if ((jsonObj.get("pingback_url") != null && !jsonObj.get("pingback_url").isJsonNull()) && !jsonObj.get("pingback_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `pingback_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("pingback_url").toString()));
       }
   }
 

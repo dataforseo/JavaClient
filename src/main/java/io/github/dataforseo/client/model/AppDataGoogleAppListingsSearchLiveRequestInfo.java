@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGoogleAppListingsSearchLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppDataGoogleAppListingsSearchLiveRequestInfo {
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
@@ -125,7 +125,7 @@ public class AppDataGoogleAppListingsSearchLiveRequestInfo {
   }
 
   /**
-   * keyword in the app’s description optional field keywords that occur in the description of the app; can contain up to 200 symbols
+   * keyword in the app’s description optional field keywords that occur in the description of the app; can contain up to 200 characters
    * @return description
    */
   @javax.annotation.Nullable
@@ -144,7 +144,7 @@ public class AppDataGoogleAppListingsSearchLiveRequestInfo {
   }
 
   /**
-   * keyword in the app’s title optional field keywords that occur in the title of the app; can contain up to 200 symbols
+   * keyword in the app’s title optional field keywords that occur in the title of the app; can contain up to 200 characters
    * @return title
    */
   @javax.annotation.Nullable

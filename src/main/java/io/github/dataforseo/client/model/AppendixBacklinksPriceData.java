@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -50,59 +50,63 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBacklinksPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixBacklinksPriceData {
   public static final String SERIALIZED_NAME_ANCHORS = "anchors";
   @SerializedName(SERIALIZED_NAME_ANCHORS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo anchors;
+  private AppendixBingKeywordsDataPriceDataInfo anchors;
 
   public static final String SERIALIZED_NAME_BACKLINKS = "backlinks";
   @SerializedName(SERIALIZED_NAME_BACKLINKS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo backlinks;
+  private AppendixBingKeywordsDataPriceDataInfo backlinks;
 
   public static final String SERIALIZED_NAME_BULK_BACKLINKS = "bulk_backlinks";
   @SerializedName(SERIALIZED_NAME_BULK_BACKLINKS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkBacklinks;
+  private AppendixBingKeywordsDataPriceDataInfo bulkBacklinks;
 
   public static final String SERIALIZED_NAME_BULK_NEW_LOST_BACKLINKS = "bulk_new_lost_backlinks";
   @SerializedName(SERIALIZED_NAME_BULK_NEW_LOST_BACKLINKS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostBacklinks;
+  private AppendixBingKeywordsDataPriceDataInfo bulkNewLostBacklinks;
 
   public static final String SERIALIZED_NAME_BULK_NEW_LOST_REFERRING_DOMAINS = "bulk_new_lost_referring_domains";
   @SerializedName(SERIALIZED_NAME_BULK_NEW_LOST_REFERRING_DOMAINS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains;
+  private AppendixBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains;
 
   public static final String SERIALIZED_NAME_BULK_PAGES_SUMMARY = "bulk_pages_summary";
   @SerializedName(SERIALIZED_NAME_BULK_PAGES_SUMMARY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkPagesSummary;
+  private AppendixBingKeywordsDataPriceDataInfo bulkPagesSummary;
 
   public static final String SERIALIZED_NAME_BULK_RANKS = "bulk_ranks";
   @SerializedName(SERIALIZED_NAME_BULK_RANKS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkRanks;
+  private AppendixBingKeywordsDataPriceDataInfo bulkRanks;
 
   public static final String SERIALIZED_NAME_BULK_REFERRING_DOMAINS = "bulk_referring_domains";
   @SerializedName(SERIALIZED_NAME_BULK_REFERRING_DOMAINS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkReferringDomains;
+  private AppendixBingKeywordsDataPriceDataInfo bulkReferringDomains;
+
+  public static final String SERIALIZED_NAME_BULK_SPAM_SCORE = "bulk_spam_score";
+  @SerializedName(SERIALIZED_NAME_BULK_SPAM_SCORE)
+  private AppendixBingKeywordsDataPriceDataInfo bulkSpamScore;
 
   public static final String SERIALIZED_NAME_COMPETITORS = "competitors";
   @SerializedName(SERIALIZED_NAME_COMPETITORS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo competitors;
+  private AppendixBingKeywordsDataPriceDataInfo competitors;
 
   public static final String SERIALIZED_NAME_CONTENT_DUPLICATES = "content_duplicates";
   @SerializedName(SERIALIZED_NAME_CONTENT_DUPLICATES)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo contentDuplicates;
+  private AppendixBingKeywordsDataPriceDataInfo contentDuplicates;
 
   public static final String SERIALIZED_NAME_DOMAIN_INTERSECTION = "domain_intersection";
   @SerializedName(SERIALIZED_NAME_DOMAIN_INTERSECTION)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo domainIntersection;
+  private AppendixBingKeywordsDataPriceDataInfo domainIntersection;
 
   public static final String SERIALIZED_NAME_DOMAIN_PAGES = "domain_pages";
   @SerializedName(SERIALIZED_NAME_DOMAIN_PAGES)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo domainPages;
+  private AppendixBingKeywordsDataPriceDataInfo domainPages;
 
   public static final String SERIALIZED_NAME_DOMAIN_PAGES_SUMMARY = "domain_pages_summary";
   @SerializedName(SERIALIZED_NAME_DOMAIN_PAGES_SUMMARY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo domainPagesSummary;
+  private AppendixBingKeywordsDataPriceDataInfo domainPagesSummary;
 
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
@@ -110,36 +114,36 @@ public class AppendixBacklinksPriceData {
 
   public static final String SERIALIZED_NAME_HISTORY = "history";
   @SerializedName(SERIALIZED_NAME_HISTORY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo history;
+  private AppendixBingKeywordsDataPriceDataInfo history;
 
   public static final String SERIALIZED_NAME_PAGE_INTERSECTION = "page_intersection";
   @SerializedName(SERIALIZED_NAME_PAGE_INTERSECTION)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo pageIntersection;
+  private AppendixBingKeywordsDataPriceDataInfo pageIntersection;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS = "referring_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo referringDomains;
+  private AppendixBingKeywordsDataPriceDataInfo referringDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_NETWORKS = "referring_networks";
   @SerializedName(SERIALIZED_NAME_REFERRING_NETWORKS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo referringNetworks;
+  private AppendixBingKeywordsDataPriceDataInfo referringNetworks;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo summary;
+  private AppendixBingKeywordsDataPriceDataInfo summary;
 
   public static final String SERIALIZED_NAME_TIMESERIES_NEW_LOST_SUMMARY = "timeseries_new_lost_summary";
   @SerializedName(SERIALIZED_NAME_TIMESERIES_NEW_LOST_SUMMARY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo timeseriesNewLostSummary;
+  private AppendixBingKeywordsDataPriceDataInfo timeseriesNewLostSummary;
 
   public static final String SERIALIZED_NAME_TIMESERIES_SUMMARY = "timeseries_summary";
   @SerializedName(SERIALIZED_NAME_TIMESERIES_SUMMARY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo timeseriesSummary;
+  private AppendixBingKeywordsDataPriceDataInfo timeseriesSummary;
 
   public AppendixBacklinksPriceData() {
   }
 
-  public AppendixBacklinksPriceData anchors(AppendixKeywordBingKeywordsDataPriceDataInfo anchors) {
+  public AppendixBacklinksPriceData anchors(AppendixBingKeywordsDataPriceDataInfo anchors) {
     this.anchors = anchors;
     return this;
   }
@@ -149,16 +153,16 @@ public class AppendixBacklinksPriceData {
    * @return anchors
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getAnchors() {
+  public AppendixBingKeywordsDataPriceDataInfo getAnchors() {
     return anchors;
   }
 
-  public void setAnchors(AppendixKeywordBingKeywordsDataPriceDataInfo anchors) {
+  public void setAnchors(AppendixBingKeywordsDataPriceDataInfo anchors) {
     this.anchors = anchors;
   }
 
 
-  public AppendixBacklinksPriceData backlinks(AppendixKeywordBingKeywordsDataPriceDataInfo backlinks) {
+  public AppendixBacklinksPriceData backlinks(AppendixBingKeywordsDataPriceDataInfo backlinks) {
     this.backlinks = backlinks;
     return this;
   }
@@ -168,16 +172,16 @@ public class AppendixBacklinksPriceData {
    * @return backlinks
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBacklinks() {
+  public AppendixBingKeywordsDataPriceDataInfo getBacklinks() {
     return backlinks;
   }
 
-  public void setBacklinks(AppendixKeywordBingKeywordsDataPriceDataInfo backlinks) {
+  public void setBacklinks(AppendixBingKeywordsDataPriceDataInfo backlinks) {
     this.backlinks = backlinks;
   }
 
 
-  public AppendixBacklinksPriceData bulkBacklinks(AppendixKeywordBingKeywordsDataPriceDataInfo bulkBacklinks) {
+  public AppendixBacklinksPriceData bulkBacklinks(AppendixBingKeywordsDataPriceDataInfo bulkBacklinks) {
     this.bulkBacklinks = bulkBacklinks;
     return this;
   }
@@ -187,16 +191,16 @@ public class AppendixBacklinksPriceData {
    * @return bulkBacklinks
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkBacklinks() {
+  public AppendixBingKeywordsDataPriceDataInfo getBulkBacklinks() {
     return bulkBacklinks;
   }
 
-  public void setBulkBacklinks(AppendixKeywordBingKeywordsDataPriceDataInfo bulkBacklinks) {
+  public void setBulkBacklinks(AppendixBingKeywordsDataPriceDataInfo bulkBacklinks) {
     this.bulkBacklinks = bulkBacklinks;
   }
 
 
-  public AppendixBacklinksPriceData bulkNewLostBacklinks(AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostBacklinks) {
+  public AppendixBacklinksPriceData bulkNewLostBacklinks(AppendixBingKeywordsDataPriceDataInfo bulkNewLostBacklinks) {
     this.bulkNewLostBacklinks = bulkNewLostBacklinks;
     return this;
   }
@@ -206,16 +210,16 @@ public class AppendixBacklinksPriceData {
    * @return bulkNewLostBacklinks
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkNewLostBacklinks() {
+  public AppendixBingKeywordsDataPriceDataInfo getBulkNewLostBacklinks() {
     return bulkNewLostBacklinks;
   }
 
-  public void setBulkNewLostBacklinks(AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostBacklinks) {
+  public void setBulkNewLostBacklinks(AppendixBingKeywordsDataPriceDataInfo bulkNewLostBacklinks) {
     this.bulkNewLostBacklinks = bulkNewLostBacklinks;
   }
 
 
-  public AppendixBacklinksPriceData bulkNewLostReferringDomains(AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains) {
+  public AppendixBacklinksPriceData bulkNewLostReferringDomains(AppendixBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains) {
     this.bulkNewLostReferringDomains = bulkNewLostReferringDomains;
     return this;
   }
@@ -225,16 +229,16 @@ public class AppendixBacklinksPriceData {
    * @return bulkNewLostReferringDomains
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkNewLostReferringDomains() {
+  public AppendixBingKeywordsDataPriceDataInfo getBulkNewLostReferringDomains() {
     return bulkNewLostReferringDomains;
   }
 
-  public void setBulkNewLostReferringDomains(AppendixKeywordBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains) {
+  public void setBulkNewLostReferringDomains(AppendixBingKeywordsDataPriceDataInfo bulkNewLostReferringDomains) {
     this.bulkNewLostReferringDomains = bulkNewLostReferringDomains;
   }
 
 
-  public AppendixBacklinksPriceData bulkPagesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo bulkPagesSummary) {
+  public AppendixBacklinksPriceData bulkPagesSummary(AppendixBingKeywordsDataPriceDataInfo bulkPagesSummary) {
     this.bulkPagesSummary = bulkPagesSummary;
     return this;
   }
@@ -244,16 +248,16 @@ public class AppendixBacklinksPriceData {
    * @return bulkPagesSummary
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkPagesSummary() {
+  public AppendixBingKeywordsDataPriceDataInfo getBulkPagesSummary() {
     return bulkPagesSummary;
   }
 
-  public void setBulkPagesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo bulkPagesSummary) {
+  public void setBulkPagesSummary(AppendixBingKeywordsDataPriceDataInfo bulkPagesSummary) {
     this.bulkPagesSummary = bulkPagesSummary;
   }
 
 
-  public AppendixBacklinksPriceData bulkRanks(AppendixKeywordBingKeywordsDataPriceDataInfo bulkRanks) {
+  public AppendixBacklinksPriceData bulkRanks(AppendixBingKeywordsDataPriceDataInfo bulkRanks) {
     this.bulkRanks = bulkRanks;
     return this;
   }
@@ -263,16 +267,16 @@ public class AppendixBacklinksPriceData {
    * @return bulkRanks
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkRanks() {
+  public AppendixBingKeywordsDataPriceDataInfo getBulkRanks() {
     return bulkRanks;
   }
 
-  public void setBulkRanks(AppendixKeywordBingKeywordsDataPriceDataInfo bulkRanks) {
+  public void setBulkRanks(AppendixBingKeywordsDataPriceDataInfo bulkRanks) {
     this.bulkRanks = bulkRanks;
   }
 
 
-  public AppendixBacklinksPriceData bulkReferringDomains(AppendixKeywordBingKeywordsDataPriceDataInfo bulkReferringDomains) {
+  public AppendixBacklinksPriceData bulkReferringDomains(AppendixBingKeywordsDataPriceDataInfo bulkReferringDomains) {
     this.bulkReferringDomains = bulkReferringDomains;
     return this;
   }
@@ -282,16 +286,35 @@ public class AppendixBacklinksPriceData {
    * @return bulkReferringDomains
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkReferringDomains() {
+  public AppendixBingKeywordsDataPriceDataInfo getBulkReferringDomains() {
     return bulkReferringDomains;
   }
 
-  public void setBulkReferringDomains(AppendixKeywordBingKeywordsDataPriceDataInfo bulkReferringDomains) {
+  public void setBulkReferringDomains(AppendixBingKeywordsDataPriceDataInfo bulkReferringDomains) {
     this.bulkReferringDomains = bulkReferringDomains;
   }
 
 
-  public AppendixBacklinksPriceData competitors(AppendixKeywordBingKeywordsDataPriceDataInfo competitors) {
+  public AppendixBacklinksPriceData bulkSpamScore(AppendixBingKeywordsDataPriceDataInfo bulkSpamScore) {
+    this.bulkSpamScore = bulkSpamScore;
+    return this;
+  }
+
+  /**
+   * Get bulkSpamScore
+   * @return bulkSpamScore
+   */
+  @javax.annotation.Nullable
+  public AppendixBingKeywordsDataPriceDataInfo getBulkSpamScore() {
+    return bulkSpamScore;
+  }
+
+  public void setBulkSpamScore(AppendixBingKeywordsDataPriceDataInfo bulkSpamScore) {
+    this.bulkSpamScore = bulkSpamScore;
+  }
+
+
+  public AppendixBacklinksPriceData competitors(AppendixBingKeywordsDataPriceDataInfo competitors) {
     this.competitors = competitors;
     return this;
   }
@@ -301,16 +324,16 @@ public class AppendixBacklinksPriceData {
    * @return competitors
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getCompetitors() {
+  public AppendixBingKeywordsDataPriceDataInfo getCompetitors() {
     return competitors;
   }
 
-  public void setCompetitors(AppendixKeywordBingKeywordsDataPriceDataInfo competitors) {
+  public void setCompetitors(AppendixBingKeywordsDataPriceDataInfo competitors) {
     this.competitors = competitors;
   }
 
 
-  public AppendixBacklinksPriceData contentDuplicates(AppendixKeywordBingKeywordsDataPriceDataInfo contentDuplicates) {
+  public AppendixBacklinksPriceData contentDuplicates(AppendixBingKeywordsDataPriceDataInfo contentDuplicates) {
     this.contentDuplicates = contentDuplicates;
     return this;
   }
@@ -320,16 +343,16 @@ public class AppendixBacklinksPriceData {
    * @return contentDuplicates
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getContentDuplicates() {
+  public AppendixBingKeywordsDataPriceDataInfo getContentDuplicates() {
     return contentDuplicates;
   }
 
-  public void setContentDuplicates(AppendixKeywordBingKeywordsDataPriceDataInfo contentDuplicates) {
+  public void setContentDuplicates(AppendixBingKeywordsDataPriceDataInfo contentDuplicates) {
     this.contentDuplicates = contentDuplicates;
   }
 
 
-  public AppendixBacklinksPriceData domainIntersection(AppendixKeywordBingKeywordsDataPriceDataInfo domainIntersection) {
+  public AppendixBacklinksPriceData domainIntersection(AppendixBingKeywordsDataPriceDataInfo domainIntersection) {
     this.domainIntersection = domainIntersection;
     return this;
   }
@@ -339,16 +362,16 @@ public class AppendixBacklinksPriceData {
    * @return domainIntersection
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDomainIntersection() {
+  public AppendixBingKeywordsDataPriceDataInfo getDomainIntersection() {
     return domainIntersection;
   }
 
-  public void setDomainIntersection(AppendixKeywordBingKeywordsDataPriceDataInfo domainIntersection) {
+  public void setDomainIntersection(AppendixBingKeywordsDataPriceDataInfo domainIntersection) {
     this.domainIntersection = domainIntersection;
   }
 
 
-  public AppendixBacklinksPriceData domainPages(AppendixKeywordBingKeywordsDataPriceDataInfo domainPages) {
+  public AppendixBacklinksPriceData domainPages(AppendixBingKeywordsDataPriceDataInfo domainPages) {
     this.domainPages = domainPages;
     return this;
   }
@@ -358,16 +381,16 @@ public class AppendixBacklinksPriceData {
    * @return domainPages
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDomainPages() {
+  public AppendixBingKeywordsDataPriceDataInfo getDomainPages() {
     return domainPages;
   }
 
-  public void setDomainPages(AppendixKeywordBingKeywordsDataPriceDataInfo domainPages) {
+  public void setDomainPages(AppendixBingKeywordsDataPriceDataInfo domainPages) {
     this.domainPages = domainPages;
   }
 
 
-  public AppendixBacklinksPriceData domainPagesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo domainPagesSummary) {
+  public AppendixBacklinksPriceData domainPagesSummary(AppendixBingKeywordsDataPriceDataInfo domainPagesSummary) {
     this.domainPagesSummary = domainPagesSummary;
     return this;
   }
@@ -377,11 +400,11 @@ public class AppendixBacklinksPriceData {
    * @return domainPagesSummary
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDomainPagesSummary() {
+  public AppendixBingKeywordsDataPriceDataInfo getDomainPagesSummary() {
     return domainPagesSummary;
   }
 
-  public void setDomainPagesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo domainPagesSummary) {
+  public void setDomainPagesSummary(AppendixBingKeywordsDataPriceDataInfo domainPagesSummary) {
     this.domainPagesSummary = domainPagesSummary;
   }
 
@@ -405,7 +428,7 @@ public class AppendixBacklinksPriceData {
   }
 
 
-  public AppendixBacklinksPriceData history(AppendixKeywordBingKeywordsDataPriceDataInfo history) {
+  public AppendixBacklinksPriceData history(AppendixBingKeywordsDataPriceDataInfo history) {
     this.history = history;
     return this;
   }
@@ -415,16 +438,16 @@ public class AppendixBacklinksPriceData {
    * @return history
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getHistory() {
+  public AppendixBingKeywordsDataPriceDataInfo getHistory() {
     return history;
   }
 
-  public void setHistory(AppendixKeywordBingKeywordsDataPriceDataInfo history) {
+  public void setHistory(AppendixBingKeywordsDataPriceDataInfo history) {
     this.history = history;
   }
 
 
-  public AppendixBacklinksPriceData pageIntersection(AppendixKeywordBingKeywordsDataPriceDataInfo pageIntersection) {
+  public AppendixBacklinksPriceData pageIntersection(AppendixBingKeywordsDataPriceDataInfo pageIntersection) {
     this.pageIntersection = pageIntersection;
     return this;
   }
@@ -434,16 +457,16 @@ public class AppendixBacklinksPriceData {
    * @return pageIntersection
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getPageIntersection() {
+  public AppendixBingKeywordsDataPriceDataInfo getPageIntersection() {
     return pageIntersection;
   }
 
-  public void setPageIntersection(AppendixKeywordBingKeywordsDataPriceDataInfo pageIntersection) {
+  public void setPageIntersection(AppendixBingKeywordsDataPriceDataInfo pageIntersection) {
     this.pageIntersection = pageIntersection;
   }
 
 
-  public AppendixBacklinksPriceData referringDomains(AppendixKeywordBingKeywordsDataPriceDataInfo referringDomains) {
+  public AppendixBacklinksPriceData referringDomains(AppendixBingKeywordsDataPriceDataInfo referringDomains) {
     this.referringDomains = referringDomains;
     return this;
   }
@@ -453,16 +476,16 @@ public class AppendixBacklinksPriceData {
    * @return referringDomains
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getReferringDomains() {
+  public AppendixBingKeywordsDataPriceDataInfo getReferringDomains() {
     return referringDomains;
   }
 
-  public void setReferringDomains(AppendixKeywordBingKeywordsDataPriceDataInfo referringDomains) {
+  public void setReferringDomains(AppendixBingKeywordsDataPriceDataInfo referringDomains) {
     this.referringDomains = referringDomains;
   }
 
 
-  public AppendixBacklinksPriceData referringNetworks(AppendixKeywordBingKeywordsDataPriceDataInfo referringNetworks) {
+  public AppendixBacklinksPriceData referringNetworks(AppendixBingKeywordsDataPriceDataInfo referringNetworks) {
     this.referringNetworks = referringNetworks;
     return this;
   }
@@ -472,16 +495,16 @@ public class AppendixBacklinksPriceData {
    * @return referringNetworks
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getReferringNetworks() {
+  public AppendixBingKeywordsDataPriceDataInfo getReferringNetworks() {
     return referringNetworks;
   }
 
-  public void setReferringNetworks(AppendixKeywordBingKeywordsDataPriceDataInfo referringNetworks) {
+  public void setReferringNetworks(AppendixBingKeywordsDataPriceDataInfo referringNetworks) {
     this.referringNetworks = referringNetworks;
   }
 
 
-  public AppendixBacklinksPriceData summary(AppendixKeywordBingKeywordsDataPriceDataInfo summary) {
+  public AppendixBacklinksPriceData summary(AppendixBingKeywordsDataPriceDataInfo summary) {
     this.summary = summary;
     return this;
   }
@@ -491,16 +514,16 @@ public class AppendixBacklinksPriceData {
    * @return summary
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSummary() {
+  public AppendixBingKeywordsDataPriceDataInfo getSummary() {
     return summary;
   }
 
-  public void setSummary(AppendixKeywordBingKeywordsDataPriceDataInfo summary) {
+  public void setSummary(AppendixBingKeywordsDataPriceDataInfo summary) {
     this.summary = summary;
   }
 
 
-  public AppendixBacklinksPriceData timeseriesNewLostSummary(AppendixKeywordBingKeywordsDataPriceDataInfo timeseriesNewLostSummary) {
+  public AppendixBacklinksPriceData timeseriesNewLostSummary(AppendixBingKeywordsDataPriceDataInfo timeseriesNewLostSummary) {
     this.timeseriesNewLostSummary = timeseriesNewLostSummary;
     return this;
   }
@@ -510,16 +533,16 @@ public class AppendixBacklinksPriceData {
    * @return timeseriesNewLostSummary
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getTimeseriesNewLostSummary() {
+  public AppendixBingKeywordsDataPriceDataInfo getTimeseriesNewLostSummary() {
     return timeseriesNewLostSummary;
   }
 
-  public void setTimeseriesNewLostSummary(AppendixKeywordBingKeywordsDataPriceDataInfo timeseriesNewLostSummary) {
+  public void setTimeseriesNewLostSummary(AppendixBingKeywordsDataPriceDataInfo timeseriesNewLostSummary) {
     this.timeseriesNewLostSummary = timeseriesNewLostSummary;
   }
 
 
-  public AppendixBacklinksPriceData timeseriesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo timeseriesSummary) {
+  public AppendixBacklinksPriceData timeseriesSummary(AppendixBingKeywordsDataPriceDataInfo timeseriesSummary) {
     this.timeseriesSummary = timeseriesSummary;
     return this;
   }
@@ -529,11 +552,11 @@ public class AppendixBacklinksPriceData {
    * @return timeseriesSummary
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getTimeseriesSummary() {
+  public AppendixBingKeywordsDataPriceDataInfo getTimeseriesSummary() {
     return timeseriesSummary;
   }
 
-  public void setTimeseriesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo timeseriesSummary) {
+  public void setTimeseriesSummary(AppendixBingKeywordsDataPriceDataInfo timeseriesSummary) {
     this.timeseriesSummary = timeseriesSummary;
   }
 
@@ -600,6 +623,7 @@ public class AppendixBacklinksPriceData {
         Objects.equals(this.bulkPagesSummary, appendixBacklinksPriceData.bulkPagesSummary) &&
         Objects.equals(this.bulkRanks, appendixBacklinksPriceData.bulkRanks) &&
         Objects.equals(this.bulkReferringDomains, appendixBacklinksPriceData.bulkReferringDomains) &&
+        Objects.equals(this.bulkSpamScore, appendixBacklinksPriceData.bulkSpamScore) &&
         Objects.equals(this.competitors, appendixBacklinksPriceData.competitors) &&
         Objects.equals(this.contentDuplicates, appendixBacklinksPriceData.contentDuplicates) &&
         Objects.equals(this.domainIntersection, appendixBacklinksPriceData.domainIntersection) &&
@@ -618,7 +642,7 @@ public class AppendixBacklinksPriceData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(anchors, backlinks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkPagesSummary, bulkRanks, bulkReferringDomains, competitors, contentDuplicates, domainIntersection, domainPages, domainPagesSummary, errors, history, pageIntersection, referringDomains, referringNetworks, summary, timeseriesNewLostSummary, timeseriesSummary, additionalProperties);
+    return Objects.hash(anchors, backlinks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkPagesSummary, bulkRanks, bulkReferringDomains, bulkSpamScore, competitors, contentDuplicates, domainIntersection, domainPages, domainPagesSummary, errors, history, pageIntersection, referringDomains, referringNetworks, summary, timeseriesNewLostSummary, timeseriesSummary, additionalProperties);
   }
 
   @Override
@@ -633,6 +657,7 @@ public class AppendixBacklinksPriceData {
     sb.append("    bulkPagesSummary: ").append(toIndentedString(bulkPagesSummary)).append("\n");
     sb.append("    bulkRanks: ").append(toIndentedString(bulkRanks)).append("\n");
     sb.append("    bulkReferringDomains: ").append(toIndentedString(bulkReferringDomains)).append("\n");
+    sb.append("    bulkSpamScore: ").append(toIndentedString(bulkSpamScore)).append("\n");
     sb.append("    competitors: ").append(toIndentedString(competitors)).append("\n");
     sb.append("    contentDuplicates: ").append(toIndentedString(contentDuplicates)).append("\n");
     sb.append("    domainIntersection: ").append(toIndentedString(domainIntersection)).append("\n");
@@ -677,6 +702,7 @@ public class AppendixBacklinksPriceData {
     openapiFields.add("bulk_pages_summary");
     openapiFields.add("bulk_ranks");
     openapiFields.add("bulk_referring_domains");
+    openapiFields.add("bulk_spam_score");
     openapiFields.add("competitors");
     openapiFields.add("content_duplicates");
     openapiFields.add("domain_intersection");
@@ -710,55 +736,59 @@ public class AppendixBacklinksPriceData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `anchors`
       if (jsonObj.get("anchors") != null && !jsonObj.get("anchors").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("anchors"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("anchors"));
       }
       // validate the optional field `backlinks`
       if (jsonObj.get("backlinks") != null && !jsonObj.get("backlinks").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("backlinks"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("backlinks"));
       }
       // validate the optional field `bulk_backlinks`
       if (jsonObj.get("bulk_backlinks") != null && !jsonObj.get("bulk_backlinks").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_backlinks"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_backlinks"));
       }
       // validate the optional field `bulk_new_lost_backlinks`
       if (jsonObj.get("bulk_new_lost_backlinks") != null && !jsonObj.get("bulk_new_lost_backlinks").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_new_lost_backlinks"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_new_lost_backlinks"));
       }
       // validate the optional field `bulk_new_lost_referring_domains`
       if (jsonObj.get("bulk_new_lost_referring_domains") != null && !jsonObj.get("bulk_new_lost_referring_domains").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_new_lost_referring_domains"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_new_lost_referring_domains"));
       }
       // validate the optional field `bulk_pages_summary`
       if (jsonObj.get("bulk_pages_summary") != null && !jsonObj.get("bulk_pages_summary").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_pages_summary"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_pages_summary"));
       }
       // validate the optional field `bulk_ranks`
       if (jsonObj.get("bulk_ranks") != null && !jsonObj.get("bulk_ranks").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_ranks"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_ranks"));
       }
       // validate the optional field `bulk_referring_domains`
       if (jsonObj.get("bulk_referring_domains") != null && !jsonObj.get("bulk_referring_domains").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_referring_domains"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_referring_domains"));
+      }
+      // validate the optional field `bulk_spam_score`
+      if (jsonObj.get("bulk_spam_score") != null && !jsonObj.get("bulk_spam_score").isJsonNull()) {
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_spam_score"));
       }
       // validate the optional field `competitors`
       if (jsonObj.get("competitors") != null && !jsonObj.get("competitors").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("competitors"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("competitors"));
       }
       // validate the optional field `content_duplicates`
       if (jsonObj.get("content_duplicates") != null && !jsonObj.get("content_duplicates").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("content_duplicates"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("content_duplicates"));
       }
       // validate the optional field `domain_intersection`
       if (jsonObj.get("domain_intersection") != null && !jsonObj.get("domain_intersection").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_intersection"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_intersection"));
       }
       // validate the optional field `domain_pages`
       if (jsonObj.get("domain_pages") != null && !jsonObj.get("domain_pages").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_pages"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_pages"));
       }
       // validate the optional field `domain_pages_summary`
       if (jsonObj.get("domain_pages_summary") != null && !jsonObj.get("domain_pages_summary").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_pages_summary"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_pages_summary"));
       }
       // validate the optional field `errors`
       if (jsonObj.get("errors") != null && !jsonObj.get("errors").isJsonNull()) {
@@ -766,31 +796,31 @@ public class AppendixBacklinksPriceData {
       }
       // validate the optional field `history`
       if (jsonObj.get("history") != null && !jsonObj.get("history").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("history"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("history"));
       }
       // validate the optional field `page_intersection`
       if (jsonObj.get("page_intersection") != null && !jsonObj.get("page_intersection").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("page_intersection"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("page_intersection"));
       }
       // validate the optional field `referring_domains`
       if (jsonObj.get("referring_domains") != null && !jsonObj.get("referring_domains").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("referring_domains"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("referring_domains"));
       }
       // validate the optional field `referring_networks`
       if (jsonObj.get("referring_networks") != null && !jsonObj.get("referring_networks").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("referring_networks"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("referring_networks"));
       }
       // validate the optional field `summary`
       if (jsonObj.get("summary") != null && !jsonObj.get("summary").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("summary"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("summary"));
       }
       // validate the optional field `timeseries_new_lost_summary`
       if (jsonObj.get("timeseries_new_lost_summary") != null && !jsonObj.get("timeseries_new_lost_summary").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("timeseries_new_lost_summary"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("timeseries_new_lost_summary"));
       }
       // validate the optional field `timeseries_summary`
       if (jsonObj.get("timeseries_summary") != null && !jsonObj.get("timeseries_summary").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("timeseries_summary"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("timeseries_summary"));
       }
   }
 

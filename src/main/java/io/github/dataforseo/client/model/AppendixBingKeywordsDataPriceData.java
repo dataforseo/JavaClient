@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -49,28 +49,55 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBingKeywordsDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixBingKeywordsDataPriceData {
+  public static final String SERIALIZED_NAME_AUDIENCE_ESTIMATION = "audience_estimation";
+  @SerializedName(SERIALIZED_NAME_AUDIENCE_ESTIMATION)
+  private AppendixBingKeywordsDataPriceDataInfo audienceEstimation;
+
   public static final String SERIALIZED_NAME_KEYWORD_PERFORMANCE = "keyword_performance";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PERFORMANCE)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo keywordPerformance;
+  private AppendixBingKeywordsDataPriceDataInfo keywordPerformance;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForKeywords;
+  private AppendixBingKeywordsDataPriceDataInfo keywordsForKeywords;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_SITE = "keywords_for_site";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_SITE)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForSite;
+  private AppendixBingKeywordsDataPriceDataInfo keywordsForSite;
+
+  public static final String SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL = "keyword_suggestions_for_url";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL)
+  private AppendixBingKeywordsDataPriceDataInfo keywordSuggestionsForUrl;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo searchVolume;
+  private AppendixBingKeywordsDataPriceDataInfo searchVolume;
 
   public AppendixBingKeywordsDataPriceData() {
   }
 
-  public AppendixBingKeywordsDataPriceData keywordPerformance(AppendixKeywordBingKeywordsDataPriceDataInfo keywordPerformance) {
+  public AppendixBingKeywordsDataPriceData audienceEstimation(AppendixBingKeywordsDataPriceDataInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
+    return this;
+  }
+
+  /**
+   * Get audienceEstimation
+   * @return audienceEstimation
+   */
+  @javax.annotation.Nullable
+  public AppendixBingKeywordsDataPriceDataInfo getAudienceEstimation() {
+    return audienceEstimation;
+  }
+
+  public void setAudienceEstimation(AppendixBingKeywordsDataPriceDataInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
+  }
+
+
+  public AppendixBingKeywordsDataPriceData keywordPerformance(AppendixBingKeywordsDataPriceDataInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
     return this;
   }
@@ -80,16 +107,16 @@ public class AppendixBingKeywordsDataPriceData {
    * @return keywordPerformance
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getKeywordPerformance() {
+  public AppendixBingKeywordsDataPriceDataInfo getKeywordPerformance() {
     return keywordPerformance;
   }
 
-  public void setKeywordPerformance(AppendixKeywordBingKeywordsDataPriceDataInfo keywordPerformance) {
+  public void setKeywordPerformance(AppendixBingKeywordsDataPriceDataInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
   }
 
 
-  public AppendixBingKeywordsDataPriceData keywordsForKeywords(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForKeywords) {
+  public AppendixBingKeywordsDataPriceData keywordsForKeywords(AppendixBingKeywordsDataPriceDataInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
     return this;
   }
@@ -99,16 +126,16 @@ public class AppendixBingKeywordsDataPriceData {
    * @return keywordsForKeywords
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getKeywordsForKeywords() {
+  public AppendixBingKeywordsDataPriceDataInfo getKeywordsForKeywords() {
     return keywordsForKeywords;
   }
 
-  public void setKeywordsForKeywords(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForKeywords) {
+  public void setKeywordsForKeywords(AppendixBingKeywordsDataPriceDataInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
   }
 
 
-  public AppendixBingKeywordsDataPriceData keywordsForSite(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForSite) {
+  public AppendixBingKeywordsDataPriceData keywordsForSite(AppendixBingKeywordsDataPriceDataInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
     return this;
   }
@@ -118,16 +145,35 @@ public class AppendixBingKeywordsDataPriceData {
    * @return keywordsForSite
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getKeywordsForSite() {
+  public AppendixBingKeywordsDataPriceDataInfo getKeywordsForSite() {
     return keywordsForSite;
   }
 
-  public void setKeywordsForSite(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForSite) {
+  public void setKeywordsForSite(AppendixBingKeywordsDataPriceDataInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
   }
 
 
-  public AppendixBingKeywordsDataPriceData searchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo searchVolume) {
+  public AppendixBingKeywordsDataPriceData keywordSuggestionsForUrl(AppendixBingKeywordsDataPriceDataInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+    return this;
+  }
+
+  /**
+   * Get keywordSuggestionsForUrl
+   * @return keywordSuggestionsForUrl
+   */
+  @javax.annotation.Nullable
+  public AppendixBingKeywordsDataPriceDataInfo getKeywordSuggestionsForUrl() {
+    return keywordSuggestionsForUrl;
+  }
+
+  public void setKeywordSuggestionsForUrl(AppendixBingKeywordsDataPriceDataInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+  }
+
+
+  public AppendixBingKeywordsDataPriceData searchVolume(AppendixBingKeywordsDataPriceDataInfo searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -137,11 +183,11 @@ public class AppendixBingKeywordsDataPriceData {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSearchVolume() {
+  public AppendixBingKeywordsDataPriceDataInfo getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo searchVolume) {
+  public void setSearchVolume(AppendixBingKeywordsDataPriceDataInfo searchVolume) {
     this.searchVolume = searchVolume;
   }
 
@@ -200,25 +246,29 @@ public class AppendixBingKeywordsDataPriceData {
       return false;
     }
     AppendixBingKeywordsDataPriceData appendixBingKeywordsDataPriceData = (AppendixBingKeywordsDataPriceData) o;
-    return Objects.equals(this.keywordPerformance, appendixBingKeywordsDataPriceData.keywordPerformance) &&
+    return Objects.equals(this.audienceEstimation, appendixBingKeywordsDataPriceData.audienceEstimation) &&
+        Objects.equals(this.keywordPerformance, appendixBingKeywordsDataPriceData.keywordPerformance) &&
         Objects.equals(this.keywordsForKeywords, appendixBingKeywordsDataPriceData.keywordsForKeywords) &&
         Objects.equals(this.keywordsForSite, appendixBingKeywordsDataPriceData.keywordsForSite) &&
+        Objects.equals(this.keywordSuggestionsForUrl, appendixBingKeywordsDataPriceData.keywordSuggestionsForUrl) &&
         Objects.equals(this.searchVolume, appendixBingKeywordsDataPriceData.searchVolume)&&
         Objects.equals(this.additionalProperties, appendixBingKeywordsDataPriceData.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordPerformance, keywordsForKeywords, keywordsForSite, searchVolume, additionalProperties);
+    return Objects.hash(audienceEstimation, keywordPerformance, keywordsForKeywords, keywordsForSite, keywordSuggestionsForUrl, searchVolume, additionalProperties);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixBingKeywordsDataPriceData {\n");
+    sb.append("    audienceEstimation: ").append(toIndentedString(audienceEstimation)).append("\n");
     sb.append("    keywordPerformance: ").append(toIndentedString(keywordPerformance)).append("\n");
     sb.append("    keywordsForKeywords: ").append(toIndentedString(keywordsForKeywords)).append("\n");
     sb.append("    keywordsForSite: ").append(toIndentedString(keywordsForSite)).append("\n");
+    sb.append("    keywordSuggestionsForUrl: ").append(toIndentedString(keywordSuggestionsForUrl)).append("\n");
     sb.append("    searchVolume: ").append(toIndentedString(searchVolume)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -243,9 +293,11 @@ public class AppendixBingKeywordsDataPriceData {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("audience_estimation");
     openapiFields.add("keyword_performance");
     openapiFields.add("keywords_for_keywords");
     openapiFields.add("keywords_for_site");
+    openapiFields.add("keyword_suggestions_for_url");
     openapiFields.add("search_volume");
 
     // a set of required properties/fields (JSON key names)
@@ -265,21 +317,29 @@ public class AppendixBingKeywordsDataPriceData {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the optional field `audience_estimation`
+      if (jsonObj.get("audience_estimation") != null && !jsonObj.get("audience_estimation").isJsonNull()) {
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("audience_estimation"));
+      }
       // validate the optional field `keyword_performance`
       if (jsonObj.get("keyword_performance") != null && !jsonObj.get("keyword_performance").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keyword_performance"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keyword_performance"));
       }
       // validate the optional field `keywords_for_keywords`
       if (jsonObj.get("keywords_for_keywords") != null && !jsonObj.get("keywords_for_keywords").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
       }
       // validate the optional field `keywords_for_site`
       if (jsonObj.get("keywords_for_site") != null && !jsonObj.get("keywords_for_site").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
+      }
+      // validate the optional field `keyword_suggestions_for_url`
+      if (jsonObj.get("keyword_suggestions_for_url") != null && !jsonObj.get("keyword_suggestions_for_url").isJsonNull()) {
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
       }
       // validate the optional field `search_volume`
       if (jsonObj.get("search_volume") != null && !jsonObj.get("search_volume").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search_volume"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search_volume"));
       }
   }
 

@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -275,7 +275,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo {
   }
 
   /**
-   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request learn more about how clickstream-based metrics are calculated in this help center article
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_etv, clickstream_gender_distribution, and clickstream_age_distribution fields with clickstream data in the response; default value: false; Note: historical clickstream data is available from 2024/05 (May, 2024); with this parameter enabled, you will be charged double the price for the request; learn more about how clickstream-based metrics are calculated in this help center article
    * @return includeClickstreamData
    */
   @javax.annotation.Nullable

@@ -12,6 +12,7 @@
 |**onpageScore** | **Float** | shows how page is optimized on a 100-point scale this field shows how page is optimized considering critical on-page issues and warnings detected; 100 is the highest possible score that means the page does not have any critical on-page issues and important warnings; learn more about how the metric is calculated in this help center article |  [optional] |
 |**totalDomSize** | **Long** | total DOM size of a page |  [optional] |
 |**customJsResponse** | **Object** | the result of executing a specified JS script note that you should specify a custom_js field when setting a task to receive this data and the field type and its value will totally depend on the script you specified;you can also filter the results by this value specifying filters in the following way: [\&quot;custom_js_response.url\&quot;, \&quot;like\&quot;, \&quot;pixel\&quot;] |  [optional] |
+|**customJsClientException** | **String** | error when executing a custom js if the error occurred when executing the script you specified in the custom_js field, the error message would be displayed here |  [optional] |
 |**brokenResources** | **Boolean** | indicates whether a page contains broken resources |  [optional] |
 |**brokenLinks** | **Boolean** | indicates whether a page contains broken links |  [optional] |
 |**duplicateTitle** | **Boolean** | indicates whether a page has duplicate title tags |  [optional] |

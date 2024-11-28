@@ -22,7 +22,7 @@
 |**totalMerchant** | **Double** |  |  [optional] |
 |**onPage** | [**AppendixOnPageDayStatisticsMoneyData**](AppendixOnPageDayStatisticsMoneyData.md) |  |  [optional] |
 |**totalOnPage** | **Double** |  |  [optional] |
-|**businessData** | [**AppendixBusinessDataStatisticsMoneyDataInfo**](AppendixBusinessDataStatisticsMoneyDataInfo.md) |  |  [optional] |
+|**businessData** | [**AppendixBusinessDataDayStatisticsMoneyData**](AppendixBusinessDataDayStatisticsMoneyData.md) |  |  [optional] |
 |**totalBusinessData** | **Double** |  |  [optional] |
 |**backlinks** | [**AppendixBacklinksDayStatisticsRatesData**](AppendixBacklinksDayStatisticsRatesData.md) |  |  [optional] |
 |**totalBacklinks** | **Double** |  |  [optional] |
@@ -35,7 +35,7 @@
 |**value** | **String** | time period for grouping day in the yyyy-MM-dd format minute in the yyyy-MM-dd HH:mm format |  [optional] |
 |**totalTrafficAnalytics** | **Double** |  |  [optional] |
 |**totalReviews** | **Double** |  |  [optional] |
-|**reviews** | [**AppendixJobsSerpLimitsRatesDataInfo**](AppendixJobsSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**reviews** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
 
 
 

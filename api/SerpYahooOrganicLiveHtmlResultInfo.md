@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) |  [optional] |
+|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |  [optional] |
 |**type** | **String** | type of element |  [optional] |
 |**seDomain** | **String** | search engine domain in a POST array |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |

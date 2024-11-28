@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.DataforseoLabsAppleKeywordsForAppLiveItem;
+import io.github.dataforseo.client.model.DataforseoLabsLiveItem;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsAppleKeywordsForAppLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsAppleKeywordsForAppLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -80,7 +80,7 @@ public class DataforseoLabsAppleKeywordsForAppLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsAppleKeywordsForAppLiveItem> items;
+  private List<DataforseoLabsLiveItem> items;
 
   public DataforseoLabsAppleKeywordsForAppLiveResultInfo() {
   }
@@ -199,12 +199,12 @@ public class DataforseoLabsAppleKeywordsForAppLiveResultInfo {
   }
 
 
-  public DataforseoLabsAppleKeywordsForAppLiveResultInfo items(List<DataforseoLabsAppleKeywordsForAppLiveItem> items) {
+  public DataforseoLabsAppleKeywordsForAppLiveResultInfo items(List<DataforseoLabsLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsAppleKeywordsForAppLiveResultInfo addItemsItem(DataforseoLabsAppleKeywordsForAppLiveItem itemsItem) {
+  public DataforseoLabsAppleKeywordsForAppLiveResultInfo addItemsItem(DataforseoLabsLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -217,11 +217,11 @@ public class DataforseoLabsAppleKeywordsForAppLiveResultInfo {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<DataforseoLabsAppleKeywordsForAppLiveItem> getItems() {
+  public List<DataforseoLabsLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsAppleKeywordsForAppLiveItem> items) {
+  public void setItems(List<DataforseoLabsLiveItem> items) {
     this.items = items;
   }
 
@@ -384,7 +384,7 @@ public class DataforseoLabsAppleKeywordsForAppLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsAppleKeywordsForAppLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

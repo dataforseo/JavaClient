@@ -26,7 +26,7 @@ import io.github.dataforseo.client.model.BusinessDirectoryInfo;
 import io.github.dataforseo.client.model.PeopleAlsoSearch;
 import io.github.dataforseo.client.model.PopularTimes;
 import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkInfo;
+import io.github.dataforseo.client.model.WorkTime;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -193,6 +193,14 @@ public class GoogleBusinessInfoBusinessDataSerpElementItemTest {
     @Test
     public void contributorUrlTest() {
         // TODO: test contributorUrl
+    }
+
+    /**
+     * Test the property 'bookOnlineUrl'
+     */
+    @Test
+    public void bookOnlineUrlTest() {
+        // TODO: test bookOnlineUrl
     }
 
     /**

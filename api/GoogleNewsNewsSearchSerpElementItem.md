@@ -7,8 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**domain** | **String** | domain name of the result in SERP |  [optional] |
-|**url** | **String** | URL of the result in SERP |  [optional] |
+|**domain** | **String** | domain in SERP |  [optional] |
+|**url** | **String** | search URL with refinement parameters |  [optional] |
 |**imageUrl** | **String** | URL of the image the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |  [optional] |
 |**snippet** | **String** | snippet of the result in SERP |  [optional] |
 |**timePublished** | **String** | indicates the time the result was published |  [optional] |

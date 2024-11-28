@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixContentAnalysisPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixContentAnalysisPriceData {
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
@@ -58,7 +58,7 @@ public class AppendixContentAnalysisPriceData {
 
   public static final String SERIALIZED_NAME_CATEGORY_TRENDS = "category_trends";
   @SerializedName(SERIALIZED_NAME_CATEGORY_TRENDS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo categoryTrends;
+  private AppendixBingKeywordsDataPriceDataInfo categoryTrends;
 
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
@@ -74,23 +74,23 @@ public class AppendixContentAnalysisPriceData {
 
   public static final String SERIALIZED_NAME_PHRASE_TRENDS = "phrase_trends";
   @SerializedName(SERIALIZED_NAME_PHRASE_TRENDS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo phraseTrends;
+  private AppendixBingKeywordsDataPriceDataInfo phraseTrends;
 
   public static final String SERIALIZED_NAME_RATING_DISTRIBUTION = "rating_distribution";
   @SerializedName(SERIALIZED_NAME_RATING_DISTRIBUTION)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo ratingDistribution;
+  private AppendixBingKeywordsDataPriceDataInfo ratingDistribution;
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo search;
+  private AppendixBingKeywordsDataPriceDataInfo search;
 
   public static final String SERIALIZED_NAME_SENTIMENT_ANALYSIS = "sentiment_analysis";
   @SerializedName(SERIALIZED_NAME_SENTIMENT_ANALYSIS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo sentimentAnalysis;
+  private AppendixBingKeywordsDataPriceDataInfo sentimentAnalysis;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo summary;
+  private AppendixBingKeywordsDataPriceDataInfo summary;
 
   public AppendixContentAnalysisPriceData() {
   }
@@ -114,7 +114,7 @@ public class AppendixContentAnalysisPriceData {
   }
 
 
-  public AppendixContentAnalysisPriceData categoryTrends(AppendixKeywordBingKeywordsDataPriceDataInfo categoryTrends) {
+  public AppendixContentAnalysisPriceData categoryTrends(AppendixBingKeywordsDataPriceDataInfo categoryTrends) {
     this.categoryTrends = categoryTrends;
     return this;
   }
@@ -124,11 +124,11 @@ public class AppendixContentAnalysisPriceData {
    * @return categoryTrends
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getCategoryTrends() {
+  public AppendixBingKeywordsDataPriceDataInfo getCategoryTrends() {
     return categoryTrends;
   }
 
-  public void setCategoryTrends(AppendixKeywordBingKeywordsDataPriceDataInfo categoryTrends) {
+  public void setCategoryTrends(AppendixBingKeywordsDataPriceDataInfo categoryTrends) {
     this.categoryTrends = categoryTrends;
   }
 
@@ -190,7 +190,7 @@ public class AppendixContentAnalysisPriceData {
   }
 
 
-  public AppendixContentAnalysisPriceData phraseTrends(AppendixKeywordBingKeywordsDataPriceDataInfo phraseTrends) {
+  public AppendixContentAnalysisPriceData phraseTrends(AppendixBingKeywordsDataPriceDataInfo phraseTrends) {
     this.phraseTrends = phraseTrends;
     return this;
   }
@@ -200,16 +200,16 @@ public class AppendixContentAnalysisPriceData {
    * @return phraseTrends
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getPhraseTrends() {
+  public AppendixBingKeywordsDataPriceDataInfo getPhraseTrends() {
     return phraseTrends;
   }
 
-  public void setPhraseTrends(AppendixKeywordBingKeywordsDataPriceDataInfo phraseTrends) {
+  public void setPhraseTrends(AppendixBingKeywordsDataPriceDataInfo phraseTrends) {
     this.phraseTrends = phraseTrends;
   }
 
 
-  public AppendixContentAnalysisPriceData ratingDistribution(AppendixKeywordBingKeywordsDataPriceDataInfo ratingDistribution) {
+  public AppendixContentAnalysisPriceData ratingDistribution(AppendixBingKeywordsDataPriceDataInfo ratingDistribution) {
     this.ratingDistribution = ratingDistribution;
     return this;
   }
@@ -219,16 +219,16 @@ public class AppendixContentAnalysisPriceData {
    * @return ratingDistribution
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getRatingDistribution() {
+  public AppendixBingKeywordsDataPriceDataInfo getRatingDistribution() {
     return ratingDistribution;
   }
 
-  public void setRatingDistribution(AppendixKeywordBingKeywordsDataPriceDataInfo ratingDistribution) {
+  public void setRatingDistribution(AppendixBingKeywordsDataPriceDataInfo ratingDistribution) {
     this.ratingDistribution = ratingDistribution;
   }
 
 
-  public AppendixContentAnalysisPriceData search(AppendixKeywordBingKeywordsDataPriceDataInfo search) {
+  public AppendixContentAnalysisPriceData search(AppendixBingKeywordsDataPriceDataInfo search) {
     this.search = search;
     return this;
   }
@@ -238,16 +238,16 @@ public class AppendixContentAnalysisPriceData {
    * @return search
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSearch() {
+  public AppendixBingKeywordsDataPriceDataInfo getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixKeywordBingKeywordsDataPriceDataInfo search) {
+  public void setSearch(AppendixBingKeywordsDataPriceDataInfo search) {
     this.search = search;
   }
 
 
-  public AppendixContentAnalysisPriceData sentimentAnalysis(AppendixKeywordBingKeywordsDataPriceDataInfo sentimentAnalysis) {
+  public AppendixContentAnalysisPriceData sentimentAnalysis(AppendixBingKeywordsDataPriceDataInfo sentimentAnalysis) {
     this.sentimentAnalysis = sentimentAnalysis;
     return this;
   }
@@ -257,16 +257,16 @@ public class AppendixContentAnalysisPriceData {
    * @return sentimentAnalysis
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSentimentAnalysis() {
+  public AppendixBingKeywordsDataPriceDataInfo getSentimentAnalysis() {
     return sentimentAnalysis;
   }
 
-  public void setSentimentAnalysis(AppendixKeywordBingKeywordsDataPriceDataInfo sentimentAnalysis) {
+  public void setSentimentAnalysis(AppendixBingKeywordsDataPriceDataInfo sentimentAnalysis) {
     this.sentimentAnalysis = sentimentAnalysis;
   }
 
 
-  public AppendixContentAnalysisPriceData summary(AppendixKeywordBingKeywordsDataPriceDataInfo summary) {
+  public AppendixContentAnalysisPriceData summary(AppendixBingKeywordsDataPriceDataInfo summary) {
     this.summary = summary;
     return this;
   }
@@ -276,11 +276,11 @@ public class AppendixContentAnalysisPriceData {
    * @return summary
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSummary() {
+  public AppendixBingKeywordsDataPriceDataInfo getSummary() {
     return summary;
   }
 
-  public void setSummary(AppendixKeywordBingKeywordsDataPriceDataInfo summary) {
+  public void setSummary(AppendixBingKeywordsDataPriceDataInfo summary) {
     this.summary = summary;
   }
 
@@ -428,7 +428,7 @@ public class AppendixContentAnalysisPriceData {
       }
       // validate the optional field `category_trends`
       if (jsonObj.get("category_trends") != null && !jsonObj.get("category_trends").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("category_trends"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("category_trends"));
       }
       // validate the optional field `errors`
       if (jsonObj.get("errors") != null && !jsonObj.get("errors").isJsonNull()) {
@@ -444,23 +444,23 @@ public class AppendixContentAnalysisPriceData {
       }
       // validate the optional field `phrase_trends`
       if (jsonObj.get("phrase_trends") != null && !jsonObj.get("phrase_trends").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("phrase_trends"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("phrase_trends"));
       }
       // validate the optional field `rating_distribution`
       if (jsonObj.get("rating_distribution") != null && !jsonObj.get("rating_distribution").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("rating_distribution"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("rating_distribution"));
       }
       // validate the optional field `search`
       if (jsonObj.get("search") != null && !jsonObj.get("search").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search"));
       }
       // validate the optional field `sentiment_analysis`
       if (jsonObj.get("sentiment_analysis") != null && !jsonObj.get("sentiment_analysis").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("sentiment_analysis"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("sentiment_analysis"));
       }
       // validate the optional field `summary`
       if (jsonObj.get("summary") != null && !jsonObj.get("summary").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("summary"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("summary"));
       }
   }
 

@@ -58,7 +58,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleMapsMapsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpElementItem {
   public static final String SERIALIZED_NAME_CONTACT_URL = "contact_url";
   @SerializedName(SERIALIZED_NAME_CONTACT_URL)
@@ -67,6 +67,10 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
   public static final String SERIALIZED_NAME_CONTRIBUTOR_URL = "contributor_url";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTOR_URL)
   private String contributorUrl;
+
+  public static final String SERIALIZED_NAME_BOOK_ONLINE_URL = "book_online_url";
+  @SerializedName(SERIALIZED_NAME_BOOK_ONLINE_URL)
+  private String bookOnlineUrl;
 
   public static final String SERIALIZED_NAME_HOTEL_RATING = "hotel_rating";
   @SerializedName(SERIALIZED_NAME_HOTEL_RATING)
@@ -186,6 +190,25 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
 
   public void setContributorUrl(String contributorUrl) {
     this.contributorUrl = contributorUrl;
+  }
+
+
+  public GoogleMapsMapsSearchSerpElementItem bookOnlineUrl(String bookOnlineUrl) {
+    this.bookOnlineUrl = bookOnlineUrl;
+    return this;
+  }
+
+  /**
+   * URL in the ‘book online’ button of the element URL directing users to the online booking or order page of the business entity
+   * @return bookOnlineUrl
+   */
+  @javax.annotation.Nullable
+  public String getBookOnlineUrl() {
+    return bookOnlineUrl;
+  }
+
+  public void setBookOnlineUrl(String bookOnlineUrl) {
+    this.bookOnlineUrl = bookOnlineUrl;
   }
 
 
@@ -649,6 +672,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
     GoogleMapsMapsSearchSerpElementItem googleMapsMapsSearchSerpElementItem = (GoogleMapsMapsSearchSerpElementItem) o;
     return Objects.equals(this.contactUrl, googleMapsMapsSearchSerpElementItem.contactUrl) &&
         Objects.equals(this.contributorUrl, googleMapsMapsSearchSerpElementItem.contributorUrl) &&
+        Objects.equals(this.bookOnlineUrl, googleMapsMapsSearchSerpElementItem.bookOnlineUrl) &&
         Objects.equals(this.hotelRating, googleMapsMapsSearchSerpElementItem.hotelRating) &&
         Objects.equals(this.priceLevel, googleMapsMapsSearchSerpElementItem.priceLevel) &&
         Objects.equals(this.snippet, googleMapsMapsSearchSerpElementItem.snippet) &&
@@ -679,7 +703,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
 
   @Override
   public int hashCode() {
-    return Objects.hash(contactUrl, contributorUrl, hotelRating, priceLevel, snippet, address, addressInfo, placeId, phone, mainImage, totalPhotos, category, additionalCategories, categoryIds, workHours, featureId, cid, latitude, longitude, isClaimed, localJustifications, isDirectoryItem, super.hashCode(), additionalProperties);
+    return Objects.hash(contactUrl, contributorUrl, bookOnlineUrl, hotelRating, priceLevel, snippet, address, addressInfo, placeId, phone, mainImage, totalPhotos, category, additionalCategories, categoryIds, workHours, featureId, cid, latitude, longitude, isClaimed, localJustifications, isDirectoryItem, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -696,6 +720,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
     sb.append("    contactUrl: ").append(toIndentedString(contactUrl)).append("\n");
     sb.append("    contributorUrl: ").append(toIndentedString(contributorUrl)).append("\n");
+    sb.append("    bookOnlineUrl: ").append(toIndentedString(bookOnlineUrl)).append("\n");
     sb.append("    hotelRating: ").append(toIndentedString(hotelRating)).append("\n");
     sb.append("    priceLevel: ").append(toIndentedString(priceLevel)).append("\n");
     sb.append("    snippet: ").append(toIndentedString(snippet)).append("\n");
@@ -749,6 +774,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
     openapiFields.add("rating_distribution");
     openapiFields.add("contact_url");
     openapiFields.add("contributor_url");
+    openapiFields.add("book_online_url");
     openapiFields.add("hotel_rating");
     openapiFields.add("price_level");
     openapiFields.add("snippet");
@@ -792,6 +818,9 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
       }
       if ((jsonObj.get("contributor_url") != null && !jsonObj.get("contributor_url").isJsonNull()) && !jsonObj.get("contributor_url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `contributor_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contributor_url").toString()));
+      }
+      if ((jsonObj.get("book_online_url") != null && !jsonObj.get("book_online_url").isJsonNull()) && !jsonObj.get("book_online_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `book_online_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("book_online_url").toString()));
       }
       if ((jsonObj.get("price_level") != null && !jsonObj.get("price_level").isJsonNull()) && !jsonObj.get("price_level").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `price_level` to be a primitive type in the JSON string but got `%s`", jsonObj.get("price_level").toString()));

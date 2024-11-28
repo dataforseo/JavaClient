@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixBingKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixInfo;
 import io.github.dataforseo.client.model.AppendixNaverKeywordsDataDataInfo;
@@ -56,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataDataInfo {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -121,6 +122,14 @@ public class AppendixKeywordsDataDataInfo {
   public static final String SERIALIZED_NAME_CLICKSTREAM_DATA = "clickstream_data";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_DATA)
   private AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo clickstreamData;
+
+  public static final String SERIALIZED_NAME_AUDIENCE_ESTIMATION = "audience_estimation";
+  @SerializedName(SERIALIZED_NAME_AUDIENCE_ESTIMATION)
+  private AppendixDayLimitsRatesDataInfo audienceEstimation;
+
+  public static final String SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL = "keyword_suggestions_for_url";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL)
+  private AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl;
 
   public static final String SERIALIZED_NAME_NAVER = "naver";
   @SerializedName(SERIALIZED_NAME_NAVER)
@@ -441,6 +450,44 @@ public class AppendixKeywordsDataDataInfo {
   }
 
 
+  public AppendixKeywordsDataDataInfo audienceEstimation(AppendixDayLimitsRatesDataInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
+    return this;
+  }
+
+  /**
+   * Get audienceEstimation
+   * @return audienceEstimation
+   */
+  @javax.annotation.Nullable
+  public AppendixDayLimitsRatesDataInfo getAudienceEstimation() {
+    return audienceEstimation;
+  }
+
+  public void setAudienceEstimation(AppendixDayLimitsRatesDataInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
+  }
+
+
+  public AppendixKeywordsDataDataInfo keywordSuggestionsForUrl(AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+    return this;
+  }
+
+  /**
+   * Get keywordSuggestionsForUrl
+   * @return keywordSuggestionsForUrl
+   */
+  @javax.annotation.Nullable
+  public AppendixDayLimitsRatesDataInfo getKeywordSuggestionsForUrl() {
+    return keywordSuggestionsForUrl;
+  }
+
+  public void setKeywordSuggestionsForUrl(AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+  }
+
+
   public AppendixKeywordsDataDataInfo naver(AppendixNaverKeywordsDataDataInfo naver) {
     this.naver = naver;
     return this;
@@ -568,6 +615,8 @@ public class AppendixKeywordsDataDataInfo {
         Objects.equals(this.googleAds, appendixKeywordsDataDataInfo.googleAds) &&
         Objects.equals(this.dataforseoTrends, appendixKeywordsDataDataInfo.dataforseoTrends) &&
         Objects.equals(this.clickstreamData, appendixKeywordsDataDataInfo.clickstreamData) &&
+        Objects.equals(this.audienceEstimation, appendixKeywordsDataDataInfo.audienceEstimation) &&
+        Objects.equals(this.keywordSuggestionsForUrl, appendixKeywordsDataDataInfo.keywordSuggestionsForUrl) &&
         Objects.equals(this.naver, appendixKeywordsDataDataInfo.naver) &&
         Objects.equals(this.google, appendixKeywordsDataDataInfo.google) &&
         Objects.equals(this.keywordIdeasAdsApi, appendixKeywordsDataDataInfo.keywordIdeasAdsApi)&&
@@ -580,7 +629,7 @@ public class AppendixKeywordsDataDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, naver, google, keywordIdeasAdsApi, additionalProperties);
+    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, audienceEstimation, keywordSuggestionsForUrl, naver, google, keywordIdeasAdsApi, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -610,6 +659,8 @@ public class AppendixKeywordsDataDataInfo {
     sb.append("    googleAds: ").append(toIndentedString(googleAds)).append("\n");
     sb.append("    dataforseoTrends: ").append(toIndentedString(dataforseoTrends)).append("\n");
     sb.append("    clickstreamData: ").append(toIndentedString(clickstreamData)).append("\n");
+    sb.append("    audienceEstimation: ").append(toIndentedString(audienceEstimation)).append("\n");
+    sb.append("    keywordSuggestionsForUrl: ").append(toIndentedString(keywordSuggestionsForUrl)).append("\n");
     sb.append("    naver: ").append(toIndentedString(naver)).append("\n");
     sb.append("    google: ").append(toIndentedString(google)).append("\n");
     sb.append("    keywordIdeasAdsApi: ").append(toIndentedString(keywordIdeasAdsApi)).append("\n");
@@ -652,6 +703,8 @@ public class AppendixKeywordsDataDataInfo {
     openapiFields.add("google_ads");
     openapiFields.add("dataforseo_trends");
     openapiFields.add("clickstream_data");
+    openapiFields.add("audience_estimation");
+    openapiFields.add("keyword_suggestions_for_url");
     openapiFields.add("naver");
     openapiFields.add("google");
     openapiFields.add("keyword_ideas_ads_api");
@@ -712,6 +765,14 @@ public class AppendixKeywordsDataDataInfo {
       // validate the optional field `clickstream_data`
       if (jsonObj.get("clickstream_data") != null && !jsonObj.get("clickstream_data").isJsonNull()) {
         AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("clickstream_data"));
+      }
+      // validate the optional field `audience_estimation`
+      if (jsonObj.get("audience_estimation") != null && !jsonObj.get("audience_estimation").isJsonNull()) {
+        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("audience_estimation"));
+      }
+      // validate the optional field `keyword_suggestions_for_url`
+      if (jsonObj.get("keyword_suggestions_for_url") != null && !jsonObj.get("keyword_suggestions_for_url").isJsonNull()) {
+        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
       }
       // validate the optional field `naver`
       if (jsonObj.get("naver") != null && !jsonObj.get("naver").isJsonNull()) {

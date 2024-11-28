@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseYoutubeSerpElementItem;
+import io.github.dataforseo.client.model.RefinementChipsInfo;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_VIDEO_ID = "video_id";
   @SerializedName(SERIALIZED_NAME_VIDEO_ID)
@@ -82,6 +83,10 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_SPELL = "spell";
   @SerializedName(SERIALIZED_NAME_SPELL)
   private SpellInfo spell;
+
+  public static final String SERIALIZED_NAME_REFINEMENT_CHIPS = "refinement_chips";
+  @SerializedName(SERIALIZED_NAME_REFINEMENT_CHIPS)
+  private RefinementChipsInfo refinementChips;
 
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
@@ -236,6 +241,25 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
 
   public void setSpell(SpellInfo spell) {
     this.spell = spell;
+  }
+
+
+  public SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo refinementChips(RefinementChipsInfo refinementChips) {
+    this.refinementChips = refinementChips;
+    return this;
+  }
+
+  /**
+   * Get refinementChips
+   * @return refinementChips
+   */
+  @javax.annotation.Nullable
+  public RefinementChipsInfo getRefinementChips() {
+    return refinementChips;
+  }
+
+  public void setRefinementChips(RefinementChipsInfo refinementChips) {
+    this.refinementChips = refinementChips;
   }
 
 
@@ -411,6 +435,7 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
         Objects.equals(this.checkUrl, serpYoutubeVideoCommentsTaskGetAdvancedResultInfo.checkUrl) &&
         Objects.equals(this.datetime, serpYoutubeVideoCommentsTaskGetAdvancedResultInfo.datetime) &&
         Objects.equals(this.spell, serpYoutubeVideoCommentsTaskGetAdvancedResultInfo.spell) &&
+        Objects.equals(this.refinementChips, serpYoutubeVideoCommentsTaskGetAdvancedResultInfo.refinementChips) &&
         Objects.equals(this.itemTypes, serpYoutubeVideoCommentsTaskGetAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.title, serpYoutubeVideoCommentsTaskGetAdvancedResultInfo.title) &&
         Objects.equals(this.commentsCount, serpYoutubeVideoCommentsTaskGetAdvancedResultInfo.commentsCount) &&
@@ -425,7 +450,7 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(videoId, seDomain, locationCode, languageCode, checkUrl, datetime, spell, itemTypes, title, commentsCount, itemsCount, items, additionalProperties);
+    return Objects.hash(videoId, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, title, commentsCount, itemsCount, items, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -446,6 +471,7 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
     sb.append("    checkUrl: ").append(toIndentedString(checkUrl)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    spell: ").append(toIndentedString(spell)).append("\n");
+    sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    commentsCount: ").append(toIndentedString(commentsCount)).append("\n");
@@ -481,6 +507,7 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
     openapiFields.add("check_url");
     openapiFields.add("datetime");
     openapiFields.add("spell");
+    openapiFields.add("refinement_chips");
     openapiFields.add("item_types");
     openapiFields.add("title");
     openapiFields.add("comments_count");
@@ -522,6 +549,10 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfo {
       // validate the optional field `spell`
       if (jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) {
         SpellInfo.validateJsonElement(jsonObj.get("spell"));
+      }
+      // validate the optional field `refinement_chips`
+      if (jsonObj.get("refinement_chips") != null && !jsonObj.get("refinement_chips").isJsonNull()) {
+        RefinementChipsInfo.validateJsonElement(jsonObj.get("refinement_chips"));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("item_types") != null && !jsonObj.get("item_types").isJsonNull() && !jsonObj.get("item_types").isJsonArray()) {

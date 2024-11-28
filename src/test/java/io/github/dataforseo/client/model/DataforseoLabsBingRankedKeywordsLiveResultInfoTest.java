@@ -18,7 +18,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.DataforseoLabsBingRankedKeywordsLiveItem;
+import io.github.dataforseo.client.model.DataforseoLabsLiveItem;
 import io.github.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import java.io.IOException;
 import java.util.ArrayList;

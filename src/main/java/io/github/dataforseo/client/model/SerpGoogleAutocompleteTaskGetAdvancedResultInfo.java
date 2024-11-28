@@ -19,7 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.SerpGoogleAutocompleteeAdvancedItem;
+import io.github.dataforseo.client.model.RefinementChipsInfo;
+import io.github.dataforseo.client.model.SerpGoogleAutocompleteAdvancedItem;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleAutocompleteTaskGetAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -87,6 +88,10 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
   @SerializedName(SERIALIZED_NAME_SPELL)
   private SpellInfo spell;
 
+  public static final String SERIALIZED_NAME_REFINEMENT_CHIPS = "refinement_chips";
+  @SerializedName(SERIALIZED_NAME_REFINEMENT_CHIPS)
+  private RefinementChipsInfo refinementChips;
+
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
   private List<String> itemTypes;
@@ -101,7 +106,7 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<SerpGoogleAutocompleteeAdvancedItem> items;
+  private List<SerpGoogleAutocompleteAdvancedItem> items;
 
   public SerpGoogleAutocompleteTaskGetAdvancedResultInfo() {
   }
@@ -258,6 +263,25 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
   }
 
 
+  public SerpGoogleAutocompleteTaskGetAdvancedResultInfo refinementChips(RefinementChipsInfo refinementChips) {
+    this.refinementChips = refinementChips;
+    return this;
+  }
+
+  /**
+   * Get refinementChips
+   * @return refinementChips
+   */
+  @javax.annotation.Nullable
+  public RefinementChipsInfo getRefinementChips() {
+    return refinementChips;
+  }
+
+  public void setRefinementChips(RefinementChipsInfo refinementChips) {
+    this.refinementChips = refinementChips;
+  }
+
+
   public SerpGoogleAutocompleteTaskGetAdvancedResultInfo itemTypes(List<String> itemTypes) {
     this.itemTypes = itemTypes;
     return this;
@@ -323,12 +347,12 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
   }
 
 
-  public SerpGoogleAutocompleteTaskGetAdvancedResultInfo items(List<SerpGoogleAutocompleteeAdvancedItem> items) {
+  public SerpGoogleAutocompleteTaskGetAdvancedResultInfo items(List<SerpGoogleAutocompleteAdvancedItem> items) {
     this.items = items;
     return this;
   }
 
-  public SerpGoogleAutocompleteTaskGetAdvancedResultInfo addItemsItem(SerpGoogleAutocompleteeAdvancedItem itemsItem) {
+  public SerpGoogleAutocompleteTaskGetAdvancedResultInfo addItemsItem(SerpGoogleAutocompleteAdvancedItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -337,15 +361,15 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
   }
 
   /**
-   * elements of search results found in SERP
+   * items of the element
    * @return items
    */
   @javax.annotation.Nullable
-  public List<SerpGoogleAutocompleteeAdvancedItem> getItems() {
+  public List<SerpGoogleAutocompleteAdvancedItem> getItems() {
     return items;
   }
 
-  public void setItems(List<SerpGoogleAutocompleteeAdvancedItem> items) {
+  public void setItems(List<SerpGoogleAutocompleteAdvancedItem> items) {
     this.items = items;
   }
 
@@ -412,6 +436,7 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
         Objects.equals(this.checkUrl, serpGoogleAutocompleteTaskGetAdvancedResultInfo.checkUrl) &&
         Objects.equals(this.datetime, serpGoogleAutocompleteTaskGetAdvancedResultInfo.datetime) &&
         Objects.equals(this.spell, serpGoogleAutocompleteTaskGetAdvancedResultInfo.spell) &&
+        Objects.equals(this.refinementChips, serpGoogleAutocompleteTaskGetAdvancedResultInfo.refinementChips) &&
         Objects.equals(this.itemTypes, serpGoogleAutocompleteTaskGetAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.seResultsCount, serpGoogleAutocompleteTaskGetAdvancedResultInfo.seResultsCount) &&
         Objects.equals(this.itemsCount, serpGoogleAutocompleteTaskGetAdvancedResultInfo.itemsCount) &&
@@ -425,7 +450,7 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
+    return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -447,6 +472,7 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
     sb.append("    checkUrl: ").append(toIndentedString(checkUrl)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    spell: ").append(toIndentedString(spell)).append("\n");
+    sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
@@ -482,6 +508,7 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
     openapiFields.add("check_url");
     openapiFields.add("datetime");
     openapiFields.add("spell");
+    openapiFields.add("refinement_chips");
     openapiFields.add("item_types");
     openapiFields.add("se_results_count");
     openapiFields.add("items_count");
@@ -526,6 +553,10 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
       if (jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) {
         SpellInfo.validateJsonElement(jsonObj.get("spell"));
       }
+      // validate the optional field `refinement_chips`
+      if (jsonObj.get("refinement_chips") != null && !jsonObj.get("refinement_chips").isJsonNull()) {
+        RefinementChipsInfo.validateJsonElement(jsonObj.get("refinement_chips"));
+      }
       // ensure the optional json data is an array if present
       if (jsonObj.get("item_types") != null && !jsonObj.get("item_types").isJsonNull() && !jsonObj.get("item_types").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `item_types` to be an array in the JSON string but got `%s`", jsonObj.get("item_types").toString()));
@@ -540,7 +571,7 @@ public class SerpGoogleAutocompleteTaskGetAdvancedResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            SerpGoogleAutocompleteeAdvancedItem.validateJsonElement(jsonArrayitems.get(i));
+            SerpGoogleAutocompleteAdvancedItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

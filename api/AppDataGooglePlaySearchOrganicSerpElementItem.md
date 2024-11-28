@@ -12,7 +12,7 @@
 |**icon** | **String** | URL to the app icon |  [optional] |
 |**reviewsCount** | **Long** | the total number of reviews of the app |  [optional] |
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
-|**price** | [**Price**](Price.md) |  |  [optional] |
+|**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**developer** | **String** | name of the app developer |  [optional] |
 |**developerUrl** | **String** | URL to the developer page on Google Play |  [optional] |
 

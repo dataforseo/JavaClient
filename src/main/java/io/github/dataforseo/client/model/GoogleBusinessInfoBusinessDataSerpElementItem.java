@@ -27,7 +27,7 @@ import io.github.dataforseo.client.model.BusinessDirectoryInfo;
 import io.github.dataforseo.client.model.PeopleAlsoSearch;
 import io.github.dataforseo.client.model.PopularTimes;
 import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkInfo;
+import io.github.dataforseo.client.model.WorkTime;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -62,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleBusinessInfoBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -123,6 +123,10 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   public static final String SERIALIZED_NAME_CONTRIBUTOR_URL = "contributor_url";
   @SerializedName(SERIALIZED_NAME_CONTRIBUTOR_URL)
   private String contributorUrl;
+
+  public static final String SERIALIZED_NAME_BOOK_ONLINE_URL = "book_online_url";
+  @SerializedName(SERIALIZED_NAME_BOOK_ONLINE_URL)
+  private String bookOnlineUrl;
 
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -190,7 +194,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public static final String SERIALIZED_NAME_WORK_TIME = "work_time";
   @SerializedName(SERIALIZED_NAME_WORK_TIME)
-  private WorkInfo workTime;
+  private WorkTime workTime;
 
   public static final String SERIALIZED_NAME_POPULAR_TIMES = "popular_times";
   @SerializedName(SERIALIZED_NAME_POPULAR_TIMES)
@@ -509,6 +513,25 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public void setContributorUrl(String contributorUrl) {
     this.contributorUrl = contributorUrl;
+  }
+
+
+  public GoogleBusinessInfoBusinessDataSerpElementItem bookOnlineUrl(String bookOnlineUrl) {
+    this.bookOnlineUrl = bookOnlineUrl;
+    return this;
+  }
+
+  /**
+   * URL in the ‘book online’ button of the element URL directing users to the online booking or order page of the business entity
+   * @return bookOnlineUrl
+   */
+  @javax.annotation.Nullable
+  public String getBookOnlineUrl() {
+    return bookOnlineUrl;
+  }
+
+  public void setBookOnlineUrl(String bookOnlineUrl) {
+    this.bookOnlineUrl = bookOnlineUrl;
   }
 
 
@@ -840,7 +863,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   }
 
 
-  public GoogleBusinessInfoBusinessDataSerpElementItem workTime(WorkInfo workTime) {
+  public GoogleBusinessInfoBusinessDataSerpElementItem workTime(WorkTime workTime) {
     this.workTime = workTime;
     return this;
   }
@@ -850,11 +873,11 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
    * @return workTime
    */
   @javax.annotation.Nullable
-  public WorkInfo getWorkTime() {
+  public WorkTime getWorkTime() {
     return workTime;
   }
 
-  public void setWorkTime(WorkInfo workTime) {
+  public void setWorkTime(WorkTime workTime) {
     this.workTime = workTime;
   }
 
@@ -1012,6 +1035,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
         Objects.equals(this.url, googleBusinessInfoBusinessDataSerpElementItem.url) &&
         Objects.equals(this.contactUrl, googleBusinessInfoBusinessDataSerpElementItem.contactUrl) &&
         Objects.equals(this.contributorUrl, googleBusinessInfoBusinessDataSerpElementItem.contributorUrl) &&
+        Objects.equals(this.bookOnlineUrl, googleBusinessInfoBusinessDataSerpElementItem.bookOnlineUrl) &&
         Objects.equals(this.domain, googleBusinessInfoBusinessDataSerpElementItem.domain) &&
         Objects.equals(this.logo, googleBusinessInfoBusinessDataSerpElementItem.logo) &&
         Objects.equals(this.mainImage, googleBusinessInfoBusinessDataSerpElementItem.mainImage) &&
@@ -1043,7 +1067,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, contributorUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode(), additionalProperties);
+    return Objects.hash(position, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, contributorUrl, bookOnlineUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1073,6 +1097,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    contactUrl: ").append(toIndentedString(contactUrl)).append("\n");
     sb.append("    contributorUrl: ").append(toIndentedString(contributorUrl)).append("\n");
+    sb.append("    bookOnlineUrl: ").append(toIndentedString(bookOnlineUrl)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
     sb.append("    mainImage: ").append(toIndentedString(mainImage)).append("\n");
@@ -1135,6 +1160,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     openapiFields.add("url");
     openapiFields.add("contact_url");
     openapiFields.add("contributor_url");
+    openapiFields.add("book_online_url");
     openapiFields.add("domain");
     openapiFields.add("logo");
     openapiFields.add("main_image");
@@ -1222,6 +1248,9 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
       if ((jsonObj.get("contributor_url") != null && !jsonObj.get("contributor_url").isJsonNull()) && !jsonObj.get("contributor_url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `contributor_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contributor_url").toString()));
       }
+      if ((jsonObj.get("book_online_url") != null && !jsonObj.get("book_online_url").isJsonNull()) && !jsonObj.get("book_online_url").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `book_online_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("book_online_url").toString()));
+      }
       if ((jsonObj.get("domain") != null && !jsonObj.get("domain").isJsonNull()) && !jsonObj.get("domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain").toString()));
       }
@@ -1261,7 +1290,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
       }
       // validate the optional field `work_time`
       if (jsonObj.get("work_time") != null && !jsonObj.get("work_time").isJsonNull()) {
-        WorkInfo.validateJsonElement(jsonObj.get("work_time"));
+        WorkTime.validateJsonElement(jsonObj.get("work_time"));
       }
       // validate the optional field `popular_times`
       if (jsonObj.get("popular_times") != null && !jsonObj.get("popular_times").isJsonNull()) {

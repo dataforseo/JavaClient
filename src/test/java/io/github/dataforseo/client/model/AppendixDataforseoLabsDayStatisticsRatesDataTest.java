@@ -313,19 +313,11 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'availableFilters'
+     * Test the property 'idList'
      */
     @Test
-    public void availableFiltersTest() {
-        // TODO: test availableFilters
-    }
-
-    /**
-     * Test the property 'availableHistory'
-     */
-    @Test
-    public void availableHistoryTest() {
-        // TODO: test availableHistory
+    public void idListTest() {
+        // TODO: test idList
     }
 
     /**
@@ -337,27 +329,27 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'categoriesForKeywords'
+     * Test the property 'availableHistory'
      */
     @Test
-    public void categoriesForKeywordsTest() {
-        // TODO: test categoriesForKeywords
+    public void availableHistoryTest() {
+        // TODO: test availableHistory
     }
 
     /**
-     * Test the property 'languages'
+     * Test the property 'status'
      */
     @Test
-    public void languagesTest() {
-        // TODO: test languages
+    public void statusTest() {
+        // TODO: test status
     }
 
     /**
-     * Test the property 'topGoogleSearches'
+     * Test the property 'availableFilters'
      */
     @Test
-    public void topGoogleSearchesTest() {
-        // TODO: test topGoogleSearches
+    public void availableFiltersTest() {
+        // TODO: test availableFilters
     }
 
     /**
@@ -369,19 +361,27 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'idList'
+     * Test the property 'languages'
      */
     @Test
-    public void idListTest() {
-        // TODO: test idList
+    public void languagesTest() {
+        // TODO: test languages
     }
 
     /**
-     * Test the property 'status'
+     * Test the property 'categoriesForKeywords'
      */
     @Test
-    public void statusTest() {
-        // TODO: test status
+    public void categoriesForKeywordsTest() {
+        // TODO: test categoriesForKeywords
+    }
+
+    /**
+     * Test the property 'topGoogleSearches'
+     */
+    @Test
+    public void topGoogleSearchesTest() {
+        // TODO: test topGoogleSearches
     }
 
 }

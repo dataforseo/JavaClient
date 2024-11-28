@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseAppDataSerpElementItem;
-import io.github.dataforseo.client.model.Price;
+import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.RatingInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGooglePlaySearchOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_APP_ID = "app_id";
   @SerializedName(SERIALIZED_NAME_APP_ID)
@@ -76,7 +76,7 @@ public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSe
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private Price price;
+  private PriceInfo price;
 
   public static final String SERIALIZED_NAME_DEVELOPER = "developer";
   @SerializedName(SERIALIZED_NAME_DEVELOPER)
@@ -184,7 +184,7 @@ public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSe
   }
 
 
-  public AppDataGooglePlaySearchOrganicSerpElementItem price(Price price) {
+  public AppDataGooglePlaySearchOrganicSerpElementItem price(PriceInfo price) {
     this.price = price;
     return this;
   }
@@ -194,11 +194,11 @@ public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSe
    * @return price
    */
   @javax.annotation.Nullable
-  public Price getPrice() {
+  public PriceInfo getPrice() {
     return price;
   }
 
-  public void setPrice(Price price) {
+  public void setPrice(PriceInfo price) {
     this.price = price;
   }
 
@@ -402,7 +402,7 @@ public class AppDataGooglePlaySearchOrganicSerpElementItem extends BaseAppDataSe
       }
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
-        Price.validateJsonElement(jsonObj.get("price"));
+        PriceInfo.validateJsonElement(jsonObj.get("price"));
       }
       if ((jsonObj.get("developer") != null && !jsonObj.get("developer").isJsonNull()) && !jsonObj.get("developer").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `developer` to be a primitive type in the JSON string but got `%s`", jsonObj.get("developer").toString()));

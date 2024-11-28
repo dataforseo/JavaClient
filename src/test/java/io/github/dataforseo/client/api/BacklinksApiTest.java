@@ -100,7 +100,7 @@ public class BacklinksApiTest {
     }
 
     /**
-     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

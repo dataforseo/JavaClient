@@ -24,7 +24,7 @@
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |
 |**hotelRating** | **Integer** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
 |**categoryIds** | **List&lt;String&gt;** | global category IDs universal category IDs that do not change based on the selected country |  [optional] |
-|**workHours** | [**WorkInfo**](WorkInfo.md) |  |  [optional] |
+|**workHours** | [**WorkHours**](WorkHours.md) |  |  [optional] |
 |**featureId** | **String** | the unique identifier of the element in SERP learn more about the identifier in this help center article |  [optional] |
 |**cid** | **String** | google-defined client id unique id of a local establishment; can be used with Google Reviews API to get a full list of reviews learn more about the identifier in this help center article |  [optional] |
 |**latitude** | **Float** | latitude coordinate of the local establishments in google maps example: \&quot;latitude\&quot;: 51.584091 |  [optional] |

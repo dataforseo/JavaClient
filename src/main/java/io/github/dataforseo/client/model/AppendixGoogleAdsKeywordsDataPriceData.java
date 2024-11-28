@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -50,23 +50,23 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixGoogleAdsKeywordsDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixGoogleAdsKeywordsDataPriceData {
   public static final String SERIALIZED_NAME_AD_TRAFFIC_BY_KEYWORDS = "ad_traffic_by_keywords";
   @SerializedName(SERIALIZED_NAME_AD_TRAFFIC_BY_KEYWORDS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo adTrafficByKeywords;
+  private AppendixBingKeywordsDataPriceDataInfo adTrafficByKeywords;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForKeywords;
+  private AppendixBingKeywordsDataPriceDataInfo keywordsForKeywords;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_SITE = "keywords_for_site";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_SITE)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForSite;
+  private AppendixBingKeywordsDataPriceDataInfo keywordsForSite;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo searchVolume;
+  private AppendixBingKeywordsDataPriceDataInfo searchVolume;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -75,7 +75,7 @@ public class AppendixGoogleAdsKeywordsDataPriceData {
   public AppendixGoogleAdsKeywordsDataPriceData() {
   }
 
-  public AppendixGoogleAdsKeywordsDataPriceData adTrafficByKeywords(AppendixKeywordBingKeywordsDataPriceDataInfo adTrafficByKeywords) {
+  public AppendixGoogleAdsKeywordsDataPriceData adTrafficByKeywords(AppendixBingKeywordsDataPriceDataInfo adTrafficByKeywords) {
     this.adTrafficByKeywords = adTrafficByKeywords;
     return this;
   }
@@ -85,16 +85,16 @@ public class AppendixGoogleAdsKeywordsDataPriceData {
    * @return adTrafficByKeywords
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getAdTrafficByKeywords() {
+  public AppendixBingKeywordsDataPriceDataInfo getAdTrafficByKeywords() {
     return adTrafficByKeywords;
   }
 
-  public void setAdTrafficByKeywords(AppendixKeywordBingKeywordsDataPriceDataInfo adTrafficByKeywords) {
+  public void setAdTrafficByKeywords(AppendixBingKeywordsDataPriceDataInfo adTrafficByKeywords) {
     this.adTrafficByKeywords = adTrafficByKeywords;
   }
 
 
-  public AppendixGoogleAdsKeywordsDataPriceData keywordsForKeywords(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForKeywords) {
+  public AppendixGoogleAdsKeywordsDataPriceData keywordsForKeywords(AppendixBingKeywordsDataPriceDataInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
     return this;
   }
@@ -104,16 +104,16 @@ public class AppendixGoogleAdsKeywordsDataPriceData {
    * @return keywordsForKeywords
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getKeywordsForKeywords() {
+  public AppendixBingKeywordsDataPriceDataInfo getKeywordsForKeywords() {
     return keywordsForKeywords;
   }
 
-  public void setKeywordsForKeywords(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForKeywords) {
+  public void setKeywordsForKeywords(AppendixBingKeywordsDataPriceDataInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
   }
 
 
-  public AppendixGoogleAdsKeywordsDataPriceData keywordsForSite(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForSite) {
+  public AppendixGoogleAdsKeywordsDataPriceData keywordsForSite(AppendixBingKeywordsDataPriceDataInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
     return this;
   }
@@ -123,16 +123,16 @@ public class AppendixGoogleAdsKeywordsDataPriceData {
    * @return keywordsForSite
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getKeywordsForSite() {
+  public AppendixBingKeywordsDataPriceDataInfo getKeywordsForSite() {
     return keywordsForSite;
   }
 
-  public void setKeywordsForSite(AppendixKeywordBingKeywordsDataPriceDataInfo keywordsForSite) {
+  public void setKeywordsForSite(AppendixBingKeywordsDataPriceDataInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
   }
 
 
-  public AppendixGoogleAdsKeywordsDataPriceData searchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo searchVolume) {
+  public AppendixGoogleAdsKeywordsDataPriceData searchVolume(AppendixBingKeywordsDataPriceDataInfo searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -142,11 +142,11 @@ public class AppendixGoogleAdsKeywordsDataPriceData {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSearchVolume() {
+  public AppendixBingKeywordsDataPriceDataInfo getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo searchVolume) {
+  public void setSearchVolume(AppendixBingKeywordsDataPriceDataInfo searchVolume) {
     this.searchVolume = searchVolume;
   }
 
@@ -294,19 +294,19 @@ public class AppendixGoogleAdsKeywordsDataPriceData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `ad_traffic_by_keywords`
       if (jsonObj.get("ad_traffic_by_keywords") != null && !jsonObj.get("ad_traffic_by_keywords").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("ad_traffic_by_keywords"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("ad_traffic_by_keywords"));
       }
       // validate the optional field `keywords_for_keywords`
       if (jsonObj.get("keywords_for_keywords") != null && !jsonObj.get("keywords_for_keywords").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
       }
       // validate the optional field `keywords_for_site`
       if (jsonObj.get("keywords_for_site") != null && !jsonObj.get("keywords_for_site").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
       }
       // validate the optional field `search_volume`
       if (jsonObj.get("search_volume") != null && !jsonObj.get("search_volume").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search_volume"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search_volume"));
       }
       // validate the optional field `status`
       if (jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) {

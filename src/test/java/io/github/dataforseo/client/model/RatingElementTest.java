@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -36,22 +37,6 @@ public class RatingElementTest {
     @Test
     public void testRatingElement() {
         // TODO: test RatingElement
-    }
-
-    /**
-     * Test the property 'type'
-     */
-    @Test
-    public void typeTest() {
-        // TODO: test type
-    }
-
-    /**
-     * Test the property 'position'
-     */
-    @Test
-    public void positionTest() {
-        // TODO: test position
     }
 
     /**
@@ -84,6 +69,22 @@ public class RatingElementTest {
     @Test
     public void ratingMaxTest() {
         // TODO: test ratingMax
+    }
+
+    /**
+     * Test the property 'type'
+     */
+    @Test
+    public void typeTest() {
+        // TODO: test type
+    }
+
+    /**
+     * Test the property 'position'
+     */
+    @Test
+    public void positionTest() {
+        // TODO: test position
     }
 
 }

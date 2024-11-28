@@ -18,6 +18,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**businessListingsCategories**](BusinessDataApi.md#businessListingsCategories) | **GET** /v3/business_data/business_listings/categories |  |
 | [**businessListingsCategoriesAggregationLive**](BusinessDataApi.md#businessListingsCategoriesAggregationLive) | **POST** /v3/business_data/business_listings/categories_aggregation/live |  |
 | [**businessListingsSearchLive**](BusinessDataApi.md#businessListingsSearchLive) | **POST** /v3/business_data/business_listings/search/live |  |
+| [**googleExtendedReviewsTaskGet**](BusinessDataApi.md#googleExtendedReviewsTaskGet) | **GET** /v3/business_data/google/extended_reviews/task_get/{id} |  |
+| [**googleExtendedReviewsTaskPost**](BusinessDataApi.md#googleExtendedReviewsTaskPost) | **POST** /v3/business_data/google/extended_reviews/task_post |  |
+| [**googleExtendedReviewsTasksReady**](BusinessDataApi.md#googleExtendedReviewsTasksReady) | **GET** /v3/business_data/google/extended_reviews/tasks_ready |  |
 | [**googleHotelInfoLiveAdvanced**](BusinessDataApi.md#googleHotelInfoLiveAdvanced) | **POST** /v3/business_data/google/hotel_info/live/advanced |  |
 | [**googleHotelInfoLiveHtml**](BusinessDataApi.md#googleHotelInfoLiveHtml) | **POST** /v3/business_data/google/hotel_info/live/html |  |
 | [**googleHotelInfoTaskGetAdvanced**](BusinessDataApi.md#googleHotelInfoTaskGetAdvanced) | **GET** /v3/business_data/google/hotel_info/task_get/advanced/{id} |  |
@@ -65,7 +68,7 @@ All URIs are relative to *https://api.dataforseo.com*
 
 
 
-You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
 
 ### Example
 ```java
@@ -129,7 +132,7 @@ This endpoint does not need any parameter.
 
 
 
-By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
+By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
 
 ### Example
 ```java
@@ -979,6 +982,206 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="googleExtendedReviewsTaskGet"></a>
+# **googleExtendedReviewsTaskGet**
+> BusinessDataGoogleExtendedReviewsTaskGetResponseInfo googleExtendedReviewsTaskGet(id)
+
+
+
+The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      BusinessDataGoogleExtendedReviewsTaskGetResponseInfo result = apiInstance.googleExtendedReviewsTaskGet(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleExtendedReviewsTaskGet");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+### Return type
+
+[**BusinessDataGoogleExtendedReviewsTaskGetResponseInfo**](BusinessDataGoogleExtendedReviewsTaskGetResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleExtendedReviewsTaskPost"></a>
+# **googleExtendedReviewsTaskPost**
+> BusinessDataGoogleExtendedReviewsTaskPostResponseInfo googleExtendedReviewsTaskPost(businessDataGoogleExtendedReviewsTaskPostRequestInfo)
+
+
+
+‌‌ This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> businessDataGoogleExtendedReviewsTaskPostRequestInfo = Arrays.asList(); // List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> | 
+    try {
+      BusinessDataGoogleExtendedReviewsTaskPostResponseInfo result = apiInstance.googleExtendedReviewsTaskPost(businessDataGoogleExtendedReviewsTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleExtendedReviewsTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **businessDataGoogleExtendedReviewsTaskPostRequestInfo** | [**List&lt;BusinessDataGoogleExtendedReviewsTaskPostRequestInfo&gt;**](BusinessDataGoogleExtendedReviewsTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**BusinessDataGoogleExtendedReviewsTaskPostResponseInfo**](BusinessDataGoogleExtendedReviewsTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleExtendedReviewsTasksReady"></a>
+# **googleExtendedReviewsTasksReady**
+> BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo googleExtendedReviewsTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.BusinessDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
+    try {
+      BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo result = apiInstance.googleExtendedReviewsTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling BusinessDataApi#googleExtendedReviewsTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo**](BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="googleHotelInfoLiveAdvanced"></a>
 # **googleHotelInfoLiveAdvanced**
 > BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo googleHotelInfoLiveAdvanced(businessDataGoogleHotelInfoLiveAdvancedRequestInfo)
@@ -1212,7 +1415,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = "6940a9df-63f9-4ec2-a1f0-af4bbb419eb2"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "fbf6a066-4a3c-4e36-8d4c-e6ce5454e6c9"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo result = apiInstance.googleHotelInfoTaskGetHtml(id);
       System.out.println(result);
@@ -1653,7 +1856,7 @@ This endpoint does not need any parameter.
 
 <a id="googleMyBusinessInfoLive"></a>
 # **googleMyBusinessInfoLive**
-> BusinessDataGoogleMyBusinessInfoLiveResponseInfo googleMyBusinessInfoLive(businessDataTaskRequestInfo)
+> BusinessDataGoogleMyBusinessInfoLiveResponseInfo googleMyBusinessInfoLive(businessDataGoogleMyBusinessInfoLiveRequestInfo)
 
 
 
@@ -1680,9 +1883,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo = Arrays.asList(); // List<BusinessDataTaskRequestInfo> | 
+    List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> businessDataGoogleMyBusinessInfoLiveRequestInfo = Arrays.asList(); // List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> | 
     try {
-      BusinessDataGoogleMyBusinessInfoLiveResponseInfo result = apiInstance.googleMyBusinessInfoLive(businessDataTaskRequestInfo);
+      BusinessDataGoogleMyBusinessInfoLiveResponseInfo result = apiInstance.googleMyBusinessInfoLive(businessDataGoogleMyBusinessInfoLiveRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleMyBusinessInfoLive");
@@ -1699,7 +1902,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **businessDataTaskRequestInfo** | [**List&lt;BusinessDataTaskRequestInfo&gt;**](BusinessDataTaskRequestInfo.md)|  | [optional] |
+| **businessDataGoogleMyBusinessInfoLiveRequestInfo** | [**List&lt;BusinessDataGoogleMyBusinessInfoLiveRequestInfo&gt;**](BusinessDataGoogleMyBusinessInfoLiveRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1789,7 +1992,7 @@ public class Example {
 
 <a id="googleMyBusinessInfoTaskPost"></a>
 # **googleMyBusinessInfoTaskPost**
-> BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo googleMyBusinessInfoTaskPost(businessDataTaskRequestInfo)
+> BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo googleMyBusinessInfoTaskPost(businessDataGoogleMyBusinessInfoTaskPostRequestInfo)
 
 
 
@@ -1816,9 +2019,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo = Arrays.asList(); // List<BusinessDataTaskRequestInfo> | 
+    List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> businessDataGoogleMyBusinessInfoTaskPostRequestInfo = Arrays.asList(); // List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> | 
     try {
-      BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo result = apiInstance.googleMyBusinessInfoTaskPost(businessDataTaskRequestInfo);
+      BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo result = apiInstance.googleMyBusinessInfoTaskPost(businessDataGoogleMyBusinessInfoTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleMyBusinessInfoTaskPost");
@@ -1835,7 +2038,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **businessDataTaskRequestInfo** | [**List&lt;BusinessDataTaskRequestInfo&gt;**](BusinessDataTaskRequestInfo.md)|  | [optional] |
+| **businessDataGoogleMyBusinessInfoTaskPostRequestInfo** | [**List&lt;BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo&gt;**](BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 

@@ -27,6 +27,12 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**bingOrganicTaskPost**](SerpApi.md#bingOrganicTaskPost) | **POST** /v3/serp/bing/organic/task_post |  |
 | [**bingOrganicTasksFixed**](SerpApi.md#bingOrganicTasksFixed) | **GET** /v3/serp/bing/organic/tasks_fixed |  |
 | [**bingOrganicTasksReady**](SerpApi.md#bingOrganicTasksReady) | **GET** /v3/serp/bing/organic/tasks_ready |  |
+| [**googleAdsAdvertisersTaskGetAdvanced**](SerpApi.md#googleAdsAdvertisersTaskGetAdvanced) | **GET** /v3/serp/google/ads_advertisers/task_get/advanced/{id} |  |
+| [**googleAdsAdvertisersTaskPost**](SerpApi.md#googleAdsAdvertisersTaskPost) | **POST** /v3/serp/google/ads_advertisers/task_post |  |
+| [**googleAdsAdvertisersTasksReady**](SerpApi.md#googleAdsAdvertisersTasksReady) | **GET** /v3/serp/google/ads_advertisers/tasks_ready |  |
+| [**googleAdsSearchTaskGetAdvanced**](SerpApi.md#googleAdsSearchTaskGetAdvanced) | **GET** /v3/serp/google/ads_search/task_get/advanced/{id} |  |
+| [**googleAdsSearchTaskPost**](SerpApi.md#googleAdsSearchTaskPost) | **POST** /v3/serp/google/ads_search/task_post |  |
+| [**googleAdsSearchTasksReady**](SerpApi.md#googleAdsSearchTasksReady) | **GET** /v3/serp/google/ads_search/tasks_ready |  |
 | [**googleAutocompleteLiveAdvanced**](SerpApi.md#googleAutocompleteLiveAdvanced) | **POST** /v3/serp/google/autocomplete/live/advanced |  |
 | [**googleAutocompleteTaskGetAdvanced**](SerpApi.md#googleAutocompleteTaskGetAdvanced) | **GET** /v3/serp/google/autocomplete/task_get/advanced/{id} |  |
 | [**googleAutocompleteTaskPost**](SerpApi.md#googleAutocompleteTaskPost) | **POST** /v3/serp/google/autocomplete/task_post |  |
@@ -105,6 +111,8 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**serpBingLocations**](SerpApi.md#serpBingLocations) | **GET** /v3/serp/bing/locations |  |
 | [**serpBingLocationsCountry**](SerpApi.md#serpBingLocationsCountry) | **GET** /v3/serp/bing/locations/{country} |  |
 | [**serpErrors**](SerpApi.md#serpErrors) | **POST** /v3/serp/errors |  |
+| [**serpGoogleAdsAdvertisersLocations**](SerpApi.md#serpGoogleAdsAdvertisersLocations) | **GET** /v3/serp/google/ads_advertisers/locations |  |
+| [**serpGoogleAdsSearchLocations**](SerpApi.md#serpGoogleAdsSearchLocations) | **GET** /v3/serp/google/ads_search/locations |  |
 | [**serpGoogleLanguages**](SerpApi.md#serpGoogleLanguages) | **GET** /v3/serp/google/languages |  |
 | [**serpGoogleLocations**](SerpApi.md#serpGoogleLocations) | **GET** /v3/serp/google/locations |  |
 | [**serpGoogleLocationsCountry**](SerpApi.md#serpGoogleLocationsCountry) | **GET** /v3/serp/google/locations/{country} |  |
@@ -316,7 +324,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "ee51356a-bfd9-4751-a1be-4c886ec437cf"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "2a56a956-7888-4e4a-9ac8-8b8bd04b844f"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBaiduOrganicTaskGetHtmlResponseInfo result = apiInstance.baiduOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -621,7 +629,7 @@ This endpoint does not need any parameter.
 
 <a id="bingLocalPackLiveHtml"></a>
 # **bingLocalPackLiveHtml**
-> SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml(serpTaskRequestInfo)
+> SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml(serpBingLocalPackLiveHtmlRequestInfo)
 
 
 
@@ -648,9 +656,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpBingLocalPackLiveHtmlRequestInfo> serpBingLocalPackLiveHtmlRequestInfo = Arrays.asList(); // List<SerpBingLocalPackLiveHtmlRequestInfo> | 
     try {
-      SerpBingLocalPackLiveHtmlResponseInfo result = apiInstance.bingLocalPackLiveHtml(serpTaskRequestInfo);
+      SerpBingLocalPackLiveHtmlResponseInfo result = apiInstance.bingLocalPackLiveHtml(serpBingLocalPackLiveHtmlRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingLocalPackLiveHtml");
@@ -667,7 +675,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpBingLocalPackLiveHtmlRequestInfo** | [**List&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;**](SerpBingLocalPackLiveHtmlRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -689,7 +697,7 @@ public class Example {
 
 <a id="bingLocalPackLiveRegular"></a>
 # **bingLocalPackLiveRegular**
-> SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular(serpTaskRequestInfo)
+> SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular(serpBingLocalPackLiveRegularRequestInfo)
 
 
 
@@ -716,9 +724,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpBingLocalPackLiveRegularRequestInfo> serpBingLocalPackLiveRegularRequestInfo = Arrays.asList(); // List<SerpBingLocalPackLiveRegularRequestInfo> | 
     try {
-      SerpBingLocalPackLiveRegularResponseInfo result = apiInstance.bingLocalPackLiveRegular(serpTaskRequestInfo);
+      SerpBingLocalPackLiveRegularResponseInfo result = apiInstance.bingLocalPackLiveRegular(serpBingLocalPackLiveRegularRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingLocalPackLiveRegular");
@@ -735,7 +743,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpBingLocalPackLiveRegularRequestInfo** | [**List&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;**](SerpBingLocalPackLiveRegularRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -784,7 +792,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "da2ad4fe-0812-448c-9a2a-8d7a9b29b89a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "e74b0d8b-c0ce-49cf-8eda-80ef88eaaecf"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingLocalPackTaskGetHtmlResponseInfo result = apiInstance.bingLocalPackTaskGetHtml(id);
       System.out.println(result);
@@ -893,7 +901,7 @@ public class Example {
 
 <a id="bingLocalPackTaskPost"></a>
 # **bingLocalPackTaskPost**
-> SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost(serpTaskRequestInfo)
+> SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost(serpBingLocalPackTaskPostRequestInfo)
 
 
 
@@ -920,9 +928,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpBingLocalPackTaskPostRequestInfo> serpBingLocalPackTaskPostRequestInfo = Arrays.asList(); // List<SerpBingLocalPackTaskPostRequestInfo> | 
     try {
-      SerpBingLocalPackTaskPostResponseInfo result = apiInstance.bingLocalPackTaskPost(serpTaskRequestInfo);
+      SerpBingLocalPackTaskPostResponseInfo result = apiInstance.bingLocalPackTaskPost(serpBingLocalPackTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingLocalPackTaskPost");
@@ -939,7 +947,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpBingLocalPackTaskPostRequestInfo** | [**List&lt;SerpBingLocalPackTaskPostRequestInfo&gt;**](SerpBingLocalPackTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1089,7 +1097,7 @@ This endpoint does not need any parameter.
 
 <a id="bingOrganicLiveAdvanced"></a>
 # **bingOrganicLiveAdvanced**
-> SerpBingOrganicLiveAdvancedResponseInfo bingOrganicLiveAdvanced(serpTaskRequestInfo)
+> SerpBingOrganicLiveAdvancedResponseInfo bingOrganicLiveAdvanced(serpBingOrganicLiveAdvancedRequestInfo)
 
 
 
@@ -1116,9 +1124,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpBingOrganicLiveAdvancedRequestInfo> serpBingOrganicLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpBingOrganicLiveAdvancedRequestInfo> | 
     try {
-      SerpBingOrganicLiveAdvancedResponseInfo result = apiInstance.bingOrganicLiveAdvanced(serpTaskRequestInfo);
+      SerpBingOrganicLiveAdvancedResponseInfo result = apiInstance.bingOrganicLiveAdvanced(serpBingOrganicLiveAdvancedRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicLiveAdvanced");
@@ -1135,7 +1143,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpBingOrganicLiveAdvancedRequestInfo** | [**List&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;**](SerpBingOrganicLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1157,7 +1165,7 @@ public class Example {
 
 <a id="bingOrganicLiveHtml"></a>
 # **bingOrganicLiveHtml**
-> SerpBingOrganicLiveHtmlResponseInfo bingOrganicLiveHtml(serpTaskRequestInfo)
+> SerpBingOrganicLiveHtmlResponseInfo bingOrganicLiveHtml(serpBingOrganicLiveHtmlRequestInfo)
 
 
 
@@ -1184,9 +1192,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpBingOrganicLiveHtmlRequestInfo> serpBingOrganicLiveHtmlRequestInfo = Arrays.asList(); // List<SerpBingOrganicLiveHtmlRequestInfo> | 
     try {
-      SerpBingOrganicLiveHtmlResponseInfo result = apiInstance.bingOrganicLiveHtml(serpTaskRequestInfo);
+      SerpBingOrganicLiveHtmlResponseInfo result = apiInstance.bingOrganicLiveHtml(serpBingOrganicLiveHtmlRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicLiveHtml");
@@ -1203,7 +1211,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpBingOrganicLiveHtmlRequestInfo** | [**List&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;**](SerpBingOrganicLiveHtmlRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1225,7 +1233,7 @@ public class Example {
 
 <a id="bingOrganicLiveRegular"></a>
 # **bingOrganicLiveRegular**
-> SerpBingOrganicLiveRegularResponseInfo bingOrganicLiveRegular(serpTaskRequestInfo)
+> SerpBingOrganicLiveRegularResponseInfo bingOrganicLiveRegular(serpBingOrganicLiveRegularRequestInfo)
 
 
 
@@ -1252,9 +1260,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpBingOrganicLiveRegularRequestInfo> serpBingOrganicLiveRegularRequestInfo = Arrays.asList(); // List<SerpBingOrganicLiveRegularRequestInfo> | 
     try {
-      SerpBingOrganicLiveRegularResponseInfo result = apiInstance.bingOrganicLiveRegular(serpTaskRequestInfo);
+      SerpBingOrganicLiveRegularResponseInfo result = apiInstance.bingOrganicLiveRegular(serpBingOrganicLiveRegularRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicLiveRegular");
@@ -1271,7 +1279,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpBingOrganicLiveRegularRequestInfo** | [**List&lt;SerpBingOrganicLiveRegularRequestInfo&gt;**](SerpBingOrganicLiveRegularRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1388,7 +1396,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "1a7efdc0-815e-458f-ae8e-96042ad10ee0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "bc3173b3-76d0-4842-8af1-357d2857867d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingOrganicTaskGetHtmlResponseInfo result = apiInstance.bingOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -1497,7 +1505,7 @@ public class Example {
 
 <a id="bingOrganicTaskPost"></a>
 # **bingOrganicTaskPost**
-> SerpBingOrganicTaskPostResponseInfo bingOrganicTaskPost(serpTaskRequestInfo)
+> SerpBingOrganicTaskPostResponseInfo bingOrganicTaskPost(serpBingOrganicTaskPostRequestInfo)
 
 
 
@@ -1524,9 +1532,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpBingOrganicTaskPostRequestInfo> serpBingOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpBingOrganicTaskPostRequestInfo> | 
     try {
-      SerpBingOrganicTaskPostResponseInfo result = apiInstance.bingOrganicTaskPost(serpTaskRequestInfo);
+      SerpBingOrganicTaskPostResponseInfo result = apiInstance.bingOrganicTaskPost(serpBingOrganicTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicTaskPost");
@@ -1543,7 +1551,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpBingOrganicTaskPostRequestInfo** | [**List&lt;SerpBingOrganicTaskPostRequestInfo&gt;**](SerpBingOrganicTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1676,6 +1684,406 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**SerpBingOrganicTasksReadyResponseInfo**](SerpBingOrganicTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAdsAdvertisersTaskGetAdvanced"></a>
+# **googleAdsAdvertisersTaskGetAdvanced**
+> SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo googleAdsAdvertisersTaskGetAdvanced(id)
+
+
+
+Description of the fields for sending a request: for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo result = apiInstance.googleAdsAdvertisersTaskGetAdvanced(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+### Return type
+
+[**SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo**](SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAdsAdvertisersTaskPost"></a>
+# **googleAdsAdvertisersTaskPost**
+> SerpGoogleAdsAdvertisersTaskPostResponseInfo googleAdsAdvertisersTaskPost(serpGoogleAdsAdvertisersTaskPostRequestInfo)
+
+
+
+Google Ads Advertisers provides information on advertisers that run campaigns on Google Ads based on the Ads Transparency platform. ‌‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleAdsAdvertisersTaskPostRequestInfo> serpGoogleAdsAdvertisersTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleAdsAdvertisersTaskPostRequestInfo> | 
+    try {
+      SerpGoogleAdsAdvertisersTaskPostResponseInfo result = apiInstance.googleAdsAdvertisersTaskPost(serpGoogleAdsAdvertisersTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleAdsAdvertisersTaskPostRequestInfo** | [**List&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;**](SerpGoogleAdsAdvertisersTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleAdsAdvertisersTaskPostResponseInfo**](SerpGoogleAdsAdvertisersTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAdsAdvertisersTasksReady"></a>
+# **googleAdsAdvertisersTasksReady**
+> SerpGoogleAdsAdvertisersTasksReadyResponseInfo googleAdsAdvertisersTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpGoogleAdsAdvertisersTasksReadyResponseInfo result = apiInstance.googleAdsAdvertisersTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpGoogleAdsAdvertisersTasksReadyResponseInfo**](SerpGoogleAdsAdvertisersTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAdsSearchTaskGetAdvanced"></a>
+# **googleAdsSearchTaskGetAdvanced**
+> SerpGoogleAdsSearchTaskGetAdvancedResponseInfo googleAdsSearchTaskGetAdvanced(id)
+
+
+
+Description of the fields for sending a request: for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_get/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      SerpGoogleAdsSearchTaskGetAdvancedResponseInfo result = apiInstance.googleAdsSearchTaskGetAdvanced(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsSearchTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+### Return type
+
+[**SerpGoogleAdsSearchTaskGetAdvancedResponseInfo**](SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAdsSearchTaskPost"></a>
+# **googleAdsSearchTaskPost**
+> SerpGoogleAdsSearchTaskPostResponseInfo googleAdsSearchTaskPost(serpGoogleAdsSearchTaskPostRequestInfo)
+
+
+
+Google Ads Search provides information on ads that are run by advertisers on Google Ads. Information is based on the Ads Transparency platform and adapted for the convenience of DataForSEO users. ‌‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleAdsSearchTaskPostRequestInfo> serpGoogleAdsSearchTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleAdsSearchTaskPostRequestInfo> | 
+    try {
+      SerpGoogleAdsSearchTaskPostResponseInfo result = apiInstance.googleAdsSearchTaskPost(serpGoogleAdsSearchTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsSearchTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleAdsSearchTaskPostRequestInfo** | [**List&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;**](SerpGoogleAdsSearchTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleAdsSearchTaskPostResponseInfo**](SerpGoogleAdsSearchTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAdsSearchTasksReady"></a>
+# **googleAdsSearchTasksReady**
+> SerpGoogleAdsSearchTasksReadyResponseInfo googleAdsSearchTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpGoogleAdsSearchTasksReadyResponseInfo result = apiInstance.googleAdsSearchTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsSearchTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpGoogleAdsSearchTasksReadyResponseInfo**](SerpGoogleAdsSearchTasksReadyResponseInfo.md)
 
 ### Authorization
 
@@ -3021,7 +3429,7 @@ This endpoint does not need any parameter.
 
 <a id="googleImagesLiveAdvanced"></a>
 # **googleImagesLiveAdvanced**
-> SerpGoogleImagesLiveAdvancedResponseInfo googleImagesLiveAdvanced(serpTaskRequestInfo)
+> SerpGoogleImagesLiveAdvancedResponseInfo googleImagesLiveAdvanced(serpGoogleImagesLiveAdvancedRequestInfo)
 
 
 
@@ -3048,9 +3456,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleImagesLiveAdvancedRequestInfo> serpGoogleImagesLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleImagesLiveAdvancedRequestInfo> | 
     try {
-      SerpGoogleImagesLiveAdvancedResponseInfo result = apiInstance.googleImagesLiveAdvanced(serpTaskRequestInfo);
+      SerpGoogleImagesLiveAdvancedResponseInfo result = apiInstance.googleImagesLiveAdvanced(serpGoogleImagesLiveAdvancedRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleImagesLiveAdvanced");
@@ -3067,7 +3475,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleImagesLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;**](SerpGoogleImagesLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -3089,7 +3497,7 @@ public class Example {
 
 <a id="googleImagesLiveHtml"></a>
 # **googleImagesLiveHtml**
-> SerpGoogleImagesLiveHtmlResponseInfo googleImagesLiveHtml(serpTaskRequestInfo)
+> SerpGoogleImagesLiveHtmlResponseInfo googleImagesLiveHtml(serpGoogleImagesLiveHtmlRequestInfo)
 
 
 
@@ -3116,9 +3524,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleImagesLiveHtmlRequestInfo> serpGoogleImagesLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleImagesLiveHtmlRequestInfo> | 
     try {
-      SerpGoogleImagesLiveHtmlResponseInfo result = apiInstance.googleImagesLiveHtml(serpTaskRequestInfo);
+      SerpGoogleImagesLiveHtmlResponseInfo result = apiInstance.googleImagesLiveHtml(serpGoogleImagesLiveHtmlRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleImagesLiveHtml");
@@ -3135,7 +3543,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleImagesLiveHtmlRequestInfo** | [**List&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;**](SerpGoogleImagesLiveHtmlRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -3252,7 +3660,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "84745fc0-c3e8-4f4a-89e6-2e01f4d9803d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "a7a82827-1700-4ab6-9e14-2fe0946b631a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleImagesTaskGetHtmlResponseInfo result = apiInstance.googleImagesTaskGetHtml(id);
       System.out.println(result);
@@ -3293,7 +3701,7 @@ public class Example {
 
 <a id="googleImagesTaskPost"></a>
 # **googleImagesTaskPost**
-> SerpGoogleImagesTaskPostResponseInfo googleImagesTaskPost(serpTaskRequestInfo)
+> SerpGoogleImagesTaskPostResponseInfo googleImagesTaskPost(serpGoogleImagesTaskPostRequestInfo)
 
 
 
@@ -3320,9 +3728,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleImagesTaskPostRequestInfo> serpGoogleImagesTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleImagesTaskPostRequestInfo> | 
     try {
-      SerpGoogleImagesTaskPostResponseInfo result = apiInstance.googleImagesTaskPost(serpTaskRequestInfo);
+      SerpGoogleImagesTaskPostResponseInfo result = apiInstance.googleImagesTaskPost(serpGoogleImagesTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleImagesTaskPost");
@@ -3339,7 +3747,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleImagesTaskPostRequestInfo** | [**List&lt;SerpGoogleImagesTaskPostRequestInfo&gt;**](SerpGoogleImagesTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -3584,7 +3992,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "2ae35c1a-8ac8-4fac-80db-112c1cde306e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "5246628f-8f75-4086-b802-e10a1e1a4a45"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleJobsTaskGetHtmlResponseInfo result = apiInstance.googleJobsTaskGetHtml(id);
       System.out.println(result);
@@ -4052,7 +4460,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "907571f6-794d-4a1f-b176-50f379eaa8d6"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "6aaadcd0-2a90-4a9a-af8c-3044fa7578d1"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleLocalFinderTaskGetHtmlResponseInfo result = apiInstance.googleLocalFinderTaskGetHtml(id);
       System.out.println(result);
@@ -4621,7 +5029,7 @@ This endpoint does not need any parameter.
 
 <a id="googleNewsLiveAdvanced"></a>
 # **googleNewsLiveAdvanced**
-> SerpGoogleNewsLiveAdvancedResponseInfo googleNewsLiveAdvanced(serpTaskRequestInfo)
+> SerpGoogleNewsLiveAdvancedResponseInfo googleNewsLiveAdvanced(serpGoogleNewsLiveAdvancedRequestInfo)
 
 
 
@@ -4648,9 +5056,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleNewsLiveAdvancedRequestInfo> serpGoogleNewsLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleNewsLiveAdvancedRequestInfo> | 
     try {
-      SerpGoogleNewsLiveAdvancedResponseInfo result = apiInstance.googleNewsLiveAdvanced(serpTaskRequestInfo);
+      SerpGoogleNewsLiveAdvancedResponseInfo result = apiInstance.googleNewsLiveAdvanced(serpGoogleNewsLiveAdvancedRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleNewsLiveAdvanced");
@@ -4667,7 +5075,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleNewsLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;**](SerpGoogleNewsLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -4689,7 +5097,7 @@ public class Example {
 
 <a id="googleNewsLiveHtml"></a>
 # **googleNewsLiveHtml**
-> SerpGoogleNewsLiveHtmlResponseInfo googleNewsLiveHtml(serpTaskRequestInfo)
+> SerpGoogleNewsLiveHtmlResponseInfo googleNewsLiveHtml(serpGoogleNewsLiveHtmlRequestInfo)
 
 
 
@@ -4716,9 +5124,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleNewsLiveHtmlRequestInfo> serpGoogleNewsLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleNewsLiveHtmlRequestInfo> | 
     try {
-      SerpGoogleNewsLiveHtmlResponseInfo result = apiInstance.googleNewsLiveHtml(serpTaskRequestInfo);
+      SerpGoogleNewsLiveHtmlResponseInfo result = apiInstance.googleNewsLiveHtml(serpGoogleNewsLiveHtmlRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleNewsLiveHtml");
@@ -4735,7 +5143,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleNewsLiveHtmlRequestInfo** | [**List&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;**](SerpGoogleNewsLiveHtmlRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -4852,7 +5260,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "117cb932-9d44-40ad-97a6-d27bdf71221c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "42164457-4244-43b6-ba5c-53570d5bcf39"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleNewsTaskGetHtmlResponseInfo result = apiInstance.googleNewsTaskGetHtml(id);
       System.out.println(result);
@@ -4893,7 +5301,7 @@ public class Example {
 
 <a id="googleNewsTaskPost"></a>
 # **googleNewsTaskPost**
-> SerpGoogleNewsTaskPostResponseInfo googleNewsTaskPost(serpTaskRequestInfo)
+> SerpGoogleNewsTaskPostResponseInfo googleNewsTaskPost(serpGoogleNewsTaskPostRequestInfo)
 
 
 
@@ -4920,9 +5328,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleNewsTaskPostRequestInfo> serpGoogleNewsTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleNewsTaskPostRequestInfo> | 
     try {
-      SerpGoogleNewsTaskPostResponseInfo result = apiInstance.googleNewsTaskPost(serpTaskRequestInfo);
+      SerpGoogleNewsTaskPostResponseInfo result = apiInstance.googleNewsTaskPost(serpGoogleNewsTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleNewsTaskPost");
@@ -4939,7 +5347,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleNewsTaskPostRequestInfo** | [**List&lt;SerpGoogleNewsTaskPostRequestInfo&gt;**](SerpGoogleNewsTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -5157,7 +5565,7 @@ public class Example {
 
 <a id="googleOrganicLiveHtml"></a>
 # **googleOrganicLiveHtml**
-> SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml(serpTaskRequestInfo)
+> SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml(serpGoogleOrganicLiveHtmlRequestInfo)
 
 
 
@@ -5184,9 +5592,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleOrganicLiveHtmlRequestInfo> serpGoogleOrganicLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicLiveHtmlRequestInfo> | 
     try {
-      SerpGoogleOrganicLiveHtmlResponseInfo result = apiInstance.googleOrganicLiveHtml(serpTaskRequestInfo);
+      SerpGoogleOrganicLiveHtmlResponseInfo result = apiInstance.googleOrganicLiveHtml(serpGoogleOrganicLiveHtmlRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicLiveHtml");
@@ -5203,7 +5611,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleOrganicLiveHtmlRequestInfo** | [**List&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;**](SerpGoogleOrganicLiveHtmlRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -5388,7 +5796,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "2cac3bf6-40b8-4572-a1ea-0e6b55269e48"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "acc0fc8d-60ea-4311-8f0c-c8393c3e28fd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleOrganicTaskGetHtmlResponseInfo result = apiInstance.googleOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -5497,7 +5905,7 @@ public class Example {
 
 <a id="googleOrganicTaskPost"></a>
 # **googleOrganicTaskPost**
-> SerpGoogleOrganicTaskPostResponseInfo googleOrganicTaskPost(serpTaskRequestInfo)
+> SerpGoogleOrganicTaskPostResponseInfo googleOrganicTaskPost(serpGoogleOrganicTaskPostRequestInfo)
 
 
 
@@ -5524,9 +5932,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpGoogleOrganicTaskPostRequestInfo> serpGoogleOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicTaskPostRequestInfo> | 
     try {
-      SerpGoogleOrganicTaskPostResponseInfo result = apiInstance.googleOrganicTaskPost(serpTaskRequestInfo);
+      SerpGoogleOrganicTaskPostResponseInfo result = apiInstance.googleOrganicTaskPost(serpGoogleOrganicTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicTaskPost");
@@ -5543,7 +5951,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpGoogleOrganicTaskPostRequestInfo** | [**List&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;**](SerpGoogleOrganicTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -6052,7 +6460,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "efb61aed-3d34-4f42-b62e-b4a35d6e8504"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "f313ce1b-5ed8-41fe-9030-6dbde0924755"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpNaverOrganicTaskGetHtmlResponseInfo result = apiInstance.naverOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -6161,7 +6569,7 @@ public class Example {
 
 <a id="naverOrganicTaskPost"></a>
 # **naverOrganicTaskPost**
-> SerpNaverOrganicTaskPostResponseInfo naverOrganicTaskPost(serpTaskRequestInfo)
+> SerpNaverOrganicTaskPostResponseInfo naverOrganicTaskPost(serpNaverOrganicTaskPostRequestInfo)
 
 
 
@@ -6188,9 +6596,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpNaverOrganicTaskPostRequestInfo> serpNaverOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpNaverOrganicTaskPostRequestInfo> | 
     try {
-      SerpNaverOrganicTaskPostResponseInfo result = apiInstance.naverOrganicTaskPost(serpTaskRequestInfo);
+      SerpNaverOrganicTaskPostResponseInfo result = apiInstance.naverOrganicTaskPost(serpNaverOrganicTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#naverOrganicTaskPost");
@@ -6207,7 +6615,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpNaverOrganicTaskPostRequestInfo** | [**List&lt;SerpNaverOrganicTaskPostRequestInfo&gt;**](SerpNaverOrganicTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -6821,7 +7229,7 @@ public class Example {
 
 
 
-By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/errors/?bash&#39;
+By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/errors/?bash&#39;
 
 ### Example
 ```java
@@ -6876,6 +7284,134 @@ public class Example {
 ### HTTP request headers
 
  - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpGoogleAdsAdvertisersLocations"></a>
+# **serpGoogleAdsAdvertisersLocations**
+> SerpGoogleAdsAdvertisersLocationsResponseInfo serpGoogleAdsAdvertisersLocations()
+
+
+
+for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/locations/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpGoogleAdsAdvertisersLocationsResponseInfo result = apiInstance.serpGoogleAdsAdvertisersLocations();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleAdsAdvertisersLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpGoogleAdsAdvertisersLocationsResponseInfo**](SerpGoogleAdsAdvertisersLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpGoogleAdsSearchLocations"></a>
+# **serpGoogleAdsSearchLocations**
+> SerpGoogleAdsSearchLocationsResponseInfo serpGoogleAdsSearchLocations()
+
+
+
+for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/locations/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpGoogleAdsSearchLocationsResponseInfo result = apiInstance.serpGoogleAdsSearchLocations();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleAdsSearchLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpGoogleAdsSearchLocationsResponseInfo**](SerpGoogleAdsSearchLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -7832,7 +8368,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "8f98dd6c-2d4d-44ff-a6f4-f21a29fcfc4d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "3729ca51-2aa0-4b78-9cd9-7455320d420b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpSeznamOrganicTaskGetHtmlResponseInfo result = apiInstance.seznamOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -7941,7 +8477,7 @@ public class Example {
 
 <a id="seznamOrganicTaskPost"></a>
 # **seznamOrganicTaskPost**
-> SerpSeznamOrganicTaskPostResponseInfo seznamOrganicTaskPost(serpTaskRequestInfo)
+> SerpSeznamOrganicTaskPostResponseInfo seznamOrganicTaskPost(serpSeznamOrganicTaskPostRequestInfo)
 
 
 
@@ -7968,9 +8504,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpSeznamOrganicTaskPostRequestInfo> serpSeznamOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpSeznamOrganicTaskPostRequestInfo> | 
     try {
-      SerpSeznamOrganicTaskPostResponseInfo result = apiInstance.seznamOrganicTaskPost(serpTaskRequestInfo);
+      SerpSeznamOrganicTaskPostResponseInfo result = apiInstance.seznamOrganicTaskPost(serpSeznamOrganicTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#seznamOrganicTaskPost");
@@ -7987,7 +8523,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpSeznamOrganicTaskPostRequestInfo** | [**List&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;**](SerpSeznamOrganicTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -8201,7 +8737,7 @@ This endpoint does not need any parameter.
 
 <a id="yahooOrganicLiveAdvanced"></a>
 # **yahooOrganicLiveAdvanced**
-> SerpYahooOrganicLiveAdvancedResponseInfo yahooOrganicLiveAdvanced(serpTaskRequestInfo)
+> SerpYahooOrganicLiveAdvancedResponseInfo yahooOrganicLiveAdvanced(serpYahooOrganicLiveAdvancedRequestInfo)
 
 
 
@@ -8228,9 +8764,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpYahooOrganicLiveAdvancedRequestInfo> serpYahooOrganicLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpYahooOrganicLiveAdvancedRequestInfo> | 
     try {
-      SerpYahooOrganicLiveAdvancedResponseInfo result = apiInstance.yahooOrganicLiveAdvanced(serpTaskRequestInfo);
+      SerpYahooOrganicLiveAdvancedResponseInfo result = apiInstance.yahooOrganicLiveAdvanced(serpYahooOrganicLiveAdvancedRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicLiveAdvanced");
@@ -8247,7 +8783,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpYahooOrganicLiveAdvancedRequestInfo** | [**List&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;**](SerpYahooOrganicLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -8269,7 +8805,7 @@ public class Example {
 
 <a id="yahooOrganicLiveHtml"></a>
 # **yahooOrganicLiveHtml**
-> SerpYahooOrganicLiveHtmlResponseInfo yahooOrganicLiveHtml(serpTaskRequestInfo)
+> SerpYahooOrganicLiveHtmlResponseInfo yahooOrganicLiveHtml(serpYahooOrganicLiveHtmlRequestInfo)
 
 
 
@@ -8296,9 +8832,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpYahooOrganicLiveHtmlRequestInfo> serpYahooOrganicLiveHtmlRequestInfo = Arrays.asList(); // List<SerpYahooOrganicLiveHtmlRequestInfo> | 
     try {
-      SerpYahooOrganicLiveHtmlResponseInfo result = apiInstance.yahooOrganicLiveHtml(serpTaskRequestInfo);
+      SerpYahooOrganicLiveHtmlResponseInfo result = apiInstance.yahooOrganicLiveHtml(serpYahooOrganicLiveHtmlRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicLiveHtml");
@@ -8315,7 +8851,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpYahooOrganicLiveHtmlRequestInfo** | [**List&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;**](SerpYahooOrganicLiveHtmlRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -8337,7 +8873,7 @@ public class Example {
 
 <a id="yahooOrganicLiveRegular"></a>
 # **yahooOrganicLiveRegular**
-> SerpYahooOrganicLiveRegularResponseInfo yahooOrganicLiveRegular(serpTaskRequestInfo)
+> SerpYahooOrganicLiveRegularResponseInfo yahooOrganicLiveRegular(serpYahooOrganicLiveRegularRequestInfo)
 
 
 
@@ -8364,9 +8900,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpYahooOrganicLiveRegularRequestInfo> serpYahooOrganicLiveRegularRequestInfo = Arrays.asList(); // List<SerpYahooOrganicLiveRegularRequestInfo> | 
     try {
-      SerpYahooOrganicLiveRegularResponseInfo result = apiInstance.yahooOrganicLiveRegular(serpTaskRequestInfo);
+      SerpYahooOrganicLiveRegularResponseInfo result = apiInstance.yahooOrganicLiveRegular(serpYahooOrganicLiveRegularRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicLiveRegular");
@@ -8383,7 +8919,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpYahooOrganicLiveRegularRequestInfo** | [**List&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;**](SerpYahooOrganicLiveRegularRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -8500,7 +9036,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "25b02a37-35af-4aaa-a1ea-ecbb33642721"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "933e3a09-e1c9-472d-84b3-e773b1f3142b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpYahooOrganicTaskGetHtmlResponseInfo result = apiInstance.yahooOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -8609,7 +9145,7 @@ public class Example {
 
 <a id="yahooOrganicTaskPost"></a>
 # **yahooOrganicTaskPost**
-> SerpYahooOrganicTaskPostResponseInfo yahooOrganicTaskPost(serpTaskRequestInfo)
+> SerpYahooOrganicTaskPostResponseInfo yahooOrganicTaskPost(serpYahooOrganicTaskPostRequestInfo)
 
 
 
@@ -8636,9 +9172,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpTaskRequestInfo> serpTaskRequestInfo = Arrays.asList(); // List<SerpTaskRequestInfo> | 
+    List<SerpYahooOrganicTaskPostRequestInfo> serpYahooOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpYahooOrganicTaskPostRequestInfo> | 
     try {
-      SerpYahooOrganicTaskPostResponseInfo result = apiInstance.yahooOrganicTaskPost(serpTaskRequestInfo);
+      SerpYahooOrganicTaskPostResponseInfo result = apiInstance.yahooOrganicTaskPost(serpYahooOrganicTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicTaskPost");
@@ -8655,7 +9191,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **serpTaskRequestInfo** | [**List&lt;SerpTaskRequestInfo&gt;**](SerpTaskRequestInfo.md)|  | [optional] |
+| **serpYahooOrganicTaskPostRequestInfo** | [**List&lt;SerpYahooOrganicTaskPostRequestInfo&gt;**](SerpYahooOrganicTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 

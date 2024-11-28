@@ -200,6 +200,14 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'bulkSpamScore'
+     */
+    @Test
+    public void bulkSpamScoreTest() {
+        // TODO: test bulkSpamScore
+    }
+
+    /**
      * Test the property 'bulkPagesSummary'
      */
     @Test
@@ -208,11 +216,11 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'index'
+     * Test the property 'pagesSummaryWithPageInfo'
      */
     @Test
-    public void indexTest() {
-        // TODO: test index
+    public void pagesSummaryWithPageInfoTest() {
+        // TODO: test pagesSummaryWithPageInfo
     }
 
     /**
@@ -224,19 +232,11 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'availableFilters'
+     * Test the property 'index'
      */
     @Test
-    public void availableFiltersTest() {
-        // TODO: test availableFilters
-    }
-
-    /**
-     * Test the property 'bulkSpamScore'
-     */
-    @Test
-    public void bulkSpamScoreTest() {
-        // TODO: test bulkSpamScore
+    public void indexTest() {
+        // TODO: test index
     }
 
     /**
@@ -248,11 +248,11 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'pagesSummaryWithPageInfo'
+     * Test the property 'availableFilters'
      */
     @Test
-    public void pagesSummaryWithPageInfoTest() {
-        // TODO: test pagesSummaryWithPageInfo
+    public void availableFiltersTest() {
+        // TODO: test availableFilters
     }
 
 }

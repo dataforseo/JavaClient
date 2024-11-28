@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixAppDataDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixAppendixDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixBacklinksDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixBusinessDataStatisticsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixContentAnalysisDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixContentGenerationDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;

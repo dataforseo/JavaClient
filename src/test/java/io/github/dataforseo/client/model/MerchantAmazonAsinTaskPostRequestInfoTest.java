@@ -103,6 +103,22 @@ public class MerchantAmazonAsinTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'loadMoreLocalReviews'
+     */
+    @Test
+    public void loadMoreLocalReviewsTest() {
+        // TODO: test loadMoreLocalReviews
+    }
+
+    /**
+     * Test the property 'localReviewsSort'
+     */
+    @Test
+    public void localReviewsSortTest() {
+        // TODO: test localReviewsSort
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

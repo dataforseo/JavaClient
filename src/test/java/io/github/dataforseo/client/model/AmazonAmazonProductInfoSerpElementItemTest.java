@@ -245,4 +245,20 @@ public class AmazonAmazonProductInfoSerpElementItemTest {
         // TODO: test isAvailable
     }
 
+    /**
+     * Test the property 'topLocalReviews'
+     */
+    @Test
+    public void topLocalReviewsTest() {
+        // TODO: test topLocalReviews
+    }
+
+    /**
+     * Test the property 'topGlobalReviews'
+     */
+    @Test
+    public void topGlobalReviewsTest() {
+        // TODO: test topGlobalReviews
+    }
+
 }

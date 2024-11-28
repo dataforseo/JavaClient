@@ -200,6 +200,14 @@ public class AppendixBacklinksLimitsRatesDataInfoTest {
     }
 
     /**
+     * Test the property 'bulkSpamScore'
+     */
+    @Test
+    public void bulkSpamScoreTest() {
+        // TODO: test bulkSpamScore
+    }
+
+    /**
      * Test the property 'bulkPagesSummary'
      */
     @Test

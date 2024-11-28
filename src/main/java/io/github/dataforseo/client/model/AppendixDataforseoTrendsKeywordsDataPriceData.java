@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -49,28 +49,28 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDataforseoTrendsKeywordsDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixDataforseoTrendsKeywordsDataPriceData {
   public static final String SERIALIZED_NAME_DEMOGRAPHY = "demography";
   @SerializedName(SERIALIZED_NAME_DEMOGRAPHY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo demography;
+  private AppendixBingKeywordsDataPriceDataInfo demography;
 
   public static final String SERIALIZED_NAME_EXPLORE = "explore";
   @SerializedName(SERIALIZED_NAME_EXPLORE)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo explore;
+  private AppendixBingKeywordsDataPriceDataInfo explore;
 
   public static final String SERIALIZED_NAME_MERGED_DATA = "merged_data";
   @SerializedName(SERIALIZED_NAME_MERGED_DATA)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo mergedData;
+  private AppendixBingKeywordsDataPriceDataInfo mergedData;
 
   public static final String SERIALIZED_NAME_SUBREGION_INTERESTS = "subregion_interests";
   @SerializedName(SERIALIZED_NAME_SUBREGION_INTERESTS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo subregionInterests;
+  private AppendixBingKeywordsDataPriceDataInfo subregionInterests;
 
   public AppendixDataforseoTrendsKeywordsDataPriceData() {
   }
 
-  public AppendixDataforseoTrendsKeywordsDataPriceData demography(AppendixKeywordBingKeywordsDataPriceDataInfo demography) {
+  public AppendixDataforseoTrendsKeywordsDataPriceData demography(AppendixBingKeywordsDataPriceDataInfo demography) {
     this.demography = demography;
     return this;
   }
@@ -80,16 +80,16 @@ public class AppendixDataforseoTrendsKeywordsDataPriceData {
    * @return demography
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDemography() {
+  public AppendixBingKeywordsDataPriceDataInfo getDemography() {
     return demography;
   }
 
-  public void setDemography(AppendixKeywordBingKeywordsDataPriceDataInfo demography) {
+  public void setDemography(AppendixBingKeywordsDataPriceDataInfo demography) {
     this.demography = demography;
   }
 
 
-  public AppendixDataforseoTrendsKeywordsDataPriceData explore(AppendixKeywordBingKeywordsDataPriceDataInfo explore) {
+  public AppendixDataforseoTrendsKeywordsDataPriceData explore(AppendixBingKeywordsDataPriceDataInfo explore) {
     this.explore = explore;
     return this;
   }
@@ -99,16 +99,16 @@ public class AppendixDataforseoTrendsKeywordsDataPriceData {
    * @return explore
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getExplore() {
+  public AppendixBingKeywordsDataPriceDataInfo getExplore() {
     return explore;
   }
 
-  public void setExplore(AppendixKeywordBingKeywordsDataPriceDataInfo explore) {
+  public void setExplore(AppendixBingKeywordsDataPriceDataInfo explore) {
     this.explore = explore;
   }
 
 
-  public AppendixDataforseoTrendsKeywordsDataPriceData mergedData(AppendixKeywordBingKeywordsDataPriceDataInfo mergedData) {
+  public AppendixDataforseoTrendsKeywordsDataPriceData mergedData(AppendixBingKeywordsDataPriceDataInfo mergedData) {
     this.mergedData = mergedData;
     return this;
   }
@@ -118,16 +118,16 @@ public class AppendixDataforseoTrendsKeywordsDataPriceData {
    * @return mergedData
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getMergedData() {
+  public AppendixBingKeywordsDataPriceDataInfo getMergedData() {
     return mergedData;
   }
 
-  public void setMergedData(AppendixKeywordBingKeywordsDataPriceDataInfo mergedData) {
+  public void setMergedData(AppendixBingKeywordsDataPriceDataInfo mergedData) {
     this.mergedData = mergedData;
   }
 
 
-  public AppendixDataforseoTrendsKeywordsDataPriceData subregionInterests(AppendixKeywordBingKeywordsDataPriceDataInfo subregionInterests) {
+  public AppendixDataforseoTrendsKeywordsDataPriceData subregionInterests(AppendixBingKeywordsDataPriceDataInfo subregionInterests) {
     this.subregionInterests = subregionInterests;
     return this;
   }
@@ -137,11 +137,11 @@ public class AppendixDataforseoTrendsKeywordsDataPriceData {
    * @return subregionInterests
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSubregionInterests() {
+  public AppendixBingKeywordsDataPriceDataInfo getSubregionInterests() {
     return subregionInterests;
   }
 
-  public void setSubregionInterests(AppendixKeywordBingKeywordsDataPriceDataInfo subregionInterests) {
+  public void setSubregionInterests(AppendixBingKeywordsDataPriceDataInfo subregionInterests) {
     this.subregionInterests = subregionInterests;
   }
 
@@ -267,19 +267,19 @@ public class AppendixDataforseoTrendsKeywordsDataPriceData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `demography`
       if (jsonObj.get("demography") != null && !jsonObj.get("demography").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("demography"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("demography"));
       }
       // validate the optional field `explore`
       if (jsonObj.get("explore") != null && !jsonObj.get("explore").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("explore"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("explore"));
       }
       // validate the optional field `merged_data`
       if (jsonObj.get("merged_data") != null && !jsonObj.get("merged_data").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("merged_data"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("merged_data"));
       }
       // validate the optional field `subregion_interests`
       if (jsonObj.get("subregion_interests") != null && !jsonObj.get("subregion_interests").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("subregion_interests"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("subregion_interests"));
       }
   }
 

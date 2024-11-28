@@ -59,19 +59,19 @@ public class AppendixBusinessDataPriceDataTest {
     }
 
     /**
-     * Test the property 'socialMedia'
-     */
-    @Test
-    public void socialMediaTest() {
-        // TODO: test socialMedia
-    }
-
-    /**
      * Test the property 'google'
      */
     @Test
     public void googleTest() {
         // TODO: test google
+    }
+
+    /**
+     * Test the property 'socialMedia'
+     */
+    @Test
+    public void socialMediaTest() {
+        // TODO: test socialMedia
     }
 
     /**

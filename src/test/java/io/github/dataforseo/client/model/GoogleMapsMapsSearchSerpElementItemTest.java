@@ -128,6 +128,14 @@ public class GoogleMapsMapsSearchSerpElementItemTest {
     }
 
     /**
+     * Test the property 'bookOnlineUrl'
+     */
+    @Test
+    public void bookOnlineUrlTest() {
+        // TODO: test bookOnlineUrl
+    }
+
+    /**
      * Test the property 'hotelRating'
      */
     @Test

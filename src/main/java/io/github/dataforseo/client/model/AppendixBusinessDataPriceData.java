@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixBusinessDataPriceData {
   public static final String SERIALIZED_NAME_BUSINESS_LISTINGS = "business_listings";
   @SerializedName(SERIALIZED_NAME_BUSINESS_LISTINGS)
@@ -63,13 +63,13 @@ public class AppendixBusinessDataPriceData {
   @SerializedName(SERIALIZED_NAME_ERRORS)
   private AppendixTaskKeywordsDataPriceDataInfo errors;
 
-  public static final String SERIALIZED_NAME_SOCIAL_MEDIA = "social_media";
-  @SerializedName(SERIALIZED_NAME_SOCIAL_MEDIA)
-  private AppendixSocialMediaBusinessDataPriceData socialMedia;
-
   public static final String SERIALIZED_NAME_GOOGLE = "google";
   @SerializedName(SERIALIZED_NAME_GOOGLE)
   private AppendixGoogleBusinessDataPriceData google;
+
+  public static final String SERIALIZED_NAME_SOCIAL_MEDIA = "social_media";
+  @SerializedName(SERIALIZED_NAME_SOCIAL_MEDIA)
+  private AppendixSocialMediaBusinessDataPriceData socialMedia;
 
   public static final String SERIALIZED_NAME_LANGUAGES = "languages";
   @SerializedName(SERIALIZED_NAME_LANGUAGES)
@@ -136,25 +136,6 @@ public class AppendixBusinessDataPriceData {
   }
 
 
-  public AppendixBusinessDataPriceData socialMedia(AppendixSocialMediaBusinessDataPriceData socialMedia) {
-    this.socialMedia = socialMedia;
-    return this;
-  }
-
-  /**
-   * Get socialMedia
-   * @return socialMedia
-   */
-  @javax.annotation.Nullable
-  public AppendixSocialMediaBusinessDataPriceData getSocialMedia() {
-    return socialMedia;
-  }
-
-  public void setSocialMedia(AppendixSocialMediaBusinessDataPriceData socialMedia) {
-    this.socialMedia = socialMedia;
-  }
-
-
   public AppendixBusinessDataPriceData google(AppendixGoogleBusinessDataPriceData google) {
     this.google = google;
     return this;
@@ -171,6 +152,25 @@ public class AppendixBusinessDataPriceData {
 
   public void setGoogle(AppendixGoogleBusinessDataPriceData google) {
     this.google = google;
+  }
+
+
+  public AppendixBusinessDataPriceData socialMedia(AppendixSocialMediaBusinessDataPriceData socialMedia) {
+    this.socialMedia = socialMedia;
+    return this;
+  }
+
+  /**
+   * Get socialMedia
+   * @return socialMedia
+   */
+  @javax.annotation.Nullable
+  public AppendixSocialMediaBusinessDataPriceData getSocialMedia() {
+    return socialMedia;
+  }
+
+  public void setSocialMedia(AppendixSocialMediaBusinessDataPriceData socialMedia) {
+    this.socialMedia = socialMedia;
   }
 
 
@@ -344,8 +344,8 @@ public class AppendixBusinessDataPriceData {
     AppendixBusinessDataPriceData appendixBusinessDataPriceData = (AppendixBusinessDataPriceData) o;
     return Objects.equals(this.businessListings, appendixBusinessDataPriceData.businessListings) &&
         Objects.equals(this.errors, appendixBusinessDataPriceData.errors) &&
-        Objects.equals(this.socialMedia, appendixBusinessDataPriceData.socialMedia) &&
         Objects.equals(this.google, appendixBusinessDataPriceData.google) &&
+        Objects.equals(this.socialMedia, appendixBusinessDataPriceData.socialMedia) &&
         Objects.equals(this.languages, appendixBusinessDataPriceData.languages) &&
         Objects.equals(this.locations, appendixBusinessDataPriceData.locations) &&
         Objects.equals(this.tripadvisor, appendixBusinessDataPriceData.tripadvisor) &&
@@ -357,7 +357,7 @@ public class AppendixBusinessDataPriceData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(businessListings, errors, socialMedia, google, languages, locations, tripadvisor, trustpilot, yelp, tasksReady, additionalProperties);
+    return Objects.hash(businessListings, errors, google, socialMedia, languages, locations, tripadvisor, trustpilot, yelp, tasksReady, additionalProperties);
   }
 
   @Override
@@ -366,8 +366,8 @@ public class AppendixBusinessDataPriceData {
     sb.append("class AppendixBusinessDataPriceData {\n");
     sb.append("    businessListings: ").append(toIndentedString(businessListings)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
-    sb.append("    socialMedia: ").append(toIndentedString(socialMedia)).append("\n");
     sb.append("    google: ").append(toIndentedString(google)).append("\n");
+    sb.append("    socialMedia: ").append(toIndentedString(socialMedia)).append("\n");
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    tripadvisor: ").append(toIndentedString(tripadvisor)).append("\n");
@@ -399,8 +399,8 @@ public class AppendixBusinessDataPriceData {
     openapiFields = new HashSet<String>();
     openapiFields.add("business_listings");
     openapiFields.add("errors");
-    openapiFields.add("social_media");
     openapiFields.add("google");
+    openapiFields.add("social_media");
     openapiFields.add("languages");
     openapiFields.add("locations");
     openapiFields.add("tripadvisor");
@@ -433,13 +433,13 @@ public class AppendixBusinessDataPriceData {
       if (jsonObj.get("errors") != null && !jsonObj.get("errors").isJsonNull()) {
         AppendixTaskKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("errors"));
       }
-      // validate the optional field `social_media`
-      if (jsonObj.get("social_media") != null && !jsonObj.get("social_media").isJsonNull()) {
-        AppendixSocialMediaBusinessDataPriceData.validateJsonElement(jsonObj.get("social_media"));
-      }
       // validate the optional field `google`
       if (jsonObj.get("google") != null && !jsonObj.get("google").isJsonNull()) {
         AppendixGoogleBusinessDataPriceData.validateJsonElement(jsonObj.get("google"));
+      }
+      // validate the optional field `social_media`
+      if (jsonObj.get("social_media") != null && !jsonObj.get("social_media").isJsonNull()) {
+        AppendixSocialMediaBusinessDataPriceData.validateJsonElement(jsonObj.get("social_media"));
       }
       // validate the optional field `languages`
       if (jsonObj.get("languages") != null && !jsonObj.get("languages").isJsonNull()) {

@@ -13,10 +13,11 @@
 |**checkUrl** | **String** | direct URL to search engine results you can use it to make sure that we provided accurate results |  [optional] |
 |**datetime** | **String** | date and time when the result was received in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 |  [optional] |
 |**spell** | [**SpellInfo**](SpellInfo.md) |  |  [optional] |
+|**refinementChips** | [**RefinementChipsInfo**](RefinementChipsInfo.md) |  |  [optional] |
 |**itemTypes** | **List&lt;String&gt;** | types of search results in SERP contains types of search results (items) found in SERP. possible item type: dataset |  [optional] |
 |**seResultsCount** | **Long** | total number of results in SERP |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;SerpGoogleDatasetInfoAdvancedItem&gt;**](SerpGoogleDatasetInfoAdvancedItem.md) | elements of search results found in SERP |  [optional] |
+|**items** | [**List&lt;SerpGoogleDatasetAdvancedItem&gt;**](SerpGoogleDatasetAdvancedItem.md) | elements of search results found in SERP |  [optional] |
 
 
 

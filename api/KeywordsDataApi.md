@@ -4,6 +4,12 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
+| [**bingAudienceEstimationIndustries**](KeywordsDataApi.md#bingAudienceEstimationIndustries) | **GET** /v3/keywords_data/bing/audience_estimation/industries |  |
+| [**bingAudienceEstimationJobFunctions**](KeywordsDataApi.md#bingAudienceEstimationJobFunctions) | **GET** /v3/keywords_data/bing/audience_estimation/job_functions |  |
+| [**bingAudienceEstimationLive**](KeywordsDataApi.md#bingAudienceEstimationLive) | **POST** /v3/keywords_data/bing/audience_estimation/live |  |
+| [**bingAudienceEstimationTaskGet**](KeywordsDataApi.md#bingAudienceEstimationTaskGet) | **GET** /v3/keywords_data/bing/audience_estimation/task_get/{id} |  |
+| [**bingAudienceEstimationTaskPost**](KeywordsDataApi.md#bingAudienceEstimationTaskPost) | **POST** /v3/keywords_data/bing/audience_estimation/task_post |  |
+| [**bingAudienceEstimationTasksReady**](KeywordsDataApi.md#bingAudienceEstimationTasksReady) | **GET** /v3/keywords_data/bing/audience_estimation/tasks_ready |  |
 | [**bingKeywordPerformanceLive**](KeywordsDataApi.md#bingKeywordPerformanceLive) | **POST** /v3/keywords_data/bing/keyword_performance/live |  |
 | [**bingKeywordPerformanceTaskGet**](KeywordsDataApi.md#bingKeywordPerformanceTaskGet) | **GET** /v3/keywords_data/bing/keyword_performance/task_get/{id} |  |
 | [**bingKeywordPerformanceTaskPost**](KeywordsDataApi.md#bingKeywordPerformanceTaskPost) | **POST** /v3/keywords_data/bing/keyword_performance/task_post |  |
@@ -69,6 +75,402 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**keywordsDataGoogleTrendsLocationsCountry**](KeywordsDataApi.md#keywordsDataGoogleTrendsLocationsCountry) | **GET** /v3/keywords_data/google_trends/locations/{country} |  |
 | [**keywordsDataIdList**](KeywordsDataApi.md#keywordsDataIdList) | **POST** /v3/keywords_data/id_list |  |
 
+
+<a id="bingAudienceEstimationIndustries"></a>
+# **bingAudienceEstimationIndustries**
+> KeywordsDataBingAudienceEstimationIndustriesResponseInfo bingAudienceEstimationIndustries()
+
+
+
+By calling this API you will receive the list of industries with industry_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
+    try {
+      KeywordsDataBingAudienceEstimationIndustriesResponseInfo result = apiInstance.bingAudienceEstimationIndustries();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationIndustries");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**KeywordsDataBingAudienceEstimationIndustriesResponseInfo**](KeywordsDataBingAudienceEstimationIndustriesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingAudienceEstimationJobFunctions"></a>
+# **bingAudienceEstimationJobFunctions**
+> KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo bingAudienceEstimationJobFunctions()
+
+
+
+By calling this API you will receive the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
+    try {
+      KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo result = apiInstance.bingAudienceEstimationJobFunctions();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationJobFunctions");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo**](KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingAudienceEstimationLive"></a>
+# **bingAudienceEstimationLive**
+> KeywordsDataBingAudienceEstimationLiveResponseInfo bingAudienceEstimationLive(keywordsDataBingAudienceEstimationLiveRequestInfo)
+
+
+
+This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
+    List<KeywordsDataBingAudienceEstimationLiveRequestInfo> keywordsDataBingAudienceEstimationLiveRequestInfo = Arrays.asList(); // List<KeywordsDataBingAudienceEstimationLiveRequestInfo> | 
+    try {
+      KeywordsDataBingAudienceEstimationLiveResponseInfo result = apiInstance.bingAudienceEstimationLive(keywordsDataBingAudienceEstimationLiveRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **keywordsDataBingAudienceEstimationLiveRequestInfo** | [**List&lt;KeywordsDataBingAudienceEstimationLiveRequestInfo&gt;**](KeywordsDataBingAudienceEstimationLiveRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**KeywordsDataBingAudienceEstimationLiveResponseInfo**](KeywordsDataBingAudienceEstimationLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingAudienceEstimationTaskGet"></a>
+# **bingAudienceEstimationTaskGet**
+> KeywordsDataBingAudienceEstimationTaskGetResponseInfo bingAudienceEstimationTaskGet(id)
+
+
+
+‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_get/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
+    String id = "8f1ba83d-1ac1-4d27-af64-dfd2d927acbc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      KeywordsDataBingAudienceEstimationTaskGetResponseInfo result = apiInstance.bingAudienceEstimationTaskGet(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationTaskGet");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+### Return type
+
+[**KeywordsDataBingAudienceEstimationTaskGetResponseInfo**](KeywordsDataBingAudienceEstimationTaskGetResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingAudienceEstimationTaskPost"></a>
+# **bingAudienceEstimationTaskPost**
+> KeywordsDataBingAudienceEstimationTaskPostResponseInfo bingAudienceEstimationTaskPost(keywordsDataBingAudienceEstimationTaskPostRequestInfo)
+
+
+
+‌ This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
+    List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> keywordsDataBingAudienceEstimationTaskPostRequestInfo = Arrays.asList(); // List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> | 
+    try {
+      KeywordsDataBingAudienceEstimationTaskPostResponseInfo result = apiInstance.bingAudienceEstimationTaskPost(keywordsDataBingAudienceEstimationTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **keywordsDataBingAudienceEstimationTaskPostRequestInfo** | [**List&lt;KeywordsDataBingAudienceEstimationTaskPostRequestInfo&gt;**](KeywordsDataBingAudienceEstimationTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**KeywordsDataBingAudienceEstimationTaskPostResponseInfo**](KeywordsDataBingAudienceEstimationTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingAudienceEstimationTasksReady"></a>
+# **bingAudienceEstimationTasksReady**
+> KeywordsDataBingAudienceEstimationTasksReadyResponseInfo bingAudienceEstimationTasksReady()
+
+
+
+‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.KeywordsDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
+    try {
+      KeywordsDataBingAudienceEstimationTasksReadyResponseInfo result = apiInstance.bingAudienceEstimationTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**KeywordsDataBingAudienceEstimationTasksReadyResponseInfo**](KeywordsDataBingAudienceEstimationTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
 <a id="bingKeywordPerformanceLive"></a>
 # **bingKeywordPerformanceLive**
@@ -167,7 +569,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "c42d04b2-17d3-40a5-95d1-4d22b866cfaa"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "6545fe18-51e3-45a2-bf7c-43f60af85f2b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordPerformanceTaskGetResponseInfo result = apiInstance.bingKeywordPerformanceTaskGet(id);
       System.out.println(result);
@@ -435,7 +837,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "a6359fde-c464-499a-b04c-83efd5b5baa2"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "ee1671aa-ef1c-4917-b481-67f6b4574deb"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo result = apiInstance.bingKeywordsForKeywordsTaskGet(id);
       System.out.println(result);
@@ -703,7 +1105,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "17757568-5a4e-4783-8002-e1d4857f808b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "f3c5d2da-f9a7-45af-8a9a-a48552b2c42c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingKeywordsForSiteTaskGetResponseInfo result = apiInstance.bingKeywordsForSiteTaskGet(id);
       System.out.println(result);
@@ -971,7 +1373,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "5ca25d53-abc8-4676-afc7-d2b51dd6b982"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "f7863792-a990-46a2-95c4-6e0a411311fa"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo result = apiInstance.bingSearchVolumeHistoryTaskGet(id);
       System.out.println(result);
@@ -1239,7 +1641,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "de362807-d026-4323-87cd-238867d56e97"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "060ece29-f12e-4c8f-9918-d9bc3d38a0dd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataBingSearchVolumeTaskGetResponseInfo result = apiInstance.bingSearchVolumeTaskGet(id);
       System.out.println(result);
@@ -1412,7 +1814,7 @@ This endpoint does not need any parameter.
 
 <a id="clickstreamDataBulkSearchVolumeLive"></a>
 # **clickstreamDataBulkSearchVolumeLive**
-> KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo clickstreamDataBulkSearchVolumeLive(keywordsDataTaskRequestInfo)
+> KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo clickstreamDataBulkSearchVolumeLive(keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo)
 
 
 
@@ -1439,9 +1841,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = Arrays.asList(); // List<KeywordsDataTaskRequestInfo> | 
+    List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo = Arrays.asList(); // List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> | 
     try {
-      KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo result = apiInstance.clickstreamDataBulkSearchVolumeLive(keywordsDataTaskRequestInfo);
+      KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo result = apiInstance.clickstreamDataBulkSearchVolumeLive(keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#clickstreamDataBulkSearchVolumeLive");
@@ -1458,7 +1860,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **keywordsDataTaskRequestInfo** | [**List&lt;KeywordsDataTaskRequestInfo&gt;**](KeywordsDataTaskRequestInfo.md)|  | [optional] |
+| **keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo** | [**List&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo&gt;**](KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1548,7 +1950,7 @@ public class Example {
 
 <a id="clickstreamDataGlobalSearchVolumeLive"></a>
 # **clickstreamDataGlobalSearchVolumeLive**
-> KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo clickstreamDataGlobalSearchVolumeLive(keywordsDataTaskRequestInfo)
+> KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo clickstreamDataGlobalSearchVolumeLive(keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo)
 
 
 
@@ -1575,9 +1977,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = Arrays.asList(); // List<KeywordsDataTaskRequestInfo> | 
+    List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo = Arrays.asList(); // List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> | 
     try {
-      KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo result = apiInstance.clickstreamDataGlobalSearchVolumeLive(keywordsDataTaskRequestInfo);
+      KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo result = apiInstance.clickstreamDataGlobalSearchVolumeLive(keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#clickstreamDataGlobalSearchVolumeLive");
@@ -1594,7 +1996,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **keywordsDataTaskRequestInfo** | [**List&lt;KeywordsDataTaskRequestInfo&gt;**](KeywordsDataTaskRequestInfo.md)|  | [optional] |
+| **keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo** | [**List&lt;KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo&gt;**](KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1983,7 +2385,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "f2eeb7bf-1b84-4fa3-a6ce-c7fe6af2492d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "cb1247bf-50e3-4635-a59b-f2fafe40e6cc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo result = apiInstance.googleAdsAdTrafficByKeywordsTaskGet(id);
       System.out.println(result);
@@ -2156,7 +2558,7 @@ This endpoint does not need any parameter.
 
 <a id="googleAdsKeywordsForKeywordsLive"></a>
 # **googleAdsKeywordsForKeywordsLive**
-> KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo googleAdsKeywordsForKeywordsLive(keywordsDataTaskRequestInfo)
+> KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo googleAdsKeywordsForKeywordsLive(keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo)
 
 
 
@@ -2183,9 +2585,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = Arrays.asList(); // List<KeywordsDataTaskRequestInfo> | 
+    List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo = Arrays.asList(); // List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> | 
     try {
-      KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo result = apiInstance.googleAdsKeywordsForKeywordsLive(keywordsDataTaskRequestInfo);
+      KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo result = apiInstance.googleAdsKeywordsForKeywordsLive(keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsKeywordsForKeywordsLive");
@@ -2202,7 +2604,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **keywordsDataTaskRequestInfo** | [**List&lt;KeywordsDataTaskRequestInfo&gt;**](KeywordsDataTaskRequestInfo.md)|  | [optional] |
+| **keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo** | [**List&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo&gt;**](KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -2251,7 +2653,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "f043ee3c-b153-44d8-a881-b82f46a153d7"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "f438ff4f-4c17-40d3-8918-fbc779453261"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo result = apiInstance.googleAdsKeywordsForKeywordsTaskGet(id);
       System.out.println(result);
@@ -2519,7 +2921,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "db9e5219-15ae-4fd0-9bd5-de22f008ca2e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "8f6f1376-14bc-42d0-ba48-d62b56567a58"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo result = apiInstance.googleAdsKeywordsForSiteTaskGet(id);
       System.out.println(result);
@@ -2692,7 +3094,7 @@ This endpoint does not need any parameter.
 
 <a id="googleAdsSearchVolumeLive"></a>
 # **googleAdsSearchVolumeLive**
-> KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo googleAdsSearchVolumeLive(keywordsDataTaskRequestInfo)
+> KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo googleAdsSearchVolumeLive(keywordsDataGoogleAdsSearchVolumeLiveRequestInfo)
 
 
 
@@ -2719,9 +3121,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = Arrays.asList(); // List<KeywordsDataTaskRequestInfo> | 
+    List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> keywordsDataGoogleAdsSearchVolumeLiveRequestInfo = Arrays.asList(); // List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> | 
     try {
-      KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo result = apiInstance.googleAdsSearchVolumeLive(keywordsDataTaskRequestInfo);
+      KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo result = apiInstance.googleAdsSearchVolumeLive(keywordsDataGoogleAdsSearchVolumeLiveRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsSearchVolumeLive");
@@ -2738,7 +3140,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **keywordsDataTaskRequestInfo** | [**List&lt;KeywordsDataTaskRequestInfo&gt;**](KeywordsDataTaskRequestInfo.md)|  | [optional] |
+| **keywordsDataGoogleAdsSearchVolumeLiveRequestInfo** | [**List&lt;KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo&gt;**](KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -2787,7 +3189,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "bbcb55c2-4ada-4d84-8cef-ddfd7f65a203"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "4edd7fb8-f0a4-424e-b894-2815f586827a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo result = apiInstance.googleAdsSearchVolumeTaskGet(id);
       System.out.println(result);
@@ -2828,7 +3230,7 @@ public class Example {
 
 <a id="googleAdsSearchVolumeTaskPost"></a>
 # **googleAdsSearchVolumeTaskPost**
-> KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo googleAdsSearchVolumeTaskPost(keywordsDataTaskRequestInfo)
+> KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo googleAdsSearchVolumeTaskPost(keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo)
 
 
 
@@ -2855,9 +3257,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = Arrays.asList(); // List<KeywordsDataTaskRequestInfo> | 
+    List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo = Arrays.asList(); // List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> | 
     try {
-      KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo result = apiInstance.googleAdsSearchVolumeTaskPost(keywordsDataTaskRequestInfo);
+      KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo result = apiInstance.googleAdsSearchVolumeTaskPost(keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsSearchVolumeTaskPost");
@@ -2874,7 +3276,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **keywordsDataTaskRequestInfo** | [**List&lt;KeywordsDataTaskRequestInfo&gt;**](KeywordsDataTaskRequestInfo.md)|  | [optional] |
+| **keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo** | [**List&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo&gt;**](KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -3183,7 +3585,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "0708d8d7-14ef-442f-87b4-494afbb21fa6"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "b0ff858f-25eb-484f-8532-a8d9b27dc566"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       KeywordsDataGoogleTrendsExploreTaskGetResponseInfo result = apiInstance.googleTrendsExploreTaskGet(id);
       System.out.println(result);
@@ -3812,7 +4214,7 @@ public class Example {
 
 
 
-By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
+By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
 
 ### Example
 ```java

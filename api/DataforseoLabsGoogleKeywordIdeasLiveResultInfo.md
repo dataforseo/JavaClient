@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**seType** | **String** | search engine type |  [optional] |
-|**seedKeywords** | **List&lt;String&gt;** | keywords in a POST array keywords are returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) |  [optional] |
+|**seedKeywords** | **List&lt;String&gt;** | keywords in a POST array keywords are returned with decoded %## (plus character ‘+’ will be decoded to a space character) |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**totalCount** | **Long** | total number of results relevant to your request in our database |  [optional] |

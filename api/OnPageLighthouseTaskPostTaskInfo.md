@@ -15,7 +15,7 @@
 |**resultCount** | **Long** | number of elements in the result array |  [optional] |
 |**path** | **List&lt;String&gt;** | URL path |  [optional] |
 |**data** | **Object** | contains the same parameters that you specified in the POST request |  [optional] |
-|**result** | **List&lt;Object&gt;** | array of results in this case, the value will be null |  [optional] |
+|**result** | **List&lt;Object&gt;** |  |  [optional] |
 
 
 

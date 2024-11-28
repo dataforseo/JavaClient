@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixGoogleBusinessDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixHotelInfoGoogleBusinessDataPriceData;
+import io.github.dataforseo.client.model.AppendixKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -50,8 +51,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixGoogleBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixGoogleBusinessDataPriceData {
+  public static final String SERIALIZED_NAME_EXTENDED_REVIEWS = "extended_reviews";
+  @SerializedName(SERIALIZED_NAME_EXTENDED_REVIEWS)
+  private AppendixKeywordsDataPriceDataInfo extendedReviews;
+
   public static final String SERIALIZED_NAME_HOTEL_INFO = "hotel_info";
   @SerializedName(SERIALIZED_NAME_HOTEL_INFO)
   private AppendixHotelInfoGoogleBusinessDataPriceData hotelInfo;
@@ -78,6 +83,25 @@ public class AppendixGoogleBusinessDataPriceData {
 
   public AppendixGoogleBusinessDataPriceData() {
   }
+
+  public AppendixGoogleBusinessDataPriceData extendedReviews(AppendixKeywordsDataPriceDataInfo extendedReviews) {
+    this.extendedReviews = extendedReviews;
+    return this;
+  }
+
+  /**
+   * Get extendedReviews
+   * @return extendedReviews
+   */
+  @javax.annotation.Nullable
+  public AppendixKeywordsDataPriceDataInfo getExtendedReviews() {
+    return extendedReviews;
+  }
+
+  public void setExtendedReviews(AppendixKeywordsDataPriceDataInfo extendedReviews) {
+    this.extendedReviews = extendedReviews;
+  }
+
 
   public AppendixGoogleBusinessDataPriceData hotelInfo(AppendixHotelInfoGoogleBusinessDataPriceData hotelInfo) {
     this.hotelInfo = hotelInfo;
@@ -247,7 +271,8 @@ public class AppendixGoogleBusinessDataPriceData {
       return false;
     }
     AppendixGoogleBusinessDataPriceData appendixGoogleBusinessDataPriceData = (AppendixGoogleBusinessDataPriceData) o;
-    return Objects.equals(this.hotelInfo, appendixGoogleBusinessDataPriceData.hotelInfo) &&
+    return Objects.equals(this.extendedReviews, appendixGoogleBusinessDataPriceData.extendedReviews) &&
+        Objects.equals(this.hotelInfo, appendixGoogleBusinessDataPriceData.hotelInfo) &&
         Objects.equals(this.hotelSearches, appendixGoogleBusinessDataPriceData.hotelSearches) &&
         Objects.equals(this.myBusinessInfo, appendixGoogleBusinessDataPriceData.myBusinessInfo) &&
         Objects.equals(this.myBusinessUpdates, appendixGoogleBusinessDataPriceData.myBusinessUpdates) &&
@@ -258,13 +283,14 @@ public class AppendixGoogleBusinessDataPriceData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hotelInfo, hotelSearches, myBusinessInfo, myBusinessUpdates, questionsAndAnswers, reviews, additionalProperties);
+    return Objects.hash(extendedReviews, hotelInfo, hotelSearches, myBusinessInfo, myBusinessUpdates, questionsAndAnswers, reviews, additionalProperties);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixGoogleBusinessDataPriceData {\n");
+    sb.append("    extendedReviews: ").append(toIndentedString(extendedReviews)).append("\n");
     sb.append("    hotelInfo: ").append(toIndentedString(hotelInfo)).append("\n");
     sb.append("    hotelSearches: ").append(toIndentedString(hotelSearches)).append("\n");
     sb.append("    myBusinessInfo: ").append(toIndentedString(myBusinessInfo)).append("\n");
@@ -294,6 +320,7 @@ public class AppendixGoogleBusinessDataPriceData {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    openapiFields.add("extended_reviews");
     openapiFields.add("hotel_info");
     openapiFields.add("hotel_searches");
     openapiFields.add("my_business_info");
@@ -318,6 +345,10 @@ public class AppendixGoogleBusinessDataPriceData {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the optional field `extended_reviews`
+      if (jsonObj.get("extended_reviews") != null && !jsonObj.get("extended_reviews").isJsonNull()) {
+        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("extended_reviews"));
+      }
       // validate the optional field `hotel_info`
       if (jsonObj.get("hotel_info") != null && !jsonObj.get("hotel_info").isJsonNull()) {
         AppendixHotelInfoGoogleBusinessDataPriceData.validateJsonElement(jsonObj.get("hotel_info"));

@@ -19,8 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.DataforseoLabsBingRelatedKeywordsLiveItem;
-import io.github.dataforseo.client.model.KeywordData;
+import io.github.dataforseo.client.model.DataforseoLabsRelatedKeywordsLiveItem;
+import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingRelatedKeywordsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -65,7 +65,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_SEED_KEYWORD_DATA = "seed_keyword_data";
   @SerializedName(SERIALIZED_NAME_SEED_KEYWORD_DATA)
-  private KeywordData seedKeywordData;
+  private KeywordDataInfo seedKeywordData;
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
@@ -85,7 +85,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsBingRelatedKeywordsLiveItem> items;
+  private List<DataforseoLabsRelatedKeywordsLiveItem> items;
 
   public DataforseoLabsBingRelatedKeywordsLiveResultInfo() {
   }
@@ -128,7 +128,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
   }
 
 
-  public DataforseoLabsBingRelatedKeywordsLiveResultInfo seedKeywordData(KeywordData seedKeywordData) {
+  public DataforseoLabsBingRelatedKeywordsLiveResultInfo seedKeywordData(KeywordDataInfo seedKeywordData) {
     this.seedKeywordData = seedKeywordData;
     return this;
   }
@@ -138,11 +138,11 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
    * @return seedKeywordData
    */
   @javax.annotation.Nullable
-  public KeywordData getSeedKeywordData() {
+  public KeywordDataInfo getSeedKeywordData() {
     return seedKeywordData;
   }
 
-  public void setSeedKeywordData(KeywordData seedKeywordData) {
+  public void setSeedKeywordData(KeywordDataInfo seedKeywordData) {
     this.seedKeywordData = seedKeywordData;
   }
 
@@ -223,12 +223,12 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
   }
 
 
-  public DataforseoLabsBingRelatedKeywordsLiveResultInfo items(List<DataforseoLabsBingRelatedKeywordsLiveItem> items) {
+  public DataforseoLabsBingRelatedKeywordsLiveResultInfo items(List<DataforseoLabsRelatedKeywordsLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsBingRelatedKeywordsLiveResultInfo addItemsItem(DataforseoLabsBingRelatedKeywordsLiveItem itemsItem) {
+  public DataforseoLabsBingRelatedKeywordsLiveResultInfo addItemsItem(DataforseoLabsRelatedKeywordsLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -241,11 +241,11 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<DataforseoLabsBingRelatedKeywordsLiveItem> getItems() {
+  public List<DataforseoLabsRelatedKeywordsLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsBingRelatedKeywordsLiveItem> items) {
+  public void setItems(List<DataforseoLabsRelatedKeywordsLiveItem> items) {
     this.items = items;
   }
 
@@ -400,7 +400,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
       }
       // validate the optional field `seed_keyword_data`
       if (jsonObj.get("seed_keyword_data") != null && !jsonObj.get("seed_keyword_data").isJsonNull()) {
-        KeywordData.validateJsonElement(jsonObj.get("seed_keyword_data"));
+        KeywordDataInfo.validateJsonElement(jsonObj.get("seed_keyword_data"));
       }
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));
@@ -415,7 +415,7 @@ public class DataforseoLabsBingRelatedKeywordsLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsBingRelatedKeywordsLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsRelatedKeywordsLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBusinessListingsBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixBusinessListingsBusinessDataPriceData {
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
@@ -58,7 +58,7 @@ public class AppendixBusinessListingsBusinessDataPriceData {
 
   public static final String SERIALIZED_NAME_CATEGORIES_AGGREGATION = "categories_aggregation";
   @SerializedName(SERIALIZED_NAME_CATEGORIES_AGGREGATION)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo categoriesAggregation;
+  private AppendixBingKeywordsDataPriceDataInfo categoriesAggregation;
 
   public static final String SERIALIZED_NAME_LOCATIONS = "locations";
   @SerializedName(SERIALIZED_NAME_LOCATIONS)
@@ -66,7 +66,7 @@ public class AppendixBusinessListingsBusinessDataPriceData {
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo search;
+  private AppendixBingKeywordsDataPriceDataInfo search;
 
   public AppendixBusinessListingsBusinessDataPriceData() {
   }
@@ -90,7 +90,7 @@ public class AppendixBusinessListingsBusinessDataPriceData {
   }
 
 
-  public AppendixBusinessListingsBusinessDataPriceData categoriesAggregation(AppendixKeywordBingKeywordsDataPriceDataInfo categoriesAggregation) {
+  public AppendixBusinessListingsBusinessDataPriceData categoriesAggregation(AppendixBingKeywordsDataPriceDataInfo categoriesAggregation) {
     this.categoriesAggregation = categoriesAggregation;
     return this;
   }
@@ -100,11 +100,11 @@ public class AppendixBusinessListingsBusinessDataPriceData {
    * @return categoriesAggregation
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getCategoriesAggregation() {
+  public AppendixBingKeywordsDataPriceDataInfo getCategoriesAggregation() {
     return categoriesAggregation;
   }
 
-  public void setCategoriesAggregation(AppendixKeywordBingKeywordsDataPriceDataInfo categoriesAggregation) {
+  public void setCategoriesAggregation(AppendixBingKeywordsDataPriceDataInfo categoriesAggregation) {
     this.categoriesAggregation = categoriesAggregation;
   }
 
@@ -128,7 +128,7 @@ public class AppendixBusinessListingsBusinessDataPriceData {
   }
 
 
-  public AppendixBusinessListingsBusinessDataPriceData search(AppendixKeywordBingKeywordsDataPriceDataInfo search) {
+  public AppendixBusinessListingsBusinessDataPriceData search(AppendixBingKeywordsDataPriceDataInfo search) {
     this.search = search;
     return this;
   }
@@ -138,11 +138,11 @@ public class AppendixBusinessListingsBusinessDataPriceData {
    * @return search
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getSearch() {
+  public AppendixBingKeywordsDataPriceDataInfo getSearch() {
     return search;
   }
 
-  public void setSearch(AppendixKeywordBingKeywordsDataPriceDataInfo search) {
+  public void setSearch(AppendixBingKeywordsDataPriceDataInfo search) {
     this.search = search;
   }
 
@@ -272,7 +272,7 @@ public class AppendixBusinessListingsBusinessDataPriceData {
       }
       // validate the optional field `categories_aggregation`
       if (jsonObj.get("categories_aggregation") != null && !jsonObj.get("categories_aggregation").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("categories_aggregation"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("categories_aggregation"));
       }
       // validate the optional field `locations`
       if (jsonObj.get("locations") != null && !jsonObj.get("locations").isJsonNull()) {
@@ -280,7 +280,7 @@ public class AppendixBusinessListingsBusinessDataPriceData {
       }
       // validate the optional field `search`
       if (jsonObj.get("search") != null && !jsonObj.get("search").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search"));
       }
   }
 

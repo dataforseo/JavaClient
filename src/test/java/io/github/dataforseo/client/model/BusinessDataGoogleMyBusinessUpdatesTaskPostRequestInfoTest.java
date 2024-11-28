@@ -95,6 +95,14 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'depth'
+     */
+    @Test
+    public void depthTest() {
+        // TODO: test depth
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test
@@ -116,14 +124,6 @@ public class BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfoTest {
     @Test
     public void pingbackUrlTest() {
         // TODO: test pingbackUrl
-    }
-
-    /**
-     * Test the property 'depth'
-     */
-    @Test
-    public void depthTest() {
-        // TODO: test depth
     }
 
 }

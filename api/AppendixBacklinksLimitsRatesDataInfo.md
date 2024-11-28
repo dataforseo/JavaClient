@@ -27,6 +27,7 @@
 |**timeseriesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**timeseriesNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**competitors** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**bulkSpamScore** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**bulkPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 

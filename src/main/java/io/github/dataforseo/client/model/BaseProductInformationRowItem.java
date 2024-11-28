@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseProductInformationRowItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class BaseProductInformationRowItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -206,9 +206,6 @@ public class BaseProductInformationRowItem {
           break;
         case "product_information_text_row":
           ProductInformationTextRow.validateJsonElement(jsonElement);
-          break;
-        case "product_information_video_row":
-          ProductInformationVideoRow.validateJsonElement(jsonElement);
           break;
         default:
           throw new IllegalArgumentException(String.format("The value of the `type` field `%s` does not match any key defined in the discriminator's mapping.", discriminatorValue));

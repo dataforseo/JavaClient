@@ -30,6 +30,7 @@ import io.github.dataforseo.client.model.AppDataAppleAppReviewsTaskPostRequestIn
 import io.github.dataforseo.client.model.AppDataAppleAppReviewsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppReviewsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppSearchesTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.AppDataAppleAppSearchesTaskPostRequestInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppSearchesTaskPostResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppSearchesTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleCategoriesResponseInfo;
@@ -57,6 +58,7 @@ import io.github.dataforseo.client.model.AppDataGoogleAppReviewsTaskPostResponse
 import io.github.dataforseo.client.model.AppDataGoogleAppReviewsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskPostRequestInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskPostResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleCategoriesResponseInfo;
@@ -65,7 +67,6 @@ import io.github.dataforseo.client.model.AppDataGoogleLocationsCountryResponseIn
 import io.github.dataforseo.client.model.AppDataGoogleLocationsResponseInfo;
 import io.github.dataforseo.client.model.AppDataIdListRequestInfo;
 import io.github.dataforseo.client.model.AppDataIdListResponseInfo;
-import io.github.dataforseo.client.model.AppDataTaskRequestInfo;
 import io.github.dataforseo.client.model.AppDataTasksReadyResponseInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -106,7 +107,7 @@ public class AppDataApiTest {
     }
 
     /**
-     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -321,8 +322,8 @@ public class AppDataApiTest {
      */
     @Test
     public void appleAppSearchesTaskPostTest() throws ApiException {
-        List<AppDataTaskRequestInfo> appDataTaskRequestInfo = null;
-        AppDataAppleAppSearchesTaskPostResponseInfo response = api.appleAppSearchesTaskPost(appDataTaskRequestInfo);
+        List<AppDataAppleAppSearchesTaskPostRequestInfo> appDataAppleAppSearchesTaskPostRequestInfo = null;
+        AppDataAppleAppSearchesTaskPostResponseInfo response = api.appleAppSearchesTaskPost(appDataAppleAppSearchesTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -543,8 +544,8 @@ public class AppDataApiTest {
      */
     @Test
     public void googleAppSearchesTaskPostTest() throws ApiException {
-        List<AppDataTaskRequestInfo> appDataTaskRequestInfo = null;
-        AppDataGoogleAppSearchesTaskPostResponseInfo response = api.googleAppSearchesTaskPost(appDataTaskRequestInfo);
+        List<AppDataGoogleAppSearchesTaskPostRequestInfo> appDataGoogleAppSearchesTaskPostRequestInfo = null;
+        AppDataGoogleAppSearchesTaskPostResponseInfo response = api.googleAppSearchesTaskPost(appDataGoogleAppSearchesTaskPostRequestInfo);
         // TODO: test validations
     }
 

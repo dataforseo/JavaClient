@@ -159,7 +159,7 @@ public class DomainAnalyticsApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
      * @param domainAnalyticsErrorsRequestInfo  (optional)
      * @return DomainAnalyticsErrorsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -176,7 +176,7 @@ public class DomainAnalyticsApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
      * @param domainAnalyticsErrorsRequestInfo  (optional)
      * @return ApiResponse&lt;DomainAnalyticsErrorsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -194,7 +194,7 @@ public class DomainAnalyticsApi {
 
     /**
      *  (asynchronously)
-     * By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
      * @param domainAnalyticsErrorsRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call

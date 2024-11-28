@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixAppDataDayStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixAppDataDayStatisticsMoneyData {
   public static final String SERIALIZED_NAME_APP_INFO = "app_info";
   @SerializedName(SERIALIZED_NAME_APP_INFO)
@@ -89,13 +89,13 @@ public class AppendixAppDataDayStatisticsMoneyData {
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
   private Double tasksReady;
 
-  public static final String SERIALIZED_NAME_REFUND_MONEY = "refund_money";
-  @SerializedName(SERIALIZED_NAME_REFUND_MONEY)
-  private Double refundMoney;
-
   public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
   @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
   private AppendixBusinessDataDayLimitsRatesDataInfo appListings;
+
+  public static final String SERIALIZED_NAME_REFUND_MONEY = "refund_money";
+  @SerializedName(SERIALIZED_NAME_REFUND_MONEY)
+  private Double refundMoney;
 
   public AppendixAppDataDayStatisticsMoneyData() {
   }
@@ -271,25 +271,6 @@ public class AppendixAppDataDayStatisticsMoneyData {
   }
 
 
-  public AppendixAppDataDayStatisticsMoneyData refundMoney(Double refundMoney) {
-    this.refundMoney = refundMoney;
-    return this;
-  }
-
-  /**
-   * Get refundMoney
-   * @return refundMoney
-   */
-  @javax.annotation.Nullable
-  public Double getRefundMoney() {
-    return refundMoney;
-  }
-
-  public void setRefundMoney(Double refundMoney) {
-    this.refundMoney = refundMoney;
-  }
-
-
   public AppendixAppDataDayStatisticsMoneyData appListings(AppendixBusinessDataDayLimitsRatesDataInfo appListings) {
     this.appListings = appListings;
     return this;
@@ -306,6 +287,25 @@ public class AppendixAppDataDayStatisticsMoneyData {
 
   public void setAppListings(AppendixBusinessDataDayLimitsRatesDataInfo appListings) {
     this.appListings = appListings;
+  }
+
+
+  public AppendixAppDataDayStatisticsMoneyData refundMoney(Double refundMoney) {
+    this.refundMoney = refundMoney;
+    return this;
+  }
+
+  /**
+   * Get refundMoney
+   * @return refundMoney
+   */
+  @javax.annotation.Nullable
+  public Double getRefundMoney() {
+    return refundMoney;
+  }
+
+  public void setRefundMoney(Double refundMoney) {
+    this.refundMoney = refundMoney;
   }
 
   /**
@@ -372,8 +372,8 @@ public class AppendixAppDataDayStatisticsMoneyData {
         Objects.equals(this.locations, appendixAppDataDayStatisticsMoneyData.locations) &&
         Objects.equals(this.categories, appendixAppDataDayStatisticsMoneyData.categories) &&
         Objects.equals(this.tasksReady, appendixAppDataDayStatisticsMoneyData.tasksReady) &&
-        Objects.equals(this.refundMoney, appendixAppDataDayStatisticsMoneyData.refundMoney) &&
-        Objects.equals(this.appListings, appendixAppDataDayStatisticsMoneyData.appListings)&&
+        Objects.equals(this.appListings, appendixAppDataDayStatisticsMoneyData.appListings) &&
+        Objects.equals(this.refundMoney, appendixAppDataDayStatisticsMoneyData.refundMoney)&&
         Objects.equals(this.additionalProperties, appendixAppDataDayStatisticsMoneyData.additionalProperties);
   }
 
@@ -383,7 +383,7 @@ public class AppendixAppDataDayStatisticsMoneyData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, tasksReady, refundMoney, appListings, additionalProperties);
+    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, tasksReady, appListings, refundMoney, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -406,8 +406,8 @@ public class AppendixAppDataDayStatisticsMoneyData {
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
-    sb.append("    refundMoney: ").append(toIndentedString(refundMoney)).append("\n");
     sb.append("    appListings: ").append(toIndentedString(appListings)).append("\n");
+    sb.append("    refundMoney: ").append(toIndentedString(refundMoney)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -440,8 +440,8 @@ public class AppendixAppDataDayStatisticsMoneyData {
     openapiFields.add("locations");
     openapiFields.add("categories");
     openapiFields.add("tasks_ready");
-    openapiFields.add("refund_money");
     openapiFields.add("app_listings");
+    openapiFields.add("refund_money");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

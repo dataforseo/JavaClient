@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.ImagesElement;
+import io.github.dataforseo.client.model.RelatedImageSearchesElement;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ImagesDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -73,7 +74,7 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
 
   public static final String SERIALIZED_NAME_RELATED_IMAGE_SEARCHES = "related_image_searches";
   @SerializedName(SERIALIZED_NAME_RELATED_IMAGE_SEARCHES)
-  private Object relatedImageSearches;
+  private RelatedImageSearchesElement relatedImageSearches;
 
   public ImagesDataforseoLabsSerpElementItem() {
   }
@@ -162,21 +163,21 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
   }
 
 
-  public ImagesDataforseoLabsSerpElementItem relatedImageSearches(Object relatedImageSearches) {
+  public ImagesDataforseoLabsSerpElementItem relatedImageSearches(RelatedImageSearchesElement relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
     return this;
   }
 
   /**
-   * contains keywords and images related to the specified search term if there are none, equals null
+   * Get relatedImageSearches
    * @return relatedImageSearches
    */
   @javax.annotation.Nullable
-  public Object getRelatedImageSearches() {
+  public RelatedImageSearchesElement getRelatedImageSearches() {
     return relatedImageSearches;
   }
 
-  public void setRelatedImageSearches(Object relatedImageSearches) {
+  public void setRelatedImageSearches(RelatedImageSearchesElement relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
   }
 
@@ -343,6 +344,10 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
             ImagesElement.validateJsonElement(jsonArrayitems.get(i));
           };
         }
+      }
+      // validate the optional field `related_image_searches`
+      if (jsonObj.get("related_image_searches") != null && !jsonObj.get("related_image_searches").isJsonNull()) {
+        RelatedImageSearchesElement.validateJsonElement(jsonObj.get("related_image_searches"));
       }
   }
 

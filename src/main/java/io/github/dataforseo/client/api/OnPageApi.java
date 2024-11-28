@@ -74,8 +74,8 @@ import io.github.dataforseo.client.model.OnPageRedirectChainsResponseInfo;
 import io.github.dataforseo.client.model.OnPageResourcesRequestInfo;
 import io.github.dataforseo.client.model.OnPageResourcesResponseInfo;
 import io.github.dataforseo.client.model.OnPageSummaryResponseInfo;
+import io.github.dataforseo.client.model.OnPageTaskPostRequestInfo;
 import io.github.dataforseo.client.model.OnPageTaskPostResponseInfo;
-import io.github.dataforseo.client.model.OnPageTaskRequestInfo;
 import io.github.dataforseo.client.model.OnPageTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.OnPageWaterfallRequestInfo;
 import io.github.dataforseo.client.model.OnPageWaterfallResponseInfo;
@@ -1948,7 +1948,7 @@ public class OnPageApi {
 
     /**
      * 
-     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
+     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
      * @param onPageNonIndexableRequestInfo  (optional)
      * @return OnPageNonIndexableResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1965,7 +1965,7 @@ public class OnPageApi {
 
     /**
      * 
-     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
+     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
      * @param onPageNonIndexableRequestInfo  (optional)
      * @return ApiResponse&lt;OnPageNonIndexableResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1983,7 +1983,7 @@ public class OnPageApi {
 
     /**
      *  (asynchronously)
-     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
+     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
      * @param onPageNonIndexableRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2179,7 +2179,7 @@ public class OnPageApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
      * @param onPageErrorsRequestInfo  (optional)
      * @return OnPageErrorsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2196,7 +2196,7 @@ public class OnPageApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
      * @param onPageErrorsRequestInfo  (optional)
      * @return ApiResponse&lt;OnPageErrorsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -2214,7 +2214,7 @@ public class OnPageApi {
 
     /**
      *  (asynchronously)
-     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
      * @param onPageErrorsRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -3409,7 +3409,7 @@ public class OnPageApi {
     }
     /**
      * Build call for taskPost
-     * @param onPageTaskRequestInfo  (optional)
+     * @param onPageTaskPostRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -3419,7 +3419,7 @@ public class OnPageApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call taskPostCall(List<OnPageTaskRequestInfo> onPageTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call taskPostCall(List<OnPageTaskPostRequestInfo> onPageTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -3433,7 +3433,7 @@ public class OnPageApi {
             basePath = null;
         }
 
-        Object localVarPostBody = onPageTaskRequestInfo;
+        Object localVarPostBody = onPageTaskPostRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/on_page/task_post";
@@ -3465,15 +3465,15 @@ public class OnPageApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call taskPostValidateBeforeCall(List<OnPageTaskRequestInfo> onPageTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return taskPostCall(onPageTaskRequestInfo, _callback);
+    private okhttp3.Call taskPostValidateBeforeCall(List<OnPageTaskPostRequestInfo> onPageTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return taskPostCall(onPageTaskPostRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌ OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/task_post/?bash&#39;
-     * @param onPageTaskRequestInfo  (optional)
+     * @param onPageTaskPostRequestInfo  (optional)
      * @return OnPageTaskPostResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3482,15 +3482,15 @@ public class OnPageApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public OnPageTaskPostResponseInfo taskPost(List<OnPageTaskRequestInfo> onPageTaskRequestInfo) throws ApiException {
-        ApiResponse<OnPageTaskPostResponseInfo> localVarResp = taskPostWithHttpInfo(onPageTaskRequestInfo);
+    public OnPageTaskPostResponseInfo taskPost(List<OnPageTaskPostRequestInfo> onPageTaskPostRequestInfo) throws ApiException {
+        ApiResponse<OnPageTaskPostResponseInfo> localVarResp = taskPostWithHttpInfo(onPageTaskPostRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌ OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/task_post/?bash&#39;
-     * @param onPageTaskRequestInfo  (optional)
+     * @param onPageTaskPostRequestInfo  (optional)
      * @return ApiResponse&lt;OnPageTaskPostResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3499,8 +3499,8 @@ public class OnPageApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<OnPageTaskPostResponseInfo> taskPostWithHttpInfo(List<OnPageTaskRequestInfo> onPageTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = taskPostValidateBeforeCall(onPageTaskRequestInfo, null);
+    public ApiResponse<OnPageTaskPostResponseInfo> taskPostWithHttpInfo(List<OnPageTaskPostRequestInfo> onPageTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = taskPostValidateBeforeCall(onPageTaskPostRequestInfo, null);
         Type localVarReturnType = new TypeToken<OnPageTaskPostResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -3508,7 +3508,7 @@ public class OnPageApi {
     /**
      *  (asynchronously)
      * ‌ OnPage API checks websites for 60+ customizable on-page parameters defines and displays all found flaws and opportunities for optimization so that you can easily fix them. It checks meta tags, duplicate content, image tags, response codes, and other parameters on every page. You can find the full list of OnPage API check-up parameters in the Pages section. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/task_post/?bash&#39;
-     * @param onPageTaskRequestInfo  (optional)
+     * @param onPageTaskPostRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -3518,9 +3518,9 @@ public class OnPageApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call taskPostAsync(List<OnPageTaskRequestInfo> onPageTaskRequestInfo, final ApiCallback<OnPageTaskPostResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call taskPostAsync(List<OnPageTaskPostRequestInfo> onPageTaskPostRequestInfo, final ApiCallback<OnPageTaskPostResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = taskPostValidateBeforeCall(onPageTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = taskPostValidateBeforeCall(onPageTaskPostRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<OnPageTaskPostResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

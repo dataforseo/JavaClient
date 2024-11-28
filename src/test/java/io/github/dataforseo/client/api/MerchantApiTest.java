@@ -53,6 +53,7 @@ import io.github.dataforseo.client.model.MerchantGoogleProductSpecTaskPostRespon
 import io.github.dataforseo.client.model.MerchantGoogleProductSpecTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.MerchantGoogleProductsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleSellersAdUrlResponseInfo;
@@ -63,7 +64,6 @@ import io.github.dataforseo.client.model.MerchantGoogleSellersTaskPostResponseIn
 import io.github.dataforseo.client.model.MerchantGoogleSellersTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantIdListRequestInfo;
 import io.github.dataforseo.client.model.MerchantIdListResponseInfo;
-import io.github.dataforseo.client.model.MerchantTaskRequestInfo;
 import io.github.dataforseo.client.model.MerchantTasksReadyResponseInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -382,8 +382,8 @@ public class MerchantApiTest {
      */
     @Test
     public void googleProductsTaskPostTest() throws ApiException {
-        List<MerchantTaskRequestInfo> merchantTaskRequestInfo = null;
-        MerchantGoogleProductsTaskPostResponseInfo response = api.googleProductsTaskPost(merchantTaskRequestInfo);
+        List<MerchantGoogleProductsTaskPostRequestInfo> merchantGoogleProductsTaskPostRequestInfo = null;
+        MerchantGoogleProductsTaskPostResponseInfo response = api.googleProductsTaskPost(merchantGoogleProductsTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -492,7 +492,7 @@ public class MerchantApiTest {
     }
 
     /**
-     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

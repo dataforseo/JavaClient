@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -79,6 +79,10 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
 
+  public static final String SERIALIZED_NAME_DEPTH = "depth";
+  @SerializedName(SERIALIZED_NAME_DEPTH)
+  private Integer depth;
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -91,10 +95,6 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
   private String pingbackUrl;
 
-  public static final String SERIALIZED_NAME_DEPTH = "depth";
-  @SerializedName(SERIALIZED_NAME_DEPTH)
-  private Integer depth;
-
   public BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo() {
   }
 
@@ -104,7 +104,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
   }
 
   /**
-   * keyword required field the keyword you specify should indicate the name of the local establishment you can specify up to 700 symbols in the keyword filed all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”;  this field can also be used to pass the following parameters: cid – a unique, google-defined id of the business entity; place_id – an identifier of the business entity in Google Maps; spp – a unique identifier of local services featured in the local_pack element of Google SERP example: cid:194604053573767737 place_id:GhIJQWDl0CIeQUARxks3icF8U8A spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30 learn more about the cid and place_id identifiers in this help center article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keyword required field the keyword you specify should indicate the name of the local establishment you can specify up to 700 characters in the keyword filed all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”;  this field can also be used to pass the following parameters: cid – a unique, google-defined id of the business entity; place_id – an identifier of the business entity in Google Maps; spp – a unique identifier of local services featured in the local_pack element of Google SERP example: cid:194604053573767737 place_id:GhIJQWDl0CIeQUARxks3icF8U8A spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30 learn more about the cid and place_id identifiers in this help center article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -231,6 +231,25 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
   }
 
 
+  public BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo depth(Integer depth) {
+    this.depth = depth;
+    return this;
+  }
+
+  /**
+   * parsing depth optional field number of question rows in the result default value: 20 max value: 700 Note: your account will be billed for every 20 questions; thus, setting a depth above 20 may result in additional charges if the search engine returns more than 20 questions; if the specified depth is higher than the number of questions in the response, the difference will be refunded automatically to your account balance
+   * @return depth
+   */
+  @javax.annotation.Nullable
+  public Integer getDepth() {
+    return depth;
+  }
+
+  public void setDepth(Integer depth) {
+    this.depth = depth;
+  }
+
+
   public BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -256,7 +275,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
   }
 
   /**
-   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in postback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in postback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -275,7 +294,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
   }
 
   /**
-   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in pingback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in pingback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -285,25 +304,6 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
 
   public void setPingbackUrl(String pingbackUrl) {
     this.pingbackUrl = pingbackUrl;
-  }
-
-
-  public BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo depth(Integer depth) {
-    this.depth = depth;
-    return this;
-  }
-
-  /**
-   * parsing depth optional field number of question rows in the result default value: 20 max value: 700 Note: your account will be billed for every 20 questions; thus, setting a depth above 20 may result in additional charges if the search engine returns more than 20 questions; if the specified depth is higher than the number of questions in the response, the difference will be refunded automatically to your account balance
-   * @return depth
-   */
-  @javax.annotation.Nullable
-  public Integer getDepth() {
-    return depth;
-  }
-
-  public void setDepth(Integer depth) {
-    this.depth = depth;
   }
 
   /**
@@ -368,10 +368,10 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
         Objects.equals(this.locationCoordinate, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.depth, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.depth) &&
         Objects.equals(this.tag, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.pingbackUrl, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.pingbackUrl) &&
-        Objects.equals(this.depth, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.depth)&&
+        Objects.equals(this.pingbackUrl, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.pingbackUrl)&&
         Objects.equals(this.additionalProperties, businessDataGoogleQuestionsAndAnswersTaskPostRequestInfo.additionalProperties);
   }
 
@@ -381,7 +381,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, tag, postbackUrl, pingbackUrl, depth, additionalProperties);
+    return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, depth, tag, postbackUrl, pingbackUrl, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -402,10 +402,10 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
-    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -436,10 +436,10 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo {
     openapiFields.add("location_coordinate");
     openapiFields.add("language_name");
     openapiFields.add("language_code");
+    openapiFields.add("depth");
     openapiFields.add("tag");
     openapiFields.add("postback_url");
     openapiFields.add("pingback_url");
-    openapiFields.add("depth");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

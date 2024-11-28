@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleImageRelatedSearchesSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class GoogleImageRelatedSearchesSerpElementItem extends BaseGoogleImagesSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -103,7 +103,7 @@ public class GoogleImageRelatedSearchesSerpElementItem extends BaseGoogleImagesS
   }
 
   /**
-   * elements of search results found in SERP
+   * items of the element
    * @return items
    */
   @javax.annotation.Nullable

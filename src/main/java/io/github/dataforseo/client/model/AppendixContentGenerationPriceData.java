@@ -19,8 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixContentGenerationPriceDataInfo;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixContentGenerationPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixContentGenerationPriceData {
   public static final String SERIALIZED_NAME_CHECK_GRAMMAR = "check_grammar";
   @SerializedName(SERIALIZED_NAME_CHECK_GRAMMAR)
@@ -58,23 +58,23 @@ public class AppendixContentGenerationPriceData {
 
   public static final String SERIALIZED_NAME_GENERATE = "generate";
   @SerializedName(SERIALIZED_NAME_GENERATE)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo generate;
+  private AppendixBingKeywordsDataPriceDataInfo generate;
 
   public static final String SERIALIZED_NAME_GENERATE_META_TAGS = "generate_meta_tags";
   @SerializedName(SERIALIZED_NAME_GENERATE_META_TAGS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo generateMetaTags;
+  private AppendixBingKeywordsDataPriceDataInfo generateMetaTags;
 
   public static final String SERIALIZED_NAME_GENERATE_SUB_TOPICS = "generate_sub_topics";
   @SerializedName(SERIALIZED_NAME_GENERATE_SUB_TOPICS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo generateSubTopics;
+  private AppendixBingKeywordsDataPriceDataInfo generateSubTopics;
 
   public static final String SERIALIZED_NAME_GENERATE_TEXT = "generate_text";
   @SerializedName(SERIALIZED_NAME_GENERATE_TEXT)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo generateText;
+  private AppendixBingKeywordsDataPriceDataInfo generateText;
 
   public static final String SERIALIZED_NAME_PARAPHRASE = "paraphrase";
   @SerializedName(SERIALIZED_NAME_PARAPHRASE)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo paraphrase;
+  private AppendixBingKeywordsDataPriceDataInfo paraphrase;
 
   public static final String SERIALIZED_NAME_TEXT_SUMMARY = "text_summary";
   @SerializedName(SERIALIZED_NAME_TEXT_SUMMARY)
@@ -102,7 +102,7 @@ public class AppendixContentGenerationPriceData {
   }
 
 
-  public AppendixContentGenerationPriceData generate(AppendixKeywordBingKeywordsDataPriceDataInfo generate) {
+  public AppendixContentGenerationPriceData generate(AppendixBingKeywordsDataPriceDataInfo generate) {
     this.generate = generate;
     return this;
   }
@@ -112,16 +112,16 @@ public class AppendixContentGenerationPriceData {
    * @return generate
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getGenerate() {
+  public AppendixBingKeywordsDataPriceDataInfo getGenerate() {
     return generate;
   }
 
-  public void setGenerate(AppendixKeywordBingKeywordsDataPriceDataInfo generate) {
+  public void setGenerate(AppendixBingKeywordsDataPriceDataInfo generate) {
     this.generate = generate;
   }
 
 
-  public AppendixContentGenerationPriceData generateMetaTags(AppendixKeywordBingKeywordsDataPriceDataInfo generateMetaTags) {
+  public AppendixContentGenerationPriceData generateMetaTags(AppendixBingKeywordsDataPriceDataInfo generateMetaTags) {
     this.generateMetaTags = generateMetaTags;
     return this;
   }
@@ -131,16 +131,16 @@ public class AppendixContentGenerationPriceData {
    * @return generateMetaTags
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getGenerateMetaTags() {
+  public AppendixBingKeywordsDataPriceDataInfo getGenerateMetaTags() {
     return generateMetaTags;
   }
 
-  public void setGenerateMetaTags(AppendixKeywordBingKeywordsDataPriceDataInfo generateMetaTags) {
+  public void setGenerateMetaTags(AppendixBingKeywordsDataPriceDataInfo generateMetaTags) {
     this.generateMetaTags = generateMetaTags;
   }
 
 
-  public AppendixContentGenerationPriceData generateSubTopics(AppendixKeywordBingKeywordsDataPriceDataInfo generateSubTopics) {
+  public AppendixContentGenerationPriceData generateSubTopics(AppendixBingKeywordsDataPriceDataInfo generateSubTopics) {
     this.generateSubTopics = generateSubTopics;
     return this;
   }
@@ -150,16 +150,16 @@ public class AppendixContentGenerationPriceData {
    * @return generateSubTopics
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getGenerateSubTopics() {
+  public AppendixBingKeywordsDataPriceDataInfo getGenerateSubTopics() {
     return generateSubTopics;
   }
 
-  public void setGenerateSubTopics(AppendixKeywordBingKeywordsDataPriceDataInfo generateSubTopics) {
+  public void setGenerateSubTopics(AppendixBingKeywordsDataPriceDataInfo generateSubTopics) {
     this.generateSubTopics = generateSubTopics;
   }
 
 
-  public AppendixContentGenerationPriceData generateText(AppendixKeywordBingKeywordsDataPriceDataInfo generateText) {
+  public AppendixContentGenerationPriceData generateText(AppendixBingKeywordsDataPriceDataInfo generateText) {
     this.generateText = generateText;
     return this;
   }
@@ -169,16 +169,16 @@ public class AppendixContentGenerationPriceData {
    * @return generateText
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getGenerateText() {
+  public AppendixBingKeywordsDataPriceDataInfo getGenerateText() {
     return generateText;
   }
 
-  public void setGenerateText(AppendixKeywordBingKeywordsDataPriceDataInfo generateText) {
+  public void setGenerateText(AppendixBingKeywordsDataPriceDataInfo generateText) {
     this.generateText = generateText;
   }
 
 
-  public AppendixContentGenerationPriceData paraphrase(AppendixKeywordBingKeywordsDataPriceDataInfo paraphrase) {
+  public AppendixContentGenerationPriceData paraphrase(AppendixBingKeywordsDataPriceDataInfo paraphrase) {
     this.paraphrase = paraphrase;
     return this;
   }
@@ -188,11 +188,11 @@ public class AppendixContentGenerationPriceData {
    * @return paraphrase
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getParaphrase() {
+  public AppendixBingKeywordsDataPriceDataInfo getParaphrase() {
     return paraphrase;
   }
 
-  public void setParaphrase(AppendixKeywordBingKeywordsDataPriceDataInfo paraphrase) {
+  public void setParaphrase(AppendixBingKeywordsDataPriceDataInfo paraphrase) {
     this.paraphrase = paraphrase;
   }
 
@@ -350,23 +350,23 @@ public class AppendixContentGenerationPriceData {
       }
       // validate the optional field `generate`
       if (jsonObj.get("generate") != null && !jsonObj.get("generate").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate"));
       }
       // validate the optional field `generate_meta_tags`
       if (jsonObj.get("generate_meta_tags") != null && !jsonObj.get("generate_meta_tags").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate_meta_tags"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate_meta_tags"));
       }
       // validate the optional field `generate_sub_topics`
       if (jsonObj.get("generate_sub_topics") != null && !jsonObj.get("generate_sub_topics").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate_sub_topics"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate_sub_topics"));
       }
       // validate the optional field `generate_text`
       if (jsonObj.get("generate_text") != null && !jsonObj.get("generate_text").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate_text"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("generate_text"));
       }
       // validate the optional field `paraphrase`
       if (jsonObj.get("paraphrase") != null && !jsonObj.get("paraphrase").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("paraphrase"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("paraphrase"));
       }
       // validate the optional field `text_summary`
       if (jsonObj.get("text_summary") != null && !jsonObj.get("text_summary").isJsonNull()) {

@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBingKeywordsDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixBingKeywordsDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_KEYWORD_PERFORMANCE = "keyword_performance";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PERFORMANCE)
@@ -66,6 +66,14 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
   private AppendixInfo keywordsForKeywords;
+
+  public static final String SERIALIZED_NAME_AUDIENCE_ESTIMATION = "audience_estimation";
+  @SerializedName(SERIALIZED_NAME_AUDIENCE_ESTIMATION)
+  private AppendixInfo audienceEstimation;
+
+  public static final String SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL = "keyword_suggestions_for_url";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL)
+  private AppendixInfo keywordSuggestionsForUrl;
 
   public AppendixBingKeywordsDataLimitsRatesDataInfo() {
   }
@@ -145,6 +153,44 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
     this.keywordsForKeywords = keywordsForKeywords;
   }
 
+
+  public AppendixBingKeywordsDataLimitsRatesDataInfo audienceEstimation(AppendixInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
+    return this;
+  }
+
+  /**
+   * Get audienceEstimation
+   * @return audienceEstimation
+   */
+  @javax.annotation.Nullable
+  public AppendixInfo getAudienceEstimation() {
+    return audienceEstimation;
+  }
+
+  public void setAudienceEstimation(AppendixInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
+  }
+
+
+  public AppendixBingKeywordsDataLimitsRatesDataInfo keywordSuggestionsForUrl(AppendixInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+    return this;
+  }
+
+  /**
+   * Get keywordSuggestionsForUrl
+   * @return keywordSuggestionsForUrl
+   */
+  @javax.annotation.Nullable
+  public AppendixInfo getKeywordSuggestionsForUrl() {
+    return keywordSuggestionsForUrl;
+  }
+
+  public void setKeywordSuggestionsForUrl(AppendixInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -203,13 +249,15 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
     return Objects.equals(this.keywordPerformance, appendixBingKeywordsDataLimitsRatesDataInfo.keywordPerformance) &&
         Objects.equals(this.searchVolume, appendixBingKeywordsDataLimitsRatesDataInfo.searchVolume) &&
         Objects.equals(this.keywordsForSite, appendixBingKeywordsDataLimitsRatesDataInfo.keywordsForSite) &&
-        Objects.equals(this.keywordsForKeywords, appendixBingKeywordsDataLimitsRatesDataInfo.keywordsForKeywords)&&
+        Objects.equals(this.keywordsForKeywords, appendixBingKeywordsDataLimitsRatesDataInfo.keywordsForKeywords) &&
+        Objects.equals(this.audienceEstimation, appendixBingKeywordsDataLimitsRatesDataInfo.audienceEstimation) &&
+        Objects.equals(this.keywordSuggestionsForUrl, appendixBingKeywordsDataLimitsRatesDataInfo.keywordSuggestionsForUrl)&&
         Objects.equals(this.additionalProperties, appendixBingKeywordsDataLimitsRatesDataInfo.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordPerformance, searchVolume, keywordsForSite, keywordsForKeywords, additionalProperties);
+    return Objects.hash(keywordPerformance, searchVolume, keywordsForSite, keywordsForKeywords, audienceEstimation, keywordSuggestionsForUrl, additionalProperties);
   }
 
   @Override
@@ -220,6 +268,8 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
     sb.append("    searchVolume: ").append(toIndentedString(searchVolume)).append("\n");
     sb.append("    keywordsForSite: ").append(toIndentedString(keywordsForSite)).append("\n");
     sb.append("    keywordsForKeywords: ").append(toIndentedString(keywordsForKeywords)).append("\n");
+    sb.append("    audienceEstimation: ").append(toIndentedString(audienceEstimation)).append("\n");
+    sb.append("    keywordSuggestionsForUrl: ").append(toIndentedString(keywordSuggestionsForUrl)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -247,6 +297,8 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
     openapiFields.add("search_volume");
     openapiFields.add("keywords_for_site");
     openapiFields.add("keywords_for_keywords");
+    openapiFields.add("audience_estimation");
+    openapiFields.add("keyword_suggestions_for_url");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -280,6 +332,14 @@ public class AppendixBingKeywordsDataLimitsRatesDataInfo {
       // validate the optional field `keywords_for_keywords`
       if (jsonObj.get("keywords_for_keywords") != null && !jsonObj.get("keywords_for_keywords").isJsonNull()) {
         AppendixInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
+      }
+      // validate the optional field `audience_estimation`
+      if (jsonObj.get("audience_estimation") != null && !jsonObj.get("audience_estimation").isJsonNull()) {
+        AppendixInfo.validateJsonElement(jsonObj.get("audience_estimation"));
+      }
+      // validate the optional field `keyword_suggestions_for_url`
+      if (jsonObj.get("keyword_suggestions_for_url") != null && !jsonObj.get("keyword_suggestions_for_url").isJsonNull()) {
+        AppendixInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
       }
   }
 

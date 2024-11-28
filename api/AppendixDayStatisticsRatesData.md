@@ -22,7 +22,7 @@
 |**totalMerchant** | **Double** |  |  [optional] |
 |**onPage** | [**AppendixOnPageDayStatisticsRatesData**](AppendixOnPageDayStatisticsRatesData.md) |  |  [optional] |
 |**totalOnPage** | **Double** |  |  [optional] |
-|**businessData** | [**AppendixBusinessDataStatisticsRatesDataInfo**](AppendixBusinessDataStatisticsRatesDataInfo.md) |  |  [optional] |
+|**businessData** | [**AppendixBusinessDataDayStatisticsRatesData**](AppendixBusinessDataDayStatisticsRatesData.md) |  |  [optional] |
 |**totalBusinessData** | **Double** |  |  [optional] |
 |**backlinks** | [**AppendixBacklinksDayStatisticsRatesData**](AppendixBacklinksDayStatisticsRatesData.md) |  |  [optional] |
 |**totalBacklinks** | **Double** |  |  [optional] |

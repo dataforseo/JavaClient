@@ -207,6 +207,14 @@ public class HtmlResourceElementItemTest {
     }
 
     /**
+     * Test the property 'customJsClientException'
+     */
+    @Test
+    public void customJsClientExceptionTest() {
+        // TODO: test customJsClientException
+    }
+
+    /**
      * Test the property 'brokenResources'
      */
     @Test

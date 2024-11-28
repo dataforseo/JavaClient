@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MerchantAmazonAsinTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class MerchantAmazonAsinTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_ASIN = "asin";
   @SerializedName(SERIALIZED_NAME_ASIN)
@@ -82,6 +82,14 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
   @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
   private String seDomain;
+
+  public static final String SERIALIZED_NAME_LOAD_MORE_LOCAL_REVIEWS = "load_more_local_reviews";
+  @SerializedName(SERIALIZED_NAME_LOAD_MORE_LOCAL_REVIEWS)
+  private Boolean loadMoreLocalReviews;
+
+  public static final String SERIALIZED_NAME_LOCAL_REVIEWS_SORT = "local_reviews_sort";
+  @SerializedName(SERIALIZED_NAME_LOCAL_REVIEWS_SORT)
+  private String localReviewsSort;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -254,6 +262,44 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
   }
 
 
+  public MerchantAmazonAsinTaskPostRequestInfo loadMoreLocalReviews(Boolean loadMoreLocalReviews) {
+    this.loadMoreLocalReviews = loadMoreLocalReviews;
+    return this;
+  }
+
+  /**
+   * load more local reviews optional field if set to true, additional local reviews will be loaded in the top_local_reviews array of the Task GET response; Note: you will be charged double the price for using this parameter
+   * @return loadMoreLocalReviews
+   */
+  @javax.annotation.Nullable
+  public Boolean getLoadMoreLocalReviews() {
+    return loadMoreLocalReviews;
+  }
+
+  public void setLoadMoreLocalReviews(Boolean loadMoreLocalReviews) {
+    this.loadMoreLocalReviews = loadMoreLocalReviews;
+  }
+
+
+  public MerchantAmazonAsinTaskPostRequestInfo localReviewsSort(String localReviewsSort) {
+    this.localReviewsSort = localReviewsSort;
+    return this;
+  }
+
+  /**
+   * sort local reviews optional field reviews in the top_local_reviews array of the Task GET response can be sorted by most helpful or most recent first; possible values: helpful, recent default value: helpful
+   * @return localReviewsSort
+   */
+  @javax.annotation.Nullable
+  public String getLocalReviewsSort() {
+    return localReviewsSort;
+  }
+
+  public void setLocalReviewsSort(String localReviewsSort) {
+    this.localReviewsSort = localReviewsSort;
+  }
+
+
   public MerchantAmazonAsinTaskPostRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -279,7 +325,7 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
   }
 
   /**
-   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in postback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in postback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -317,7 +363,7 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
   }
 
   /**
-   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in pingback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in pingback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -392,6 +438,8 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
         Objects.equals(this.languageName, merchantAmazonAsinTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, merchantAmazonAsinTaskPostRequestInfo.languageCode) &&
         Objects.equals(this.seDomain, merchantAmazonAsinTaskPostRequestInfo.seDomain) &&
+        Objects.equals(this.loadMoreLocalReviews, merchantAmazonAsinTaskPostRequestInfo.loadMoreLocalReviews) &&
+        Objects.equals(this.localReviewsSort, merchantAmazonAsinTaskPostRequestInfo.localReviewsSort) &&
         Objects.equals(this.tag, merchantAmazonAsinTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, merchantAmazonAsinTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, merchantAmazonAsinTaskPostRequestInfo.postbackData) &&
@@ -405,7 +453,7 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(asin, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, tag, postbackUrl, postbackData, pingbackUrl, additionalProperties);
+    return Objects.hash(asin, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, loadMoreLocalReviews, localReviewsSort, tag, postbackUrl, postbackData, pingbackUrl, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -427,6 +475,8 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
+    sb.append("    loadMoreLocalReviews: ").append(toIndentedString(loadMoreLocalReviews)).append("\n");
+    sb.append("    localReviewsSort: ").append(toIndentedString(localReviewsSort)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -462,6 +512,8 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
     openapiFields.add("language_name");
     openapiFields.add("language_code");
     openapiFields.add("se_domain");
+    openapiFields.add("load_more_local_reviews");
+    openapiFields.add("local_reviews_sort");
     openapiFields.add("tag");
     openapiFields.add("postback_url");
     openapiFields.add("postback_data");
@@ -501,6 +553,9 @@ public class MerchantAmazonAsinTaskPostRequestInfo {
       }
       if ((jsonObj.get("se_domain") != null && !jsonObj.get("se_domain").isJsonNull()) && !jsonObj.get("se_domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `se_domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_domain").toString()));
+      }
+      if ((jsonObj.get("local_reviews_sort") != null && !jsonObj.get("local_reviews_sort").isJsonNull()) && !jsonObj.get("local_reviews_sort").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `local_reviews_sort` to be a primitive type in the JSON string but got `%s`", jsonObj.get("local_reviews_sort").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

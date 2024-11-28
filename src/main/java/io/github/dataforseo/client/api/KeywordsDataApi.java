@@ -27,6 +27,14 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationIndustriesResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationLiveRequestInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationLiveResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTaskGetResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTaskPostRequestInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTaskPostResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingKeywordPerformanceLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingKeywordPerformanceLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo;
@@ -61,9 +69,11 @@ import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskGetResp
 import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataDataforseoTrendsDemographyLiveRequestInfo;
@@ -84,6 +94,7 @@ import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeyword
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo;
@@ -98,8 +109,10 @@ import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTas
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsLanguagesResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsLocationsResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsStatusResponseInfo;
@@ -115,7 +128,6 @@ import io.github.dataforseo.client.model.KeywordsDataGoogleTrendsLocationsCountr
 import io.github.dataforseo.client.model.KeywordsDataGoogleTrendsLocationsResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataIdListRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataIdListResponseInfo;
-import io.github.dataforseo.client.model.KeywordsDataTaskRequestInfo;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -160,6 +172,704 @@ public class KeywordsDataApi {
         this.localCustomBaseUrl = customBaseUrl;
     }
 
+    /**
+     * Build call for bingAudienceEstimationIndustries
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationIndustriesCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/audience_estimation/industries";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingAudienceEstimationIndustriesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return bingAudienceEstimationIndustriesCall(_callback);
+
+    }
+
+    /**
+     * 
+     * By calling this API you will receive the list of industries with industry_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries/?bash&#39;
+     * @return KeywordsDataBingAudienceEstimationIndustriesResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingAudienceEstimationIndustriesResponseInfo bingAudienceEstimationIndustries() throws ApiException {
+        ApiResponse<KeywordsDataBingAudienceEstimationIndustriesResponseInfo> localVarResp = bingAudienceEstimationIndustriesWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * By calling this API you will receive the list of industries with industry_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries/?bash&#39;
+     * @return ApiResponse&lt;KeywordsDataBingAudienceEstimationIndustriesResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingAudienceEstimationIndustriesResponseInfo> bingAudienceEstimationIndustriesWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = bingAudienceEstimationIndustriesValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationIndustriesResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * By calling this API you will receive the list of industries with industry_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationIndustriesAsync(final ApiCallback<KeywordsDataBingAudienceEstimationIndustriesResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingAudienceEstimationIndustriesValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationIndustriesResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingAudienceEstimationJobFunctions
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationJobFunctionsCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/audience_estimation/job_functions";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingAudienceEstimationJobFunctionsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return bingAudienceEstimationJobFunctionsCall(_callback);
+
+    }
+
+    /**
+     * 
+     * By calling this API you will receive the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions/?bash&#39;
+     * @return KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo bingAudienceEstimationJobFunctions() throws ApiException {
+        ApiResponse<KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo> localVarResp = bingAudienceEstimationJobFunctionsWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * By calling this API you will receive the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions/?bash&#39;
+     * @return ApiResponse&lt;KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo> bingAudienceEstimationJobFunctionsWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = bingAudienceEstimationJobFunctionsValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * By calling this API you will receive the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationJobFunctionsAsync(final ApiCallback<KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingAudienceEstimationJobFunctionsValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingAudienceEstimationLive
+     * @param keywordsDataBingAudienceEstimationLiveRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationLiveCall(List<KeywordsDataBingAudienceEstimationLiveRequestInfo> keywordsDataBingAudienceEstimationLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = keywordsDataBingAudienceEstimationLiveRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/audience_estimation/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingAudienceEstimationLiveValidateBeforeCall(List<KeywordsDataBingAudienceEstimationLiveRequestInfo> keywordsDataBingAudienceEstimationLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return bingAudienceEstimationLiveCall(keywordsDataBingAudienceEstimationLiveRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/live/?bash&#39;
+     * @param keywordsDataBingAudienceEstimationLiveRequestInfo  (optional)
+     * @return KeywordsDataBingAudienceEstimationLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingAudienceEstimationLiveResponseInfo bingAudienceEstimationLive(List<KeywordsDataBingAudienceEstimationLiveRequestInfo> keywordsDataBingAudienceEstimationLiveRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataBingAudienceEstimationLiveResponseInfo> localVarResp = bingAudienceEstimationLiveWithHttpInfo(keywordsDataBingAudienceEstimationLiveRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/live/?bash&#39;
+     * @param keywordsDataBingAudienceEstimationLiveRequestInfo  (optional)
+     * @return ApiResponse&lt;KeywordsDataBingAudienceEstimationLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingAudienceEstimationLiveResponseInfo> bingAudienceEstimationLiveWithHttpInfo(List<KeywordsDataBingAudienceEstimationLiveRequestInfo> keywordsDataBingAudienceEstimationLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = bingAudienceEstimationLiveValidateBeforeCall(keywordsDataBingAudienceEstimationLiveRequestInfo, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/live/?bash&#39;
+     * @param keywordsDataBingAudienceEstimationLiveRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationLiveAsync(List<KeywordsDataBingAudienceEstimationLiveRequestInfo> keywordsDataBingAudienceEstimationLiveRequestInfo, final ApiCallback<KeywordsDataBingAudienceEstimationLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingAudienceEstimationLiveValidateBeforeCall(keywordsDataBingAudienceEstimationLiveRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingAudienceEstimationTaskGet
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/audience_estimation/task_get/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingAudienceEstimationTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling bingAudienceEstimationTaskGet(Async)");
+        }
+
+        return bingAudienceEstimationTaskGetCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return KeywordsDataBingAudienceEstimationTaskGetResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingAudienceEstimationTaskGetResponseInfo bingAudienceEstimationTaskGet(String id) throws ApiException {
+        ApiResponse<KeywordsDataBingAudienceEstimationTaskGetResponseInfo> localVarResp = bingAudienceEstimationTaskGetWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;KeywordsDataBingAudienceEstimationTaskGetResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingAudienceEstimationTaskGetResponseInfo> bingAudienceEstimationTaskGetWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = bingAudienceEstimationTaskGetValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationTaskGetResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationTaskGetAsync(String id, final ApiCallback<KeywordsDataBingAudienceEstimationTaskGetResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingAudienceEstimationTaskGetValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationTaskGetResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingAudienceEstimationTaskPost
+     * @param keywordsDataBingAudienceEstimationTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationTaskPostCall(List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> keywordsDataBingAudienceEstimationTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = keywordsDataBingAudienceEstimationTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/audience_estimation/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingAudienceEstimationTaskPostValidateBeforeCall(List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> keywordsDataBingAudienceEstimationTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return bingAudienceEstimationTaskPostCall(keywordsDataBingAudienceEstimationTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_post/?bash&#39;
+     * @param keywordsDataBingAudienceEstimationTaskPostRequestInfo  (optional)
+     * @return KeywordsDataBingAudienceEstimationTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingAudienceEstimationTaskPostResponseInfo bingAudienceEstimationTaskPost(List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> keywordsDataBingAudienceEstimationTaskPostRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataBingAudienceEstimationTaskPostResponseInfo> localVarResp = bingAudienceEstimationTaskPostWithHttpInfo(keywordsDataBingAudienceEstimationTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_post/?bash&#39;
+     * @param keywordsDataBingAudienceEstimationTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;KeywordsDataBingAudienceEstimationTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingAudienceEstimationTaskPostResponseInfo> bingAudienceEstimationTaskPostWithHttpInfo(List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> keywordsDataBingAudienceEstimationTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = bingAudienceEstimationTaskPostValidateBeforeCall(keywordsDataBingAudienceEstimationTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_post/?bash&#39;
+     * @param keywordsDataBingAudienceEstimationTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationTaskPostAsync(List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> keywordsDataBingAudienceEstimationTaskPostRequestInfo, final ApiCallback<KeywordsDataBingAudienceEstimationTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingAudienceEstimationTaskPostValidateBeforeCall(keywordsDataBingAudienceEstimationTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for bingAudienceEstimationTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/keywords_data/bing/audience_estimation/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call bingAudienceEstimationTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return bingAudienceEstimationTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/tasks_ready/?bash&#39;
+     * @return KeywordsDataBingAudienceEstimationTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public KeywordsDataBingAudienceEstimationTasksReadyResponseInfo bingAudienceEstimationTasksReady() throws ApiException {
+        ApiResponse<KeywordsDataBingAudienceEstimationTasksReadyResponseInfo> localVarResp = bingAudienceEstimationTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;KeywordsDataBingAudienceEstimationTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<KeywordsDataBingAudienceEstimationTasksReadyResponseInfo> bingAudienceEstimationTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = bingAudienceEstimationTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call bingAudienceEstimationTasksReadyAsync(final ApiCallback<KeywordsDataBingAudienceEstimationTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = bingAudienceEstimationTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<KeywordsDataBingAudienceEstimationTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
     /**
      * Build call for bingKeywordPerformanceLive
      * @param keywordsDataBingKeywordPerformanceLiveRequestInfo  (optional)
@@ -2522,7 +3232,7 @@ public class KeywordsDataApi {
     }
     /**
      * Build call for clickstreamDataBulkSearchVolumeLive
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -2532,7 +3242,7 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call clickstreamDataBulkSearchVolumeLiveCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call clickstreamDataBulkSearchVolumeLiveCall(List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -2546,7 +3256,7 @@ public class KeywordsDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = keywordsDataTaskRequestInfo;
+        Object localVarPostBody = keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/keywords_data/clickstream_data/bulk_search_volume/live";
@@ -2578,15 +3288,15 @@ public class KeywordsDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return clickstreamDataBulkSearchVolumeLiveCall(keywordsDataTaskRequestInfo, _callback);
+    private okhttp3.Call clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return clickstreamDataBulkSearchVolumeLiveCall(keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌  The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters). for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo  (optional)
      * @return KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -2595,15 +3305,15 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo clickstreamDataBulkSearchVolumeLive(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        ApiResponse<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> localVarResp = clickstreamDataBulkSearchVolumeLiveWithHttpInfo(keywordsDataTaskRequestInfo);
+    public KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo clickstreamDataBulkSearchVolumeLive(List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> localVarResp = clickstreamDataBulkSearchVolumeLiveWithHttpInfo(keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌  The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters). for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo  (optional)
      * @return ApiResponse&lt;KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -2612,8 +3322,8 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> clickstreamDataBulkSearchVolumeLiveWithHttpInfo(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, null);
+    public ApiResponse<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> clickstreamDataBulkSearchVolumeLiveWithHttpInfo(List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo, null);
         Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -2621,7 +3331,7 @@ public class KeywordsDataApi {
     /**
      *  (asynchronously)
      * ‌‌  The Bulk Clickstream Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers historical search volume values for up to 12 months (depending on keywords, location, and language parameters). for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/bulk_search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -2631,9 +3341,9 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call clickstreamDataBulkSearchVolumeLiveAsync(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call clickstreamDataBulkSearchVolumeLiveAsync(List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo, final ApiCallback<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = clickstreamDataBulkSearchVolumeLiveValidateBeforeCall(keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -2758,7 +3468,7 @@ public class KeywordsDataApi {
     }
     /**
      * Build call for clickstreamDataGlobalSearchVolumeLive
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -2768,7 +3478,7 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call clickstreamDataGlobalSearchVolumeLiveCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call clickstreamDataGlobalSearchVolumeLiveCall(List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -2782,7 +3492,7 @@ public class KeywordsDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = keywordsDataTaskRequestInfo;
+        Object localVarPostBody = keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/keywords_data/clickstream_data/global_search_volume/live";
@@ -2814,15 +3524,15 @@ public class KeywordsDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return clickstreamDataGlobalSearchVolumeLiveCall(keywordsDataTaskRequestInfo, _callback);
+    private okhttp3.Call clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return clickstreamDataGlobalSearchVolumeLiveCall(keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌  The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo  (optional)
      * @return KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -2831,15 +3541,15 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo clickstreamDataGlobalSearchVolumeLive(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        ApiResponse<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> localVarResp = clickstreamDataGlobalSearchVolumeLiveWithHttpInfo(keywordsDataTaskRequestInfo);
+    public KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo clickstreamDataGlobalSearchVolumeLive(List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> localVarResp = clickstreamDataGlobalSearchVolumeLiveWithHttpInfo(keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌  The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo  (optional)
      * @return ApiResponse&lt;KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -2848,8 +3558,8 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> clickstreamDataGlobalSearchVolumeLiveWithHttpInfo(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, null);
+    public ApiResponse<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> clickstreamDataGlobalSearchVolumeLiveWithHttpInfo(List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo, null);
         Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -2857,7 +3567,7 @@ public class KeywordsDataApi {
     /**
      *  (asynchronously)
      * ‌‌  The Clickstream Global Search Volume endpoint of DataForSEO Keywords Data API is designed to provide clickstream-based search volume data for up to 1000 keywords in a single Live request. What’s more, it offers geographical distribution of clickstream search volume values across all available locations. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/clickstream_data/global_search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -2867,9 +3577,9 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call clickstreamDataGlobalSearchVolumeLiveAsync(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call clickstreamDataGlobalSearchVolumeLiveAsync(List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo, final ApiCallback<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = clickstreamDataGlobalSearchVolumeLiveValidateBeforeCall(keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -3820,7 +4530,7 @@ public class KeywordsDataApi {
     }
     /**
      * Build call for googleAdsKeywordsForKeywordsLive
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -3830,7 +4540,7 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAdsKeywordsForKeywordsLiveCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsKeywordsForKeywordsLiveCall(List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -3844,7 +4554,7 @@ public class KeywordsDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = keywordsDataTaskRequestInfo;
+        Object localVarPostBody = keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/keywords_data/google_ads/keywords_for_keywords/live";
@@ -3876,15 +4586,15 @@ public class KeywordsDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleAdsKeywordsForKeywordsLiveValidateBeforeCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleAdsKeywordsForKeywordsLiveCall(keywordsDataTaskRequestInfo, _callback);
+    private okhttp3.Call googleAdsKeywordsForKeywordsLiveValidateBeforeCall(List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleAdsKeywordsForKeywordsLiveCall(keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo, _callback);
 
     }
 
     /**
      * 
      * Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. ‌‌ This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo  (optional)
      * @return KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3893,15 +4603,15 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo googleAdsKeywordsForKeywordsLive(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        ApiResponse<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> localVarResp = googleAdsKeywordsForKeywordsLiveWithHttpInfo(keywordsDataTaskRequestInfo);
+    public KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo googleAdsKeywordsForKeywordsLive(List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> localVarResp = googleAdsKeywordsForKeywordsLiveWithHttpInfo(keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. ‌‌ This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo  (optional)
      * @return ApiResponse&lt;KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3910,8 +4620,8 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> googleAdsKeywordsForKeywordsLiveWithHttpInfo(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleAdsKeywordsForKeywordsLiveValidateBeforeCall(keywordsDataTaskRequestInfo, null);
+    public ApiResponse<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> googleAdsKeywordsForKeywordsLiveWithHttpInfo(List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleAdsKeywordsForKeywordsLiveValidateBeforeCall(keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo, null);
         Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -3919,7 +4629,7 @@ public class KeywordsDataApi {
     /**
      *  (asynchronously)
      * Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. ‌‌ This endpoint will provide relevant keywords for the specified terms. Set up to 20 keywords in the keywords array and get keyword suggestions from Google Ads. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/keywords_for_keywords/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -3929,9 +4639,9 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAdsKeywordsForKeywordsLiveAsync(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsKeywordsForKeywordsLiveAsync(List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo, final ApiCallback<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleAdsKeywordsForKeywordsLiveValidateBeforeCall(keywordsDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleAdsKeywordsForKeywordsLiveValidateBeforeCall(keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -4764,7 +5474,7 @@ public class KeywordsDataApi {
     }
     /**
      * Build call for googleAdsSearchVolumeLive
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeLiveRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -4774,7 +5484,7 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAdsSearchVolumeLiveCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchVolumeLiveCall(List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> keywordsDataGoogleAdsSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -4788,7 +5498,7 @@ public class KeywordsDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = keywordsDataTaskRequestInfo;
+        Object localVarPostBody = keywordsDataGoogleAdsSearchVolumeLiveRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/keywords_data/google_ads/search_volume/live";
@@ -4820,15 +5530,15 @@ public class KeywordsDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleAdsSearchVolumeLiveValidateBeforeCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleAdsSearchVolumeLiveCall(keywordsDataTaskRequestInfo, _callback);
+    private okhttp3.Call googleAdsSearchVolumeLiveValidateBeforeCall(List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> keywordsDataGoogleAdsSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleAdsSearchVolumeLiveCall(keywordsDataGoogleAdsSearchVolumeLiveRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌ Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeLiveRequestInfo  (optional)
      * @return KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -4837,15 +5547,15 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo googleAdsSearchVolumeLive(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        ApiResponse<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> localVarResp = googleAdsSearchVolumeLiveWithHttpInfo(keywordsDataTaskRequestInfo);
+    public KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo googleAdsSearchVolumeLive(List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> keywordsDataGoogleAdsSearchVolumeLiveRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> localVarResp = googleAdsSearchVolumeLiveWithHttpInfo(keywordsDataGoogleAdsSearchVolumeLiveRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌ Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeLiveRequestInfo  (optional)
      * @return ApiResponse&lt;KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -4854,8 +5564,8 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> googleAdsSearchVolumeLiveWithHttpInfo(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleAdsSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, null);
+    public ApiResponse<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> googleAdsSearchVolumeLiveWithHttpInfo(List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> keywordsDataGoogleAdsSearchVolumeLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleAdsSearchVolumeLiveValidateBeforeCall(keywordsDataGoogleAdsSearchVolumeLiveRequestInfo, null);
         Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -4863,7 +5573,7 @@ public class KeywordsDataApi {
     /**
      *  (asynchronously)
      * ‌ Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/live/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeLiveRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -4873,9 +5583,9 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAdsSearchVolumeLiveAsync(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchVolumeLiveAsync(List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> keywordsDataGoogleAdsSearchVolumeLiveRequestInfo, final ApiCallback<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleAdsSearchVolumeLiveValidateBeforeCall(keywordsDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleAdsSearchVolumeLiveValidateBeforeCall(keywordsDataGoogleAdsSearchVolumeLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -5005,7 +5715,7 @@ public class KeywordsDataApi {
     }
     /**
      * Build call for googleAdsSearchVolumeTaskPost
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -5015,7 +5725,7 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAdsSearchVolumeTaskPostCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchVolumeTaskPostCall(List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -5029,7 +5739,7 @@ public class KeywordsDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = keywordsDataTaskRequestInfo;
+        Object localVarPostBody = keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/keywords_data/google_ads/search_volume/task_post";
@@ -5061,15 +5771,15 @@ public class KeywordsDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleAdsSearchVolumeTaskPostValidateBeforeCall(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleAdsSearchVolumeTaskPostCall(keywordsDataTaskRequestInfo, _callback);
+    private okhttp3.Call googleAdsSearchVolumeTaskPostValidateBeforeCall(List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleAdsSearchVolumeTaskPostCall(keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌ Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo  (optional)
      * @return KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -5078,15 +5788,15 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo googleAdsSearchVolumeTaskPost(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        ApiResponse<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> localVarResp = googleAdsSearchVolumeTaskPostWithHttpInfo(keywordsDataTaskRequestInfo);
+    public KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo googleAdsSearchVolumeTaskPost(List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo) throws ApiException {
+        ApiResponse<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> localVarResp = googleAdsSearchVolumeTaskPostWithHttpInfo(keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌ Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo  (optional)
      * @return ApiResponse&lt;KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -5095,8 +5805,8 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> googleAdsSearchVolumeTaskPostWithHttpInfo(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleAdsSearchVolumeTaskPostValidateBeforeCall(keywordsDataTaskRequestInfo, null);
+    public ApiResponse<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> googleAdsSearchVolumeTaskPostWithHttpInfo(List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleAdsSearchVolumeTaskPostValidateBeforeCall(keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo, null);
         Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -5104,7 +5814,7 @@ public class KeywordsDataApi {
     /**
      *  (asynchronously)
      * ‌ Note that Google Ads Keywords Data API is based on the latest version of the Google Ads API that has replaced legacy Google AdWords API. If you’re using DataForSEO Google AdWords API, you need to upgrade to DataForSEO Google Ads API. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/google_ads/search_volume/task_post/?bash&#39;
-     * @param keywordsDataTaskRequestInfo  (optional)
+     * @param keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -5114,9 +5824,9 @@ public class KeywordsDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAdsSearchVolumeTaskPostAsync(List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo, final ApiCallback<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchVolumeTaskPostAsync(List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo, final ApiCallback<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleAdsSearchVolumeTaskPostValidateBeforeCall(keywordsDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleAdsSearchVolumeTaskPostValidateBeforeCall(keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -6798,7 +7508,7 @@ public class KeywordsDataApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
      * @param keywordsDataErrorsRequestInfo  (optional)
      * @return KeywordsDataErrorsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6815,7 +7525,7 @@ public class KeywordsDataApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
      * @param keywordsDataErrorsRequestInfo  (optional)
      * @return ApiResponse&lt;KeywordsDataErrorsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6833,7 +7543,7 @@ public class KeywordsDataApi {
 
     /**
      *  (asynchronously)
-     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
      * @param keywordsDataErrorsRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call

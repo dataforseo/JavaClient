@@ -23,6 +23,10 @@ import io.github.dataforseo.client.model.BusinessDataBusinessListingsSearchLiveR
 import io.github.dataforseo.client.model.BusinessDataBusinessListingsSearchLiveResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataErrorsRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataErrorsResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTaskGetResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTaskPostRequestInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTaskPostResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleHotelInfoLiveHtmlRequestInfo;
@@ -41,8 +45,10 @@ import io.github.dataforseo.client.model.BusinessDataGoogleHotelSearchesTasksRea
 import io.github.dataforseo.client.model.BusinessDataGoogleLanguagesResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleLocationsResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoLiveRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoLiveResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo;
@@ -67,7 +73,6 @@ import io.github.dataforseo.client.model.BusinessDataSocialMediaPinterestLiveReq
 import io.github.dataforseo.client.model.BusinessDataSocialMediaPinterestLiveResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaRedditLiveRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaRedditLiveResponseInfo;
-import io.github.dataforseo.client.model.BusinessDataTaskRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataTripadvisorLanguagesResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataTripadvisorLocationsCountryResponseInfo;
@@ -105,7 +110,7 @@ public class BusinessDataApiTest {
     private final BusinessDataApi api = new BusinessDataApi();
 
     /**
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -116,7 +121,7 @@ public class BusinessDataApiTest {
     }
 
     /**
-     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -265,6 +270,41 @@ public class BusinessDataApiTest {
     }
 
     /**
+     * The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleExtendedReviewsTaskGetTest() throws ApiException {
+        String id = null;
+        BusinessDataGoogleExtendedReviewsTaskGetResponseInfo response = api.googleExtendedReviewsTaskGet(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌‌ This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleExtendedReviewsTaskPostTest() throws ApiException {
+        List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> businessDataGoogleExtendedReviewsTaskPostRequestInfo = null;
+        BusinessDataGoogleExtendedReviewsTaskPostResponseInfo response = api.googleExtendedReviewsTaskPost(businessDataGoogleExtendedReviewsTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleExtendedReviewsTasksReadyTest() throws ApiException {
+        BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo response = api.googleExtendedReviewsTasksReady();
+        // TODO: test validations
+    }
+
+    /**
      * ‌‌ Google Hotel Info will provide you with structured data available for a specific hotel entity on the Google Hotels platform: such as service description, location details, rating, amenities, reviews, images, prices, and more. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/hotel_info/live/advanced/?bash&#39;
      *
      * @throws ApiException if the Api call fails
@@ -389,8 +429,8 @@ public class BusinessDataApiTest {
      */
     @Test
     public void googleMyBusinessInfoLiveTest() throws ApiException {
-        List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo = null;
-        BusinessDataGoogleMyBusinessInfoLiveResponseInfo response = api.googleMyBusinessInfoLive(businessDataTaskRequestInfo);
+        List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> businessDataGoogleMyBusinessInfoLiveRequestInfo = null;
+        BusinessDataGoogleMyBusinessInfoLiveResponseInfo response = api.googleMyBusinessInfoLive(businessDataGoogleMyBusinessInfoLiveRequestInfo);
         // TODO: test validations
     }
 
@@ -413,8 +453,8 @@ public class BusinessDataApiTest {
      */
     @Test
     public void googleMyBusinessInfoTaskPostTest() throws ApiException {
-        List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo = null;
-        BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo response = api.googleMyBusinessInfoTaskPost(businessDataTaskRequestInfo);
+        List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> businessDataGoogleMyBusinessInfoTaskPostRequestInfo = null;
+        BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo response = api.googleMyBusinessInfoTaskPost(businessDataGoogleMyBusinessInfoTaskPostRequestInfo);
         // TODO: test validations
     }
 

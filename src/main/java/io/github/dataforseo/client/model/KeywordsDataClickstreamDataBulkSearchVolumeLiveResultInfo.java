@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.KeywordsDataClickstreamDataBulkSearchVolumeLiveItem;
+import io.github.dataforseo.client.model.KeywordsDataClickstreamDataSearchVolumeLiveItem;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo {
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
@@ -64,7 +64,7 @@ public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<KeywordsDataClickstreamDataBulkSearchVolumeLiveItem> items;
+  private List<KeywordsDataClickstreamDataSearchVolumeLiveItem> items;
 
   public KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo() {
   }
@@ -107,12 +107,12 @@ public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo {
   }
 
 
-  public KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo items(List<KeywordsDataClickstreamDataBulkSearchVolumeLiveItem> items) {
+  public KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo items(List<KeywordsDataClickstreamDataSearchVolumeLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo addItemsItem(KeywordsDataClickstreamDataBulkSearchVolumeLiveItem itemsItem) {
+  public KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo addItemsItem(KeywordsDataClickstreamDataSearchVolumeLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -125,11 +125,11 @@ public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<KeywordsDataClickstreamDataBulkSearchVolumeLiveItem> getItems() {
+  public List<KeywordsDataClickstreamDataSearchVolumeLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<KeywordsDataClickstreamDataBulkSearchVolumeLiveItem> items) {
+  public void setItems(List<KeywordsDataClickstreamDataSearchVolumeLiveItem> items) {
     this.items = items;
   }
 
@@ -271,7 +271,7 @@ public class KeywordsDataClickstreamDataBulkSearchVolumeLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            KeywordsDataClickstreamDataBulkSearchVolumeLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            KeywordsDataClickstreamDataSearchVolumeLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

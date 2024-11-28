@@ -51,11 +51,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
   private List<String> keywords = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_TARGET = "target";
+  @SerializedName(SERIALIZED_NAME_TARGET)
+  private String target;
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
@@ -89,13 +93,13 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_DATE_TO)
   private String dateTo;
 
-  public static final String SERIALIZED_NAME_INCLUDE_ADULT_KEYWORDS = "include_adult_keywords";
-  @SerializedName(SERIALIZED_NAME_INCLUDE_ADULT_KEYWORDS)
-  private Boolean includeAdultKeywords;
-
   public static final String SERIALIZED_NAME_SORT_BY = "sort_by";
   @SerializedName(SERIALIZED_NAME_SORT_BY)
   private String sortBy;
+
+  public static final String SERIALIZED_NAME_INCLUDE_ADULT_KEYWORDS = "include_adult_keywords";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_ADULT_KEYWORDS)
+  private Boolean includeAdultKeywords;
 
   public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
   @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
@@ -108,10 +112,6 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
-
-  public static final String SERIALIZED_NAME_TARGET = "target";
-  @SerializedName(SERIALIZED_NAME_TARGET)
-  private String target;
 
   public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo() {
   }
@@ -130,7 +130,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   }
 
   /**
-   * keywords required field The maximum number of keywords you can specify: 1000 The maximum number of characters for each keyword: 80 The maximum number of words for each keyword phrase: 10 the keywords you specify will be converted to a lowercase format Note #1: Google Ads may return no data for certain groups of keywords; Note #2: Google Ads provides combined search volume values for groups of similar keywords to obtain search volume for similar keywords, we recommend submitting such keywords in separate requests; Note #3: Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task; to learn more about which symbols can be used, please refer to this article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywords required field The maximum number of keywords you can specify: 20 The maximum number of characters for each keyword: 80 the keywords you specify will be converted to a lowercase format Note: Google Ads may return no data for certain groups of keywords visit our Help Center to learn more Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task; to learn more about which symbols and characters can be used, please refer to this article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -140,6 +140,25 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
 
   public void setKeywords(List<String> keywords) {
     this.keywords = keywords;
+  }
+
+
+  public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo target(String target) {
+    this.target = target;
+    return this;
+  }
+
+  /**
+   * target website optional field specify a website or URL to get a list of keywords relevant to it; Note: if a website url is specified, you will still get keywords relevant for the entire website
+   * @return target
+   */
+  @javax.annotation.Nullable
+  public String getTarget() {
+    return target;
+  }
+
+  public void setTarget(String target) {
+    this.target = target;
   }
 
 
@@ -282,7 +301,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   }
 
   /**
-   * ending date of the time range optional field Note: the indicated date cannot be greater than the past month, Google Ads does not return data on the current month; if you don’t specify this field, yesterday’s date will be used by default date format: \&quot;yyyy-mm-dd\&quot; example: \&quot;2022-11-30\&quot;
+   * ending date of the time range optional field Note: the indicated date cannot be greater than yesterday’s date; if you don’t specify this field, yesterday’s date will be used by default date format: \&quot;yyyy-mm-dd\&quot; example: \&quot;2022-11-30\&quot;
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -295,32 +314,13 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   }
 
 
-  public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo includeAdultKeywords(Boolean includeAdultKeywords) {
-    this.includeAdultKeywords = includeAdultKeywords;
-    return this;
-  }
-
-  /**
-   * include keywords associated with adult content optional field if set to true, adult keywords will be included in the response default value: false note that the API may return no data for such keywords due to Google Ads restrictions
-   * @return includeAdultKeywords
-   */
-  @javax.annotation.Nullable
-  public Boolean getIncludeAdultKeywords() {
-    return includeAdultKeywords;
-  }
-
-  public void setIncludeAdultKeywords(Boolean includeAdultKeywords) {
-    this.includeAdultKeywords = includeAdultKeywords;
-  }
-
-
   public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo sortBy(String sortBy) {
     this.sortBy = sortBy;
     return this;
   }
 
   /**
-   * results sorting parameters optional field use these parameters to sort the results by relevance, search_volume, competition_index, low_top_of_page_bid, or high_top_of_page_bid in the descending order default value: relevance
+   * results sorting parameters optional field Use these parameters to sort the results by relevance, search_volume, competition_index, low_top_of_page_bid, or high_top_of_page_bid in descending order default value: relevance
    * @return sortBy
    */
   @javax.annotation.Nullable
@@ -333,13 +333,32 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   }
 
 
+  public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo includeAdultKeywords(Boolean includeAdultKeywords) {
+    this.includeAdultKeywords = includeAdultKeywords;
+    return this;
+  }
+
+  /**
+   * include keywords associated with adult content optional field if set to true, adult keywords will be included in the response default value: false note that the API may return no data for such keywords due to Google Ads restrictions
+   * @return includeAdultKeywords
+   */
+  @javax.annotation.Nullable
+  public Boolean getIncludeAdultKeywords() {
+    return includeAdultKeywords;
+  }
+
+  public void setIncludeAdultKeywords(Boolean includeAdultKeywords) {
+    this.includeAdultKeywords = includeAdultKeywords;
+  }
+
+
   public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo postbackUrl(String postbackUrl) {
     this.postbackUrl = postbackUrl;
     return this;
   }
 
   /**
-   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in postback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in postback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -358,7 +377,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   }
 
   /**
-   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in pingback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
+   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in pingback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -377,7 +396,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
   }
 
   /**
-   * user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data array of the response
+   * user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -387,25 +406,6 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
 
   public void setTag(String tag) {
     this.tag = tag;
-  }
-
-
-  public KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo target(String target) {
-    this.target = target;
-    return this;
-  }
-
-  /**
-   * target website optional field specify a website or URL to get a list of keywords relevant to it; Note: if a website url is specified, you will still get keywords relevant for the entire website
-   * @return target
-   */
-  @javax.annotation.Nullable
-  public String getTarget() {
-    return target;
-  }
-
-  public void setTarget(String target) {
-    this.target = target;
   }
 
   /**
@@ -464,6 +464,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
     }
     KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo = (KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo) o;
     return Objects.equals(this.keywords, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.keywords) &&
+        Objects.equals(this.target, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.target) &&
         Objects.equals(this.locationName, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.locationCoordinate) &&
@@ -472,12 +473,11 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
         Objects.equals(this.searchPartners, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.searchPartners) &&
         Objects.equals(this.dateFrom, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.dateFrom) &&
         Objects.equals(this.dateTo, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.dateTo) &&
-        Objects.equals(this.includeAdultKeywords, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.includeAdultKeywords) &&
         Objects.equals(this.sortBy, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.sortBy) &&
+        Objects.equals(this.includeAdultKeywords, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.includeAdultKeywords) &&
         Objects.equals(this.postbackUrl, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.pingbackUrl, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.pingbackUrl) &&
-        Objects.equals(this.tag, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.tag) &&
-        Objects.equals(this.target, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.target)&&
+        Objects.equals(this.tag, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, keywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo.additionalProperties);
   }
 
@@ -487,7 +487,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywords, locationName, locationCode, locationCoordinate, languageName, languageCode, searchPartners, dateFrom, dateTo, includeAdultKeywords, sortBy, postbackUrl, pingbackUrl, tag, target, additionalProperties);
+    return Objects.hash(keywords, target, locationName, locationCode, locationCoordinate, languageName, languageCode, searchPartners, dateFrom, dateTo, sortBy, includeAdultKeywords, postbackUrl, pingbackUrl, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -502,6 +502,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {\n");
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");
+    sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
@@ -510,12 +511,11 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
     sb.append("    searchPartners: ").append(toIndentedString(searchPartners)).append("\n");
     sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
-    sb.append("    includeAdultKeywords: ").append(toIndentedString(includeAdultKeywords)).append("\n");
     sb.append("    sortBy: ").append(toIndentedString(sortBy)).append("\n");
+    sb.append("    includeAdultKeywords: ").append(toIndentedString(includeAdultKeywords)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -540,6 +540,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("keywords");
+    openapiFields.add("target");
     openapiFields.add("location_name");
     openapiFields.add("location_code");
     openapiFields.add("location_coordinate");
@@ -548,12 +549,11 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
     openapiFields.add("search_partners");
     openapiFields.add("date_from");
     openapiFields.add("date_to");
-    openapiFields.add("include_adult_keywords");
     openapiFields.add("sort_by");
+    openapiFields.add("include_adult_keywords");
     openapiFields.add("postback_url");
     openapiFields.add("pingback_url");
     openapiFields.add("tag");
-    openapiFields.add("target");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -575,6 +575,9 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("keywords") != null && !jsonObj.get("keywords").isJsonNull() && !jsonObj.get("keywords").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `keywords` to be an array in the JSON string but got `%s`", jsonObj.get("keywords").toString()));
+      }
+      if ((jsonObj.get("target") != null && !jsonObj.get("target").isJsonNull()) && !jsonObj.get("target").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `target` to be a primitive type in the JSON string but got `%s`", jsonObj.get("target").toString()));
       }
       if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
@@ -605,9 +608,6 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo {
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));
-      }
-      if ((jsonObj.get("target") != null && !jsonObj.get("target").isJsonNull()) && !jsonObj.get("target").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `target` to be a primitive type in the JSON string but got `%s`", jsonObj.get("target").toString()));
       }
   }
 

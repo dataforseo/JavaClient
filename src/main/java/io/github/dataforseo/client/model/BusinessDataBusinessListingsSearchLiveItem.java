@@ -26,7 +26,7 @@ import io.github.dataforseo.client.model.BusinessDataContactInfo;
 import io.github.dataforseo.client.model.PeopleAlsoSearch;
 import io.github.dataforseo.client.model.PopularTimes;
 import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkInfo;
+import io.github.dataforseo.client.model.WorkTime;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -61,7 +61,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -177,7 +177,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   public static final String SERIALIZED_NAME_WORK_TIME = "work_time";
   @SerializedName(SERIALIZED_NAME_WORK_TIME)
-  private WorkInfo workTime;
+  private WorkTime workTime;
 
   public static final String SERIALIZED_NAME_POPULAR_TIMES = "popular_times";
   @SerializedName(SERIALIZED_NAME_POPULAR_TIMES)
@@ -778,7 +778,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
 
-  public BusinessDataBusinessListingsSearchLiveItem workTime(WorkInfo workTime) {
+  public BusinessDataBusinessListingsSearchLiveItem workTime(WorkTime workTime) {
     this.workTime = workTime;
     return this;
   }
@@ -788,11 +788,11 @@ public class BusinessDataBusinessListingsSearchLiveItem {
    * @return workTime
    */
   @javax.annotation.Nullable
-  public WorkInfo getWorkTime() {
+  public WorkTime getWorkTime() {
     return workTime;
   }
 
-  public void setWorkTime(WorkInfo workTime) {
+  public void setWorkTime(WorkTime workTime) {
     this.workTime = workTime;
   }
 
@@ -1231,7 +1231,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
       }
       // validate the optional field `work_time`
       if (jsonObj.get("work_time") != null && !jsonObj.get("work_time").isJsonNull()) {
-        WorkInfo.validateJsonElement(jsonObj.get("work_time"));
+        WorkTime.validateJsonElement(jsonObj.get("work_time"));
       }
       // validate the optional field `popular_times`
       if (jsonObj.get("popular_times") != null && !jsonObj.get("popular_times").isJsonNull()) {

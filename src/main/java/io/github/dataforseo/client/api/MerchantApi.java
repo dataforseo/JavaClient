@@ -66,6 +66,7 @@ import io.github.dataforseo.client.model.MerchantGoogleProductSpecTaskPostRespon
 import io.github.dataforseo.client.model.MerchantGoogleProductSpecTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.MerchantGoogleProductsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleSellersAdUrlResponseInfo;
@@ -76,7 +77,6 @@ import io.github.dataforseo.client.model.MerchantGoogleSellersTaskPostResponseIn
 import io.github.dataforseo.client.model.MerchantGoogleSellersTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantIdListRequestInfo;
 import io.github.dataforseo.client.model.MerchantIdListResponseInfo;
-import io.github.dataforseo.client.model.MerchantTaskRequestInfo;
 import io.github.dataforseo.client.model.MerchantTasksReadyResponseInfo;
 
 import java.lang.reflect.Type;
@@ -3109,7 +3109,7 @@ public class MerchantApi {
     }
     /**
      * Build call for googleProductsTaskPost
-     * @param merchantTaskRequestInfo  (optional)
+     * @param merchantGoogleProductsTaskPostRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -3119,7 +3119,7 @@ public class MerchantApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleProductsTaskPostCall(List<MerchantTaskRequestInfo> merchantTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleProductsTaskPostCall(List<MerchantGoogleProductsTaskPostRequestInfo> merchantGoogleProductsTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -3133,7 +3133,7 @@ public class MerchantApi {
             basePath = null;
         }
 
-        Object localVarPostBody = merchantTaskRequestInfo;
+        Object localVarPostBody = merchantGoogleProductsTaskPostRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/merchant/google/products/task_post";
@@ -3165,15 +3165,15 @@ public class MerchantApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleProductsTaskPostValidateBeforeCall(List<MerchantTaskRequestInfo> merchantTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleProductsTaskPostCall(merchantTaskRequestInfo, _callback);
+    private okhttp3.Call googleProductsTaskPostValidateBeforeCall(List<MerchantGoogleProductsTaskPostRequestInfo> merchantGoogleProductsTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleProductsTaskPostCall(merchantGoogleProductsTaskPostRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌ Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash&#39;
-     * @param merchantTaskRequestInfo  (optional)
+     * @param merchantGoogleProductsTaskPostRequestInfo  (optional)
      * @return MerchantGoogleProductsTaskPostResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3182,15 +3182,15 @@ public class MerchantApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public MerchantGoogleProductsTaskPostResponseInfo googleProductsTaskPost(List<MerchantTaskRequestInfo> merchantTaskRequestInfo) throws ApiException {
-        ApiResponse<MerchantGoogleProductsTaskPostResponseInfo> localVarResp = googleProductsTaskPostWithHttpInfo(merchantTaskRequestInfo);
+    public MerchantGoogleProductsTaskPostResponseInfo googleProductsTaskPost(List<MerchantGoogleProductsTaskPostRequestInfo> merchantGoogleProductsTaskPostRequestInfo) throws ApiException {
+        ApiResponse<MerchantGoogleProductsTaskPostResponseInfo> localVarResp = googleProductsTaskPostWithHttpInfo(merchantGoogleProductsTaskPostRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌ Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash&#39;
-     * @param merchantTaskRequestInfo  (optional)
+     * @param merchantGoogleProductsTaskPostRequestInfo  (optional)
      * @return ApiResponse&lt;MerchantGoogleProductsTaskPostResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3199,8 +3199,8 @@ public class MerchantApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<MerchantGoogleProductsTaskPostResponseInfo> googleProductsTaskPostWithHttpInfo(List<MerchantTaskRequestInfo> merchantTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleProductsTaskPostValidateBeforeCall(merchantTaskRequestInfo, null);
+    public ApiResponse<MerchantGoogleProductsTaskPostResponseInfo> googleProductsTaskPostWithHttpInfo(List<MerchantGoogleProductsTaskPostRequestInfo> merchantGoogleProductsTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleProductsTaskPostValidateBeforeCall(merchantGoogleProductsTaskPostRequestInfo, null);
         Type localVarReturnType = new TypeToken<MerchantGoogleProductsTaskPostResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -3208,7 +3208,7 @@ public class MerchantApi {
     /**
      *  (asynchronously)
      * ‌‌ Google Shopping Products endpoint will provide you with the list of products found on Google Shopping for the specified query. The results include product title, description in Google Shopping SERP, product rank, price, reviews and rating as well as the related domain. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/google/products/task_post/?bash&#39;
-     * @param merchantTaskRequestInfo  (optional)
+     * @param merchantGoogleProductsTaskPostRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -3218,9 +3218,9 @@ public class MerchantApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleProductsTaskPostAsync(List<MerchantTaskRequestInfo> merchantTaskRequestInfo, final ApiCallback<MerchantGoogleProductsTaskPostResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleProductsTaskPostAsync(List<MerchantGoogleProductsTaskPostRequestInfo> merchantGoogleProductsTaskPostRequestInfo, final ApiCallback<MerchantGoogleProductsTaskPostResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleProductsTaskPostValidateBeforeCall(merchantTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleProductsTaskPostValidateBeforeCall(merchantGoogleProductsTaskPostRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<MerchantGoogleProductsTaskPostResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -4352,7 +4352,7 @@ public class MerchantApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
      * @param merchantErrorsRequestInfo  (optional)
      * @return MerchantErrorsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4369,7 +4369,7 @@ public class MerchantApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
      * @param merchantErrorsRequestInfo  (optional)
      * @return ApiResponse&lt;MerchantErrorsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -4387,7 +4387,7 @@ public class MerchantApi {
 
     /**
      *  (asynchronously)
-     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Merchant API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/errors/?bash&#39;
      * @param merchantErrorsRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call

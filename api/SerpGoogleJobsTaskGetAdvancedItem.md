@@ -13,7 +13,7 @@
 |**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
 |**jobId** | **String** | ID of the job on Google Jobs |  [optional] |
-|**title** | **String** | title of the job |  [optional] |
+|**title** | **String** | title of the element |  [optional] |
 |**employerName** | **String** | name of the employer |  [optional] |
 |**employerUrl** | **String** | URL to the employer’s website |  [optional] |
 |**employerImageUrl** | **String** | URL to the image used in the job posting |  [optional] |

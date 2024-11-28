@@ -1050,7 +1050,7 @@ public class Example {
 
 
 
-‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
+‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
 
 ### Example
 ```java
@@ -1182,7 +1182,7 @@ This endpoint does not need any parameter.
 
 
 
-By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
+By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
 
 ### Example
 ```java
@@ -1918,7 +1918,7 @@ public class Example {
 
 <a id="taskPost"></a>
 # **taskPost**
-> OnPageTaskPostResponseInfo taskPost(onPageTaskRequestInfo)
+> OnPageTaskPostResponseInfo taskPost(onPageTaskPostRequestInfo)
 
 
 
@@ -1945,9 +1945,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    List<OnPageTaskRequestInfo> onPageTaskRequestInfo = Arrays.asList(); // List<OnPageTaskRequestInfo> | 
+    List<OnPageTaskPostRequestInfo> onPageTaskPostRequestInfo = Arrays.asList(); // List<OnPageTaskPostRequestInfo> | 
     try {
-      OnPageTaskPostResponseInfo result = apiInstance.taskPost(onPageTaskRequestInfo);
+      OnPageTaskPostResponseInfo result = apiInstance.taskPost(onPageTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#taskPost");
@@ -1964,7 +1964,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **onPageTaskRequestInfo** | [**List&lt;OnPageTaskRequestInfo&gt;**](OnPageTaskRequestInfo.md)|  | [optional] |
+| **onPageTaskPostRequestInfo** | [**List&lt;OnPageTaskPostRequestInfo&gt;**](OnPageTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 

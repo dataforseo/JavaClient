@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AddressInfo;
 import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkInfo;
+import io.github.dataforseo.client.model.WorkHours;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

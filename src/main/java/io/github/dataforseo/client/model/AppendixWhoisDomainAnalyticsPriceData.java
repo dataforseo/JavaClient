@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -49,16 +49,16 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixWhoisDomainAnalyticsPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixWhoisDomainAnalyticsPriceData {
   public static final String SERIALIZED_NAME_OVERVIEW = "overview";
   @SerializedName(SERIALIZED_NAME_OVERVIEW)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo overview;
+  private AppendixBingKeywordsDataPriceDataInfo overview;
 
   public AppendixWhoisDomainAnalyticsPriceData() {
   }
 
-  public AppendixWhoisDomainAnalyticsPriceData overview(AppendixKeywordBingKeywordsDataPriceDataInfo overview) {
+  public AppendixWhoisDomainAnalyticsPriceData overview(AppendixBingKeywordsDataPriceDataInfo overview) {
     this.overview = overview;
     return this;
   }
@@ -68,11 +68,11 @@ public class AppendixWhoisDomainAnalyticsPriceData {
    * @return overview
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getOverview() {
+  public AppendixBingKeywordsDataPriceDataInfo getOverview() {
     return overview;
   }
 
-  public void setOverview(AppendixKeywordBingKeywordsDataPriceDataInfo overview) {
+  public void setOverview(AppendixBingKeywordsDataPriceDataInfo overview) {
     this.overview = overview;
   }
 
@@ -189,7 +189,7 @@ public class AppendixWhoisDomainAnalyticsPriceData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `overview`
       if (jsonObj.get("overview") != null && !jsonObj.get("overview").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("overview"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("overview"));
       }
   }
 

@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordIdeasLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -130,7 +130,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   }
 
   /**
-   * keywords required field UTF-8 encoding The maximum number of keywords you can specify: 200. The minimum number of characters for each keyword: 3. The keywords will be converted to lowercase format learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywords required field UTF-8 encoding The maximum number of keywords you can specify: 200. The keywords will be converted to lowercase format learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -282,7 +282,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo {
   }
 
   /**
-   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info object with clickstream data in the response default value: false with this parameter enabled, you will be charged double the price for the request learn more about how clickstream-based metrics are calculated in this help center article
+   * include or exclude data from clickstream-based metrics in the result optional field if the parameter is set to true, you will receive clickstream_keyword_info, keyword_info_normalized_with_clickstream, and keyword_info_normalized_with_bing fields in the response default value: false with this parameter enabled, you will be charged double the price for the request learn more about how clickstream-based metrics are calculated in this help center article
    * @return includeClickstreamData
    */
   @javax.annotation.Nullable

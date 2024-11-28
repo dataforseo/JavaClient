@@ -14,6 +14,14 @@
 package io.github.dataforseo.client.api;
 
 import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationIndustriesResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationLiveRequestInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationLiveResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTaskGetResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTaskPostRequestInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTaskPostResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataBingAudienceEstimationTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingKeywordPerformanceLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingKeywordPerformanceLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo;
@@ -48,9 +56,11 @@ import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskGetResp
 import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTaskPostResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataBingSearchVolumeTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataDataforseoTrendsDemographyLiveRequestInfo;
@@ -71,6 +81,7 @@ import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeyword
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo;
@@ -85,8 +96,10 @@ import io.github.dataforseo.client.model.KeywordsDataGoogleAdsKeywordsForSiteTas
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsLanguagesResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsLocationsResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo;
+import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsSearchVolumeTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataGoogleAdsStatusResponseInfo;
@@ -102,7 +115,6 @@ import io.github.dataforseo.client.model.KeywordsDataGoogleTrendsLocationsCountr
 import io.github.dataforseo.client.model.KeywordsDataGoogleTrendsLocationsResponseInfo;
 import io.github.dataforseo.client.model.KeywordsDataIdListRequestInfo;
 import io.github.dataforseo.client.model.KeywordsDataIdListResponseInfo;
-import io.github.dataforseo.client.model.KeywordsDataTaskRequestInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -118,6 +130,75 @@ import java.util.Map;
 public class KeywordsDataApiTest {
 
     private final KeywordsDataApi api = new KeywordsDataApi();
+
+    /**
+     * By calling this API you will receive the list of industries with industry_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/industries/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingAudienceEstimationIndustriesTest() throws ApiException {
+        KeywordsDataBingAudienceEstimationIndustriesResponseInfo response = api.bingAudienceEstimationIndustries();
+        // TODO: test validations
+    }
+
+    /**
+     * By calling this API you will receive the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/job_functions/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingAudienceEstimationJobFunctionsTest() throws ApiException {
+        KeywordsDataBingAudienceEstimationJobFunctionsResponseInfo response = api.bingAudienceEstimationJobFunctions();
+        // TODO: test validations
+    }
+
+    /**
+     * This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingAudienceEstimationLiveTest() throws ApiException {
+        List<KeywordsDataBingAudienceEstimationLiveRequestInfo> keywordsDataBingAudienceEstimationLiveRequestInfo = null;
+        KeywordsDataBingAudienceEstimationLiveResponseInfo response = api.bingAudienceEstimationLive(keywordsDataBingAudienceEstimationLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_get/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingAudienceEstimationTaskGetTest() throws ApiException {
+        String id = null;
+        KeywordsDataBingAudienceEstimationTaskGetResponseInfo response = api.bingAudienceEstimationTaskGet(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ This endpoint provides estimated audience size for an ad campaign based on specified targeting criteria. It returns data on the total estimated audience, such as suggested bid and budget for an ad campaign and estimated engagement metrics. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingAudienceEstimationTaskPostTest() throws ApiException {
+        List<KeywordsDataBingAudienceEstimationTaskPostRequestInfo> keywordsDataBingAudienceEstimationTaskPostRequestInfo = null;
+        KeywordsDataBingAudienceEstimationTaskPostResponseInfo response = api.bingAudienceEstimationTaskPost(keywordsDataBingAudienceEstimationTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ This endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/keywords_data/bing/audience_estimation/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void bingAudienceEstimationTasksReadyTest() throws ApiException {
+        KeywordsDataBingAudienceEstimationTasksReadyResponseInfo response = api.bingAudienceEstimationTasksReady();
+        // TODO: test validations
+    }
 
     /**
      * ‌ You can receive a set of keyword performance stats for a group of keywords depending on the specified match type, location and language parameters. Ad position, clicks, impressions, and other keyword metrics are aggregated for the last month for one or all of the following device types: mobile, desktop, tablet. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/bing/keyword_performance/live/?bash&#39;
@@ -361,8 +442,8 @@ public class KeywordsDataApiTest {
      */
     @Test
     public void clickstreamDataBulkSearchVolumeLiveTest() throws ApiException {
-        List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = null;
-        KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo response = api.clickstreamDataBulkSearchVolumeLive(keywordsDataTaskRequestInfo);
+        List<KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo = null;
+        KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo response = api.clickstreamDataBulkSearchVolumeLive(keywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo);
         // TODO: test validations
     }
 
@@ -385,8 +466,8 @@ public class KeywordsDataApiTest {
      */
     @Test
     public void clickstreamDataGlobalSearchVolumeLiveTest() throws ApiException {
-        List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = null;
-        KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo response = api.clickstreamDataGlobalSearchVolumeLive(keywordsDataTaskRequestInfo);
+        List<KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo> keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo = null;
+        KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo response = api.clickstreamDataGlobalSearchVolumeLive(keywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo);
         // TODO: test validations
     }
 
@@ -492,8 +573,8 @@ public class KeywordsDataApiTest {
      */
     @Test
     public void googleAdsKeywordsForKeywordsLiveTest() throws ApiException {
-        List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = null;
-        KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo response = api.googleAdsKeywordsForKeywordsLive(keywordsDataTaskRequestInfo);
+        List<KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo> keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo = null;
+        KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo response = api.googleAdsKeywordsForKeywordsLive(keywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo);
         // TODO: test validations
     }
 
@@ -586,8 +667,8 @@ public class KeywordsDataApiTest {
      */
     @Test
     public void googleAdsSearchVolumeLiveTest() throws ApiException {
-        List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = null;
-        KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo response = api.googleAdsSearchVolumeLive(keywordsDataTaskRequestInfo);
+        List<KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo> keywordsDataGoogleAdsSearchVolumeLiveRequestInfo = null;
+        KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo response = api.googleAdsSearchVolumeLive(keywordsDataGoogleAdsSearchVolumeLiveRequestInfo);
         // TODO: test validations
     }
 
@@ -610,8 +691,8 @@ public class KeywordsDataApiTest {
      */
     @Test
     public void googleAdsSearchVolumeTaskPostTest() throws ApiException {
-        List<KeywordsDataTaskRequestInfo> keywordsDataTaskRequestInfo = null;
-        KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo response = api.googleAdsSearchVolumeTaskPost(keywordsDataTaskRequestInfo);
+        List<KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo> keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo = null;
+        KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo response = api.googleAdsSearchVolumeTaskPost(keywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -774,7 +855,7 @@ public class KeywordsDataApiTest {
     }
 
     /**
-     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Keywords Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/keywords_data/errors/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

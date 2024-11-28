@@ -19,6 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.MessageInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MicrodataFieldsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class MicrodataFieldsInfo {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -59,7 +60,7 @@ public class MicrodataFieldsInfo {
 
   public static final String SERIALIZED_NAME_TYPES = "types";
   @SerializedName(SERIALIZED_NAME_TYPES)
-  private Object types;
+  private List<String> types;
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
@@ -67,7 +68,7 @@ public class MicrodataFieldsInfo {
 
   public static final String SERIALIZED_NAME_TEST_RESULTS = "test_results";
   @SerializedName(SERIALIZED_NAME_TEST_RESULTS)
-  private Object testResults;
+  private List<MessageInfo> testResults;
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
@@ -95,8 +96,16 @@ public class MicrodataFieldsInfo {
   }
 
 
-  public MicrodataFieldsInfo types(Object types) {
+  public MicrodataFieldsInfo types(List<String> types) {
     this.types = types;
+    return this;
+  }
+
+  public MicrodataFieldsInfo addTypesItem(String typesItem) {
+    if (this.types == null) {
+      this.types = new ArrayList<>();
+    }
+    this.types.add(typesItem);
     return this;
   }
 
@@ -105,11 +114,11 @@ public class MicrodataFieldsInfo {
    * @return types
    */
   @javax.annotation.Nullable
-  public Object getTypes() {
+  public List<String> getTypes() {
     return types;
   }
 
-  public void setTypes(Object types) {
+  public void setTypes(List<String> types) {
     this.types = types;
   }
 
@@ -133,21 +142,29 @@ public class MicrodataFieldsInfo {
   }
 
 
-  public MicrodataFieldsInfo testResults(Object testResults) {
+  public MicrodataFieldsInfo testResults(List<MessageInfo> testResults) {
     this.testResults = testResults;
     return this;
   }
 
+  public MicrodataFieldsInfo addTestResultsItem(MessageInfo testResultsItem) {
+    if (this.testResults == null) {
+      this.testResults = new ArrayList<>();
+    }
+    this.testResults.add(testResultsItem);
+    return this;
+  }
+
   /**
-   * microdata validation test results sub-type microdata test results that contain detected errors and related messages
+   * list of microdata types
    * @return testResults
    */
   @javax.annotation.Nullable
-  public Object getTestResults() {
+  public List<MessageInfo> getTestResults() {
     return testResults;
   }
 
-  public void setTestResults(Object testResults) {
+  public void setTestResults(List<MessageInfo> testResults) {
     this.testResults = testResults;
   }
 
@@ -315,8 +332,26 @@ public class MicrodataFieldsInfo {
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("types") != null && !jsonObj.get("types").isJsonNull() && !jsonObj.get("types").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `types` to be an array in the JSON string but got `%s`", jsonObj.get("types").toString()));
+      }
       if ((jsonObj.get("value") != null && !jsonObj.get("value").isJsonNull()) && !jsonObj.get("value").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("value").toString()));
+      }
+      if (jsonObj.get("test_results") != null && !jsonObj.get("test_results").isJsonNull()) {
+        JsonArray jsonArraytestResults = jsonObj.getAsJsonArray("test_results");
+        if (jsonArraytestResults != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("test_results").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `test_results` to be an array in the JSON string but got `%s`", jsonObj.get("test_results").toString()));
+          }
+
+          // validate the optional field `test_results` (array)
+          for (int i = 0; i < jsonArraytestResults.size(); i++) {
+            MessageInfo.validateJsonElement(jsonArraytestResults.get(i));
+          };
+        }
       }
       if (jsonObj.get("fields") != null && !jsonObj.get("fields").isJsonNull()) {
         JsonArray jsonArrayfields = jsonObj.getAsJsonArray("fields");

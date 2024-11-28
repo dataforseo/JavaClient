@@ -36,6 +36,10 @@ import io.github.dataforseo.client.model.BusinessDataBusinessListingsSearchLiveR
 import io.github.dataforseo.client.model.BusinessDataBusinessListingsSearchLiveResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataErrorsRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataErrorsResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTaskGetResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTaskPostRequestInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTaskPostResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleHotelInfoLiveHtmlRequestInfo;
@@ -54,8 +58,10 @@ import io.github.dataforseo.client.model.BusinessDataGoogleHotelSearchesTasksRea
 import io.github.dataforseo.client.model.BusinessDataGoogleLanguagesResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleLocationsResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoLiveRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoLiveResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo;
+import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessInfoTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo;
@@ -80,7 +86,6 @@ import io.github.dataforseo.client.model.BusinessDataSocialMediaPinterestLiveReq
 import io.github.dataforseo.client.model.BusinessDataSocialMediaPinterestLiveResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaRedditLiveRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaRedditLiveResponseInfo;
-import io.github.dataforseo.client.model.BusinessDataTaskRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataTripadvisorLanguagesResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataTripadvisorLocationsCountryResponseInfo;
@@ -208,7 +213,7 @@ public class BusinessDataApi {
 
     /**
      * 
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      * @return BusinessDataBusinessListingsLocationsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -224,7 +229,7 @@ public class BusinessDataApi {
 
     /**
      * 
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      * @return ApiResponse&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -241,7 +246,7 @@ public class BusinessDataApi {
 
     /**
      *  (asynchronously)
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-07-17). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -323,7 +328,7 @@ public class BusinessDataApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
      * @param businessDataErrorsRequestInfo  (optional)
      * @return BusinessDataErrorsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -340,7 +345,7 @@ public class BusinessDataApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
      * @param businessDataErrorsRequestInfo  (optional)
      * @return ApiResponse&lt;BusinessDataErrorsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -358,7 +363,7 @@ public class BusinessDataApi {
 
     /**
      *  (asynchronously)
-     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Business Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/errors/?bash&#39;
      * @param businessDataErrorsRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -1768,6 +1773,360 @@ public class BusinessDataApi {
         return localVarCall;
     }
     /**
+     * Build call for googleExtendedReviewsTaskGet
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleExtendedReviewsTaskGetCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/extended_reviews/task_get/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleExtendedReviewsTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleExtendedReviewsTaskGet(Async)");
+        }
+
+        return googleExtendedReviewsTaskGetCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return BusinessDataGoogleExtendedReviewsTaskGetResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleExtendedReviewsTaskGetResponseInfo googleExtendedReviewsTaskGet(String id) throws ApiException {
+        ApiResponse<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo> localVarResp = googleExtendedReviewsTaskGetWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;BusinessDataGoogleExtendedReviewsTaskGetResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo> googleExtendedReviewsTaskGetWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleExtendedReviewsTaskGetValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * The returned results are specific to the indicated local establishment name, search engine, location and language parameters. We emulate set location and search engine with the highest accuracy so that the results you receive will match the actual search results for the specified parameters at the time of task setting. You can always check the returned results accessing the check_url in the Incognito mode to make sure the received data is entirely relevant. Note that user preferences, search history, and other personalized search factors are ignored by our system and thus would not be reflected in the returned results. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_get/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleExtendedReviewsTaskGetAsync(String id, final ApiCallback<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleExtendedReviewsTaskGetValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleExtendedReviewsTaskGetResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleExtendedReviewsTaskPost
+     * @param businessDataGoogleExtendedReviewsTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleExtendedReviewsTaskPostCall(List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> businessDataGoogleExtendedReviewsTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = businessDataGoogleExtendedReviewsTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/extended_reviews/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleExtendedReviewsTaskPostValidateBeforeCall(List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> businessDataGoogleExtendedReviewsTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleExtendedReviewsTaskPostCall(businessDataGoogleExtendedReviewsTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌ This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash&#39;
+     * @param businessDataGoogleExtendedReviewsTaskPostRequestInfo  (optional)
+     * @return BusinessDataGoogleExtendedReviewsTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleExtendedReviewsTaskPostResponseInfo googleExtendedReviewsTaskPost(List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> businessDataGoogleExtendedReviewsTaskPostRequestInfo) throws ApiException {
+        ApiResponse<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo> localVarResp = googleExtendedReviewsTaskPostWithHttpInfo(businessDataGoogleExtendedReviewsTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌ This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash&#39;
+     * @param businessDataGoogleExtendedReviewsTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;BusinessDataGoogleExtendedReviewsTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo> googleExtendedReviewsTaskPostWithHttpInfo(List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> businessDataGoogleExtendedReviewsTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleExtendedReviewsTaskPostValidateBeforeCall(businessDataGoogleExtendedReviewsTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌ This endpoint provides results from the “Reviews” element of Google SERPs, including not only Google user reviews but also reviews from other reputable sources (e.g., TripAdvisor, Yelp, Trustpilot). The results are specific to the selected location (see the List of Locations) and language (see the List of Languages) parameters. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/task_post/?bash&#39;
+     * @param businessDataGoogleExtendedReviewsTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleExtendedReviewsTaskPostAsync(List<BusinessDataGoogleExtendedReviewsTaskPostRequestInfo> businessDataGoogleExtendedReviewsTaskPostRequestInfo, final ApiCallback<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleExtendedReviewsTaskPostValidateBeforeCall(businessDataGoogleExtendedReviewsTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleExtendedReviewsTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleExtendedReviewsTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleExtendedReviewsTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/business_data/google/extended_reviews/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleExtendedReviewsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return googleExtendedReviewsTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash&#39;
+     * @return BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo googleExtendedReviewsTasksReady() throws ApiException {
+        ApiResponse<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo> localVarResp = googleExtendedReviewsTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo> googleExtendedReviewsTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = googleExtendedReviewsTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you don’t use the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/business_data/google/extended_reviews/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleExtendedReviewsTasksReadyAsync(final ApiCallback<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleExtendedReviewsTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<BusinessDataGoogleExtendedReviewsTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for googleHotelInfoLiveAdvanced
      * @param businessDataGoogleHotelInfoLiveAdvancedRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
@@ -2954,7 +3313,7 @@ public class BusinessDataApi {
     }
     /**
      * Build call for googleMyBusinessInfoLive
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoLiveRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -2964,7 +3323,7 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleMyBusinessInfoLiveCall(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessInfoLiveCall(List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> businessDataGoogleMyBusinessInfoLiveRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -2978,7 +3337,7 @@ public class BusinessDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = businessDataTaskRequestInfo;
+        Object localVarPostBody = businessDataGoogleMyBusinessInfoLiveRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/business_data/google/my_business_info/live";
@@ -3010,15 +3369,15 @@ public class BusinessDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleMyBusinessInfoLiveValidateBeforeCall(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleMyBusinessInfoLiveCall(businessDataTaskRequestInfo, _callback);
+    private okhttp3.Call googleMyBusinessInfoLiveValidateBeforeCall(List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> businessDataGoogleMyBusinessInfoLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleMyBusinessInfoLiveCall(businessDataGoogleMyBusinessInfoLiveRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoLiveRequestInfo  (optional)
      * @return BusinessDataGoogleMyBusinessInfoLiveResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3027,15 +3386,15 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public BusinessDataGoogleMyBusinessInfoLiveResponseInfo googleMyBusinessInfoLive(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo) throws ApiException {
-        ApiResponse<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> localVarResp = googleMyBusinessInfoLiveWithHttpInfo(businessDataTaskRequestInfo);
+    public BusinessDataGoogleMyBusinessInfoLiveResponseInfo googleMyBusinessInfoLive(List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> businessDataGoogleMyBusinessInfoLiveRequestInfo) throws ApiException {
+        ApiResponse<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> localVarResp = googleMyBusinessInfoLiveWithHttpInfo(businessDataGoogleMyBusinessInfoLiveRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoLiveRequestInfo  (optional)
      * @return ApiResponse&lt;BusinessDataGoogleMyBusinessInfoLiveResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3044,8 +3403,8 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> googleMyBusinessInfoLiveWithHttpInfo(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleMyBusinessInfoLiveValidateBeforeCall(businessDataTaskRequestInfo, null);
+    public ApiResponse<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> googleMyBusinessInfoLiveWithHttpInfo(List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> businessDataGoogleMyBusinessInfoLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleMyBusinessInfoLiveValidateBeforeCall(businessDataGoogleMyBusinessInfoLiveRequestInfo, null);
         Type localVarReturnType = new TypeToken<BusinessDataGoogleMyBusinessInfoLiveResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -3053,7 +3412,7 @@ public class BusinessDataApi {
     /**
      *  (asynchronously)
      * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/live/?bash&#39;
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoLiveRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -3063,9 +3422,9 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleMyBusinessInfoLiveAsync(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessInfoLiveAsync(List<BusinessDataGoogleMyBusinessInfoLiveRequestInfo> businessDataGoogleMyBusinessInfoLiveRequestInfo, final ApiCallback<BusinessDataGoogleMyBusinessInfoLiveResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleMyBusinessInfoLiveValidateBeforeCall(businessDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleMyBusinessInfoLiveValidateBeforeCall(businessDataGoogleMyBusinessInfoLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<BusinessDataGoogleMyBusinessInfoLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -3195,7 +3554,7 @@ public class BusinessDataApi {
     }
     /**
      * Build call for googleMyBusinessInfoTaskPost
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoTaskPostRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -3205,7 +3564,7 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleMyBusinessInfoTaskPostCall(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessInfoTaskPostCall(List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> businessDataGoogleMyBusinessInfoTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -3219,7 +3578,7 @@ public class BusinessDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = businessDataTaskRequestInfo;
+        Object localVarPostBody = businessDataGoogleMyBusinessInfoTaskPostRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/business_data/google/my_business_info/task_post";
@@ -3251,15 +3610,15 @@ public class BusinessDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleMyBusinessInfoTaskPostValidateBeforeCall(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleMyBusinessInfoTaskPostCall(businessDataTaskRequestInfo, _callback);
+    private okhttp3.Call googleMyBusinessInfoTaskPostValidateBeforeCall(List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> businessDataGoogleMyBusinessInfoTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleMyBusinessInfoTaskPostCall(businessDataGoogleMyBusinessInfoTaskPostRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash&#39;
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoTaskPostRequestInfo  (optional)
      * @return BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3268,15 +3627,15 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo googleMyBusinessInfoTaskPost(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo) throws ApiException {
-        ApiResponse<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> localVarResp = googleMyBusinessInfoTaskPostWithHttpInfo(businessDataTaskRequestInfo);
+    public BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo googleMyBusinessInfoTaskPost(List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> businessDataGoogleMyBusinessInfoTaskPostRequestInfo) throws ApiException {
+        ApiResponse<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> localVarResp = googleMyBusinessInfoTaskPostWithHttpInfo(businessDataGoogleMyBusinessInfoTaskPostRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash&#39;
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoTaskPostRequestInfo  (optional)
      * @return ApiResponse&lt;BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -3285,8 +3644,8 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> googleMyBusinessInfoTaskPostWithHttpInfo(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleMyBusinessInfoTaskPostValidateBeforeCall(businessDataTaskRequestInfo, null);
+    public ApiResponse<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> googleMyBusinessInfoTaskPostWithHttpInfo(List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> businessDataGoogleMyBusinessInfoTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleMyBusinessInfoTaskPostValidateBeforeCall(businessDataGoogleMyBusinessInfoTaskPostRequestInfo, null);
         Type localVarReturnType = new TypeToken<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -3294,7 +3653,7 @@ public class BusinessDataApi {
     /**
      *  (asynchronously)
      * ‌‌ Business Data API provides results containing information about specific business entity from Google. The provided results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/google/my_business_info/task_post/?bash&#39;
-     * @param businessDataTaskRequestInfo  (optional)
+     * @param businessDataGoogleMyBusinessInfoTaskPostRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -3304,9 +3663,9 @@ public class BusinessDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleMyBusinessInfoTaskPostAsync(List<BusinessDataTaskRequestInfo> businessDataTaskRequestInfo, final ApiCallback<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleMyBusinessInfoTaskPostAsync(List<BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo> businessDataGoogleMyBusinessInfoTaskPostRequestInfo, final ApiCallback<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleMyBusinessInfoTaskPostValidateBeforeCall(businessDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleMyBusinessInfoTaskPostValidateBeforeCall(businessDataGoogleMyBusinessInfoTaskPostRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

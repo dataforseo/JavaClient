@@ -61,8 +61,8 @@ import io.github.dataforseo.client.model.OnPageRedirectChainsResponseInfo;
 import io.github.dataforseo.client.model.OnPageResourcesRequestInfo;
 import io.github.dataforseo.client.model.OnPageResourcesResponseInfo;
 import io.github.dataforseo.client.model.OnPageSummaryResponseInfo;
+import io.github.dataforseo.client.model.OnPageTaskPostRequestInfo;
 import io.github.dataforseo.client.model.OnPageTaskPostResponseInfo;
-import io.github.dataforseo.client.model.OnPageTaskRequestInfo;
 import io.github.dataforseo.client.model.OnPageTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.OnPageWaterfallRequestInfo;
 import io.github.dataforseo.client.model.OnPageWaterfallResponseInfo;
@@ -260,7 +260,7 @@ public class OnPageApiTest {
     }
 
     /**
-     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
+     * ‌‌ This endpoint returns a list of pages that are blocked from being indexed by Google and other search engines through robots.txt, HTTP headers, or meta tags settings. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/non_indexable/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -283,7 +283,7 @@ public class OnPageApiTest {
     }
 
     /**
-     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the OnPage API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/on_page/errors/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -419,8 +419,8 @@ public class OnPageApiTest {
      */
     @Test
     public void taskPostTest() throws ApiException {
-        List<OnPageTaskRequestInfo> onPageTaskRequestInfo = null;
-        OnPageTaskPostResponseInfo response = api.taskPost(onPageTaskRequestInfo);
+        List<OnPageTaskPostRequestInfo> onPageTaskPostRequestInfo = null;
+        OnPageTaskPostResponseInfo response = api.taskPost(onPageTaskPostRequestInfo);
         // TODO: test validations
     }
 

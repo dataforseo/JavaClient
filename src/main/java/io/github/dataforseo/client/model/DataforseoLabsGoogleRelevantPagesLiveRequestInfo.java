@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleRelevantPagesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -77,13 +77,13 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
   private List<String> itemTypes;
 
-  public static final String SERIALIZED_NAME_LIMIT = "limit";
-  @SerializedName(SERIALIZED_NAME_LIMIT)
-  private Integer limit;
-
   public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
   @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
   private Boolean includeClickstreamData;
+
+  public static final String SERIALIZED_NAME_LIMIT = "limit";
+  @SerializedName(SERIALIZED_NAME_LIMIT)
+  private Integer limit;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
@@ -230,25 +230,6 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
   }
 
 
-  public DataforseoLabsGoogleRelevantPagesLiveRequestInfo limit(Integer limit) {
-    this.limit = limit;
-    return this;
-  }
-
-  /**
-   * the maximum number of returned pages optional field default value: 100 maximum value: 1000
-   * @return limit
-   */
-  @javax.annotation.Nullable
-  public Integer getLimit() {
-    return limit;
-  }
-
-  public void setLimit(Integer limit) {
-    this.limit = limit;
-  }
-
-
   public DataforseoLabsGoogleRelevantPagesLiveRequestInfo includeClickstreamData(Boolean includeClickstreamData) {
     this.includeClickstreamData = includeClickstreamData;
     return this;
@@ -265,6 +246,25 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
 
   public void setIncludeClickstreamData(Boolean includeClickstreamData) {
     this.includeClickstreamData = includeClickstreamData;
+  }
+
+
+  public DataforseoLabsGoogleRelevantPagesLiveRequestInfo limit(Integer limit) {
+    this.limit = limit;
+    return this;
+  }
+
+  /**
+   * the maximum number of returned pages optional field default value: 100 maximum value: 1000
+   * @return limit
+   */
+  @javax.annotation.Nullable
+  public Integer getLimit() {
+    return limit;
+  }
+
+  public void setLimit(Integer limit) {
+    this.limit = limit;
   }
 
 
@@ -439,8 +439,8 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
         Objects.equals(this.languageName, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.languageName) &&
         Objects.equals(this.languageCode, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.languageCode) &&
         Objects.equals(this.itemTypes, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.itemTypes) &&
-        Objects.equals(this.limit, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.limit) &&
         Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.includeClickstreamData) &&
+        Objects.equals(this.limit, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.limit) &&
         Objects.equals(this.offset, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.offset) &&
         Objects.equals(this.historicalSerpMode, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.historicalSerpMode) &&
         Objects.equals(this.filters, dataforseoLabsGoogleRelevantPagesLiveRequestInfo.filters) &&
@@ -455,7 +455,7 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, limit, includeClickstreamData, offset, historicalSerpMode, filters, orderBy, tag, additionalProperties);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, limit, offset, historicalSerpMode, filters, orderBy, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -475,8 +475,8 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
-    sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
+    sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    historicalSerpMode: ").append(toIndentedString(historicalSerpMode)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
@@ -511,8 +511,8 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfo {
     openapiFields.add("language_name");
     openapiFields.add("language_code");
     openapiFields.add("item_types");
-    openapiFields.add("limit");
     openapiFields.add("include_clickstream_data");
+    openapiFields.add("limit");
     openapiFields.add("offset");
     openapiFields.add("historical_serp_mode");
     openapiFields.add("filters");

@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.PriceInfo;
-import io.github.dataforseo.client.model.StoresCountInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -51,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DeliveryInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DeliveryInfo {
   public static final String SERIALIZED_NAME_DELIVERY_MESSAGE = "delivery_message";
   @SerializedName(SERIALIZED_NAME_DELIVERY_MESSAGE)
@@ -60,10 +59,6 @@ public class DeliveryInfo {
   public static final String SERIALIZED_NAME_DELIVERY_PRICE = "delivery_price";
   @SerializedName(SERIALIZED_NAME_DELIVERY_PRICE)
   private PriceInfo deliveryPrice;
-
-  public static final String SERIALIZED_NAME_STORES_COUNT_INFO = "stores_count_info";
-  @SerializedName(SERIALIZED_NAME_STORES_COUNT_INFO)
-  private StoresCountInfo storesCountInfo;
 
   public DeliveryInfo() {
   }
@@ -103,25 +98,6 @@ public class DeliveryInfo {
 
   public void setDeliveryPrice(PriceInfo deliveryPrice) {
     this.deliveryPrice = deliveryPrice;
-  }
-
-
-  public DeliveryInfo storesCountInfo(StoresCountInfo storesCountInfo) {
-    this.storesCountInfo = storesCountInfo;
-    return this;
-  }
-
-  /**
-   * Get storesCountInfo
-   * @return storesCountInfo
-   */
-  @javax.annotation.Nullable
-  public StoresCountInfo getStoresCountInfo() {
-    return storesCountInfo;
-  }
-
-  public void setStoresCountInfo(StoresCountInfo storesCountInfo) {
-    this.storesCountInfo = storesCountInfo;
   }
 
   /**
@@ -180,8 +156,7 @@ public class DeliveryInfo {
     }
     DeliveryInfo deliveryInfo = (DeliveryInfo) o;
     return Objects.equals(this.deliveryMessage, deliveryInfo.deliveryMessage) &&
-        Objects.equals(this.deliveryPrice, deliveryInfo.deliveryPrice) &&
-        Objects.equals(this.storesCountInfo, deliveryInfo.storesCountInfo)&&
+        Objects.equals(this.deliveryPrice, deliveryInfo.deliveryPrice)&&
         Objects.equals(this.additionalProperties, deliveryInfo.additionalProperties);
   }
 
@@ -191,7 +166,7 @@ public class DeliveryInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(deliveryMessage, deliveryPrice, storesCountInfo, additionalProperties);
+    return Objects.hash(deliveryMessage, deliveryPrice, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -207,7 +182,6 @@ public class DeliveryInfo {
     sb.append("class DeliveryInfo {\n");
     sb.append("    deliveryMessage: ").append(toIndentedString(deliveryMessage)).append("\n");
     sb.append("    deliveryPrice: ").append(toIndentedString(deliveryPrice)).append("\n");
-    sb.append("    storesCountInfo: ").append(toIndentedString(storesCountInfo)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -233,7 +207,6 @@ public class DeliveryInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("delivery_message");
     openapiFields.add("delivery_price");
-    openapiFields.add("stores_count_info");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -258,10 +231,6 @@ public class DeliveryInfo {
       // validate the optional field `delivery_price`
       if (jsonObj.get("delivery_price") != null && !jsonObj.get("delivery_price").isJsonNull()) {
         PriceInfo.validateJsonElement(jsonObj.get("delivery_price"));
-      }
-      // validate the optional field `stores_count_info`
-      if (jsonObj.get("stores_count_info") != null && !jsonObj.get("stores_count_info").isJsonNull()) {
-        StoresCountInfo.validateJsonElement(jsonObj.get("stores_count_info"));
       }
   }
 

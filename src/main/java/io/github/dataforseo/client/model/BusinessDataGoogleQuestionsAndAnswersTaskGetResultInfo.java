@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -112,7 +112,7 @@ public class BusinessDataGoogleQuestionsAndAnswersTaskGetResultInfo {
   }
 
   /**
-   * keyword received in a POST array keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) this field will contain the cid parameter if you specified it in the keyword field when setting a task; example: cid:2946633002421908862 learn more about the parameter in this help center article
+   * keyword received in a POST array keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) this field will contain the cid parameter if you specified it in the keyword field when setting a task; example: cid:2946633002421908862 learn more about the parameter in this help center article
    * @return keyword
    */
   @javax.annotation.Nullable

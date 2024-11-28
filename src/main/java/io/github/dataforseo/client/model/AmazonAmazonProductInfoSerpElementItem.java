@@ -56,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonProductInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -141,6 +141,14 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
   public static final String SERIALIZED_NAME_IS_AVAILABLE = "is_available";
   @SerializedName(SERIALIZED_NAME_IS_AVAILABLE)
   private Boolean isAvailable;
+
+  public static final String SERIALIZED_NAME_TOP_LOCAL_REVIEWS = "top_local_reviews";
+  @SerializedName(SERIALIZED_NAME_TOP_LOCAL_REVIEWS)
+  private List<BaseAmazonSerpElementItem> topLocalReviews;
+
+  public static final String SERIALIZED_NAME_TOP_GLOBAL_REVIEWS = "top_global_reviews";
+  @SerializedName(SERIALIZED_NAME_TOP_GLOBAL_REVIEWS)
+  private List<BaseAmazonSerpElementItem> topGlobalReviews;
 
   public AmazonAmazonProductInfoSerpElementItem() {
   }
@@ -583,6 +591,60 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
     this.isAvailable = isAvailable;
   }
 
+
+  public AmazonAmazonProductInfoSerpElementItem topLocalReviews(List<BaseAmazonSerpElementItem> topLocalReviews) {
+    this.topLocalReviews = topLocalReviews;
+    return this;
+  }
+
+  public AmazonAmazonProductInfoSerpElementItem addTopLocalReviewsItem(BaseAmazonSerpElementItem topLocalReviewsItem) {
+    if (this.topLocalReviews == null) {
+      this.topLocalReviews = new ArrayList<>();
+    }
+    this.topLocalReviews.add(topLocalReviewsItem);
+    return this;
+  }
+
+  /**
+   * array of objects with top reviews from target location to obtain additional local reviews, you can specify the load_more_local_reviews parameter in Task POST
+   * @return topLocalReviews
+   */
+  @javax.annotation.Nullable
+  public List<BaseAmazonSerpElementItem> getTopLocalReviews() {
+    return topLocalReviews;
+  }
+
+  public void setTopLocalReviews(List<BaseAmazonSerpElementItem> topLocalReviews) {
+    this.topLocalReviews = topLocalReviews;
+  }
+
+
+  public AmazonAmazonProductInfoSerpElementItem topGlobalReviews(List<BaseAmazonSerpElementItem> topGlobalReviews) {
+    this.topGlobalReviews = topGlobalReviews;
+    return this;
+  }
+
+  public AmazonAmazonProductInfoSerpElementItem addTopGlobalReviewsItem(BaseAmazonSerpElementItem topGlobalReviewsItem) {
+    if (this.topGlobalReviews == null) {
+      this.topGlobalReviews = new ArrayList<>();
+    }
+    this.topGlobalReviews.add(topGlobalReviewsItem);
+    return this;
+  }
+
+  /**
+   * array of objects with top reviews from around the world
+   * @return topGlobalReviews
+   */
+  @javax.annotation.Nullable
+  public List<BaseAmazonSerpElementItem> getTopGlobalReviews() {
+    return topGlobalReviews;
+  }
+
+  public void setTopGlobalReviews(List<BaseAmazonSerpElementItem> topGlobalReviews) {
+    this.topGlobalReviews = topGlobalReviews;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -658,7 +720,9 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
         Objects.equals(this.productImagesList, amazonAmazonProductInfoSerpElementItem.productImagesList) &&
         Objects.equals(this.productVideosList, amazonAmazonProductInfoSerpElementItem.productVideosList) &&
         Objects.equals(this.description, amazonAmazonProductInfoSerpElementItem.description) &&
-        Objects.equals(this.isAvailable, amazonAmazonProductInfoSerpElementItem.isAvailable)&&
+        Objects.equals(this.isAvailable, amazonAmazonProductInfoSerpElementItem.isAvailable) &&
+        Objects.equals(this.topLocalReviews, amazonAmazonProductInfoSerpElementItem.topLocalReviews) &&
+        Objects.equals(this.topGlobalReviews, amazonAmazonProductInfoSerpElementItem.topGlobalReviews)&&
         Objects.equals(this.additionalProperties, amazonAmazonProductInfoSerpElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -669,7 +733,7 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, currency, isAmazonChoice, rating, isNewerModelAvailable, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, super.hashCode(), additionalProperties);
+    return Objects.hash(position, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, currency, isAmazonChoice, rating, isNewerModelAvailable, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -705,6 +769,8 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
     sb.append("    productVideosList: ").append(toIndentedString(productVideosList)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    isAvailable: ").append(toIndentedString(isAvailable)).append("\n");
+    sb.append("    topLocalReviews: ").append(toIndentedString(topLocalReviews)).append("\n");
+    sb.append("    topGlobalReviews: ").append(toIndentedString(topGlobalReviews)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -753,6 +819,8 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
     openapiFields.add("product_videos_list");
     openapiFields.add("description");
     openapiFields.add("is_available");
+    openapiFields.add("top_local_reviews");
+    openapiFields.add("top_global_reviews");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -845,6 +913,34 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
+      }
+      if (jsonObj.get("top_local_reviews") != null && !jsonObj.get("top_local_reviews").isJsonNull()) {
+        JsonArray jsonArraytopLocalReviews = jsonObj.getAsJsonArray("top_local_reviews");
+        if (jsonArraytopLocalReviews != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("top_local_reviews").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `top_local_reviews` to be an array in the JSON string but got `%s`", jsonObj.get("top_local_reviews").toString()));
+          }
+
+          // validate the optional field `top_local_reviews` (array)
+          for (int i = 0; i < jsonArraytopLocalReviews.size(); i++) {
+            BaseAmazonSerpElementItem.validateJsonElement(jsonArraytopLocalReviews.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("top_global_reviews") != null && !jsonObj.get("top_global_reviews").isJsonNull()) {
+        JsonArray jsonArraytopGlobalReviews = jsonObj.getAsJsonArray("top_global_reviews");
+        if (jsonArraytopGlobalReviews != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("top_global_reviews").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `top_global_reviews` to be an array in the JSON string but got `%s`", jsonObj.get("top_global_reviews").toString()));
+          }
+
+          // validate the optional field `top_global_reviews` (array)
+          for (int i = 0; i < jsonArraytopGlobalReviews.size(); i++) {
+            BaseAmazonSerpElementItem.validateJsonElement(jsonArraytopGlobalReviews.get(i));
+          };
+        }
       }
   }
 

@@ -47,6 +47,22 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'cid'
+     */
+    @Test
+    public void cidTest() {
+        // TODO: test cid
+    }
+
+    /**
+     * Test the property 'placeId'
+     */
+    @Test
+    public void placeIdTest() {
+        // TODO: test placeId
+    }
+
+    /**
      * Test the property 'priority'
      */
     @Test
@@ -95,6 +111,22 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'depth'
+     */
+    @Test
+    public void depthTest() {
+        // TODO: test depth
+    }
+
+    /**
+     * Test the property 'sortBy'
+     */
+    @Test
+    public void sortByTest() {
+        // TODO: test sortBy
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test
@@ -116,38 +148,6 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfoTest {
     @Test
     public void pingbackUrlTest() {
         // TODO: test pingbackUrl
-    }
-
-    /**
-     * Test the property 'cid'
-     */
-    @Test
-    public void cidTest() {
-        // TODO: test cid
-    }
-
-    /**
-     * Test the property 'placeId'
-     */
-    @Test
-    public void placeIdTest() {
-        // TODO: test placeId
-    }
-
-    /**
-     * Test the property 'depth'
-     */
-    @Test
-    public void depthTest() {
-        // TODO: test depth
-    }
-
-    /**
-     * Test the property 'sortBy'
-     */
-    @Test
-    public void sortByTest() {
-        // TODO: test sortBy
     }
 
 }

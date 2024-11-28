@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixDayStatisticsMoneyData;
-import io.github.dataforseo.client.model.AppendixMinuteStatisticsMoneyData;
+import io.github.dataforseo.client.model.AppendixMinuteStatisticsDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixStatisticsMoneyData {
   public static final String SERIALIZED_NAME_DAY = "day";
   @SerializedName(SERIALIZED_NAME_DAY)
@@ -58,7 +58,7 @@ public class AppendixStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_MINUTE = "minute";
   @SerializedName(SERIALIZED_NAME_MINUTE)
-  private AppendixMinuteStatisticsMoneyData minute;
+  private AppendixMinuteStatisticsDataInfo minute;
 
   public AppendixStatisticsMoneyData() {
   }
@@ -82,7 +82,7 @@ public class AppendixStatisticsMoneyData {
   }
 
 
-  public AppendixStatisticsMoneyData minute(AppendixMinuteStatisticsMoneyData minute) {
+  public AppendixStatisticsMoneyData minute(AppendixMinuteStatisticsDataInfo minute) {
     this.minute = minute;
     return this;
   }
@@ -92,11 +92,11 @@ public class AppendixStatisticsMoneyData {
    * @return minute
    */
   @javax.annotation.Nullable
-  public AppendixMinuteStatisticsMoneyData getMinute() {
+  public AppendixMinuteStatisticsDataInfo getMinute() {
     return minute;
   }
 
-  public void setMinute(AppendixMinuteStatisticsMoneyData minute) {
+  public void setMinute(AppendixMinuteStatisticsDataInfo minute) {
     this.minute = minute;
   }
 
@@ -220,7 +220,7 @@ public class AppendixStatisticsMoneyData {
       }
       // validate the optional field `minute`
       if (jsonObj.get("minute") != null && !jsonObj.get("minute").isJsonNull()) {
-        AppendixMinuteStatisticsMoneyData.validateJsonElement(jsonObj.get("minute"));
+        AppendixMinuteStatisticsDataInfo.validateJsonElement(jsonObj.get("minute"));
       }
   }
 

@@ -127,6 +127,14 @@ public class MerchantAmazonProductsTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'department'
+     */
+    @Test
+    public void departmentTest() {
+        // TODO: test department
+    }
+
+    /**
      * Test the property 'searchParam'
      */
     @Test
@@ -188,14 +196,6 @@ public class MerchantAmazonProductsTaskPostRequestInfoTest {
     @Test
     public void pingbackUrlTest() {
         // TODO: test pingbackUrl
-    }
-
-    /**
-     * Test the property 'department'
-     */
-    @Test
-    public void departmentTest() {
-        // TODO: test department
     }
 
 }

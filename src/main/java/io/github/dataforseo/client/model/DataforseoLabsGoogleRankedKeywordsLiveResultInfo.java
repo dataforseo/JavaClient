@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleRankedKeywordsLiveItem;
+import io.github.dataforseo.client.model.DataforseoLabsLiveItem;
 import io.github.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleRankedKeywordsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -91,7 +91,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsGoogleRankedKeywordsLiveItem> items;
+  private List<DataforseoLabsLiveItem> items;
 
   public DataforseoLabsGoogleRankedKeywordsLiveResultInfo() {
   }
@@ -264,12 +264,12 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleRankedKeywordsLiveResultInfo items(List<DataforseoLabsGoogleRankedKeywordsLiveItem> items) {
+  public DataforseoLabsGoogleRankedKeywordsLiveResultInfo items(List<DataforseoLabsLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsGoogleRankedKeywordsLiveResultInfo addItemsItem(DataforseoLabsGoogleRankedKeywordsLiveItem itemsItem) {
+  public DataforseoLabsGoogleRankedKeywordsLiveResultInfo addItemsItem(DataforseoLabsLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -282,11 +282,11 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<DataforseoLabsGoogleRankedKeywordsLiveItem> getItems() {
+  public List<DataforseoLabsLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsGoogleRankedKeywordsLiveItem> items) {
+  public void setItems(List<DataforseoLabsLiveItem> items) {
     this.items = items;
   }
 
@@ -455,7 +455,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsGoogleRankedKeywordsLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

@@ -14,7 +14,7 @@
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**totalCount** | **Long** | total amount of results in our database relevant to your request |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;DataforseoLabsGoogleRelatedKeywordsLiveItem&gt;**](DataforseoLabsGoogleRelatedKeywordsLiveItem.md) | contains keywords and related data |  [optional] |
+|**items** | [**List&lt;DataforseoLabsRelatedKeywordsLiveItem&gt;**](DataforseoLabsRelatedKeywordsLiveItem.md) | contains keywords and related data |  [optional] |
 
 
 

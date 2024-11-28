@@ -49,11 +49,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleReviewsTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleReviewsTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
+
+  public static final String SERIALIZED_NAME_CID = "cid";
+  @SerializedName(SERIALIZED_NAME_CID)
+  private String cid;
+
+  public static final String SERIALIZED_NAME_PLACE_ID = "place_id";
+  @SerializedName(SERIALIZED_NAME_PLACE_ID)
+  private String placeId;
 
   public static final String SERIALIZED_NAME_PRIORITY = "priority";
   @SerializedName(SERIALIZED_NAME_PRIORITY)
@@ -79,6 +87,14 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
 
+  public static final String SERIALIZED_NAME_DEPTH = "depth";
+  @SerializedName(SERIALIZED_NAME_DEPTH)
+  private Integer depth;
+
+  public static final String SERIALIZED_NAME_SORT_BY = "sort_by";
+  @SerializedName(SERIALIZED_NAME_SORT_BY)
+  private String sortBy;
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -91,22 +107,6 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
   @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
   private String pingbackUrl;
 
-  public static final String SERIALIZED_NAME_CID = "cid";
-  @SerializedName(SERIALIZED_NAME_CID)
-  private String cid;
-
-  public static final String SERIALIZED_NAME_PLACE_ID = "place_id";
-  @SerializedName(SERIALIZED_NAME_PLACE_ID)
-  private String placeId;
-
-  public static final String SERIALIZED_NAME_DEPTH = "depth";
-  @SerializedName(SERIALIZED_NAME_DEPTH)
-  private Integer depth;
-
-  public static final String SERIALIZED_NAME_SORT_BY = "sort_by";
-  @SerializedName(SERIALIZED_NAME_SORT_BY)
-  private String sortBy;
-
   public BusinessDataGoogleReviewsTaskPostRequestInfo() {
   }
 
@@ -116,7 +116,7 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
   }
 
   /**
-   * keyword required field the keyword you specify should indicate the name of the local establishment you can specify up to 700 symbols in the keyword filed all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”;  this field can also be used to pass the following parameters: cid – a unique, google-defined id of the business entity; place_id – an identifier of the business entity in Google Maps; spp – a unique identifier of local services featured in the local_pack element of Google SERP example: cid:194604053573767737 place_id:GhIJQWDl0CIeQUARxks3icF8U8A spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30 learn more about the cid and place_id identifiers in this help center article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keyword required field if you don’t specify cid or place_id the keyword you specify should indicate the name of the local establishment; you can specify up to 700 characters in the keyword filed; all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”; if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’, the charge per task will be multiplied by 5 Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -126,177 +126,6 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
 
   public void setKeyword(String keyword) {
     this.keyword = keyword;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority optional field can take the following values: 1 – normal execution priority (set by default) 2 – high execution priority You will be additionally charged for the tasks with high execution priority. The cost can be calculated on the Pricing page.
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location required field if you don’t specify location_code or location_coordinate if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/locations example: London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo locationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-    return this;
-  }
-
-  /**
-   * search engine location code required field if you don’t specify location_name or location_coordinate if you use this field, you don’t need to specify location_name or location_coordinate you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations example: 2840
-   * @return locationCode
-   */
-  @javax.annotation.Nullable
-  public Integer getLocationCode() {
-    return locationCode;
-  }
-
-  public void setLocationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,radius” format the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “radius”: 199.9 (mm) the maximum value for “radius”: 199999 (mm) example: 53.476225,-2.243572,200
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language required field if you don’t specify language_code if you use this field, you don’t need to specify language_code you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages example: English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * search engine language code required field if you don’t specify language_name if you use this field, you don’t need to specify language_name you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages example: en
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo postbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-    return this;
-  }
-
-  /**
-   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in postback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
-   * @return postbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPostbackUrl() {
-    return postbackUrl;
-  }
-
-  public void setPostbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-  }
-
-
-  public BusinessDataGoogleReviewsTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
-    return this;
-  }
-
-  /**
-   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special symbols in pingback_url will be urlencoded; i.a., the # symbol will be encoded into %23 learn more on our Help Center
-   * @return pingbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
-  }
-
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
   }
 
 
@@ -338,6 +167,120 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
   }
 
 
+  public BusinessDataGoogleReviewsTaskPostRequestInfo priority(Integer priority) {
+    this.priority = priority;
+    return this;
+  }
+
+  /**
+   * task priority optional field can take the following values: 1 – normal execution priority (set by default) 2 – high execution priority You will be additionally charged for the tasks with high execution priority. The cost can be calculated on the Pricing page.
+   * @return priority
+   */
+  @javax.annotation.Nullable
+  public Integer getPriority() {
+    return priority;
+  }
+
+  public void setPriority(Integer priority) {
+    this.priority = priority;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location required field if you don’t specify location_code or location_coordinate if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations with location_name by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations example: London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo locationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+    return this;
+  }
+
+  /**
+   * search engine location code required field if you don’t specify location_name or location_coordinate if you use this field, you don’t need to specify location_name or location_coordinate you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations example: 2840
+   * @return locationCode
+   */
+  @javax.annotation.Nullable
+  public Integer getLocationCode() {
+    return locationCode;
+  }
+
+  public void setLocationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,radius” format the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “radius”: 199.9 example: 53.476225,-2.243572,200
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language required field if you don’t specify language_code if you use this field, you don’t need to specify language_code you can receive the list of available languages with language_name by making a separate request to the https://api.dataforseo.com/v3/business_data/google/languages example: English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo languageCode(String languageCode) {
+    this.languageCode = languageCode;
+    return this;
+  }
+
+  /**
+   * search engine language code required field if you don’t specify language_name if you use this field, you don’t need to specify language_name you can receive the list of available languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/languages example: en
+   * @return languageCode
+   */
+  @javax.annotation.Nullable
+  public String getLanguageCode() {
+    return languageCode;
+  }
+
+  public void setLanguageCode(String languageCode) {
+    this.languageCode = languageCode;
+  }
+
+
   public BusinessDataGoogleReviewsTaskPostRequestInfo depth(Integer depth) {
     this.depth = depth;
     return this;
@@ -373,6 +316,63 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
 
   public void setSortBy(String sortBy) {
     this.sortBy = sortBy;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo postbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+    return this;
+  }
+
+  /**
+   * return URL for sending task results optional field once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/postbackscript?id&#x3D;$id http://your-server.com/postbackscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in postback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
+   * @return postbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPostbackUrl() {
+    return postbackUrl;
+  }
+
+  public void setPostbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+  }
+
+
+  public BusinessDataGoogleReviewsTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+    return this;
+  }
+
+  /**
+   * notification URL of a completed task optional field when a task is completed we will notify you by GET request sent to the URL you have specified you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request. example: http://your-server.com/pingscript?id&#x3D;$id http://your-server.com/pingscript?id&#x3D;$id&amp;tag&#x3D;$tag Note: special characters in pingback_url will be urlencoded; i.a., the # character will be encoded into %23 learn more on our Help Center
+   * @return pingbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPingbackUrl() {
+    return pingbackUrl;
+  }
+
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
   }
 
   /**
@@ -431,19 +431,19 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
     }
     BusinessDataGoogleReviewsTaskPostRequestInfo businessDataGoogleReviewsTaskPostRequestInfo = (BusinessDataGoogleReviewsTaskPostRequestInfo) o;
     return Objects.equals(this.keyword, businessDataGoogleReviewsTaskPostRequestInfo.keyword) &&
+        Objects.equals(this.cid, businessDataGoogleReviewsTaskPostRequestInfo.cid) &&
+        Objects.equals(this.placeId, businessDataGoogleReviewsTaskPostRequestInfo.placeId) &&
         Objects.equals(this.priority, businessDataGoogleReviewsTaskPostRequestInfo.priority) &&
         Objects.equals(this.locationName, businessDataGoogleReviewsTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, businessDataGoogleReviewsTaskPostRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, businessDataGoogleReviewsTaskPostRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, businessDataGoogleReviewsTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, businessDataGoogleReviewsTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.depth, businessDataGoogleReviewsTaskPostRequestInfo.depth) &&
+        Objects.equals(this.sortBy, businessDataGoogleReviewsTaskPostRequestInfo.sortBy) &&
         Objects.equals(this.tag, businessDataGoogleReviewsTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, businessDataGoogleReviewsTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.pingbackUrl, businessDataGoogleReviewsTaskPostRequestInfo.pingbackUrl) &&
-        Objects.equals(this.cid, businessDataGoogleReviewsTaskPostRequestInfo.cid) &&
-        Objects.equals(this.placeId, businessDataGoogleReviewsTaskPostRequestInfo.placeId) &&
-        Objects.equals(this.depth, businessDataGoogleReviewsTaskPostRequestInfo.depth) &&
-        Objects.equals(this.sortBy, businessDataGoogleReviewsTaskPostRequestInfo.sortBy)&&
+        Objects.equals(this.pingbackUrl, businessDataGoogleReviewsTaskPostRequestInfo.pingbackUrl)&&
         Objects.equals(this.additionalProperties, businessDataGoogleReviewsTaskPostRequestInfo.additionalProperties);
   }
 
@@ -453,7 +453,7 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, tag, postbackUrl, pingbackUrl, cid, placeId, depth, sortBy, additionalProperties);
+    return Objects.hash(keyword, cid, placeId, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, depth, sortBy, tag, postbackUrl, pingbackUrl, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -468,19 +468,19 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class BusinessDataGoogleReviewsTaskPostRequestInfo {\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
+    sb.append("    cid: ").append(toIndentedString(cid)).append("\n");
+    sb.append("    placeId: ").append(toIndentedString(placeId)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    sortBy: ").append(toIndentedString(sortBy)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
-    sb.append("    cid: ").append(toIndentedString(cid)).append("\n");
-    sb.append("    placeId: ").append(toIndentedString(placeId)).append("\n");
-    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
-    sb.append("    sortBy: ").append(toIndentedString(sortBy)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -505,19 +505,19 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("keyword");
+    openapiFields.add("cid");
+    openapiFields.add("place_id");
     openapiFields.add("priority");
     openapiFields.add("location_name");
     openapiFields.add("location_code");
     openapiFields.add("location_coordinate");
     openapiFields.add("language_name");
     openapiFields.add("language_code");
+    openapiFields.add("depth");
+    openapiFields.add("sort_by");
     openapiFields.add("tag");
     openapiFields.add("postback_url");
     openapiFields.add("pingback_url");
-    openapiFields.add("cid");
-    openapiFields.add("place_id");
-    openapiFields.add("depth");
-    openapiFields.add("sort_by");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -539,6 +539,12 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
       if ((jsonObj.get("keyword") != null && !jsonObj.get("keyword").isJsonNull()) && !jsonObj.get("keyword").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `keyword` to be a primitive type in the JSON string but got `%s`", jsonObj.get("keyword").toString()));
       }
+      if ((jsonObj.get("cid") != null && !jsonObj.get("cid").isJsonNull()) && !jsonObj.get("cid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `cid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cid").toString()));
+      }
+      if ((jsonObj.get("place_id") != null && !jsonObj.get("place_id").isJsonNull()) && !jsonObj.get("place_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `place_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("place_id").toString()));
+      }
       if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
       }
@@ -551,6 +557,9 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));
       }
+      if ((jsonObj.get("sort_by") != null && !jsonObj.get("sort_by").isJsonNull()) && !jsonObj.get("sort_by").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `sort_by` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sort_by").toString()));
+      }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));
       }
@@ -559,15 +568,6 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo {
       }
       if ((jsonObj.get("pingback_url") != null && !jsonObj.get("pingback_url").isJsonNull()) && !jsonObj.get("pingback_url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `pingback_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("pingback_url").toString()));
-      }
-      if ((jsonObj.get("cid") != null && !jsonObj.get("cid").isJsonNull()) && !jsonObj.get("cid").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `cid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cid").toString()));
-      }
-      if ((jsonObj.get("place_id") != null && !jsonObj.get("place_id").isJsonNull()) && !jsonObj.get("place_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `place_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("place_id").toString()));
-      }
-      if ((jsonObj.get("sort_by") != null && !jsonObj.get("sort_by").isJsonNull()) && !jsonObj.get("sort_by").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `sort_by` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sort_by").toString()));
       }
   }
 

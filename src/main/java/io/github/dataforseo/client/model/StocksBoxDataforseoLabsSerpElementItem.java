@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.Graph;
-import io.github.dataforseo.client.model.Price;
+import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
 import java.util.Arrays;
@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * StocksBoxDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -69,7 +69,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private Price price;
+  private PriceInfo price;
 
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -147,7 +147,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
   }
 
 
-  public StocksBoxDataforseoLabsSerpElementItem price(Price price) {
+  public StocksBoxDataforseoLabsSerpElementItem price(PriceInfo price) {
     this.price = price;
     return this;
   }
@@ -157,11 +157,11 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
    * @return price
    */
   @javax.annotation.Nullable
-  public Price getPrice() {
+  public PriceInfo getPrice() {
     return price;
   }
 
-  public void setPrice(Price price) {
+  public void setPrice(PriceInfo price) {
     this.price = price;
   }
 
@@ -402,7 +402,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
       }
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
-        Price.validateJsonElement(jsonObj.get("price"));
+        PriceInfo.validateJsonElement(jsonObj.get("price"));
       }
       if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));

@@ -111,14 +111,6 @@ public class OnPagePageScreenshotRequestInfoTest {
     }
 
     /**
-     * Test the property 'customJs'
-     */
-    @Test
-    public void customJsTest() {
-        // TODO: test customJs
-    }
-
-    /**
      * Test the property 'switchPool'
      */
     @Test

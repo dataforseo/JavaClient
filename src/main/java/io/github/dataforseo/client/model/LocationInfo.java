@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * LocationInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class LocationInfo {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -118,7 +118,7 @@ public class LocationInfo {
   }
 
   /**
-   * URL to the event’s venue on google maps
+   * search URL with refinement parameters
    * @return url
    */
   @javax.annotation.Nullable
@@ -137,7 +137,7 @@ public class LocationInfo {
   }
 
   /**
-   * google-defined client id unique id of a local establishment; can be used with Google Reviews API to get a full list of reviews
+   * google-defined client id can be used with Google Reviews API to get a full list of reviews
    * @return cid
    */
   @javax.annotation.Nullable

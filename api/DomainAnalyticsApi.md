@@ -26,7 +26,7 @@ All URIs are relative to *https://api.dataforseo.com*
 
 
 
-By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
+By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
 
 ### Example
 ```java

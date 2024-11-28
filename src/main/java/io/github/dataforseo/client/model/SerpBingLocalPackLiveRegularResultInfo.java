@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseSerpElementItem;
+import io.github.dataforseo.client.model.RefinementChipsInfo;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpBingLocalPackLiveRegularResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class SerpBingLocalPackLiveRegularResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -87,6 +88,10 @@ public class SerpBingLocalPackLiveRegularResultInfo {
   @SerializedName(SERIALIZED_NAME_SPELL)
   private SpellInfo spell;
 
+  public static final String SERIALIZED_NAME_REFINEMENT_CHIPS = "refinement_chips";
+  @SerializedName(SERIALIZED_NAME_REFINEMENT_CHIPS)
+  private RefinementChipsInfo refinementChips;
+
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
   private List<String> itemTypes;
@@ -112,7 +117,7 @@ public class SerpBingLocalPackLiveRegularResultInfo {
   }
 
   /**
-   * keyword received in a POST array the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+   * keyword received in a POST array the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -255,6 +260,25 @@ public class SerpBingLocalPackLiveRegularResultInfo {
 
   public void setSpell(SpellInfo spell) {
     this.spell = spell;
+  }
+
+
+  public SerpBingLocalPackLiveRegularResultInfo refinementChips(RefinementChipsInfo refinementChips) {
+    this.refinementChips = refinementChips;
+    return this;
+  }
+
+  /**
+   * Get refinementChips
+   * @return refinementChips
+   */
+  @javax.annotation.Nullable
+  public RefinementChipsInfo getRefinementChips() {
+    return refinementChips;
+  }
+
+  public void setRefinementChips(RefinementChipsInfo refinementChips) {
+    this.refinementChips = refinementChips;
   }
 
 
@@ -412,6 +436,7 @@ public class SerpBingLocalPackLiveRegularResultInfo {
         Objects.equals(this.checkUrl, serpBingLocalPackLiveRegularResultInfo.checkUrl) &&
         Objects.equals(this.datetime, serpBingLocalPackLiveRegularResultInfo.datetime) &&
         Objects.equals(this.spell, serpBingLocalPackLiveRegularResultInfo.spell) &&
+        Objects.equals(this.refinementChips, serpBingLocalPackLiveRegularResultInfo.refinementChips) &&
         Objects.equals(this.itemTypes, serpBingLocalPackLiveRegularResultInfo.itemTypes) &&
         Objects.equals(this.seResultsCount, serpBingLocalPackLiveRegularResultInfo.seResultsCount) &&
         Objects.equals(this.itemsCount, serpBingLocalPackLiveRegularResultInfo.itemsCount) &&
@@ -425,7 +450,7 @@ public class SerpBingLocalPackLiveRegularResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
+    return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -447,6 +472,7 @@ public class SerpBingLocalPackLiveRegularResultInfo {
     sb.append("    checkUrl: ").append(toIndentedString(checkUrl)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    spell: ").append(toIndentedString(spell)).append("\n");
+    sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
@@ -482,6 +508,7 @@ public class SerpBingLocalPackLiveRegularResultInfo {
     openapiFields.add("check_url");
     openapiFields.add("datetime");
     openapiFields.add("spell");
+    openapiFields.add("refinement_chips");
     openapiFields.add("item_types");
     openapiFields.add("se_results_count");
     openapiFields.add("items_count");
@@ -525,6 +552,10 @@ public class SerpBingLocalPackLiveRegularResultInfo {
       // validate the optional field `spell`
       if (jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) {
         SpellInfo.validateJsonElement(jsonObj.get("spell"));
+      }
+      // validate the optional field `refinement_chips`
+      if (jsonObj.get("refinement_chips") != null && !jsonObj.get("refinement_chips").isJsonNull()) {
+        RefinementChipsInfo.validateJsonElement(jsonObj.get("refinement_chips"));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("item_types") != null && !jsonObj.get("item_types").isJsonNull() && !jsonObj.get("item_types").isJsonArray()) {

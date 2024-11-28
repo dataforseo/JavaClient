@@ -22,7 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AddressInfo;
 import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkInfo;
+import io.github.dataforseo.client.model.WorkHours;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -57,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MapsSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -129,7 +129,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
 
   public static final String SERIALIZED_NAME_WORK_HOURS = "work_hours";
   @SerializedName(SERIALIZED_NAME_WORK_HOURS)
-  private WorkInfo workHours;
+  private WorkHours workHours;
 
   public static final String SERIALIZED_NAME_FEATURE_ID = "feature_id";
   @SerializedName(SERIALIZED_NAME_FEATURE_ID)
@@ -509,7 +509,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
   }
 
 
-  public MapsSearchBusinessDataSerpElementItem workHours(WorkInfo workHours) {
+  public MapsSearchBusinessDataSerpElementItem workHours(WorkHours workHours) {
     this.workHours = workHours;
     return this;
   }
@@ -519,11 +519,11 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
    * @return workHours
    */
   @javax.annotation.Nullable
-  public WorkInfo getWorkHours() {
+  public WorkHours getWorkHours() {
     return workHours;
   }
 
-  public void setWorkHours(WorkInfo workHours) {
+  public void setWorkHours(WorkHours workHours) {
     this.workHours = workHours;
   }
 
@@ -915,7 +915,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
       }
       // validate the optional field `work_hours`
       if (jsonObj.get("work_hours") != null && !jsonObj.get("work_hours").isJsonNull()) {
-        WorkInfo.validateJsonElement(jsonObj.get("work_hours"));
+        WorkHours.validateJsonElement(jsonObj.get("work_hours"));
       }
       if ((jsonObj.get("feature_id") != null && !jsonObj.get("feature_id").isJsonNull()) && !jsonObj.get("feature_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `feature_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("feature_id").toString()));

@@ -43,6 +43,7 @@ import io.github.dataforseo.client.model.AppDataAppleAppReviewsTaskPostRequestIn
 import io.github.dataforseo.client.model.AppDataAppleAppReviewsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppReviewsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppSearchesTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.AppDataAppleAppSearchesTaskPostRequestInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppSearchesTaskPostResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleAppSearchesTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataAppleCategoriesResponseInfo;
@@ -70,6 +71,7 @@ import io.github.dataforseo.client.model.AppDataGoogleAppReviewsTaskPostResponse
 import io.github.dataforseo.client.model.AppDataGoogleAppReviewsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskPostRequestInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTaskPostResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleAppSearchesTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AppDataGoogleCategoriesResponseInfo;
@@ -78,7 +80,6 @@ import io.github.dataforseo.client.model.AppDataGoogleLocationsCountryResponseIn
 import io.github.dataforseo.client.model.AppDataGoogleLocationsResponseInfo;
 import io.github.dataforseo.client.model.AppDataIdListRequestInfo;
 import io.github.dataforseo.client.model.AppDataIdListResponseInfo;
-import io.github.dataforseo.client.model.AppDataTaskRequestInfo;
 import io.github.dataforseo.client.model.AppDataTasksReadyResponseInfo;
 
 import java.lang.reflect.Type;
@@ -415,7 +416,7 @@ public class AppDataApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
      * @param appDataErrorsRequestInfo  (optional)
      * @return AppDataErrorsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -432,7 +433,7 @@ public class AppDataApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
      * @param appDataErrorsRequestInfo  (optional)
      * @return ApiResponse&lt;AppDataErrorsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -450,7 +451,7 @@ public class AppDataApi {
 
     /**
      *  (asynchronously)
-     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
      * @param appDataErrorsRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -2466,7 +2467,7 @@ public class AppDataApi {
     }
     /**
      * Build call for appleAppSearchesTaskPost
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataAppleAppSearchesTaskPostRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -2476,7 +2477,7 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call appleAppSearchesTaskPostCall(List<AppDataTaskRequestInfo> appDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleAppSearchesTaskPostCall(List<AppDataAppleAppSearchesTaskPostRequestInfo> appDataAppleAppSearchesTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -2490,7 +2491,7 @@ public class AppDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = appDataTaskRequestInfo;
+        Object localVarPostBody = appDataAppleAppSearchesTaskPostRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/app_data/apple/app_searches/task_post";
@@ -2522,15 +2523,15 @@ public class AppDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call appleAppSearchesTaskPostValidateBeforeCall(List<AppDataTaskRequestInfo> appDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return appleAppSearchesTaskPostCall(appDataTaskRequestInfo, _callback);
+    private okhttp3.Call appleAppSearchesTaskPostValidateBeforeCall(List<AppDataAppleAppSearchesTaskPostRequestInfo> appDataAppleAppSearchesTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return appleAppSearchesTaskPostCall(appDataAppleAppSearchesTaskPostRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌ This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash&#39;
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataAppleAppSearchesTaskPostRequestInfo  (optional)
      * @return AppDataAppleAppSearchesTaskPostResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -2539,15 +2540,15 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public AppDataAppleAppSearchesTaskPostResponseInfo appleAppSearchesTaskPost(List<AppDataTaskRequestInfo> appDataTaskRequestInfo) throws ApiException {
-        ApiResponse<AppDataAppleAppSearchesTaskPostResponseInfo> localVarResp = appleAppSearchesTaskPostWithHttpInfo(appDataTaskRequestInfo);
+    public AppDataAppleAppSearchesTaskPostResponseInfo appleAppSearchesTaskPost(List<AppDataAppleAppSearchesTaskPostRequestInfo> appDataAppleAppSearchesTaskPostRequestInfo) throws ApiException {
+        ApiResponse<AppDataAppleAppSearchesTaskPostResponseInfo> localVarResp = appleAppSearchesTaskPostWithHttpInfo(appDataAppleAppSearchesTaskPostRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌ This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash&#39;
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataAppleAppSearchesTaskPostRequestInfo  (optional)
      * @return ApiResponse&lt;AppDataAppleAppSearchesTaskPostResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -2556,8 +2557,8 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AppDataAppleAppSearchesTaskPostResponseInfo> appleAppSearchesTaskPostWithHttpInfo(List<AppDataTaskRequestInfo> appDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = appleAppSearchesTaskPostValidateBeforeCall(appDataTaskRequestInfo, null);
+    public ApiResponse<AppDataAppleAppSearchesTaskPostResponseInfo> appleAppSearchesTaskPostWithHttpInfo(List<AppDataAppleAppSearchesTaskPostRequestInfo> appDataAppleAppSearchesTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = appleAppSearchesTaskPostValidateBeforeCall(appDataAppleAppSearchesTaskPostRequestInfo, null);
         Type localVarReturnType = new TypeToken<AppDataAppleAppSearchesTaskPostResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -2565,7 +2566,7 @@ public class AppDataApi {
     /**
      *  (asynchronously)
      * ‌‌ This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash&#39;
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataAppleAppSearchesTaskPostRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -2575,9 +2576,9 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call appleAppSearchesTaskPostAsync(List<AppDataTaskRequestInfo> appDataTaskRequestInfo, final ApiCallback<AppDataAppleAppSearchesTaskPostResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call appleAppSearchesTaskPostAsync(List<AppDataAppleAppSearchesTaskPostRequestInfo> appDataAppleAppSearchesTaskPostRequestInfo, final ApiCallback<AppDataAppleAppSearchesTaskPostResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = appleAppSearchesTaskPostValidateBeforeCall(appDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = appleAppSearchesTaskPostValidateBeforeCall(appDataAppleAppSearchesTaskPostRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<AppDataAppleAppSearchesTaskPostResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -4718,7 +4719,7 @@ public class AppDataApi {
     }
     /**
      * Build call for googleAppSearchesTaskPost
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataGoogleAppSearchesTaskPostRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -4728,7 +4729,7 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAppSearchesTaskPostCall(List<AppDataTaskRequestInfo> appDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAppSearchesTaskPostCall(List<AppDataGoogleAppSearchesTaskPostRequestInfo> appDataGoogleAppSearchesTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -4742,7 +4743,7 @@ public class AppDataApi {
             basePath = null;
         }
 
-        Object localVarPostBody = appDataTaskRequestInfo;
+        Object localVarPostBody = appDataGoogleAppSearchesTaskPostRequestInfo;
 
         // create path and map variables
         String localVarPath = "/v3/app_data/google/app_searches/task_post";
@@ -4774,15 +4775,15 @@ public class AppDataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleAppSearchesTaskPostValidateBeforeCall(List<AppDataTaskRequestInfo> appDataTaskRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleAppSearchesTaskPostCall(appDataTaskRequestInfo, _callback);
+    private okhttp3.Call googleAppSearchesTaskPostValidateBeforeCall(List<AppDataGoogleAppSearchesTaskPostRequestInfo> appDataGoogleAppSearchesTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleAppSearchesTaskPostCall(appDataGoogleAppSearchesTaskPostRequestInfo, _callback);
 
     }
 
     /**
      * 
      * ‌‌ This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash&#39;
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataGoogleAppSearchesTaskPostRequestInfo  (optional)
      * @return AppDataGoogleAppSearchesTaskPostResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -4791,15 +4792,15 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public AppDataGoogleAppSearchesTaskPostResponseInfo googleAppSearchesTaskPost(List<AppDataTaskRequestInfo> appDataTaskRequestInfo) throws ApiException {
-        ApiResponse<AppDataGoogleAppSearchesTaskPostResponseInfo> localVarResp = googleAppSearchesTaskPostWithHttpInfo(appDataTaskRequestInfo);
+    public AppDataGoogleAppSearchesTaskPostResponseInfo googleAppSearchesTaskPost(List<AppDataGoogleAppSearchesTaskPostRequestInfo> appDataGoogleAppSearchesTaskPostRequestInfo) throws ApiException {
+        ApiResponse<AppDataGoogleAppSearchesTaskPostResponseInfo> localVarResp = googleAppSearchesTaskPostWithHttpInfo(appDataGoogleAppSearchesTaskPostRequestInfo);
         return localVarResp.getData();
     }
 
     /**
      * 
      * ‌‌ This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash&#39;
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataGoogleAppSearchesTaskPostRequestInfo  (optional)
      * @return ApiResponse&lt;AppDataGoogleAppSearchesTaskPostResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -4808,8 +4809,8 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AppDataGoogleAppSearchesTaskPostResponseInfo> googleAppSearchesTaskPostWithHttpInfo(List<AppDataTaskRequestInfo> appDataTaskRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleAppSearchesTaskPostValidateBeforeCall(appDataTaskRequestInfo, null);
+    public ApiResponse<AppDataGoogleAppSearchesTaskPostResponseInfo> googleAppSearchesTaskPostWithHttpInfo(List<AppDataGoogleAppSearchesTaskPostRequestInfo> appDataGoogleAppSearchesTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleAppSearchesTaskPostValidateBeforeCall(appDataGoogleAppSearchesTaskPostRequestInfo, null);
         Type localVarReturnType = new TypeToken<AppDataGoogleAppSearchesTaskPostResponseInfo>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -4817,7 +4818,7 @@ public class AppDataApi {
     /**
      *  (asynchronously)
      * ‌‌ This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash&#39;
-     * @param appDataTaskRequestInfo  (optional)
+     * @param appDataGoogleAppSearchesTaskPostRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -4827,9 +4828,9 @@ public class AppDataApi {
         <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call googleAppSearchesTaskPostAsync(List<AppDataTaskRequestInfo> appDataTaskRequestInfo, final ApiCallback<AppDataGoogleAppSearchesTaskPostResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAppSearchesTaskPostAsync(List<AppDataGoogleAppSearchesTaskPostRequestInfo> appDataGoogleAppSearchesTaskPostRequestInfo, final ApiCallback<AppDataGoogleAppSearchesTaskPostResponseInfo> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = googleAppSearchesTaskPostValidateBeforeCall(appDataTaskRequestInfo, _callback);
+        okhttp3.Call localVarCall = googleAppSearchesTaskPostValidateBeforeCall(appDataGoogleAppSearchesTaskPostRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<AppDataGoogleAppSearchesTaskPostResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

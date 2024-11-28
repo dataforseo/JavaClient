@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -94,7 +94,7 @@ public class DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo {
   }
 
   /**
-   * target keywords required field UTF-8 encoding maximum number of keywords you can specify in this array: 1000 each keyword should be at least 3 characters long; the keywords will be converted to lowercase format learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * target keywords required field UTF-8 encoding maximum number of keywords you can specify in this array: 1000 the keywords will be converted to lowercase format learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable

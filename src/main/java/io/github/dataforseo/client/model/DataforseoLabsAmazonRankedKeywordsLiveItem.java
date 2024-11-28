@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AmazonRankedSerpElement;
-import io.github.dataforseo.client.model.KeywordData;
+import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsAmazonRankedKeywordsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsAmazonRankedKeywordsLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -59,7 +59,7 @@ public class DataforseoLabsAmazonRankedKeywordsLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORD_DATA = "keyword_data";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DATA)
-  private KeywordData keywordData;
+  private KeywordDataInfo keywordData;
 
   public static final String SERIALIZED_NAME_RANKED_SERP_ELEMENT = "ranked_serp_element";
   @SerializedName(SERIALIZED_NAME_RANKED_SERP_ELEMENT)
@@ -87,7 +87,7 @@ public class DataforseoLabsAmazonRankedKeywordsLiveItem {
   }
 
 
-  public DataforseoLabsAmazonRankedKeywordsLiveItem keywordData(KeywordData keywordData) {
+  public DataforseoLabsAmazonRankedKeywordsLiveItem keywordData(KeywordDataInfo keywordData) {
     this.keywordData = keywordData;
     return this;
   }
@@ -97,11 +97,11 @@ public class DataforseoLabsAmazonRankedKeywordsLiveItem {
    * @return keywordData
    */
   @javax.annotation.Nullable
-  public KeywordData getKeywordData() {
+  public KeywordDataInfo getKeywordData() {
     return keywordData;
   }
 
-  public void setKeywordData(KeywordData keywordData) {
+  public void setKeywordData(KeywordDataInfo keywordData) {
     this.keywordData = keywordData;
   }
 
@@ -257,7 +257,7 @@ public class DataforseoLabsAmazonRankedKeywordsLiveItem {
       }
       // validate the optional field `keyword_data`
       if (jsonObj.get("keyword_data") != null && !jsonObj.get("keyword_data").isJsonNull()) {
-        KeywordData.validateJsonElement(jsonObj.get("keyword_data"));
+        KeywordDataInfo.validateJsonElement(jsonObj.get("keyword_data"));
       }
       // validate the optional field `ranked_serp_element`
       if (jsonObj.get("ranked_serp_element") != null && !jsonObj.get("ranked_serp_element").isJsonNull()) {

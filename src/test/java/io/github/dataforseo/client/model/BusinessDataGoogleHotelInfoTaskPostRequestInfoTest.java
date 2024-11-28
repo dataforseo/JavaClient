@@ -41,6 +41,14 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'hotelIdentifier'
+     */
+    @Test
+    public void hotelIdentifierTest() {
+        // TODO: test hotelIdentifier
+    }
+
+    /**
      * Test the property 'keyword'
      */
     @Test
@@ -97,38 +105,6 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfoTest {
     }
 
     /**
-     * Test the property 'tag'
-     */
-    @Test
-    public void tagTest() {
-        // TODO: test tag
-    }
-
-    /**
-     * Test the property 'postbackUrl'
-     */
-    @Test
-    public void postbackUrlTest() {
-        // TODO: test postbackUrl
-    }
-
-    /**
-     * Test the property 'pingbackUrl'
-     */
-    @Test
-    public void pingbackUrlTest() {
-        // TODO: test pingbackUrl
-    }
-
-    /**
-     * Test the property 'hotelIdentifier'
-     */
-    @Test
-    public void hotelIdentifierTest() {
-        // TODO: test hotelIdentifier
-    }
-
-    /**
      * Test the property 'checkIn'
      */
     @Test
@@ -169,11 +145,35 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'tag'
+     */
+    @Test
+    public void tagTest() {
+        // TODO: test tag
+    }
+
+    /**
+     * Test the property 'postbackUrl'
+     */
+    @Test
+    public void postbackUrlTest() {
+        // TODO: test postbackUrl
+    }
+
+    /**
      * Test the property 'postbackData'
      */
     @Test
     public void postbackDataTest() {
         // TODO: test postbackData
+    }
+
+    /**
+     * Test the property 'pingbackUrl'
+     */
+    @Test
+    public void pingbackUrlTest() {
+        // TODO: test pingbackUrl
     }
 
 }

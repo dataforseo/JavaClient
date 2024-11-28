@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,8 +50,24 @@ import io.github.dataforseo.client.JSON;
 /**
  * RatingElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class RatingElement {
+  public static final String SERIALIZED_NAME_RATING_TYPE = "rating_type";
+  @SerializedName(SERIALIZED_NAME_RATING_TYPE)
+  private String ratingType;
+
+  public static final String SERIALIZED_NAME_VALUE = "value";
+  @SerializedName(SERIALIZED_NAME_VALUE)
+  private BigDecimal value;
+
+  public static final String SERIALIZED_NAME_VOTES_COUNT = "votes_count";
+  @SerializedName(SERIALIZED_NAME_VOTES_COUNT)
+  private Long votesCount;
+
+  public static final String SERIALIZED_NAME_RATING_MAX = "rating_max";
+  @SerializedName(SERIALIZED_NAME_RATING_MAX)
+  private Double ratingMax;
+
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
   private String type;
@@ -59,24 +76,84 @@ public class RatingElement {
   @SerializedName(SERIALIZED_NAME_POSITION)
   private String position;
 
-  public static final String SERIALIZED_NAME_RATING_TYPE = "rating_type";
-  @SerializedName(SERIALIZED_NAME_RATING_TYPE)
-  private String ratingType;
-
-  public static final String SERIALIZED_NAME_VALUE = "value";
-  @SerializedName(SERIALIZED_NAME_VALUE)
-  private Float value;
-
-  public static final String SERIALIZED_NAME_VOTES_COUNT = "votes_count";
-  @SerializedName(SERIALIZED_NAME_VOTES_COUNT)
-  private Long votesCount;
-
-  public static final String SERIALIZED_NAME_RATING_MAX = "rating_max";
-  @SerializedName(SERIALIZED_NAME_RATING_MAX)
-  private Integer ratingMax;
-
   public RatingElement() {
   }
+
+  public RatingElement ratingType(String ratingType) {
+    this.ratingType = ratingType;
+    return this;
+  }
+
+  /**
+   * the type of rating here you can find the following elements: Max5, Percents, CustomMax
+   * @return ratingType
+   */
+  @javax.annotation.Nullable
+  public String getRatingType() {
+    return ratingType;
+  }
+
+  public void setRatingType(String ratingType) {
+    this.ratingType = ratingType;
+  }
+
+
+  public RatingElement value(BigDecimal value) {
+    this.value = value;
+    return this;
+  }
+
+  /**
+   * the value of the rating
+   * @return value
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getValue() {
+    return value;
+  }
+
+  public void setValue(BigDecimal value) {
+    this.value = value;
+  }
+
+
+  public RatingElement votesCount(Long votesCount) {
+    this.votesCount = votesCount;
+    return this;
+  }
+
+  /**
+   * the amount of feedbac
+   * @return votesCount
+   */
+  @javax.annotation.Nullable
+  public Long getVotesCount() {
+    return votesCount;
+  }
+
+  public void setVotesCount(Long votesCount) {
+    this.votesCount = votesCount;
+  }
+
+
+  public RatingElement ratingMax(Double ratingMax) {
+    this.ratingMax = ratingMax;
+    return this;
+  }
+
+  /**
+   * the maximum value for a rating_type
+   * @return ratingMax
+   */
+  @javax.annotation.Nullable
+  public Double getRatingMax() {
+    return ratingMax;
+  }
+
+  public void setRatingMax(Double ratingMax) {
+    this.ratingMax = ratingMax;
+  }
+
 
   public RatingElement type(String type) {
     this.type = type;
@@ -113,82 +190,6 @@ public class RatingElement {
 
   public void setPosition(String position) {
     this.position = position;
-  }
-
-
-  public RatingElement ratingType(String ratingType) {
-    this.ratingType = ratingType;
-    return this;
-  }
-
-  /**
-   * the type of rating here you can find the following elements: Max5, Percents, CustomMax
-   * @return ratingType
-   */
-  @javax.annotation.Nullable
-  public String getRatingType() {
-    return ratingType;
-  }
-
-  public void setRatingType(String ratingType) {
-    this.ratingType = ratingType;
-  }
-
-
-  public RatingElement value(Float value) {
-    this.value = value;
-    return this;
-  }
-
-  /**
-   * value of the rating
-   * @return value
-   */
-  @javax.annotation.Nullable
-  public Float getValue() {
-    return value;
-  }
-
-  public void setValue(Float value) {
-    this.value = value;
-  }
-
-
-  public RatingElement votesCount(Long votesCount) {
-    this.votesCount = votesCount;
-    return this;
-  }
-
-  /**
-   * the amount of feedback
-   * @return votesCount
-   */
-  @javax.annotation.Nullable
-  public Long getVotesCount() {
-    return votesCount;
-  }
-
-  public void setVotesCount(Long votesCount) {
-    this.votesCount = votesCount;
-  }
-
-
-  public RatingElement ratingMax(Integer ratingMax) {
-    this.ratingMax = ratingMax;
-    return this;
-  }
-
-  /**
-   * the maximum value for a rating_type
-   * @return ratingMax
-   */
-  @javax.annotation.Nullable
-  public Integer getRatingMax() {
-    return ratingMax;
-  }
-
-  public void setRatingMax(Integer ratingMax) {
-    this.ratingMax = ratingMax;
   }
 
   /**
@@ -246,12 +247,12 @@ public class RatingElement {
       return false;
     }
     RatingElement ratingElement = (RatingElement) o;
-    return Objects.equals(this.type, ratingElement.type) &&
-        Objects.equals(this.position, ratingElement.position) &&
-        Objects.equals(this.ratingType, ratingElement.ratingType) &&
+    return Objects.equals(this.ratingType, ratingElement.ratingType) &&
         Objects.equals(this.value, ratingElement.value) &&
         Objects.equals(this.votesCount, ratingElement.votesCount) &&
-        Objects.equals(this.ratingMax, ratingElement.ratingMax)&&
+        Objects.equals(this.ratingMax, ratingElement.ratingMax) &&
+        Objects.equals(this.type, ratingElement.type) &&
+        Objects.equals(this.position, ratingElement.position)&&
         Objects.equals(this.additionalProperties, ratingElement.additionalProperties);
   }
 
@@ -261,7 +262,7 @@ public class RatingElement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, position, ratingType, value, votesCount, ratingMax, additionalProperties);
+    return Objects.hash(ratingType, value, votesCount, ratingMax, type, position, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -275,12 +276,12 @@ public class RatingElement {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RatingElement {\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    ratingType: ").append(toIndentedString(ratingType)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("    votesCount: ").append(toIndentedString(votesCount)).append("\n");
     sb.append("    ratingMax: ").append(toIndentedString(ratingMax)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -304,12 +305,12 @@ public class RatingElement {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("type");
-    openapiFields.add("position");
     openapiFields.add("rating_type");
     openapiFields.add("value");
     openapiFields.add("votes_count");
     openapiFields.add("rating_max");
+    openapiFields.add("type");
+    openapiFields.add("position");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -328,17 +329,14 @@ public class RatingElement {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("rating_type") != null && !jsonObj.get("rating_type").isJsonNull()) && !jsonObj.get("rating_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `rating_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rating_type").toString()));
+      }
       if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
       }
       if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("rating_type") != null && !jsonObj.get("rating_type").isJsonNull()) && !jsonObj.get("rating_type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `rating_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rating_type").toString()));
-      }
-      if ((jsonObj.get("value") != null && !jsonObj.get("value").isJsonNull()) && !jsonObj.get("value").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("value").toString()));
       }
   }
 

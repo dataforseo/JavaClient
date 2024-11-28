@@ -13,7 +13,7 @@
 |**breadcrumb** | **String** | breadcrumb of the Ad element in SERP |  [optional] |
 |**keyword** | **String** | keyword highlighted in the result |  [optional] |
 |**snippet** | **String** | snippet of the element |  [optional] |
-|**text** | **Boolean** | description of the results element in SERP |  [optional] |
+|**text** | **String** | description of the results element in SERP |  [optional] |
 |**links** | [**List&lt;LinkElement&gt;**](LinkElement.md) | sitelinks the links shown below some of search results if there are none, equals null |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 

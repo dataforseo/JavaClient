@@ -9,6 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**contactUrl** | **String** | URL of the preferred contact page |  [optional] |
 |**contributorUrl** | **String** | URL of the user’s or entity’s Local Guides profile, if available |  [optional] |
+|**bookOnlineUrl** | **String** | URL in the ‘book online’ button of the element URL directing users to the online booking or order page of the business entity |  [optional] |
 |**hotelRating** | **Integer** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |
 |**snippet** | **String** | element snippet contains the address and other information about the local establishment featured in the element |  [optional] |

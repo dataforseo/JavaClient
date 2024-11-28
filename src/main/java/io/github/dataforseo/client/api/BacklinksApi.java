@@ -413,7 +413,7 @@ public class BacklinksApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
      * @param backlinksErrorsRequestInfo  (optional)
      * @return BacklinksErrorsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -430,7 +430,7 @@ public class BacklinksApi {
 
     /**
      * 
-     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
      * @param backlinksErrorsRequestInfo  (optional)
      * @return ApiResponse&lt;BacklinksErrorsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -448,7 +448,7 @@ public class BacklinksApi {
 
     /**
      *  (asynchronously)
-     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the Backlinks API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/backlinks/errors/?bash&#39;
      * @param backlinksErrorsRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call

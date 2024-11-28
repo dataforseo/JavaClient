@@ -20,7 +20,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
-import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleAdsSearchVolumeLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -61,7 +60,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
 
   public static final String SERIALIZED_NAME_SPELL = "spell";
   @SerializedName(SERIALIZED_NAME_SPELL)
-  private SpellInfo spell;
+  private String spell;
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
@@ -112,7 +111,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
   }
 
   /**
-   * keyword keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+   * keyword keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -125,21 +124,21 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
   }
 
 
-  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo spell(SpellInfo spell) {
+  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo spell(String spell) {
     this.spell = spell;
     return this;
   }
 
   /**
-   * Get spell
+   * correct spelling of the keyword Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword; we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link
    * @return spell
    */
   @javax.annotation.Nullable
-  public SpellInfo getSpell() {
+  public String getSpell() {
     return spell;
   }
 
-  public void setSpell(SpellInfo spell) {
+  public void setSpell(String spell) {
     this.spell = spell;
   }
 
@@ -499,9 +498,8 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
       if ((jsonObj.get("keyword") != null && !jsonObj.get("keyword").isJsonNull()) && !jsonObj.get("keyword").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `keyword` to be a primitive type in the JSON string but got `%s`", jsonObj.get("keyword").toString()));
       }
-      // validate the optional field `spell`
-      if (jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) {
-        SpellInfo.validateJsonElement(jsonObj.get("spell"));
+      if ((jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) && !jsonObj.get("spell").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `spell` to be a primitive type in the JSON string but got `%s`", jsonObj.get("spell").toString()));
       }
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));

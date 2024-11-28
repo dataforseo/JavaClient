@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainIntersectionLiveItem;
+import io.github.dataforseo.client.model.DataforseoLabsDomainIntersectionLiveItem;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleDomainIntersectionLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -84,7 +84,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsGoogleDomainIntersectionLiveItem> items;
+  private List<DataforseoLabsDomainIntersectionLiveItem> items;
 
   public DataforseoLabsGoogleDomainIntersectionLiveResultInfo() {
   }
@@ -222,12 +222,12 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleDomainIntersectionLiveResultInfo items(List<DataforseoLabsGoogleDomainIntersectionLiveItem> items) {
+  public DataforseoLabsGoogleDomainIntersectionLiveResultInfo items(List<DataforseoLabsDomainIntersectionLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public DataforseoLabsGoogleDomainIntersectionLiveResultInfo addItemsItem(DataforseoLabsGoogleDomainIntersectionLiveItem itemsItem) {
+  public DataforseoLabsGoogleDomainIntersectionLiveResultInfo addItemsItem(DataforseoLabsDomainIntersectionLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -240,11 +240,11 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<DataforseoLabsGoogleDomainIntersectionLiveItem> getItems() {
+  public List<DataforseoLabsDomainIntersectionLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsGoogleDomainIntersectionLiveItem> items) {
+  public void setItems(List<DataforseoLabsDomainIntersectionLiveItem> items) {
     this.items = items;
   }
 
@@ -413,7 +413,7 @@ public class DataforseoLabsGoogleDomainIntersectionLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            DataforseoLabsGoogleDomainIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
+            DataforseoLabsDomainIntersectionLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

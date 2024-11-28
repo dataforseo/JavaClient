@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleNewsNewsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class GoogleNewsNewsSearchSerpElementItem extends BaseGoogleNewsSerpElementItem {
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -86,7 +86,7 @@ public class GoogleNewsNewsSearchSerpElementItem extends BaseGoogleNewsSerpEleme
   }
 
   /**
-   * domain name of the result in SERP
+   * domain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -105,7 +105,7 @@ public class GoogleNewsNewsSearchSerpElementItem extends BaseGoogleNewsSerpEleme
   }
 
   /**
-   * URL of the result in SERP
+   * search URL with refinement parameters
    * @return url
    */
   @javax.annotation.Nullable

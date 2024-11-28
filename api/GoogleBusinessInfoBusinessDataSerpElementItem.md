@@ -22,6 +22,7 @@
 |**url** | **String** | absolute url of the business entity |  [optional] |
 |**contactUrl** | **String** | URL of the preferred contact page |  [optional] |
 |**contributorUrl** | **String** | URL of the user’s or entity’s Local Guides profile, if available |  [optional] |
+|**bookOnlineUrl** | **String** | URL in the ‘book online’ button of the element URL directing users to the online booking or order page of the business entity |  [optional] |
 |**domain** | **String** | domain of the business entity |  [optional] |
 |**logo** | **String** | URL of the logo featured in Google My Business profile |  [optional] |
 |**mainImage** | **String** | URL of the main image featured in Google My Business profile |  [optional] |
@@ -38,7 +39,7 @@
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |
 |**ratingDistribution** | **Map&lt;String, Integer&gt;** | the distribution of ratings of the business entity the object displays the number of 1-star to 5-star ratings, as reviewed by users |  [optional] |
 |**peopleAlsoSearch** | [**List&lt;PeopleAlsoSearch&gt;**](PeopleAlsoSearch.md) | related business entities |  [optional] |
-|**workTime** | [**WorkInfo**](WorkInfo.md) |  |  [optional] |
+|**workTime** | [**WorkTime**](WorkTime.md) |  |  [optional] |
 |**popularTimes** | [**PopularTimes**](PopularTimes.md) |  |  [optional] |
 |**localBusinessLinks** | [**List&lt;BaseLocalBusinessLink&gt;**](BaseLocalBusinessLink.md) | available interactions with the business list of options to interact with the business directly from search results |  [optional] |
 |**isDirectoryItem** | **Boolean** | business establishment is a part of the directory indicates whether the business establishment is a part of the directory; if true, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre); note: if the business establishment is a parent item in the directory, the value will be null |  [optional] |

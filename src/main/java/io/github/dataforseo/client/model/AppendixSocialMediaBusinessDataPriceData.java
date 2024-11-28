@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -49,24 +49,24 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixSocialMediaBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixSocialMediaBusinessDataPriceData {
   public static final String SERIALIZED_NAME_FACEBOOK = "facebook";
   @SerializedName(SERIALIZED_NAME_FACEBOOK)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo facebook;
+  private AppendixBingKeywordsDataPriceDataInfo facebook;
 
   public static final String SERIALIZED_NAME_PINTEREST = "pinterest";
   @SerializedName(SERIALIZED_NAME_PINTEREST)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo pinterest;
+  private AppendixBingKeywordsDataPriceDataInfo pinterest;
 
   public static final String SERIALIZED_NAME_REDDIT = "reddit";
   @SerializedName(SERIALIZED_NAME_REDDIT)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo reddit;
+  private AppendixBingKeywordsDataPriceDataInfo reddit;
 
   public AppendixSocialMediaBusinessDataPriceData() {
   }
 
-  public AppendixSocialMediaBusinessDataPriceData facebook(AppendixKeywordBingKeywordsDataPriceDataInfo facebook) {
+  public AppendixSocialMediaBusinessDataPriceData facebook(AppendixBingKeywordsDataPriceDataInfo facebook) {
     this.facebook = facebook;
     return this;
   }
@@ -76,16 +76,16 @@ public class AppendixSocialMediaBusinessDataPriceData {
    * @return facebook
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getFacebook() {
+  public AppendixBingKeywordsDataPriceDataInfo getFacebook() {
     return facebook;
   }
 
-  public void setFacebook(AppendixKeywordBingKeywordsDataPriceDataInfo facebook) {
+  public void setFacebook(AppendixBingKeywordsDataPriceDataInfo facebook) {
     this.facebook = facebook;
   }
 
 
-  public AppendixSocialMediaBusinessDataPriceData pinterest(AppendixKeywordBingKeywordsDataPriceDataInfo pinterest) {
+  public AppendixSocialMediaBusinessDataPriceData pinterest(AppendixBingKeywordsDataPriceDataInfo pinterest) {
     this.pinterest = pinterest;
     return this;
   }
@@ -95,16 +95,16 @@ public class AppendixSocialMediaBusinessDataPriceData {
    * @return pinterest
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getPinterest() {
+  public AppendixBingKeywordsDataPriceDataInfo getPinterest() {
     return pinterest;
   }
 
-  public void setPinterest(AppendixKeywordBingKeywordsDataPriceDataInfo pinterest) {
+  public void setPinterest(AppendixBingKeywordsDataPriceDataInfo pinterest) {
     this.pinterest = pinterest;
   }
 
 
-  public AppendixSocialMediaBusinessDataPriceData reddit(AppendixKeywordBingKeywordsDataPriceDataInfo reddit) {
+  public AppendixSocialMediaBusinessDataPriceData reddit(AppendixBingKeywordsDataPriceDataInfo reddit) {
     this.reddit = reddit;
     return this;
   }
@@ -114,11 +114,11 @@ public class AppendixSocialMediaBusinessDataPriceData {
    * @return reddit
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getReddit() {
+  public AppendixBingKeywordsDataPriceDataInfo getReddit() {
     return reddit;
   }
 
-  public void setReddit(AppendixKeywordBingKeywordsDataPriceDataInfo reddit) {
+  public void setReddit(AppendixBingKeywordsDataPriceDataInfo reddit) {
     this.reddit = reddit;
   }
 
@@ -241,15 +241,15 @@ public class AppendixSocialMediaBusinessDataPriceData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `facebook`
       if (jsonObj.get("facebook") != null && !jsonObj.get("facebook").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("facebook"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("facebook"));
       }
       // validate the optional field `pinterest`
       if (jsonObj.get("pinterest") != null && !jsonObj.get("pinterest").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("pinterest"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("pinterest"));
       }
       // validate the optional field `reddit`
       if (jsonObj.get("reddit") != null && !jsonObj.get("reddit").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("reddit"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("reddit"));
       }
   }
 

@@ -18,7 +18,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.SerpGoogleDatasetInfoAdvancedItem;
+import io.github.dataforseo.client.model.RefinementChipsInfo;
+import io.github.dataforseo.client.model.SerpGoogleDatasetAdvancedItem;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -88,6 +89,14 @@ public class SerpGoogleDatasetInfoTaskGetAdvancedResultInfoTest {
     @Test
     public void spellTest() {
         // TODO: test spell
+    }
+
+    /**
+     * Test the property 'refinementChips'
+     */
+    @Test
+    public void refinementChipsTest() {
+        // TODO: test refinementChips
     }
 
     /**

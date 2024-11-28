@@ -11,7 +11,7 @@
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**url** | **String** | relevant URL of the Ad element in SERP |  [optional] |
 |**items** | [**List&lt;ImagesElement&gt;**](ImagesElement.md) | elements of search results found in SERP |  [optional] |
-|**relatedImageSearches** | **Object** | contains keywords and images related to the specified search term if there are none, equals null |  [optional] |
+|**relatedImageSearches** | [**RelatedImageSearchesElement**](RelatedImageSearchesElement.md) |  |  [optional] |
 
 
 

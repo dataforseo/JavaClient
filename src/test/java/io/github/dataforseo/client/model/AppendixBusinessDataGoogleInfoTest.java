@@ -87,4 +87,12 @@ public class AppendixBusinessDataGoogleInfoTest {
         // TODO: test questionsAndAnswers
     }
 
+    /**
+     * Test the property 'extendedReviews'
+     */
+    @Test
+    public void extendedReviewsTest() {
+        // TODO: test extendedReviews
+    }
+
 }

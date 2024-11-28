@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixTechnologiesDomainAnalyticsPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixTechnologiesDomainAnalyticsPriceData {
   public static final String SERIALIZED_NAME_LANGUAGES = "languages";
   @SerializedName(SERIALIZED_NAME_LANGUAGES)
@@ -66,27 +66,27 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
 
   public static final String SERIALIZED_NAME_AGGREGATION_TECHNOLOGIES = "aggregation_technologies";
   @SerializedName(SERIALIZED_NAME_AGGREGATION_TECHNOLOGIES)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo aggregationTechnologies;
+  private AppendixBingKeywordsDataPriceDataInfo aggregationTechnologies;
 
   public static final String SERIALIZED_NAME_DOMAINS_BY_HTML_TERMS = "domains_by_html_terms";
   @SerializedName(SERIALIZED_NAME_DOMAINS_BY_HTML_TERMS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo domainsByHtmlTerms;
+  private AppendixBingKeywordsDataPriceDataInfo domainsByHtmlTerms;
 
   public static final String SERIALIZED_NAME_DOMAINS_BY_TECHNOLOGY = "domains_by_technology";
   @SerializedName(SERIALIZED_NAME_DOMAINS_BY_TECHNOLOGY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo domainsByTechnology;
+  private AppendixBingKeywordsDataPriceDataInfo domainsByTechnology;
 
   public static final String SERIALIZED_NAME_DOMAIN_TECHNOLOGIES = "domain_technologies";
   @SerializedName(SERIALIZED_NAME_DOMAIN_TECHNOLOGIES)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo domainTechnologies;
+  private AppendixBingKeywordsDataPriceDataInfo domainTechnologies;
 
   public static final String SERIALIZED_NAME_TECHNOLOGIES_SUMMARY = "technologies_summary";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGIES_SUMMARY)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo technologiesSummary;
+  private AppendixBingKeywordsDataPriceDataInfo technologiesSummary;
 
   public static final String SERIALIZED_NAME_TECHNOLOGY_STATS = "technology_stats";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY_STATS)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo technologyStats;
+  private AppendixBingKeywordsDataPriceDataInfo technologyStats;
 
   public AppendixTechnologiesDomainAnalyticsPriceData() {
   }
@@ -148,7 +148,7 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsPriceData aggregationTechnologies(AppendixKeywordBingKeywordsDataPriceDataInfo aggregationTechnologies) {
+  public AppendixTechnologiesDomainAnalyticsPriceData aggregationTechnologies(AppendixBingKeywordsDataPriceDataInfo aggregationTechnologies) {
     this.aggregationTechnologies = aggregationTechnologies;
     return this;
   }
@@ -158,16 +158,16 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
    * @return aggregationTechnologies
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getAggregationTechnologies() {
+  public AppendixBingKeywordsDataPriceDataInfo getAggregationTechnologies() {
     return aggregationTechnologies;
   }
 
-  public void setAggregationTechnologies(AppendixKeywordBingKeywordsDataPriceDataInfo aggregationTechnologies) {
+  public void setAggregationTechnologies(AppendixBingKeywordsDataPriceDataInfo aggregationTechnologies) {
     this.aggregationTechnologies = aggregationTechnologies;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsPriceData domainsByHtmlTerms(AppendixKeywordBingKeywordsDataPriceDataInfo domainsByHtmlTerms) {
+  public AppendixTechnologiesDomainAnalyticsPriceData domainsByHtmlTerms(AppendixBingKeywordsDataPriceDataInfo domainsByHtmlTerms) {
     this.domainsByHtmlTerms = domainsByHtmlTerms;
     return this;
   }
@@ -177,16 +177,16 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
    * @return domainsByHtmlTerms
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDomainsByHtmlTerms() {
+  public AppendixBingKeywordsDataPriceDataInfo getDomainsByHtmlTerms() {
     return domainsByHtmlTerms;
   }
 
-  public void setDomainsByHtmlTerms(AppendixKeywordBingKeywordsDataPriceDataInfo domainsByHtmlTerms) {
+  public void setDomainsByHtmlTerms(AppendixBingKeywordsDataPriceDataInfo domainsByHtmlTerms) {
     this.domainsByHtmlTerms = domainsByHtmlTerms;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsPriceData domainsByTechnology(AppendixKeywordBingKeywordsDataPriceDataInfo domainsByTechnology) {
+  public AppendixTechnologiesDomainAnalyticsPriceData domainsByTechnology(AppendixBingKeywordsDataPriceDataInfo domainsByTechnology) {
     this.domainsByTechnology = domainsByTechnology;
     return this;
   }
@@ -196,16 +196,16 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
    * @return domainsByTechnology
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDomainsByTechnology() {
+  public AppendixBingKeywordsDataPriceDataInfo getDomainsByTechnology() {
     return domainsByTechnology;
   }
 
-  public void setDomainsByTechnology(AppendixKeywordBingKeywordsDataPriceDataInfo domainsByTechnology) {
+  public void setDomainsByTechnology(AppendixBingKeywordsDataPriceDataInfo domainsByTechnology) {
     this.domainsByTechnology = domainsByTechnology;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsPriceData domainTechnologies(AppendixKeywordBingKeywordsDataPriceDataInfo domainTechnologies) {
+  public AppendixTechnologiesDomainAnalyticsPriceData domainTechnologies(AppendixBingKeywordsDataPriceDataInfo domainTechnologies) {
     this.domainTechnologies = domainTechnologies;
     return this;
   }
@@ -215,16 +215,16 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
    * @return domainTechnologies
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDomainTechnologies() {
+  public AppendixBingKeywordsDataPriceDataInfo getDomainTechnologies() {
     return domainTechnologies;
   }
 
-  public void setDomainTechnologies(AppendixKeywordBingKeywordsDataPriceDataInfo domainTechnologies) {
+  public void setDomainTechnologies(AppendixBingKeywordsDataPriceDataInfo domainTechnologies) {
     this.domainTechnologies = domainTechnologies;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsPriceData technologiesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo technologiesSummary) {
+  public AppendixTechnologiesDomainAnalyticsPriceData technologiesSummary(AppendixBingKeywordsDataPriceDataInfo technologiesSummary) {
     this.technologiesSummary = technologiesSummary;
     return this;
   }
@@ -234,16 +234,16 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
    * @return technologiesSummary
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getTechnologiesSummary() {
+  public AppendixBingKeywordsDataPriceDataInfo getTechnologiesSummary() {
     return technologiesSummary;
   }
 
-  public void setTechnologiesSummary(AppendixKeywordBingKeywordsDataPriceDataInfo technologiesSummary) {
+  public void setTechnologiesSummary(AppendixBingKeywordsDataPriceDataInfo technologiesSummary) {
     this.technologiesSummary = technologiesSummary;
   }
 
 
-  public AppendixTechnologiesDomainAnalyticsPriceData technologyStats(AppendixKeywordBingKeywordsDataPriceDataInfo technologyStats) {
+  public AppendixTechnologiesDomainAnalyticsPriceData technologyStats(AppendixBingKeywordsDataPriceDataInfo technologyStats) {
     this.technologyStats = technologyStats;
     return this;
   }
@@ -253,11 +253,11 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
    * @return technologyStats
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getTechnologyStats() {
+  public AppendixBingKeywordsDataPriceDataInfo getTechnologyStats() {
     return technologyStats;
   }
 
-  public void setTechnologyStats(AppendixKeywordBingKeywordsDataPriceDataInfo technologyStats) {
+  public void setTechnologyStats(AppendixBingKeywordsDataPriceDataInfo technologyStats) {
     this.technologyStats = technologyStats;
   }
 
@@ -410,27 +410,27 @@ public class AppendixTechnologiesDomainAnalyticsPriceData {
       }
       // validate the optional field `aggregation_technologies`
       if (jsonObj.get("aggregation_technologies") != null && !jsonObj.get("aggregation_technologies").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("aggregation_technologies"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("aggregation_technologies"));
       }
       // validate the optional field `domains_by_html_terms`
       if (jsonObj.get("domains_by_html_terms") != null && !jsonObj.get("domains_by_html_terms").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domains_by_html_terms"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domains_by_html_terms"));
       }
       // validate the optional field `domains_by_technology`
       if (jsonObj.get("domains_by_technology") != null && !jsonObj.get("domains_by_technology").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domains_by_technology"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domains_by_technology"));
       }
       // validate the optional field `domain_technologies`
       if (jsonObj.get("domain_technologies") != null && !jsonObj.get("domain_technologies").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_technologies"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("domain_technologies"));
       }
       // validate the optional field `technologies_summary`
       if (jsonObj.get("technologies_summary") != null && !jsonObj.get("technologies_summary").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("technologies_summary"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("technologies_summary"));
       }
       // validate the optional field `technology_stats`
       if (jsonObj.get("technology_stats") != null && !jsonObj.get("technology_stats").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("technology_stats"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("technology_stats"));
       }
   }
 

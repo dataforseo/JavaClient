@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingRankedKeywordsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsBingRankedKeywordsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -118,7 +118,7 @@ public class DataforseoLabsBingRankedKeywordsLiveRequestInfo {
   }
 
   /**
-   * domain required field the domain name of the target website the domain should be specified without https:// or www. if you want to get the keywords a particular webpage ranks for, specify the filter by the ranked_serp_element.serp_item.relative_url parameter example: \&quot;filters\&quot;:[ \&quot;ranked_serp_element.serp_item.relative_url\&quot;, \&quot;&#x3D;\&quot;, \&quot;/apis/rank-tracker-api\&quot;]
+   * domain name or page url required field the domain name of the target website or URL of the target webpage; the domain name must be specified without https:// or www.; the webpage URL must be specified with https:// or www.
    * @return target
    */
   @javax.annotation.Nullable

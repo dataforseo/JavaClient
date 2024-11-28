@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.AppendixBingKeywordsDataDayStatisticsDa
 import io.github.dataforseo.client.model.AppendixBingKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixInfo;
 import java.io.IOException;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -121,17 +122,33 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_DATA)
   private AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo clickstreamData;
 
-  public static final String SERIALIZED_NAME_GOOGLE = "google";
-  @SerializedName(SERIALIZED_NAME_GOOGLE)
-  private AppendixBingKeywordsDataLimitsRatesDataInfo google;
+  public static final String SERIALIZED_NAME_AUDIENCE_ESTIMATION = "audience_estimation";
+  @SerializedName(SERIALIZED_NAME_AUDIENCE_ESTIMATION)
+  private AppendixInfo audienceEstimation;
+
+  public static final String SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL = "keyword_suggestions_for_url";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL)
+  private AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl;
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public static final String SERIALIZED_NAME_INDUSTRIES = "industries";
+  @SerializedName(SERIALIZED_NAME_INDUSTRIES)
+  private Double industries;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
   private AppendixInfo searchVolumeHistory;
 
-  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
-  @SerializedName(SERIALIZED_NAME_ID_LIST)
-  private Double idList;
+  public static final String SERIALIZED_NAME_GOOGLE = "google";
+  @SerializedName(SERIALIZED_NAME_GOOGLE)
+  private AppendixBingKeywordsDataLimitsRatesDataInfo google;
+
+  public static final String SERIALIZED_NAME_JOB_FUNCTIONS = "job_functions";
+  @SerializedName(SERIALIZED_NAME_JOB_FUNCTIONS)
+  private Double jobFunctions;
 
   public AppendixKeywordsDataDayStatisticsRatesData() {
   }
@@ -440,22 +457,79 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   }
 
 
-  public AppendixKeywordsDataDayStatisticsRatesData google(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
-    this.google = google;
+  public AppendixKeywordsDataDayStatisticsRatesData audienceEstimation(AppendixInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
     return this;
   }
 
   /**
-   * Get google
-   * @return google
+   * Get audienceEstimation
+   * @return audienceEstimation
    */
   @javax.annotation.Nullable
-  public AppendixBingKeywordsDataLimitsRatesDataInfo getGoogle() {
-    return google;
+  public AppendixInfo getAudienceEstimation() {
+    return audienceEstimation;
   }
 
-  public void setGoogle(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
-    this.google = google;
+  public void setAudienceEstimation(AppendixInfo audienceEstimation) {
+    this.audienceEstimation = audienceEstimation;
+  }
+
+
+  public AppendixKeywordsDataDayStatisticsRatesData keywordSuggestionsForUrl(AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+    return this;
+  }
+
+  /**
+   * Get keywordSuggestionsForUrl
+   * @return keywordSuggestionsForUrl
+   */
+  @javax.annotation.Nullable
+  public AppendixDayLimitsRatesDataInfo getKeywordSuggestionsForUrl() {
+    return keywordSuggestionsForUrl;
+  }
+
+  public void setKeywordSuggestionsForUrl(AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl) {
+    this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
+  }
+
+
+  public AppendixKeywordsDataDayStatisticsRatesData idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * Get idList
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
+  public AppendixKeywordsDataDayStatisticsRatesData industries(Double industries) {
+    this.industries = industries;
+    return this;
+  }
+
+  /**
+   * Get industries
+   * @return industries
+   */
+  @javax.annotation.Nullable
+  public Double getIndustries() {
+    return industries;
+  }
+
+  public void setIndustries(Double industries) {
+    this.industries = industries;
   }
 
 
@@ -478,22 +552,41 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   }
 
 
-  public AppendixKeywordsDataDayStatisticsRatesData idList(Double idList) {
-    this.idList = idList;
+  public AppendixKeywordsDataDayStatisticsRatesData google(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
+    this.google = google;
     return this;
   }
 
   /**
-   * Get idList
-   * @return idList
+   * Get google
+   * @return google
    */
   @javax.annotation.Nullable
-  public Double getIdList() {
-    return idList;
+  public AppendixBingKeywordsDataLimitsRatesDataInfo getGoogle() {
+    return google;
   }
 
-  public void setIdList(Double idList) {
-    this.idList = idList;
+  public void setGoogle(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
+    this.google = google;
+  }
+
+
+  public AppendixKeywordsDataDayStatisticsRatesData jobFunctions(Double jobFunctions) {
+    this.jobFunctions = jobFunctions;
+    return this;
+  }
+
+  /**
+   * Get jobFunctions
+   * @return jobFunctions
+   */
+  @javax.annotation.Nullable
+  public Double getJobFunctions() {
+    return jobFunctions;
+  }
+
+  public void setJobFunctions(Double jobFunctions) {
+    this.jobFunctions = jobFunctions;
   }
 
   /**
@@ -567,9 +660,13 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
         Objects.equals(this.googleAds, appendixKeywordsDataDayStatisticsRatesData.googleAds) &&
         Objects.equals(this.dataforseoTrends, appendixKeywordsDataDayStatisticsRatesData.dataforseoTrends) &&
         Objects.equals(this.clickstreamData, appendixKeywordsDataDayStatisticsRatesData.clickstreamData) &&
-        Objects.equals(this.google, appendixKeywordsDataDayStatisticsRatesData.google) &&
+        Objects.equals(this.audienceEstimation, appendixKeywordsDataDayStatisticsRatesData.audienceEstimation) &&
+        Objects.equals(this.keywordSuggestionsForUrl, appendixKeywordsDataDayStatisticsRatesData.keywordSuggestionsForUrl) &&
+        Objects.equals(this.idList, appendixKeywordsDataDayStatisticsRatesData.idList) &&
+        Objects.equals(this.industries, appendixKeywordsDataDayStatisticsRatesData.industries) &&
         Objects.equals(this.searchVolumeHistory, appendixKeywordsDataDayStatisticsRatesData.searchVolumeHistory) &&
-        Objects.equals(this.idList, appendixKeywordsDataDayStatisticsRatesData.idList)&&
+        Objects.equals(this.google, appendixKeywordsDataDayStatisticsRatesData.google) &&
+        Objects.equals(this.jobFunctions, appendixKeywordsDataDayStatisticsRatesData.jobFunctions)&&
         Objects.equals(this.additionalProperties, appendixKeywordsDataDayStatisticsRatesData.additionalProperties);
   }
 
@@ -579,7 +676,7 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, google, searchVolumeHistory, idList, additionalProperties);
+    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, audienceEstimation, keywordSuggestionsForUrl, idList, industries, searchVolumeHistory, google, jobFunctions, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -609,9 +706,13 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
     sb.append("    googleAds: ").append(toIndentedString(googleAds)).append("\n");
     sb.append("    dataforseoTrends: ").append(toIndentedString(dataforseoTrends)).append("\n");
     sb.append("    clickstreamData: ").append(toIndentedString(clickstreamData)).append("\n");
-    sb.append("    google: ").append(toIndentedString(google)).append("\n");
-    sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
+    sb.append("    audienceEstimation: ").append(toIndentedString(audienceEstimation)).append("\n");
+    sb.append("    keywordSuggestionsForUrl: ").append(toIndentedString(keywordSuggestionsForUrl)).append("\n");
     sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    industries: ").append(toIndentedString(industries)).append("\n");
+    sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
+    sb.append("    google: ").append(toIndentedString(google)).append("\n");
+    sb.append("    jobFunctions: ").append(toIndentedString(jobFunctions)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -651,9 +752,13 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
     openapiFields.add("google_ads");
     openapiFields.add("dataforseo_trends");
     openapiFields.add("clickstream_data");
-    openapiFields.add("google");
-    openapiFields.add("search_volume_history");
+    openapiFields.add("audience_estimation");
+    openapiFields.add("keyword_suggestions_for_url");
     openapiFields.add("id_list");
+    openapiFields.add("industries");
+    openapiFields.add("search_volume_history");
+    openapiFields.add("google");
+    openapiFields.add("job_functions");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -712,13 +817,21 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
       if (jsonObj.get("clickstream_data") != null && !jsonObj.get("clickstream_data").isJsonNull()) {
         AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("clickstream_data"));
       }
-      // validate the optional field `google`
-      if (jsonObj.get("google") != null && !jsonObj.get("google").isJsonNull()) {
-        AppendixBingKeywordsDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("google"));
+      // validate the optional field `audience_estimation`
+      if (jsonObj.get("audience_estimation") != null && !jsonObj.get("audience_estimation").isJsonNull()) {
+        AppendixInfo.validateJsonElement(jsonObj.get("audience_estimation"));
+      }
+      // validate the optional field `keyword_suggestions_for_url`
+      if (jsonObj.get("keyword_suggestions_for_url") != null && !jsonObj.get("keyword_suggestions_for_url").isJsonNull()) {
+        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
       }
       // validate the optional field `search_volume_history`
       if (jsonObj.get("search_volume_history") != null && !jsonObj.get("search_volume_history").isJsonNull()) {
         AppendixInfo.validateJsonElement(jsonObj.get("search_volume_history"));
+      }
+      // validate the optional field `google`
+      if (jsonObj.get("google") != null && !jsonObj.get("google").isJsonNull()) {
+        AppendixBingKeywordsDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("google"));
       }
   }
 

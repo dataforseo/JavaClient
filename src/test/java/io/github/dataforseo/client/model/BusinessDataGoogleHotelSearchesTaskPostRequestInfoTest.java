@@ -97,30 +97,6 @@ public class BusinessDataGoogleHotelSearchesTaskPostRequestInfoTest {
     }
 
     /**
-     * Test the property 'tag'
-     */
-    @Test
-    public void tagTest() {
-        // TODO: test tag
-    }
-
-    /**
-     * Test the property 'postbackUrl'
-     */
-    @Test
-    public void postbackUrlTest() {
-        // TODO: test postbackUrl
-    }
-
-    /**
-     * Test the property 'pingbackUrl'
-     */
-    @Test
-    public void pingbackUrlTest() {
-        // TODO: test pingbackUrl
-    }
-
-    /**
      * Test the property 'depth'
      */
     @Test
@@ -230,6 +206,30 @@ public class BusinessDataGoogleHotelSearchesTaskPostRequestInfoTest {
     @Test
     public void amenitiesTest() {
         // TODO: test amenities
+    }
+
+    /**
+     * Test the property 'tag'
+     */
+    @Test
+    public void tagTest() {
+        // TODO: test tag
+    }
+
+    /**
+     * Test the property 'postbackUrl'
+     */
+    @Test
+    public void postbackUrlTest() {
+        // TODO: test postbackUrl
+    }
+
+    /**
+     * Test the property 'pingbackUrl'
+     */
+    @Test
+    public void pingbackUrlTest() {
+        // TODO: test pingbackUrl
     }
 
 }

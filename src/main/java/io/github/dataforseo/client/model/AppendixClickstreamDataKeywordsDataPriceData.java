@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordBingKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -50,19 +50,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixClickstreamDataKeywordsDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class AppendixClickstreamDataKeywordsDataPriceData {
   public static final String SERIALIZED_NAME_BULK_SEARCH_VOLUME = "bulk_search_volume";
   @SerializedName(SERIALIZED_NAME_BULK_SEARCH_VOLUME)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo bulkSearchVolume;
+  private AppendixBingKeywordsDataPriceDataInfo bulkSearchVolume;
 
   public static final String SERIALIZED_NAME_DATAFORSEO_SEARCH_VOLUME = "dataforseo_search_volume";
   @SerializedName(SERIALIZED_NAME_DATAFORSEO_SEARCH_VOLUME)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo dataforseoSearchVolume;
+  private AppendixBingKeywordsDataPriceDataInfo dataforseoSearchVolume;
 
   public static final String SERIALIZED_NAME_GLOBAL_SEARCH_VOLUME = "global_search_volume";
   @SerializedName(SERIALIZED_NAME_GLOBAL_SEARCH_VOLUME)
-  private AppendixKeywordBingKeywordsDataPriceDataInfo globalSearchVolume;
+  private AppendixBingKeywordsDataPriceDataInfo globalSearchVolume;
 
   public static final String SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES = "locations_and_languages";
   @SerializedName(SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES)
@@ -71,7 +71,7 @@ public class AppendixClickstreamDataKeywordsDataPriceData {
   public AppendixClickstreamDataKeywordsDataPriceData() {
   }
 
-  public AppendixClickstreamDataKeywordsDataPriceData bulkSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo bulkSearchVolume) {
+  public AppendixClickstreamDataKeywordsDataPriceData bulkSearchVolume(AppendixBingKeywordsDataPriceDataInfo bulkSearchVolume) {
     this.bulkSearchVolume = bulkSearchVolume;
     return this;
   }
@@ -81,16 +81,16 @@ public class AppendixClickstreamDataKeywordsDataPriceData {
    * @return bulkSearchVolume
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getBulkSearchVolume() {
+  public AppendixBingKeywordsDataPriceDataInfo getBulkSearchVolume() {
     return bulkSearchVolume;
   }
 
-  public void setBulkSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo bulkSearchVolume) {
+  public void setBulkSearchVolume(AppendixBingKeywordsDataPriceDataInfo bulkSearchVolume) {
     this.bulkSearchVolume = bulkSearchVolume;
   }
 
 
-  public AppendixClickstreamDataKeywordsDataPriceData dataforseoSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo dataforseoSearchVolume) {
+  public AppendixClickstreamDataKeywordsDataPriceData dataforseoSearchVolume(AppendixBingKeywordsDataPriceDataInfo dataforseoSearchVolume) {
     this.dataforseoSearchVolume = dataforseoSearchVolume;
     return this;
   }
@@ -100,16 +100,16 @@ public class AppendixClickstreamDataKeywordsDataPriceData {
    * @return dataforseoSearchVolume
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getDataforseoSearchVolume() {
+  public AppendixBingKeywordsDataPriceDataInfo getDataforseoSearchVolume() {
     return dataforseoSearchVolume;
   }
 
-  public void setDataforseoSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo dataforseoSearchVolume) {
+  public void setDataforseoSearchVolume(AppendixBingKeywordsDataPriceDataInfo dataforseoSearchVolume) {
     this.dataforseoSearchVolume = dataforseoSearchVolume;
   }
 
 
-  public AppendixClickstreamDataKeywordsDataPriceData globalSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo globalSearchVolume) {
+  public AppendixClickstreamDataKeywordsDataPriceData globalSearchVolume(AppendixBingKeywordsDataPriceDataInfo globalSearchVolume) {
     this.globalSearchVolume = globalSearchVolume;
     return this;
   }
@@ -119,11 +119,11 @@ public class AppendixClickstreamDataKeywordsDataPriceData {
    * @return globalSearchVolume
    */
   @javax.annotation.Nullable
-  public AppendixKeywordBingKeywordsDataPriceDataInfo getGlobalSearchVolume() {
+  public AppendixBingKeywordsDataPriceDataInfo getGlobalSearchVolume() {
     return globalSearchVolume;
   }
 
-  public void setGlobalSearchVolume(AppendixKeywordBingKeywordsDataPriceDataInfo globalSearchVolume) {
+  public void setGlobalSearchVolume(AppendixBingKeywordsDataPriceDataInfo globalSearchVolume) {
     this.globalSearchVolume = globalSearchVolume;
   }
 
@@ -268,15 +268,15 @@ public class AppendixClickstreamDataKeywordsDataPriceData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `bulk_search_volume`
       if (jsonObj.get("bulk_search_volume") != null && !jsonObj.get("bulk_search_volume").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_search_volume"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("bulk_search_volume"));
       }
       // validate the optional field `dataforseo_search_volume`
       if (jsonObj.get("dataforseo_search_volume") != null && !jsonObj.get("dataforseo_search_volume").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("dataforseo_search_volume"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("dataforseo_search_volume"));
       }
       // validate the optional field `global_search_volume`
       if (jsonObj.get("global_search_volume") != null && !jsonObj.get("global_search_volume").isJsonNull()) {
-        AppendixKeywordBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("global_search_volume"));
+        AppendixBingKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("global_search_volume"));
       }
       // validate the optional field `locations_and_languages`
       if (jsonObj.get("locations_and_languages") != null && !jsonObj.get("locations_and_languages").isJsonNull()) {

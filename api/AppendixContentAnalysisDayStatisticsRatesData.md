@@ -17,8 +17,8 @@
 |**languages** | **Double** |  |  [optional] |
 |**categories** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
 |**availableFilters** | **Double** |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
 
 
 

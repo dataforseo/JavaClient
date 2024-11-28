@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPagePageScreenshotRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
 public class OnPagePageScreenshotRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -86,10 +86,6 @@ public class OnPagePageScreenshotRequestInfo {
   public static final String SERIALIZED_NAME_DISABLE_COOKIE_POPUP = "disable_cookie_popup";
   @SerializedName(SERIALIZED_NAME_DISABLE_COOKIE_POPUP)
   private Boolean disableCookiePopup;
-
-  public static final String SERIALIZED_NAME_CUSTOM_JS = "custom_js";
-  @SerializedName(SERIALIZED_NAME_CUSTOM_JS)
-  private String customJs;
 
   public static final String SERIALIZED_NAME_SWITCH_POOL = "switch_pool";
   @SerializedName(SERIALIZED_NAME_SWITCH_POOL)
@@ -273,25 +269,6 @@ public class OnPagePageScreenshotRequestInfo {
   }
 
 
-  public OnPagePageScreenshotRequestInfo customJs(String customJs) {
-    this.customJs = customJs;
-    return this;
-  }
-
-  /**
-   * custom javascript optional field Note that the execution time for the script you enter here should be 700 ms maximum for example, you can use the following JS snippet to check if the website contains Google Tag Manager as a scr attribute: let meta &#x3D; { haveGoogleAnalytics: false, haveTagManager: false };\\r\\nfor (var i &#x3D; 0; i &lt; document.scripts.length; i++) {\\r\\n  let src &#x3D; document.scripts[i].getAttribute(\\\&quot;src\\\&quot;);\\r\\n  if (src !&#x3D; undefined) {\\r\\n    if (src.indexOf(\\\&quot;analytics.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveGoogleAnalytics &#x3D; true;\\r\\n\\tif (src.indexOf(\\\&quot;gtm.js\\\&quot;) &gt;&#x3D; 0)\\r\\n      meta.haveTagManager &#x3D; true;\\r\\n  }\\r\\n}\\r\\nmeta; the returned value depends on what you specified in this field. For instance, if you specify the following script: meta &#x3D; {}; meta.url &#x3D; document.URL; meta.test &#x3D; &#39;test&#39;; meta; as a response you will receive the following data: \&quot;custom_js_response\&quot;: {   \&quot;url\&quot;: \&quot;https://dataforseo.com/\&quot;,   \&quot;test\&quot;: \&quot;test\&quot; } Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
-   * @return customJs
-   */
-  @javax.annotation.Nullable
-  public String getCustomJs() {
-    return customJs;
-  }
-
-  public void setCustomJs(String customJs) {
-    this.customJs = customJs;
-  }
-
-
   public OnPagePageScreenshotRequestInfo switchPool(Boolean switchPool) {
     this.switchPool = switchPool;
     return this;
@@ -393,7 +370,6 @@ public class OnPagePageScreenshotRequestInfo {
         Objects.equals(this.browserScreenScaleFactor, onPagePageScreenshotRequestInfo.browserScreenScaleFactor) &&
         Objects.equals(this.fullPageScreenshot, onPagePageScreenshotRequestInfo.fullPageScreenshot) &&
         Objects.equals(this.disableCookiePopup, onPagePageScreenshotRequestInfo.disableCookiePopup) &&
-        Objects.equals(this.customJs, onPagePageScreenshotRequestInfo.customJs) &&
         Objects.equals(this.switchPool, onPagePageScreenshotRequestInfo.switchPool) &&
         Objects.equals(this.ipPoolForScan, onPagePageScreenshotRequestInfo.ipPoolForScan)&&
         Objects.equals(this.additionalProperties, onPagePageScreenshotRequestInfo.additionalProperties);
@@ -405,7 +381,7 @@ public class OnPagePageScreenshotRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(url, acceptLanguage, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, fullPageScreenshot, disableCookiePopup, customJs, switchPool, ipPoolForScan, additionalProperties);
+    return Objects.hash(url, acceptLanguage, customUserAgent, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, fullPageScreenshot, disableCookiePopup, switchPool, ipPoolForScan, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -428,7 +404,6 @@ public class OnPagePageScreenshotRequestInfo {
     sb.append("    browserScreenScaleFactor: ").append(toIndentedString(browserScreenScaleFactor)).append("\n");
     sb.append("    fullPageScreenshot: ").append(toIndentedString(fullPageScreenshot)).append("\n");
     sb.append("    disableCookiePopup: ").append(toIndentedString(disableCookiePopup)).append("\n");
-    sb.append("    customJs: ").append(toIndentedString(customJs)).append("\n");
     sb.append("    switchPool: ").append(toIndentedString(switchPool)).append("\n");
     sb.append("    ipPoolForScan: ").append(toIndentedString(ipPoolForScan)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
@@ -463,7 +438,6 @@ public class OnPagePageScreenshotRequestInfo {
     openapiFields.add("browser_screen_scale_factor");
     openapiFields.add("full_page_screenshot");
     openapiFields.add("disable_cookie_popup");
-    openapiFields.add("custom_js");
     openapiFields.add("switch_pool");
     openapiFields.add("ip_pool_for_scan");
 
@@ -495,9 +469,6 @@ public class OnPagePageScreenshotRequestInfo {
       }
       if ((jsonObj.get("browser_preset") != null && !jsonObj.get("browser_preset").isJsonNull()) && !jsonObj.get("browser_preset").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `browser_preset` to be a primitive type in the JSON string but got `%s`", jsonObj.get("browser_preset").toString()));
-      }
-      if ((jsonObj.get("custom_js") != null && !jsonObj.get("custom_js").isJsonNull()) && !jsonObj.get("custom_js").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `custom_js` to be a primitive type in the JSON string but got `%s`", jsonObj.get("custom_js").toString()));
       }
       if ((jsonObj.get("ip_pool_for_scan") != null && !jsonObj.get("ip_pool_for_scan").isJsonNull()) && !jsonObj.get("ip_pool_for_scan").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ip_pool_for_scan` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ip_pool_for_scan").toString()));

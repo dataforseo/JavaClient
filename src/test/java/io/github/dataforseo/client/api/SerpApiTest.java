@@ -27,26 +27,43 @@ import io.github.dataforseo.client.model.SerpBaiduOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpBaiduOrganicTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpBaiduOrganicTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpBingLanguagesResponseInfo;
+import io.github.dataforseo.client.model.SerpBingLocalPackLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.SerpBingLocalPackLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpBingLocalPackLiveRegularRequestInfo;
 import io.github.dataforseo.client.model.SerpBingLocalPackLiveRegularResponseInfo;
 import io.github.dataforseo.client.model.SerpBingLocalPackTaskGetHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpBingLocalPackTaskGetRegularResponseInfo;
+import io.github.dataforseo.client.model.SerpBingLocalPackTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpBingLocalPackTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpBingLocalPackTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpBingLocalPackTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpBingLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.SerpBingLocationsResponseInfo;
+import io.github.dataforseo.client.model.SerpBingOrganicLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpBingOrganicLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpBingOrganicLiveRegularRequestInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicLiveRegularResponseInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicTaskGetHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicTaskGetRegularResponseInfo;
+import io.github.dataforseo.client.model.SerpBingOrganicTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpErrorsRequestInfo;
 import io.github.dataforseo.client.model.SerpErrorsResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsAdvertisersLocationsResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsAdvertisersTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsAdvertisersTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsAdvertisersTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsSearchLocationsResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsSearchTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsSearchTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsSearchTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleAdsSearchTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleAutocompleteLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleAutocompleteLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleAutocompleteTaskGetAdvancedResponseInfo;
@@ -75,10 +92,13 @@ import io.github.dataforseo.client.model.SerpGoogleEventsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleImagesLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleImagesTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesTasksReadyResponseInfo;
@@ -108,21 +128,26 @@ import io.github.dataforseo.client.model.SerpGoogleMapsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleMapsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleMapsTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleMapsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleNewsLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleNewsLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleNewsLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleNewsLiveHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleNewsTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleNewsTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleNewsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleNewsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleNewsTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleNewsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleOrganicLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicLiveHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicLiveRegularRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicLiveRegularResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskGetHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskGetRegularResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleOrganicTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTasksReadyResponseInfo;
@@ -136,6 +161,7 @@ import io.github.dataforseo.client.model.SerpIdListResponseInfo;
 import io.github.dataforseo.client.model.SerpNaverOrganicTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpNaverOrganicTaskGetHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpNaverOrganicTaskGetRegularResponseInfo;
+import io.github.dataforseo.client.model.SerpNaverOrganicTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpNaverOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpNaverOrganicTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpNaverOrganicTasksReadyResponseInfo;
@@ -147,20 +173,24 @@ import io.github.dataforseo.client.model.SerpSeznamLocationsResponseInfo;
 import io.github.dataforseo.client.model.SerpSeznamOrganicTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpSeznamOrganicTaskGetHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpSeznamOrganicTaskGetRegularResponseInfo;
+import io.github.dataforseo.client.model.SerpSeznamOrganicTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpSeznamOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpSeznamOrganicTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpSeznamOrganicTasksReadyResponseInfo;
-import io.github.dataforseo.client.model.SerpTaskRequestInfo;
 import io.github.dataforseo.client.model.SerpTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooLanguagesResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooLocationsResponseInfo;
+import io.github.dataforseo.client.model.SerpYahooOrganicLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpYahooOrganicLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpYahooOrganicLiveRegularRequestInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicLiveRegularResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicTaskGetHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicTaskGetRegularResponseInfo;
+import io.github.dataforseo.client.model.SerpYahooOrganicTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpYahooOrganicTasksReadyResponseInfo;
@@ -293,8 +323,8 @@ public class SerpApiTest {
      */
     @Test
     public void bingLocalPackLiveHtmlTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpBingLocalPackLiveHtmlResponseInfo response = api.bingLocalPackLiveHtml(serpTaskRequestInfo);
+        List<SerpBingLocalPackLiveHtmlRequestInfo> serpBingLocalPackLiveHtmlRequestInfo = null;
+        SerpBingLocalPackLiveHtmlResponseInfo response = api.bingLocalPackLiveHtml(serpBingLocalPackLiveHtmlRequestInfo);
         // TODO: test validations
     }
 
@@ -305,8 +335,8 @@ public class SerpApiTest {
      */
     @Test
     public void bingLocalPackLiveRegularTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpBingLocalPackLiveRegularResponseInfo response = api.bingLocalPackLiveRegular(serpTaskRequestInfo);
+        List<SerpBingLocalPackLiveRegularRequestInfo> serpBingLocalPackLiveRegularRequestInfo = null;
+        SerpBingLocalPackLiveRegularResponseInfo response = api.bingLocalPackLiveRegular(serpBingLocalPackLiveRegularRequestInfo);
         // TODO: test validations
     }
 
@@ -341,8 +371,8 @@ public class SerpApiTest {
      */
     @Test
     public void bingLocalPackTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpBingLocalPackTaskPostResponseInfo response = api.bingLocalPackTaskPost(serpTaskRequestInfo);
+        List<SerpBingLocalPackTaskPostRequestInfo> serpBingLocalPackTaskPostRequestInfo = null;
+        SerpBingLocalPackTaskPostResponseInfo response = api.bingLocalPackTaskPost(serpBingLocalPackTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -375,8 +405,8 @@ public class SerpApiTest {
      */
     @Test
     public void bingOrganicLiveAdvancedTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpBingOrganicLiveAdvancedResponseInfo response = api.bingOrganicLiveAdvanced(serpTaskRequestInfo);
+        List<SerpBingOrganicLiveAdvancedRequestInfo> serpBingOrganicLiveAdvancedRequestInfo = null;
+        SerpBingOrganicLiveAdvancedResponseInfo response = api.bingOrganicLiveAdvanced(serpBingOrganicLiveAdvancedRequestInfo);
         // TODO: test validations
     }
 
@@ -387,8 +417,8 @@ public class SerpApiTest {
      */
     @Test
     public void bingOrganicLiveHtmlTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpBingOrganicLiveHtmlResponseInfo response = api.bingOrganicLiveHtml(serpTaskRequestInfo);
+        List<SerpBingOrganicLiveHtmlRequestInfo> serpBingOrganicLiveHtmlRequestInfo = null;
+        SerpBingOrganicLiveHtmlResponseInfo response = api.bingOrganicLiveHtml(serpBingOrganicLiveHtmlRequestInfo);
         // TODO: test validations
     }
 
@@ -399,8 +429,8 @@ public class SerpApiTest {
      */
     @Test
     public void bingOrganicLiveRegularTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpBingOrganicLiveRegularResponseInfo response = api.bingOrganicLiveRegular(serpTaskRequestInfo);
+        List<SerpBingOrganicLiveRegularRequestInfo> serpBingOrganicLiveRegularRequestInfo = null;
+        SerpBingOrganicLiveRegularResponseInfo response = api.bingOrganicLiveRegular(serpBingOrganicLiveRegularRequestInfo);
         // TODO: test validations
     }
 
@@ -447,8 +477,8 @@ public class SerpApiTest {
      */
     @Test
     public void bingOrganicTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpBingOrganicTaskPostResponseInfo response = api.bingOrganicTaskPost(serpTaskRequestInfo);
+        List<SerpBingOrganicTaskPostRequestInfo> serpBingOrganicTaskPostRequestInfo = null;
+        SerpBingOrganicTaskPostResponseInfo response = api.bingOrganicTaskPost(serpBingOrganicTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -471,6 +501,76 @@ public class SerpApiTest {
     @Test
     public void bingOrganicTasksReadyTest() throws ApiException {
         SerpBingOrganicTasksReadyResponseInfo response = api.bingOrganicTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleAdsAdvertisersTaskGetAdvancedTest() throws ApiException {
+        String id = null;
+        SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo response = api.googleAdsAdvertisersTaskGetAdvanced(id);
+        // TODO: test validations
+    }
+
+    /**
+     * Google Ads Advertisers provides information on advertisers that run campaigns on Google Ads based on the Ads Transparency platform. ‌‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleAdsAdvertisersTaskPostTest() throws ApiException {
+        List<SerpGoogleAdsAdvertisersTaskPostRequestInfo> serpGoogleAdsAdvertisersTaskPostRequestInfo = null;
+        SerpGoogleAdsAdvertisersTaskPostResponseInfo response = api.googleAdsAdvertisersTaskPost(serpGoogleAdsAdvertisersTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleAdsAdvertisersTasksReadyTest() throws ApiException {
+        SerpGoogleAdsAdvertisersTasksReadyResponseInfo response = api.googleAdsAdvertisersTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_get/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleAdsSearchTaskGetAdvancedTest() throws ApiException {
+        String id = null;
+        SerpGoogleAdsSearchTaskGetAdvancedResponseInfo response = api.googleAdsSearchTaskGetAdvanced(id);
+        // TODO: test validations
+    }
+
+    /**
+     * Google Ads Search provides information on ads that are run by advertisers on Google Ads. Information is based on the Ads Transparency platform and adapted for the convenience of DataForSEO users. ‌‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleAdsSearchTaskPostTest() throws ApiException {
+        List<SerpGoogleAdsSearchTaskPostRequestInfo> serpGoogleAdsSearchTaskPostRequestInfo = null;
+        SerpGoogleAdsSearchTaskPostResponseInfo response = api.googleAdsSearchTaskPost(serpGoogleAdsSearchTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleAdsSearchTasksReadyTest() throws ApiException {
+        SerpGoogleAdsSearchTasksReadyResponseInfo response = api.googleAdsSearchTasksReady();
         // TODO: test validations
     }
 
@@ -713,8 +813,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleImagesLiveAdvancedTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleImagesLiveAdvancedResponseInfo response = api.googleImagesLiveAdvanced(serpTaskRequestInfo);
+        List<SerpGoogleImagesLiveAdvancedRequestInfo> serpGoogleImagesLiveAdvancedRequestInfo = null;
+        SerpGoogleImagesLiveAdvancedResponseInfo response = api.googleImagesLiveAdvanced(serpGoogleImagesLiveAdvancedRequestInfo);
         // TODO: test validations
     }
 
@@ -725,8 +825,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleImagesLiveHtmlTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleImagesLiveHtmlResponseInfo response = api.googleImagesLiveHtml(serpTaskRequestInfo);
+        List<SerpGoogleImagesLiveHtmlRequestInfo> serpGoogleImagesLiveHtmlRequestInfo = null;
+        SerpGoogleImagesLiveHtmlResponseInfo response = api.googleImagesLiveHtml(serpGoogleImagesLiveHtmlRequestInfo);
         // TODO: test validations
     }
 
@@ -761,8 +861,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleImagesTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleImagesTaskPostResponseInfo response = api.googleImagesTaskPost(serpTaskRequestInfo);
+        List<SerpGoogleImagesTaskPostRequestInfo> serpGoogleImagesTaskPostRequestInfo = null;
+        SerpGoogleImagesTaskPostResponseInfo response = api.googleImagesTaskPost(serpGoogleImagesTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -993,8 +1093,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleNewsLiveAdvancedTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleNewsLiveAdvancedResponseInfo response = api.googleNewsLiveAdvanced(serpTaskRequestInfo);
+        List<SerpGoogleNewsLiveAdvancedRequestInfo> serpGoogleNewsLiveAdvancedRequestInfo = null;
+        SerpGoogleNewsLiveAdvancedResponseInfo response = api.googleNewsLiveAdvanced(serpGoogleNewsLiveAdvancedRequestInfo);
         // TODO: test validations
     }
 
@@ -1005,8 +1105,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleNewsLiveHtmlTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleNewsLiveHtmlResponseInfo response = api.googleNewsLiveHtml(serpTaskRequestInfo);
+        List<SerpGoogleNewsLiveHtmlRequestInfo> serpGoogleNewsLiveHtmlRequestInfo = null;
+        SerpGoogleNewsLiveHtmlResponseInfo response = api.googleNewsLiveHtml(serpGoogleNewsLiveHtmlRequestInfo);
         // TODO: test validations
     }
 
@@ -1041,8 +1141,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleNewsTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleNewsTaskPostResponseInfo response = api.googleNewsTaskPost(serpTaskRequestInfo);
+        List<SerpGoogleNewsTaskPostRequestInfo> serpGoogleNewsTaskPostRequestInfo = null;
+        SerpGoogleNewsTaskPostResponseInfo response = api.googleNewsTaskPost(serpGoogleNewsTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -1087,8 +1187,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleOrganicLiveHtmlTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleOrganicLiveHtmlResponseInfo response = api.googleOrganicLiveHtml(serpTaskRequestInfo);
+        List<SerpGoogleOrganicLiveHtmlRequestInfo> serpGoogleOrganicLiveHtmlRequestInfo = null;
+        SerpGoogleOrganicLiveHtmlResponseInfo response = api.googleOrganicLiveHtml(serpGoogleOrganicLiveHtmlRequestInfo);
         // TODO: test validations
     }
 
@@ -1147,8 +1247,8 @@ public class SerpApiTest {
      */
     @Test
     public void googleOrganicTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpGoogleOrganicTaskPostResponseInfo response = api.googleOrganicTaskPost(serpTaskRequestInfo);
+        List<SerpGoogleOrganicTaskPostRequestInfo> serpGoogleOrganicTaskPostRequestInfo = null;
+        SerpGoogleOrganicTaskPostResponseInfo response = api.googleOrganicTaskPost(serpGoogleOrganicTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -1263,8 +1363,8 @@ public class SerpApiTest {
      */
     @Test
     public void naverOrganicTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpNaverOrganicTaskPostResponseInfo response = api.naverOrganicTaskPost(serpTaskRequestInfo);
+        List<SerpNaverOrganicTaskPostRequestInfo> serpNaverOrganicTaskPostRequestInfo = null;
+        SerpNaverOrganicTaskPostResponseInfo response = api.naverOrganicTaskPost(serpNaverOrganicTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -1371,7 +1471,7 @@ public class SerpApiTest {
     }
 
     /**
-     * By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/errors/?bash&#39;
+     * By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/errors/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1379,6 +1479,28 @@ public class SerpApiTest {
     public void serpErrorsTest() throws ApiException {
         List<SerpErrorsRequestInfo> serpErrorsRequestInfo = null;
         SerpErrorsResponseInfo response = api.serpErrors(serpErrorsRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/locations/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void serpGoogleAdsAdvertisersLocationsTest() throws ApiException {
+        SerpGoogleAdsAdvertisersLocationsResponseInfo response = api.serpGoogleAdsAdvertisersLocations();
+        // TODO: test validations
+    }
+
+    /**
+     * for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/locations/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void serpGoogleAdsSearchLocationsTest() throws ApiException {
+        SerpGoogleAdsSearchLocationsResponseInfo response = api.serpGoogleAdsSearchLocations();
         // TODO: test validations
     }
 
@@ -1573,8 +1695,8 @@ public class SerpApiTest {
      */
     @Test
     public void seznamOrganicTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpSeznamOrganicTaskPostResponseInfo response = api.seznamOrganicTaskPost(serpTaskRequestInfo);
+        List<SerpSeznamOrganicTaskPostRequestInfo> serpSeznamOrganicTaskPostRequestInfo = null;
+        SerpSeznamOrganicTaskPostResponseInfo response = api.seznamOrganicTaskPost(serpSeznamOrganicTaskPostRequestInfo);
         // TODO: test validations
     }
 
@@ -1618,8 +1740,8 @@ public class SerpApiTest {
      */
     @Test
     public void yahooOrganicLiveAdvancedTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpYahooOrganicLiveAdvancedResponseInfo response = api.yahooOrganicLiveAdvanced(serpTaskRequestInfo);
+        List<SerpYahooOrganicLiveAdvancedRequestInfo> serpYahooOrganicLiveAdvancedRequestInfo = null;
+        SerpYahooOrganicLiveAdvancedResponseInfo response = api.yahooOrganicLiveAdvanced(serpYahooOrganicLiveAdvancedRequestInfo);
         // TODO: test validations
     }
 
@@ -1630,8 +1752,8 @@ public class SerpApiTest {
      */
     @Test
     public void yahooOrganicLiveHtmlTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpYahooOrganicLiveHtmlResponseInfo response = api.yahooOrganicLiveHtml(serpTaskRequestInfo);
+        List<SerpYahooOrganicLiveHtmlRequestInfo> serpYahooOrganicLiveHtmlRequestInfo = null;
+        SerpYahooOrganicLiveHtmlResponseInfo response = api.yahooOrganicLiveHtml(serpYahooOrganicLiveHtmlRequestInfo);
         // TODO: test validations
     }
 
@@ -1642,8 +1764,8 @@ public class SerpApiTest {
      */
     @Test
     public void yahooOrganicLiveRegularTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpYahooOrganicLiveRegularResponseInfo response = api.yahooOrganicLiveRegular(serpTaskRequestInfo);
+        List<SerpYahooOrganicLiveRegularRequestInfo> serpYahooOrganicLiveRegularRequestInfo = null;
+        SerpYahooOrganicLiveRegularResponseInfo response = api.yahooOrganicLiveRegular(serpYahooOrganicLiveRegularRequestInfo);
         // TODO: test validations
     }
 
@@ -1690,8 +1812,8 @@ public class SerpApiTest {
      */
     @Test
     public void yahooOrganicTaskPostTest() throws ApiException {
-        List<SerpTaskRequestInfo> serpTaskRequestInfo = null;
-        SerpYahooOrganicTaskPostResponseInfo response = api.yahooOrganicTaskPost(serpTaskRequestInfo);
+        List<SerpYahooOrganicTaskPostRequestInfo> serpYahooOrganicTaskPostRequestInfo = null;
+        SerpYahooOrganicTaskPostResponseInfo response = api.yahooOrganicTaskPost(serpYahooOrganicTaskPostRequestInfo);
         // TODO: test validations
     }
 
