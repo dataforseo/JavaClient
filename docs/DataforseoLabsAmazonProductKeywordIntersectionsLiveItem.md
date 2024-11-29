@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsAmazonProductKeywordIntersectionsLiveItem
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**keywordData** | [**AmazonKeywordData**](AmazonKeywordData.md) |  |  [optional] |
 |**intersectionResult** | [**Map&lt;String, BaseAmazonSerpElementItem&gt;**](BaseAmazonSerpElementItem.md) | data on the intersection |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

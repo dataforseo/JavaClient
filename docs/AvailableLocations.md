@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AvailableLocations
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**countryIsoCode** | **String** | ISO country code of the location |  [optional] |
 |**locationType** | **String** | location type possible values: Country, Region |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

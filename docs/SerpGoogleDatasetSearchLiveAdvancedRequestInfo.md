@@ -1,14 +1,13 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpGoogleDatasetSearchLiveAdvancedRequestInfo
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword required field you can specify up to 700 symbols in the keyword field all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”; if you need to use the “+” symbol for your keyword, please specify it as “%2B”; |  [optional] |
+|**keyword** | **String** | keyword required field you can specify up to 700 characters in the keyword field all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”; if you need to use the “+” character for your keyword, please specify it as “%2B”; learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |  [optional] |
 |**languageName** | **String** | full name of search engine language optional field if you use this field, you don’t need to specify language_code possible value: English |  [optional] |
 |**languageCode** | **String** | search engine language code optional field if you don’t specify language_name if you use this field, you don’t need to specify language_name possible value: en |  [optional] |
 |**device** | **String** | device type optional field possible value: desktop |  [optional] |
@@ -21,6 +20,5 @@
 |**topics** | **List&lt;String&gt;** | dataset topics optional field possible values: humanities, social_sciences, life_sciences, agriculture, natural_sciences, geo, computer, architecture_and_urban_planning, engineering |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsLocationsAndLanguagesResultInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**locationType** | **String** | location type possible values: Country |  [optional] |
 |**availableLanguages** | [**List&lt;AvailableLanguages&gt;**](AvailableLanguages.md) | supported languages contains the languages which are supported for a specific location |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

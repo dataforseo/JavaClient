@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpBaiduLocationsResultInfo
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**countryIsoCode** | **String** | ISO country code of the location |  [optional] |
 |**locationType** | **String** | location type only City is supported for all countries except China (where Country is also supported) |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

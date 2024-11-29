@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ReviewMentionInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**totalCount** | **Long** | count of all reviews by criterion |  [optional] |
 |**visibleByDefault** | **Boolean** | element is visible by default indicates whether the review element is visible by default |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

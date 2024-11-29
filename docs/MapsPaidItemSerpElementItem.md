@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MapsPaidItemSerpElementItem
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**ratingDistribution** | **Map&lt;String, Integer&gt;** | the distribution of ratings of the business entity the object displays the number of 1-star to 5-star ratings, as reviewed by users |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

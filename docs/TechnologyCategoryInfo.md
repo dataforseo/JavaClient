@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TechnologyCategoryInfo
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**title** | **String** | title of the technology category |  [optional] |
 |**technologies** | **List&lt;String&gt;** | list of technologies in this category example: \&quot;Salesforce\&quot;, \&quot;CareCart\&quot; |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataBingLocationsResultInfo
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**countryIsoCode** | **String** | ISO country code of the location |  [optional] |
 |**locationType** | **String** | location type |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

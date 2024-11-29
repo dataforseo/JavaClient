@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixAppDataLimitsRatesDataInfo
+
 
 ## Properties
 
@@ -16,7 +15,7 @@
 |**languages** | **Double** |  |  [optional] |
 |**locations** | **Double** |  |  [optional] |
 |**categories** | **Double** |  |  [optional] |
+|**tasksReady** | **Double** |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

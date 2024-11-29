@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksDomainIntersectionLiveResultInfo
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;BacklinksDomainIntersectionLiveItem&gt;**](BacklinksDomainIntersectionLiveItem.md) | contains domain that link to all targets from the POST array |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

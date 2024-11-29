@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantGoogleSellersAdUrlResultInfo
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**adUrl** | **String** | full URL of the advertisement |  [optional] |
 |**adUrlRedirects** | **List&lt;String&gt;** | URLs where the link from Google Shopping redirects before reaching a final URL includes up to 10 URLs of the ad’s redirect path to the seller’s ad_url |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

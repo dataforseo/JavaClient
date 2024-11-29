@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BaseResponseInfo
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**tasksCount** | **Long** | the number of tasks in the tasks array |  [optional] |
 |**tasksError** | **Long** | the number of tasks in the tasks array returned with an error |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

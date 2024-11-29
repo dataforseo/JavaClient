@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleTrendsLocationsResultInfo
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**geoName** | **String** | google trends location name you can use this field for matching obtained results with the location_name parameter specified in the request |  [optional] |
 |**geoId** | **String** | google trends location identifier you can use this field for matching obtained results with the location_code parameter specified in the request |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

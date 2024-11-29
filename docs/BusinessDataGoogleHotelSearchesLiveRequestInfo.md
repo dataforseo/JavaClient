@@ -1,14 +1,13 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleHotelSearchesLiveRequestInfo
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword optional field the keyword you specify is used to search for the list of hotels; if you don’t use this field, we will return the list of hotels found in a specified location; you can specify up to 700 symbols in the keyword filed all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”; Note: in order to obtain accurate search results, the location name is appended to the keyword automatically |  [optional] |
+|**keyword** | **String** | keyword optional field the keyword you specify is used to search for the list of hotels; if you don’t use this field, we will return the list of hotels found in a specified location; you can specify up to 700 characters in the keyword filed all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”; Note: in order to obtain accurate search results, the location name is appended to the keyword automatically learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |  [optional] |
 |**locationName** | **String** | full name of search engine location required field if you don’t specify location_code or location_coordinate if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/locations example: London,England,United Kingdom Note: in order to obtain accurate search results, the location_name you specify will be automatically appended to the keyword |  [optional] |
 |**locationCode** | **Integer** | search engine location code required field if you don’t specify location_name or location_coordinate if you use this field, you don’t need to specify location_name or location_coordinate you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations example: 2840 |  [optional] |
 |**locationCoordinate** | **String** | GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude” format the maximum number of decimal digits for “latitude” and “longitude”: 7 Note: if the coordinates are used to set a location, the search will occur in the nearest settlement example: 53.476225,-2.243572 |  [optional] |
@@ -30,6 +29,5 @@
 |**amenities** | **List&lt;String&gt;** | hotel amenities optional field you can use this field to specify different hotel amenities example:   [             \&quot;free_parking\&quot;,             \&quot;pets_allowed\&quot;         ]  possible values: \&quot;air_conditioning\&quot;, \&quot;all_inclusive_available\&quot;, \&quot;bar\&quot;, \&quot;free_breakfast\&quot;, \&quot;fitness_center\&quot;, \&quot;kid_friendly\&quot;, \&quot;free_parking\&quot;, \&quot;pets_allowed\&quot;, \&quot;pool\&quot;, \&quot;restaurant\&quot;, \&quot;room_service\&quot;, \&quot;spa\&quot;, \&quot;free_wifi\&quot;, \&quot;parking\&quot;, \&quot;indoor_pool\&quot;, \&quot;outdoor_pool\&quot;, \&quot;wheelchair_accessible\&quot;, \&quot;beach_access\&quot; |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

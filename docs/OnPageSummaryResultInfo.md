@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageSummaryResultInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**domainInfo** | [**DomainInfo**](DomainInfo.md) |  |  [optional] |
 |**pageMetrics** | [**PageMetrics**](PageMetrics.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

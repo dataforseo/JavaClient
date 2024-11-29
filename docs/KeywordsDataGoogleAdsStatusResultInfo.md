@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsStatusResultInfo
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**lastYearInMonthlySearches** | **Integer** | the latest year for which search volume data is available |  [optional] |
 |**lastMonthInMonthlySearches** | **Integer** | the latest month for which search volume data is available |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

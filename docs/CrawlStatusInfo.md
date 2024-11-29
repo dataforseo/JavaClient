@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # CrawlStatusInfo
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**pagesInQueue** | **Long** | number of pages that are currently in the crawling queue |  [optional] |
 |**pagesCrawled** | **Long** | number of crawled pages |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

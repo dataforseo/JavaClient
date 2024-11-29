@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # Rectangle
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**width** | **Double** | width of the element in pixels |  [optional] |
 |**height** | **Double** | height of the element in pixels |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

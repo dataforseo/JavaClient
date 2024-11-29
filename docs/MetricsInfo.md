@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MetricsInfo
+
 
 ## Properties
 
@@ -29,6 +28,5 @@
 |**isDown** | **Long** | rank went down indicates how many ranked elements of this domain went down in Google Search |  [optional] |
 |**isLost** | **Long** | lost ranked elements indicates how many ranked elements of this domain were previously presented in SERPs, but weren’t found during the last check |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

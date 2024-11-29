@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TestSummary
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**warning** | **Integer** | number of microdata warnings |  [optional] |
 |**info** | **Integer** | number of microdata information flags |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

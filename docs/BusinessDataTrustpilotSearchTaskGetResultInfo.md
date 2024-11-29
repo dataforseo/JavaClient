@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataTrustpilotSearchTaskGetResultInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**itemsCount** | **Long** | the number of items in the results array you can get more results by using the depth parameter when setting a task |  [optional] |
 |**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | found reviews you can get more results by using the depth parameter when setting a task |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

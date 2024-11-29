@@ -1,14 +1,13 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleMyBusinessUpdatesTaskGetResultInfo
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) this field will contain the cid parameter if you specified it in the keyword field when setting a task; example: cid:2946633002421908862 learn more about the parameter in this help center article |  [optional] |
+|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) this field will contain the cid parameter if you specified it in the keyword field when setting a task; example: cid:2946633002421908862 learn more about the parameter in this help center article |  [optional] |
 |**seDomain** | **String** | search engine domain as specified in a POST array |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |
 |**languageCode** | **String** | language code in a POST array |  [optional] |
@@ -19,8 +18,7 @@
 |**featureId** | **String** | the unique identifier of the element in SERP learn more about the identifier in this help center article |  [optional] |
 |**itemTypes** | **List&lt;String&gt;** | item types types of search engine results encountered in the items array; possible item types: google_business_post |  [optional] |
 |**itemsCount** | **Long** | item types the number of items in the items array |  [optional] |
-|**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | encountered item types types of search engine results encountered in the items array; possible item types: google_business_info |  [optional] |
+|**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | encountered item types types of search engine results encountered in the items array; possible item types: google_business_post |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

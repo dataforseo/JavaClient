@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsAmazonBulkSearchVolumeLiveItem
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**keyword** | **String** | keyword in a POST array |  [optional] |
 |**searchVolume** | **Long** | average monthly search volume rate represents the (approximate) number of searches for the returned keyword on Amazon |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

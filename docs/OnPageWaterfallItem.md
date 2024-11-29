@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageWaterfallItem
+
 
 ## Properties
 
@@ -21,6 +20,5 @@
 |**fetchEnd** | **Integer** | time to complete downloading the HTML resource the amount of time the browser needs to complete downloading a page |  [optional] |
 |**resources** | [**List&lt;BaseOnPageResourceItemInfo&gt;**](BaseOnPageResourceItemInfo.md) | resource-specific timing contains separate arrays with timing for each resource found on the page |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

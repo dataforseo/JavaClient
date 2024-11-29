@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentGenerationTextSummaryLiveResultInfo
+
 
 ## Properties
 
@@ -24,6 +23,5 @@
 |**spellingErrors** | **Integer** | number of spelling errors found in the target text |  [optional] |
 |**grammarErrors** | **Integer** | number of grammar errors found in the target text |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

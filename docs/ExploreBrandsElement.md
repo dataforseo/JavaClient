@@ -1,21 +1,19 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ExploreBrandsElement
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
-|**title** | **String** | title of the row |  [optional] |
+|**title** | **String** | title of a given link element |  [optional] |
 |**url** | **String** | URL |  [optional] |
-|**domain** | **String** | domain where a link points |  [optional] |
-|**description** | **String** | description of the results element in SERP |  [optional] |
-|**imageUrl** | **String** | URL of the image |  [optional] |
+|**domain** | **String** | website domain |  [optional] |
+|**description** | **String** | description |  [optional] |
+|**imageUrl** | **String** | URL of the image the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

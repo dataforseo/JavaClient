@@ -1,15 +1,12 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TripadvisorReviewSearchBusinessDataSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the listed reviews absolute position among all reviews on the list |  [optional] |
 |**position** | **String** | the alignment of the review in SERP can take the following values: right |  [optional] |
 |**url** | **String** | URL of the review |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
@@ -20,7 +17,7 @@
 |**reviewImages** | [**List&lt;ImageUrlInfo&gt;**](ImageUrlInfo.md) | contains URLs of the images used in the review |  [optional] |
 |**userProfile** | [**BusinessDataUserProfileInfo**](BusinessDataUserProfileInfo.md) |  |  [optional] |
 |**responses** | [**List&lt;ReviewResponseItemInfo&gt;**](ReviewResponseItemInfo.md) | contains information about the owner’s response |  [optional] |
+|**reviewHighlights** | [**List&lt;ReviewHighlights&gt;**](ReviewHighlights.md) | review highlights contains highlighted review criteria and assessments |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

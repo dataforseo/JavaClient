@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleTrendsExploreTaskGetResultInfo
+
 
 ## Properties
 
@@ -17,6 +16,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;BaseGoogleTrendsItem&gt;**](BaseGoogleTrendsItem.md) | items on the Google Trends page |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

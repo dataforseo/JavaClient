@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HotelReviewInfo
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**ratingDistribution** | **Map&lt;String, Integer&gt;** | rating distribution by votes the distribution of votes across the rating in the range from 1 to 5 |  [optional] |
 |**otherSitesReviews** | [**List&lt;OtherSitesReviewsInfo&gt;**](OtherSitesReviewsInfo.md) | reviews on third-party sites reviews from third-paty sites |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HotelAboutInfo
+
 
 ## Properties
 
@@ -18,6 +17,5 @@
 |**amenities** | [**List&lt;HotelAmenityInfo&gt;**](HotelAmenityInfo.md) | hotel amenities information about hotel amenities |  [optional] |
 |**popularAmenities** | [**List&lt;HotelAmenityItemInfo&gt;**](HotelAmenityItemInfo.md) | hotel amenities information about hotel amenities labelled as “popular” |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainAnalyticsIdListResultInfo
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**cost** | **Float** | cost of the task, USD |  [optional] |
 |**metadata** | **Object** | contains parameters you specified in the POST request |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

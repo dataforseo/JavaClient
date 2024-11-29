@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataGoogleHotelSearchesItem
+
 
 ## Properties
 
@@ -18,6 +17,5 @@
 |**overviewImages** | **List&lt;String&gt;** | featured images for a hotel |  [optional] |
 |**prices** | [**HotelPriceInfo**](HotelPriceInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

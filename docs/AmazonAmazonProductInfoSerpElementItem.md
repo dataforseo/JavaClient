@@ -1,17 +1,13 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AmazonAmazonProductInfoSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank absolute position among all the elements in the response array |  [optional] |
 |**position** | **String** | the alignment of the element in Amazon SERP possible values: left, right |  [optional] |
-|**xpath** | **String** | the XPath of the element |  [optional] |
 |**title** | **String** | product title |  [optional] |
 |**details** | **String** | product specs and other details |  [optional] |
 |**imageUrl** | **String** | the URL of the product image |  [optional] |
@@ -32,7 +28,8 @@
 |**productVideosList** | **List&lt;String&gt;** | contains URLs for all videos of the product displayed on the right side of the main video |  [optional] |
 |**description** | **String** | contains description of the product |  [optional] |
 |**isAvailable** | **Boolean** | indicates whether the product is available for ordering if the value is true, the product can be ordered |  [optional] |
+|**topLocalReviews** | [**List&lt;BaseAmazonSerpElementItem&gt;**](BaseAmazonSerpElementItem.md) | array of objects with top reviews from target location to obtain additional local reviews, you can specify the load_more_local_reviews parameter in Task POST |  [optional] |
+|**topGlobalReviews** | [**List&lt;BaseAmazonSerpElementItem&gt;**](BaseAmazonSerpElementItem.md) | array of objects with top reviews from around the world |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

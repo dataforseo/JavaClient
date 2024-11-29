@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataTrustpilotReviewsTaskPostResponseInfo
+
 
 ## Properties
 
@@ -17,6 +16,5 @@
 |**tasksError** | **Long** | the number of tasks in the tasks array returned with an error |  [optional] |
 |**tasks** | [**List&lt;BusinessDataTrustpilotReviewsTaskPostTaskInfo&gt;**](BusinessDataTrustpilotReviewsTaskPostTaskInfo.md) | array of tasks |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

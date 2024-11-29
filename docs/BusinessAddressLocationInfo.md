@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessAddressLocationInfo
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**latitude** | **String** | latitude in GPS coordinates |  [optional] |
 |**longitude** | **String** | longitude in GPS coordinates |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OtherSitesReviewsInfo
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**reviewText** | **String** | review text text of the review |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

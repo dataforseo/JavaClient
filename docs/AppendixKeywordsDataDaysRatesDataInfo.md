@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixKeywordsDataDaysRatesDataInfo
+
 
 ## Properties
 
@@ -19,10 +18,11 @@
 |**categories** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
 |**bing** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**keywordPerformance** | [**AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo**](AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**keywordPerformance** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**locationsAndLanguages** | **Double** |  |  [optional] |
 |**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**googleAds** | [**AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo**](AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**dataforseoTrends** | [**AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo**](AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

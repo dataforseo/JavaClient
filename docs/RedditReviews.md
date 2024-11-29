@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # RedditReviews
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**permalink** | **String** | URL to the subreddit post |  [optional] |
 |**subredditMembers** | **Integer** | number of subreddit members |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

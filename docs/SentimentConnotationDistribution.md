@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SentimentConnotationDistribution
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**share** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
 |**fun** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

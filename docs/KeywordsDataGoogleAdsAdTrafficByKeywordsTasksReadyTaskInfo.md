@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyTaskInfo
+
 
 ## Properties
 
@@ -18,6 +17,5 @@
 |**data** | **Object** | contains the same parameters that you specified in the POST request |  [optional] |
 |**result** | [**List&lt;KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResultInfo&gt;**](KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyResultInfo.md) | array of results |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

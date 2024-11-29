@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResultInfo
+
 
 ## Properties
 
@@ -21,6 +20,5 @@
 |**cost** | **Float** | charge for an ad amount that will be charged for running an ad within the specified time period if there is no data, then the value is null |  [optional] |
 |**clicks** | **Float** | number of clicks on an ad number of clicks an ad is projected to get within the specified time period if there is no data, then the value is null |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

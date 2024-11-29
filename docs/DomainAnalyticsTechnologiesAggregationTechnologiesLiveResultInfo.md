@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**offset** | **Integer** | offset in the results array of returned domains |  [optional] |
 |**items** | [**List&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem&gt;**](DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem.md) | items array |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksHistoryLiveResultInfo
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;BacklinksHistoryLiveItem&gt;**](BacklinksHistoryLiveItem.md) | contains historical backlink data for the specified domain the data is provided month-by-month; the metrics are aggregated according to the backlinks the specified domain had on the first day of each given month |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

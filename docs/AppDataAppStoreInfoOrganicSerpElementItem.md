@@ -1,23 +1,17 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppDataAppStoreInfoOrganicSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the listed apps absolute position among all apps on the list |  [optional] |
-|**position** | **String** | the alignment of the element in SERP can take the following values: left |  [optional] |
 |**appId** | **String** | ID of the app |  [optional] |
-|**title** | **String** | title of the app |  [optional] |
 |**url** | **String** | URL to the app page on App Store |  [optional] |
 |**icon** | **String** | URL to the app icon |  [optional] |
 |**description** | **String** | description of the app |  [optional] |
 |**reviewsCount** | **Long** | the total number of reviews of the app |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
 |**mainCategory** | **String** | main category/genre of the app |  [optional] |
@@ -37,6 +31,5 @@
 |**similarApps** | [**List&lt;AppsInfo&gt;**](AppsInfo.md) | similar apps displays apps similar to the app in a POST request |  [optional] |
 |**moreAppsByDeveloper** | [**List&lt;AppsInfo&gt;**](AppsInfo.md) | similar apps information about apps built by the same developer |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

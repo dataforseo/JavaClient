@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksTimeseriesSummaryLiveItem
+
 
 ## Properties
 
@@ -14,6 +13,7 @@
 |**backlinks** | **Long** | number of backlinks for the given date |  [optional] |
 |**backlinksNofollow** | **Long** | number of nofollow backlinks for the given date |  [optional] |
 |**referringPages** | **Long** | number of pages pointing to target for the given date |  [optional] |
+|**referringPagesNofollow** | **Long** | number of referring pages pointing at least one nofollow link to the target for the given date |  [optional] |
 |**referringDomains** | **Long** | number of referring domains for the given date referring domains include subdomains that are counted as separate domains for this metric |  [optional] |
 |**referringDomainsNofollow** | **Long** | number of domains pointing at least one nofollow link to the target for the given date |  [optional] |
 |**referringMainDomains** | **Long** | number of referring main domains for the given date |  [optional] |
@@ -21,6 +21,5 @@
 |**referringIps** | **Long** | number of referring IP addresses for the given date number of IP addresses pointing to this page |  [optional] |
 |**referringSubnets** | **Long** | number of referring subnetworks for the given date |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

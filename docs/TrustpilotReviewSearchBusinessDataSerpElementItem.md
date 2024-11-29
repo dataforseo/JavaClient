@@ -1,15 +1,12 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # TrustpilotReviewSearchBusinessDataSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the listed reviews absolute position among all reviews on the list |  [optional] |
 |**position** | **String** | the alignment of the review in SERP can take the following values: right |  [optional] |
 |**url** | **String** | the URL of the review |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
@@ -22,6 +19,5 @@
 |**userProfile** | [**BusinessDataUserProfileInfo**](BusinessDataUserProfileInfo.md) |  |  [optional] |
 |**responses** | [**List&lt;ReviewResponseItemInfo&gt;**](ReviewResponseItemInfo.md) | owner’s response to the submitted review |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

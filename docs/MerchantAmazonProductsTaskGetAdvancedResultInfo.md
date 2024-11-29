@@ -1,14 +1,13 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantAmazonProductsTaskGetAdvancedResultInfo
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) |  [optional] |
+|**keyword** | **String** | keyword received in a POST array keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |  [optional] |
 |**type** | **String** | type of element |  [optional] |
 |**seDomain** | **String** | search engine domain in a POST array |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array |  [optional] |
@@ -22,6 +21,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;BaseAmazonSerpElementItem&gt;**](BaseAmazonSerpElementItem.md) | Amazon product items within the editorial_recommendations element |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

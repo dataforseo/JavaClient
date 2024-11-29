@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentGenerationCheckGrammarLiveResultInfo
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;ContentGenerationCheckGrammarLiveItem&gt;**](ContentGenerationCheckGrammarLiveItem.md) | contains grammar or spelling errors and related data |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

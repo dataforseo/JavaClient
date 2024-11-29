@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleBulkKeywordDifficultyLiveResultInfo
+
 
 ## Properties
 
@@ -13,8 +12,7 @@
 |**languageCode** | **String** | language code in a POST array if there is no data, then the value is null |  [optional] |
 |**totalCount** | **Long** | total amount of results in our database relevant to your request |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;DataforseoLabsBBulkKeywordDifficultyLiveItem&gt;**](DataforseoLabsBBulkKeywordDifficultyLiveItem.md) | contains keywords and related keyword difficulty scores |  [optional] |
+|**items** | [**List&lt;DataforseoLabsBulkKeywordDifficultyLiveItem&gt;**](DataforseoLabsBulkKeywordDifficultyLiveItem.md) | contains keywords and related keyword difficulty scores |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

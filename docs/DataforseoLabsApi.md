@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # DataforseoLabsApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -32,6 +28,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**bingSubdomainsLive**](DataforseoLabsApi.md#bingSubdomainsLive) | **POST** /v3/dataforseo_labs/bing/subdomains/live |  |
 | [**categories**](DataforseoLabsApi.md#categories) | **GET** /v3/dataforseo_labs/categories |  |
 | [**dataforseoLabsErrors**](DataforseoLabsApi.md#dataforseoLabsErrors) | **POST** /v3/dataforseo_labs/errors |  |
+| [**dataforseoLabsGoogleCategoriesForKeywordsLanguages**](DataforseoLabsApi.md#dataforseoLabsGoogleCategoriesForKeywordsLanguages) | **GET** /v3/dataforseo_labs/google/categories_for_keywords/languages |  |
 | [**dataforseoLabsIdList**](DataforseoLabsApi.md#dataforseoLabsIdList) | **POST** /v3/dataforseo_labs/id_list |  |
 | [**dataforseoLabsLocationsAndLanguages**](DataforseoLabsApi.md#dataforseoLabsLocationsAndLanguages) | **GET** /v3/dataforseo_labs/locations_and_languages |  |
 | [**dataforseoLabsStatus**](DataforseoLabsApi.md#dataforseoLabsStatus) | **GET** /v3/dataforseo_labs/status |  |
@@ -42,6 +39,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleBulkKeywordDifficultyLive**](DataforseoLabsApi.md#googleBulkKeywordDifficultyLive) | **POST** /v3/dataforseo_labs/google/bulk_keyword_difficulty/live |  |
 | [**googleBulkTrafficEstimationLive**](DataforseoLabsApi.md#googleBulkTrafficEstimationLive) | **POST** /v3/dataforseo_labs/google/bulk_traffic_estimation/live |  |
 | [**googleCategoriesForDomainLive**](DataforseoLabsApi.md#googleCategoriesForDomainLive) | **POST** /v3/dataforseo_labs/google/categories_for_domain/live |  |
+| [**googleCategoriesForKeywordsLive**](DataforseoLabsApi.md#googleCategoriesForKeywordsLive) | **POST** /v3/dataforseo_labs/google/categories_for_keywords/live |  |
 | [**googleCompetitorsDomainLive**](DataforseoLabsApi.md#googleCompetitorsDomainLive) | **POST** /v3/dataforseo_labs/google/competitors_domain/live |  |
 | [**googleDomainIntersectionLive**](DataforseoLabsApi.md#googleDomainIntersectionLive) | **POST** /v3/dataforseo_labs/google/domain_intersection/live |  |
 | [**googleDomainMetricsByCategoriesLive**](DataforseoLabsApi.md#googleDomainMetricsByCategoriesLive) | **POST** /v3/dataforseo_labs/google/domain_metrics_by_categories/live |  |
@@ -65,24 +63,24 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleSubdomainsLive**](DataforseoLabsApi.md#googleSubdomainsLive) | **POST** /v3/dataforseo_labs/google/subdomains/live |  |
 | [**googleTopSearchesLive**](DataforseoLabsApi.md#googleTopSearchesLive) | **POST** /v3/dataforseo_labs/google/top_searches/live |  |
 
+
 <a id="amazonBulkSearchVolumeLive"></a>
-
 # **amazonBulkSearchVolumeLive**
-
 > DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo amazonBulkSearchVolumeLive(dataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with search volume values for a maximum of 1,000 keywords in one API request. Here search volume represents the approximate number of monthly searches for a keyword on Amazon. The returned results are specific to the keywords, location, and language parameters specified in a POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/amazon/bulk_search_volume/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -126,33 +124,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonProductCompetitorsLive"></a>
-
 # **amazonProductCompetitorsLive**
-
 > DataforseoLabsAmazonProductCompetitorsLiveResponseInfo amazonProductCompetitorsLive(dataforseoLabsAmazonProductCompetitorsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of products that intersect with a target asin in Amazon SERPs. The data can help you identify product competitors for any listing published on Amazon. The returned results are specific to the asin as well as the location and language parameters specified in a POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_competitors/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -196,33 +192,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonProductKeywordIntersectionsLive"></a>
-
 # **amazonProductKeywordIntersectionsLive**
-
 > DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo amazonProductKeywordIntersectionsLive(dataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of keywords for which the target products intersect in Amazon SERP. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_keyword_intersections/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -266,33 +260,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonProductRankOverviewLive"></a>
-
 # **amazonProductRankOverviewLive**
-
 > DataforseoLabsAmazonProductRankOverviewLiveResponseInfo amazonProductRankOverviewLive(dataforseoLabsAmazonProductRankOverviewLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with ranking data from organic and paid Amazon SERPs for the target products. The returned results are specific to the asins specified in a POST request. Learn more about ASIN in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/amazon/product_rank_overview/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -336,33 +328,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonRankedKeywordsLive"></a>
-
 # **amazonRankedKeywordsLive**
-
 > DataforseoLabsAmazonRankedKeywordsLiveResponseInfo amazonRankedKeywordsLive(dataforseoLabsAmazonRankedKeywordsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of keywords the target product ranks for on Amazon. The returned results are specific to the asin specified in a POST request. Learn more about ASIN in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/amazon/ranked_keywords/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -406,33 +396,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="amazonRelatedKeywordsLive"></a>
-
 # **amazonRelatedKeywordsLive**
-
 > DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo amazonRelatedKeywordsLive(dataforseoLabsAmazonRelatedKeywordsLiveRequestInfo)
+
+
 
 ‌‌ The Related Keywords endpoint provides keywords appearing in the  \&quot;Related Searches\&quot; section on Amazon. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/amazon/related_keywords/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -476,33 +464,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppCompetitorsLive"></a>
-
 # **appleAppCompetitorsLive**
-
 > DataforseoLabsAppleAppCompetitorsLiveResponseInfo appleAppCompetitorsLive(dataforseoLabsAppleAppCompetitorsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on App Store. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_competitors/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -546,33 +532,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppIntersectionLive"></a>
-
 # **appleAppIntersectionLive**
-
 > DataforseoLabsAppleAppIntersectionLiveResponseInfo appleAppIntersectionLive(dataforseoLabsAppleAppIntersectionLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same App Store SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/apple/app_intersection/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -616,33 +600,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleBulkAppMetricsLive"></a>
-
 # **appleBulkAppMetricsLive**
-
 > DataforseoLabsAppleBulkAppMetricsLiveResponseInfo appleBulkAppMetricsLive(dataforseoLabsAppleBulkAppMetricsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with ranking metrics for up to 1000 App Store applications. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/apple/bulk_app_metrics/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -686,33 +668,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleKeywordsForAppLive"></a>
-
 # **appleKeywordsForAppLive**
-
 > DataforseoLabsAppleKeywordsForAppLiveResponseInfo appleKeywordsForAppLive(dataforseoLabsAppleKeywordsForAppLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of keywords for which the target app ranks on App Store. You will obtain keyword data and discover the app’s ranking position for each returned keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/apple/keywords_for_app/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -756,33 +736,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="availableFilters"></a>
-
 # **availableFilters**
-
 > DataforseoLabsAvailableFiltersResponseInfo availableFilters()
+
+
 
 ‌‌ Here you will find all the necessary information about filters that can be used with DataForSEO Labs API endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/filters/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -810,7 +788,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -823,33 +800,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingBulkKeywordDifficultyLive"></a>
-
 # **bingBulkKeywordDifficultyLive**
-
 > DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo bingBulkKeywordDifficultyLive(dataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_keyword_difficulty/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -893,33 +868,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingBulkTrafficEstimationLive"></a>
-
 # **bingBulkTrafficEstimationLive**
-
 > DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo bingBulkTrafficEstimationLive(dataforseoLabsBingBulkTrafficEstimationLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/bulk_traffic_estimation/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -963,33 +936,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingCompetitorsDomainLive"></a>
-
 # **bingCompetitorsDomainLive**
-
 > DataforseoLabsBingCompetitorsDomainLiveResponseInfo bingCompetitorsDomainLive(dataforseoLabsBingCompetitorsDomainLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/competitors_domain/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1033,33 +1004,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingDomainIntersectionLive"></a>
-
 # **bingDomainIntersectionLive**
-
 > DataforseoLabsBingDomainIntersectionLiveResponseInfo bingDomainIntersectionLive(dataforseoLabsBingDomainIntersectionLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_intersection/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1103,33 +1072,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingDomainRankOverviewLive"></a>
-
 # **bingDomainRankOverviewLive**
-
 > DataforseoLabsBingDomainRankOverviewLiveResponseInfo bingDomainRankOverviewLive(dataforseoLabsBingDomainRankOverviewLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with ranking and traffic data from Bing’s organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/domain_rank_overview/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1173,33 +1140,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingPageIntersectionLive"></a>
-
 # **bingPageIntersectionLive**
-
 > DataforseoLabsBingPageIntersectionLiveResponseInfo bingPageIntersectionLive(dataforseoLabsBingPageIntersectionLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with the keywords for which specified pages rank within the same Bing SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/page_intersection/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1243,33 +1208,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingRankedKeywordsLive"></a>
-
 # **bingRankedKeywordsLive**
-
 > DataforseoLabsBingRankedKeywordsLiveResponseInfo bingRankedKeywordsLive(dataforseoLabsBingRankedKeywordsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as monthly searches and other data relevant to the returned keywords. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/ranked_keywords/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1313,33 +1276,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingRelatedKeywordsLive"></a>
-
 # **bingRelatedKeywordsLive**
-
 > DataforseoLabsBingRelatedKeywordsLiveResponseInfo bingRelatedKeywordsLive(dataforseoLabsBingRelatedKeywordsLiveRequestInfo)
+
+
 
 ‌‌ The Related Keywords endpoint provides keywords appearing in the “searches related to” SERP element. You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/related_keywords/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1383,33 +1344,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingRelevantPagesLive"></a>
-
 # **bingRelevantPagesLive**
-
 > DataforseoLabsBingRelevantPagesLiveResponseInfo bingRelevantPagesLive(dataforseoLabsBingRelevantPagesLiveRequestInfo)
+
+
 
 ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/relevant_pages/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1453,33 +1412,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingSerpCompetitorsLive"></a>
-
 # **bingSerpCompetitorsLive**
-
 > DataforseoLabsBingSerpCompetitorsLiveResponseInfo bingSerpCompetitorsLive(dataforseoLabsBingSerpCompetitorsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of domain rankings for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/serp_competitors/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1523,33 +1480,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="bingSubdomainsLive"></a>
-
 # **bingSubdomainsLive**
-
 > DataforseoLabsBingSubdomainsLiveResponseInfo bingSubdomainsLive(dataforseoLabsBingSubdomainsLiveRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/bing/subdomains/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1593,33 +1548,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="categories"></a>
-
 # **categories**
-
 > DataforseoLabsCategoriesResponseInfo categories()
+
+
 
 We use Google product and service categories. This endpoint will provide you with the full list of available categories. You can also download the CSV file by this link. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/categories_list/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1647,7 +1600,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1660,33 +1612,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="dataforseoLabsErrors"></a>
-
 # **dataforseoLabsErrors**
-
 > DataforseoLabsErrorsResponseInfo dataforseoLabsErrors(dataforseoLabsErrorsRequestInfo)
 
-By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash&#39;
+
+
+By calling this endpoint you will receive information about the DataForSEO Labs API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/errors/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1730,33 +1680,95 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
+<a id="dataforseoLabsGoogleCategoriesForKeywordsLanguages"></a>
+# **dataforseoLabsGoogleCategoriesForKeywordsLanguages**
+> DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo dataforseoLabsGoogleCategoriesForKeywordsLanguages()
+
+
+
+‌ Using this endpoint you can get the full list of languages supported for the Google Categories for Keywords endpoint of DataForSEO Labs API. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/languages/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
+    try {
+      DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo result = apiInstance.dataforseoLabsGoogleCategoriesForKeywordsLanguages();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling DataforseoLabsApi#dataforseoLabsGoogleCategoriesForKeywordsLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo**](DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="dataforseoLabsIdList"></a>
-
 # **dataforseoLabsIdList**
-
 > DataforseoLabsIdListResponseInfo dataforseoLabsIdList(dataforseoLabsIdListRequestInfo)
+
+
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed DataForSEO Labs tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/id_list/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1800,33 +1812,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="dataforseoLabsLocationsAndLanguages"></a>
-
 # **dataforseoLabsLocationsAndLanguages**
-
 > DataforseoLabsLocationsAndLanguagesResponseInfo dataforseoLabsLocationsAndLanguages()
+
+
 
 ‌ Using this endpoint you can get the full list of locations and languages supported in DataForSEO Labs API. Available sources currently include Google, Bing, and Amazon search engines. However, you should note that Amazon and Bing locations and languages are currently limited to the US/English. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/locations_and_languages/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1854,7 +1864,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1867,33 +1876,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="dataforseoLabsStatus"></a>
-
 # **dataforseoLabsStatus**
-
 > DataforseoLabsStatusResponseInfo dataforseoLabsStatus()
+
+
 
 ‌ By calling this endpoint, you will find out when the DataForSEO Labs data was last updated. The API response will provide separate update dates for the Google, Bing, and Amazon endpoints of DataForSEO Labs API. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/status/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1921,7 +1928,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1934,33 +1940,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppCompetitorsLive"></a>
-
 # **googleAppCompetitorsLive**
-
 > DataforseoLabsGoogleAppCompetitorsLiveResponseInfo googleAppCompetitorsLive(dataforseoLabsGoogleAppCompetitorsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of mobile applications that intersect with the target app for its ranking keywords on Google Play. You will obtain the IDs of competitor apps along with search volume and ranking data on competitor ranking keywords. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/app_competitors/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2004,33 +2008,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppIntersectionLive"></a>
-
 # **googleAppIntersectionLive**
-
 > DataforseoLabsGoogleAppIntersectionLiveResponseInfo googleAppIntersectionLive(dataforseoLabsGoogleAppIntersectionLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of keywords for which the mobile applications specified in the app_ids object rank within the same Google Play SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/app_intersection/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2074,33 +2076,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAvailableHistory"></a>
-
 # **googleAvailableHistory**
-
 > DataforseoLabsGoogleAvailableHistoryResponseInfo googleAvailableHistory()
+
+
 
 ‌ By calling this endpoint, you will find obtain a list of dates available for setting in the first_date and second_date fields of the Domain Metrics by Categories endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/available_history/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2128,7 +2128,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2141,33 +2140,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleBulkAppMetricsLive"></a>
-
 # **googleBulkAppMetricsLive**
-
 > DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo googleBulkAppMetricsLive(dataforseoLabsGoogleBulkAppMetricsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with ranking metrics for up to 1000 Google Play applications. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_app_metrics/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2211,33 +2208,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleBulkKeywordDifficultyLive"></a>
-
 # **googleBulkKeywordDifficultyLive**
-
 > DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo googleBulkKeywordDifficultyLive(dataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo)
+
+
 
 This endpoint will provide you with the Keyword Difficulty metric for a maximum of 1,000 keywords in one API request. Keyword Difficulty stands for the relative difficulty of ranking in the first top-10 organic results for the related keyword. Keyword Difficulty in DataForSEO API responses indicates the chance of getting in top-10 organic results for a keyword on a logarithmic scale from 0 to 100. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_keyword_difficulty/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2281,33 +2276,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleBulkTrafficEstimationLive"></a>
-
 # **googleBulkTrafficEstimationLive**
-
 > DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo googleBulkTrafficEstimationLive(dataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with estimated monthly traffic volumes for up to 1,000 domains. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/bulk_traffic_estimation/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2351,33 +2344,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleCategoriesForDomainLive"></a>
-
 # **googleCategoriesForDomainLive**
-
 > DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo googleCategoriesForDomainLive(dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with Google product or service categories that include keywords the domain ranks for in search. Furthermore, you will obtain general rankings and traffic data for the keywords under a certain category. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_domain/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2421,33 +2412,99 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
+<a id="googleCategoriesForKeywordsLive"></a>
+# **googleCategoriesForKeywordsLive**
+> DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo googleCategoriesForKeywordsLive(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo)
+
+
+
+This endpoint will provide you with Google product and service categories related for each specified keyword. You can indicate a maximum of 1,000 keywords in one API request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/categories_for_keywords/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
+    List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo = Arrays.asList(); // List<DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo> | 
+    try {
+      DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo result = apiInstance.googleCategoriesForKeywordsLive(dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling DataforseoLabsApi#googleCategoriesForKeywordsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **dataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo** | [**List&lt;DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo&gt;**](DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo**](DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleCompetitorsDomainLive"></a>
-
 # **googleCompetitorsDomainLive**
-
 > DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo googleCompetitorsDomainLive(dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a full overview of ranking and traffic data of the competitor domains from organic and paid search. In addition to that, you will get the metrics specific to the keywords both competitor domains and your domain rank for within the same SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/competitors_domain/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2491,33 +2548,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDomainIntersectionLive"></a>
-
 # **googleDomainIntersectionLive**
-
 > DataforseoLabsGoogleDomainIntersectionLiveResponseInfo googleDomainIntersectionLive(dataforseoLabsGoogleDomainIntersectionLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with the keywords for which both specified domains rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on the first and second domain’s SERP element discovered for this keyword, as well as the estimated traffic volume and cost of ad traffic. Domain Intersection endpoint supports organic, paid, local pack, and featured snippet results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_intersection/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2561,33 +2616,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDomainMetricsByCategoriesLive"></a>
-
 # **googleDomainMetricsByCategoriesLive**
-
 > DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo googleDomainMetricsByCategoriesLive(dataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with dynamics of change in metrics of domains relevant to the specified product and service categories. You will receive historical ranking data from Google SERPs, along with valuable current and historical domain metrics, such as ETV, impressions ETV, estimated paid traffic cost, the total count of SERPs that contain domains, and more. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_metrics_by_categories/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2631,33 +2684,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDomainRankOverviewLive"></a>
-
 # **googleDomainRankOverviewLive**
-
 > DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo googleDomainRankOverviewLive(dataforseoLabsGoogleDomainRankOverviewLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with ranking and traffic data from organic and paid search for the specified domain. You will be able to review the domain ranking distribution in SERPs as well as estimated monthly traffic volume for both organic and paid results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_rank_overview/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2701,33 +2752,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleDomainWhoisOverviewLive"></a>
-
 # **googleDomainWhoisOverviewLive**
-
 > DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo googleDomainWhoisOverviewLive(dataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with Whois data enriched with ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/domain_whois_overview/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2771,33 +2820,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHistoricalBulkTrafficEstimationLive"></a>
-
 # **googleHistoricalBulkTrafficEstimationLive**
-
 > DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo googleHistoricalBulkTrafficEstimationLive(dataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with historical monthly traffic volumes for up to 1,000 domains collected within the specified time range through October 2020. If you do not specify the range, data will be returned for the previous 12 months. Along with organic search traffic estimations, you will also get separate values for paid search, featured snippet, and local pack results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2841,33 +2888,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHistoricalRankOverviewLive"></a>
-
 # **googleHistoricalRankOverviewLive**
-
 > DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo googleHistoricalRankOverviewLive(dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2911,33 +2956,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHistoricalSearchVolumeLive"></a>
-
 # **googleHistoricalSearchVolumeLive**
-
 > DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo googleHistoricalSearchVolumeLive(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo)
+
+
 
 ‌‌  This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2981,33 +3024,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleHistoricalSerpsLive"></a>
-
 # **googleHistoricalSerpsLive**
-
 > DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo googleHistoricalSerpsLive(dataforseoLabsGoogleHistoricalSerpsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with Google SERPs collected within the specified time frame. You will also receive a complete overview of featured snippets and other extra elements that were present within the specified dates. The data will allow you to analyze the dynamics of keyword rankings over time for the specified keyword and location. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_serps/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3051,33 +3092,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleKeywordIdeasLive"></a>
-
 # **googleKeywordIdeasLive**
-
 > DataforseoLabsGoogleKeywordIdeasLiveResponseInfo googleKeywordIdeasLive(dataforseoLabsGoogleKeywordIdeasLiveRequestInfo)
+
+
 
 ‌ The Keyword Ideas endpoint provides search terms that are relevant to the product or service categories of the specified keywords. The algorithm selects the keywords which fall into the same categories as the seed keywords specified in a POST array. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_ideas/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3121,33 +3160,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleKeywordSuggestionsLive"></a>
-
 # **googleKeywordSuggestionsLive**
-
 > DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo googleKeywordSuggestionsLive(dataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo)
+
+
 
 ‌‌ The Keyword Suggestions endpoint provides search queries that include the specified seed keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_suggestions/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3191,33 +3228,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleKeywordsForAppLive"></a>
-
 # **googleKeywordsForAppLive**
-
 > DataforseoLabsGoogleKeywordsForAppLiveResponseInfo googleKeywordsForAppLive(dataforseoLabsGoogleKeywordsForAppLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of keywords for which the target app ranks on Google Play. You will obtain keyword data and discover the app’s ranking position for each returned keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_app/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3261,33 +3296,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleKeywordsForCategoriesLive"></a>
-
 # **googleKeywordsForCategoriesLive**
-
 > DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo googleKeywordsForCategoriesLive(dataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3331,33 +3364,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleKeywordsForSiteLive"></a>
-
 # **googleKeywordsForSiteLive**
-
 > DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo googleKeywordsForSiteLive(dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo)
+
+
 
 ‌ The Keywords For Site endpoint will provide you with a list of keywords relevant to the target domain. Each keyword is supplied with relevant categories, search volume data for the last month, cost-per-click, competition, and search volume trend values for the past 12 months. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_site/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3401,33 +3432,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googlePageIntersectionLive"></a>
-
 # **googlePageIntersectionLive**
-
 > DataforseoLabsGooglePageIntersectionLiveResponseInfo googlePageIntersectionLive(dataforseoLabsGooglePageIntersectionLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3471,33 +3500,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleRankedKeywordsLive"></a>
-
 # **googleRankedKeywordsLive**
-
 > DataforseoLabsGoogleRankedKeywordsLiveResponseInfo googleRankedKeywordsLive(dataforseoLabsGoogleRankedKeywordsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with the list of keywords that any domain or webpage is ranking for. You will also get SERP elements related to the keyword position, as well as impressions, monthly searches and other data relevant to the returned keywords. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3541,33 +3568,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleRelatedKeywordsLive"></a>
-
 # **googleRelatedKeywordsLive**
-
 > DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo googleRelatedKeywordsLive(dataforseoLabsGoogleRelatedKeywordsLiveRequestInfo)
+
+
 
 The Related Keywords endpoint provides keywords appearing in the  \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3611,33 +3636,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleRelevantPagesLive"></a>
-
 # **googleRelevantPagesLive**
-
 > DataforseoLabsGoogleRelevantPagesLiveResponseInfo googleRelevantPagesLive(dataforseoLabsGoogleRelevantPagesLiveRequestInfo)
+
+
 
 ‌ for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/relevant_pages/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3681,33 +3704,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSearchIntentLive"></a>
-
 # **googleSearchIntentLive**
-
 > DataforseoLabsGoogleSearchIntentLiveResponseInfo googleSearchIntentLive(dataforseoLabsGoogleSearchIntentLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with search intent data for up to 1,000 keywords. For each keyword that you specify when setting a task, the API will return the keyword’s search intent and intent probability. Besides the highest probable search intent, the results will also provide you with other likely search intent(s) and their probability. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/search_intent/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3751,33 +3772,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSerpCompetitorsLive"></a>
-
 # **googleSerpCompetitorsLive**
-
 > DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo googleSerpCompetitorsLive(dataforseoLabsGoogleSerpCompetitorsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a list of domains ranking for the keywords you specify. You will also get SERP rankings, rating, estimated traffic volume, and visibility values the provided domains gain from the specified keywords. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/serp_competitors/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3821,33 +3840,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleSubdomainsLive"></a>
-
 # **googleSubdomainsLive**
-
 > DataforseoLabsGoogleSubdomainsLiveResponseInfo googleSubdomainsLive(dataforseoLabsGoogleSubdomainsLiveRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with a list of subdomains of the specified domain, along with the ranking distribution across organic and paid search. In addition to that, you will also get the estimated traffic volume of subdomains based on search volume and impressions. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/subdomains/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3891,33 +3908,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleTopSearchesLive"></a>
-
 # **googleTopSearchesLive**
-
 > DataforseoLabsGoogleTopSearchesLiveResponseInfo googleTopSearchesLive(dataforseoLabsGoogleTopSearchesLiveRequestInfo)
+
+
 
 ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DataforseoLabsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -3961,15 +3976,11 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # FormatsElement
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**format** | **String** | type of file format of the dataset for example: zip, html, csv |  [optional] |
 |**size** | **String** | file size in bytes |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

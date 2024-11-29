@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # RankChanges
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**isUp** | **Boolean** | rank of this element went up if the value is true, position of the element in SERP is higher compared to the previous check |  [optional] |
 |**isDown** | **Boolean** | rank of this element went down if the value is true, position of the element in SERP is lower compared to the previous check |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

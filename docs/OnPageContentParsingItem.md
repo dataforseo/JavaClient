@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageContentParsingItem
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**statusCode** | **Integer** | status code of the page |  [optional] |
 |**pageContent** | [**PageContentInfo**](PageContentInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

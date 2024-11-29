@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ScoreByCategories
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**transit** | **Float** | score relative to nearby transit options indicates the score of the hotel’s location in the range from 1 to 5; calculated based on data from the hotel’s proximity to nearby transit options |  [optional] |
 |**airportAccess** | **Float** | score relative to nearby airports indicates the score of the hotel’s location in the range from 1 to 5; calculated based on data from the hotel’s proximity to nearby airports |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleCompetitorsDomainLiveResultInfo
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsCompetitorsDomainLiveItem&gt;**](DataforseoLabsCompetitorsDomainLiveItem.md) | contains data related to the target and competitor domains |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

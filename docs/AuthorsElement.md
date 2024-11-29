@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AuthorsElement
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**url** | **String** | author’s link URL |  [optional] |
 |**domain** | **String** | author’s link domain |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

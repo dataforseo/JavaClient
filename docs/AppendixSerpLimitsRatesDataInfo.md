@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixSerpLimitsRatesDataInfo
+
 
 ## Properties
 
@@ -16,9 +15,8 @@
 |**live** | [**AppendixFunctionTypeInfo**](AppendixFunctionTypeInfo.md) |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
 |**tasksFixed** | **Double** |  |  [optional] |
-|**jobs** | [**AppendixJobsSerpLimitsRatesDataInfo**](AppendixJobsSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**jobs** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
 |**screenshot** | **Double** |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

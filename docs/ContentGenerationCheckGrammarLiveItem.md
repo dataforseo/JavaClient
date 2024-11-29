@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentGenerationCheckGrammarLiveItem
+
 
 ## Properties
 
@@ -20,6 +19,5 @@
 |**ruleCategoryId** | **String** | id of the rule category |  [optional] |
 |**ruleCategoryName** | **String** | name of the rule category |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

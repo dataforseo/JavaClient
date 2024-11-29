@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HtmlContentInfo
+
 
 ## Properties
 
@@ -20,6 +19,5 @@
 |**titleToContentConsistency** | **Float** | consistency of the meta title tag with the page content measured from 0 to 1 |  [optional] |
 |**metaKeywordsToContentConsistency** | **Float** | consistency of meta keywordstag with the page content measured from 0 to 1 |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixStatisticsRatesDataInfo
+
 
 ## Properties
 
@@ -35,6 +34,5 @@
 |**totalContentGeneration** | **Double** |  |  [optional] |
 |**value** | **String** | time period for grouping day in the yyyy-MM-dd format minute in the yyyy-MM-dd HH:mm format |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,15 +1,12 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleReviewsSearchBusinessDataSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the listed reviews absolute position among all reviews on the list |  [optional] |
 |**position** | **String** | the alignment of the review in SERP can take the following values: right |  [optional] |
 |**xpath** | **String** | the XPath of the review |  [optional] |
 |**reviewText** | **String** | the content of the review |  [optional] |
@@ -30,7 +27,7 @@
 |**ownerTimestamp** | **String** | date and time of the owner’s reply to the review in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 |  [optional] |
 |**reviewId** | **String** | the unique identifier of a review on Google example: ChZDSUhNMG9nS0VJQ0FnSUMxbHFyMFlnEAE |  [optional] |
 |**images** | [**List&lt;ImagesElement&gt;**](ImagesElement.md) | images submitted by the reviewer |  [optional] |
+|**reviewHighlights** | [**List&lt;ReviewHighlights&gt;**](ReviewHighlights.md) | review highlights contains highlighted review criteria and assessments |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

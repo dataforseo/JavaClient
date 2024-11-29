@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # ContentGenerationApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -19,24 +15,24 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**paraphraseLive**](ContentGenerationApi.md#paraphraseLive) | **POST** /v3/content_generation/paraphrase/live |  |
 | [**textSummaryLive**](ContentGenerationApi.md#textSummaryLive) | **POST** /v3/content_generation/text_summary/live |  |
 
+
 <a id="checkGrammarLive"></a>
-
 # **checkGrammarLive**
-
 > ContentGenerationCheckGrammarLiveResponseInfo checkGrammarLive(contentGenerationCheckGrammarLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with grammar and spelling corrections for the text you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/check_grammar/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -80,33 +76,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentGenerationCheckGrammarLanguages"></a>
-
 # **contentGenerationCheckGrammarLanguages**
-
 > ContentGenerationCheckGrammarLanguagesResponseInfo contentGenerationCheckGrammarLanguages()
+
+
 
 You will receive the list of languages by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/check_grammar/languages/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -134,7 +128,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -147,33 +140,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="contentGenerationTextSummaryLanguages"></a>
-
 # **contentGenerationTextSummaryLanguages**
-
 > ContentGenerationTextSummaryLanguagesResponseInfo contentGenerationTextSummaryLanguages()
+
+
 
 You will receive the list of languages by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/text_summary/languages/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -201,7 +192,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -214,33 +204,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="generateLive"></a>
-
 # **generateLive**
-
 > ContentGenerationGenerateLiveResponseInfo generateLive(contentGenerationGenerateLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a text generated based on the part of the text you define and other available parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/generate/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -284,33 +272,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="generateMetaTagsLive"></a>
-
 # **generateMetaTagsLive**
-
 > ContentGenerationGenerateMetaTagsLiveResponseInfo generateMetaTagsLive(contentGenerationGenerateMetaTagsLiveRequestInfo)
+
+
 
 ‌ This endpoint is designed to generate title and description meta tags for a text specified in the request. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/generate_meta_tags/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -354,33 +340,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="generateSubTopicsLive"></a>
-
 # **generateSubTopicsLive**
-
 > ContentGenerationGenerateSubTopicsLiveResponseInfo generateSubTopicsLive(contentGenerationGenerateSubTopicsLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with 10 subtopics generated based on the topic and other parameters you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/generate_sub_topics/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -424,33 +408,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="generateTextLive"></a>
-
 # **generateTextLive**
-
 > ContentGenerationGenerateTextLiveResponseInfo generateTextLive(contentGenerationGenerateTextLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a text generated based on the topic and other parameters you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/generate_text/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -494,33 +476,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="grammarRules"></a>
-
 # **grammarRules**
-
 > ContentGenerationGrammarRulesResponseInfo grammarRules()
+
+
 
 You will receive the list of grammar rules by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/grammar_rules/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -548,7 +528,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -561,33 +540,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="paraphraseLive"></a>
-
 # **paraphraseLive**
-
 > ContentGenerationParaphraseLiveResponseInfo paraphraseLive(contentGenerationParaphraseLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with a paraphrased version of the text you specify. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/paraphrase/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -631,33 +608,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="textSummaryLive"></a>
-
 # **textSummaryLive**
-
 > ContentGenerationTextSummaryLiveResponseInfo textSummaryLive(contentGenerationTextSummaryLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with statistical data based on the given text, such as the number of words and sentences, vocabulary density, and text readability. for more info please visit &#39;https://docs.dataforseo.com/v3/content_generation/text_summary/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.ContentGenerationApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.ContentGenerationApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -701,15 +676,11 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

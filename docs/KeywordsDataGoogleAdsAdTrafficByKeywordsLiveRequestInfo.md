@@ -1,15 +1,14 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keywords** | **List&lt;String&gt;** | keywords required field The maximum number of keywords you can specify: 1000 The maximum number of characters for each keyword: 80 The maximum number of words for each keyword phrase: 10 the keywords you specify will be converted to a lowercase format Note: Google Ads may return no data for certain groups of keywords visit our Help Center to learn more Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task; to learn more about which symbols can be used, please refer to this article |  [optional] |
-|**bid** | **Float** | the maximum custom bid required field the collected data will be based on this value it stands for the price you are willing to pay for an ad; the higher value you specify here, the higher values you will get in the returned metrics learn more in this help center article |  [optional] |
+|**keywords** | **List&lt;String&gt;** | keywords required field The maximum number of keywords you can specify: 1000 The maximum number of characters for each keyword: 80 The maximum number of words for each keyword phrase: 10 the keywords you specify will be converted to a lowercase format Note: Google Ads may return no data for certain groups of keywords visit our Help Center to learn more Also note that Google Ads doesn’t allow using certain symbols and characters (e.g., UTF symbols, emojis), so you can’t use them when setting a task; to learn more about which symbols and characters can be used, please refer to this article learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |  [optional] |
+|**bid** | **Long** | the maximum custom bid required field the collected data will be based on this value it stands for the price you are willing to pay for an ad; the higher value you specify here, the higher values you will get in the returned metrics learn more in this help center article |  [optional] |
 |**match** | **String** | keywords match-type required field can take the following values: exact, broad, phrase |  [optional] |
 |**searchPartners** | **Boolean** | include Google search partners optional field if you specify true, the results will be delivered for owned, operated, and syndicated networks across Google and partner sites that host Google search; default value: false – results are returned for Google search sites |  [optional] |
 |**locationName** | **String** | full name of search engine location optional field if you do not indicate the location, you will receive worldwide results, i.e., for all available locations; if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_ads/locations example: London,England,United Kingdom |  [optional] |
@@ -23,6 +22,5 @@
 |**sortBy** | **String** | results sorting parameters optional field Use these parameters to sort the results by relevance, impressions, ctr, average_cpc, cost, or clicks in the descending order default value: relevance |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

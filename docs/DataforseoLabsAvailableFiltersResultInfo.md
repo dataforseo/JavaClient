@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsAvailableFiltersResultInfo
+
 
 ## Properties
 
@@ -31,6 +30,5 @@
 |**keywordsForApp** | **Map&lt;String, Map&lt;String, String&gt;&gt;** |  |  [optional] |
 |**databaseRowsCount** | **Map&lt;String, String&gt;** |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

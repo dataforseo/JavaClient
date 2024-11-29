@@ -1,21 +1,19 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # LocalServicesElement
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
-|**title** | **String** | title of the row |  [optional] |
+|**title** | **String** | title of a given link element |  [optional] |
 |**url** | **String** | URL |  [optional] |
-|**domain** | **String** | domain where a link points |  [optional] |
-|**description** | **String** | description of the results element in SERP |  [optional] |
+|**domain** | **String** | website domain |  [optional] |
+|**description** | **String** | description |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**profileImageUrl** | **String** | URL of the image featured in the element |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

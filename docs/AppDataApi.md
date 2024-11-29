@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # AppDataApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -13,7 +9,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**appDataErrors**](AppDataApi.md#appDataErrors) | **POST** /v3/app_data/errors |  |
 | [**appDataGoogleLanguages**](AppDataApi.md#appDataGoogleLanguages) | **GET** /v3/app_data/google/languages |  |
 | [**appDataGoogleLocations**](AppDataApi.md#appDataGoogleLocations) | **GET** /v3/app_data/google/locations |  |
+| [**appDataGoogleLocationsCountry**](AppDataApi.md#appDataGoogleLocationsCountry) | **GET** /v3/app_data/google/locations/{country} |  |
 | [**appDataIdList**](AppDataApi.md#appDataIdList) | **POST** /v3/app_data/id_list |  |
+| [**appDataTasksReady**](AppDataApi.md#appDataTasksReady) | **GET** /v3/app_data/tasks_ready |  |
 | [**appleAppInfoTaskGetAdvanced**](AppDataApi.md#appleAppInfoTaskGetAdvanced) | **GET** /v3/app_data/apple/app_info/task_get/advanced/{id} |  |
 | [**appleAppInfoTaskPost**](AppDataApi.md#appleAppInfoTaskPost) | **POST** /v3/app_data/apple/app_info/task_post |  |
 | [**appleAppInfoTasksReady**](AppDataApi.md#appleAppInfoTasksReady) | **GET** /v3/app_data/apple/app_info/tasks_ready |  |
@@ -49,24 +47,24 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleAppSearchesTasksReady**](AppDataApi.md#googleAppSearchesTasksReady) | **GET** /v3/app_data/google/app_searches/tasks_ready |  |
 | [**googleCategories**](AppDataApi.md#googleCategories) | **GET** /v3/app_data/google/categories |  |
 
+
 <a id="appDataAppleLanguages"></a>
-
 # **appDataAppleLanguages**
-
 > AppDataAppleLanguagesResponseInfo appDataAppleLanguages()
+
+
 
 By calling this endpoint you will receive the list of Apple languages supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/languages/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -94,7 +92,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -107,33 +104,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appDataAppleLocations"></a>
-
 # **appDataAppleLocations**
-
 > AppDataAppleLocationsResponseInfo appDataAppleLocations()
+
+
 
 By calling this endpoint you will receive the list of Apple locations supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/locations/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -161,7 +156,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -174,33 +168,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appDataErrors"></a>
-
 # **appDataErrors**
-
 > AppDataErrorsResponseInfo appDataErrors(appDataErrorsRequestInfo)
 
-By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
+
+
+By calling this endpoint you will receive information about the App Data API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/errors/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -244,33 +236,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appDataGoogleLanguages"></a>
-
 # **appDataGoogleLanguages**
-
 > AppDataGoogleLanguagesResponseInfo appDataGoogleLanguages()
+
+
 
 By calling this endpoint you will receive the list of Google languages supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/languages/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -298,7 +288,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -311,33 +300,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appDataGoogleLocations"></a>
-
 # **appDataGoogleLocations**
-
 > AppDataGoogleLocationsResponseInfo appDataGoogleLocations()
+
+
 
 By calling this endpoint you will receive the list of Google locations supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/locations/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -365,7 +352,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -378,33 +364,99 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
 
+<a id="appDataGoogleLocationsCountry"></a>
+# **appDataGoogleLocationsCountry**
+> AppDataGoogleLocationsCountryResponseInfo appDataGoogleLocationsCountry(country)
+
+
+
+By calling this endpoint you will receive the list of Google locations supported in App Data API. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/locations/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    AppDataApi apiInstance = new AppDataApi(defaultClient);
+    String country = "us"; // String | country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us
+    try {
+      AppDataGoogleLocationsCountryResponseInfo result = apiInstance.appDataGoogleLocationsCountry(country);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling AppDataApi#appDataGoogleLocationsCountry");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **country** | **String**| country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us | |
+
+### Return type
+
+[**AppDataGoogleLocationsCountryResponseInfo**](AppDataGoogleLocationsCountryResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appDataIdList"></a>
-
 # **appDataIdList**
-
 > AppDataIdListResponseInfo appDataIdList(appDataIdListRequestInfo)
+
+
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed App Data tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/id_list/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -448,33 +500,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="appleAppInfoTaskGetAdvanced"></a>
+<a id="appDataTasksReady"></a>
+# **appDataTasksReady**
+> AppDataTasksReadyResponseInfo appDataTasksReady()
 
-# **appleAppInfoTaskGetAdvanced**
 
-> AppDataAppleAppInfoTaskGetAdvancedResponseInfo appleAppInfoTaskGetAdvanced(id)
 
-This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, images, and other data. The results are specific to the app_id parameter specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash&#39;
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -487,7 +537,71 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "aa956d7d-4d8b-42de-98cf-f7c8a573ab16"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      AppDataTasksReadyResponseInfo result = apiInstance.appDataTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling AppDataApi#appDataTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**AppDataTasksReadyResponseInfo**](AppDataTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="appleAppInfoTaskGetAdvanced"></a>
+# **appleAppInfoTaskGetAdvanced**
+> AppDataAppleAppInfoTaskGetAdvancedResponseInfo appleAppInfoTaskGetAdvanced(id)
+
+
+
+This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, images, and other data. The results are specific to the app_id parameter specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_info/task_get/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    AppDataApi apiInstance = new AppDataApi(defaultClient);
+    String id = "afab10ea-09c7-4523-945f-f2b51171a1b7"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppInfoTaskGetAdvancedResponseInfo result = apiInstance.appleAppInfoTaskGetAdvanced(id);
       System.out.println(result);
@@ -518,33 +632,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppInfoTaskPost"></a>
-
 # **appleAppInfoTaskPost**
-
 > AppDataAppleAppInfoTaskPostResponseInfo appleAppInfoTaskPost(appDataAppleAppInfoTaskPostRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with information about the App Store application specified in the app_id field of the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_info/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -588,33 +700,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppInfoTasksReady"></a>
-
 # **appleAppInfoTasksReady**
-
 > AppDataAppleAppInfoTasksReadyResponseInfo appleAppInfoTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_info/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -642,7 +752,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -655,33 +764,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppListTaskGetAdvanced"></a>
-
 # **appleAppListTaskGetAdvanced**
-
 > AppDataAppleAppListTaskGetAdvancedResponseInfo appleAppListTaskGetAdvanced(id)
+
+
 
 This endpoint will provide you with a list of applications published in the top app charts on the App Store platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_list/task_get/advanced/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -694,7 +801,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "d6aa8222-6e09-47c9-a1f3-30c62a680e22"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "f770fd2a-5ee3-48e1-bd8a-aabe41024a58"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppListTaskGetAdvancedResponseInfo result = apiInstance.appleAppListTaskGetAdvanced(id);
       System.out.println(result);
@@ -725,33 +832,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppListTaskPost"></a>
-
 # **appleAppListTaskPost**
-
 > AppDataAppleAppListTaskPostResponseInfo appleAppListTaskPost(appDataAppleAppListTaskPostRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with a list of mobile applications published in the top app charts on the App Store platform. The returned results are specific to the app collection as well as the language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_list/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -795,33 +900,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppListTasksReady"></a>
-
 # **appleAppListTasksReady**
-
 > AppDataAppleAppListTasksReadyResponseInfo appleAppListTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_list/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -849,7 +952,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -862,33 +964,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppListingsCategories"></a>
-
 # **appleAppListingsCategories**
-
 > AppDataAppleAppListingsCategoriesResponseInfo appleAppListingsCategories()
+
+
 
 This endpoint will provide you with a full list of app categories available on Apple App Store. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_listings/categories/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -916,7 +1016,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -929,33 +1028,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppListingsSearchLive"></a>
-
 # **appleAppListingsSearchLive**
-
 > AppDataAppleAppListingsSearchLiveResponseInfo appleAppListingsSearchLive(appDataAppleAppListingsSearchLiveRequestInfo)
+
+
 
 This endpoint will provide you with a list of apps published on App Store along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_listings/search/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -999,33 +1096,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppReviewsTaskGetAdvanced"></a>
-
 # **appleAppReviewsTaskGetAdvanced**
-
 > AppDataAppleAppReviewsTaskGetAdvancedResponseInfo appleAppReviewsTaskGetAdvanced(id)
+
+
 
 This endpoint will provide you with feedback data on applications listed on the App Store platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1038,7 +1133,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "b48c7af3-d8a4-4094-9180-7bf84ff8dcb0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "607282aa-092a-42f2-b78a-6329377eaa5a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppReviewsTaskGetAdvancedResponseInfo result = apiInstance.appleAppReviewsTaskGetAdvanced(id);
       System.out.println(result);
@@ -1069,33 +1164,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppReviewsTaskPost"></a>
-
 # **appleAppReviewsTaskPost**
-
 > AppDataAppleAppReviewsTaskPostResponseInfo appleAppReviewsTaskPost(appDataAppleAppReviewsTaskPostRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with reviews published on the App Store platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1139,33 +1232,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppReviewsTasksReady"></a>
-
 # **appleAppReviewsTasksReady**
-
 > AppDataAppleAppReviewsTasksReadyResponseInfo appleAppReviewsTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1193,7 +1284,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1206,33 +1296,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppSearchesTaskGetAdvanced"></a>
-
 # **appleAppSearchesTaskGetAdvanced**
-
 > AppDataAppleAppSearchesTaskGetAdvancedResponseInfo appleAppSearchesTaskGetAdvanced(id)
+
+
 
 This endpoint will provide you with a list of apps ranking on the App Store for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_get/advanced/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1245,7 +1333,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "34f52102-e55c-4b19-8f89-47bb864cdffd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "c5190c01-6c2d-4a1f-be4e-fe27156d00d3"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppSearchesTaskGetAdvancedResponseInfo result = apiInstance.appleAppSearchesTaskGetAdvanced(id);
       System.out.println(result);
@@ -1276,33 +1364,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppSearchesTaskPost"></a>
-
 # **appleAppSearchesTaskPost**
+> AppDataAppleAppSearchesTaskPostResponseInfo appleAppSearchesTaskPost(appDataAppleAppSearchesTaskPostRequestInfo)
 
-> AppDataAppleAppSearchesTaskPostResponseInfo appleAppSearchesTaskPost(appDataTaskRequestInfo)
+
 
 ‌‌ This endpoint will provide you with a list of apps ranking on the App Store for the specified keyword. The returned results are specific to the indicated keyword, as well as the location and language parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_searches/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1315,9 +1401,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    List<AppDataTaskRequestInfo> appDataTaskRequestInfo = Arrays.asList(); // List<AppDataTaskRequestInfo> | 
+    List<AppDataAppleAppSearchesTaskPostRequestInfo> appDataAppleAppSearchesTaskPostRequestInfo = Arrays.asList(); // List<AppDataAppleAppSearchesTaskPostRequestInfo> | 
     try {
-      AppDataAppleAppSearchesTaskPostResponseInfo result = apiInstance.appleAppSearchesTaskPost(appDataTaskRequestInfo);
+      AppDataAppleAppSearchesTaskPostResponseInfo result = apiInstance.appleAppSearchesTaskPost(appDataAppleAppSearchesTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appleAppSearchesTaskPost");
@@ -1334,7 +1420,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **appDataTaskRequestInfo** | [**List&lt;AppDataTaskRequestInfo&gt;**](AppDataTaskRequestInfo.md)|  | [optional] |
+| **appDataAppleAppSearchesTaskPostRequestInfo** | [**List&lt;AppDataAppleAppSearchesTaskPostRequestInfo&gt;**](AppDataAppleAppSearchesTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -1346,33 +1432,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleAppSearchesTasksReady"></a>
-
 # **appleAppSearchesTasksReady**
-
 > AppDataAppleAppSearchesTasksReadyResponseInfo appleAppSearchesTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/app_searches/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1400,7 +1484,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1413,33 +1496,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="appleCategories"></a>
-
 # **appleCategories**
-
 > AppDataAppleCategoriesResponseInfo appleCategories()
+
+
 
 This endpoint will provide you with a full list of app categories available on App Store. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/apple/categories/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1467,7 +1548,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1480,33 +1560,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppInfoTaskGetAdvanced"></a>
-
 # **googleAppInfoTaskGetAdvanced**
-
 > AppDataGoogleAppInfoTaskGetAdvancedResponseInfo googleAppInfoTaskGetAdvanced(id)
+
+
 
 This endpoint will provide you with information about the mobile application specified in a POST request. You will receive its ID, icon, description, reviews count, rating, number of installs, images, and other data. The results are specific to the app_id parameter specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/advanced/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1519,7 +1597,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "6485d81f-fb90-495b-8033-fa320ecc234d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "f766eefe-b474-40a3-a346-f5bf722bd382"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppInfoTaskGetAdvancedResponseInfo result = apiInstance.googleAppInfoTaskGetAdvanced(id);
       System.out.println(result);
@@ -1550,33 +1628,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppInfoTaskGetHtml"></a>
-
 # **googleAppInfoTaskGetHtml**
-
 > AppDataGoogleAppInfoTaskGetHtmlResponseInfo googleAppInfoTaskGetHtml(id)
+
+
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_info/task_get/html/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1589,7 +1665,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "f5f61593-6681-4d4d-903d-837ccf6c7af7"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "6e0e067b-9508-445e-b5a7-95f8ed7b9198"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppInfoTaskGetHtmlResponseInfo result = apiInstance.googleAppInfoTaskGetHtml(id);
       System.out.println(result);
@@ -1620,33 +1696,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppInfoTaskPost"></a>
-
 # **googleAppInfoTaskPost**
-
 > AppDataGoogleAppInfoTaskPostResponseInfo googleAppInfoTaskPost(appDataGoogleAppInfoTaskPostRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with information about the Google Play application specified in the app_id field of the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_info/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1690,33 +1764,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppInfoTasksReady"></a>
-
 # **googleAppInfoTasksReady**
-
 > AppDataGoogleAppInfoTasksReadyResponseInfo googleAppInfoTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_info/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1744,7 +1816,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -1757,33 +1828,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppListTaskGetAdvanced"></a>
-
 # **googleAppListTaskGetAdvanced**
-
 > AppDataGoogleAppListTaskGetAdvancedResponseInfo googleAppListTaskGetAdvanced(id)
+
+
 
 This endpoint will provide you with a list of applications published in the top charts on the Google Play platform, including app IDs, ratings, prices, titles, and more. The results are specific to the app_collection as well as the location and language parameters specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/advanced/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1796,7 +1865,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "f57cda08-39a0-4b07-b280-ed1d12add458"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "f8674e42-410e-4fa3-b358-dbc2199e4dfa"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppListTaskGetAdvancedResponseInfo result = apiInstance.googleAppListTaskGetAdvanced(id);
       System.out.println(result);
@@ -1827,33 +1896,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppListTaskGetHtml"></a>
-
 # **googleAppListTaskGetHtml**
-
 > AppDataGoogleAppListTaskGetHtmlResponseInfo googleAppListTaskGetHtml(id)
+
+
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_list/task_get/html/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1866,7 +1933,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "6543b814-dc30-4f32-96a9-78ac3b15789c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "70ef4cf6-6630-4f24-bfd6-77bb2ef090d8"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppListTaskGetHtmlResponseInfo result = apiInstance.googleAppListTaskGetHtml(id);
       System.out.println(result);
@@ -1897,33 +1964,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppListTaskPost"></a>
-
 # **googleAppListTaskPost**
-
 > AppDataGoogleAppListTaskPostResponseInfo googleAppListTaskPost(appDataGoogleAppListTaskPostRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with a list of mobile applications published in the top charts on the Google Play platform. The returned results are specific to the app collection as well as the the language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_list/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -1967,33 +2032,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppListTasksReady"></a>
-
 # **googleAppListTasksReady**
-
 > AppDataGoogleAppListTasksReadyResponseInfo googleAppListTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_list/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2021,7 +2084,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2034,33 +2096,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppListingsCategories"></a>
-
 # **googleAppListingsCategories**
-
 > AppDataGoogleAppListingsCategoriesResponseInfo googleAppListingsCategories()
+
+
 
 This endpoint will provide you with a full list of app categories available on Google Play. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_listings/categories/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2088,7 +2148,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2101,33 +2160,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppListingsSearchLive"></a>
-
 # **googleAppListingsSearchLive**
-
 > AppDataGoogleAppListingsSearchLiveResponseInfo googleAppListingsSearchLive(appDataGoogleAppListingsSearchLiveRequestInfo)
+
+
 
 This endpoint will provide you with a list of apps published on Google Play along with additional information: its ID, icon, reviews count, rating, price, and other data. The results are specific to the title, description, and categories parameters specified in the API request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_listings/search/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2171,33 +2228,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppReviewsTaskGetAdvanced"></a>
-
 # **googleAppReviewsTaskGetAdvanced**
-
 > AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo googleAppReviewsTaskGetAdvanced(id)
+
+
 
 This endpoint will provide you with feedback data on applications listed on the Google Play platform, including review ratings, review content, user profile info of each reviewer, review publication dates, and more. The results are specific to the app_id as well as the location and language parameters specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2210,7 +2265,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "553cac36-23fc-4b18-b625-17dc08477224"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "9567f0fb-73c1-4f27-9e7d-59ed0cf43295"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo result = apiInstance.googleAppReviewsTaskGetAdvanced(id);
       System.out.println(result);
@@ -2241,33 +2296,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppReviewsTaskGetHtml"></a>
-
 # **googleAppReviewsTaskGetHtml**
-
 > AppDataGoogleAppReviewsTaskGetHtmlResponseInfo googleAppReviewsTaskGetHtml(id)
+
+
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/html/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2280,7 +2333,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "8e323172-0c6d-40b3-8691-a4c065df4a5d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "1a80739a-a354-4c73-9775-9c9a405216fc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppReviewsTaskGetHtmlResponseInfo result = apiInstance.googleAppReviewsTaskGetHtml(id);
       System.out.println(result);
@@ -2311,33 +2364,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppReviewsTaskPost"></a>
-
 # **googleAppReviewsTaskPost**
-
 > AppDataGoogleAppReviewsTaskPostResponseInfo googleAppReviewsTaskPost(appDataGoogleAppReviewsTaskPostRequestInfo)
+
+
 
 ‌‌ This endpoint will provide you with reviews published on the Google Play platform for the app specified in the app_id field. The returned results are specific to the indicated language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2381,33 +2432,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppReviewsTasksReady"></a>
-
 # **googleAppReviewsTasksReady**
-
 > AppDataGoogleAppReviewsTasksReadyResponseInfo googleAppReviewsTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2435,7 +2484,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2448,33 +2496,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppSearchesTaskGetAdvanced"></a>
-
 # **googleAppSearchesTaskGetAdvanced**
-
 > AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo googleAppSearchesTaskGetAdvanced(id)
+
+
 
 This endpoint will provide you with a list of apps ranking on Google Play for the keyword specified in a POST request. You will also receive additional information about each application: its ID, icon, reviews count, rating, price, and other data. The results are specific to the keyword as well as location and language parameters specified in the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/advanced/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2487,7 +2533,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "4b9f7e0a-d017-4e35-9c73-d06a2c4af023"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "7e6d246b-acc5-4cb6-9e0b-191a72b242fc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo result = apiInstance.googleAppSearchesTaskGetAdvanced(id);
       System.out.println(result);
@@ -2518,33 +2564,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppSearchesTaskGetHtml"></a>
-
 # **googleAppSearchesTaskGetHtml**
-
 > AppDataGoogleAppSearchesTaskGetHtmlResponseInfo googleAppSearchesTaskGetHtml(id)
+
+
 
 Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/task_get/html/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2557,7 +2601,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "9fae2269-f411-4638-b2a7-34a6be0d78c1"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "6bc59e79-f842-45c8-bb85-f7f364cbbd2f"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppSearchesTaskGetHtmlResponseInfo result = apiInstance.googleAppSearchesTaskGetHtml(id);
       System.out.println(result);
@@ -2588,33 +2632,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppSearchesTaskPost"></a>
-
 # **googleAppSearchesTaskPost**
+> AppDataGoogleAppSearchesTaskPostResponseInfo googleAppSearchesTaskPost(appDataGoogleAppSearchesTaskPostRequestInfo)
 
-> AppDataGoogleAppSearchesTaskPostResponseInfo googleAppSearchesTaskPost(appDataTaskRequestInfo)
+
 
 ‌‌ This endpoint will provide you with a list of apps ranking on Google Play for the specified keyword. The returned results are specific to the indicated keyword, as well as the language and location parameters. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/task_post/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2627,9 +2669,9 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    List<AppDataTaskRequestInfo> appDataTaskRequestInfo = Arrays.asList(); // List<AppDataTaskRequestInfo> | 
+    List<AppDataGoogleAppSearchesTaskPostRequestInfo> appDataGoogleAppSearchesTaskPostRequestInfo = Arrays.asList(); // List<AppDataGoogleAppSearchesTaskPostRequestInfo> | 
     try {
-      AppDataGoogleAppSearchesTaskPostResponseInfo result = apiInstance.googleAppSearchesTaskPost(appDataTaskRequestInfo);
+      AppDataGoogleAppSearchesTaskPostResponseInfo result = apiInstance.googleAppSearchesTaskPost(appDataGoogleAppSearchesTaskPostRequestInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#googleAppSearchesTaskPost");
@@ -2646,7 +2688,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **appDataTaskRequestInfo** | [**List&lt;AppDataTaskRequestInfo&gt;**](AppDataTaskRequestInfo.md)|  | [optional] |
+| **appDataGoogleAppSearchesTaskPostRequestInfo** | [**List&lt;AppDataGoogleAppSearchesTaskPostRequestInfo&gt;**](AppDataGoogleAppSearchesTaskPostRequestInfo.md)|  | [optional] |
 
 ### Return type
 
@@ -2658,33 +2700,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleAppSearchesTasksReady"></a>
-
 # **googleAppSearchesTasksReady**
-
 > AppDataGoogleAppSearchesTasksReadyResponseInfo googleAppSearchesTasksReady()
+
+
 
 ‌ The ‘Tasks Ready’ endpoint is designed to provide you with a list of completed tasks that haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/app_searches/tasks_ready/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2712,7 +2752,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2725,33 +2764,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="googleCategories"></a>
-
 # **googleCategories**
-
 > AppDataGoogleCategoriesResponseInfo googleCategories()
+
+
 
 This endpoint will provide you with a full list of app categories available on Google Play. for more info please visit &#39;https://docs.dataforseo.com/v3/app_data/google/categories/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.AppDataApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.AppDataApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -2779,7 +2816,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -2792,15 +2828,11 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

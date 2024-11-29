@@ -1,16 +1,12 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AmazonAmazonPaidSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank in SERP absolute position among all the elements found in Amazon SERP |  [optional] |
-|**xpath** | **String** | the XPath of the element |  [optional] |
 |**domain** | **String** | Amazon domain |  [optional] |
 |**title** | **String** | product title |  [optional] |
 |**url** | **String** | the URL of the product page |  [optional] |
@@ -26,6 +22,5 @@
 |**isBestSeller** | **Boolean** | “Best Seller” label if the value is true, the product is marked with the “Best Seller” label |  [optional] |
 |**deliveryInfo** | [**AmazonDeliveryInfo**](AmazonDeliveryInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

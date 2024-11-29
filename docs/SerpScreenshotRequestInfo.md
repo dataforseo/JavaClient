@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpScreenshotRequestInfo
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**browserScreenHeight** | **Integer** | height of the browser resolution optional field can be specified in the following range: 240-9999 |  [optional] |
 |**browserScreenScaleFactor** | **Float** | browser scale factor optional field can be specified in the following range: 0.5-3 |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

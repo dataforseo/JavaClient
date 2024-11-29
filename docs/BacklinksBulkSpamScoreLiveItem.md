@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksBulkSpamScoreLiveItem
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**target** | **String** | domain, subdomain or webpage from a POST array |  [optional] |
 |**spamScore** | **Integer** | average spam score the target learn more about how the metric is calculated |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

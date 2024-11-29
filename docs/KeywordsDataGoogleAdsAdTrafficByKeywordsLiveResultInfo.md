@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResultInfo
+
 
 ## Properties
 
@@ -13,7 +12,7 @@
 |**languageCode** | **String** | language code in a POST array if there is no data, then the value is null |  [optional] |
 |**dateInterval** | **String** | forecasting date interval in a POST array |  [optional] |
 |**searchPartners** | **Boolean** | include Google search partners the value you specified when setting the task if true, the results are returned for owned, operated, and syndicated networks across Google and partner sites that host Google search; if false, the results are returned for Google search sites only |  [optional] |
-|**bid** | **Float** | the maximum custom bid the bid you have specified when setting the task represents the price you are willing to pay for an ad the higher value you have specified, the higher metrics and cost you receive in response learn more in this help center article |  [optional] |
+|**bid** | **Long** | the maximum custom bid the bid you have specified when setting the task represents the price you are willing to pay for an ad the higher value you have specified, the higher metrics and cost you receive in response learn more in this help center article |  [optional] |
 |**match** | **String** | keywords match-type can take the following values: exact, broad, phrase |  [optional] |
 |**impressions** | **Float** | projected number of ad impressions number of impressions an ad is projected to get within the specified time period if there is no data, then the value is null learn more about impressions in this help center article |  [optional] |
 |**ctr** | **Double** | projected click through rate (CTR) of the advertisement number of clicks an ad is projected to receive divided by the number of ad impressions; the CTR is projected for the specified time period if there is no data, then the value is null |  [optional] |
@@ -21,6 +20,5 @@
 |**cost** | **Float** | charge for an ad amount that will be charged for running an ad within the specified time period if there is no data, then the value is null |  [optional] |
 |**clicks** | **Float** | number of clicks on an ad number of clicks an ad is projected to get within the specified time period if there is no data, then the value is null |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

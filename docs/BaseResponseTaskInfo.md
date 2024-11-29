@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BaseResponseTaskInfo
+
 
 ## Properties
 
@@ -17,6 +16,5 @@
 |**path** | **List&lt;String&gt;** | URL path |  [optional] |
 |**data** | **Object** | contains the same parameters that you specified in the POST request |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

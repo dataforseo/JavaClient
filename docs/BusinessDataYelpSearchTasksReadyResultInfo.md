@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataYelpSearchTasksReadyResultInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**tag** | **String** | user-defined task identifier |  [optional] |
 |**endpoint** | **String** | URL for collecting the results of the task |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MapsSearchSerpElementItem
+
 
 ## Properties
 
@@ -14,6 +13,7 @@
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**url** | **String** | relevant URL in SERP |  [optional] |
 |**contactUrl** | **String** | URL of the preferred contact page |  [optional] |
+|**contributorUrl** | **String** | URL of the user’s or entity’s Local Guides profile, if available |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**hotelRating** | **Integer** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |
@@ -37,6 +37,5 @@
 |**localJustifications** | [**List&lt;LocalJustificationInfo&gt;**](LocalJustificationInfo.md) | Google local justifications snippets of text that “justify” why the business is showing up for search query |  [optional] |
 |**isDirectoryItem** | **Boolean** | indicates whether this local establishment is a directory |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

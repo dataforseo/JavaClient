@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentItemInfo
+
 
 ## Properties
 
@@ -10,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**text** | **String** | content text |  [optional] |
 |**url** | **String** | page URL displayed in case the text is a link anchor |  [optional] |
+|**urls** | [**List&lt;ContentUrlInfo&gt;**](ContentUrlInfo.md) | contains other URLs and anchors found in the content element |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ServiceOfferingsElement
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**name** | **String** | name of the label example: Delivery |  [optional] |
 |**isAvailable** | **Boolean** | availability of the offering if the value is false, the offering is not available |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

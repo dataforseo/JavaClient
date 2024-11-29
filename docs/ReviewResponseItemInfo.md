@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ReviewResponseItemInfo
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**text** | **String** | the content of response |  [optional] |
 |**timestamp** | **String** | the time of publication |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

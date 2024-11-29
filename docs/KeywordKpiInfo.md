@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordKpiInfo
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**totalCost** | **Long** | total cost of an ad, USD the cost of using the specified keyword and match type during the last month |  [optional] |
 |**averageBid** | **Double** | average bid of the keyword |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

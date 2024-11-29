@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksTimeseriesNewLostSummaryLiveItem
+
 
 ## Properties
 
@@ -17,6 +16,5 @@
 |**newReferringMainDomains** | **Long** | number of new referring main domains number of new referring main domains pointing to the target |  [optional] |
 |**lostReferringMainDomains** | **Long** | number of lost referring main domains number of lost referring main domains of the target |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

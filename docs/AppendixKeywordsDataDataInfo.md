@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixKeywordsDataDataInfo
+
 
 ## Properties
 
@@ -19,13 +18,16 @@
 |**categories** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
 |**bing** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**keywordPerformance** | [**AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo**](AppendixKeywordPerformanceKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordPerformance** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**locationsAndLanguages** | **Double** |  |  [optional] |
 |**googleAds** | [**AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo**](AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**dataforseoTrends** | [**AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo**](AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**clickstreamData** | [**AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo**](AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**audienceEstimation** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
+|**keywordSuggestionsForUrl** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
 |**naver** | [**AppendixNaverKeywordsDataDataInfo**](AppendixNaverKeywordsDataDataInfo.md) |  |  [optional] |
 |**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**keywordIdeasAdsApi** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

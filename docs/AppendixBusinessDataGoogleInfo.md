@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixBusinessDataGoogleInfo
+
 
 ## Properties
 
@@ -13,7 +12,8 @@
 |**hotelInfo** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
 |**hotelSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**reviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**questionsAndAnswers** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**extendedReviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

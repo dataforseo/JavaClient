@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksAvailableFiltersResultInfo
+
 
 ## Properties
 
@@ -19,6 +18,5 @@
 |**domainPagesSummary** | **Map&lt;String, String&gt;** |  |  [optional] |
 |**competitors** | **Map&lt;String, String&gt;** |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BusinessDataTripadvisorReviewsTaskGetResultInfo
+
 
 ## Properties
 
@@ -17,10 +16,10 @@
 |**location** | **String** | location of the local establishment address of the local establishment for which the reviews are collected |  [optional] |
 |**reviewsCount** | **Long** | the total number of reviews |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**ratingDistribution** | **Map&lt;String, Integer&gt;** | rating distribution by votes the distribution of votes across the rating in the range from 1 to 5 |  [optional] |
 |**itemsCount** | **Long** | the number of reviews items in the results array you can get more results by using the depth parameter when setting a task |  [optional] |
 |**items** | [**List&lt;BaseBusinessDataSerpElementItem&gt;**](BaseBusinessDataSerpElementItem.md) | found reviews you can get more results by using the depth parameter when setting a task |  [optional] |
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

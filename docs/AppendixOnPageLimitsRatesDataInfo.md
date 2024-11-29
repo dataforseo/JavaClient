@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixOnPageLimitsRatesDataInfo
+
 
 ## Properties
 
@@ -29,6 +28,5 @@
 |**contentParsing** | **Double** |  |  [optional] |
 |**contentParsingLive** | **Double** |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

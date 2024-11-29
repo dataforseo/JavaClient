@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PriceInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**isPriceRange** | **Boolean** | price is provided as a range indicates whether a price is provided in a range |  [optional] |
 |**displayedPrice** | **String** | price string in the result raw price string as provided in the result |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

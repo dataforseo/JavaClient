@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GoogleShoppingSponsoredCarouselElement
+
 
 ## Properties
 
@@ -20,6 +19,5 @@
 |**shopAdAclk** | **String** | unique ad click referral parameter using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL |  [optional] |
 |**deliveryInfo** | [**DeliveryInfo**](DeliveryInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PeopleAlsoSearch
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**title** | **String** | title of the element in SERP the name of the business entity for which the results are collected |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PageMetrics
+
 
 ## Properties
 
@@ -21,6 +20,5 @@
 |**nonIndexable** | **Integer** | number of non-indexable pages number of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings; you can receive a list of non-indexable URLs using this endpoint |  [optional] |
 |**checks** | **Map&lt;String, Long&gt;** | page-specific on-page check-ups |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

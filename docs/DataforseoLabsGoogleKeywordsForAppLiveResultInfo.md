@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleKeywordsForAppLiveResultInfo
+
 
 ## Properties
 
@@ -14,8 +13,7 @@
 |**languageCode** | **String** | language code in a POST array |  [optional] |
 |**totalCount** | **Long** | total amount of results in our database relevant to your request |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;DataforseoLabsleKeywordsForAppLiveItem&gt;**](DataforseoLabsleKeywordsForAppLiveItem.md) | contains data related to the ranking keywords for the app specified in the app_id field |  [optional] |
+|**items** | [**List&lt;DataforseoLabsGoogleKeywordsForAppLiveItem&gt;**](DataforseoLabsGoogleKeywordsForAppLiveItem.md) | contains data related to the ranking keywords for the app specified in the app_id field |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

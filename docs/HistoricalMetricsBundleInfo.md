@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # HistoricalMetricsBundleInfo
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**localPack** | [**List&lt;HistoricalMetricsInfo&gt;**](HistoricalMetricsInfo.md) | traffic data from the featured snippet results in Google SERP |  [optional] |
 |**featuredSnippet** | [**List&lt;HistoricalMetricsInfo&gt;**](HistoricalMetricsInfo.md) | traffic data from the local pack results in SERP |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

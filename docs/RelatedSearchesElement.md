@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # RelatedSearchesElement
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**imageAlt** | **String** | the alt tag of the product image featured in the results |  [optional] |
 |**imageUrl** | **String** | URL of the product image featured in the results |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

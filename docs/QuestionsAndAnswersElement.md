@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # QuestionsAndAnswersElement
+
 
 ## Properties
 
@@ -12,10 +11,9 @@
 |**url** | **String** | URL |  [optional] |
 |**questionText** | **String** | question included in the item |  [optional] |
 |**answerText** | **String** | answer included in the item |  [optional] |
-|**source** | **String** | web source of the hotel booking element indicates the source of information included in the element |  [optional] |
-|**domain** | **String** | domain where a link points |  [optional] |
+|**source** | **String** | source of the element indicates the source of information included in the top_stories_element |  [optional] |
+|**domain** | **String** | website domain |  [optional] |
 |**votes** | **Integer** | answer upvotes from the source |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

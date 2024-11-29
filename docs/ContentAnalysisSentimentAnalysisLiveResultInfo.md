@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentAnalysisSentimentAnalysisLiveResultInfo
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**positiveConnotationDistribution** | [**PositiveConnotationDistribution**](PositiveConnotationDistribution.md) |  |  [optional] |
 |**sentimentConnotationDistribution** | [**SentimentConnotationDistribution**](SentimentConnotationDistribution.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

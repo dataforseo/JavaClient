@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**backlinks** | **Long** | total number of backlinks the total number of backlinks, including dofollow and nofollow links |  [optional] |
 |**timeUpdate** | **String** | date and time when backlink data was updated in the UTC format: \&quot;yyyy-mm-dd hh-mm-ss +00:00\&quot; example: 2019-11-15 12:57:46 +00:00 |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

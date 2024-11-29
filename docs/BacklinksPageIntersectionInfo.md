@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksPageIntersectionInfo
+
 
 ## Properties
 
@@ -21,7 +20,7 @@
 |**backlinkSpamScore** | **Integer** | spam score of the backlink learn more about how the metric is calculated on this help center page |  [optional] |
 |**rank** | **Integer** | backlink rank rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article |  [optional] |
 |**pageFromRank** | **Integer** | page rank of the referring page page_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article |  [optional] |
-|**domainFromRank** | **Integer** | domain rank of the referring domain domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article |  [optional] |
+|**domainFromRank** | **Integer** | domain rank of the referring domain indicates the rank of the domain at the time our crawler last saw the backlink; domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article |  [optional] |
 |**domainFromPlatformType** | **List&lt;String&gt;** | platform types of the referring domain example: \&quot;cms\&quot;, \&quot;blogs\&quot; |  [optional] |
 |**domainFromIsIp** | **Boolean** | indicates if the domain is IP if true, the domain functions as an IP address and does not have a domain name |  [optional] |
 |**domainFromIp** | **String** | IP address of the referring domain |  [optional] |
@@ -54,6 +53,5 @@
 |**isIndirectLink** | **Boolean** | indicates whether the backlink is an indirect link if true, the backlink is an indirect link pointing to a page that either redirects to url_to, or points to a canonical page |  [optional] |
 |**indirectLinkPath** | [**List&lt;Redirect&gt;**](Redirect.md) | indirect link path indicates a URL or a sequence of URLs that lead to url_to |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

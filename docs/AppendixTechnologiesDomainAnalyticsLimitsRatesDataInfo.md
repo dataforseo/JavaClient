@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo
+
 
 ## Properties
 
@@ -18,6 +17,5 @@
 |**domainsByHtmlTerms** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**technologyStats** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

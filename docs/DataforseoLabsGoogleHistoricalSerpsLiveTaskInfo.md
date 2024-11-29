@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleHistoricalSerpsLiveTaskInfo
+
 
 ## Properties
 
@@ -18,6 +17,5 @@
 |**data** | **Object** | contains the same parameters that you specified in the POST request |  [optional] |
 |**result** | [**List&lt;DataforseoLabsGoogleHistoricalSerpsLiveResultInfo&gt;**](DataforseoLabsGoogleHistoricalSerpsLiveResultInfo.md) | array of results the array includes objects with SERPs for each month within the specified time frame |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

@@ -1,15 +1,14 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) |  [optional] |
-|**spell** | [**SpellInfo**](SpellInfo.md) |  |  [optional] |
+|**keyword** | **String** | keyword keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |  [optional] |
+|**spell** | **String** | correct spelling of the keyword Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword; we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link |  [optional] |
 |**locationCode** | **Integer** | location code in a POST array if there is no data, then the value is null |  [optional] |
 |**languageCode** | **String** | language code in a POST array if there is no data, then the value is null |  [optional] |
 |**searchPartners** | **Boolean** | indicates whether data from partner networks included in the response |  [optional] |
@@ -21,6 +20,5 @@
 |**cpc** | **Float** | cost per click indicates the amount paid for each click on the ad displayed for a given keyword |  [optional] |
 |**monthlySearches** | [**List&lt;MonthlySearches&gt;**](MonthlySearches.md) | monthly searches represents the (approximate) number of searches on this keyword idea (as available for the past twelve months by default), targeted to the specified geographic locations; if there is no data then the value is null |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

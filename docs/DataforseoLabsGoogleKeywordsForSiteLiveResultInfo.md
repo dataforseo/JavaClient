@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DataforseoLabsGoogleKeywordsForSiteLiveResultInfo
+
 
 ## Properties
 
@@ -18,6 +17,5 @@
 |**offsetToken** | **String** | offset token for subsequent requests you can use the string provided in this field to get the subsequent results of the initial task; note: offset_token values are unique for each subsequent task |  [optional] |
 |**items** | [**List&lt;KeywordDataInfo&gt;**](KeywordDataInfo.md) | contains keyword ideas and related data |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

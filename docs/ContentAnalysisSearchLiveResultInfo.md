@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # ContentAnalysisSearchLiveResultInfo
+
 
 ## Properties
 
@@ -13,6 +12,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;ContentAnalysisSearchLiveItem&gt;**](ContentAnalysisSearchLiveItem.md) | contains citations and related data |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

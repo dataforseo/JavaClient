@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PageTiming
+
 
 ## Properties
 
@@ -21,6 +20,5 @@
 |**fetchStart** | **Integer** | time to start downloading the HTML resource the amount of time the browser needs to start downloading a page |  [optional] |
 |**fetchEnd** | **Integer** | time to complete downloading the HTML resource the amount of time the browser needs to complete downloading a page |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

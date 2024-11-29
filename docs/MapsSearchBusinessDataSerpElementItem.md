@@ -1,15 +1,12 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MapsSearchBusinessDataSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from the rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the elements |  [optional] |
 |**domain** | **String** | domain of the business entity |  [optional] |
 |**title** | **String** | directory title can take the following values: At this place, Directory |  [optional] |
 |**url** | **String** | URL to view the menu |  [optional] |
@@ -27,7 +24,7 @@
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |
 |**hotelRating** | **Integer** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
 |**categoryIds** | **List&lt;String&gt;** | global category IDs universal category IDs that do not change based on the selected country |  [optional] |
-|**workHours** | [**WorkInfo**](WorkInfo.md) |  |  [optional] |
+|**workHours** | [**WorkHours**](WorkHours.md) |  |  [optional] |
 |**featureId** | **String** | the unique identifier of the element in SERP learn more about the identifier in this help center article |  [optional] |
 |**cid** | **String** | google-defined client id unique id of a local establishment; can be used with Google Reviews API to get a full list of reviews learn more about the identifier in this help center article |  [optional] |
 |**latitude** | **Float** | latitude coordinate of the local establishments in google maps example: \&quot;latitude\&quot;: 51.584091 |  [optional] |
@@ -36,6 +33,5 @@
 |**localJustifications** | **List&lt;String&gt;** | Google local justifications snippets of text that “justify” why the business is showing up for search query |  [optional] |
 |**isDirectoryItem** | **Boolean** | business establishment is a part of the directory indicates whether the business establishment is a part of the directory; if true, the item is a part of the larger directory of businesses with the same address (e.g., a mall or a business centre); note: if the business establishment is a parent item in the directory, the value will be null |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

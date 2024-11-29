@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PageMetaInfo
+
 
 ## Properties
 
@@ -39,6 +38,5 @@
 |**socialMediaTags** | **Map&lt;String, String&gt;** | object of social media tags found on the page contains social media tags and their content supported tags include but are not limited to Open Graph and Twitter card |  [optional] |
 |**brokenHtml** | [**OnPageResourceIssueInfo**](OnPageResourceIssueInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

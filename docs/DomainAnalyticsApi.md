@@ -1,7 +1,3 @@
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")
-
 # DomainAnalyticsApi
 
 All URIs are relative to *https://api.dataforseo.com*
@@ -23,24 +19,24 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**whoisAvailableFilters**](DomainAnalyticsApi.md#whoisAvailableFilters) | **GET** /v3/domain_analytics/whois/available_filters |  |
 | [**whoisOverviewLive**](DomainAnalyticsApi.md#whoisOverviewLive) | **POST** /v3/domain_analytics/whois/overview/live |  |
 
+
 <a id="domainAnalyticsErrors"></a>
-
 # **domainAnalyticsErrors**
-
 > DomainAnalyticsErrorsResponseInfo domainAnalyticsErrors(domainAnalyticsErrorsRequestInfo)
 
-By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 24 hours. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
+
+
+By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -84,33 +80,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="domainAnalyticsIdList"></a>
-
 # **domainAnalyticsIdList**
-
 > DomainAnalyticsIdListResponseInfo domainAnalyticsIdList(domainAnalyticsIdListRequestInfo)
+
+
 
 This endpoint is designed to provide you with the list of IDs and metadata of the completed Domain Analytics tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -154,33 +148,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="domainAnalyticsTechnologiesLanguages"></a>
-
 # **domainAnalyticsTechnologiesLanguages**
-
 > DomainAnalyticsTechnologiesLanguagesResponseInfo domainAnalyticsTechnologiesLanguages()
+
+
 
 You will receive the list of languages by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -208,7 +200,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -221,33 +212,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="domainAnalyticsTechnologiesLocations"></a>
-
 # **domainAnalyticsTechnologiesLocations**
-
 > DomainAnalyticsTechnologiesLocationsResponseInfo domainAnalyticsTechnologiesLocations()
+
+
 
 You will receive the list of locations by this API call. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -275,7 +264,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -288,33 +276,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesAggregationTechnologiesLive"></a>
-
 # **technologiesAggregationTechnologiesLive**
-
 > DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo technologiesAggregationTechnologiesLive(domainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo)
+
+
 
 ‌‌ The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -358,33 +344,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesAvailableFilters"></a>
-
 # **technologiesAvailableFilters**
-
 > DomainAnalyticsTechnologiesAvailableFiltersResponseInfo technologiesAvailableFilters()
+
+
 
 ‌‌ Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -412,7 +396,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -425,33 +408,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesDomainTechnologiesLive"></a>
-
 # **technologiesDomainTechnologiesLive**
-
 > DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo technologiesDomainTechnologiesLive(domainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo)
+
+
 
 ‌‌ Using this endpoint you will get a list of technologies used in a particular domain. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -495,33 +476,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesDomainsByHtmlTermsLive"></a>
-
 # **technologiesDomainsByHtmlTermsLive**
-
 > DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo technologiesDomainsByHtmlTermsLive(domainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo)
+
+
 
 ‌‌ This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -565,33 +544,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesDomainsByTechnologyLive"></a>
-
 # **technologiesDomainsByTechnologyLive**
-
 > DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo technologiesDomainsByTechnologyLive(domainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo)
+
+
 
 ‌‌ This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -635,33 +612,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesTechnologies"></a>
-
 # **technologiesTechnologies**
-
 > DomainAnalyticsTechnologiesTechnologiesResponseInfo technologiesTechnologies()
+
+
 
 This endpoint will provide you with the full list of available technologies structured by technology groups and categories each particular technology belongs to. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -689,7 +664,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -702,33 +676,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesTechnologiesSummaryLive"></a>
-
 # **technologiesTechnologiesSummaryLive**
-
 > DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo technologiesTechnologiesSummaryLive(domainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo)
+
+
 
 ‌‌ The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -772,33 +744,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="technologiesTechnologyStatsLive"></a>
-
 # **technologiesTechnologyStatsLive**
-
 > DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo technologiesTechnologyStatsLive(domainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo)
+
+
 
 ‌‌ The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -842,33 +812,31 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="whoisAvailableFilters"></a>
-
 # **whoisAvailableFilters**
-
 > DomainAnalyticsWhoisAvailableFiltersResponseInfo whoisAvailableFilters()
+
+
 
 ‌‌ Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -896,7 +864,6 @@ public class Example {
 ```
 
 ### Parameters
-
 This endpoint does not need any parameter.
 
 ### Return type
@@ -909,33 +876,31 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
-- **Content-Type**: Not defined
-- **Accept**: application/json
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
 <a id="whoisOverviewLive"></a>
-
 # **whoisOverviewLive**
-
 > DomainAnalyticsWhoisOverviewLiveResponseInfo whoisOverviewLive(domainAnalyticsWhoisOverviewLiveRequestInfo)
+
+
 
 ‌ This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash&#39;
 
 ### Example
-
 ```java
 // Import classes:
-import io.github.dataforseo.dataforseo_client.ApiClient;
-import io.github.dataforseo.dataforseo_client.ApiException;
-import io.github.dataforseo.dataforseo_client.Configuration;
-import io.github.dataforseo.dataforseo_client.auth.*;
-import io.github.dataforseo.dataforseo_client.models.*;
-import io.github.dataforseo.dataforseo_client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DomainAnalyticsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -979,15 +944,11 @@ public class Example {
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json
+ - **Content-Type**: application/json
+ - **Accept**: application/json
 
 ### HTTP response details
-
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-[root](./../ "root") / [docs](./ "docs")
-
-[[Back to README.md]](./../README.md "[Back to README.md]")

@@ -1,6 +1,4 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # DomainAnalyticsTechnologiesTechnologyStatsLiveItem
 
@@ -17,6 +15,5 @@ items array
 |**languages** | **Map&lt;String, Long&gt;** | distribution of websites by language contains language codes and number of websites per language |  [optional] |
 |**domainsRank** | **Map&lt;String, Long&gt;** | distribution of websites by backlink rank contains domain rank ranges and number of websites per range learn more about rank and how it is calculated in this help center article |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

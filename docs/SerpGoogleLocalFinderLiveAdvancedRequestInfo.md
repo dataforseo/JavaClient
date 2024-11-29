@@ -1,18 +1,17 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # SerpGoogleLocalFinderLiveAdvancedRequestInfo
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keyword** | **String** | keyword required field you can specify up to 700 symbols in the keyword field all %## will be decoded (plus symbol ‘+’ will be decoded to a space character) if you need to use the “%” symbol for your keyword, please specify it as “%25”; if you need to use the “+” symbol for your keyword, please specify it as “%2B” |  [optional] |
+|**keyword** | **String** | keyword required field you can specify up to 700 characters in the keyword field all %## will be decoded (plus character ‘+’ will be decoded to a space character) if you need to use the “%” character for your keyword, please specify it as “%25”; if you need to use the “+” character for your keyword, please specify it as “%2B” learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article |  [optional] |
 |**priority** | **Integer** | task priority optional field can take the following values: 1 – normal execution priority (set by default) 2 – high execution priority You will be additionally charged for the tasks with high execution priority. The cost can be calculated on the Pricing page. |  [optional] |
 |**locationName** | **String** | full name of search engine location required field if you don’t specify location_code or location_coordinate if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations example: London,England,United Kingdom |  [optional] |
 |**locationCode** | **Integer** | search engine location code required field if you don’t specify location_name or location_coordinate if you use this field, you don’t need to specify location_name or location_coordinate you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations example: 2840 |  [optional] |
-|**locationCoordinate** | **String** | GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,zoom” format if “zoom” is not specified, 17z will be applied as a default value the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “zoom”: 4z the maximum value for “zoom”: 18z example: 52.6178549,-155.352142,20z |  [optional] |
+|**locationCoordinate** | **String** | GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code location_coordinate parameter should be specified in the “latitude,longitude,zoom” format if “zoom” is not specified, 9z will be applied as a default value the maximum number of decimal digits for “latitude” and “longitude”: 7 the minimum value for “zoom”: 4z the maximum value for “zoom”: 18z example: 52.6178549,-155.352142,20z |  [optional] |
 |**languageName** | **String** | full name of search engine language required field if you don’t specify language_code if you use this field, you don’t need to specify language_code you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages example: English |  [optional] |
 |**languageCode** | **String** | search engine language code required field if you don’t specify language_name if you use this field, you don’t need to specify language_name you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages example:en |  [optional] |
 |**device** | **String** | device type optional field can take the values:desktop, mobile default value: desktop |  [optional] |
@@ -22,6 +21,5 @@
 |**timeFilter** | **String** | filter results by open hours optional field using this field, you can filter places in the results by the time a place is open for visitors note that Google may also provide results that do not match this filter possible values: \&quot;open_now\&quot;, \&quot;24_hours\&quot;, \&quot;$day_value\&quot;, \&quot;$day_value;$time_value\&quot;; instead of $day_value use one of these values: \&quot;monday\&quot;, \&quot;tuesday\&quot;, \&quot;wednesday\&quot;, \&quot;thursday\&quot;, \&quot;friday\&quot;, \&quot;saturday\&quot;, \&quot;sunday\&quot;; instead of $time_value use one of these values: \&quot;00\&quot;, \&quot;01\&quot;, \&quot;02\&quot;, \&quot;03\&quot;, \&quot;04\&quot;, \&quot;05\&quot;, \&quot;06\&quot;, \&quot;07\&quot;, \&quot;08\&quot;, \&quot;09\&quot;, \&quot;10\&quot;, \&quot;11\&quot;, \&quot;12\&quot;, \&quot;13\&quot;, \&quot;14\&quot;, \&quot;15\&quot;, \&quot;16\&quot;, \&quot;17\&quot;, \&quot;18\&quot;, \&quot;19\&quot;, \&quot;20\&quot;, \&quot;21\&quot;, \&quot;22\&quot;, \&quot;23\&quot; example: \&quot;tuesday;18\&quot; |  [optional] |
 |**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

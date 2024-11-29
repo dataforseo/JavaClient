@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # OnPageMicrodataResultInfo
+
 
 ## Properties
 
@@ -14,6 +13,5 @@
 |**itemsCount** | **Long** | number of items in the results array |  [optional] |
 |**items** | [**List&lt;OnPageMicrodataItem&gt;**](OnPageMicrodataItem.md) | items array |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

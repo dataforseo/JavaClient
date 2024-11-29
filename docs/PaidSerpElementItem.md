@@ -1,19 +1,14 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # PaidSerpElementItem
+
 
 ## Properties
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rankGroup** | **Integer** | group rank in SERP position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank in SERP absolute position among all the elements in SERP |  [optional] |
-|**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
-|**xpath** | **String** | the XPath of the element |  [optional] |
 |**title** | **String** | title of the result in SERP |  [optional] |
-|**domain** | **String** | domain where a link points |  [optional] |
+|**domain** | **String** | domain name of the reference |  [optional] |
 |**breadcrumb** | **String** | breadcrumb in SERP |  [optional] |
 |**isImage** | **Boolean** | indicates whether the element contains an image |  [optional] |
 |**isVideo** | **Boolean** | indicates whether the element contains a video |  [optional] |
@@ -28,6 +23,5 @@
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 |**websiteName** | **String** | website name in SERP |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

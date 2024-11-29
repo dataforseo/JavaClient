@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # GooglePlayMetricsBundleInfo
+
 
 ## Properties
 
@@ -10,6 +9,5 @@
 |------------ | ------------- | ------------- | -------------|
 |**googlePlaySearchOrganic** | [**AppMetricsInfo**](AppMetricsInfo.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

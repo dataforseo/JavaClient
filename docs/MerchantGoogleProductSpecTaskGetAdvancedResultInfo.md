@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # MerchantGoogleProductSpecTaskGetAdvancedResultInfo
+
 
 ## Properties
 
@@ -23,6 +22,5 @@
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;BaseMerchantSerpElementItem&gt;**](BaseMerchantSerpElementItem.md) | items on the product specification page contains all product attributes and related data listed on the product specification page |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

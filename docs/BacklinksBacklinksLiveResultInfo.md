@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksBacklinksLiveResultInfo
+
 
 ## Properties
 
@@ -16,6 +15,5 @@
 |**items** | [**List&lt;BacklinksBacklinksLiveItem&gt;**](BacklinksBacklinksLiveItem.md) | contains relevant backlinks and referring domains data |  [optional] |
 |**searchAfterToken** | **String** | token for subsequent requests by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task; search_after_token values are unique for each subsequent task |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

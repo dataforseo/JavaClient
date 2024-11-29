@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksCompetitorsLiveResultInfo
+
 
 ## Properties
 
@@ -12,6 +11,5 @@
 |**itemsCount** | **Long** | number of items in the items array |  [optional] |
 |**items** | [**List&lt;BacklinksCompetitorsLiveItem&gt;**](BacklinksCompetitorsLiveItem.md) | items array |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

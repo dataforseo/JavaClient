@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # BacklinksDomainPagesLiveItem
+
 
 ## Properties
 
@@ -27,6 +26,5 @@
 |**meta** | [**BacklinksPageMeta**](BacklinksPageMeta.md) |  |  [optional] |
 |**pageSummary** | [**PageSummary**](PageSummary.md) |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

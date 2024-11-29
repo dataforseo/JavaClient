@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # KeywordsDataBingSearchVolumeLiveResultInfo
+
 
 ## Properties
 
@@ -19,6 +18,5 @@
 |**categories** | **List&lt;String&gt;** | product and service categories our API doesn’t return categories for this endpoint: the parameter will always equal null |  [optional] |
 |**monthlySearches** | [**List&lt;MonthlySearches&gt;**](MonthlySearches.md) | monthly searches represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations if there is no data then the value is null |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

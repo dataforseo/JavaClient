@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppMetricsInfo
+
 
 ## Properties
 
@@ -15,6 +14,5 @@
 |**count** | **Long** | total count of Amazon organic SERPs that contain the product |  [optional] |
 |**searchVolume** | **Long** | total search volume of the product’s ranking keywords in organic SERP |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

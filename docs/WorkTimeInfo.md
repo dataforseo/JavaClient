@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # WorkTimeInfo
+
 
 ## Properties
 
@@ -11,6 +10,5 @@
 |**hour** | **Integer** | hours in the 24-hour format |  [optional] |
 |**minute** | **Integer** | minutes |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+

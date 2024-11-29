@@ -1,8 +1,7 @@
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
 
 # AppendixMerchantLimitsRatesDataInfo
+
 
 ## Properties
 
@@ -14,7 +13,7 @@
 |**languages** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
 |**reviews** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**tasksReady** | **Double** |  |  [optional] |
 
-[root](./../ "root") / [docs](./ "docs")
 
-[[Back to README.md]](./../README.md "[Back to README.md]")
+
