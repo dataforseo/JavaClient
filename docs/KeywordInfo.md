@@ -17,6 +17,7 @@
 |**highTopOfPageBid** | **Float** | maximum bid for the ad to be displayed at the top of the first page indicates the value greater than about 80% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers) the value may differ depending on the location specified in a POST request |  [optional] |
 |**categories** | **List&lt;Integer&gt;** | product and service categories you can download the full list of possible categories |  [optional] |
 |**monthlySearches** | [**List&lt;MonthlySearches&gt;**](MonthlySearches.md) | monthly searches represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations |  [optional] |
+|**searchVolumeTrend** | [**SearchVolumeTrendInfo**](SearchVolumeTrendInfo.md) |  |  [optional] |
 
 
 

@@ -2182,6 +2182,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SearchIntentInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SearchVolumeHistoryItemInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SearchVolumeHistorySearchInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SearchVolumeTrendInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SentimentConnotationDistribution.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SerpAiSummaryItem.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SerpAiSummaryRequestInfo.CustomTypeAdapterFactory());

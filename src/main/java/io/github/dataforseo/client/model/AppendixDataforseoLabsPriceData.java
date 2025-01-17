@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDataforseoLabsPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDataforseoLabsPriceData {
   public static final String SERIALIZED_NAME_APP_COMPETITORS = "app_competitors";
   @SerializedName(SERIALIZED_NAME_APP_COMPETITORS)

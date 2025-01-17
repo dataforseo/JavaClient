@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixGoogleBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixGoogleBusinessDataPriceData {
   public static final String SERIALIZED_NAME_EXTENDED_REVIEWS = "extended_reviews";
   @SerializedName(SERIALIZED_NAME_EXTENDED_REVIEWS)

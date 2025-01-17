@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
+import io.github.dataforseo.client.model.SearchVolumeTrendInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-28T21:14:57.172884200+02:00[Europe/Helsinki]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -93,6 +94,10 @@ public class KeywordInfo {
   public static final String SERIALIZED_NAME_MONTHLY_SEARCHES = "monthly_searches";
   @SerializedName(SERIALIZED_NAME_MONTHLY_SEARCHES)
   private List<MonthlySearches> monthlySearches;
+
+  public static final String SERIALIZED_NAME_SEARCH_VOLUME_TREND = "search_volume_trend";
+  @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_TREND)
+  private SearchVolumeTrendInfo searchVolumeTrend;
 
   public KeywordInfo() {
   }
@@ -302,6 +307,25 @@ public class KeywordInfo {
     this.monthlySearches = monthlySearches;
   }
 
+
+  public KeywordInfo searchVolumeTrend(SearchVolumeTrendInfo searchVolumeTrend) {
+    this.searchVolumeTrend = searchVolumeTrend;
+    return this;
+  }
+
+  /**
+   * Get searchVolumeTrend
+   * @return searchVolumeTrend
+   */
+  @javax.annotation.Nullable
+  public SearchVolumeTrendInfo getSearchVolumeTrend() {
+    return searchVolumeTrend;
+  }
+
+  public void setSearchVolumeTrend(SearchVolumeTrendInfo searchVolumeTrend) {
+    this.searchVolumeTrend = searchVolumeTrend;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -366,7 +390,8 @@ public class KeywordInfo {
         Objects.equals(this.lowTopOfPageBid, keywordInfo.lowTopOfPageBid) &&
         Objects.equals(this.highTopOfPageBid, keywordInfo.highTopOfPageBid) &&
         Objects.equals(this.categories, keywordInfo.categories) &&
-        Objects.equals(this.monthlySearches, keywordInfo.monthlySearches)&&
+        Objects.equals(this.monthlySearches, keywordInfo.monthlySearches) &&
+        Objects.equals(this.searchVolumeTrend, keywordInfo.searchVolumeTrend)&&
         Objects.equals(this.additionalProperties, keywordInfo.additionalProperties);
   }
 
@@ -376,7 +401,7 @@ public class KeywordInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, lastUpdatedTime, competition, competitionLevel, cpc, searchVolume, lowTopOfPageBid, highTopOfPageBid, categories, monthlySearches, additionalProperties);
+    return Objects.hash(seType, lastUpdatedTime, competition, competitionLevel, cpc, searchVolume, lowTopOfPageBid, highTopOfPageBid, categories, monthlySearches, searchVolumeTrend, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -400,6 +425,7 @@ public class KeywordInfo {
     sb.append("    highTopOfPageBid: ").append(toIndentedString(highTopOfPageBid)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    monthlySearches: ").append(toIndentedString(monthlySearches)).append("\n");
+    sb.append("    searchVolumeTrend: ").append(toIndentedString(searchVolumeTrend)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -433,6 +459,7 @@ public class KeywordInfo {
     openapiFields.add("high_top_of_page_bid");
     openapiFields.add("categories");
     openapiFields.add("monthly_searches");
+    openapiFields.add("search_volume_trend");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -477,6 +504,10 @@ public class KeywordInfo {
             MonthlySearches.validateJsonElement(jsonArraymonthlySearches.get(i));
           };
         }
+      }
+      // validate the optional field `search_volume_trend`
+      if (jsonObj.get("search_volume_trend") != null && !jsonObj.get("search_volume_trend").isJsonNull()) {
+        SearchVolumeTrendInfo.validateJsonElement(jsonObj.get("search_volume_trend"));
       }
   }
 

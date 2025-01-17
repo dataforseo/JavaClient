@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
+import io.github.dataforseo.client.model.SearchVolumeTrendInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -119,6 +120,14 @@ public class KeywordInfoTest {
     @Test
     public void monthlySearchesTest() {
         // TODO: test monthlySearches
+    }
+
+    /**
+     * Test the property 'searchVolumeTrend'
+     */
+    @Test
+    public void searchVolumeTrendTest() {
+        // TODO: test searchVolumeTrend
     }
 
 }
