@@ -124,13 +124,13 @@ public class App {
 
     try {
 
-      SerpTaskRequestInfo task = new SerpTaskRequestInfo();
+      SerpGoogleOrganicTaskPostRequestInfo task = new SerpGoogleOrganicTaskPostRequestInfo();
 
       task.setLocationCode(2840);
       task.setLanguageCode("en");
       task.setKeyword("albert einstein");
 
-      List<SerpTaskRequestInfo> serpTaskRequestInfo = new ArrayList<SerpTaskRequestInfo>();
+      List<SerpGoogleOrganicTaskPostRequestInfo> serpTaskRequestInfo = new ArrayList<SerpGoogleOrganicTaskPostRequestInfo>();
       serpTaskRequestInfo.add(task);
 
       SerpGoogleOrganicTaskPostResponseInfo taskPost = apiInstance.googleOrganicTaskPost(serpTaskRequestInfo);
