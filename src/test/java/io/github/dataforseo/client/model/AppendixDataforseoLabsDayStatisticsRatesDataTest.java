@@ -313,19 +313,19 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
      * Test the property 'historicalBulkTrafficEstimation'
      */
     @Test
     public void historicalBulkTrafficEstimationTest() {
         // TODO: test historicalBulkTrafficEstimation
+    }
+
+    /**
+     * Test the property 'categoriesForKeywords'
+     */
+    @Test
+    public void categoriesForKeywordsTest() {
+        // TODO: test categoriesForKeywords
     }
 
     /**
@@ -345,6 +345,30 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
+    }
+
+    /**
+     * Test the property 'topGoogleSearches'
+     */
+    @Test
+    public void topGoogleSearchesTest() {
+        // TODO: test topGoogleSearches
+    }
+
+    /**
+     * Test the property 'languages'
+     */
+    @Test
+    public void languagesTest() {
+        // TODO: test languages
+    }
+
+    /**
      * Test the property 'availableFilters'
      */
     @Test
@@ -358,30 +382,6 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     @Test
     public void amazonTest() {
         // TODO: test amazon
-    }
-
-    /**
-     * Test the property 'languages'
-     */
-    @Test
-    public void languagesTest() {
-        // TODO: test languages
-    }
-
-    /**
-     * Test the property 'categoriesForKeywords'
-     */
-    @Test
-    public void categoriesForKeywordsTest() {
-        // TODO: test categoriesForKeywords
-    }
-
-    /**
-     * Test the property 'topGoogleSearches'
-     */
-    @Test
-    public void topGoogleSearchesTest() {
-        // TODO: test topGoogleSearches
     }
 
 }

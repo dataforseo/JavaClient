@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleSubdomainsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -84,6 +84,10 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
   public static final String SERIALIZED_NAME_HISTORICAL_SERP_MODE = "historical_serp_mode";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_SERP_MODE)
   private String historicalSerpMode;
+
+  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
+  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
+  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_FILTERS = "filters";
   @SerializedName(SERIALIZED_NAME_FILTERS)
@@ -268,6 +272,25 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleSubdomainsLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+    return this;
+  }
+
+  /**
+   * ignore highly similar keywords optional field if set to true, only core keywords will be returned, all highly similar keywords will be excluded; default value: false
+   * @return ignoreSynonyms
+   */
+  @javax.annotation.Nullable
+  public Boolean getIgnoreSynonyms() {
+    return ignoreSynonyms;
+  }
+
+  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+  }
+
+
   public DataforseoLabsGoogleSubdomainsLiveRequestInfo filters(List<Object> filters) {
     this.filters = filters;
     return this;
@@ -441,6 +464,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
         Objects.equals(this.itemTypes, dataforseoLabsGoogleSubdomainsLiveRequestInfo.itemTypes) &&
         Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleSubdomainsLiveRequestInfo.includeClickstreamData) &&
         Objects.equals(this.historicalSerpMode, dataforseoLabsGoogleSubdomainsLiveRequestInfo.historicalSerpMode) &&
+        Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleSubdomainsLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.filters, dataforseoLabsGoogleSubdomainsLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsGoogleSubdomainsLiveRequestInfo.orderBy) &&
         Objects.equals(this.limit, dataforseoLabsGoogleSubdomainsLiveRequestInfo.limit) &&
@@ -455,7 +479,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, historicalSerpMode, filters, orderBy, limit, offset, tag, additionalProperties);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, historicalSerpMode, ignoreSynonyms, filters, orderBy, limit, offset, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -477,6 +501,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
     sb.append("    historicalSerpMode: ").append(toIndentedString(historicalSerpMode)).append("\n");
+    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
@@ -513,6 +538,7 @@ public class DataforseoLabsGoogleSubdomainsLiveRequestInfo {
     openapiFields.add("item_types");
     openapiFields.add("include_clickstream_data");
     openapiFields.add("historical_serp_mode");
+    openapiFields.add("ignore_synonyms");
     openapiFields.add("filters");
     openapiFields.add("order_by");
     openapiFields.add("limit");

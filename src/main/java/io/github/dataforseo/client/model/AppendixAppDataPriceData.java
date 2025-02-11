@@ -19,6 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AppendixAppListingsAppDataPriceData;
 import io.github.dataforseo.client.model.AppendixPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixProductGoogleMerchantPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
@@ -51,11 +52,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixAppDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixAppDataPriceData {
   public static final String SERIALIZED_NAME_APP_INFO = "app_info";
   @SerializedName(SERIALIZED_NAME_APP_INFO)
   private AppendixProductGoogleMerchantPriceDataInfo appInfo;
+
+  public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
+  @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
+  private AppendixAppListingsAppDataPriceData appListings;
 
   public static final String SERIALIZED_NAME_APP_LIST = "app_list";
   @SerializedName(SERIALIZED_NAME_APP_LIST)
@@ -108,6 +113,25 @@ public class AppendixAppDataPriceData {
 
   public void setAppInfo(AppendixProductGoogleMerchantPriceDataInfo appInfo) {
     this.appInfo = appInfo;
+  }
+
+
+  public AppendixAppDataPriceData appListings(AppendixAppListingsAppDataPriceData appListings) {
+    this.appListings = appListings;
+    return this;
+  }
+
+  /**
+   * Get appListings
+   * @return appListings
+   */
+  @javax.annotation.Nullable
+  public AppendixAppListingsAppDataPriceData getAppListings() {
+    return appListings;
+  }
+
+  public void setAppListings(AppendixAppListingsAppDataPriceData appListings) {
+    this.appListings = appListings;
   }
 
 
@@ -318,6 +342,7 @@ public class AppendixAppDataPriceData {
     }
     AppendixAppDataPriceData appendixAppDataPriceData = (AppendixAppDataPriceData) o;
     return Objects.equals(this.appInfo, appendixAppDataPriceData.appInfo) &&
+        Objects.equals(this.appListings, appendixAppDataPriceData.appListings) &&
         Objects.equals(this.appList, appendixAppDataPriceData.appList) &&
         Objects.equals(this.appReviews, appendixAppDataPriceData.appReviews) &&
         Objects.equals(this.appSearches, appendixAppDataPriceData.appSearches) &&
@@ -331,7 +356,7 @@ public class AppendixAppDataPriceData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(appInfo, appList, appReviews, appSearches, categories, errors, languages, locations, tasksReady, additionalProperties);
+    return Objects.hash(appInfo, appListings, appList, appReviews, appSearches, categories, errors, languages, locations, tasksReady, additionalProperties);
   }
 
   @Override
@@ -339,6 +364,7 @@ public class AppendixAppDataPriceData {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppendixAppDataPriceData {\n");
     sb.append("    appInfo: ").append(toIndentedString(appInfo)).append("\n");
+    sb.append("    appListings: ").append(toIndentedString(appListings)).append("\n");
     sb.append("    appList: ").append(toIndentedString(appList)).append("\n");
     sb.append("    appReviews: ").append(toIndentedString(appReviews)).append("\n");
     sb.append("    appSearches: ").append(toIndentedString(appSearches)).append("\n");
@@ -371,6 +397,7 @@ public class AppendixAppDataPriceData {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("app_info");
+    openapiFields.add("app_listings");
     openapiFields.add("app_list");
     openapiFields.add("app_reviews");
     openapiFields.add("app_searches");
@@ -400,6 +427,10 @@ public class AppendixAppDataPriceData {
       // validate the optional field `app_info`
       if (jsonObj.get("app_info") != null && !jsonObj.get("app_info").isJsonNull()) {
         AppendixProductGoogleMerchantPriceDataInfo.validateJsonElement(jsonObj.get("app_info"));
+      }
+      // validate the optional field `app_listings`
+      if (jsonObj.get("app_listings") != null && !jsonObj.get("app_listings").isJsonNull()) {
+        AppendixAppListingsAppDataPriceData.validateJsonElement(jsonObj.get("app_listings"));
       }
       // validate the optional field `app_list`
       if (jsonObj.get("app_list") != null && !jsonObj.get("app_list").isJsonNull()) {

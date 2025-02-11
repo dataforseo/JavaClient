@@ -18,7 +18,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixBusinessDataDayLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixBusinessListingsBusinessDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -105,19 +105,19 @@ public class AppendixAppDataDayStatisticsMoneyDataTest {
     }
 
     /**
-     * Test the property 'tasksReady'
-     */
-    @Test
-    public void tasksReadyTest() {
-        // TODO: test tasksReady
-    }
-
-    /**
      * Test the property 'appListings'
      */
     @Test
     public void appListingsTest() {
         // TODO: test appListings
+    }
+
+    /**
+     * Test the property 'tasksReady'
+     */
+    @Test
+    public void tasksReadyTest() {
+        // TODO: test tasksReady
     }
 
     /**

@@ -41,15 +41,15 @@
 |**appIntersection** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**bulkAppMetrics** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**searchIntent** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
 |**historicalBulkTrafficEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**categoriesForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**availableHistory** | **Double** |  |  [optional] |
 |**status** | **Double** |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
+|**topGoogleSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**languages** | **Double** |  |  [optional] |
 |**availableFilters** | **Double** |  |  [optional] |
 |**amazon** | [**AppendixDataforseoLabsLimitsRatesDataInfo**](AppendixDataforseoLabsLimitsRatesDataInfo.md) |  |  [optional] |
-|**languages** | **Double** |  |  [optional] |
-|**categoriesForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**topGoogleSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

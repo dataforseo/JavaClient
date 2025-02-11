@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsIdListRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsIdListRequestInfo {
   public static final String SERIALIZED_NAME_DATETIME_FROM = "datetime_from";
   @SerializedName(SERIALIZED_NAME_DATETIME_FROM)

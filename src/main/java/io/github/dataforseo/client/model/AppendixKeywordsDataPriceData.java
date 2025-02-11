@@ -19,12 +19,12 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AppendixAKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixBingKeywordsDataPriceData;
 import io.github.dataforseo.client.model.AppendixClickstreamDataKeywordsDataPriceData;
 import io.github.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataPriceData;
 import io.github.dataforseo.client.model.AppendixExploreKeywordsDataPriceData;
 import io.github.dataforseo.client.model.AppendixGoogleAdsKeywordsDataPriceData;
-import io.github.dataforseo.client.model.AppendixKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataPriceData {
   public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
@@ -63,11 +63,11 @@ public class AppendixKeywordsDataPriceData {
 
   public static final String SERIALIZED_NAME_AD_TRAFFIC_BY_KEYWORDS = "ad_traffic_by_keywords";
   @SerializedName(SERIALIZED_NAME_AD_TRAFFIC_BY_KEYWORDS)
-  private AppendixKeywordsDataPriceDataInfo adTrafficByKeywords;
+  private AppendixAKeywordsDataPriceDataInfo adTrafficByKeywords;
 
   public static final String SERIALIZED_NAME_AUDIENCE_ESTIMATION = "audience_estimation";
   @SerializedName(SERIALIZED_NAME_AUDIENCE_ESTIMATION)
-  private AppendixKeywordsDataPriceDataInfo audienceEstimation;
+  private AppendixAKeywordsDataPriceDataInfo audienceEstimation;
 
   public static final String SERIALIZED_NAME_BING = "bing";
   @SerializedName(SERIALIZED_NAME_BING)
@@ -91,19 +91,19 @@ public class AppendixKeywordsDataPriceData {
 
   public static final String SERIALIZED_NAME_KEYWORD_PERFORMANCE = "keyword_performance";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PERFORMANCE)
-  private AppendixKeywordsDataPriceDataInfo keywordPerformance;
+  private AppendixAKeywordsDataPriceDataInfo keywordPerformance;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
-  private AppendixKeywordsDataPriceDataInfo keywordsForKeywords;
+  private AppendixAKeywordsDataPriceDataInfo keywordsForKeywords;
 
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_SITE = "keywords_for_site";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_SITE)
-  private AppendixKeywordsDataPriceDataInfo keywordsForSite;
+  private AppendixAKeywordsDataPriceDataInfo keywordsForSite;
 
   public static final String SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL = "keyword_suggestions_for_url";
   @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL)
-  private AppendixKeywordsDataPriceDataInfo keywordSuggestionsForUrl;
+  private AppendixAKeywordsDataPriceDataInfo keywordSuggestionsForUrl;
 
   public static final String SERIALIZED_NAME_LANGUAGES = "languages";
   @SerializedName(SERIALIZED_NAME_LANGUAGES)
@@ -119,7 +119,7 @@ public class AppendixKeywordsDataPriceData {
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private AppendixKeywordsDataPriceDataInfo searchVolume;
+  private AppendixAKeywordsDataPriceDataInfo searchVolume;
 
   public static final String SERIALIZED_NAME_DATAFORSEO_TRENDS = "dataforseo_trends";
   @SerializedName(SERIALIZED_NAME_DATAFORSEO_TRENDS)
@@ -151,7 +151,7 @@ public class AppendixKeywordsDataPriceData {
   }
 
 
-  public AppendixKeywordsDataPriceData adTrafficByKeywords(AppendixKeywordsDataPriceDataInfo adTrafficByKeywords) {
+  public AppendixKeywordsDataPriceData adTrafficByKeywords(AppendixAKeywordsDataPriceDataInfo adTrafficByKeywords) {
     this.adTrafficByKeywords = adTrafficByKeywords;
     return this;
   }
@@ -161,16 +161,16 @@ public class AppendixKeywordsDataPriceData {
    * @return adTrafficByKeywords
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getAdTrafficByKeywords() {
+  public AppendixAKeywordsDataPriceDataInfo getAdTrafficByKeywords() {
     return adTrafficByKeywords;
   }
 
-  public void setAdTrafficByKeywords(AppendixKeywordsDataPriceDataInfo adTrafficByKeywords) {
+  public void setAdTrafficByKeywords(AppendixAKeywordsDataPriceDataInfo adTrafficByKeywords) {
     this.adTrafficByKeywords = adTrafficByKeywords;
   }
 
 
-  public AppendixKeywordsDataPriceData audienceEstimation(AppendixKeywordsDataPriceDataInfo audienceEstimation) {
+  public AppendixKeywordsDataPriceData audienceEstimation(AppendixAKeywordsDataPriceDataInfo audienceEstimation) {
     this.audienceEstimation = audienceEstimation;
     return this;
   }
@@ -180,11 +180,11 @@ public class AppendixKeywordsDataPriceData {
    * @return audienceEstimation
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getAudienceEstimation() {
+  public AppendixAKeywordsDataPriceDataInfo getAudienceEstimation() {
     return audienceEstimation;
   }
 
-  public void setAudienceEstimation(AppendixKeywordsDataPriceDataInfo audienceEstimation) {
+  public void setAudienceEstimation(AppendixAKeywordsDataPriceDataInfo audienceEstimation) {
     this.audienceEstimation = audienceEstimation;
   }
 
@@ -284,7 +284,7 @@ public class AppendixKeywordsDataPriceData {
   }
 
 
-  public AppendixKeywordsDataPriceData keywordPerformance(AppendixKeywordsDataPriceDataInfo keywordPerformance) {
+  public AppendixKeywordsDataPriceData keywordPerformance(AppendixAKeywordsDataPriceDataInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
     return this;
   }
@@ -294,16 +294,16 @@ public class AppendixKeywordsDataPriceData {
    * @return keywordPerformance
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getKeywordPerformance() {
+  public AppendixAKeywordsDataPriceDataInfo getKeywordPerformance() {
     return keywordPerformance;
   }
 
-  public void setKeywordPerformance(AppendixKeywordsDataPriceDataInfo keywordPerformance) {
+  public void setKeywordPerformance(AppendixAKeywordsDataPriceDataInfo keywordPerformance) {
     this.keywordPerformance = keywordPerformance;
   }
 
 
-  public AppendixKeywordsDataPriceData keywordsForKeywords(AppendixKeywordsDataPriceDataInfo keywordsForKeywords) {
+  public AppendixKeywordsDataPriceData keywordsForKeywords(AppendixAKeywordsDataPriceDataInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
     return this;
   }
@@ -313,16 +313,16 @@ public class AppendixKeywordsDataPriceData {
    * @return keywordsForKeywords
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getKeywordsForKeywords() {
+  public AppendixAKeywordsDataPriceDataInfo getKeywordsForKeywords() {
     return keywordsForKeywords;
   }
 
-  public void setKeywordsForKeywords(AppendixKeywordsDataPriceDataInfo keywordsForKeywords) {
+  public void setKeywordsForKeywords(AppendixAKeywordsDataPriceDataInfo keywordsForKeywords) {
     this.keywordsForKeywords = keywordsForKeywords;
   }
 
 
-  public AppendixKeywordsDataPriceData keywordsForSite(AppendixKeywordsDataPriceDataInfo keywordsForSite) {
+  public AppendixKeywordsDataPriceData keywordsForSite(AppendixAKeywordsDataPriceDataInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
     return this;
   }
@@ -332,16 +332,16 @@ public class AppendixKeywordsDataPriceData {
    * @return keywordsForSite
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getKeywordsForSite() {
+  public AppendixAKeywordsDataPriceDataInfo getKeywordsForSite() {
     return keywordsForSite;
   }
 
-  public void setKeywordsForSite(AppendixKeywordsDataPriceDataInfo keywordsForSite) {
+  public void setKeywordsForSite(AppendixAKeywordsDataPriceDataInfo keywordsForSite) {
     this.keywordsForSite = keywordsForSite;
   }
 
 
-  public AppendixKeywordsDataPriceData keywordSuggestionsForUrl(AppendixKeywordsDataPriceDataInfo keywordSuggestionsForUrl) {
+  public AppendixKeywordsDataPriceData keywordSuggestionsForUrl(AppendixAKeywordsDataPriceDataInfo keywordSuggestionsForUrl) {
     this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
     return this;
   }
@@ -351,11 +351,11 @@ public class AppendixKeywordsDataPriceData {
    * @return keywordSuggestionsForUrl
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getKeywordSuggestionsForUrl() {
+  public AppendixAKeywordsDataPriceDataInfo getKeywordSuggestionsForUrl() {
     return keywordSuggestionsForUrl;
   }
 
-  public void setKeywordSuggestionsForUrl(AppendixKeywordsDataPriceDataInfo keywordSuggestionsForUrl) {
+  public void setKeywordSuggestionsForUrl(AppendixAKeywordsDataPriceDataInfo keywordSuggestionsForUrl) {
     this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
   }
 
@@ -417,7 +417,7 @@ public class AppendixKeywordsDataPriceData {
   }
 
 
-  public AppendixKeywordsDataPriceData searchVolume(AppendixKeywordsDataPriceDataInfo searchVolume) {
+  public AppendixKeywordsDataPriceData searchVolume(AppendixAKeywordsDataPriceDataInfo searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -427,11 +427,11 @@ public class AppendixKeywordsDataPriceData {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getSearchVolume() {
+  public AppendixAKeywordsDataPriceDataInfo getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(AppendixKeywordsDataPriceDataInfo searchVolume) {
+  public void setSearchVolume(AppendixAKeywordsDataPriceDataInfo searchVolume) {
     this.searchVolume = searchVolume;
   }
 
@@ -641,11 +641,11 @@ public class AppendixKeywordsDataPriceData {
       }
       // validate the optional field `ad_traffic_by_keywords`
       if (jsonObj.get("ad_traffic_by_keywords") != null && !jsonObj.get("ad_traffic_by_keywords").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("ad_traffic_by_keywords"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("ad_traffic_by_keywords"));
       }
       // validate the optional field `audience_estimation`
       if (jsonObj.get("audience_estimation") != null && !jsonObj.get("audience_estimation").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("audience_estimation"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("audience_estimation"));
       }
       // validate the optional field `bing`
       if (jsonObj.get("bing") != null && !jsonObj.get("bing").isJsonNull()) {
@@ -669,19 +669,19 @@ public class AppendixKeywordsDataPriceData {
       }
       // validate the optional field `keyword_performance`
       if (jsonObj.get("keyword_performance") != null && !jsonObj.get("keyword_performance").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keyword_performance"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keyword_performance"));
       }
       // validate the optional field `keywords_for_keywords`
       if (jsonObj.get("keywords_for_keywords") != null && !jsonObj.get("keywords_for_keywords").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_keywords"));
       }
       // validate the optional field `keywords_for_site`
       if (jsonObj.get("keywords_for_site") != null && !jsonObj.get("keywords_for_site").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keywords_for_site"));
       }
       // validate the optional field `keyword_suggestions_for_url`
       if (jsonObj.get("keyword_suggestions_for_url") != null && !jsonObj.get("keyword_suggestions_for_url").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
       }
       // validate the optional field `languages`
       if (jsonObj.get("languages") != null && !jsonObj.get("languages").isJsonNull()) {
@@ -697,7 +697,7 @@ public class AppendixKeywordsDataPriceData {
       }
       // validate the optional field `search_volume`
       if (jsonObj.get("search_volume") != null && !jsonObj.get("search_volume").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search_volume"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("search_volume"));
       }
       // validate the optional field `dataforseo_trends`
       if (jsonObj.get("dataforseo_trends") != null && !jsonObj.get("dataforseo_trends").isJsonNull()) {

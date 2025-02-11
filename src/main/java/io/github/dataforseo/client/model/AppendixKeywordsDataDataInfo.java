@@ -22,7 +22,6 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixBingKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixInfo;
 import io.github.dataforseo.client.model.AppendixNaverKeywordsDataDataInfo;
@@ -57,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataDataInfo {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -125,11 +124,11 @@ public class AppendixKeywordsDataDataInfo {
 
   public static final String SERIALIZED_NAME_AUDIENCE_ESTIMATION = "audience_estimation";
   @SerializedName(SERIALIZED_NAME_AUDIENCE_ESTIMATION)
-  private AppendixDayLimitsRatesDataInfo audienceEstimation;
+  private AppendixInfo audienceEstimation;
 
   public static final String SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL = "keyword_suggestions_for_url";
   @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL)
-  private AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl;
+  private AppendixInfo keywordSuggestionsForUrl;
 
   public static final String SERIALIZED_NAME_NAVER = "naver";
   @SerializedName(SERIALIZED_NAME_NAVER)
@@ -450,7 +449,7 @@ public class AppendixKeywordsDataDataInfo {
   }
 
 
-  public AppendixKeywordsDataDataInfo audienceEstimation(AppendixDayLimitsRatesDataInfo audienceEstimation) {
+  public AppendixKeywordsDataDataInfo audienceEstimation(AppendixInfo audienceEstimation) {
     this.audienceEstimation = audienceEstimation;
     return this;
   }
@@ -460,16 +459,16 @@ public class AppendixKeywordsDataDataInfo {
    * @return audienceEstimation
    */
   @javax.annotation.Nullable
-  public AppendixDayLimitsRatesDataInfo getAudienceEstimation() {
+  public AppendixInfo getAudienceEstimation() {
     return audienceEstimation;
   }
 
-  public void setAudienceEstimation(AppendixDayLimitsRatesDataInfo audienceEstimation) {
+  public void setAudienceEstimation(AppendixInfo audienceEstimation) {
     this.audienceEstimation = audienceEstimation;
   }
 
 
-  public AppendixKeywordsDataDataInfo keywordSuggestionsForUrl(AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl) {
+  public AppendixKeywordsDataDataInfo keywordSuggestionsForUrl(AppendixInfo keywordSuggestionsForUrl) {
     this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
     return this;
   }
@@ -479,11 +478,11 @@ public class AppendixKeywordsDataDataInfo {
    * @return keywordSuggestionsForUrl
    */
   @javax.annotation.Nullable
-  public AppendixDayLimitsRatesDataInfo getKeywordSuggestionsForUrl() {
+  public AppendixInfo getKeywordSuggestionsForUrl() {
     return keywordSuggestionsForUrl;
   }
 
-  public void setKeywordSuggestionsForUrl(AppendixDayLimitsRatesDataInfo keywordSuggestionsForUrl) {
+  public void setKeywordSuggestionsForUrl(AppendixInfo keywordSuggestionsForUrl) {
     this.keywordSuggestionsForUrl = keywordSuggestionsForUrl;
   }
 
@@ -768,11 +767,11 @@ public class AppendixKeywordsDataDataInfo {
       }
       // validate the optional field `audience_estimation`
       if (jsonObj.get("audience_estimation") != null && !jsonObj.get("audience_estimation").isJsonNull()) {
-        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("audience_estimation"));
+        AppendixInfo.validateJsonElement(jsonObj.get("audience_estimation"));
       }
       // validate the optional field `keyword_suggestions_for_url`
       if (jsonObj.get("keyword_suggestions_for_url") != null && !jsonObj.get("keyword_suggestions_for_url").isJsonNull()) {
-        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
+        AppendixInfo.validateJsonElement(jsonObj.get("keyword_suggestions_for_url"));
       }
       // validate the optional field `naver`
       if (jsonObj.get("naver") != null && !jsonObj.get("naver").isJsonNull()) {

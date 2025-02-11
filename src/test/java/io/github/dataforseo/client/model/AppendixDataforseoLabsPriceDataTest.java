@@ -104,6 +104,14 @@ public class AppendixDataforseoLabsPriceDataTest {
     }
 
     /**
+     * Test the property 'categoriesForKeywords'
+     */
+    @Test
+    public void categoriesForKeywordsTest() {
+        // TODO: test categoriesForKeywords
+    }
+
+    /**
      * Test the property 'competitorsDomain'
      */
     @Test
@@ -149,6 +157,14 @@ public class AppendixDataforseoLabsPriceDataTest {
     @Test
     public void errorsTest() {
         // TODO: test errors
+    }
+
+    /**
+     * Test the property 'historicalBulkTrafficEstimation'
+     */
+    @Test
+    public void historicalBulkTrafficEstimationTest() {
+        // TODO: test historicalBulkTrafficEstimation
     }
 
     /**

@@ -19,8 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixFunctionTypeInfo;
+import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixSerpDayStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixSerpDayStatisticsMoneyData {
   public static final String SERIALIZED_NAME_TASK_POST = "task_post";
   @SerializedName(SERIALIZED_NAME_TASK_POST)
@@ -87,19 +87,19 @@ public class AppendixSerpDayStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_JOBS = "jobs";
   @SerializedName(SERIALIZED_NAME_JOBS)
-  private AppendixDayLimitsRatesDataInfo jobs;
+  private AppendixJobsSerpLimitsRatesDataInfo jobs;
 
   public static final String SERIALIZED_NAME_SCREENSHOT = "screenshot";
   @SerializedName(SERIALIZED_NAME_SCREENSHOT)
   private Double screenshot;
 
-  public static final String SERIALIZED_NAME_AI_SUMMARY = "ai_summary";
-  @SerializedName(SERIALIZED_NAME_AI_SUMMARY)
-  private Double aiSummary;
-
   public static final String SERIALIZED_NAME_REFUND_MONEY = "refund_money";
   @SerializedName(SERIALIZED_NAME_REFUND_MONEY)
   private Double refundMoney;
+
+  public static final String SERIALIZED_NAME_AI_SUMMARY = "ai_summary";
+  @SerializedName(SERIALIZED_NAME_AI_SUMMARY)
+  private Double aiSummary;
 
   public AppendixSerpDayStatisticsMoneyData() {
   }
@@ -256,7 +256,7 @@ public class AppendixSerpDayStatisticsMoneyData {
   }
 
 
-  public AppendixSerpDayStatisticsMoneyData jobs(AppendixDayLimitsRatesDataInfo jobs) {
+  public AppendixSerpDayStatisticsMoneyData jobs(AppendixJobsSerpLimitsRatesDataInfo jobs) {
     this.jobs = jobs;
     return this;
   }
@@ -266,11 +266,11 @@ public class AppendixSerpDayStatisticsMoneyData {
    * @return jobs
    */
   @javax.annotation.Nullable
-  public AppendixDayLimitsRatesDataInfo getJobs() {
+  public AppendixJobsSerpLimitsRatesDataInfo getJobs() {
     return jobs;
   }
 
-  public void setJobs(AppendixDayLimitsRatesDataInfo jobs) {
+  public void setJobs(AppendixJobsSerpLimitsRatesDataInfo jobs) {
     this.jobs = jobs;
   }
 
@@ -294,25 +294,6 @@ public class AppendixSerpDayStatisticsMoneyData {
   }
 
 
-  public AppendixSerpDayStatisticsMoneyData aiSummary(Double aiSummary) {
-    this.aiSummary = aiSummary;
-    return this;
-  }
-
-  /**
-   * Get aiSummary
-   * @return aiSummary
-   */
-  @javax.annotation.Nullable
-  public Double getAiSummary() {
-    return aiSummary;
-  }
-
-  public void setAiSummary(Double aiSummary) {
-    this.aiSummary = aiSummary;
-  }
-
-
   public AppendixSerpDayStatisticsMoneyData refundMoney(Double refundMoney) {
     this.refundMoney = refundMoney;
     return this;
@@ -329,6 +310,25 @@ public class AppendixSerpDayStatisticsMoneyData {
 
   public void setRefundMoney(Double refundMoney) {
     this.refundMoney = refundMoney;
+  }
+
+
+  public AppendixSerpDayStatisticsMoneyData aiSummary(Double aiSummary) {
+    this.aiSummary = aiSummary;
+    return this;
+  }
+
+  /**
+   * Get aiSummary
+   * @return aiSummary
+   */
+  @javax.annotation.Nullable
+  public Double getAiSummary() {
+    return aiSummary;
+  }
+
+  public void setAiSummary(Double aiSummary) {
+    this.aiSummary = aiSummary;
   }
 
   /**
@@ -396,8 +396,8 @@ public class AppendixSerpDayStatisticsMoneyData {
         Objects.equals(this.tasksFixed, appendixSerpDayStatisticsMoneyData.tasksFixed) &&
         Objects.equals(this.jobs, appendixSerpDayStatisticsMoneyData.jobs) &&
         Objects.equals(this.screenshot, appendixSerpDayStatisticsMoneyData.screenshot) &&
-        Objects.equals(this.aiSummary, appendixSerpDayStatisticsMoneyData.aiSummary) &&
-        Objects.equals(this.refundMoney, appendixSerpDayStatisticsMoneyData.refundMoney)&&
+        Objects.equals(this.refundMoney, appendixSerpDayStatisticsMoneyData.refundMoney) &&
+        Objects.equals(this.aiSummary, appendixSerpDayStatisticsMoneyData.aiSummary)&&
         Objects.equals(this.additionalProperties, appendixSerpDayStatisticsMoneyData.additionalProperties);
   }
 
@@ -407,7 +407,7 @@ public class AppendixSerpDayStatisticsMoneyData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(taskPost, taskGet, tasksReady, locations, languages, live, errors, tasksFixed, jobs, screenshot, aiSummary, refundMoney, additionalProperties);
+    return Objects.hash(taskPost, taskGet, tasksReady, locations, languages, live, errors, tasksFixed, jobs, screenshot, refundMoney, aiSummary, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -431,8 +431,8 @@ public class AppendixSerpDayStatisticsMoneyData {
     sb.append("    tasksFixed: ").append(toIndentedString(tasksFixed)).append("\n");
     sb.append("    jobs: ").append(toIndentedString(jobs)).append("\n");
     sb.append("    screenshot: ").append(toIndentedString(screenshot)).append("\n");
-    sb.append("    aiSummary: ").append(toIndentedString(aiSummary)).append("\n");
     sb.append("    refundMoney: ").append(toIndentedString(refundMoney)).append("\n");
+    sb.append("    aiSummary: ").append(toIndentedString(aiSummary)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -466,8 +466,8 @@ public class AppendixSerpDayStatisticsMoneyData {
     openapiFields.add("tasks_fixed");
     openapiFields.add("jobs");
     openapiFields.add("screenshot");
-    openapiFields.add("ai_summary");
     openapiFields.add("refund_money");
+    openapiFields.add("ai_summary");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -496,7 +496,7 @@ public class AppendixSerpDayStatisticsMoneyData {
       }
       // validate the optional field `jobs`
       if (jsonObj.get("jobs") != null && !jsonObj.get("jobs").isJsonNull()) {
-        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("jobs"));
+        AppendixJobsSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("jobs"));
       }
   }
 

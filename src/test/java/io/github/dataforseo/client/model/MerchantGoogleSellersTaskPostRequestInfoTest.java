@@ -49,6 +49,14 @@ public class MerchantGoogleSellersTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'dataDocid'
+     */
+    @Test
+    public void dataDocidTest() {
+        // TODO: test dataDocid
+    }
+
+    /**
      * Test the property 'priority'
      */
     @Test

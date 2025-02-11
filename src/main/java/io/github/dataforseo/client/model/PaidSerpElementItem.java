@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.AdLinkElement;
 import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.ImagesElement;
 import io.github.dataforseo.client.model.PriceInfo;
+import io.github.dataforseo.client.model.RatingInfo;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -58,7 +59,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * PaidSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PaidSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -67,6 +68,10 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
   private String domain;
+
+  public static final String SERIALIZED_NAME_WEBSITE_NAME = "website_name";
+  @SerializedName(SERIALIZED_NAME_WEBSITE_NAME)
+  private String websiteName;
 
   public static final String SERIALIZED_NAME_BREADCRUMB = "breadcrumb";
   @SerializedName(SERIALIZED_NAME_BREADCRUMB)
@@ -112,13 +117,13 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
   @SerializedName(SERIALIZED_NAME_PRICE)
   private PriceInfo price;
 
+  public static final String SERIALIZED_NAME_RATING = "rating";
+  @SerializedName(SERIALIZED_NAME_RATING)
+  private RatingInfo rating;
+
   public static final String SERIALIZED_NAME_RECTANGLE = "rectangle";
   @SerializedName(SERIALIZED_NAME_RECTANGLE)
   private Rectangle rectangle;
-
-  public static final String SERIALIZED_NAME_WEBSITE_NAME = "website_name";
-  @SerializedName(SERIALIZED_NAME_WEBSITE_NAME)
-  private String websiteName;
 
   public PaidSerpElementItem() {
   }
@@ -158,6 +163,25 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
 
   public void setDomain(String domain) {
     this.domain = domain;
+  }
+
+
+  public PaidSerpElementItem websiteName(String websiteName) {
+    this.websiteName = websiteName;
+    return this;
+  }
+
+  /**
+   * name of the website in SERP
+   * @return websiteName
+   */
+  @javax.annotation.Nullable
+  public String getWebsiteName() {
+    return websiteName;
+  }
+
+  public void setWebsiteName(String websiteName) {
+    this.websiteName = websiteName;
   }
 
 
@@ -410,6 +434,25 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
   }
 
 
+  public PaidSerpElementItem rating(RatingInfo rating) {
+    this.rating = rating;
+    return this;
+  }
+
+  /**
+   * Get rating
+   * @return rating
+   */
+  @javax.annotation.Nullable
+  public RatingInfo getRating() {
+    return rating;
+  }
+
+  public void setRating(RatingInfo rating) {
+    this.rating = rating;
+  }
+
+
   public PaidSerpElementItem rectangle(Rectangle rectangle) {
     this.rectangle = rectangle;
     return this;
@@ -426,25 +469,6 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
 
   public void setRectangle(Rectangle rectangle) {
     this.rectangle = rectangle;
-  }
-
-
-  public PaidSerpElementItem websiteName(String websiteName) {
-    this.websiteName = websiteName;
-    return this;
-  }
-
-  /**
-   * website name in SERP
-   * @return websiteName
-   */
-  @javax.annotation.Nullable
-  public String getWebsiteName() {
-    return websiteName;
-  }
-
-  public void setWebsiteName(String websiteName) {
-    this.websiteName = websiteName;
   }
 
   /**
@@ -504,6 +528,7 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
     PaidSerpElementItem paidSerpElementItem = (PaidSerpElementItem) o;
     return Objects.equals(this.title, paidSerpElementItem.title) &&
         Objects.equals(this.domain, paidSerpElementItem.domain) &&
+        Objects.equals(this.websiteName, paidSerpElementItem.websiteName) &&
         Objects.equals(this.breadcrumb, paidSerpElementItem.breadcrumb) &&
         Objects.equals(this.isImage, paidSerpElementItem.isImage) &&
         Objects.equals(this.isVideo, paidSerpElementItem.isVideo) &&
@@ -515,8 +540,8 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
         Objects.equals(this.descriptionRows, paidSerpElementItem.descriptionRows) &&
         Objects.equals(this.links, paidSerpElementItem.links) &&
         Objects.equals(this.price, paidSerpElementItem.price) &&
-        Objects.equals(this.rectangle, paidSerpElementItem.rectangle) &&
-        Objects.equals(this.websiteName, paidSerpElementItem.websiteName)&&
+        Objects.equals(this.rating, paidSerpElementItem.rating) &&
+        Objects.equals(this.rectangle, paidSerpElementItem.rectangle)&&
         Objects.equals(this.additionalProperties, paidSerpElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -527,7 +552,7 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, domain, breadcrumb, isImage, isVideo, images, url, highlighted, extra, description, descriptionRows, links, price, rectangle, websiteName, super.hashCode(), additionalProperties);
+    return Objects.hash(title, domain, websiteName, breadcrumb, isImage, isVideo, images, url, highlighted, extra, description, descriptionRows, links, price, rating, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -544,6 +569,7 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
+    sb.append("    websiteName: ").append(toIndentedString(websiteName)).append("\n");
     sb.append("    breadcrumb: ").append(toIndentedString(breadcrumb)).append("\n");
     sb.append("    isImage: ").append(toIndentedString(isImage)).append("\n");
     sb.append("    isVideo: ").append(toIndentedString(isVideo)).append("\n");
@@ -555,8 +581,8 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
     sb.append("    descriptionRows: ").append(toIndentedString(descriptionRows)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
+    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
-    sb.append("    websiteName: ").append(toIndentedString(websiteName)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -587,6 +613,7 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
     openapiFields.add("xpath");
     openapiFields.add("title");
     openapiFields.add("domain");
+    openapiFields.add("website_name");
     openapiFields.add("breadcrumb");
     openapiFields.add("is_image");
     openapiFields.add("is_video");
@@ -598,8 +625,8 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
     openapiFields.add("description_rows");
     openapiFields.add("links");
     openapiFields.add("price");
+    openapiFields.add("rating");
     openapiFields.add("rectangle");
-    openapiFields.add("website_name");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -623,6 +650,9 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
       }
       if ((jsonObj.get("domain") != null && !jsonObj.get("domain").isJsonNull()) && !jsonObj.get("domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain").toString()));
+      }
+      if ((jsonObj.get("website_name") != null && !jsonObj.get("website_name").isJsonNull()) && !jsonObj.get("website_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `website_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("website_name").toString()));
       }
       if ((jsonObj.get("breadcrumb") != null && !jsonObj.get("breadcrumb").isJsonNull()) && !jsonObj.get("breadcrumb").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `breadcrumb` to be a primitive type in the JSON string but got `%s`", jsonObj.get("breadcrumb").toString()));
@@ -673,12 +703,13 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
         PriceInfo.validateJsonElement(jsonObj.get("price"));
       }
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+      }
       // validate the optional field `rectangle`
       if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {
         Rectangle.validateJsonElement(jsonObj.get("rectangle"));
-      }
-      if ((jsonObj.get("website_name") != null && !jsonObj.get("website_name").isJsonNull()) && !jsonObj.get("website_name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `website_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("website_name").toString()));
       }
   }
 

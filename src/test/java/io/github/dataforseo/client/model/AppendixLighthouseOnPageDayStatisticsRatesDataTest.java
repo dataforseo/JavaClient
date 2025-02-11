@@ -71,11 +71,11 @@ public class AppendixLighthouseOnPageDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'audits'
+     * Test the property 'versions'
      */
     @Test
-    public void auditsTest() {
-        // TODO: test audits
+    public void versionsTest() {
+        // TODO: test versions
     }
 
     /**
@@ -87,11 +87,11 @@ public class AppendixLighthouseOnPageDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'versions'
+     * Test the property 'audits'
      */
     @Test
-    public void versionsTest() {
-        // TODO: test versions
+    public void auditsTest() {
+        // TODO: test audits
     }
 
 }

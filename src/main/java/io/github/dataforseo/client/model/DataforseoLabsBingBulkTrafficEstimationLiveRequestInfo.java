@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGETS = "targets";
   @SerializedName(SERIALIZED_NAME_TARGETS)
@@ -76,6 +76,10 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo {
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
   private List<String> itemTypes;
+
+  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
+  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
+  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -214,6 +218,25 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo {
   }
 
 
+  public DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+    return this;
+  }
+
+  /**
+   * ignore highly similar keywords optional field if set to true, only core keywords will be returned, all highly similar keywords will be excluded; default value: false
+   * @return ignoreSynonyms
+   */
+  @javax.annotation.Nullable
+  public Boolean getIgnoreSynonyms() {
+    return ignoreSynonyms;
+  }
+
+  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+  }
+
+
   public DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -293,6 +316,7 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo {
         Objects.equals(this.languageName, dataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.languageName) &&
         Objects.equals(this.languageCode, dataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.languageCode) &&
         Objects.equals(this.itemTypes, dataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.itemTypes) &&
+        Objects.equals(this.ignoreSynonyms, dataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.tag, dataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, dataforseoLabsBingBulkTrafficEstimationLiveRequestInfo.additionalProperties);
   }
@@ -303,7 +327,7 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(targets, locationName, locationCode, languageName, languageCode, itemTypes, tag, additionalProperties);
+    return Objects.hash(targets, locationName, locationCode, languageName, languageCode, itemTypes, ignoreSynonyms, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -323,6 +347,7 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
+    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -353,6 +378,7 @@ public class DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo {
     openapiFields.add("language_name");
     openapiFields.add("language_code");
     openapiFields.add("item_types");
+    openapiFields.add("ignore_synonyms");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

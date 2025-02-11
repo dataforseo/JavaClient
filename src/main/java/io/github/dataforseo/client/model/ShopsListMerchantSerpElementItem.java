@@ -22,7 +22,6 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseMerchantSerpElementItem;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -52,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ShopsListMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -80,7 +79,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
-  private BigDecimal tax;
+  private Integer tax;
 
   public static final String SERIALIZED_NAME_SHIPPING_PRICE = "shipping_price";
   @SerializedName(SERIALIZED_NAME_SHIPPING_PRICE)
@@ -88,7 +87,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_TOTAL_PRICE = "total_price";
   @SerializedName(SERIALIZED_NAME_TOTAL_PRICE)
-  private BigDecimal totalPrice;
+  private Long totalPrice;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -231,7 +230,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem tax(BigDecimal tax) {
+  public ShopsListMerchantSerpElementItem tax(Integer tax) {
     this.tax = tax;
     return this;
   }
@@ -241,11 +240,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return tax
    */
   @javax.annotation.Nullable
-  public BigDecimal getTax() {
+  public Integer getTax() {
     return tax;
   }
 
-  public void setTax(BigDecimal tax) {
+  public void setTax(Integer tax) {
     this.tax = tax;
   }
 
@@ -269,7 +268,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem totalPrice(BigDecimal totalPrice) {
+  public ShopsListMerchantSerpElementItem totalPrice(Long totalPrice) {
     this.totalPrice = totalPrice;
     return this;
   }
@@ -279,11 +278,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return totalPrice
    */
   @javax.annotation.Nullable
-  public BigDecimal getTotalPrice() {
+  public Long getTotalPrice() {
     return totalPrice;
   }
 
-  public void setTotalPrice(BigDecimal totalPrice) {
+  public void setTotalPrice(Long totalPrice) {
     this.totalPrice = totalPrice;
   }
 

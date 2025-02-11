@@ -27,10 +27,10 @@
 |**pageScreenshot** | **Double** |  |  [optional] |
 |**contentParsing** | **Double** |  |  [optional] |
 |**contentParsingLive** | **Double** |  |  [optional] |
-|**availableFilters** | **Double** |  |  [optional] |
-|**forceStop** | **Double** |  |  [optional] |
-|**microdata** | **Double** |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
+|**forceStop** | **Double** |  |  [optional] |
+|**availableFilters** | **Double** |  |  [optional] |
+|**microdata** | **Double** |  |  [optional] |
 
 
 

@@ -121,6 +121,14 @@ public class DataforseoLabsGoogleRelevantPagesLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'ignoreSynonyms'
+     */
+    @Test
+    public void ignoreSynonymsTest() {
+        // TODO: test ignoreSynonyms
+    }
+
+    /**
      * Test the property 'filters'
      */
     @Test

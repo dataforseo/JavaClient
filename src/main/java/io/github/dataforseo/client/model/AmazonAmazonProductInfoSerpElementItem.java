@@ -19,6 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AmazonApplicableVouchersItem;
 import io.github.dataforseo.client.model.AmazonProductNewerModelInfo;
 import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
 import io.github.dataforseo.client.model.BaseProductInformationItem;
@@ -56,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonProductInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -113,6 +114,10 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
   public static final String SERIALIZED_NAME_IS_NEWER_MODEL_AVAILABLE = "is_newer_model_available";
   @SerializedName(SERIALIZED_NAME_IS_NEWER_MODEL_AVAILABLE)
   private Boolean isNewerModelAvailable;
+
+  public static final String SERIALIZED_NAME_APPLICABLE_VOUCHERS = "applicable_vouchers";
+  @SerializedName(SERIALIZED_NAME_APPLICABLE_VOUCHERS)
+  private List<AmazonApplicableVouchersItem> applicableVouchers;
 
   public static final String SERIALIZED_NAME_NEWER_MODEL = "newer_model";
   @SerializedName(SERIALIZED_NAME_NEWER_MODEL)
@@ -427,6 +432,33 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
   }
 
 
+  public AmazonAmazonProductInfoSerpElementItem applicableVouchers(List<AmazonApplicableVouchersItem> applicableVouchers) {
+    this.applicableVouchers = applicableVouchers;
+    return this;
+  }
+
+  public AmazonAmazonProductInfoSerpElementItem addApplicableVouchersItem(AmazonApplicableVouchersItem applicableVouchersItem) {
+    if (this.applicableVouchers == null) {
+      this.applicableVouchers = new ArrayList<>();
+    }
+    this.applicableVouchers.add(applicableVouchersItem);
+    return this;
+  }
+
+  /**
+   * array of objects containing information about applicable vouchers
+   * @return applicableVouchers
+   */
+  @javax.annotation.Nullable
+  public List<AmazonApplicableVouchersItem> getApplicableVouchers() {
+    return applicableVouchers;
+  }
+
+  public void setApplicableVouchers(List<AmazonApplicableVouchersItem> applicableVouchers) {
+    this.applicableVouchers = applicableVouchers;
+  }
+
+
   public AmazonAmazonProductInfoSerpElementItem newerModel(AmazonProductNewerModelInfo newerModel) {
     this.newerModel = newerModel;
     return this;
@@ -714,6 +746,7 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
         Objects.equals(this.isAmazonChoice, amazonAmazonProductInfoSerpElementItem.isAmazonChoice) &&
         Objects.equals(this.rating, amazonAmazonProductInfoSerpElementItem.rating) &&
         Objects.equals(this.isNewerModelAvailable, amazonAmazonProductInfoSerpElementItem.isNewerModelAvailable) &&
+        Objects.equals(this.applicableVouchers, amazonAmazonProductInfoSerpElementItem.applicableVouchers) &&
         Objects.equals(this.newerModel, amazonAmazonProductInfoSerpElementItem.newerModel) &&
         Objects.equals(this.categories, amazonAmazonProductInfoSerpElementItem.categories) &&
         Objects.equals(this.productInformation, amazonAmazonProductInfoSerpElementItem.productInformation) &&
@@ -733,7 +766,7 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, currency, isAmazonChoice, rating, isNewerModelAvailable, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews, super.hashCode(), additionalProperties);
+    return Objects.hash(position, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, currency, isAmazonChoice, rating, isNewerModelAvailable, applicableVouchers, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -762,6 +795,7 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
     sb.append("    isAmazonChoice: ").append(toIndentedString(isAmazonChoice)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    isNewerModelAvailable: ").append(toIndentedString(isNewerModelAvailable)).append("\n");
+    sb.append("    applicableVouchers: ").append(toIndentedString(applicableVouchers)).append("\n");
     sb.append("    newerModel: ").append(toIndentedString(newerModel)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
     sb.append("    productInformation: ").append(toIndentedString(productInformation)).append("\n");
@@ -812,6 +846,7 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
     openapiFields.add("is_amazon_choice");
     openapiFields.add("rating");
     openapiFields.add("is_newer_model_available");
+    openapiFields.add("applicable_vouchers");
     openapiFields.add("newer_model");
     openapiFields.add("categories");
     openapiFields.add("product_information");
@@ -870,6 +905,20 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
         RatingElement.validateJsonElement(jsonObj.get("rating"));
+      }
+      if (jsonObj.get("applicable_vouchers") != null && !jsonObj.get("applicable_vouchers").isJsonNull()) {
+        JsonArray jsonArrayapplicableVouchers = jsonObj.getAsJsonArray("applicable_vouchers");
+        if (jsonArrayapplicableVouchers != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("applicable_vouchers").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `applicable_vouchers` to be an array in the JSON string but got `%s`", jsonObj.get("applicable_vouchers").toString()));
+          }
+
+          // validate the optional field `applicable_vouchers` (array)
+          for (int i = 0; i < jsonArrayapplicableVouchers.size(); i++) {
+            AmazonApplicableVouchersItem.validateJsonElement(jsonArrayapplicableVouchers.get(i));
+          };
+        }
       }
       // validate the optional field `newer_model`
       if (jsonObj.get("newer_model") != null && !jsonObj.get("newer_model").isJsonNull()) {

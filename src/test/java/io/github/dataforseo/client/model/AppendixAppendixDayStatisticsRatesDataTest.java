@@ -55,19 +55,19 @@ public class AppendixAppendixDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'status'
-     */
-    @Test
-    public void statusTest() {
-        // TODO: test status
-    }
-
-    /**
      * Test the property 'webhookResend'
      */
     @Test
     public void webhookResendTest() {
         // TODO: test webhookResend
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
     }
 
 }

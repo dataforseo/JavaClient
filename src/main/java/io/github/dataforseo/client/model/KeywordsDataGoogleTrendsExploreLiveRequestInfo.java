@@ -51,19 +51,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleTrendsExploreLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
-  private List<String> keywords;
+  private List<String> keywords = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
+  private List<String> locationName;
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private List<Integer> locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
@@ -118,7 +118,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   }
 
   /**
-   * keywords optional field if keywords are not specified, the results will not contain keyword-related data; The maximum number of keywords you can specify: 5 Note: the comma characters (,) in the specified keywords will be unset and ignored learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywords required field if keywords are not specified, the results will not contain keyword-related data; The maximum number of keywords you can specify: 5 comma characters (,) in the specified keywords will be unset and ignored; Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword; learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -131,40 +131,56 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   }
 
 
-  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationName(String locationName) {
+  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationName(List<String> locationName) {
     this.locationName = locationName;
     return this;
   }
 
+  public KeywordsDataGoogleTrendsExploreLiveRequestInfo addLocationNameItem(String locationNameItem) {
+    if (this.locationName == null) {
+      this.locationName = new ArrayList<>();
+    }
+    this.locationName.add(locationNameItem);
+    return this;
+  }
+
   /**
-   * full name of search engine location optional field if you don’t use this field, you will recieve global results if you use this field, you don’t need to specify location_code you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations example: United Kingdom
+   * full name of search engine location optional field if you don’t use this field, you will recieve global results if you use this field, you don’t need to specify location_code you can use this field as an array to set several locations, each corresponding to a specific keyword – learn more; you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations example: United Kingdom
    * @return locationName
    */
   @javax.annotation.Nullable
-  public String getLocationName() {
+  public List<String> getLocationName() {
     return locationName;
   }
 
-  public void setLocationName(String locationName) {
+  public void setLocationName(List<String> locationName) {
     this.locationName = locationName;
   }
 
 
-  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationCode(Integer locationCode) {
+  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationCode(List<Integer> locationCode) {
     this.locationCode = locationCode;
     return this;
   }
 
+  public KeywordsDataGoogleTrendsExploreLiveRequestInfo addLocationCodeItem(Integer locationCodeItem) {
+    if (this.locationCode == null) {
+      this.locationCode = new ArrayList<>();
+    }
+    this.locationCode.add(locationCodeItem);
+    return this;
+  }
+
   /**
-   * search engine location code optional field if you don’t use this field, you will recieve global results if you use this field, you don’t need to specify location_name you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations example: 2840
+   * search engine location code optional field if you don’t use this field, you will recieve global results if you use this field, you don’t need to specify location_name you can use this field as an array to set several locations, each corresponding to a specific keyword – learn more; you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/google_trends/locations example: 2840
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public List<Integer> getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(List<Integer> locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -316,7 +332,7 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   }
 
   /**
-   * types of items returned optional field to speed up the execution of the request, specify one item at a time; possible values: \&quot;google_trends_graph\&quot;, \&quot;google_trends_map\&quot;, \&quot;google_trends_topics_list\&quot;,\&quot;google_trends_queries_list\&quot; default value: \&quot;google_trends_graph\&quot;
+   * types of items returned optional field to speed up the execution of the request, specify one item at a time; possible values: \&quot;google_trends_graph\&quot;, \&quot;google_trends_map\&quot;, \&quot;google_trends_topics_list\&quot;,\&quot;google_trends_queries_list\&quot; default value: \&quot;google_trends_graph\&quot; Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword in the keywords field
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -506,8 +522,13 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
       if (jsonObj.get("keywords") != null && !jsonObj.get("keywords").isJsonNull() && !jsonObj.get("keywords").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `keywords` to be an array in the JSON string but got `%s`", jsonObj.get("keywords").toString()));
       }
-      if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull() && !jsonObj.get("location_name").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `location_name` to be an array in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("location_code") != null && !jsonObj.get("location_code").isJsonNull() && !jsonObj.get("location_code").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `location_code` to be an array in the JSON string but got `%s`", jsonObj.get("location_code").toString()));
       }
       if ((jsonObj.get("language_name") != null && !jsonObj.get("language_name").isJsonNull()) && !jsonObj.get("language_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_name").toString()));

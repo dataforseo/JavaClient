@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsAmazonRankedKeywordsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsAmazonRankedKeywordsLiveRequestInfo {
   public static final String SERIALIZED_NAME_ASIN = "asin";
   @SerializedName(SERIALIZED_NAME_ASIN)
@@ -247,7 +247,7 @@ public class DataforseoLabsAmazonRankedKeywordsLiveRequestInfo {
   }
 
   /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;keyword_data.keyword_info.search_volume\&quot;,\&quot;in\&quot;,[100,1000]]; for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like, not_like, match, not_match you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;keyword_data.keyword_info.search_volume\&quot;,\&quot;in\&quot;,[100,1000]]; for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
    * @return filters
    */
   @javax.annotation.Nullable

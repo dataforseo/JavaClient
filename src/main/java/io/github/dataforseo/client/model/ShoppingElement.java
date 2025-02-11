@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.PriceInfo;
+import io.github.dataforseo.client.model.RatingInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -50,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ShoppingElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ShoppingElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -83,6 +84,10 @@ public class ShoppingElement {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
+
+  public static final String SERIALIZED_NAME_RATING = "rating";
+  @SerializedName(SERIALIZED_NAME_RATING)
+  private RatingInfo rating;
 
   public ShoppingElement() {
   }
@@ -238,6 +243,25 @@ public class ShoppingElement {
     this.url = url;
   }
 
+
+  public ShoppingElement rating(RatingInfo rating) {
+    this.rating = rating;
+    return this;
+  }
+
+  /**
+   * Get rating
+   * @return rating
+   */
+  @javax.annotation.Nullable
+  public RatingInfo getRating() {
+    return rating;
+  }
+
+  public void setRating(RatingInfo rating) {
+    this.rating = rating;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -300,7 +324,8 @@ public class ShoppingElement {
         Objects.equals(this.description, shoppingElement.description) &&
         Objects.equals(this.marketplace, shoppingElement.marketplace) &&
         Objects.equals(this.marketplaceUrl, shoppingElement.marketplaceUrl) &&
-        Objects.equals(this.url, shoppingElement.url)&&
+        Objects.equals(this.url, shoppingElement.url) &&
+        Objects.equals(this.rating, shoppingElement.rating)&&
         Objects.equals(this.additionalProperties, shoppingElement.additionalProperties);
   }
 
@@ -310,7 +335,7 @@ public class ShoppingElement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, title, price, source, description, marketplace, marketplaceUrl, url, additionalProperties);
+    return Objects.hash(type, title, price, source, description, marketplace, marketplaceUrl, url, rating, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -332,6 +357,7 @@ public class ShoppingElement {
     sb.append("    marketplace: ").append(toIndentedString(marketplace)).append("\n");
     sb.append("    marketplaceUrl: ").append(toIndentedString(marketplaceUrl)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -363,6 +389,7 @@ public class ShoppingElement {
     openapiFields.add("marketplace");
     openapiFields.add("marketplace_url");
     openapiFields.add("url");
+    openapiFields.add("rating");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -405,6 +432,10 @@ public class ShoppingElement {
       }
       if ((jsonObj.get("url") != null && !jsonObj.get("url").isJsonNull()) && !jsonObj.get("url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));
+      }
+      // validate the optional field `rating`
+      if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
+        RatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
   }
 

@@ -58,6 +58,14 @@ public class KeywordInfoNormalizedWithInfoTest {
     }
 
     /**
+     * Test the property 'isNormalized'
+     */
+    @Test
+    public void isNormalizedTest() {
+        // TODO: test isNormalized
+    }
+
+    /**
      * Test the property 'monthlySearches'
      */
     @Test

@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * RatingInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RatingInfo {
   public static final String SERIALIZED_NAME_RATING_TYPE = "rating_type";
   @SerializedName(SERIALIZED_NAME_RATING_TYPE)
@@ -57,7 +57,7 @@ public class RatingInfo {
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
-  private Float value;
+  private Double value;
 
   public static final String SERIALIZED_NAME_VOTES_COUNT = "votes_count";
   @SerializedName(SERIALIZED_NAME_VOTES_COUNT)
@@ -89,7 +89,7 @@ public class RatingInfo {
   }
 
 
-  public RatingInfo value(Float value) {
+  public RatingInfo value(Double value) {
     this.value = value;
     return this;
   }
@@ -99,11 +99,11 @@ public class RatingInfo {
    * @return value
    */
   @javax.annotation.Nullable
-  public Float getValue() {
+  public Double getValue() {
     return value;
   }
 
-  public void setValue(Float value) {
+  public void setValue(Double value) {
     this.value = value;
   }
 

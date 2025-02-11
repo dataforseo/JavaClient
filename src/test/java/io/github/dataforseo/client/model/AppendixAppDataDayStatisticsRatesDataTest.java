@@ -105,6 +105,14 @@ public class AppendixAppDataDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'appListings'
+     */
+    @Test
+    public void appListingsTest() {
+        // TODO: test appListings
+    }
+
+    /**
      * Test the property 'tasksReady'
      */
     @Test
@@ -118,14 +126,6 @@ public class AppendixAppDataDayStatisticsRatesDataTest {
     @Test
     public void idListTest() {
         // TODO: test idList
-    }
-
-    /**
-     * Test the property 'appListings'
-     */
-    @Test
-    public void appListingsTest() {
-        // TODO: test appListings
     }
 
 }

@@ -18,6 +18,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AppendixAppListingsAppDataPriceData;
 import io.github.dataforseo.client.model.AppendixPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixProductGoogleMerchantPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
@@ -46,6 +47,14 @@ public class AppendixAppDataPriceDataTest {
     @Test
     public void appInfoTest() {
         // TODO: test appInfo
+    }
+
+    /**
+     * Test the property 'appListings'
+     */
+    @Test
+    public void appListingsTest() {
+        // TODO: test appListings
     }
 
     /**

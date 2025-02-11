@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleSearchIntentLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleSearchIntentLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -105,7 +105,7 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo {
   }
 
   /**
-   * full name of the language required field if don’t specify language_code you can receive the list of available languages with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages  Note: this endpoint currently supports the following languages only: Arabic, ar, Chinese(Traditional), zh-TW, Czech, cs, Danish, da, Dutch, nl, English, en, Finnish, fi, French, fr, German, de, Hebrew, he, Hindi, hi, Italian, it, Japanese, ja, Korean, ko, Malay, ms, Norwegian(Bokmål), nb, Polish, pl, Portuguese, pt, Russian, ru, Spanish, es, Swedish, sv, Thai, th, Ukrainian, uk, Vietnamese, vi example: English
+   * full name of the language required field if don’t specify language_code you can receive the list of available languages with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages  Note: this endpoint currently supports the following languages only: Arabic, ar, Chinese(Traditional), zh-TW, Czech, cs, Danish, da, Dutch, nl, English, en, Finnish, fi, French, fr, German, de, Hebrew, he, Hindi, hi, Italian, it, Japanese, ja, Korean, ko, Malay, ms, Norwegian(Bokmål), nb, Polish, pl, Portuguese, pt, Romanian, ro, Russian, ru, Spanish, es, Swedish, sv, Thai, th, Ukrainian, uk, Vietnamese, vi example: English
    * @return languageName
    */
   @javax.annotation.Nullable

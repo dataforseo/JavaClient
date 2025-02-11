@@ -41,6 +41,8 @@
 |**appIntersection** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**bulkAppMetrics** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**searchIntent** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**historicalBulkTrafficEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**categoriesForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

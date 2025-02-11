@@ -15,6 +15,7 @@
 |**marketplace** | **String** | merchant account provider commerce site that hosts products or websites of individual sellers under the same merchant account example: by Google |  [optional] |
 |**marketplaceUrl** | **String** | relevant marketplace URL URL of the page on the marketplace website where the product is hosted |  [optional] |
 |**url** | **String** | URL |  [optional] |
+|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 
 
 

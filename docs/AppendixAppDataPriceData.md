@@ -8,6 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**appInfo** | [**AppendixProductGoogleMerchantPriceDataInfo**](AppendixProductGoogleMerchantPriceDataInfo.md) |  |  [optional] |
+|**appListings** | [**AppendixAppListingsAppDataPriceData**](AppendixAppListingsAppDataPriceData.md) |  |  [optional] |
 |**appList** | [**AppendixProductGoogleMerchantPriceDataInfo**](AppendixProductGoogleMerchantPriceDataInfo.md) |  |  [optional] |
 |**appReviews** | [**AppendixPriceDataInfo**](AppendixPriceDataInfo.md) |  |  [optional] |
 |**appSearches** | [**AppendixProductGoogleMerchantPriceDataInfo**](AppendixProductGoogleMerchantPriceDataInfo.md) |  |  [optional] |

@@ -9,8 +9,8 @@
 |------------ | ------------- | ------------- | -------------|
 |**userData** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
-|**status** | **Double** |  |  [optional] |
 |**webhookResend** | **Double** |  |  [optional] |
+|**status** | **Double** |  |  [optional] |
 
 
 

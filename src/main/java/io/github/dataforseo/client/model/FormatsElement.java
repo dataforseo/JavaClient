@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * FormatsElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class FormatsElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,7 +61,7 @@ public class FormatsElement {
 
   public static final String SERIALIZED_NAME_SIZE = "size";
   @SerializedName(SERIALIZED_NAME_SIZE)
-  private String size;
+  private Long size;
 
   public FormatsElement() {
   }
@@ -104,7 +104,7 @@ public class FormatsElement {
   }
 
 
-  public FormatsElement size(String size) {
+  public FormatsElement size(Long size) {
     this.size = size;
     return this;
   }
@@ -114,11 +114,11 @@ public class FormatsElement {
    * @return size
    */
   @javax.annotation.Nullable
-  public String getSize() {
+  public Long getSize() {
     return size;
   }
 
-  public void setSize(String size) {
+  public void setSize(Long size) {
     this.size = size;
   }
 
@@ -255,9 +255,6 @@ public class FormatsElement {
       }
       if ((jsonObj.get("format") != null && !jsonObj.get("format").isJsonNull()) && !jsonObj.get("format").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `format` to be a primitive type in the JSON string but got `%s`", jsonObj.get("format").toString()));
-      }
-      if ((jsonObj.get("size") != null && !jsonObj.get("size").isJsonNull()) && !jsonObj.get("size").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `size` to be a primitive type in the JSON string but got `%s`", jsonObj.get("size").toString()));
       }
   }
 

@@ -15,10 +15,10 @@
 |**live** | [**AppendixFunctionTypeInfo**](AppendixFunctionTypeInfo.md) |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
 |**tasksFixed** | **Double** |  |  [optional] |
-|**jobs** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
+|**jobs** | [**AppendixJobsSerpLimitsRatesDataInfo**](AppendixJobsSerpLimitsRatesDataInfo.md) |  |  [optional] |
 |**screenshot** | **Double** |  |  [optional] |
-|**aiSummary** | **Double** |  |  [optional] |
 |**refundMoney** | **Double** |  |  [optional] |
+|**aiSummary** | **Double** |  |  [optional] |
 
 
 

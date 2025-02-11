@@ -24,12 +24,12 @@
 |**dataforseoTrends** | [**AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo**](AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**clickstreamData** | [**AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo**](AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**audienceEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**keywordSuggestionsForUrl** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
-|**industries** | **Double** |  |  [optional] |
+|**keywordSuggestionsForUrl** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**jobFunctions** | **Double** |  |  [optional] |
 |**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**jobFunctions** | **Double** |  |  [optional] |
+|**industries** | **Double** |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
 
 
 

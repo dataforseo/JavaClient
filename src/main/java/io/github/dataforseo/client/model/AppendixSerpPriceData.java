@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixKeywordsDataPriceDataInfo;
+import io.github.dataforseo.client.model.AppendixAKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixSerpPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixTaskKeywordsDataPriceDataInfo;
 import java.io.IOException;
@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixSerpPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixSerpPriceData {
   public static final String SERIALIZED_NAME_TASKS_FIXED = "tasks_fixed";
   @SerializedName(SERIALIZED_NAME_TASKS_FIXED)
@@ -63,7 +63,7 @@ public class AppendixSerpPriceData {
 
   public static final String SERIALIZED_NAME_JOBS = "jobs";
   @SerializedName(SERIALIZED_NAME_JOBS)
-  private AppendixKeywordsDataPriceDataInfo jobs;
+  private AppendixAKeywordsDataPriceDataInfo jobs;
 
   public static final String SERIALIZED_NAME_LANGUAGES = "languages";
   @SerializedName(SERIALIZED_NAME_LANGUAGES)
@@ -134,7 +134,7 @@ public class AppendixSerpPriceData {
   }
 
 
-  public AppendixSerpPriceData jobs(AppendixKeywordsDataPriceDataInfo jobs) {
+  public AppendixSerpPriceData jobs(AppendixAKeywordsDataPriceDataInfo jobs) {
     this.jobs = jobs;
     return this;
   }
@@ -144,11 +144,11 @@ public class AppendixSerpPriceData {
    * @return jobs
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getJobs() {
+  public AppendixAKeywordsDataPriceDataInfo getJobs() {
     return jobs;
   }
 
-  public void setJobs(AppendixKeywordsDataPriceDataInfo jobs) {
+  public void setJobs(AppendixAKeywordsDataPriceDataInfo jobs) {
     this.jobs = jobs;
   }
 
@@ -433,7 +433,7 @@ public class AppendixSerpPriceData {
       }
       // validate the optional field `jobs`
       if (jsonObj.get("jobs") != null && !jsonObj.get("jobs").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("jobs"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("jobs"));
       }
       // validate the optional field `languages`
       if (jsonObj.get("languages") != null && !jsonObj.get("languages").isJsonNull()) {

@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixAppendixDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixAppendixDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_USER_DATA = "user_data";
   @SerializedName(SERIALIZED_NAME_USER_DATA)
@@ -59,13 +59,13 @@ public class AppendixAppendixDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_ERRORS)
   private Double errors;
 
-  public static final String SERIALIZED_NAME_STATUS = "status";
-  @SerializedName(SERIALIZED_NAME_STATUS)
-  private Double status;
-
   public static final String SERIALIZED_NAME_WEBHOOK_RESEND = "webhook_resend";
   @SerializedName(SERIALIZED_NAME_WEBHOOK_RESEND)
   private Double webhookResend;
+
+  public static final String SERIALIZED_NAME_STATUS = "status";
+  @SerializedName(SERIALIZED_NAME_STATUS)
+  private Double status;
 
   public AppendixAppendixDayStatisticsRatesData() {
   }
@@ -108,25 +108,6 @@ public class AppendixAppendixDayStatisticsRatesData {
   }
 
 
-  public AppendixAppendixDayStatisticsRatesData status(Double status) {
-    this.status = status;
-    return this;
-  }
-
-  /**
-   * Get status
-   * @return status
-   */
-  @javax.annotation.Nullable
-  public Double getStatus() {
-    return status;
-  }
-
-  public void setStatus(Double status) {
-    this.status = status;
-  }
-
-
   public AppendixAppendixDayStatisticsRatesData webhookResend(Double webhookResend) {
     this.webhookResend = webhookResend;
     return this;
@@ -143,6 +124,25 @@ public class AppendixAppendixDayStatisticsRatesData {
 
   public void setWebhookResend(Double webhookResend) {
     this.webhookResend = webhookResend;
+  }
+
+
+  public AppendixAppendixDayStatisticsRatesData status(Double status) {
+    this.status = status;
+    return this;
+  }
+
+  /**
+   * Get status
+   * @return status
+   */
+  @javax.annotation.Nullable
+  public Double getStatus() {
+    return status;
+  }
+
+  public void setStatus(Double status) {
+    this.status = status;
   }
 
   /**
@@ -202,8 +202,8 @@ public class AppendixAppendixDayStatisticsRatesData {
     AppendixAppendixDayStatisticsRatesData appendixAppendixDayStatisticsRatesData = (AppendixAppendixDayStatisticsRatesData) o;
     return Objects.equals(this.userData, appendixAppendixDayStatisticsRatesData.userData) &&
         Objects.equals(this.errors, appendixAppendixDayStatisticsRatesData.errors) &&
-        Objects.equals(this.status, appendixAppendixDayStatisticsRatesData.status) &&
-        Objects.equals(this.webhookResend, appendixAppendixDayStatisticsRatesData.webhookResend)&&
+        Objects.equals(this.webhookResend, appendixAppendixDayStatisticsRatesData.webhookResend) &&
+        Objects.equals(this.status, appendixAppendixDayStatisticsRatesData.status)&&
         Objects.equals(this.additionalProperties, appendixAppendixDayStatisticsRatesData.additionalProperties);
   }
 
@@ -213,7 +213,7 @@ public class AppendixAppendixDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(userData, errors, status, webhookResend, additionalProperties);
+    return Objects.hash(userData, errors, webhookResend, status, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -229,8 +229,8 @@ public class AppendixAppendixDayStatisticsRatesData {
     sb.append("class AppendixAppendixDayStatisticsRatesData {\n");
     sb.append("    userData: ").append(toIndentedString(userData)).append("\n");
     sb.append("    errors: ").append(toIndentedString(errors)).append("\n");
-    sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    webhookResend: ").append(toIndentedString(webhookResend)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -256,8 +256,8 @@ public class AppendixAppendixDayStatisticsRatesData {
     openapiFields = new HashSet<String>();
     openapiFields.add("user_data");
     openapiFields.add("errors");
-    openapiFields.add("status");
     openapiFields.add("webhook_resend");
+    openapiFields.add("status");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

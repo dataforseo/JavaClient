@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AnalysisContentInfo;
-import io.github.dataforseo.client.model.RatingInfo;
+import io.github.dataforseo.client.model.ContentAnalysisRatingInfo;
 import io.github.dataforseo.client.model.SocialMetricsInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -110,7 +110,7 @@ public class ContentAnalysisSearchLiveItem {
 
   public static final String SERIALIZED_NAME_RATINGS = "ratings";
   @SerializedName(SERIALIZED_NAME_RATINGS)
-  private List<RatingInfo> ratings;
+  private List<ContentAnalysisRatingInfo> ratings;
 
   public static final String SERIALIZED_NAME_SOCIAL_METRICS = "social_metrics";
   @SerializedName(SERIALIZED_NAME_SOCIAL_METRICS)
@@ -386,12 +386,12 @@ public class ContentAnalysisSearchLiveItem {
   }
 
 
-  public ContentAnalysisSearchLiveItem ratings(List<RatingInfo> ratings) {
+  public ContentAnalysisSearchLiveItem ratings(List<ContentAnalysisRatingInfo> ratings) {
     this.ratings = ratings;
     return this;
   }
 
-  public ContentAnalysisSearchLiveItem addRatingsItem(RatingInfo ratingsItem) {
+  public ContentAnalysisSearchLiveItem addRatingsItem(ContentAnalysisRatingInfo ratingsItem) {
     if (this.ratings == null) {
       this.ratings = new ArrayList<>();
     }
@@ -404,11 +404,11 @@ public class ContentAnalysisSearchLiveItem {
    * @return ratings
    */
   @javax.annotation.Nullable
-  public List<RatingInfo> getRatings() {
+  public List<ContentAnalysisRatingInfo> getRatings() {
     return ratings;
   }
 
-  public void setRatings(List<RatingInfo> ratings) {
+  public void setRatings(List<ContentAnalysisRatingInfo> ratings) {
     this.ratings = ratings;
   }
 
@@ -673,7 +673,7 @@ public class ContentAnalysisSearchLiveItem {
 
           // validate the optional field `ratings` (array)
           for (int i = 0; i < jsonArrayratings.size(); i++) {
-            RatingInfo.validateJsonElement(jsonArrayratings.get(i));
+            ContentAnalysisRatingInfo.validateJsonElement(jsonArrayratings.get(i));
           };
         }
       }

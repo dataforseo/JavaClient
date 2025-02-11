@@ -52,8 +52,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * PeopleAlsoSearchDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PeopleAlsoSearchDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -64,6 +68,25 @@ public class PeopleAlsoSearchDataforseoLabsSerpElementItem extends BaseDataforse
 
   public PeopleAlsoSearchDataforseoLabsSerpElementItem() {
   }
+
+  public PeopleAlsoSearchDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public PeopleAlsoSearchDataforseoLabsSerpElementItem title(String title) {
     this.title = title;
@@ -165,7 +188,8 @@ public class PeopleAlsoSearchDataforseoLabsSerpElementItem extends BaseDataforse
       return false;
     }
     PeopleAlsoSearchDataforseoLabsSerpElementItem peopleAlsoSearchDataforseoLabsSerpElementItem = (PeopleAlsoSearchDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.title, peopleAlsoSearchDataforseoLabsSerpElementItem.title) &&
+    return Objects.equals(this.seType, peopleAlsoSearchDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.title, peopleAlsoSearchDataforseoLabsSerpElementItem.title) &&
         Objects.equals(this.items, peopleAlsoSearchDataforseoLabsSerpElementItem.items)&&
         Objects.equals(this.additionalProperties, peopleAlsoSearchDataforseoLabsSerpElementItem.additionalProperties) &&
         super.equals(o);
@@ -177,7 +201,7 @@ public class PeopleAlsoSearchDataforseoLabsSerpElementItem extends BaseDataforse
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, items, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, title, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -192,6 +216,7 @@ public class PeopleAlsoSearchDataforseoLabsSerpElementItem extends BaseDataforse
     StringBuilder sb = new StringBuilder();
     sb.append("class PeopleAlsoSearchDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
@@ -222,6 +247,7 @@ public class PeopleAlsoSearchDataforseoLabsSerpElementItem extends BaseDataforse
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("title");
     openapiFields.add("items");
 
@@ -242,6 +268,9 @@ public class PeopleAlsoSearchDataforseoLabsSerpElementItem extends BaseDataforse
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

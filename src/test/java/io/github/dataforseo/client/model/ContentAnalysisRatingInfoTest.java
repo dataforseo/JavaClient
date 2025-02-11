@@ -55,19 +55,19 @@ public class ContentAnalysisRatingInfoTest {
     }
 
     /**
-     * Test the property 'ratingCount'
-     */
-    @Test
-    public void ratingCountTest() {
-        // TODO: test ratingCount
-    }
-
-    /**
      * Test the property 'maxRatingValue'
      */
     @Test
     public void maxRatingValueTest() {
         // TODO: test maxRatingValue
+    }
+
+    /**
+     * Test the property 'ratingCount'
+     */
+    @Test
+    public void ratingCountTest() {
+        // TODO: test ratingCount
     }
 
     /**

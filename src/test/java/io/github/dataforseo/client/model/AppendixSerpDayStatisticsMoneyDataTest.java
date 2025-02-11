@@ -18,8 +18,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixFunctionTypeInfo;
+import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -121,19 +121,19 @@ public class AppendixSerpDayStatisticsMoneyDataTest {
     }
 
     /**
-     * Test the property 'aiSummary'
-     */
-    @Test
-    public void aiSummaryTest() {
-        // TODO: test aiSummary
-    }
-
-    /**
      * Test the property 'refundMoney'
      */
     @Test
     public void refundMoneyTest() {
         // TODO: test refundMoney
+    }
+
+    /**
+     * Test the property 'aiSummary'
+     */
+    @Test
+    public void aiSummaryTest() {
+        // TODO: test aiSummary
     }
 
 }

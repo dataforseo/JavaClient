@@ -18,6 +18,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AppendixBusinessListingsBusinessDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -101,6 +102,14 @@ public class AppendixAppDataLimitsRatesDataInfoTest {
     @Test
     public void categoriesTest() {
         // TODO: test categories
+    }
+
+    /**
+     * Test the property 'appListings'
+     */
+    @Test
+    public void appListingsTest() {
+        // TODO: test appListings
     }
 
     /**

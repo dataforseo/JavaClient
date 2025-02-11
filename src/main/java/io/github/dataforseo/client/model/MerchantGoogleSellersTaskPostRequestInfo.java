@@ -51,11 +51,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * MerchantGoogleSellersTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MerchantGoogleSellersTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_PRODUCT_ID = "product_id";
   @SerializedName(SERIALIZED_NAME_PRODUCT_ID)
   private String productId;
+
+  public static final String SERIALIZED_NAME_DATA_DOCID = "data_docid";
+  @SerializedName(SERIALIZED_NAME_DATA_DOCID)
+  private String dataDocid;
 
   public static final String SERIALIZED_NAME_PRIORITY = "priority";
   @SerializedName(SERIALIZED_NAME_PRIORITY)
@@ -118,7 +122,7 @@ public class MerchantGoogleSellersTaskPostRequestInfo {
   }
 
   /**
-   * unique product identifier on Google Shopping required field you can get this value making a separate request to the Google Shopping Products endpoint note that there is no full list of possible values as the product_id is a dynamic value assigned by Google example: 4485466949985702538 learn more about the parameter in this help center guide
+   * unique product identifier on Google Shopping required field if data_docid is not specified you can get this value for a certain product by making a separate request to the Google Shopping Products endpoint example: 4485466949985702538 learn more about the parameter in this help center guide
    * @return productId
    */
   @javax.annotation.Nullable
@@ -128,6 +132,25 @@ public class MerchantGoogleSellersTaskPostRequestInfo {
 
   public void setProductId(String productId) {
     this.productId = productId;
+  }
+
+
+  public MerchantGoogleSellersTaskPostRequestInfo dataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
+    return this;
+  }
+
+  /**
+   * unique identifier of the SERP data element required field if product_id is not specified you can get this value for a certain element by making a separate request to the Google Shopping Products endpoint example: 13071766526042404278
+   * @return dataDocid
+   */
+  @javax.annotation.Nullable
+  public String getDataDocid() {
+    return dataDocid;
+  }
+
+  public void setDataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
   }
 
 
@@ -441,6 +464,7 @@ public class MerchantGoogleSellersTaskPostRequestInfo {
     }
     MerchantGoogleSellersTaskPostRequestInfo merchantGoogleSellersTaskPostRequestInfo = (MerchantGoogleSellersTaskPostRequestInfo) o;
     return Objects.equals(this.productId, merchantGoogleSellersTaskPostRequestInfo.productId) &&
+        Objects.equals(this.dataDocid, merchantGoogleSellersTaskPostRequestInfo.dataDocid) &&
         Objects.equals(this.priority, merchantGoogleSellersTaskPostRequestInfo.priority) &&
         Objects.equals(this.locationName, merchantGoogleSellersTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, merchantGoogleSellersTaskPostRequestInfo.locationCode) &&
@@ -463,7 +487,7 @@ public class MerchantGoogleSellersTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(productId, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, getShopsOnGoogle, additionalSpecifications, tag, postbackUrl, postbackData, pingbackUrl, additionalProperties);
+    return Objects.hash(productId, dataDocid, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, getShopsOnGoogle, additionalSpecifications, tag, postbackUrl, postbackData, pingbackUrl, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -478,6 +502,7 @@ public class MerchantGoogleSellersTaskPostRequestInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantGoogleSellersTaskPostRequestInfo {\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    dataDocid: ").append(toIndentedString(dataDocid)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
@@ -515,6 +540,7 @@ public class MerchantGoogleSellersTaskPostRequestInfo {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("product_id");
+    openapiFields.add("data_docid");
     openapiFields.add("priority");
     openapiFields.add("location_name");
     openapiFields.add("location_code");
@@ -548,6 +574,9 @@ public class MerchantGoogleSellersTaskPostRequestInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("product_id") != null && !jsonObj.get("product_id").isJsonNull()) && !jsonObj.get("product_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `product_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("product_id").toString()));
+      }
+      if ((jsonObj.get("data_docid") != null && !jsonObj.get("data_docid").isJsonNull()) && !jsonObj.get("data_docid").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `data_docid` to be a primitive type in the JSON string but got `%s`", jsonObj.get("data_docid").toString()));
       }
       if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));

@@ -6352,7 +6352,7 @@ public class DataforseoLabsApi {
 
     /**
      * 
-     * The Related Keywords endpoint provides keywords appearing in the  \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
+     * The Related Keywords endpoint provides keywords appearing in the   \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
      * @param dataforseoLabsGoogleRelatedKeywordsLiveRequestInfo  (optional)
      * @return DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6369,7 +6369,7 @@ public class DataforseoLabsApi {
 
     /**
      * 
-     * The Related Keywords endpoint provides keywords appearing in the  \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
+     * The Related Keywords endpoint provides keywords appearing in the   \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
      * @param dataforseoLabsGoogleRelatedKeywordsLiveRequestInfo  (optional)
      * @return ApiResponse&lt;DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6387,7 +6387,7 @@ public class DataforseoLabsApi {
 
     /**
      *  (asynchronously)
-     * The Related Keywords endpoint provides keywords appearing in the  \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
+     * The Related Keywords endpoint provides keywords appearing in the   \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
      * @param dataforseoLabsGoogleRelatedKeywordsLiveRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
@@ -6942,7 +6942,7 @@ public class DataforseoLabsApi {
 
     /**
      * 
-     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
+     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
      * @param dataforseoLabsGoogleTopSearchesLiveRequestInfo  (optional)
      * @return DataforseoLabsGoogleTopSearchesLiveResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6959,7 +6959,7 @@ public class DataforseoLabsApi {
 
     /**
      * 
-     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
+     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
      * @param dataforseoLabsGoogleTopSearchesLiveRequestInfo  (optional)
      * @return ApiResponse&lt;DataforseoLabsGoogleTopSearchesLiveResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -6977,7 +6977,7 @@ public class DataforseoLabsApi {
 
     /**
      *  (asynchronously)
-     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
+     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
      * @param dataforseoLabsGoogleTopSearchesLiveRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call

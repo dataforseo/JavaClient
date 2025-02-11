@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixBusinessDataDayLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixBusinessListingsBusinessDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixAppDataDayStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixAppDataDayStatisticsMoneyData {
   public static final String SERIALIZED_NAME_APP_INFO = "app_info";
   @SerializedName(SERIALIZED_NAME_APP_INFO)
@@ -85,13 +85,13 @@ public class AppendixAppDataDayStatisticsMoneyData {
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
   private Double categories;
 
+  public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
+  @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
+  private AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings;
+
   public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
   private Double tasksReady;
-
-  public static final String SERIALIZED_NAME_APP_LISTINGS = "app_listings";
-  @SerializedName(SERIALIZED_NAME_APP_LISTINGS)
-  private AppendixBusinessDataDayLimitsRatesDataInfo appListings;
 
   public static final String SERIALIZED_NAME_REFUND_MONEY = "refund_money";
   @SerializedName(SERIALIZED_NAME_REFUND_MONEY)
@@ -252,6 +252,25 @@ public class AppendixAppDataDayStatisticsMoneyData {
   }
 
 
+  public AppendixAppDataDayStatisticsMoneyData appListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
+    this.appListings = appListings;
+    return this;
+  }
+
+  /**
+   * Get appListings
+   * @return appListings
+   */
+  @javax.annotation.Nullable
+  public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo getAppListings() {
+    return appListings;
+  }
+
+  public void setAppListings(AppendixBusinessListingsBusinessDataLimitsRatesDataInfo appListings) {
+    this.appListings = appListings;
+  }
+
+
   public AppendixAppDataDayStatisticsMoneyData tasksReady(Double tasksReady) {
     this.tasksReady = tasksReady;
     return this;
@@ -268,25 +287,6 @@ public class AppendixAppDataDayStatisticsMoneyData {
 
   public void setTasksReady(Double tasksReady) {
     this.tasksReady = tasksReady;
-  }
-
-
-  public AppendixAppDataDayStatisticsMoneyData appListings(AppendixBusinessDataDayLimitsRatesDataInfo appListings) {
-    this.appListings = appListings;
-    return this;
-  }
-
-  /**
-   * Get appListings
-   * @return appListings
-   */
-  @javax.annotation.Nullable
-  public AppendixBusinessDataDayLimitsRatesDataInfo getAppListings() {
-    return appListings;
-  }
-
-  public void setAppListings(AppendixBusinessDataDayLimitsRatesDataInfo appListings) {
-    this.appListings = appListings;
   }
 
 
@@ -371,8 +371,8 @@ public class AppendixAppDataDayStatisticsMoneyData {
         Objects.equals(this.languages, appendixAppDataDayStatisticsMoneyData.languages) &&
         Objects.equals(this.locations, appendixAppDataDayStatisticsMoneyData.locations) &&
         Objects.equals(this.categories, appendixAppDataDayStatisticsMoneyData.categories) &&
-        Objects.equals(this.tasksReady, appendixAppDataDayStatisticsMoneyData.tasksReady) &&
         Objects.equals(this.appListings, appendixAppDataDayStatisticsMoneyData.appListings) &&
+        Objects.equals(this.tasksReady, appendixAppDataDayStatisticsMoneyData.tasksReady) &&
         Objects.equals(this.refundMoney, appendixAppDataDayStatisticsMoneyData.refundMoney)&&
         Objects.equals(this.additionalProperties, appendixAppDataDayStatisticsMoneyData.additionalProperties);
   }
@@ -383,7 +383,7 @@ public class AppendixAppDataDayStatisticsMoneyData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, tasksReady, appListings, refundMoney, additionalProperties);
+    return Objects.hash(appInfo, appList, appReviews, appSearches, errors, languages, locations, categories, appListings, tasksReady, refundMoney, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -405,8 +405,8 @@ public class AppendixAppDataDayStatisticsMoneyData {
     sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    locations: ").append(toIndentedString(locations)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
-    sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("    appListings: ").append(toIndentedString(appListings)).append("\n");
+    sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
     sb.append("    refundMoney: ").append(toIndentedString(refundMoney)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -439,8 +439,8 @@ public class AppendixAppDataDayStatisticsMoneyData {
     openapiFields.add("languages");
     openapiFields.add("locations");
     openapiFields.add("categories");
-    openapiFields.add("tasks_ready");
     openapiFields.add("app_listings");
+    openapiFields.add("tasks_ready");
     openapiFields.add("refund_money");
 
     // a set of required properties/fields (JSON key names)
@@ -478,7 +478,7 @@ public class AppendixAppDataDayStatisticsMoneyData {
       }
       // validate the optional field `app_listings`
       if (jsonObj.get("app_listings") != null && !jsonObj.get("app_listings").isJsonNull()) {
-        AppendixBusinessDataDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("app_listings"));
+        AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("app_listings"));
       }
   }
 

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**extendedReviews** | [**AppendixKeywordsDataPriceDataInfo**](AppendixKeywordsDataPriceDataInfo.md) |  |  [optional] |
+|**extendedReviews** | [**AppendixAKeywordsDataPriceDataInfo**](AppendixAKeywordsDataPriceDataInfo.md) |  |  [optional] |
 |**hotelInfo** | [**AppendixHotelInfoGoogleBusinessDataPriceData**](AppendixHotelInfoGoogleBusinessDataPriceData.md) |  |  [optional] |
 |**hotelSearches** | [**AppendixGoogleBusinessDataPriceDataInfo**](AppendixGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
 |**myBusinessInfo** | [**AppendixGoogleBusinessDataPriceDataInfo**](AppendixGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |

@@ -19,9 +19,9 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AppendixAKeywordsDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixGoogleBusinessDataPriceDataInfo;
 import io.github.dataforseo.client.model.AppendixHotelInfoGoogleBusinessDataPriceData;
-import io.github.dataforseo.client.model.AppendixKeywordsDataPriceDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -51,11 +51,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixGoogleBusinessDataPriceData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixGoogleBusinessDataPriceData {
   public static final String SERIALIZED_NAME_EXTENDED_REVIEWS = "extended_reviews";
   @SerializedName(SERIALIZED_NAME_EXTENDED_REVIEWS)
-  private AppendixKeywordsDataPriceDataInfo extendedReviews;
+  private AppendixAKeywordsDataPriceDataInfo extendedReviews;
 
   public static final String SERIALIZED_NAME_HOTEL_INFO = "hotel_info";
   @SerializedName(SERIALIZED_NAME_HOTEL_INFO)
@@ -84,7 +84,7 @@ public class AppendixGoogleBusinessDataPriceData {
   public AppendixGoogleBusinessDataPriceData() {
   }
 
-  public AppendixGoogleBusinessDataPriceData extendedReviews(AppendixKeywordsDataPriceDataInfo extendedReviews) {
+  public AppendixGoogleBusinessDataPriceData extendedReviews(AppendixAKeywordsDataPriceDataInfo extendedReviews) {
     this.extendedReviews = extendedReviews;
     return this;
   }
@@ -94,11 +94,11 @@ public class AppendixGoogleBusinessDataPriceData {
    * @return extendedReviews
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDataPriceDataInfo getExtendedReviews() {
+  public AppendixAKeywordsDataPriceDataInfo getExtendedReviews() {
     return extendedReviews;
   }
 
-  public void setExtendedReviews(AppendixKeywordsDataPriceDataInfo extendedReviews) {
+  public void setExtendedReviews(AppendixAKeywordsDataPriceDataInfo extendedReviews) {
     this.extendedReviews = extendedReviews;
   }
 
@@ -347,7 +347,7 @@ public class AppendixGoogleBusinessDataPriceData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `extended_reviews`
       if (jsonObj.get("extended_reviews") != null && !jsonObj.get("extended_reviews").isJsonNull()) {
-        AppendixKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("extended_reviews"));
+        AppendixAKeywordsDataPriceDataInfo.validateJsonElement(jsonObj.get("extended_reviews"));
       }
       // validate the optional field `hotel_info`
       if (jsonObj.get("hotel_info") != null && !jsonObj.get("hotel_info").isJsonNull()) {

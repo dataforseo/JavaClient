@@ -22,6 +22,7 @@ import io.github.dataforseo.client.model.AdLinkElement;
 import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.ImagesElement;
 import io.github.dataforseo.client.model.PriceInfo;
+import io.github.dataforseo.client.model.RatingInfo;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -101,6 +102,14 @@ public class PaidSerpElementItemTest {
     @Test
     public void domainTest() {
         // TODO: test domain
+    }
+
+    /**
+     * Test the property 'websiteName'
+     */
+    @Test
+    public void websiteNameTest() {
+        // TODO: test websiteName
     }
 
     /**
@@ -192,19 +201,19 @@ public class PaidSerpElementItemTest {
     }
 
     /**
+     * Test the property 'rating'
+     */
+    @Test
+    public void ratingTest() {
+        // TODO: test rating
+    }
+
+    /**
      * Test the property 'rectangle'
      */
     @Test
     public void rectangleTest() {
         // TODO: test rectangle
-    }
-
-    /**
-     * Test the property 'websiteName'
-     */
-    @Test
-    public void websiteNameTest() {
-        // TODO: test websiteName
     }
 
 }

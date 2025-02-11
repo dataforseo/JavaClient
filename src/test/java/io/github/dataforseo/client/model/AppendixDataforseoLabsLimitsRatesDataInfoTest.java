@@ -311,4 +311,20 @@ public class AppendixDataforseoLabsLimitsRatesDataInfoTest {
         // TODO: test searchIntent
     }
 
+    /**
+     * Test the property 'historicalBulkTrafficEstimation'
+     */
+    @Test
+    public void historicalBulkTrafficEstimationTest() {
+        // TODO: test historicalBulkTrafficEstimation
+    }
+
+    /**
+     * Test the property 'categoriesForKeywords'
+     */
+    @Test
+    public void categoriesForKeywordsTest() {
+        // TODO: test categoriesForKeywords
+    }
+
 }

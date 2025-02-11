@@ -26,8 +26,8 @@ import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsMoneyD
 import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixKeywordsDataDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageDayStatisticsMoneyData;
@@ -62,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDayStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDayStatisticsMoneyData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
@@ -178,7 +178,7 @@ public class AppendixDayStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixDayLimitsRatesDataInfo reviews;
+  private AppendixJobsSerpLimitsRatesDataInfo reviews;
 
   public AppendixDayStatisticsMoneyData() {
   }
@@ -715,7 +715,7 @@ public class AppendixDayStatisticsMoneyData {
   }
 
 
-  public AppendixDayStatisticsMoneyData reviews(AppendixDayLimitsRatesDataInfo reviews) {
+  public AppendixDayStatisticsMoneyData reviews(AppendixJobsSerpLimitsRatesDataInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -725,11 +725,11 @@ public class AppendixDayStatisticsMoneyData {
    * @return reviews
    */
   @javax.annotation.Nullable
-  public AppendixDayLimitsRatesDataInfo getReviews() {
+  public AppendixJobsSerpLimitsRatesDataInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixDayLimitsRatesDataInfo reviews) {
+  public void setReviews(AppendixJobsSerpLimitsRatesDataInfo reviews) {
     this.reviews = reviews;
   }
 
@@ -992,7 +992,7 @@ public class AppendixDayStatisticsMoneyData {
       }
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixJobsSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
       }
   }
 

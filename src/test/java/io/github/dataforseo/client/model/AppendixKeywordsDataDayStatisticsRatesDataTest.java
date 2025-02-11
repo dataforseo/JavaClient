@@ -22,7 +22,6 @@ import io.github.dataforseo.client.model.AppendixBingKeywordsDataDayStatisticsDa
 import io.github.dataforseo.client.model.AppendixBingKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixInfo;
 import java.io.IOException;
@@ -190,19 +189,11 @@ public class AppendixKeywordsDataDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'idList'
+     * Test the property 'jobFunctions'
      */
     @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
-     * Test the property 'industries'
-     */
-    @Test
-    public void industriesTest() {
-        // TODO: test industries
+    public void jobFunctionsTest() {
+        // TODO: test jobFunctions
     }
 
     /**
@@ -222,11 +213,19 @@ public class AppendixKeywordsDataDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'jobFunctions'
+     * Test the property 'industries'
      */
     @Test
-    public void jobFunctionsTest() {
-        // TODO: test jobFunctions
+    public void industriesTest() {
+        // TODO: test industries
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
     }
 
 }

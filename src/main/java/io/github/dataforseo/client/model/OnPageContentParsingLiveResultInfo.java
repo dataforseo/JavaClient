@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.CrawlStatusInfo;
-import io.github.dataforseo.client.model.OnPageContentParsingItem;
+import io.github.dataforseo.client.model.OnPageContentParsingLiveItem;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageContentParsingLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageContentParsingLiveResultInfo {
   public static final String SERIALIZED_NAME_CRAWL_PROGRESS = "crawl_progress";
   @SerializedName(SERIALIZED_NAME_CRAWL_PROGRESS)
@@ -69,7 +69,7 @@ public class OnPageContentParsingLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OnPageContentParsingItem> items;
+  private List<OnPageContentParsingLiveItem> items;
 
   public OnPageContentParsingLiveResultInfo() {
   }
@@ -131,12 +131,12 @@ public class OnPageContentParsingLiveResultInfo {
   }
 
 
-  public OnPageContentParsingLiveResultInfo items(List<OnPageContentParsingItem> items) {
+  public OnPageContentParsingLiveResultInfo items(List<OnPageContentParsingLiveItem> items) {
     this.items = items;
     return this;
   }
 
-  public OnPageContentParsingLiveResultInfo addItemsItem(OnPageContentParsingItem itemsItem) {
+  public OnPageContentParsingLiveResultInfo addItemsItem(OnPageContentParsingLiveItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -149,11 +149,11 @@ public class OnPageContentParsingLiveResultInfo {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<OnPageContentParsingItem> getItems() {
+  public List<OnPageContentParsingLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<OnPageContentParsingItem> items) {
+  public void setItems(List<OnPageContentParsingLiveItem> items) {
     this.items = items;
   }
 
@@ -305,7 +305,7 @@ public class OnPageContentParsingLiveResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            OnPageContentParsingItem.validateJsonElement(jsonArrayitems.get(i));
+            OnPageContentParsingLiveItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksAnchorsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksAnchorsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -213,7 +213,7 @@ public class BacklinksAnchorsLiveRequestInfo {
   }
 
   /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;referring_links_types.anchors\&quot;,\&quot;&gt;\&quot;,\&quot;1\&quot;] [[\&quot;broken_pages\&quot;,\&quot;&gt;\&quot;,\&quot;2\&quot;], \&quot;and\&quot;, [\&quot;backlinks\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;referring_domains\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]]] The full list of possible filters is available here.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike, match, not_match you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;referring_links_types.anchors\&quot;,\&quot;&gt;\&quot;,\&quot;1\&quot;] [[\&quot;broken_pages\&quot;,\&quot;&gt;\&quot;,\&quot;2\&quot;], \&quot;and\&quot;, [\&quot;backlinks\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]] [[\&quot;first_seen\&quot;,\&quot;&gt;\&quot;,\&quot;2017-10-23 11:31:45 +00:00\&quot;], \&quot;and\&quot;, [[\&quot;anchor\&quot;,\&quot;like\&quot;,\&quot;%seo%\&quot;],\&quot;or\&quot;,[\&quot;referring_domains\&quot;,\&quot;&gt;\&quot;,\&quot;10\&quot;]]] The full list of possible filters is available here.
    * @return filters
    */
   @javax.annotation.Nullable

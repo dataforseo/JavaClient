@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordInfoNormalizedWithInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordInfoNormalizedWithInfo {
   public static final String SERIALIZED_NAME_LAST_UPDATED_TIME = "last_updated_time";
   @SerializedName(SERIALIZED_NAME_LAST_UPDATED_TIME)
@@ -61,6 +61,10 @@ public class KeywordInfoNormalizedWithInfo {
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
   private Long searchVolume;
+
+  public static final String SERIALIZED_NAME_IS_NORMALIZED = "is_normalized";
+  @SerializedName(SERIALIZED_NAME_IS_NORMALIZED)
+  private Boolean isNormalized;
 
   public static final String SERIALIZED_NAME_MONTHLY_SEARCHES = "monthly_searches";
   @SerializedName(SERIALIZED_NAME_MONTHLY_SEARCHES)
@@ -104,6 +108,25 @@ public class KeywordInfoNormalizedWithInfo {
 
   public void setSearchVolume(Long searchVolume) {
     this.searchVolume = searchVolume;
+  }
+
+
+  public KeywordInfoNormalizedWithInfo isNormalized(Boolean isNormalized) {
+    this.isNormalized = isNormalized;
+    return this;
+  }
+
+  /**
+   * keyword info is normalized if true, values are normalized with Bing data
+   * @return isNormalized
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsNormalized() {
+    return isNormalized;
+  }
+
+  public void setIsNormalized(Boolean isNormalized) {
+    this.isNormalized = isNormalized;
   }
 
 
@@ -190,6 +213,7 @@ public class KeywordInfoNormalizedWithInfo {
     KeywordInfoNormalizedWithInfo keywordInfoNormalizedWithInfo = (KeywordInfoNormalizedWithInfo) o;
     return Objects.equals(this.lastUpdatedTime, keywordInfoNormalizedWithInfo.lastUpdatedTime) &&
         Objects.equals(this.searchVolume, keywordInfoNormalizedWithInfo.searchVolume) &&
+        Objects.equals(this.isNormalized, keywordInfoNormalizedWithInfo.isNormalized) &&
         Objects.equals(this.monthlySearches, keywordInfoNormalizedWithInfo.monthlySearches)&&
         Objects.equals(this.additionalProperties, keywordInfoNormalizedWithInfo.additionalProperties);
   }
@@ -200,7 +224,7 @@ public class KeywordInfoNormalizedWithInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(lastUpdatedTime, searchVolume, monthlySearches, additionalProperties);
+    return Objects.hash(lastUpdatedTime, searchVolume, isNormalized, monthlySearches, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -216,6 +240,7 @@ public class KeywordInfoNormalizedWithInfo {
     sb.append("class KeywordInfoNormalizedWithInfo {\n");
     sb.append("    lastUpdatedTime: ").append(toIndentedString(lastUpdatedTime)).append("\n");
     sb.append("    searchVolume: ").append(toIndentedString(searchVolume)).append("\n");
+    sb.append("    isNormalized: ").append(toIndentedString(isNormalized)).append("\n");
     sb.append("    monthlySearches: ").append(toIndentedString(monthlySearches)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -242,6 +267,7 @@ public class KeywordInfoNormalizedWithInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("last_updated_time");
     openapiFields.add("search_volume");
+    openapiFields.add("is_normalized");
     openapiFields.add("monthly_searches");
 
     // a set of required properties/fields (JSON key names)

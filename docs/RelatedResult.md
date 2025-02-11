@@ -15,7 +15,7 @@
 |**cacheUrl** | **String** | cached version of the page |  [optional] |
 |**relatedSearchUrl** | **String** | URL to a similar search URL to a new search for the same keyword(s) on related sites |  [optional] |
 |**breadcrumb** | **String** | breadcrumb in SERP |  [optional] |
-|**websiteName** | **String** | name of the website in SERP |  [optional] |
+|**websiteName** | **String** | name of the website in the ad element |  [optional] |
 |**isImage** | **Boolean** | indicates whether the element contains an image |  [optional] |
 |**isVideo** | **Boolean** | indicates whether the element contains a video |  [optional] |
 |**description** | **String** | description of the hotel booking element |  [optional] |

@@ -19,7 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
-import io.github.dataforseo.client.model.SearchVolumeTrendInfo;
+import io.github.dataforseo.client.model.SearchVolumeTrend;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

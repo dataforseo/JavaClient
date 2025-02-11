@@ -15,9 +15,9 @@
 |**languages** | **Double** |  |  [optional] |
 |**locations** | **Double** |  |  [optional] |
 |**categories** | **Double** |  |  [optional] |
+|**appListings** | [**AppendixBusinessListingsBusinessDataLimitsRatesDataInfo**](AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**tasksReady** | **Double** |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
-|**appListings** | [**AppendixBusinessListingsBusinessDataLimitsRatesDataInfo**](AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
 
 
 

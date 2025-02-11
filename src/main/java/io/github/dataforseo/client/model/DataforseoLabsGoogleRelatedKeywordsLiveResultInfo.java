@@ -20,12 +20,11 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.DataforseoLabsRelatedKeywordsLiveItem;
+import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -54,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleRelatedKeywordsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleRelatedKeywordsLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -66,7 +65,7 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_SEED_KEYWORD_DATA = "seed_keyword_data";
   @SerializedName(SERIALIZED_NAME_SEED_KEYWORD_DATA)
-  private Map<String, String> seedKeywordData;
+  private KeywordDataInfo seedKeywordData;
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
@@ -129,29 +128,21 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleRelatedKeywordsLiveResultInfo seedKeywordData(Map<String, String> seedKeywordData) {
+  public DataforseoLabsGoogleRelatedKeywordsLiveResultInfo seedKeywordData(KeywordDataInfo seedKeywordData) {
     this.seedKeywordData = seedKeywordData;
     return this;
   }
 
-  public DataforseoLabsGoogleRelatedKeywordsLiveResultInfo putSeedKeywordDataItem(String key, String seedKeywordDataItem) {
-    if (this.seedKeywordData == null) {
-      this.seedKeywordData = new HashMap<>();
-    }
-    this.seedKeywordData.put(key, seedKeywordDataItem);
-    return this;
-  }
-
   /**
-   * keyword data for the seed keyword fields in the array are identical to that of keyword_data
+   * Get seedKeywordData
    * @return seedKeywordData
    */
   @javax.annotation.Nullable
-  public Map<String, String> getSeedKeywordData() {
+  public KeywordDataInfo getSeedKeywordData() {
     return seedKeywordData;
   }
 
-  public void setSeedKeywordData(Map<String, String> seedKeywordData) {
+  public void setSeedKeywordData(KeywordDataInfo seedKeywordData) {
     this.seedKeywordData = seedKeywordData;
   }
 
@@ -406,6 +397,10 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveResultInfo {
       }
       if ((jsonObj.get("seed_keyword") != null && !jsonObj.get("seed_keyword").isJsonNull()) && !jsonObj.get("seed_keyword").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `seed_keyword` to be a primitive type in the JSON string but got `%s`", jsonObj.get("seed_keyword").toString()));
+      }
+      // validate the optional field `seed_keyword_data`
+      if (jsonObj.get("seed_keyword_data") != null && !jsonObj.get("seed_keyword_data").isJsonNull()) {
+        KeywordDataInfo.validateJsonElement(jsonObj.get("seed_keyword_data"));
       }
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));

@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksCompetitorsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksCompetitorsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -163,7 +163,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
   }
 
   /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;rank\&quot;,\&quot;&gt;\&quot;,\&quot;100\&quot;] [[\&quot;target\&quot;,\&quot;like\&quot;,\&quot;%forbes%\&quot;], \&quot;and\&quot;, [[\&quot;rank\&quot;,\&quot;&gt;\&quot;,\&quot;100\&quot;],\&quot;or\&quot;,[\&quot;intersections\&quot;,\&quot;&gt;\&quot;,\&quot;5\&quot;]]] The full list of possible filters is available here.
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &#x3D;, &lt;&gt;, in, not_in, like, not_like, ilike, not_ilike, match, not_match you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;rank\&quot;,\&quot;&gt;\&quot;,\&quot;100\&quot;] [[\&quot;target\&quot;,\&quot;like\&quot;,\&quot;%forbes%\&quot;], \&quot;and\&quot;, [[\&quot;rank\&quot;,\&quot;&gt;\&quot;,\&quot;100\&quot;],\&quot;or\&quot;,[\&quot;intersections\&quot;,\&quot;&gt;\&quot;,\&quot;5\&quot;]]] The full list of possible filters is available here.
    * @return filters
    */
   @javax.annotation.Nullable

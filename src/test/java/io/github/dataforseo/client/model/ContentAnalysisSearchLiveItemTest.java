@@ -19,7 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AnalysisContentInfo;
-import io.github.dataforseo.client.model.RatingInfo;
+import io.github.dataforseo.client.model.ContentAnalysisRatingInfo;
 import io.github.dataforseo.client.model.SocialMetricsInfo;
 import java.io.IOException;
 import java.util.ArrayList;

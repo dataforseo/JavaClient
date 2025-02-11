@@ -759,7 +759,7 @@ public class DataforseoLabsApiTest {
     }
 
     /**
-     * The Related Keywords endpoint provides keywords appearing in the  \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
+     * The Related Keywords endpoint provides keywords appearing in the   \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -819,7 +819,7 @@ public class DataforseoLabsApiTest {
     }
 
     /**
-     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 3.5 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
+     * ‌‌ The Top Searches endpoint of DataForSEO Labs API can provide you with over 7 billion keywords from the DataForSEO Keyword Database. Each keyword in the API response is provided with a set of relevant keyword data with Google Ads metrics, product categories, and Google SERP data. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/top_searches/live/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

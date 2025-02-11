@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGooglePlayInfoOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_APP_ID = "app_id";
   @SerializedName(SERIALIZED_NAME_APP_ID)
@@ -131,7 +131,7 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
 
   public static final String SERIALIZED_NAME_SIZE = "size";
   @SerializedName(SERIALIZED_NAME_SIZE)
-  private String size;
+  private Float size;
 
   public static final String SERIALIZED_NAME_RELEASED_DATE = "released_date";
   @SerializedName(SERIALIZED_NAME_RELEASED_DATE)
@@ -514,7 +514,7 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
   }
 
 
-  public AppDataGooglePlayInfoOrganicSerpElementItem size(String size) {
+  public AppDataGooglePlayInfoOrganicSerpElementItem size(Float size) {
     this.size = size;
     return this;
   }
@@ -524,11 +524,11 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
    * @return size
    */
   @javax.annotation.Nullable
-  public String getSize() {
+  public Float getSize() {
     return size;
   }
 
-  public void setSize(String size) {
+  public void setSize(Float size) {
     this.size = size;
   }
 

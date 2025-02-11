@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TopicInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TopicInfo {
   public static final String SERIALIZED_NAME_H_TITLE = "h_title";
   @SerializedName(SERIALIZED_NAME_H_TITLE)
@@ -73,7 +73,7 @@ public class TopicInfo {
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
   @SerializedName(SERIALIZED_NAME_LEVEL)
-  private Integer level;
+  private String level;
 
   public static final String SERIALIZED_NAME_PRIMARY_CONTENT = "primary_content";
   @SerializedName(SERIALIZED_NAME_PRIMARY_CONTENT)
@@ -166,7 +166,7 @@ public class TopicInfo {
   }
 
 
-  public TopicInfo level(Integer level) {
+  public TopicInfo level(String level) {
     this.level = level;
     return this;
   }
@@ -176,11 +176,11 @@ public class TopicInfo {
    * @return level
    */
   @javax.annotation.Nullable
-  public Integer getLevel() {
+  public String getLevel() {
     return level;
   }
 
-  public void setLevel(Integer level) {
+  public void setLevel(String level) {
     this.level = level;
   }
 
@@ -419,6 +419,9 @@ public class TopicInfo {
       }
       if ((jsonObj.get("language") != null && !jsonObj.get("language").isJsonNull()) && !jsonObj.get("language").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language").toString()));
+      }
+      if ((jsonObj.get("level") != null && !jsonObj.get("level").isJsonNull()) && !jsonObj.get("level").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `level` to be a primitive type in the JSON string but got `%s`", jsonObj.get("level").toString()));
       }
       if (jsonObj.get("primary_content") != null && !jsonObj.get("primary_content").isJsonNull()) {
         JsonArray jsonArrayprimaryContent = jsonObj.getAsJsonArray("primary_content");

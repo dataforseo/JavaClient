@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * HotelAmenityItemInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HotelAmenityItemInfo {
   public static final String SERIALIZED_NAME_AMENITY = "amenity";
   @SerializedName(SERIALIZED_NAME_AMENITY)
@@ -66,6 +66,10 @@ public class HotelAmenityItemInfo {
   public static final String SERIALIZED_NAME_HINT_LABEL = "hint_label";
   @SerializedName(SERIALIZED_NAME_HINT_LABEL)
   private String hintLabel;
+
+  public static final String SERIALIZED_NAME_IS_AVAILABLE = "is_available";
+  @SerializedName(SERIALIZED_NAME_IS_AVAILABLE)
+  private Boolean isAvailable;
 
   public HotelAmenityItemInfo() {
   }
@@ -145,6 +149,25 @@ public class HotelAmenityItemInfo {
     this.hintLabel = hintLabel;
   }
 
+
+  public HotelAmenityItemInfo isAvailable(Boolean isAvailable) {
+    this.isAvailable = isAvailable;
+    return this;
+  }
+
+  /**
+   * indicates whether the amenity is available in the hotel
+   * @return isAvailable
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsAvailable() {
+    return isAvailable;
+  }
+
+  public void setIsAvailable(Boolean isAvailable) {
+    this.isAvailable = isAvailable;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -203,7 +226,8 @@ public class HotelAmenityItemInfo {
     return Objects.equals(this.amenity, hotelAmenityItemInfo.amenity) &&
         Objects.equals(this.amenityLabel, hotelAmenityItemInfo.amenityLabel) &&
         Objects.equals(this.hint, hotelAmenityItemInfo.hint) &&
-        Objects.equals(this.hintLabel, hotelAmenityItemInfo.hintLabel)&&
+        Objects.equals(this.hintLabel, hotelAmenityItemInfo.hintLabel) &&
+        Objects.equals(this.isAvailable, hotelAmenityItemInfo.isAvailable)&&
         Objects.equals(this.additionalProperties, hotelAmenityItemInfo.additionalProperties);
   }
 
@@ -213,7 +237,7 @@ public class HotelAmenityItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(amenity, amenityLabel, hint, hintLabel, additionalProperties);
+    return Objects.hash(amenity, amenityLabel, hint, hintLabel, isAvailable, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -231,6 +255,7 @@ public class HotelAmenityItemInfo {
     sb.append("    amenityLabel: ").append(toIndentedString(amenityLabel)).append("\n");
     sb.append("    hint: ").append(toIndentedString(hint)).append("\n");
     sb.append("    hintLabel: ").append(toIndentedString(hintLabel)).append("\n");
+    sb.append("    isAvailable: ").append(toIndentedString(isAvailable)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -258,6 +283,7 @@ public class HotelAmenityItemInfo {
     openapiFields.add("amenity_label");
     openapiFields.add("hint");
     openapiFields.add("hint_label");
+    openapiFields.add("is_available");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

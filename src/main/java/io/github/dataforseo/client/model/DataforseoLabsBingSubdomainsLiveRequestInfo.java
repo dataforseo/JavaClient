@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingSubdomainsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsBingSubdomainsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -80,6 +80,10 @@ public class DataforseoLabsBingSubdomainsLiveRequestInfo {
   public static final String SERIALIZED_NAME_HISTORICAL_SERP_MODE = "historical_serp_mode";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_SERP_MODE)
   private String historicalSerpMode;
+
+  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
+  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
+  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_FILTERS = "filters";
   @SerializedName(SERIALIZED_NAME_FILTERS)
@@ -242,6 +246,25 @@ public class DataforseoLabsBingSubdomainsLiveRequestInfo {
 
   public void setHistoricalSerpMode(String historicalSerpMode) {
     this.historicalSerpMode = historicalSerpMode;
+  }
+
+
+  public DataforseoLabsBingSubdomainsLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+    return this;
+  }
+
+  /**
+   * ignore highly similar keywords optional field if set to true, only core keywords will be returned, all highly similar keywords will be excluded; default value: false
+   * @return ignoreSynonyms
+   */
+  @javax.annotation.Nullable
+  public Boolean getIgnoreSynonyms() {
+    return ignoreSynonyms;
+  }
+
+  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
   }
 
 
@@ -417,6 +440,7 @@ public class DataforseoLabsBingSubdomainsLiveRequestInfo {
         Objects.equals(this.languageCode, dataforseoLabsBingSubdomainsLiveRequestInfo.languageCode) &&
         Objects.equals(this.itemTypes, dataforseoLabsBingSubdomainsLiveRequestInfo.itemTypes) &&
         Objects.equals(this.historicalSerpMode, dataforseoLabsBingSubdomainsLiveRequestInfo.historicalSerpMode) &&
+        Objects.equals(this.ignoreSynonyms, dataforseoLabsBingSubdomainsLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.filters, dataforseoLabsBingSubdomainsLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsBingSubdomainsLiveRequestInfo.orderBy) &&
         Objects.equals(this.limit, dataforseoLabsBingSubdomainsLiveRequestInfo.limit) &&
@@ -431,7 +455,7 @@ public class DataforseoLabsBingSubdomainsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, historicalSerpMode, filters, orderBy, limit, offset, tag, additionalProperties);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, historicalSerpMode, ignoreSynonyms, filters, orderBy, limit, offset, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -452,6 +476,7 @@ public class DataforseoLabsBingSubdomainsLiveRequestInfo {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    historicalSerpMode: ").append(toIndentedString(historicalSerpMode)).append("\n");
+    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
@@ -487,6 +512,7 @@ public class DataforseoLabsBingSubdomainsLiveRequestInfo {
     openapiFields.add("language_code");
     openapiFields.add("item_types");
     openapiFields.add("historical_serp_mode");
+    openapiFields.add("ignore_synonyms");
     openapiFields.add("filters");
     openapiFields.add("order_by");
     openapiFields.add("limit");

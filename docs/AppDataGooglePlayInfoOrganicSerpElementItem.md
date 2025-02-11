@@ -25,7 +25,7 @@
 |**developerWebsite** | **String** | official website of the developer |  [optional] |
 |**version** | **String** | current version of the app |  [optional] |
 |**minimumOsVersion** | **String** | minimum OS version required to install the app |  [optional] |
-|**size** | **String** | size of the app |  [optional] |
+|**size** | **Float** | size of the app |  [optional] |
 |**releasedDate** | **String** | date and time when the app was released in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”; example: 2019-11-15 12:57:46 +00:00 |  [optional] |
 |**lastUpdateDate** | **String** | date and time when the app was last updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”; example: 2019-11-15 12:57:46 +00:00 |  [optional] |
 |**updateNotes** | **String** | update notes contains the latest update notes from the developer |  [optional] |

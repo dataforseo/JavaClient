@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsBingRelevantPagesLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -88,6 +88,10 @@ public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
   public static final String SERIALIZED_NAME_HISTORICAL_SERP_MODE = "historical_serp_mode";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_SERP_MODE)
   private String historicalSerpMode;
+
+  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
+  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
+  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_FILTERS = "filters";
   @SerializedName(SERIALIZED_NAME_FILTERS)
@@ -283,6 +287,25 @@ public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
   }
 
 
+  public DataforseoLabsBingRelevantPagesLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+    return this;
+  }
+
+  /**
+   * ignore highly similar keywords optional field if set to true, only core keywords will be returned, all highly similar keywords will be excluded; default value: false
+   * @return ignoreSynonyms
+   */
+  @javax.annotation.Nullable
+  public Boolean getIgnoreSynonyms() {
+    return ignoreSynonyms;
+  }
+
+  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+  }
+
+
   public DataforseoLabsBingRelevantPagesLiveRequestInfo filters(List<Object> filters) {
     this.filters = filters;
     return this;
@@ -297,7 +320,7 @@ public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
   }
 
   /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in example: [\&quot;metrics.paid.count\&quot;,\&quot;&gt;\&quot;,0] [[\&quot;metrics.organic.count\&quot;,\&quot;&gt;\&quot;,50],\&quot;and\&quot;,[\&quot;metrics.organic.pos_1\&quot;,\&quot;&lt;&gt;\&quot;,0]] [[\&quot;\&quot;metrics.organic.count\&quot;,\&quot;&gt;\&quot;,50\&quot;], \&quot;and\&quot;, [[\&quot;metrics.organic.pos_1\&quot;,\&quot;&lt;&gt;\&quot;,0],\&quot;or\&quot;,[\&quot;metrics.organic.pos_2_3\&quot;,\&quot;&lt;&gt;\&quot;,0]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, match, not_match example: [\&quot;metrics.paid.count\&quot;,\&quot;&gt;\&quot;,0] [[\&quot;metrics.organic.count\&quot;,\&quot;&gt;\&quot;,50],\&quot;and\&quot;,[\&quot;metrics.organic.pos_1\&quot;,\&quot;&lt;&gt;\&quot;,0]] [[\&quot;\&quot;metrics.organic.count\&quot;,\&quot;&gt;\&quot;,50\&quot;], \&quot;and\&quot;, [[\&quot;metrics.organic.pos_1\&quot;,\&quot;&lt;&gt;\&quot;,0],\&quot;or\&quot;,[\&quot;metrics.organic.pos_2_3\&quot;,\&quot;&lt;&gt;\&quot;,0]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
    * @return filters
    */
   @javax.annotation.Nullable
@@ -419,6 +442,7 @@ public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
         Objects.equals(this.limit, dataforseoLabsBingRelevantPagesLiveRequestInfo.limit) &&
         Objects.equals(this.offset, dataforseoLabsBingRelevantPagesLiveRequestInfo.offset) &&
         Objects.equals(this.historicalSerpMode, dataforseoLabsBingRelevantPagesLiveRequestInfo.historicalSerpMode) &&
+        Objects.equals(this.ignoreSynonyms, dataforseoLabsBingRelevantPagesLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.filters, dataforseoLabsBingRelevantPagesLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsBingRelevantPagesLiveRequestInfo.orderBy) &&
         Objects.equals(this.tag, dataforseoLabsBingRelevantPagesLiveRequestInfo.tag)&&
@@ -431,7 +455,7 @@ public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, limit, offset, historicalSerpMode, filters, orderBy, tag, additionalProperties);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, limit, offset, historicalSerpMode, ignoreSynonyms, filters, orderBy, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -454,6 +478,7 @@ public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    historicalSerpMode: ").append(toIndentedString(historicalSerpMode)).append("\n");
+    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -489,6 +514,7 @@ public class DataforseoLabsBingRelevantPagesLiveRequestInfo {
     openapiFields.add("limit");
     openapiFields.add("offset");
     openapiFields.add("historical_serp_mode");
+    openapiFields.add("ignore_synonyms");
     openapiFields.add("filters");
     openapiFields.add("order_by");
     openapiFields.add("tag");

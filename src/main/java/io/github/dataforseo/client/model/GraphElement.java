@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GraphElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GraphElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,7 +61,7 @@ public class GraphElement {
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
-  private Integer value;
+  private Float value;
 
   public GraphElement() {
   }
@@ -104,7 +104,7 @@ public class GraphElement {
   }
 
 
-  public GraphElement value(Integer value) {
+  public GraphElement value(Float value) {
     this.value = value;
     return this;
   }
@@ -114,11 +114,11 @@ public class GraphElement {
    * @return value
    */
   @javax.annotation.Nullable
-  public Integer getValue() {
+  public Float getValue() {
     return value;
   }
 
-  public void setValue(Integer value) {
+  public void setValue(Float value) {
     this.value = value;
   }
 

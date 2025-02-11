@@ -25,8 +25,8 @@ import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsMoneyD
 import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixKeywordsDataDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageDayStatisticsMoneyData;

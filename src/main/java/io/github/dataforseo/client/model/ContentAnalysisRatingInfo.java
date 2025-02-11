@@ -47,9 +47,9 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 /**
- * content rating rating related to content_info
+ * ContentAnalysisRatingInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisRatingInfo {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -59,17 +59,17 @@ public class ContentAnalysisRatingInfo {
   @SerializedName(SERIALIZED_NAME_RATING_VALUE)
   private Double ratingValue;
 
+  public static final String SERIALIZED_NAME_MAX_RATING_VALUE = "max_rating_value";
+  @SerializedName(SERIALIZED_NAME_MAX_RATING_VALUE)
+  private Integer maxRatingValue;
+
   public static final String SERIALIZED_NAME_RATING_COUNT = "rating_count";
   @SerializedName(SERIALIZED_NAME_RATING_COUNT)
   private Long ratingCount;
 
-  public static final String SERIALIZED_NAME_MAX_RATING_VALUE = "max_rating_value";
-  @SerializedName(SERIALIZED_NAME_MAX_RATING_VALUE)
-  private String maxRatingValue;
-
   public static final String SERIALIZED_NAME_RELATIVE_RATING = "relative_rating";
   @SerializedName(SERIALIZED_NAME_RELATIVE_RATING)
-  private Double relativeRating;
+  private Float relativeRating;
 
   public ContentAnalysisRatingInfo() {
   }
@@ -112,6 +112,25 @@ public class ContentAnalysisRatingInfo {
   }
 
 
+  public ContentAnalysisRatingInfo maxRatingValue(Integer maxRatingValue) {
+    this.maxRatingValue = maxRatingValue;
+    return this;
+  }
+
+  /**
+   * maximum value for the rating name
+   * @return maxRatingValue
+   */
+  @javax.annotation.Nullable
+  public Integer getMaxRatingValue() {
+    return maxRatingValue;
+  }
+
+  public void setMaxRatingValue(Integer maxRatingValue) {
+    this.maxRatingValue = maxRatingValue;
+  }
+
+
   public ContentAnalysisRatingInfo ratingCount(Long ratingCount) {
     this.ratingCount = ratingCount;
     return this;
@@ -131,26 +150,7 @@ public class ContentAnalysisRatingInfo {
   }
 
 
-  public ContentAnalysisRatingInfo maxRatingValue(String maxRatingValue) {
-    this.maxRatingValue = maxRatingValue;
-    return this;
-  }
-
-  /**
-   *  maximum value for the rating name
-   * @return maxRatingValue
-   */
-  @javax.annotation.Nullable
-  public String getMaxRatingValue() {
-    return maxRatingValue;
-  }
-
-  public void setMaxRatingValue(String maxRatingValue) {
-    this.maxRatingValue = maxRatingValue;
-  }
-
-
-  public ContentAnalysisRatingInfo relativeRating(Double relativeRating) {
+  public ContentAnalysisRatingInfo relativeRating(Float relativeRating) {
     this.relativeRating = relativeRating;
     return this;
   }
@@ -160,11 +160,11 @@ public class ContentAnalysisRatingInfo {
    * @return relativeRating
    */
   @javax.annotation.Nullable
-  public Double getRelativeRating() {
+  public Float getRelativeRating() {
     return relativeRating;
   }
 
-  public void setRelativeRating(Double relativeRating) {
+  public void setRelativeRating(Float relativeRating) {
     this.relativeRating = relativeRating;
   }
 
@@ -225,8 +225,8 @@ public class ContentAnalysisRatingInfo {
     ContentAnalysisRatingInfo contentAnalysisRatingInfo = (ContentAnalysisRatingInfo) o;
     return Objects.equals(this.name, contentAnalysisRatingInfo.name) &&
         Objects.equals(this.ratingValue, contentAnalysisRatingInfo.ratingValue) &&
-        Objects.equals(this.ratingCount, contentAnalysisRatingInfo.ratingCount) &&
         Objects.equals(this.maxRatingValue, contentAnalysisRatingInfo.maxRatingValue) &&
+        Objects.equals(this.ratingCount, contentAnalysisRatingInfo.ratingCount) &&
         Objects.equals(this.relativeRating, contentAnalysisRatingInfo.relativeRating)&&
         Objects.equals(this.additionalProperties, contentAnalysisRatingInfo.additionalProperties);
   }
@@ -237,7 +237,7 @@ public class ContentAnalysisRatingInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, ratingValue, ratingCount, maxRatingValue, relativeRating, additionalProperties);
+    return Objects.hash(name, ratingValue, maxRatingValue, ratingCount, relativeRating, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -253,8 +253,8 @@ public class ContentAnalysisRatingInfo {
     sb.append("class ContentAnalysisRatingInfo {\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    ratingValue: ").append(toIndentedString(ratingValue)).append("\n");
-    sb.append("    ratingCount: ").append(toIndentedString(ratingCount)).append("\n");
     sb.append("    maxRatingValue: ").append(toIndentedString(maxRatingValue)).append("\n");
+    sb.append("    ratingCount: ").append(toIndentedString(ratingCount)).append("\n");
     sb.append("    relativeRating: ").append(toIndentedString(relativeRating)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -281,8 +281,8 @@ public class ContentAnalysisRatingInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("name");
     openapiFields.add("rating_value");
-    openapiFields.add("rating_count");
     openapiFields.add("max_rating_value");
+    openapiFields.add("rating_count");
     openapiFields.add("relative_rating");
 
     // a set of required properties/fields (JSON key names)
@@ -304,9 +304,6 @@ public class ContentAnalysisRatingInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
-      }
-      if ((jsonObj.get("max_rating_value") != null && !jsonObj.get("max_rating_value").isJsonNull()) && !jsonObj.get("max_rating_value").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `max_rating_value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("max_rating_value").toString()));
       }
   }
 

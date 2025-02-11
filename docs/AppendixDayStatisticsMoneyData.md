@@ -35,7 +35,7 @@
 |**value** | **String** | time period for grouping day in the yyyy-MM-dd format minute in the yyyy-MM-dd HH:mm format |  [optional] |
 |**totalTrafficAnalytics** | **Double** |  |  [optional] |
 |**totalReviews** | **Double** |  |  [optional] |
-|**reviews** | [**AppendixDayLimitsRatesDataInfo**](AppendixDayLimitsRatesDataInfo.md) |  |  [optional] |
+|**reviews** | [**AppendixJobsSerpLimitsRatesDataInfo**](AppendixJobsSerpLimitsRatesDataInfo.md) |  |  [optional] |
 
 
 

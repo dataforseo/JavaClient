@@ -18,6 +18,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.AmazonApplicableVouchersItem;
 import io.github.dataforseo.client.model.AmazonProductNewerModelInfo;
 import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
 import io.github.dataforseo.client.model.BaseProductInformationItem;
@@ -187,6 +188,14 @@ public class AmazonAmazonProductInfoSerpElementItemTest {
     @Test
     public void isNewerModelAvailableTest() {
         // TODO: test isNewerModelAvailable
+    }
+
+    /**
+     * Test the property 'applicableVouchers'
+     */
+    @Test
+    public void applicableVouchersTest() {
+        // TODO: test applicableVouchers
     }
 
     /**

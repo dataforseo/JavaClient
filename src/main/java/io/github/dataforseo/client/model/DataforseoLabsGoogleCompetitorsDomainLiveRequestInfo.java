@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -108,6 +108,10 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo {
   public static final String SERIALIZED_NAME_INTERSECTING_DOMAINS = "intersecting_domains";
   @SerializedName(SERIALIZED_NAME_INTERSECTING_DOMAINS)
   private List<String> intersectingDomains;
+
+  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
+  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
+  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -414,6 +418,25 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo {
   }
 
 
+  public DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+    return this;
+  }
+
+  /**
+   * ignore highly similar keywords optional field if set to true, only core keywords will be returned, all highly similar keywords will be excluded; default value: false
+   * @return ignoreSynonyms
+   */
+  @javax.annotation.Nullable
+  public Boolean getIgnoreSynonyms() {
+    return ignoreSynonyms;
+  }
+
+  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
+    this.ignoreSynonyms = ignoreSynonyms;
+  }
+
+
   public DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -501,6 +524,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo {
         Objects.equals(this.maxRankGroup, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.maxRankGroup) &&
         Objects.equals(this.excludeTopDomains, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.excludeTopDomains) &&
         Objects.equals(this.intersectingDomains, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.intersectingDomains) &&
+        Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.tag, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.additionalProperties);
   }
@@ -511,7 +535,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, filters, orderBy, limit, offset, maxRankGroup, excludeTopDomains, intersectingDomains, tag, additionalProperties);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, filters, orderBy, limit, offset, maxRankGroup, excludeTopDomains, intersectingDomains, ignoreSynonyms, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -539,6 +563,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo {
     sb.append("    maxRankGroup: ").append(toIndentedString(maxRankGroup)).append("\n");
     sb.append("    excludeTopDomains: ").append(toIndentedString(excludeTopDomains)).append("\n");
     sb.append("    intersectingDomains: ").append(toIndentedString(intersectingDomains)).append("\n");
+    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -577,6 +602,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo {
     openapiFields.add("max_rank_group");
     openapiFields.add("exclude_top_domains");
     openapiFields.add("intersecting_domains");
+    openapiFields.add("ignore_synonyms");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)

@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleAdsAdvertisersTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleAdsAdvertisersTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -115,7 +115,7 @@ public class SerpGoogleAdsAdvertisersTaskPostRequestInfo {
   }
 
   /**
-   * full name of search engine location required field if you don’t specify location_code or location_coordinate if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_advertisers/locations example: London,England,United Kingdom
+   * full name of search engine location optional field if you use this field, you don’t need to specify location_code or location_coordinate you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_advertisers/locations example: London,England,United Kingdom Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -134,7 +134,7 @@ public class SerpGoogleAdsAdvertisersTaskPostRequestInfo {
   }
 
   /**
-   * search engine location code required field if you don’t specify location_name or location_coordinate if you use this field, you don’t need to specify location_name or location_coordinate you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_advertisers/locations example: 2840
+   * search engine location code optional field if you use this field, you don’t need to specify location_name or location_coordinate you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_advertisers/locations example: 2840 Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -153,7 +153,7 @@ public class SerpGoogleAdsAdvertisersTaskPostRequestInfo {
   }
 
   /**
-   * GPS coordinates of a location required field if you don’t specify location_name or location_code if you use this field, you don’t need to specify location_name or location_code example: 52.6178549,-155.352142
+   * GPS coordinates of a location optional field if you use this field, you don’t need to specify location_name or location_code example: 52.6178549,-155.352142 Note: if you don’t specify location_name, location_code, or location_coordinate, advertisers will be searched across all the available locations
    * @return locationCoordinate
    */
   @javax.annotation.Nullable

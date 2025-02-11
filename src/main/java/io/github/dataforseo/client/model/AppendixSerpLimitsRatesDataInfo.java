@@ -19,8 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixDayLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixFunctionTypeInfo;
+import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixSerpLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixSerpLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_TASK_POST = "task_post";
   @SerializedName(SERIALIZED_NAME_TASK_POST)
@@ -87,7 +87,7 @@ public class AppendixSerpLimitsRatesDataInfo {
 
   public static final String SERIALIZED_NAME_JOBS = "jobs";
   @SerializedName(SERIALIZED_NAME_JOBS)
-  private AppendixDayLimitsRatesDataInfo jobs;
+  private AppendixJobsSerpLimitsRatesDataInfo jobs;
 
   public static final String SERIALIZED_NAME_SCREENSHOT = "screenshot";
   @SerializedName(SERIALIZED_NAME_SCREENSHOT)
@@ -248,7 +248,7 @@ public class AppendixSerpLimitsRatesDataInfo {
   }
 
 
-  public AppendixSerpLimitsRatesDataInfo jobs(AppendixDayLimitsRatesDataInfo jobs) {
+  public AppendixSerpLimitsRatesDataInfo jobs(AppendixJobsSerpLimitsRatesDataInfo jobs) {
     this.jobs = jobs;
     return this;
   }
@@ -258,11 +258,11 @@ public class AppendixSerpLimitsRatesDataInfo {
    * @return jobs
    */
   @javax.annotation.Nullable
-  public AppendixDayLimitsRatesDataInfo getJobs() {
+  public AppendixJobsSerpLimitsRatesDataInfo getJobs() {
     return jobs;
   }
 
-  public void setJobs(AppendixDayLimitsRatesDataInfo jobs) {
+  public void setJobs(AppendixJobsSerpLimitsRatesDataInfo jobs) {
     this.jobs = jobs;
   }
 
@@ -444,7 +444,7 @@ public class AppendixSerpLimitsRatesDataInfo {
       }
       // validate the optional field `jobs`
       if (jsonObj.get("jobs") != null && !jsonObj.get("jobs").isJsonNull()) {
-        AppendixDayLimitsRatesDataInfo.validateJsonElement(jsonObj.get("jobs"));
+        AppendixJobsSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("jobs"));
       }
   }
 

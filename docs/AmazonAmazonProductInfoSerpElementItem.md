@@ -21,6 +21,7 @@
 |**isAmazonChoice** | **Boolean** | “Amazon’s choice” label if the value is true, the product is marked with the “Amazon’s choice” label |  [optional] |
 |**rating** | [**RatingElement**](RatingElement.md) |  |  [optional] |
 |**isNewerModelAvailable** | **Boolean** | indicates whether the newer model of the product is available |  [optional] |
+|**applicableVouchers** | [**List&lt;AmazonApplicableVouchersItem&gt;**](AmazonApplicableVouchersItem.md) | array of objects containing information about applicable vouchers |  [optional] |
 |**newerModel** | [**AmazonProductNewerModelInfo**](AmazonProductNewerModelInfo.md) |  |  [optional] |
 |**categories** | [**List&lt;ProductCategoryInfo&gt;**](ProductCategoryInfo.md) | contains related product categories |  [optional] |
 |**productInformation** | [**List&lt;BaseProductInformationItem&gt;**](BaseProductInformationItem.md) | contains related product information |  [optional] |

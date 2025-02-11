@@ -89,6 +89,14 @@ public class DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'ignoreSynonyms'
+     */
+    @Test
+    public void ignoreSynonymsTest() {
+        // TODO: test ignoreSynonyms
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

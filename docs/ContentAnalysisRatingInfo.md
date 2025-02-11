@@ -2,7 +2,6 @@
 
 # ContentAnalysisRatingInfo
 
-content rating rating related to content_info
 
 ## Properties
 
@@ -10,9 +9,9 @@ content rating rating related to content_info
 |------------ | ------------- | ------------- | -------------|
 |**name** | **String** | rating name here you can find the following elements: Max5, Percents, CustomMax |  [optional] |
 |**ratingValue** | **Double** | the value of the rating |  [optional] |
+|**maxRatingValue** | **Integer** | maximum value for the rating name |  [optional] |
 |**ratingCount** | **Long** | number of votes |  [optional] |
-|**maxRatingValue** | **String** |  maximum value for the rating name |  [optional] |
-|**relativeRating** | **Double** | relative rating |  [optional] |
+|**relativeRating** | **Float** | relative rating |  [optional] |
 
 
 

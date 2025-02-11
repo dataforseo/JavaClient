@@ -15,8 +15,8 @@
 |**languages** | **Double** |  |  [optional] |
 |**locations** | **Double** |  |  [optional] |
 |**categories** | **Double** |  |  [optional] |
+|**appListings** | [**AppendixBusinessListingsBusinessDataLimitsRatesDataInfo**](AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**tasksReady** | **Double** |  |  [optional] |
-|**appListings** | [**AppendixBusinessDataDayLimitsRatesDataInfo**](AppendixBusinessDataDayLimitsRatesDataInfo.md) |  |  [optional] |
 |**refundMoney** | **Double** |  |  [optional] |
 
 

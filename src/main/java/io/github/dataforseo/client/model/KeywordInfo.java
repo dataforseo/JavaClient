@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
-import io.github.dataforseo.client.model.SearchVolumeTrendInfo;
+import io.github.dataforseo.client.model.SearchVolumeTrend;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -97,7 +97,7 @@ public class KeywordInfo {
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME_TREND = "search_volume_trend";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_TREND)
-  private SearchVolumeTrendInfo searchVolumeTrend;
+  private SearchVolumeTrend searchVolumeTrend;
 
   public KeywordInfo() {
   }
@@ -308,7 +308,7 @@ public class KeywordInfo {
   }
 
 
-  public KeywordInfo searchVolumeTrend(SearchVolumeTrendInfo searchVolumeTrend) {
+  public KeywordInfo searchVolumeTrend(SearchVolumeTrend searchVolumeTrend) {
     this.searchVolumeTrend = searchVolumeTrend;
     return this;
   }
@@ -318,11 +318,11 @@ public class KeywordInfo {
    * @return searchVolumeTrend
    */
   @javax.annotation.Nullable
-  public SearchVolumeTrendInfo getSearchVolumeTrend() {
+  public SearchVolumeTrend getSearchVolumeTrend() {
     return searchVolumeTrend;
   }
 
-  public void setSearchVolumeTrend(SearchVolumeTrendInfo searchVolumeTrend) {
+  public void setSearchVolumeTrend(SearchVolumeTrend searchVolumeTrend) {
     this.searchVolumeTrend = searchVolumeTrend;
   }
 
@@ -507,7 +507,7 @@ public class KeywordInfo {
       }
       // validate the optional field `search_volume_trend`
       if (jsonObj.get("search_volume_trend") != null && !jsonObj.get("search_volume_trend").isJsonNull()) {
-        SearchVolumeTrendInfo.validateJsonElement(jsonObj.get("search_volume_trend"));
+        SearchVolumeTrend.validateJsonElement(jsonObj.get("search_volume_trend"));
       }
   }
 

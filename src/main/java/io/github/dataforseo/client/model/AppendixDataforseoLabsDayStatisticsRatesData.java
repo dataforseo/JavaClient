@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDataforseoLabsDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-17T14:14:20.254791+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDataforseoLabsDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES = "locations_and_languages";
   @SerializedName(SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES)
@@ -189,13 +189,13 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_SEARCH_INTENT)
   private AppendixInfo searchIntent;
 
-  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
-  @SerializedName(SERIALIZED_NAME_ID_LIST)
-  private Double idList;
-
   public static final String SERIALIZED_NAME_HISTORICAL_BULK_TRAFFIC_ESTIMATION = "historical_bulk_traffic_estimation";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_BULK_TRAFFIC_ESTIMATION)
   private AppendixInfo historicalBulkTrafficEstimation;
+
+  public static final String SERIALIZED_NAME_CATEGORIES_FOR_KEYWORDS = "categories_for_keywords";
+  @SerializedName(SERIALIZED_NAME_CATEGORIES_FOR_KEYWORDS)
+  private AppendixInfo categoriesForKeywords;
 
   public static final String SERIALIZED_NAME_AVAILABLE_HISTORY = "available_history";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_HISTORY)
@@ -205,6 +205,18 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_STATUS)
   private Double status;
 
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
+
+  public static final String SERIALIZED_NAME_TOP_GOOGLE_SEARCHES = "top_google_searches";
+  @SerializedName(SERIALIZED_NAME_TOP_GOOGLE_SEARCHES)
+  private AppendixInfo topGoogleSearches;
+
+  public static final String SERIALIZED_NAME_LANGUAGES = "languages";
+  @SerializedName(SERIALIZED_NAME_LANGUAGES)
+  private Double languages;
+
   public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
   private Double availableFilters;
@@ -212,18 +224,6 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_AMAZON = "amazon";
   @SerializedName(SERIALIZED_NAME_AMAZON)
   private AppendixDataforseoLabsLimitsRatesDataInfo amazon;
-
-  public static final String SERIALIZED_NAME_LANGUAGES = "languages";
-  @SerializedName(SERIALIZED_NAME_LANGUAGES)
-  private Double languages;
-
-  public static final String SERIALIZED_NAME_CATEGORIES_FOR_KEYWORDS = "categories_for_keywords";
-  @SerializedName(SERIALIZED_NAME_CATEGORIES_FOR_KEYWORDS)
-  private AppendixInfo categoriesForKeywords;
-
-  public static final String SERIALIZED_NAME_TOP_GOOGLE_SEARCHES = "top_google_searches";
-  @SerializedName(SERIALIZED_NAME_TOP_GOOGLE_SEARCHES)
-  private AppendixInfo topGoogleSearches;
 
   public AppendixDataforseoLabsDayStatisticsRatesData() {
   }
@@ -874,25 +874,6 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
   }
 
 
-  public AppendixDataforseoLabsDayStatisticsRatesData idList(Double idList) {
-    this.idList = idList;
-    return this;
-  }
-
-  /**
-   * Get idList
-   * @return idList
-   */
-  @javax.annotation.Nullable
-  public Double getIdList() {
-    return idList;
-  }
-
-  public void setIdList(Double idList) {
-    this.idList = idList;
-  }
-
-
   public AppendixDataforseoLabsDayStatisticsRatesData historicalBulkTrafficEstimation(AppendixInfo historicalBulkTrafficEstimation) {
     this.historicalBulkTrafficEstimation = historicalBulkTrafficEstimation;
     return this;
@@ -909,6 +890,25 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
 
   public void setHistoricalBulkTrafficEstimation(AppendixInfo historicalBulkTrafficEstimation) {
     this.historicalBulkTrafficEstimation = historicalBulkTrafficEstimation;
+  }
+
+
+  public AppendixDataforseoLabsDayStatisticsRatesData categoriesForKeywords(AppendixInfo categoriesForKeywords) {
+    this.categoriesForKeywords = categoriesForKeywords;
+    return this;
+  }
+
+  /**
+   * Get categoriesForKeywords
+   * @return categoriesForKeywords
+   */
+  @javax.annotation.Nullable
+  public AppendixInfo getCategoriesForKeywords() {
+    return categoriesForKeywords;
+  }
+
+  public void setCategoriesForKeywords(AppendixInfo categoriesForKeywords) {
+    this.categoriesForKeywords = categoriesForKeywords;
   }
 
 
@@ -950,6 +950,63 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
   }
 
 
+  public AppendixDataforseoLabsDayStatisticsRatesData idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * Get idList
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
+  }
+
+
+  public AppendixDataforseoLabsDayStatisticsRatesData topGoogleSearches(AppendixInfo topGoogleSearches) {
+    this.topGoogleSearches = topGoogleSearches;
+    return this;
+  }
+
+  /**
+   * Get topGoogleSearches
+   * @return topGoogleSearches
+   */
+  @javax.annotation.Nullable
+  public AppendixInfo getTopGoogleSearches() {
+    return topGoogleSearches;
+  }
+
+  public void setTopGoogleSearches(AppendixInfo topGoogleSearches) {
+    this.topGoogleSearches = topGoogleSearches;
+  }
+
+
+  public AppendixDataforseoLabsDayStatisticsRatesData languages(Double languages) {
+    this.languages = languages;
+    return this;
+  }
+
+  /**
+   * Get languages
+   * @return languages
+   */
+  @javax.annotation.Nullable
+  public Double getLanguages() {
+    return languages;
+  }
+
+  public void setLanguages(Double languages) {
+    this.languages = languages;
+  }
+
+
   public AppendixDataforseoLabsDayStatisticsRatesData availableFilters(Double availableFilters) {
     this.availableFilters = availableFilters;
     return this;
@@ -985,63 +1042,6 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
 
   public void setAmazon(AppendixDataforseoLabsLimitsRatesDataInfo amazon) {
     this.amazon = amazon;
-  }
-
-
-  public AppendixDataforseoLabsDayStatisticsRatesData languages(Double languages) {
-    this.languages = languages;
-    return this;
-  }
-
-  /**
-   * Get languages
-   * @return languages
-   */
-  @javax.annotation.Nullable
-  public Double getLanguages() {
-    return languages;
-  }
-
-  public void setLanguages(Double languages) {
-    this.languages = languages;
-  }
-
-
-  public AppendixDataforseoLabsDayStatisticsRatesData categoriesForKeywords(AppendixInfo categoriesForKeywords) {
-    this.categoriesForKeywords = categoriesForKeywords;
-    return this;
-  }
-
-  /**
-   * Get categoriesForKeywords
-   * @return categoriesForKeywords
-   */
-  @javax.annotation.Nullable
-  public AppendixInfo getCategoriesForKeywords() {
-    return categoriesForKeywords;
-  }
-
-  public void setCategoriesForKeywords(AppendixInfo categoriesForKeywords) {
-    this.categoriesForKeywords = categoriesForKeywords;
-  }
-
-
-  public AppendixDataforseoLabsDayStatisticsRatesData topGoogleSearches(AppendixInfo topGoogleSearches) {
-    this.topGoogleSearches = topGoogleSearches;
-    return this;
-  }
-
-  /**
-   * Get topGoogleSearches
-   * @return topGoogleSearches
-   */
-  @javax.annotation.Nullable
-  public AppendixInfo getTopGoogleSearches() {
-    return topGoogleSearches;
-  }
-
-  public void setTopGoogleSearches(AppendixInfo topGoogleSearches) {
-    this.topGoogleSearches = topGoogleSearches;
   }
 
   /**
@@ -1133,15 +1133,15 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
         Objects.equals(this.appIntersection, appendixDataforseoLabsDayStatisticsRatesData.appIntersection) &&
         Objects.equals(this.bulkAppMetrics, appendixDataforseoLabsDayStatisticsRatesData.bulkAppMetrics) &&
         Objects.equals(this.searchIntent, appendixDataforseoLabsDayStatisticsRatesData.searchIntent) &&
-        Objects.equals(this.idList, appendixDataforseoLabsDayStatisticsRatesData.idList) &&
         Objects.equals(this.historicalBulkTrafficEstimation, appendixDataforseoLabsDayStatisticsRatesData.historicalBulkTrafficEstimation) &&
+        Objects.equals(this.categoriesForKeywords, appendixDataforseoLabsDayStatisticsRatesData.categoriesForKeywords) &&
         Objects.equals(this.availableHistory, appendixDataforseoLabsDayStatisticsRatesData.availableHistory) &&
         Objects.equals(this.status, appendixDataforseoLabsDayStatisticsRatesData.status) &&
-        Objects.equals(this.availableFilters, appendixDataforseoLabsDayStatisticsRatesData.availableFilters) &&
-        Objects.equals(this.amazon, appendixDataforseoLabsDayStatisticsRatesData.amazon) &&
+        Objects.equals(this.idList, appendixDataforseoLabsDayStatisticsRatesData.idList) &&
+        Objects.equals(this.topGoogleSearches, appendixDataforseoLabsDayStatisticsRatesData.topGoogleSearches) &&
         Objects.equals(this.languages, appendixDataforseoLabsDayStatisticsRatesData.languages) &&
-        Objects.equals(this.categoriesForKeywords, appendixDataforseoLabsDayStatisticsRatesData.categoriesForKeywords) &&
-        Objects.equals(this.topGoogleSearches, appendixDataforseoLabsDayStatisticsRatesData.topGoogleSearches)&&
+        Objects.equals(this.availableFilters, appendixDataforseoLabsDayStatisticsRatesData.availableFilters) &&
+        Objects.equals(this.amazon, appendixDataforseoLabsDayStatisticsRatesData.amazon)&&
         Objects.equals(this.additionalProperties, appendixDataforseoLabsDayStatisticsRatesData.additionalProperties);
   }
 
@@ -1151,7 +1151,7 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(locationsAndLanguages, categories, errors, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, serpCompetitors, subdomains, relevantPages, competitorsDomain, relatedKeywords, domainRankOverview, domainIntersection, pageIntersection, bulkTrafficEstimation, bulkKeywordDifficulty, bulkSearchVolume, keywordsForSite, keywordSuggestions, keywordIdeas, historicalSearchVolume, categoriesForDomain, domainMetricsByCategories, topSearches, domainWhoisOverview, historicalRankOverview, keywordsForCategories, historicalSerps, appCompetitors, keywordsForApp, appIntersection, bulkAppMetrics, searchIntent, idList, historicalBulkTrafficEstimation, availableHistory, status, availableFilters, amazon, languages, categoriesForKeywords, topGoogleSearches, additionalProperties);
+    return Objects.hash(locationsAndLanguages, categories, errors, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, serpCompetitors, subdomains, relevantPages, competitorsDomain, relatedKeywords, domainRankOverview, domainIntersection, pageIntersection, bulkTrafficEstimation, bulkKeywordDifficulty, bulkSearchVolume, keywordsForSite, keywordSuggestions, keywordIdeas, historicalSearchVolume, categoriesForDomain, domainMetricsByCategories, topSearches, domainWhoisOverview, historicalRankOverview, keywordsForCategories, historicalSerps, appCompetitors, keywordsForApp, appIntersection, bulkAppMetrics, searchIntent, historicalBulkTrafficEstimation, categoriesForKeywords, availableHistory, status, idList, topGoogleSearches, languages, availableFilters, amazon, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1199,15 +1199,15 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
     sb.append("    appIntersection: ").append(toIndentedString(appIntersection)).append("\n");
     sb.append("    bulkAppMetrics: ").append(toIndentedString(bulkAppMetrics)).append("\n");
     sb.append("    searchIntent: ").append(toIndentedString(searchIntent)).append("\n");
-    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    historicalBulkTrafficEstimation: ").append(toIndentedString(historicalBulkTrafficEstimation)).append("\n");
+    sb.append("    categoriesForKeywords: ").append(toIndentedString(categoriesForKeywords)).append("\n");
     sb.append("    availableHistory: ").append(toIndentedString(availableHistory)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    topGoogleSearches: ").append(toIndentedString(topGoogleSearches)).append("\n");
+    sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
     sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    amazon: ").append(toIndentedString(amazon)).append("\n");
-    sb.append("    languages: ").append(toIndentedString(languages)).append("\n");
-    sb.append("    categoriesForKeywords: ").append(toIndentedString(categoriesForKeywords)).append("\n");
-    sb.append("    topGoogleSearches: ").append(toIndentedString(topGoogleSearches)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -1265,15 +1265,15 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
     openapiFields.add("app_intersection");
     openapiFields.add("bulk_app_metrics");
     openapiFields.add("search_intent");
-    openapiFields.add("id_list");
     openapiFields.add("historical_bulk_traffic_estimation");
+    openapiFields.add("categories_for_keywords");
     openapiFields.add("available_history");
     openapiFields.add("status");
+    openapiFields.add("id_list");
+    openapiFields.add("top_google_searches");
+    openapiFields.add("languages");
     openapiFields.add("available_filters");
     openapiFields.add("amazon");
-    openapiFields.add("languages");
-    openapiFields.add("categories_for_keywords");
-    openapiFields.add("top_google_searches");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -1420,10 +1420,6 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
       if (jsonObj.get("historical_bulk_traffic_estimation") != null && !jsonObj.get("historical_bulk_traffic_estimation").isJsonNull()) {
         AppendixInfo.validateJsonElement(jsonObj.get("historical_bulk_traffic_estimation"));
       }
-      // validate the optional field `amazon`
-      if (jsonObj.get("amazon") != null && !jsonObj.get("amazon").isJsonNull()) {
-        AppendixDataforseoLabsLimitsRatesDataInfo.validateJsonElement(jsonObj.get("amazon"));
-      }
       // validate the optional field `categories_for_keywords`
       if (jsonObj.get("categories_for_keywords") != null && !jsonObj.get("categories_for_keywords").isJsonNull()) {
         AppendixInfo.validateJsonElement(jsonObj.get("categories_for_keywords"));
@@ -1431,6 +1427,10 @@ public class AppendixDataforseoLabsDayStatisticsRatesData {
       // validate the optional field `top_google_searches`
       if (jsonObj.get("top_google_searches") != null && !jsonObj.get("top_google_searches").isJsonNull()) {
         AppendixInfo.validateJsonElement(jsonObj.get("top_google_searches"));
+      }
+      // validate the optional field `amazon`
+      if (jsonObj.get("amazon") != null && !jsonObj.get("amazon").isJsonNull()) {
+        AppendixDataforseoLabsLimitsRatesDataInfo.validateJsonElement(jsonObj.get("amazon"));
       }
   }
 

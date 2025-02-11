@@ -11,9 +11,9 @@
 |**tasksReady** | **Double** |  |  [optional] |
 |**taskGet** | **Double** |  |  [optional] |
 |**live** | **Double** |  |  [optional] |
-|**audits** | **Double** |  |  [optional] |
-|**languages** | **Double** |  |  [optional] |
 |**versions** | **Double** |  |  [optional] |
+|**languages** | **Double** |  |  [optional] |
+|**audits** | **Double** |  |  [optional] |
 
 
 

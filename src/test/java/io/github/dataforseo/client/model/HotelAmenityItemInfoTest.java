@@ -70,4 +70,12 @@ public class HotelAmenityItemInfoTest {
         // TODO: test hintLabel
     }
 
+    /**
+     * Test the property 'isAvailable'
+     */
+    @Test
+    public void isAvailableTest() {
+        // TODO: test isAvailable
+    }
+
 }

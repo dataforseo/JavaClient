@@ -30,10 +30,10 @@
 |**bulkSpamScore** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**bulkPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**pagesSummaryWithPageInfo** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**historicalNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**index** | **Double** |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
 |**availableFilters** | **Double** |  |  [optional] |
+|**historicalNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**index** | **Double** |  |  [optional] |
 
 
 
