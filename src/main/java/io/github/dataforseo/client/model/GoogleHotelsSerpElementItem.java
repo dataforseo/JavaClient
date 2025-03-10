@@ -51,8 +51,16 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleHotelsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
+  public static final String SERIALIZED_NAME_POSITION = "position";
+  @SerializedName(SERIALIZED_NAME_POSITION)
+  private String position;
+
+  public static final String SERIALIZED_NAME_XPATH = "xpath";
+  @SerializedName(SERIALIZED_NAME_XPATH)
+  private String xpath;
+
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
   private String hotelIdentifier;
@@ -71,6 +79,44 @@ public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
 
   public GoogleHotelsSerpElementItem() {
   }
+
+  public GoogleHotelsSerpElementItem position(String position) {
+    this.position = position;
+    return this;
+  }
+
+  /**
+   * the alignment of the element in SERP can take the following values: left, right
+   * @return position
+   */
+  @javax.annotation.Nullable
+  public String getPosition() {
+    return position;
+  }
+
+  public void setPosition(String position) {
+    this.position = position;
+  }
+
+
+  public GoogleHotelsSerpElementItem xpath(String xpath) {
+    this.xpath = xpath;
+    return this;
+  }
+
+  /**
+   * the XPath of the element
+   * @return xpath
+   */
+  @javax.annotation.Nullable
+  public String getXpath() {
+    return xpath;
+  }
+
+  public void setXpath(String xpath) {
+    this.xpath = xpath;
+  }
+
 
   public GoogleHotelsSerpElementItem hotelIdentifier(String hotelIdentifier) {
     this.hotelIdentifier = hotelIdentifier;
@@ -202,7 +248,9 @@ public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     GoogleHotelsSerpElementItem googleHotelsSerpElementItem = (GoogleHotelsSerpElementItem) o;
-    return Objects.equals(this.hotelIdentifier, googleHotelsSerpElementItem.hotelIdentifier) &&
+    return Objects.equals(this.position, googleHotelsSerpElementItem.position) &&
+        Objects.equals(this.xpath, googleHotelsSerpElementItem.xpath) &&
+        Objects.equals(this.hotelIdentifier, googleHotelsSerpElementItem.hotelIdentifier) &&
         Objects.equals(this.url, googleHotelsSerpElementItem.url) &&
         Objects.equals(this.cid, googleHotelsSerpElementItem.cid) &&
         Objects.equals(this.rectangle, googleHotelsSerpElementItem.rectangle)&&
@@ -216,7 +264,7 @@ public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hotelIdentifier, url, cid, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(position, xpath, hotelIdentifier, url, cid, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -231,6 +279,8 @@ public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class GoogleHotelsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    hotelIdentifier: ").append(toIndentedString(hotelIdentifier)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    cid: ").append(toIndentedString(cid)).append("\n");
@@ -285,6 +335,12 @@ public class GoogleHotelsSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
       if ((jsonObj.get("hotel_identifier") != null && !jsonObj.get("hotel_identifier").isJsonNull()) && !jsonObj.get("hotel_identifier").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `hotel_identifier` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hotel_identifier").toString()));
       }

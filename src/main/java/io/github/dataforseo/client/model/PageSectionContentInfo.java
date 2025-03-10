@@ -19,8 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.ContentItemInfo;
-import io.github.dataforseo.client.model.TableContent;
+import io.github.dataforseo.client.model.SectionContentItemInfo;
+import io.github.dataforseo.client.model.TableContentInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,29 +53,29 @@ import io.github.dataforseo.client.JSON;
 /**
  * PageSectionContentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PageSectionContentInfo {
   public static final String SERIALIZED_NAME_PRIMARY_CONTENT = "primary_content";
   @SerializedName(SERIALIZED_NAME_PRIMARY_CONTENT)
-  private List<ContentItemInfo> primaryContent;
+  private List<SectionContentItemInfo> primaryContent;
 
   public static final String SERIALIZED_NAME_SECONDARY_CONTENT = "secondary_content";
   @SerializedName(SERIALIZED_NAME_SECONDARY_CONTENT)
-  private List<ContentItemInfo> secondaryContent;
+  private List<SectionContentItemInfo> secondaryContent;
 
   public static final String SERIALIZED_NAME_TABLE_CONTENT = "table_content";
   @SerializedName(SERIALIZED_NAME_TABLE_CONTENT)
-  private List<TableContent> tableContent;
+  private List<TableContentInfo> tableContent;
 
   public PageSectionContentInfo() {
   }
 
-  public PageSectionContentInfo primaryContent(List<ContentItemInfo> primaryContent) {
+  public PageSectionContentInfo primaryContent(List<SectionContentItemInfo> primaryContent) {
     this.primaryContent = primaryContent;
     return this;
   }
 
-  public PageSectionContentInfo addPrimaryContentItem(ContentItemInfo primaryContentItem) {
+  public PageSectionContentInfo addPrimaryContentItem(SectionContentItemInfo primaryContentItem) {
     if (this.primaryContent == null) {
       this.primaryContent = new ArrayList<>();
     }
@@ -88,21 +88,21 @@ public class PageSectionContentInfo {
    * @return primaryContent
    */
   @javax.annotation.Nullable
-  public List<ContentItemInfo> getPrimaryContent() {
+  public List<SectionContentItemInfo> getPrimaryContent() {
     return primaryContent;
   }
 
-  public void setPrimaryContent(List<ContentItemInfo> primaryContent) {
+  public void setPrimaryContent(List<SectionContentItemInfo> primaryContent) {
     this.primaryContent = primaryContent;
   }
 
 
-  public PageSectionContentInfo secondaryContent(List<ContentItemInfo> secondaryContent) {
+  public PageSectionContentInfo secondaryContent(List<SectionContentItemInfo> secondaryContent) {
     this.secondaryContent = secondaryContent;
     return this;
   }
 
-  public PageSectionContentInfo addSecondaryContentItem(ContentItemInfo secondaryContentItem) {
+  public PageSectionContentInfo addSecondaryContentItem(SectionContentItemInfo secondaryContentItem) {
     if (this.secondaryContent == null) {
       this.secondaryContent = new ArrayList<>();
     }
@@ -115,21 +115,21 @@ public class PageSectionContentInfo {
    * @return secondaryContent
    */
   @javax.annotation.Nullable
-  public List<ContentItemInfo> getSecondaryContent() {
+  public List<SectionContentItemInfo> getSecondaryContent() {
     return secondaryContent;
   }
 
-  public void setSecondaryContent(List<ContentItemInfo> secondaryContent) {
+  public void setSecondaryContent(List<SectionContentItemInfo> secondaryContent) {
     this.secondaryContent = secondaryContent;
   }
 
 
-  public PageSectionContentInfo tableContent(List<TableContent> tableContent) {
+  public PageSectionContentInfo tableContent(List<TableContentInfo> tableContent) {
     this.tableContent = tableContent;
     return this;
   }
 
-  public PageSectionContentInfo addTableContentItem(TableContent tableContentItem) {
+  public PageSectionContentInfo addTableContentItem(TableContentInfo tableContentItem) {
     if (this.tableContent == null) {
       this.tableContent = new ArrayList<>();
     }
@@ -142,11 +142,11 @@ public class PageSectionContentInfo {
    * @return tableContent
    */
   @javax.annotation.Nullable
-  public List<TableContent> getTableContent() {
+  public List<TableContentInfo> getTableContent() {
     return tableContent;
   }
 
-  public void setTableContent(List<TableContent> tableContent) {
+  public void setTableContent(List<TableContentInfo> tableContent) {
     this.tableContent = tableContent;
   }
 
@@ -288,7 +288,7 @@ public class PageSectionContentInfo {
 
           // validate the optional field `primary_content` (array)
           for (int i = 0; i < jsonArrayprimaryContent.size(); i++) {
-            ContentItemInfo.validateJsonElement(jsonArrayprimaryContent.get(i));
+            SectionContentItemInfo.validateJsonElement(jsonArrayprimaryContent.get(i));
           };
         }
       }
@@ -302,7 +302,7 @@ public class PageSectionContentInfo {
 
           // validate the optional field `secondary_content` (array)
           for (int i = 0; i < jsonArraysecondaryContent.size(); i++) {
-            ContentItemInfo.validateJsonElement(jsonArraysecondaryContent.get(i));
+            SectionContentItemInfo.validateJsonElement(jsonArraysecondaryContent.get(i));
           };
         }
       }
@@ -316,7 +316,7 @@ public class PageSectionContentInfo {
 
           // validate the optional field `table_content` (array)
           for (int i = 0; i < jsonArraytableContent.size(); i++) {
-            TableContent.validateJsonElement(jsonArraytableContent.get(i));
+            TableContentInfo.validateJsonElement(jsonArraytableContent.get(i));
           };
         }
       }

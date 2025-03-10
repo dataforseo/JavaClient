@@ -67,6 +67,14 @@ public class BusinessDataBusinessListingsSearchLiveItemTest {
     }
 
     /**
+     * Test the property 'originalTitle'
+     */
+    @Test
+    public void originalTitleTest() {
+        // TODO: test originalTitle
+    }
+
+    /**
      * Test the property 'description'
      */
     @Test

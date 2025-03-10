@@ -7,6 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+|**originalTitle** | **String** | original title of the element original title not translated by Google |  [optional] |
 |**contactUrl** | **String** | URL of the preferred contact page |  [optional] |
 |**contributorUrl** | **String** | URL of the user’s or entity’s Local Guides profile, if available |  [optional] |
 |**bookOnlineUrl** | **String** | URL in the ‘book online’ button of the element URL directing users to the online booking or order page of the business entity |  [optional] |

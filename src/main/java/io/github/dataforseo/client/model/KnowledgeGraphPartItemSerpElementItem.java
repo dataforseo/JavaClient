@@ -54,8 +54,16 @@ import io.github.dataforseo.client.JSON;
 /**
  * KnowledgeGraphPartItemSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KnowledgeGraphPartItemSerpElementItem extends BaseSerpElementItem {
+  public static final String SERIALIZED_NAME_POSITION = "position";
+  @SerializedName(SERIALIZED_NAME_POSITION)
+  private String position;
+
+  public static final String SERIALIZED_NAME_XPATH = "xpath";
+  @SerializedName(SERIALIZED_NAME_XPATH)
+  private String xpath;
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -78,6 +86,44 @@ public class KnowledgeGraphPartItemSerpElementItem extends BaseSerpElementItem {
 
   public KnowledgeGraphPartItemSerpElementItem() {
   }
+
+  public KnowledgeGraphPartItemSerpElementItem position(String position) {
+    this.position = position;
+    return this;
+  }
+
+  /**
+   * the alignment of the element in SERP can take the following values: left, right
+   * @return position
+   */
+  @javax.annotation.Nullable
+  public String getPosition() {
+    return position;
+  }
+
+  public void setPosition(String position) {
+    this.position = position;
+  }
+
+
+  public KnowledgeGraphPartItemSerpElementItem xpath(String xpath) {
+    this.xpath = xpath;
+    return this;
+  }
+
+  /**
+   * the XPath of the element
+   * @return xpath
+   */
+  @javax.annotation.Nullable
+  public String getXpath() {
+    return xpath;
+  }
+
+  public void setXpath(String xpath) {
+    this.xpath = xpath;
+  }
+
 
   public KnowledgeGraphPartItemSerpElementItem title(String title) {
     this.title = title;
@@ -236,7 +282,9 @@ public class KnowledgeGraphPartItemSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     KnowledgeGraphPartItemSerpElementItem knowledgeGraphPartItemSerpElementItem = (KnowledgeGraphPartItemSerpElementItem) o;
-    return Objects.equals(this.title, knowledgeGraphPartItemSerpElementItem.title) &&
+    return Objects.equals(this.position, knowledgeGraphPartItemSerpElementItem.position) &&
+        Objects.equals(this.xpath, knowledgeGraphPartItemSerpElementItem.xpath) &&
+        Objects.equals(this.title, knowledgeGraphPartItemSerpElementItem.title) &&
         Objects.equals(this.dataAttrid, knowledgeGraphPartItemSerpElementItem.dataAttrid) &&
         Objects.equals(this.text, knowledgeGraphPartItemSerpElementItem.text) &&
         Objects.equals(this.links, knowledgeGraphPartItemSerpElementItem.links) &&
@@ -251,7 +299,7 @@ public class KnowledgeGraphPartItemSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, dataAttrid, text, links, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(position, xpath, title, dataAttrid, text, links, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -266,6 +314,8 @@ public class KnowledgeGraphPartItemSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class KnowledgeGraphPartItemSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    dataAttrid: ").append(toIndentedString(dataAttrid)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
@@ -322,6 +372,12 @@ public class KnowledgeGraphPartItemSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

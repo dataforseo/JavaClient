@@ -53,6 +53,24 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleEventsTaskPost**](SerpApi.md#googleEventsTaskPost) | **POST** /v3/serp/google/events/task_post |  |
 | [**googleEventsTasksFixed**](SerpApi.md#googleEventsTasksFixed) | **GET** /v3/serp/google/events/tasks_fixed |  |
 | [**googleEventsTasksReady**](SerpApi.md#googleEventsTasksReady) | **GET** /v3/serp/google/events/tasks_ready |  |
+| [**googleFinanceExploreLiveAdvanced**](SerpApi.md#googleFinanceExploreLiveAdvanced) | **POST** /v3/serp/google/finance_explore/live/advanced |  |
+| [**googleFinanceExploreLiveHtml**](SerpApi.md#googleFinanceExploreLiveHtml) | **POST** /v3/serp/google/finance_explore/live/html |  |
+| [**googleFinanceExploreTaskGetAdvanced**](SerpApi.md#googleFinanceExploreTaskGetAdvanced) | **GET** /v3/serp/google/finance_explore/task_get/advanced/{id} |  |
+| [**googleFinanceExploreTaskGetHtml**](SerpApi.md#googleFinanceExploreTaskGetHtml) | **GET** /v3/serp/google/finance_explore/task_get/html/{id} |  |
+| [**googleFinanceExploreTaskPost**](SerpApi.md#googleFinanceExploreTaskPost) | **POST** /v3/serp/google/finance_explore/task_post |  |
+| [**googleFinanceExploreTasksReady**](SerpApi.md#googleFinanceExploreTasksReady) | **GET** /v3/serp/google/finance_explore/tasks_ready |  |
+| [**googleFinanceMarketsLiveAdvanced**](SerpApi.md#googleFinanceMarketsLiveAdvanced) | **POST** /v3/serp/google/finance_markets/live/advanced |  |
+| [**googleFinanceMarketsLiveHtml**](SerpApi.md#googleFinanceMarketsLiveHtml) | **POST** /v3/serp/google/finance_markets/live/html |  |
+| [**googleFinanceMarketsTaskGetAdvanced**](SerpApi.md#googleFinanceMarketsTaskGetAdvanced) | **GET** /v3/serp/google/finance_markets/task_get/advanced/{id} |  |
+| [**googleFinanceMarketsTaskGetHtml**](SerpApi.md#googleFinanceMarketsTaskGetHtml) | **GET** /v3/serp/google/finance_markets/task_get/html/{id} |  |
+| [**googleFinanceMarketsTaskPost**](SerpApi.md#googleFinanceMarketsTaskPost) | **POST** /v3/serp/google/finance_markets/task_post |  |
+| [**googleFinanceMarketsTasksReady**](SerpApi.md#googleFinanceMarketsTasksReady) | **GET** /v3/serp/google/finance_markets/tasks_ready |  |
+| [**googleFinanceQuoteLiveAdvanced**](SerpApi.md#googleFinanceQuoteLiveAdvanced) | **POST** /v3/serp/google/finance_quote/live/advanced |  |
+| [**googleFinanceQuoteLiveHtml**](SerpApi.md#googleFinanceQuoteLiveHtml) | **POST** /v3/serp/google/finance_quote/live/html |  |
+| [**googleFinanceQuoteTaskGetAdvanced**](SerpApi.md#googleFinanceQuoteTaskGetAdvanced) | **GET** /v3/serp/google/finance_quote/task_get/advanced/{id} |  |
+| [**googleFinanceQuoteTaskGetHtml**](SerpApi.md#googleFinanceQuoteTaskGetHtml) | **GET** /v3/serp/google/finance_quote/task_get/html/{id} |  |
+| [**googleFinanceQuoteTaskPost**](SerpApi.md#googleFinanceQuoteTaskPost) | **POST** /v3/serp/google/finance_quote/task_post |  |
+| [**googleFinanceQuoteTasksReady**](SerpApi.md#googleFinanceQuoteTasksReady) | **GET** /v3/serp/google/finance_quote/tasks_ready |  |
 | [**googleImagesLiveAdvanced**](SerpApi.md#googleImagesLiveAdvanced) | **POST** /v3/serp/google/images/live/advanced |  |
 | [**googleImagesLiveHtml**](SerpApi.md#googleImagesLiveHtml) | **POST** /v3/serp/google/images/live/html |  |
 | [**googleImagesTaskGetAdvanced**](SerpApi.md#googleImagesTaskGetAdvanced) | **GET** /v3/serp/google/images/task_get/advanced/{id} |  |
@@ -324,7 +342,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "c5e5ece7-87ad-4754-bc0e-704ede0e1df8"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "18ac935d-0614-47c6-b5ed-8fd7e9965ef9"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBaiduOrganicTaskGetHtmlResponseInfo result = apiInstance.baiduOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -792,7 +810,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "3886c9c3-67f9-498e-a1bf-e22231427013"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "8e4d065b-ec21-44d9-8afe-c095933dcc98"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingLocalPackTaskGetHtmlResponseInfo result = apiInstance.bingLocalPackTaskGetHtml(id);
       System.out.println(result);
@@ -1396,7 +1414,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "47084e2f-b09f-4ccd-80fd-5517e5147dbb"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "266ed11e-f6c5-414b-8f62-e554fd4b0b23"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpBingOrganicTaskGetHtmlResponseInfo result = apiInstance.bingOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -3427,6 +3445,1218 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="googleFinanceExploreLiveAdvanced"></a>
+# **googleFinanceExploreLiveAdvanced**
+> SerpGoogleFinanceExploreLiveAdvancedResponseInfo googleFinanceExploreLiveAdvanced(serpGoogleFinanceExploreLiveAdvancedRequestInfo)
+
+
+
+‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> | 
+    try {
+      SerpGoogleFinanceExploreLiveAdvancedResponseInfo result = apiInstance.googleFinanceExploreLiveAdvanced(serpGoogleFinanceExploreLiveAdvancedRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceExploreLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;**](SerpGoogleFinanceExploreLiveAdvancedRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceExploreLiveAdvancedResponseInfo**](SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceExploreLiveHtml"></a>
+# **googleFinanceExploreLiveHtml**
+> SerpGoogleFinanceExploreLiveHtmlResponseInfo googleFinanceExploreLiveHtml(serpGoogleFinanceExploreLiveHtmlRequestInfo)
+
+
+
+‌ Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> | 
+    try {
+      SerpGoogleFinanceExploreLiveHtmlResponseInfo result = apiInstance.googleFinanceExploreLiveHtml(serpGoogleFinanceExploreLiveHtmlRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceExploreLiveHtmlRequestInfo** | [**List&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;**](SerpGoogleFinanceExploreLiveHtmlRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceExploreLiveHtmlResponseInfo**](SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceExploreTaskGetAdvanced"></a>
+# **googleFinanceExploreTaskGetAdvanced**
+> SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo googleFinanceExploreTaskGetAdvanced(id)
+
+
+
+‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo result = apiInstance.googleFinanceExploreTaskGetAdvanced(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+### Return type
+
+[**SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo**](SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceExploreTaskGetHtml"></a>
+# **googleFinanceExploreTaskGetHtml**
+> SerpGoogleFinanceExploreTaskGetHtmlResponseInfo googleFinanceExploreTaskGetHtml(id)
+
+
+
+Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "a468dfeb-a716-4093-af4f-ae5f5f4d3fb5"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    try {
+      SerpGoogleFinanceExploreTaskGetHtmlResponseInfo result = apiInstance.googleFinanceExploreTaskGetHtml(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
+
+### Return type
+
+[**SerpGoogleFinanceExploreTaskGetHtmlResponseInfo**](SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceExploreTaskPost"></a>
+# **googleFinanceExploreTaskPost**
+> SerpGoogleFinanceExploreTaskPostResponseInfo googleFinanceExploreTaskPost(serpGoogleFinanceExploreTaskPostRequestInfo)
+
+
+
+‌ Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceExploreTaskPostRequestInfo> | 
+    try {
+      SerpGoogleFinanceExploreTaskPostResponseInfo result = apiInstance.googleFinanceExploreTaskPost(serpGoogleFinanceExploreTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceExploreTaskPostRequestInfo** | [**List&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;**](SerpGoogleFinanceExploreTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceExploreTaskPostResponseInfo**](SerpGoogleFinanceExploreTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceExploreTasksReady"></a>
+# **googleFinanceExploreTasksReady**
+> SerpGoogleFinanceExploreTasksReadyResponseInfo googleFinanceExploreTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpGoogleFinanceExploreTasksReadyResponseInfo result = apiInstance.googleFinanceExploreTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpGoogleFinanceExploreTasksReadyResponseInfo**](SerpGoogleFinanceExploreTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceMarketsLiveAdvanced"></a>
+# **googleFinanceMarketsLiveAdvanced**
+> SerpGoogleFinanceMarketsLiveAdvancedResponseInfo googleFinanceMarketsLiveAdvanced(serpGoogleFinanceMarketsLiveAdvancedRequestInfo)
+
+
+
+‌ Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> | 
+    try {
+      SerpGoogleFinanceMarketsLiveAdvancedResponseInfo result = apiInstance.googleFinanceMarketsLiveAdvanced(serpGoogleFinanceMarketsLiveAdvancedRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceMarketsLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;**](SerpGoogleFinanceMarketsLiveAdvancedRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceMarketsLiveAdvancedResponseInfo**](SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceMarketsLiveHtml"></a>
+# **googleFinanceMarketsLiveHtml**
+> SerpGoogleFinanceMarketsLiveHtmlResponseInfo googleFinanceMarketsLiveHtml(serpGoogleFinanceMarketsLiveHtmlRequestInfo)
+
+
+
+‌ Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> | 
+    try {
+      SerpGoogleFinanceMarketsLiveHtmlResponseInfo result = apiInstance.googleFinanceMarketsLiveHtml(serpGoogleFinanceMarketsLiveHtmlRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceMarketsLiveHtmlRequestInfo** | [**List&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;**](SerpGoogleFinanceMarketsLiveHtmlRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceMarketsLiveHtmlResponseInfo**](SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceMarketsTaskGetAdvanced"></a>
+# **googleFinanceMarketsTaskGetAdvanced**
+> SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo googleFinanceMarketsTaskGetAdvanced(id)
+
+
+
+‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    try {
+      SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo result = apiInstance.googleFinanceMarketsTaskGetAdvanced(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+### Return type
+
+[**SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo**](SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceMarketsTaskGetHtml"></a>
+# **googleFinanceMarketsTaskGetHtml**
+> SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo googleFinanceMarketsTaskGetHtml(id)
+
+
+
+Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "13fdf338-f483-4b43-bd33-58131fa9137e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    try {
+      SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo result = apiInstance.googleFinanceMarketsTaskGetHtml(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
+
+### Return type
+
+[**SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo**](SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceMarketsTaskPost"></a>
+# **googleFinanceMarketsTaskPost**
+> SerpGoogleFinanceMarketsTaskPostResponseInfo googleFinanceMarketsTaskPost(serpGoogleFinanceMarketsTaskPostRequestInfo)
+
+
+
+‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceMarketsTaskPostRequestInfo> | 
+    try {
+      SerpGoogleFinanceMarketsTaskPostResponseInfo result = apiInstance.googleFinanceMarketsTaskPost(serpGoogleFinanceMarketsTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceMarketsTaskPostRequestInfo** | [**List&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;**](SerpGoogleFinanceMarketsTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceMarketsTaskPostResponseInfo**](SerpGoogleFinanceMarketsTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceMarketsTasksReady"></a>
+# **googleFinanceMarketsTasksReady**
+> SerpGoogleFinanceMarketsTasksReadyResponseInfo googleFinanceMarketsTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpGoogleFinanceMarketsTasksReadyResponseInfo result = apiInstance.googleFinanceMarketsTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpGoogleFinanceMarketsTasksReadyResponseInfo**](SerpGoogleFinanceMarketsTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteLiveAdvanced"></a>
+# **googleFinanceQuoteLiveAdvanced**
+> SerpGoogleFinanceQuoteLiveAdvancedResponseInfo googleFinanceQuoteLiveAdvanced(serpGoogleFinanceQuoteLiveAdvancedRequestInfo)
+
+
+
+‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> | 
+    try {
+      SerpGoogleFinanceQuoteLiveAdvancedResponseInfo result = apiInstance.googleFinanceQuoteLiveAdvanced(serpGoogleFinanceQuoteLiveAdvancedRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceQuoteLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;**](SerpGoogleFinanceQuoteLiveAdvancedRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceQuoteLiveAdvancedResponseInfo**](SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteLiveHtml"></a>
+# **googleFinanceQuoteLiveHtml**
+> SerpGoogleFinanceQuoteLiveHtmlResponseInfo googleFinanceQuoteLiveHtml(serpGoogleFinanceQuoteLiveHtmlRequestInfo)
+
+
+
+‌ Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> | 
+    try {
+      SerpGoogleFinanceQuoteLiveHtmlResponseInfo result = apiInstance.googleFinanceQuoteLiveHtml(serpGoogleFinanceQuoteLiveHtmlRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceQuoteLiveHtmlRequestInfo** | [**List&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;**](SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceQuoteLiveHtmlResponseInfo**](SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteTaskGetAdvanced"></a>
+# **googleFinanceQuoteTaskGetAdvanced**
+> SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo googleFinanceQuoteTaskGetAdvanced(id)
+
+
+
+‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000"; // String | 
+    try {
+      SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo result = apiInstance.googleFinanceQuoteTaskGetAdvanced(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**|  | |
+
+### Return type
+
+[**SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo**](SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteTaskGetHtml"></a>
+# **googleFinanceQuoteTaskGetHtml**
+> SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo googleFinanceQuoteTaskGetHtml(id)
+
+
+
+Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "35c81eb8-4031-414b-a1fe-8c9a13449bfc"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    try {
+      SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo result = apiInstance.googleFinanceQuoteTaskGetHtml(id);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
+
+### Return type
+
+[**SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo**](SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteTaskPost"></a>
+# **googleFinanceQuoteTaskPost**
+> SerpGoogleFinanceQuoteTaskPostResponseInfo googleFinanceQuoteTaskPost(serpGoogleFinanceQuoteTaskPostRequestInfo)
+
+
+
+‌ Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceQuoteTaskPostRequestInfo> | 
+    try {
+      SerpGoogleFinanceQuoteTaskPostResponseInfo result = apiInstance.googleFinanceQuoteTaskPost(serpGoogleFinanceQuoteTaskPostRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **serpGoogleFinanceQuoteTaskPostRequestInfo** | [**List&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;**](SerpGoogleFinanceQuoteTaskPostRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**SerpGoogleFinanceQuoteTaskPostResponseInfo**](SerpGoogleFinanceQuoteTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteTasksReady"></a>
+# **googleFinanceQuoteTasksReady**
+> SerpGoogleFinanceQuoteTasksReadyResponseInfo googleFinanceQuoteTasksReady()
+
+
+
+‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.SerpApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    try {
+      SerpGoogleFinanceQuoteTasksReadyResponseInfo result = apiInstance.googleFinanceQuoteTasksReady();
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SerpGoogleFinanceQuoteTasksReadyResponseInfo**](SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="googleImagesLiveAdvanced"></a>
 # **googleImagesLiveAdvanced**
 > SerpGoogleImagesLiveAdvancedResponseInfo googleImagesLiveAdvanced(serpGoogleImagesLiveAdvancedRequestInfo)
@@ -3660,7 +4890,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "0c6a6fb2-0e85-4981-827f-7e940d953240"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "26417bdd-a6c5-4388-b3b7-539c08fd9e4a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleImagesTaskGetHtmlResponseInfo result = apiInstance.googleImagesTaskGetHtml(id);
       System.out.println(result);
@@ -3992,7 +5222,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "ed5d5aca-d66b-4d48-acf5-ab6da3557561"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "4b2e4e9f-9446-403d-856c-fc28362c6e41"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleJobsTaskGetHtmlResponseInfo result = apiInstance.googleJobsTaskGetHtml(id);
       System.out.println(result);
@@ -4460,7 +5690,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "dfde0111-194e-4d10-a68e-750eb321589d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "bf5853f1-a077-4795-995e-4ceb5b1f58e5"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleLocalFinderTaskGetHtmlResponseInfo result = apiInstance.googleLocalFinderTaskGetHtml(id);
       System.out.println(result);
@@ -5260,7 +6490,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "f515772d-0a43-400c-ab54-243a1871c3b0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "4e9cb494-d61c-4fcc-b038-29c9a67f479f"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleNewsTaskGetHtmlResponseInfo result = apiInstance.googleNewsTaskGetHtml(id);
       System.out.println(result);
@@ -5796,7 +7026,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "f908494a-c29e-423a-93bd-f1b065b7ed0d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "84f37f50-8e1b-4cf6-b27c-0e6e3a735b84"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpGoogleOrganicTaskGetHtmlResponseInfo result = apiInstance.googleOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -6460,7 +7690,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "bca00445-99e7-435f-ab64-27165e8138d7"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "a07fc385-4b5e-4989-b331-5f8d03dfecf9"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpNaverOrganicTaskGetHtmlResponseInfo result = apiInstance.naverOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -8368,7 +9598,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "24a1cbef-1f32-477e-9bcf-f744952dff1d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "0fb36a51-4164-443c-a3bf-b7216300c9f7"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpSeznamOrganicTaskGetHtmlResponseInfo result = apiInstance.seznamOrganicTaskGetHtml(id);
       System.out.println(result);
@@ -9036,7 +10266,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "6687de23-8a9a-4442-81f1-ded7503517e4"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "1b1b3b59-d0a8-4bee-9f98-bf972211b664"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       SerpYahooOrganicTaskGetHtmlResponseInfo result = apiInstance.yahooOrganicTaskGetHtml(id);
       System.out.println(result);

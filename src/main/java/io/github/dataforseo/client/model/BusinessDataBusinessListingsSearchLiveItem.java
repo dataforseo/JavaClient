@@ -61,7 +61,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -70,6 +70,10 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
+
+  public static final String SERIALIZED_NAME_ORIGINAL_TITLE = "original_title";
+  @SerializedName(SERIALIZED_NAME_ORIGINAL_TITLE)
+  private String originalTitle;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -241,6 +245,25 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   public void setTitle(String title) {
     this.title = title;
+  }
+
+
+  public BusinessDataBusinessListingsSearchLiveItem originalTitle(String originalTitle) {
+    this.originalTitle = originalTitle;
+    return this;
+  }
+
+  /**
+   * original title of the element original title not translated by Google
+   * @return originalTitle
+   */
+  @javax.annotation.Nullable
+  public String getOriginalTitle() {
+    return originalTitle;
+  }
+
+  public void setOriginalTitle(String originalTitle) {
+    this.originalTitle = originalTitle;
   }
 
 
@@ -983,6 +1006,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
     BusinessDataBusinessListingsSearchLiveItem businessDataBusinessListingsSearchLiveItem = (BusinessDataBusinessListingsSearchLiveItem) o;
     return Objects.equals(this.type, businessDataBusinessListingsSearchLiveItem.type) &&
         Objects.equals(this.title, businessDataBusinessListingsSearchLiveItem.title) &&
+        Objects.equals(this.originalTitle, businessDataBusinessListingsSearchLiveItem.originalTitle) &&
         Objects.equals(this.description, businessDataBusinessListingsSearchLiveItem.description) &&
         Objects.equals(this.category, businessDataBusinessListingsSearchLiveItem.category) &&
         Objects.equals(this.categoryIds, businessDataBusinessListingsSearchLiveItem.categoryIds) &&
@@ -1025,7 +1049,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime, firstSeen, additionalProperties);
+    return Objects.hash(type, title, originalTitle, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime, firstSeen, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1041,6 +1065,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
     sb.append("class BusinessDataBusinessListingsSearchLiveItem {\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
+    sb.append("    originalTitle: ").append(toIndentedString(originalTitle)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
     sb.append("    categoryIds: ").append(toIndentedString(categoryIds)).append("\n");
@@ -1099,6 +1124,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
     openapiFields.add("title");
+    openapiFields.add("original_title");
     openapiFields.add("description");
     openapiFields.add("category");
     openapiFields.add("category_ids");
@@ -1155,6 +1181,9 @@ public class BusinessDataBusinessListingsSearchLiveItem {
       }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("original_title") != null && !jsonObj.get("original_title").isJsonNull()) && !jsonObj.get("original_title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `original_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original_title").toString()));
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));

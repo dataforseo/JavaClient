@@ -11,7 +11,7 @@
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**featuredTitle** | **String** | the title of the featured snippets source page |  [optional] |
 |**description** | **String** | description of the results element in SERP |  [optional] |
-|**url** | **String** | relevant URL of the Ad element in SERP |  [optional] |
+|**url** | **String** | relevant URL |  [optional] |
 |**table** | [**Table**](Table.md) |  |  [optional] |
 |**seType** | **String** | search engine type |  [optional] |
 |**mainDomain** | **String** | primary domain name in SERP |  [optional] |

@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**items** | [**List&lt;ShortVideosElement&gt;**](ShortVideosElement.md) | elements of search results found in SERP |  [optional] |
+|**items** | [**List&lt;ShortVideosElement&gt;**](ShortVideosElement.md) | additional items present in the element if there are none, equals null |  [optional] |
 
 
 

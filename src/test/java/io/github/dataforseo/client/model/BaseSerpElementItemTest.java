@@ -62,20 +62,4 @@ public class BaseSerpElementItemTest {
         // TODO: test rankAbsolute
     }
 
-    /**
-     * Test the property 'position'
-     */
-    @Test
-    public void positionTest() {
-        // TODO: test position
-    }
-
-    /**
-     * Test the property 'xpath'
-     */
-    @Test
-    public void xpathTest() {
-        // TODO: test xpath
-    }
-
 }

@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AvgBacklinksInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AvgBacklinksInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -248,7 +248,7 @@ public class AvgBacklinksInfo {
   }
 
   /**
-   * date and time when search intent data was last updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00
+   * date and time when SERP data was updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable

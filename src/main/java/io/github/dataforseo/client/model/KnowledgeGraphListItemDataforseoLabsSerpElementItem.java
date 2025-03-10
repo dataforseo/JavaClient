@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KnowledgeGraphListItemDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KnowledgeGraphListItemDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -81,7 +81,7 @@ public class KnowledgeGraphListItemDataforseoLabsSerpElementItem extends BaseDat
   }
 
   /**
-   * title of the row
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -146,7 +146,7 @@ public class KnowledgeGraphListItemDataforseoLabsSerpElementItem extends BaseDat
   }
 
   /**
-   * contains arrays of specific images
+   * additional items present in the element if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

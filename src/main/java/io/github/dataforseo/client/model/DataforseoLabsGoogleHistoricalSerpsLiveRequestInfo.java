@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -187,7 +187,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo {
   }
 
   /**
-   * full name of the language optional field if you use this field, you don’t need to specify language_code you can receive the list of available languages with their language_name by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages ignore this field to get the results for all available languages example: English
+   * full name of the language required field if you don’t specify language_code Note: it is required to specify either language_name or language_code you can receive the list of available languages with their language_name parameters by making a separate request to the https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages example: English
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -206,7 +206,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo {
   }
 
   /**
-   * language code optional field if you use this field, you don’t need to specify language_name you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages ignore this field to get the results for all available languages example: en
+   * unique language identifier required field if you don’t specify language_name Note: it is required to specify either language_name or language_code you can receive the list of available languages with their language_code parameters by making a separate request to the https://api.dataforseo.com/v3/dataforseo_labs/locations_and_languages example: en
    * @return languageCode
    */
   @javax.annotation.Nullable

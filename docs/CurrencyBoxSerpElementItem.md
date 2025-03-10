@@ -7,7 +7,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**value** | **Float** | the value of the rating |  [optional] |
+|**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
+|**xpath** | **String** | the XPath of the element |  [optional] |
+|**value** | **Integer** | the value of the rating |  [optional] |
 |**convertedValue** | **Float** | value converted to a requested currency indicates the exact value based on Google Fincance data at the time when our API pulled the results note that exchange rates displayed in the currency_box element may be delayed according to the Google Finance disclaimer |  [optional] |
 |**currency** | **String** | currency of the listed price ISO code of the currency applied to the price |  [optional] |
 |**convertedCurrency** | **String** | converted currency |  [optional] |

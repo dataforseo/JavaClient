@@ -59,8 +59,16 @@ import io.github.dataforseo.client.JSON;
 /**
  * PaidSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PaidSerpElementItem extends BaseSerpElementItem {
+  public static final String SERIALIZED_NAME_POSITION = "position";
+  @SerializedName(SERIALIZED_NAME_POSITION)
+  private String position;
+
+  public static final String SERIALIZED_NAME_XPATH = "xpath";
+  @SerializedName(SERIALIZED_NAME_XPATH)
+  private String xpath;
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -127,6 +135,44 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
 
   public PaidSerpElementItem() {
   }
+
+  public PaidSerpElementItem position(String position) {
+    this.position = position;
+    return this;
+  }
+
+  /**
+   * the alignment of the element in SERP can take the following values: left, right
+   * @return position
+   */
+  @javax.annotation.Nullable
+  public String getPosition() {
+    return position;
+  }
+
+  public void setPosition(String position) {
+    this.position = position;
+  }
+
+
+  public PaidSerpElementItem xpath(String xpath) {
+    this.xpath = xpath;
+    return this;
+  }
+
+  /**
+   * the XPath of the element
+   * @return xpath
+   */
+  @javax.annotation.Nullable
+  public String getXpath() {
+    return xpath;
+  }
+
+  public void setXpath(String xpath) {
+    this.xpath = xpath;
+  }
+
 
   public PaidSerpElementItem title(String title) {
     this.title = title;
@@ -526,7 +572,9 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     PaidSerpElementItem paidSerpElementItem = (PaidSerpElementItem) o;
-    return Objects.equals(this.title, paidSerpElementItem.title) &&
+    return Objects.equals(this.position, paidSerpElementItem.position) &&
+        Objects.equals(this.xpath, paidSerpElementItem.xpath) &&
+        Objects.equals(this.title, paidSerpElementItem.title) &&
         Objects.equals(this.domain, paidSerpElementItem.domain) &&
         Objects.equals(this.websiteName, paidSerpElementItem.websiteName) &&
         Objects.equals(this.breadcrumb, paidSerpElementItem.breadcrumb) &&
@@ -552,7 +600,7 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, domain, websiteName, breadcrumb, isImage, isVideo, images, url, highlighted, extra, description, descriptionRows, links, price, rating, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(position, xpath, title, domain, websiteName, breadcrumb, isImage, isVideo, images, url, highlighted, extra, description, descriptionRows, links, price, rating, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -567,6 +615,8 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class PaidSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    websiteName: ").append(toIndentedString(websiteName)).append("\n");
@@ -645,6 +695,12 @@ public class PaidSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

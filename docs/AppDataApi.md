@@ -601,7 +601,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "c26a4939-f0ad-4072-a50c-aa336a519617"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "b3dcf205-7143-4f6d-9589-e0094fd966b9"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppInfoTaskGetAdvancedResponseInfo result = apiInstance.appleAppInfoTaskGetAdvanced(id);
       System.out.println(result);
@@ -801,7 +801,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "c173321a-4ccd-479a-a62c-d6bfde2e009b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "e0958be6-9041-4ce5-96f2-698ef25cfe2c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppListTaskGetAdvancedResponseInfo result = apiInstance.appleAppListTaskGetAdvanced(id);
       System.out.println(result);
@@ -1133,7 +1133,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "b165503a-3f7b-48a1-b9ed-9e44017a5d5d"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "481a8f6d-caa3-4550-8926-a1ed6c8c0845"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppReviewsTaskGetAdvancedResponseInfo result = apiInstance.appleAppReviewsTaskGetAdvanced(id);
       System.out.println(result);
@@ -1333,7 +1333,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "e1e417d4-ea1c-4761-a9e6-98ba7cda47b2"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "ce9f6344-2e3f-4e04-a7c2-d5c0d1a8906c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataAppleAppSearchesTaskGetAdvancedResponseInfo result = apiInstance.appleAppSearchesTaskGetAdvanced(id);
       System.out.println(result);
@@ -1597,7 +1597,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "40b72b51-826b-42f5-8cd7-4946c2ecacc3"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "779b1038-69a7-4f4a-94e8-dee2ee6a16fa"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppInfoTaskGetAdvancedResponseInfo result = apiInstance.googleAppInfoTaskGetAdvanced(id);
       System.out.println(result);
@@ -1665,7 +1665,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "df5aabbc-8da6-4bb8-932e-ea12dbe6353b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "ee862562-6bb2-4db0-9c63-f099faad2567"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppInfoTaskGetHtmlResponseInfo result = apiInstance.googleAppInfoTaskGetHtml(id);
       System.out.println(result);
@@ -1865,7 +1865,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "df4be613-8616-4ec6-a479-03d3295cd2e0"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "f9f0bbbe-0c73-4d63-a01e-59caf1fa9f34"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppListTaskGetAdvancedResponseInfo result = apiInstance.googleAppListTaskGetAdvanced(id);
       System.out.println(result);
@@ -1933,7 +1933,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "be529004-1215-486f-aa58-2070bbe3083a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "36af0481-c859-46e2-a03f-44a255307416"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppListTaskGetHtmlResponseInfo result = apiInstance.googleAppListTaskGetHtml(id);
       System.out.println(result);
@@ -2265,7 +2265,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "6225022d-bb1b-4942-abd6-d06f1912242b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "cadcc491-f9f6-4dd4-bb7e-865175afb6ed"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo result = apiInstance.googleAppReviewsTaskGetAdvanced(id);
       System.out.println(result);
@@ -2333,7 +2333,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "dd354f51-107f-42ff-94ab-f536e3c98f65"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "4cf3984f-4d56-4b89-b466-c6e1f1910b13"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppReviewsTaskGetHtmlResponseInfo result = apiInstance.googleAppReviewsTaskGetHtml(id);
       System.out.println(result);
@@ -2533,7 +2533,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "732d8a44-c985-45d7-b9c7-253f4c9c2fbd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
+    String id = "67f93c95-b356-4951-8a09-0ebe7ff364cb"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
     try {
       AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo result = apiInstance.googleAppSearchesTaskGetAdvanced(id);
       System.out.println(result);
@@ -2601,7 +2601,7 @@ public class Example {
     basicAuth.setPassword("YOUR PASSWORD");
 
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = "09396893-f45c-46e2-b66a-a99f27f02702"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
+    String id = "df5c7e9b-aa3d-40b8-bd48-f3e1fb5cea1c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
     try {
       AppDataGoogleAppSearchesTaskGetHtmlResponseInfo result = apiInstance.googleAppSearchesTaskGetHtml(id);
       System.out.println(result);

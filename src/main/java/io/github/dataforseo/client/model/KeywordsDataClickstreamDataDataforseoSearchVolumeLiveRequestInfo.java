@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -193,7 +193,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo {
   }
 
   /**
-   * use clickstream data to provide results optional field if set to true, you will get DataForSEO search volume values based on clickstream data; if set to false, Bing search volume data will be used to calculate DataForSEO search volume; default value: true; Note: some locations may not be available for calculating Bing search volume, in this case search volume will be calculated based on clickstream data even if you set this parameter to false
+   * use clickstream data to provide results optional field if set to true, you will get DataForSEO search volume values based on clickstream data; if set to false, Bing search volume data will be used to calculate DataForSEO search volume; default value: true; Note: Bing search volume is available for locations provided in Bing Search Volume History Locations and Bing Ads Locations endpoints; search volume values for any other location are calculated based on clickstream data even if you set this parameter to false
    * @return useClickstream
    */
   @javax.annotation.Nullable

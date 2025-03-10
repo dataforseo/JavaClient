@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleNewsTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleNewsTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -163,7 +163,7 @@ public class SerpGoogleNewsTaskPostRequestInfo {
   }
 
   /**
-   * direct URL of the search query optional field you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method. example: https://www.google.co.uk/search?q&#x3D;%20rank%20tracker%20api&amp;hl&#x3D;en&amp;gl&#x3D;GB&amp;uule&#x3D;w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
+   * direct URL of the search query optional field you can specify a direct URL and we will sort it out to the necessary fields; Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method; example: https://www.google.co.uk/search?q&#x3D;%20rank%20tracker%20api&amp;hl&#x3D;en&amp;gl&#x3D;GB&amp;uule&#x3D;w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
    * @return url
    */
   @javax.annotation.Nullable

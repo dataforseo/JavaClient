@@ -1387,7 +1387,7 @@ public class MerchantApi {
 
     /**
      * 
-     * ‌‌ This endpoint will provide you with a list of reviews for the target Amazon product. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
+     * ‌‌ for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
      * @param merchantAmazonReviewsTaskPostRequestInfo  (optional)
      * @return MerchantAmazonReviewsTaskPostResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1404,7 +1404,7 @@ public class MerchantApi {
 
     /**
      * 
-     * ‌‌ This endpoint will provide you with a list of reviews for the target Amazon product. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
+     * ‌‌ for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
      * @param merchantAmazonReviewsTaskPostRequestInfo  (optional)
      * @return ApiResponse&lt;MerchantAmazonReviewsTaskPostResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
@@ -1422,7 +1422,7 @@ public class MerchantApi {
 
     /**
      *  (asynchronously)
-     * ‌‌ This endpoint will provide you with a list of reviews for the target Amazon product. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
+     * ‌‌ for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
      * @param merchantAmazonReviewsTaskPostRequestInfo  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call

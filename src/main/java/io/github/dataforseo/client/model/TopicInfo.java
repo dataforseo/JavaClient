@@ -19,8 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.ContentItemInfo;
-import io.github.dataforseo.client.model.TableContent;
+import io.github.dataforseo.client.model.SectionContentItemInfo;
+import io.github.dataforseo.client.model.TableContentInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TopicInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TopicInfo {
   public static final String SERIALIZED_NAME_H_TITLE = "h_title";
   @SerializedName(SERIALIZED_NAME_H_TITLE)
@@ -73,19 +73,19 @@ public class TopicInfo {
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
   @SerializedName(SERIALIZED_NAME_LEVEL)
-  private String level;
+  private Integer level;
 
   public static final String SERIALIZED_NAME_PRIMARY_CONTENT = "primary_content";
   @SerializedName(SERIALIZED_NAME_PRIMARY_CONTENT)
-  private List<ContentItemInfo> primaryContent;
+  private List<SectionContentItemInfo> primaryContent;
 
   public static final String SERIALIZED_NAME_SECONDARY_CONTENT = "secondary_content";
   @SerializedName(SERIALIZED_NAME_SECONDARY_CONTENT)
-  private List<ContentItemInfo> secondaryContent;
+  private List<SectionContentItemInfo> secondaryContent;
 
   public static final String SERIALIZED_NAME_TABLE_CONTENT = "table_content";
   @SerializedName(SERIALIZED_NAME_TABLE_CONTENT)
-  private List<TableContent> tableContent;
+  private List<TableContentInfo> tableContent;
 
   public TopicInfo() {
   }
@@ -166,7 +166,7 @@ public class TopicInfo {
   }
 
 
-  public TopicInfo level(String level) {
+  public TopicInfo level(Integer level) {
     this.level = level;
     return this;
   }
@@ -176,21 +176,21 @@ public class TopicInfo {
    * @return level
    */
   @javax.annotation.Nullable
-  public String getLevel() {
+  public Integer getLevel() {
     return level;
   }
 
-  public void setLevel(String level) {
+  public void setLevel(Integer level) {
     this.level = level;
   }
 
 
-  public TopicInfo primaryContent(List<ContentItemInfo> primaryContent) {
+  public TopicInfo primaryContent(List<SectionContentItemInfo> primaryContent) {
     this.primaryContent = primaryContent;
     return this;
   }
 
-  public TopicInfo addPrimaryContentItem(ContentItemInfo primaryContentItem) {
+  public TopicInfo addPrimaryContentItem(SectionContentItemInfo primaryContentItem) {
     if (this.primaryContent == null) {
       this.primaryContent = new ArrayList<>();
     }
@@ -203,21 +203,21 @@ public class TopicInfo {
    * @return primaryContent
    */
   @javax.annotation.Nullable
-  public List<ContentItemInfo> getPrimaryContent() {
+  public List<SectionContentItemInfo> getPrimaryContent() {
     return primaryContent;
   }
 
-  public void setPrimaryContent(List<ContentItemInfo> primaryContent) {
+  public void setPrimaryContent(List<SectionContentItemInfo> primaryContent) {
     this.primaryContent = primaryContent;
   }
 
 
-  public TopicInfo secondaryContent(List<ContentItemInfo> secondaryContent) {
+  public TopicInfo secondaryContent(List<SectionContentItemInfo> secondaryContent) {
     this.secondaryContent = secondaryContent;
     return this;
   }
 
-  public TopicInfo addSecondaryContentItem(ContentItemInfo secondaryContentItem) {
+  public TopicInfo addSecondaryContentItem(SectionContentItemInfo secondaryContentItem) {
     if (this.secondaryContent == null) {
       this.secondaryContent = new ArrayList<>();
     }
@@ -230,21 +230,21 @@ public class TopicInfo {
    * @return secondaryContent
    */
   @javax.annotation.Nullable
-  public List<ContentItemInfo> getSecondaryContent() {
+  public List<SectionContentItemInfo> getSecondaryContent() {
     return secondaryContent;
   }
 
-  public void setSecondaryContent(List<ContentItemInfo> secondaryContent) {
+  public void setSecondaryContent(List<SectionContentItemInfo> secondaryContent) {
     this.secondaryContent = secondaryContent;
   }
 
 
-  public TopicInfo tableContent(List<TableContent> tableContent) {
+  public TopicInfo tableContent(List<TableContentInfo> tableContent) {
     this.tableContent = tableContent;
     return this;
   }
 
-  public TopicInfo addTableContentItem(TableContent tableContentItem) {
+  public TopicInfo addTableContentItem(TableContentInfo tableContentItem) {
     if (this.tableContent == null) {
       this.tableContent = new ArrayList<>();
     }
@@ -257,11 +257,11 @@ public class TopicInfo {
    * @return tableContent
    */
   @javax.annotation.Nullable
-  public List<TableContent> getTableContent() {
+  public List<TableContentInfo> getTableContent() {
     return tableContent;
   }
 
-  public void setTableContent(List<TableContent> tableContent) {
+  public void setTableContent(List<TableContentInfo> tableContent) {
     this.tableContent = tableContent;
   }
 
@@ -420,9 +420,6 @@ public class TopicInfo {
       if ((jsonObj.get("language") != null && !jsonObj.get("language").isJsonNull()) && !jsonObj.get("language").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language").toString()));
       }
-      if ((jsonObj.get("level") != null && !jsonObj.get("level").isJsonNull()) && !jsonObj.get("level").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `level` to be a primitive type in the JSON string but got `%s`", jsonObj.get("level").toString()));
-      }
       if (jsonObj.get("primary_content") != null && !jsonObj.get("primary_content").isJsonNull()) {
         JsonArray jsonArrayprimaryContent = jsonObj.getAsJsonArray("primary_content");
         if (jsonArrayprimaryContent != null) {
@@ -433,7 +430,7 @@ public class TopicInfo {
 
           // validate the optional field `primary_content` (array)
           for (int i = 0; i < jsonArrayprimaryContent.size(); i++) {
-            ContentItemInfo.validateJsonElement(jsonArrayprimaryContent.get(i));
+            SectionContentItemInfo.validateJsonElement(jsonArrayprimaryContent.get(i));
           };
         }
       }
@@ -447,7 +444,7 @@ public class TopicInfo {
 
           // validate the optional field `secondary_content` (array)
           for (int i = 0; i < jsonArraysecondaryContent.size(); i++) {
-            ContentItemInfo.validateJsonElement(jsonArraysecondaryContent.get(i));
+            SectionContentItemInfo.validateJsonElement(jsonArraysecondaryContent.get(i));
           };
         }
       }
@@ -461,7 +458,7 @@ public class TopicInfo {
 
           // validate the optional field `table_content` (array)
           for (int i = 0; i < jsonArraytableContent.size(); i++) {
-            TableContent.validateJsonElement(jsonArraytableContent.get(i));
+            TableContentInfo.validateJsonElement(jsonArraytableContent.get(i));
           };
         }
       }

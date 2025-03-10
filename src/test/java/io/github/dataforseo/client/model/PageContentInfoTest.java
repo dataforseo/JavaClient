@@ -18,6 +18,10 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.Contacts;
+import io.github.dataforseo.client.model.ContentCommentInfo;
+import io.github.dataforseo.client.model.ContentOfferInfo;
+import io.github.dataforseo.client.model.ContentRatingInfo;
 import io.github.dataforseo.client.model.PageSectionContentInfo;
 import io.github.dataforseo.client.model.TopicInfo;
 import java.io.IOException;
@@ -72,6 +76,38 @@ public class PageContentInfoTest {
     @Test
     public void secondaryTopicTest() {
         // TODO: test secondaryTopic
+    }
+
+    /**
+     * Test the property 'ratings'
+     */
+    @Test
+    public void ratingsTest() {
+        // TODO: test ratings
+    }
+
+    /**
+     * Test the property 'offers'
+     */
+    @Test
+    public void offersTest() {
+        // TODO: test offers
+    }
+
+    /**
+     * Test the property 'comments'
+     */
+    @Test
+    public void commentsTest() {
+        // TODO: test comments
+    }
+
+    /**
+     * Test the property 'contacts'
+     */
+    @Test
+    public void contactsTest() {
+        // TODO: test contacts
     }
 
 }

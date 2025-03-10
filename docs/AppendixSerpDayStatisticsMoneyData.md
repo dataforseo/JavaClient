@@ -17,8 +17,8 @@
 |**tasksFixed** | **Double** |  |  [optional] |
 |**jobs** | [**AppendixJobsSerpLimitsRatesDataInfo**](AppendixJobsSerpLimitsRatesDataInfo.md) |  |  [optional] |
 |**screenshot** | **Double** |  |  [optional] |
-|**refundMoney** | **Double** |  |  [optional] |
 |**aiSummary** | **Double** |  |  [optional] |
+|**refundMoney** | **Double** |  |  [optional] |
 
 
 

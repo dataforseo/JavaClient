@@ -329,35 +329,11 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'availableHistory'
+     * Test the property 'amazon'
      */
     @Test
-    public void availableHistoryTest() {
-        // TODO: test availableHistory
-    }
-
-    /**
-     * Test the property 'status'
-     */
-    @Test
-    public void statusTest() {
-        // TODO: test status
-    }
-
-    /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
-     * Test the property 'topGoogleSearches'
-     */
-    @Test
-    public void topGoogleSearchesTest() {
-        // TODO: test topGoogleSearches
+    public void amazonTest() {
+        // TODO: test amazon
     }
 
     /**
@@ -369,19 +345,43 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'topGoogleSearches'
+     */
+    @Test
+    public void topGoogleSearchesTest() {
+        // TODO: test topGoogleSearches
+    }
+
+    /**
+     * Test the property 'status'
+     */
+    @Test
+    public void statusTest() {
+        // TODO: test status
+    }
+
+    /**
+     * Test the property 'availableHistory'
+     */
+    @Test
+    public void availableHistoryTest() {
+        // TODO: test availableHistory
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
+    }
+
+    /**
      * Test the property 'availableFilters'
      */
     @Test
     public void availableFiltersTest() {
         // TODO: test availableFilters
-    }
-
-    /**
-     * Test the property 'amazon'
-     */
-    @Test
-    public void amazonTest() {
-        // TODO: test amazon
     }
 
 }

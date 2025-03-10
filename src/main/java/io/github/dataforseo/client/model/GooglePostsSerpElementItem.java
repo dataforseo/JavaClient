@@ -51,8 +51,16 @@ import io.github.dataforseo.client.JSON;
 /**
  * GooglePostsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GooglePostsSerpElementItem extends BaseSerpElementItem {
+  public static final String SERIALIZED_NAME_POSITION = "position";
+  @SerializedName(SERIALIZED_NAME_POSITION)
+  private String position;
+
+  public static final String SERIALIZED_NAME_XPATH = "xpath";
+  @SerializedName(SERIALIZED_NAME_XPATH)
+  private String xpath;
+
   public static final String SERIALIZED_NAME_POSTS_ID = "posts_id";
   @SerializedName(SERIALIZED_NAME_POSTS_ID)
   private String postsId;
@@ -71,6 +79,44 @@ public class GooglePostsSerpElementItem extends BaseSerpElementItem {
 
   public GooglePostsSerpElementItem() {
   }
+
+  public GooglePostsSerpElementItem position(String position) {
+    this.position = position;
+    return this;
+  }
+
+  /**
+   * the alignment of the element in SERP can take the following values: left, right
+   * @return position
+   */
+  @javax.annotation.Nullable
+  public String getPosition() {
+    return position;
+  }
+
+  public void setPosition(String position) {
+    this.position = position;
+  }
+
+
+  public GooglePostsSerpElementItem xpath(String xpath) {
+    this.xpath = xpath;
+    return this;
+  }
+
+  /**
+   * the XPath of the element
+   * @return xpath
+   */
+  @javax.annotation.Nullable
+  public String getXpath() {
+    return xpath;
+  }
+
+  public void setXpath(String xpath) {
+    this.xpath = xpath;
+  }
+
 
   public GooglePostsSerpElementItem postsId(String postsId) {
     this.postsId = postsId;
@@ -202,7 +248,9 @@ public class GooglePostsSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     GooglePostsSerpElementItem googlePostsSerpElementItem = (GooglePostsSerpElementItem) o;
-    return Objects.equals(this.postsId, googlePostsSerpElementItem.postsId) &&
+    return Objects.equals(this.position, googlePostsSerpElementItem.position) &&
+        Objects.equals(this.xpath, googlePostsSerpElementItem.xpath) &&
+        Objects.equals(this.postsId, googlePostsSerpElementItem.postsId) &&
         Objects.equals(this.feature, googlePostsSerpElementItem.feature) &&
         Objects.equals(this.cid, googlePostsSerpElementItem.cid) &&
         Objects.equals(this.rectangle, googlePostsSerpElementItem.rectangle)&&
@@ -216,7 +264,7 @@ public class GooglePostsSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(postsId, feature, cid, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(position, xpath, postsId, feature, cid, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -231,6 +279,8 @@ public class GooglePostsSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class GooglePostsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    postsId: ").append(toIndentedString(postsId)).append("\n");
     sb.append("    feature: ").append(toIndentedString(feature)).append("\n");
     sb.append("    cid: ").append(toIndentedString(cid)).append("\n");
@@ -285,6 +335,12 @@ public class GooglePostsSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
       if ((jsonObj.get("posts_id") != null && !jsonObj.get("posts_id").isJsonNull()) && !jsonObj.get("posts_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `posts_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("posts_id").toString()));
       }

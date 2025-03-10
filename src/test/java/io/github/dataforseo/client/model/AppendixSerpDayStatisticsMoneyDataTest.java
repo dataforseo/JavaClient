@@ -121,19 +121,19 @@ public class AppendixSerpDayStatisticsMoneyDataTest {
     }
 
     /**
-     * Test the property 'refundMoney'
-     */
-    @Test
-    public void refundMoneyTest() {
-        // TODO: test refundMoney
-    }
-
-    /**
      * Test the property 'aiSummary'
      */
     @Test
     public void aiSummaryTest() {
         // TODO: test aiSummary
+    }
+
+    /**
+     * Test the property 'refundMoney'
+     */
+    @Test
+    public void refundMoneyTest() {
+        // TODO: test refundMoney
     }
 
 }

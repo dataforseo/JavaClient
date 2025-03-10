@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixOnPageDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixOnPageDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_TASK_POST = "task_post";
   @SerializedName(SERIALIZED_NAME_TASK_POST)
@@ -132,10 +132,6 @@ public class AppendixOnPageDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_CONTENT_PARSING_LIVE)
   private Double contentParsingLive;
 
-  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
-  @SerializedName(SERIALIZED_NAME_ID_LIST)
-  private Double idList;
-
   public static final String SERIALIZED_NAME_FORCE_STOP = "force_stop";
   @SerializedName(SERIALIZED_NAME_FORCE_STOP)
   private Double forceStop;
@@ -143,6 +139,10 @@ public class AppendixOnPageDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
   private Double availableFilters;
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
 
   public static final String SERIALIZED_NAME_MICRODATA = "microdata";
   @SerializedName(SERIALIZED_NAME_MICRODATA)
@@ -531,25 +531,6 @@ public class AppendixOnPageDayStatisticsRatesData {
   }
 
 
-  public AppendixOnPageDayStatisticsRatesData idList(Double idList) {
-    this.idList = idList;
-    return this;
-  }
-
-  /**
-   * Get idList
-   * @return idList
-   */
-  @javax.annotation.Nullable
-  public Double getIdList() {
-    return idList;
-  }
-
-  public void setIdList(Double idList) {
-    this.idList = idList;
-  }
-
-
   public AppendixOnPageDayStatisticsRatesData forceStop(Double forceStop) {
     this.forceStop = forceStop;
     return this;
@@ -585,6 +566,25 @@ public class AppendixOnPageDayStatisticsRatesData {
 
   public void setAvailableFilters(Double availableFilters) {
     this.availableFilters = availableFilters;
+  }
+
+
+  public AppendixOnPageDayStatisticsRatesData idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * Get idList
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
   }
 
 
@@ -681,9 +681,9 @@ public class AppendixOnPageDayStatisticsRatesData {
         Objects.equals(this.pageScreenshot, appendixOnPageDayStatisticsRatesData.pageScreenshot) &&
         Objects.equals(this.contentParsing, appendixOnPageDayStatisticsRatesData.contentParsing) &&
         Objects.equals(this.contentParsingLive, appendixOnPageDayStatisticsRatesData.contentParsingLive) &&
-        Objects.equals(this.idList, appendixOnPageDayStatisticsRatesData.idList) &&
         Objects.equals(this.forceStop, appendixOnPageDayStatisticsRatesData.forceStop) &&
         Objects.equals(this.availableFilters, appendixOnPageDayStatisticsRatesData.availableFilters) &&
+        Objects.equals(this.idList, appendixOnPageDayStatisticsRatesData.idList) &&
         Objects.equals(this.microdata, appendixOnPageDayStatisticsRatesData.microdata)&&
         Objects.equals(this.additionalProperties, appendixOnPageDayStatisticsRatesData.additionalProperties);
   }
@@ -694,7 +694,7 @@ public class AppendixOnPageDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(taskPost, tasksReady, summary, resources, pages, nonIndexable, duplicateTags, links, waterfall, errors, pagesByResource, duplicateContent, rawHtml, instantPages, redirectChains, lighthouse, keywordDensity, pageScreenshot, contentParsing, contentParsingLive, idList, forceStop, availableFilters, microdata, additionalProperties);
+    return Objects.hash(taskPost, tasksReady, summary, resources, pages, nonIndexable, duplicateTags, links, waterfall, errors, pagesByResource, duplicateContent, rawHtml, instantPages, redirectChains, lighthouse, keywordDensity, pageScreenshot, contentParsing, contentParsingLive, forceStop, availableFilters, idList, microdata, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -728,9 +728,9 @@ public class AppendixOnPageDayStatisticsRatesData {
     sb.append("    pageScreenshot: ").append(toIndentedString(pageScreenshot)).append("\n");
     sb.append("    contentParsing: ").append(toIndentedString(contentParsing)).append("\n");
     sb.append("    contentParsingLive: ").append(toIndentedString(contentParsingLive)).append("\n");
-    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    forceStop: ").append(toIndentedString(forceStop)).append("\n");
     sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    microdata: ").append(toIndentedString(microdata)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -775,9 +775,9 @@ public class AppendixOnPageDayStatisticsRatesData {
     openapiFields.add("page_screenshot");
     openapiFields.add("content_parsing");
     openapiFields.add("content_parsing_live");
-    openapiFields.add("id_list");
     openapiFields.add("force_stop");
     openapiFields.add("available_filters");
+    openapiFields.add("id_list");
     openapiFields.add("microdata");
 
     // a set of required properties/fields (JSON key names)

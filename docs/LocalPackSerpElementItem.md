@@ -7,6 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+|**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
+|**xpath** | **String** | the XPath of the element |  [optional] |
 |**title** | **String** | title of the row |  [optional] |
 |**description** | **String** | description of the results element in SERP |  [optional] |
 |**domain** | **String** | source domain |  [optional] |

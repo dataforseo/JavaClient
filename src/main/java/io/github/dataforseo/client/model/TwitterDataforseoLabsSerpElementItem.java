@@ -53,12 +53,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * TwitterDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
-  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
-  @SerializedName(SERIALIZED_NAME_SE_TYPE)
-  private String seType;
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -73,25 +69,6 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public TwitterDataforseoLabsSerpElementItem() {
   }
-
-  public TwitterDataforseoLabsSerpElementItem seType(String seType) {
-    this.seType = seType;
-    return this;
-  }
-
-  /**
-   * search engine type
-   * @return seType
-   */
-  @javax.annotation.Nullable
-  public String getSeType() {
-    return seType;
-  }
-
-  public void setSeType(String seType) {
-    this.seType = seType;
-  }
-
 
   public TwitterDataforseoLabsSerpElementItem title(String title) {
     this.title = title;
@@ -118,7 +95,7 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
   /**
-   * relevant URL of the Ad element in SERP
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -145,7 +122,7 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
   /**
-   * elements of search results found in SERP
+   * additional items present in the element if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable
@@ -212,8 +189,7 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
       return false;
     }
     TwitterDataforseoLabsSerpElementItem twitterDataforseoLabsSerpElementItem = (TwitterDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.seType, twitterDataforseoLabsSerpElementItem.seType) &&
-        Objects.equals(this.title, twitterDataforseoLabsSerpElementItem.title) &&
+    return Objects.equals(this.title, twitterDataforseoLabsSerpElementItem.title) &&
         Objects.equals(this.url, twitterDataforseoLabsSerpElementItem.url) &&
         Objects.equals(this.items, twitterDataforseoLabsSerpElementItem.items)&&
         Objects.equals(this.additionalProperties, twitterDataforseoLabsSerpElementItem.additionalProperties) &&
@@ -226,7 +202,7 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, title, url, items, super.hashCode(), additionalProperties);
+    return Objects.hash(title, url, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -241,7 +217,6 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
     StringBuilder sb = new StringBuilder();
     sb.append("class TwitterDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
@@ -273,7 +248,6 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
-    openapiFields.add("se_type");
     openapiFields.add("title");
     openapiFields.add("url");
     openapiFields.add("items");
@@ -295,9 +269,6 @@ public class TwitterDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
-      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

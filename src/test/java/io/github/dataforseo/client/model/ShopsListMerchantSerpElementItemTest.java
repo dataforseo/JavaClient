@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseMerchantSerpElementItem;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -150,6 +151,14 @@ public class ShopsListMerchantSerpElementItemTest {
     @Test
     public void currencyTest() {
         // TODO: test currency
+    }
+
+    /**
+     * Test the property 'priceMultiplier'
+     */
+    @Test
+    public void priceMultiplierTest() {
+        // TODO: test priceMultiplier
     }
 
     /**

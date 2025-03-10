@@ -62,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleBusinessInfoBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -71,6 +71,10 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
+
+  public static final String SERIALIZED_NAME_ORIGINAL_TITLE = "original_title";
+  @SerializedName(SERIALIZED_NAME_ORIGINAL_TITLE)
+  private String originalTitle;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -250,6 +254,25 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public void setTitle(String title) {
     this.title = title;
+  }
+
+
+  public GoogleBusinessInfoBusinessDataSerpElementItem originalTitle(String originalTitle) {
+    this.originalTitle = originalTitle;
+    return this;
+  }
+
+  /**
+   * original title of the element original title not translated by Google
+   * @return originalTitle
+   */
+  @javax.annotation.Nullable
+  public String getOriginalTitle() {
+    return originalTitle;
+  }
+
+  public void setOriginalTitle(String originalTitle) {
+    this.originalTitle = originalTitle;
   }
 
 
@@ -1022,6 +1045,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     GoogleBusinessInfoBusinessDataSerpElementItem googleBusinessInfoBusinessDataSerpElementItem = (GoogleBusinessInfoBusinessDataSerpElementItem) o;
     return Objects.equals(this.position, googleBusinessInfoBusinessDataSerpElementItem.position) &&
         Objects.equals(this.title, googleBusinessInfoBusinessDataSerpElementItem.title) &&
+        Objects.equals(this.originalTitle, googleBusinessInfoBusinessDataSerpElementItem.originalTitle) &&
         Objects.equals(this.description, googleBusinessInfoBusinessDataSerpElementItem.description) &&
         Objects.equals(this.category, googleBusinessInfoBusinessDataSerpElementItem.category) &&
         Objects.equals(this.categoryIds, googleBusinessInfoBusinessDataSerpElementItem.categoryIds) &&
@@ -1067,7 +1091,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, title, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, contributorUrl, bookOnlineUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode(), additionalProperties);
+    return Objects.hash(position, title, originalTitle, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, contributorUrl, bookOnlineUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1084,6 +1108,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
+    sb.append("    originalTitle: ").append(toIndentedString(originalTitle)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
     sb.append("    categoryIds: ").append(toIndentedString(categoryIds)).append("\n");
@@ -1147,6 +1172,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("title");
+    openapiFields.add("original_title");
     openapiFields.add("description");
     openapiFields.add("category");
     openapiFields.add("category_ids");
@@ -1205,6 +1231,9 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
       }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
+      }
+      if ((jsonObj.get("original_title") != null && !jsonObj.get("original_title").isJsonNull()) && !jsonObj.get("original_title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `original_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original_title").toString()));
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));

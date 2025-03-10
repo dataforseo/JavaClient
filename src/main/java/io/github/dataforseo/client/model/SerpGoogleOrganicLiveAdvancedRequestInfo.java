@@ -20,7 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -49,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleOrganicLiveAdvancedRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -134,6 +136,10 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
   @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
   private String searchParam;
+
+  public static final String SERIALIZED_NAME_REMOVE_FROM_URL = "remove_from_url";
+  @SerializedName(SERIALIZED_NAME_REMOVE_FROM_URL)
+  private List<String> removeFromUrl;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -541,6 +547,33 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
   }
 
 
+  public SerpGoogleOrganicLiveAdvancedRequestInfo removeFromUrl(List<String> removeFromUrl) {
+    this.removeFromUrl = removeFromUrl;
+    return this;
+  }
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo addRemoveFromUrlItem(String removeFromUrlItem) {
+    if (this.removeFromUrl == null) {
+      this.removeFromUrl = new ArrayList<>();
+    }
+    this.removeFromUrl.add(removeFromUrlItem);
+    return this;
+  }
+
+  /**
+   * remove specific parameters from URLs optional field using this field, you can specify up to 10 parameters to remove from URLs in the result example: \&quot;remove_from_url\&quot;: [\&quot;srsltid\&quot;] Note: if the target field is specified, the specified URL parameters will be removed before the search
+   * @return removeFromUrl
+   */
+  @javax.annotation.Nullable
+  public List<String> getRemoveFromUrl() {
+    return removeFromUrl;
+  }
+
+  public void setRemoveFromUrl(List<String> removeFromUrl) {
+    this.removeFromUrl = removeFromUrl;
+  }
+
+
   public SerpGoogleOrganicLiveAdvancedRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -635,6 +668,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
         Objects.equals(this.peopleAlsoAskClickDepth, serpGoogleOrganicLiveAdvancedRequestInfo.peopleAlsoAskClickDepth) &&
         Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicLiveAdvancedRequestInfo.loadAsyncAiOverview) &&
         Objects.equals(this.searchParam, serpGoogleOrganicLiveAdvancedRequestInfo.searchParam) &&
+        Objects.equals(this.removeFromUrl, serpGoogleOrganicLiveAdvancedRequestInfo.removeFromUrl) &&
         Objects.equals(this.tag, serpGoogleOrganicLiveAdvancedRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, serpGoogleOrganicLiveAdvancedRequestInfo.additionalProperties);
   }
@@ -645,7 +679,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, searchParam, tag, additionalProperties);
+    return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, searchParam, removeFromUrl, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -680,6 +714,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
     sb.append("    peopleAlsoAskClickDepth: ").append(toIndentedString(peopleAlsoAskClickDepth)).append("\n");
     sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
+    sb.append("    removeFromUrl: ").append(toIndentedString(removeFromUrl)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -725,6 +760,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
     openapiFields.add("people_also_ask_click_depth");
     openapiFields.add("load_async_ai_overview");
     openapiFields.add("search_param");
+    openapiFields.add("remove_from_url");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -776,6 +812,10 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo {
       }
       if ((jsonObj.get("search_param") != null && !jsonObj.get("search_param").isJsonNull()) && !jsonObj.get("search_param").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `search_param` to be a primitive type in the JSON string but got `%s`", jsonObj.get("search_param").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("remove_from_url") != null && !jsonObj.get("remove_from_url").isJsonNull() && !jsonObj.get("remove_from_url").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `remove_from_url` to be an array in the JSON string but got `%s`", jsonObj.get("remove_from_url").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

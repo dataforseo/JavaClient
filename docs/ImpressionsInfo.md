@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**seType** | **String** | search engine type |  [optional] |
-|**lastUpdatedTime** | **String** | date and time when SERP data was updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 |  [optional] |
+|**lastUpdatedTime** | **String** | date and time when the clickstream dataset was updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” |  [optional] |
 |**bid** | **Long** | the maximum CPC it stands for the price you are willing to pay for an ad. The higher value, the higher positions and price you will getwe return the results for the 999 bid value to provide the highest number of impressions and level down the account-specific factors |  [optional] |
 |**matchType** | **String** | type of keyword match can take the following values: exact, broad, phrase |  [optional] |
 |**adPositionMin** | **Float** | the minimum ad position represents the minimum position of the advertisement |  [optional] |

@@ -205,19 +205,19 @@ public class AppendixKeywordsDataDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'google'
-     */
-    @Test
-    public void googleTest() {
-        // TODO: test google
-    }
-
-    /**
      * Test the property 'industries'
      */
     @Test
     public void industriesTest() {
         // TODO: test industries
+    }
+
+    /**
+     * Test the property 'google'
+     */
+    @Test
+    public void googleTest() {
+        // TODO: test google
     }
 
     /**

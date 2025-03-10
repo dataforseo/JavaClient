@@ -92,6 +92,33 @@ import io.github.dataforseo.client.model.SerpGoogleEventsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveHtmlRequestInfo;
@@ -803,6 +830,219 @@ public class SerpApiTest {
     @Test
     public void googleEventsTasksReadyTest() throws ApiException {
         SerpGoogleEventsTasksReadyResponseInfo response = api.googleEventsTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceExploreLiveAdvancedTest() throws ApiException {
+        List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo = null;
+        SerpGoogleFinanceExploreLiveAdvancedResponseInfo response = api.googleFinanceExploreLiveAdvanced(serpGoogleFinanceExploreLiveAdvancedRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceExploreLiveHtmlTest() throws ApiException {
+        List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo = null;
+        SerpGoogleFinanceExploreLiveHtmlResponseInfo response = api.googleFinanceExploreLiveHtml(serpGoogleFinanceExploreLiveHtmlRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceExploreTaskGetAdvancedTest() throws ApiException {
+        String id = null;
+        SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo response = api.googleFinanceExploreTaskGetAdvanced(id);
+        // TODO: test validations
+    }
+
+    /**
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceExploreTaskGetHtmlTest() throws ApiException {
+        String id = null;
+        SerpGoogleFinanceExploreTaskGetHtmlResponseInfo response = api.googleFinanceExploreTaskGetHtml(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceExploreTaskPostTest() throws ApiException {
+        List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo = null;
+        SerpGoogleFinanceExploreTaskPostResponseInfo response = api.googleFinanceExploreTaskPost(serpGoogleFinanceExploreTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceExploreTasksReadyTest() throws ApiException {
+        SerpGoogleFinanceExploreTasksReadyResponseInfo response = api.googleFinanceExploreTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceMarketsLiveAdvancedTest() throws ApiException {
+        List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo = null;
+        SerpGoogleFinanceMarketsLiveAdvancedResponseInfo response = api.googleFinanceMarketsLiveAdvanced(serpGoogleFinanceMarketsLiveAdvancedRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceMarketsLiveHtmlTest() throws ApiException {
+        List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo = null;
+        SerpGoogleFinanceMarketsLiveHtmlResponseInfo response = api.googleFinanceMarketsLiveHtml(serpGoogleFinanceMarketsLiveHtmlRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceMarketsTaskGetAdvancedTest() throws ApiException {
+        String id = null;
+        SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo response = api.googleFinanceMarketsTaskGetAdvanced(id);
+        // TODO: test validations
+    }
+
+    /**
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceMarketsTaskGetHtmlTest() throws ApiException {
+        String id = null;
+        SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo response = api.googleFinanceMarketsTaskGetHtml(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceMarketsTaskPostTest() throws ApiException {
+        List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo = null;
+        SerpGoogleFinanceMarketsTaskPostResponseInfo response = api.googleFinanceMarketsTaskPost(serpGoogleFinanceMarketsTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceMarketsTasksReadyTest() throws ApiException {
+        SerpGoogleFinanceMarketsTasksReadyResponseInfo response = api.googleFinanceMarketsTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceQuoteLiveAdvancedTest() throws ApiException {
+        List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo = null;
+        SerpGoogleFinanceQuoteLiveAdvancedResponseInfo response = api.googleFinanceQuoteLiveAdvanced(serpGoogleFinanceQuoteLiveAdvancedRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceQuoteLiveHtmlTest() throws ApiException {
+        List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo = null;
+        SerpGoogleFinanceQuoteLiveHtmlResponseInfo response = api.googleFinanceQuoteLiveHtml(serpGoogleFinanceQuoteLiveHtmlRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceQuoteTaskGetAdvancedTest() throws ApiException {
+        String id = null;
+        SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo response = api.googleFinanceQuoteTaskGetAdvanced(id);
+        // TODO: test validations
+    }
+
+    /**
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceQuoteTaskGetHtmlTest() throws ApiException {
+        String id = null;
+        SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo response = api.googleFinanceQuoteTaskGetHtml(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceQuoteTaskPostTest() throws ApiException {
+        List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo = null;
+        SerpGoogleFinanceQuoteTaskPostResponseInfo response = api.googleFinanceQuoteTaskPost(serpGoogleFinanceQuoteTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceQuoteTasksReadyTest() throws ApiException {
+        SerpGoogleFinanceQuoteTasksReadyResponseInfo response = api.googleFinanceQuoteTasksReady();
         // TODO: test validations
     }
 

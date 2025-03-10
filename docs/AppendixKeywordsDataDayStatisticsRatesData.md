@@ -27,8 +27,8 @@
 |**keywordSuggestionsForUrl** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**jobFunctions** | **Double** |  |  [optional] |
 |**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**industries** | **Double** |  |  [optional] |
+|**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
 
 

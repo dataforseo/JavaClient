@@ -22,7 +22,9 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.CrawlStatusInfo;
 import io.github.dataforseo.client.model.OnPageContentParsingItem;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageContentParsingResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageContentParsingResultInfo {
   public static final String SERIALIZED_NAME_CRAWL_PROGRESS = "crawl_progress";
   @SerializedName(SERIALIZED_NAME_CRAWL_PROGRESS)
@@ -67,7 +69,7 @@ public class OnPageContentParsingResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private OnPageContentParsingItem items;
+  private List<OnPageContentParsingItem> items;
 
   public OnPageContentParsingResultInfo() {
   }
@@ -129,21 +131,29 @@ public class OnPageContentParsingResultInfo {
   }
 
 
-  public OnPageContentParsingResultInfo items(OnPageContentParsingItem items) {
+  public OnPageContentParsingResultInfo items(List<OnPageContentParsingItem> items) {
     this.items = items;
     return this;
   }
 
+  public OnPageContentParsingResultInfo addItemsItem(OnPageContentParsingItem itemsItem) {
+    if (this.items == null) {
+      this.items = new ArrayList<>();
+    }
+    this.items.add(itemsItem);
+    return this;
+  }
+
   /**
-   * Get items
+   * items array
    * @return items
    */
   @javax.annotation.Nullable
-  public OnPageContentParsingItem getItems() {
+  public List<OnPageContentParsingItem> getItems() {
     return items;
   }
 
-  public void setItems(OnPageContentParsingItem items) {
+  public void setItems(List<OnPageContentParsingItem> items) {
     this.items = items;
   }
 
@@ -285,9 +295,19 @@ public class OnPageContentParsingResultInfo {
       if (jsonObj.get("crawl_status") != null && !jsonObj.get("crawl_status").isJsonNull()) {
         CrawlStatusInfo.validateJsonElement(jsonObj.get("crawl_status"));
       }
-      // validate the optional field `items`
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
-        OnPageContentParsingItem.validateJsonElement(jsonObj.get("items"));
+        JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
+        if (jsonArrayitems != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("items").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
+          }
+
+          // validate the optional field `items` (array)
+          for (int i = 0; i < jsonArrayitems.size(); i++) {
+            OnPageContentParsingItem.validateJsonElement(jsonArrayitems.get(i));
+          };
+        }
       }
   }
 

@@ -43,13 +43,13 @@
 |**searchIntent** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**historicalBulkTrafficEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**categoriesForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**availableHistory** | **Double** |  |  [optional] |
-|**status** | **Double** |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
-|**topGoogleSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**languages** | **Double** |  |  [optional] |
-|**availableFilters** | **Double** |  |  [optional] |
 |**amazon** | [**AppendixDataforseoLabsLimitsRatesDataInfo**](AppendixDataforseoLabsLimitsRatesDataInfo.md) |  |  [optional] |
+|**languages** | **Double** |  |  [optional] |
+|**topGoogleSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**status** | **Double** |  |  [optional] |
+|**availableHistory** | **Double** |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
+|**availableFilters** | **Double** |  |  [optional] |
 
 
 

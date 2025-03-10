@@ -55,8 +55,16 @@ import io.github.dataforseo.client.JSON;
 /**
  * KnowledgeGraphAiOverviewItemSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KnowledgeGraphAiOverviewItemSerpElementItem extends BaseSerpElementItem {
+  public static final String SERIALIZED_NAME_POSITION = "position";
+  @SerializedName(SERIALIZED_NAME_POSITION)
+  private String position;
+
+  public static final String SERIALIZED_NAME_XPATH = "xpath";
+  @SerializedName(SERIALIZED_NAME_XPATH)
+  private String xpath;
+
   public static final String SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW = "asynchronous_ai_overview";
   @SerializedName(SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW)
   private Boolean asynchronousAiOverview;
@@ -75,6 +83,44 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem extends BaseSerpElement
 
   public KnowledgeGraphAiOverviewItemSerpElementItem() {
   }
+
+  public KnowledgeGraphAiOverviewItemSerpElementItem position(String position) {
+    this.position = position;
+    return this;
+  }
+
+  /**
+   * the alignment of the element in SERP can take the following values: left, right
+   * @return position
+   */
+  @javax.annotation.Nullable
+  public String getPosition() {
+    return position;
+  }
+
+  public void setPosition(String position) {
+    this.position = position;
+  }
+
+
+  public KnowledgeGraphAiOverviewItemSerpElementItem xpath(String xpath) {
+    this.xpath = xpath;
+    return this;
+  }
+
+  /**
+   * the XPath of the element
+   * @return xpath
+   */
+  @javax.annotation.Nullable
+  public String getXpath() {
+    return xpath;
+  }
+
+  public void setXpath(String xpath) {
+    this.xpath = xpath;
+  }
+
 
   public KnowledgeGraphAiOverviewItemSerpElementItem asynchronousAiOverview(Boolean asynchronousAiOverview) {
     this.asynchronousAiOverview = asynchronousAiOverview;
@@ -222,7 +268,9 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem extends BaseSerpElement
       return false;
     }
     KnowledgeGraphAiOverviewItemSerpElementItem knowledgeGraphAiOverviewItemSerpElementItem = (KnowledgeGraphAiOverviewItemSerpElementItem) o;
-    return Objects.equals(this.asynchronousAiOverview, knowledgeGraphAiOverviewItemSerpElementItem.asynchronousAiOverview) &&
+    return Objects.equals(this.position, knowledgeGraphAiOverviewItemSerpElementItem.position) &&
+        Objects.equals(this.xpath, knowledgeGraphAiOverviewItemSerpElementItem.xpath) &&
+        Objects.equals(this.asynchronousAiOverview, knowledgeGraphAiOverviewItemSerpElementItem.asynchronousAiOverview) &&
         Objects.equals(this.items, knowledgeGraphAiOverviewItemSerpElementItem.items) &&
         Objects.equals(this.references, knowledgeGraphAiOverviewItemSerpElementItem.references) &&
         Objects.equals(this.rectangle, knowledgeGraphAiOverviewItemSerpElementItem.rectangle)&&
@@ -236,7 +284,7 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem extends BaseSerpElement
 
   @Override
   public int hashCode() {
-    return Objects.hash(asynchronousAiOverview, items, references, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(position, xpath, asynchronousAiOverview, items, references, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -251,6 +299,8 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem extends BaseSerpElement
     StringBuilder sb = new StringBuilder();
     sb.append("class KnowledgeGraphAiOverviewItemSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    asynchronousAiOverview: ").append(toIndentedString(asynchronousAiOverview)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    references: ").append(toIndentedString(references)).append("\n");
@@ -305,6 +355,12 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem extends BaseSerpElement
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
+      }
+      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
+      }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
         if (jsonArrayitems != null) {

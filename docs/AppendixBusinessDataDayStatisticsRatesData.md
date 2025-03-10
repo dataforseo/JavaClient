@@ -17,8 +17,8 @@
 |**trustpilot** | [**AppendixBusinessDataDayLimitsRatesDataInfo**](AppendixBusinessDataDayLimitsRatesDataInfo.md) |  |  [optional] |
 |**businessListings** | [**AppendixBusinessListingsBusinessDataLimitsRatesDataInfo**](AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**tasksReady** | **Double** |  |  [optional] |
-|**availableFilters** | **Double** |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
+|**availableFilters** | **Double** |  |  [optional] |
 
 
 

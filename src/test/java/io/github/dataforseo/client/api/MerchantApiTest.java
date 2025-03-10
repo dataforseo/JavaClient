@@ -200,7 +200,7 @@ public class MerchantApiTest {
     }
 
     /**
-     * ‌‌ This endpoint will provide you with a list of reviews for the target Amazon product. for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
+     * ‌‌ for more info please visit &#39;https://docs.dataforseo.com/v3/merchant/amazon/reviews/task_post/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

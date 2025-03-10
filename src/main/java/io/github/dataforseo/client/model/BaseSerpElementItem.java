@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseSerpElementItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -62,14 +62,6 @@ public class BaseSerpElementItem {
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
   private Integer rankAbsolute;
-
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
 
   public BaseSerpElementItem() {
     this.type = this.getClass().getSimpleName();
@@ -132,44 +124,6 @@ public class BaseSerpElementItem {
   }
 
 
-  public BaseSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public BaseSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -182,9 +136,7 @@ public class BaseSerpElementItem {
     BaseSerpElementItem baseSerpElementItem = (BaseSerpElementItem) o;
     return Objects.equals(this.type, baseSerpElementItem.type) &&
         Objects.equals(this.rankGroup, baseSerpElementItem.rankGroup) &&
-        Objects.equals(this.rankAbsolute, baseSerpElementItem.rankAbsolute) &&
-        Objects.equals(this.position, baseSerpElementItem.position) &&
-        Objects.equals(this.xpath, baseSerpElementItem.xpath);
+        Objects.equals(this.rankAbsolute, baseSerpElementItem.rankAbsolute);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -193,7 +145,7 @@ public class BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, rankGroup, rankAbsolute, position, xpath);
+    return Objects.hash(type, rankGroup, rankAbsolute);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -210,8 +162,6 @@ public class BaseSerpElementItem {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    rankGroup: ").append(toIndentedString(rankGroup)).append("\n");
     sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -237,8 +187,6 @@ public class BaseSerpElementItem {
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
-    openapiFields.add("position");
-    openapiFields.add("xpath");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -306,6 +254,27 @@ public class BaseSerpElementItem {
           break;
         case "found_on_web":
           FoundOnWebSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_earnings_calendar":
+          GoogleFinanceEarningsCalendarSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_hero_groups":
+          GoogleFinanceHeroGroupsSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_interested":
+          GoogleFinanceInterestedSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_market_trends":
+          GoogleFinanceMarketTrendsSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_most_followed":
+          GoogleFinanceMostFollowedSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_news":
+          GoogleFinanceNewsSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_people_also_search":
+          GoogleFinancePeopleAlsoSearchSerpElementItem.validateJsonElement(jsonElement);
           break;
         case "google_flights":
           GoogleFlightsSerpElementItem.validateJsonElement(jsonElement);

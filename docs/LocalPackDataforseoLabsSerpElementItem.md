@@ -11,7 +11,7 @@
 |**description** | **String** | description of the results element in SERP |  [optional] |
 |**domain** | **String** | domain where a link points |  [optional] |
 |**phone** | **String** | phone number |  [optional] |
-|**url** | **String** | relevant URL of the Ad element in SERP |  [optional] |
+|**url** | **String** | relevant URL |  [optional] |
 |**isPaid** | **Boolean** | indicates whether the element is an ad |  [optional] |
 |**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
 |**mainDomain** | **String** | primary domain name in SERP |  [optional] |

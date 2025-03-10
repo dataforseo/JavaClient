@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.OnPageContentParsingItemPageContent;
+import io.github.dataforseo.client.model.PageContentInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageContentParsingItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageContentParsingItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -66,7 +66,7 @@ public class OnPageContentParsingItem {
 
   public static final String SERIALIZED_NAME_PAGE_CONTENT = "page_content";
   @SerializedName(SERIALIZED_NAME_PAGE_CONTENT)
-  private OnPageContentParsingItemPageContent pageContent;
+  private PageContentInfo pageContent;
 
   public OnPageContentParsingItem() {
   }
@@ -128,7 +128,7 @@ public class OnPageContentParsingItem {
   }
 
 
-  public OnPageContentParsingItem pageContent(OnPageContentParsingItemPageContent pageContent) {
+  public OnPageContentParsingItem pageContent(PageContentInfo pageContent) {
     this.pageContent = pageContent;
     return this;
   }
@@ -138,11 +138,11 @@ public class OnPageContentParsingItem {
    * @return pageContent
    */
   @javax.annotation.Nullable
-  public OnPageContentParsingItemPageContent getPageContent() {
+  public PageContentInfo getPageContent() {
     return pageContent;
   }
 
-  public void setPageContent(OnPageContentParsingItemPageContent pageContent) {
+  public void setPageContent(PageContentInfo pageContent) {
     this.pageContent = pageContent;
   }
 
@@ -285,7 +285,7 @@ public class OnPageContentParsingItem {
       }
       // validate the optional field `page_content`
       if (jsonObj.get("page_content") != null && !jsonObj.get("page_content").isJsonNull()) {
-        OnPageContentParsingItemPageContent.validateJsonElement(jsonObj.get("page_content"));
+        PageContentInfo.validateJsonElement(jsonObj.get("page_content"));
       }
   }
 

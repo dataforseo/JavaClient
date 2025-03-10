@@ -112,6 +112,14 @@ public class GoogleMapsMapsSearchSerpElementItemTest {
     }
 
     /**
+     * Test the property 'originalTitle'
+     */
+    @Test
+    public void originalTitleTest() {
+        // TODO: test originalTitle
+    }
+
+    /**
      * Test the property 'contactUrl'
      */
     @Test

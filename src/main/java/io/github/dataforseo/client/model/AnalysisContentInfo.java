@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.ContentAnalysisRatingInfo;
+import io.github.dataforseo.client.model.ContentRatingInfo;
 import io.github.dataforseo.client.model.SocialMetricsInfo;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AnalysisContentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AnalysisContentInfo {
   public static final String SERIALIZED_NAME_CONTENT_TYPE = "content_type";
   @SerializedName(SERIALIZED_NAME_CONTENT_TYPE)
@@ -127,7 +127,7 @@ public class AnalysisContentInfo {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private ContentAnalysisRatingInfo rating;
+  private ContentRatingInfo rating;
 
   public static final String SERIALIZED_NAME_GROUP_DATE = "group_date";
   @SerializedName(SERIALIZED_NAME_GROUP_DATE)
@@ -491,7 +491,7 @@ public class AnalysisContentInfo {
   }
 
 
-  public AnalysisContentInfo rating(ContentAnalysisRatingInfo rating) {
+  public AnalysisContentInfo rating(ContentRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -501,11 +501,11 @@ public class AnalysisContentInfo {
    * @return rating
    */
   @javax.annotation.Nullable
-  public ContentAnalysisRatingInfo getRating() {
+  public ContentRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(ContentAnalysisRatingInfo rating) {
+  public void setRating(ContentRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -754,7 +754,7 @@ public class AnalysisContentInfo {
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        ContentAnalysisRatingInfo.validateJsonElement(jsonObj.get("rating"));
+        ContentRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if ((jsonObj.get("group_date") != null && !jsonObj.get("group_date").isJsonNull()) && !jsonObj.get("group_date").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `group_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("group_date").toString()));

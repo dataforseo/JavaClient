@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MultiCarouselDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MultiCarouselDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -76,7 +76,7 @@ public class MultiCarouselDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * additional items present in the element if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

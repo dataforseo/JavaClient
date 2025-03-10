@@ -9,6 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
 |**title** | **String** | title of the element in SERP the name of the business entity for which the results are collected |  [optional] |
+|**originalTitle** | **String** | original title of the element original title not translated by Google |  [optional] |
 |**description** | **String** | description of the element in SERP the description of the business entity for which the results are collected |  [optional] |
 |**category** | **String** | business category Google My Business general category that best describes the services provided by the business entity |  [optional] |
 |**categoryIds** | **List&lt;String&gt;** | global category IDs universal category IDs that do not change based on the selected country |  [optional] |

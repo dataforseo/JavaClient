@@ -105,6 +105,33 @@ import io.github.dataforseo.client.model.SerpGoogleEventsTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTasksFixedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleEventsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceExploreTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceMarketsTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteLiveHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveHtmlRequestInfo;
@@ -6044,6 +6071,2145 @@ public class SerpApi {
 
         okhttp3.Call localVarCall = googleEventsTasksReadyValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<SerpGoogleEventsTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceExploreLiveAdvanced
+     * @param serpGoogleFinanceExploreLiveAdvancedRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreLiveAdvancedCall(List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceExploreLiveAdvancedRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_explore/live/advanced";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceExploreLiveAdvancedValidateBeforeCall(List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceExploreLiveAdvancedCall(serpGoogleFinanceExploreLiveAdvancedRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceExploreLiveAdvancedRequestInfo  (optional)
+     * @return SerpGoogleFinanceExploreLiveAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceExploreLiveAdvancedResponseInfo googleFinanceExploreLiveAdvanced(List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> localVarResp = googleFinanceExploreLiveAdvancedWithHttpInfo(serpGoogleFinanceExploreLiveAdvancedRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceExploreLiveAdvancedRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceExploreLiveAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> googleFinanceExploreLiveAdvancedWithHttpInfo(List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceExploreLiveAdvancedValidateBeforeCall(serpGoogleFinanceExploreLiveAdvancedRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreLiveAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceExploreLiveAdvancedRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreLiveAdvancedAsync(List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo, final ApiCallback<SerpGoogleFinanceExploreLiveAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceExploreLiveAdvancedValidateBeforeCall(serpGoogleFinanceExploreLiveAdvancedRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreLiveAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceExploreLiveHtml
+     * @param serpGoogleFinanceExploreLiveHtmlRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreLiveHtmlCall(List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceExploreLiveHtmlRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_explore/live/html";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceExploreLiveHtmlValidateBeforeCall(List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceExploreLiveHtmlCall(serpGoogleFinanceExploreLiveHtmlRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash&#39;
+     * @param serpGoogleFinanceExploreLiveHtmlRequestInfo  (optional)
+     * @return SerpGoogleFinanceExploreLiveHtmlResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceExploreLiveHtmlResponseInfo googleFinanceExploreLiveHtml(List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceExploreLiveHtmlResponseInfo> localVarResp = googleFinanceExploreLiveHtmlWithHttpInfo(serpGoogleFinanceExploreLiveHtmlRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash&#39;
+     * @param serpGoogleFinanceExploreLiveHtmlRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceExploreLiveHtmlResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceExploreLiveHtmlResponseInfo> googleFinanceExploreLiveHtmlWithHttpInfo(List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceExploreLiveHtmlValidateBeforeCall(serpGoogleFinanceExploreLiveHtmlRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreLiveHtmlResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash&#39;
+     * @param serpGoogleFinanceExploreLiveHtmlRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreLiveHtmlAsync(List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo, final ApiCallback<SerpGoogleFinanceExploreLiveHtmlResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceExploreLiveHtmlValidateBeforeCall(serpGoogleFinanceExploreLiveHtmlRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreLiveHtmlResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceExploreTaskGetAdvanced
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_explore/task_get/advanced/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceExploreTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceExploreTaskGetAdvanced(Async)");
+        }
+
+        return googleFinanceExploreTaskGetAdvancedCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo googleFinanceExploreTaskGetAdvanced(String id) throws ApiException {
+        ApiResponse<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> localVarResp = googleFinanceExploreTaskGetAdvancedWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> googleFinanceExploreTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceExploreTaskGetAdvancedValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceExploreTaskGetAdvancedValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceExploreTaskGetHtml
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_explore/task_get/html/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceExploreTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceExploreTaskGetHtml(Async)");
+        }
+
+        return googleFinanceExploreTaskGetHtmlCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @return SerpGoogleFinanceExploreTaskGetHtmlResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceExploreTaskGetHtmlResponseInfo googleFinanceExploreTaskGetHtml(String id) throws ApiException {
+        ApiResponse<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> localVarResp = googleFinanceExploreTaskGetHtmlWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;SerpGoogleFinanceExploreTaskGetHtmlResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> googleFinanceExploreTaskGetHtmlWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceExploreTaskGetHtmlValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTaskGetHtmlAsync(String id, final ApiCallback<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceExploreTaskGetHtmlValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTaskGetHtmlResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceExploreTaskPost
+     * @param serpGoogleFinanceExploreTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTaskPostCall(List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceExploreTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_explore/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceExploreTaskPostValidateBeforeCall(List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceExploreTaskPostCall(serpGoogleFinanceExploreTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash&#39;
+     * @param serpGoogleFinanceExploreTaskPostRequestInfo  (optional)
+     * @return SerpGoogleFinanceExploreTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceExploreTaskPostResponseInfo googleFinanceExploreTaskPost(List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceExploreTaskPostResponseInfo> localVarResp = googleFinanceExploreTaskPostWithHttpInfo(serpGoogleFinanceExploreTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash&#39;
+     * @param serpGoogleFinanceExploreTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceExploreTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceExploreTaskPostResponseInfo> googleFinanceExploreTaskPostWithHttpInfo(List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceExploreTaskPostValidateBeforeCall(serpGoogleFinanceExploreTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash&#39;
+     * @param serpGoogleFinanceExploreTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTaskPostAsync(List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo, final ApiCallback<SerpGoogleFinanceExploreTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceExploreTaskPostValidateBeforeCall(serpGoogleFinanceExploreTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceExploreTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_explore/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceExploreTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return googleFinanceExploreTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash&#39;
+     * @return SerpGoogleFinanceExploreTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceExploreTasksReadyResponseInfo googleFinanceExploreTasksReady() throws ApiException {
+        ApiResponse<SerpGoogleFinanceExploreTasksReadyResponseInfo> localVarResp = googleFinanceExploreTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;SerpGoogleFinanceExploreTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceExploreTasksReadyResponseInfo> googleFinanceExploreTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceExploreTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceExploreTasksReadyAsync(final ApiCallback<SerpGoogleFinanceExploreTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceExploreTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceExploreTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceMarketsLiveAdvanced
+     * @param serpGoogleFinanceMarketsLiveAdvancedRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsLiveAdvancedCall(List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceMarketsLiveAdvancedRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_markets/live/advanced";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceMarketsLiveAdvancedValidateBeforeCall(List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceMarketsLiveAdvancedCall(serpGoogleFinanceMarketsLiveAdvancedRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceMarketsLiveAdvancedRequestInfo  (optional)
+     * @return SerpGoogleFinanceMarketsLiveAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceMarketsLiveAdvancedResponseInfo googleFinanceMarketsLiveAdvanced(List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> localVarResp = googleFinanceMarketsLiveAdvancedWithHttpInfo(serpGoogleFinanceMarketsLiveAdvancedRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceMarketsLiveAdvancedRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceMarketsLiveAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> googleFinanceMarketsLiveAdvancedWithHttpInfo(List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceMarketsLiveAdvancedValidateBeforeCall(serpGoogleFinanceMarketsLiveAdvancedRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceMarketsLiveAdvancedRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsLiveAdvancedAsync(List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo, final ApiCallback<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceMarketsLiveAdvancedValidateBeforeCall(serpGoogleFinanceMarketsLiveAdvancedRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsLiveAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceMarketsLiveHtml
+     * @param serpGoogleFinanceMarketsLiveHtmlRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsLiveHtmlCall(List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceMarketsLiveHtmlRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_markets/live/html";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceMarketsLiveHtmlValidateBeforeCall(List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceMarketsLiveHtmlCall(serpGoogleFinanceMarketsLiveHtmlRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash&#39;
+     * @param serpGoogleFinanceMarketsLiveHtmlRequestInfo  (optional)
+     * @return SerpGoogleFinanceMarketsLiveHtmlResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceMarketsLiveHtmlResponseInfo googleFinanceMarketsLiveHtml(List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> localVarResp = googleFinanceMarketsLiveHtmlWithHttpInfo(serpGoogleFinanceMarketsLiveHtmlRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash&#39;
+     * @param serpGoogleFinanceMarketsLiveHtmlRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceMarketsLiveHtmlResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> googleFinanceMarketsLiveHtmlWithHttpInfo(List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceMarketsLiveHtmlValidateBeforeCall(serpGoogleFinanceMarketsLiveHtmlRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsLiveHtmlResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash&#39;
+     * @param serpGoogleFinanceMarketsLiveHtmlRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsLiveHtmlAsync(List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo, final ApiCallback<SerpGoogleFinanceMarketsLiveHtmlResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceMarketsLiveHtmlValidateBeforeCall(serpGoogleFinanceMarketsLiveHtmlRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsLiveHtmlResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceMarketsTaskGetAdvanced
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_markets/task_get/advanced/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceMarketsTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceMarketsTaskGetAdvanced(Async)");
+        }
+
+        return googleFinanceMarketsTaskGetAdvancedCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo googleFinanceMarketsTaskGetAdvanced(String id) throws ApiException {
+        ApiResponse<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> localVarResp = googleFinanceMarketsTaskGetAdvancedWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> googleFinanceMarketsTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceMarketsTaskGetAdvancedValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceMarketsTaskGetAdvancedValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceMarketsTaskGetHtml
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_markets/task_get/html/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceMarketsTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceMarketsTaskGetHtml(Async)");
+        }
+
+        return googleFinanceMarketsTaskGetHtmlCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @return SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo googleFinanceMarketsTaskGetHtml(String id) throws ApiException {
+        ApiResponse<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> localVarResp = googleFinanceMarketsTaskGetHtmlWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> googleFinanceMarketsTaskGetHtmlWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceMarketsTaskGetHtmlValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTaskGetHtmlAsync(String id, final ApiCallback<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceMarketsTaskGetHtmlValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceMarketsTaskPost
+     * @param serpGoogleFinanceMarketsTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTaskPostCall(List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceMarketsTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_markets/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceMarketsTaskPostValidateBeforeCall(List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceMarketsTaskPostCall(serpGoogleFinanceMarketsTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash&#39;
+     * @param serpGoogleFinanceMarketsTaskPostRequestInfo  (optional)
+     * @return SerpGoogleFinanceMarketsTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceMarketsTaskPostResponseInfo googleFinanceMarketsTaskPost(List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceMarketsTaskPostResponseInfo> localVarResp = googleFinanceMarketsTaskPostWithHttpInfo(serpGoogleFinanceMarketsTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash&#39;
+     * @param serpGoogleFinanceMarketsTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceMarketsTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceMarketsTaskPostResponseInfo> googleFinanceMarketsTaskPostWithHttpInfo(List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceMarketsTaskPostValidateBeforeCall(serpGoogleFinanceMarketsTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash&#39;
+     * @param serpGoogleFinanceMarketsTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTaskPostAsync(List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo, final ApiCallback<SerpGoogleFinanceMarketsTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceMarketsTaskPostValidateBeforeCall(serpGoogleFinanceMarketsTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceMarketsTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_markets/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceMarketsTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return googleFinanceMarketsTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash&#39;
+     * @return SerpGoogleFinanceMarketsTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceMarketsTasksReadyResponseInfo googleFinanceMarketsTasksReady() throws ApiException {
+        ApiResponse<SerpGoogleFinanceMarketsTasksReadyResponseInfo> localVarResp = googleFinanceMarketsTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;SerpGoogleFinanceMarketsTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceMarketsTasksReadyResponseInfo> googleFinanceMarketsTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceMarketsTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceMarketsTasksReadyAsync(final ApiCallback<SerpGoogleFinanceMarketsTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceMarketsTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceMarketsTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceQuoteLiveAdvanced
+     * @param serpGoogleFinanceQuoteLiveAdvancedRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteLiveAdvancedCall(List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceQuoteLiveAdvancedRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_quote/live/advanced";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceQuoteLiveAdvancedValidateBeforeCall(List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceQuoteLiveAdvancedCall(serpGoogleFinanceQuoteLiveAdvancedRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceQuoteLiveAdvancedRequestInfo  (optional)
+     * @return SerpGoogleFinanceQuoteLiveAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceQuoteLiveAdvancedResponseInfo googleFinanceQuoteLiveAdvanced(List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> localVarResp = googleFinanceQuoteLiveAdvancedWithHttpInfo(serpGoogleFinanceQuoteLiveAdvancedRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceQuoteLiveAdvancedRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceQuoteLiveAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> googleFinanceQuoteLiveAdvancedWithHttpInfo(List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceQuoteLiveAdvancedValidateBeforeCall(serpGoogleFinanceQuoteLiveAdvancedRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceQuoteLiveAdvancedRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteLiveAdvancedAsync(List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo, final ApiCallback<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceQuoteLiveAdvancedValidateBeforeCall(serpGoogleFinanceQuoteLiveAdvancedRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteLiveAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceQuoteLiveHtml
+     * @param serpGoogleFinanceQuoteLiveHtmlRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteLiveHtmlCall(List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceQuoteLiveHtmlRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_quote/live/html";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceQuoteLiveHtmlValidateBeforeCall(List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceQuoteLiveHtmlCall(serpGoogleFinanceQuoteLiveHtmlRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash&#39;
+     * @param serpGoogleFinanceQuoteLiveHtmlRequestInfo  (optional)
+     * @return SerpGoogleFinanceQuoteLiveHtmlResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceQuoteLiveHtmlResponseInfo googleFinanceQuoteLiveHtml(List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> localVarResp = googleFinanceQuoteLiveHtmlWithHttpInfo(serpGoogleFinanceQuoteLiveHtmlRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash&#39;
+     * @param serpGoogleFinanceQuoteLiveHtmlRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceQuoteLiveHtmlResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> googleFinanceQuoteLiveHtmlWithHttpInfo(List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceQuoteLiveHtmlValidateBeforeCall(serpGoogleFinanceQuoteLiveHtmlRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteLiveHtmlResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash&#39;
+     * @param serpGoogleFinanceQuoteLiveHtmlRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteLiveHtmlAsync(List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo, final ApiCallback<SerpGoogleFinanceQuoteLiveHtmlResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceQuoteLiveHtmlValidateBeforeCall(serpGoogleFinanceQuoteLiveHtmlRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteLiveHtmlResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceQuoteTaskGetAdvanced
+     * @param id  (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_quote/task_get/advanced/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceQuoteTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceQuoteTaskGetAdvanced(Async)");
+        }
+
+        return googleFinanceQuoteTaskGetAdvancedCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash&#39;
+     * @param id  (required)
+     * @return SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo googleFinanceQuoteTaskGetAdvanced(String id) throws ApiException {
+        ApiResponse<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> localVarResp = googleFinanceQuoteTaskGetAdvancedWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash&#39;
+     * @param id  (required)
+     * @return ApiResponse&lt;SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> googleFinanceQuoteTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceQuoteTaskGetAdvancedValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash&#39;
+     * @param id  (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceQuoteTaskGetAdvancedValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceQuoteTaskGetHtml
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTaskGetHtmlCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_quote/task_get/html/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceQuoteTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceQuoteTaskGetHtml(Async)");
+        }
+
+        return googleFinanceQuoteTaskGetHtmlCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @return SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo googleFinanceQuoteTaskGetHtml(String id) throws ApiException {
+        ApiResponse<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> localVarResp = googleFinanceQuoteTaskGetHtmlWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> googleFinanceQuoteTaskGetHtmlWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceQuoteTaskGetHtmlValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTaskGetHtmlAsync(String id, final ApiCallback<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceQuoteTaskGetHtmlValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceQuoteTaskPost
+     * @param serpGoogleFinanceQuoteTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTaskPostCall(List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceQuoteTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_quote/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceQuoteTaskPostValidateBeforeCall(List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceQuoteTaskPostCall(serpGoogleFinanceQuoteTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash&#39;
+     * @param serpGoogleFinanceQuoteTaskPostRequestInfo  (optional)
+     * @return SerpGoogleFinanceQuoteTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceQuoteTaskPostResponseInfo googleFinanceQuoteTaskPost(List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceQuoteTaskPostResponseInfo> localVarResp = googleFinanceQuoteTaskPostWithHttpInfo(serpGoogleFinanceQuoteTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash&#39;
+     * @param serpGoogleFinanceQuoteTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceQuoteTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceQuoteTaskPostResponseInfo> googleFinanceQuoteTaskPostWithHttpInfo(List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceQuoteTaskPostValidateBeforeCall(serpGoogleFinanceQuoteTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash&#39;
+     * @param serpGoogleFinanceQuoteTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTaskPostAsync(List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo, final ApiCallback<SerpGoogleFinanceQuoteTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceQuoteTaskPostValidateBeforeCall(serpGoogleFinanceQuoteTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceQuoteTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_quote/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceQuoteTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return googleFinanceQuoteTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash&#39;
+     * @return SerpGoogleFinanceQuoteTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceQuoteTasksReadyResponseInfo googleFinanceQuoteTasksReady() throws ApiException {
+        ApiResponse<SerpGoogleFinanceQuoteTasksReadyResponseInfo> localVarResp = googleFinanceQuoteTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;SerpGoogleFinanceQuoteTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceQuoteTasksReadyResponseInfo> googleFinanceQuoteTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceQuoteTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceQuoteTasksReadyAsync(final ApiCallback<SerpGoogleFinanceQuoteTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceQuoteTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTasksReadyResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -58,8 +58,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleMapsMapsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpElementItem {
+  public static final String SERIALIZED_NAME_ORIGINAL_TITLE = "original_title";
+  @SerializedName(SERIALIZED_NAME_ORIGINAL_TITLE)
+  private String originalTitle;
+
   public static final String SERIALIZED_NAME_CONTACT_URL = "contact_url";
   @SerializedName(SERIALIZED_NAME_CONTACT_URL)
   private String contactUrl;
@@ -154,6 +158,25 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
 
   public GoogleMapsMapsSearchSerpElementItem() {
   }
+
+  public GoogleMapsMapsSearchSerpElementItem originalTitle(String originalTitle) {
+    this.originalTitle = originalTitle;
+    return this;
+  }
+
+  /**
+   * original title of the element original title not translated by Google
+   * @return originalTitle
+   */
+  @javax.annotation.Nullable
+  public String getOriginalTitle() {
+    return originalTitle;
+  }
+
+  public void setOriginalTitle(String originalTitle) {
+    this.originalTitle = originalTitle;
+  }
+
 
   public GoogleMapsMapsSearchSerpElementItem contactUrl(String contactUrl) {
     this.contactUrl = contactUrl;
@@ -670,7 +693,8 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
       return false;
     }
     GoogleMapsMapsSearchSerpElementItem googleMapsMapsSearchSerpElementItem = (GoogleMapsMapsSearchSerpElementItem) o;
-    return Objects.equals(this.contactUrl, googleMapsMapsSearchSerpElementItem.contactUrl) &&
+    return Objects.equals(this.originalTitle, googleMapsMapsSearchSerpElementItem.originalTitle) &&
+        Objects.equals(this.contactUrl, googleMapsMapsSearchSerpElementItem.contactUrl) &&
         Objects.equals(this.contributorUrl, googleMapsMapsSearchSerpElementItem.contributorUrl) &&
         Objects.equals(this.bookOnlineUrl, googleMapsMapsSearchSerpElementItem.bookOnlineUrl) &&
         Objects.equals(this.hotelRating, googleMapsMapsSearchSerpElementItem.hotelRating) &&
@@ -703,7 +727,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
 
   @Override
   public int hashCode() {
-    return Objects.hash(contactUrl, contributorUrl, bookOnlineUrl, hotelRating, priceLevel, snippet, address, addressInfo, placeId, phone, mainImage, totalPhotos, category, additionalCategories, categoryIds, workHours, featureId, cid, latitude, longitude, isClaimed, localJustifications, isDirectoryItem, super.hashCode(), additionalProperties);
+    return Objects.hash(originalTitle, contactUrl, contributorUrl, bookOnlineUrl, hotelRating, priceLevel, snippet, address, addressInfo, placeId, phone, mainImage, totalPhotos, category, additionalCategories, categoryIds, workHours, featureId, cid, latitude, longitude, isClaimed, localJustifications, isDirectoryItem, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -718,6 +742,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
     StringBuilder sb = new StringBuilder();
     sb.append("class GoogleMapsMapsSearchSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    originalTitle: ").append(toIndentedString(originalTitle)).append("\n");
     sb.append("    contactUrl: ").append(toIndentedString(contactUrl)).append("\n");
     sb.append("    contributorUrl: ").append(toIndentedString(contributorUrl)).append("\n");
     sb.append("    bookOnlineUrl: ").append(toIndentedString(bookOnlineUrl)).append("\n");
@@ -772,6 +797,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
     openapiFields.add("url");
     openapiFields.add("rating");
     openapiFields.add("rating_distribution");
+    openapiFields.add("original_title");
     openapiFields.add("contact_url");
     openapiFields.add("contributor_url");
     openapiFields.add("book_online_url");
@@ -813,6 +839,9 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("original_title") != null && !jsonObj.get("original_title").isJsonNull()) && !jsonObj.get("original_title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `original_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("original_title").toString()));
+      }
       if ((jsonObj.get("contact_url") != null && !jsonObj.get("contact_url").isJsonNull()) && !jsonObj.get("contact_url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `contact_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("contact_url").toString()));
       }

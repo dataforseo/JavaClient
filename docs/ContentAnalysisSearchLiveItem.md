@@ -20,7 +20,7 @@
 |**score** | **String** | citation prominence score this value is based on url_rank, domain_rank, keyword presence in title, main_title, url, snippet the higher the score, the more value the related citation has |  [optional] |
 |**pageCategory** | **List&lt;Integer&gt;** | contains all relevant page categories product and service categories relevant for the page to obtain a full list of available categories, refer to the Categories endpoint |  [optional] |
 |**pageTypes** | **List&lt;String&gt;** | page types |  [optional] |
-|**ratings** | [**List&lt;ContentAnalysisRatingInfo&gt;**](ContentAnalysisRatingInfo.md) | ratings found on the page all ratings found on the page based on microdata |  [optional] |
+|**ratings** | [**List&lt;ContentRatingInfo&gt;**](ContentRatingInfo.md) | ratings found on the page all ratings found on the page based on microdata |  [optional] |
 |**socialMetrics** | [**List&lt;SocialMetricsInfo&gt;**](SocialMetricsInfo.md) | social media engagement metrics data on social media interactions associated with the content based on website embeds developed and supported by social media platforms |  [optional] |
 |**contentInfo** | [**AnalysisContentInfo**](AnalysisContentInfo.md) |  |  [optional] |
 

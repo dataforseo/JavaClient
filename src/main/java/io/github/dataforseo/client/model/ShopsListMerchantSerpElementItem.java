@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseMerchantSerpElementItem;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ShopsListMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -79,7 +80,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
-  private Integer tax;
+  private BigDecimal tax;
 
   public static final String SERIALIZED_NAME_SHIPPING_PRICE = "shipping_price";
   @SerializedName(SERIALIZED_NAME_SHIPPING_PRICE)
@@ -87,11 +88,15 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_TOTAL_PRICE = "total_price";
   @SerializedName(SERIALIZED_NAME_TOTAL_PRICE)
-  private Long totalPrice;
+  private BigDecimal totalPrice;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
   private String currency;
+
+  public static final String SERIALIZED_NAME_PRICE_MULTIPLIER = "price_multiplier";
+  @SerializedName(SERIALIZED_NAME_PRICE_MULTIPLIER)
+  private Integer priceMultiplier;
 
   public static final String SERIALIZED_NAME_SELLER_NAME = "seller_name";
   @SerializedName(SERIALIZED_NAME_SELLER_NAME)
@@ -230,7 +235,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem tax(Integer tax) {
+  public ShopsListMerchantSerpElementItem tax(BigDecimal tax) {
     this.tax = tax;
     return this;
   }
@@ -240,11 +245,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return tax
    */
   @javax.annotation.Nullable
-  public Integer getTax() {
+  public BigDecimal getTax() {
     return tax;
   }
 
-  public void setTax(Integer tax) {
+  public void setTax(BigDecimal tax) {
     this.tax = tax;
   }
 
@@ -268,7 +273,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem totalPrice(Long totalPrice) {
+  public ShopsListMerchantSerpElementItem totalPrice(BigDecimal totalPrice) {
     this.totalPrice = totalPrice;
     return this;
   }
@@ -278,11 +283,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return totalPrice
    */
   @javax.annotation.Nullable
-  public Long getTotalPrice() {
+  public BigDecimal getTotalPrice() {
     return totalPrice;
   }
 
-  public void setTotalPrice(Long totalPrice) {
+  public void setTotalPrice(BigDecimal totalPrice) {
     this.totalPrice = totalPrice;
   }
 
@@ -303,6 +308,25 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public void setCurrency(String currency) {
     this.currency = currency;
+  }
+
+
+  public ShopsListMerchantSerpElementItem priceMultiplier(Integer priceMultiplier) {
+    this.priceMultiplier = priceMultiplier;
+    return this;
+  }
+
+  /**
+   * monthly price multiplier indicates the number of months covered by the monthly payment for the product
+   * @return priceMultiplier
+   */
+  @javax.annotation.Nullable
+  public Integer getPriceMultiplier() {
+    return priceMultiplier;
+  }
+
+  public void setPriceMultiplier(Integer priceMultiplier) {
+    this.priceMultiplier = priceMultiplier;
   }
 
 
@@ -465,6 +489,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
         Objects.equals(this.shippingPrice, shopsListMerchantSerpElementItem.shippingPrice) &&
         Objects.equals(this.totalPrice, shopsListMerchantSerpElementItem.totalPrice) &&
         Objects.equals(this.currency, shopsListMerchantSerpElementItem.currency) &&
+        Objects.equals(this.priceMultiplier, shopsListMerchantSerpElementItem.priceMultiplier) &&
         Objects.equals(this.sellerName, shopsListMerchantSerpElementItem.sellerName) &&
         Objects.equals(this.rating, shopsListMerchantSerpElementItem.rating) &&
         Objects.equals(this.shopAdAclk, shopsListMerchantSerpElementItem.shopAdAclk) &&
@@ -480,7 +505,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   @Override
   public int hashCode() {
-    return Objects.hash(xpath, domain, title, url, details, basePrice, tax, shippingPrice, totalPrice, currency, sellerName, rating, shopAdAclk, productCondition, productAnnotation, super.hashCode(), additionalProperties);
+    return Objects.hash(xpath, domain, title, url, details, basePrice, tax, shippingPrice, totalPrice, currency, priceMultiplier, sellerName, rating, shopAdAclk, productCondition, productAnnotation, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -505,6 +530,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
     sb.append("    shippingPrice: ").append(toIndentedString(shippingPrice)).append("\n");
     sb.append("    totalPrice: ").append(toIndentedString(totalPrice)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    priceMultiplier: ").append(toIndentedString(priceMultiplier)).append("\n");
     sb.append("    sellerName: ").append(toIndentedString(sellerName)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    shopAdAclk: ").append(toIndentedString(shopAdAclk)).append("\n");
@@ -547,6 +573,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
     openapiFields.add("shipping_price");
     openapiFields.add("total_price");
     openapiFields.add("currency");
+    openapiFields.add("price_multiplier");
     openapiFields.add("seller_name");
     openapiFields.add("rating");
     openapiFields.add("shop_ad_aclk");

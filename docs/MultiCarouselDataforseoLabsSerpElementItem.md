@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**items** | [**List&lt;MultiCarouselElement&gt;**](MultiCarouselElement.md) | contains results featured in the ‘hotels_pack’ element of SERP |  [optional] |
+|**items** | [**List&lt;MultiCarouselElement&gt;**](MultiCarouselElement.md) | additional items present in the element if there are none, equals null |  [optional] |
 
 
 

@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleFlightsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleFlightsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -95,7 +95,7 @@ public class GoogleFlightsDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
   /**
-   * relevant URL of the Ad element in SERP
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -122,7 +122,7 @@ public class GoogleFlightsDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
   /**
-   * elements of search results found in SERP
+   * additional items present in the element if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

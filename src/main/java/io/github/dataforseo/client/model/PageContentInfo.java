@@ -19,6 +19,10 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.Contacts;
+import io.github.dataforseo.client.model.ContentCommentInfo;
+import io.github.dataforseo.client.model.ContentOfferInfo;
+import io.github.dataforseo.client.model.ContentRatingInfo;
 import io.github.dataforseo.client.model.PageSectionContentInfo;
 import io.github.dataforseo.client.model.TopicInfo;
 import java.io.IOException;
@@ -53,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * PageContentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PageContentInfo {
   public static final String SERIALIZED_NAME_HEADER = "header";
   @SerializedName(SERIALIZED_NAME_HEADER)
@@ -70,6 +74,22 @@ public class PageContentInfo {
   public static final String SERIALIZED_NAME_SECONDARY_TOPIC = "secondary_topic";
   @SerializedName(SERIALIZED_NAME_SECONDARY_TOPIC)
   private List<TopicInfo> secondaryTopic;
+
+  public static final String SERIALIZED_NAME_RATINGS = "ratings";
+  @SerializedName(SERIALIZED_NAME_RATINGS)
+  private List<ContentRatingInfo> ratings;
+
+  public static final String SERIALIZED_NAME_OFFERS = "offers";
+  @SerializedName(SERIALIZED_NAME_OFFERS)
+  private List<ContentOfferInfo> offers;
+
+  public static final String SERIALIZED_NAME_COMMENTS = "comments";
+  @SerializedName(SERIALIZED_NAME_COMMENTS)
+  private List<ContentCommentInfo> comments;
+
+  public static final String SERIALIZED_NAME_CONTACTS = "contacts";
+  @SerializedName(SERIALIZED_NAME_CONTACTS)
+  private Contacts contacts;
 
   public PageContentInfo() {
   }
@@ -165,6 +185,106 @@ public class PageContentInfo {
     this.secondaryTopic = secondaryTopic;
   }
 
+
+  public PageContentInfo ratings(List<ContentRatingInfo> ratings) {
+    this.ratings = ratings;
+    return this;
+  }
+
+  public PageContentInfo addRatingsItem(ContentRatingInfo ratingsItem) {
+    if (this.ratings == null) {
+      this.ratings = new ArrayList<>();
+    }
+    this.ratings.add(ratingsItem);
+    return this;
+  }
+
+  /**
+   * contains objects with rating information for the products displayed on the page
+   * @return ratings
+   */
+  @javax.annotation.Nullable
+  public List<ContentRatingInfo> getRatings() {
+    return ratings;
+  }
+
+  public void setRatings(List<ContentRatingInfo> ratings) {
+    this.ratings = ratings;
+  }
+
+
+  public PageContentInfo offers(List<ContentOfferInfo> offers) {
+    this.offers = offers;
+    return this;
+  }
+
+  public PageContentInfo addOffersItem(ContentOfferInfo offersItem) {
+    if (this.offers == null) {
+      this.offers = new ArrayList<>();
+    }
+    this.offers.add(offersItem);
+    return this;
+  }
+
+  /**
+   * array of products displayed on the page contains objects with information on products displayed on the page
+   * @return offers
+   */
+  @javax.annotation.Nullable
+  public List<ContentOfferInfo> getOffers() {
+    return offers;
+  }
+
+  public void setOffers(List<ContentOfferInfo> offers) {
+    this.offers = offers;
+  }
+
+
+  public PageContentInfo comments(List<ContentCommentInfo> comments) {
+    this.comments = comments;
+    return this;
+  }
+
+  public PageContentInfo addCommentsItem(ContentCommentInfo commentsItem) {
+    if (this.comments == null) {
+      this.comments = new ArrayList<>();
+    }
+    this.comments.add(commentsItem);
+    return this;
+  }
+
+  /**
+   * array of comments displayed on the page contains objects with information on comments related to displayed products
+   * @return comments
+   */
+  @javax.annotation.Nullable
+  public List<ContentCommentInfo> getComments() {
+    return comments;
+  }
+
+  public void setComments(List<ContentCommentInfo> comments) {
+    this.comments = comments;
+  }
+
+
+  public PageContentInfo contacts(Contacts contacts) {
+    this.contacts = contacts;
+    return this;
+  }
+
+  /**
+   * Get contacts
+   * @return contacts
+   */
+  @javax.annotation.Nullable
+  public Contacts getContacts() {
+    return contacts;
+  }
+
+  public void setContacts(Contacts contacts) {
+    this.contacts = contacts;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -223,7 +343,11 @@ public class PageContentInfo {
     return Objects.equals(this.header, pageContentInfo.header) &&
         Objects.equals(this.footer, pageContentInfo.footer) &&
         Objects.equals(this.mainTopic, pageContentInfo.mainTopic) &&
-        Objects.equals(this.secondaryTopic, pageContentInfo.secondaryTopic)&&
+        Objects.equals(this.secondaryTopic, pageContentInfo.secondaryTopic) &&
+        Objects.equals(this.ratings, pageContentInfo.ratings) &&
+        Objects.equals(this.offers, pageContentInfo.offers) &&
+        Objects.equals(this.comments, pageContentInfo.comments) &&
+        Objects.equals(this.contacts, pageContentInfo.contacts)&&
         Objects.equals(this.additionalProperties, pageContentInfo.additionalProperties);
   }
 
@@ -233,7 +357,7 @@ public class PageContentInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(header, footer, mainTopic, secondaryTopic, additionalProperties);
+    return Objects.hash(header, footer, mainTopic, secondaryTopic, ratings, offers, comments, contacts, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -251,6 +375,10 @@ public class PageContentInfo {
     sb.append("    footer: ").append(toIndentedString(footer)).append("\n");
     sb.append("    mainTopic: ").append(toIndentedString(mainTopic)).append("\n");
     sb.append("    secondaryTopic: ").append(toIndentedString(secondaryTopic)).append("\n");
+    sb.append("    ratings: ").append(toIndentedString(ratings)).append("\n");
+    sb.append("    offers: ").append(toIndentedString(offers)).append("\n");
+    sb.append("    comments: ").append(toIndentedString(comments)).append("\n");
+    sb.append("    contacts: ").append(toIndentedString(contacts)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -278,6 +406,10 @@ public class PageContentInfo {
     openapiFields.add("footer");
     openapiFields.add("main_topic");
     openapiFields.add("secondary_topic");
+    openapiFields.add("ratings");
+    openapiFields.add("offers");
+    openapiFields.add("comments");
+    openapiFields.add("contacts");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -331,6 +463,52 @@ public class PageContentInfo {
             TopicInfo.validateJsonElement(jsonArraysecondaryTopic.get(i));
           };
         }
+      }
+      if (jsonObj.get("ratings") != null && !jsonObj.get("ratings").isJsonNull()) {
+        JsonArray jsonArrayratings = jsonObj.getAsJsonArray("ratings");
+        if (jsonArrayratings != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("ratings").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `ratings` to be an array in the JSON string but got `%s`", jsonObj.get("ratings").toString()));
+          }
+
+          // validate the optional field `ratings` (array)
+          for (int i = 0; i < jsonArrayratings.size(); i++) {
+            ContentRatingInfo.validateJsonElement(jsonArrayratings.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("offers") != null && !jsonObj.get("offers").isJsonNull()) {
+        JsonArray jsonArrayoffers = jsonObj.getAsJsonArray("offers");
+        if (jsonArrayoffers != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("offers").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `offers` to be an array in the JSON string but got `%s`", jsonObj.get("offers").toString()));
+          }
+
+          // validate the optional field `offers` (array)
+          for (int i = 0; i < jsonArrayoffers.size(); i++) {
+            ContentOfferInfo.validateJsonElement(jsonArrayoffers.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("comments") != null && !jsonObj.get("comments").isJsonNull()) {
+        JsonArray jsonArraycomments = jsonObj.getAsJsonArray("comments");
+        if (jsonArraycomments != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("comments").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `comments` to be an array in the JSON string but got `%s`", jsonObj.get("comments").toString()));
+          }
+
+          // validate the optional field `comments` (array)
+          for (int i = 0; i < jsonArraycomments.size(); i++) {
+            ContentCommentInfo.validateJsonElement(jsonArraycomments.get(i));
+          };
+        }
+      }
+      // validate the optional field `contacts`
+      if (jsonObj.get("contacts") != null && !jsonObj.get("contacts").isJsonNull()) {
+        Contacts.validateJsonElement(jsonObj.get("contacts"));
       }
   }
 

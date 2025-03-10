@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBacklinksDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixBacklinksDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
@@ -140,6 +140,10 @@ public class AppendixBacklinksDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_BULK_PAGES_SUMMARY)
   private AppendixInfo bulkPagesSummary;
 
+  public static final String SERIALIZED_NAME_INDEX = "index";
+  @SerializedName(SERIALIZED_NAME_INDEX)
+  private Double index;
+
   public static final String SERIALIZED_NAME_PAGES_SUMMARY_WITH_PAGE_INFO = "pages_summary_with_page_info";
   @SerializedName(SERIALIZED_NAME_PAGES_SUMMARY_WITH_PAGE_INFO)
   private AppendixInfo pagesSummaryWithPageInfo;
@@ -155,10 +159,6 @@ public class AppendixBacklinksDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_HISTORICAL_NEW_LOST_SUMMARY = "historical_new_lost_summary";
   @SerializedName(SERIALIZED_NAME_HISTORICAL_NEW_LOST_SUMMARY)
   private AppendixInfo historicalNewLostSummary;
-
-  public static final String SERIALIZED_NAME_INDEX = "index";
-  @SerializedName(SERIALIZED_NAME_INDEX)
-  private Double index;
 
   public AppendixBacklinksDayStatisticsRatesData() {
   }
@@ -581,6 +581,25 @@ public class AppendixBacklinksDayStatisticsRatesData {
   }
 
 
+  public AppendixBacklinksDayStatisticsRatesData index(Double index) {
+    this.index = index;
+    return this;
+  }
+
+  /**
+   * Get index
+   * @return index
+   */
+  @javax.annotation.Nullable
+  public Double getIndex() {
+    return index;
+  }
+
+  public void setIndex(Double index) {
+    this.index = index;
+  }
+
+
   public AppendixBacklinksDayStatisticsRatesData pagesSummaryWithPageInfo(AppendixInfo pagesSummaryWithPageInfo) {
     this.pagesSummaryWithPageInfo = pagesSummaryWithPageInfo;
     return this;
@@ -654,25 +673,6 @@ public class AppendixBacklinksDayStatisticsRatesData {
 
   public void setHistoricalNewLostSummary(AppendixInfo historicalNewLostSummary) {
     this.historicalNewLostSummary = historicalNewLostSummary;
-  }
-
-
-  public AppendixBacklinksDayStatisticsRatesData index(Double index) {
-    this.index = index;
-    return this;
-  }
-
-  /**
-   * Get index
-   * @return index
-   */
-  @javax.annotation.Nullable
-  public Double getIndex() {
-    return index;
-  }
-
-  public void setIndex(Double index) {
-    this.index = index;
   }
 
   /**
@@ -752,11 +752,11 @@ public class AppendixBacklinksDayStatisticsRatesData {
         Objects.equals(this.competitors, appendixBacklinksDayStatisticsRatesData.competitors) &&
         Objects.equals(this.bulkSpamScore, appendixBacklinksDayStatisticsRatesData.bulkSpamScore) &&
         Objects.equals(this.bulkPagesSummary, appendixBacklinksDayStatisticsRatesData.bulkPagesSummary) &&
+        Objects.equals(this.index, appendixBacklinksDayStatisticsRatesData.index) &&
         Objects.equals(this.pagesSummaryWithPageInfo, appendixBacklinksDayStatisticsRatesData.pagesSummaryWithPageInfo) &&
         Objects.equals(this.idList, appendixBacklinksDayStatisticsRatesData.idList) &&
         Objects.equals(this.availableFilters, appendixBacklinksDayStatisticsRatesData.availableFilters) &&
-        Objects.equals(this.historicalNewLostSummary, appendixBacklinksDayStatisticsRatesData.historicalNewLostSummary) &&
-        Objects.equals(this.index, appendixBacklinksDayStatisticsRatesData.index)&&
+        Objects.equals(this.historicalNewLostSummary, appendixBacklinksDayStatisticsRatesData.historicalNewLostSummary)&&
         Objects.equals(this.additionalProperties, appendixBacklinksDayStatisticsRatesData.additionalProperties);
   }
 
@@ -766,7 +766,7 @@ public class AppendixBacklinksDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(summary, history, contentDuplicates, domainIntersection, backlinks, domainPages, anchors, referringDomains, pageIntersection, referringNetworks, bulkRanks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkReferringDomains, errors, domainPagesSummary, timeseriesSummary, timeseriesNewLostSummary, competitors, bulkSpamScore, bulkPagesSummary, pagesSummaryWithPageInfo, idList, availableFilters, historicalNewLostSummary, index, additionalProperties);
+    return Objects.hash(summary, history, contentDuplicates, domainIntersection, backlinks, domainPages, anchors, referringDomains, pageIntersection, referringNetworks, bulkRanks, bulkBacklinks, bulkNewLostBacklinks, bulkNewLostReferringDomains, bulkReferringDomains, errors, domainPagesSummary, timeseriesSummary, timeseriesNewLostSummary, competitors, bulkSpamScore, bulkPagesSummary, index, pagesSummaryWithPageInfo, idList, availableFilters, historicalNewLostSummary, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -802,11 +802,11 @@ public class AppendixBacklinksDayStatisticsRatesData {
     sb.append("    competitors: ").append(toIndentedString(competitors)).append("\n");
     sb.append("    bulkSpamScore: ").append(toIndentedString(bulkSpamScore)).append("\n");
     sb.append("    bulkPagesSummary: ").append(toIndentedString(bulkPagesSummary)).append("\n");
+    sb.append("    index: ").append(toIndentedString(index)).append("\n");
     sb.append("    pagesSummaryWithPageInfo: ").append(toIndentedString(pagesSummaryWithPageInfo)).append("\n");
     sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
     sb.append("    historicalNewLostSummary: ").append(toIndentedString(historicalNewLostSummary)).append("\n");
-    sb.append("    index: ").append(toIndentedString(index)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -852,11 +852,11 @@ public class AppendixBacklinksDayStatisticsRatesData {
     openapiFields.add("competitors");
     openapiFields.add("bulk_spam_score");
     openapiFields.add("bulk_pages_summary");
+    openapiFields.add("index");
     openapiFields.add("pages_summary_with_page_info");
     openapiFields.add("id_list");
     openapiFields.add("available_filters");
     openapiFields.add("historical_new_lost_summary");
-    openapiFields.add("index");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

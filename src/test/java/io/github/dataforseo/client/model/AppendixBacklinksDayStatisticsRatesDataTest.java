@@ -216,6 +216,14 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'index'
+     */
+    @Test
+    public void indexTest() {
+        // TODO: test index
+    }
+
+    /**
      * Test the property 'pagesSummaryWithPageInfo'
      */
     @Test
@@ -245,14 +253,6 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     @Test
     public void historicalNewLostSummaryTest() {
         // TODO: test historicalNewLostSummary
-    }
-
-    /**
-     * Test the property 'index'
-     */
-    @Test
-    public void indexTest() {
-        // TODO: test index
     }
 
 }
