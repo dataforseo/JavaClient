@@ -119,6 +119,12 @@ import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskGetHtmlRespon
 import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveHtmlRequestInfo;
@@ -1043,6 +1049,53 @@ public class SerpApiTest {
     @Test
     public void googleFinanceQuoteTasksReadyTest() throws ApiException {
         SerpGoogleFinanceQuoteTasksReadyResponseInfo response = api.googleFinanceQuoteTasksReady();
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceTickerSearchLiveAdvancedTest() throws ApiException {
+        List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo = null;
+        SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo response = api.googleFinanceTickerSearchLiveAdvanced(serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceTickerSearchTaskGetAdvancedTest() throws ApiException {
+        String id = null;
+        SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo response = api.googleFinanceTickerSearchTaskGetAdvanced(id);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceTickerSearchTaskPostTest() throws ApiException {
+        List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> serpGoogleFinanceTickerSearchTaskPostRequestInfo = null;
+        SerpGoogleFinanceTickerSearchTaskPostResponseInfo response = api.googleFinanceTickerSearchTaskPost(serpGoogleFinanceTickerSearchTaskPostRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleFinanceTickerSearchTasksReadyTest() throws ApiException {
+        SerpGoogleFinanceTickerSearchTasksReadyResponseInfo response = api.googleFinanceTickerSearchTasksReady();
         // TODO: test validations
     }
 

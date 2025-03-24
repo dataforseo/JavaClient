@@ -88,14 +88,16 @@ import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainWhoisOverview
 import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordIdeasLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordIdeasLiveResponseInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordOverviewLiveRequestInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordOverviewLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordsForAppLiveRequestInfo;
@@ -639,6 +641,18 @@ public class DataforseoLabsApiTest {
     }
 
     /**
+     * ‌‌  This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleHistoricalKeywordDataLiveTest() throws ApiException {
+        List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo = null;
+        DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo response = api.googleHistoricalKeywordDataLive(dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
      * ‌ This endpoint will provide you with historical data on rankings and traffic of the specified domain, such as domain ranking distribution in SERPs and estimated monthly traffic volume for both organic and paid results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_rank_overview/live/?bash&#39;
      *
      * @throws ApiException if the Api call fails
@@ -647,18 +661,6 @@ public class DataforseoLabsApiTest {
     public void googleHistoricalRankOverviewLiveTest() throws ApiException {
         List<DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo> dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo = null;
         DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo response = api.googleHistoricalRankOverviewLive(dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo);
-        // TODO: test validations
-    }
-
-    /**
-     * ‌‌  This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash&#39;
-     *
-     * @throws ApiException if the Api call fails
-     */
-    @Test
-    public void googleHistoricalSearchVolumeLiveTest() throws ApiException {
-        List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo = null;
-        DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo response = api.googleHistoricalSearchVolumeLive(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo);
         // TODO: test validations
     }
 
@@ -683,6 +685,18 @@ public class DataforseoLabsApiTest {
     public void googleKeywordIdeasLiveTest() throws ApiException {
         List<DataforseoLabsGoogleKeywordIdeasLiveRequestInfo> dataforseoLabsGoogleKeywordIdeasLiveRequestInfo = null;
         DataforseoLabsGoogleKeywordIdeasLiveResponseInfo response = api.googleKeywordIdeasLive(dataforseoLabsGoogleKeywordIdeasLiveRequestInfo);
+        // TODO: test validations
+    }
+
+    /**
+     * ‌‌  This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash&#39;
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void googleKeywordOverviewLiveTest() throws ApiException {
+        List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> dataforseoLabsGoogleKeywordOverviewLiveRequestInfo = null;
+        DataforseoLabsGoogleKeywordOverviewLiveResponseInfo response = api.googleKeywordOverviewLive(dataforseoLabsGoogleKeywordOverviewLiveRequestInfo);
         // TODO: test validations
     }
 

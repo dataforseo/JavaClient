@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
-import io.github.dataforseo.client.model.LinkElement;
+import io.github.dataforseo.client.model.KnowledgeGraphLinkElementInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
@@ -61,7 +61,7 @@ public class KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem extends 
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<LinkElement> links;
+  private List<KnowledgeGraphLinkElementInfo> links;
 
   public KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem() {
   }
@@ -85,12 +85,12 @@ public class KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem extends 
   }
 
 
-  public KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem links(List<LinkElement> links) {
+  public KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem links(List<KnowledgeGraphLinkElementInfo> links) {
     this.links = links;
     return this;
   }
 
-  public KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem addLinksItem(LinkElement linksItem) {
+  public KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem addLinksItem(KnowledgeGraphLinkElementInfo linksItem) {
     if (this.links == null) {
       this.links = new ArrayList<>();
     }
@@ -103,11 +103,11 @@ public class KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem extends 
    * @return links
    */
   @javax.annotation.Nullable
-  public List<LinkElement> getLinks() {
+  public List<KnowledgeGraphLinkElementInfo> getLinks() {
     return links;
   }
 
-  public void setLinks(List<LinkElement> links) {
+  public void setLinks(List<KnowledgeGraphLinkElementInfo> links) {
     this.links = links;
   }
 
@@ -256,7 +256,7 @@ public class KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem extends 
 
           // validate the optional field `links` (array)
           for (int i = 0; i < jsonArraylinks.size(); i++) {
-            LinkElement.validateJsonElement(jsonArraylinks.get(i));
+            KnowledgeGraphLinkElementInfo.validateJsonElement(jsonArraylinks.get(i));
           };
         }
       }

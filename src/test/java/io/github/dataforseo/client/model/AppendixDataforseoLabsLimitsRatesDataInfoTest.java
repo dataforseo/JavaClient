@@ -208,14 +208,6 @@ public class AppendixDataforseoLabsLimitsRatesDataInfoTest {
     }
 
     /**
-     * Test the property 'historicalSearchVolume'
-     */
-    @Test
-    public void historicalSearchVolumeTest() {
-        // TODO: test historicalSearchVolume
-    }
-
-    /**
      * Test the property 'categoriesForDomain'
      */
     @Test
@@ -325,6 +317,22 @@ public class AppendixDataforseoLabsLimitsRatesDataInfoTest {
     @Test
     public void categoriesForKeywordsTest() {
         // TODO: test categoriesForKeywords
+    }
+
+    /**
+     * Test the property 'keywordOverview'
+     */
+    @Test
+    public void keywordOverviewTest() {
+        // TODO: test keywordOverview
+    }
+
+    /**
+     * Test the property 'historicalKeywordData'
+     */
+    @Test
+    public void historicalKeywordDataTest() {
+        // TODO: test historicalKeywordData
     }
 
 }

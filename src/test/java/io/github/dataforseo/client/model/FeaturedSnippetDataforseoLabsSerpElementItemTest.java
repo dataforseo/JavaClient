@@ -84,6 +84,14 @@ public class FeaturedSnippetDataforseoLabsSerpElementItemTest {
     }
 
     /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
+    }
+
+    /**
      * Test the property 'domain'
      */
     @Test
@@ -129,14 +137,6 @@ public class FeaturedSnippetDataforseoLabsSerpElementItemTest {
     @Test
     public void tableTest() {
         // TODO: test table
-    }
-
-    /**
-     * Test the property 'seType'
-     */
-    @Test
-    public void seTypeTest() {
-        // TODO: test seType
     }
 
     /**

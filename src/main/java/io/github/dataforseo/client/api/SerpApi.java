@@ -132,6 +132,12 @@ import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskGetHtmlRespon
 import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleFinanceQuoteTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpGoogleFinanceTickerSearchTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleImagesLiveHtmlRequestInfo;
@@ -8210,6 +8216,478 @@ public class SerpApi {
 
         okhttp3.Call localVarCall = googleFinanceQuoteTasksReadyValidateBeforeCall(_callback);
         Type localVarReturnType = new TypeToken<SerpGoogleFinanceQuoteTasksReadyResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceTickerSearchLiveAdvanced
+     * @param serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchLiveAdvancedCall(List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_ticker_search/live/advanced";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceTickerSearchLiveAdvancedValidateBeforeCall(List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceTickerSearchLiveAdvancedCall(serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo  (optional)
+     * @return SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo googleFinanceTickerSearchLiveAdvanced(List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo> localVarResp = googleFinanceTickerSearchLiveAdvancedWithHttpInfo(serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo> googleFinanceTickerSearchLiveAdvancedWithHttpInfo(List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceTickerSearchLiveAdvancedValidateBeforeCall(serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash&#39;
+     * @param serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchLiveAdvancedAsync(List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo, final ApiCallback<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceTickerSearchLiveAdvancedValidateBeforeCall(serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceTickerSearchTaskGetAdvanced
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchTaskGetAdvancedCall(String id, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_ticker_search/task_get/advanced/{id}"
+            .replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceTickerSearchTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'id' is set
+        if (id == null) {
+            throw new ApiException("Missing the required parameter 'id' when calling googleFinanceTickerSearchTaskGetAdvanced(Async)");
+        }
+
+        return googleFinanceTickerSearchTaskGetAdvancedCall(id, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo googleFinanceTickerSearchTaskGetAdvanced(String id) throws ApiException {
+        ApiResponse<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo> localVarResp = googleFinanceTickerSearchTaskGetAdvancedWithHttpInfo(id);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @return ApiResponse&lt;SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo> googleFinanceTickerSearchTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceTickerSearchTaskGetAdvancedValidateBeforeCall(id, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash&#39;
+     * @param id task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchTaskGetAdvancedAsync(String id, final ApiCallback<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceTickerSearchTaskGetAdvancedValidateBeforeCall(id, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceTickerSearchTaskPost
+     * @param serpGoogleFinanceTickerSearchTaskPostRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchTaskPostCall(List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> serpGoogleFinanceTickerSearchTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = serpGoogleFinanceTickerSearchTaskPostRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_ticker_search/task_post";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceTickerSearchTaskPostValidateBeforeCall(List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> serpGoogleFinanceTickerSearchTaskPostRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleFinanceTickerSearchTaskPostCall(serpGoogleFinanceTickerSearchTaskPostRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash&#39;
+     * @param serpGoogleFinanceTickerSearchTaskPostRequestInfo  (optional)
+     * @return SerpGoogleFinanceTickerSearchTaskPostResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceTickerSearchTaskPostResponseInfo googleFinanceTickerSearchTaskPost(List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> serpGoogleFinanceTickerSearchTaskPostRequestInfo) throws ApiException {
+        ApiResponse<SerpGoogleFinanceTickerSearchTaskPostResponseInfo> localVarResp = googleFinanceTickerSearchTaskPostWithHttpInfo(serpGoogleFinanceTickerSearchTaskPostRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash&#39;
+     * @param serpGoogleFinanceTickerSearchTaskPostRequestInfo  (optional)
+     * @return ApiResponse&lt;SerpGoogleFinanceTickerSearchTaskPostResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceTickerSearchTaskPostResponseInfo> googleFinanceTickerSearchTaskPostWithHttpInfo(List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> serpGoogleFinanceTickerSearchTaskPostRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceTickerSearchTaskPostValidateBeforeCall(serpGoogleFinanceTickerSearchTaskPostRequestInfo, null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchTaskPostResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash&#39;
+     * @param serpGoogleFinanceTickerSearchTaskPostRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchTaskPostAsync(List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> serpGoogleFinanceTickerSearchTaskPostRequestInfo, final ApiCallback<SerpGoogleFinanceTickerSearchTaskPostResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceTickerSearchTaskPostValidateBeforeCall(serpGoogleFinanceTickerSearchTaskPostRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchTaskPostResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleFinanceTickerSearchTasksReady
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchTasksReadyCall(final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v3/serp/google/finance_ticker_search/tasks_ready";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleFinanceTickerSearchTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+        return googleFinanceTickerSearchTasksReadyCall(_callback);
+
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash&#39;
+     * @return SerpGoogleFinanceTickerSearchTasksReadyResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public SerpGoogleFinanceTickerSearchTasksReadyResponseInfo googleFinanceTickerSearchTasksReady() throws ApiException {
+        ApiResponse<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo> localVarResp = googleFinanceTickerSearchTasksReadyWithHttpInfo();
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash&#39;
+     * @return ApiResponse&lt;SerpGoogleFinanceTickerSearchTasksReadyResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo> googleFinanceTickerSearchTasksReadyWithHttpInfo() throws ApiException {
+        okhttp3.Call localVarCall = googleFinanceTickerSearchTasksReadyValidateBeforeCall(null);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash&#39;
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleFinanceTickerSearchTasksReadyAsync(final ApiCallback<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleFinanceTickerSearchTasksReadyValidateBeforeCall(_callback);
+        Type localVarReturnType = new TypeToken<SerpGoogleFinanceTickerSearchTasksReadyResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

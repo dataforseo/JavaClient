@@ -12,7 +12,7 @@
 |**totalSerp** | **Double** |  |  [optional] |
 |**keywordsData** | [**AppendixKeywordsDataDayStatisticsRatesData**](AppendixKeywordsDataDayStatisticsRatesData.md) |  |  [optional] |
 |**totalKeywordsData** | **Double** |  |  [optional] |
-|**appendix** | [**AppendixAppendixDayStatisticsRatesData**](AppendixAppendixDayStatisticsRatesData.md) |  |  [optional] |
+|**appendix** | [**AppendixAppendixDaysRatesDataInfo**](AppendixAppendixDaysRatesDataInfo.md) |  |  [optional] |
 |**totalAppendix** | **Double** |  |  [optional] |
 |**dataforseoLabs** | [**AppendixDataforseoLabsDayStatisticsRatesData**](AppendixDataforseoLabsDayStatisticsRatesData.md) |  |  [optional] |
 |**totalDataforseoLabs** | **Double** |  |  [optional] |

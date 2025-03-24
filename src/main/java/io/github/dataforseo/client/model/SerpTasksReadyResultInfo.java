@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -130,7 +130,7 @@ public class SerpTasksReadyResultInfo {
   }
 
   /**
-   * type of search engine example: finance_quote
+   * type of search engine example: finance_ticker_search
    * @return seType
    */
   @javax.annotation.Nullable

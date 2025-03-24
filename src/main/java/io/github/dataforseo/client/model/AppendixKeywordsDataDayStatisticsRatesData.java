@@ -55,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -129,10 +129,6 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_KEYWORD_SUGGESTIONS_FOR_URL)
   private AppendixInfo keywordSuggestionsForUrl;
 
-  public static final String SERIALIZED_NAME_JOB_FUNCTIONS = "job_functions";
-  @SerializedName(SERIALIZED_NAME_JOB_FUNCTIONS)
-  private Double jobFunctions;
-
   public static final String SERIALIZED_NAME_SEARCH_VOLUME_HISTORY = "search_volume_history";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME_HISTORY)
   private AppendixInfo searchVolumeHistory;
@@ -141,13 +137,17 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_INDUSTRIES)
   private Double industries;
 
-  public static final String SERIALIZED_NAME_GOOGLE = "google";
-  @SerializedName(SERIALIZED_NAME_GOOGLE)
-  private AppendixBingKeywordsDataLimitsRatesDataInfo google;
+  public static final String SERIALIZED_NAME_JOB_FUNCTIONS = "job_functions";
+  @SerializedName(SERIALIZED_NAME_JOB_FUNCTIONS)
+  private Double jobFunctions;
 
   public static final String SERIALIZED_NAME_ID_LIST = "id_list";
   @SerializedName(SERIALIZED_NAME_ID_LIST)
   private Double idList;
+
+  public static final String SERIALIZED_NAME_GOOGLE = "google";
+  @SerializedName(SERIALIZED_NAME_GOOGLE)
+  private AppendixBingKeywordsDataLimitsRatesDataInfo google;
 
   public AppendixKeywordsDataDayStatisticsRatesData() {
   }
@@ -494,25 +494,6 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   }
 
 
-  public AppendixKeywordsDataDayStatisticsRatesData jobFunctions(Double jobFunctions) {
-    this.jobFunctions = jobFunctions;
-    return this;
-  }
-
-  /**
-   * Get jobFunctions
-   * @return jobFunctions
-   */
-  @javax.annotation.Nullable
-  public Double getJobFunctions() {
-    return jobFunctions;
-  }
-
-  public void setJobFunctions(Double jobFunctions) {
-    this.jobFunctions = jobFunctions;
-  }
-
-
   public AppendixKeywordsDataDayStatisticsRatesData searchVolumeHistory(AppendixInfo searchVolumeHistory) {
     this.searchVolumeHistory = searchVolumeHistory;
     return this;
@@ -551,22 +532,22 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
   }
 
 
-  public AppendixKeywordsDataDayStatisticsRatesData google(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
-    this.google = google;
+  public AppendixKeywordsDataDayStatisticsRatesData jobFunctions(Double jobFunctions) {
+    this.jobFunctions = jobFunctions;
     return this;
   }
 
   /**
-   * Get google
-   * @return google
+   * Get jobFunctions
+   * @return jobFunctions
    */
   @javax.annotation.Nullable
-  public AppendixBingKeywordsDataLimitsRatesDataInfo getGoogle() {
-    return google;
+  public Double getJobFunctions() {
+    return jobFunctions;
   }
 
-  public void setGoogle(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
-    this.google = google;
+  public void setJobFunctions(Double jobFunctions) {
+    this.jobFunctions = jobFunctions;
   }
 
 
@@ -586,6 +567,25 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
 
   public void setIdList(Double idList) {
     this.idList = idList;
+  }
+
+
+  public AppendixKeywordsDataDayStatisticsRatesData google(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
+    this.google = google;
+    return this;
+  }
+
+  /**
+   * Get google
+   * @return google
+   */
+  @javax.annotation.Nullable
+  public AppendixBingKeywordsDataLimitsRatesDataInfo getGoogle() {
+    return google;
+  }
+
+  public void setGoogle(AppendixBingKeywordsDataLimitsRatesDataInfo google) {
+    this.google = google;
   }
 
   /**
@@ -661,11 +661,11 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
         Objects.equals(this.clickstreamData, appendixKeywordsDataDayStatisticsRatesData.clickstreamData) &&
         Objects.equals(this.audienceEstimation, appendixKeywordsDataDayStatisticsRatesData.audienceEstimation) &&
         Objects.equals(this.keywordSuggestionsForUrl, appendixKeywordsDataDayStatisticsRatesData.keywordSuggestionsForUrl) &&
-        Objects.equals(this.jobFunctions, appendixKeywordsDataDayStatisticsRatesData.jobFunctions) &&
         Objects.equals(this.searchVolumeHistory, appendixKeywordsDataDayStatisticsRatesData.searchVolumeHistory) &&
         Objects.equals(this.industries, appendixKeywordsDataDayStatisticsRatesData.industries) &&
-        Objects.equals(this.google, appendixKeywordsDataDayStatisticsRatesData.google) &&
-        Objects.equals(this.idList, appendixKeywordsDataDayStatisticsRatesData.idList)&&
+        Objects.equals(this.jobFunctions, appendixKeywordsDataDayStatisticsRatesData.jobFunctions) &&
+        Objects.equals(this.idList, appendixKeywordsDataDayStatisticsRatesData.idList) &&
+        Objects.equals(this.google, appendixKeywordsDataDayStatisticsRatesData.google)&&
         Objects.equals(this.additionalProperties, appendixKeywordsDataDayStatisticsRatesData.additionalProperties);
   }
 
@@ -675,7 +675,7 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, audienceEstimation, keywordSuggestionsForUrl, jobFunctions, searchVolumeHistory, industries, google, idList, additionalProperties);
+    return Objects.hash(keywordsForKeywords, keywordsForSite, searchVolume, adTrafficByKeywords, languages, locations, tasksReady, explore, categories, errors, bing, keywordPerformance, locationsAndLanguages, googleAds, dataforseoTrends, clickstreamData, audienceEstimation, keywordSuggestionsForUrl, searchVolumeHistory, industries, jobFunctions, idList, google, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -707,11 +707,11 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
     sb.append("    clickstreamData: ").append(toIndentedString(clickstreamData)).append("\n");
     sb.append("    audienceEstimation: ").append(toIndentedString(audienceEstimation)).append("\n");
     sb.append("    keywordSuggestionsForUrl: ").append(toIndentedString(keywordSuggestionsForUrl)).append("\n");
-    sb.append("    jobFunctions: ").append(toIndentedString(jobFunctions)).append("\n");
     sb.append("    searchVolumeHistory: ").append(toIndentedString(searchVolumeHistory)).append("\n");
     sb.append("    industries: ").append(toIndentedString(industries)).append("\n");
-    sb.append("    google: ").append(toIndentedString(google)).append("\n");
+    sb.append("    jobFunctions: ").append(toIndentedString(jobFunctions)).append("\n");
     sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
+    sb.append("    google: ").append(toIndentedString(google)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -753,11 +753,11 @@ public class AppendixKeywordsDataDayStatisticsRatesData {
     openapiFields.add("clickstream_data");
     openapiFields.add("audience_estimation");
     openapiFields.add("keyword_suggestions_for_url");
-    openapiFields.add("job_functions");
     openapiFields.add("search_volume_history");
     openapiFields.add("industries");
-    openapiFields.add("google");
+    openapiFields.add("job_functions");
     openapiFields.add("id_list");
+    openapiFields.add("google");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

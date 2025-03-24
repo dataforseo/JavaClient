@@ -209,14 +209,6 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'historicalSearchVolume'
-     */
-    @Test
-    public void historicalSearchVolumeTest() {
-        // TODO: test historicalSearchVolume
-    }
-
-    /**
      * Test the property 'categoriesForDomain'
      */
     @Test
@@ -329,11 +321,51 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'amazon'
+     * Test the property 'keywordOverview'
      */
     @Test
-    public void amazonTest() {
-        // TODO: test amazon
+    public void keywordOverviewTest() {
+        // TODO: test keywordOverview
+    }
+
+    /**
+     * Test the property 'historicalKeywordData'
+     */
+    @Test
+    public void historicalKeywordDataTest() {
+        // TODO: test historicalKeywordData
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
+    }
+
+    /**
+     * Test the property 'historicalSearchVolume'
+     */
+    @Test
+    public void historicalSearchVolumeTest() {
+        // TODO: test historicalSearchVolume
+    }
+
+    /**
+     * Test the property 'availableFilters'
+     */
+    @Test
+    public void availableFiltersTest() {
+        // TODO: test availableFilters
+    }
+
+    /**
+     * Test the property 'availableHistory'
+     */
+    @Test
+    public void availableHistoryTest() {
+        // TODO: test availableHistory
     }
 
     /**
@@ -353,35 +385,19 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'amazon'
+     */
+    @Test
+    public void amazonTest() {
+        // TODO: test amazon
+    }
+
+    /**
      * Test the property 'status'
      */
     @Test
     public void statusTest() {
         // TODO: test status
-    }
-
-    /**
-     * Test the property 'availableHistory'
-     */
-    @Test
-    public void availableHistoryTest() {
-        // TODO: test availableHistory
-    }
-
-    /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
-     * Test the property 'availableFilters'
-     */
-    @Test
-    public void availableFiltersTest() {
-        // TODO: test availableFilters
     }
 
 }

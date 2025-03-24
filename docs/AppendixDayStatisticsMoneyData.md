@@ -7,12 +7,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**serp** | [**AppendixSerpDayStatisticsMoneyData**](AppendixSerpDayStatisticsMoneyData.md) |  |  [optional] |
+|**serp** | [**AppendixSerpDayStatisticsRatesData**](AppendixSerpDayStatisticsRatesData.md) |  |  [optional] |
 |**total** | **Double** | total amount of money deposited to your account |  [optional] |
 |**totalSerp** | **Double** |  |  [optional] |
 |**keywordsData** | [**AppendixKeywordsDataDayStatisticsMoneyData**](AppendixKeywordsDataDayStatisticsMoneyData.md) |  |  [optional] |
 |**totalKeywordsData** | **Double** |  |  [optional] |
-|**appendix** | [**AppendixAppendixsRatesDataInfo**](AppendixAppendixsRatesDataInfo.md) |  |  [optional] |
+|**appendix** | [**AppendixAppendixDaysRatesDataInfo**](AppendixAppendixDaysRatesDataInfo.md) |  |  [optional] |
 |**totalAppendix** | **Double** |  |  [optional] |
 |**dataforseoLabs** | [**AppendixDataforseoLabsDayStatisticsRatesData**](AppendixDataforseoLabsDayStatisticsRatesData.md) |  |  [optional] |
 |**totalDataforseoLabs** | **Double** |  |  [optional] |
@@ -20,13 +20,13 @@
 |**totalDomainAnalytics** | **Double** |  |  [optional] |
 |**merchant** | [**AppendixMerchantLimitsRatesDataInfo**](AppendixMerchantLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalMerchant** | **Double** |  |  [optional] |
-|**onPage** | [**AppendixOnPageDayStatisticsMoneyData**](AppendixOnPageDayStatisticsMoneyData.md) |  |  [optional] |
+|**onPage** | [**AppendixOnPageLimitsRatesDataInfo**](AppendixOnPageLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalOnPage** | **Double** |  |  [optional] |
-|**businessData** | [**AppendixBusinessDataDayStatisticsMoneyData**](AppendixBusinessDataDayStatisticsMoneyData.md) |  |  [optional] |
+|**businessData** | [**AppendixBusinessDataLimitsRatesDataInfo**](AppendixBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalBusinessData** | **Double** |  |  [optional] |
 |**backlinks** | [**AppendixBacklinksDayStatisticsRatesData**](AppendixBacklinksDayStatisticsRatesData.md) |  |  [optional] |
 |**totalBacklinks** | **Double** |  |  [optional] |
-|**appData** | [**AppendixAppDataDayStatisticsMoneyData**](AppendixAppDataDayStatisticsMoneyData.md) |  |  [optional] |
+|**appData** | [**AppendixAppDataLimitsRatesDataInfo**](AppendixAppDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalAppData** | **Double** |  |  [optional] |
 |**contentAnalysis** | [**AppendixContentAnalysisLimitsRatesDataInfo**](AppendixContentAnalysisLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalContentAnalysis** | **Double** |  |  [optional] |

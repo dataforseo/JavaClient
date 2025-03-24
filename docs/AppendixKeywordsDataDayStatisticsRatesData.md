@@ -25,11 +25,11 @@
 |**clickstreamData** | [**AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo**](AppendixClickstreamDataKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**audienceEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordSuggestionsForUrl** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**jobFunctions** | **Double** |  |  [optional] |
 |**searchVolumeHistory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**industries** | **Double** |  |  [optional] |
-|**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
+|**jobFunctions** | **Double** |  |  [optional] |
 |**idList** | **Double** |  |  [optional] |
+|**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
 
 
 

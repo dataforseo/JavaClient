@@ -216,11 +216,11 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'index'
+     * Test the property 'historicalNewLostSummary'
      */
     @Test
-    public void indexTest() {
-        // TODO: test index
+    public void historicalNewLostSummaryTest() {
+        // TODO: test historicalNewLostSummary
     }
 
     /**
@@ -229,6 +229,14 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     @Test
     public void pagesSummaryWithPageInfoTest() {
         // TODO: test pagesSummaryWithPageInfo
+    }
+
+    /**
+     * Test the property 'index'
+     */
+    @Test
+    public void indexTest() {
+        // TODO: test index
     }
 
     /**
@@ -245,14 +253,6 @@ public class AppendixBacklinksDayStatisticsRatesDataTest {
     @Test
     public void availableFiltersTest() {
         // TODO: test availableFilters
-    }
-
-    /**
-     * Test the property 'historicalNewLostSummary'
-     */
-    @Test
-    public void historicalNewLostSummaryTest() {
-        // TODO: test historicalNewLostSummary
     }
 
 }

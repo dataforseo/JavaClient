@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixAppDataDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixAppendixDayStatisticsRatesData;
+import io.github.dataforseo.client.model.AppendixAppendixDaysRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixBacklinksDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixContentAnalysisDayStatisticsRatesData;
@@ -62,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
@@ -86,7 +86,7 @@ public class AppendixDayStatisticsRatesData {
 
   public static final String SERIALIZED_NAME_APPENDIX = "appendix";
   @SerializedName(SERIALIZED_NAME_APPENDIX)
-  private AppendixAppendixDayStatisticsRatesData appendix;
+  private AppendixAppendixDaysRatesDataInfo appendix;
 
   public static final String SERIALIZED_NAME_TOTAL_APPENDIX = "total_appendix";
   @SerializedName(SERIALIZED_NAME_TOTAL_APPENDIX)
@@ -278,7 +278,7 @@ public class AppendixDayStatisticsRatesData {
   }
 
 
-  public AppendixDayStatisticsRatesData appendix(AppendixAppendixDayStatisticsRatesData appendix) {
+  public AppendixDayStatisticsRatesData appendix(AppendixAppendixDaysRatesDataInfo appendix) {
     this.appendix = appendix;
     return this;
   }
@@ -288,11 +288,11 @@ public class AppendixDayStatisticsRatesData {
    * @return appendix
    */
   @javax.annotation.Nullable
-  public AppendixAppendixDayStatisticsRatesData getAppendix() {
+  public AppendixAppendixDaysRatesDataInfo getAppendix() {
     return appendix;
   }
 
-  public void setAppendix(AppendixAppendixDayStatisticsRatesData appendix) {
+  public void setAppendix(AppendixAppendixDaysRatesDataInfo appendix) {
     this.appendix = appendix;
   }
 
@@ -949,7 +949,7 @@ public class AppendixDayStatisticsRatesData {
       }
       // validate the optional field `appendix`
       if (jsonObj.get("appendix") != null && !jsonObj.get("appendix").isJsonNull()) {
-        AppendixAppendixDayStatisticsRatesData.validateJsonElement(jsonObj.get("appendix"));
+        AppendixAppendixDaysRatesDataInfo.validateJsonElement(jsonObj.get("appendix"));
       }
       // validate the optional field `dataforseo_labs`
       if (jsonObj.get("dataforseo_labs") != null && !jsonObj.get("dataforseo_labs").isJsonNull()) {

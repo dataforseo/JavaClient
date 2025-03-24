@@ -46,10 +46,11 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleDomainRankOverviewLive**](DataforseoLabsApi.md#googleDomainRankOverviewLive) | **POST** /v3/dataforseo_labs/google/domain_rank_overview/live |  |
 | [**googleDomainWhoisOverviewLive**](DataforseoLabsApi.md#googleDomainWhoisOverviewLive) | **POST** /v3/dataforseo_labs/google/domain_whois_overview/live |  |
 | [**googleHistoricalBulkTrafficEstimationLive**](DataforseoLabsApi.md#googleHistoricalBulkTrafficEstimationLive) | **POST** /v3/dataforseo_labs/google/historical_bulk_traffic_estimation/live |  |
+| [**googleHistoricalKeywordDataLive**](DataforseoLabsApi.md#googleHistoricalKeywordDataLive) | **POST** /v3/dataforseo_labs/google/historical_keyword_data/live |  |
 | [**googleHistoricalRankOverviewLive**](DataforseoLabsApi.md#googleHistoricalRankOverviewLive) | **POST** /v3/dataforseo_labs/google/historical_rank_overview/live |  |
-| [**googleHistoricalSearchVolumeLive**](DataforseoLabsApi.md#googleHistoricalSearchVolumeLive) | **POST** /v3/dataforseo_labs/google/historical_search_volume/live |  |
 | [**googleHistoricalSerpsLive**](DataforseoLabsApi.md#googleHistoricalSerpsLive) | **POST** /v3/dataforseo_labs/google/historical_serps/live |  |
 | [**googleKeywordIdeasLive**](DataforseoLabsApi.md#googleKeywordIdeasLive) | **POST** /v3/dataforseo_labs/google/keyword_ideas/live |  |
+| [**googleKeywordOverviewLive**](DataforseoLabsApi.md#googleKeywordOverviewLive) | **POST** /v3/dataforseo_labs/google/keyword_overview/live |  |
 | [**googleKeywordSuggestionsLive**](DataforseoLabsApi.md#googleKeywordSuggestionsLive) | **POST** /v3/dataforseo_labs/google/keyword_suggestions/live |  |
 | [**googleKeywordsForAppLive**](DataforseoLabsApi.md#googleKeywordsForAppLive) | **POST** /v3/dataforseo_labs/google/keywords_for_app/live |  |
 | [**googleKeywordsForCategoriesLive**](DataforseoLabsApi.md#googleKeywordsForCategoriesLive) | **POST** /v3/dataforseo_labs/google/keywords_for_categories/live |  |
@@ -2896,6 +2897,74 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="googleHistoricalKeywordDataLive"></a>
+# **googleHistoricalKeywordDataLive**
+> DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo googleHistoricalKeywordDataLive(dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo)
+
+
+
+‌‌  This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
+    List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo = Arrays.asList(); // List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> | 
+    try {
+      DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo result = apiInstance.googleHistoricalKeywordDataLive(dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling DataforseoLabsApi#googleHistoricalKeywordDataLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo** | [**List&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo&gt;**](DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo**](DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="googleHistoricalRankOverviewLive"></a>
 # **googleHistoricalRankOverviewLive**
 > DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo googleHistoricalRankOverviewLive(dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo)
@@ -2949,74 +3018,6 @@ public class Example {
 ### Return type
 
 [**DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo**](DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleHistoricalSearchVolumeLive"></a>
-# **googleHistoricalSearchVolumeLive**
-> DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo googleHistoricalSearchVolumeLive(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo)
-
-
-
-‌‌  This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DataforseoLabsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo = Arrays.asList(); // List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> | 
-    try {
-      DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo result = apiInstance.googleHistoricalSearchVolumeLive(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DataforseoLabsApi#googleHistoricalSearchVolumeLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo** | [**List&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo&gt;**](DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo**](DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo.md)
 
 ### Authorization
 
@@ -3153,6 +3154,74 @@ public class Example {
 ### Return type
 
 [**DataforseoLabsGoogleKeywordIdeasLiveResponseInfo**](DataforseoLabsGoogleKeywordIdeasLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleKeywordOverviewLive"></a>
+# **googleKeywordOverviewLive**
+> DataforseoLabsGoogleKeywordOverviewLiveResponseInfo googleKeywordOverviewLive(dataforseoLabsGoogleKeywordOverviewLiveRequestInfo)
+
+
+
+‌‌  This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash&#39;
+
+### Example
+```java
+// Import classes:
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.api.DataforseoLabsApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+    
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("YOUR USERNAME");
+    basicAuth.setPassword("YOUR PASSWORD");
+
+    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
+    List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> dataforseoLabsGoogleKeywordOverviewLiveRequestInfo = Arrays.asList(); // List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> | 
+    try {
+      DataforseoLabsGoogleKeywordOverviewLiveResponseInfo result = apiInstance.googleKeywordOverviewLive(dataforseoLabsGoogleKeywordOverviewLiveRequestInfo);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling DataforseoLabsApi#googleKeywordOverviewLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **dataforseoLabsGoogleKeywordOverviewLiveRequestInfo** | [**List&lt;DataforseoLabsGoogleKeywordOverviewLiveRequestInfo&gt;**](DataforseoLabsGoogleKeywordOverviewLiveRequestInfo.md)|  | [optional] |
+
+### Return type
+
+[**DataforseoLabsGoogleKeywordOverviewLiveResponseInfo**](DataforseoLabsGoogleKeywordOverviewLiveResponseInfo.md)
 
 ### Authorization
 

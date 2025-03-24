@@ -54,8 +54,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * FeaturedSnippetDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
   private String domain;
@@ -79,10 +83,6 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   public static final String SERIALIZED_NAME_TABLE = "table";
   @SerializedName(SERIALIZED_NAME_TABLE)
   private Table table;
-
-  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
-  @SerializedName(SERIALIZED_NAME_SE_TYPE)
-  private String seType;
 
   public static final String SERIALIZED_NAME_MAIN_DOMAIN = "main_domain";
   @SerializedName(SERIALIZED_NAME_MAIN_DOMAIN)
@@ -115,13 +115,32 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   public FeaturedSnippetDataforseoLabsSerpElementItem() {
   }
 
+  public FeaturedSnippetDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
+
   public FeaturedSnippetDataforseoLabsSerpElementItem domain(String domain) {
     this.domain = domain;
     return this;
   }
 
   /**
-   * domain where a link points
+   * subdomain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -197,7 +216,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
   /**
-   * relevant URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -229,25 +248,6 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
 
-  public FeaturedSnippetDataforseoLabsSerpElementItem seType(String seType) {
-    this.seType = seType;
-    return this;
-  }
-
-  /**
-   * search engine type
-   * @return seType
-   */
-  @javax.annotation.Nullable
-  public String getSeType() {
-    return seType;
-  }
-
-  public void setSeType(String seType) {
-    this.seType = seType;
-  }
-
-
   public FeaturedSnippetDataforseoLabsSerpElementItem mainDomain(String mainDomain) {
     this.mainDomain = mainDomain;
     return this;
@@ -273,7 +273,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
   /**
-   * URL in SERP that does not specify the HTTPs protocol and domain name
+   * relative URL in SERP
    * @return relativeUrl
    */
   @javax.annotation.Nullable
@@ -292,7 +292,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
   /**
-   * estimated traffic volume estimated paid monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
+   * estimated traffic volume estimated organic monthly traffic to the domain; calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword learn more about how the metric is calculated in this help center article
    * @return etv
    */
   @javax.annotation.Nullable
@@ -311,7 +311,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
   /**
-   * estimated cost of monthly search traffic represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
+   * estimated cost of converting organic search traffic into paid represents the estimated monthly cost of running ads (USD) for the returned keyword; the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Bing Search learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable
@@ -435,13 +435,13 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
       return false;
     }
     FeaturedSnippetDataforseoLabsSerpElementItem featuredSnippetDataforseoLabsSerpElementItem = (FeaturedSnippetDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.domain, featuredSnippetDataforseoLabsSerpElementItem.domain) &&
+    return Objects.equals(this.seType, featuredSnippetDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.domain, featuredSnippetDataforseoLabsSerpElementItem.domain) &&
         Objects.equals(this.title, featuredSnippetDataforseoLabsSerpElementItem.title) &&
         Objects.equals(this.featuredTitle, featuredSnippetDataforseoLabsSerpElementItem.featuredTitle) &&
         Objects.equals(this.description, featuredSnippetDataforseoLabsSerpElementItem.description) &&
         Objects.equals(this.url, featuredSnippetDataforseoLabsSerpElementItem.url) &&
         Objects.equals(this.table, featuredSnippetDataforseoLabsSerpElementItem.table) &&
-        Objects.equals(this.seType, featuredSnippetDataforseoLabsSerpElementItem.seType) &&
         Objects.equals(this.mainDomain, featuredSnippetDataforseoLabsSerpElementItem.mainDomain) &&
         Objects.equals(this.relativeUrl, featuredSnippetDataforseoLabsSerpElementItem.relativeUrl) &&
         Objects.equals(this.etv, featuredSnippetDataforseoLabsSerpElementItem.etv) &&
@@ -459,7 +459,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
 
   @Override
   public int hashCode() {
-    return Objects.hash(domain, title, featuredTitle, description, url, table, seType, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, rankChanges, backlinksInfo, rankInfo, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, domain, title, featuredTitle, description, url, table, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, rankChanges, backlinksInfo, rankInfo, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -474,13 +474,13 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
     StringBuilder sb = new StringBuilder();
     sb.append("class FeaturedSnippetDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    featuredTitle: ").append(toIndentedString(featuredTitle)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    table: ").append(toIndentedString(table)).append("\n");
-    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    mainDomain: ").append(toIndentedString(mainDomain)).append("\n");
     sb.append("    relativeUrl: ").append(toIndentedString(relativeUrl)).append("\n");
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
@@ -516,13 +516,13 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("domain");
     openapiFields.add("title");
     openapiFields.add("featured_title");
     openapiFields.add("description");
     openapiFields.add("url");
     openapiFields.add("table");
-    openapiFields.add("se_type");
     openapiFields.add("main_domain");
     openapiFields.add("relative_url");
     openapiFields.add("etv");
@@ -548,6 +548,9 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("domain") != null && !jsonObj.get("domain").isJsonNull()) && !jsonObj.get("domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain").toString()));
       }
@@ -566,9 +569,6 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
       // validate the optional field `table`
       if (jsonObj.get("table") != null && !jsonObj.get("table").isJsonNull()) {
         Table.validateJsonElement(jsonObj.get("table"));
-      }
-      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
       }
       if ((jsonObj.get("main_domain") != null && !jsonObj.get("main_domain").isJsonNull()) && !jsonObj.get("main_domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `main_domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("main_domain").toString()));

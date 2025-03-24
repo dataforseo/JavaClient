@@ -168,19 +168,19 @@ public class AppendixDataforseoLabsPriceDataTest {
     }
 
     /**
+     * Test the property 'historicalKeywordData'
+     */
+    @Test
+    public void historicalKeywordDataTest() {
+        // TODO: test historicalKeywordData
+    }
+
+    /**
      * Test the property 'historicalRankOverview'
      */
     @Test
     public void historicalRankOverviewTest() {
         // TODO: test historicalRankOverview
-    }
-
-    /**
-     * Test the property 'historicalSearchVolume'
-     */
-    @Test
-    public void historicalSearchVolumeTest() {
-        // TODO: test historicalSearchVolume
     }
 
     /**
@@ -197,6 +197,14 @@ public class AppendixDataforseoLabsPriceDataTest {
     @Test
     public void keywordIdeasTest() {
         // TODO: test keywordIdeas
+    }
+
+    /**
+     * Test the property 'keywordOverview'
+     */
+    @Test
+    public void keywordOverviewTest() {
+        // TODO: test keywordOverview
     }
 
     /**

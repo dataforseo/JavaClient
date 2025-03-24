@@ -60,7 +60,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OrganicDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -128,7 +128,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private LinkElement links;
+  private List<LinkElement> links;
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
@@ -485,21 +485,29 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem links(LinkElement links) {
+  public OrganicDataforseoLabsSerpElementItem links(List<LinkElement> links) {
     this.links = links;
     return this;
   }
 
+  public OrganicDataforseoLabsSerpElementItem addLinksItem(LinkElement linksItem) {
+    if (this.links == null) {
+      this.links = new ArrayList<>();
+    }
+    this.links.add(linksItem);
+    return this;
+  }
+
   /**
-   * Get links
+   * sitelinks the links shown below some of Google’s search results if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable
-  public LinkElement getLinks() {
+  public List<LinkElement> getLinks() {
     return links;
   }
 
-  public void setLinks(LinkElement links) {
+  public void setLinks(List<LinkElement> links) {
     this.links = links;
   }
 
@@ -943,9 +951,19 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
       if (jsonObj.get("highlighted") != null && !jsonObj.get("highlighted").isJsonNull() && !jsonObj.get("highlighted").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `highlighted` to be an array in the JSON string but got `%s`", jsonObj.get("highlighted").toString()));
       }
-      // validate the optional field `links`
       if (jsonObj.get("links") != null && !jsonObj.get("links").isJsonNull()) {
-        LinkElement.validateJsonElement(jsonObj.get("links"));
+        JsonArray jsonArraylinks = jsonObj.getAsJsonArray("links");
+        if (jsonArraylinks != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("links").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `links` to be an array in the JSON string but got `%s`", jsonObj.get("links").toString()));
+          }
+
+          // validate the optional field `links` (array)
+          for (int i = 0; i < jsonArraylinks.size(); i++) {
+            LinkElement.validateJsonElement(jsonArraylinks.get(i));
+          };
+        }
       }
       if ((jsonObj.get("main_domain") != null && !jsonObj.get("main_domain").isJsonNull()) && !jsonObj.get("main_domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `main_domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("main_domain").toString()));

@@ -200,6 +200,22 @@ public class AppendixOnPageDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'microdata'
+     */
+    @Test
+    public void microdataTest() {
+        // TODO: test microdata
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
+    }
+
+    /**
      * Test the property 'forceStop'
      */
     @Test
@@ -213,22 +229,6 @@ public class AppendixOnPageDayStatisticsRatesDataTest {
     @Test
     public void availableFiltersTest() {
         // TODO: test availableFilters
-    }
-
-    /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
-     * Test the property 'microdata'
-     */
-    @Test
-    public void microdataTest() {
-        // TODO: test microdata
     }
 
 }

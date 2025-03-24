@@ -28,7 +28,6 @@
 |**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordSuggestions** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordIdeas** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**historicalSearchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**categoriesForDomain** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**domainMetricsByCategories** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**topSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
@@ -43,6 +42,8 @@
 |**searchIntent** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**historicalBulkTrafficEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**categoriesForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**keywordOverview** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**historicalKeywordData** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 
 
 

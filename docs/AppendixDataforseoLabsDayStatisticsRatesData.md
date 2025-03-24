@@ -28,7 +28,6 @@
 |**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordSuggestions** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**keywordIdeas** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**historicalSearchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**categoriesForDomain** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**domainMetricsByCategories** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**topSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
@@ -43,13 +42,16 @@
 |**searchIntent** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**historicalBulkTrafficEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**categoriesForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**amazon** | [**AppendixDataforseoLabsLimitsRatesDataInfo**](AppendixDataforseoLabsLimitsRatesDataInfo.md) |  |  [optional] |
+|**keywordOverview** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**historicalKeywordData** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**idList** | **Double** |  |  [optional] |
+|**historicalSearchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**availableFilters** | **Double** |  |  [optional] |
+|**availableHistory** | **Double** |  |  [optional] |
 |**languages** | **Double** |  |  [optional] |
 |**topGoogleSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
+|**amazon** | [**AppendixDataforseoLabsLimitsRatesDataInfo**](AppendixDataforseoLabsLimitsRatesDataInfo.md) |  |  [optional] |
 |**status** | **Double** |  |  [optional] |
-|**availableHistory** | **Double** |  |  [optional] |
-|**idList** | **Double** |  |  [optional] |
-|**availableFilters** | **Double** |  |  [optional] |
 
 
 

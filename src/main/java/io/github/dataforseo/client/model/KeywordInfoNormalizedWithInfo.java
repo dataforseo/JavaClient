@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordInfoNormalizedWithInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordInfoNormalizedWithInfo {
   public static final String SERIALIZED_NAME_LAST_UPDATED_TIME = "last_updated_time";
   @SerializedName(SERIALIZED_NAME_LAST_UPDATED_TIME)
@@ -60,11 +60,11 @@ public class KeywordInfoNormalizedWithInfo {
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private String searchVolume;
 
   public static final String SERIALIZED_NAME_IS_NORMALIZED = "is_normalized";
   @SerializedName(SERIALIZED_NAME_IS_NORMALIZED)
-  private Boolean isNormalized;
+  private String isNormalized;
 
   public static final String SERIALIZED_NAME_MONTHLY_SEARCHES = "monthly_searches";
   @SerializedName(SERIALIZED_NAME_MONTHLY_SEARCHES)
@@ -79,7 +79,7 @@ public class KeywordInfoNormalizedWithInfo {
   }
 
   /**
-   * date and time when the clickstream dataset was updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+   * date and time when the dataset was updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable
@@ -92,26 +92,26 @@ public class KeywordInfoNormalizedWithInfo {
   }
 
 
-  public KeywordInfoNormalizedWithInfo searchVolume(Long searchVolume) {
+  public KeywordInfoNormalizedWithInfo searchVolume(String searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
 
   /**
-   * monthly average clickstream search volume rate
+   * current search volume rate of a keyword
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public String getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(String searchVolume) {
     this.searchVolume = searchVolume;
   }
 
 
-  public KeywordInfoNormalizedWithInfo isNormalized(Boolean isNormalized) {
+  public KeywordInfoNormalizedWithInfo isNormalized(String isNormalized) {
     this.isNormalized = isNormalized;
     return this;
   }
@@ -121,11 +121,11 @@ public class KeywordInfoNormalizedWithInfo {
    * @return isNormalized
    */
   @javax.annotation.Nullable
-  public Boolean getIsNormalized() {
+  public String getIsNormalized() {
     return isNormalized;
   }
 
-  public void setIsNormalized(Boolean isNormalized) {
+  public void setIsNormalized(String isNormalized) {
     this.isNormalized = isNormalized;
   }
 
@@ -144,7 +144,7 @@ public class KeywordInfoNormalizedWithInfo {
   }
 
   /**
-   * monthly clickstream search volume rates array of objects with clickstream search volume rates in a certain month of a year
+   * monthly search volume rates array of objects with search volume rates in a certain month of a year
    * @return monthlySearches
    */
   @javax.annotation.Nullable
@@ -289,6 +289,12 @@ public class KeywordInfoNormalizedWithInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("last_updated_time") != null && !jsonObj.get("last_updated_time").isJsonNull()) && !jsonObj.get("last_updated_time").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `last_updated_time` to be a primitive type in the JSON string but got `%s`", jsonObj.get("last_updated_time").toString()));
+      }
+      if ((jsonObj.get("search_volume") != null && !jsonObj.get("search_volume").isJsonNull()) && !jsonObj.get("search_volume").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `search_volume` to be a primitive type in the JSON string but got `%s`", jsonObj.get("search_volume").toString()));
+      }
+      if ((jsonObj.get("is_normalized") != null && !jsonObj.get("is_normalized").isJsonNull()) && !jsonObj.get("is_normalized").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `is_normalized` to be a primitive type in the JSON string but got `%s`", jsonObj.get("is_normalized").toString()));
       }
       if (jsonObj.get("monthly_searches") != null && !jsonObj.get("monthly_searches").isJsonNull()) {
         JsonArray jsonArraymonthlySearches = jsonObj.getAsJsonArray("monthly_searches");

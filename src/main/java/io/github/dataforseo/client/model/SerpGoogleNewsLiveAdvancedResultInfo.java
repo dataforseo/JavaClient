@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleNewsLiveAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleNewsLiveAdvancedResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -361,7 +361,7 @@ public class SerpGoogleNewsLiveAdvancedResultInfo {
   }
 
   /**
-   * items of the element
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable

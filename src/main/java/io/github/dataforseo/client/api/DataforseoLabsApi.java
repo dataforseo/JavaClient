@@ -101,14 +101,16 @@ import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainWhoisOverview
 import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordIdeasLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordIdeasLiveResponseInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordOverviewLiveRequestInfo;
+import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordOverviewLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleKeywordsForAppLiveRequestInfo;
@@ -5108,6 +5110,124 @@ public class DataforseoLabsApi {
         return localVarCall;
     }
     /**
+     * Build call for googleHistoricalKeywordDataLive
+     * @param dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleHistoricalKeywordDataLiveCall(List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/dataforseo_labs/google/historical_keyword_data/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleHistoricalKeywordDataLiveValidateBeforeCall(List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleHistoricalKeywordDataLiveCall(dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌  This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash&#39;
+     * @param dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo  (optional)
+     * @return DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo googleHistoricalKeywordDataLive(List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo) throws ApiException {
+        ApiResponse<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> localVarResp = googleHistoricalKeywordDataLiveWithHttpInfo(dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌  This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash&#39;
+     * @param dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo  (optional)
+     * @return ApiResponse&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> googleHistoricalKeywordDataLiveWithHttpInfo(List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleHistoricalKeywordDataLiveValidateBeforeCall(dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo, null);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌  This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash&#39;
+     * @param dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleHistoricalKeywordDataLiveAsync(List<DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo> dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo, final ApiCallback<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleHistoricalKeywordDataLiveValidateBeforeCall(dataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for googleHistoricalRankOverviewLive
      * @param dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo  (optional)
      * @param _callback Callback for upload/download progress
@@ -5222,124 +5342,6 @@ public class DataforseoLabsApi {
 
         okhttp3.Call localVarCall = googleHistoricalRankOverviewLiveValidateBeforeCall(dataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo>(){}.getType();
-        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-        return localVarCall;
-    }
-    /**
-     * Build call for googleHistoricalSearchVolumeLive
-     * @param dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo  (optional)
-     * @param _callback Callback for upload/download progress
-     * @return Call to execute
-     * @throws ApiException If fail to serialize the request body object
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public okhttp3.Call googleHistoricalSearchVolumeLiveCall(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
-        String basePath = null;
-        // Operation Servers
-        String[] localBasePaths = new String[] {  };
-
-        // Determine Base Path to Use
-        if (localCustomBaseUrl != null){
-            basePath = localCustomBaseUrl;
-        } else if ( localBasePaths.length > 0 ) {
-            basePath = localBasePaths[localHostIndex];
-        } else {
-            basePath = null;
-        }
-
-        Object localVarPostBody = dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo;
-
-        // create path and map variables
-        String localVarPath = "/v3/dataforseo_labs/google/historical_search_volume/live";
-
-        List<Pair> localVarQueryParams = new ArrayList<Pair>();
-        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-        Map<String, String> localVarCookieParams = new HashMap<String, String>();
-        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-        final String[] localVarAccepts = {
-            "application/json"
-        };
-        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-        if (localVarAccept != null) {
-            localVarHeaderParams.put("Accept", localVarAccept);
-        }
-
-        final String[] localVarContentTypes = {
-            "application/json"
-        };
-        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-        if (localVarContentType != null) {
-            localVarHeaderParams.put("Content-Type", localVarContentType);
-        }
-
-        String[] localVarAuthNames = new String[] { "basicAuth" };
-        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleHistoricalSearchVolumeLiveValidateBeforeCall(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo, final ApiCallback _callback) throws ApiException {
-        return googleHistoricalSearchVolumeLiveCall(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo, _callback);
-
-    }
-
-    /**
-     * 
-     * ‌‌  This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash&#39;
-     * @param dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo  (optional)
-     * @return DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo
-     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo googleHistoricalSearchVolumeLive(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo) throws ApiException {
-        ApiResponse<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> localVarResp = googleHistoricalSearchVolumeLiveWithHttpInfo(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo);
-        return localVarResp.getData();
-    }
-
-    /**
-     * 
-     * ‌‌  This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash&#39;
-     * @param dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo  (optional)
-     * @return ApiResponse&lt;DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo&gt;
-     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public ApiResponse<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> googleHistoricalSearchVolumeLiveWithHttpInfo(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo) throws ApiException {
-        okhttp3.Call localVarCall = googleHistoricalSearchVolumeLiveValidateBeforeCall(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo, null);
-        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo>(){}.getType();
-        return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    /**
-     *  (asynchronously)
-     * ‌‌  This endpoint will provide you with Google historical search volume, current cost-per-click, and competition values for paid search, as well as current impressions and SERP. You can get historical search volume data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_search_volume/live/?bash&#39;
-     * @param dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo  (optional)
-     * @param _callback The callback to be executed when the API call finishes
-     * @return The request call
-     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
-     * @http.response.details
-     <table summary="Response Details" border="1">
-        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
-        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
-     </table>
-     */
-    public okhttp3.Call googleHistoricalSearchVolumeLiveAsync(List<DataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo> dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo, final ApiCallback<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo> _callback) throws ApiException {
-
-        okhttp3.Call localVarCall = googleHistoricalSearchVolumeLiveValidateBeforeCall(dataforseoLabsGoogleHistoricalSearchVolumeLiveRequestInfo, _callback);
-        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleHistoricalSearchVolumeLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -5576,6 +5578,124 @@ public class DataforseoLabsApi {
 
         okhttp3.Call localVarCall = googleKeywordIdeasLiveValidateBeforeCall(dataforseoLabsGoogleKeywordIdeasLiveRequestInfo, _callback);
         Type localVarReturnType = new TypeToken<DataforseoLabsGoogleKeywordIdeasLiveResponseInfo>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for googleKeywordOverviewLive
+     * @param dataforseoLabsGoogleKeywordOverviewLiveRequestInfo  (optional)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleKeywordOverviewLiveCall(List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> dataforseoLabsGoogleKeywordOverviewLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = dataforseoLabsGoogleKeywordOverviewLiveRequestInfo;
+
+        // create path and map variables
+        String localVarPath = "/v3/dataforseo_labs/google/keyword_overview/live";
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "application/json"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "basicAuth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call googleKeywordOverviewLiveValidateBeforeCall(List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> dataforseoLabsGoogleKeywordOverviewLiveRequestInfo, final ApiCallback _callback) throws ApiException {
+        return googleKeywordOverviewLiveCall(dataforseoLabsGoogleKeywordOverviewLiveRequestInfo, _callback);
+
+    }
+
+    /**
+     * 
+     * ‌‌  This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash&#39;
+     * @param dataforseoLabsGoogleKeywordOverviewLiveRequestInfo  (optional)
+     * @return DataforseoLabsGoogleKeywordOverviewLiveResponseInfo
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public DataforseoLabsGoogleKeywordOverviewLiveResponseInfo googleKeywordOverviewLive(List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> dataforseoLabsGoogleKeywordOverviewLiveRequestInfo) throws ApiException {
+        ApiResponse<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> localVarResp = googleKeywordOverviewLiveWithHttpInfo(dataforseoLabsGoogleKeywordOverviewLiveRequestInfo);
+        return localVarResp.getData();
+    }
+
+    /**
+     * 
+     * ‌‌  This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash&#39;
+     * @param dataforseoLabsGoogleKeywordOverviewLiveRequestInfo  (optional)
+     * @return ApiResponse&lt;DataforseoLabsGoogleKeywordOverviewLiveResponseInfo&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> googleKeywordOverviewLiveWithHttpInfo(List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> dataforseoLabsGoogleKeywordOverviewLiveRequestInfo) throws ApiException {
+        okhttp3.Call localVarCall = googleKeywordOverviewLiveValidateBeforeCall(dataforseoLabsGoogleKeywordOverviewLiveRequestInfo, null);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     *  (asynchronously)
+     * ‌‌  This endpoint provides Google keyword data for specified keywords. For each keyword, you will receive current cost-per-click, competition values for paid search, search volume, search intent, monthly searches, as well as SERP and backlink information. Additionally, you can obtain clickstream data, such as clickstream search volume, by specifying the include_clickstream_data parameter. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keyword_overview/live/?bash&#39;
+     * @param dataforseoLabsGoogleKeywordOverviewLiveRequestInfo  (optional)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table summary="Response Details" border="1">
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> Successful operation </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call googleKeywordOverviewLiveAsync(List<DataforseoLabsGoogleKeywordOverviewLiveRequestInfo> dataforseoLabsGoogleKeywordOverviewLiveRequestInfo, final ApiCallback<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = googleKeywordOverviewLiveValidateBeforeCall(dataforseoLabsGoogleKeywordOverviewLiveRequestInfo, _callback);
+        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleKeywordOverviewLiveResponseInfo>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

@@ -19,10 +19,10 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixAppDataDayStatisticsMoneyData;
-import io.github.dataforseo.client.model.AppendixAppendixsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixAppDataLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixAppendixDaysRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixBacklinksDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixBusinessDataDayStatisticsMoneyData;
+import io.github.dataforseo.client.model.AppendixBusinessDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;
@@ -30,8 +30,8 @@ import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixKeywordsDataDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixOnPageDayStatisticsMoneyData;
-import io.github.dataforseo.client.model.AppendixSerpDayStatisticsMoneyData;
+import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDayStatisticsRatesData;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -62,11 +62,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDayStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-10T21:39:12.196275300+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDayStatisticsMoneyData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
-  private AppendixSerpDayStatisticsMoneyData serp;
+  private AppendixSerpDayStatisticsRatesData serp;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
@@ -86,7 +86,7 @@ public class AppendixDayStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_APPENDIX = "appendix";
   @SerializedName(SERIALIZED_NAME_APPENDIX)
-  private AppendixAppendixsRatesDataInfo appendix;
+  private AppendixAppendixDaysRatesDataInfo appendix;
 
   public static final String SERIALIZED_NAME_TOTAL_APPENDIX = "total_appendix";
   @SerializedName(SERIALIZED_NAME_TOTAL_APPENDIX)
@@ -118,7 +118,7 @@ public class AppendixDayStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_ON_PAGE = "on_page";
   @SerializedName(SERIALIZED_NAME_ON_PAGE)
-  private AppendixOnPageDayStatisticsMoneyData onPage;
+  private AppendixOnPageLimitsRatesDataInfo onPage;
 
   public static final String SERIALIZED_NAME_TOTAL_ON_PAGE = "total_on_page";
   @SerializedName(SERIALIZED_NAME_TOTAL_ON_PAGE)
@@ -126,7 +126,7 @@ public class AppendixDayStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_BUSINESS_DATA = "business_data";
   @SerializedName(SERIALIZED_NAME_BUSINESS_DATA)
-  private AppendixBusinessDataDayStatisticsMoneyData businessData;
+  private AppendixBusinessDataLimitsRatesDataInfo businessData;
 
   public static final String SERIALIZED_NAME_TOTAL_BUSINESS_DATA = "total_business_data";
   @SerializedName(SERIALIZED_NAME_TOTAL_BUSINESS_DATA)
@@ -142,7 +142,7 @@ public class AppendixDayStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_APP_DATA = "app_data";
   @SerializedName(SERIALIZED_NAME_APP_DATA)
-  private AppendixAppDataDayStatisticsMoneyData appData;
+  private AppendixAppDataLimitsRatesDataInfo appData;
 
   public static final String SERIALIZED_NAME_TOTAL_APP_DATA = "total_app_data";
   @SerializedName(SERIALIZED_NAME_TOTAL_APP_DATA)
@@ -183,7 +183,7 @@ public class AppendixDayStatisticsMoneyData {
   public AppendixDayStatisticsMoneyData() {
   }
 
-  public AppendixDayStatisticsMoneyData serp(AppendixSerpDayStatisticsMoneyData serp) {
+  public AppendixDayStatisticsMoneyData serp(AppendixSerpDayStatisticsRatesData serp) {
     this.serp = serp;
     return this;
   }
@@ -193,11 +193,11 @@ public class AppendixDayStatisticsMoneyData {
    * @return serp
    */
   @javax.annotation.Nullable
-  public AppendixSerpDayStatisticsMoneyData getSerp() {
+  public AppendixSerpDayStatisticsRatesData getSerp() {
     return serp;
   }
 
-  public void setSerp(AppendixSerpDayStatisticsMoneyData serp) {
+  public void setSerp(AppendixSerpDayStatisticsRatesData serp) {
     this.serp = serp;
   }
 
@@ -278,7 +278,7 @@ public class AppendixDayStatisticsMoneyData {
   }
 
 
-  public AppendixDayStatisticsMoneyData appendix(AppendixAppendixsRatesDataInfo appendix) {
+  public AppendixDayStatisticsMoneyData appendix(AppendixAppendixDaysRatesDataInfo appendix) {
     this.appendix = appendix;
     return this;
   }
@@ -288,11 +288,11 @@ public class AppendixDayStatisticsMoneyData {
    * @return appendix
    */
   @javax.annotation.Nullable
-  public AppendixAppendixsRatesDataInfo getAppendix() {
+  public AppendixAppendixDaysRatesDataInfo getAppendix() {
     return appendix;
   }
 
-  public void setAppendix(AppendixAppendixsRatesDataInfo appendix) {
+  public void setAppendix(AppendixAppendixDaysRatesDataInfo appendix) {
     this.appendix = appendix;
   }
 
@@ -430,7 +430,7 @@ public class AppendixDayStatisticsMoneyData {
   }
 
 
-  public AppendixDayStatisticsMoneyData onPage(AppendixOnPageDayStatisticsMoneyData onPage) {
+  public AppendixDayStatisticsMoneyData onPage(AppendixOnPageLimitsRatesDataInfo onPage) {
     this.onPage = onPage;
     return this;
   }
@@ -440,11 +440,11 @@ public class AppendixDayStatisticsMoneyData {
    * @return onPage
    */
   @javax.annotation.Nullable
-  public AppendixOnPageDayStatisticsMoneyData getOnPage() {
+  public AppendixOnPageLimitsRatesDataInfo getOnPage() {
     return onPage;
   }
 
-  public void setOnPage(AppendixOnPageDayStatisticsMoneyData onPage) {
+  public void setOnPage(AppendixOnPageLimitsRatesDataInfo onPage) {
     this.onPage = onPage;
   }
 
@@ -468,7 +468,7 @@ public class AppendixDayStatisticsMoneyData {
   }
 
 
-  public AppendixDayStatisticsMoneyData businessData(AppendixBusinessDataDayStatisticsMoneyData businessData) {
+  public AppendixDayStatisticsMoneyData businessData(AppendixBusinessDataLimitsRatesDataInfo businessData) {
     this.businessData = businessData;
     return this;
   }
@@ -478,11 +478,11 @@ public class AppendixDayStatisticsMoneyData {
    * @return businessData
    */
   @javax.annotation.Nullable
-  public AppendixBusinessDataDayStatisticsMoneyData getBusinessData() {
+  public AppendixBusinessDataLimitsRatesDataInfo getBusinessData() {
     return businessData;
   }
 
-  public void setBusinessData(AppendixBusinessDataDayStatisticsMoneyData businessData) {
+  public void setBusinessData(AppendixBusinessDataLimitsRatesDataInfo businessData) {
     this.businessData = businessData;
   }
 
@@ -544,7 +544,7 @@ public class AppendixDayStatisticsMoneyData {
   }
 
 
-  public AppendixDayStatisticsMoneyData appData(AppendixAppDataDayStatisticsMoneyData appData) {
+  public AppendixDayStatisticsMoneyData appData(AppendixAppDataLimitsRatesDataInfo appData) {
     this.appData = appData;
     return this;
   }
@@ -554,11 +554,11 @@ public class AppendixDayStatisticsMoneyData {
    * @return appData
    */
   @javax.annotation.Nullable
-  public AppendixAppDataDayStatisticsMoneyData getAppData() {
+  public AppendixAppDataLimitsRatesDataInfo getAppData() {
     return appData;
   }
 
-  public void setAppData(AppendixAppDataDayStatisticsMoneyData appData) {
+  public void setAppData(AppendixAppDataLimitsRatesDataInfo appData) {
     this.appData = appData;
   }
 
@@ -941,7 +941,7 @@ public class AppendixDayStatisticsMoneyData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `serp`
       if (jsonObj.get("serp") != null && !jsonObj.get("serp").isJsonNull()) {
-        AppendixSerpDayStatisticsMoneyData.validateJsonElement(jsonObj.get("serp"));
+        AppendixSerpDayStatisticsRatesData.validateJsonElement(jsonObj.get("serp"));
       }
       // validate the optional field `keywords_data`
       if (jsonObj.get("keywords_data") != null && !jsonObj.get("keywords_data").isJsonNull()) {
@@ -949,7 +949,7 @@ public class AppendixDayStatisticsMoneyData {
       }
       // validate the optional field `appendix`
       if (jsonObj.get("appendix") != null && !jsonObj.get("appendix").isJsonNull()) {
-        AppendixAppendixsRatesDataInfo.validateJsonElement(jsonObj.get("appendix"));
+        AppendixAppendixDaysRatesDataInfo.validateJsonElement(jsonObj.get("appendix"));
       }
       // validate the optional field `dataforseo_labs`
       if (jsonObj.get("dataforseo_labs") != null && !jsonObj.get("dataforseo_labs").isJsonNull()) {
@@ -965,11 +965,11 @@ public class AppendixDayStatisticsMoneyData {
       }
       // validate the optional field `on_page`
       if (jsonObj.get("on_page") != null && !jsonObj.get("on_page").isJsonNull()) {
-        AppendixOnPageDayStatisticsMoneyData.validateJsonElement(jsonObj.get("on_page"));
+        AppendixOnPageLimitsRatesDataInfo.validateJsonElement(jsonObj.get("on_page"));
       }
       // validate the optional field `business_data`
       if (jsonObj.get("business_data") != null && !jsonObj.get("business_data").isJsonNull()) {
-        AppendixBusinessDataDayStatisticsMoneyData.validateJsonElement(jsonObj.get("business_data"));
+        AppendixBusinessDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("business_data"));
       }
       // validate the optional field `backlinks`
       if (jsonObj.get("backlinks") != null && !jsonObj.get("backlinks").isJsonNull()) {
@@ -977,7 +977,7 @@ public class AppendixDayStatisticsMoneyData {
       }
       // validate the optional field `app_data`
       if (jsonObj.get("app_data") != null && !jsonObj.get("app_data").isJsonNull()) {
-        AppendixAppDataDayStatisticsMoneyData.validateJsonElement(jsonObj.get("app_data"));
+        AppendixAppDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("app_data"));
       }
       // validate the optional field `content_analysis`
       if (jsonObj.get("content_analysis") != null && !jsonObj.get("content_analysis").isJsonNull()) {

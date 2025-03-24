@@ -213,7 +213,7 @@ public class BusinessDataApi {
 
     /**
      * 
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2025-03-04). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      * @return BusinessDataBusinessListingsLocationsResponseInfo
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -229,7 +229,7 @@ public class BusinessDataApi {
 
     /**
      * 
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2025-03-04). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      * @return ApiResponse&lt;BusinessDataBusinessListingsLocationsResponseInfo&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -246,7 +246,7 @@ public class BusinessDataApi {
 
     /**
      *  (asynchronously)
-     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2024-11-05). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
+     * You will receive the list of locations by this API call. You can also download the full list of supported locations in the CSV format (last updated 2025-03-04). for more info please visit &#39;https://docs.dataforseo.com/v3/business_data/business_listings/locations/?bash&#39;
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
