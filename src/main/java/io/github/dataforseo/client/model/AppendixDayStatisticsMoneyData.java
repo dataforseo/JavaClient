@@ -27,10 +27,10 @@ import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixKeywordsDataDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixReviewsDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixSerpDayStatisticsRatesData;
 import java.io.IOException;
 import java.util.Arrays;
@@ -62,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDayStatisticsMoneyData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDayStatisticsMoneyData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
@@ -178,7 +178,7 @@ public class AppendixDayStatisticsMoneyData {
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixJobsSerpLimitsRatesDataInfo reviews;
+  private AppendixReviewsDayStatisticsMoneyData reviews;
 
   public AppendixDayStatisticsMoneyData() {
   }
@@ -715,7 +715,7 @@ public class AppendixDayStatisticsMoneyData {
   }
 
 
-  public AppendixDayStatisticsMoneyData reviews(AppendixJobsSerpLimitsRatesDataInfo reviews) {
+  public AppendixDayStatisticsMoneyData reviews(AppendixReviewsDayStatisticsMoneyData reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -725,11 +725,11 @@ public class AppendixDayStatisticsMoneyData {
    * @return reviews
    */
   @javax.annotation.Nullable
-  public AppendixJobsSerpLimitsRatesDataInfo getReviews() {
+  public AppendixReviewsDayStatisticsMoneyData getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixJobsSerpLimitsRatesDataInfo reviews) {
+  public void setReviews(AppendixReviewsDayStatisticsMoneyData reviews) {
     this.reviews = reviews;
   }
 
@@ -992,7 +992,7 @@ public class AppendixDayStatisticsMoneyData {
       }
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixJobsSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixReviewsDayStatisticsMoneyData.validateJsonElement(jsonObj.get("reviews"));
       }
   }
 

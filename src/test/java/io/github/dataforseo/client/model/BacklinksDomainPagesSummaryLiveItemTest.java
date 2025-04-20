@@ -169,6 +169,14 @@ public class BacklinksDomainPagesSummaryLiveItemTest {
     }
 
     /**
+     * Test the property 'referringPagesNofollow'
+     */
+    @Test
+    public void referringPagesNofollowTest() {
+        // TODO: test referringPagesNofollow
+    }
+
+    /**
      * Test the property 'referringLinksTld'
      */
     @Test
@@ -214,14 +222,6 @@ public class BacklinksDomainPagesSummaryLiveItemTest {
     @Test
     public void referringLinksCountriesTest() {
         // TODO: test referringLinksCountries
-    }
-
-    /**
-     * Test the property 'referringPagesNofollow'
-     */
-    @Test
-    public void referringPagesNofollowTest() {
-        // TODO: test referringPagesNofollow
     }
 
 }

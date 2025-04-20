@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksDomainPagesSummaryLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksDomainPagesSummaryLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -117,6 +117,10 @@ public class BacklinksDomainPagesSummaryLiveItem {
   @SerializedName(SERIALIZED_NAME_REFERRING_PAGES)
   private Long referringPages;
 
+  public static final String SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW = "referring_pages_nofollow";
+  @SerializedName(SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW)
+  private Long referringPagesNofollow;
+
   public static final String SERIALIZED_NAME_REFERRING_LINKS_TLD = "referring_links_tld";
   @SerializedName(SERIALIZED_NAME_REFERRING_LINKS_TLD)
   private Map<String, Long> referringLinksTld;
@@ -140,10 +144,6 @@ public class BacklinksDomainPagesSummaryLiveItem {
   public static final String SERIALIZED_NAME_REFERRING_LINKS_COUNTRIES = "referring_links_countries";
   @SerializedName(SERIALIZED_NAME_REFERRING_LINKS_COUNTRIES)
   private Map<String, Long> referringLinksCountries;
-
-  public static final String SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW = "referring_pages_nofollow";
-  @SerializedName(SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW)
-  private Long referringPagesNofollow;
 
   public BacklinksDomainPagesSummaryLiveItem() {
   }
@@ -452,6 +452,25 @@ public class BacklinksDomainPagesSummaryLiveItem {
   }
 
 
+  public BacklinksDomainPagesSummaryLiveItem referringPagesNofollow(Long referringPagesNofollow) {
+    this.referringPagesNofollow = referringPagesNofollow;
+    return this;
+  }
+
+  /**
+   * number of referring pages pointing at least one nofollow link to the page
+   * @return referringPagesNofollow
+   */
+  @javax.annotation.Nullable
+  public Long getReferringPagesNofollow() {
+    return referringPagesNofollow;
+  }
+
+  public void setReferringPagesNofollow(Long referringPagesNofollow) {
+    this.referringPagesNofollow = referringPagesNofollow;
+  }
+
+
   public BacklinksDomainPagesSummaryLiveItem referringLinksTld(Map<String, Long> referringLinksTld) {
     this.referringLinksTld = referringLinksTld;
     return this;
@@ -547,7 +566,7 @@ public class BacklinksDomainPagesSummaryLiveItem {
   }
 
   /**
-   * types of referring platforms indicates referring platform types and and link count per each platform
+   * types of referring platforms indicates referring platform types and and link count per each platform possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
    * @return referringLinksPlatformTypes
    */
   @javax.annotation.Nullable
@@ -611,25 +630,6 @@ public class BacklinksDomainPagesSummaryLiveItem {
 
   public void setReferringLinksCountries(Map<String, Long> referringLinksCountries) {
     this.referringLinksCountries = referringLinksCountries;
-  }
-
-
-  public BacklinksDomainPagesSummaryLiveItem referringPagesNofollow(Long referringPagesNofollow) {
-    this.referringPagesNofollow = referringPagesNofollow;
-    return this;
-  }
-
-  /**
-   * number of referring pages pointing at least one nofollow link to the page
-   * @return referringPagesNofollow
-   */
-  @javax.annotation.Nullable
-  public Long getReferringPagesNofollow() {
-    return referringPagesNofollow;
-  }
-
-  public void setReferringPagesNofollow(Long referringPagesNofollow) {
-    this.referringPagesNofollow = referringPagesNofollow;
   }
 
   /**
@@ -703,13 +703,13 @@ public class BacklinksDomainPagesSummaryLiveItem {
         Objects.equals(this.referringIps, backlinksDomainPagesSummaryLiveItem.referringIps) &&
         Objects.equals(this.referringSubnets, backlinksDomainPagesSummaryLiveItem.referringSubnets) &&
         Objects.equals(this.referringPages, backlinksDomainPagesSummaryLiveItem.referringPages) &&
+        Objects.equals(this.referringPagesNofollow, backlinksDomainPagesSummaryLiveItem.referringPagesNofollow) &&
         Objects.equals(this.referringLinksTld, backlinksDomainPagesSummaryLiveItem.referringLinksTld) &&
         Objects.equals(this.referringLinksTypes, backlinksDomainPagesSummaryLiveItem.referringLinksTypes) &&
         Objects.equals(this.referringLinksAttributes, backlinksDomainPagesSummaryLiveItem.referringLinksAttributes) &&
         Objects.equals(this.referringLinksPlatformTypes, backlinksDomainPagesSummaryLiveItem.referringLinksPlatformTypes) &&
         Objects.equals(this.referringLinksSemanticLocations, backlinksDomainPagesSummaryLiveItem.referringLinksSemanticLocations) &&
-        Objects.equals(this.referringLinksCountries, backlinksDomainPagesSummaryLiveItem.referringLinksCountries) &&
-        Objects.equals(this.referringPagesNofollow, backlinksDomainPagesSummaryLiveItem.referringPagesNofollow)&&
+        Objects.equals(this.referringLinksCountries, backlinksDomainPagesSummaryLiveItem.referringLinksCountries)&&
         Objects.equals(this.additionalProperties, backlinksDomainPagesSummaryLiveItem.additionalProperties);
   }
 
@@ -719,7 +719,7 @@ public class BacklinksDomainPagesSummaryLiveItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, url, rank, backlinks, firstSeen, lostDate, backlinksSpamScore, brokenBacklinks, brokenPages, referringDomains, referringDomainsNofollow, referringMainDomains, referringMainDomainsNofollow, referringIps, referringSubnets, referringPages, referringLinksTld, referringLinksTypes, referringLinksAttributes, referringLinksPlatformTypes, referringLinksSemanticLocations, referringLinksCountries, referringPagesNofollow, additionalProperties);
+    return Objects.hash(type, url, rank, backlinks, firstSeen, lostDate, backlinksSpamScore, brokenBacklinks, brokenPages, referringDomains, referringDomainsNofollow, referringMainDomains, referringMainDomainsNofollow, referringIps, referringSubnets, referringPages, referringPagesNofollow, referringLinksTld, referringLinksTypes, referringLinksAttributes, referringLinksPlatformTypes, referringLinksSemanticLocations, referringLinksCountries, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -749,13 +749,13 @@ public class BacklinksDomainPagesSummaryLiveItem {
     sb.append("    referringIps: ").append(toIndentedString(referringIps)).append("\n");
     sb.append("    referringSubnets: ").append(toIndentedString(referringSubnets)).append("\n");
     sb.append("    referringPages: ").append(toIndentedString(referringPages)).append("\n");
+    sb.append("    referringPagesNofollow: ").append(toIndentedString(referringPagesNofollow)).append("\n");
     sb.append("    referringLinksTld: ").append(toIndentedString(referringLinksTld)).append("\n");
     sb.append("    referringLinksTypes: ").append(toIndentedString(referringLinksTypes)).append("\n");
     sb.append("    referringLinksAttributes: ").append(toIndentedString(referringLinksAttributes)).append("\n");
     sb.append("    referringLinksPlatformTypes: ").append(toIndentedString(referringLinksPlatformTypes)).append("\n");
     sb.append("    referringLinksSemanticLocations: ").append(toIndentedString(referringLinksSemanticLocations)).append("\n");
     sb.append("    referringLinksCountries: ").append(toIndentedString(referringLinksCountries)).append("\n");
-    sb.append("    referringPagesNofollow: ").append(toIndentedString(referringPagesNofollow)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -795,13 +795,13 @@ public class BacklinksDomainPagesSummaryLiveItem {
     openapiFields.add("referring_ips");
     openapiFields.add("referring_subnets");
     openapiFields.add("referring_pages");
+    openapiFields.add("referring_pages_nofollow");
     openapiFields.add("referring_links_tld");
     openapiFields.add("referring_links_types");
     openapiFields.add("referring_links_attributes");
     openapiFields.add("referring_links_platform_types");
     openapiFields.add("referring_links_semantic_locations");
     openapiFields.add("referring_links_countries");
-    openapiFields.add("referring_pages_nofollow");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

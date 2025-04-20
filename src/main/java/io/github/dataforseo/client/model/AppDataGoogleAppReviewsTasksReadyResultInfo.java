@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGoogleAppReviewsTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataGoogleAppReviewsTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -183,7 +183,7 @@ public class AppDataGoogleAppReviewsTasksReadyResultInfo {
   }
 
   /**
-   * URL for collecting the results of the Google App Reviews task
+   * URL for collecting the results of the Google app_reviews task
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -202,7 +202,7 @@ public class AppDataGoogleAppReviewsTasksReadyResultInfo {
   }
 
   /**
-   * URL for collecting the results of the Google App Reviews HTML task if HTML tasks are not supported in the specified endpoint, the value will be null
+   * URL for collecting the results of the Google app_reviews HTML task if HTML tasks are not supported in the specified endpoint, the value will be null
    * @return endpointHtml
    */
   @javax.annotation.Nullable

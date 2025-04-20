@@ -337,35 +337,11 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'idList'
+     * Test the property 'topGoogleSearches'
      */
     @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
-     * Test the property 'historicalSearchVolume'
-     */
-    @Test
-    public void historicalSearchVolumeTest() {
-        // TODO: test historicalSearchVolume
-    }
-
-    /**
-     * Test the property 'availableFilters'
-     */
-    @Test
-    public void availableFiltersTest() {
-        // TODO: test availableFilters
-    }
-
-    /**
-     * Test the property 'availableHistory'
-     */
-    @Test
-    public void availableHistoryTest() {
-        // TODO: test availableHistory
+    public void topGoogleSearchesTest() {
+        // TODO: test topGoogleSearches
     }
 
     /**
@@ -377,14 +353,6 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'topGoogleSearches'
-     */
-    @Test
-    public void topGoogleSearchesTest() {
-        // TODO: test topGoogleSearches
-    }
-
-    /**
      * Test the property 'amazon'
      */
     @Test
@@ -393,11 +361,43 @@ public class AppendixDataforseoLabsDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'historicalSearchVolume'
+     */
+    @Test
+    public void historicalSearchVolumeTest() {
+        // TODO: test historicalSearchVolume
+    }
+
+    /**
      * Test the property 'status'
      */
     @Test
     public void statusTest() {
         // TODO: test status
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
+    }
+
+    /**
+     * Test the property 'availableHistory'
+     */
+    @Test
+    public void availableHistoryTest() {
+        // TODO: test availableHistory
+    }
+
+    /**
+     * Test the property 'availableFilters'
+     */
+    @Test
+    public void availableFiltersTest() {
+        // TODO: test availableFilters
     }
 
 }

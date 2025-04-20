@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGoogleAppSearchesTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataGoogleAppSearchesTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -218,7 +218,7 @@ public class AppDataGoogleAppSearchesTaskPostRequestInfo {
   }
 
   /**
-   * parsing depth optional field number of results to be returned to be returned from the Google Play SERP; we strongly recommend setting the parsing depth in the multiples of 100, because our system processes 100 results in a row; Note: your account will be billed per each SERP containing up to 100 results; thus, setting a depth above 100 may result in additional charges if the search engine returns more than 100 results; if the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically default value: 100; maximum value: 200
+   * parsing depth optional field number of results to be returned to be returned from the Google Play SERP; we strongly recommend setting the parsing depth in the multiples of 30, because our system processes 30 results in a row; Note: your account will be billed per each SERP containing up to 30 results; thus, setting a depth above 30 may result in additional charges if the search engine returns more than 30 results; if the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically default value: 30; maximum value: 200
    * @return depth
    */
   @javax.annotation.Nullable

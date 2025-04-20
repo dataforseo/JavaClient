@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixBusinessDataDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_GOOGLE = "google";
   @SerializedName(SERIALIZED_NAME_GOOGLE)
@@ -95,13 +95,13 @@ public class AppendixBusinessDataDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
   private Double tasksReady;
 
-  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
-  @SerializedName(SERIALIZED_NAME_ID_LIST)
-  private Double idList;
-
   public static final String SERIALIZED_NAME_AVAILABLE_FILTERS = "available_filters";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_FILTERS)
   private Double availableFilters;
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
 
   public AppendixBusinessDataDayStatisticsRatesData() {
   }
@@ -296,25 +296,6 @@ public class AppendixBusinessDataDayStatisticsRatesData {
   }
 
 
-  public AppendixBusinessDataDayStatisticsRatesData idList(Double idList) {
-    this.idList = idList;
-    return this;
-  }
-
-  /**
-   * Get idList
-   * @return idList
-   */
-  @javax.annotation.Nullable
-  public Double getIdList() {
-    return idList;
-  }
-
-  public void setIdList(Double idList) {
-    this.idList = idList;
-  }
-
-
   public AppendixBusinessDataDayStatisticsRatesData availableFilters(Double availableFilters) {
     this.availableFilters = availableFilters;
     return this;
@@ -331,6 +312,25 @@ public class AppendixBusinessDataDayStatisticsRatesData {
 
   public void setAvailableFilters(Double availableFilters) {
     this.availableFilters = availableFilters;
+  }
+
+
+  public AppendixBusinessDataDayStatisticsRatesData idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * Get idList
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
   }
 
   /**
@@ -398,8 +398,8 @@ public class AppendixBusinessDataDayStatisticsRatesData {
         Objects.equals(this.trustpilot, appendixBusinessDataDayStatisticsRatesData.trustpilot) &&
         Objects.equals(this.businessListings, appendixBusinessDataDayStatisticsRatesData.businessListings) &&
         Objects.equals(this.tasksReady, appendixBusinessDataDayStatisticsRatesData.tasksReady) &&
-        Objects.equals(this.idList, appendixBusinessDataDayStatisticsRatesData.idList) &&
-        Objects.equals(this.availableFilters, appendixBusinessDataDayStatisticsRatesData.availableFilters)&&
+        Objects.equals(this.availableFilters, appendixBusinessDataDayStatisticsRatesData.availableFilters) &&
+        Objects.equals(this.idList, appendixBusinessDataDayStatisticsRatesData.idList)&&
         Objects.equals(this.additionalProperties, appendixBusinessDataDayStatisticsRatesData.additionalProperties);
   }
 
@@ -409,7 +409,7 @@ public class AppendixBusinessDataDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(google, locations, languages, errors, yelp, socialMedia, tripadvisor, trustpilot, businessListings, tasksReady, idList, availableFilters, additionalProperties);
+    return Objects.hash(google, locations, languages, errors, yelp, socialMedia, tripadvisor, trustpilot, businessListings, tasksReady, availableFilters, idList, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -433,8 +433,8 @@ public class AppendixBusinessDataDayStatisticsRatesData {
     sb.append("    trustpilot: ").append(toIndentedString(trustpilot)).append("\n");
     sb.append("    businessListings: ").append(toIndentedString(businessListings)).append("\n");
     sb.append("    tasksReady: ").append(toIndentedString(tasksReady)).append("\n");
-    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    availableFilters: ").append(toIndentedString(availableFilters)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -468,8 +468,8 @@ public class AppendixBusinessDataDayStatisticsRatesData {
     openapiFields.add("trustpilot");
     openapiFields.add("business_listings");
     openapiFields.add("tasks_ready");
-    openapiFields.add("id_list");
     openapiFields.add("available_filters");
+    openapiFields.add("id_list");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

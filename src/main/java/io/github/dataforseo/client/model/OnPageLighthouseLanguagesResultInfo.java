@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageLighthouseLanguagesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageLighthouseLanguagesResultInfo {
   public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)

@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisPhraseTrendsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisPhraseTrendsLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -90,6 +90,10 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
   public static final String SERIALIZED_NAME_INITIAL_DATASET_FILTER = "initial_dataset_filter";
   @SerializedName(SERIALIZED_NAME_INITIAL_DATASET_FILTER)
   private List<String> initialDatasetFilter;
+
+  public static final String SERIALIZED_NAME_RANK_SCALE = "rank_scale";
+  @SerializedName(SERIALIZED_NAME_RANK_SCALE)
+  private String rankScale;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -293,6 +297,25 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
   }
 
 
+  public ContentAnalysisPhraseTrendsLiveRequestInfo rankScale(String rankScale) {
+    this.rankScale = rankScale;
+    return this;
+  }
+
+  /**
+   * defines the scale used for calculating and displaying the rank values optional field you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale possible values: one_hundred — rank values are displayed on a 0–100 scale one_thousand — rank values are displayed on a 0–1000 scale default value: one_thousand learn more about how this parameter works in this Help Center article
+   * @return rankScale
+   */
+  @javax.annotation.Nullable
+  public String getRankScale() {
+    return rankScale;
+  }
+
+  public void setRankScale(String rankScale) {
+    this.rankScale = rankScale;
+  }
+
+
   public ContentAnalysisPhraseTrendsLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -375,6 +398,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
         Objects.equals(this.dateTo, contentAnalysisPhraseTrendsLiveRequestInfo.dateTo) &&
         Objects.equals(this.dateGroup, contentAnalysisPhraseTrendsLiveRequestInfo.dateGroup) &&
         Objects.equals(this.initialDatasetFilter, contentAnalysisPhraseTrendsLiveRequestInfo.initialDatasetFilter) &&
+        Objects.equals(this.rankScale, contentAnalysisPhraseTrendsLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, contentAnalysisPhraseTrendsLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, contentAnalysisPhraseTrendsLiveRequestInfo.additionalProperties);
   }
@@ -385,7 +409,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, keywordFields, pageType, searchMode, internalListLimit, dateFrom, dateTo, dateGroup, initialDatasetFilter, tag, additionalProperties);
+    return Objects.hash(keyword, keywordFields, pageType, searchMode, internalListLimit, dateFrom, dateTo, dateGroup, initialDatasetFilter, rankScale, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -408,6 +432,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
     sb.append("    dateGroup: ").append(toIndentedString(dateGroup)).append("\n");
     sb.append("    initialDatasetFilter: ").append(toIndentedString(initialDatasetFilter)).append("\n");
+    sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -441,6 +466,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
     openapiFields.add("date_to");
     openapiFields.add("date_group");
     openapiFields.add("initial_dataset_filter");
+    openapiFields.add("rank_scale");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -482,6 +508,9 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("initial_dataset_filter") != null && !jsonObj.get("initial_dataset_filter").isJsonNull() && !jsonObj.get("initial_dataset_filter").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `initial_dataset_filter` to be an array in the JSON string but got `%s`", jsonObj.get("initial_dataset_filter").toString()));
+      }
+      if ((jsonObj.get("rank_scale") != null && !jsonObj.get("rank_scale").isJsonNull()) && !jsonObj.get("rank_scale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `rank_scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rank_scale").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

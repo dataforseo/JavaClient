@@ -7,10 +7,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**products** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**products** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 |**sellers** | [**AppendixSellersGoogleMerchantLimitsRatesDataInfo**](AppendixSellersGoogleMerchantLimitsRatesDataInfo.md) |  |  [optional] |
-|**productSpec** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
-|**productInfo** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**productSpec** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
+|**productInfo** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 
 
 

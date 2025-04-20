@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixMerchantAmazonInfo;
 import io.github.dataforseo.client.model.AppendixMerchantGoogleInfo;
-import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixMerchantDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixMerchantDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_GOOGLE = "google";
   @SerializedName(SERIALIZED_NAME_GOOGLE)
@@ -76,7 +76,7 @@ public class AppendixMerchantDayStatisticsRatesData {
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixSerpLimitsRatesDataInfo reviews;
+  private AppendixSerpsRatesDataInfo reviews;
 
   public static final String SERIALIZED_NAME_TASKS_READY = "tasks_ready";
   @SerializedName(SERIALIZED_NAME_TASKS_READY)
@@ -184,7 +184,7 @@ public class AppendixMerchantDayStatisticsRatesData {
   }
 
 
-  public AppendixMerchantDayStatisticsRatesData reviews(AppendixSerpLimitsRatesDataInfo reviews) {
+  public AppendixMerchantDayStatisticsRatesData reviews(AppendixSerpsRatesDataInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -194,11 +194,11 @@ public class AppendixMerchantDayStatisticsRatesData {
    * @return reviews
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getReviews() {
+  public AppendixSerpsRatesDataInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixSerpLimitsRatesDataInfo reviews) {
+  public void setReviews(AppendixSerpsRatesDataInfo reviews) {
     this.reviews = reviews;
   }
 
@@ -393,7 +393,7 @@ public class AppendixMerchantDayStatisticsRatesData {
       }
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
       }
   }
 

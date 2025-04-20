@@ -21,7 +21,7 @@
 |**rank** | **Integer** | backlink rank rank that the given backlink passes to the target rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article |  [optional] |
 |**pageFromRank** | **Integer** | page rank of the referring page page_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article |  [optional] |
 |**domainFromRank** | **Integer** | domain rank of the referring domain domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm learn more about the metric and how it is calculated in this help center article |  [optional] |
-|**domainFromPlatformType** | **List&lt;String&gt;** | platform types of the referring domain example: \&quot;cms\&quot;, \&quot;blogs\&quot; |  [optional] |
+|**domainFromPlatformType** | **List&lt;String&gt;** | platform types of the referring domain possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization |  [optional] |
 |**domainFromIsIp** | **Boolean** | indicates if the domain is IP if true, the domain functions as an IP address and does not have a domain name |  [optional] |
 |**domainFromIp** | **String** | IP address of the referring domain |  [optional] |
 |**domainFromCountry** | **String** | ISO country code of the referring domain |  [optional] |

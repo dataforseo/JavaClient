@@ -190,19 +190,19 @@ public class AppendixKeywordsDataDayStatisticsMoneyDataTest {
     }
 
     /**
-     * Test the property 'google'
-     */
-    @Test
-    public void googleTest() {
-        // TODO: test google
-    }
-
-    /**
      * Test the property 'searchVolumeHistory'
      */
     @Test
     public void searchVolumeHistoryTest() {
         // TODO: test searchVolumeHistory
+    }
+
+    /**
+     * Test the property 'google'
+     */
+    @Test
+    public void googleTest() {
+        // TODO: test google
     }
 
 }

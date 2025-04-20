@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleNewsTaskGetAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleNewsTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -91,6 +91,10 @@ public class SerpGoogleNewsTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_REFINEMENT_CHIPS = "refinement_chips";
   @SerializedName(SERIALIZED_NAME_REFINEMENT_CHIPS)
   private RefinementChipsInfo refinementChips;
+
+  public static final String SERIALIZED_NAME_INCLUDES_NON_NEWS_SEARCH_RESULTS = "includes_non_news_search_results";
+  @SerializedName(SERIALIZED_NAME_INCLUDES_NON_NEWS_SEARCH_RESULTS)
+  private Boolean includesNonNewsSearchResults;
 
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
@@ -282,6 +286,25 @@ public class SerpGoogleNewsTaskGetAdvancedResultInfo {
   }
 
 
+  public SerpGoogleNewsTaskGetAdvancedResultInfo includesNonNewsSearchResults(Boolean includesNonNewsSearchResults) {
+    this.includesNonNewsSearchResults = includesNonNewsSearchResults;
+    return this;
+  }
+
+  /**
+   * indicates whether the response contains non-news search results in addition to news content
+   * @return includesNonNewsSearchResults
+   */
+  @javax.annotation.Nullable
+  public Boolean getIncludesNonNewsSearchResults() {
+    return includesNonNewsSearchResults;
+  }
+
+  public void setIncludesNonNewsSearchResults(Boolean includesNonNewsSearchResults) {
+    this.includesNonNewsSearchResults = includesNonNewsSearchResults;
+  }
+
+
   public SerpGoogleNewsTaskGetAdvancedResultInfo itemTypes(List<String> itemTypes) {
     this.itemTypes = itemTypes;
     return this;
@@ -437,6 +460,7 @@ public class SerpGoogleNewsTaskGetAdvancedResultInfo {
         Objects.equals(this.datetime, serpGoogleNewsTaskGetAdvancedResultInfo.datetime) &&
         Objects.equals(this.spell, serpGoogleNewsTaskGetAdvancedResultInfo.spell) &&
         Objects.equals(this.refinementChips, serpGoogleNewsTaskGetAdvancedResultInfo.refinementChips) &&
+        Objects.equals(this.includesNonNewsSearchResults, serpGoogleNewsTaskGetAdvancedResultInfo.includesNonNewsSearchResults) &&
         Objects.equals(this.itemTypes, serpGoogleNewsTaskGetAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.seResultsCount, serpGoogleNewsTaskGetAdvancedResultInfo.seResultsCount) &&
         Objects.equals(this.itemsCount, serpGoogleNewsTaskGetAdvancedResultInfo.itemsCount) &&
@@ -450,7 +474,7 @@ public class SerpGoogleNewsTaskGetAdvancedResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
+    return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, includesNonNewsSearchResults, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -473,6 +497,7 @@ public class SerpGoogleNewsTaskGetAdvancedResultInfo {
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    spell: ").append(toIndentedString(spell)).append("\n");
     sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
+    sb.append("    includesNonNewsSearchResults: ").append(toIndentedString(includesNonNewsSearchResults)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
@@ -509,6 +534,7 @@ public class SerpGoogleNewsTaskGetAdvancedResultInfo {
     openapiFields.add("datetime");
     openapiFields.add("spell");
     openapiFields.add("refinement_chips");
+    openapiFields.add("includes_non_news_search_results");
     openapiFields.add("item_types");
     openapiFields.add("se_results_count");
     openapiFields.add("items_count");

@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * RankedKeywordsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RankedKeywordsInfo {
   public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP3 = "page_from_keywords_count_top_3";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP3)

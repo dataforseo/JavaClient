@@ -121,19 +121,19 @@ public class AppendixSerpDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'idList'
-     */
-    @Test
-    public void idListTest() {
-        // TODO: test idList
-    }
-
-    /**
      * Test the property 'aiSummary'
      */
     @Test
     public void aiSummaryTest() {
         // TODO: test aiSummary
+    }
+
+    /**
+     * Test the property 'idList'
+     */
+    @Test
+    public void idListTest() {
+        // TODO: test idList
     }
 
 }

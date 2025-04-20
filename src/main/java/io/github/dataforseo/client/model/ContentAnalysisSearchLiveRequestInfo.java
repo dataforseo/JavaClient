@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisSearchLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisSearchLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -90,6 +90,10 @@ public class ContentAnalysisSearchLiveRequestInfo {
   public static final String SERIALIZED_NAME_OFFSET_TOKEN = "offset_token";
   @SerializedName(SERIALIZED_NAME_OFFSET_TOKEN)
   private String offsetToken;
+
+  public static final String SERIALIZED_NAME_RANK_SCALE = "rank_scale";
+  @SerializedName(SERIALIZED_NAME_RANK_SCALE)
+  private String rankScale;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -301,6 +305,25 @@ public class ContentAnalysisSearchLiveRequestInfo {
   }
 
 
+  public ContentAnalysisSearchLiveRequestInfo rankScale(String rankScale) {
+    this.rankScale = rankScale;
+    return this;
+  }
+
+  /**
+   * defines the scale used for calculating and displaying the domain_rank, and url_rank values optional field you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale possible values: one_hundred — rank values are displayed on a 0–100 scale one_thousand — rank values are displayed on a 0–1000 scale default value: one_thousand learn more about how this parameter works in this Help Center article
+   * @return rankScale
+   */
+  @javax.annotation.Nullable
+  public String getRankScale() {
+    return rankScale;
+  }
+
+  public void setRankScale(String rankScale) {
+    this.rankScale = rankScale;
+  }
+
+
   public ContentAnalysisSearchLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -383,6 +406,7 @@ public class ContentAnalysisSearchLiveRequestInfo {
         Objects.equals(this.orderBy, contentAnalysisSearchLiveRequestInfo.orderBy) &&
         Objects.equals(this.offset, contentAnalysisSearchLiveRequestInfo.offset) &&
         Objects.equals(this.offsetToken, contentAnalysisSearchLiveRequestInfo.offsetToken) &&
+        Objects.equals(this.rankScale, contentAnalysisSearchLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, contentAnalysisSearchLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, contentAnalysisSearchLiveRequestInfo.additionalProperties);
   }
@@ -393,7 +417,7 @@ public class ContentAnalysisSearchLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, keywordFields, pageType, searchMode, limit, filters, orderBy, offset, offsetToken, tag, additionalProperties);
+    return Objects.hash(keyword, keywordFields, pageType, searchMode, limit, filters, orderBy, offset, offsetToken, rankScale, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -416,6 +440,7 @@ public class ContentAnalysisSearchLiveRequestInfo {
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    offsetToken: ").append(toIndentedString(offsetToken)).append("\n");
+    sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -449,6 +474,7 @@ public class ContentAnalysisSearchLiveRequestInfo {
     openapiFields.add("order_by");
     openapiFields.add("offset");
     openapiFields.add("offset_token");
+    openapiFields.add("rank_scale");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -488,6 +514,9 @@ public class ContentAnalysisSearchLiveRequestInfo {
       }
       if ((jsonObj.get("offset_token") != null && !jsonObj.get("offset_token").isJsonNull()) && !jsonObj.get("offset_token").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `offset_token` to be a primitive type in the JSON string but got `%s`", jsonObj.get("offset_token").toString()));
+      }
+      if ((jsonObj.get("rank_scale") != null && !jsonObj.get("rank_scale").isJsonNull()) && !jsonObj.get("rank_scale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `rank_scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rank_scale").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

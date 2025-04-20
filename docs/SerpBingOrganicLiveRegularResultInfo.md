@@ -19,7 +19,7 @@
 |**itemTypes** | **List&lt;String&gt;** | types of search results in SERP contains types of search results (items) found in SERP. possible item types: organic, paid |  [optional] |
 |**seResultsCount** | **Long** | total number of results in SERP |  [optional] |
 |**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;BaseSerpElementItem&gt;**](BaseSerpElementItem.md) | items inside the element array of 8 search queries related to the keyword |  [optional] |
+|**items** | [**List&lt;BaseSerpElementItem&gt;**](BaseSerpElementItem.md) | items in SERP |  [optional] |
 
 
 

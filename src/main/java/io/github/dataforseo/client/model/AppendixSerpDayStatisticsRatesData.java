@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixSerpDayStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixSerpDayStatisticsRatesData {
   public static final String SERIALIZED_NAME_TASK_POST = "task_post";
   @SerializedName(SERIALIZED_NAME_TASK_POST)
@@ -93,13 +93,13 @@ public class AppendixSerpDayStatisticsRatesData {
   @SerializedName(SERIALIZED_NAME_SCREENSHOT)
   private Double screenshot;
 
-  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
-  @SerializedName(SERIALIZED_NAME_ID_LIST)
-  private Double idList;
-
   public static final String SERIALIZED_NAME_AI_SUMMARY = "ai_summary";
   @SerializedName(SERIALIZED_NAME_AI_SUMMARY)
   private Double aiSummary;
+
+  public static final String SERIALIZED_NAME_ID_LIST = "id_list";
+  @SerializedName(SERIALIZED_NAME_ID_LIST)
+  private Double idList;
 
   public AppendixSerpDayStatisticsRatesData() {
   }
@@ -294,25 +294,6 @@ public class AppendixSerpDayStatisticsRatesData {
   }
 
 
-  public AppendixSerpDayStatisticsRatesData idList(Double idList) {
-    this.idList = idList;
-    return this;
-  }
-
-  /**
-   * Get idList
-   * @return idList
-   */
-  @javax.annotation.Nullable
-  public Double getIdList() {
-    return idList;
-  }
-
-  public void setIdList(Double idList) {
-    this.idList = idList;
-  }
-
-
   public AppendixSerpDayStatisticsRatesData aiSummary(Double aiSummary) {
     this.aiSummary = aiSummary;
     return this;
@@ -329,6 +310,25 @@ public class AppendixSerpDayStatisticsRatesData {
 
   public void setAiSummary(Double aiSummary) {
     this.aiSummary = aiSummary;
+  }
+
+
+  public AppendixSerpDayStatisticsRatesData idList(Double idList) {
+    this.idList = idList;
+    return this;
+  }
+
+  /**
+   * Get idList
+   * @return idList
+   */
+  @javax.annotation.Nullable
+  public Double getIdList() {
+    return idList;
+  }
+
+  public void setIdList(Double idList) {
+    this.idList = idList;
   }
 
   /**
@@ -396,8 +396,8 @@ public class AppendixSerpDayStatisticsRatesData {
         Objects.equals(this.tasksFixed, appendixSerpDayStatisticsRatesData.tasksFixed) &&
         Objects.equals(this.jobs, appendixSerpDayStatisticsRatesData.jobs) &&
         Objects.equals(this.screenshot, appendixSerpDayStatisticsRatesData.screenshot) &&
-        Objects.equals(this.idList, appendixSerpDayStatisticsRatesData.idList) &&
-        Objects.equals(this.aiSummary, appendixSerpDayStatisticsRatesData.aiSummary)&&
+        Objects.equals(this.aiSummary, appendixSerpDayStatisticsRatesData.aiSummary) &&
+        Objects.equals(this.idList, appendixSerpDayStatisticsRatesData.idList)&&
         Objects.equals(this.additionalProperties, appendixSerpDayStatisticsRatesData.additionalProperties);
   }
 
@@ -407,7 +407,7 @@ public class AppendixSerpDayStatisticsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(taskPost, taskGet, tasksReady, locations, languages, live, errors, tasksFixed, jobs, screenshot, idList, aiSummary, additionalProperties);
+    return Objects.hash(taskPost, taskGet, tasksReady, locations, languages, live, errors, tasksFixed, jobs, screenshot, aiSummary, idList, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -431,8 +431,8 @@ public class AppendixSerpDayStatisticsRatesData {
     sb.append("    tasksFixed: ").append(toIndentedString(tasksFixed)).append("\n");
     sb.append("    jobs: ").append(toIndentedString(jobs)).append("\n");
     sb.append("    screenshot: ").append(toIndentedString(screenshot)).append("\n");
-    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    aiSummary: ").append(toIndentedString(aiSummary)).append("\n");
+    sb.append("    idList: ").append(toIndentedString(idList)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -466,8 +466,8 @@ public class AppendixSerpDayStatisticsRatesData {
     openapiFields.add("tasks_fixed");
     openapiFields.add("jobs");
     openapiFields.add("screenshot");
-    openapiFields.add("id_list");
     openapiFields.add("ai_summary");
+    openapiFields.add("id_list");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

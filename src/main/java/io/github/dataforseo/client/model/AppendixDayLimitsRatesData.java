@@ -30,7 +30,7 @@ import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixKeywordsDatasRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -61,11 +61,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDayLimitsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDayLimitsRatesData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
-  private AppendixSerpLimitsRatesDataInfo serp;
+  private AppendixSerpsRatesDataInfo serp;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
@@ -178,7 +178,7 @@ public class AppendixDayLimitsRatesData {
   public AppendixDayLimitsRatesData() {
   }
 
-  public AppendixDayLimitsRatesData serp(AppendixSerpLimitsRatesDataInfo serp) {
+  public AppendixDayLimitsRatesData serp(AppendixSerpsRatesDataInfo serp) {
     this.serp = serp;
     return this;
   }
@@ -188,11 +188,11 @@ public class AppendixDayLimitsRatesData {
    * @return serp
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getSerp() {
+  public AppendixSerpsRatesDataInfo getSerp() {
     return serp;
   }
 
-  public void setSerp(AppendixSerpLimitsRatesDataInfo serp) {
+  public void setSerp(AppendixSerpsRatesDataInfo serp) {
     this.serp = serp;
   }
 
@@ -914,7 +914,7 @@ public class AppendixDayLimitsRatesData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `serp`
       if (jsonObj.get("serp") != null && !jsonObj.get("serp").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("serp"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("serp"));
       }
       // validate the optional field `keywords_data`
       if (jsonObj.get("keywords_data") != null && !jsonObj.get("keywords_data").isJsonNull()) {

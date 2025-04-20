@@ -26,10 +26,10 @@ import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixJobsSerpLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixKeywordsDataDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixReviewsDayStatisticsMoneyData;
 import io.github.dataforseo.client.model.AppendixSerpDayStatisticsRatesData;
 import java.io.IOException;
 import java.util.Arrays;

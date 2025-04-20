@@ -29,7 +29,8 @@ import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixKeywordsDataDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;

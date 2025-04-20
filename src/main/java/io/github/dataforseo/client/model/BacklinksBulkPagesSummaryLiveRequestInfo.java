@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksBulkPagesSummaryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksBulkPagesSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGETS = "targets";
   @SerializedName(SERIALIZED_NAME_TARGETS)
@@ -60,6 +60,10 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_SUBDOMAINS = "include_subdomains";
   @SerializedName(SERIALIZED_NAME_INCLUDE_SUBDOMAINS)
   private Boolean includeSubdomains;
+
+  public static final String SERIALIZED_NAME_RANK_SCALE = "rank_scale";
+  @SerializedName(SERIALIZED_NAME_RANK_SCALE)
+  private String rankScale;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -111,6 +115,25 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
 
   public void setIncludeSubdomains(Boolean includeSubdomains) {
     this.includeSubdomains = includeSubdomains;
+  }
+
+
+  public BacklinksBulkPagesSummaryLiveRequestInfo rankScale(String rankScale) {
+    this.rankScale = rankScale;
+    return this;
+  }
+
+  /**
+   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values optional field you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale possible values: one_hundred — rank values are displayed on a 0–100 scale one_thousand — rank values are displayed on a 0–1000 scale default value: one_thousand learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * @return rankScale
+   */
+  @javax.annotation.Nullable
+  public String getRankScale() {
+    return rankScale;
+  }
+
+  public void setRankScale(String rankScale) {
+    this.rankScale = rankScale;
   }
 
 
@@ -189,6 +212,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
     BacklinksBulkPagesSummaryLiveRequestInfo backlinksBulkPagesSummaryLiveRequestInfo = (BacklinksBulkPagesSummaryLiveRequestInfo) o;
     return Objects.equals(this.targets, backlinksBulkPagesSummaryLiveRequestInfo.targets) &&
         Objects.equals(this.includeSubdomains, backlinksBulkPagesSummaryLiveRequestInfo.includeSubdomains) &&
+        Objects.equals(this.rankScale, backlinksBulkPagesSummaryLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, backlinksBulkPagesSummaryLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, backlinksBulkPagesSummaryLiveRequestInfo.additionalProperties);
   }
@@ -199,7 +223,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(targets, includeSubdomains, tag, additionalProperties);
+    return Objects.hash(targets, includeSubdomains, rankScale, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -215,6 +239,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
     sb.append("class BacklinksBulkPagesSummaryLiveRequestInfo {\n");
     sb.append("    targets: ").append(toIndentedString(targets)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
+    sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -241,6 +266,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("targets");
     openapiFields.add("include_subdomains");
+    openapiFields.add("rank_scale");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -263,6 +289,9 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("targets") != null && !jsonObj.get("targets").isJsonNull() && !jsonObj.get("targets").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `targets` to be an array in the JSON string but got `%s`", jsonObj.get("targets").toString()));
+      }
+      if ((jsonObj.get("rank_scale") != null && !jsonObj.get("rank_scale").isJsonNull()) && !jsonObj.get("rank_scale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `rank_scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rank_scale").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

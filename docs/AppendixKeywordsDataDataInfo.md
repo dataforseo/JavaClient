@@ -27,7 +27,7 @@
 |**keywordSuggestionsForUrl** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
 |**naver** | [**AppendixNaverKeywordsDataDataInfo**](AppendixNaverKeywordsDataDataInfo.md) |  |  [optional] |
 |**google** | [**AppendixBingKeywordsDataLimitsRatesDataInfo**](AppendixBingKeywordsDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**keywordIdeasAdsApi** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**keywordIdeasAdsApi** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 
 
 

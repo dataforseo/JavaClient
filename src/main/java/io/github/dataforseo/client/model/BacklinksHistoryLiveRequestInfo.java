@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksHistoryLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksHistoryLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -62,6 +62,10 @@ public class BacklinksHistoryLiveRequestInfo {
   public static final String SERIALIZED_NAME_DATE_TO = "date_to";
   @SerializedName(SERIALIZED_NAME_DATE_TO)
   private String dateTo;
+
+  public static final String SERIALIZED_NAME_RANK_SCALE = "rank_scale";
+  @SerializedName(SERIALIZED_NAME_RANK_SCALE)
+  private String rankScale;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -124,6 +128,25 @@ public class BacklinksHistoryLiveRequestInfo {
 
   public void setDateTo(String dateTo) {
     this.dateTo = dateTo;
+  }
+
+
+  public BacklinksHistoryLiveRequestInfo rankScale(String rankScale) {
+    this.rankScale = rankScale;
+    return this;
+  }
+
+  /**
+   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values optional field you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale possible values: one_hundred — rank values are displayed on a 0–100 scale one_thousand — rank values are displayed on a 0–1000 scale default value: one_thousand learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * @return rankScale
+   */
+  @javax.annotation.Nullable
+  public String getRankScale() {
+    return rankScale;
+  }
+
+  public void setRankScale(String rankScale) {
+    this.rankScale = rankScale;
   }
 
 
@@ -203,6 +226,7 @@ public class BacklinksHistoryLiveRequestInfo {
     return Objects.equals(this.target, backlinksHistoryLiveRequestInfo.target) &&
         Objects.equals(this.dateFrom, backlinksHistoryLiveRequestInfo.dateFrom) &&
         Objects.equals(this.dateTo, backlinksHistoryLiveRequestInfo.dateTo) &&
+        Objects.equals(this.rankScale, backlinksHistoryLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, backlinksHistoryLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, backlinksHistoryLiveRequestInfo.additionalProperties);
   }
@@ -213,7 +237,7 @@ public class BacklinksHistoryLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, dateFrom, dateTo, tag, additionalProperties);
+    return Objects.hash(target, dateFrom, dateTo, rankScale, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -230,6 +254,7 @@ public class BacklinksHistoryLiveRequestInfo {
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
+    sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -257,6 +282,7 @@ public class BacklinksHistoryLiveRequestInfo {
     openapiFields.add("target");
     openapiFields.add("date_from");
     openapiFields.add("date_to");
+    openapiFields.add("rank_scale");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -284,6 +310,9 @@ public class BacklinksHistoryLiveRequestInfo {
       }
       if ((jsonObj.get("date_to") != null && !jsonObj.get("date_to").isJsonNull()) && !jsonObj.get("date_to").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `date_to` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date_to").toString()));
+      }
+      if ((jsonObj.get("rank_scale") != null && !jsonObj.get("rank_scale").isJsonNull()) && !jsonObj.get("rank_scale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `rank_scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rank_scale").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

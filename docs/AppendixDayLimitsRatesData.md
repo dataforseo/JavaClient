@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**serp** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**serp** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 |**total** | **Double** | total amount of money deposited to your account |  [optional] |
 |**totalSerp** | **Double** |  |  [optional] |
 |**keywordsData** | [**AppendixKeywordsDatasRatesDataInfo**](AppendixKeywordsDatasRatesDataInfo.md) |  |  [optional] |

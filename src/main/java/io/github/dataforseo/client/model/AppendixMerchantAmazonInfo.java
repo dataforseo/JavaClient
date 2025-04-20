@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -49,24 +49,24 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixMerchantAmazonInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixMerchantAmazonInfo {
   public static final String SERIALIZED_NAME_ASIN = "asin";
   @SerializedName(SERIALIZED_NAME_ASIN)
-  private AppendixSerpLimitsRatesDataInfo asin;
+  private AppendixSerpsRatesDataInfo asin;
 
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private AppendixSerpLimitsRatesDataInfo products;
+  private AppendixSerpsRatesDataInfo products;
 
   public static final String SERIALIZED_NAME_SELLERS = "sellers";
   @SerializedName(SERIALIZED_NAME_SELLERS)
-  private AppendixSerpLimitsRatesDataInfo sellers;
+  private AppendixSerpsRatesDataInfo sellers;
 
   public AppendixMerchantAmazonInfo() {
   }
 
-  public AppendixMerchantAmazonInfo asin(AppendixSerpLimitsRatesDataInfo asin) {
+  public AppendixMerchantAmazonInfo asin(AppendixSerpsRatesDataInfo asin) {
     this.asin = asin;
     return this;
   }
@@ -76,16 +76,16 @@ public class AppendixMerchantAmazonInfo {
    * @return asin
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getAsin() {
+  public AppendixSerpsRatesDataInfo getAsin() {
     return asin;
   }
 
-  public void setAsin(AppendixSerpLimitsRatesDataInfo asin) {
+  public void setAsin(AppendixSerpsRatesDataInfo asin) {
     this.asin = asin;
   }
 
 
-  public AppendixMerchantAmazonInfo products(AppendixSerpLimitsRatesDataInfo products) {
+  public AppendixMerchantAmazonInfo products(AppendixSerpsRatesDataInfo products) {
     this.products = products;
     return this;
   }
@@ -95,16 +95,16 @@ public class AppendixMerchantAmazonInfo {
    * @return products
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getProducts() {
+  public AppendixSerpsRatesDataInfo getProducts() {
     return products;
   }
 
-  public void setProducts(AppendixSerpLimitsRatesDataInfo products) {
+  public void setProducts(AppendixSerpsRatesDataInfo products) {
     this.products = products;
   }
 
 
-  public AppendixMerchantAmazonInfo sellers(AppendixSerpLimitsRatesDataInfo sellers) {
+  public AppendixMerchantAmazonInfo sellers(AppendixSerpsRatesDataInfo sellers) {
     this.sellers = sellers;
     return this;
   }
@@ -114,11 +114,11 @@ public class AppendixMerchantAmazonInfo {
    * @return sellers
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getSellers() {
+  public AppendixSerpsRatesDataInfo getSellers() {
     return sellers;
   }
 
-  public void setSellers(AppendixSerpLimitsRatesDataInfo sellers) {
+  public void setSellers(AppendixSerpsRatesDataInfo sellers) {
     this.sellers = sellers;
   }
 
@@ -241,15 +241,15 @@ public class AppendixMerchantAmazonInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `asin`
       if (jsonObj.get("asin") != null && !jsonObj.get("asin").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("asin"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("asin"));
       }
       // validate the optional field `products`
       if (jsonObj.get("products") != null && !jsonObj.get("products").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("products"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("products"));
       }
       // validate the optional field `sellers`
       if (jsonObj.get("sellers") != null && !jsonObj.get("sellers").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("sellers"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("sellers"));
       }
   }
 

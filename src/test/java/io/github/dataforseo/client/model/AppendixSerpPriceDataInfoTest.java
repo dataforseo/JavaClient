@@ -39,11 +39,11 @@ public class AppendixSerpPriceDataInfoTest {
     }
 
     /**
-     * Test the property 'regular'
+     * Test the property 'html'
      */
     @Test
-    public void regularTest() {
-        // TODO: test regular
+    public void htmlTest() {
+        // TODO: test html
     }
 
     /**
@@ -55,11 +55,11 @@ public class AppendixSerpPriceDataInfoTest {
     }
 
     /**
-     * Test the property 'html'
+     * Test the property 'regular'
      */
     @Test
-    public void htmlTest() {
-        // TODO: test html
+    public void regularTest() {
+        // TODO: test regular
     }
 
 }

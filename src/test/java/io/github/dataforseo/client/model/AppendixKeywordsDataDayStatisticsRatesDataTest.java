@@ -189,11 +189,11 @@ public class AppendixKeywordsDataDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'searchVolumeHistory'
+     * Test the property 'google'
      */
     @Test
-    public void searchVolumeHistoryTest() {
-        // TODO: test searchVolumeHistory
+    public void googleTest() {
+        // TODO: test google
     }
 
     /**
@@ -205,14 +205,6 @@ public class AppendixKeywordsDataDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'jobFunctions'
-     */
-    @Test
-    public void jobFunctionsTest() {
-        // TODO: test jobFunctions
-    }
-
-    /**
      * Test the property 'idList'
      */
     @Test
@@ -221,11 +213,19 @@ public class AppendixKeywordsDataDayStatisticsRatesDataTest {
     }
 
     /**
-     * Test the property 'google'
+     * Test the property 'searchVolumeHistory'
      */
     @Test
-    public void googleTest() {
-        // TODO: test google
+    public void searchVolumeHistoryTest() {
+        // TODO: test searchVolumeHistory
+    }
+
+    /**
+     * Test the property 'jobFunctions'
+     */
+    @Test
+    public void jobFunctionsTest() {
+        // TODO: test jobFunctions
     }
 
 }

@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksAnchorsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksAnchorsLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -566,7 +566,7 @@ public class BacklinksAnchorsLiveItem {
   }
 
   /**
-   * types of referring platforms indicates referring platform types and and link count per each platform
+   * types of referring platforms indicates referring platform types and and link count per each platform possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
    * @return referringLinksPlatformTypes
    */
   @javax.annotation.Nullable

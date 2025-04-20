@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisSentimentAnalysisLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -82,6 +82,10 @@ public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
   public static final String SERIALIZED_NAME_INITIAL_DATASET_FILTERS = "initial_dataset_filters";
   @SerializedName(SERIALIZED_NAME_INITIAL_DATASET_FILTERS)
   private List<Object> initialDatasetFilters;
+
+  public static final String SERIALIZED_NAME_RANK_SCALE = "rank_scale";
+  @SerializedName(SERIALIZED_NAME_RANK_SCALE)
+  private String rankScale;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -247,6 +251,25 @@ public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
   }
 
 
+  public ContentAnalysisSentimentAnalysisLiveRequestInfo rankScale(String rankScale) {
+    this.rankScale = rankScale;
+    return this;
+  }
+
+  /**
+   * defines the scale used for calculating and displaying the rank values optional field you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale possible values: one_hundred — rank values are displayed on a 0–100 scale one_thousand — rank values are displayed on a 0–1000 scale default value: one_thousand learn more about how this parameter works in this Help Center article
+   * @return rankScale
+   */
+  @javax.annotation.Nullable
+  public String getRankScale() {
+    return rankScale;
+  }
+
+  public void setRankScale(String rankScale) {
+    this.rankScale = rankScale;
+  }
+
+
   public ContentAnalysisSentimentAnalysisLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -327,6 +350,7 @@ public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
         Objects.equals(this.positiveConnotationThreshold, contentAnalysisSentimentAnalysisLiveRequestInfo.positiveConnotationThreshold) &&
         Objects.equals(this.sentimentsConnotationThreshold, contentAnalysisSentimentAnalysisLiveRequestInfo.sentimentsConnotationThreshold) &&
         Objects.equals(this.initialDatasetFilters, contentAnalysisSentimentAnalysisLiveRequestInfo.initialDatasetFilters) &&
+        Objects.equals(this.rankScale, contentAnalysisSentimentAnalysisLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, contentAnalysisSentimentAnalysisLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, contentAnalysisSentimentAnalysisLiveRequestInfo.additionalProperties);
   }
@@ -337,7 +361,7 @@ public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, keywordFields, pageType, internalListLimit, positiveConnotationThreshold, sentimentsConnotationThreshold, initialDatasetFilters, tag, additionalProperties);
+    return Objects.hash(keyword, keywordFields, pageType, internalListLimit, positiveConnotationThreshold, sentimentsConnotationThreshold, initialDatasetFilters, rankScale, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -358,6 +382,7 @@ public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
     sb.append("    positiveConnotationThreshold: ").append(toIndentedString(positiveConnotationThreshold)).append("\n");
     sb.append("    sentimentsConnotationThreshold: ").append(toIndentedString(sentimentsConnotationThreshold)).append("\n");
     sb.append("    initialDatasetFilters: ").append(toIndentedString(initialDatasetFilters)).append("\n");
+    sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -389,6 +414,7 @@ public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
     openapiFields.add("positive_connotation_threshold");
     openapiFields.add("sentiments_connotation_threshold");
     openapiFields.add("initial_dataset_filters");
+    openapiFields.add("rank_scale");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -418,6 +444,9 @@ public class ContentAnalysisSentimentAnalysisLiveRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("initial_dataset_filters") != null && !jsonObj.get("initial_dataset_filters").isJsonNull() && !jsonObj.get("initial_dataset_filters").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `initial_dataset_filters` to be an array in the JSON string but got `%s`", jsonObj.get("initial_dataset_filters").toString()));
+      }
+      if ((jsonObj.get("rank_scale") != null && !jsonObj.get("rank_scale").isJsonNull()) && !jsonObj.get("rank_scale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `rank_scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rank_scale").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

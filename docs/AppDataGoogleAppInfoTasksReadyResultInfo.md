@@ -12,8 +12,8 @@
 |**seType** | **String** | search engine type |  [optional] |
 |**datePosted** | **String** | date when the task was posted (in the UTC format) |  [optional] |
 |**tag** | **String** | user-defined task identifier |  [optional] |
-|**endpointAdvanced** | **String** | URL for collecting the results of the Google App Info task |  [optional] |
-|**endpointHtml** | **String** | URL for collecting the results of the Google App Info HTML task if HTML tasks are not supported in the specified endpoint, the value will be null |  [optional] |
+|**endpointAdvanced** | **String** | URL for collecting the results of the Google app_info task |  [optional] |
+|**endpointHtml** | **String** | URL for collecting the results of the Google app_info HTML task if HTML tasks are not supported in the specified endpoint, the value will be null |  [optional] |
 
 
 

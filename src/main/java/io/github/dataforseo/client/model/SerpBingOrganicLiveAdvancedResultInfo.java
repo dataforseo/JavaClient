@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpBingOrganicLiveAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpBingOrganicLiveAdvancedResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -296,7 +296,7 @@ public class SerpBingOrganicLiveAdvancedResultInfo {
   }
 
   /**
-   * types of search results in SERP contains types of search results (items) found in SERP. possible item types: answer_box, carousel, events, featured_snippet, hotels_pack, images, jobs, local_pack, map, organic, paid, people_also_ask, people_also_search, questions_and_answers,recipes, related_searches, shopping, top_stories, video
+   * types of search results in SERP contains types of search results (items) found in SERP. possible item types: answer_box, carousel, events, featured_snippet, hotels_pack, images, jobs, local_pack, map, organic, paid, people_also_ask, people_also_search, questions_and_answers,recipes, related_searches, shopping, top_stories, video, ai_overview
    * @return itemTypes
    */
   @javax.annotation.Nullable

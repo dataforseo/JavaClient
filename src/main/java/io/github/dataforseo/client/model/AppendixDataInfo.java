@@ -30,7 +30,8 @@ import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixKeywordsDataDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -61,11 +62,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDataInfo {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
-  private AppendixSerpLimitsRatesDataInfo serp;
+  private AppendixSerpDataInfo serp;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
@@ -169,7 +170,7 @@ public class AppendixDataInfo {
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixSerpLimitsRatesDataInfo reviews;
+  private AppendixSerpsRatesDataInfo reviews;
 
   public static final String SERIALIZED_NAME_TOTAL_SOCIAL = "total_social";
   @SerializedName(SERIALIZED_NAME_TOTAL_SOCIAL)
@@ -177,7 +178,7 @@ public class AppendixDataInfo {
 
   public static final String SERIALIZED_NAME_SOCIAL = "social";
   @SerializedName(SERIALIZED_NAME_SOCIAL)
-  private AppendixSerpLimitsRatesDataInfo social;
+  private AppendixSerpsRatesDataInfo social;
 
   public static final String SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS = "total_traffic_analytics";
   @SerializedName(SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS)
@@ -185,12 +186,12 @@ public class AppendixDataInfo {
 
   public static final String SERIALIZED_NAME_TRAFFIC_ANALYTICS = "traffic_analytics";
   @SerializedName(SERIALIZED_NAME_TRAFFIC_ANALYTICS)
-  private AppendixSerpLimitsRatesDataInfo trafficAnalytics;
+  private AppendixSerpsRatesDataInfo trafficAnalytics;
 
   public AppendixDataInfo() {
   }
 
-  public AppendixDataInfo serp(AppendixSerpLimitsRatesDataInfo serp) {
+  public AppendixDataInfo serp(AppendixSerpDataInfo serp) {
     this.serp = serp;
     return this;
   }
@@ -200,11 +201,11 @@ public class AppendixDataInfo {
    * @return serp
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getSerp() {
+  public AppendixSerpDataInfo getSerp() {
     return serp;
   }
 
-  public void setSerp(AppendixSerpLimitsRatesDataInfo serp) {
+  public void setSerp(AppendixSerpDataInfo serp) {
     this.serp = serp;
   }
 
@@ -684,7 +685,7 @@ public class AppendixDataInfo {
   }
 
 
-  public AppendixDataInfo reviews(AppendixSerpLimitsRatesDataInfo reviews) {
+  public AppendixDataInfo reviews(AppendixSerpsRatesDataInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -694,11 +695,11 @@ public class AppendixDataInfo {
    * @return reviews
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getReviews() {
+  public AppendixSerpsRatesDataInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixSerpLimitsRatesDataInfo reviews) {
+  public void setReviews(AppendixSerpsRatesDataInfo reviews) {
     this.reviews = reviews;
   }
 
@@ -722,7 +723,7 @@ public class AppendixDataInfo {
   }
 
 
-  public AppendixDataInfo social(AppendixSerpLimitsRatesDataInfo social) {
+  public AppendixDataInfo social(AppendixSerpsRatesDataInfo social) {
     this.social = social;
     return this;
   }
@@ -732,11 +733,11 @@ public class AppendixDataInfo {
    * @return social
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getSocial() {
+  public AppendixSerpsRatesDataInfo getSocial() {
     return social;
   }
 
-  public void setSocial(AppendixSerpLimitsRatesDataInfo social) {
+  public void setSocial(AppendixSerpsRatesDataInfo social) {
     this.social = social;
   }
 
@@ -760,7 +761,7 @@ public class AppendixDataInfo {
   }
 
 
-  public AppendixDataInfo trafficAnalytics(AppendixSerpLimitsRatesDataInfo trafficAnalytics) {
+  public AppendixDataInfo trafficAnalytics(AppendixSerpsRatesDataInfo trafficAnalytics) {
     this.trafficAnalytics = trafficAnalytics;
     return this;
   }
@@ -770,11 +771,11 @@ public class AppendixDataInfo {
    * @return trafficAnalytics
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getTrafficAnalytics() {
+  public AppendixSerpsRatesDataInfo getTrafficAnalytics() {
     return trafficAnalytics;
   }
 
-  public void setTrafficAnalytics(AppendixSerpLimitsRatesDataInfo trafficAnalytics) {
+  public void setTrafficAnalytics(AppendixSerpsRatesDataInfo trafficAnalytics) {
     this.trafficAnalytics = trafficAnalytics;
   }
 
@@ -992,7 +993,7 @@ public class AppendixDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `serp`
       if (jsonObj.get("serp") != null && !jsonObj.get("serp").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("serp"));
+        AppendixSerpDataInfo.validateJsonElement(jsonObj.get("serp"));
       }
       // validate the optional field `keywords_data`
       if (jsonObj.get("keywords_data") != null && !jsonObj.get("keywords_data").isJsonNull()) {
@@ -1040,15 +1041,15 @@ public class AppendixDataInfo {
       }
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
       }
       // validate the optional field `social`
       if (jsonObj.get("social") != null && !jsonObj.get("social").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("social"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("social"));
       }
       // validate the optional field `traffic_analytics`
       if (jsonObj.get("traffic_analytics") != null && !jsonObj.get("traffic_analytics").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("traffic_analytics"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("traffic_analytics"));
       }
   }
 

@@ -99,6 +99,14 @@ public class ContentAnalysisSummaryLiveRequestInfoTest {
     }
 
     /**
+     * Test the property 'rankScale'
+     */
+    @Test
+    public void rankScaleTest() {
+        // TODO: test rankScale
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

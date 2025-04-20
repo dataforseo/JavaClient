@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * FeaturedSnippetDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -273,7 +273,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
   /**
-   * relative URL in SERP
+   * URL in SERP that does not specify the HTTPs protocol and domain name
    * @return relativeUrl
    */
   @javax.annotation.Nullable
@@ -292,7 +292,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
   /**
-   * estimated traffic volume estimated organic monthly traffic to the domain; calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword learn more about how the metric is calculated in this help center article
+   * estimated traffic volume estimated paid monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
    * @return etv
    */
   @javax.annotation.Nullable
@@ -311,7 +311,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid represents the estimated monthly cost of running ads (USD) for the returned keyword; the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Bing Search learn more about how the metric is calculated in this help center article
+   * estimated cost of monthly search traffic represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable

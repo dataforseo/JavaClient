@@ -19,7 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixDayStatisticsMoneyData;
-import io.github.dataforseo.client.model.AppendixMinuteStatisticsDataInfo;
+import io.github.dataforseo.client.model.AppendixMinuteStatisticsMoneyData;
 import java.io.IOException;
 import java.util.Arrays;
 import org.junit.jupiter.api.Disabled;

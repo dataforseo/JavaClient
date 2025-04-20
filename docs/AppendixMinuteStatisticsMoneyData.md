@@ -7,14 +7,14 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**serp** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**serp** | [**AppendixSerpDayStatisticsRatesData**](AppendixSerpDayStatisticsRatesData.md) |  |  [optional] |
 |**total** | **Double** | total amount of money deposited to your account |  [optional] |
 |**totalSerp** | **Double** |  |  [optional] |
-|**keywordsData** | [**AppendixKeywordsDataDayStatisticsRatesData**](AppendixKeywordsDataDayStatisticsRatesData.md) |  |  [optional] |
+|**keywordsData** | [**AppendixKeywordsDatasRatesDataInfo**](AppendixKeywordsDatasRatesDataInfo.md) |  |  [optional] |
 |**totalKeywordsData** | **Double** |  |  [optional] |
-|**appendix** | [**AppendixAppendixsRatesDataInfo**](AppendixAppendixsRatesDataInfo.md) |  |  [optional] |
+|**appendix** | [**AppendixAppendixDaysRatesDataInfo**](AppendixAppendixDaysRatesDataInfo.md) |  |  [optional] |
 |**totalAppendix** | **Double** |  |  [optional] |
-|**dataforseoLabs** | [**AppendixDataforseoLabsLimitsRatesDataInfo**](AppendixDataforseoLabsLimitsRatesDataInfo.md) |  |  [optional] |
+|**dataforseoLabs** | [**AppendixDataforseoLabsDayStatisticsRatesData**](AppendixDataforseoLabsDayStatisticsRatesData.md) |  |  [optional] |
 |**totalDataforseoLabs** | **Double** |  |  [optional] |
 |**domainAnalytics** | [**AppendixDomainAnalyticsLimitsRatesDataInfo**](AppendixDomainAnalyticsLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalDomainAnalytics** | **Double** |  |  [optional] |
@@ -22,7 +22,7 @@
 |**totalMerchant** | **Double** |  |  [optional] |
 |**onPage** | [**AppendixOnPageLimitsRatesDataInfo**](AppendixOnPageLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalOnPage** | **Double** |  |  [optional] |
-|**businessData** | [**AppendixBusinessDataStatisticsMoneyDataInfo**](AppendixBusinessDataStatisticsMoneyDataInfo.md) |  |  [optional] |
+|**businessData** | [**AppendixBusinessDataLimitsRatesDataInfo**](AppendixBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalBusinessData** | **Double** |  |  [optional] |
 |**backlinks** | [**AppendixBacklinksLimitsRatesDataInfo**](AppendixBacklinksLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalBacklinks** | **Double** |  |  [optional] |

@@ -19,18 +19,18 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppendixAppDataDayStatisticsRatesData;
-import io.github.dataforseo.client.model.AppendixAppendixsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixAppDataLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixAppendixDaysRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixBacklinksLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixBusinessDataStatisticsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixBusinessDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixDataforseoLabsLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixDataforseoLabsDayStatisticsRatesData;
 import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixKeywordsDatasRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpLimitsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -61,11 +61,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixMinuteStatisticsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixMinuteStatisticsRatesData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
-  private AppendixSerpLimitsRatesDataInfo serp;
+  private AppendixSerpsRatesDataInfo serp;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
@@ -85,7 +85,7 @@ public class AppendixMinuteStatisticsRatesData {
 
   public static final String SERIALIZED_NAME_APPENDIX = "appendix";
   @SerializedName(SERIALIZED_NAME_APPENDIX)
-  private AppendixAppendixsRatesDataInfo appendix;
+  private AppendixAppendixDaysRatesDataInfo appendix;
 
   public static final String SERIALIZED_NAME_TOTAL_APPENDIX = "total_appendix";
   @SerializedName(SERIALIZED_NAME_TOTAL_APPENDIX)
@@ -93,7 +93,7 @@ public class AppendixMinuteStatisticsRatesData {
 
   public static final String SERIALIZED_NAME_DATAFORSEO_LABS = "dataforseo_labs";
   @SerializedName(SERIALIZED_NAME_DATAFORSEO_LABS)
-  private AppendixDataforseoLabsLimitsRatesDataInfo dataforseoLabs;
+  private AppendixDataforseoLabsDayStatisticsRatesData dataforseoLabs;
 
   public static final String SERIALIZED_NAME_TOTAL_DATAFORSEO_LABS = "total_dataforseo_labs";
   @SerializedName(SERIALIZED_NAME_TOTAL_DATAFORSEO_LABS)
@@ -125,7 +125,7 @@ public class AppendixMinuteStatisticsRatesData {
 
   public static final String SERIALIZED_NAME_BUSINESS_DATA = "business_data";
   @SerializedName(SERIALIZED_NAME_BUSINESS_DATA)
-  private AppendixBusinessDataStatisticsRatesDataInfo businessData;
+  private AppendixBusinessDataLimitsRatesDataInfo businessData;
 
   public static final String SERIALIZED_NAME_TOTAL_BUSINESS_DATA = "total_business_data";
   @SerializedName(SERIALIZED_NAME_TOTAL_BUSINESS_DATA)
@@ -141,7 +141,7 @@ public class AppendixMinuteStatisticsRatesData {
 
   public static final String SERIALIZED_NAME_APP_DATA = "app_data";
   @SerializedName(SERIALIZED_NAME_APP_DATA)
-  private AppendixAppDataDayStatisticsRatesData appData;
+  private AppendixAppDataLimitsRatesDataInfo appData;
 
   public static final String SERIALIZED_NAME_TOTAL_APP_DATA = "total_app_data";
   @SerializedName(SERIALIZED_NAME_TOTAL_APP_DATA)
@@ -170,7 +170,7 @@ public class AppendixMinuteStatisticsRatesData {
   public AppendixMinuteStatisticsRatesData() {
   }
 
-  public AppendixMinuteStatisticsRatesData serp(AppendixSerpLimitsRatesDataInfo serp) {
+  public AppendixMinuteStatisticsRatesData serp(AppendixSerpsRatesDataInfo serp) {
     this.serp = serp;
     return this;
   }
@@ -180,11 +180,11 @@ public class AppendixMinuteStatisticsRatesData {
    * @return serp
    */
   @javax.annotation.Nullable
-  public AppendixSerpLimitsRatesDataInfo getSerp() {
+  public AppendixSerpsRatesDataInfo getSerp() {
     return serp;
   }
 
-  public void setSerp(AppendixSerpLimitsRatesDataInfo serp) {
+  public void setSerp(AppendixSerpsRatesDataInfo serp) {
     this.serp = serp;
   }
 
@@ -265,7 +265,7 @@ public class AppendixMinuteStatisticsRatesData {
   }
 
 
-  public AppendixMinuteStatisticsRatesData appendix(AppendixAppendixsRatesDataInfo appendix) {
+  public AppendixMinuteStatisticsRatesData appendix(AppendixAppendixDaysRatesDataInfo appendix) {
     this.appendix = appendix;
     return this;
   }
@@ -275,11 +275,11 @@ public class AppendixMinuteStatisticsRatesData {
    * @return appendix
    */
   @javax.annotation.Nullable
-  public AppendixAppendixsRatesDataInfo getAppendix() {
+  public AppendixAppendixDaysRatesDataInfo getAppendix() {
     return appendix;
   }
 
-  public void setAppendix(AppendixAppendixsRatesDataInfo appendix) {
+  public void setAppendix(AppendixAppendixDaysRatesDataInfo appendix) {
     this.appendix = appendix;
   }
 
@@ -303,7 +303,7 @@ public class AppendixMinuteStatisticsRatesData {
   }
 
 
-  public AppendixMinuteStatisticsRatesData dataforseoLabs(AppendixDataforseoLabsLimitsRatesDataInfo dataforseoLabs) {
+  public AppendixMinuteStatisticsRatesData dataforseoLabs(AppendixDataforseoLabsDayStatisticsRatesData dataforseoLabs) {
     this.dataforseoLabs = dataforseoLabs;
     return this;
   }
@@ -313,11 +313,11 @@ public class AppendixMinuteStatisticsRatesData {
    * @return dataforseoLabs
    */
   @javax.annotation.Nullable
-  public AppendixDataforseoLabsLimitsRatesDataInfo getDataforseoLabs() {
+  public AppendixDataforseoLabsDayStatisticsRatesData getDataforseoLabs() {
     return dataforseoLabs;
   }
 
-  public void setDataforseoLabs(AppendixDataforseoLabsLimitsRatesDataInfo dataforseoLabs) {
+  public void setDataforseoLabs(AppendixDataforseoLabsDayStatisticsRatesData dataforseoLabs) {
     this.dataforseoLabs = dataforseoLabs;
   }
 
@@ -455,7 +455,7 @@ public class AppendixMinuteStatisticsRatesData {
   }
 
 
-  public AppendixMinuteStatisticsRatesData businessData(AppendixBusinessDataStatisticsRatesDataInfo businessData) {
+  public AppendixMinuteStatisticsRatesData businessData(AppendixBusinessDataLimitsRatesDataInfo businessData) {
     this.businessData = businessData;
     return this;
   }
@@ -465,11 +465,11 @@ public class AppendixMinuteStatisticsRatesData {
    * @return businessData
    */
   @javax.annotation.Nullable
-  public AppendixBusinessDataStatisticsRatesDataInfo getBusinessData() {
+  public AppendixBusinessDataLimitsRatesDataInfo getBusinessData() {
     return businessData;
   }
 
-  public void setBusinessData(AppendixBusinessDataStatisticsRatesDataInfo businessData) {
+  public void setBusinessData(AppendixBusinessDataLimitsRatesDataInfo businessData) {
     this.businessData = businessData;
   }
 
@@ -531,7 +531,7 @@ public class AppendixMinuteStatisticsRatesData {
   }
 
 
-  public AppendixMinuteStatisticsRatesData appData(AppendixAppDataDayStatisticsRatesData appData) {
+  public AppendixMinuteStatisticsRatesData appData(AppendixAppDataLimitsRatesDataInfo appData) {
     this.appData = appData;
     return this;
   }
@@ -541,11 +541,11 @@ public class AppendixMinuteStatisticsRatesData {
    * @return appData
    */
   @javax.annotation.Nullable
-  public AppendixAppDataDayStatisticsRatesData getAppData() {
+  public AppendixAppDataLimitsRatesDataInfo getAppData() {
     return appData;
   }
 
-  public void setAppData(AppendixAppDataDayStatisticsRatesData appData) {
+  public void setAppData(AppendixAppDataLimitsRatesDataInfo appData) {
     this.appData = appData;
   }
 
@@ -862,7 +862,7 @@ public class AppendixMinuteStatisticsRatesData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `serp`
       if (jsonObj.get("serp") != null && !jsonObj.get("serp").isJsonNull()) {
-        AppendixSerpLimitsRatesDataInfo.validateJsonElement(jsonObj.get("serp"));
+        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("serp"));
       }
       // validate the optional field `keywords_data`
       if (jsonObj.get("keywords_data") != null && !jsonObj.get("keywords_data").isJsonNull()) {
@@ -870,11 +870,11 @@ public class AppendixMinuteStatisticsRatesData {
       }
       // validate the optional field `appendix`
       if (jsonObj.get("appendix") != null && !jsonObj.get("appendix").isJsonNull()) {
-        AppendixAppendixsRatesDataInfo.validateJsonElement(jsonObj.get("appendix"));
+        AppendixAppendixDaysRatesDataInfo.validateJsonElement(jsonObj.get("appendix"));
       }
       // validate the optional field `dataforseo_labs`
       if (jsonObj.get("dataforseo_labs") != null && !jsonObj.get("dataforseo_labs").isJsonNull()) {
-        AppendixDataforseoLabsLimitsRatesDataInfo.validateJsonElement(jsonObj.get("dataforseo_labs"));
+        AppendixDataforseoLabsDayStatisticsRatesData.validateJsonElement(jsonObj.get("dataforseo_labs"));
       }
       // validate the optional field `domain_analytics`
       if (jsonObj.get("domain_analytics") != null && !jsonObj.get("domain_analytics").isJsonNull()) {
@@ -890,7 +890,7 @@ public class AppendixMinuteStatisticsRatesData {
       }
       // validate the optional field `business_data`
       if (jsonObj.get("business_data") != null && !jsonObj.get("business_data").isJsonNull()) {
-        AppendixBusinessDataStatisticsRatesDataInfo.validateJsonElement(jsonObj.get("business_data"));
+        AppendixBusinessDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("business_data"));
       }
       // validate the optional field `backlinks`
       if (jsonObj.get("backlinks") != null && !jsonObj.get("backlinks").isJsonNull()) {
@@ -898,7 +898,7 @@ public class AppendixMinuteStatisticsRatesData {
       }
       // validate the optional field `app_data`
       if (jsonObj.get("app_data") != null && !jsonObj.get("app_data").isJsonNull()) {
-        AppendixAppDataDayStatisticsRatesData.validateJsonElement(jsonObj.get("app_data"));
+        AppendixAppDataLimitsRatesDataInfo.validateJsonElement(jsonObj.get("app_data"));
       }
       // validate the optional field `content_analysis`
       if (jsonObj.get("content_analysis") != null && !jsonObj.get("content_analysis").isJsonNull()) {

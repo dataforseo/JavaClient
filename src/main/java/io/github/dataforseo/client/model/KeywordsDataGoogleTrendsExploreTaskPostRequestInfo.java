@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleTrendsExploreTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleTrendsExploreTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -126,7 +126,7 @@ public class KeywordsDataGoogleTrendsExploreTaskPostRequestInfo {
   }
 
   /**
-   * keywords required field the maximum number of keywords you can specify: 5 the minimum number of symbols must be greater than 1 comma characters (,) in the specified keywords will be unset and ignored Note: keywords cannot consist of a combination of the following characters: &lt; &gt; | \\ \&quot; - + &#x3D; ~ ! : * ( ) [ ] { } Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywords required field the maximum number of keywords you can specify: 5 the maximum number of characters you can specify in a keyword: 100 the minimum number of characters must be greater than 1 comma characters (,) in the specified keywords will be unset and ignored Note: keywords cannot consist of a combination of the following characters: &lt; &gt; | \\ \&quot; - + &#x3D; ~ ! : * ( ) [ ] { } Note: to obtain google_trends_topics_list and google_trends_queries_list items, specify no more than 1 keyword learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable

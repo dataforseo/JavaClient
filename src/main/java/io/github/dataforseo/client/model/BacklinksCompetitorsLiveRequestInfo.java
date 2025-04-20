@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksCompetitorsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-03-24T10:03:11.930414100+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksCompetitorsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -84,6 +84,10 @@ public class BacklinksCompetitorsLiveRequestInfo {
   public static final String SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS = "exclude_internal_backlinks";
   @SerializedName(SERIALIZED_NAME_EXCLUDE_INTERNAL_BACKLINKS)
   private Boolean excludeInternalBacklinks;
+
+  public static final String SERIALIZED_NAME_RANK_SCALE = "rank_scale";
+  @SerializedName(SERIALIZED_NAME_RANK_SCALE)
+  private String rankScale;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -260,6 +264,25 @@ public class BacklinksCompetitorsLiveRequestInfo {
   }
 
 
+  public BacklinksCompetitorsLiveRequestInfo rankScale(String rankScale) {
+    this.rankScale = rankScale;
+    return this;
+  }
+
+  /**
+   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values optional field you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale possible values: one_hundred — rank values are displayed on a 0–100 scale one_thousand — rank values are displayed on a 0–1000 scale default value: one_thousand learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * @return rankScale
+   */
+  @javax.annotation.Nullable
+  public String getRankScale() {
+    return rankScale;
+  }
+
+  public void setRankScale(String rankScale) {
+    this.rankScale = rankScale;
+  }
+
+
   public BacklinksCompetitorsLiveRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -341,6 +364,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
         Objects.equals(this.mainDomain, backlinksCompetitorsLiveRequestInfo.mainDomain) &&
         Objects.equals(this.excludeLargeDomains, backlinksCompetitorsLiveRequestInfo.excludeLargeDomains) &&
         Objects.equals(this.excludeInternalBacklinks, backlinksCompetitorsLiveRequestInfo.excludeInternalBacklinks) &&
+        Objects.equals(this.rankScale, backlinksCompetitorsLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, backlinksCompetitorsLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, backlinksCompetitorsLiveRequestInfo.additionalProperties);
   }
@@ -351,7 +375,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, limit, offset, filters, orderBy, mainDomain, excludeLargeDomains, excludeInternalBacklinks, tag, additionalProperties);
+    return Objects.hash(target, limit, offset, filters, orderBy, mainDomain, excludeLargeDomains, excludeInternalBacklinks, rankScale, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -373,6 +397,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
     sb.append("    mainDomain: ").append(toIndentedString(mainDomain)).append("\n");
     sb.append("    excludeLargeDomains: ").append(toIndentedString(excludeLargeDomains)).append("\n");
     sb.append("    excludeInternalBacklinks: ").append(toIndentedString(excludeInternalBacklinks)).append("\n");
+    sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -405,6 +430,7 @@ public class BacklinksCompetitorsLiveRequestInfo {
     openapiFields.add("main_domain");
     openapiFields.add("exclude_large_domains");
     openapiFields.add("exclude_internal_backlinks");
+    openapiFields.add("rank_scale");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -434,6 +460,9 @@ public class BacklinksCompetitorsLiveRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("order_by") != null && !jsonObj.get("order_by").isJsonNull() && !jsonObj.get("order_by").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `order_by` to be an array in the JSON string but got `%s`", jsonObj.get("order_by").toString()));
+      }
+      if ((jsonObj.get("rank_scale") != null && !jsonObj.get("rank_scale").isJsonNull()) && !jsonObj.get("rank_scale").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `rank_scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rank_scale").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

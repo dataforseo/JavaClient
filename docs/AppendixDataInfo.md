@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**serp** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**serp** | [**AppendixSerpDataInfo**](AppendixSerpDataInfo.md) |  |  [optional] |
 |**total** | **Double** | total amount of money deposited to your account |  [optional] |
 |**totalSerp** | **Double** |  |  [optional] |
 |**keywordsData** | [**AppendixKeywordsDataDataInfo**](AppendixKeywordsDataDataInfo.md) |  |  [optional] |
@@ -33,11 +33,11 @@
 |**contentGeneration** | [**AppendixContentGenerationLimitsRatesDataInfo**](AppendixContentGenerationLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalContentGeneration** | **Double** |  |  [optional] |
 |**totalReviews** | **Double** |  |  [optional] |
-|**reviews** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**reviews** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 |**totalSocial** | **Double** |  |  [optional] |
-|**social** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**social** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 |**totalTrafficAnalytics** | **Double** |  |  [optional] |
-|**trafficAnalytics** | [**AppendixSerpLimitsRatesDataInfo**](AppendixSerpLimitsRatesDataInfo.md) |  |  [optional] |
+|**trafficAnalytics** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 
 
 

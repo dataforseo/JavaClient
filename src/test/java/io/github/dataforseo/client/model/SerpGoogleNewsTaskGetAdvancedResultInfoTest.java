@@ -116,6 +116,14 @@ public class SerpGoogleNewsTaskGetAdvancedResultInfoTest {
     }
 
     /**
+     * Test the property 'includesNonNewsSearchResults'
+     */
+    @Test
+    public void includesNonNewsSearchResultsTest() {
+        // TODO: test includesNonNewsSearchResults
+    }
+
+    /**
      * Test the property 'itemTypes'
      */
     @Test

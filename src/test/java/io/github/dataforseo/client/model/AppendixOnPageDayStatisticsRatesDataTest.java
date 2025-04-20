@@ -208,6 +208,14 @@ public class AppendixOnPageDayStatisticsRatesDataTest {
     }
 
     /**
+     * Test the property 'availableFilters'
+     */
+    @Test
+    public void availableFiltersTest() {
+        // TODO: test availableFilters
+    }
+
+    /**
      * Test the property 'idList'
      */
     @Test
@@ -221,14 +229,6 @@ public class AppendixOnPageDayStatisticsRatesDataTest {
     @Test
     public void forceStopTest() {
         // TODO: test forceStop
-    }
-
-    /**
-     * Test the property 'availableFilters'
-     */
-    @Test
-    public void availableFiltersTest() {
-        // TODO: test availableFilters
     }
 
 }
