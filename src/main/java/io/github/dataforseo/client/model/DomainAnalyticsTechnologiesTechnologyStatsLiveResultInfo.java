@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.DomainAnalyticsTechnologiesTechnologyStatsLiveItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo {
   public static final String SERIALIZED_NAME_TECHNOLOGY = "technology";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGY)
@@ -68,7 +69,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -134,7 +135,7 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo {
   }
 
 
-  public DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo itemsCount(Long itemsCount) {
+  public DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -144,11 +145,11 @@ public class DomainAnalyticsTechnologiesTechnologyStatsLiveResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 

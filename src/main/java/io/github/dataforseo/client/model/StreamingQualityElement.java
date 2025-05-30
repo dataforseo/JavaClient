@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * StreamingQualityElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class StreamingQualityElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,15 +62,15 @@ public class StreamingQualityElement {
 
   public static final String SERIALIZED_NAME_WIDTH = "width";
   @SerializedName(SERIALIZED_NAME_WIDTH)
-  private Long width;
+  private BigDecimal width;
 
   public static final String SERIALIZED_NAME_HEIGHT = "height";
   @SerializedName(SERIALIZED_NAME_HEIGHT)
-  private Integer height;
+  private BigDecimal height;
 
   public static final String SERIALIZED_NAME_BITRATE = "bitrate";
   @SerializedName(SERIALIZED_NAME_BITRATE)
-  private Integer bitrate;
+  private BigDecimal bitrate;
 
   public static final String SERIALIZED_NAME_MIME_TYPE = "mime_type";
   @SerializedName(SERIALIZED_NAME_MIME_TYPE)
@@ -77,7 +78,7 @@ public class StreamingQualityElement {
 
   public static final String SERIALIZED_NAME_FPS = "fps";
   @SerializedName(SERIALIZED_NAME_FPS)
-  private Integer fps;
+  private BigDecimal fps;
 
   public StreamingQualityElement() {
   }
@@ -120,7 +121,7 @@ public class StreamingQualityElement {
   }
 
 
-  public StreamingQualityElement width(Long width) {
+  public StreamingQualityElement width(BigDecimal width) {
     this.width = width;
     return this;
   }
@@ -130,16 +131,16 @@ public class StreamingQualityElement {
    * @return width
    */
   @javax.annotation.Nullable
-  public Long getWidth() {
+  public BigDecimal getWidth() {
     return width;
   }
 
-  public void setWidth(Long width) {
+  public void setWidth(BigDecimal width) {
     this.width = width;
   }
 
 
-  public StreamingQualityElement height(Integer height) {
+  public StreamingQualityElement height(BigDecimal height) {
     this.height = height;
     return this;
   }
@@ -149,16 +150,16 @@ public class StreamingQualityElement {
    * @return height
    */
   @javax.annotation.Nullable
-  public Integer getHeight() {
+  public BigDecimal getHeight() {
     return height;
   }
 
-  public void setHeight(Integer height) {
+  public void setHeight(BigDecimal height) {
     this.height = height;
   }
 
 
-  public StreamingQualityElement bitrate(Integer bitrate) {
+  public StreamingQualityElement bitrate(BigDecimal bitrate) {
     this.bitrate = bitrate;
     return this;
   }
@@ -168,11 +169,11 @@ public class StreamingQualityElement {
    * @return bitrate
    */
   @javax.annotation.Nullable
-  public Integer getBitrate() {
+  public BigDecimal getBitrate() {
     return bitrate;
   }
 
-  public void setBitrate(Integer bitrate) {
+  public void setBitrate(BigDecimal bitrate) {
     this.bitrate = bitrate;
   }
 
@@ -196,7 +197,7 @@ public class StreamingQualityElement {
   }
 
 
-  public StreamingQualityElement fps(Integer fps) {
+  public StreamingQualityElement fps(BigDecimal fps) {
     this.fps = fps;
     return this;
   }
@@ -206,11 +207,11 @@ public class StreamingQualityElement {
    * @return fps
    */
   @javax.annotation.Nullable
-  public Integer getFps() {
+  public BigDecimal getFps() {
     return fps;
   }
 
-  public void setFps(Integer fps) {
+  public void setFps(BigDecimal fps) {
     this.fps = fps;
   }
 

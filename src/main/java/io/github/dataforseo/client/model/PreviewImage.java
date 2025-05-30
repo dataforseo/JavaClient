@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * PreviewImage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PreviewImage {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -57,11 +58,11 @@ public class PreviewImage {
 
   public static final String SERIALIZED_NAME_HEIGHT = "height";
   @SerializedName(SERIALIZED_NAME_HEIGHT)
-  private Integer height;
+  private BigDecimal height;
 
   public static final String SERIALIZED_NAME_WIDTH = "width";
   @SerializedName(SERIALIZED_NAME_WIDTH)
-  private Long width;
+  private BigDecimal width;
 
   public PreviewImage() {
   }
@@ -85,7 +86,7 @@ public class PreviewImage {
   }
 
 
-  public PreviewImage height(Integer height) {
+  public PreviewImage height(BigDecimal height) {
     this.height = height;
     return this;
   }
@@ -95,16 +96,16 @@ public class PreviewImage {
    * @return height
    */
   @javax.annotation.Nullable
-  public Integer getHeight() {
+  public BigDecimal getHeight() {
     return height;
   }
 
-  public void setHeight(Integer height) {
+  public void setHeight(BigDecimal height) {
     this.height = height;
   }
 
 
-  public PreviewImage width(Long width) {
+  public PreviewImage width(BigDecimal width) {
     this.width = width;
     return this;
   }
@@ -114,11 +115,11 @@ public class PreviewImage {
    * @return width
    */
   @javax.annotation.Nullable
-  public Long getWidth() {
+  public BigDecimal getWidth() {
     return width;
   }
 
-  public void setWidth(Long width) {
+  public void setWidth(BigDecimal width) {
     this.width = width;
   }
 

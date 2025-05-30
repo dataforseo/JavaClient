@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.TargetInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksSummaryLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksSummaryLiveResultInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -68,19 +69,19 @@ public class BacklinksSummaryLiveResultInfo {
 
   public static final String SERIALIZED_NAME_RANK = "rank";
   @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
+  private BigDecimal rank;
 
   public static final String SERIALIZED_NAME_BACKLINKS = "backlinks";
   @SerializedName(SERIALIZED_NAME_BACKLINKS)
-  private Long backlinks;
+  private BigDecimal backlinks;
 
   public static final String SERIALIZED_NAME_BACKLINKS_SPAM_SCORE = "backlinks_spam_score";
   @SerializedName(SERIALIZED_NAME_BACKLINKS_SPAM_SCORE)
-  private Long backlinksSpamScore;
+  private BigDecimal backlinksSpamScore;
 
   public static final String SERIALIZED_NAME_CRAWLED_PAGES = "crawled_pages";
   @SerializedName(SERIALIZED_NAME_CRAWLED_PAGES)
-  private Integer crawledPages;
+  private BigDecimal crawledPages;
 
   public static final String SERIALIZED_NAME_INFO = "info";
   @SerializedName(SERIALIZED_NAME_INFO)
@@ -88,31 +89,31 @@ public class BacklinksSummaryLiveResultInfo {
 
   public static final String SERIALIZED_NAME_INTERNAL_LINKS_COUNT = "internal_links_count";
   @SerializedName(SERIALIZED_NAME_INTERNAL_LINKS_COUNT)
-  private Long internalLinksCount;
+  private BigDecimal internalLinksCount;
 
   public static final String SERIALIZED_NAME_EXTERNAL_LINKS_COUNT = "external_links_count";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_LINKS_COUNT)
-  private Long externalLinksCount;
+  private BigDecimal externalLinksCount;
 
   public static final String SERIALIZED_NAME_BROKEN_BACKLINKS = "broken_backlinks";
   @SerializedName(SERIALIZED_NAME_BROKEN_BACKLINKS)
-  private Long brokenBacklinks;
+  private BigDecimal brokenBacklinks;
 
   public static final String SERIALIZED_NAME_BROKEN_PAGES = "broken_pages";
   @SerializedName(SERIALIZED_NAME_BROKEN_PAGES)
-  private Integer brokenPages;
+  private BigDecimal brokenPages;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS = "referring_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS)
-  private Long referringDomains;
+  private BigDecimal referringDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW = "referring_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW)
-  private Long referringDomainsNofollow;
+  private BigDecimal referringDomainsNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS = "referring_main_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS)
-  private Long referringMainDomains;
+  private BigDecimal referringMainDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW = "referring_main_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW)
@@ -120,15 +121,19 @@ public class BacklinksSummaryLiveResultInfo {
 
   public static final String SERIALIZED_NAME_REFERRING_IPS = "referring_ips";
   @SerializedName(SERIALIZED_NAME_REFERRING_IPS)
-  private Long referringIps;
+  private BigDecimal referringIps;
 
   public static final String SERIALIZED_NAME_REFERRING_SUBNETS = "referring_subnets";
   @SerializedName(SERIALIZED_NAME_REFERRING_SUBNETS)
-  private Long referringSubnets;
+  private BigDecimal referringSubnets;
 
   public static final String SERIALIZED_NAME_REFERRING_PAGES = "referring_pages";
   @SerializedName(SERIALIZED_NAME_REFERRING_PAGES)
-  private Long referringPages;
+  private BigDecimal referringPages;
+
+  public static final String SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW = "referring_pages_nofollow";
+  @SerializedName(SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW)
+  private BigDecimal referringPagesNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_LINKS_TLD = "referring_links_tld";
   @SerializedName(SERIALIZED_NAME_REFERRING_LINKS_TLD)
@@ -153,10 +158,6 @@ public class BacklinksSummaryLiveResultInfo {
   public static final String SERIALIZED_NAME_REFERRING_LINKS_COUNTRIES = "referring_links_countries";
   @SerializedName(SERIALIZED_NAME_REFERRING_LINKS_COUNTRIES)
   private Map<String, Long> referringLinksCountries;
-
-  public static final String SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW = "referring_pages_nofollow";
-  @SerializedName(SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW)
-  private Long referringPagesNofollow;
 
   public BacklinksSummaryLiveResultInfo() {
   }
@@ -218,7 +219,7 @@ public class BacklinksSummaryLiveResultInfo {
   }
 
 
-  public BacklinksSummaryLiveResultInfo rank(Integer rank) {
+  public BacklinksSummaryLiveResultInfo rank(BigDecimal rank) {
     this.rank = rank;
     return this;
   }
@@ -228,16 +229,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getRank() {
+  public BigDecimal getRank() {
     return rank;
   }
 
-  public void setRank(Integer rank) {
+  public void setRank(BigDecimal rank) {
     this.rank = rank;
   }
 
 
-  public BacklinksSummaryLiveResultInfo backlinks(Long backlinks) {
+  public BacklinksSummaryLiveResultInfo backlinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
     return this;
   }
@@ -247,16 +248,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return backlinks
    */
   @javax.annotation.Nullable
-  public Long getBacklinks() {
+  public BigDecimal getBacklinks() {
     return backlinks;
   }
 
-  public void setBacklinks(Long backlinks) {
+  public void setBacklinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
   }
 
 
-  public BacklinksSummaryLiveResultInfo backlinksSpamScore(Long backlinksSpamScore) {
+  public BacklinksSummaryLiveResultInfo backlinksSpamScore(BigDecimal backlinksSpamScore) {
     this.backlinksSpamScore = backlinksSpamScore;
     return this;
   }
@@ -266,16 +267,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return backlinksSpamScore
    */
   @javax.annotation.Nullable
-  public Long getBacklinksSpamScore() {
+  public BigDecimal getBacklinksSpamScore() {
     return backlinksSpamScore;
   }
 
-  public void setBacklinksSpamScore(Long backlinksSpamScore) {
+  public void setBacklinksSpamScore(BigDecimal backlinksSpamScore) {
     this.backlinksSpamScore = backlinksSpamScore;
   }
 
 
-  public BacklinksSummaryLiveResultInfo crawledPages(Integer crawledPages) {
+  public BacklinksSummaryLiveResultInfo crawledPages(BigDecimal crawledPages) {
     this.crawledPages = crawledPages;
     return this;
   }
@@ -285,11 +286,11 @@ public class BacklinksSummaryLiveResultInfo {
    * @return crawledPages
    */
   @javax.annotation.Nullable
-  public Integer getCrawledPages() {
+  public BigDecimal getCrawledPages() {
     return crawledPages;
   }
 
-  public void setCrawledPages(Integer crawledPages) {
+  public void setCrawledPages(BigDecimal crawledPages) {
     this.crawledPages = crawledPages;
   }
 
@@ -313,7 +314,7 @@ public class BacklinksSummaryLiveResultInfo {
   }
 
 
-  public BacklinksSummaryLiveResultInfo internalLinksCount(Long internalLinksCount) {
+  public BacklinksSummaryLiveResultInfo internalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
     return this;
   }
@@ -323,16 +324,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return internalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getInternalLinksCount() {
+  public BigDecimal getInternalLinksCount() {
     return internalLinksCount;
   }
 
-  public void setInternalLinksCount(Long internalLinksCount) {
+  public void setInternalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
   }
 
 
-  public BacklinksSummaryLiveResultInfo externalLinksCount(Long externalLinksCount) {
+  public BacklinksSummaryLiveResultInfo externalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
     return this;
   }
@@ -342,16 +343,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return externalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getExternalLinksCount() {
+  public BigDecimal getExternalLinksCount() {
     return externalLinksCount;
   }
 
-  public void setExternalLinksCount(Long externalLinksCount) {
+  public void setExternalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
   }
 
 
-  public BacklinksSummaryLiveResultInfo brokenBacklinks(Long brokenBacklinks) {
+  public BacklinksSummaryLiveResultInfo brokenBacklinks(BigDecimal brokenBacklinks) {
     this.brokenBacklinks = brokenBacklinks;
     return this;
   }
@@ -361,16 +362,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return brokenBacklinks
    */
   @javax.annotation.Nullable
-  public Long getBrokenBacklinks() {
+  public BigDecimal getBrokenBacklinks() {
     return brokenBacklinks;
   }
 
-  public void setBrokenBacklinks(Long brokenBacklinks) {
+  public void setBrokenBacklinks(BigDecimal brokenBacklinks) {
     this.brokenBacklinks = brokenBacklinks;
   }
 
 
-  public BacklinksSummaryLiveResultInfo brokenPages(Integer brokenPages) {
+  public BacklinksSummaryLiveResultInfo brokenPages(BigDecimal brokenPages) {
     this.brokenPages = brokenPages;
     return this;
   }
@@ -380,16 +381,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return brokenPages
    */
   @javax.annotation.Nullable
-  public Integer getBrokenPages() {
+  public BigDecimal getBrokenPages() {
     return brokenPages;
   }
 
-  public void setBrokenPages(Integer brokenPages) {
+  public void setBrokenPages(BigDecimal brokenPages) {
     this.brokenPages = brokenPages;
   }
 
 
-  public BacklinksSummaryLiveResultInfo referringDomains(Long referringDomains) {
+  public BacklinksSummaryLiveResultInfo referringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
     return this;
   }
@@ -399,16 +400,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return referringDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringDomains() {
+  public BigDecimal getReferringDomains() {
     return referringDomains;
   }
 
-  public void setReferringDomains(Long referringDomains) {
+  public void setReferringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
   }
 
 
-  public BacklinksSummaryLiveResultInfo referringDomainsNofollow(Long referringDomainsNofollow) {
+  public BacklinksSummaryLiveResultInfo referringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
     return this;
   }
@@ -418,16 +419,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return referringDomainsNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringDomainsNofollow() {
+  public BigDecimal getReferringDomainsNofollow() {
     return referringDomainsNofollow;
   }
 
-  public void setReferringDomainsNofollow(Long referringDomainsNofollow) {
+  public void setReferringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
   }
 
 
-  public BacklinksSummaryLiveResultInfo referringMainDomains(Long referringMainDomains) {
+  public BacklinksSummaryLiveResultInfo referringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
     return this;
   }
@@ -437,11 +438,11 @@ public class BacklinksSummaryLiveResultInfo {
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringMainDomains() {
+  public BigDecimal getReferringMainDomains() {
     return referringMainDomains;
   }
 
-  public void setReferringMainDomains(Long referringMainDomains) {
+  public void setReferringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
   }
 
@@ -465,7 +466,7 @@ public class BacklinksSummaryLiveResultInfo {
   }
 
 
-  public BacklinksSummaryLiveResultInfo referringIps(Long referringIps) {
+  public BacklinksSummaryLiveResultInfo referringIps(BigDecimal referringIps) {
     this.referringIps = referringIps;
     return this;
   }
@@ -475,16 +476,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return referringIps
    */
   @javax.annotation.Nullable
-  public Long getReferringIps() {
+  public BigDecimal getReferringIps() {
     return referringIps;
   }
 
-  public void setReferringIps(Long referringIps) {
+  public void setReferringIps(BigDecimal referringIps) {
     this.referringIps = referringIps;
   }
 
 
-  public BacklinksSummaryLiveResultInfo referringSubnets(Long referringSubnets) {
+  public BacklinksSummaryLiveResultInfo referringSubnets(BigDecimal referringSubnets) {
     this.referringSubnets = referringSubnets;
     return this;
   }
@@ -494,16 +495,16 @@ public class BacklinksSummaryLiveResultInfo {
    * @return referringSubnets
    */
   @javax.annotation.Nullable
-  public Long getReferringSubnets() {
+  public BigDecimal getReferringSubnets() {
     return referringSubnets;
   }
 
-  public void setReferringSubnets(Long referringSubnets) {
+  public void setReferringSubnets(BigDecimal referringSubnets) {
     this.referringSubnets = referringSubnets;
   }
 
 
-  public BacklinksSummaryLiveResultInfo referringPages(Long referringPages) {
+  public BacklinksSummaryLiveResultInfo referringPages(BigDecimal referringPages) {
     this.referringPages = referringPages;
     return this;
   }
@@ -513,12 +514,31 @@ public class BacklinksSummaryLiveResultInfo {
    * @return referringPages
    */
   @javax.annotation.Nullable
-  public Long getReferringPages() {
+  public BigDecimal getReferringPages() {
     return referringPages;
   }
 
-  public void setReferringPages(Long referringPages) {
+  public void setReferringPages(BigDecimal referringPages) {
     this.referringPages = referringPages;
+  }
+
+
+  public BacklinksSummaryLiveResultInfo referringPagesNofollow(BigDecimal referringPagesNofollow) {
+    this.referringPagesNofollow = referringPagesNofollow;
+    return this;
+  }
+
+  /**
+   * number of referring pages pointing at least one nofollow link to the target
+   * @return referringPagesNofollow
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getReferringPagesNofollow() {
+    return referringPagesNofollow;
+  }
+
+  public void setReferringPagesNofollow(BigDecimal referringPagesNofollow) {
+    this.referringPagesNofollow = referringPagesNofollow;
   }
 
 
@@ -683,25 +703,6 @@ public class BacklinksSummaryLiveResultInfo {
     this.referringLinksCountries = referringLinksCountries;
   }
 
-
-  public BacklinksSummaryLiveResultInfo referringPagesNofollow(Long referringPagesNofollow) {
-    this.referringPagesNofollow = referringPagesNofollow;
-    return this;
-  }
-
-  /**
-   * number of referring pages pointing at least one nofollow link to the target
-   * @return referringPagesNofollow
-   */
-  @javax.annotation.Nullable
-  public Long getReferringPagesNofollow() {
-    return referringPagesNofollow;
-  }
-
-  public void setReferringPagesNofollow(Long referringPagesNofollow) {
-    this.referringPagesNofollow = referringPagesNofollow;
-  }
-
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -776,13 +777,13 @@ public class BacklinksSummaryLiveResultInfo {
         Objects.equals(this.referringIps, backlinksSummaryLiveResultInfo.referringIps) &&
         Objects.equals(this.referringSubnets, backlinksSummaryLiveResultInfo.referringSubnets) &&
         Objects.equals(this.referringPages, backlinksSummaryLiveResultInfo.referringPages) &&
+        Objects.equals(this.referringPagesNofollow, backlinksSummaryLiveResultInfo.referringPagesNofollow) &&
         Objects.equals(this.referringLinksTld, backlinksSummaryLiveResultInfo.referringLinksTld) &&
         Objects.equals(this.referringLinksTypes, backlinksSummaryLiveResultInfo.referringLinksTypes) &&
         Objects.equals(this.referringLinksAttributes, backlinksSummaryLiveResultInfo.referringLinksAttributes) &&
         Objects.equals(this.referringLinksPlatformTypes, backlinksSummaryLiveResultInfo.referringLinksPlatformTypes) &&
         Objects.equals(this.referringLinksSemanticLocations, backlinksSummaryLiveResultInfo.referringLinksSemanticLocations) &&
-        Objects.equals(this.referringLinksCountries, backlinksSummaryLiveResultInfo.referringLinksCountries) &&
-        Objects.equals(this.referringPagesNofollow, backlinksSummaryLiveResultInfo.referringPagesNofollow)&&
+        Objects.equals(this.referringLinksCountries, backlinksSummaryLiveResultInfo.referringLinksCountries)&&
         Objects.equals(this.additionalProperties, backlinksSummaryLiveResultInfo.additionalProperties);
   }
 
@@ -792,7 +793,7 @@ public class BacklinksSummaryLiveResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, firstSeen, lostDate, rank, backlinks, backlinksSpamScore, crawledPages, info, internalLinksCount, externalLinksCount, brokenBacklinks, brokenPages, referringDomains, referringDomainsNofollow, referringMainDomains, referringMainDomainsNofollow, referringIps, referringSubnets, referringPages, referringLinksTld, referringLinksTypes, referringLinksAttributes, referringLinksPlatformTypes, referringLinksSemanticLocations, referringLinksCountries, referringPagesNofollow, additionalProperties);
+    return Objects.hash(target, firstSeen, lostDate, rank, backlinks, backlinksSpamScore, crawledPages, info, internalLinksCount, externalLinksCount, brokenBacklinks, brokenPages, referringDomains, referringDomainsNofollow, referringMainDomains, referringMainDomainsNofollow, referringIps, referringSubnets, referringPages, referringPagesNofollow, referringLinksTld, referringLinksTypes, referringLinksAttributes, referringLinksPlatformTypes, referringLinksSemanticLocations, referringLinksCountries, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -825,13 +826,13 @@ public class BacklinksSummaryLiveResultInfo {
     sb.append("    referringIps: ").append(toIndentedString(referringIps)).append("\n");
     sb.append("    referringSubnets: ").append(toIndentedString(referringSubnets)).append("\n");
     sb.append("    referringPages: ").append(toIndentedString(referringPages)).append("\n");
+    sb.append("    referringPagesNofollow: ").append(toIndentedString(referringPagesNofollow)).append("\n");
     sb.append("    referringLinksTld: ").append(toIndentedString(referringLinksTld)).append("\n");
     sb.append("    referringLinksTypes: ").append(toIndentedString(referringLinksTypes)).append("\n");
     sb.append("    referringLinksAttributes: ").append(toIndentedString(referringLinksAttributes)).append("\n");
     sb.append("    referringLinksPlatformTypes: ").append(toIndentedString(referringLinksPlatformTypes)).append("\n");
     sb.append("    referringLinksSemanticLocations: ").append(toIndentedString(referringLinksSemanticLocations)).append("\n");
     sb.append("    referringLinksCountries: ").append(toIndentedString(referringLinksCountries)).append("\n");
-    sb.append("    referringPagesNofollow: ").append(toIndentedString(referringPagesNofollow)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -874,13 +875,13 @@ public class BacklinksSummaryLiveResultInfo {
     openapiFields.add("referring_ips");
     openapiFields.add("referring_subnets");
     openapiFields.add("referring_pages");
+    openapiFields.add("referring_pages_nofollow");
     openapiFields.add("referring_links_tld");
     openapiFields.add("referring_links_types");
     openapiFields.add("referring_links_attributes");
     openapiFields.add("referring_links_platform_types");
     openapiFields.add("referring_links_semantic_locations");
     openapiFields.add("referring_links_countries");
-    openapiFields.add("referring_pages_nofollow");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

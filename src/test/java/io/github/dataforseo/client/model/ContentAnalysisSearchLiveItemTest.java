@@ -22,6 +22,7 @@ import io.github.dataforseo.client.model.AnalysisContentInfo;
 import io.github.dataforseo.client.model.ContentRatingInfo;
 import io.github.dataforseo.client.model.SocialMetricsInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

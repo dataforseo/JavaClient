@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseDataforseoTrendsItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseDataforseoTrendsItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -59,7 +60,7 @@ public class BaseDataforseoTrendsItem {
 
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
-  private Integer position;
+  private BigDecimal position;
 
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -88,7 +89,7 @@ public class BaseDataforseoTrendsItem {
   }
 
 
-  public BaseDataforseoTrendsItem position(Integer position) {
+  public BaseDataforseoTrendsItem position(BigDecimal position) {
     this.position = position;
     return this;
   }
@@ -98,11 +99,11 @@ public class BaseDataforseoTrendsItem {
    * @return position
    */
   @javax.annotation.Nullable
-  public Integer getPosition() {
+  public BigDecimal getPosition() {
     return position;
   }
 
-  public void setPosition(Integer position) {
+  public void setPosition(BigDecimal position) {
     this.position = position;
   }
 

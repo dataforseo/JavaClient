@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SslInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SslInfo {
   public static final String SERIALIZED_NAME_VALID_CERTIFICATE = "valid_certificate";
   @SerializedName(SERIALIZED_NAME_VALID_CERTIFICATE)
@@ -65,7 +66,7 @@ public class SslInfo {
 
   public static final String SERIALIZED_NAME_CERTIFICATE_VERSION = "certificate_version";
   @SerializedName(SERIALIZED_NAME_CERTIFICATE_VERSION)
-  private String certificateVersion;
+  private BigDecimal certificateVersion;
 
   public static final String SERIALIZED_NAME_CERTIFICATE_HASH = "certificate_hash";
   @SerializedName(SERIALIZED_NAME_CERTIFICATE_HASH)
@@ -135,7 +136,7 @@ public class SslInfo {
   }
 
 
-  public SslInfo certificateVersion(String certificateVersion) {
+  public SslInfo certificateVersion(BigDecimal certificateVersion) {
     this.certificateVersion = certificateVersion;
     return this;
   }
@@ -145,11 +146,11 @@ public class SslInfo {
    * @return certificateVersion
    */
   @javax.annotation.Nullable
-  public String getCertificateVersion() {
+  public BigDecimal getCertificateVersion() {
     return certificateVersion;
   }
 
-  public void setCertificateVersion(String certificateVersion) {
+  public void setCertificateVersion(BigDecimal certificateVersion) {
     this.certificateVersion = certificateVersion;
   }
 
@@ -333,9 +334,6 @@ public class SslInfo {
       }
       if ((jsonObj.get("certificate_subject") != null && !jsonObj.get("certificate_subject").isJsonNull()) && !jsonObj.get("certificate_subject").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `certificate_subject` to be a primitive type in the JSON string but got `%s`", jsonObj.get("certificate_subject").toString()));
-      }
-      if ((jsonObj.get("certificate_version") != null && !jsonObj.get("certificate_version").isJsonNull()) && !jsonObj.get("certificate_version").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `certificate_version` to be a primitive type in the JSON string but got `%s`", jsonObj.get("certificate_version").toString()));
       }
       if ((jsonObj.get("certificate_hash") != null && !jsonObj.get("certificate_hash").isJsonNull()) && !jsonObj.get("certificate_hash").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `certificate_hash` to be a primitive type in the JSON string but got `%s`", jsonObj.get("certificate_hash").toString()));

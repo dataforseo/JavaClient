@@ -2903,7 +2903,7 @@ public class Example {
 
 
 
-‌‌  This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since the beginning of 2019, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash&#39;
+‌‌  This endpoint provides Google historical keyword data for specified keywords, including search volume, cost-per-click, competition values for paid search, monthly searches, and search volume trends. You can get historical keyword  data since August, 2021, depending on keywords along with location and language combination. You can find the list of supported locations and languages here. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/historical_keyword_data/live/?bash&#39;
 
 ### Example
 ```java
@@ -3379,7 +3379,7 @@ public class Example {
 
 
 
-‌ This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. Moreover, this endpoint supplies minimum, maximum, and average values of daily impressions, clicks, and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash&#39;
+‌ This endpoint will provide you with a list of keywords relevant to the specified product categories. You will get the search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values for each keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/keywords_for_categories/live/?bash&#39;
 
 ### Example
 ```java
@@ -3515,7 +3515,7 @@ public class Example {
 
 
 
-‌ This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click and impressions data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash&#39;
+‌ This endpoint will provide you with the keywords for which specified pages rank within the same SERP. You will get search volume, competition, cost-per-click data on each intersecting keyword. Along with that, you will get data on SERP elements that specified pages rank for in search results, as well as the estimated traffic volume and cost of ad traffic. Page Intersection endpoint supports organic, paid, local pack and featured snippet results. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/page_intersection/live/?bash&#39;
 
 ### Example
 ```java
@@ -3651,7 +3651,7 @@ public class Example {
 
 
 
-The Related Keywords endpoint provides keywords appearing in the   \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. Moreover, this endpoint supplies minimum, maximum and average values of daily impressions, clicks and CPC for each result. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
+The Related Keywords endpoint provides keywords appearing in the   \&quot;searches related to\&quot; SERP element You can get up to 4680 keyword ideas by specifying the search depth. Each related keyword comes with the list of relevant product categories, search volume rate for the last month, search volume trend for the previous 12 months, as well as current cost-per-click and competition values. for more info please visit &#39;https://docs.dataforseo.com/v3/dataforseo_labs/google/related_keywords/live/?bash&#39;
 
 ### Example
 ```java

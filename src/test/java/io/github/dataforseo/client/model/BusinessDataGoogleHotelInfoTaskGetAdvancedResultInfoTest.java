@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.HotelLocationInfo;
 import io.github.dataforseo.client.model.HotelPriceInfo;
 import io.github.dataforseo.client.model.HotelReviewInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

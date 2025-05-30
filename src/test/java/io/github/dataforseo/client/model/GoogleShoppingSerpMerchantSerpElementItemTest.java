@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.DeliveryInfo;
 import io.github.dataforseo.client.model.RatingElement;
 import io.github.dataforseo.client.model.StoresCountInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -140,6 +141,14 @@ public class GoogleShoppingSerpMerchantSerpElementItemTest {
     @Test
     public void priceTest() {
         // TODO: test price
+    }
+
+    /**
+     * Test the property 'priceMultiplier'
+     */
+    @Test
+    public void priceMultiplierTest() {
+        // TODO: test priceMultiplier
     }
 
     /**

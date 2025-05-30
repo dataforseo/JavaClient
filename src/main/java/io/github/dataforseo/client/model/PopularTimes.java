@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.BusyWorkingTimeInfo;
+import io.github.dataforseo.client.model.PopularWorkTimeInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -53,21 +53,21 @@ import io.github.dataforseo.client.JSON;
 /**
  * PopularTimes
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PopularTimes {
   public static final String SERIALIZED_NAME_POPULAR_TIMES_BY_DAYS = "popular_times_by_days";
   @SerializedName(SERIALIZED_NAME_POPULAR_TIMES_BY_DAYS)
-  private Map<String, List<BusyWorkingTimeInfo>> popularTimesByDays;
+  private Map<String, List<PopularWorkTimeInfo>> popularTimesByDays;
 
   public PopularTimes() {
   }
 
-  public PopularTimes popularTimesByDays(Map<String, List<BusyWorkingTimeInfo>> popularTimesByDays) {
+  public PopularTimes popularTimesByDays(Map<String, List<PopularWorkTimeInfo>> popularTimesByDays) {
     this.popularTimesByDays = popularTimesByDays;
     return this;
   }
 
-  public PopularTimes putPopularTimesByDaysItem(String key, List<BusyWorkingTimeInfo> popularTimesByDaysItem) {
+  public PopularTimes putPopularTimesByDaysItem(String key, List<PopularWorkTimeInfo> popularTimesByDaysItem) {
     if (this.popularTimesByDays == null) {
       this.popularTimesByDays = new HashMap<>();
     }
@@ -80,11 +80,11 @@ public class PopularTimes {
    * @return popularTimesByDays
    */
   @javax.annotation.Nullable
-  public Map<String, List<BusyWorkingTimeInfo>> getPopularTimesByDays() {
+  public Map<String, List<PopularWorkTimeInfo>> getPopularTimesByDays() {
     return popularTimesByDays;
   }
 
-  public void setPopularTimesByDays(Map<String, List<BusyWorkingTimeInfo>> popularTimesByDays) {
+  public void setPopularTimesByDays(Map<String, List<PopularWorkTimeInfo>> popularTimesByDays) {
     this.popularTimesByDays = popularTimesByDays;
   }
 

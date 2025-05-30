@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpScreenshotRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpScreenshotRequestInfo {
   public static final String SERIALIZED_NAME_TASK_ID = "task_id";
   @SerializedName(SERIALIZED_NAME_TASK_ID)
@@ -70,6 +70,10 @@ public class SerpScreenshotRequestInfo {
   public static final String SERIALIZED_NAME_BROWSER_SCREEN_SCALE_FACTOR = "browser_screen_scale_factor";
   @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_SCALE_FACTOR)
   private Float browserScreenScaleFactor;
+
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
 
   public SerpScreenshotRequestInfo() {
   }
@@ -168,6 +172,25 @@ public class SerpScreenshotRequestInfo {
     this.browserScreenScaleFactor = browserScreenScaleFactor;
   }
 
+
+  public SerpScreenshotRequestInfo page(Integer page) {
+    this.page = page;
+    return this;
+  }
+
+  /**
+   * number of SERP pages optional field if depth in the corresponding Task POST request exceeds 100 results (or 1 SERP page), specify the number of SERP pages to screenshot; default value: 1
+   * @return page
+   */
+  @javax.annotation.Nullable
+  public Integer getPage() {
+    return page;
+  }
+
+  public void setPage(Integer page) {
+    this.page = page;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -227,7 +250,8 @@ public class SerpScreenshotRequestInfo {
         Objects.equals(this.browserPreset, serpScreenshotRequestInfo.browserPreset) &&
         Objects.equals(this.browserScreenWidth, serpScreenshotRequestInfo.browserScreenWidth) &&
         Objects.equals(this.browserScreenHeight, serpScreenshotRequestInfo.browserScreenHeight) &&
-        Objects.equals(this.browserScreenScaleFactor, serpScreenshotRequestInfo.browserScreenScaleFactor)&&
+        Objects.equals(this.browserScreenScaleFactor, serpScreenshotRequestInfo.browserScreenScaleFactor) &&
+        Objects.equals(this.page, serpScreenshotRequestInfo.page)&&
         Objects.equals(this.additionalProperties, serpScreenshotRequestInfo.additionalProperties);
   }
 
@@ -237,7 +261,7 @@ public class SerpScreenshotRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(taskId, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, additionalProperties);
+    return Objects.hash(taskId, browserPreset, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, page, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -256,6 +280,7 @@ public class SerpScreenshotRequestInfo {
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenScaleFactor: ").append(toIndentedString(browserScreenScaleFactor)).append("\n");
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -284,6 +309,7 @@ public class SerpScreenshotRequestInfo {
     openapiFields.add("browser_screen_width");
     openapiFields.add("browser_screen_height");
     openapiFields.add("browser_screen_scale_factor");
+    openapiFields.add("page");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

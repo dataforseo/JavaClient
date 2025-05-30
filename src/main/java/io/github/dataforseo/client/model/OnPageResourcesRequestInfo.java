@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageResourcesRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageResourcesRequestInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -80,6 +80,10 @@ public class OnPageResourcesRequestInfo {
   public static final String SERIALIZED_NAME_ORDER_BY = "order_by";
   @SerializedName(SERIALIZED_NAME_ORDER_BY)
   private List<String> orderBy;
+
+  public static final String SERIALIZED_NAME_SEARCH_AFTER_TOKEN = "search_after_token";
+  @SerializedName(SERIALIZED_NAME_SEARCH_AFTER_TOKEN)
+  private String searchAfterToken;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -245,6 +249,25 @@ public class OnPageResourcesRequestInfo {
   }
 
 
+  public OnPageResourcesRequestInfo searchAfterToken(String searchAfterToken) {
+    this.searchAfterToken = searchAfterToken;
+    return this;
+  }
+
+  /**
+   * token for subsequent requests optional field provided in the identical filed of the response to each request; use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request; by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task; search_after_token values are unique for each subsequent task ; Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+   * @return searchAfterToken
+   */
+  @javax.annotation.Nullable
+  public String getSearchAfterToken() {
+    return searchAfterToken;
+  }
+
+  public void setSearchAfterToken(String searchAfterToken) {
+    this.searchAfterToken = searchAfterToken;
+  }
+
+
   public OnPageResourcesRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -325,6 +348,7 @@ public class OnPageResourcesRequestInfo {
         Objects.equals(this.filters, onPageResourcesRequestInfo.filters) &&
         Objects.equals(this.relevantPagesFilters, onPageResourcesRequestInfo.relevantPagesFilters) &&
         Objects.equals(this.orderBy, onPageResourcesRequestInfo.orderBy) &&
+        Objects.equals(this.searchAfterToken, onPageResourcesRequestInfo.searchAfterToken) &&
         Objects.equals(this.tag, onPageResourcesRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, onPageResourcesRequestInfo.additionalProperties);
   }
@@ -335,7 +359,7 @@ public class OnPageResourcesRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, url, limit, offset, filters, relevantPagesFilters, orderBy, tag, additionalProperties);
+    return Objects.hash(id, url, limit, offset, filters, relevantPagesFilters, orderBy, searchAfterToken, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -356,6 +380,7 @@ public class OnPageResourcesRequestInfo {
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    relevantPagesFilters: ").append(toIndentedString(relevantPagesFilters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
+    sb.append("    searchAfterToken: ").append(toIndentedString(searchAfterToken)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -387,6 +412,7 @@ public class OnPageResourcesRequestInfo {
     openapiFields.add("filters");
     openapiFields.add("relevant_pages_filters");
     openapiFields.add("order_by");
+    openapiFields.add("search_after_token");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -423,6 +449,9 @@ public class OnPageResourcesRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("order_by") != null && !jsonObj.get("order_by").isJsonNull() && !jsonObj.get("order_by").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `order_by` to be an array in the JSON string but got `%s`", jsonObj.get("order_by").toString()));
+      }
+      if ((jsonObj.get("search_after_token") != null && !jsonObj.get("search_after_token").isJsonNull()) && !jsonObj.get("search_after_token").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `search_after_token` to be a primitive type in the JSON string but got `%s`", jsonObj.get("search_after_token").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

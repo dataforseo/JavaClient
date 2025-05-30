@@ -25,6 +25,7 @@ import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.Rectangle;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -54,16 +55,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * StocksBoxSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class StocksBoxSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -103,44 +96,6 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
   public StocksBoxSerpElementItem() {
   }
 
-  public StocksBoxSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public StocksBoxSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
-
   public StocksBoxSerpElementItem title(String title) {
     this.title = title;
     return this;
@@ -166,7 +121,7 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
   }
 
   /**
-   * source of the element indicates the source of the video
+   * reference source name or title
    * @return source
    */
   @javax.annotation.Nullable
@@ -223,7 +178,7 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
   }
 
   /**
-   * source URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -242,7 +197,7 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
   }
 
   /**
-   * source domain
+   * domain in the URL
    * @return domain
    */
   @javax.annotation.Nullable
@@ -366,9 +321,7 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     StocksBoxSerpElementItem stocksBoxSerpElementItem = (StocksBoxSerpElementItem) o;
-    return Objects.equals(this.position, stocksBoxSerpElementItem.position) &&
-        Objects.equals(this.xpath, stocksBoxSerpElementItem.xpath) &&
-        Objects.equals(this.title, stocksBoxSerpElementItem.title) &&
+    return Objects.equals(this.title, stocksBoxSerpElementItem.title) &&
         Objects.equals(this.source, stocksBoxSerpElementItem.source) &&
         Objects.equals(this.snippet, stocksBoxSerpElementItem.snippet) &&
         Objects.equals(this.price, stocksBoxSerpElementItem.price) &&
@@ -387,7 +340,7 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, title, source, snippet, price, url, domain, rectangle, table, graph, super.hashCode(), additionalProperties);
+    return Objects.hash(title, source, snippet, price, url, domain, rectangle, table, graph, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -402,8 +355,6 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class StocksBoxSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("    snippet: ").append(toIndentedString(snippet)).append("\n");
@@ -468,12 +419,6 @@ public class StocksBoxSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

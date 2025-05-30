@@ -14,7 +14,7 @@
 |**source** | **String** | source of the element indicates the source of information included in the top_stories_element |  [optional] |
 |**description** | **String** | description |  [optional] |
 |**time** | **String** | the total time it takes to prepare the cook the dish |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 
 
 

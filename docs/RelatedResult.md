@@ -23,7 +23,7 @@
 |**extendedSnippet** | **String** | includes additional information appended after the result description in SERP |  [optional] |
 |**images** | [**List&lt;ImagesElement&gt;**](ImagesElement.md) | images of the element |  [optional] |
 |**ampVersion** | **Boolean** | Accelerated Mobile Pages indicates whether an item has the Accelerated Mobile Page (AMP) version |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**highlighted** | **List&lt;String&gt;** | words highlighted in bold within the results description |  [optional] |
 |**aboutThisResult** | [**AboutThisResultElement**](AboutThisResultElement.md) |  |  [optional] |

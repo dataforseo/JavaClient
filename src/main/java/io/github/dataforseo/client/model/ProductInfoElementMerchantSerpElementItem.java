@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.ProductSeller;
 import io.github.dataforseo.client.model.ProductVariation;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ProductInfoElementMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ProductInfoElementMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_PRODUCT_ID = "product_id";
   @SerializedName(SERIALIZED_NAME_PRODUCT_ID)
@@ -87,7 +88,7 @@ public class ProductInfoElementMerchantSerpElementItem extends BaseMerchantSerpE
 
   public static final String SERIALIZED_NAME_SELLER_REVIEWS_COUNT = "seller_reviews_count";
   @SerializedName(SERIALIZED_NAME_SELLER_REVIEWS_COUNT)
-  private Long sellerReviewsCount;
+  private BigDecimal sellerReviewsCount;
 
   public static final String SERIALIZED_NAME_SELLERS = "sellers";
   @SerializedName(SERIALIZED_NAME_SELLERS)
@@ -249,7 +250,7 @@ public class ProductInfoElementMerchantSerpElementItem extends BaseMerchantSerpE
   }
 
 
-  public ProductInfoElementMerchantSerpElementItem sellerReviewsCount(Long sellerReviewsCount) {
+  public ProductInfoElementMerchantSerpElementItem sellerReviewsCount(BigDecimal sellerReviewsCount) {
     this.sellerReviewsCount = sellerReviewsCount;
     return this;
   }
@@ -259,11 +260,11 @@ public class ProductInfoElementMerchantSerpElementItem extends BaseMerchantSerpE
    * @return sellerReviewsCount
    */
   @javax.annotation.Nullable
-  public Long getSellerReviewsCount() {
+  public BigDecimal getSellerReviewsCount() {
     return sellerReviewsCount;
   }
 
-  public void setSellerReviewsCount(Long sellerReviewsCount) {
+  public void setSellerReviewsCount(BigDecimal sellerReviewsCount) {
     this.sellerReviewsCount = sellerReviewsCount;
   }
 

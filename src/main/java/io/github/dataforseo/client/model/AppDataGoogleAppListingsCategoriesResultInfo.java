@@ -49,54 +49,169 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGoogleAppListingsCategoriesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataGoogleAppListingsCategoriesResultInfo {
-  public static final String SERIALIZED_NAME_CATEGORY = "category";
-  @SerializedName(SERIALIZED_NAME_CATEGORY)
-  private String category;
+  public static final String SERIALIZED_NAME_ID = "id";
+  @SerializedName(SERIALIZED_NAME_ID)
+  private String id;
 
-  public static final String SERIALIZED_NAME_COUNT = "count";
-  @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
+  public static final String SERIALIZED_NAME_SE = "se";
+  @SerializedName(SERIALIZED_NAME_SE)
+  private String se;
+
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
+  public static final String SERIALIZED_NAME_DATE_POSTED = "date_posted";
+  @SerializedName(SERIALIZED_NAME_DATE_POSTED)
+  private String datePosted;
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public static final String SERIALIZED_NAME_ENDPOINT_ADVANCED = "endpoint_advanced";
+  @SerializedName(SERIALIZED_NAME_ENDPOINT_ADVANCED)
+  private String endpointAdvanced;
+
+  public static final String SERIALIZED_NAME_ENDPOINT_HTML = "endpoint_html";
+  @SerializedName(SERIALIZED_NAME_ENDPOINT_HTML)
+  private String endpointHtml;
 
   public AppDataGoogleAppListingsCategoriesResultInfo() {
   }
 
-  public AppDataGoogleAppListingsCategoriesResultInfo category(String category) {
-    this.category = category;
+  public AppDataGoogleAppListingsCategoriesResultInfo id(String id) {
+    this.id = id;
     return this;
   }
 
   /**
-   * name of the supported app category
-   * @return category
+   * task identifier unique task identifier in our system in the UUID format
+   * @return id
    */
   @javax.annotation.Nullable
-  public String getCategory() {
-    return category;
+  public String getId() {
+    return id;
   }
 
-  public void setCategory(String category) {
-    this.category = category;
+  public void setId(String id) {
+    this.id = id;
   }
 
 
-  public AppDataGoogleAppListingsCategoriesResultInfo count(Long count) {
-    this.count = count;
+  public AppDataGoogleAppListingsCategoriesResultInfo se(String se) {
+    this.se = se;
     return this;
   }
 
   /**
-   * number of app listings that make up the supported app category
-   * @return count
+   * Get se
+   * @return se
    */
   @javax.annotation.Nullable
-  public Long getCount() {
-    return count;
+  public String getSe() {
+    return se;
   }
 
-  public void setCount(Long count) {
-    this.count = count;
+  public void setSe(String se) {
+    this.se = se;
+  }
+
+
+  public AppDataGoogleAppListingsCategoriesResultInfo seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * Get seType
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
+
+  public AppDataGoogleAppListingsCategoriesResultInfo datePosted(String datePosted) {
+    this.datePosted = datePosted;
+    return this;
+  }
+
+  /**
+   * Get datePosted
+   * @return datePosted
+   */
+  @javax.annotation.Nullable
+  public String getDatePosted() {
+    return datePosted;
+  }
+
+  public void setDatePosted(String datePosted) {
+    this.datePosted = datePosted;
+  }
+
+
+  public AppDataGoogleAppListingsCategoriesResultInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * Get tag
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public AppDataGoogleAppListingsCategoriesResultInfo endpointAdvanced(String endpointAdvanced) {
+    this.endpointAdvanced = endpointAdvanced;
+    return this;
+  }
+
+  /**
+   * Get endpointAdvanced
+   * @return endpointAdvanced
+   */
+  @javax.annotation.Nullable
+  public String getEndpointAdvanced() {
+    return endpointAdvanced;
+  }
+
+  public void setEndpointAdvanced(String endpointAdvanced) {
+    this.endpointAdvanced = endpointAdvanced;
+  }
+
+
+  public AppDataGoogleAppListingsCategoriesResultInfo endpointHtml(String endpointHtml) {
+    this.endpointHtml = endpointHtml;
+    return this;
+  }
+
+  /**
+   * Get endpointHtml
+   * @return endpointHtml
+   */
+  @javax.annotation.Nullable
+  public String getEndpointHtml() {
+    return endpointHtml;
+  }
+
+  public void setEndpointHtml(String endpointHtml) {
+    this.endpointHtml = endpointHtml;
   }
 
   /**
@@ -154,8 +269,13 @@ public class AppDataGoogleAppListingsCategoriesResultInfo {
       return false;
     }
     AppDataGoogleAppListingsCategoriesResultInfo appDataGoogleAppListingsCategoriesResultInfo = (AppDataGoogleAppListingsCategoriesResultInfo) o;
-    return Objects.equals(this.category, appDataGoogleAppListingsCategoriesResultInfo.category) &&
-        Objects.equals(this.count, appDataGoogleAppListingsCategoriesResultInfo.count)&&
+    return Objects.equals(this.id, appDataGoogleAppListingsCategoriesResultInfo.id) &&
+        Objects.equals(this.se, appDataGoogleAppListingsCategoriesResultInfo.se) &&
+        Objects.equals(this.seType, appDataGoogleAppListingsCategoriesResultInfo.seType) &&
+        Objects.equals(this.datePosted, appDataGoogleAppListingsCategoriesResultInfo.datePosted) &&
+        Objects.equals(this.tag, appDataGoogleAppListingsCategoriesResultInfo.tag) &&
+        Objects.equals(this.endpointAdvanced, appDataGoogleAppListingsCategoriesResultInfo.endpointAdvanced) &&
+        Objects.equals(this.endpointHtml, appDataGoogleAppListingsCategoriesResultInfo.endpointHtml)&&
         Objects.equals(this.additionalProperties, appDataGoogleAppListingsCategoriesResultInfo.additionalProperties);
   }
 
@@ -165,7 +285,7 @@ public class AppDataGoogleAppListingsCategoriesResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(category, count, additionalProperties);
+    return Objects.hash(id, se, seType, datePosted, tag, endpointAdvanced, endpointHtml, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -179,8 +299,13 @@ public class AppDataGoogleAppListingsCategoriesResultInfo {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppDataGoogleAppListingsCategoriesResultInfo {\n");
-    sb.append("    category: ").append(toIndentedString(category)).append("\n");
-    sb.append("    count: ").append(toIndentedString(count)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    se: ").append(toIndentedString(se)).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
+    sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    endpointAdvanced: ").append(toIndentedString(endpointAdvanced)).append("\n");
+    sb.append("    endpointHtml: ").append(toIndentedString(endpointHtml)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -204,8 +329,13 @@ public class AppDataGoogleAppListingsCategoriesResultInfo {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("category");
-    openapiFields.add("count");
+    openapiFields.add("id");
+    openapiFields.add("se");
+    openapiFields.add("se_type");
+    openapiFields.add("date_posted");
+    openapiFields.add("tag");
+    openapiFields.add("endpoint_advanced");
+    openapiFields.add("endpoint_html");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -224,8 +354,26 @@ public class AppDataGoogleAppListingsCategoriesResultInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("category") != null && !jsonObj.get("category").isJsonNull()) && !jsonObj.get("category").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("category").toString()));
+      if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+      }
+      if ((jsonObj.get("se") != null && !jsonObj.get("se").isJsonNull()) && !jsonObj.get("se").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se").toString()));
+      }
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
+      if ((jsonObj.get("date_posted") != null && !jsonObj.get("date_posted").isJsonNull()) && !jsonObj.get("date_posted").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `date_posted` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date_posted").toString()));
+      }
+      if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));
+      }
+      if ((jsonObj.get("endpoint_advanced") != null && !jsonObj.get("endpoint_advanced").isJsonNull()) && !jsonObj.get("endpoint_advanced").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endpoint_advanced` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_advanced").toString()));
+      }
+      if ((jsonObj.get("endpoint_html") != null && !jsonObj.get("endpoint_html").isJsonNull()) && !jsonObj.get("endpoint_html").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endpoint_html` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_html").toString()));
       }
   }
 

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * CountryDistribution
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class CountryDistribution {
   public static final String SERIALIZED_NAME_COUNTRY_ISO_CODE = "country_iso_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_ISO_CODE)
@@ -57,7 +58,7 @@ public class CountryDistribution {
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public static final String SERIALIZED_NAME_PERCENTAGE = "percentage";
   @SerializedName(SERIALIZED_NAME_PERCENTAGE)
@@ -85,7 +86,7 @@ public class CountryDistribution {
   }
 
 
-  public CountryDistribution searchVolume(Long searchVolume) {
+  public CountryDistribution searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -95,11 +96,11 @@ public class CountryDistribution {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 

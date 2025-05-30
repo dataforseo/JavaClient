@@ -7,7 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**position** | **String** | alignment of the element in SERP possible values: left, right |  [optional] |
 |**sellerName** | **String** | business name of the seller |  [optional] |
 |**sellerUrl** | **String** | url forwarding to the seller’s page on Amazon |  [optional] |
 |**shipsFrom** | **String** | sender company name |  [optional] |

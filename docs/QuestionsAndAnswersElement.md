@@ -13,7 +13,7 @@
 |**answerText** | **String** | answer included in the item |  [optional] |
 |**source** | **String** | source of the element indicates the source of information included in the top_stories_element |  [optional] |
 |**domain** | **String** | website domain |  [optional] |
-|**votes** | **Integer** | answer upvotes from the source |  [optional] |
+|**votes** | **BigDecimal** | answer upvotes from the source |  [optional] |
 
 
 

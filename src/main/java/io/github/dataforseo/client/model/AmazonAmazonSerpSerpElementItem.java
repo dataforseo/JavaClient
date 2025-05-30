@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.AmazonDeliveryInfo;
 import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,15 +55,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonSerpSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
   private String seType;
-
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
 
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -118,7 +115,7 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
 
   public static final String SERIALIZED_NAME_BOUGHT_PAST_MONTH = "bought_past_month";
   @SerializedName(SERIALIZED_NAME_BOUGHT_PAST_MONTH)
-  private Integer boughtPastMonth;
+  private BigDecimal boughtPastMonth;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -147,25 +144,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
 
   public void setSeType(String seType) {
     this.seType = seType;
-  }
-
-
-  public AmazonAmazonSerpSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in Amazon SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
   }
 
 
@@ -424,7 +402,7 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
   }
 
 
-  public AmazonAmazonSerpSerpElementItem boughtPastMonth(Integer boughtPastMonth) {
+  public AmazonAmazonSerpSerpElementItem boughtPastMonth(BigDecimal boughtPastMonth) {
     this.boughtPastMonth = boughtPastMonth;
     return this;
   }
@@ -434,11 +412,11 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
    * @return boughtPastMonth
    */
   @javax.annotation.Nullable
-  public Integer getBoughtPastMonth() {
+  public BigDecimal getBoughtPastMonth() {
     return boughtPastMonth;
   }
 
-  public void setBoughtPastMonth(Integer boughtPastMonth) {
+  public void setBoughtPastMonth(BigDecimal boughtPastMonth) {
     this.boughtPastMonth = boughtPastMonth;
   }
 
@@ -536,7 +514,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
     }
     AmazonAmazonSerpSerpElementItem amazonAmazonSerpSerpElementItem = (AmazonAmazonSerpSerpElementItem) o;
     return Objects.equals(this.seType, amazonAmazonSerpSerpElementItem.seType) &&
-        Objects.equals(this.position, amazonAmazonSerpSerpElementItem.position) &&
         Objects.equals(this.domain, amazonAmazonSerpSerpElementItem.domain) &&
         Objects.equals(this.title, amazonAmazonSerpSerpElementItem.title) &&
         Objects.equals(this.url, amazonAmazonSerpSerpElementItem.url) &&
@@ -563,7 +540,7 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, position, domain, title, url, asin, imageUrl, priceFrom, priceTo, currency, specialOffers, isBestSeller, isAmazonChoice, rating, deliveryInfo, boughtPastMonth, description, dataAsin, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, domain, title, url, asin, imageUrl, priceFrom, priceTo, currency, specialOffers, isBestSeller, isAmazonChoice, rating, deliveryInfo, boughtPastMonth, description, dataAsin, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -579,7 +556,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
     sb.append("class AmazonAmazonSerpSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
     sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -622,9 +598,9 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
+    openapiFields.add("position");
     openapiFields.add("xpath");
     openapiFields.add("se_type");
-    openapiFields.add("position");
     openapiFields.add("domain");
     openapiFields.add("title");
     openapiFields.add("url");
@@ -661,9 +637,6 @@ public class AmazonAmazonSerpSerpElementItem extends BaseAmazonSerpElementItem {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
-      }
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
       }
       if ((jsonObj.get("domain") != null && !jsonObj.get("domain").isJsonNull()) && !jsonObj.get("domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain").toString()));

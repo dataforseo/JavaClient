@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseOnPageLinkItemInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ImageLinkElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
   public static final String SERIALIZED_NAME_LINK_ATTRIBUTE = "link_attribute";
   @SerializedName(SERIALIZED_NAME_LINK_ATTRIBUTE)
@@ -69,10 +70,6 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
   public static final String SERIALIZED_NAME_IMAGE_SRC = "image_src";
   @SerializedName(SERIALIZED_NAME_IMAGE_SRC)
   private String imageSrc;
-
-  public static final String SERIALIZED_NAME_PAGE_TO_STATUS_CODE = "page_to_status_code";
-  @SerializedName(SERIALIZED_NAME_PAGE_TO_STATUS_CODE)
-  private Integer pageToStatusCode;
 
   public ImageLinkElementItem() {
   }
@@ -160,25 +157,6 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
     this.imageSrc = imageSrc;
   }
 
-
-  public ImageLinkElementItem pageToStatusCode(Integer pageToStatusCode) {
-    this.pageToStatusCode = pageToStatusCode;
-    return this;
-  }
-
-  /**
-   * status code of the referenced page status code of the page to which the link is pointing
-   * @return pageToStatusCode
-   */
-  @javax.annotation.Nullable
-  public Integer getPageToStatusCode() {
-    return pageToStatusCode;
-  }
-
-  public void setPageToStatusCode(Integer pageToStatusCode) {
-    this.pageToStatusCode = pageToStatusCode;
-  }
-
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -237,8 +215,7 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
     return Objects.equals(this.linkAttribute, imageLinkElementItem.linkAttribute) &&
         Objects.equals(this.text, imageLinkElementItem.text) &&
         Objects.equals(this.imageAlt, imageLinkElementItem.imageAlt) &&
-        Objects.equals(this.imageSrc, imageLinkElementItem.imageSrc) &&
-        Objects.equals(this.pageToStatusCode, imageLinkElementItem.pageToStatusCode)&&
+        Objects.equals(this.imageSrc, imageLinkElementItem.imageSrc)&&
         Objects.equals(this.additionalProperties, imageLinkElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -249,7 +226,7 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(linkAttribute, text, imageAlt, imageSrc, pageToStatusCode, super.hashCode(), additionalProperties);
+    return Objects.hash(linkAttribute, text, imageAlt, imageSrc, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -268,7 +245,6 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
     sb.append("    imageAlt: ").append(toIndentedString(imageAlt)).append("\n");
     sb.append("    imageSrc: ").append(toIndentedString(imageSrc)).append("\n");
-    sb.append("    pageToStatusCode: ").append(toIndentedString(pageToStatusCode)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -305,11 +281,11 @@ public class ImageLinkElementItem extends BaseOnPageLinkItemInfo {
     openapiFields.add("direction");
     openapiFields.add("is_broken");
     openapiFields.add("is_link_relation_conflict");
+    openapiFields.add("page_to_status_code");
     openapiFields.add("link_attribute");
     openapiFields.add("text");
     openapiFields.add("image_alt");
     openapiFields.add("image_src");
-    openapiFields.add("page_to_status_code");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

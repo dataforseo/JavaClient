@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.PageContentInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageContentParsingItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageContentParsingItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -62,7 +63,7 @@ public class OnPageContentParsingItem {
 
   public static final String SERIALIZED_NAME_STATUS_CODE = "status_code";
   @SerializedName(SERIALIZED_NAME_STATUS_CODE)
-  private Integer statusCode;
+  private BigDecimal statusCode;
 
   public static final String SERIALIZED_NAME_PAGE_CONTENT = "page_content";
   @SerializedName(SERIALIZED_NAME_PAGE_CONTENT)
@@ -109,7 +110,7 @@ public class OnPageContentParsingItem {
   }
 
 
-  public OnPageContentParsingItem statusCode(Integer statusCode) {
+  public OnPageContentParsingItem statusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
     return this;
   }
@@ -119,11 +120,11 @@ public class OnPageContentParsingItem {
    * @return statusCode
    */
   @javax.annotation.Nullable
-  public Integer getStatusCode() {
+  public BigDecimal getStatusCode() {
     return statusCode;
   }
 
-  public void setStatusCode(Integer statusCode) {
+  public void setStatusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
   }
 

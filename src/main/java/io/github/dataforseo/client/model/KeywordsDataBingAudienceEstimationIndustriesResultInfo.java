@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataBingAudienceEstimationIndustriesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataBingAudienceEstimationIndustriesResultInfo {
   public static final String SERIALIZED_NAME_INDUSTRY_ID = "industry_id";
   @SerializedName(SERIALIZED_NAME_INDUSTRY_ID)
-  private Long industryId;
+  private BigDecimal industryId;
 
   public static final String SERIALIZED_NAME_INDUSTRY_NAME = "industry_name";
   @SerializedName(SERIALIZED_NAME_INDUSTRY_NAME)
@@ -62,7 +63,7 @@ public class KeywordsDataBingAudienceEstimationIndustriesResultInfo {
   public KeywordsDataBingAudienceEstimationIndustriesResultInfo() {
   }
 
-  public KeywordsDataBingAudienceEstimationIndustriesResultInfo industryId(Long industryId) {
+  public KeywordsDataBingAudienceEstimationIndustriesResultInfo industryId(BigDecimal industryId) {
     this.industryId = industryId;
     return this;
   }
@@ -72,11 +73,11 @@ public class KeywordsDataBingAudienceEstimationIndustriesResultInfo {
    * @return industryId
    */
   @javax.annotation.Nullable
-  public Long getIndustryId() {
+  public BigDecimal getIndustryId() {
     return industryId;
   }
 
-  public void setIndustryId(Long industryId) {
+  public void setIndustryId(BigDecimal industryId) {
     this.industryId = industryId;
   }
 

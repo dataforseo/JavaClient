@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.LinkElement;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,16 +55,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * DictionarySerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DictionarySerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -102,44 +95,6 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
 
   public DictionarySerpElementItem() {
   }
-
-  public DictionarySerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public DictionarySerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
 
   public DictionarySerpElementItem title(String title) {
     this.title = title;
@@ -374,9 +329,7 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
       return false;
     }
     DictionarySerpElementItem dictionarySerpElementItem = (DictionarySerpElementItem) o;
-    return Objects.equals(this.position, dictionarySerpElementItem.position) &&
-        Objects.equals(this.xpath, dictionarySerpElementItem.xpath) &&
-        Objects.equals(this.title, dictionarySerpElementItem.title) &&
+    return Objects.equals(this.title, dictionarySerpElementItem.title) &&
         Objects.equals(this.url, dictionarySerpElementItem.url) &&
         Objects.equals(this.domain, dictionarySerpElementItem.domain) &&
         Objects.equals(this.breadcrumb, dictionarySerpElementItem.breadcrumb) &&
@@ -395,7 +348,7 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, title, url, domain, breadcrumb, keyword, snippet, text, links, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(title, url, domain, breadcrumb, keyword, snippet, text, links, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -410,8 +363,6 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class DictionarySerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
@@ -476,12 +427,6 @@ public class DictionarySerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

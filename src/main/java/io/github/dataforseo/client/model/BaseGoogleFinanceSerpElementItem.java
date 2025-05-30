@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseGoogleFinanceSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseGoogleFinanceSerpElementItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -155,26 +155,56 @@ public class BaseGoogleFinanceSerpElementItem {
 
       String discriminatorValue = jsonElement.getAsJsonObject().get("type").getAsString();
       switch (discriminatorValue) {
-        case "GoogleFinanceEarningsCalendarSerpElementItem":
+        case "google_finance_about":
+          GoogleFinanceAboutSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_asset_pair_element":
+          GoogleFinanceAssetPairElementSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_compare_to":
+          GoogleFinanceCompareToSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_details":
+          GoogleFinanceDetailsSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_earnings_calendar":
           GoogleFinanceEarningsCalendarSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "GoogleFinanceHeroGroupsSerpElementItem":
+        case "google_finance_explore_market_trends":
+          GoogleFinanceExploreMarketTrendsSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_financial":
+          GoogleFinanceFinancialSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_futures_chain":
+          GoogleFinanceFuturesChainSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_hero_groups":
           GoogleFinanceHeroGroupsSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "GoogleFinanceInterestedSerpElementItem":
+        case "google_finance_interested":
           GoogleFinanceInterestedSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "GoogleFinanceMarketTrendsSerpElementItem":
+        case "google_finance_market_index_element":
+          GoogleFinanceMarketIndexElementSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_market_instrument_element":
+          GoogleFinanceMarketInstrumentElementSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_market_trends":
           GoogleFinanceMarketTrendsSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "GoogleFinanceMostFollowedSerpElementItem":
+        case "google_finance_most_followed":
           GoogleFinanceMostFollowedSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "GoogleFinanceNewsSerpElementItem":
+        case "google_finance_news":
           GoogleFinanceNewsSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "GoogleFinancePeopleAlsoSearchSerpElementItem":
+        case "google_finance_people_also_search":
           GoogleFinancePeopleAlsoSearchSerpElementItem.validateJsonElement(jsonElement);
+          break;
+        case "google_finance_quote":
+          GoogleFinanceQuoteSerpElementItem.validateJsonElement(jsonElement);
           break;
         default:
           throw new IllegalArgumentException(String.format("The value of the `type` field `%s` does not match any key defined in the discriminator's mapping.", discriminatorValue));

@@ -20,9 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseAppDataSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.PriceInfo;
-import io.github.dataforseo.client.model.RatingInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataAppStoreSearchOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataAppStoreSearchOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_APP_ID = "app_id";
   @SerializedName(SERIALIZED_NAME_APP_ID)
@@ -68,7 +69,7 @@ public class AppDataAppStoreSearchOrganicSerpElementItem extends BaseAppDataSerp
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_IS_FREE = "is_free";
   @SerializedName(SERIALIZED_NAME_IS_FREE)
@@ -138,7 +139,7 @@ public class AppDataAppStoreSearchOrganicSerpElementItem extends BaseAppDataSerp
   }
 
 
-  public AppDataAppStoreSearchOrganicSerpElementItem reviewsCount(Long reviewsCount) {
+  public AppDataAppStoreSearchOrganicSerpElementItem reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -148,11 +149,11 @@ public class AppDataAppStoreSearchOrganicSerpElementItem extends BaseAppDataSerp
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 

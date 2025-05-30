@@ -11,12 +11,12 @@
 |**url** | **String** | URL to the app page on Google Play |  [optional] |
 |**icon** | **String** | URL to the app icon |  [optional] |
 |**description** | **String** | description of the app |  [optional] |
-|**reviewsCount** | **Long** | the total number of reviews the app has |  [optional] |
+|**reviewsCount** | **BigDecimal** | the total number of reviews the app has |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
 |**mainCategory** | **String** | main category of the app |  [optional] |
 |**installs** | **String** | number of installs of the app approximate number of installs as displayed on the app page |  [optional] |
-|**installsCount** | **Long** | number of installs of the app the exact number of installs of the app |  [optional] |
+|**installsCount** | **BigDecimal** | number of installs of the app the exact number of installs of the app |  [optional] |
 |**developer** | **String** | name of the app developer |  [optional] |
 |**developerId** | **String** | ID of the app developer |  [optional] |
 |**developerUrl** | **String** | URL to the developer page on Google Play |  [optional] |

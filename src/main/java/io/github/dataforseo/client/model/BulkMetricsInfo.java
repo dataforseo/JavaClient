@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BulkMetricsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BulkMetricsInfo {
   public static final String SERIALIZED_NAME_ETV = "etv";
   @SerializedName(SERIALIZED_NAME_ETV)
@@ -57,11 +58,7 @@ public class BulkMetricsInfo {
 
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
-
-  public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
-  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
-  private Integer clickstreamEtv;
+  private BigDecimal count;
 
   public BulkMetricsInfo() {
   }
@@ -85,7 +82,7 @@ public class BulkMetricsInfo {
   }
 
 
-  public BulkMetricsInfo count(Long count) {
+  public BulkMetricsInfo count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -95,31 +92,12 @@ public class BulkMetricsInfo {
    * @return count
    */
   @javax.annotation.Nullable
-  public Long getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
-  }
-
-
-  public BulkMetricsInfo clickstreamEtv(Integer clickstreamEtv) {
-    this.clickstreamEtv = clickstreamEtv;
-    return this;
-  }
-
-  /**
-   * estimated traffic volume based on clickstream data calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for to retrieve results for this field, the parameter include_clickstream_data must be set to true learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
-   * @return clickstreamEtv
-   */
-  @javax.annotation.Nullable
-  public Integer getClickstreamEtv() {
-    return clickstreamEtv;
-  }
-
-  public void setClickstreamEtv(Integer clickstreamEtv) {
-    this.clickstreamEtv = clickstreamEtv;
   }
 
   /**
@@ -178,8 +156,7 @@ public class BulkMetricsInfo {
     }
     BulkMetricsInfo bulkMetricsInfo = (BulkMetricsInfo) o;
     return Objects.equals(this.etv, bulkMetricsInfo.etv) &&
-        Objects.equals(this.count, bulkMetricsInfo.count) &&
-        Objects.equals(this.clickstreamEtv, bulkMetricsInfo.clickstreamEtv)&&
+        Objects.equals(this.count, bulkMetricsInfo.count)&&
         Objects.equals(this.additionalProperties, bulkMetricsInfo.additionalProperties);
   }
 
@@ -189,7 +166,7 @@ public class BulkMetricsInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(etv, count, clickstreamEtv, additionalProperties);
+    return Objects.hash(etv, count, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -205,7 +182,6 @@ public class BulkMetricsInfo {
     sb.append("class BulkMetricsInfo {\n");
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
     sb.append("    count: ").append(toIndentedString(count)).append("\n");
-    sb.append("    clickstreamEtv: ").append(toIndentedString(clickstreamEtv)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -231,7 +207,6 @@ public class BulkMetricsInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("etv");
     openapiFields.add("count");
-    openapiFields.add("clickstream_etv");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

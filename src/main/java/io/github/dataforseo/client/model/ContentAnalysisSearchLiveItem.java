@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.AnalysisContentInfo;
 import io.github.dataforseo.client.model.ContentRatingInfo;
 import io.github.dataforseo.client.model.SocialMetricsInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -74,15 +75,15 @@ public class ContentAnalysisSearchLiveItem {
 
   public static final String SERIALIZED_NAME_URL_RANK = "url_rank";
   @SerializedName(SERIALIZED_NAME_URL_RANK)
-  private Integer urlRank;
+  private BigDecimal urlRank;
 
   public static final String SERIALIZED_NAME_SPAM_SCORE = "spam_score";
   @SerializedName(SERIALIZED_NAME_SPAM_SCORE)
-  private String spamScore;
+  private BigDecimal spamScore;
 
   public static final String SERIALIZED_NAME_DOMAIN_RANK = "domain_rank";
   @SerializedName(SERIALIZED_NAME_DOMAIN_RANK)
-  private String domainRank;
+  private BigDecimal domainRank;
 
   public static final String SERIALIZED_NAME_FETCH_TIME = "fetch_time";
   @SerializedName(SERIALIZED_NAME_FETCH_TIME)
@@ -98,11 +99,11 @@ public class ContentAnalysisSearchLiveItem {
 
   public static final String SERIALIZED_NAME_SCORE = "score";
   @SerializedName(SERIALIZED_NAME_SCORE)
-  private String score;
+  private BigDecimal score;
 
   public static final String SERIALIZED_NAME_PAGE_CATEGORY = "page_category";
   @SerializedName(SERIALIZED_NAME_PAGE_CATEGORY)
-  private List<Integer> pageCategory;
+  private List<BigDecimal> pageCategory;
 
   public static final String SERIALIZED_NAME_PAGE_TYPES = "page_types";
   @SerializedName(SERIALIZED_NAME_PAGE_TYPES)
@@ -199,7 +200,7 @@ public class ContentAnalysisSearchLiveItem {
   }
 
 
-  public ContentAnalysisSearchLiveItem urlRank(Integer urlRank) {
+  public ContentAnalysisSearchLiveItem urlRank(BigDecimal urlRank) {
     this.urlRank = urlRank;
     return this;
   }
@@ -209,16 +210,16 @@ public class ContentAnalysisSearchLiveItem {
    * @return urlRank
    */
   @javax.annotation.Nullable
-  public Integer getUrlRank() {
+  public BigDecimal getUrlRank() {
     return urlRank;
   }
 
-  public void setUrlRank(Integer urlRank) {
+  public void setUrlRank(BigDecimal urlRank) {
     this.urlRank = urlRank;
   }
 
 
-  public ContentAnalysisSearchLiveItem spamScore(String spamScore) {
+  public ContentAnalysisSearchLiveItem spamScore(BigDecimal spamScore) {
     this.spamScore = spamScore;
     return this;
   }
@@ -228,16 +229,16 @@ public class ContentAnalysisSearchLiveItem {
    * @return spamScore
    */
   @javax.annotation.Nullable
-  public String getSpamScore() {
+  public BigDecimal getSpamScore() {
     return spamScore;
   }
 
-  public void setSpamScore(String spamScore) {
+  public void setSpamScore(BigDecimal spamScore) {
     this.spamScore = spamScore;
   }
 
 
-  public ContentAnalysisSearchLiveItem domainRank(String domainRank) {
+  public ContentAnalysisSearchLiveItem domainRank(BigDecimal domainRank) {
     this.domainRank = domainRank;
     return this;
   }
@@ -247,11 +248,11 @@ public class ContentAnalysisSearchLiveItem {
    * @return domainRank
    */
   @javax.annotation.Nullable
-  public String getDomainRank() {
+  public BigDecimal getDomainRank() {
     return domainRank;
   }
 
-  public void setDomainRank(String domainRank) {
+  public void setDomainRank(BigDecimal domainRank) {
     this.domainRank = domainRank;
   }
 
@@ -313,7 +314,7 @@ public class ContentAnalysisSearchLiveItem {
   }
 
 
-  public ContentAnalysisSearchLiveItem score(String score) {
+  public ContentAnalysisSearchLiveItem score(BigDecimal score) {
     this.score = score;
     return this;
   }
@@ -323,21 +324,21 @@ public class ContentAnalysisSearchLiveItem {
    * @return score
    */
   @javax.annotation.Nullable
-  public String getScore() {
+  public BigDecimal getScore() {
     return score;
   }
 
-  public void setScore(String score) {
+  public void setScore(BigDecimal score) {
     this.score = score;
   }
 
 
-  public ContentAnalysisSearchLiveItem pageCategory(List<Integer> pageCategory) {
+  public ContentAnalysisSearchLiveItem pageCategory(List<BigDecimal> pageCategory) {
     this.pageCategory = pageCategory;
     return this;
   }
 
-  public ContentAnalysisSearchLiveItem addPageCategoryItem(Integer pageCategoryItem) {
+  public ContentAnalysisSearchLiveItem addPageCategoryItem(BigDecimal pageCategoryItem) {
     if (this.pageCategory == null) {
       this.pageCategory = new ArrayList<>();
     }
@@ -350,11 +351,11 @@ public class ContentAnalysisSearchLiveItem {
    * @return pageCategory
    */
   @javax.annotation.Nullable
-  public List<Integer> getPageCategory() {
+  public List<BigDecimal> getPageCategory() {
     return pageCategory;
   }
 
-  public void setPageCategory(List<Integer> pageCategory) {
+  public void setPageCategory(List<BigDecimal> pageCategory) {
     this.pageCategory = pageCategory;
   }
 
@@ -637,12 +638,6 @@ public class ContentAnalysisSearchLiveItem {
       if ((jsonObj.get("main_domain") != null && !jsonObj.get("main_domain").isJsonNull()) && !jsonObj.get("main_domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `main_domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("main_domain").toString()));
       }
-      if ((jsonObj.get("spam_score") != null && !jsonObj.get("spam_score").isJsonNull()) && !jsonObj.get("spam_score").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `spam_score` to be a primitive type in the JSON string but got `%s`", jsonObj.get("spam_score").toString()));
-      }
-      if ((jsonObj.get("domain_rank") != null && !jsonObj.get("domain_rank").isJsonNull()) && !jsonObj.get("domain_rank").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `domain_rank` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain_rank").toString()));
-      }
       if ((jsonObj.get("fetch_time") != null && !jsonObj.get("fetch_time").isJsonNull()) && !jsonObj.get("fetch_time").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `fetch_time` to be a primitive type in the JSON string but got `%s`", jsonObj.get("fetch_time").toString()));
       }
@@ -651,9 +646,6 @@ public class ContentAnalysisSearchLiveItem {
       }
       if ((jsonObj.get("language") != null && !jsonObj.get("language").isJsonNull()) && !jsonObj.get("language").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language").toString()));
-      }
-      if ((jsonObj.get("score") != null && !jsonObj.get("score").isJsonNull()) && !jsonObj.get("score").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `score` to be a primitive type in the JSON string but got `%s`", jsonObj.get("score").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("page_category") != null && !jsonObj.get("page_category").isJsonNull() && !jsonObj.get("page_category").isJsonArray()) {

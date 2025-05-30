@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * RatingElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RatingElement {
   public static final String SERIALIZED_NAME_RATING_TYPE = "rating_type";
   @SerializedName(SERIALIZED_NAME_RATING_TYPE)
@@ -62,7 +62,7 @@ public class RatingElement {
 
   public static final String SERIALIZED_NAME_VOTES_COUNT = "votes_count";
   @SerializedName(SERIALIZED_NAME_VOTES_COUNT)
-  private Long votesCount;
+  private BigDecimal votesCount;
 
   public static final String SERIALIZED_NAME_RATING_MAX = "rating_max";
   @SerializedName(SERIALIZED_NAME_RATING_MAX)
@@ -117,7 +117,7 @@ public class RatingElement {
   }
 
 
-  public RatingElement votesCount(Long votesCount) {
+  public RatingElement votesCount(BigDecimal votesCount) {
     this.votesCount = votesCount;
     return this;
   }
@@ -127,11 +127,11 @@ public class RatingElement {
    * @return votesCount
    */
   @javax.annotation.Nullable
-  public Long getVotesCount() {
+  public BigDecimal getVotesCount() {
     return votesCount;
   }
 
-  public void setVotesCount(Long votesCount) {
+  public void setVotesCount(BigDecimal votesCount) {
     this.votesCount = votesCount;
   }
 

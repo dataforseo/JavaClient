@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * QuestionsAndAnswersElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class QuestionsAndAnswersElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -77,7 +78,7 @@ public class QuestionsAndAnswersElement {
 
   public static final String SERIALIZED_NAME_VOTES = "votes";
   @SerializedName(SERIALIZED_NAME_VOTES)
-  private Integer votes;
+  private BigDecimal votes;
 
   public QuestionsAndAnswersElement() {
   }
@@ -196,7 +197,7 @@ public class QuestionsAndAnswersElement {
   }
 
 
-  public QuestionsAndAnswersElement votes(Integer votes) {
+  public QuestionsAndAnswersElement votes(BigDecimal votes) {
     this.votes = votes;
     return this;
   }
@@ -206,11 +207,11 @@ public class QuestionsAndAnswersElement {
    * @return votes
    */
   @javax.annotation.Nullable
-  public Integer getVotes() {
+  public BigDecimal getVotes() {
     return votes;
   }
 
-  public void setVotes(Integer votes) {
+  public void setVotes(BigDecimal votes) {
     this.votes = votes;
   }
 

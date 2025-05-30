@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.LinkElement;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,16 +55,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * AnswerBoxSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AnswerBoxSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
   private List<String> text;
@@ -78,44 +71,6 @@ public class AnswerBoxSerpElementItem extends BaseSerpElementItem {
 
   public AnswerBoxSerpElementItem() {
   }
-
-  public AnswerBoxSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public AnswerBoxSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
 
   public AnswerBoxSerpElementItem text(List<String> text) {
     this.text = text;
@@ -244,9 +199,7 @@ public class AnswerBoxSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     AnswerBoxSerpElementItem answerBoxSerpElementItem = (AnswerBoxSerpElementItem) o;
-    return Objects.equals(this.position, answerBoxSerpElementItem.position) &&
-        Objects.equals(this.xpath, answerBoxSerpElementItem.xpath) &&
-        Objects.equals(this.text, answerBoxSerpElementItem.text) &&
+    return Objects.equals(this.text, answerBoxSerpElementItem.text) &&
         Objects.equals(this.links, answerBoxSerpElementItem.links) &&
         Objects.equals(this.rectangle, answerBoxSerpElementItem.rectangle)&&
         Objects.equals(this.additionalProperties, answerBoxSerpElementItem.additionalProperties) &&
@@ -259,7 +212,7 @@ public class AnswerBoxSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, text, links, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(text, links, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -274,8 +227,6 @@ public class AnswerBoxSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class AnswerBoxSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
@@ -328,12 +279,6 @@ public class AnswerBoxSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       // ensure the optional json data is an array if present
       if (jsonObj.get("text") != null && !jsonObj.get("text").isJsonNull() && !jsonObj.get("text").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `text` to be an array in the JSON string but got `%s`", jsonObj.get("text").toString()));

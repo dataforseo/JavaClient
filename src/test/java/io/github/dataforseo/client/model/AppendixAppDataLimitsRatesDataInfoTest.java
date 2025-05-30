@@ -19,7 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixBusinessListingsBusinessDataLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;

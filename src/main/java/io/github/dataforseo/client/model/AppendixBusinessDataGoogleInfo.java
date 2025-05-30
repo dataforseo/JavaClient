@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixBusinessDataGoogleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixBusinessDataGoogleInfo {
   public static final String SERIALIZED_NAME_MY_BUSINESS_INFO = "my_business_info";
   @SerializedName(SERIALIZED_NAME_MY_BUSINESS_INFO)
@@ -62,7 +62,7 @@ public class AppendixBusinessDataGoogleInfo {
 
   public static final String SERIALIZED_NAME_HOTEL_INFO = "hotel_info";
   @SerializedName(SERIALIZED_NAME_HOTEL_INFO)
-  private AppendixSerpsRatesDataInfo hotelInfo;
+  private AppendixSerpDaysRatesDataInfo hotelInfo;
 
   public static final String SERIALIZED_NAME_HOTEL_SEARCHES = "hotel_searches";
   @SerializedName(SERIALIZED_NAME_HOTEL_SEARCHES)
@@ -121,7 +121,7 @@ public class AppendixBusinessDataGoogleInfo {
   }
 
 
-  public AppendixBusinessDataGoogleInfo hotelInfo(AppendixSerpsRatesDataInfo hotelInfo) {
+  public AppendixBusinessDataGoogleInfo hotelInfo(AppendixSerpDaysRatesDataInfo hotelInfo) {
     this.hotelInfo = hotelInfo;
     return this;
   }
@@ -131,11 +131,11 @@ public class AppendixBusinessDataGoogleInfo {
    * @return hotelInfo
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getHotelInfo() {
+  public AppendixSerpDaysRatesDataInfo getHotelInfo() {
     return hotelInfo;
   }
 
-  public void setHotelInfo(AppendixSerpsRatesDataInfo hotelInfo) {
+  public void setHotelInfo(AppendixSerpDaysRatesDataInfo hotelInfo) {
     this.hotelInfo = hotelInfo;
   }
 
@@ -354,7 +354,7 @@ public class AppendixBusinessDataGoogleInfo {
       }
       // validate the optional field `hotel_info`
       if (jsonObj.get("hotel_info") != null && !jsonObj.get("hotel_info").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("hotel_info"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("hotel_info"));
       }
       // validate the optional field `hotel_searches`
       if (jsonObj.get("hotel_searches") != null && !jsonObj.get("hotel_searches").isJsonNull()) {

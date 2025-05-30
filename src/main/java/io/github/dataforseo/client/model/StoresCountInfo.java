@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * StoresCountInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class StoresCountInfo {
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private String count;
+  private BigDecimal count;
 
   public static final String SERIALIZED_NAME_DISPLAYED_TEXT = "displayed_text";
   @SerializedName(SERIALIZED_NAME_DISPLAYED_TEXT)
@@ -66,7 +67,7 @@ public class StoresCountInfo {
   public StoresCountInfo() {
   }
 
-  public StoresCountInfo count(String count) {
+  public StoresCountInfo count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -76,11 +77,11 @@ public class StoresCountInfo {
    * @return count
    */
   @javax.annotation.Nullable
-  public String getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(String count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
   }
 
@@ -250,9 +251,6 @@ public class StoresCountInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("count") != null && !jsonObj.get("count").isJsonNull()) && !jsonObj.get("count").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `count` to be a primitive type in the JSON string but got `%s`", jsonObj.get("count").toString()));
-      }
       if ((jsonObj.get("displayed_text") != null && !jsonObj.get("displayed_text").isJsonNull()) && !jsonObj.get("displayed_text").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `displayed_text` to be a primitive type in the JSON string but got `%s`", jsonObj.get("displayed_text").toString()));
       }

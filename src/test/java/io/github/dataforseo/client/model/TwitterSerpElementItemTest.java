@@ -22,6 +22,7 @@ import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.Rectangle;
 import io.github.dataforseo.client.model.TwitterElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

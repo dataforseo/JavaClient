@@ -362,7 +362,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌‌ Live Bing local_pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash&#39;
+     * ‌‌ Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1252,7 +1252,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌ Live Google local_finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash&#39;
+     * ‌ Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */
@@ -1288,7 +1288,7 @@ public class SerpApiTest {
     }
 
     /**
-     * ‌‌ Google local_finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash&#39;
+     * ‌‌ Google Local Finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash&#39;
      *
      * @throws ApiException if the Api call fails
      */

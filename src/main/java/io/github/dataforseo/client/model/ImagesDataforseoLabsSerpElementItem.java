@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.ImagesElement;
 import io.github.dataforseo.client.model.RelatedImageSearchesElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ImagesDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -74,7 +75,7 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
 
   public static final String SERIALIZED_NAME_RELATED_IMAGE_SEARCHES = "related_image_searches";
   @SerializedName(SERIALIZED_NAME_RELATED_IMAGE_SEARCHES)
-  private RelatedImageSearchesElement relatedImageSearches;
+  private List<RelatedImageSearchesElement> relatedImageSearches;
 
   public ImagesDataforseoLabsSerpElementItem() {
   }
@@ -123,7 +124,7 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
   }
 
   /**
-   * relevant URL
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -150,7 +151,7 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
   }
 
   /**
-   * additional items present in the element if there are none, equals null
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable
@@ -163,21 +164,29 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
   }
 
 
-  public ImagesDataforseoLabsSerpElementItem relatedImageSearches(RelatedImageSearchesElement relatedImageSearches) {
+  public ImagesDataforseoLabsSerpElementItem relatedImageSearches(List<RelatedImageSearchesElement> relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
     return this;
   }
 
+  public ImagesDataforseoLabsSerpElementItem addRelatedImageSearchesItem(RelatedImageSearchesElement relatedImageSearchesItem) {
+    if (this.relatedImageSearches == null) {
+      this.relatedImageSearches = new ArrayList<>();
+    }
+    this.relatedImageSearches.add(relatedImageSearchesItem);
+    return this;
+  }
+
   /**
-   * Get relatedImageSearches
+   * contains keywords and images related to the specified search term if there are none, equals null
    * @return relatedImageSearches
    */
   @javax.annotation.Nullable
-  public RelatedImageSearchesElement getRelatedImageSearches() {
+  public List<RelatedImageSearchesElement> getRelatedImageSearches() {
     return relatedImageSearches;
   }
 
-  public void setRelatedImageSearches(RelatedImageSearchesElement relatedImageSearches) {
+  public void setRelatedImageSearches(List<RelatedImageSearchesElement> relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
   }
 
@@ -345,9 +354,19 @@ public class ImagesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
           };
         }
       }
-      // validate the optional field `related_image_searches`
       if (jsonObj.get("related_image_searches") != null && !jsonObj.get("related_image_searches").isJsonNull()) {
-        RelatedImageSearchesElement.validateJsonElement(jsonObj.get("related_image_searches"));
+        JsonArray jsonArrayrelatedImageSearches = jsonObj.getAsJsonArray("related_image_searches");
+        if (jsonArrayrelatedImageSearches != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("related_image_searches").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `related_image_searches` to be an array in the JSON string but got `%s`", jsonObj.get("related_image_searches").toString()));
+          }
+
+          // validate the optional field `related_image_searches` (array)
+          for (int i = 0; i < jsonArrayrelatedImageSearches.size(); i++) {
+            RelatedImageSearchesElement.validateJsonElement(jsonArrayrelatedImageSearches.get(i));
+          };
+        }
       }
   }
 

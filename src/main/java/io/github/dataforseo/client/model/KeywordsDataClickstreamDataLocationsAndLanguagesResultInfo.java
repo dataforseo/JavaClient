@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AvailableLanguages;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,11 +53,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo {
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
@@ -64,7 +65,7 @@ public class KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
-  private Integer locationCodeParent;
+  private String locationCodeParent;
 
   public static final String SERIALIZED_NAME_COUNTRY_ISO_CODE = "country_iso_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_ISO_CODE)
@@ -81,7 +82,7 @@ public class KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo {
   public KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo() {
   }
 
-  public KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo locationCode(Integer locationCode) {
+  public KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -91,11 +92,11 @@ public class KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -119,7 +120,7 @@ public class KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo {
   }
 
 
-  public KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo locationCodeParent(Integer locationCodeParent) {
+  public KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo locationCodeParent(String locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
     return this;
   }
@@ -129,11 +130,11 @@ public class KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo {
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
-  public Integer getLocationCodeParent() {
+  public String getLocationCodeParent() {
     return locationCodeParent;
   }
 
-  public void setLocationCodeParent(Integer locationCodeParent) {
+  public void setLocationCodeParent(String locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
   }
 
@@ -341,6 +342,9 @@ public class KeywordsDataClickstreamDataLocationsAndLanguagesResultInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
+      }
+      if ((jsonObj.get("location_code_parent") != null && !jsonObj.get("location_code_parent").isJsonNull()) && !jsonObj.get("location_code_parent").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `location_code_parent` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_code_parent").toString()));
       }
       if ((jsonObj.get("country_iso_code") != null && !jsonObj.get("country_iso_code").isJsonNull()) && !jsonObj.get("country_iso_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `country_iso_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("country_iso_code").toString()));

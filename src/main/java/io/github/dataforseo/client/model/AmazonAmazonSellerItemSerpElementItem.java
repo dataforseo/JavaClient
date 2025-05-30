@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
 import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -53,12 +54,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonSellerItemSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonSellerItemSerpElementItem extends BaseAmazonSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
   public static final String SERIALIZED_NAME_SELLER_NAME = "seller_name";
   @SerializedName(SERIALIZED_NAME_SELLER_NAME)
   private String sellerName;
@@ -93,25 +90,6 @@ public class AmazonAmazonSellerItemSerpElementItem extends BaseAmazonSerpElement
 
   public AmazonAmazonSellerItemSerpElementItem() {
   }
-
-  public AmazonAmazonSellerItemSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * alignment of the element in SERP possible values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
 
   public AmazonAmazonSellerItemSerpElementItem sellerName(String sellerName) {
     this.sellerName = sellerName;
@@ -319,8 +297,7 @@ public class AmazonAmazonSellerItemSerpElementItem extends BaseAmazonSerpElement
       return false;
     }
     AmazonAmazonSellerItemSerpElementItem amazonAmazonSellerItemSerpElementItem = (AmazonAmazonSellerItemSerpElementItem) o;
-    return Objects.equals(this.position, amazonAmazonSellerItemSerpElementItem.position) &&
-        Objects.equals(this.sellerName, amazonAmazonSellerItemSerpElementItem.sellerName) &&
+    return Objects.equals(this.sellerName, amazonAmazonSellerItemSerpElementItem.sellerName) &&
         Objects.equals(this.sellerUrl, amazonAmazonSellerItemSerpElementItem.sellerUrl) &&
         Objects.equals(this.shipsFrom, amazonAmazonSellerItemSerpElementItem.shipsFrom) &&
         Objects.equals(this.price, amazonAmazonSellerItemSerpElementItem.price) &&
@@ -338,7 +315,7 @@ public class AmazonAmazonSellerItemSerpElementItem extends BaseAmazonSerpElement
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, sellerName, sellerUrl, shipsFrom, price, rating, condition, conditionDescription, deliveryInfo, super.hashCode(), additionalProperties);
+    return Objects.hash(sellerName, sellerUrl, shipsFrom, price, rating, condition, conditionDescription, deliveryInfo, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -353,7 +330,6 @@ public class AmazonAmazonSellerItemSerpElementItem extends BaseAmazonSerpElement
     StringBuilder sb = new StringBuilder();
     sb.append("class AmazonAmazonSellerItemSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    sellerName: ").append(toIndentedString(sellerName)).append("\n");
     sb.append("    sellerUrl: ").append(toIndentedString(sellerUrl)).append("\n");
     sb.append("    shipsFrom: ").append(toIndentedString(shipsFrom)).append("\n");
@@ -388,8 +364,8 @@ public class AmazonAmazonSellerItemSerpElementItem extends BaseAmazonSerpElement
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
-    openapiFields.add("xpath");
     openapiFields.add("position");
+    openapiFields.add("xpath");
     openapiFields.add("seller_name");
     openapiFields.add("seller_url");
     openapiFields.add("ships_from");
@@ -416,9 +392,6 @@ public class AmazonAmazonSellerItemSerpElementItem extends BaseAmazonSerpElement
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
       if ((jsonObj.get("seller_name") != null && !jsonObj.get("seller_name").isJsonNull()) && !jsonObj.get("seller_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `seller_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("seller_name").toString()));
       }

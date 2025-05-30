@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KnowledgeGraphLinkElementInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KnowledgeGraphLinkElementInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -103,7 +103,7 @@ public class KnowledgeGraphLinkElementInfo {
   }
 
   /**
-   * title of the result in SERP
+   * title of the item
    * @return title
    */
   @javax.annotation.Nullable
@@ -122,7 +122,7 @@ public class KnowledgeGraphLinkElementInfo {
   }
 
   /**
-   * sitelink URL
+   * URL link
    * @return url
    */
   @javax.annotation.Nullable
@@ -141,7 +141,7 @@ public class KnowledgeGraphLinkElementInfo {
   }
 
   /**
-   * domain in SERP
+   * domain in SERP of the Ad element
    * @return domain
    */
   @javax.annotation.Nullable

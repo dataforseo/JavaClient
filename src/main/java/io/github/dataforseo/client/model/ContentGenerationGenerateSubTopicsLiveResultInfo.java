@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,19 +52,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentGenerationGenerateSubTopicsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentGenerationGenerateSubTopicsLiveResultInfo {
   public static final String SERIALIZED_NAME_INPUT_TOKENS = "input_tokens";
   @SerializedName(SERIALIZED_NAME_INPUT_TOKENS)
-  private Integer inputTokens;
+  private BigDecimal inputTokens;
 
   public static final String SERIALIZED_NAME_OUTPUT_TOKENS = "output_tokens";
   @SerializedName(SERIALIZED_NAME_OUTPUT_TOKENS)
-  private Integer outputTokens;
+  private BigDecimal outputTokens;
 
   public static final String SERIALIZED_NAME_NEW_TOKENS = "new_tokens";
   @SerializedName(SERIALIZED_NAME_NEW_TOKENS)
-  private Integer newTokens;
+  private BigDecimal newTokens;
 
   public static final String SERIALIZED_NAME_SUB_TOPICS = "sub_topics";
   @SerializedName(SERIALIZED_NAME_SUB_TOPICS)
@@ -72,7 +73,7 @@ public class ContentGenerationGenerateSubTopicsLiveResultInfo {
   public ContentGenerationGenerateSubTopicsLiveResultInfo() {
   }
 
-  public ContentGenerationGenerateSubTopicsLiveResultInfo inputTokens(Integer inputTokens) {
+  public ContentGenerationGenerateSubTopicsLiveResultInfo inputTokens(BigDecimal inputTokens) {
     this.inputTokens = inputTokens;
     return this;
   }
@@ -82,16 +83,16 @@ public class ContentGenerationGenerateSubTopicsLiveResultInfo {
    * @return inputTokens
    */
   @javax.annotation.Nullable
-  public Integer getInputTokens() {
+  public BigDecimal getInputTokens() {
     return inputTokens;
   }
 
-  public void setInputTokens(Integer inputTokens) {
+  public void setInputTokens(BigDecimal inputTokens) {
     this.inputTokens = inputTokens;
   }
 
 
-  public ContentGenerationGenerateSubTopicsLiveResultInfo outputTokens(Integer outputTokens) {
+  public ContentGenerationGenerateSubTopicsLiveResultInfo outputTokens(BigDecimal outputTokens) {
     this.outputTokens = outputTokens;
     return this;
   }
@@ -101,16 +102,16 @@ public class ContentGenerationGenerateSubTopicsLiveResultInfo {
    * @return outputTokens
    */
   @javax.annotation.Nullable
-  public Integer getOutputTokens() {
+  public BigDecimal getOutputTokens() {
     return outputTokens;
   }
 
-  public void setOutputTokens(Integer outputTokens) {
+  public void setOutputTokens(BigDecimal outputTokens) {
     this.outputTokens = outputTokens;
   }
 
 
-  public ContentGenerationGenerateSubTopicsLiveResultInfo newTokens(Integer newTokens) {
+  public ContentGenerationGenerateSubTopicsLiveResultInfo newTokens(BigDecimal newTokens) {
     this.newTokens = newTokens;
     return this;
   }
@@ -120,11 +121,11 @@ public class ContentGenerationGenerateSubTopicsLiveResultInfo {
    * @return newTokens
    */
   @javax.annotation.Nullable
-  public Integer getNewTokens() {
+  public BigDecimal getNewTokens() {
     return newTokens;
   }
 
-  public void setNewTokens(Integer newTokens) {
+  public void setNewTokens(BigDecimal newTokens) {
     this.newTokens = newTokens;
   }
 

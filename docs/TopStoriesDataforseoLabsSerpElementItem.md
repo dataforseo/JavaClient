@@ -7,7 +7,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**items** | [**List&lt;TopStoriesElement&gt;**](TopStoriesElement.md) | additional items present in the element if there are none, equals null |  [optional] |
+|**seType** | **String** | search engine type |  [optional] |
+|**title** | **String** | title of the result in SERP |  [optional] |
+|**items** | [**List&lt;TopStoriesElement&gt;**](TopStoriesElement.md) | elements of search results found in SERP |  [optional] |
 
 
 

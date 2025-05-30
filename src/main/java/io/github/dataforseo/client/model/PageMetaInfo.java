@@ -20,9 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.HtmlContentInfo;
+import io.github.dataforseo.client.model.HunspellInfo;
 import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
-import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -56,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * PageMetaInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PageMetaInfo {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -64,7 +65,7 @@ public class PageMetaInfo {
 
   public static final String SERIALIZED_NAME_CHARSET = "charset";
   @SerializedName(SERIALIZED_NAME_CHARSET)
-  private Integer charset;
+  private BigDecimal charset;
 
   public static final String SERIALIZED_NAME_FOLLOW = "follow";
   @SerializedName(SERIALIZED_NAME_FOLLOW)
@@ -96,55 +97,55 @@ public class PageMetaInfo {
 
   public static final String SERIALIZED_NAME_INTERNAL_LINKS_COUNT = "internal_links_count";
   @SerializedName(SERIALIZED_NAME_INTERNAL_LINKS_COUNT)
-  private Long internalLinksCount;
+  private BigDecimal internalLinksCount;
 
   public static final String SERIALIZED_NAME_EXTERNAL_LINKS_COUNT = "external_links_count";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_LINKS_COUNT)
-  private Long externalLinksCount;
+  private BigDecimal externalLinksCount;
 
   public static final String SERIALIZED_NAME_INBOUND_LINKS_COUNT = "inbound_links_count";
   @SerializedName(SERIALIZED_NAME_INBOUND_LINKS_COUNT)
-  private Long inboundLinksCount;
+  private BigDecimal inboundLinksCount;
 
   public static final String SERIALIZED_NAME_IMAGES_COUNT = "images_count";
   @SerializedName(SERIALIZED_NAME_IMAGES_COUNT)
-  private Long imagesCount;
+  private BigDecimal imagesCount;
 
   public static final String SERIALIZED_NAME_IMAGES_SIZE = "images_size";
   @SerializedName(SERIALIZED_NAME_IMAGES_SIZE)
-  private Integer imagesSize;
+  private BigDecimal imagesSize;
 
   public static final String SERIALIZED_NAME_SCRIPTS_COUNT = "scripts_count";
   @SerializedName(SERIALIZED_NAME_SCRIPTS_COUNT)
-  private Long scriptsCount;
+  private BigDecimal scriptsCount;
 
   public static final String SERIALIZED_NAME_SCRIPTS_SIZE = "scripts_size";
   @SerializedName(SERIALIZED_NAME_SCRIPTS_SIZE)
-  private Integer scriptsSize;
+  private BigDecimal scriptsSize;
 
   public static final String SERIALIZED_NAME_STYLESHEETS_COUNT = "stylesheets_count";
   @SerializedName(SERIALIZED_NAME_STYLESHEETS_COUNT)
-  private Long stylesheetsCount;
+  private BigDecimal stylesheetsCount;
 
   public static final String SERIALIZED_NAME_STYLESHEETS_SIZE = "stylesheets_size";
   @SerializedName(SERIALIZED_NAME_STYLESHEETS_SIZE)
-  private Integer stylesheetsSize;
+  private BigDecimal stylesheetsSize;
 
   public static final String SERIALIZED_NAME_TITLE_LENGTH = "title_length";
   @SerializedName(SERIALIZED_NAME_TITLE_LENGTH)
-  private Integer titleLength;
+  private BigDecimal titleLength;
 
   public static final String SERIALIZED_NAME_DESCRIPTION_LENGTH = "description_length";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION_LENGTH)
-  private Integer descriptionLength;
+  private BigDecimal descriptionLength;
 
   public static final String SERIALIZED_NAME_RENDER_BLOCKING_SCRIPTS_COUNT = "render_blocking_scripts_count";
   @SerializedName(SERIALIZED_NAME_RENDER_BLOCKING_SCRIPTS_COUNT)
-  private Long renderBlockingScriptsCount;
+  private BigDecimal renderBlockingScriptsCount;
 
   public static final String SERIALIZED_NAME_RENDER_BLOCKING_STYLESHEETS_COUNT = "render_blocking_stylesheets_count";
   @SerializedName(SERIALIZED_NAME_RENDER_BLOCKING_STYLESHEETS_COUNT)
-  private Long renderBlockingStylesheetsCount;
+  private BigDecimal renderBlockingStylesheetsCount;
 
   public static final String SERIALIZED_NAME_CUMULATIVE_LAYOUT_SHIFT = "cumulative_layout_shift";
   @SerializedName(SERIALIZED_NAME_CUMULATIVE_LAYOUT_SHIFT)
@@ -168,7 +169,7 @@ public class PageMetaInfo {
 
   public static final String SERIALIZED_NAME_SPELL = "spell";
   @SerializedName(SERIALIZED_NAME_SPELL)
-  private SpellInfo spell;
+  private HunspellInfo spell;
 
   public static final String SERIALIZED_NAME_SOCIAL_MEDIA_TAGS = "social_media_tags";
   @SerializedName(SERIALIZED_NAME_SOCIAL_MEDIA_TAGS)
@@ -200,7 +201,7 @@ public class PageMetaInfo {
   }
 
 
-  public PageMetaInfo charset(Integer charset) {
+  public PageMetaInfo charset(BigDecimal charset) {
     this.charset = charset;
     return this;
   }
@@ -210,11 +211,11 @@ public class PageMetaInfo {
    * @return charset
    */
   @javax.annotation.Nullable
-  public Integer getCharset() {
+  public BigDecimal getCharset() {
     return charset;
   }
 
-  public void setCharset(Integer charset) {
+  public void setCharset(BigDecimal charset) {
     this.charset = charset;
   }
 
@@ -360,7 +361,7 @@ public class PageMetaInfo {
   }
 
 
-  public PageMetaInfo internalLinksCount(Long internalLinksCount) {
+  public PageMetaInfo internalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
     return this;
   }
@@ -370,16 +371,16 @@ public class PageMetaInfo {
    * @return internalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getInternalLinksCount() {
+  public BigDecimal getInternalLinksCount() {
     return internalLinksCount;
   }
 
-  public void setInternalLinksCount(Long internalLinksCount) {
+  public void setInternalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
   }
 
 
-  public PageMetaInfo externalLinksCount(Long externalLinksCount) {
+  public PageMetaInfo externalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
     return this;
   }
@@ -389,16 +390,16 @@ public class PageMetaInfo {
    * @return externalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getExternalLinksCount() {
+  public BigDecimal getExternalLinksCount() {
     return externalLinksCount;
   }
 
-  public void setExternalLinksCount(Long externalLinksCount) {
+  public void setExternalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
   }
 
 
-  public PageMetaInfo inboundLinksCount(Long inboundLinksCount) {
+  public PageMetaInfo inboundLinksCount(BigDecimal inboundLinksCount) {
     this.inboundLinksCount = inboundLinksCount;
     return this;
   }
@@ -408,16 +409,16 @@ public class PageMetaInfo {
    * @return inboundLinksCount
    */
   @javax.annotation.Nullable
-  public Long getInboundLinksCount() {
+  public BigDecimal getInboundLinksCount() {
     return inboundLinksCount;
   }
 
-  public void setInboundLinksCount(Long inboundLinksCount) {
+  public void setInboundLinksCount(BigDecimal inboundLinksCount) {
     this.inboundLinksCount = inboundLinksCount;
   }
 
 
-  public PageMetaInfo imagesCount(Long imagesCount) {
+  public PageMetaInfo imagesCount(BigDecimal imagesCount) {
     this.imagesCount = imagesCount;
     return this;
   }
@@ -427,16 +428,16 @@ public class PageMetaInfo {
    * @return imagesCount
    */
   @javax.annotation.Nullable
-  public Long getImagesCount() {
+  public BigDecimal getImagesCount() {
     return imagesCount;
   }
 
-  public void setImagesCount(Long imagesCount) {
+  public void setImagesCount(BigDecimal imagesCount) {
     this.imagesCount = imagesCount;
   }
 
 
-  public PageMetaInfo imagesSize(Integer imagesSize) {
+  public PageMetaInfo imagesSize(BigDecimal imagesSize) {
     this.imagesSize = imagesSize;
     return this;
   }
@@ -446,16 +447,16 @@ public class PageMetaInfo {
    * @return imagesSize
    */
   @javax.annotation.Nullable
-  public Integer getImagesSize() {
+  public BigDecimal getImagesSize() {
     return imagesSize;
   }
 
-  public void setImagesSize(Integer imagesSize) {
+  public void setImagesSize(BigDecimal imagesSize) {
     this.imagesSize = imagesSize;
   }
 
 
-  public PageMetaInfo scriptsCount(Long scriptsCount) {
+  public PageMetaInfo scriptsCount(BigDecimal scriptsCount) {
     this.scriptsCount = scriptsCount;
     return this;
   }
@@ -465,16 +466,16 @@ public class PageMetaInfo {
    * @return scriptsCount
    */
   @javax.annotation.Nullable
-  public Long getScriptsCount() {
+  public BigDecimal getScriptsCount() {
     return scriptsCount;
   }
 
-  public void setScriptsCount(Long scriptsCount) {
+  public void setScriptsCount(BigDecimal scriptsCount) {
     this.scriptsCount = scriptsCount;
   }
 
 
-  public PageMetaInfo scriptsSize(Integer scriptsSize) {
+  public PageMetaInfo scriptsSize(BigDecimal scriptsSize) {
     this.scriptsSize = scriptsSize;
     return this;
   }
@@ -484,16 +485,16 @@ public class PageMetaInfo {
    * @return scriptsSize
    */
   @javax.annotation.Nullable
-  public Integer getScriptsSize() {
+  public BigDecimal getScriptsSize() {
     return scriptsSize;
   }
 
-  public void setScriptsSize(Integer scriptsSize) {
+  public void setScriptsSize(BigDecimal scriptsSize) {
     this.scriptsSize = scriptsSize;
   }
 
 
-  public PageMetaInfo stylesheetsCount(Long stylesheetsCount) {
+  public PageMetaInfo stylesheetsCount(BigDecimal stylesheetsCount) {
     this.stylesheetsCount = stylesheetsCount;
     return this;
   }
@@ -503,16 +504,16 @@ public class PageMetaInfo {
    * @return stylesheetsCount
    */
   @javax.annotation.Nullable
-  public Long getStylesheetsCount() {
+  public BigDecimal getStylesheetsCount() {
     return stylesheetsCount;
   }
 
-  public void setStylesheetsCount(Long stylesheetsCount) {
+  public void setStylesheetsCount(BigDecimal stylesheetsCount) {
     this.stylesheetsCount = stylesheetsCount;
   }
 
 
-  public PageMetaInfo stylesheetsSize(Integer stylesheetsSize) {
+  public PageMetaInfo stylesheetsSize(BigDecimal stylesheetsSize) {
     this.stylesheetsSize = stylesheetsSize;
     return this;
   }
@@ -522,16 +523,16 @@ public class PageMetaInfo {
    * @return stylesheetsSize
    */
   @javax.annotation.Nullable
-  public Integer getStylesheetsSize() {
+  public BigDecimal getStylesheetsSize() {
     return stylesheetsSize;
   }
 
-  public void setStylesheetsSize(Integer stylesheetsSize) {
+  public void setStylesheetsSize(BigDecimal stylesheetsSize) {
     this.stylesheetsSize = stylesheetsSize;
   }
 
 
-  public PageMetaInfo titleLength(Integer titleLength) {
+  public PageMetaInfo titleLength(BigDecimal titleLength) {
     this.titleLength = titleLength;
     return this;
   }
@@ -541,16 +542,16 @@ public class PageMetaInfo {
    * @return titleLength
    */
   @javax.annotation.Nullable
-  public Integer getTitleLength() {
+  public BigDecimal getTitleLength() {
     return titleLength;
   }
 
-  public void setTitleLength(Integer titleLength) {
+  public void setTitleLength(BigDecimal titleLength) {
     this.titleLength = titleLength;
   }
 
 
-  public PageMetaInfo descriptionLength(Integer descriptionLength) {
+  public PageMetaInfo descriptionLength(BigDecimal descriptionLength) {
     this.descriptionLength = descriptionLength;
     return this;
   }
@@ -560,16 +561,16 @@ public class PageMetaInfo {
    * @return descriptionLength
    */
   @javax.annotation.Nullable
-  public Integer getDescriptionLength() {
+  public BigDecimal getDescriptionLength() {
     return descriptionLength;
   }
 
-  public void setDescriptionLength(Integer descriptionLength) {
+  public void setDescriptionLength(BigDecimal descriptionLength) {
     this.descriptionLength = descriptionLength;
   }
 
 
-  public PageMetaInfo renderBlockingScriptsCount(Long renderBlockingScriptsCount) {
+  public PageMetaInfo renderBlockingScriptsCount(BigDecimal renderBlockingScriptsCount) {
     this.renderBlockingScriptsCount = renderBlockingScriptsCount;
     return this;
   }
@@ -579,16 +580,16 @@ public class PageMetaInfo {
    * @return renderBlockingScriptsCount
    */
   @javax.annotation.Nullable
-  public Long getRenderBlockingScriptsCount() {
+  public BigDecimal getRenderBlockingScriptsCount() {
     return renderBlockingScriptsCount;
   }
 
-  public void setRenderBlockingScriptsCount(Long renderBlockingScriptsCount) {
+  public void setRenderBlockingScriptsCount(BigDecimal renderBlockingScriptsCount) {
     this.renderBlockingScriptsCount = renderBlockingScriptsCount;
   }
 
 
-  public PageMetaInfo renderBlockingStylesheetsCount(Long renderBlockingStylesheetsCount) {
+  public PageMetaInfo renderBlockingStylesheetsCount(BigDecimal renderBlockingStylesheetsCount) {
     this.renderBlockingStylesheetsCount = renderBlockingStylesheetsCount;
     return this;
   }
@@ -598,11 +599,11 @@ public class PageMetaInfo {
    * @return renderBlockingStylesheetsCount
    */
   @javax.annotation.Nullable
-  public Long getRenderBlockingStylesheetsCount() {
+  public BigDecimal getRenderBlockingStylesheetsCount() {
     return renderBlockingStylesheetsCount;
   }
 
-  public void setRenderBlockingStylesheetsCount(Long renderBlockingStylesheetsCount) {
+  public void setRenderBlockingStylesheetsCount(BigDecimal renderBlockingStylesheetsCount) {
     this.renderBlockingStylesheetsCount = renderBlockingStylesheetsCount;
   }
 
@@ -718,7 +719,7 @@ public class PageMetaInfo {
   }
 
 
-  public PageMetaInfo spell(SpellInfo spell) {
+  public PageMetaInfo spell(HunspellInfo spell) {
     this.spell = spell;
     return this;
   }
@@ -728,11 +729,11 @@ public class PageMetaInfo {
    * @return spell
    */
   @javax.annotation.Nullable
-  public SpellInfo getSpell() {
+  public HunspellInfo getSpell() {
     return spell;
   }
 
-  public void setSpell(SpellInfo spell) {
+  public void setSpell(HunspellInfo spell) {
     this.spell = spell;
   }
 
@@ -1026,7 +1027,7 @@ public class PageMetaInfo {
       }
       // validate the optional field `spell`
       if (jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) {
-        SpellInfo.validateJsonElement(jsonObj.get("spell"));
+        HunspellInfo.validateJsonElement(jsonObj.get("spell"));
       }
       // validate the optional field `broken_html`
       if (jsonObj.get("broken_html") != null && !jsonObj.get("broken_html").isJsonNull()) {

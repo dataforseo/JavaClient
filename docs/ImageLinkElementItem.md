@@ -11,7 +11,6 @@
 |**text** | **String** | anchor text |  [optional] |
 |**imageAlt** | **String** | alternative text for the image |  [optional] |
 |**imageSrc** | **String** | url of the image |  [optional] |
-|**pageToStatusCode** | **Integer** | status code of the referenced page status code of the page to which the link is pointing |  [optional] |
 
 
 

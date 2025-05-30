@@ -20,8 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
-import io.github.dataforseo.client.model.RatingInfo;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,15 +52,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleReviewsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_PLACE_ID = "place_id";
   @SerializedName(SERIALIZED_NAME_PLACE_ID)
@@ -76,7 +81,26 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
   public GoogleReviewsDataforseoLabsSerpElementItem() {
   }
 
-  public GoogleReviewsDataforseoLabsSerpElementItem reviewsCount(Long reviewsCount) {
+  public GoogleReviewsDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
+
+  public GoogleReviewsDataforseoLabsSerpElementItem reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -86,16 +110,16 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
 
-  public GoogleReviewsDataforseoLabsSerpElementItem rating(RatingInfo rating) {
+  public GoogleReviewsDataforseoLabsSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -105,11 +129,11 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -158,7 +182,7 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
   /**
-   * google-defined client id unique id of a local establishment; can be used with Google Reviews API to get a full list of reviews
+   * google-defined client id
    * @return cid
    */
   @javax.annotation.Nullable
@@ -225,7 +249,8 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
       return false;
     }
     GoogleReviewsDataforseoLabsSerpElementItem googleReviewsDataforseoLabsSerpElementItem = (GoogleReviewsDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.reviewsCount, googleReviewsDataforseoLabsSerpElementItem.reviewsCount) &&
+    return Objects.equals(this.seType, googleReviewsDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.reviewsCount, googleReviewsDataforseoLabsSerpElementItem.reviewsCount) &&
         Objects.equals(this.rating, googleReviewsDataforseoLabsSerpElementItem.rating) &&
         Objects.equals(this.placeId, googleReviewsDataforseoLabsSerpElementItem.placeId) &&
         Objects.equals(this.feature, googleReviewsDataforseoLabsSerpElementItem.feature) &&
@@ -240,7 +265,7 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
 
   @Override
   public int hashCode() {
-    return Objects.hash(reviewsCount, rating, placeId, feature, cid, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, reviewsCount, rating, placeId, feature, cid, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -255,6 +280,7 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
     StringBuilder sb = new StringBuilder();
     sb.append("class GoogleReviewsDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    reviewsCount: ").append(toIndentedString(reviewsCount)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    placeId: ").append(toIndentedString(placeId)).append("\n");
@@ -288,6 +314,7 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("reviews_count");
     openapiFields.add("rating");
     openapiFields.add("place_id");
@@ -311,9 +338,12 @@ public class GoogleReviewsDataforseoLabsSerpElementItem extends BaseDataforseoLa
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if ((jsonObj.get("place_id") != null && !jsonObj.get("place_id").isJsonNull()) && !jsonObj.get("place_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `place_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("place_id").toString()));

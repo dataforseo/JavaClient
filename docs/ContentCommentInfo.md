@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**rating** | [**ContentRatingInfo**](ContentRatingInfo.md) |  |  [optional] |
-|**title** | **Double** | title of the customer’s comment |  [optional] |
+|**title** | **String** | title of the customer’s comment |  [optional] |
 |**publishDate** | **String** | date when the comment was published |  [optional] |
 |**author** | **String** | author of the comment |  [optional] |
 |**haveForm** | **Boolean** |  |  [optional] |

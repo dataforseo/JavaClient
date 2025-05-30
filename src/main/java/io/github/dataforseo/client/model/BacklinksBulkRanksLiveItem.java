@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksBulkRanksLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksBulkRanksLiveItem {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -57,7 +58,7 @@ public class BacklinksBulkRanksLiveItem {
 
   public static final String SERIALIZED_NAME_RANK = "rank";
   @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
+  private BigDecimal rank;
 
   public BacklinksBulkRanksLiveItem() {
   }
@@ -81,7 +82,7 @@ public class BacklinksBulkRanksLiveItem {
   }
 
 
-  public BacklinksBulkRanksLiveItem rank(Integer rank) {
+  public BacklinksBulkRanksLiveItem rank(BigDecimal rank) {
     this.rank = rank;
     return this;
   }
@@ -91,11 +92,11 @@ public class BacklinksBulkRanksLiveItem {
    * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getRank() {
+  public BigDecimal getRank() {
     return rank;
   }
 
-  public void setRank(Integer rank) {
+  public void setRank(BigDecimal rank) {
     this.rank = rank;
   }
 

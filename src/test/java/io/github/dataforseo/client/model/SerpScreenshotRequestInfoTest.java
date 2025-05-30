@@ -78,4 +78,12 @@ public class SerpScreenshotRequestInfoTest {
         // TODO: test browserScreenScaleFactor
     }
 
+    /**
+     * Test the property 'page'
+     */
+    @Test
+    public void pageTest() {
+        // TODO: test page
+    }
+
 }

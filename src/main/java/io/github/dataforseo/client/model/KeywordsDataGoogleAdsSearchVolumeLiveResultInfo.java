@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleAdsSearchVolumeLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -64,7 +65,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -80,11 +81,11 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
 
   public static final String SERIALIZED_NAME_COMPETITION_INDEX = "competition_index";
   @SerializedName(SERIALIZED_NAME_COMPETITION_INDEX)
-  private Integer competitionIndex;
+  private BigDecimal competitionIndex;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public static final String SERIALIZED_NAME_LOW_TOP_OF_PAGE_BID = "low_top_of_page_bid";
   @SerializedName(SERIALIZED_NAME_LOW_TOP_OF_PAGE_BID)
@@ -143,7 +144,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
   }
 
 
-  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo locationCode(Integer locationCode) {
+  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -153,11 +154,11 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -219,7 +220,7 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
   }
 
 
-  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo competitionIndex(Integer competitionIndex) {
+  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo competitionIndex(BigDecimal competitionIndex) {
     this.competitionIndex = competitionIndex;
     return this;
   }
@@ -229,30 +230,30 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo {
    * @return competitionIndex
    */
   @javax.annotation.Nullable
-  public Integer getCompetitionIndex() {
+  public BigDecimal getCompetitionIndex() {
     return competitionIndex;
   }
 
-  public void setCompetitionIndex(Integer competitionIndex) {
+  public void setCompetitionIndex(BigDecimal competitionIndex) {
     this.competitionIndex = competitionIndex;
   }
 
 
-  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo searchVolume(Long searchVolume) {
+  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
 
   /**
-   * monthly average search volume rate; represents either the (approximate) number of searches for the given keyword idea on google.com or google.com and partners, depending on the user’s targeting; if there is no data then the value is null
+   * monthly average search volume rate
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 

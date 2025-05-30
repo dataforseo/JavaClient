@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleAppIntersectionLiveItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleAppIntersectionLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -66,7 +67,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -74,11 +75,11 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
 
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
-  private Long totalCount;
+  private BigDecimal totalCount;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -133,7 +134,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleAppIntersectionLiveResultInfo locationCode(Integer locationCode) {
+  public DataforseoLabsGoogleAppIntersectionLiveResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -143,11 +144,11 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -171,7 +172,7 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleAppIntersectionLiveResultInfo totalCount(Long totalCount) {
+  public DataforseoLabsGoogleAppIntersectionLiveResultInfo totalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
     return this;
   }
@@ -181,16 +182,16 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
    * @return totalCount
    */
   @javax.annotation.Nullable
-  public Long getTotalCount() {
+  public BigDecimal getTotalCount() {
     return totalCount;
   }
 
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
   }
 
 
-  public DataforseoLabsGoogleAppIntersectionLiveResultInfo itemsCount(Long itemsCount) {
+  public DataforseoLabsGoogleAppIntersectionLiveResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -200,11 +201,11 @@ public class DataforseoLabsGoogleAppIntersectionLiveResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 

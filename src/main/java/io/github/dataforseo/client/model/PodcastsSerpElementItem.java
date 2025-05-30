@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.PodcastsElement;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,16 +55,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * PodcastsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PodcastsSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
   private List<PodcastsElement> items;
@@ -74,44 +67,6 @@ public class PodcastsSerpElementItem extends BaseSerpElementItem {
 
   public PodcastsSerpElementItem() {
   }
-
-  public PodcastsSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public PodcastsSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
 
   public PodcastsSerpElementItem items(List<PodcastsElement> items) {
     this.items = items;
@@ -213,9 +168,7 @@ public class PodcastsSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     PodcastsSerpElementItem podcastsSerpElementItem = (PodcastsSerpElementItem) o;
-    return Objects.equals(this.position, podcastsSerpElementItem.position) &&
-        Objects.equals(this.xpath, podcastsSerpElementItem.xpath) &&
-        Objects.equals(this.items, podcastsSerpElementItem.items) &&
+    return Objects.equals(this.items, podcastsSerpElementItem.items) &&
         Objects.equals(this.rectangle, podcastsSerpElementItem.rectangle)&&
         Objects.equals(this.additionalProperties, podcastsSerpElementItem.additionalProperties) &&
         super.equals(o);
@@ -227,7 +180,7 @@ public class PodcastsSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, items, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(items, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -242,8 +195,6 @@ public class PodcastsSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class PodcastsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
@@ -294,12 +245,6 @@ public class PodcastsSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
         if (jsonArrayitems != null) {

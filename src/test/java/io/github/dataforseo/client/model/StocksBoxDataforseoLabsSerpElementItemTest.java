@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.Graph;
 import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -80,6 +81,14 @@ public class StocksBoxDataforseoLabsSerpElementItemTest {
     @Test
     public void xpathTest() {
         // TODO: test xpath
+    }
+
+    /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
     }
 
     /**

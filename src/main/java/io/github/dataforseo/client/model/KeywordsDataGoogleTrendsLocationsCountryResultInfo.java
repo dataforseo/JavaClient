@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleTrendsLocationsCountryResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
@@ -61,7 +62,7 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
-  private Integer locationCodeParent;
+  private BigDecimal locationCodeParent;
 
   public static final String SERIALIZED_NAME_COUNTRY_ISO_CODE = "country_iso_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_ISO_CODE)
@@ -71,10 +72,6 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
   @SerializedName(SERIALIZED_NAME_LOCATION_TYPE)
   private String locationType;
 
-  public static final String SERIALIZED_NAME_GEO_NAME = "geo_name";
-  @SerializedName(SERIALIZED_NAME_GEO_NAME)
-  private String geoName;
-
   public static final String SERIALIZED_NAME_GEO_ID = "geo_id";
   @SerializedName(SERIALIZED_NAME_GEO_ID)
   private String geoId;
@@ -82,7 +79,7 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
   public KeywordsDataGoogleTrendsLocationsCountryResultInfo() {
   }
 
-  public KeywordsDataGoogleTrendsLocationsCountryResultInfo locationCode(Integer locationCode) {
+  public KeywordsDataGoogleTrendsLocationsCountryResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -92,11 +89,11 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -120,7 +117,7 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
   }
 
 
-  public KeywordsDataGoogleTrendsLocationsCountryResultInfo locationCodeParent(Integer locationCodeParent) {
+  public KeywordsDataGoogleTrendsLocationsCountryResultInfo locationCodeParent(BigDecimal locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
     return this;
   }
@@ -130,11 +127,11 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
-  public Integer getLocationCodeParent() {
+  public BigDecimal getLocationCodeParent() {
     return locationCodeParent;
   }
 
-  public void setLocationCodeParent(Integer locationCodeParent) {
+  public void setLocationCodeParent(BigDecimal locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
   }
 
@@ -174,25 +171,6 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
 
   public void setLocationType(String locationType) {
     this.locationType = locationType;
-  }
-
-
-  public KeywordsDataGoogleTrendsLocationsCountryResultInfo geoName(String geoName) {
-    this.geoName = geoName;
-    return this;
-  }
-
-  /**
-   * google trends location name you can use this field for matching obtained results with the location_name parameter specified in the request
-   * @return geoName
-   */
-  @javax.annotation.Nullable
-  public String getGeoName() {
-    return geoName;
-  }
-
-  public void setGeoName(String geoName) {
-    this.geoName = geoName;
   }
 
 
@@ -274,7 +252,6 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
         Objects.equals(this.locationCodeParent, keywordsDataGoogleTrendsLocationsCountryResultInfo.locationCodeParent) &&
         Objects.equals(this.countryIsoCode, keywordsDataGoogleTrendsLocationsCountryResultInfo.countryIsoCode) &&
         Objects.equals(this.locationType, keywordsDataGoogleTrendsLocationsCountryResultInfo.locationType) &&
-        Objects.equals(this.geoName, keywordsDataGoogleTrendsLocationsCountryResultInfo.geoName) &&
         Objects.equals(this.geoId, keywordsDataGoogleTrendsLocationsCountryResultInfo.geoId)&&
         Objects.equals(this.additionalProperties, keywordsDataGoogleTrendsLocationsCountryResultInfo.additionalProperties);
   }
@@ -285,7 +262,7 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(locationCode, locationName, locationCodeParent, countryIsoCode, locationType, geoName, geoId, additionalProperties);
+    return Objects.hash(locationCode, locationName, locationCodeParent, countryIsoCode, locationType, geoId, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -304,7 +281,6 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
     sb.append("    locationCodeParent: ").append(toIndentedString(locationCodeParent)).append("\n");
     sb.append("    countryIsoCode: ").append(toIndentedString(countryIsoCode)).append("\n");
     sb.append("    locationType: ").append(toIndentedString(locationType)).append("\n");
-    sb.append("    geoName: ").append(toIndentedString(geoName)).append("\n");
     sb.append("    geoId: ").append(toIndentedString(geoId)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -334,7 +310,6 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
     openapiFields.add("location_code_parent");
     openapiFields.add("country_iso_code");
     openapiFields.add("location_type");
-    openapiFields.add("geo_name");
     openapiFields.add("geo_id");
 
     // a set of required properties/fields (JSON key names)
@@ -362,9 +337,6 @@ public class KeywordsDataGoogleTrendsLocationsCountryResultInfo {
       }
       if ((jsonObj.get("location_type") != null && !jsonObj.get("location_type").isJsonNull()) && !jsonObj.get("location_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `location_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_type").toString()));
-      }
-      if ((jsonObj.get("geo_name") != null && !jsonObj.get("geo_name").isJsonNull()) && !jsonObj.get("geo_name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `geo_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("geo_name").toString()));
       }
       if ((jsonObj.get("geo_id") != null && !jsonObj.get("geo_id").isJsonNull()) && !jsonObj.get("geo_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `geo_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("geo_id").toString()));

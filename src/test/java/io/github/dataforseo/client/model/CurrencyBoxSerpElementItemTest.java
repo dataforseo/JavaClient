@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.Graph;
 import io.github.dataforseo.client.model.Rectangle;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;

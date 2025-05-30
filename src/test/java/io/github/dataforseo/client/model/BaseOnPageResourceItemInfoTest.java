@@ -22,6 +22,7 @@ import io.github.dataforseo.client.model.CacheControl;
 import io.github.dataforseo.client.model.LastModified;
 import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

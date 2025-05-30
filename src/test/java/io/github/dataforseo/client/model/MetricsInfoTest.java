@@ -39,163 +39,291 @@ public class MetricsInfoTest {
     }
 
     /**
-     * Test the property 'pos1'
+     * Test the property 'type'
      */
     @Test
-    public void pos1Test() {
-        // TODO: test pos1
+    public void typeTest() {
+        // TODO: test type
     }
 
     /**
-     * Test the property 'pos23'
+     * Test the property 'timestamp'
      */
     @Test
-    public void pos23Test() {
-        // TODO: test pos23
+    public void timestampTest() {
+        // TODO: test timestamp
     }
 
     /**
-     * Test the property 'pos410'
+     * Test the property 'revenue'
      */
     @Test
-    public void pos410Test() {
-        // TODO: test pos410
+    public void revenueTest() {
+        // TODO: test revenue
     }
 
     /**
-     * Test the property 'pos1120'
+     * Test the property 'revenueDelta'
      */
     @Test
-    public void pos1120Test() {
-        // TODO: test pos1120
+    public void revenueDeltaTest() {
+        // TODO: test revenueDelta
     }
 
     /**
-     * Test the property 'pos2130'
+     * Test the property 'operatingExpense'
      */
     @Test
-    public void pos2130Test() {
-        // TODO: test pos2130
+    public void operatingExpenseTest() {
+        // TODO: test operatingExpense
     }
 
     /**
-     * Test the property 'pos3140'
+     * Test the property 'operatingExpenseDelta'
      */
     @Test
-    public void pos3140Test() {
-        // TODO: test pos3140
+    public void operatingExpenseDeltaTest() {
+        // TODO: test operatingExpenseDelta
     }
 
     /**
-     * Test the property 'pos4150'
+     * Test the property 'netIncome'
      */
     @Test
-    public void pos4150Test() {
-        // TODO: test pos4150
+    public void netIncomeTest() {
+        // TODO: test netIncome
     }
 
     /**
-     * Test the property 'pos5160'
+     * Test the property 'netIncomeDelta'
      */
     @Test
-    public void pos5160Test() {
-        // TODO: test pos5160
+    public void netIncomeDeltaTest() {
+        // TODO: test netIncomeDelta
     }
 
     /**
-     * Test the property 'pos6170'
+     * Test the property 'netProfitMargin'
      */
     @Test
-    public void pos6170Test() {
-        // TODO: test pos6170
+    public void netProfitMarginTest() {
+        // TODO: test netProfitMargin
     }
 
     /**
-     * Test the property 'pos7180'
+     * Test the property 'netProfitMarginDelta'
      */
     @Test
-    public void pos7180Test() {
-        // TODO: test pos7180
+    public void netProfitMarginDeltaTest() {
+        // TODO: test netProfitMarginDelta
     }
 
     /**
-     * Test the property 'pos8190'
+     * Test the property 'earningsPerShare'
      */
     @Test
-    public void pos8190Test() {
-        // TODO: test pos8190
+    public void earningsPerShareTest() {
+        // TODO: test earningsPerShare
     }
 
     /**
-     * Test the property 'pos91100'
+     * Test the property 'earningsPerShareDelta'
      */
     @Test
-    public void pos91100Test() {
-        // TODO: test pos91100
+    public void earningsPerShareDeltaTest() {
+        // TODO: test earningsPerShareDelta
     }
 
     /**
-     * Test the property 'etv'
+     * Test the property 'ebitda'
      */
     @Test
-    public void etvTest() {
-        // TODO: test etv
+    public void ebitdaTest() {
+        // TODO: test ebitda
     }
 
     /**
-     * Test the property 'impressionsEtv'
+     * Test the property 'ebitdaDelta'
      */
     @Test
-    public void impressionsEtvTest() {
-        // TODO: test impressionsEtv
+    public void ebitdaDeltaTest() {
+        // TODO: test ebitdaDelta
     }
 
     /**
-     * Test the property 'count'
+     * Test the property 'effectiveTaxRate'
      */
     @Test
-    public void countTest() {
-        // TODO: test count
+    public void effectiveTaxRateTest() {
+        // TODO: test effectiveTaxRate
     }
 
     /**
-     * Test the property 'estimatedPaidTrafficCost'
+     * Test the property 'cashAndShortTermInvestments'
      */
     @Test
-    public void estimatedPaidTrafficCostTest() {
-        // TODO: test estimatedPaidTrafficCost
+    public void cashAndShortTermInvestmentsTest() {
+        // TODO: test cashAndShortTermInvestments
     }
 
     /**
-     * Test the property 'isNew'
+     * Test the property 'cashAndShortTermInvestmentsDelta'
      */
     @Test
-    public void isNewTest() {
-        // TODO: test isNew
+    public void cashAndShortTermInvestmentsDeltaTest() {
+        // TODO: test cashAndShortTermInvestmentsDelta
     }
 
     /**
-     * Test the property 'isUp'
+     * Test the property 'totalAssets'
      */
     @Test
-    public void isUpTest() {
-        // TODO: test isUp
+    public void totalAssetsTest() {
+        // TODO: test totalAssets
     }
 
     /**
-     * Test the property 'isDown'
+     * Test the property 'totalAssetsDelta'
      */
     @Test
-    public void isDownTest() {
-        // TODO: test isDown
+    public void totalAssetsDeltaTest() {
+        // TODO: test totalAssetsDelta
     }
 
     /**
-     * Test the property 'isLost'
+     * Test the property 'totalLiabilities'
      */
     @Test
-    public void isLostTest() {
-        // TODO: test isLost
+    public void totalLiabilitiesTest() {
+        // TODO: test totalLiabilities
+    }
+
+    /**
+     * Test the property 'totalLiabilitiesDelta'
+     */
+    @Test
+    public void totalLiabilitiesDeltaTest() {
+        // TODO: test totalLiabilitiesDelta
+    }
+
+    /**
+     * Test the property 'totalEquity'
+     */
+    @Test
+    public void totalEquityTest() {
+        // TODO: test totalEquity
+    }
+
+    /**
+     * Test the property 'sharesOutstanding'
+     */
+    @Test
+    public void sharesOutstandingTest() {
+        // TODO: test sharesOutstanding
+    }
+
+    /**
+     * Test the property 'priceToBook'
+     */
+    @Test
+    public void priceToBookTest() {
+        // TODO: test priceToBook
+    }
+
+    /**
+     * Test the property 'returnOnAssets'
+     */
+    @Test
+    public void returnOnAssetsTest() {
+        // TODO: test returnOnAssets
+    }
+
+    /**
+     * Test the property 'returnOnCapital'
+     */
+    @Test
+    public void returnOnCapitalTest() {
+        // TODO: test returnOnCapital
+    }
+
+    /**
+     * Test the property 'cashFromOperations'
+     */
+    @Test
+    public void cashFromOperationsTest() {
+        // TODO: test cashFromOperations
+    }
+
+    /**
+     * Test the property 'cashFromOperationsDelta'
+     */
+    @Test
+    public void cashFromOperationsDeltaTest() {
+        // TODO: test cashFromOperationsDelta
+    }
+
+    /**
+     * Test the property 'cashFromInvesting'
+     */
+    @Test
+    public void cashFromInvestingTest() {
+        // TODO: test cashFromInvesting
+    }
+
+    /**
+     * Test the property 'cashFromInvestingDelta'
+     */
+    @Test
+    public void cashFromInvestingDeltaTest() {
+        // TODO: test cashFromInvestingDelta
+    }
+
+    /**
+     * Test the property 'cashFromFinancing'
+     */
+    @Test
+    public void cashFromFinancingTest() {
+        // TODO: test cashFromFinancing
+    }
+
+    /**
+     * Test the property 'cashFromFinancingDelta'
+     */
+    @Test
+    public void cashFromFinancingDeltaTest() {
+        // TODO: test cashFromFinancingDelta
+    }
+
+    /**
+     * Test the property 'netChangeInCash'
+     */
+    @Test
+    public void netChangeInCashTest() {
+        // TODO: test netChangeInCash
+    }
+
+    /**
+     * Test the property 'netChangeInCashDelta'
+     */
+    @Test
+    public void netChangeInCashDeltaTest() {
+        // TODO: test netChangeInCashDelta
+    }
+
+    /**
+     * Test the property 'freeCashFlow'
+     */
+    @Test
+    public void freeCashFlowTest() {
+        // TODO: test freeCashFlow
+    }
+
+    /**
+     * Test the property 'freeCashFlowDelta'
+     */
+    @Test
+    public void freeCashFlowDeltaTest() {
+        // TODO: test freeCashFlowDelta
     }
 
 }

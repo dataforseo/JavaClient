@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,15 +50,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageResourceIssueItemInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageResourceIssueItemInfo {
   public static final String SERIALIZED_NAME_LINE = "line";
   @SerializedName(SERIALIZED_NAME_LINE)
-  private Integer line;
+  private BigDecimal line;
 
   public static final String SERIALIZED_NAME_COLUMN = "column";
   @SerializedName(SERIALIZED_NAME_COLUMN)
-  private Integer column;
+  private BigDecimal column;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
@@ -65,12 +66,12 @@ public class OnPageResourceIssueItemInfo {
 
   public static final String SERIALIZED_NAME_STATUS_CODE = "status_code";
   @SerializedName(SERIALIZED_NAME_STATUS_CODE)
-  private Integer statusCode;
+  private BigDecimal statusCode;
 
   public OnPageResourceIssueItemInfo() {
   }
 
-  public OnPageResourceIssueItemInfo line(Integer line) {
+  public OnPageResourceIssueItemInfo line(BigDecimal line) {
     this.line = line;
     return this;
   }
@@ -80,16 +81,16 @@ public class OnPageResourceIssueItemInfo {
    * @return line
    */
   @javax.annotation.Nullable
-  public Integer getLine() {
+  public BigDecimal getLine() {
     return line;
   }
 
-  public void setLine(Integer line) {
+  public void setLine(BigDecimal line) {
     this.line = line;
   }
 
 
-  public OnPageResourceIssueItemInfo column(Integer column) {
+  public OnPageResourceIssueItemInfo column(BigDecimal column) {
     this.column = column;
     return this;
   }
@@ -99,11 +100,11 @@ public class OnPageResourceIssueItemInfo {
    * @return column
    */
   @javax.annotation.Nullable
-  public Integer getColumn() {
+  public BigDecimal getColumn() {
     return column;
   }
 
-  public void setColumn(Integer column) {
+  public void setColumn(BigDecimal column) {
     this.column = column;
   }
 
@@ -127,7 +128,7 @@ public class OnPageResourceIssueItemInfo {
   }
 
 
-  public OnPageResourceIssueItemInfo statusCode(Integer statusCode) {
+  public OnPageResourceIssueItemInfo statusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
     return this;
   }
@@ -137,11 +138,11 @@ public class OnPageResourceIssueItemInfo {
    * @return statusCode
    */
   @javax.annotation.Nullable
-  public Integer getStatusCode() {
+  public BigDecimal getStatusCode() {
     return statusCode;
   }
 
-  public void setStatusCode(Integer statusCode) {
+  public void setStatusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
   }
 

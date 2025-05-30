@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,16 +52,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * MapSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MapSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -75,44 +68,6 @@ public class MapSerpElementItem extends BaseSerpElementItem {
 
   public MapSerpElementItem() {
   }
-
-  public MapSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public MapSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
 
   public MapSerpElementItem title(String title) {
     this.title = title;
@@ -139,7 +94,7 @@ public class MapSerpElementItem extends BaseSerpElementItem {
   }
 
   /**
-   * source URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -225,9 +180,7 @@ public class MapSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     MapSerpElementItem mapSerpElementItem = (MapSerpElementItem) o;
-    return Objects.equals(this.position, mapSerpElementItem.position) &&
-        Objects.equals(this.xpath, mapSerpElementItem.xpath) &&
-        Objects.equals(this.title, mapSerpElementItem.title) &&
+    return Objects.equals(this.title, mapSerpElementItem.title) &&
         Objects.equals(this.url, mapSerpElementItem.url) &&
         Objects.equals(this.rectangle, mapSerpElementItem.rectangle)&&
         Objects.equals(this.additionalProperties, mapSerpElementItem.additionalProperties) &&
@@ -240,7 +193,7 @@ public class MapSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, title, url, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(title, url, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -255,8 +208,6 @@ public class MapSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class MapSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
@@ -309,12 +260,6 @@ public class MapSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

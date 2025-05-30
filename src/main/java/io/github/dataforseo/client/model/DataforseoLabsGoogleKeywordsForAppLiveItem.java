@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppRankedSerpElementInfo;
+import io.github.dataforseo.client.model.GooglePlayRankedSerpElementInfo;
 import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordsForAppLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleKeywordsForAppLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -63,7 +63,7 @@ public class DataforseoLabsGoogleKeywordsForAppLiveItem {
 
   public static final String SERIALIZED_NAME_RANKED_SERP_ELEMENT = "ranked_serp_element";
   @SerializedName(SERIALIZED_NAME_RANKED_SERP_ELEMENT)
-  private AppRankedSerpElementInfo rankedSerpElement;
+  private GooglePlayRankedSerpElementInfo rankedSerpElement;
 
   public DataforseoLabsGoogleKeywordsForAppLiveItem() {
   }
@@ -106,7 +106,7 @@ public class DataforseoLabsGoogleKeywordsForAppLiveItem {
   }
 
 
-  public DataforseoLabsGoogleKeywordsForAppLiveItem rankedSerpElement(AppRankedSerpElementInfo rankedSerpElement) {
+  public DataforseoLabsGoogleKeywordsForAppLiveItem rankedSerpElement(GooglePlayRankedSerpElementInfo rankedSerpElement) {
     this.rankedSerpElement = rankedSerpElement;
     return this;
   }
@@ -116,11 +116,11 @@ public class DataforseoLabsGoogleKeywordsForAppLiveItem {
    * @return rankedSerpElement
    */
   @javax.annotation.Nullable
-  public AppRankedSerpElementInfo getRankedSerpElement() {
+  public GooglePlayRankedSerpElementInfo getRankedSerpElement() {
     return rankedSerpElement;
   }
 
-  public void setRankedSerpElement(AppRankedSerpElementInfo rankedSerpElement) {
+  public void setRankedSerpElement(GooglePlayRankedSerpElementInfo rankedSerpElement) {
     this.rankedSerpElement = rankedSerpElement;
   }
 
@@ -261,7 +261,7 @@ public class DataforseoLabsGoogleKeywordsForAppLiveItem {
       }
       // validate the optional field `ranked_serp_element`
       if (jsonObj.get("ranked_serp_element") != null && !jsonObj.get("ranked_serp_element").isJsonNull()) {
-        AppRankedSerpElementInfo.validateJsonElement(jsonObj.get("ranked_serp_element"));
+        GooglePlayRankedSerpElementInfo.validateJsonElement(jsonObj.get("ranked_serp_element"));
       }
   }
 

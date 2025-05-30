@@ -19,9 +19,10 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.CrawlStatusInfo;
+import io.github.dataforseo.client.model.CrawlStatus;
 import io.github.dataforseo.client.model.OnPageRawHtmlItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageRawHtmlResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageRawHtmlResultInfo {
   public static final String SERIALIZED_NAME_CRAWL_PROGRESS = "crawl_progress";
   @SerializedName(SERIALIZED_NAME_CRAWL_PROGRESS)
@@ -59,11 +60,11 @@ public class OnPageRawHtmlResultInfo {
 
   public static final String SERIALIZED_NAME_CRAWL_STATUS = "crawl_status";
   @SerializedName(SERIALIZED_NAME_CRAWL_STATUS)
-  private CrawlStatusInfo crawlStatus;
+  private CrawlStatus crawlStatus;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -91,7 +92,7 @@ public class OnPageRawHtmlResultInfo {
   }
 
 
-  public OnPageRawHtmlResultInfo crawlStatus(CrawlStatusInfo crawlStatus) {
+  public OnPageRawHtmlResultInfo crawlStatus(CrawlStatus crawlStatus) {
     this.crawlStatus = crawlStatus;
     return this;
   }
@@ -101,16 +102,16 @@ public class OnPageRawHtmlResultInfo {
    * @return crawlStatus
    */
   @javax.annotation.Nullable
-  public CrawlStatusInfo getCrawlStatus() {
+  public CrawlStatus getCrawlStatus() {
     return crawlStatus;
   }
 
-  public void setCrawlStatus(CrawlStatusInfo crawlStatus) {
+  public void setCrawlStatus(CrawlStatus crawlStatus) {
     this.crawlStatus = crawlStatus;
   }
 
 
-  public OnPageRawHtmlResultInfo itemsCount(Long itemsCount) {
+  public OnPageRawHtmlResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -120,11 +121,11 @@ public class OnPageRawHtmlResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -283,7 +284,7 @@ public class OnPageRawHtmlResultInfo {
       }
       // validate the optional field `crawl_status`
       if (jsonObj.get("crawl_status") != null && !jsonObj.get("crawl_status").isJsonNull()) {
-        CrawlStatusInfo.validateJsonElement(jsonObj.get("crawl_status"));
+        CrawlStatus.validateJsonElement(jsonObj.get("crawl_status"));
       }
       // validate the optional field `items`
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {

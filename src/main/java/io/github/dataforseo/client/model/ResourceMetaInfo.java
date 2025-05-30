@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ResourceMetaInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ResourceMetaInfo {
   public static final String SERIALIZED_NAME_ALTERNATIVE_TEXT = "alternative_text";
   @SerializedName(SERIALIZED_NAME_ALTERNATIVE_TEXT)
@@ -61,19 +61,19 @@ public class ResourceMetaInfo {
 
   public static final String SERIALIZED_NAME_ORIGINAL_WIDTH = "original_width";
   @SerializedName(SERIALIZED_NAME_ORIGINAL_WIDTH)
-  private Long originalWidth;
+  private Double originalWidth;
 
   public static final String SERIALIZED_NAME_ORIGINAL_HEIGHT = "original_height";
   @SerializedName(SERIALIZED_NAME_ORIGINAL_HEIGHT)
-  private Integer originalHeight;
+  private Double originalHeight;
 
   public static final String SERIALIZED_NAME_WIDTH = "width";
   @SerializedName(SERIALIZED_NAME_WIDTH)
-  private Long width;
+  private Double width;
 
   public static final String SERIALIZED_NAME_HEIGHT = "height";
   @SerializedName(SERIALIZED_NAME_HEIGHT)
-  private Integer height;
+  private Double height;
 
   public ResourceMetaInfo() {
   }
@@ -84,7 +84,7 @@ public class ResourceMetaInfo {
   }
 
   /**
-   * content of the image alt attribute the value depends on the resource_type
+   * content of the image alt attribute
    * @return alternativeText
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ResourceMetaInfo {
   }
 
 
-  public ResourceMetaInfo originalWidth(Long originalWidth) {
+  public ResourceMetaInfo originalWidth(Double originalWidth) {
     this.originalWidth = originalWidth;
     return this;
   }
@@ -126,16 +126,16 @@ public class ResourceMetaInfo {
    * @return originalWidth
    */
   @javax.annotation.Nullable
-  public Long getOriginalWidth() {
+  public Double getOriginalWidth() {
     return originalWidth;
   }
 
-  public void setOriginalWidth(Long originalWidth) {
+  public void setOriginalWidth(Double originalWidth) {
     this.originalWidth = originalWidth;
   }
 
 
-  public ResourceMetaInfo originalHeight(Integer originalHeight) {
+  public ResourceMetaInfo originalHeight(Double originalHeight) {
     this.originalHeight = originalHeight;
     return this;
   }
@@ -145,16 +145,16 @@ public class ResourceMetaInfo {
    * @return originalHeight
    */
   @javax.annotation.Nullable
-  public Integer getOriginalHeight() {
+  public Double getOriginalHeight() {
     return originalHeight;
   }
 
-  public void setOriginalHeight(Integer originalHeight) {
+  public void setOriginalHeight(Double originalHeight) {
     this.originalHeight = originalHeight;
   }
 
 
-  public ResourceMetaInfo width(Long width) {
+  public ResourceMetaInfo width(Double width) {
     this.width = width;
     return this;
   }
@@ -164,16 +164,16 @@ public class ResourceMetaInfo {
    * @return width
    */
   @javax.annotation.Nullable
-  public Long getWidth() {
+  public Double getWidth() {
     return width;
   }
 
-  public void setWidth(Long width) {
+  public void setWidth(Double width) {
     this.width = width;
   }
 
 
-  public ResourceMetaInfo height(Integer height) {
+  public ResourceMetaInfo height(Double height) {
     this.height = height;
     return this;
   }
@@ -183,11 +183,11 @@ public class ResourceMetaInfo {
    * @return height
    */
   @javax.annotation.Nullable
-  public Integer getHeight() {
+  public Double getHeight() {
     return height;
   }
 
-  public void setHeight(Integer height) {
+  public void setHeight(Double height) {
     this.height = height;
   }
 

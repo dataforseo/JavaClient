@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalSerpsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -73,7 +74,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -97,19 +98,15 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private Long seResultsCount;
+  private BigDecimal seResultsCount;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
   private List<BaseDataforseoLabsSerpElementItem> items;
-
-  public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
-  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
-  private Integer clickstreamEtv;
 
   public DataforseoLabsGoogleHistoricalSerpsLiveItem() {
   }
@@ -190,7 +187,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
   }
 
 
-  public DataforseoLabsGoogleHistoricalSerpsLiveItem locationCode(Integer locationCode) {
+  public DataforseoLabsGoogleHistoricalSerpsLiveItem locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -200,11 +197,11 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -312,7 +309,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
   }
 
 
-  public DataforseoLabsGoogleHistoricalSerpsLiveItem seResultsCount(Long seResultsCount) {
+  public DataforseoLabsGoogleHistoricalSerpsLiveItem seResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
@@ -322,16 +319,16 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public Long getSeResultsCount() {
+  public BigDecimal getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(Long seResultsCount) {
+  public void setSeResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
 
-  public DataforseoLabsGoogleHistoricalSerpsLiveItem itemsCount(Long itemsCount) {
+  public DataforseoLabsGoogleHistoricalSerpsLiveItem itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -341,11 +338,11 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -374,25 +371,6 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
 
   public void setItems(List<BaseDataforseoLabsSerpElementItem> items) {
     this.items = items;
-  }
-
-
-  public DataforseoLabsGoogleHistoricalSerpsLiveItem clickstreamEtv(Integer clickstreamEtv) {
-    this.clickstreamEtv = clickstreamEtv;
-    return this;
-  }
-
-  /**
-   * estimated traffic volume based on clickstream data calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for to retrieve results for this field, the parameter include_clickstream_data must be set to true learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
-   * @return clickstreamEtv
-   */
-  @javax.annotation.Nullable
-  public Integer getClickstreamEtv() {
-    return clickstreamEtv;
-  }
-
-  public void setClickstreamEtv(Integer clickstreamEtv) {
-    this.clickstreamEtv = clickstreamEtv;
   }
 
   /**
@@ -462,8 +440,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
         Objects.equals(this.itemTypes, dataforseoLabsGoogleHistoricalSerpsLiveItem.itemTypes) &&
         Objects.equals(this.seResultsCount, dataforseoLabsGoogleHistoricalSerpsLiveItem.seResultsCount) &&
         Objects.equals(this.itemsCount, dataforseoLabsGoogleHistoricalSerpsLiveItem.itemsCount) &&
-        Objects.equals(this.items, dataforseoLabsGoogleHistoricalSerpsLiveItem.items) &&
-        Objects.equals(this.clickstreamEtv, dataforseoLabsGoogleHistoricalSerpsLiveItem.clickstreamEtv)&&
+        Objects.equals(this.items, dataforseoLabsGoogleHistoricalSerpsLiveItem.items)&&
         Objects.equals(this.additionalProperties, dataforseoLabsGoogleHistoricalSerpsLiveItem.additionalProperties);
   }
 
@@ -473,7 +450,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, itemTypes, seResultsCount, itemsCount, items, clickstreamEtv, additionalProperties);
+    return Objects.hash(seType, keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -500,7 +477,6 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
-    sb.append("    clickstreamEtv: ").append(toIndentedString(clickstreamEtv)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -537,7 +513,6 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem {
     openapiFields.add("se_results_count");
     openapiFields.add("items_count");
     openapiFields.add("items");
-    openapiFields.add("clickstream_etv");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

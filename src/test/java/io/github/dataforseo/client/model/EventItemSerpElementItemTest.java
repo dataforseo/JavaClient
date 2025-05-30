@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.EventDates;
 import io.github.dataforseo.client.model.InformationAndTicketsElement;
 import io.github.dataforseo.client.model.LocationInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

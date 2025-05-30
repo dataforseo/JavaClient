@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.PodcastsElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,14 +54,37 @@ import io.github.dataforseo.client.JSON;
 /**
  * PodcastsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PodcastsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
   private List<PodcastsElement> items;
 
   public PodcastsDataforseoLabsSerpElementItem() {
   }
+
+  public PodcastsDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public PodcastsDataforseoLabsSerpElementItem items(List<PodcastsElement> items) {
     this.items = items;
@@ -76,7 +100,7 @@ public class PodcastsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSer
   }
 
   /**
-   * additional items present in the element if there are none, equals null
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable
@@ -143,7 +167,8 @@ public class PodcastsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSer
       return false;
     }
     PodcastsDataforseoLabsSerpElementItem podcastsDataforseoLabsSerpElementItem = (PodcastsDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.items, podcastsDataforseoLabsSerpElementItem.items)&&
+    return Objects.equals(this.seType, podcastsDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.items, podcastsDataforseoLabsSerpElementItem.items)&&
         Objects.equals(this.additionalProperties, podcastsDataforseoLabsSerpElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -154,7 +179,7 @@ public class PodcastsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSer
 
   @Override
   public int hashCode() {
-    return Objects.hash(items, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -169,6 +194,7 @@ public class PodcastsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSer
     StringBuilder sb = new StringBuilder();
     sb.append("class PodcastsDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -198,6 +224,7 @@ public class PodcastsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSer
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("items");
 
     // a set of required properties/fields (JSON key names)
@@ -217,6 +244,9 @@ public class PodcastsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSer
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
         if (jsonArrayitems != null) {

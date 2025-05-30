@@ -26,6 +26,7 @@ import io.github.dataforseo.client.model.LastModified;
 import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import io.github.dataforseo.client.model.PageMetaInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -57,15 +58,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * BrokenResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
-  public static final String SERIALIZED_NAME_META = "meta";
-  @SerializedName(SERIALIZED_NAME_META)
-  private PageMetaInfo meta;
-
   public static final String SERIALIZED_NAME_FETCH_TIMING = "fetch_timing";
   @SerializedName(SERIALIZED_NAME_FETCH_TIMING)
   private FetchTiming fetchTiming;
+
+  public static final String SERIALIZED_NAME_IS_RESOURCE = "is_resource";
+  @SerializedName(SERIALIZED_NAME_IS_RESOURCE)
+  private Boolean isResource;
+
+  public static final String SERIALIZED_NAME_META = "meta";
+  @SerializedName(SERIALIZED_NAME_META)
+  private PageMetaInfo meta;
 
   public static final String SERIALIZED_NAME_ACCEPT_TYPE = "accept_type";
   @SerializedName(SERIALIZED_NAME_ACCEPT_TYPE)
@@ -73,25 +78,6 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
 
   public BrokenResourceElementItem() {
   }
-
-  public BrokenResourceElementItem meta(PageMetaInfo meta) {
-    this.meta = meta;
-    return this;
-  }
-
-  /**
-   * Get meta
-   * @return meta
-   */
-  @javax.annotation.Nullable
-  public PageMetaInfo getMeta() {
-    return meta;
-  }
-
-  public void setMeta(PageMetaInfo meta) {
-    this.meta = meta;
-  }
-
 
   public BrokenResourceElementItem fetchTiming(FetchTiming fetchTiming) {
     this.fetchTiming = fetchTiming;
@@ -109,6 +95,44 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
 
   public void setFetchTiming(FetchTiming fetchTiming) {
     this.fetchTiming = fetchTiming;
+  }
+
+
+  public BrokenResourceElementItem isResource(Boolean isResource) {
+    this.isResource = isResource;
+    return this;
+  }
+
+  /**
+   * indicates whether a page is a single resource
+   * @return isResource
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsResource() {
+    return isResource;
+  }
+
+  public void setIsResource(Boolean isResource) {
+    this.isResource = isResource;
+  }
+
+
+  public BrokenResourceElementItem meta(PageMetaInfo meta) {
+    this.meta = meta;
+    return this;
+  }
+
+  /**
+   * Get meta
+   * @return meta
+   */
+  @javax.annotation.Nullable
+  public PageMetaInfo getMeta() {
+    return meta;
+  }
+
+  public void setMeta(PageMetaInfo meta) {
+    this.meta = meta;
   }
 
 
@@ -185,8 +209,9 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
       return false;
     }
     BrokenResourceElementItem brokenResourceElementItem = (BrokenResourceElementItem) o;
-    return Objects.equals(this.meta, brokenResourceElementItem.meta) &&
-        Objects.equals(this.fetchTiming, brokenResourceElementItem.fetchTiming) &&
+    return Objects.equals(this.fetchTiming, brokenResourceElementItem.fetchTiming) &&
+        Objects.equals(this.isResource, brokenResourceElementItem.isResource) &&
+        Objects.equals(this.meta, brokenResourceElementItem.meta) &&
         Objects.equals(this.acceptType, brokenResourceElementItem.acceptType)&&
         Objects.equals(this.additionalProperties, brokenResourceElementItem.additionalProperties) &&
         super.equals(o);
@@ -198,7 +223,7 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(meta, fetchTiming, acceptType, super.hashCode(), additionalProperties);
+    return Objects.hash(fetchTiming, isResource, meta, acceptType, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -213,8 +238,9 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class BrokenResourceElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    meta: ").append(toIndentedString(meta)).append("\n");
     sb.append("    fetchTiming: ").append(toIndentedString(fetchTiming)).append("\n");
+    sb.append("    isResource: ").append(toIndentedString(isResource)).append("\n");
+    sb.append("    meta: ").append(toIndentedString(meta)).append("\n");
     sb.append("    acceptType: ").append(toIndentedString(acceptType)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -254,8 +280,9 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
     openapiFields.add("media_type");
     openapiFields.add("server");
     openapiFields.add("last_modified");
-    openapiFields.add("meta");
     openapiFields.add("fetch_timing");
+    openapiFields.add("is_resource");
+    openapiFields.add("meta");
     openapiFields.add("accept_type");
 
     // a set of required properties/fields (JSON key names)
@@ -275,13 +302,13 @@ public class BrokenResourceElementItem extends BaseOnPageResourceItemInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `meta`
-      if (jsonObj.get("meta") != null && !jsonObj.get("meta").isJsonNull()) {
-        PageMetaInfo.validateJsonElement(jsonObj.get("meta"));
-      }
       // validate the optional field `fetch_timing`
       if (jsonObj.get("fetch_timing") != null && !jsonObj.get("fetch_timing").isJsonNull()) {
         FetchTiming.validateJsonElement(jsonObj.get("fetch_timing"));
+      }
+      // validate the optional field `meta`
+      if (jsonObj.get("meta") != null && !jsonObj.get("meta").isJsonNull()) {
+        PageMetaInfo.validateJsonElement(jsonObj.get("meta"));
       }
       if ((jsonObj.get("accept_type") != null && !jsonObj.get("accept_type").isJsonNull()) && !jsonObj.get("accept_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `accept_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("accept_type").toString()));

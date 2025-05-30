@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * IndexHistory
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class IndexHistory {
   public static final String SERIALIZED_NAME_DATE = "date";
   @SerializedName(SERIALIZED_NAME_DATE)
@@ -57,15 +58,11 @@ public class IndexHistory {
 
   public static final String SERIALIZED_NAME_TOTAL_BACKLINKS = "total_backlinks";
   @SerializedName(SERIALIZED_NAME_TOTAL_BACKLINKS)
-  private Long totalBacklinks;
+  private BigDecimal totalBacklinks;
 
   public static final String SERIALIZED_NAME_TOTAL_PAGES = "total_pages";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAGES)
-  private Long totalPages;
-
-  public static final String SERIALIZED_NAME_TOTAL_DOMAINS = "total_domains";
-  @SerializedName(SERIALIZED_NAME_TOTAL_DOMAINS)
-  private Long totalDomains;
+  private BigDecimal totalPages;
 
   public IndexHistory() {
   }
@@ -89,7 +86,7 @@ public class IndexHistory {
   }
 
 
-  public IndexHistory totalBacklinks(Long totalBacklinks) {
+  public IndexHistory totalBacklinks(BigDecimal totalBacklinks) {
     this.totalBacklinks = totalBacklinks;
     return this;
   }
@@ -99,16 +96,16 @@ public class IndexHistory {
    * @return totalBacklinks
    */
   @javax.annotation.Nullable
-  public Long getTotalBacklinks() {
+  public BigDecimal getTotalBacklinks() {
     return totalBacklinks;
   }
 
-  public void setTotalBacklinks(Long totalBacklinks) {
+  public void setTotalBacklinks(BigDecimal totalBacklinks) {
     this.totalBacklinks = totalBacklinks;
   }
 
 
-  public IndexHistory totalPages(Long totalPages) {
+  public IndexHistory totalPages(BigDecimal totalPages) {
     this.totalPages = totalPages;
     return this;
   }
@@ -118,31 +115,12 @@ public class IndexHistory {
    * @return totalPages
    */
   @javax.annotation.Nullable
-  public Long getTotalPages() {
+  public BigDecimal getTotalPages() {
     return totalPages;
   }
 
-  public void setTotalPages(Long totalPages) {
+  public void setTotalPages(BigDecimal totalPages) {
     this.totalPages = totalPages;
-  }
-
-
-  public IndexHistory totalDomains(Long totalDomains) {
-    this.totalDomains = totalDomains;
-    return this;
-  }
-
-  /**
-   * total number of domains our database contained on the given date
-   * @return totalDomains
-   */
-  @javax.annotation.Nullable
-  public Long getTotalDomains() {
-    return totalDomains;
-  }
-
-  public void setTotalDomains(Long totalDomains) {
-    this.totalDomains = totalDomains;
   }
 
   /**
@@ -202,8 +180,7 @@ public class IndexHistory {
     IndexHistory indexHistory = (IndexHistory) o;
     return Objects.equals(this.date, indexHistory.date) &&
         Objects.equals(this.totalBacklinks, indexHistory.totalBacklinks) &&
-        Objects.equals(this.totalPages, indexHistory.totalPages) &&
-        Objects.equals(this.totalDomains, indexHistory.totalDomains)&&
+        Objects.equals(this.totalPages, indexHistory.totalPages)&&
         Objects.equals(this.additionalProperties, indexHistory.additionalProperties);
   }
 
@@ -213,7 +190,7 @@ public class IndexHistory {
 
   @Override
   public int hashCode() {
-    return Objects.hash(date, totalBacklinks, totalPages, totalDomains, additionalProperties);
+    return Objects.hash(date, totalBacklinks, totalPages, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -230,7 +207,6 @@ public class IndexHistory {
     sb.append("    date: ").append(toIndentedString(date)).append("\n");
     sb.append("    totalBacklinks: ").append(toIndentedString(totalBacklinks)).append("\n");
     sb.append("    totalPages: ").append(toIndentedString(totalPages)).append("\n");
-    sb.append("    totalDomains: ").append(toIndentedString(totalDomains)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -257,7 +233,6 @@ public class IndexHistory {
     openapiFields.add("date");
     openapiFields.add("total_backlinks");
     openapiFields.add("total_pages");
-    openapiFields.add("total_domains");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

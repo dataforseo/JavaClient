@@ -145,6 +145,38 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfoTest {
     }
 
     /**
+     * Test the property 'loadPricesByDates'
+     */
+    @Test
+    public void loadPricesByDatesTest() {
+        // TODO: test loadPricesByDates
+    }
+
+    /**
+     * Test the property 'pricesStartDate'
+     */
+    @Test
+    public void pricesStartDateTest() {
+        // TODO: test pricesStartDate
+    }
+
+    /**
+     * Test the property 'pricesEndDate'
+     */
+    @Test
+    public void pricesEndDateTest() {
+        // TODO: test pricesEndDate
+    }
+
+    /**
+     * Test the property 'pricesDateRange'
+     */
+    @Test
+    public void pricesDateRangeTest() {
+        // TODO: test pricesDateRange
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

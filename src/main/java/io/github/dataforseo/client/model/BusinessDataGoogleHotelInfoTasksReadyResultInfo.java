@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelInfoTasksReadyResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -71,13 +71,9 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
 
-  public static final String SERIALIZED_NAME_ENDPOINT_ADVANCED = "endpoint_advanced";
-  @SerializedName(SERIALIZED_NAME_ENDPOINT_ADVANCED)
-  private String endpointAdvanced;
-
-  public static final String SERIALIZED_NAME_ENDPOINT_HTML = "endpoint_html";
-  @SerializedName(SERIALIZED_NAME_ENDPOINT_HTML)
-  private String endpointHtml;
+  public static final String SERIALIZED_NAME_ENDPOINT = "endpoint";
+  @SerializedName(SERIALIZED_NAME_ENDPOINT)
+  private String endpoint;
 
   public BusinessDataGoogleHotelInfoTasksReadyResultInfo() {
   }
@@ -177,41 +173,22 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
   }
 
 
-  public BusinessDataGoogleHotelInfoTasksReadyResultInfo endpointAdvanced(String endpointAdvanced) {
-    this.endpointAdvanced = endpointAdvanced;
+  public BusinessDataGoogleHotelInfoTasksReadyResultInfo endpoint(String endpoint) {
+    this.endpoint = endpoint;
     return this;
   }
 
   /**
    * URL for collecting the results of the task
-   * @return endpointAdvanced
+   * @return endpoint
    */
   @javax.annotation.Nullable
-  public String getEndpointAdvanced() {
-    return endpointAdvanced;
+  public String getEndpoint() {
+    return endpoint;
   }
 
-  public void setEndpointAdvanced(String endpointAdvanced) {
-    this.endpointAdvanced = endpointAdvanced;
-  }
-
-
-  public BusinessDataGoogleHotelInfoTasksReadyResultInfo endpointHtml(String endpointHtml) {
-    this.endpointHtml = endpointHtml;
-    return this;
-  }
-
-  /**
-   * URL for collecting the results of the task
-   * @return endpointHtml
-   */
-  @javax.annotation.Nullable
-  public String getEndpointHtml() {
-    return endpointHtml;
-  }
-
-  public void setEndpointHtml(String endpointHtml) {
-    this.endpointHtml = endpointHtml;
+  public void setEndpoint(String endpoint) {
+    this.endpoint = endpoint;
   }
 
   /**
@@ -274,8 +251,7 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
         Objects.equals(this.seType, businessDataGoogleHotelInfoTasksReadyResultInfo.seType) &&
         Objects.equals(this.datePosted, businessDataGoogleHotelInfoTasksReadyResultInfo.datePosted) &&
         Objects.equals(this.tag, businessDataGoogleHotelInfoTasksReadyResultInfo.tag) &&
-        Objects.equals(this.endpointAdvanced, businessDataGoogleHotelInfoTasksReadyResultInfo.endpointAdvanced) &&
-        Objects.equals(this.endpointHtml, businessDataGoogleHotelInfoTasksReadyResultInfo.endpointHtml)&&
+        Objects.equals(this.endpoint, businessDataGoogleHotelInfoTasksReadyResultInfo.endpoint)&&
         Objects.equals(this.additionalProperties, businessDataGoogleHotelInfoTasksReadyResultInfo.additionalProperties);
   }
 
@@ -285,7 +261,7 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, se, seType, datePosted, tag, endpointAdvanced, endpointHtml, additionalProperties);
+    return Objects.hash(id, se, seType, datePosted, tag, endpoint, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -304,8 +280,7 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
     sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    endpointAdvanced: ").append(toIndentedString(endpointAdvanced)).append("\n");
-    sb.append("    endpointHtml: ").append(toIndentedString(endpointHtml)).append("\n");
+    sb.append("    endpoint: ").append(toIndentedString(endpoint)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -334,8 +309,7 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
     openapiFields.add("se_type");
     openapiFields.add("date_posted");
     openapiFields.add("tag");
-    openapiFields.add("endpoint_advanced");
-    openapiFields.add("endpoint_html");
+    openapiFields.add("endpoint");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -369,11 +343,8 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfo {
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));
       }
-      if ((jsonObj.get("endpoint_advanced") != null && !jsonObj.get("endpoint_advanced").isJsonNull()) && !jsonObj.get("endpoint_advanced").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endpoint_advanced` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_advanced").toString()));
-      }
-      if ((jsonObj.get("endpoint_html") != null && !jsonObj.get("endpoint_html").isJsonNull()) && !jsonObj.get("endpoint_html").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endpoint_html` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_html").toString()));
+      if ((jsonObj.get("endpoint") != null && !jsonObj.get("endpoint").isJsonNull()) && !jsonObj.get("endpoint").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `endpoint` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint").toString()));
       }
   }
 

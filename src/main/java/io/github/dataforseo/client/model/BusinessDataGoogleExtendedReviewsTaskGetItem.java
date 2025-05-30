@@ -19,11 +19,12 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.ImagesElement;
-import io.github.dataforseo.client.model.RatingInfo;
 import io.github.dataforseo.client.model.ReviewHighlights;
 import io.github.dataforseo.client.model.Source;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleExtendedReviewsTaskGetItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleExtendedReviewsTaskGetItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -63,11 +64,11 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
 
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
-  private Integer rankGroup;
+  private BigDecimal rankGroup;
 
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
-  private Integer rankAbsolute;
+  private BigDecimal rankAbsolute;
 
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -95,15 +96,15 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_PHOTOS_COUNT = "photos_count";
   @SerializedName(SERIALIZED_NAME_PHOTOS_COUNT)
-  private Long photosCount;
+  private BigDecimal photosCount;
 
   public static final String SERIALIZED_NAME_LOCAL_GUIDE = "local_guide";
   @SerializedName(SERIALIZED_NAME_LOCAL_GUIDE)
@@ -179,7 +180,7 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
   }
 
 
-  public BusinessDataGoogleExtendedReviewsTaskGetItem rankGroup(Integer rankGroup) {
+  public BusinessDataGoogleExtendedReviewsTaskGetItem rankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
     return this;
   }
@@ -189,16 +190,16 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
    * @return rankGroup
    */
   @javax.annotation.Nullable
-  public Integer getRankGroup() {
+  public BigDecimal getRankGroup() {
     return rankGroup;
   }
 
-  public void setRankGroup(Integer rankGroup) {
+  public void setRankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
   }
 
 
-  public BusinessDataGoogleExtendedReviewsTaskGetItem rankAbsolute(Integer rankAbsolute) {
+  public BusinessDataGoogleExtendedReviewsTaskGetItem rankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
     return this;
   }
@@ -208,11 +209,11 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
-  public Integer getRankAbsolute() {
+  public BigDecimal getRankAbsolute() {
     return rankAbsolute;
   }
 
-  public void setRankAbsolute(Integer rankAbsolute) {
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
   }
 
@@ -331,7 +332,7 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
   }
 
 
-  public BusinessDataGoogleExtendedReviewsTaskGetItem rating(RatingInfo rating) {
+  public BusinessDataGoogleExtendedReviewsTaskGetItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -341,16 +342,16 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
 
-  public BusinessDataGoogleExtendedReviewsTaskGetItem reviewsCount(Long reviewsCount) {
+  public BusinessDataGoogleExtendedReviewsTaskGetItem reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -360,16 +361,16 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
 
-  public BusinessDataGoogleExtendedReviewsTaskGetItem photosCount(Long photosCount) {
+  public BusinessDataGoogleExtendedReviewsTaskGetItem photosCount(BigDecimal photosCount) {
     this.photosCount = photosCount;
     return this;
   }
@@ -379,11 +380,11 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
    * @return photosCount
    */
   @javax.annotation.Nullable
-  public Long getPhotosCount() {
+  public BigDecimal getPhotosCount() {
     return photosCount;
   }
 
-  public void setPhotosCount(Long photosCount) {
+  public void setPhotosCount(BigDecimal photosCount) {
     this.photosCount = photosCount;
   }
 
@@ -867,7 +868,7 @@ public class BusinessDataGoogleExtendedReviewsTaskGetItem {
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if ((jsonObj.get("profile_name") != null && !jsonObj.get("profile_name").isJsonNull()) && !jsonObj.get("profile_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `profile_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("profile_name").toString()));

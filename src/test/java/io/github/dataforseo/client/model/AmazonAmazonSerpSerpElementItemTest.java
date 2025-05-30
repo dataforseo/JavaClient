@@ -22,6 +22,7 @@ import io.github.dataforseo.client.model.AmazonDeliveryInfo;
 import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -68,6 +69,14 @@ public class AmazonAmazonSerpSerpElementItemTest {
     }
 
     /**
+     * Test the property 'position'
+     */
+    @Test
+    public void positionTest() {
+        // TODO: test position
+    }
+
+    /**
      * Test the property 'xpath'
      */
     @Test
@@ -81,14 +90,6 @@ public class AmazonAmazonSerpSerpElementItemTest {
     @Test
     public void seTypeTest() {
         // TODO: test seType
-    }
-
-    /**
-     * Test the property 'position'
-     */
-    @Test
-    public void positionTest() {
-        // TODO: test position
     }
 
     /**

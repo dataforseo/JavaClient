@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.SslInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DomainInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DomainInfo {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -92,23 +93,23 @@ public class DomainInfo {
 
   public static final String SERIALIZED_NAME_TOTAL_PAGES = "total_pages";
   @SerializedName(SERIALIZED_NAME_TOTAL_PAGES)
-  private Long totalPages;
+  private BigDecimal totalPages;
 
   public static final String SERIALIZED_NAME_PAGE_NOT_FOUND_STATUS_CODE = "page_not_found_status_code";
   @SerializedName(SERIALIZED_NAME_PAGE_NOT_FOUND_STATUS_CODE)
-  private Integer pageNotFoundStatusCode;
+  private BigDecimal pageNotFoundStatusCode;
 
   public static final String SERIALIZED_NAME_CANONICALIZATION_STATUS_CODE = "canonicalization_status_code";
   @SerializedName(SERIALIZED_NAME_CANONICALIZATION_STATUS_CODE)
-  private Integer canonicalizationStatusCode;
+  private BigDecimal canonicalizationStatusCode;
 
   public static final String SERIALIZED_NAME_DIRECTORY_BROWSING_STATUS_CODE = "directory_browsing_status_code";
   @SerializedName(SERIALIZED_NAME_DIRECTORY_BROWSING_STATUS_CODE)
-  private Integer directoryBrowsingStatusCode;
+  private BigDecimal directoryBrowsingStatusCode;
 
   public static final String SERIALIZED_NAME_WWW_REDIRECT_STATUS_CODE = "www_redirect_status_code";
   @SerializedName(SERIALIZED_NAME_WWW_REDIRECT_STATUS_CODE)
-  private Integer wwwRedirectStatusCode;
+  private BigDecimal wwwRedirectStatusCode;
 
   public static final String SERIALIZED_NAME_MAIN_DOMAIN = "main_domain";
   @SerializedName(SERIALIZED_NAME_MAIN_DOMAIN)
@@ -218,7 +219,7 @@ public class DomainInfo {
   }
 
   /**
-   * time when the crawling ended date and time when the crawling was finished in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00note: informative only if \&quot;crawl_progress\&quot; is \&quot;finished\&quot; if \&quot;crawl_progress\&quot; is in_progress, the value will be null
+   * time when the crawling ended date and time when the crawling was finished in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 Note: informative only if \&quot;crawl_progress\&quot; is \&quot;finished\&quot; if \&quot;crawl_progress\&quot; is in_progress, the value will be null
    * @return crawlEnd
    */
   @javax.annotation.Nullable
@@ -296,7 +297,7 @@ public class DomainInfo {
   }
 
 
-  public DomainInfo totalPages(Long totalPages) {
+  public DomainInfo totalPages(BigDecimal totalPages) {
     this.totalPages = totalPages;
     return this;
   }
@@ -306,16 +307,16 @@ public class DomainInfo {
    * @return totalPages
    */
   @javax.annotation.Nullable
-  public Long getTotalPages() {
+  public BigDecimal getTotalPages() {
     return totalPages;
   }
 
-  public void setTotalPages(Long totalPages) {
+  public void setTotalPages(BigDecimal totalPages) {
     this.totalPages = totalPages;
   }
 
 
-  public DomainInfo pageNotFoundStatusCode(Integer pageNotFoundStatusCode) {
+  public DomainInfo pageNotFoundStatusCode(BigDecimal pageNotFoundStatusCode) {
     this.pageNotFoundStatusCode = pageNotFoundStatusCode;
     return this;
   }
@@ -325,16 +326,16 @@ public class DomainInfo {
    * @return pageNotFoundStatusCode
    */
   @javax.annotation.Nullable
-  public Integer getPageNotFoundStatusCode() {
+  public BigDecimal getPageNotFoundStatusCode() {
     return pageNotFoundStatusCode;
   }
 
-  public void setPageNotFoundStatusCode(Integer pageNotFoundStatusCode) {
+  public void setPageNotFoundStatusCode(BigDecimal pageNotFoundStatusCode) {
     this.pageNotFoundStatusCode = pageNotFoundStatusCode;
   }
 
 
-  public DomainInfo canonicalizationStatusCode(Integer canonicalizationStatusCode) {
+  public DomainInfo canonicalizationStatusCode(BigDecimal canonicalizationStatusCode) {
     this.canonicalizationStatusCode = canonicalizationStatusCode;
     return this;
   }
@@ -344,16 +345,16 @@ public class DomainInfo {
    * @return canonicalizationStatusCode
    */
   @javax.annotation.Nullable
-  public Integer getCanonicalizationStatusCode() {
+  public BigDecimal getCanonicalizationStatusCode() {
     return canonicalizationStatusCode;
   }
 
-  public void setCanonicalizationStatusCode(Integer canonicalizationStatusCode) {
+  public void setCanonicalizationStatusCode(BigDecimal canonicalizationStatusCode) {
     this.canonicalizationStatusCode = canonicalizationStatusCode;
   }
 
 
-  public DomainInfo directoryBrowsingStatusCode(Integer directoryBrowsingStatusCode) {
+  public DomainInfo directoryBrowsingStatusCode(BigDecimal directoryBrowsingStatusCode) {
     this.directoryBrowsingStatusCode = directoryBrowsingStatusCode;
     return this;
   }
@@ -363,16 +364,16 @@ public class DomainInfo {
    * @return directoryBrowsingStatusCode
    */
   @javax.annotation.Nullable
-  public Integer getDirectoryBrowsingStatusCode() {
+  public BigDecimal getDirectoryBrowsingStatusCode() {
     return directoryBrowsingStatusCode;
   }
 
-  public void setDirectoryBrowsingStatusCode(Integer directoryBrowsingStatusCode) {
+  public void setDirectoryBrowsingStatusCode(BigDecimal directoryBrowsingStatusCode) {
     this.directoryBrowsingStatusCode = directoryBrowsingStatusCode;
   }
 
 
-  public DomainInfo wwwRedirectStatusCode(Integer wwwRedirectStatusCode) {
+  public DomainInfo wwwRedirectStatusCode(BigDecimal wwwRedirectStatusCode) {
     this.wwwRedirectStatusCode = wwwRedirectStatusCode;
     return this;
   }
@@ -382,11 +383,11 @@ public class DomainInfo {
    * @return wwwRedirectStatusCode
    */
   @javax.annotation.Nullable
-  public Integer getWwwRedirectStatusCode() {
+  public BigDecimal getWwwRedirectStatusCode() {
     return wwwRedirectStatusCode;
   }
 
-  public void setWwwRedirectStatusCode(Integer wwwRedirectStatusCode) {
+  public void setWwwRedirectStatusCode(BigDecimal wwwRedirectStatusCode) {
     this.wwwRedirectStatusCode = wwwRedirectStatusCode;
   }
 

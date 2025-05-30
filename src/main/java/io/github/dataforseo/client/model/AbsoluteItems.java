@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AbsoluteItems
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AbsoluteItems {
   public static final String SERIALIZED_NAME_GEO_ID = "geo_id";
   @SerializedName(SERIALIZED_NAME_GEO_ID)
@@ -63,7 +63,7 @@ public class AbsoluteItems {
 
   public static final String SERIALIZED_NAME_VALUES = "values";
   @SerializedName(SERIALIZED_NAME_VALUES)
-  private List<Integer> values;
+  private List<String> values;
 
   public AbsoluteItems() {
   }
@@ -106,12 +106,12 @@ public class AbsoluteItems {
   }
 
 
-  public AbsoluteItems values(List<Integer> values) {
+  public AbsoluteItems values(List<String> values) {
     this.values = values;
     return this;
   }
 
-  public AbsoluteItems addValuesItem(Integer valuesItem) {
+  public AbsoluteItems addValuesItem(String valuesItem) {
     if (this.values == null) {
       this.values = new ArrayList<>();
     }
@@ -124,11 +124,11 @@ public class AbsoluteItems {
    * @return values
    */
   @javax.annotation.Nullable
-  public List<Integer> getValues() {
+  public List<String> getValues() {
     return values;
   }
 
-  public void setValues(List<Integer> values) {
+  public void setValues(List<String> values) {
     this.values = values;
   }
 

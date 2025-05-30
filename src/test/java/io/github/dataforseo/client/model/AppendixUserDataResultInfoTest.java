@@ -81,4 +81,12 @@ public class AppendixUserDataResultInfoTest {
         // TODO: test price
     }
 
+    /**
+     * Test the property 'backlinksSubscriptionExpiryDate'
+     */
+    @Test
+    public void backlinksSubscriptionExpiryDateTest() {
+        // TODO: test backlinksSubscriptionExpiryDate
+    }
+
 }

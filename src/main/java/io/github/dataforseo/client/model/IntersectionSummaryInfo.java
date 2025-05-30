@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,16 +50,16 @@ import io.github.dataforseo.client.JSON;
 /**
  * IntersectionSummaryInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class IntersectionSummaryInfo {
   public static final String SERIALIZED_NAME_INTERSECTIONS_COUNT = "intersections_count";
   @SerializedName(SERIALIZED_NAME_INTERSECTIONS_COUNT)
-  private Long intersectionsCount;
+  private BigDecimal intersectionsCount;
 
   public IntersectionSummaryInfo() {
   }
 
-  public IntersectionSummaryInfo intersectionsCount(Long intersectionsCount) {
+  public IntersectionSummaryInfo intersectionsCount(BigDecimal intersectionsCount) {
     this.intersectionsCount = intersectionsCount;
     return this;
   }
@@ -68,11 +69,11 @@ public class IntersectionSummaryInfo {
    * @return intersectionsCount
    */
   @javax.annotation.Nullable
-  public Long getIntersectionsCount() {
+  public BigDecimal getIntersectionsCount() {
     return intersectionsCount;
   }
 
-  public void setIntersectionsCount(Long intersectionsCount) {
+  public void setIntersectionsCount(BigDecimal intersectionsCount) {
     this.intersectionsCount = intersectionsCount;
   }
 

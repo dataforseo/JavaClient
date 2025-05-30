@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,19 +50,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataAppleLocationsResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataAppleLocationsResultInfo {
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME_PARENT = "location_name_parent";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME_PARENT)
-  private Integer locationNameParent;
+  public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
+  private BigDecimal locationCodeParent;
 
   public static final String SERIALIZED_NAME_COUNTRY_ISO_CODE = "country_iso_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_ISO_CODE)
@@ -74,7 +75,7 @@ public class AppDataAppleLocationsResultInfo {
   public AppDataAppleLocationsResultInfo() {
   }
 
-  public AppDataAppleLocationsResultInfo locationCode(Integer locationCode) {
+  public AppDataAppleLocationsResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -84,11 +85,11 @@ public class AppDataAppleLocationsResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -112,22 +113,22 @@ public class AppDataAppleLocationsResultInfo {
   }
 
 
-  public AppDataAppleLocationsResultInfo locationNameParent(Integer locationNameParent) {
-    this.locationNameParent = locationNameParent;
+  public AppDataAppleLocationsResultInfo locationCodeParent(BigDecimal locationCodeParent) {
+    this.locationCodeParent = locationCodeParent;
     return this;
   }
 
   /**
-   * the name of the superordinate location example: \&quot;location_code\&quot;: 1006473, \&quot;location_name\&quot;: \&quot;Altrincham,England,United Kingdom\&quot;, \&quot;location_name_parent\&quot;: \&quot;England,United Kingdom\&quot;, where location_name_parent corresponds to: \&quot;location_code\&quot;: 20339, \&quot;location_name\&quot;: \&quot;England,United Kingdom\&quot; note: Apple App Data API currently supports countries only, that is why this value will always be null
-   * @return locationNameParent
+   * Get locationCodeParent
+   * @return locationCodeParent
    */
   @javax.annotation.Nullable
-  public Integer getLocationNameParent() {
-    return locationNameParent;
+  public BigDecimal getLocationCodeParent() {
+    return locationCodeParent;
   }
 
-  public void setLocationNameParent(Integer locationNameParent) {
-    this.locationNameParent = locationNameParent;
+  public void setLocationCodeParent(BigDecimal locationCodeParent) {
+    this.locationCodeParent = locationCodeParent;
   }
 
 
@@ -225,7 +226,7 @@ public class AppDataAppleLocationsResultInfo {
     AppDataAppleLocationsResultInfo appDataAppleLocationsResultInfo = (AppDataAppleLocationsResultInfo) o;
     return Objects.equals(this.locationCode, appDataAppleLocationsResultInfo.locationCode) &&
         Objects.equals(this.locationName, appDataAppleLocationsResultInfo.locationName) &&
-        Objects.equals(this.locationNameParent, appDataAppleLocationsResultInfo.locationNameParent) &&
+        Objects.equals(this.locationCodeParent, appDataAppleLocationsResultInfo.locationCodeParent) &&
         Objects.equals(this.countryIsoCode, appDataAppleLocationsResultInfo.countryIsoCode) &&
         Objects.equals(this.locationType, appDataAppleLocationsResultInfo.locationType)&&
         Objects.equals(this.additionalProperties, appDataAppleLocationsResultInfo.additionalProperties);
@@ -237,7 +238,7 @@ public class AppDataAppleLocationsResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(locationCode, locationName, locationNameParent, countryIsoCode, locationType, additionalProperties);
+    return Objects.hash(locationCode, locationName, locationCodeParent, countryIsoCode, locationType, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -253,7 +254,7 @@ public class AppDataAppleLocationsResultInfo {
     sb.append("class AppDataAppleLocationsResultInfo {\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    locationNameParent: ").append(toIndentedString(locationNameParent)).append("\n");
+    sb.append("    locationCodeParent: ").append(toIndentedString(locationCodeParent)).append("\n");
     sb.append("    countryIsoCode: ").append(toIndentedString(countryIsoCode)).append("\n");
     sb.append("    locationType: ").append(toIndentedString(locationType)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
@@ -281,7 +282,7 @@ public class AppDataAppleLocationsResultInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("location_code");
     openapiFields.add("location_name");
-    openapiFields.add("location_name_parent");
+    openapiFields.add("location_code_parent");
     openapiFields.add("country_iso_code");
     openapiFields.add("location_type");
 

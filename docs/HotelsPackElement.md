@@ -15,7 +15,7 @@
 |**domain** | **String** | website domain |  [optional] |
 |**url** | **String** | URL |  [optional] |
 |**isPaid** | **Boolean** | indicates whether the element is an ad |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 
 
 

@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.KeywordInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,15 +51,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * History
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class History {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
-  private Integer year;
+  private BigDecimal year;
 
   public static final String SERIALIZED_NAME_MONTH = "month";
   @SerializedName(SERIALIZED_NAME_MONTH)
-  private Integer month;
+  private BigDecimal month;
 
   public static final String SERIALIZED_NAME_KEYWORD_INFO = "keyword_info";
   @SerializedName(SERIALIZED_NAME_KEYWORD_INFO)
@@ -67,7 +68,7 @@ public class History {
   public History() {
   }
 
-  public History year(Integer year) {
+  public History year(BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -77,16 +78,16 @@ public class History {
    * @return year
    */
   @javax.annotation.Nullable
-  public Integer getYear() {
+  public BigDecimal getYear() {
     return year;
   }
 
-  public void setYear(Integer year) {
+  public void setYear(BigDecimal year) {
     this.year = year;
   }
 
 
-  public History month(Integer month) {
+  public History month(BigDecimal month) {
     this.month = month;
     return this;
   }
@@ -96,11 +97,11 @@ public class History {
    * @return month
    */
   @javax.annotation.Nullable
-  public Integer getMonth() {
+  public BigDecimal getMonth() {
     return month;
   }
 
-  public void setMonth(Integer month) {
+  public void setMonth(BigDecimal month) {
     this.month = month;
   }
 

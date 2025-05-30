@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseOnPageLinkItemInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseOnPageLinkItemInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -102,6 +103,10 @@ public class BaseOnPageLinkItemInfo {
   public static final String SERIALIZED_NAME_IS_LINK_RELATION_CONFLICT = "is_link_relation_conflict";
   @SerializedName(SERIALIZED_NAME_IS_LINK_RELATION_CONFLICT)
   private Boolean isLinkRelationConflict;
+
+  public static final String SERIALIZED_NAME_PAGE_TO_STATUS_CODE = "page_to_status_code";
+  @SerializedName(SERIALIZED_NAME_PAGE_TO_STATUS_CODE)
+  private BigDecimal pageToStatusCode;
 
   public BaseOnPageLinkItemInfo() {
     this.type = this.getClass().getSimpleName();
@@ -354,6 +359,25 @@ public class BaseOnPageLinkItemInfo {
   }
 
 
+  public BaseOnPageLinkItemInfo pageToStatusCode(BigDecimal pageToStatusCode) {
+    this.pageToStatusCode = pageToStatusCode;
+    return this;
+  }
+
+  /**
+   * status code of the referenced page status code of the page to which the link is pointing
+   * @return pageToStatusCode
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getPageToStatusCode() {
+    return pageToStatusCode;
+  }
+
+  public void setPageToStatusCode(BigDecimal pageToStatusCode) {
+    this.pageToStatusCode = pageToStatusCode;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -376,7 +400,8 @@ public class BaseOnPageLinkItemInfo {
         Objects.equals(this.pageToScheme, baseOnPageLinkItemInfo.pageToScheme) &&
         Objects.equals(this.direction, baseOnPageLinkItemInfo.direction) &&
         Objects.equals(this.isBroken, baseOnPageLinkItemInfo.isBroken) &&
-        Objects.equals(this.isLinkRelationConflict, baseOnPageLinkItemInfo.isLinkRelationConflict);
+        Objects.equals(this.isLinkRelationConflict, baseOnPageLinkItemInfo.isLinkRelationConflict) &&
+        Objects.equals(this.pageToStatusCode, baseOnPageLinkItemInfo.pageToStatusCode);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -385,7 +410,7 @@ public class BaseOnPageLinkItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, domainFrom, domainTo, pageFrom, pageTo, linkFrom, linkTo, dofollow, pageFromScheme, pageToScheme, direction, isBroken, isLinkRelationConflict);
+    return Objects.hash(type, domainFrom, domainTo, pageFrom, pageTo, linkFrom, linkTo, dofollow, pageFromScheme, pageToScheme, direction, isBroken, isLinkRelationConflict, pageToStatusCode);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -412,6 +437,7 @@ public class BaseOnPageLinkItemInfo {
     sb.append("    direction: ").append(toIndentedString(direction)).append("\n");
     sb.append("    isBroken: ").append(toIndentedString(isBroken)).append("\n");
     sb.append("    isLinkRelationConflict: ").append(toIndentedString(isLinkRelationConflict)).append("\n");
+    sb.append("    pageToStatusCode: ").append(toIndentedString(pageToStatusCode)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -447,6 +473,7 @@ public class BaseOnPageLinkItemInfo {
     openapiFields.add("direction");
     openapiFields.add("is_broken");
     openapiFields.add("is_link_relation_conflict");
+    openapiFields.add("page_to_status_code");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -473,8 +500,17 @@ public class BaseOnPageLinkItemInfo {
         case "anchor":
           AnchorLinkElementItem.validateJsonElement(jsonElement);
           break;
+        case "canonical":
+          CanonicalLinkElementItem.validateJsonElement(jsonElement);
+          break;
         case "image":
           ImageLinkElementItem.validateJsonElement(jsonElement);
+          break;
+        case "link":
+          LinkLinkElementItem.validateJsonElement(jsonElement);
+          break;
+        case "meta":
+          MetaLinkElementItem.validateJsonElement(jsonElement);
           break;
         case "redirect":
           RedirectLinkElementItem.validateJsonElement(jsonElement);

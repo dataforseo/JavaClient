@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataClickstreamDataSearchVolumeLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataClickstreamDataSearchVolumeLiveItem {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -60,7 +61,7 @@ public class KeywordsDataClickstreamDataSearchVolumeLiveItem {
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public static final String SERIALIZED_NAME_MONTHLY_SEARCHES = "monthly_searches";
   @SerializedName(SERIALIZED_NAME_MONTHLY_SEARCHES)
@@ -88,7 +89,7 @@ public class KeywordsDataClickstreamDataSearchVolumeLiveItem {
   }
 
 
-  public KeywordsDataClickstreamDataSearchVolumeLiveItem searchVolume(Long searchVolume) {
+  public KeywordsDataClickstreamDataSearchVolumeLiveItem searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -98,11 +99,11 @@ public class KeywordsDataClickstreamDataSearchVolumeLiveItem {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 

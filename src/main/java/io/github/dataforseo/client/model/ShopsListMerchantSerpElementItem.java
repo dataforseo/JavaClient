@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ShopsListMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -76,7 +76,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_BASE_PRICE = "base_price";
   @SerializedName(SERIALIZED_NAME_BASE_PRICE)
-  private Integer basePrice;
+  private BigDecimal basePrice;
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
@@ -84,7 +84,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_SHIPPING_PRICE = "shipping_price";
   @SerializedName(SERIALIZED_NAME_SHIPPING_PRICE)
-  private Integer shippingPrice;
+  private BigDecimal shippingPrice;
 
   public static final String SERIALIZED_NAME_TOTAL_PRICE = "total_price";
   @SerializedName(SERIALIZED_NAME_TOTAL_PRICE)
@@ -96,7 +96,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
 
   public static final String SERIALIZED_NAME_PRICE_MULTIPLIER = "price_multiplier";
   @SerializedName(SERIALIZED_NAME_PRICE_MULTIPLIER)
-  private Integer priceMultiplier;
+  private BigDecimal priceMultiplier;
 
   public static final String SERIALIZED_NAME_SELLER_NAME = "seller_name";
   @SerializedName(SERIALIZED_NAME_SELLER_NAME)
@@ -216,7 +216,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem basePrice(Integer basePrice) {
+  public ShopsListMerchantSerpElementItem basePrice(BigDecimal basePrice) {
     this.basePrice = basePrice;
     return this;
   }
@@ -226,11 +226,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return basePrice
    */
   @javax.annotation.Nullable
-  public Integer getBasePrice() {
+  public BigDecimal getBasePrice() {
     return basePrice;
   }
 
-  public void setBasePrice(Integer basePrice) {
+  public void setBasePrice(BigDecimal basePrice) {
     this.basePrice = basePrice;
   }
 
@@ -254,7 +254,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem shippingPrice(Integer shippingPrice) {
+  public ShopsListMerchantSerpElementItem shippingPrice(BigDecimal shippingPrice) {
     this.shippingPrice = shippingPrice;
     return this;
   }
@@ -264,11 +264,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return shippingPrice
    */
   @javax.annotation.Nullable
-  public Integer getShippingPrice() {
+  public BigDecimal getShippingPrice() {
     return shippingPrice;
   }
 
-  public void setShippingPrice(Integer shippingPrice) {
+  public void setShippingPrice(BigDecimal shippingPrice) {
     this.shippingPrice = shippingPrice;
   }
 
@@ -311,7 +311,7 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
   }
 
 
-  public ShopsListMerchantSerpElementItem priceMultiplier(Integer priceMultiplier) {
+  public ShopsListMerchantSerpElementItem priceMultiplier(BigDecimal priceMultiplier) {
     this.priceMultiplier = priceMultiplier;
     return this;
   }
@@ -321,11 +321,11 @@ public class ShopsListMerchantSerpElementItem extends BaseMerchantSerpElementIte
    * @return priceMultiplier
    */
   @javax.annotation.Nullable
-  public Integer getPriceMultiplier() {
+  public BigDecimal getPriceMultiplier() {
     return priceMultiplier;
   }
 
-  public void setPriceMultiplier(Integer priceMultiplier) {
+  public void setPriceMultiplier(BigDecimal priceMultiplier) {
     this.priceMultiplier = priceMultiplier;
   }
 

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TargetInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TargetInfo {
   public static final String SERIALIZED_NAME_SERVER = "server";
   @SerializedName(SERIALIZED_NAME_SERVER)
@@ -79,7 +80,7 @@ public class TargetInfo {
 
   public static final String SERIALIZED_NAME_TARGET_SPAM_SCORE = "target_spam_score";
   @SerializedName(SERIALIZED_NAME_TARGET_SPAM_SCORE)
-  private Integer targetSpamScore;
+  private BigDecimal targetSpamScore;
 
   public TargetInfo() {
   }
@@ -206,7 +207,7 @@ public class TargetInfo {
   }
 
 
-  public TargetInfo targetSpamScore(Integer targetSpamScore) {
+  public TargetInfo targetSpamScore(BigDecimal targetSpamScore) {
     this.targetSpamScore = targetSpamScore;
     return this;
   }
@@ -216,11 +217,11 @@ public class TargetInfo {
    * @return targetSpamScore
    */
   @javax.annotation.Nullable
-  public Integer getTargetSpamScore() {
+  public BigDecimal getTargetSpamScore() {
     return targetSpamScore;
   }
 
-  public void setTargetSpamScore(Integer targetSpamScore) {
+  public void setTargetSpamScore(BigDecimal targetSpamScore) {
     this.targetSpamScore = targetSpamScore;
   }
 

@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -84,10 +84,6 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   public static final String SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA = "include_clickstream_data";
   @SerializedName(SERIALIZED_NAME_INCLUDE_CLICKSTREAM_DATA)
   private Boolean includeClickstreamData;
-
-  public static final String SERIALIZED_NAME_IGNORE_SYNONYMS = "ignore_synonyms";
-  @SerializedName(SERIALIZED_NAME_IGNORE_SYNONYMS)
-  private Boolean ignoreSynonyms;
 
   public static final String SERIALIZED_NAME_LIMIT = "limit";
   @SerializedName(SERIALIZED_NAME_LIMIT)
@@ -268,25 +264,6 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   }
 
 
-  public DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo ignoreSynonyms(Boolean ignoreSynonyms) {
-    this.ignoreSynonyms = ignoreSynonyms;
-    return this;
-  }
-
-  /**
-   * ignore highly similar keywords optional field if set to true only core keywords will be returned, all highly similar keywords will be excluded; default value: false
-   * @return ignoreSynonyms
-   */
-  @javax.annotation.Nullable
-  public Boolean getIgnoreSynonyms() {
-    return ignoreSynonyms;
-  }
-
-  public void setIgnoreSynonyms(Boolean ignoreSynonyms) {
-    this.ignoreSynonyms = ignoreSynonyms;
-  }
-
-
   public DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo limit(Integer limit) {
     this.limit = limit;
     return this;
@@ -358,7 +335,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
   }
 
   /**
-   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, match, not_match, ilike, not_ilike, like, not_like you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters note that you can not filter the results by relevance example: [\&quot;keyword_info.search_volume\&quot;,\&quot;&gt;\&quot;,0] [[\&quot;impressions_info.daily_impressions_average\&quot;,\&quot;in\&quot;,[0,1000]], \&quot;and\&quot;, [\&quot;impressions_info.ad_position_average\&quot;,\&quot;&lt;\&quot;,3]][[\&quot;impressions_info.ad_position_average\&quot;,\&quot;&gt;\&quot;,0], \&quot;and\&quot;, [[\&quot;impressions_info.cpc_max\&quot;,\&quot;&lt;\&quot;,0.5],\&quot;or\&quot;,[\&quot;impressions_info.daily_clicks_max\&quot;,\&quot;&gt;&#x3D;\&quot;,10]]] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
+   * array of results filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, match, not_match, ilike, not_ilike, like, not_like you can use the % operator with like and not_like, as well as ilike and not_ilike to match any string of zero or more characters note that you can not filter the results by relevance example: [\&quot;keyword_info.search_volume\&quot;,\&quot;&gt;\&quot;,0] for more information about filters, please refer to Dataforseo Labs – Filters or this help center guide
    * @return filters
    */
   @javax.annotation.Nullable
@@ -479,7 +456,6 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
         Objects.equals(this.includeSerpInfo, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.includeSerpInfo) &&
         Objects.equals(this.includeSubdomains, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.includeSubdomains) &&
         Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.includeClickstreamData) &&
-        Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.limit, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.limit) &&
         Objects.equals(this.offset, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.offset) &&
         Objects.equals(this.offsetToken, dataforseoLabsGoogleKeywordsForSiteLiveRequestInfo.offsetToken) &&
@@ -495,7 +471,7 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSerpInfo, includeSubdomains, includeClickstreamData, ignoreSynonyms, limit, offset, offsetToken, filters, orderBy, tag, additionalProperties);
+    return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSerpInfo, includeSubdomains, includeClickstreamData, limit, offset, offsetToken, filters, orderBy, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -517,7 +493,6 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
     sb.append("    includeSerpInfo: ").append(toIndentedString(includeSerpInfo)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
     sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
-    sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    offsetToken: ").append(toIndentedString(offsetToken)).append("\n");
@@ -555,7 +530,6 @@ public class DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo {
     openapiFields.add("include_serp_info");
     openapiFields.add("include_subdomains");
     openapiFields.add("include_clickstream_data");
-    openapiFields.add("ignore_synonyms");
     openapiFields.add("limit");
     openapiFields.add("offset");
     openapiFields.add("offset_token");

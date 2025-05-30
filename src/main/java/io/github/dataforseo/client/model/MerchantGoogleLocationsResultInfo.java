@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,19 +50,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * MerchantGoogleLocationsResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MerchantGoogleLocationsResultInfo {
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME_PARENT = "location_name_parent";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME_PARENT)
-  private String locationNameParent;
+  public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
+  private BigDecimal locationCodeParent;
 
   public static final String SERIALIZED_NAME_COUNTRY_ISO_CODE = "country_iso_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_ISO_CODE)
@@ -74,7 +75,7 @@ public class MerchantGoogleLocationsResultInfo {
   public MerchantGoogleLocationsResultInfo() {
   }
 
-  public MerchantGoogleLocationsResultInfo locationCode(Integer locationCode) {
+  public MerchantGoogleLocationsResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -84,11 +85,11 @@ public class MerchantGoogleLocationsResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -112,22 +113,22 @@ public class MerchantGoogleLocationsResultInfo {
   }
 
 
-  public MerchantGoogleLocationsResultInfo locationNameParent(String locationNameParent) {
-    this.locationNameParent = locationNameParent;
+  public MerchantGoogleLocationsResultInfo locationCodeParent(BigDecimal locationCodeParent) {
+    this.locationCodeParent = locationCodeParent;
     return this;
   }
 
   /**
-   * the name of the superordinate location example: \&quot;location_name\&quot;: \&quot;Arkansas,United States\&quot;, \&quot;location_name_parent\&quot;: \&quot;United States\&quot;
-   * @return locationNameParent
+   * Get locationCodeParent
+   * @return locationCodeParent
    */
   @javax.annotation.Nullable
-  public String getLocationNameParent() {
-    return locationNameParent;
+  public BigDecimal getLocationCodeParent() {
+    return locationCodeParent;
   }
 
-  public void setLocationNameParent(String locationNameParent) {
-    this.locationNameParent = locationNameParent;
+  public void setLocationCodeParent(BigDecimal locationCodeParent) {
+    this.locationCodeParent = locationCodeParent;
   }
 
 
@@ -225,7 +226,7 @@ public class MerchantGoogleLocationsResultInfo {
     MerchantGoogleLocationsResultInfo merchantGoogleLocationsResultInfo = (MerchantGoogleLocationsResultInfo) o;
     return Objects.equals(this.locationCode, merchantGoogleLocationsResultInfo.locationCode) &&
         Objects.equals(this.locationName, merchantGoogleLocationsResultInfo.locationName) &&
-        Objects.equals(this.locationNameParent, merchantGoogleLocationsResultInfo.locationNameParent) &&
+        Objects.equals(this.locationCodeParent, merchantGoogleLocationsResultInfo.locationCodeParent) &&
         Objects.equals(this.countryIsoCode, merchantGoogleLocationsResultInfo.countryIsoCode) &&
         Objects.equals(this.locationType, merchantGoogleLocationsResultInfo.locationType)&&
         Objects.equals(this.additionalProperties, merchantGoogleLocationsResultInfo.additionalProperties);
@@ -237,7 +238,7 @@ public class MerchantGoogleLocationsResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(locationCode, locationName, locationNameParent, countryIsoCode, locationType, additionalProperties);
+    return Objects.hash(locationCode, locationName, locationCodeParent, countryIsoCode, locationType, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -253,7 +254,7 @@ public class MerchantGoogleLocationsResultInfo {
     sb.append("class MerchantGoogleLocationsResultInfo {\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    locationNameParent: ").append(toIndentedString(locationNameParent)).append("\n");
+    sb.append("    locationCodeParent: ").append(toIndentedString(locationCodeParent)).append("\n");
     sb.append("    countryIsoCode: ").append(toIndentedString(countryIsoCode)).append("\n");
     sb.append("    locationType: ").append(toIndentedString(locationType)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
@@ -281,7 +282,7 @@ public class MerchantGoogleLocationsResultInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("location_code");
     openapiFields.add("location_name");
-    openapiFields.add("location_name_parent");
+    openapiFields.add("location_code_parent");
     openapiFields.add("country_iso_code");
     openapiFields.add("location_type");
 
@@ -304,9 +305,6 @@ public class MerchantGoogleLocationsResultInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
-      }
-      if ((jsonObj.get("location_name_parent") != null && !jsonObj.get("location_name_parent").isJsonNull()) && !jsonObj.get("location_name_parent").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `location_name_parent` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name_parent").toString()));
       }
       if ((jsonObj.get("country_iso_code") != null && !jsonObj.get("country_iso_code").isJsonNull()) && !jsonObj.get("country_iso_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `country_iso_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("country_iso_code").toString()));

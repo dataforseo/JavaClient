@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.ImagesElement;
 import io.github.dataforseo.client.model.Rectangle;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -69,6 +70,22 @@ public class FeaturedSnippetSerpElementItemTest {
     }
 
     /**
+     * Test the property 'position'
+     */
+    @Test
+    public void positionTest() {
+        // TODO: test position
+    }
+
+    /**
+     * Test the property 'xpath'
+     */
+    @Test
+    public void xpathTest() {
+        // TODO: test xpath
+    }
+
+    /**
      * Test the property 'domain'
      */
     @Test
@@ -106,22 +123,6 @@ public class FeaturedSnippetSerpElementItemTest {
     @Test
     public void breadcrumbTest() {
         // TODO: test breadcrumb
-    }
-
-    /**
-     * Test the property 'position'
-     */
-    @Test
-    public void positionTest() {
-        // TODO: test position
-    }
-
-    /**
-     * Test the property 'xpath'
-     */
-    @Test
-    public void xpathTest() {
-        // TODO: test xpath
     }
 
     /**

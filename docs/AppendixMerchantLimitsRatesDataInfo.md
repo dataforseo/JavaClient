@@ -12,7 +12,7 @@
 |**locations** | **Double** |  |  [optional] |
 |**languages** | **Double** |  |  [optional] |
 |**errors** | **Double** |  |  [optional] |
-|**reviews** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
+|**reviews** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
 |**tasksReady** | **Double** |  |  [optional] |
 
 

@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AvailableLanguages;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,11 +53,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsLocationsAndLanguagesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsLocationsAndLanguagesResultInfo {
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
@@ -64,7 +65,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
-  private Integer locationCodeParent;
+  private BigDecimal locationCodeParent;
 
   public static final String SERIALIZED_NAME_COUNTRY_ISO_CODE = "country_iso_code";
   @SerializedName(SERIALIZED_NAME_COUNTRY_ISO_CODE)
@@ -81,7 +82,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo {
   public DataforseoLabsLocationsAndLanguagesResultInfo() {
   }
 
-  public DataforseoLabsLocationsAndLanguagesResultInfo locationCode(Integer locationCode) {
+  public DataforseoLabsLocationsAndLanguagesResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -91,11 +92,11 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -119,7 +120,7 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo {
   }
 
 
-  public DataforseoLabsLocationsAndLanguagesResultInfo locationCodeParent(Integer locationCodeParent) {
+  public DataforseoLabsLocationsAndLanguagesResultInfo locationCodeParent(BigDecimal locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
     return this;
   }
@@ -129,11 +130,11 @@ public class DataforseoLabsLocationsAndLanguagesResultInfo {
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
-  public Integer getLocationCodeParent() {
+  public BigDecimal getLocationCodeParent() {
     return locationCodeParent;
   }
 
-  public void setLocationCodeParent(Integer locationCodeParent) {
+  public void setLocationCodeParent(BigDecimal locationCodeParent) {
     this.locationCodeParent = locationCodeParent;
   }
 

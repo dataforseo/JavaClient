@@ -7,8 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**year** | **Integer** | year |  [optional] |
-|**month** | **Integer** | month |  [optional] |
+|**year** | **BigDecimal** | year |  [optional] |
+|**month** | **BigDecimal** | month |  [optional] |
 |**keywordInfo** | [**KeywordInfo**](KeywordInfo.md) |  |  [optional] |
 
 

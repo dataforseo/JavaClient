@@ -10,8 +10,8 @@
 |**message** | **String** | message of the grammar or spelling error |  [optional] |
 |**description** | **String** | description of the grammar or spelling error |  [optional] |
 |**suggestions** | **List&lt;String&gt;** | suggested corrections |  [optional] |
-|**offset** | **Integer** | offset token for subsequent requests |  [optional] |
-|**length** | **Integer** | offset token for subsequent requests |  [optional] |
+|**offset** | **BigDecimal** | offset token for subsequent requests |  [optional] |
+|**length** | **BigDecimal** | offset token for subsequent requests |  [optional] |
 |**type** | **String** | type of element |  [optional] |
 |**ruleId** | **String** | id of the grammar or spelling rule see the List of Grammar Rules for Content Generation API |  [optional] |
 |**ruleDescription** | **String** | description of the grammar or spelling rule |  [optional] |

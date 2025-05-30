@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsSerpCompetitorsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsSerpCompetitorsLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -68,11 +69,11 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
 
   public static final String SERIALIZED_NAME_MEDIAN_POSITION = "median_position";
   @SerializedName(SERIALIZED_NAME_MEDIAN_POSITION)
-  private Integer medianPosition;
+  private BigDecimal medianPosition;
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private Integer rating;
+  private BigDecimal rating;
 
   public static final String SERIALIZED_NAME_ETV = "etv";
   @SerializedName(SERIALIZED_NAME_ETV)
@@ -80,7 +81,7 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORDS_COUNT = "keywords_count";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_COUNT)
-  private Long keywordsCount;
+  private BigDecimal keywordsCount;
 
   public static final String SERIALIZED_NAME_VISIBILITY = "visibility";
   @SerializedName(SERIALIZED_NAME_VISIBILITY)
@@ -88,7 +89,7 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
 
   public static final String SERIALIZED_NAME_RELEVANT_SERP_ITEMS = "relevant_serp_items";
   @SerializedName(SERIALIZED_NAME_RELEVANT_SERP_ITEMS)
-  private Integer relevantSerpItems;
+  private BigDecimal relevantSerpItems;
 
   public static final String SERIALIZED_NAME_KEYWORDS_POSITIONS = "keywords_positions";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_POSITIONS)
@@ -154,7 +155,7 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
   }
 
 
-  public DataforseoLabsSerpCompetitorsLiveItem medianPosition(Integer medianPosition) {
+  public DataforseoLabsSerpCompetitorsLiveItem medianPosition(BigDecimal medianPosition) {
     this.medianPosition = medianPosition;
     return this;
   }
@@ -164,16 +165,16 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
    * @return medianPosition
    */
   @javax.annotation.Nullable
-  public Integer getMedianPosition() {
+  public BigDecimal getMedianPosition() {
     return medianPosition;
   }
 
-  public void setMedianPosition(Integer medianPosition) {
+  public void setMedianPosition(BigDecimal medianPosition) {
     this.medianPosition = medianPosition;
   }
 
 
-  public DataforseoLabsSerpCompetitorsLiveItem rating(Integer rating) {
+  public DataforseoLabsSerpCompetitorsLiveItem rating(BigDecimal rating) {
     this.rating = rating;
     return this;
   }
@@ -183,11 +184,11 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
    * @return rating
    */
   @javax.annotation.Nullable
-  public Integer getRating() {
+  public BigDecimal getRating() {
     return rating;
   }
 
-  public void setRating(Integer rating) {
+  public void setRating(BigDecimal rating) {
     this.rating = rating;
   }
 
@@ -211,7 +212,7 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
   }
 
 
-  public DataforseoLabsSerpCompetitorsLiveItem keywordsCount(Long keywordsCount) {
+  public DataforseoLabsSerpCompetitorsLiveItem keywordsCount(BigDecimal keywordsCount) {
     this.keywordsCount = keywordsCount;
     return this;
   }
@@ -221,11 +222,11 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
    * @return keywordsCount
    */
   @javax.annotation.Nullable
-  public Long getKeywordsCount() {
+  public BigDecimal getKeywordsCount() {
     return keywordsCount;
   }
 
-  public void setKeywordsCount(Long keywordsCount) {
+  public void setKeywordsCount(BigDecimal keywordsCount) {
     this.keywordsCount = keywordsCount;
   }
 
@@ -249,7 +250,7 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
   }
 
 
-  public DataforseoLabsSerpCompetitorsLiveItem relevantSerpItems(Integer relevantSerpItems) {
+  public DataforseoLabsSerpCompetitorsLiveItem relevantSerpItems(BigDecimal relevantSerpItems) {
     this.relevantSerpItems = relevantSerpItems;
     return this;
   }
@@ -259,11 +260,11 @@ public class DataforseoLabsSerpCompetitorsLiveItem {
    * @return relevantSerpItems
    */
   @javax.annotation.Nullable
-  public Integer getRelevantSerpItems() {
+  public BigDecimal getRelevantSerpItems() {
     return relevantSerpItems;
   }
 
-  public void setRelevantSerpItems(Integer relevantSerpItems) {
+  public void setRelevantSerpItems(BigDecimal relevantSerpItems) {
     this.relevantSerpItems = relevantSerpItems;
   }
 

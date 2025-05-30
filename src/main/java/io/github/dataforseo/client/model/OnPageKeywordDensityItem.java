@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageKeywordDensityItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageKeywordDensityItem {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -57,11 +58,11 @@ public class OnPageKeywordDensityItem {
 
   public static final String SERIALIZED_NAME_FREQUENCY = "frequency";
   @SerializedName(SERIALIZED_NAME_FREQUENCY)
-  private Integer frequency;
+  private BigDecimal frequency;
 
   public static final String SERIALIZED_NAME_DENSITY = "density";
   @SerializedName(SERIALIZED_NAME_DENSITY)
-  private Integer density;
+  private BigDecimal density;
 
   public OnPageKeywordDensityItem() {
   }
@@ -85,7 +86,7 @@ public class OnPageKeywordDensityItem {
   }
 
 
-  public OnPageKeywordDensityItem frequency(Integer frequency) {
+  public OnPageKeywordDensityItem frequency(BigDecimal frequency) {
     this.frequency = frequency;
     return this;
   }
@@ -95,16 +96,16 @@ public class OnPageKeywordDensityItem {
    * @return frequency
    */
   @javax.annotation.Nullable
-  public Integer getFrequency() {
+  public BigDecimal getFrequency() {
     return frequency;
   }
 
-  public void setFrequency(Integer frequency) {
+  public void setFrequency(BigDecimal frequency) {
     this.frequency = frequency;
   }
 
 
-  public OnPageKeywordDensityItem density(Integer density) {
+  public OnPageKeywordDensityItem density(BigDecimal density) {
     this.density = density;
     return this;
   }
@@ -114,11 +115,11 @@ public class OnPageKeywordDensityItem {
    * @return density
    */
   @javax.annotation.Nullable
-  public Integer getDensity() {
+  public BigDecimal getDensity() {
     return density;
   }
 
-  public void setDensity(Integer density) {
+  public void setDensity(BigDecimal density) {
     this.density = density;
   }
 

@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentCommentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentCommentInfo {
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
@@ -61,7 +61,7 @@ public class ContentCommentInfo {
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
-  private Double title;
+  private String title;
 
   public static final String SERIALIZED_NAME_PUBLISH_DATE = "publish_date";
   @SerializedName(SERIALIZED_NAME_PUBLISH_DATE)
@@ -101,7 +101,7 @@ public class ContentCommentInfo {
   }
 
 
-  public ContentCommentInfo title(Double title) {
+  public ContentCommentInfo title(String title) {
     this.title = title;
     return this;
   }
@@ -111,11 +111,11 @@ public class ContentCommentInfo {
    * @return title
    */
   @javax.annotation.Nullable
-  public Double getTitle() {
+  public String getTitle() {
     return title;
   }
 
-  public void setTitle(Double title) {
+  public void setTitle(String title) {
     this.title = title;
   }
 
@@ -343,6 +343,9 @@ public class ContentCommentInfo {
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
         ContentRatingInfo.validateJsonElement(jsonObj.get("rating"));
+      }
+      if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }
       if ((jsonObj.get("publish_date") != null && !jsonObj.get("publish_date").isJsonNull()) && !jsonObj.get("publish_date").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `publish_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("publish_date").toString()));

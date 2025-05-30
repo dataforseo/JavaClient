@@ -19,13 +19,14 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AvgBacklinksInfo;
-import io.github.dataforseo.client.model.ImpressionsInfo;
+import io.github.dataforseo.client.model.ClickstreamKeywordInfo;
 import io.github.dataforseo.client.model.KeywordInfo;
 import io.github.dataforseo.client.model.KeywordInfoNormalizedWithInfo;
 import io.github.dataforseo.client.model.KeywordProperties;
 import io.github.dataforseo.client.model.SearchIntentInfo;
 import io.github.dataforseo.client.model.SerpInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -115,14 +116,6 @@ public class KeywordDataInfoTest {
     @Test
     public void keywordPropertiesTest() {
         // TODO: test keywordProperties
-    }
-
-    /**
-     * Test the property 'impressionsInfo'
-     */
-    @Test
-    public void impressionsInfoTest() {
-        // TODO: test impressionsInfo
     }
 
     /**

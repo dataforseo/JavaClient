@@ -20,12 +20,12 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.BusinessDataUserProfileInfo;
 import io.github.dataforseo.client.model.ImageUrlInfo;
-import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.ReviewHighlights;
 import io.github.dataforseo.client.model.ReviewResponseItemInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TripadvisorReviewSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -69,7 +69,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_DATE_OF_VISIT = "date_of_visit";
   @SerializedName(SERIALIZED_NAME_DATE_OF_VISIT)
@@ -101,7 +101,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
 
   public static final String SERIALIZED_NAME_REVIEW_HIGHLIGHTS = "review_highlights";
   @SerializedName(SERIALIZED_NAME_REVIEW_HIGHLIGHTS)
-  private List<ReviewHighlights> reviewHighlights;
+  private Object reviewHighlights;
 
   public TripadvisorReviewSearchBusinessDataSerpElementItem() {
   }
@@ -144,7 +144,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
   }
 
 
-  public TripadvisorReviewSearchBusinessDataSerpElementItem rating(RatingInfo rating) {
+  public TripadvisorReviewSearchBusinessDataSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -154,11 +154,11 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -312,16 +312,8 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
   }
 
 
-  public TripadvisorReviewSearchBusinessDataSerpElementItem reviewHighlights(List<ReviewHighlights> reviewHighlights) {
+  public TripadvisorReviewSearchBusinessDataSerpElementItem reviewHighlights(Object reviewHighlights) {
     this.reviewHighlights = reviewHighlights;
-    return this;
-  }
-
-  public TripadvisorReviewSearchBusinessDataSerpElementItem addReviewHighlightsItem(ReviewHighlights reviewHighlightsItem) {
-    if (this.reviewHighlights == null) {
-      this.reviewHighlights = new ArrayList<>();
-    }
-    this.reviewHighlights.add(reviewHighlightsItem);
     return this;
   }
 
@@ -330,11 +322,11 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
    * @return reviewHighlights
    */
   @javax.annotation.Nullable
-  public List<ReviewHighlights> getReviewHighlights() {
+  public Object getReviewHighlights() {
     return reviewHighlights;
   }
 
-  public void setReviewHighlights(List<ReviewHighlights> reviewHighlights) {
+  public void setReviewHighlights(Object reviewHighlights) {
     this.reviewHighlights = reviewHighlights;
   }
 
@@ -503,7 +495,7 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if ((jsonObj.get("date_of_visit") != null && !jsonObj.get("date_of_visit").isJsonNull()) && !jsonObj.get("date_of_visit").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `date_of_visit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date_of_visit").toString()));
@@ -546,20 +538,6 @@ public class TripadvisorReviewSearchBusinessDataSerpElementItem extends BaseBusi
           // validate the optional field `responses` (array)
           for (int i = 0; i < jsonArrayresponses.size(); i++) {
             ReviewResponseItemInfo.validateJsonElement(jsonArrayresponses.get(i));
-          };
-        }
-      }
-      if (jsonObj.get("review_highlights") != null && !jsonObj.get("review_highlights").isJsonNull()) {
-        JsonArray jsonArrayreviewHighlights = jsonObj.getAsJsonArray("review_highlights");
-        if (jsonArrayreviewHighlights != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("review_highlights").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `review_highlights` to be an array in the JSON string but got `%s`", jsonObj.get("review_highlights").toString()));
-          }
-
-          // validate the optional field `review_highlights` (array)
-          for (int i = 0; i < jsonArrayreviewHighlights.size(); i++) {
-            ReviewHighlights.validateJsonElement(jsonArrayreviewHighlights.get(i));
           };
         }
       }

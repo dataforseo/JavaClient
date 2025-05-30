@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.ChannelSubscribersCount;
 import io.github.dataforseo.client.model.StreamingQualityElement;
 import io.github.dataforseo.client.model.Subtitles;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * YoutubeVideoInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem {
   public static final String SERIALIZED_NAME_VIDEO_ID = "video_id";
   @SerializedName(SERIALIZED_NAME_VIDEO_ID)
@@ -95,15 +96,15 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
 
   public static final String SERIALIZED_NAME_VIEWS_COUNT = "views_count";
   @SerializedName(SERIALIZED_NAME_VIEWS_COUNT)
-  private Long viewsCount;
+  private BigDecimal viewsCount;
 
   public static final String SERIALIZED_NAME_LIKES_COUNT = "likes_count";
   @SerializedName(SERIALIZED_NAME_LIKES_COUNT)
-  private Long likesCount;
+  private BigDecimal likesCount;
 
   public static final String SERIALIZED_NAME_COMMENTS_COUNT = "comments_count";
   @SerializedName(SERIALIZED_NAME_COMMENTS_COUNT)
-  private Long commentsCount;
+  private BigDecimal commentsCount;
 
   public static final String SERIALIZED_NAME_CHANNEL_SUBSCRIBERS_COUNT = "channel_subscribers_count";
   @SerializedName(SERIALIZED_NAME_CHANNEL_SUBSCRIBERS_COUNT)
@@ -139,7 +140,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
 
   public static final String SERIALIZED_NAME_DURATION_TIME_SECONDS = "duration_time_seconds";
   @SerializedName(SERIALIZED_NAME_DURATION_TIME_SECONDS)
-  private Integer durationTimeSeconds;
+  private BigDecimal durationTimeSeconds;
 
   public static final String SERIALIZED_NAME_SUBTITLES = "subtitles";
   @SerializedName(SERIALIZED_NAME_SUBTITLES)
@@ -323,7 +324,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
   }
 
 
-  public YoutubeVideoInfoSerpElementItem viewsCount(Long viewsCount) {
+  public YoutubeVideoInfoSerpElementItem viewsCount(BigDecimal viewsCount) {
     this.viewsCount = viewsCount;
     return this;
   }
@@ -333,16 +334,16 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
    * @return viewsCount
    */
   @javax.annotation.Nullable
-  public Long getViewsCount() {
+  public BigDecimal getViewsCount() {
     return viewsCount;
   }
 
-  public void setViewsCount(Long viewsCount) {
+  public void setViewsCount(BigDecimal viewsCount) {
     this.viewsCount = viewsCount;
   }
 
 
-  public YoutubeVideoInfoSerpElementItem likesCount(Long likesCount) {
+  public YoutubeVideoInfoSerpElementItem likesCount(BigDecimal likesCount) {
     this.likesCount = likesCount;
     return this;
   }
@@ -352,16 +353,16 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
    * @return likesCount
    */
   @javax.annotation.Nullable
-  public Long getLikesCount() {
+  public BigDecimal getLikesCount() {
     return likesCount;
   }
 
-  public void setLikesCount(Long likesCount) {
+  public void setLikesCount(BigDecimal likesCount) {
     this.likesCount = likesCount;
   }
 
 
-  public YoutubeVideoInfoSerpElementItem commentsCount(Long commentsCount) {
+  public YoutubeVideoInfoSerpElementItem commentsCount(BigDecimal commentsCount) {
     this.commentsCount = commentsCount;
     return this;
   }
@@ -371,11 +372,11 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
    * @return commentsCount
    */
   @javax.annotation.Nullable
-  public Long getCommentsCount() {
+  public BigDecimal getCommentsCount() {
     return commentsCount;
   }
 
-  public void setCommentsCount(Long commentsCount) {
+  public void setCommentsCount(BigDecimal commentsCount) {
     this.commentsCount = commentsCount;
   }
 
@@ -540,7 +541,7 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
   }
 
 
-  public YoutubeVideoInfoSerpElementItem durationTimeSeconds(Integer durationTimeSeconds) {
+  public YoutubeVideoInfoSerpElementItem durationTimeSeconds(BigDecimal durationTimeSeconds) {
     this.durationTimeSeconds = durationTimeSeconds;
     return this;
   }
@@ -550,11 +551,11 @@ public class YoutubeVideoInfoSerpElementItem extends BaseYoutubeSerpElementItem 
    * @return durationTimeSeconds
    */
   @javax.annotation.Nullable
-  public Integer getDurationTimeSeconds() {
+  public BigDecimal getDurationTimeSeconds() {
     return durationTimeSeconds;
   }
 
-  public void setDurationTimeSeconds(Integer durationTimeSeconds) {
+  public void setDurationTimeSeconds(BigDecimal durationTimeSeconds) {
     this.durationTimeSeconds = durationTimeSeconds;
   }
 

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TopicListDataItemInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TopicListDataItemInfo {
   public static final String SERIALIZED_NAME_TOPIC_ID = "topic_id";
   @SerializedName(SERIALIZED_NAME_TOPIC_ID)
@@ -65,7 +66,7 @@ public class TopicListDataItemInfo {
 
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
-  private String value;
+  private BigDecimal value;
 
   public TopicListDataItemInfo() {
   }
@@ -127,7 +128,7 @@ public class TopicListDataItemInfo {
   }
 
 
-  public TopicListDataItemInfo value(String value) {
+  public TopicListDataItemInfo value(BigDecimal value) {
     this.value = value;
     return this;
   }
@@ -137,11 +138,11 @@ public class TopicListDataItemInfo {
    * @return value
    */
   @javax.annotation.Nullable
-  public String getValue() {
+  public BigDecimal getValue() {
     return value;
   }
 
-  public void setValue(String value) {
+  public void setValue(BigDecimal value) {
     this.value = value;
   }
 
@@ -284,9 +285,6 @@ public class TopicListDataItemInfo {
       }
       if ((jsonObj.get("topic_type") != null && !jsonObj.get("topic_type").isJsonNull()) && !jsonObj.get("topic_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `topic_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("topic_type").toString()));
-      }
-      if ((jsonObj.get("value") != null && !jsonObj.get("value").isJsonNull()) && !jsonObj.get("value").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `value` to be a primitive type in the JSON string but got `%s`", jsonObj.get("value").toString()));
       }
   }
 

@@ -19,8 +19,9 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.RatingInfo;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseAppDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -58,11 +59,11 @@ public class BaseAppDataSerpElementItem {
 
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
-  private Integer rankGroup;
+  private BigDecimal rankGroup;
 
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
-  private Integer rankAbsolute;
+  private BigDecimal rankAbsolute;
 
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -74,7 +75,7 @@ public class BaseAppDataSerpElementItem {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public BaseAppDataSerpElementItem() {
     this.type = this.getClass().getSimpleName();
@@ -99,7 +100,7 @@ public class BaseAppDataSerpElementItem {
   }
 
 
-  public BaseAppDataSerpElementItem rankGroup(Integer rankGroup) {
+  public BaseAppDataSerpElementItem rankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
     return this;
   }
@@ -109,16 +110,16 @@ public class BaseAppDataSerpElementItem {
    * @return rankGroup
    */
   @javax.annotation.Nullable
-  public Integer getRankGroup() {
+  public BigDecimal getRankGroup() {
     return rankGroup;
   }
 
-  public void setRankGroup(Integer rankGroup) {
+  public void setRankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
   }
 
 
-  public BaseAppDataSerpElementItem rankAbsolute(Integer rankAbsolute) {
+  public BaseAppDataSerpElementItem rankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
     return this;
   }
@@ -128,11 +129,11 @@ public class BaseAppDataSerpElementItem {
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
-  public Integer getRankAbsolute() {
+  public BigDecimal getRankAbsolute() {
     return rankAbsolute;
   }
 
-  public void setRankAbsolute(Integer rankAbsolute) {
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
   }
 
@@ -175,7 +176,7 @@ public class BaseAppDataSerpElementItem {
   }
 
 
-  public BaseAppDataSerpElementItem rating(RatingInfo rating) {
+  public BaseAppDataSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -185,11 +186,11 @@ public class BaseAppDataSerpElementItem {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 

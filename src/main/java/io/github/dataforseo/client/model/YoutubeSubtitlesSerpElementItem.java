@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseYoutubeSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * YoutubeSubtitlesSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class YoutubeSubtitlesSerpElementItem extends BaseYoutubeSerpElementItem {
   public static final String SERIALIZED_NAME_TEXT = "text";
   @SerializedName(SERIALIZED_NAME_TEXT)
@@ -58,15 +59,15 @@ public class YoutubeSubtitlesSerpElementItem extends BaseYoutubeSerpElementItem 
 
   public static final String SERIALIZED_NAME_START_TIME = "start_time";
   @SerializedName(SERIALIZED_NAME_START_TIME)
-  private Integer startTime;
+  private BigDecimal startTime;
 
   public static final String SERIALIZED_NAME_END_TIME = "end_time";
   @SerializedName(SERIALIZED_NAME_END_TIME)
-  private Integer endTime;
+  private BigDecimal endTime;
 
   public static final String SERIALIZED_NAME_DURATION_TIME = "duration_time";
   @SerializedName(SERIALIZED_NAME_DURATION_TIME)
-  private Integer durationTime;
+  private BigDecimal durationTime;
 
   public YoutubeSubtitlesSerpElementItem() {
   }
@@ -90,7 +91,7 @@ public class YoutubeSubtitlesSerpElementItem extends BaseYoutubeSerpElementItem 
   }
 
 
-  public YoutubeSubtitlesSerpElementItem startTime(Integer startTime) {
+  public YoutubeSubtitlesSerpElementItem startTime(BigDecimal startTime) {
     this.startTime = startTime;
     return this;
   }
@@ -100,16 +101,16 @@ public class YoutubeSubtitlesSerpElementItem extends BaseYoutubeSerpElementItem 
    * @return startTime
    */
   @javax.annotation.Nullable
-  public Integer getStartTime() {
+  public BigDecimal getStartTime() {
     return startTime;
   }
 
-  public void setStartTime(Integer startTime) {
+  public void setStartTime(BigDecimal startTime) {
     this.startTime = startTime;
   }
 
 
-  public YoutubeSubtitlesSerpElementItem endTime(Integer endTime) {
+  public YoutubeSubtitlesSerpElementItem endTime(BigDecimal endTime) {
     this.endTime = endTime;
     return this;
   }
@@ -119,16 +120,16 @@ public class YoutubeSubtitlesSerpElementItem extends BaseYoutubeSerpElementItem 
    * @return endTime
    */
   @javax.annotation.Nullable
-  public Integer getEndTime() {
+  public BigDecimal getEndTime() {
     return endTime;
   }
 
-  public void setEndTime(Integer endTime) {
+  public void setEndTime(BigDecimal endTime) {
     this.endTime = endTime;
   }
 
 
-  public YoutubeSubtitlesSerpElementItem durationTime(Integer durationTime) {
+  public YoutubeSubtitlesSerpElementItem durationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
     return this;
   }
@@ -138,11 +139,11 @@ public class YoutubeSubtitlesSerpElementItem extends BaseYoutubeSerpElementItem 
    * @return durationTime
    */
   @javax.annotation.Nullable
-  public Integer getDurationTime() {
+  public BigDecimal getDurationTime() {
     return durationTime;
   }
 
-  public void setDurationTime(Integer durationTime) {
+  public void setDurationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
   }
 

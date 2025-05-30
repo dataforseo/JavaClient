@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * items array
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -69,15 +70,15 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem {
 
   public static final String SERIALIZED_NAME_GROUPS_COUNT = "groups_count";
   @SerializedName(SERIALIZED_NAME_GROUPS_COUNT)
-  private Long groupsCount;
+  private BigDecimal groupsCount;
 
   public static final String SERIALIZED_NAME_CATEGORIES_COUNT = "categories_count";
   @SerializedName(SERIALIZED_NAME_CATEGORIES_COUNT)
-  private Long categoriesCount;
+  private BigDecimal categoriesCount;
 
   public static final String SERIALIZED_NAME_TECHNOLOGIES_COUNT = "technologies_count";
   @SerializedName(SERIALIZED_NAME_TECHNOLOGIES_COUNT)
-  private Long technologiesCount;
+  private BigDecimal technologiesCount;
 
   public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem() {
   }
@@ -158,7 +159,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem {
   }
 
 
-  public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem groupsCount(Long groupsCount) {
+  public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem groupsCount(BigDecimal groupsCount) {
     this.groupsCount = groupsCount;
     return this;
   }
@@ -168,16 +169,16 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem {
    * @return groupsCount
    */
   @javax.annotation.Nullable
-  public Long getGroupsCount() {
+  public BigDecimal getGroupsCount() {
     return groupsCount;
   }
 
-  public void setGroupsCount(Long groupsCount) {
+  public void setGroupsCount(BigDecimal groupsCount) {
     this.groupsCount = groupsCount;
   }
 
 
-  public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem categoriesCount(Long categoriesCount) {
+  public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem categoriesCount(BigDecimal categoriesCount) {
     this.categoriesCount = categoriesCount;
     return this;
   }
@@ -187,16 +188,16 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem {
    * @return categoriesCount
    */
   @javax.annotation.Nullable
-  public Long getCategoriesCount() {
+  public BigDecimal getCategoriesCount() {
     return categoriesCount;
   }
 
-  public void setCategoriesCount(Long categoriesCount) {
+  public void setCategoriesCount(BigDecimal categoriesCount) {
     this.categoriesCount = categoriesCount;
   }
 
 
-  public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem technologiesCount(Long technologiesCount) {
+  public DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem technologiesCount(BigDecimal technologiesCount) {
     this.technologiesCount = technologiesCount;
     return this;
   }
@@ -206,11 +207,11 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem {
    * @return technologiesCount
    */
   @javax.annotation.Nullable
-  public Long getTechnologiesCount() {
+  public BigDecimal getTechnologiesCount() {
     return technologiesCount;
   }
 
-  public void setTechnologiesCount(Long technologiesCount) {
+  public void setTechnologiesCount(BigDecimal technologiesCount) {
     this.technologiesCount = technologiesCount;
   }
 

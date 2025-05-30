@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataErrorsResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataErrorsResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -65,7 +66,7 @@ public class AppDataErrorsResultInfo {
 
   public static final String SERIALIZED_NAME_ERROR_CODE = "error_code";
   @SerializedName(SERIALIZED_NAME_ERROR_CODE)
-  private Integer errorCode;
+  private BigDecimal errorCode;
 
   public static final String SERIALIZED_NAME_ERROR_MESSAGE = "error_message";
   @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)
@@ -81,7 +82,7 @@ public class AppDataErrorsResultInfo {
 
   public static final String SERIALIZED_NAME_HTTP_CODE = "http_code";
   @SerializedName(SERIALIZED_NAME_HTTP_CODE)
-  private Integer httpCode;
+  private BigDecimal httpCode;
 
   public static final String SERIALIZED_NAME_HTTP_TIME = "http_time";
   @SerializedName(SERIALIZED_NAME_HTTP_TIME)
@@ -151,7 +152,7 @@ public class AppDataErrorsResultInfo {
   }
 
 
-  public AppDataErrorsResultInfo errorCode(Integer errorCode) {
+  public AppDataErrorsResultInfo errorCode(BigDecimal errorCode) {
     this.errorCode = errorCode;
     return this;
   }
@@ -161,11 +162,11 @@ public class AppDataErrorsResultInfo {
    * @return errorCode
    */
   @javax.annotation.Nullable
-  public Integer getErrorCode() {
+  public BigDecimal getErrorCode() {
     return errorCode;
   }
 
-  public void setErrorCode(Integer errorCode) {
+  public void setErrorCode(BigDecimal errorCode) {
     this.errorCode = errorCode;
   }
 
@@ -227,7 +228,7 @@ public class AppDataErrorsResultInfo {
   }
 
 
-  public AppDataErrorsResultInfo httpCode(Integer httpCode) {
+  public AppDataErrorsResultInfo httpCode(BigDecimal httpCode) {
     this.httpCode = httpCode;
     return this;
   }
@@ -237,11 +238,11 @@ public class AppDataErrorsResultInfo {
    * @return httpCode
    */
   @javax.annotation.Nullable
-  public Integer getHttpCode() {
+  public BigDecimal getHttpCode() {
     return httpCode;
   }
 
-  public void setHttpCode(Integer httpCode) {
+  public void setHttpCode(BigDecimal httpCode) {
     this.httpCode = httpCode;
   }
 

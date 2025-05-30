@@ -19,7 +19,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.HotelPriceItemInfo;
+import io.github.dataforseo.client.model.PricesByDates;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -103,6 +105,14 @@ public class HotelPriceInfoTest {
     @Test
     public void itemsTest() {
         // TODO: test items
+    }
+
+    /**
+     * Test the property 'pricesByDates'
+     */
+    @Test
+    public void pricesByDatesTest() {
+        // TODO: test pricesByDates
     }
 
 }

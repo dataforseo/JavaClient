@@ -7,10 +7,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**serp** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
+|**serp** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
 |**total** | **Double** | total amount of money deposited to your account |  [optional] |
 |**totalSerp** | **Double** |  |  [optional] |
-|**keywordsData** | [**AppendixKeywordsDatasRatesDataInfo**](AppendixKeywordsDatasRatesDataInfo.md) |  |  [optional] |
+|**keywordsData** | [**AppendixKeywordsDataDaysRatesDataInfo**](AppendixKeywordsDataDaysRatesDataInfo.md) |  |  [optional] |
 |**totalKeywordsData** | **Double** |  |  [optional] |
 |**appendix** | [**AppendixAppendixDaysRatesDataInfo**](AppendixAppendixDaysRatesDataInfo.md) |  |  [optional] |
 |**totalAppendix** | **Double** |  |  [optional] |
@@ -32,9 +32,9 @@
 |**totalContentAnalysis** | **Double** |  |  [optional] |
 |**contentGeneration** | [**AppendixContentGenerationLimitsRatesDataInfo**](AppendixContentGenerationLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalContentGeneration** | **Double** |  |  [optional] |
+|**totalTrafficAnalytics** | **Double** |  |  [optional] |
 |**totalReviews** | **Double** |  |  [optional] |
 |**totalSocial** | **Double** |  |  [optional] |
-|**totalTrafficAnalytics** | **Double** |  |  [optional] |
 
 
 

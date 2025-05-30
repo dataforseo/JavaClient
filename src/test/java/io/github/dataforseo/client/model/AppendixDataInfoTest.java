@@ -30,7 +30,7 @@ import io.github.dataforseo.client.model.AppendixKeywordsDataDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixSerpDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -252,6 +252,22 @@ public class AppendixDataInfoTest {
     }
 
     /**
+     * Test the property 'totalTrafficAnalytics'
+     */
+    @Test
+    public void totalTrafficAnalyticsTest() {
+        // TODO: test totalTrafficAnalytics
+    }
+
+    /**
+     * Test the property 'trafficAnalytics'
+     */
+    @Test
+    public void trafficAnalyticsTest() {
+        // TODO: test trafficAnalytics
+    }
+
+    /**
      * Test the property 'totalReviews'
      */
     @Test
@@ -281,22 +297,6 @@ public class AppendixDataInfoTest {
     @Test
     public void socialTest() {
         // TODO: test social
-    }
-
-    /**
-     * Test the property 'totalTrafficAnalytics'
-     */
-    @Test
-    public void totalTrafficAnalyticsTest() {
-        // TODO: test totalTrafficAnalytics
-    }
-
-    /**
-     * Test the property 'trafficAnalytics'
-     */
-    @Test
-    public void trafficAnalyticsTest() {
-        // TODO: test trafficAnalytics
     }
 
 }

@@ -50,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDataforseoLabsLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDataforseoLabsLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES = "locations_and_languages";
   @SerializedName(SERIALIZED_NAME_LOCATIONS_AND_LANGUAGES)
@@ -135,6 +135,10 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_KEYWORD_IDEAS = "keyword_ideas";
   @SerializedName(SERIALIZED_NAME_KEYWORD_IDEAS)
   private AppendixInfo keywordIdeas;
+
+  public static final String SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME = "historical_search_volume";
+  @SerializedName(SERIALIZED_NAME_HISTORICAL_SEARCH_VOLUME)
+  private AppendixInfo historicalSearchVolume;
 
   public static final String SERIALIZED_NAME_CATEGORIES_FOR_DOMAIN = "categories_for_domain";
   @SerializedName(SERIALIZED_NAME_CATEGORIES_FOR_DOMAIN)
@@ -602,6 +606,25 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
   }
 
 
+  public AppendixDataforseoLabsLimitsRatesDataInfo historicalSearchVolume(AppendixInfo historicalSearchVolume) {
+    this.historicalSearchVolume = historicalSearchVolume;
+    return this;
+  }
+
+  /**
+   * Get historicalSearchVolume
+   * @return historicalSearchVolume
+   */
+  @javax.annotation.Nullable
+  public AppendixInfo getHistoricalSearchVolume() {
+    return historicalSearchVolume;
+  }
+
+  public void setHistoricalSearchVolume(AppendixInfo historicalSearchVolume) {
+    this.historicalSearchVolume = historicalSearchVolume;
+  }
+
+
   public AppendixDataforseoLabsLimitsRatesDataInfo categoriesForDomain(AppendixInfo categoriesForDomain) {
     this.categoriesForDomain = categoriesForDomain;
     return this;
@@ -981,6 +1004,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
         Objects.equals(this.keywordsForSite, appendixDataforseoLabsLimitsRatesDataInfo.keywordsForSite) &&
         Objects.equals(this.keywordSuggestions, appendixDataforseoLabsLimitsRatesDataInfo.keywordSuggestions) &&
         Objects.equals(this.keywordIdeas, appendixDataforseoLabsLimitsRatesDataInfo.keywordIdeas) &&
+        Objects.equals(this.historicalSearchVolume, appendixDataforseoLabsLimitsRatesDataInfo.historicalSearchVolume) &&
         Objects.equals(this.categoriesForDomain, appendixDataforseoLabsLimitsRatesDataInfo.categoriesForDomain) &&
         Objects.equals(this.domainMetricsByCategories, appendixDataforseoLabsLimitsRatesDataInfo.domainMetricsByCategories) &&
         Objects.equals(this.topSearches, appendixDataforseoLabsLimitsRatesDataInfo.topSearches) &&
@@ -1006,7 +1030,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(locationsAndLanguages, categories, errors, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, serpCompetitors, subdomains, relevantPages, competitorsDomain, relatedKeywords, domainRankOverview, domainIntersection, pageIntersection, bulkTrafficEstimation, bulkKeywordDifficulty, bulkSearchVolume, keywordsForSite, keywordSuggestions, keywordIdeas, categoriesForDomain, domainMetricsByCategories, topSearches, domainWhoisOverview, historicalRankOverview, keywordsForCategories, historicalSerps, appCompetitors, keywordsForApp, appIntersection, bulkAppMetrics, searchIntent, historicalBulkTrafficEstimation, categoriesForKeywords, keywordOverview, historicalKeywordData, additionalProperties);
+    return Objects.hash(locationsAndLanguages, categories, errors, productCompetitors, productKeywordIntersections, productRankOverview, rankedKeywords, serpCompetitors, subdomains, relevantPages, competitorsDomain, relatedKeywords, domainRankOverview, domainIntersection, pageIntersection, bulkTrafficEstimation, bulkKeywordDifficulty, bulkSearchVolume, keywordsForSite, keywordSuggestions, keywordIdeas, historicalSearchVolume, categoriesForDomain, domainMetricsByCategories, topSearches, domainWhoisOverview, historicalRankOverview, keywordsForCategories, historicalSerps, appCompetitors, keywordsForApp, appIntersection, bulkAppMetrics, searchIntent, historicalBulkTrafficEstimation, categoriesForKeywords, keywordOverview, historicalKeywordData, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1041,6 +1065,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
     sb.append("    keywordsForSite: ").append(toIndentedString(keywordsForSite)).append("\n");
     sb.append("    keywordSuggestions: ").append(toIndentedString(keywordSuggestions)).append("\n");
     sb.append("    keywordIdeas: ").append(toIndentedString(keywordIdeas)).append("\n");
+    sb.append("    historicalSearchVolume: ").append(toIndentedString(historicalSearchVolume)).append("\n");
     sb.append("    categoriesForDomain: ").append(toIndentedString(categoriesForDomain)).append("\n");
     sb.append("    domainMetricsByCategories: ").append(toIndentedString(domainMetricsByCategories)).append("\n");
     sb.append("    topSearches: ").append(toIndentedString(topSearches)).append("\n");
@@ -1101,6 +1126,7 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
     openapiFields.add("keywords_for_site");
     openapiFields.add("keyword_suggestions");
     openapiFields.add("keyword_ideas");
+    openapiFields.add("historical_search_volume");
     openapiFields.add("categories_for_domain");
     openapiFields.add("domain_metrics_by_categories");
     openapiFields.add("top_searches");
@@ -1206,6 +1232,10 @@ public class AppendixDataforseoLabsLimitsRatesDataInfo {
       // validate the optional field `keyword_ideas`
       if (jsonObj.get("keyword_ideas") != null && !jsonObj.get("keyword_ideas").isJsonNull()) {
         AppendixInfo.validateJsonElement(jsonObj.get("keyword_ideas"));
+      }
+      // validate the optional field `historical_search_volume`
+      if (jsonObj.get("historical_search_volume") != null && !jsonObj.get("historical_search_volume").isJsonNull()) {
+        AppendixInfo.validateJsonElement(jsonObj.get("historical_search_volume"));
       }
       // validate the optional field `categories_for_domain`
       if (jsonObj.get("categories_for_domain") != null && !jsonObj.get("categories_for_domain").isJsonNull()) {

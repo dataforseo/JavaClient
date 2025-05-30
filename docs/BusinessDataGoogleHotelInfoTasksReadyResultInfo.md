@@ -12,8 +12,7 @@
 |**seType** | **String** | search engine specified when setting the task |  [optional] |
 |**datePosted** | **String** | date when the task was posted (in the UTC format) |  [optional] |
 |**tag** | **String** | user-defined task identifier |  [optional] |
-|**endpointAdvanced** | **String** | URL for collecting the results of the task |  [optional] |
-|**endpointHtml** | **String** | URL for collecting the results of the task |  [optional] |
+|**endpoint** | **String** | URL for collecting the results of the task |  [optional] |
 
 
 

@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -144,14 +145,6 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItemTest {
     @Test
     public void itemsTest() {
         // TODO: test items
-    }
-
-    /**
-     * Test the property 'clickstreamEtv'
-     */
-    @Test
-    public void clickstreamEtvTest() {
-        // TODO: test clickstreamEtv
     }
 
 }

@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.GpsCoordinatesLocationInfo;
 import io.github.dataforseo.client.model.HotelPriceInfo;
 import io.github.dataforseo.client.model.HotelReviewInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelSearchesItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleHotelSearchesItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -70,7 +71,7 @@ public class BusinessDataGoogleHotelSearchesItem {
 
   public static final String SERIALIZED_NAME_STARS = "stars";
   @SerializedName(SERIALIZED_NAME_STARS)
-  private Integer stars;
+  private BigDecimal stars;
 
   public static final String SERIALIZED_NAME_IS_PAID = "is_paid";
   @SerializedName(SERIALIZED_NAME_IS_PAID)
@@ -152,7 +153,7 @@ public class BusinessDataGoogleHotelSearchesItem {
   }
 
 
-  public BusinessDataGoogleHotelSearchesItem stars(Integer stars) {
+  public BusinessDataGoogleHotelSearchesItem stars(BigDecimal stars) {
     this.stars = stars;
     return this;
   }
@@ -162,11 +163,11 @@ public class BusinessDataGoogleHotelSearchesItem {
    * @return stars
    */
   @javax.annotation.Nullable
-  public Integer getStars() {
+  public BigDecimal getStars() {
     return stars;
   }
 
-  public void setStars(Integer stars) {
+  public void setStars(BigDecimal stars) {
     this.stars = stars;
   }
 

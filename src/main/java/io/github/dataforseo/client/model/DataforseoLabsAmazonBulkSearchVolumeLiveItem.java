@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsAmazonBulkSearchVolumeLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsAmazonBulkSearchVolumeLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -61,7 +62,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveItem {
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public DataforseoLabsAmazonBulkSearchVolumeLiveItem() {
   }
@@ -104,7 +105,7 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveItem {
   }
 
 
-  public DataforseoLabsAmazonBulkSearchVolumeLiveItem searchVolume(Long searchVolume) {
+  public DataforseoLabsAmazonBulkSearchVolumeLiveItem searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -114,11 +115,11 @@ public class DataforseoLabsAmazonBulkSearchVolumeLiveItem {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 

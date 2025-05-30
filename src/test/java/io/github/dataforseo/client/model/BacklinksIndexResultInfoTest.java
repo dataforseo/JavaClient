@@ -20,6 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.IndexHistory;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,14 +56,6 @@ public class BacklinksIndexResultInfoTest {
     @Test
     public void totalPagesTest() {
         // TODO: test totalPages
-    }
-
-    /**
-     * Test the property 'totalDomains'
-     */
-    @Test
-    public void totalDomainsTest() {
-        // TODO: test totalDomains
     }
 
     /**

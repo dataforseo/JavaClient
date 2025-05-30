@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.TechnologiesInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -76,7 +77,7 @@ public class DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo {
 
   public static final String SERIALIZED_NAME_DOMAIN_RANK = "domain_rank";
   @SerializedName(SERIALIZED_NAME_DOMAIN_RANK)
-  private String domainRank;
+  private BigDecimal domainRank;
 
   public static final String SERIALIZED_NAME_LAST_VISITED = "last_visited";
   @SerializedName(SERIALIZED_NAME_LAST_VISITED)
@@ -216,7 +217,7 @@ public class DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo {
   }
 
 
-  public DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo domainRank(String domainRank) {
+  public DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo domainRank(BigDecimal domainRank) {
     this.domainRank = domainRank;
     return this;
   }
@@ -226,11 +227,11 @@ public class DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo {
    * @return domainRank
    */
   @javax.annotation.Nullable
-  public String getDomainRank() {
+  public BigDecimal getDomainRank() {
     return domainRank;
   }
 
-  public void setDomainRank(String domainRank) {
+  public void setDomainRank(BigDecimal domainRank) {
     this.domainRank = domainRank;
   }
 
@@ -586,9 +587,6 @@ public class DomainAnalyticsTechnologiesDomainTechnologiesLiveResultInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("meta_keywords") != null && !jsonObj.get("meta_keywords").isJsonNull() && !jsonObj.get("meta_keywords").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `meta_keywords` to be an array in the JSON string but got `%s`", jsonObj.get("meta_keywords").toString()));
-      }
-      if ((jsonObj.get("domain_rank") != null && !jsonObj.get("domain_rank").isJsonNull()) && !jsonObj.get("domain_rank").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `domain_rank` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain_rank").toString()));
       }
       if ((jsonObj.get("last_visited") != null && !jsonObj.get("last_visited").isJsonNull()) && !jsonObj.get("last_visited").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `last_visited` to be a primitive type in the JSON string but got `%s`", jsonObj.get("last_visited").toString()));

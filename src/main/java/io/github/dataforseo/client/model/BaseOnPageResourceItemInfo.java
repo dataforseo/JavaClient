@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.CacheControl;
 import io.github.dataforseo.client.model.LastModified;
 import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseOnPageResourceItemInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_RESOURCE_TYPE = "resource_type";
   @SerializedName(SERIALIZED_NAME_RESOURCE_TYPE)
@@ -62,7 +63,7 @@ public class BaseOnPageResourceItemInfo {
 
   public static final String SERIALIZED_NAME_STATUS_CODE = "status_code";
   @SerializedName(SERIALIZED_NAME_STATUS_CODE)
-  private Integer statusCode;
+  private BigDecimal statusCode;
 
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
@@ -78,15 +79,15 @@ public class BaseOnPageResourceItemInfo {
 
   public static final String SERIALIZED_NAME_SIZE = "size";
   @SerializedName(SERIALIZED_NAME_SIZE)
-  private Integer size;
+  private BigDecimal size;
 
   public static final String SERIALIZED_NAME_ENCODED_SIZE = "encoded_size";
   @SerializedName(SERIALIZED_NAME_ENCODED_SIZE)
-  private Integer encodedSize;
+  private BigDecimal encodedSize;
 
   public static final String SERIALIZED_NAME_TOTAL_TRANSFER_SIZE = "total_transfer_size";
   @SerializedName(SERIALIZED_NAME_TOTAL_TRANSFER_SIZE)
-  private Long totalTransferSize;
+  private BigDecimal totalTransferSize;
 
   public static final String SERIALIZED_NAME_FETCH_TIME = "fetch_time";
   @SerializedName(SERIALIZED_NAME_FETCH_TIME)
@@ -139,7 +140,7 @@ public class BaseOnPageResourceItemInfo {
   }
 
 
-  public BaseOnPageResourceItemInfo statusCode(Integer statusCode) {
+  public BaseOnPageResourceItemInfo statusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
     return this;
   }
@@ -149,11 +150,11 @@ public class BaseOnPageResourceItemInfo {
    * @return statusCode
    */
   @javax.annotation.Nullable
-  public Integer getStatusCode() {
+  public BigDecimal getStatusCode() {
     return statusCode;
   }
 
-  public void setStatusCode(Integer statusCode) {
+  public void setStatusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
   }
 
@@ -215,7 +216,7 @@ public class BaseOnPageResourceItemInfo {
   }
 
 
-  public BaseOnPageResourceItemInfo size(Integer size) {
+  public BaseOnPageResourceItemInfo size(BigDecimal size) {
     this.size = size;
     return this;
   }
@@ -225,16 +226,16 @@ public class BaseOnPageResourceItemInfo {
    * @return size
    */
   @javax.annotation.Nullable
-  public Integer getSize() {
+  public BigDecimal getSize() {
     return size;
   }
 
-  public void setSize(Integer size) {
+  public void setSize(BigDecimal size) {
     this.size = size;
   }
 
 
-  public BaseOnPageResourceItemInfo encodedSize(Integer encodedSize) {
+  public BaseOnPageResourceItemInfo encodedSize(BigDecimal encodedSize) {
     this.encodedSize = encodedSize;
     return this;
   }
@@ -244,16 +245,16 @@ public class BaseOnPageResourceItemInfo {
    * @return encodedSize
    */
   @javax.annotation.Nullable
-  public Integer getEncodedSize() {
+  public BigDecimal getEncodedSize() {
     return encodedSize;
   }
 
-  public void setEncodedSize(Integer encodedSize) {
+  public void setEncodedSize(BigDecimal encodedSize) {
     this.encodedSize = encodedSize;
   }
 
 
-  public BaseOnPageResourceItemInfo totalTransferSize(Long totalTransferSize) {
+  public BaseOnPageResourceItemInfo totalTransferSize(BigDecimal totalTransferSize) {
     this.totalTransferSize = totalTransferSize;
     return this;
   }
@@ -263,11 +264,11 @@ public class BaseOnPageResourceItemInfo {
    * @return totalTransferSize
    */
   @javax.annotation.Nullable
-  public Long getTotalTransferSize() {
+  public BigDecimal getTotalTransferSize() {
     return totalTransferSize;
   }
 
-  public void setTotalTransferSize(Long totalTransferSize) {
+  public void setTotalTransferSize(BigDecimal totalTransferSize) {
     this.totalTransferSize = totalTransferSize;
   }
 
@@ -540,6 +541,9 @@ public class BaseOnPageResourceItemInfo {
           break;
         case "image":
           ImageResourceElementItem.validateJsonElement(jsonElement);
+          break;
+        case "redirect":
+          RedirectResourceElementItem.validateJsonElement(jsonElement);
           break;
         case "script":
           ScriptResourceElementItem.validateJsonElement(jsonElement);

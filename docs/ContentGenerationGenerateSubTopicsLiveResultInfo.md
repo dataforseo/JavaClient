@@ -7,9 +7,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**inputTokens** | **Integer** | number of input tokens |  [optional] |
-|**outputTokens** | **Integer** | number of output tokens |  [optional] |
-|**newTokens** | **Integer** | number of new tokens |  [optional] |
+|**inputTokens** | **BigDecimal** | number of input tokens |  [optional] |
+|**outputTokens** | **BigDecimal** | number of output tokens |  [optional] |
+|**newTokens** | **BigDecimal** | number of new tokens |  [optional] |
 |**subTopics** | **List&lt;String&gt;** | resulting subtopics |  [optional] |
 
 

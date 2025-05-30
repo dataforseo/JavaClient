@@ -7,10 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
-|**xpath** | **String** | the XPath of the element |  [optional] |
-|**reviewsCount** | **Long** | the number of reviews |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**reviewsCount** | **BigDecimal** | the number of reviews |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 |**placeId** | **String** | the identifier of a place |  [optional] |
 |**feature** | **String** | the additional feature of the review |  [optional] |
 |**cid** | **String** | google-defined client id |  [optional] |

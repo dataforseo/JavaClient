@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsRelatedKeywordsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsRelatedKeywordsLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -64,7 +65,7 @@ public class DataforseoLabsRelatedKeywordsLiveItem {
 
   public static final String SERIALIZED_NAME_DEPTH = "depth";
   @SerializedName(SERIALIZED_NAME_DEPTH)
-  private Integer depth;
+  private BigDecimal depth;
 
   public static final String SERIALIZED_NAME_RELATED_KEYWORDS = "related_keywords";
   @SerializedName(SERIALIZED_NAME_RELATED_KEYWORDS)
@@ -79,7 +80,7 @@ public class DataforseoLabsRelatedKeywordsLiveItem {
   }
 
   /**
-   * search engine type
+   * search engine type possible values: google
    * @return seType
    */
   @javax.annotation.Nullable
@@ -111,7 +112,7 @@ public class DataforseoLabsRelatedKeywordsLiveItem {
   }
 
 
-  public DataforseoLabsRelatedKeywordsLiveItem depth(Integer depth) {
+  public DataforseoLabsRelatedKeywordsLiveItem depth(BigDecimal depth) {
     this.depth = depth;
     return this;
   }
@@ -121,11 +122,11 @@ public class DataforseoLabsRelatedKeywordsLiveItem {
    * @return depth
    */
   @javax.annotation.Nullable
-  public Integer getDepth() {
+  public BigDecimal getDepth() {
     return depth;
   }
 
-  public void setDepth(Integer depth) {
+  public void setDepth(BigDecimal depth) {
     this.depth = depth;
   }
 

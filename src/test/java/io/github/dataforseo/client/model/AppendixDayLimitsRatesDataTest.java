@@ -26,10 +26,10 @@ import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixKeywordsDatasRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixKeywordsDataDaysRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -251,6 +251,14 @@ public class AppendixDayLimitsRatesDataTest {
     }
 
     /**
+     * Test the property 'totalTrafficAnalytics'
+     */
+    @Test
+    public void totalTrafficAnalyticsTest() {
+        // TODO: test totalTrafficAnalytics
+    }
+
+    /**
      * Test the property 'totalReviews'
      */
     @Test
@@ -264,14 +272,6 @@ public class AppendixDayLimitsRatesDataTest {
     @Test
     public void totalSocialTest() {
         // TODO: test totalSocial
-    }
-
-    /**
-     * Test the property 'totalTrafficAnalytics'
-     */
-    @Test
-    public void totalTrafficAnalyticsTest() {
-        // TODO: test totalTrafficAnalytics
     }
 
 }

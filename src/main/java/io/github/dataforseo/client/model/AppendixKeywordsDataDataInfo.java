@@ -25,7 +25,7 @@ import io.github.dataforseo.client.model.AppendixDataforseoTrendsKeywordsDataLim
 import io.github.dataforseo.client.model.AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixInfo;
 import io.github.dataforseo.client.model.AppendixNaverKeywordsDataDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -56,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixKeywordsDataDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixKeywordsDataDataInfo {
   public static final String SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS = "keywords_for_keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_FOR_KEYWORDS)
@@ -140,7 +140,7 @@ public class AppendixKeywordsDataDataInfo {
 
   public static final String SERIALIZED_NAME_KEYWORD_IDEAS_ADS_API = "keyword_ideas_ads_api";
   @SerializedName(SERIALIZED_NAME_KEYWORD_IDEAS_ADS_API)
-  private AppendixSerpsRatesDataInfo keywordIdeasAdsApi;
+  private AppendixSerpDaysRatesDataInfo keywordIdeasAdsApi;
 
   public AppendixKeywordsDataDataInfo() {
   }
@@ -525,7 +525,7 @@ public class AppendixKeywordsDataDataInfo {
   }
 
 
-  public AppendixKeywordsDataDataInfo keywordIdeasAdsApi(AppendixSerpsRatesDataInfo keywordIdeasAdsApi) {
+  public AppendixKeywordsDataDataInfo keywordIdeasAdsApi(AppendixSerpDaysRatesDataInfo keywordIdeasAdsApi) {
     this.keywordIdeasAdsApi = keywordIdeasAdsApi;
     return this;
   }
@@ -535,11 +535,11 @@ public class AppendixKeywordsDataDataInfo {
    * @return keywordIdeasAdsApi
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getKeywordIdeasAdsApi() {
+  public AppendixSerpDaysRatesDataInfo getKeywordIdeasAdsApi() {
     return keywordIdeasAdsApi;
   }
 
-  public void setKeywordIdeasAdsApi(AppendixSerpsRatesDataInfo keywordIdeasAdsApi) {
+  public void setKeywordIdeasAdsApi(AppendixSerpDaysRatesDataInfo keywordIdeasAdsApi) {
     this.keywordIdeasAdsApi = keywordIdeasAdsApi;
   }
 
@@ -783,7 +783,7 @@ public class AppendixKeywordsDataDataInfo {
       }
       // validate the optional field `keyword_ideas_ads_api`
       if (jsonObj.get("keyword_ideas_ads_api") != null && !jsonObj.get("keyword_ideas_ads_api").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("keyword_ideas_ads_api"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("keyword_ideas_ads_api"));
       }
   }
 

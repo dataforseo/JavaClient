@@ -8,10 +8,10 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**seType** | **String** | search engine type |  [optional] |
-|**locationCode** | **Integer** | location code in a POST array if there is no data, then the value is null |  [optional] |
+|**locationCode** | **BigDecimal** | location code in a POST array if there is no data, then the value is null |  [optional] |
 |**languageCode** | **String** | language code in a POST array if there is no data, then the value is null |  [optional] |
-|**totalCount** | **Long** | total amount of results in our database relevant to your request |  [optional] |
-|**itemsCount** | **Long** | the number of results returned in the items array |  [optional] |
+|**totalCount** | **BigDecimal** | total amount of results in our database relevant to your request |  [optional] |
+|**itemsCount** | **BigDecimal** | the number of results returned in the items array |  [optional] |
 |**items** | [**List&lt;DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem&gt;**](DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveItem.md) | array of items with relevant traffic estimation data |  [optional] |
 
 

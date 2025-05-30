@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.RankChanges;
 import io.github.dataforseo.client.model.RankInfo;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -169,6 +170,14 @@ public class FeaturedSnippetDataforseoLabsSerpElementItemTest {
     @Test
     public void estimatedPaidTrafficCostTest() {
         // TODO: test estimatedPaidTrafficCost
+    }
+
+    /**
+     * Test the property 'clickstreamEtv'
+     */
+    @Test
+    public void clickstreamEtvTest() {
+        // TODO: test clickstreamEtv
     }
 
     /**

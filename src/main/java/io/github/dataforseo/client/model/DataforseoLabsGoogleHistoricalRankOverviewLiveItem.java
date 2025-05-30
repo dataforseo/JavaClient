@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleHistoricalRankOverviewLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -60,11 +61,11 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem {
 
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
-  private Integer year;
+  private BigDecimal year;
 
   public static final String SERIALIZED_NAME_MONTH = "month";
   @SerializedName(SERIALIZED_NAME_MONTH)
-  private Integer month;
+  private BigDecimal month;
 
   public static final String SERIALIZED_NAME_METRICS = "metrics";
   @SerializedName(SERIALIZED_NAME_METRICS)
@@ -92,7 +93,7 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem {
   }
 
 
-  public DataforseoLabsGoogleHistoricalRankOverviewLiveItem year(Integer year) {
+  public DataforseoLabsGoogleHistoricalRankOverviewLiveItem year(BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -102,16 +103,16 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem {
    * @return year
    */
   @javax.annotation.Nullable
-  public Integer getYear() {
+  public BigDecimal getYear() {
     return year;
   }
 
-  public void setYear(Integer year) {
+  public void setYear(BigDecimal year) {
     this.year = year;
   }
 
 
-  public DataforseoLabsGoogleHistoricalRankOverviewLiveItem month(Integer month) {
+  public DataforseoLabsGoogleHistoricalRankOverviewLiveItem month(BigDecimal month) {
     this.month = month;
     return this;
   }
@@ -121,11 +122,11 @@ public class DataforseoLabsGoogleHistoricalRankOverviewLiveItem {
    * @return month
    */
   @javax.annotation.Nullable
-  public Integer getMonth() {
+  public BigDecimal getMonth() {
     return month;
   }
 
-  public void setMonth(Integer month) {
+  public void setMonth(BigDecimal month) {
     this.month = month;
   }
 

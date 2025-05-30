@@ -31,7 +31,7 @@ import io.github.dataforseo.client.model.AppendixKeywordsDataDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixSerpDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -62,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDataInfo {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
@@ -164,13 +164,21 @@ public class AppendixDataInfo {
   @SerializedName(SERIALIZED_NAME_TOTAL_CONTENT_GENERATION)
   private Double totalContentGeneration;
 
+  public static final String SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS = "total_traffic_analytics";
+  @SerializedName(SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS)
+  private Double totalTrafficAnalytics;
+
+  public static final String SERIALIZED_NAME_TRAFFIC_ANALYTICS = "traffic_analytics";
+  @SerializedName(SERIALIZED_NAME_TRAFFIC_ANALYTICS)
+  private AppendixSerpDaysRatesDataInfo trafficAnalytics;
+
   public static final String SERIALIZED_NAME_TOTAL_REVIEWS = "total_reviews";
   @SerializedName(SERIALIZED_NAME_TOTAL_REVIEWS)
   private Double totalReviews;
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
-  private AppendixSerpsRatesDataInfo reviews;
+  private AppendixSerpDaysRatesDataInfo reviews;
 
   public static final String SERIALIZED_NAME_TOTAL_SOCIAL = "total_social";
   @SerializedName(SERIALIZED_NAME_TOTAL_SOCIAL)
@@ -178,15 +186,7 @@ public class AppendixDataInfo {
 
   public static final String SERIALIZED_NAME_SOCIAL = "social";
   @SerializedName(SERIALIZED_NAME_SOCIAL)
-  private AppendixSerpsRatesDataInfo social;
-
-  public static final String SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS = "total_traffic_analytics";
-  @SerializedName(SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS)
-  private Double totalTrafficAnalytics;
-
-  public static final String SERIALIZED_NAME_TRAFFIC_ANALYTICS = "traffic_analytics";
-  @SerializedName(SERIALIZED_NAME_TRAFFIC_ANALYTICS)
-  private AppendixSerpsRatesDataInfo trafficAnalytics;
+  private AppendixSerpDaysRatesDataInfo social;
 
   public AppendixDataInfo() {
   }
@@ -666,6 +666,44 @@ public class AppendixDataInfo {
   }
 
 
+  public AppendixDataInfo totalTrafficAnalytics(Double totalTrafficAnalytics) {
+    this.totalTrafficAnalytics = totalTrafficAnalytics;
+    return this;
+  }
+
+  /**
+   * Get totalTrafficAnalytics
+   * @return totalTrafficAnalytics
+   */
+  @javax.annotation.Nullable
+  public Double getTotalTrafficAnalytics() {
+    return totalTrafficAnalytics;
+  }
+
+  public void setTotalTrafficAnalytics(Double totalTrafficAnalytics) {
+    this.totalTrafficAnalytics = totalTrafficAnalytics;
+  }
+
+
+  public AppendixDataInfo trafficAnalytics(AppendixSerpDaysRatesDataInfo trafficAnalytics) {
+    this.trafficAnalytics = trafficAnalytics;
+    return this;
+  }
+
+  /**
+   * Get trafficAnalytics
+   * @return trafficAnalytics
+   */
+  @javax.annotation.Nullable
+  public AppendixSerpDaysRatesDataInfo getTrafficAnalytics() {
+    return trafficAnalytics;
+  }
+
+  public void setTrafficAnalytics(AppendixSerpDaysRatesDataInfo trafficAnalytics) {
+    this.trafficAnalytics = trafficAnalytics;
+  }
+
+
   public AppendixDataInfo totalReviews(Double totalReviews) {
     this.totalReviews = totalReviews;
     return this;
@@ -685,7 +723,7 @@ public class AppendixDataInfo {
   }
 
 
-  public AppendixDataInfo reviews(AppendixSerpsRatesDataInfo reviews) {
+  public AppendixDataInfo reviews(AppendixSerpDaysRatesDataInfo reviews) {
     this.reviews = reviews;
     return this;
   }
@@ -695,11 +733,11 @@ public class AppendixDataInfo {
    * @return reviews
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getReviews() {
+  public AppendixSerpDaysRatesDataInfo getReviews() {
     return reviews;
   }
 
-  public void setReviews(AppendixSerpsRatesDataInfo reviews) {
+  public void setReviews(AppendixSerpDaysRatesDataInfo reviews) {
     this.reviews = reviews;
   }
 
@@ -723,7 +761,7 @@ public class AppendixDataInfo {
   }
 
 
-  public AppendixDataInfo social(AppendixSerpsRatesDataInfo social) {
+  public AppendixDataInfo social(AppendixSerpDaysRatesDataInfo social) {
     this.social = social;
     return this;
   }
@@ -733,50 +771,12 @@ public class AppendixDataInfo {
    * @return social
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getSocial() {
+  public AppendixSerpDaysRatesDataInfo getSocial() {
     return social;
   }
 
-  public void setSocial(AppendixSerpsRatesDataInfo social) {
+  public void setSocial(AppendixSerpDaysRatesDataInfo social) {
     this.social = social;
-  }
-
-
-  public AppendixDataInfo totalTrafficAnalytics(Double totalTrafficAnalytics) {
-    this.totalTrafficAnalytics = totalTrafficAnalytics;
-    return this;
-  }
-
-  /**
-   * Get totalTrafficAnalytics
-   * @return totalTrafficAnalytics
-   */
-  @javax.annotation.Nullable
-  public Double getTotalTrafficAnalytics() {
-    return totalTrafficAnalytics;
-  }
-
-  public void setTotalTrafficAnalytics(Double totalTrafficAnalytics) {
-    this.totalTrafficAnalytics = totalTrafficAnalytics;
-  }
-
-
-  public AppendixDataInfo trafficAnalytics(AppendixSerpsRatesDataInfo trafficAnalytics) {
-    this.trafficAnalytics = trafficAnalytics;
-    return this;
-  }
-
-  /**
-   * Get trafficAnalytics
-   * @return trafficAnalytics
-   */
-  @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getTrafficAnalytics() {
-    return trafficAnalytics;
-  }
-
-  public void setTrafficAnalytics(AppendixSerpsRatesDataInfo trafficAnalytics) {
-    this.trafficAnalytics = trafficAnalytics;
   }
 
   /**
@@ -859,12 +859,12 @@ public class AppendixDataInfo {
         Objects.equals(this.totalContentAnalysis, appendixDataInfo.totalContentAnalysis) &&
         Objects.equals(this.contentGeneration, appendixDataInfo.contentGeneration) &&
         Objects.equals(this.totalContentGeneration, appendixDataInfo.totalContentGeneration) &&
+        Objects.equals(this.totalTrafficAnalytics, appendixDataInfo.totalTrafficAnalytics) &&
+        Objects.equals(this.trafficAnalytics, appendixDataInfo.trafficAnalytics) &&
         Objects.equals(this.totalReviews, appendixDataInfo.totalReviews) &&
         Objects.equals(this.reviews, appendixDataInfo.reviews) &&
         Objects.equals(this.totalSocial, appendixDataInfo.totalSocial) &&
-        Objects.equals(this.social, appendixDataInfo.social) &&
-        Objects.equals(this.totalTrafficAnalytics, appendixDataInfo.totalTrafficAnalytics) &&
-        Objects.equals(this.trafficAnalytics, appendixDataInfo.trafficAnalytics)&&
+        Objects.equals(this.social, appendixDataInfo.social)&&
         Objects.equals(this.additionalProperties, appendixDataInfo.additionalProperties);
   }
 
@@ -874,7 +874,7 @@ public class AppendixDataInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(serp, total, totalSerp, keywordsData, totalKeywordsData, appendix, totalAppendix, dataforseoLabs, totalDataforseoLabs, domainAnalytics, totalDomainAnalytics, merchant, totalMerchant, onPage, totalOnPage, businessData, totalBusinessData, backlinks, totalBacklinks, appData, totalAppData, contentAnalysis, totalContentAnalysis, contentGeneration, totalContentGeneration, totalReviews, reviews, totalSocial, social, totalTrafficAnalytics, trafficAnalytics, additionalProperties);
+    return Objects.hash(serp, total, totalSerp, keywordsData, totalKeywordsData, appendix, totalAppendix, dataforseoLabs, totalDataforseoLabs, domainAnalytics, totalDomainAnalytics, merchant, totalMerchant, onPage, totalOnPage, businessData, totalBusinessData, backlinks, totalBacklinks, appData, totalAppData, contentAnalysis, totalContentAnalysis, contentGeneration, totalContentGeneration, totalTrafficAnalytics, trafficAnalytics, totalReviews, reviews, totalSocial, social, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -913,12 +913,12 @@ public class AppendixDataInfo {
     sb.append("    totalContentAnalysis: ").append(toIndentedString(totalContentAnalysis)).append("\n");
     sb.append("    contentGeneration: ").append(toIndentedString(contentGeneration)).append("\n");
     sb.append("    totalContentGeneration: ").append(toIndentedString(totalContentGeneration)).append("\n");
+    sb.append("    totalTrafficAnalytics: ").append(toIndentedString(totalTrafficAnalytics)).append("\n");
+    sb.append("    trafficAnalytics: ").append(toIndentedString(trafficAnalytics)).append("\n");
     sb.append("    totalReviews: ").append(toIndentedString(totalReviews)).append("\n");
     sb.append("    reviews: ").append(toIndentedString(reviews)).append("\n");
     sb.append("    totalSocial: ").append(toIndentedString(totalSocial)).append("\n");
     sb.append("    social: ").append(toIndentedString(social)).append("\n");
-    sb.append("    totalTrafficAnalytics: ").append(toIndentedString(totalTrafficAnalytics)).append("\n");
-    sb.append("    trafficAnalytics: ").append(toIndentedString(trafficAnalytics)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -967,12 +967,12 @@ public class AppendixDataInfo {
     openapiFields.add("total_content_analysis");
     openapiFields.add("content_generation");
     openapiFields.add("total_content_generation");
+    openapiFields.add("total_traffic_analytics");
+    openapiFields.add("traffic_analytics");
     openapiFields.add("total_reviews");
     openapiFields.add("reviews");
     openapiFields.add("total_social");
     openapiFields.add("social");
-    openapiFields.add("total_traffic_analytics");
-    openapiFields.add("traffic_analytics");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -1039,17 +1039,17 @@ public class AppendixDataInfo {
       if (jsonObj.get("content_generation") != null && !jsonObj.get("content_generation").isJsonNull()) {
         AppendixContentGenerationLimitsRatesDataInfo.validateJsonElement(jsonObj.get("content_generation"));
       }
+      // validate the optional field `traffic_analytics`
+      if (jsonObj.get("traffic_analytics") != null && !jsonObj.get("traffic_analytics").isJsonNull()) {
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("traffic_analytics"));
+      }
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("reviews"));
       }
       // validate the optional field `social`
       if (jsonObj.get("social") != null && !jsonObj.get("social").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("social"));
-      }
-      // validate the optional field `traffic_analytics`
-      if (jsonObj.get("traffic_analytics") != null && !jsonObj.get("traffic_analytics").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("traffic_analytics"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("social"));
       }
   }
 

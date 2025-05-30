@@ -20,10 +20,11 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.ImagesElement;
-import io.github.dataforseo.client.model.RatingInfo;
 import io.github.dataforseo.client.model.ReviewHighlights;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleReviewsSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -83,15 +84,15 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_PHOTOS_COUNT = "photos_count";
   @SerializedName(SERIALIZED_NAME_PHOTOS_COUNT)
-  private Long photosCount;
+  private BigDecimal photosCount;
 
   public static final String SERIALIZED_NAME_LOCAL_GUIDE = "local_guide";
   @SerializedName(SERIALIZED_NAME_LOCAL_GUIDE)
@@ -258,7 +259,7 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
   }
 
 
-  public GoogleReviewsSearchBusinessDataSerpElementItem rating(RatingInfo rating) {
+  public GoogleReviewsSearchBusinessDataSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -268,16 +269,16 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
 
-  public GoogleReviewsSearchBusinessDataSerpElementItem reviewsCount(Long reviewsCount) {
+  public GoogleReviewsSearchBusinessDataSerpElementItem reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -287,16 +288,16 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
 
-  public GoogleReviewsSearchBusinessDataSerpElementItem photosCount(Long photosCount) {
+  public GoogleReviewsSearchBusinessDataSerpElementItem photosCount(BigDecimal photosCount) {
     this.photosCount = photosCount;
     return this;
   }
@@ -306,11 +307,11 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
    * @return photosCount
    */
   @javax.annotation.Nullable
-  public Long getPhotosCount() {
+  public BigDecimal getPhotosCount() {
     return photosCount;
   }
 
-  public void setPhotosCount(Long photosCount) {
+  public void setPhotosCount(BigDecimal photosCount) {
     this.photosCount = photosCount;
   }
 
@@ -765,7 +766,7 @@ public class GoogleReviewsSearchBusinessDataSerpElementItem extends BaseBusiness
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if ((jsonObj.get("profile_name") != null && !jsonObj.get("profile_name").isJsonNull()) && !jsonObj.get("profile_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `profile_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("profile_name").toString()));

@@ -24,19 +24,19 @@
 |**domain** | **String** | domain of the business entity |  [optional] |
 |**logo** | **String** | URL of the logo featured in Google My Business profile |  [optional] |
 |**mainImage** | **String** | URL of the main image featured in Google My Business profile |  [optional] |
-|**totalPhotos** | **Long** | total count of images featured in Google My Business profile |  [optional] |
+|**totalPhotos** | **BigDecimal** | total count of images featured in Google My Business profile |  [optional] |
 |**snippet** | **String** | additional information on the business entity |  [optional] |
 |**latitude** | **Float** | latitude coordinate of the local establishments in google maps example: \&quot;latitude\&quot;: 51.584091 |  [optional] |
 |**longitude** | **Float** | longitude coordinate of the local establishment in google maps example: \&quot;longitude\&quot;: -0.31365919999999997 |  [optional] |
 |**isClaimed** | **Boolean** | shows whether the entity is verified by its owner on Google Maps |  [optional] |
 |**attributes** | [**BusinessDataAttributesInfo**](BusinessDataAttributesInfo.md) |  |  [optional] |
 |**placeTopics** | **Map&lt;String, Long&gt;** | keywords mentioned in customer reviews contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword example:  \&quot;place_topics\&quot;: { \&quot;egg roll\&quot;: 48, \&quot;birthday\&quot;: 33 } |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
-|**hotelRating** | **Integer** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
+|**hotelRating** | **BigDecimal** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |
 |**ratingDistribution** | **Map&lt;String, Integer&gt;** | the distribution of ratings of the business entity the object displays the number of 1-star to 5-star ratings, as reviewed by users |  [optional] |
 |**peopleAlsoSearch** | [**List&lt;PeopleAlsoSearch&gt;**](PeopleAlsoSearch.md) | related business entities |  [optional] |
-|**workTime** | [**WorkTime**](WorkTime.md) |  |  [optional] |
+|**workTime** | [**BusinessWorkHoursInfo**](BusinessWorkHoursInfo.md) |  |  [optional] |
 |**popularTimes** | [**PopularTimes**](PopularTimes.md) |  |  [optional] |
 |**localBusinessLinks** | [**List&lt;BaseLocalBusinessLink&gt;**](BaseLocalBusinessLink.md) | available interactions with the business list of options to interact with the business directly from search results |  [optional] |
 |**contactInfo** | [**List&lt;BusinessDataContactInfo&gt;**](BusinessDataContactInfo.md) | available contacts of the business list of contacts to interact with the business |  [optional] |

@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.GooglePlayMetricsBundleInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleAppCompetitorsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleAppCompetitorsLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -66,11 +67,11 @@ public class DataforseoLabsGoogleAppCompetitorsLiveItem {
 
   public static final String SERIALIZED_NAME_SUM_POSITION = "sum_position";
   @SerializedName(SERIALIZED_NAME_SUM_POSITION)
-  private Integer sumPosition;
+  private BigDecimal sumPosition;
 
   public static final String SERIALIZED_NAME_INTERSECTIONS = "intersections";
   @SerializedName(SERIALIZED_NAME_INTERSECTIONS)
-  private Integer intersections;
+  private BigDecimal intersections;
 
   public static final String SERIALIZED_NAME_COMPETITOR_METRICS = "competitor_metrics";
   @SerializedName(SERIALIZED_NAME_COMPETITOR_METRICS)
@@ -140,7 +141,7 @@ public class DataforseoLabsGoogleAppCompetitorsLiveItem {
   }
 
 
-  public DataforseoLabsGoogleAppCompetitorsLiveItem sumPosition(Integer sumPosition) {
+  public DataforseoLabsGoogleAppCompetitorsLiveItem sumPosition(BigDecimal sumPosition) {
     this.sumPosition = sumPosition;
     return this;
   }
@@ -150,16 +151,16 @@ public class DataforseoLabsGoogleAppCompetitorsLiveItem {
    * @return sumPosition
    */
   @javax.annotation.Nullable
-  public Integer getSumPosition() {
+  public BigDecimal getSumPosition() {
     return sumPosition;
   }
 
-  public void setSumPosition(Integer sumPosition) {
+  public void setSumPosition(BigDecimal sumPosition) {
     this.sumPosition = sumPosition;
   }
 
 
-  public DataforseoLabsGoogleAppCompetitorsLiveItem intersections(Integer intersections) {
+  public DataforseoLabsGoogleAppCompetitorsLiveItem intersections(BigDecimal intersections) {
     this.intersections = intersections;
     return this;
   }
@@ -169,11 +170,11 @@ public class DataforseoLabsGoogleAppCompetitorsLiveItem {
    * @return intersections
    */
   @javax.annotation.Nullable
-  public Integer getIntersections() {
+  public BigDecimal getIntersections() {
     return intersections;
   }
 
-  public void setIntersections(Integer intersections) {
+  public void setIntersections(BigDecimal intersections) {
     this.intersections = intersections;
   }
 

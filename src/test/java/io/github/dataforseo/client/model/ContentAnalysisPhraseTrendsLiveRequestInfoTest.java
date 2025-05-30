@@ -107,11 +107,11 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfoTest {
     }
 
     /**
-     * Test the property 'initialDatasetFilter'
+     * Test the property 'initialDatasetFilters'
      */
     @Test
-    public void initialDatasetFilterTest() {
-        // TODO: test initialDatasetFilter
+    public void initialDatasetFiltersTest() {
+        // TODO: test initialDatasetFilters
     }
 
     /**

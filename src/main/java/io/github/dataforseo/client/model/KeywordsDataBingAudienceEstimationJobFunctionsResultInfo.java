@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataBingAudienceEstimationJobFunctionsResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataBingAudienceEstimationJobFunctionsResultInfo {
   public static final String SERIALIZED_NAME_JOB_FUNCTION_ID = "job_function_id";
   @SerializedName(SERIALIZED_NAME_JOB_FUNCTION_ID)
-  private Long jobFunctionId;
+  private BigDecimal jobFunctionId;
 
   public static final String SERIALIZED_NAME_JOB_FUNCTION_NAME = "job_function_name";
   @SerializedName(SERIALIZED_NAME_JOB_FUNCTION_NAME)
@@ -62,7 +63,7 @@ public class KeywordsDataBingAudienceEstimationJobFunctionsResultInfo {
   public KeywordsDataBingAudienceEstimationJobFunctionsResultInfo() {
   }
 
-  public KeywordsDataBingAudienceEstimationJobFunctionsResultInfo jobFunctionId(Long jobFunctionId) {
+  public KeywordsDataBingAudienceEstimationJobFunctionsResultInfo jobFunctionId(BigDecimal jobFunctionId) {
     this.jobFunctionId = jobFunctionId;
     return this;
   }
@@ -72,11 +73,11 @@ public class KeywordsDataBingAudienceEstimationJobFunctionsResultInfo {
    * @return jobFunctionId
    */
   @javax.annotation.Nullable
-  public Long getJobFunctionId() {
+  public BigDecimal getJobFunctionId() {
     return jobFunctionId;
   }
 
-  public void setJobFunctionId(Long jobFunctionId) {
+  public void setJobFunctionId(BigDecimal jobFunctionId) {
     this.jobFunctionId = jobFunctionId;
   }
 

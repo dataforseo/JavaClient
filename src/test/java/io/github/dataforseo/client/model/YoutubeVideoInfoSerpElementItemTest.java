@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.ChannelSubscribersCount;
 import io.github.dataforseo.client.model.StreamingQualityElement;
 import io.github.dataforseo.client.model.Subtitles;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

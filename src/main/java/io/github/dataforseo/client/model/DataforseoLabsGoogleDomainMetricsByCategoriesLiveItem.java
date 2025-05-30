@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -62,7 +63,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
 
   public static final String SERIALIZED_NAME_TOP_CATEGORIES = "top_categories";
   @SerializedName(SERIALIZED_NAME_TOP_CATEGORIES)
-  private List<Integer> topCategories;
+  private List<BigDecimal> topCategories;
 
   public static final String SERIALIZED_NAME_ORGANIC_ETV = "organic_etv";
   @SerializedName(SERIALIZED_NAME_ORGANIC_ETV)
@@ -70,15 +71,15 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
 
   public static final String SERIALIZED_NAME_ORGANIC_COUNT = "organic_count";
   @SerializedName(SERIALIZED_NAME_ORGANIC_COUNT)
-  private Long organicCount;
+  private BigDecimal organicCount;
 
   public static final String SERIALIZED_NAME_ORGANIC_IS_LOST = "organic_is_lost";
   @SerializedName(SERIALIZED_NAME_ORGANIC_IS_LOST)
-  private Integer organicIsLost;
+  private BigDecimal organicIsLost;
 
   public static final String SERIALIZED_NAME_ORGANIC_IS_NEW = "organic_is_new";
   @SerializedName(SERIALIZED_NAME_ORGANIC_IS_NEW)
-  private Integer organicIsNew;
+  private BigDecimal organicIsNew;
 
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -118,12 +119,12 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
   }
 
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem topCategories(List<Integer> topCategories) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem topCategories(List<BigDecimal> topCategories) {
     this.topCategories = topCategories;
     return this;
   }
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem addTopCategoriesItem(Integer topCategoriesItem) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem addTopCategoriesItem(BigDecimal topCategoriesItem) {
     if (this.topCategories == null) {
       this.topCategories = new ArrayList<>();
     }
@@ -136,11 +137,11 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
    * @return topCategories
    */
   @javax.annotation.Nullable
-  public List<Integer> getTopCategories() {
+  public List<BigDecimal> getTopCategories() {
     return topCategories;
   }
 
-  public void setTopCategories(List<Integer> topCategories) {
+  public void setTopCategories(List<BigDecimal> topCategories) {
     this.topCategories = topCategories;
   }
 
@@ -164,7 +165,7 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
   }
 
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem organicCount(Long organicCount) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem organicCount(BigDecimal organicCount) {
     this.organicCount = organicCount;
     return this;
   }
@@ -174,16 +175,16 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
    * @return organicCount
    */
   @javax.annotation.Nullable
-  public Long getOrganicCount() {
+  public BigDecimal getOrganicCount() {
     return organicCount;
   }
 
-  public void setOrganicCount(Long organicCount) {
+  public void setOrganicCount(BigDecimal organicCount) {
     this.organicCount = organicCount;
   }
 
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem organicIsLost(Integer organicIsLost) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem organicIsLost(BigDecimal organicIsLost) {
     this.organicIsLost = organicIsLost;
     return this;
   }
@@ -193,16 +194,16 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
    * @return organicIsLost
    */
   @javax.annotation.Nullable
-  public Integer getOrganicIsLost() {
+  public BigDecimal getOrganicIsLost() {
     return organicIsLost;
   }
 
-  public void setOrganicIsLost(Integer organicIsLost) {
+  public void setOrganicIsLost(BigDecimal organicIsLost) {
     this.organicIsLost = organicIsLost;
   }
 
 
-  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem organicIsNew(Integer organicIsNew) {
+  public DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem organicIsNew(BigDecimal organicIsNew) {
     this.organicIsNew = organicIsNew;
     return this;
   }
@@ -212,11 +213,11 @@ public class DataforseoLabsGoogleDomainMetricsByCategoriesLiveItem {
    * @return organicIsNew
    */
   @javax.annotation.Nullable
-  public Integer getOrganicIsNew() {
+  public BigDecimal getOrganicIsNew() {
     return organicIsNew;
   }
 
-  public void setOrganicIsNew(Integer organicIsNew) {
+  public void setOrganicIsNew(BigDecimal organicIsNew) {
     this.organicIsNew = organicIsNew;
   }
 

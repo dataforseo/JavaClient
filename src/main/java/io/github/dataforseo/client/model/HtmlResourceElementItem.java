@@ -26,6 +26,7 @@ import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import io.github.dataforseo.client.model.PageMetaInfo;
 import io.github.dataforseo.client.model.PageTiming;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -57,7 +58,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * HtmlResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -73,7 +74,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
 
   public static final String SERIALIZED_NAME_TOTAL_DOM_SIZE = "total_dom_size";
   @SerializedName(SERIALIZED_NAME_TOTAL_DOM_SIZE)
-  private Long totalDomSize;
+  private BigDecimal totalDomSize;
 
   public static final String SERIALIZED_NAME_CUSTOM_JS_RESPONSE = "custom_js_response";
   @SerializedName(SERIALIZED_NAME_CUSTOM_JS_RESPONSE)
@@ -105,7 +106,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
 
   public static final String SERIALIZED_NAME_CLICK_DEPTH = "click_depth";
   @SerializedName(SERIALIZED_NAME_CLICK_DEPTH)
-  private Integer clickDepth;
+  private BigDecimal clickDepth;
 
   public static final String SERIALIZED_NAME_IS_RESOURCE = "is_resource";
   @SerializedName(SERIALIZED_NAME_IS_RESOURCE)
@@ -113,11 +114,11 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
 
   public static final String SERIALIZED_NAME_URL_LENGTH = "url_length";
   @SerializedName(SERIALIZED_NAME_URL_LENGTH)
-  private Integer urlLength;
+  private BigDecimal urlLength;
 
   public static final String SERIALIZED_NAME_RELATIVE_URL_LENGTH = "relative_url_length";
   @SerializedName(SERIALIZED_NAME_RELATIVE_URL_LENGTH)
-  private Integer relativeUrlLength;
+  private BigDecimal relativeUrlLength;
 
   public HtmlResourceElementItem() {
   }
@@ -179,7 +180,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
 
-  public HtmlResourceElementItem totalDomSize(Long totalDomSize) {
+  public HtmlResourceElementItem totalDomSize(BigDecimal totalDomSize) {
     this.totalDomSize = totalDomSize;
     return this;
   }
@@ -189,11 +190,11 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
    * @return totalDomSize
    */
   @javax.annotation.Nullable
-  public Long getTotalDomSize() {
+  public BigDecimal getTotalDomSize() {
     return totalDomSize;
   }
 
-  public void setTotalDomSize(Long totalDomSize) {
+  public void setTotalDomSize(BigDecimal totalDomSize) {
     this.totalDomSize = totalDomSize;
   }
 
@@ -204,7 +205,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
   /**
-   * the result of executing a specified JS script note that you should specify a custom_js field when setting a task to receive this data and the field type and its value will totally depend on the script you specified;you can also filter the results by this value specifying filters in the following way: [\&quot;custom_js_response.url\&quot;, \&quot;like\&quot;, \&quot;pixel\&quot;]
+   * the result of executing a specified JS script note that you should specify a custom_js field when setting a task to receive this data and the field type and its value will totally depend on the script you specified; you can also filter the results by this value specifying filters in the following way: [\&quot;custom_js_response.url\&quot;, \&quot;like\&quot;, \&quot;pixel\&quot;]
    * @return customJsResponse
    */
   @javax.annotation.Nullable
@@ -331,7 +332,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
 
-  public HtmlResourceElementItem clickDepth(Integer clickDepth) {
+  public HtmlResourceElementItem clickDepth(BigDecimal clickDepth) {
     this.clickDepth = clickDepth;
     return this;
   }
@@ -341,11 +342,11 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
    * @return clickDepth
    */
   @javax.annotation.Nullable
-  public Integer getClickDepth() {
+  public BigDecimal getClickDepth() {
     return clickDepth;
   }
 
-  public void setClickDepth(Integer clickDepth) {
+  public void setClickDepth(BigDecimal clickDepth) {
     this.clickDepth = clickDepth;
   }
 
@@ -369,7 +370,7 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
   }
 
 
-  public HtmlResourceElementItem urlLength(Integer urlLength) {
+  public HtmlResourceElementItem urlLength(BigDecimal urlLength) {
     this.urlLength = urlLength;
     return this;
   }
@@ -379,16 +380,16 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
    * @return urlLength
    */
   @javax.annotation.Nullable
-  public Integer getUrlLength() {
+  public BigDecimal getUrlLength() {
     return urlLength;
   }
 
-  public void setUrlLength(Integer urlLength) {
+  public void setUrlLength(BigDecimal urlLength) {
     this.urlLength = urlLength;
   }
 
 
-  public HtmlResourceElementItem relativeUrlLength(Integer relativeUrlLength) {
+  public HtmlResourceElementItem relativeUrlLength(BigDecimal relativeUrlLength) {
     this.relativeUrlLength = relativeUrlLength;
     return this;
   }
@@ -398,11 +399,11 @@ public class HtmlResourceElementItem extends BaseOnPageResourceItemInfo {
    * @return relativeUrlLength
    */
   @javax.annotation.Nullable
-  public Integer getRelativeUrlLength() {
+  public BigDecimal getRelativeUrlLength() {
     return relativeUrlLength;
   }
 
-  public void setRelativeUrlLength(Integer relativeUrlLength) {
+  public void setRelativeUrlLength(BigDecimal relativeUrlLength) {
     this.relativeUrlLength = relativeUrlLength;
   }
 

@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoTrendsItem;
 import io.github.dataforseo.client.model.TrendsGraphDataInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoTrendsGraphElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoTrendsGraphElementItem extends BaseDataforseoTrendsItem {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
@@ -61,7 +62,7 @@ public class DataforseoTrendsGraphElementItem extends BaseDataforseoTrendsItem {
 
   public static final String SERIALIZED_NAME_AVERAGES = "averages";
   @SerializedName(SERIALIZED_NAME_AVERAGES)
-  private List<Integer> averages;
+  private List<BigDecimal> averages;
 
   public DataforseoTrendsGraphElementItem() {
   }
@@ -93,12 +94,12 @@ public class DataforseoTrendsGraphElementItem extends BaseDataforseoTrendsItem {
   }
 
 
-  public DataforseoTrendsGraphElementItem averages(List<Integer> averages) {
+  public DataforseoTrendsGraphElementItem averages(List<BigDecimal> averages) {
     this.averages = averages;
     return this;
   }
 
-  public DataforseoTrendsGraphElementItem addAveragesItem(Integer averagesItem) {
+  public DataforseoTrendsGraphElementItem addAveragesItem(BigDecimal averagesItem) {
     if (this.averages == null) {
       this.averages = new ArrayList<>();
     }
@@ -111,11 +112,11 @@ public class DataforseoTrendsGraphElementItem extends BaseDataforseoTrendsItem {
    * @return averages
    */
   @javax.annotation.Nullable
-  public List<Integer> getAverages() {
+  public List<BigDecimal> getAverages() {
     return averages;
   }
 
-  public void setAverages(List<Integer> averages) {
+  public void setAverages(List<BigDecimal> averages) {
     this.averages = averages;
   }
 

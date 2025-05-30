@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * HistoricalMetricsBundleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HistoricalMetricsBundleInfo {
   public static final String SERIALIZED_NAME_ORGANIC = "organic";
   @SerializedName(SERIALIZED_NAME_ORGANIC)
@@ -141,7 +141,7 @@ public class HistoricalMetricsBundleInfo {
   }
 
   /**
-   * traffic data from the featured snippet results in Google SERP
+   * traffic data from the local pack results in SERP
    * @return localPack
    */
   @javax.annotation.Nullable
@@ -168,7 +168,7 @@ public class HistoricalMetricsBundleInfo {
   }
 
   /**
-   * traffic data from the local pack results in SERP
+   * traffic data from the featured snippet results in Google SERP
    * @return featuredSnippet
    */
   @javax.annotation.Nullable

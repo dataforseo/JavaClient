@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleRankedKeywordsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -122,7 +122,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo {
   }
 
   /**
-   * domain name or page url required field the domain name of the target website or URL of the target webpage; the domain name must be specified without https:// or www.; the webpage URL must be specified with https:// or www.
+   * domain name or page url required field the domain name of the target website or URL of the target webpage; the domain name must be specified without https:// or www.; the webpage URL must be specified with https:// or www. Note: if you specify the webpage URL without https:// or www., the result will be returned for the entire domain rather than the specific page
    * @return target
    */
   @javax.annotation.Nullable

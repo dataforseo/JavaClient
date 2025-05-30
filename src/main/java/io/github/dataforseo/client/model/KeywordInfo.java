@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.MonthlySearches;
 import io.github.dataforseo.client.model.SearchVolumeTrend;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -77,7 +78,7 @@ public class KeywordInfo {
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public static final String SERIALIZED_NAME_LOW_TOP_OF_PAGE_BID = "low_top_of_page_bid";
   @SerializedName(SERIALIZED_NAME_LOW_TOP_OF_PAGE_BID)
@@ -89,7 +90,7 @@ public class KeywordInfo {
 
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
-  private List<Integer> categories;
+  private List<BigDecimal> categories;
 
   public static final String SERIALIZED_NAME_MONTHLY_SEARCHES = "monthly_searches";
   @SerializedName(SERIALIZED_NAME_MONTHLY_SEARCHES)
@@ -197,7 +198,7 @@ public class KeywordInfo {
   }
 
 
-  public KeywordInfo searchVolume(Long searchVolume) {
+  public KeywordInfo searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -207,11 +208,11 @@ public class KeywordInfo {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 
@@ -254,12 +255,12 @@ public class KeywordInfo {
   }
 
 
-  public KeywordInfo categories(List<Integer> categories) {
+  public KeywordInfo categories(List<BigDecimal> categories) {
     this.categories = categories;
     return this;
   }
 
-  public KeywordInfo addCategoriesItem(Integer categoriesItem) {
+  public KeywordInfo addCategoriesItem(BigDecimal categoriesItem) {
     if (this.categories == null) {
       this.categories = new ArrayList<>();
     }
@@ -272,11 +273,11 @@ public class KeywordInfo {
    * @return categories
    */
   @javax.annotation.Nullable
-  public List<Integer> getCategories() {
+  public List<BigDecimal> getCategories() {
     return categories;
   }
 
-  public void setCategories(List<Integer> categories) {
+  public void setCategories(List<BigDecimal> categories) {
     this.categories = categories;
   }
 

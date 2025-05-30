@@ -20,8 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
-import io.github.dataforseo.client.model.RatingInfo;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataTripadvisorReviewsTaskGetResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
   public static final String SERIALIZED_NAME_URL_PATH = "url_path";
   @SerializedName(SERIALIZED_NAME_URL_PATH)
@@ -87,11 +88,11 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_RATING_DISTRIBUTION = "rating_distribution";
   @SerializedName(SERIALIZED_NAME_RATING_DISTRIBUTION)
@@ -99,7 +100,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -245,7 +246,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
   }
 
 
-  public BusinessDataTripadvisorReviewsTaskGetResultInfo reviewsCount(Long reviewsCount) {
+  public BusinessDataTripadvisorReviewsTaskGetResultInfo reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -255,16 +256,16 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
 
-  public BusinessDataTripadvisorReviewsTaskGetResultInfo rating(RatingInfo rating) {
+  public BusinessDataTripadvisorReviewsTaskGetResultInfo rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -274,11 +275,11 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -310,7 +311,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
   }
 
 
-  public BusinessDataTripadvisorReviewsTaskGetResultInfo itemsCount(Long itemsCount) {
+  public BusinessDataTripadvisorReviewsTaskGetResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -320,11 +321,11 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -555,7 +556,7 @@ public class BusinessDataTripadvisorReviewsTaskGetResultInfo {
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");

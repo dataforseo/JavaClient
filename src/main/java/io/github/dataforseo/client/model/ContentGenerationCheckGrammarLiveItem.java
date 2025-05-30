@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentGenerationCheckGrammarLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentGenerationCheckGrammarLiveItem {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
@@ -67,11 +68,11 @@ public class ContentGenerationCheckGrammarLiveItem {
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
-  private Integer offset;
+  private BigDecimal offset;
 
   public static final String SERIALIZED_NAME_LENGTH = "length";
   @SerializedName(SERIALIZED_NAME_LENGTH)
-  private Integer length;
+  private BigDecimal length;
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -165,7 +166,7 @@ public class ContentGenerationCheckGrammarLiveItem {
   }
 
 
-  public ContentGenerationCheckGrammarLiveItem offset(Integer offset) {
+  public ContentGenerationCheckGrammarLiveItem offset(BigDecimal offset) {
     this.offset = offset;
     return this;
   }
@@ -175,16 +176,16 @@ public class ContentGenerationCheckGrammarLiveItem {
    * @return offset
    */
   @javax.annotation.Nullable
-  public Integer getOffset() {
+  public BigDecimal getOffset() {
     return offset;
   }
 
-  public void setOffset(Integer offset) {
+  public void setOffset(BigDecimal offset) {
     this.offset = offset;
   }
 
 
-  public ContentGenerationCheckGrammarLiveItem length(Integer length) {
+  public ContentGenerationCheckGrammarLiveItem length(BigDecimal length) {
     this.length = length;
     return this;
   }
@@ -194,11 +195,11 @@ public class ContentGenerationCheckGrammarLiveItem {
    * @return length
    */
   @javax.annotation.Nullable
-  public Integer getLength() {
+  public BigDecimal getLength() {
     return length;
   }
 
-  public void setLength(Integer length) {
+  public void setLength(BigDecimal length) {
     this.length = length;
   }
 

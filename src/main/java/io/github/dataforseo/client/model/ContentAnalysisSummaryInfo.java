@@ -20,8 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.ContentAnalysisCategoriesInfo;
-import io.github.dataforseo.client.model.TopDomainInfo;
+import io.github.dataforseo.client.model.TopDomainCountInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisSummaryInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisSummaryInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -63,15 +64,15 @@ public class ContentAnalysisSummaryInfo {
 
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
-  private Long totalCount;
+  private BigDecimal totalCount;
 
   public static final String SERIALIZED_NAME_RANK = "rank";
   @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
+  private BigDecimal rank;
 
   public static final String SERIALIZED_NAME_TOP_DOMAINS = "top_domains";
   @SerializedName(SERIALIZED_NAME_TOP_DOMAINS)
-  private List<TopDomainInfo> topDomains;
+  private List<TopDomainCountInfo> topDomains;
 
   public static final String SERIALIZED_NAME_SENTIMENT_CONNOTATIONS = "sentiment_connotations";
   @SerializedName(SERIALIZED_NAME_SENTIMENT_CONNOTATIONS)
@@ -123,7 +124,7 @@ public class ContentAnalysisSummaryInfo {
   }
 
 
-  public ContentAnalysisSummaryInfo totalCount(Long totalCount) {
+  public ContentAnalysisSummaryInfo totalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
     return this;
   }
@@ -133,16 +134,16 @@ public class ContentAnalysisSummaryInfo {
    * @return totalCount
    */
   @javax.annotation.Nullable
-  public Long getTotalCount() {
+  public BigDecimal getTotalCount() {
     return totalCount;
   }
 
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
   }
 
 
-  public ContentAnalysisSummaryInfo rank(Integer rank) {
+  public ContentAnalysisSummaryInfo rank(BigDecimal rank) {
     this.rank = rank;
     return this;
   }
@@ -152,21 +153,21 @@ public class ContentAnalysisSummaryInfo {
    * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getRank() {
+  public BigDecimal getRank() {
     return rank;
   }
 
-  public void setRank(Integer rank) {
+  public void setRank(BigDecimal rank) {
     this.rank = rank;
   }
 
 
-  public ContentAnalysisSummaryInfo topDomains(List<TopDomainInfo> topDomains) {
+  public ContentAnalysisSummaryInfo topDomains(List<TopDomainCountInfo> topDomains) {
     this.topDomains = topDomains;
     return this;
   }
 
-  public ContentAnalysisSummaryInfo addTopDomainsItem(TopDomainInfo topDomainsItem) {
+  public ContentAnalysisSummaryInfo addTopDomainsItem(TopDomainCountInfo topDomainsItem) {
     if (this.topDomains == null) {
       this.topDomains = new ArrayList<>();
     }
@@ -179,11 +180,11 @@ public class ContentAnalysisSummaryInfo {
    * @return topDomains
    */
   @javax.annotation.Nullable
-  public List<TopDomainInfo> getTopDomains() {
+  public List<TopDomainCountInfo> getTopDomains() {
     return topDomains;
   }
 
-  public void setTopDomains(List<TopDomainInfo> topDomains) {
+  public void setTopDomains(List<TopDomainCountInfo> topDomains) {
     this.topDomains = topDomains;
   }
 
@@ -541,7 +542,7 @@ public class ContentAnalysisSummaryInfo {
 
           // validate the optional field `top_domains` (array)
           for (int i = 0; i < jsonArraytopDomains.size(); i++) {
-            TopDomainInfo.validateJsonElement(jsonArraytopDomains.get(i));
+            TopDomainCountInfo.validateJsonElement(jsonArraytopDomains.get(i));
           };
         }
       }

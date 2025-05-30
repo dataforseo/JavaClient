@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixUserDataResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixUserDataResultInfo {
   public static final String SERIALIZED_NAME_LOGIN = "login";
   @SerializedName(SERIALIZED_NAME_LOGIN)
@@ -73,6 +73,10 @@ public class AppendixUserDataResultInfo {
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
   private AppendixPriceData price;
+
+  public static final String SERIALIZED_NAME_BACKLINKS_SUBSCRIPTION_EXPIRY_DATE = "backlinks_subscription_expiry_date";
+  @SerializedName(SERIALIZED_NAME_BACKLINKS_SUBSCRIPTION_EXPIRY_DATE)
+  private String backlinksSubscriptionExpiryDate;
 
   public AppendixUserDataResultInfo() {
   }
@@ -171,6 +175,25 @@ public class AppendixUserDataResultInfo {
     this.price = price;
   }
 
+
+  public AppendixUserDataResultInfo backlinksSubscriptionExpiryDate(String backlinksSubscriptionExpiryDate) {
+    this.backlinksSubscriptionExpiryDate = backlinksSubscriptionExpiryDate;
+    return this;
+  }
+
+  /**
+   * expiry date of the backlinks api subscription date and time when the current subscription to Backlinks API expires; in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2025-06-15 12:57:46 +00:00 Note: if there is no active subscription to Backlinks API, the value equals null
+   * @return backlinksSubscriptionExpiryDate
+   */
+  @javax.annotation.Nullable
+  public String getBacklinksSubscriptionExpiryDate() {
+    return backlinksSubscriptionExpiryDate;
+  }
+
+  public void setBacklinksSubscriptionExpiryDate(String backlinksSubscriptionExpiryDate) {
+    this.backlinksSubscriptionExpiryDate = backlinksSubscriptionExpiryDate;
+  }
+
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -230,7 +253,8 @@ public class AppendixUserDataResultInfo {
         Objects.equals(this.timezone, appendixUserDataResultInfo.timezone) &&
         Objects.equals(this.rates, appendixUserDataResultInfo.rates) &&
         Objects.equals(this.money, appendixUserDataResultInfo.money) &&
-        Objects.equals(this.price, appendixUserDataResultInfo.price)&&
+        Objects.equals(this.price, appendixUserDataResultInfo.price) &&
+        Objects.equals(this.backlinksSubscriptionExpiryDate, appendixUserDataResultInfo.backlinksSubscriptionExpiryDate)&&
         Objects.equals(this.additionalProperties, appendixUserDataResultInfo.additionalProperties);
   }
 
@@ -240,7 +264,7 @@ public class AppendixUserDataResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(login, timezone, rates, money, price, additionalProperties);
+    return Objects.hash(login, timezone, rates, money, price, backlinksSubscriptionExpiryDate, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -259,6 +283,7 @@ public class AppendixUserDataResultInfo {
     sb.append("    rates: ").append(toIndentedString(rates)).append("\n");
     sb.append("    money: ").append(toIndentedString(money)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
+    sb.append("    backlinksSubscriptionExpiryDate: ").append(toIndentedString(backlinksSubscriptionExpiryDate)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -287,6 +312,7 @@ public class AppendixUserDataResultInfo {
     openapiFields.add("rates");
     openapiFields.add("money");
     openapiFields.add("price");
+    openapiFields.add("backlinks_subscription_expiry_date");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -322,6 +348,9 @@ public class AppendixUserDataResultInfo {
       // validate the optional field `price`
       if (jsonObj.get("price") != null && !jsonObj.get("price").isJsonNull()) {
         AppendixPriceData.validateJsonElement(jsonObj.get("price"));
+      }
+      if ((jsonObj.get("backlinks_subscription_expiry_date") != null && !jsonObj.get("backlinks_subscription_expiry_date").isJsonNull()) && !jsonObj.get("backlinks_subscription_expiry_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `backlinks_subscription_expiry_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("backlinks_subscription_expiry_date").toString()));
       }
   }
 

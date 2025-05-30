@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.PeopleAlsoAskExpandedElement;
+import io.github.dataforseo.client.model.BasePeopleAlsoAskExpandedElementItem;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * PeopleAlsoAskElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PeopleAlsoAskElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -72,7 +72,7 @@ public class PeopleAlsoAskElement {
 
   public static final String SERIALIZED_NAME_EXPANDED_ELEMENT = "expanded_element";
   @SerializedName(SERIALIZED_NAME_EXPANDED_ELEMENT)
-  private List<PeopleAlsoAskExpandedElement> expandedElement;
+  private List<BasePeopleAlsoAskExpandedElementItem> expandedElement;
 
   public PeopleAlsoAskElement() {
   }
@@ -153,12 +153,12 @@ public class PeopleAlsoAskElement {
   }
 
 
-  public PeopleAlsoAskElement expandedElement(List<PeopleAlsoAskExpandedElement> expandedElement) {
+  public PeopleAlsoAskElement expandedElement(List<BasePeopleAlsoAskExpandedElementItem> expandedElement) {
     this.expandedElement = expandedElement;
     return this;
   }
 
-  public PeopleAlsoAskElement addExpandedElementItem(PeopleAlsoAskExpandedElement expandedElementItem) {
+  public PeopleAlsoAskElement addExpandedElementItem(BasePeopleAlsoAskExpandedElementItem expandedElementItem) {
     if (this.expandedElement == null) {
       this.expandedElement = new ArrayList<>();
     }
@@ -171,11 +171,11 @@ public class PeopleAlsoAskElement {
    * @return expandedElement
    */
   @javax.annotation.Nullable
-  public List<PeopleAlsoAskExpandedElement> getExpandedElement() {
+  public List<BasePeopleAlsoAskExpandedElementItem> getExpandedElement() {
     return expandedElement;
   }
 
-  public void setExpandedElement(List<PeopleAlsoAskExpandedElement> expandedElement) {
+  public void setExpandedElement(List<BasePeopleAlsoAskExpandedElementItem> expandedElement) {
     this.expandedElement = expandedElement;
   }
 
@@ -335,7 +335,7 @@ public class PeopleAlsoAskElement {
 
           // validate the optional field `expanded_element` (array)
           for (int i = 0; i < jsonArrayexpandedElement.size(); i++) {
-            PeopleAlsoAskExpandedElement.validateJsonElement(jsonArrayexpandedElement.get(i));
+            BasePeopleAlsoAskExpandedElementItem.validateJsonElement(jsonArrayexpandedElement.get(i));
           };
         }
       }

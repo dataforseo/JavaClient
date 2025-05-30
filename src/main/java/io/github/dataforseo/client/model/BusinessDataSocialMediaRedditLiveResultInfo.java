@@ -19,8 +19,11 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.RedditReviews;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -49,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataSocialMediaRedditLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataSocialMediaRedditLiveResultInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,7 +64,7 @@ public class BusinessDataSocialMediaRedditLiveResultInfo {
 
   public static final String SERIALIZED_NAME_REDDIT_REVIEWS = "reddit_reviews";
   @SerializedName(SERIALIZED_NAME_REDDIT_REVIEWS)
-  private Object redditReviews;
+  private List<RedditReviews> redditReviews;
 
   public BusinessDataSocialMediaRedditLiveResultInfo() {
   }
@@ -104,8 +107,16 @@ public class BusinessDataSocialMediaRedditLiveResultInfo {
   }
 
 
-  public BusinessDataSocialMediaRedditLiveResultInfo redditReviews(Object redditReviews) {
+  public BusinessDataSocialMediaRedditLiveResultInfo redditReviews(List<RedditReviews> redditReviews) {
     this.redditReviews = redditReviews;
+    return this;
+  }
+
+  public BusinessDataSocialMediaRedditLiveResultInfo addRedditReviewsItem(RedditReviews redditReviewsItem) {
+    if (this.redditReviews == null) {
+      this.redditReviews = new ArrayList<>();
+    }
+    this.redditReviews.add(redditReviewsItem);
     return this;
   }
 
@@ -114,11 +125,11 @@ public class BusinessDataSocialMediaRedditLiveResultInfo {
    * @return redditReviews
    */
   @javax.annotation.Nullable
-  public Object getRedditReviews() {
+  public List<RedditReviews> getRedditReviews() {
     return redditReviews;
   }
 
-  public void setRedditReviews(Object redditReviews) {
+  public void setRedditReviews(List<RedditReviews> redditReviews) {
     this.redditReviews = redditReviews;
   }
 
@@ -255,6 +266,20 @@ public class BusinessDataSocialMediaRedditLiveResultInfo {
       }
       if ((jsonObj.get("page_url") != null && !jsonObj.get("page_url").isJsonNull()) && !jsonObj.get("page_url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `page_url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("page_url").toString()));
+      }
+      if (jsonObj.get("reddit_reviews") != null && !jsonObj.get("reddit_reviews").isJsonNull()) {
+        JsonArray jsonArrayredditReviews = jsonObj.getAsJsonArray("reddit_reviews");
+        if (jsonArrayredditReviews != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("reddit_reviews").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `reddit_reviews` to be an array in the JSON string but got `%s`", jsonObj.get("reddit_reviews").toString()));
+          }
+
+          // validate the optional field `reddit_reviews` (array)
+          for (int i = 0; i < jsonArrayredditReviews.size(); i++) {
+            RedditReviews.validateJsonElement(jsonArrayredditReviews.get(i));
+          };
+        }
       }
   }
 

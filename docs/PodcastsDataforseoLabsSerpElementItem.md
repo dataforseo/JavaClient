@@ -7,7 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**items** | [**List&lt;PodcastsElement&gt;**](PodcastsElement.md) | additional items present in the element if there are none, equals null |  [optional] |
+|**seType** | **String** | search engine type |  [optional] |
+|**items** | [**List&lt;PodcastsElement&gt;**](PodcastsElement.md) | elements of search results found in SERP |  [optional] |
 
 
 

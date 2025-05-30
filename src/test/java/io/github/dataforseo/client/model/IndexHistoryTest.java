@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -60,14 +61,6 @@ public class IndexHistoryTest {
     @Test
     public void totalPagesTest() {
         // TODO: test totalPages
-    }
-
-    /**
-     * Test the property 'totalDomains'
-     */
-    @Test
-    public void totalDomainsTest() {
-        // TODO: test totalDomains
     }
 
 }

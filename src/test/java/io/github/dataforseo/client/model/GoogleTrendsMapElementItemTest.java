@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseGoogleTrendsItem;
 import io.github.dataforseo.client.model.TrendsMapDataInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

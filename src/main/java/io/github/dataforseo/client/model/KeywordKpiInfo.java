@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordKpiInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordKpiInfo {
   public static final String SERIALIZED_NAME_AD_POSITION = "ad_position";
   @SerializedName(SERIALIZED_NAME_AD_POSITION)
@@ -57,11 +58,11 @@ public class KeywordKpiInfo {
 
   public static final String SERIALIZED_NAME_CLICKS = "clicks";
   @SerializedName(SERIALIZED_NAME_CLICKS)
-  private Integer clicks;
+  private BigDecimal clicks;
 
   public static final String SERIALIZED_NAME_IMPRESSIONS = "impressions";
   @SerializedName(SERIALIZED_NAME_IMPRESSIONS)
-  private Integer impressions;
+  private BigDecimal impressions;
 
   public static final String SERIALIZED_NAME_AVERAGE_CPC = "average_cpc";
   @SerializedName(SERIALIZED_NAME_AVERAGE_CPC)
@@ -73,7 +74,7 @@ public class KeywordKpiInfo {
 
   public static final String SERIALIZED_NAME_TOTAL_COST = "total_cost";
   @SerializedName(SERIALIZED_NAME_TOTAL_COST)
-  private Long totalCost;
+  private BigDecimal totalCost;
 
   public static final String SERIALIZED_NAME_AVERAGE_BID = "average_bid";
   @SerializedName(SERIALIZED_NAME_AVERAGE_BID)
@@ -101,7 +102,7 @@ public class KeywordKpiInfo {
   }
 
 
-  public KeywordKpiInfo clicks(Integer clicks) {
+  public KeywordKpiInfo clicks(BigDecimal clicks) {
     this.clicks = clicks;
     return this;
   }
@@ -111,16 +112,16 @@ public class KeywordKpiInfo {
    * @return clicks
    */
   @javax.annotation.Nullable
-  public Integer getClicks() {
+  public BigDecimal getClicks() {
     return clicks;
   }
 
-  public void setClicks(Integer clicks) {
+  public void setClicks(BigDecimal clicks) {
     this.clicks = clicks;
   }
 
 
-  public KeywordKpiInfo impressions(Integer impressions) {
+  public KeywordKpiInfo impressions(BigDecimal impressions) {
     this.impressions = impressions;
     return this;
   }
@@ -130,11 +131,11 @@ public class KeywordKpiInfo {
    * @return impressions
    */
   @javax.annotation.Nullable
-  public Integer getImpressions() {
+  public BigDecimal getImpressions() {
     return impressions;
   }
 
-  public void setImpressions(Integer impressions) {
+  public void setImpressions(BigDecimal impressions) {
     this.impressions = impressions;
   }
 
@@ -177,7 +178,7 @@ public class KeywordKpiInfo {
   }
 
 
-  public KeywordKpiInfo totalCost(Long totalCost) {
+  public KeywordKpiInfo totalCost(BigDecimal totalCost) {
     this.totalCost = totalCost;
     return this;
   }
@@ -187,11 +188,11 @@ public class KeywordKpiInfo {
    * @return totalCost
    */
   @javax.annotation.Nullable
-  public Long getTotalCost() {
+  public BigDecimal getTotalCost() {
     return totalCost;
   }
 
-  public void setTotalCost(Long totalCost) {
+  public void setTotalCost(BigDecimal totalCost) {
     this.totalCost = totalCost;
   }
 

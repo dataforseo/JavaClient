@@ -7,8 +7,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**position** | **String** | the alignment of the element in SERP can take the following values: left, right |  [optional] |
-|**xpath** | **String** | the XPath of the element |  [optional] |
 |**title** | **String** | title of the result in SERP |  [optional] |
 |**domain** | **String** | domain name of the reference |  [optional] |
 |**websiteName** | **String** | name of the website in SERP |  [optional] |
@@ -23,7 +21,7 @@
 |**descriptionRows** | **List&lt;String&gt;** | extended description if there is none, equals null |  [optional] |
 |**links** | [**List&lt;AdLinkElement&gt;**](AdLinkElement.md) | sitelinks the links shown below some of Google’s search results if there are none, equals null |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 |**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
 
 

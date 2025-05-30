@@ -21,9 +21,10 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppsInfo;
 import io.github.dataforseo.client.model.BaseAppDataSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.PriceInfo;
-import io.github.dataforseo.client.model.RatingInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGooglePlayInfoOrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_APP_ID = "app_id";
   @SerializedName(SERIALIZED_NAME_APP_ID)
@@ -75,7 +76,7 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
@@ -95,7 +96,7 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
 
   public static final String SERIALIZED_NAME_INSTALLS_COUNT = "installs_count";
   @SerializedName(SERIALIZED_NAME_INSTALLS_COUNT)
-  private Long installsCount;
+  private BigDecimal installsCount;
 
   public static final String SERIALIZED_NAME_DEVELOPER = "developer";
   @SerializedName(SERIALIZED_NAME_DEVELOPER)
@@ -248,7 +249,7 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
   }
 
 
-  public AppDataGooglePlayInfoOrganicSerpElementItem reviewsCount(Long reviewsCount) {
+  public AppDataGooglePlayInfoOrganicSerpElementItem reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -258,11 +259,11 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
@@ -343,7 +344,7 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
   }
 
 
-  public AppDataGooglePlayInfoOrganicSerpElementItem installsCount(Long installsCount) {
+  public AppDataGooglePlayInfoOrganicSerpElementItem installsCount(BigDecimal installsCount) {
     this.installsCount = installsCount;
     return this;
   }
@@ -353,11 +354,11 @@ public class AppDataGooglePlayInfoOrganicSerpElementItem extends BaseAppDataSerp
    * @return installsCount
    */
   @javax.annotation.Nullable
-  public Long getInstallsCount() {
+  public BigDecimal getInstallsCount() {
     return installsCount;
   }
 
-  public void setInstallsCount(Long installsCount) {
+  public void setInstallsCount(BigDecimal installsCount) {
     this.installsCount = installsCount;
   }
 

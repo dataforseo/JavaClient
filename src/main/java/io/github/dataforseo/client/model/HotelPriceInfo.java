@@ -20,7 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.HotelPriceItemInfo;
+import io.github.dataforseo.client.model.PricesByDates;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,15 +54,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * HotelPriceInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HotelPriceInfo {
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private Integer price;
+  private BigDecimal price;
 
   public static final String SERIALIZED_NAME_PRICE_WITHOUT_DISCOUNT = "price_without_discount";
   @SerializedName(SERIALIZED_NAME_PRICE_WITHOUT_DISCOUNT)
-  private Long priceWithoutDiscount;
+  private BigDecimal priceWithoutDiscount;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -80,16 +82,20 @@ public class HotelPriceInfo {
 
   public static final String SERIALIZED_NAME_VISITORS = "visitors";
   @SerializedName(SERIALIZED_NAME_VISITORS)
-  private Integer visitors;
+  private BigDecimal visitors;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
   private List<HotelPriceItemInfo> items;
 
+  public static final String SERIALIZED_NAME_PRICES_BY_DATES = "prices_by_dates";
+  @SerializedName(SERIALIZED_NAME_PRICES_BY_DATES)
+  private List<PricesByDates> pricesByDates;
+
   public HotelPriceInfo() {
   }
 
-  public HotelPriceInfo price(Integer price) {
+  public HotelPriceInfo price(BigDecimal price) {
     this.price = price;
     return this;
   }
@@ -99,16 +105,16 @@ public class HotelPriceInfo {
    * @return price
    */
   @javax.annotation.Nullable
-  public Integer getPrice() {
+  public BigDecimal getPrice() {
     return price;
   }
 
-  public void setPrice(Integer price) {
+  public void setPrice(BigDecimal price) {
     this.price = price;
   }
 
 
-  public HotelPriceInfo priceWithoutDiscount(Long priceWithoutDiscount) {
+  public HotelPriceInfo priceWithoutDiscount(BigDecimal priceWithoutDiscount) {
     this.priceWithoutDiscount = priceWithoutDiscount;
     return this;
   }
@@ -118,11 +124,11 @@ public class HotelPriceInfo {
    * @return priceWithoutDiscount
    */
   @javax.annotation.Nullable
-  public Long getPriceWithoutDiscount() {
+  public BigDecimal getPriceWithoutDiscount() {
     return priceWithoutDiscount;
   }
 
-  public void setPriceWithoutDiscount(Long priceWithoutDiscount) {
+  public void setPriceWithoutDiscount(BigDecimal priceWithoutDiscount) {
     this.priceWithoutDiscount = priceWithoutDiscount;
   }
 
@@ -203,7 +209,7 @@ public class HotelPriceInfo {
   }
 
 
-  public HotelPriceInfo visitors(Integer visitors) {
+  public HotelPriceInfo visitors(BigDecimal visitors) {
     this.visitors = visitors;
     return this;
   }
@@ -213,11 +219,11 @@ public class HotelPriceInfo {
    * @return visitors
    */
   @javax.annotation.Nullable
-  public Integer getVisitors() {
+  public BigDecimal getVisitors() {
     return visitors;
   }
 
-  public void setVisitors(Integer visitors) {
+  public void setVisitors(BigDecimal visitors) {
     this.visitors = visitors;
   }
 
@@ -246,6 +252,33 @@ public class HotelPriceInfo {
 
   public void setItems(List<HotelPriceItemInfo> items) {
     this.items = items;
+  }
+
+
+  public HotelPriceInfo pricesByDates(List<PricesByDates> pricesByDates) {
+    this.pricesByDates = pricesByDates;
+    return this;
+  }
+
+  public HotelPriceInfo addPricesByDatesItem(PricesByDates pricesByDatesItem) {
+    if (this.pricesByDates == null) {
+      this.pricesByDates = new ArrayList<>();
+    }
+    this.pricesByDates.add(pricesByDatesItem);
+    return this;
+  }
+
+  /**
+   * Get pricesByDates
+   * @return pricesByDates
+   */
+  @javax.annotation.Nullable
+  public List<PricesByDates> getPricesByDates() {
+    return pricesByDates;
+  }
+
+  public void setPricesByDates(List<PricesByDates> pricesByDates) {
+    this.pricesByDates = pricesByDates;
   }
 
   /**
@@ -310,7 +343,8 @@ public class HotelPriceInfo {
         Objects.equals(this.checkIn, hotelPriceInfo.checkIn) &&
         Objects.equals(this.checkOut, hotelPriceInfo.checkOut) &&
         Objects.equals(this.visitors, hotelPriceInfo.visitors) &&
-        Objects.equals(this.items, hotelPriceInfo.items)&&
+        Objects.equals(this.items, hotelPriceInfo.items) &&
+        Objects.equals(this.pricesByDates, hotelPriceInfo.pricesByDates)&&
         Objects.equals(this.additionalProperties, hotelPriceInfo.additionalProperties);
   }
 
@@ -320,7 +354,7 @@ public class HotelPriceInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(price, priceWithoutDiscount, currency, discountText, checkIn, checkOut, visitors, items, additionalProperties);
+    return Objects.hash(price, priceWithoutDiscount, currency, discountText, checkIn, checkOut, visitors, items, pricesByDates, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -342,6 +376,7 @@ public class HotelPriceInfo {
     sb.append("    checkOut: ").append(toIndentedString(checkOut)).append("\n");
     sb.append("    visitors: ").append(toIndentedString(visitors)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
+    sb.append("    pricesByDates: ").append(toIndentedString(pricesByDates)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -373,6 +408,7 @@ public class HotelPriceInfo {
     openapiFields.add("check_out");
     openapiFields.add("visitors");
     openapiFields.add("items");
+    openapiFields.add("prices_by_dates");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -414,6 +450,20 @@ public class HotelPriceInfo {
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
             HotelPriceItemInfo.validateJsonElement(jsonArrayitems.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("prices_by_dates") != null && !jsonObj.get("prices_by_dates").isJsonNull()) {
+        JsonArray jsonArraypricesByDates = jsonObj.getAsJsonArray("prices_by_dates");
+        if (jsonArraypricesByDates != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("prices_by_dates").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `prices_by_dates` to be an array in the JSON string but got `%s`", jsonObj.get("prices_by_dates").toString()));
+          }
+
+          // validate the optional field `prices_by_dates` (array)
+          for (int i = 0; i < jsonArraypricesByDates.size(); i++) {
+            PricesByDates.validateJsonElement(jsonArraypricesByDates.get(i));
           };
         }
       }

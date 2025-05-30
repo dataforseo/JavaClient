@@ -20,6 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseOnPageLinkItemInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -146,6 +147,14 @@ public class AnchorLinkElementItemTest {
     }
 
     /**
+     * Test the property 'pageToStatusCode'
+     */
+    @Test
+    public void pageToStatusCodeTest() {
+        // TODO: test pageToStatusCode
+    }
+
+    /**
      * Test the property 'linkAttribute'
      */
     @Test
@@ -159,14 +168,6 @@ public class AnchorLinkElementItemTest {
     @Test
     public void textTest() {
         // TODO: test text
-    }
-
-    /**
-     * Test the property 'pageToStatusCode'
-     */
-    @Test
-    public void pageToStatusCodeTest() {
-        // TODO: test pageToStatusCode
     }
 
 }

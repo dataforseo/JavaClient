@@ -21,12 +21,10 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppUserProfileInfo;
 import io.github.dataforseo.client.model.BaseAppDataSerpElementItem;
-import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.ResponseDataInfo;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.math.BigDecimal;
 import java.util.Arrays;
-import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -55,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppDataGooglePlayReviewsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSerpElementItem {
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
@@ -71,7 +69,7 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
 
   public static final String SERIALIZED_NAME_HELPFUL_COUNT = "helpful_count";
   @SerializedName(SERIALIZED_NAME_HELPFUL_COUNT)
-  private Long helpfulCount;
+  private BigDecimal helpfulCount;
 
   public static final String SERIALIZED_NAME_REVIEW_TEXT = "review_text";
   @SerializedName(SERIALIZED_NAME_REVIEW_TEXT)
@@ -83,7 +81,7 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
 
   public static final String SERIALIZED_NAME_RESPONSES = "responses";
   @SerializedName(SERIALIZED_NAME_RESPONSES)
-  private List<ResponseDataInfo> responses;
+  private Object responses;
 
   public AppDataGooglePlayReviewsSearchSerpElementItem() {
   }
@@ -145,7 +143,7 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
   }
 
 
-  public AppDataGooglePlayReviewsSearchSerpElementItem helpfulCount(Long helpfulCount) {
+  public AppDataGooglePlayReviewsSearchSerpElementItem helpfulCount(BigDecimal helpfulCount) {
     this.helpfulCount = helpfulCount;
     return this;
   }
@@ -155,11 +153,11 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
    * @return helpfulCount
    */
   @javax.annotation.Nullable
-  public Long getHelpfulCount() {
+  public BigDecimal getHelpfulCount() {
     return helpfulCount;
   }
 
-  public void setHelpfulCount(Long helpfulCount) {
+  public void setHelpfulCount(BigDecimal helpfulCount) {
     this.helpfulCount = helpfulCount;
   }
 
@@ -202,16 +200,8 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
   }
 
 
-  public AppDataGooglePlayReviewsSearchSerpElementItem responses(List<ResponseDataInfo> responses) {
+  public AppDataGooglePlayReviewsSearchSerpElementItem responses(Object responses) {
     this.responses = responses;
-    return this;
-  }
-
-  public AppDataGooglePlayReviewsSearchSerpElementItem addResponsesItem(ResponseDataInfo responsesItem) {
-    if (this.responses == null) {
-      this.responses = new ArrayList<>();
-    }
-    this.responses.add(responsesItem);
     return this;
   }
 
@@ -220,11 +210,11 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
    * @return responses
    */
   @javax.annotation.Nullable
-  public List<ResponseDataInfo> getResponses() {
+  public Object getResponses() {
     return responses;
   }
 
-  public void setResponses(List<ResponseDataInfo> responses) {
+  public void setResponses(Object responses) {
     this.responses = responses;
   }
 
@@ -391,20 +381,6 @@ public class AppDataGooglePlayReviewsSearchSerpElementItem extends BaseAppDataSe
       // validate the optional field `user_profile`
       if (jsonObj.get("user_profile") != null && !jsonObj.get("user_profile").isJsonNull()) {
         AppUserProfileInfo.validateJsonElement(jsonObj.get("user_profile"));
-      }
-      if (jsonObj.get("responses") != null && !jsonObj.get("responses").isJsonNull()) {
-        JsonArray jsonArrayresponses = jsonObj.getAsJsonArray("responses");
-        if (jsonArrayresponses != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("responses").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `responses` to be an array in the JSON string but got `%s`", jsonObj.get("responses").toString()));
-          }
-
-          // validate the optional field `responses` (array)
-          for (int i = 0; i < jsonArrayresponses.size(); i++) {
-            ResponseDataInfo.validateJsonElement(jsonArrayresponses.get(i));
-          };
-        }
       }
   }
 

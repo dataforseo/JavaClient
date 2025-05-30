@@ -20,11 +20,12 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.ImagesElement;
-import io.github.dataforseo.client.model.RatingInfo;
 import io.github.dataforseo.client.model.UserProfileInfo;
 import io.github.dataforseo.client.model.VideoElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -56,12 +57,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonReviewItemSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
   public static final String SERIALIZED_NAME_VERIFIED = "verified";
   @SerializedName(SERIALIZED_NAME_VERIFIED)
   private Boolean verified;
@@ -72,7 +69,7 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
 
   public static final String SERIALIZED_NAME_HELPFUL_VOTES = "helpful_votes";
   @SerializedName(SERIALIZED_NAME_HELPFUL_VOTES)
-  private Integer helpfulVotes;
+  private String helpfulVotes;
 
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
@@ -104,29 +101,10 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public AmazonAmazonReviewItemSerpElementItem() {
   }
-
-  public AmazonAmazonReviewItemSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the review in SERP can take the following values: right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
 
   public AmazonAmazonReviewItemSerpElementItem verified(Boolean verified) {
     this.verified = verified;
@@ -166,7 +144,7 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
   }
 
 
-  public AmazonAmazonReviewItemSerpElementItem helpfulVotes(Integer helpfulVotes) {
+  public AmazonAmazonReviewItemSerpElementItem helpfulVotes(String helpfulVotes) {
     this.helpfulVotes = helpfulVotes;
     return this;
   }
@@ -176,11 +154,11 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
    * @return helpfulVotes
    */
   @javax.annotation.Nullable
-  public Integer getHelpfulVotes() {
+  public String getHelpfulVotes() {
     return helpfulVotes;
   }
 
-  public void setHelpfulVotes(Integer helpfulVotes) {
+  public void setHelpfulVotes(String helpfulVotes) {
     this.helpfulVotes = helpfulVotes;
   }
 
@@ -334,7 +312,7 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
   }
 
 
-  public AmazonAmazonReviewItemSerpElementItem rating(RatingInfo rating) {
+  public AmazonAmazonReviewItemSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -344,11 +322,11 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -407,8 +385,7 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
       return false;
     }
     AmazonAmazonReviewItemSerpElementItem amazonAmazonReviewItemSerpElementItem = (AmazonAmazonReviewItemSerpElementItem) o;
-    return Objects.equals(this.position, amazonAmazonReviewItemSerpElementItem.position) &&
-        Objects.equals(this.verified, amazonAmazonReviewItemSerpElementItem.verified) &&
+    return Objects.equals(this.verified, amazonAmazonReviewItemSerpElementItem.verified) &&
         Objects.equals(this.subtitle, amazonAmazonReviewItemSerpElementItem.subtitle) &&
         Objects.equals(this.helpfulVotes, amazonAmazonReviewItemSerpElementItem.helpfulVotes) &&
         Objects.equals(this.images, amazonAmazonReviewItemSerpElementItem.images) &&
@@ -429,7 +406,7 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, verified, subtitle, helpfulVotes, images, videos, userProfile, title, url, reviewText, publicationDate, rating, super.hashCode(), additionalProperties);
+    return Objects.hash(verified, subtitle, helpfulVotes, images, videos, userProfile, title, url, reviewText, publicationDate, rating, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -444,7 +421,6 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
     StringBuilder sb = new StringBuilder();
     sb.append("class AmazonAmazonReviewItemSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    verified: ").append(toIndentedString(verified)).append("\n");
     sb.append("    subtitle: ").append(toIndentedString(subtitle)).append("\n");
     sb.append("    helpfulVotes: ").append(toIndentedString(helpfulVotes)).append("\n");
@@ -482,8 +458,8 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
-    openapiFields.add("xpath");
     openapiFields.add("position");
+    openapiFields.add("xpath");
     openapiFields.add("verified");
     openapiFields.add("subtitle");
     openapiFields.add("helpful_votes");
@@ -513,11 +489,11 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
       if ((jsonObj.get("subtitle") != null && !jsonObj.get("subtitle").isJsonNull()) && !jsonObj.get("subtitle").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `subtitle` to be a primitive type in the JSON string but got `%s`", jsonObj.get("subtitle").toString()));
+      }
+      if ((jsonObj.get("helpful_votes") != null && !jsonObj.get("helpful_votes").isJsonNull()) && !jsonObj.get("helpful_votes").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `helpful_votes` to be a primitive type in the JSON string but got `%s`", jsonObj.get("helpful_votes").toString()));
       }
       if (jsonObj.get("images") != null && !jsonObj.get("images").isJsonNull()) {
         JsonArray jsonArrayimages = jsonObj.getAsJsonArray("images");
@@ -565,7 +541,7 @@ public class AmazonAmazonReviewItemSerpElementItem extends BaseAmazonSerpElement
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
   }
 

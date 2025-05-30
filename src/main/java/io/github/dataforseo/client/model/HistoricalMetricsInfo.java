@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,15 +50,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * HistoricalMetricsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HistoricalMetricsInfo {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
-  private Integer year;
+  private BigDecimal year;
 
   public static final String SERIALIZED_NAME_MONTH = "month";
   @SerializedName(SERIALIZED_NAME_MONTH)
-  private Integer month;
+  private BigDecimal month;
 
   public static final String SERIALIZED_NAME_ETV = "etv";
   @SerializedName(SERIALIZED_NAME_ETV)
@@ -65,16 +66,12 @@ public class HistoricalMetricsInfo {
 
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
-
-  public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
-  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
-  private Integer clickstreamEtv;
+  private BigDecimal count;
 
   public HistoricalMetricsInfo() {
   }
 
-  public HistoricalMetricsInfo year(Integer year) {
+  public HistoricalMetricsInfo year(BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -84,16 +81,16 @@ public class HistoricalMetricsInfo {
    * @return year
    */
   @javax.annotation.Nullable
-  public Integer getYear() {
+  public BigDecimal getYear() {
     return year;
   }
 
-  public void setYear(Integer year) {
+  public void setYear(BigDecimal year) {
     this.year = year;
   }
 
 
-  public HistoricalMetricsInfo month(Integer month) {
+  public HistoricalMetricsInfo month(BigDecimal month) {
     this.month = month;
     return this;
   }
@@ -103,11 +100,11 @@ public class HistoricalMetricsInfo {
    * @return month
    */
   @javax.annotation.Nullable
-  public Integer getMonth() {
+  public BigDecimal getMonth() {
     return month;
   }
 
-  public void setMonth(Integer month) {
+  public void setMonth(BigDecimal month) {
     this.month = month;
   }
 
@@ -131,7 +128,7 @@ public class HistoricalMetricsInfo {
   }
 
 
-  public HistoricalMetricsInfo count(Long count) {
+  public HistoricalMetricsInfo count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -141,31 +138,12 @@ public class HistoricalMetricsInfo {
    * @return count
    */
   @javax.annotation.Nullable
-  public Long getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
-  }
-
-
-  public HistoricalMetricsInfo clickstreamEtv(Integer clickstreamEtv) {
-    this.clickstreamEtv = clickstreamEtv;
-    return this;
-  }
-
-  /**
-   * estimated traffic volume based on clickstream data calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for to retrieve results for this field, the parameter include_clickstream_data must be set to true learn more about how the metric is calculated in this help center article https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated
-   * @return clickstreamEtv
-   */
-  @javax.annotation.Nullable
-  public Integer getClickstreamEtv() {
-    return clickstreamEtv;
-  }
-
-  public void setClickstreamEtv(Integer clickstreamEtv) {
-    this.clickstreamEtv = clickstreamEtv;
   }
 
   /**
@@ -226,8 +204,7 @@ public class HistoricalMetricsInfo {
     return Objects.equals(this.year, historicalMetricsInfo.year) &&
         Objects.equals(this.month, historicalMetricsInfo.month) &&
         Objects.equals(this.etv, historicalMetricsInfo.etv) &&
-        Objects.equals(this.count, historicalMetricsInfo.count) &&
-        Objects.equals(this.clickstreamEtv, historicalMetricsInfo.clickstreamEtv)&&
+        Objects.equals(this.count, historicalMetricsInfo.count)&&
         Objects.equals(this.additionalProperties, historicalMetricsInfo.additionalProperties);
   }
 
@@ -237,7 +214,7 @@ public class HistoricalMetricsInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(year, month, etv, count, clickstreamEtv, additionalProperties);
+    return Objects.hash(year, month, etv, count, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -255,7 +232,6 @@ public class HistoricalMetricsInfo {
     sb.append("    month: ").append(toIndentedString(month)).append("\n");
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
     sb.append("    count: ").append(toIndentedString(count)).append("\n");
-    sb.append("    clickstreamEtv: ").append(toIndentedString(clickstreamEtv)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -283,7 +259,6 @@ public class HistoricalMetricsInfo {
     openapiFields.add("month");
     openapiFields.add("etv");
     openapiFields.add("count");
-    openapiFields.add("clickstream_etv");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

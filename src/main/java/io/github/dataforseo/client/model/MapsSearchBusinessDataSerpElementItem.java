@@ -21,9 +21,10 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AddressInfo;
 import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
-import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkHours;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
+import io.github.dataforseo.client.model.BusinessWorkHoursInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -57,7 +58,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MapsSearchBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -73,7 +74,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_RATING_DISTRIBUTION = "rating_distribution";
   @SerializedName(SERIALIZED_NAME_RATING_DISTRIBUTION)
@@ -105,7 +106,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
 
   public static final String SERIALIZED_NAME_TOTAL_PHOTOS = "total_photos";
   @SerializedName(SERIALIZED_NAME_TOTAL_PHOTOS)
-  private Long totalPhotos;
+  private String totalPhotos;
 
   public static final String SERIALIZED_NAME_CATEGORY = "category";
   @SerializedName(SERIALIZED_NAME_CATEGORY)
@@ -121,7 +122,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
 
   public static final String SERIALIZED_NAME_HOTEL_RATING = "hotel_rating";
   @SerializedName(SERIALIZED_NAME_HOTEL_RATING)
-  private Integer hotelRating;
+  private String hotelRating;
 
   public static final String SERIALIZED_NAME_CATEGORY_IDS = "category_ids";
   @SerializedName(SERIALIZED_NAME_CATEGORY_IDS)
@@ -129,7 +130,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
 
   public static final String SERIALIZED_NAME_WORK_HOURS = "work_hours";
   @SerializedName(SERIALIZED_NAME_WORK_HOURS)
-  private WorkHours workHours;
+  private BusinessWorkHoursInfo workHours;
 
   public static final String SERIALIZED_NAME_FEATURE_ID = "feature_id";
   @SerializedName(SERIALIZED_NAME_FEATURE_ID)
@@ -219,7 +220,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
   }
 
 
-  public MapsSearchBusinessDataSerpElementItem rating(RatingInfo rating) {
+  public MapsSearchBusinessDataSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -229,11 +230,11 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -379,7 +380,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
   }
 
 
-  public MapsSearchBusinessDataSerpElementItem totalPhotos(Long totalPhotos) {
+  public MapsSearchBusinessDataSerpElementItem totalPhotos(String totalPhotos) {
     this.totalPhotos = totalPhotos;
     return this;
   }
@@ -389,11 +390,11 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
    * @return totalPhotos
    */
   @javax.annotation.Nullable
-  public Long getTotalPhotos() {
+  public String getTotalPhotos() {
     return totalPhotos;
   }
 
-  public void setTotalPhotos(Long totalPhotos) {
+  public void setTotalPhotos(String totalPhotos) {
     this.totalPhotos = totalPhotos;
   }
 
@@ -463,7 +464,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
   }
 
 
-  public MapsSearchBusinessDataSerpElementItem hotelRating(Integer hotelRating) {
+  public MapsSearchBusinessDataSerpElementItem hotelRating(String hotelRating) {
     this.hotelRating = hotelRating;
     return this;
   }
@@ -473,11 +474,11 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
    * @return hotelRating
    */
   @javax.annotation.Nullable
-  public Integer getHotelRating() {
+  public String getHotelRating() {
     return hotelRating;
   }
 
-  public void setHotelRating(Integer hotelRating) {
+  public void setHotelRating(String hotelRating) {
     this.hotelRating = hotelRating;
   }
 
@@ -509,7 +510,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
   }
 
 
-  public MapsSearchBusinessDataSerpElementItem workHours(WorkHours workHours) {
+  public MapsSearchBusinessDataSerpElementItem workHours(BusinessWorkHoursInfo workHours) {
     this.workHours = workHours;
     return this;
   }
@@ -519,11 +520,11 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
    * @return workHours
    */
   @javax.annotation.Nullable
-  public WorkHours getWorkHours() {
+  public BusinessWorkHoursInfo getWorkHours() {
     return workHours;
   }
 
-  public void setWorkHours(WorkHours workHours) {
+  public void setWorkHours(BusinessWorkHoursInfo workHours) {
     this.workHours = workHours;
   }
 
@@ -878,7 +879,7 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if ((jsonObj.get("snippet") != null && !jsonObj.get("snippet").isJsonNull()) && !jsonObj.get("snippet").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `snippet` to be a primitive type in the JSON string but got `%s`", jsonObj.get("snippet").toString()));
@@ -899,6 +900,9 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
       if ((jsonObj.get("main_image") != null && !jsonObj.get("main_image").isJsonNull()) && !jsonObj.get("main_image").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `main_image` to be a primitive type in the JSON string but got `%s`", jsonObj.get("main_image").toString()));
       }
+      if ((jsonObj.get("total_photos") != null && !jsonObj.get("total_photos").isJsonNull()) && !jsonObj.get("total_photos").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `total_photos` to be a primitive type in the JSON string but got `%s`", jsonObj.get("total_photos").toString()));
+      }
       if ((jsonObj.get("category") != null && !jsonObj.get("category").isJsonNull()) && !jsonObj.get("category").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `category` to be a primitive type in the JSON string but got `%s`", jsonObj.get("category").toString()));
       }
@@ -909,13 +913,16 @@ public class MapsSearchBusinessDataSerpElementItem extends BaseBusinessDataSerpE
       if ((jsonObj.get("price_level") != null && !jsonObj.get("price_level").isJsonNull()) && !jsonObj.get("price_level").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `price_level` to be a primitive type in the JSON string but got `%s`", jsonObj.get("price_level").toString()));
       }
+      if ((jsonObj.get("hotel_rating") != null && !jsonObj.get("hotel_rating").isJsonNull()) && !jsonObj.get("hotel_rating").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `hotel_rating` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hotel_rating").toString()));
+      }
       // ensure the optional json data is an array if present
       if (jsonObj.get("category_ids") != null && !jsonObj.get("category_ids").isJsonNull() && !jsonObj.get("category_ids").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `category_ids` to be an array in the JSON string but got `%s`", jsonObj.get("category_ids").toString()));
       }
       // validate the optional field `work_hours`
       if (jsonObj.get("work_hours") != null && !jsonObj.get("work_hours").isJsonNull()) {
-        WorkHours.validateJsonElement(jsonObj.get("work_hours"));
+        BusinessWorkHoursInfo.validateJsonElement(jsonObj.get("work_hours"));
       }
       if ((jsonObj.get("feature_id") != null && !jsonObj.get("feature_id").isJsonNull()) && !jsonObj.get("feature_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `feature_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("feature_id").toString()));

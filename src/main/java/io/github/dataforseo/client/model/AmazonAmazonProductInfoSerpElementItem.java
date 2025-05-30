@@ -26,6 +26,7 @@ import io.github.dataforseo.client.model.BaseProductInformationItem;
 import io.github.dataforseo.client.model.ProductCategoryInfo;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,12 +58,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonAmazonProductInfoSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -157,25 +154,6 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
 
   public AmazonAmazonProductInfoSerpElementItem() {
   }
-
-  public AmazonAmazonProductInfoSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in Amazon SERP possible values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
 
   public AmazonAmazonProductInfoSerpElementItem title(String title) {
     this.title = title;
@@ -732,8 +710,7 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
       return false;
     }
     AmazonAmazonProductInfoSerpElementItem amazonAmazonProductInfoSerpElementItem = (AmazonAmazonProductInfoSerpElementItem) o;
-    return Objects.equals(this.position, amazonAmazonProductInfoSerpElementItem.position) &&
-        Objects.equals(this.title, amazonAmazonProductInfoSerpElementItem.title) &&
+    return Objects.equals(this.title, amazonAmazonProductInfoSerpElementItem.title) &&
         Objects.equals(this.details, amazonAmazonProductInfoSerpElementItem.details) &&
         Objects.equals(this.imageUrl, amazonAmazonProductInfoSerpElementItem.imageUrl) &&
         Objects.equals(this.author, amazonAmazonProductInfoSerpElementItem.author) &&
@@ -766,7 +743,7 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, currency, isAmazonChoice, rating, isNewerModelAvailable, applicableVouchers, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews, super.hashCode(), additionalProperties);
+    return Objects.hash(title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, currency, isAmazonChoice, rating, isNewerModelAvailable, applicableVouchers, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -781,7 +758,6 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
     StringBuilder sb = new StringBuilder();
     sb.append("class AmazonAmazonProductInfoSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    details: ").append(toIndentedString(details)).append("\n");
     sb.append("    imageUrl: ").append(toIndentedString(imageUrl)).append("\n");
@@ -831,8 +807,8 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
-    openapiFields.add("xpath");
     openapiFields.add("position");
+    openapiFields.add("xpath");
     openapiFields.add("title");
     openapiFields.add("details");
     openapiFields.add("image_url");
@@ -874,9 +850,6 @@ public class AmazonAmazonProductInfoSerpElementItem extends BaseAmazonSerpElemen
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

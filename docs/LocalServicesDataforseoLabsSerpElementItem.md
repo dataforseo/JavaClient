@@ -7,10 +7,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+|**seType** | **String** | search engine type |  [optional] |
 |**title** | **String** | title of the result in SERP |  [optional] |
-|**url** | **String** | relevant URL |  [optional] |
-|**domain** | **String** | domain where a link points |  [optional] |
-|**items** | [**List&lt;LocalServicesElement&gt;**](LocalServicesElement.md) | additional items present in the element if there are none, equals null |  [optional] |
+|**url** | **String** | sitelink URL |  [optional] |
+|**domain** | **String** | domain in SERP |  [optional] |
+|**items** | [**List&lt;LocalServicesElement&gt;**](LocalServicesElement.md) | elements of search results found in SERP |  [optional] |
 
 
 

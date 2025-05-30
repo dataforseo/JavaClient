@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * CacheControl
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class CacheControl {
   public static final String SERIALIZED_NAME_CACHABLE = "cachable";
   @SerializedName(SERIALIZED_NAME_CACHABLE)
@@ -57,7 +58,7 @@ public class CacheControl {
 
   public static final String SERIALIZED_NAME_TTL = "ttl";
   @SerializedName(SERIALIZED_NAME_TTL)
-  private Integer ttl;
+  private BigDecimal ttl;
 
   public CacheControl() {
   }
@@ -81,7 +82,7 @@ public class CacheControl {
   }
 
 
-  public CacheControl ttl(Integer ttl) {
+  public CacheControl ttl(BigDecimal ttl) {
     this.ttl = ttl;
     return this;
   }
@@ -91,11 +92,11 @@ public class CacheControl {
    * @return ttl
    */
   @javax.annotation.Nullable
-  public Integer getTtl() {
+  public BigDecimal getTtl() {
     return ttl;
   }
 
-  public void setTtl(Integer ttl) {
+  public void setTtl(BigDecimal ttl) {
     this.ttl = ttl;
   }
 

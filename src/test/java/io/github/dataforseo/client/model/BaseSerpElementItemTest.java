@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -60,6 +61,22 @@ public class BaseSerpElementItemTest {
     @Test
     public void rankAbsoluteTest() {
         // TODO: test rankAbsolute
+    }
+
+    /**
+     * Test the property 'position'
+     */
+    @Test
+    public void positionTest() {
+        // TODO: test position
+    }
+
+    /**
+     * Test the property 'xpath'
+     */
+    @Test
+    public void xpathTest() {
+        // TODO: test xpath
     }
 
 }

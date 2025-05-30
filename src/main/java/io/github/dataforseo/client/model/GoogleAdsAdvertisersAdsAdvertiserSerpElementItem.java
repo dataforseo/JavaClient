@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseGoogleAdsAdvertisersSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleAdsAdvertisersAdsAdvertiserSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleAdsAdvertisersAdsAdvertiserSerpElementItem extends BaseGoogleAdsAdvertisersSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -70,7 +71,7 @@ public class GoogleAdsAdvertisersAdsAdvertiserSerpElementItem extends BaseGoogle
 
   public static final String SERIALIZED_NAME_APPROX_ADS_COUNT = "approx_ads_count";
   @SerializedName(SERIALIZED_NAME_APPROX_ADS_COUNT)
-  private Long approxAdsCount;
+  private BigDecimal approxAdsCount;
 
   public GoogleAdsAdvertisersAdsAdvertiserSerpElementItem() {
   }
@@ -151,7 +152,7 @@ public class GoogleAdsAdvertisersAdsAdvertiserSerpElementItem extends BaseGoogle
   }
 
 
-  public GoogleAdsAdvertisersAdsAdvertiserSerpElementItem approxAdsCount(Long approxAdsCount) {
+  public GoogleAdsAdvertisersAdsAdvertiserSerpElementItem approxAdsCount(BigDecimal approxAdsCount) {
     this.approxAdsCount = approxAdsCount;
     return this;
   }
@@ -161,11 +162,11 @@ public class GoogleAdsAdvertisersAdsAdvertiserSerpElementItem extends BaseGoogle
    * @return approxAdsCount
    */
   @javax.annotation.Nullable
-  public Long getApproxAdsCount() {
+  public BigDecimal getApproxAdsCount() {
     return approxAdsCount;
   }
 
-  public void setApproxAdsCount(Long approxAdsCount) {
+  public void setApproxAdsCount(BigDecimal approxAdsCount) {
     this.approxAdsCount = approxAdsCount;
   }
 

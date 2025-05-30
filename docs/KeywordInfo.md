@@ -12,10 +12,10 @@
 |**competition** | **Float** | competition represents the relative amount of competition associated with the given keyword. This value is based on Google Ads data and can be between 0 and 1 (inclusive) |  [optional] |
 |**competitionLevel** | **String** | competition level represents the relative level of competition associated with the given keyword in paid SERP only; possible values: LOW, MEDIUM, HIGH if competition level is unknown, the value is null; learn more about the metric in this help center article |  [optional] |
 |**cpc** | **Float** | cost-per-click represents the average cost per click (USD) historically paid for the keyword |  [optional] |
-|**searchVolume** | **Long** | average monthly search volume rate represents the (approximate) number of searches for the given keyword idea on google.com |  [optional] |
+|**searchVolume** | **BigDecimal** | average monthly search volume rate represents the (approximate) number of searches for the given keyword idea on google.com |  [optional] |
 |**lowTopOfPageBid** | **Float** | minimum bid for the ad to be displayed at the top of the first page indicates the value greater than about 20% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers) the value may differ depending on the location specified in a POST request |  [optional] |
 |**highTopOfPageBid** | **Float** | maximum bid for the ad to be displayed at the top of the first page indicates the value greater than about 80% of the lowest bids for which ads were displayed (based on Google Ads statistics for advertisers) the value may differ depending on the location specified in a POST request |  [optional] |
-|**categories** | **List&lt;Integer&gt;** | product and service categories you can download the full list of possible categories |  [optional] |
+|**categories** | **List&lt;BigDecimal&gt;** | product and service categories you can download the full list of possible categories |  [optional] |
 |**monthlySearches** | [**List&lt;MonthlySearches&gt;**](MonthlySearches.md) | monthly searches represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations |  [optional] |
 |**searchVolumeTrend** | [**SearchVolumeTrend**](SearchVolumeTrend.md) |  |  [optional] |
 

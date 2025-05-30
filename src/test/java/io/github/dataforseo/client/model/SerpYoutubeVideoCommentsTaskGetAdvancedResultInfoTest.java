@@ -19,9 +19,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseYoutubeSerpElementItem;
-import io.github.dataforseo.client.model.RefinementChipsInfo;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -97,14 +97,6 @@ public class SerpYoutubeVideoCommentsTaskGetAdvancedResultInfoTest {
     @Test
     public void spellTest() {
         // TODO: test spell
-    }
-
-    /**
-     * Test the property 'refinementChips'
-     */
-    @Test
-    public void refinementChipsTest() {
-        // TODO: test refinementChips
     }
 
     /**

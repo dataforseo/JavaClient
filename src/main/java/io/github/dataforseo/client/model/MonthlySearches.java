@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,24 +50,24 @@ import io.github.dataforseo.client.JSON;
 /**
  * MonthlySearches
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MonthlySearches {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
-  private Integer year;
+  private BigDecimal year;
 
   public static final String SERIALIZED_NAME_MONTH = "month";
   @SerializedName(SERIALIZED_NAME_MONTH)
-  private Integer month;
+  private BigDecimal month;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public MonthlySearches() {
   }
 
-  public MonthlySearches year(Integer year) {
+  public MonthlySearches year(BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -76,16 +77,16 @@ public class MonthlySearches {
    * @return year
    */
   @javax.annotation.Nullable
-  public Integer getYear() {
+  public BigDecimal getYear() {
     return year;
   }
 
-  public void setYear(Integer year) {
+  public void setYear(BigDecimal year) {
     this.year = year;
   }
 
 
-  public MonthlySearches month(Integer month) {
+  public MonthlySearches month(BigDecimal month) {
     this.month = month;
     return this;
   }
@@ -95,16 +96,16 @@ public class MonthlySearches {
    * @return month
    */
   @javax.annotation.Nullable
-  public Integer getMonth() {
+  public BigDecimal getMonth() {
     return month;
   }
 
-  public void setMonth(Integer month) {
+  public void setMonth(BigDecimal month) {
     this.month = month;
   }
 
 
-  public MonthlySearches searchVolume(Long searchVolume) {
+  public MonthlySearches searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -114,11 +115,11 @@ public class MonthlySearches {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 

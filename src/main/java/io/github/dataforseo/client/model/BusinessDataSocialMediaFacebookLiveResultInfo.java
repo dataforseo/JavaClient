@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataSocialMediaFacebookLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataSocialMediaFacebookLiveResultInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,7 +62,7 @@ public class BusinessDataSocialMediaFacebookLiveResultInfo {
 
   public static final String SERIALIZED_NAME_LIKE_COUNT = "like_count";
   @SerializedName(SERIALIZED_NAME_LIKE_COUNT)
-  private Long likeCount;
+  private BigDecimal likeCount;
 
   public BusinessDataSocialMediaFacebookLiveResultInfo() {
   }
@@ -104,7 +105,7 @@ public class BusinessDataSocialMediaFacebookLiveResultInfo {
   }
 
 
-  public BusinessDataSocialMediaFacebookLiveResultInfo likeCount(Long likeCount) {
+  public BusinessDataSocialMediaFacebookLiveResultInfo likeCount(BigDecimal likeCount) {
     this.likeCount = likeCount;
     return this;
   }
@@ -114,11 +115,11 @@ public class BusinessDataSocialMediaFacebookLiveResultInfo {
    * @return likeCount
    */
   @javax.annotation.Nullable
-  public Long getLikeCount() {
+  public BigDecimal getLikeCount() {
     return likeCount;
   }
 
-  public void setLikeCount(Long likeCount) {
+  public void setLikeCount(BigDecimal likeCount) {
     this.likeCount = likeCount;
   }
 

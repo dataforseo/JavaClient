@@ -12,10 +12,10 @@
 |**title** | **String** | product title |  [optional] |
 |**url** | **String** | Google Shopping URL forwarding to the product page |  [optional] |
 |**details** | **String** | details and special offers if there are no details, the value will be null |  [optional] |
-|**basePrice** | **Integer** | product price without tax and shipping |  [optional] |
-|**tax** | **Integer** | the amount of tax tax is specified as the actual amount of money, not as the percentage |  [optional] |
-|**shippingPrice** | **Integer** | product shipping price |  [optional] |
-|**totalPrice** | **Long** | product price including tax and shipping |  [optional] |
+|**basePrice** | **BigDecimal** | product price without tax and shipping |  [optional] |
+|**tax** | **BigDecimal** | the amount of tax tax is specified as the actual amount of money, not as the percentage |  [optional] |
+|**shippingPrice** | **BigDecimal** | product shipping price |  [optional] |
+|**totalPrice** | **BigDecimal** | product price including tax and shipping |  [optional] |
 |**currency** | **String** | currency in the ISO format example: USD |  [optional] |
 |**sellerName** | **String** | name of the seller the name of the company that placed a corresponding product on Google Shopping |  [optional] |
 |**rating** | [**RatingElement**](RatingElement.md) |  |  [optional] |

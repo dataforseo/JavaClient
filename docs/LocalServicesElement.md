@@ -12,7 +12,7 @@
 |**url** | **String** | URL |  [optional] |
 |**domain** | **String** | website domain |  [optional] |
 |**description** | **String** | description |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 |**profileImageUrl** | **String** | URL of the image featured in the element |  [optional] |
 
 

@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.HotelsPackElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,8 +54,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * HotelsPackDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -73,6 +78,25 @@ public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
 
   public HotelsPackDataforseoLabsSerpElementItem() {
   }
+
+  public HotelsPackDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public HotelsPackDataforseoLabsSerpElementItem title(String title) {
     this.title = title;
@@ -145,7 +169,7 @@ public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
   }
 
   /**
-   * additional items present in the element if there are none, equals null
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable
@@ -212,7 +236,8 @@ public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
       return false;
     }
     HotelsPackDataforseoLabsSerpElementItem hotelsPackDataforseoLabsSerpElementItem = (HotelsPackDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.title, hotelsPackDataforseoLabsSerpElementItem.title) &&
+    return Objects.equals(this.seType, hotelsPackDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.title, hotelsPackDataforseoLabsSerpElementItem.title) &&
         Objects.equals(this.dateFrom, hotelsPackDataforseoLabsSerpElementItem.dateFrom) &&
         Objects.equals(this.dateTo, hotelsPackDataforseoLabsSerpElementItem.dateTo) &&
         Objects.equals(this.items, hotelsPackDataforseoLabsSerpElementItem.items)&&
@@ -226,7 +251,7 @@ public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, dateFrom, dateTo, items, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, title, dateFrom, dateTo, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -241,6 +266,7 @@ public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
     StringBuilder sb = new StringBuilder();
     sb.append("class HotelsPackDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
@@ -273,6 +299,7 @@ public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("title");
     openapiFields.add("date_from");
     openapiFields.add("date_to");
@@ -295,6 +322,9 @@ public class HotelsPackDataforseoLabsSerpElementItem extends BaseDataforseoLabsS
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

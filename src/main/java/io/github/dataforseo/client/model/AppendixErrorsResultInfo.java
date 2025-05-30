@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixErrorsResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixErrorsResultInfo {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
-  private Integer code;
+  private BigDecimal code;
 
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)
@@ -62,7 +63,7 @@ public class AppendixErrorsResultInfo {
   public AppendixErrorsResultInfo() {
   }
 
-  public AppendixErrorsResultInfo code(Integer code) {
+  public AppendixErrorsResultInfo code(BigDecimal code) {
     this.code = code;
     return this;
   }
@@ -72,11 +73,11 @@ public class AppendixErrorsResultInfo {
    * @return code
    */
   @javax.annotation.Nullable
-  public Integer getCode() {
+  public BigDecimal getCode() {
     return code;
   }
 
-  public void setCode(Integer code) {
+  public void setCode(BigDecimal code) {
     this.code = code;
   }
 

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksCompetitorsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksCompetitorsLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,11 +62,11 @@ public class BacklinksCompetitorsLiveItem {
 
   public static final String SERIALIZED_NAME_RANK = "rank";
   @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
+  private BigDecimal rank;
 
   public static final String SERIALIZED_NAME_INTERSECTIONS = "intersections";
   @SerializedName(SERIALIZED_NAME_INTERSECTIONS)
-  private Integer intersections;
+  private BigDecimal intersections;
 
   public BacklinksCompetitorsLiveItem() {
   }
@@ -108,7 +109,7 @@ public class BacklinksCompetitorsLiveItem {
   }
 
 
-  public BacklinksCompetitorsLiveItem rank(Integer rank) {
+  public BacklinksCompetitorsLiveItem rank(BigDecimal rank) {
     this.rank = rank;
     return this;
   }
@@ -118,16 +119,16 @@ public class BacklinksCompetitorsLiveItem {
    * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getRank() {
+  public BigDecimal getRank() {
     return rank;
   }
 
-  public void setRank(Integer rank) {
+  public void setRank(BigDecimal rank) {
     this.rank = rank;
   }
 
 
-  public BacklinksCompetitorsLiveItem intersections(Integer intersections) {
+  public BacklinksCompetitorsLiveItem intersections(BigDecimal intersections) {
     this.intersections = intersections;
     return this;
   }
@@ -137,11 +138,11 @@ public class BacklinksCompetitorsLiveItem {
    * @return intersections
    */
   @javax.annotation.Nullable
-  public Integer getIntersections() {
+  public BigDecimal getIntersections() {
     return intersections;
   }
 
-  public void setIntersections(Integer intersections) {
+  public void setIntersections(BigDecimal intersections) {
     this.intersections = intersections;
   }
 

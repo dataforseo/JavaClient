@@ -11,7 +11,7 @@
 |**title** | **String** | title of a given link element |  [optional] |
 |**url** | **String** | URL |  [optional] |
 |**description** | **String** | description |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 
 
 

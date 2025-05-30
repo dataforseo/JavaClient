@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AmazonDeliveryInfo;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonSerpElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonSerpElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -81,7 +82,7 @@ public class AmazonSerpElement {
 
   public static final String SERIALIZED_NAME_BOUGHT_PAST_MONTH = "bought_past_month";
   @SerializedName(SERIALIZED_NAME_BOUGHT_PAST_MONTH)
-  private Integer boughtPastMonth;
+  private BigDecimal boughtPastMonth;
 
   public static final String SERIALIZED_NAME_PRICE_FROM = "price_from";
   @SerializedName(SERIALIZED_NAME_PRICE_FROM)
@@ -236,7 +237,7 @@ public class AmazonSerpElement {
   }
 
 
-  public AmazonSerpElement boughtPastMonth(Integer boughtPastMonth) {
+  public AmazonSerpElement boughtPastMonth(BigDecimal boughtPastMonth) {
     this.boughtPastMonth = boughtPastMonth;
     return this;
   }
@@ -246,11 +247,11 @@ public class AmazonSerpElement {
    * @return boughtPastMonth
    */
   @javax.annotation.Nullable
-  public Integer getBoughtPastMonth() {
+  public BigDecimal getBoughtPastMonth() {
     return boughtPastMonth;
   }
 
-  public void setBoughtPastMonth(Integer boughtPastMonth) {
+  public void setBoughtPastMonth(BigDecimal boughtPastMonth) {
     this.boughtPastMonth = boughtPastMonth;
   }
 

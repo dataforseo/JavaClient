@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TrendsGraphDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TrendsGraphDataInfo {
   public static final String SERIALIZED_NAME_DATE_FROM = "date_from";
   @SerializedName(SERIALIZED_NAME_DATE_FROM)
@@ -63,7 +64,7 @@ public class TrendsGraphDataInfo {
 
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
-  private Integer timestamp;
+  private BigDecimal timestamp;
 
   public static final String SERIALIZED_NAME_MISSING_DATA = "missing_data";
   @SerializedName(SERIALIZED_NAME_MISSING_DATA)
@@ -71,7 +72,7 @@ public class TrendsGraphDataInfo {
 
   public static final String SERIALIZED_NAME_VALUES = "values";
   @SerializedName(SERIALIZED_NAME_VALUES)
-  private List<Integer> values;
+  private List<BigDecimal> values;
 
   public TrendsGraphDataInfo() {
   }
@@ -114,7 +115,7 @@ public class TrendsGraphDataInfo {
   }
 
 
-  public TrendsGraphDataInfo timestamp(Integer timestamp) {
+  public TrendsGraphDataInfo timestamp(BigDecimal timestamp) {
     this.timestamp = timestamp;
     return this;
   }
@@ -124,11 +125,11 @@ public class TrendsGraphDataInfo {
    * @return timestamp
    */
   @javax.annotation.Nullable
-  public Integer getTimestamp() {
+  public BigDecimal getTimestamp() {
     return timestamp;
   }
 
-  public void setTimestamp(Integer timestamp) {
+  public void setTimestamp(BigDecimal timestamp) {
     this.timestamp = timestamp;
   }
 
@@ -152,12 +153,12 @@ public class TrendsGraphDataInfo {
   }
 
 
-  public TrendsGraphDataInfo values(List<Integer> values) {
+  public TrendsGraphDataInfo values(List<BigDecimal> values) {
     this.values = values;
     return this;
   }
 
-  public TrendsGraphDataInfo addValuesItem(Integer valuesItem) {
+  public TrendsGraphDataInfo addValuesItem(BigDecimal valuesItem) {
     if (this.values == null) {
       this.values = new ArrayList<>();
     }
@@ -170,11 +171,11 @@ public class TrendsGraphDataInfo {
    * @return values
    */
   @javax.annotation.Nullable
-  public List<Integer> getValues() {
+  public List<BigDecimal> getValues() {
     return values;
   }
 
-  public void setValues(List<Integer> values) {
+  public void setValues(List<BigDecimal> values) {
     this.values = values;
   }
 

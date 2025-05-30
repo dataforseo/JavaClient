@@ -49,7 +49,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * VideoElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class VideoElement {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -58,6 +58,10 @@ public class VideoElement {
   public static final String SERIALIZED_NAME_SOURCE = "source";
   @SerializedName(SERIALIZED_NAME_SOURCE)
   private String source;
+
+  public static final String SERIALIZED_NAME_PREVIEW = "preview";
+  @SerializedName(SERIALIZED_NAME_PREVIEW)
+  private Double preview;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -99,7 +103,7 @@ public class VideoElement {
   }
 
   /**
-   * source of the element indicates the source of information included in the top_stories_element
+   * URL to the video source
    * @return source
    */
   @javax.annotation.Nullable
@@ -109,6 +113,25 @@ public class VideoElement {
 
   public void setSource(String source) {
     this.source = source;
+  }
+
+
+  public VideoElement preview(Double preview) {
+    this.preview = preview;
+    return this;
+  }
+
+  /**
+   * URL to the video preview image
+   * @return preview
+   */
+  @javax.annotation.Nullable
+  public Double getPreview() {
+    return preview;
+  }
+
+  public void setPreview(Double preview) {
+    this.preview = preview;
   }
 
 
@@ -225,6 +248,7 @@ public class VideoElement {
     VideoElement videoElement = (VideoElement) o;
     return Objects.equals(this.type, videoElement.type) &&
         Objects.equals(this.source, videoElement.source) &&
+        Objects.equals(this.preview, videoElement.preview) &&
         Objects.equals(this.title, videoElement.title) &&
         Objects.equals(this.timestamp, videoElement.timestamp) &&
         Objects.equals(this.url, videoElement.url)&&
@@ -237,7 +261,7 @@ public class VideoElement {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, source, title, timestamp, url, additionalProperties);
+    return Objects.hash(type, source, preview, title, timestamp, url, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -253,6 +277,7 @@ public class VideoElement {
     sb.append("class VideoElement {\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    source: ").append(toIndentedString(source)).append("\n");
+    sb.append("    preview: ").append(toIndentedString(preview)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -281,6 +306,7 @@ public class VideoElement {
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
     openapiFields.add("source");
+    openapiFields.add("preview");
     openapiFields.add("title");
     openapiFields.add("timestamp");
     openapiFields.add("url");

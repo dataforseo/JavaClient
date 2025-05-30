@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksBulkNewLostReferringDomainsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksBulkNewLostReferringDomainsLiveItem {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -57,19 +58,19 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem {
 
   public static final String SERIALIZED_NAME_NEW_REFERRING_DOMAINS = "new_referring_domains";
   @SerializedName(SERIALIZED_NAME_NEW_REFERRING_DOMAINS)
-  private Long newReferringDomains;
+  private BigDecimal newReferringDomains;
 
   public static final String SERIALIZED_NAME_LOST_REFERRING_DOMAINS = "lost_referring_domains";
   @SerializedName(SERIALIZED_NAME_LOST_REFERRING_DOMAINS)
-  private Long lostReferringDomains;
+  private BigDecimal lostReferringDomains;
 
   public static final String SERIALIZED_NAME_NEW_REFERRING_MAIN_DOMAINS = "new_referring_main_domains";
   @SerializedName(SERIALIZED_NAME_NEW_REFERRING_MAIN_DOMAINS)
-  private Long newReferringMainDomains;
+  private BigDecimal newReferringMainDomains;
 
   public static final String SERIALIZED_NAME_LOST_REFERRING_MAIN_DOMAINS = "lost_referring_main_domains";
   @SerializedName(SERIALIZED_NAME_LOST_REFERRING_MAIN_DOMAINS)
-  private Long lostReferringMainDomains;
+  private BigDecimal lostReferringMainDomains;
 
   public BacklinksBulkNewLostReferringDomainsLiveItem() {
   }
@@ -93,7 +94,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem {
   }
 
 
-  public BacklinksBulkNewLostReferringDomainsLiveItem newReferringDomains(Long newReferringDomains) {
+  public BacklinksBulkNewLostReferringDomainsLiveItem newReferringDomains(BigDecimal newReferringDomains) {
     this.newReferringDomains = newReferringDomains;
     return this;
   }
@@ -103,16 +104,16 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem {
    * @return newReferringDomains
    */
   @javax.annotation.Nullable
-  public Long getNewReferringDomains() {
+  public BigDecimal getNewReferringDomains() {
     return newReferringDomains;
   }
 
-  public void setNewReferringDomains(Long newReferringDomains) {
+  public void setNewReferringDomains(BigDecimal newReferringDomains) {
     this.newReferringDomains = newReferringDomains;
   }
 
 
-  public BacklinksBulkNewLostReferringDomainsLiveItem lostReferringDomains(Long lostReferringDomains) {
+  public BacklinksBulkNewLostReferringDomainsLiveItem lostReferringDomains(BigDecimal lostReferringDomains) {
     this.lostReferringDomains = lostReferringDomains;
     return this;
   }
@@ -122,16 +123,16 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem {
    * @return lostReferringDomains
    */
   @javax.annotation.Nullable
-  public Long getLostReferringDomains() {
+  public BigDecimal getLostReferringDomains() {
     return lostReferringDomains;
   }
 
-  public void setLostReferringDomains(Long lostReferringDomains) {
+  public void setLostReferringDomains(BigDecimal lostReferringDomains) {
     this.lostReferringDomains = lostReferringDomains;
   }
 
 
-  public BacklinksBulkNewLostReferringDomainsLiveItem newReferringMainDomains(Long newReferringMainDomains) {
+  public BacklinksBulkNewLostReferringDomainsLiveItem newReferringMainDomains(BigDecimal newReferringMainDomains) {
     this.newReferringMainDomains = newReferringMainDomains;
     return this;
   }
@@ -141,16 +142,16 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem {
    * @return newReferringMainDomains
    */
   @javax.annotation.Nullable
-  public Long getNewReferringMainDomains() {
+  public BigDecimal getNewReferringMainDomains() {
     return newReferringMainDomains;
   }
 
-  public void setNewReferringMainDomains(Long newReferringMainDomains) {
+  public void setNewReferringMainDomains(BigDecimal newReferringMainDomains) {
     this.newReferringMainDomains = newReferringMainDomains;
   }
 
 
-  public BacklinksBulkNewLostReferringDomainsLiveItem lostReferringMainDomains(Long lostReferringMainDomains) {
+  public BacklinksBulkNewLostReferringDomainsLiveItem lostReferringMainDomains(BigDecimal lostReferringMainDomains) {
     this.lostReferringMainDomains = lostReferringMainDomains;
     return this;
   }
@@ -160,11 +161,11 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem {
    * @return lostReferringMainDomains
    */
   @javax.annotation.Nullable
-  public Long getLostReferringMainDomains() {
+  public BigDecimal getLostReferringMainDomains() {
     return lostReferringMainDomains;
   }
 
-  public void setLostReferringMainDomains(Long lostReferringMainDomains) {
+  public void setLostReferringMainDomains(BigDecimal lostReferringMainDomains) {
     this.lostReferringMainDomains = lostReferringMainDomains;
   }
 

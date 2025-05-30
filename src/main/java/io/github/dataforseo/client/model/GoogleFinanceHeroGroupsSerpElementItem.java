@@ -20,8 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseGoogleFinanceSerpElementItem;
-import io.github.dataforseo.client.model.GoogleFinanceMarketsInfo;
+import io.github.dataforseo.client.model.Markets;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,21 +54,67 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleFinanceHeroGroupsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleFinanceHeroGroupsSerpElementItem extends BaseGoogleFinanceSerpElementItem {
+  public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
+  @SerializedName(SERIALIZED_NAME_RANK_GROUP)
+  private BigDecimal rankGroup;
+
+  public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
+  @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
+  private BigDecimal rankAbsolute;
+
   public static final String SERIALIZED_NAME_MARKETS = "markets";
   @SerializedName(SERIALIZED_NAME_MARKETS)
-  private List<GoogleFinanceMarketsInfo> markets;
+  private List<Markets> markets;
 
   public GoogleFinanceHeroGroupsSerpElementItem() {
   }
 
-  public GoogleFinanceHeroGroupsSerpElementItem markets(List<GoogleFinanceMarketsInfo> markets) {
+  public GoogleFinanceHeroGroupsSerpElementItem rankGroup(BigDecimal rankGroup) {
+    this.rankGroup = rankGroup;
+    return this;
+  }
+
+  /**
+   * group rank in SERP position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group
+   * @return rankGroup
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getRankGroup() {
+    return rankGroup;
+  }
+
+  public void setRankGroup(BigDecimal rankGroup) {
+    this.rankGroup = rankGroup;
+  }
+
+
+  public GoogleFinanceHeroGroupsSerpElementItem rankAbsolute(BigDecimal rankAbsolute) {
+    this.rankAbsolute = rankAbsolute;
+    return this;
+  }
+
+  /**
+   * absolute rank in SERP absolute position among all the elements in SERP
+   * @return rankAbsolute
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getRankAbsolute() {
+    return rankAbsolute;
+  }
+
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
+    this.rankAbsolute = rankAbsolute;
+  }
+
+
+  public GoogleFinanceHeroGroupsSerpElementItem markets(List<Markets> markets) {
     this.markets = markets;
     return this;
   }
 
-  public GoogleFinanceHeroGroupsSerpElementItem addMarketsItem(GoogleFinanceMarketsInfo marketsItem) {
+  public GoogleFinanceHeroGroupsSerpElementItem addMarketsItem(Markets marketsItem) {
     if (this.markets == null) {
       this.markets = new ArrayList<>();
     }
@@ -80,11 +127,11 @@ public class GoogleFinanceHeroGroupsSerpElementItem extends BaseGoogleFinanceSer
    * @return markets
    */
   @javax.annotation.Nullable
-  public List<GoogleFinanceMarketsInfo> getMarkets() {
+  public List<Markets> getMarkets() {
     return markets;
   }
 
-  public void setMarkets(List<GoogleFinanceMarketsInfo> markets) {
+  public void setMarkets(List<Markets> markets) {
     this.markets = markets;
   }
 
@@ -143,7 +190,9 @@ public class GoogleFinanceHeroGroupsSerpElementItem extends BaseGoogleFinanceSer
       return false;
     }
     GoogleFinanceHeroGroupsSerpElementItem googleFinanceHeroGroupsSerpElementItem = (GoogleFinanceHeroGroupsSerpElementItem) o;
-    return Objects.equals(this.markets, googleFinanceHeroGroupsSerpElementItem.markets)&&
+    return Objects.equals(this.rankGroup, googleFinanceHeroGroupsSerpElementItem.rankGroup) &&
+        Objects.equals(this.rankAbsolute, googleFinanceHeroGroupsSerpElementItem.rankAbsolute) &&
+        Objects.equals(this.markets, googleFinanceHeroGroupsSerpElementItem.markets)&&
         Objects.equals(this.additionalProperties, googleFinanceHeroGroupsSerpElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -154,7 +203,7 @@ public class GoogleFinanceHeroGroupsSerpElementItem extends BaseGoogleFinanceSer
 
   @Override
   public int hashCode() {
-    return Objects.hash(markets, super.hashCode(), additionalProperties);
+    return Objects.hash(rankGroup, rankAbsolute, markets, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -169,6 +218,8 @@ public class GoogleFinanceHeroGroupsSerpElementItem extends BaseGoogleFinanceSer
     StringBuilder sb = new StringBuilder();
     sb.append("class GoogleFinanceHeroGroupsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    rankGroup: ").append(toIndentedString(rankGroup)).append("\n");
+    sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
     sb.append("    markets: ").append(toIndentedString(markets)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -194,6 +245,8 @@ public class GoogleFinanceHeroGroupsSerpElementItem extends BaseGoogleFinanceSer
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
+    openapiFields.add("rank_group");
+    openapiFields.add("rank_absolute");
     openapiFields.add("markets");
 
     // a set of required properties/fields (JSON key names)
@@ -223,7 +276,7 @@ public class GoogleFinanceHeroGroupsSerpElementItem extends BaseGoogleFinanceSer
 
           // validate the optional field `markets` (array)
           for (int i = 0; i < jsonArraymarkets.size(); i++) {
-            GoogleFinanceMarketsInfo.validateJsonElement(jsonArraymarkets.get(i));
+            Markets.validateJsonElement(jsonArraymarkets.get(i));
           };
         }
       }

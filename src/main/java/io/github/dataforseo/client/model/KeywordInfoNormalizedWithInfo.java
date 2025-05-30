@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.MonthlySearches;
+import io.github.dataforseo.client.model.MonthlySearchesInfo;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordInfoNormalizedWithInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordInfoNormalizedWithInfo {
   public static final String SERIALIZED_NAME_LAST_UPDATED_TIME = "last_updated_time";
   @SerializedName(SERIALIZED_NAME_LAST_UPDATED_TIME)
@@ -68,7 +68,7 @@ public class KeywordInfoNormalizedWithInfo {
 
   public static final String SERIALIZED_NAME_MONTHLY_SEARCHES = "monthly_searches";
   @SerializedName(SERIALIZED_NAME_MONTHLY_SEARCHES)
-  private List<MonthlySearches> monthlySearches;
+  private List<MonthlySearchesInfo> monthlySearches;
 
   public KeywordInfoNormalizedWithInfo() {
   }
@@ -130,12 +130,12 @@ public class KeywordInfoNormalizedWithInfo {
   }
 
 
-  public KeywordInfoNormalizedWithInfo monthlySearches(List<MonthlySearches> monthlySearches) {
+  public KeywordInfoNormalizedWithInfo monthlySearches(List<MonthlySearchesInfo> monthlySearches) {
     this.monthlySearches = monthlySearches;
     return this;
   }
 
-  public KeywordInfoNormalizedWithInfo addMonthlySearchesItem(MonthlySearches monthlySearchesItem) {
+  public KeywordInfoNormalizedWithInfo addMonthlySearchesItem(MonthlySearchesInfo monthlySearchesItem) {
     if (this.monthlySearches == null) {
       this.monthlySearches = new ArrayList<>();
     }
@@ -148,11 +148,11 @@ public class KeywordInfoNormalizedWithInfo {
    * @return monthlySearches
    */
   @javax.annotation.Nullable
-  public List<MonthlySearches> getMonthlySearches() {
+  public List<MonthlySearchesInfo> getMonthlySearches() {
     return monthlySearches;
   }
 
-  public void setMonthlySearches(List<MonthlySearches> monthlySearches) {
+  public void setMonthlySearches(List<MonthlySearchesInfo> monthlySearches) {
     this.monthlySearches = monthlySearches;
   }
 
@@ -306,7 +306,7 @@ public class KeywordInfoNormalizedWithInfo {
 
           // validate the optional field `monthly_searches` (array)
           for (int i = 0; i < jsonArraymonthlySearches.size(); i++) {
-            MonthlySearches.validateJsonElement(jsonArraymonthlySearches.get(i));
+            MonthlySearchesInfo.validateJsonElement(jsonArraymonthlySearches.get(i));
           };
         }
       }

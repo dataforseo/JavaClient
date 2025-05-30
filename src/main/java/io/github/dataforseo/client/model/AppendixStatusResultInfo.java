@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixStatusResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixStatusResultInfo {
   public static final String SERIALIZED_NAME_API = "api";
   @SerializedName(SERIALIZED_NAME_API)
@@ -94,7 +94,7 @@ public class AppendixStatusResultInfo {
   }
 
   /**
-   * current status you can find all information about your API statuses for the last 60 days here the list of possible current statuses: major_outage partial_outage long_response_time long_execution_time webhook_delay send_delay
+   * current status you can find all information about the statuses of our endpoints for the last 60 days here the list of possible current statuses: major_outage partial_outage long_response_time long_execution_time webhook_delay send_delay
    * @return status
    */
   @javax.annotation.Nullable

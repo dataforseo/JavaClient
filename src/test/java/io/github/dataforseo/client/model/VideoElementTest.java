@@ -55,6 +55,14 @@ public class VideoElementTest {
     }
 
     /**
+     * Test the property 'preview'
+     */
+    @Test
+    public void previewTest() {
+        // TODO: test preview
+    }
+
+    /**
      * Test the property 'title'
      */
     @Test

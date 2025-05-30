@@ -8,17 +8,17 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the listed reviews absolute position among all reviews on the list |  [optional] |
+|**rankGroup** | **BigDecimal** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
+|**rankAbsolute** | **BigDecimal** | absolute rank among all the listed reviews absolute position among all reviews on the list |  [optional] |
 |**position** | **String** | the alignment of the review in SERP can take the following values: right |  [optional] |
 |**xpath** | **String** | the XPath of the review |  [optional] |
 |**reviewText** | **String** | the content of the review |  [optional] |
 |**originalReviewText** | **String** | original content of the review the original content of the review, no auto-translate applied |  [optional] |
 |**timeAgo** | **String** | the time of publication indicates the time (in the ‘time ago’ format) when the review was listed |  [optional] |
 |**timestamp** | **String** | date and time when a review was published in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
-|**reviewsCount** | **Long** | total number of reviews submitted by the reviewer |  [optional] |
-|**photosCount** | **Long** | total number of photos submitted by the reviewer |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
+|**reviewsCount** | **BigDecimal** | total number of reviews submitted by the reviewer |  [optional] |
+|**photosCount** | **BigDecimal** | total number of photos submitted by the reviewer |  [optional] |
 |**localGuide** | **Boolean** | indicates whether the reviewer has a ‘local guide’ status |  [optional] |
 |**profileName** | **String** | profile name of the reviewer |  [optional] |
 |**profileUrl** | **String** | URL of the reviewer’s profile |  [optional] |

@@ -20,9 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoTrendsItem;
-import io.github.dataforseo.client.model.Interests;
+import io.github.dataforseo.client.model.DataforseoTrendsinterestsInfo;
 import io.github.dataforseo.client.model.InterestsComparison;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,11 +55,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoTrendsSubregionInterestsElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoTrendsSubregionInterestsElementItem extends BaseDataforseoTrendsItem {
   public static final String SERIALIZED_NAME_INTERESTS = "interests";
   @SerializedName(SERIALIZED_NAME_INTERESTS)
-  private List<Interests> interests;
+  private List<DataforseoTrendsinterestsInfo> interests;
 
   public static final String SERIALIZED_NAME_INTERESTS_COMPARISON = "interests_comparison";
   @SerializedName(SERIALIZED_NAME_INTERESTS_COMPARISON)
@@ -67,12 +68,12 @@ public class DataforseoTrendsSubregionInterestsElementItem extends BaseDataforse
   public DataforseoTrendsSubregionInterestsElementItem() {
   }
 
-  public DataforseoTrendsSubregionInterestsElementItem interests(List<Interests> interests) {
+  public DataforseoTrendsSubregionInterestsElementItem interests(List<DataforseoTrendsinterestsInfo> interests) {
     this.interests = interests;
     return this;
   }
 
-  public DataforseoTrendsSubregionInterestsElementItem addInterestsItem(Interests interestsItem) {
+  public DataforseoTrendsSubregionInterestsElementItem addInterestsItem(DataforseoTrendsinterestsInfo interestsItem) {
     if (this.interests == null) {
       this.interests = new ArrayList<>();
     }
@@ -85,11 +86,11 @@ public class DataforseoTrendsSubregionInterestsElementItem extends BaseDataforse
    * @return interests
    */
   @javax.annotation.Nullable
-  public List<Interests> getInterests() {
+  public List<DataforseoTrendsinterestsInfo> getInterests() {
     return interests;
   }
 
-  public void setInterests(List<Interests> interests) {
+  public void setInterests(List<DataforseoTrendsinterestsInfo> interests) {
     this.interests = interests;
   }
 
@@ -252,7 +253,7 @@ public class DataforseoTrendsSubregionInterestsElementItem extends BaseDataforse
 
           // validate the optional field `interests` (array)
           for (int i = 0; i < jsonArrayinterests.size(); i++) {
-            Interests.validateJsonElement(jsonArrayinterests.get(i));
+            DataforseoTrendsinterestsInfo.validateJsonElement(jsonArrayinterests.get(i));
           };
         }
       }

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * RankChanges
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RankChanges {
   public static final String SERIALIZED_NAME_PREVIOUS_RANK_ABSOLUTE = "previous_rank_absolute";
   @SerializedName(SERIALIZED_NAME_PREVIOUS_RANK_ABSOLUTE)
-  private Integer previousRankAbsolute;
+  private BigDecimal previousRankAbsolute;
 
   public static final String SERIALIZED_NAME_IS_NEW = "is_new";
   @SerializedName(SERIALIZED_NAME_IS_NEW)
@@ -70,7 +71,7 @@ public class RankChanges {
   public RankChanges() {
   }
 
-  public RankChanges previousRankAbsolute(Integer previousRankAbsolute) {
+  public RankChanges previousRankAbsolute(BigDecimal previousRankAbsolute) {
     this.previousRankAbsolute = previousRankAbsolute;
     return this;
   }
@@ -80,11 +81,11 @@ public class RankChanges {
    * @return previousRankAbsolute
    */
   @javax.annotation.Nullable
-  public Integer getPreviousRankAbsolute() {
+  public BigDecimal getPreviousRankAbsolute() {
     return previousRankAbsolute;
   }
 
-  public void setPreviousRankAbsolute(Integer previousRankAbsolute) {
+  public void setPreviousRankAbsolute(BigDecimal previousRankAbsolute) {
     this.previousRankAbsolute = previousRankAbsolute;
   }
 

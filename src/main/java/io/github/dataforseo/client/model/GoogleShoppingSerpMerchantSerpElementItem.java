@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.DeliveryInfo;
 import io.github.dataforseo.client.model.RatingElement;
 import io.github.dataforseo.client.model.StoresCountInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -57,7 +58,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleShoppingSerpMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -91,6 +92,10 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
   @SerializedName(SERIALIZED_NAME_PRICE)
   private Float price;
 
+  public static final String SERIALIZED_NAME_PRICE_MULTIPLIER = "price_multiplier";
+  @SerializedName(SERIALIZED_NAME_PRICE_MULTIPLIER)
+  private BigDecimal priceMultiplier;
+
   public static final String SERIALIZED_NAME_OLD_PRICE = "old_price";
   @SerializedName(SERIALIZED_NAME_OLD_PRICE)
   private Float oldPrice;
@@ -117,7 +122,7 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_IS_BEST_MATCH = "is_best_match";
   @SerializedName(SERIALIZED_NAME_IS_BEST_MATCH)
@@ -310,6 +315,25 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
   }
 
 
+  public GoogleShoppingSerpMerchantSerpElementItem priceMultiplier(BigDecimal priceMultiplier) {
+    this.priceMultiplier = priceMultiplier;
+    return this;
+  }
+
+  /**
+   * price multiplier for instalment plan indicates the number of months covered by the monthly payment for the product
+   * @return priceMultiplier
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getPriceMultiplier() {
+    return priceMultiplier;
+  }
+
+  public void setPriceMultiplier(BigDecimal priceMultiplier) {
+    this.priceMultiplier = priceMultiplier;
+  }
+
+
   public GoogleShoppingSerpMerchantSerpElementItem oldPrice(Float oldPrice) {
     this.oldPrice = oldPrice;
     return this;
@@ -432,7 +456,7 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
   }
 
 
-  public GoogleShoppingSerpMerchantSerpElementItem reviewsCount(Long reviewsCount) {
+  public GoogleShoppingSerpMerchantSerpElementItem reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -442,11 +466,11 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
@@ -654,6 +678,7 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
         Objects.equals(this.shoppingUrl, googleShoppingSerpMerchantSerpElementItem.shoppingUrl) &&
         Objects.equals(this.tags, googleShoppingSerpMerchantSerpElementItem.tags) &&
         Objects.equals(this.price, googleShoppingSerpMerchantSerpElementItem.price) &&
+        Objects.equals(this.priceMultiplier, googleShoppingSerpMerchantSerpElementItem.priceMultiplier) &&
         Objects.equals(this.oldPrice, googleShoppingSerpMerchantSerpElementItem.oldPrice) &&
         Objects.equals(this.currency, googleShoppingSerpMerchantSerpElementItem.currency) &&
         Objects.equals(this.productId, googleShoppingSerpMerchantSerpElementItem.productId) &&
@@ -678,7 +703,7 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
 
   @Override
   public int hashCode() {
-    return Objects.hash(xpath, domain, title, description, url, shoppingUrl, tags, price, oldPrice, currency, productId, dataDocid, seller, additionalSpecifications, reviewsCount, isBestMatch, productRating, shopRating, productImages, shopAdAclk, deliveryInfo, storesCountInfo, super.hashCode(), additionalProperties);
+    return Objects.hash(xpath, domain, title, description, url, shoppingUrl, tags, price, priceMultiplier, oldPrice, currency, productId, dataDocid, seller, additionalSpecifications, reviewsCount, isBestMatch, productRating, shopRating, productImages, shopAdAclk, deliveryInfo, storesCountInfo, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -701,6 +726,7 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
     sb.append("    shoppingUrl: ").append(toIndentedString(shoppingUrl)).append("\n");
     sb.append("    tags: ").append(toIndentedString(tags)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
+    sb.append("    priceMultiplier: ").append(toIndentedString(priceMultiplier)).append("\n");
     sb.append("    oldPrice: ").append(toIndentedString(oldPrice)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
@@ -750,6 +776,7 @@ public class GoogleShoppingSerpMerchantSerpElementItem extends BaseMerchantSerpE
     openapiFields.add("shopping_url");
     openapiFields.add("tags");
     openapiFields.add("price");
+    openapiFields.add("price_multiplier");
     openapiFields.add("old_price");
     openapiFields.add("currency");
     openapiFields.add("product_id");

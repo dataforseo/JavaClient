@@ -19,8 +19,9 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.BaseOnPageResourceItemInfo;
+import io.github.dataforseo.client.model.WaterfallResourceInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageWaterfallItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageWaterfallItem {
   public static final String SERIALIZED_NAME_PAGE_URL = "page_url";
   @SerializedName(SERIALIZED_NAME_PAGE_URL)
@@ -60,47 +61,47 @@ public class OnPageWaterfallItem {
 
   public static final String SERIALIZED_NAME_TIME_TO_INTERACTIVE = "time_to_interactive";
   @SerializedName(SERIALIZED_NAME_TIME_TO_INTERACTIVE)
-  private Integer timeToInteractive;
+  private BigDecimal timeToInteractive;
 
   public static final String SERIALIZED_NAME_DOM_COMPLETE = "dom_complete";
   @SerializedName(SERIALIZED_NAME_DOM_COMPLETE)
-  private Integer domComplete;
+  private BigDecimal domComplete;
 
   public static final String SERIALIZED_NAME_CONNECTION_TIME = "connection_time";
   @SerializedName(SERIALIZED_NAME_CONNECTION_TIME)
-  private Integer connectionTime;
+  private BigDecimal connectionTime;
 
   public static final String SERIALIZED_NAME_TIME_TO_SECURE_CONNECTION = "time_to_secure_connection";
   @SerializedName(SERIALIZED_NAME_TIME_TO_SECURE_CONNECTION)
-  private Integer timeToSecureConnection;
+  private BigDecimal timeToSecureConnection;
 
   public static final String SERIALIZED_NAME_REQUEST_SENT_TIME = "request_sent_time";
   @SerializedName(SERIALIZED_NAME_REQUEST_SENT_TIME)
-  private Integer requestSentTime;
+  private BigDecimal requestSentTime;
 
   public static final String SERIALIZED_NAME_WAITING_TIME = "waiting_time";
   @SerializedName(SERIALIZED_NAME_WAITING_TIME)
-  private Integer waitingTime;
+  private BigDecimal waitingTime;
 
   public static final String SERIALIZED_NAME_DOWNLOAD_TIME = "download_time";
   @SerializedName(SERIALIZED_NAME_DOWNLOAD_TIME)
-  private Integer downloadTime;
+  private BigDecimal downloadTime;
 
   public static final String SERIALIZED_NAME_DURATION_TIME = "duration_time";
   @SerializedName(SERIALIZED_NAME_DURATION_TIME)
-  private Integer durationTime;
+  private BigDecimal durationTime;
 
   public static final String SERIALIZED_NAME_FETCH_START = "fetch_start";
   @SerializedName(SERIALIZED_NAME_FETCH_START)
-  private Integer fetchStart;
+  private BigDecimal fetchStart;
 
   public static final String SERIALIZED_NAME_FETCH_END = "fetch_end";
   @SerializedName(SERIALIZED_NAME_FETCH_END)
-  private Integer fetchEnd;
+  private BigDecimal fetchEnd;
 
   public static final String SERIALIZED_NAME_RESOURCES = "resources";
   @SerializedName(SERIALIZED_NAME_RESOURCES)
-  private List<BaseOnPageResourceItemInfo> resources;
+  private List<WaterfallResourceInfo> resources;
 
   public OnPageWaterfallItem() {
   }
@@ -124,7 +125,7 @@ public class OnPageWaterfallItem {
   }
 
 
-  public OnPageWaterfallItem timeToInteractive(Integer timeToInteractive) {
+  public OnPageWaterfallItem timeToInteractive(BigDecimal timeToInteractive) {
     this.timeToInteractive = timeToInteractive;
     return this;
   }
@@ -134,16 +135,16 @@ public class OnPageWaterfallItem {
    * @return timeToInteractive
    */
   @javax.annotation.Nullable
-  public Integer getTimeToInteractive() {
+  public BigDecimal getTimeToInteractive() {
     return timeToInteractive;
   }
 
-  public void setTimeToInteractive(Integer timeToInteractive) {
+  public void setTimeToInteractive(BigDecimal timeToInteractive) {
     this.timeToInteractive = timeToInteractive;
   }
 
 
-  public OnPageWaterfallItem domComplete(Integer domComplete) {
+  public OnPageWaterfallItem domComplete(BigDecimal domComplete) {
     this.domComplete = domComplete;
     return this;
   }
@@ -153,16 +154,16 @@ public class OnPageWaterfallItem {
    * @return domComplete
    */
   @javax.annotation.Nullable
-  public Integer getDomComplete() {
+  public BigDecimal getDomComplete() {
     return domComplete;
   }
 
-  public void setDomComplete(Integer domComplete) {
+  public void setDomComplete(BigDecimal domComplete) {
     this.domComplete = domComplete;
   }
 
 
-  public OnPageWaterfallItem connectionTime(Integer connectionTime) {
+  public OnPageWaterfallItem connectionTime(BigDecimal connectionTime) {
     this.connectionTime = connectionTime;
     return this;
   }
@@ -172,16 +173,16 @@ public class OnPageWaterfallItem {
    * @return connectionTime
    */
   @javax.annotation.Nullable
-  public Integer getConnectionTime() {
+  public BigDecimal getConnectionTime() {
     return connectionTime;
   }
 
-  public void setConnectionTime(Integer connectionTime) {
+  public void setConnectionTime(BigDecimal connectionTime) {
     this.connectionTime = connectionTime;
   }
 
 
-  public OnPageWaterfallItem timeToSecureConnection(Integer timeToSecureConnection) {
+  public OnPageWaterfallItem timeToSecureConnection(BigDecimal timeToSecureConnection) {
     this.timeToSecureConnection = timeToSecureConnection;
     return this;
   }
@@ -191,16 +192,16 @@ public class OnPageWaterfallItem {
    * @return timeToSecureConnection
    */
   @javax.annotation.Nullable
-  public Integer getTimeToSecureConnection() {
+  public BigDecimal getTimeToSecureConnection() {
     return timeToSecureConnection;
   }
 
-  public void setTimeToSecureConnection(Integer timeToSecureConnection) {
+  public void setTimeToSecureConnection(BigDecimal timeToSecureConnection) {
     this.timeToSecureConnection = timeToSecureConnection;
   }
 
 
-  public OnPageWaterfallItem requestSentTime(Integer requestSentTime) {
+  public OnPageWaterfallItem requestSentTime(BigDecimal requestSentTime) {
     this.requestSentTime = requestSentTime;
     return this;
   }
@@ -210,16 +211,16 @@ public class OnPageWaterfallItem {
    * @return requestSentTime
    */
   @javax.annotation.Nullable
-  public Integer getRequestSentTime() {
+  public BigDecimal getRequestSentTime() {
     return requestSentTime;
   }
 
-  public void setRequestSentTime(Integer requestSentTime) {
+  public void setRequestSentTime(BigDecimal requestSentTime) {
     this.requestSentTime = requestSentTime;
   }
 
 
-  public OnPageWaterfallItem waitingTime(Integer waitingTime) {
+  public OnPageWaterfallItem waitingTime(BigDecimal waitingTime) {
     this.waitingTime = waitingTime;
     return this;
   }
@@ -229,16 +230,16 @@ public class OnPageWaterfallItem {
    * @return waitingTime
    */
   @javax.annotation.Nullable
-  public Integer getWaitingTime() {
+  public BigDecimal getWaitingTime() {
     return waitingTime;
   }
 
-  public void setWaitingTime(Integer waitingTime) {
+  public void setWaitingTime(BigDecimal waitingTime) {
     this.waitingTime = waitingTime;
   }
 
 
-  public OnPageWaterfallItem downloadTime(Integer downloadTime) {
+  public OnPageWaterfallItem downloadTime(BigDecimal downloadTime) {
     this.downloadTime = downloadTime;
     return this;
   }
@@ -248,16 +249,16 @@ public class OnPageWaterfallItem {
    * @return downloadTime
    */
   @javax.annotation.Nullable
-  public Integer getDownloadTime() {
+  public BigDecimal getDownloadTime() {
     return downloadTime;
   }
 
-  public void setDownloadTime(Integer downloadTime) {
+  public void setDownloadTime(BigDecimal downloadTime) {
     this.downloadTime = downloadTime;
   }
 
 
-  public OnPageWaterfallItem durationTime(Integer durationTime) {
+  public OnPageWaterfallItem durationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
     return this;
   }
@@ -267,16 +268,16 @@ public class OnPageWaterfallItem {
    * @return durationTime
    */
   @javax.annotation.Nullable
-  public Integer getDurationTime() {
+  public BigDecimal getDurationTime() {
     return durationTime;
   }
 
-  public void setDurationTime(Integer durationTime) {
+  public void setDurationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
   }
 
 
-  public OnPageWaterfallItem fetchStart(Integer fetchStart) {
+  public OnPageWaterfallItem fetchStart(BigDecimal fetchStart) {
     this.fetchStart = fetchStart;
     return this;
   }
@@ -286,16 +287,16 @@ public class OnPageWaterfallItem {
    * @return fetchStart
    */
   @javax.annotation.Nullable
-  public Integer getFetchStart() {
+  public BigDecimal getFetchStart() {
     return fetchStart;
   }
 
-  public void setFetchStart(Integer fetchStart) {
+  public void setFetchStart(BigDecimal fetchStart) {
     this.fetchStart = fetchStart;
   }
 
 
-  public OnPageWaterfallItem fetchEnd(Integer fetchEnd) {
+  public OnPageWaterfallItem fetchEnd(BigDecimal fetchEnd) {
     this.fetchEnd = fetchEnd;
     return this;
   }
@@ -305,21 +306,21 @@ public class OnPageWaterfallItem {
    * @return fetchEnd
    */
   @javax.annotation.Nullable
-  public Integer getFetchEnd() {
+  public BigDecimal getFetchEnd() {
     return fetchEnd;
   }
 
-  public void setFetchEnd(Integer fetchEnd) {
+  public void setFetchEnd(BigDecimal fetchEnd) {
     this.fetchEnd = fetchEnd;
   }
 
 
-  public OnPageWaterfallItem resources(List<BaseOnPageResourceItemInfo> resources) {
+  public OnPageWaterfallItem resources(List<WaterfallResourceInfo> resources) {
     this.resources = resources;
     return this;
   }
 
-  public OnPageWaterfallItem addResourcesItem(BaseOnPageResourceItemInfo resourcesItem) {
+  public OnPageWaterfallItem addResourcesItem(WaterfallResourceInfo resourcesItem) {
     if (this.resources == null) {
       this.resources = new ArrayList<>();
     }
@@ -332,11 +333,11 @@ public class OnPageWaterfallItem {
    * @return resources
    */
   @javax.annotation.Nullable
-  public List<BaseOnPageResourceItemInfo> getResources() {
+  public List<WaterfallResourceInfo> getResources() {
     return resources;
   }
 
-  public void setResources(List<BaseOnPageResourceItemInfo> resources) {
+  public void setResources(List<WaterfallResourceInfo> resources) {
     this.resources = resources;
   }
 
@@ -508,7 +509,7 @@ public class OnPageWaterfallItem {
 
           // validate the optional field `resources` (array)
           for (int i = 0; i < jsonArrayresources.size(); i++) {
-            BaseOnPageResourceItemInfo.validateJsonElement(jsonArrayresources.get(i));
+            WaterfallResourceInfo.validateJsonElement(jsonArrayresources.get(i));
           };
         }
       }

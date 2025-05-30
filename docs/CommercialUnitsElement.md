@@ -13,7 +13,7 @@
 |**domain** | **String** | website domain |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**source** | **String** | source of the element indicates the source of information included in the top_stories_element |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 
 
 

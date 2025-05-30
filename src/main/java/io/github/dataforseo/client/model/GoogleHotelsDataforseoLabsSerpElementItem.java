@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,8 +51,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleHotelsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
   private String hotelIdentifier;
@@ -62,6 +67,25 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
 
   public GoogleHotelsDataforseoLabsSerpElementItem() {
   }
+
+  public GoogleHotelsDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public GoogleHotelsDataforseoLabsSerpElementItem hotelIdentifier(String hotelIdentifier) {
     this.hotelIdentifier = hotelIdentifier;
@@ -88,7 +112,7 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
   }
 
   /**
-   * relevant URL
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -155,7 +179,8 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
       return false;
     }
     GoogleHotelsDataforseoLabsSerpElementItem googleHotelsDataforseoLabsSerpElementItem = (GoogleHotelsDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.hotelIdentifier, googleHotelsDataforseoLabsSerpElementItem.hotelIdentifier) &&
+    return Objects.equals(this.seType, googleHotelsDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.hotelIdentifier, googleHotelsDataforseoLabsSerpElementItem.hotelIdentifier) &&
         Objects.equals(this.url, googleHotelsDataforseoLabsSerpElementItem.url)&&
         Objects.equals(this.additionalProperties, googleHotelsDataforseoLabsSerpElementItem.additionalProperties) &&
         super.equals(o);
@@ -167,7 +192,7 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
 
   @Override
   public int hashCode() {
-    return Objects.hash(hotelIdentifier, url, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, hotelIdentifier, url, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -182,6 +207,7 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
     StringBuilder sb = new StringBuilder();
     sb.append("class GoogleHotelsDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    hotelIdentifier: ").append(toIndentedString(hotelIdentifier)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
@@ -212,6 +238,7 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("hotel_identifier");
     openapiFields.add("url");
 
@@ -232,6 +259,9 @@ public class GoogleHotelsDataforseoLabsSerpElementItem extends BaseDataforseoLab
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("hotel_identifier") != null && !jsonObj.get("hotel_identifier").isJsonNull()) && !jsonObj.get("hotel_identifier").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `hotel_identifier` to be a primitive type in the JSON string but got `%s`", jsonObj.get("hotel_identifier").toString()));
       }

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,20 +50,20 @@ import io.github.dataforseo.client.JSON;
 /**
  * RankInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RankInfo {
   public static final String SERIALIZED_NAME_PAGE_RANK = "page_rank";
   @SerializedName(SERIALIZED_NAME_PAGE_RANK)
-  private Integer pageRank;
+  private BigDecimal pageRank;
 
   public static final String SERIALIZED_NAME_MAIN_DOMAIN_RANK = "main_domain_rank";
   @SerializedName(SERIALIZED_NAME_MAIN_DOMAIN_RANK)
-  private Integer mainDomainRank;
+  private BigDecimal mainDomainRank;
 
   public RankInfo() {
   }
 
-  public RankInfo pageRank(Integer pageRank) {
+  public RankInfo pageRank(BigDecimal pageRank) {
     this.pageRank = pageRank;
     return this;
   }
@@ -72,16 +73,16 @@ public class RankInfo {
    * @return pageRank
    */
   @javax.annotation.Nullable
-  public Integer getPageRank() {
+  public BigDecimal getPageRank() {
     return pageRank;
   }
 
-  public void setPageRank(Integer pageRank) {
+  public void setPageRank(BigDecimal pageRank) {
     this.pageRank = pageRank;
   }
 
 
-  public RankInfo mainDomainRank(Integer mainDomainRank) {
+  public RankInfo mainDomainRank(BigDecimal mainDomainRank) {
     this.mainDomainRank = mainDomainRank;
     return this;
   }
@@ -91,11 +92,11 @@ public class RankInfo {
    * @return mainDomainRank
    */
   @javax.annotation.Nullable
-  public Integer getMainDomainRank() {
+  public BigDecimal getMainDomainRank() {
     return mainDomainRank;
   }
 
-  public void setMainDomainRank(Integer mainDomainRank) {
+  public void setMainDomainRank(BigDecimal mainDomainRank) {
     this.mainDomainRank = mainDomainRank;
   }
 

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -51,67 +52,63 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsMetricsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsMetricsInfo {
   public static final String SERIALIZED_NAME_POS1 = "pos_1";
   @SerializedName(SERIALIZED_NAME_POS1)
-  private Integer pos1;
+  private BigDecimal pos1;
 
   public static final String SERIALIZED_NAME_POS23 = "pos_2_3";
   @SerializedName(SERIALIZED_NAME_POS23)
-  private Integer pos23;
+  private BigDecimal pos23;
 
   public static final String SERIALIZED_NAME_POS410 = "pos_4_10";
   @SerializedName(SERIALIZED_NAME_POS410)
-  private Integer pos410;
+  private BigDecimal pos410;
 
   public static final String SERIALIZED_NAME_POS1120 = "pos_11_20";
   @SerializedName(SERIALIZED_NAME_POS1120)
-  private Integer pos1120;
+  private BigDecimal pos1120;
 
   public static final String SERIALIZED_NAME_POS2130 = "pos_21_30";
   @SerializedName(SERIALIZED_NAME_POS2130)
-  private Integer pos2130;
+  private BigDecimal pos2130;
 
   public static final String SERIALIZED_NAME_POS3140 = "pos_31_40";
   @SerializedName(SERIALIZED_NAME_POS3140)
-  private Integer pos3140;
+  private BigDecimal pos3140;
 
   public static final String SERIALIZED_NAME_POS4150 = "pos_41_50";
   @SerializedName(SERIALIZED_NAME_POS4150)
-  private Integer pos4150;
+  private BigDecimal pos4150;
 
   public static final String SERIALIZED_NAME_POS5160 = "pos_51_60";
   @SerializedName(SERIALIZED_NAME_POS5160)
-  private Integer pos5160;
+  private BigDecimal pos5160;
 
   public static final String SERIALIZED_NAME_POS6170 = "pos_61_70";
   @SerializedName(SERIALIZED_NAME_POS6170)
-  private Integer pos6170;
+  private BigDecimal pos6170;
 
   public static final String SERIALIZED_NAME_POS7180 = "pos_71_80";
   @SerializedName(SERIALIZED_NAME_POS7180)
-  private Integer pos7180;
+  private BigDecimal pos7180;
 
   public static final String SERIALIZED_NAME_POS8190 = "pos_81_90";
   @SerializedName(SERIALIZED_NAME_POS8190)
-  private Integer pos8190;
+  private BigDecimal pos8190;
 
   public static final String SERIALIZED_NAME_POS91100 = "pos_91_100";
   @SerializedName(SERIALIZED_NAME_POS91100)
-  private Integer pos91100;
+  private BigDecimal pos91100;
 
   public static final String SERIALIZED_NAME_ETV = "etv";
   @SerializedName(SERIALIZED_NAME_ETV)
   private Float etv;
 
-  public static final String SERIALIZED_NAME_IMPRESSIONS_ETV = "impressions_etv";
-  @SerializedName(SERIALIZED_NAME_IMPRESSIONS_ETV)
-  private Float impressionsEtv;
-
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
+  private BigDecimal count;
 
   public static final String SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST = "estimated_paid_traffic_cost";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST)
@@ -119,23 +116,23 @@ public class DataforseoLabsMetricsInfo {
 
   public static final String SERIALIZED_NAME_IS_NEW = "is_new";
   @SerializedName(SERIALIZED_NAME_IS_NEW)
-  private Integer isNew;
+  private BigDecimal isNew;
 
   public static final String SERIALIZED_NAME_IS_UP = "is_up";
   @SerializedName(SERIALIZED_NAME_IS_UP)
-  private Integer isUp;
+  private BigDecimal isUp;
 
   public static final String SERIALIZED_NAME_IS_DOWN = "is_down";
   @SerializedName(SERIALIZED_NAME_IS_DOWN)
-  private Integer isDown;
+  private BigDecimal isDown;
 
   public static final String SERIALIZED_NAME_IS_LOST = "is_lost";
   @SerializedName(SERIALIZED_NAME_IS_LOST)
-  private Integer isLost;
+  private BigDecimal isLost;
 
   public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
-  private Integer clickstreamEtv;
+  private Double clickstreamEtv;
 
   public static final String SERIALIZED_NAME_CLICKSTREAM_GENDER_DISTRIBUTION = "clickstream_gender_distribution";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_GENDER_DISTRIBUTION)
@@ -148,7 +145,7 @@ public class DataforseoLabsMetricsInfo {
   public DataforseoLabsMetricsInfo() {
   }
 
-  public DataforseoLabsMetricsInfo pos1(Integer pos1) {
+  public DataforseoLabsMetricsInfo pos1(BigDecimal pos1) {
     this.pos1 = pos1;
     return this;
   }
@@ -158,16 +155,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos1
    */
   @javax.annotation.Nullable
-  public Integer getPos1() {
+  public BigDecimal getPos1() {
     return pos1;
   }
 
-  public void setPos1(Integer pos1) {
+  public void setPos1(BigDecimal pos1) {
     this.pos1 = pos1;
   }
 
 
-  public DataforseoLabsMetricsInfo pos23(Integer pos23) {
+  public DataforseoLabsMetricsInfo pos23(BigDecimal pos23) {
     this.pos23 = pos23;
     return this;
   }
@@ -177,16 +174,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos23
    */
   @javax.annotation.Nullable
-  public Integer getPos23() {
+  public BigDecimal getPos23() {
     return pos23;
   }
 
-  public void setPos23(Integer pos23) {
+  public void setPos23(BigDecimal pos23) {
     this.pos23 = pos23;
   }
 
 
-  public DataforseoLabsMetricsInfo pos410(Integer pos410) {
+  public DataforseoLabsMetricsInfo pos410(BigDecimal pos410) {
     this.pos410 = pos410;
     return this;
   }
@@ -196,16 +193,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos410
    */
   @javax.annotation.Nullable
-  public Integer getPos410() {
+  public BigDecimal getPos410() {
     return pos410;
   }
 
-  public void setPos410(Integer pos410) {
+  public void setPos410(BigDecimal pos410) {
     this.pos410 = pos410;
   }
 
 
-  public DataforseoLabsMetricsInfo pos1120(Integer pos1120) {
+  public DataforseoLabsMetricsInfo pos1120(BigDecimal pos1120) {
     this.pos1120 = pos1120;
     return this;
   }
@@ -215,16 +212,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos1120
    */
   @javax.annotation.Nullable
-  public Integer getPos1120() {
+  public BigDecimal getPos1120() {
     return pos1120;
   }
 
-  public void setPos1120(Integer pos1120) {
+  public void setPos1120(BigDecimal pos1120) {
     this.pos1120 = pos1120;
   }
 
 
-  public DataforseoLabsMetricsInfo pos2130(Integer pos2130) {
+  public DataforseoLabsMetricsInfo pos2130(BigDecimal pos2130) {
     this.pos2130 = pos2130;
     return this;
   }
@@ -234,16 +231,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos2130
    */
   @javax.annotation.Nullable
-  public Integer getPos2130() {
+  public BigDecimal getPos2130() {
     return pos2130;
   }
 
-  public void setPos2130(Integer pos2130) {
+  public void setPos2130(BigDecimal pos2130) {
     this.pos2130 = pos2130;
   }
 
 
-  public DataforseoLabsMetricsInfo pos3140(Integer pos3140) {
+  public DataforseoLabsMetricsInfo pos3140(BigDecimal pos3140) {
     this.pos3140 = pos3140;
     return this;
   }
@@ -253,16 +250,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos3140
    */
   @javax.annotation.Nullable
-  public Integer getPos3140() {
+  public BigDecimal getPos3140() {
     return pos3140;
   }
 
-  public void setPos3140(Integer pos3140) {
+  public void setPos3140(BigDecimal pos3140) {
     this.pos3140 = pos3140;
   }
 
 
-  public DataforseoLabsMetricsInfo pos4150(Integer pos4150) {
+  public DataforseoLabsMetricsInfo pos4150(BigDecimal pos4150) {
     this.pos4150 = pos4150;
     return this;
   }
@@ -272,16 +269,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos4150
    */
   @javax.annotation.Nullable
-  public Integer getPos4150() {
+  public BigDecimal getPos4150() {
     return pos4150;
   }
 
-  public void setPos4150(Integer pos4150) {
+  public void setPos4150(BigDecimal pos4150) {
     this.pos4150 = pos4150;
   }
 
 
-  public DataforseoLabsMetricsInfo pos5160(Integer pos5160) {
+  public DataforseoLabsMetricsInfo pos5160(BigDecimal pos5160) {
     this.pos5160 = pos5160;
     return this;
   }
@@ -291,16 +288,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos5160
    */
   @javax.annotation.Nullable
-  public Integer getPos5160() {
+  public BigDecimal getPos5160() {
     return pos5160;
   }
 
-  public void setPos5160(Integer pos5160) {
+  public void setPos5160(BigDecimal pos5160) {
     this.pos5160 = pos5160;
   }
 
 
-  public DataforseoLabsMetricsInfo pos6170(Integer pos6170) {
+  public DataforseoLabsMetricsInfo pos6170(BigDecimal pos6170) {
     this.pos6170 = pos6170;
     return this;
   }
@@ -310,16 +307,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos6170
    */
   @javax.annotation.Nullable
-  public Integer getPos6170() {
+  public BigDecimal getPos6170() {
     return pos6170;
   }
 
-  public void setPos6170(Integer pos6170) {
+  public void setPos6170(BigDecimal pos6170) {
     this.pos6170 = pos6170;
   }
 
 
-  public DataforseoLabsMetricsInfo pos7180(Integer pos7180) {
+  public DataforseoLabsMetricsInfo pos7180(BigDecimal pos7180) {
     this.pos7180 = pos7180;
     return this;
   }
@@ -329,16 +326,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos7180
    */
   @javax.annotation.Nullable
-  public Integer getPos7180() {
+  public BigDecimal getPos7180() {
     return pos7180;
   }
 
-  public void setPos7180(Integer pos7180) {
+  public void setPos7180(BigDecimal pos7180) {
     this.pos7180 = pos7180;
   }
 
 
-  public DataforseoLabsMetricsInfo pos8190(Integer pos8190) {
+  public DataforseoLabsMetricsInfo pos8190(BigDecimal pos8190) {
     this.pos8190 = pos8190;
     return this;
   }
@@ -348,16 +345,16 @@ public class DataforseoLabsMetricsInfo {
    * @return pos8190
    */
   @javax.annotation.Nullable
-  public Integer getPos8190() {
+  public BigDecimal getPos8190() {
     return pos8190;
   }
 
-  public void setPos8190(Integer pos8190) {
+  public void setPos8190(BigDecimal pos8190) {
     this.pos8190 = pos8190;
   }
 
 
-  public DataforseoLabsMetricsInfo pos91100(Integer pos91100) {
+  public DataforseoLabsMetricsInfo pos91100(BigDecimal pos91100) {
     this.pos91100 = pos91100;
     return this;
   }
@@ -367,11 +364,11 @@ public class DataforseoLabsMetricsInfo {
    * @return pos91100
    */
   @javax.annotation.Nullable
-  public Integer getPos91100() {
+  public BigDecimal getPos91100() {
     return pos91100;
   }
 
-  public void setPos91100(Integer pos91100) {
+  public void setPos91100(BigDecimal pos91100) {
     this.pos91100 = pos91100;
   }
 
@@ -395,26 +392,7 @@ public class DataforseoLabsMetricsInfo {
   }
 
 
-  public DataforseoLabsMetricsInfo impressionsEtv(Float impressionsEtv) {
-    this.impressionsEtv = impressionsEtv;
-    return this;
-  }
-
-  /**
-   * estimated traffic volume based on impressions estimated organic monthly traffic to the domain or subdomain calculated as the product of CTR (click-through-rate) and impressions values of all keywords in the category that the domain or subdomain ranks for learn more about how the metric is calculated in this help center article
-   * @return impressionsEtv
-   */
-  @javax.annotation.Nullable
-  public Float getImpressionsEtv() {
-    return impressionsEtv;
-  }
-
-  public void setImpressionsEtv(Float impressionsEtv) {
-    this.impressionsEtv = impressionsEtv;
-  }
-
-
-  public DataforseoLabsMetricsInfo count(Long count) {
+  public DataforseoLabsMetricsInfo count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -424,11 +402,11 @@ public class DataforseoLabsMetricsInfo {
    * @return count
    */
   @javax.annotation.Nullable
-  public Long getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
   }
 
@@ -452,7 +430,7 @@ public class DataforseoLabsMetricsInfo {
   }
 
 
-  public DataforseoLabsMetricsInfo isNew(Integer isNew) {
+  public DataforseoLabsMetricsInfo isNew(BigDecimal isNew) {
     this.isNew = isNew;
     return this;
   }
@@ -462,16 +440,16 @@ public class DataforseoLabsMetricsInfo {
    * @return isNew
    */
   @javax.annotation.Nullable
-  public Integer getIsNew() {
+  public BigDecimal getIsNew() {
     return isNew;
   }
 
-  public void setIsNew(Integer isNew) {
+  public void setIsNew(BigDecimal isNew) {
     this.isNew = isNew;
   }
 
 
-  public DataforseoLabsMetricsInfo isUp(Integer isUp) {
+  public DataforseoLabsMetricsInfo isUp(BigDecimal isUp) {
     this.isUp = isUp;
     return this;
   }
@@ -481,16 +459,16 @@ public class DataforseoLabsMetricsInfo {
    * @return isUp
    */
   @javax.annotation.Nullable
-  public Integer getIsUp() {
+  public BigDecimal getIsUp() {
     return isUp;
   }
 
-  public void setIsUp(Integer isUp) {
+  public void setIsUp(BigDecimal isUp) {
     this.isUp = isUp;
   }
 
 
-  public DataforseoLabsMetricsInfo isDown(Integer isDown) {
+  public DataforseoLabsMetricsInfo isDown(BigDecimal isDown) {
     this.isDown = isDown;
     return this;
   }
@@ -500,16 +478,16 @@ public class DataforseoLabsMetricsInfo {
    * @return isDown
    */
   @javax.annotation.Nullable
-  public Integer getIsDown() {
+  public BigDecimal getIsDown() {
     return isDown;
   }
 
-  public void setIsDown(Integer isDown) {
+  public void setIsDown(BigDecimal isDown) {
     this.isDown = isDown;
   }
 
 
-  public DataforseoLabsMetricsInfo isLost(Integer isLost) {
+  public DataforseoLabsMetricsInfo isLost(BigDecimal isLost) {
     this.isLost = isLost;
     return this;
   }
@@ -519,16 +497,16 @@ public class DataforseoLabsMetricsInfo {
    * @return isLost
    */
   @javax.annotation.Nullable
-  public Integer getIsLost() {
+  public BigDecimal getIsLost() {
     return isLost;
   }
 
-  public void setIsLost(Integer isLost) {
+  public void setIsLost(BigDecimal isLost) {
     this.isLost = isLost;
   }
 
 
-  public DataforseoLabsMetricsInfo clickstreamEtv(Integer clickstreamEtv) {
+  public DataforseoLabsMetricsInfo clickstreamEtv(Double clickstreamEtv) {
     this.clickstreamEtv = clickstreamEtv;
     return this;
   }
@@ -538,11 +516,11 @@ public class DataforseoLabsMetricsInfo {
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
-  public Integer getClickstreamEtv() {
+  public Double getClickstreamEtv() {
     return clickstreamEtv;
   }
 
-  public void setClickstreamEtv(Integer clickstreamEtv) {
+  public void setClickstreamEtv(Double clickstreamEtv) {
     this.clickstreamEtv = clickstreamEtv;
   }
 
@@ -668,7 +646,6 @@ public class DataforseoLabsMetricsInfo {
         Objects.equals(this.pos8190, dataforseoLabsMetricsInfo.pos8190) &&
         Objects.equals(this.pos91100, dataforseoLabsMetricsInfo.pos91100) &&
         Objects.equals(this.etv, dataforseoLabsMetricsInfo.etv) &&
-        Objects.equals(this.impressionsEtv, dataforseoLabsMetricsInfo.impressionsEtv) &&
         Objects.equals(this.count, dataforseoLabsMetricsInfo.count) &&
         Objects.equals(this.estimatedPaidTrafficCost, dataforseoLabsMetricsInfo.estimatedPaidTrafficCost) &&
         Objects.equals(this.isNew, dataforseoLabsMetricsInfo.isNew) &&
@@ -687,7 +664,7 @@ public class DataforseoLabsMetricsInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(pos1, pos23, pos410, pos1120, pos2130, pos3140, pos4150, pos5160, pos6170, pos7180, pos8190, pos91100, etv, impressionsEtv, count, estimatedPaidTrafficCost, isNew, isUp, isDown, isLost, clickstreamEtv, clickstreamGenderDistribution, clickstreamAgeDistribution, additionalProperties);
+    return Objects.hash(pos1, pos23, pos410, pos1120, pos2130, pos3140, pos4150, pos5160, pos6170, pos7180, pos8190, pos91100, etv, count, estimatedPaidTrafficCost, isNew, isUp, isDown, isLost, clickstreamEtv, clickstreamGenderDistribution, clickstreamAgeDistribution, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -714,7 +691,6 @@ public class DataforseoLabsMetricsInfo {
     sb.append("    pos8190: ").append(toIndentedString(pos8190)).append("\n");
     sb.append("    pos91100: ").append(toIndentedString(pos91100)).append("\n");
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
-    sb.append("    impressionsEtv: ").append(toIndentedString(impressionsEtv)).append("\n");
     sb.append("    count: ").append(toIndentedString(count)).append("\n");
     sb.append("    estimatedPaidTrafficCost: ").append(toIndentedString(estimatedPaidTrafficCost)).append("\n");
     sb.append("    isNew: ").append(toIndentedString(isNew)).append("\n");
@@ -760,7 +736,6 @@ public class DataforseoLabsMetricsInfo {
     openapiFields.add("pos_81_90");
     openapiFields.add("pos_91_100");
     openapiFields.add("etv");
-    openapiFields.add("impressions_etv");
     openapiFields.add("count");
     openapiFields.add("estimated_paid_traffic_cost");
     openapiFields.add("is_new");

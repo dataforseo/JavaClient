@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.SectionContentItemInfo;
 import io.github.dataforseo.client.model.TableContentInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TopicInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TopicInfo {
   public static final String SERIALIZED_NAME_H_TITLE = "h_title";
   @SerializedName(SERIALIZED_NAME_H_TITLE)
@@ -73,7 +74,7 @@ public class TopicInfo {
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
   @SerializedName(SERIALIZED_NAME_LEVEL)
-  private Integer level;
+  private BigDecimal level;
 
   public static final String SERIALIZED_NAME_PRIMARY_CONTENT = "primary_content";
   @SerializedName(SERIALIZED_NAME_PRIMARY_CONTENT)
@@ -166,7 +167,7 @@ public class TopicInfo {
   }
 
 
-  public TopicInfo level(Integer level) {
+  public TopicInfo level(BigDecimal level) {
     this.level = level;
     return this;
   }
@@ -176,11 +177,11 @@ public class TopicInfo {
    * @return level
    */
   @javax.annotation.Nullable
-  public Integer getLevel() {
+  public BigDecimal getLevel() {
     return level;
   }
 
-  public void setLevel(Integer level) {
+  public void setLevel(BigDecimal level) {
     this.level = level;
   }
 

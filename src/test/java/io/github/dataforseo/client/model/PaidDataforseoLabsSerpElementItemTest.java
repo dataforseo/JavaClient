@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.RankChanges;
 import io.github.dataforseo.client.model.RankInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -85,6 +86,14 @@ public class PaidDataforseoLabsSerpElementItemTest {
     @Test
     public void xpathTest() {
         // TODO: test xpath
+    }
+
+    /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
     }
 
     /**
@@ -184,27 +193,11 @@ public class PaidDataforseoLabsSerpElementItemTest {
     }
 
     /**
-     * Test the property 'impressionsEtv'
-     */
-    @Test
-    public void impressionsEtvTest() {
-        // TODO: test impressionsEtv
-    }
-
-    /**
      * Test the property 'estimatedPaidTrafficCost'
      */
     @Test
     public void estimatedPaidTrafficCostTest() {
         // TODO: test estimatedPaidTrafficCost
-    }
-
-    /**
-     * Test the property 'rankChanges'
-     */
-    @Test
-    public void rankChangesTest() {
-        // TODO: test rankChanges
     }
 
     /**
@@ -216,11 +209,11 @@ public class PaidDataforseoLabsSerpElementItemTest {
     }
 
     /**
-     * Test the property 'seType'
+     * Test the property 'rankChanges'
      */
     @Test
-    public void seTypeTest() {
-        // TODO: test seType
+    public void rankChangesTest() {
+        // TODO: test rankChanges
     }
 
     /**

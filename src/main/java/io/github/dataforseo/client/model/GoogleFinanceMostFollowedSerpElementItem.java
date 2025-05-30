@@ -20,8 +20,8 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseGoogleFinanceSerpElementItem;
-import io.github.dataforseo.client.model.GoogleFinanceAssetPairElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,21 +53,67 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleFinanceMostFollowedSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleFinanceMostFollowedSerpElementItem extends BaseGoogleFinanceSerpElementItem {
+  public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
+  @SerializedName(SERIALIZED_NAME_RANK_GROUP)
+  private BigDecimal rankGroup;
+
+  public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
+  @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
+  private BigDecimal rankAbsolute;
+
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<GoogleFinanceAssetPairElement> items;
+  private List<BaseGoogleFinanceSerpElementItem> items;
 
   public GoogleFinanceMostFollowedSerpElementItem() {
   }
 
-  public GoogleFinanceMostFollowedSerpElementItem items(List<GoogleFinanceAssetPairElement> items) {
+  public GoogleFinanceMostFollowedSerpElementItem rankGroup(BigDecimal rankGroup) {
+    this.rankGroup = rankGroup;
+    return this;
+  }
+
+  /**
+   * group rank in SERP position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group
+   * @return rankGroup
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getRankGroup() {
+    return rankGroup;
+  }
+
+  public void setRankGroup(BigDecimal rankGroup) {
+    this.rankGroup = rankGroup;
+  }
+
+
+  public GoogleFinanceMostFollowedSerpElementItem rankAbsolute(BigDecimal rankAbsolute) {
+    this.rankAbsolute = rankAbsolute;
+    return this;
+  }
+
+  /**
+   * absolute rank in SERP absolute position among all the elements in SERP
+   * @return rankAbsolute
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getRankAbsolute() {
+    return rankAbsolute;
+  }
+
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
+    this.rankAbsolute = rankAbsolute;
+  }
+
+
+  public GoogleFinanceMostFollowedSerpElementItem items(List<BaseGoogleFinanceSerpElementItem> items) {
     this.items = items;
     return this;
   }
 
-  public GoogleFinanceMostFollowedSerpElementItem addItemsItem(GoogleFinanceAssetPairElement itemsItem) {
+  public GoogleFinanceMostFollowedSerpElementItem addItemsItem(BaseGoogleFinanceSerpElementItem itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -80,11 +126,11 @@ public class GoogleFinanceMostFollowedSerpElementItem extends BaseGoogleFinanceS
    * @return items
    */
   @javax.annotation.Nullable
-  public List<GoogleFinanceAssetPairElement> getItems() {
+  public List<BaseGoogleFinanceSerpElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<GoogleFinanceAssetPairElement> items) {
+  public void setItems(List<BaseGoogleFinanceSerpElementItem> items) {
     this.items = items;
   }
 
@@ -143,7 +189,9 @@ public class GoogleFinanceMostFollowedSerpElementItem extends BaseGoogleFinanceS
       return false;
     }
     GoogleFinanceMostFollowedSerpElementItem googleFinanceMostFollowedSerpElementItem = (GoogleFinanceMostFollowedSerpElementItem) o;
-    return Objects.equals(this.items, googleFinanceMostFollowedSerpElementItem.items)&&
+    return Objects.equals(this.rankGroup, googleFinanceMostFollowedSerpElementItem.rankGroup) &&
+        Objects.equals(this.rankAbsolute, googleFinanceMostFollowedSerpElementItem.rankAbsolute) &&
+        Objects.equals(this.items, googleFinanceMostFollowedSerpElementItem.items)&&
         Objects.equals(this.additionalProperties, googleFinanceMostFollowedSerpElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -154,7 +202,7 @@ public class GoogleFinanceMostFollowedSerpElementItem extends BaseGoogleFinanceS
 
   @Override
   public int hashCode() {
-    return Objects.hash(items, super.hashCode(), additionalProperties);
+    return Objects.hash(rankGroup, rankAbsolute, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -169,6 +217,8 @@ public class GoogleFinanceMostFollowedSerpElementItem extends BaseGoogleFinanceS
     StringBuilder sb = new StringBuilder();
     sb.append("class GoogleFinanceMostFollowedSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    rankGroup: ").append(toIndentedString(rankGroup)).append("\n");
+    sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -194,6 +244,8 @@ public class GoogleFinanceMostFollowedSerpElementItem extends BaseGoogleFinanceS
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
+    openapiFields.add("rank_group");
+    openapiFields.add("rank_absolute");
     openapiFields.add("items");
 
     // a set of required properties/fields (JSON key names)
@@ -223,7 +275,7 @@ public class GoogleFinanceMostFollowedSerpElementItem extends BaseGoogleFinanceS
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            GoogleFinanceAssetPairElement.validateJsonElement(jsonArrayitems.get(i));
+            BaseGoogleFinanceSerpElementItem.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

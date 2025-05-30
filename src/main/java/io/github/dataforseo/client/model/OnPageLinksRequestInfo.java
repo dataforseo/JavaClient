@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageLinksRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageLinksRequestInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -76,6 +76,10 @@ public class OnPageLinksRequestInfo {
   public static final String SERIALIZED_NAME_FILTERS = "filters";
   @SerializedName(SERIALIZED_NAME_FILTERS)
   private List<Object> filters;
+
+  public static final String SERIALIZED_NAME_SEARCH_AFTER_TOKEN = "search_after_token";
+  @SerializedName(SERIALIZED_NAME_SEARCH_AFTER_TOKEN)
+  private String searchAfterToken;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -206,6 +210,25 @@ public class OnPageLinksRequestInfo {
   }
 
 
+  public OnPageLinksRequestInfo searchAfterToken(String searchAfterToken) {
+    this.searchAfterToken = searchAfterToken;
+    return this;
+  }
+
+  /**
+   * token for subsequent requests optional field provided in the identical filed of the response to each request; use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request; by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task; search_after_token values are unique for each subsequent task ; Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+   * @return searchAfterToken
+   */
+  @javax.annotation.Nullable
+  public String getSearchAfterToken() {
+    return searchAfterToken;
+  }
+
+  public void setSearchAfterToken(String searchAfterToken) {
+    this.searchAfterToken = searchAfterToken;
+  }
+
+
   public OnPageLinksRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -285,6 +308,7 @@ public class OnPageLinksRequestInfo {
         Objects.equals(this.limit, onPageLinksRequestInfo.limit) &&
         Objects.equals(this.offset, onPageLinksRequestInfo.offset) &&
         Objects.equals(this.filters, onPageLinksRequestInfo.filters) &&
+        Objects.equals(this.searchAfterToken, onPageLinksRequestInfo.searchAfterToken) &&
         Objects.equals(this.tag, onPageLinksRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, onPageLinksRequestInfo.additionalProperties);
   }
@@ -295,7 +319,7 @@ public class OnPageLinksRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, pageFrom, pageTo, limit, offset, filters, tag, additionalProperties);
+    return Objects.hash(id, pageFrom, pageTo, limit, offset, filters, searchAfterToken, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -315,6 +339,7 @@ public class OnPageLinksRequestInfo {
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
+    sb.append("    searchAfterToken: ").append(toIndentedString(searchAfterToken)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -345,6 +370,7 @@ public class OnPageLinksRequestInfo {
     openapiFields.add("limit");
     openapiFields.add("offset");
     openapiFields.add("filters");
+    openapiFields.add("search_after_token");
     openapiFields.add("tag");
 
     // a set of required properties/fields (JSON key names)
@@ -376,6 +402,9 @@ public class OnPageLinksRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("filters") != null && !jsonObj.get("filters").isJsonNull() && !jsonObj.get("filters").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `filters` to be an array in the JSON string but got `%s`", jsonObj.get("filters").toString()));
+      }
+      if ((jsonObj.get("search_after_token") != null && !jsonObj.get("search_after_token").isJsonNull()) && !jsonObj.get("search_after_token").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `search_after_token` to be a primitive type in the JSON string but got `%s`", jsonObj.get("search_after_token").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

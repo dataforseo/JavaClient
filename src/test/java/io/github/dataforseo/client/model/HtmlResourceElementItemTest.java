@@ -25,6 +25,7 @@ import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import io.github.dataforseo.client.model.PageMetaInfo;
 import io.github.dataforseo.client.model.PageTiming;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

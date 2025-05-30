@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * RedditReviews
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-02-11T19:55:34.761968200+02:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RedditReviews {
   public static final String SERIALIZED_NAME_SUBREDDIT = "subreddit";
   @SerializedName(SERIALIZED_NAME_SUBREDDIT)
@@ -69,7 +70,7 @@ public class RedditReviews {
 
   public static final String SERIALIZED_NAME_SUBREDDIT_MEMBERS = "subreddit_members";
   @SerializedName(SERIALIZED_NAME_SUBREDDIT_MEMBERS)
-  private Integer subredditMembers;
+  private BigDecimal subredditMembers;
 
   public RedditReviews() {
   }
@@ -150,7 +151,7 @@ public class RedditReviews {
   }
 
 
-  public RedditReviews subredditMembers(Integer subredditMembers) {
+  public RedditReviews subredditMembers(BigDecimal subredditMembers) {
     this.subredditMembers = subredditMembers;
     return this;
   }
@@ -160,11 +161,11 @@ public class RedditReviews {
    * @return subredditMembers
    */
   @javax.annotation.Nullable
-  public Integer getSubredditMembers() {
+  public BigDecimal getSubredditMembers() {
     return subredditMembers;
   }
 
-  public void setSubredditMembers(Integer subredditMembers) {
+  public void setSubredditMembers(BigDecimal subredditMembers) {
     this.subredditMembers = subredditMembers;
   }
 

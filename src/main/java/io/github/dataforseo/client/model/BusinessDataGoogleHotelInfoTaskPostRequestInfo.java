@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelInfoTaskPostRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
@@ -104,6 +104,22 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   public static final String SERIALIZED_NAME_CHILDREN = "children";
   @SerializedName(SERIALIZED_NAME_CHILDREN)
   private List<String> children;
+
+  public static final String SERIALIZED_NAME_LOAD_PRICES_BY_DATES = "load_prices_by_dates";
+  @SerializedName(SERIALIZED_NAME_LOAD_PRICES_BY_DATES)
+  private Boolean loadPricesByDates;
+
+  public static final String SERIALIZED_NAME_PRICES_START_DATE = "prices_start_date";
+  @SerializedName(SERIALIZED_NAME_PRICES_START_DATE)
+  private String pricesStartDate;
+
+  public static final String SERIALIZED_NAME_PRICES_END_DATE = "prices_end_date";
+  @SerializedName(SERIALIZED_NAME_PRICES_END_DATE)
+  private String pricesEndDate;
+
+  public static final String SERIALIZED_NAME_PRICES_DATE_RANGE = "prices_date_range";
+  @SerializedName(SERIALIZED_NAME_PRICES_DATE_RANGE)
+  private String pricesDateRange;
 
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
@@ -379,6 +395,82 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
   }
 
 
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo loadPricesByDates(Boolean loadPricesByDates) {
+    this.loadPricesByDates = loadPricesByDates;
+    return this;
+  }
+
+  /**
+   * load hotel stay prices by dates optional field if you specify this parameter with true, the response will include the prices_by_dates array with hotel stay prices divided by dates if you use this parameter, you will be charged double the base price for a request
+   * @return loadPricesByDates
+   */
+  @javax.annotation.Nullable
+  public Boolean getLoadPricesByDates() {
+    return loadPricesByDates;
+  }
+
+  public void setLoadPricesByDates(Boolean loadPricesByDates) {
+    this.loadPricesByDates = loadPricesByDates;
+  }
+
+
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo pricesStartDate(String pricesStartDate) {
+    this.pricesStartDate = pricesStartDate;
+    return this;
+  }
+
+  /**
+   * start date to load prices by dates optional field to use this parameter, you must specify load_prices_by_dates with true if this parameter is not specified, the start date is set to check_in date date format: yyyy-mm-dd example: 2025-05-20
+   * @return pricesStartDate
+   */
+  @javax.annotation.Nullable
+  public String getPricesStartDate() {
+    return pricesStartDate;
+  }
+
+  public void setPricesStartDate(String pricesStartDate) {
+    this.pricesStartDate = pricesStartDate;
+  }
+
+
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo pricesEndDate(String pricesEndDate) {
+    this.pricesEndDate = pricesEndDate;
+    return this;
+  }
+
+  /**
+   * end date to load prices by dates optional field to use this parameter, you must specify load_prices_by_dates with true if this parameter is not specified, you will get prices by date for the month date format: yyyy-mm-dd example: 2025-05-21
+   * @return pricesEndDate
+   */
+  @javax.annotation.Nullable
+  public String getPricesEndDate() {
+    return pricesEndDate;
+  }
+
+  public void setPricesEndDate(String pricesEndDate) {
+    this.pricesEndDate = pricesEndDate;
+  }
+
+
+  public BusinessDataGoogleHotelInfoTaskPostRequestInfo pricesDateRange(String pricesDateRange) {
+    this.pricesDateRange = pricesDateRange;
+    return this;
+  }
+
+  /**
+   * predefined period for retrieving daily price data optional field to use this parameter, you must specify load_prices_by_dates with true if the prices_start_date is not specified, the start date is set to check_in date possible values: month, three_months, six_months, year default value: month
+   * @return pricesDateRange
+   */
+  @javax.annotation.Nullable
+  public String getPricesDateRange() {
+    return pricesDateRange;
+  }
+
+  public void setPricesDateRange(String pricesDateRange) {
+    this.pricesDateRange = pricesDateRange;
+  }
+
+
   public BusinessDataGoogleHotelInfoTaskPostRequestInfo tag(String tag) {
     this.tag = tag;
     return this;
@@ -522,6 +614,10 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
         Objects.equals(this.currency, businessDataGoogleHotelInfoTaskPostRequestInfo.currency) &&
         Objects.equals(this.adults, businessDataGoogleHotelInfoTaskPostRequestInfo.adults) &&
         Objects.equals(this.children, businessDataGoogleHotelInfoTaskPostRequestInfo.children) &&
+        Objects.equals(this.loadPricesByDates, businessDataGoogleHotelInfoTaskPostRequestInfo.loadPricesByDates) &&
+        Objects.equals(this.pricesStartDate, businessDataGoogleHotelInfoTaskPostRequestInfo.pricesStartDate) &&
+        Objects.equals(this.pricesEndDate, businessDataGoogleHotelInfoTaskPostRequestInfo.pricesEndDate) &&
+        Objects.equals(this.pricesDateRange, businessDataGoogleHotelInfoTaskPostRequestInfo.pricesDateRange) &&
         Objects.equals(this.tag, businessDataGoogleHotelInfoTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, businessDataGoogleHotelInfoTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, businessDataGoogleHotelInfoTaskPostRequestInfo.postbackData) &&
@@ -535,7 +631,7 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(hotelIdentifier, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, checkIn, checkOut, currency, adults, children, tag, postbackUrl, postbackData, pingbackUrl, additionalProperties);
+    return Objects.hash(hotelIdentifier, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, checkIn, checkOut, currency, adults, children, loadPricesByDates, pricesStartDate, pricesEndDate, pricesDateRange, tag, postbackUrl, postbackData, pingbackUrl, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -562,6 +658,10 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    adults: ").append(toIndentedString(adults)).append("\n");
     sb.append("    children: ").append(toIndentedString(children)).append("\n");
+    sb.append("    loadPricesByDates: ").append(toIndentedString(loadPricesByDates)).append("\n");
+    sb.append("    pricesStartDate: ").append(toIndentedString(pricesStartDate)).append("\n");
+    sb.append("    pricesEndDate: ").append(toIndentedString(pricesEndDate)).append("\n");
+    sb.append("    pricesDateRange: ").append(toIndentedString(pricesDateRange)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -602,6 +702,10 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
     openapiFields.add("currency");
     openapiFields.add("adults");
     openapiFields.add("children");
+    openapiFields.add("load_prices_by_dates");
+    openapiFields.add("prices_start_date");
+    openapiFields.add("prices_end_date");
+    openapiFields.add("prices_date_range");
     openapiFields.add("tag");
     openapiFields.add("postback_url");
     openapiFields.add("postback_data");
@@ -654,6 +758,15 @@ public class BusinessDataGoogleHotelInfoTaskPostRequestInfo {
       // ensure the optional json data is an array if present
       if (jsonObj.get("children") != null && !jsonObj.get("children").isJsonNull() && !jsonObj.get("children").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `children` to be an array in the JSON string but got `%s`", jsonObj.get("children").toString()));
+      }
+      if ((jsonObj.get("prices_start_date") != null && !jsonObj.get("prices_start_date").isJsonNull()) && !jsonObj.get("prices_start_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `prices_start_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("prices_start_date").toString()));
+      }
+      if ((jsonObj.get("prices_end_date") != null && !jsonObj.get("prices_end_date").isJsonNull()) && !jsonObj.get("prices_end_date").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `prices_end_date` to be a primitive type in the JSON string but got `%s`", jsonObj.get("prices_end_date").toString()));
+      }
+      if ((jsonObj.get("prices_date_range") != null && !jsonObj.get("prices_date_range").isJsonNull()) && !jsonObj.get("prices_date_range").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `prices_date_range` to be a primitive type in the JSON string but got `%s`", jsonObj.get("prices_date_range").toString()));
       }
       if ((jsonObj.get("tag") != null && !jsonObj.get("tag").isJsonNull()) && !jsonObj.get("tag").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tag` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tag").toString()));

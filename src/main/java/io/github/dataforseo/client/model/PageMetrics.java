@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -51,43 +52,43 @@ import io.github.dataforseo.client.JSON;
 /**
  * PageMetrics
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PageMetrics {
   public static final String SERIALIZED_NAME_LINKS_EXTERNAL = "links_external";
   @SerializedName(SERIALIZED_NAME_LINKS_EXTERNAL)
-  private Integer linksExternal;
+  private BigDecimal linksExternal;
 
   public static final String SERIALIZED_NAME_LINKS_INTERNAL = "links_internal";
   @SerializedName(SERIALIZED_NAME_LINKS_INTERNAL)
-  private Integer linksInternal;
+  private BigDecimal linksInternal;
 
   public static final String SERIALIZED_NAME_DUPLICATE_TITLE = "duplicate_title";
   @SerializedName(SERIALIZED_NAME_DUPLICATE_TITLE)
-  private Integer duplicateTitle;
+  private BigDecimal duplicateTitle;
 
   public static final String SERIALIZED_NAME_DUPLICATE_DESCRIPTION = "duplicate_description";
   @SerializedName(SERIALIZED_NAME_DUPLICATE_DESCRIPTION)
-  private Integer duplicateDescription;
+  private BigDecimal duplicateDescription;
 
   public static final String SERIALIZED_NAME_DUPLICATE_CONTENT = "duplicate_content";
   @SerializedName(SERIALIZED_NAME_DUPLICATE_CONTENT)
-  private Integer duplicateContent;
+  private BigDecimal duplicateContent;
 
   public static final String SERIALIZED_NAME_BROKEN_LINKS = "broken_links";
   @SerializedName(SERIALIZED_NAME_BROKEN_LINKS)
-  private Integer brokenLinks;
+  private BigDecimal brokenLinks;
 
   public static final String SERIALIZED_NAME_BROKEN_RESOURCES = "broken_resources";
   @SerializedName(SERIALIZED_NAME_BROKEN_RESOURCES)
-  private Integer brokenResources;
+  private BigDecimal brokenResources;
 
   public static final String SERIALIZED_NAME_LINKS_RELATION_CONFLICT = "links_relation_conflict";
   @SerializedName(SERIALIZED_NAME_LINKS_RELATION_CONFLICT)
-  private Integer linksRelationConflict;
+  private BigDecimal linksRelationConflict;
 
   public static final String SERIALIZED_NAME_REDIRECT_LOOP = "redirect_loop";
   @SerializedName(SERIALIZED_NAME_REDIRECT_LOOP)
-  private Integer redirectLoop;
+  private BigDecimal redirectLoop;
 
   public static final String SERIALIZED_NAME_ONPAGE_SCORE = "onpage_score";
   @SerializedName(SERIALIZED_NAME_ONPAGE_SCORE)
@@ -95,7 +96,7 @@ public class PageMetrics {
 
   public static final String SERIALIZED_NAME_NON_INDEXABLE = "non_indexable";
   @SerializedName(SERIALIZED_NAME_NON_INDEXABLE)
-  private Integer nonIndexable;
+  private BigDecimal nonIndexable;
 
   public static final String SERIALIZED_NAME_CHECKS = "checks";
   @SerializedName(SERIALIZED_NAME_CHECKS)
@@ -104,7 +105,7 @@ public class PageMetrics {
   public PageMetrics() {
   }
 
-  public PageMetrics linksExternal(Integer linksExternal) {
+  public PageMetrics linksExternal(BigDecimal linksExternal) {
     this.linksExternal = linksExternal;
     return this;
   }
@@ -114,16 +115,16 @@ public class PageMetrics {
    * @return linksExternal
    */
   @javax.annotation.Nullable
-  public Integer getLinksExternal() {
+  public BigDecimal getLinksExternal() {
     return linksExternal;
   }
 
-  public void setLinksExternal(Integer linksExternal) {
+  public void setLinksExternal(BigDecimal linksExternal) {
     this.linksExternal = linksExternal;
   }
 
 
-  public PageMetrics linksInternal(Integer linksInternal) {
+  public PageMetrics linksInternal(BigDecimal linksInternal) {
     this.linksInternal = linksInternal;
     return this;
   }
@@ -133,16 +134,16 @@ public class PageMetrics {
    * @return linksInternal
    */
   @javax.annotation.Nullable
-  public Integer getLinksInternal() {
+  public BigDecimal getLinksInternal() {
     return linksInternal;
   }
 
-  public void setLinksInternal(Integer linksInternal) {
+  public void setLinksInternal(BigDecimal linksInternal) {
     this.linksInternal = linksInternal;
   }
 
 
-  public PageMetrics duplicateTitle(Integer duplicateTitle) {
+  public PageMetrics duplicateTitle(BigDecimal duplicateTitle) {
     this.duplicateTitle = duplicateTitle;
     return this;
   }
@@ -152,16 +153,16 @@ public class PageMetrics {
    * @return duplicateTitle
    */
   @javax.annotation.Nullable
-  public Integer getDuplicateTitle() {
+  public BigDecimal getDuplicateTitle() {
     return duplicateTitle;
   }
 
-  public void setDuplicateTitle(Integer duplicateTitle) {
+  public void setDuplicateTitle(BigDecimal duplicateTitle) {
     this.duplicateTitle = duplicateTitle;
   }
 
 
-  public PageMetrics duplicateDescription(Integer duplicateDescription) {
+  public PageMetrics duplicateDescription(BigDecimal duplicateDescription) {
     this.duplicateDescription = duplicateDescription;
     return this;
   }
@@ -171,16 +172,16 @@ public class PageMetrics {
    * @return duplicateDescription
    */
   @javax.annotation.Nullable
-  public Integer getDuplicateDescription() {
+  public BigDecimal getDuplicateDescription() {
     return duplicateDescription;
   }
 
-  public void setDuplicateDescription(Integer duplicateDescription) {
+  public void setDuplicateDescription(BigDecimal duplicateDescription) {
     this.duplicateDescription = duplicateDescription;
   }
 
 
-  public PageMetrics duplicateContent(Integer duplicateContent) {
+  public PageMetrics duplicateContent(BigDecimal duplicateContent) {
     this.duplicateContent = duplicateContent;
     return this;
   }
@@ -190,16 +191,16 @@ public class PageMetrics {
    * @return duplicateContent
    */
   @javax.annotation.Nullable
-  public Integer getDuplicateContent() {
+  public BigDecimal getDuplicateContent() {
     return duplicateContent;
   }
 
-  public void setDuplicateContent(Integer duplicateContent) {
+  public void setDuplicateContent(BigDecimal duplicateContent) {
     this.duplicateContent = duplicateContent;
   }
 
 
-  public PageMetrics brokenLinks(Integer brokenLinks) {
+  public PageMetrics brokenLinks(BigDecimal brokenLinks) {
     this.brokenLinks = brokenLinks;
     return this;
   }
@@ -209,16 +210,16 @@ public class PageMetrics {
    * @return brokenLinks
    */
   @javax.annotation.Nullable
-  public Integer getBrokenLinks() {
+  public BigDecimal getBrokenLinks() {
     return brokenLinks;
   }
 
-  public void setBrokenLinks(Integer brokenLinks) {
+  public void setBrokenLinks(BigDecimal brokenLinks) {
     this.brokenLinks = brokenLinks;
   }
 
 
-  public PageMetrics brokenResources(Integer brokenResources) {
+  public PageMetrics brokenResources(BigDecimal brokenResources) {
     this.brokenResources = brokenResources;
     return this;
   }
@@ -228,16 +229,16 @@ public class PageMetrics {
    * @return brokenResources
    */
   @javax.annotation.Nullable
-  public Integer getBrokenResources() {
+  public BigDecimal getBrokenResources() {
     return brokenResources;
   }
 
-  public void setBrokenResources(Integer brokenResources) {
+  public void setBrokenResources(BigDecimal brokenResources) {
     this.brokenResources = brokenResources;
   }
 
 
-  public PageMetrics linksRelationConflict(Integer linksRelationConflict) {
+  public PageMetrics linksRelationConflict(BigDecimal linksRelationConflict) {
     this.linksRelationConflict = linksRelationConflict;
     return this;
   }
@@ -247,16 +248,16 @@ public class PageMetrics {
    * @return linksRelationConflict
    */
   @javax.annotation.Nullable
-  public Integer getLinksRelationConflict() {
+  public BigDecimal getLinksRelationConflict() {
     return linksRelationConflict;
   }
 
-  public void setLinksRelationConflict(Integer linksRelationConflict) {
+  public void setLinksRelationConflict(BigDecimal linksRelationConflict) {
     this.linksRelationConflict = linksRelationConflict;
   }
 
 
-  public PageMetrics redirectLoop(Integer redirectLoop) {
+  public PageMetrics redirectLoop(BigDecimal redirectLoop) {
     this.redirectLoop = redirectLoop;
     return this;
   }
@@ -266,11 +267,11 @@ public class PageMetrics {
    * @return redirectLoop
    */
   @javax.annotation.Nullable
-  public Integer getRedirectLoop() {
+  public BigDecimal getRedirectLoop() {
     return redirectLoop;
   }
 
-  public void setRedirectLoop(Integer redirectLoop) {
+  public void setRedirectLoop(BigDecimal redirectLoop) {
     this.redirectLoop = redirectLoop;
   }
 
@@ -294,7 +295,7 @@ public class PageMetrics {
   }
 
 
-  public PageMetrics nonIndexable(Integer nonIndexable) {
+  public PageMetrics nonIndexable(BigDecimal nonIndexable) {
     this.nonIndexable = nonIndexable;
     return this;
   }
@@ -304,11 +305,11 @@ public class PageMetrics {
    * @return nonIndexable
    */
   @javax.annotation.Nullable
-  public Integer getNonIndexable() {
+  public BigDecimal getNonIndexable() {
     return nonIndexable;
   }
 
-  public void setNonIndexable(Integer nonIndexable) {
+  public void setNonIndexable(BigDecimal nonIndexable) {
     this.nonIndexable = nonIndexable;
   }
 

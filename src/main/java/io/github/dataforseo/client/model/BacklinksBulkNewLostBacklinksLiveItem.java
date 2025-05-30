@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksBulkNewLostBacklinksLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksBulkNewLostBacklinksLiveItem {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -57,11 +58,11 @@ public class BacklinksBulkNewLostBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_NEW_BACKLINKS = "new_backlinks";
   @SerializedName(SERIALIZED_NAME_NEW_BACKLINKS)
-  private Long newBacklinks;
+  private BigDecimal newBacklinks;
 
   public static final String SERIALIZED_NAME_LOST_BACKLINKS = "lost_backlinks";
   @SerializedName(SERIALIZED_NAME_LOST_BACKLINKS)
-  private Long lostBacklinks;
+  private BigDecimal lostBacklinks;
 
   public BacklinksBulkNewLostBacklinksLiveItem() {
   }
@@ -85,7 +86,7 @@ public class BacklinksBulkNewLostBacklinksLiveItem {
   }
 
 
-  public BacklinksBulkNewLostBacklinksLiveItem newBacklinks(Long newBacklinks) {
+  public BacklinksBulkNewLostBacklinksLiveItem newBacklinks(BigDecimal newBacklinks) {
     this.newBacklinks = newBacklinks;
     return this;
   }
@@ -95,16 +96,16 @@ public class BacklinksBulkNewLostBacklinksLiveItem {
    * @return newBacklinks
    */
   @javax.annotation.Nullable
-  public Long getNewBacklinks() {
+  public BigDecimal getNewBacklinks() {
     return newBacklinks;
   }
 
-  public void setNewBacklinks(Long newBacklinks) {
+  public void setNewBacklinks(BigDecimal newBacklinks) {
     this.newBacklinks = newBacklinks;
   }
 
 
-  public BacklinksBulkNewLostBacklinksLiveItem lostBacklinks(Long lostBacklinks) {
+  public BacklinksBulkNewLostBacklinksLiveItem lostBacklinks(BigDecimal lostBacklinks) {
     this.lostBacklinks = lostBacklinks;
     return this;
   }
@@ -114,11 +115,11 @@ public class BacklinksBulkNewLostBacklinksLiveItem {
    * @return lostBacklinks
    */
   @javax.annotation.Nullable
-  public Long getLostBacklinks() {
+  public BigDecimal getLostBacklinks() {
     return lostBacklinks;
   }
 
-  public void setLostBacklinks(Long lostBacklinks) {
+  public void setLostBacklinks(BigDecimal lostBacklinks) {
     this.lostBacklinks = lostBacklinks;
   }
 

@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.OtherSitesReviewsInfo;
 import io.github.dataforseo.client.model.ReviewMentionInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * HotelReviewInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HotelReviewInfo {
   public static final String SERIALIZED_NAME_VALUE = "value";
   @SerializedName(SERIALIZED_NAME_VALUE)
@@ -63,7 +64,7 @@ public class HotelReviewInfo {
 
   public static final String SERIALIZED_NAME_VOTES_COUNT = "votes_count";
   @SerializedName(SERIALIZED_NAME_VOTES_COUNT)
-  private Long votesCount;
+  private BigDecimal votesCount;
 
   public static final String SERIALIZED_NAME_MENTIONS = "mentions";
   @SerializedName(SERIALIZED_NAME_MENTIONS)
@@ -99,7 +100,7 @@ public class HotelReviewInfo {
   }
 
 
-  public HotelReviewInfo votesCount(Long votesCount) {
+  public HotelReviewInfo votesCount(BigDecimal votesCount) {
     this.votesCount = votesCount;
     return this;
   }
@@ -109,11 +110,11 @@ public class HotelReviewInfo {
    * @return votesCount
    */
   @javax.annotation.Nullable
-  public Long getVotesCount() {
+  public BigDecimal getVotesCount() {
     return votesCount;
   }
 
-  public void setVotesCount(Long votesCount) {
+  public void setVotesCount(BigDecimal votesCount) {
     this.votesCount = votesCount;
   }
 

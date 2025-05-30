@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.ImagesElement;
 import io.github.dataforseo.client.model.Rectangle;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * FeaturedSnippetSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
@@ -76,14 +77,6 @@ public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
   public static final String SERIALIZED_NAME_BREADCRUMB = "breadcrumb";
   @SerializedName(SERIALIZED_NAME_BREADCRUMB)
   private String breadcrumb;
-
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
 
   public static final String SERIALIZED_NAME_FEATURED_TITLE = "featured_title";
   @SerializedName(SERIALIZED_NAME_FEATURED_TITLE)
@@ -200,44 +193,6 @@ public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
 
   public void setBreadcrumb(String breadcrumb) {
     this.breadcrumb = breadcrumb;
-  }
-
-
-  public FeaturedSnippetSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public FeaturedSnippetSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
   }
 
 
@@ -403,8 +358,6 @@ public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
         Objects.equals(this.description, featuredSnippetSerpElementItem.description) &&
         Objects.equals(this.url, featuredSnippetSerpElementItem.url) &&
         Objects.equals(this.breadcrumb, featuredSnippetSerpElementItem.breadcrumb) &&
-        Objects.equals(this.position, featuredSnippetSerpElementItem.position) &&
-        Objects.equals(this.xpath, featuredSnippetSerpElementItem.xpath) &&
         Objects.equals(this.featuredTitle, featuredSnippetSerpElementItem.featuredTitle) &&
         Objects.equals(this.timestamp, featuredSnippetSerpElementItem.timestamp) &&
         Objects.equals(this.images, featuredSnippetSerpElementItem.images) &&
@@ -420,7 +373,7 @@ public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(domain, title, description, url, breadcrumb, position, xpath, featuredTitle, timestamp, images, table, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(domain, title, description, url, breadcrumb, featuredTitle, timestamp, images, table, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -440,8 +393,6 @@ public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    breadcrumb: ").append(toIndentedString(breadcrumb)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    featuredTitle: ").append(toIndentedString(featuredTitle)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
@@ -473,13 +424,13 @@ public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
+    openapiFields.add("position");
+    openapiFields.add("xpath");
     openapiFields.add("domain");
     openapiFields.add("title");
     openapiFields.add("description");
     openapiFields.add("url");
     openapiFields.add("breadcrumb");
-    openapiFields.add("position");
-    openapiFields.add("xpath");
     openapiFields.add("featured_title");
     openapiFields.add("timestamp");
     openapiFields.add("images");
@@ -517,12 +468,6 @@ public class FeaturedSnippetSerpElementItem extends BaseSerpElementItem {
       }
       if ((jsonObj.get("breadcrumb") != null && !jsonObj.get("breadcrumb").isJsonNull()) && !jsonObj.get("breadcrumb").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `breadcrumb` to be a primitive type in the JSON string but got `%s`", jsonObj.get("breadcrumb").toString()));
-      }
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
       }
       if ((jsonObj.get("featured_title") != null && !jsonObj.get("featured_title").isJsonNull()) && !jsonObj.get("featured_title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `featured_title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("featured_title").toString()));

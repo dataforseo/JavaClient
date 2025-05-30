@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
 import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -67,19 +68,19 @@ public class AmazonAmazonSellerMainItemSerpElementItemTest {
     }
 
     /**
-     * Test the property 'xpath'
-     */
-    @Test
-    public void xpathTest() {
-        // TODO: test xpath
-    }
-
-    /**
      * Test the property 'position'
      */
     @Test
     public void positionTest() {
         // TODO: test position
+    }
+
+    /**
+     * Test the property 'xpath'
+     */
+    @Test
+    public void xpathTest() {
+        // TODO: test xpath
     }
 
     /**

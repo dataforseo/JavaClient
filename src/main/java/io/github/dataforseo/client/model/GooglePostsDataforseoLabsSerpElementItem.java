@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,8 +51,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * GooglePostsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_POSTS_ID = "posts_id";
   @SerializedName(SERIALIZED_NAME_POSTS_ID)
   private String postsId;
@@ -66,6 +71,25 @@ public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabs
 
   public GooglePostsDataforseoLabsSerpElementItem() {
   }
+
+  public GooglePostsDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public GooglePostsDataforseoLabsSerpElementItem postsId(String postsId) {
     this.postsId = postsId;
@@ -111,7 +135,7 @@ public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabs
   }
 
   /**
-   * google-defined client id unique id of a local establishment; can be used with Google Reviews API to get a full list of reviews
+   * google-defined client id
    * @return cid
    */
   @javax.annotation.Nullable
@@ -178,7 +202,8 @@ public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabs
       return false;
     }
     GooglePostsDataforseoLabsSerpElementItem googlePostsDataforseoLabsSerpElementItem = (GooglePostsDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.postsId, googlePostsDataforseoLabsSerpElementItem.postsId) &&
+    return Objects.equals(this.seType, googlePostsDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.postsId, googlePostsDataforseoLabsSerpElementItem.postsId) &&
         Objects.equals(this.feature, googlePostsDataforseoLabsSerpElementItem.feature) &&
         Objects.equals(this.cid, googlePostsDataforseoLabsSerpElementItem.cid)&&
         Objects.equals(this.additionalProperties, googlePostsDataforseoLabsSerpElementItem.additionalProperties) &&
@@ -191,7 +216,7 @@ public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabs
 
   @Override
   public int hashCode() {
-    return Objects.hash(postsId, feature, cid, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, postsId, feature, cid, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -206,6 +231,7 @@ public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabs
     StringBuilder sb = new StringBuilder();
     sb.append("class GooglePostsDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    postsId: ").append(toIndentedString(postsId)).append("\n");
     sb.append("    feature: ").append(toIndentedString(feature)).append("\n");
     sb.append("    cid: ").append(toIndentedString(cid)).append("\n");
@@ -237,6 +263,7 @@ public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabs
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("posts_id");
     openapiFields.add("feature");
     openapiFields.add("cid");
@@ -258,6 +285,9 @@ public class GooglePostsDataforseoLabsSerpElementItem extends BaseDataforseoLabs
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("posts_id") != null && !jsonObj.get("posts_id").isJsonNull()) && !jsonObj.get("posts_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `posts_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("posts_id").toString()));
       }

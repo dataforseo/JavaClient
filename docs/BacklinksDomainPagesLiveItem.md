@@ -16,10 +16,10 @@
 |**firstVisited** | **String** | date and time of the first page visit date and time when our crawler visited this page for the first time in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2017-01-24 13:20:59 +00:00 |  [optional] |
 |**prevVisited** | **String** | previous to the most recent date when our crawler visited the page in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2017-01-24 13:20:59 +00:00 |  [optional] |
 |**fetchTime** | **String** | most recent date and time when our crawler visited the page in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2017-01-24 13:20:59 +00:00 |  [optional] |
-|**statusCode** | **Integer** | HTTP status code of the page |  [optional] |
+|**statusCode** | **BigDecimal** | HTTP status code of the page |  [optional] |
 |**location** | **String** | location header indicates the URL to redirect a page to if exists |  [optional] |
-|**size** | **Integer** | indicates the page size, in bytes |  [optional] |
-|**encodedSize** | **Integer** | page size after encoding indicates the size of the encoded page, in bytes |  [optional] |
+|**size** | **BigDecimal** | indicates the page size, in bytes |  [optional] |
+|**encodedSize** | **BigDecimal** | page size after encoding indicates the size of the encoded page, in bytes |  [optional] |
 |**contentEncoding** | **String** | type of encoding |  [optional] |
 |**mediaType** | **String** | types of media used to display a page |  [optional] |
 |**server** | **String** | server version |  [optional] |

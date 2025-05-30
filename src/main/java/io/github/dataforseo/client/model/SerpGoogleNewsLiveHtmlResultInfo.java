@@ -19,8 +19,9 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.HtmlItem;
+import io.github.dataforseo.client.model.SerpHtmlItemInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleNewsLiveHtmlResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleNewsLiveHtmlResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -68,7 +69,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -80,11 +81,11 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<HtmlItem> items;
+  private List<SerpHtmlItemInfo> items;
 
   public SerpGoogleNewsLiveHtmlResultInfo() {
   }
@@ -146,7 +147,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
   }
 
 
-  public SerpGoogleNewsLiveHtmlResultInfo locationCode(Integer locationCode) {
+  public SerpGoogleNewsLiveHtmlResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -156,11 +157,11 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -203,7 +204,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
   }
 
 
-  public SerpGoogleNewsLiveHtmlResultInfo itemsCount(Long itemsCount) {
+  public SerpGoogleNewsLiveHtmlResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -213,21 +214,21 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
 
-  public SerpGoogleNewsLiveHtmlResultInfo items(List<HtmlItem> items) {
+  public SerpGoogleNewsLiveHtmlResultInfo items(List<SerpHtmlItemInfo> items) {
     this.items = items;
     return this;
   }
 
-  public SerpGoogleNewsLiveHtmlResultInfo addItemsItem(HtmlItem itemsItem) {
+  public SerpGoogleNewsLiveHtmlResultInfo addItemsItem(SerpHtmlItemInfo itemsItem) {
     if (this.items == null) {
       this.items = new ArrayList<>();
     }
@@ -240,11 +241,11 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<HtmlItem> getItems() {
+  public List<SerpHtmlItemInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<HtmlItem> items) {
+  public void setItems(List<SerpHtmlItemInfo> items) {
     this.items = items;
   }
 
@@ -416,7 +417,7 @@ public class SerpGoogleNewsLiveHtmlResultInfo {
 
           // validate the optional field `items` (array)
           for (int i = 0; i < jsonArrayitems.size(); i++) {
-            HtmlItem.validateJsonElement(jsonArrayitems.get(i));
+            SerpHtmlItemInfo.validateJsonElement(jsonArrayitems.get(i));
           };
         }
       }

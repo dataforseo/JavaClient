@@ -18,10 +18,13 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.BacklinksInfo;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.RankChanges;
-import io.github.dataforseo.client.model.RatingInfo;
+import io.github.dataforseo.client.model.RankInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -79,6 +82,14 @@ public class LocalPackDataforseoLabsSerpElementItemTest {
     @Test
     public void xpathTest() {
         // TODO: test xpath
+    }
+
+    /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
     }
 
     /**
@@ -162,19 +173,19 @@ public class LocalPackDataforseoLabsSerpElementItemTest {
     }
 
     /**
-     * Test the property 'impressionsEtv'
-     */
-    @Test
-    public void impressionsEtvTest() {
-        // TODO: test impressionsEtv
-    }
-
-    /**
      * Test the property 'estimatedPaidTrafficCost'
      */
     @Test
     public void estimatedPaidTrafficCostTest() {
         // TODO: test estimatedPaidTrafficCost
+    }
+
+    /**
+     * Test the property 'clickstreamEtv'
+     */
+    @Test
+    public void clickstreamEtvTest() {
+        // TODO: test clickstreamEtv
     }
 
     /**
@@ -186,11 +197,19 @@ public class LocalPackDataforseoLabsSerpElementItemTest {
     }
 
     /**
-     * Test the property 'clickstreamEtv'
+     * Test the property 'backlinksInfo'
      */
     @Test
-    public void clickstreamEtvTest() {
-        // TODO: test clickstreamEtv
+    public void backlinksInfoTest() {
+        // TODO: test backlinksInfo
+    }
+
+    /**
+     * Test the property 'rankInfo'
+     */
+    @Test
+    public void rankInfoTest() {
+        // TODO: test rankInfo
     }
 
 }

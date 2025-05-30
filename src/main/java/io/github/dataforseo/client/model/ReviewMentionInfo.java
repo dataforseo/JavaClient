@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ReviewMentionInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ReviewMentionInfo {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -61,15 +62,15 @@ public class ReviewMentionInfo {
 
   public static final String SERIALIZED_NAME_POSITIVE_COUNT = "positive_count";
   @SerializedName(SERIALIZED_NAME_POSITIVE_COUNT)
-  private Long positiveCount;
+  private BigDecimal positiveCount;
 
   public static final String SERIALIZED_NAME_NEGATIVE_COUNT = "negative_count";
   @SerializedName(SERIALIZED_NAME_NEGATIVE_COUNT)
-  private Long negativeCount;
+  private BigDecimal negativeCount;
 
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
-  private Long totalCount;
+  private BigDecimal totalCount;
 
   public static final String SERIALIZED_NAME_VISIBLE_BY_DEFAULT = "visible_by_default";
   @SerializedName(SERIALIZED_NAME_VISIBLE_BY_DEFAULT)
@@ -116,7 +117,7 @@ public class ReviewMentionInfo {
   }
 
 
-  public ReviewMentionInfo positiveCount(Long positiveCount) {
+  public ReviewMentionInfo positiveCount(BigDecimal positiveCount) {
     this.positiveCount = positiveCount;
     return this;
   }
@@ -126,16 +127,16 @@ public class ReviewMentionInfo {
    * @return positiveCount
    */
   @javax.annotation.Nullable
-  public Long getPositiveCount() {
+  public BigDecimal getPositiveCount() {
     return positiveCount;
   }
 
-  public void setPositiveCount(Long positiveCount) {
+  public void setPositiveCount(BigDecimal positiveCount) {
     this.positiveCount = positiveCount;
   }
 
 
-  public ReviewMentionInfo negativeCount(Long negativeCount) {
+  public ReviewMentionInfo negativeCount(BigDecimal negativeCount) {
     this.negativeCount = negativeCount;
     return this;
   }
@@ -145,16 +146,16 @@ public class ReviewMentionInfo {
    * @return negativeCount
    */
   @javax.annotation.Nullable
-  public Long getNegativeCount() {
+  public BigDecimal getNegativeCount() {
     return negativeCount;
   }
 
-  public void setNegativeCount(Long negativeCount) {
+  public void setNegativeCount(BigDecimal negativeCount) {
     this.negativeCount = negativeCount;
   }
 
 
-  public ReviewMentionInfo totalCount(Long totalCount) {
+  public ReviewMentionInfo totalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
     return this;
   }
@@ -164,11 +165,11 @@ public class ReviewMentionInfo {
    * @return totalCount
    */
   @javax.annotation.Nullable
-  public Long getTotalCount() {
+  public BigDecimal getTotalCount() {
     return totalCount;
   }
 
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
   }
 

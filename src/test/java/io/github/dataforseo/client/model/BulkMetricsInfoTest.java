@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -52,14 +53,6 @@ public class BulkMetricsInfoTest {
     @Test
     public void countTest() {
         // TODO: test count
-    }
-
-    /**
-     * Test the property 'clickstreamEtv'
-     */
-    @Test
-    public void clickstreamEtvTest() {
-        // TODO: test clickstreamEtv
     }
 
 }

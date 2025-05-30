@@ -51,11 +51,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * Contacts
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class Contacts {
   public static final String SERIALIZED_NAME_TELEPHONES = "telephones";
   @SerializedName(SERIALIZED_NAME_TELEPHONES)
   private List<String> telephones;
+
+  public static final String SERIALIZED_NAME_EMAILS = "emails";
+  @SerializedName(SERIALIZED_NAME_EMAILS)
+  private List<String> emails;
 
   public Contacts() {
   }
@@ -84,6 +88,33 @@ public class Contacts {
 
   public void setTelephones(List<String> telephones) {
     this.telephones = telephones;
+  }
+
+
+  public Contacts emails(List<String> emails) {
+    this.emails = emails;
+    return this;
+  }
+
+  public Contacts addEmailsItem(String emailsItem) {
+    if (this.emails == null) {
+      this.emails = new ArrayList<>();
+    }
+    this.emails.add(emailsItem);
+    return this;
+  }
+
+  /**
+   * array of emails
+   * @return emails
+   */
+  @javax.annotation.Nullable
+  public List<String> getEmails() {
+    return emails;
+  }
+
+  public void setEmails(List<String> emails) {
+    this.emails = emails;
   }
 
   /**
@@ -141,7 +172,8 @@ public class Contacts {
       return false;
     }
     Contacts contacts = (Contacts) o;
-    return Objects.equals(this.telephones, contacts.telephones)&&
+    return Objects.equals(this.telephones, contacts.telephones) &&
+        Objects.equals(this.emails, contacts.emails)&&
         Objects.equals(this.additionalProperties, contacts.additionalProperties);
   }
 
@@ -151,7 +183,7 @@ public class Contacts {
 
   @Override
   public int hashCode() {
-    return Objects.hash(telephones, additionalProperties);
+    return Objects.hash(telephones, emails, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -166,6 +198,7 @@ public class Contacts {
     StringBuilder sb = new StringBuilder();
     sb.append("class Contacts {\n");
     sb.append("    telephones: ").append(toIndentedString(telephones)).append("\n");
+    sb.append("    emails: ").append(toIndentedString(emails)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -190,6 +223,7 @@ public class Contacts {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("telephones");
+    openapiFields.add("emails");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -211,6 +245,10 @@ public class Contacts {
       // ensure the optional json data is an array if present
       if (jsonObj.get("telephones") != null && !jsonObj.get("telephones").isJsonNull() && !jsonObj.get("telephones").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `telephones` to be an array in the JSON string but got `%s`", jsonObj.get("telephones").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("emails") != null && !jsonObj.get("emails").isJsonNull() && !jsonObj.get("emails").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `emails` to be an array in the JSON string but got `%s`", jsonObj.get("emails").toString()));
       }
   }
 

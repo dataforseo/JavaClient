@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleTrendsExploreLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
@@ -59,11 +59,11 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private List<String> locationName;
+  private String locationName;
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private List<Integer> locationCode;
+  private String locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
@@ -131,16 +131,8 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
   }
 
 
-  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationName(List<String> locationName) {
+  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationName(String locationName) {
     this.locationName = locationName;
-    return this;
-  }
-
-  public KeywordsDataGoogleTrendsExploreLiveRequestInfo addLocationNameItem(String locationNameItem) {
-    if (this.locationName == null) {
-      this.locationName = new ArrayList<>();
-    }
-    this.locationName.add(locationNameItem);
     return this;
   }
 
@@ -149,25 +141,17 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
    * @return locationName
    */
   @javax.annotation.Nullable
-  public List<String> getLocationName() {
+  public String getLocationName() {
     return locationName;
   }
 
-  public void setLocationName(List<String> locationName) {
+  public void setLocationName(String locationName) {
     this.locationName = locationName;
   }
 
 
-  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationCode(List<Integer> locationCode) {
+  public KeywordsDataGoogleTrendsExploreLiveRequestInfo locationCode(String locationCode) {
     this.locationCode = locationCode;
-    return this;
-  }
-
-  public KeywordsDataGoogleTrendsExploreLiveRequestInfo addLocationCodeItem(Integer locationCodeItem) {
-    if (this.locationCode == null) {
-      this.locationCode = new ArrayList<>();
-    }
-    this.locationCode.add(locationCodeItem);
     return this;
   }
 
@@ -176,11 +160,11 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public List<Integer> getLocationCode() {
+  public String getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(List<Integer> locationCode) {
+  public void setLocationCode(String locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -522,13 +506,11 @@ public class KeywordsDataGoogleTrendsExploreLiveRequestInfo {
       if (jsonObj.get("keywords") != null && !jsonObj.get("keywords").isJsonNull() && !jsonObj.get("keywords").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `keywords` to be an array in the JSON string but got `%s`", jsonObj.get("keywords").toString()));
       }
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull() && !jsonObj.get("location_name").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `location_name` to be an array in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
+      if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
       }
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("location_code") != null && !jsonObj.get("location_code").isJsonNull() && !jsonObj.get("location_code").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `location_code` to be an array in the JSON string but got `%s`", jsonObj.get("location_code").toString()));
+      if ((jsonObj.get("location_code") != null && !jsonObj.get("location_code").isJsonNull()) && !jsonObj.get("location_code").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `location_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_code").toString()));
       }
       if ((jsonObj.get("language_name") != null && !jsonObj.get("language_name").isJsonNull()) && !jsonObj.get("language_name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_name").toString()));

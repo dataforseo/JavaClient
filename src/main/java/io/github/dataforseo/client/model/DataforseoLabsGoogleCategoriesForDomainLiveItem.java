@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.DataforseoLabsMetricsInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleCategoriesForDomainLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -62,7 +63,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
 
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
-  private List<Integer> categories;
+  private List<BigDecimal> categories;
 
   public static final String SERIALIZED_NAME_METRICS = "metrics";
   @SerializedName(SERIALIZED_NAME_METRICS)
@@ -90,12 +91,12 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
   }
 
 
-  public DataforseoLabsGoogleCategoriesForDomainLiveItem categories(List<Integer> categories) {
+  public DataforseoLabsGoogleCategoriesForDomainLiveItem categories(List<BigDecimal> categories) {
     this.categories = categories;
     return this;
   }
 
-  public DataforseoLabsGoogleCategoriesForDomainLiveItem addCategoriesItem(Integer categoriesItem) {
+  public DataforseoLabsGoogleCategoriesForDomainLiveItem addCategoriesItem(BigDecimal categoriesItem) {
     if (this.categories == null) {
       this.categories = new ArrayList<>();
     }
@@ -108,11 +109,11 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveItem {
    * @return categories
    */
   @javax.annotation.Nullable
-  public List<Integer> getCategories() {
+  public List<BigDecimal> getCategories() {
     return categories;
   }
 
-  public void setCategories(List<Integer> categories) {
+  public void setCategories(List<BigDecimal> categories) {
     this.categories = categories;
   }
 

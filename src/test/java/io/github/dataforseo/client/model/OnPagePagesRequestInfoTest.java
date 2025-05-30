@@ -81,6 +81,14 @@ public class OnPagePagesRequestInfoTest {
     }
 
     /**
+     * Test the property 'searchAfterToken'
+     */
+    @Test
+    public void searchAfterTokenTest() {
+        // TODO: test searchAfterToken
+    }
+
+    /**
      * Test the property 'tag'
      */
     @Test

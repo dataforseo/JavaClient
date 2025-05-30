@@ -32,12 +32,12 @@
 |**totalContentAnalysis** | **Double** |  |  [optional] |
 |**contentGeneration** | [**AppendixContentGenerationLimitsRatesDataInfo**](AppendixContentGenerationLimitsRatesDataInfo.md) |  |  [optional] |
 |**totalContentGeneration** | **Double** |  |  [optional] |
-|**totalReviews** | **Double** |  |  [optional] |
-|**reviews** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
-|**totalSocial** | **Double** |  |  [optional] |
-|**social** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
 |**totalTrafficAnalytics** | **Double** |  |  [optional] |
-|**trafficAnalytics** | [**AppendixSerpsRatesDataInfo**](AppendixSerpsRatesDataInfo.md) |  |  [optional] |
+|**trafficAnalytics** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
+|**totalReviews** | **Double** |  |  [optional] |
+|**reviews** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
+|**totalSocial** | **Double** |  |  [optional] |
+|**social** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
 
 
 

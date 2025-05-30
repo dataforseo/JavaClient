@@ -11,7 +11,7 @@
 |**title** | **String** | title of a given link element |  [optional] |
 |**seedQuestion** | **String** | question that triggered additional expanded elements |  [optional] |
 |**xpath** | **String** | the XPath of the element |  [optional] |
-|**expandedElement** | [**List&lt;PeopleAlsoAskExpandedElement&gt;**](PeopleAlsoAskExpandedElement.md) | expanded element |  [optional] |
+|**expandedElement** | [**List&lt;BasePeopleAlsoAskExpandedElementItem&gt;**](BasePeopleAlsoAskExpandedElementItem.md) | expanded element |  [optional] |
 
 
 

@@ -19,7 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.MetricsInfo;
+import io.github.dataforseo.client.model.OrganicMetricsInfo;
+import io.github.dataforseo.client.model.PaidMetricsInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -49,20 +50,20 @@ import io.github.dataforseo.client.JSON;
 /**
  * MetricsBundleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MetricsBundleInfo {
   public static final String SERIALIZED_NAME_ORGANIC = "organic";
   @SerializedName(SERIALIZED_NAME_ORGANIC)
-  private MetricsInfo organic;
+  private OrganicMetricsInfo organic;
 
   public static final String SERIALIZED_NAME_PAID = "paid";
   @SerializedName(SERIALIZED_NAME_PAID)
-  private MetricsInfo paid;
+  private PaidMetricsInfo paid;
 
   public MetricsBundleInfo() {
   }
 
-  public MetricsBundleInfo organic(MetricsInfo organic) {
+  public MetricsBundleInfo organic(OrganicMetricsInfo organic) {
     this.organic = organic;
     return this;
   }
@@ -72,16 +73,16 @@ public class MetricsBundleInfo {
    * @return organic
    */
   @javax.annotation.Nullable
-  public MetricsInfo getOrganic() {
+  public OrganicMetricsInfo getOrganic() {
     return organic;
   }
 
-  public void setOrganic(MetricsInfo organic) {
+  public void setOrganic(OrganicMetricsInfo organic) {
     this.organic = organic;
   }
 
 
-  public MetricsBundleInfo paid(MetricsInfo paid) {
+  public MetricsBundleInfo paid(PaidMetricsInfo paid) {
     this.paid = paid;
     return this;
   }
@@ -91,11 +92,11 @@ public class MetricsBundleInfo {
    * @return paid
    */
   @javax.annotation.Nullable
-  public MetricsInfo getPaid() {
+  public PaidMetricsInfo getPaid() {
     return paid;
   }
 
-  public void setPaid(MetricsInfo paid) {
+  public void setPaid(PaidMetricsInfo paid) {
     this.paid = paid;
   }
 
@@ -215,11 +216,11 @@ public class MetricsBundleInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `organic`
       if (jsonObj.get("organic") != null && !jsonObj.get("organic").isJsonNull()) {
-        MetricsInfo.validateJsonElement(jsonObj.get("organic"));
+        OrganicMetricsInfo.validateJsonElement(jsonObj.get("organic"));
       }
       // validate the optional field `paid`
       if (jsonObj.get("paid") != null && !jsonObj.get("paid").isJsonNull()) {
-        MetricsInfo.validateJsonElement(jsonObj.get("paid"));
+        PaidMetricsInfo.validateJsonElement(jsonObj.get("paid"));
       }
   }
 

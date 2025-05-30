@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleAutocompleteAdvancedItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleAutocompleteAdvancedItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -59,15 +60,15 @@ public class SerpGoogleAutocompleteAdvancedItem {
 
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
-  private Integer rankGroup;
+  private BigDecimal rankGroup;
 
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
-  private Integer rankAbsolute;
+  private BigDecimal rankAbsolute;
 
   public static final String SERIALIZED_NAME_RELEVANCE = "relevance";
   @SerializedName(SERIALIZED_NAME_RELEVANCE)
-  private Integer relevance;
+  private BigDecimal relevance;
 
   public static final String SERIALIZED_NAME_SUGGESTION = "suggestion";
   @SerializedName(SERIALIZED_NAME_SUGGESTION)
@@ -111,7 +112,7 @@ public class SerpGoogleAutocompleteAdvancedItem {
   }
 
 
-  public SerpGoogleAutocompleteAdvancedItem rankGroup(Integer rankGroup) {
+  public SerpGoogleAutocompleteAdvancedItem rankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
     return this;
   }
@@ -121,16 +122,16 @@ public class SerpGoogleAutocompleteAdvancedItem {
    * @return rankGroup
    */
   @javax.annotation.Nullable
-  public Integer getRankGroup() {
+  public BigDecimal getRankGroup() {
     return rankGroup;
   }
 
-  public void setRankGroup(Integer rankGroup) {
+  public void setRankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
   }
 
 
-  public SerpGoogleAutocompleteAdvancedItem rankAbsolute(Integer rankAbsolute) {
+  public SerpGoogleAutocompleteAdvancedItem rankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
     return this;
   }
@@ -140,16 +141,16 @@ public class SerpGoogleAutocompleteAdvancedItem {
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
-  public Integer getRankAbsolute() {
+  public BigDecimal getRankAbsolute() {
     return rankAbsolute;
   }
 
-  public void setRankAbsolute(Integer rankAbsolute) {
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
   }
 
 
-  public SerpGoogleAutocompleteAdvancedItem relevance(Integer relevance) {
+  public SerpGoogleAutocompleteAdvancedItem relevance(BigDecimal relevance) {
     this.relevance = relevance;
     return this;
   }
@@ -159,11 +160,11 @@ public class SerpGoogleAutocompleteAdvancedItem {
    * @return relevance
    */
   @javax.annotation.Nullable
-  public Integer getRelevance() {
+  public BigDecimal getRelevance() {
     return relevance;
   }
 
-  public void setRelevance(Integer relevance) {
+  public void setRelevance(BigDecimal relevance) {
     this.relevance = relevance;
   }
 

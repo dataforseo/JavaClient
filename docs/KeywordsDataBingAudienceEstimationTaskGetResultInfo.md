@@ -7,16 +7,16 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**estImpressions** | [**EstInfo**](EstInfo.md) |  |  [optional] |
-|**estAudienceSize** | [**EstInfo**](EstInfo.md) |  |  [optional] |
-|**estClicks** | [**EstInfo**](EstInfo.md) |  |  [optional] |
-|**estSpend** | [**EstInfo**](EstInfo.md) |  |  [optional] |
-|**estCostPerEvent** | [**EstCInfo**](EstCInfo.md) |  |  [optional] |
-|**estCtr** | [**EstCInfo**](EstCInfo.md) |  |  [optional] |
+|**estImpressions** | [**AudienceEstimationInfo**](AudienceEstimationInfo.md) |  |  [optional] |
+|**estAudienceSize** | [**AudienceEstimationInfo**](AudienceEstimationInfo.md) |  |  [optional] |
+|**estClicks** | [**AudienceEstimationInfo**](AudienceEstimationInfo.md) |  |  [optional] |
+|**estSpend** | [**AudienceEstimationInfo**](AudienceEstimationInfo.md) |  |  [optional] |
+|**estCostPerEvent** | [**AudienceEstimationInfo**](AudienceEstimationInfo.md) |  |  [optional] |
+|**estCtr** | [**AudienceEstimationInfo**](AudienceEstimationInfo.md) |  |  [optional] |
 |**suggestedBid** | **Float** | suggested bid value under the current targeting |  [optional] |
 |**suggestedBudget** | **Double** | suggested daily budget value under the current targeting and bid |  [optional] |
-|**eventsLostToBid** | **Long** | indicates event lost count due to insufficient input bid |  [optional] |
-|**eventsLostToBudget** | **Integer** | indicates the event lost count due to insufficient input budget |  [optional] |
+|**eventsLostToBid** | **BigDecimal** | indicates event lost count due to insufficient input bid |  [optional] |
+|**eventsLostToBudget** | **BigDecimal** | indicates the event lost count due to insufficient input budget |  [optional] |
 |**estReachAudienceSize** | **Long** | monthly estimated user count |  [optional] |
 |**estReachImpressions** | **Long** | monthly estimated impressions |  [optional] |
 |**currency** | **String** | currency name example: USDollar |  [optional] |

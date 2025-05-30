@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseOnPageResourceItemInfo;
 import io.github.dataforseo.client.model.CrawlStatusInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -56,6 +57,22 @@ public class OnPagePagesResultInfoTest {
     @Test
     public void crawlStatusTest() {
         // TODO: test crawlStatus
+    }
+
+    /**
+     * Test the property 'searchAfterToken'
+     */
+    @Test
+    public void searchAfterTokenTest() {
+        // TODO: test searchAfterToken
+    }
+
+    /**
+     * Test the property 'currentOffset'
+     */
+    @Test
+    public void currentOffsetTest() {
+        // TODO: test currentOffset
     }
 
     /**

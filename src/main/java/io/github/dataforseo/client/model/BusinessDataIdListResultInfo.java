@@ -20,7 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -49,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataIdListResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataIdListResultInfo {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -77,7 +79,7 @@ public class BusinessDataIdListResultInfo {
 
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private Object metadata;
+  private List<String> metadata;
 
   public BusinessDataIdListResultInfo() {
   }
@@ -196,8 +198,16 @@ public class BusinessDataIdListResultInfo {
   }
 
 
-  public BusinessDataIdListResultInfo metadata(Object metadata) {
+  public BusinessDataIdListResultInfo metadata(List<String> metadata) {
     this.metadata = metadata;
+    return this;
+  }
+
+  public BusinessDataIdListResultInfo addMetadataItem(String metadataItem) {
+    if (this.metadata == null) {
+      this.metadata = new ArrayList<>();
+    }
+    this.metadata.add(metadataItem);
     return this;
   }
 
@@ -206,11 +216,11 @@ public class BusinessDataIdListResultInfo {
    * @return metadata
    */
   @javax.annotation.Nullable
-  public Object getMetadata() {
+  public List<String> getMetadata() {
     return metadata;
   }
 
-  public void setMetadata(Object metadata) {
+  public void setMetadata(List<String> metadata) {
     this.metadata = metadata;
   }
 
@@ -368,6 +378,10 @@ public class BusinessDataIdListResultInfo {
       }
       if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
+      }
+      // ensure the optional json data is an array if present
+      if (jsonObj.get("metadata") != null && !jsonObj.get("metadata").isJsonNull() && !jsonObj.get("metadata").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `metadata` to be an array in the JSON string but got `%s`", jsonObj.get("metadata").toString()));
       }
   }
 

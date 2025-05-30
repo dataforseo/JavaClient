@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisPhraseTrendsLiveRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisPhraseTrendsLiveRequestInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -87,9 +87,9 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
   @SerializedName(SERIALIZED_NAME_DATE_GROUP)
   private String dateGroup;
 
-  public static final String SERIALIZED_NAME_INITIAL_DATASET_FILTER = "initial_dataset_filter";
-  @SerializedName(SERIALIZED_NAME_INITIAL_DATASET_FILTER)
-  private List<String> initialDatasetFilter;
+  public static final String SERIALIZED_NAME_INITIAL_DATASET_FILTERS = "initial_dataset_filters";
+  @SerializedName(SERIALIZED_NAME_INITIAL_DATASET_FILTERS)
+  private List<Object> initialDatasetFilters;
 
   public static final String SERIALIZED_NAME_RANK_SCALE = "rank_scale";
   @SerializedName(SERIALIZED_NAME_RANK_SCALE)
@@ -270,30 +270,30 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
   }
 
 
-  public ContentAnalysisPhraseTrendsLiveRequestInfo initialDatasetFilter(List<String> initialDatasetFilter) {
-    this.initialDatasetFilter = initialDatasetFilter;
+  public ContentAnalysisPhraseTrendsLiveRequestInfo initialDatasetFilters(List<Object> initialDatasetFilters) {
+    this.initialDatasetFilters = initialDatasetFilters;
     return this;
   }
 
-  public ContentAnalysisPhraseTrendsLiveRequestInfo addInitialDatasetFilterItem(String initialDatasetFilterItem) {
-    if (this.initialDatasetFilter == null) {
-      this.initialDatasetFilter = new ArrayList<>();
+  public ContentAnalysisPhraseTrendsLiveRequestInfo addInitialDatasetFiltersItem(Object initialDatasetFiltersItem) {
+    if (this.initialDatasetFilters == null) {
+      this.initialDatasetFilters = new ArrayList<>();
     }
-    this.initialDatasetFilter.add(initialDatasetFilterItem);
+    this.initialDatasetFilters.add(initialDatasetFiltersItem);
     return this;
   }
 
   /**
-   * initial dataset filtering parameters optional field you can add several filters at once (8 filters maximum) you should set a logical operator and, or between the conditions the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like,not_like, has, has_not, match, not_match you can use the % operator with like and not_like to match any string of zero or more characters example: [\&quot;domain\&quot;,\&quot;&lt;&gt;\&quot;, \&quot;logitech.com\&quot;] [[\&quot;domain\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;logitech.com\&quot;],\&quot;and\&quot;,[\&quot;content_info.connotation_types.negative\&quot;,\&quot;&gt;\&quot;,1000]] [[\&quot;domain\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;logitech.com\&quot;]], \&quot;and\&quot;, [[\&quot;content_info.connotation_types.negative\&quot;,\&quot;&gt;\&quot;,1000], \&quot;or\&quot;, [\&quot;content_info.text_category\&quot;,\&quot;has\&quot;,10994]]] for more information about filters, please refer to Content Analysis API – Filters
-   * @return initialDatasetFilter
+   * initial dataset filtering parameters optional field initial filtering parameters that apply to fields in the Search endpoint; you can add several filters at once (8 filters maximum); you should set a logical operator and, or between the conditions; the following operators are supported: regex, not_regex, &lt;, &lt;&#x3D;, &gt;, &gt;&#x3D;, &#x3D;, &lt;&gt;, in, not_in, like,not_like, has, has_not, match, not_match you can use the % operator with like and not_like to match any string of zero or more characters; example: [\&quot;domain\&quot;,\&quot;&lt;&gt;\&quot;, \&quot;logitech.com\&quot;] [[\&quot;domain\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;logitech.com\&quot;],\&quot;and\&quot;,[\&quot;content_info.connotation_types.negative\&quot;,\&quot;&gt;\&quot;,1000]] [[\&quot;domain\&quot;,\&quot;&lt;&gt;\&quot;,\&quot;logitech.com\&quot;]], \&quot;and\&quot;, [[\&quot;content_info.connotation_types.negative\&quot;,\&quot;&gt;\&quot;,1000], \&quot;or\&quot;, [\&quot;content_info.text_category\&quot;,\&quot;has\&quot;,10994]]] for more information about filters, please refer to Content Analysis API – Filters
+   * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
-  public List<String> getInitialDatasetFilter() {
-    return initialDatasetFilter;
+  public List<Object> getInitialDatasetFilters() {
+    return initialDatasetFilters;
   }
 
-  public void setInitialDatasetFilter(List<String> initialDatasetFilter) {
-    this.initialDatasetFilter = initialDatasetFilter;
+  public void setInitialDatasetFilters(List<Object> initialDatasetFilters) {
+    this.initialDatasetFilters = initialDatasetFilters;
   }
 
 
@@ -397,7 +397,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
         Objects.equals(this.dateFrom, contentAnalysisPhraseTrendsLiveRequestInfo.dateFrom) &&
         Objects.equals(this.dateTo, contentAnalysisPhraseTrendsLiveRequestInfo.dateTo) &&
         Objects.equals(this.dateGroup, contentAnalysisPhraseTrendsLiveRequestInfo.dateGroup) &&
-        Objects.equals(this.initialDatasetFilter, contentAnalysisPhraseTrendsLiveRequestInfo.initialDatasetFilter) &&
+        Objects.equals(this.initialDatasetFilters, contentAnalysisPhraseTrendsLiveRequestInfo.initialDatasetFilters) &&
         Objects.equals(this.rankScale, contentAnalysisPhraseTrendsLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, contentAnalysisPhraseTrendsLiveRequestInfo.tag)&&
         Objects.equals(this.additionalProperties, contentAnalysisPhraseTrendsLiveRequestInfo.additionalProperties);
@@ -409,7 +409,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, keywordFields, pageType, searchMode, internalListLimit, dateFrom, dateTo, dateGroup, initialDatasetFilter, rankScale, tag, additionalProperties);
+    return Objects.hash(keyword, keywordFields, pageType, searchMode, internalListLimit, dateFrom, dateTo, dateGroup, initialDatasetFilters, rankScale, tag, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -431,7 +431,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
     sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
     sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
     sb.append("    dateGroup: ").append(toIndentedString(dateGroup)).append("\n");
-    sb.append("    initialDatasetFilter: ").append(toIndentedString(initialDatasetFilter)).append("\n");
+    sb.append("    initialDatasetFilters: ").append(toIndentedString(initialDatasetFilters)).append("\n");
     sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
@@ -465,7 +465,7 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
     openapiFields.add("date_from");
     openapiFields.add("date_to");
     openapiFields.add("date_group");
-    openapiFields.add("initial_dataset_filter");
+    openapiFields.add("initial_dataset_filters");
     openapiFields.add("rank_scale");
     openapiFields.add("tag");
 
@@ -506,8 +506,8 @@ public class ContentAnalysisPhraseTrendsLiveRequestInfo {
         throw new IllegalArgumentException(String.format("Expected the field `date_group` to be a primitive type in the JSON string but got `%s`", jsonObj.get("date_group").toString()));
       }
       // ensure the optional json data is an array if present
-      if (jsonObj.get("initial_dataset_filter") != null && !jsonObj.get("initial_dataset_filter").isJsonNull() && !jsonObj.get("initial_dataset_filter").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `initial_dataset_filter` to be an array in the JSON string but got `%s`", jsonObj.get("initial_dataset_filter").toString()));
+      if (jsonObj.get("initial_dataset_filters") != null && !jsonObj.get("initial_dataset_filters").isJsonNull() && !jsonObj.get("initial_dataset_filters").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `initial_dataset_filters` to be an array in the JSON string but got `%s`", jsonObj.get("initial_dataset_filters").toString()));
       }
       if ((jsonObj.get("rank_scale") != null && !jsonObj.get("rank_scale").isJsonNull()) && !jsonObj.get("rank_scale").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `rank_scale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("rank_scale").toString()));

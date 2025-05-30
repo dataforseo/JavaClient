@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.BacklinksDomainIntersectionInfo;
+import io.github.dataforseo.client.model.BacklinksDomainIntersection;
 import io.github.dataforseo.client.model.IntersectionSummaryInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -53,11 +53,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksDomainIntersectionLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksDomainIntersectionLiveItem {
   public static final String SERIALIZED_NAME_DOMAIN_INTERSECTION = "domain_intersection";
   @SerializedName(SERIALIZED_NAME_DOMAIN_INTERSECTION)
-  private Map<String, BacklinksDomainIntersectionInfo> domainIntersection;
+  private Map<String, BacklinksDomainIntersection> domainIntersection;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
@@ -66,12 +66,12 @@ public class BacklinksDomainIntersectionLiveItem {
   public BacklinksDomainIntersectionLiveItem() {
   }
 
-  public BacklinksDomainIntersectionLiveItem domainIntersection(Map<String, BacklinksDomainIntersectionInfo> domainIntersection) {
+  public BacklinksDomainIntersectionLiveItem domainIntersection(Map<String, BacklinksDomainIntersection> domainIntersection) {
     this.domainIntersection = domainIntersection;
     return this;
   }
 
-  public BacklinksDomainIntersectionLiveItem putDomainIntersectionItem(String key, BacklinksDomainIntersectionInfo domainIntersectionItem) {
+  public BacklinksDomainIntersectionLiveItem putDomainIntersectionItem(String key, BacklinksDomainIntersection domainIntersectionItem) {
     if (this.domainIntersection == null) {
       this.domainIntersection = new HashMap<>();
     }
@@ -84,11 +84,11 @@ public class BacklinksDomainIntersectionLiveItem {
    * @return domainIntersection
    */
   @javax.annotation.Nullable
-  public Map<String, BacklinksDomainIntersectionInfo> getDomainIntersection() {
+  public Map<String, BacklinksDomainIntersection> getDomainIntersection() {
     return domainIntersection;
   }
 
-  public void setDomainIntersection(Map<String, BacklinksDomainIntersectionInfo> domainIntersection) {
+  public void setDomainIntersection(Map<String, BacklinksDomainIntersection> domainIntersection) {
     this.domainIntersection = domainIntersection;
   }
 

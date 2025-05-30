@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseAmazonSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseAmazonSerpElementItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -57,11 +58,15 @@ public class BaseAmazonSerpElementItem {
 
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
-  private Integer rankGroup;
+  private BigDecimal rankGroup;
 
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
-  private Integer rankAbsolute;
+  private BigDecimal rankAbsolute;
+
+  public static final String SERIALIZED_NAME_POSITION = "position";
+  @SerializedName(SERIALIZED_NAME_POSITION)
+  private String position;
 
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -90,7 +95,7 @@ public class BaseAmazonSerpElementItem {
   }
 
 
-  public BaseAmazonSerpElementItem rankGroup(Integer rankGroup) {
+  public BaseAmazonSerpElementItem rankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
     return this;
   }
@@ -100,16 +105,16 @@ public class BaseAmazonSerpElementItem {
    * @return rankGroup
    */
   @javax.annotation.Nullable
-  public Integer getRankGroup() {
+  public BigDecimal getRankGroup() {
     return rankGroup;
   }
 
-  public void setRankGroup(Integer rankGroup) {
+  public void setRankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
   }
 
 
-  public BaseAmazonSerpElementItem rankAbsolute(Integer rankAbsolute) {
+  public BaseAmazonSerpElementItem rankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
     return this;
   }
@@ -119,12 +124,31 @@ public class BaseAmazonSerpElementItem {
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
-  public Integer getRankAbsolute() {
+  public BigDecimal getRankAbsolute() {
     return rankAbsolute;
   }
 
-  public void setRankAbsolute(Integer rankAbsolute) {
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
+  }
+
+
+  public BaseAmazonSerpElementItem position(String position) {
+    this.position = position;
+    return this;
+  }
+
+  /**
+   * the alignment of the element in Amazon SERP can take the following values: left, right
+   * @return position
+   */
+  @javax.annotation.Nullable
+  public String getPosition() {
+    return position;
+  }
+
+  public void setPosition(String position) {
+    this.position = position;
   }
 
 
@@ -160,6 +184,7 @@ public class BaseAmazonSerpElementItem {
     return Objects.equals(this.type, baseAmazonSerpElementItem.type) &&
         Objects.equals(this.rankGroup, baseAmazonSerpElementItem.rankGroup) &&
         Objects.equals(this.rankAbsolute, baseAmazonSerpElementItem.rankAbsolute) &&
+        Objects.equals(this.position, baseAmazonSerpElementItem.position) &&
         Objects.equals(this.xpath, baseAmazonSerpElementItem.xpath);
   }
 
@@ -169,7 +194,7 @@ public class BaseAmazonSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(type, rankGroup, rankAbsolute, xpath);
+    return Objects.hash(type, rankGroup, rankAbsolute, position, xpath);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -186,6 +211,7 @@ public class BaseAmazonSerpElementItem {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    rankGroup: ").append(toIndentedString(rankGroup)).append("\n");
     sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
+    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -212,6 +238,7 @@ public class BaseAmazonSerpElementItem {
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
+    openapiFields.add("position");
     openapiFields.add("xpath");
 
     // a set of required properties/fields (JSON key names)

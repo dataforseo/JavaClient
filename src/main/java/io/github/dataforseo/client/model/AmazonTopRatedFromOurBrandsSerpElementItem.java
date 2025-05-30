@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AmazonSerpElement;
 import io.github.dataforseo.client.model.BaseAmazonSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,37 +54,14 @@ import io.github.dataforseo.client.JSON;
 /**
  * AmazonTopRatedFromOurBrandsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AmazonTopRatedFromOurBrandsSerpElementItem extends BaseAmazonSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
   private List<AmazonSerpElement> items;
 
   public AmazonTopRatedFromOurBrandsSerpElementItem() {
   }
-
-  public AmazonTopRatedFromOurBrandsSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in Amazon SERP possible values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
 
   public AmazonTopRatedFromOurBrandsSerpElementItem items(List<AmazonSerpElement> items) {
     this.items = items;
@@ -166,8 +144,7 @@ public class AmazonTopRatedFromOurBrandsSerpElementItem extends BaseAmazonSerpEl
       return false;
     }
     AmazonTopRatedFromOurBrandsSerpElementItem amazonTopRatedFromOurBrandsSerpElementItem = (AmazonTopRatedFromOurBrandsSerpElementItem) o;
-    return Objects.equals(this.position, amazonTopRatedFromOurBrandsSerpElementItem.position) &&
-        Objects.equals(this.items, amazonTopRatedFromOurBrandsSerpElementItem.items)&&
+    return Objects.equals(this.items, amazonTopRatedFromOurBrandsSerpElementItem.items)&&
         Objects.equals(this.additionalProperties, amazonTopRatedFromOurBrandsSerpElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -178,7 +155,7 @@ public class AmazonTopRatedFromOurBrandsSerpElementItem extends BaseAmazonSerpEl
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, items, super.hashCode(), additionalProperties);
+    return Objects.hash(items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -193,7 +170,6 @@ public class AmazonTopRatedFromOurBrandsSerpElementItem extends BaseAmazonSerpEl
     StringBuilder sb = new StringBuilder();
     sb.append("class AmazonTopRatedFromOurBrandsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
@@ -221,8 +197,8 @@ public class AmazonTopRatedFromOurBrandsSerpElementItem extends BaseAmazonSerpEl
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
-    openapiFields.add("xpath");
     openapiFields.add("position");
+    openapiFields.add("xpath");
     openapiFields.add("items");
 
     // a set of required properties/fields (JSON key names)
@@ -242,9 +218,6 @@ public class AmazonTopRatedFromOurBrandsSerpElementItem extends BaseAmazonSerpEl
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
         if (jsonArrayitems != null) {

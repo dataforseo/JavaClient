@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksBulkBacklinksLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksBulkBacklinksLiveItem {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -57,7 +58,7 @@ public class BacklinksBulkBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_BACKLINKS = "backlinks";
   @SerializedName(SERIALIZED_NAME_BACKLINKS)
-  private Long backlinks;
+  private BigDecimal backlinks;
 
   public BacklinksBulkBacklinksLiveItem() {
   }
@@ -81,7 +82,7 @@ public class BacklinksBulkBacklinksLiveItem {
   }
 
 
-  public BacklinksBulkBacklinksLiveItem backlinks(Long backlinks) {
+  public BacklinksBulkBacklinksLiveItem backlinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
     return this;
   }
@@ -91,11 +92,11 @@ public class BacklinksBulkBacklinksLiveItem {
    * @return backlinks
    */
   @javax.annotation.Nullable
-  public Long getBacklinks() {
+  public BigDecimal getBacklinks() {
     return backlinks;
   }
 
-  public void setBacklinks(Long backlinks) {
+  public void setBacklinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
   }
 

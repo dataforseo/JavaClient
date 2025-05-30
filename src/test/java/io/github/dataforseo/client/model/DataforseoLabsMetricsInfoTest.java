@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -142,14 +143,6 @@ public class DataforseoLabsMetricsInfoTest {
     @Test
     public void etvTest() {
         // TODO: test etv
-    }
-
-    /**
-     * Test the property 'impressionsEtv'
-     */
-    @Test
-    public void impressionsEtvTest() {
-        // TODO: test impressionsEtv
     }
 
     /**

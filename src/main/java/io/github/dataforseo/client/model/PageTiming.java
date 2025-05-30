@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,15 +50,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * PageTiming
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class PageTiming {
   public static final String SERIALIZED_NAME_TIME_TO_INTERACTIVE = "time_to_interactive";
   @SerializedName(SERIALIZED_NAME_TIME_TO_INTERACTIVE)
-  private Integer timeToInteractive;
+  private BigDecimal timeToInteractive;
 
   public static final String SERIALIZED_NAME_DOM_COMPLETE = "dom_complete";
   @SerializedName(SERIALIZED_NAME_DOM_COMPLETE)
-  private Integer domComplete;
+  private BigDecimal domComplete;
 
   public static final String SERIALIZED_NAME_LARGEST_CONTENTFUL_PAINT = "largest_contentful_paint";
   @SerializedName(SERIALIZED_NAME_LARGEST_CONTENTFUL_PAINT)
@@ -69,40 +70,40 @@ public class PageTiming {
 
   public static final String SERIALIZED_NAME_CONNECTION_TIME = "connection_time";
   @SerializedName(SERIALIZED_NAME_CONNECTION_TIME)
-  private Integer connectionTime;
+  private BigDecimal connectionTime;
 
   public static final String SERIALIZED_NAME_TIME_TO_SECURE_CONNECTION = "time_to_secure_connection";
   @SerializedName(SERIALIZED_NAME_TIME_TO_SECURE_CONNECTION)
-  private Integer timeToSecureConnection;
+  private BigDecimal timeToSecureConnection;
 
   public static final String SERIALIZED_NAME_REQUEST_SENT_TIME = "request_sent_time";
   @SerializedName(SERIALIZED_NAME_REQUEST_SENT_TIME)
-  private Integer requestSentTime;
+  private BigDecimal requestSentTime;
 
   public static final String SERIALIZED_NAME_WAITING_TIME = "waiting_time";
   @SerializedName(SERIALIZED_NAME_WAITING_TIME)
-  private Integer waitingTime;
+  private BigDecimal waitingTime;
 
   public static final String SERIALIZED_NAME_DOWNLOAD_TIME = "download_time";
   @SerializedName(SERIALIZED_NAME_DOWNLOAD_TIME)
-  private Integer downloadTime;
+  private BigDecimal downloadTime;
 
   public static final String SERIALIZED_NAME_DURATION_TIME = "duration_time";
   @SerializedName(SERIALIZED_NAME_DURATION_TIME)
-  private Integer durationTime;
+  private BigDecimal durationTime;
 
   public static final String SERIALIZED_NAME_FETCH_START = "fetch_start";
   @SerializedName(SERIALIZED_NAME_FETCH_START)
-  private Integer fetchStart;
+  private BigDecimal fetchStart;
 
   public static final String SERIALIZED_NAME_FETCH_END = "fetch_end";
   @SerializedName(SERIALIZED_NAME_FETCH_END)
-  private Integer fetchEnd;
+  private BigDecimal fetchEnd;
 
   public PageTiming() {
   }
 
-  public PageTiming timeToInteractive(Integer timeToInteractive) {
+  public PageTiming timeToInteractive(BigDecimal timeToInteractive) {
     this.timeToInteractive = timeToInteractive;
     return this;
   }
@@ -112,16 +113,16 @@ public class PageTiming {
    * @return timeToInteractive
    */
   @javax.annotation.Nullable
-  public Integer getTimeToInteractive() {
+  public BigDecimal getTimeToInteractive() {
     return timeToInteractive;
   }
 
-  public void setTimeToInteractive(Integer timeToInteractive) {
+  public void setTimeToInteractive(BigDecimal timeToInteractive) {
     this.timeToInteractive = timeToInteractive;
   }
 
 
-  public PageTiming domComplete(Integer domComplete) {
+  public PageTiming domComplete(BigDecimal domComplete) {
     this.domComplete = domComplete;
     return this;
   }
@@ -131,11 +132,11 @@ public class PageTiming {
    * @return domComplete
    */
   @javax.annotation.Nullable
-  public Integer getDomComplete() {
+  public BigDecimal getDomComplete() {
     return domComplete;
   }
 
-  public void setDomComplete(Integer domComplete) {
+  public void setDomComplete(BigDecimal domComplete) {
     this.domComplete = domComplete;
   }
 
@@ -178,7 +179,7 @@ public class PageTiming {
   }
 
 
-  public PageTiming connectionTime(Integer connectionTime) {
+  public PageTiming connectionTime(BigDecimal connectionTime) {
     this.connectionTime = connectionTime;
     return this;
   }
@@ -188,16 +189,16 @@ public class PageTiming {
    * @return connectionTime
    */
   @javax.annotation.Nullable
-  public Integer getConnectionTime() {
+  public BigDecimal getConnectionTime() {
     return connectionTime;
   }
 
-  public void setConnectionTime(Integer connectionTime) {
+  public void setConnectionTime(BigDecimal connectionTime) {
     this.connectionTime = connectionTime;
   }
 
 
-  public PageTiming timeToSecureConnection(Integer timeToSecureConnection) {
+  public PageTiming timeToSecureConnection(BigDecimal timeToSecureConnection) {
     this.timeToSecureConnection = timeToSecureConnection;
     return this;
   }
@@ -207,16 +208,16 @@ public class PageTiming {
    * @return timeToSecureConnection
    */
   @javax.annotation.Nullable
-  public Integer getTimeToSecureConnection() {
+  public BigDecimal getTimeToSecureConnection() {
     return timeToSecureConnection;
   }
 
-  public void setTimeToSecureConnection(Integer timeToSecureConnection) {
+  public void setTimeToSecureConnection(BigDecimal timeToSecureConnection) {
     this.timeToSecureConnection = timeToSecureConnection;
   }
 
 
-  public PageTiming requestSentTime(Integer requestSentTime) {
+  public PageTiming requestSentTime(BigDecimal requestSentTime) {
     this.requestSentTime = requestSentTime;
     return this;
   }
@@ -226,16 +227,16 @@ public class PageTiming {
    * @return requestSentTime
    */
   @javax.annotation.Nullable
-  public Integer getRequestSentTime() {
+  public BigDecimal getRequestSentTime() {
     return requestSentTime;
   }
 
-  public void setRequestSentTime(Integer requestSentTime) {
+  public void setRequestSentTime(BigDecimal requestSentTime) {
     this.requestSentTime = requestSentTime;
   }
 
 
-  public PageTiming waitingTime(Integer waitingTime) {
+  public PageTiming waitingTime(BigDecimal waitingTime) {
     this.waitingTime = waitingTime;
     return this;
   }
@@ -245,16 +246,16 @@ public class PageTiming {
    * @return waitingTime
    */
   @javax.annotation.Nullable
-  public Integer getWaitingTime() {
+  public BigDecimal getWaitingTime() {
     return waitingTime;
   }
 
-  public void setWaitingTime(Integer waitingTime) {
+  public void setWaitingTime(BigDecimal waitingTime) {
     this.waitingTime = waitingTime;
   }
 
 
-  public PageTiming downloadTime(Integer downloadTime) {
+  public PageTiming downloadTime(BigDecimal downloadTime) {
     this.downloadTime = downloadTime;
     return this;
   }
@@ -264,16 +265,16 @@ public class PageTiming {
    * @return downloadTime
    */
   @javax.annotation.Nullable
-  public Integer getDownloadTime() {
+  public BigDecimal getDownloadTime() {
     return downloadTime;
   }
 
-  public void setDownloadTime(Integer downloadTime) {
+  public void setDownloadTime(BigDecimal downloadTime) {
     this.downloadTime = downloadTime;
   }
 
 
-  public PageTiming durationTime(Integer durationTime) {
+  public PageTiming durationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
     return this;
   }
@@ -283,16 +284,16 @@ public class PageTiming {
    * @return durationTime
    */
   @javax.annotation.Nullable
-  public Integer getDurationTime() {
+  public BigDecimal getDurationTime() {
     return durationTime;
   }
 
-  public void setDurationTime(Integer durationTime) {
+  public void setDurationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
   }
 
 
-  public PageTiming fetchStart(Integer fetchStart) {
+  public PageTiming fetchStart(BigDecimal fetchStart) {
     this.fetchStart = fetchStart;
     return this;
   }
@@ -302,16 +303,16 @@ public class PageTiming {
    * @return fetchStart
    */
   @javax.annotation.Nullable
-  public Integer getFetchStart() {
+  public BigDecimal getFetchStart() {
     return fetchStart;
   }
 
-  public void setFetchStart(Integer fetchStart) {
+  public void setFetchStart(BigDecimal fetchStart) {
     this.fetchStart = fetchStart;
   }
 
 
-  public PageTiming fetchEnd(Integer fetchEnd) {
+  public PageTiming fetchEnd(BigDecimal fetchEnd) {
     this.fetchEnd = fetchEnd;
     return this;
   }
@@ -321,11 +322,11 @@ public class PageTiming {
    * @return fetchEnd
    */
   @javax.annotation.Nullable
-  public Integer getFetchEnd() {
+  public BigDecimal getFetchEnd() {
     return fetchEnd;
   }
 
-  public void setFetchEnd(Integer fetchEnd) {
+  public void setFetchEnd(BigDecimal fetchEnd) {
     this.fetchEnd = fetchEnd;
   }
 

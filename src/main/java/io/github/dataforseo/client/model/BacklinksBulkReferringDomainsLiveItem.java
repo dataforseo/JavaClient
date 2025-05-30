@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksBulkReferringDomainsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksBulkReferringDomainsLiveItem {
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
@@ -57,19 +58,19 @@ public class BacklinksBulkReferringDomainsLiveItem {
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS = "referring_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS)
-  private Long referringDomains;
+  private BigDecimal referringDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW = "referring_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW)
-  private Long referringDomainsNofollow;
+  private BigDecimal referringDomainsNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS = "referring_main_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS)
-  private Long referringMainDomains;
+  private BigDecimal referringMainDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW = "referring_main_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW)
-  private Long referringMainDomainsNofollow;
+  private BigDecimal referringMainDomainsNofollow;
 
   public BacklinksBulkReferringDomainsLiveItem() {
   }
@@ -93,7 +94,7 @@ public class BacklinksBulkReferringDomainsLiveItem {
   }
 
 
-  public BacklinksBulkReferringDomainsLiveItem referringDomains(Long referringDomains) {
+  public BacklinksBulkReferringDomainsLiveItem referringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
     return this;
   }
@@ -103,16 +104,16 @@ public class BacklinksBulkReferringDomainsLiveItem {
    * @return referringDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringDomains() {
+  public BigDecimal getReferringDomains() {
     return referringDomains;
   }
 
-  public void setReferringDomains(Long referringDomains) {
+  public void setReferringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
   }
 
 
-  public BacklinksBulkReferringDomainsLiveItem referringDomainsNofollow(Long referringDomainsNofollow) {
+  public BacklinksBulkReferringDomainsLiveItem referringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
     return this;
   }
@@ -122,16 +123,16 @@ public class BacklinksBulkReferringDomainsLiveItem {
    * @return referringDomainsNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringDomainsNofollow() {
+  public BigDecimal getReferringDomainsNofollow() {
     return referringDomainsNofollow;
   }
 
-  public void setReferringDomainsNofollow(Long referringDomainsNofollow) {
+  public void setReferringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
   }
 
 
-  public BacklinksBulkReferringDomainsLiveItem referringMainDomains(Long referringMainDomains) {
+  public BacklinksBulkReferringDomainsLiveItem referringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
     return this;
   }
@@ -141,16 +142,16 @@ public class BacklinksBulkReferringDomainsLiveItem {
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringMainDomains() {
+  public BigDecimal getReferringMainDomains() {
     return referringMainDomains;
   }
 
-  public void setReferringMainDomains(Long referringMainDomains) {
+  public void setReferringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
   }
 
 
-  public BacklinksBulkReferringDomainsLiveItem referringMainDomainsNofollow(Long referringMainDomainsNofollow) {
+  public BacklinksBulkReferringDomainsLiveItem referringMainDomainsNofollow(BigDecimal referringMainDomainsNofollow) {
     this.referringMainDomainsNofollow = referringMainDomainsNofollow;
     return this;
   }
@@ -160,11 +161,11 @@ public class BacklinksBulkReferringDomainsLiveItem {
    * @return referringMainDomainsNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringMainDomainsNofollow() {
+  public BigDecimal getReferringMainDomainsNofollow() {
     return referringMainDomainsNofollow;
   }
 
-  public void setReferringMainDomainsNofollow(Long referringMainDomainsNofollow) {
+  public void setReferringMainDomainsNofollow(BigDecimal referringMainDomainsNofollow) {
     this.referringMainDomainsNofollow = referringMainDomainsNofollow;
   }
 

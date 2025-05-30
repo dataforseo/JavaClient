@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BaseDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -57,11 +58,11 @@ public class BaseDataforseoLabsSerpElementItem {
 
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
-  private Integer rankGroup;
+  private BigDecimal rankGroup;
 
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
-  private Integer rankAbsolute;
+  private BigDecimal rankAbsolute;
 
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -94,7 +95,7 @@ public class BaseDataforseoLabsSerpElementItem {
   }
 
 
-  public BaseDataforseoLabsSerpElementItem rankGroup(Integer rankGroup) {
+  public BaseDataforseoLabsSerpElementItem rankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
     return this;
   }
@@ -104,16 +105,16 @@ public class BaseDataforseoLabsSerpElementItem {
    * @return rankGroup
    */
   @javax.annotation.Nullable
-  public Integer getRankGroup() {
+  public BigDecimal getRankGroup() {
     return rankGroup;
   }
 
-  public void setRankGroup(Integer rankGroup) {
+  public void setRankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
   }
 
 
-  public BaseDataforseoLabsSerpElementItem rankAbsolute(Integer rankAbsolute) {
+  public BaseDataforseoLabsSerpElementItem rankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
     return this;
   }
@@ -123,11 +124,11 @@ public class BaseDataforseoLabsSerpElementItem {
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
-  public Integer getRankAbsolute() {
+  public BigDecimal getRankAbsolute() {
     return rankAbsolute;
   }
 
-  public void setRankAbsolute(Integer rankAbsolute) {
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
   }
 
@@ -301,29 +302,14 @@ public class BaseDataforseoLabsSerpElementItem {
         case "knowledge_graph":
           KnowledgeGraphDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "knowledge_graph_carousel_item":
-          KnowledgeGraphCarouselItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
-          break;
         case "knowledge_graph_description_item":
           KnowledgeGraphDescriptionItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
-          break;
-        case "knowledge_graph_expanded_item":
-          KnowledgeGraphExpandedItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
           break;
         case "knowledge_graph_images_item":
           KnowledgeGraphImagesItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
           break;
-        case "knowledge_graph_list_item":
-          KnowledgeGraphListItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
-          break;
-        case "knowledge_graph_part_item":
-          KnowledgeGraphPartItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
-          break;
         case "knowledge_graph_row_item":
           KnowledgeGraphRowItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
-          break;
-        case "knowledge_graph_shopping_item":
-          KnowledgeGraphShoppingItemDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
           break;
         case "local_pack":
           LocalPackDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
@@ -390,9 +376,6 @@ public class BaseDataforseoLabsSerpElementItem {
           break;
         case "video":
           VideoDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
-          break;
-        case "visual_stories":
-          VisualStoriesDataforseoLabsSerpElementItem.validateJsonElement(jsonElement);
           break;
         default:
           throw new IllegalArgumentException(String.format("The value of the `type` field `%s` does not match any key defined in the discriminator's mapping.", discriminatorValue));

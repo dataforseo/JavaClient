@@ -19,8 +19,8 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.ItemsRankedSerpElement;
-import io.github.dataforseo.client.model.KeywordData;
+import io.github.dataforseo.client.model.AppleRankedSerpElementInfo;
+import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsAppleKeywordsForAppLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-09-27T21:03:13.693366700+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsAppleKeywordsForAppLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -59,11 +59,11 @@ public class DataforseoLabsAppleKeywordsForAppLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORD_DATA = "keyword_data";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DATA)
-  private KeywordData keywordData;
+  private KeywordDataInfo keywordData;
 
   public static final String SERIALIZED_NAME_RANKED_SERP_ELEMENT = "ranked_serp_element";
   @SerializedName(SERIALIZED_NAME_RANKED_SERP_ELEMENT)
-  private ItemsRankedSerpElement rankedSerpElement;
+  private AppleRankedSerpElementInfo rankedSerpElement;
 
   public DataforseoLabsAppleKeywordsForAppLiveItem() {
   }
@@ -87,7 +87,7 @@ public class DataforseoLabsAppleKeywordsForAppLiveItem {
   }
 
 
-  public DataforseoLabsAppleKeywordsForAppLiveItem keywordData(KeywordData keywordData) {
+  public DataforseoLabsAppleKeywordsForAppLiveItem keywordData(KeywordDataInfo keywordData) {
     this.keywordData = keywordData;
     return this;
   }
@@ -97,16 +97,16 @@ public class DataforseoLabsAppleKeywordsForAppLiveItem {
    * @return keywordData
    */
   @javax.annotation.Nullable
-  public KeywordData getKeywordData() {
+  public KeywordDataInfo getKeywordData() {
     return keywordData;
   }
 
-  public void setKeywordData(KeywordData keywordData) {
+  public void setKeywordData(KeywordDataInfo keywordData) {
     this.keywordData = keywordData;
   }
 
 
-  public DataforseoLabsAppleKeywordsForAppLiveItem rankedSerpElement(ItemsRankedSerpElement rankedSerpElement) {
+  public DataforseoLabsAppleKeywordsForAppLiveItem rankedSerpElement(AppleRankedSerpElementInfo rankedSerpElement) {
     this.rankedSerpElement = rankedSerpElement;
     return this;
   }
@@ -116,11 +116,11 @@ public class DataforseoLabsAppleKeywordsForAppLiveItem {
    * @return rankedSerpElement
    */
   @javax.annotation.Nullable
-  public ItemsRankedSerpElement getRankedSerpElement() {
+  public AppleRankedSerpElementInfo getRankedSerpElement() {
     return rankedSerpElement;
   }
 
-  public void setRankedSerpElement(ItemsRankedSerpElement rankedSerpElement) {
+  public void setRankedSerpElement(AppleRankedSerpElementInfo rankedSerpElement) {
     this.rankedSerpElement = rankedSerpElement;
   }
 
@@ -257,11 +257,11 @@ public class DataforseoLabsAppleKeywordsForAppLiveItem {
       }
       // validate the optional field `keyword_data`
       if (jsonObj.get("keyword_data") != null && !jsonObj.get("keyword_data").isJsonNull()) {
-        KeywordData.validateJsonElement(jsonObj.get("keyword_data"));
+        KeywordDataInfo.validateJsonElement(jsonObj.get("keyword_data"));
       }
       // validate the optional field `ranked_serp_element`
       if (jsonObj.get("ranked_serp_element") != null && !jsonObj.get("ranked_serp_element").isJsonNull()) {
-        ItemsRankedSerpElement.validateJsonElement(jsonObj.get("ranked_serp_element"));
+        AppleRankedSerpElementInfo.validateJsonElement(jsonObj.get("ranked_serp_element"));
       }
   }
 

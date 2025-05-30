@@ -20,6 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseOnPageLinkItemInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -141,6 +142,14 @@ public class RedirectLinkElementItemTest {
     @Test
     public void isLinkRelationConflictTest() {
         // TODO: test isLinkRelationConflict
+    }
+
+    /**
+     * Test the property 'pageToStatusCode'
+     */
+    @Test
+    public void pageToStatusCodeTest() {
+        // TODO: test pageToStatusCode
     }
 
 }

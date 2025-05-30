@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.Graph;
 import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -53,8 +54,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * StocksBoxDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -90,6 +95,25 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
   public StocksBoxDataforseoLabsSerpElementItem() {
   }
 
+  public StocksBoxDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
+
   public StocksBoxDataforseoLabsSerpElementItem title(String title) {
     this.title = title;
     return this;
@@ -115,7 +139,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
   }
 
   /**
-   * source of the element indicates the source of information included in the shopping_element
+   * source of the element indicates the source of information included in the top_stories_element
    * @return source
    */
   @javax.annotation.Nullable
@@ -172,7 +196,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
   }
 
   /**
-   * relevant URL
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -191,7 +215,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
   }
 
   /**
-   * domain where a link points
+   * domain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -296,7 +320,8 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
       return false;
     }
     StocksBoxDataforseoLabsSerpElementItem stocksBoxDataforseoLabsSerpElementItem = (StocksBoxDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.title, stocksBoxDataforseoLabsSerpElementItem.title) &&
+    return Objects.equals(this.seType, stocksBoxDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.title, stocksBoxDataforseoLabsSerpElementItem.title) &&
         Objects.equals(this.source, stocksBoxDataforseoLabsSerpElementItem.source) &&
         Objects.equals(this.snippet, stocksBoxDataforseoLabsSerpElementItem.snippet) &&
         Objects.equals(this.price, stocksBoxDataforseoLabsSerpElementItem.price) &&
@@ -314,7 +339,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, source, snippet, price, url, domain, table, graph, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, title, source, snippet, price, url, domain, table, graph, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -329,6 +354,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
     StringBuilder sb = new StringBuilder();
     sb.append("class StocksBoxDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("    snippet: ").append(toIndentedString(snippet)).append("\n");
@@ -365,6 +391,7 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("title");
     openapiFields.add("source");
     openapiFields.add("snippet");
@@ -391,6 +418,9 @@ public class StocksBoxDataforseoLabsSerpElementItem extends BaseDataforseoLabsSe
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

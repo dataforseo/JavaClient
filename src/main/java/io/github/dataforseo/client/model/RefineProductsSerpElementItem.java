@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.Rectangle;
 import io.github.dataforseo.client.model.RefineProductsElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,16 +55,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * RefineProductsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RefineProductsSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -78,44 +71,6 @@ public class RefineProductsSerpElementItem extends BaseSerpElementItem {
 
   public RefineProductsSerpElementItem() {
   }
-
-  public RefineProductsSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public RefineProductsSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
 
   public RefineProductsSerpElementItem title(String title) {
     this.title = title;
@@ -236,9 +191,7 @@ public class RefineProductsSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     RefineProductsSerpElementItem refineProductsSerpElementItem = (RefineProductsSerpElementItem) o;
-    return Objects.equals(this.position, refineProductsSerpElementItem.position) &&
-        Objects.equals(this.xpath, refineProductsSerpElementItem.xpath) &&
-        Objects.equals(this.title, refineProductsSerpElementItem.title) &&
+    return Objects.equals(this.title, refineProductsSerpElementItem.title) &&
         Objects.equals(this.items, refineProductsSerpElementItem.items) &&
         Objects.equals(this.rectangle, refineProductsSerpElementItem.rectangle)&&
         Objects.equals(this.additionalProperties, refineProductsSerpElementItem.additionalProperties) &&
@@ -251,7 +204,7 @@ public class RefineProductsSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, title, items, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(title, items, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -266,8 +219,6 @@ public class RefineProductsSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class RefineProductsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
@@ -320,12 +271,6 @@ public class RefineProductsSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

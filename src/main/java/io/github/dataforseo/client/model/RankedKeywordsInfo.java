@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,24 +50,24 @@ import io.github.dataforseo.client.JSON;
 /**
  * RankedKeywordsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RankedKeywordsInfo {
   public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP3 = "page_from_keywords_count_top_3";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP3)
-  private Long pageFromKeywordsCountTop3;
+  private BigDecimal pageFromKeywordsCountTop3;
 
   public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP10 = "page_from_keywords_count_top_10";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP10)
-  private Long pageFromKeywordsCountTop10;
+  private BigDecimal pageFromKeywordsCountTop10;
 
   public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP100 = "page_from_keywords_count_top_100";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP100)
-  private Long pageFromKeywordsCountTop100;
+  private BigDecimal pageFromKeywordsCountTop100;
 
   public RankedKeywordsInfo() {
   }
 
-  public RankedKeywordsInfo pageFromKeywordsCountTop3(Long pageFromKeywordsCountTop3) {
+  public RankedKeywordsInfo pageFromKeywordsCountTop3(BigDecimal pageFromKeywordsCountTop3) {
     this.pageFromKeywordsCountTop3 = pageFromKeywordsCountTop3;
     return this;
   }
@@ -76,16 +77,16 @@ public class RankedKeywordsInfo {
    * @return pageFromKeywordsCountTop3
    */
   @javax.annotation.Nullable
-  public Long getPageFromKeywordsCountTop3() {
+  public BigDecimal getPageFromKeywordsCountTop3() {
     return pageFromKeywordsCountTop3;
   }
 
-  public void setPageFromKeywordsCountTop3(Long pageFromKeywordsCountTop3) {
+  public void setPageFromKeywordsCountTop3(BigDecimal pageFromKeywordsCountTop3) {
     this.pageFromKeywordsCountTop3 = pageFromKeywordsCountTop3;
   }
 
 
-  public RankedKeywordsInfo pageFromKeywordsCountTop10(Long pageFromKeywordsCountTop10) {
+  public RankedKeywordsInfo pageFromKeywordsCountTop10(BigDecimal pageFromKeywordsCountTop10) {
     this.pageFromKeywordsCountTop10 = pageFromKeywordsCountTop10;
     return this;
   }
@@ -95,16 +96,16 @@ public class RankedKeywordsInfo {
    * @return pageFromKeywordsCountTop10
    */
   @javax.annotation.Nullable
-  public Long getPageFromKeywordsCountTop10() {
+  public BigDecimal getPageFromKeywordsCountTop10() {
     return pageFromKeywordsCountTop10;
   }
 
-  public void setPageFromKeywordsCountTop10(Long pageFromKeywordsCountTop10) {
+  public void setPageFromKeywordsCountTop10(BigDecimal pageFromKeywordsCountTop10) {
     this.pageFromKeywordsCountTop10 = pageFromKeywordsCountTop10;
   }
 
 
-  public RankedKeywordsInfo pageFromKeywordsCountTop100(Long pageFromKeywordsCountTop100) {
+  public RankedKeywordsInfo pageFromKeywordsCountTop100(BigDecimal pageFromKeywordsCountTop100) {
     this.pageFromKeywordsCountTop100 = pageFromKeywordsCountTop100;
     return this;
   }
@@ -114,11 +115,11 @@ public class RankedKeywordsInfo {
    * @return pageFromKeywordsCountTop100
    */
   @javax.annotation.Nullable
-  public Long getPageFromKeywordsCountTop100() {
+  public BigDecimal getPageFromKeywordsCountTop100() {
     return pageFromKeywordsCountTop100;
   }
 
-  public void setPageFromKeywordsCountTop100(Long pageFromKeywordsCountTop100) {
+  public void setPageFromKeywordsCountTop100(BigDecimal pageFromKeywordsCountTop100) {
     this.pageFromKeywordsCountTop100 = pageFromKeywordsCountTop100;
   }
 

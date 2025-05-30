@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
 |**format** | **String** | type of file format of the dataset for example: zip, html, csv |  [optional] |
-|**size** | **Long** | file size in bytes |  [optional] |
+|**size** | **BigDecimal** | file size in bytes |  [optional] |
 
 
 

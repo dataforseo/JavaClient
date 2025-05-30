@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -51,27 +52,27 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentGenerationTextSummaryLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentGenerationTextSummaryLiveResultInfo {
   public static final String SERIALIZED_NAME_SENTENCES = "sentences";
   @SerializedName(SERIALIZED_NAME_SENTENCES)
-  private Integer sentences;
+  private BigDecimal sentences;
 
   public static final String SERIALIZED_NAME_PARAGRAPHS = "paragraphs";
   @SerializedName(SERIALIZED_NAME_PARAGRAPHS)
-  private Integer paragraphs;
+  private BigDecimal paragraphs;
 
   public static final String SERIALIZED_NAME_WORDS = "words";
   @SerializedName(SERIALIZED_NAME_WORDS)
-  private Integer words;
+  private BigDecimal words;
 
   public static final String SERIALIZED_NAME_CHARACTERS_WITHOUT_SPACES = "characters_without_spaces";
   @SerializedName(SERIALIZED_NAME_CHARACTERS_WITHOUT_SPACES)
-  private Integer charactersWithoutSpaces;
+  private BigDecimal charactersWithoutSpaces;
 
   public static final String SERIALIZED_NAME_CHARACTERS_WITH_SPACES = "characters_with_spaces";
   @SerializedName(SERIALIZED_NAME_CHARACTERS_WITH_SPACES)
-  private Integer charactersWithSpaces;
+  private BigDecimal charactersWithSpaces;
 
   public static final String SERIALIZED_NAME_WORDS_PER_SENTENCE = "words_per_sentence";
   @SerializedName(SERIALIZED_NAME_WORDS_PER_SENTENCE)
@@ -107,16 +108,16 @@ public class ContentGenerationTextSummaryLiveResultInfo {
 
   public static final String SERIALIZED_NAME_SPELLING_ERRORS = "spelling_errors";
   @SerializedName(SERIALIZED_NAME_SPELLING_ERRORS)
-  private Integer spellingErrors;
+  private BigDecimal spellingErrors;
 
   public static final String SERIALIZED_NAME_GRAMMAR_ERRORS = "grammar_errors";
   @SerializedName(SERIALIZED_NAME_GRAMMAR_ERRORS)
-  private Integer grammarErrors;
+  private BigDecimal grammarErrors;
 
   public ContentGenerationTextSummaryLiveResultInfo() {
   }
 
-  public ContentGenerationTextSummaryLiveResultInfo sentences(Integer sentences) {
+  public ContentGenerationTextSummaryLiveResultInfo sentences(BigDecimal sentences) {
     this.sentences = sentences;
     return this;
   }
@@ -126,16 +127,16 @@ public class ContentGenerationTextSummaryLiveResultInfo {
    * @return sentences
    */
   @javax.annotation.Nullable
-  public Integer getSentences() {
+  public BigDecimal getSentences() {
     return sentences;
   }
 
-  public void setSentences(Integer sentences) {
+  public void setSentences(BigDecimal sentences) {
     this.sentences = sentences;
   }
 
 
-  public ContentGenerationTextSummaryLiveResultInfo paragraphs(Integer paragraphs) {
+  public ContentGenerationTextSummaryLiveResultInfo paragraphs(BigDecimal paragraphs) {
     this.paragraphs = paragraphs;
     return this;
   }
@@ -145,16 +146,16 @@ public class ContentGenerationTextSummaryLiveResultInfo {
    * @return paragraphs
    */
   @javax.annotation.Nullable
-  public Integer getParagraphs() {
+  public BigDecimal getParagraphs() {
     return paragraphs;
   }
 
-  public void setParagraphs(Integer paragraphs) {
+  public void setParagraphs(BigDecimal paragraphs) {
     this.paragraphs = paragraphs;
   }
 
 
-  public ContentGenerationTextSummaryLiveResultInfo words(Integer words) {
+  public ContentGenerationTextSummaryLiveResultInfo words(BigDecimal words) {
     this.words = words;
     return this;
   }
@@ -164,16 +165,16 @@ public class ContentGenerationTextSummaryLiveResultInfo {
    * @return words
    */
   @javax.annotation.Nullable
-  public Integer getWords() {
+  public BigDecimal getWords() {
     return words;
   }
 
-  public void setWords(Integer words) {
+  public void setWords(BigDecimal words) {
     this.words = words;
   }
 
 
-  public ContentGenerationTextSummaryLiveResultInfo charactersWithoutSpaces(Integer charactersWithoutSpaces) {
+  public ContentGenerationTextSummaryLiveResultInfo charactersWithoutSpaces(BigDecimal charactersWithoutSpaces) {
     this.charactersWithoutSpaces = charactersWithoutSpaces;
     return this;
   }
@@ -183,16 +184,16 @@ public class ContentGenerationTextSummaryLiveResultInfo {
    * @return charactersWithoutSpaces
    */
   @javax.annotation.Nullable
-  public Integer getCharactersWithoutSpaces() {
+  public BigDecimal getCharactersWithoutSpaces() {
     return charactersWithoutSpaces;
   }
 
-  public void setCharactersWithoutSpaces(Integer charactersWithoutSpaces) {
+  public void setCharactersWithoutSpaces(BigDecimal charactersWithoutSpaces) {
     this.charactersWithoutSpaces = charactersWithoutSpaces;
   }
 
 
-  public ContentGenerationTextSummaryLiveResultInfo charactersWithSpaces(Integer charactersWithSpaces) {
+  public ContentGenerationTextSummaryLiveResultInfo charactersWithSpaces(BigDecimal charactersWithSpaces) {
     this.charactersWithSpaces = charactersWithSpaces;
     return this;
   }
@@ -202,11 +203,11 @@ public class ContentGenerationTextSummaryLiveResultInfo {
    * @return charactersWithSpaces
    */
   @javax.annotation.Nullable
-  public Integer getCharactersWithSpaces() {
+  public BigDecimal getCharactersWithSpaces() {
     return charactersWithSpaces;
   }
 
-  public void setCharactersWithSpaces(Integer charactersWithSpaces) {
+  public void setCharactersWithSpaces(BigDecimal charactersWithSpaces) {
     this.charactersWithSpaces = charactersWithSpaces;
   }
 
@@ -371,7 +372,7 @@ public class ContentGenerationTextSummaryLiveResultInfo {
   }
 
 
-  public ContentGenerationTextSummaryLiveResultInfo spellingErrors(Integer spellingErrors) {
+  public ContentGenerationTextSummaryLiveResultInfo spellingErrors(BigDecimal spellingErrors) {
     this.spellingErrors = spellingErrors;
     return this;
   }
@@ -381,16 +382,16 @@ public class ContentGenerationTextSummaryLiveResultInfo {
    * @return spellingErrors
    */
   @javax.annotation.Nullable
-  public Integer getSpellingErrors() {
+  public BigDecimal getSpellingErrors() {
     return spellingErrors;
   }
 
-  public void setSpellingErrors(Integer spellingErrors) {
+  public void setSpellingErrors(BigDecimal spellingErrors) {
     this.spellingErrors = spellingErrors;
   }
 
 
-  public ContentGenerationTextSummaryLiveResultInfo grammarErrors(Integer grammarErrors) {
+  public ContentGenerationTextSummaryLiveResultInfo grammarErrors(BigDecimal grammarErrors) {
     this.grammarErrors = grammarErrors;
     return this;
   }
@@ -400,11 +401,11 @@ public class ContentGenerationTextSummaryLiveResultInfo {
    * @return grammarErrors
    */
   @javax.annotation.Nullable
-  public Integer getGrammarErrors() {
+  public BigDecimal getGrammarErrors() {
     return grammarErrors;
   }
 
-  public void setGrammarErrors(Integer grammarErrors) {
+  public void setGrammarErrors(BigDecimal grammarErrors) {
     this.grammarErrors = grammarErrors;
   }
 

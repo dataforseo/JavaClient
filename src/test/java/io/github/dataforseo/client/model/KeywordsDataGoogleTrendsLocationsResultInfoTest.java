@@ -19,6 +19,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
@@ -76,14 +77,6 @@ public class KeywordsDataGoogleTrendsLocationsResultInfoTest {
     @Test
     public void locationTypeTest() {
         // TODO: test locationType
-    }
-
-    /**
-     * Test the property 'geoName'
-     */
-    @Test
-    public void geoNameTest() {
-        // TODO: test geoName
     }
 
     /**

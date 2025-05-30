@@ -29,6 +29,7 @@ import io.github.dataforseo.client.model.RatingInfo;
 import io.github.dataforseo.client.model.Rectangle;
 import io.github.dataforseo.client.model.RelatedResult;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -60,16 +61,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * OrganicSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OrganicSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
   private String domain;
@@ -180,44 +173,6 @@ public class OrganicSerpElementItem extends BaseSerpElementItem {
 
   public OrganicSerpElementItem() {
   }
-
-  public OrganicSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public OrganicSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
 
   public OrganicSerpElementItem domain(String domain) {
     this.domain = domain;
@@ -826,9 +781,7 @@ public class OrganicSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     OrganicSerpElementItem organicSerpElementItem = (OrganicSerpElementItem) o;
-    return Objects.equals(this.position, organicSerpElementItem.position) &&
-        Objects.equals(this.xpath, organicSerpElementItem.xpath) &&
-        Objects.equals(this.domain, organicSerpElementItem.domain) &&
+    return Objects.equals(this.domain, organicSerpElementItem.domain) &&
         Objects.equals(this.title, organicSerpElementItem.title) &&
         Objects.equals(this.url, organicSerpElementItem.url) &&
         Objects.equals(this.cacheUrl, organicSerpElementItem.cacheUrl) &&
@@ -865,7 +818,7 @@ public class OrganicSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, domain, title, url, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(domain, title, url, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, isWebStory, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, links, faq, extendedPeopleAlsoSearch, aboutThisResult, relatedResult, timestamp, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -880,8 +833,6 @@ public class OrganicSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class OrganicSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -982,12 +933,6 @@ public class OrganicSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if ((jsonObj.get("domain") != null && !jsonObj.get("domain").isJsonNull()) && !jsonObj.get("domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("domain").toString()));
       }

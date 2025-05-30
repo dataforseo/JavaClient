@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,76 +50,76 @@ import io.github.dataforseo.client.JSON;
 /**
  * FetchTiming
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class FetchTiming {
   public static final String SERIALIZED_NAME_DURATION_TIME = "duration_time";
   @SerializedName(SERIALIZED_NAME_DURATION_TIME)
-  private Integer durationTime;
+  private BigDecimal durationTime;
 
   public static final String SERIALIZED_NAME_FETCH_START = "fetch_start";
   @SerializedName(SERIALIZED_NAME_FETCH_START)
-  private Integer fetchStart;
+  private BigDecimal fetchStart;
 
   public static final String SERIALIZED_NAME_FETCH_END = "fetch_end";
   @SerializedName(SERIALIZED_NAME_FETCH_END)
-  private Integer fetchEnd;
+  private BigDecimal fetchEnd;
 
   public FetchTiming() {
   }
 
-  public FetchTiming durationTime(Integer durationTime) {
+  public FetchTiming durationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
     return this;
   }
 
   /**
-   * indicates how many milliseconds it took to fetch a resource
+   * indicates how many seconds it took to download a page
    * @return durationTime
    */
   @javax.annotation.Nullable
-  public Integer getDurationTime() {
+  public BigDecimal getDurationTime() {
     return durationTime;
   }
 
-  public void setDurationTime(Integer durationTime) {
+  public void setDurationTime(BigDecimal durationTime) {
     this.durationTime = durationTime;
   }
 
 
-  public FetchTiming fetchStart(Integer fetchStart) {
+  public FetchTiming fetchStart(BigDecimal fetchStart) {
     this.fetchStart = fetchStart;
     return this;
   }
 
   /**
-   * time to start downloading the resource the amount of time a browser needs to start downloading a resource
+   * time to start downloading the HTML resource the amount of time the browser needs to start downloading a page
    * @return fetchStart
    */
   @javax.annotation.Nullable
-  public Integer getFetchStart() {
+  public BigDecimal getFetchStart() {
     return fetchStart;
   }
 
-  public void setFetchStart(Integer fetchStart) {
+  public void setFetchStart(BigDecimal fetchStart) {
     this.fetchStart = fetchStart;
   }
 
 
-  public FetchTiming fetchEnd(Integer fetchEnd) {
+  public FetchTiming fetchEnd(BigDecimal fetchEnd) {
     this.fetchEnd = fetchEnd;
     return this;
   }
 
   /**
-   * time to complete downloading the resource the amount of time a browser needs to complete downloading a resource
+   * time to complete downloading the HTML resource the amount of time the browser needs to complete downloading a page
    * @return fetchEnd
    */
   @javax.annotation.Nullable
-  public Integer getFetchEnd() {
+  public BigDecimal getFetchEnd() {
     return fetchEnd;
   }
 
-  public void setFetchEnd(Integer fetchEnd) {
+  public void setFetchEnd(BigDecimal fetchEnd) {
     this.fetchEnd = fetchEnd;
   }
 

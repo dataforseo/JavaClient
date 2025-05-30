@@ -13,7 +13,7 @@
 |**title** | **String** | product title |  [optional] |
 |**url** | **String** | the URL of the product page |  [optional] |
 |**imageUrl** | **String** | URL of the product image featured in the results |  [optional] |
-|**boughtPastMonth** | **Integer** | number of product purchases in the past month |  [optional] |
+|**boughtPastMonth** | **BigDecimal** | number of product purchases in the past month |  [optional] |
 |**priceFrom** | **Float** | the regular price of a product example: 49.98 |  [optional] |
 |**priceTo** | **Float** | the upper limit of the product price range example: 384.99 |  [optional] |
 |**currency** | **String** | currency in the ISO format example: USD |  [optional] |

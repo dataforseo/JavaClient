@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseOnPageLinkItemInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,33 +51,10 @@ import io.github.dataforseo.client.JSON;
 /**
  * AlternateLinkElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AlternateLinkElementItem extends BaseOnPageLinkItemInfo {
-  public static final String SERIALIZED_NAME_PAGE_TO_STATUS_CODE = "page_to_status_code";
-  @SerializedName(SERIALIZED_NAME_PAGE_TO_STATUS_CODE)
-  private Integer pageToStatusCode;
-
   public AlternateLinkElementItem() {
   }
-
-  public AlternateLinkElementItem pageToStatusCode(Integer pageToStatusCode) {
-    this.pageToStatusCode = pageToStatusCode;
-    return this;
-  }
-
-  /**
-   * status code of the referenced page status code of the page to which the link is pointing
-   * @return pageToStatusCode
-   */
-  @javax.annotation.Nullable
-  public Integer getPageToStatusCode() {
-    return pageToStatusCode;
-  }
-
-  public void setPageToStatusCode(Integer pageToStatusCode) {
-    this.pageToStatusCode = pageToStatusCode;
-  }
-
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -131,10 +109,7 @@ public class AlternateLinkElementItem extends BaseOnPageLinkItemInfo {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    AlternateLinkElementItem alternateLinkElementItem = (AlternateLinkElementItem) o;
-    return Objects.equals(this.pageToStatusCode, alternateLinkElementItem.pageToStatusCode)&&
-        Objects.equals(this.additionalProperties, alternateLinkElementItem.additionalProperties) &&
-        super.equals(o);
+    return super.equals(o);
   }
 
   private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
@@ -143,7 +118,7 @@ public class AlternateLinkElementItem extends BaseOnPageLinkItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(pageToStatusCode, super.hashCode(), additionalProperties);
+    return Objects.hash(super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -158,7 +133,6 @@ public class AlternateLinkElementItem extends BaseOnPageLinkItemInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class AlternateLinkElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    pageToStatusCode: ").append(toIndentedString(pageToStatusCode)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -213,7 +187,6 @@ public class AlternateLinkElementItem extends BaseOnPageLinkItemInfo {
           throw new IllegalArgumentException(String.format("The required field(s) %s in AlternateLinkElementItem is not found in the empty JSON string", AlternateLinkElementItem.openapiRequiredFields.toString()));
         }
       }
-        JsonObject jsonObj = jsonElement.getAsJsonObject();
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

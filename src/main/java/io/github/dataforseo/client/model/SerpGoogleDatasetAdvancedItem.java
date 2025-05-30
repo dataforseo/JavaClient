@@ -26,6 +26,7 @@ import io.github.dataforseo.client.model.LicensesElement;
 import io.github.dataforseo.client.model.LinkElement;
 import io.github.dataforseo.client.model.PeriodCovered;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -57,7 +58,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleDatasetAdvancedItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleDatasetAdvancedItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -65,11 +66,11 @@ public class SerpGoogleDatasetAdvancedItem {
 
   public static final String SERIALIZED_NAME_RANK_GROUP = "rank_group";
   @SerializedName(SERIALIZED_NAME_RANK_GROUP)
-  private Integer rankGroup;
+  private BigDecimal rankGroup;
 
   public static final String SERIALIZED_NAME_RANK_ABSOLUTE = "rank_absolute";
   @SerializedName(SERIALIZED_NAME_RANK_ABSOLUTE)
-  private Integer rankAbsolute;
+  private BigDecimal rankAbsolute;
 
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -93,7 +94,7 @@ public class SerpGoogleDatasetAdvancedItem {
 
   public static final String SERIALIZED_NAME_SCHOLARLY_CITATIONS_COUNT = "scholarly_citations_count";
   @SerializedName(SERIALIZED_NAME_SCHOLARLY_CITATIONS_COUNT)
-  private Long scholarlyCitationsCount;
+  private BigDecimal scholarlyCitationsCount;
 
   public static final String SERIALIZED_NAME_SCHOLARLY_ARTICLES_URL = "scholarly_articles_url";
   @SerializedName(SERIALIZED_NAME_SCHOLARLY_ARTICLES_URL)
@@ -165,7 +166,7 @@ public class SerpGoogleDatasetAdvancedItem {
   }
 
 
-  public SerpGoogleDatasetAdvancedItem rankGroup(Integer rankGroup) {
+  public SerpGoogleDatasetAdvancedItem rankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
     return this;
   }
@@ -175,16 +176,16 @@ public class SerpGoogleDatasetAdvancedItem {
    * @return rankGroup
    */
   @javax.annotation.Nullable
-  public Integer getRankGroup() {
+  public BigDecimal getRankGroup() {
     return rankGroup;
   }
 
-  public void setRankGroup(Integer rankGroup) {
+  public void setRankGroup(BigDecimal rankGroup) {
     this.rankGroup = rankGroup;
   }
 
 
-  public SerpGoogleDatasetAdvancedItem rankAbsolute(Integer rankAbsolute) {
+  public SerpGoogleDatasetAdvancedItem rankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
     return this;
   }
@@ -194,11 +195,11 @@ public class SerpGoogleDatasetAdvancedItem {
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
-  public Integer getRankAbsolute() {
+  public BigDecimal getRankAbsolute() {
     return rankAbsolute;
   }
 
-  public void setRankAbsolute(Integer rankAbsolute) {
+  public void setRankAbsolute(BigDecimal rankAbsolute) {
     this.rankAbsolute = rankAbsolute;
   }
 
@@ -298,7 +299,7 @@ public class SerpGoogleDatasetAdvancedItem {
   }
 
 
-  public SerpGoogleDatasetAdvancedItem scholarlyCitationsCount(Long scholarlyCitationsCount) {
+  public SerpGoogleDatasetAdvancedItem scholarlyCitationsCount(BigDecimal scholarlyCitationsCount) {
     this.scholarlyCitationsCount = scholarlyCitationsCount;
     return this;
   }
@@ -308,11 +309,11 @@ public class SerpGoogleDatasetAdvancedItem {
    * @return scholarlyCitationsCount
    */
   @javax.annotation.Nullable
-  public Long getScholarlyCitationsCount() {
+  public BigDecimal getScholarlyCitationsCount() {
     return scholarlyCitationsCount;
   }
 
-  public void setScholarlyCitationsCount(Long scholarlyCitationsCount) {
+  public void setScholarlyCitationsCount(BigDecimal scholarlyCitationsCount) {
     this.scholarlyCitationsCount = scholarlyCitationsCount;
   }
 

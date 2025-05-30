@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.Advertiser;
 import io.github.dataforseo.client.model.BaseGoogleAdsAdvertisersSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem extends BaseGoogleAdsAdvertisersSerpElementItem {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -65,7 +66,7 @@ public class GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem extend
 
   public static final String SERIALIZED_NAME_APPROX_ADS_COUNT = "approx_ads_count";
   @SerializedName(SERIALIZED_NAME_APPROX_ADS_COUNT)
-  private Long approxAdsCount;
+  private BigDecimal approxAdsCount;
 
   public static final String SERIALIZED_NAME_ADVERTISERS = "advertisers";
   @SerializedName(SERIALIZED_NAME_ADVERTISERS)
@@ -112,7 +113,7 @@ public class GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem extend
   }
 
 
-  public GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem approxAdsCount(Long approxAdsCount) {
+  public GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem approxAdsCount(BigDecimal approxAdsCount) {
     this.approxAdsCount = approxAdsCount;
     return this;
   }
@@ -122,11 +123,11 @@ public class GoogleAdsAdvertisersAdsMultiAccountAdvertiserSerpElementItem extend
    * @return approxAdsCount
    */
   @javax.annotation.Nullable
-  public Long getApproxAdsCount() {
+  public BigDecimal getApproxAdsCount() {
     return approxAdsCount;
   }
 
-  public void setApproxAdsCount(Long approxAdsCount) {
+  public void setApproxAdsCount(BigDecimal approxAdsCount) {
     this.approxAdsCount = approxAdsCount;
   }
 

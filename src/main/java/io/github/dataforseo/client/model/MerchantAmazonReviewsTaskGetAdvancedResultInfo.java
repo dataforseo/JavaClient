@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.ImagesElement;
 import io.github.dataforseo.client.model.RatingElement;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MerchantAmazonReviewsTaskGetAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_ASIN = "asin";
   @SerializedName(SERIALIZED_NAME_ASIN)
@@ -71,7 +72,7 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -103,7 +104,7 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
@@ -111,7 +112,7 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -177,7 +178,7 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
   }
 
 
-  public MerchantAmazonReviewsTaskGetAdvancedResultInfo locationCode(Integer locationCode) {
+  public MerchantAmazonReviewsTaskGetAdvancedResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -187,11 +188,11 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -329,7 +330,7 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
   }
 
 
-  public MerchantAmazonReviewsTaskGetAdvancedResultInfo reviewsCount(Long reviewsCount) {
+  public MerchantAmazonReviewsTaskGetAdvancedResultInfo reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -339,11 +340,11 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
@@ -375,7 +376,7 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
   }
 
 
-  public MerchantAmazonReviewsTaskGetAdvancedResultInfo itemsCount(Long itemsCount) {
+  public MerchantAmazonReviewsTaskGetAdvancedResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -385,11 +386,11 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 

@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BacklinksPageMeta;
 import io.github.dataforseo.client.model.PageSummary;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksDomainPagesLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksDomainPagesLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -91,7 +92,7 @@ public class BacklinksDomainPagesLiveItem {
 
   public static final String SERIALIZED_NAME_STATUS_CODE = "status_code";
   @SerializedName(SERIALIZED_NAME_STATUS_CODE)
-  private Integer statusCode;
+  private BigDecimal statusCode;
 
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
@@ -99,11 +100,11 @@ public class BacklinksDomainPagesLiveItem {
 
   public static final String SERIALIZED_NAME_SIZE = "size";
   @SerializedName(SERIALIZED_NAME_SIZE)
-  private Integer size;
+  private BigDecimal size;
 
   public static final String SERIALIZED_NAME_ENCODED_SIZE = "encoded_size";
   @SerializedName(SERIALIZED_NAME_ENCODED_SIZE)
-  private Integer encodedSize;
+  private BigDecimal encodedSize;
 
   public static final String SERIALIZED_NAME_CONTENT_ENCODING = "content_encoding";
   @SerializedName(SERIALIZED_NAME_CONTENT_ENCODING)
@@ -299,7 +300,7 @@ public class BacklinksDomainPagesLiveItem {
   }
 
 
-  public BacklinksDomainPagesLiveItem statusCode(Integer statusCode) {
+  public BacklinksDomainPagesLiveItem statusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
     return this;
   }
@@ -309,11 +310,11 @@ public class BacklinksDomainPagesLiveItem {
    * @return statusCode
    */
   @javax.annotation.Nullable
-  public Integer getStatusCode() {
+  public BigDecimal getStatusCode() {
     return statusCode;
   }
 
-  public void setStatusCode(Integer statusCode) {
+  public void setStatusCode(BigDecimal statusCode) {
     this.statusCode = statusCode;
   }
 
@@ -337,7 +338,7 @@ public class BacklinksDomainPagesLiveItem {
   }
 
 
-  public BacklinksDomainPagesLiveItem size(Integer size) {
+  public BacklinksDomainPagesLiveItem size(BigDecimal size) {
     this.size = size;
     return this;
   }
@@ -347,16 +348,16 @@ public class BacklinksDomainPagesLiveItem {
    * @return size
    */
   @javax.annotation.Nullable
-  public Integer getSize() {
+  public BigDecimal getSize() {
     return size;
   }
 
-  public void setSize(Integer size) {
+  public void setSize(BigDecimal size) {
     this.size = size;
   }
 
 
-  public BacklinksDomainPagesLiveItem encodedSize(Integer encodedSize) {
+  public BacklinksDomainPagesLiveItem encodedSize(BigDecimal encodedSize) {
     this.encodedSize = encodedSize;
     return this;
   }
@@ -366,11 +367,11 @@ public class BacklinksDomainPagesLiveItem {
    * @return encodedSize
    */
   @javax.annotation.Nullable
-  public Integer getEncodedSize() {
+  public BigDecimal getEncodedSize() {
     return encodedSize;
   }
 
-  public void setEncodedSize(Integer encodedSize) {
+  public void setEncodedSize(BigDecimal encodedSize) {
     this.encodedSize = encodedSize;
   }
 

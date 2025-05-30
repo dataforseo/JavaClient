@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksTimeseriesSummaryLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksTimeseriesSummaryLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,47 +62,47 @@ public class BacklinksTimeseriesSummaryLiveItem {
 
   public static final String SERIALIZED_NAME_RANK = "rank";
   @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
+  private BigDecimal rank;
 
   public static final String SERIALIZED_NAME_BACKLINKS = "backlinks";
   @SerializedName(SERIALIZED_NAME_BACKLINKS)
-  private Long backlinks;
+  private BigDecimal backlinks;
 
   public static final String SERIALIZED_NAME_BACKLINKS_NOFOLLOW = "backlinks_nofollow";
   @SerializedName(SERIALIZED_NAME_BACKLINKS_NOFOLLOW)
-  private Long backlinksNofollow;
+  private BigDecimal backlinksNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_PAGES = "referring_pages";
   @SerializedName(SERIALIZED_NAME_REFERRING_PAGES)
-  private Long referringPages;
+  private BigDecimal referringPages;
 
   public static final String SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW = "referring_pages_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW)
-  private Long referringPagesNofollow;
+  private BigDecimal referringPagesNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS = "referring_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS)
-  private Long referringDomains;
+  private BigDecimal referringDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW = "referring_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW)
-  private Long referringDomainsNofollow;
+  private BigDecimal referringDomainsNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS = "referring_main_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS)
-  private Long referringMainDomains;
+  private BigDecimal referringMainDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW = "referring_main_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW)
-  private Long referringMainDomainsNofollow;
+  private BigDecimal referringMainDomainsNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_IPS = "referring_ips";
   @SerializedName(SERIALIZED_NAME_REFERRING_IPS)
-  private Long referringIps;
+  private BigDecimal referringIps;
 
   public static final String SERIALIZED_NAME_REFERRING_SUBNETS = "referring_subnets";
   @SerializedName(SERIALIZED_NAME_REFERRING_SUBNETS)
-  private Long referringSubnets;
+  private BigDecimal referringSubnets;
 
   public BacklinksTimeseriesSummaryLiveItem() {
   }
@@ -144,7 +145,7 @@ public class BacklinksTimeseriesSummaryLiveItem {
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem rank(Integer rank) {
+  public BacklinksTimeseriesSummaryLiveItem rank(BigDecimal rank) {
     this.rank = rank;
     return this;
   }
@@ -154,16 +155,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getRank() {
+  public BigDecimal getRank() {
     return rank;
   }
 
-  public void setRank(Integer rank) {
+  public void setRank(BigDecimal rank) {
     this.rank = rank;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem backlinks(Long backlinks) {
+  public BacklinksTimeseriesSummaryLiveItem backlinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
     return this;
   }
@@ -173,16 +174,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return backlinks
    */
   @javax.annotation.Nullable
-  public Long getBacklinks() {
+  public BigDecimal getBacklinks() {
     return backlinks;
   }
 
-  public void setBacklinks(Long backlinks) {
+  public void setBacklinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem backlinksNofollow(Long backlinksNofollow) {
+  public BacklinksTimeseriesSummaryLiveItem backlinksNofollow(BigDecimal backlinksNofollow) {
     this.backlinksNofollow = backlinksNofollow;
     return this;
   }
@@ -192,16 +193,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return backlinksNofollow
    */
   @javax.annotation.Nullable
-  public Long getBacklinksNofollow() {
+  public BigDecimal getBacklinksNofollow() {
     return backlinksNofollow;
   }
 
-  public void setBacklinksNofollow(Long backlinksNofollow) {
+  public void setBacklinksNofollow(BigDecimal backlinksNofollow) {
     this.backlinksNofollow = backlinksNofollow;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringPages(Long referringPages) {
+  public BacklinksTimeseriesSummaryLiveItem referringPages(BigDecimal referringPages) {
     this.referringPages = referringPages;
     return this;
   }
@@ -211,16 +212,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringPages
    */
   @javax.annotation.Nullable
-  public Long getReferringPages() {
+  public BigDecimal getReferringPages() {
     return referringPages;
   }
 
-  public void setReferringPages(Long referringPages) {
+  public void setReferringPages(BigDecimal referringPages) {
     this.referringPages = referringPages;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringPagesNofollow(Long referringPagesNofollow) {
+  public BacklinksTimeseriesSummaryLiveItem referringPagesNofollow(BigDecimal referringPagesNofollow) {
     this.referringPagesNofollow = referringPagesNofollow;
     return this;
   }
@@ -230,16 +231,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringPagesNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringPagesNofollow() {
+  public BigDecimal getReferringPagesNofollow() {
     return referringPagesNofollow;
   }
 
-  public void setReferringPagesNofollow(Long referringPagesNofollow) {
+  public void setReferringPagesNofollow(BigDecimal referringPagesNofollow) {
     this.referringPagesNofollow = referringPagesNofollow;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringDomains(Long referringDomains) {
+  public BacklinksTimeseriesSummaryLiveItem referringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
     return this;
   }
@@ -249,16 +250,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringDomains() {
+  public BigDecimal getReferringDomains() {
     return referringDomains;
   }
 
-  public void setReferringDomains(Long referringDomains) {
+  public void setReferringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringDomainsNofollow(Long referringDomainsNofollow) {
+  public BacklinksTimeseriesSummaryLiveItem referringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
     return this;
   }
@@ -268,16 +269,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringDomainsNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringDomainsNofollow() {
+  public BigDecimal getReferringDomainsNofollow() {
     return referringDomainsNofollow;
   }
 
-  public void setReferringDomainsNofollow(Long referringDomainsNofollow) {
+  public void setReferringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringMainDomains(Long referringMainDomains) {
+  public BacklinksTimeseriesSummaryLiveItem referringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
     return this;
   }
@@ -287,16 +288,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringMainDomains() {
+  public BigDecimal getReferringMainDomains() {
     return referringMainDomains;
   }
 
-  public void setReferringMainDomains(Long referringMainDomains) {
+  public void setReferringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringMainDomainsNofollow(Long referringMainDomainsNofollow) {
+  public BacklinksTimeseriesSummaryLiveItem referringMainDomainsNofollow(BigDecimal referringMainDomainsNofollow) {
     this.referringMainDomainsNofollow = referringMainDomainsNofollow;
     return this;
   }
@@ -306,16 +307,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringMainDomainsNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringMainDomainsNofollow() {
+  public BigDecimal getReferringMainDomainsNofollow() {
     return referringMainDomainsNofollow;
   }
 
-  public void setReferringMainDomainsNofollow(Long referringMainDomainsNofollow) {
+  public void setReferringMainDomainsNofollow(BigDecimal referringMainDomainsNofollow) {
     this.referringMainDomainsNofollow = referringMainDomainsNofollow;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringIps(Long referringIps) {
+  public BacklinksTimeseriesSummaryLiveItem referringIps(BigDecimal referringIps) {
     this.referringIps = referringIps;
     return this;
   }
@@ -325,16 +326,16 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringIps
    */
   @javax.annotation.Nullable
-  public Long getReferringIps() {
+  public BigDecimal getReferringIps() {
     return referringIps;
   }
 
-  public void setReferringIps(Long referringIps) {
+  public void setReferringIps(BigDecimal referringIps) {
     this.referringIps = referringIps;
   }
 
 
-  public BacklinksTimeseriesSummaryLiveItem referringSubnets(Long referringSubnets) {
+  public BacklinksTimeseriesSummaryLiveItem referringSubnets(BigDecimal referringSubnets) {
     this.referringSubnets = referringSubnets;
     return this;
   }
@@ -344,11 +345,11 @@ public class BacklinksTimeseriesSummaryLiveItem {
    * @return referringSubnets
    */
   @javax.annotation.Nullable
-  public Long getReferringSubnets() {
+  public BigDecimal getReferringSubnets() {
     return referringSubnets;
   }
 
-  public void setReferringSubnets(Long referringSubnets) {
+  public void setReferringSubnets(BigDecimal referringSubnets) {
     this.referringSubnets = referringSubnets;
   }
 

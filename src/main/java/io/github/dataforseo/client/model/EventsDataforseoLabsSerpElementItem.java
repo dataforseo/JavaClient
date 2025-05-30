@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.EventsElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,8 +54,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * EventsDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -69,6 +74,25 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
 
   public EventsDataforseoLabsSerpElementItem() {
   }
+
+  public EventsDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public EventsDataforseoLabsSerpElementItem title(String title) {
     this.title = title;
@@ -95,7 +119,7 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
   }
 
   /**
-   * relevant URL
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -122,7 +146,7 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
   }
 
   /**
-   * additional items present in the element if there are none, equals null
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable
@@ -189,7 +213,8 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
       return false;
     }
     EventsDataforseoLabsSerpElementItem eventsDataforseoLabsSerpElementItem = (EventsDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.title, eventsDataforseoLabsSerpElementItem.title) &&
+    return Objects.equals(this.seType, eventsDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.title, eventsDataforseoLabsSerpElementItem.title) &&
         Objects.equals(this.url, eventsDataforseoLabsSerpElementItem.url) &&
         Objects.equals(this.items, eventsDataforseoLabsSerpElementItem.items)&&
         Objects.equals(this.additionalProperties, eventsDataforseoLabsSerpElementItem.additionalProperties) &&
@@ -202,7 +227,7 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, url, items, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, title, url, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -217,6 +242,7 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
     StringBuilder sb = new StringBuilder();
     sb.append("class EventsDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
@@ -248,6 +274,7 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("title");
     openapiFields.add("url");
     openapiFields.add("items");
@@ -269,6 +296,9 @@ public class EventsDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpE
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

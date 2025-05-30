@@ -20,6 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.TargetInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -194,6 +195,14 @@ public class BacklinksSummaryLiveResultInfoTest {
     }
 
     /**
+     * Test the property 'referringPagesNofollow'
+     */
+    @Test
+    public void referringPagesNofollowTest() {
+        // TODO: test referringPagesNofollow
+    }
+
+    /**
      * Test the property 'referringLinksTld'
      */
     @Test
@@ -239,14 +248,6 @@ public class BacklinksSummaryLiveResultInfoTest {
     @Test
     public void referringLinksCountriesTest() {
         // TODO: test referringLinksCountries
-    }
-
-    /**
-     * Test the property 'referringPagesNofollow'
-     */
-    @Test
-    public void referringPagesNofollowTest() {
-        // TODO: test referringPagesNofollow
     }
 
 }

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,19 +50,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentGenerationGenerateMetaTagsLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentGenerationGenerateMetaTagsLiveResultInfo {
   public static final String SERIALIZED_NAME_INPUT_TOKENS = "input_tokens";
   @SerializedName(SERIALIZED_NAME_INPUT_TOKENS)
-  private Integer inputTokens;
+  private BigDecimal inputTokens;
 
   public static final String SERIALIZED_NAME_OUTPUT_TOKENS = "output_tokens";
   @SerializedName(SERIALIZED_NAME_OUTPUT_TOKENS)
-  private Integer outputTokens;
+  private BigDecimal outputTokens;
 
   public static final String SERIALIZED_NAME_NEW_TOKENS = "new_tokens";
   @SerializedName(SERIALIZED_NAME_NEW_TOKENS)
-  private Integer newTokens;
+  private BigDecimal newTokens;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -74,7 +75,7 @@ public class ContentGenerationGenerateMetaTagsLiveResultInfo {
   public ContentGenerationGenerateMetaTagsLiveResultInfo() {
   }
 
-  public ContentGenerationGenerateMetaTagsLiveResultInfo inputTokens(Integer inputTokens) {
+  public ContentGenerationGenerateMetaTagsLiveResultInfo inputTokens(BigDecimal inputTokens) {
     this.inputTokens = inputTokens;
     return this;
   }
@@ -84,16 +85,16 @@ public class ContentGenerationGenerateMetaTagsLiveResultInfo {
    * @return inputTokens
    */
   @javax.annotation.Nullable
-  public Integer getInputTokens() {
+  public BigDecimal getInputTokens() {
     return inputTokens;
   }
 
-  public void setInputTokens(Integer inputTokens) {
+  public void setInputTokens(BigDecimal inputTokens) {
     this.inputTokens = inputTokens;
   }
 
 
-  public ContentGenerationGenerateMetaTagsLiveResultInfo outputTokens(Integer outputTokens) {
+  public ContentGenerationGenerateMetaTagsLiveResultInfo outputTokens(BigDecimal outputTokens) {
     this.outputTokens = outputTokens;
     return this;
   }
@@ -103,16 +104,16 @@ public class ContentGenerationGenerateMetaTagsLiveResultInfo {
    * @return outputTokens
    */
   @javax.annotation.Nullable
-  public Integer getOutputTokens() {
+  public BigDecimal getOutputTokens() {
     return outputTokens;
   }
 
-  public void setOutputTokens(Integer outputTokens) {
+  public void setOutputTokens(BigDecimal outputTokens) {
     this.outputTokens = outputTokens;
   }
 
 
-  public ContentGenerationGenerateMetaTagsLiveResultInfo newTokens(Integer newTokens) {
+  public ContentGenerationGenerateMetaTagsLiveResultInfo newTokens(BigDecimal newTokens) {
     this.newTokens = newTokens;
     return this;
   }
@@ -122,11 +123,11 @@ public class ContentGenerationGenerateMetaTagsLiveResultInfo {
    * @return newTokens
    */
   @javax.annotation.Nullable
-  public Integer getNewTokens() {
+  public BigDecimal getNewTokens() {
     return newTokens;
   }
 
-  public void setNewTokens(Integer newTokens) {
+  public void setNewTokens(BigDecimal newTokens) {
     this.newTokens = newTokens;
   }
 

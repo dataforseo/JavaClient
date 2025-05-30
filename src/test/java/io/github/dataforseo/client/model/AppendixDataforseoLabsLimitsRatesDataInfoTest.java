@@ -208,6 +208,14 @@ public class AppendixDataforseoLabsLimitsRatesDataInfoTest {
     }
 
     /**
+     * Test the property 'historicalSearchVolume'
+     */
+    @Test
+    public void historicalSearchVolumeTest() {
+        // TODO: test historicalSearchVolume
+    }
+
+    /**
      * Test the property 'categoriesForDomain'
      */
     @Test

@@ -19,9 +19,10 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import io.github.dataforseo.client.model.BacklinksRedirectInfo;
 import io.github.dataforseo.client.model.RankedKeywordsInfo;
-import io.github.dataforseo.client.model.Redirect;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksBacklinksLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksBacklinksLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -97,19 +98,19 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_BACKLINK_SPAM_SCORE = "backlink_spam_score";
   @SerializedName(SERIALIZED_NAME_BACKLINK_SPAM_SCORE)
-  private Integer backlinkSpamScore;
+  private BigDecimal backlinkSpamScore;
 
   public static final String SERIALIZED_NAME_RANK = "rank";
   @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
+  private BigDecimal rank;
 
   public static final String SERIALIZED_NAME_PAGE_FROM_RANK = "page_from_rank";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_RANK)
-  private Integer pageFromRank;
+  private BigDecimal pageFromRank;
 
   public static final String SERIALIZED_NAME_DOMAIN_FROM_RANK = "domain_from_rank";
   @SerializedName(SERIALIZED_NAME_DOMAIN_FROM_RANK)
-  private Integer domainFromRank;
+  private BigDecimal domainFromRank;
 
   public static final String SERIALIZED_NAME_DOMAIN_FROM_PLATFORM_TYPE = "domain_from_platform_type";
   @SerializedName(SERIALIZED_NAME_DOMAIN_FROM_PLATFORM_TYPE)
@@ -129,15 +130,15 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_PAGE_FROM_EXTERNAL_LINKS = "page_from_external_links";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_EXTERNAL_LINKS)
-  private Integer pageFromExternalLinks;
+  private BigDecimal pageFromExternalLinks;
 
   public static final String SERIALIZED_NAME_PAGE_FROM_INTERNAL_LINKS = "page_from_internal_links";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_INTERNAL_LINKS)
-  private Integer pageFromInternalLinks;
+  private BigDecimal pageFromInternalLinks;
 
   public static final String SERIALIZED_NAME_PAGE_FROM_SIZE = "page_from_size";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_SIZE)
-  private Integer pageFromSize;
+  private BigDecimal pageFromSize;
 
   public static final String SERIALIZED_NAME_PAGE_FROM_ENCODING = "page_from_encoding";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_ENCODING)
@@ -153,7 +154,7 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_PAGE_FROM_STATUS_CODE = "page_from_status_code";
   @SerializedName(SERIALIZED_NAME_PAGE_FROM_STATUS_CODE)
-  private Integer pageFromStatusCode;
+  private BigDecimal pageFromStatusCode;
 
   public static final String SERIALIZED_NAME_FIRST_SEEN = "first_seen";
   @SerializedName(SERIALIZED_NAME_FIRST_SEEN)
@@ -209,11 +210,11 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_LINKS_COUNT = "links_count";
   @SerializedName(SERIALIZED_NAME_LINKS_COUNT)
-  private Long linksCount;
+  private BigDecimal linksCount;
 
   public static final String SERIALIZED_NAME_GROUP_COUNT = "group_count";
   @SerializedName(SERIALIZED_NAME_GROUP_COUNT)
-  private Long groupCount;
+  private BigDecimal groupCount;
 
   public static final String SERIALIZED_NAME_IS_BROKEN = "is_broken";
   @SerializedName(SERIALIZED_NAME_IS_BROKEN)
@@ -221,11 +222,11 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_URL_TO_STATUS_CODE = "url_to_status_code";
   @SerializedName(SERIALIZED_NAME_URL_TO_STATUS_CODE)
-  private Integer urlToStatusCode;
+  private BigDecimal urlToStatusCode;
 
   public static final String SERIALIZED_NAME_URL_TO_SPAM_SCORE = "url_to_spam_score";
   @SerializedName(SERIALIZED_NAME_URL_TO_SPAM_SCORE)
-  private Integer urlToSpamScore;
+  private BigDecimal urlToSpamScore;
 
   public static final String SERIALIZED_NAME_URL_TO_REDIRECT_TARGET = "url_to_redirect_target";
   @SerializedName(SERIALIZED_NAME_URL_TO_REDIRECT_TARGET)
@@ -241,7 +242,7 @@ public class BacklinksBacklinksLiveItem {
 
   public static final String SERIALIZED_NAME_INDIRECT_LINK_PATH = "indirect_link_path";
   @SerializedName(SERIALIZED_NAME_INDIRECT_LINK_PATH)
-  private List<Redirect> indirectLinkPath;
+  private List<BacklinksRedirectInfo> indirectLinkPath;
 
   public BacklinksBacklinksLiveItem() {
   }
@@ -436,7 +437,7 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem backlinkSpamScore(Integer backlinkSpamScore) {
+  public BacklinksBacklinksLiveItem backlinkSpamScore(BigDecimal backlinkSpamScore) {
     this.backlinkSpamScore = backlinkSpamScore;
     return this;
   }
@@ -446,16 +447,16 @@ public class BacklinksBacklinksLiveItem {
    * @return backlinkSpamScore
    */
   @javax.annotation.Nullable
-  public Integer getBacklinkSpamScore() {
+  public BigDecimal getBacklinkSpamScore() {
     return backlinkSpamScore;
   }
 
-  public void setBacklinkSpamScore(Integer backlinkSpamScore) {
+  public void setBacklinkSpamScore(BigDecimal backlinkSpamScore) {
     this.backlinkSpamScore = backlinkSpamScore;
   }
 
 
-  public BacklinksBacklinksLiveItem rank(Integer rank) {
+  public BacklinksBacklinksLiveItem rank(BigDecimal rank) {
     this.rank = rank;
     return this;
   }
@@ -465,16 +466,16 @@ public class BacklinksBacklinksLiveItem {
    * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getRank() {
+  public BigDecimal getRank() {
     return rank;
   }
 
-  public void setRank(Integer rank) {
+  public void setRank(BigDecimal rank) {
     this.rank = rank;
   }
 
 
-  public BacklinksBacklinksLiveItem pageFromRank(Integer pageFromRank) {
+  public BacklinksBacklinksLiveItem pageFromRank(BigDecimal pageFromRank) {
     this.pageFromRank = pageFromRank;
     return this;
   }
@@ -484,16 +485,16 @@ public class BacklinksBacklinksLiveItem {
    * @return pageFromRank
    */
   @javax.annotation.Nullable
-  public Integer getPageFromRank() {
+  public BigDecimal getPageFromRank() {
     return pageFromRank;
   }
 
-  public void setPageFromRank(Integer pageFromRank) {
+  public void setPageFromRank(BigDecimal pageFromRank) {
     this.pageFromRank = pageFromRank;
   }
 
 
-  public BacklinksBacklinksLiveItem domainFromRank(Integer domainFromRank) {
+  public BacklinksBacklinksLiveItem domainFromRank(BigDecimal domainFromRank) {
     this.domainFromRank = domainFromRank;
     return this;
   }
@@ -503,11 +504,11 @@ public class BacklinksBacklinksLiveItem {
    * @return domainFromRank
    */
   @javax.annotation.Nullable
-  public Integer getDomainFromRank() {
+  public BigDecimal getDomainFromRank() {
     return domainFromRank;
   }
 
-  public void setDomainFromRank(Integer domainFromRank) {
+  public void setDomainFromRank(BigDecimal domainFromRank) {
     this.domainFromRank = domainFromRank;
   }
 
@@ -596,7 +597,7 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem pageFromExternalLinks(Integer pageFromExternalLinks) {
+  public BacklinksBacklinksLiveItem pageFromExternalLinks(BigDecimal pageFromExternalLinks) {
     this.pageFromExternalLinks = pageFromExternalLinks;
     return this;
   }
@@ -606,16 +607,16 @@ public class BacklinksBacklinksLiveItem {
    * @return pageFromExternalLinks
    */
   @javax.annotation.Nullable
-  public Integer getPageFromExternalLinks() {
+  public BigDecimal getPageFromExternalLinks() {
     return pageFromExternalLinks;
   }
 
-  public void setPageFromExternalLinks(Integer pageFromExternalLinks) {
+  public void setPageFromExternalLinks(BigDecimal pageFromExternalLinks) {
     this.pageFromExternalLinks = pageFromExternalLinks;
   }
 
 
-  public BacklinksBacklinksLiveItem pageFromInternalLinks(Integer pageFromInternalLinks) {
+  public BacklinksBacklinksLiveItem pageFromInternalLinks(BigDecimal pageFromInternalLinks) {
     this.pageFromInternalLinks = pageFromInternalLinks;
     return this;
   }
@@ -625,16 +626,16 @@ public class BacklinksBacklinksLiveItem {
    * @return pageFromInternalLinks
    */
   @javax.annotation.Nullable
-  public Integer getPageFromInternalLinks() {
+  public BigDecimal getPageFromInternalLinks() {
     return pageFromInternalLinks;
   }
 
-  public void setPageFromInternalLinks(Integer pageFromInternalLinks) {
+  public void setPageFromInternalLinks(BigDecimal pageFromInternalLinks) {
     this.pageFromInternalLinks = pageFromInternalLinks;
   }
 
 
-  public BacklinksBacklinksLiveItem pageFromSize(Integer pageFromSize) {
+  public BacklinksBacklinksLiveItem pageFromSize(BigDecimal pageFromSize) {
     this.pageFromSize = pageFromSize;
     return this;
   }
@@ -644,11 +645,11 @@ public class BacklinksBacklinksLiveItem {
    * @return pageFromSize
    */
   @javax.annotation.Nullable
-  public Integer getPageFromSize() {
+  public BigDecimal getPageFromSize() {
     return pageFromSize;
   }
 
-  public void setPageFromSize(Integer pageFromSize) {
+  public void setPageFromSize(BigDecimal pageFromSize) {
     this.pageFromSize = pageFromSize;
   }
 
@@ -710,7 +711,7 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem pageFromStatusCode(Integer pageFromStatusCode) {
+  public BacklinksBacklinksLiveItem pageFromStatusCode(BigDecimal pageFromStatusCode) {
     this.pageFromStatusCode = pageFromStatusCode;
     return this;
   }
@@ -720,11 +721,11 @@ public class BacklinksBacklinksLiveItem {
    * @return pageFromStatusCode
    */
   @javax.annotation.Nullable
-  public Integer getPageFromStatusCode() {
+  public BigDecimal getPageFromStatusCode() {
     return pageFromStatusCode;
   }
 
-  public void setPageFromStatusCode(Integer pageFromStatusCode) {
+  public void setPageFromStatusCode(BigDecimal pageFromStatusCode) {
     this.pageFromStatusCode = pageFromStatusCode;
   }
 
@@ -984,7 +985,7 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem linksCount(Long linksCount) {
+  public BacklinksBacklinksLiveItem linksCount(BigDecimal linksCount) {
     this.linksCount = linksCount;
     return this;
   }
@@ -994,16 +995,16 @@ public class BacklinksBacklinksLiveItem {
    * @return linksCount
    */
   @javax.annotation.Nullable
-  public Long getLinksCount() {
+  public BigDecimal getLinksCount() {
     return linksCount;
   }
 
-  public void setLinksCount(Long linksCount) {
+  public void setLinksCount(BigDecimal linksCount) {
     this.linksCount = linksCount;
   }
 
 
-  public BacklinksBacklinksLiveItem groupCount(Long groupCount) {
+  public BacklinksBacklinksLiveItem groupCount(BigDecimal groupCount) {
     this.groupCount = groupCount;
     return this;
   }
@@ -1013,11 +1014,11 @@ public class BacklinksBacklinksLiveItem {
    * @return groupCount
    */
   @javax.annotation.Nullable
-  public Long getGroupCount() {
+  public BigDecimal getGroupCount() {
     return groupCount;
   }
 
-  public void setGroupCount(Long groupCount) {
+  public void setGroupCount(BigDecimal groupCount) {
     this.groupCount = groupCount;
   }
 
@@ -1041,7 +1042,7 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem urlToStatusCode(Integer urlToStatusCode) {
+  public BacklinksBacklinksLiveItem urlToStatusCode(BigDecimal urlToStatusCode) {
     this.urlToStatusCode = urlToStatusCode;
     return this;
   }
@@ -1051,16 +1052,16 @@ public class BacklinksBacklinksLiveItem {
    * @return urlToStatusCode
    */
   @javax.annotation.Nullable
-  public Integer getUrlToStatusCode() {
+  public BigDecimal getUrlToStatusCode() {
     return urlToStatusCode;
   }
 
-  public void setUrlToStatusCode(Integer urlToStatusCode) {
+  public void setUrlToStatusCode(BigDecimal urlToStatusCode) {
     this.urlToStatusCode = urlToStatusCode;
   }
 
 
-  public BacklinksBacklinksLiveItem urlToSpamScore(Integer urlToSpamScore) {
+  public BacklinksBacklinksLiveItem urlToSpamScore(BigDecimal urlToSpamScore) {
     this.urlToSpamScore = urlToSpamScore;
     return this;
   }
@@ -1070,11 +1071,11 @@ public class BacklinksBacklinksLiveItem {
    * @return urlToSpamScore
    */
   @javax.annotation.Nullable
-  public Integer getUrlToSpamScore() {
+  public BigDecimal getUrlToSpamScore() {
     return urlToSpamScore;
   }
 
-  public void setUrlToSpamScore(Integer urlToSpamScore) {
+  public void setUrlToSpamScore(BigDecimal urlToSpamScore) {
     this.urlToSpamScore = urlToSpamScore;
   }
 
@@ -1136,12 +1137,12 @@ public class BacklinksBacklinksLiveItem {
   }
 
 
-  public BacklinksBacklinksLiveItem indirectLinkPath(List<Redirect> indirectLinkPath) {
+  public BacklinksBacklinksLiveItem indirectLinkPath(List<BacklinksRedirectInfo> indirectLinkPath) {
     this.indirectLinkPath = indirectLinkPath;
     return this;
   }
 
-  public BacklinksBacklinksLiveItem addIndirectLinkPathItem(Redirect indirectLinkPathItem) {
+  public BacklinksBacklinksLiveItem addIndirectLinkPathItem(BacklinksRedirectInfo indirectLinkPathItem) {
     if (this.indirectLinkPath == null) {
       this.indirectLinkPath = new ArrayList<>();
     }
@@ -1154,11 +1155,11 @@ public class BacklinksBacklinksLiveItem {
    * @return indirectLinkPath
    */
   @javax.annotation.Nullable
-  public List<Redirect> getIndirectLinkPath() {
+  public List<BacklinksRedirectInfo> getIndirectLinkPath() {
     return indirectLinkPath;
   }
 
-  public void setIndirectLinkPath(List<Redirect> indirectLinkPath) {
+  public void setIndirectLinkPath(List<BacklinksRedirectInfo> indirectLinkPath) {
     this.indirectLinkPath = indirectLinkPath;
   }
 
@@ -1510,7 +1511,7 @@ public class BacklinksBacklinksLiveItem {
 
           // validate the optional field `indirect_link_path` (array)
           for (int i = 0; i < jsonArrayindirectLinkPath.size(); i++) {
-            Redirect.validateJsonElement(jsonArrayindirectLinkPath.get(i));
+            BacklinksRedirectInfo.validateJsonElement(jsonArrayindirectLinkPath.get(i));
           };
         }
       }

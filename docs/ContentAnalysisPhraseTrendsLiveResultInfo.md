@@ -9,9 +9,9 @@
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
 |**date** | **String** | date for which the data is provided |  [optional] |
-|**totalCount** | **Long** | total number of results in our database relevant to your request |  [optional] |
-|**rank** | **Integer** | rank of all URLs citing the keyword normalized sum of ranks of all URLs citing the target keyword for the given date |  [optional] |
-|**topDomains** | [**List&lt;TopDomainInfo&gt;**](TopDomainInfo.md) | top domains citing the target keyword contains objects with top domains citing the target keyword and citation count per each domain |  [optional] |
+|**totalCount** | **BigDecimal** | total number of results in our database relevant to your request |  [optional] |
+|**rank** | **BigDecimal** | rank of all URLs citing the keyword normalized sum of ranks of all URLs citing the target keyword for the given date |  [optional] |
+|**topDomains** | [**List&lt;TopDomainCountInfo&gt;**](TopDomainCountInfo.md) | top domains citing the target keyword contains objects with top domains citing the target keyword and citation count per each domain |  [optional] |
 |**sentimentConnotations** | **Map&lt;String, Long&gt;** | sentiment connotations contains sentiments (emotional reactions) related to the target keyword citation and the number of citations per each sentiment possible connotations: \&quot;anger\&quot;, \&quot;happiness\&quot;, \&quot;love\&quot;, \&quot;sadness\&quot;, \&quot;share\&quot;, \&quot;fun\&quot; |  [optional] |
 |**connotationTypes** | **Map&lt;String, Long&gt;** | connotation types contains types of sentiments (sentiment polarity) related to the keyword citation and citation count per each sentiment type possible connotation types: \&quot;positive\&quot;, \&quot;negative\&quot;, \&quot;neutral\&quot; |  [optional] |
 |**textCategories** | [**List&lt;ContentAnalysisCategoriesInfo&gt;**](ContentAnalysisCategoriesInfo.md) | text categories contains objects with text categories and citation count in each text category to obtain a full list of available categories, refer to the Categories endpoint |  [optional] |

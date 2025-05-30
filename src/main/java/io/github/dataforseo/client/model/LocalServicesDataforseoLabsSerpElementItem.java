@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import io.github.dataforseo.client.model.LocalServicesElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,8 +54,12 @@ import io.github.dataforseo.client.JSON;
 /**
  * LocalServicesDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -73,6 +78,25 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
 
   public LocalServicesDataforseoLabsSerpElementItem() {
   }
+
+  public LocalServicesDataforseoLabsSerpElementItem seType(String seType) {
+    this.seType = seType;
+    return this;
+  }
+
+  /**
+   * search engine type
+   * @return seType
+   */
+  @javax.annotation.Nullable
+  public String getSeType() {
+    return seType;
+  }
+
+  public void setSeType(String seType) {
+    this.seType = seType;
+  }
+
 
   public LocalServicesDataforseoLabsSerpElementItem title(String title) {
     this.title = title;
@@ -99,7 +123,7 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
   /**
-   * relevant URL
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -118,7 +142,7 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
   /**
-   * domain where a link points
+   * domain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -145,7 +169,7 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
   }
 
   /**
-   * additional items present in the element if there are none, equals null
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable
@@ -212,7 +236,8 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
       return false;
     }
     LocalServicesDataforseoLabsSerpElementItem localServicesDataforseoLabsSerpElementItem = (LocalServicesDataforseoLabsSerpElementItem) o;
-    return Objects.equals(this.title, localServicesDataforseoLabsSerpElementItem.title) &&
+    return Objects.equals(this.seType, localServicesDataforseoLabsSerpElementItem.seType) &&
+        Objects.equals(this.title, localServicesDataforseoLabsSerpElementItem.title) &&
         Objects.equals(this.url, localServicesDataforseoLabsSerpElementItem.url) &&
         Objects.equals(this.domain, localServicesDataforseoLabsSerpElementItem.domain) &&
         Objects.equals(this.items, localServicesDataforseoLabsSerpElementItem.items)&&
@@ -226,7 +251,7 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
 
   @Override
   public int hashCode() {
-    return Objects.hash(title, url, domain, items, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, title, url, domain, items, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -241,6 +266,7 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
     StringBuilder sb = new StringBuilder();
     sb.append("class LocalServicesDataforseoLabsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
@@ -273,6 +299,7 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
     openapiFields.add("rank_absolute");
     openapiFields.add("position");
     openapiFields.add("xpath");
+    openapiFields.add("se_type");
     openapiFields.add("title");
     openapiFields.add("url");
     openapiFields.add("domain");
@@ -295,6 +322,9 @@ public class LocalServicesDataforseoLabsSerpElementItem extends BaseDataforseoLa
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("se_type") != null && !jsonObj.get("se_type").isJsonNull()) && !jsonObj.get("se_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `se_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_type").toString()));
+      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }

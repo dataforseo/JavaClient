@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixSellersGoogleMerchantLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -50,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixMerchantGoogleInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixMerchantGoogleInfo {
   public static final String SERIALIZED_NAME_PRODUCTS = "products";
   @SerializedName(SERIALIZED_NAME_PRODUCTS)
-  private AppendixSerpsRatesDataInfo products;
+  private AppendixSerpDaysRatesDataInfo products;
 
   public static final String SERIALIZED_NAME_SELLERS = "sellers";
   @SerializedName(SERIALIZED_NAME_SELLERS)
@@ -62,16 +62,16 @@ public class AppendixMerchantGoogleInfo {
 
   public static final String SERIALIZED_NAME_PRODUCT_SPEC = "product_spec";
   @SerializedName(SERIALIZED_NAME_PRODUCT_SPEC)
-  private AppendixSerpsRatesDataInfo productSpec;
+  private AppendixSerpDaysRatesDataInfo productSpec;
 
   public static final String SERIALIZED_NAME_PRODUCT_INFO = "product_info";
   @SerializedName(SERIALIZED_NAME_PRODUCT_INFO)
-  private AppendixSerpsRatesDataInfo productInfo;
+  private AppendixSerpDaysRatesDataInfo productInfo;
 
   public AppendixMerchantGoogleInfo() {
   }
 
-  public AppendixMerchantGoogleInfo products(AppendixSerpsRatesDataInfo products) {
+  public AppendixMerchantGoogleInfo products(AppendixSerpDaysRatesDataInfo products) {
     this.products = products;
     return this;
   }
@@ -81,11 +81,11 @@ public class AppendixMerchantGoogleInfo {
    * @return products
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getProducts() {
+  public AppendixSerpDaysRatesDataInfo getProducts() {
     return products;
   }
 
-  public void setProducts(AppendixSerpsRatesDataInfo products) {
+  public void setProducts(AppendixSerpDaysRatesDataInfo products) {
     this.products = products;
   }
 
@@ -109,7 +109,7 @@ public class AppendixMerchantGoogleInfo {
   }
 
 
-  public AppendixMerchantGoogleInfo productSpec(AppendixSerpsRatesDataInfo productSpec) {
+  public AppendixMerchantGoogleInfo productSpec(AppendixSerpDaysRatesDataInfo productSpec) {
     this.productSpec = productSpec;
     return this;
   }
@@ -119,16 +119,16 @@ public class AppendixMerchantGoogleInfo {
    * @return productSpec
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getProductSpec() {
+  public AppendixSerpDaysRatesDataInfo getProductSpec() {
     return productSpec;
   }
 
-  public void setProductSpec(AppendixSerpsRatesDataInfo productSpec) {
+  public void setProductSpec(AppendixSerpDaysRatesDataInfo productSpec) {
     this.productSpec = productSpec;
   }
 
 
-  public AppendixMerchantGoogleInfo productInfo(AppendixSerpsRatesDataInfo productInfo) {
+  public AppendixMerchantGoogleInfo productInfo(AppendixSerpDaysRatesDataInfo productInfo) {
     this.productInfo = productInfo;
     return this;
   }
@@ -138,11 +138,11 @@ public class AppendixMerchantGoogleInfo {
    * @return productInfo
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getProductInfo() {
+  public AppendixSerpDaysRatesDataInfo getProductInfo() {
     return productInfo;
   }
 
-  public void setProductInfo(AppendixSerpsRatesDataInfo productInfo) {
+  public void setProductInfo(AppendixSerpDaysRatesDataInfo productInfo) {
     this.productInfo = productInfo;
   }
 
@@ -268,7 +268,7 @@ public class AppendixMerchantGoogleInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `products`
       if (jsonObj.get("products") != null && !jsonObj.get("products").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("products"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("products"));
       }
       // validate the optional field `sellers`
       if (jsonObj.get("sellers") != null && !jsonObj.get("sellers").isJsonNull()) {
@@ -276,11 +276,11 @@ public class AppendixMerchantGoogleInfo {
       }
       // validate the optional field `product_spec`
       if (jsonObj.get("product_spec") != null && !jsonObj.get("product_spec").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("product_spec"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("product_spec"));
       }
       // validate the optional field `product_info`
       if (jsonObj.get("product_info") != null && !jsonObj.get("product_info").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("product_info"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("product_info"));
       }
   }
 

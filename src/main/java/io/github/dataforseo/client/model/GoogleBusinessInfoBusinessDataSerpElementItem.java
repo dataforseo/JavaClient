@@ -24,11 +24,12 @@ import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import io.github.dataforseo.client.model.BaseLocalBusinessLink;
 import io.github.dataforseo.client.model.BusinessDataAttributesInfo;
 import io.github.dataforseo.client.model.BusinessDirectoryInfo;
+import io.github.dataforseo.client.model.BusinessWorkHoursInfo;
 import io.github.dataforseo.client.model.PeopleAlsoSearch;
 import io.github.dataforseo.client.model.PopularTimes;
 import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkTime;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -62,7 +63,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleBusinessInfoBusinessDataSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessDataSerpElementItem {
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
@@ -146,7 +147,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public static final String SERIALIZED_NAME_TOTAL_PHOTOS = "total_photos";
   @SerializedName(SERIALIZED_NAME_TOTAL_PHOTOS)
-  private Long totalPhotos;
+  private BigDecimal totalPhotos;
 
   public static final String SERIALIZED_NAME_SNIPPET = "snippet";
   @SerializedName(SERIALIZED_NAME_SNIPPET)
@@ -166,7 +167,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public static final String SERIALIZED_NAME_QUESTIONS_AND_ANSWERS_COUNT = "questions_and_answers_count";
   @SerializedName(SERIALIZED_NAME_QUESTIONS_AND_ANSWERS_COUNT)
-  private Integer questionsAndAnswersCount;
+  private BigDecimal questionsAndAnswersCount;
 
   public static final String SERIALIZED_NAME_ATTRIBUTES = "attributes";
   @SerializedName(SERIALIZED_NAME_ATTRIBUTES)
@@ -182,7 +183,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public static final String SERIALIZED_NAME_HOTEL_RATING = "hotel_rating";
   @SerializedName(SERIALIZED_NAME_HOTEL_RATING)
-  private Integer hotelRating;
+  private BigDecimal hotelRating;
 
   public static final String SERIALIZED_NAME_PRICE_LEVEL = "price_level";
   @SerializedName(SERIALIZED_NAME_PRICE_LEVEL)
@@ -198,7 +199,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
 
   public static final String SERIALIZED_NAME_WORK_TIME = "work_time";
   @SerializedName(SERIALIZED_NAME_WORK_TIME)
-  private WorkTime workTime;
+  private BusinessWorkHoursInfo workTime;
 
   public static final String SERIALIZED_NAME_POPULAR_TIMES = "popular_times";
   @SerializedName(SERIALIZED_NAME_POPULAR_TIMES)
@@ -615,7 +616,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   }
 
 
-  public GoogleBusinessInfoBusinessDataSerpElementItem totalPhotos(Long totalPhotos) {
+  public GoogleBusinessInfoBusinessDataSerpElementItem totalPhotos(BigDecimal totalPhotos) {
     this.totalPhotos = totalPhotos;
     return this;
   }
@@ -625,11 +626,11 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
    * @return totalPhotos
    */
   @javax.annotation.Nullable
-  public Long getTotalPhotos() {
+  public BigDecimal getTotalPhotos() {
     return totalPhotos;
   }
 
-  public void setTotalPhotos(Long totalPhotos) {
+  public void setTotalPhotos(BigDecimal totalPhotos) {
     this.totalPhotos = totalPhotos;
   }
 
@@ -710,7 +711,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   }
 
 
-  public GoogleBusinessInfoBusinessDataSerpElementItem questionsAndAnswersCount(Integer questionsAndAnswersCount) {
+  public GoogleBusinessInfoBusinessDataSerpElementItem questionsAndAnswersCount(BigDecimal questionsAndAnswersCount) {
     this.questionsAndAnswersCount = questionsAndAnswersCount;
     return this;
   }
@@ -720,11 +721,11 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
    * @return questionsAndAnswersCount
    */
   @javax.annotation.Nullable
-  public Integer getQuestionsAndAnswersCount() {
+  public BigDecimal getQuestionsAndAnswersCount() {
     return questionsAndAnswersCount;
   }
 
-  public void setQuestionsAndAnswersCount(Integer questionsAndAnswersCount) {
+  public void setQuestionsAndAnswersCount(BigDecimal questionsAndAnswersCount) {
     this.questionsAndAnswersCount = questionsAndAnswersCount;
   }
 
@@ -794,7 +795,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   }
 
 
-  public GoogleBusinessInfoBusinessDataSerpElementItem hotelRating(Integer hotelRating) {
+  public GoogleBusinessInfoBusinessDataSerpElementItem hotelRating(BigDecimal hotelRating) {
     this.hotelRating = hotelRating;
     return this;
   }
@@ -804,11 +805,11 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
    * @return hotelRating
    */
   @javax.annotation.Nullable
-  public Integer getHotelRating() {
+  public BigDecimal getHotelRating() {
     return hotelRating;
   }
 
-  public void setHotelRating(Integer hotelRating) {
+  public void setHotelRating(BigDecimal hotelRating) {
     this.hotelRating = hotelRating;
   }
 
@@ -886,7 +887,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
   }
 
 
-  public GoogleBusinessInfoBusinessDataSerpElementItem workTime(WorkTime workTime) {
+  public GoogleBusinessInfoBusinessDataSerpElementItem workTime(BusinessWorkHoursInfo workTime) {
     this.workTime = workTime;
     return this;
   }
@@ -896,11 +897,11 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
    * @return workTime
    */
   @javax.annotation.Nullable
-  public WorkTime getWorkTime() {
+  public BusinessWorkHoursInfo getWorkTime() {
     return workTime;
   }
 
-  public void setWorkTime(WorkTime workTime) {
+  public void setWorkTime(BusinessWorkHoursInfo workTime) {
     this.workTime = workTime;
   }
 
@@ -1319,7 +1320,7 @@ public class GoogleBusinessInfoBusinessDataSerpElementItem extends BaseBusinessD
       }
       // validate the optional field `work_time`
       if (jsonObj.get("work_time") != null && !jsonObj.get("work_time").isJsonNull()) {
-        WorkTime.validateJsonElement(jsonObj.get("work_time"));
+        BusinessWorkHoursInfo.validateJsonElement(jsonObj.get("work_time"));
       }
       // validate the optional field `popular_times`
       if (jsonObj.get("popular_times") != null && !jsonObj.get("popular_times").isJsonNull()) {

@@ -19,8 +19,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseGoogleFinanceSerpElementItem;
-import io.github.dataforseo.client.model.GoogleFinanceMarketsInfo;
+import io.github.dataforseo.client.model.Markets;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -48,6 +49,22 @@ public class GoogleFinanceHeroGroupsSerpElementItemTest {
     @Test
     public void typeTest() {
         // TODO: test type
+    }
+
+    /**
+     * Test the property 'rankGroup'
+     */
+    @Test
+    public void rankGroupTest() {
+        // TODO: test rankGroup
+    }
+
+    /**
+     * Test the property 'rankAbsolute'
+     */
+    @Test
+    public void rankAbsoluteTest() {
+        // TODO: test rankAbsolute
     }
 
     /**

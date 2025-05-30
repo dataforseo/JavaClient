@@ -20,7 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AppendixBusinessListingsBusinessDataLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -51,23 +51,23 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixAppDataLimitsRatesDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixAppDataLimitsRatesDataInfo {
   public static final String SERIALIZED_NAME_APP_INFO = "app_info";
   @SerializedName(SERIALIZED_NAME_APP_INFO)
-  private AppendixSerpsRatesDataInfo appInfo;
+  private AppendixSerpDaysRatesDataInfo appInfo;
 
   public static final String SERIALIZED_NAME_APP_LIST = "app_list";
   @SerializedName(SERIALIZED_NAME_APP_LIST)
-  private AppendixSerpsRatesDataInfo appList;
+  private AppendixSerpDaysRatesDataInfo appList;
 
   public static final String SERIALIZED_NAME_APP_REVIEWS = "app_reviews";
   @SerializedName(SERIALIZED_NAME_APP_REVIEWS)
-  private AppendixSerpsRatesDataInfo appReviews;
+  private AppendixSerpDaysRatesDataInfo appReviews;
 
   public static final String SERIALIZED_NAME_APP_SEARCHES = "app_searches";
   @SerializedName(SERIALIZED_NAME_APP_SEARCHES)
-  private AppendixSerpsRatesDataInfo appSearches;
+  private AppendixSerpDaysRatesDataInfo appSearches;
 
   public static final String SERIALIZED_NAME_ERRORS = "errors";
   @SerializedName(SERIALIZED_NAME_ERRORS)
@@ -96,7 +96,7 @@ public class AppendixAppDataLimitsRatesDataInfo {
   public AppendixAppDataLimitsRatesDataInfo() {
   }
 
-  public AppendixAppDataLimitsRatesDataInfo appInfo(AppendixSerpsRatesDataInfo appInfo) {
+  public AppendixAppDataLimitsRatesDataInfo appInfo(AppendixSerpDaysRatesDataInfo appInfo) {
     this.appInfo = appInfo;
     return this;
   }
@@ -106,16 +106,16 @@ public class AppendixAppDataLimitsRatesDataInfo {
    * @return appInfo
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getAppInfo() {
+  public AppendixSerpDaysRatesDataInfo getAppInfo() {
     return appInfo;
   }
 
-  public void setAppInfo(AppendixSerpsRatesDataInfo appInfo) {
+  public void setAppInfo(AppendixSerpDaysRatesDataInfo appInfo) {
     this.appInfo = appInfo;
   }
 
 
-  public AppendixAppDataLimitsRatesDataInfo appList(AppendixSerpsRatesDataInfo appList) {
+  public AppendixAppDataLimitsRatesDataInfo appList(AppendixSerpDaysRatesDataInfo appList) {
     this.appList = appList;
     return this;
   }
@@ -125,16 +125,16 @@ public class AppendixAppDataLimitsRatesDataInfo {
    * @return appList
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getAppList() {
+  public AppendixSerpDaysRatesDataInfo getAppList() {
     return appList;
   }
 
-  public void setAppList(AppendixSerpsRatesDataInfo appList) {
+  public void setAppList(AppendixSerpDaysRatesDataInfo appList) {
     this.appList = appList;
   }
 
 
-  public AppendixAppDataLimitsRatesDataInfo appReviews(AppendixSerpsRatesDataInfo appReviews) {
+  public AppendixAppDataLimitsRatesDataInfo appReviews(AppendixSerpDaysRatesDataInfo appReviews) {
     this.appReviews = appReviews;
     return this;
   }
@@ -144,16 +144,16 @@ public class AppendixAppDataLimitsRatesDataInfo {
    * @return appReviews
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getAppReviews() {
+  public AppendixSerpDaysRatesDataInfo getAppReviews() {
     return appReviews;
   }
 
-  public void setAppReviews(AppendixSerpsRatesDataInfo appReviews) {
+  public void setAppReviews(AppendixSerpDaysRatesDataInfo appReviews) {
     this.appReviews = appReviews;
   }
 
 
-  public AppendixAppDataLimitsRatesDataInfo appSearches(AppendixSerpsRatesDataInfo appSearches) {
+  public AppendixAppDataLimitsRatesDataInfo appSearches(AppendixSerpDaysRatesDataInfo appSearches) {
     this.appSearches = appSearches;
     return this;
   }
@@ -163,11 +163,11 @@ public class AppendixAppDataLimitsRatesDataInfo {
    * @return appSearches
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getAppSearches() {
+  public AppendixSerpDaysRatesDataInfo getAppSearches() {
     return appSearches;
   }
 
-  public void setAppSearches(AppendixSerpsRatesDataInfo appSearches) {
+  public void setAppSearches(AppendixSerpDaysRatesDataInfo appSearches) {
     this.appSearches = appSearches;
   }
 
@@ -436,19 +436,19 @@ public class AppendixAppDataLimitsRatesDataInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `app_info`
       if (jsonObj.get("app_info") != null && !jsonObj.get("app_info").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("app_info"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("app_info"));
       }
       // validate the optional field `app_list`
       if (jsonObj.get("app_list") != null && !jsonObj.get("app_list").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("app_list"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("app_list"));
       }
       // validate the optional field `app_reviews`
       if (jsonObj.get("app_reviews") != null && !jsonObj.get("app_reviews").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("app_reviews"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("app_reviews"));
       }
       // validate the optional field `app_searches`
       if (jsonObj.get("app_searches") != null && !jsonObj.get("app_searches").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("app_searches"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("app_searches"));
       }
       // validate the optional field `app_listings`
       if (jsonObj.get("app_listings") != null && !jsonObj.get("app_listings").isJsonNull()) {

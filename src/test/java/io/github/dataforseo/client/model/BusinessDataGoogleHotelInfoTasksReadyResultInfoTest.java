@@ -79,19 +79,11 @@ public class BusinessDataGoogleHotelInfoTasksReadyResultInfoTest {
     }
 
     /**
-     * Test the property 'endpointAdvanced'
+     * Test the property 'endpoint'
      */
     @Test
-    public void endpointAdvancedTest() {
-        // TODO: test endpointAdvanced
-    }
-
-    /**
-     * Test the property 'endpointHtml'
-     */
-    @Test
-    public void endpointHtmlTest() {
-        // TODO: test endpointHtml
+    public void endpointTest() {
+        // TODO: test endpoint
     }
 
 }

@@ -20,7 +20,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.HotelAmenityInfo;
 import io.github.dataforseo.client.model.HotelAmenityItemInfo;
-import io.github.dataforseo.client.model.WorkTimeInfo;
+import io.github.dataforseo.client.model.Info;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

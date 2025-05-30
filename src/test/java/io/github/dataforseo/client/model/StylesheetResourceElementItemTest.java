@@ -25,6 +25,7 @@ import io.github.dataforseo.client.model.LastModified;
 import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import io.github.dataforseo.client.model.ResourceMetaInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -188,46 +189,6 @@ public class StylesheetResourceElementItemTest {
     @Test
     public void acceptTypeTest() {
         // TODO: test acceptType
-    }
-
-    /**
-     * Test the property 'initiator'
-     */
-    @Test
-    public void initiatorTest() {
-        // TODO: test initiator
-    }
-
-    /**
-     * Test the property 'durationTime'
-     */
-    @Test
-    public void durationTimeTest() {
-        // TODO: test durationTime
-    }
-
-    /**
-     * Test the property 'fetchStart'
-     */
-    @Test
-    public void fetchStartTest() {
-        // TODO: test fetchStart
-    }
-
-    /**
-     * Test the property 'fetchEnd'
-     */
-    @Test
-    public void fetchEndTest() {
-        // TODO: test fetchEnd
-    }
-
-    /**
-     * Test the property 'isRenderBlocking'
-     */
-    @Test
-    public void isRenderBlockingTest() {
-        // TODO: test isRenderBlocking
     }
 
 }

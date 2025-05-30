@@ -20,10 +20,11 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.HotelAboutInfo;
+import io.github.dataforseo.client.model.HotelLocationInfo;
 import io.github.dataforseo.client.model.HotelPriceInfo;
 import io.github.dataforseo.client.model.HotelReviewInfo;
-import io.github.dataforseo.client.model.Location;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelInfoLiveAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
@@ -63,7 +64,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -83,7 +84,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_STARS = "stars";
   @SerializedName(SERIALIZED_NAME_STARS)
-  private Integer stars;
+  private BigDecimal stars;
 
   public static final String SERIALIZED_NAME_STARS_DESCRIPTION = "stars_description";
   @SerializedName(SERIALIZED_NAME_STARS_DESCRIPTION)
@@ -103,7 +104,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
-  private Location location;
+  private HotelLocationInfo location;
 
   public static final String SERIALIZED_NAME_REVIEWS = "reviews";
   @SerializedName(SERIALIZED_NAME_REVIEWS)
@@ -139,7 +140,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
   }
 
 
-  public BusinessDataGoogleHotelInfoLiveAdvancedResultInfo locationCode(Integer locationCode) {
+  public BusinessDataGoogleHotelInfoLiveAdvancedResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -149,11 +150,11 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -234,7 +235,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
   }
 
 
-  public BusinessDataGoogleHotelInfoLiveAdvancedResultInfo stars(Integer stars) {
+  public BusinessDataGoogleHotelInfoLiveAdvancedResultInfo stars(BigDecimal stars) {
     this.stars = stars;
     return this;
   }
@@ -244,11 +245,11 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
    * @return stars
    */
   @javax.annotation.Nullable
-  public Integer getStars() {
+  public BigDecimal getStars() {
     return stars;
   }
 
-  public void setStars(Integer stars) {
+  public void setStars(BigDecimal stars) {
     this.stars = stars;
   }
 
@@ -329,7 +330,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
   }
 
 
-  public BusinessDataGoogleHotelInfoLiveAdvancedResultInfo location(Location location) {
+  public BusinessDataGoogleHotelInfoLiveAdvancedResultInfo location(HotelLocationInfo location) {
     this.location = location;
     return this;
   }
@@ -339,11 +340,11 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
    * @return location
    */
   @javax.annotation.Nullable
-  public Location getLocation() {
+  public HotelLocationInfo getLocation() {
     return location;
   }
 
-  public void setLocation(Location location) {
+  public void setLocation(HotelLocationInfo location) {
     this.location = location;
   }
 
@@ -606,7 +607,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedResultInfo {
       }
       // validate the optional field `location`
       if (jsonObj.get("location") != null && !jsonObj.get("location").isJsonNull()) {
-        Location.validateJsonElement(jsonObj.get("location"));
+        HotelLocationInfo.validateJsonElement(jsonObj.get("location"));
       }
       // validate the optional field `reviews`
       if (jsonObj.get("reviews") != null && !jsonObj.get("reviews").isJsonNull()) {

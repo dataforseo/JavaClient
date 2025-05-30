@@ -19,10 +19,10 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.RefinementChipsInfo;
 import io.github.dataforseo.client.model.SerpGoogleDatasetAdvancedItem;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * SerpGoogleDatasetSearchLiveAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -80,21 +80,17 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
   @SerializedName(SERIALIZED_NAME_SPELL)
   private SpellInfo spell;
 
-  public static final String SERIALIZED_NAME_REFINEMENT_CHIPS = "refinement_chips";
-  @SerializedName(SERIALIZED_NAME_REFINEMENT_CHIPS)
-  private RefinementChipsInfo refinementChips;
-
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
   private List<String> itemTypes;
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private Long seResultsCount;
+  private BigDecimal seResultsCount;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -217,25 +213,6 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
   }
 
 
-  public SerpGoogleDatasetSearchLiveAdvancedResultInfo refinementChips(RefinementChipsInfo refinementChips) {
-    this.refinementChips = refinementChips;
-    return this;
-  }
-
-  /**
-   * Get refinementChips
-   * @return refinementChips
-   */
-  @javax.annotation.Nullable
-  public RefinementChipsInfo getRefinementChips() {
-    return refinementChips;
-  }
-
-  public void setRefinementChips(RefinementChipsInfo refinementChips) {
-    this.refinementChips = refinementChips;
-  }
-
-
   public SerpGoogleDatasetSearchLiveAdvancedResultInfo itemTypes(List<String> itemTypes) {
     this.itemTypes = itemTypes;
     return this;
@@ -263,7 +240,7 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
   }
 
 
-  public SerpGoogleDatasetSearchLiveAdvancedResultInfo seResultsCount(Long seResultsCount) {
+  public SerpGoogleDatasetSearchLiveAdvancedResultInfo seResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
@@ -273,16 +250,16 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public Long getSeResultsCount() {
+  public BigDecimal getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(Long seResultsCount) {
+  public void setSeResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
 
-  public SerpGoogleDatasetSearchLiveAdvancedResultInfo itemsCount(Long itemsCount) {
+  public SerpGoogleDatasetSearchLiveAdvancedResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -292,11 +269,11 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -388,7 +365,6 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
         Objects.equals(this.checkUrl, serpGoogleDatasetSearchLiveAdvancedResultInfo.checkUrl) &&
         Objects.equals(this.datetime, serpGoogleDatasetSearchLiveAdvancedResultInfo.datetime) &&
         Objects.equals(this.spell, serpGoogleDatasetSearchLiveAdvancedResultInfo.spell) &&
-        Objects.equals(this.refinementChips, serpGoogleDatasetSearchLiveAdvancedResultInfo.refinementChips) &&
         Objects.equals(this.itemTypes, serpGoogleDatasetSearchLiveAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.seResultsCount, serpGoogleDatasetSearchLiveAdvancedResultInfo.seResultsCount) &&
         Objects.equals(this.itemsCount, serpGoogleDatasetSearchLiveAdvancedResultInfo.itemsCount) &&
@@ -402,7 +378,7 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, seDomain, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
+    return Objects.hash(keyword, seDomain, languageCode, checkUrl, datetime, spell, itemTypes, seResultsCount, itemsCount, items, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -422,7 +398,6 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
     sb.append("    checkUrl: ").append(toIndentedString(checkUrl)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    spell: ").append(toIndentedString(spell)).append("\n");
-    sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
@@ -456,7 +431,6 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
     openapiFields.add("check_url");
     openapiFields.add("datetime");
     openapiFields.add("spell");
-    openapiFields.add("refinement_chips");
     openapiFields.add("item_types");
     openapiFields.add("se_results_count");
     openapiFields.add("items_count");
@@ -497,10 +471,6 @@ public class SerpGoogleDatasetSearchLiveAdvancedResultInfo {
       // validate the optional field `spell`
       if (jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) {
         SpellInfo.validateJsonElement(jsonObj.get("spell"));
-      }
-      // validate the optional field `refinement_chips`
-      if (jsonObj.get("refinement_chips") != null && !jsonObj.get("refinement_chips").isJsonNull()) {
-        RefinementChipsInfo.validateJsonElement(jsonObj.get("refinement_chips"));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("item_types") != null && !jsonObj.get("item_types").isJsonNull() && !jsonObj.get("item_types").isJsonArray()) {

@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**keyword** | **String** | keyword in a POST array metrics are provided for all the keywords specified in the POST array |  [optional] |
-|**locationCode** | **Integer** | location code in a POST array if there is no data, then the value is null |  [optional] |
+|**locationCode** | **BigDecimal** | location code in a POST array if there is no data, then the value is null |  [optional] |
 |**languageCode** | **String** | language code in a POST array if there is no data, then the value is null |  [optional] |
 |**dateInterval** | **String** | forecasting date interval in a POST array |  [optional] |
 |**searchPartners** | **Boolean** | include Google search partners the value you specified when setting the task if true, the results are returned for owned, operated, and syndicated networks across Google and partner sites that host Google search; if false, the results are returned for Google search sites only |  [optional] |

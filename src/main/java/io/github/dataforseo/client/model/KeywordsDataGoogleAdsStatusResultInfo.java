@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleAdsStatusResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleAdsStatusResultInfo {
   public static final String SERIALIZED_NAME_ACTUAL_DATA = "actual_data";
   @SerializedName(SERIALIZED_NAME_ACTUAL_DATA)
@@ -61,11 +62,11 @@ public class KeywordsDataGoogleAdsStatusResultInfo {
 
   public static final String SERIALIZED_NAME_LAST_YEAR_IN_MONTHLY_SEARCHES = "last_year_in_monthly_searches";
   @SerializedName(SERIALIZED_NAME_LAST_YEAR_IN_MONTHLY_SEARCHES)
-  private Integer lastYearInMonthlySearches;
+  private BigDecimal lastYearInMonthlySearches;
 
   public static final String SERIALIZED_NAME_LAST_MONTH_IN_MONTHLY_SEARCHES = "last_month_in_monthly_searches";
   @SerializedName(SERIALIZED_NAME_LAST_MONTH_IN_MONTHLY_SEARCHES)
-  private Integer lastMonthInMonthlySearches;
+  private BigDecimal lastMonthInMonthlySearches;
 
   public KeywordsDataGoogleAdsStatusResultInfo() {
   }
@@ -108,7 +109,7 @@ public class KeywordsDataGoogleAdsStatusResultInfo {
   }
 
 
-  public KeywordsDataGoogleAdsStatusResultInfo lastYearInMonthlySearches(Integer lastYearInMonthlySearches) {
+  public KeywordsDataGoogleAdsStatusResultInfo lastYearInMonthlySearches(BigDecimal lastYearInMonthlySearches) {
     this.lastYearInMonthlySearches = lastYearInMonthlySearches;
     return this;
   }
@@ -118,16 +119,16 @@ public class KeywordsDataGoogleAdsStatusResultInfo {
    * @return lastYearInMonthlySearches
    */
   @javax.annotation.Nullable
-  public Integer getLastYearInMonthlySearches() {
+  public BigDecimal getLastYearInMonthlySearches() {
     return lastYearInMonthlySearches;
   }
 
-  public void setLastYearInMonthlySearches(Integer lastYearInMonthlySearches) {
+  public void setLastYearInMonthlySearches(BigDecimal lastYearInMonthlySearches) {
     this.lastYearInMonthlySearches = lastYearInMonthlySearches;
   }
 
 
-  public KeywordsDataGoogleAdsStatusResultInfo lastMonthInMonthlySearches(Integer lastMonthInMonthlySearches) {
+  public KeywordsDataGoogleAdsStatusResultInfo lastMonthInMonthlySearches(BigDecimal lastMonthInMonthlySearches) {
     this.lastMonthInMonthlySearches = lastMonthInMonthlySearches;
     return this;
   }
@@ -137,11 +138,11 @@ public class KeywordsDataGoogleAdsStatusResultInfo {
    * @return lastMonthInMonthlySearches
    */
   @javax.annotation.Nullable
-  public Integer getLastMonthInMonthlySearches() {
+  public BigDecimal getLastMonthInMonthlySearches() {
     return lastMonthInMonthlySearches;
   }
 
-  public void setLastMonthInMonthlySearches(Integer lastMonthInMonthlySearches) {
+  public void setLastMonthInMonthlySearches(BigDecimal lastMonthInMonthlySearches) {
     this.lastMonthInMonthlySearches = lastMonthInMonthlySearches;
   }
 

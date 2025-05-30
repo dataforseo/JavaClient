@@ -11,7 +11,7 @@
 |**url** | **String** | URL to the app page on App Store |  [optional] |
 |**icon** | **String** | URL to the app icon |  [optional] |
 |**description** | **String** | description of the app |  [optional] |
-|**reviewsCount** | **Long** | the total number of reviews of the app |  [optional] |
+|**reviewsCount** | **BigDecimal** | the total number of reviews of the app |  [optional] |
 |**price** | [**PriceInfo**](PriceInfo.md) |  |  [optional] |
 |**isFree** | **Boolean** | indicates whether the app is free |  [optional] |
 |**mainCategory** | **String** | main category/genre of the app |  [optional] |

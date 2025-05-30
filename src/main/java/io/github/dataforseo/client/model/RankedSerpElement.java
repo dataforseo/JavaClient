@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * RankedSerpElement
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class RankedSerpElement {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -72,11 +73,11 @@ public class RankedSerpElement {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private String seResultsCount;
+  private BigDecimal seResultsCount;
 
   public static final String SERIALIZED_NAME_KEYWORD_DIFFICULTY = "keyword_difficulty";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DIFFICULTY)
-  private Integer keywordDifficulty;
+  private BigDecimal keywordDifficulty;
 
   public static final String SERIALIZED_NAME_IS_LOST = "is_lost";
   @SerializedName(SERIALIZED_NAME_IS_LOST)
@@ -177,7 +178,7 @@ public class RankedSerpElement {
   }
 
 
-  public RankedSerpElement seResultsCount(String seResultsCount) {
+  public RankedSerpElement seResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
@@ -187,16 +188,16 @@ public class RankedSerpElement {
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public String getSeResultsCount() {
+  public BigDecimal getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(String seResultsCount) {
+  public void setSeResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
 
-  public RankedSerpElement keywordDifficulty(Integer keywordDifficulty) {
+  public RankedSerpElement keywordDifficulty(BigDecimal keywordDifficulty) {
     this.keywordDifficulty = keywordDifficulty;
     return this;
   }
@@ -206,11 +207,11 @@ public class RankedSerpElement {
    * @return keywordDifficulty
    */
   @javax.annotation.Nullable
-  public Integer getKeywordDifficulty() {
+  public BigDecimal getKeywordDifficulty() {
     return keywordDifficulty;
   }
 
-  public void setKeywordDifficulty(Integer keywordDifficulty) {
+  public void setKeywordDifficulty(BigDecimal keywordDifficulty) {
     this.keywordDifficulty = keywordDifficulty;
   }
 
@@ -240,7 +241,7 @@ public class RankedSerpElement {
   }
 
   /**
-   * date and time when search intent data was last updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00
+   * date and time when keyword data was updated in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable
@@ -430,9 +431,6 @@ public class RankedSerpElement {
       // ensure the optional json data is an array if present
       if (jsonObj.get("serp_item_types") != null && !jsonObj.get("serp_item_types").isJsonNull() && !jsonObj.get("serp_item_types").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `serp_item_types` to be an array in the JSON string but got `%s`", jsonObj.get("serp_item_types").toString()));
-      }
-      if ((jsonObj.get("se_results_count") != null && !jsonObj.get("se_results_count").isJsonNull()) && !jsonObj.get("se_results_count").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `se_results_count` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_results_count").toString()));
       }
       if ((jsonObj.get("last_updated_time") != null && !jsonObj.get("last_updated_time").isJsonNull()) && !jsonObj.get("last_updated_time").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `last_updated_time` to be a primitive type in the JSON string but got `%s`", jsonObj.get("last_updated_time").toString()));

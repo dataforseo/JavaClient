@@ -23,11 +23,12 @@ import io.github.dataforseo.client.model.AddressInfo;
 import io.github.dataforseo.client.model.BaseLocalBusinessLink;
 import io.github.dataforseo.client.model.BusinessDataAttributesInfo;
 import io.github.dataforseo.client.model.BusinessDataContactInfo;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
+import io.github.dataforseo.client.model.BusinessWorkHoursInfo;
 import io.github.dataforseo.client.model.PeopleAlsoSearch;
 import io.github.dataforseo.client.model.PopularTimes;
-import io.github.dataforseo.client.model.RatingInfo;
-import io.github.dataforseo.client.model.WorkTime;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -61,7 +62,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataBusinessListingsSearchLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -133,7 +134,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   public static final String SERIALIZED_NAME_TOTAL_PHOTOS = "total_photos";
   @SerializedName(SERIALIZED_NAME_TOTAL_PHOTOS)
-  private Long totalPhotos;
+  private BigDecimal totalPhotos;
 
   public static final String SERIALIZED_NAME_SNIPPET = "snippet";
   @SerializedName(SERIALIZED_NAME_SNIPPET)
@@ -161,11 +162,11 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_HOTEL_RATING = "hotel_rating";
   @SerializedName(SERIALIZED_NAME_HOTEL_RATING)
-  private Integer hotelRating;
+  private BigDecimal hotelRating;
 
   public static final String SERIALIZED_NAME_PRICE_LEVEL = "price_level";
   @SerializedName(SERIALIZED_NAME_PRICE_LEVEL)
@@ -181,7 +182,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
 
   public static final String SERIALIZED_NAME_WORK_TIME = "work_time";
   @SerializedName(SERIALIZED_NAME_WORK_TIME)
-  private WorkTime workTime;
+  private BusinessWorkHoursInfo workTime;
 
   public static final String SERIALIZED_NAME_POPULAR_TIMES = "popular_times";
   @SerializedName(SERIALIZED_NAME_POPULAR_TIMES)
@@ -549,7 +550,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
 
-  public BusinessDataBusinessListingsSearchLiveItem totalPhotos(Long totalPhotos) {
+  public BusinessDataBusinessListingsSearchLiveItem totalPhotos(BigDecimal totalPhotos) {
     this.totalPhotos = totalPhotos;
     return this;
   }
@@ -559,11 +560,11 @@ public class BusinessDataBusinessListingsSearchLiveItem {
    * @return totalPhotos
    */
   @javax.annotation.Nullable
-  public Long getTotalPhotos() {
+  public BigDecimal getTotalPhotos() {
     return totalPhotos;
   }
 
-  public void setTotalPhotos(Long totalPhotos) {
+  public void setTotalPhotos(BigDecimal totalPhotos) {
     this.totalPhotos = totalPhotos;
   }
 
@@ -690,7 +691,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
 
-  public BusinessDataBusinessListingsSearchLiveItem rating(RatingInfo rating) {
+  public BusinessDataBusinessListingsSearchLiveItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -700,16 +701,16 @@ public class BusinessDataBusinessListingsSearchLiveItem {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
 
-  public BusinessDataBusinessListingsSearchLiveItem hotelRating(Integer hotelRating) {
+  public BusinessDataBusinessListingsSearchLiveItem hotelRating(BigDecimal hotelRating) {
     this.hotelRating = hotelRating;
     return this;
   }
@@ -719,11 +720,11 @@ public class BusinessDataBusinessListingsSearchLiveItem {
    * @return hotelRating
    */
   @javax.annotation.Nullable
-  public Integer getHotelRating() {
+  public BigDecimal getHotelRating() {
     return hotelRating;
   }
 
-  public void setHotelRating(Integer hotelRating) {
+  public void setHotelRating(BigDecimal hotelRating) {
     this.hotelRating = hotelRating;
   }
 
@@ -801,7 +802,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
   }
 
 
-  public BusinessDataBusinessListingsSearchLiveItem workTime(WorkTime workTime) {
+  public BusinessDataBusinessListingsSearchLiveItem workTime(BusinessWorkHoursInfo workTime) {
     this.workTime = workTime;
     return this;
   }
@@ -811,11 +812,11 @@ public class BusinessDataBusinessListingsSearchLiveItem {
    * @return workTime
    */
   @javax.annotation.Nullable
-  public WorkTime getWorkTime() {
+  public BusinessWorkHoursInfo getWorkTime() {
     return workTime;
   }
 
-  public void setWorkTime(WorkTime workTime) {
+  public void setWorkTime(BusinessWorkHoursInfo workTime) {
     this.workTime = workTime;
   }
 
@@ -1239,7 +1240,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       if ((jsonObj.get("price_level") != null && !jsonObj.get("price_level").isJsonNull()) && !jsonObj.get("price_level").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `price_level` to be a primitive type in the JSON string but got `%s`", jsonObj.get("price_level").toString()));
@@ -1260,7 +1261,7 @@ public class BusinessDataBusinessListingsSearchLiveItem {
       }
       // validate the optional field `work_time`
       if (jsonObj.get("work_time") != null && !jsonObj.get("work_time").isJsonNull()) {
-        WorkTime.validateJsonElement(jsonObj.get("work_time"));
+        BusinessWorkHoursInfo.validateJsonElement(jsonObj.get("work_time"));
       }
       // validate the optional field `popular_times`
       if (jsonObj.get("popular_times") != null && !jsonObj.get("popular_times").isJsonNull()) {

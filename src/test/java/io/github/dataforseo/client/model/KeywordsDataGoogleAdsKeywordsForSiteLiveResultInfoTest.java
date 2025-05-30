@@ -18,9 +18,9 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.KeywordAnnotations;
 import io.github.dataforseo.client.model.MonthlySearches;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -48,6 +48,14 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfoTest {
     @Test
     public void keywordTest() {
         // TODO: test keyword
+    }
+
+    /**
+     * Test the property 'spell'
+     */
+    @Test
+    public void spellTest() {
+        // TODO: test spell
     }
 
     /**
@@ -128,14 +136,6 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfoTest {
     @Test
     public void monthlySearchesTest() {
         // TODO: test monthlySearches
-    }
-
-    /**
-     * Test the property 'keywordAnnotations'
-     */
-    @Test
-    public void keywordAnnotationsTest() {
-        // TODO: test keywordAnnotations
     }
 
 }

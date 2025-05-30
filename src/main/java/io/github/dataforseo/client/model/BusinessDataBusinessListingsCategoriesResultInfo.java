@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsCategoriesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataBusinessListingsCategoriesResultInfo {
   public static final String SERIALIZED_NAME_CATEGORY_NAME = "category_name";
   @SerializedName(SERIALIZED_NAME_CATEGORY_NAME)
@@ -57,7 +58,7 @@ public class BusinessDataBusinessListingsCategoriesResultInfo {
 
   public static final String SERIALIZED_NAME_BUSINESS_COUNT = "business_count";
   @SerializedName(SERIALIZED_NAME_BUSINESS_COUNT)
-  private Long businessCount;
+  private BigDecimal businessCount;
 
   public BusinessDataBusinessListingsCategoriesResultInfo() {
   }
@@ -81,7 +82,7 @@ public class BusinessDataBusinessListingsCategoriesResultInfo {
   }
 
 
-  public BusinessDataBusinessListingsCategoriesResultInfo businessCount(Long businessCount) {
+  public BusinessDataBusinessListingsCategoriesResultInfo businessCount(BigDecimal businessCount) {
     this.businessCount = businessCount;
     return this;
   }
@@ -91,11 +92,11 @@ public class BusinessDataBusinessListingsCategoriesResultInfo {
    * @return businessCount
    */
   @javax.annotation.Nullable
-  public Long getBusinessCount() {
+  public BigDecimal getBusinessCount() {
     return businessCount;
   }
 
-  public void setBusinessCount(Long businessCount) {
+  public void setBusinessCount(BigDecimal businessCount) {
     this.businessCount = businessCount;
   }
 

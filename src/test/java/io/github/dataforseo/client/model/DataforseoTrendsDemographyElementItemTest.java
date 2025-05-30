@@ -22,6 +22,7 @@ import io.github.dataforseo.client.model.BaseDataforseoTrendsItem;
 import io.github.dataforseo.client.model.Demography;
 import io.github.dataforseo.client.model.DemographyComparisonInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

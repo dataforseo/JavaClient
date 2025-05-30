@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BusinessDataBusinessListingsSearchLiveItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,15 +53,15 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsSearchLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataBusinessListingsSearchLiveResultInfo {
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
-  private Long totalCount;
+  private BigDecimal totalCount;
 
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
+  private BigDecimal count;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
@@ -77,7 +78,7 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo {
   public BusinessDataBusinessListingsSearchLiveResultInfo() {
   }
 
-  public BusinessDataBusinessListingsSearchLiveResultInfo totalCount(Long totalCount) {
+  public BusinessDataBusinessListingsSearchLiveResultInfo totalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
     return this;
   }
@@ -87,16 +88,16 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo {
    * @return totalCount
    */
   @javax.annotation.Nullable
-  public Long getTotalCount() {
+  public BigDecimal getTotalCount() {
     return totalCount;
   }
 
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
   }
 
 
-  public BusinessDataBusinessListingsSearchLiveResultInfo count(Long count) {
+  public BusinessDataBusinessListingsSearchLiveResultInfo count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -106,11 +107,11 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo {
    * @return count
    */
   @javax.annotation.Nullable
-  public Long getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
   }
 

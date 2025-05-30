@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ChannelSubscribersCount
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ChannelSubscribersCount {
   public static final String SERIALIZED_NAME_DISPLAYED_COUNT = "displayed_count";
   @SerializedName(SERIALIZED_NAME_DISPLAYED_COUNT)
@@ -57,7 +58,7 @@ public class ChannelSubscribersCount {
 
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
+  private BigDecimal count;
 
   public ChannelSubscribersCount() {
   }
@@ -81,7 +82,7 @@ public class ChannelSubscribersCount {
   }
 
 
-  public ChannelSubscribersCount count(Long count) {
+  public ChannelSubscribersCount count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -91,11 +92,11 @@ public class ChannelSubscribersCount {
    * @return count
    */
   @javax.annotation.Nullable
-  public Long getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
   }
 

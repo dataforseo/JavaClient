@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataSocialMediaPinterestLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataSocialMediaPinterestLiveResultInfo {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -61,7 +62,7 @@ public class BusinessDataSocialMediaPinterestLiveResultInfo {
 
   public static final String SERIALIZED_NAME_PINS_COUNT = "pins_count";
   @SerializedName(SERIALIZED_NAME_PINS_COUNT)
-  private Long pinsCount;
+  private BigDecimal pinsCount;
 
   public BusinessDataSocialMediaPinterestLiveResultInfo() {
   }
@@ -104,7 +105,7 @@ public class BusinessDataSocialMediaPinterestLiveResultInfo {
   }
 
 
-  public BusinessDataSocialMediaPinterestLiveResultInfo pinsCount(Long pinsCount) {
+  public BusinessDataSocialMediaPinterestLiveResultInfo pinsCount(BigDecimal pinsCount) {
     this.pinsCount = pinsCount;
     return this;
   }
@@ -114,11 +115,11 @@ public class BusinessDataSocialMediaPinterestLiveResultInfo {
    * @return pinsCount
    */
   @javax.annotation.Nullable
-  public Long getPinsCount() {
+  public BigDecimal getPinsCount() {
     return pinsCount;
   }
 
-  public void setPinsCount(Long pinsCount) {
+  public void setPinsCount(BigDecimal pinsCount) {
     this.pinsCount = pinsCount;
   }
 

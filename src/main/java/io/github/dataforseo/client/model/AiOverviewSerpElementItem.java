@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.AiOverviewReference;
 import io.github.dataforseo.client.model.BaseSerpElementItem;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,16 +56,8 @@ import io.github.dataforseo.client.JSON;
 /**
  * AiOverviewSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AiOverviewSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW = "asynchronous_ai_overview";
   @SerializedName(SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW)
   private Boolean asynchronousAiOverview;
@@ -83,44 +76,6 @@ public class AiOverviewSerpElementItem extends BaseSerpElementItem {
 
   public AiOverviewSerpElementItem() {
   }
-
-  public AiOverviewSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public AiOverviewSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
 
   public AiOverviewSerpElementItem asynchronousAiOverview(Boolean asynchronousAiOverview) {
     this.asynchronousAiOverview = asynchronousAiOverview;
@@ -268,9 +223,7 @@ public class AiOverviewSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     AiOverviewSerpElementItem aiOverviewSerpElementItem = (AiOverviewSerpElementItem) o;
-    return Objects.equals(this.position, aiOverviewSerpElementItem.position) &&
-        Objects.equals(this.xpath, aiOverviewSerpElementItem.xpath) &&
-        Objects.equals(this.asynchronousAiOverview, aiOverviewSerpElementItem.asynchronousAiOverview) &&
+    return Objects.equals(this.asynchronousAiOverview, aiOverviewSerpElementItem.asynchronousAiOverview) &&
         Objects.equals(this.items, aiOverviewSerpElementItem.items) &&
         Objects.equals(this.references, aiOverviewSerpElementItem.references) &&
         Objects.equals(this.rectangle, aiOverviewSerpElementItem.rectangle)&&
@@ -284,7 +237,7 @@ public class AiOverviewSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, asynchronousAiOverview, items, references, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(asynchronousAiOverview, items, references, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -299,8 +252,6 @@ public class AiOverviewSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class AiOverviewSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    asynchronousAiOverview: ").append(toIndentedString(asynchronousAiOverview)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    references: ").append(toIndentedString(references)).append("\n");
@@ -355,12 +306,6 @@ public class AiOverviewSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
         if (jsonArrayitems != null) {

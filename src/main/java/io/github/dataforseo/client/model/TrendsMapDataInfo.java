@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * TrendsMapDataInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TrendsMapDataInfo {
   public static final String SERIALIZED_NAME_GEO_ID = "geo_id";
   @SerializedName(SERIALIZED_NAME_GEO_ID)
@@ -63,11 +64,11 @@ public class TrendsMapDataInfo {
 
   public static final String SERIALIZED_NAME_VALUES = "values";
   @SerializedName(SERIALIZED_NAME_VALUES)
-  private List<Object> values;
+  private List<String> values;
 
   public static final String SERIALIZED_NAME_MAX_VALUE_INDEX = "max_value_index";
   @SerializedName(SERIALIZED_NAME_MAX_VALUE_INDEX)
-  private Integer maxValueIndex;
+  private BigDecimal maxValueIndex;
 
   public TrendsMapDataInfo() {
   }
@@ -110,12 +111,12 @@ public class TrendsMapDataInfo {
   }
 
 
-  public TrendsMapDataInfo values(List<Object> values) {
+  public TrendsMapDataInfo values(List<String> values) {
     this.values = values;
     return this;
   }
 
-  public TrendsMapDataInfo addValuesItem(Object valuesItem) {
+  public TrendsMapDataInfo addValuesItem(String valuesItem) {
     if (this.values == null) {
       this.values = new ArrayList<>();
     }
@@ -128,16 +129,16 @@ public class TrendsMapDataInfo {
    * @return values
    */
   @javax.annotation.Nullable
-  public List<Object> getValues() {
+  public List<String> getValues() {
     return values;
   }
 
-  public void setValues(List<Object> values) {
+  public void setValues(List<String> values) {
     this.values = values;
   }
 
 
-  public TrendsMapDataInfo maxValueIndex(Integer maxValueIndex) {
+  public TrendsMapDataInfo maxValueIndex(BigDecimal maxValueIndex) {
     this.maxValueIndex = maxValueIndex;
     return this;
   }
@@ -147,11 +148,11 @@ public class TrendsMapDataInfo {
    * @return maxValueIndex
    */
   @javax.annotation.Nullable
-  public Integer getMaxValueIndex() {
+  public BigDecimal getMaxValueIndex() {
     return maxValueIndex;
   }
 
-  public void setMaxValueIndex(Integer maxValueIndex) {
+  public void setMaxValueIndex(BigDecimal maxValueIndex) {
     this.maxValueIndex = maxValueIndex;
   }
 

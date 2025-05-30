@@ -25,6 +25,7 @@ import io.github.dataforseo.client.model.LicensesElement;
 import io.github.dataforseo.client.model.LinkElement;
 import io.github.dataforseo.client.model.PeriodCovered;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

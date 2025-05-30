@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseYoutubeSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -50,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * YoutubeCommentSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
   public static final String SERIALIZED_NAME_AUTHOR_NAME = "author_name";
   @SerializedName(SERIALIZED_NAME_AUTHOR_NAME)
@@ -78,11 +79,11 @@ public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
 
   public static final String SERIALIZED_NAME_LIKES_COUNT = "likes_count";
   @SerializedName(SERIALIZED_NAME_LIKES_COUNT)
-  private Long likesCount;
+  private BigDecimal likesCount;
 
   public static final String SERIALIZED_NAME_REPLY_COUNT = "reply_count";
   @SerializedName(SERIALIZED_NAME_REPLY_COUNT)
-  private Long replyCount;
+  private BigDecimal replyCount;
 
   public YoutubeCommentSerpElementItem() {
   }
@@ -201,7 +202,7 @@ public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
   }
 
 
-  public YoutubeCommentSerpElementItem likesCount(Long likesCount) {
+  public YoutubeCommentSerpElementItem likesCount(BigDecimal likesCount) {
     this.likesCount = likesCount;
     return this;
   }
@@ -211,16 +212,16 @@ public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
    * @return likesCount
    */
   @javax.annotation.Nullable
-  public Long getLikesCount() {
+  public BigDecimal getLikesCount() {
     return likesCount;
   }
 
-  public void setLikesCount(Long likesCount) {
+  public void setLikesCount(BigDecimal likesCount) {
     this.likesCount = likesCount;
   }
 
 
-  public YoutubeCommentSerpElementItem replyCount(Long replyCount) {
+  public YoutubeCommentSerpElementItem replyCount(BigDecimal replyCount) {
     this.replyCount = replyCount;
     return this;
   }
@@ -230,11 +231,11 @@ public class YoutubeCommentSerpElementItem extends BaseYoutubeSerpElementItem {
    * @return replyCount
    */
   @javax.annotation.Nullable
-  public Long getReplyCount() {
+  public BigDecimal getReplyCount() {
     return replyCount;
   }
 
-  public void setReplyCount(Long replyCount) {
+  public void setReplyCount(BigDecimal replyCount) {
     this.replyCount = replyCount;
   }
 

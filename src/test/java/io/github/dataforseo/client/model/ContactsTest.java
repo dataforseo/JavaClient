@@ -48,4 +48,12 @@ public class ContactsTest {
         // TODO: test telephones
     }
 
+    /**
+     * Test the property 'emails'
+     */
+    @Test
+    public void emailsTest() {
+        // TODO: test emails
+    }
+
 }

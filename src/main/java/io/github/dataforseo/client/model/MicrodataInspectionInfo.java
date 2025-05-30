@@ -52,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * MicrodataInspectionInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MicrodataInspectionInfo {
   public static final String SERIALIZED_NAME_TYPES = "types";
   @SerializedName(SERIALIZED_NAME_TYPES)
@@ -60,7 +60,7 @@ public class MicrodataInspectionInfo {
 
   public static final String SERIALIZED_NAME_FIELDS = "fields";
   @SerializedName(SERIALIZED_NAME_FIELDS)
-  private List<MicrodataFieldsInfo> fields;
+  private MicrodataFieldsInfo fields;
 
   public MicrodataInspectionInfo() {
   }
@@ -92,29 +92,21 @@ public class MicrodataInspectionInfo {
   }
 
 
-  public MicrodataInspectionInfo fields(List<MicrodataFieldsInfo> fields) {
+  public MicrodataInspectionInfo fields(MicrodataFieldsInfo fields) {
     this.fields = fields;
     return this;
   }
 
-  public MicrodataInspectionInfo addFieldsItem(MicrodataFieldsInfo fieldsItem) {
-    if (this.fields == null) {
-      this.fields = new ArrayList<>();
-    }
-    this.fields.add(fieldsItem);
-    return this;
-  }
-
   /**
-   * microdata fields an array of objects containing data fields related to the certain microdata type
+   * Get fields
    * @return fields
    */
   @javax.annotation.Nullable
-  public List<MicrodataFieldsInfo> getFields() {
+  public MicrodataFieldsInfo getFields() {
     return fields;
   }
 
-  public void setFields(List<MicrodataFieldsInfo> fields) {
+  public void setFields(MicrodataFieldsInfo fields) {
     this.fields = fields;
   }
 
@@ -247,19 +239,9 @@ public class MicrodataInspectionInfo {
       if (jsonObj.get("types") != null && !jsonObj.get("types").isJsonNull() && !jsonObj.get("types").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `types` to be an array in the JSON string but got `%s`", jsonObj.get("types").toString()));
       }
+      // validate the optional field `fields`
       if (jsonObj.get("fields") != null && !jsonObj.get("fields").isJsonNull()) {
-        JsonArray jsonArrayfields = jsonObj.getAsJsonArray("fields");
-        if (jsonArrayfields != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("fields").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `fields` to be an array in the JSON string but got `%s`", jsonObj.get("fields").toString()));
-          }
-
-          // validate the optional field `fields` (array)
-          for (int i = 0; i < jsonArrayfields.size(); i++) {
-            MicrodataFieldsInfo.validateJsonElement(jsonArrayfields.get(i));
-          };
-        }
+        MicrodataFieldsInfo.validateJsonElement(jsonObj.get("fields"));
       }
   }
 

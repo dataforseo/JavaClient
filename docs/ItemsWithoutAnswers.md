@@ -8,8 +8,8 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
-|**rankGroup** | **Integer** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
-|**rankAbsolute** | **Integer** | absolute rank among all the elements |  [optional] |
+|**rankGroup** | **BigDecimal** | position within a group of elements with identical type values positions of elements with different type values are omitted from rank_group |  [optional] |
+|**rankAbsolute** | **BigDecimal** | absolute rank among all the elements |  [optional] |
 |**questionId** | **String** | ID of the question |  [optional] |
 |**url** | **String** | URL of the question |  [optional] |
 |**profileImageUrl** | **String** | URL of the user’s profile image |  [optional] |

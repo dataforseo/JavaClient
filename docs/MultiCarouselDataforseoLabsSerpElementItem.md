@@ -7,7 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**items** | [**List&lt;MultiCarouselElement&gt;**](MultiCarouselElement.md) | additional items present in the element if there are none, equals null |  [optional] |
+|**seType** | **String** | search engine type |  [optional] |
+|**items** | [**List&lt;MultiCarouselElement&gt;**](MultiCarouselElement.md) | elements of search results found in SERP |  [optional] |
 
 
 

@@ -19,10 +19,11 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.CrawlStatusInfo;
+import io.github.dataforseo.client.model.CrawlStatus;
 import io.github.dataforseo.client.model.OnPageMicrodataItem;
 import io.github.dataforseo.client.model.TestSummary;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageMicrodataResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageMicrodataResultInfo {
   public static final String SERIALIZED_NAME_CRAWL_PROGRESS = "crawl_progress";
   @SerializedName(SERIALIZED_NAME_CRAWL_PROGRESS)
@@ -62,7 +63,7 @@ public class OnPageMicrodataResultInfo {
 
   public static final String SERIALIZED_NAME_CRAWL_STATUS = "crawl_status";
   @SerializedName(SERIALIZED_NAME_CRAWL_STATUS)
-  private CrawlStatusInfo crawlStatus;
+  private CrawlStatus crawlStatus;
 
   public static final String SERIALIZED_NAME_TEST_SUMMARY = "test_summary";
   @SerializedName(SERIALIZED_NAME_TEST_SUMMARY)
@@ -70,7 +71,7 @@ public class OnPageMicrodataResultInfo {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -98,7 +99,7 @@ public class OnPageMicrodataResultInfo {
   }
 
 
-  public OnPageMicrodataResultInfo crawlStatus(CrawlStatusInfo crawlStatus) {
+  public OnPageMicrodataResultInfo crawlStatus(CrawlStatus crawlStatus) {
     this.crawlStatus = crawlStatus;
     return this;
   }
@@ -108,11 +109,11 @@ public class OnPageMicrodataResultInfo {
    * @return crawlStatus
    */
   @javax.annotation.Nullable
-  public CrawlStatusInfo getCrawlStatus() {
+  public CrawlStatus getCrawlStatus() {
     return crawlStatus;
   }
 
-  public void setCrawlStatus(CrawlStatusInfo crawlStatus) {
+  public void setCrawlStatus(CrawlStatus crawlStatus) {
     this.crawlStatus = crawlStatus;
   }
 
@@ -136,7 +137,7 @@ public class OnPageMicrodataResultInfo {
   }
 
 
-  public OnPageMicrodataResultInfo itemsCount(Long itemsCount) {
+  public OnPageMicrodataResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -146,11 +147,11 @@ public class OnPageMicrodataResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -320,7 +321,7 @@ public class OnPageMicrodataResultInfo {
       }
       // validate the optional field `crawl_status`
       if (jsonObj.get("crawl_status") != null && !jsonObj.get("crawl_status").isJsonNull()) {
-        CrawlStatusInfo.validateJsonElement(jsonObj.get("crawl_status"));
+        CrawlStatus.validateJsonElement(jsonObj.get("crawl_status"));
       }
       // validate the optional field `test_summary`
       if (jsonObj.get("test_summary") != null && !jsonObj.get("test_summary").isJsonNull()) {

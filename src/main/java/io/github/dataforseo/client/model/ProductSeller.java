@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.DeliveryInfo;
 import io.github.dataforseo.client.model.PriceInfo;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * ProductSeller
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ProductSeller {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -72,7 +73,7 @@ public class ProductSeller {
 
   public static final String SERIALIZED_NAME_SELLER_REVIEW_COUNT = "seller_review_count";
   @SerializedName(SERIALIZED_NAME_SELLER_REVIEW_COUNT)
-  private Integer sellerReviewCount;
+  private BigDecimal sellerReviewCount;
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
@@ -161,7 +162,7 @@ public class ProductSeller {
   }
 
 
-  public ProductSeller sellerReviewCount(Integer sellerReviewCount) {
+  public ProductSeller sellerReviewCount(BigDecimal sellerReviewCount) {
     this.sellerReviewCount = sellerReviewCount;
     return this;
   }
@@ -171,11 +172,11 @@ public class ProductSeller {
    * @return sellerReviewCount
    */
   @javax.annotation.Nullable
-  public Integer getSellerReviewCount() {
+  public BigDecimal getSellerReviewCount() {
     return sellerReviewCount;
   }
 
-  public void setSellerReviewCount(Integer sellerReviewCount) {
+  public void setSellerReviewCount(BigDecimal sellerReviewCount) {
     this.sellerReviewCount = sellerReviewCount;
   }
 

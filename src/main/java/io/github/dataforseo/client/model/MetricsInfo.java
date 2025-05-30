@@ -49,468 +49,836 @@ import io.github.dataforseo.client.JSON;
 /**
  * MetricsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class MetricsInfo {
-  public static final String SERIALIZED_NAME_POS1 = "pos_1";
-  @SerializedName(SERIALIZED_NAME_POS1)
-  private Integer pos1;
+  public static final String SERIALIZED_NAME_TYPE = "type";
+  @SerializedName(SERIALIZED_NAME_TYPE)
+  private String type;
 
-  public static final String SERIALIZED_NAME_POS23 = "pos_2_3";
-  @SerializedName(SERIALIZED_NAME_POS23)
-  private Integer pos23;
+  public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
+  @SerializedName(SERIALIZED_NAME_TIMESTAMP)
+  private String timestamp;
 
-  public static final String SERIALIZED_NAME_POS410 = "pos_4_10";
-  @SerializedName(SERIALIZED_NAME_POS410)
-  private Integer pos410;
+  public static final String SERIALIZED_NAME_REVENUE = "revenue";
+  @SerializedName(SERIALIZED_NAME_REVENUE)
+  private Float revenue;
 
-  public static final String SERIALIZED_NAME_POS1120 = "pos_11_20";
-  @SerializedName(SERIALIZED_NAME_POS1120)
-  private Integer pos1120;
+  public static final String SERIALIZED_NAME_REVENUE_DELTA = "revenue_delta";
+  @SerializedName(SERIALIZED_NAME_REVENUE_DELTA)
+  private Float revenueDelta;
 
-  public static final String SERIALIZED_NAME_POS2130 = "pos_21_30";
-  @SerializedName(SERIALIZED_NAME_POS2130)
-  private Integer pos2130;
+  public static final String SERIALIZED_NAME_OPERATING_EXPENSE = "operating_expense";
+  @SerializedName(SERIALIZED_NAME_OPERATING_EXPENSE)
+  private Float operatingExpense;
 
-  public static final String SERIALIZED_NAME_POS3140 = "pos_31_40";
-  @SerializedName(SERIALIZED_NAME_POS3140)
-  private Integer pos3140;
+  public static final String SERIALIZED_NAME_OPERATING_EXPENSE_DELTA = "operating_expense_delta";
+  @SerializedName(SERIALIZED_NAME_OPERATING_EXPENSE_DELTA)
+  private Float operatingExpenseDelta;
 
-  public static final String SERIALIZED_NAME_POS4150 = "pos_41_50";
-  @SerializedName(SERIALIZED_NAME_POS4150)
-  private Integer pos4150;
+  public static final String SERIALIZED_NAME_NET_INCOME = "net_income";
+  @SerializedName(SERIALIZED_NAME_NET_INCOME)
+  private Float netIncome;
 
-  public static final String SERIALIZED_NAME_POS5160 = "pos_51_60";
-  @SerializedName(SERIALIZED_NAME_POS5160)
-  private Integer pos5160;
+  public static final String SERIALIZED_NAME_NET_INCOME_DELTA = "net_income_delta";
+  @SerializedName(SERIALIZED_NAME_NET_INCOME_DELTA)
+  private Float netIncomeDelta;
 
-  public static final String SERIALIZED_NAME_POS6170 = "pos_61_70";
-  @SerializedName(SERIALIZED_NAME_POS6170)
-  private Integer pos6170;
+  public static final String SERIALIZED_NAME_NET_PROFIT_MARGIN = "net_profit_margin";
+  @SerializedName(SERIALIZED_NAME_NET_PROFIT_MARGIN)
+  private Float netProfitMargin;
 
-  public static final String SERIALIZED_NAME_POS7180 = "pos_71_80";
-  @SerializedName(SERIALIZED_NAME_POS7180)
-  private Integer pos7180;
+  public static final String SERIALIZED_NAME_NET_PROFIT_MARGIN_DELTA = "net_profit_margin_delta";
+  @SerializedName(SERIALIZED_NAME_NET_PROFIT_MARGIN_DELTA)
+  private Float netProfitMarginDelta;
 
-  public static final String SERIALIZED_NAME_POS8190 = "pos_81_90";
-  @SerializedName(SERIALIZED_NAME_POS8190)
-  private Integer pos8190;
+  public static final String SERIALIZED_NAME_EARNINGS_PER_SHARE = "earnings_per_share";
+  @SerializedName(SERIALIZED_NAME_EARNINGS_PER_SHARE)
+  private Float earningsPerShare;
 
-  public static final String SERIALIZED_NAME_POS91100 = "pos_91_100";
-  @SerializedName(SERIALIZED_NAME_POS91100)
-  private Integer pos91100;
+  public static final String SERIALIZED_NAME_EARNINGS_PER_SHARE_DELTA = "earnings_per_share_delta";
+  @SerializedName(SERIALIZED_NAME_EARNINGS_PER_SHARE_DELTA)
+  private Float earningsPerShareDelta;
 
-  public static final String SERIALIZED_NAME_ETV = "etv";
-  @SerializedName(SERIALIZED_NAME_ETV)
-  private Float etv;
+  public static final String SERIALIZED_NAME_EBITDA = "ebitda";
+  @SerializedName(SERIALIZED_NAME_EBITDA)
+  private Float ebitda;
 
-  public static final String SERIALIZED_NAME_IMPRESSIONS_ETV = "impressions_etv";
-  @SerializedName(SERIALIZED_NAME_IMPRESSIONS_ETV)
-  private Float impressionsEtv;
+  public static final String SERIALIZED_NAME_EBITDA_DELTA = "ebitda_delta";
+  @SerializedName(SERIALIZED_NAME_EBITDA_DELTA)
+  private Float ebitdaDelta;
 
-  public static final String SERIALIZED_NAME_COUNT = "count";
-  @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
+  public static final String SERIALIZED_NAME_EFFECTIVE_TAX_RATE = "effective_tax_rate";
+  @SerializedName(SERIALIZED_NAME_EFFECTIVE_TAX_RATE)
+  private Float effectiveTaxRate;
 
-  public static final String SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST = "estimated_paid_traffic_cost";
-  @SerializedName(SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST)
-  private Float estimatedPaidTrafficCost;
+  public static final String SERIALIZED_NAME_CASH_AND_SHORT_TERM_INVESTMENTS = "cash_and_short_term_investments";
+  @SerializedName(SERIALIZED_NAME_CASH_AND_SHORT_TERM_INVESTMENTS)
+  private Float cashAndShortTermInvestments;
 
-  public static final String SERIALIZED_NAME_IS_NEW = "is_new";
-  @SerializedName(SERIALIZED_NAME_IS_NEW)
-  private Long isNew;
+  public static final String SERIALIZED_NAME_CASH_AND_SHORT_TERM_INVESTMENTS_DELTA = "cash_and_short_term_investments_delta";
+  @SerializedName(SERIALIZED_NAME_CASH_AND_SHORT_TERM_INVESTMENTS_DELTA)
+  private Float cashAndShortTermInvestmentsDelta;
 
-  public static final String SERIALIZED_NAME_IS_UP = "is_up";
-  @SerializedName(SERIALIZED_NAME_IS_UP)
-  private Long isUp;
+  public static final String SERIALIZED_NAME_TOTAL_ASSETS = "total_assets";
+  @SerializedName(SERIALIZED_NAME_TOTAL_ASSETS)
+  private Float totalAssets;
 
-  public static final String SERIALIZED_NAME_IS_DOWN = "is_down";
-  @SerializedName(SERIALIZED_NAME_IS_DOWN)
-  private Long isDown;
+  public static final String SERIALIZED_NAME_TOTAL_ASSETS_DELTA = "total_assets_delta";
+  @SerializedName(SERIALIZED_NAME_TOTAL_ASSETS_DELTA)
+  private Float totalAssetsDelta;
 
-  public static final String SERIALIZED_NAME_IS_LOST = "is_lost";
-  @SerializedName(SERIALIZED_NAME_IS_LOST)
-  private Long isLost;
+  public static final String SERIALIZED_NAME_TOTAL_LIABILITIES = "total_liabilities";
+  @SerializedName(SERIALIZED_NAME_TOTAL_LIABILITIES)
+  private Float totalLiabilities;
+
+  public static final String SERIALIZED_NAME_TOTAL_LIABILITIES_DELTA = "total_liabilities_delta";
+  @SerializedName(SERIALIZED_NAME_TOTAL_LIABILITIES_DELTA)
+  private Float totalLiabilitiesDelta;
+
+  public static final String SERIALIZED_NAME_TOTAL_EQUITY = "total_equity";
+  @SerializedName(SERIALIZED_NAME_TOTAL_EQUITY)
+  private Float totalEquity;
+
+  public static final String SERIALIZED_NAME_SHARES_OUTSTANDING = "shares_outstanding";
+  @SerializedName(SERIALIZED_NAME_SHARES_OUTSTANDING)
+  private Float sharesOutstanding;
+
+  public static final String SERIALIZED_NAME_PRICE_TO_BOOK = "price_to_book";
+  @SerializedName(SERIALIZED_NAME_PRICE_TO_BOOK)
+  private Float priceToBook;
+
+  public static final String SERIALIZED_NAME_RETURN_ON_ASSETS = "return_on_assets";
+  @SerializedName(SERIALIZED_NAME_RETURN_ON_ASSETS)
+  private Float returnOnAssets;
+
+  public static final String SERIALIZED_NAME_RETURN_ON_CAPITAL = "return_on_capital";
+  @SerializedName(SERIALIZED_NAME_RETURN_ON_CAPITAL)
+  private Float returnOnCapital;
+
+  public static final String SERIALIZED_NAME_CASH_FROM_OPERATIONS = "cash_from_operations";
+  @SerializedName(SERIALIZED_NAME_CASH_FROM_OPERATIONS)
+  private Float cashFromOperations;
+
+  public static final String SERIALIZED_NAME_CASH_FROM_OPERATIONS_DELTA = "cash_from_operations_delta";
+  @SerializedName(SERIALIZED_NAME_CASH_FROM_OPERATIONS_DELTA)
+  private Float cashFromOperationsDelta;
+
+  public static final String SERIALIZED_NAME_CASH_FROM_INVESTING = "cash_from_investing";
+  @SerializedName(SERIALIZED_NAME_CASH_FROM_INVESTING)
+  private Float cashFromInvesting;
+
+  public static final String SERIALIZED_NAME_CASH_FROM_INVESTING_DELTA = "cash_from_investing_delta";
+  @SerializedName(SERIALIZED_NAME_CASH_FROM_INVESTING_DELTA)
+  private Float cashFromInvestingDelta;
+
+  public static final String SERIALIZED_NAME_CASH_FROM_FINANCING = "cash_from_financing";
+  @SerializedName(SERIALIZED_NAME_CASH_FROM_FINANCING)
+  private Float cashFromFinancing;
+
+  public static final String SERIALIZED_NAME_CASH_FROM_FINANCING_DELTA = "cash_from_financing_delta";
+  @SerializedName(SERIALIZED_NAME_CASH_FROM_FINANCING_DELTA)
+  private Float cashFromFinancingDelta;
+
+  public static final String SERIALIZED_NAME_NET_CHANGE_IN_CASH = "net_change_in_cash";
+  @SerializedName(SERIALIZED_NAME_NET_CHANGE_IN_CASH)
+  private Float netChangeInCash;
+
+  public static final String SERIALIZED_NAME_NET_CHANGE_IN_CASH_DELTA = "net_change_in_cash_delta";
+  @SerializedName(SERIALIZED_NAME_NET_CHANGE_IN_CASH_DELTA)
+  private Float netChangeInCashDelta;
+
+  public static final String SERIALIZED_NAME_FREE_CASH_FLOW = "free_cash_flow";
+  @SerializedName(SERIALIZED_NAME_FREE_CASH_FLOW)
+  private Float freeCashFlow;
+
+  public static final String SERIALIZED_NAME_FREE_CASH_FLOW_DELTA = "free_cash_flow_delta";
+  @SerializedName(SERIALIZED_NAME_FREE_CASH_FLOW_DELTA)
+  private Float freeCashFlowDelta;
 
   public MetricsInfo() {
   }
 
-  public MetricsInfo pos1(Integer pos1) {
-    this.pos1 = pos1;
+  public MetricsInfo type(String type) {
+    this.type = type;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #1
-   * @return pos1
+   * type of element
+   * @return type
    */
   @javax.annotation.Nullable
-  public Integer getPos1() {
-    return pos1;
+  public String getType() {
+    return type;
   }
 
-  public void setPos1(Integer pos1) {
-    this.pos1 = pos1;
+  public void setType(String type) {
+    this.type = type;
   }
 
 
-  public MetricsInfo pos23(Integer pos23) {
-    this.pos23 = pos23;
+  public MetricsInfo timestamp(String timestamp) {
+    this.timestamp = timestamp;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #2-3
-   * @return pos23
+   * date and time of the value readout in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2025-02-10 09:40:00 +00:00
+   * @return timestamp
    */
   @javax.annotation.Nullable
-  public Integer getPos23() {
-    return pos23;
+  public String getTimestamp() {
+    return timestamp;
   }
 
-  public void setPos23(Integer pos23) {
-    this.pos23 = pos23;
+  public void setTimestamp(String timestamp) {
+    this.timestamp = timestamp;
   }
 
 
-  public MetricsInfo pos410(Integer pos410) {
-    this.pos410 = pos410;
+  public MetricsInfo revenue(Float revenue) {
+    this.revenue = revenue;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #4-10
-   * @return pos410
+   * revenue value
+   * @return revenue
    */
   @javax.annotation.Nullable
-  public Integer getPos410() {
-    return pos410;
+  public Float getRevenue() {
+    return revenue;
   }
 
-  public void setPos410(Integer pos410) {
-    this.pos410 = pos410;
+  public void setRevenue(Float revenue) {
+    this.revenue = revenue;
   }
 
 
-  public MetricsInfo pos1120(Integer pos1120) {
-    this.pos1120 = pos1120;
+  public MetricsInfo revenueDelta(Float revenueDelta) {
+    this.revenueDelta = revenueDelta;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #11-20
-   * @return pos1120
+   * change in revenue
+   * @return revenueDelta
    */
   @javax.annotation.Nullable
-  public Integer getPos1120() {
-    return pos1120;
+  public Float getRevenueDelta() {
+    return revenueDelta;
   }
 
-  public void setPos1120(Integer pos1120) {
-    this.pos1120 = pos1120;
+  public void setRevenueDelta(Float revenueDelta) {
+    this.revenueDelta = revenueDelta;
   }
 
 
-  public MetricsInfo pos2130(Integer pos2130) {
-    this.pos2130 = pos2130;
+  public MetricsInfo operatingExpense(Float operatingExpense) {
+    this.operatingExpense = operatingExpense;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #21-30
-   * @return pos2130
+   * operating expense value
+   * @return operatingExpense
    */
   @javax.annotation.Nullable
-  public Integer getPos2130() {
-    return pos2130;
+  public Float getOperatingExpense() {
+    return operatingExpense;
   }
 
-  public void setPos2130(Integer pos2130) {
-    this.pos2130 = pos2130;
+  public void setOperatingExpense(Float operatingExpense) {
+    this.operatingExpense = operatingExpense;
   }
 
 
-  public MetricsInfo pos3140(Integer pos3140) {
-    this.pos3140 = pos3140;
+  public MetricsInfo operatingExpenseDelta(Float operatingExpenseDelta) {
+    this.operatingExpenseDelta = operatingExpenseDelta;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #31-40
-   * @return pos3140
+   * change in operating expense
+   * @return operatingExpenseDelta
    */
   @javax.annotation.Nullable
-  public Integer getPos3140() {
-    return pos3140;
+  public Float getOperatingExpenseDelta() {
+    return operatingExpenseDelta;
   }
 
-  public void setPos3140(Integer pos3140) {
-    this.pos3140 = pos3140;
+  public void setOperatingExpenseDelta(Float operatingExpenseDelta) {
+    this.operatingExpenseDelta = operatingExpenseDelta;
   }
 
 
-  public MetricsInfo pos4150(Integer pos4150) {
-    this.pos4150 = pos4150;
+  public MetricsInfo netIncome(Float netIncome) {
+    this.netIncome = netIncome;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #41-50
-   * @return pos4150
+   * net income value
+   * @return netIncome
    */
   @javax.annotation.Nullable
-  public Integer getPos4150() {
-    return pos4150;
+  public Float getNetIncome() {
+    return netIncome;
   }
 
-  public void setPos4150(Integer pos4150) {
-    this.pos4150 = pos4150;
+  public void setNetIncome(Float netIncome) {
+    this.netIncome = netIncome;
   }
 
 
-  public MetricsInfo pos5160(Integer pos5160) {
-    this.pos5160 = pos5160;
+  public MetricsInfo netIncomeDelta(Float netIncomeDelta) {
+    this.netIncomeDelta = netIncomeDelta;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #51-60
-   * @return pos5160
+   * change in net income
+   * @return netIncomeDelta
    */
   @javax.annotation.Nullable
-  public Integer getPos5160() {
-    return pos5160;
+  public Float getNetIncomeDelta() {
+    return netIncomeDelta;
   }
 
-  public void setPos5160(Integer pos5160) {
-    this.pos5160 = pos5160;
+  public void setNetIncomeDelta(Float netIncomeDelta) {
+    this.netIncomeDelta = netIncomeDelta;
   }
 
 
-  public MetricsInfo pos6170(Integer pos6170) {
-    this.pos6170 = pos6170;
+  public MetricsInfo netProfitMargin(Float netProfitMargin) {
+    this.netProfitMargin = netProfitMargin;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #61-70
-   * @return pos6170
+   * net profit margin value
+   * @return netProfitMargin
    */
   @javax.annotation.Nullable
-  public Integer getPos6170() {
-    return pos6170;
+  public Float getNetProfitMargin() {
+    return netProfitMargin;
   }
 
-  public void setPos6170(Integer pos6170) {
-    this.pos6170 = pos6170;
+  public void setNetProfitMargin(Float netProfitMargin) {
+    this.netProfitMargin = netProfitMargin;
   }
 
 
-  public MetricsInfo pos7180(Integer pos7180) {
-    this.pos7180 = pos7180;
+  public MetricsInfo netProfitMarginDelta(Float netProfitMarginDelta) {
+    this.netProfitMarginDelta = netProfitMarginDelta;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #71-80
-   * @return pos7180
+   * change in net profit margin
+   * @return netProfitMarginDelta
    */
   @javax.annotation.Nullable
-  public Integer getPos7180() {
-    return pos7180;
+  public Float getNetProfitMarginDelta() {
+    return netProfitMarginDelta;
   }
 
-  public void setPos7180(Integer pos7180) {
-    this.pos7180 = pos7180;
+  public void setNetProfitMarginDelta(Float netProfitMarginDelta) {
+    this.netProfitMarginDelta = netProfitMarginDelta;
   }
 
 
-  public MetricsInfo pos8190(Integer pos8190) {
-    this.pos8190 = pos8190;
+  public MetricsInfo earningsPerShare(Float earningsPerShare) {
+    this.earningsPerShare = earningsPerShare;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #81-90
-   * @return pos8190
+   * earnings per share value
+   * @return earningsPerShare
    */
   @javax.annotation.Nullable
-  public Integer getPos8190() {
-    return pos8190;
+  public Float getEarningsPerShare() {
+    return earningsPerShare;
   }
 
-  public void setPos8190(Integer pos8190) {
-    this.pos8190 = pos8190;
+  public void setEarningsPerShare(Float earningsPerShare) {
+    this.earningsPerShare = earningsPerShare;
   }
 
 
-  public MetricsInfo pos91100(Integer pos91100) {
-    this.pos91100 = pos91100;
+  public MetricsInfo earningsPerShareDelta(Float earningsPerShareDelta) {
+    this.earningsPerShareDelta = earningsPerShareDelta;
     return this;
   }
 
   /**
-   * number of organic SERPs where the domain ranks #91-100
-   * @return pos91100
+   * change in earnings per share
+   * @return earningsPerShareDelta
    */
   @javax.annotation.Nullable
-  public Integer getPos91100() {
-    return pos91100;
+  public Float getEarningsPerShareDelta() {
+    return earningsPerShareDelta;
   }
 
-  public void setPos91100(Integer pos91100) {
-    this.pos91100 = pos91100;
+  public void setEarningsPerShareDelta(Float earningsPerShareDelta) {
+    this.earningsPerShareDelta = earningsPerShareDelta;
   }
 
 
-  public MetricsInfo etv(Float etv) {
-    this.etv = etv;
+  public MetricsInfo ebitda(Float ebitda) {
+    this.ebitda = ebitda;
     return this;
   }
 
   /**
-   * estimated traffic volume estimated organic monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for learn more about how the metric is calculated in this help center article
-   * @return etv
+   * earnings before interest, taxes, deprecation, amortisation
+   * @return ebitda
    */
   @javax.annotation.Nullable
-  public Float getEtv() {
-    return etv;
+  public Float getEbitda() {
+    return ebitda;
   }
 
-  public void setEtv(Float etv) {
-    this.etv = etv;
+  public void setEbitda(Float ebitda) {
+    this.ebitda = ebitda;
   }
 
 
-  public MetricsInfo impressionsEtv(Float impressionsEtv) {
-    this.impressionsEtv = impressionsEtv;
+  public MetricsInfo ebitdaDelta(Float ebitdaDelta) {
+    this.ebitdaDelta = ebitdaDelta;
     return this;
   }
 
   /**
-   * estimated traffic volume based on impressions estimated organic monthly traffic to the domain calculated as the product of CTR (click-through-rate) and impressions values of all keywords the domain ranks for learn more about how the metric is calculated in this help center article
-   * @return impressionsEtv
+   * change in ebitda
+   * @return ebitdaDelta
    */
   @javax.annotation.Nullable
-  public Float getImpressionsEtv() {
-    return impressionsEtv;
+  public Float getEbitdaDelta() {
+    return ebitdaDelta;
   }
 
-  public void setImpressionsEtv(Float impressionsEtv) {
-    this.impressionsEtv = impressionsEtv;
+  public void setEbitdaDelta(Float ebitdaDelta) {
+    this.ebitdaDelta = ebitdaDelta;
   }
 
 
-  public MetricsInfo count(Long count) {
-    this.count = count;
+  public MetricsInfo effectiveTaxRate(Float effectiveTaxRate) {
+    this.effectiveTaxRate = effectiveTaxRate;
     return this;
   }
 
   /**
-   * total count of organic SERPs that contain the domain
-   * @return count
+   * effective tax rate value
+   * @return effectiveTaxRate
    */
   @javax.annotation.Nullable
-  public Long getCount() {
-    return count;
+  public Float getEffectiveTaxRate() {
+    return effectiveTaxRate;
   }
 
-  public void setCount(Long count) {
-    this.count = count;
+  public void setEffectiveTaxRate(Float effectiveTaxRate) {
+    this.effectiveTaxRate = effectiveTaxRate;
   }
 
 
-  public MetricsInfo estimatedPaidTrafficCost(Float estimatedPaidTrafficCost) {
-    this.estimatedPaidTrafficCost = estimatedPaidTrafficCost;
+  public MetricsInfo cashAndShortTermInvestments(Float cashAndShortTermInvestments) {
+    this.cashAndShortTermInvestments = cashAndShortTermInvestments;
     return this;
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid represents the estimated monthly cost of running ads (USD) for all keywords a domain ranks for the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search learn more about how the metric is calculated in this help center article
-   * @return estimatedPaidTrafficCost
+   * cash and short-term investments value
+   * @return cashAndShortTermInvestments
    */
   @javax.annotation.Nullable
-  public Float getEstimatedPaidTrafficCost() {
-    return estimatedPaidTrafficCost;
+  public Float getCashAndShortTermInvestments() {
+    return cashAndShortTermInvestments;
   }
 
-  public void setEstimatedPaidTrafficCost(Float estimatedPaidTrafficCost) {
-    this.estimatedPaidTrafficCost = estimatedPaidTrafficCost;
+  public void setCashAndShortTermInvestments(Float cashAndShortTermInvestments) {
+    this.cashAndShortTermInvestments = cashAndShortTermInvestments;
   }
 
 
-  public MetricsInfo isNew(Long isNew) {
-    this.isNew = isNew;
+  public MetricsInfo cashAndShortTermInvestmentsDelta(Float cashAndShortTermInvestmentsDelta) {
+    this.cashAndShortTermInvestmentsDelta = cashAndShortTermInvestmentsDelta;
     return this;
   }
 
   /**
-   * number of new ranked elements indicates how many new ranked elements were found for this domain
-   * @return isNew
+   * change in cash and short-term investments
+   * @return cashAndShortTermInvestmentsDelta
    */
   @javax.annotation.Nullable
-  public Long getIsNew() {
-    return isNew;
+  public Float getCashAndShortTermInvestmentsDelta() {
+    return cashAndShortTermInvestmentsDelta;
   }
 
-  public void setIsNew(Long isNew) {
-    this.isNew = isNew;
+  public void setCashAndShortTermInvestmentsDelta(Float cashAndShortTermInvestmentsDelta) {
+    this.cashAndShortTermInvestmentsDelta = cashAndShortTermInvestmentsDelta;
   }
 
 
-  public MetricsInfo isUp(Long isUp) {
-    this.isUp = isUp;
+  public MetricsInfo totalAssets(Float totalAssets) {
+    this.totalAssets = totalAssets;
     return this;
   }
 
   /**
-   * rank went up indicates how many ranked elements of this domain went up in Google Search
-   * @return isUp
+   * total assets value
+   * @return totalAssets
    */
   @javax.annotation.Nullable
-  public Long getIsUp() {
-    return isUp;
+  public Float getTotalAssets() {
+    return totalAssets;
   }
 
-  public void setIsUp(Long isUp) {
-    this.isUp = isUp;
+  public void setTotalAssets(Float totalAssets) {
+    this.totalAssets = totalAssets;
   }
 
 
-  public MetricsInfo isDown(Long isDown) {
-    this.isDown = isDown;
+  public MetricsInfo totalAssetsDelta(Float totalAssetsDelta) {
+    this.totalAssetsDelta = totalAssetsDelta;
     return this;
   }
 
   /**
-   * rank went down indicates how many ranked elements of this domain went down in Google Search
-   * @return isDown
+   * change in total assets
+   * @return totalAssetsDelta
    */
   @javax.annotation.Nullable
-  public Long getIsDown() {
-    return isDown;
+  public Float getTotalAssetsDelta() {
+    return totalAssetsDelta;
   }
 
-  public void setIsDown(Long isDown) {
-    this.isDown = isDown;
+  public void setTotalAssetsDelta(Float totalAssetsDelta) {
+    this.totalAssetsDelta = totalAssetsDelta;
   }
 
 
-  public MetricsInfo isLost(Long isLost) {
-    this.isLost = isLost;
+  public MetricsInfo totalLiabilities(Float totalLiabilities) {
+    this.totalLiabilities = totalLiabilities;
     return this;
   }
 
   /**
-   * lost ranked elements indicates how many ranked elements of this domain were previously presented in SERPs, but weren’t found during the last check
-   * @return isLost
+   * total liabilities value
+   * @return totalLiabilities
    */
   @javax.annotation.Nullable
-  public Long getIsLost() {
-    return isLost;
+  public Float getTotalLiabilities() {
+    return totalLiabilities;
   }
 
-  public void setIsLost(Long isLost) {
-    this.isLost = isLost;
+  public void setTotalLiabilities(Float totalLiabilities) {
+    this.totalLiabilities = totalLiabilities;
+  }
+
+
+  public MetricsInfo totalLiabilitiesDelta(Float totalLiabilitiesDelta) {
+    this.totalLiabilitiesDelta = totalLiabilitiesDelta;
+    return this;
+  }
+
+  /**
+   * change in total liabilities
+   * @return totalLiabilitiesDelta
+   */
+  @javax.annotation.Nullable
+  public Float getTotalLiabilitiesDelta() {
+    return totalLiabilitiesDelta;
+  }
+
+  public void setTotalLiabilitiesDelta(Float totalLiabilitiesDelta) {
+    this.totalLiabilitiesDelta = totalLiabilitiesDelta;
+  }
+
+
+  public MetricsInfo totalEquity(Float totalEquity) {
+    this.totalEquity = totalEquity;
+    return this;
+  }
+
+  /**
+   * total equity value
+   * @return totalEquity
+   */
+  @javax.annotation.Nullable
+  public Float getTotalEquity() {
+    return totalEquity;
+  }
+
+  public void setTotalEquity(Float totalEquity) {
+    this.totalEquity = totalEquity;
+  }
+
+
+  public MetricsInfo sharesOutstanding(Float sharesOutstanding) {
+    this.sharesOutstanding = sharesOutstanding;
+    return this;
+  }
+
+  /**
+   * outstanding shares value
+   * @return sharesOutstanding
+   */
+  @javax.annotation.Nullable
+  public Float getSharesOutstanding() {
+    return sharesOutstanding;
+  }
+
+  public void setSharesOutstanding(Float sharesOutstanding) {
+    this.sharesOutstanding = sharesOutstanding;
+  }
+
+
+  public MetricsInfo priceToBook(Float priceToBook) {
+    this.priceToBook = priceToBook;
+    return this;
+  }
+
+  /**
+   * price to book
+   * @return priceToBook
+   */
+  @javax.annotation.Nullable
+  public Float getPriceToBook() {
+    return priceToBook;
+  }
+
+  public void setPriceToBook(Float priceToBook) {
+    this.priceToBook = priceToBook;
+  }
+
+
+  public MetricsInfo returnOnAssets(Float returnOnAssets) {
+    this.returnOnAssets = returnOnAssets;
+    return this;
+  }
+
+  /**
+   * return on assets
+   * @return returnOnAssets
+   */
+  @javax.annotation.Nullable
+  public Float getReturnOnAssets() {
+    return returnOnAssets;
+  }
+
+  public void setReturnOnAssets(Float returnOnAssets) {
+    this.returnOnAssets = returnOnAssets;
+  }
+
+
+  public MetricsInfo returnOnCapital(Float returnOnCapital) {
+    this.returnOnCapital = returnOnCapital;
+    return this;
+  }
+
+  /**
+   * return on capital
+   * @return returnOnCapital
+   */
+  @javax.annotation.Nullable
+  public Float getReturnOnCapital() {
+    return returnOnCapital;
+  }
+
+  public void setReturnOnCapital(Float returnOnCapital) {
+    this.returnOnCapital = returnOnCapital;
+  }
+
+
+  public MetricsInfo cashFromOperations(Float cashFromOperations) {
+    this.cashFromOperations = cashFromOperations;
+    return this;
+  }
+
+  /**
+   * cash from operations
+   * @return cashFromOperations
+   */
+  @javax.annotation.Nullable
+  public Float getCashFromOperations() {
+    return cashFromOperations;
+  }
+
+  public void setCashFromOperations(Float cashFromOperations) {
+    this.cashFromOperations = cashFromOperations;
+  }
+
+
+  public MetricsInfo cashFromOperationsDelta(Float cashFromOperationsDelta) {
+    this.cashFromOperationsDelta = cashFromOperationsDelta;
+    return this;
+  }
+
+  /**
+   * change in cash from operations
+   * @return cashFromOperationsDelta
+   */
+  @javax.annotation.Nullable
+  public Float getCashFromOperationsDelta() {
+    return cashFromOperationsDelta;
+  }
+
+  public void setCashFromOperationsDelta(Float cashFromOperationsDelta) {
+    this.cashFromOperationsDelta = cashFromOperationsDelta;
+  }
+
+
+  public MetricsInfo cashFromInvesting(Float cashFromInvesting) {
+    this.cashFromInvesting = cashFromInvesting;
+    return this;
+  }
+
+  /**
+   * cash from investing
+   * @return cashFromInvesting
+   */
+  @javax.annotation.Nullable
+  public Float getCashFromInvesting() {
+    return cashFromInvesting;
+  }
+
+  public void setCashFromInvesting(Float cashFromInvesting) {
+    this.cashFromInvesting = cashFromInvesting;
+  }
+
+
+  public MetricsInfo cashFromInvestingDelta(Float cashFromInvestingDelta) {
+    this.cashFromInvestingDelta = cashFromInvestingDelta;
+    return this;
+  }
+
+  /**
+   * change in cash from investing
+   * @return cashFromInvestingDelta
+   */
+  @javax.annotation.Nullable
+  public Float getCashFromInvestingDelta() {
+    return cashFromInvestingDelta;
+  }
+
+  public void setCashFromInvestingDelta(Float cashFromInvestingDelta) {
+    this.cashFromInvestingDelta = cashFromInvestingDelta;
+  }
+
+
+  public MetricsInfo cashFromFinancing(Float cashFromFinancing) {
+    this.cashFromFinancing = cashFromFinancing;
+    return this;
+  }
+
+  /**
+   * cash from financing/em&gt;
+   * @return cashFromFinancing
+   */
+  @javax.annotation.Nullable
+  public Float getCashFromFinancing() {
+    return cashFromFinancing;
+  }
+
+  public void setCashFromFinancing(Float cashFromFinancing) {
+    this.cashFromFinancing = cashFromFinancing;
+  }
+
+
+  public MetricsInfo cashFromFinancingDelta(Float cashFromFinancingDelta) {
+    this.cashFromFinancingDelta = cashFromFinancingDelta;
+    return this;
+  }
+
+  /**
+   * change in cash from financing
+   * @return cashFromFinancingDelta
+   */
+  @javax.annotation.Nullable
+  public Float getCashFromFinancingDelta() {
+    return cashFromFinancingDelta;
+  }
+
+  public void setCashFromFinancingDelta(Float cashFromFinancingDelta) {
+    this.cashFromFinancingDelta = cashFromFinancingDelta;
+  }
+
+
+  public MetricsInfo netChangeInCash(Float netChangeInCash) {
+    this.netChangeInCash = netChangeInCash;
+    return this;
+  }
+
+  /**
+   * net change in cash
+   * @return netChangeInCash
+   */
+  @javax.annotation.Nullable
+  public Float getNetChangeInCash() {
+    return netChangeInCash;
+  }
+
+  public void setNetChangeInCash(Float netChangeInCash) {
+    this.netChangeInCash = netChangeInCash;
+  }
+
+
+  public MetricsInfo netChangeInCashDelta(Float netChangeInCashDelta) {
+    this.netChangeInCashDelta = netChangeInCashDelta;
+    return this;
+  }
+
+  /**
+   * change in net change in cash
+   * @return netChangeInCashDelta
+   */
+  @javax.annotation.Nullable
+  public Float getNetChangeInCashDelta() {
+    return netChangeInCashDelta;
+  }
+
+  public void setNetChangeInCashDelta(Float netChangeInCashDelta) {
+    this.netChangeInCashDelta = netChangeInCashDelta;
+  }
+
+
+  public MetricsInfo freeCashFlow(Float freeCashFlow) {
+    this.freeCashFlow = freeCashFlow;
+    return this;
+  }
+
+  /**
+   * free cash flow value
+   * @return freeCashFlow
+   */
+  @javax.annotation.Nullable
+  public Float getFreeCashFlow() {
+    return freeCashFlow;
+  }
+
+  public void setFreeCashFlow(Float freeCashFlow) {
+    this.freeCashFlow = freeCashFlow;
+  }
+
+
+  public MetricsInfo freeCashFlowDelta(Float freeCashFlowDelta) {
+    this.freeCashFlowDelta = freeCashFlowDelta;
+    return this;
+  }
+
+  /**
+   * change in free cash flow
+   * @return freeCashFlowDelta
+   */
+  @javax.annotation.Nullable
+  public Float getFreeCashFlowDelta() {
+    return freeCashFlowDelta;
+  }
+
+  public void setFreeCashFlowDelta(Float freeCashFlowDelta) {
+    this.freeCashFlowDelta = freeCashFlowDelta;
   }
 
   /**
@@ -568,26 +936,42 @@ public class MetricsInfo {
       return false;
     }
     MetricsInfo metricsInfo = (MetricsInfo) o;
-    return Objects.equals(this.pos1, metricsInfo.pos1) &&
-        Objects.equals(this.pos23, metricsInfo.pos23) &&
-        Objects.equals(this.pos410, metricsInfo.pos410) &&
-        Objects.equals(this.pos1120, metricsInfo.pos1120) &&
-        Objects.equals(this.pos2130, metricsInfo.pos2130) &&
-        Objects.equals(this.pos3140, metricsInfo.pos3140) &&
-        Objects.equals(this.pos4150, metricsInfo.pos4150) &&
-        Objects.equals(this.pos5160, metricsInfo.pos5160) &&
-        Objects.equals(this.pos6170, metricsInfo.pos6170) &&
-        Objects.equals(this.pos7180, metricsInfo.pos7180) &&
-        Objects.equals(this.pos8190, metricsInfo.pos8190) &&
-        Objects.equals(this.pos91100, metricsInfo.pos91100) &&
-        Objects.equals(this.etv, metricsInfo.etv) &&
-        Objects.equals(this.impressionsEtv, metricsInfo.impressionsEtv) &&
-        Objects.equals(this.count, metricsInfo.count) &&
-        Objects.equals(this.estimatedPaidTrafficCost, metricsInfo.estimatedPaidTrafficCost) &&
-        Objects.equals(this.isNew, metricsInfo.isNew) &&
-        Objects.equals(this.isUp, metricsInfo.isUp) &&
-        Objects.equals(this.isDown, metricsInfo.isDown) &&
-        Objects.equals(this.isLost, metricsInfo.isLost)&&
+    return Objects.equals(this.type, metricsInfo.type) &&
+        Objects.equals(this.timestamp, metricsInfo.timestamp) &&
+        Objects.equals(this.revenue, metricsInfo.revenue) &&
+        Objects.equals(this.revenueDelta, metricsInfo.revenueDelta) &&
+        Objects.equals(this.operatingExpense, metricsInfo.operatingExpense) &&
+        Objects.equals(this.operatingExpenseDelta, metricsInfo.operatingExpenseDelta) &&
+        Objects.equals(this.netIncome, metricsInfo.netIncome) &&
+        Objects.equals(this.netIncomeDelta, metricsInfo.netIncomeDelta) &&
+        Objects.equals(this.netProfitMargin, metricsInfo.netProfitMargin) &&
+        Objects.equals(this.netProfitMarginDelta, metricsInfo.netProfitMarginDelta) &&
+        Objects.equals(this.earningsPerShare, metricsInfo.earningsPerShare) &&
+        Objects.equals(this.earningsPerShareDelta, metricsInfo.earningsPerShareDelta) &&
+        Objects.equals(this.ebitda, metricsInfo.ebitda) &&
+        Objects.equals(this.ebitdaDelta, metricsInfo.ebitdaDelta) &&
+        Objects.equals(this.effectiveTaxRate, metricsInfo.effectiveTaxRate) &&
+        Objects.equals(this.cashAndShortTermInvestments, metricsInfo.cashAndShortTermInvestments) &&
+        Objects.equals(this.cashAndShortTermInvestmentsDelta, metricsInfo.cashAndShortTermInvestmentsDelta) &&
+        Objects.equals(this.totalAssets, metricsInfo.totalAssets) &&
+        Objects.equals(this.totalAssetsDelta, metricsInfo.totalAssetsDelta) &&
+        Objects.equals(this.totalLiabilities, metricsInfo.totalLiabilities) &&
+        Objects.equals(this.totalLiabilitiesDelta, metricsInfo.totalLiabilitiesDelta) &&
+        Objects.equals(this.totalEquity, metricsInfo.totalEquity) &&
+        Objects.equals(this.sharesOutstanding, metricsInfo.sharesOutstanding) &&
+        Objects.equals(this.priceToBook, metricsInfo.priceToBook) &&
+        Objects.equals(this.returnOnAssets, metricsInfo.returnOnAssets) &&
+        Objects.equals(this.returnOnCapital, metricsInfo.returnOnCapital) &&
+        Objects.equals(this.cashFromOperations, metricsInfo.cashFromOperations) &&
+        Objects.equals(this.cashFromOperationsDelta, metricsInfo.cashFromOperationsDelta) &&
+        Objects.equals(this.cashFromInvesting, metricsInfo.cashFromInvesting) &&
+        Objects.equals(this.cashFromInvestingDelta, metricsInfo.cashFromInvestingDelta) &&
+        Objects.equals(this.cashFromFinancing, metricsInfo.cashFromFinancing) &&
+        Objects.equals(this.cashFromFinancingDelta, metricsInfo.cashFromFinancingDelta) &&
+        Objects.equals(this.netChangeInCash, metricsInfo.netChangeInCash) &&
+        Objects.equals(this.netChangeInCashDelta, metricsInfo.netChangeInCashDelta) &&
+        Objects.equals(this.freeCashFlow, metricsInfo.freeCashFlow) &&
+        Objects.equals(this.freeCashFlowDelta, metricsInfo.freeCashFlowDelta)&&
         Objects.equals(this.additionalProperties, metricsInfo.additionalProperties);
   }
 
@@ -597,7 +981,7 @@ public class MetricsInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(pos1, pos23, pos410, pos1120, pos2130, pos3140, pos4150, pos5160, pos6170, pos7180, pos8190, pos91100, etv, impressionsEtv, count, estimatedPaidTrafficCost, isNew, isUp, isDown, isLost, additionalProperties);
+    return Objects.hash(type, timestamp, revenue, revenueDelta, operatingExpense, operatingExpenseDelta, netIncome, netIncomeDelta, netProfitMargin, netProfitMarginDelta, earningsPerShare, earningsPerShareDelta, ebitda, ebitdaDelta, effectiveTaxRate, cashAndShortTermInvestments, cashAndShortTermInvestmentsDelta, totalAssets, totalAssetsDelta, totalLiabilities, totalLiabilitiesDelta, totalEquity, sharesOutstanding, priceToBook, returnOnAssets, returnOnCapital, cashFromOperations, cashFromOperationsDelta, cashFromInvesting, cashFromInvestingDelta, cashFromFinancing, cashFromFinancingDelta, netChangeInCash, netChangeInCashDelta, freeCashFlow, freeCashFlowDelta, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -611,26 +995,42 @@ public class MetricsInfo {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class MetricsInfo {\n");
-    sb.append("    pos1: ").append(toIndentedString(pos1)).append("\n");
-    sb.append("    pos23: ").append(toIndentedString(pos23)).append("\n");
-    sb.append("    pos410: ").append(toIndentedString(pos410)).append("\n");
-    sb.append("    pos1120: ").append(toIndentedString(pos1120)).append("\n");
-    sb.append("    pos2130: ").append(toIndentedString(pos2130)).append("\n");
-    sb.append("    pos3140: ").append(toIndentedString(pos3140)).append("\n");
-    sb.append("    pos4150: ").append(toIndentedString(pos4150)).append("\n");
-    sb.append("    pos5160: ").append(toIndentedString(pos5160)).append("\n");
-    sb.append("    pos6170: ").append(toIndentedString(pos6170)).append("\n");
-    sb.append("    pos7180: ").append(toIndentedString(pos7180)).append("\n");
-    sb.append("    pos8190: ").append(toIndentedString(pos8190)).append("\n");
-    sb.append("    pos91100: ").append(toIndentedString(pos91100)).append("\n");
-    sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
-    sb.append("    impressionsEtv: ").append(toIndentedString(impressionsEtv)).append("\n");
-    sb.append("    count: ").append(toIndentedString(count)).append("\n");
-    sb.append("    estimatedPaidTrafficCost: ").append(toIndentedString(estimatedPaidTrafficCost)).append("\n");
-    sb.append("    isNew: ").append(toIndentedString(isNew)).append("\n");
-    sb.append("    isUp: ").append(toIndentedString(isUp)).append("\n");
-    sb.append("    isDown: ").append(toIndentedString(isDown)).append("\n");
-    sb.append("    isLost: ").append(toIndentedString(isLost)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
+    sb.append("    revenue: ").append(toIndentedString(revenue)).append("\n");
+    sb.append("    revenueDelta: ").append(toIndentedString(revenueDelta)).append("\n");
+    sb.append("    operatingExpense: ").append(toIndentedString(operatingExpense)).append("\n");
+    sb.append("    operatingExpenseDelta: ").append(toIndentedString(operatingExpenseDelta)).append("\n");
+    sb.append("    netIncome: ").append(toIndentedString(netIncome)).append("\n");
+    sb.append("    netIncomeDelta: ").append(toIndentedString(netIncomeDelta)).append("\n");
+    sb.append("    netProfitMargin: ").append(toIndentedString(netProfitMargin)).append("\n");
+    sb.append("    netProfitMarginDelta: ").append(toIndentedString(netProfitMarginDelta)).append("\n");
+    sb.append("    earningsPerShare: ").append(toIndentedString(earningsPerShare)).append("\n");
+    sb.append("    earningsPerShareDelta: ").append(toIndentedString(earningsPerShareDelta)).append("\n");
+    sb.append("    ebitda: ").append(toIndentedString(ebitda)).append("\n");
+    sb.append("    ebitdaDelta: ").append(toIndentedString(ebitdaDelta)).append("\n");
+    sb.append("    effectiveTaxRate: ").append(toIndentedString(effectiveTaxRate)).append("\n");
+    sb.append("    cashAndShortTermInvestments: ").append(toIndentedString(cashAndShortTermInvestments)).append("\n");
+    sb.append("    cashAndShortTermInvestmentsDelta: ").append(toIndentedString(cashAndShortTermInvestmentsDelta)).append("\n");
+    sb.append("    totalAssets: ").append(toIndentedString(totalAssets)).append("\n");
+    sb.append("    totalAssetsDelta: ").append(toIndentedString(totalAssetsDelta)).append("\n");
+    sb.append("    totalLiabilities: ").append(toIndentedString(totalLiabilities)).append("\n");
+    sb.append("    totalLiabilitiesDelta: ").append(toIndentedString(totalLiabilitiesDelta)).append("\n");
+    sb.append("    totalEquity: ").append(toIndentedString(totalEquity)).append("\n");
+    sb.append("    sharesOutstanding: ").append(toIndentedString(sharesOutstanding)).append("\n");
+    sb.append("    priceToBook: ").append(toIndentedString(priceToBook)).append("\n");
+    sb.append("    returnOnAssets: ").append(toIndentedString(returnOnAssets)).append("\n");
+    sb.append("    returnOnCapital: ").append(toIndentedString(returnOnCapital)).append("\n");
+    sb.append("    cashFromOperations: ").append(toIndentedString(cashFromOperations)).append("\n");
+    sb.append("    cashFromOperationsDelta: ").append(toIndentedString(cashFromOperationsDelta)).append("\n");
+    sb.append("    cashFromInvesting: ").append(toIndentedString(cashFromInvesting)).append("\n");
+    sb.append("    cashFromInvestingDelta: ").append(toIndentedString(cashFromInvestingDelta)).append("\n");
+    sb.append("    cashFromFinancing: ").append(toIndentedString(cashFromFinancing)).append("\n");
+    sb.append("    cashFromFinancingDelta: ").append(toIndentedString(cashFromFinancingDelta)).append("\n");
+    sb.append("    netChangeInCash: ").append(toIndentedString(netChangeInCash)).append("\n");
+    sb.append("    netChangeInCashDelta: ").append(toIndentedString(netChangeInCashDelta)).append("\n");
+    sb.append("    freeCashFlow: ").append(toIndentedString(freeCashFlow)).append("\n");
+    sb.append("    freeCashFlowDelta: ").append(toIndentedString(freeCashFlowDelta)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -654,26 +1054,42 @@ public class MetricsInfo {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("pos_1");
-    openapiFields.add("pos_2_3");
-    openapiFields.add("pos_4_10");
-    openapiFields.add("pos_11_20");
-    openapiFields.add("pos_21_30");
-    openapiFields.add("pos_31_40");
-    openapiFields.add("pos_41_50");
-    openapiFields.add("pos_51_60");
-    openapiFields.add("pos_61_70");
-    openapiFields.add("pos_71_80");
-    openapiFields.add("pos_81_90");
-    openapiFields.add("pos_91_100");
-    openapiFields.add("etv");
-    openapiFields.add("impressions_etv");
-    openapiFields.add("count");
-    openapiFields.add("estimated_paid_traffic_cost");
-    openapiFields.add("is_new");
-    openapiFields.add("is_up");
-    openapiFields.add("is_down");
-    openapiFields.add("is_lost");
+    openapiFields.add("type");
+    openapiFields.add("timestamp");
+    openapiFields.add("revenue");
+    openapiFields.add("revenue_delta");
+    openapiFields.add("operating_expense");
+    openapiFields.add("operating_expense_delta");
+    openapiFields.add("net_income");
+    openapiFields.add("net_income_delta");
+    openapiFields.add("net_profit_margin");
+    openapiFields.add("net_profit_margin_delta");
+    openapiFields.add("earnings_per_share");
+    openapiFields.add("earnings_per_share_delta");
+    openapiFields.add("ebitda");
+    openapiFields.add("ebitda_delta");
+    openapiFields.add("effective_tax_rate");
+    openapiFields.add("cash_and_short_term_investments");
+    openapiFields.add("cash_and_short_term_investments_delta");
+    openapiFields.add("total_assets");
+    openapiFields.add("total_assets_delta");
+    openapiFields.add("total_liabilities");
+    openapiFields.add("total_liabilities_delta");
+    openapiFields.add("total_equity");
+    openapiFields.add("shares_outstanding");
+    openapiFields.add("price_to_book");
+    openapiFields.add("return_on_assets");
+    openapiFields.add("return_on_capital");
+    openapiFields.add("cash_from_operations");
+    openapiFields.add("cash_from_operations_delta");
+    openapiFields.add("cash_from_investing");
+    openapiFields.add("cash_from_investing_delta");
+    openapiFields.add("cash_from_financing");
+    openapiFields.add("cash_from_financing_delta");
+    openapiFields.add("net_change_in_cash");
+    openapiFields.add("net_change_in_cash_delta");
+    openapiFields.add("free_cash_flow");
+    openapiFields.add("free_cash_flow_delta");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -692,6 +1108,12 @@ public class MetricsInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
+      }
+      if ((jsonObj.get("timestamp") != null && !jsonObj.get("timestamp").isJsonNull()) && !jsonObj.get("timestamp").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `timestamp` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timestamp").toString()));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

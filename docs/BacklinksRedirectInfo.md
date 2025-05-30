@@ -1,0 +1,15 @@
+
+
+# BacklinksRedirectInfo
+
+
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**type** | **String** | type of element |  [optional] |
+|**statusCode** | **BigDecimal** | HTTP status code of the URL |  [optional] |
+|**url** | **String** | indirect link URL |  [optional] |
+
+
+

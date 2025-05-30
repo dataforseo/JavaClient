@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageLighthouseLiveJsonRequestInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageLighthouseLiveJsonRequestInfo {
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
@@ -167,7 +167,7 @@ public class OnPageLighthouseLiveJsonRequestInfo {
   }
 
   /**
-   * Lighthouse audits optional field audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition)   if you ignore this field, we will return data for all audits use this field to get data for specific audits you indicate here note that some audits do not belong to a specific category and are stand-alone page quality measurements in general, there can be several use cases: 1. if you ignore categories, you can use this field to get data for the specified audits only for example, if you ignore \&quot;categories\&quot; and specify \&quot;audits\&quot;: [\&quot;metrics/cumulative-layout-shift\&quot;,\&quot;metrics/largest-contentful-paint\&quot;,\&quot;metrics/total-blocking-time\&quot;], you will get data only for these audits 2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specified for example, if you specify \&quot;categories\&quot;: [\&quot;seo\&quot;] and \&quot;audits\&quot;: [\&quot;metrics/cumulative-layout-shift\&quot;,\&quot;metrics/largest-contentful-paint\&quot;,\&quot;metrics/total-blocking-time\&quot;], you will get only these audits under “performance” and all audits under “seo” you can get the full list of possible audits here
+   * Lighthouse audits optional field audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition);   if you ignore this field, we will return data for all audits; use this field to get data for specific audits you indicate here; Note: that some audits do not belong to a specific category and are stand-alone page quality measurements; in general, there can be several use cases: 1. if you ignore categories, you can use this field to get data for the specified audits only for example, if you ignore \&quot;categories\&quot; and specify \&quot;audits\&quot;: [\&quot;metrics/cumulative-layout-shift\&quot;,\&quot;metrics/largest-contentful-paint\&quot;,\&quot;metrics/total-blocking-time\&quot;], you will get data only for these audits 2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specified for example, if you specify \&quot;categories\&quot;: [\&quot;seo\&quot;] and \&quot;audits\&quot;: [\&quot;metrics/cumulative-layout-shift\&quot;,\&quot;metrics/largest-contentful-paint\&quot;,\&quot;metrics/total-blocking-time\&quot;], you will get only these audits under “performance” and all audits under “seo” you can get the full list of possible audits here
    * @return audits
    */
   @javax.annotation.Nullable

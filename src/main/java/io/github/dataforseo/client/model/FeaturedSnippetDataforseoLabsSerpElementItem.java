@@ -25,6 +25,7 @@ import io.github.dataforseo.client.model.RankChanges;
 import io.github.dataforseo.client.model.RankInfo;
 import io.github.dataforseo.client.model.Table;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -54,7 +55,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * FeaturedSnippetDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -99,6 +100,10 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   public static final String SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST = "estimated_paid_traffic_cost";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST)
   private Float estimatedPaidTrafficCost;
+
+  public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
+  @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
+  private Double clickstreamEtv;
 
   public static final String SERIALIZED_NAME_RANK_CHANGES = "rank_changes";
   @SerializedName(SERIALIZED_NAME_RANK_CHANGES)
@@ -324,6 +329,25 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
   }
 
 
+  public FeaturedSnippetDataforseoLabsSerpElementItem clickstreamEtv(Double clickstreamEtv) {
+    this.clickstreamEtv = clickstreamEtv;
+    return this;
+  }
+
+  /**
+   * estimated traffic volume based on clickstream data calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for to retrieve results for this field, the parameter include_clickstream_data must be set to true learn more about how the metric is calculated in this help center article
+   * @return clickstreamEtv
+   */
+  @javax.annotation.Nullable
+  public Double getClickstreamEtv() {
+    return clickstreamEtv;
+  }
+
+  public void setClickstreamEtv(Double clickstreamEtv) {
+    this.clickstreamEtv = clickstreamEtv;
+  }
+
+
   public FeaturedSnippetDataforseoLabsSerpElementItem rankChanges(RankChanges rankChanges) {
     this.rankChanges = rankChanges;
     return this;
@@ -446,6 +470,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
         Objects.equals(this.relativeUrl, featuredSnippetDataforseoLabsSerpElementItem.relativeUrl) &&
         Objects.equals(this.etv, featuredSnippetDataforseoLabsSerpElementItem.etv) &&
         Objects.equals(this.estimatedPaidTrafficCost, featuredSnippetDataforseoLabsSerpElementItem.estimatedPaidTrafficCost) &&
+        Objects.equals(this.clickstreamEtv, featuredSnippetDataforseoLabsSerpElementItem.clickstreamEtv) &&
         Objects.equals(this.rankChanges, featuredSnippetDataforseoLabsSerpElementItem.rankChanges) &&
         Objects.equals(this.backlinksInfo, featuredSnippetDataforseoLabsSerpElementItem.backlinksInfo) &&
         Objects.equals(this.rankInfo, featuredSnippetDataforseoLabsSerpElementItem.rankInfo)&&
@@ -459,7 +484,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, domain, title, featuredTitle, description, url, table, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, rankChanges, backlinksInfo, rankInfo, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, domain, title, featuredTitle, description, url, table, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -485,6 +510,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
     sb.append("    relativeUrl: ").append(toIndentedString(relativeUrl)).append("\n");
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
     sb.append("    estimatedPaidTrafficCost: ").append(toIndentedString(estimatedPaidTrafficCost)).append("\n");
+    sb.append("    clickstreamEtv: ").append(toIndentedString(clickstreamEtv)).append("\n");
     sb.append("    rankChanges: ").append(toIndentedString(rankChanges)).append("\n");
     sb.append("    backlinksInfo: ").append(toIndentedString(backlinksInfo)).append("\n");
     sb.append("    rankInfo: ").append(toIndentedString(rankInfo)).append("\n");
@@ -527,6 +553,7 @@ public class FeaturedSnippetDataforseoLabsSerpElementItem extends BaseDataforseo
     openapiFields.add("relative_url");
     openapiFields.add("etv");
     openapiFields.add("estimated_paid_traffic_cost");
+    openapiFields.add("clickstream_etv");
     openapiFields.add("rank_changes");
     openapiFields.add("backlinks_info");
     openapiFields.add("rank_info");

@@ -10,7 +10,7 @@
 |**domain** | **String** | domain of the business entity |  [optional] |
 |**title** | **String** | directory title can take the following values: At this place, Directory |  [optional] |
 |**url** | **String** | URL to view the menu |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 |**ratingDistribution** | **Map&lt;String, Integer&gt;** | the distribution of ratings of the business entity the object displays the number of 1-star to 5-star ratings, as reviewed by users |  [optional] |
 |**snippet** | **String** | additional information about the business entity |  [optional] |
 |**address** | **String** | address of the business entity |  [optional] |
@@ -18,13 +18,13 @@
 |**placeId** | **String** | unique place identifier place id of the local establishment featured in the element learn more about the identifier in this help center article |  [optional] |
 |**phone** | **String** | phone number of the business entity |  [optional] |
 |**mainImage** | **String** | URL of the main image featured in Google My Business profile |  [optional] |
-|**totalPhotos** | **Long** | total count of images featured in Google My Business profile |  [optional] |
+|**totalPhotos** | **String** | total count of images featured in Google My Business profile |  [optional] |
 |**category** | **String** | business category Google My Business general category that best describes the services provided by the business entity |  [optional] |
 |**additionalCategories** | **List&lt;String&gt;** | additional business categories additional Google My Business categories that describe the services provided by the business entity in more detail |  [optional] |
 |**priceLevel** | **String** | property price level can take values: inexpensive, moderate, expensive, very_expensive if there is no price level information, the value will be null |  [optional] |
-|**hotelRating** | **Integer** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
+|**hotelRating** | **String** | hotel class rating class ratings range between 1-5 stars, learn more if there is no hotel class rating information, the value will be null |  [optional] |
 |**categoryIds** | **List&lt;String&gt;** | global category IDs universal category IDs that do not change based on the selected country |  [optional] |
-|**workHours** | [**WorkHours**](WorkHours.md) |  |  [optional] |
+|**workHours** | [**BusinessWorkHoursInfo**](BusinessWorkHoursInfo.md) |  |  [optional] |
 |**featureId** | **String** | the unique identifier of the element in SERP learn more about the identifier in this help center article |  [optional] |
 |**cid** | **String** | google-defined client id unique id of a local establishment; can be used with Google Reviews API to get a full list of reviews learn more about the identifier in this help center article |  [optional] |
 |**latitude** | **Float** | latitude coordinate of the local establishments in google maps example: \&quot;latitude\&quot;: 51.584091 |  [optional] |

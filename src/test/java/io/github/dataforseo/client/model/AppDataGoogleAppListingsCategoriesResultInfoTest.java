@@ -39,19 +39,59 @@ public class AppDataGoogleAppListingsCategoriesResultInfoTest {
     }
 
     /**
-     * Test the property 'category'
+     * Test the property 'id'
      */
     @Test
-    public void categoryTest() {
-        // TODO: test category
+    public void idTest() {
+        // TODO: test id
     }
 
     /**
-     * Test the property 'count'
+     * Test the property 'se'
      */
     @Test
-    public void countTest() {
-        // TODO: test count
+    public void seTest() {
+        // TODO: test se
+    }
+
+    /**
+     * Test the property 'seType'
+     */
+    @Test
+    public void seTypeTest() {
+        // TODO: test seType
+    }
+
+    /**
+     * Test the property 'datePosted'
+     */
+    @Test
+    public void datePostedTest() {
+        // TODO: test datePosted
+    }
+
+    /**
+     * Test the property 'tag'
+     */
+    @Test
+    public void tagTest() {
+        // TODO: test tag
+    }
+
+    /**
+     * Test the property 'endpointAdvanced'
+     */
+    @Test
+    public void endpointAdvancedTest() {
+        // TODO: test endpointAdvanced
+    }
+
+    /**
+     * Test the property 'endpointHtml'
+     */
+    @Test
+    public void endpointHtmlTest() {
+        // TODO: test endpointHtml
     }
 
 }

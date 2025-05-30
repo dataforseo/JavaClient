@@ -20,8 +20,9 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.ContentRatingInfo;
-import io.github.dataforseo.client.model.SocialMetricsInfo;
+import io.github.dataforseo.client.model.Facebook;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AnalysisContentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AnalysisContentInfo {
   public static final String SERIALIZED_NAME_CONTENT_TYPE = "content_type";
   @SerializedName(SERIALIZED_NAME_CONTENT_TYPE)
@@ -75,7 +76,7 @@ public class AnalysisContentInfo {
 
   public static final String SERIALIZED_NAME_LEVEL = "level";
   @SerializedName(SERIALIZED_NAME_LEVEL)
-  private Integer level;
+  private BigDecimal level;
 
   public static final String SERIALIZED_NAME_AUTHOR = "author";
   @SerializedName(SERIALIZED_NAME_AUTHOR)
@@ -87,11 +88,11 @@ public class AnalysisContentInfo {
 
   public static final String SERIALIZED_NAME_SNIPPET_LENGTH = "snippet_length";
   @SerializedName(SERIALIZED_NAME_SNIPPET_LENGTH)
-  private Integer snippetLength;
+  private BigDecimal snippetLength;
 
   public static final String SERIALIZED_NAME_SOCIAL_METRICS = "social_metrics";
   @SerializedName(SERIALIZED_NAME_SOCIAL_METRICS)
-  private List<SocialMetricsInfo> socialMetrics;
+  private List<Facebook> socialMetrics;
 
   public static final String SERIALIZED_NAME_HIGHLIGHTED_TEXT = "highlighted_text";
   @SerializedName(SERIALIZED_NAME_HIGHLIGHTED_TEXT)
@@ -111,7 +112,7 @@ public class AnalysisContentInfo {
 
   public static final String SERIALIZED_NAME_TEXT_CATEGORY = "text_category";
   @SerializedName(SERIALIZED_NAME_TEXT_CATEGORY)
-  private List<Integer> textCategory;
+  private List<BigDecimal> textCategory;
 
   public static final String SERIALIZED_NAME_DATE_PUBLISHED = "date_published";
   @SerializedName(SERIALIZED_NAME_DATE_PUBLISHED)
@@ -119,7 +120,7 @@ public class AnalysisContentInfo {
 
   public static final String SERIALIZED_NAME_CONTENT_QUALITY_SCORE = "content_quality_score";
   @SerializedName(SERIALIZED_NAME_CONTENT_QUALITY_SCORE)
-  private Integer contentQualityScore;
+  private BigDecimal contentQualityScore;
 
   public static final String SERIALIZED_NAME_SEMANTIC_LOCATION = "semantic_location";
   @SerializedName(SERIALIZED_NAME_SEMANTIC_LOCATION)
@@ -212,7 +213,7 @@ public class AnalysisContentInfo {
   }
 
 
-  public AnalysisContentInfo level(Integer level) {
+  public AnalysisContentInfo level(BigDecimal level) {
     this.level = level;
     return this;
   }
@@ -222,11 +223,11 @@ public class AnalysisContentInfo {
    * @return level
    */
   @javax.annotation.Nullable
-  public Integer getLevel() {
+  public BigDecimal getLevel() {
     return level;
   }
 
-  public void setLevel(Integer level) {
+  public void setLevel(BigDecimal level) {
     this.level = level;
   }
 
@@ -269,7 +270,7 @@ public class AnalysisContentInfo {
   }
 
 
-  public AnalysisContentInfo snippetLength(Integer snippetLength) {
+  public AnalysisContentInfo snippetLength(BigDecimal snippetLength) {
     this.snippetLength = snippetLength;
     return this;
   }
@@ -279,21 +280,21 @@ public class AnalysisContentInfo {
    * @return snippetLength
    */
   @javax.annotation.Nullable
-  public Integer getSnippetLength() {
+  public BigDecimal getSnippetLength() {
     return snippetLength;
   }
 
-  public void setSnippetLength(Integer snippetLength) {
+  public void setSnippetLength(BigDecimal snippetLength) {
     this.snippetLength = snippetLength;
   }
 
 
-  public AnalysisContentInfo socialMetrics(List<SocialMetricsInfo> socialMetrics) {
+  public AnalysisContentInfo socialMetrics(List<Facebook> socialMetrics) {
     this.socialMetrics = socialMetrics;
     return this;
   }
 
-  public AnalysisContentInfo addSocialMetricsItem(SocialMetricsInfo socialMetricsItem) {
+  public AnalysisContentInfo addSocialMetricsItem(Facebook socialMetricsItem) {
     if (this.socialMetrics == null) {
       this.socialMetrics = new ArrayList<>();
     }
@@ -306,11 +307,11 @@ public class AnalysisContentInfo {
    * @return socialMetrics
    */
   @javax.annotation.Nullable
-  public List<SocialMetricsInfo> getSocialMetrics() {
+  public List<Facebook> getSocialMetrics() {
     return socialMetrics;
   }
 
-  public void setSocialMetrics(List<SocialMetricsInfo> socialMetrics) {
+  public void setSocialMetrics(List<Facebook> socialMetrics) {
     this.socialMetrics = socialMetrics;
   }
 
@@ -407,12 +408,12 @@ public class AnalysisContentInfo {
   }
 
 
-  public AnalysisContentInfo textCategory(List<Integer> textCategory) {
+  public AnalysisContentInfo textCategory(List<BigDecimal> textCategory) {
     this.textCategory = textCategory;
     return this;
   }
 
-  public AnalysisContentInfo addTextCategoryItem(Integer textCategoryItem) {
+  public AnalysisContentInfo addTextCategoryItem(BigDecimal textCategoryItem) {
     if (this.textCategory == null) {
       this.textCategory = new ArrayList<>();
     }
@@ -425,11 +426,11 @@ public class AnalysisContentInfo {
    * @return textCategory
    */
   @javax.annotation.Nullable
-  public List<Integer> getTextCategory() {
+  public List<BigDecimal> getTextCategory() {
     return textCategory;
   }
 
-  public void setTextCategory(List<Integer> textCategory) {
+  public void setTextCategory(List<BigDecimal> textCategory) {
     this.textCategory = textCategory;
   }
 
@@ -453,7 +454,7 @@ public class AnalysisContentInfo {
   }
 
 
-  public AnalysisContentInfo contentQualityScore(Integer contentQualityScore) {
+  public AnalysisContentInfo contentQualityScore(BigDecimal contentQualityScore) {
     this.contentQualityScore = contentQualityScore;
     return this;
   }
@@ -463,11 +464,11 @@ public class AnalysisContentInfo {
    * @return contentQualityScore
    */
   @javax.annotation.Nullable
-  public Integer getContentQualityScore() {
+  public BigDecimal getContentQualityScore() {
     return contentQualityScore;
   }
 
-  public void setContentQualityScore(Integer contentQualityScore) {
+  public void setContentQualityScore(BigDecimal contentQualityScore) {
     this.contentQualityScore = contentQualityScore;
   }
 
@@ -732,7 +733,7 @@ public class AnalysisContentInfo {
 
           // validate the optional field `social_metrics` (array)
           for (int i = 0; i < jsonArraysocialMetrics.size(); i++) {
-            SocialMetricsInfo.validateJsonElement(jsonArraysocialMetrics.get(i));
+            Facebook.validateJsonElement(jsonArraysocialMetrics.get(i));
           };
         }
       }

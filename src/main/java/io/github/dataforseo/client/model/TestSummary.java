@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,28 +50,28 @@ import io.github.dataforseo.client.JSON;
 /**
  * TestSummary
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class TestSummary {
   public static final String SERIALIZED_NAME_FATAL = "fatal";
   @SerializedName(SERIALIZED_NAME_FATAL)
-  private Integer fatal;
+  private BigDecimal fatal;
 
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)
-  private Integer error;
+  private BigDecimal error;
 
   public static final String SERIALIZED_NAME_WARNING = "warning";
   @SerializedName(SERIALIZED_NAME_WARNING)
-  private Integer warning;
+  private BigDecimal warning;
 
   public static final String SERIALIZED_NAME_INFO = "info";
   @SerializedName(SERIALIZED_NAME_INFO)
-  private Integer info;
+  private BigDecimal info;
 
   public TestSummary() {
   }
 
-  public TestSummary fatal(Integer fatal) {
+  public TestSummary fatal(BigDecimal fatal) {
     this.fatal = fatal;
     return this;
   }
@@ -80,16 +81,16 @@ public class TestSummary {
    * @return fatal
    */
   @javax.annotation.Nullable
-  public Integer getFatal() {
+  public BigDecimal getFatal() {
     return fatal;
   }
 
-  public void setFatal(Integer fatal) {
+  public void setFatal(BigDecimal fatal) {
     this.fatal = fatal;
   }
 
 
-  public TestSummary error(Integer error) {
+  public TestSummary error(BigDecimal error) {
     this.error = error;
     return this;
   }
@@ -99,16 +100,16 @@ public class TestSummary {
    * @return error
    */
   @javax.annotation.Nullable
-  public Integer getError() {
+  public BigDecimal getError() {
     return error;
   }
 
-  public void setError(Integer error) {
+  public void setError(BigDecimal error) {
     this.error = error;
   }
 
 
-  public TestSummary warning(Integer warning) {
+  public TestSummary warning(BigDecimal warning) {
     this.warning = warning;
     return this;
   }
@@ -118,16 +119,16 @@ public class TestSummary {
    * @return warning
    */
   @javax.annotation.Nullable
-  public Integer getWarning() {
+  public BigDecimal getWarning() {
     return warning;
   }
 
-  public void setWarning(Integer warning) {
+  public void setWarning(BigDecimal warning) {
     this.warning = warning;
   }
 
 
-  public TestSummary info(Integer info) {
+  public TestSummary info(BigDecimal info) {
     this.info = info;
     return this;
   }
@@ -137,11 +138,11 @@ public class TestSummary {
    * @return info
    */
   @javax.annotation.Nullable
-  public Integer getInfo() {
+  public BigDecimal getInfo() {
     return info;
   }
 
-  public void setInfo(Integer info) {
+  public void setInfo(BigDecimal info) {
     this.info = info;
   }
 

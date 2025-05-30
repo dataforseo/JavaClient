@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,11 +50,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsCategoriesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsCategoriesResultInfo {
   public static final String SERIALIZED_NAME_CATEGORY_CODE = "category_code";
   @SerializedName(SERIALIZED_NAME_CATEGORY_CODE)
-  private Integer categoryCode;
+  private BigDecimal categoryCode;
 
   public static final String SERIALIZED_NAME_CATEGORY_NAME = "category_name";
   @SerializedName(SERIALIZED_NAME_CATEGORY_NAME)
@@ -61,12 +62,12 @@ public class DataforseoLabsCategoriesResultInfo {
 
   public static final String SERIALIZED_NAME_CATEGORY_CODE_PARENT = "category_code_parent";
   @SerializedName(SERIALIZED_NAME_CATEGORY_CODE_PARENT)
-  private Integer categoryCodeParent;
+  private BigDecimal categoryCodeParent;
 
   public DataforseoLabsCategoriesResultInfo() {
   }
 
-  public DataforseoLabsCategoriesResultInfo categoryCode(Integer categoryCode) {
+  public DataforseoLabsCategoriesResultInfo categoryCode(BigDecimal categoryCode) {
     this.categoryCode = categoryCode;
     return this;
   }
@@ -76,11 +77,11 @@ public class DataforseoLabsCategoriesResultInfo {
    * @return categoryCode
    */
   @javax.annotation.Nullable
-  public Integer getCategoryCode() {
+  public BigDecimal getCategoryCode() {
     return categoryCode;
   }
 
-  public void setCategoryCode(Integer categoryCode) {
+  public void setCategoryCode(BigDecimal categoryCode) {
     this.categoryCode = categoryCode;
   }
 
@@ -104,7 +105,7 @@ public class DataforseoLabsCategoriesResultInfo {
   }
 
 
-  public DataforseoLabsCategoriesResultInfo categoryCodeParent(Integer categoryCodeParent) {
+  public DataforseoLabsCategoriesResultInfo categoryCodeParent(BigDecimal categoryCodeParent) {
     this.categoryCodeParent = categoryCodeParent;
     return this;
   }
@@ -114,11 +115,11 @@ public class DataforseoLabsCategoriesResultInfo {
    * @return categoryCodeParent
    */
   @javax.annotation.Nullable
-  public Integer getCategoryCodeParent() {
+  public BigDecimal getCategoryCodeParent() {
     return categoryCodeParent;
   }
 
-  public void setCategoryCodeParent(Integer categoryCodeParent) {
+  public void setCategoryCodeParent(BigDecimal categoryCodeParent) {
     this.categoryCodeParent = categoryCodeParent;
   }
 

@@ -51,7 +51,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPageLighthouseAuditsResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPageLighthouseAuditsResultInfo {
   public static final String SERIALIZED_NAME_AUDITS = "audits";
   @SerializedName(SERIALIZED_NAME_AUDITS)
@@ -74,7 +74,7 @@ public class OnPageLighthouseAuditsResultInfo {
   }
 
   /**
-   * the list of available lighthouse audits an array containing the titles of available audits Note: the titles can change depending on if the audit passed or failed and may contain markdown code
+   * the list of available lighthouse audits an array containing the titles of available audits; Note: the titles can change depending on if the audit passed or failed and may contain markdown code; Note #2: if you’re using the audit that contains a slash (/) in its name, search by the last word after the slash
    * @return audits
    */
   @javax.annotation.Nullable

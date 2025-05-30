@@ -19,9 +19,9 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.KeywordAnnotations;
 import io.github.dataforseo.client.model.MonthlySearches;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,15 +53,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
 
+  public static final String SERIALIZED_NAME_SPELL = "spell";
+  @SerializedName(SERIALIZED_NAME_SPELL)
+  private String spell;
+
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -77,11 +81,11 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
 
   public static final String SERIALIZED_NAME_COMPETITION_INDEX = "competition_index";
   @SerializedName(SERIALIZED_NAME_COMPETITION_INDEX)
-  private Integer competitionIndex;
+  private BigDecimal competitionIndex;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public static final String SERIALIZED_NAME_LOW_TOP_OF_PAGE_BID = "low_top_of_page_bid";
   @SerializedName(SERIALIZED_NAME_LOW_TOP_OF_PAGE_BID)
@@ -98,10 +102,6 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
   public static final String SERIALIZED_NAME_MONTHLY_SEARCHES = "monthly_searches";
   @SerializedName(SERIALIZED_NAME_MONTHLY_SEARCHES)
   private List<MonthlySearches> monthlySearches;
-
-  public static final String SERIALIZED_NAME_KEYWORD_ANNOTATIONS = "keyword_annotations";
-  @SerializedName(SERIALIZED_NAME_KEYWORD_ANNOTATIONS)
-  private KeywordAnnotations keywordAnnotations;
 
   public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo() {
   }
@@ -125,7 +125,26 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
   }
 
 
-  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo locationCode(Integer locationCode) {
+  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo spell(String spell) {
+    this.spell = spell;
+    return this;
+  }
+
+  /**
+   * Get spell
+   * @return spell
+   */
+  @javax.annotation.Nullable
+  public String getSpell() {
+    return spell;
+  }
+
+  public void setSpell(String spell) {
+    this.spell = spell;
+  }
+
+
+  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -135,11 +154,11 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -201,7 +220,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
   }
 
 
-  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo competitionIndex(Integer competitionIndex) {
+  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo competitionIndex(BigDecimal competitionIndex) {
     this.competitionIndex = competitionIndex;
     return this;
   }
@@ -211,16 +230,16 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
    * @return competitionIndex
    */
   @javax.annotation.Nullable
-  public Integer getCompetitionIndex() {
+  public BigDecimal getCompetitionIndex() {
     return competitionIndex;
   }
 
-  public void setCompetitionIndex(Integer competitionIndex) {
+  public void setCompetitionIndex(BigDecimal competitionIndex) {
     this.competitionIndex = competitionIndex;
   }
 
 
-  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo searchVolume(Long searchVolume) {
+  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -230,11 +249,11 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 
@@ -322,25 +341,6 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
     this.monthlySearches = monthlySearches;
   }
 
-
-  public KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo keywordAnnotations(KeywordAnnotations keywordAnnotations) {
-    this.keywordAnnotations = keywordAnnotations;
-    return this;
-  }
-
-  /**
-   * Get keywordAnnotations
-   * @return keywordAnnotations
-   */
-  @javax.annotation.Nullable
-  public KeywordAnnotations getKeywordAnnotations() {
-    return keywordAnnotations;
-  }
-
-  public void setKeywordAnnotations(KeywordAnnotations keywordAnnotations) {
-    this.keywordAnnotations = keywordAnnotations;
-  }
-
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -397,6 +397,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
     }
     KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo = (KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo) o;
     return Objects.equals(this.keyword, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.keyword) &&
+        Objects.equals(this.spell, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.spell) &&
         Objects.equals(this.locationCode, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.locationCode) &&
         Objects.equals(this.languageCode, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.languageCode) &&
         Objects.equals(this.searchPartners, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.searchPartners) &&
@@ -406,8 +407,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
         Objects.equals(this.lowTopOfPageBid, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.lowTopOfPageBid) &&
         Objects.equals(this.highTopOfPageBid, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.highTopOfPageBid) &&
         Objects.equals(this.cpc, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.cpc) &&
-        Objects.equals(this.monthlySearches, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.monthlySearches) &&
-        Objects.equals(this.keywordAnnotations, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.keywordAnnotations)&&
+        Objects.equals(this.monthlySearches, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.monthlySearches)&&
         Objects.equals(this.additionalProperties, keywordsDataGoogleAdsKeywordsForSiteLiveResultInfo.additionalProperties);
   }
 
@@ -417,7 +417,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(keyword, locationCode, languageCode, searchPartners, competition, competitionIndex, searchVolume, lowTopOfPageBid, highTopOfPageBid, cpc, monthlySearches, keywordAnnotations, additionalProperties);
+    return Objects.hash(keyword, spell, locationCode, languageCode, searchPartners, competition, competitionIndex, searchVolume, lowTopOfPageBid, highTopOfPageBid, cpc, monthlySearches, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -432,6 +432,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
+    sb.append("    spell: ").append(toIndentedString(spell)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    searchPartners: ").append(toIndentedString(searchPartners)).append("\n");
@@ -442,7 +443,6 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
     sb.append("    highTopOfPageBid: ").append(toIndentedString(highTopOfPageBid)).append("\n");
     sb.append("    cpc: ").append(toIndentedString(cpc)).append("\n");
     sb.append("    monthlySearches: ").append(toIndentedString(monthlySearches)).append("\n");
-    sb.append("    keywordAnnotations: ").append(toIndentedString(keywordAnnotations)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -467,6 +467,7 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("keyword");
+    openapiFields.add("spell");
     openapiFields.add("location_code");
     openapiFields.add("language_code");
     openapiFields.add("search_partners");
@@ -477,7 +478,6 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
     openapiFields.add("high_top_of_page_bid");
     openapiFields.add("cpc");
     openapiFields.add("monthly_searches");
-    openapiFields.add("keyword_annotations");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -499,6 +499,9 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
       if ((jsonObj.get("keyword") != null && !jsonObj.get("keyword").isJsonNull()) && !jsonObj.get("keyword").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `keyword` to be a primitive type in the JSON string but got `%s`", jsonObj.get("keyword").toString()));
       }
+      if ((jsonObj.get("spell") != null && !jsonObj.get("spell").isJsonNull()) && !jsonObj.get("spell").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `spell` to be a primitive type in the JSON string but got `%s`", jsonObj.get("spell").toString()));
+      }
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));
       }
@@ -518,10 +521,6 @@ public class KeywordsDataGoogleAdsKeywordsForSiteLiveResultInfo {
             MonthlySearches.validateJsonElement(jsonArraymonthlySearches.get(i));
           };
         }
-      }
-      // validate the optional field `keyword_annotations`
-      if (jsonObj.get("keyword_annotations") != null && !jsonObj.get("keyword_annotations").isJsonNull()) {
-        KeywordAnnotations.validateJsonElement(jsonObj.get("keyword_annotations"));
       }
   }
 

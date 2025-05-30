@@ -19,9 +19,9 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.EstCInfo;
-import io.github.dataforseo.client.model.EstInfo;
+import io.github.dataforseo.client.model.AudienceEstimationInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,31 +51,31 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataBingAudienceEstimationLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataBingAudienceEstimationLiveResultInfo {
   public static final String SERIALIZED_NAME_EST_IMPRESSIONS = "est_impressions";
   @SerializedName(SERIALIZED_NAME_EST_IMPRESSIONS)
-  private EstInfo estImpressions;
+  private AudienceEstimationInfo estImpressions;
 
   public static final String SERIALIZED_NAME_EST_AUDIENCE_SIZE = "est_audience_size";
   @SerializedName(SERIALIZED_NAME_EST_AUDIENCE_SIZE)
-  private EstInfo estAudienceSize;
+  private AudienceEstimationInfo estAudienceSize;
 
   public static final String SERIALIZED_NAME_EST_CLICKS = "est_clicks";
   @SerializedName(SERIALIZED_NAME_EST_CLICKS)
-  private EstInfo estClicks;
+  private AudienceEstimationInfo estClicks;
 
   public static final String SERIALIZED_NAME_EST_SPEND = "est_spend";
   @SerializedName(SERIALIZED_NAME_EST_SPEND)
-  private EstInfo estSpend;
+  private AudienceEstimationInfo estSpend;
 
   public static final String SERIALIZED_NAME_EST_COST_PER_EVENT = "est_cost_per_event";
   @SerializedName(SERIALIZED_NAME_EST_COST_PER_EVENT)
-  private EstCInfo estCostPerEvent;
+  private AudienceEstimationInfo estCostPerEvent;
 
   public static final String SERIALIZED_NAME_EST_CTR = "est_ctr";
   @SerializedName(SERIALIZED_NAME_EST_CTR)
-  private EstCInfo estCtr;
+  private AudienceEstimationInfo estCtr;
 
   public static final String SERIALIZED_NAME_SUGGESTED_BID = "suggested_bid";
   @SerializedName(SERIALIZED_NAME_SUGGESTED_BID)
@@ -87,11 +87,11 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
 
   public static final String SERIALIZED_NAME_EVENTS_LOST_TO_BID = "events_lost_to_bid";
   @SerializedName(SERIALIZED_NAME_EVENTS_LOST_TO_BID)
-  private Long eventsLostToBid;
+  private BigDecimal eventsLostToBid;
 
   public static final String SERIALIZED_NAME_EVENTS_LOST_TO_BUDGET = "events_lost_to_budget";
   @SerializedName(SERIALIZED_NAME_EVENTS_LOST_TO_BUDGET)
-  private Integer eventsLostToBudget;
+  private BigDecimal eventsLostToBudget;
 
   public static final String SERIALIZED_NAME_EST_REACH_AUDIENCE_SIZE = "est_reach_audience_size";
   @SerializedName(SERIALIZED_NAME_EST_REACH_AUDIENCE_SIZE)
@@ -108,7 +108,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
   public KeywordsDataBingAudienceEstimationLiveResultInfo() {
   }
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo estImpressions(EstInfo estImpressions) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo estImpressions(AudienceEstimationInfo estImpressions) {
     this.estImpressions = estImpressions;
     return this;
   }
@@ -118,16 +118,16 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return estImpressions
    */
   @javax.annotation.Nullable
-  public EstInfo getEstImpressions() {
+  public AudienceEstimationInfo getEstImpressions() {
     return estImpressions;
   }
 
-  public void setEstImpressions(EstInfo estImpressions) {
+  public void setEstImpressions(AudienceEstimationInfo estImpressions) {
     this.estImpressions = estImpressions;
   }
 
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo estAudienceSize(EstInfo estAudienceSize) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo estAudienceSize(AudienceEstimationInfo estAudienceSize) {
     this.estAudienceSize = estAudienceSize;
     return this;
   }
@@ -137,16 +137,16 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return estAudienceSize
    */
   @javax.annotation.Nullable
-  public EstInfo getEstAudienceSize() {
+  public AudienceEstimationInfo getEstAudienceSize() {
     return estAudienceSize;
   }
 
-  public void setEstAudienceSize(EstInfo estAudienceSize) {
+  public void setEstAudienceSize(AudienceEstimationInfo estAudienceSize) {
     this.estAudienceSize = estAudienceSize;
   }
 
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo estClicks(EstInfo estClicks) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo estClicks(AudienceEstimationInfo estClicks) {
     this.estClicks = estClicks;
     return this;
   }
@@ -156,16 +156,16 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return estClicks
    */
   @javax.annotation.Nullable
-  public EstInfo getEstClicks() {
+  public AudienceEstimationInfo getEstClicks() {
     return estClicks;
   }
 
-  public void setEstClicks(EstInfo estClicks) {
+  public void setEstClicks(AudienceEstimationInfo estClicks) {
     this.estClicks = estClicks;
   }
 
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo estSpend(EstInfo estSpend) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo estSpend(AudienceEstimationInfo estSpend) {
     this.estSpend = estSpend;
     return this;
   }
@@ -175,16 +175,16 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return estSpend
    */
   @javax.annotation.Nullable
-  public EstInfo getEstSpend() {
+  public AudienceEstimationInfo getEstSpend() {
     return estSpend;
   }
 
-  public void setEstSpend(EstInfo estSpend) {
+  public void setEstSpend(AudienceEstimationInfo estSpend) {
     this.estSpend = estSpend;
   }
 
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo estCostPerEvent(EstCInfo estCostPerEvent) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo estCostPerEvent(AudienceEstimationInfo estCostPerEvent) {
     this.estCostPerEvent = estCostPerEvent;
     return this;
   }
@@ -194,16 +194,16 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return estCostPerEvent
    */
   @javax.annotation.Nullable
-  public EstCInfo getEstCostPerEvent() {
+  public AudienceEstimationInfo getEstCostPerEvent() {
     return estCostPerEvent;
   }
 
-  public void setEstCostPerEvent(EstCInfo estCostPerEvent) {
+  public void setEstCostPerEvent(AudienceEstimationInfo estCostPerEvent) {
     this.estCostPerEvent = estCostPerEvent;
   }
 
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo estCtr(EstCInfo estCtr) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo estCtr(AudienceEstimationInfo estCtr) {
     this.estCtr = estCtr;
     return this;
   }
@@ -213,11 +213,11 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return estCtr
    */
   @javax.annotation.Nullable
-  public EstCInfo getEstCtr() {
+  public AudienceEstimationInfo getEstCtr() {
     return estCtr;
   }
 
-  public void setEstCtr(EstCInfo estCtr) {
+  public void setEstCtr(AudienceEstimationInfo estCtr) {
     this.estCtr = estCtr;
   }
 
@@ -260,7 +260,7 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
   }
 
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo eventsLostToBid(Long eventsLostToBid) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo eventsLostToBid(BigDecimal eventsLostToBid) {
     this.eventsLostToBid = eventsLostToBid;
     return this;
   }
@@ -270,16 +270,16 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return eventsLostToBid
    */
   @javax.annotation.Nullable
-  public Long getEventsLostToBid() {
+  public BigDecimal getEventsLostToBid() {
     return eventsLostToBid;
   }
 
-  public void setEventsLostToBid(Long eventsLostToBid) {
+  public void setEventsLostToBid(BigDecimal eventsLostToBid) {
     this.eventsLostToBid = eventsLostToBid;
   }
 
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo eventsLostToBudget(Integer eventsLostToBudget) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo eventsLostToBudget(BigDecimal eventsLostToBudget) {
     this.eventsLostToBudget = eventsLostToBudget;
     return this;
   }
@@ -289,11 +289,11 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
    * @return eventsLostToBudget
    */
   @javax.annotation.Nullable
-  public Integer getEventsLostToBudget() {
+  public BigDecimal getEventsLostToBudget() {
     return eventsLostToBudget;
   }
 
-  public void setEventsLostToBudget(Integer eventsLostToBudget) {
+  public void setEventsLostToBudget(BigDecimal eventsLostToBudget) {
     this.eventsLostToBudget = eventsLostToBudget;
   }
 
@@ -514,27 +514,27 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `est_impressions`
       if (jsonObj.get("est_impressions") != null && !jsonObj.get("est_impressions").isJsonNull()) {
-        EstInfo.validateJsonElement(jsonObj.get("est_impressions"));
+        AudienceEstimationInfo.validateJsonElement(jsonObj.get("est_impressions"));
       }
       // validate the optional field `est_audience_size`
       if (jsonObj.get("est_audience_size") != null && !jsonObj.get("est_audience_size").isJsonNull()) {
-        EstInfo.validateJsonElement(jsonObj.get("est_audience_size"));
+        AudienceEstimationInfo.validateJsonElement(jsonObj.get("est_audience_size"));
       }
       // validate the optional field `est_clicks`
       if (jsonObj.get("est_clicks") != null && !jsonObj.get("est_clicks").isJsonNull()) {
-        EstInfo.validateJsonElement(jsonObj.get("est_clicks"));
+        AudienceEstimationInfo.validateJsonElement(jsonObj.get("est_clicks"));
       }
       // validate the optional field `est_spend`
       if (jsonObj.get("est_spend") != null && !jsonObj.get("est_spend").isJsonNull()) {
-        EstInfo.validateJsonElement(jsonObj.get("est_spend"));
+        AudienceEstimationInfo.validateJsonElement(jsonObj.get("est_spend"));
       }
       // validate the optional field `est_cost_per_event`
       if (jsonObj.get("est_cost_per_event") != null && !jsonObj.get("est_cost_per_event").isJsonNull()) {
-        EstCInfo.validateJsonElement(jsonObj.get("est_cost_per_event"));
+        AudienceEstimationInfo.validateJsonElement(jsonObj.get("est_cost_per_event"));
       }
       // validate the optional field `est_ctr`
       if (jsonObj.get("est_ctr") != null && !jsonObj.get("est_ctr").isJsonNull()) {
-        EstCInfo.validateJsonElement(jsonObj.get("est_ctr"));
+        AudienceEstimationInfo.validateJsonElement(jsonObj.get("est_ctr"));
       }
       if ((jsonObj.get("currency") != null && !jsonObj.get("currency").isJsonNull()) && !jsonObj.get("currency").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `currency` to be a primitive type in the JSON string but got `%s`", jsonObj.get("currency").toString()));

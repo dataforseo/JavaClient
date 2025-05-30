@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsBulkKeywordDifficultyLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsBulkKeywordDifficultyLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -61,7 +62,7 @@ public class DataforseoLabsBulkKeywordDifficultyLiveItem {
 
   public static final String SERIALIZED_NAME_KEYWORD_DIFFICULTY = "keyword_difficulty";
   @SerializedName(SERIALIZED_NAME_KEYWORD_DIFFICULTY)
-  private Integer keywordDifficulty;
+  private BigDecimal keywordDifficulty;
 
   public DataforseoLabsBulkKeywordDifficultyLiveItem() {
   }
@@ -104,7 +105,7 @@ public class DataforseoLabsBulkKeywordDifficultyLiveItem {
   }
 
 
-  public DataforseoLabsBulkKeywordDifficultyLiveItem keywordDifficulty(Integer keywordDifficulty) {
+  public DataforseoLabsBulkKeywordDifficultyLiveItem keywordDifficulty(BigDecimal keywordDifficulty) {
     this.keywordDifficulty = keywordDifficulty;
     return this;
   }
@@ -114,11 +115,11 @@ public class DataforseoLabsBulkKeywordDifficultyLiveItem {
    * @return keywordDifficulty
    */
   @javax.annotation.Nullable
-  public Integer getKeywordDifficulty() {
+  public BigDecimal getKeywordDifficulty() {
     return keywordDifficulty;
   }
 
-  public void setKeywordDifficulty(Integer keywordDifficulty) {
+  public void setKeywordDifficulty(BigDecimal keywordDifficulty) {
     this.keywordDifficulty = keywordDifficulty;
   }
 

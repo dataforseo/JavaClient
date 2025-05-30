@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BusinessDataBusinessListingsCategoriesAggregationLiveItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,19 +53,19 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo {
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
-  private Long totalCount;
+  private BigDecimal totalCount;
 
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
+  private BigDecimal count;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
-  private Integer offset;
+  private String offset;
 
   public static final String SERIALIZED_NAME_OFFSET_TOKEN = "offset_token";
   @SerializedName(SERIALIZED_NAME_OFFSET_TOKEN)
@@ -77,7 +78,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo {
   public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo() {
   }
 
-  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo totalCount(Long totalCount) {
+  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo totalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
     return this;
   }
@@ -87,16 +88,16 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo {
    * @return totalCount
    */
   @javax.annotation.Nullable
-  public Long getTotalCount() {
+  public BigDecimal getTotalCount() {
     return totalCount;
   }
 
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
   }
 
 
-  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo count(Long count) {
+  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -106,16 +107,16 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo {
    * @return count
    */
   @javax.annotation.Nullable
-  public Long getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
   }
 
 
-  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo offset(Integer offset) {
+  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo offset(String offset) {
     this.offset = offset;
     return this;
   }
@@ -125,11 +126,11 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo {
    * @return offset
    */
   @javax.annotation.Nullable
-  public Integer getOffset() {
+  public String getOffset() {
     return offset;
   }
 
-  public void setOffset(Integer offset) {
+  public void setOffset(String offset) {
     this.offset = offset;
   }
 
@@ -313,6 +314,9 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("offset") != null && !jsonObj.get("offset").isJsonNull()) && !jsonObj.get("offset").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `offset` to be a primitive type in the JSON string but got `%s`", jsonObj.get("offset").toString()));
+      }
       if ((jsonObj.get("offset_token") != null && !jsonObj.get("offset_token").isJsonNull()) && !jsonObj.get("offset_token").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `offset_token` to be a primitive type in the JSON string but got `%s`", jsonObj.get("offset_token").toString()));
       }

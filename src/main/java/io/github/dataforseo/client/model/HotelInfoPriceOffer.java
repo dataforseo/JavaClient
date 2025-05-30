@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * featured price offers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HotelInfoPriceOffer {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -63,7 +64,7 @@ public class HotelInfoPriceOffer {
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private Integer price;
+  private BigDecimal price;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -75,7 +76,7 @@ public class HotelInfoPriceOffer {
 
   public static final String SERIALIZED_NAME_MAX_VISITORS = "max_visitors";
   @SerializedName(SERIALIZED_NAME_MAX_VISITORS)
-  private Integer maxVisitors;
+  private BigDecimal maxVisitors;
 
   public static final String SERIALIZED_NAME_OFFER_IMAGES = "offer_images";
   @SerializedName(SERIALIZED_NAME_OFFER_IMAGES)
@@ -126,7 +127,7 @@ public class HotelInfoPriceOffer {
   }
 
 
-  public HotelInfoPriceOffer price(Integer price) {
+  public HotelInfoPriceOffer price(BigDecimal price) {
     this.price = price;
     return this;
   }
@@ -136,11 +137,11 @@ public class HotelInfoPriceOffer {
    * @return price
    */
   @javax.annotation.Nullable
-  public Integer getPrice() {
+  public BigDecimal getPrice() {
     return price;
   }
 
-  public void setPrice(Integer price) {
+  public void setPrice(BigDecimal price) {
     this.price = price;
   }
 
@@ -183,7 +184,7 @@ public class HotelInfoPriceOffer {
   }
 
 
-  public HotelInfoPriceOffer maxVisitors(Integer maxVisitors) {
+  public HotelInfoPriceOffer maxVisitors(BigDecimal maxVisitors) {
     this.maxVisitors = maxVisitors;
     return this;
   }
@@ -193,11 +194,11 @@ public class HotelInfoPriceOffer {
    * @return maxVisitors
    */
   @javax.annotation.Nullable
-  public Integer getMaxVisitors() {
+  public BigDecimal getMaxVisitors() {
     return maxVisitors;
   }
 
-  public void setMaxVisitors(Integer maxVisitors) {
+  public void setMaxVisitors(BigDecimal maxVisitors) {
     this.maxVisitors = maxVisitors;
   }
 

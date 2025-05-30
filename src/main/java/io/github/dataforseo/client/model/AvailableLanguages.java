@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * AvailableLanguages
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AvailableLanguages {
   public static final String SERIALIZED_NAME_AVAILABLE_SOURCES = "available_sources";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_SOURCES)
@@ -67,11 +68,11 @@ public class AvailableLanguages {
 
   public static final String SERIALIZED_NAME_KEYWORDS = "keywords";
   @SerializedName(SERIALIZED_NAME_KEYWORDS)
-  private Integer keywords;
+  private BigDecimal keywords;
 
   public static final String SERIALIZED_NAME_SERPS = "serps";
   @SerializedName(SERIALIZED_NAME_SERPS)
-  private Integer serps;
+  private BigDecimal serps;
 
   public AvailableLanguages() {
   }
@@ -141,7 +142,7 @@ public class AvailableLanguages {
   }
 
 
-  public AvailableLanguages keywords(Integer keywords) {
+  public AvailableLanguages keywords(BigDecimal keywords) {
     this.keywords = keywords;
     return this;
   }
@@ -151,16 +152,16 @@ public class AvailableLanguages {
    * @return keywords
    */
   @javax.annotation.Nullable
-  public Integer getKeywords() {
+  public BigDecimal getKeywords() {
     return keywords;
   }
 
-  public void setKeywords(Integer keywords) {
+  public void setKeywords(BigDecimal keywords) {
     this.keywords = keywords;
   }
 
 
-  public AvailableLanguages serps(Integer serps) {
+  public AvailableLanguages serps(BigDecimal serps) {
     this.serps = serps;
     return this;
   }
@@ -170,11 +171,11 @@ public class AvailableLanguages {
    * @return serps
    */
   @javax.annotation.Nullable
-  public Integer getSerps() {
+  public BigDecimal getSerps() {
     return serps;
   }
 
-  public void setSerps(Integer serps) {
+  public void setSerps(BigDecimal serps) {
     this.serps = serps;
   }
 

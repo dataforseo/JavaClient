@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.AppDataAppStoreSearchOrganicSerpElementItem;
+import io.github.dataforseo.client.model.DataforseoLabsAppDataIntersectionLiveItem;
 import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -53,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsAppleAppIntersectionLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsAppleAppIntersectionLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -65,7 +65,7 @@ public class DataforseoLabsAppleAppIntersectionLiveItem {
 
   public static final String SERIALIZED_NAME_INTERSECTION_RESULT = "intersection_result";
   @SerializedName(SERIALIZED_NAME_INTERSECTION_RESULT)
-  private Map<String, AppDataAppStoreSearchOrganicSerpElementItem> intersectionResult;
+  private Map<String, DataforseoLabsAppDataIntersectionLiveItem> intersectionResult;
 
   public DataforseoLabsAppleAppIntersectionLiveItem() {
   }
@@ -108,12 +108,12 @@ public class DataforseoLabsAppleAppIntersectionLiveItem {
   }
 
 
-  public DataforseoLabsAppleAppIntersectionLiveItem intersectionResult(Map<String, AppDataAppStoreSearchOrganicSerpElementItem> intersectionResult) {
+  public DataforseoLabsAppleAppIntersectionLiveItem intersectionResult(Map<String, DataforseoLabsAppDataIntersectionLiveItem> intersectionResult) {
     this.intersectionResult = intersectionResult;
     return this;
   }
 
-  public DataforseoLabsAppleAppIntersectionLiveItem putIntersectionResultItem(String key, AppDataAppStoreSearchOrganicSerpElementItem intersectionResultItem) {
+  public DataforseoLabsAppleAppIntersectionLiveItem putIntersectionResultItem(String key, DataforseoLabsAppDataIntersectionLiveItem intersectionResultItem) {
     if (this.intersectionResult == null) {
       this.intersectionResult = new HashMap<>();
     }
@@ -126,11 +126,11 @@ public class DataforseoLabsAppleAppIntersectionLiveItem {
    * @return intersectionResult
    */
   @javax.annotation.Nullable
-  public Map<String, AppDataAppStoreSearchOrganicSerpElementItem> getIntersectionResult() {
+  public Map<String, DataforseoLabsAppDataIntersectionLiveItem> getIntersectionResult() {
     return intersectionResult;
   }
 
-  public void setIntersectionResult(Map<String, AppDataAppStoreSearchOrganicSerpElementItem> intersectionResult) {
+  public void setIntersectionResult(Map<String, DataforseoLabsAppDataIntersectionLiveItem> intersectionResult) {
     this.intersectionResult = intersectionResult;
   }
 

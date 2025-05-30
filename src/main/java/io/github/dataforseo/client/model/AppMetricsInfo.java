@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,36 +50,36 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppMetricsInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppMetricsInfo {
   public static final String SERIALIZED_NAME_POS1 = "pos_1";
   @SerializedName(SERIALIZED_NAME_POS1)
-  private Integer pos1;
+  private BigDecimal pos1;
 
   public static final String SERIALIZED_NAME_POS23 = "pos_2_3";
   @SerializedName(SERIALIZED_NAME_POS23)
-  private Integer pos23;
+  private BigDecimal pos23;
 
   public static final String SERIALIZED_NAME_POS410 = "pos_4_10";
   @SerializedName(SERIALIZED_NAME_POS410)
-  private Integer pos410;
+  private BigDecimal pos410;
 
   public static final String SERIALIZED_NAME_POS11100 = "pos_11_100";
   @SerializedName(SERIALIZED_NAME_POS11100)
-  private Integer pos11100;
+  private BigDecimal pos11100;
 
   public static final String SERIALIZED_NAME_COUNT = "count";
   @SerializedName(SERIALIZED_NAME_COUNT)
-  private Long count;
+  private BigDecimal count;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public AppMetricsInfo() {
   }
 
-  public AppMetricsInfo pos1(Integer pos1) {
+  public AppMetricsInfo pos1(BigDecimal pos1) {
     this.pos1 = pos1;
     return this;
   }
@@ -88,16 +89,16 @@ public class AppMetricsInfo {
    * @return pos1
    */
   @javax.annotation.Nullable
-  public Integer getPos1() {
+  public BigDecimal getPos1() {
     return pos1;
   }
 
-  public void setPos1(Integer pos1) {
+  public void setPos1(BigDecimal pos1) {
     this.pos1 = pos1;
   }
 
 
-  public AppMetricsInfo pos23(Integer pos23) {
+  public AppMetricsInfo pos23(BigDecimal pos23) {
     this.pos23 = pos23;
     return this;
   }
@@ -107,16 +108,16 @@ public class AppMetricsInfo {
    * @return pos23
    */
   @javax.annotation.Nullable
-  public Integer getPos23() {
+  public BigDecimal getPos23() {
     return pos23;
   }
 
-  public void setPos23(Integer pos23) {
+  public void setPos23(BigDecimal pos23) {
     this.pos23 = pos23;
   }
 
 
-  public AppMetricsInfo pos410(Integer pos410) {
+  public AppMetricsInfo pos410(BigDecimal pos410) {
     this.pos410 = pos410;
     return this;
   }
@@ -126,16 +127,16 @@ public class AppMetricsInfo {
    * @return pos410
    */
   @javax.annotation.Nullable
-  public Integer getPos410() {
+  public BigDecimal getPos410() {
     return pos410;
   }
 
-  public void setPos410(Integer pos410) {
+  public void setPos410(BigDecimal pos410) {
     this.pos410 = pos410;
   }
 
 
-  public AppMetricsInfo pos11100(Integer pos11100) {
+  public AppMetricsInfo pos11100(BigDecimal pos11100) {
     this.pos11100 = pos11100;
     return this;
   }
@@ -145,16 +146,16 @@ public class AppMetricsInfo {
    * @return pos11100
    */
   @javax.annotation.Nullable
-  public Integer getPos11100() {
+  public BigDecimal getPos11100() {
     return pos11100;
   }
 
-  public void setPos11100(Integer pos11100) {
+  public void setPos11100(BigDecimal pos11100) {
     this.pos11100 = pos11100;
   }
 
 
-  public AppMetricsInfo count(Long count) {
+  public AppMetricsInfo count(BigDecimal count) {
     this.count = count;
     return this;
   }
@@ -164,16 +165,16 @@ public class AppMetricsInfo {
    * @return count
    */
   @javax.annotation.Nullable
-  public Long getCount() {
+  public BigDecimal getCount() {
     return count;
   }
 
-  public void setCount(Long count) {
+  public void setCount(BigDecimal count) {
     this.count = count;
   }
 
 
-  public AppMetricsInfo searchVolume(Long searchVolume) {
+  public AppMetricsInfo searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -183,11 +184,11 @@ public class AppMetricsInfo {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 

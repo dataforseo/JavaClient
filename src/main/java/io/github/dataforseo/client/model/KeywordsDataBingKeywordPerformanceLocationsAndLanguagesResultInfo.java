@@ -52,11 +52,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo {
   public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private Integer languageName;
+  private String languageName;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -69,7 +69,7 @@ public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo {
   public KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo() {
   }
 
-  public KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo languageName(Integer languageName) {
+  public KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo languageName(String languageName) {
     this.languageName = languageName;
     return this;
   }
@@ -79,11 +79,11 @@ public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo {
    * @return languageName
    */
   @javax.annotation.Nullable
-  public Integer getLanguageName() {
+  public String getLanguageName() {
     return languageName;
   }
 
-  public void setLanguageName(Integer languageName) {
+  public void setLanguageName(String languageName) {
     this.languageName = languageName;
   }
 
@@ -261,6 +261,9 @@ public class KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResultInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if ((jsonObj.get("language_name") != null && !jsonObj.get("language_name").isJsonNull()) && !jsonObj.get("language_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `language_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_name").toString()));
+      }
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));
       }

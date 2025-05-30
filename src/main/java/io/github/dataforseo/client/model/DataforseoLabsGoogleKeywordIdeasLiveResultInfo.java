@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.KeywordDataInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordIdeasLiveResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -64,7 +65,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -72,15 +73,15 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
 
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
-  private Long totalCount;
+  private BigDecimal totalCount;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_OFFSET = "offset";
   @SerializedName(SERIALIZED_NAME_OFFSET)
-  private Integer offset;
+  private BigDecimal offset;
 
   public static final String SERIALIZED_NAME_OFFSET_TOKEN = "offset_token";
   @SerializedName(SERIALIZED_NAME_OFFSET_TOKEN)
@@ -139,7 +140,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo locationCode(Integer locationCode) {
+  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -149,11 +150,11 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -177,7 +178,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
   }
 
 
-  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo totalCount(Long totalCount) {
+  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo totalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
     return this;
   }
@@ -187,16 +188,16 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
    * @return totalCount
    */
   @javax.annotation.Nullable
-  public Long getTotalCount() {
+  public BigDecimal getTotalCount() {
     return totalCount;
   }
 
-  public void setTotalCount(Long totalCount) {
+  public void setTotalCount(BigDecimal totalCount) {
     this.totalCount = totalCount;
   }
 
 
-  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo itemsCount(Long itemsCount) {
+  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -206,16 +207,16 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
 
-  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo offset(Integer offset) {
+  public DataforseoLabsGoogleKeywordIdeasLiveResultInfo offset(BigDecimal offset) {
     this.offset = offset;
     return this;
   }
@@ -225,11 +226,11 @@ public class DataforseoLabsGoogleKeywordIdeasLiveResultInfo {
    * @return offset
    */
   @javax.annotation.Nullable
-  public Integer getOffset() {
+  public BigDecimal getOffset() {
     return offset;
   }
 
-  public void setOffset(Integer offset) {
+  public void setOffset(BigDecimal offset) {
     this.offset = offset;
   }
 

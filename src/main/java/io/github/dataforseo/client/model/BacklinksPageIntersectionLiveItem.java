@@ -19,7 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.github.dataforseo.client.model.BacklinksPageIntersectionInfo;
+import io.github.dataforseo.client.model.BacklinksPageIntersection;
 import io.github.dataforseo.client.model.IntersectionSummaryInfo;
 import java.io.IOException;
 import java.util.Arrays;
@@ -54,11 +54,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksPageIntersectionLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksPageIntersectionLiveItem {
   public static final String SERIALIZED_NAME_PAGE_INTERSECTION = "page_intersection";
   @SerializedName(SERIALIZED_NAME_PAGE_INTERSECTION)
-  private Map<String, List<BacklinksPageIntersectionInfo>> pageIntersection;
+  private Map<String, List<BacklinksPageIntersection>> pageIntersection;
 
   public static final String SERIALIZED_NAME_SUMMARY = "summary";
   @SerializedName(SERIALIZED_NAME_SUMMARY)
@@ -67,12 +67,12 @@ public class BacklinksPageIntersectionLiveItem {
   public BacklinksPageIntersectionLiveItem() {
   }
 
-  public BacklinksPageIntersectionLiveItem pageIntersection(Map<String, List<BacklinksPageIntersectionInfo>> pageIntersection) {
+  public BacklinksPageIntersectionLiveItem pageIntersection(Map<String, List<BacklinksPageIntersection>> pageIntersection) {
     this.pageIntersection = pageIntersection;
     return this;
   }
 
-  public BacklinksPageIntersectionLiveItem putPageIntersectionItem(String key, List<BacklinksPageIntersectionInfo> pageIntersectionItem) {
+  public BacklinksPageIntersectionLiveItem putPageIntersectionItem(String key, List<BacklinksPageIntersection> pageIntersectionItem) {
     if (this.pageIntersection == null) {
       this.pageIntersection = new HashMap<>();
     }
@@ -85,11 +85,11 @@ public class BacklinksPageIntersectionLiveItem {
    * @return pageIntersection
    */
   @javax.annotation.Nullable
-  public Map<String, List<BacklinksPageIntersectionInfo>> getPageIntersection() {
+  public Map<String, List<BacklinksPageIntersection>> getPageIntersection() {
     return pageIntersection;
   }
 
-  public void setPageIntersection(Map<String, List<BacklinksPageIntersectionInfo>> pageIntersection) {
+  public void setPageIntersection(Map<String, List<BacklinksPageIntersection>> pageIntersection) {
     this.pageIntersection = pageIntersection;
   }
 

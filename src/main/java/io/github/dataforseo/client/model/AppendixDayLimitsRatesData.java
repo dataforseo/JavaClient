@@ -27,10 +27,10 @@ import io.github.dataforseo.client.model.AppendixContentAnalysisLimitsRatesDataI
 import io.github.dataforseo.client.model.AppendixContentGenerationLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDataforseoLabsLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixDomainAnalyticsLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixKeywordsDatasRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixKeywordsDataDaysRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixMerchantLimitsRatesDataInfo;
 import io.github.dataforseo.client.model.AppendixOnPageLimitsRatesDataInfo;
-import io.github.dataforseo.client.model.AppendixSerpsRatesDataInfo;
+import io.github.dataforseo.client.model.AppendixSerpDaysRatesDataInfo;
 import java.io.IOException;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -61,11 +61,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * AppendixDayLimitsRatesData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class AppendixDayLimitsRatesData {
   public static final String SERIALIZED_NAME_SERP = "serp";
   @SerializedName(SERIALIZED_NAME_SERP)
-  private AppendixSerpsRatesDataInfo serp;
+  private AppendixSerpDaysRatesDataInfo serp;
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
@@ -77,7 +77,7 @@ public class AppendixDayLimitsRatesData {
 
   public static final String SERIALIZED_NAME_KEYWORDS_DATA = "keywords_data";
   @SerializedName(SERIALIZED_NAME_KEYWORDS_DATA)
-  private AppendixKeywordsDatasRatesDataInfo keywordsData;
+  private AppendixKeywordsDataDaysRatesDataInfo keywordsData;
 
   public static final String SERIALIZED_NAME_TOTAL_KEYWORDS_DATA = "total_keywords_data";
   @SerializedName(SERIALIZED_NAME_TOTAL_KEYWORDS_DATA)
@@ -163,6 +163,10 @@ public class AppendixDayLimitsRatesData {
   @SerializedName(SERIALIZED_NAME_TOTAL_CONTENT_GENERATION)
   private Double totalContentGeneration;
 
+  public static final String SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS = "total_traffic_analytics";
+  @SerializedName(SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS)
+  private Double totalTrafficAnalytics;
+
   public static final String SERIALIZED_NAME_TOTAL_REVIEWS = "total_reviews";
   @SerializedName(SERIALIZED_NAME_TOTAL_REVIEWS)
   private Double totalReviews;
@@ -171,14 +175,10 @@ public class AppendixDayLimitsRatesData {
   @SerializedName(SERIALIZED_NAME_TOTAL_SOCIAL)
   private Double totalSocial;
 
-  public static final String SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS = "total_traffic_analytics";
-  @SerializedName(SERIALIZED_NAME_TOTAL_TRAFFIC_ANALYTICS)
-  private Double totalTrafficAnalytics;
-
   public AppendixDayLimitsRatesData() {
   }
 
-  public AppendixDayLimitsRatesData serp(AppendixSerpsRatesDataInfo serp) {
+  public AppendixDayLimitsRatesData serp(AppendixSerpDaysRatesDataInfo serp) {
     this.serp = serp;
     return this;
   }
@@ -188,11 +188,11 @@ public class AppendixDayLimitsRatesData {
    * @return serp
    */
   @javax.annotation.Nullable
-  public AppendixSerpsRatesDataInfo getSerp() {
+  public AppendixSerpDaysRatesDataInfo getSerp() {
     return serp;
   }
 
-  public void setSerp(AppendixSerpsRatesDataInfo serp) {
+  public void setSerp(AppendixSerpDaysRatesDataInfo serp) {
     this.serp = serp;
   }
 
@@ -235,7 +235,7 @@ public class AppendixDayLimitsRatesData {
   }
 
 
-  public AppendixDayLimitsRatesData keywordsData(AppendixKeywordsDatasRatesDataInfo keywordsData) {
+  public AppendixDayLimitsRatesData keywordsData(AppendixKeywordsDataDaysRatesDataInfo keywordsData) {
     this.keywordsData = keywordsData;
     return this;
   }
@@ -245,11 +245,11 @@ public class AppendixDayLimitsRatesData {
    * @return keywordsData
    */
   @javax.annotation.Nullable
-  public AppendixKeywordsDatasRatesDataInfo getKeywordsData() {
+  public AppendixKeywordsDataDaysRatesDataInfo getKeywordsData() {
     return keywordsData;
   }
 
-  public void setKeywordsData(AppendixKeywordsDatasRatesDataInfo keywordsData) {
+  public void setKeywordsData(AppendixKeywordsDataDaysRatesDataInfo keywordsData) {
     this.keywordsData = keywordsData;
   }
 
@@ -653,6 +653,25 @@ public class AppendixDayLimitsRatesData {
   }
 
 
+  public AppendixDayLimitsRatesData totalTrafficAnalytics(Double totalTrafficAnalytics) {
+    this.totalTrafficAnalytics = totalTrafficAnalytics;
+    return this;
+  }
+
+  /**
+   * Get totalTrafficAnalytics
+   * @return totalTrafficAnalytics
+   */
+  @javax.annotation.Nullable
+  public Double getTotalTrafficAnalytics() {
+    return totalTrafficAnalytics;
+  }
+
+  public void setTotalTrafficAnalytics(Double totalTrafficAnalytics) {
+    this.totalTrafficAnalytics = totalTrafficAnalytics;
+  }
+
+
   public AppendixDayLimitsRatesData totalReviews(Double totalReviews) {
     this.totalReviews = totalReviews;
     return this;
@@ -688,25 +707,6 @@ public class AppendixDayLimitsRatesData {
 
   public void setTotalSocial(Double totalSocial) {
     this.totalSocial = totalSocial;
-  }
-
-
-  public AppendixDayLimitsRatesData totalTrafficAnalytics(Double totalTrafficAnalytics) {
-    this.totalTrafficAnalytics = totalTrafficAnalytics;
-    return this;
-  }
-
-  /**
-   * Get totalTrafficAnalytics
-   * @return totalTrafficAnalytics
-   */
-  @javax.annotation.Nullable
-  public Double getTotalTrafficAnalytics() {
-    return totalTrafficAnalytics;
-  }
-
-  public void setTotalTrafficAnalytics(Double totalTrafficAnalytics) {
-    this.totalTrafficAnalytics = totalTrafficAnalytics;
   }
 
   /**
@@ -789,9 +789,9 @@ public class AppendixDayLimitsRatesData {
         Objects.equals(this.totalContentAnalysis, appendixDayLimitsRatesData.totalContentAnalysis) &&
         Objects.equals(this.contentGeneration, appendixDayLimitsRatesData.contentGeneration) &&
         Objects.equals(this.totalContentGeneration, appendixDayLimitsRatesData.totalContentGeneration) &&
+        Objects.equals(this.totalTrafficAnalytics, appendixDayLimitsRatesData.totalTrafficAnalytics) &&
         Objects.equals(this.totalReviews, appendixDayLimitsRatesData.totalReviews) &&
-        Objects.equals(this.totalSocial, appendixDayLimitsRatesData.totalSocial) &&
-        Objects.equals(this.totalTrafficAnalytics, appendixDayLimitsRatesData.totalTrafficAnalytics)&&
+        Objects.equals(this.totalSocial, appendixDayLimitsRatesData.totalSocial)&&
         Objects.equals(this.additionalProperties, appendixDayLimitsRatesData.additionalProperties);
   }
 
@@ -801,7 +801,7 @@ public class AppendixDayLimitsRatesData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(serp, total, totalSerp, keywordsData, totalKeywordsData, appendix, totalAppendix, dataforseoLabs, totalDataforseoLabs, domainAnalytics, totalDomainAnalytics, merchant, totalMerchant, onPage, totalOnPage, businessData, totalBusinessData, backlinks, totalBacklinks, appData, totalAppData, contentAnalysis, totalContentAnalysis, contentGeneration, totalContentGeneration, totalReviews, totalSocial, totalTrafficAnalytics, additionalProperties);
+    return Objects.hash(serp, total, totalSerp, keywordsData, totalKeywordsData, appendix, totalAppendix, dataforseoLabs, totalDataforseoLabs, domainAnalytics, totalDomainAnalytics, merchant, totalMerchant, onPage, totalOnPage, businessData, totalBusinessData, backlinks, totalBacklinks, appData, totalAppData, contentAnalysis, totalContentAnalysis, contentGeneration, totalContentGeneration, totalTrafficAnalytics, totalReviews, totalSocial, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -840,9 +840,9 @@ public class AppendixDayLimitsRatesData {
     sb.append("    totalContentAnalysis: ").append(toIndentedString(totalContentAnalysis)).append("\n");
     sb.append("    contentGeneration: ").append(toIndentedString(contentGeneration)).append("\n");
     sb.append("    totalContentGeneration: ").append(toIndentedString(totalContentGeneration)).append("\n");
+    sb.append("    totalTrafficAnalytics: ").append(toIndentedString(totalTrafficAnalytics)).append("\n");
     sb.append("    totalReviews: ").append(toIndentedString(totalReviews)).append("\n");
     sb.append("    totalSocial: ").append(toIndentedString(totalSocial)).append("\n");
-    sb.append("    totalTrafficAnalytics: ").append(toIndentedString(totalTrafficAnalytics)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -891,9 +891,9 @@ public class AppendixDayLimitsRatesData {
     openapiFields.add("total_content_analysis");
     openapiFields.add("content_generation");
     openapiFields.add("total_content_generation");
+    openapiFields.add("total_traffic_analytics");
     openapiFields.add("total_reviews");
     openapiFields.add("total_social");
-    openapiFields.add("total_traffic_analytics");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -914,11 +914,11 @@ public class AppendixDayLimitsRatesData {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `serp`
       if (jsonObj.get("serp") != null && !jsonObj.get("serp").isJsonNull()) {
-        AppendixSerpsRatesDataInfo.validateJsonElement(jsonObj.get("serp"));
+        AppendixSerpDaysRatesDataInfo.validateJsonElement(jsonObj.get("serp"));
       }
       // validate the optional field `keywords_data`
       if (jsonObj.get("keywords_data") != null && !jsonObj.get("keywords_data").isJsonNull()) {
-        AppendixKeywordsDatasRatesDataInfo.validateJsonElement(jsonObj.get("keywords_data"));
+        AppendixKeywordsDataDaysRatesDataInfo.validateJsonElement(jsonObj.get("keywords_data"));
       }
       // validate the optional field `appendix`
       if (jsonObj.get("appendix") != null && !jsonObj.get("appendix").isJsonNull()) {

@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,24 +50,24 @@ import io.github.dataforseo.client.JSON;
 /**
  * SearchVolumeTrend
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SearchVolumeTrend {
   public static final String SERIALIZED_NAME_MONTHLY = "monthly";
   @SerializedName(SERIALIZED_NAME_MONTHLY)
-  private Integer monthly;
+  private BigDecimal monthly;
 
   public static final String SERIALIZED_NAME_QUARTERLY = "quarterly";
   @SerializedName(SERIALIZED_NAME_QUARTERLY)
-  private Integer quarterly;
+  private BigDecimal quarterly;
 
   public static final String SERIALIZED_NAME_YEARLY = "yearly";
   @SerializedName(SERIALIZED_NAME_YEARLY)
-  private Integer yearly;
+  private BigDecimal yearly;
 
   public SearchVolumeTrend() {
   }
 
-  public SearchVolumeTrend monthly(Integer monthly) {
+  public SearchVolumeTrend monthly(BigDecimal monthly) {
     this.monthly = monthly;
     return this;
   }
@@ -76,16 +77,16 @@ public class SearchVolumeTrend {
    * @return monthly
    */
   @javax.annotation.Nullable
-  public Integer getMonthly() {
+  public BigDecimal getMonthly() {
     return monthly;
   }
 
-  public void setMonthly(Integer monthly) {
+  public void setMonthly(BigDecimal monthly) {
     this.monthly = monthly;
   }
 
 
-  public SearchVolumeTrend quarterly(Integer quarterly) {
+  public SearchVolumeTrend quarterly(BigDecimal quarterly) {
     this.quarterly = quarterly;
     return this;
   }
@@ -95,16 +96,16 @@ public class SearchVolumeTrend {
    * @return quarterly
    */
   @javax.annotation.Nullable
-  public Integer getQuarterly() {
+  public BigDecimal getQuarterly() {
     return quarterly;
   }
 
-  public void setQuarterly(Integer quarterly) {
+  public void setQuarterly(BigDecimal quarterly) {
     this.quarterly = quarterly;
   }
 
 
-  public SearchVolumeTrend yearly(Integer yearly) {
+  public SearchVolumeTrend yearly(BigDecimal yearly) {
     this.yearly = yearly;
     return this;
   }
@@ -114,11 +115,11 @@ public class SearchVolumeTrend {
    * @return yearly
    */
   @javax.annotation.Nullable
-  public Integer getYearly() {
+  public BigDecimal getYearly() {
     return yearly;
   }
 
-  public void setYearly(Integer yearly) {
+  public void setYearly(BigDecimal yearly) {
     this.yearly = yearly;
   }
 

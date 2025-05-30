@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,7 +50,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * Advertiser
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class Advertiser {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -69,7 +70,7 @@ public class Advertiser {
 
   public static final String SERIALIZED_NAME_APPROX_ADS_COUNT = "approx_ads_count";
   @SerializedName(SERIALIZED_NAME_APPROX_ADS_COUNT)
-  private Long approxAdsCount;
+  private BigDecimal approxAdsCount;
 
   public Advertiser() {
   }
@@ -150,7 +151,7 @@ public class Advertiser {
   }
 
 
-  public Advertiser approxAdsCount(Long approxAdsCount) {
+  public Advertiser approxAdsCount(BigDecimal approxAdsCount) {
     this.approxAdsCount = approxAdsCount;
     return this;
   }
@@ -160,11 +161,11 @@ public class Advertiser {
    * @return approxAdsCount
    */
   @javax.annotation.Nullable
-  public Long getApproxAdsCount() {
+  public BigDecimal getApproxAdsCount() {
     return approxAdsCount;
   }
 
-  public void setApproxAdsCount(Long approxAdsCount) {
+  public void setApproxAdsCount(BigDecimal approxAdsCount) {
     this.approxAdsCount = approxAdsCount;
   }
 

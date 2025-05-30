@@ -20,9 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseSerpElementItem;
-import io.github.dataforseo.client.model.RatingInfo;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.Rectangle;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -52,19 +53,11 @@ import io.github.dataforseo.client.JSON;
 /**
  * ThirdPartyReviewsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public static final String SERIALIZED_NAME_XPATH = "xpath";
-  @SerializedName(SERIALIZED_NAME_XPATH)
-  private String xpath;
-
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private BigDecimal reviewsCount;
 
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -76,7 +69,7 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_RECTANGLE = "rectangle";
   @SerializedName(SERIALIZED_NAME_RECTANGLE)
@@ -85,45 +78,7 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
   public ThirdPartyReviewsSerpElementItem() {
   }
 
-  public ThirdPartyReviewsSerpElementItem position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP can take the following values: left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public ThirdPartyReviewsSerpElementItem xpath(String xpath) {
-    this.xpath = xpath;
-    return this;
-  }
-
-  /**
-   * the XPath of the element
-   * @return xpath
-   */
-  @javax.annotation.Nullable
-  public String getXpath() {
-    return xpath;
-  }
-
-  public void setXpath(String xpath) {
-    this.xpath = xpath;
-  }
-
-
-  public ThirdPartyReviewsSerpElementItem reviewsCount(Long reviewsCount) {
+  public ThirdPartyReviewsSerpElementItem reviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -133,11 +88,11 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public BigDecimal getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(BigDecimal reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
@@ -167,7 +122,7 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
   }
 
   /**
-   * source URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -180,7 +135,7 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
   }
 
 
-  public ThirdPartyReviewsSerpElementItem rating(RatingInfo rating) {
+  public ThirdPartyReviewsSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -190,11 +145,11 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -272,9 +227,7 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
       return false;
     }
     ThirdPartyReviewsSerpElementItem thirdPartyReviewsSerpElementItem = (ThirdPartyReviewsSerpElementItem) o;
-    return Objects.equals(this.position, thirdPartyReviewsSerpElementItem.position) &&
-        Objects.equals(this.xpath, thirdPartyReviewsSerpElementItem.xpath) &&
-        Objects.equals(this.reviewsCount, thirdPartyReviewsSerpElementItem.reviewsCount) &&
+    return Objects.equals(this.reviewsCount, thirdPartyReviewsSerpElementItem.reviewsCount) &&
         Objects.equals(this.title, thirdPartyReviewsSerpElementItem.title) &&
         Objects.equals(this.url, thirdPartyReviewsSerpElementItem.url) &&
         Objects.equals(this.rating, thirdPartyReviewsSerpElementItem.rating) &&
@@ -289,7 +242,7 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(position, xpath, reviewsCount, title, url, rating, rectangle, super.hashCode(), additionalProperties);
+    return Objects.hash(reviewsCount, title, url, rating, rectangle, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -304,8 +257,6 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
     StringBuilder sb = new StringBuilder();
     sb.append("class ThirdPartyReviewsSerpElementItem {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    reviewsCount: ").append(toIndentedString(reviewsCount)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -362,12 +313,6 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("position") != null && !jsonObj.get("position").isJsonNull()) && !jsonObj.get("position").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `position` to be a primitive type in the JSON string but got `%s`", jsonObj.get("position").toString()));
-      }
-      if ((jsonObj.get("xpath") != null && !jsonObj.get("xpath").isJsonNull()) && !jsonObj.get("xpath").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `xpath` to be a primitive type in the JSON string but got `%s`", jsonObj.get("xpath").toString()));
-      }
       if ((jsonObj.get("title") != null && !jsonObj.get("title").isJsonNull()) && !jsonObj.get("title").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `title` to be a primitive type in the JSON string but got `%s`", jsonObj.get("title").toString()));
       }
@@ -376,7 +321,7 @@ public class ThirdPartyReviewsSerpElementItem extends BaseSerpElementItem {
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       // validate the optional field `rectangle`
       if (jsonObj.get("rectangle") != null && !jsonObj.get("rectangle").isJsonNull()) {

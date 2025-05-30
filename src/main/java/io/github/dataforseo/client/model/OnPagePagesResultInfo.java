@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseOnPageResourceItemInfo;
 import io.github.dataforseo.client.model.CrawlStatusInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OnPagePagesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OnPagePagesResultInfo {
   public static final String SERIALIZED_NAME_CRAWL_PROGRESS = "crawl_progress";
   @SerializedName(SERIALIZED_NAME_CRAWL_PROGRESS)
@@ -63,13 +64,21 @@ public class OnPagePagesResultInfo {
   @SerializedName(SERIALIZED_NAME_CRAWL_STATUS)
   private CrawlStatusInfo crawlStatus;
 
+  public static final String SERIALIZED_NAME_SEARCH_AFTER_TOKEN = "search_after_token";
+  @SerializedName(SERIALIZED_NAME_SEARCH_AFTER_TOKEN)
+  private String searchAfterToken;
+
+  public static final String SERIALIZED_NAME_CURRENT_OFFSET = "current_offset";
+  @SerializedName(SERIALIZED_NAME_CURRENT_OFFSET)
+  private BigDecimal currentOffset;
+
   public static final String SERIALIZED_NAME_TOTAL_ITEMS_COUNT = "total_items_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_ITEMS_COUNT)
-  private Long totalItemsCount;
+  private BigDecimal totalItemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -116,7 +125,45 @@ public class OnPagePagesResultInfo {
   }
 
 
-  public OnPagePagesResultInfo totalItemsCount(Long totalItemsCount) {
+  public OnPagePagesResultInfo searchAfterToken(String searchAfterToken) {
+    this.searchAfterToken = searchAfterToken;
+    return this;
+  }
+
+  /**
+   * Get searchAfterToken
+   * @return searchAfterToken
+   */
+  @javax.annotation.Nullable
+  public String getSearchAfterToken() {
+    return searchAfterToken;
+  }
+
+  public void setSearchAfterToken(String searchAfterToken) {
+    this.searchAfterToken = searchAfterToken;
+  }
+
+
+  public OnPagePagesResultInfo currentOffset(BigDecimal currentOffset) {
+    this.currentOffset = currentOffset;
+    return this;
+  }
+
+  /**
+   * Get currentOffset
+   * @return currentOffset
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getCurrentOffset() {
+    return currentOffset;
+  }
+
+  public void setCurrentOffset(BigDecimal currentOffset) {
+    this.currentOffset = currentOffset;
+  }
+
+
+  public OnPagePagesResultInfo totalItemsCount(BigDecimal totalItemsCount) {
     this.totalItemsCount = totalItemsCount;
     return this;
   }
@@ -126,16 +173,16 @@ public class OnPagePagesResultInfo {
    * @return totalItemsCount
    */
   @javax.annotation.Nullable
-  public Long getTotalItemsCount() {
+  public BigDecimal getTotalItemsCount() {
     return totalItemsCount;
   }
 
-  public void setTotalItemsCount(Long totalItemsCount) {
+  public void setTotalItemsCount(BigDecimal totalItemsCount) {
     this.totalItemsCount = totalItemsCount;
   }
 
 
-  public OnPagePagesResultInfo itemsCount(Long itemsCount) {
+  public OnPagePagesResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -145,11 +192,11 @@ public class OnPagePagesResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -237,6 +284,8 @@ public class OnPagePagesResultInfo {
     OnPagePagesResultInfo onPagePagesResultInfo = (OnPagePagesResultInfo) o;
     return Objects.equals(this.crawlProgress, onPagePagesResultInfo.crawlProgress) &&
         Objects.equals(this.crawlStatus, onPagePagesResultInfo.crawlStatus) &&
+        Objects.equals(this.searchAfterToken, onPagePagesResultInfo.searchAfterToken) &&
+        Objects.equals(this.currentOffset, onPagePagesResultInfo.currentOffset) &&
         Objects.equals(this.totalItemsCount, onPagePagesResultInfo.totalItemsCount) &&
         Objects.equals(this.itemsCount, onPagePagesResultInfo.itemsCount) &&
         Objects.equals(this.items, onPagePagesResultInfo.items)&&
@@ -249,7 +298,7 @@ public class OnPagePagesResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(crawlProgress, crawlStatus, totalItemsCount, itemsCount, items, additionalProperties);
+    return Objects.hash(crawlProgress, crawlStatus, searchAfterToken, currentOffset, totalItemsCount, itemsCount, items, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -265,6 +314,8 @@ public class OnPagePagesResultInfo {
     sb.append("class OnPagePagesResultInfo {\n");
     sb.append("    crawlProgress: ").append(toIndentedString(crawlProgress)).append("\n");
     sb.append("    crawlStatus: ").append(toIndentedString(crawlStatus)).append("\n");
+    sb.append("    searchAfterToken: ").append(toIndentedString(searchAfterToken)).append("\n");
+    sb.append("    currentOffset: ").append(toIndentedString(currentOffset)).append("\n");
     sb.append("    totalItemsCount: ").append(toIndentedString(totalItemsCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
@@ -293,6 +344,8 @@ public class OnPagePagesResultInfo {
     openapiFields = new HashSet<String>();
     openapiFields.add("crawl_progress");
     openapiFields.add("crawl_status");
+    openapiFields.add("search_after_token");
+    openapiFields.add("current_offset");
     openapiFields.add("total_items_count");
     openapiFields.add("items_count");
     openapiFields.add("items");
@@ -320,6 +373,9 @@ public class OnPagePagesResultInfo {
       // validate the optional field `crawl_status`
       if (jsonObj.get("crawl_status") != null && !jsonObj.get("crawl_status").isJsonNull()) {
         CrawlStatusInfo.validateJsonElement(jsonObj.get("crawl_status"));
+      }
+      if ((jsonObj.get("search_after_token") != null && !jsonObj.get("search_after_token").isJsonNull()) && !jsonObj.get("search_after_token").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `search_after_token` to be a primitive type in the JSON string but got `%s`", jsonObj.get("search_after_token").toString()));
       }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");

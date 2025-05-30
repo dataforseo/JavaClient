@@ -7,9 +7,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**year** | **Integer** | year |  [optional] |
-|**month** | **Integer** | month |  [optional] |
-|**searchVolume** | **Long** | monthly average search volume rate |  [optional] |
+|**year** | **BigDecimal** | year |  [optional] |
+|**month** | **BigDecimal** | month |  [optional] |
+|**searchVolume** | **BigDecimal** | monthly average search volume rate |  [optional] |
 
 
 

@@ -25,6 +25,7 @@ import io.github.dataforseo.client.model.LastModified;
 import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import io.github.dataforseo.client.model.PageMetaInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -167,19 +168,27 @@ public class BrokenResourceElementItemTest {
     }
 
     /**
-     * Test the property 'meta'
-     */
-    @Test
-    public void metaTest() {
-        // TODO: test meta
-    }
-
-    /**
      * Test the property 'fetchTiming'
      */
     @Test
     public void fetchTimingTest() {
         // TODO: test fetchTiming
+    }
+
+    /**
+     * Test the property 'isResource'
+     */
+    @Test
+    public void isResourceTest() {
+        // TODO: test isResource
+    }
+
+    /**
+     * Test the property 'meta'
+     */
+    @Test
+    public void metaTest() {
+        // TODO: test meta
     }
 
     /**

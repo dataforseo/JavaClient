@@ -7,8 +7,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**category** | **String** | name of the supported app category |  [optional] |
-|**count** | **Long** | number of app listings that make up the supported app category |  [optional] |
+|**id** | **String** | task identifier unique task identifier in our system in the UUID format |  [optional] |
+|**se** | **String** |  |  [optional] |
+|**seType** | **String** |  |  [optional] |
+|**datePosted** | **String** |  |  [optional] |
+|**tag** | **String** |  |  [optional] |
+|**endpointAdvanced** | **String** |  |  [optional] |
+|**endpointHtml** | **String** |  |  [optional] |
 
 
 

@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.HotelAmenityInfo;
 import io.github.dataforseo.client.model.HotelAmenityItemInfo;
-import io.github.dataforseo.client.model.WorkTimeInfo;
+import io.github.dataforseo.client.model.Info;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -54,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * HotelAboutInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class HotelAboutInfo {
   public static final String SERIALIZED_NAME_DESCRIPTION = "description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -66,11 +66,11 @@ public class HotelAboutInfo {
 
   public static final String SERIALIZED_NAME_CHECK_IN_TIME = "check_in_time";
   @SerializedName(SERIALIZED_NAME_CHECK_IN_TIME)
-  private WorkTimeInfo checkInTime;
+  private Info checkInTime;
 
   public static final String SERIALIZED_NAME_CHECK_OUT_TIME = "check_out_time";
   @SerializedName(SERIALIZED_NAME_CHECK_OUT_TIME)
-  private WorkTimeInfo checkOutTime;
+  private Info checkOutTime;
 
   public static final String SERIALIZED_NAME_FULL_ADDRESS = "full_address";
   @SerializedName(SERIALIZED_NAME_FULL_ADDRESS)
@@ -141,7 +141,7 @@ public class HotelAboutInfo {
   }
 
 
-  public HotelAboutInfo checkInTime(WorkTimeInfo checkInTime) {
+  public HotelAboutInfo checkInTime(Info checkInTime) {
     this.checkInTime = checkInTime;
     return this;
   }
@@ -151,16 +151,16 @@ public class HotelAboutInfo {
    * @return checkInTime
    */
   @javax.annotation.Nullable
-  public WorkTimeInfo getCheckInTime() {
+  public Info getCheckInTime() {
     return checkInTime;
   }
 
-  public void setCheckInTime(WorkTimeInfo checkInTime) {
+  public void setCheckInTime(Info checkInTime) {
     this.checkInTime = checkInTime;
   }
 
 
-  public HotelAboutInfo checkOutTime(WorkTimeInfo checkOutTime) {
+  public HotelAboutInfo checkOutTime(Info checkOutTime) {
     this.checkOutTime = checkOutTime;
     return this;
   }
@@ -170,11 +170,11 @@ public class HotelAboutInfo {
    * @return checkOutTime
    */
   @javax.annotation.Nullable
-  public WorkTimeInfo getCheckOutTime() {
+  public Info getCheckOutTime() {
     return checkOutTime;
   }
 
-  public void setCheckOutTime(WorkTimeInfo checkOutTime) {
+  public void setCheckOutTime(Info checkOutTime) {
     this.checkOutTime = checkOutTime;
   }
 
@@ -444,11 +444,11 @@ public class HotelAboutInfo {
       }
       // validate the optional field `check_in_time`
       if (jsonObj.get("check_in_time") != null && !jsonObj.get("check_in_time").isJsonNull()) {
-        WorkTimeInfo.validateJsonElement(jsonObj.get("check_in_time"));
+        Info.validateJsonElement(jsonObj.get("check_in_time"));
       }
       // validate the optional field `check_out_time`
       if (jsonObj.get("check_out_time") != null && !jsonObj.get("check_out_time").isJsonNull()) {
-        WorkTimeInfo.validateJsonElement(jsonObj.get("check_out_time"));
+        Info.validateJsonElement(jsonObj.get("check_out_time"));
       }
       if ((jsonObj.get("full_address") != null && !jsonObj.get("full_address").isJsonNull()) && !jsonObj.get("full_address").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `full_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("full_address").toString()));

@@ -21,10 +21,11 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AddressInfo;
 import io.github.dataforseo.client.model.BaseGoogleMapsSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.LocalJustificationInfo;
-import io.github.dataforseo.client.model.RatingInfo;
 import io.github.dataforseo.client.model.WorkHours;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -58,7 +59,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * GoogleMapsMapsSearchSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpElementItem {
   public static final String SERIALIZED_NAME_ORIGINAL_TITLE = "original_title";
   @SerializedName(SERIALIZED_NAME_ORIGINAL_TITLE)
@@ -78,7 +79,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
 
   public static final String SERIALIZED_NAME_HOTEL_RATING = "hotel_rating";
   @SerializedName(SERIALIZED_NAME_HOTEL_RATING)
-  private Integer hotelRating;
+  private BigDecimal hotelRating;
 
   public static final String SERIALIZED_NAME_PRICE_LEVEL = "price_level";
   @SerializedName(SERIALIZED_NAME_PRICE_LEVEL)
@@ -110,7 +111,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
 
   public static final String SERIALIZED_NAME_TOTAL_PHOTOS = "total_photos";
   @SerializedName(SERIALIZED_NAME_TOTAL_PHOTOS)
-  private Long totalPhotos;
+  private BigDecimal totalPhotos;
 
   public static final String SERIALIZED_NAME_CATEGORY = "category";
   @SerializedName(SERIALIZED_NAME_CATEGORY)
@@ -235,7 +236,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
   }
 
 
-  public GoogleMapsMapsSearchSerpElementItem hotelRating(Integer hotelRating) {
+  public GoogleMapsMapsSearchSerpElementItem hotelRating(BigDecimal hotelRating) {
     this.hotelRating = hotelRating;
     return this;
   }
@@ -245,11 +246,11 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
    * @return hotelRating
    */
   @javax.annotation.Nullable
-  public Integer getHotelRating() {
+  public BigDecimal getHotelRating() {
     return hotelRating;
   }
 
-  public void setHotelRating(Integer hotelRating) {
+  public void setHotelRating(BigDecimal hotelRating) {
     this.hotelRating = hotelRating;
   }
 
@@ -387,7 +388,7 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
   }
 
 
-  public GoogleMapsMapsSearchSerpElementItem totalPhotos(Long totalPhotos) {
+  public GoogleMapsMapsSearchSerpElementItem totalPhotos(BigDecimal totalPhotos) {
     this.totalPhotos = totalPhotos;
     return this;
   }
@@ -397,11 +398,11 @@ public class GoogleMapsMapsSearchSerpElementItem extends BaseGoogleMapsSerpEleme
    * @return totalPhotos
    */
   @javax.annotation.Nullable
-  public Long getTotalPhotos() {
+  public BigDecimal getTotalPhotos() {
     return totalPhotos;
   }
 
-  public void setTotalPhotos(Long totalPhotos) {
+  public void setTotalPhotos(BigDecimal totalPhotos) {
     this.totalPhotos = totalPhotos;
   }
 

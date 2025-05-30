@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
 |**title** | **String** | title of the hotel |  [optional] |
-|**price** | **Integer** | price per night |  [optional] |
+|**price** | **BigDecimal** | price per night |  [optional] |
 |**currency** | **String** | price currency USD is applied by default, unless specified in the POST array |  [optional] |
 |**url** | **String** | third-party page url URL to the third-party website page with pricing information |  [optional] |
 |**domain** | **String** | third-party domain domain of the third-party website page with pricing information |  [optional] |

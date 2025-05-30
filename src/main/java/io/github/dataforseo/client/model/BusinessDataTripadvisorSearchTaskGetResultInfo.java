@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseBusinessDataSerpElementItem;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataTripadvisorSearchTaskGetResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataTripadvisorSearchTaskGetResultInfo {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -64,7 +65,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private String locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -84,11 +85,11 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private Long seResultsCount;
+  private BigDecimal seResultsCount;
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private BigDecimal itemsCount;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -135,7 +136,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
   }
 
 
-  public BusinessDataTripadvisorSearchTaskGetResultInfo locationCode(String locationCode) {
+  public BusinessDataTripadvisorSearchTaskGetResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -145,11 +146,11 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public String getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(String locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -238,7 +239,7 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
   }
 
 
-  public BusinessDataTripadvisorSearchTaskGetResultInfo seResultsCount(Long seResultsCount) {
+  public BusinessDataTripadvisorSearchTaskGetResultInfo seResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
@@ -248,16 +249,16 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public Long getSeResultsCount() {
+  public BigDecimal getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(Long seResultsCount) {
+  public void setSeResultsCount(BigDecimal seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
 
-  public BusinessDataTripadvisorSearchTaskGetResultInfo itemsCount(Long itemsCount) {
+  public BusinessDataTripadvisorSearchTaskGetResultInfo itemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
@@ -267,11 +268,11 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public BigDecimal getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(BigDecimal itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -456,9 +457,6 @@ public class BusinessDataTripadvisorSearchTaskGetResultInfo {
       }
       if ((jsonObj.get("se_domain") != null && !jsonObj.get("se_domain").isJsonNull()) && !jsonObj.get("se_domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `se_domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("se_domain").toString()));
-      }
-      if ((jsonObj.get("location_code") != null && !jsonObj.get("location_code").isJsonNull()) && !jsonObj.get("location_code").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `location_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_code").toString()));
       }
       if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));

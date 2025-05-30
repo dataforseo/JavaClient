@@ -22,6 +22,7 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.BaseMerchantSerpElementItem;
 import io.github.dataforseo.client.model.RatingElement;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BuyOnGoogleMerchantSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementItem {
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
@@ -75,19 +76,19 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
 
   public static final String SERIALIZED_NAME_BASE_PRICE = "base_price";
   @SerializedName(SERIALIZED_NAME_BASE_PRICE)
-  private Integer basePrice;
+  private BigDecimal basePrice;
 
   public static final String SERIALIZED_NAME_TAX = "tax";
   @SerializedName(SERIALIZED_NAME_TAX)
-  private Integer tax;
+  private BigDecimal tax;
 
   public static final String SERIALIZED_NAME_SHIPPING_PRICE = "shipping_price";
   @SerializedName(SERIALIZED_NAME_SHIPPING_PRICE)
-  private Integer shippingPrice;
+  private BigDecimal shippingPrice;
 
   public static final String SERIALIZED_NAME_TOTAL_PRICE = "total_price";
   @SerializedName(SERIALIZED_NAME_TOTAL_PRICE)
-  private Long totalPrice;
+  private BigDecimal totalPrice;
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -203,7 +204,7 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
   }
 
 
-  public BuyOnGoogleMerchantSerpElementItem basePrice(Integer basePrice) {
+  public BuyOnGoogleMerchantSerpElementItem basePrice(BigDecimal basePrice) {
     this.basePrice = basePrice;
     return this;
   }
@@ -213,16 +214,16 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
    * @return basePrice
    */
   @javax.annotation.Nullable
-  public Integer getBasePrice() {
+  public BigDecimal getBasePrice() {
     return basePrice;
   }
 
-  public void setBasePrice(Integer basePrice) {
+  public void setBasePrice(BigDecimal basePrice) {
     this.basePrice = basePrice;
   }
 
 
-  public BuyOnGoogleMerchantSerpElementItem tax(Integer tax) {
+  public BuyOnGoogleMerchantSerpElementItem tax(BigDecimal tax) {
     this.tax = tax;
     return this;
   }
@@ -232,16 +233,16 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
    * @return tax
    */
   @javax.annotation.Nullable
-  public Integer getTax() {
+  public BigDecimal getTax() {
     return tax;
   }
 
-  public void setTax(Integer tax) {
+  public void setTax(BigDecimal tax) {
     this.tax = tax;
   }
 
 
-  public BuyOnGoogleMerchantSerpElementItem shippingPrice(Integer shippingPrice) {
+  public BuyOnGoogleMerchantSerpElementItem shippingPrice(BigDecimal shippingPrice) {
     this.shippingPrice = shippingPrice;
     return this;
   }
@@ -251,16 +252,16 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
    * @return shippingPrice
    */
   @javax.annotation.Nullable
-  public Integer getShippingPrice() {
+  public BigDecimal getShippingPrice() {
     return shippingPrice;
   }
 
-  public void setShippingPrice(Integer shippingPrice) {
+  public void setShippingPrice(BigDecimal shippingPrice) {
     this.shippingPrice = shippingPrice;
   }
 
 
-  public BuyOnGoogleMerchantSerpElementItem totalPrice(Long totalPrice) {
+  public BuyOnGoogleMerchantSerpElementItem totalPrice(BigDecimal totalPrice) {
     this.totalPrice = totalPrice;
     return this;
   }
@@ -270,11 +271,11 @@ public class BuyOnGoogleMerchantSerpElementItem extends BaseMerchantSerpElementI
    * @return totalPrice
    */
   @javax.annotation.Nullable
-  public Long getTotalPrice() {
+  public BigDecimal getTotalPrice() {
     return totalPrice;
   }
 
-  public void setTotalPrice(Long totalPrice) {
+  public void setTotalPrice(BigDecimal totalPrice) {
     this.totalPrice = totalPrice;
   }
 

@@ -20,12 +20,14 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AvgBacklinksInfo;
+import io.github.dataforseo.client.model.ClickstreamKeywordInfo;
 import io.github.dataforseo.client.model.KeywordInfo;
 import io.github.dataforseo.client.model.KeywordInfoNormalizedWithInfo;
 import io.github.dataforseo.client.model.KeywordProperties;
 import io.github.dataforseo.client.model.SearchIntentInfo;
 import io.github.dataforseo.client.model.SerpInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -55,7 +57,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleKeywordOverviewLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleKeywordOverviewLiveItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -67,7 +69,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -91,7 +93,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem {
 
   public static final String SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO = "clickstream_keyword_info";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_KEYWORD_INFO)
-  private Object clickstreamKeywordInfo = null;
+  private ClickstreamKeywordInfo clickstreamKeywordInfo;
 
   public static final String SERIALIZED_NAME_KEYWORD_PROPERTIES = "keyword_properties";
   @SerializedName(SERIALIZED_NAME_KEYWORD_PROPERTIES)
@@ -150,7 +152,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem {
   }
 
 
-  public DataforseoLabsGoogleKeywordOverviewLiveItem locationCode(Integer locationCode) {
+  public DataforseoLabsGoogleKeywordOverviewLiveItem locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -160,11 +162,11 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -264,7 +266,7 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem {
   }
 
 
-  public DataforseoLabsGoogleKeywordOverviewLiveItem clickstreamKeywordInfo(Object clickstreamKeywordInfo) {
+  public DataforseoLabsGoogleKeywordOverviewLiveItem clickstreamKeywordInfo(ClickstreamKeywordInfo clickstreamKeywordInfo) {
     this.clickstreamKeywordInfo = clickstreamKeywordInfo;
     return this;
   }
@@ -274,11 +276,11 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem {
    * @return clickstreamKeywordInfo
    */
   @javax.annotation.Nullable
-  public Object getClickstreamKeywordInfo() {
+  public ClickstreamKeywordInfo getClickstreamKeywordInfo() {
     return clickstreamKeywordInfo;
   }
 
-  public void setClickstreamKeywordInfo(Object clickstreamKeywordInfo) {
+  public void setClickstreamKeywordInfo(ClickstreamKeywordInfo clickstreamKeywordInfo) {
     this.clickstreamKeywordInfo = clickstreamKeywordInfo;
   }
 
@@ -536,6 +538,10 @@ public class DataforseoLabsGoogleKeywordOverviewLiveItem {
       // validate the optional field `keyword_info_normalized_with_clickstream`
       if (jsonObj.get("keyword_info_normalized_with_clickstream") != null && !jsonObj.get("keyword_info_normalized_with_clickstream").isJsonNull()) {
         KeywordInfoNormalizedWithInfo.validateJsonElement(jsonObj.get("keyword_info_normalized_with_clickstream"));
+      }
+      // validate the optional field `clickstream_keyword_info`
+      if (jsonObj.get("clickstream_keyword_info") != null && !jsonObj.get("clickstream_keyword_info").isJsonNull()) {
+        ClickstreamKeywordInfo.validateJsonElement(jsonObj.get("clickstream_keyword_info"));
       }
       // validate the optional field `keyword_properties`
       if (jsonObj.get("keyword_properties") != null && !jsonObj.get("keyword_properties").isJsonNull()) {

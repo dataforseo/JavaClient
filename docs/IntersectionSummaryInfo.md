@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**intersectionsCount** | **Long** | total number of intersections |  [optional] |
+|**intersectionsCount** | **BigDecimal** | total number of intersections |  [optional] |
 
 
 

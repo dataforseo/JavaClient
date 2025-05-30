@@ -7,12 +7,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**alternativeText** | **String** | content of the image alt attribute the value depends on the resource_type |  [optional] |
+|**alternativeText** | **String** | content of the image alt attribute |  [optional] |
 |**title** | **String** | title |  [optional] |
-|**originalWidth** | **Long** | original image width in px |  [optional] |
-|**originalHeight** | **Integer** | original image height in px |  [optional] |
-|**width** | **Long** | image width in px |  [optional] |
-|**height** | **Integer** | image height in px |  [optional] |
+|**originalWidth** | **Double** | original image width in px |  [optional] |
+|**originalHeight** | **Double** | original image height in px |  [optional] |
+|**width** | **Double** | image width in px |  [optional] |
+|**height** | **Double** | image height in px |  [optional] |
 
 
 

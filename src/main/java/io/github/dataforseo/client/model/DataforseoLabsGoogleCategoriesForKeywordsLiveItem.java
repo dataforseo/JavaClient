@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -51,7 +52,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * DataforseoLabsGoogleCategoriesForKeywordsLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class DataforseoLabsGoogleCategoriesForKeywordsLiveItem {
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
@@ -59,7 +60,7 @@ public class DataforseoLabsGoogleCategoriesForKeywordsLiveItem {
 
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
-  private List<Integer> categories;
+  private List<BigDecimal> categories;
 
   public DataforseoLabsGoogleCategoriesForKeywordsLiveItem() {
   }
@@ -83,12 +84,12 @@ public class DataforseoLabsGoogleCategoriesForKeywordsLiveItem {
   }
 
 
-  public DataforseoLabsGoogleCategoriesForKeywordsLiveItem categories(List<Integer> categories) {
+  public DataforseoLabsGoogleCategoriesForKeywordsLiveItem categories(List<BigDecimal> categories) {
     this.categories = categories;
     return this;
   }
 
-  public DataforseoLabsGoogleCategoriesForKeywordsLiveItem addCategoriesItem(Integer categoriesItem) {
+  public DataforseoLabsGoogleCategoriesForKeywordsLiveItem addCategoriesItem(BigDecimal categoriesItem) {
     if (this.categories == null) {
       this.categories = new ArrayList<>();
     }
@@ -101,11 +102,11 @@ public class DataforseoLabsGoogleCategoriesForKeywordsLiveItem {
    * @return categories
    */
   @javax.annotation.Nullable
-  public List<Integer> getCategories() {
+  public List<BigDecimal> getCategories() {
     return categories;
   }
 
-  public void setCategories(List<Integer> categories) {
+  public void setCategories(List<BigDecimal> categories) {
     this.categories = categories;
   }
 

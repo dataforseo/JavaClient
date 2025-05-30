@@ -24,6 +24,7 @@ import io.github.dataforseo.client.model.HotelLocationInfo;
 import io.github.dataforseo.client.model.HotelPriceInfo;
 import io.github.dataforseo.client.model.HotelReviewInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -55,7 +56,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo {
   public static final String SERIALIZED_NAME_HOTEL_IDENTIFIER = "hotel_identifier";
   @SerializedName(SERIALIZED_NAME_HOTEL_IDENTIFIER)
@@ -63,7 +64,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
+  private BigDecimal locationCode;
 
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
@@ -83,7 +84,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo {
 
   public static final String SERIALIZED_NAME_STARS = "stars";
   @SerializedName(SERIALIZED_NAME_STARS)
-  private Integer stars;
+  private BigDecimal stars;
 
   public static final String SERIALIZED_NAME_STARS_DESCRIPTION = "stars_description";
   @SerializedName(SERIALIZED_NAME_STARS_DESCRIPTION)
@@ -139,7 +140,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo {
   }
 
 
-  public BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo locationCode(Integer locationCode) {
+  public BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo locationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
     return this;
   }
@@ -149,11 +150,11 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo {
    * @return locationCode
    */
   @javax.annotation.Nullable
-  public Integer getLocationCode() {
+  public BigDecimal getLocationCode() {
     return locationCode;
   }
 
-  public void setLocationCode(Integer locationCode) {
+  public void setLocationCode(BigDecimal locationCode) {
     this.locationCode = locationCode;
   }
 
@@ -234,7 +235,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo {
   }
 
 
-  public BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo stars(Integer stars) {
+  public BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo stars(BigDecimal stars) {
     this.stars = stars;
     return this;
   }
@@ -244,11 +245,11 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo {
    * @return stars
    */
   @javax.annotation.Nullable
-  public Integer getStars() {
+  public BigDecimal getStars() {
     return stars;
   }
 
-  public void setStars(Integer stars) {
+  public void setStars(BigDecimal stars) {
     this.stars = stars;
   }
 

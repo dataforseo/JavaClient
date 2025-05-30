@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**position** | **String** | the alignment of the review in SERP can take the following values: right |  [optional] |
 |**url** | **String** | the URL of the review |  [optional] |
-|**rating** | [**RatingInfo**](RatingInfo.md) |  |  [optional] |
+|**rating** | [**BusinessDataRatingInfo**](BusinessDataRatingInfo.md) |  |  [optional] |
 |**verified** | **Boolean** | indicates whether the review has the “Verified” mark |  [optional] |
 |**language** | **String** | the language of the review |  [optional] |
 |**timestamp** | **String** | date and time when a review was published in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2019-11-15 12:57:46 +00:00 |  [optional] |

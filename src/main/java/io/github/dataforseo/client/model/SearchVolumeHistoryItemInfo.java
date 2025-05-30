@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,28 +50,28 @@ import io.github.dataforseo.client.JSON;
 /**
  * device type &#x3D; desktop contains historical search volume data for searches made from desktop devices
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class SearchVolumeHistoryItemInfo {
   public static final String SERIALIZED_NAME_YEAR = "year";
   @SerializedName(SERIALIZED_NAME_YEAR)
-  private Integer year;
+  private BigDecimal year;
 
   public static final String SERIALIZED_NAME_MONTH = "month";
   @SerializedName(SERIALIZED_NAME_MONTH)
-  private Integer month;
+  private BigDecimal month;
 
   public static final String SERIALIZED_NAME_DAY = "day";
   @SerializedName(SERIALIZED_NAME_DAY)
-  private Integer day;
+  private BigDecimal day;
 
   public static final String SERIALIZED_NAME_SEARCH_VOLUME = "search_volume";
   @SerializedName(SERIALIZED_NAME_SEARCH_VOLUME)
-  private Long searchVolume;
+  private BigDecimal searchVolume;
 
   public SearchVolumeHistoryItemInfo() {
   }
 
-  public SearchVolumeHistoryItemInfo year(Integer year) {
+  public SearchVolumeHistoryItemInfo year(BigDecimal year) {
     this.year = year;
     return this;
   }
@@ -80,16 +81,16 @@ public class SearchVolumeHistoryItemInfo {
    * @return year
    */
   @javax.annotation.Nullable
-  public Integer getYear() {
+  public BigDecimal getYear() {
     return year;
   }
 
-  public void setYear(Integer year) {
+  public void setYear(BigDecimal year) {
     this.year = year;
   }
 
 
-  public SearchVolumeHistoryItemInfo month(Integer month) {
+  public SearchVolumeHistoryItemInfo month(BigDecimal month) {
     this.month = month;
     return this;
   }
@@ -99,16 +100,16 @@ public class SearchVolumeHistoryItemInfo {
    * @return month
    */
   @javax.annotation.Nullable
-  public Integer getMonth() {
+  public BigDecimal getMonth() {
     return month;
   }
 
-  public void setMonth(Integer month) {
+  public void setMonth(BigDecimal month) {
     this.month = month;
   }
 
 
-  public SearchVolumeHistoryItemInfo day(Integer day) {
+  public SearchVolumeHistoryItemInfo day(BigDecimal day) {
     this.day = day;
     return this;
   }
@@ -118,16 +119,16 @@ public class SearchVolumeHistoryItemInfo {
    * @return day
    */
   @javax.annotation.Nullable
-  public Integer getDay() {
+  public BigDecimal getDay() {
     return day;
   }
 
-  public void setDay(Integer day) {
+  public void setDay(BigDecimal day) {
     this.day = day;
   }
 
 
-  public SearchVolumeHistoryItemInfo searchVolume(Long searchVolume) {
+  public SearchVolumeHistoryItemInfo searchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
     return this;
   }
@@ -137,11 +138,11 @@ public class SearchVolumeHistoryItemInfo {
    * @return searchVolume
    */
   @javax.annotation.Nullable
-  public Long getSearchVolume() {
+  public BigDecimal getSearchVolume() {
     return searchVolume;
   }
 
-  public void setSearchVolume(Long searchVolume) {
+  public void setSearchVolume(BigDecimal searchVolume) {
     this.searchVolume = searchVolume;
   }
 

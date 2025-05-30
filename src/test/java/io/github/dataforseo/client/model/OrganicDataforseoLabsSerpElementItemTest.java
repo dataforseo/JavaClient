@@ -21,16 +21,15 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AboutThisResultElement;
 import io.github.dataforseo.client.model.BacklinksInfo;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.LinkElement;
 import io.github.dataforseo.client.model.RankChanges;
 import io.github.dataforseo.client.model.RankInfo;
-import io.github.dataforseo.client.model.RatingInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -255,14 +254,6 @@ public class OrganicDataforseoLabsSerpElementItemTest {
     @Test
     public void etvTest() {
         // TODO: test etv
-    }
-
-    /**
-     * Test the property 'impressionsEtv'
-     */
-    @Test
-    public void impressionsEtvTest() {
-        // TODO: test impressionsEtv
     }
 
     /**

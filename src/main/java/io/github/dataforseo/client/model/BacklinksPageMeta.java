@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -53,7 +54,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksPageMeta
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksPageMeta {
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
@@ -65,23 +66,23 @@ public class BacklinksPageMeta {
 
   public static final String SERIALIZED_NAME_INTERNAL_LINKS_COUNT = "internal_links_count";
   @SerializedName(SERIALIZED_NAME_INTERNAL_LINKS_COUNT)
-  private Long internalLinksCount;
+  private BigDecimal internalLinksCount;
 
   public static final String SERIALIZED_NAME_EXTERNAL_LINKS_COUNT = "external_links_count";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_LINKS_COUNT)
-  private Long externalLinksCount;
+  private BigDecimal externalLinksCount;
 
   public static final String SERIALIZED_NAME_IMAGES_COUNT = "images_count";
   @SerializedName(SERIALIZED_NAME_IMAGES_COUNT)
-  private Long imagesCount;
+  private BigDecimal imagesCount;
 
   public static final String SERIALIZED_NAME_WORDS_COUNT = "words_count";
   @SerializedName(SERIALIZED_NAME_WORDS_COUNT)
-  private Long wordsCount;
+  private BigDecimal wordsCount;
 
   public static final String SERIALIZED_NAME_PAGE_SPAM_SCORE = "page_spam_score";
   @SerializedName(SERIALIZED_NAME_PAGE_SPAM_SCORE)
-  private Integer pageSpamScore;
+  private BigDecimal pageSpamScore;
 
   public static final String SERIALIZED_NAME_SOCIAL_MEDIA_TAGS = "social_media_tags";
   @SerializedName(SERIALIZED_NAME_SOCIAL_MEDIA_TAGS)
@@ -164,7 +165,7 @@ public class BacklinksPageMeta {
   }
 
 
-  public BacklinksPageMeta internalLinksCount(Long internalLinksCount) {
+  public BacklinksPageMeta internalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
     return this;
   }
@@ -174,16 +175,16 @@ public class BacklinksPageMeta {
    * @return internalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getInternalLinksCount() {
+  public BigDecimal getInternalLinksCount() {
     return internalLinksCount;
   }
 
-  public void setInternalLinksCount(Long internalLinksCount) {
+  public void setInternalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
   }
 
 
-  public BacklinksPageMeta externalLinksCount(Long externalLinksCount) {
+  public BacklinksPageMeta externalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
     return this;
   }
@@ -193,16 +194,16 @@ public class BacklinksPageMeta {
    * @return externalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getExternalLinksCount() {
+  public BigDecimal getExternalLinksCount() {
     return externalLinksCount;
   }
 
-  public void setExternalLinksCount(Long externalLinksCount) {
+  public void setExternalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
   }
 
 
-  public BacklinksPageMeta imagesCount(Long imagesCount) {
+  public BacklinksPageMeta imagesCount(BigDecimal imagesCount) {
     this.imagesCount = imagesCount;
     return this;
   }
@@ -212,16 +213,16 @@ public class BacklinksPageMeta {
    * @return imagesCount
    */
   @javax.annotation.Nullable
-  public Long getImagesCount() {
+  public BigDecimal getImagesCount() {
     return imagesCount;
   }
 
-  public void setImagesCount(Long imagesCount) {
+  public void setImagesCount(BigDecimal imagesCount) {
     this.imagesCount = imagesCount;
   }
 
 
-  public BacklinksPageMeta wordsCount(Long wordsCount) {
+  public BacklinksPageMeta wordsCount(BigDecimal wordsCount) {
     this.wordsCount = wordsCount;
     return this;
   }
@@ -231,16 +232,16 @@ public class BacklinksPageMeta {
    * @return wordsCount
    */
   @javax.annotation.Nullable
-  public Long getWordsCount() {
+  public BigDecimal getWordsCount() {
     return wordsCount;
   }
 
-  public void setWordsCount(Long wordsCount) {
+  public void setWordsCount(BigDecimal wordsCount) {
     this.wordsCount = wordsCount;
   }
 
 
-  public BacklinksPageMeta pageSpamScore(Integer pageSpamScore) {
+  public BacklinksPageMeta pageSpamScore(BigDecimal pageSpamScore) {
     this.pageSpamScore = pageSpamScore;
     return this;
   }
@@ -250,11 +251,11 @@ public class BacklinksPageMeta {
    * @return pageSpamScore
    */
   @javax.annotation.Nullable
-  public Integer getPageSpamScore() {
+  public BigDecimal getPageSpamScore() {
     return pageSpamScore;
   }
 
-  public void setPageSpamScore(Integer pageSpamScore) {
+  public void setPageSpamScore(BigDecimal pageSpamScore) {
     this.pageSpamScore = pageSpamScore;
   }
 

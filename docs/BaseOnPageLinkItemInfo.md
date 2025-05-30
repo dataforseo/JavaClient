@@ -20,6 +20,7 @@
 |**direction** | **String** | direction of the link possible values: internal, external |  [optional] |
 |**isBroken** | **Boolean** | link is broken indicates whether a link is directing to a broken page or resource |  [optional] |
 |**isLinkRelationConflict** | **Boolean** | indicates that the link may have a conflict with another link if true, at least one link pointing to link_to has a rel&#x3D;\&quot;nofollow\&quot; attribute and at least one is dofollow |  [optional] |
+|**pageToStatusCode** | **BigDecimal** | status code of the referenced page status code of the page to which the link is pointing |  [optional] |
 
 
 

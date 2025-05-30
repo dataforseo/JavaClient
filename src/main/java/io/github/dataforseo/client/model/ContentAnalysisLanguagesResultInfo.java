@@ -20,6 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.openapitools.jackson.nullable.JsonNullable;
 
@@ -49,54 +50,123 @@ import io.github.dataforseo.client.JSON;
 /**
  * ContentAnalysisLanguagesResultInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class ContentAnalysisLanguagesResultInfo {
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
+  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
+  private BigDecimal locationCode;
 
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
+  private BigDecimal locationCodeParent;
+
+  public static final String SERIALIZED_NAME_COUNTRY_ISO_CODE = "country_iso_code";
+  @SerializedName(SERIALIZED_NAME_COUNTRY_ISO_CODE)
+  private String countryIsoCode;
+
+  public static final String SERIALIZED_NAME_LOCATION_TYPE = "location_type";
+  @SerializedName(SERIALIZED_NAME_LOCATION_TYPE)
+  private String locationType;
 
   public ContentAnalysisLanguagesResultInfo() {
   }
 
-  public ContentAnalysisLanguagesResultInfo languageName(String languageName) {
-    this.languageName = languageName;
+  public ContentAnalysisLanguagesResultInfo locationCode(BigDecimal locationCode) {
+    this.locationCode = locationCode;
     return this;
   }
 
   /**
-   * language name
-   * @return languageName
+   * Get locationCode
+   * @return locationCode
    */
   @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
+  public BigDecimal getLocationCode() {
+    return locationCode;
   }
 
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
+  public void setLocationCode(BigDecimal locationCode) {
+    this.locationCode = locationCode;
   }
 
 
-  public ContentAnalysisLanguagesResultInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
+  public ContentAnalysisLanguagesResultInfo locationName(String locationName) {
+    this.locationName = locationName;
     return this;
   }
 
   /**
-   * language code according to ISO 639-1
-   * @return languageCode
+   * Get locationName
+   * @return locationName
    */
   @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
+  public String getLocationName() {
+    return locationName;
   }
 
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public ContentAnalysisLanguagesResultInfo locationCodeParent(BigDecimal locationCodeParent) {
+    this.locationCodeParent = locationCodeParent;
+    return this;
+  }
+
+  /**
+   * Get locationCodeParent
+   * @return locationCodeParent
+   */
+  @javax.annotation.Nullable
+  public BigDecimal getLocationCodeParent() {
+    return locationCodeParent;
+  }
+
+  public void setLocationCodeParent(BigDecimal locationCodeParent) {
+    this.locationCodeParent = locationCodeParent;
+  }
+
+
+  public ContentAnalysisLanguagesResultInfo countryIsoCode(String countryIsoCode) {
+    this.countryIsoCode = countryIsoCode;
+    return this;
+  }
+
+  /**
+   * Get countryIsoCode
+   * @return countryIsoCode
+   */
+  @javax.annotation.Nullable
+  public String getCountryIsoCode() {
+    return countryIsoCode;
+  }
+
+  public void setCountryIsoCode(String countryIsoCode) {
+    this.countryIsoCode = countryIsoCode;
+  }
+
+
+  public ContentAnalysisLanguagesResultInfo locationType(String locationType) {
+    this.locationType = locationType;
+    return this;
+  }
+
+  /**
+   * Get locationType
+   * @return locationType
+   */
+  @javax.annotation.Nullable
+  public String getLocationType() {
+    return locationType;
+  }
+
+  public void setLocationType(String locationType) {
+    this.locationType = locationType;
   }
 
   /**
@@ -154,8 +224,11 @@ public class ContentAnalysisLanguagesResultInfo {
       return false;
     }
     ContentAnalysisLanguagesResultInfo contentAnalysisLanguagesResultInfo = (ContentAnalysisLanguagesResultInfo) o;
-    return Objects.equals(this.languageName, contentAnalysisLanguagesResultInfo.languageName) &&
-        Objects.equals(this.languageCode, contentAnalysisLanguagesResultInfo.languageCode)&&
+    return Objects.equals(this.locationCode, contentAnalysisLanguagesResultInfo.locationCode) &&
+        Objects.equals(this.locationName, contentAnalysisLanguagesResultInfo.locationName) &&
+        Objects.equals(this.locationCodeParent, contentAnalysisLanguagesResultInfo.locationCodeParent) &&
+        Objects.equals(this.countryIsoCode, contentAnalysisLanguagesResultInfo.countryIsoCode) &&
+        Objects.equals(this.locationType, contentAnalysisLanguagesResultInfo.locationType)&&
         Objects.equals(this.additionalProperties, contentAnalysisLanguagesResultInfo.additionalProperties);
   }
 
@@ -165,7 +238,7 @@ public class ContentAnalysisLanguagesResultInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(languageName, languageCode, additionalProperties);
+    return Objects.hash(locationCode, locationName, locationCodeParent, countryIsoCode, locationType, additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -179,8 +252,11 @@ public class ContentAnalysisLanguagesResultInfo {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ContentAnalysisLanguagesResultInfo {\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    locationCodeParent: ").append(toIndentedString(locationCodeParent)).append("\n");
+    sb.append("    countryIsoCode: ").append(toIndentedString(countryIsoCode)).append("\n");
+    sb.append("    locationType: ").append(toIndentedString(locationType)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -204,8 +280,11 @@ public class ContentAnalysisLanguagesResultInfo {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
-    openapiFields.add("language_name");
-    openapiFields.add("language_code");
+    openapiFields.add("location_code");
+    openapiFields.add("location_name");
+    openapiFields.add("location_code_parent");
+    openapiFields.add("country_iso_code");
+    openapiFields.add("location_type");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -224,11 +303,14 @@ public class ContentAnalysisLanguagesResultInfo {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("language_name") != null && !jsonObj.get("language_name").isJsonNull()) && !jsonObj.get("language_name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `language_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_name").toString()));
+      if ((jsonObj.get("location_name") != null && !jsonObj.get("location_name").isJsonNull()) && !jsonObj.get("location_name").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `location_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_name").toString()));
       }
-      if ((jsonObj.get("language_code") != null && !jsonObj.get("language_code").isJsonNull()) && !jsonObj.get("language_code").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `language_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("language_code").toString()));
+      if ((jsonObj.get("country_iso_code") != null && !jsonObj.get("country_iso_code").isJsonNull()) && !jsonObj.get("country_iso_code").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `country_iso_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("country_iso_code").toString()));
+      }
+      if ((jsonObj.get("location_type") != null && !jsonObj.get("location_type").isJsonNull()) && !jsonObj.get("location_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `location_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("location_type").toString()));
       }
   }
 

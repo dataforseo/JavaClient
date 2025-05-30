@@ -22,16 +22,15 @@ import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.AboutThisResultElement;
 import io.github.dataforseo.client.model.BacklinksInfo;
 import io.github.dataforseo.client.model.BaseDataforseoLabsSerpElementItem;
+import io.github.dataforseo.client.model.BusinessDataRatingInfo;
 import io.github.dataforseo.client.model.LinkElement;
 import io.github.dataforseo.client.model.RankChanges;
 import io.github.dataforseo.client.model.RankInfo;
-import io.github.dataforseo.client.model.RatingInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -60,7 +59,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * OrganicDataforseoLabsSerpElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerpElementItem {
   public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
   @SerializedName(SERIALIZED_NAME_SE_TYPE)
@@ -120,7 +119,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private BusinessDataRatingInfo rating;
 
   public static final String SERIALIZED_NAME_HIGHLIGHTED = "highlighted";
   @SerializedName(SERIALIZED_NAME_HIGHLIGHTED)
@@ -132,7 +131,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
-  private Map<String, AboutThisResultElement> aboutThisResult;
+  private AboutThisResultElement aboutThisResult;
 
   public static final String SERIALIZED_NAME_MAIN_DOMAIN = "main_domain";
   @SerializedName(SERIALIZED_NAME_MAIN_DOMAIN)
@@ -146,17 +145,13 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   @SerializedName(SERIALIZED_NAME_ETV)
   private Float etv;
 
-  public static final String SERIALIZED_NAME_IMPRESSIONS_ETV = "impressions_etv";
-  @SerializedName(SERIALIZED_NAME_IMPRESSIONS_ETV)
-  private Float impressionsEtv;
-
   public static final String SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST = "estimated_paid_traffic_cost";
   @SerializedName(SERIALIZED_NAME_ESTIMATED_PAID_TRAFFIC_COST)
   private Float estimatedPaidTrafficCost;
 
   public static final String SERIALIZED_NAME_CLICKSTREAM_ETV = "clickstream_etv";
   @SerializedName(SERIALIZED_NAME_CLICKSTREAM_ETV)
-  private Integer clickstreamEtv;
+  private Double clickstreamEtv;
 
   public static final String SERIALIZED_NAME_RANK_CHANGES = "rank_changes";
   @SerializedName(SERIALIZED_NAME_RANK_CHANGES)
@@ -198,7 +193,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
   /**
-   * subdomain in SERP
+   * domain in SERP of the Ad element
    * @return domain
    */
   @javax.annotation.Nullable
@@ -236,7 +231,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
   /**
-   * relevant URL in SERP
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -274,7 +269,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
   /**
-   * relevant website name in SERP
+   * Get websiteName
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -439,7 +434,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem rating(RatingInfo rating) {
+  public OrganicDataforseoLabsSerpElementItem rating(BusinessDataRatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -449,11 +444,11 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public BusinessDataRatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(BusinessDataRatingInfo rating) {
     this.rating = rating;
   }
 
@@ -512,29 +507,21 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem aboutThisResult(Map<String, AboutThisResultElement> aboutThisResult) {
+  public OrganicDataforseoLabsSerpElementItem aboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
     return this;
   }
 
-  public OrganicDataforseoLabsSerpElementItem putAboutThisResultItem(String key, AboutThisResultElement aboutThisResultItem) {
-    if (this.aboutThisResult == null) {
-      this.aboutThisResult = new HashMap<>();
-    }
-    this.aboutThisResult.put(key, aboutThisResultItem);
-    return this;
-  }
-
   /**
-   * contains information from the ‘About this result’ panel ‘About this result’ panel provides additional context about why Google returned this result for the given query; this feature appears after clicking on the three dots next to most results
+   * Get aboutThisResult
    * @return aboutThisResult
    */
   @javax.annotation.Nullable
-  public Map<String, AboutThisResultElement> getAboutThisResult() {
+  public AboutThisResultElement getAboutThisResult() {
     return aboutThisResult;
   }
 
-  public void setAboutThisResult(Map<String, AboutThisResultElement> aboutThisResult) {
+  public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }
 
@@ -583,7 +570,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
   /**
-   * estimated traffic volume estimated paid monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
+   * estimated traffic volume estimated organic monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword learn more about how the metric is calculated in this help center article
    * @return etv
    */
   @javax.annotation.Nullable
@@ -596,32 +583,13 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem impressionsEtv(Float impressionsEtv) {
-    this.impressionsEtv = impressionsEtv;
-    return this;
-  }
-
-  /**
-   * estimated traffic volume based on impressions estimated paid monthly traffic to the domain calculated as the product of CTR (click-through-rate) and impressions values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
-   * @return impressionsEtv
-   */
-  @javax.annotation.Nullable
-  public Float getImpressionsEtv() {
-    return impressionsEtv;
-  }
-
-  public void setImpressionsEtv(Float impressionsEtv) {
-    this.impressionsEtv = impressionsEtv;
-  }
-
-
   public OrganicDataforseoLabsSerpElementItem estimatedPaidTrafficCost(Float estimatedPaidTrafficCost) {
     this.estimatedPaidTrafficCost = estimatedPaidTrafficCost;
     return this;
   }
 
   /**
-   * estimated cost of monthly search traffic represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for learn more about how the metric is calculated in this help center article
+   * estimated cost of paid monthly search traffic represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable
@@ -634,7 +602,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
   }
 
 
-  public OrganicDataforseoLabsSerpElementItem clickstreamEtv(Integer clickstreamEtv) {
+  public OrganicDataforseoLabsSerpElementItem clickstreamEtv(Double clickstreamEtv) {
     this.clickstreamEtv = clickstreamEtv;
     return this;
   }
@@ -644,11 +612,11 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
-  public Integer getClickstreamEtv() {
+  public Double getClickstreamEtv() {
     return clickstreamEtv;
   }
 
-  public void setClickstreamEtv(Integer clickstreamEtv) {
+  public void setClickstreamEtv(Double clickstreamEtv) {
     this.clickstreamEtv = clickstreamEtv;
   }
 
@@ -785,7 +753,6 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
         Objects.equals(this.mainDomain, organicDataforseoLabsSerpElementItem.mainDomain) &&
         Objects.equals(this.relativeUrl, organicDataforseoLabsSerpElementItem.relativeUrl) &&
         Objects.equals(this.etv, organicDataforseoLabsSerpElementItem.etv) &&
-        Objects.equals(this.impressionsEtv, organicDataforseoLabsSerpElementItem.impressionsEtv) &&
         Objects.equals(this.estimatedPaidTrafficCost, organicDataforseoLabsSerpElementItem.estimatedPaidTrafficCost) &&
         Objects.equals(this.clickstreamEtv, organicDataforseoLabsSerpElementItem.clickstreamEtv) &&
         Objects.equals(this.rankChanges, organicDataforseoLabsSerpElementItem.rankChanges) &&
@@ -801,7 +768,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
 
   @Override
   public int hashCode() {
-    return Objects.hash(seType, domain, title, url, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, description, preSnippet, extendedSnippet, ampVersion, rating, highlighted, links, aboutThisResult, mainDomain, relativeUrl, etv, impressionsEtv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo, super.hashCode(), additionalProperties);
+    return Objects.hash(seType, domain, title, url, breadcrumb, websiteName, isImage, isVideo, isFeaturedSnippet, isMalicious, description, preSnippet, extendedSnippet, ampVersion, rating, highlighted, links, aboutThisResult, mainDomain, relativeUrl, etv, estimatedPaidTrafficCost, clickstreamEtv, rankChanges, backlinksInfo, rankInfo, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -837,7 +804,6 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
     sb.append("    mainDomain: ").append(toIndentedString(mainDomain)).append("\n");
     sb.append("    relativeUrl: ").append(toIndentedString(relativeUrl)).append("\n");
     sb.append("    etv: ").append(toIndentedString(etv)).append("\n");
-    sb.append("    impressionsEtv: ").append(toIndentedString(impressionsEtv)).append("\n");
     sb.append("    estimatedPaidTrafficCost: ").append(toIndentedString(estimatedPaidTrafficCost)).append("\n");
     sb.append("    clickstreamEtv: ").append(toIndentedString(clickstreamEtv)).append("\n");
     sb.append("    rankChanges: ").append(toIndentedString(rankChanges)).append("\n");
@@ -892,7 +858,6 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
     openapiFields.add("main_domain");
     openapiFields.add("relative_url");
     openapiFields.add("etv");
-    openapiFields.add("impressions_etv");
     openapiFields.add("estimated_paid_traffic_cost");
     openapiFields.add("clickstream_etv");
     openapiFields.add("rank_changes");
@@ -945,7 +910,7 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
       }
       // validate the optional field `rating`
       if (jsonObj.get("rating") != null && !jsonObj.get("rating").isJsonNull()) {
-        RatingInfo.validateJsonElement(jsonObj.get("rating"));
+        BusinessDataRatingInfo.validateJsonElement(jsonObj.get("rating"));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("highlighted") != null && !jsonObj.get("highlighted").isJsonNull() && !jsonObj.get("highlighted").isJsonArray()) {
@@ -964,6 +929,10 @@ public class OrganicDataforseoLabsSerpElementItem extends BaseDataforseoLabsSerp
             LinkElement.validateJsonElement(jsonArraylinks.get(i));
           };
         }
+      }
+      // validate the optional field `about_this_result`
+      if (jsonObj.get("about_this_result") != null && !jsonObj.get("about_this_result").isJsonNull()) {
+        AboutThisResultElement.validateJsonElement(jsonObj.get("about_this_result"));
       }
       if ((jsonObj.get("main_domain") != null && !jsonObj.get("main_domain").isJsonNull()) && !jsonObj.get("main_domain").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `main_domain` to be a primitive type in the JSON string but got `%s`", jsonObj.get("main_domain").toString()));

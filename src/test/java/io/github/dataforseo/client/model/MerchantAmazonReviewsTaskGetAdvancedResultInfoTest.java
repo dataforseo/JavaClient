@@ -23,6 +23,7 @@ import io.github.dataforseo.client.model.ImagesElement;
 import io.github.dataforseo.client.model.RatingElement;
 import io.github.dataforseo.client.model.SpellInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

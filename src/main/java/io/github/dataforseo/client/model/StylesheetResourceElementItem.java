@@ -26,6 +26,7 @@ import io.github.dataforseo.client.model.LastModified;
 import io.github.dataforseo.client.model.OnPageResourceIssueInfo;
 import io.github.dataforseo.client.model.ResourceMetaInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -57,7 +58,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * StylesheetResourceElementItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_META = "meta";
   @SerializedName(SERIALIZED_NAME_META)
@@ -70,26 +71,6 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
   public static final String SERIALIZED_NAME_ACCEPT_TYPE = "accept_type";
   @SerializedName(SERIALIZED_NAME_ACCEPT_TYPE)
   private String acceptType;
-
-  public static final String SERIALIZED_NAME_INITIATOR = "initiator";
-  @SerializedName(SERIALIZED_NAME_INITIATOR)
-  private String initiator;
-
-  public static final String SERIALIZED_NAME_DURATION_TIME = "duration_time";
-  @SerializedName(SERIALIZED_NAME_DURATION_TIME)
-  private Integer durationTime;
-
-  public static final String SERIALIZED_NAME_FETCH_START = "fetch_start";
-  @SerializedName(SERIALIZED_NAME_FETCH_START)
-  private Integer fetchStart;
-
-  public static final String SERIALIZED_NAME_FETCH_END = "fetch_end";
-  @SerializedName(SERIALIZED_NAME_FETCH_END)
-  private Integer fetchEnd;
-
-  public static final String SERIALIZED_NAME_IS_RENDER_BLOCKING = "is_render_blocking";
-  @SerializedName(SERIALIZED_NAME_IS_RENDER_BLOCKING)
-  private Boolean isRenderBlocking;
 
   public StylesheetResourceElementItem() {
   }
@@ -150,101 +131,6 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
     this.acceptType = acceptType;
   }
 
-
-  public StylesheetResourceElementItem initiator(String initiator) {
-    this.initiator = initiator;
-    return this;
-  }
-
-  /**
-   * resource initiator
-   * @return initiator
-   */
-  @javax.annotation.Nullable
-  public String getInitiator() {
-    return initiator;
-  }
-
-  public void setInitiator(String initiator) {
-    this.initiator = initiator;
-  }
-
-
-  public StylesheetResourceElementItem durationTime(Integer durationTime) {
-    this.durationTime = durationTime;
-    return this;
-  }
-
-  /**
-   * total time it takes until a browser receives a complete response from a server (in milliseconds)
-   * @return durationTime
-   */
-  @javax.annotation.Nullable
-  public Integer getDurationTime() {
-    return durationTime;
-  }
-
-  public void setDurationTime(Integer durationTime) {
-    this.durationTime = durationTime;
-  }
-
-
-  public StylesheetResourceElementItem fetchStart(Integer fetchStart) {
-    this.fetchStart = fetchStart;
-    return this;
-  }
-
-  /**
-   * time to start downloading the resource the amount of time the browser needs to start downloading a resource
-   * @return fetchStart
-   */
-  @javax.annotation.Nullable
-  public Integer getFetchStart() {
-    return fetchStart;
-  }
-
-  public void setFetchStart(Integer fetchStart) {
-    this.fetchStart = fetchStart;
-  }
-
-
-  public StylesheetResourceElementItem fetchEnd(Integer fetchEnd) {
-    this.fetchEnd = fetchEnd;
-    return this;
-  }
-
-  /**
-   * time to complete downloading the resource the amount of time the browser needs to complete downloading a resource
-   * @return fetchEnd
-   */
-  @javax.annotation.Nullable
-  public Integer getFetchEnd() {
-    return fetchEnd;
-  }
-
-  public void setFetchEnd(Integer fetchEnd) {
-    this.fetchEnd = fetchEnd;
-  }
-
-
-  public StylesheetResourceElementItem isRenderBlocking(Boolean isRenderBlocking) {
-    this.isRenderBlocking = isRenderBlocking;
-    return this;
-  }
-
-  /**
-   * indicates whether the resource blocks rendering
-   * @return isRenderBlocking
-   */
-  @javax.annotation.Nullable
-  public Boolean getIsRenderBlocking() {
-    return isRenderBlocking;
-  }
-
-  public void setIsRenderBlocking(Boolean isRenderBlocking) {
-    this.isRenderBlocking = isRenderBlocking;
-  }
-
   /**
    * A container for additional, undeclared properties.
    * This is a holder for any undeclared properties as specified with
@@ -302,12 +188,7 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
     StylesheetResourceElementItem stylesheetResourceElementItem = (StylesheetResourceElementItem) o;
     return Objects.equals(this.meta, stylesheetResourceElementItem.meta) &&
         Objects.equals(this.fetchTiming, stylesheetResourceElementItem.fetchTiming) &&
-        Objects.equals(this.acceptType, stylesheetResourceElementItem.acceptType) &&
-        Objects.equals(this.initiator, stylesheetResourceElementItem.initiator) &&
-        Objects.equals(this.durationTime, stylesheetResourceElementItem.durationTime) &&
-        Objects.equals(this.fetchStart, stylesheetResourceElementItem.fetchStart) &&
-        Objects.equals(this.fetchEnd, stylesheetResourceElementItem.fetchEnd) &&
-        Objects.equals(this.isRenderBlocking, stylesheetResourceElementItem.isRenderBlocking)&&
+        Objects.equals(this.acceptType, stylesheetResourceElementItem.acceptType)&&
         Objects.equals(this.additionalProperties, stylesheetResourceElementItem.additionalProperties) &&
         super.equals(o);
   }
@@ -318,7 +199,7 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(meta, fetchTiming, acceptType, initiator, durationTime, fetchStart, fetchEnd, isRenderBlocking, super.hashCode(), additionalProperties);
+    return Objects.hash(meta, fetchTiming, acceptType, super.hashCode(), additionalProperties);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -336,11 +217,6 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
     sb.append("    meta: ").append(toIndentedString(meta)).append("\n");
     sb.append("    fetchTiming: ").append(toIndentedString(fetchTiming)).append("\n");
     sb.append("    acceptType: ").append(toIndentedString(acceptType)).append("\n");
-    sb.append("    initiator: ").append(toIndentedString(initiator)).append("\n");
-    sb.append("    durationTime: ").append(toIndentedString(durationTime)).append("\n");
-    sb.append("    fetchStart: ").append(toIndentedString(fetchStart)).append("\n");
-    sb.append("    fetchEnd: ").append(toIndentedString(fetchEnd)).append("\n");
-    sb.append("    isRenderBlocking: ").append(toIndentedString(isRenderBlocking)).append("\n");
     sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -382,11 +258,6 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
     openapiFields.add("meta");
     openapiFields.add("fetch_timing");
     openapiFields.add("accept_type");
-    openapiFields.add("initiator");
-    openapiFields.add("duration_time");
-    openapiFields.add("fetch_start");
-    openapiFields.add("fetch_end");
-    openapiFields.add("is_render_blocking");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -415,9 +286,6 @@ public class StylesheetResourceElementItem extends BaseOnPageResourceItemInfo {
       }
       if ((jsonObj.get("accept_type") != null && !jsonObj.get("accept_type").isJsonNull()) && !jsonObj.get("accept_type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `accept_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("accept_type").toString()));
-      }
-      if ((jsonObj.get("initiator") != null && !jsonObj.get("initiator").isJsonNull()) && !jsonObj.get("initiator").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `initiator` to be a primitive type in the JSON string but got `%s`", jsonObj.get("initiator").toString()));
       }
   }
 

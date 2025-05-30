@@ -13,7 +13,7 @@ items array
 |**title** | **String** | domain meta title |  [optional] |
 |**description** | **String** | domain meta description |  [optional] |
 |**metaKeywords** | **List&lt;String&gt;** | domain meta keywords |  [optional] |
-|**domainRank** | **String** | backlink rank of the target domain learn more about the metric and how it is calculated in this help center article |  [optional] |
+|**domainRank** | **BigDecimal** | backlink rank of the target domain learn more about the metric and how it is calculated in this help center article |  [optional] |
 |**lastVisited** | **String** | most recent date when our crawler visited the domain in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2022-10-10 12:57:46 +00:00 |  [optional] |
 |**countryIsoCode** | **String** | domain ISO code ISO code of the country that target domain is determined to belong to |  [optional] |
 |**languageCode** | **String** | domain language code of the language that target domain is determined to be associated with |  [optional] |

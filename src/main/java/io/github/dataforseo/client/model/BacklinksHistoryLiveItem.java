@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.github.dataforseo.client.model.TargetInfo;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -52,7 +53,7 @@ import io.github.dataforseo.client.JSON;
 /**
  * BacklinksHistoryLiveItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-04-20T19:00:02.019506800+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-05-30T15:21:14.476580900+03:00[Europe/Kiev]", comments = "Generator version: 7.8.0")
 public class BacklinksHistoryLiveItem {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -64,31 +65,31 @@ public class BacklinksHistoryLiveItem {
 
   public static final String SERIALIZED_NAME_RANK = "rank";
   @SerializedName(SERIALIZED_NAME_RANK)
-  private Integer rank;
+  private BigDecimal rank;
 
   public static final String SERIALIZED_NAME_BACKLINKS = "backlinks";
   @SerializedName(SERIALIZED_NAME_BACKLINKS)
-  private Long backlinks;
+  private BigDecimal backlinks;
 
   public static final String SERIALIZED_NAME_NEW_BACKLINKS = "new_backlinks";
   @SerializedName(SERIALIZED_NAME_NEW_BACKLINKS)
-  private Long newBacklinks;
+  private BigDecimal newBacklinks;
 
   public static final String SERIALIZED_NAME_LOST_BACKLINKS = "lost_backlinks";
   @SerializedName(SERIALIZED_NAME_LOST_BACKLINKS)
-  private Long lostBacklinks;
+  private BigDecimal lostBacklinks;
 
   public static final String SERIALIZED_NAME_NEW_REFERRING_DOMAINS = "new_referring_domains";
   @SerializedName(SERIALIZED_NAME_NEW_REFERRING_DOMAINS)
-  private Long newReferringDomains;
+  private BigDecimal newReferringDomains;
 
   public static final String SERIALIZED_NAME_LOST_REFERRING_DOMAINS = "lost_referring_domains";
   @SerializedName(SERIALIZED_NAME_LOST_REFERRING_DOMAINS)
-  private Long lostReferringDomains;
+  private BigDecimal lostReferringDomains;
 
   public static final String SERIALIZED_NAME_CRAWLED_PAGES = "crawled_pages";
   @SerializedName(SERIALIZED_NAME_CRAWLED_PAGES)
-  private Integer crawledPages;
+  private BigDecimal crawledPages;
 
   public static final String SERIALIZED_NAME_INFO = "info";
   @SerializedName(SERIALIZED_NAME_INFO)
@@ -96,31 +97,31 @@ public class BacklinksHistoryLiveItem {
 
   public static final String SERIALIZED_NAME_INTERNAL_LINKS_COUNT = "internal_links_count";
   @SerializedName(SERIALIZED_NAME_INTERNAL_LINKS_COUNT)
-  private Long internalLinksCount;
+  private BigDecimal internalLinksCount;
 
   public static final String SERIALIZED_NAME_EXTERNAL_LINKS_COUNT = "external_links_count";
   @SerializedName(SERIALIZED_NAME_EXTERNAL_LINKS_COUNT)
-  private Long externalLinksCount;
+  private BigDecimal externalLinksCount;
 
   public static final String SERIALIZED_NAME_BROKEN_BACKLINKS = "broken_backlinks";
   @SerializedName(SERIALIZED_NAME_BROKEN_BACKLINKS)
-  private Long brokenBacklinks;
+  private BigDecimal brokenBacklinks;
 
   public static final String SERIALIZED_NAME_BROKEN_PAGES = "broken_pages";
   @SerializedName(SERIALIZED_NAME_BROKEN_PAGES)
-  private Integer brokenPages;
+  private BigDecimal brokenPages;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS = "referring_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS)
-  private Long referringDomains;
+  private BigDecimal referringDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW = "referring_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_DOMAINS_NOFOLLOW)
-  private Long referringDomainsNofollow;
+  private BigDecimal referringDomainsNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS = "referring_main_domains";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS)
-  private Long referringMainDomains;
+  private BigDecimal referringMainDomains;
 
   public static final String SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW = "referring_main_domains_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_MAIN_DOMAINS_NOFOLLOW)
@@ -128,19 +129,19 @@ public class BacklinksHistoryLiveItem {
 
   public static final String SERIALIZED_NAME_REFERRING_IPS = "referring_ips";
   @SerializedName(SERIALIZED_NAME_REFERRING_IPS)
-  private Long referringIps;
+  private BigDecimal referringIps;
 
   public static final String SERIALIZED_NAME_REFERRING_SUBNETS = "referring_subnets";
   @SerializedName(SERIALIZED_NAME_REFERRING_SUBNETS)
-  private Long referringSubnets;
+  private BigDecimal referringSubnets;
 
   public static final String SERIALIZED_NAME_REFERRING_PAGES = "referring_pages";
   @SerializedName(SERIALIZED_NAME_REFERRING_PAGES)
-  private Long referringPages;
+  private BigDecimal referringPages;
 
   public static final String SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW = "referring_pages_nofollow";
   @SerializedName(SERIALIZED_NAME_REFERRING_PAGES_NOFOLLOW)
-  private Long referringPagesNofollow;
+  private BigDecimal referringPagesNofollow;
 
   public static final String SERIALIZED_NAME_REFERRING_LINKS_TLD = "referring_links_tld";
   @SerializedName(SERIALIZED_NAME_REFERRING_LINKS_TLD)
@@ -207,7 +208,7 @@ public class BacklinksHistoryLiveItem {
   }
 
 
-  public BacklinksHistoryLiveItem rank(Integer rank) {
+  public BacklinksHistoryLiveItem rank(BigDecimal rank) {
     this.rank = rank;
     return this;
   }
@@ -217,16 +218,16 @@ public class BacklinksHistoryLiveItem {
    * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getRank() {
+  public BigDecimal getRank() {
     return rank;
   }
 
-  public void setRank(Integer rank) {
+  public void setRank(BigDecimal rank) {
     this.rank = rank;
   }
 
 
-  public BacklinksHistoryLiveItem backlinks(Long backlinks) {
+  public BacklinksHistoryLiveItem backlinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
     return this;
   }
@@ -236,16 +237,16 @@ public class BacklinksHistoryLiveItem {
    * @return backlinks
    */
   @javax.annotation.Nullable
-  public Long getBacklinks() {
+  public BigDecimal getBacklinks() {
     return backlinks;
   }
 
-  public void setBacklinks(Long backlinks) {
+  public void setBacklinks(BigDecimal backlinks) {
     this.backlinks = backlinks;
   }
 
 
-  public BacklinksHistoryLiveItem newBacklinks(Long newBacklinks) {
+  public BacklinksHistoryLiveItem newBacklinks(BigDecimal newBacklinks) {
     this.newBacklinks = newBacklinks;
     return this;
   }
@@ -255,16 +256,16 @@ public class BacklinksHistoryLiveItem {
    * @return newBacklinks
    */
   @javax.annotation.Nullable
-  public Long getNewBacklinks() {
+  public BigDecimal getNewBacklinks() {
     return newBacklinks;
   }
 
-  public void setNewBacklinks(Long newBacklinks) {
+  public void setNewBacklinks(BigDecimal newBacklinks) {
     this.newBacklinks = newBacklinks;
   }
 
 
-  public BacklinksHistoryLiveItem lostBacklinks(Long lostBacklinks) {
+  public BacklinksHistoryLiveItem lostBacklinks(BigDecimal lostBacklinks) {
     this.lostBacklinks = lostBacklinks;
     return this;
   }
@@ -274,16 +275,16 @@ public class BacklinksHistoryLiveItem {
    * @return lostBacklinks
    */
   @javax.annotation.Nullable
-  public Long getLostBacklinks() {
+  public BigDecimal getLostBacklinks() {
     return lostBacklinks;
   }
 
-  public void setLostBacklinks(Long lostBacklinks) {
+  public void setLostBacklinks(BigDecimal lostBacklinks) {
     this.lostBacklinks = lostBacklinks;
   }
 
 
-  public BacklinksHistoryLiveItem newReferringDomains(Long newReferringDomains) {
+  public BacklinksHistoryLiveItem newReferringDomains(BigDecimal newReferringDomains) {
     this.newReferringDomains = newReferringDomains;
     return this;
   }
@@ -293,16 +294,16 @@ public class BacklinksHistoryLiveItem {
    * @return newReferringDomains
    */
   @javax.annotation.Nullable
-  public Long getNewReferringDomains() {
+  public BigDecimal getNewReferringDomains() {
     return newReferringDomains;
   }
 
-  public void setNewReferringDomains(Long newReferringDomains) {
+  public void setNewReferringDomains(BigDecimal newReferringDomains) {
     this.newReferringDomains = newReferringDomains;
   }
 
 
-  public BacklinksHistoryLiveItem lostReferringDomains(Long lostReferringDomains) {
+  public BacklinksHistoryLiveItem lostReferringDomains(BigDecimal lostReferringDomains) {
     this.lostReferringDomains = lostReferringDomains;
     return this;
   }
@@ -312,16 +313,16 @@ public class BacklinksHistoryLiveItem {
    * @return lostReferringDomains
    */
   @javax.annotation.Nullable
-  public Long getLostReferringDomains() {
+  public BigDecimal getLostReferringDomains() {
     return lostReferringDomains;
   }
 
-  public void setLostReferringDomains(Long lostReferringDomains) {
+  public void setLostReferringDomains(BigDecimal lostReferringDomains) {
     this.lostReferringDomains = lostReferringDomains;
   }
 
 
-  public BacklinksHistoryLiveItem crawledPages(Integer crawledPages) {
+  public BacklinksHistoryLiveItem crawledPages(BigDecimal crawledPages) {
     this.crawledPages = crawledPages;
     return this;
   }
@@ -331,11 +332,11 @@ public class BacklinksHistoryLiveItem {
    * @return crawledPages
    */
   @javax.annotation.Nullable
-  public Integer getCrawledPages() {
+  public BigDecimal getCrawledPages() {
     return crawledPages;
   }
 
-  public void setCrawledPages(Integer crawledPages) {
+  public void setCrawledPages(BigDecimal crawledPages) {
     this.crawledPages = crawledPages;
   }
 
@@ -359,7 +360,7 @@ public class BacklinksHistoryLiveItem {
   }
 
 
-  public BacklinksHistoryLiveItem internalLinksCount(Long internalLinksCount) {
+  public BacklinksHistoryLiveItem internalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
     return this;
   }
@@ -369,16 +370,16 @@ public class BacklinksHistoryLiveItem {
    * @return internalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getInternalLinksCount() {
+  public BigDecimal getInternalLinksCount() {
     return internalLinksCount;
   }
 
-  public void setInternalLinksCount(Long internalLinksCount) {
+  public void setInternalLinksCount(BigDecimal internalLinksCount) {
     this.internalLinksCount = internalLinksCount;
   }
 
 
-  public BacklinksHistoryLiveItem externalLinksCount(Long externalLinksCount) {
+  public BacklinksHistoryLiveItem externalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
     return this;
   }
@@ -388,16 +389,16 @@ public class BacklinksHistoryLiveItem {
    * @return externalLinksCount
    */
   @javax.annotation.Nullable
-  public Long getExternalLinksCount() {
+  public BigDecimal getExternalLinksCount() {
     return externalLinksCount;
   }
 
-  public void setExternalLinksCount(Long externalLinksCount) {
+  public void setExternalLinksCount(BigDecimal externalLinksCount) {
     this.externalLinksCount = externalLinksCount;
   }
 
 
-  public BacklinksHistoryLiveItem brokenBacklinks(Long brokenBacklinks) {
+  public BacklinksHistoryLiveItem brokenBacklinks(BigDecimal brokenBacklinks) {
     this.brokenBacklinks = brokenBacklinks;
     return this;
   }
@@ -407,16 +408,16 @@ public class BacklinksHistoryLiveItem {
    * @return brokenBacklinks
    */
   @javax.annotation.Nullable
-  public Long getBrokenBacklinks() {
+  public BigDecimal getBrokenBacklinks() {
     return brokenBacklinks;
   }
 
-  public void setBrokenBacklinks(Long brokenBacklinks) {
+  public void setBrokenBacklinks(BigDecimal brokenBacklinks) {
     this.brokenBacklinks = brokenBacklinks;
   }
 
 
-  public BacklinksHistoryLiveItem brokenPages(Integer brokenPages) {
+  public BacklinksHistoryLiveItem brokenPages(BigDecimal brokenPages) {
     this.brokenPages = brokenPages;
     return this;
   }
@@ -426,16 +427,16 @@ public class BacklinksHistoryLiveItem {
    * @return brokenPages
    */
   @javax.annotation.Nullable
-  public Integer getBrokenPages() {
+  public BigDecimal getBrokenPages() {
     return brokenPages;
   }
 
-  public void setBrokenPages(Integer brokenPages) {
+  public void setBrokenPages(BigDecimal brokenPages) {
     this.brokenPages = brokenPages;
   }
 
 
-  public BacklinksHistoryLiveItem referringDomains(Long referringDomains) {
+  public BacklinksHistoryLiveItem referringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
     return this;
   }
@@ -445,16 +446,16 @@ public class BacklinksHistoryLiveItem {
    * @return referringDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringDomains() {
+  public BigDecimal getReferringDomains() {
     return referringDomains;
   }
 
-  public void setReferringDomains(Long referringDomains) {
+  public void setReferringDomains(BigDecimal referringDomains) {
     this.referringDomains = referringDomains;
   }
 
 
-  public BacklinksHistoryLiveItem referringDomainsNofollow(Long referringDomainsNofollow) {
+  public BacklinksHistoryLiveItem referringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
     return this;
   }
@@ -464,16 +465,16 @@ public class BacklinksHistoryLiveItem {
    * @return referringDomainsNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringDomainsNofollow() {
+  public BigDecimal getReferringDomainsNofollow() {
     return referringDomainsNofollow;
   }
 
-  public void setReferringDomainsNofollow(Long referringDomainsNofollow) {
+  public void setReferringDomainsNofollow(BigDecimal referringDomainsNofollow) {
     this.referringDomainsNofollow = referringDomainsNofollow;
   }
 
 
-  public BacklinksHistoryLiveItem referringMainDomains(Long referringMainDomains) {
+  public BacklinksHistoryLiveItem referringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
     return this;
   }
@@ -483,11 +484,11 @@ public class BacklinksHistoryLiveItem {
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
-  public Long getReferringMainDomains() {
+  public BigDecimal getReferringMainDomains() {
     return referringMainDomains;
   }
 
-  public void setReferringMainDomains(Long referringMainDomains) {
+  public void setReferringMainDomains(BigDecimal referringMainDomains) {
     this.referringMainDomains = referringMainDomains;
   }
 
@@ -511,7 +512,7 @@ public class BacklinksHistoryLiveItem {
   }
 
 
-  public BacklinksHistoryLiveItem referringIps(Long referringIps) {
+  public BacklinksHistoryLiveItem referringIps(BigDecimal referringIps) {
     this.referringIps = referringIps;
     return this;
   }
@@ -521,16 +522,16 @@ public class BacklinksHistoryLiveItem {
    * @return referringIps
    */
   @javax.annotation.Nullable
-  public Long getReferringIps() {
+  public BigDecimal getReferringIps() {
     return referringIps;
   }
 
-  public void setReferringIps(Long referringIps) {
+  public void setReferringIps(BigDecimal referringIps) {
     this.referringIps = referringIps;
   }
 
 
-  public BacklinksHistoryLiveItem referringSubnets(Long referringSubnets) {
+  public BacklinksHistoryLiveItem referringSubnets(BigDecimal referringSubnets) {
     this.referringSubnets = referringSubnets;
     return this;
   }
@@ -540,16 +541,16 @@ public class BacklinksHistoryLiveItem {
    * @return referringSubnets
    */
   @javax.annotation.Nullable
-  public Long getReferringSubnets() {
+  public BigDecimal getReferringSubnets() {
     return referringSubnets;
   }
 
-  public void setReferringSubnets(Long referringSubnets) {
+  public void setReferringSubnets(BigDecimal referringSubnets) {
     this.referringSubnets = referringSubnets;
   }
 
 
-  public BacklinksHistoryLiveItem referringPages(Long referringPages) {
+  public BacklinksHistoryLiveItem referringPages(BigDecimal referringPages) {
     this.referringPages = referringPages;
     return this;
   }
@@ -559,16 +560,16 @@ public class BacklinksHistoryLiveItem {
    * @return referringPages
    */
   @javax.annotation.Nullable
-  public Long getReferringPages() {
+  public BigDecimal getReferringPages() {
     return referringPages;
   }
 
-  public void setReferringPages(Long referringPages) {
+  public void setReferringPages(BigDecimal referringPages) {
     this.referringPages = referringPages;
   }
 
 
-  public BacklinksHistoryLiveItem referringPagesNofollow(Long referringPagesNofollow) {
+  public BacklinksHistoryLiveItem referringPagesNofollow(BigDecimal referringPagesNofollow) {
     this.referringPagesNofollow = referringPagesNofollow;
     return this;
   }
@@ -578,11 +579,11 @@ public class BacklinksHistoryLiveItem {
    * @return referringPagesNofollow
    */
   @javax.annotation.Nullable
-  public Long getReferringPagesNofollow() {
+  public BigDecimal getReferringPagesNofollow() {
     return referringPagesNofollow;
   }
 
-  public void setReferringPagesNofollow(Long referringPagesNofollow) {
+  public void setReferringPagesNofollow(BigDecimal referringPagesNofollow) {
     this.referringPagesNofollow = referringPagesNofollow;
   }
 

@@ -9,11 +9,11 @@
 |------------ | ------------- | ------------- | -------------|
 |**type** | **String** | type of element |  [optional] |
 |**label** | **String** | label of the quality element |  [optional] |
-|**width** | **Long** | video width in pixels |  [optional] |
-|**height** | **Integer** | video height in pixels |  [optional] |
-|**bitrate** | **Integer** | bit rate of the video |  [optional] |
+|**width** | **BigDecimal** | video width in pixels |  [optional] |
+|**height** | **BigDecimal** | video height in pixels |  [optional] |
+|**bitrate** | **BigDecimal** | bit rate of the video |  [optional] |
 |**mimeType** | **String** | media type of the video |  [optional] |
-|**fps** | **Integer** | frame rate of the video |  [optional] |
+|**fps** | **BigDecimal** | frame rate of the video |  [optional] |
 
 
 

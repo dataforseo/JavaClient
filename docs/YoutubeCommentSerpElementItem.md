@@ -13,8 +13,8 @@
 |**text** | **String** | text of the comment |  [optional] |
 |**publicationDate** | **String** | displayed publication date |  [optional] |
 |**timestamp** | **String** | date and time when the result was published in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00” example: 2022-11-15 12:57:46 +00:00 |  [optional] |
-|**likesCount** | **Long** | number of likes on the comment |  [optional] |
-|**replyCount** | **Long** | number of replies on the comment |  [optional] |
+|**likesCount** | **BigDecimal** | number of likes on the comment |  [optional] |
+|**replyCount** | **BigDecimal** | number of replies on the comment |  [optional] |
 
 
 
