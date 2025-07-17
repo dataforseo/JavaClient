@@ -1,5 +1,3 @@
-
-
 # KnowledgeGraphRowItemSerpElementItem
 
 
@@ -7,11 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**title** | **String** | title of the item |  [optional] |
-|**dataAttrid** | **String** | google defined data attribute ID example: kc:/common/topic:social media presence |  [optional] |
-|**text** | **String** | reference text text snippet from the page that was used to generate the ai_overview_element |  [optional] |
-|**links** | [**List&lt;LinkElement&gt;**](LinkElement.md) | links featured in the faq_box_element |  [optional] |
-|**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
-
-
-
+**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
+**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
+**title** | **String** | reference page title |[optional]|
+**dataAttrid** | **String** | google defined data attribute ID<br>example:<br>action:listen_artist |[optional]|
+**text** | **String** | reference text<br>text snippet from the page that was used to generate the ai_overview_element |[optional]|
+**links** | **List<LinkElement>** | link of the element |[optional]|

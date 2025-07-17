@@ -1,5 +1,3 @@
-
-
 # AppendixBingKeywordsDataPriceData
 
 
@@ -7,12 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**audienceEstimation** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**keywordPerformance** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**keywordsForKeywords** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**keywordsForSite** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**keywordSuggestionsForUrl** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**searchVolume** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**audienceEstimation** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**keywordPerformance** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**keywordsForKeywords** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**keywordsForSite** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**keywordSuggestionsForUrl** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**searchVolume** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

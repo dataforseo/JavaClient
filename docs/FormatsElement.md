@@ -1,5 +1,3 @@
-
-
 # FormatsElement
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**type** | **String** | type of element |  [optional] |
-|**format** | **String** | type of file format of the dataset for example: zip, html, csv |  [optional] |
-|**size** | **BigDecimal** | file size in bytes |  [optional] |
-
-
-
+**type** | **String** | type of element |[optional]|
+**format** | **String** | type of file format of the dataset<br>for example: zip, html, csv |[optional]|
+**size** | **Long** | file size in bytes |[optional]|

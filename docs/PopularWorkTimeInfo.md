@@ -1,5 +1,3 @@
-
-
 # PopularWorkTimeInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**time** | [**WorkTimeInfo**](WorkTimeInfo.md) |  |  [optional] |
-|**popularIndex** | **Integer** | popularity index relative time-bound popularity index measured from 0 to 100; higher value corresponds to a busier time of a day |  [optional] |
-
-
-
+**time** | **TimeInfo** | hours in the 24-hour format |[optional]|
+**popularIndex** | **Integer** | popularity index<br>relative time-bound popularity index measured from 0 to 100;<br>higher value corresponds to a busier time of a day |[optional]|

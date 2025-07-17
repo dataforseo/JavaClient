@@ -1,5 +1,3 @@
-
-
 # AppendixBusinessDataDayLimitsRatesDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**reviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**search** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**reviews** | **AppendixInfo** |  |[optional]|
+**search** | **AppendixInfo** |  |[optional]|

@@ -1,5 +1,3 @@
-
-
 # BusinessDataBusinessListingsCategoriesResultInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**categoryName** | **String** | full name of the category |  [optional] |
-|**businessCount** | **BigDecimal** | number of businesses in the category |  [optional] |
-
-
-
+**categoryName** | **String** | full name of the category |[optional]|
+**businessCount** | **Long** | number of businesses in the category |[optional]|

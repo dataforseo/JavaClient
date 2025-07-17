@@ -1,5 +1,3 @@
-
-
 # DataforseoTrendsDemographyElementItem
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**demography** | [**Demography**](Demography.md) |  |  [optional] |
-|**demographyComparison** | [**DemographyComparisonInfo**](DemographyComparisonInfo.md) |  |  [optional] |
-
-
-
+**demography** | **Demography** | demographic breakdown of keyword popularity data per each specified term<br>conains keyword popularity data by age and gender |[optional]|
+**demographyComparison** | **DemographyComparisonInfo** | comparison of demographic data on keyword popularity for the specified parameters<br>conains keyword popularity data by age and gender<br>if you specified a single keyword, the value will be null |[optional]|

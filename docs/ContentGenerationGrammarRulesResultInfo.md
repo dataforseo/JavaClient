@@ -1,5 +1,3 @@
-
-
 # ContentGenerationGrammarRulesResultInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**rules** | **List&lt;String&gt;** | array of rules |  [optional] |
-
-
-
+**rules** | **List<String>** | array of rules |[optional]|

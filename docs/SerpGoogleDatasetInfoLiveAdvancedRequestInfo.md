@@ -1,5 +1,3 @@
-
-
 # SerpGoogleDatasetInfoLiveAdvancedRequestInfo
 
 
@@ -7,12 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**datasetId** | **String** | ID of the dataset required field you can find dataset ID in the dataset URL or dataset item of Google Dataset Search result example: L2cvMTFqbl85ZHN6MQ&#x3D;&#x3D; |  [optional] |
-|**languageName** | **String** | full name of search engine language optional field if you use this field, you don’t need to specify language_code possible value: English |  [optional] |
-|**languageCode** | **String** | search engine language code optional field if you use this field, you don’t need to specify language_name possible value: en |  [optional] |
-|**device** | **String** | device type optional field possible value: desktop |  [optional] |
-|**os** | **String** | device operating system optional field possible values: windows, macos default value: windows |  [optional] |
-|**tag** | **String** | user-defined task identifier optional field the character limit is 255 you can use this parameter to identify the task and match it with the result you will find the specified tag value in the data object of the response |  [optional] |
-
-
-
+**datasetId** | **String** | ID of the dataset<br>required field<br>you can find dataset ID in the dataset URL or dataset item of Google Dataset Search result<br>example:<br>L2cvMTFqbl85ZHN6MQ== |[optional]|
+**languageName** | **String** | full name of search engine language<br>optional field<br>if you use this field, you don’t need to specify language_code<br>possible value:<br>English |[optional]|
+**languageCode** | **String** | search engine language code<br>optional field<br>if you use this field, you don’t need to specify language_name<br>possible value:<br>en |[optional]|
+**device** | **String** | device type<br>optional field<br>possible value: desktop |[optional]|
+**os** | **String** | device operating system<br>optional field<br>possible values: windows, macos<br>default value: windows |[optional]|
+**tag** | **String** | user-defined task identifier<br>optional field<br>the character limit is 255<br>you can use this parameter to identify the task and match it with the result<br>you will find the specified tag value in the data object of the response |[optional]|

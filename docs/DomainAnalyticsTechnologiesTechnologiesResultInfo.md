@@ -1,5 +1,3 @@
-
-
 # DomainAnalyticsTechnologiesTechnologiesResultInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**groups** | [**List&lt;Groups&gt;**](Groups.md) | array of technology groups |  [optional] |
-
-
-
+**groups** | **List<Groups>** | array of technology groups |[optional]|

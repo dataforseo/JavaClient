@@ -1,5 +1,3 @@
-
-
 # AppendixFunctionTypeInfo
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**regular** | **Double** |  |  [optional] |
-|**advanced** | **Double** |  |  [optional] |
-|**html** | **Double** |  |  [optional] |
-
-
-
+**regular** | **Double** |  |[optional]|
+**advanced** | **Double** |  |[optional]|
+**html** | **Double** |  |[optional]|

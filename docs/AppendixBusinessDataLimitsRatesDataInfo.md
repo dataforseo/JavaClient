@@ -1,5 +1,3 @@
-
-
 # AppendixBusinessDataLimitsRatesDataInfo
 
 
@@ -7,16 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**google** | [**AppendixBusinessDataGoogleInfo**](AppendixBusinessDataGoogleInfo.md) |  |  [optional] |
-|**locations** | **Double** |  |  [optional] |
-|**languages** | **Double** |  |  [optional] |
-|**errors** | **Double** |  |  [optional] |
-|**yelp** | [**AppendixBusinessDataDayLimitsRatesDataInfo**](AppendixBusinessDataDayLimitsRatesDataInfo.md) |  |  [optional] |
-|**socialMedia** | [**AppendixSocialMediaBusinessDataLimitsRatesDataInfo**](AppendixSocialMediaBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**tripadvisor** | [**AppendixBusinessDataDayLimitsRatesDataInfo**](AppendixBusinessDataDayLimitsRatesDataInfo.md) |  |  [optional] |
-|**trustpilot** | [**AppendixBusinessDataDayLimitsRatesDataInfo**](AppendixBusinessDataDayLimitsRatesDataInfo.md) |  |  [optional] |
-|**businessListings** | [**AppendixBusinessListingsBusinessDataLimitsRatesDataInfo**](AppendixBusinessListingsBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**tasksReady** | **Double** |  |  [optional] |
-
-
-
+**google** | **AppendixBusinessDataGoogleInfo** |  |[optional]|
+**locations** | **Double** |  |[optional]|
+**languages** | **Double** |  |[optional]|
+**errors** | **Double** |  |[optional]|
+**yelp** | **AppendixBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
+**socialMedia** | **AppendixSocialMediaBusinessDataLimitsRatesDataInfo** |  |[optional]|
+**tripadvisor** | **AppendixBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
+**trustpilot** | **AppendixBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
+**businessListings** | **AppendixBusinessListingsBusinessDataLimitsRatesDataInfo** |  |[optional]|
+**tasksReady** | **Double** |  |[optional]|

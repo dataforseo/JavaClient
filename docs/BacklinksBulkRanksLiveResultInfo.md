@@ -1,5 +1,3 @@
-
-
 # BacklinksBulkRanksLiveResultInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**itemsCount** | **BigDecimal** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;BacklinksBulkRanksLiveItem&gt;**](BacklinksBulkRanksLiveItem.md) | contains relevant backlinks and referring domains data |  [optional] |
-
-
-
+**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
+**items** | **List<BacklinksBulkRanksLiveItem>** | contains relevant backlinks and referring domains data |[optional]|

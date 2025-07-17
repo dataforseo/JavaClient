@@ -1,5 +1,3 @@
-
-
 # ContentAnalysisCategoryTrendsLiveResultInfo
 
 
@@ -7,18 +5,15 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**type** | **String** | type of element |  [optional] |
-|**date** | **String** | date for which the data is provided |  [optional] |
-|**totalCount** | **BigDecimal** | total number of results in our database relevant to your request |  [optional] |
-|**rank** | **BigDecimal** | rank of all URLs citing the keyword normalized sum of ranks of all URLs citing the target keyword for the given date |  [optional] |
-|**topDomains** | [**List&lt;TopDomainCountInfo&gt;**](TopDomainCountInfo.md) | top domains citing the target keyword contains objects with top domains citing the target category and citation count per each domain |  [optional] |
-|**sentimentConnotations** | **Map&lt;String, Long&gt;** | sentiment connotations contains sentiments (emotional reactions) related to the target category citation and the number of citations per each sentiment possible connotations: \&quot;anger\&quot;, \&quot;fear\&quot;, \&quot;happiness\&quot;, \&quot;love\&quot;, \&quot;sadness\&quot;, \&quot;share\&quot;, \&quot;neutral\&quot;, \&quot;fun\&quot; |  [optional] |
-|**connotationTypes** | **Map&lt;String, Long&gt;** | connotation types contains types of sentiments (sentiment polarity) related to the category citation and citation count per each sentiment type possible connotation types: \&quot;positive\&quot;, \&quot;negative\&quot;, \&quot;neutral\&quot; |  [optional] |
-|**textCategories** | [**List&lt;ContentAnalysisCategoriesInfo&gt;**](ContentAnalysisCategoriesInfo.md) | text categories contains objects with text categories and citation count in each text category to obtain a full list of available categories, refer to the Categories endpoint |  [optional] |
-|**pageCategories** | [**List&lt;ContentAnalysisCategoriesInfo&gt;**](ContentAnalysisCategoriesInfo.md) | page categories contains objects with page categories and citation count in each page category to obtain a full list of available categories, refer to the Categories endpoint |  [optional] |
-|**pageTypes** | **Map&lt;String, Long&gt;** | page types contains page types and citation count per each page type |  [optional] |
-|**countries** | **Map&lt;String, Long&gt;** | countries contains countries and citation count in each country to obtain a full list of available countries, refer to the Locations endpoint |  [optional] |
-|**languages** | **Map&lt;String, Long&gt;** | languages contains languages and citation count in each language to obtain a full list of available languages, refer to the Languages endpoint |  [optional] |
-
-
-
+**type** | **String** | type of element |[optional]|
+**date** | **String** | date for which the data is provided |[optional]|
+**totalCount** | **Long** | total number of results in our database relevant to your request |[optional]|
+**rank** | **Integer** | rank of all URLs citing the keyword<br>normalized sum of ranks of all URLs citing the target keyword for the given date |[optional]|
+**topDomains** | **List<TopDomainInfo>** | top domains citing the target keyword<br>contains objects with top domains citing the target category and citation count per each domain |[optional]|
+**sentimentConnotations** | **Map<String, Long>** | sentiment connotations<br>contains sentiments (emotional reactions) related to the target category citation and the number of citations per each sentiment<br>possible connotations: 'anger', 'fear', 'happiness', 'love', 'sadness', 'share', 'neutral', 'fun' |[optional]|
+**connotationTypes** | **Map<String, Long>** | connotation types<br>contains types of sentiments (sentiment polarity) related to the category citation and citation count per each sentiment type<br>possible connotation types: 'positive', 'negative', 'neutral' |[optional]|
+**textCategories** | **List<ContentAnalysisCategoriesInfo>** | text categories<br>contains objects with text categories and citation count in each text category<br>to obtain a full list of available categories, refer to the Categories endpoint |[optional]|
+**pageCategories** | **List<ContentAnalysisCategoriesInfo>** | page categories<br>contains objects with page categories and citation count in each page category<br>to obtain a full list of available categories, refer to the Categories endpoint |[optional]|
+**pageTypes** | **Map<String, Long>** | page types<br>contains page types and citation count per each page type |[optional]|
+**countries** | **Map<String, Long>** | countries<br>contains countries and citation count in each country<br>to obtain a full list of available countries, refer to the Locations endpoint |[optional]|
+**languages** | **Map<String, Long>** | languages<br>contains languages and citation count in each language<br>to obtain a full list of available languages, refer to the Languages endpoint |[optional]|

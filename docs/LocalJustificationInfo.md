@@ -1,5 +1,3 @@
-
-
 # LocalJustificationInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**type** | **String** | type of element |  [optional] |
-|**text** | **String** | text snippet of local justification |  [optional] |
-
-
-
+**type** | **String** | type of element |[optional]|
+**text** | **String** | text snippet of local justification |[optional]|

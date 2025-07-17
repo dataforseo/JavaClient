@@ -1,5 +1,3 @@
-
-
 # AppendixAppendixPriceData
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**errors** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**userData** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**userData** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

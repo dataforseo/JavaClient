@@ -1,5 +1,3 @@
-
-
 # AppendixContentGenerationPriceDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**live** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**languages** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**live** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

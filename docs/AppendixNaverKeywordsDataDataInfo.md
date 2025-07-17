@@ -1,5 +1,3 @@
-
-
 # AppendixNaverKeywordsDataDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keywordsForCategory** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**searchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**keywordsForCategory** | **AppendixInfo** |  |[optional]|
+**searchVolume** | **AppendixInfo** |  |[optional]|

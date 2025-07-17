@@ -1,5 +1,3 @@
-
-
 # HunspellMisspelledInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**word** | **String** | misspelled word |  [optional] |
-
-
-
+**word** | **String** | misspelled word |[optional]|

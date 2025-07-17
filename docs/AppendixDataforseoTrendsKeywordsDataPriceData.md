@@ -1,5 +1,3 @@
-
-
 # AppendixDataforseoTrendsKeywordsDataPriceData
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**demography** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**explore** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**mergedData** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**subregionInterests** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**demography** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**explore** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**mergedData** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**subregionInterests** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

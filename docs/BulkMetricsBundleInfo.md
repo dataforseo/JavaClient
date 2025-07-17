@@ -1,5 +1,3 @@
-
-
 # BulkMetricsBundleInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**organic** | [**BulkMetricsInfo**](BulkMetricsInfo.md) |  |  [optional] |
-|**paid** | [**BulkMetricsInfo**](BulkMetricsInfo.md) |  |  [optional] |
-|**localPack** | [**BulkMetricsInfo**](BulkMetricsInfo.md) |  |  [optional] |
-|**featuredSnippet** | [**BulkMetricsInfo**](BulkMetricsInfo.md) |  |  [optional] |
-
-
-
+**organic** | **BulkMetricsInfo** | traffic data from organic search |[optional]|
+**paid** | **BulkMetricsInfo** | traffic data from paid search |[optional]|
+**localPack** | **BulkMetricsInfo** | traffic data from the local pack results in SERP |[optional]|
+**featuredSnippet** | **BulkMetricsInfo** | traffic data from the featured snippet results in Google SERP |[optional]|

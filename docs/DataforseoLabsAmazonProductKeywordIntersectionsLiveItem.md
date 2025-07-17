@@ -1,5 +1,3 @@
-
-
 # DataforseoLabsAmazonProductKeywordIntersectionsLiveItem
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**seType** | **String** | search engine type |  [optional] |
-|**keywordData** | [**AmazonKeywordData**](AmazonKeywordData.md) |  |  [optional] |
-|**intersectionResult** | [**Map&lt;String, BaseAmazonSerpElementItem&gt;**](BaseAmazonSerpElementItem.md) | data on the intersection |  [optional] |
-
-
-
+**seType** | **String** | search engine type |[optional]|
+**keywordData** | **AmazonKeywordData** | keyword data for the returned keyword |[optional]|
+**intersectionResult** | **Map<String, AmazonInfo>** | data on the intersection |[optional]|

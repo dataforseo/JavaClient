@@ -1,5 +1,3 @@
-
-
 # TopDomainInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**domain** | **String** |  |  [optional] |
-|**count** | **Long** |  |  [optional] |
-
-
-
+**domain** | **String** |  |[optional]|
+**count** | **Long** |  |[optional]|

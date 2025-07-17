@@ -1,5 +1,3 @@
-
-
 # BacklinksAvailableFiltersResultInfo
 
 
@@ -7,16 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**contentDuplicates** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**backlinks** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**domainPages** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**anchors** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**referringDomains** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**domainIntersection** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**pageIntersection** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**referringNetworks** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**domainPagesSummary** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**competitors** | **Map&lt;String, String&gt;** |  |  [optional] |
-
-
-
+**contentDuplicates** | **Map<String, String>** |  |[optional]|
+**backlinks** | **Map<String, String>** |  |[optional]|
+**domainPages** | **Map<String, String>** |  |[optional]|
+**anchors** | **Map<String, String>** |  |[optional]|
+**referringDomains** | **Map<String, String>** |  |[optional]|
+**domainIntersection** | **Map<String, String>** |  |[optional]|
+**pageIntersection** | **Map<String, String>** |  |[optional]|
+**referringNetworks** | **Map<String, String>** |  |[optional]|
+**domainPagesSummary** | **Map<String, String>** |  |[optional]|
+**competitors** | **Map<String, String>** |  |[optional]|

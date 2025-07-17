@@ -1,5 +1,3 @@
-
-
 # AppendixTaskKeywordsDataPriceDataInfo
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**priorityLow** | [**List&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;**](AppendixPriorityTasksReadyKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**priorityNormal** | [**List&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;**](AppendixPriorityTasksReadyKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**priorityHigh** | [**List&lt;AppendixPriorityTasksReadyKeywordsDataPriceDataInfo&gt;**](AppendixPriorityTasksReadyKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**priorityLow** | **List<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo>** |  |[optional]|
+**priorityNormal** | **List<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo>** |  |[optional]|
+**priorityHigh** | **List<AppendixPriorityTasksReadyKeywordsDataPriceDataInfo>** |  |[optional]|

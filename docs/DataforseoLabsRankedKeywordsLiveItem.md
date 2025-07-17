@@ -1,5 +1,3 @@
-
-
 # DataforseoLabsRankedKeywordsLiveItem
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**seType** | **String** | search engine type |  [optional] |
-|**keywordData** | [**KeywordDataInfo**](KeywordDataInfo.md) |  |  [optional] |
-|**rankedSerpElement** | [**RankedSerpElement**](RankedSerpElement.md) |  |  [optional] |
-
-
-
+**seType** | **String** | search engine type |[optional]|
+**keywordData** | **KeywordDataInfo** | keyword data for the returned keyword |[optional]|
+**rankedSerpElement** | **RankedSerpElement** | contains data on the domain’s SERP element found for the returned keyword |[optional]|

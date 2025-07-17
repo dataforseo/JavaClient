@@ -1,5 +1,3 @@
-
-
 # AppendixErrorsResultInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**code** | **BigDecimal** | code |  [optional] |
-|**message** | **String** | message |  [optional] |
-
-
-
+**code** | **Integer** | code |[optional]|
+**message** | **String** | message |[optional]|

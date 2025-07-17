@@ -1,5 +1,3 @@
-
-
 # History
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**year** | **BigDecimal** | year |  [optional] |
-|**month** | **BigDecimal** | month |  [optional] |
-|**keywordInfo** | [**KeywordInfo**](KeywordInfo.md) |  |  [optional] |
-
-
-
+**year** | **Integer** | year |[optional]|
+**month** | **Integer** | month |[optional]|
+**keywordInfo** | **KeywordInfo** | historical data for the keyword |[optional]|

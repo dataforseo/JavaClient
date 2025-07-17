@@ -1,5 +1,3 @@
-
-
 # AppendixWhoisDomainAnalyticsLimitsRatesDataInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**overview** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**overview** | **AppendixInfo** |  |[optional]|

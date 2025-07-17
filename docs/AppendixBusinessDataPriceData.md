@@ -1,5 +1,3 @@
-
-
 # AppendixBusinessDataPriceData
 
 
@@ -7,16 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**businessListings** | [**AppendixBusinessListingsBusinessDataPriceData**](AppendixBusinessListingsBusinessDataPriceData.md) |  |  [optional] |
-|**errors** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**google** | [**AppendixGoogleBusinessDataPriceData**](AppendixGoogleBusinessDataPriceData.md) |  |  [optional] |
-|**socialMedia** | [**AppendixSocialMediaBusinessDataPriceData**](AppendixSocialMediaBusinessDataPriceData.md) |  |  [optional] |
-|**languages** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**locations** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**tripadvisor** | [**AppendixTrBusinessDataPriceDataInfo**](AppendixTrBusinessDataPriceDataInfo.md) |  |  [optional] |
-|**trustpilot** | [**AppendixTrBusinessDataPriceDataInfo**](AppendixTrBusinessDataPriceDataInfo.md) |  |  [optional] |
-|**yelp** | [**AppendixTrBusinessDataPriceDataInfo**](AppendixTrBusinessDataPriceDataInfo.md) |  |  [optional] |
-|**tasksReady** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**businessListings** | **AppendixBusinessListingsBusinessDataPriceData** |  |[optional]|
+**errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**google** | **AppendixGoogleBusinessDataPriceData** |  |[optional]|
+**socialMedia** | **AppendixSocialMediaBusinessDataPriceData** |  |[optional]|
+**languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**locations** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**tripadvisor** | **AppendixTrBusinessDataPriceDataInfo** |  |[optional]|
+**trustpilot** | **AppendixTrBusinessDataPriceDataInfo** |  |[optional]|
+**yelp** | **AppendixTrBusinessDataPriceDataInfo** |  |[optional]|
+**tasksReady** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

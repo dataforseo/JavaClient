@@ -1,5 +1,3 @@
-
-
 # MetricsBundleInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**organic** | [**OrganicMetricsInfo**](OrganicMetricsInfo.md) |  |  [optional] |
-|**paid** | [**PaidMetricsInfo**](PaidMetricsInfo.md) |  |  [optional] |
-
-
-
+**organic** | **MetricsInfo** | ranking and traffic data from organic search |[optional]|
+**paid** | **MetricsInfo** | ranking and traffic data from paid search |[optional]|

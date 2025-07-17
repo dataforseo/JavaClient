@@ -1,5 +1,3 @@
-
-
 # FoundOnWebElement
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**type** | **String** | type of element |  [optional] |
-|**title** | **String** | title of a given link element |  [optional] |
-|**subtitle** | **String** | subtitle of the element |  [optional] |
-|**image** | [**ImagesElement**](ImagesElement.md) |  |  [optional] |
-
-
-
+**type** | **String** | type of element |[optional]|
+**title** | **String** | title of a given link element |[optional]|
+**subtitle** | **String** | subtitle of the element |[optional]|
+**image** | **AiModeImagesElement** | image of the element |[optional]|

@@ -1,5 +1,3 @@
-
-
 # HistoricalMetricsInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**year** | **BigDecimal** | year for which the data is provided |  [optional] |
-|**month** | **BigDecimal** | month for which the data is provided |  [optional] |
-|**etv** | **Float** | estimated traffic volume estimated organic monthly traffic to the domain calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for learn more about how the metric is calculated in this help center article |  [optional] |
-|**count** | **BigDecimal** | total count of organic SERPs that contain the domain |  [optional] |
-
-
-
+**year** | **Integer** | year for which the data is provided |[optional]|
+**month** | **Integer** | month for which the data is provided |[optional]|
+**etv** | **Double** | estimated traffic volume<br>estimated organic monthly traffic to the domain<br>calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for<br>learn more about how the metric is calculated in this help center article |[optional]|
+**count** | **Long** | total count of organic SERPs that contain the domain |[optional]|

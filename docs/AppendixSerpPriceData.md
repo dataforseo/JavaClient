@@ -1,5 +1,3 @@
-
-
 # AppendixSerpPriceData
 
 
@@ -7,16 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**tasksFixed** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**errors** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**jobs** | [**AppendixAKeywordsDataPriceDataInfo**](AppendixAKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**languages** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**live** | [**AppendixSerpPriceDataInfo**](AppendixSerpPriceDataInfo.md) |  |  [optional] |
-|**locations** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**screenshot** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**taskGet** | [**AppendixSerpPriceDataInfo**](AppendixSerpPriceDataInfo.md) |  |  [optional] |
-|**taskPost** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**tasksReady** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**tasksFixed** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**jobs** | **AppendixAKeywordsDataPriceDataInfo** |  |[optional]|
+**languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**live** | **AppendixSerpPriceDataInfo** |  |[optional]|
+**locations** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**screenshot** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**taskGet** | **AppendixSerpPriceDataInfo** |  |[optional]|
+**taskPost** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**tasksReady** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

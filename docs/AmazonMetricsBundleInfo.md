@@ -1,5 +1,3 @@
-
-
 # AmazonMetricsBundleInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**amazonSerp** | [**AppMetricsInfo**](AppMetricsInfo.md) |  |  [optional] |
-|**amazonPaid** | [**AppMetricsInfo**](AppMetricsInfo.md) |  |  [optional] |
-
-
-
+**amazonSerp** | **AppMetricsInfo** | ranking data from Amazon organic SERP |[optional]|
+**amazonPaid** | **AppMetricsInfo** | ranking data from Amazon paid SERP |[optional]|

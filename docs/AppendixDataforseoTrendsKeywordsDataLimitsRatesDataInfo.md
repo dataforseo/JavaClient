@@ -1,5 +1,3 @@
-
-
 # AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**explore** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**subregionInterests** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**demography** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**mergedData** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**explore** | **AppendixInfo** |  |[optional]|
+**subregionInterests** | **AppendixInfo** |  |[optional]|
+**demography** | **AppendixInfo** |  |[optional]|
+**mergedData** | **AppendixInfo** |  |[optional]|

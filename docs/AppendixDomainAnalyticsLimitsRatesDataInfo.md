@@ -1,5 +1,3 @@
-
-
 # AppendixDomainAnalyticsLimitsRatesDataInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**tasksReady** | **Double** |  |  [optional] |
-|**errors** | **Double** |  |  [optional] |
-|**whois** | [**AppendixWhoisDomainAnalyticsLimitsRatesDataInfo**](AppendixWhoisDomainAnalyticsLimitsRatesDataInfo.md) |  |  [optional] |
-|**technologies** | [**AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo**](AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo.md) |  |  [optional] |
-
-
-
+**tasksReady** | **Double** |  |[optional]|
+**errors** | **Double** |  |[optional]|
+**whois** | **AppendixWhoisDomainAnalyticsLimitsRatesDataInfo** |  |[optional]|
+**technologies** | **AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo** |  |[optional]|

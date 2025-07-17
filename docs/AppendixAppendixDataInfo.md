@@ -1,5 +1,3 @@
-
-
 # AppendixAppendixDataInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**userData** | **Double** |  |  [optional] |
-|**errors** | **Double** |  |  [optional] |
-|**status** | **Double** |  |  [optional] |
-|**test** | **Double** |  |  [optional] |
-
-
-
+**userData** | **Double** |  |[optional]|
+**errors** | **Double** |  |[optional]|
+**status** | **Double** |  |[optional]|
+**test** | **Double** |  |[optional]|

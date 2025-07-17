@@ -1,5 +1,3 @@
-
-
 # LocalBusinessOrderLink
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**deliveryServices** | [**List&lt;LocalBusinessDeliveryServiceInfo&gt;**](LocalBusinessDeliveryServiceInfo.md) | lists available delivery services |  [optional] |
-
-
-
+**deliveryServices** | **List<LocalBusinessDeliveryServiceInfo>** | lists available delivery services |[optional]|

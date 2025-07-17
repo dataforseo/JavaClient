@@ -1,5 +1,3 @@
-
-
 # AppendixJobsSerpLimitsRatesDataInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**taskPost** | **Double** |  |  [optional] |
-
-
-
+**taskPost** | **Double** |  |[optional]|

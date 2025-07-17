@@ -1,5 +1,3 @@
-
-
 # AppendixAppendixDaysRatesDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**userData** | **Double** |  |  [optional] |
-|**errors** | **Double** |  |  [optional] |
-
-
-
+**userData** | **Double** |  |[optional]|
+**errors** | **Double** |  |[optional]|

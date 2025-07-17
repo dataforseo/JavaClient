@@ -1,5 +1,3 @@
-
-
 # WorkDayInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**open** | [**WorkTimeInfo**](WorkTimeInfo.md) |  |  [optional] |
-|**close** | [**WorkTimeInfo**](WorkTimeInfo.md) |  |  [optional] |
-
-
-
+**open** | **TimeInfo** | opening time |[optional]|
+**close** | **TimeInfo** | closing time |[optional]|

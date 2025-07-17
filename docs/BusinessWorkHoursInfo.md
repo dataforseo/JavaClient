@@ -1,5 +1,3 @@
-
-
 # BusinessWorkHoursInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**workHours** | [**WorkHours**](WorkHours.md) |  |  [optional] |
-
-
-
+**workHours** | **WorkHours** | open hours<br>information about work hours of the local establishment |[optional]|

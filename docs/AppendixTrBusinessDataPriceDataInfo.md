@@ -1,5 +1,3 @@
-
-
 # AppendixTrBusinessDataPriceDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**reviews** | [**AppendixGoogleBusinessDataPriceDataInfo**](AppendixGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
-|**search** | [**AppendixGoogleBusinessDataPriceDataInfo**](AppendixGoogleBusinessDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**reviews** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|
+**search** | **AppendixGoogleBusinessDataPriceDataInfo** |  |[optional]|

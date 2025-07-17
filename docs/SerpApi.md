@@ -4,217 +4,444 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**aiSummary**](SerpApi.md#aiSummary) | **POST** /v3/serp/ai_summary |  |
-| [**baiduOrganicTaskGetAdvanced**](SerpApi.md#baiduOrganicTaskGetAdvanced) | **GET** /v3/serp/baidu/organic/task_get/advanced/{id} |  |
-| [**baiduOrganicTaskGetHtml**](SerpApi.md#baiduOrganicTaskGetHtml) | **GET** /v3/serp/baidu/organic/task_get/html/{id} |  |
-| [**baiduOrganicTaskGetRegular**](SerpApi.md#baiduOrganicTaskGetRegular) | **GET** /v3/serp/baidu/organic/task_get/regular/{id} |  |
-| [**baiduOrganicTaskPost**](SerpApi.md#baiduOrganicTaskPost) | **POST** /v3/serp/baidu/organic/task_post |  |
-| [**baiduOrganicTasksFixed**](SerpApi.md#baiduOrganicTasksFixed) | **GET** /v3/serp/baidu/organic/tasks_fixed |  |
-| [**baiduOrganicTasksReady**](SerpApi.md#baiduOrganicTasksReady) | **GET** /v3/serp/baidu/organic/tasks_ready |  |
-| [**bingLocalPackLiveHtml**](SerpApi.md#bingLocalPackLiveHtml) | **POST** /v3/serp/bing/local_pack/live/html |  |
-| [**bingLocalPackLiveRegular**](SerpApi.md#bingLocalPackLiveRegular) | **POST** /v3/serp/bing/local_pack/live/regular |  |
-| [**bingLocalPackTaskGetHtml**](SerpApi.md#bingLocalPackTaskGetHtml) | **GET** /v3/serp/bing/local_pack/task_get/html/{id} |  |
-| [**bingLocalPackTaskGetRegular**](SerpApi.md#bingLocalPackTaskGetRegular) | **GET** /v3/serp/bing/local_pack/task_get/regular/{id} |  |
-| [**bingLocalPackTaskPost**](SerpApi.md#bingLocalPackTaskPost) | **POST** /v3/serp/bing/local_pack/task_post |  |
-| [**bingLocalPackTasksFixed**](SerpApi.md#bingLocalPackTasksFixed) | **GET** /v3/serp/bing/local_pack/tasks_fixed |  |
-| [**bingLocalPackTasksReady**](SerpApi.md#bingLocalPackTasksReady) | **GET** /v3/serp/bing/local_pack/tasks_ready |  |
-| [**bingOrganicLiveAdvanced**](SerpApi.md#bingOrganicLiveAdvanced) | **POST** /v3/serp/bing/organic/live/advanced |  |
-| [**bingOrganicLiveHtml**](SerpApi.md#bingOrganicLiveHtml) | **POST** /v3/serp/bing/organic/live/html |  |
-| [**bingOrganicLiveRegular**](SerpApi.md#bingOrganicLiveRegular) | **POST** /v3/serp/bing/organic/live/regular |  |
-| [**bingOrganicTaskGetAdvanced**](SerpApi.md#bingOrganicTaskGetAdvanced) | **GET** /v3/serp/bing/organic/task_get/advanced/{id} |  |
-| [**bingOrganicTaskGetHtml**](SerpApi.md#bingOrganicTaskGetHtml) | **GET** /v3/serp/bing/organic/task_get/html/{id} |  |
-| [**bingOrganicTaskGetRegular**](SerpApi.md#bingOrganicTaskGetRegular) | **GET** /v3/serp/bing/organic/task_get/regular/{id} |  |
-| [**bingOrganicTaskPost**](SerpApi.md#bingOrganicTaskPost) | **POST** /v3/serp/bing/organic/task_post |  |
-| [**bingOrganicTasksFixed**](SerpApi.md#bingOrganicTasksFixed) | **GET** /v3/serp/bing/organic/tasks_fixed |  |
-| [**bingOrganicTasksReady**](SerpApi.md#bingOrganicTasksReady) | **GET** /v3/serp/bing/organic/tasks_ready |  |
-| [**googleAdsAdvertisersTaskGetAdvanced**](SerpApi.md#googleAdsAdvertisersTaskGetAdvanced) | **GET** /v3/serp/google/ads_advertisers/task_get/advanced/{id} |  |
-| [**googleAdsAdvertisersTaskPost**](SerpApi.md#googleAdsAdvertisersTaskPost) | **POST** /v3/serp/google/ads_advertisers/task_post |  |
-| [**googleAdsAdvertisersTasksReady**](SerpApi.md#googleAdsAdvertisersTasksReady) | **GET** /v3/serp/google/ads_advertisers/tasks_ready |  |
-| [**googleAdsSearchTaskGetAdvanced**](SerpApi.md#googleAdsSearchTaskGetAdvanced) | **GET** /v3/serp/google/ads_search/task_get/advanced/{id} |  |
-| [**googleAdsSearchTaskPost**](SerpApi.md#googleAdsSearchTaskPost) | **POST** /v3/serp/google/ads_search/task_post |  |
-| [**googleAdsSearchTasksReady**](SerpApi.md#googleAdsSearchTasksReady) | **GET** /v3/serp/google/ads_search/tasks_ready |  |
-| [**googleAutocompleteLiveAdvanced**](SerpApi.md#googleAutocompleteLiveAdvanced) | **POST** /v3/serp/google/autocomplete/live/advanced |  |
-| [**googleAutocompleteTaskGetAdvanced**](SerpApi.md#googleAutocompleteTaskGetAdvanced) | **GET** /v3/serp/google/autocomplete/task_get/advanced/{id} |  |
-| [**googleAutocompleteTaskPost**](SerpApi.md#googleAutocompleteTaskPost) | **POST** /v3/serp/google/autocomplete/task_post |  |
-| [**googleAutocompleteTasksFixed**](SerpApi.md#googleAutocompleteTasksFixed) | **GET** /v3/serp/google/autocomplete/tasks_fixed |  |
-| [**googleAutocompleteTasksReady**](SerpApi.md#googleAutocompleteTasksReady) | **GET** /v3/serp/google/autocomplete/tasks_ready |  |
-| [**googleDatasetInfoLiveAdvanced**](SerpApi.md#googleDatasetInfoLiveAdvanced) | **POST** /v3/serp/google/dataset_info/live/advanced |  |
-| [**googleDatasetInfoTaskGetAdvanced**](SerpApi.md#googleDatasetInfoTaskGetAdvanced) | **GET** /v3/serp/google/dataset_info/task_get/advanced/{id} |  |
-| [**googleDatasetInfoTaskPost**](SerpApi.md#googleDatasetInfoTaskPost) | **POST** /v3/serp/google/dataset_info/task_post |  |
-| [**googleDatasetInfoTasksFixed**](SerpApi.md#googleDatasetInfoTasksFixed) | **GET** /v3/serp/google/dataset_info/tasks_fixed |  |
-| [**googleDatasetInfoTasksReady**](SerpApi.md#googleDatasetInfoTasksReady) | **GET** /v3/serp/google/dataset_info/tasks_ready |  |
-| [**googleDatasetSearchLiveAdvanced**](SerpApi.md#googleDatasetSearchLiveAdvanced) | **POST** /v3/serp/google/dataset_search/live/advanced |  |
-| [**googleDatasetSearchTaskGetAdvanced**](SerpApi.md#googleDatasetSearchTaskGetAdvanced) | **GET** /v3/serp/google/dataset_search/task_get/advanced/{id} |  |
-| [**googleDatasetSearchTaskPost**](SerpApi.md#googleDatasetSearchTaskPost) | **POST** /v3/serp/google/dataset_search/task_post |  |
-| [**googleDatasetSearchTasksFixed**](SerpApi.md#googleDatasetSearchTasksFixed) | **GET** /v3/serp/google/dataset_search/tasks_fixed |  |
-| [**googleDatasetSearchTasksReady**](SerpApi.md#googleDatasetSearchTasksReady) | **GET** /v3/serp/google/dataset_search/tasks_ready |  |
-| [**googleEventsLiveAdvanced**](SerpApi.md#googleEventsLiveAdvanced) | **POST** /v3/serp/google/events/live/advanced |  |
-| [**googleEventsTaskGetAdvanced**](SerpApi.md#googleEventsTaskGetAdvanced) | **GET** /v3/serp/google/events/task_get/advanced/{id} |  |
-| [**googleEventsTaskPost**](SerpApi.md#googleEventsTaskPost) | **POST** /v3/serp/google/events/task_post |  |
-| [**googleEventsTasksFixed**](SerpApi.md#googleEventsTasksFixed) | **GET** /v3/serp/google/events/tasks_fixed |  |
-| [**googleEventsTasksReady**](SerpApi.md#googleEventsTasksReady) | **GET** /v3/serp/google/events/tasks_ready |  |
-| [**googleFinanceExploreLiveAdvanced**](SerpApi.md#googleFinanceExploreLiveAdvanced) | **POST** /v3/serp/google/finance_explore/live/advanced |  |
-| [**googleFinanceExploreLiveHtml**](SerpApi.md#googleFinanceExploreLiveHtml) | **POST** /v3/serp/google/finance_explore/live/html |  |
-| [**googleFinanceExploreTaskGetAdvanced**](SerpApi.md#googleFinanceExploreTaskGetAdvanced) | **GET** /v3/serp/google/finance_explore/task_get/advanced/{id} |  |
-| [**googleFinanceExploreTaskGetHtml**](SerpApi.md#googleFinanceExploreTaskGetHtml) | **GET** /v3/serp/google/finance_explore/task_get/html/{id} |  |
-| [**googleFinanceExploreTaskPost**](SerpApi.md#googleFinanceExploreTaskPost) | **POST** /v3/serp/google/finance_explore/task_post |  |
-| [**googleFinanceExploreTasksReady**](SerpApi.md#googleFinanceExploreTasksReady) | **GET** /v3/serp/google/finance_explore/tasks_ready |  |
-| [**googleFinanceMarketsLiveAdvanced**](SerpApi.md#googleFinanceMarketsLiveAdvanced) | **POST** /v3/serp/google/finance_markets/live/advanced |  |
-| [**googleFinanceMarketsLiveHtml**](SerpApi.md#googleFinanceMarketsLiveHtml) | **POST** /v3/serp/google/finance_markets/live/html |  |
-| [**googleFinanceMarketsTaskGetAdvanced**](SerpApi.md#googleFinanceMarketsTaskGetAdvanced) | **GET** /v3/serp/google/finance_markets/task_get/advanced/{id} |  |
-| [**googleFinanceMarketsTaskGetHtml**](SerpApi.md#googleFinanceMarketsTaskGetHtml) | **GET** /v3/serp/google/finance_markets/task_get/html/{id} |  |
-| [**googleFinanceMarketsTaskPost**](SerpApi.md#googleFinanceMarketsTaskPost) | **POST** /v3/serp/google/finance_markets/task_post |  |
-| [**googleFinanceMarketsTasksReady**](SerpApi.md#googleFinanceMarketsTasksReady) | **GET** /v3/serp/google/finance_markets/tasks_ready |  |
-| [**googleFinanceQuoteLiveAdvanced**](SerpApi.md#googleFinanceQuoteLiveAdvanced) | **POST** /v3/serp/google/finance_quote/live/advanced |  |
-| [**googleFinanceQuoteLiveHtml**](SerpApi.md#googleFinanceQuoteLiveHtml) | **POST** /v3/serp/google/finance_quote/live/html |  |
-| [**googleFinanceQuoteTaskGetAdvanced**](SerpApi.md#googleFinanceQuoteTaskGetAdvanced) | **GET** /v3/serp/google/finance_quote/task_get/advanced/{id} |  |
-| [**googleFinanceQuoteTaskGetHtml**](SerpApi.md#googleFinanceQuoteTaskGetHtml) | **GET** /v3/serp/google/finance_quote/task_get/html/{id} |  |
-| [**googleFinanceQuoteTaskPost**](SerpApi.md#googleFinanceQuoteTaskPost) | **POST** /v3/serp/google/finance_quote/task_post |  |
-| [**googleFinanceQuoteTasksReady**](SerpApi.md#googleFinanceQuoteTasksReady) | **GET** /v3/serp/google/finance_quote/tasks_ready |  |
-| [**googleFinanceTickerSearchLiveAdvanced**](SerpApi.md#googleFinanceTickerSearchLiveAdvanced) | **POST** /v3/serp/google/finance_ticker_search/live/advanced |  |
-| [**googleFinanceTickerSearchTaskGetAdvanced**](SerpApi.md#googleFinanceTickerSearchTaskGetAdvanced) | **GET** /v3/serp/google/finance_ticker_search/task_get/advanced/{id} |  |
-| [**googleFinanceTickerSearchTaskPost**](SerpApi.md#googleFinanceTickerSearchTaskPost) | **POST** /v3/serp/google/finance_ticker_search/task_post |  |
-| [**googleFinanceTickerSearchTasksReady**](SerpApi.md#googleFinanceTickerSearchTasksReady) | **GET** /v3/serp/google/finance_ticker_search/tasks_ready |  |
-| [**googleImagesLiveAdvanced**](SerpApi.md#googleImagesLiveAdvanced) | **POST** /v3/serp/google/images/live/advanced |  |
-| [**googleImagesLiveHtml**](SerpApi.md#googleImagesLiveHtml) | **POST** /v3/serp/google/images/live/html |  |
-| [**googleImagesTaskGetAdvanced**](SerpApi.md#googleImagesTaskGetAdvanced) | **GET** /v3/serp/google/images/task_get/advanced/{id} |  |
-| [**googleImagesTaskGetHtml**](SerpApi.md#googleImagesTaskGetHtml) | **GET** /v3/serp/google/images/task_get/html/{id} |  |
-| [**googleImagesTaskPost**](SerpApi.md#googleImagesTaskPost) | **POST** /v3/serp/google/images/task_post |  |
-| [**googleImagesTasksFixed**](SerpApi.md#googleImagesTasksFixed) | **GET** /v3/serp/google/images/tasks_fixed |  |
-| [**googleImagesTasksReady**](SerpApi.md#googleImagesTasksReady) | **GET** /v3/serp/google/images/tasks_ready |  |
-| [**googleJobsTaskGetAdvanced**](SerpApi.md#googleJobsTaskGetAdvanced) | **GET** /v3/serp/google/jobs/task_get/advanced/{id} |  |
-| [**googleJobsTaskGetHtml**](SerpApi.md#googleJobsTaskGetHtml) | **GET** /v3/serp/google/jobs/task_get/html/{id} |  |
-| [**googleJobsTaskPost**](SerpApi.md#googleJobsTaskPost) | **POST** /v3/serp/google/jobs/task_post |  |
-| [**googleJobsTasksFixed**](SerpApi.md#googleJobsTasksFixed) | **GET** /v3/serp/google/jobs/tasks_fixed |  |
-| [**googleJobsTasksReady**](SerpApi.md#googleJobsTasksReady) | **GET** /v3/serp/google/jobs/tasks_ready |  |
-| [**googleLocalFinderLiveAdvanced**](SerpApi.md#googleLocalFinderLiveAdvanced) | **POST** /v3/serp/google/local_finder/live/advanced |  |
-| [**googleLocalFinderLiveHtml**](SerpApi.md#googleLocalFinderLiveHtml) | **POST** /v3/serp/google/local_finder/live/html |  |
-| [**googleLocalFinderTaskGetAdvanced**](SerpApi.md#googleLocalFinderTaskGetAdvanced) | **GET** /v3/serp/google/local_finder/task_get/advanced/{id} |  |
-| [**googleLocalFinderTaskGetHtml**](SerpApi.md#googleLocalFinderTaskGetHtml) | **GET** /v3/serp/google/local_finder/task_get/html/{id} |  |
-| [**googleLocalFinderTaskPost**](SerpApi.md#googleLocalFinderTaskPost) | **POST** /v3/serp/google/local_finder/task_post |  |
-| [**googleLocalFinderTasksFixed**](SerpApi.md#googleLocalFinderTasksFixed) | **GET** /v3/serp/google/local_finder/tasks_fixed |  |
-| [**googleLocalFinderTasksReady**](SerpApi.md#googleLocalFinderTasksReady) | **GET** /v3/serp/google/local_finder/tasks_ready |  |
-| [**googleMapsLiveAdvanced**](SerpApi.md#googleMapsLiveAdvanced) | **POST** /v3/serp/google/maps/live/advanced |  |
-| [**googleMapsTaskGetAdvanced**](SerpApi.md#googleMapsTaskGetAdvanced) | **GET** /v3/serp/google/maps/task_get/advanced/{id} |  |
-| [**googleMapsTaskPost**](SerpApi.md#googleMapsTaskPost) | **POST** /v3/serp/google/maps/task_post |  |
-| [**googleMapsTasksFixed**](SerpApi.md#googleMapsTasksFixed) | **GET** /v3/serp/google/maps/tasks_fixed |  |
-| [**googleMapsTasksReady**](SerpApi.md#googleMapsTasksReady) | **GET** /v3/serp/google/maps/tasks_ready |  |
-| [**googleNewsLiveAdvanced**](SerpApi.md#googleNewsLiveAdvanced) | **POST** /v3/serp/google/news/live/advanced |  |
-| [**googleNewsLiveHtml**](SerpApi.md#googleNewsLiveHtml) | **POST** /v3/serp/google/news/live/html |  |
-| [**googleNewsTaskGetAdvanced**](SerpApi.md#googleNewsTaskGetAdvanced) | **GET** /v3/serp/google/news/task_get/advanced/{id} |  |
-| [**googleNewsTaskGetHtml**](SerpApi.md#googleNewsTaskGetHtml) | **GET** /v3/serp/google/news/task_get/html/{id} |  |
-| [**googleNewsTaskPost**](SerpApi.md#googleNewsTaskPost) | **POST** /v3/serp/google/news/task_post |  |
-| [**googleNewsTasksFixed**](SerpApi.md#googleNewsTasksFixed) | **GET** /v3/serp/google/news/tasks_fixed |  |
-| [**googleNewsTasksReady**](SerpApi.md#googleNewsTasksReady) | **GET** /v3/serp/google/news/tasks_ready |  |
-| [**googleOrganicLiveAdvanced**](SerpApi.md#googleOrganicLiveAdvanced) | **POST** /v3/serp/google/organic/live/advanced |  |
-| [**googleOrganicLiveHtml**](SerpApi.md#googleOrganicLiveHtml) | **POST** /v3/serp/google/organic/live/html |  |
-| [**googleOrganicLiveRegular**](SerpApi.md#googleOrganicLiveRegular) | **POST** /v3/serp/google/organic/live/regular |  |
-| [**googleOrganicTaskGetAdvanced**](SerpApi.md#googleOrganicTaskGetAdvanced) | **GET** /v3/serp/google/organic/task_get/advanced/{id} |  |
-| [**googleOrganicTaskGetHtml**](SerpApi.md#googleOrganicTaskGetHtml) | **GET** /v3/serp/google/organic/task_get/html/{id} |  |
-| [**googleOrganicTaskGetRegular**](SerpApi.md#googleOrganicTaskGetRegular) | **GET** /v3/serp/google/organic/task_get/regular/{id} |  |
-| [**googleOrganicTaskPost**](SerpApi.md#googleOrganicTaskPost) | **POST** /v3/serp/google/organic/task_post |  |
-| [**googleOrganicTasksFixed**](SerpApi.md#googleOrganicTasksFixed) | **GET** /v3/serp/google/organic/tasks_fixed |  |
-| [**googleOrganicTasksReady**](SerpApi.md#googleOrganicTasksReady) | **GET** /v3/serp/google/organic/tasks_ready |  |
-| [**googleSearchByImageTaskGetAdvanced**](SerpApi.md#googleSearchByImageTaskGetAdvanced) | **GET** /v3/serp/google/search_by_image/task_get/advanced/{id} |  |
-| [**googleSearchByImageTaskPost**](SerpApi.md#googleSearchByImageTaskPost) | **POST** /v3/serp/google/search_by_image/task_post |  |
-| [**googleSearchByImageTasksFixed**](SerpApi.md#googleSearchByImageTasksFixed) | **GET** /v3/serp/google/search_by_image/tasks_fixed |  |
-| [**googleSearchByImageTasksReady**](SerpApi.md#googleSearchByImageTasksReady) | **GET** /v3/serp/google/search_by_image/tasks_ready |  |
-| [**naverOrganicTaskGetAdvanced**](SerpApi.md#naverOrganicTaskGetAdvanced) | **GET** /v3/serp/naver/organic/task_get/advanced/{id} |  |
-| [**naverOrganicTaskGetHtml**](SerpApi.md#naverOrganicTaskGetHtml) | **GET** /v3/serp/naver/organic/task_get/html/{id} |  |
-| [**naverOrganicTaskGetRegular**](SerpApi.md#naverOrganicTaskGetRegular) | **GET** /v3/serp/naver/organic/task_get/regular/{id} |  |
-| [**naverOrganicTaskPost**](SerpApi.md#naverOrganicTaskPost) | **POST** /v3/serp/naver/organic/task_post |  |
-| [**naverOrganicTasksFixed**](SerpApi.md#naverOrganicTasksFixed) | **GET** /v3/serp/naver/organic/tasks_fixed |  |
-| [**naverOrganicTasksReady**](SerpApi.md#naverOrganicTasksReady) | **GET** /v3/serp/naver/organic/tasks_ready |  |
-| [**screenshot**](SerpApi.md#screenshot) | **POST** /v3/serp/screenshot |  |
-| [**serpBaiduLanguages**](SerpApi.md#serpBaiduLanguages) | **GET** /v3/serp/baidu/languages |  |
-| [**serpBaiduLocations**](SerpApi.md#serpBaiduLocations) | **GET** /v3/serp/baidu/locations |  |
-| [**serpBaiduLocationsCountry**](SerpApi.md#serpBaiduLocationsCountry) | **GET** /v3/serp/baidu/locations/{country} |  |
-| [**serpBingLanguages**](SerpApi.md#serpBingLanguages) | **GET** /v3/serp/bing/languages |  |
-| [**serpBingLocations**](SerpApi.md#serpBingLocations) | **GET** /v3/serp/bing/locations |  |
-| [**serpBingLocationsCountry**](SerpApi.md#serpBingLocationsCountry) | **GET** /v3/serp/bing/locations/{country} |  |
-| [**serpErrors**](SerpApi.md#serpErrors) | **POST** /v3/serp/errors |  |
-| [**serpGoogleAdsAdvertisersLocations**](SerpApi.md#serpGoogleAdsAdvertisersLocations) | **GET** /v3/serp/google/ads_advertisers/locations |  |
-| [**serpGoogleAdsSearchLocations**](SerpApi.md#serpGoogleAdsSearchLocations) | **GET** /v3/serp/google/ads_search/locations |  |
-| [**serpGoogleLanguages**](SerpApi.md#serpGoogleLanguages) | **GET** /v3/serp/google/languages |  |
-| [**serpGoogleLocations**](SerpApi.md#serpGoogleLocations) | **GET** /v3/serp/google/locations |  |
-| [**serpGoogleLocationsCountry**](SerpApi.md#serpGoogleLocationsCountry) | **GET** /v3/serp/google/locations/{country} |  |
-| [**serpIdList**](SerpApi.md#serpIdList) | **POST** /v3/serp/id_list |  |
-| [**serpSeznamLanguages**](SerpApi.md#serpSeznamLanguages) | **GET** /v3/serp/seznam/languages |  |
-| [**serpSeznamLocations**](SerpApi.md#serpSeznamLocations) | **GET** /v3/serp/seznam/locations |  |
-| [**serpSeznamLocationsCountry**](SerpApi.md#serpSeznamLocationsCountry) | **GET** /v3/serp/seznam/locations/{country} |  |
-| [**serpYahooLanguages**](SerpApi.md#serpYahooLanguages) | **GET** /v3/serp/yahoo/languages |  |
-| [**serpYahooLocations**](SerpApi.md#serpYahooLocations) | **GET** /v3/serp/yahoo/locations |  |
-| [**serpYahooLocationsCountry**](SerpApi.md#serpYahooLocationsCountry) | **GET** /v3/serp/yahoo/locations/{country} |  |
-| [**serpYoutubeLanguages**](SerpApi.md#serpYoutubeLanguages) | **GET** /v3/serp/youtube/languages |  |
-| [**serpYoutubeLocations**](SerpApi.md#serpYoutubeLocations) | **GET** /v3/serp/youtube/locations |  |
-| [**serpYoutubeLocationsCountry**](SerpApi.md#serpYoutubeLocationsCountry) | **GET** /v3/serp/youtube/locations/{country} |  |
-| [**seznamOrganicTaskGetAdvanced**](SerpApi.md#seznamOrganicTaskGetAdvanced) | **GET** /v3/serp/seznam/organic/task_get/advanced/{id} |  |
-| [**seznamOrganicTaskGetHtml**](SerpApi.md#seznamOrganicTaskGetHtml) | **GET** /v3/serp/seznam/organic/task_get/html/{id} |  |
-| [**seznamOrganicTaskGetRegular**](SerpApi.md#seznamOrganicTaskGetRegular) | **GET** /v3/serp/seznam/organic/task_get/regular/{id} |  |
-| [**seznamOrganicTaskPost**](SerpApi.md#seznamOrganicTaskPost) | **POST** /v3/serp/seznam/organic/task_post |  |
-| [**seznamOrganicTasksFixed**](SerpApi.md#seznamOrganicTasksFixed) | **GET** /v3/serp/seznam/organic/tasks_fixed |  |
-| [**seznamOrganicTasksReady**](SerpApi.md#seznamOrganicTasksReady) | **GET** /v3/serp/seznam/organic/tasks_ready |  |
-| [**tasksReady**](SerpApi.md#tasksReady) | **GET** /v3/serp/tasks_ready |  |
-| [**yahooOrganicLiveAdvanced**](SerpApi.md#yahooOrganicLiveAdvanced) | **POST** /v3/serp/yahoo/organic/live/advanced |  |
-| [**yahooOrganicLiveHtml**](SerpApi.md#yahooOrganicLiveHtml) | **POST** /v3/serp/yahoo/organic/live/html |  |
-| [**yahooOrganicLiveRegular**](SerpApi.md#yahooOrganicLiveRegular) | **POST** /v3/serp/yahoo/organic/live/regular |  |
-| [**yahooOrganicTaskGetAdvanced**](SerpApi.md#yahooOrganicTaskGetAdvanced) | **GET** /v3/serp/yahoo/organic/task_get/advanced/{id} |  |
-| [**yahooOrganicTaskGetHtml**](SerpApi.md#yahooOrganicTaskGetHtml) | **GET** /v3/serp/yahoo/organic/task_get/html/{id} |  |
-| [**yahooOrganicTaskGetRegular**](SerpApi.md#yahooOrganicTaskGetRegular) | **GET** /v3/serp/yahoo/organic/task_get/regular/{id} |  |
-| [**yahooOrganicTaskPost**](SerpApi.md#yahooOrganicTaskPost) | **POST** /v3/serp/yahoo/organic/task_post |  |
-| [**yahooOrganicTasksFixed**](SerpApi.md#yahooOrganicTasksFixed) | **GET** /v3/serp/yahoo/organic/tasks_fixed |  |
-| [**yahooOrganicTasksReady**](SerpApi.md#yahooOrganicTasksReady) | **GET** /v3/serp/yahoo/organic/tasks_ready |  |
-| [**youtubeVideoCommentsLiveAdvanced**](SerpApi.md#youtubeVideoCommentsLiveAdvanced) | **POST** /v3/serp/youtube/video_comments/live/advanced |  |
-| [**youtubeVideoCommentsTaskGetAdvanced**](SerpApi.md#youtubeVideoCommentsTaskGetAdvanced) | **GET** /v3/serp/youtube/video_comments/task_get/advanced/{id} |  |
-| [**youtubeVideoCommentsTaskPost**](SerpApi.md#youtubeVideoCommentsTaskPost) | **POST** /v3/serp/youtube/video_comments/task_post |  |
-| [**youtubeVideoCommentsTasksFixed**](SerpApi.md#youtubeVideoCommentsTasksFixed) | **GET** /v3/serp/youtube/video_comments/tasks_fixed |  |
-| [**youtubeVideoCommentsTasksReady**](SerpApi.md#youtubeVideoCommentsTasksReady) | **GET** /v3/serp/youtube/video_comments/tasks_ready |  |
-| [**youtubeVideoInfoLiveAdvanced**](SerpApi.md#youtubeVideoInfoLiveAdvanced) | **POST** /v3/serp/youtube/video_info/live/advanced |  |
-| [**youtubeVideoInfoTaskGetAdvanced**](SerpApi.md#youtubeVideoInfoTaskGetAdvanced) | **GET** /v3/serp/youtube/video_info/task_get/advanced/{id} |  |
-| [**youtubeVideoInfoTaskPost**](SerpApi.md#youtubeVideoInfoTaskPost) | **POST** /v3/serp/youtube/video_info/task_post |  |
-| [**youtubeVideoInfoTasksFixed**](SerpApi.md#youtubeVideoInfoTasksFixed) | **GET** /v3/serp/youtube/video_info/tasks_fixed |  |
-| [**youtubeVideoInfoTasksReady**](SerpApi.md#youtubeVideoInfoTasksReady) | **GET** /v3/serp/youtube/video_info/tasks_ready |  |
-| [**youtubeVideoSubtitlesLiveAdvanced**](SerpApi.md#youtubeVideoSubtitlesLiveAdvanced) | **POST** /v3/serp/youtube/video_subtitles/live/advanced |  |
-| [**youtubeVideoSubtitlesTaskGetAdvanced**](SerpApi.md#youtubeVideoSubtitlesTaskGetAdvanced) | **GET** /v3/serp/youtube/video_subtitles/task_get/advanced/{id} |  |
-| [**youtubeVideoSubtitlesTaskPost**](SerpApi.md#youtubeVideoSubtitlesTaskPost) | **POST** /v3/serp/youtube/video_subtitles/task_post |  |
-| [**youtubeVideoSubtitlesTasksFixed**](SerpApi.md#youtubeVideoSubtitlesTasksFixed) | **GET** /v3/serp/youtube/video_subtitles/tasks_fixed |  |
-| [**youtubeVideoSubtitlesTasksReady**](SerpApi.md#youtubeVideoSubtitlesTasksReady) | **GET** /v3/serp/youtube/video_subtitles/tasks_ready |  |
+| [**serpIdList**](SerpApi.md#serpIdList) | **POST**  /v3/serp/id_list  |
+| [**serpErrors**](SerpApi.md#serpErrors) | **POST**  /v3/serp/errors  |
+| [**screenshot**](SerpApi.md#screenshot) | **POST**  /v3/serp/screenshot  |
+| [**aiSummary**](SerpApi.md#aiSummary) | **POST**  /v3/serp/ai_summary  |
+| [**serpGoogleLocations**](SerpApi.md#serpGoogleLocations) | **GET**  /v3/serp/google/locations  |
+| [**serpGoogleLocationsCountry**](SerpApi.md#serpGoogleLocationsCountry) | **GET**  /v3/serp/google/locations/{country}  |
+| [**serpGoogleLanguages**](SerpApi.md#serpGoogleLanguages) | **GET**  /v3/serp/google/languages  |
+| [**googleOrganicTaskPost**](SerpApi.md#googleOrganicTaskPost) | **POST**  /v3/serp/google/organic/task_post  |
+| [**googleOrganicTasksReady**](SerpApi.md#googleOrganicTasksReady) | **GET**  /v3/serp/google/organic/tasks_ready  |
+| [**tasksReady**](SerpApi.md#tasksReady) | **GET**  /v3/serp/tasks_ready  |
+| [**googleOrganicTasksFixed**](SerpApi.md#googleOrganicTasksFixed) | **GET**  /v3/serp/google/organic/tasks_fixed  |
+| [**googleOrganicTaskGetRegular**](SerpApi.md#googleOrganicTaskGetRegular) | **GET**  /v3/serp/google/organic/task_get/regular/{id}  |
+| [**googleOrganicTaskGetAdvanced**](SerpApi.md#googleOrganicTaskGetAdvanced) | **GET**  /v3/serp/google/organic/task_get/advanced/{id}  |
+| [**googleOrganicTaskGetHtml**](SerpApi.md#googleOrganicTaskGetHtml) | **GET**  /v3/serp/google/organic/task_get/html/{id}  |
+| [**googleOrganicLiveRegular**](SerpApi.md#googleOrganicLiveRegular) | **POST**  /v3/serp/google/organic/live/regular  |
+| [**googleOrganicLiveAdvanced**](SerpApi.md#googleOrganicLiveAdvanced) | **POST**  /v3/serp/google/organic/live/advanced  |
+| [**googleOrganicLiveHtml**](SerpApi.md#googleOrganicLiveHtml) | **POST**  /v3/serp/google/organic/live/html  |
+| [**serpGoogleAiModeLanguages**](SerpApi.md#serpGoogleAiModeLanguages) | **GET**  /v3/serp/google/ai_mode/languages  |
+| [**googleAiModeTaskPost**](SerpApi.md#googleAiModeTaskPost) | **POST**  /v3/serp/google/ai_mode/task_post  |
+| [**googleAiModeTasksReady**](SerpApi.md#googleAiModeTasksReady) | **GET**  /v3/serp/google/ai_mode/tasks_ready  |
+| [**googleAiModeTasksFixed**](SerpApi.md#googleAiModeTasksFixed) | **GET**  /v3/serp/google/ai_mode/tasks_fixed  |
+| [**googleAiModeTaskGetAdvanced**](SerpApi.md#googleAiModeTaskGetAdvanced) | **GET**  /v3/serp/google/ai_mode/task_get/advanced/{id}  |
+| [**googleAiModeTaskGetHtml**](SerpApi.md#googleAiModeTaskGetHtml) | **GET**  /v3/serp/google/ai_mode/task_get/html/{id}  |
+| [**googleAiModeLiveAdvanced**](SerpApi.md#googleAiModeLiveAdvanced) | **POST**  /v3/serp/google/ai_mode/live/advanced  |
+| [**googleAiModeLiveHtml**](SerpApi.md#googleAiModeLiveHtml) | **POST**  /v3/serp/google/ai_mode/live/html  |
+| [**googleMapsTaskPost**](SerpApi.md#googleMapsTaskPost) | **POST**  /v3/serp/google/maps/task_post  |
+| [**googleMapsTasksReady**](SerpApi.md#googleMapsTasksReady) | **GET**  /v3/serp/google/maps/tasks_ready  |
+| [**googleMapsTasksFixed**](SerpApi.md#googleMapsTasksFixed) | **GET**  /v3/serp/google/maps/tasks_fixed  |
+| [**googleMapsTaskGetAdvanced**](SerpApi.md#googleMapsTaskGetAdvanced) | **GET**  /v3/serp/google/maps/task_get/advanced/{id}  |
+| [**googleMapsLiveAdvanced**](SerpApi.md#googleMapsLiveAdvanced) | **POST**  /v3/serp/google/maps/live/advanced  |
+| [**googleLocalFinderTaskPost**](SerpApi.md#googleLocalFinderTaskPost) | **POST**  /v3/serp/google/local_finder/task_post  |
+| [**googleLocalFinderTasksReady**](SerpApi.md#googleLocalFinderTasksReady) | **GET**  /v3/serp/google/local_finder/tasks_ready  |
+| [**googleLocalFinderTasksFixed**](SerpApi.md#googleLocalFinderTasksFixed) | **GET**  /v3/serp/google/local_finder/tasks_fixed  |
+| [**googleLocalFinderTaskGetAdvanced**](SerpApi.md#googleLocalFinderTaskGetAdvanced) | **GET**  /v3/serp/google/local_finder/task_get/advanced/{id}  |
+| [**googleLocalFinderTaskGetHtml**](SerpApi.md#googleLocalFinderTaskGetHtml) | **GET**  /v3/serp/google/local_finder/task_get/html/{id}  |
+| [**googleLocalFinderLiveAdvanced**](SerpApi.md#googleLocalFinderLiveAdvanced) | **POST**  /v3/serp/google/local_finder/live/advanced  |
+| [**googleLocalFinderLiveHtml**](SerpApi.md#googleLocalFinderLiveHtml) | **POST**  /v3/serp/google/local_finder/live/html  |
+| [**googleNewsTaskPost**](SerpApi.md#googleNewsTaskPost) | **POST**  /v3/serp/google/news/task_post  |
+| [**googleNewsTasksReady**](SerpApi.md#googleNewsTasksReady) | **GET**  /v3/serp/google/news/tasks_ready  |
+| [**googleNewsTasksFixed**](SerpApi.md#googleNewsTasksFixed) | **GET**  /v3/serp/google/news/tasks_fixed  |
+| [**googleNewsTaskGetAdvanced**](SerpApi.md#googleNewsTaskGetAdvanced) | **GET**  /v3/serp/google/news/task_get/advanced/{id}  |
+| [**googleNewsTaskGetHtml**](SerpApi.md#googleNewsTaskGetHtml) | **GET**  /v3/serp/google/news/task_get/html/{id}  |
+| [**googleNewsLiveAdvanced**](SerpApi.md#googleNewsLiveAdvanced) | **POST**  /v3/serp/google/news/live/advanced  |
+| [**googleNewsLiveHtml**](SerpApi.md#googleNewsLiveHtml) | **POST**  /v3/serp/google/news/live/html  |
+| [**googleEventsTaskPost**](SerpApi.md#googleEventsTaskPost) | **POST**  /v3/serp/google/events/task_post  |
+| [**googleEventsTasksReady**](SerpApi.md#googleEventsTasksReady) | **GET**  /v3/serp/google/events/tasks_ready  |
+| [**googleEventsTasksFixed**](SerpApi.md#googleEventsTasksFixed) | **GET**  /v3/serp/google/events/tasks_fixed  |
+| [**googleEventsTaskGetAdvanced**](SerpApi.md#googleEventsTaskGetAdvanced) | **GET**  /v3/serp/google/events/task_get/advanced/{id}  |
+| [**googleEventsLiveAdvanced**](SerpApi.md#googleEventsLiveAdvanced) | **POST**  /v3/serp/google/events/live/advanced  |
+| [**googleImagesTaskPost**](SerpApi.md#googleImagesTaskPost) | **POST**  /v3/serp/google/images/task_post  |
+| [**googleImagesTasksReady**](SerpApi.md#googleImagesTasksReady) | **GET**  /v3/serp/google/images/tasks_ready  |
+| [**googleImagesTasksFixed**](SerpApi.md#googleImagesTasksFixed) | **GET**  /v3/serp/google/images/tasks_fixed  |
+| [**googleImagesTaskGetAdvanced**](SerpApi.md#googleImagesTaskGetAdvanced) | **GET**  /v3/serp/google/images/task_get/advanced/{id}  |
+| [**googleImagesTaskGetHtml**](SerpApi.md#googleImagesTaskGetHtml) | **GET**  /v3/serp/google/images/task_get/html/{id}  |
+| [**googleImagesLiveAdvanced**](SerpApi.md#googleImagesLiveAdvanced) | **POST**  /v3/serp/google/images/live/advanced  |
+| [**googleImagesLiveHtml**](SerpApi.md#googleImagesLiveHtml) | **POST**  /v3/serp/google/images/live/html  |
+| [**googleSearchByImageTaskPost**](SerpApi.md#googleSearchByImageTaskPost) | **POST**  /v3/serp/google/search_by_image/task_post  |
+| [**googleSearchByImageTasksReady**](SerpApi.md#googleSearchByImageTasksReady) | **GET**  /v3/serp/google/search_by_image/tasks_ready  |
+| [**googleSearchByImageTasksFixed**](SerpApi.md#googleSearchByImageTasksFixed) | **GET**  /v3/serp/google/search_by_image/tasks_fixed  |
+| [**googleSearchByImageTaskGetAdvanced**](SerpApi.md#googleSearchByImageTaskGetAdvanced) | **GET**  /v3/serp/google/search_by_image/task_get/advanced/{id}  |
+| [**googleJobsTaskPost**](SerpApi.md#googleJobsTaskPost) | **POST**  /v3/serp/google/jobs/task_post  |
+| [**googleJobsTasksReady**](SerpApi.md#googleJobsTasksReady) | **GET**  /v3/serp/google/jobs/tasks_ready  |
+| [**googleJobsTasksFixed**](SerpApi.md#googleJobsTasksFixed) | **GET**  /v3/serp/google/jobs/tasks_fixed  |
+| [**googleJobsTaskGetAdvanced**](SerpApi.md#googleJobsTaskGetAdvanced) | **GET**  /v3/serp/google/jobs/task_get/advanced/{id}  |
+| [**googleJobsTaskGetHtml**](SerpApi.md#googleJobsTaskGetHtml) | **GET**  /v3/serp/google/jobs/task_get/html/{id}  |
+| [**googleAutocompleteTaskPost**](SerpApi.md#googleAutocompleteTaskPost) | **POST**  /v3/serp/google/autocomplete/task_post  |
+| [**googleAutocompleteTasksReady**](SerpApi.md#googleAutocompleteTasksReady) | **GET**  /v3/serp/google/autocomplete/tasks_ready  |
+| [**googleAutocompleteTasksFixed**](SerpApi.md#googleAutocompleteTasksFixed) | **GET**  /v3/serp/google/autocomplete/tasks_fixed  |
+| [**googleAutocompleteTaskGetAdvanced**](SerpApi.md#googleAutocompleteTaskGetAdvanced) | **GET**  /v3/serp/google/autocomplete/task_get/advanced/{id}  |
+| [**googleAutocompleteLiveAdvanced**](SerpApi.md#googleAutocompleteLiveAdvanced) | **POST**  /v3/serp/google/autocomplete/live/advanced  |
+| [**googleDatasetSearchTaskPost**](SerpApi.md#googleDatasetSearchTaskPost) | **POST**  /v3/serp/google/dataset_search/task_post  |
+| [**googleDatasetSearchTasksReady**](SerpApi.md#googleDatasetSearchTasksReady) | **GET**  /v3/serp/google/dataset_search/tasks_ready  |
+| [**googleDatasetSearchTasksFixed**](SerpApi.md#googleDatasetSearchTasksFixed) | **GET**  /v3/serp/google/dataset_search/tasks_fixed  |
+| [**googleDatasetSearchTaskGetAdvanced**](SerpApi.md#googleDatasetSearchTaskGetAdvanced) | **GET**  /v3/serp/google/dataset_search/task_get/advanced/{id}  |
+| [**googleDatasetSearchLiveAdvanced**](SerpApi.md#googleDatasetSearchLiveAdvanced) | **POST**  /v3/serp/google/dataset_search/live/advanced  |
+| [**googleDatasetInfoTaskPost**](SerpApi.md#googleDatasetInfoTaskPost) | **POST**  /v3/serp/google/dataset_info/task_post  |
+| [**googleDatasetInfoTasksReady**](SerpApi.md#googleDatasetInfoTasksReady) | **GET**  /v3/serp/google/dataset_info/tasks_ready  |
+| [**googleDatasetInfoTasksFixed**](SerpApi.md#googleDatasetInfoTasksFixed) | **GET**  /v3/serp/google/dataset_info/tasks_fixed  |
+| [**googleDatasetInfoTaskGetAdvanced**](SerpApi.md#googleDatasetInfoTaskGetAdvanced) | **GET**  /v3/serp/google/dataset_info/task_get/advanced/{id}  |
+| [**googleDatasetInfoLiveAdvanced**](SerpApi.md#googleDatasetInfoLiveAdvanced) | **POST**  /v3/serp/google/dataset_info/live/advanced  |
+| [**serpGoogleAdsAdvertisersLocations**](SerpApi.md#serpGoogleAdsAdvertisersLocations) | **GET**  /v3/serp/google/ads_advertisers/locations  |
+| [**googleAdsAdvertisersTaskPost**](SerpApi.md#googleAdsAdvertisersTaskPost) | **POST**  /v3/serp/google/ads_advertisers/task_post  |
+| [**googleAdsAdvertisersTasksReady**](SerpApi.md#googleAdsAdvertisersTasksReady) | **GET**  /v3/serp/google/ads_advertisers/tasks_ready  |
+| [**googleAdsAdvertisersTaskGetAdvanced**](SerpApi.md#googleAdsAdvertisersTaskGetAdvanced) | **GET**  /v3/serp/google/ads_advertisers/task_get/advanced/{id}  |
+| [**serpGoogleAdsSearchLocations**](SerpApi.md#serpGoogleAdsSearchLocations) | **GET**  /v3/serp/google/ads_search/locations  |
+| [**googleAdsSearchTaskPost**](SerpApi.md#googleAdsSearchTaskPost) | **POST**  /v3/serp/google/ads_search/task_post  |
+| [**googleAdsSearchTasksReady**](SerpApi.md#googleAdsSearchTasksReady) | **GET**  /v3/serp/google/ads_search/tasks_ready  |
+| [**googleAdsSearchTaskGetAdvanced**](SerpApi.md#googleAdsSearchTaskGetAdvanced) | **GET**  /v3/serp/google/ads_search/task_get/advanced/{id}  |
+| [**serpBingLocations**](SerpApi.md#serpBingLocations) | **GET**  /v3/serp/bing/locations  |
+| [**serpBingLocationsCountry**](SerpApi.md#serpBingLocationsCountry) | **GET**  /v3/serp/bing/locations/{country}  |
+| [**serpBingLanguages**](SerpApi.md#serpBingLanguages) | **GET**  /v3/serp/bing/languages  |
+| [**bingOrganicTaskPost**](SerpApi.md#bingOrganicTaskPost) | **POST**  /v3/serp/bing/organic/task_post  |
+| [**bingOrganicTasksReady**](SerpApi.md#bingOrganicTasksReady) | **GET**  /v3/serp/bing/organic/tasks_ready  |
+| [**bingOrganicTasksFixed**](SerpApi.md#bingOrganicTasksFixed) | **GET**  /v3/serp/bing/organic/tasks_fixed  |
+| [**bingOrganicTaskGetRegular**](SerpApi.md#bingOrganicTaskGetRegular) | **GET**  /v3/serp/bing/organic/task_get/regular/{id}  |
+| [**bingOrganicTaskGetAdvanced**](SerpApi.md#bingOrganicTaskGetAdvanced) | **GET**  /v3/serp/bing/organic/task_get/advanced/{id}  |
+| [**bingOrganicTaskGetHtml**](SerpApi.md#bingOrganicTaskGetHtml) | **GET**  /v3/serp/bing/organic/task_get/html/{id}  |
+| [**bingOrganicLiveRegular**](SerpApi.md#bingOrganicLiveRegular) | **POST**  /v3/serp/bing/organic/live/regular  |
+| [**bingOrganicLiveAdvanced**](SerpApi.md#bingOrganicLiveAdvanced) | **POST**  /v3/serp/bing/organic/live/advanced  |
+| [**bingOrganicLiveHtml**](SerpApi.md#bingOrganicLiveHtml) | **POST**  /v3/serp/bing/organic/live/html  |
+| [**bingLocalPackTaskPost**](SerpApi.md#bingLocalPackTaskPost) | **POST**  /v3/serp/bing/local_pack/task_post  |
+| [**bingLocalPackTasksReady**](SerpApi.md#bingLocalPackTasksReady) | **GET**  /v3/serp/bing/local_pack/tasks_ready  |
+| [**bingLocalPackTasksFixed**](SerpApi.md#bingLocalPackTasksFixed) | **GET**  /v3/serp/bing/local_pack/tasks_fixed  |
+| [**bingLocalPackTaskGetRegular**](SerpApi.md#bingLocalPackTaskGetRegular) | **GET**  /v3/serp/bing/local_pack/task_get/regular/{id}  |
+| [**bingLocalPackTaskGetHtml**](SerpApi.md#bingLocalPackTaskGetHtml) | **GET**  /v3/serp/bing/local_pack/task_get/html/{id}  |
+| [**bingLocalPackLiveRegular**](SerpApi.md#bingLocalPackLiveRegular) | **POST**  /v3/serp/bing/local_pack/live/regular  |
+| [**bingLocalPackLiveHtml**](SerpApi.md#bingLocalPackLiveHtml) | **POST**  /v3/serp/bing/local_pack/live/html  |
+| [**serpYoutubeLocations**](SerpApi.md#serpYoutubeLocations) | **GET**  /v3/serp/youtube/locations  |
+| [**serpYoutubeLocationsCountry**](SerpApi.md#serpYoutubeLocationsCountry) | **GET**  /v3/serp/youtube/locations/{country}  |
+| [**serpYoutubeLanguages**](SerpApi.md#serpYoutubeLanguages) | **GET**  /v3/serp/youtube/languages  |
+| [**youtubeVideoInfoTaskPost**](SerpApi.md#youtubeVideoInfoTaskPost) | **POST**  /v3/serp/youtube/video_info/task_post  |
+| [**youtubeVideoInfoTasksReady**](SerpApi.md#youtubeVideoInfoTasksReady) | **GET**  /v3/serp/youtube/video_info/tasks_ready  |
+| [**youtubeVideoInfoTasksFixed**](SerpApi.md#youtubeVideoInfoTasksFixed) | **GET**  /v3/serp/youtube/video_info/tasks_fixed  |
+| [**youtubeVideoInfoTaskGetAdvanced**](SerpApi.md#youtubeVideoInfoTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_info/task_get/advanced/{id}  |
+| [**youtubeVideoInfoLiveAdvanced**](SerpApi.md#youtubeVideoInfoLiveAdvanced) | **POST**  /v3/serp/youtube/video_info/live/advanced  |
+| [**youtubeVideoSubtitlesTaskPost**](SerpApi.md#youtubeVideoSubtitlesTaskPost) | **POST**  /v3/serp/youtube/video_subtitles/task_post  |
+| [**youtubeVideoSubtitlesTasksReady**](SerpApi.md#youtubeVideoSubtitlesTasksReady) | **GET**  /v3/serp/youtube/video_subtitles/tasks_ready  |
+| [**youtubeVideoSubtitlesTasksFixed**](SerpApi.md#youtubeVideoSubtitlesTasksFixed) | **GET**  /v3/serp/youtube/video_subtitles/tasks_fixed  |
+| [**youtubeVideoSubtitlesTaskGetAdvanced**](SerpApi.md#youtubeVideoSubtitlesTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_subtitles/task_get/advanced/{id}  |
+| [**youtubeVideoSubtitlesLiveAdvanced**](SerpApi.md#youtubeVideoSubtitlesLiveAdvanced) | **POST**  /v3/serp/youtube/video_subtitles/live/advanced  |
+| [**youtubeVideoCommentsTaskPost**](SerpApi.md#youtubeVideoCommentsTaskPost) | **POST**  /v3/serp/youtube/video_comments/task_post  |
+| [**youtubeVideoCommentsTasksReady**](SerpApi.md#youtubeVideoCommentsTasksReady) | **GET**  /v3/serp/youtube/video_comments/tasks_ready  |
+| [**youtubeVideoCommentsTasksFixed**](SerpApi.md#youtubeVideoCommentsTasksFixed) | **GET**  /v3/serp/youtube/video_comments/tasks_fixed  |
+| [**youtubeVideoCommentsTaskGetAdvanced**](SerpApi.md#youtubeVideoCommentsTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_comments/task_get/advanced/{id}  |
+| [**youtubeVideoCommentsLiveAdvanced**](SerpApi.md#youtubeVideoCommentsLiveAdvanced) | **POST**  /v3/serp/youtube/video_comments/live/advanced  |
+| [**serpYahooLocations**](SerpApi.md#serpYahooLocations) | **GET**  /v3/serp/yahoo/locations  |
+| [**serpYahooLocationsCountry**](SerpApi.md#serpYahooLocationsCountry) | **GET**  /v3/serp/yahoo/locations/{country}  |
+| [**serpYahooLanguages**](SerpApi.md#serpYahooLanguages) | **GET**  /v3/serp/yahoo/languages  |
+| [**yahooOrganicTaskPost**](SerpApi.md#yahooOrganicTaskPost) | **POST**  /v3/serp/yahoo/organic/task_post  |
+| [**yahooOrganicTasksReady**](SerpApi.md#yahooOrganicTasksReady) | **GET**  /v3/serp/yahoo/organic/tasks_ready  |
+| [**yahooOrganicTasksFixed**](SerpApi.md#yahooOrganicTasksFixed) | **GET**  /v3/serp/yahoo/organic/tasks_fixed  |
+| [**yahooOrganicTaskGetRegular**](SerpApi.md#yahooOrganicTaskGetRegular) | **GET**  /v3/serp/yahoo/organic/task_get/regular/{id}  |
+| [**yahooOrganicTaskGetAdvanced**](SerpApi.md#yahooOrganicTaskGetAdvanced) | **GET**  /v3/serp/yahoo/organic/task_get/advanced/{id}  |
+| [**yahooOrganicTaskGetHtml**](SerpApi.md#yahooOrganicTaskGetHtml) | **GET**  /v3/serp/yahoo/organic/task_get/html/{id}  |
+| [**yahooOrganicLiveRegular**](SerpApi.md#yahooOrganicLiveRegular) | **POST**  /v3/serp/yahoo/organic/live/regular  |
+| [**yahooOrganicLiveAdvanced**](SerpApi.md#yahooOrganicLiveAdvanced) | **POST**  /v3/serp/yahoo/organic/live/advanced  |
+| [**yahooOrganicLiveHtml**](SerpApi.md#yahooOrganicLiveHtml) | **POST**  /v3/serp/yahoo/organic/live/html  |
+| [**serpBaiduLocations**](SerpApi.md#serpBaiduLocations) | **GET**  /v3/serp/baidu/locations  |
+| [**serpBaiduLocationsCountry**](SerpApi.md#serpBaiduLocationsCountry) | **GET**  /v3/serp/baidu/locations/{country}  |
+| [**serpBaiduLanguages**](SerpApi.md#serpBaiduLanguages) | **GET**  /v3/serp/baidu/languages  |
+| [**baiduOrganicTaskPost**](SerpApi.md#baiduOrganicTaskPost) | **POST**  /v3/serp/baidu/organic/task_post  |
+| [**baiduOrganicTasksReady**](SerpApi.md#baiduOrganicTasksReady) | **GET**  /v3/serp/baidu/organic/tasks_ready  |
+| [**baiduOrganicTasksFixed**](SerpApi.md#baiduOrganicTasksFixed) | **GET**  /v3/serp/baidu/organic/tasks_fixed  |
+| [**baiduOrganicTaskGetRegular**](SerpApi.md#baiduOrganicTaskGetRegular) | **GET**  /v3/serp/baidu/organic/task_get/regular/{id}  |
+| [**baiduOrganicTaskGetAdvanced**](SerpApi.md#baiduOrganicTaskGetAdvanced) | **GET**  /v3/serp/baidu/organic/task_get/advanced/{id}  |
+| [**baiduOrganicTaskGetHtml**](SerpApi.md#baiduOrganicTaskGetHtml) | **GET**  /v3/serp/baidu/organic/task_get/html/{id}  |
+| [**naverOrganicTaskPost**](SerpApi.md#naverOrganicTaskPost) | **POST**  /v3/serp/naver/organic/task_post  |
+| [**naverOrganicTasksReady**](SerpApi.md#naverOrganicTasksReady) | **GET**  /v3/serp/naver/organic/tasks_ready  |
+| [**naverOrganicTasksFixed**](SerpApi.md#naverOrganicTasksFixed) | **GET**  /v3/serp/naver/organic/tasks_fixed  |
+| [**naverOrganicTaskGetRegular**](SerpApi.md#naverOrganicTaskGetRegular) | **GET**  /v3/serp/naver/organic/task_get/regular/{id}  |
+| [**naverOrganicTaskGetAdvanced**](SerpApi.md#naverOrganicTaskGetAdvanced) | **GET**  /v3/serp/naver/organic/task_get/advanced/{id}  |
+| [**naverOrganicTaskGetHtml**](SerpApi.md#naverOrganicTaskGetHtml) | **GET**  /v3/serp/naver/organic/task_get/html/{id}  |
+| [**serpSeznamLocations**](SerpApi.md#serpSeznamLocations) | **GET**  /v3/serp/seznam/locations  |
+| [**serpSeznamLocationsCountry**](SerpApi.md#serpSeznamLocationsCountry) | **GET**  /v3/serp/seznam/locations/{country}  |
+| [**serpSeznamLanguages**](SerpApi.md#serpSeznamLanguages) | **GET**  /v3/serp/seznam/languages  |
+| [**seznamOrganicTaskPost**](SerpApi.md#seznamOrganicTaskPost) | **POST**  /v3/serp/seznam/organic/task_post  |
+| [**seznamOrganicTasksReady**](SerpApi.md#seznamOrganicTasksReady) | **GET**  /v3/serp/seznam/organic/tasks_ready  |
+| [**seznamOrganicTasksFixed**](SerpApi.md#seznamOrganicTasksFixed) | **GET**  /v3/serp/seznam/organic/tasks_fixed  |
+| [**seznamOrganicTaskGetRegular**](SerpApi.md#seznamOrganicTaskGetRegular) | **GET**  /v3/serp/seznam/organic/task_get/regular/{id}  |
+| [**seznamOrganicTaskGetAdvanced**](SerpApi.md#seznamOrganicTaskGetAdvanced) | **GET**  /v3/serp/seznam/organic/task_get/advanced/{id}  |
+| [**seznamOrganicTaskGetHtml**](SerpApi.md#seznamOrganicTaskGetHtml) | **GET**  /v3/serp/seznam/organic/task_get/html/{id}  |
+| [**googleFinanceExploreTaskPost**](SerpApi.md#googleFinanceExploreTaskPost) | **POST**  /v3/serp/google/finance_explore/task_post  |
+| [**googleFinanceExploreTasksReady**](SerpApi.md#googleFinanceExploreTasksReady) | **GET**  /v3/serp/google/finance_explore/tasks_ready  |
+| [**googleFinanceExploreTaskGetAdvanced**](SerpApi.md#googleFinanceExploreTaskGetAdvanced) | **GET**  /v3/serp/google/finance_explore/task_get/advanced/{id}  |
+| [**googleFinanceExploreTaskGetHtml**](SerpApi.md#googleFinanceExploreTaskGetHtml) | **GET**  /v3/serp/google/finance_explore/task_get/html/{id}  |
+| [**googleFinanceExploreLiveAdvanced**](SerpApi.md#googleFinanceExploreLiveAdvanced) | **POST**  /v3/serp/google/finance_explore/live/advanced  |
+| [**googleFinanceExploreLiveHtml**](SerpApi.md#googleFinanceExploreLiveHtml) | **POST**  /v3/serp/google/finance_explore/live/html  |
+| [**googleFinanceMarketsTaskPost**](SerpApi.md#googleFinanceMarketsTaskPost) | **POST**  /v3/serp/google/finance_markets/task_post  |
+| [**googleFinanceMarketsTasksReady**](SerpApi.md#googleFinanceMarketsTasksReady) | **GET**  /v3/serp/google/finance_markets/tasks_ready  |
+| [**googleFinanceMarketsTaskGetAdvanced**](SerpApi.md#googleFinanceMarketsTaskGetAdvanced) | **GET**  /v3/serp/google/finance_markets/task_get/advanced/{id}  |
+| [**googleFinanceMarketsTaskGetHtml**](SerpApi.md#googleFinanceMarketsTaskGetHtml) | **GET**  /v3/serp/google/finance_markets/task_get/html/{id}  |
+| [**googleFinanceMarketsLiveAdvanced**](SerpApi.md#googleFinanceMarketsLiveAdvanced) | **POST**  /v3/serp/google/finance_markets/live/advanced  |
+| [**googleFinanceMarketsLiveHtml**](SerpApi.md#googleFinanceMarketsLiveHtml) | **POST**  /v3/serp/google/finance_markets/live/html  |
+| [**googleFinanceQuoteTaskPost**](SerpApi.md#googleFinanceQuoteTaskPost) | **POST**  /v3/serp/google/finance_quote/task_post  |
+| [**googleFinanceQuoteTasksReady**](SerpApi.md#googleFinanceQuoteTasksReady) | **GET**  /v3/serp/google/finance_quote/tasks_ready  |
+| [**googleFinanceQuoteTaskGetAdvanced**](SerpApi.md#googleFinanceQuoteTaskGetAdvanced) | **GET**  /v3/serp/google/finance_quote/task_get/advanced/{id}  |
+| [**googleFinanceQuoteTaskGetHtml**](SerpApi.md#googleFinanceQuoteTaskGetHtml) | **GET**  /v3/serp/google/finance_quote/task_get/html/{id}  |
+| [**googleFinanceQuoteLiveAdvanced**](SerpApi.md#googleFinanceQuoteLiveAdvanced) | **POST**  /v3/serp/google/finance_quote/live/advanced  |
+| [**googleFinanceQuoteLiveHtml**](SerpApi.md#googleFinanceQuoteLiveHtml) | **POST**  /v3/serp/google/finance_quote/live/html  |
+| [**googleFinanceTickerSearchTaskPost**](SerpApi.md#googleFinanceTickerSearchTaskPost) | **POST**  /v3/serp/google/finance_ticker_search/task_post  |
+| [**googleFinanceTickerSearchTasksReady**](SerpApi.md#googleFinanceTickerSearchTasksReady) | **GET**  /v3/serp/google/finance_ticker_search/tasks_ready  |
+| [**googleFinanceTickerSearchTaskGetAdvanced**](SerpApi.md#googleFinanceTickerSearchTaskGetAdvanced) | **GET**  /v3/serp/google/finance_ticker_search/task_get/advanced/{id}  |
+| [**googleFinanceTickerSearchLiveAdvanced**](SerpApi.md#googleFinanceTickerSearchLiveAdvanced) | **POST**  /v3/serp/google/finance_ticker_search/live/advanced  |
 
+<a id="serpIdList"></a>
+# **serpIdList**
+> SerpIdListResponseInfo serpIdList()
 
-<a id="aiSummary"></a>
-# **aiSummary**
-> SerpAiSummaryResponseInfo aiSummary(serpAiSummaryRequestInfo)
-
-
-
-‌‌ The purpose of the Live SERP API AI Summary endpoint is to provide a summary of the content found on any SERP and generate a response based on the user’s specified prompt. To obtain results, you have to specify task_id, which you can find in the response to the POST request. Learn more in our Help Center. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/ai_summary/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpAiSummaryRequestInfo> serpAiSummaryRequestInfo = Arrays.asList(); // List<SerpAiSummaryRequestInfo> | 
-    try {
-      SerpAiSummaryResponseInfo result = apiInstance.aiSummary(serpAiSummaryRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    SerpIdListRequestInfo model = new SerpIdListRequestInfo()
+           .datetimeFrom("2025-04-17 06:05:20 +00:00")
+           .datetimeTo("2025-06-17 06:05:20 +00:00")
+           .limit(100)
+           .offset(0)
+           .sort("desc");
+    SerpIdListResponseInfo response = apiInstance.serpIdList(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpIdList");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpIdListRequestInfo>&gt;**](List<SerpIdListRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpIdListResponseInfo**](SerpIdListResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpErrors"></a>
+# **serpErrors**
+> SerpErrorsResponseInfo serpErrors()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpErrorsRequestInfo model = new SerpErrorsRequestInfo()
+           .limit(10)
+           .offset(0)
+           .filteredFunction("pingback_url");
+    SerpErrorsResponseInfo response = apiInstance.serpErrors(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpErrors");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpErrorsRequestInfo>&gt;**](List<SerpErrorsRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpErrorsResponseInfo**](SerpErrorsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="screenshot"></a>
+# **screenshot**
+> SerpScreenshotResponseInfo screenshot()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpScreenshotRequestInfo model = new SerpScreenshotRequestInfo()
+           .taskId("00000000-0000-0000-0000-000000000000")
+           .browserScreenScaleFactor(0.5d);
+    SerpScreenshotResponseInfo response = apiInstance.screenshot(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#screenshot");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpScreenshotRequestInfo>&gt;**](List<SerpScreenshotRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpScreenshotResponseInfo**](SerpScreenshotResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="aiSummary"></a>
+# **aiSummary**
+> SerpAiSummaryResponseInfo aiSummary()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpAiSummaryRequestInfo model = new SerpAiSummaryRequestInfo()
+           .taskId("00000000-0000-0000-0000-000000000000")
+           .prompt("explain what DataForSEO is")
+           .fetchContent(true)
+           .includeLinks(true);
+    SerpAiSummaryResponseInfo response = apiInstance.aiSummary(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#aiSummary");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -227,9 +454,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpAiSummaryRequestInfo** | [**List&lt;SerpAiSummaryRequestInfo&gt;**](SerpAiSummaryRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpAiSummaryRequestInfo>&gt;**](List<SerpAiSummaryRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -249,41 +478,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="baiduOrganicTaskGetAdvanced"></a>
-# **baiduOrganicTaskGetAdvanced**
-> SerpBaiduOrganicTaskGetAdvancedResponseInfo baiduOrganicTaskGetAdvanced(id)
+<a id="serpGoogleLocations"></a>
+# **serpGoogleLocations**
+> SerpGoogleLocationsResponseInfo serpGoogleLocations()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpBaiduOrganicTaskGetAdvancedResponseInfo result = apiInstance.baiduOrganicTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#baiduOrganicTaskGetAdvanced");
+
+    SerpGoogleLocationsResponseInfo response = apiInstance.serpGoogleLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -295,281 +523,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
 
-### Return type
-
-[**SerpBaiduOrganicTaskGetAdvancedResponseInfo**](SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="baiduOrganicTaskGetHtml"></a>
-# **baiduOrganicTaskGetHtml**
-> SerpBaiduOrganicTaskGetHtmlResponseInfo baiduOrganicTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "e380ec6f-c300-412a-b92c-f9a68ba42c20"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpBaiduOrganicTaskGetHtmlResponseInfo result = apiInstance.baiduOrganicTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#baiduOrganicTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpBaiduOrganicTaskGetHtmlResponseInfo**](SerpBaiduOrganicTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="baiduOrganicTaskGetRegular"></a>
-# **baiduOrganicTaskGetRegular**
-> SerpBaiduOrganicTaskGetRegularResponseInfo baiduOrganicTaskGetRegular(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_get/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpBaiduOrganicTaskGetRegularResponseInfo result = apiInstance.baiduOrganicTaskGetRegular(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#baiduOrganicTaskGetRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpBaiduOrganicTaskGetRegularResponseInfo**](SerpBaiduOrganicTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="baiduOrganicTaskPost"></a>
-# **baiduOrganicTaskPost**
-> SerpBaiduOrganicTaskPostResponseInfo baiduOrganicTaskPost(serpBaiduOrganicTaskPostRequestInfo)
-
-
-
-‌‌ Baidu SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and other settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBaiduOrganicTaskPostRequestInfo> serpBaiduOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpBaiduOrganicTaskPostRequestInfo> | 
-    try {
-      SerpBaiduOrganicTaskPostResponseInfo result = apiInstance.baiduOrganicTaskPost(serpBaiduOrganicTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#baiduOrganicTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBaiduOrganicTaskPostRequestInfo** | [**List&lt;SerpBaiduOrganicTaskPostRequestInfo&gt;**](SerpBaiduOrganicTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpBaiduOrganicTaskPostResponseInfo**](SerpBaiduOrganicTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="baiduOrganicTasksFixed"></a>
-# **baiduOrganicTasksFixed**
-> SerpBaiduOrganicTasksFixedResponseInfo baiduOrganicTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBaiduOrganicTasksFixedResponseInfo result = apiInstance.baiduOrganicTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#baiduOrganicTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpBaiduOrganicTasksFixedResponseInfo**](SerpBaiduOrganicTasksFixedResponseInfo.md)
+[**SerpGoogleLocationsResponseInfo**](SerpGoogleLocationsResponseInfo.md)
 
 ### Authorization
 
@@ -577,7 +539,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -585,40 +547,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="baiduOrganicTasksReady"></a>
-# **baiduOrganicTasksReady**
-> SerpBaiduOrganicTasksReadyResponseInfo baiduOrganicTasksReady()
+<a id="serpGoogleLocationsCountry"></a>
+# **serpGoogleLocationsCountry**
+> SerpGoogleLocationsCountryResponseInfo serpGoogleLocationsCountry()
 
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBaiduOrganicTasksReadyResponseInfo result = apiInstance.baiduOrganicTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#baiduOrganicTasksReady");
+    String country = "us";
+    SerpGoogleLocationsCountryResponseInfo response = apiInstance.serpGoogleLocationsCountry(country);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -629,79 +591,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpBaiduOrganicTasksReadyResponseInfo**](SerpBaiduOrganicTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackLiveHtml"></a>
-# **bingLocalPackLiveHtml**
-> SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml(serpBingLocalPackLiveHtmlRequestInfo)
-
-
-
-‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/live/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBingLocalPackLiveHtmlRequestInfo> serpBingLocalPackLiveHtmlRequestInfo = Arrays.asList(); // List<SerpBingLocalPackLiveHtmlRequestInfo> | 
-    try {
-      SerpBingLocalPackLiveHtmlResponseInfo result = apiInstance.bingLocalPackLiveHtml(serpBingLocalPackLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingLocalPackLiveHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBingLocalPackLiveHtmlRequestInfo** | [**List&lt;SerpBingLocalPackLiveHtmlRequestInfo&gt;**](SerpBingLocalPackLiveHtmlRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**SerpBingLocalPackLiveHtmlResponseInfo**](SerpBingLocalPackLiveHtmlResponseInfo.md)
+[**SerpGoogleLocationsCountryResponseInfo**](SerpGoogleLocationsCountryResponseInfo.md)
 
 ### Authorization
 
@@ -717,41 +616,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="bingLocalPackLiveRegular"></a>
-# **bingLocalPackLiveRegular**
-> SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular(serpBingLocalPackLiveRegularRequestInfo)
+<a id="serpGoogleLanguages"></a>
+# **serpGoogleLanguages**
+> SerpGoogleLanguagesResponseInfo serpGoogleLanguages()
 
-
-
-‌‌ Live Bing Local Pack SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/live/regular/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBingLocalPackLiveRegularRequestInfo> serpBingLocalPackLiveRegularRequestInfo = Arrays.asList(); // List<SerpBingLocalPackLiveRegularRequestInfo> | 
-    try {
-      SerpBingLocalPackLiveRegularResponseInfo result = apiInstance.bingLocalPackLiveRegular(serpBingLocalPackLiveRegularRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingLocalPackLiveRegular");
+
+    SerpGoogleLanguagesResponseInfo response = apiInstance.serpGoogleLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -763,281 +661,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBingLocalPackLiveRegularRequestInfo** | [**List&lt;SerpBingLocalPackLiveRegularRequestInfo&gt;**](SerpBingLocalPackLiveRegularRequestInfo.md)|  | [optional] |
 
-### Return type
-
-[**SerpBingLocalPackLiveRegularResponseInfo**](SerpBingLocalPackLiveRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTaskGetHtml"></a>
-# **bingLocalPackTaskGetHtml**
-> SerpBingLocalPackTaskGetHtmlResponseInfo bingLocalPackTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "2b213851-ad52-4cb0-a131-a113934b0da2"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpBingLocalPackTaskGetHtmlResponseInfo result = apiInstance.bingLocalPackTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingLocalPackTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpBingLocalPackTaskGetHtmlResponseInfo**](SerpBingLocalPackTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTaskGetRegular"></a>
-# **bingLocalPackTaskGetRegular**
-> SerpBingLocalPackTaskGetRegularResponseInfo bingLocalPackTaskGetRegular(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/task_get/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpBingLocalPackTaskGetRegularResponseInfo result = apiInstance.bingLocalPackTaskGetRegular(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingLocalPackTaskGetRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpBingLocalPackTaskGetRegularResponseInfo**](SerpBingLocalPackTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTaskPost"></a>
-# **bingLocalPackTaskPost**
-> SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost(serpBingLocalPackTaskPostRequestInfo)
-
-
-
-‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBingLocalPackTaskPostRequestInfo> serpBingLocalPackTaskPostRequestInfo = Arrays.asList(); // List<SerpBingLocalPackTaskPostRequestInfo> | 
-    try {
-      SerpBingLocalPackTaskPostResponseInfo result = apiInstance.bingLocalPackTaskPost(serpBingLocalPackTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingLocalPackTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBingLocalPackTaskPostRequestInfo** | [**List&lt;SerpBingLocalPackTaskPostRequestInfo&gt;**](SerpBingLocalPackTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpBingLocalPackTaskPostResponseInfo**](SerpBingLocalPackTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingLocalPackTasksFixed"></a>
-# **bingLocalPackTasksFixed**
-> SerpBingLocalPackTasksFixedResponseInfo bingLocalPackTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBingLocalPackTasksFixedResponseInfo result = apiInstance.bingLocalPackTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingLocalPackTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpBingLocalPackTasksFixedResponseInfo**](SerpBingLocalPackTasksFixedResponseInfo.md)
+[**SerpGoogleLanguagesResponseInfo**](SerpGoogleLanguagesResponseInfo.md)
 
 ### Authorization
 
@@ -1045,7 +677,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -1053,40 +685,43 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="bingLocalPackTasksReady"></a>
-# **bingLocalPackTasksReady**
-> SerpBingLocalPackTasksReadyResponseInfo bingLocalPackTasksReady()
+<a id="googleOrganicTaskPost"></a>
+# **googleOrganicTaskPost**
+> SerpGoogleOrganicTaskPostResponseInfo googleOrganicTaskPost()
 
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/local_pack/tasks_ready/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBingLocalPackTasksReadyResponseInfo result = apiInstance.bingLocalPackTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingLocalPackTasksReady");
+    SerpGoogleOrganicTaskPostRequestInfo model = new SerpGoogleOrganicTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleOrganicTaskPostResponseInfo response = apiInstance.googleOrganicTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1097,79 +732,85 @@ public class Example {
 ```
 
 ### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleOrganicTaskPostRequestInfo>&gt;**](List<SerpGoogleOrganicTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleOrganicTaskPostResponseInfo**](SerpGoogleOrganicTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicTasksReady"></a>
+# **googleOrganicTasksReady**
+> SerpGoogleOrganicTasksReadyResponseInfo googleOrganicTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleOrganicTasksReadyResponseInfo response = apiInstance.googleOrganicTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpBingLocalPackTasksReadyResponseInfo**](SerpBingLocalPackTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingOrganicLiveAdvanced"></a>
-# **bingOrganicLiveAdvanced**
-> SerpBingOrganicLiveAdvancedResponseInfo bingOrganicLiveAdvanced(serpBingOrganicLiveAdvancedRequestInfo)
-
-
-
-‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBingOrganicLiveAdvancedRequestInfo> serpBingOrganicLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpBingOrganicLiveAdvancedRequestInfo> | 
-    try {
-      SerpBingOrganicLiveAdvancedResponseInfo result = apiInstance.bingOrganicLiveAdvanced(serpBingOrganicLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBingOrganicLiveAdvancedRequestInfo** | [**List&lt;SerpBingOrganicLiveAdvancedRequestInfo&gt;**](SerpBingOrganicLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**SerpBingOrganicLiveAdvancedResponseInfo**](SerpBingOrganicLiveAdvancedResponseInfo.md)
+[**SerpGoogleOrganicTasksReadyResponseInfo**](SerpGoogleOrganicTasksReadyResponseInfo.md)
 
 ### Authorization
 
@@ -1185,41 +826,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="bingOrganicLiveHtml"></a>
-# **bingOrganicLiveHtml**
-> SerpBingOrganicLiveHtmlResponseInfo bingOrganicLiveHtml(serpBingOrganicLiveHtmlRequestInfo)
+<a id="tasksReady"></a>
+# **tasksReady**
+> SerpTasksReadyResponseInfo tasksReady()
 
-
-
-‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/live/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBingOrganicLiveHtmlRequestInfo> serpBingOrganicLiveHtmlRequestInfo = Arrays.asList(); // List<SerpBingOrganicLiveHtmlRequestInfo> | 
-    try {
-      SerpBingOrganicLiveHtmlResponseInfo result = apiInstance.bingOrganicLiveHtml(serpBingOrganicLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicLiveHtml");
+
+    SerpTasksReadyResponseInfo response = apiInstance.tasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#tasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1231,417 +871,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBingOrganicLiveHtmlRequestInfo** | [**List&lt;SerpBingOrganicLiveHtmlRequestInfo&gt;**](SerpBingOrganicLiveHtmlRequestInfo.md)|  | [optional] |
 
-### Return type
-
-[**SerpBingOrganicLiveHtmlResponseInfo**](SerpBingOrganicLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingOrganicLiveRegular"></a>
-# **bingOrganicLiveRegular**
-> SerpBingOrganicLiveRegularResponseInfo bingOrganicLiveRegular(serpBingOrganicLiveRegularRequestInfo)
-
-
-
-‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/live/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBingOrganicLiveRegularRequestInfo> serpBingOrganicLiveRegularRequestInfo = Arrays.asList(); // List<SerpBingOrganicLiveRegularRequestInfo> | 
-    try {
-      SerpBingOrganicLiveRegularResponseInfo result = apiInstance.bingOrganicLiveRegular(serpBingOrganicLiveRegularRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicLiveRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBingOrganicLiveRegularRequestInfo** | [**List&lt;SerpBingOrganicLiveRegularRequestInfo&gt;**](SerpBingOrganicLiveRegularRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpBingOrganicLiveRegularResponseInfo**](SerpBingOrganicLiveRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingOrganicTaskGetAdvanced"></a>
-# **bingOrganicTaskGetAdvanced**
-> SerpBingOrganicTaskGetAdvancedResponseInfo bingOrganicTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpBingOrganicTaskGetAdvancedResponseInfo result = apiInstance.bingOrganicTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpBingOrganicTaskGetAdvancedResponseInfo**](SerpBingOrganicTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingOrganicTaskGetHtml"></a>
-# **bingOrganicTaskGetHtml**
-> SerpBingOrganicTaskGetHtmlResponseInfo bingOrganicTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "d3aacd67-94e5-4eb3-9353-3b2c49fb593c"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpBingOrganicTaskGetHtmlResponseInfo result = apiInstance.bingOrganicTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpBingOrganicTaskGetHtmlResponseInfo**](SerpBingOrganicTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingOrganicTaskGetRegular"></a>
-# **bingOrganicTaskGetRegular**
-> SerpBingOrganicTaskGetRegularResponseInfo bingOrganicTaskGetRegular(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_get/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpBingOrganicTaskGetRegularResponseInfo result = apiInstance.bingOrganicTaskGetRegular(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicTaskGetRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpBingOrganicTaskGetRegularResponseInfo**](SerpBingOrganicTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingOrganicTaskPost"></a>
-# **bingOrganicTaskPost**
-> SerpBingOrganicTaskPostResponseInfo bingOrganicTaskPost(serpBingOrganicTaskPostRequestInfo)
-
-
-
-‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpBingOrganicTaskPostRequestInfo> serpBingOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpBingOrganicTaskPostRequestInfo> | 
-    try {
-      SerpBingOrganicTaskPostResponseInfo result = apiInstance.bingOrganicTaskPost(serpBingOrganicTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpBingOrganicTaskPostRequestInfo** | [**List&lt;SerpBingOrganicTaskPostRequestInfo&gt;**](SerpBingOrganicTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpBingOrganicTaskPostResponseInfo**](SerpBingOrganicTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="bingOrganicTasksFixed"></a>
-# **bingOrganicTasksFixed**
-> SerpBingOrganicTasksFixedResponseInfo bingOrganicTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBingOrganicTasksFixedResponseInfo result = apiInstance.bingOrganicTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpBingOrganicTasksFixedResponseInfo**](SerpBingOrganicTasksFixedResponseInfo.md)
+[**SerpTasksReadyResponseInfo**](SerpTasksReadyResponseInfo.md)
 
 ### Authorization
 
@@ -1649,7 +887,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -1657,40 +895,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="bingOrganicTasksReady"></a>
-# **bingOrganicTasksReady**
-> SerpBingOrganicTasksReadyResponseInfo bingOrganicTasksReady()
+<a id="googleOrganicTasksFixed"></a>
+# **googleOrganicTasksFixed**
+> SerpGoogleOrganicTasksFixedResponseInfo googleOrganicTasksFixed()
 
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/organic/tasks_ready/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBingOrganicTasksReadyResponseInfo result = apiInstance.bingOrganicTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#bingOrganicTasksReady");
+
+    SerpGoogleOrganicTasksFixedResponseInfo response = apiInstance.googleOrganicTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicTasksFixed");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1701,11 +939,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpBingOrganicTasksReadyResponseInfo**](SerpBingOrganicTasksReadyResponseInfo.md)
+[**SerpGoogleOrganicTasksFixedResponseInfo**](SerpGoogleOrganicTasksFixedResponseInfo.md)
 
 ### Authorization
 
@@ -1713,7 +956,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -1721,41 +964,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleAdsAdvertisersTaskGetAdvanced"></a>
-# **googleAdsAdvertisersTaskGetAdvanced**
-> SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo googleAdsAdvertisersTaskGetAdvanced(id)
+<a id="googleOrganicTaskGetRegular"></a>
+# **googleOrganicTaskGetRegular**
+> SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo result = apiInstance.googleAdsAdvertisersTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTaskGetAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleOrganicTaskGetRegularResponseInfo response = apiInstance.googleOrganicTaskGetRegular(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicTaskGetRegular");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1767,13 +1009,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo**](SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)
+[**SerpGoogleOrganicTaskGetRegularResponseInfo**](SerpGoogleOrganicTaskGetRegularResponseInfo.md)
 
 ### Authorization
 
@@ -1781,7 +1025,4874 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicTaskGetAdvanced"></a>
+# **googleOrganicTaskGetAdvanced**
+> SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleOrganicTaskGetAdvancedResponseInfo response = apiInstance.googleOrganicTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleOrganicTaskGetAdvancedResponseInfo**](SerpGoogleOrganicTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicTaskGetHtml"></a>
+# **googleOrganicTaskGetHtml**
+> SerpGoogleOrganicTaskGetHtmlResponseInfo googleOrganicTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleOrganicTaskGetHtmlResponseInfo response = apiInstance.googleOrganicTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleOrganicTaskGetHtmlResponseInfo**](SerpGoogleOrganicTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicLiveRegular"></a>
+# **googleOrganicLiveRegular**
+> SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleOrganicLiveRegularRequestInfo model = new SerpGoogleOrganicLiveRegularRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleOrganicLiveRegularResponseInfo response = apiInstance.googleOrganicLiveRegular(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicLiveRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleOrganicLiveRegularRequestInfo>&gt;**](List<SerpGoogleOrganicLiveRegularRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleOrganicLiveRegularResponseInfo**](SerpGoogleOrganicLiveRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicLiveAdvanced"></a>
+# **googleOrganicLiveAdvanced**
+> SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleOrganicLiveAdvancedRequestInfo model = new SerpGoogleOrganicLiveAdvancedRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en")
+           .calculateRectangles(true);
+    SerpGoogleOrganicLiveAdvancedResponseInfo response = apiInstance.googleOrganicLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleOrganicLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleOrganicLiveAdvancedResponseInfo**](SerpGoogleOrganicLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleOrganicLiveHtml"></a>
+# **googleOrganicLiveHtml**
+> SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleOrganicLiveHtmlRequestInfo model = new SerpGoogleOrganicLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleOrganicLiveHtmlResponseInfo response = apiInstance.googleOrganicLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleOrganicLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleOrganicLiveHtmlRequestInfo>&gt;**](List<SerpGoogleOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleOrganicLiveHtmlResponseInfo**](SerpGoogleOrganicLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpGoogleAiModeLanguages"></a>
+# **serpGoogleAiModeLanguages**
+> SerpGoogleAiModeLanguagesResponseInfo serpGoogleAiModeLanguages()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleAiModeLanguagesResponseInfo response = apiInstance.serpGoogleAiModeLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleAiModeLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeLanguagesResponseInfo**](SerpGoogleAiModeLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTaskPost"></a>
+# **googleAiModeTaskPost**
+> SerpGoogleAiModeTaskPostResponseInfo googleAiModeTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleAiModeTaskPostRequestInfo model = new SerpGoogleAiModeTaskPostRequestInfo()
+           .keyword("what is google ai mode")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleAiModeTaskPostResponseInfo response = apiInstance.googleAiModeTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAiModeTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleAiModeTaskPostRequestInfo>&gt;**](List<SerpGoogleAiModeTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAiModeTaskPostResponseInfo**](SerpGoogleAiModeTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTasksReady"></a>
+# **googleAiModeTasksReady**
+> SerpGoogleAiModeTasksReadyResponseInfo googleAiModeTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleAiModeTasksReadyResponseInfo response = apiInstance.googleAiModeTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAiModeTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTasksReadyResponseInfo**](SerpGoogleAiModeTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTasksFixed"></a>
+# **googleAiModeTasksFixed**
+> SerpGoogleAiModeTasksFixedResponseInfo googleAiModeTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleAiModeTasksFixedResponseInfo response = apiInstance.googleAiModeTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAiModeTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTasksFixedResponseInfo**](SerpGoogleAiModeTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTaskGetAdvanced"></a>
+# **googleAiModeTaskGetAdvanced**
+> SerpGoogleAiModeTaskGetAdvancedResponseInfo googleAiModeTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleAiModeTaskGetAdvancedResponseInfo response = apiInstance.googleAiModeTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAiModeTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTaskGetAdvancedResponseInfo**](SerpGoogleAiModeTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeTaskGetHtml"></a>
+# **googleAiModeTaskGetHtml**
+> SerpGoogleAiModeTaskGetHtmlResponseInfo googleAiModeTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleAiModeTaskGetHtmlResponseInfo response = apiInstance.googleAiModeTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAiModeTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAiModeTaskGetHtmlResponseInfo**](SerpGoogleAiModeTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeLiveAdvanced"></a>
+# **googleAiModeLiveAdvanced**
+> SerpGoogleAiModeLiveAdvancedResponseInfo googleAiModeLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleAiModeLiveAdvancedRequestInfo model = new SerpGoogleAiModeLiveAdvancedRequestInfo()
+           .keyword("what is google ai mode")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleAiModeLiveAdvancedResponseInfo response = apiInstance.googleAiModeLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAiModeLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleAiModeLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleAiModeLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAiModeLiveAdvancedResponseInfo**](SerpGoogleAiModeLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAiModeLiveHtml"></a>
+# **googleAiModeLiveHtml**
+> SerpGoogleAiModeLiveHtmlResponseInfo googleAiModeLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleAiModeLiveHtmlRequestInfo model = new SerpGoogleAiModeLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleAiModeLiveHtmlResponseInfo response = apiInstance.googleAiModeLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAiModeLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleAiModeLiveHtmlRequestInfo>&gt;**](List<SerpGoogleAiModeLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAiModeLiveHtmlResponseInfo**](SerpGoogleAiModeLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleMapsTaskPost"></a>
+# **googleMapsTaskPost**
+> SerpGoogleMapsTaskPostResponseInfo googleMapsTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleMapsTaskPostRequestInfo model = new SerpGoogleMapsTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleMapsTaskPostResponseInfo response = apiInstance.googleMapsTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleMapsTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleMapsTaskPostRequestInfo>&gt;**](List<SerpGoogleMapsTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleMapsTaskPostResponseInfo**](SerpGoogleMapsTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleMapsTasksReady"></a>
+# **googleMapsTasksReady**
+> SerpGoogleMapsTasksReadyResponseInfo googleMapsTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleMapsTasksReadyResponseInfo response = apiInstance.googleMapsTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleMapsTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleMapsTasksReadyResponseInfo**](SerpGoogleMapsTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleMapsTasksFixed"></a>
+# **googleMapsTasksFixed**
+> SerpGoogleMapsTasksFixedResponseInfo googleMapsTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleMapsTasksFixedResponseInfo response = apiInstance.googleMapsTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleMapsTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleMapsTasksFixedResponseInfo**](SerpGoogleMapsTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleMapsTaskGetAdvanced"></a>
+# **googleMapsTaskGetAdvanced**
+> SerpGoogleMapsTaskGetAdvancedResponseInfo googleMapsTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleMapsTaskGetAdvancedResponseInfo response = apiInstance.googleMapsTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleMapsTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleMapsTaskGetAdvancedResponseInfo**](SerpGoogleMapsTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleMapsLiveAdvanced"></a>
+# **googleMapsLiveAdvanced**
+> SerpGoogleMapsLiveAdvancedResponseInfo googleMapsLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleMapsLiveAdvancedRequestInfo model = new SerpGoogleMapsLiveAdvancedRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleMapsLiveAdvancedResponseInfo response = apiInstance.googleMapsLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleMapsLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleMapsLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleMapsLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleMapsLiveAdvancedResponseInfo**](SerpGoogleMapsLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleLocalFinderTaskPost"></a>
+# **googleLocalFinderTaskPost**
+> SerpGoogleLocalFinderTaskPostResponseInfo googleLocalFinderTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleLocalFinderTaskPostRequestInfo model = new SerpGoogleLocalFinderTaskPostRequestInfo()
+           .keyword("local nail services")
+           .locationCode(2840)
+           .languageCode("en")
+           .minRating(4.5d)
+           .timeFilter("monday");
+    SerpGoogleLocalFinderTaskPostResponseInfo response = apiInstance.googleLocalFinderTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleLocalFinderTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleLocalFinderTaskPostRequestInfo>&gt;**](List<SerpGoogleLocalFinderTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleLocalFinderTaskPostResponseInfo**](SerpGoogleLocalFinderTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleLocalFinderTasksReady"></a>
+# **googleLocalFinderTasksReady**
+> SerpGoogleLocalFinderTasksReadyResponseInfo googleLocalFinderTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleLocalFinderTasksReadyResponseInfo response = apiInstance.googleLocalFinderTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleLocalFinderTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleLocalFinderTasksReadyResponseInfo**](SerpGoogleLocalFinderTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleLocalFinderTasksFixed"></a>
+# **googleLocalFinderTasksFixed**
+> SerpGoogleLocalFinderTasksFixedResponseInfo googleLocalFinderTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleLocalFinderTasksFixedResponseInfo response = apiInstance.googleLocalFinderTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleLocalFinderTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleLocalFinderTasksFixedResponseInfo**](SerpGoogleLocalFinderTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleLocalFinderTaskGetAdvanced"></a>
+# **googleLocalFinderTaskGetAdvanced**
+> SerpGoogleLocalFinderTaskGetAdvancedResponseInfo googleLocalFinderTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleLocalFinderTaskGetAdvancedResponseInfo response = apiInstance.googleLocalFinderTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleLocalFinderTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleLocalFinderTaskGetAdvancedResponseInfo**](SerpGoogleLocalFinderTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleLocalFinderTaskGetHtml"></a>
+# **googleLocalFinderTaskGetHtml**
+> SerpGoogleLocalFinderTaskGetHtmlResponseInfo googleLocalFinderTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleLocalFinderTaskGetHtmlResponseInfo response = apiInstance.googleLocalFinderTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleLocalFinderTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleLocalFinderTaskGetHtmlResponseInfo**](SerpGoogleLocalFinderTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleLocalFinderLiveAdvanced"></a>
+# **googleLocalFinderLiveAdvanced**
+> SerpGoogleLocalFinderLiveAdvancedResponseInfo googleLocalFinderLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleLocalFinderLiveAdvancedRequestInfo model = new SerpGoogleLocalFinderLiveAdvancedRequestInfo()
+           .keyword("local nail services")
+           .locationCode(2840)
+           .languageCode("en")
+           .minRating(4.5d)
+           .timeFilter("monday");
+    SerpGoogleLocalFinderLiveAdvancedResponseInfo response = apiInstance.googleLocalFinderLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleLocalFinderLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleLocalFinderLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleLocalFinderLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleLocalFinderLiveAdvancedResponseInfo**](SerpGoogleLocalFinderLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleLocalFinderLiveHtml"></a>
+# **googleLocalFinderLiveHtml**
+> SerpGoogleLocalFinderLiveHtmlResponseInfo googleLocalFinderLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleLocalFinderLiveHtmlRequestInfo model = new SerpGoogleLocalFinderLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleLocalFinderLiveHtmlResponseInfo response = apiInstance.googleLocalFinderLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleLocalFinderLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleLocalFinderLiveHtmlRequestInfo>&gt;**](List<SerpGoogleLocalFinderLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleLocalFinderLiveHtmlResponseInfo**](SerpGoogleLocalFinderLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleNewsTaskPost"></a>
+# **googleNewsTaskPost**
+> SerpGoogleNewsTaskPostResponseInfo googleNewsTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleNewsTaskPostRequestInfo model = new SerpGoogleNewsTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleNewsTaskPostResponseInfo response = apiInstance.googleNewsTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleNewsTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleNewsTaskPostRequestInfo>&gt;**](List<SerpGoogleNewsTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleNewsTaskPostResponseInfo**](SerpGoogleNewsTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleNewsTasksReady"></a>
+# **googleNewsTasksReady**
+> SerpGoogleNewsTasksReadyResponseInfo googleNewsTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleNewsTasksReadyResponseInfo response = apiInstance.googleNewsTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleNewsTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleNewsTasksReadyResponseInfo**](SerpGoogleNewsTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleNewsTasksFixed"></a>
+# **googleNewsTasksFixed**
+> SerpGoogleNewsTasksFixedResponseInfo googleNewsTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleNewsTasksFixedResponseInfo response = apiInstance.googleNewsTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleNewsTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleNewsTasksFixedResponseInfo**](SerpGoogleNewsTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleNewsTaskGetAdvanced"></a>
+# **googleNewsTaskGetAdvanced**
+> SerpGoogleNewsTaskGetAdvancedResponseInfo googleNewsTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleNewsTaskGetAdvancedResponseInfo response = apiInstance.googleNewsTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleNewsTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleNewsTaskGetAdvancedResponseInfo**](SerpGoogleNewsTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleNewsTaskGetHtml"></a>
+# **googleNewsTaskGetHtml**
+> SerpGoogleNewsTaskGetHtmlResponseInfo googleNewsTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleNewsTaskGetHtmlResponseInfo response = apiInstance.googleNewsTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleNewsTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleNewsTaskGetHtmlResponseInfo**](SerpGoogleNewsTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleNewsLiveAdvanced"></a>
+# **googleNewsLiveAdvanced**
+> SerpGoogleNewsLiveAdvancedResponseInfo googleNewsLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleNewsLiveAdvancedRequestInfo model = new SerpGoogleNewsLiveAdvancedRequestInfo()
+           .keyword("android")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleNewsLiveAdvancedResponseInfo response = apiInstance.googleNewsLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleNewsLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleNewsLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleNewsLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleNewsLiveAdvancedResponseInfo**](SerpGoogleNewsLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleNewsLiveHtml"></a>
+# **googleNewsLiveHtml**
+> SerpGoogleNewsLiveHtmlResponseInfo googleNewsLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleNewsLiveHtmlRequestInfo model = new SerpGoogleNewsLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleNewsLiveHtmlResponseInfo response = apiInstance.googleNewsLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleNewsLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleNewsLiveHtmlRequestInfo>&gt;**](List<SerpGoogleNewsLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleNewsLiveHtmlResponseInfo**](SerpGoogleNewsLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleEventsTaskPost"></a>
+# **googleEventsTaskPost**
+> SerpGoogleEventsTaskPostResponseInfo googleEventsTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleEventsTaskPostRequestInfo model = new SerpGoogleEventsTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleEventsTaskPostResponseInfo response = apiInstance.googleEventsTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleEventsTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleEventsTaskPostRequestInfo>&gt;**](List<SerpGoogleEventsTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleEventsTaskPostResponseInfo**](SerpGoogleEventsTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleEventsTasksReady"></a>
+# **googleEventsTasksReady**
+> SerpGoogleEventsTasksReadyResponseInfo googleEventsTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleEventsTasksReadyResponseInfo response = apiInstance.googleEventsTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleEventsTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleEventsTasksReadyResponseInfo**](SerpGoogleEventsTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleEventsTasksFixed"></a>
+# **googleEventsTasksFixed**
+> SerpGoogleEventsTasksFixedResponseInfo googleEventsTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleEventsTasksFixedResponseInfo response = apiInstance.googleEventsTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleEventsTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleEventsTasksFixedResponseInfo**](SerpGoogleEventsTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleEventsTaskGetAdvanced"></a>
+# **googleEventsTaskGetAdvanced**
+> SerpGoogleEventsTaskGetAdvancedResponseInfo googleEventsTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleEventsTaskGetAdvancedResponseInfo response = apiInstance.googleEventsTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleEventsTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleEventsTaskGetAdvancedResponseInfo**](SerpGoogleEventsTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleEventsLiveAdvanced"></a>
+# **googleEventsLiveAdvanced**
+> SerpGoogleEventsLiveAdvancedResponseInfo googleEventsLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleEventsLiveAdvancedRequestInfo model = new SerpGoogleEventsLiveAdvancedRequestInfo()
+           .keyword("concerts")
+           .locationName("Los Angeles,California,United States")
+           .dateRange("today");
+    SerpGoogleEventsLiveAdvancedResponseInfo response = apiInstance.googleEventsLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleEventsLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleEventsLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleEventsLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleEventsLiveAdvancedResponseInfo**](SerpGoogleEventsLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleImagesTaskPost"></a>
+# **googleImagesTaskPost**
+> SerpGoogleImagesTaskPostResponseInfo googleImagesTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleImagesTaskPostRequestInfo model = new SerpGoogleImagesTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleImagesTaskPostResponseInfo response = apiInstance.googleImagesTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleImagesTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleImagesTaskPostRequestInfo>&gt;**](List<SerpGoogleImagesTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleImagesTaskPostResponseInfo**](SerpGoogleImagesTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleImagesTasksReady"></a>
+# **googleImagesTasksReady**
+> SerpGoogleImagesTasksReadyResponseInfo googleImagesTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleImagesTasksReadyResponseInfo response = apiInstance.googleImagesTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleImagesTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleImagesTasksReadyResponseInfo**](SerpGoogleImagesTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleImagesTasksFixed"></a>
+# **googleImagesTasksFixed**
+> SerpGoogleImagesTasksFixedResponseInfo googleImagesTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleImagesTasksFixedResponseInfo response = apiInstance.googleImagesTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleImagesTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleImagesTasksFixedResponseInfo**](SerpGoogleImagesTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleImagesTaskGetAdvanced"></a>
+# **googleImagesTaskGetAdvanced**
+> SerpGoogleImagesTaskGetAdvancedResponseInfo googleImagesTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleImagesTaskGetAdvancedResponseInfo response = apiInstance.googleImagesTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleImagesTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleImagesTaskGetAdvancedResponseInfo**](SerpGoogleImagesTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleImagesTaskGetHtml"></a>
+# **googleImagesTaskGetHtml**
+> SerpGoogleImagesTaskGetHtmlResponseInfo googleImagesTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleImagesTaskGetHtmlResponseInfo response = apiInstance.googleImagesTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleImagesTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleImagesTaskGetHtmlResponseInfo**](SerpGoogleImagesTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleImagesLiveAdvanced"></a>
+# **googleImagesLiveAdvanced**
+> SerpGoogleImagesLiveAdvancedResponseInfo googleImagesLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleImagesLiveAdvancedRequestInfo model = new SerpGoogleImagesLiveAdvancedRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleImagesLiveAdvancedResponseInfo response = apiInstance.googleImagesLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleImagesLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleImagesLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleImagesLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleImagesLiveAdvancedResponseInfo**](SerpGoogleImagesLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleImagesLiveHtml"></a>
+# **googleImagesLiveHtml**
+> SerpGoogleImagesLiveHtmlResponseInfo googleImagesLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleImagesLiveHtmlRequestInfo model = new SerpGoogleImagesLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleImagesLiveHtmlResponseInfo response = apiInstance.googleImagesLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleImagesLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleImagesLiveHtmlRequestInfo>&gt;**](List<SerpGoogleImagesLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleImagesLiveHtmlResponseInfo**](SerpGoogleImagesLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleSearchByImageTaskPost"></a>
+# **googleSearchByImageTaskPost**
+> SerpGoogleSearchByImageTaskPostResponseInfo googleSearchByImageTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleSearchByImageTaskPostRequestInfo model = new SerpGoogleSearchByImageTaskPostRequestInfo()
+           .imageUrl("https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleSearchByImageTaskPostResponseInfo response = apiInstance.googleSearchByImageTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleSearchByImageTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleSearchByImageTaskPostRequestInfo>&gt;**](List<SerpGoogleSearchByImageTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleSearchByImageTaskPostResponseInfo**](SerpGoogleSearchByImageTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleSearchByImageTasksReady"></a>
+# **googleSearchByImageTasksReady**
+> SerpGoogleSearchByImageTasksReadyResponseInfo googleSearchByImageTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleSearchByImageTasksReadyResponseInfo response = apiInstance.googleSearchByImageTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleSearchByImageTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleSearchByImageTasksReadyResponseInfo**](SerpGoogleSearchByImageTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleSearchByImageTasksFixed"></a>
+# **googleSearchByImageTasksFixed**
+> SerpGoogleSearchByImageTasksFixedResponseInfo googleSearchByImageTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleSearchByImageTasksFixedResponseInfo response = apiInstance.googleSearchByImageTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleSearchByImageTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleSearchByImageTasksFixedResponseInfo**](SerpGoogleSearchByImageTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleSearchByImageTaskGetAdvanced"></a>
+# **googleSearchByImageTaskGetAdvanced**
+> SerpGoogleSearchByImageTaskGetAdvancedResponseInfo googleSearchByImageTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleSearchByImageTaskGetAdvancedResponseInfo response = apiInstance.googleSearchByImageTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleSearchByImageTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleSearchByImageTaskGetAdvancedResponseInfo**](SerpGoogleSearchByImageTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleJobsTaskPost"></a>
+# **googleJobsTaskPost**
+> SerpGoogleJobsTaskPostResponseInfo googleJobsTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleJobsTaskPostRequestInfo model = new SerpGoogleJobsTaskPostRequestInfo()
+           .keyword(".net developer")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleJobsTaskPostResponseInfo response = apiInstance.googleJobsTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleJobsTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleJobsTaskPostRequestInfo>&gt;**](List<SerpGoogleJobsTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleJobsTaskPostResponseInfo**](SerpGoogleJobsTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleJobsTasksReady"></a>
+# **googleJobsTasksReady**
+> SerpGoogleJobsTasksReadyResponseInfo googleJobsTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleJobsTasksReadyResponseInfo response = apiInstance.googleJobsTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleJobsTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleJobsTasksReadyResponseInfo**](SerpGoogleJobsTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleJobsTasksFixed"></a>
+# **googleJobsTasksFixed**
+> SerpGoogleJobsTasksFixedResponseInfo googleJobsTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleJobsTasksFixedResponseInfo response = apiInstance.googleJobsTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleJobsTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleJobsTasksFixedResponseInfo**](SerpGoogleJobsTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleJobsTaskGetAdvanced"></a>
+# **googleJobsTaskGetAdvanced**
+> SerpGoogleJobsTaskGetAdvancedResponseInfo googleJobsTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleJobsTaskGetAdvancedResponseInfo response = apiInstance.googleJobsTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleJobsTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleJobsTaskGetAdvancedResponseInfo**](SerpGoogleJobsTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleJobsTaskGetHtml"></a>
+# **googleJobsTaskGetHtml**
+> SerpGoogleJobsTaskGetHtmlResponseInfo googleJobsTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleJobsTaskGetHtmlResponseInfo response = apiInstance.googleJobsTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleJobsTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleJobsTaskGetHtmlResponseInfo**](SerpGoogleJobsTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAutocompleteTaskPost"></a>
+# **googleAutocompleteTaskPost**
+> SerpGoogleAutocompleteTaskPostResponseInfo googleAutocompleteTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleAutocompleteTaskPostRequestInfo model = new SerpGoogleAutocompleteTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en")
+           .cursorPointer(6);
+    SerpGoogleAutocompleteTaskPostResponseInfo response = apiInstance.googleAutocompleteTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAutocompleteTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleAutocompleteTaskPostRequestInfo>&gt;**](List<SerpGoogleAutocompleteTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAutocompleteTaskPostResponseInfo**](SerpGoogleAutocompleteTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAutocompleteTasksReady"></a>
+# **googleAutocompleteTasksReady**
+> SerpGoogleAutocompleteTasksReadyResponseInfo googleAutocompleteTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleAutocompleteTasksReadyResponseInfo response = apiInstance.googleAutocompleteTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAutocompleteTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAutocompleteTasksReadyResponseInfo**](SerpGoogleAutocompleteTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAutocompleteTasksFixed"></a>
+# **googleAutocompleteTasksFixed**
+> SerpGoogleAutocompleteTasksFixedResponseInfo googleAutocompleteTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleAutocompleteTasksFixedResponseInfo response = apiInstance.googleAutocompleteTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAutocompleteTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAutocompleteTasksFixedResponseInfo**](SerpGoogleAutocompleteTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAutocompleteTaskGetAdvanced"></a>
+# **googleAutocompleteTaskGetAdvanced**
+> SerpGoogleAutocompleteTaskGetAdvancedResponseInfo googleAutocompleteTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleAutocompleteTaskGetAdvancedResponseInfo response = apiInstance.googleAutocompleteTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAutocompleteTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAutocompleteTaskGetAdvancedResponseInfo**](SerpGoogleAutocompleteTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleAutocompleteLiveAdvanced"></a>
+# **googleAutocompleteLiveAdvanced**
+> SerpGoogleAutocompleteLiveAdvancedResponseInfo googleAutocompleteLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleAutocompleteLiveAdvancedRequestInfo model = new SerpGoogleAutocompleteLiveAdvancedRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en")
+           .client("gws-wiz-serp");
+    SerpGoogleAutocompleteLiveAdvancedResponseInfo response = apiInstance.googleAutocompleteLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAutocompleteLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleAutocompleteLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleAutocompleteLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleAutocompleteLiveAdvancedResponseInfo**](SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetSearchTaskPost"></a>
+# **googleDatasetSearchTaskPost**
+> SerpGoogleDatasetSearchTaskPostResponseInfo googleDatasetSearchTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleDatasetSearchTaskPostRequestInfo model = new SerpGoogleDatasetSearchTaskPostRequestInfo()
+           .keyword("water quality")
+           .lastUpdated("1m")
+           .fileFormats(
+               List.of(
+                   "archive",
+                   "image"
+                ))
+           .usageRights("noncommercial")
+           .isFree(true)
+           .topics(
+               List.of(
+                   "natural_sciences",
+                   "geo"
+                ));
+    SerpGoogleDatasetSearchTaskPostResponseInfo response = apiInstance.googleDatasetSearchTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetSearchTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleDatasetSearchTaskPostRequestInfo>&gt;**](List<SerpGoogleDatasetSearchTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleDatasetSearchTaskPostResponseInfo**](SerpGoogleDatasetSearchTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetSearchTasksReady"></a>
+# **googleDatasetSearchTasksReady**
+> SerpGoogleDatasetSearchTasksReadyResponseInfo googleDatasetSearchTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleDatasetSearchTasksReadyResponseInfo response = apiInstance.googleDatasetSearchTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetSearchTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleDatasetSearchTasksReadyResponseInfo**](SerpGoogleDatasetSearchTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetSearchTasksFixed"></a>
+# **googleDatasetSearchTasksFixed**
+> SerpGoogleDatasetSearchTasksFixedResponseInfo googleDatasetSearchTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleDatasetSearchTasksFixedResponseInfo response = apiInstance.googleDatasetSearchTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetSearchTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleDatasetSearchTasksFixedResponseInfo**](SerpGoogleDatasetSearchTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetSearchTaskGetAdvanced"></a>
+# **googleDatasetSearchTaskGetAdvanced**
+> SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo googleDatasetSearchTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo response = apiInstance.googleDatasetSearchTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetSearchTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo**](SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetSearchLiveAdvanced"></a>
+# **googleDatasetSearchLiveAdvanced**
+> SerpGoogleDatasetSearchLiveAdvancedResponseInfo googleDatasetSearchLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleDatasetSearchLiveAdvancedRequestInfo model = new SerpGoogleDatasetSearchLiveAdvancedRequestInfo()
+           .keyword("water quality")
+           .lastUpdated("1m")
+           .fileFormats(
+               List.of(
+                   "archive",
+                   "image"
+                ))
+           .usageRights("noncommercial")
+           .isFree(true)
+           .topics(
+               List.of(
+                   "natural_sciences",
+                   "geo"
+                ));
+    SerpGoogleDatasetSearchLiveAdvancedResponseInfo response = apiInstance.googleDatasetSearchLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetSearchLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleDatasetSearchLiveAdvancedResponseInfo**](SerpGoogleDatasetSearchLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetInfoTaskPost"></a>
+# **googleDatasetInfoTaskPost**
+> SerpGoogleDatasetInfoTaskPostResponseInfo googleDatasetInfoTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleDatasetInfoTaskPostRequestInfo model = new SerpGoogleDatasetInfoTaskPostRequestInfo()
+           .datasetId("L2cvMTFqbl85ZHN6MQ==");
+    SerpGoogleDatasetInfoTaskPostResponseInfo response = apiInstance.googleDatasetInfoTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetInfoTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleDatasetInfoTaskPostRequestInfo>&gt;**](List<SerpGoogleDatasetInfoTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleDatasetInfoTaskPostResponseInfo**](SerpGoogleDatasetInfoTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetInfoTasksReady"></a>
+# **googleDatasetInfoTasksReady**
+> SerpGoogleDatasetInfoTasksReadyResponseInfo googleDatasetInfoTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleDatasetInfoTasksReadyResponseInfo response = apiInstance.googleDatasetInfoTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetInfoTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleDatasetInfoTasksReadyResponseInfo**](SerpGoogleDatasetInfoTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetInfoTasksFixed"></a>
+# **googleDatasetInfoTasksFixed**
+> SerpGoogleDatasetInfoTasksFixedResponseInfo googleDatasetInfoTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleDatasetInfoTasksFixedResponseInfo response = apiInstance.googleDatasetInfoTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetInfoTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleDatasetInfoTasksFixedResponseInfo**](SerpGoogleDatasetInfoTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetInfoTaskGetAdvanced"></a>
+# **googleDatasetInfoTaskGetAdvanced**
+> SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo googleDatasetInfoTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo response = apiInstance.googleDatasetInfoTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetInfoTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo**](SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleDatasetInfoLiveAdvanced"></a>
+# **googleDatasetInfoLiveAdvanced**
+> SerpGoogleDatasetInfoLiveAdvancedResponseInfo googleDatasetInfoLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleDatasetInfoLiveAdvancedRequestInfo model = new SerpGoogleDatasetInfoLiveAdvancedRequestInfo()
+           .datasetId("L2cvMTFqbl85ZHN6MQ==");
+    SerpGoogleDatasetInfoLiveAdvancedResponseInfo response = apiInstance.googleDatasetInfoLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleDatasetInfoLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleDatasetInfoLiveAdvancedResponseInfo**](SerpGoogleDatasetInfoLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpGoogleAdsAdvertisersLocations"></a>
+# **serpGoogleAdsAdvertisersLocations**
+> SerpGoogleAdsAdvertisersLocationsResponseInfo serpGoogleAdsAdvertisersLocations()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleAdsAdvertisersLocationsResponseInfo response = apiInstance.serpGoogleAdsAdvertisersLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleAdsAdvertisersLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAdsAdvertisersLocationsResponseInfo**](SerpGoogleAdsAdvertisersLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -1791,38 +5902,39 @@ public class Example {
 
 <a id="googleAdsAdvertisersTaskPost"></a>
 # **googleAdsAdvertisersTaskPost**
-> SerpGoogleAdsAdvertisersTaskPostResponseInfo googleAdsAdvertisersTaskPost(serpGoogleAdsAdvertisersTaskPostRequestInfo)
+> SerpGoogleAdsAdvertisersTaskPostResponseInfo googleAdsAdvertisersTaskPost()
 
-
-
-Google Ads Advertisers provides information on advertisers that run campaigns on Google Ads based on the Ads Transparency platform. ‌‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/task_post/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleAdsAdvertisersTaskPostRequestInfo> serpGoogleAdsAdvertisersTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleAdsAdvertisersTaskPostRequestInfo> | 
-    try {
-      SerpGoogleAdsAdvertisersTaskPostResponseInfo result = apiInstance.googleAdsAdvertisersTaskPost(serpGoogleAdsAdvertisersTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    SerpGoogleAdsAdvertisersTaskPostRequestInfo model = new SerpGoogleAdsAdvertisersTaskPostRequestInfo()
+           .keyword("apple")
+           .locationCode(2840);
+    SerpGoogleAdsAdvertisersTaskPostResponseInfo response = apiInstance.googleAdsAdvertisersTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -1835,9 +5947,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleAdsAdvertisersTaskPostRequestInfo** | [**List&lt;SerpGoogleAdsAdvertisersTaskPostRequestInfo&gt;**](SerpGoogleAdsAdvertisersTaskPostRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleAdsAdvertisersTaskPostRequestInfo>&gt;**](List<SerpGoogleAdsAdvertisersTaskPostRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -1862,34 +5976,34 @@ public class Example {
 > SerpGoogleAdsAdvertisersTasksReadyResponseInfo googleAdsAdvertisersTasksReady()
 
 
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/tasks_ready/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleAdsAdvertisersTasksReadyResponseInfo result = apiInstance.googleAdsAdvertisersTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    SerpGoogleAdsAdvertisersTasksReadyResponseInfo response = apiInstance.googleAdsAdvertisersTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -1901,7 +6015,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -1913,7 +6032,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -1921,41 +6040,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleAdsSearchTaskGetAdvanced"></a>
-# **googleAdsSearchTaskGetAdvanced**
-> SerpGoogleAdsSearchTaskGetAdvancedResponseInfo googleAdsSearchTaskGetAdvanced(id)
+<a id="googleAdsAdvertisersTaskGetAdvanced"></a>
+# **googleAdsAdvertisersTaskGetAdvanced**
+> SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo googleAdsAdvertisersTaskGetAdvanced()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleAdsSearchTaskGetAdvancedResponseInfo result = apiInstance.googleAdsSearchTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleAdsSearchTaskGetAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo response = apiInstance.googleAdsAdvertisersTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1967,13 +6085,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleAdsSearchTaskGetAdvancedResponseInfo**](SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)
+[**SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo**](SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -1981,7 +6101,76 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpGoogleAdsSearchLocations"></a>
+# **serpGoogleAdsSearchLocations**
+> SerpGoogleAdsSearchLocationsResponseInfo serpGoogleAdsSearchLocations()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpGoogleAdsSearchLocationsResponseInfo response = apiInstance.serpGoogleAdsSearchLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpGoogleAdsSearchLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleAdsSearchLocationsResponseInfo**](SerpGoogleAdsSearchLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -1991,38 +6180,44 @@ public class Example {
 
 <a id="googleAdsSearchTaskPost"></a>
 # **googleAdsSearchTaskPost**
-> SerpGoogleAdsSearchTaskPostResponseInfo googleAdsSearchTaskPost(serpGoogleAdsSearchTaskPostRequestInfo)
+> SerpGoogleAdsSearchTaskPostResponseInfo googleAdsSearchTaskPost()
 
-
-
-Google Ads Search provides information on ads that are run by advertisers on Google Ads. Information is based on the Ads Transparency platform and adapted for the convenience of DataForSEO users. ‌‌ for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/task_post/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleAdsSearchTaskPostRequestInfo> serpGoogleAdsSearchTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleAdsSearchTaskPostRequestInfo> | 
-    try {
-      SerpGoogleAdsSearchTaskPostResponseInfo result = apiInstance.googleAdsSearchTaskPost(serpGoogleAdsSearchTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    SerpGoogleAdsSearchTaskPostRequestInfo model = new SerpGoogleAdsSearchTaskPostRequestInfo()
+           .advertiserIds(
+               List.of(
+                   "AR13752565271262920705",
+                   "AR02439908557932462081"
+                ))
+           .locationCode(2840)
+           .platform("google_search");
+    SerpGoogleAdsSearchTaskPostResponseInfo response = apiInstance.googleAdsSearchTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAdsSearchTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -2035,9 +6230,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleAdsSearchTaskPostRequestInfo** | [**List&lt;SerpGoogleAdsSearchTaskPostRequestInfo&gt;**](SerpGoogleAdsSearchTaskPostRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleAdsSearchTaskPostRequestInfo>&gt;**](List<SerpGoogleAdsSearchTaskPostRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -2062,34 +6259,34 @@ public class Example {
 > SerpGoogleAdsSearchTasksReadyResponseInfo googleAdsSearchTasksReady()
 
 
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/tasks_ready/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleAdsSearchTasksReadyResponseInfo result = apiInstance.googleAdsSearchTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    SerpGoogleAdsSearchTasksReadyResponseInfo response = apiInstance.googleAdsSearchTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAdsSearchTasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -2101,7 +6298,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -2113,74 +6315,6 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleAutocompleteLiveAdvanced"></a>
-# **googleAutocompleteLiveAdvanced**
-> SerpGoogleAutocompleteLiveAdvancedResponseInfo googleAutocompleteLiveAdvanced(serpGoogleAutocompleteLiveAdvancedRequestInfo)
-
-
-
-‌‌ Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleAutocompleteLiveAdvancedRequestInfo> serpGoogleAutocompleteLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleAutocompleteLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleAutocompleteLiveAdvancedResponseInfo result = apiInstance.googleAutocompleteLiveAdvanced(serpGoogleAutocompleteLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleAutocompleteLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleAutocompleteLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleAutocompleteLiveAdvancedRequestInfo&gt;**](SerpGoogleAutocompleteLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleAutocompleteLiveAdvancedResponseInfo**](SerpGoogleAutocompleteLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
  - **Content-Type**: application/json
  - **Accept**: application/json
 
@@ -2189,41 +6323,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleAutocompleteTaskGetAdvanced"></a>
-# **googleAutocompleteTaskGetAdvanced**
-> SerpGoogleAutocompleteTaskGetAdvancedResponseInfo googleAutocompleteTaskGetAdvanced(id)
+<a id="googleAdsSearchTaskGetAdvanced"></a>
+# **googleAdsSearchTaskGetAdvanced**
+> SerpGoogleAdsSearchTaskGetAdvancedResponseInfo googleAdsSearchTaskGetAdvanced()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleAutocompleteTaskGetAdvancedResponseInfo result = apiInstance.googleAutocompleteTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleAutocompleteTaskGetAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleAdsSearchTaskGetAdvancedResponseInfo response = apiInstance.googleAdsSearchTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleAdsSearchTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2235,145 +6368,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
 
-### Return type
-
-[**SerpGoogleAutocompleteTaskGetAdvancedResponseInfo**](SerpGoogleAutocompleteTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleAutocompleteTaskPost"></a>
-# **googleAutocompleteTaskPost**
-> SerpGoogleAutocompleteTaskPostResponseInfo googleAutocompleteTaskPost(serpGoogleAutocompleteTaskPostRequestInfo)
-
-
-
-‌‌ Google Autocomplete is a feature within Google Search that improves the search experience by allowing users to complete searches they started to type. DataForSEO SERP API will provide you with all the suggestions Google Autocomplete offers for a particular keyword, the position of the cursor pointer, and the search client. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleAutocompleteTaskPostRequestInfo> serpGoogleAutocompleteTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleAutocompleteTaskPostRequestInfo> | 
-    try {
-      SerpGoogleAutocompleteTaskPostResponseInfo result = apiInstance.googleAutocompleteTaskPost(serpGoogleAutocompleteTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleAutocompleteTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleAutocompleteTaskPostRequestInfo** | [**List&lt;SerpGoogleAutocompleteTaskPostRequestInfo&gt;**](SerpGoogleAutocompleteTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleAutocompleteTaskPostResponseInfo**](SerpGoogleAutocompleteTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleAutocompleteTasksFixed"></a>
-# **googleAutocompleteTasksFixed**
-> SerpGoogleAutocompleteTasksFixedResponseInfo googleAutocompleteTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleAutocompleteTasksFixedResponseInfo result = apiInstance.googleAutocompleteTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleAutocompleteTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleAutocompleteTasksFixedResponseInfo**](SerpGoogleAutocompleteTasksFixedResponseInfo.md)
+[**SerpGoogleAdsSearchTaskGetAdvancedResponseInfo**](SerpGoogleAdsSearchTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -2381,7 +6384,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -2389,40 +6392,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleAutocompleteTasksReady"></a>
-# **googleAutocompleteTasksReady**
-> SerpGoogleAutocompleteTasksReadyResponseInfo googleAutocompleteTasksReady()
+<a id="serpBingLocations"></a>
+# **serpBingLocations**
+> SerpBingLocationsResponseInfo serpBingLocations()
 
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/autocomplete/tasks_ready/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleAutocompleteTasksReadyResponseInfo result = apiInstance.googleAutocompleteTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleAutocompleteTasksReady");
+
+    SerpBingLocationsResponseInfo response = apiInstance.serpBingLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpBingLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2433,79 +6436,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleAutocompleteTasksReadyResponseInfo**](SerpGoogleAutocompleteTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleDatasetInfoLiveAdvanced"></a>
-# **googleDatasetInfoLiveAdvanced**
-> SerpGoogleDatasetInfoLiveAdvancedResponseInfo googleDatasetInfoLiveAdvanced(serpGoogleDatasetInfoLiveAdvancedRequestInfo)
-
-
-
-‌ Live Google Dataset Info provides real-time data on the dataset you specify in the request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo> serpGoogleDatasetInfoLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleDatasetInfoLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleDatasetInfoLiveAdvancedResponseInfo result = apiInstance.googleDatasetInfoLiveAdvanced(serpGoogleDatasetInfoLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetInfoLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleDatasetInfoLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleDatasetInfoLiveAdvancedRequestInfo&gt;**](SerpGoogleDatasetInfoLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**SerpGoogleDatasetInfoLiveAdvancedResponseInfo**](SerpGoogleDatasetInfoLiveAdvancedResponseInfo.md)
+[**SerpBingLocationsResponseInfo**](SerpBingLocationsResponseInfo.md)
 
 ### Authorization
 
@@ -2521,41 +6461,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleDatasetInfoTaskGetAdvanced"></a>
-# **googleDatasetInfoTaskGetAdvanced**
-> SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo googleDatasetInfoTaskGetAdvanced(id)
+<a id="serpBingLocationsCountry"></a>
+# **serpBingLocationsCountry**
+> SerpBingLocationsCountryResponseInfo serpBingLocationsCountry()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo result = apiInstance.googleDatasetInfoTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetInfoTaskGetAdvanced");
+    String country = "us";
+    SerpBingLocationsCountryResponseInfo response = apiInstance.serpBingLocationsCountry(country);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpBingLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2567,145 +6506,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
 
-### Return type
-
-[**SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo**](SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleDatasetInfoTaskPost"></a>
-# **googleDatasetInfoTaskPost**
-> SerpGoogleDatasetInfoTaskPostResponseInfo googleDatasetInfoTaskPost(serpGoogleDatasetInfoTaskPostRequestInfo)
-
-
-
-‌‌ Google Dataset Info API provides detailed information about the dataset you specify in the POST request. You will get data from a page of the dataset displayed separately from the SERP. It contains information about dataset content, authors, licenses, and description on the SERP. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleDatasetInfoTaskPostRequestInfo> serpGoogleDatasetInfoTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleDatasetInfoTaskPostRequestInfo> | 
-    try {
-      SerpGoogleDatasetInfoTaskPostResponseInfo result = apiInstance.googleDatasetInfoTaskPost(serpGoogleDatasetInfoTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetInfoTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleDatasetInfoTaskPostRequestInfo** | [**List&lt;SerpGoogleDatasetInfoTaskPostRequestInfo&gt;**](SerpGoogleDatasetInfoTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleDatasetInfoTaskPostResponseInfo**](SerpGoogleDatasetInfoTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleDatasetInfoTasksFixed"></a>
-# **googleDatasetInfoTasksFixed**
-> SerpGoogleDatasetInfoTasksFixedResponseInfo googleDatasetInfoTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleDatasetInfoTasksFixedResponseInfo result = apiInstance.googleDatasetInfoTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetInfoTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleDatasetInfoTasksFixedResponseInfo**](SerpGoogleDatasetInfoTasksFixedResponseInfo.md)
+[**SerpBingLocationsCountryResponseInfo**](SerpBingLocationsCountryResponseInfo.md)
 
 ### Authorization
 
@@ -2713,7 +6522,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -2721,40 +6530,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleDatasetInfoTasksReady"></a>
-# **googleDatasetInfoTasksReady**
-> SerpGoogleDatasetInfoTasksReadyResponseInfo googleDatasetInfoTasksReady()
+<a id="serpBingLanguages"></a>
+# **serpBingLanguages**
+> SerpBingLanguagesResponseInfo serpBingLanguages()
 
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_info/tasks_ready/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleDatasetInfoTasksReadyResponseInfo result = apiInstance.googleDatasetInfoTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetInfoTasksReady");
+
+    SerpBingLanguagesResponseInfo response = apiInstance.serpBingLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpBingLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2765,79 +6574,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleDatasetInfoTasksReadyResponseInfo**](SerpGoogleDatasetInfoTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleDatasetSearchLiveAdvanced"></a>
-# **googleDatasetSearchLiveAdvanced**
-> SerpGoogleDatasetSearchLiveAdvancedResponseInfo googleDatasetSearchLiveAdvanced(serpGoogleDatasetSearchLiveAdvancedRequestInfo)
-
-
-
-‌ Live Google Dataset Search provides real-time data on the top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo> serpGoogleDatasetSearchLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleDatasetSearchLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleDatasetSearchLiveAdvancedResponseInfo result = apiInstance.googleDatasetSearchLiveAdvanced(serpGoogleDatasetSearchLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetSearchLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleDatasetSearchLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleDatasetSearchLiveAdvancedRequestInfo&gt;**](SerpGoogleDatasetSearchLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**SerpGoogleDatasetSearchLiveAdvancedResponseInfo**](SerpGoogleDatasetSearchLiveAdvancedResponseInfo.md)
+[**SerpBingLanguagesResponseInfo**](SerpBingLanguagesResponseInfo.md)
 
 ### Authorization
 
@@ -2853,41 +6599,43 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleDatasetSearchTaskGetAdvanced"></a>
-# **googleDatasetSearchTaskGetAdvanced**
-> SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo googleDatasetSearchTaskGetAdvanced(id)
+<a id="bingOrganicTaskPost"></a>
+# **bingOrganicTaskPost**
+> SerpBingOrganicTaskPostResponseInfo bingOrganicTaskPost()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo result = apiInstance.googleDatasetSearchTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetSearchTaskGetAdvanced");
+    SerpBingOrganicTaskPostRequestInfo model = new SerpBingOrganicTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpBingOrganicTaskPostResponseInfo response = apiInstance.bingOrganicTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2899,81 +6647,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBingOrganicTaskPostRequestInfo>&gt;**](List<SerpBingOrganicTaskPostRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo**](SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleDatasetSearchTaskPost"></a>
-# **googleDatasetSearchTaskPost**
-> SerpGoogleDatasetSearchTaskPostResponseInfo googleDatasetSearchTaskPost(serpGoogleDatasetSearchTaskPostRequestInfo)
-
-
-
-‌‌ Google Dataset Search API provides top 20 Google Dataset search engine results. These results are specific to the indicated keyword. You can specify other parameters optionally. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleDatasetSearchTaskPostRequestInfo> serpGoogleDatasetSearchTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleDatasetSearchTaskPostRequestInfo> | 
-    try {
-      SerpGoogleDatasetSearchTaskPostResponseInfo result = apiInstance.googleDatasetSearchTaskPost(serpGoogleDatasetSearchTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetSearchTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleDatasetSearchTaskPostRequestInfo** | [**List&lt;SerpGoogleDatasetSearchTaskPostRequestInfo&gt;**](SerpGoogleDatasetSearchTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleDatasetSearchTaskPostResponseInfo**](SerpGoogleDatasetSearchTaskPostResponseInfo.md)
+[**SerpBingOrganicTaskPostResponseInfo**](SerpBingOrganicTaskPostResponseInfo.md)
 
 ### Authorization
 
@@ -2989,40 +6671,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleDatasetSearchTasksFixed"></a>
-# **googleDatasetSearchTasksFixed**
-> SerpGoogleDatasetSearchTasksFixedResponseInfo googleDatasetSearchTasksFixed()
+<a id="bingOrganicTasksReady"></a>
+# **bingOrganicTasksReady**
+> SerpBingOrganicTasksReadyResponseInfo bingOrganicTasksReady()
 
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_fixed/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleDatasetSearchTasksFixedResponseInfo result = apiInstance.googleDatasetSearchTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetSearchTasksFixed");
+
+    SerpBingOrganicTasksReadyResponseInfo response = apiInstance.bingOrganicTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicTasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3033,11 +6715,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleDatasetSearchTasksFixedResponseInfo**](SerpGoogleDatasetSearchTasksFixedResponseInfo.md)
+[**SerpBingOrganicTasksReadyResponseInfo**](SerpBingOrganicTasksReadyResponseInfo.md)
 
 ### Authorization
 
@@ -3045,7 +6732,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -3053,40 +6740,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleDatasetSearchTasksReady"></a>
-# **googleDatasetSearchTasksReady**
-> SerpGoogleDatasetSearchTasksReadyResponseInfo googleDatasetSearchTasksReady()
+<a id="bingOrganicTasksFixed"></a>
+# **bingOrganicTasksFixed**
+> SerpBingOrganicTasksFixedResponseInfo bingOrganicTasksFixed()
 
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/dataset_search/tasks_ready/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleDatasetSearchTasksReadyResponseInfo result = apiInstance.googleDatasetSearchTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleDatasetSearchTasksReady");
+
+    SerpBingOrganicTasksFixedResponseInfo response = apiInstance.bingOrganicTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicTasksFixed");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3097,79 +6784,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleDatasetSearchTasksReadyResponseInfo**](SerpGoogleDatasetSearchTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleEventsLiveAdvanced"></a>
-# **googleEventsLiveAdvanced**
-> SerpGoogleEventsLiveAdvancedResponseInfo googleEventsLiveAdvanced(serpGoogleEventsLiveAdvancedRequestInfo)
-
-
-
-‌‌ Live Google Events SERP provides real-time data from Google Events Search for the specified keyword and location. Note that Google Events SERP API works for the English language only. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleEventsLiveAdvancedRequestInfo> serpGoogleEventsLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleEventsLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleEventsLiveAdvancedResponseInfo result = apiInstance.googleEventsLiveAdvanced(serpGoogleEventsLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleEventsLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleEventsLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleEventsLiveAdvancedRequestInfo&gt;**](SerpGoogleEventsLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**SerpGoogleEventsLiveAdvancedResponseInfo**](SerpGoogleEventsLiveAdvancedResponseInfo.md)
+[**SerpBingOrganicTasksFixedResponseInfo**](SerpBingOrganicTasksFixedResponseInfo.md)
 
 ### Authorization
 
@@ -3185,41 +6809,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleEventsTaskGetAdvanced"></a>
-# **googleEventsTaskGetAdvanced**
-> SerpGoogleEventsTaskGetAdvancedResponseInfo googleEventsTaskGetAdvanced(id)
+<a id="bingOrganicTaskGetRegular"></a>
+# **bingOrganicTaskGetRegular**
+> SerpBingOrganicTaskGetRegularResponseInfo bingOrganicTaskGetRegular()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleEventsTaskGetAdvancedResponseInfo result = apiInstance.googleEventsTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleEventsTaskGetAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBingOrganicTaskGetRegularResponseInfo response = apiInstance.bingOrganicTaskGetRegular(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicTaskGetRegular");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3231,145 +6854,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
 
-### Return type
-
-[**SerpGoogleEventsTaskGetAdvancedResponseInfo**](SerpGoogleEventsTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleEventsTaskPost"></a>
-# **googleEventsTaskPost**
-> SerpGoogleEventsTaskPostResponseInfo googleEventsTaskPost(serpGoogleEventsTaskPostRequestInfo)
-
-
-
-‌‌ Google Events SERP provides data from Google Events Search for the specified keyword and location (see the List of Locations). Note that Google Events SERP API works for the English language only. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleEventsTaskPostRequestInfo> serpGoogleEventsTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleEventsTaskPostRequestInfo> | 
-    try {
-      SerpGoogleEventsTaskPostResponseInfo result = apiInstance.googleEventsTaskPost(serpGoogleEventsTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleEventsTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleEventsTaskPostRequestInfo** | [**List&lt;SerpGoogleEventsTaskPostRequestInfo&gt;**](SerpGoogleEventsTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleEventsTaskPostResponseInfo**](SerpGoogleEventsTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleEventsTasksFixed"></a>
-# **googleEventsTasksFixed**
-> SerpGoogleEventsTasksFixedResponseInfo googleEventsTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleEventsTasksFixedResponseInfo result = apiInstance.googleEventsTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleEventsTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleEventsTasksFixedResponseInfo**](SerpGoogleEventsTasksFixedResponseInfo.md)
+[**SerpBingOrganicTaskGetRegularResponseInfo**](SerpBingOrganicTaskGetRegularResponseInfo.md)
 
 ### Authorization
 
@@ -3377,7 +6870,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -3385,40 +6878,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleEventsTasksReady"></a>
-# **googleEventsTasksReady**
-> SerpGoogleEventsTasksReadyResponseInfo googleEventsTasksReady()
+<a id="bingOrganicTaskGetAdvanced"></a>
+# **bingOrganicTaskGetAdvanced**
+> SerpBingOrganicTaskGetAdvancedResponseInfo bingOrganicTaskGetAdvanced()
 
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/events/tasks_ready/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleEventsTasksReadyResponseInfo result = apiInstance.googleEventsTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleEventsTasksReady");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBingOrganicTaskGetAdvancedResponseInfo response = apiInstance.bingOrganicTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3429,79 +6922,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleEventsTasksReadyResponseInfo**](SerpGoogleEventsTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleFinanceExploreLiveAdvanced"></a>
-# **googleFinanceExploreLiveAdvanced**
-> SerpGoogleFinanceExploreLiveAdvancedResponseInfo googleFinanceExploreLiveAdvanced(serpGoogleFinanceExploreLiveAdvancedRequestInfo)
-
-
-
-‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> serpGoogleFinanceExploreLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleFinanceExploreLiveAdvancedResponseInfo result = apiInstance.googleFinanceExploreLiveAdvanced(serpGoogleFinanceExploreLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceExploreLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleFinanceExploreLiveAdvancedRequestInfo&gt;**](SerpGoogleFinanceExploreLiveAdvancedRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**SerpGoogleFinanceExploreLiveAdvancedResponseInfo**](SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)
+[**SerpBingOrganicTaskGetAdvancedResponseInfo**](SerpBingOrganicTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -3517,41 +6947,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceExploreLiveHtml"></a>
-# **googleFinanceExploreLiveHtml**
-> SerpGoogleFinanceExploreLiveHtmlResponseInfo googleFinanceExploreLiveHtml(serpGoogleFinanceExploreLiveHtmlRequestInfo)
+<a id="bingOrganicTaskGetHtml"></a>
+# **bingOrganicTaskGetHtml**
+> SerpBingOrganicTaskGetHtmlResponseInfo bingOrganicTaskGetHtml()
 
-
-
-‌ Live SERP HTML provides raw HTML page from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/live/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> serpGoogleFinanceExploreLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceExploreLiveHtmlRequestInfo> | 
-    try {
-      SerpGoogleFinanceExploreLiveHtmlResponseInfo result = apiInstance.googleFinanceExploreLiveHtml(serpGoogleFinanceExploreLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveHtml");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBingOrganicTaskGetHtmlResponseInfo response = apiInstance.bingOrganicTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicTaskGetHtml");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3563,13 +6992,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceExploreLiveHtmlRequestInfo** | [**List&lt;SerpGoogleFinanceExploreLiveHtmlRequestInfo&gt;**](SerpGoogleFinanceExploreLiveHtmlRequestInfo.md)|  | [optional] |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleFinanceExploreLiveHtmlResponseInfo**](SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)
+[**SerpBingOrganicTaskGetHtmlResponseInfo**](SerpBingOrganicTaskGetHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -3585,41 +7016,43 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceExploreTaskGetAdvanced"></a>
-# **googleFinanceExploreTaskGetAdvanced**
-> SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo googleFinanceExploreTaskGetAdvanced(id)
+<a id="bingOrganicLiveRegular"></a>
+# **bingOrganicLiveRegular**
+> SerpBingOrganicLiveRegularResponseInfo bingOrganicLiveRegular()
 
-
-
-‌ Live Google Finance Explore provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo result = apiInstance.googleFinanceExploreTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskGetAdvanced");
+    SerpBingOrganicLiveRegularRequestInfo model = new SerpBingOrganicLiveRegularRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpBingOrganicLiveRegularResponseInfo response = apiInstance.bingOrganicLiveRegular(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicLiveRegular");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3631,13 +7064,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBingOrganicLiveRegularRequestInfo>&gt;**](List<SerpBingOrganicLiveRegularRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo**](SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)
+[**SerpBingOrganicLiveRegularResponseInfo**](SerpBingOrganicLiveRegularResponseInfo.md)
 
 ### Authorization
 
@@ -3645,7 +7080,7 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -3653,41 +7088,43 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceExploreTaskGetHtml"></a>
-# **googleFinanceExploreTaskGetHtml**
-> SerpGoogleFinanceExploreTaskGetHtmlResponseInfo googleFinanceExploreTaskGetHtml(id)
+<a id="bingOrganicLiveAdvanced"></a>
+# **bingOrganicLiveAdvanced**
+> SerpBingOrganicLiveAdvancedResponseInfo bingOrganicLiveAdvanced()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_get/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "9c747dc9-ea11-44be-9087-f4ee62137e9b"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleFinanceExploreTaskGetHtmlResponseInfo result = apiInstance.googleFinanceExploreTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskGetHtml");
+    SerpBingOrganicLiveAdvancedRequestInfo model = new SerpBingOrganicLiveAdvancedRequestInfo()
+           .keyword("flight ticket new york san francisco")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpBingOrganicLiveAdvancedResponseInfo response = apiInstance.bingOrganicLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicLiveAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3699,13 +7136,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBingOrganicLiveAdvancedRequestInfo>&gt;**](List<SerpBingOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleFinanceExploreTaskGetHtmlResponseInfo**](SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)
+[**SerpBingOrganicLiveAdvancedResponseInfo**](SerpBingOrganicLiveAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -3713,7 +7152,4339 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingOrganicLiveHtml"></a>
+# **bingOrganicLiveHtml**
+> SerpBingOrganicLiveHtmlResponseInfo bingOrganicLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpBingOrganicLiveHtmlRequestInfo model = new SerpBingOrganicLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpBingOrganicLiveHtmlResponseInfo response = apiInstance.bingOrganicLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingOrganicLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBingOrganicLiveHtmlRequestInfo>&gt;**](List<SerpBingOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpBingOrganicLiveHtmlResponseInfo**](SerpBingOrganicLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingLocalPackTaskPost"></a>
+# **bingLocalPackTaskPost**
+> SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpBingLocalPackTaskPostRequestInfo model = new SerpBingLocalPackTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpBingLocalPackTaskPostResponseInfo response = apiInstance.bingLocalPackTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingLocalPackTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBingLocalPackTaskPostRequestInfo>&gt;**](List<SerpBingLocalPackTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpBingLocalPackTaskPostResponseInfo**](SerpBingLocalPackTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingLocalPackTasksReady"></a>
+# **bingLocalPackTasksReady**
+> SerpBingLocalPackTasksReadyResponseInfo bingLocalPackTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpBingLocalPackTasksReadyResponseInfo response = apiInstance.bingLocalPackTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingLocalPackTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBingLocalPackTasksReadyResponseInfo**](SerpBingLocalPackTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingLocalPackTasksFixed"></a>
+# **bingLocalPackTasksFixed**
+> SerpBingLocalPackTasksFixedResponseInfo bingLocalPackTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpBingLocalPackTasksFixedResponseInfo response = apiInstance.bingLocalPackTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingLocalPackTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBingLocalPackTasksFixedResponseInfo**](SerpBingLocalPackTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingLocalPackTaskGetRegular"></a>
+# **bingLocalPackTaskGetRegular**
+> SerpBingLocalPackTaskGetRegularResponseInfo bingLocalPackTaskGetRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBingLocalPackTaskGetRegularResponseInfo response = apiInstance.bingLocalPackTaskGetRegular(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingLocalPackTaskGetRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBingLocalPackTaskGetRegularResponseInfo**](SerpBingLocalPackTaskGetRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingLocalPackTaskGetHtml"></a>
+# **bingLocalPackTaskGetHtml**
+> SerpBingLocalPackTaskGetHtmlResponseInfo bingLocalPackTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBingLocalPackTaskGetHtmlResponseInfo response = apiInstance.bingLocalPackTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingLocalPackTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBingLocalPackTaskGetHtmlResponseInfo**](SerpBingLocalPackTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingLocalPackLiveRegular"></a>
+# **bingLocalPackLiveRegular**
+> SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpBingLocalPackLiveRegularRequestInfo model = new SerpBingLocalPackLiveRegularRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpBingLocalPackLiveRegularResponseInfo response = apiInstance.bingLocalPackLiveRegular(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingLocalPackLiveRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBingLocalPackLiveRegularRequestInfo>&gt;**](List<SerpBingLocalPackLiveRegularRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpBingLocalPackLiveRegularResponseInfo**](SerpBingLocalPackLiveRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="bingLocalPackLiveHtml"></a>
+# **bingLocalPackLiveHtml**
+> SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpBingLocalPackLiveHtmlRequestInfo model = new SerpBingLocalPackLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpBingLocalPackLiveHtmlResponseInfo response = apiInstance.bingLocalPackLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#bingLocalPackLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBingLocalPackLiveHtmlRequestInfo>&gt;**](List<SerpBingLocalPackLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpBingLocalPackLiveHtmlResponseInfo**](SerpBingLocalPackLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpYoutubeLocations"></a>
+# **serpYoutubeLocations**
+> SerpYoutubeLocationsResponseInfo serpYoutubeLocations()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeLocationsResponseInfo response = apiInstance.serpYoutubeLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpYoutubeLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeLocationsResponseInfo**](SerpYoutubeLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpYoutubeLocationsCountry"></a>
+# **serpYoutubeLocationsCountry**
+> SerpYoutubeLocationsCountryResponseInfo serpYoutubeLocationsCountry()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String country = "us";
+    SerpYoutubeLocationsCountryResponseInfo response = apiInstance.serpYoutubeLocationsCountry(country);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpYoutubeLocationsCountry");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeLocationsCountryResponseInfo**](SerpYoutubeLocationsCountryResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpYoutubeLanguages"></a>
+# **serpYoutubeLanguages**
+> SerpYoutubeLanguagesResponseInfo serpYoutubeLanguages()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeLanguagesResponseInfo response = apiInstance.serpYoutubeLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpYoutubeLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeLanguagesResponseInfo**](SerpYoutubeLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoInfoTaskPost"></a>
+# **youtubeVideoInfoTaskPost**
+> SerpYoutubeVideoInfoTaskPostResponseInfo youtubeVideoInfoTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYoutubeVideoInfoTaskPostRequestInfo model = new SerpYoutubeVideoInfoTaskPostRequestInfo()
+           .videoId("vQXvyV0zIP4")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYoutubeVideoInfoTaskPostResponseInfo response = apiInstance.youtubeVideoInfoTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYoutubeVideoInfoTaskPostRequestInfo>&gt;**](List<SerpYoutubeVideoInfoTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeVideoInfoTaskPostResponseInfo**](SerpYoutubeVideoInfoTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoInfoTasksReady"></a>
+# **youtubeVideoInfoTasksReady**
+> SerpYoutubeVideoInfoTasksReadyResponseInfo youtubeVideoInfoTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeVideoInfoTasksReadyResponseInfo response = apiInstance.youtubeVideoInfoTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoInfoTasksReadyResponseInfo**](SerpYoutubeVideoInfoTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoInfoTasksFixed"></a>
+# **youtubeVideoInfoTasksFixed**
+> SerpYoutubeVideoInfoTasksFixedResponseInfo youtubeVideoInfoTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeVideoInfoTasksFixedResponseInfo response = apiInstance.youtubeVideoInfoTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoInfoTasksFixedResponseInfo**](SerpYoutubeVideoInfoTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoInfoTaskGetAdvanced"></a>
+# **youtubeVideoInfoTaskGetAdvanced**
+> SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo youtubeVideoInfoTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo response = apiInstance.youtubeVideoInfoTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo**](SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoInfoLiveAdvanced"></a>
+# **youtubeVideoInfoLiveAdvanced**
+> SerpYoutubeVideoInfoLiveAdvancedResponseInfo youtubeVideoInfoLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYoutubeVideoInfoLiveAdvancedRequestInfo model = new SerpYoutubeVideoInfoLiveAdvancedRequestInfo()
+           .videoId("vQXvyV0zIP4")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYoutubeVideoInfoLiveAdvancedResponseInfo response = apiInstance.youtubeVideoInfoLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoInfoLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>&gt;**](List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeVideoInfoLiveAdvancedResponseInfo**](SerpYoutubeVideoInfoLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoSubtitlesTaskPost"></a>
+# **youtubeVideoSubtitlesTaskPost**
+> SerpYoutubeVideoSubtitlesTaskPostResponseInfo youtubeVideoSubtitlesTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYoutubeVideoSubtitlesTaskPostRequestInfo model = new SerpYoutubeVideoSubtitlesTaskPostRequestInfo()
+           .videoId("Y8Wu4rSNJms")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYoutubeVideoSubtitlesTaskPostResponseInfo response = apiInstance.youtubeVideoSubtitlesTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>&gt;**](List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeVideoSubtitlesTaskPostResponseInfo**](SerpYoutubeVideoSubtitlesTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoSubtitlesTasksReady"></a>
+# **youtubeVideoSubtitlesTasksReady**
+> SerpYoutubeVideoSubtitlesTasksReadyResponseInfo youtubeVideoSubtitlesTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeVideoSubtitlesTasksReadyResponseInfo response = apiInstance.youtubeVideoSubtitlesTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoSubtitlesTasksReadyResponseInfo**](SerpYoutubeVideoSubtitlesTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoSubtitlesTasksFixed"></a>
+# **youtubeVideoSubtitlesTasksFixed**
+> SerpYoutubeVideoSubtitlesTasksFixedResponseInfo youtubeVideoSubtitlesTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeVideoSubtitlesTasksFixedResponseInfo response = apiInstance.youtubeVideoSubtitlesTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoSubtitlesTasksFixedResponseInfo**](SerpYoutubeVideoSubtitlesTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoSubtitlesTaskGetAdvanced"></a>
+# **youtubeVideoSubtitlesTaskGetAdvanced**
+> SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo youtubeVideoSubtitlesTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo response = apiInstance.youtubeVideoSubtitlesTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo**](SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoSubtitlesLiveAdvanced"></a>
+# **youtubeVideoSubtitlesLiveAdvanced**
+> SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo youtubeVideoSubtitlesLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo model = new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo()
+           .videoId("Y8Wu4rSNJms")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo response = apiInstance.youtubeVideoSubtitlesLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>&gt;**](List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo**](SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoCommentsTaskPost"></a>
+# **youtubeVideoCommentsTaskPost**
+> SerpYoutubeVideoCommentsTaskPostResponseInfo youtubeVideoCommentsTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYoutubeVideoCommentsTaskPostRequestInfo model = new SerpYoutubeVideoCommentsTaskPostRequestInfo()
+           .videoId("vQXvyV0zIP4")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYoutubeVideoCommentsTaskPostResponseInfo response = apiInstance.youtubeVideoCommentsTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYoutubeVideoCommentsTaskPostRequestInfo>&gt;**](List<SerpYoutubeVideoCommentsTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeVideoCommentsTaskPostResponseInfo**](SerpYoutubeVideoCommentsTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoCommentsTasksReady"></a>
+# **youtubeVideoCommentsTasksReady**
+> SerpYoutubeVideoCommentsTasksReadyResponseInfo youtubeVideoCommentsTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeVideoCommentsTasksReadyResponseInfo response = apiInstance.youtubeVideoCommentsTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoCommentsTasksReadyResponseInfo**](SerpYoutubeVideoCommentsTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoCommentsTasksFixed"></a>
+# **youtubeVideoCommentsTasksFixed**
+> SerpYoutubeVideoCommentsTasksFixedResponseInfo youtubeVideoCommentsTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYoutubeVideoCommentsTasksFixedResponseInfo response = apiInstance.youtubeVideoCommentsTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoCommentsTasksFixedResponseInfo**](SerpYoutubeVideoCommentsTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoCommentsTaskGetAdvanced"></a>
+# **youtubeVideoCommentsTaskGetAdvanced**
+> SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo youtubeVideoCommentsTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo response = apiInstance.youtubeVideoCommentsTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo**](SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="youtubeVideoCommentsLiveAdvanced"></a>
+# **youtubeVideoCommentsLiveAdvanced**
+> SerpYoutubeVideoCommentsLiveAdvancedResponseInfo youtubeVideoCommentsLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYoutubeVideoCommentsLiveAdvancedRequestInfo model = new SerpYoutubeVideoCommentsLiveAdvancedRequestInfo()
+           .videoId("vQXvyV0zIP4")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYoutubeVideoCommentsLiveAdvancedResponseInfo response = apiInstance.youtubeVideoCommentsLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>&gt;**](List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYoutubeVideoCommentsLiveAdvancedResponseInfo**](SerpYoutubeVideoCommentsLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpYahooLocations"></a>
+# **serpYahooLocations**
+> SerpYahooLocationsResponseInfo serpYahooLocations()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYahooLocationsResponseInfo response = apiInstance.serpYahooLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpYahooLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooLocationsResponseInfo**](SerpYahooLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpYahooLocationsCountry"></a>
+# **serpYahooLocationsCountry**
+> SerpYahooLocationsCountryResponseInfo serpYahooLocationsCountry()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String country = "us";
+    SerpYahooLocationsCountryResponseInfo response = apiInstance.serpYahooLocationsCountry(country);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpYahooLocationsCountry");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooLocationsCountryResponseInfo**](SerpYahooLocationsCountryResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpYahooLanguages"></a>
+# **serpYahooLanguages**
+> SerpYahooLanguagesResponseInfo serpYahooLanguages()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYahooLanguagesResponseInfo response = apiInstance.serpYahooLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpYahooLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooLanguagesResponseInfo**](SerpYahooLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicTaskPost"></a>
+# **yahooOrganicTaskPost**
+> SerpYahooOrganicTaskPostResponseInfo yahooOrganicTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYahooOrganicTaskPostRequestInfo model = new SerpYahooOrganicTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYahooOrganicTaskPostResponseInfo response = apiInstance.yahooOrganicTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYahooOrganicTaskPostRequestInfo>&gt;**](List<SerpYahooOrganicTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYahooOrganicTaskPostResponseInfo**](SerpYahooOrganicTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicTasksReady"></a>
+# **yahooOrganicTasksReady**
+> SerpYahooOrganicTasksReadyResponseInfo yahooOrganicTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYahooOrganicTasksReadyResponseInfo response = apiInstance.yahooOrganicTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooOrganicTasksReadyResponseInfo**](SerpYahooOrganicTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicTasksFixed"></a>
+# **yahooOrganicTasksFixed**
+> SerpYahooOrganicTasksFixedResponseInfo yahooOrganicTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpYahooOrganicTasksFixedResponseInfo response = apiInstance.yahooOrganicTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooOrganicTasksFixedResponseInfo**](SerpYahooOrganicTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicTaskGetRegular"></a>
+# **yahooOrganicTaskGetRegular**
+> SerpYahooOrganicTaskGetRegularResponseInfo yahooOrganicTaskGetRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpYahooOrganicTaskGetRegularResponseInfo response = apiInstance.yahooOrganicTaskGetRegular(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicTaskGetRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooOrganicTaskGetRegularResponseInfo**](SerpYahooOrganicTaskGetRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicTaskGetAdvanced"></a>
+# **yahooOrganicTaskGetAdvanced**
+> SerpYahooOrganicTaskGetAdvancedResponseInfo yahooOrganicTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpYahooOrganicTaskGetAdvancedResponseInfo response = apiInstance.yahooOrganicTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooOrganicTaskGetAdvancedResponseInfo**](SerpYahooOrganicTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicTaskGetHtml"></a>
+# **yahooOrganicTaskGetHtml**
+> SerpYahooOrganicTaskGetHtmlResponseInfo yahooOrganicTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpYahooOrganicTaskGetHtmlResponseInfo response = apiInstance.yahooOrganicTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpYahooOrganicTaskGetHtmlResponseInfo**](SerpYahooOrganicTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicLiveRegular"></a>
+# **yahooOrganicLiveRegular**
+> SerpYahooOrganicLiveRegularResponseInfo yahooOrganicLiveRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYahooOrganicLiveRegularRequestInfo model = new SerpYahooOrganicLiveRegularRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYahooOrganicLiveRegularResponseInfo response = apiInstance.yahooOrganicLiveRegular(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicLiveRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYahooOrganicLiveRegularRequestInfo>&gt;**](List<SerpYahooOrganicLiveRegularRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYahooOrganicLiveRegularResponseInfo**](SerpYahooOrganicLiveRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicLiveAdvanced"></a>
+# **yahooOrganicLiveAdvanced**
+> SerpYahooOrganicLiveAdvancedResponseInfo yahooOrganicLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYahooOrganicLiveAdvancedRequestInfo model = new SerpYahooOrganicLiveAdvancedRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYahooOrganicLiveAdvancedResponseInfo response = apiInstance.yahooOrganicLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYahooOrganicLiveAdvancedRequestInfo>&gt;**](List<SerpYahooOrganicLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYahooOrganicLiveAdvancedResponseInfo**](SerpYahooOrganicLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="yahooOrganicLiveHtml"></a>
+# **yahooOrganicLiveHtml**
+> SerpYahooOrganicLiveHtmlResponseInfo yahooOrganicLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpYahooOrganicLiveHtmlRequestInfo model = new SerpYahooOrganicLiveHtmlRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpYahooOrganicLiveHtmlResponseInfo response = apiInstance.yahooOrganicLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#yahooOrganicLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpYahooOrganicLiveHtmlRequestInfo>&gt;**](List<SerpYahooOrganicLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpYahooOrganicLiveHtmlResponseInfo**](SerpYahooOrganicLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpBaiduLocations"></a>
+# **serpBaiduLocations**
+> SerpBaiduLocationsResponseInfo serpBaiduLocations()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpBaiduLocationsResponseInfo response = apiInstance.serpBaiduLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpBaiduLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduLocationsResponseInfo**](SerpBaiduLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpBaiduLocationsCountry"></a>
+# **serpBaiduLocationsCountry**
+> SerpBaiduLocationsCountryResponseInfo serpBaiduLocationsCountry()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String country = "us";
+    SerpBaiduLocationsCountryResponseInfo response = apiInstance.serpBaiduLocationsCountry(country);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpBaiduLocationsCountry");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduLocationsCountryResponseInfo**](SerpBaiduLocationsCountryResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpBaiduLanguages"></a>
+# **serpBaiduLanguages**
+> SerpBaiduLanguagesResponseInfo serpBaiduLanguages()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpBaiduLanguagesResponseInfo response = apiInstance.serpBaiduLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpBaiduLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduLanguagesResponseInfo**](SerpBaiduLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="baiduOrganicTaskPost"></a>
+# **baiduOrganicTaskPost**
+> SerpBaiduOrganicTaskPostResponseInfo baiduOrganicTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpBaiduOrganicTaskPostRequestInfo model = new SerpBaiduOrganicTaskPostRequestInfo()
+           .keyword("best iphone ever")
+           .priority(2)
+           .locationCode(2156)
+           .tag("some_string_123");
+    SerpBaiduOrganicTaskPostResponseInfo response = apiInstance.baiduOrganicTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#baiduOrganicTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpBaiduOrganicTaskPostRequestInfo>&gt;**](List<SerpBaiduOrganicTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpBaiduOrganicTaskPostResponseInfo**](SerpBaiduOrganicTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="baiduOrganicTasksReady"></a>
+# **baiduOrganicTasksReady**
+> SerpBaiduOrganicTasksReadyResponseInfo baiduOrganicTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpBaiduOrganicTasksReadyResponseInfo response = apiInstance.baiduOrganicTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#baiduOrganicTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduOrganicTasksReadyResponseInfo**](SerpBaiduOrganicTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="baiduOrganicTasksFixed"></a>
+# **baiduOrganicTasksFixed**
+> SerpBaiduOrganicTasksFixedResponseInfo baiduOrganicTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpBaiduOrganicTasksFixedResponseInfo response = apiInstance.baiduOrganicTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#baiduOrganicTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduOrganicTasksFixedResponseInfo**](SerpBaiduOrganicTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="baiduOrganicTaskGetRegular"></a>
+# **baiduOrganicTaskGetRegular**
+> SerpBaiduOrganicTaskGetRegularResponseInfo baiduOrganicTaskGetRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBaiduOrganicTaskGetRegularResponseInfo response = apiInstance.baiduOrganicTaskGetRegular(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#baiduOrganicTaskGetRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduOrganicTaskGetRegularResponseInfo**](SerpBaiduOrganicTaskGetRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="baiduOrganicTaskGetAdvanced"></a>
+# **baiduOrganicTaskGetAdvanced**
+> SerpBaiduOrganicTaskGetAdvancedResponseInfo baiduOrganicTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBaiduOrganicTaskGetAdvancedResponseInfo response = apiInstance.baiduOrganicTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#baiduOrganicTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduOrganicTaskGetAdvancedResponseInfo**](SerpBaiduOrganicTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="baiduOrganicTaskGetHtml"></a>
+# **baiduOrganicTaskGetHtml**
+> SerpBaiduOrganicTaskGetHtmlResponseInfo baiduOrganicTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpBaiduOrganicTaskGetHtmlResponseInfo response = apiInstance.baiduOrganicTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#baiduOrganicTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpBaiduOrganicTaskGetHtmlResponseInfo**](SerpBaiduOrganicTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="naverOrganicTaskPost"></a>
+# **naverOrganicTaskPost**
+> SerpNaverOrganicTaskPostResponseInfo naverOrganicTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpNaverOrganicTaskPostRequestInfo model = new SerpNaverOrganicTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .device("desktop")
+           .tag("some_string_123")
+           .postbackUrl("https://your-server.com/postbackscript.php")
+           .postbackData("regular");
+    SerpNaverOrganicTaskPostResponseInfo response = apiInstance.naverOrganicTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#naverOrganicTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpNaverOrganicTaskPostRequestInfo>&gt;**](List<SerpNaverOrganicTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpNaverOrganicTaskPostResponseInfo**](SerpNaverOrganicTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="naverOrganicTasksReady"></a>
+# **naverOrganicTasksReady**
+> SerpNaverOrganicTasksReadyResponseInfo naverOrganicTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpNaverOrganicTasksReadyResponseInfo response = apiInstance.naverOrganicTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#naverOrganicTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpNaverOrganicTasksReadyResponseInfo**](SerpNaverOrganicTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="naverOrganicTasksFixed"></a>
+# **naverOrganicTasksFixed**
+> SerpNaverOrganicTasksFixedResponseInfo naverOrganicTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpNaverOrganicTasksFixedResponseInfo response = apiInstance.naverOrganicTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#naverOrganicTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpNaverOrganicTasksFixedResponseInfo**](SerpNaverOrganicTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="naverOrganicTaskGetRegular"></a>
+# **naverOrganicTaskGetRegular**
+> SerpNaverOrganicTaskGetRegularResponseInfo naverOrganicTaskGetRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpNaverOrganicTaskGetRegularResponseInfo response = apiInstance.naverOrganicTaskGetRegular(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#naverOrganicTaskGetRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpNaverOrganicTaskGetRegularResponseInfo**](SerpNaverOrganicTaskGetRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="naverOrganicTaskGetAdvanced"></a>
+# **naverOrganicTaskGetAdvanced**
+> SerpNaverOrganicTaskGetAdvancedResponseInfo naverOrganicTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpNaverOrganicTaskGetAdvancedResponseInfo response = apiInstance.naverOrganicTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#naverOrganicTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpNaverOrganicTaskGetAdvancedResponseInfo**](SerpNaverOrganicTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="naverOrganicTaskGetHtml"></a>
+# **naverOrganicTaskGetHtml**
+> SerpNaverOrganicTaskGetHtmlResponseInfo naverOrganicTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpNaverOrganicTaskGetHtmlResponseInfo response = apiInstance.naverOrganicTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#naverOrganicTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpNaverOrganicTaskGetHtmlResponseInfo**](SerpNaverOrganicTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpSeznamLocations"></a>
+# **serpSeznamLocations**
+> SerpSeznamLocationsResponseInfo serpSeznamLocations()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpSeznamLocationsResponseInfo response = apiInstance.serpSeznamLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpSeznamLocations");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamLocationsResponseInfo**](SerpSeznamLocationsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpSeznamLocationsCountry"></a>
+# **serpSeznamLocationsCountry**
+> SerpSeznamLocationsCountryResponseInfo serpSeznamLocationsCountry()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String country = "us";
+    SerpSeznamLocationsCountryResponseInfo response = apiInstance.serpSeznamLocationsCountry(country);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpSeznamLocationsCountry");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamLocationsCountryResponseInfo**](SerpSeznamLocationsCountryResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="serpSeznamLanguages"></a>
+# **serpSeznamLanguages**
+> SerpSeznamLanguagesResponseInfo serpSeznamLanguages()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpSeznamLanguagesResponseInfo response = apiInstance.serpSeznamLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#serpSeznamLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamLanguagesResponseInfo**](SerpSeznamLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="seznamOrganicTaskPost"></a>
+# **seznamOrganicTaskPost**
+> SerpSeznamOrganicTaskPostResponseInfo seznamOrganicTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpSeznamOrganicTaskPostRequestInfo model = new SerpSeznamOrganicTaskPostRequestInfo()
+           .keyword("albert einstein")
+           .locationCode(2203)
+           .languageCode("cs");
+    SerpSeznamOrganicTaskPostResponseInfo response = apiInstance.seznamOrganicTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#seznamOrganicTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpSeznamOrganicTaskPostRequestInfo>&gt;**](List<SerpSeznamOrganicTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpSeznamOrganicTaskPostResponseInfo**](SerpSeznamOrganicTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="seznamOrganicTasksReady"></a>
+# **seznamOrganicTasksReady**
+> SerpSeznamOrganicTasksReadyResponseInfo seznamOrganicTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpSeznamOrganicTasksReadyResponseInfo response = apiInstance.seznamOrganicTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#seznamOrganicTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamOrganicTasksReadyResponseInfo**](SerpSeznamOrganicTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="seznamOrganicTasksFixed"></a>
+# **seznamOrganicTasksFixed**
+> SerpSeznamOrganicTasksFixedResponseInfo seznamOrganicTasksFixed()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+
+    SerpSeznamOrganicTasksFixedResponseInfo response = apiInstance.seznamOrganicTasksFixed();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#seznamOrganicTasksFixed");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamOrganicTasksFixedResponseInfo**](SerpSeznamOrganicTasksFixedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="seznamOrganicTaskGetRegular"></a>
+# **seznamOrganicTaskGetRegular**
+> SerpSeznamOrganicTaskGetRegularResponseInfo seznamOrganicTaskGetRegular()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpSeznamOrganicTaskGetRegularResponseInfo response = apiInstance.seznamOrganicTaskGetRegular(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#seznamOrganicTaskGetRegular");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamOrganicTaskGetRegularResponseInfo**](SerpSeznamOrganicTaskGetRegularResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="seznamOrganicTaskGetAdvanced"></a>
+# **seznamOrganicTaskGetAdvanced**
+> SerpSeznamOrganicTaskGetAdvancedResponseInfo seznamOrganicTaskGetAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpSeznamOrganicTaskGetAdvancedResponseInfo response = apiInstance.seznamOrganicTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#seznamOrganicTaskGetAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamOrganicTaskGetAdvancedResponseInfo**](SerpSeznamOrganicTaskGetAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="seznamOrganicTaskGetHtml"></a>
+# **seznamOrganicTaskGetHtml**
+> SerpSeznamOrganicTaskGetHtmlResponseInfo seznamOrganicTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpSeznamOrganicTaskGetHtmlResponseInfo response = apiInstance.seznamOrganicTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#seznamOrganicTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpSeznamOrganicTaskGetHtmlResponseInfo**](SerpSeznamOrganicTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -3723,38 +11494,39 @@ public class Example {
 
 <a id="googleFinanceExploreTaskPost"></a>
 # **googleFinanceExploreTaskPost**
-> SerpGoogleFinanceExploreTaskPostResponseInfo googleFinanceExploreTaskPost(serpGoogleFinanceExploreTaskPostRequestInfo)
+> SerpGoogleFinanceExploreTaskPostResponseInfo googleFinanceExploreTaskPost()
 
-
-
-‌ Google Finance Explore API provides real-time data from the ‘Explore’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/task_post/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceExploreTaskPostRequestInfo> serpGoogleFinanceExploreTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceExploreTaskPostRequestInfo> | 
-    try {
-      SerpGoogleFinanceExploreTaskPostResponseInfo result = apiInstance.googleFinanceExploreTaskPost(serpGoogleFinanceExploreTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    SerpGoogleFinanceExploreTaskPostRequestInfo model = new SerpGoogleFinanceExploreTaskPostRequestInfo()
+           .locationCode(2840)
+           .languageName("English");
+    SerpGoogleFinanceExploreTaskPostResponseInfo response = apiInstance.googleFinanceExploreTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -3767,9 +11539,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceExploreTaskPostRequestInfo** | [**List&lt;SerpGoogleFinanceExploreTaskPostRequestInfo&gt;**](SerpGoogleFinanceExploreTaskPostRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceExploreTaskPostRequestInfo>&gt;**](List<SerpGoogleFinanceExploreTaskPostRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -3794,34 +11568,34 @@ public class Example {
 > SerpGoogleFinanceExploreTasksReadyResponseInfo googleFinanceExploreTasksReady()
 
 
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_explore/tasks_ready/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleFinanceExploreTasksReadyResponseInfo result = apiInstance.googleFinanceExploreTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    SerpGoogleFinanceExploreTasksReadyResponseInfo response = apiInstance.googleFinanceExploreTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceExploreTasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -3833,7 +11607,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -3845,7 +11624,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -3853,41 +11632,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceMarketsLiveAdvanced"></a>
-# **googleFinanceMarketsLiveAdvanced**
-> SerpGoogleFinanceMarketsLiveAdvancedResponseInfo googleFinanceMarketsLiveAdvanced(serpGoogleFinanceMarketsLiveAdvancedRequestInfo)
+<a id="googleFinanceExploreTaskGetAdvanced"></a>
+# **googleFinanceExploreTaskGetAdvanced**
+> SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo googleFinanceExploreTaskGetAdvanced()
 
-
-
-‌ Live Google Finance Markets provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> serpGoogleFinanceMarketsLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleFinanceMarketsLiveAdvancedResponseInfo result = apiInstance.googleFinanceMarketsLiveAdvanced(serpGoogleFinanceMarketsLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceExploreTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3899,13 +11677,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceMarketsLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleFinanceMarketsLiveAdvancedRequestInfo&gt;**](SerpGoogleFinanceMarketsLiveAdvancedRequestInfo.md)|  | [optional] |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleFinanceMarketsLiveAdvancedResponseInfo**](SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)
+[**SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo**](SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -3921,41 +11701,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceMarketsLiveHtml"></a>
-# **googleFinanceMarketsLiveHtml**
-> SerpGoogleFinanceMarketsLiveHtmlResponseInfo googleFinanceMarketsLiveHtml(serpGoogleFinanceMarketsLiveHtmlRequestInfo)
+<a id="googleFinanceExploreTaskGetHtml"></a>
+# **googleFinanceExploreTaskGetHtml**
+> SerpGoogleFinanceExploreTaskGetHtmlResponseInfo googleFinanceExploreTaskGetHtml()
 
-
-
-‌ Live SERP HTML provides raw HTML from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/live/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> serpGoogleFinanceMarketsLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo> | 
-    try {
-      SerpGoogleFinanceMarketsLiveHtmlResponseInfo result = apiInstance.googleFinanceMarketsLiveHtml(serpGoogleFinanceMarketsLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveHtml");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleFinanceExploreTaskGetHtmlResponseInfo response = apiInstance.googleFinanceExploreTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskGetHtml");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -3967,13 +11746,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceMarketsLiveHtmlRequestInfo** | [**List&lt;SerpGoogleFinanceMarketsLiveHtmlRequestInfo&gt;**](SerpGoogleFinanceMarketsLiveHtmlRequestInfo.md)|  | [optional] |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleFinanceMarketsLiveHtmlResponseInfo**](SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)
+[**SerpGoogleFinanceExploreTaskGetHtmlResponseInfo**](SerpGoogleFinanceExploreTaskGetHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -3989,41 +11770,42 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceMarketsTaskGetAdvanced"></a>
-# **googleFinanceMarketsTaskGetAdvanced**
-> SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo googleFinanceMarketsTaskGetAdvanced(id)
+<a id="googleFinanceExploreLiveAdvanced"></a>
+# **googleFinanceExploreLiveAdvanced**
+> SerpGoogleFinanceExploreLiveAdvancedResponseInfo googleFinanceExploreLiveAdvanced()
 
-
-
-‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo result = apiInstance.googleFinanceMarketsTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskGetAdvanced");
+    SerpGoogleFinanceExploreLiveAdvancedRequestInfo model = new SerpGoogleFinanceExploreLiveAdvancedRequestInfo()
+           .locationCode(2840)
+           .languageName("English");
+    SerpGoogleFinanceExploreLiveAdvancedResponseInfo response = apiInstance.googleFinanceExploreLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4035,13 +11817,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleFinanceExploreLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo**](SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)
+[**SerpGoogleFinanceExploreLiveAdvancedResponseInfo**](SerpGoogleFinanceExploreLiveAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -4049,7 +11833,7 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -4057,41 +11841,42 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceMarketsTaskGetHtml"></a>
-# **googleFinanceMarketsTaskGetHtml**
-> SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo googleFinanceMarketsTaskGetHtml(id)
+<a id="googleFinanceExploreLiveHtml"></a>
+# **googleFinanceExploreLiveHtml**
+> SerpGoogleFinanceExploreLiveHtmlResponseInfo googleFinanceExploreLiveHtml()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_get/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "17b3e2fb-622c-4388-ab30-50174864e99e"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo result = apiInstance.googleFinanceMarketsTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskGetHtml");
+    SerpGoogleFinanceExploreLiveHtmlRequestInfo model = new SerpGoogleFinanceExploreLiveHtmlRequestInfo()
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleFinanceExploreLiveHtmlResponseInfo response = apiInstance.googleFinanceExploreLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveHtml");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4103,13 +11888,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceExploreLiveHtmlRequestInfo>&gt;**](List<SerpGoogleFinanceExploreLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo**](SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)
+[**SerpGoogleFinanceExploreLiveHtmlResponseInfo**](SerpGoogleFinanceExploreLiveHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -4117,7 +11904,7 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -4127,38 +11914,39 @@ public class Example {
 
 <a id="googleFinanceMarketsTaskPost"></a>
 # **googleFinanceMarketsTaskPost**
-> SerpGoogleFinanceMarketsTaskPostResponseInfo googleFinanceMarketsTaskPost(serpGoogleFinanceMarketsTaskPostRequestInfo)
+> SerpGoogleFinanceMarketsTaskPostResponseInfo googleFinanceMarketsTaskPost()
 
-
-
-‌ Google Finance Markets API provides real-time data from the ‘Markets’ tab of Google Finance. These results are specific to the parameters you specify in the request:  location, language, and market_type. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/task_post/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceMarketsTaskPostRequestInfo> serpGoogleFinanceMarketsTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceMarketsTaskPostRequestInfo> | 
-    try {
-      SerpGoogleFinanceMarketsTaskPostResponseInfo result = apiInstance.googleFinanceMarketsTaskPost(serpGoogleFinanceMarketsTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    SerpGoogleFinanceMarketsTaskPostRequestInfo model = new SerpGoogleFinanceMarketsTaskPostRequestInfo()
+           .locationCode(2840)
+           .languageName("English");
+    SerpGoogleFinanceMarketsTaskPostResponseInfo response = apiInstance.googleFinanceMarketsTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -4171,9 +11959,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceMarketsTaskPostRequestInfo** | [**List&lt;SerpGoogleFinanceMarketsTaskPostRequestInfo&gt;**](SerpGoogleFinanceMarketsTaskPostRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceMarketsTaskPostRequestInfo>&gt;**](List<SerpGoogleFinanceMarketsTaskPostRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -4198,34 +11988,34 @@ public class Example {
 > SerpGoogleFinanceMarketsTasksReadyResponseInfo googleFinanceMarketsTasksReady()
 
 
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_markets/tasks_ready/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleFinanceMarketsTasksReadyResponseInfo result = apiInstance.googleFinanceMarketsTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    SerpGoogleFinanceMarketsTasksReadyResponseInfo response = apiInstance.googleFinanceMarketsTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceMarketsTasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -4237,7 +12027,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -4249,7 +12044,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -4257,41 +12052,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceQuoteLiveAdvanced"></a>
-# **googleFinanceQuoteLiveAdvanced**
-> SerpGoogleFinanceQuoteLiveAdvancedResponseInfo googleFinanceQuoteLiveAdvanced(serpGoogleFinanceQuoteLiveAdvancedRequestInfo)
+<a id="googleFinanceMarketsTaskGetAdvanced"></a>
+# **googleFinanceMarketsTaskGetAdvanced**
+> SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo googleFinanceMarketsTaskGetAdvanced()
 
-
-
-‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> serpGoogleFinanceQuoteLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleFinanceQuoteLiveAdvancedResponseInfo result = apiInstance.googleFinanceQuoteLiveAdvanced(serpGoogleFinanceQuoteLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceMarketsTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4303,13 +12097,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceQuoteLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleFinanceQuoteLiveAdvancedRequestInfo&gt;**](SerpGoogleFinanceQuoteLiveAdvancedRequestInfo.md)|  | [optional] |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleFinanceQuoteLiveAdvancedResponseInfo**](SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)
+[**SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo**](SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -4325,41 +12121,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceQuoteLiveHtml"></a>
-# **googleFinanceQuoteLiveHtml**
-> SerpGoogleFinanceQuoteLiveHtmlResponseInfo googleFinanceQuoteLiveHtml(serpGoogleFinanceQuoteLiveHtmlRequestInfo)
+<a id="googleFinanceMarketsTaskGetHtml"></a>
+# **googleFinanceMarketsTaskGetHtml**
+> SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo googleFinanceMarketsTaskGetHtml()
 
-
-
-‌ Live SERP HTML provides raw HTML from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/live/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> serpGoogleFinanceQuoteLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo> | 
-    try {
-      SerpGoogleFinanceQuoteLiveHtmlResponseInfo result = apiInstance.googleFinanceQuoteLiveHtml(serpGoogleFinanceQuoteLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveHtml");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo response = apiInstance.googleFinanceMarketsTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskGetHtml");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4371,13 +12166,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceQuoteLiveHtmlRequestInfo** | [**List&lt;SerpGoogleFinanceQuoteLiveHtmlRequestInfo&gt;**](SerpGoogleFinanceQuoteLiveHtmlRequestInfo.md)|  | [optional] |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleFinanceQuoteLiveHtmlResponseInfo**](SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)
+[**SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo**](SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -4393,41 +12190,42 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceQuoteTaskGetAdvanced"></a>
-# **googleFinanceQuoteTaskGetAdvanced**
-> SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo googleFinanceQuoteTaskGetAdvanced(id)
+<a id="googleFinanceMarketsLiveAdvanced"></a>
+# **googleFinanceMarketsLiveAdvanced**
+> SerpGoogleFinanceMarketsLiveAdvancedResponseInfo googleFinanceMarketsLiveAdvanced()
 
-
-
-‌ Live Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo result = apiInstance.googleFinanceQuoteTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskGetAdvanced");
+    SerpGoogleFinanceMarketsLiveAdvancedRequestInfo model = new SerpGoogleFinanceMarketsLiveAdvancedRequestInfo()
+           .locationCode(2840)
+           .languageName("English");
+    SerpGoogleFinanceMarketsLiveAdvancedResponseInfo response = apiInstance.googleFinanceMarketsLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4439,13 +12237,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleFinanceMarketsLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo**](SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)
+[**SerpGoogleFinanceMarketsLiveAdvancedResponseInfo**](SerpGoogleFinanceMarketsLiveAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -4453,7 +12253,7 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -4461,41 +12261,42 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceQuoteTaskGetHtml"></a>
-# **googleFinanceQuoteTaskGetHtml**
-> SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo googleFinanceQuoteTaskGetHtml(id)
+<a id="googleFinanceMarketsLiveHtml"></a>
+# **googleFinanceMarketsLiveHtml**
+> SerpGoogleFinanceMarketsLiveHtmlResponseInfo googleFinanceMarketsLiveHtml()
 
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_get/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "3d8b2982-9ad5-4ea0-bb98-47617f0d086a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo result = apiInstance.googleFinanceQuoteTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskGetHtml");
+    SerpGoogleFinanceMarketsLiveHtmlRequestInfo model = new SerpGoogleFinanceMarketsLiveHtmlRequestInfo()
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleFinanceMarketsLiveHtmlResponseInfo response = apiInstance.googleFinanceMarketsLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveHtml");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4507,13 +12308,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>&gt;**](List<SerpGoogleFinanceMarketsLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo**](SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)
+[**SerpGoogleFinanceMarketsLiveHtmlResponseInfo**](SerpGoogleFinanceMarketsLiveHtmlResponseInfo.md)
 
 ### Authorization
 
@@ -4521,7 +12324,7 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -4531,38 +12334,40 @@ public class Example {
 
 <a id="googleFinanceQuoteTaskPost"></a>
 # **googleFinanceQuoteTaskPost**
-> SerpGoogleFinanceQuoteTaskPostResponseInfo googleFinanceQuoteTaskPost(serpGoogleFinanceQuoteTaskPostRequestInfo)
+> SerpGoogleFinanceQuoteTaskPostResponseInfo googleFinanceQuoteTaskPost()
 
-
-
-‌ Google Finance Quote provides real-time data from the ‘Quote’ tab of Google Finance. These results are specific to the parameters you specify in the request: ticker in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/task_post/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceQuoteTaskPostRequestInfo> serpGoogleFinanceQuoteTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceQuoteTaskPostRequestInfo> | 
-    try {
-      SerpGoogleFinanceQuoteTaskPostResponseInfo result = apiInstance.googleFinanceQuoteTaskPost(serpGoogleFinanceQuoteTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    SerpGoogleFinanceQuoteTaskPostRequestInfo model = new SerpGoogleFinanceQuoteTaskPostRequestInfo()
+           .keyword(".DJI:INDEXDJX")
+           .locationCode(2840)
+           .languageName("English");
+    SerpGoogleFinanceQuoteTaskPostResponseInfo response = apiInstance.googleFinanceQuoteTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -4575,9 +12380,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceQuoteTaskPostRequestInfo** | [**List&lt;SerpGoogleFinanceQuoteTaskPostRequestInfo&gt;**](SerpGoogleFinanceQuoteTaskPostRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceQuoteTaskPostRequestInfo>&gt;**](List<SerpGoogleFinanceQuoteTaskPostRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -4602,34 +12409,34 @@ public class Example {
 > SerpGoogleFinanceQuoteTasksReadyResponseInfo googleFinanceQuoteTasksReady()
 
 
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_quote/tasks_ready/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleFinanceQuoteTasksReadyResponseInfo result = apiInstance.googleFinanceQuoteTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    SerpGoogleFinanceQuoteTasksReadyResponseInfo response = apiInstance.googleFinanceQuoteTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceQuoteTasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -4641,79 +12448,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
 [**SerpGoogleFinanceQuoteTasksReadyResponseInfo**](SerpGoogleFinanceQuoteTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleFinanceTickerSearchLiveAdvanced"></a>
-# **googleFinanceTickerSearchLiveAdvanced**
-> SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo googleFinanceTickerSearchLiveAdvanced(serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo)
-
-
-
-‌ Live Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo result = apiInstance.googleFinanceTickerSearchLiveAdvanced(serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceTickerSearchLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo&gt;**](SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo**](SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -4729,41 +12473,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleFinanceTickerSearchTaskGetAdvanced"></a>
-# **googleFinanceTickerSearchTaskGetAdvanced**
-> SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo googleFinanceTickerSearchTaskGetAdvanced(id)
+<a id="googleFinanceQuoteTaskGetAdvanced"></a>
+# **googleFinanceQuoteTaskGetAdvanced**
+> SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo googleFinanceQuoteTaskGetAdvanced()
 
-
-
-‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_get/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo result = apiInstance.googleFinanceTickerSearchTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchTaskGetAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceQuoteTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4775,13 +12518,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo**](SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)
+[**SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo**](SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -4789,7 +12534,220 @@ public class Example {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteTaskGetHtml"></a>
+# **googleFinanceQuoteTaskGetHtml**
+> SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo googleFinanceQuoteTaskGetHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo response = apiInstance.googleFinanceQuoteTaskGetHtml(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskGetHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo**](SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteLiveAdvanced"></a>
+# **googleFinanceQuoteLiveAdvanced**
+> SerpGoogleFinanceQuoteLiveAdvancedResponseInfo googleFinanceQuoteLiveAdvanced()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleFinanceQuoteLiveAdvancedRequestInfo model = new SerpGoogleFinanceQuoteLiveAdvancedRequestInfo()
+           .keyword("CLW00:NYMEX")
+           .locationCode(2840)
+           .languageName("English");
+    SerpGoogleFinanceQuoteLiveAdvancedResponseInfo response = apiInstance.googleFinanceQuoteLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveAdvanced");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleFinanceQuoteLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleFinanceQuoteLiveAdvancedResponseInfo**](SerpGoogleFinanceQuoteLiveAdvancedResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="googleFinanceQuoteLiveHtml"></a>
+# **googleFinanceQuoteLiveHtml**
+> SerpGoogleFinanceQuoteLiveHtmlResponseInfo googleFinanceQuoteLiveHtml()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    SerpApi apiInstance = new SerpApi(defaultClient);
+    SerpGoogleFinanceQuoteLiveHtmlRequestInfo model = new SerpGoogleFinanceQuoteLiveHtmlRequestInfo()
+           .keyword("NASDAQ-100")
+           .locationCode(2840)
+           .languageCode("en");
+    SerpGoogleFinanceQuoteLiveHtmlResponseInfo response = apiInstance.googleFinanceQuoteLiveHtml(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveHtml");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>&gt;**](List<SerpGoogleFinanceQuoteLiveHtmlRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**SerpGoogleFinanceQuoteLiveHtmlResponseInfo**](SerpGoogleFinanceQuoteLiveHtmlResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -4799,38 +12757,42 @@ public class Example {
 
 <a id="googleFinanceTickerSearchTaskPost"></a>
 # **googleFinanceTickerSearchTaskPost**
-> SerpGoogleFinanceTickerSearchTaskPostResponseInfo googleFinanceTickerSearchTaskPost(serpGoogleFinanceTickerSearchTaskPostRequestInfo)
+> SerpGoogleFinanceTickerSearchTaskPostResponseInfo googleFinanceTickerSearchTaskPost()
 
-
-
-‌ Google Finance Ticker Search allows you to search for financial instruments available on Google Finance along with additional information. The result is specific to the parameters you specify in the request: keyword (name of a company or financial instrument) in the keyword field, location and language. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/task_post/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> serpGoogleFinanceTickerSearchTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo> | 
-    try {
-      SerpGoogleFinanceTickerSearchTaskPostResponseInfo result = apiInstance.googleFinanceTickerSearchTaskPost(serpGoogleFinanceTickerSearchTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    SerpGoogleFinanceTickerSearchTaskPostRequestInfo model = new SerpGoogleFinanceTickerSearchTaskPostRequestInfo()
+           .keyword("DJ")
+           .locationCode(2840)
+           .languageName("English")
+           .priority(2)
+           .category("all");
+    SerpGoogleFinanceTickerSearchTaskPostResponseInfo response = apiInstance.googleFinanceTickerSearchTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchTaskPost");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -4843,9 +12805,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleFinanceTickerSearchTaskPostRequestInfo** | [**List&lt;SerpGoogleFinanceTickerSearchTaskPostRequestInfo&gt;**](SerpGoogleFinanceTickerSearchTaskPostRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>&gt;**](List<SerpGoogleFinanceTickerSearchTaskPostRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -4870,34 +12834,34 @@ public class Example {
 > SerpGoogleFinanceTickerSearchTasksReadyResponseInfo googleFinanceTickerSearchTasksReady()
 
 
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/finance_ticker_search/tasks_ready/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleFinanceTickerSearchTasksReadyResponseInfo result = apiInstance.googleFinanceTickerSearchTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    SerpGoogleFinanceTickerSearchTasksReadyResponseInfo response = apiInstance.googleFinanceTickerSearchTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchTasksReady");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -4909,7 +12873,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -4921,7 +12890,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -4929,41 +12898,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleImagesLiveAdvanced"></a>
-# **googleImagesLiveAdvanced**
-> SerpGoogleImagesLiveAdvancedResponseInfo googleImagesLiveAdvanced(serpGoogleImagesLiveAdvancedRequestInfo)
+<a id="googleFinanceTickerSearchTaskGetAdvanced"></a>
+# **googleFinanceTickerSearchTaskGetAdvanced**
+> SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo googleFinanceTickerSearchTaskGetAdvanced()
 
-
-
-‌ Live Google Images SERP provides real-time data on top 100 images results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/live/advanced/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleImagesLiveAdvancedRequestInfo> serpGoogleImagesLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleImagesLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleImagesLiveAdvancedResponseInfo result = apiInstance.googleImagesLiveAdvanced(serpGoogleImagesLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleImagesLiveAdvanced");
+    String id = "00000000-0000-0000-0000-000000000000";
+    SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceTickerSearchTaskGetAdvanced(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchTaskGetAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4975,13 +12943,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleImagesLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleImagesLiveAdvancedRequestInfo&gt;**](SerpGoogleImagesLiveAdvancedRequestInfo.md)|  | [optional] |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**SerpGoogleImagesLiveAdvancedResponseInfo**](SerpGoogleImagesLiveAdvancedResponseInfo.md)
+[**SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo**](SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -4997,41 +12967,44 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="googleImagesLiveHtml"></a>
-# **googleImagesLiveHtml**
-> SerpGoogleImagesLiveHtmlResponseInfo googleImagesLiveHtml(serpGoogleImagesLiveHtmlRequestInfo)
+<a id="googleFinanceTickerSearchLiveAdvanced"></a>
+# **googleFinanceTickerSearchLiveAdvanced**
+> SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo googleFinanceTickerSearchLiveAdvanced()
 
-
-
-‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/live/html/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
+import io.github.dataforseo.client.model.*;
 import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleImagesLiveHtmlRequestInfo> serpGoogleImagesLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleImagesLiveHtmlRequestInfo> | 
-    try {
-      SerpGoogleImagesLiveHtmlResponseInfo result = apiInstance.googleImagesLiveHtml(serpGoogleImagesLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleImagesLiveHtml");
+    SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo model = new SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo()
+           .keyword("DJ")
+           .locationCode(2840)
+           .languageName("English")
+           .category("all");
+    SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo response = apiInstance.googleFinanceTickerSearchLiveAdvanced(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchLiveAdvanced");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -5043,217 +13016,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleImagesLiveHtmlRequestInfo** | [**List&lt;SerpGoogleImagesLiveHtmlRequestInfo&gt;**](SerpGoogleImagesLiveHtmlRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>&gt;**](List<SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**SerpGoogleImagesLiveHtmlResponseInfo**](SerpGoogleImagesLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleImagesTaskGetAdvanced"></a>
-# **googleImagesTaskGetAdvanced**
-> SerpGoogleImagesTaskGetAdvancedResponseInfo googleImagesTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleImagesTaskGetAdvancedResponseInfo result = apiInstance.googleImagesTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleImagesTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleImagesTaskGetAdvancedResponseInfo**](SerpGoogleImagesTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleImagesTaskGetHtml"></a>
-# **googleImagesTaskGetHtml**
-> SerpGoogleImagesTaskGetHtmlResponseInfo googleImagesTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "f2482bb6-4ec8-4c0e-a0a3-896f380f2d63"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleImagesTaskGetHtmlResponseInfo result = apiInstance.googleImagesTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleImagesTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleImagesTaskGetHtmlResponseInfo**](SerpGoogleImagesTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleImagesTaskPost"></a>
-# **googleImagesTaskPost**
-> SerpGoogleImagesTaskPostResponseInfo googleImagesTaskPost(serpGoogleImagesTaskPostRequestInfo)
-
-
-
-‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleImagesTaskPostRequestInfo> serpGoogleImagesTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleImagesTaskPostRequestInfo> | 
-    try {
-      SerpGoogleImagesTaskPostResponseInfo result = apiInstance.googleImagesTaskPost(serpGoogleImagesTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleImagesTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleImagesTaskPostRequestInfo** | [**List&lt;SerpGoogleImagesTaskPostRequestInfo&gt;**](SerpGoogleImagesTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleImagesTaskPostResponseInfo**](SerpGoogleImagesTaskPostResponseInfo.md)
+[**SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo**](SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo.md)
 
 ### Authorization
 
@@ -5268,6572 +13039,3 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
-
-<a id="googleImagesTasksFixed"></a>
-# **googleImagesTasksFixed**
-> SerpGoogleImagesTasksFixedResponseInfo googleImagesTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleImagesTasksFixedResponseInfo result = apiInstance.googleImagesTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleImagesTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleImagesTasksFixedResponseInfo**](SerpGoogleImagesTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleImagesTasksReady"></a>
-# **googleImagesTasksReady**
-> SerpGoogleImagesTasksReadyResponseInfo googleImagesTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/images/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleImagesTasksReadyResponseInfo result = apiInstance.googleImagesTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleImagesTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleImagesTasksReadyResponseInfo**](SerpGoogleImagesTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleJobsTaskGetAdvanced"></a>
-# **googleJobsTaskGetAdvanced**
-> SerpGoogleJobsTaskGetAdvancedResponseInfo googleJobsTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleJobsTaskGetAdvancedResponseInfo result = apiInstance.googleJobsTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleJobsTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleJobsTaskGetAdvancedResponseInfo**](SerpGoogleJobsTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleJobsTaskGetHtml"></a>
-# **googleJobsTaskGetHtml**
-> SerpGoogleJobsTaskGetHtmlResponseInfo googleJobsTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "e0332746-3a11-4b6f-9e0d-c2581d56cbbd"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleJobsTaskGetHtmlResponseInfo result = apiInstance.googleJobsTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleJobsTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleJobsTaskGetHtmlResponseInfo**](SerpGoogleJobsTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleJobsTaskPost"></a>
-# **googleJobsTaskPost**
-> SerpGoogleJobsTaskPostResponseInfo googleJobsTaskPost(serpGoogleJobsTaskPostRequestInfo)
-
-
-
-‌‌ This endpoint will provide you with SERP data from the Google Jobs search engine. The returned results are specific to the keyword as well as the language and location parameters of the POST request. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleJobsTaskPostRequestInfo> serpGoogleJobsTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleJobsTaskPostRequestInfo> | 
-    try {
-      SerpGoogleJobsTaskPostResponseInfo result = apiInstance.googleJobsTaskPost(serpGoogleJobsTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleJobsTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleJobsTaskPostRequestInfo** | [**List&lt;SerpGoogleJobsTaskPostRequestInfo&gt;**](SerpGoogleJobsTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleJobsTaskPostResponseInfo**](SerpGoogleJobsTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleJobsTasksFixed"></a>
-# **googleJobsTasksFixed**
-> SerpGoogleJobsTasksFixedResponseInfo googleJobsTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleJobsTasksFixedResponseInfo result = apiInstance.googleJobsTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleJobsTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleJobsTasksFixedResponseInfo**](SerpGoogleJobsTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleJobsTasksReady"></a>
-# **googleJobsTasksReady**
-> SerpGoogleJobsTasksReadyResponseInfo googleJobsTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/jobs/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleJobsTasksReadyResponseInfo result = apiInstance.googleJobsTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleJobsTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleJobsTasksReadyResponseInfo**](SerpGoogleJobsTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleLocalFinderLiveAdvanced"></a>
-# **googleLocalFinderLiveAdvanced**
-> SerpGoogleLocalFinderLiveAdvancedResponseInfo googleLocalFinderLiveAdvanced(serpGoogleLocalFinderLiveAdvancedRequestInfo)
-
-
-
-‌‌ Live Google Local_finder SERP provides real-time search engine results for the specified keyword and location. By default, you can get up to 20 results for desktop and up to 10 results for mobile. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleLocalFinderLiveAdvancedRequestInfo> serpGoogleLocalFinderLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleLocalFinderLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleLocalFinderLiveAdvancedResponseInfo result = apiInstance.googleLocalFinderLiveAdvanced(serpGoogleLocalFinderLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleLocalFinderLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleLocalFinderLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleLocalFinderLiveAdvancedRequestInfo&gt;**](SerpGoogleLocalFinderLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleLocalFinderLiveAdvancedResponseInfo**](SerpGoogleLocalFinderLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleLocalFinderLiveHtml"></a>
-# **googleLocalFinderLiveHtml**
-> SerpGoogleLocalFinderLiveHtmlResponseInfo googleLocalFinderLiveHtml(serpGoogleLocalFinderLiveHtmlRequestInfo)
-
-
-
-‌ Live Google Local Finder SERP HTML provides a raw HTML page of the search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/live/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleLocalFinderLiveHtmlRequestInfo> serpGoogleLocalFinderLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleLocalFinderLiveHtmlRequestInfo> | 
-    try {
-      SerpGoogleLocalFinderLiveHtmlResponseInfo result = apiInstance.googleLocalFinderLiveHtml(serpGoogleLocalFinderLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleLocalFinderLiveHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleLocalFinderLiveHtmlRequestInfo** | [**List&lt;SerpGoogleLocalFinderLiveHtmlRequestInfo&gt;**](SerpGoogleLocalFinderLiveHtmlRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleLocalFinderLiveHtmlResponseInfo**](SerpGoogleLocalFinderLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleLocalFinderTaskGetAdvanced"></a>
-# **googleLocalFinderTaskGetAdvanced**
-> SerpGoogleLocalFinderTaskGetAdvancedResponseInfo googleLocalFinderTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier a universally unique identifier (UUID) unique task identifier in our system you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleLocalFinderTaskGetAdvancedResponseInfo result = apiInstance.googleLocalFinderTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleLocalFinderTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier a universally unique identifier (UUID) unique task identifier in our system you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleLocalFinderTaskGetAdvancedResponseInfo**](SerpGoogleLocalFinderTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleLocalFinderTaskGetHtml"></a>
-# **googleLocalFinderTaskGetHtml**
-> SerpGoogleLocalFinderTaskGetHtmlResponseInfo googleLocalFinderTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "1459e673-e8a1-49b5-8176-0975b4f72d35"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleLocalFinderTaskGetHtmlResponseInfo result = apiInstance.googleLocalFinderTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleLocalFinderTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleLocalFinderTaskGetHtmlResponseInfo**](SerpGoogleLocalFinderTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleLocalFinderTaskPost"></a>
-# **googleLocalFinderTaskPost**
-> SerpGoogleLocalFinderTaskPostResponseInfo googleLocalFinderTaskPost(serpGoogleLocalFinderTaskPostRequestInfo)
-
-
-
-‌‌ Google Local Finder SERP API provides top search engine results specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleLocalFinderTaskPostRequestInfo> serpGoogleLocalFinderTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleLocalFinderTaskPostRequestInfo> | 
-    try {
-      SerpGoogleLocalFinderTaskPostResponseInfo result = apiInstance.googleLocalFinderTaskPost(serpGoogleLocalFinderTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleLocalFinderTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleLocalFinderTaskPostRequestInfo** | [**List&lt;SerpGoogleLocalFinderTaskPostRequestInfo&gt;**](SerpGoogleLocalFinderTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleLocalFinderTaskPostResponseInfo**](SerpGoogleLocalFinderTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleLocalFinderTasksFixed"></a>
-# **googleLocalFinderTasksFixed**
-> SerpGoogleLocalFinderTasksFixedResponseInfo googleLocalFinderTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleLocalFinderTasksFixedResponseInfo result = apiInstance.googleLocalFinderTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleLocalFinderTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleLocalFinderTasksFixedResponseInfo**](SerpGoogleLocalFinderTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleLocalFinderTasksReady"></a>
-# **googleLocalFinderTasksReady**
-> SerpGoogleLocalFinderTasksReadyResponseInfo googleLocalFinderTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/local_finder/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleLocalFinderTasksReadyResponseInfo result = apiInstance.googleLocalFinderTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleLocalFinderTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleLocalFinderTasksReadyResponseInfo**](SerpGoogleLocalFinderTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleMapsLiveAdvanced"></a>
-# **googleMapsLiveAdvanced**
-> SerpGoogleMapsLiveAdvancedResponseInfo googleMapsLiveAdvanced(serpGoogleMapsLiveAdvancedRequestInfo)
-
-
-
-‌‌ Live Google Maps SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleMapsLiveAdvancedRequestInfo> serpGoogleMapsLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleMapsLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleMapsLiveAdvancedResponseInfo result = apiInstance.googleMapsLiveAdvanced(serpGoogleMapsLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleMapsLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleMapsLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleMapsLiveAdvancedRequestInfo&gt;**](SerpGoogleMapsLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleMapsLiveAdvancedResponseInfo**](SerpGoogleMapsLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleMapsTaskGetAdvanced"></a>
-# **googleMapsTaskGetAdvanced**
-> SerpGoogleMapsTaskGetAdvancedResponseInfo googleMapsTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier a universally unique identifier (UUID) unique task identifier in our system you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleMapsTaskGetAdvancedResponseInfo result = apiInstance.googleMapsTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleMapsTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier a universally unique identifier (UUID) unique task identifier in our system you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleMapsTaskGetAdvancedResponseInfo**](SerpGoogleMapsTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleMapsTaskPost"></a>
-# **googleMapsTaskPost**
-> SerpGoogleMapsTaskPostResponseInfo googleMapsTaskPost(serpGoogleMapsTaskPostRequestInfo)
-
-
-
-‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleMapsTaskPostRequestInfo> serpGoogleMapsTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleMapsTaskPostRequestInfo> | 
-    try {
-      SerpGoogleMapsTaskPostResponseInfo result = apiInstance.googleMapsTaskPost(serpGoogleMapsTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleMapsTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleMapsTaskPostRequestInfo** | [**List&lt;SerpGoogleMapsTaskPostRequestInfo&gt;**](SerpGoogleMapsTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleMapsTaskPostResponseInfo**](SerpGoogleMapsTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleMapsTasksFixed"></a>
-# **googleMapsTasksFixed**
-> SerpGoogleMapsTasksFixedResponseInfo googleMapsTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleMapsTasksFixedResponseInfo result = apiInstance.googleMapsTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleMapsTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleMapsTasksFixedResponseInfo**](SerpGoogleMapsTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleMapsTasksReady"></a>
-# **googleMapsTasksReady**
-> SerpGoogleMapsTasksReadyResponseInfo googleMapsTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/maps/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleMapsTasksReadyResponseInfo result = apiInstance.googleMapsTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleMapsTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleMapsTasksReadyResponseInfo**](SerpGoogleMapsTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleNewsLiveAdvanced"></a>
-# **googleNewsLiveAdvanced**
-> SerpGoogleNewsLiveAdvancedResponseInfo googleNewsLiveAdvanced(serpGoogleNewsLiveAdvancedRequestInfo)
-
-
-
-‌‌ Live Google News SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleNewsLiveAdvancedRequestInfo> serpGoogleNewsLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleNewsLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleNewsLiveAdvancedResponseInfo result = apiInstance.googleNewsLiveAdvanced(serpGoogleNewsLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleNewsLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleNewsLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleNewsLiveAdvancedRequestInfo&gt;**](SerpGoogleNewsLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleNewsLiveAdvancedResponseInfo**](SerpGoogleNewsLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleNewsLiveHtml"></a>
-# **googleNewsLiveHtml**
-> SerpGoogleNewsLiveHtmlResponseInfo googleNewsLiveHtml(serpGoogleNewsLiveHtmlRequestInfo)
-
-
-
-‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/live/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleNewsLiveHtmlRequestInfo> serpGoogleNewsLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleNewsLiveHtmlRequestInfo> | 
-    try {
-      SerpGoogleNewsLiveHtmlResponseInfo result = apiInstance.googleNewsLiveHtml(serpGoogleNewsLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleNewsLiveHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleNewsLiveHtmlRequestInfo** | [**List&lt;SerpGoogleNewsLiveHtmlRequestInfo&gt;**](SerpGoogleNewsLiveHtmlRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleNewsLiveHtmlResponseInfo**](SerpGoogleNewsLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleNewsTaskGetAdvanced"></a>
-# **googleNewsTaskGetAdvanced**
-> SerpGoogleNewsTaskGetAdvancedResponseInfo googleNewsTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleNewsTaskGetAdvancedResponseInfo result = apiInstance.googleNewsTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleNewsTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleNewsTaskGetAdvancedResponseInfo**](SerpGoogleNewsTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleNewsTaskGetHtml"></a>
-# **googleNewsTaskGetHtml**
-> SerpGoogleNewsTaskGetHtmlResponseInfo googleNewsTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "7778bfb5-e1b3-4705-83ad-f86421a788d4"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleNewsTaskGetHtmlResponseInfo result = apiInstance.googleNewsTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleNewsTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleNewsTaskGetHtmlResponseInfo**](SerpGoogleNewsTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleNewsTaskPost"></a>
-# **googleNewsTaskPost**
-> SerpGoogleNewsTaskPostResponseInfo googleNewsTaskPost(serpGoogleNewsTaskPostRequestInfo)
-
-
-
-‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleNewsTaskPostRequestInfo> serpGoogleNewsTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleNewsTaskPostRequestInfo> | 
-    try {
-      SerpGoogleNewsTaskPostResponseInfo result = apiInstance.googleNewsTaskPost(serpGoogleNewsTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleNewsTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleNewsTaskPostRequestInfo** | [**List&lt;SerpGoogleNewsTaskPostRequestInfo&gt;**](SerpGoogleNewsTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleNewsTaskPostResponseInfo**](SerpGoogleNewsTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleNewsTasksFixed"></a>
-# **googleNewsTasksFixed**
-> SerpGoogleNewsTasksFixedResponseInfo googleNewsTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleNewsTasksFixedResponseInfo result = apiInstance.googleNewsTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleNewsTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleNewsTasksFixedResponseInfo**](SerpGoogleNewsTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleNewsTasksReady"></a>
-# **googleNewsTasksReady**
-> SerpGoogleNewsTasksReadyResponseInfo googleNewsTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/news/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleNewsTasksReadyResponseInfo result = apiInstance.googleNewsTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleNewsTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleNewsTasksReadyResponseInfo**](SerpGoogleNewsTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicLiveAdvanced"></a>
-# **googleOrganicLiveAdvanced**
-> SerpGoogleOrganicLiveAdvancedResponseInfo googleOrganicLiveAdvanced(serpGoogleOrganicLiveAdvancedRequestInfo)
-
-
-
-‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. This endpoint will supply a complete overview of featured snippets and other extra elements of SERPs. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleOrganicLiveAdvancedRequestInfo> serpGoogleOrganicLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicLiveAdvancedRequestInfo> | 
-    try {
-      SerpGoogleOrganicLiveAdvancedResponseInfo result = apiInstance.googleOrganicLiveAdvanced(serpGoogleOrganicLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleOrganicLiveAdvancedRequestInfo** | [**List&lt;SerpGoogleOrganicLiveAdvancedRequestInfo&gt;**](SerpGoogleOrganicLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleOrganicLiveAdvancedResponseInfo**](SerpGoogleOrganicLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicLiveHtml"></a>
-# **googleOrganicLiveHtml**
-> SerpGoogleOrganicLiveHtmlResponseInfo googleOrganicLiveHtml(serpGoogleOrganicLiveHtmlRequestInfo)
-
-
-
-‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleOrganicLiveHtmlRequestInfo> serpGoogleOrganicLiveHtmlRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicLiveHtmlRequestInfo> | 
-    try {
-      SerpGoogleOrganicLiveHtmlResponseInfo result = apiInstance.googleOrganicLiveHtml(serpGoogleOrganicLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicLiveHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleOrganicLiveHtmlRequestInfo** | [**List&lt;SerpGoogleOrganicLiveHtmlRequestInfo&gt;**](SerpGoogleOrganicLiveHtmlRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleOrganicLiveHtmlResponseInfo**](SerpGoogleOrganicLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicLiveRegular"></a>
-# **googleOrganicLiveRegular**
-> SerpGoogleOrganicLiveRegularResponseInfo googleOrganicLiveRegular(serpGoogleOrganicLiveRegularRequestInfo)
-
-
-
-‌‌ Live SERP provides real-time data on top 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/live/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleOrganicLiveRegularRequestInfo> serpGoogleOrganicLiveRegularRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicLiveRegularRequestInfo> | 
-    try {
-      SerpGoogleOrganicLiveRegularResponseInfo result = apiInstance.googleOrganicLiveRegular(serpGoogleOrganicLiveRegularRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicLiveRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleOrganicLiveRegularRequestInfo** | [**List&lt;SerpGoogleOrganicLiveRegularRequestInfo&gt;**](SerpGoogleOrganicLiveRegularRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleOrganicLiveRegularResponseInfo**](SerpGoogleOrganicLiveRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTaskGetAdvanced"></a>
-# **googleOrganicTaskGetAdvanced**
-> SerpGoogleOrganicTaskGetAdvancedResponseInfo googleOrganicTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleOrganicTaskGetAdvancedResponseInfo result = apiInstance.googleOrganicTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleOrganicTaskGetAdvancedResponseInfo**](SerpGoogleOrganicTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTaskGetHtml"></a>
-# **googleOrganicTaskGetHtml**
-> SerpGoogleOrganicTaskGetHtmlResponseInfo googleOrganicTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "649bfd17-6c1d-46b8-96ce-6b42a4736ed4"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpGoogleOrganicTaskGetHtmlResponseInfo result = apiInstance.googleOrganicTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleOrganicTaskGetHtmlResponseInfo**](SerpGoogleOrganicTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTaskGetRegular"></a>
-# **googleOrganicTaskGetRegular**
-> SerpGoogleOrganicTaskGetRegularResponseInfo googleOrganicTaskGetRegular(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_get/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleOrganicTaskGetRegularResponseInfo result = apiInstance.googleOrganicTaskGetRegular(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicTaskGetRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleOrganicTaskGetRegularResponseInfo**](SerpGoogleOrganicTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTaskPost"></a>
-# **googleOrganicTaskPost**
-> SerpGoogleOrganicTaskPostResponseInfo googleOrganicTaskPost(serpGoogleOrganicTaskPostRequestInfo)
-
-
-
-‌‌ SERP API provides top 100 search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleOrganicTaskPostRequestInfo> serpGoogleOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleOrganicTaskPostRequestInfo> | 
-    try {
-      SerpGoogleOrganicTaskPostResponseInfo result = apiInstance.googleOrganicTaskPost(serpGoogleOrganicTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleOrganicTaskPostRequestInfo** | [**List&lt;SerpGoogleOrganicTaskPostRequestInfo&gt;**](SerpGoogleOrganicTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleOrganicTaskPostResponseInfo**](SerpGoogleOrganicTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTasksFixed"></a>
-# **googleOrganicTasksFixed**
-> SerpGoogleOrganicTasksFixedResponseInfo googleOrganicTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleOrganicTasksFixedResponseInfo result = apiInstance.googleOrganicTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleOrganicTasksFixedResponseInfo**](SerpGoogleOrganicTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleOrganicTasksReady"></a>
-# **googleOrganicTasksReady**
-> SerpGoogleOrganicTasksReadyResponseInfo googleOrganicTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleOrganicTasksReadyResponseInfo result = apiInstance.googleOrganicTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleOrganicTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleOrganicTasksReadyResponseInfo**](SerpGoogleOrganicTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleSearchByImageTaskGetAdvanced"></a>
-# **googleSearchByImageTaskGetAdvanced**
-> SerpGoogleSearchByImageTaskGetAdvancedResponseInfo googleSearchByImageTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpGoogleSearchByImageTaskGetAdvancedResponseInfo result = apiInstance.googleSearchByImageTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleSearchByImageTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpGoogleSearchByImageTaskGetAdvancedResponseInfo**](SerpGoogleSearchByImageTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleSearchByImageTaskPost"></a>
-# **googleSearchByImageTaskPost**
-> SerpGoogleSearchByImageTaskPostResponseInfo googleSearchByImageTaskPost(serpGoogleSearchByImageTaskPostRequestInfo)
-
-
-
-‌‌ Google Search By Image SERP API provides up to top 100 search engine results based on the image you specified. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpGoogleSearchByImageTaskPostRequestInfo> serpGoogleSearchByImageTaskPostRequestInfo = Arrays.asList(); // List<SerpGoogleSearchByImageTaskPostRequestInfo> | 
-    try {
-      SerpGoogleSearchByImageTaskPostResponseInfo result = apiInstance.googleSearchByImageTaskPost(serpGoogleSearchByImageTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleSearchByImageTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpGoogleSearchByImageTaskPostRequestInfo** | [**List&lt;SerpGoogleSearchByImageTaskPostRequestInfo&gt;**](SerpGoogleSearchByImageTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpGoogleSearchByImageTaskPostResponseInfo**](SerpGoogleSearchByImageTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleSearchByImageTasksFixed"></a>
-# **googleSearchByImageTasksFixed**
-> SerpGoogleSearchByImageTasksFixedResponseInfo googleSearchByImageTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleSearchByImageTasksFixedResponseInfo result = apiInstance.googleSearchByImageTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleSearchByImageTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleSearchByImageTasksFixedResponseInfo**](SerpGoogleSearchByImageTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleSearchByImageTasksReady"></a>
-# **googleSearchByImageTasksReady**
-> SerpGoogleSearchByImageTasksReadyResponseInfo googleSearchByImageTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/search_by_image/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleSearchByImageTasksReadyResponseInfo result = apiInstance.googleSearchByImageTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#googleSearchByImageTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleSearchByImageTasksReadyResponseInfo**](SerpGoogleSearchByImageTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="naverOrganicTaskGetAdvanced"></a>
-# **naverOrganicTaskGetAdvanced**
-> SerpNaverOrganicTaskGetAdvancedResponseInfo naverOrganicTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpNaverOrganicTaskGetAdvancedResponseInfo result = apiInstance.naverOrganicTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#naverOrganicTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpNaverOrganicTaskGetAdvancedResponseInfo**](SerpNaverOrganicTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="naverOrganicTaskGetHtml"></a>
-# **naverOrganicTaskGetHtml**
-> SerpNaverOrganicTaskGetHtmlResponseInfo naverOrganicTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "5eee1020-abc2-4145-8c62-d5586eb71c36"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpNaverOrganicTaskGetHtmlResponseInfo result = apiInstance.naverOrganicTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#naverOrganicTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpNaverOrganicTaskGetHtmlResponseInfo**](SerpNaverOrganicTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="naverOrganicTaskGetRegular"></a>
-# **naverOrganicTaskGetRegular**
-> SerpNaverOrganicTaskGetRegularResponseInfo naverOrganicTaskGetRegular(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_get/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpNaverOrganicTaskGetRegularResponseInfo result = apiInstance.naverOrganicTaskGetRegular(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#naverOrganicTaskGetRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpNaverOrganicTaskGetRegularResponseInfo**](SerpNaverOrganicTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="naverOrganicTaskPost"></a>
-# **naverOrganicTaskPost**
-> SerpNaverOrganicTaskPostResponseInfo naverOrganicTaskPost(serpNaverOrganicTaskPostRequestInfo)
-
-
-
-‌‌ Naver SERP API provides top 100 search engine results. Naver search results do not vary by location and language, and the search parameters for this search engine do not contain language and location variables. However, you can specify a keyword in any language, and the search engine results may vary depending on the language you used for specifying the search query. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpNaverOrganicTaskPostRequestInfo> serpNaverOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpNaverOrganicTaskPostRequestInfo> | 
-    try {
-      SerpNaverOrganicTaskPostResponseInfo result = apiInstance.naverOrganicTaskPost(serpNaverOrganicTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#naverOrganicTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpNaverOrganicTaskPostRequestInfo** | [**List&lt;SerpNaverOrganicTaskPostRequestInfo&gt;**](SerpNaverOrganicTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpNaverOrganicTaskPostResponseInfo**](SerpNaverOrganicTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="naverOrganicTasksFixed"></a>
-# **naverOrganicTasksFixed**
-> SerpNaverOrganicTasksFixedResponseInfo naverOrganicTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpNaverOrganicTasksFixedResponseInfo result = apiInstance.naverOrganicTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#naverOrganicTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpNaverOrganicTasksFixedResponseInfo**](SerpNaverOrganicTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="naverOrganicTasksReady"></a>
-# **naverOrganicTasksReady**
-> SerpNaverOrganicTasksReadyResponseInfo naverOrganicTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/naver/organic/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpNaverOrganicTasksReadyResponseInfo result = apiInstance.naverOrganicTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#naverOrganicTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpNaverOrganicTasksReadyResponseInfo**](SerpNaverOrganicTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="screenshot"></a>
-# **screenshot**
-> SerpScreenshotResponseInfo screenshot(serpScreenshotRequestInfo)
-
-
-
-‌‌ Using the Live Page Screenshot endpoint, you can capture a screenshot of any SERP page. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/screenshot/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpScreenshotRequestInfo> serpScreenshotRequestInfo = Arrays.asList(); // List<SerpScreenshotRequestInfo> | 
-    try {
-      SerpScreenshotResponseInfo result = apiInstance.screenshot(serpScreenshotRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#screenshot");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpScreenshotRequestInfo** | [**List&lt;SerpScreenshotRequestInfo&gt;**](SerpScreenshotRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpScreenshotResponseInfo**](SerpScreenshotResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpBaiduLanguages"></a>
-# **serpBaiduLanguages**
-> SerpBaiduLanguagesResponseInfo serpBaiduLanguages()
-
-
-
-You will receive the list of languages by calling this API. You can also download the full list of supported languages in the CSV format (last updated 2023-05-02). for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/languages/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBaiduLanguagesResponseInfo result = apiInstance.serpBaiduLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBaiduLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpBaiduLanguagesResponseInfo**](SerpBaiduLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpBaiduLocations"></a>
-# **serpBaiduLocations**
-> SerpBaiduLocationsResponseInfo serpBaiduLocations()
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBaiduLocationsResponseInfo result = apiInstance.serpBaiduLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBaiduLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpBaiduLocationsResponseInfo**](SerpBaiduLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpBaiduLocationsCountry"></a>
-# **serpBaiduLocationsCountry**
-> SerpBaiduLocationsCountryResponseInfo serpBaiduLocationsCountry(country)
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/baidu/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us"; // String | country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us
-    try {
-      SerpBaiduLocationsCountryResponseInfo result = apiInstance.serpBaiduLocationsCountry(country);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBaiduLocationsCountry");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **country** | **String**| country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us | |
-
-### Return type
-
-[**SerpBaiduLocationsCountryResponseInfo**](SerpBaiduLocationsCountryResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpBingLanguages"></a>
-# **serpBingLanguages**
-> SerpBingLanguagesResponseInfo serpBingLanguages()
-
-
-
-You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/languages/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBingLanguagesResponseInfo result = apiInstance.serpBingLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBingLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpBingLanguagesResponseInfo**](SerpBingLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpBingLocations"></a>
-# **serpBingLocations**
-> SerpBingLocationsResponseInfo serpBingLocations()
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpBingLocationsResponseInfo result = apiInstance.serpBingLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBingLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpBingLocationsResponseInfo**](SerpBingLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpBingLocationsCountry"></a>
-# **serpBingLocationsCountry**
-> SerpBingLocationsCountryResponseInfo serpBingLocationsCountry(country)
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/bing/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us"; // String | country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us
-    try {
-      SerpBingLocationsCountryResponseInfo result = apiInstance.serpBingLocationsCountry(country);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBingLocationsCountry");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **country** | **String**| country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us | |
-
-### Return type
-
-[**SerpBingLocationsCountryResponseInfo**](SerpBingLocationsCountryResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpErrors"></a>
-# **serpErrors**
-> SerpErrorsResponseInfo serpErrors(serpErrorsRequestInfo)
-
-
-
-By calling this endpoint you will receive information about the SERP API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/errors/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpErrorsRequestInfo> serpErrorsRequestInfo = Arrays.asList(); // List<SerpErrorsRequestInfo> | 
-    try {
-      SerpErrorsResponseInfo result = apiInstance.serpErrors(serpErrorsRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpErrors");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpErrorsRequestInfo** | [**List&lt;SerpErrorsRequestInfo&gt;**](SerpErrorsRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpErrorsResponseInfo**](SerpErrorsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpGoogleAdsAdvertisersLocations"></a>
-# **serpGoogleAdsAdvertisersLocations**
-> SerpGoogleAdsAdvertisersLocationsResponseInfo serpGoogleAdsAdvertisersLocations()
-
-
-
-for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_advertisers/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleAdsAdvertisersLocationsResponseInfo result = apiInstance.serpGoogleAdsAdvertisersLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleAdsAdvertisersLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleAdsAdvertisersLocationsResponseInfo**](SerpGoogleAdsAdvertisersLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpGoogleAdsSearchLocations"></a>
-# **serpGoogleAdsSearchLocations**
-> SerpGoogleAdsSearchLocationsResponseInfo serpGoogleAdsSearchLocations()
-
-
-
-for more info please visit &#39;https://docs_v3.dataforseo.com/v3/serp/google/ads_search/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleAdsSearchLocationsResponseInfo result = apiInstance.serpGoogleAdsSearchLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleAdsSearchLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleAdsSearchLocationsResponseInfo**](SerpGoogleAdsSearchLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpGoogleLanguages"></a>
-# **serpGoogleLanguages**
-> SerpGoogleLanguagesResponseInfo serpGoogleLanguages()
-
-
-
-You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/languages/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleLanguagesResponseInfo result = apiInstance.serpGoogleLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleLanguagesResponseInfo**](SerpGoogleLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpGoogleLocations"></a>
-# **serpGoogleLocations**
-> SerpGoogleLocationsResponseInfo serpGoogleLocations()
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpGoogleLocationsResponseInfo result = apiInstance.serpGoogleLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpGoogleLocationsResponseInfo**](SerpGoogleLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpGoogleLocationsCountry"></a>
-# **serpGoogleLocationsCountry**
-> SerpGoogleLocationsCountryResponseInfo serpGoogleLocationsCountry(country)
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us"; // String | country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us
-    try {
-      SerpGoogleLocationsCountryResponseInfo result = apiInstance.serpGoogleLocationsCountry(country);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleLocationsCountry");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **country** | **String**| country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us | |
-
-### Return type
-
-[**SerpGoogleLocationsCountryResponseInfo**](SerpGoogleLocationsCountryResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpIdList"></a>
-# **serpIdList**
-> SerpIdListResponseInfo serpIdList(serpIdListRequestInfo)
-
-
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed SERP tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/id_list/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpIdListRequestInfo> serpIdListRequestInfo = Arrays.asList(); // List<SerpIdListRequestInfo> | 
-    try {
-      SerpIdListResponseInfo result = apiInstance.serpIdList(serpIdListRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpIdList");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpIdListRequestInfo** | [**List&lt;SerpIdListRequestInfo&gt;**](SerpIdListRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpIdListResponseInfo**](SerpIdListResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpSeznamLanguages"></a>
-# **serpSeznamLanguages**
-> SerpSeznamLanguagesResponseInfo serpSeznamLanguages()
-
-
-
-You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/languages/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpSeznamLanguagesResponseInfo result = apiInstance.serpSeznamLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpSeznamLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpSeznamLanguagesResponseInfo**](SerpSeznamLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpSeznamLocations"></a>
-# **serpSeznamLocations**
-> SerpSeznamLocationsResponseInfo serpSeznamLocations()
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpSeznamLocationsResponseInfo result = apiInstance.serpSeznamLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpSeznamLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpSeznamLocationsResponseInfo**](SerpSeznamLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpSeznamLocationsCountry"></a>
-# **serpSeznamLocationsCountry**
-> SerpSeznamLocationsCountryResponseInfo serpSeznamLocationsCountry(country)
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us"; // String | country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us
-    try {
-      SerpSeznamLocationsCountryResponseInfo result = apiInstance.serpSeznamLocationsCountry(country);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpSeznamLocationsCountry");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **country** | **String**| country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us | |
-
-### Return type
-
-[**SerpSeznamLocationsCountryResponseInfo**](SerpSeznamLocationsCountryResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpYahooLanguages"></a>
-# **serpYahooLanguages**
-> SerpYahooLanguagesResponseInfo serpYahooLanguages()
-
-
-
-You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/languages/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYahooLanguagesResponseInfo result = apiInstance.serpYahooLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYahooLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYahooLanguagesResponseInfo**](SerpYahooLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpYahooLocations"></a>
-# **serpYahooLocations**
-> SerpYahooLocationsResponseInfo serpYahooLocations()
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYahooLocationsResponseInfo result = apiInstance.serpYahooLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYahooLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYahooLocationsResponseInfo**](SerpYahooLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpYahooLocationsCountry"></a>
-# **serpYahooLocationsCountry**
-> SerpYahooLocationsCountryResponseInfo serpYahooLocationsCountry(country)
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us"; // String | country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us
-    try {
-      SerpYahooLocationsCountryResponseInfo result = apiInstance.serpYahooLocationsCountry(country);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYahooLocationsCountry");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **country** | **String**| country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us | |
-
-### Return type
-
-[**SerpYahooLocationsCountryResponseInfo**](SerpYahooLocationsCountryResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpYoutubeLanguages"></a>
-# **serpYoutubeLanguages**
-> SerpYoutubeLanguagesResponseInfo serpYoutubeLanguages()
-
-
-
-You will receive the list of languages by calling this API. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/languages/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeLanguagesResponseInfo result = apiInstance.serpYoutubeLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYoutubeLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeLanguagesResponseInfo**](SerpYoutubeLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpYoutubeLocations"></a>
-# **serpYoutubeLocations**
-> SerpYoutubeLocationsResponseInfo serpYoutubeLocations()
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeLocationsResponseInfo result = apiInstance.serpYoutubeLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYoutubeLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeLocationsResponseInfo**](SerpYoutubeLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="serpYoutubeLocationsCountry"></a>
-# **serpYoutubeLocationsCountry**
-> SerpYoutubeLocationsCountryResponseInfo serpYoutubeLocationsCountry(country)
-
-
-
-You will receive the list of locations by this API call. You can filter the list of locations by country when setting a task. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us"; // String | country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us
-    try {
-      SerpYoutubeLocationsCountryResponseInfo result = apiInstance.serpYoutubeLocationsCountry(country);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYoutubeLocationsCountry");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **country** | **String**| country ISO code optional field specify the ISO code if you want to filter the list of locations by country example: us | |
-
-### Return type
-
-[**SerpYoutubeLocationsCountryResponseInfo**](SerpYoutubeLocationsCountryResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="seznamOrganicTaskGetAdvanced"></a>
-# **seznamOrganicTaskGetAdvanced**
-> SerpSeznamOrganicTaskGetAdvancedResponseInfo seznamOrganicTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpSeznamOrganicTaskGetAdvancedResponseInfo result = apiInstance.seznamOrganicTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#seznamOrganicTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpSeznamOrganicTaskGetAdvancedResponseInfo**](SerpSeznamOrganicTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="seznamOrganicTaskGetHtml"></a>
-# **seznamOrganicTaskGetHtml**
-> SerpSeznamOrganicTaskGetHtmlResponseInfo seznamOrganicTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "8d08f26f-d2e0-46b7-acd5-f8b6b4e31a4a"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpSeznamOrganicTaskGetHtmlResponseInfo result = apiInstance.seznamOrganicTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#seznamOrganicTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpSeznamOrganicTaskGetHtmlResponseInfo**](SerpSeznamOrganicTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="seznamOrganicTaskGetRegular"></a>
-# **seznamOrganicTaskGetRegular**
-> SerpSeznamOrganicTaskGetRegularResponseInfo seznamOrganicTaskGetRegular(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_get/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpSeznamOrganicTaskGetRegularResponseInfo result = apiInstance.seznamOrganicTaskGetRegular(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#seznamOrganicTaskGetRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpSeznamOrganicTaskGetRegularResponseInfo**](SerpSeznamOrganicTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="seznamOrganicTaskPost"></a>
-# **seznamOrganicTaskPost**
-> SerpSeznamOrganicTaskPostResponseInfo seznamOrganicTaskPost(serpSeznamOrganicTaskPostRequestInfo)
-
-
-
-‌‌ Seznam SERP API provides top 10 search engine results from one of the most popular search engines in the Czech Republic. Seznam is focused on the local search market, and thus supports the Czech language only. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpSeznamOrganicTaskPostRequestInfo> serpSeznamOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpSeznamOrganicTaskPostRequestInfo> | 
-    try {
-      SerpSeznamOrganicTaskPostResponseInfo result = apiInstance.seznamOrganicTaskPost(serpSeznamOrganicTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#seznamOrganicTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpSeznamOrganicTaskPostRequestInfo** | [**List&lt;SerpSeznamOrganicTaskPostRequestInfo&gt;**](SerpSeznamOrganicTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpSeznamOrganicTaskPostResponseInfo**](SerpSeznamOrganicTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="seznamOrganicTasksFixed"></a>
-# **seznamOrganicTasksFixed**
-> SerpSeznamOrganicTasksFixedResponseInfo seznamOrganicTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpSeznamOrganicTasksFixedResponseInfo result = apiInstance.seznamOrganicTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#seznamOrganicTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpSeznamOrganicTasksFixedResponseInfo**](SerpSeznamOrganicTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="seznamOrganicTasksReady"></a>
-# **seznamOrganicTasksReady**
-> SerpSeznamOrganicTasksReadyResponseInfo seznamOrganicTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/seznam/organic/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpSeznamOrganicTasksReadyResponseInfo result = apiInstance.seznamOrganicTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#seznamOrganicTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpSeznamOrganicTasksReadyResponseInfo**](SerpSeznamOrganicTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="tasksReady"></a>
-# **tasksReady**
-> SerpTasksReadyResponseInfo tasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/google/organic/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpTasksReadyResponseInfo result = apiInstance.tasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#tasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpTasksReadyResponseInfo**](SerpTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicLiveAdvanced"></a>
-# **yahooOrganicLiveAdvanced**
-> SerpYahooOrganicLiveAdvancedResponseInfo yahooOrganicLiveAdvanced(serpYahooOrganicLiveAdvancedRequestInfo)
-
-
-
-‌ Live SERP provides real-time data on top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYahooOrganicLiveAdvancedRequestInfo> serpYahooOrganicLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpYahooOrganicLiveAdvancedRequestInfo> | 
-    try {
-      SerpYahooOrganicLiveAdvancedResponseInfo result = apiInstance.yahooOrganicLiveAdvanced(serpYahooOrganicLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYahooOrganicLiveAdvancedRequestInfo** | [**List&lt;SerpYahooOrganicLiveAdvancedRequestInfo&gt;**](SerpYahooOrganicLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYahooOrganicLiveAdvancedResponseInfo**](SerpYahooOrganicLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicLiveHtml"></a>
-# **yahooOrganicLiveHtml**
-> SerpYahooOrganicLiveHtmlResponseInfo yahooOrganicLiveHtml(serpYahooOrganicLiveHtmlRequestInfo)
-
-
-
-‌ Live SERP HTML provides a raw HTML page of 100 search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/live/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYahooOrganicLiveHtmlRequestInfo> serpYahooOrganicLiveHtmlRequestInfo = Arrays.asList(); // List<SerpYahooOrganicLiveHtmlRequestInfo> | 
-    try {
-      SerpYahooOrganicLiveHtmlResponseInfo result = apiInstance.yahooOrganicLiveHtml(serpYahooOrganicLiveHtmlRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicLiveHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYahooOrganicLiveHtmlRequestInfo** | [**List&lt;SerpYahooOrganicLiveHtmlRequestInfo&gt;**](SerpYahooOrganicLiveHtmlRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYahooOrganicLiveHtmlResponseInfo**](SerpYahooOrganicLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicLiveRegular"></a>
-# **yahooOrganicLiveRegular**
-> SerpYahooOrganicLiveRegularResponseInfo yahooOrganicLiveRegular(serpYahooOrganicLiveRegularRequestInfo)
-
-
-
-‌‌ Live Yahoo SERP provides real-time data on up to 100 top search engine results for the specified keyword, search engine, and location. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/live/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYahooOrganicLiveRegularRequestInfo> serpYahooOrganicLiveRegularRequestInfo = Arrays.asList(); // List<SerpYahooOrganicLiveRegularRequestInfo> | 
-    try {
-      SerpYahooOrganicLiveRegularResponseInfo result = apiInstance.yahooOrganicLiveRegular(serpYahooOrganicLiveRegularRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicLiveRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYahooOrganicLiveRegularRequestInfo** | [**List&lt;SerpYahooOrganicLiveRegularRequestInfo&gt;**](SerpYahooOrganicLiveRegularRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYahooOrganicLiveRegularResponseInfo**](SerpYahooOrganicLiveRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicTaskGetAdvanced"></a>
-# **yahooOrganicTaskGetAdvanced**
-> SerpYahooOrganicTaskGetAdvancedResponseInfo yahooOrganicTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpYahooOrganicTaskGetAdvancedResponseInfo result = apiInstance.yahooOrganicTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpYahooOrganicTaskGetAdvancedResponseInfo**](SerpYahooOrganicTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicTaskGetHtml"></a>
-# **yahooOrganicTaskGetHtml**
-> SerpYahooOrganicTaskGetHtmlResponseInfo yahooOrganicTaskGetHtml(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/html/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "3eae3c7a-dad1-47fc-84ba-218bf8b9d190"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time
-    try {
-      SerpYahooOrganicTaskGetHtmlResponseInfo result = apiInstance.yahooOrganicTaskGetHtml(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicTaskGetHtml");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 7 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpYahooOrganicTaskGetHtmlResponseInfo**](SerpYahooOrganicTaskGetHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicTaskGetRegular"></a>
-# **yahooOrganicTaskGetRegular**
-> SerpYahooOrganicTaskGetRegularResponseInfo yahooOrganicTaskGetRegular(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_get/regular/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpYahooOrganicTaskGetRegularResponseInfo result = apiInstance.yahooOrganicTaskGetRegular(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicTaskGetRegular");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpYahooOrganicTaskGetRegularResponseInfo**](SerpYahooOrganicTaskGetRegularResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicTaskPost"></a>
-# **yahooOrganicTaskPost**
-> SerpYahooOrganicTaskPostResponseInfo yahooOrganicTaskPost(serpYahooOrganicTaskPostRequestInfo)
-
-
-
-‌‌ SERP API provides top search engine results. These results are specific to the selected location (see the List of Locations) and language (see the List of Languages) settings. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYahooOrganicTaskPostRequestInfo> serpYahooOrganicTaskPostRequestInfo = Arrays.asList(); // List<SerpYahooOrganicTaskPostRequestInfo> | 
-    try {
-      SerpYahooOrganicTaskPostResponseInfo result = apiInstance.yahooOrganicTaskPost(serpYahooOrganicTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYahooOrganicTaskPostRequestInfo** | [**List&lt;SerpYahooOrganicTaskPostRequestInfo&gt;**](SerpYahooOrganicTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYahooOrganicTaskPostResponseInfo**](SerpYahooOrganicTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicTasksFixed"></a>
-# **yahooOrganicTasksFixed**
-> SerpYahooOrganicTasksFixedResponseInfo yahooOrganicTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYahooOrganicTasksFixedResponseInfo result = apiInstance.yahooOrganicTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYahooOrganicTasksFixedResponseInfo**](SerpYahooOrganicTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="yahooOrganicTasksReady"></a>
-# **yahooOrganicTasksReady**
-> SerpYahooOrganicTasksReadyResponseInfo yahooOrganicTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/yahoo/organic/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYahooOrganicTasksReadyResponseInfo result = apiInstance.yahooOrganicTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#yahooOrganicTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYahooOrganicTasksReadyResponseInfo**](SerpYahooOrganicTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoCommentsLiveAdvanced"></a>
-# **youtubeVideoCommentsLiveAdvanced**
-> SerpYoutubeVideoCommentsLiveAdvancedResponseInfo youtubeVideoCommentsLiveAdvanced(serpYoutubeVideoCommentsLiveAdvancedRequestInfo)
-
-
-
-‌ Live YouTube Comments provides real-time data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo> serpYoutubeVideoCommentsLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpYoutubeVideoCommentsLiveAdvancedRequestInfo> | 
-    try {
-      SerpYoutubeVideoCommentsLiveAdvancedResponseInfo result = apiInstance.youtubeVideoCommentsLiveAdvanced(serpYoutubeVideoCommentsLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYoutubeVideoCommentsLiveAdvancedRequestInfo** | [**List&lt;SerpYoutubeVideoCommentsLiveAdvancedRequestInfo&gt;**](SerpYoutubeVideoCommentsLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYoutubeVideoCommentsLiveAdvancedResponseInfo**](SerpYoutubeVideoCommentsLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoCommentsTaskGetAdvanced"></a>
-# **youtubeVideoCommentsTaskGetAdvanced**
-> SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo youtubeVideoCommentsTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo result = apiInstance.youtubeVideoCommentsTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo**](SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoCommentsTaskPost"></a>
-# **youtubeVideoCommentsTaskPost**
-> SerpYoutubeVideoCommentsTaskPostResponseInfo youtubeVideoCommentsTaskPost(serpYoutubeVideoCommentsTaskPostRequestInfo)
-
-
-
-‌‌ YouTube Comments API provides data on comments on the video you specify in the request. You will get the top 20 comments on the video as well as information about the author, and key comment metrics. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYoutubeVideoCommentsTaskPostRequestInfo> serpYoutubeVideoCommentsTaskPostRequestInfo = Arrays.asList(); // List<SerpYoutubeVideoCommentsTaskPostRequestInfo> | 
-    try {
-      SerpYoutubeVideoCommentsTaskPostResponseInfo result = apiInstance.youtubeVideoCommentsTaskPost(serpYoutubeVideoCommentsTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYoutubeVideoCommentsTaskPostRequestInfo** | [**List&lt;SerpYoutubeVideoCommentsTaskPostRequestInfo&gt;**](SerpYoutubeVideoCommentsTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYoutubeVideoCommentsTaskPostResponseInfo**](SerpYoutubeVideoCommentsTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoCommentsTasksFixed"></a>
-# **youtubeVideoCommentsTasksFixed**
-> SerpYoutubeVideoCommentsTasksFixedResponseInfo youtubeVideoCommentsTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeVideoCommentsTasksFixedResponseInfo result = apiInstance.youtubeVideoCommentsTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeVideoCommentsTasksFixedResponseInfo**](SerpYoutubeVideoCommentsTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoCommentsTasksReady"></a>
-# **youtubeVideoCommentsTasksReady**
-> SerpYoutubeVideoCommentsTasksReadyResponseInfo youtubeVideoCommentsTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_comments/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeVideoCommentsTasksReadyResponseInfo result = apiInstance.youtubeVideoCommentsTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeVideoCommentsTasksReadyResponseInfo**](SerpYoutubeVideoCommentsTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoInfoLiveAdvanced"></a>
-# **youtubeVideoInfoLiveAdvanced**
-> SerpYoutubeVideoInfoLiveAdvancedResponseInfo youtubeVideoInfoLiveAdvanced(serpYoutubeVideoInfoLiveAdvancedRequestInfo)
-
-
-
-‌ Live YouTube Video Info provides real-time data on the video you specify in the request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo> serpYoutubeVideoInfoLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpYoutubeVideoInfoLiveAdvancedRequestInfo> | 
-    try {
-      SerpYoutubeVideoInfoLiveAdvancedResponseInfo result = apiInstance.youtubeVideoInfoLiveAdvanced(serpYoutubeVideoInfoLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoInfoLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYoutubeVideoInfoLiveAdvancedRequestInfo** | [**List&lt;SerpYoutubeVideoInfoLiveAdvancedRequestInfo&gt;**](SerpYoutubeVideoInfoLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYoutubeVideoInfoLiveAdvancedResponseInfo**](SerpYoutubeVideoInfoLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoInfoTaskGetAdvanced"></a>
-# **youtubeVideoInfoTaskGetAdvanced**
-> SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo youtubeVideoInfoTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo result = apiInstance.youtubeVideoInfoTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo**](SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoInfoTaskPost"></a>
-# **youtubeVideoInfoTaskPost**
-> SerpYoutubeVideoInfoTaskPostResponseInfo youtubeVideoInfoTaskPost(serpYoutubeVideoInfoTaskPostRequestInfo)
-
-
-
-‌‌ YouTube Video Info API provides detailed information about the video you specify in the POST request. You will get data from the watching page containing key video and content metrics as well as the channel where the video is published. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYoutubeVideoInfoTaskPostRequestInfo> serpYoutubeVideoInfoTaskPostRequestInfo = Arrays.asList(); // List<SerpYoutubeVideoInfoTaskPostRequestInfo> | 
-    try {
-      SerpYoutubeVideoInfoTaskPostResponseInfo result = apiInstance.youtubeVideoInfoTaskPost(serpYoutubeVideoInfoTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYoutubeVideoInfoTaskPostRequestInfo** | [**List&lt;SerpYoutubeVideoInfoTaskPostRequestInfo&gt;**](SerpYoutubeVideoInfoTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYoutubeVideoInfoTaskPostResponseInfo**](SerpYoutubeVideoInfoTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoInfoTasksFixed"></a>
-# **youtubeVideoInfoTasksFixed**
-> SerpYoutubeVideoInfoTasksFixedResponseInfo youtubeVideoInfoTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeVideoInfoTasksFixedResponseInfo result = apiInstance.youtubeVideoInfoTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeVideoInfoTasksFixedResponseInfo**](SerpYoutubeVideoInfoTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoInfoTasksReady"></a>
-# **youtubeVideoInfoTasksReady**
-> SerpYoutubeVideoInfoTasksReadyResponseInfo youtubeVideoInfoTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_info/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeVideoInfoTasksReadyResponseInfo result = apiInstance.youtubeVideoInfoTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoInfoTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeVideoInfoTasksReadyResponseInfo**](SerpYoutubeVideoInfoTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoSubtitlesLiveAdvanced"></a>
-# **youtubeVideoSubtitlesLiveAdvanced**
-> SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo youtubeVideoSubtitlesLiveAdvanced(serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo)
-
-
-
-‌ Live YouTube Subtitles provides real-time data on subtitles in the video you specify in the request. You will get data from the watching page containing subtitled text, its language, and duration in the video. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/live/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo> serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo = Arrays.asList(); // List<SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo> | 
-    try {
-      SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo result = apiInstance.youtubeVideoSubtitlesLiveAdvanced(serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesLiveAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo** | [**List&lt;SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo&gt;**](SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo**](SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoSubtitlesTaskGetAdvanced"></a>
-# **youtubeVideoSubtitlesTaskGetAdvanced**
-> SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo youtubeVideoSubtitlesTaskGetAdvanced(id)
-
-
-
-Description of the fields for sending a request: for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_get/advanced/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000"; // String | task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time
-    try {
-      SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo result = apiInstance.youtubeVideoSubtitlesTaskGetAdvanced(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTaskGetAdvanced");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| task identifier unique task identifier in our system in the UUID format you will be able to use it within 30 days to request the results of the task at any time | |
-
-### Return type
-
-[**SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo**](SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoSubtitlesTaskPost"></a>
-# **youtubeVideoSubtitlesTaskPost**
-> SerpYoutubeVideoSubtitlesTaskPostResponseInfo youtubeVideoSubtitlesTaskPost(serpYoutubeVideoSubtitlesTaskPostRequestInfo)
-
-
-
-‌‌ YouTube Subtitles API provides data on all subtitles in the video you specify in the POST request. You will get data from the watching page containing subtitled text, its language, and duration in the video. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/task_post/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo> serpYoutubeVideoSubtitlesTaskPostRequestInfo = Arrays.asList(); // List<SerpYoutubeVideoSubtitlesTaskPostRequestInfo> | 
-    try {
-      SerpYoutubeVideoSubtitlesTaskPostResponseInfo result = apiInstance.youtubeVideoSubtitlesTaskPost(serpYoutubeVideoSubtitlesTaskPostRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **serpYoutubeVideoSubtitlesTaskPostRequestInfo** | [**List&lt;SerpYoutubeVideoSubtitlesTaskPostRequestInfo&gt;**](SerpYoutubeVideoSubtitlesTaskPostRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**SerpYoutubeVideoSubtitlesTaskPostResponseInfo**](SerpYoutubeVideoSubtitlesTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoSubtitlesTasksFixed"></a>
-# **youtubeVideoSubtitlesTasksFixed**
-> SerpYoutubeVideoSubtitlesTasksFixedResponseInfo youtubeVideoSubtitlesTasksFixed()
-
-
-
-‌ The ‘Tasks Fixed’ endpoint is designed to provide you with the list of re-parsed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed re-parsed tasks using this endpoint. Then, you can re-collect the fixed results using the ‘Task GET’ endpoint. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_fixed/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeVideoSubtitlesTasksFixedResponseInfo result = apiInstance.youtubeVideoSubtitlesTasksFixed();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTasksFixed");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeVideoSubtitlesTasksFixedResponseInfo**](SerpYoutubeVideoSubtitlesTasksFixedResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="youtubeVideoSubtitlesTasksReady"></a>
-# **youtubeVideoSubtitlesTasksReady**
-> SerpYoutubeVideoSubtitlesTasksReadyResponseInfo youtubeVideoSubtitlesTasksReady()
-
-
-
-‌ The ‘Tasks Ready’ endpoint is designed to provide you with the list of completed tasks, which haven’t been collected yet. If you use the Standard method without specifying the postback_url, you can receive the list of id for all completed tasks using this endpoint. Then, you can collect the results using the ‘Task GET’ endpoint. Learn more about task completion and obtaining a list of completed tasks in this help center article. for more info please visit &#39;https://docs.dataforseo.com/v3/serp/youtube/video_subtitles/tasks_ready/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.SerpApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    SerpApi apiInstance = new SerpApi(defaultClient);
-    try {
-      SerpYoutubeVideoSubtitlesTasksReadyResponseInfo result = apiInstance.youtubeVideoSubtitlesTasksReady();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**SerpYoutubeVideoSubtitlesTasksReadyResponseInfo**](SerpYoutubeVideoSubtitlesTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-

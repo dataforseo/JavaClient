@@ -1,5 +1,3 @@
-
-
 # AppendixLimitsRatesData
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**day** | [**AppendixDayLimitsRatesData**](AppendixDayLimitsRatesData.md) |  |  [optional] |
-|**minute** | [**AppendixDataInfo**](AppendixDataInfo.md) |  |  [optional] |
-
-
-
+**day** | **AppendixDayLimitsRatesData** |  |[optional]|
+**minute** | **AppendixDataInfo** |  |[optional]|

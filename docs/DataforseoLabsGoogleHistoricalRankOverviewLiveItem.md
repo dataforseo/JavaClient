@@ -1,5 +1,3 @@
-
-
 # DataforseoLabsGoogleHistoricalRankOverviewLiveItem
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**seType** | **String** | search engine type |  [optional] |
-|**year** | **BigDecimal** | year for which the data is provided |  [optional] |
-|**month** | **BigDecimal** | month for which the data is provided |  [optional] |
-|**metrics** | [**Map&lt;String, DataforseoLabsMetricsInfo&gt;**](DataforseoLabsMetricsInfo.md) | ranking data relevant to the specified domain |  [optional] |
-
-
-
+**seType** | **String** | search engine type |[optional]|
+**year** | **Integer** | year for which the data is provided |[optional]|
+**month** | **Integer** | month for which the data is provided |[optional]|
+**metrics** | **Map<String, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain |[optional]|

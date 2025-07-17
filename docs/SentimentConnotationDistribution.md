@@ -1,5 +1,3 @@
-
-
 # SentimentConnotationDistribution
 
 
@@ -7,12 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**anger** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
-|**happiness** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
-|**love** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
-|**sadness** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
-|**share** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
-|**fun** | [**ContentAnalysisSummaryInfo**](ContentAnalysisSummaryInfo.md) |  |  [optional] |
-
-
-
+**anger** | **ContentAnalysisSummaryInfo** |  |[optional]|
+**happiness** | **ContentAnalysisSummaryInfo** |  |[optional]|
+**love** | **ContentAnalysisSummaryInfo** |  |[optional]|
+**sadness** | **ContentAnalysisSummaryInfo** |  |[optional]|
+**share** | **ContentAnalysisSummaryInfo** |  |[optional]|
+**fun** | **ContentAnalysisSummaryInfo** |  |[optional]|

@@ -1,5 +1,3 @@
-
-
 # AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo
 
 
@@ -7,11 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**status** | **Double** |  |  [optional] |
-|**searchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**keywordsForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**adTrafficByKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**status** | **Double** |  |[optional]|
+**searchVolume** | **AppendixInfo** |  |[optional]|
+**keywordsForKeywords** | **AppendixInfo** |  |[optional]|
+**keywordsForSite** | **AppendixInfo** |  |[optional]|
+**adTrafficByKeywords** | **AppendixInfo** |  |[optional]|

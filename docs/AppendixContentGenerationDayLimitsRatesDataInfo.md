@@ -1,5 +1,3 @@
-
-
 # AppendixContentGenerationDayLimitsRatesDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**live** | **Double** |  |  [optional] |
-|**languages** | **Double** |  |  [optional] |
-
-
-
+**live** | **Double** |  |[optional]|
+**languages** | **Double** |  |[optional]|

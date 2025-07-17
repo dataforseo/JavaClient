@@ -1,5 +1,3 @@
-
-
 # AppendixBingKeywordsDataPriceDataInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**live** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**live** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

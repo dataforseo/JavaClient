@@ -1,5 +1,3 @@
-
-
 # DomainAnalyticsWhoisAvailableFiltersResultInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**overview** | **Map&lt;String, String&gt;** |  |  [optional] |
-
-
-
+**overview** | **Map<String, String>** |  |[optional]|

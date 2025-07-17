@@ -1,5 +1,3 @@
-
-
 # ContentAnalysisCategoriesInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**category** | **List&lt;Integer&gt;** |  |  [optional] |
-|**count** | **Long** |  |  [optional] |
-
-
-
+**category** | **List<Integer>** |  |[optional]|
+**count** | **Long** |  |[optional]|

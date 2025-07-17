@@ -1,5 +1,3 @@
-
-
 # OnPageContentParsingRequestInfo
 
 
@@ -7,8 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**url** | **String** | URL of the content to parse required field URL of the page to parse example: https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api |  [optional] |
-|**id** | **String** | ID of the task required field you can get this ID in the response of the Task POST endpoint note: the enable_content_parsing parameter in the POST request must be set to true example: \&quot;07131248-1535-0216-1000-17384017ad04\&quot; |  [optional] |
-
-
-
+**url** | **String** | URL of the content to parse<br>required field<br>URL of the page to parse<br>example:<br>https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api |[optional]|
+**id** | **String** | ID of the task<br>required field<br>you can get this ID in the response of the Task POST endpoint<br>note: the enable_content_parsing parameter in the POST request must be set to true<br>example:<br>'07131248-1535-0216-1000-17384017ad04' |[optional]|
+**markdownView** | **Boolean** | return page content as markdown<br>optional field<br>if set to true, the markdown-formatted content of the page will be returned in the page_as_markdown field of the response;<br>default value: false |[optional]|

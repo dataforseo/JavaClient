@@ -1,5 +1,3 @@
-
-
 # DataforseoLabsGoogleHistoricalKeywordDataLiveResultInfo
 
 
@@ -7,11 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**seType** | **String** | search engine type |  [optional] |
-|**locationCode** | **BigDecimal** | location code in a POST array |  [optional] |
-|**languageCode** | **String** | language code in a POST array |  [optional] |
-|**itemsCount** | **BigDecimal** | the number of results returned in the items array |  [optional] |
-|**items** | [**List&lt;DataforseoLabsGoogleHistoricalKeywordDataLiveItem&gt;**](DataforseoLabsGoogleHistoricalKeywordDataLiveItem.md) | contains keywords and related data |  [optional] |
-
-
-
+**seType** | **String** | search engine type |[optional]|
+**locationCode** | **Integer** | location code in a POST array |[optional]|
+**languageCode** | **String** | language code in a POST array |[optional]|
+**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
+**items** | **List<DataforseoLabsGoogleHistoricalKeywordDataLiveItem>** | contains keywords and related data |[optional]|

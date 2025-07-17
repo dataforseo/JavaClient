@@ -1,5 +1,3 @@
-
-
 # AppendixTechnologiesDomainAnalyticsPriceData
 
 
@@ -7,15 +5,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**languages** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**locations** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**technologies** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**aggregationTechnologies** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**domainsByHtmlTerms** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**domainsByTechnology** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**domainTechnologies** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**technologiesSummary** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**technologyStats** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**locations** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**technologies** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**aggregationTechnologies** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**domainsByHtmlTerms** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**domainsByTechnology** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**domainTechnologies** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**technologiesSummary** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**technologyStats** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

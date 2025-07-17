@@ -1,5 +1,3 @@
-
-
 # BusinessDataBusinessListingsAvailableFiltersResultInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**search** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**categoriesAggregation** | **Map&lt;String, String&gt;** |  |  [optional] |
-
-
-
+**search** | **Map<String, String>** |  |[optional]|
+**categoriesAggregation** | **Map<String, String>** |  |[optional]|

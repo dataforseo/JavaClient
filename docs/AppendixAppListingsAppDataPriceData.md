@@ -1,5 +1,3 @@
-
-
 # AppendixAppListingsAppDataPriceData
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**categoriesAggregation** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**search** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**categoriesAggregation** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**search** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

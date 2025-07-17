@@ -4,54 +4,57 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**categoryTrendsLive**](ContentAnalysisApi.md#categoryTrendsLive) | **POST** /v3/content_analysis/category_trends/live |  |
-| [**contentAnalysisAvailableFilters**](ContentAnalysisApi.md#contentAnalysisAvailableFilters) | **GET** /v3/content_analysis/available_filters |  |
-| [**contentAnalysisCategories**](ContentAnalysisApi.md#contentAnalysisCategories) | **GET** /v3/content_analysis/categories |  |
-| [**contentAnalysisIdList**](ContentAnalysisApi.md#contentAnalysisIdList) | **POST** /v3/content_analysis/id_list |  |
-| [**contentAnalysisLanguages**](ContentAnalysisApi.md#contentAnalysisLanguages) | **GET** /v3/content_analysis/languages |  |
-| [**contentAnalysisLocations**](ContentAnalysisApi.md#contentAnalysisLocations) | **GET** /v3/content_analysis/locations |  |
-| [**contentAnalysisSummaryLive**](ContentAnalysisApi.md#contentAnalysisSummaryLive) | **POST** /v3/content_analysis/summary/live |  |
-| [**phraseTrendsLive**](ContentAnalysisApi.md#phraseTrendsLive) | **POST** /v3/content_analysis/phrase_trends/live |  |
-| [**ratingDistributionLive**](ContentAnalysisApi.md#ratingDistributionLive) | **POST** /v3/content_analysis/rating_distribution/live |  |
-| [**searchLive**](ContentAnalysisApi.md#searchLive) | **POST** /v3/content_analysis/search/live |  |
-| [**sentimentAnalysisLive**](ContentAnalysisApi.md#sentimentAnalysisLive) | **POST** /v3/content_analysis/sentiment_analysis/live |  |
+| [**contentAnalysisIdList**](ContentAnalysisApi.md#contentAnalysisIdList) | **POST**  /v3/content_analysis/id_list  |
+| [**contentAnalysisAvailableFilters**](ContentAnalysisApi.md#contentAnalysisAvailableFilters) | **GET**  /v3/content_analysis/available_filters  |
+| [**contentAnalysisLocations**](ContentAnalysisApi.md#contentAnalysisLocations) | **GET**  /v3/content_analysis/locations  |
+| [**contentAnalysisLanguages**](ContentAnalysisApi.md#contentAnalysisLanguages) | **GET**  /v3/content_analysis/languages  |
+| [**contentAnalysisCategories**](ContentAnalysisApi.md#contentAnalysisCategories) | **GET**  /v3/content_analysis/categories  |
+| [**searchLive**](ContentAnalysisApi.md#searchLive) | **POST**  /v3/content_analysis/search/live  |
+| [**contentAnalysisSummaryLive**](ContentAnalysisApi.md#contentAnalysisSummaryLive) | **POST**  /v3/content_analysis/summary/live  |
+| [**sentimentAnalysisLive**](ContentAnalysisApi.md#sentimentAnalysisLive) | **POST**  /v3/content_analysis/sentiment_analysis/live  |
+| [**ratingDistributionLive**](ContentAnalysisApi.md#ratingDistributionLive) | **POST**  /v3/content_analysis/rating_distribution/live  |
+| [**phraseTrendsLive**](ContentAnalysisApi.md#phraseTrendsLive) | **POST**  /v3/content_analysis/phrase_trends/live  |
+| [**categoryTrendsLive**](ContentAnalysisApi.md#categoryTrendsLive) | **POST**  /v3/content_analysis/category_trends/live  |
 
+<a id="contentAnalysisIdList"></a>
+# **contentAnalysisIdList**
+> ContentAnalysisIdListResponseInfo contentAnalysisIdList()
 
-<a id="categoryTrendsLive"></a>
-# **categoryTrendsLive**
-> ContentAnalysisCategoryTrendsLiveResponseInfo categoryTrendsLive(contentAnalysisCategoryTrendsLiveRequestInfo)
-
-
-
-‌ This endpoint will provide you with data on all citations in the target category for the indicated date range. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/category_trends/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    List<ContentAnalysisCategoryTrendsLiveRequestInfo> contentAnalysisCategoryTrendsLiveRequestInfo = Arrays.asList(); // List<ContentAnalysisCategoryTrendsLiveRequestInfo> | 
-    try {
-      ContentAnalysisCategoryTrendsLiveResponseInfo result = apiInstance.categoryTrendsLive(contentAnalysisCategoryTrendsLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContentAnalysisApi#categoryTrendsLive");
+    ContentAnalysisIdListRequestInfo model = new ContentAnalysisIdListRequestInfo()
+           .datetimeFrom("2025-04-17 06:10:06 +00:00")
+           .datetimeTo("2025-06-17 06:10:06 +00:00")
+           .limit(100)
+           .offset(0)
+           .sort("desc");
+    ContentAnalysisIdListResponseInfo response = apiInstance.contentAnalysisIdList(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisIdList");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -63,13 +66,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contentAnalysisCategoryTrendsLiveRequestInfo** | [**List&lt;ContentAnalysisCategoryTrendsLiveRequestInfo&gt;**](ContentAnalysisCategoryTrendsLiveRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<ContentAnalysisIdListRequestInfo>&gt;**](List<ContentAnalysisIdListRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**ContentAnalysisCategoryTrendsLiveResponseInfo**](ContentAnalysisCategoryTrendsLiveResponseInfo.md)
+[**ContentAnalysisIdListResponseInfo**](ContentAnalysisIdListResponseInfo.md)
 
 ### Authorization
 
@@ -90,34 +95,34 @@ public class Example {
 > ContentAnalysisAvailableFiltersResponseInfo contentAnalysisAvailableFilters()
 
 
-
-‌‌ Here you will find all the necessary information about filters that can be used with Content Analysis API endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/filters/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    try {
-      ContentAnalysisAvailableFiltersResponseInfo result = apiInstance.contentAnalysisAvailableFilters();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    ContentAnalysisAvailableFiltersResponseInfo response = apiInstance.contentAnalysisAvailableFilters();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisAvailableFilters");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -129,7 +134,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -141,7 +151,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -149,40 +159,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentAnalysisCategories"></a>
-# **contentAnalysisCategories**
-> ContentAnalysisCategoriesResponseInfo contentAnalysisCategories()
+<a id="contentAnalysisLocations"></a>
+# **contentAnalysisLocations**
+> ContentAnalysisLocationsResponseInfo contentAnalysisLocations()
 
-
-
-We use Google product and service categories. This endpoint will provide you with the full list of available categories. You can also download the CSV file by this link. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/categories/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    try {
-      ContentAnalysisCategoriesResponseInfo result = apiInstance.contentAnalysisCategories();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisCategories");
+
+    ContentAnalysisLocationsResponseInfo response = apiInstance.contentAnalysisLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -193,79 +203,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**ContentAnalysisCategoriesResponseInfo**](ContentAnalysisCategoriesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="contentAnalysisIdList"></a>
-# **contentAnalysisIdList**
-> ContentAnalysisIdListResponseInfo contentAnalysisIdList(contentAnalysisIdListRequestInfo)
-
-
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Content Analysis tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/id_list/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    List<ContentAnalysisIdListRequestInfo> contentAnalysisIdListRequestInfo = Arrays.asList(); // List<ContentAnalysisIdListRequestInfo> | 
-    try {
-      ContentAnalysisIdListResponseInfo result = apiInstance.contentAnalysisIdList(contentAnalysisIdListRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisIdList");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contentAnalysisIdListRequestInfo** | [**List&lt;ContentAnalysisIdListRequestInfo&gt;**](ContentAnalysisIdListRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**ContentAnalysisIdListResponseInfo**](ContentAnalysisIdListResponseInfo.md)
+[**ContentAnalysisLocationsResponseInfo**](ContentAnalysisLocationsResponseInfo.md)
 
 ### Authorization
 
@@ -286,34 +233,34 @@ public class Example {
 > ContentAnalysisLanguagesResponseInfo contentAnalysisLanguages()
 
 
-
-You will receive the list of languages by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/languages/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    try {
-      ContentAnalysisLanguagesResponseInfo result = apiInstance.contentAnalysisLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    ContentAnalysisLanguagesResponseInfo response = apiInstance.contentAnalysisLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -325,7 +272,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -337,7 +289,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -345,40 +297,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentAnalysisLocations"></a>
-# **contentAnalysisLocations**
-> ContentAnalysisLocationsResponseInfo contentAnalysisLocations()
+<a id="contentAnalysisCategories"></a>
+# **contentAnalysisCategories**
+> ContentAnalysisCategoriesResponseInfo contentAnalysisCategories()
 
-
-
-You will receive the list of locations by this API call. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/locations/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    try {
-      ContentAnalysisLocationsResponseInfo result = apiInstance.contentAnalysisLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisLocations");
+
+    ContentAnalysisCategoriesResponseInfo response = apiInstance.contentAnalysisCategories();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisCategories");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -389,215 +341,16 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
-
-### Return type
-
-[**ContentAnalysisLocationsResponseInfo**](ContentAnalysisLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="contentAnalysisSummaryLive"></a>
-# **contentAnalysisSummaryLive**
-> ContentAnalysisSummaryLiveResponseInfo contentAnalysisSummaryLive(contentAnalysisSummaryLiveRequestInfo)
-
-
-
-‌ This endpoint will provide you with an overview of citation data available for the target keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/summary/live/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
 
-    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    List<ContentAnalysisSummaryLiveRequestInfo> contentAnalysisSummaryLiveRequestInfo = Arrays.asList(); // List<ContentAnalysisSummaryLiveRequestInfo> | 
-    try {
-      ContentAnalysisSummaryLiveResponseInfo result = apiInstance.contentAnalysisSummaryLive(contentAnalysisSummaryLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisSummaryLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contentAnalysisSummaryLiveRequestInfo** | [**List&lt;ContentAnalysisSummaryLiveRequestInfo&gt;**](ContentAnalysisSummaryLiveRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**ContentAnalysisSummaryLiveResponseInfo**](ContentAnalysisSummaryLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="phraseTrendsLive"></a>
-# **phraseTrendsLive**
-> ContentAnalysisPhraseTrendsLiveResponseInfo phraseTrendsLive(contentAnalysisPhraseTrendsLiveRequestInfo)
-
-
-
-‌ This endpoint will provide you with data on all citations of the target keyword for the indicated date range. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/phrase_trends/live/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    List<ContentAnalysisPhraseTrendsLiveRequestInfo> contentAnalysisPhraseTrendsLiveRequestInfo = Arrays.asList(); // List<ContentAnalysisPhraseTrendsLiveRequestInfo> | 
-    try {
-      ContentAnalysisPhraseTrendsLiveResponseInfo result = apiInstance.phraseTrendsLive(contentAnalysisPhraseTrendsLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContentAnalysisApi#phraseTrendsLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contentAnalysisPhraseTrendsLiveRequestInfo** | [**List&lt;ContentAnalysisPhraseTrendsLiveRequestInfo&gt;**](ContentAnalysisPhraseTrendsLiveRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**ContentAnalysisPhraseTrendsLiveResponseInfo**](ContentAnalysisPhraseTrendsLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="ratingDistributionLive"></a>
-# **ratingDistributionLive**
-> ContentAnalysisRatingDistributionLiveResponseInfo ratingDistributionLive(contentAnalysisRatingDistributionLiveRequestInfo)
-
-
-
-‌ This endpoint will provide you with rating distribution data for the keyword and other parameters specified in the request. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/rating_distribution/live/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    List<ContentAnalysisRatingDistributionLiveRequestInfo> contentAnalysisRatingDistributionLiveRequestInfo = Arrays.asList(); // List<ContentAnalysisRatingDistributionLiveRequestInfo> | 
-    try {
-      ContentAnalysisRatingDistributionLiveResponseInfo result = apiInstance.ratingDistributionLive(contentAnalysisRatingDistributionLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling ContentAnalysisApi#ratingDistributionLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contentAnalysisRatingDistributionLiveRequestInfo** | [**List&lt;ContentAnalysisRatingDistributionLiveRequestInfo&gt;**](ContentAnalysisRatingDistributionLiveRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**ContentAnalysisRatingDistributionLiveResponseInfo**](ContentAnalysisRatingDistributionLiveResponseInfo.md)
+[**ContentAnalysisCategoriesResponseInfo**](ContentAnalysisCategoriesResponseInfo.md)
 
 ### Authorization
 
@@ -615,38 +368,52 @@ public class Example {
 
 <a id="searchLive"></a>
 # **searchLive**
-> ContentAnalysisSearchLiveResponseInfo searchLive(contentAnalysisSearchLiveRequestInfo)
+> ContentAnalysisSearchLiveResponseInfo searchLive()
 
-
-
-‌ This endpoint will provide you with detailed citation data available for the target keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/search/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    List<ContentAnalysisSearchLiveRequestInfo> contentAnalysisSearchLiveRequestInfo = Arrays.asList(); // List<ContentAnalysisSearchLiveRequestInfo> | 
-    try {
-      ContentAnalysisSearchLiveResponseInfo result = apiInstance.searchLive(contentAnalysisSearchLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    ContentAnalysisSearchLiveRequestInfo model = new ContentAnalysisSearchLiveRequestInfo()
+           .keyword("logitech")
+       .keywordFields(
+           Map.ofEntries(
+               Map.entry("snippet", "logitech") 
+               ))
+           .pageType(
+               List.of(
+                   "ecommerce",
+                   "news",
+                   "blogs",
+                   "message-boards",
+                   "organization"
+                ))
+           .searchMode("as_is")
+           .limit(10);
+    ContentAnalysisSearchLiveResponseInfo response = apiInstance.searchLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#searchLive");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -659,9 +426,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contentAnalysisSearchLiveRequestInfo** | [**List&lt;ContentAnalysisSearchLiveRequestInfo&gt;**](ContentAnalysisSearchLiveRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<ContentAnalysisSearchLiveRequestInfo>&gt;**](List<ContentAnalysisSearchLiveRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -681,40 +450,121 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="sentimentAnalysisLive"></a>
-# **sentimentAnalysisLive**
-> ContentAnalysisSentimentAnalysisLiveResponseInfo sentimentAnalysisLive(contentAnalysisSentimentAnalysisLiveRequestInfo)
+<a id="contentAnalysisSummaryLive"></a>
+# **contentAnalysisSummaryLive**
+> ContentAnalysisSummaryLiveResponseInfo contentAnalysisSummaryLive()
 
-
-
-‌ This endpoint will provide you with sentiment analysis data for the citations available for the target keyword. for more info please visit &#39;https://docs.dataforseo.com/v3/content_analysis/sentiment_analysis/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.ContentAnalysisApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    List<ContentAnalysisSentimentAnalysisLiveRequestInfo> contentAnalysisSentimentAnalysisLiveRequestInfo = Arrays.asList(); // List<ContentAnalysisSentimentAnalysisLiveRequestInfo> | 
-    try {
-      ContentAnalysisSentimentAnalysisLiveResponseInfo result = apiInstance.sentimentAnalysisLive(contentAnalysisSentimentAnalysisLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    ContentAnalysisSummaryLiveRequestInfo model = new ContentAnalysisSummaryLiveRequestInfo()
+           .keyword("logitech")
+           .pageType(
+               List.of(
+                   "ecommerce",
+                   "news",
+                   "blogs",
+                   "message-boards",
+                   "organization"
+                ))
+           .internalListLimit(8)
+           .positiveConnotationThreshold(0.5d);
+    ContentAnalysisSummaryLiveResponseInfo response = apiInstance.contentAnalysisSummaryLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisSummaryLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<ContentAnalysisSummaryLiveRequestInfo>&gt;**](List<ContentAnalysisSummaryLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**ContentAnalysisSummaryLiveResponseInfo**](ContentAnalysisSummaryLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="sentimentAnalysisLive"></a>
+# **sentimentAnalysisLive**
+> ContentAnalysisSentimentAnalysisLiveResponseInfo sentimentAnalysisLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
+    ContentAnalysisSentimentAnalysisLiveRequestInfo model = new ContentAnalysisSentimentAnalysisLiveRequestInfo()
+           .keyword("logitech")
+           .internalListLimit(1);
+    ContentAnalysisSentimentAnalysisLiveResponseInfo response = apiInstance.sentimentAnalysisLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#sentimentAnalysisLive");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -727,9 +577,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **contentAnalysisSentimentAnalysisLiveRequestInfo** | [**List&lt;ContentAnalysisSentimentAnalysisLiveRequestInfo&gt;**](ContentAnalysisSentimentAnalysisLiveRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<ContentAnalysisSentimentAnalysisLiveRequestInfo>&gt;**](List<ContentAnalysisSentimentAnalysisLiveRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -749,3 +601,220 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="ratingDistributionLive"></a>
+# **ratingDistributionLive**
+> ContentAnalysisRatingDistributionLiveResponseInfo ratingDistributionLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
+    ContentAnalysisRatingDistributionLiveRequestInfo model = new ContentAnalysisRatingDistributionLiveRequestInfo()
+           .keyword("logitech")
+           .internalListLimit(10)
+           .searchMode("as_is");
+    ContentAnalysisRatingDistributionLiveResponseInfo response = apiInstance.ratingDistributionLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling ContentAnalysisApi#ratingDistributionLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<ContentAnalysisRatingDistributionLiveRequestInfo>&gt;**](List<ContentAnalysisRatingDistributionLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**ContentAnalysisRatingDistributionLiveResponseInfo**](ContentAnalysisRatingDistributionLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="phraseTrendsLive"></a>
+# **phraseTrendsLive**
+> ContentAnalysisPhraseTrendsLiveResponseInfo phraseTrendsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
+    ContentAnalysisPhraseTrendsLiveRequestInfo model = new ContentAnalysisPhraseTrendsLiveRequestInfo()
+           .keyword("logitech")
+           .searchMode("as_is")
+           .dateFrom("2025-04-17")
+           .dateGroup("month");
+    ContentAnalysisPhraseTrendsLiveResponseInfo response = apiInstance.phraseTrendsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling ContentAnalysisApi#phraseTrendsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<ContentAnalysisPhraseTrendsLiveRequestInfo>&gt;**](List<ContentAnalysisPhraseTrendsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**ContentAnalysisPhraseTrendsLiveResponseInfo**](ContentAnalysisPhraseTrendsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="categoryTrendsLive"></a>
+# **categoryTrendsLive**
+> ContentAnalysisCategoryTrendsLiveResponseInfo categoryTrendsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
+    ContentAnalysisCategoryTrendsLiveRequestInfo model = new ContentAnalysisCategoryTrendsLiveRequestInfo()
+           .categoryCode("10994")
+           .searchMode("as_is")
+           .dateFrom("2025-04-17")
+           .dateGroup("month");
+    ContentAnalysisCategoryTrendsLiveResponseInfo response = apiInstance.categoryTrendsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling ContentAnalysisApi#categoryTrendsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<ContentAnalysisCategoryTrendsLiveRequestInfo>&gt;**](List<ContentAnalysisCategoryTrendsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**ContentAnalysisCategoryTrendsLiveResponseInfo**](ContentAnalysisCategoryTrendsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |

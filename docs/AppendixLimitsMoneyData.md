@@ -1,5 +1,3 @@
-
-
 # AppendixLimitsMoneyData
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**day** | [**AppendixDataInfo**](AppendixDataInfo.md) |  |  [optional] |
-|**minute** | [**AppendixDataInfo**](AppendixDataInfo.md) |  |  [optional] |
-
-
-
+**day** | **AppendixDataInfo** |  |[optional]|
+**minute** | **AppendixDataInfo** |  |[optional]|

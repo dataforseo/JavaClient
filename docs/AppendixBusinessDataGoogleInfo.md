@@ -1,5 +1,3 @@
-
-
 # AppendixBusinessDataGoogleInfo
 
 
@@ -7,13 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**myBusinessInfo** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**myBusinessUpdates** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**hotelInfo** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
-|**hotelSearches** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**reviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**questionsAndAnswers** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**extendedReviews** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**myBusinessInfo** | **AppendixInfo** |  |[optional]|
+**myBusinessUpdates** | **AppendixInfo** |  |[optional]|
+**hotelInfo** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**hotelSearches** | **AppendixInfo** |  |[optional]|
+**reviews** | **AppendixInfo** |  |[optional]|
+**questionsAndAnswers** | **AppendixInfo** |  |[optional]|
+**extendedReviews** | **AppendixInfo** |  |[optional]|

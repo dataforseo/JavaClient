@@ -1,5 +1,3 @@
-
-
 # AppendixAKeywordsDataPriceDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**taskGet** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**taskPost** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**taskGet** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**taskPost** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

@@ -1,5 +1,3 @@
-
-
 # Contacts
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**telephones** | **List&lt;String&gt;** | array of telephone numbers |  [optional] |
-|**emails** | **List&lt;String&gt;** | array of emails |  [optional] |
-
-
-
+**telephones** | **List<String>** | array of telephone numbers |[optional]|
+**emails** | **List<String>** | array of emails |[optional]|

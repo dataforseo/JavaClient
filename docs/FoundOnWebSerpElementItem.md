@@ -1,5 +1,3 @@
-
-
 # FoundOnWebSerpElementItem
 
 
@@ -7,10 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**title** | **String** | title of the row |  [optional] |
-|**relatedSearches** | **List&lt;String&gt;** | search queries related to the elment |  [optional] |
-|**items** | [**List&lt;FoundOnWebElement&gt;**](FoundOnWebElement.md) | contains arrays of specific images |  [optional] |
-|**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
-
-
-
+**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
+**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
+**title** | **String** | reference page title |[optional]|
+**relatedSearches** | **List<String>** | search queries related to the elment |[optional]|
+**items** | **List<FoundOnWebElement>** | contains arrays of specific images |[optional]|

@@ -1,5 +1,3 @@
-
-
 # DataforseoLabsStatusResultInfo
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**google** | [**DataforseoLabsStatusInfo**](DataforseoLabsStatusInfo.md) |  |  [optional] |
-|**bing** | [**DataforseoLabsStatusInfo**](DataforseoLabsStatusInfo.md) |  |  [optional] |
-|**amazon** | [**DataforseoLabsStatusInfo**](DataforseoLabsStatusInfo.md) |  |  [optional] |
-
-
-
+**google** | **DataforseoLabsStatusInfo** | update information for the Google endpoints |[optional]|
+**bing** | **DataforseoLabsStatusInfo** | update information for the Bing endpoints |[optional]|
+**amazon** | **DataforseoLabsStatusInfo** | update information for the Amazon endpoints |[optional]|

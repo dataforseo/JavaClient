@@ -1,5 +1,3 @@
-
-
 # AppendixStatisticsRatesDataInfo
 
 
@@ -7,32 +5,29 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**serp** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
-|**total** | **Double** | total amount of money deposited to your account |  [optional] |
-|**totalSerp** | **Double** |  |  [optional] |
-|**keywordsData** | [**AppendixKeywordsDataDaysRatesDataInfo**](AppendixKeywordsDataDaysRatesDataInfo.md) |  |  [optional] |
-|**totalKeywordsData** | **Double** |  |  [optional] |
-|**appendix** | [**AppendixAppendixDaysRatesDataInfo**](AppendixAppendixDaysRatesDataInfo.md) |  |  [optional] |
-|**totalAppendix** | **Double** |  |  [optional] |
-|**dataforseoLabs** | [**AppendixDataforseoLabsLimitsRatesDataInfo**](AppendixDataforseoLabsLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalDataforseoLabs** | **Double** |  |  [optional] |
-|**domainAnalytics** | [**AppendixDomainAnalyticsLimitsRatesDataInfo**](AppendixDomainAnalyticsLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalDomainAnalytics** | **Double** |  |  [optional] |
-|**merchant** | [**AppendixMerchantLimitsRatesDataInfo**](AppendixMerchantLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalMerchant** | **Double** |  |  [optional] |
-|**onPage** | [**AppendixOnPageLimitsRatesDataInfo**](AppendixOnPageLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalOnPage** | **Double** |  |  [optional] |
-|**businessData** | [**AppendixBusinessDataLimitsRatesDataInfo**](AppendixBusinessDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalBusinessData** | **Double** |  |  [optional] |
-|**backlinks** | [**AppendixBacklinksLimitsRatesDataInfo**](AppendixBacklinksLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalBacklinks** | **Double** |  |  [optional] |
-|**appData** | [**AppendixAppDataLimitsRatesDataInfo**](AppendixAppDataLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalAppData** | **Double** |  |  [optional] |
-|**contentAnalysis** | [**AppendixContentAnalysisLimitsRatesDataInfo**](AppendixContentAnalysisLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalContentAnalysis** | **Double** |  |  [optional] |
-|**contentGeneration** | [**AppendixContentGenerationLimitsRatesDataInfo**](AppendixContentGenerationLimitsRatesDataInfo.md) |  |  [optional] |
-|**totalContentGeneration** | **Double** |  |  [optional] |
-|**value** | **String** | time period for grouping day in the yyyy-MM-dd format minute in the yyyy-MM-dd HH:mm format |  [optional] |
-
-
-
+**serp** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**total** | **Double** | total amount of money deposited to your account |[optional]|
+**totalSerp** | **Double** |  |[optional]|
+**keywordsData** | **AppendixKeywordsDataDaysRatesDataInfo** |  |[optional]|
+**totalKeywordsData** | **Double** |  |[optional]|
+**appendix** | **AppendixAppendixDaysRatesDataInfo** |  |[optional]|
+**totalAppendix** | **Double** |  |[optional]|
+**dataforseoLabs** | **AppendixDataforseoLabsLimitsRatesDataInfo** |  |[optional]|
+**totalDataforseoLabs** | **Double** |  |[optional]|
+**domainAnalytics** | **AppendixDomainAnalyticsLimitsRatesDataInfo** |  |[optional]|
+**totalDomainAnalytics** | **Double** |  |[optional]|
+**merchant** | **AppendixMerchantLimitsRatesDataInfo** |  |[optional]|
+**totalMerchant** | **Double** |  |[optional]|
+**onPage** | **AppendixOnPageLimitsRatesDataInfo** |  |[optional]|
+**totalOnPage** | **Double** |  |[optional]|
+**businessData** | **AppendixBusinessDataLimitsRatesDataInfo** |  |[optional]|
+**totalBusinessData** | **Double** |  |[optional]|
+**backlinks** | **AppendixBacklinksLimitsRatesDataInfo** |  |[optional]|
+**totalBacklinks** | **Double** |  |[optional]|
+**appData** | **AppendixAppDataLimitsRatesDataInfo** |  |[optional]|
+**totalAppData** | **Double** |  |[optional]|
+**contentAnalysis** | **AppendixContentAnalysisLimitsRatesDataInfo** |  |[optional]|
+**totalContentAnalysis** | **Double** |  |[optional]|
+**contentGeneration** | **AppendixContentGenerationLimitsRatesDataInfo** |  |[optional]|
+**totalContentGeneration** | **Double** |  |[optional]|
+**value** | **String** | time period for grouping<br>day in the yyyy-MM-dd format<br>minute in the yyyy-MM-dd HH:mm format |[optional]|

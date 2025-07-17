@@ -1,5 +1,3 @@
-
-
 # AppendixContentGenerationPriceData
 
 
@@ -7,13 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**checkGrammar** | [**AppendixContentGenerationPriceDataInfo**](AppendixContentGenerationPriceDataInfo.md) |  |  [optional] |
-|**generate** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**generateMetaTags** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**generateSubTopics** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**generateText** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**paraphrase** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**textSummary** | [**AppendixContentGenerationPriceDataInfo**](AppendixContentGenerationPriceDataInfo.md) |  |  [optional] |
-
-
-
+**checkGrammar** | **AppendixContentGenerationPriceDataInfo** |  |[optional]|
+**generate** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**generateMetaTags** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**generateSubTopics** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**generateText** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**paraphrase** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**textSummary** | **AppendixContentGenerationPriceDataInfo** |  |[optional]|

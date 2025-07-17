@@ -1,5 +1,3 @@
-
-
 # AppendixBacklinksLimitsRatesDataInfo
 
 
@@ -7,28 +5,25 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**summary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**history** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**contentDuplicates** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**domainIntersection** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**backlinks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**domainPages** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**anchors** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**referringDomains** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**pageIntersection** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**referringNetworks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkRanks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkBacklinks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkNewLostBacklinks** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkNewLostReferringDomains** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkReferringDomains** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**errors** | **Double** |  |  [optional] |
-|**domainPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**timeseriesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**timeseriesNewLostSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**competitors** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkSpamScore** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**bulkPagesSummary** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**summary** | **AppendixInfo** |  |[optional]|
+**history** | **AppendixInfo** |  |[optional]|
+**contentDuplicates** | **AppendixInfo** |  |[optional]|
+**domainIntersection** | **AppendixInfo** |  |[optional]|
+**backlinks** | **AppendixInfo** |  |[optional]|
+**domainPages** | **AppendixInfo** |  |[optional]|
+**anchors** | **AppendixInfo** |  |[optional]|
+**referringDomains** | **AppendixInfo** |  |[optional]|
+**pageIntersection** | **AppendixInfo** |  |[optional]|
+**referringNetworks** | **AppendixInfo** |  |[optional]|
+**bulkRanks** | **AppendixInfo** |  |[optional]|
+**bulkBacklinks** | **AppendixInfo** |  |[optional]|
+**bulkNewLostBacklinks** | **AppendixInfo** |  |[optional]|
+**bulkNewLostReferringDomains** | **AppendixInfo** |  |[optional]|
+**bulkReferringDomains** | **AppendixInfo** |  |[optional]|
+**errors** | **Double** |  |[optional]|
+**domainPagesSummary** | **AppendixInfo** |  |[optional]|
+**timeseriesSummary** | **AppendixInfo** |  |[optional]|
+**timeseriesNewLostSummary** | **AppendixInfo** |  |[optional]|
+**competitors** | **AppendixInfo** |  |[optional]|
+**bulkSpamScore** | **AppendixInfo** |  |[optional]|
+**bulkPagesSummary** | **AppendixInfo** |  |[optional]|

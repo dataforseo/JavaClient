@@ -4,124 +4,59 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**domainAnalyticsErrors**](DomainAnalyticsApi.md#domainAnalyticsErrors) | **POST** /v3/domain_analytics/errors |  |
-| [**domainAnalyticsIdList**](DomainAnalyticsApi.md#domainAnalyticsIdList) | **POST** /v3/domain_analytics/id_list |  |
-| [**domainAnalyticsTechnologiesLanguages**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLanguages) | **GET** /v3/domain_analytics/technologies/languages |  |
-| [**domainAnalyticsTechnologiesLocations**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLocations) | **GET** /v3/domain_analytics/technologies/locations |  |
-| [**technologiesAggregationTechnologiesLive**](DomainAnalyticsApi.md#technologiesAggregationTechnologiesLive) | **POST** /v3/domain_analytics/technologies/aggregation_technologies/live |  |
-| [**technologiesAvailableFilters**](DomainAnalyticsApi.md#technologiesAvailableFilters) | **GET** /v3/domain_analytics/technologies/available_filters |  |
-| [**technologiesDomainTechnologiesLive**](DomainAnalyticsApi.md#technologiesDomainTechnologiesLive) | **POST** /v3/domain_analytics/technologies/domain_technologies/live |  |
-| [**technologiesDomainsByHtmlTermsLive**](DomainAnalyticsApi.md#technologiesDomainsByHtmlTermsLive) | **POST** /v3/domain_analytics/technologies/domains_by_html_terms/live |  |
-| [**technologiesDomainsByTechnologyLive**](DomainAnalyticsApi.md#technologiesDomainsByTechnologyLive) | **POST** /v3/domain_analytics/technologies/domains_by_technology/live |  |
-| [**technologiesTechnologies**](DomainAnalyticsApi.md#technologiesTechnologies) | **GET** /v3/domain_analytics/technologies/technologies |  |
-| [**technologiesTechnologiesSummaryLive**](DomainAnalyticsApi.md#technologiesTechnologiesSummaryLive) | **POST** /v3/domain_analytics/technologies/technologies_summary/live |  |
-| [**technologiesTechnologyStatsLive**](DomainAnalyticsApi.md#technologiesTechnologyStatsLive) | **POST** /v3/domain_analytics/technologies/technology_stats/live |  |
-| [**whoisAvailableFilters**](DomainAnalyticsApi.md#whoisAvailableFilters) | **GET** /v3/domain_analytics/whois/available_filters |  |
-| [**whoisOverviewLive**](DomainAnalyticsApi.md#whoisOverviewLive) | **POST** /v3/domain_analytics/whois/overview/live |  |
-
-
-<a id="domainAnalyticsErrors"></a>
-# **domainAnalyticsErrors**
-> DomainAnalyticsErrorsResponseInfo domainAnalyticsErrors(domainAnalyticsErrorsRequestInfo)
-
-
-
-By calling this endpoint you will receive information about the Domain Analytics API tasks that returned an error within the past 7 days. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/errors/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsErrorsRequestInfo> domainAnalyticsErrorsRequestInfo = Arrays.asList(); // List<DomainAnalyticsErrorsRequestInfo> | 
-    try {
-      DomainAnalyticsErrorsResponseInfo result = apiInstance.domainAnalyticsErrors(domainAnalyticsErrorsRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsErrors");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsErrorsRequestInfo** | [**List&lt;DomainAnalyticsErrorsRequestInfo&gt;**](DomainAnalyticsErrorsRequestInfo.md)|  | [optional] |
-
-### Return type
-
-[**DomainAnalyticsErrorsResponseInfo**](DomainAnalyticsErrorsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
+| [**domainAnalyticsIdList**](DomainAnalyticsApi.md#domainAnalyticsIdList) | **POST**  /v3/domain_analytics/id_list  |
+| [**domainAnalyticsErrors**](DomainAnalyticsApi.md#domainAnalyticsErrors) | **POST**  /v3/domain_analytics/errors  |
+| [**technologiesAvailableFilters**](DomainAnalyticsApi.md#technologiesAvailableFilters) | **GET**  /v3/domain_analytics/technologies/available_filters  |
+| [**domainAnalyticsTechnologiesLocations**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLocations) | **GET**  /v3/domain_analytics/technologies/locations  |
+| [**domainAnalyticsTechnologiesLanguages**](DomainAnalyticsApi.md#domainAnalyticsTechnologiesLanguages) | **GET**  /v3/domain_analytics/technologies/languages  |
+| [**technologiesTechnologies**](DomainAnalyticsApi.md#technologiesTechnologies) | **GET**  /v3/domain_analytics/technologies/technologies  |
+| [**technologiesAggregationTechnologiesLive**](DomainAnalyticsApi.md#technologiesAggregationTechnologiesLive) | **POST**  /v3/domain_analytics/technologies/aggregation_technologies/live  |
+| [**technologiesTechnologiesSummaryLive**](DomainAnalyticsApi.md#technologiesTechnologiesSummaryLive) | **POST**  /v3/domain_analytics/technologies/technologies_summary/live  |
+| [**technologiesTechnologyStatsLive**](DomainAnalyticsApi.md#technologiesTechnologyStatsLive) | **POST**  /v3/domain_analytics/technologies/technology_stats/live  |
+| [**technologiesDomainsByTechnologyLive**](DomainAnalyticsApi.md#technologiesDomainsByTechnologyLive) | **POST**  /v3/domain_analytics/technologies/domains_by_technology/live  |
+| [**technologiesDomainsByHtmlTermsLive**](DomainAnalyticsApi.md#technologiesDomainsByHtmlTermsLive) | **POST**  /v3/domain_analytics/technologies/domains_by_html_terms/live  |
+| [**technologiesDomainTechnologiesLive**](DomainAnalyticsApi.md#technologiesDomainTechnologiesLive) | **POST**  /v3/domain_analytics/technologies/domain_technologies/live  |
+| [**whoisAvailableFilters**](DomainAnalyticsApi.md#whoisAvailableFilters) | **GET**  /v3/domain_analytics/whois/available_filters  |
+| [**whoisOverviewLive**](DomainAnalyticsApi.md#whoisOverviewLive) | **POST**  /v3/domain_analytics/whois/overview/live  |
 
 <a id="domainAnalyticsIdList"></a>
 # **domainAnalyticsIdList**
-> DomainAnalyticsIdListResponseInfo domainAnalyticsIdList(domainAnalyticsIdListRequestInfo)
+> DomainAnalyticsIdListResponseInfo domainAnalyticsIdList()
 
-
-
-This endpoint is designed to provide you with the list of IDs and metadata of the completed Domain Analytics tasks during the specified period. You will get all task IDs that were made including successful, uncompleted, and tasks that responded as errors. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/id_list/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsIdListRequestInfo> domainAnalyticsIdListRequestInfo = Arrays.asList(); // List<DomainAnalyticsIdListRequestInfo> | 
-    try {
-      DomainAnalyticsIdListResponseInfo result = apiInstance.domainAnalyticsIdList(domainAnalyticsIdListRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    DomainAnalyticsIdListRequestInfo model = new DomainAnalyticsIdListRequestInfo()
+           .datetimeFrom("2025-04-17 06:08:16 +00:00")
+           .datetimeTo("2025-06-17 06:08:16 +00:00")
+           .limit(100)
+           .offset(0)
+           .sort("desc");
+    DomainAnalyticsIdListResponseInfo response = apiInstance.domainAnalyticsIdList(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsIdList");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -134,9 +69,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsIdListRequestInfo** | [**List&lt;DomainAnalyticsIdListRequestInfo&gt;**](DomainAnalyticsIdListRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsIdListRequestInfo>&gt;**](List<DomainAnalyticsIdListRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -156,169 +93,43 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="domainAnalyticsTechnologiesLanguages"></a>
-# **domainAnalyticsTechnologiesLanguages**
-> DomainAnalyticsTechnologiesLanguagesResponseInfo domainAnalyticsTechnologiesLanguages()
+<a id="domainAnalyticsErrors"></a>
+# **domainAnalyticsErrors**
+> DomainAnalyticsErrorsResponseInfo domainAnalyticsErrors()
 
-
-
-You will receive the list of languages by calling this API.   As a response of the API server, you will receive JSON-encoded data containing a tasks array with the information specific to the set tasks. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/languages/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    try {
-      DomainAnalyticsTechnologiesLanguagesResponseInfo result = apiInstance.domainAnalyticsTechnologiesLanguages();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsTechnologiesLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**DomainAnalyticsTechnologiesLanguagesResponseInfo**](DomainAnalyticsTechnologiesLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="domainAnalyticsTechnologiesLocations"></a>
-# **domainAnalyticsTechnologiesLocations**
-> DomainAnalyticsTechnologiesLocationsResponseInfo domainAnalyticsTechnologiesLocations()
-
-
-
-You will receive the list of locations by this API call. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/locations/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    try {
-      DomainAnalyticsTechnologiesLocationsResponseInfo result = apiInstance.domainAnalyticsTechnologiesLocations();
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsTechnologiesLocations");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**DomainAnalyticsTechnologiesLocationsResponseInfo**](DomainAnalyticsTechnologiesLocationsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="technologiesAggregationTechnologiesLive"></a>
-# **technologiesAggregationTechnologiesLive**
-> DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo technologiesAggregationTechnologiesLive(domainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo)
-
-
-
-‌‌ The Aggregation Technologies endpoint will provide you with a list of the most popular technologies websites use alongside the technologies you specify. Alternatively, you can specify technology categories or groups to obtain wider stats. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/aggregation_technologies/live/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-    
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
-    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo> domainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo = Arrays.asList(); // List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo> | 
-    try {
-      DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo result = apiInstance.technologiesAggregationTechnologiesLive(domainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DomainAnalyticsApi#technologiesAggregationTechnologiesLive");
+    DomainAnalyticsErrorsRequestInfo model = new DomainAnalyticsErrorsRequestInfo()
+           .limit(10)
+           .offset(0)
+           .filteredFunction("pingback_url");
+    DomainAnalyticsErrorsResponseInfo response = apiInstance.domainAnalyticsErrors(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsErrors");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -330,13 +141,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo** | [**List&lt;DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo&gt;**](DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsErrorsRequestInfo>&gt;**](List<DomainAnalyticsErrorsRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
-[**DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo**](DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo.md)
+[**DomainAnalyticsErrorsResponseInfo**](DomainAnalyticsErrorsResponseInfo.md)
 
 ### Authorization
 
@@ -357,34 +170,34 @@ public class Example {
 > DomainAnalyticsTechnologiesAvailableFiltersResponseInfo technologiesAvailableFilters()
 
 
-
-‌‌ Here you will find all the necessary information about filters that can be used with Domain Analytics Technologies API endpoints. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/filters/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    try {
-      DomainAnalyticsTechnologiesAvailableFiltersResponseInfo result = apiInstance.technologiesAvailableFilters();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    DomainAnalyticsTechnologiesAvailableFiltersResponseInfo response = apiInstance.technologiesAvailableFilters();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesAvailableFilters");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -396,7 +209,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -408,7 +226,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -416,41 +234,40 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="technologiesDomainTechnologiesLive"></a>
-# **technologiesDomainTechnologiesLive**
-> DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo technologiesDomainTechnologiesLive(domainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo)
+<a id="domainAnalyticsTechnologiesLocations"></a>
+# **domainAnalyticsTechnologiesLocations**
+> DomainAnalyticsTechnologiesLocationsResponseInfo domainAnalyticsTechnologiesLocations()
 
-
-
-‌‌ Using this endpoint you will get a list of technologies used in a particular domain. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/domain_technologies/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo> domainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo = Arrays.asList(); // List<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo> | 
-    try {
-      DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo result = apiInstance.technologiesDomainTechnologiesLive(domainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainTechnologiesLive");
+
+    DomainAnalyticsTechnologiesLocationsResponseInfo response = apiInstance.domainAnalyticsTechnologiesLocations();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsTechnologiesLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -462,13 +279,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo** | [**List&lt;DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo&gt;**](DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo.md)|  | [optional] |
+
+    
+This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
-[**DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo**](DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo.md)
+[**DomainAnalyticsTechnologiesLocationsResponseInfo**](DomainAnalyticsTechnologiesLocationsResponseInfo.md)
 
 ### Authorization
 
@@ -484,41 +303,40 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="technologiesDomainsByHtmlTermsLive"></a>
-# **technologiesDomainsByHtmlTermsLive**
-> DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo technologiesDomainsByHtmlTermsLive(domainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo)
+<a id="domainAnalyticsTechnologiesLanguages"></a>
+# **domainAnalyticsTechnologiesLanguages**
+> DomainAnalyticsTechnologiesLanguagesResponseInfo domainAnalyticsTechnologiesLanguages()
 
-
-
-‌‌ This endpoint provides domains based on the HTML terms they use on their homepage. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_html_terms/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo> domainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo = Arrays.asList(); // List<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo> | 
-    try {
-      DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo result = apiInstance.technologiesDomainsByHtmlTermsLive(domainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainsByHtmlTermsLive");
+
+    DomainAnalyticsTechnologiesLanguagesResponseInfo response = apiInstance.domainAnalyticsTechnologiesLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsTechnologiesLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -530,81 +348,15 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo** | [**List&lt;DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo&gt;**](DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo.md)|  | [optional] |
 
-### Return type
-
-[**DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo**](DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="technologiesDomainsByTechnologyLive"></a>
-# **technologiesDomainsByTechnologyLive**
-> DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo technologiesDomainsByTechnologyLive(domainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo)
-
-
-
-‌‌ This endpoint provides domains based on the technology they use. In addition to the list of domains, you will also get their technology profiles, the country and language they belong to, and other related data. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/domains_by_technology/live/?bash&#39;
-
-### Example
-```java
-// Import classes:
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
     
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
+This endpoint does not need any parameter.
+    
 
-    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo> domainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo = Arrays.asList(); // List<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo> | 
-    try {
-      DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo result = apiInstance.technologiesDomainsByTechnologyLive(domainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainsByTechnologyLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo** | [**List&lt;DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo&gt;**](DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo.md)|  | [optional] |
 
 ### Return type
 
-[**DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo**](DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo.md)
+[**DomainAnalyticsTechnologiesLanguagesResponseInfo**](DomainAnalyticsTechnologiesLanguagesResponseInfo.md)
 
 ### Authorization
 
@@ -625,34 +377,34 @@ public class Example {
 > DomainAnalyticsTechnologiesTechnologiesResponseInfo technologiesTechnologies()
 
 
-
-This endpoint will provide you with the full list of available technologies structured by technology groups and categories each particular technology belongs to. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    try {
-      DomainAnalyticsTechnologiesTechnologiesResponseInfo result = apiInstance.technologiesTechnologies();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    DomainAnalyticsTechnologiesTechnologiesResponseInfo response = apiInstance.technologiesTechnologies();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesTechnologies");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -664,7 +416,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -676,7 +433,80 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesAggregationTechnologiesLive"></a>
+# **technologiesAggregationTechnologiesLive**
+> DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo technologiesAggregationTechnologiesLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
+    DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo model = new DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo()
+           .technology("Nginx")
+           .keyword("WordPress")
+           .mode("entry")
+           .limit(10);
+    DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo response = apiInstance.technologiesAggregationTechnologiesLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling DomainAnalyticsApi#technologiesAggregationTechnologiesLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo>&gt;**](List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo**](DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -686,38 +516,46 @@ This endpoint does not need any parameter.
 
 <a id="technologiesTechnologiesSummaryLive"></a>
 # **technologiesTechnologiesSummaryLive**
-> DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo technologiesTechnologiesSummaryLive(domainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo)
+> DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo technologiesTechnologiesSummaryLive()
 
-
-
-‌‌ The Technologies Summary endpoint will provide you with the number of domains across different countries and languages that use the specified technology names, technology groups, or technology categories. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/technologies_summary/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo> domainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo = Arrays.asList(); // List<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo> | 
-    try {
-      DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo result = apiInstance.technologiesTechnologiesSummaryLive(domainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo model = new DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo()
+           .technologies(
+               List.of(
+                   "Ngi"
+                ))
+           .keywords(
+               List.of(
+                   "WordPress"
+                ))
+           .mode("entry");
+    DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo response = apiInstance.technologiesTechnologiesSummaryLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesTechnologiesSummaryLive");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -730,9 +568,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo** | [**List&lt;DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo&gt;**](DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo>&gt;**](List<DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -754,38 +594,40 @@ public class Example {
 
 <a id="technologiesTechnologyStatsLive"></a>
 # **technologiesTechnologyStatsLive**
-> DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo technologiesTechnologyStatsLive(domainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo)
+> DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo technologiesTechnologyStatsLive()
 
-
-
-‌‌ The Technology Stats endpoint will provide you with historical data on the number of domains across different countries and languages that use the specified technology. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/technologies/technology_stats/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo> domainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo = Arrays.asList(); // List<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo> | 
-    try {
-      DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo result = apiInstance.technologiesTechnologyStatsLive(domainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo model = new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
+           .technology("jQuery")
+           .dateFrom("2025-04-17")
+           .dateTo("2025-06-17");
+    DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo response = apiInstance.technologiesTechnologyStatsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesTechnologyStatsLive");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -798,13 +640,234 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo** | [**List&lt;DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo&gt;**](DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo>&gt;**](List<DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
 [**DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo**](DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesDomainsByTechnologyLive"></a>
+# **technologiesDomainsByTechnologyLive**
+> DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo technologiesDomainsByTechnologyLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
+    DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo model = new DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo()
+           .technologies(
+               List.of(
+                   "Nginx"
+                ))
+           .limit(10);
+    DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo response = apiInstance.technologiesDomainsByTechnologyLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainsByTechnologyLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo>&gt;**](List<DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo**](DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesDomainsByHtmlTermsLive"></a>
+# **technologiesDomainsByHtmlTermsLive**
+> DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo technologiesDomainsByHtmlTermsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
+    DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo model = new DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo()
+           .searchTerms(
+               List.of(
+                   "data-attrid"
+                ))
+           .limit(10)
+           .offset(0);
+    DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo response = apiInstance.technologiesDomainsByHtmlTermsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainsByHtmlTermsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo>&gt;**](List<DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo**](DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="technologiesDomainTechnologiesLive"></a>
+# **technologiesDomainTechnologiesLive**
+> DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo technologiesDomainTechnologiesLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
+    DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo model = new DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo()
+           .target("dataforseo.com");
+    DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo response = apiInstance.technologiesDomainTechnologiesLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainTechnologiesLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo>&gt;**](List<DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo**](DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo.md)
 
 ### Authorization
 
@@ -825,34 +888,34 @@ public class Example {
 > DomainAnalyticsWhoisAvailableFiltersResponseInfo whoisAvailableFilters()
 
 
-
-‌‌ Here you will find all the necessary information about filters that can be used with Domain Analytics Whois API. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/whois/filters/?bash&#39;
-
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    try {
-      DomainAnalyticsWhoisAvailableFiltersResponseInfo result = apiInstance.whoisAvailableFilters();
-      System.out.println(result);
-    } catch (ApiException e) {
+
+    DomainAnalyticsWhoisAvailableFiltersResponseInfo response = apiInstance.whoisAvailableFilters();
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#whoisAvailableFilters");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -864,7 +927,12 @@ public class Example {
 ```
 
 ### Parameters
+
+
+    
 This endpoint does not need any parameter.
+    
+
 
 ### Return type
 
@@ -876,7 +944,7 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -886,38 +954,38 @@ This endpoint does not need any parameter.
 
 <a id="whoisOverviewLive"></a>
 # **whoisOverviewLive**
-> DomainAnalyticsWhoisOverviewLiveResponseInfo whoisOverviewLive(domainAnalyticsWhoisOverviewLiveRequestInfo)
+> DomainAnalyticsWhoisOverviewLiveResponseInfo whoisOverviewLive()
 
-
-
-‌ This endpoint will provide you with Whois data enriched with backlink stats, and ranking and traffic info from organic and paid search results. Using this endpoint you will be able to get all these data for the domains matching the parameters you specify in the request. for more info please visit &#39;https://docs.dataforseo.com/v3/domain_analytics/whois/overview/live/?bash&#39;
 
 ### Example
 ```java
-// Import classes:
+    
 import io.github.dataforseo.client.ApiClient;
 import io.github.dataforseo.client.ApiException;
 import io.github.dataforseo.client.Configuration;
 import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.models.*;
-import io.github.dataforseo.client.api.DomainAnalyticsApi;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
 
 public class Example {
   public static void main(String[] args) {
+  try {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://api.dataforseo.com");
-    
+
+
     // Configure HTTP basic authorization: basicAuth
     HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("YOUR USERNAME");
-    basicAuth.setPassword("YOUR PASSWORD");
-
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    List<DomainAnalyticsWhoisOverviewLiveRequestInfo> domainAnalyticsWhoisOverviewLiveRequestInfo = Arrays.asList(); // List<DomainAnalyticsWhoisOverviewLiveRequestInfo> | 
-    try {
-      DomainAnalyticsWhoisOverviewLiveResponseInfo result = apiInstance.whoisOverviewLive(domainAnalyticsWhoisOverviewLiveRequestInfo);
-      System.out.println(result);
-    } catch (ApiException e) {
+    DomainAnalyticsWhoisOverviewLiveRequestInfo model = new DomainAnalyticsWhoisOverviewLiveRequestInfo()
+           .limit(2);
+    DomainAnalyticsWhoisOverviewLiveResponseInfo response = apiInstance.whoisOverviewLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#whoisOverviewLive");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
@@ -930,9 +998,11 @@ public class Example {
 
 ### Parameters
 
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **domainAnalyticsWhoisOverviewLiveRequestInfo** | [**List&lt;DomainAnalyticsWhoisOverviewLiveRequestInfo&gt;**](DomainAnalyticsWhoisOverviewLiveRequestInfo.md)|  | [optional] |
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<DomainAnalyticsWhoisOverviewLiveRequestInfo>&gt;**](List<DomainAnalyticsWhoisOverviewLiveRequestInfo>.md)|  | [optional] |
+
+
 
 ### Return type
 
@@ -951,4 +1021,3 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
-

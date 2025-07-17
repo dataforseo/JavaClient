@@ -1,5 +1,3 @@
-
-
 # AppendixStatisticsDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**day** | [**AppendixStatisticsRatesDataInfo**](AppendixStatisticsRatesDataInfo.md) |  |  [optional] |
-|**minute** | [**AppendixStatisticsRatesDataInfo**](AppendixStatisticsRatesDataInfo.md) |  |  [optional] |
-
-
-
+**day** | **AppendixStatisticsRatesDataInfo** |  |[optional]|
+**minute** | **AppendixStatisticsRatesDataInfo** |  |[optional]|

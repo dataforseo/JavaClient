@@ -1,5 +1,3 @@
-
-
 # OnPageRawHtmlItem
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**html** | **String** | HTML page |  [optional] |
-
-
-
+**html** | **String** | HTML page |[optional]|

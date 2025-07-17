@@ -1,5 +1,3 @@
-
-
 # AppendixTaskGetProductGoogleMerchantPriceDataInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**advanced** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-|**html** | [**AppendixTaskKeywordsDataPriceDataInfo**](AppendixTaskKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**advanced** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**html** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

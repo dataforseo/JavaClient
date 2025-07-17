@@ -1,5 +1,3 @@
-
-
 # IntersectionSummaryInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**intersectionsCount** | **BigDecimal** | total number of intersections |  [optional] |
-
-
-
+**intersectionsCount** | **Long** | total number of intersections |[optional]|

@@ -1,5 +1,3 @@
-
-
 # DomainAnalyticsTechnologiesAvailableFiltersResultInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**domainsByTechnology** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**aggregationTechnologies** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**technologiesSummary** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**domainsByHtmlTerms** | **Map&lt;String, String&gt;** |  |  [optional] |
-
-
-
+**domainsByTechnology** | **Map<String, String>** |  |[optional]|
+**aggregationTechnologies** | **Map<String, String>** |  |[optional]|
+**technologiesSummary** | **Map<String, String>** |  |[optional]|
+**domainsByHtmlTerms** | **Map<String, String>** |  |[optional]|

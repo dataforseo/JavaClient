@@ -1,5 +1,3 @@
-
-
 # AppendixSellersGoogleMerchantLimitsRatesDataInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**taskPost** | **Double** |  |  [optional] |
-|**tasksReady** | **Double** |  |  [optional] |
-|**taskGet** | [**AppendixFunctionTypeInfo**](AppendixFunctionTypeInfo.md) |  |  [optional] |
-|**adUrl** | **Double** |  |  [optional] |
-
-
-
+**taskPost** | **Double** |  |[optional]|
+**tasksReady** | **Double** |  |[optional]|
+**taskGet** | **AppendixFunctionTypeInfo** |  |[optional]|
+**adUrl** | **Double** |  |[optional]|

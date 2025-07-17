@@ -1,5 +1,3 @@
-
-
 # AppendixBingKeywordsDataLimitsRatesDataInfo
 
 
@@ -7,12 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**keywordPerformance** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**searchVolume** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**keywordsForSite** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**keywordsForKeywords** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**audienceEstimation** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-|**keywordSuggestionsForUrl** | [**AppendixInfo**](AppendixInfo.md) |  |  [optional] |
-
-
-
+**keywordPerformance** | **AppendixInfo** |  |[optional]|
+**searchVolume** | **AppendixInfo** |  |[optional]|
+**keywordsForSite** | **AppendixInfo** |  |[optional]|
+**keywordsForKeywords** | **AppendixInfo** |  |[optional]|
+**audienceEstimation** | **AppendixInfo** |  |[optional]|
+**keywordSuggestionsForUrl** | **AppendixInfo** |  |[optional]|

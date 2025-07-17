@@ -1,5 +1,3 @@
-
-
 # TechnologiesInfo
 
 
@@ -7,22 +5,19 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**addOns** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**analytics** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**webDevelopment** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**security** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**businessTools** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**sales** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**other** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**userGeneratedContent** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**privacy** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**servers** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**location** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**content** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**media** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**marketing** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**communication** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-|**utilities** | **Map&lt;String, List&lt;String&gt;&gt;** |  |  [optional] |
-
-
-
+**addOns** | **Map<String, List<String>>** |  |[optional]|
+**analytics** | **Map<String, List<String>>** |  |[optional]|
+**webDevelopment** | **Map<String, List<String>>** |  |[optional]|
+**security** | **Map<String, List<String>>** |  |[optional]|
+**businessTools** | **Map<String, List<String>>** |  |[optional]|
+**sales** | **Map<String, List<String>>** |  |[optional]|
+**other** | **Map<String, List<String>>** |  |[optional]|
+**userGeneratedContent** | **Map<String, List<String>>** |  |[optional]|
+**privacy** | **Map<String, List<String>>** |  |[optional]|
+**servers** | **Map<String, List<String>>** |  |[optional]|
+**location** | **Map<String, List<String>>** |  |[optional]|
+**content** | **Map<String, List<String>>** |  |[optional]|
+**media** | **Map<String, List<String>>** |  |[optional]|
+**marketing** | **Map<String, List<String>>** |  |[optional]|
+**communication** | **Map<String, List<String>>** |  |[optional]|
+**utilities** | **Map<String, List<String>>** |  |[optional]|

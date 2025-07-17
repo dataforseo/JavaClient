@@ -1,5 +1,3 @@
-
-
 # DataforseoLabsDomainRankOverviewLiveItem
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**seType** | **String** | search engine type |  [optional] |
-|**locationCode** | **BigDecimal** | location code in a POST array |  [optional] |
-|**languageCode** | **String** | language code in a POST array |  [optional] |
-|**metrics** | [**Map&lt;String, DataforseoLabsMetricsInfo&gt;**](DataforseoLabsMetricsInfo.md) | ranking data relevant to the specified domain |  [optional] |
-
-
-
+**seType** | **String** | search engine type |[optional]|
+**locationCode** | **Integer** | location code in a POST array |[optional]|
+**languageCode** | **String** | language code in a POST array |[optional]|
+**metrics** | **Map<String, DataforseoLabsMetricsInfo>** | ranking data relevant to the specified domain |[optional]|

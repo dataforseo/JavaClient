@@ -1,5 +1,3 @@
-
-
 # AppendixMerchantGoogleInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**products** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
-|**sellers** | [**AppendixSellersGoogleMerchantLimitsRatesDataInfo**](AppendixSellersGoogleMerchantLimitsRatesDataInfo.md) |  |  [optional] |
-|**productSpec** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
-|**productInfo** | [**AppendixSerpDaysRatesDataInfo**](AppendixSerpDaysRatesDataInfo.md) |  |  [optional] |
-
-
-
+**products** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**sellers** | **AppendixSellersGoogleMerchantLimitsRatesDataInfo** |  |[optional]|
+**productSpec** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**productInfo** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|

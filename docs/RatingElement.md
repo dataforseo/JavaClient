@@ -1,5 +1,3 @@
-
-
 # RatingElement
 
 
@@ -7,12 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**ratingType** | **String** | the type of rating here you can find the following elements: Max5, Percents, CustomMax |  [optional] |
-|**value** | **BigDecimal** | the value of the rating |  [optional] |
-|**votesCount** | **BigDecimal** | the amount of feedbac |  [optional] |
-|**ratingMax** | **Double** | the maximum value for a rating_type |  [optional] |
-|**type** | **String** | type of element |  [optional] |
-|**position** | **String** | the alignment of the element in Google Shopping SERP possible values: left, right |  [optional] |
-
-
-
+**type** | **String** | type of element |[optional]|
+**position** | **String** | the alignment of the element in Google Shopping SERP<br>possible values:<br>left, right |[optional]|
+**ratingType** | **String** | the type of rating<br>here you can find the following elements: Max5, Percents, CustomMax |[optional]|
+**value** | **Double** | value of the rating |[optional]|
+**votesCount** | **Long** | the amount of feedback |[optional]|
+**ratingMax** | **Double** | the maximum value for a rating_type |[optional]|

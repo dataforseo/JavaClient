@@ -1,5 +1,3 @@
-
-
 # HunspellInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**hunspellLanguageCode** | **String** | spellcheck language code |  [optional] |
-|**misspelled** | [**List&lt;HunspellMisspelledInfo&gt;**](HunspellMisspelledInfo.md) | array of misspelled words |  [optional] |
-
-
-
+**hunspellLanguageCode** | **String** | spellcheck language code |[optional]|
+**misspelled** | **List<HunspellMisspelledInfo>** | array of misspelled words |[optional]|

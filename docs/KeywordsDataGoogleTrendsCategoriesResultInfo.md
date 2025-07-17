@@ -1,5 +1,3 @@
-
-
 # KeywordsDataGoogleTrendsCategoriesResultInfo
 
 
@@ -7,9 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**categoryCode** | **BigDecimal** | unique google trends category identifier |  [optional] |
-|**categoryName** | **String** | name of the google trends category |  [optional] |
-|**categoryCodeParent** | **BigDecimal** | the code of the superordinate category example: \&quot;category_code\&quot;: 1100, \&quot;category_name\&quot;: \&quot;Superhero Films\&quot;, \&quot;category_code_parent\&quot;: 1097 where category_code_parent corresponds to: \&quot;category_code\&quot;: 1097, \&quot;category_name\&quot;: \&quot;Action &amp; Adventure Films\&quot; |  [optional] |
-
-
-
+**categoryCode** | **Integer** | unique google trends category identifier |[optional]|
+**categoryName** | **String** | name of the google trends category |[optional]|
+**categoryCodeParent** | **Integer** | the code of the superordinate category<br>example:<br>'category_code': 1100,<br>'category_name': 'Superhero Films',<br>'category_code_parent': 1097<br>where category_code_parent corresponds to:<br>'category_code': 1097,<br>'category_name': 'Action & Adventure Films' |[optional]|

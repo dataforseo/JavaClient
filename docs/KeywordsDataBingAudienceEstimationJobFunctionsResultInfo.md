@@ -1,5 +1,3 @@
-
-
 # KeywordsDataBingAudienceEstimationJobFunctionsResultInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**jobFunctionId** | **BigDecimal** | ID of the job function |  [optional] |
-|**jobFunctionName** | **String** | name of the job function |  [optional] |
-
-
-
+**jobFunctionId** | **Long** | ID of the job function |[optional]|
+**jobFunctionName** | **String** | name of the job function |[optional]|

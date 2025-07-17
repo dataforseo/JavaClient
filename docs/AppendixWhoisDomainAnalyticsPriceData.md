@@ -1,5 +1,3 @@
-
-
 # AppendixWhoisDomainAnalyticsPriceData
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**overview** | [**AppendixBingKeywordsDataPriceDataInfo**](AppendixBingKeywordsDataPriceDataInfo.md) |  |  [optional] |
-
-
-
+**overview** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

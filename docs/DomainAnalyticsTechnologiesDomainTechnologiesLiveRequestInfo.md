@@ -1,5 +1,3 @@
-
-
 # DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo
 
 
@@ -7,7 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**target** | **String** | target domain required field domain name of the website to analyze Note: results will be returned for the specified domain only |  [optional] |
-
-
-
+**target** | **String** | target domain<br>required field<br>domain name of the website to analyze<br>Note: results will be returned for the specified domain only |[optional]|

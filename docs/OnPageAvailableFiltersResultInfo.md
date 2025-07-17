@@ -1,5 +1,3 @@
-
-
 # OnPageAvailableFiltersResultInfo
 
 
@@ -7,13 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**resources** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**pages** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**nonIndexable** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**links** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**pagesByResource** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**redirectChains** | **Map&lt;String, String&gt;** |  |  [optional] |
-|**keywordDensity** | **Map&lt;String, String&gt;** |  |  [optional] |
-
-
-
+**resources** | **Map<String, String>** |  |[optional]|
+**pages** | **Map<String, String>** |  |[optional]|
+**nonIndexable** | **Map<String, String>** |  |[optional]|
+**links** | **Map<String, String>** |  |[optional]|
+**pagesByResource** | **Map<String, String>** |  |[optional]|
+**redirectChains** | **Map<String, String>** |  |[optional]|
+**keywordDensity** | **Map<String, String>** |  |[optional]|

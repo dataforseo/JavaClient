@@ -1,5 +1,3 @@
-
-
 # ContentAnalysisLanguagesResultInfo
 
 
@@ -7,11 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**locationCode** | **BigDecimal** |  |  [optional] |
-|**locationName** | **String** |  |  [optional] |
-|**locationCodeParent** | **BigDecimal** |  |  [optional] |
-|**countryIsoCode** | **String** |  |  [optional] |
-|**locationType** | **String** |  |  [optional] |
-
-
-
+**locationCode** | **Integer** |  |[optional]|
+**locationName** | **String** |  |[optional]|
+**locationCodeParent** | **Integer** |  |[optional]|
+**countryIsoCode** | **String** |  |[optional]|
+**locationType** | **String** |  |[optional]|

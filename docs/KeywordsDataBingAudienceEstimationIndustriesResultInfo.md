@@ -1,5 +1,3 @@
-
-
 # KeywordsDataBingAudienceEstimationIndustriesResultInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**industryId** | **BigDecimal** | ID of the industry |  [optional] |
-|**industryName** | **String** | name of the industry |  [optional] |
-
-
-
+**industryId** | **Long** | ID of the industry |[optional]|
+**industryName** | **String** | name of the industry |[optional]|

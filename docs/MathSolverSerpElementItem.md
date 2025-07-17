@@ -1,5 +1,3 @@
-
-
 # MathSolverSerpElementItem
 
 
@@ -7,11 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**title** | **String** | title of the row |  [optional] |
-|**result** | **String** | solution to the equation solution to the mathematical equation specified in the keyword field when setting a task |  [optional] |
-|**items** | [**List&lt;MathSolverElement&gt;**](MathSolverElement.md) | contains arrays of specific images |  [optional] |
-|**links** | [**List&lt;LinkElement&gt;**](LinkElement.md) | link of the element |  [optional] |
-|**rectangle** | [**Rectangle**](Rectangle.md) |  |  [optional] |
-
-
-
+**rankGroup** | **Integer** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
+**rankAbsolute** | **Integer** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
+**title** | **String** | reference page title |[optional]|
+**result** | **String** | solution to the equation<br>solution to the mathematical equation specified in the keyword field when setting a task |[optional]|
+**items** | **List<MathSolverElement>** | contains arrays of specific images |[optional]|
+**links** | **List<LinkElement>** | link of the element |[optional]|

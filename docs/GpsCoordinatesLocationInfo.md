@@ -1,5 +1,3 @@
-
-
 # GpsCoordinatesLocationInfo
 
 
@@ -7,8 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**latitude** | **Float** | latitude coordinate of the hotel in google maps example: \&quot;latitude\&quot;: 51.584091 |  [optional] |
-|**longitude** | **Float** | longitude coordinate of the hotel in google maps example: \&quot;longitude\&quot;: -0.31365919999999997 |  [optional] |
-
-
-
+**latitude** | **Double** | latitude coordinate of the hotel in google maps<br>example:<br>'latitude': 51.584091 |[optional]|
+**longitude** | **Double** | longitude coordinate of the hotel in google maps<br>example:<br>'longitude': -0.31365919999999997 |[optional]|

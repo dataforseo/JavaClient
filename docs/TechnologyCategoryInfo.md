@@ -1,5 +1,3 @@
-
-
 # TechnologyCategoryInfo
 
 
@@ -7,10 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**id** | **String** | id of the technology category example: crm, cart_abandonment |  [optional] |
-|**path** | **String** | path to the technology category example: user_generated_content.content_curation |  [optional] |
-|**title** | **String** | title of the technology category |  [optional] |
-|**technologies** | **List&lt;String&gt;** | list of technologies in this category example: \&quot;Salesforce\&quot;, \&quot;CareCart\&quot; |  [optional] |
-
-
-
+**id** | **String** | id of the technology category<br>example:<br>crm, cart_abandonment |[optional]|
+**path** | **String** | path to the technology category<br>example:<br>user_generated_content.content_curation |[optional]|
+**title** | **String** | title of the technology category |[optional]|
+**technologies** | **List<String>** | list of technologies in this category<br>example:<br>'Salesforce', 'CareCart' |[optional]|
