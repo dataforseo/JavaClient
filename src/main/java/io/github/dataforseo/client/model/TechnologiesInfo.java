@@ -222,6 +222,29 @@ public class TechnologiesInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_BOOKING = "booking";
+  @SerializedName(SERIALIZED_NAME_BOOKING)
+  private Map<String, List<String>> booking;
+
+  public TechnologiesInfo booking(Map<String, List<String>> booking) {
+    this.booking = booking;
+    return this;
+  }
+
+  /**
+   * 
+   * @return booking
+   */
+  @javax.annotation.Nullable
+  public Map<String, List<String>> getBooking() {
+    return booking;
+  }
+
+  public void setBooking(Map<String, List<String>> booking) {
+    this.booking = booking;
+  }
+
+
   public static final String SERIALIZED_NAME_PRIVACY = "privacy";
   @SerializedName(SERIALIZED_NAME_PRIVACY)
   private Map<String, List<String>> privacy;
@@ -457,6 +480,7 @@ public class TechnologiesInfo  {
         Objects.equals(this.sales, technologiesInfo.sales) &&
         Objects.equals(this.other, technologiesInfo.other) &&
         Objects.equals(this.userGeneratedContent, technologiesInfo.userGeneratedContent) &&
+        Objects.equals(this.booking, technologiesInfo.booking) &&
         Objects.equals(this.privacy, technologiesInfo.privacy) &&
         Objects.equals(this.servers, technologiesInfo.servers) &&
         Objects.equals(this.location, technologiesInfo.location) &&
@@ -474,7 +498,7 @@ public class TechnologiesInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(addOns, analytics, webDevelopment, security, businessTools, sales, other, userGeneratedContent, privacy, servers, location, content, media, marketing, communication, utilities);
+  return Objects.hash(addOns, analytics, webDevelopment, security, businessTools, sales, other, userGeneratedContent, booking, privacy, servers, location, content, media, marketing, communication, utilities);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -497,6 +521,7 @@ public class TechnologiesInfo  {
     sb.append("    sales: ").append(toIndentedString(sales)).append("\n");
     sb.append("    other: ").append(toIndentedString(other)).append("\n");
     sb.append("    userGeneratedContent: ").append(toIndentedString(userGeneratedContent)).append("\n");
+    sb.append("    booking: ").append(toIndentedString(booking)).append("\n");
     sb.append("    privacy: ").append(toIndentedString(privacy)).append("\n");
     sb.append("    servers: ").append(toIndentedString(servers)).append("\n");
     sb.append("    location: ").append(toIndentedString(location)).append("\n");
@@ -543,6 +568,8 @@ public class TechnologiesInfo  {
     openapiFields.add("other");
     
     openapiFields.add("user_generated_content");
+    
+    openapiFields.add("booking");
     
     openapiFields.add("privacy");
     

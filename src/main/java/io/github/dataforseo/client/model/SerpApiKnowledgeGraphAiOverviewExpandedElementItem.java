@@ -109,9 +109,9 @@ public class SerpApiKnowledgeGraphAiOverviewExpandedElementItem  extends BaseSer
 
   public static final String SERIALIZED_NAME_REFERENCES = "references";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
-  private List<AiAiOverviewReferenceInfo> references;
+  private List<AiModeAiOverviewReferenceInfo> references;
 
-  public SerpApiKnowledgeGraphAiOverviewExpandedElementItem references(List<AiAiOverviewReferenceInfo> references) {
+  public SerpApiKnowledgeGraphAiOverviewExpandedElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
     return this;
   }
@@ -122,11 +122,11 @@ public class SerpApiKnowledgeGraphAiOverviewExpandedElementItem  extends BaseSer
    * @return references
    */
   @javax.annotation.Nullable
-  public List<AiAiOverviewReferenceInfo> getReferences() {
+  public List<AiModeAiOverviewReferenceInfo> getReferences() {
     return references;
   }
 
-  public void setReferences(List<AiAiOverviewReferenceInfo> references) {
+  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
   }
 

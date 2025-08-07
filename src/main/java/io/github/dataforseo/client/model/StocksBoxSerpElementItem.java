@@ -122,7 +122,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * name of the source of the video
+   * reference source name or title
    * @return source
    */
   @javax.annotation.Nullable
@@ -214,7 +214,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain in the URL
+   * domain name of the reference
    * @return domain
    */
   @javax.annotation.Nullable
@@ -237,8 +237,8 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * results table
-* if there are none, equals null
+   * table present in the element
+* the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable

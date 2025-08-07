@@ -134,9 +134,9 @@ public class SerpApiKnowledgeGraphAiOverviewElementItem  extends BaseSerpApiKnow
 
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
-  private List<AiModeImagesElement> images;
+  private List<AiModeImagesElementInfo> images;
 
-  public SerpApiKnowledgeGraphAiOverviewElementItem images(List<AiModeImagesElement> images) {
+  public SerpApiKnowledgeGraphAiOverviewElementItem images(List<AiModeImagesElementInfo> images) {
     this.images = images;
     return this;
   }
@@ -146,20 +146,20 @@ public class SerpApiKnowledgeGraphAiOverviewElementItem  extends BaseSerpApiKnow
    * @return images
    */
   @javax.annotation.Nullable
-  public List<AiModeImagesElement> getImages() {
+  public List<AiModeImagesElementInfo> getImages() {
     return images;
   }
 
-  public void setImages(List<AiModeImagesElement> images) {
+  public void setImages(List<AiModeImagesElementInfo> images) {
     this.images = images;
   }
 
 
   public static final String SERIALIZED_NAME_REFERENCES = "references";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
-  private List<AiAiOverviewReferenceInfo> references;
+  private List<AiModeAiOverviewReferenceInfo> references;
 
-  public SerpApiKnowledgeGraphAiOverviewElementItem references(List<AiAiOverviewReferenceInfo> references) {
+  public SerpApiKnowledgeGraphAiOverviewElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
     return this;
   }
@@ -170,11 +170,11 @@ public class SerpApiKnowledgeGraphAiOverviewElementItem  extends BaseSerpApiKnow
    * @return references
    */
   @javax.annotation.Nullable
-  public List<AiAiOverviewReferenceInfo> getReferences() {
+  public List<AiModeAiOverviewReferenceInfo> getReferences() {
     return references;
   }
 
-  public void setReferences(List<AiAiOverviewReferenceInfo> references) {
+  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
   }
 

@@ -205,9 +205,9 @@ public class SerpGoogleFinanceQuoteTaskGetHtmlResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<SerpHtmlItemInfo> items;
+  private List<HtmlItemInfo> items;
 
-  public SerpGoogleFinanceQuoteTaskGetHtmlResultInfo items(List<SerpHtmlItemInfo> items) {
+  public SerpGoogleFinanceQuoteTaskGetHtmlResultInfo items(List<HtmlItemInfo> items) {
     this.items = items;
     return this;
   }
@@ -217,11 +217,11 @@ public class SerpGoogleFinanceQuoteTaskGetHtmlResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<SerpHtmlItemInfo> getItems() {
+  public List<HtmlItemInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<SerpHtmlItemInfo> items) {
+  public void setItems(List<HtmlItemInfo> items) {
     this.items = items;
   }
 

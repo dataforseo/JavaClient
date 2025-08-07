@@ -48,7 +48,7 @@ public class SerpApiAiOverviewExpandedElementItem  extends BaseSerpApiAiOverview
   }
 
   /**
-   * title of the result in SERP
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -71,7 +71,7 @@ public class SerpApiAiOverviewExpandedElementItem  extends BaseSerpApiAiOverview
   }
 
   /**
-   * text or description of the element in SERP
+   * text of the component
    * @return text
    */
   @javax.annotation.Nullable
@@ -109,24 +109,24 @@ public class SerpApiAiOverviewExpandedElementItem  extends BaseSerpApiAiOverview
 
   public static final String SERIALIZED_NAME_REFERENCES = "references";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
-  private List<AiAiOverviewReferenceInfo> references;
+  private List<AiModeAiOverviewReferenceInfo> references;
 
-  public SerpApiAiOverviewExpandedElementItem references(List<AiAiOverviewReferenceInfo> references) {
+  public SerpApiAiOverviewExpandedElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
     return this;
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * additional references relevant to the item
+* includes references to webpages that may have been used to generate the ai_overview
    * @return references
    */
   @javax.annotation.Nullable
-  public List<AiAiOverviewReferenceInfo> getReferences() {
+  public List<AiModeAiOverviewReferenceInfo> getReferences() {
     return references;
   }
 
-  public void setReferences(List<AiAiOverviewReferenceInfo> references) {
+  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
   }
 

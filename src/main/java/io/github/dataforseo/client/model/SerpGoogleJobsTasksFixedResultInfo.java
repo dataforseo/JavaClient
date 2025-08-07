@@ -109,26 +109,26 @@ public class SerpGoogleJobsTasksFixedResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_DATE_FIXED = "date_fixed";
-  @SerializedName(SERIALIZED_NAME_DATE_FIXED)
-  private String dateFixed;
+  public static final String SERIALIZED_NAME_DATE_POSTED = "date_posted";
+  @SerializedName(SERIALIZED_NAME_DATE_POSTED)
+  private String datePosted;
 
-  public SerpGoogleJobsTasksFixedResultInfo dateFixed(String dateFixed) {
-    this.dateFixed = dateFixed;
+  public SerpGoogleJobsTasksFixedResultInfo datePosted(String datePosted) {
+    this.datePosted = datePosted;
     return this;
   }
 
   /**
-   * date when the task was fixed (in the UTC format)
-   * @return dateFixed
+   * 
+   * @return datePosted
    */
   @javax.annotation.Nullable
-  public String getDateFixed() {
-    return dateFixed;
+  public String getDatePosted() {
+    return datePosted;
   }
 
-  public void setDateFixed(String dateFixed) {
-    this.dateFixed = dateFixed;
+  public void setDatePosted(String datePosted) {
+    this.datePosted = datePosted;
   }
 
 
@@ -273,7 +273,7 @@ public class SerpGoogleJobsTasksFixedResultInfo  {
         Objects.equals(this.id, serpGoogleJobsTasksFixedResultInfo.id) &&
         Objects.equals(this.se, serpGoogleJobsTasksFixedResultInfo.se) &&
         Objects.equals(this.seType, serpGoogleJobsTasksFixedResultInfo.seType) &&
-        Objects.equals(this.dateFixed, serpGoogleJobsTasksFixedResultInfo.dateFixed) &&
+        Objects.equals(this.datePosted, serpGoogleJobsTasksFixedResultInfo.datePosted) &&
         Objects.equals(this.tag, serpGoogleJobsTasksFixedResultInfo.tag) &&
         Objects.equals(this.endpointRegular, serpGoogleJobsTasksFixedResultInfo.endpointRegular) &&
         Objects.equals(this.endpointAdvanced, serpGoogleJobsTasksFixedResultInfo.endpointAdvanced) &&
@@ -287,7 +287,7 @@ public class SerpGoogleJobsTasksFixedResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(id, se, seType, dateFixed, tag, endpointRegular, endpointAdvanced, endpointHtml);
+  return Objects.hash(id, se, seType, datePosted, tag, endpointRegular, endpointAdvanced, endpointHtml);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -305,7 +305,7 @@ public class SerpGoogleJobsTasksFixedResultInfo  {
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    se: ").append(toIndentedString(se)).append("\n");
     sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
-    sb.append("    dateFixed: ").append(toIndentedString(dateFixed)).append("\n");
+    sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    endpointRegular: ").append(toIndentedString(endpointRegular)).append("\n");
     sb.append("    endpointAdvanced: ").append(toIndentedString(endpointAdvanced)).append("\n");
@@ -339,7 +339,7 @@ public class SerpGoogleJobsTasksFixedResultInfo  {
     
     openapiFields.add("se_type");
     
-    openapiFields.add("date_fixed");
+    openapiFields.add("date_posted");
     
     openapiFields.add("tag");
     

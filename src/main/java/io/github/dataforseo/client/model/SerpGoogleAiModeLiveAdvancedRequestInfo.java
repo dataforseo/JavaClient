@@ -110,8 +110,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
 * required field if you don’t specify location_code or location_coordinate
 * if you use this field, you don’t need to specify location_code or location_coordinate
 * you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* London,England,United Kingdom
+* Note: check  Google Search Help for the list of countries where AI Mode is currently available
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -138,8 +137,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
 * required field if you don’t specify location_name or location_coordinate
 * if you use this field, you don’t need to specify location_name or location_coordinate
 * you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* 2840
+* Note: check  Google Search Help for the list of countries where AI Mode is currently available
    * @return locationCode
    */
   @javax.annotation.Nullable

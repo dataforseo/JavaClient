@@ -334,7 +334,8 @@ public class SerpBingOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * additional items present in the element
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

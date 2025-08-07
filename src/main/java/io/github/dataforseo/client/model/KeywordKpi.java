@@ -40,9 +40,9 @@ public class KeywordKpi  {
 
   public static final String SERIALIZED_NAME_DESKTOP = "desktop";
   @SerializedName(SERIALIZED_NAME_DESKTOP)
-  private List<KeywordKpiInfo> desktop;
+  private List<KeywordKpiItemInfo> desktop;
 
-  public KeywordKpi desktop(List<KeywordKpiInfo> desktop) {
+  public KeywordKpi desktop(List<KeywordKpiItemInfo> desktop) {
     this.desktop = desktop;
     return this;
   }
@@ -53,20 +53,20 @@ public class KeywordKpi  {
    * @return desktop
    */
   @javax.annotation.Nullable
-  public List<KeywordKpiInfo> getDesktop() {
+  public List<KeywordKpiItemInfo> getDesktop() {
     return desktop;
   }
 
-  public void setDesktop(List<KeywordKpiInfo> desktop) {
+  public void setDesktop(List<KeywordKpiItemInfo> desktop) {
     this.desktop = desktop;
   }
 
 
   public static final String SERIALIZED_NAME_MOBILE = "mobile";
   @SerializedName(SERIALIZED_NAME_MOBILE)
-  private List<KeywordKpiInfo> mobile;
+  private List<KeywordKpiItemInfo> mobile;
 
-  public KeywordKpi mobile(List<KeywordKpiInfo> mobile) {
+  public KeywordKpi mobile(List<KeywordKpiItemInfo> mobile) {
     this.mobile = mobile;
     return this;
   }
@@ -77,20 +77,20 @@ public class KeywordKpi  {
    * @return mobile
    */
   @javax.annotation.Nullable
-  public List<KeywordKpiInfo> getMobile() {
+  public List<KeywordKpiItemInfo> getMobile() {
     return mobile;
   }
 
-  public void setMobile(List<KeywordKpiInfo> mobile) {
+  public void setMobile(List<KeywordKpiItemInfo> mobile) {
     this.mobile = mobile;
   }
 
 
   public static final String SERIALIZED_NAME_TABLET = "tablet";
   @SerializedName(SERIALIZED_NAME_TABLET)
-  private List<KeywordKpiInfo> tablet;
+  private List<KeywordKpiItemInfo> tablet;
 
-  public KeywordKpi tablet(List<KeywordKpiInfo> tablet) {
+  public KeywordKpi tablet(List<KeywordKpiItemInfo> tablet) {
     this.tablet = tablet;
     return this;
   }
@@ -101,11 +101,11 @@ public class KeywordKpi  {
    * @return tablet
    */
   @javax.annotation.Nullable
-  public List<KeywordKpiInfo> getTablet() {
+  public List<KeywordKpiItemInfo> getTablet() {
     return tablet;
   }
 
-  public void setTablet(List<KeywordKpiInfo> tablet) {
+  public void setTablet(List<KeywordKpiItemInfo> tablet) {
     this.tablet = tablet;
   }
 

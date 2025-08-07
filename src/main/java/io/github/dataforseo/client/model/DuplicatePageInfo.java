@@ -65,9 +65,9 @@ public class DuplicatePageInfo  {
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
-  private List<BaseOnPageResourceItem> page;
+  private List<OnPageHtmlResourceItem> page;
 
-  public DuplicatePageInfo page(List<BaseOnPageResourceItem> page) {
+  public DuplicatePageInfo page(List<OnPageHtmlResourceItem> page) {
     this.page = page;
     return this;
   }
@@ -77,11 +77,11 @@ public class DuplicatePageInfo  {
    * @return page
    */
   @javax.annotation.Nullable
-  public List<BaseOnPageResourceItem> getPage() {
+  public List<OnPageHtmlResourceItem> getPage() {
     return page;
   }
 
-  public void setPage(List<BaseOnPageResourceItem> page) {
+  public void setPage(List<OnPageHtmlResourceItem> page) {
     this.page = page;
   }
 

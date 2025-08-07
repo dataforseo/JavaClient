@@ -325,9 +325,9 @@ public class GooglePlayReviewsSearch  {
 
   public static final String SERIALIZED_NAME_RESPONSES = "responses";
   @SerializedName(SERIALIZED_NAME_RESPONSES)
-  private Object responses;
+  private List<ResponseDataInfo> responses;
 
-  public GooglePlayReviewsSearch responses(Object responses) {
+  public GooglePlayReviewsSearch responses(List<ResponseDataInfo> responses) {
     this.responses = responses;
     return this;
   }
@@ -337,11 +337,11 @@ public class GooglePlayReviewsSearch  {
    * @return responses
    */
   @javax.annotation.Nullable
-  public Object getResponses() {
+  public List<ResponseDataInfo> getResponses() {
     return responses;
   }
 
-  public void setResponses(Object responses) {
+  public void setResponses(List<ResponseDataInfo> responses) {
     this.responses = responses;
   }
 

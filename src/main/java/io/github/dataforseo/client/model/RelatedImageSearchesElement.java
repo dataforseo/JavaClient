@@ -71,7 +71,7 @@ public class RelatedImageSearchesElement  {
   }
 
   /**
-   * title of the element
+   * title of a given shopping element
    * @return title
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class RelatedImageSearchesElement  {
   }
 
   /**
-   * relevant URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable

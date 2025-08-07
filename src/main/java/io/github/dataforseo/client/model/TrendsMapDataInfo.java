@@ -90,9 +90,9 @@ public class TrendsMapDataInfo  {
 
   public static final String SERIALIZED_NAME_VALUES = "values";
   @SerializedName(SERIALIZED_NAME_VALUES)
-  private List<String> values;
+  private List<Double> values;
 
-  public TrendsMapDataInfo values(List<String> values) {
+  public TrendsMapDataInfo values(List<Double> values) {
     this.values = values;
     return this;
   }
@@ -107,11 +107,11 @@ public class TrendsMapDataInfo  {
    * @return values
    */
   @javax.annotation.Nullable
-  public List<String> getValues() {
+  public List<Double> getValues() {
     return values;
   }
 
-  public void setValues(List<String> values) {
+  public void setValues(List<Double> values) {
     this.values = values;
   }
 

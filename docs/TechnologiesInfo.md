@@ -13,6 +13,7 @@
 **sales** | **Map<String, List<String>>** |  |[optional]|
 **other** | **Map<String, List<String>>** |  |[optional]|
 **userGeneratedContent** | **Map<String, List<String>>** |  |[optional]|
+**booking** | **Map<String, List<String>>** |  |[optional]|
 **privacy** | **Map<String, List<String>>** |  |[optional]|
 **servers** | **Map<String, List<String>>** |  |[optional]|
 **location** | **Map<String, List<String>>** |  |[optional]|

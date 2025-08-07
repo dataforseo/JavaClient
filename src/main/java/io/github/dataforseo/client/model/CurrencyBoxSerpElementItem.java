@@ -220,8 +220,8 @@ public class CurrencyBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * results table
-* if there are none, equals null
+   * table present in the element
+* the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable

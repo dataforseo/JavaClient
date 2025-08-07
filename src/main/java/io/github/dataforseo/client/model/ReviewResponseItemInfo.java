@@ -38,6 +38,29 @@ import io.github.dataforseo.client.JSON;
 public class ReviewResponseItemInfo  {
 
 
+  public static final String SERIALIZED_NAME_RESPONSE_ID = "response_id";
+  @SerializedName(SERIALIZED_NAME_RESPONSE_ID)
+  private String responseId;
+
+  public ReviewResponseItemInfo responseId(String responseId) {
+    this.responseId = responseId;
+    return this;
+  }
+
+  /**
+   * the time of publication
+   * @return responseId
+   */
+  @javax.annotation.Nullable
+  public String getResponseId() {
+    return responseId;
+  }
+
+  public void setResponseId(String responseId) {
+    this.responseId = responseId;
+  }
+
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -84,52 +107,6 @@ public class ReviewResponseItemInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE = "language";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE)
-  private String language;
-
-  public ReviewResponseItemInfo language(String language) {
-    this.language = language;
-    return this;
-  }
-
-  /**
-   * language of content
-   * @return language
-   */
-  @javax.annotation.Nullable
-  public String getLanguage() {
-    return language;
-  }
-
-  public void setLanguage(String language) {
-    this.language = language;
-  }
-
-
-  public static final String SERIALIZED_NAME_RESPONSE_ID = "response_id";
-  @SerializedName(SERIALIZED_NAME_RESPONSE_ID)
-  private String responseId;
-
-  public ReviewResponseItemInfo responseId(String responseId) {
-    this.responseId = responseId;
-    return this;
-  }
-
-  /**
-   * response id
-   * @return responseId
-   */
-  @javax.annotation.Nullable
-  public String getResponseId() {
-    return responseId;
-  }
-
-  public void setResponseId(String responseId) {
-    this.responseId = responseId;
-  }
-
-
   public static final String SERIALIZED_NAME_TIMESTAMP = "timestamp";
   @SerializedName(SERIALIZED_NAME_TIMESTAMP)
   private String timestamp;
@@ -150,6 +127,29 @@ public class ReviewResponseItemInfo  {
 
   public void setTimestamp(String timestamp) {
     this.timestamp = timestamp;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE = "language";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE)
+  private String language;
+
+  public ReviewResponseItemInfo language(String language) {
+    this.language = language;
+    return this;
+  }
+
+  /**
+   * the time of publication
+   * @return language
+   */
+  @javax.annotation.Nullable
+  public String getLanguage() {
+    return language;
+  }
+
+  public void setLanguage(String language) {
+    this.language = language;
   }
 
 
@@ -196,11 +196,11 @@ public class ReviewResponseItemInfo  {
     ReviewResponseItemInfo reviewResponseItemInfo = (ReviewResponseItemInfo) o;
     return
 
+        Objects.equals(this.responseId, reviewResponseItemInfo.responseId) &&
         Objects.equals(this.title, reviewResponseItemInfo.title) &&
         Objects.equals(this.text, reviewResponseItemInfo.text) &&
-        Objects.equals(this.language, reviewResponseItemInfo.language) &&
-        Objects.equals(this.responseId, reviewResponseItemInfo.responseId) &&
-        Objects.equals(this.timestamp, reviewResponseItemInfo.timestamp);  
+        Objects.equals(this.timestamp, reviewResponseItemInfo.timestamp) &&
+        Objects.equals(this.language, reviewResponseItemInfo.language);  
     
   }
 
@@ -210,7 +210,7 @@ public class ReviewResponseItemInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(title, text, language, responseId, timestamp);
+  return Objects.hash(responseId, title, text, timestamp, language);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -225,11 +225,11 @@ public class ReviewResponseItemInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class ReviewResponseItemInfo {\n");
 
+    sb.append("    responseId: ").append(toIndentedString(responseId)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    language: ").append(toIndentedString(language)).append("\n");
-    sb.append("    responseId: ").append(toIndentedString(responseId)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
+    sb.append("    language: ").append(toIndentedString(language)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -253,15 +253,15 @@ public class ReviewResponseItemInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
+    openapiFields.add("response_id");
+    
     openapiFields.add("title");
     
     openapiFields.add("text");
     
-    openapiFields.add("language");
-    
-    openapiFields.add("response_id");
-    
     openapiFields.add("timestamp");
+    
+    openapiFields.add("language");
     
 
     // a set of required properties/fields (JSON key names)

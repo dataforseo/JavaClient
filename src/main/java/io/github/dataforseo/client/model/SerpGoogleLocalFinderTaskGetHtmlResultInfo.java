@@ -205,9 +205,9 @@ public class SerpGoogleLocalFinderTaskGetHtmlResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<SerpHtmlItemInfo> items;
+  private List<HtmlItemInfo> items;
 
-  public SerpGoogleLocalFinderTaskGetHtmlResultInfo items(List<SerpHtmlItemInfo> items) {
+  public SerpGoogleLocalFinderTaskGetHtmlResultInfo items(List<HtmlItemInfo> items) {
     this.items = items;
     return this;
   }
@@ -217,11 +217,11 @@ public class SerpGoogleLocalFinderTaskGetHtmlResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<SerpHtmlItemInfo> getItems() {
+  public List<HtmlItemInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<SerpHtmlItemInfo> items) {
+  public void setItems(List<HtmlItemInfo> items) {
     this.items = items;
   }
 

@@ -40,9 +40,9 @@ public class SerpApiPeopleAlsoAskAiOverviewExpandedElementItem  extends BaseSerp
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<AiOverviewElement> items;
+  private List<BaseSerpApiPeopleAlsoAskAiOverviewElementItem> items;
 
-  public SerpApiPeopleAlsoAskAiOverviewExpandedElementItem items(List<AiOverviewElement> items) {
+  public SerpApiPeopleAlsoAskAiOverviewExpandedElementItem items(List<BaseSerpApiPeopleAlsoAskAiOverviewElementItem> items) {
     this.items = items;
     return this;
   }
@@ -52,35 +52,35 @@ public class SerpApiPeopleAlsoAskAiOverviewExpandedElementItem  extends BaseSerp
    * @return items
    */
   @javax.annotation.Nullable
-  public List<AiOverviewElement> getItems() {
+  public List<BaseSerpApiPeopleAlsoAskAiOverviewElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<AiOverviewElement> items) {
+  public void setItems(List<BaseSerpApiPeopleAlsoAskAiOverviewElementItem> items) {
     this.items = items;
   }
 
 
   public static final String SERIALIZED_NAME_REFERENCES = "references";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
-  private List<AiAiOverviewReferenceInfo> references;
+  private List<AiModeAiOverviewReferenceInfo> references;
 
-  public SerpApiPeopleAlsoAskAiOverviewExpandedElementItem references(List<AiAiOverviewReferenceInfo> references) {
+  public SerpApiPeopleAlsoAskAiOverviewExpandedElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
     return this;
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * additional references relevant to the item
+* includes references to webpages that may have been used to generate the ai_overview
    * @return references
    */
   @javax.annotation.Nullable
-  public List<AiAiOverviewReferenceInfo> getReferences() {
+  public List<AiModeAiOverviewReferenceInfo> getReferences() {
     return references;
   }
 
-  public void setReferences(List<AiAiOverviewReferenceInfo> references) {
+  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
   }
 

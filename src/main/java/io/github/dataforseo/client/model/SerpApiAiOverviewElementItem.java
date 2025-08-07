@@ -95,7 +95,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * text of the component in the markdwon format
+   * content of the element in markdown format
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -118,9 +118,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * website links featured in the element
    * @return links
    */
   @javax.annotation.Nullable
@@ -135,48 +133,48 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
 
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
-  private List<AiModeImagesElement> images;
+  private List<AiModeImagesElementInfo> images;
 
-  public SerpApiAiOverviewElementItem images(List<AiModeImagesElement> images) {
+  public SerpApiAiOverviewElementItem images(List<AiModeImagesElementInfo> images) {
     this.images = images;
     return this;
   }
 
   /**
-   * images of the element
+   * images of the component
 * if there are none, equals null
    * @return images
    */
   @javax.annotation.Nullable
-  public List<AiModeImagesElement> getImages() {
+  public List<AiModeImagesElementInfo> getImages() {
     return images;
   }
 
-  public void setImages(List<AiModeImagesElement> images) {
+  public void setImages(List<AiModeImagesElementInfo> images) {
     this.images = images;
   }
 
 
   public static final String SERIALIZED_NAME_REFERENCES = "references";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
-  private List<AiAiOverviewReferenceInfo> references;
+  private List<AiModeAiOverviewReferenceInfo> references;
 
-  public SerpApiAiOverviewElementItem references(List<AiAiOverviewReferenceInfo> references) {
+  public SerpApiAiOverviewElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
     return this;
   }
 
   /**
-   * additional references relevant to the item
-* includes references to webpages that may have been used to generate the product_considerations_ai_overview_expanded_element
+   * references relevant to the element
+* includes references to webpages that were used to generate the ai_overview_element
    * @return references
    */
   @javax.annotation.Nullable
-  public List<AiAiOverviewReferenceInfo> getReferences() {
+  public List<AiModeAiOverviewReferenceInfo> getReferences() {
     return references;
   }
 
-  public void setReferences(List<AiAiOverviewReferenceInfo> references) {
+  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
   }
 

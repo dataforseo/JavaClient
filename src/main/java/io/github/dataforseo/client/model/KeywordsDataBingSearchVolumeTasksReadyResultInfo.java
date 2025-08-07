@@ -85,26 +85,26 @@ public class KeywordsDataBingSearchVolumeTasksReadyResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_FUNCTION = "function";
-  @SerializedName(SERIALIZED_NAME_FUNCTION)
-  private String function;
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
 
-  public KeywordsDataBingSearchVolumeTasksReadyResultInfo function(String function) {
-    this.function = function;
+  public KeywordsDataBingSearchVolumeTasksReadyResultInfo seType(String seType) {
+    this.seType = seType;
     return this;
   }
 
   /**
-   * type of the task
-   * @return function
+   * 
+   * @return seType
    */
   @javax.annotation.Nullable
-  public String getFunction() {
-    return function;
+  public String getSeType() {
+    return seType;
   }
 
-  public void setFunction(String function) {
-    this.function = function;
+  public void setSeType(String seType) {
+    this.seType = seType;
   }
 
 
@@ -177,6 +177,29 @@ public class KeywordsDataBingSearchVolumeTasksReadyResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_FUNCTION = "function";
+  @SerializedName(SERIALIZED_NAME_FUNCTION)
+  private String function;
+
+  public KeywordsDataBingSearchVolumeTasksReadyResultInfo function(String function) {
+    this.function = function;
+    return this;
+  }
+
+  /**
+   * 
+   * @return function
+   */
+  @javax.annotation.Nullable
+  public String getFunction() {
+    return function;
+  }
+
+  public void setFunction(String function) {
+    this.function = function;
+  }
+
+
 
   public KeywordsDataBingSearchVolumeTasksReadyResultInfo() {
   }
@@ -222,10 +245,11 @@ public class KeywordsDataBingSearchVolumeTasksReadyResultInfo  {
 
         Objects.equals(this.id, keywordsDataBingSearchVolumeTasksReadyResultInfo.id) &&
         Objects.equals(this.se, keywordsDataBingSearchVolumeTasksReadyResultInfo.se) &&
-        Objects.equals(this.function, keywordsDataBingSearchVolumeTasksReadyResultInfo.function) &&
+        Objects.equals(this.seType, keywordsDataBingSearchVolumeTasksReadyResultInfo.seType) &&
         Objects.equals(this.datePosted, keywordsDataBingSearchVolumeTasksReadyResultInfo.datePosted) &&
         Objects.equals(this.tag, keywordsDataBingSearchVolumeTasksReadyResultInfo.tag) &&
-        Objects.equals(this.endpoint, keywordsDataBingSearchVolumeTasksReadyResultInfo.endpoint);  
+        Objects.equals(this.endpoint, keywordsDataBingSearchVolumeTasksReadyResultInfo.endpoint) &&
+        Objects.equals(this.function, keywordsDataBingSearchVolumeTasksReadyResultInfo.function);  
     
   }
 
@@ -235,7 +259,7 @@ public class KeywordsDataBingSearchVolumeTasksReadyResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(id, se, function, datePosted, tag, endpoint);
+  return Objects.hash(id, se, seType, datePosted, tag, endpoint, function);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -252,10 +276,11 @@ public class KeywordsDataBingSearchVolumeTasksReadyResultInfo  {
 
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    se: ").append(toIndentedString(se)).append("\n");
-    sb.append("    function: ").append(toIndentedString(function)).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    endpoint: ").append(toIndentedString(endpoint)).append("\n");
+    sb.append("    function: ").append(toIndentedString(function)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -283,13 +308,15 @@ public class KeywordsDataBingSearchVolumeTasksReadyResultInfo  {
     
     openapiFields.add("se");
     
-    openapiFields.add("function");
+    openapiFields.add("se_type");
     
     openapiFields.add("date_posted");
     
     openapiFields.add("tag");
     
     openapiFields.add("endpoint");
+    
+    openapiFields.add("function");
     
 
     // a set of required properties/fields (JSON key names)

@@ -65,8 +65,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageIdListRequestInfo model = new OnPageIdListRequestInfo()
-           .datetimeFrom("2025-04-17 06:09:01 +00:00")
-           .datetimeTo("2025-06-17 06:09:01 +00:00")
+           .datetimeFrom("2025-05-06 08:30:50 +00:00")
+           .datetimeTo("2025-07-06 08:30:50 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -211,7 +211,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageForceStopRequestInfo model = new OnPageForceStopRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000");
+           .id("08121600-1535-0216-0000-37b4c7a34453");
     OnPageForceStopResponseInfo response = apiInstance.forceStop(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -564,7 +564,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPagePagesRequestInfo model = new OnPagePagesRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("07281559-0695-0216-0000-c269be8b7592")
            .limit(10);
     OnPagePagesResponseInfo response = apiInstance.pages(List.of(model));
     System.out.println(result);
@@ -635,7 +635,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPagePagesByResourceRequestInfo model = new OnPagePagesByResourceRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("02241700-1535-0216-0000-034137259bc1")
            .url("https://www.etsy.com/about/jobs.workco2018.js?");
     OnPagePagesByResourceResponseInfo response = apiInstance.pagesByResource(List.of(model));
     System.out.println(result);
@@ -706,7 +706,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageResourcesRequestInfo model = new OnPageResourcesRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("07281559-0695-0216-0000-c269be8b7592")
            .limit(10);
     OnPageResourcesResponseInfo response = apiInstance.resources(List.of(model));
     System.out.println(result);
@@ -777,7 +777,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageDuplicateTagsRequestInfo model = new OnPageDuplicateTagsRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("07281559-0695-0216-0000-c269be8b7592")
            .type("duplicate_description")
            .limit(10);
     OnPageDuplicateTagsResponseInfo response = apiInstance.duplicateTags(List.of(model));
@@ -849,7 +849,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageDuplicateContentRequestInfo model = new OnPageDuplicateContentRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("07281559-0695-0216-0000-c269be8b7592")
            .url("https://www.etsy.com/");
     OnPageDuplicateContentResponseInfo response = apiInstance.duplicateContent(List.of(model));
     System.out.println(result);
@@ -920,7 +920,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageLinksRequestInfo model = new OnPageLinksRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("07281559-0695-0216-0000-c269be8b7592")
            .pageFrom("/apis/google-trends-api")
            .limit(10);
     OnPageLinksResponseInfo response = apiInstance.links(List.of(model));
@@ -992,7 +992,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageRedirectChainsRequestInfo model = new OnPageRedirectChainsRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("03051327-4536-0216-1000-3b458a2cfcca")
            .url("https://test_rdr.dataforseo.com/a/");
     OnPageRedirectChainsResponseInfo response = apiInstance.redirectChains(List.of(model));
     System.out.println(result);
@@ -1063,7 +1063,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageNonIndexableRequestInfo model = new OnPageNonIndexableRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("07281559-0695-0216-0000-c269be8b7592")
            .limit(10);
     OnPageNonIndexableResponseInfo response = apiInstance.nonIndexable(List.of(model));
     System.out.println(result);
@@ -1134,7 +1134,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageWaterfallRequestInfo model = new OnPageWaterfallRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("08101204-0696-0216-0000-644a7b21a48a")
            .url("https://dataforseo.com/tag/broken-links");
     OnPageWaterfallResponseInfo response = apiInstance.waterfall(List.of(model));
     System.out.println(result);
@@ -1205,7 +1205,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageKeywordDensityRequestInfo model = new OnPageKeywordDensityRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("09101923-1535-0216-0000-2389a8854b70")
            .keywordLength(2)
            .url("https://dataforseo.com/");
     OnPageKeywordDensityResponseInfo response = apiInstance.keywordDensity(List.of(model));
@@ -1277,7 +1277,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageMicrodataRequestInfo model = new OnPageMicrodataRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("02241700-1535-0216-0000-034137259bc1")
            .url("https://dataforseo.com/apis");
     OnPageMicrodataResponseInfo response = apiInstance.microdata(List.of(model));
     System.out.println(result);
@@ -1348,7 +1348,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageRawHtmlRequestInfo model = new OnPageRawHtmlRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000")
+           .id("07281559-0695-0216-0000-c269be8b7592")
            .url("https://dataforseo.com/apis");
     OnPageRawHtmlResponseInfo response = apiInstance.rawHtml(List.of(model));
     System.out.println(result);
@@ -1490,7 +1490,7 @@ public class Example {
     OnPageApi apiInstance = new OnPageApi(defaultClient);
     OnPageContentParsingRequestInfo model = new OnPageContentParsingRequestInfo()
            .url("https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api")
-           .id("00000000-0000-0000-0000-000000000000");
+           .id("11161551-1535-0216-0000-500b3f307f92");
     OnPageContentParsingResponseInfo response = apiInstance.contentParsing(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

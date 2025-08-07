@@ -8,7 +8,7 @@
 **type** | **String** | type of element |[optional]|
 **price** | **PriceInfo** | price indicated in the element |[optional]|
 **title** | **String** | title of a given link element |[optional]|
-**description** | **String** | description |[optional]|
+**description** | **String** | description of the results element in SERP |[optional]|
 **hotelIdentifier** | **String** | unique hotel identifier<br>unique hotel identifier assigned by Google;<br>example: 'CgoIjaeSlI6CnNpVEAE' |[optional]|
 **domain** | **String** | website domain |[optional]|
 **url** | **String** | URL |[optional]|

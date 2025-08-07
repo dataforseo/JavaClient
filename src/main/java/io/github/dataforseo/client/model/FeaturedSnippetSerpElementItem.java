@@ -255,23 +255,24 @@ public class FeaturedSnippetSerpElementItem  extends BaseSerpApiElementItem  {
 
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
-  private List<AiModeImagesElement> images;
+  private List<AiModeImagesElementInfo> images;
 
-  public FeaturedSnippetSerpElementItem images(List<AiModeImagesElement> images) {
+  public FeaturedSnippetSerpElementItem images(List<AiModeImagesElementInfo> images) {
     this.images = images;
     return this;
   }
 
   /**
    * images of the element
+* if there are none, equals null
    * @return images
    */
   @javax.annotation.Nullable
-  public List<AiModeImagesElement> getImages() {
+  public List<AiModeImagesElementInfo> getImages() {
     return images;
   }
 
-  public void setImages(List<AiModeImagesElement> images) {
+  public void setImages(List<AiModeImagesElementInfo> images) {
     this.images = images;
   }
 
@@ -286,8 +287,8 @@ public class FeaturedSnippetSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * results table
-* if there are none, equals null
+   * table present in the element
+* the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable

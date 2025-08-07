@@ -177,7 +177,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AppendixApi apiInstance = new AppendixApi(defaultClient);
     AppendixWebhookResendRequestInfo model = new AppendixWebhookResendRequestInfo()
-           .id("00000000-0000-0000-0000-000000000000");
+           .id("08161139-0001-0066-1000-06491d097ed5");
     AppendixWebhookResendResponseInfo response = apiInstance.webhookResend(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

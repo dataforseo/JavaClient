@@ -7,7 +7,7 @@
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
 **title** | **String** | title of a given link element |[optional]|
-**description** | **String** | description |[optional]|
+**description** | **String** | description of the results element in SERP |[optional]|
 **url** | **String** | URL |[optional]|
 **domain** | **String** | website domain |[optional]|
 **date** | **String** | the date when the page source of the element was published |[optional]|

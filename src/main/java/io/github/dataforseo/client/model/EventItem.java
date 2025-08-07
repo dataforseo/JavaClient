@@ -299,9 +299,9 @@ public class EventItem  {
 
   public static final String SERIALIZED_NAME_INFORMATION_AND_TICKETS = "information_and_tickets";
   @SerializedName(SERIALIZED_NAME_INFORMATION_AND_TICKETS)
-  private List<InformationAndTicketsElement> informationAndTickets;
+  private List<AiModeLinkElementInfo> informationAndTickets;
 
-  public EventItem informationAndTickets(List<InformationAndTicketsElement> informationAndTickets) {
+  public EventItem informationAndTickets(List<AiModeLinkElementInfo> informationAndTickets) {
     this.informationAndTickets = informationAndTickets;
     return this;
   }
@@ -311,11 +311,11 @@ public class EventItem  {
    * @return informationAndTickets
    */
   @javax.annotation.Nullable
-  public List<InformationAndTicketsElement> getInformationAndTickets() {
+  public List<AiModeLinkElementInfo> getInformationAndTickets() {
     return informationAndTickets;
   }
 
-  public void setInformationAndTickets(List<InformationAndTicketsElement> informationAndTickets) {
+  public void setInformationAndTickets(List<AiModeLinkElementInfo> informationAndTickets) {
     this.informationAndTickets = informationAndTickets;
   }
 

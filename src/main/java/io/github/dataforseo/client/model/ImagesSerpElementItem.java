@@ -137,9 +137,9 @@ public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<AiModeImagesElement> items;
+  private List<AiModeImagesElementInfo> items;
 
-  public ImagesSerpElementItem items(List<AiModeImagesElement> items) {
+  public ImagesSerpElementItem items(List<AiModeImagesElementInfo> items) {
     this.items = items;
     return this;
   }
@@ -149,11 +149,11 @@ public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<AiModeImagesElement> getItems() {
+  public List<AiModeImagesElementInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<AiModeImagesElement> items) {
+  public void setItems(List<AiModeImagesElementInfo> items) {
     this.items = items;
   }
 

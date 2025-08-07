@@ -325,9 +325,9 @@ public class SerpGoogleAiModeTaskGetAdvancedResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<AiModeAiOverview> items;
+  private List<AiModeAiOverviewInfo> items;
 
-  public SerpGoogleAiModeTaskGetAdvancedResultInfo items(List<AiModeAiOverview> items) {
+  public SerpGoogleAiModeTaskGetAdvancedResultInfo items(List<AiModeAiOverviewInfo> items) {
     this.items = items;
     return this;
   }
@@ -337,11 +337,11 @@ public class SerpGoogleAiModeTaskGetAdvancedResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<AiModeAiOverview> getItems() {
+  public List<AiModeAiOverviewInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<AiModeAiOverview> items) {
+  public void setItems(List<AiModeAiOverviewInfo> items) {
     this.items = items;
   }
 

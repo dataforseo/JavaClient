@@ -133,9 +133,9 @@ public class OnPagePagesByResourceResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<BaseOnPageResourceItem> items;
+  private List<OnPageHtmlResourceItem> items;
 
-  public OnPagePagesByResourceResultInfo items(List<BaseOnPageResourceItem> items) {
+  public OnPagePagesByResourceResultInfo items(List<OnPageHtmlResourceItem> items) {
     this.items = items;
     return this;
   }
@@ -145,11 +145,11 @@ public class OnPagePagesByResourceResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<BaseOnPageResourceItem> getItems() {
+  public List<OnPageHtmlResourceItem> getItems() {
     return items;
   }
 
-  public void setItems(List<BaseOnPageResourceItem> items) {
+  public void setItems(List<OnPageHtmlResourceItem> items) {
     this.items = items;
   }
 

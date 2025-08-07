@@ -86,9 +86,9 @@ public class OnPageDuplicateTagsItem  {
 
   public static final String SERIALIZED_NAME_PAGES = "pages";
   @SerializedName(SERIALIZED_NAME_PAGES)
-  private List<BaseOnPageResourceItem> pages;
+  private List<OnPageHtmlResourceItem> pages;
 
-  public OnPageDuplicateTagsItem pages(List<BaseOnPageResourceItem> pages) {
+  public OnPageDuplicateTagsItem pages(List<OnPageHtmlResourceItem> pages) {
     this.pages = pages;
     return this;
   }
@@ -98,11 +98,11 @@ public class OnPageDuplicateTagsItem  {
    * @return pages
    */
   @javax.annotation.Nullable
-  public List<BaseOnPageResourceItem> getPages() {
+  public List<OnPageHtmlResourceItem> getPages() {
     return pages;
   }
 
-  public void setPages(List<BaseOnPageResourceItem> pages) {
+  public void setPages(List<OnPageHtmlResourceItem> pages) {
     this.pages = pages;
   }
 

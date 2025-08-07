@@ -46,8 +46,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
     ContentAnalysisIdListRequestInfo model = new ContentAnalysisIdListRequestInfo()
-           .datetimeFrom("2025-04-17 06:10:06 +00:00")
-           .datetimeTo("2025-06-17 06:10:06 +00:00")
+           .datetimeFrom("2025-05-06 08:32:04 +00:00")
+           .datetimeTo("2025-07-06 08:32:04 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -399,7 +399,6 @@ public class Example {
            .keyword("logitech")
        .keywordFields(
            Map.ofEntries(
-               Map.entry("snippet", "logitech") 
                ))
            .pageType(
                List.of(
@@ -705,7 +704,7 @@ public class Example {
     ContentAnalysisPhraseTrendsLiveRequestInfo model = new ContentAnalysisPhraseTrendsLiveRequestInfo()
            .keyword("logitech")
            .searchMode("as_is")
-           .dateFrom("2025-04-17")
+           .dateFrom("2025-05-06")
            .dateGroup("month");
     ContentAnalysisPhraseTrendsLiveResponseInfo response = apiInstance.phraseTrendsLive(List.of(model));
     System.out.println(result);
@@ -778,7 +777,7 @@ public class Example {
     ContentAnalysisCategoryTrendsLiveRequestInfo model = new ContentAnalysisCategoryTrendsLiveRequestInfo()
            .categoryCode("10994")
            .searchMode("as_is")
-           .dateFrom("2025-04-17")
+           .dateFrom("2025-05-06")
            .dateGroup("month");
     ContentAnalysisCategoryTrendsLiveResponseInfo response = apiInstance.categoryTrendsLive(List.of(model));
     System.out.println(result);

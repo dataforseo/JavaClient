@@ -13,5 +13,5 @@
 **httpUrl** | **String** | URL that caused an error<br>URL you used for making an API call |[optional]|
 **httpMethod** | **String** | HTTP method |[optional]|
 **httpCode** | **Integer** | HTTP status code |[optional]|
-**httpTime** | **Integer** | time taken by HTTP request |[optional]|
+**httpTime** | **Double** | time taken by HTTP request |[optional]|
 **httpResponse** | **String** | HTTP response<br>server response |[optional]|

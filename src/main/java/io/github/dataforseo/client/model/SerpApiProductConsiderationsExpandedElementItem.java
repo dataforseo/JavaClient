@@ -117,7 +117,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * text alongside the link title
+   * text alongside the title
    * @return snippet
    */
   @javax.annotation.Nullable

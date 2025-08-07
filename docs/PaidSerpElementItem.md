@@ -15,7 +15,7 @@
 **websiteName** | **String** | name of the website in SERP |[optional]|
 **isImage** | **Boolean** | indicates whether the element contains an image |[optional]|
 **isVideo** | **Boolean** | indicates whether the element contains a video |[optional]|
-**images** | **List<AiModeImagesElement>** | images of the element<br>if there are none, equals null |[optional]|
+**images** | **List<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|
 **highlighted** | **List<String>** | words highlighted in bold within the results description |[optional]|
 **extra** | **Map<String, String>** | additional information about the result |[optional]|
 **descriptionRows** | **List<String>** | extended description<br>if there is none, equals null |[optional]|

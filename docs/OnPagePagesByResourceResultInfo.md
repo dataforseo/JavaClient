@@ -9,4 +9,4 @@
 **crawlStatus** | **CrawlStatusInfo** | details of the crawling session |[optional]|
 **totalItemsCount** | **Long** | total number of relevant items in the database |[optional]|
 **itemsCount** | **Long** | number of items in the results array |[optional]|
-**items** | **List<BaseOnPageResourceItem>** | items array |[optional]|
+**items** | **List<OnPageHtmlResourceItem>** | items array |[optional]|

@@ -71,7 +71,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * additional information for the video
+   * snippet of the element
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -94,8 +94,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * original URL of the featured image
-* the URL leading to the image on the original resource
+   * recipes_element URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -118,7 +117,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * domain in SERP
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -165,7 +164,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * source of the element
+   * reference source name or title
    * @return source
    */
   @javax.annotation.Nullable
@@ -190,8 +189,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   /**
    * date and time
 * in the yyyy-mm-ddThh:mm:ss ISO 8601 format
-* indicates the date and time for which the value field provides previous close price
-* for example, 'date': '2020-10-28T15:45:00' and 'value': 11080.2857 mean the stock was traded at 11080.2857 on Oct. 27, 2020 at 15:45:00
+* indicates date and time for which the exchange rate in the value field is provided
    * @return date
    */
   @javax.annotation.Nullable
@@ -214,7 +212,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * date and time when the video was published or indexed
+   * date and time when the result was published
 * in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
 * example:
 * 2019-11-15 12:57:46 +00:00

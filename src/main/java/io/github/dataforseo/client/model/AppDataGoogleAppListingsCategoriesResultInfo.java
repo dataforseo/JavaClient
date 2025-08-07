@@ -38,165 +38,49 @@ import io.github.dataforseo.client.JSON;
 public class AppDataGoogleAppListingsCategoriesResultInfo  {
 
 
-  public static final String SERIALIZED_NAME_ID = "id";
-  @SerializedName(SERIALIZED_NAME_ID)
-  private String id;
+  public static final String SERIALIZED_NAME_CATEGORY = "category";
+  @SerializedName(SERIALIZED_NAME_CATEGORY)
+  private String category;
 
-  public AppDataGoogleAppListingsCategoriesResultInfo id(String id) {
-    this.id = id;
+  public AppDataGoogleAppListingsCategoriesResultInfo category(String category) {
+    this.category = category;
     return this;
   }
 
   /**
-   * task identifier
-* unique task identifier in our system in the UUID format
-   * @return id
+   * name of the supported app category
+   * @return category
    */
   @javax.annotation.Nullable
-  public String getId() {
-    return id;
+  public String getCategory() {
+    return category;
   }
 
-  public void setId(String id) {
-    this.id = id;
+  public void setCategory(String category) {
+    this.category = category;
   }
 
 
-  public static final String SERIALIZED_NAME_SE = "se";
-  @SerializedName(SERIALIZED_NAME_SE)
-  private String se;
+  public static final String SERIALIZED_NAME_COUNT = "count";
+  @SerializedName(SERIALIZED_NAME_COUNT)
+  private Long count;
 
-  public AppDataGoogleAppListingsCategoriesResultInfo se(String se) {
-    this.se = se;
+  public AppDataGoogleAppListingsCategoriesResultInfo count(Long count) {
+    this.count = count;
     return this;
   }
 
   /**
-   * 
-   * @return se
+   * number of app listings that make up the supported app category
+   * @return count
    */
   @javax.annotation.Nullable
-  public String getSe() {
-    return se;
+  public Long getCount() {
+    return count;
   }
 
-  public void setSe(String se) {
-    this.se = se;
-  }
-
-
-  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
-  @SerializedName(SERIALIZED_NAME_SE_TYPE)
-  private String seType;
-
-  public AppDataGoogleAppListingsCategoriesResultInfo seType(String seType) {
-    this.seType = seType;
-    return this;
-  }
-
-  /**
-   * 
-   * @return seType
-   */
-  @javax.annotation.Nullable
-  public String getSeType() {
-    return seType;
-  }
-
-  public void setSeType(String seType) {
-    this.seType = seType;
-  }
-
-
-  public static final String SERIALIZED_NAME_DATE_POSTED = "date_posted";
-  @SerializedName(SERIALIZED_NAME_DATE_POSTED)
-  private String datePosted;
-
-  public AppDataGoogleAppListingsCategoriesResultInfo datePosted(String datePosted) {
-    this.datePosted = datePosted;
-    return this;
-  }
-
-  /**
-   * 
-   * @return datePosted
-   */
-  @javax.annotation.Nullable
-  public String getDatePosted() {
-    return datePosted;
-  }
-
-  public void setDatePosted(String datePosted) {
-    this.datePosted = datePosted;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public AppDataGoogleAppListingsCategoriesResultInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * 
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_ENDPOINT_ADVANCED = "endpoint_advanced";
-  @SerializedName(SERIALIZED_NAME_ENDPOINT_ADVANCED)
-  private String endpointAdvanced;
-
-  public AppDataGoogleAppListingsCategoriesResultInfo endpointAdvanced(String endpointAdvanced) {
-    this.endpointAdvanced = endpointAdvanced;
-    return this;
-  }
-
-  /**
-   * 
-   * @return endpointAdvanced
-   */
-  @javax.annotation.Nullable
-  public String getEndpointAdvanced() {
-    return endpointAdvanced;
-  }
-
-  public void setEndpointAdvanced(String endpointAdvanced) {
-    this.endpointAdvanced = endpointAdvanced;
-  }
-
-
-  public static final String SERIALIZED_NAME_ENDPOINT_HTML = "endpoint_html";
-  @SerializedName(SERIALIZED_NAME_ENDPOINT_HTML)
-  private String endpointHtml;
-
-  public AppDataGoogleAppListingsCategoriesResultInfo endpointHtml(String endpointHtml) {
-    this.endpointHtml = endpointHtml;
-    return this;
-  }
-
-  /**
-   * 
-   * @return endpointHtml
-   */
-  @javax.annotation.Nullable
-  public String getEndpointHtml() {
-    return endpointHtml;
-  }
-
-  public void setEndpointHtml(String endpointHtml) {
-    this.endpointHtml = endpointHtml;
+  public void setCount(Long count) {
+    this.count = count;
   }
 
 
@@ -243,13 +127,8 @@ public class AppDataGoogleAppListingsCategoriesResultInfo  {
     AppDataGoogleAppListingsCategoriesResultInfo appDataGoogleAppListingsCategoriesResultInfo = (AppDataGoogleAppListingsCategoriesResultInfo) o;
     return
 
-        Objects.equals(this.id, appDataGoogleAppListingsCategoriesResultInfo.id) &&
-        Objects.equals(this.se, appDataGoogleAppListingsCategoriesResultInfo.se) &&
-        Objects.equals(this.seType, appDataGoogleAppListingsCategoriesResultInfo.seType) &&
-        Objects.equals(this.datePosted, appDataGoogleAppListingsCategoriesResultInfo.datePosted) &&
-        Objects.equals(this.tag, appDataGoogleAppListingsCategoriesResultInfo.tag) &&
-        Objects.equals(this.endpointAdvanced, appDataGoogleAppListingsCategoriesResultInfo.endpointAdvanced) &&
-        Objects.equals(this.endpointHtml, appDataGoogleAppListingsCategoriesResultInfo.endpointHtml);  
+        Objects.equals(this.category, appDataGoogleAppListingsCategoriesResultInfo.category) &&
+        Objects.equals(this.count, appDataGoogleAppListingsCategoriesResultInfo.count);  
     
   }
 
@@ -259,7 +138,7 @@ public class AppDataGoogleAppListingsCategoriesResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(id, se, seType, datePosted, tag, endpointAdvanced, endpointHtml);
+  return Objects.hash(category, count);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -274,13 +153,8 @@ public class AppDataGoogleAppListingsCategoriesResultInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class AppDataGoogleAppListingsCategoriesResultInfo {\n");
 
-    sb.append("    id: ").append(toIndentedString(id)).append("\n");
-    sb.append("    se: ").append(toIndentedString(se)).append("\n");
-    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
-    sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    endpointAdvanced: ").append(toIndentedString(endpointAdvanced)).append("\n");
-    sb.append("    endpointHtml: ").append(toIndentedString(endpointHtml)).append("\n");
+    sb.append("    category: ").append(toIndentedString(category)).append("\n");
+    sb.append("    count: ").append(toIndentedString(count)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -304,19 +178,9 @@ public class AppDataGoogleAppListingsCategoriesResultInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("id");
+    openapiFields.add("category");
     
-    openapiFields.add("se");
-    
-    openapiFields.add("se_type");
-    
-    openapiFields.add("date_posted");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("endpoint_advanced");
-    
-    openapiFields.add("endpoint_html");
+    openapiFields.add("count");
     
 
     // a set of required properties/fields (JSON key names)

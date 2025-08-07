@@ -135,9 +135,9 @@ public class TrendsGraphDataInfo  {
 
   public static final String SERIALIZED_NAME_VALUES = "values";
   @SerializedName(SERIALIZED_NAME_VALUES)
-  private List<Integer> values;
+  private List<Double> values;
 
-  public TrendsGraphDataInfo values(List<Integer> values) {
+  public TrendsGraphDataInfo values(List<Double> values) {
     this.values = values;
     return this;
   }
@@ -150,11 +150,11 @@ public class TrendsGraphDataInfo  {
    * @return values
    */
   @javax.annotation.Nullable
-  public List<Integer> getValues() {
+  public List<Double> getValues() {
     return values;
   }
 
-  public void setValues(List<Integer> values) {
+  public void setValues(List<Double> values) {
     this.values = values;
   }
 

@@ -85,26 +85,26 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_FUNCTION = "function";
-  @SerializedName(SERIALIZED_NAME_FUNCTION)
-  private String function;
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
 
-  public KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo function(String function) {
-    this.function = function;
+  public KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo seType(String seType) {
+    this.seType = seType;
     return this;
   }
 
   /**
-   * type of the task
-   * @return function
+   * 
+   * @return seType
    */
   @javax.annotation.Nullable
-  public String getFunction() {
-    return function;
+  public String getSeType() {
+    return seType;
   }
 
-  public void setFunction(String function) {
-    this.function = function;
+  public void setSeType(String seType) {
+    this.seType = seType;
   }
 
 
@@ -222,7 +222,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo  {
 
         Objects.equals(this.id, keywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo.id) &&
         Objects.equals(this.se, keywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo.se) &&
-        Objects.equals(this.function, keywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo.function) &&
+        Objects.equals(this.seType, keywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo.seType) &&
         Objects.equals(this.datePosted, keywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo.datePosted) &&
         Objects.equals(this.tag, keywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo.tag) &&
         Objects.equals(this.endpoint, keywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo.endpoint);  
@@ -235,7 +235,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(id, se, function, datePosted, tag, endpoint);
+  return Objects.hash(id, se, seType, datePosted, tag, endpoint);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -252,7 +252,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo  {
 
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    se: ").append(toIndentedString(se)).append("\n");
-    sb.append("    function: ").append(toIndentedString(function)).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
     sb.append("    datePosted: ").append(toIndentedString(datePosted)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    endpoint: ").append(toIndentedString(endpoint)).append("\n");
@@ -283,7 +283,7 @@ public class KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo  {
     
     openapiFields.add("se");
     
-    openapiFields.add("function");
+    openapiFields.add("se_type");
     
     openapiFields.add("date_posted");
     

@@ -109,9 +109,9 @@ public class FoundOnWebElement  {
 
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)
-  private AiModeImagesElement image;
+  private AiModeImagesElementInfo image;
 
-  public FoundOnWebElement image(AiModeImagesElement image) {
+  public FoundOnWebElement image(AiModeImagesElementInfo image) {
     this.image = image;
     return this;
   }
@@ -121,11 +121,11 @@ public class FoundOnWebElement  {
    * @return image
    */
   @javax.annotation.Nullable
-  public AiModeImagesElement getImage() {
+  public AiModeImagesElementInfo getImage() {
     return image;
   }
 
-  public void setImage(AiModeImagesElement image) {
+  public void setImage(AiModeImagesElementInfo image) {
     this.image = image;
   }
 

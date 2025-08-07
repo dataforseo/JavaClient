@@ -118,7 +118,7 @@ public class OnPageRawHtmlResultInfo  {
   }
 
   /**
-   * items array
+   * items object
    * @return items
    */
   @javax.annotation.Nullable

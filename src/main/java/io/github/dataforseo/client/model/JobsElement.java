@@ -94,7 +94,7 @@ public class JobsElement  {
   }
 
   /**
-   * description
+   * description of the results element in SERP
    * @return description
    */
   @javax.annotation.Nullable
@@ -104,6 +104,29 @@ public class JobsElement  {
 
   public void setDescription(String description) {
     this.description = description;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION = "location";
+  @SerializedName(SERIALIZED_NAME_LOCATION)
+  private String location;
+
+  public JobsElement location(String location) {
+    this.location = location;
+    return this;
+  }
+
+  /**
+   * location for which the job vacancy is posted
+   * @return location
+   */
+  @javax.annotation.Nullable
+  public String getLocation() {
+    return location;
+  }
+
+  public void setLocation(String location) {
+    this.location = location;
   }
 
 
@@ -294,6 +317,7 @@ public class JobsElement  {
         Objects.equals(this.type, jobsElement.type) &&
         Objects.equals(this.title, jobsElement.title) &&
         Objects.equals(this.description, jobsElement.description) &&
+        Objects.equals(this.location, jobsElement.location) &&
         Objects.equals(this.author, jobsElement.author) &&
         Objects.equals(this.jobPostedTime, jobsElement.jobPostedTime) &&
         Objects.equals(this.timestamp, jobsElement.timestamp) &&
@@ -309,7 +333,7 @@ public class JobsElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, title, description, author, jobPostedTime, timestamp, contractType, salary, url);
+  return Objects.hash(type, title, description, location, author, jobPostedTime, timestamp, contractType, salary, url);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -327,6 +351,7 @@ public class JobsElement  {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    location: ").append(toIndentedString(location)).append("\n");
     sb.append("    author: ").append(toIndentedString(author)).append("\n");
     sb.append("    jobPostedTime: ").append(toIndentedString(jobPostedTime)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
@@ -361,6 +386,8 @@ public class JobsElement  {
     openapiFields.add("title");
     
     openapiFields.add("description");
+    
+    openapiFields.add("location");
     
     openapiFields.add("author");
     

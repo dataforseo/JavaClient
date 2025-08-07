@@ -84,26 +84,30 @@ public class MerchantAmazonLocationsCountryResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
-  @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
-  private Integer locationCodeParent;
+  public static final String SERIALIZED_NAME_LOCATION_NAME_PARENT = "location_name_parent";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME_PARENT)
+  private String locationNameParent;
 
-  public MerchantAmazonLocationsCountryResultInfo locationCodeParent(Integer locationCodeParent) {
-    this.locationCodeParent = locationCodeParent;
+  public MerchantAmazonLocationsCountryResultInfo locationNameParent(String locationNameParent) {
+    this.locationNameParent = locationNameParent;
     return this;
   }
 
   /**
-   * 
-   * @return locationCodeParent
+   * the name of the superordinate location
+* example:
+* 'location_code': 9041134,
+* 'location_name': '90290,California,United States',
+* 'location_name_parent': 'California,United States'
+   * @return locationNameParent
    */
   @javax.annotation.Nullable
-  public Integer getLocationCodeParent() {
-    return locationCodeParent;
+  public String getLocationNameParent() {
+    return locationNameParent;
   }
 
-  public void setLocationCodeParent(Integer locationCodeParent) {
-    this.locationCodeParent = locationCodeParent;
+  public void setLocationNameParent(String locationNameParent) {
+    this.locationNameParent = locationNameParent;
   }
 
 
@@ -198,7 +202,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
 
         Objects.equals(this.locationCode, merchantAmazonLocationsCountryResultInfo.locationCode) &&
         Objects.equals(this.locationName, merchantAmazonLocationsCountryResultInfo.locationName) &&
-        Objects.equals(this.locationCodeParent, merchantAmazonLocationsCountryResultInfo.locationCodeParent) &&
+        Objects.equals(this.locationNameParent, merchantAmazonLocationsCountryResultInfo.locationNameParent) &&
         Objects.equals(this.countryIsoCode, merchantAmazonLocationsCountryResultInfo.countryIsoCode) &&
         Objects.equals(this.locationType, merchantAmazonLocationsCountryResultInfo.locationType);  
     
@@ -210,7 +214,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(locationCode, locationName, locationCodeParent, countryIsoCode, locationType);
+  return Objects.hash(locationCode, locationName, locationNameParent, countryIsoCode, locationType);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -227,7 +231,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
 
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    locationCodeParent: ").append(toIndentedString(locationCodeParent)).append("\n");
+    sb.append("    locationNameParent: ").append(toIndentedString(locationNameParent)).append("\n");
     sb.append("    countryIsoCode: ").append(toIndentedString(countryIsoCode)).append("\n");
     sb.append("    locationType: ").append(toIndentedString(locationType)).append("\n");
     sb.append("}");
@@ -257,7 +261,7 @@ public class MerchantAmazonLocationsCountryResultInfo  {
     
     openapiFields.add("location_name");
     
-    openapiFields.add("location_code_parent");
+    openapiFields.add("location_name_parent");
     
     openapiFields.add("country_iso_code");
     

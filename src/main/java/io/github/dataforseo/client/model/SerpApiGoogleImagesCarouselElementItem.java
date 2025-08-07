@@ -111,9 +111,9 @@ public class SerpApiGoogleImagesCarouselElementItem  extends BaseSerpApiGoogleIm
 
   public static final String SERIALIZED_NAME_RECTANGLE = "rectangle";
   @SerializedName(SERIALIZED_NAME_RECTANGLE)
-  private RectangleInfo rectangle;
+  private AiModeRectangleInfo rectangle;
 
-  public SerpApiGoogleImagesCarouselElementItem rectangle(RectangleInfo rectangle) {
+  public SerpApiGoogleImagesCarouselElementItem rectangle(AiModeRectangleInfo rectangle) {
     this.rectangle = rectangle;
     return this;
   }
@@ -125,11 +125,11 @@ public class SerpApiGoogleImagesCarouselElementItem  extends BaseSerpApiGoogleIm
    * @return rectangle
    */
   @javax.annotation.Nullable
-  public RectangleInfo getRectangle() {
+  public AiModeRectangleInfo getRectangle() {
     return rectangle;
   }
 
-  public void setRectangle(RectangleInfo rectangle) {
+  public void setRectangle(AiModeRectangleInfo rectangle) {
     this.rectangle = rectangle;
   }
 

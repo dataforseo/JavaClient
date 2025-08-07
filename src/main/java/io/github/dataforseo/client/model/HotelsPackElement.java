@@ -117,7 +117,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * description
+   * description of the results element in SERP
    * @return description
    */
   @javax.annotation.Nullable

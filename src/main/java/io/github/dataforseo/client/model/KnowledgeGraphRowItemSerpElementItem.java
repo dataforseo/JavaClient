@@ -171,7 +171,7 @@ public class KnowledgeGraphRowItemSerpElementItem  extends BaseSerpApiElementIte
   }
 
   /**
-   * link of the element
+   * website links featured in the element
    * @return links
    */
   @javax.annotation.Nullable

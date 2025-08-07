@@ -84,26 +84,32 @@ public class AppDataGoogleLocationsCountryResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_CODE_PARENT = "location_code_parent";
-  @SerializedName(SERIALIZED_NAME_LOCATION_CODE_PARENT)
-  private Integer locationCodeParent;
+  public static final String SERIALIZED_NAME_LOCATION_NAME_PARENT = "location_name_parent";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME_PARENT)
+  private String locationNameParent;
 
-  public AppDataGoogleLocationsCountryResultInfo locationCodeParent(Integer locationCodeParent) {
-    this.locationCodeParent = locationCodeParent;
+  public AppDataGoogleLocationsCountryResultInfo locationNameParent(String locationNameParent) {
+    this.locationNameParent = locationNameParent;
     return this;
   }
 
   /**
-   * 
-   * @return locationCodeParent
+   * the name of the superordinate location
+* example:
+* 'location_code': 1006473,
+* 'location_name': 'Altrincham,England,United Kingdom',
+* 'location_name_parent': 'England,United Kingdom', where location_name_parent corresponds to:
+* 'location_code': 20339,
+* 'location_name': 'England,United Kingdom'
+   * @return locationNameParent
    */
   @javax.annotation.Nullable
-  public Integer getLocationCodeParent() {
-    return locationCodeParent;
+  public String getLocationNameParent() {
+    return locationNameParent;
   }
 
-  public void setLocationCodeParent(Integer locationCodeParent) {
-    this.locationCodeParent = locationCodeParent;
+  public void setLocationNameParent(String locationNameParent) {
+    this.locationNameParent = locationNameParent;
   }
 
 
@@ -198,7 +204,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
 
         Objects.equals(this.locationCode, appDataGoogleLocationsCountryResultInfo.locationCode) &&
         Objects.equals(this.locationName, appDataGoogleLocationsCountryResultInfo.locationName) &&
-        Objects.equals(this.locationCodeParent, appDataGoogleLocationsCountryResultInfo.locationCodeParent) &&
+        Objects.equals(this.locationNameParent, appDataGoogleLocationsCountryResultInfo.locationNameParent) &&
         Objects.equals(this.countryIsoCode, appDataGoogleLocationsCountryResultInfo.countryIsoCode) &&
         Objects.equals(this.locationType, appDataGoogleLocationsCountryResultInfo.locationType);  
     
@@ -210,7 +216,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(locationCode, locationName, locationCodeParent, countryIsoCode, locationType);
+  return Objects.hash(locationCode, locationName, locationNameParent, countryIsoCode, locationType);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -227,7 +233,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
 
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    locationCodeParent: ").append(toIndentedString(locationCodeParent)).append("\n");
+    sb.append("    locationNameParent: ").append(toIndentedString(locationNameParent)).append("\n");
     sb.append("    countryIsoCode: ").append(toIndentedString(countryIsoCode)).append("\n");
     sb.append("    locationType: ").append(toIndentedString(locationType)).append("\n");
     sb.append("}");
@@ -257,7 +263,7 @@ public class AppDataGoogleLocationsCountryResultInfo  {
     
     openapiFields.add("location_name");
     
-    openapiFields.add("location_code_parent");
+    openapiFields.add("location_name_parent");
     
     openapiFields.add("country_iso_code");
     

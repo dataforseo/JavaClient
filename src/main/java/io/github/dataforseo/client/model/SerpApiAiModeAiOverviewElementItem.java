@@ -109,9 +109,9 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
 
   public static final String SERIALIZED_NAME_LINKS = "links";
   @SerializedName(SERIALIZED_NAME_LINKS)
-  private List<InformationAndTicketsElement> links;
+  private List<AiModeLinkElementInfo> links;
 
-  public SerpApiAiModeAiOverviewElementItem links(List<InformationAndTicketsElement> links) {
+  public SerpApiAiModeAiOverviewElementItem links(List<AiModeLinkElementInfo> links) {
     this.links = links;
     return this;
   }
@@ -121,20 +121,20 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
    * @return links
    */
   @javax.annotation.Nullable
-  public List<InformationAndTicketsElement> getLinks() {
+  public List<AiModeLinkElementInfo> getLinks() {
     return links;
   }
 
-  public void setLinks(List<InformationAndTicketsElement> links) {
+  public void setLinks(List<AiModeLinkElementInfo> links) {
     this.links = links;
   }
 
 
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
-  private List<AiModeImagesElement> images;
+  private List<AiModeImagesElementInfo> images;
 
-  public SerpApiAiModeAiOverviewElementItem images(List<AiModeImagesElement> images) {
+  public SerpApiAiModeAiOverviewElementItem images(List<AiModeImagesElementInfo> images) {
     this.images = images;
     return this;
   }
@@ -145,20 +145,20 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
    * @return images
    */
   @javax.annotation.Nullable
-  public List<AiModeImagesElement> getImages() {
+  public List<AiModeImagesElementInfo> getImages() {
     return images;
   }
 
-  public void setImages(List<AiModeImagesElement> images) {
+  public void setImages(List<AiModeImagesElementInfo> images) {
     this.images = images;
   }
 
 
   public static final String SERIALIZED_NAME_REFERENCES = "references";
   @SerializedName(SERIALIZED_NAME_REFERENCES)
-  private List<AiAiOverviewReferenceInfo> references;
+  private List<AiModeAiOverviewReferenceInfo> references;
 
-  public SerpApiAiModeAiOverviewElementItem references(List<AiAiOverviewReferenceInfo> references) {
+  public SerpApiAiModeAiOverviewElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
     return this;
   }
@@ -169,11 +169,11 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
    * @return references
    */
   @javax.annotation.Nullable
-  public List<AiAiOverviewReferenceInfo> getReferences() {
+  public List<AiModeAiOverviewReferenceInfo> getReferences() {
     return references;
   }
 
-  public void setReferences(List<AiAiOverviewReferenceInfo> references) {
+  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
     this.references = references;
   }
 

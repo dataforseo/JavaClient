@@ -7,6 +7,6 @@
 |------------ | ------------- | ------------- | -------------|
 **locationCode** | **Integer** | location code |[optional]|
 **locationName** | **String** | full name of the location |[optional]|
-**locationCodeParent** | **Integer** |  |[optional]|
+**locationNameParent** | **String** | the name of the superordinate location<br>example:<br>'location_code': 1006473,<br>'location_name': 'Altrincham,England,United Kingdom',<br>'location_name_parent': 'England,United Kingdom', where location_name_parent corresponds to:<br>'location_code': 20339,<br>'location_name': 'England,United Kingdom' |[optional]|
 **countryIsoCode** | **String** | ISO country code of the location |[optional]|
 **locationType** | **String** | location type |[optional]|

@@ -71,7 +71,9 @@ public class GraphElement  {
   }
 
   /**
-   * the posting date
+   * date when the video was published or indexed
+* example:
+* Apr 26, 2024
    * @return date
    */
   @javax.annotation.Nullable

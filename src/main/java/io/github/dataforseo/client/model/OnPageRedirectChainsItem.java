@@ -64,9 +64,9 @@ public class OnPageRedirectChainsItem  {
 
   public static final String SERIALIZED_NAME_CHAIN = "chain";
   @SerializedName(SERIALIZED_NAME_CHAIN)
-  private List<BaseOnPageLinkItem> chain;
+  private List<OnPageRedirectLinkItem> chain;
 
-  public OnPageRedirectChainsItem chain(List<BaseOnPageLinkItem> chain) {
+  public OnPageRedirectChainsItem chain(List<OnPageRedirectLinkItem> chain) {
     this.chain = chain;
     return this;
   }
@@ -76,11 +76,11 @@ public class OnPageRedirectChainsItem  {
    * @return chain
    */
   @javax.annotation.Nullable
-  public List<BaseOnPageLinkItem> getChain() {
+  public List<OnPageRedirectLinkItem> getChain() {
     return chain;
   }
 
-  public void setChain(List<BaseOnPageLinkItem> chain) {
+  public void setChain(List<OnPageRedirectLinkItem> chain) {
     this.chain = chain;
   }
 

@@ -48,10 +48,7 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
   }
 
   /**
-   * identifier received in a POST array
-* this field will contain the hotel_identifier parameter specified when setting a task;
-* example:
-* CgoI-KWyzenM_MV3EAE
+   * 
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -61,6 +58,52 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
 
   public void setKeyword(String keyword) {
     this.keyword = keyword;
+  }
+
+
+  public static final String SERIALIZED_NAME_TYPE = "type";
+  @SerializedName(SERIALIZED_NAME_TYPE)
+  private String type;
+
+  public BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo type(String type) {
+    this.type = type;
+    return this;
+  }
+
+  /**
+   * type of element
+   * @return type
+   */
+  @javax.annotation.Nullable
+  public String getType() {
+    return type;
+  }
+
+  public void setType(String type) {
+    this.type = type;
+  }
+
+
+  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
+  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
+  private String seDomain;
+
+  public BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo seDomain(String seDomain) {
+    this.seDomain = seDomain;
+    return this;
+  }
+
+  /**
+   * 
+   * @return seDomain
+   */
+  @javax.annotation.Nullable
+  public String getSeDomain() {
+    return seDomain;
+  }
+
+  public void setSeDomain(String seDomain) {
+    this.seDomain = seDomain;
   }
 
 
@@ -161,9 +204,9 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<SerpHtmlItemInfo> items;
+  private List<HtmlItemInfo> items;
 
-  public BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo items(List<SerpHtmlItemInfo> items) {
+  public BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo items(List<HtmlItemInfo> items) {
     this.items = items;
     return this;
   }
@@ -173,58 +216,12 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<SerpHtmlItemInfo> getItems() {
+  public List<HtmlItemInfo> getItems() {
     return items;
   }
 
-  public void setItems(List<SerpHtmlItemInfo> items) {
+  public void setItems(List<HtmlItemInfo> items) {
     this.items = items;
-  }
-
-
-  public static final String SERIALIZED_NAME_TYPE = "type";
-  @SerializedName(SERIALIZED_NAME_TYPE)
-  private String type;
-
-  public BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo type(String type) {
-    this.type = type;
-    return this;
-  }
-
-  /**
-   * 
-   * @return type
-   */
-  @javax.annotation.Nullable
-  public String getType() {
-    return type;
-  }
-
-  public void setType(String type) {
-    this.type = type;
-  }
-
-
-  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
-  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
-  private String seDomain;
-
-  public BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo seDomain(String seDomain) {
-    this.seDomain = seDomain;
-    return this;
-  }
-
-  /**
-   * 
-   * @return seDomain
-   */
-  @javax.annotation.Nullable
-  public String getSeDomain() {
-    return seDomain;
-  }
-
-  public void setSeDomain(String seDomain) {
-    this.seDomain = seDomain;
   }
 
 
@@ -272,13 +269,13 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
     return
 
         Objects.equals(this.keyword, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.keyword) &&
+        Objects.equals(this.type, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.type) &&
+        Objects.equals(this.seDomain, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.seDomain) &&
         Objects.equals(this.locationCode, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.locationCode) &&
         Objects.equals(this.languageCode, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.languageCode) &&
         Objects.equals(this.datetime, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.datetime) &&
         Objects.equals(this.itemsCount, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.itemsCount) &&
-        Objects.equals(this.items, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.items) &&
-        Objects.equals(this.type, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.type) &&
-        Objects.equals(this.seDomain, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.seDomain);  
+        Objects.equals(this.items, businessDataGoogleHotelInfoTaskGetHtmlResultInfo.items);  
     
   }
 
@@ -288,7 +285,7 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, datetime, itemsCount, items, type, seDomain);
+  return Objects.hash(keyword, type, seDomain, locationCode, languageCode, datetime, itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -304,13 +301,13 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
     sb.append("class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -336,6 +333,10 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
     
     openapiFields.add("keyword");
     
+    openapiFields.add("type");
+    
+    openapiFields.add("se_domain");
+    
     openapiFields.add("location_code");
     
     openapiFields.add("language_code");
@@ -345,10 +346,6 @@ public class BusinessDataGoogleHotelInfoTaskGetHtmlResultInfo  {
     openapiFields.add("items_count");
     
     openapiFields.add("items");
-    
-    openapiFields.add("type");
-    
-    openapiFields.add("se_domain");
     
 
     // a set of required properties/fields (JSON key names)

@@ -63,9 +63,9 @@ public class SerpApiAiModeAiOverviewTableElementItem  extends BaseSerpApiAiModeA
 
   public static final String SERIALIZED_NAME_TABLE = "table";
   @SerializedName(SERIALIZED_NAME_TABLE)
-  private AiModeTable table;
+  private AiModeTableInfo table;
 
-  public SerpApiAiModeAiOverviewTableElementItem table(AiModeTable table) {
+  public SerpApiAiModeAiOverviewTableElementItem table(AiModeTableInfo table) {
     this.table = table;
     return this;
   }
@@ -76,11 +76,11 @@ public class SerpApiAiModeAiOverviewTableElementItem  extends BaseSerpApiAiModeA
    * @return table
    */
   @javax.annotation.Nullable
-  public AiModeTable getTable() {
+  public AiModeTableInfo getTable() {
     return table;
   }
 
-  public void setTable(AiModeTable table) {
+  public void setTable(AiModeTableInfo table) {
     this.table = table;
   }
 

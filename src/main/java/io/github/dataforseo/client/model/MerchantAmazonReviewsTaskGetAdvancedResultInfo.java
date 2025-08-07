@@ -253,9 +253,9 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo  {
 
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)
-  private AiModeImagesElement image;
+  private AiModeImagesElementInfo image;
 
-  public MerchantAmazonReviewsTaskGetAdvancedResultInfo image(AiModeImagesElement image) {
+  public MerchantAmazonReviewsTaskGetAdvancedResultInfo image(AiModeImagesElementInfo image) {
     this.image = image;
     return this;
   }
@@ -265,11 +265,11 @@ public class MerchantAmazonReviewsTaskGetAdvancedResultInfo  {
    * @return image
    */
   @javax.annotation.Nullable
-  public AiModeImagesElement getImage() {
+  public AiModeImagesElementInfo getImage() {
     return image;
   }
 
-  public void setImage(AiModeImagesElement image) {
+  public void setImage(AiModeImagesElementInfo image) {
     this.image = image;
   }
 

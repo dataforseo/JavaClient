@@ -94,8 +94,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsIdListRequestInfo model = new DataforseoLabsIdListRequestInfo()
-           .datetimeFrom("2025-04-17 06:07:06 +00:00")
-           .datetimeTo("2025-06-17 06:07:06 +00:00")
+           .datetimeFrom("2025-05-06 08:28:57 +00:00")
+           .datetimeTo("2025-07-06 08:28:57 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -1347,8 +1347,8 @@ public class Example {
                    "13418",
                    "11494"
                 ))
-           .firstDate("2025-04-17")
-           .secondDate("2025-06-17")
+           .firstDate("2025-05-06")
+           .secondDate("2025-07-06")
            .locationCode(2840)
            .languageCode("en")
            .limit(3);
@@ -2089,8 +2089,8 @@ public class Example {
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo model = new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo()
            .keyword("albert einstein")
-           .dateFrom("2025-04-17")
-           .dateTo("2025-06-17")
+           .dateFrom("2025-05-06")
+           .dateTo("2025-07-06")
            .locationCode(2840)
            .languageCode("en");
     DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo response = apiInstance.googleHistoricalSerpsLive(List.of(model));
@@ -2165,8 +2165,8 @@ public class Example {
            .target("dataforseo.com")
            .locationCode(2840)
            .languageCode("en")
-           .dateFrom("2025-04-17")
-           .dateTo("2025-06-17");
+           .dateFrom("2025-05-06")
+           .dateTo("2025-07-06");
     DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo response = apiInstance.googleHistoricalRankOverviewLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2238,8 +2238,6 @@ public class Example {
     DataforseoLabsGooglePageIntersectionLiveRequestInfo model = new DataforseoLabsGooglePageIntersectionLiveRequestInfo()
        .pages(
            Map.ofEntries(
-               Map.entry("1", "https://forbes.com") ,
-               Map.entry("2", "https://cnn.com/*") 
                ))
            .locationCode(2840)
            .languageName("English")
@@ -2404,8 +2402,8 @@ public class Example {
                 ))
            .locationCode(2840)
            .languageCode("en")
-           .dateFrom("2025-04-17")
-           .dateTo("2025-06-17")
+           .dateFrom("2025-05-06")
+           .dateTo("2025-07-06")
            .itemTypes(
                List.of(
                    "organic",
@@ -3005,9 +3003,6 @@ public class Example {
     DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo model = new DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo()
        .asins(
            Map.ofEntries(
-               Map.entry("1", "B09172433Z") ,
-               Map.entry("2", "B07GBZ4Q68") ,
-               Map.entry("3", "B07GCKQD77") 
                ))
            .locationCode(2840)
            .languageName("English");
@@ -3466,8 +3461,6 @@ public class Example {
     DataforseoLabsBingPageIntersectionLiveRequestInfo model = new DataforseoLabsBingPageIntersectionLiveRequestInfo()
        .pages(
            Map.ofEntries(
-               Map.entry("1", "https://dataforseo.com") ,
-               Map.entry("2", "https://ahrefs.com/*") 
                ))
            .locationCode(2840)
            .languageName("English")
@@ -4138,8 +4131,6 @@ public class Example {
     DataforseoLabsGoogleAppIntersectionLiveRequestInfo model = new DataforseoLabsGoogleAppIntersectionLiveRequestInfo()
        .appIds(
            Map.ofEntries(
-               Map.entry("1", "686449807") ,
-               Map.entry("2", "382617920") 
                ))
            .locationCode(2840)
            .languageName("English")
@@ -4437,8 +4428,6 @@ public class Example {
     DataforseoLabsAppleAppIntersectionLiveRequestInfo model = new DataforseoLabsAppleAppIntersectionLiveRequestInfo()
        .appIds(
            Map.ofEntries(
-               Map.entry("1", "686449807") ,
-               Map.entry("2", "382617920") 
                ))
            .locationCode(2840)
            .languageName("English")

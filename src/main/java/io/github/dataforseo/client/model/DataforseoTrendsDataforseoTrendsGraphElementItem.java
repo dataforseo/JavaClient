@@ -40,9 +40,9 @@ public class DataforseoTrendsDataforseoTrendsGraphElementItem  extends BaseKeywo
 
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
-  private List<TrendsGraphDataInfo> data;
+  private List<DataforseoTrendsGraphDataTrendsGraphDataInfo> data;
 
-  public DataforseoTrendsDataforseoTrendsGraphElementItem data(List<TrendsGraphDataInfo> data) {
+  public DataforseoTrendsDataforseoTrendsGraphElementItem data(List<DataforseoTrendsGraphDataTrendsGraphDataInfo> data) {
     this.data = data;
     return this;
   }
@@ -52,11 +52,11 @@ public class DataforseoTrendsDataforseoTrendsGraphElementItem  extends BaseKeywo
    * @return data
    */
   @javax.annotation.Nullable
-  public List<TrendsGraphDataInfo> getData() {
+  public List<DataforseoTrendsGraphDataTrendsGraphDataInfo> getData() {
     return data;
   }
 
-  public void setData(List<TrendsGraphDataInfo> data) {
+  public void setData(List<DataforseoTrendsGraphDataTrendsGraphDataInfo> data) {
     this.data = data;
   }
 

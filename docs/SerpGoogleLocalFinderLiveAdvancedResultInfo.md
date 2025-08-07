@@ -17,4 +17,4 @@
 **itemTypes** | **List<String>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>local_pack |[optional]|
 **seResultsCount** | **Long** | total number of results in SERP |[optional]|
 **itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<LocalPack>** | items of the element |[optional]|
+**items** | **List<LocalPackSerpElementItem>** | items of the element |[optional]|

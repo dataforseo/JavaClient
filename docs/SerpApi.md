@@ -218,8 +218,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpIdListRequestInfo model = new SerpIdListRequestInfo()
-           .datetimeFrom("2025-04-17 06:05:20 +00:00")
-           .datetimeTo("2025-06-17 06:05:20 +00:00")
+           .datetimeFrom("2025-05-06 08:27:31 +00:00")
+           .datetimeTo("2025-07-06 08:27:31 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -364,7 +364,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpScreenshotRequestInfo model = new SerpScreenshotRequestInfo()
-           .taskId("00000000-0000-0000-0000-000000000000")
+           .taskId("06211235-0696-0139-1000-36727fbd3c90")
            .browserScreenScaleFactor(0.5d);
     SerpScreenshotResponseInfo response = apiInstance.screenshot(List.of(model));
     System.out.println(result);
@@ -435,7 +435,7 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpAiSummaryRequestInfo model = new SerpAiSummaryRequestInfo()
-           .taskId("00000000-0000-0000-0000-000000000000")
+           .taskId("07031739-1535-0139-0000-9d1e639a5b7d")
            .prompt("explain what DataForSEO is")
            .fetchContent(true)
            .includeLinks(true);

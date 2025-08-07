@@ -10,4 +10,4 @@
 **title** | **String** | reference page title |[optional]|
 **result** | **String** | solution to the equation<br>solution to the mathematical equation specified in the keyword field when setting a task |[optional]|
 **items** | **List<MathSolverElement>** | contains arrays of specific images |[optional]|
-**links** | **List<LinkElement>** | link of the element |[optional]|
+**links** | **List<LinkElement>** | website links featured in the element |[optional]|

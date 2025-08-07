@@ -437,9 +437,9 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
-  private List<AiModeImagesElement> images;
+  private List<AiModeImagesElementInfo> images;
 
-  public OrganicSerpElementItem images(List<AiModeImagesElement> images) {
+  public OrganicSerpElementItem images(List<AiModeImagesElementInfo> images) {
     this.images = images;
     return this;
   }
@@ -450,11 +450,11 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
    * @return images
    */
   @javax.annotation.Nullable
-  public List<AiModeImagesElement> getImages() {
+  public List<AiModeImagesElementInfo> getImages() {
     return images;
   }
 
-  public void setImages(List<AiModeImagesElement> images) {
+  public void setImages(List<AiModeImagesElementInfo> images) {
     this.images = images;
   }
 

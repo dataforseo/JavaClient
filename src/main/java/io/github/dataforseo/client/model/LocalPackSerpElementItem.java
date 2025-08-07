@@ -122,7 +122,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * link description
    * @return description
    */
   @javax.annotation.Nullable
@@ -145,7 +145,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain in the URL
+   * domain name of the reference
    * @return domain
    */
   @javax.annotation.Nullable

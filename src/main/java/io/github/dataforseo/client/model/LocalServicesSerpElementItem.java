@@ -145,7 +145,7 @@ public class LocalServicesSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain in the URL
+   * domain name of the reference
    * @return domain
    */
   @javax.annotation.Nullable

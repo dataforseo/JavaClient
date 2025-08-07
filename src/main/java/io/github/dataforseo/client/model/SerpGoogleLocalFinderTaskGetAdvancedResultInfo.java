@@ -325,9 +325,9 @@ public class SerpGoogleLocalFinderTaskGetAdvancedResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<LocalPack> items;
+  private List<LocalPackSerpElementItem> items;
 
-  public SerpGoogleLocalFinderTaskGetAdvancedResultInfo items(List<LocalPack> items) {
+  public SerpGoogleLocalFinderTaskGetAdvancedResultInfo items(List<LocalPackSerpElementItem> items) {
     this.items = items;
     return this;
   }
@@ -337,11 +337,11 @@ public class SerpGoogleLocalFinderTaskGetAdvancedResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<LocalPack> getItems() {
+  public List<LocalPackSerpElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<LocalPack> items) {
+  public void setItems(List<LocalPackSerpElementItem> items) {
     this.items = items;
   }
 

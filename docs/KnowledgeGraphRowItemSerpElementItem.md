@@ -10,4 +10,4 @@
 **title** | **String** | reference page title |[optional]|
 **dataAttrid** | **String** | google defined data attribute ID<br>example:<br>action:listen_artist |[optional]|
 **text** | **String** | reference text<br>text snippet from the page that was used to generate the ai_overview_element |[optional]|
-**links** | **List<LinkElement>** | link of the element |[optional]|
+**links** | **List<LinkElement>** | website links featured in the element |[optional]|

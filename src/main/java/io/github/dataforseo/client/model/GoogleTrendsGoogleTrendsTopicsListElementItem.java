@@ -40,9 +40,9 @@ public class GoogleTrendsGoogleTrendsTopicsListElementItem  extends BaseKeywordD
 
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
-  private TrendsTopicListDataInfo data;
+  private ListDataInfo data;
 
-  public GoogleTrendsGoogleTrendsTopicsListElementItem data(TrendsTopicListDataInfo data) {
+  public GoogleTrendsGoogleTrendsTopicsListElementItem data(ListDataInfo data) {
     this.data = data;
     return this;
   }
@@ -52,11 +52,11 @@ public class GoogleTrendsGoogleTrendsTopicsListElementItem  extends BaseKeywordD
    * @return data
    */
   @javax.annotation.Nullable
-  public TrendsTopicListDataInfo getData() {
+  public ListDataInfo getData() {
     return data;
   }
 
-  public void setData(TrendsTopicListDataInfo data) {
+  public void setData(ListDataInfo data) {
     this.data = data;
   }
 
