@@ -72,6 +72,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveItem  {
 
   /**
    * current AI search volume rate of a keyword
+* learn more about this metric here
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable

@@ -84,29 +84,6 @@ public class ShortVideosElement  {
   }
 
 
-  public static final String SERIALIZED_NAME_DOMAIN = "domain";
-  @SerializedName(SERIALIZED_NAME_DOMAIN)
-  private String domain;
-
-  public ShortVideosElement domain(String domain) {
-    this.domain = domain;
-    return this;
-  }
-
-  /**
-   * website domain
-   * @return domain
-   */
-  @javax.annotation.Nullable
-  public String getDomain() {
-    return domain;
-  }
-
-  public void setDomain(String domain) {
-    this.domain = domain;
-  }
-
-
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
@@ -127,6 +104,29 @@ public class ShortVideosElement  {
 
   public void setUrl(String url) {
     this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_DOMAIN = "domain";
+  @SerializedName(SERIALIZED_NAME_DOMAIN)
+  private String domain;
+
+  public ShortVideosElement domain(String domain) {
+    this.domain = domain;
+    return this;
+  }
+
+  /**
+   * website domain
+   * @return domain
+   */
+  @javax.annotation.Nullable
+  public String getDomain() {
+    return domain;
+  }
+
+  public void setDomain(String domain) {
+    this.domain = domain;
   }
 
 
@@ -199,8 +199,8 @@ public class ShortVideosElement  {
 
         Objects.equals(this.type, shortVideosElement.type) &&
         Objects.equals(this.title, shortVideosElement.title) &&
-        Objects.equals(this.domain, shortVideosElement.domain) &&
         Objects.equals(this.url, shortVideosElement.url) &&
+        Objects.equals(this.domain, shortVideosElement.domain) &&
         Objects.equals(this.source, shortVideosElement.source);  
     
   }
@@ -211,7 +211,7 @@ public class ShortVideosElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, title, domain, url, source);
+  return Objects.hash(type, title, url, domain, source);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -228,8 +228,8 @@ public class ShortVideosElement  {
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
-    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -258,9 +258,9 @@ public class ShortVideosElement  {
     
     openapiFields.add("title");
     
-    openapiFields.add("domain");
-    
     openapiFields.add("url");
+    
+    openapiFields.add("domain");
     
     openapiFields.add("source");
     

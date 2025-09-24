@@ -110,6 +110,29 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
+
+  public BaseSerpApiGoogleSearchByImagesElementItem page(Integer page) {
+    this.page = page;
+    return this;
+  }
+
+  /**
+   * 
+   * @return page
+   */
+  @javax.annotation.Nullable
+  public Integer getPage() {
+    return page;
+  }
+
+  public void setPage(Integer page) {
+    this.page = page;
+  }
+
+
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
   private String position;
@@ -252,6 +275,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
         Objects.equals(this.type, baseSerpApiGoogleSearchByImagesElementItem.type) &&
         Objects.equals(this.rankGroup, baseSerpApiGoogleSearchByImagesElementItem.rankGroup) &&
         Objects.equals(this.rankAbsolute, baseSerpApiGoogleSearchByImagesElementItem.rankAbsolute) &&
+        Objects.equals(this.page, baseSerpApiGoogleSearchByImagesElementItem.page) &&
         Objects.equals(this.position, baseSerpApiGoogleSearchByImagesElementItem.position) &&
         Objects.equals(this.xpath, baseSerpApiGoogleSearchByImagesElementItem.xpath) &&
         Objects.equals(this.title, baseSerpApiGoogleSearchByImagesElementItem.title) &&
@@ -266,7 +290,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, title, url, rectangle);
+  return Objects.hash(type, rankGroup, rankAbsolute, page, position, xpath, title, url, rectangle);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -284,6 +308,7 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    rankGroup: ").append(toIndentedString(rankGroup)).append("\n");
     sb.append("    rankAbsolute: ").append(toIndentedString(rankAbsolute)).append("\n");
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
@@ -317,6 +342,8 @@ public class BaseSerpApiGoogleSearchByImagesElementItem  {
     openapiFields.add("rank_group");
     
     openapiFields.add("rank_absolute");
+    
+    openapiFields.add("page");
     
     openapiFields.add("position");
     

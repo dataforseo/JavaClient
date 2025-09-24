@@ -38,6 +38,29 @@ import io.github.dataforseo.client.JSON;
 public class SerpApiGoogleImagesCarouselElementItem  extends BaseSerpApiGoogleImagesElementItem  {
 
 
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
+
+  public SerpApiGoogleImagesCarouselElementItem page(Integer page) {
+    this.page = page;
+    return this;
+  }
+
+  /**
+   * 
+   * @return page
+   */
+  @javax.annotation.Nullable
+  public Integer getPage() {
+    return page;
+  }
+
+  public void setPage(Integer page) {
+    this.page = page;
+  }
+
+
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
   private String position;
@@ -177,6 +200,7 @@ public class SerpApiGoogleImagesCarouselElementItem  extends BaseSerpApiGoogleIm
     SerpApiGoogleImagesCarouselElementItem serpApiGoogleImagesCarouselElementItem = (SerpApiGoogleImagesCarouselElementItem) o;
     return
 
+        Objects.equals(this.page, serpApiGoogleImagesCarouselElementItem.page) &&
         Objects.equals(this.position, serpApiGoogleImagesCarouselElementItem.position) &&
         Objects.equals(this.title, serpApiGoogleImagesCarouselElementItem.title) &&
         Objects.equals(this.items, serpApiGoogleImagesCarouselElementItem.items) &&
@@ -191,7 +215,7 @@ public class SerpApiGoogleImagesCarouselElementItem  extends BaseSerpApiGoogleIm
 
   @Override
   public int hashCode() {
-  return Objects.hash(position, title, items, rectangle);
+  return Objects.hash(page, position, title, items, rectangle);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -206,6 +230,7 @@ public class SerpApiGoogleImagesCarouselElementItem  extends BaseSerpApiGoogleIm
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpApiGoogleImagesCarouselElementItem {\n");
 
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
@@ -236,6 +261,8 @@ public class SerpApiGoogleImagesCarouselElementItem  extends BaseSerpApiGoogleIm
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
     openapiFields.add("xpath");
+    
+    openapiFields.add("page");
     
     openapiFields.add("position");
     

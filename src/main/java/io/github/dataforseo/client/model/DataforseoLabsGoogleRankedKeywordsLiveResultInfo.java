@@ -71,7 +71,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * target domain in a POST array
+   * target domain or webpage in a POST array
    * @return target
    */
   @javax.annotation.Nullable
@@ -188,7 +188,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * ranking data relevant to the specified domain
+   * ranking data relevant to the specified domain or webpage 
 * ranking data is provided by the rank_group parameters that show the result’s rank considering only equivalent SERP elements
    * @return metrics
    */
@@ -212,7 +212,7 @@ public class DataforseoLabsGoogleRankedKeywordsLiveResultInfo  {
   }
 
   /**
-   * ranking data relevant to the specified domain
+   * ranking data relevant to the specified domain or webpage
 * ranking data is provided by the rank_absolute parameters that indicate the result’s position among all SERP elements
    * @return metricsAbsolute
    */

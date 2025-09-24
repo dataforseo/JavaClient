@@ -62,6 +62,30 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
 
+  public static final String SERIALIZED_NAME_DISPLAYED_PAYMENT_BREAKDOWN = "displayed_payment_breakdown";
+  @SerializedName(SERIALIZED_NAME_DISPLAYED_PAYMENT_BREAKDOWN)
+  private String displayedPaymentBreakdown;
+
+  public GoogleShoppingSellersShopsListElementItem displayedPaymentBreakdown(String displayedPaymentBreakdown) {
+    this.displayedPaymentBreakdown = displayedPaymentBreakdown;
+    return this;
+  }
+
+  /**
+   * installment details as displayed in the results
+* shows how the product price can be broken down into monthly payments, if applicable
+   * @return displayedPaymentBreakdown
+   */
+  @javax.annotation.Nullable
+  public String getDisplayedPaymentBreakdown() {
+    return displayedPaymentBreakdown;
+  }
+
+  public void setDisplayedPaymentBreakdown(String displayedPaymentBreakdown) {
+    this.displayedPaymentBreakdown = displayedPaymentBreakdown;
+  }
+
+
   public static final String SERIALIZED_NAME_PRODUCT_CONDITION = "product_condition";
   @SerializedName(SERIALIZED_NAME_PRODUCT_CONDITION)
   private String productCondition;
@@ -155,6 +179,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
     return
 
         Objects.equals(this.priceMultiplier, googleShoppingSellersShopsListElementItem.priceMultiplier) &&
+        Objects.equals(this.displayedPaymentBreakdown, googleShoppingSellersShopsListElementItem.displayedPaymentBreakdown) &&
         Objects.equals(this.productCondition, googleShoppingSellersShopsListElementItem.productCondition) &&
         Objects.equals(this.productAnnotation, googleShoppingSellersShopsListElementItem.productAnnotation) && 
         super.equals(o);
@@ -167,7 +192,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
 
   @Override
   public int hashCode() {
-  return Objects.hash(priceMultiplier, productCondition, productAnnotation);
+  return Objects.hash(priceMultiplier, displayedPaymentBreakdown, productCondition, productAnnotation);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -183,6 +208,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
     sb.append("class GoogleShoppingSellersShopsListElementItem {\n");
 
     sb.append("    priceMultiplier: ").append(toIndentedString(priceMultiplier)).append("\n");
+    sb.append("    displayedPaymentBreakdown: ").append(toIndentedString(displayedPaymentBreakdown)).append("\n");
     sb.append("    productCondition: ").append(toIndentedString(productCondition)).append("\n");
     sb.append("    productAnnotation: ").append(toIndentedString(productAnnotation)).append("\n");
     sb.append("}");
@@ -226,6 +252,8 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
     openapiFields.add("shop_ad_aclk");
     
     openapiFields.add("price_multiplier");
+    
+    openapiFields.add("displayed_payment_breakdown");
     
     openapiFields.add("product_condition");
     

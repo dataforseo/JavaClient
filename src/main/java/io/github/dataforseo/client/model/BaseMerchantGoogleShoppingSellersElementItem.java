@@ -119,8 +119,8 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
   /**
-   * alignment of the element in SERP
-* can take the following values:
+   * the alignment of the element in Google Shopping SERP
+* possible values:
 * left, right
    * @return position
    */

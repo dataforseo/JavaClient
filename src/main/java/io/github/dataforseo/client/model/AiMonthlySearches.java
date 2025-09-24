@@ -95,6 +95,7 @@ public class AiMonthlySearches  {
 
   /**
    * AI search volume rate in a certain month of a year
+* learn more about this metric here
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable

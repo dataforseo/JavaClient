@@ -5,6 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+**page** | **Integer** |  |[optional]|
 **position** | **String** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
 **title** | **String** | title of the element |[optional]|
 **items** | **List<SerpApiCarouselElement>** | items of the element |[optional]|

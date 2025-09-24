@@ -64,9 +64,9 @@ public class ContentRatingInfo  {
 
   public static final String SERIALIZED_NAME_RATING_VALUE = "rating_value";
   @SerializedName(SERIALIZED_NAME_RATING_VALUE)
-  private Double ratingValue;
+  private String ratingValue;
 
-  public ContentRatingInfo ratingValue(Double ratingValue) {
+  public ContentRatingInfo ratingValue(String ratingValue) {
     this.ratingValue = ratingValue;
     return this;
   }
@@ -76,20 +76,20 @@ public class ContentRatingInfo  {
    * @return ratingValue
    */
   @javax.annotation.Nullable
-  public Double getRatingValue() {
+  public String getRatingValue() {
     return ratingValue;
   }
 
-  public void setRatingValue(Double ratingValue) {
+  public void setRatingValue(String ratingValue) {
     this.ratingValue = ratingValue;
   }
 
 
   public static final String SERIALIZED_NAME_RATING_COUNT = "rating_count";
   @SerializedName(SERIALIZED_NAME_RATING_COUNT)
-  private Double ratingCount;
+  private String ratingCount;
 
-  public ContentRatingInfo ratingCount(Double ratingCount) {
+  public ContentRatingInfo ratingCount(String ratingCount) {
     this.ratingCount = ratingCount;
     return this;
   }
@@ -99,20 +99,20 @@ public class ContentRatingInfo  {
    * @return ratingCount
    */
   @javax.annotation.Nullable
-  public Double getRatingCount() {
+  public String getRatingCount() {
     return ratingCount;
   }
 
-  public void setRatingCount(Double ratingCount) {
+  public void setRatingCount(String ratingCount) {
     this.ratingCount = ratingCount;
   }
 
 
   public static final String SERIALIZED_NAME_MAX_RATING_VALUE = "max_rating_value";
   @SerializedName(SERIALIZED_NAME_MAX_RATING_VALUE)
-  private Double maxRatingValue;
+  private String maxRatingValue;
 
-  public ContentRatingInfo maxRatingValue(Double maxRatingValue) {
+  public ContentRatingInfo maxRatingValue(String maxRatingValue) {
     this.maxRatingValue = maxRatingValue;
     return this;
   }
@@ -122,20 +122,20 @@ public class ContentRatingInfo  {
    * @return maxRatingValue
    */
   @javax.annotation.Nullable
-  public Double getMaxRatingValue() {
+  public String getMaxRatingValue() {
     return maxRatingValue;
   }
 
-  public void setMaxRatingValue(Double maxRatingValue) {
+  public void setMaxRatingValue(String maxRatingValue) {
     this.maxRatingValue = maxRatingValue;
   }
 
 
   public static final String SERIALIZED_NAME_RELATIVE_RATING = "relative_rating";
   @SerializedName(SERIALIZED_NAME_RELATIVE_RATING)
-  private Double relativeRating;
+  private String relativeRating;
 
-  public ContentRatingInfo relativeRating(Double relativeRating) {
+  public ContentRatingInfo relativeRating(String relativeRating) {
     this.relativeRating = relativeRating;
     return this;
   }
@@ -145,11 +145,11 @@ public class ContentRatingInfo  {
    * @return relativeRating
    */
   @javax.annotation.Nullable
-  public Double getRelativeRating() {
+  public String getRelativeRating() {
     return relativeRating;
   }
 
-  public void setRelativeRating(Double relativeRating) {
+  public void setRelativeRating(String relativeRating) {
     this.relativeRating = relativeRating;
   }
 

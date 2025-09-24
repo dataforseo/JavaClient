@@ -415,6 +415,30 @@ public class TripadvisorReviewSearch  {
   }
 
 
+  public static final String SERIALIZED_NAME_REVIEW_HIGHLIGHTS = "review_highlights";
+  @SerializedName(SERIALIZED_NAME_REVIEW_HIGHLIGHTS)
+  private Object reviewHighlights;
+
+  public TripadvisorReviewSearch reviewHighlights(Object reviewHighlights) {
+    this.reviewHighlights = reviewHighlights;
+    return this;
+  }
+
+  /**
+   * review highlights
+* contains highlighted review criteria and assessments
+   * @return reviewHighlights
+   */
+  @javax.annotation.Nullable
+  public Object getReviewHighlights() {
+    return reviewHighlights;
+  }
+
+  public void setReviewHighlights(Object reviewHighlights) {
+    this.reviewHighlights = reviewHighlights;
+  }
+
+
 
   public TripadvisorReviewSearch() {
   }
@@ -473,7 +497,8 @@ public class TripadvisorReviewSearch  {
         Objects.equals(this.originalLanguage, tripadvisorReviewSearch.originalLanguage) &&
         Objects.equals(this.reviewImages, tripadvisorReviewSearch.reviewImages) &&
         Objects.equals(this.userProfile, tripadvisorReviewSearch.userProfile) &&
-        Objects.equals(this.responses, tripadvisorReviewSearch.responses);  
+        Objects.equals(this.responses, tripadvisorReviewSearch.responses) &&
+        Objects.equals(this.reviewHighlights, tripadvisorReviewSearch.reviewHighlights);  
     
   }
 
@@ -483,7 +508,7 @@ public class TripadvisorReviewSearch  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, url, rating, dateOfVisit, timestamp, reviewId, title, reviewText, language, originalLanguage, reviewImages, userProfile, responses);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, url, rating, dateOfVisit, timestamp, reviewId, title, reviewText, language, originalLanguage, reviewImages, userProfile, responses, reviewHighlights);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -514,6 +539,7 @@ public class TripadvisorReviewSearch  {
     sb.append("    reviewImages: ").append(toIndentedString(reviewImages)).append("\n");
     sb.append("    userProfile: ").append(toIndentedString(userProfile)).append("\n");
     sb.append("    responses: ").append(toIndentedString(responses)).append("\n");
+    sb.append("    reviewHighlights: ").append(toIndentedString(reviewHighlights)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -568,6 +594,8 @@ public class TripadvisorReviewSearch  {
     openapiFields.add("user_profile");
     
     openapiFields.add("responses");
+    
+    openapiFields.add("review_highlights");
     
 
     // a set of required properties/fields (JSON key names)

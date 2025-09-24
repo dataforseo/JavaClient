@@ -19,6 +19,7 @@
 **productAsins** | **List<String>** | ASINs of all found product modifications |[optional]|
 **priceFrom** | **Double** | the lower limit of the product price range<br>example:<br>49.98 |[optional]|
 **priceTo** | **Double** | the upper limit of the product price range<br>example:<br>384.99 |[optional]|
+**percentageDiscount** | **String** | value of the percentage discount |[optional]|
 **currency** | **String** | currency in the ISO format<br>example:<br>USD |[optional]|
 **isAmazonChoice** | **Boolean** | “Amazon’s choice” label<br>if the value is true, the product is marked with the “Amazon’s choice” label |[optional]|
 **rating** | **RatingElement** | product rating info |[optional]|

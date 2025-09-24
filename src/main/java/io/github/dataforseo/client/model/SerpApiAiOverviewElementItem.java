@@ -48,7 +48,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * title of a given link element
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -71,8 +71,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * reference text
-* text snippet from the page that was used to generate the ai_overview_element
+   * additional text of the element in SERP
    * @return text
    */
   @javax.annotation.Nullable
@@ -118,7 +117,9 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * website links featured in the element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable
@@ -141,8 +142,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * images of the component
-* if there are none, equals null
+   * images of the element
    * @return images
    */
   @javax.annotation.Nullable

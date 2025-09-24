@@ -301,9 +301,9 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
 * number of results in SERP
 * default value: 40
 * max value: 700
-* Note: your account will be billed per each SERP containing up to 40 results;
-* thus, setting a depth above 40 may result in additional charges if the search engine returns more than 40 results;
-* if the specified depth is higher than the number of results in the response, the difference will be refunded automatically to your account balance
+* Your account will be billed per each SERP containing up to 40 results;
+* Setting depth above 40 may result in additional charges if the search engine returns more than 40 results;
+* The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable

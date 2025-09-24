@@ -48,7 +48,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * domain in SERP
+   * subdomain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * sitelink URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * name of the website in SERP
+   * relevant website name in SERP
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -340,9 +340,9 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public DataLabsOrganicSerpElementItem rating(RatingElement rating) {
+  public DataLabsOrganicSerpElementItem rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -353,11 +353,11 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 
@@ -492,8 +492,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   /**
    * estimated traffic volume
-* estimated organic monthly traffic a featured URL delivers to the domain
-* calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
+* estimated paid monthly traffic to the target
+* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -517,9 +517,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid
-* represents the estimated monthly cost of running ads for the returned keyword
-* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
+   * estimated cost of monthly search traffic
+* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -543,7 +542,10 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * 
+   * estimated traffic volume based on clickstream data
+* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
+* to retrieve results for this field, the parameter include_clickstream_data must be set to true
+* learn more about how the metric is calculated in this help center article
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
@@ -567,8 +569,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   /**
    * changes in rankings
-* ranking changes of the SERP element compared to the preceding month;
-* Note: the changes are calculated even if the preceding month is not included in a POST request
+* contains information about the ranking changes of the SERP element since the previous_updated_time
    * @return rankChanges
    */
   @javax.annotation.Nullable
@@ -591,7 +592,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * backlinks information for the ranked website
+   * backlinks information for the target website
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

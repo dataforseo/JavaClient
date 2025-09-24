@@ -138,7 +138,7 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
 * minimum value: 0
 * maximum value: 2
 * default value: 0.94
-* Note: not supported in o4-mini, o3-mini, o1-pro, o1 models
+* Note: not supported in reasoning models
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -167,7 +167,7 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
 * minimum value: 0
 * maximum value: 1
 * default value: 0.92
-* Note: not supported in o4-mini, o3-mini, o1-pro, o1 models
+* Note: not supported in reasoning models
    * @return topP
    */
   @javax.annotation.Nullable

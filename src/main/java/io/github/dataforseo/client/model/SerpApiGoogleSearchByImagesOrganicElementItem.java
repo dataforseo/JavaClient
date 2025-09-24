@@ -748,6 +748,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
     openapiFields.add("type");
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
+    openapiFields.add("page");
     openapiFields.add("position");
     openapiFields.add("xpath");
     openapiFields.add("title");

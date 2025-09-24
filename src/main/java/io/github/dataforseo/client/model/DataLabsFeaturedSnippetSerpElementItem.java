@@ -234,8 +234,8 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
 
   /**
    * estimated traffic volume
-* estimated paid monthly traffic to the domain
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the domain ranks for
+* estimated paid monthly traffic to the target
+* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -260,7 +260,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
 
   /**
    * estimated cost of monthly search traffic
-* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the domain ranks for
+* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */

@@ -327,9 +327,9 @@ public class SerpBingLocalPackTaskGetRegularResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<BaseSerpApiElementItem> items;
+  private List<BaseBingSerpApiElementItem> items;
 
-  public SerpBingLocalPackTaskGetRegularResultInfo items(List<BaseSerpApiElementItem> items) {
+  public SerpBingLocalPackTaskGetRegularResultInfo items(List<BaseBingSerpApiElementItem> items) {
     this.items = items;
     return this;
   }
@@ -339,11 +339,11 @@ public class SerpBingLocalPackTaskGetRegularResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<BaseSerpApiElementItem> getItems() {
+  public List<BaseBingSerpApiElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<BaseSerpApiElementItem> items) {
+  public void setItems(List<BaseBingSerpApiElementItem> items) {
     this.items = items;
   }
 

@@ -48,7 +48,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * reference page title
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -71,7 +71,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * snippet of the element
+   * additional information for the video
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * recipes_element URL
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * domain where a link points
+   * domain name of the reference
    * @return domain
    */
   @javax.annotation.Nullable
@@ -141,7 +141,6 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
 
   /**
    * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -187,9 +186,9 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * date and time
-* in the yyyy-mm-ddThh:mm:ss ISO 8601 format
-* indicates date and time for which the exchange rate in the value field is provided
+   * date when the video was published or indexed
+* example:
+* Apr 26, 2024
    * @return date
    */
   @javax.annotation.Nullable

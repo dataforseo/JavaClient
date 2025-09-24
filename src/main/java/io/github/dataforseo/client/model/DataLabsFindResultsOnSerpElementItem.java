@@ -40,9 +40,9 @@ public class DataLabsFindResultsOnSerpElementItem  extends BaseDataforseoLabsApi
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<ShortVideosElement> items;
+  private List<FindResultsOnElement> items;
 
-  public DataLabsFindResultsOnSerpElementItem items(List<ShortVideosElement> items) {
+  public DataLabsFindResultsOnSerpElementItem items(List<FindResultsOnElement> items) {
     this.items = items;
     return this;
   }
@@ -52,11 +52,11 @@ public class DataLabsFindResultsOnSerpElementItem  extends BaseDataforseoLabsApi
    * @return items
    */
   @javax.annotation.Nullable
-  public List<ShortVideosElement> getItems() {
+  public List<FindResultsOnElement> getItems() {
     return items;
   }
 
-  public void setItems(List<ShortVideosElement> items) {
+  public void setItems(List<FindResultsOnElement> items) {
     this.items = items;
   }
 

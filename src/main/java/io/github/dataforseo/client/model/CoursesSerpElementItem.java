@@ -260,6 +260,7 @@ public class CoursesSerpElementItem  extends BaseSerpApiElementItem  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
+    openapiFields.add("page");
     openapiFields.add("position");
     openapiFields.add("xpath");
     openapiFields.add("rectangle");

@@ -136,6 +136,8 @@ public class MerchantAmazonSellerItemSerpElementItem  extends BaseMerchantAmazon
     openapiFields.add("seller_url");
     openapiFields.add("ships_from");
     openapiFields.add("price");
+    openapiFields.add("percentage_discount");
+    openapiFields.add("applicable_vouchers");
     openapiFields.add("rating");
     openapiFields.add("condition");
     openapiFields.add("condition_description");

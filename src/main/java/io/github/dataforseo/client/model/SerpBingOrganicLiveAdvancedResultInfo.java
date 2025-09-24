@@ -302,6 +302,30 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_PAGES_COUNT = "pages_count";
+  @SerializedName(SERIALIZED_NAME_PAGES_COUNT)
+  private Long pagesCount;
+
+  public SerpBingOrganicLiveAdvancedResultInfo pagesCount(Long pagesCount) {
+    this.pagesCount = pagesCount;
+    return this;
+  }
+
+  /**
+   * total pages retrieved
+* total number of retrieved SERPs in the result
+   * @return pagesCount
+   */
+  @javax.annotation.Nullable
+  public Long getPagesCount() {
+    return pagesCount;
+  }
+
+  public void setPagesCount(Long pagesCount) {
+    this.pagesCount = pagesCount;
+  }
+
+
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
   private Long itemsCount;
@@ -327,9 +351,9 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<BaseSerpApiElementItem> items;
+  private List<BaseBingSerpApiElementItem> items;
 
-  public SerpBingOrganicLiveAdvancedResultInfo items(List<BaseSerpApiElementItem> items) {
+  public SerpBingOrganicLiveAdvancedResultInfo items(List<BaseBingSerpApiElementItem> items) {
     this.items = items;
     return this;
   }
@@ -340,11 +364,11 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<BaseSerpApiElementItem> getItems() {
+  public List<BaseBingSerpApiElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<BaseSerpApiElementItem> items) {
+  public void setItems(List<BaseBingSerpApiElementItem> items) {
     this.items = items;
   }
 
@@ -403,6 +427,7 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
         Objects.equals(this.refinementChips, serpBingOrganicLiveAdvancedResultInfo.refinementChips) &&
         Objects.equals(this.itemTypes, serpBingOrganicLiveAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.seResultsCount, serpBingOrganicLiveAdvancedResultInfo.seResultsCount) &&
+        Objects.equals(this.pagesCount, serpBingOrganicLiveAdvancedResultInfo.pagesCount) &&
         Objects.equals(this.itemsCount, serpBingOrganicLiveAdvancedResultInfo.itemsCount) &&
         Objects.equals(this.items, serpBingOrganicLiveAdvancedResultInfo.items);  
     
@@ -414,7 +439,7 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, itemsCount, items);
+  return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, pagesCount, itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -440,6 +465,7 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
     sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
+    sb.append("    pagesCount: ").append(toIndentedString(pagesCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
@@ -486,6 +512,8 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
     openapiFields.add("item_types");
     
     openapiFields.add("se_results_count");
+    
+    openapiFields.add("pages_count");
     
     openapiFields.add("items_count");
     

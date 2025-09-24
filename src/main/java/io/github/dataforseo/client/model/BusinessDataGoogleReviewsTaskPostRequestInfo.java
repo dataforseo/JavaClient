@@ -310,6 +310,9 @@ public class BusinessDataGoogleReviewsTaskPostRequestInfo  {
 * we strongly recommend setting the parsing depth in the multiples of ten, because our systems processes ten reviews in a row
 * default value: 10
 * maximum value: 4490
+* Your account will be billed per each SERP containing up to 10 results;
+* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+* The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable

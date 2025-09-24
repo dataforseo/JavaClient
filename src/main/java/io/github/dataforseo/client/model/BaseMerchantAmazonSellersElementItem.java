@@ -250,6 +250,52 @@ public class BaseMerchantAmazonSellersElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_PERCENTAGE_DISCOUNT = "percentage_discount";
+  @SerializedName(SERIALIZED_NAME_PERCENTAGE_DISCOUNT)
+  private Double percentageDiscount;
+
+  public BaseMerchantAmazonSellersElementItem percentageDiscount(Double percentageDiscount) {
+    this.percentageDiscount = percentageDiscount;
+    return this;
+  }
+
+  /**
+   * value of the percentage discount
+   * @return percentageDiscount
+   */
+  @javax.annotation.Nullable
+  public Double getPercentageDiscount() {
+    return percentageDiscount;
+  }
+
+  public void setPercentageDiscount(Double percentageDiscount) {
+    this.percentageDiscount = percentageDiscount;
+  }
+
+
+  public static final String SERIALIZED_NAME_APPLICABLE_VOUCHERS = "applicable_vouchers";
+  @SerializedName(SERIALIZED_NAME_APPLICABLE_VOUCHERS)
+  private List<AmazonApplicableVouchersItem> applicableVouchers;
+
+  public BaseMerchantAmazonSellersElementItem applicableVouchers(List<AmazonApplicableVouchersItem> applicableVouchers) {
+    this.applicableVouchers = applicableVouchers;
+    return this;
+  }
+
+  /**
+   * array of objects containing information about applicable vouchers
+   * @return applicableVouchers
+   */
+  @javax.annotation.Nullable
+  public List<AmazonApplicableVouchersItem> getApplicableVouchers() {
+    return applicableVouchers;
+  }
+
+  public void setApplicableVouchers(List<AmazonApplicableVouchersItem> applicableVouchers) {
+    this.applicableVouchers = applicableVouchers;
+  }
+
+
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
   private RatingElement rating;
@@ -375,6 +421,8 @@ public class BaseMerchantAmazonSellersElementItem  {
         Objects.equals(this.sellerUrl, baseMerchantAmazonSellersElementItem.sellerUrl) &&
         Objects.equals(this.shipsFrom, baseMerchantAmazonSellersElementItem.shipsFrom) &&
         Objects.equals(this.price, baseMerchantAmazonSellersElementItem.price) &&
+        Objects.equals(this.percentageDiscount, baseMerchantAmazonSellersElementItem.percentageDiscount) &&
+        Objects.equals(this.applicableVouchers, baseMerchantAmazonSellersElementItem.applicableVouchers) &&
         Objects.equals(this.rating, baseMerchantAmazonSellersElementItem.rating) &&
         Objects.equals(this.condition, baseMerchantAmazonSellersElementItem.condition) &&
         Objects.equals(this.conditionDescription, baseMerchantAmazonSellersElementItem.conditionDescription) &&
@@ -388,7 +436,7 @@ public class BaseMerchantAmazonSellersElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, sellerName, sellerUrl, shipsFrom, price, rating, condition, conditionDescription, deliveryInfo);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, sellerName, sellerUrl, shipsFrom, price, percentageDiscount, applicableVouchers, rating, condition, conditionDescription, deliveryInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -412,6 +460,8 @@ public class BaseMerchantAmazonSellersElementItem  {
     sb.append("    sellerUrl: ").append(toIndentedString(sellerUrl)).append("\n");
     sb.append("    shipsFrom: ").append(toIndentedString(shipsFrom)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
+    sb.append("    percentageDiscount: ").append(toIndentedString(percentageDiscount)).append("\n");
+    sb.append("    applicableVouchers: ").append(toIndentedString(applicableVouchers)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
     sb.append("    conditionDescription: ").append(toIndentedString(conditionDescription)).append("\n");
@@ -456,6 +506,10 @@ public class BaseMerchantAmazonSellersElementItem  {
     openapiFields.add("ships_from");
     
     openapiFields.add("price");
+    
+    openapiFields.add("percentage_discount");
+    
+    openapiFields.add("applicable_vouchers");
     
     openapiFields.add("rating");
     

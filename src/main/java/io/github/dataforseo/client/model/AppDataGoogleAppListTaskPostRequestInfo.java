@@ -222,7 +222,10 @@ public class AppDataGoogleAppListTaskPostRequestInfo  {
 * number of apps to be returned in the API response;
 * we strongly recommend setting the parsing depth in the multiples of 100, because our system processes 100 results in a row;
 * default value: 100;
-* maximum value: 200
+* maximum value: 200;
+* Your account will be billed per each SERP containing up to 100 results;
+* Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;
+* The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable

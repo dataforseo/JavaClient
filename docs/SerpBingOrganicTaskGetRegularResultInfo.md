@@ -16,5 +16,6 @@
 **refinementChips** | **RefinementChipsInfo** | search refinement chips<br>equals null |[optional]|
 **itemTypes** | **List<String>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types: organic, paid |[optional]|
 **seResultsCount** | **Long** | total number of results in SERP |[optional]|
+**pagesCount** | **Long** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
 **itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<BaseSerpApiElementItem>** | items inside the element<br>array of 8 search queries related to the keyword |[optional]|
+**items** | **List<BaseBingSerpApiElementItem>** | items inside the element<br>array of 8 search queries related to the keyword |[optional]|

@@ -139,7 +139,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
 * minimum value: 0
 * maximum value: 2
 * default value: 0.94
-* Note: not supported in o4-mini, o3-mini, o1-pro, o1 models
+* Note: not supported in reasoning models
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -168,7 +168,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
 * minimum value: 0
 * maximum value: 1
 * default value: 0.92
-* Note: not supported in o4-mini, o3-mini, o1-pro, o1 models
+* Note: not supported in reasoning models
    * @return topP
    */
   @javax.annotation.Nullable
@@ -224,6 +224,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
 * when enabled, the AI model is forced to access and cite current web information;
 * default value: false;
 * Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response
+* Note #2: not supported in reasoning models
    * @return forceWebSearch
    */
   @javax.annotation.Nullable

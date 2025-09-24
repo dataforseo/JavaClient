@@ -61,6 +61,30 @@ public class RelatedResult  {
   }
 
 
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
+
+  public RelatedResult page(Integer page) {
+    this.page = page;
+    return this;
+  }
+
+  /**
+   * search results page number
+* indicates the number of the SERP page on which the element is located
+   * @return page
+   */
+  @javax.annotation.Nullable
+  public Integer getPage() {
+    return page;
+  }
+
+  public void setPage(Integer page) {
+    this.page = page;
+  }
+
+
   public static final String SERIALIZED_NAME_XPATH = "xpath";
   @SerializedName(SERIALIZED_NAME_XPATH)
   private String xpath;
@@ -574,6 +598,7 @@ public class RelatedResult  {
     return
 
         Objects.equals(this.type, relatedResult.type) &&
+        Objects.equals(this.page, relatedResult.page) &&
         Objects.equals(this.xpath, relatedResult.xpath) &&
         Objects.equals(this.domain, relatedResult.domain) &&
         Objects.equals(this.title, relatedResult.title) &&
@@ -603,7 +628,7 @@ public class RelatedResult  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, xpath, domain, title, url, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, aboutThisResult, timestamp);
+  return Objects.hash(type, page, xpath, domain, title, url, cacheUrl, relatedSearchUrl, breadcrumb, websiteName, isImage, isVideo, description, preSnippet, extendedSnippet, images, ampVersion, rating, price, highlighted, aboutThisResult, timestamp);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -619,6 +644,7 @@ public class RelatedResult  {
     sb.append("class RelatedResult {\n");
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
@@ -663,6 +689,8 @@ public class RelatedResult  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("type");
+    
+    openapiFields.add("page");
     
     openapiFields.add("xpath");
     

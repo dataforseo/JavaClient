@@ -9,19 +9,19 @@ DataForSEO API uses REST technology for interchanging data between your applicat
 
 Client contains 13 sections (aka APIs):
 
-- AI Optimization API ([source docs](./docs/AiOptimizationApi.md) | [api docs](https://docs.dataforseo.com/v3/ai_optimization/overview/?bash))
-- SERP ([source docs](./docs/SerpApi.md) | [api docs](https://docs.dataforseo.com/v3/serp/overview/?bash))
-- Keywords Data ([source docs](./docs/KeywordsDataApi.md) | [api docs](https://docs.dataforseo.com/v3/keywords_data/overview/?bash))
-- Domain Analytics ([source docs](./docs/DomainAnalyticsApi.md) | [api docs](https://docs.dataforseo.com/v3/domain_analytics/overview/?bash))
-- DataForSEO Labs ([source docs](./docs/DataforseoLabsApi.md) | [api docs](https://docs.dataforseo.com/v3/dataforseo_labs/overview/?bash))
-- Backlinks ([source docs](./docs/BacklinksApi.md) | [api docs](https://docs.dataforseo.com/v3/backlinks/overview/?bash))
-- OnPage ([source docs](./docs/OnPageApi.md) | [api docs](https://docs.dataforseo.com/v3/on_page/overview/?bash))
-- Content Analysis ([source docs](./docs/ContentAnalysisApi.md) | [api docs](https://docs.dataforseo.com/v3/content_analysis/overview/?bash))
-- Content Generation ([source docs](./docs/ContentGenerationApi.md) | [api docs](https://docs.dataforseo.com/v3/content_generation/overview/?bash))
-- Merchant ([source docs](./docs/MerchantApi.md) | [api docs](https://docs.dataforseo.com/v3/merchant/overview/?bash))
-- App Data ([source docs](./docs/AppDataApi.md) | [api docs](https://docs.dataforseo.com/v3/app_data/overview/?bash))
-- Business Data ([source docs](./docs/BusinessDataApi.md) | [api docs](https://docs.dataforseo.com/v3/business_data/overview/?bash))
-- Appendix ([source docs](./docs/AppendixApi.md) | [api docs](https://docs.dataforseo.com/v3/appendix/user_data/?bash))
+- AI Optimization API (source docs | api docs)
+- SERP ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/SerpApi.md) | [api docs](https://docs.dataforseo.com/v3/serp/overview/?bash))
+- Keywords Data ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/KeywordsDataApi.md) | [api docs](https://docs.dataforseo.com/v3/keywords_data/overview/?bash))
+- Domain Analytics ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/DomainAnalyticsApi.md) | [api docs](https://docs.dataforseo.com/v3/domain_analytics/overview/?bash))
+- DataForSEO Labs ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/DataforseoLabsApi.md) | [api docs](https://docs.dataforseo.com/v3/dataforseo_labs/overview/?bash))
+- Backlinks ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/BacklinksApi.md) | [api docs](https://docs.dataforseo.com/v3/backlinks/overview/?bash))
+- OnPage ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/OnPageApi.md) | [api docs](https://docs.dataforseo.com/v3/on_page/overview/?bash))
+- Content Analysis ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/ContentAnalysisApi.md) | [api docs](https://docs.dataforseo.com/v3/content_analysis/overview/?bash))
+- Content Generation ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/ContentGenerationApi.md) | [api docs](https://docs.dataforseo.com/v3/content_generation/overview/?bash))
+- Merchant ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/MerchantApi.md) | [api docs](https://docs.dataforseo.com/v3/merchant/overview/?bash))
+- App Data ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/AppDataApi.md) | [api docs](https://docs.dataforseo.com/v3/app_data/overview/?bash))
+- Business Data ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/BusinessDataApi.md) | [api docs](https://docs.dataforseo.com/v3/business_data/overview/?bash))
+- Appendix ([source docs](https://github.com/dataforseo/JavaClient/tree/master/docs/AppendixApi.md) | [api docs](https://docs.dataforseo.com/v3/appendix/user_data/?bash))
 
 API Contains 2 types of requests:
 1) Live (Simple HTTP request/response message)
@@ -31,14 +31,14 @@ For more details, please follow [here](https://docs.dataforseo.com/v3/?bash)
 
 ## YAML Spec
 
-Our API description is based on the Open API [syntax](https://spec.openapis.org/oas/v3.1.0) in YAML format. The YAML file attached to the [project root](./openapi_specification.yaml)
+Our API description is based on the Open API [syntax](https://spec.openapis.org/oas/v3.1.0) in YAML format. The YAML file attached to the [project root](https://github.com/dataforseo/OpenApiDocumentation)
 
 ## Code generation
 
 Code generated using the [openapi generator cli](https://openapi-generator.tech/docs/installation/)
 
 ## Documentation
-The documentation for code objects, formatted in Markdown (.md) is available [here](./docs/).
+The documentation for code objects, formatted in Markdown (.md) is available [here](https://github.com/dataforseo/JavaClient/tree/master/docs/).
 Official documentation for DataForSEO API is available [here](https://docs.dataforseo.com/v3/?bash).
 
 ## Package source

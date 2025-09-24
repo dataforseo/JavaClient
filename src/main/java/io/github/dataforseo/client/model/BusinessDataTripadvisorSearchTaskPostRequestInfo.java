@@ -166,6 +166,9 @@ public class BusinessDataTripadvisorSearchTaskPostRequestInfo  {
 * we strongly recommend setting the parsing depth in the multiples of thirty because our systems processes thirty search results in a row;
 * default value: 30;
 * maximum value: 210
+* Your account will be billed per each SERP containing up to 30 results;
+* Setting depth above 30 may result in additional charges if the search engine returns more than 30 results;
+* The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable

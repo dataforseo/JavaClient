@@ -71,7 +71,7 @@ public class SerpApiAiOverviewExpandedElementItem  extends BaseSerpApiAiOverview
   }
 
   /**
-   * text of the component
+   * additional text of the element in SERP
    * @return text
    */
   @javax.annotation.Nullable
@@ -117,8 +117,8 @@ public class SerpApiAiOverviewExpandedElementItem  extends BaseSerpApiAiOverview
   }
 
   /**
-   * additional references relevant to the item
-* includes references to webpages that may have been used to generate the ai_overview
+   * references relevant to the element
+* includes references to webpages that were used to generate the ai_overview_element
    * @return references
    */
   @javax.annotation.Nullable

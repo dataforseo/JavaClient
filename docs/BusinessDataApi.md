@@ -91,8 +91,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
     BusinessDataIdListRequestInfo model = new BusinessDataIdListRequestInfo()
-           .datetimeFrom("2025-05-06 08:32:32 +00:00")
-           .datetimeTo("2025-07-06 08:32:32 +00:00")
+           .datetimeFrom("2025-06-24 11:17:54 +00:00")
+           .datetimeTo("2025-08-24 11:17:54 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");

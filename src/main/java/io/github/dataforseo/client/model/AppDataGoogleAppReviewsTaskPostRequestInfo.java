@@ -222,7 +222,10 @@ public class AppDataGoogleAppReviewsTaskPostRequestInfo  {
 * number of reviews to be returned in the API response;
 * we strongly recommend setting the parsing depth in the multiples of 150, because our system processes 150 reviews in a row;
 * default value: 150;
-* maximum value: 100000
+* maximum value: 100000;
+* Your account will be billed per each SERP containing up to 150 results;
+* Setting depth above 150 may result in additional charges if the search engine returns more than 150 results;
+* The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable

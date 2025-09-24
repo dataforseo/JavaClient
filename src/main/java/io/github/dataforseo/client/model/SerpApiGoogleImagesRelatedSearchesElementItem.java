@@ -38,6 +38,29 @@ import io.github.dataforseo.client.JSON;
 public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiGoogleImagesElementItem  {
 
 
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
+
+  public SerpApiGoogleImagesRelatedSearchesElementItem page(Integer page) {
+    this.page = page;
+    return this;
+  }
+
+  /**
+   * 
+   * @return page
+   */
+  @javax.annotation.Nullable
+  public Integer getPage() {
+    return page;
+  }
+
+  public void setPage(Integer page) {
+    this.page = page;
+  }
+
+
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
   private String position;
@@ -154,6 +177,7 @@ public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiG
     SerpApiGoogleImagesRelatedSearchesElementItem serpApiGoogleImagesRelatedSearchesElementItem = (SerpApiGoogleImagesRelatedSearchesElementItem) o;
     return
 
+        Objects.equals(this.page, serpApiGoogleImagesRelatedSearchesElementItem.page) &&
         Objects.equals(this.position, serpApiGoogleImagesRelatedSearchesElementItem.position) &&
         Objects.equals(this.items, serpApiGoogleImagesRelatedSearchesElementItem.items) &&
         Objects.equals(this.rectangle, serpApiGoogleImagesRelatedSearchesElementItem.rectangle) && 
@@ -167,7 +191,7 @@ public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiG
 
   @Override
   public int hashCode() {
-  return Objects.hash(position, items, rectangle);
+  return Objects.hash(page, position, items, rectangle);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -182,6 +206,7 @@ public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiG
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpApiGoogleImagesRelatedSearchesElementItem {\n");
 
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
@@ -211,6 +236,8 @@ public class SerpApiGoogleImagesRelatedSearchesElementItem  extends BaseSerpApiG
     openapiFields.add("rank_group");
     openapiFields.add("rank_absolute");
     openapiFields.add("xpath");
+    
+    openapiFields.add("page");
     
     openapiFields.add("position");
     

@@ -196,7 +196,7 @@ public class RankedSerpElement  {
 
   /**
    * lost ranked elements
-* indicates how many ranked elements of this domain were previously presented in SERPs, but weren’t found during the last check
+* indicates how many ranked elements of this target were previously presented in SERPs, but weren’t found during the last check
    * @return isLost
    */
   @javax.annotation.Nullable

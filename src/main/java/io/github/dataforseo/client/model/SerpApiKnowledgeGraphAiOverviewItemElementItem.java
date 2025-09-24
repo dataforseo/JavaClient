@@ -65,9 +65,9 @@ public class SerpApiKnowledgeGraphAiOverviewItemElementItem  extends BaseSerpApi
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> items;
+  private List<BaseSerpApiAiOverviewElementItem> items;
 
-  public SerpApiKnowledgeGraphAiOverviewItemElementItem items(List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> items) {
+  public SerpApiKnowledgeGraphAiOverviewItemElementItem items(List<BaseSerpApiAiOverviewElementItem> items) {
     this.items = items;
     return this;
   }
@@ -78,11 +78,11 @@ public class SerpApiKnowledgeGraphAiOverviewItemElementItem  extends BaseSerpApi
    * @return items
    */
   @javax.annotation.Nullable
-  public List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> getItems() {
+  public List<BaseSerpApiAiOverviewElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> items) {
+  public void setItems(List<BaseSerpApiAiOverviewElementItem> items) {
     this.items = items;
   }
 
@@ -208,6 +208,7 @@ public class SerpApiKnowledgeGraphAiOverviewItemElementItem  extends BaseSerpApi
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
+    openapiFields.add("page");
     openapiFields.add("position");
     openapiFields.add("xpath");
     openapiFields.add("rectangle");

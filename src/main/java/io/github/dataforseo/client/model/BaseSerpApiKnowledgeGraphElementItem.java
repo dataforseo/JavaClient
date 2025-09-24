@@ -61,6 +61,30 @@ public class BaseSerpApiKnowledgeGraphElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
+
+  public BaseSerpApiKnowledgeGraphElementItem page(Integer page) {
+    this.page = page;
+    return this;
+  }
+
+  /**
+   * search results page number
+* indicates the number of the SERP page on which the element is located
+   * @return page
+   */
+  @javax.annotation.Nullable
+  public Integer getPage() {
+    return page;
+  }
+
+  public void setPage(Integer page) {
+    this.page = page;
+  }
+
+
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
   private String position;
@@ -155,6 +179,7 @@ public class BaseSerpApiKnowledgeGraphElementItem  {
     return
 
         Objects.equals(this.type, baseSerpApiKnowledgeGraphElementItem.type) &&
+        Objects.equals(this.page, baseSerpApiKnowledgeGraphElementItem.page) &&
         Objects.equals(this.position, baseSerpApiKnowledgeGraphElementItem.position) &&
         Objects.equals(this.xpath, baseSerpApiKnowledgeGraphElementItem.xpath) &&
         Objects.equals(this.rectangle, baseSerpApiKnowledgeGraphElementItem.rectangle);  
@@ -167,7 +192,7 @@ public class BaseSerpApiKnowledgeGraphElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, position, xpath, rectangle);
+  return Objects.hash(type, page, position, xpath, rectangle);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -183,6 +208,7 @@ public class BaseSerpApiKnowledgeGraphElementItem  {
     sb.append("class BaseSerpApiKnowledgeGraphElementItem {\n");
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    rectangle: ").append(toIndentedString(rectangle)).append("\n");
@@ -210,6 +236,8 @@ public class BaseSerpApiKnowledgeGraphElementItem  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("type");
+    
+    openapiFields.add("page");
     
     openapiFields.add("position");
     

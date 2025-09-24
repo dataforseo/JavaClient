@@ -14,6 +14,8 @@
 **sellerUrl** | **String** | url forwarding to the seller’s page on Amazon |[optional]|
 **shipsFrom** | **String** | sender company name |[optional]|
 **price** | **PriceInfo** | product pricing details<br>if there are no details, the value will be null |[optional]|
+**percentageDiscount** | **Double** | value of the percentage discount |[optional]|
+**applicableVouchers** | **List<AmazonApplicableVouchersItem>** | array of objects containing information about applicable vouchers |[optional]|
 **rating** | **RatingElement** | seller rating details<br>seller popularity rate based on customer reviews |[optional]|
 **condition** | **String** | product condition<br>condition of the product offered by the seller |[optional]|
 **conditionDescription** | **String** | product condition details<br>expanded details on the condition of the product offered by the seller |[optional]|

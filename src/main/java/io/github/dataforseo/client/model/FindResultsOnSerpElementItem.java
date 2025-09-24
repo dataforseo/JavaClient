@@ -91,9 +91,9 @@ public class FindResultsOnSerpElementItem  extends BaseSerpApiElementItem  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<ShortVideosElement> items;
+  private List<FindResultsOnElement> items;
 
-  public FindResultsOnSerpElementItem items(List<ShortVideosElement> items) {
+  public FindResultsOnSerpElementItem items(List<FindResultsOnElement> items) {
     this.items = items;
     return this;
   }
@@ -103,11 +103,11 @@ public class FindResultsOnSerpElementItem  extends BaseSerpApiElementItem  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<ShortVideosElement> getItems() {
+  public List<FindResultsOnElement> getItems() {
     return items;
   }
 
-  public void setItems(List<ShortVideosElement> items) {
+  public void setItems(List<FindResultsOnElement> items) {
     this.items = items;
   }
 
@@ -209,6 +209,7 @@ public class FindResultsOnSerpElementItem  extends BaseSerpApiElementItem  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
+    openapiFields.add("page");
     openapiFields.add("position");
     openapiFields.add("xpath");
     openapiFields.add("rectangle");

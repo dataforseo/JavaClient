@@ -264,7 +264,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
    * types of search results in SERP
 * contains types of search results (items) found in SERP.
 * possible item types:
-* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, google_posts, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box, visual_stories, commercial_units, local_services, google_hotels, math_solver, currency_box, product_considerations, found_on_web, short_videos, refine_products, explore_brands, perspectives, discussions_and_forums, compare_sites, courses, ai_overview
+* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, google_posts, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box, visual_stories, commercial_units, local_services, google_hotels, math_solver, currency_box,product_considerations, found_on_web, short_videos, refine_products, explore_brands, perspectives, discussions_and_forums, compare_sites, courses, ai_overview
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -297,6 +297,30 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
 
   public void setSeResultsCount(Long seResultsCount) {
     this.seResultsCount = seResultsCount;
+  }
+
+
+  public static final String SERIALIZED_NAME_PAGES_COUNT = "pages_count";
+  @SerializedName(SERIALIZED_NAME_PAGES_COUNT)
+  private Long pagesCount;
+
+  public SerpGoogleOrganicLiveAdvancedResultInfo pagesCount(Long pagesCount) {
+    this.pagesCount = pagesCount;
+    return this;
+  }
+
+  /**
+   * total search results pages retrieved
+* total number of retrieved SERPs in the result
+   * @return pagesCount
+   */
+  @javax.annotation.Nullable
+  public Long getPagesCount() {
+    return pagesCount;
+  }
+
+  public void setPagesCount(Long pagesCount) {
+    this.pagesCount = pagesCount;
   }
 
 
@@ -400,6 +424,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
         Objects.equals(this.refinementChips, serpGoogleOrganicLiveAdvancedResultInfo.refinementChips) &&
         Objects.equals(this.itemTypes, serpGoogleOrganicLiveAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.seResultsCount, serpGoogleOrganicLiveAdvancedResultInfo.seResultsCount) &&
+        Objects.equals(this.pagesCount, serpGoogleOrganicLiveAdvancedResultInfo.pagesCount) &&
         Objects.equals(this.itemsCount, serpGoogleOrganicLiveAdvancedResultInfo.itemsCount) &&
         Objects.equals(this.items, serpGoogleOrganicLiveAdvancedResultInfo.items);  
     
@@ -411,7 +436,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, itemsCount, items);
+  return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, pagesCount, itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -437,6 +462,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
     sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
+    sb.append("    pagesCount: ").append(toIndentedString(pagesCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
@@ -483,6 +509,8 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
     openapiFields.add("item_types");
     
     openapiFields.add("se_results_count");
+    
+    openapiFields.add("pages_count");
     
     openapiFields.add("items_count");
     

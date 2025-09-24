@@ -301,6 +301,30 @@ public class SerpYahooOrganicTaskGetAdvancedResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_PAGES_COUNT = "pages_count";
+  @SerializedName(SERIALIZED_NAME_PAGES_COUNT)
+  private Long pagesCount;
+
+  public SerpYahooOrganicTaskGetAdvancedResultInfo pagesCount(Long pagesCount) {
+    this.pagesCount = pagesCount;
+    return this;
+  }
+
+  /**
+   * total pages retrieved
+* total number of retrieved SERPs in the result
+   * @return pagesCount
+   */
+  @javax.annotation.Nullable
+  public Long getPagesCount() {
+    return pagesCount;
+  }
+
+  public void setPagesCount(Long pagesCount) {
+    this.pagesCount = pagesCount;
+  }
+
+
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
   private Long itemsCount;
@@ -402,6 +426,7 @@ public class SerpYahooOrganicTaskGetAdvancedResultInfo  {
         Objects.equals(this.refinementChips, serpYahooOrganicTaskGetAdvancedResultInfo.refinementChips) &&
         Objects.equals(this.itemTypes, serpYahooOrganicTaskGetAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.seResultsCount, serpYahooOrganicTaskGetAdvancedResultInfo.seResultsCount) &&
+        Objects.equals(this.pagesCount, serpYahooOrganicTaskGetAdvancedResultInfo.pagesCount) &&
         Objects.equals(this.itemsCount, serpYahooOrganicTaskGetAdvancedResultInfo.itemsCount) &&
         Objects.equals(this.items, serpYahooOrganicTaskGetAdvancedResultInfo.items);  
     
@@ -413,7 +438,7 @@ public class SerpYahooOrganicTaskGetAdvancedResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, itemsCount, items);
+  return Objects.hash(keyword, type, seDomain, locationCode, languageCode, checkUrl, datetime, spell, refinementChips, itemTypes, seResultsCount, pagesCount, itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -439,6 +464,7 @@ public class SerpYahooOrganicTaskGetAdvancedResultInfo  {
     sb.append("    refinementChips: ").append(toIndentedString(refinementChips)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
+    sb.append("    pagesCount: ").append(toIndentedString(pagesCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
@@ -485,6 +511,8 @@ public class SerpYahooOrganicTaskGetAdvancedResultInfo  {
     openapiFields.add("item_types");
     
     openapiFields.add("se_results_count");
+    
+    openapiFields.add("pages_count");
     
     openapiFields.add("items_count");
     

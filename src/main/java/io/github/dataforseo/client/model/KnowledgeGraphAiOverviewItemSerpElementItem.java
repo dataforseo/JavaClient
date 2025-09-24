@@ -65,9 +65,9 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> items;
+  private List<BaseSerpApiAiOverviewElementItem> items;
 
-  public KnowledgeGraphAiOverviewItemSerpElementItem items(List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> items) {
+  public KnowledgeGraphAiOverviewItemSerpElementItem items(List<BaseSerpApiAiOverviewElementItem> items) {
     this.items = items;
     return this;
   }
@@ -77,11 +77,11 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
    * @return items
    */
   @javax.annotation.Nullable
-  public List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> getItems() {
+  public List<BaseSerpApiAiOverviewElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<BaseSerpApiKnowledgeGraphAiOverviewElementItem> items) {
+  public void setItems(List<BaseSerpApiAiOverviewElementItem> items) {
     this.items = items;
   }
 
@@ -207,6 +207,7 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     openapiFields.add("type");
+    openapiFields.add("page");
     openapiFields.add("position");
     openapiFields.add("xpath");
     openapiFields.add("rectangle");

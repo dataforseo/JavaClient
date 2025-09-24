@@ -38,6 +38,29 @@ import io.github.dataforseo.client.JSON;
 public class SerpApiGoogleNewsTopStoriesElementItem  extends BaseSerpApiGoogleNewsElementItem  {
 
 
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
+
+  public SerpApiGoogleNewsTopStoriesElementItem page(Integer page) {
+    this.page = page;
+    return this;
+  }
+
+  /**
+   * 
+   * @return page
+   */
+  @javax.annotation.Nullable
+  public Integer getPage() {
+    return page;
+  }
+
+  public void setPage(Integer page) {
+    this.page = page;
+  }
+
+
   public static final String SERIALIZED_NAME_POSITION = "position";
   @SerializedName(SERIALIZED_NAME_POSITION)
   private String position;
@@ -129,6 +152,7 @@ public class SerpApiGoogleNewsTopStoriesElementItem  extends BaseSerpApiGoogleNe
     SerpApiGoogleNewsTopStoriesElementItem serpApiGoogleNewsTopStoriesElementItem = (SerpApiGoogleNewsTopStoriesElementItem) o;
     return
 
+        Objects.equals(this.page, serpApiGoogleNewsTopStoriesElementItem.page) &&
         Objects.equals(this.position, serpApiGoogleNewsTopStoriesElementItem.position) &&
         Objects.equals(this.items, serpApiGoogleNewsTopStoriesElementItem.items) && 
         super.equals(o);
@@ -141,7 +165,7 @@ public class SerpApiGoogleNewsTopStoriesElementItem  extends BaseSerpApiGoogleNe
 
   @Override
   public int hashCode() {
-  return Objects.hash(position, items);
+  return Objects.hash(page, position, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -156,6 +180,7 @@ public class SerpApiGoogleNewsTopStoriesElementItem  extends BaseSerpApiGoogleNe
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpApiGoogleNewsTopStoriesElementItem {\n");
 
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
@@ -186,6 +211,8 @@ public class SerpApiGoogleNewsTopStoriesElementItem  extends BaseSerpApiGoogleNe
     openapiFields.add("xpath");
     openapiFields.add("title");
     openapiFields.add("rectangle");
+    
+    openapiFields.add("page");
     
     openapiFields.add("position");
     

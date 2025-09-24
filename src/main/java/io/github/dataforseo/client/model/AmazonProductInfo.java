@@ -368,6 +368,29 @@ public class AmazonProductInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_PERCENTAGE_DISCOUNT = "percentage_discount";
+  @SerializedName(SERIALIZED_NAME_PERCENTAGE_DISCOUNT)
+  private String percentageDiscount;
+
+  public AmazonProductInfo percentageDiscount(String percentageDiscount) {
+    this.percentageDiscount = percentageDiscount;
+    return this;
+  }
+
+  /**
+   * value of the percentage discount
+   * @return percentageDiscount
+   */
+  @javax.annotation.Nullable
+  public String getPercentageDiscount() {
+    return percentageDiscount;
+  }
+
+  public void setPercentageDiscount(String percentageDiscount) {
+    this.percentageDiscount = percentageDiscount;
+  }
+
+
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
   private String currency;
@@ -752,6 +775,7 @@ public class AmazonProductInfo  {
         Objects.equals(this.productAsins, amazonProductInfo.productAsins) &&
         Objects.equals(this.priceFrom, amazonProductInfo.priceFrom) &&
         Objects.equals(this.priceTo, amazonProductInfo.priceTo) &&
+        Objects.equals(this.percentageDiscount, amazonProductInfo.percentageDiscount) &&
         Objects.equals(this.currency, amazonProductInfo.currency) &&
         Objects.equals(this.isAmazonChoice, amazonProductInfo.isAmazonChoice) &&
         Objects.equals(this.rating, amazonProductInfo.rating) &&
@@ -775,7 +799,7 @@ public class AmazonProductInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, currency, isAmazonChoice, rating, isNewerModelAvailable, applicableVouchers, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, percentageDiscount, currency, isAmazonChoice, rating, isNewerModelAvailable, applicableVouchers, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -804,6 +828,7 @@ public class AmazonProductInfo  {
     sb.append("    productAsins: ").append(toIndentedString(productAsins)).append("\n");
     sb.append("    priceFrom: ").append(toIndentedString(priceFrom)).append("\n");
     sb.append("    priceTo: ").append(toIndentedString(priceTo)).append("\n");
+    sb.append("    percentageDiscount: ").append(toIndentedString(percentageDiscount)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    isAmazonChoice: ").append(toIndentedString(isAmazonChoice)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
@@ -868,6 +893,8 @@ public class AmazonProductInfo  {
     openapiFields.add("price_from");
     
     openapiFields.add("price_to");
+    
+    openapiFields.add("percentage_discount");
     
     openapiFields.add("currency");
     

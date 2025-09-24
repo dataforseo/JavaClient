@@ -48,7 +48,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * text of the component in the markdwon format
+   * content of the element in markdown format
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -71,8 +71,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * table present in the element
-* the header and content of the table present in the element
+   * table element
    * @return table
    */
   @javax.annotation.Nullable
@@ -82,6 +81,29 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
 
   public void setTable(Table table) {
     this.table = table;
+  }
+
+
+  public static final String SERIALIZED_NAME_REFERENCES = "references";
+  @SerializedName(SERIALIZED_NAME_REFERENCES)
+  private List<AiModeAiOverviewReferenceInfo> references;
+
+  public SerpApiAiOverviewTableElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
+    this.references = references;
+    return this;
+  }
+
+  /**
+   * references relevant to the element
+   * @return references
+   */
+  @javax.annotation.Nullable
+  public List<AiModeAiOverviewReferenceInfo> getReferences() {
+    return references;
+  }
+
+  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
+    this.references = references;
   }
 
 
@@ -129,7 +151,8 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
     return
 
         Objects.equals(this.markdown, serpApiAiOverviewTableElementItem.markdown) &&
-        Objects.equals(this.table, serpApiAiOverviewTableElementItem.table) && 
+        Objects.equals(this.table, serpApiAiOverviewTableElementItem.table) &&
+        Objects.equals(this.references, serpApiAiOverviewTableElementItem.references) && 
         super.equals(o);
     
   }
@@ -140,7 +163,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
 
   @Override
   public int hashCode() {
-  return Objects.hash(markdown, table);
+  return Objects.hash(markdown, table, references);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -157,6 +180,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
 
     sb.append("    markdown: ").append(toIndentedString(markdown)).append("\n");
     sb.append("    table: ").append(toIndentedString(table)).append("\n");
+    sb.append("    references: ").append(toIndentedString(references)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -185,6 +209,8 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
     openapiFields.add("markdown");
     
     openapiFields.add("table");
+    
+    openapiFields.add("references");
     
 
     // a set of required properties/fields (JSON key names)
