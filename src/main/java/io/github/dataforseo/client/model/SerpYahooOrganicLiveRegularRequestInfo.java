@@ -332,10 +332,10 @@ public class SerpYahooOrganicLiveRegularRequestInfo  {
    * parsing depth
 * optional field
 * number of results in SERP
-* default value: 10
+* default value: 6
 * max value: 700
-* Your account will be billed per each SERP containing up to 10 results;
-* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+* Your account will be billed per each SERP;
+* Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;
 * The cost can be calculated on the Pricing page.
    * @return depth
    */
@@ -375,6 +375,40 @@ public class SerpYahooOrganicLiveRegularRequestInfo  {
 
   public void setMaxCrawlPages(Integer maxCrawlPages) {
     this.maxCrawlPages = maxCrawlPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_TARGET = "target";
+  @SerializedName(SERIALIZED_NAME_TARGET)
+  private String target;
+
+  public SerpYahooOrganicLiveRegularRequestInfo target(String target) {
+    this.target = target;
+    return this;
+  }
+
+  /**
+   * target domain, subdomain, or webpage to get results for
+* optional field
+* a domain or a subdomain should be specified without https:// and www.
+* note that the results of target-specific tasks will only include SERP elements that contain a url string;
+* you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;
+* examples:
+* example.com  – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
+* example.com* – returns results for the domain, including all its pages;
+* *example.com* – returns results for the entire domain, including all its pages and subdomains;
+* *example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com;
+* example.com/example-page  – returns results for the exact URL;
+* example.com/example-page*  – returns results for all domain’s URLs that start with the specified string
+   * @return target
+   */
+  @javax.annotation.Nullable
+  public String getTarget() {
+    return target;
+  }
+
+  public void setTarget(String target) {
+    this.target = target;
   }
 
 
@@ -485,6 +519,7 @@ public class SerpYahooOrganicLiveRegularRequestInfo  {
         Objects.equals(this.seDomain, serpYahooOrganicLiveRegularRequestInfo.seDomain) &&
         Objects.equals(this.depth, serpYahooOrganicLiveRegularRequestInfo.depth) &&
         Objects.equals(this.maxCrawlPages, serpYahooOrganicLiveRegularRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.target, serpYahooOrganicLiveRegularRequestInfo.target) &&
         Objects.equals(this.searchParam, serpYahooOrganicLiveRegularRequestInfo.searchParam) &&
         Objects.equals(this.tag, serpYahooOrganicLiveRegularRequestInfo.tag);  
     
@@ -496,7 +531,7 @@ public class SerpYahooOrganicLiveRegularRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, tag);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, target, searchParam, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -523,6 +558,7 @@ public class SerpYahooOrganicLiveRegularRequestInfo  {
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
@@ -571,6 +607,8 @@ public class SerpYahooOrganicLiveRegularRequestInfo  {
     openapiFields.add("depth");
     
     openapiFields.add("max_crawl_pages");
+    
+    openapiFields.add("target");
     
     openapiFields.add("search_param");
     

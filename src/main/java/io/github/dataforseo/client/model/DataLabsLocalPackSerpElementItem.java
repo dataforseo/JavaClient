@@ -94,7 +94,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * domain in SERP of the Ad element
+   * subdomain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * result’s URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -282,8 +282,9 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * estimated cost of paid monthly search traffic
-* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
+   * estimated cost of converting organic search traffic into paid
+* represents the estimated monthly cost of running ads (USD) for the returned keyword
+* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */

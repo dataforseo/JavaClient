@@ -77,8 +77,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
     AppDataIdListRequestInfo model = new AppDataIdListRequestInfo()
-           .datetimeFrom("2025-06-24 11:17:44 +00:00")
-           .datetimeTo("2025-08-24 11:17:44 +00:00")
+           .datetimeFrom("2025-07-14 10:28:15 +00:00")
+           .datetimeTo("2025-09-14 10:28:15 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");

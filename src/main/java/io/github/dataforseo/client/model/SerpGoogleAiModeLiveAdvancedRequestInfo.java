@@ -67,35 +67,6 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpGoogleAiModeLiveAdvancedRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
@@ -479,7 +450,6 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleAiModeLiveAdvancedRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpGoogleAiModeLiveAdvancedRequestInfo.priority) &&
         Objects.equals(this.locationName, serpGoogleAiModeLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleAiModeLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, serpGoogleAiModeLiveAdvancedRequestInfo.locationCoordinate) &&
@@ -501,7 +471,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, tag);
+  return Objects.hash(keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -517,7 +487,6 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
     sb.append("class SerpGoogleAiModeLiveAdvancedRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
@@ -554,8 +523,6 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("keyword");
-    
-    openapiFields.add("priority");
     
     openapiFields.add("location_name");
     

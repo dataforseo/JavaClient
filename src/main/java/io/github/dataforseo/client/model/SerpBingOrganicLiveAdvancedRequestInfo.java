@@ -94,34 +94,6 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpBingOrganicLiveAdvancedRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* The price per task with high execution priority is multiplied by 1.5, and the task is executed within 1 minute
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
@@ -331,7 +303,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 * optional field
 * number of results in SERP
 * default value: 10
-* max value: 700
+* max value: 200
 * Your account will be billed per each SERP containing up to 10 results;
 * Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
 * The cost can be calculated on the Pricing page.
@@ -373,6 +345,40 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
   public void setMaxCrawlPages(Integer maxCrawlPages) {
     this.maxCrawlPages = maxCrawlPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_TARGET = "target";
+  @SerializedName(SERIALIZED_NAME_TARGET)
+  private String target;
+
+  public SerpBingOrganicLiveAdvancedRequestInfo target(String target) {
+    this.target = target;
+    return this;
+  }
+
+  /**
+   * target domain, subdomain, or webpage to get results for
+* optional field
+* a domain or a subdomain should be specified without https:// and www.
+* note that the results of target-specific tasks will only include SERP elements that contain a url string;
+* you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;
+* examples:
+* example.com  – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
+* example.com* – returns results for the domain, including all its pages;
+* *example.com* – returns results for the entire domain, including all its pages and subdomains;
+* *example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com;
+* example.com/example-page  – returns results for the exact URL;
+* example.com/example-page*  – returns results for all domain’s URLs that start with the specified string
+   * @return target
+   */
+  @javax.annotation.Nullable
+  public String getTarget() {
+    return target;
+  }
+
+  public void setTarget(String target) {
+    this.target = target;
   }
 
 
@@ -591,7 +597,6 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
         Objects.equals(this.url, serpBingOrganicLiveAdvancedRequestInfo.url) &&
         Objects.equals(this.keyword, serpBingOrganicLiveAdvancedRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpBingOrganicLiveAdvancedRequestInfo.priority) &&
         Objects.equals(this.locationName, serpBingOrganicLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpBingOrganicLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, serpBingOrganicLiveAdvancedRequestInfo.locationCoordinate) &&
@@ -601,6 +606,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
         Objects.equals(this.os, serpBingOrganicLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.depth, serpBingOrganicLiveAdvancedRequestInfo.depth) &&
         Objects.equals(this.maxCrawlPages, serpBingOrganicLiveAdvancedRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.target, serpBingOrganicLiveAdvancedRequestInfo.target) &&
         Objects.equals(this.calculateRectangles, serpBingOrganicLiveAdvancedRequestInfo.calculateRectangles) &&
         Objects.equals(this.browserScreenWidth, serpBingOrganicLiveAdvancedRequestInfo.browserScreenWidth) &&
         Objects.equals(this.browserScreenHeight, serpBingOrganicLiveAdvancedRequestInfo.browserScreenHeight) &&
@@ -616,7 +622,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, maxCrawlPages, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, searchParam, tag);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, maxCrawlPages, target, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, searchParam, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -633,7 +639,6 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
@@ -643,6 +648,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
@@ -676,8 +682,6 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("priority");
-    
     openapiFields.add("location_name");
     
     openapiFields.add("location_code");
@@ -695,6 +699,8 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
     openapiFields.add("depth");
     
     openapiFields.add("max_crawl_pages");
+    
+    openapiFields.add("target");
     
     openapiFields.add("calculate_rectangles");
     

@@ -334,7 +334,7 @@ public class SerpGoogleOrganicLiveRegularRequestInfo  {
 * optional field
 * number of results in SERP
 * default value: 10
-* max value: 700
+* max value: 200
 * Your account will be billed per each SERP containing up to 10 results;
 * Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
 * The cost can be calculated on the Pricing page.

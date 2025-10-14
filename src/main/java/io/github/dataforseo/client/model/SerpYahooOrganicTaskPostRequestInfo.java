@@ -361,10 +361,10 @@ public class SerpYahooOrganicTaskPostRequestInfo  {
    * parsing depth
 * optional field
 * number of results in SERP
-* default value: 10
+* default value: 6
 * max value: 700
-* Your account will be billed per each SERP containing up to 10 results;
-* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+* Your account will be billed per each SERP;
+* Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;
 * The cost can be calculated on the Pricing page.
    * @return depth
    */

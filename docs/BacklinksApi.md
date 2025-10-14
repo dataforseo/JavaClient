@@ -59,8 +59,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksIdListRequestInfo model = new BacklinksIdListRequestInfo()
-           .datetimeFrom("2025-06-24 11:16:22 +00:00")
-           .datetimeTo("2025-08-24 11:16:22 +00:00")
+           .datetimeFrom("2025-07-14 10:26:34 +00:00")
+           .datetimeTo("2025-09-14 10:26:34 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -417,8 +417,8 @@ public class Example {
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksHistoryLiveRequestInfo model = new BacklinksHistoryLiveRequestInfo()
            .target("cnn.com")
-           .dateFrom("2025-06-24")
-           .dateTo("2025-08-24");
+           .dateFrom("2025-07-14")
+           .dateTo("2025-09-14");
     BacklinksHistoryLiveResponseInfo response = apiInstance.historyLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1146,8 +1146,8 @@ public class Example {
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksTimeseriesSummaryLiveRequestInfo model = new BacklinksTimeseriesSummaryLiveRequestInfo()
            .target("dataforseo.com")
-           .dateFrom("2025-06-24")
-           .dateTo("2025-08-24")
+           .dateFrom("2025-07-14")
+           .dateTo("2025-09-14")
            .groupRange("month");
     BacklinksTimeseriesSummaryLiveResponseInfo response = apiInstance.timeseriesSummaryLive(List.of(model));
     System.out.println(result);
@@ -1219,8 +1219,8 @@ public class Example {
     BacklinksApi apiInstance = new BacklinksApi(defaultClient);
     BacklinksTimeseriesNewLostSummaryLiveRequestInfo model = new BacklinksTimeseriesNewLostSummaryLiveRequestInfo()
            .target("dataforseo.com")
-           .dateFrom("2025-06-24")
-           .dateTo("2025-08-24")
+           .dateFrom("2025-07-14")
+           .dateTo("2025-09-14")
            .groupRange("month");
     BacklinksTimeseriesNewLostSummaryLiveResponseInfo response = apiInstance.timeseriesNewLostSummaryLive(List.of(model));
     System.out.println(result);
@@ -1632,7 +1632,7 @@ public class Example {
                    "https://stackoverflow.com/",
                    "www.trustpilot.com"
                 ))
-           .dateFrom("2025-06-24");
+           .dateFrom("2025-07-14");
     BacklinksBulkNewLostBacklinksLiveResponseInfo response = apiInstance.bulkNewLostBacklinksLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1715,7 +1715,7 @@ public class Example {
                    "https://stackoverflow.com/",
                    "www.trustpilot.com"
                 ))
-           .dateFrom("2025-06-24");
+           .dateFrom("2025-07-14");
     BacklinksBulkNewLostReferringDomainsLiveResponseInfo response = apiInstance.bulkNewLostReferringDomainsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

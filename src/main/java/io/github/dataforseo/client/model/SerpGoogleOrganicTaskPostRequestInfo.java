@@ -679,7 +679,6 @@ public class SerpGoogleOrganicTaskPostRequestInfo  {
 * using this field, you can specify up to 10 parameters to remove from URLs in the result
 * example:
 * 'remove_from_url': ['srsltid']
-* Note: if the target field is specified, the specified URL parameters will be removed before the search
    * @return removeFromUrl
    */
   @javax.annotation.Nullable

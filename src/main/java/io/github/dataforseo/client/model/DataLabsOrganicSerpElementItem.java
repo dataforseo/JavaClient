@@ -48,7 +48,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * subdomain in SERP
+   * domain in SERP of the Ad element
    * @return domain
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * relevant URL in SERP
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * relevant website name in SERP
+   * 
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -340,9 +340,9 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private RatingElement rating;
 
-  public DataLabsOrganicSerpElementItem rating(RatingInfo rating) {
+  public DataLabsOrganicSerpElementItem rating(RatingElement rating) {
     this.rating = rating;
     return this;
   }
@@ -353,11 +353,11 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public RatingElement getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(RatingElement rating) {
     this.rating = rating;
   }
 
@@ -492,8 +492,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   /**
    * estimated traffic volume
-* estimated paid monthly traffic to the target
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
+* estimated organic monthly traffic to the domain
+* calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -517,8 +517,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * estimated cost of monthly search traffic
-* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
+   * estimated cost of paid monthly search traffic
+* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -592,7 +592,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * backlinks information for the target website
+   * backlinks information for the ranked website
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

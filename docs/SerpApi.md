@@ -218,8 +218,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
     SerpIdListRequestInfo model = new SerpIdListRequestInfo()
-           .datetimeFrom("2025-06-24 11:13:21 +00:00")
-           .datetimeTo("2025-08-24 11:13:21 +00:00")
+           .datetimeFrom("2025-07-14 10:23:34 +00:00")
+           .datetimeTo("2025-09-14 10:23:34 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");

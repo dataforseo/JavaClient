@@ -370,7 +370,8 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
 * &tbs=p_ord:pd – sort by descending price;
 * &tbs=p_ord:rv – sort by review score;
 * &tbs=ppr_max:50,p_ord:rv – sort by review score with the maximum price of 50 USD.;
-* &udm=28 – use new Google Shopping markup with 40 SERP results returned by default (the cost for one SERP is deducted accordingly);the maximum depth is 200; this parameter must be specified without tbm=shop in the url;
+* &udm=28 – use new Google Shopping markup with 40 SERP results returned by default (the cost for one SERP is deducted accordingly); the maximum depth is 200; this parameter must be specified without tbm=shop in the url;
+* &shoprs=$value – specify advanced filtering and sorting in the new Shopping markup; replace $value with a string in protobuf Base64 format; learn more on our help center.
 * Note that search_param values will be ignored if any of the following parameters are used: price_min, price_max, sort_by
    * @return searchParam
    */

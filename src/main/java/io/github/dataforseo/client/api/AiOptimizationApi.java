@@ -16,6 +16,14 @@ import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskPo
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskPostResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskGetResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperLocationsResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperLanguagesResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTaskPostRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTaskPostResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesModelsResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesLiveRequestInfo;
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesLiveResponseInfo;
@@ -439,6 +447,523 @@ public class AiOptimizationApi {
 
        okhttp3.Call localVarCall = chatGptLlmResponsesTaskGetValidateBeforeCall(id, _callback);
        Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/chat_gpt/llm_scraper/locations";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call aiOptimizationChatGptLlmScraperLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return aiOptimizationChatGptLlmScraperLocationsCall(_callback);
+
+    }
+
+    public AiOptimizationChatGptLlmScraperLocationsResponseInfo aiOptimizationChatGptLlmScraperLocations() throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperLocationsResponseInfo> localVarResp = aiOptimizationChatGptLlmScraperLocationsWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmScraperLocationsResponseInfo> aiOptimizationChatGptLlmScraperLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsAsync(final ApiCallback<AiOptimizationChatGptLlmScraperLocationsResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/ai_optimization/chat_gpt/llm_scraper/locations/{country}".replace("{" + "country" + "}", localVarApiClient.escapeString(country.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'country' is set
+       if (country == null) {
+           throw new ApiException("Missing the required parameter 'country' when calling aiOptimizationChatGptLlmScraperLocationsCountry(Async)");
+       }
+
+       return aiOptimizationChatGptLlmScraperLocationsCountryCall(country, _callback);
+
+    }
+
+    public AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo aiOptimizationChatGptLlmScraperLocationsCountry(String country) throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> localVarResp = aiOptimizationChatGptLlmScraperLocationsCountryWithHttpInfo(country);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> aiOptimizationChatGptLlmScraperLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsCountryValidateBeforeCall(country, null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCountryAsync(String country, final ApiCallback<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsCountryValidateBeforeCall(country, _callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call aiOptimizationChatGptLlmScraperLanguagesCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/chat_gpt/llm_scraper/languages";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call aiOptimizationChatGptLlmScraperLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return aiOptimizationChatGptLlmScraperLanguagesCall(_callback);
+
+    }
+
+    public AiOptimizationChatGptLlmScraperLanguagesResponseInfo aiOptimizationChatGptLlmScraperLanguages() throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> localVarResp = aiOptimizationChatGptLlmScraperLanguagesWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> aiOptimizationChatGptLlmScraperLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLanguagesValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLanguagesResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call aiOptimizationChatGptLlmScraperLanguagesAsync(final ApiCallback<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLanguagesValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLanguagesResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call chatGptLlmScraperTaskPostCall(List<AiOptimizationChatGptLlmScraperTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/chat_gpt/llm_scraper/task_post";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call chatGptLlmScraperTaskPostValidateBeforeCall(List<AiOptimizationChatGptLlmScraperTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return chatGptLlmScraperTaskPostCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationChatGptLlmScraperTaskPostResponseInfo chatGptLlmScraperTaskPost(List<AiOptimizationChatGptLlmScraperTaskPostRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationChatGptLlmScraperTaskPostResponseInfo> localVarResp = chatGptLlmScraperTaskPostWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationChatGptLlmScraperTaskPostResponseInfo> chatGptLlmScraperTaskPostWithHttpInfo(List<AiOptimizationChatGptLlmScraperTaskPostRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = chatGptLlmScraperTaskPostValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTaskPostResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call chatGptLlmScraperTaskPostAsync(List<AiOptimizationChatGptLlmScraperTaskPostRequestInfo> payload, final ApiCallback<AiOptimizationChatGptLlmScraperTaskPostResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = chatGptLlmScraperTaskPostValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTaskPostResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call chatGptLlmScraperTasksReadyCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/chat_gpt/llm_scraper/tasks_ready";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call chatGptLlmScraperTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return chatGptLlmScraperTasksReadyCall(_callback);
+
+    }
+
+    public AiOptimizationChatGptLlmScraperTasksReadyResponseInfo chatGptLlmScraperTasksReady() throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperTasksReadyResponseInfo> localVarResp = chatGptLlmScraperTasksReadyWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmScraperTasksReadyResponseInfo> chatGptLlmScraperTasksReadyWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmScraperTasksReadyValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTasksReadyResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call chatGptLlmScraperTasksReadyAsync(final ApiCallback<AiOptimizationChatGptLlmScraperTasksReadyResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = chatGptLlmScraperTasksReadyValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTasksReadyResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call chatGptLlmScraperTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/ai_optimization/chat_gpt/llm_scraper/task_get/advanced/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call chatGptLlmScraperTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'id' is set
+       if (id == null) {
+           throw new ApiException("Missing the required parameter 'id' when calling chatGptLlmScraperTaskGetAdvanced(Async)");
+       }
+
+       return chatGptLlmScraperTaskGetAdvancedCall(id, _callback);
+
+    }
+
+    public AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo chatGptLlmScraperTaskGetAdvanced(String id) throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo> localVarResp = chatGptLlmScraperTaskGetAdvancedWithHttpInfo(id);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo> chatGptLlmScraperTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmScraperTaskGetAdvancedValidateBeforeCall(id, null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call chatGptLlmScraperTaskGetAdvancedAsync(String id, final ApiCallback<AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = chatGptLlmScraperTaskGetAdvancedValidateBeforeCall(id, _callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call chatGptLlmScraperTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/ai_optimization/chat_gpt/llm_scraper/task_get/html/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call chatGptLlmScraperTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'id' is set
+       if (id == null) {
+           throw new ApiException("Missing the required parameter 'id' when calling chatGptLlmScraperTaskGetHtml(Async)");
+       }
+
+       return chatGptLlmScraperTaskGetHtmlCall(id, _callback);
+
+    }
+
+    public AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo chatGptLlmScraperTaskGetHtml(String id) throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo> localVarResp = chatGptLlmScraperTaskGetHtmlWithHttpInfo(id);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo> chatGptLlmScraperTaskGetHtmlWithHttpInfo(String id) throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmScraperTaskGetHtmlValidateBeforeCall(id, null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call chatGptLlmScraperTaskGetHtmlAsync(String id, final ApiCallback<AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = chatGptLlmScraperTaskGetHtmlValidateBeforeCall(id, _callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
