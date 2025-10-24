@@ -357,7 +357,8 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * contains arrays of elements available in the list
+   * additional items present in the element
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

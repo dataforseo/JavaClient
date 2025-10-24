@@ -158,9 +158,9 @@ public class RatingElement  {
 
   public static final String SERIALIZED_NAME_RATING_MAX = "rating_max";
   @SerializedName(SERIALIZED_NAME_RATING_MAX)
-  private Double ratingMax;
+  private Integer ratingMax;
 
-  public RatingElement ratingMax(Double ratingMax) {
+  public RatingElement ratingMax(Integer ratingMax) {
     this.ratingMax = ratingMax;
     return this;
   }
@@ -170,11 +170,11 @@ public class RatingElement  {
    * @return ratingMax
    */
   @javax.annotation.Nullable
-  public Double getRatingMax() {
+  public Integer getRatingMax() {
     return ratingMax;
   }
 
-  public void setRatingMax(Double ratingMax) {
+  public void setRatingMax(Integer ratingMax) {
     this.ratingMax = ratingMax;
   }
 

@@ -49,8 +49,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
     DomainAnalyticsIdListRequestInfo model = new DomainAnalyticsIdListRequestInfo()
-           .datetimeFrom("2025-07-14 10:26:13 +00:00")
-           .datetimeTo("2025-09-14 10:26:13 +00:00")
+           .datetimeFrom("2025-07-24 12:02:59 +00:00")
+           .datetimeTo("2025-09-24 12:02:59 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -623,8 +623,8 @@ public class Example {
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
     DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo model = new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
            .technology("jQuery")
-           .dateFrom("2025-07-14")
-           .dateTo("2025-09-14");
+           .dateFrom("2025-07-24")
+           .dateTo("2025-09-24");
     DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo response = apiInstance.technologiesTechnologyStatsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

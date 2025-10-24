@@ -324,6 +324,84 @@ public class ProductInfoElement  {
   }
 
 
+  public static final String SERIALIZED_NAME_DATA_DOCID = "data_docid";
+  @SerializedName(SERIALIZED_NAME_DATA_DOCID)
+  private String dataDocid;
+
+  public ProductInfoElement dataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
+    return this;
+  }
+
+  /**
+   * unique identifier of the SERP data element
+* note that there is no full list of possible values as the data_docid is a dynamic value assigned by Google
+* example:
+* 17363035694596624076
+   * @return dataDocid
+   */
+  @javax.annotation.Nullable
+  public String getDataDocid() {
+    return dataDocid;
+  }
+
+  public void setDataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
+  }
+
+
+  public static final String SERIALIZED_NAME_GID = "gid";
+  @SerializedName(SERIALIZED_NAME_GID)
+  private String gid;
+
+  public ProductInfoElement gid(String gid) {
+    this.gid = gid;
+    return this;
+  }
+
+  /**
+   * global product identifier on Google Shopping
+* note that there is no full list of possible values as the gid is a dynamic value assigned by Google
+* if there are no values, you will get null
+* example:
+* 4702526954592161872
+* learn more about gid in this help center guide
+   * @return gid
+   */
+  @javax.annotation.Nullable
+  public String getGid() {
+    return gid;
+  }
+
+  public void setGid(String gid) {
+    this.gid = gid;
+  }
+
+
+  public static final String SERIALIZED_NAME_SPECIFICATIONS = "specifications";
+  @SerializedName(SERIALIZED_NAME_SPECIFICATIONS)
+  private List<ShoppingSpecification> specifications;
+
+  public ProductInfoElement specifications(List<ShoppingSpecification> specifications) {
+    this.specifications = specifications;
+    return this;
+  }
+
+  /**
+   * product specifications
+* contains all product attributes and related data listed on the product specification page
+   * @return specifications
+   */
+  @javax.annotation.Nullable
+  public List<ShoppingSpecification> getSpecifications() {
+    return specifications;
+  }
+
+  public void setSpecifications(List<ShoppingSpecification> specifications) {
+    this.specifications = specifications;
+  }
+
+
   public static final String SERIALIZED_NAME_SELLERS = "sellers";
   @SerializedName(SERIALIZED_NAME_SELLERS)
   private List<ProductSeller> sellers;
@@ -427,6 +505,9 @@ public class ProductInfoElement  {
         Objects.equals(this.features, productInfoElement.features) &&
         Objects.equals(this.rating, productInfoElement.rating) &&
         Objects.equals(this.sellerReviewsCount, productInfoElement.sellerReviewsCount) &&
+        Objects.equals(this.dataDocid, productInfoElement.dataDocid) &&
+        Objects.equals(this.gid, productInfoElement.gid) &&
+        Objects.equals(this.specifications, productInfoElement.specifications) &&
         Objects.equals(this.sellers, productInfoElement.sellers) &&
         Objects.equals(this.variations, productInfoElement.variations);  
     
@@ -438,7 +519,7 @@ public class ProductInfoElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, productId, title, description, url, images, features, rating, sellerReviewsCount, sellers, variations);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, productId, title, description, url, images, features, rating, sellerReviewsCount, dataDocid, gid, specifications, sellers, variations);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -465,6 +546,9 @@ public class ProductInfoElement  {
     sb.append("    features: ").append(toIndentedString(features)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    sellerReviewsCount: ").append(toIndentedString(sellerReviewsCount)).append("\n");
+    sb.append("    dataDocid: ").append(toIndentedString(dataDocid)).append("\n");
+    sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
+    sb.append("    specifications: ").append(toIndentedString(specifications)).append("\n");
     sb.append("    sellers: ").append(toIndentedString(sellers)).append("\n");
     sb.append("    variations: ").append(toIndentedString(variations)).append("\n");
     sb.append("}");
@@ -513,6 +597,12 @@ public class ProductInfoElement  {
     openapiFields.add("rating");
     
     openapiFields.add("seller_reviews_count");
+    
+    openapiFields.add("data_docid");
+    
+    openapiFields.add("gid");
+    
+    openapiFields.add("specifications");
     
     openapiFields.add("sellers");
     

@@ -431,6 +431,37 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_EXCLUDE_DOMAINS = "exclude_domains";
+  @SerializedName(SERIALIZED_NAME_EXCLUDE_DOMAINS)
+  private List<String> excludeDomains;
+
+  public DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo excludeDomains(List<String> excludeDomains) {
+    this.excludeDomains = excludeDomains;
+    return this;
+  }
+
+  /**
+   * exclude domains from the results
+* optional field
+* use this parameter to exclude specific domains from the results
+* Note: you can specify up to 1000 domains in this array
+* example:
+* 'exclude_domains': [
+* 'reddit.com',
+* 'youtube.com'
+* ]
+   * @return excludeDomains
+   */
+  @javax.annotation.Nullable
+  public List<String> getExcludeDomains() {
+    return excludeDomains;
+  }
+
+  public void setExcludeDomains(List<String> excludeDomains) {
+    this.excludeDomains = excludeDomains;
+  }
+
+
   public static final String SERIALIZED_NAME_INTERSECTING_DOMAINS = "intersecting_domains";
   @SerializedName(SERIALIZED_NAME_INTERSECTING_DOMAINS)
   private List<String> intersectingDomains;
@@ -567,6 +598,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo  {
         Objects.equals(this.offset, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.offset) &&
         Objects.equals(this.maxRankGroup, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.maxRankGroup) &&
         Objects.equals(this.excludeTopDomains, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.excludeTopDomains) &&
+        Objects.equals(this.excludeDomains, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.excludeDomains) &&
         Objects.equals(this.intersectingDomains, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.intersectingDomains) &&
         Objects.equals(this.ignoreSynonyms, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.ignoreSynonyms) &&
         Objects.equals(this.tag, dataforseoLabsGoogleCompetitorsDomainLiveRequestInfo.tag);  
@@ -579,7 +611,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, filters, orderBy, limit, offset, maxRankGroup, excludeTopDomains, intersectingDomains, ignoreSynonyms, tag);
+  return Objects.hash(target, locationName, locationCode, languageName, languageCode, itemTypes, includeClickstreamData, filters, orderBy, limit, offset, maxRankGroup, excludeTopDomains, excludeDomains, intersectingDomains, ignoreSynonyms, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -607,6 +639,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo  {
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
     sb.append("    maxRankGroup: ").append(toIndentedString(maxRankGroup)).append("\n");
     sb.append("    excludeTopDomains: ").append(toIndentedString(excludeTopDomains)).append("\n");
+    sb.append("    excludeDomains: ").append(toIndentedString(excludeDomains)).append("\n");
     sb.append("    intersectingDomains: ").append(toIndentedString(intersectingDomains)).append("\n");
     sb.append("    ignoreSynonyms: ").append(toIndentedString(ignoreSynonyms)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -658,6 +691,8 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo  {
     openapiFields.add("max_rank_group");
     
     openapiFields.add("exclude_top_domains");
+    
+    openapiFields.add("exclude_domains");
     
     openapiFields.add("intersecting_domains");
     

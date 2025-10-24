@@ -94,7 +94,7 @@ public class GoogleFlightsElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable

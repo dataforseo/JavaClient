@@ -71,7 +71,7 @@ public class JobsElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -258,7 +258,7 @@ public class JobsElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable

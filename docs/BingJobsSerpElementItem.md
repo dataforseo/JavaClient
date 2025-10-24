@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the item |[optional]|
-**url** | **String** | URL |[optional]|
-**items** | **List<JobsElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**title** | **String** | title of the result in SERP |[optional]|
+**url** | **String** | relevant URL |[optional]|
+**items** | **List<JobsElement>** | additional items present in the element<br>if there are none, equals null |[optional]|

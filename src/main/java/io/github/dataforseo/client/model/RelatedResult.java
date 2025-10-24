@@ -118,7 +118,7 @@ public class RelatedResult  {
   }
 
   /**
-   * domain where a link points
+   * website domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -141,7 +141,7 @@ public class RelatedResult  {
   }
 
   /**
-   * title of the link
+   * reference page title
    * @return title
    */
   @javax.annotation.Nullable
@@ -164,7 +164,7 @@ public class RelatedResult  {
   }
 
   /**
-   * reference page URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -435,24 +435,24 @@ public class RelatedResult  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public RelatedResult rating(RatingElement rating) {
+  public RelatedResult rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
 
   /**
-   * the item’s rating 
+   * the element’s rating
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 
@@ -467,7 +467,7 @@ public class RelatedResult  {
   }
 
   /**
-   * price of booking a place for the specified dates of stay
+   * price indicated in the element
    * @return price
    */
   @javax.annotation.Nullable

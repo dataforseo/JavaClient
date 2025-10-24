@@ -73,7 +73,7 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

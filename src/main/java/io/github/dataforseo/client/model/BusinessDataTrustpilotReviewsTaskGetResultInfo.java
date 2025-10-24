@@ -230,9 +230,9 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public BusinessDataTrustpilotReviewsTaskGetResultInfo rating(RatingElement rating) {
+  public BusinessDataTrustpilotReviewsTaskGetResultInfo rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -243,11 +243,11 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

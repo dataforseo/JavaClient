@@ -99,7 +99,7 @@ public class MapSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable

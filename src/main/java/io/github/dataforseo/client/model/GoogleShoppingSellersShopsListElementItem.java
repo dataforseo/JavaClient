@@ -86,6 +86,30 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
 
+  public static final String SERIALIZED_NAME_RATING = "rating";
+  @SerializedName(SERIALIZED_NAME_RATING)
+  private RatingElement rating;
+
+  public GoogleShoppingSellersShopsListElementItem rating(RatingElement rating) {
+    this.rating = rating;
+    return this;
+  }
+
+  /**
+   * shop rating
+* the shop popularity rate based on product reviews
+   * @return rating
+   */
+  @javax.annotation.Nullable
+  public RatingElement getRating() {
+    return rating;
+  }
+
+  public void setRating(RatingElement rating) {
+    this.rating = rating;
+  }
+
+
   public static final String SERIALIZED_NAME_PRODUCT_CONDITION = "product_condition";
   @SerializedName(SERIALIZED_NAME_PRODUCT_CONDITION)
   private String productCondition;
@@ -180,6 +204,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
 
         Objects.equals(this.priceMultiplier, googleShoppingSellersShopsListElementItem.priceMultiplier) &&
         Objects.equals(this.displayedPaymentBreakdown, googleShoppingSellersShopsListElementItem.displayedPaymentBreakdown) &&
+        Objects.equals(this.rating, googleShoppingSellersShopsListElementItem.rating) &&
         Objects.equals(this.productCondition, googleShoppingSellersShopsListElementItem.productCondition) &&
         Objects.equals(this.productAnnotation, googleShoppingSellersShopsListElementItem.productAnnotation) && 
         super.equals(o);
@@ -192,7 +217,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
 
   @Override
   public int hashCode() {
-  return Objects.hash(priceMultiplier, displayedPaymentBreakdown, productCondition, productAnnotation);
+  return Objects.hash(priceMultiplier, displayedPaymentBreakdown, rating, productCondition, productAnnotation);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -209,6 +234,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
 
     sb.append("    priceMultiplier: ").append(toIndentedString(priceMultiplier)).append("\n");
     sb.append("    displayedPaymentBreakdown: ").append(toIndentedString(displayedPaymentBreakdown)).append("\n");
+    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    productCondition: ").append(toIndentedString(productCondition)).append("\n");
     sb.append("    productAnnotation: ").append(toIndentedString(productAnnotation)).append("\n");
     sb.append("}");
@@ -248,12 +274,13 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
     openapiFields.add("total_price");
     openapiFields.add("currency");
     openapiFields.add("seller_name");
-    openapiFields.add("rating");
     openapiFields.add("shop_ad_aclk");
     
     openapiFields.add("price_multiplier");
     
     openapiFields.add("displayed_payment_breakdown");
+    
+    openapiFields.add("rating");
     
     openapiFields.add("product_condition");
     

@@ -71,7 +71,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * price indicated in the element
+   * price of the app element
    * @return price
    */
   @javax.annotation.Nullable
@@ -165,7 +165,7 @@ public class ShoppingElement  {
 
   /**
    * merchant account provider
-* commerce site that hosts products or websites of individual sellers under the same merchant account
+* ecommerce site that hosts products or websites of individual sellers under the same merchant account
 * example:
 * by Google
    * @return marketplace
@@ -190,8 +190,8 @@ public class ShoppingElement  {
   }
 
   /**
-   * relevant marketplace URL
-* URL of the page on the marketplace website where the product is hosted
+   * URL to the merchant account provider
+* ecommerce site that hosts products or websites of individual sellers under the same merchant account
    * @return marketplaceUrl
    */
   @javax.annotation.Nullable
@@ -214,7 +214,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable
@@ -229,24 +229,24 @@ public class ShoppingElement  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public ShoppingElement rating(RatingElement rating) {
+  public ShoppingElement rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
 
   /**
-   * the item’s rating 
+   * the element’s rating 
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

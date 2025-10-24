@@ -99,7 +99,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -145,7 +145,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * text alongside the link title
+   * description of the shopping element
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -168,7 +168,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * price indicated in the element
+   * price of the shopping element
    * @return price
    */
   @javax.annotation.Nullable

@@ -40,9 +40,9 @@ public class BusinessDataBusinessListingsAvailableFiltersResultInfo  {
 
   public static final String SERIALIZED_NAME_SEARCH = "search";
   @SerializedName(SERIALIZED_NAME_SEARCH)
-  private Map<String, String> search;
+  private Info search;
 
-  public BusinessDataBusinessListingsAvailableFiltersResultInfo search(Map<String, String> search) {
+  public BusinessDataBusinessListingsAvailableFiltersResultInfo search(Info search) {
     this.search = search;
     return this;
   }
@@ -52,20 +52,20 @@ public class BusinessDataBusinessListingsAvailableFiltersResultInfo  {
    * @return search
    */
   @javax.annotation.Nullable
-  public Map<String, String> getSearch() {
+  public Info getSearch() {
     return search;
   }
 
-  public void setSearch(Map<String, String> search) {
+  public void setSearch(Info search) {
     this.search = search;
   }
 
 
   public static final String SERIALIZED_NAME_CATEGORIES_AGGREGATION = "categories_aggregation";
   @SerializedName(SERIALIZED_NAME_CATEGORIES_AGGREGATION)
-  private Map<String, String> categoriesAggregation;
+  private Info categoriesAggregation;
 
-  public BusinessDataBusinessListingsAvailableFiltersResultInfo categoriesAggregation(Map<String, String> categoriesAggregation) {
+  public BusinessDataBusinessListingsAvailableFiltersResultInfo categoriesAggregation(Info categoriesAggregation) {
     this.categoriesAggregation = categoriesAggregation;
     return this;
   }
@@ -75,11 +75,11 @@ public class BusinessDataBusinessListingsAvailableFiltersResultInfo  {
    * @return categoriesAggregation
    */
   @javax.annotation.Nullable
-  public Map<String, String> getCategoriesAggregation() {
+  public Info getCategoriesAggregation() {
     return categoriesAggregation;
   }
 
-  public void setCategoriesAggregation(Map<String, String> categoriesAggregation) {
+  public void setCategoriesAggregation(Info categoriesAggregation) {
     this.categoriesAggregation = categoriesAggregation;
   }
 

@@ -317,9 +317,9 @@ public class GoogleBusinessQuestionItem  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private GoogleBusinessAnswerElement items;
+  private List<GoogleBusinessAnswerElement> items;
 
-  public GoogleBusinessQuestionItem items(GoogleBusinessAnswerElement items) {
+  public GoogleBusinessQuestionItem items(List<GoogleBusinessAnswerElement> items) {
     this.items = items;
     return this;
   }
@@ -330,11 +330,11 @@ public class GoogleBusinessQuestionItem  {
    * @return items
    */
   @javax.annotation.Nullable
-  public GoogleBusinessAnswerElement getItems() {
+  public List<GoogleBusinessAnswerElement> getItems() {
     return items;
   }
 
-  public void setItems(GoogleBusinessAnswerElement items) {
+  public void setItems(List<GoogleBusinessAnswerElement> items) {
     this.items = items;
   }
 

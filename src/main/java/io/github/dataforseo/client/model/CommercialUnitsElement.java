@@ -71,7 +71,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class CommercialUnitsElement  {
   }
 
   /**
-   * price indicated in the element
+   * price of the app element
    * @return price
    */
   @javax.annotation.Nullable
@@ -179,24 +179,24 @@ public class CommercialUnitsElement  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public CommercialUnitsElement rating(RatingElement rating) {
+  public CommercialUnitsElement rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
 
   /**
-   * the item’s rating 
+   * the element’s rating 
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

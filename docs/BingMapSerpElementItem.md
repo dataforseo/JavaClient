@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the item |[optional]|
-**url** | **String** | URL |[optional]|
+**title** | **String** | title of the result in SERP |[optional]|
+**url** | **String** | relevant URL |[optional]|

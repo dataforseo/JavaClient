@@ -333,7 +333,7 @@ public class SerpGoogleAiModeTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * elements of search results found in SERP
+   * items present in the element
    * @return items
    */
   @javax.annotation.Nullable

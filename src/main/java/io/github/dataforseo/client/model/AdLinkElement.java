@@ -71,7 +71,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * reference page title
+   * title of the element in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * reference page URL
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable

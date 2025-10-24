@@ -5,11 +5,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the item |[optional]|
+**title** | **String** | title of the result in SERP |[optional]|
 **description** | **String** | description of the results element in SERP |[optional]|
-**domain** | **String** | domain where the video is hosted |[optional]|
+**domain** | **String** | domain of the organic result |[optional]|
 **phone** | **String** | phone number |[optional]|
-**url** | **String** | URL |[optional]|
+**url** | **String** | relevant URL |[optional]|
 **isPaid** | **Boolean** | indicates whether the element is an ad |[optional]|
-**rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**rating** | **RatingInfo** | the item’s rating<br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **cid** | **String** | bing-defined client id<br>unique id of a local establishment |[optional]|

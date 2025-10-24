@@ -71,7 +71,7 @@ public class EventsElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class EventsElement  {
   }
 
   /**
-   * text alongside the link title
+   * text alongside the title
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class EventsElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable

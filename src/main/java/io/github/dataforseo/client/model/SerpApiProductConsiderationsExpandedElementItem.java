@@ -48,7 +48,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * text alongside the title
+   * additional information for the video
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * domain where a link points
+   * source domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -163,7 +163,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable

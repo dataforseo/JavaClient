@@ -38,6 +38,30 @@ import io.github.dataforseo.client.JSON;
 public class GoogleShoppingSellersBuyOnGoogleElementItem  extends BaseMerchantGoogleShoppingSellersElementItem  {
 
 
+  public static final String SERIALIZED_NAME_RATING = "rating";
+  @SerializedName(SERIALIZED_NAME_RATING)
+  private RatingInfo rating;
+
+  public GoogleShoppingSellersBuyOnGoogleElementItem rating(RatingInfo rating) {
+    this.rating = rating;
+    return this;
+  }
+
+  /**
+   * shop rating
+* the shop popularity rate based on product reviews
+   * @return rating
+   */
+  @javax.annotation.Nullable
+  public RatingInfo getRating() {
+    return rating;
+  }
+
+  public void setRating(RatingInfo rating) {
+    this.rating = rating;
+  }
+
+
 
   public GoogleShoppingSellersBuyOnGoogleElementItem() {
   }
@@ -78,9 +102,11 @@ public class GoogleShoppingSellersBuyOnGoogleElementItem  extends BaseMerchantGo
 
 
     
-      
-    return super.equals(o);
-      
+    GoogleShoppingSellersBuyOnGoogleElementItem googleShoppingSellersBuyOnGoogleElementItem = (GoogleShoppingSellersBuyOnGoogleElementItem) o;
+    return
+
+        Objects.equals(this.rating, googleShoppingSellersBuyOnGoogleElementItem.rating) && 
+        super.equals(o);
     
   }
 
@@ -90,7 +116,7 @@ public class GoogleShoppingSellersBuyOnGoogleElementItem  extends BaseMerchantGo
 
   @Override
   public int hashCode() {
-  return Objects.hash();
+  return Objects.hash(rating);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -105,6 +131,7 @@ public class GoogleShoppingSellersBuyOnGoogleElementItem  extends BaseMerchantGo
     StringBuilder sb = new StringBuilder();
     sb.append("class GoogleShoppingSellersBuyOnGoogleElementItem {\n");
 
+    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -142,8 +169,9 @@ public class GoogleShoppingSellersBuyOnGoogleElementItem  extends BaseMerchantGo
     openapiFields.add("total_price");
     openapiFields.add("currency");
     openapiFields.add("seller_name");
-    openapiFields.add("rating");
     openapiFields.add("shop_ad_aclk");
+    
+    openapiFields.add("rating");
     
 
     // a set of required properties/fields (JSON key names)

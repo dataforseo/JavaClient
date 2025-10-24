@@ -71,7 +71,7 @@ public class TopSightsElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class TopSightsElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable
@@ -132,24 +132,24 @@ public class TopSightsElement  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public TopSightsElement rating(RatingElement rating) {
+  public TopSightsElement rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
 
   /**
-   * the item’s rating 
+   * the element’s rating 
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

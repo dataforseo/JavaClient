@@ -8,7 +8,7 @@
 **type** | **String** | type of element |[optional]|
 **featuredTitle** | **String** | title |[optional]|
 **url** | **String** | URL |[optional]|
-**domain** | **String** | domain name of the reference |[optional]|
+**domain** | **String** | domain in SERP |[optional]|
 **title** | **String** | title of the result in SERP |[optional]|
 **description** | **String** | description of the results element in SERP |[optional]|
 **images** | **List<AiModeImagesElementInfo>** | images of the element |[optional]|

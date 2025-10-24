@@ -71,7 +71,7 @@ public class ProductConsiderationsElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable

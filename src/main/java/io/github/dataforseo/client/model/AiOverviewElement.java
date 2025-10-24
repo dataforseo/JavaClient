@@ -71,7 +71,7 @@ public class AiOverviewElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the carousel item
    * @return title
    */
   @javax.annotation.Nullable

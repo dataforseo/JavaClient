@@ -48,7 +48,7 @@ public class BingJobsSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the item
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -71,7 +71,7 @@ public class BingJobsSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -94,7 +94,8 @@ public class BingJobsSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * additional items present in the element
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

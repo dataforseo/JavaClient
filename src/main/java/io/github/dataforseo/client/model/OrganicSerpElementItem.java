@@ -517,8 +517,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result
+   * price of booking a place for the specified dates of stay
    * @return price
    */
   @javax.annotation.Nullable

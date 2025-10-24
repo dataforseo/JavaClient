@@ -71,7 +71,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable
@@ -164,7 +164,7 @@ public class QuestionsAndAnswersElement  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable

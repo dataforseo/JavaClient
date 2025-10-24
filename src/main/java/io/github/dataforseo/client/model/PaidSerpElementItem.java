@@ -402,8 +402,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result
+   * price of booking a place for the specified dates of stay
    * @return price
    */
   @javax.annotation.Nullable
@@ -418,9 +417,9 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public PaidSerpElementItem rating(RatingElement rating) {
+  public PaidSerpElementItem rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -431,11 +430,11 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

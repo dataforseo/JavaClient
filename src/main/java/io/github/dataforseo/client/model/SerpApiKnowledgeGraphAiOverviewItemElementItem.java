@@ -73,8 +73,7 @@ public class SerpApiKnowledgeGraphAiOverviewItemElementItem  extends BaseSerpApi
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * contains results featured in the ‘hotels_pack’ element of SERP
    * @return items
    */
   @javax.annotation.Nullable

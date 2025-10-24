@@ -384,6 +384,88 @@ public class SerpGoogleOrganicLiveRegularRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
+  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
+  private List<String> stopCrawlOnMatch;
+
+  public SerpGoogleOrganicLiveRegularRequestInfo stopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* optional field
+* if specified, the response will contain SERP results up to and including the specified match_value;
+* you can specify up to 10 target values in this array
+* example:
+* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+* Your account will be billed per each SERP crawled through the specified targets;
+   * @return stopCrawlOnMatch
+   */
+  @javax.annotation.Nullable
+  public List<String> getStopCrawlOnMatch() {
+    return stopCrawlOnMatch;
+  }
+
+  public void setStopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpGoogleOrganicLiveRegularRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* specify a target domain or wildcard value;
+* Note: domain name must be specified without a request protocol;
+* example: dataforseo.com
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private List<String> matchType;
+
+  public SerpGoogleOrganicLiveRegularRequestInfo matchType(List<String> matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public List<String> getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(List<String> matchType) {
+    this.matchType = matchType;
+  }
+
+
   public static final String SERIALIZED_NAME_GROUP_ORGANIC_RESULTS = "group_organic_results";
   @SerializedName(SERIALIZED_NAME_GROUP_ORGANIC_RESULTS)
   private Boolean groupOrganicResults;
@@ -548,6 +630,9 @@ public class SerpGoogleOrganicLiveRegularRequestInfo  {
         Objects.equals(this.seDomain, serpGoogleOrganicLiveRegularRequestInfo.seDomain) &&
         Objects.equals(this.depth, serpGoogleOrganicLiveRegularRequestInfo.depth) &&
         Objects.equals(this.target, serpGoogleOrganicLiveRegularRequestInfo.target) &&
+        Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicLiveRegularRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchValue, serpGoogleOrganicLiveRegularRequestInfo.matchValue) &&
+        Objects.equals(this.matchType, serpGoogleOrganicLiveRegularRequestInfo.matchType) &&
         Objects.equals(this.groupOrganicResults, serpGoogleOrganicLiveRegularRequestInfo.groupOrganicResults) &&
         Objects.equals(this.maxCrawlPages, serpGoogleOrganicLiveRegularRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpGoogleOrganicLiveRegularRequestInfo.searchParam) &&
@@ -561,7 +646,7 @@ public class SerpGoogleOrganicLiveRegularRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, target, groupOrganicResults, maxCrawlPages, searchParam, tag);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, target, stopCrawlOnMatch, matchValue, matchType, groupOrganicResults, maxCrawlPages, searchParam, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -588,6 +673,9 @@ public class SerpGoogleOrganicLiveRegularRequestInfo  {
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
+    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    groupOrganicResults: ").append(toIndentedString(groupOrganicResults)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
@@ -638,6 +726,12 @@ public class SerpGoogleOrganicLiveRegularRequestInfo  {
     openapiFields.add("depth");
     
     openapiFields.add("target");
+    
+    openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_value");
+    
+    openapiFields.add("match_type");
     
     openapiFields.add("group_organic_results");
     

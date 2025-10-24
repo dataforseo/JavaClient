@@ -415,6 +415,88 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
+  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
+  private List<String> stopCrawlOnMatch;
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo stopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* optional field
+* if specified, the response will contain SERP results up to and including the specified match_value;
+* you can specify up to 10 target values in this array
+* example:
+* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+* Your account will be billed per each SERP crawled through the specified targets;
+   * @return stopCrawlOnMatch
+   */
+  @javax.annotation.Nullable
+  public List<String> getStopCrawlOnMatch() {
+    return stopCrawlOnMatch;
+  }
+
+  public void setStopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* specify a target domain or wildcard value;
+* Note: domain name must be specified without a request protocol;
+* example: dataforseo.com
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private List<String> matchType;
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo matchType(List<String> matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public List<String> getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(List<String> matchType) {
+    this.matchType = matchType;
+  }
+
+
   public static final String SERIALIZED_NAME_GROUP_ORGANIC_RESULTS = "group_organic_results";
   @SerializedName(SERIALIZED_NAME_GROUP_ORGANIC_RESULTS)
   private Boolean groupOrganicResults;
@@ -754,6 +836,9 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
         Objects.equals(this.device, serpGoogleOrganicLiveAdvancedRequestInfo.device) &&
         Objects.equals(this.os, serpGoogleOrganicLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.target, serpGoogleOrganicLiveAdvancedRequestInfo.target) &&
+        Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicLiveAdvancedRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchValue, serpGoogleOrganicLiveAdvancedRequestInfo.matchValue) &&
+        Objects.equals(this.matchType, serpGoogleOrganicLiveAdvancedRequestInfo.matchType) &&
         Objects.equals(this.groupOrganicResults, serpGoogleOrganicLiveAdvancedRequestInfo.groupOrganicResults) &&
         Objects.equals(this.calculateRectangles, serpGoogleOrganicLiveAdvancedRequestInfo.calculateRectangles) &&
         Objects.equals(this.browserScreenWidth, serpGoogleOrganicLiveAdvancedRequestInfo.browserScreenWidth) &&
@@ -773,7 +858,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, searchParam, removeFromUrl, tag);
+  return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, stopCrawlOnMatch, matchValue, matchType, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, searchParam, removeFromUrl, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -801,6 +886,9 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
+    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    groupOrganicResults: ").append(toIndentedString(groupOrganicResults)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
@@ -859,6 +947,12 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     openapiFields.add("os");
     
     openapiFields.add("target");
+    
+    openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_value");
+    
+    openapiFields.add("match_type");
     
     openapiFields.add("group_organic_results");
     

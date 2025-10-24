@@ -287,9 +287,9 @@ public class KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo  {
 
   public static final String SERIALIZED_NAME_CPC = "cpc";
   @SerializedName(SERIALIZED_NAME_CPC)
-  private Double cpc;
+  private Integer cpc;
 
-  public KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo cpc(Double cpc) {
+  public KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo cpc(Integer cpc) {
     this.cpc = cpc;
     return this;
   }
@@ -300,11 +300,11 @@ public class KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo  {
    * @return cpc
    */
   @javax.annotation.Nullable
-  public Double getCpc() {
+  public Integer getCpc() {
     return cpc;
   }
 
-  public void setCpc(Double cpc) {
+  public void setCpc(Integer cpc) {
     this.cpc = cpc;
   }
 

@@ -117,7 +117,7 @@ public class BaseSerpApiBingPeopleAlsoAskExpandedElementItem  {
   }
 
   /**
-   * domain name of the reference
+   * domain in SERP
    * @return domain
    */
   @javax.annotation.Nullable

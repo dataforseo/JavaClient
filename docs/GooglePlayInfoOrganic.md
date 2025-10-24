@@ -15,7 +15,7 @@
 **icon** | **String** | URL to the app icon |[optional]|
 **description** | **String** | description of the app |[optional]|
 **reviewsCount** | **Long** | the total number of reviews the app has |[optional]|
-**rating** | **RatingElement** | average rating of the app |[optional]|
+**rating** | **RatingInfo** | average rating of the app |[optional]|
 **price** | **PriceInfo** | price of the app |[optional]|
 **isFree** | **Boolean** | indicates whether the app is free |[optional]|
 **mainCategory** | **String** | main category of the app |[optional]|

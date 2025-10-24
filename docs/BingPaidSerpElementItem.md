@@ -18,5 +18,5 @@
 **extra** | **Map<String, String>** | additional information about the result |[optional]|
 **descriptionRows** | **List<String>** | extended description<br>if there is none, equals null |[optional]|
 **links** | **List<AdLinkElement>** | links featured in the organic result |[optional]|
-**price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|
-**rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**price** | **PriceInfo** | price of the shopping element |[optional]|
+**rating** | **RatingInfo** | the item’s rating<br>the popularity rate based on reviews and displayed in SERP |[optional]|

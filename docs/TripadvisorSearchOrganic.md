@@ -14,4 +14,4 @@
 **reviewsCount** | **Long** | the total number of reviews |[optional]|
 **category** | **String** | place category |[optional]|
 **priceRate** | **String** | average price rate |[optional]|
-**rating** | **RatingElement** | the rating score of the establishment submitted by the reviewers |[optional]|
+**rating** | **RatingInfo** | the rating score of the establishment submitted by the reviewers |[optional]|

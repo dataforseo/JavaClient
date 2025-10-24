@@ -20,7 +20,7 @@
 **extendedSnippet** | **String** | includes additional information appended after the result description in SERP |[optional]|
 **images** | **List<AiModeImagesElementInfo>** | images of the element |[optional]|
 **ampVersion** | **Boolean** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
-**rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result |[optional]|
 **highlighted** | **List<String>** | words highlighted in bold within the results description |[optional]|
 **links** | **List<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|

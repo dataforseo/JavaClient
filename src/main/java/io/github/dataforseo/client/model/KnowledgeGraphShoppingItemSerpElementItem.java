@@ -99,7 +99,7 @@ public class KnowledgeGraphShoppingItemSerpElementItem  extends BaseSerpApiEleme
   }
 
   /**
-   * reference page title
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -147,7 +147,7 @@ public class KnowledgeGraphShoppingItemSerpElementItem  extends BaseSerpApiEleme
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

@@ -526,6 +526,34 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
 
+  public static final String SERIALIZED_NAME_GID = "gid";
+  @SerializedName(SERIALIZED_NAME_GID)
+  private String gid;
+
+  public GoogleShoppingSerpElementItem gid(String gid) {
+    this.gid = gid;
+    return this;
+  }
+
+  /**
+   * global product identifier on Google Shopping
+* note that there is no full list of possible values as the gid is a dynamic value assigned by Google
+* if there are no values, you will get null
+* example:
+* 4702526954592161872
+* learn more about gid parameter in this help center guide
+   * @return gid
+   */
+  @javax.annotation.Nullable
+  public String getGid() {
+    return gid;
+  }
+
+  public void setGid(String gid) {
+    this.gid = gid;
+  }
+
+
   public static final String SERIALIZED_NAME_DELIVERY_INFO = "delivery_info";
   @SerializedName(SERIALIZED_NAME_DELIVERY_INFO)
   private DeliveryInfo deliveryInfo;
@@ -637,6 +665,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
         Objects.equals(this.shopRating, googleShoppingSerpElementItem.shopRating) &&
         Objects.equals(this.productImages, googleShoppingSerpElementItem.productImages) &&
         Objects.equals(this.shopAdAclk, googleShoppingSerpElementItem.shopAdAclk) &&
+        Objects.equals(this.gid, googleShoppingSerpElementItem.gid) &&
         Objects.equals(this.deliveryInfo, googleShoppingSerpElementItem.deliveryInfo) &&
         Objects.equals(this.storesCountInfo, googleShoppingSerpElementItem.storesCountInfo) && 
         super.equals(o);
@@ -649,7 +678,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, title, description, url, shoppingUrl, tags, price, priceMultiplier, oldPrice, currency, productId, dataDocid, seller, additionalSpecifications, reviewsCount, isBestMatch, productRating, shopRating, productImages, shopAdAclk, deliveryInfo, storesCountInfo);
+  return Objects.hash(domain, title, description, url, shoppingUrl, tags, price, priceMultiplier, oldPrice, currency, productId, dataDocid, seller, additionalSpecifications, reviewsCount, isBestMatch, productRating, shopRating, productImages, shopAdAclk, gid, deliveryInfo, storesCountInfo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -684,6 +713,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
     sb.append("    shopRating: ").append(toIndentedString(shopRating)).append("\n");
     sb.append("    productImages: ").append(toIndentedString(productImages)).append("\n");
     sb.append("    shopAdAclk: ").append(toIndentedString(shopAdAclk)).append("\n");
+    sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
     sb.append("    deliveryInfo: ").append(toIndentedString(deliveryInfo)).append("\n");
     sb.append("    storesCountInfo: ").append(toIndentedString(storesCountInfo)).append("\n");
     sb.append("}");
@@ -753,6 +783,8 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
     openapiFields.add("product_images");
     
     openapiFields.add("shop_ad_aclk");
+    
+    openapiFields.add("gid");
     
     openapiFields.add("delivery_info");
     

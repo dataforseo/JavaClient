@@ -15,7 +15,7 @@
 **title** | **String** | title of the product |[optional]|
 **url** | **String** | URL to the product page |[optional]|
 **imageUrl** | **String** | URL to the product image |[optional]|
-**rating** | **RatingElement** | product rating<br>the product popularity rate based on product reviews |[optional]|
+**rating** | **RatingInfo** | product rating<br>the product popularity rate based on product reviews |[optional]|
 **itemTypes** | **List<String>** | types of search results found in Google Shopping SERP<br>contains types of all search results (items) found in the returned SERP<br>possible item types:<br>shops_list, buy_on_google |[optional]|
 **itemsCount** | **Long** | the number of results returned in the items array |[optional]|
 **items** | **List<BaseMerchantGoogleShoppingSellersElementItem>** | items in SERP |[optional]|

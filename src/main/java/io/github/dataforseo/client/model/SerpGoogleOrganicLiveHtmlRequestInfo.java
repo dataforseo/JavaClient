@@ -460,6 +460,88 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
+  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
+  private List<String> stopCrawlOnMatch;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo stopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* optional field
+* if specified, the response will contain SERP results up to and including the specified match_value;
+* you can specify up to 10 target values in this array
+* example:
+* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+* Your account will be billed per each SERP crawled through the specified targets;
+   * @return stopCrawlOnMatch
+   */
+  @javax.annotation.Nullable
+  public List<String> getStopCrawlOnMatch() {
+    return stopCrawlOnMatch;
+  }
+
+  public void setStopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* specify a target domain or wildcard value;
+* Note: domain name must be specified without a request protocol;
+* example: dataforseo.com
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private List<String> matchType;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo matchType(List<String> matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public List<String> getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(List<String> matchType) {
+    this.matchType = matchType;
+  }
+
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -545,6 +627,9 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
         Objects.equals(this.searchParam, serpGoogleOrganicLiveHtmlRequestInfo.searchParam) &&
         Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicLiveHtmlRequestInfo.loadAsyncAiOverview) &&
         Objects.equals(this.expandAiOverview, serpGoogleOrganicLiveHtmlRequestInfo.expandAiOverview) &&
+        Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicLiveHtmlRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchValue, serpGoogleOrganicLiveHtmlRequestInfo.matchValue) &&
+        Objects.equals(this.matchType, serpGoogleOrganicLiveHtmlRequestInfo.matchType) &&
         Objects.equals(this.tag, serpGoogleOrganicLiveHtmlRequestInfo.tag);  
     
   }
@@ -555,7 +640,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, loadAsyncAiOverview, expandAiOverview, tag);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, loadAsyncAiOverview, expandAiOverview, stopCrawlOnMatch, matchValue, matchType, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -585,6 +670,9 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
     sb.append("    expandAiOverview: ").append(toIndentedString(expandAiOverview)).append("\n");
+    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -638,6 +726,12 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
     openapiFields.add("load_async_ai_overview");
     
     openapiFields.add("expand_ai_overview");
+    
+    openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_value");
+    
+    openapiFields.add("match_type");
     
     openapiFields.add("tag");
     

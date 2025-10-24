@@ -71,7 +71,7 @@ public class AppElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class AppElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class AppElement  {
   }
 
   /**
-   * price indicated in the element
+   * price of the app element
    * @return price
    */
   @javax.annotation.Nullable

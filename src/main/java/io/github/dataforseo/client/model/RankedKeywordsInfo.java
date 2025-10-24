@@ -38,72 +38,72 @@ import io.github.dataforseo.client.JSON;
 public class RankedKeywordsInfo  {
 
 
-  public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP_3 = "page_from_keywords_count_top_3";
-  @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP_3)
-  private Long pageFromKeywordsCountTop3;
+  public static final String SERIALIZED_NAME_GOOGLE = "google";
+  @SerializedName(SERIALIZED_NAME_GOOGLE)
+  private DataforseoLabsAvailableFiltersGoogleInfo google;
 
-  public RankedKeywordsInfo pageFromKeywordsCountTop3(Long pageFromKeywordsCountTop3) {
-    this.pageFromKeywordsCountTop3 = pageFromKeywordsCountTop3;
+  public RankedKeywordsInfo google(DataforseoLabsAvailableFiltersGoogleInfo google) {
+    this.google = google;
     return this;
   }
 
   /**
-   * number of keywords for which the page is ranked in top 3 search results
-   * @return pageFromKeywordsCountTop3
+   * 
+   * @return google
    */
   @javax.annotation.Nullable
-  public Long getPageFromKeywordsCountTop3() {
-    return pageFromKeywordsCountTop3;
+  public DataforseoLabsAvailableFiltersGoogleInfo getGoogle() {
+    return google;
   }
 
-  public void setPageFromKeywordsCountTop3(Long pageFromKeywordsCountTop3) {
-    this.pageFromKeywordsCountTop3 = pageFromKeywordsCountTop3;
+  public void setGoogle(DataforseoLabsAvailableFiltersGoogleInfo google) {
+    this.google = google;
   }
 
 
-  public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP_10 = "page_from_keywords_count_top_10";
-  @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP_10)
-  private Long pageFromKeywordsCountTop10;
+  public static final String SERIALIZED_NAME_BING = "bing";
+  @SerializedName(SERIALIZED_NAME_BING)
+  private Map<String, String> bing;
 
-  public RankedKeywordsInfo pageFromKeywordsCountTop10(Long pageFromKeywordsCountTop10) {
-    this.pageFromKeywordsCountTop10 = pageFromKeywordsCountTop10;
+  public RankedKeywordsInfo bing(Map<String, String> bing) {
+    this.bing = bing;
     return this;
   }
 
   /**
-   * number of keywords for which the page is ranked in top 10 search results
-   * @return pageFromKeywordsCountTop10
+   * 
+   * @return bing
    */
   @javax.annotation.Nullable
-  public Long getPageFromKeywordsCountTop10() {
-    return pageFromKeywordsCountTop10;
+  public Map<String, String> getBing() {
+    return bing;
   }
 
-  public void setPageFromKeywordsCountTop10(Long pageFromKeywordsCountTop10) {
-    this.pageFromKeywordsCountTop10 = pageFromKeywordsCountTop10;
+  public void setBing(Map<String, String> bing) {
+    this.bing = bing;
   }
 
 
-  public static final String SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP_100 = "page_from_keywords_count_top_100";
-  @SerializedName(SERIALIZED_NAME_PAGE_FROM_KEYWORDS_COUNT_TOP_100)
-  private Long pageFromKeywordsCountTop100;
+  public static final String SERIALIZED_NAME_AMAZON = "amazon";
+  @SerializedName(SERIALIZED_NAME_AMAZON)
+  private DataforseoLabsAvailableFiltersAmazonInfo amazon;
 
-  public RankedKeywordsInfo pageFromKeywordsCountTop100(Long pageFromKeywordsCountTop100) {
-    this.pageFromKeywordsCountTop100 = pageFromKeywordsCountTop100;
+  public RankedKeywordsInfo amazon(DataforseoLabsAvailableFiltersAmazonInfo amazon) {
+    this.amazon = amazon;
     return this;
   }
 
   /**
-   * number of keywords for which the page is ranked in top 100 search results
-   * @return pageFromKeywordsCountTop100
+   * 
+   * @return amazon
    */
   @javax.annotation.Nullable
-  public Long getPageFromKeywordsCountTop100() {
-    return pageFromKeywordsCountTop100;
+  public DataforseoLabsAvailableFiltersAmazonInfo getAmazon() {
+    return amazon;
   }
 
-  public void setPageFromKeywordsCountTop100(Long pageFromKeywordsCountTop100) {
-    this.pageFromKeywordsCountTop100 = pageFromKeywordsCountTop100;
+  public void setAmazon(DataforseoLabsAvailableFiltersAmazonInfo amazon) {
+    this.amazon = amazon;
   }
 
 
@@ -150,9 +150,9 @@ public class RankedKeywordsInfo  {
     RankedKeywordsInfo rankedKeywordsInfo = (RankedKeywordsInfo) o;
     return
 
-        Objects.equals(this.pageFromKeywordsCountTop3, rankedKeywordsInfo.pageFromKeywordsCountTop3) &&
-        Objects.equals(this.pageFromKeywordsCountTop10, rankedKeywordsInfo.pageFromKeywordsCountTop10) &&
-        Objects.equals(this.pageFromKeywordsCountTop100, rankedKeywordsInfo.pageFromKeywordsCountTop100);  
+        Objects.equals(this.google, rankedKeywordsInfo.google) &&
+        Objects.equals(this.bing, rankedKeywordsInfo.bing) &&
+        Objects.equals(this.amazon, rankedKeywordsInfo.amazon);  
     
   }
 
@@ -162,7 +162,7 @@ public class RankedKeywordsInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(pageFromKeywordsCountTop3, pageFromKeywordsCountTop10, pageFromKeywordsCountTop100);
+  return Objects.hash(google, bing, amazon);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -177,9 +177,9 @@ public class RankedKeywordsInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class RankedKeywordsInfo {\n");
 
-    sb.append("    pageFromKeywordsCountTop3: ").append(toIndentedString(pageFromKeywordsCountTop3)).append("\n");
-    sb.append("    pageFromKeywordsCountTop10: ").append(toIndentedString(pageFromKeywordsCountTop10)).append("\n");
-    sb.append("    pageFromKeywordsCountTop100: ").append(toIndentedString(pageFromKeywordsCountTop100)).append("\n");
+    sb.append("    google: ").append(toIndentedString(google)).append("\n");
+    sb.append("    bing: ").append(toIndentedString(bing)).append("\n");
+    sb.append("    amazon: ").append(toIndentedString(amazon)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -203,11 +203,11 @@ public class RankedKeywordsInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("page_from_keywords_count_top_3");
+    openapiFields.add("google");
     
-    openapiFields.add("page_from_keywords_count_top_10");
+    openapiFields.add("bing");
     
-    openapiFields.add("page_from_keywords_count_top_100");
+    openapiFields.add("amazon");
     
 
     // a set of required properties/fields (JSON key names)

@@ -203,9 +203,9 @@ public class TrustpilotSearchOrganic  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public TrustpilotSearchOrganic rating(RatingElement rating) {
+  public TrustpilotSearchOrganic rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -215,11 +215,11 @@ public class TrustpilotSearchOrganic  {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

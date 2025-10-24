@@ -7,8 +7,8 @@
 |------------ | ------------- | ------------- | -------------|
 **domain** | **String** | domain in SERP of the Ad element |[optional]|
 **title** | **String** | title of the result in SERP |[optional]|
-**url** | **String** | sitelink URL |[optional]|
-**breadcrumb** | **String** | breadcrumb in SERP |[optional]|
+**url** | **String** | result’s URL |[optional]|
+**breadcrumb** | **String** | breadcrumb of the Ad element in SERP |[optional]|
 **websiteName** | **String** |  |[optional]|
 **isImage** | **Boolean** | indicates whether the element contains an image |[optional]|
 **isVideo** | **Boolean** | indicates whether the element contains a video |[optional]|
@@ -18,7 +18,7 @@
 **preSnippet** | **String** | includes additional information appended before the result description in SERP |[optional]|
 **extendedSnippet** | **String** | includes additional information appended after the result description in SERP |[optional]|
 **ampVersion** | **Boolean** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
-**rating** | **RatingElement** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
 **highlighted** | **List<String>** | words highlighted in bold within the results description |[optional]|
 **links** | **List<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|
 **aboutThisResult** | **AboutThisResultElement** | contains information from the ‘About this result’ panel<br>‘About this result’ panel provides additional context about why Google returned this result for the given query;<br>this feature appears after clicking on the three dots next to most results |[optional]|

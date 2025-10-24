@@ -94,7 +94,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * sitelink URL
+   * result’s URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * breadcrumb in SERP
+   * breadcrumb of the Ad element in SERP
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -340,9 +340,9 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public DataLabsOrganicSerpElementItem rating(RatingElement rating) {
+  public DataLabsOrganicSerpElementItem rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
@@ -353,11 +353,11 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

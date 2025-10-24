@@ -48,7 +48,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the item
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * domain where the video is hosted
+   * domain of the organic result
    * @return domain
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -178,24 +178,24 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
+  private RatingInfo rating;
 
-  public BingLocalPackSerpElementItem rating(RatingElement rating) {
+  public BingLocalPackSerpElementItem rating(RatingInfo rating) {
     this.rating = rating;
     return this;
   }
 
   /**
-   * the item’s rating 
+   * the item’s rating
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingElement getRating() {
+  public RatingInfo getRating() {
     return rating;
   }
 
-  public void setRating(RatingElement rating) {
+  public void setRating(RatingInfo rating) {
     this.rating = rating;
   }
 

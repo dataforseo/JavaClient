@@ -393,30 +393,6 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
   }
 
 
-  public static final String SERIALIZED_NAME_RATING = "rating";
-  @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingElement rating;
-
-  public BaseMerchantGoogleShoppingSellersElementItem rating(RatingElement rating) {
-    this.rating = rating;
-    return this;
-  }
-
-  /**
-   * shop rating
-* the shop popularity rate based on product reviews
-   * @return rating
-   */
-  @javax.annotation.Nullable
-  public RatingElement getRating() {
-    return rating;
-  }
-
-  public void setRating(RatingElement rating) {
-    this.rating = rating;
-  }
-
-
   public static final String SERIALIZED_NAME_SHOP_AD_ACLK = "shop_ad_aclk";
   @SerializedName(SERIALIZED_NAME_SHOP_AD_ACLK)
   private String shopAdAclk;
@@ -476,7 +452,6 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
         Objects.equals(this.totalPrice, baseMerchantGoogleShoppingSellersElementItem.totalPrice) &&
         Objects.equals(this.currency, baseMerchantGoogleShoppingSellersElementItem.currency) &&
         Objects.equals(this.sellerName, baseMerchantGoogleShoppingSellersElementItem.sellerName) &&
-        Objects.equals(this.rating, baseMerchantGoogleShoppingSellersElementItem.rating) &&
         Objects.equals(this.shopAdAclk, baseMerchantGoogleShoppingSellersElementItem.shopAdAclk);  
     
   }
@@ -487,7 +462,7 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, domain, title, url, details, basePrice, tax, shippingPrice, totalPrice, currency, sellerName, rating, shopAdAclk);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, domain, title, url, details, basePrice, tax, shippingPrice, totalPrice, currency, sellerName, shopAdAclk);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -517,7 +492,6 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
     sb.append("    totalPrice: ").append(toIndentedString(totalPrice)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    sellerName: ").append(toIndentedString(sellerName)).append("\n");
-    sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    shopAdAclk: ").append(toIndentedString(shopAdAclk)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -571,8 +545,6 @@ public class BaseMerchantGoogleShoppingSellersElementItem  {
     openapiFields.add("currency");
     
     openapiFields.add("seller_name");
-    
-    openapiFields.add("rating");
     
     openapiFields.add("shop_ad_aclk");
     

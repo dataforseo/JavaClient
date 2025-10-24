@@ -71,7 +71,7 @@ public class SerpApiPeopleAlsoAskExpandedElementItem  extends BaseSerpApiPeopleA
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class SerpApiPeopleAlsoAskExpandedElementItem  extends BaseSerpApiPeopleA
   }
 
   /**
-   * domain where a link points
+   * source domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class SerpApiPeopleAlsoAskExpandedElementItem  extends BaseSerpApiPeopleA
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable

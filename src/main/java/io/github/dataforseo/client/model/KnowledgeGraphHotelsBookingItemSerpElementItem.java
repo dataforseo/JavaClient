@@ -99,7 +99,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * reference page title
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -199,7 +199,7 @@ public class KnowledgeGraphHotelsBookingItemSerpElementItem  extends BaseSerpApi
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

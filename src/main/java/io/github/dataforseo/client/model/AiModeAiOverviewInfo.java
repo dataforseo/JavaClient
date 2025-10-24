@@ -215,7 +215,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * items of the element
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable

@@ -86,9 +86,9 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
 
   public static final String SERIALIZED_NAME_RANKED_KEYWORDS = "ranked_keywords";
   @SerializedName(SERIALIZED_NAME_RANKED_KEYWORDS)
-  private Map<String, Map<String, String>> rankedKeywords;
+  private RankedKeywordsInfo rankedKeywords;
 
-  public DataforseoLabsAvailableFiltersResultInfo rankedKeywords(Map<String, Map<String, String>> rankedKeywords) {
+  public DataforseoLabsAvailableFiltersResultInfo rankedKeywords(RankedKeywordsInfo rankedKeywords) {
     this.rankedKeywords = rankedKeywords;
     return this;
   }
@@ -98,11 +98,11 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
    * @return rankedKeywords
    */
   @javax.annotation.Nullable
-  public Map<String, Map<String, String>> getRankedKeywords() {
+  public RankedKeywordsInfo getRankedKeywords() {
     return rankedKeywords;
   }
 
-  public void setRankedKeywords(Map<String, Map<String, String>> rankedKeywords) {
+  public void setRankedKeywords(RankedKeywordsInfo rankedKeywords) {
     this.rankedKeywords = rankedKeywords;
   }
 
@@ -431,9 +431,9 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
 
   public static final String SERIALIZED_NAME_PRODUCT_KEYWORD_INTERSECTIONS = "product_keyword_intersections";
   @SerializedName(SERIALIZED_NAME_PRODUCT_KEYWORD_INTERSECTIONS)
-  private Map<String, Map<String, String>> productKeywordIntersections;
+  private Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> productKeywordIntersections;
 
-  public DataforseoLabsAvailableFiltersResultInfo productKeywordIntersections(Map<String, Map<String, String>> productKeywordIntersections) {
+  public DataforseoLabsAvailableFiltersResultInfo productKeywordIntersections(Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> productKeywordIntersections) {
     this.productKeywordIntersections = productKeywordIntersections;
     return this;
   }
@@ -443,11 +443,11 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
    * @return productKeywordIntersections
    */
   @javax.annotation.Nullable
-  public Map<String, Map<String, String>> getProductKeywordIntersections() {
+  public Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> getProductKeywordIntersections() {
     return productKeywordIntersections;
   }
 
-  public void setProductKeywordIntersections(Map<String, Map<String, String>> productKeywordIntersections) {
+  public void setProductKeywordIntersections(Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> productKeywordIntersections) {
     this.productKeywordIntersections = productKeywordIntersections;
   }
 

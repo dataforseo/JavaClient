@@ -14,7 +14,7 @@
 **originalReviewText** | **String** | original content of the review<br>the original content of the review, no auto-translate applied |[optional]|
 **timeAgo** | **String** | the time of publication<br>indicates the time (in the ‘time ago’ format) when the review was listed |[optional]|
 **timestamp** | **String** | date and time when a review was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**rating** | **RatingElement** | the rating score submitted by the reviewer |[optional]|
+**rating** | **RatingInfo** | the rating score submitted by the reviewer |[optional]|
 **reviewsCount** | **Long** | total number of reviews submitted by the reviewer |[optional]|
 **photosCount** | **Long** | total number of photos submitted by the reviewer |[optional]|
 **localGuide** | **Boolean** | indicates whether the reviewer has a ‘local guide’ status |[optional]|

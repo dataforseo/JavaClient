@@ -49,7 +49,7 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
 
   /**
    * unique product identifier on Google Shopping
-* required field if data_docid is not specified
+* required field if data_docid or gid is not specified
 * you can get this value for a certain product by making a separate request to the Google Shopping Products endpoint
 * example:
 * 4485466949985702538
@@ -77,7 +77,7 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
 
   /**
    * unique identifier of the SERP data element
-* required field if product_id is not specified
+* required field if product_id or gid is not specified
 * you can get this value for a certain element by making a separate request to the Google Shopping Products endpoint
 * example:
 * 13071766526042404278
@@ -90,6 +90,34 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
 
   public void setDataDocid(String dataDocid) {
     this.dataDocid = dataDocid;
+  }
+
+
+  public static final String SERIALIZED_NAME_GID = "gid";
+  @SerializedName(SERIALIZED_NAME_GID)
+  private String gid;
+
+  public MerchantGoogleProductInfoTaskPostRequestInfo gid(String gid) {
+    this.gid = gid;
+    return this;
+  }
+
+  /**
+   * global product identifier on Google Shopping
+* required field if product_id or data_docid is not specified
+* you can get this value for a certain product by making a separate request to the Google Shopping Products endpoint
+* example:
+* 4702526954592161872
+* learn more about the parameter in this help center guide
+   * @return gid
+   */
+  @javax.annotation.Nullable
+  public String getGid() {
+    return gid;
+  }
+
+  public void setGid(String gid) {
+    this.gid = gid;
   }
 
 
@@ -455,6 +483,7 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
 
         Objects.equals(this.productId, merchantGoogleProductInfoTaskPostRequestInfo.productId) &&
         Objects.equals(this.dataDocid, merchantGoogleProductInfoTaskPostRequestInfo.dataDocid) &&
+        Objects.equals(this.gid, merchantGoogleProductInfoTaskPostRequestInfo.gid) &&
         Objects.equals(this.priority, merchantGoogleProductInfoTaskPostRequestInfo.priority) &&
         Objects.equals(this.locationName, merchantGoogleProductInfoTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, merchantGoogleProductInfoTaskPostRequestInfo.locationCode) &&
@@ -475,7 +504,7 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(productId, dataDocid, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(productId, dataDocid, gid, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -492,6 +521,7 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
 
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    dataDocid: ").append(toIndentedString(dataDocid)).append("\n");
+    sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
@@ -529,6 +559,8 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
     openapiFields.add("product_id");
     
     openapiFields.add("data_docid");
+    
+    openapiFields.add("gid");
     
     openapiFields.add("priority");
     

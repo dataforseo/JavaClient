@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**title** | **String** | title of a given link element |[optional]|
-**domain** | **String** | website domain |[optional]|
-**url** | **String** | URL |[optional]|
+**title** | **String** | title of the row |[optional]|
+**domain** | **String** | domain where a link points |[optional]|
+**url** | **String** | URL of element |[optional]|
 **source** | **String** | source of the element<br>indicates the source of information included in the top_stories_element |[optional]|

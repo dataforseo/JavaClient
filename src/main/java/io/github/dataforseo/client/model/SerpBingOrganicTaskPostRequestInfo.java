@@ -521,6 +521,88 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
+  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
+  private List<String> stopCrawlOnMatch;
+
+  public SerpBingOrganicTaskPostRequestInfo stopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* optional field
+* if specified, the response will contain SERP results up to and including the specified match_value;
+* you can specify up to 10 target values in this array
+* example:
+* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+* Your account will be billed per each SERP crawled through the specified targets;
+   * @return stopCrawlOnMatch
+   */
+  @javax.annotation.Nullable
+  public List<String> getStopCrawlOnMatch() {
+    return stopCrawlOnMatch;
+  }
+
+  public void setStopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpBingOrganicTaskPostRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* specify a target domain or wildcard value;
+* Note: domain name must be specified without a request protocol;
+* example: dataforseo.com
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private List<String> matchType;
+
+  public SerpBingOrganicTaskPostRequestInfo matchType(List<String> matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public List<String> getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(List<String> matchType) {
+    this.matchType = matchType;
+  }
+
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -699,6 +781,9 @@ public class SerpBingOrganicTaskPostRequestInfo  {
         Objects.equals(this.browserScreenHeight, serpBingOrganicTaskPostRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpBingOrganicTaskPostRequestInfo.browserScreenResolutionRatio) &&
         Objects.equals(this.searchParam, serpBingOrganicTaskPostRequestInfo.searchParam) &&
+        Objects.equals(this.stopCrawlOnMatch, serpBingOrganicTaskPostRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchValue, serpBingOrganicTaskPostRequestInfo.matchValue) &&
+        Objects.equals(this.matchType, serpBingOrganicTaskPostRequestInfo.matchType) &&
         Objects.equals(this.tag, serpBingOrganicTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, serpBingOrganicTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpBingOrganicTaskPostRequestInfo.postbackData) &&
@@ -712,7 +797,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, maxCrawlPages, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, searchParam, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, maxCrawlPages, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, searchParam, stopCrawlOnMatch, matchValue, matchType, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -744,6 +829,9 @@ public class SerpBingOrganicTaskPostRequestInfo  {
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
+    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -804,6 +892,12 @@ public class SerpBingOrganicTaskPostRequestInfo  {
     openapiFields.add("browser_screen_resolution_ratio");
     
     openapiFields.add("search_param");
+    
+    openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_value");
+    
+    openapiFields.add("match_type");
     
     openapiFields.add("tag");
     
