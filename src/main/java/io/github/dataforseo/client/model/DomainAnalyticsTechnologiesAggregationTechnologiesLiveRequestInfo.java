@@ -49,7 +49,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo  
 
   /**
    * id of the target technology group
-* required field if you don’t specify technology, category  or keyword
+* required field if you don’t specify technology, category or keyword
 * at least one field (group, category, keyword, technology) must be set
 * you can find the full list of technology group ids on this page
 * example:
@@ -137,8 +137,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo  
 * at least one field (group, category, keyword, technology) must be set
 * UTF-8 encoding
 * example:
-* 'seo'
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+* 'seo'learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable

@@ -253,6 +253,30 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
+  @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
+  private List<String> fanOutQueries;
+
+  public AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo fanOutQueries(List<String> fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+    return this;
+  }
+
+  /**
+   * array of fan-out queries
+* contains related search queries derived from the main query to provide a more comprehensive response
+   * @return fanOutQueries
+   */
+  @javax.annotation.Nullable
+  public List<String> getFanOutQueries() {
+    return fanOutQueries;
+  }
+
+  public void setFanOutQueries(List<String> fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+  }
+
+
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
   private Long seResultsCount;
@@ -400,6 +424,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
         Objects.equals(this.markdown, aiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo.markdown) &&
         Objects.equals(this.searchResults, aiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo.searchResults) &&
         Objects.equals(this.sources, aiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo.sources) &&
+        Objects.equals(this.fanOutQueries, aiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo.fanOutQueries) &&
         Objects.equals(this.seResultsCount, aiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo.seResultsCount) &&
         Objects.equals(this.itemTypes, aiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo.itemTypes) &&
         Objects.equals(this.itemsCount, aiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo.itemsCount) &&
@@ -413,7 +438,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, model, checkUrl, datetime, markdown, searchResults, sources, seResultsCount, itemTypes, itemsCount, items);
+  return Objects.hash(keyword, locationCode, languageCode, model, checkUrl, datetime, markdown, searchResults, sources, fanOutQueries, seResultsCount, itemTypes, itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -437,6 +462,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
     sb.append("    markdown: ").append(toIndentedString(markdown)).append("\n");
     sb.append("    searchResults: ").append(toIndentedString(searchResults)).append("\n");
     sb.append("    sources: ").append(toIndentedString(sources)).append("\n");
+    sb.append("    fanOutQueries: ").append(toIndentedString(fanOutQueries)).append("\n");
     sb.append("    seResultsCount: ").append(toIndentedString(seResultsCount)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
@@ -481,6 +507,8 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
     openapiFields.add("search_results");
     
     openapiFields.add("sources");
+    
+    openapiFields.add("fan_out_queries");
     
     openapiFields.add("se_results_count");
     

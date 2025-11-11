@@ -159,6 +159,31 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
   }
 
 
+  public static final String SERIALIZED_NAME_PRODUCT_AVAILABILITY = "product_availability";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_AVAILABILITY)
+  private String productAvailability;
+
+  public GoogleShoppingSellersShopsListElementItem productAvailability(String productAvailability) {
+    this.productAvailability = productAvailability;
+    return this;
+  }
+
+  /**
+   * product availability information
+* product availability information
+* can take the following values: in_stock, limited_stock, out_of_stock, backordered, pre_order_available, on_display_to_order
+   * @return productAvailability
+   */
+  @javax.annotation.Nullable
+  public String getProductAvailability() {
+    return productAvailability;
+  }
+
+  public void setProductAvailability(String productAvailability) {
+    this.productAvailability = productAvailability;
+  }
+
+
 
   public GoogleShoppingSellersShopsListElementItem() {
   }
@@ -206,7 +231,8 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
         Objects.equals(this.displayedPaymentBreakdown, googleShoppingSellersShopsListElementItem.displayedPaymentBreakdown) &&
         Objects.equals(this.rating, googleShoppingSellersShopsListElementItem.rating) &&
         Objects.equals(this.productCondition, googleShoppingSellersShopsListElementItem.productCondition) &&
-        Objects.equals(this.productAnnotation, googleShoppingSellersShopsListElementItem.productAnnotation) && 
+        Objects.equals(this.productAnnotation, googleShoppingSellersShopsListElementItem.productAnnotation) &&
+        Objects.equals(this.productAvailability, googleShoppingSellersShopsListElementItem.productAvailability) && 
         super.equals(o);
     
   }
@@ -217,7 +243,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
 
   @Override
   public int hashCode() {
-  return Objects.hash(priceMultiplier, displayedPaymentBreakdown, rating, productCondition, productAnnotation);
+  return Objects.hash(priceMultiplier, displayedPaymentBreakdown, rating, productCondition, productAnnotation, productAvailability);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -237,6 +263,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    productCondition: ").append(toIndentedString(productCondition)).append("\n");
     sb.append("    productAnnotation: ").append(toIndentedString(productAnnotation)).append("\n");
+    sb.append("    productAvailability: ").append(toIndentedString(productAvailability)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -285,6 +312,8 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
     openapiFields.add("product_condition");
     
     openapiFields.add("product_annotation");
+    
+    openapiFields.add("product_availability");
     
 
     // a set of required properties/fields (JSON key names)

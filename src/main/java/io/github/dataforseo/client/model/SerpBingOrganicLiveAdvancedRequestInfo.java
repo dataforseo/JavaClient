@@ -80,8 +80,8 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 * you can specify up to 700 characters in the keyword field
 * all %## will be decoded (plus character ‘+’ will be decoded to a space character)
 * if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
-* if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’ the charge per task will be multiplied by 5learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+* if you need to use the “+” character for your keyword, please specify it as “%2B”;
+* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -398,7 +398,8 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 * you can specify up to 10 target values in this array
 * example:
 * 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* Your account will be billed per each SERP crawled through the specified targets;
+* learn more about this parameter on our Help Center
+* Your account will be billed per each SERP crawled through the specified targets
    * @return stopCrawlOnMatch
    */
   @javax.annotation.Nullable

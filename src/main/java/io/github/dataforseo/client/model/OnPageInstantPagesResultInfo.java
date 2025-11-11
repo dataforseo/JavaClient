@@ -64,9 +64,9 @@ public class OnPageInstantPagesResultInfo  {
 
   public static final String SERIALIZED_NAME_CRAWL_STATUS = "crawl_status";
   @SerializedName(SERIALIZED_NAME_CRAWL_STATUS)
-  private CrawlStatusInfo crawlStatus;
+  private Object crawlStatus;
 
-  public OnPageInstantPagesResultInfo crawlStatus(CrawlStatusInfo crawlStatus) {
+  public OnPageInstantPagesResultInfo crawlStatus(Object crawlStatus) {
     this.crawlStatus = crawlStatus;
     return this;
   }
@@ -77,11 +77,11 @@ public class OnPageInstantPagesResultInfo  {
    * @return crawlStatus
    */
   @javax.annotation.Nullable
-  public CrawlStatusInfo getCrawlStatus() {
+  public Object getCrawlStatus() {
     return crawlStatus;
   }
 
-  public void setCrawlStatus(CrawlStatusInfo crawlStatus) {
+  public void setCrawlStatus(Object crawlStatus) {
     this.crawlStatus = crawlStatus;
   }
 
@@ -136,9 +136,9 @@ public class OnPageInstantPagesResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OnPageStylesheetResourceItem> items;
+  private List<BaseOnPageResourceItem> items;
 
-  public OnPageInstantPagesResultInfo items(List<OnPageStylesheetResourceItem> items) {
+  public OnPageInstantPagesResultInfo items(List<BaseOnPageResourceItem> items) {
     this.items = items;
     return this;
   }
@@ -148,11 +148,11 @@ public class OnPageInstantPagesResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<OnPageStylesheetResourceItem> getItems() {
+  public List<BaseOnPageResourceItem> getItems() {
     return items;
   }
 
-  public void setItems(List<OnPageStylesheetResourceItem> items) {
+  public void setItems(List<BaseOnPageResourceItem> items) {
     this.items = items;
   }
 

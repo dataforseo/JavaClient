@@ -229,9 +229,9 @@ public class MerchantAmazonReviewsTaskGetAdvancedTaskInfo  {
 
   public static final String SERIALIZED_NAME_RESULT = "result";
   @SerializedName(SERIALIZED_NAME_RESULT)
-  private List<MerchantAmazonReviewsTaskGetAdvancedResultInfo> result;
+  private Object result;
 
-  public MerchantAmazonReviewsTaskGetAdvancedTaskInfo result(List<MerchantAmazonReviewsTaskGetAdvancedResultInfo> result) {
+  public MerchantAmazonReviewsTaskGetAdvancedTaskInfo result(Object result) {
     this.result = result;
     return this;
   }
@@ -241,11 +241,11 @@ public class MerchantAmazonReviewsTaskGetAdvancedTaskInfo  {
    * @return result
    */
   @javax.annotation.Nullable
-  public List<MerchantAmazonReviewsTaskGetAdvancedResultInfo> getResult() {
+  public Object getResult() {
     return result;
   }
 
-  public void setResult(List<MerchantAmazonReviewsTaskGetAdvancedResultInfo> result) {
+  public void setResult(Object result) {
     this.result = result;
   }
 

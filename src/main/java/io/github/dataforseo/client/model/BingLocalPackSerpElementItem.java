@@ -224,6 +224,30 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_IS_CLAIMED = "is_claimed";
+  @SerializedName(SERIALIZED_NAME_IS_CLAIMED)
+  private Boolean isClaimed;
+
+  public BingLocalPackSerpElementItem isClaimed(Boolean isClaimed) {
+    this.isClaimed = isClaimed;
+    return this;
+  }
+
+  /**
+   * business listing is claimed
+* if true, the business listing is claimed by the owner or representative
+   * @return isClaimed
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsClaimed() {
+    return isClaimed;
+  }
+
+  public void setIsClaimed(Boolean isClaimed) {
+    this.isClaimed = isClaimed;
+  }
+
+
 
   public BingLocalPackSerpElementItem() {
   }
@@ -274,7 +298,8 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
         Objects.equals(this.url, bingLocalPackSerpElementItem.url) &&
         Objects.equals(this.isPaid, bingLocalPackSerpElementItem.isPaid) &&
         Objects.equals(this.rating, bingLocalPackSerpElementItem.rating) &&
-        Objects.equals(this.cid, bingLocalPackSerpElementItem.cid) && 
+        Objects.equals(this.cid, bingLocalPackSerpElementItem.cid) &&
+        Objects.equals(this.isClaimed, bingLocalPackSerpElementItem.isClaimed) && 
         super.equals(o);
     
   }
@@ -285,7 +310,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(title, description, domain, phone, url, isPaid, rating, cid);
+  return Objects.hash(title, description, domain, phone, url, isPaid, rating, cid, isClaimed);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -308,6 +333,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
     sb.append("    isPaid: ").append(toIndentedString(isPaid)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    cid: ").append(toIndentedString(cid)).append("\n");
+    sb.append("    isClaimed: ").append(toIndentedString(isClaimed)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -353,6 +379,8 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
     openapiFields.add("rating");
     
     openapiFields.add("cid");
+    
+    openapiFields.add("is_claimed");
     
 
     // a set of required properties/fields (JSON key names)

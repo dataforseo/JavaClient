@@ -207,9 +207,9 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
 
   public static final String SERIALIZED_NAME_REVIEWS_COUNT = "reviews_count";
   @SerializedName(SERIALIZED_NAME_REVIEWS_COUNT)
-  private Long reviewsCount;
+  private String reviewsCount;
 
-  public BusinessDataTrustpilotReviewsTaskGetResultInfo reviewsCount(Long reviewsCount) {
+  public BusinessDataTrustpilotReviewsTaskGetResultInfo reviewsCount(String reviewsCount) {
     this.reviewsCount = reviewsCount;
     return this;
   }
@@ -219,20 +219,20 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
    * @return reviewsCount
    */
   @javax.annotation.Nullable
-  public Long getReviewsCount() {
+  public String getReviewsCount() {
     return reviewsCount;
   }
 
-  public void setReviewsCount(Long reviewsCount) {
+  public void setReviewsCount(String reviewsCount) {
     this.reviewsCount = reviewsCount;
   }
 
 
   public static final String SERIALIZED_NAME_RATING = "rating";
   @SerializedName(SERIALIZED_NAME_RATING)
-  private RatingInfo rating;
+  private Object rating;
 
-  public BusinessDataTrustpilotReviewsTaskGetResultInfo rating(RatingInfo rating) {
+  public BusinessDataTrustpilotReviewsTaskGetResultInfo rating(Object rating) {
     this.rating = rating;
     return this;
   }
@@ -243,11 +243,11 @@ public class BusinessDataTrustpilotReviewsTaskGetResultInfo  {
    * @return rating
    */
   @javax.annotation.Nullable
-  public RatingInfo getRating() {
+  public Object getRating() {
     return rating;
   }
 
-  public void setRating(RatingInfo rating) {
+  public void setRating(Object rating) {
     this.rating = rating;
   }
 

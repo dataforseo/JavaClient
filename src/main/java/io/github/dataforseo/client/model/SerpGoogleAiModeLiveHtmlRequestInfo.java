@@ -38,33 +38,6 @@ import io.github.dataforseo.client.JSON;
 public class SerpGoogleAiModeLiveHtmlRequestInfo  {
 
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpGoogleAiModeLiveHtmlRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
@@ -290,34 +263,6 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
-  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
-  private String seDomain;
-
-  public SerpGoogleAiModeLiveHtmlRequestInfo seDomain(String seDomain) {
-    this.seDomain = seDomain;
-    return this;
-  }
-
-  /**
-   * search engine domain
-* optional field
-* we choose the relevant search engine domain automatically according to the location and language you specify
-* however, you can set a custom search engine domain in this field
-* example:
-* google.co.uk, google.com.au, google.de, etc.
-   * @return seDomain
-   */
-  @javax.annotation.Nullable
-  public String getSeDomain() {
-    return seDomain;
-  }
-
-  public void setSeDomain(String seDomain) {
-    this.seDomain = seDomain;
-  }
-
-
   public static final String SERIALIZED_NAME_DEPTH = "depth";
   @SerializedName(SERIALIZED_NAME_DEPTH)
   private Integer depth;
@@ -401,143 +346,6 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW = "load_async_ai_overview";
-  @SerializedName(SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW)
-  private Boolean loadAsyncAiOverview;
-
-  public SerpGoogleAiModeLiveHtmlRequestInfo loadAsyncAiOverview(Boolean loadAsyncAiOverview) {
-    this.loadAsyncAiOverview = loadAsyncAiOverview;
-    return this;
-  }
-
-  /**
-   * load asynchronous ai overview
-* optional field
-* set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;
-* if set to false, you will only obtain ai_overview items from cache;
-* default value: false
-* Note your account will be billed $0.002 extra for each request;
-* if the element is absent or contains 'asynchronous_ai_overview': false, all extra charges will be returned to your account balance
-   * @return loadAsyncAiOverview
-   */
-  @javax.annotation.Nullable
-  public Boolean getLoadAsyncAiOverview() {
-    return loadAsyncAiOverview;
-  }
-
-  public void setLoadAsyncAiOverview(Boolean loadAsyncAiOverview) {
-    this.loadAsyncAiOverview = loadAsyncAiOverview;
-  }
-
-
-  public static final String SERIALIZED_NAME_EXPAND_AI_OVERVIEW = "expand_ai_overview";
-  @SerializedName(SERIALIZED_NAME_EXPAND_AI_OVERVIEW)
-  private Boolean expandAiOverview;
-
-  public SerpGoogleAiModeLiveHtmlRequestInfo expandAiOverview(Boolean expandAiOverview) {
-    this.expandAiOverview = expandAiOverview;
-    return this;
-  }
-
-  /**
-   * expand ai overview
-* optional field
-* set to true to expand the ai_overview item;
-* default value: false
-   * @return expandAiOverview
-   */
-  @javax.annotation.Nullable
-  public Boolean getExpandAiOverview() {
-    return expandAiOverview;
-  }
-
-  public void setExpandAiOverview(Boolean expandAiOverview) {
-    this.expandAiOverview = expandAiOverview;
-  }
-
-
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<String> stopCrawlOnMatch;
-
-  public SerpGoogleAiModeLiveHtmlRequestInfo stopCrawlOnMatch(List<String> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
-* example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* Your account will be billed per each SERP crawled through the specified targets;
-   * @return stopCrawlOnMatch
-   */
-  @javax.annotation.Nullable
-  public List<String> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
-  }
-
-  public void setStopCrawlOnMatch(List<String> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
-
-  public SerpGoogleAiModeLiveHtmlRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* required field if stop_crawl_on_match is specified;
-* specify a target domain or wildcard value;
-* Note: domain name must be specified without a request protocol;
-* example: dataforseo.com
-   * @return matchValue
-   */
-  @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
-  }
-
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private List<String> matchType;
-
-  public SerpGoogleAiModeLiveHtmlRequestInfo matchType(List<String> matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* required field if stop_crawl_on_match is specified;
-* type of match for the match_value
-* possible values: domain, with_subdomains, wildcard
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public List<String> getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(List<String> matchType) {
-    this.matchType = matchType;
-  }
-
-
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -608,7 +416,6 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
     SerpGoogleAiModeLiveHtmlRequestInfo serpGoogleAiModeLiveHtmlRequestInfo = (SerpGoogleAiModeLiveHtmlRequestInfo) o;
     return
 
-        Objects.equals(this.url, serpGoogleAiModeLiveHtmlRequestInfo.url) &&
         Objects.equals(this.keyword, serpGoogleAiModeLiveHtmlRequestInfo.keyword) &&
         Objects.equals(this.locationName, serpGoogleAiModeLiveHtmlRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleAiModeLiveHtmlRequestInfo.locationCode) &&
@@ -617,15 +424,9 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
         Objects.equals(this.languageCode, serpGoogleAiModeLiveHtmlRequestInfo.languageCode) &&
         Objects.equals(this.device, serpGoogleAiModeLiveHtmlRequestInfo.device) &&
         Objects.equals(this.os, serpGoogleAiModeLiveHtmlRequestInfo.os) &&
-        Objects.equals(this.seDomain, serpGoogleAiModeLiveHtmlRequestInfo.seDomain) &&
         Objects.equals(this.depth, serpGoogleAiModeLiveHtmlRequestInfo.depth) &&
         Objects.equals(this.maxCrawlPages, serpGoogleAiModeLiveHtmlRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpGoogleAiModeLiveHtmlRequestInfo.searchParam) &&
-        Objects.equals(this.loadAsyncAiOverview, serpGoogleAiModeLiveHtmlRequestInfo.loadAsyncAiOverview) &&
-        Objects.equals(this.expandAiOverview, serpGoogleAiModeLiveHtmlRequestInfo.expandAiOverview) &&
-        Objects.equals(this.stopCrawlOnMatch, serpGoogleAiModeLiveHtmlRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchValue, serpGoogleAiModeLiveHtmlRequestInfo.matchValue) &&
-        Objects.equals(this.matchType, serpGoogleAiModeLiveHtmlRequestInfo.matchType) &&
         Objects.equals(this.tag, serpGoogleAiModeLiveHtmlRequestInfo.tag);  
     
   }
@@ -636,7 +437,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, loadAsyncAiOverview, expandAiOverview, stopCrawlOnMatch, matchValue, matchType, tag);
+  return Objects.hash(keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, maxCrawlPages, searchParam, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -651,7 +452,6 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpGoogleAiModeLiveHtmlRequestInfo {\n");
 
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
@@ -660,15 +460,9 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
-    sb.append("    expandAiOverview: ").append(toIndentedString(expandAiOverview)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -693,8 +487,6 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("url");
-    
     openapiFields.add("keyword");
     
     openapiFields.add("location_name");
@@ -711,23 +503,11 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
     
     openapiFields.add("os");
     
-    openapiFields.add("se_domain");
-    
     openapiFields.add("depth");
     
     openapiFields.add("max_crawl_pages");
     
     openapiFields.add("search_param");
-    
-    openapiFields.add("load_async_ai_overview");
-    
-    openapiFields.add("expand_ai_overview");
-    
-    openapiFields.add("stop_crawl_on_match");
-    
-    openapiFields.add("match_value");
-    
-    openapiFields.add("match_type");
     
     openapiFields.add("tag");
     

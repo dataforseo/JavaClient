@@ -417,7 +417,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   /**
    * load asynchronous ai overview
 * optional field
-* set to true to obtain ai_overview items is SERPs even if they are loaded asynchronically;
+* set to true to obtain ai_overview items is SERPs even if they are loaded asynchronously;
 * if set to false, you will only obtain ai_overview items from cache;
 * default value: false
 * Note your account will be billed $0.002 extra for each request;
@@ -476,7 +476,8 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 * you can specify up to 10 target values in this array
 * example:
 * 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* Your account will be billed per each SERP crawled through the specified targets;
+* learn more about this parameter on our Help Center
+* Your account will be billed per each SERP crawled through the specified targets
    * @return stopCrawlOnMatch
    */
   @javax.annotation.Nullable

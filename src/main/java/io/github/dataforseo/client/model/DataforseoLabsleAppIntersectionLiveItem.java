@@ -35,112 +35,89 @@ import io.github.dataforseo.client.JSON;
 
 
 
-public class ShoppingSpecification  {
+public class DataforseoLabsleAppIntersectionLiveItem  {
 
 
-  public static final String SERIALIZED_NAME_TYPE = "type";
-  @SerializedName(SERIALIZED_NAME_TYPE)
-  private String type;
+  public static final String SERIALIZED_NAME_SE_TYPE = "se_type";
+  @SerializedName(SERIALIZED_NAME_SE_TYPE)
+  private String seType;
 
-  public ShoppingSpecification type(String type) {
-    this.type = type;
+  public DataforseoLabsleAppIntersectionLiveItem seType(String seType) {
+    this.seType = seType;
     return this;
   }
 
   /**
-   * type of element
-   * @return type
+   * search engine type
+   * @return seType
    */
   @javax.annotation.Nullable
-  public String getType() {
-    return type;
+  public String getSeType() {
+    return seType;
   }
 
-  public void setType(String type) {
-    this.type = type;
+  public void setSeType(String seType) {
+    this.seType = seType;
   }
 
 
-  public static final String SERIALIZED_NAME_BLOCK_NAME = "block_name";
-  @SerializedName(SERIALIZED_NAME_BLOCK_NAME)
-  private String blockName;
+  public static final String SERIALIZED_NAME_KEYWORD_DATA = "keyword_data";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_DATA)
+  private KeywordDataInfo keywordData;
 
-  public ShoppingSpecification blockName(String blockName) {
-    this.blockName = blockName;
+  public DataforseoLabsleAppIntersectionLiveItem keywordData(KeywordDataInfo keywordData) {
+    this.keywordData = keywordData;
     return this;
   }
 
   /**
-   * name of the block of product attributes
-* indicates the name of the product specification section in which the related element is listed
-   * @return blockName
+   * keyword data for the returned keyword
+   * @return keywordData
    */
   @javax.annotation.Nullable
-  public String getBlockName() {
-    return blockName;
+  public KeywordDataInfo getKeywordData() {
+    return keywordData;
   }
 
-  public void setBlockName(String blockName) {
-    this.blockName = blockName;
+  public void setKeywordData(KeywordDataInfo keywordData) {
+    this.keywordData = keywordData;
   }
 
 
-  public static final String SERIALIZED_NAME_SPECIFICATION_NAME = "specification_name";
-  @SerializedName(SERIALIZED_NAME_SPECIFICATION_NAME)
-  private String specificationName;
+  public static final String SERIALIZED_NAME_INTERSECTION_RESULT = "intersection_result";
+  @SerializedName(SERIALIZED_NAME_INTERSECTION_RESULT)
+  private Map<String, GooglePlaySearchOrganic> intersectionResult;
 
-  public ShoppingSpecification specificationName(String specificationName) {
-    this.specificationName = specificationName;
+  public DataforseoLabsleAppIntersectionLiveItem intersectionResult(Map<String, GooglePlaySearchOrganic> intersectionResult) {
+    this.intersectionResult = intersectionResult;
     return this;
   }
 
   /**
-   * product attribute
-* attribute name of the product data specification
-   * @return specificationName
+   * contains SERP data for the returned keyword
+* data will be provided in separate arrays for each app ID you specified in the app_ids object when setting a task;
+* depending on the number of specified app IDs, it can contain from 1 to 20 arrays named respectively
+   * @return intersectionResult
    */
   @javax.annotation.Nullable
-  public String getSpecificationName() {
-    return specificationName;
+  public Map<String, GooglePlaySearchOrganic> getIntersectionResult() {
+    return intersectionResult;
   }
 
-  public void setSpecificationName(String specificationName) {
-    this.specificationName = specificationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_SPECIFICATION_VALUE = "specification_value";
-  @SerializedName(SERIALIZED_NAME_SPECIFICATION_VALUE)
-  private String specificationValue;
-
-  public ShoppingSpecification specificationValue(String specificationValue) {
-    this.specificationValue = specificationValue;
-    return this;
-  }
-
-  /**
-   * content of the specification
-   * @return specificationValue
-   */
-  @javax.annotation.Nullable
-  public String getSpecificationValue() {
-    return specificationValue;
-  }
-
-  public void setSpecificationValue(String specificationValue) {
-    this.specificationValue = specificationValue;
+  public void setIntersectionResult(Map<String, GooglePlaySearchOrganic> intersectionResult) {
+    this.intersectionResult = intersectionResult;
   }
 
 
 
-  public ShoppingSpecification() {
+  public DataforseoLabsleAppIntersectionLiveItem() {
   }
 
   
     
   private Map<String, Object> additionalProperties;
 
-  public ShoppingSpecification putAdditionalProperty(String key, Object value) {
+  public DataforseoLabsleAppIntersectionLiveItem putAdditionalProperty(String key, Object value) {
     if (this.additionalProperties == null) {
         this.additionalProperties = new HashMap<String, Object>();
     }
@@ -172,13 +149,12 @@ public class ShoppingSpecification  {
 
 
     
-    ShoppingSpecification shoppingSpecification = (ShoppingSpecification) o;
+    DataforseoLabsleAppIntersectionLiveItem dataforseoLabsleAppIntersectionLiveItem = (DataforseoLabsleAppIntersectionLiveItem) o;
     return
 
-        Objects.equals(this.type, shoppingSpecification.type) &&
-        Objects.equals(this.blockName, shoppingSpecification.blockName) &&
-        Objects.equals(this.specificationName, shoppingSpecification.specificationName) &&
-        Objects.equals(this.specificationValue, shoppingSpecification.specificationValue);  
+        Objects.equals(this.seType, dataforseoLabsleAppIntersectionLiveItem.seType) &&
+        Objects.equals(this.keywordData, dataforseoLabsleAppIntersectionLiveItem.keywordData) &&
+        Objects.equals(this.intersectionResult, dataforseoLabsleAppIntersectionLiveItem.intersectionResult);  
     
   }
 
@@ -188,7 +164,7 @@ public class ShoppingSpecification  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, blockName, specificationName, specificationValue);
+  return Objects.hash(seType, keywordData, intersectionResult);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -201,12 +177,11 @@ public class ShoppingSpecification  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class ShoppingSpecification {\n");
+    sb.append("class DataforseoLabsleAppIntersectionLiveItem {\n");
 
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    blockName: ").append(toIndentedString(blockName)).append("\n");
-    sb.append("    specificationName: ").append(toIndentedString(specificationName)).append("\n");
-    sb.append("    specificationValue: ").append(toIndentedString(specificationValue)).append("\n");
+    sb.append("    seType: ").append(toIndentedString(seType)).append("\n");
+    sb.append("    keywordData: ").append(toIndentedString(keywordData)).append("\n");
+    sb.append("    intersectionResult: ").append(toIndentedString(intersectionResult)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -230,13 +205,11 @@ public class ShoppingSpecification  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("type");
+    openapiFields.add("se_type");
     
-    openapiFields.add("block_name");
+    openapiFields.add("keyword_data");
     
-    openapiFields.add("specification_name");
-    
-    openapiFields.add("specification_value");
+    openapiFields.add("intersection_result");
     
 
     // a set of required properties/fields (JSON key names)
@@ -250,7 +223,7 @@ public class ShoppingSpecification  {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to ShoppingSpecification
+   * @throws IOException if the JSON Element is invalid with respect to DataforseoLabsleAppIntersectionLiveItem
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
   }
@@ -259,16 +232,16 @@ public class ShoppingSpecification  {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!ShoppingSpecification.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'ShoppingSpecification' and its subtypes
+       if (!DataforseoLabsleAppIntersectionLiveItem.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'DataforseoLabsleAppIntersectionLiveItem' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<ShoppingSpecification> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(ShoppingSpecification.class));
+       final TypeAdapter<DataforseoLabsleAppIntersectionLiveItem> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(DataforseoLabsleAppIntersectionLiveItem.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<ShoppingSpecification>() {
+       return (TypeAdapter<T>) new TypeAdapter<DataforseoLabsleAppIntersectionLiveItem>() {
            @Override
-           public void write(JsonWriter out, ShoppingSpecification value) throws IOException {
+           public void write(JsonWriter out, DataforseoLabsleAppIntersectionLiveItem value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              obj.remove("additionalProperties");
              // serialize additional properties
@@ -296,12 +269,12 @@ public class ShoppingSpecification  {
            }
 
            @Override
-           public ShoppingSpecification read(JsonReader in) throws IOException {
+           public DataforseoLabsleAppIntersectionLiveItem read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              JsonObject jsonObj = jsonElement.getAsJsonObject();
              // store additional fields in the deserialized instance
-             ShoppingSpecification instance = thisAdapter.fromJsonTree(jsonObj);
+             DataforseoLabsleAppIntersectionLiveItem instance = thisAdapter.fromJsonTree(jsonObj);
              for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
                if (!openapiFields.contains(entry.getKey())) {
                  if (entry.getValue().isJsonPrimitive()) { // primitive type
@@ -328,8 +301,8 @@ public class ShoppingSpecification  {
   }
 
 
-  public static ShoppingSpecification fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, ShoppingSpecification.class);
+  public static DataforseoLabsleAppIntersectionLiveItem fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, DataforseoLabsleAppIntersectionLiveItem.class);
   }
 
   public String toJson() {

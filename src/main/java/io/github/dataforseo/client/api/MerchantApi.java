@@ -25,7 +25,6 @@ import io.github.dataforseo.client.model.MerchantGoogleSellersTaskPostRequestInf
 import io.github.dataforseo.client.model.MerchantGoogleSellersTaskPostResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleSellersTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleSellersTaskGetAdvancedResponseInfo;
-import io.github.dataforseo.client.model.MerchantGoogleProductSpecTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductInfoTaskPostRequestInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductInfoTaskPostResponseInfo;
 import io.github.dataforseo.client.model.MerchantGoogleProductInfoTasksReadyResponseInfo;
@@ -1047,83 +1046,6 @@ public class MerchantApi {
 
        okhttp3.Call localVarCall = googleSellersTaskGetAdvancedValidateBeforeCall(id, _callback);
        Type localVarReturnType = new TypeToken<MerchantGoogleSellersTaskGetAdvancedResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call googleProductSpecTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-   
-       String localVarPath = "/v3/merchant/google/product_spec/task_get/advanced/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
-
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call googleProductSpecTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
-       // verify the required parameter 'id' is set
-       if (id == null) {
-           throw new ApiException("Missing the required parameter 'id' when calling googleProductSpecTaskGetAdvanced(Async)");
-       }
-
-       return googleProductSpecTaskGetAdvancedCall(id, _callback);
-
-    }
-
-    public MerchantGoogleProductSpecTaskGetAdvancedResponseInfo googleProductSpecTaskGetAdvanced(String id) throws ApiException {
-       ApiResponse<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> localVarResp = googleProductSpecTaskGetAdvancedWithHttpInfo(id);
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> googleProductSpecTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = googleProductSpecTaskGetAdvancedValidateBeforeCall(id, null);
-       Type localVarReturnType = new TypeToken<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call googleProductSpecTaskGetAdvancedAsync(String id, final ApiCallback<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = googleProductSpecTaskGetAdvancedValidateBeforeCall(id, _callback);
-       Type localVarReturnType = new TypeToken<MerchantGoogleProductSpecTaskGetAdvancedResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }

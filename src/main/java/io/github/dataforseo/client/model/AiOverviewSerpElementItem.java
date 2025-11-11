@@ -99,8 +99,8 @@ public class AiOverviewSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * indicates whether the element is loaded asynchronically
-* if true, the ai_overview element is loaded asynchronically;
+   * indicates whether the element is loaded asynchronously
+* if true, the ai_overview element is loaded asynchronously;
 * if false, the ai_overview element is loaded from cache;
    * @return asynchronousAiOverview
    */

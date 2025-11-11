@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**search** | **Info** |  |[optional]|
-**categoriesAggregation** | **Info** |  |[optional]|
+**search** | **Map<String, String>** |  |[optional]|
+**categoriesAggregation** | **Map<String, String>** |  |[optional]|

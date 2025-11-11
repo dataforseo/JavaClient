@@ -178,7 +178,7 @@ public class SerpScreenshotRequestInfo  {
   /**
    * number of SERP pages
 * optional field
-* if depth in the corresponding Task POST request exceeds 100 results (or 1 SERP page), specify the number of SERP pages to screenshot;
+* if depth in the corresponding Task POST request exceeds 10 results (or 1 SERP page), specify the number of SERP pages to screenshot;
 * default value: 1
    * @return page
    */

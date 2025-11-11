@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantAmazonReviewsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **Object** | array of results |[optional]|

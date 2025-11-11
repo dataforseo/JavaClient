@@ -1102,9 +1102,9 @@ public class BacklinksBacklinksLiveItem  {
 
   public static final String SERIALIZED_NAME_RANKED_KEYWORDS_INFO = "ranked_keywords_info";
   @SerializedName(SERIALIZED_NAME_RANKED_KEYWORDS_INFO)
-  private BacklinkRankedKeywordsInfo rankedKeywordsInfo;
+  private RankedKeywordsInfo rankedKeywordsInfo;
 
-  public BacklinksBacklinksLiveItem rankedKeywordsInfo(BacklinkRankedKeywordsInfo rankedKeywordsInfo) {
+  public BacklinksBacklinksLiveItem rankedKeywordsInfo(RankedKeywordsInfo rankedKeywordsInfo) {
     this.rankedKeywordsInfo = rankedKeywordsInfo;
     return this;
   }
@@ -1114,11 +1114,11 @@ public class BacklinksBacklinksLiveItem  {
    * @return rankedKeywordsInfo
    */
   @javax.annotation.Nullable
-  public BacklinkRankedKeywordsInfo getRankedKeywordsInfo() {
+  public RankedKeywordsInfo getRankedKeywordsInfo() {
     return rankedKeywordsInfo;
   }
 
-  public void setRankedKeywordsInfo(BacklinkRankedKeywordsInfo rankedKeywordsInfo) {
+  public void setRankedKeywordsInfo(RankedKeywordsInfo rankedKeywordsInfo) {
     this.rankedKeywordsInfo = rankedKeywordsInfo;
   }
 

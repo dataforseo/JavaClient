@@ -118,8 +118,7 @@ public class ProductVariation  {
   }
 
   /**
-   * seller url
-* url of the webpage on the seller’s website where the product is sold
+   * product url on google shopping
    * @return url
    */
   @javax.annotation.Nullable

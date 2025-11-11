@@ -94,7 +94,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * result’s URL
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * breadcrumb of the Ad element in SERP
+   * breadcrumb in SERP
    * @return breadcrumb
    */
   @javax.annotation.Nullable

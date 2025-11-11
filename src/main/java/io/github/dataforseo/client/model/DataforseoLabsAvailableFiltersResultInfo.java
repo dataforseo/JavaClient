@@ -86,9 +86,9 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
 
   public static final String SERIALIZED_NAME_RANKED_KEYWORDS = "ranked_keywords";
   @SerializedName(SERIALIZED_NAME_RANKED_KEYWORDS)
-  private RankedKeywordsInfo rankedKeywords;
+  private Map<String, Map<String, String>> rankedKeywords;
 
-  public DataforseoLabsAvailableFiltersResultInfo rankedKeywords(RankedKeywordsInfo rankedKeywords) {
+  public DataforseoLabsAvailableFiltersResultInfo rankedKeywords(Map<String, Map<String, String>> rankedKeywords) {
     this.rankedKeywords = rankedKeywords;
     return this;
   }
@@ -98,11 +98,11 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
    * @return rankedKeywords
    */
   @javax.annotation.Nullable
-  public RankedKeywordsInfo getRankedKeywords() {
+  public Map<String, Map<String, String>> getRankedKeywords() {
     return rankedKeywords;
   }
 
-  public void setRankedKeywords(RankedKeywordsInfo rankedKeywords) {
+  public void setRankedKeywords(Map<String, Map<String, String>> rankedKeywords) {
     this.rankedKeywords = rankedKeywords;
   }
 
@@ -314,29 +314,6 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_DOMAIN_WHOIS_OVERVIEW = "domain_whois_overview";
-  @SerializedName(SERIALIZED_NAME_DOMAIN_WHOIS_OVERVIEW)
-  private Map<String, Map<String, String>> domainWhoisOverview;
-
-  public DataforseoLabsAvailableFiltersResultInfo domainWhoisOverview(Map<String, Map<String, String>> domainWhoisOverview) {
-    this.domainWhoisOverview = domainWhoisOverview;
-    return this;
-  }
-
-  /**
-   * 
-   * @return domainWhoisOverview
-   */
-  @javax.annotation.Nullable
-  public Map<String, Map<String, String>> getDomainWhoisOverview() {
-    return domainWhoisOverview;
-  }
-
-  public void setDomainWhoisOverview(Map<String, Map<String, String>> domainWhoisOverview) {
-    this.domainWhoisOverview = domainWhoisOverview;
-  }
-
-
   public static final String SERIALIZED_NAME_TOP_SEARCHES = "top_searches";
   @SerializedName(SERIALIZED_NAME_TOP_SEARCHES)
   private Map<String, Map<String, String>> topSearches;
@@ -431,9 +408,9 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
 
   public static final String SERIALIZED_NAME_PRODUCT_KEYWORD_INTERSECTIONS = "product_keyword_intersections";
   @SerializedName(SERIALIZED_NAME_PRODUCT_KEYWORD_INTERSECTIONS)
-  private Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> productKeywordIntersections;
+  private Map<String, Map<String, String>> productKeywordIntersections;
 
-  public DataforseoLabsAvailableFiltersResultInfo productKeywordIntersections(Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> productKeywordIntersections) {
+  public DataforseoLabsAvailableFiltersResultInfo productKeywordIntersections(Map<String, Map<String, String>> productKeywordIntersections) {
     this.productKeywordIntersections = productKeywordIntersections;
     return this;
   }
@@ -443,11 +420,11 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
    * @return productKeywordIntersections
    */
   @javax.annotation.Nullable
-  public Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> getProductKeywordIntersections() {
+  public Map<String, Map<String, String>> getProductKeywordIntersections() {
     return productKeywordIntersections;
   }
 
-  public void setProductKeywordIntersections(Map<String, ProductKeywordIntersectionsAmazonDataforseoLabsAvailableFiltersAmazonInfo> productKeywordIntersections) {
+  public void setProductKeywordIntersections(Map<String, Map<String, String>> productKeywordIntersections) {
     this.productKeywordIntersections = productKeywordIntersections;
   }
 
@@ -599,7 +576,6 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
         Objects.equals(this.keywordsForCategories, dataforseoLabsAvailableFiltersResultInfo.keywordsForCategories) &&
         Objects.equals(this.domainIntersection, dataforseoLabsAvailableFiltersResultInfo.domainIntersection) &&
         Objects.equals(this.pageIntersection, dataforseoLabsAvailableFiltersResultInfo.pageIntersection) &&
-        Objects.equals(this.domainWhoisOverview, dataforseoLabsAvailableFiltersResultInfo.domainWhoisOverview) &&
         Objects.equals(this.topSearches, dataforseoLabsAvailableFiltersResultInfo.topSearches) &&
         Objects.equals(this.domainMetricsByCategories, dataforseoLabsAvailableFiltersResultInfo.domainMetricsByCategories) &&
         Objects.equals(this.keywordsForSite, dataforseoLabsAvailableFiltersResultInfo.keywordsForSite) &&
@@ -618,7 +594,7 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(relatedKeywords, keywordSuggestions, rankedKeywords, keywordIdeas, serpCompetitors, relevantPages, subdomains, competitorsDomain, categoriesForDomain, keywordsForCategories, domainIntersection, pageIntersection, domainWhoisOverview, topSearches, domainMetricsByCategories, keywordsForSite, productCompetitors, productKeywordIntersections, appIntersection, appCompetitors, keywordsForApp, databaseRowsCount);
+  return Objects.hash(relatedKeywords, keywordSuggestions, rankedKeywords, keywordIdeas, serpCompetitors, relevantPages, subdomains, competitorsDomain, categoriesForDomain, keywordsForCategories, domainIntersection, pageIntersection, topSearches, domainMetricsByCategories, keywordsForSite, productCompetitors, productKeywordIntersections, appIntersection, appCompetitors, keywordsForApp, databaseRowsCount);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -645,7 +621,6 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
     sb.append("    keywordsForCategories: ").append(toIndentedString(keywordsForCategories)).append("\n");
     sb.append("    domainIntersection: ").append(toIndentedString(domainIntersection)).append("\n");
     sb.append("    pageIntersection: ").append(toIndentedString(pageIntersection)).append("\n");
-    sb.append("    domainWhoisOverview: ").append(toIndentedString(domainWhoisOverview)).append("\n");
     sb.append("    topSearches: ").append(toIndentedString(topSearches)).append("\n");
     sb.append("    domainMetricsByCategories: ").append(toIndentedString(domainMetricsByCategories)).append("\n");
     sb.append("    keywordsForSite: ").append(toIndentedString(keywordsForSite)).append("\n");
@@ -701,8 +676,6 @@ public class DataforseoLabsAvailableFiltersResultInfo  {
     openapiFields.add("domain_intersection");
     
     openapiFields.add("page_intersection");
-    
-    openapiFields.add("domain_whois_overview");
     
     openapiFields.add("top_searches");
     

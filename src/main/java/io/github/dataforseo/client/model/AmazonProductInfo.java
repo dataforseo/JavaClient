@@ -682,7 +682,6 @@ public class AmazonProductInfo  {
 
   /**
    * array of objects with top reviews from target location
-* to obtain additional local reviews, you can specify the load_more_local_reviews parameter in Task POST
    * @return topLocalReviews
    */
   @javax.annotation.Nullable

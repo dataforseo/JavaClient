@@ -203,6 +203,30 @@ public class ProductSeller  {
   }
 
 
+  public static final String SERIALIZED_NAME_PRODUCT_AVAILABILITY = "product_availability";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_AVAILABILITY)
+  private String productAvailability;
+
+  public ProductSeller productAvailability(String productAvailability) {
+    this.productAvailability = productAvailability;
+    return this;
+  }
+
+  /**
+   * product availability information
+* can take the following values: in_stock, limited_stock, out_of_stock, backordered, pre_order_available, on_display_to_order
+   * @return productAvailability
+   */
+  @javax.annotation.Nullable
+  public String getProductAvailability() {
+    return productAvailability;
+  }
+
+  public void setProductAvailability(String productAvailability) {
+    this.productAvailability = productAvailability;
+  }
+
+
 
   public ProductSeller() {
   }
@@ -252,7 +276,8 @@ public class ProductSeller  {
         Objects.equals(this.sellerRating, productSeller.sellerRating) &&
         Objects.equals(this.sellerReviewCount, productSeller.sellerReviewCount) &&
         Objects.equals(this.price, productSeller.price) &&
-        Objects.equals(this.deliveryInfo, productSeller.deliveryInfo);  
+        Objects.equals(this.deliveryInfo, productSeller.deliveryInfo) &&
+        Objects.equals(this.productAvailability, productSeller.productAvailability);  
     
   }
 
@@ -262,7 +287,7 @@ public class ProductSeller  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, title, url, sellerRating, sellerReviewCount, price, deliveryInfo);
+  return Objects.hash(type, title, url, sellerRating, sellerReviewCount, price, deliveryInfo, productAvailability);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -284,6 +309,7 @@ public class ProductSeller  {
     sb.append("    sellerReviewCount: ").append(toIndentedString(sellerReviewCount)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    deliveryInfo: ").append(toIndentedString(deliveryInfo)).append("\n");
+    sb.append("    productAvailability: ").append(toIndentedString(productAvailability)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -320,6 +346,8 @@ public class ProductSeller  {
     openapiFields.add("price");
     
     openapiFields.add("delivery_info");
+    
+    openapiFields.add("product_availability");
     
 
     // a set of required properties/fields (JSON key names)

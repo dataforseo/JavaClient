@@ -265,59 +265,6 @@ public class MerchantAmazonAsinTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOAD_MORE_LOCAL_REVIEWS = "load_more_local_reviews";
-  @SerializedName(SERIALIZED_NAME_LOAD_MORE_LOCAL_REVIEWS)
-  private Boolean loadMoreLocalReviews;
-
-  public MerchantAmazonAsinTaskPostRequestInfo loadMoreLocalReviews(Boolean loadMoreLocalReviews) {
-    this.loadMoreLocalReviews = loadMoreLocalReviews;
-    return this;
-  }
-
-  /**
-   * load more local reviews
-* optional field
-* if set to true, additional local reviews will be loaded in the top_local_reviews array of the Task GET response;
-* Note: you will be charged double the price for using this parameter
-   * @return loadMoreLocalReviews
-   */
-  @javax.annotation.Nullable
-  public Boolean getLoadMoreLocalReviews() {
-    return loadMoreLocalReviews;
-  }
-
-  public void setLoadMoreLocalReviews(Boolean loadMoreLocalReviews) {
-    this.loadMoreLocalReviews = loadMoreLocalReviews;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCAL_REVIEWS_SORT = "local_reviews_sort";
-  @SerializedName(SERIALIZED_NAME_LOCAL_REVIEWS_SORT)
-  private String localReviewsSort;
-
-  public MerchantAmazonAsinTaskPostRequestInfo localReviewsSort(String localReviewsSort) {
-    this.localReviewsSort = localReviewsSort;
-    return this;
-  }
-
-  /**
-   * sort local reviews
-* optional field
-* reviews in the top_local_reviews array of the Task GET response can be sorted by most helpful or most recent first;
-* possible values: helpful, recent
-* default value: helpful
-   * @return localReviewsSort
-   */
-  @javax.annotation.Nullable
-  public String getLocalReviewsSort() {
-    return localReviewsSort;
-  }
-
-  public void setLocalReviewsSort(String localReviewsSort) {
-    this.localReviewsSort = localReviewsSort;
-  }
-
-
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -487,8 +434,6 @@ public class MerchantAmazonAsinTaskPostRequestInfo  {
         Objects.equals(this.languageName, merchantAmazonAsinTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, merchantAmazonAsinTaskPostRequestInfo.languageCode) &&
         Objects.equals(this.seDomain, merchantAmazonAsinTaskPostRequestInfo.seDomain) &&
-        Objects.equals(this.loadMoreLocalReviews, merchantAmazonAsinTaskPostRequestInfo.loadMoreLocalReviews) &&
-        Objects.equals(this.localReviewsSort, merchantAmazonAsinTaskPostRequestInfo.localReviewsSort) &&
         Objects.equals(this.tag, merchantAmazonAsinTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, merchantAmazonAsinTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, merchantAmazonAsinTaskPostRequestInfo.postbackData) &&
@@ -502,7 +447,7 @@ public class MerchantAmazonAsinTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(asin, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, loadMoreLocalReviews, localReviewsSort, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(asin, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -525,8 +470,6 @@ public class MerchantAmazonAsinTaskPostRequestInfo  {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
-    sb.append("    loadMoreLocalReviews: ").append(toIndentedString(loadMoreLocalReviews)).append("\n");
-    sb.append("    localReviewsSort: ").append(toIndentedString(localReviewsSort)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
@@ -569,10 +512,6 @@ public class MerchantAmazonAsinTaskPostRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("se_domain");
-    
-    openapiFields.add("load_more_local_reviews");
-    
-    openapiFields.add("local_reviews_sort");
     
     openapiFields.add("tag");
     

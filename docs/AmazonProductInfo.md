@@ -32,5 +32,5 @@
 **productVideosList** | **List<String>** | contains URLs for all videos of the product displayed on the right side of the main video |[optional]|
 **description** | **String** | contains description of the product |[optional]|
 **isAvailable** | **Boolean** | indicates whether the product is available for ordering<br>if the value is true, the product can be ordered |[optional]|
-**topLocalReviews** | **List<AmazonReviewItem>** | array of objects with top reviews from target location<br>to obtain additional local reviews, you can specify the load_more_local_reviews parameter in Task POST |[optional]|
+**topLocalReviews** | **List<AmazonReviewItem>** | array of objects with top reviews from target location |[optional]|
 **topGlobalReviews** | **List<AmazonReviewItem>** | array of objects with top reviews from around the world |[optional]|

@@ -38,6 +38,55 @@ import io.github.dataforseo.client.JSON;
 public class OnPageAlternateLinkItem  extends BaseOnPageLinkItem  {
 
 
+  public static final String SERIALIZED_NAME_IS_VALID_HREFLANG = "is_valid_hreflang";
+  @SerializedName(SERIALIZED_NAME_IS_VALID_HREFLANG)
+  private Boolean isValidHreflang;
+
+  public OnPageAlternateLinkItem isValidHreflang(Boolean isValidHreflang) {
+    this.isValidHreflang = isValidHreflang;
+    return this;
+  }
+
+  /**
+   * hreflang validity status
+* indicates whether the hreflang attribute is correctly implemented
+   * @return isValidHreflang
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsValidHreflang() {
+    return isValidHreflang;
+  }
+
+  public void setIsValidHreflang(Boolean isValidHreflang) {
+    this.isValidHreflang = isValidHreflang;
+  }
+
+
+  public static final String SERIALIZED_NAME_HREFLANG = "hreflang";
+  @SerializedName(SERIALIZED_NAME_HREFLANG)
+  private String hreflang;
+
+  public OnPageAlternateLinkItem hreflang(String hreflang) {
+    this.hreflang = hreflang;
+    return this;
+  }
+
+  /**
+   * hreflang attribute value
+* language and optional country code specified in the hreflang attribute
+* example: 'en-US', 'fr'
+   * @return hreflang
+   */
+  @javax.annotation.Nullable
+  public String getHreflang() {
+    return hreflang;
+  }
+
+  public void setHreflang(String hreflang) {
+    this.hreflang = hreflang;
+  }
+
+
 
   public OnPageAlternateLinkItem() {
   }
@@ -78,9 +127,12 @@ public class OnPageAlternateLinkItem  extends BaseOnPageLinkItem  {
 
 
     
-      
-    return super.equals(o);
-      
+    OnPageAlternateLinkItem onPageAlternateLinkItem = (OnPageAlternateLinkItem) o;
+    return
+
+        Objects.equals(this.isValidHreflang, onPageAlternateLinkItem.isValidHreflang) &&
+        Objects.equals(this.hreflang, onPageAlternateLinkItem.hreflang) && 
+        super.equals(o);
     
   }
 
@@ -90,7 +142,7 @@ public class OnPageAlternateLinkItem  extends BaseOnPageLinkItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash();
+  return Objects.hash(isValidHreflang, hreflang);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -105,6 +157,8 @@ public class OnPageAlternateLinkItem  extends BaseOnPageLinkItem  {
     StringBuilder sb = new StringBuilder();
     sb.append("class OnPageAlternateLinkItem {\n");
 
+    sb.append("    isValidHreflang: ").append(toIndentedString(isValidHreflang)).append("\n");
+    sb.append("    hreflang: ").append(toIndentedString(hreflang)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -141,6 +195,10 @@ public class OnPageAlternateLinkItem  extends BaseOnPageLinkItem  {
     openapiFields.add("is_broken");
     openapiFields.add("is_link_relation_conflict");
     openapiFields.add("page_to_status_code");
+    
+    openapiFields.add("is_valid_hreflang");
+    
+    openapiFields.add("hreflang");
     
 
     // a set of required properties/fields (JSON key names)

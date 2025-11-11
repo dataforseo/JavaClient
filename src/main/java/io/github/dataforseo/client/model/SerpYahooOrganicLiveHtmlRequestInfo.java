@@ -403,6 +403,89 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
+  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
+  private List<String> stopCrawlOnMatch;
+
+  public SerpYahooOrganicLiveHtmlRequestInfo stopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* optional field
+* if specified, the response will contain SERP results up to and including the specified match_value;
+* you can specify up to 10 target values in this array
+* example:
+* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+* learn more about this parameter on our Help Center
+* Your account will be billed per each SERP crawled through the specified targets
+   * @return stopCrawlOnMatch
+   */
+  @javax.annotation.Nullable
+  public List<String> getStopCrawlOnMatch() {
+    return stopCrawlOnMatch;
+  }
+
+  public void setStopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpYahooOrganicLiveHtmlRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* specify a target domain or wildcard value;
+* Note: domain name must be specified without a request protocol;
+* example: dataforseo.com
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private List<String> matchType;
+
+  public SerpYahooOrganicLiveHtmlRequestInfo matchType(List<String> matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* required field if stop_crawl_on_match is specified;
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public List<String> getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(List<String> matchType) {
+    this.matchType = matchType;
+  }
+
+
 
   public SerpYahooOrganicLiveHtmlRequestInfo() {
   }
@@ -458,7 +541,10 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
         Objects.equals(this.seDomain, serpYahooOrganicLiveHtmlRequestInfo.seDomain) &&
         Objects.equals(this.depth, serpYahooOrganicLiveHtmlRequestInfo.depth) &&
         Objects.equals(this.maxCrawlPages, serpYahooOrganicLiveHtmlRequestInfo.maxCrawlPages) &&
-        Objects.equals(this.searchParam, serpYahooOrganicLiveHtmlRequestInfo.searchParam);  
+        Objects.equals(this.searchParam, serpYahooOrganicLiveHtmlRequestInfo.searchParam) &&
+        Objects.equals(this.stopCrawlOnMatch, serpYahooOrganicLiveHtmlRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchValue, serpYahooOrganicLiveHtmlRequestInfo.matchValue) &&
+        Objects.equals(this.matchType, serpYahooOrganicLiveHtmlRequestInfo.matchType);  
     
   }
 
@@ -468,7 +554,7 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam);
+  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, stopCrawlOnMatch, matchValue, matchType);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -496,6 +582,9 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
+    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -544,6 +633,12 @@ public class SerpYahooOrganicLiveHtmlRequestInfo  {
     openapiFields.add("max_crawl_pages");
     
     openapiFields.add("search_param");
+    
+    openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_value");
+    
+    openapiFields.add("match_type");
     
 
     // a set of required properties/fields (JSON key names)
