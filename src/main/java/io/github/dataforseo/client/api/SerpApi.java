@@ -20,6 +20,7 @@ import io.github.dataforseo.client.model.SerpGoogleLocationsResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleLanguagesResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpApiStopCrawlOnMatchInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpGoogleOrganicTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.SerpTasksReadyResponseInfo;

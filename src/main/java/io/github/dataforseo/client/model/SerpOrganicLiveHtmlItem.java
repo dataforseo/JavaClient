@@ -35,181 +35,90 @@ import io.github.dataforseo.client.JSON;
 
 
 
-public class AiOverviewReference  {
+public class SerpOrganicLiveHtmlItem  {
 
 
-  public static final String SERIALIZED_NAME_TYPE = "type";
-  @SerializedName(SERIALIZED_NAME_TYPE)
-  private String type;
+  public static final String SERIALIZED_NAME_PAGE = "page";
+  @SerializedName(SERIALIZED_NAME_PAGE)
+  private Integer page;
 
-  public AiOverviewReference type(String type) {
-    this.type = type;
+  public SerpOrganicLiveHtmlItem page(Integer page) {
+    this.page = page;
     return this;
   }
 
   /**
-   * type of element
-   * @return type
+   * serial number of the returned HTML page
+   * @return page
    */
   @javax.annotation.Nullable
-  public String getType() {
-    return type;
+  public Integer getPage() {
+    return page;
   }
 
-  public void setType(String type) {
-    this.type = type;
+  public void setPage(Integer page) {
+    this.page = page;
   }
 
 
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
+  public static final String SERIALIZED_NAME_DATE = "date";
+  @SerializedName(SERIALIZED_NAME_DATE)
+  private String date;
 
-  public AiOverviewReference position(String position) {
-    this.position = position;
+  public SerpOrganicLiveHtmlItem date(String date) {
+    this.date = date;
     return this;
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
-   * @return position
+   * date and time when the HTML page was scanned
+* in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
+* example:
+* 2019-11-15 12:57:46 +00:00
+   * @return date
    */
   @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
+  public String getDate() {
+    return date;
   }
 
-  public void setPosition(String position) {
-    this.position = position;
+  public void setDate(String date) {
+    this.date = date;
   }
 
 
-  public static final String SERIALIZED_NAME_SOURCE = "source";
-  @SerializedName(SERIALIZED_NAME_SOURCE)
-  private String source;
+  public static final String SERIALIZED_NAME_HTML = "html";
+  @SerializedName(SERIALIZED_NAME_HTML)
+  private String html;
 
-  public AiOverviewReference source(String source) {
-    this.source = source;
+  public SerpOrganicLiveHtmlItem html(String html) {
+    this.html = html;
     return this;
   }
 
   /**
-   * reference source name or title
-   * @return source
+   * HTML page
+   * @return html
    */
   @javax.annotation.Nullable
-  public String getSource() {
-    return source;
+  public String getHtml() {
+    return html;
   }
 
-  public void setSource(String source) {
-    this.source = source;
-  }
-
-
-  public static final String SERIALIZED_NAME_DOMAIN = "domain";
-  @SerializedName(SERIALIZED_NAME_DOMAIN)
-  private String domain;
-
-  public AiOverviewReference domain(String domain) {
-    this.domain = domain;
-    return this;
-  }
-
-  /**
-   * domain in SERP
-   * @return domain
-   */
-  @javax.annotation.Nullable
-  public String getDomain() {
-    return domain;
-  }
-
-  public void setDomain(String domain) {
-    this.domain = domain;
-  }
-
-
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public AiOverviewReference url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * image source URL
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
-  public static final String SERIALIZED_NAME_TITLE = "title";
-  @SerializedName(SERIALIZED_NAME_TITLE)
-  private String title;
-
-  public AiOverviewReference title(String title) {
-    this.title = title;
-    return this;
-  }
-
-  /**
-   * title of the element
-   * @return title
-   */
-  @javax.annotation.Nullable
-  public String getTitle() {
-    return title;
-  }
-
-  public void setTitle(String title) {
-    this.title = title;
-  }
-
-
-  public static final String SERIALIZED_NAME_TEXT = "text";
-  @SerializedName(SERIALIZED_NAME_TEXT)
-  private String text;
-
-  public AiOverviewReference text(String text) {
-    this.text = text;
-    return this;
-  }
-
-  /**
-   * text of the component
-   * @return text
-   */
-  @javax.annotation.Nullable
-  public String getText() {
-    return text;
-  }
-
-  public void setText(String text) {
-    this.text = text;
+  public void setHtml(String html) {
+    this.html = html;
   }
 
 
 
-  public AiOverviewReference() {
+  public SerpOrganicLiveHtmlItem() {
   }
 
   
     
   private Map<String, Object> additionalProperties;
 
-  public AiOverviewReference putAdditionalProperty(String key, Object value) {
+  public SerpOrganicLiveHtmlItem putAdditionalProperty(String key, Object value) {
     if (this.additionalProperties == null) {
         this.additionalProperties = new HashMap<String, Object>();
     }
@@ -241,16 +150,12 @@ public class AiOverviewReference  {
 
 
     
-    AiOverviewReference aiOverviewReference = (AiOverviewReference) o;
+    SerpOrganicLiveHtmlItem serpOrganicLiveHtmlItem = (SerpOrganicLiveHtmlItem) o;
     return
 
-        Objects.equals(this.type, aiOverviewReference.type) &&
-        Objects.equals(this.position, aiOverviewReference.position) &&
-        Objects.equals(this.source, aiOverviewReference.source) &&
-        Objects.equals(this.domain, aiOverviewReference.domain) &&
-        Objects.equals(this.url, aiOverviewReference.url) &&
-        Objects.equals(this.title, aiOverviewReference.title) &&
-        Objects.equals(this.text, aiOverviewReference.text);  
+        Objects.equals(this.page, serpOrganicLiveHtmlItem.page) &&
+        Objects.equals(this.date, serpOrganicLiveHtmlItem.date) &&
+        Objects.equals(this.html, serpOrganicLiveHtmlItem.html);  
     
   }
 
@@ -260,7 +165,7 @@ public class AiOverviewReference  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, position, source, domain, url, title, text);
+  return Objects.hash(page, date, html);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -273,15 +178,11 @@ public class AiOverviewReference  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AiOverviewReference {\n");
+    sb.append("class SerpOrganicLiveHtmlItem {\n");
 
-    sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    source: ").append(toIndentedString(source)).append("\n");
-    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    title: ").append(toIndentedString(title)).append("\n");
-    sb.append("    text: ").append(toIndentedString(text)).append("\n");
+    sb.append("    page: ").append(toIndentedString(page)).append("\n");
+    sb.append("    date: ").append(toIndentedString(date)).append("\n");
+    sb.append("    html: ").append(toIndentedString(html)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -305,19 +206,11 @@ public class AiOverviewReference  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("type");
+    openapiFields.add("page");
     
-    openapiFields.add("position");
+    openapiFields.add("date");
     
-    openapiFields.add("source");
-    
-    openapiFields.add("domain");
-    
-    openapiFields.add("url");
-    
-    openapiFields.add("title");
-    
-    openapiFields.add("text");
+    openapiFields.add("html");
     
 
     // a set of required properties/fields (JSON key names)
@@ -331,7 +224,7 @@ public class AiOverviewReference  {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to AiOverviewReference
+   * @throws IOException if the JSON Element is invalid with respect to SerpOrganicLiveHtmlItem
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
   }
@@ -340,16 +233,16 @@ public class AiOverviewReference  {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!AiOverviewReference.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'AiOverviewReference' and its subtypes
+       if (!SerpOrganicLiveHtmlItem.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'SerpOrganicLiveHtmlItem' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<AiOverviewReference> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(AiOverviewReference.class));
+       final TypeAdapter<SerpOrganicLiveHtmlItem> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(SerpOrganicLiveHtmlItem.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<AiOverviewReference>() {
+       return (TypeAdapter<T>) new TypeAdapter<SerpOrganicLiveHtmlItem>() {
            @Override
-           public void write(JsonWriter out, AiOverviewReference value) throws IOException {
+           public void write(JsonWriter out, SerpOrganicLiveHtmlItem value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              obj.remove("additionalProperties");
              // serialize additional properties
@@ -377,12 +270,12 @@ public class AiOverviewReference  {
            }
 
            @Override
-           public AiOverviewReference read(JsonReader in) throws IOException {
+           public SerpOrganicLiveHtmlItem read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              JsonObject jsonObj = jsonElement.getAsJsonObject();
              // store additional fields in the deserialized instance
-             AiOverviewReference instance = thisAdapter.fromJsonTree(jsonObj);
+             SerpOrganicLiveHtmlItem instance = thisAdapter.fromJsonTree(jsonObj);
              for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
                if (!openapiFields.contains(entry.getKey())) {
                  if (entry.getValue().isJsonPrimitive()) { // primitive type
@@ -409,8 +302,8 @@ public class AiOverviewReference  {
   }
 
 
-  public static AiOverviewReference fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, AiOverviewReference.class);
+  public static SerpOrganicLiveHtmlItem fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, SerpOrganicLiveHtmlItem.class);
   }
 
   public String toJson() {

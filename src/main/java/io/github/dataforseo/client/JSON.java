@@ -3108,6 +3108,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixStatusResultInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixStatusTaskInfo.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.AppendixStatusResponseInfo.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new io.github.dataforseo.client.model.SerpApiStopCrawlOnMatchInfo.CustomTypeAdapterFactory());
         gson = gsonBuilder.create();
     }
 

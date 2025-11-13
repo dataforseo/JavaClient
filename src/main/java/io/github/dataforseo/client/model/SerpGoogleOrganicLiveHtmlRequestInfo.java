@@ -462,9 +462,9 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
   @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<String> stopCrawlOnMatch;
+  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
 
-  public SerpGoogleOrganicLiveHtmlRequestInfo stopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+  public SerpGoogleOrganicLiveHtmlRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
     this.stopCrawlOnMatch = stopCrawlOnMatch;
     return this;
   }
@@ -476,16 +476,16 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 * you can specify up to 10 target values in this array
 * example:
 * 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center
+* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
 * Your account will be billed per each SERP crawled through the specified targets
    * @return stopCrawlOnMatch
    */
   @javax.annotation.Nullable
-  public List<String> getStopCrawlOnMatch() {
+  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
     return stopCrawlOnMatch;
   }
 
-  public void setStopCrawlOnMatch(List<String> stopCrawlOnMatch) {
+  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
     this.stopCrawlOnMatch = stopCrawlOnMatch;
   }
 

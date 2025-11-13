@@ -35,14 +35,14 @@ import io.github.dataforseo.client.JSON;
 
 
 
-public class AiOverviewReference  {
+public class VisualStoriesElement  {
 
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
   private String type;
 
-  public AiOverviewReference type(String type) {
+  public VisualStoriesElement type(String type) {
     this.type = type;
     return this;
   }
@@ -61,105 +61,11 @@ public class AiOverviewReference  {
   }
 
 
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private String position;
-
-  public AiOverviewReference position(String position) {
-    this.position = position;
-    return this;
-  }
-
-  /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
-   * @return position
-   */
-  @javax.annotation.Nullable
-  public String getPosition() {
-    return position;
-  }
-
-  public void setPosition(String position) {
-    this.position = position;
-  }
-
-
-  public static final String SERIALIZED_NAME_SOURCE = "source";
-  @SerializedName(SERIALIZED_NAME_SOURCE)
-  private String source;
-
-  public AiOverviewReference source(String source) {
-    this.source = source;
-    return this;
-  }
-
-  /**
-   * reference source name or title
-   * @return source
-   */
-  @javax.annotation.Nullable
-  public String getSource() {
-    return source;
-  }
-
-  public void setSource(String source) {
-    this.source = source;
-  }
-
-
-  public static final String SERIALIZED_NAME_DOMAIN = "domain";
-  @SerializedName(SERIALIZED_NAME_DOMAIN)
-  private String domain;
-
-  public AiOverviewReference domain(String domain) {
-    this.domain = domain;
-    return this;
-  }
-
-  /**
-   * domain in SERP
-   * @return domain
-   */
-  @javax.annotation.Nullable
-  public String getDomain() {
-    return domain;
-  }
-
-  public void setDomain(String domain) {
-    this.domain = domain;
-  }
-
-
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public AiOverviewReference url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * image source URL
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
 
-  public AiOverviewReference title(String title) {
+  public VisualStoriesElement title(String title) {
     this.title = title;
     return this;
   }
@@ -178,38 +84,61 @@ public class AiOverviewReference  {
   }
 
 
-  public static final String SERIALIZED_NAME_TEXT = "text";
-  @SerializedName(SERIALIZED_NAME_TEXT)
-  private String text;
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
 
-  public AiOverviewReference text(String text) {
-    this.text = text;
+  public VisualStoriesElement url(String url) {
+    this.url = url;
     return this;
   }
 
   /**
-   * text of the component
-   * @return text
+   * search URL with refinement parameters
+   * @return url
    */
   @javax.annotation.Nullable
-  public String getText() {
-    return text;
+  public String getUrl() {
+    return url;
   }
 
-  public void setText(String text) {
-    this.text = text;
+  public void setUrl(String url) {
+    this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_DOMAIN = "domain";
+  @SerializedName(SERIALIZED_NAME_DOMAIN)
+  private String domain;
+
+  public VisualStoriesElement domain(String domain) {
+    this.domain = domain;
+    return this;
+  }
+
+  /**
+   * domain in SERP
+   * @return domain
+   */
+  @javax.annotation.Nullable
+  public String getDomain() {
+    return domain;
+  }
+
+  public void setDomain(String domain) {
+    this.domain = domain;
   }
 
 
 
-  public AiOverviewReference() {
+  public VisualStoriesElement() {
   }
 
   
     
   private Map<String, Object> additionalProperties;
 
-  public AiOverviewReference putAdditionalProperty(String key, Object value) {
+  public VisualStoriesElement putAdditionalProperty(String key, Object value) {
     if (this.additionalProperties == null) {
         this.additionalProperties = new HashMap<String, Object>();
     }
@@ -241,16 +170,13 @@ public class AiOverviewReference  {
 
 
     
-    AiOverviewReference aiOverviewReference = (AiOverviewReference) o;
+    VisualStoriesElement visualStoriesElement = (VisualStoriesElement) o;
     return
 
-        Objects.equals(this.type, aiOverviewReference.type) &&
-        Objects.equals(this.position, aiOverviewReference.position) &&
-        Objects.equals(this.source, aiOverviewReference.source) &&
-        Objects.equals(this.domain, aiOverviewReference.domain) &&
-        Objects.equals(this.url, aiOverviewReference.url) &&
-        Objects.equals(this.title, aiOverviewReference.title) &&
-        Objects.equals(this.text, aiOverviewReference.text);  
+        Objects.equals(this.type, visualStoriesElement.type) &&
+        Objects.equals(this.title, visualStoriesElement.title) &&
+        Objects.equals(this.url, visualStoriesElement.url) &&
+        Objects.equals(this.domain, visualStoriesElement.domain);  
     
   }
 
@@ -260,7 +186,7 @@ public class AiOverviewReference  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, position, source, domain, url, title, text);
+  return Objects.hash(type, title, url, domain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -273,15 +199,12 @@ public class AiOverviewReference  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AiOverviewReference {\n");
+    sb.append("class VisualStoriesElement {\n");
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
-    sb.append("    source: ").append(toIndentedString(source)).append("\n");
-    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
-    sb.append("    text: ").append(toIndentedString(text)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -307,17 +230,11 @@ public class AiOverviewReference  {
     
     openapiFields.add("type");
     
-    openapiFields.add("position");
-    
-    openapiFields.add("source");
-    
-    openapiFields.add("domain");
+    openapiFields.add("title");
     
     openapiFields.add("url");
     
-    openapiFields.add("title");
-    
-    openapiFields.add("text");
+    openapiFields.add("domain");
     
 
     // a set of required properties/fields (JSON key names)
@@ -331,7 +248,7 @@ public class AiOverviewReference  {
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to AiOverviewReference
+   * @throws IOException if the JSON Element is invalid with respect to VisualStoriesElement
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
   }
@@ -340,16 +257,16 @@ public class AiOverviewReference  {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!AiOverviewReference.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'AiOverviewReference' and its subtypes
+       if (!VisualStoriesElement.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'VisualStoriesElement' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<AiOverviewReference> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(AiOverviewReference.class));
+       final TypeAdapter<VisualStoriesElement> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(VisualStoriesElement.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<AiOverviewReference>() {
+       return (TypeAdapter<T>) new TypeAdapter<VisualStoriesElement>() {
            @Override
-           public void write(JsonWriter out, AiOverviewReference value) throws IOException {
+           public void write(JsonWriter out, VisualStoriesElement value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              obj.remove("additionalProperties");
              // serialize additional properties
@@ -377,12 +294,12 @@ public class AiOverviewReference  {
            }
 
            @Override
-           public AiOverviewReference read(JsonReader in) throws IOException {
+           public VisualStoriesElement read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              JsonObject jsonObj = jsonElement.getAsJsonObject();
              // store additional fields in the deserialized instance
-             AiOverviewReference instance = thisAdapter.fromJsonTree(jsonObj);
+             VisualStoriesElement instance = thisAdapter.fromJsonTree(jsonObj);
              for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
                if (!openapiFields.contains(entry.getKey())) {
                  if (entry.getValue().isJsonPrimitive()) { // primitive type
@@ -409,8 +326,8 @@ public class AiOverviewReference  {
   }
 
 
-  public static AiOverviewReference fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, AiOverviewReference.class);
+  public static VisualStoriesElement fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, VisualStoriesElement.class);
   }
 
   public String toJson() {
