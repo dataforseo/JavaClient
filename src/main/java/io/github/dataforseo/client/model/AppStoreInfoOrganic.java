@@ -374,6 +374,7 @@ public class AppStoreInfoOrganic  {
 
   /**
    * all relevant categories/genres of the app
+* Note: this field returns only one relevant category in the array
    * @return categories
    */
   @javax.annotation.Nullable
@@ -397,6 +398,7 @@ public class AppStoreInfoOrganic  {
 
   /**
    * languages supported in the app
+* Note: this field returns only one supported language in the array
    * @return languages
    */
   @javax.annotation.Nullable
@@ -584,6 +586,7 @@ public class AppStoreInfoOrganic  {
 * in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
 * example:
 * 2019-11-15 12:57:46 +00:00
+* Note: this field is deprecated and always returns null
    * @return releasedDate
    */
   @javax.annotation.Nullable

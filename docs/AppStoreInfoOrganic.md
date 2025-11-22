@@ -19,8 +19,8 @@
 **price** | **PriceInfo** | price of the app |[optional]|
 **isFree** | **Boolean** | indicates whether the app is free |[optional]|
 **mainCategory** | **String** | main category/genre of the app |[optional]|
-**categories** | **List<String>** | all relevant categories/genres of the app |[optional]|
-**languages** | **List<String>** | languages supported in the app |[optional]|
+**categories** | **List<String>** | all relevant categories/genres of the app<br>Note: this field returns only one relevant category in the array |[optional]|
+**languages** | **List<String>** | languages supported in the app<br>Note: this field returns only one supported language in the array |[optional]|
 **advisories** | **List<String>** | age rating and age-based content advisories |[optional]|
 **developer** | **String** | name of the app developer |[optional]|
 **developerId** | **String** | ID of the app developer |[optional]|
@@ -28,7 +28,7 @@
 **version** | **String** | current version of the app |[optional]|
 **minimumOsVersion** | **String** | minimum OS version required to install the app |[optional]|
 **size** | **String** | size of the app |[optional]|
-**releasedDate** | **String** | date and time when the app was released<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
+**releasedDate** | **String** | date and time when the app was released<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br>2019-11-15 12:57:46 +00:00<br>Note: this field is deprecated and always returns null |[optional]|
 **lastUpdateDate** | **String** | date and time when the app was last updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
 **updateNotes** | **String** | update notes<br>contains the latest update notes from the developer |[optional]|
 **images** | **List<String>** | app images<br>contains URLs to the images used on the app page on App Store |[optional]|

@@ -48,7 +48,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * domain in SERP of the Ad element
+   * subdomain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * sitelink URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * 
+   * relevant website name in SERP
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -492,8 +492,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   /**
    * estimated traffic volume
-* estimated organic monthly traffic to the domain
-* calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
+* estimated paid monthly traffic to the target
+* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -517,8 +517,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * estimated cost of paid monthly search traffic
-* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
+   * estimated cost of monthly search traffic
+* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -592,7 +592,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * backlinks information for the ranked website
+   * backlinks information for the target website
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

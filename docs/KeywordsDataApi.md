@@ -105,8 +105,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
     KeywordsDataIdListRequestInfo model = new KeywordsDataIdListRequestInfo()
-           .datetimeFrom("2025-08-10 11:01:48 +00:00")
-           .datetimeTo("2025-10-10 11:01:48 +00:00")
+           .datetimeFrom("2025-08-22 08:08:36 +00:00")
+           .datetimeTo("2025-10-22 08:08:36 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -749,7 +749,7 @@ public class Example {
                 ))
            .locationCode(2840)
            .searchPartners(true)
-           .dateFrom("2025-08-10");
+           .dateFrom("2025-08-22");
     KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo response = apiInstance.googleAdsSearchVolumeLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -1962,8 +1962,8 @@ public class Example {
                 ))
            .type("youtube")
            .categoryCode(3)
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10");
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22");
     KeywordsDataGoogleTrendsExploreTaskPostResponseInfo response = apiInstance.googleTrendsExploreTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2179,8 +2179,8 @@ public class Example {
            .locationName("United States")
            .type("youtube")
            .categoryCode(3)
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10");
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22");
     KeywordsDataGoogleTrendsExploreLiveResponseInfo response = apiInstance.googleTrendsExploreLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2470,8 +2470,8 @@ public class Example {
                 ))
            .locationName("United States")
            .type("web")
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10");
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22");
     KeywordsDataDataforseoTrendsSubregionInterestsLiveResponseInfo response = apiInstance.dataforseoTrendsSubregionInterestsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2548,8 +2548,8 @@ public class Example {
                 ))
            .locationName("United States")
            .type("web")
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10");
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22");
     KeywordsDataDataforseoTrendsDemographyLiveResponseInfo response = apiInstance.dataforseoTrendsDemographyLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2626,8 +2626,8 @@ public class Example {
                 ))
            .locationName("United States")
            .type("web")
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10");
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22");
     KeywordsDataDataforseoTrendsMergedDataLiveResponseInfo response = apiInstance.dataforseoTrendsMergedDataLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

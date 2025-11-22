@@ -454,7 +454,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * array of targets to stop crawling
+   * target domain or wildcard value
 * required field if stop_crawl_on_match is specified;
 * specify a target domain or wildcard value;
 * Note: domain name must be specified without a request protocol;
@@ -473,27 +473,121 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
 
   public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
   @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private List<String> matchType;
+  private String matchType;
 
-  public SerpGoogleOrganicLiveAdvancedRequestInfo matchType(List<String> matchType) {
+  public SerpGoogleOrganicLiveAdvancedRequestInfo matchType(String matchType) {
     this.matchType = matchType;
     return this;
   }
 
   /**
-   * array of targets to stop crawling
+   * target match type
 * required field if stop_crawl_on_match is specified;
 * type of match for the match_value
 * possible values: domain, with_subdomains, wildcard
    * @return matchType
    */
   @javax.annotation.Nullable
-  public List<String> getMatchType() {
+  public String getMatchType() {
     return matchType;
   }
 
-  public void setMatchType(List<String> matchType) {
+  public void setMatchType(String matchType) {
     this.matchType = matchType;
+  }
+
+
+  public static final String SERIALIZED_NAME_TARGET_SEARCH_MODE = "target_search_mode";
+  @SerializedName(SERIALIZED_NAME_TARGET_SEARCH_MODE)
+  private String targetSearchMode;
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo targetSearchMode(String targetSearchMode) {
+    this.targetSearchMode = targetSearchMode;
+    return this;
+  }
+
+  /**
+   * target matching mode
+* optional field
+* to enable this parameter, stop_crawl_on_match must also be enabled
+* defines how the crawl should stop when multiple targets are specified in stop_crawl_on_match
+* possible values: all, any
+* all – the crawl stops only when all specified targets are found
+* any – the crawl stops when any single target is found
+* default value: any
+* learn more about this parameter on our Help Center
+   * @return targetSearchMode
+   */
+  @javax.annotation.Nullable
+  public String getTargetSearchMode() {
+    return targetSearchMode;
+  }
+
+  public void setTargetSearchMode(String targetSearchMode) {
+    this.targetSearchMode = targetSearchMode;
+  }
+
+
+  public static final String SERIALIZED_NAME_FIND_TARGETS_IN = "find_targets_in";
+  @SerializedName(SERIALIZED_NAME_FIND_TARGETS_IN)
+  private List<String> findTargetsIn;
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo findTargetsIn(List<String> findTargetsIn) {
+    this.findTargetsIn = findTargetsIn;
+    return this;
+  }
+
+  /**
+   * SERP element types to check for targets
+* optional field
+* to enable this parameter, stop_crawl_on_match must also be enabled
+* specifies which SERP element types should be checked for target matches
+* if not specified, all first-level elements with url and domain fields are checked for targets
+* possible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitter
+* Note: cannot contain the same element types as ignore_targets_in
+* example:
+* 'find_targets_in': ['organic', 'featured_snippet']
+* learn more about this parameter on our Help Center
+   * @return findTargetsIn
+   */
+  @javax.annotation.Nullable
+  public List<String> getFindTargetsIn() {
+    return findTargetsIn;
+  }
+
+  public void setFindTargetsIn(List<String> findTargetsIn) {
+    this.findTargetsIn = findTargetsIn;
+  }
+
+
+  public static final String SERIALIZED_NAME_IGNORE_TARGETS_IN = "ignore_targets_in";
+  @SerializedName(SERIALIZED_NAME_IGNORE_TARGETS_IN)
+  private List<String> ignoreTargetsIn;
+
+  public SerpGoogleOrganicLiveAdvancedRequestInfo ignoreTargetsIn(List<String> ignoreTargetsIn) {
+    this.ignoreTargetsIn = ignoreTargetsIn;
+    return this;
+  }
+
+  /**
+   * SERP element types to exclude from target search
+* optional field
+* to enable this parameter, stop_crawl_on_match must also be enabled
+* specifies which SERP element types should be excluded when searching for target matches
+* possible values: organic, paid, local_pack, featured_snippet, events, google_flights, images, jobs, knowledge_graph, local_service, map, scholarly_articles, third_party_reviews, twitter
+* Note: cannot contain the same element types as find_targets_in
+* example:
+* 'ignore_targets_in': ['paid', 'images']
+* learn more about this parameter on our Help Center
+   * @return ignoreTargetsIn
+   */
+  @javax.annotation.Nullable
+  public List<String> getIgnoreTargetsIn() {
+    return ignoreTargetsIn;
+  }
+
+  public void setIgnoreTargetsIn(List<String> ignoreTargetsIn) {
+    this.ignoreTargetsIn = ignoreTargetsIn;
   }
 
 
@@ -839,6 +933,9 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
         Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicLiveAdvancedRequestInfo.stopCrawlOnMatch) &&
         Objects.equals(this.matchValue, serpGoogleOrganicLiveAdvancedRequestInfo.matchValue) &&
         Objects.equals(this.matchType, serpGoogleOrganicLiveAdvancedRequestInfo.matchType) &&
+        Objects.equals(this.targetSearchMode, serpGoogleOrganicLiveAdvancedRequestInfo.targetSearchMode) &&
+        Objects.equals(this.findTargetsIn, serpGoogleOrganicLiveAdvancedRequestInfo.findTargetsIn) &&
+        Objects.equals(this.ignoreTargetsIn, serpGoogleOrganicLiveAdvancedRequestInfo.ignoreTargetsIn) &&
         Objects.equals(this.groupOrganicResults, serpGoogleOrganicLiveAdvancedRequestInfo.groupOrganicResults) &&
         Objects.equals(this.calculateRectangles, serpGoogleOrganicLiveAdvancedRequestInfo.calculateRectangles) &&
         Objects.equals(this.browserScreenWidth, serpGoogleOrganicLiveAdvancedRequestInfo.browserScreenWidth) &&
@@ -858,7 +955,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, stopCrawlOnMatch, matchValue, matchType, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, searchParam, removeFromUrl, tag);
+  return Objects.hash(keyword, url, depth, maxCrawlPages, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, device, os, target, stopCrawlOnMatch, matchValue, matchType, targetSearchMode, findTargetsIn, ignoreTargetsIn, groupOrganicResults, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, peopleAlsoAskClickDepth, loadAsyncAiOverview, searchParam, removeFromUrl, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -889,6 +986,9 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
     sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
     sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
+    sb.append("    targetSearchMode: ").append(toIndentedString(targetSearchMode)).append("\n");
+    sb.append("    findTargetsIn: ").append(toIndentedString(findTargetsIn)).append("\n");
+    sb.append("    ignoreTargetsIn: ").append(toIndentedString(ignoreTargetsIn)).append("\n");
     sb.append("    groupOrganicResults: ").append(toIndentedString(groupOrganicResults)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
@@ -953,6 +1053,12 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
     openapiFields.add("match_value");
     
     openapiFields.add("match_type");
+    
+    openapiFields.add("target_search_mode");
+    
+    openapiFields.add("find_targets_in");
+    
+    openapiFields.add("ignore_targets_in");
     
     openapiFields.add("group_organic_results");
     

@@ -71,8 +71,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
     MerchantIdListRequestInfo model = new MerchantIdListRequestInfo()
-           .datetimeFrom("2025-08-10 11:04:49 +00:00")
-           .datetimeTo("2025-10-10 11:04:49 +00:00")
+           .datetimeFrom("2025-08-22 08:11:04 +00:00")
+           .datetimeTo("2025-10-22 08:11:04 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");

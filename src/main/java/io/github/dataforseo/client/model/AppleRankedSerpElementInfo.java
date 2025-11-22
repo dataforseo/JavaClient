@@ -111,9 +111,9 @@ public class AppleRankedSerpElementInfo  {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private Long seResultsCount;
+  private Integer seResultsCount;
 
-  public AppleRankedSerpElementInfo seResultsCount(Long seResultsCount) {
+  public AppleRankedSerpElementInfo seResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
@@ -123,11 +123,11 @@ public class AppleRankedSerpElementInfo  {
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public Long getSeResultsCount() {
+  public Integer getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(Long seResultsCount) {
+  public void setSeResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 

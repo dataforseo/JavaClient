@@ -121,7 +121,7 @@ public class GoogleShoppingSellersShopsListElementItem  extends BaseMerchantGoog
 
   /**
    * indicated condition of the product
-* possible values: Used, Refurbished, New, null
+* possible values: Used, Refurbished, New, Pre-owned, null
    * @return productCondition
    */
   @javax.annotation.Nullable

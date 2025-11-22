@@ -84,29 +84,6 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
   }
 
 
-  public static final String SERIALIZED_NAME_REFERENCES = "references";
-  @SerializedName(SERIALIZED_NAME_REFERENCES)
-  private List<AiModeAiOverviewReferenceInfo> references;
-
-  public SerpApiAiOverviewTableElementItem references(List<AiModeAiOverviewReferenceInfo> references) {
-    this.references = references;
-    return this;
-  }
-
-  /**
-   * references relevant to the element
-   * @return references
-   */
-  @javax.annotation.Nullable
-  public List<AiModeAiOverviewReferenceInfo> getReferences() {
-    return references;
-  }
-
-  public void setReferences(List<AiModeAiOverviewReferenceInfo> references) {
-    this.references = references;
-  }
-
-
 
   public SerpApiAiOverviewTableElementItem() {
   }
@@ -151,8 +128,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
     return
 
         Objects.equals(this.markdown, serpApiAiOverviewTableElementItem.markdown) &&
-        Objects.equals(this.table, serpApiAiOverviewTableElementItem.table) &&
-        Objects.equals(this.references, serpApiAiOverviewTableElementItem.references) && 
+        Objects.equals(this.table, serpApiAiOverviewTableElementItem.table) && 
         super.equals(o);
     
   }
@@ -163,7 +139,7 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
 
   @Override
   public int hashCode() {
-  return Objects.hash(markdown, table, references);
+  return Objects.hash(markdown, table);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -180,7 +156,6 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
 
     sb.append("    markdown: ").append(toIndentedString(markdown)).append("\n");
     sb.append("    table: ").append(toIndentedString(table)).append("\n");
-    sb.append("    references: ").append(toIndentedString(references)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -209,8 +184,6 @@ public class SerpApiAiOverviewTableElementItem  extends BaseSerpApiAiOverviewEle
     openapiFields.add("markdown");
     
     openapiFields.add("table");
-    
-    openapiFields.add("references");
     
 
     // a set of required properties/fields (JSON key names)

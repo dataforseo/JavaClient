@@ -8,14 +8,6 @@ import java.util.Map;
 import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
-import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesModelsResponseInfo;
-import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesLiveRequestInfo;
-import io.github.dataforseo.client.model.LlmMessageChainItem;
-import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesLiveResponseInfo;
-import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskPostRequestInfo;
-import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskPostResponseInfo;
-import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo;
-import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskGetResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperLocationsResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperLanguagesResponseInfo;
@@ -24,6 +16,28 @@ import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTaskPost
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsAvailableFiltersResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsSearchLiveRequestInfo;
+import io.github.dataforseo.client.model.BaseAiOptimizationLLmMentionsTargetElement;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsSearchLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsTopPagesLiveRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsTopPagesLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsTopDomainsLiveRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsTopDomainsLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo;
+import io.github.dataforseo.client.model.AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesModelsResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesLiveRequestInfo;
+import io.github.dataforseo.client.model.LlmMessageChainItem;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskPostRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskPostResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationChatGptLlmResponsesTaskGetResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesModelsResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesLiveRequestInfo;
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesLiveResponseInfo;
@@ -32,6 +46,10 @@ import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesTaskPos
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationClaudeLlmResponsesTaskGetResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesModelsResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTaskPostRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTaskPostResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTaskGetResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesLiveRequestInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesLiveResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesModelsResponseInfo;
@@ -89,367 +107,6 @@ public class AiOptimizationApi {
         this.localCustomBaseUrl = customBaseUrl;
     }
 
-
-    public okhttp3.Call chatGptLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-          String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/models";
-   
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call chatGptLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-
-       return chatGptLlmResponsesModelsCall(_callback);
-
-    }
-
-    public AiOptimizationChatGptLlmResponsesModelsResponseInfo chatGptLlmResponsesModels() throws ApiException {
-       ApiResponse<AiOptimizationChatGptLlmResponsesModelsResponseInfo> localVarResp = chatGptLlmResponsesModelsWithHttpInfo();
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<AiOptimizationChatGptLlmResponsesModelsResponseInfo> chatGptLlmResponsesModelsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = chatGptLlmResponsesModelsValidateBeforeCall(null);
-       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesModelsResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call chatGptLlmResponsesModelsAsync(final ApiCallback<AiOptimizationChatGptLlmResponsesModelsResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = chatGptLlmResponsesModelsValidateBeforeCall(_callback);
-       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesModelsResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call chatGptLlmResponsesLiveCall(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/live";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call chatGptLlmResponsesLiveValidateBeforeCall(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return chatGptLlmResponsesLiveCall(payload, _callback);
- 
-        }
- 
-        public AiOptimizationChatGptLlmResponsesLiveResponseInfo chatGptLlmResponsesLive(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload) throws ApiException {
-            ApiResponse<AiOptimizationChatGptLlmResponsesLiveResponseInfo> localVarResp = chatGptLlmResponsesLiveWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<AiOptimizationChatGptLlmResponsesLiveResponseInfo> chatGptLlmResponsesLiveWithHttpInfo(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = chatGptLlmResponsesLiveValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesLiveResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call chatGptLlmResponsesLiveAsync(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload, final ApiCallback<AiOptimizationChatGptLlmResponsesLiveResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = chatGptLlmResponsesLiveValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesLiveResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
-    public okhttp3.Call chatGptLlmResponsesTaskPostCall(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/task_post";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call chatGptLlmResponsesTaskPostValidateBeforeCall(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return chatGptLlmResponsesTaskPostCall(payload, _callback);
- 
-        }
- 
-        public AiOptimizationChatGptLlmResponsesTaskPostResponseInfo chatGptLlmResponsesTaskPost(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload) throws ApiException {
-            ApiResponse<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo> localVarResp = chatGptLlmResponsesTaskPostWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo> chatGptLlmResponsesTaskPostWithHttpInfo(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = chatGptLlmResponsesTaskPostValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call chatGptLlmResponsesTaskPostAsync(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload, final ApiCallback<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = chatGptLlmResponsesTaskPostValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
-    public okhttp3.Call chatGptLlmResponsesTasksReadyCall( final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-          String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/tasks_ready";
-   
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call chatGptLlmResponsesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-
-       return chatGptLlmResponsesTasksReadyCall(_callback);
-
-    }
-
-    public AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo chatGptLlmResponsesTasksReady() throws ApiException {
-       ApiResponse<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo> localVarResp = chatGptLlmResponsesTasksReadyWithHttpInfo();
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo> chatGptLlmResponsesTasksReadyWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = chatGptLlmResponsesTasksReadyValidateBeforeCall(null);
-       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call chatGptLlmResponsesTasksReadyAsync(final ApiCallback<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = chatGptLlmResponsesTasksReadyValidateBeforeCall(_callback);
-       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call chatGptLlmResponsesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-   
-       String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/task_get/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
-
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call chatGptLlmResponsesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
-       // verify the required parameter 'id' is set
-       if (id == null) {
-           throw new ApiException("Missing the required parameter 'id' when calling chatGptLlmResponsesTaskGet(Async)");
-       }
-
-       return chatGptLlmResponsesTaskGetCall(id, _callback);
-
-    }
-
-    public AiOptimizationChatGptLlmResponsesTaskGetResponseInfo chatGptLlmResponsesTaskGet(String id) throws ApiException {
-       ApiResponse<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo> localVarResp = chatGptLlmResponsesTaskGetWithHttpInfo(id);
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo> chatGptLlmResponsesTaskGetWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = chatGptLlmResponsesTaskGetValidateBeforeCall(id, null);
-       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call chatGptLlmResponsesTaskGetAsync(String id, final ApiCallback<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = chatGptLlmResponsesTaskGetValidateBeforeCall(id, _callback);
-       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
 
     public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
@@ -968,6 +625,861 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
+    public okhttp3.Call aiOptimizationLlmMentionsLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/llm_mentions/locations_and_languages";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call aiOptimizationLlmMentionsLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return aiOptimizationLlmMentionsLocationsAndLanguagesCall(_callback);
+
+    }
+
+    public AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo aiOptimizationLlmMentionsLocationsAndLanguages() throws ApiException {
+       ApiResponse<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> localVarResp = aiOptimizationLlmMentionsLocationsAndLanguagesWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> aiOptimizationLlmMentionsLocationsAndLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = aiOptimizationLlmMentionsLocationsAndLanguagesValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call aiOptimizationLlmMentionsLocationsAndLanguagesAsync(final ApiCallback<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = aiOptimizationLlmMentionsLocationsAndLanguagesValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call llmMentionsAvailableFiltersCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/llm_mentions/available_filters";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call llmMentionsAvailableFiltersValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return llmMentionsAvailableFiltersCall(_callback);
+
+    }
+
+    public AiOptimizationLlmMentionsAvailableFiltersResponseInfo llmMentionsAvailableFilters() throws ApiException {
+       ApiResponse<AiOptimizationLlmMentionsAvailableFiltersResponseInfo> localVarResp = llmMentionsAvailableFiltersWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationLlmMentionsAvailableFiltersResponseInfo> llmMentionsAvailableFiltersWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = llmMentionsAvailableFiltersValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsAvailableFiltersResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call llmMentionsAvailableFiltersAsync(final ApiCallback<AiOptimizationLlmMentionsAvailableFiltersResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = llmMentionsAvailableFiltersValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsAvailableFiltersResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call llmMentionsSearchLiveCall(List<AiOptimizationLlmMentionsSearchLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/llm_mentions/search/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call llmMentionsSearchLiveValidateBeforeCall(List<AiOptimizationLlmMentionsSearchLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return llmMentionsSearchLiveCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationLlmMentionsSearchLiveResponseInfo llmMentionsSearchLive(List<AiOptimizationLlmMentionsSearchLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationLlmMentionsSearchLiveResponseInfo> localVarResp = llmMentionsSearchLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationLlmMentionsSearchLiveResponseInfo> llmMentionsSearchLiveWithHttpInfo(List<AiOptimizationLlmMentionsSearchLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = llmMentionsSearchLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsSearchLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call llmMentionsSearchLiveAsync(List<AiOptimizationLlmMentionsSearchLiveRequestInfo> payload, final ApiCallback<AiOptimizationLlmMentionsSearchLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = llmMentionsSearchLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsSearchLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call llmMentionsTopPagesLiveCall(List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/llm_mentions/top_pages/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call llmMentionsTopPagesLiveValidateBeforeCall(List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return llmMentionsTopPagesLiveCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationLlmMentionsTopPagesLiveResponseInfo llmMentionsTopPagesLive(List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationLlmMentionsTopPagesLiveResponseInfo> localVarResp = llmMentionsTopPagesLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationLlmMentionsTopPagesLiveResponseInfo> llmMentionsTopPagesLiveWithHttpInfo(List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = llmMentionsTopPagesLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsTopPagesLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call llmMentionsTopPagesLiveAsync(List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo> payload, final ApiCallback<AiOptimizationLlmMentionsTopPagesLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = llmMentionsTopPagesLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsTopPagesLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call llmMentionsTopDomainsLiveCall(List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/llm_mentions/top_domains/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call llmMentionsTopDomainsLiveValidateBeforeCall(List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return llmMentionsTopDomainsLiveCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationLlmMentionsTopDomainsLiveResponseInfo llmMentionsTopDomainsLive(List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationLlmMentionsTopDomainsLiveResponseInfo> localVarResp = llmMentionsTopDomainsLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationLlmMentionsTopDomainsLiveResponseInfo> llmMentionsTopDomainsLiveWithHttpInfo(List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = llmMentionsTopDomainsLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsTopDomainsLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call llmMentionsTopDomainsLiveAsync(List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo> payload, final ApiCallback<AiOptimizationLlmMentionsTopDomainsLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = llmMentionsTopDomainsLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsTopDomainsLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call llmMentionsAggregatedMetricsLiveCall(List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/llm_mentions/aggregated_metrics/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call llmMentionsAggregatedMetricsLiveValidateBeforeCall(List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return llmMentionsAggregatedMetricsLiveCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo llmMentionsAggregatedMetricsLive(List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo> localVarResp = llmMentionsAggregatedMetricsLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo> llmMentionsAggregatedMetricsLiveWithHttpInfo(List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = llmMentionsAggregatedMetricsLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call llmMentionsAggregatedMetricsLiveAsync(List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo> payload, final ApiCallback<AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = llmMentionsAggregatedMetricsLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call llmMentionsCrossAggregatedMetricsLiveCall(List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/llm_mentions/cross_aggregated_metrics/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call llmMentionsCrossAggregatedMetricsLiveValidateBeforeCall(List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return llmMentionsCrossAggregatedMetricsLiveCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo llmMentionsCrossAggregatedMetricsLive(List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo> localVarResp = llmMentionsCrossAggregatedMetricsLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo> llmMentionsCrossAggregatedMetricsLiveWithHttpInfo(List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = llmMentionsCrossAggregatedMetricsLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call llmMentionsCrossAggregatedMetricsLiveAsync(List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo> payload, final ApiCallback<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = llmMentionsCrossAggregatedMetricsLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call chatGptLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/models";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call chatGptLlmResponsesModelsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return chatGptLlmResponsesModelsCall(_callback);
+
+    }
+
+    public AiOptimizationChatGptLlmResponsesModelsResponseInfo chatGptLlmResponsesModels() throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmResponsesModelsResponseInfo> localVarResp = chatGptLlmResponsesModelsWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmResponsesModelsResponseInfo> chatGptLlmResponsesModelsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmResponsesModelsValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesModelsResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call chatGptLlmResponsesModelsAsync(final ApiCallback<AiOptimizationChatGptLlmResponsesModelsResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = chatGptLlmResponsesModelsValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesModelsResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call chatGptLlmResponsesLiveCall(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/live";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call chatGptLlmResponsesLiveValidateBeforeCall(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return chatGptLlmResponsesLiveCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationChatGptLlmResponsesLiveResponseInfo chatGptLlmResponsesLive(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationChatGptLlmResponsesLiveResponseInfo> localVarResp = chatGptLlmResponsesLiveWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationChatGptLlmResponsesLiveResponseInfo> chatGptLlmResponsesLiveWithHttpInfo(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = chatGptLlmResponsesLiveValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesLiveResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call chatGptLlmResponsesLiveAsync(List<AiOptimizationChatGptLlmResponsesLiveRequestInfo> payload, final ApiCallback<AiOptimizationChatGptLlmResponsesLiveResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = chatGptLlmResponsesLiveValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call chatGptLlmResponsesTaskPostCall(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/task_post";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call chatGptLlmResponsesTaskPostValidateBeforeCall(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return chatGptLlmResponsesTaskPostCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationChatGptLlmResponsesTaskPostResponseInfo chatGptLlmResponsesTaskPost(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo> localVarResp = chatGptLlmResponsesTaskPostWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo> chatGptLlmResponsesTaskPostWithHttpInfo(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = chatGptLlmResponsesTaskPostValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call chatGptLlmResponsesTaskPostAsync(List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo> payload, final ApiCallback<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = chatGptLlmResponsesTaskPostValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskPostResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call chatGptLlmResponsesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/tasks_ready";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call chatGptLlmResponsesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return chatGptLlmResponsesTasksReadyCall(_callback);
+
+    }
+
+    public AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo chatGptLlmResponsesTasksReady() throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo> localVarResp = chatGptLlmResponsesTasksReadyWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo> chatGptLlmResponsesTasksReadyWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmResponsesTasksReadyValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call chatGptLlmResponsesTasksReadyAsync(final ApiCallback<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = chatGptLlmResponsesTasksReadyValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call chatGptLlmResponsesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/ai_optimization/chat_gpt/llm_responses/task_get/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call chatGptLlmResponsesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'id' is set
+       if (id == null) {
+           throw new ApiException("Missing the required parameter 'id' when calling chatGptLlmResponsesTaskGet(Async)");
+       }
+
+       return chatGptLlmResponsesTaskGetCall(id, _callback);
+
+    }
+
+    public AiOptimizationChatGptLlmResponsesTaskGetResponseInfo chatGptLlmResponsesTaskGet(String id) throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo> localVarResp = chatGptLlmResponsesTaskGetWithHttpInfo(id);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo> chatGptLlmResponsesTaskGetWithHttpInfo(String id) throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmResponsesTaskGetValidateBeforeCall(id, null);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call chatGptLlmResponsesTaskGetAsync(String id, final ApiCallback<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = chatGptLlmResponsesTaskGetValidateBeforeCall(id, _callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmResponsesTaskGetResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
     public okhttp3.Call claudeLlmResponsesModelsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
@@ -1397,6 +1909,225 @@ public class AiOptimizationApi {
 
        okhttp3.Call localVarCall = geminiLlmResponsesModelsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesModelsResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call geminiLlmResponsesTaskPostCall(List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/gemini/llm_responses/task_post";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call geminiLlmResponsesTaskPostValidateBeforeCall(List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return geminiLlmResponsesTaskPostCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationGeminiLlmResponsesTaskPostResponseInfo geminiLlmResponsesTaskPost(List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationGeminiLlmResponsesTaskPostResponseInfo> localVarResp = geminiLlmResponsesTaskPostWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationGeminiLlmResponsesTaskPostResponseInfo> geminiLlmResponsesTaskPostWithHttpInfo(List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = geminiLlmResponsesTaskPostValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesTaskPostResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call geminiLlmResponsesTaskPostAsync(List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo> payload, final ApiCallback<AiOptimizationGeminiLlmResponsesTaskPostResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = geminiLlmResponsesTaskPostValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesTaskPostResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call geminiLlmResponsesTasksReadyCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/gemini/llm_responses/tasks_ready";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call geminiLlmResponsesTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return geminiLlmResponsesTasksReadyCall(_callback);
+
+    }
+
+    public AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo geminiLlmResponsesTasksReady() throws ApiException {
+       ApiResponse<AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo> localVarResp = geminiLlmResponsesTasksReadyWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo> geminiLlmResponsesTasksReadyWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = geminiLlmResponsesTasksReadyValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call geminiLlmResponsesTasksReadyAsync(final ApiCallback<AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = geminiLlmResponsesTasksReadyValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call geminiLlmResponsesTaskGetCall( String id,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/ai_optimization/gemini/llm_responses/task_get/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call geminiLlmResponsesTaskGetValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'id' is set
+       if (id == null) {
+           throw new ApiException("Missing the required parameter 'id' when calling geminiLlmResponsesTaskGet(Async)");
+       }
+
+       return geminiLlmResponsesTaskGetCall(id, _callback);
+
+    }
+
+    public AiOptimizationGeminiLlmResponsesTaskGetResponseInfo geminiLlmResponsesTaskGet(String id) throws ApiException {
+       ApiResponse<AiOptimizationGeminiLlmResponsesTaskGetResponseInfo> localVarResp = geminiLlmResponsesTaskGetWithHttpInfo(id);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationGeminiLlmResponsesTaskGetResponseInfo> geminiLlmResponsesTaskGetWithHttpInfo(String id) throws ApiException {
+       okhttp3.Call localVarCall = geminiLlmResponsesTaskGetValidateBeforeCall(id, null);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesTaskGetResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call geminiLlmResponsesTaskGetAsync(String id, final ApiCallback<AiOptimizationGeminiLlmResponsesTaskGetResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = geminiLlmResponsesTaskGetValidateBeforeCall(id, _callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesTaskGetResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }

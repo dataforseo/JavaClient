@@ -1,0 +1,760 @@
+package io.github.dataforseo.client.model;
+
+import java.util.Objects;
+import com.google.gson.TypeAdapter;
+import com.google.gson.annotations.JsonAdapter;
+import com.google.gson.annotations.SerializedName;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+import com.google.gson.TypeAdapterFactory;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeAdapter;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import io.github.dataforseo.client.JSON;
+
+
+
+public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
+
+
+  public static final String SERIALIZED_NAME_TARGETS = "targets";
+  @SerializedName(SERIALIZED_NAME_TARGETS)
+  private List<AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo> targets;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo targets(List<AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo> targets) {
+    this.targets = targets;
+    return this;
+  }
+
+  /**
+   * array of objects containing target entities with aggregation keys
+   * @return targets
+   */
+  @javax.annotation.Nullable
+  public List<AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo> getTargets() {
+    return targets;
+  }
+
+  public void setTargets(List<AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo> targets) {
+    this.targets = targets;
+  }
+
+
+  public static final String SERIALIZED_NAME_AGGREGATION_KEY = "aggregation_key";
+  @SerializedName(SERIALIZED_NAME_AGGREGATION_KEY)
+  private String aggregationKey;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo aggregationKey(String aggregationKey) {
+    this.aggregationKey = aggregationKey;
+    return this;
+  }
+
+  /**
+   * aggregation key for grouping the results
+* required field
+* groups results for comparison and serves as a label for the group
+   * @return aggregationKey
+   */
+  @javax.annotation.Nullable
+  public String getAggregationKey() {
+    return aggregationKey;
+  }
+
+  public void setAggregationKey(String aggregationKey) {
+    this.aggregationKey = aggregationKey;
+  }
+
+
+  public static final String SERIALIZED_NAME_TARGET = "target";
+  @SerializedName(SERIALIZED_NAME_TARGET)
+  private List<String> target;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo target(List<String> target) {
+    this.target = target;
+    return this;
+  }
+
+  /**
+   * array of objects containing target entities
+* required field
+* a single target can contain up to 10 domain and/or keyword entities
+   * @return target
+   */
+  @javax.annotation.Nullable
+  public List<String> getTarget() {
+    return target;
+  }
+
+  public void setTarget(List<String> target) {
+    this.target = target;
+  }
+
+
+  public static final String SERIALIZED_NAME_DOMAIN = "domain";
+  @SerializedName(SERIALIZED_NAME_DOMAIN)
+  private String domain;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo domain(String domain) {
+    this.domain = domain;
+    return this;
+  }
+
+  /**
+   * target domain
+* required field if you don’t specify a keyword
+* a domain should be specified without https:// and www.
+   * @return domain
+   */
+  @javax.annotation.Nullable
+  public String getDomain() {
+    return domain;
+  }
+
+  public void setDomain(String domain) {
+    this.domain = domain;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_FILTER = "search_filter";
+  @SerializedName(SERIALIZED_NAME_SEARCH_FILTER)
+  private String searchFilter;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo searchFilter(String searchFilter) {
+    this.searchFilter = searchFilter;
+    return this;
+  }
+
+  /**
+   * target keyword search filter
+* optional field
+* possible values:
+* include, exclude
+* default value: include
+   * @return searchFilter
+   */
+  @javax.annotation.Nullable
+  public String getSearchFilter() {
+    return searchFilter;
+  }
+
+  public void setSearchFilter(String searchFilter) {
+    this.searchFilter = searchFilter;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_SCOPE = "search_scope";
+  @SerializedName(SERIALIZED_NAME_SEARCH_SCOPE)
+  private List<String> searchScope;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo searchScope(List<String> searchScope) {
+    this.searchScope = searchScope;
+    return this;
+  }
+
+  /**
+   * target keyword search scope
+* optional field
+* possible values:
+* any, question, answer
+* default value: any
+   * @return searchScope
+   */
+  @javax.annotation.Nullable
+  public List<String> getSearchScope() {
+    return searchScope;
+  }
+
+  public void setSearchScope(List<String> searchScope) {
+    this.searchScope = searchScope;
+  }
+
+
+  public static final String SERIALIZED_NAME_INCLUDE_SUBDOMAINS = "include_subdomains";
+  @SerializedName(SERIALIZED_NAME_INCLUDE_SUBDOMAINS)
+  private Boolean includeSubdomains;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo includeSubdomains(Boolean includeSubdomains) {
+    this.includeSubdomains = includeSubdomains;
+    return this;
+  }
+
+  /**
+   * indicates if the subdomains of the target domain will be included in the search
+* optional field
+* if set to true, the subdomains will be included in the search
+* default value: false
+   * @return includeSubdomains
+   */
+  @javax.annotation.Nullable
+  public Boolean getIncludeSubdomains() {
+    return includeSubdomains;
+  }
+
+  public void setIncludeSubdomains(Boolean includeSubdomains) {
+    this.includeSubdomains = includeSubdomains;
+  }
+
+
+  public static final String SERIALIZED_NAME_KEYWORD = "keyword";
+  @SerializedName(SERIALIZED_NAME_KEYWORD)
+  private String keyword;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo keyword(String keyword) {
+    this.keyword = keyword;
+    return this;
+  }
+
+  /**
+   * target keyword
+* required field if you don’t specify a domain
+* you can specify up to 2000 characters in the keyword field
+* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
+* if you need to use the “%” character for your keyword, please specify it as “%25”;
+* if you need to use the “+” character for your keyword, please specify it as “%2B”
+* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * @return keyword
+   */
+  @javax.annotation.Nullable
+  public String getKeyword() {
+    return keyword;
+  }
+
+  public void setKeyword(String keyword) {
+    this.keyword = keyword;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private String matchType;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo matchType(String matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * target keyword match type
+* defines how the specified keyword is matched
+* optional field
+* possible values:
+* word_match – full-text search for terms that match the specified seed keyword with additional words included before, after, or within the key phrase (e.g., search for “light” will return results with “light bulb”, “light switch”);
+* partial_match – substring search that finds all instances containing the specified sequence of characters, even if it appears inside a longer word (e.g., search for “light” will return results with “lighting”, “highlight”);
+* default value: word_match
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public String getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(String matchType) {
+    this.matchType = matchType;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search location
+* optional field
+* if you use this field, you don’t need to specify location_code
+* if you don’t specify this field, the location_code with 2840 value will be used by default;
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
+* example:
+* United States
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
+  private Integer locationCode;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo locationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+    return this;
+  }
+
+  /**
+   * search location code
+* optional field
+* if you use this field, you don’t need to specify location_name
+* you can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
+* example:
+* 2840
+* default value: 2840
+   * @return locationCode
+   */
+  @javax.annotation.Nullable
+  public Integer getLocationCode() {
+    return locationCode;
+  }
+
+  public void setLocationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search language
+* optional field
+* if you use this field, you don’t need to specify language_code;
+* if you don’t specify this field, the language_code with en value will be used by default;
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
+  private String languageCode;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo languageCode(String languageCode) {
+    this.languageCode = languageCode;
+    return this;
+  }
+
+  /**
+   * search language code
+* optional field
+* if you use this field, you don’t need to specify language_name;
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
+* default value: en
+   * @return languageCode
+   */
+  @javax.annotation.Nullable
+  public String getLanguageCode() {
+    return languageCode;
+  }
+
+  public void setLanguageCode(String languageCode) {
+    this.languageCode = languageCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_PLATFORM = "platform";
+  @SerializedName(SERIALIZED_NAME_PLATFORM)
+  private String platform;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo platform(String platform) {
+    this.platform = platform;
+    return this;
+  }
+
+  /**
+   * target platform
+* optional field
+* possible values:
+* chat_gpt, google
+* default value: google
+   * @return platform
+   */
+  @javax.annotation.Nullable
+  public String getPlatform() {
+    return platform;
+  }
+
+  public void setPlatform(String platform) {
+    this.platform = platform;
+  }
+
+
+  public static final String SERIALIZED_NAME_FILTERS = "filters";
+  @SerializedName(SERIALIZED_NAME_FILTERS)
+  private List<Object> filters;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo filters(List<Object> filters) {
+    this.filters = filters;
+    return this;
+  }
+
+  /**
+   * array of results filtering parameters
+* optional field
+* you can add several filters at once (8 filters maximum)
+* you should set a logical operator and, or between the conditions
+* the following operators are supported:
+* =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match
+* you can use the % operator with like and not_like to match any string of zero or more characters
+* example:
+* ['ai_search_volume','>','1000']
+* The full list of possible filters is available here.
+   * @return filters
+   */
+  @javax.annotation.Nullable
+  public List<Object> getFilters() {
+    return filters;
+  }
+
+  public void setFilters(List<Object> filters) {
+    this.filters = filters;
+  }
+
+
+  public static final String SERIALIZED_NAME_INTERNAL_LIST_LIMIT = "internal_list_limit";
+  @SerializedName(SERIALIZED_NAME_INTERNAL_LIST_LIMIT)
+  private Integer internalListLimit;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo internalListLimit(Integer internalListLimit) {
+    this.internalListLimit = internalListLimit;
+    return this;
+  }
+
+  /**
+   * maximum number of elements within internal arrays
+* optional field
+* you can use this field to limit the number of elements within the following arrays:
+* sources_domain
+* search_results_domain
+* minimum value: 1
+* maximum value: 10
+* default value: 5
+   * @return internalListLimit
+   */
+  @javax.annotation.Nullable
+  public Integer getInternalListLimit() {
+    return internalListLimit;
+  }
+
+  public void setInternalListLimit(Integer internalListLimit) {
+    this.internalListLimit = internalListLimit;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo() {
+  }
+
+  
+    
+  private Map<String, Object> additionalProperties;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
+
+  
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+
+
+    
+    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo = (AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo) o;
+    return
+
+        Objects.equals(this.targets, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.targets) &&
+        Objects.equals(this.aggregationKey, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.aggregationKey) &&
+        Objects.equals(this.target, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.target) &&
+        Objects.equals(this.domain, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.domain) &&
+        Objects.equals(this.searchFilter, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.searchFilter) &&
+        Objects.equals(this.searchScope, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.searchScope) &&
+        Objects.equals(this.includeSubdomains, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.includeSubdomains) &&
+        Objects.equals(this.keyword, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.keyword) &&
+        Objects.equals(this.matchType, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.matchType) &&
+        Objects.equals(this.locationName, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.locationName) &&
+        Objects.equals(this.locationCode, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.locationCode) &&
+        Objects.equals(this.languageName, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.languageName) &&
+        Objects.equals(this.languageCode, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.languageCode) &&
+        Objects.equals(this.platform, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.platform) &&
+        Objects.equals(this.filters, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.filters) &&
+        Objects.equals(this.internalListLimit, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.internalListLimit) &&
+        Objects.equals(this.tag, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.tag);  
+    
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
+  @Override
+  public int hashCode() {
+  return Objects.hash(targets, aggregationKey, target, domain, searchFilter, searchScope, includeSubdomains, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, filters, internalListLimit, tag);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo {\n");
+
+    sb.append("    targets: ").append(toIndentedString(targets)).append("\n");
+    sb.append("    aggregationKey: ").append(toIndentedString(aggregationKey)).append("\n");
+    sb.append("    target: ").append(toIndentedString(target)).append("\n");
+    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
+    sb.append("    searchFilter: ").append(toIndentedString(searchFilter)).append("\n");
+    sb.append("    searchScope: ").append(toIndentedString(searchScope)).append("\n");
+    sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
+    sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    platform: ").append(toIndentedString(platform)).append("\n");
+    sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
+    sb.append("    internalListLimit: ").append(toIndentedString(internalListLimit)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
+    if (o == null) {
+      return "null";
+    }
+    return o.toString().replace("\n", "\n    ");
+  }
+
+
+  public static HashSet<String> openapiFields;
+  public static HashSet<String> openapiRequiredFields;
+
+  static {
+    // a set of all properties/fields (JSON key names)
+    openapiFields = new HashSet<String>();
+    
+    openapiFields.add("targets");
+    
+    openapiFields.add("aggregation_key");
+    
+    openapiFields.add("target");
+    
+    openapiFields.add("domain");
+    
+    openapiFields.add("search_filter");
+    
+    openapiFields.add("search_scope");
+    
+    openapiFields.add("include_subdomains");
+    
+    openapiFields.add("keyword");
+    
+    openapiFields.add("match_type");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("location_code");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("language_code");
+    
+    openapiFields.add("platform");
+    
+    openapiFields.add("filters");
+    
+    openapiFields.add("internal_list_limit");
+    
+    openapiFields.add("tag");
+    
+
+    // a set of required properties/fields (JSON key names)
+    openapiRequiredFields = new HashSet<String>();
+  }
+
+
+  
+
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo
+   */
+  public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+  }
+
+  public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
+    @SuppressWarnings("unchecked")
+    @Override
+    public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
+       if (!AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo' and its subtypes
+       }
+       final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
+       final TypeAdapter<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.class));
+
+       return (TypeAdapter<T>) new TypeAdapter<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>() {
+           @Override
+           public void write(JsonWriter out, AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo value) throws IOException {
+             JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
+             elementAdapter.write(out, obj);
+           }
+
+           @Override
+           public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo read(JsonReader in) throws IOException {
+             JsonElement jsonElement = elementAdapter.read(in);
+             validateJsonElement(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
+           }
+
+       }.nullSafe();
+    }
+  }
+
+
+  public static AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.class);
+  }
+
+  public String toJson() {
+    return JSON.getGson().toJson(this);
+  }
+}

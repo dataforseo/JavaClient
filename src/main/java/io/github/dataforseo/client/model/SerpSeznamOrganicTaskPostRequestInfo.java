@@ -468,7 +468,7 @@ public class SerpSeznamOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * array of targets to stop crawling
+   * target domain or wildcard value
 * required field if stop_crawl_on_match is specified;
 * specify a target domain or wildcard value;
 * Note: domain name must be specified without a request protocol;
@@ -487,26 +487,26 @@ public class SerpSeznamOrganicTaskPostRequestInfo  {
 
   public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
   @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private List<String> matchType;
+  private String matchType;
 
-  public SerpSeznamOrganicTaskPostRequestInfo matchType(List<String> matchType) {
+  public SerpSeznamOrganicTaskPostRequestInfo matchType(String matchType) {
     this.matchType = matchType;
     return this;
   }
 
   /**
-   * array of targets to stop crawling
+   * target match type
 * required field if stop_crawl_on_match is specified;
 * type of match for the match_value
 * possible values: domain, with_subdomains, wildcard
    * @return matchType
    */
   @javax.annotation.Nullable
-  public List<String> getMatchType() {
+  public String getMatchType() {
     return matchType;
   }
 
-  public void setMatchType(List<String> matchType) {
+  public void setMatchType(String matchType) {
     this.matchType = matchType;
   }
 

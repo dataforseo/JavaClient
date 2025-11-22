@@ -4,11 +4,6 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**chatGptLlmResponsesModels**](AiOptimizationApi.md#chatGptLlmResponsesModels) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/models  |
-| [**chatGptLlmResponsesLive**](AiOptimizationApi.md#chatGptLlmResponsesLive) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/live  |
-| [**chatGptLlmResponsesTaskPost**](AiOptimizationApi.md#chatGptLlmResponsesTaskPost) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/task_post  |
-| [**chatGptLlmResponsesTasksReady**](AiOptimizationApi.md#chatGptLlmResponsesTasksReady) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/tasks_ready  |
-| [**chatGptLlmResponsesTaskGet**](AiOptimizationApi.md#chatGptLlmResponsesTaskGet) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/task_get/{id}  |
 | [**aiOptimizationChatGptLlmScraperLocations**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLocations) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations  |
 | [**aiOptimizationChatGptLlmScraperLocationsCountry**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLocationsCountry) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations/{country}  |
 | [**aiOptimizationChatGptLlmScraperLanguages**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLanguages) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/languages  |
@@ -16,385 +11,33 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**chatGptLlmScraperTasksReady**](AiOptimizationApi.md#chatGptLlmScraperTasksReady) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/tasks_ready  |
 | [**chatGptLlmScraperTaskGetAdvanced**](AiOptimizationApi.md#chatGptLlmScraperTaskGetAdvanced) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/advanced/{id}  |
 | [**chatGptLlmScraperTaskGetHtml**](AiOptimizationApi.md#chatGptLlmScraperTaskGetHtml) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/html/{id}  |
+| [**aiOptimizationLlmMentionsLocationsAndLanguages**](AiOptimizationApi.md#aiOptimizationLlmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
+| [**llmMentionsAvailableFilters**](AiOptimizationApi.md#llmMentionsAvailableFilters) | **GET**  /v3/ai_optimization/llm_mentions/available_filters  |
+| [**llmMentionsSearchLive**](AiOptimizationApi.md#llmMentionsSearchLive) | **POST**  /v3/ai_optimization/llm_mentions/search/live  |
+| [**llmMentionsTopPagesLive**](AiOptimizationApi.md#llmMentionsTopPagesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_pages/live  |
+| [**llmMentionsTopDomainsLive**](AiOptimizationApi.md#llmMentionsTopDomainsLive) | **POST**  /v3/ai_optimization/llm_mentions/top_domains/live  |
+| [**llmMentionsAggregatedMetricsLive**](AiOptimizationApi.md#llmMentionsAggregatedMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/aggregated_metrics/live  |
+| [**llmMentionsCrossAggregatedMetricsLive**](AiOptimizationApi.md#llmMentionsCrossAggregatedMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/cross_aggregated_metrics/live  |
+| [**chatGptLlmResponsesModels**](AiOptimizationApi.md#chatGptLlmResponsesModels) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/models  |
+| [**chatGptLlmResponsesLive**](AiOptimizationApi.md#chatGptLlmResponsesLive) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/live  |
+| [**chatGptLlmResponsesTaskPost**](AiOptimizationApi.md#chatGptLlmResponsesTaskPost) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/task_post  |
+| [**chatGptLlmResponsesTasksReady**](AiOptimizationApi.md#chatGptLlmResponsesTasksReady) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/tasks_ready  |
+| [**chatGptLlmResponsesTaskGet**](AiOptimizationApi.md#chatGptLlmResponsesTaskGet) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/task_get/{id}  |
 | [**claudeLlmResponsesModels**](AiOptimizationApi.md#claudeLlmResponsesModels) | **GET**  /v3/ai_optimization/claude/llm_responses/models  |
 | [**claudeLlmResponsesLive**](AiOptimizationApi.md#claudeLlmResponsesLive) | **POST**  /v3/ai_optimization/claude/llm_responses/live  |
 | [**claudeLlmResponsesTaskPost**](AiOptimizationApi.md#claudeLlmResponsesTaskPost) | **POST**  /v3/ai_optimization/claude/llm_responses/task_post  |
 | [**claudeLlmResponsesTasksReady**](AiOptimizationApi.md#claudeLlmResponsesTasksReady) | **GET**  /v3/ai_optimization/claude/llm_responses/tasks_ready  |
 | [**claudeLlmResponsesTaskGet**](AiOptimizationApi.md#claudeLlmResponsesTaskGet) | **GET**  /v3/ai_optimization/claude/llm_responses/task_get/{id}  |
 | [**geminiLlmResponsesModels**](AiOptimizationApi.md#geminiLlmResponsesModels) | **GET**  /v3/ai_optimization/gemini/llm_responses/models  |
+| [**geminiLlmResponsesTaskPost**](AiOptimizationApi.md#geminiLlmResponsesTaskPost) | **POST**  /v3/ai_optimization/gemini/llm_responses/task_post  |
+| [**geminiLlmResponsesTasksReady**](AiOptimizationApi.md#geminiLlmResponsesTasksReady) | **GET**  /v3/ai_optimization/gemini/llm_responses/tasks_ready  |
+| [**geminiLlmResponsesTaskGet**](AiOptimizationApi.md#geminiLlmResponsesTaskGet) | **GET**  /v3/ai_optimization/gemini/llm_responses/task_get/{id}  |
 | [**geminiLlmResponsesLive**](AiOptimizationApi.md#geminiLlmResponsesLive) | **POST**  /v3/ai_optimization/gemini/llm_responses/live  |
 | [**perplexityLlmResponsesModels**](AiOptimizationApi.md#perplexityLlmResponsesModels) | **GET**  /v3/ai_optimization/perplexity/llm_responses/models  |
 | [**perplexityLlmResponsesLive**](AiOptimizationApi.md#perplexityLlmResponsesLive) | **POST**  /v3/ai_optimization/perplexity/llm_responses/live  |
 | [**aiKeywordDataAvailableFilters**](AiOptimizationApi.md#aiKeywordDataAvailableFilters) | **GET**  /v3/ai_optimization/ai_keyword_data/available_filters  |
 | [**aiOptimizationAiKeywordDataLocationsAndLanguages**](AiOptimizationApi.md#aiOptimizationAiKeywordDataLocationsAndLanguages) | **GET**  /v3/ai_optimization/ai_keyword_data/locations_and_languages  |
 | [**aiKeywordDataKeywordsSearchVolumeLive**](AiOptimizationApi.md#aiKeywordDataKeywordsSearchVolumeLive) | **POST**  /v3/ai_optimization/ai_keyword_data/keywords_search_volume/live  |
-
-<a id="chatGptLlmResponsesModels"></a>
-# **chatGptLlmResponsesModels**
-> AiOptimizationChatGptLlmResponsesModelsResponseInfo chatGptLlmResponsesModels()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-
-    AiOptimizationChatGptLlmResponsesModelsResponseInfo response = apiInstance.chatGptLlmResponsesModels();
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesModels");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**AiOptimizationChatGptLlmResponsesModelsResponseInfo**](AiOptimizationChatGptLlmResponsesModelsResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="chatGptLlmResponsesLive"></a>
-# **chatGptLlmResponsesLive**
-> AiOptimizationChatGptLlmResponsesLiveResponseInfo chatGptLlmResponsesLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationChatGptLlmResponsesLiveRequestInfo model = new AiOptimizationChatGptLlmResponsesLiveRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("gpt-4.1-mini")
-           .maxOutputTokens(200)
-           .temperature(0.3d)
-           .topP(0.5d)
-           .webSearch(true)
-           .webSearchCountryIsoCode("FR")
-           .webSearchCity("Paris")
-           .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationChatGptLlmResponsesLiveResponseInfo response = apiInstance.chatGptLlmResponsesLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<AiOptimizationChatGptLlmResponsesLiveRequestInfo>&gt;**](List<AiOptimizationChatGptLlmResponsesLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationChatGptLlmResponsesLiveResponseInfo**](AiOptimizationChatGptLlmResponsesLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="chatGptLlmResponsesTaskPost"></a>
-# **chatGptLlmResponsesTaskPost**
-> AiOptimizationChatGptLlmResponsesTaskPostResponseInfo chatGptLlmResponsesTaskPost()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationChatGptLlmResponsesTaskPostRequestInfo model = new AiOptimizationChatGptLlmResponsesTaskPostRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("gpt-4.1-mini")
-           .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationChatGptLlmResponsesTaskPostResponseInfo response = apiInstance.chatGptLlmResponsesTaskPost(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesTaskPost");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo>&gt;**](List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationChatGptLlmResponsesTaskPostResponseInfo**](AiOptimizationChatGptLlmResponsesTaskPostResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="chatGptLlmResponsesTasksReady"></a>
-# **chatGptLlmResponsesTasksReady**
-> AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo chatGptLlmResponsesTasksReady()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-
-    AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo response = apiInstance.chatGptLlmResponsesTasksReady();
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesTasksReady");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo**](AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="chatGptLlmResponsesTaskGet"></a>
-# **chatGptLlmResponsesTaskGet**
-> AiOptimizationChatGptLlmResponsesTaskGetResponseInfo chatGptLlmResponsesTaskGet()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
-    AiOptimizationChatGptLlmResponsesTaskGetResponseInfo response = apiInstance.chatGptLlmResponsesTaskGet(id);
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesTaskGet");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**AiOptimizationChatGptLlmResponsesTaskGetResponseInfo**](AiOptimizationChatGptLlmResponsesTaskGetResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
 
 <a id="aiOptimizationChatGptLlmScraperLocations"></a>
 # **aiOptimizationChatGptLlmScraperLocations**
@@ -882,6 +525,908 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
+<a id="aiOptimizationLlmMentionsLocationsAndLanguages"></a>
+# **aiOptimizationLlmMentionsLocationsAndLanguages**
+> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo aiOptimizationLlmMentionsLocationsAndLanguages()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+
+    AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo response = apiInstance.aiOptimizationLlmMentionsLocationsAndLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#aiOptimizationLlmMentionsLocationsAndLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo**](AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsAvailableFilters"></a>
+# **llmMentionsAvailableFilters**
+> AiOptimizationLlmMentionsAvailableFiltersResponseInfo llmMentionsAvailableFilters()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+
+    AiOptimizationLlmMentionsAvailableFiltersResponseInfo response = apiInstance.llmMentionsAvailableFilters();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsAvailableFilters");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsAvailableFiltersResponseInfo**](AiOptimizationLlmMentionsAvailableFiltersResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsSearchLive"></a>
+# **llmMentionsSearchLive**
+> AiOptimizationLlmMentionsSearchLiveResponseInfo llmMentionsSearchLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsSearchLiveRequestInfo model = new AiOptimizationLlmMentionsSearchLiveRequestInfo()
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .locationCode(2840)
+           .languageName("English")
+           .platform("google")
+           .offset(0)
+           .limit(3);
+    AiOptimizationLlmMentionsSearchLiveResponseInfo response = apiInstance.llmMentionsSearchLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsSearchLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsSearchLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsSearchLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsSearchLiveResponseInfo**](AiOptimizationLlmMentionsSearchLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopPagesLive"></a>
+# **llmMentionsTopPagesLive**
+> AiOptimizationLlmMentionsTopPagesLiveResponseInfo llmMentionsTopPagesLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopPagesLiveRequestInfo model = new AiOptimizationLlmMentionsTopPagesLiveRequestInfo()
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .locationCode(2840)
+           .languageCode("en")
+           .platform("google")
+           .linksScope("sources")
+           .itemsListLimit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopPagesLiveResponseInfo response = apiInstance.llmMentionsTopPagesLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopPagesLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopPagesLiveResponseInfo**](AiOptimizationLlmMentionsTopPagesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopDomainsLive"></a>
+# **llmMentionsTopDomainsLive**
+> AiOptimizationLlmMentionsTopDomainsLiveResponseInfo llmMentionsTopDomainsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopDomainsLiveRequestInfo model = new AiOptimizationLlmMentionsTopDomainsLiveRequestInfo()
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .locationCode(2840)
+           .languageCode("en")
+           .platform("chat_gpt")
+           .linksScope("sources")
+           .itemsListLimit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopDomainsLiveResponseInfo response = apiInstance.llmMentionsTopDomainsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopDomainsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopDomainsLiveResponseInfo**](AiOptimizationLlmMentionsTopDomainsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsAggregatedMetricsLive"></a>
+# **llmMentionsAggregatedMetricsLive**
+> AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo llmMentionsAggregatedMetricsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo()
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .locationCode(2840)
+           .languageCode("es")
+           .platform("google")
+           .internalListLimit(10);
+    AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsAggregatedMetricsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsAggregatedMetricsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo**](AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsCrossAggregatedMetricsLive"></a>
+# **llmMentionsCrossAggregatedMetricsLive**
+> AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo llmMentionsCrossAggregatedMetricsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo()
+           .targets(
+               List.of(
+                   ,
+                   ,
+                   ,
+               
+                ))
+           .locationCode(2840)
+           .languageCode("en")
+           .platform("google")
+           .internalListLimit(5);
+    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsCrossAggregatedMetricsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsCrossAggregatedMetricsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo**](AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="chatGptLlmResponsesModels"></a>
+# **chatGptLlmResponsesModels**
+> AiOptimizationChatGptLlmResponsesModelsResponseInfo chatGptLlmResponsesModels()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+
+    AiOptimizationChatGptLlmResponsesModelsResponseInfo response = apiInstance.chatGptLlmResponsesModels();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesModels");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationChatGptLlmResponsesModelsResponseInfo**](AiOptimizationChatGptLlmResponsesModelsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="chatGptLlmResponsesLive"></a>
+# **chatGptLlmResponsesLive**
+> AiOptimizationChatGptLlmResponsesLiveResponseInfo chatGptLlmResponsesLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationChatGptLlmResponsesLiveRequestInfo model = new AiOptimizationChatGptLlmResponsesLiveRequestInfo()
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+           .modelName("gpt-4.1-mini")
+           .maxOutputTokens(200)
+           .temperature(0.3d)
+           .topP(0.5d)
+           .webSearch(true)
+           .webSearchCountryIsoCode("FR")
+           .webSearchCity("Paris")
+           .systemMessage("communicate as if we are in a business meeting")
+           .messageChain(
+               List.of(
+                   ,
+               
+                ));
+    AiOptimizationChatGptLlmResponsesLiveResponseInfo response = apiInstance.chatGptLlmResponsesLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationChatGptLlmResponsesLiveRequestInfo>&gt;**](List<AiOptimizationChatGptLlmResponsesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationChatGptLlmResponsesLiveResponseInfo**](AiOptimizationChatGptLlmResponsesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="chatGptLlmResponsesTaskPost"></a>
+# **chatGptLlmResponsesTaskPost**
+> AiOptimizationChatGptLlmResponsesTaskPostResponseInfo chatGptLlmResponsesTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationChatGptLlmResponsesTaskPostRequestInfo model = new AiOptimizationChatGptLlmResponsesTaskPostRequestInfo()
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+           .modelName("gpt-4.1-mini")
+           .systemMessage("communicate as if we are in a business meeting")
+           .messageChain(
+               List.of(
+                   ,
+               
+                ));
+    AiOptimizationChatGptLlmResponsesTaskPostResponseInfo response = apiInstance.chatGptLlmResponsesTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo>&gt;**](List<AiOptimizationChatGptLlmResponsesTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationChatGptLlmResponsesTaskPostResponseInfo**](AiOptimizationChatGptLlmResponsesTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="chatGptLlmResponsesTasksReady"></a>
+# **chatGptLlmResponsesTasksReady**
+> AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo chatGptLlmResponsesTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+
+    AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo response = apiInstance.chatGptLlmResponsesTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo**](AiOptimizationChatGptLlmResponsesTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="chatGptLlmResponsesTaskGet"></a>
+# **chatGptLlmResponsesTaskGet**
+> AiOptimizationChatGptLlmResponsesTaskGetResponseInfo chatGptLlmResponsesTaskGet()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    AiOptimizationChatGptLlmResponsesTaskGetResponseInfo response = apiInstance.chatGptLlmResponsesTaskGet(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesTaskGet");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationChatGptLlmResponsesTaskGetResponseInfo**](AiOptimizationChatGptLlmResponsesTaskGetResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
 <a id="claudeLlmResponsesModels"></a>
 # **claudeLlmResponsesModels**
 > AiOptimizationClaudeLlmResponsesModelsResponseInfo claudeLlmResponsesModels()
@@ -1307,6 +1852,221 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**AiOptimizationGeminiLlmResponsesModelsResponseInfo**](AiOptimizationGeminiLlmResponsesModelsResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmResponsesTaskPost"></a>
+# **geminiLlmResponsesTaskPost**
+> AiOptimizationGeminiLlmResponsesTaskPostResponseInfo geminiLlmResponsesTaskPost()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationGeminiLlmResponsesTaskPostRequestInfo model = new AiOptimizationGeminiLlmResponsesTaskPostRequestInfo()
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+           .modelName("gemini-2.5-flash")
+           .systemMessage("communicate as if we are in a business meeting")
+           .messageChain(
+               List.of(
+                   ,
+               
+                ));
+    AiOptimizationGeminiLlmResponsesTaskPostResponseInfo response = apiInstance.geminiLlmResponsesTaskPost(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#geminiLlmResponsesTaskPost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo>&gt;**](List<AiOptimizationGeminiLlmResponsesTaskPostRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmResponsesTaskPostResponseInfo**](AiOptimizationGeminiLlmResponsesTaskPostResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmResponsesTasksReady"></a>
+# **geminiLlmResponsesTasksReady**
+> AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo geminiLlmResponsesTasksReady()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+
+    AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo response = apiInstance.geminiLlmResponsesTasksReady();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#geminiLlmResponsesTasksReady");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo**](AiOptimizationGeminiLlmResponsesTasksReadyResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="geminiLlmResponsesTaskGet"></a>
+# **geminiLlmResponsesTaskGet**
+> AiOptimizationGeminiLlmResponsesTaskGetResponseInfo geminiLlmResponsesTaskGet()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    String id = "00000000-0000-0000-0000-000000000000";
+    AiOptimizationGeminiLlmResponsesTaskGetResponseInfo response = apiInstance.geminiLlmResponsesTaskGet(id);
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#geminiLlmResponsesTaskGet");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationGeminiLlmResponsesTaskGetResponseInfo**](AiOptimizationGeminiLlmResponsesTaskGetResponseInfo.md)
 
 ### Authorization
 

@@ -94,8 +94,8 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsIdListRequestInfo model = new DataforseoLabsIdListRequestInfo()
-           .datetimeFrom("2025-08-10 10:59:26 +00:00")
-           .datetimeTo("2025-10-10 10:59:26 +00:00")
+           .datetimeFrom("2025-08-22 08:06:56 +00:00")
+           .datetimeTo("2025-10-22 08:06:56 +00:00")
            .limit(100)
            .offset(0)
            .sort("desc");
@@ -1347,8 +1347,8 @@ public class Example {
                    "13418",
                    "11494"
                 ))
-           .firstDate("2025-08-10")
-           .secondDate("2025-10-10")
+           .firstDate("2025-08-22")
+           .secondDate("2025-10-22")
            .locationCode(2840)
            .languageCode("en")
            .limit(3);
@@ -2089,8 +2089,8 @@ public class Example {
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
     DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo model = new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo()
            .keyword("albert einstein")
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10")
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22")
            .locationCode(2840)
            .languageCode("en");
     DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo response = apiInstance.googleHistoricalSerpsLive(List.of(model));
@@ -2165,8 +2165,8 @@ public class Example {
            .target("dataforseo.com")
            .locationCode(2840)
            .languageCode("en")
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10");
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22");
     DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo response = apiInstance.googleHistoricalRankOverviewLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -2402,8 +2402,8 @@ public class Example {
                 ))
            .locationCode(2840)
            .languageCode("en")
-           .dateFrom("2025-08-10")
-           .dateTo("2025-10-10")
+           .dateFrom("2025-08-22")
+           .dateTo("2025-10-22")
            .itemTypes(
                List.of(
                    "organic",
