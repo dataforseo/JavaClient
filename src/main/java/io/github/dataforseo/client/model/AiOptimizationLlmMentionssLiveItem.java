@@ -182,6 +182,54 @@ public class AiOptimizationLlmMentionssLiveItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_BRAND_ENTITIES_TITLE = "brand_entities_title";
+  @SerializedName(SERIALIZED_NAME_BRAND_ENTITIES_TITLE)
+  private List<GroupElement> brandEntitiesTitle;
+
+  public AiOptimizationLlmMentionssLiveItem brandEntitiesTitle(List<GroupElement> brandEntitiesTitle) {
+    this.brandEntitiesTitle = brandEntitiesTitle;
+    return this;
+  }
+
+  /**
+   * data on brand entities relevant to the target
+* array of objects containing data on brand entity titles that appear in search results related to LLM queries
+   * @return brandEntitiesTitle
+   */
+  @javax.annotation.Nullable
+  public List<GroupElement> getBrandEntitiesTitle() {
+    return brandEntitiesTitle;
+  }
+
+  public void setBrandEntitiesTitle(List<GroupElement> brandEntitiesTitle) {
+    this.brandEntitiesTitle = brandEntitiesTitle;
+  }
+
+
+  public static final String SERIALIZED_NAME_BRAND_ENTITIES_CATEGORY = "brand_entities_category";
+  @SerializedName(SERIALIZED_NAME_BRAND_ENTITIES_CATEGORY)
+  private List<GroupElement> brandEntitiesCategory;
+
+  public AiOptimizationLlmMentionssLiveItem brandEntitiesCategory(List<GroupElement> brandEntitiesCategory) {
+    this.brandEntitiesCategory = brandEntitiesCategory;
+    return this;
+  }
+
+  /**
+   * data on brand entities relevant to the target
+* array of objects containing data on brand entity categories that appear in search results related to LLM queries
+   * @return brandEntitiesCategory
+   */
+  @javax.annotation.Nullable
+  public List<GroupElement> getBrandEntitiesCategory() {
+    return brandEntitiesCategory;
+  }
+
+  public void setBrandEntitiesCategory(List<GroupElement> brandEntitiesCategory) {
+    this.brandEntitiesCategory = brandEntitiesCategory;
+  }
+
+
 
   public AiOptimizationLlmMentionssLiveItem() {
   }
@@ -230,7 +278,9 @@ public class AiOptimizationLlmMentionssLiveItem  {
         Objects.equals(this.language, aiOptimizationLlmMentionssLiveItem.language) &&
         Objects.equals(this.platform, aiOptimizationLlmMentionssLiveItem.platform) &&
         Objects.equals(this.sourcesDomain, aiOptimizationLlmMentionssLiveItem.sourcesDomain) &&
-        Objects.equals(this.searchResultsDomain, aiOptimizationLlmMentionssLiveItem.searchResultsDomain);  
+        Objects.equals(this.searchResultsDomain, aiOptimizationLlmMentionssLiveItem.searchResultsDomain) &&
+        Objects.equals(this.brandEntitiesTitle, aiOptimizationLlmMentionssLiveItem.brandEntitiesTitle) &&
+        Objects.equals(this.brandEntitiesCategory, aiOptimizationLlmMentionssLiveItem.brandEntitiesCategory);  
     
   }
 
@@ -240,7 +290,7 @@ public class AiOptimizationLlmMentionssLiveItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(key, location, language, platform, sourcesDomain, searchResultsDomain);
+  return Objects.hash(key, location, language, platform, sourcesDomain, searchResultsDomain, brandEntitiesTitle, brandEntitiesCategory);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -261,6 +311,8 @@ public class AiOptimizationLlmMentionssLiveItem  {
     sb.append("    platform: ").append(toIndentedString(platform)).append("\n");
     sb.append("    sourcesDomain: ").append(toIndentedString(sourcesDomain)).append("\n");
     sb.append("    searchResultsDomain: ").append(toIndentedString(searchResultsDomain)).append("\n");
+    sb.append("    brandEntitiesTitle: ").append(toIndentedString(brandEntitiesTitle)).append("\n");
+    sb.append("    brandEntitiesCategory: ").append(toIndentedString(brandEntitiesCategory)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -295,6 +347,10 @@ public class AiOptimizationLlmMentionssLiveItem  {
     openapiFields.add("sources_domain");
     
     openapiFields.add("search_results_domain");
+    
+    openapiFields.add("brand_entities_title");
+    
+    openapiFields.add("brand_entities_category");
     
 
     // a set of required properties/fields (JSON key names)

@@ -7,4 +7,4 @@
 |------------ | ------------- | ------------- | -------------|
 **title** | **String** | title of the result in SERP |[optional]|
 **url** | **String** | sitelink URL |[optional]|
-**items** | **List<TwitterElement>** | elements of search results found in SERP |[optional]|
+**items** | **List<TwitterElement>** | historical SERPs and related data found in the database |[optional]|

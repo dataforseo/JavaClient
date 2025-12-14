@@ -67,6 +67,59 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
+  private Integer locationCode;
+
+  public SerpGoogleAiModeTaskPostRequestInfo locationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+    return this;
+  }
+
+  /**
+   * search engine location code
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
+* Note: check  Google Search Help for the list of countries where AI Mode is currently available
+   * @return locationCode
+   */
+  @javax.annotation.Nullable
+  public Integer getLocationCode() {
+    return locationCode;
+  }
+
+  public void setLocationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
+  private String languageCode;
+
+  public SerpGoogleAiModeTaskPostRequestInfo languageCode(String languageCode) {
+    this.languageCode = languageCode;
+    return this;
+  }
+
+  /**
+   * search engine language code
+* required field if you don't specify language_name;
+* if you use this field, you don't need to specify language_name;
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages
+   * @return languageCode
+   */
+  @javax.annotation.Nullable
+  public String getLanguageCode() {
+    return languageCode;
+  }
+
+  public void setLanguageCode(String languageCode) {
+    this.languageCode = languageCode;
+  }
+
+
   public static final String SERIALIZED_NAME_PRIORITY = "priority";
   @SerializedName(SERIALIZED_NAME_PRIORITY)
   private Integer priority;
@@ -96,146 +149,6 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleAiModeTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-* Note: check  Google Search Help for the list of countries where AI Mode is currently available
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
-  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
-
-  public SerpGoogleAiModeTaskPostRequestInfo locationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-    return this;
-  }
-
-  /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-* Note: check  Google Search Help for the list of countries where AI Mode is currently available
-   * @return locationCode
-   */
-  @javax.annotation.Nullable
-  public Integer getLocationCode() {
-    return locationCode;
-  }
-
-  public void setLocationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpGoogleAiModeTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,zoom” format
-* if “zoom” is not specified, 9z will be applied as a default value
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “zoom”: 4z
-* the maximum value for “zoom”: 18z
-* example:
-* 52.6178549,-155.352142,18z
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleAiModeTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code;
-* if you use this field, you don’t need to specify language_code;
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;
-* Note: currently, the only supported value is English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
-
-  public SerpGoogleAiModeTaskPostRequestInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * search engine language code
-* required field if you don’t specify language_name;
-* if you use this field, you don’t need to specify language_name;
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages
-* Note: currently, the only supported value is en
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
-  }
-
-
   public static final String SERIALIZED_NAME_DEVICE = "device";
   @SerializedName(SERIALIZED_NAME_DEVICE)
   private String device;
@@ -259,6 +172,150 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
 
   public void setDevice(String device) {
     this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
+
+  public SerpGoogleAiModeTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+    return this;
+  }
+
+  /**
+   * notification URL of a completed task
+* optional field
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special characters in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return pingbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPingbackUrl() {
+    return pingbackUrl;
+  }
+
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+  }
+
+
+  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
+  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
+  private String postbackUrl;
+
+  public SerpGoogleAiModeTaskPostRequestInfo postbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+    return this;
+  }
+
+  /**
+   * return URL for sending task results
+* optional field
+* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/postbackscript?id=$id
+* http://your-server.com/postbackscript?id=$id&tag=$tag
+* Note: special characters in postback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return postbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPostbackUrl() {
+    return postbackUrl;
+  }
+
+  public void setPostbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+  }
+
+
+  public static final String SERIALIZED_NAME_POSTBACK_DATA = "postback_data";
+  @SerializedName(SERIALIZED_NAME_POSTBACK_DATA)
+  private String postbackData;
+
+  public SerpGoogleAiModeTaskPostRequestInfo postbackData(String postbackData) {
+    this.postbackData = postbackData;
+    return this;
+  }
+
+  /**
+   * postback_url datatype
+* required field if you specify postback_url
+* corresponds to the function you used for setting a task
+* possible values:
+* advanced, html
+   * @return postbackData
+   */
+  @javax.annotation.Nullable
+  public String getPostbackData() {
+    return postbackData;
+  }
+
+  public void setPostbackData(String postbackData) {
+    this.postbackData = postbackData;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleAiModeTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
+* Note: check  Google Search Help for the list of countries where AI Mode is currently available
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleAiModeTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code;
+* if you use this field, you don't need to specify language_code;
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
   }
 
 
@@ -287,6 +344,33 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
 
   public void setOs(String os) {
     this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleAiModeTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -408,121 +492,35 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
 
-  public SerpGoogleAiModeTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
+  public SerpGoogleAiModeTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
     return this;
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
-  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
-  private String postbackUrl;
-
-  public SerpGoogleAiModeTaskPostRequestInfo postbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-    return this;
-  }
-
-  /**
-   * return URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude,zoom' format
+* if 'zoom' is not specified, 9z will be applied as a default value
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
+* the minimum value for 'zoom': 4z
+* the maximum value for 'zoom': 18z
 * example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return postbackUrl
+* 52.6178549,-155.352142,18z
+   * @return locationCoordinate
    */
   @javax.annotation.Nullable
-  public String getPostbackUrl() {
-    return postbackUrl;
+  public String getLocationCoordinate() {
+    return locationCoordinate;
   }
 
-  public void setPostbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-  }
-
-
-  public static final String SERIALIZED_NAME_POSTBACK_DATA = "postback_data";
-  @SerializedName(SERIALIZED_NAME_POSTBACK_DATA)
-  private String postbackData;
-
-  public SerpGoogleAiModeTaskPostRequestInfo postbackData(String postbackData) {
-    this.postbackData = postbackData;
-    return this;
-  }
-
-  /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the function you used for setting a task
-* possible values:
-* advanced, html
-   * @return postbackData
-   */
-  @javax.annotation.Nullable
-  public String getPostbackData() {
-    return postbackData;
-  }
-
-  public void setPostbackData(String postbackData) {
-    this.postbackData = postbackData;
-  }
-
-
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
-
-  public SerpGoogleAiModeTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
-    return this;
-  }
-
-  /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return pingbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
-  }
-
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
   }
 
 
@@ -570,22 +568,22 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleAiModeTaskPostRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpGoogleAiModeTaskPostRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpGoogleAiModeTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleAiModeTaskPostRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, serpGoogleAiModeTaskPostRequestInfo.locationCoordinate) &&
-        Objects.equals(this.languageName, serpGoogleAiModeTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleAiModeTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.priority, serpGoogleAiModeTaskPostRequestInfo.priority) &&
         Objects.equals(this.device, serpGoogleAiModeTaskPostRequestInfo.device) &&
+        Objects.equals(this.pingbackUrl, serpGoogleAiModeTaskPostRequestInfo.pingbackUrl) &&
+        Objects.equals(this.postbackUrl, serpGoogleAiModeTaskPostRequestInfo.postbackUrl) &&
+        Objects.equals(this.postbackData, serpGoogleAiModeTaskPostRequestInfo.postbackData) &&
+        Objects.equals(this.locationName, serpGoogleAiModeTaskPostRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleAiModeTaskPostRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleAiModeTaskPostRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleAiModeTaskPostRequestInfo.tag) &&
         Objects.equals(this.calculateRectangles, serpGoogleAiModeTaskPostRequestInfo.calculateRectangles) &&
         Objects.equals(this.browserScreenWidth, serpGoogleAiModeTaskPostRequestInfo.browserScreenWidth) &&
         Objects.equals(this.browserScreenHeight, serpGoogleAiModeTaskPostRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpGoogleAiModeTaskPostRequestInfo.browserScreenResolutionRatio) &&
-        Objects.equals(this.tag, serpGoogleAiModeTaskPostRequestInfo.tag) &&
-        Objects.equals(this.postbackUrl, serpGoogleAiModeTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleAiModeTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.pingbackUrl, serpGoogleAiModeTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.locationCoordinate, serpGoogleAiModeTaskPostRequestInfo.locationCoordinate);  
     
   }
 
@@ -595,7 +593,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(keyword, locationCode, languageCode, priority, device, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -611,22 +609,22 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
     sb.append("class SerpGoogleAiModeTaskPostRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
+    sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
-    sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -652,21 +650,27 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
+    openapiFields.add("priority");
+    
     openapiFields.add("device");
     
+    openapiFields.add("pingback_url");
+    
+    openapiFields.add("postback_url");
+    
+    openapiFields.add("postback_data");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
     openapiFields.add("os");
+    
+    openapiFields.add("tag");
     
     openapiFields.add("calculate_rectangles");
     
@@ -676,13 +680,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
     
     openapiFields.add("browser_screen_resolution_ratio");
     
-    openapiFields.add("tag");
-    
-    openapiFields.add("postback_url");
-    
-    openapiFields.add("postback_data");
-    
-    openapiFields.add("pingback_url");
+    openapiFields.add("location_coordinate");
     
 
     // a set of required properties/fields (JSON key names)

@@ -7,9 +7,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**keywordsDataIdList**](KeywordsDataApi.md#keywordsDataIdList) | **POST**  /v3/keywords_data/id_list  |
 | [**keywordsDataErrors**](KeywordsDataApi.md#keywordsDataErrors) | **POST**  /v3/keywords_data/errors  |
 | [**googleAdsStatus**](KeywordsDataApi.md#googleAdsStatus) | **GET**  /v3/keywords_data/google_ads/status  |
-| [**keywordsDataGoogleAdsLocations**](KeywordsDataApi.md#keywordsDataGoogleAdsLocations) | **GET**  /v3/keywords_data/google_ads/locations  |
-| [**keywordsDataGoogleAdsLocationsCountry**](KeywordsDataApi.md#keywordsDataGoogleAdsLocationsCountry) | **GET**  /v3/keywords_data/google_ads/locations/{country}  |
-| [**keywordsDataGoogleAdsLanguages**](KeywordsDataApi.md#keywordsDataGoogleAdsLanguages) | **GET**  /v3/keywords_data/google_ads/languages  |
+| [**googleAdsLocations**](KeywordsDataApi.md#googleAdsLocations) | **GET**  /v3/keywords_data/google_ads/locations  |
+| [**googleAdsLocationsCountry**](KeywordsDataApi.md#googleAdsLocationsCountry) | **GET**  /v3/keywords_data/google_ads/locations/{country}  |
+| [**googleAdsLanguages**](KeywordsDataApi.md#googleAdsLanguages) | **GET**  /v3/keywords_data/google_ads/languages  |
 | [**googleAdsSearchVolumeTaskPost**](KeywordsDataApi.md#googleAdsSearchVolumeTaskPost) | **POST**  /v3/keywords_data/google_ads/search_volume/task_post  |
 | [**googleAdsSearchVolumeTasksReady**](KeywordsDataApi.md#googleAdsSearchVolumeTasksReady) | **GET**  /v3/keywords_data/google_ads/search_volume/tasks_ready  |
 | [**googleAdsSearchVolumeTaskGet**](KeywordsDataApi.md#googleAdsSearchVolumeTaskGet) | **GET**  /v3/keywords_data/google_ads/search_volume/task_get/{id}  |
@@ -26,16 +26,16 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleAdsAdTrafficByKeywordsTasksReady**](KeywordsDataApi.md#googleAdsAdTrafficByKeywordsTasksReady) | **GET**  /v3/keywords_data/google_ads/ad_traffic_by_keywords/tasks_ready  |
 | [**googleAdsAdTrafficByKeywordsTaskGet**](KeywordsDataApi.md#googleAdsAdTrafficByKeywordsTaskGet) | **GET**  /v3/keywords_data/google_ads/ad_traffic_by_keywords/task_get/{id}  |
 | [**googleAdsAdTrafficByKeywordsLive**](KeywordsDataApi.md#googleAdsAdTrafficByKeywordsLive) | **POST**  /v3/keywords_data/google_ads/ad_traffic_by_keywords/live  |
-| [**keywordsDataGoogleTrendsLocations**](KeywordsDataApi.md#keywordsDataGoogleTrendsLocations) | **GET**  /v3/keywords_data/google_trends/locations  |
-| [**keywordsDataGoogleTrendsLocationsCountry**](KeywordsDataApi.md#keywordsDataGoogleTrendsLocationsCountry) | **GET**  /v3/keywords_data/google_trends/locations/{country}  |
-| [**keywordsDataGoogleTrendsLanguages**](KeywordsDataApi.md#keywordsDataGoogleTrendsLanguages) | **GET**  /v3/keywords_data/google_trends/languages  |
+| [**googleTrendsLocations**](KeywordsDataApi.md#googleTrendsLocations) | **GET**  /v3/keywords_data/google_trends/locations  |
+| [**googleTrendsLocationsCountry**](KeywordsDataApi.md#googleTrendsLocationsCountry) | **GET**  /v3/keywords_data/google_trends/locations/{country}  |
+| [**googleTrendsLanguages**](KeywordsDataApi.md#googleTrendsLanguages) | **GET**  /v3/keywords_data/google_trends/languages  |
 | [**googleTrendsCategories**](KeywordsDataApi.md#googleTrendsCategories) | **GET**  /v3/keywords_data/google_trends/categories  |
 | [**googleTrendsExploreTaskPost**](KeywordsDataApi.md#googleTrendsExploreTaskPost) | **POST**  /v3/keywords_data/google_trends/explore/task_post  |
 | [**googleTrendsExploreTasksReady**](KeywordsDataApi.md#googleTrendsExploreTasksReady) | **GET**  /v3/keywords_data/google_trends/explore/tasks_ready  |
 | [**googleTrendsExploreTaskGet**](KeywordsDataApi.md#googleTrendsExploreTaskGet) | **GET**  /v3/keywords_data/google_trends/explore/task_get/{id}  |
 | [**googleTrendsExploreLive**](KeywordsDataApi.md#googleTrendsExploreLive) | **POST**  /v3/keywords_data/google_trends/explore/live  |
-| [**keywordsDataDataforseoTrendsLocations**](KeywordsDataApi.md#keywordsDataDataforseoTrendsLocations) | **GET**  /v3/keywords_data/dataforseo_trends/locations  |
-| [**keywordsDataDataforseoTrendsLocationsCountry**](KeywordsDataApi.md#keywordsDataDataforseoTrendsLocationsCountry) | **GET**  /v3/keywords_data/dataforseo_trends/locations/{country}  |
+| [**dataforseoTrendsLocations**](KeywordsDataApi.md#dataforseoTrendsLocations) | **GET**  /v3/keywords_data/dataforseo_trends/locations  |
+| [**dataforseoTrendsLocationsCountry**](KeywordsDataApi.md#dataforseoTrendsLocationsCountry) | **GET**  /v3/keywords_data/dataforseo_trends/locations/{country}  |
 | [**dataforseoTrendsExploreLive**](KeywordsDataApi.md#dataforseoTrendsExploreLive) | **POST**  /v3/keywords_data/dataforseo_trends/explore/live  |
 | [**dataforseoTrendsSubregionInterestsLive**](KeywordsDataApi.md#dataforseoTrendsSubregionInterestsLive) | **POST**  /v3/keywords_data/dataforseo_trends/subregion_interests/live  |
 | [**dataforseoTrendsDemographyLive**](KeywordsDataApi.md#dataforseoTrendsDemographyLive) | **POST**  /v3/keywords_data/dataforseo_trends/demography/live  |
@@ -60,17 +60,17 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**bingKeywordsForKeywordsTasksReady**](KeywordsDataApi.md#bingKeywordsForKeywordsTasksReady) | **GET**  /v3/keywords_data/bing/keywords_for_keywords/tasks_ready  |
 | [**bingKeywordsForKeywordsTaskGet**](KeywordsDataApi.md#bingKeywordsForKeywordsTaskGet) | **GET**  /v3/keywords_data/bing/keywords_for_keywords/task_get/{id}  |
 | [**bingKeywordsForKeywordsLive**](KeywordsDataApi.md#bingKeywordsForKeywordsLive) | **POST**  /v3/keywords_data/bing/keywords_for_keywords/live  |
-| [**keywordsDataBingKeywordPerformanceLocationsAndLanguages**](KeywordsDataApi.md#keywordsDataBingKeywordPerformanceLocationsAndLanguages) | **GET**  /v3/keywords_data/bing/keyword_performance/locations_and_languages  |
+| [**bingKeywordPerformanceLocationsAndLanguages**](KeywordsDataApi.md#bingKeywordPerformanceLocationsAndLanguages) | **GET**  /v3/keywords_data/bing/keyword_performance/locations_and_languages  |
 | [**bingKeywordPerformanceTaskPost**](KeywordsDataApi.md#bingKeywordPerformanceTaskPost) | **POST**  /v3/keywords_data/bing/keyword_performance/task_post  |
 | [**bingKeywordPerformanceTasksReady**](KeywordsDataApi.md#bingKeywordPerformanceTasksReady) | **GET**  /v3/keywords_data/bing/keyword_performance/tasks_ready  |
 | [**bingKeywordPerformanceTaskGet**](KeywordsDataApi.md#bingKeywordPerformanceTaskGet) | **GET**  /v3/keywords_data/bing/keyword_performance/task_get/{id}  |
 | [**bingKeywordPerformanceLive**](KeywordsDataApi.md#bingKeywordPerformanceLive) | **POST**  /v3/keywords_data/bing/keyword_performance/live  |
-| [**keywordsDataBingSearchVolumeHistoryLocationsAndLanguages**](KeywordsDataApi.md#keywordsDataBingSearchVolumeHistoryLocationsAndLanguages) | **GET**  /v3/keywords_data/bing/search_volume_history/locations_and_languages  |
+| [**bingSearchVolumeHistoryLocationsAndLanguages**](KeywordsDataApi.md#bingSearchVolumeHistoryLocationsAndLanguages) | **GET**  /v3/keywords_data/bing/search_volume_history/locations_and_languages  |
 | [**bingSearchVolumeHistoryTaskPost**](KeywordsDataApi.md#bingSearchVolumeHistoryTaskPost) | **POST**  /v3/keywords_data/bing/search_volume_history/task_post  |
 | [**bingSearchVolumeHistoryTasksReady**](KeywordsDataApi.md#bingSearchVolumeHistoryTasksReady) | **GET**  /v3/keywords_data/bing/search_volume_history/tasks_ready  |
 | [**bingSearchVolumeHistoryTaskGet**](KeywordsDataApi.md#bingSearchVolumeHistoryTaskGet) | **GET**  /v3/keywords_data/bing/search_volume_history/task_get/{id}  |
 | [**bingSearchVolumeHistoryLive**](KeywordsDataApi.md#bingSearchVolumeHistoryLive) | **POST**  /v3/keywords_data/bing/search_volume_history/live  |
-| [**keywordsDataClickstreamDataLocationsAndLanguages**](KeywordsDataApi.md#keywordsDataClickstreamDataLocationsAndLanguages) | **GET**  /v3/keywords_data/clickstream_data/locations_and_languages  |
+| [**clickstreamDataLocationsAndLanguages**](KeywordsDataApi.md#clickstreamDataLocationsAndLanguages) | **GET**  /v3/keywords_data/clickstream_data/locations_and_languages  |
 | [**clickstreamDataDataforseoSearchVolumeLive**](KeywordsDataApi.md#clickstreamDataDataforseoSearchVolumeLive) | **POST**  /v3/keywords_data/clickstream_data/dataforseo_search_volume/live  |
 | [**clickstreamDataGlobalSearchVolumeLive**](KeywordsDataApi.md#clickstreamDataGlobalSearchVolumeLive) | **POST**  /v3/keywords_data/clickstream_data/global_search_volume/live  |
 | [**clickstreamDataBulkSearchVolumeLive**](KeywordsDataApi.md#clickstreamDataBulkSearchVolumeLive) | **POST**  /v3/keywords_data/clickstream_data/bulk_search_volume/live  |
@@ -104,13 +104,30 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataIdListRequestInfo model = new KeywordsDataIdListRequestInfo()
-           .datetimeFrom("2025-08-22 08:08:36 +00:00")
-           .datetimeTo("2025-10-22 08:08:36 +00:00")
+    KeywordsDataIdListResponseInfo response = apiInstance.keywordsDataIdList(
+       List.of(
+    
+           new KeywordsDataIdListRequestInfo()
+        
+           .datetimeFrom()
+        
+        
+           .datetimeTo()
+        
+        
            .limit(100)
+        
+        
            .offset(0)
-           .sort("desc");
-    KeywordsDataIdListResponseInfo response = apiInstance.keywordsDataIdList(List.of(model));
+        
+        
+           .sort("desc")
+        
+        
+           .includeMetadata(true)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#keywordsDataIdList");
@@ -178,11 +195,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataErrorsRequestInfo model = new KeywordsDataErrorsRequestInfo()
+    KeywordsDataErrorsResponseInfo response = apiInstance.keywordsDataErrors(
+       List.of(
+    
+           new KeywordsDataErrorsRequestInfo()
+        
            .limit(10)
+        
+        
            .offset(0)
-           .filteredFunction("pingback_url");
-    KeywordsDataErrorsResponseInfo response = apiInstance.keywordsDataErrors(List.of(model));
+        
+        
+           .filteredFunction("pingback_url")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#keywordsDataErrors");
@@ -290,9 +317,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataGoogleAdsLocations"></a>
-# **keywordsDataGoogleAdsLocations**
-> KeywordsDataGoogleAdsLocationsResponseInfo keywordsDataGoogleAdsLocations()
+<a id="googleAdsLocations"></a>
+# **googleAdsLocations**
+> KeywordsDataGoogleAdsLocationsResponseInfo googleAdsLocations()
 
 
 ### Example
@@ -320,10 +347,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataGoogleAdsLocationsResponseInfo response = apiInstance.keywordsDataGoogleAdsLocations();
+    KeywordsDataGoogleAdsLocationsResponseInfo response = apiInstance.googleAdsLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataGoogleAdsLocations");
+      System.err.println("Exception when calling KeywordsDataApi#googleAdsLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -359,9 +386,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataGoogleAdsLocationsCountry"></a>
-# **keywordsDataGoogleAdsLocationsCountry**
-> KeywordsDataGoogleAdsLocationsCountryResponseInfo keywordsDataGoogleAdsLocationsCountry()
+<a id="googleAdsLocationsCountry"></a>
+# **googleAdsLocationsCountry**
+> KeywordsDataGoogleAdsLocationsCountryResponseInfo googleAdsLocationsCountry()
 
 
 ### Example
@@ -388,11 +415,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String country = "us";
-    KeywordsDataGoogleAdsLocationsCountryResponseInfo response = apiInstance.keywordsDataGoogleAdsLocationsCountry(country);
+    String country = ;
+    KeywordsDataGoogleAdsLocationsCountryResponseInfo response = apiInstance.googleAdsLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataGoogleAdsLocationsCountry");
+      System.err.println("Exception when calling KeywordsDataApi#googleAdsLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -428,9 +455,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataGoogleAdsLanguages"></a>
-# **keywordsDataGoogleAdsLanguages**
-> KeywordsDataGoogleAdsLanguagesResponseInfo keywordsDataGoogleAdsLanguages()
+<a id="googleAdsLanguages"></a>
+# **googleAdsLanguages**
+> KeywordsDataGoogleAdsLanguagesResponseInfo googleAdsLanguages()
 
 
 ### Example
@@ -458,10 +485,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataGoogleAdsLanguagesResponseInfo response = apiInstance.keywordsDataGoogleAdsLanguages();
+    KeywordsDataGoogleAdsLanguagesResponseInfo response = apiInstance.googleAdsLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataGoogleAdsLanguages");
+      System.err.println("Exception when calling KeywordsDataApi#googleAdsLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -526,15 +553,26 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo model = new KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "buy laptop",
-                   "cheap laptops for sale",
-                   "purchase laptop"
-                ))
-           .locationName("United States");
-    KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo response = apiInstance.googleAdsSearchVolumeTaskPost(List.of(model));
+    KeywordsDataGoogleAdsSearchVolumeTaskPostResponseInfo response = apiInstance.googleAdsSearchVolumeTaskPost(
+       List.of(
+    
+           new KeywordsDataGoogleAdsSearchVolumeTaskPostRequestInfo()
+        
+           .locationName("United States")
+        
+        
+           .keywords(List.of(
+    
+           "buy laptop",
+    
+           "cheap laptops for sale",
+    
+           "purchase laptop"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsSearchVolumeTaskPost");
@@ -671,7 +709,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataGoogleAdsSearchVolumeTaskGetResponseInfo response = apiInstance.googleAdsSearchVolumeTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -740,17 +778,32 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo model = new KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "buy laptop",
-                   "cheap laptops for sale",
-                   "purchase laptop"
-                ))
+    KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo response = apiInstance.googleAdsSearchVolumeLive(
+       List.of(
+    
+           new KeywordsDataGoogleAdsSearchVolumeLiveRequestInfo()
+        
            .locationCode(2840)
+        
+        
+           .keywords(List.of(
+    
+           "buy laptop",
+    
+           "cheap laptops for sale",
+    
+           "purchase laptop"
+    
+       ))
+        
+        
+           .dateFrom()
+        
+        
            .searchPartners(true)
-           .dateFrom("2025-08-22");
-    KeywordsDataGoogleAdsSearchVolumeLiveResponseInfo response = apiInstance.googleAdsSearchVolumeLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsSearchVolumeLive");
@@ -818,10 +871,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo model = new KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo()
+    KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo response = apiInstance.googleAdsKeywordsForSiteTaskPost(
+       List.of(
+    
+           new KeywordsDataGoogleAdsKeywordsForSiteTaskPostRequestInfo()
+        
+           .locationCode(2840)
+        
+        
            .target("dataforseo.com")
-           .locationCode(2840);
-    KeywordsDataGoogleAdsKeywordsForSiteTaskPostResponseInfo response = apiInstance.googleAdsKeywordsForSiteTaskPost(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsKeywordsForSiteTaskPost");
@@ -958,7 +1019,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataGoogleAdsKeywordsForSiteTaskGetResponseInfo response = apiInstance.googleAdsKeywordsForSiteTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1027,10 +1088,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo model = new KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo()
+    KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo response = apiInstance.googleAdsKeywordsForSiteLive(
+       List.of(
+    
+           new KeywordsDataGoogleAdsKeywordsForSiteLiveRequestInfo()
+        
+           .locationCode(2840)
+        
+        
            .target("dataforseo.com")
-           .locationCode(2840);
-    KeywordsDataGoogleAdsKeywordsForSiteLiveResponseInfo response = apiInstance.googleAdsKeywordsForSiteLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsKeywordsForSiteLive");
@@ -1098,14 +1167,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo model = new KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "phone",
-                   "cellphone"
-                ))
-           .locationCode(2840);
-    KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo response = apiInstance.googleAdsKeywordsForKeywordsTaskPost(List.of(model));
+    KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostResponseInfo response = apiInstance.googleAdsKeywordsForKeywordsTaskPost(
+       List.of(
+    
+           new KeywordsDataGoogleAdsKeywordsForKeywordsTaskPostRequestInfo()
+        
+           .locationCode(2840)
+        
+        
+           .keywords(List.of(
+    
+           "phone",
+    
+           "cellphone"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsKeywordsForKeywordsTaskPost");
@@ -1242,7 +1321,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataGoogleAdsKeywordsForKeywordsTaskGetResponseInfo response = apiInstance.googleAdsKeywordsForKeywordsTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1311,14 +1390,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo model = new KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "phone",
-                   "cellphone"
-                ))
-           .locationCode(2840);
-    KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo response = apiInstance.googleAdsKeywordsForKeywordsLive(List.of(model));
+    KeywordsDataGoogleAdsKeywordsForKeywordsLiveResponseInfo response = apiInstance.googleAdsKeywordsForKeywordsLive(
+       List.of(
+    
+           new KeywordsDataGoogleAdsKeywordsForKeywordsLiveRequestInfo()
+        
+           .locationCode(2840)
+        
+        
+           .keywords(List.of(
+    
+           "phone",
+    
+           "cellphone"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsKeywordsForKeywordsLive");
@@ -1386,16 +1475,31 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo model = new KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "seo marketing"
-                ))
-           .bid(999d)
-           .match("exact")
+    KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo response = apiInstance.googleAdsAdTrafficByKeywordsTaskPost(
+       List.of(
+    
+           new KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostResponseInfo response = apiInstance.googleAdsAdTrafficByKeywordsTaskPost(List.of(model));
+        
+        
+           .bid(999)
+        
+        
+           .match("exact")
+        
+        
+           .keywords(List.of(
+    
+           "seo marketing"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsAdTrafficByKeywordsTaskPost");
@@ -1532,7 +1636,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataGoogleAdsAdTrafficByKeywordsTaskGetResponseInfo response = apiInstance.googleAdsAdTrafficByKeywordsTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1601,16 +1705,31 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo model = new KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "seo marketing"
-                ))
-           .bid(999l)
-           .match("exact")
+    KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo response = apiInstance.googleAdsAdTrafficByKeywordsLive(
+       List.of(
+    
+           new KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResponseInfo response = apiInstance.googleAdsAdTrafficByKeywordsLive(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .bid(999)
+        
+        
+           .match("exact")
+        
+        
+           .keywords(List.of(
+    
+           "seo marketing"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleAdsAdTrafficByKeywordsLive");
@@ -1649,9 +1768,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataGoogleTrendsLocations"></a>
-# **keywordsDataGoogleTrendsLocations**
-> KeywordsDataGoogleTrendsLocationsResponseInfo keywordsDataGoogleTrendsLocations()
+<a id="googleTrendsLocations"></a>
+# **googleTrendsLocations**
+> KeywordsDataGoogleTrendsLocationsResponseInfo googleTrendsLocations()
 
 
 ### Example
@@ -1679,10 +1798,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataGoogleTrendsLocationsResponseInfo response = apiInstance.keywordsDataGoogleTrendsLocations();
+    KeywordsDataGoogleTrendsLocationsResponseInfo response = apiInstance.googleTrendsLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataGoogleTrendsLocations");
+      System.err.println("Exception when calling KeywordsDataApi#googleTrendsLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1718,9 +1837,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataGoogleTrendsLocationsCountry"></a>
-# **keywordsDataGoogleTrendsLocationsCountry**
-> KeywordsDataGoogleTrendsLocationsCountryResponseInfo keywordsDataGoogleTrendsLocationsCountry()
+<a id="googleTrendsLocationsCountry"></a>
+# **googleTrendsLocationsCountry**
+> KeywordsDataGoogleTrendsLocationsCountryResponseInfo googleTrendsLocationsCountry()
 
 
 ### Example
@@ -1747,11 +1866,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String country = "us";
-    KeywordsDataGoogleTrendsLocationsCountryResponseInfo response = apiInstance.keywordsDataGoogleTrendsLocationsCountry(country);
+    String country = ;
+    KeywordsDataGoogleTrendsLocationsCountryResponseInfo response = apiInstance.googleTrendsLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataGoogleTrendsLocationsCountry");
+      System.err.println("Exception when calling KeywordsDataApi#googleTrendsLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1787,9 +1906,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataGoogleTrendsLanguages"></a>
-# **keywordsDataGoogleTrendsLanguages**
-> KeywordsDataGoogleTrendsLanguagesResponseInfo keywordsDataGoogleTrendsLanguages()
+<a id="googleTrendsLanguages"></a>
+# **googleTrendsLanguages**
+> KeywordsDataGoogleTrendsLanguagesResponseInfo googleTrendsLanguages()
 
 
 ### Example
@@ -1817,10 +1936,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataGoogleTrendsLanguagesResponseInfo response = apiInstance.keywordsDataGoogleTrendsLanguages();
+    KeywordsDataGoogleTrendsLanguagesResponseInfo response = apiInstance.googleTrendsLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataGoogleTrendsLanguages");
+      System.err.println("Exception when calling KeywordsDataApi#googleTrendsLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1954,17 +2073,33 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleTrendsExploreTaskPostRequestInfo model = new KeywordsDataGoogleTrendsExploreTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "seo api",
-                   "rank api"
-                ))
+    KeywordsDataGoogleTrendsExploreTaskPostResponseInfo response = apiInstance.googleTrendsExploreTaskPost(
+       List.of(
+    
+           new KeywordsDataGoogleTrendsExploreTaskPostRequestInfo()
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+        
+        
            .type("youtube")
+        
+        
            .categoryCode(3)
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22");
-    KeywordsDataGoogleTrendsExploreTaskPostResponseInfo response = apiInstance.googleTrendsExploreTaskPost(List.of(model));
+        
+        
+           .keywords(List.of(
+    
+           "seo api",
+    
+           "rank api"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleTrendsExploreTaskPost");
@@ -2101,7 +2236,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataGoogleTrendsExploreTaskGetResponseInfo response = apiInstance.googleTrendsExploreTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2170,18 +2305,36 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataGoogleTrendsExploreLiveRequestInfo model = new KeywordsDataGoogleTrendsExploreLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "rugby",
-                   "cricket"
-                ))
+    KeywordsDataGoogleTrendsExploreLiveResponseInfo response = apiInstance.googleTrendsExploreLive(
+       List.of(
+    
+           new KeywordsDataGoogleTrendsExploreLiveRequestInfo()
+        
            .locationName("United States")
+        
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+        
+        
            .type("youtube")
+        
+        
            .categoryCode(3)
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22");
-    KeywordsDataGoogleTrendsExploreLiveResponseInfo response = apiInstance.googleTrendsExploreLive(List.of(model));
+        
+        
+           .keywords(List.of(
+    
+           "rugby",
+    
+           "cricket"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#googleTrendsExploreLive");
@@ -2220,9 +2373,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataDataforseoTrendsLocations"></a>
-# **keywordsDataDataforseoTrendsLocations**
-> KeywordsDataDataforseoTrendsLocationsResponseInfo keywordsDataDataforseoTrendsLocations()
+<a id="dataforseoTrendsLocations"></a>
+# **dataforseoTrendsLocations**
+> KeywordsDataDataforseoTrendsLocationsResponseInfo dataforseoTrendsLocations()
 
 
 ### Example
@@ -2250,10 +2403,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataDataforseoTrendsLocationsResponseInfo response = apiInstance.keywordsDataDataforseoTrendsLocations();
+    KeywordsDataDataforseoTrendsLocationsResponseInfo response = apiInstance.dataforseoTrendsLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataDataforseoTrendsLocations");
+      System.err.println("Exception when calling KeywordsDataApi#dataforseoTrendsLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2289,9 +2442,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataDataforseoTrendsLocationsCountry"></a>
-# **keywordsDataDataforseoTrendsLocationsCountry**
-> KeywordsDataDataforseoTrendsLocationsCountryResponseInfo keywordsDataDataforseoTrendsLocationsCountry()
+<a id="dataforseoTrendsLocationsCountry"></a>
+# **dataforseoTrendsLocationsCountry**
+> KeywordsDataDataforseoTrendsLocationsCountryResponseInfo dataforseoTrendsLocationsCountry()
 
 
 ### Example
@@ -2318,11 +2471,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String country = "us";
-    KeywordsDataDataforseoTrendsLocationsCountryResponseInfo response = apiInstance.keywordsDataDataforseoTrendsLocationsCountry(country);
+    String country = ;
+    KeywordsDataDataforseoTrendsLocationsCountryResponseInfo response = apiInstance.dataforseoTrendsLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataDataforseoTrendsLocationsCountry");
+      System.err.println("Exception when calling KeywordsDataApi#dataforseoTrendsLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2387,14 +2540,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataDataforseoTrendsExploreLiveRequestInfo model = new KeywordsDataDataforseoTrendsExploreLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "iphone 14",
-                   "samsung s23"
-                ))
-           .locationCode(2840);
-    KeywordsDataDataforseoTrendsExploreLiveResponseInfo response = apiInstance.dataforseoTrendsExploreLive(List.of(model));
+    KeywordsDataDataforseoTrendsExploreLiveResponseInfo response = apiInstance.dataforseoTrendsExploreLive(
+       List.of(
+    
+           new KeywordsDataDataforseoTrendsExploreLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "iphone 14",
+    
+           "samsung s23"
+    
+       ))
+        
+        
+           .locationCode(2840)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#dataforseoTrendsExploreLive");
@@ -2462,17 +2625,33 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo model = new KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "rugby",
-                   "cricket"
-                ))
-           .locationName("United States")
+    KeywordsDataDataforseoTrendsSubregionInterestsLiveResponseInfo response = apiInstance.dataforseoTrendsSubregionInterestsLive(
+       List.of(
+    
+           new KeywordsDataDataforseoTrendsSubregionInterestsLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "rugby",
+    
+           "cricket"
+    
+       ))
+        
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+        
+        
            .type("web")
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22");
-    KeywordsDataDataforseoTrendsSubregionInterestsLiveResponseInfo response = apiInstance.dataforseoTrendsSubregionInterestsLive(List.of(model));
+        
+        
+           .locationName("United States")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#dataforseoTrendsSubregionInterestsLive");
@@ -2540,17 +2719,33 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataDataforseoTrendsDemographyLiveRequestInfo model = new KeywordsDataDataforseoTrendsDemographyLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "rugby",
-                   "cricket"
-                ))
-           .locationName("United States")
+    KeywordsDataDataforseoTrendsDemographyLiveResponseInfo response = apiInstance.dataforseoTrendsDemographyLive(
+       List.of(
+    
+           new KeywordsDataDataforseoTrendsDemographyLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "rugby",
+    
+           "cricket"
+    
+       ))
+        
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+        
+        
            .type("web")
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22");
-    KeywordsDataDataforseoTrendsDemographyLiveResponseInfo response = apiInstance.dataforseoTrendsDemographyLive(List.of(model));
+        
+        
+           .locationName("United States")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#dataforseoTrendsDemographyLive");
@@ -2618,17 +2813,33 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo model = new KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "rugby",
-                   "cricket"
-                ))
-           .locationName("United States")
+    KeywordsDataDataforseoTrendsMergedDataLiveResponseInfo response = apiInstance.dataforseoTrendsMergedDataLive(
+       List.of(
+    
+           new KeywordsDataDataforseoTrendsMergedDataLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "rugby",
+    
+           "cricket"
+    
+       ))
+        
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+        
+        
            .type("web")
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22");
-    KeywordsDataDataforseoTrendsMergedDataLiveResponseInfo response = apiInstance.dataforseoTrendsMergedDataLive(List.of(model));
+        
+        
+           .locationName("United States")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#dataforseoTrendsMergedDataLive");
@@ -2834,16 +3045,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingSearchVolumeTaskPostRequestInfo model = new KeywordsDataBingSearchVolumeTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "average page rpm adsense",
-                   "adsense blank ads how long",
-                   "leads and prospects"
-                ))
+    KeywordsDataBingSearchVolumeTaskPostResponseInfo response = apiInstance.bingSearchVolumeTaskPost(
+       List.of(
+    
+           new KeywordsDataBingSearchVolumeTaskPostRequestInfo()
+        
            .locationName("United States")
-           .languageName("English");
-    KeywordsDataBingSearchVolumeTaskPostResponseInfo response = apiInstance.bingSearchVolumeTaskPost(List.of(model));
+        
+        
+           .languageName("English")
+        
+        
+           .keywords(List.of(
+    
+           "average page rpm adsense",
+    
+           "adsense blank ads how long",
+    
+           "leads and prospects"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingSearchVolumeTaskPost");
@@ -2980,7 +3204,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataBingSearchVolumeTaskGetResponseInfo response = apiInstance.bingSearchVolumeTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3049,16 +3273,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingSearchVolumeLiveRequestInfo model = new KeywordsDataBingSearchVolumeLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "tom and jerry",
-                   "silicon valley",
-                   "spider man"
-                ))
+    KeywordsDataBingSearchVolumeLiveResponseInfo response = apiInstance.bingSearchVolumeLive(
+       List.of(
+    
+           new KeywordsDataBingSearchVolumeLiveRequestInfo()
+        
            .locationName("United States")
-           .languageCode("en");
-    KeywordsDataBingSearchVolumeLiveResponseInfo response = apiInstance.bingSearchVolumeLive(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "tom and jerry",
+    
+           "silicon valley",
+    
+           "spider man"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingSearchVolumeLive");
@@ -3264,30 +3501,55 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingAudienceEstimationTaskPostRequestInfo model = new KeywordsDataBingAudienceEstimationTaskPostRequestInfo()
+    KeywordsDataBingAudienceEstimationTaskPostResponseInfo response = apiInstance.bingAudienceEstimationTaskPost(
+       List.of(
+    
+           new KeywordsDataBingAudienceEstimationTaskPostRequestInfo()
+        
            .locationCoordinate("29.6821525,-82.4098881,100")
-           .age(
-               List.of(
-                   "twenty_five_to_thirty_four",
-                   "eighteen_to_twenty_four",
-                   "unknown"
-                ))
-           .bid(1d)
-           .dailyBudget(24d)
-           .gender(
-               List.of(
-                   "male"
-                ))
-           .industry(
-               List.of(
-                   "806303407",
-                   "806301758"
-                ))
-           .jobFunction(
-               List.of(
-                   "806298607"
-                ));
-    KeywordsDataBingAudienceEstimationTaskPostResponseInfo response = apiInstance.bingAudienceEstimationTaskPost(List.of(model));
+        
+        
+           .age(List.of(
+    
+           "twenty_five_to_thirty_four",
+    
+           "eighteen_to_twenty_four",
+    
+           "unknown"
+    
+       ))
+        
+        
+           .bid(1)
+        
+        
+           .dailyBudget(24)
+        
+        
+           .gender(List.of(
+    
+           "male"
+    
+       ))
+        
+        
+           .industry(List.of(
+    
+           806303407,
+    
+           806301758
+    
+       ))
+        
+        
+           .jobFunction(List.of(
+    
+           806298607
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationTaskPost");
@@ -3424,7 +3686,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataBingAudienceEstimationTaskGetResponseInfo response = apiInstance.bingAudienceEstimationTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3493,30 +3755,55 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingAudienceEstimationLiveRequestInfo model = new KeywordsDataBingAudienceEstimationLiveRequestInfo()
+    KeywordsDataBingAudienceEstimationLiveResponseInfo response = apiInstance.bingAudienceEstimationLive(
+       List.of(
+    
+           new KeywordsDataBingAudienceEstimationLiveRequestInfo()
+        
            .locationCoordinate("29.6821525,-82.4098881,100")
-           .age(
-               List.of(
-                   "twenty_five_to_thirty_four",
-                   "eighteen_to_twenty_four",
-                   "unknown"
-                ))
-           .bid(1d)
-           .dailyBudget(24d)
-           .gender(
-               List.of(
-                   "male"
-                ))
-           .industry(
-               List.of(
-                   "806303407",
-                   "806301758"
-                ))
-           .jobFunction(
-               List.of(
-                   "806298607"
-                ));
-    KeywordsDataBingAudienceEstimationLiveResponseInfo response = apiInstance.bingAudienceEstimationLive(List.of(model));
+        
+        
+           .age(List.of(
+    
+           "twenty_five_to_thirty_four",
+    
+           "eighteen_to_twenty_four",
+    
+           "unknown"
+    
+       ))
+        
+        
+           .bid(1)
+        
+        
+           .dailyBudget(24)
+        
+        
+           .gender(List.of(
+    
+           "male"
+    
+       ))
+        
+        
+           .industry(List.of(
+    
+           806303407,
+    
+           806301758
+    
+       ))
+        
+        
+           .jobFunction(List.of(
+    
+           806298607
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingAudienceEstimationLive");
@@ -3584,11 +3871,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingKeywordsForSiteTaskPostRequestInfo model = new KeywordsDataBingKeywordsForSiteTaskPostRequestInfo()
-           .target("dataforseo.com")
+    KeywordsDataBingKeywordsForSiteTaskPostResponseInfo response = apiInstance.bingKeywordsForSiteTaskPost(
+       List.of(
+    
+           new KeywordsDataBingKeywordsForSiteTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataBingKeywordsForSiteTaskPostResponseInfo response = apiInstance.bingKeywordsForSiteTaskPost(List.of(model));
+        
+        
+           .target("dataforseo.com")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingKeywordsForSiteTaskPost");
@@ -3725,7 +4022,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataBingKeywordsForSiteTaskGetResponseInfo response = apiInstance.bingKeywordsForSiteTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3794,11 +4091,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingKeywordsForSiteLiveRequestInfo model = new KeywordsDataBingKeywordsForSiteLiveRequestInfo()
-           .target("dataforseo.com")
+    KeywordsDataBingKeywordsForSiteLiveResponseInfo response = apiInstance.bingKeywordsForSiteLive(
+       List.of(
+    
+           new KeywordsDataBingKeywordsForSiteLiveRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataBingKeywordsForSiteLiveResponseInfo response = apiInstance.bingKeywordsForSiteLive(List.of(model));
+        
+        
+           .target("dataforseo.com")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingKeywordsForSiteLive");
@@ -3866,16 +4173,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo model = new KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "average page rpm adsense",
-                   "adsense blank ads how long",
-                   "leads and prospects"
-                ))
+    KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo response = apiInstance.bingKeywordsForKeywordsTaskPost(
+       List.of(
+    
+           new KeywordsDataBingKeywordsForKeywordsTaskPostRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataBingKeywordsForKeywordsTaskPostResponseInfo response = apiInstance.bingKeywordsForKeywordsTaskPost(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "average page rpm adsense",
+    
+           "adsense blank ads how long",
+    
+           "leads and prospects"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingKeywordsForKeywordsTaskPost");
@@ -4012,7 +4332,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataBingKeywordsForKeywordsTaskGetResponseInfo response = apiInstance.bingKeywordsForKeywordsTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4081,16 +4401,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingKeywordsForKeywordsLiveRequestInfo model = new KeywordsDataBingKeywordsForKeywordsLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "average page rpm adsense",
-                   "adsense blank ads how long",
-                   "leads and prospects"
-                ))
+    KeywordsDataBingKeywordsForKeywordsLiveResponseInfo response = apiInstance.bingKeywordsForKeywordsLive(
+       List.of(
+    
+           new KeywordsDataBingKeywordsForKeywordsLiveRequestInfo()
+        
            .locationName("United States")
-           .languageName("English");
-    KeywordsDataBingKeywordsForKeywordsLiveResponseInfo response = apiInstance.bingKeywordsForKeywordsLive(List.of(model));
+        
+        
+           .languageName("English")
+        
+        
+           .keywords(List.of(
+    
+           "average page rpm adsense",
+    
+           "adsense blank ads how long",
+    
+           "leads and prospects"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingKeywordsForKeywordsLive");
@@ -4129,9 +4462,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataBingKeywordPerformanceLocationsAndLanguages"></a>
-# **keywordsDataBingKeywordPerformanceLocationsAndLanguages**
-> KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo keywordsDataBingKeywordPerformanceLocationsAndLanguages()
+<a id="bingKeywordPerformanceLocationsAndLanguages"></a>
+# **bingKeywordPerformanceLocationsAndLanguages**
+> KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo bingKeywordPerformanceLocationsAndLanguages()
 
 
 ### Example
@@ -4159,10 +4492,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo response = apiInstance.keywordsDataBingKeywordPerformanceLocationsAndLanguages();
+    KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo response = apiInstance.bingKeywordPerformanceLocationsAndLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataBingKeywordPerformanceLocationsAndLanguages");
+      System.err.println("Exception when calling KeywordsDataApi#bingKeywordPerformanceLocationsAndLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4227,16 +4560,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingKeywordPerformanceTaskPostRequestInfo model = new KeywordsDataBingKeywordPerformanceTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "dataforseo",
-                   "seo",
-                   "ranking"
-                ))
+    KeywordsDataBingKeywordPerformanceTaskPostResponseInfo response = apiInstance.bingKeywordPerformanceTaskPost(
+       List.of(
+    
+           new KeywordsDataBingKeywordPerformanceTaskPostRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataBingKeywordPerformanceTaskPostResponseInfo response = apiInstance.bingKeywordPerformanceTaskPost(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "dataforseo",
+    
+           "seo",
+    
+           "ranking"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingKeywordPerformanceTaskPost");
@@ -4373,7 +4719,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataBingKeywordPerformanceTaskGetResponseInfo response = apiInstance.bingKeywordPerformanceTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4442,16 +4788,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingKeywordPerformanceLiveRequestInfo model = new KeywordsDataBingKeywordPerformanceLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "dataforseo",
-                   "seo",
-                   "ranking"
-                ))
+    KeywordsDataBingKeywordPerformanceLiveResponseInfo response = apiInstance.bingKeywordPerformanceLive(
+       List.of(
+    
+           new KeywordsDataBingKeywordPerformanceLiveRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataBingKeywordPerformanceLiveResponseInfo response = apiInstance.bingKeywordPerformanceLive(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "dataforseo",
+    
+           "seo",
+    
+           "ranking"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingKeywordPerformanceLive");
@@ -4490,9 +4849,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataBingSearchVolumeHistoryLocationsAndLanguages"></a>
-# **keywordsDataBingSearchVolumeHistoryLocationsAndLanguages**
-> KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo keywordsDataBingSearchVolumeHistoryLocationsAndLanguages()
+<a id="bingSearchVolumeHistoryLocationsAndLanguages"></a>
+# **bingSearchVolumeHistoryLocationsAndLanguages**
+> KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo bingSearchVolumeHistoryLocationsAndLanguages()
 
 
 ### Example
@@ -4520,10 +4879,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo response = apiInstance.keywordsDataBingSearchVolumeHistoryLocationsAndLanguages();
+    KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo response = apiInstance.bingSearchVolumeHistoryLocationsAndLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataBingSearchVolumeHistoryLocationsAndLanguages");
+      System.err.println("Exception when calling KeywordsDataApi#bingSearchVolumeHistoryLocationsAndLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4588,14 +4947,25 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo model = new KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo()
-           .keywords(
-               List.of(
-                   "10 minute timer"
-                ))
+    KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo response = apiInstance.bingSearchVolumeHistoryTaskPost(
+       List.of(
+    
+           new KeywordsDataBingSearchVolumeHistoryTaskPostRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataBingSearchVolumeHistoryTaskPostResponseInfo response = apiInstance.bingSearchVolumeHistoryTaskPost(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "10 minute timer"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingSearchVolumeHistoryTaskPost");
@@ -4732,7 +5102,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     KeywordsDataBingSearchVolumeHistoryTaskGetResponseInfo response = apiInstance.bingSearchVolumeHistoryTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4801,14 +5171,25 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataBingSearchVolumeHistoryLiveRequestInfo model = new KeywordsDataBingSearchVolumeHistoryLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "10 minute timer"
-                ))
+    KeywordsDataBingSearchVolumeHistoryLiveResponseInfo response = apiInstance.bingSearchVolumeHistoryLive(
+       List.of(
+    
+           new KeywordsDataBingSearchVolumeHistoryLiveRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    KeywordsDataBingSearchVolumeHistoryLiveResponseInfo response = apiInstance.bingSearchVolumeHistoryLive(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "10 minute timer"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#bingSearchVolumeHistoryLive");
@@ -4847,9 +5228,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="keywordsDataClickstreamDataLocationsAndLanguages"></a>
-# **keywordsDataClickstreamDataLocationsAndLanguages**
-> KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo keywordsDataClickstreamDataLocationsAndLanguages()
+<a id="clickstreamDataLocationsAndLanguages"></a>
+# **clickstreamDataLocationsAndLanguages**
+> KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo clickstreamDataLocationsAndLanguages()
 
 
 ### Example
@@ -4877,10 +5258,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
 
-    KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo response = apiInstance.keywordsDataClickstreamDataLocationsAndLanguages();
+    KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo response = apiInstance.clickstreamDataLocationsAndLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling KeywordsDataApi#keywordsDataClickstreamDataLocationsAndLanguages");
+      System.err.println("Exception when calling KeywordsDataApi#clickstreamDataLocationsAndLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -4945,17 +5326,32 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo model = new KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "you tube",
-                   "youtube",
-                   "youtub"
-                ))
+    KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo response = apiInstance.clickstreamDataDataforseoSearchVolumeLive(
+       List.of(
+    
+           new KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo()
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
-           .tag("test-tag");
-    KeywordsDataClickstreamDataDataforseoSearchVolumeLiveResponseInfo response = apiInstance.clickstreamDataDataforseoSearchVolumeLive(List.of(model));
+        
+        
+           .tag("test-tag")
+        
+        
+           .keywords(List.of(
+    
+           "you tube",
+    
+           "youtube",
+    
+           "youtub"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#clickstreamDataDataforseoSearchVolumeLive");
@@ -5023,15 +5419,26 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo model = new KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "you tube",
-                   "youtube",
-                   "youtub"
-                ))
-           .tag("test-tag");
-    KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo response = apiInstance.clickstreamDataGlobalSearchVolumeLive(List.of(model));
+    KeywordsDataClickstreamDataGlobalSearchVolumeLiveResponseInfo response = apiInstance.clickstreamDataGlobalSearchVolumeLive(
+       List.of(
+    
+           new KeywordsDataClickstreamDataGlobalSearchVolumeLiveRequestInfo()
+        
+           .tag("test-tag")
+        
+        
+           .keywords(List.of(
+    
+           "you tube",
+    
+           "youtube",
+    
+           "youtub"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#clickstreamDataGlobalSearchVolumeLive");
@@ -5099,16 +5506,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     KeywordsDataApi apiInstance = new KeywordsDataApi(defaultClient);
-    KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo model = new KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "you tube",
-                   "youtube",
-                   "youtub"
-                ))
+    KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo response = apiInstance.clickstreamDataBulkSearchVolumeLive(
+       List.of(
+    
+           new KeywordsDataClickstreamDataBulkSearchVolumeLiveRequestInfo()
+        
            .locationCode(2840)
-           .tag("test-tag");
-    KeywordsDataClickstreamDataBulkSearchVolumeLiveResponseInfo response = apiInstance.clickstreamDataBulkSearchVolumeLive(List.of(model));
+        
+        
+           .tag("test-tag")
+        
+        
+           .keywords(List.of(
+    
+           "you tube",
+    
+           "youtube",
+    
+           "youtub"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling KeywordsDataApi#clickstreamDataBulkSearchVolumeLive");

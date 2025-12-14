@@ -494,7 +494,7 @@ public class ContentGenerationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call contentGenerationCheckGrammarLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call checkGrammarLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -541,26 +541,26 @@ public class ContentGenerationApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call contentGenerationCheckGrammarLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call checkGrammarLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return contentGenerationCheckGrammarLanguagesCall(_callback);
+       return checkGrammarLanguagesCall(_callback);
 
     }
 
-    public ContentGenerationCheckGrammarLanguagesResponseInfo contentGenerationCheckGrammarLanguages() throws ApiException {
-       ApiResponse<ContentGenerationCheckGrammarLanguagesResponseInfo> localVarResp = contentGenerationCheckGrammarLanguagesWithHttpInfo();
+    public ContentGenerationCheckGrammarLanguagesResponseInfo checkGrammarLanguages() throws ApiException {
+       ApiResponse<ContentGenerationCheckGrammarLanguagesResponseInfo> localVarResp = checkGrammarLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<ContentGenerationCheckGrammarLanguagesResponseInfo> contentGenerationCheckGrammarLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = contentGenerationCheckGrammarLanguagesValidateBeforeCall(null);
+    public ApiResponse<ContentGenerationCheckGrammarLanguagesResponseInfo> checkGrammarLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = checkGrammarLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<ContentGenerationCheckGrammarLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call contentGenerationCheckGrammarLanguagesAsync(final ApiCallback<ContentGenerationCheckGrammarLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call checkGrammarLanguagesAsync(final ApiCallback<ContentGenerationCheckGrammarLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = contentGenerationCheckGrammarLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = checkGrammarLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<ContentGenerationCheckGrammarLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -708,7 +708,7 @@ public class ContentGenerationApi {
             return localVarCall;
         }
 
-    public okhttp3.Call contentGenerationTextSummaryLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call textSummaryLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -755,26 +755,26 @@ public class ContentGenerationApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call contentGenerationTextSummaryLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call textSummaryLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return contentGenerationTextSummaryLanguagesCall(_callback);
+       return textSummaryLanguagesCall(_callback);
 
     }
 
-    public ContentGenerationTextSummaryLanguagesResponseInfo contentGenerationTextSummaryLanguages() throws ApiException {
-       ApiResponse<ContentGenerationTextSummaryLanguagesResponseInfo> localVarResp = contentGenerationTextSummaryLanguagesWithHttpInfo();
+    public ContentGenerationTextSummaryLanguagesResponseInfo textSummaryLanguages() throws ApiException {
+       ApiResponse<ContentGenerationTextSummaryLanguagesResponseInfo> localVarResp = textSummaryLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<ContentGenerationTextSummaryLanguagesResponseInfo> contentGenerationTextSummaryLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = contentGenerationTextSummaryLanguagesValidateBeforeCall(null);
+    public ApiResponse<ContentGenerationTextSummaryLanguagesResponseInfo> textSummaryLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = textSummaryLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<ContentGenerationTextSummaryLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call contentGenerationTextSummaryLanguagesAsync(final ApiCallback<ContentGenerationTextSummaryLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call textSummaryLanguagesAsync(final ApiCallback<ContentGenerationTextSummaryLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = contentGenerationTextSummaryLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = textSummaryLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<ContentGenerationTextSummaryLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

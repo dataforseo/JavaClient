@@ -94,7 +94,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * product title
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable

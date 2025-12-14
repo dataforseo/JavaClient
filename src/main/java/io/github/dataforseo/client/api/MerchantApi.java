@@ -1346,7 +1346,7 @@ public class MerchantApi {
        return localVarCall;
     }
 
-    public okhttp3.Call merchantAmazonLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1393,32 +1393,32 @@ public class MerchantApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call merchantAmazonLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call amazonLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return merchantAmazonLocationsCall(_callback);
+       return amazonLocationsCall(_callback);
 
     }
 
-    public MerchantAmazonLocationsResponseInfo merchantAmazonLocations() throws ApiException {
-       ApiResponse<MerchantAmazonLocationsResponseInfo> localVarResp = merchantAmazonLocationsWithHttpInfo();
+    public MerchantAmazonLocationsResponseInfo amazonLocations() throws ApiException {
+       ApiResponse<MerchantAmazonLocationsResponseInfo> localVarResp = amazonLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<MerchantAmazonLocationsResponseInfo> merchantAmazonLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = merchantAmazonLocationsValidateBeforeCall(null);
+    public ApiResponse<MerchantAmazonLocationsResponseInfo> amazonLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = amazonLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<MerchantAmazonLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call merchantAmazonLocationsAsync(final ApiCallback<MerchantAmazonLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call amazonLocationsAsync(final ApiCallback<MerchantAmazonLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = merchantAmazonLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = amazonLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<MerchantAmazonLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call merchantAmazonLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1466,36 +1466,36 @@ public class MerchantApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call merchantAmazonLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call amazonLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling merchantAmazonLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling amazonLocationsCountry(Async)");
        }
 
-       return merchantAmazonLocationsCountryCall(country, _callback);
+       return amazonLocationsCountryCall(country, _callback);
 
     }
 
-    public MerchantAmazonLocationsCountryResponseInfo merchantAmazonLocationsCountry(String country) throws ApiException {
-       ApiResponse<MerchantAmazonLocationsCountryResponseInfo> localVarResp = merchantAmazonLocationsCountryWithHttpInfo(country);
+    public MerchantAmazonLocationsCountryResponseInfo amazonLocationsCountry(String country) throws ApiException {
+       ApiResponse<MerchantAmazonLocationsCountryResponseInfo> localVarResp = amazonLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<MerchantAmazonLocationsCountryResponseInfo> merchantAmazonLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = merchantAmazonLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<MerchantAmazonLocationsCountryResponseInfo> amazonLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = amazonLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<MerchantAmazonLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call merchantAmazonLocationsCountryAsync(String country, final ApiCallback<MerchantAmazonLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call amazonLocationsCountryAsync(String country, final ApiCallback<MerchantAmazonLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = merchantAmazonLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = amazonLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<MerchantAmazonLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call merchantAmazonLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call amazonLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1542,26 +1542,26 @@ public class MerchantApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call merchantAmazonLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call amazonLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return merchantAmazonLanguagesCall(_callback);
+       return amazonLanguagesCall(_callback);
 
     }
 
-    public MerchantAmazonLanguagesResponseInfo merchantAmazonLanguages() throws ApiException {
-       ApiResponse<MerchantAmazonLanguagesResponseInfo> localVarResp = merchantAmazonLanguagesWithHttpInfo();
+    public MerchantAmazonLanguagesResponseInfo amazonLanguages() throws ApiException {
+       ApiResponse<MerchantAmazonLanguagesResponseInfo> localVarResp = amazonLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<MerchantAmazonLanguagesResponseInfo> merchantAmazonLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = merchantAmazonLanguagesValidateBeforeCall(null);
+    public ApiResponse<MerchantAmazonLanguagesResponseInfo> amazonLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = amazonLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<MerchantAmazonLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call merchantAmazonLanguagesAsync(final ApiCallback<MerchantAmazonLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call amazonLanguagesAsync(final ApiCallback<MerchantAmazonLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = merchantAmazonLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = amazonLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<MerchantAmazonLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

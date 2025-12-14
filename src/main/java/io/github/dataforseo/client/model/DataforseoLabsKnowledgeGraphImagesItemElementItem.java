@@ -71,8 +71,7 @@ public class DataforseoLabsKnowledgeGraphImagesItemElementItem  extends BaseData
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable

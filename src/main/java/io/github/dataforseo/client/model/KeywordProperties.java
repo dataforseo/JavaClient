@@ -187,6 +187,30 @@ public class KeywordProperties  {
   }
 
 
+  public static final String SERIALIZED_NAME_WORDS_COUNT = "words_count";
+  @SerializedName(SERIALIZED_NAME_WORDS_COUNT)
+  private Long wordsCount;
+
+  public KeywordProperties wordsCount(Long wordsCount) {
+    this.wordsCount = wordsCount;
+    return this;
+  }
+
+  /**
+   * number of words in the keyword
+* indicates how many words the keyword consists of
+   * @return wordsCount
+   */
+  @javax.annotation.Nullable
+  public Long getWordsCount() {
+    return wordsCount;
+  }
+
+  public void setWordsCount(Long wordsCount) {
+    this.wordsCount = wordsCount;
+  }
+
+
 
   public KeywordProperties() {
   }
@@ -235,7 +259,8 @@ public class KeywordProperties  {
         Objects.equals(this.synonymClusteringAlgorithm, keywordProperties.synonymClusteringAlgorithm) &&
         Objects.equals(this.keywordDifficulty, keywordProperties.keywordDifficulty) &&
         Objects.equals(this.detectedLanguage, keywordProperties.detectedLanguage) &&
-        Objects.equals(this.isAnotherLanguage, keywordProperties.isAnotherLanguage);  
+        Objects.equals(this.isAnotherLanguage, keywordProperties.isAnotherLanguage) &&
+        Objects.equals(this.wordsCount, keywordProperties.wordsCount);  
     
   }
 
@@ -245,7 +270,7 @@ public class KeywordProperties  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(seType, coreKeyword, synonymClusteringAlgorithm, keywordDifficulty, detectedLanguage, isAnotherLanguage);
+  return Objects.hash(seType, coreKeyword, synonymClusteringAlgorithm, keywordDifficulty, detectedLanguage, isAnotherLanguage, wordsCount);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -266,6 +291,7 @@ public class KeywordProperties  {
     sb.append("    keywordDifficulty: ").append(toIndentedString(keywordDifficulty)).append("\n");
     sb.append("    detectedLanguage: ").append(toIndentedString(detectedLanguage)).append("\n");
     sb.append("    isAnotherLanguage: ").append(toIndentedString(isAnotherLanguage)).append("\n");
+    sb.append("    wordsCount: ").append(toIndentedString(wordsCount)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -300,6 +326,8 @@ public class KeywordProperties  {
     openapiFields.add("detected_language");
     
     openapiFields.add("is_another_language");
+    
+    openapiFields.add("words_count");
     
 
     // a set of required properties/fields (JSON key names)

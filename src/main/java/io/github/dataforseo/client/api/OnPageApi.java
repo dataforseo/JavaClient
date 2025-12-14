@@ -1730,7 +1730,7 @@ public class OnPageApi {
             return localVarCall;
         }
 
-    public okhttp3.Call onPageLighthouseLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call lighthouseLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1777,26 +1777,26 @@ public class OnPageApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call onPageLighthouseLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call lighthouseLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return onPageLighthouseLanguagesCall(_callback);
+       return lighthouseLanguagesCall(_callback);
 
     }
 
-    public OnPageLighthouseLanguagesResponseInfo onPageLighthouseLanguages() throws ApiException {
-       ApiResponse<OnPageLighthouseLanguagesResponseInfo> localVarResp = onPageLighthouseLanguagesWithHttpInfo();
+    public OnPageLighthouseLanguagesResponseInfo lighthouseLanguages() throws ApiException {
+       ApiResponse<OnPageLighthouseLanguagesResponseInfo> localVarResp = lighthouseLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<OnPageLighthouseLanguagesResponseInfo> onPageLighthouseLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = onPageLighthouseLanguagesValidateBeforeCall(null);
+    public ApiResponse<OnPageLighthouseLanguagesResponseInfo> lighthouseLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = lighthouseLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<OnPageLighthouseLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call onPageLighthouseLanguagesAsync(final ApiCallback<OnPageLighthouseLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call lighthouseLanguagesAsync(final ApiCallback<OnPageLighthouseLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = onPageLighthouseLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = lighthouseLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<OnPageLighthouseLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

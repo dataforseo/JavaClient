@@ -179,9 +179,9 @@ public class AiOverviewShoppingElement  {
 
   public static final String SERIALIZED_NAME_PRICE = "price";
   @SerializedName(SERIALIZED_NAME_PRICE)
-  private PriceInfo price;
+  private Price price;
 
-  public AiOverviewShoppingElement price(PriceInfo price) {
+  public AiOverviewShoppingElement price(Price price) {
     this.price = price;
     return this;
   }
@@ -192,11 +192,11 @@ public class AiOverviewShoppingElement  {
    * @return price
    */
   @javax.annotation.Nullable
-  public PriceInfo getPrice() {
+  public Price getPrice() {
     return price;
   }
 
-  public void setPrice(PriceInfo price) {
+  public void setPrice(Price price) {
     this.price = price;
   }
 

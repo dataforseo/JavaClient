@@ -207,6 +207,30 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
+  @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
+  private Object fanOutQueries;
+
+  public AiOptimizationPerplexityLlmResponsesLiveResultInfo fanOutQueries(Object fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+    return this;
+  }
+
+  /**
+   * array of fan-out queries
+* contains related search queries derived from the main query to provide a more comprehensive response
+   * @return fanOutQueries
+   */
+  @javax.annotation.Nullable
+  public Object getFanOutQueries() {
+    return fanOutQueries;
+  }
+
+  public void setFanOutQueries(Object fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+  }
+
+
 
   public AiOptimizationPerplexityLlmResponsesLiveResultInfo() {
   }
@@ -256,7 +280,8 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
         Objects.equals(this.webSearch, aiOptimizationPerplexityLlmResponsesLiveResultInfo.webSearch) &&
         Objects.equals(this.moneySpent, aiOptimizationPerplexityLlmResponsesLiveResultInfo.moneySpent) &&
         Objects.equals(this.datetime, aiOptimizationPerplexityLlmResponsesLiveResultInfo.datetime) &&
-        Objects.equals(this.items, aiOptimizationPerplexityLlmResponsesLiveResultInfo.items);  
+        Objects.equals(this.items, aiOptimizationPerplexityLlmResponsesLiveResultInfo.items) &&
+        Objects.equals(this.fanOutQueries, aiOptimizationPerplexityLlmResponsesLiveResultInfo.fanOutQueries);  
     
   }
 
@@ -266,7 +291,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(modelName, inputTokens, outputTokens, webSearch, moneySpent, datetime, items);
+  return Objects.hash(modelName, inputTokens, outputTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -288,6 +313,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
     sb.append("    moneySpent: ").append(toIndentedString(moneySpent)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
+    sb.append("    fanOutQueries: ").append(toIndentedString(fanOutQueries)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -324,6 +350,8 @@ public class AiOptimizationPerplexityLlmResponsesLiveResultInfo  {
     openapiFields.add("datetime");
     
     openapiFields.add("items");
+    
+    openapiFields.add("fan_out_queries");
     
 
     // a set of required properties/fields (JSON key names)

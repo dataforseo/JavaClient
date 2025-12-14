@@ -51,10 +51,10 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
    * keyword
 * required field
 * you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
+* all %## will be decoded (plus character '+' will be decoded to a space character)
+* if you need to use the '%' character for your keyword, please specify it as '%25';
 * if you need to use the “+” character for your keyword, please specify it as “%2B”;
-* if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’, the charge per task will be multiplied by 5
+* if this field contains such parameters as 'allinanchor:', 'allintext:', 'allintitle:', 'allinurl:', 'define:', 'filetype:', 'id:', 'inanchor:', 'info:', 'intext:', 'intitle:', 'inurl:', 'link:', 'related:', 'site:', the charge per task will be multiplied by 5
 * Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
 * learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
@@ -69,61 +69,6 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpGoogleNewsLiveAdvancedRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleNewsLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -135,9 +80,9 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
 * example:
 * 2840
    * @return locationCode
@@ -152,34 +97,90 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
+  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
+  private String languageCode;
 
-  public SerpGoogleNewsLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
+  public SerpGoogleNewsLiveAdvancedRequestInfo languageCode(String languageCode) {
+    this.languageCode = languageCode;
     return this;
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “radius”: 199.9 (mm)
-* the maximum value for “radius”: 199999 (mm)
+   * search engine language code
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
 * example:
-* 53.476225,-2.243572,200
-   * @return locationCoordinate
+* en
+   * @return languageCode
    */
   @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
+  public String getLanguageCode() {
+    return languageCode;
   }
 
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
+  public void setLanguageCode(String languageCode) {
+    this.languageCode = languageCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_DEPTH = "depth";
+  @SerializedName(SERIALIZED_NAME_DEPTH)
+  private Integer depth;
+
+  public SerpGoogleNewsLiveAdvancedRequestInfo depth(Integer depth) {
+    this.depth = depth;
+    return this;
+  }
+
+  /**
+   * parsing depth
+* optional field
+* number of results in SERP
+* default value: 10
+* max value: 200
+* Your account will be billed per each SERP containing up to 10 results;
+* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+* If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
+* The cost can be calculated on the Pricing page.
+   * @return depth
+   */
+  @javax.annotation.Nullable
+  public Integer getDepth() {
+    return depth;
+  }
+
+  public void setDepth(Integer depth) {
+    this.depth = depth;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleNewsLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
   }
 
 
@@ -194,9 +195,9 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   /**
    * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
 * example:
 * English
    * @return languageName
@@ -208,34 +209,6 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   public void setLanguageName(String languageName) {
     this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
-
-  public SerpGoogleNewsLiveAdvancedRequestInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-* example:
-* en
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
   }
 
 
@@ -263,6 +236,59 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   public void setOs(String os) {
     this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
+  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
+  private Integer maxCrawlPages;
+
+  public SerpGoogleNewsLiveAdvancedRequestInfo maxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
+    return this;
+  }
+
+  /**
+   * page crawl limit
+* optional field
+* number of search results pages to crawl
+* max value: 100
+* Note: the max_crawl_pages and depth parameters complement each other;
+* learn more at our help center
+   * @return maxCrawlPages
+   */
+  @javax.annotation.Nullable
+  public Integer getMaxCrawlPages() {
+    return maxCrawlPages;
+  }
+
+  public void setMaxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
+  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
+  private String searchParam;
+
+  public SerpGoogleNewsLiveAdvancedRequestInfo searchParam(String searchParam) {
+    this.searchParam = searchParam;
+    return this;
+  }
+
+  /**
+   * additional parameters of the search query
+* optional field
+* Get the list of available parameters and additional details here.
+   * @return searchParam
+   */
+  @javax.annotation.Nullable
+  public String getSearchParam() {
+    return searchParam;
+  }
+
+  public void setSearchParam(String searchParam) {
+    this.searchParam = searchParam;
   }
 
 
@@ -375,6 +401,64 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
+
+  public SerpGoogleNewsLiveAdvancedRequestInfo url(String url) {
+    this.url = url;
+    return this;
+  }
+
+  /**
+   * direct URL of the search query
+* optional field
+* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
+* example:
+* https://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
+   * @return url
+   */
+  @javax.annotation.Nullable
+  public String getUrl() {
+    return url;
+  }
+
+  public void setUrl(String url) {
+    this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public SerpGoogleNewsLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
+* the minimum value for 'radius': 199.9 (mm)
+* the maximum value for 'radius': 199999 (mm)
+* example:
+* 53.476225,-2.243572,200
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+  }
+
+
   public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
   @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
   private String seDomain;
@@ -400,90 +484,6 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   public void setSeDomain(String seDomain) {
     this.seDomain = seDomain;
-  }
-
-
-  public static final String SERIALIZED_NAME_DEPTH = "depth";
-  @SerializedName(SERIALIZED_NAME_DEPTH)
-  private Integer depth;
-
-  public SerpGoogleNewsLiveAdvancedRequestInfo depth(Integer depth) {
-    this.depth = depth;
-    return this;
-  }
-
-  /**
-   * parsing depth
-* optional field
-* number of results in SERP
-* default value: 10
-* max value: 200
-* Your account will be billed per each SERP containing up to 10 results;
-* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
-* If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically
-* The cost can be calculated on the Pricing page.
-   * @return depth
-   */
-  @javax.annotation.Nullable
-  public Integer getDepth() {
-    return depth;
-  }
-
-  public void setDepth(Integer depth) {
-    this.depth = depth;
-  }
-
-
-  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
-  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
-  private Integer maxCrawlPages;
-
-  public SerpGoogleNewsLiveAdvancedRequestInfo maxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-    return this;
-  }
-
-  /**
-   * page crawl limit
-* optional field
-* number of search results pages to crawl
-* max value: 100
-* Note: the max_crawl_pages and depth parameters complement each other;
-* learn more at our help center
-   * @return maxCrawlPages
-   */
-  @javax.annotation.Nullable
-  public Integer getMaxCrawlPages() {
-    return maxCrawlPages;
-  }
-
-  public void setMaxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
-  private String searchParam;
-
-  public SerpGoogleNewsLiveAdvancedRequestInfo searchParam(String searchParam) {
-    this.searchParam = searchParam;
-    return this;
-  }
-
-  /**
-   * additional parameters of the search query
-* optional field
-* Get the list of available parameters and additional details here.
-   * @return searchParam
-   */
-  @javax.annotation.Nullable
-  public String getSearchParam() {
-    return searchParam;
-  }
-
-  public void setSearchParam(String searchParam) {
-    this.searchParam = searchParam;
   }
 
 
@@ -531,21 +531,21 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleNewsLiveAdvancedRequestInfo.keyword) &&
-        Objects.equals(this.url, serpGoogleNewsLiveAdvancedRequestInfo.url) &&
-        Objects.equals(this.locationName, serpGoogleNewsLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleNewsLiveAdvancedRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, serpGoogleNewsLiveAdvancedRequestInfo.locationCoordinate) &&
-        Objects.equals(this.languageName, serpGoogleNewsLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleNewsLiveAdvancedRequestInfo.languageCode) &&
+        Objects.equals(this.depth, serpGoogleNewsLiveAdvancedRequestInfo.depth) &&
+        Objects.equals(this.locationName, serpGoogleNewsLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleNewsLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleNewsLiveAdvancedRequestInfo.os) &&
+        Objects.equals(this.maxCrawlPages, serpGoogleNewsLiveAdvancedRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.searchParam, serpGoogleNewsLiveAdvancedRequestInfo.searchParam) &&
         Objects.equals(this.calculateRectangles, serpGoogleNewsLiveAdvancedRequestInfo.calculateRectangles) &&
         Objects.equals(this.browserScreenWidth, serpGoogleNewsLiveAdvancedRequestInfo.browserScreenWidth) &&
         Objects.equals(this.browserScreenHeight, serpGoogleNewsLiveAdvancedRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpGoogleNewsLiveAdvancedRequestInfo.browserScreenResolutionRatio) &&
-        Objects.equals(this.seDomain, serpGoogleNewsLiveAdvancedRequestInfo.seDomain) &&
-        Objects.equals(this.depth, serpGoogleNewsLiveAdvancedRequestInfo.depth) &&
-        Objects.equals(this.maxCrawlPages, serpGoogleNewsLiveAdvancedRequestInfo.maxCrawlPages) &&
-        Objects.equals(this.searchParam, serpGoogleNewsLiveAdvancedRequestInfo.searchParam);  
+        Objects.equals(this.url, serpGoogleNewsLiveAdvancedRequestInfo.url) &&
+        Objects.equals(this.locationCoordinate, serpGoogleNewsLiveAdvancedRequestInfo.locationCoordinate) &&
+        Objects.equals(this.seDomain, serpGoogleNewsLiveAdvancedRequestInfo.seDomain);  
     
   }
 
@@ -555,7 +555,7 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, url, locationName, locationCode, locationCoordinate, languageName, languageCode, os, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, seDomain, depth, maxCrawlPages, searchParam);
+  return Objects.hash(keyword, locationCode, languageCode, depth, locationName, languageName, os, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -571,21 +571,21 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
     sb.append("class SerpGoogleNewsLiveAdvancedRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
-    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
-    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
-    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -611,19 +611,21 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("url");
-    
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
+    openapiFields.add("depth");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
     openapiFields.add("os");
+    
+    openapiFields.add("max_crawl_pages");
+    
+    openapiFields.add("search_param");
     
     openapiFields.add("calculate_rectangles");
     
@@ -633,13 +635,11 @@ public class SerpGoogleNewsLiveAdvancedRequestInfo  {
     
     openapiFields.add("browser_screen_resolution_ratio");
     
+    openapiFields.add("url");
+    
+    openapiFields.add("location_coordinate");
+    
     openapiFields.add("se_domain");
-    
-    openapiFields.add("depth");
-    
-    openapiFields.add("max_crawl_pages");
-    
-    openapiFields.add("search_param");
     
 
     // a set of required properties/fields (JSON key names)

@@ -306,7 +306,7 @@ public class SerpApi {
     }
 
 
-    public okhttp3.Call serpIdListCall(List<SerpIdListRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call idListCall(List<SerpIdListRequestInfo> payload, final ApiCallback _callback) throws ApiException {
            String basePath = null;
            // Operation Servers
            String[] localBasePaths = new String[] {  };
@@ -352,31 +352,31 @@ public class SerpApi {
        }
 
         @SuppressWarnings("rawtypes")
-        private okhttp3.Call serpIdListValidateBeforeCall(List<SerpIdListRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return serpIdListCall(payload, _callback);
+        private okhttp3.Call idListValidateBeforeCall(List<SerpIdListRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return idListCall(payload, _callback);
  
         }
  
-        public SerpIdListResponseInfo serpIdList(List<SerpIdListRequestInfo> payload) throws ApiException {
-            ApiResponse<SerpIdListResponseInfo> localVarResp = serpIdListWithHttpInfo(payload);
+        public SerpIdListResponseInfo idList(List<SerpIdListRequestInfo> payload) throws ApiException {
+            ApiResponse<SerpIdListResponseInfo> localVarResp = idListWithHttpInfo(payload);
             return localVarResp.getData();
         }
  
-        public ApiResponse<SerpIdListResponseInfo> serpIdListWithHttpInfo(List<SerpIdListRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = serpIdListValidateBeforeCall(payload, null);
+        public ApiResponse<SerpIdListResponseInfo> idListWithHttpInfo(List<SerpIdListRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = idListValidateBeforeCall(payload, null);
             Type localVarReturnType = new TypeToken<SerpIdListResponseInfo>(){}.getType();
             return localVarApiClient.execute(localVarCall, localVarReturnType);
         }
  
-        public okhttp3.Call serpIdListAsync(List<SerpIdListRequestInfo> payload, final ApiCallback<SerpIdListResponseInfo> _callback) throws ApiException {
+        public okhttp3.Call idListAsync(List<SerpIdListRequestInfo> payload, final ApiCallback<SerpIdListResponseInfo> _callback) throws ApiException {
  
-            okhttp3.Call localVarCall = serpIdListValidateBeforeCall(payload, _callback);
+            okhttp3.Call localVarCall = idListValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<SerpIdListResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }
 
-    public okhttp3.Call serpErrorsCall(List<SerpErrorsRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call errorsCall(List<SerpErrorsRequestInfo> payload, final ApiCallback _callback) throws ApiException {
            String basePath = null;
            // Operation Servers
            String[] localBasePaths = new String[] {  };
@@ -422,25 +422,25 @@ public class SerpApi {
        }
 
         @SuppressWarnings("rawtypes")
-        private okhttp3.Call serpErrorsValidateBeforeCall(List<SerpErrorsRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return serpErrorsCall(payload, _callback);
+        private okhttp3.Call errorsValidateBeforeCall(List<SerpErrorsRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return errorsCall(payload, _callback);
  
         }
  
-        public SerpErrorsResponseInfo serpErrors(List<SerpErrorsRequestInfo> payload) throws ApiException {
-            ApiResponse<SerpErrorsResponseInfo> localVarResp = serpErrorsWithHttpInfo(payload);
+        public SerpErrorsResponseInfo errors(List<SerpErrorsRequestInfo> payload) throws ApiException {
+            ApiResponse<SerpErrorsResponseInfo> localVarResp = errorsWithHttpInfo(payload);
             return localVarResp.getData();
         }
  
-        public ApiResponse<SerpErrorsResponseInfo> serpErrorsWithHttpInfo(List<SerpErrorsRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = serpErrorsValidateBeforeCall(payload, null);
+        public ApiResponse<SerpErrorsResponseInfo> errorsWithHttpInfo(List<SerpErrorsRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = errorsValidateBeforeCall(payload, null);
             Type localVarReturnType = new TypeToken<SerpErrorsResponseInfo>(){}.getType();
             return localVarApiClient.execute(localVarCall, localVarReturnType);
         }
  
-        public okhttp3.Call serpErrorsAsync(List<SerpErrorsRequestInfo> payload, final ApiCallback<SerpErrorsResponseInfo> _callback) throws ApiException {
+        public okhttp3.Call errorsAsync(List<SerpErrorsRequestInfo> payload, final ApiCallback<SerpErrorsResponseInfo> _callback) throws ApiException {
  
-            okhttp3.Call localVarCall = serpErrorsValidateBeforeCall(payload, _callback);
+            okhttp3.Call localVarCall = errorsValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<SerpErrorsResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
@@ -586,7 +586,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call serpGoogleLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -633,32 +633,32 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpGoogleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpGoogleLocationsCall(_callback);
+       return googleLocationsCall(_callback);
 
     }
 
-    public SerpGoogleLocationsResponseInfo serpGoogleLocations() throws ApiException {
-       ApiResponse<SerpGoogleLocationsResponseInfo> localVarResp = serpGoogleLocationsWithHttpInfo();
+    public SerpGoogleLocationsResponseInfo googleLocations() throws ApiException {
+       ApiResponse<SerpGoogleLocationsResponseInfo> localVarResp = googleLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleLocationsResponseInfo> serpGoogleLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpGoogleLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpGoogleLocationsResponseInfo> googleLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpGoogleLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpGoogleLocationsAsync(final ApiCallback<SerpGoogleLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleLocationsAsync(final ApiCallback<SerpGoogleLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpGoogleLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpGoogleLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpGoogleLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -706,36 +706,36 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpGoogleLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling serpGoogleLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling googleLocationsCountry(Async)");
        }
 
-       return serpGoogleLocationsCountryCall(country, _callback);
+       return googleLocationsCountryCall(country, _callback);
 
     }
 
-    public SerpGoogleLocationsCountryResponseInfo serpGoogleLocationsCountry(String country) throws ApiException {
-       ApiResponse<SerpGoogleLocationsCountryResponseInfo> localVarResp = serpGoogleLocationsCountryWithHttpInfo(country);
+    public SerpGoogleLocationsCountryResponseInfo googleLocationsCountry(String country) throws ApiException {
+       ApiResponse<SerpGoogleLocationsCountryResponseInfo> localVarResp = googleLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleLocationsCountryResponseInfo> serpGoogleLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = serpGoogleLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<SerpGoogleLocationsCountryResponseInfo> googleLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = googleLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<SerpGoogleLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpGoogleLocationsCountryAsync(String country, final ApiCallback<SerpGoogleLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleLocationsCountryAsync(String country, final ApiCallback<SerpGoogleLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpGoogleLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = googleLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<SerpGoogleLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpGoogleLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -782,26 +782,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpGoogleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpGoogleLanguagesCall(_callback);
+       return googleLanguagesCall(_callback);
 
     }
 
-    public SerpGoogleLanguagesResponseInfo serpGoogleLanguages() throws ApiException {
-       ApiResponse<SerpGoogleLanguagesResponseInfo> localVarResp = serpGoogleLanguagesWithHttpInfo();
+    public SerpGoogleLanguagesResponseInfo googleLanguages() throws ApiException {
+       ApiResponse<SerpGoogleLanguagesResponseInfo> localVarResp = googleLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleLanguagesResponseInfo> serpGoogleLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpGoogleLanguagesValidateBeforeCall(null);
+    public ApiResponse<SerpGoogleLanguagesResponseInfo> googleLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpGoogleLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpGoogleLanguagesAsync(final ApiCallback<SerpGoogleLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleLanguagesAsync(final ApiCallback<SerpGoogleLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpGoogleLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpGoogleLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -1534,7 +1534,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call serpGoogleAiModeLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAiModeLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1581,26 +1581,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpGoogleAiModeLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleAiModeLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpGoogleAiModeLanguagesCall(_callback);
+       return googleAiModeLanguagesCall(_callback);
 
     }
 
-    public SerpGoogleAiModeLanguagesResponseInfo serpGoogleAiModeLanguages() throws ApiException {
-       ApiResponse<SerpGoogleAiModeLanguagesResponseInfo> localVarResp = serpGoogleAiModeLanguagesWithHttpInfo();
+    public SerpGoogleAiModeLanguagesResponseInfo googleAiModeLanguages() throws ApiException {
+       ApiResponse<SerpGoogleAiModeLanguagesResponseInfo> localVarResp = googleAiModeLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleAiModeLanguagesResponseInfo> serpGoogleAiModeLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpGoogleAiModeLanguagesValidateBeforeCall(null);
+    public ApiResponse<SerpGoogleAiModeLanguagesResponseInfo> googleAiModeLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleAiModeLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpGoogleAiModeLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpGoogleAiModeLanguagesAsync(final ApiCallback<SerpGoogleAiModeLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAiModeLanguagesAsync(final ApiCallback<SerpGoogleAiModeLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpGoogleAiModeLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleAiModeLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpGoogleAiModeLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -6102,7 +6102,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call serpGoogleAdsAdvertisersLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsAdvertisersLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6149,26 +6149,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpGoogleAdsAdvertisersLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleAdsAdvertisersLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpGoogleAdsAdvertisersLocationsCall(_callback);
+       return googleAdsAdvertisersLocationsCall(_callback);
 
     }
 
-    public SerpGoogleAdsAdvertisersLocationsResponseInfo serpGoogleAdsAdvertisersLocations() throws ApiException {
-       ApiResponse<SerpGoogleAdsAdvertisersLocationsResponseInfo> localVarResp = serpGoogleAdsAdvertisersLocationsWithHttpInfo();
+    public SerpGoogleAdsAdvertisersLocationsResponseInfo googleAdsAdvertisersLocations() throws ApiException {
+       ApiResponse<SerpGoogleAdsAdvertisersLocationsResponseInfo> localVarResp = googleAdsAdvertisersLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleAdsAdvertisersLocationsResponseInfo> serpGoogleAdsAdvertisersLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpGoogleAdsAdvertisersLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpGoogleAdsAdvertisersLocationsResponseInfo> googleAdsAdvertisersLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleAdsAdvertisersLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpGoogleAdsAdvertisersLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpGoogleAdsAdvertisersLocationsAsync(final ApiCallback<SerpGoogleAdsAdvertisersLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsAdvertisersLocationsAsync(final ApiCallback<SerpGoogleAdsAdvertisersLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpGoogleAdsAdvertisersLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleAdsAdvertisersLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpGoogleAdsAdvertisersLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -6393,7 +6393,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call serpGoogleAdsSearchLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6440,26 +6440,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpGoogleAdsSearchLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleAdsSearchLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpGoogleAdsSearchLocationsCall(_callback);
+       return googleAdsSearchLocationsCall(_callback);
 
     }
 
-    public SerpGoogleAdsSearchLocationsResponseInfo serpGoogleAdsSearchLocations() throws ApiException {
-       ApiResponse<SerpGoogleAdsSearchLocationsResponseInfo> localVarResp = serpGoogleAdsSearchLocationsWithHttpInfo();
+    public SerpGoogleAdsSearchLocationsResponseInfo googleAdsSearchLocations() throws ApiException {
+       ApiResponse<SerpGoogleAdsSearchLocationsResponseInfo> localVarResp = googleAdsSearchLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpGoogleAdsSearchLocationsResponseInfo> serpGoogleAdsSearchLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpGoogleAdsSearchLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpGoogleAdsSearchLocationsResponseInfo> googleAdsSearchLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleAdsSearchLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpGoogleAdsSearchLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpGoogleAdsSearchLocationsAsync(final ApiCallback<SerpGoogleAdsSearchLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsSearchLocationsAsync(final ApiCallback<SerpGoogleAdsSearchLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpGoogleAdsSearchLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleAdsSearchLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpGoogleAdsSearchLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -6684,7 +6684,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call serpBingLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6731,32 +6731,32 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpBingLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call bingLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpBingLocationsCall(_callback);
+       return bingLocationsCall(_callback);
 
     }
 
-    public SerpBingLocationsResponseInfo serpBingLocations() throws ApiException {
-       ApiResponse<SerpBingLocationsResponseInfo> localVarResp = serpBingLocationsWithHttpInfo();
+    public SerpBingLocationsResponseInfo bingLocations() throws ApiException {
+       ApiResponse<SerpBingLocationsResponseInfo> localVarResp = bingLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpBingLocationsResponseInfo> serpBingLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpBingLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpBingLocationsResponseInfo> bingLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = bingLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpBingLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpBingLocationsAsync(final ApiCallback<SerpBingLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call bingLocationsAsync(final ApiCallback<SerpBingLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpBingLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = bingLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpBingLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpBingLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6804,36 +6804,36 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpBingLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call bingLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling serpBingLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling bingLocationsCountry(Async)");
        }
 
-       return serpBingLocationsCountryCall(country, _callback);
+       return bingLocationsCountryCall(country, _callback);
 
     }
 
-    public SerpBingLocationsCountryResponseInfo serpBingLocationsCountry(String country) throws ApiException {
-       ApiResponse<SerpBingLocationsCountryResponseInfo> localVarResp = serpBingLocationsCountryWithHttpInfo(country);
+    public SerpBingLocationsCountryResponseInfo bingLocationsCountry(String country) throws ApiException {
+       ApiResponse<SerpBingLocationsCountryResponseInfo> localVarResp = bingLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpBingLocationsCountryResponseInfo> serpBingLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = serpBingLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<SerpBingLocationsCountryResponseInfo> bingLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = bingLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<SerpBingLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpBingLocationsCountryAsync(String country, final ApiCallback<SerpBingLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call bingLocationsCountryAsync(String country, final ApiCallback<SerpBingLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpBingLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = bingLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<SerpBingLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpBingLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -6880,26 +6880,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpBingLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call bingLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpBingLanguagesCall(_callback);
+       return bingLanguagesCall(_callback);
 
     }
 
-    public SerpBingLanguagesResponseInfo serpBingLanguages() throws ApiException {
-       ApiResponse<SerpBingLanguagesResponseInfo> localVarResp = serpBingLanguagesWithHttpInfo();
+    public SerpBingLanguagesResponseInfo bingLanguages() throws ApiException {
+       ApiResponse<SerpBingLanguagesResponseInfo> localVarResp = bingLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpBingLanguagesResponseInfo> serpBingLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpBingLanguagesValidateBeforeCall(null);
+    public ApiResponse<SerpBingLanguagesResponseInfo> bingLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = bingLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpBingLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpBingLanguagesAsync(final ApiCallback<SerpBingLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call bingLanguagesAsync(final ApiCallback<SerpBingLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpBingLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = bingLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpBingLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -8068,7 +8068,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call serpYoutubeLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8115,32 +8115,32 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpYoutubeLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call youtubeLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpYoutubeLocationsCall(_callback);
+       return youtubeLocationsCall(_callback);
 
     }
 
-    public SerpYoutubeLocationsResponseInfo serpYoutubeLocations() throws ApiException {
-       ApiResponse<SerpYoutubeLocationsResponseInfo> localVarResp = serpYoutubeLocationsWithHttpInfo();
+    public SerpYoutubeLocationsResponseInfo youtubeLocations() throws ApiException {
+       ApiResponse<SerpYoutubeLocationsResponseInfo> localVarResp = youtubeLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpYoutubeLocationsResponseInfo> serpYoutubeLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpYoutubeLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpYoutubeLocationsResponseInfo> youtubeLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = youtubeLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpYoutubeLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpYoutubeLocationsAsync(final ApiCallback<SerpYoutubeLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call youtubeLocationsAsync(final ApiCallback<SerpYoutubeLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpYoutubeLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = youtubeLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpYoutubeLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpYoutubeLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8188,36 +8188,36 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpYoutubeLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call youtubeLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling serpYoutubeLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling youtubeLocationsCountry(Async)");
        }
 
-       return serpYoutubeLocationsCountryCall(country, _callback);
+       return youtubeLocationsCountryCall(country, _callback);
 
     }
 
-    public SerpYoutubeLocationsCountryResponseInfo serpYoutubeLocationsCountry(String country) throws ApiException {
-       ApiResponse<SerpYoutubeLocationsCountryResponseInfo> localVarResp = serpYoutubeLocationsCountryWithHttpInfo(country);
+    public SerpYoutubeLocationsCountryResponseInfo youtubeLocationsCountry(String country) throws ApiException {
+       ApiResponse<SerpYoutubeLocationsCountryResponseInfo> localVarResp = youtubeLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpYoutubeLocationsCountryResponseInfo> serpYoutubeLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = serpYoutubeLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<SerpYoutubeLocationsCountryResponseInfo> youtubeLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = youtubeLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<SerpYoutubeLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpYoutubeLocationsCountryAsync(String country, final ApiCallback<SerpYoutubeLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call youtubeLocationsCountryAsync(String country, final ApiCallback<SerpYoutubeLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpYoutubeLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = youtubeLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<SerpYoutubeLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpYoutubeLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call youtubeLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -8264,26 +8264,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpYoutubeLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call youtubeLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpYoutubeLanguagesCall(_callback);
+       return youtubeLanguagesCall(_callback);
 
     }
 
-    public SerpYoutubeLanguagesResponseInfo serpYoutubeLanguages() throws ApiException {
-       ApiResponse<SerpYoutubeLanguagesResponseInfo> localVarResp = serpYoutubeLanguagesWithHttpInfo();
+    public SerpYoutubeLanguagesResponseInfo youtubeLanguages() throws ApiException {
+       ApiResponse<SerpYoutubeLanguagesResponseInfo> localVarResp = youtubeLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpYoutubeLanguagesResponseInfo> serpYoutubeLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpYoutubeLanguagesValidateBeforeCall(null);
+    public ApiResponse<SerpYoutubeLanguagesResponseInfo> youtubeLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = youtubeLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpYoutubeLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpYoutubeLanguagesAsync(final ApiCallback<SerpYoutubeLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call youtubeLanguagesAsync(final ApiCallback<SerpYoutubeLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpYoutubeLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = youtubeLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpYoutubeLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -9372,7 +9372,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call serpYahooLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9419,32 +9419,32 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpYahooLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call yahooLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpYahooLocationsCall(_callback);
+       return yahooLocationsCall(_callback);
 
     }
 
-    public SerpYahooLocationsResponseInfo serpYahooLocations() throws ApiException {
-       ApiResponse<SerpYahooLocationsResponseInfo> localVarResp = serpYahooLocationsWithHttpInfo();
+    public SerpYahooLocationsResponseInfo yahooLocations() throws ApiException {
+       ApiResponse<SerpYahooLocationsResponseInfo> localVarResp = yahooLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpYahooLocationsResponseInfo> serpYahooLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpYahooLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpYahooLocationsResponseInfo> yahooLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = yahooLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpYahooLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpYahooLocationsAsync(final ApiCallback<SerpYahooLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call yahooLocationsAsync(final ApiCallback<SerpYahooLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpYahooLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = yahooLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpYahooLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpYahooLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9492,36 +9492,36 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpYahooLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call yahooLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling serpYahooLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling yahooLocationsCountry(Async)");
        }
 
-       return serpYahooLocationsCountryCall(country, _callback);
+       return yahooLocationsCountryCall(country, _callback);
 
     }
 
-    public SerpYahooLocationsCountryResponseInfo serpYahooLocationsCountry(String country) throws ApiException {
-       ApiResponse<SerpYahooLocationsCountryResponseInfo> localVarResp = serpYahooLocationsCountryWithHttpInfo(country);
+    public SerpYahooLocationsCountryResponseInfo yahooLocationsCountry(String country) throws ApiException {
+       ApiResponse<SerpYahooLocationsCountryResponseInfo> localVarResp = yahooLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpYahooLocationsCountryResponseInfo> serpYahooLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = serpYahooLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<SerpYahooLocationsCountryResponseInfo> yahooLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = yahooLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<SerpYahooLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpYahooLocationsCountryAsync(String country, final ApiCallback<SerpYahooLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call yahooLocationsCountryAsync(String country, final ApiCallback<SerpYahooLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpYahooLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = yahooLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<SerpYahooLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpYahooLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call yahooLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -9568,26 +9568,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpYahooLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call yahooLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpYahooLanguagesCall(_callback);
+       return yahooLanguagesCall(_callback);
 
     }
 
-    public SerpYahooLanguagesResponseInfo serpYahooLanguages() throws ApiException {
-       ApiResponse<SerpYahooLanguagesResponseInfo> localVarResp = serpYahooLanguagesWithHttpInfo();
+    public SerpYahooLanguagesResponseInfo yahooLanguages() throws ApiException {
+       ApiResponse<SerpYahooLanguagesResponseInfo> localVarResp = yahooLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpYahooLanguagesResponseInfo> serpYahooLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpYahooLanguagesValidateBeforeCall(null);
+    public ApiResponse<SerpYahooLanguagesResponseInfo> yahooLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = yahooLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpYahooLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpYahooLanguagesAsync(final ApiCallback<SerpYahooLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call yahooLanguagesAsync(final ApiCallback<SerpYahooLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpYahooLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = yahooLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpYahooLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -10248,7 +10248,7 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call serpBaiduLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10295,32 +10295,32 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpBaiduLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call baiduLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpBaiduLocationsCall(_callback);
+       return baiduLocationsCall(_callback);
 
     }
 
-    public SerpBaiduLocationsResponseInfo serpBaiduLocations() throws ApiException {
-       ApiResponse<SerpBaiduLocationsResponseInfo> localVarResp = serpBaiduLocationsWithHttpInfo();
+    public SerpBaiduLocationsResponseInfo baiduLocations() throws ApiException {
+       ApiResponse<SerpBaiduLocationsResponseInfo> localVarResp = baiduLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpBaiduLocationsResponseInfo> serpBaiduLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpBaiduLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpBaiduLocationsResponseInfo> baiduLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = baiduLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpBaiduLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpBaiduLocationsAsync(final ApiCallback<SerpBaiduLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call baiduLocationsAsync(final ApiCallback<SerpBaiduLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpBaiduLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = baiduLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpBaiduLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpBaiduLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10368,36 +10368,36 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpBaiduLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call baiduLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling serpBaiduLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling baiduLocationsCountry(Async)");
        }
 
-       return serpBaiduLocationsCountryCall(country, _callback);
+       return baiduLocationsCountryCall(country, _callback);
 
     }
 
-    public SerpBaiduLocationsCountryResponseInfo serpBaiduLocationsCountry(String country) throws ApiException {
-       ApiResponse<SerpBaiduLocationsCountryResponseInfo> localVarResp = serpBaiduLocationsCountryWithHttpInfo(country);
+    public SerpBaiduLocationsCountryResponseInfo baiduLocationsCountry(String country) throws ApiException {
+       ApiResponse<SerpBaiduLocationsCountryResponseInfo> localVarResp = baiduLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpBaiduLocationsCountryResponseInfo> serpBaiduLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = serpBaiduLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<SerpBaiduLocationsCountryResponseInfo> baiduLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = baiduLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<SerpBaiduLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpBaiduLocationsCountryAsync(String country, final ApiCallback<SerpBaiduLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call baiduLocationsCountryAsync(String country, final ApiCallback<SerpBaiduLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpBaiduLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = baiduLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<SerpBaiduLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpBaiduLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call baiduLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -10444,26 +10444,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpBaiduLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call baiduLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpBaiduLanguagesCall(_callback);
+       return baiduLanguagesCall(_callback);
 
     }
 
-    public SerpBaiduLanguagesResponseInfo serpBaiduLanguages() throws ApiException {
-       ApiResponse<SerpBaiduLanguagesResponseInfo> localVarResp = serpBaiduLanguagesWithHttpInfo();
+    public SerpBaiduLanguagesResponseInfo baiduLanguages() throws ApiException {
+       ApiResponse<SerpBaiduLanguagesResponseInfo> localVarResp = baiduLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpBaiduLanguagesResponseInfo> serpBaiduLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpBaiduLanguagesValidateBeforeCall(null);
+    public ApiResponse<SerpBaiduLanguagesResponseInfo> baiduLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = baiduLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpBaiduLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpBaiduLanguagesAsync(final ApiCallback<SerpBaiduLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call baiduLanguagesAsync(final ApiCallback<SerpBaiduLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpBaiduLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = baiduLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpBaiduLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -11359,7 +11359,7 @@ public class SerpApi {
        return localVarCall;
     }
 
-    public okhttp3.Call serpSeznamLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11406,32 +11406,32 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpSeznamLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call seznamLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpSeznamLocationsCall(_callback);
+       return seznamLocationsCall(_callback);
 
     }
 
-    public SerpSeznamLocationsResponseInfo serpSeznamLocations() throws ApiException {
-       ApiResponse<SerpSeznamLocationsResponseInfo> localVarResp = serpSeznamLocationsWithHttpInfo();
+    public SerpSeznamLocationsResponseInfo seznamLocations() throws ApiException {
+       ApiResponse<SerpSeznamLocationsResponseInfo> localVarResp = seznamLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpSeznamLocationsResponseInfo> serpSeznamLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpSeznamLocationsValidateBeforeCall(null);
+    public ApiResponse<SerpSeznamLocationsResponseInfo> seznamLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = seznamLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpSeznamLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpSeznamLocationsAsync(final ApiCallback<SerpSeznamLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call seznamLocationsAsync(final ApiCallback<SerpSeznamLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpSeznamLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = seznamLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpSeznamLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpSeznamLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11479,36 +11479,36 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpSeznamLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call seznamLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling serpSeznamLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling seznamLocationsCountry(Async)");
        }
 
-       return serpSeznamLocationsCountryCall(country, _callback);
+       return seznamLocationsCountryCall(country, _callback);
 
     }
 
-    public SerpSeznamLocationsCountryResponseInfo serpSeznamLocationsCountry(String country) throws ApiException {
-       ApiResponse<SerpSeznamLocationsCountryResponseInfo> localVarResp = serpSeznamLocationsCountryWithHttpInfo(country);
+    public SerpSeznamLocationsCountryResponseInfo seznamLocationsCountry(String country) throws ApiException {
+       ApiResponse<SerpSeznamLocationsCountryResponseInfo> localVarResp = seznamLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpSeznamLocationsCountryResponseInfo> serpSeznamLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = serpSeznamLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<SerpSeznamLocationsCountryResponseInfo> seznamLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = seznamLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<SerpSeznamLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpSeznamLocationsCountryAsync(String country, final ApiCallback<SerpSeznamLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call seznamLocationsCountryAsync(String country, final ApiCallback<SerpSeznamLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpSeznamLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = seznamLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<SerpSeznamLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call serpSeznamLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call seznamLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -11555,26 +11555,26 @@ public class SerpApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call serpSeznamLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call seznamLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return serpSeznamLanguagesCall(_callback);
+       return seznamLanguagesCall(_callback);
 
     }
 
-    public SerpSeznamLanguagesResponseInfo serpSeznamLanguages() throws ApiException {
-       ApiResponse<SerpSeznamLanguagesResponseInfo> localVarResp = serpSeznamLanguagesWithHttpInfo();
+    public SerpSeznamLanguagesResponseInfo seznamLanguages() throws ApiException {
+       ApiResponse<SerpSeznamLanguagesResponseInfo> localVarResp = seznamLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<SerpSeznamLanguagesResponseInfo> serpSeznamLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = serpSeznamLanguagesValidateBeforeCall(null);
+    public ApiResponse<SerpSeznamLanguagesResponseInfo> seznamLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = seznamLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<SerpSeznamLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call serpSeznamLanguagesAsync(final ApiCallback<SerpSeznamLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call seznamLanguagesAsync(final ApiCallback<SerpSeznamLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = serpSeznamLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = seznamLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<SerpSeznamLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

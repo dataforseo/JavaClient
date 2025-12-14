@@ -96,6 +96,60 @@ public class AiOptimizationLLmMentionsKeywordElement  extends BaseAiOptimization
   }
 
 
+  public static final String SERIALIZED_NAME_SEARCH_SCOPE = "search_scope";
+  @SerializedName(SERIALIZED_NAME_SEARCH_SCOPE)
+  private List<String> searchScope;
+
+  public AiOptimizationLLmMentionsKeywordElement searchScope(List<String> searchScope) {
+    this.searchScope = searchScope;
+    return this;
+  }
+
+  /**
+   * target domain search scope
+* optional field
+* possible values:
+* any, sources, search_results
+* default value: any
+   * @return searchScope
+   */
+  @javax.annotation.Nullable
+  public List<String> getSearchScope() {
+    return searchScope;
+  }
+
+  public void setSearchScope(List<String> searchScope) {
+    this.searchScope = searchScope;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_FILTER = "search_filter";
+  @SerializedName(SERIALIZED_NAME_SEARCH_FILTER)
+  private String searchFilter;
+
+  public AiOptimizationLLmMentionsKeywordElement searchFilter(String searchFilter) {
+    this.searchFilter = searchFilter;
+    return this;
+  }
+
+  /**
+   * target domain search filter
+* optional field
+* possible values:
+* include, exclude
+* default value: include
+   * @return searchFilter
+   */
+  @javax.annotation.Nullable
+  public String getSearchFilter() {
+    return searchFilter;
+  }
+
+  public void setSearchFilter(String searchFilter) {
+    this.searchFilter = searchFilter;
+  }
+
+
 
   public AiOptimizationLLmMentionsKeywordElement() {
   }
@@ -140,7 +194,9 @@ public class AiOptimizationLLmMentionsKeywordElement  extends BaseAiOptimization
     return
 
         Objects.equals(this.keyword, aiOptimizationLLmMentionsKeywordElement.keyword) &&
-        Objects.equals(this.matchType, aiOptimizationLLmMentionsKeywordElement.matchType) && 
+        Objects.equals(this.matchType, aiOptimizationLLmMentionsKeywordElement.matchType) &&
+        Objects.equals(this.searchScope, aiOptimizationLLmMentionsKeywordElement.searchScope) &&
+        Objects.equals(this.searchFilter, aiOptimizationLLmMentionsKeywordElement.searchFilter) && 
         super.equals(o);
     
   }
@@ -151,7 +207,7 @@ public class AiOptimizationLLmMentionsKeywordElement  extends BaseAiOptimization
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, matchType);
+  return Objects.hash(keyword, matchType, searchScope, searchFilter);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -168,6 +224,8 @@ public class AiOptimizationLLmMentionsKeywordElement  extends BaseAiOptimization
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
     sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
+    sb.append("    searchScope: ").append(toIndentedString(searchScope)).append("\n");
+    sb.append("    searchFilter: ").append(toIndentedString(searchFilter)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -196,6 +254,10 @@ public class AiOptimizationLLmMentionsKeywordElement  extends BaseAiOptimization
     openapiFields.add("keyword");
     
     openapiFields.add("match_type");
+    
+    openapiFields.add("search_scope");
+    
+    openapiFields.add("search_filter");
     
 
     // a set of required properties/fields (JSON key names)

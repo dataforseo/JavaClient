@@ -370,7 +370,7 @@ public class KeywordsDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call keywordsDataGoogleAdsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -417,32 +417,32 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataGoogleAdsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleAdsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataGoogleAdsLocationsCall(_callback);
+       return googleAdsLocationsCall(_callback);
 
     }
 
-    public KeywordsDataGoogleAdsLocationsResponseInfo keywordsDataGoogleAdsLocations() throws ApiException {
-       ApiResponse<KeywordsDataGoogleAdsLocationsResponseInfo> localVarResp = keywordsDataGoogleAdsLocationsWithHttpInfo();
+    public KeywordsDataGoogleAdsLocationsResponseInfo googleAdsLocations() throws ApiException {
+       ApiResponse<KeywordsDataGoogleAdsLocationsResponseInfo> localVarResp = googleAdsLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataGoogleAdsLocationsResponseInfo> keywordsDataGoogleAdsLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataGoogleAdsLocationsValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataGoogleAdsLocationsResponseInfo> googleAdsLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleAdsLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataGoogleAdsLocationsAsync(final ApiCallback<KeywordsDataGoogleAdsLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsLocationsAsync(final ApiCallback<KeywordsDataGoogleAdsLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataGoogleAdsLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleAdsLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call keywordsDataGoogleAdsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -490,36 +490,36 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataGoogleAdsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleAdsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling keywordsDataGoogleAdsLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling googleAdsLocationsCountry(Async)");
        }
 
-       return keywordsDataGoogleAdsLocationsCountryCall(country, _callback);
+       return googleAdsLocationsCountryCall(country, _callback);
 
     }
 
-    public KeywordsDataGoogleAdsLocationsCountryResponseInfo keywordsDataGoogleAdsLocationsCountry(String country) throws ApiException {
-       ApiResponse<KeywordsDataGoogleAdsLocationsCountryResponseInfo> localVarResp = keywordsDataGoogleAdsLocationsCountryWithHttpInfo(country);
+    public KeywordsDataGoogleAdsLocationsCountryResponseInfo googleAdsLocationsCountry(String country) throws ApiException {
+       ApiResponse<KeywordsDataGoogleAdsLocationsCountryResponseInfo> localVarResp = googleAdsLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataGoogleAdsLocationsCountryResponseInfo> keywordsDataGoogleAdsLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataGoogleAdsLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<KeywordsDataGoogleAdsLocationsCountryResponseInfo> googleAdsLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = googleAdsLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataGoogleAdsLocationsCountryAsync(String country, final ApiCallback<KeywordsDataGoogleAdsLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsLocationsCountryAsync(String country, final ApiCallback<KeywordsDataGoogleAdsLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataGoogleAdsLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = googleAdsLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call keywordsDataGoogleAdsLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleAdsLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -566,26 +566,26 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataGoogleAdsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleAdsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataGoogleAdsLanguagesCall(_callback);
+       return googleAdsLanguagesCall(_callback);
 
     }
 
-    public KeywordsDataGoogleAdsLanguagesResponseInfo keywordsDataGoogleAdsLanguages() throws ApiException {
-       ApiResponse<KeywordsDataGoogleAdsLanguagesResponseInfo> localVarResp = keywordsDataGoogleAdsLanguagesWithHttpInfo();
+    public KeywordsDataGoogleAdsLanguagesResponseInfo googleAdsLanguages() throws ApiException {
+       ApiResponse<KeywordsDataGoogleAdsLanguagesResponseInfo> localVarResp = googleAdsLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataGoogleAdsLanguagesResponseInfo> keywordsDataGoogleAdsLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataGoogleAdsLanguagesValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataGoogleAdsLanguagesResponseInfo> googleAdsLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleAdsLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataGoogleAdsLanguagesAsync(final ApiCallback<KeywordsDataGoogleAdsLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleAdsLanguagesAsync(final ApiCallback<KeywordsDataGoogleAdsLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataGoogleAdsLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleAdsLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleAdsLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -1747,7 +1747,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call keywordsDataGoogleTrendsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1794,32 +1794,32 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataGoogleTrendsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleTrendsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataGoogleTrendsLocationsCall(_callback);
+       return googleTrendsLocationsCall(_callback);
 
     }
 
-    public KeywordsDataGoogleTrendsLocationsResponseInfo keywordsDataGoogleTrendsLocations() throws ApiException {
-       ApiResponse<KeywordsDataGoogleTrendsLocationsResponseInfo> localVarResp = keywordsDataGoogleTrendsLocationsWithHttpInfo();
+    public KeywordsDataGoogleTrendsLocationsResponseInfo googleTrendsLocations() throws ApiException {
+       ApiResponse<KeywordsDataGoogleTrendsLocationsResponseInfo> localVarResp = googleTrendsLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataGoogleTrendsLocationsResponseInfo> keywordsDataGoogleTrendsLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataGoogleTrendsLocationsValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataGoogleTrendsLocationsResponseInfo> googleTrendsLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleTrendsLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleTrendsLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataGoogleTrendsLocationsAsync(final ApiCallback<KeywordsDataGoogleTrendsLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLocationsAsync(final ApiCallback<KeywordsDataGoogleTrendsLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataGoogleTrendsLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleTrendsLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleTrendsLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call keywordsDataGoogleTrendsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1867,36 +1867,36 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataGoogleTrendsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleTrendsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling keywordsDataGoogleTrendsLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling googleTrendsLocationsCountry(Async)");
        }
 
-       return keywordsDataGoogleTrendsLocationsCountryCall(country, _callback);
+       return googleTrendsLocationsCountryCall(country, _callback);
 
     }
 
-    public KeywordsDataGoogleTrendsLocationsCountryResponseInfo keywordsDataGoogleTrendsLocationsCountry(String country) throws ApiException {
-       ApiResponse<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> localVarResp = keywordsDataGoogleTrendsLocationsCountryWithHttpInfo(country);
+    public KeywordsDataGoogleTrendsLocationsCountryResponseInfo googleTrendsLocationsCountry(String country) throws ApiException {
+       ApiResponse<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> localVarResp = googleTrendsLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> keywordsDataGoogleTrendsLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataGoogleTrendsLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> googleTrendsLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = googleTrendsLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleTrendsLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataGoogleTrendsLocationsCountryAsync(String country, final ApiCallback<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLocationsCountryAsync(String country, final ApiCallback<KeywordsDataGoogleTrendsLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataGoogleTrendsLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = googleTrendsLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleTrendsLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call keywordsDataGoogleTrendsLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1943,26 +1943,26 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataGoogleTrendsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleTrendsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataGoogleTrendsLanguagesCall(_callback);
+       return googleTrendsLanguagesCall(_callback);
 
     }
 
-    public KeywordsDataGoogleTrendsLanguagesResponseInfo keywordsDataGoogleTrendsLanguages() throws ApiException {
-       ApiResponse<KeywordsDataGoogleTrendsLanguagesResponseInfo> localVarResp = keywordsDataGoogleTrendsLanguagesWithHttpInfo();
+    public KeywordsDataGoogleTrendsLanguagesResponseInfo googleTrendsLanguages() throws ApiException {
+       ApiResponse<KeywordsDataGoogleTrendsLanguagesResponseInfo> localVarResp = googleTrendsLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataGoogleTrendsLanguagesResponseInfo> keywordsDataGoogleTrendsLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataGoogleTrendsLanguagesValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataGoogleTrendsLanguagesResponseInfo> googleTrendsLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleTrendsLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleTrendsLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataGoogleTrendsLanguagesAsync(final ApiCallback<KeywordsDataGoogleTrendsLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleTrendsLanguagesAsync(final ApiCallback<KeywordsDataGoogleTrendsLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataGoogleTrendsLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleTrendsLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataGoogleTrendsLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -2329,7 +2329,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call keywordsDataDataforseoTrendsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call dataforseoTrendsLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2376,32 +2376,32 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataDataforseoTrendsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call dataforseoTrendsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataDataforseoTrendsLocationsCall(_callback);
+       return dataforseoTrendsLocationsCall(_callback);
 
     }
 
-    public KeywordsDataDataforseoTrendsLocationsResponseInfo keywordsDataDataforseoTrendsLocations() throws ApiException {
-       ApiResponse<KeywordsDataDataforseoTrendsLocationsResponseInfo> localVarResp = keywordsDataDataforseoTrendsLocationsWithHttpInfo();
+    public KeywordsDataDataforseoTrendsLocationsResponseInfo dataforseoTrendsLocations() throws ApiException {
+       ApiResponse<KeywordsDataDataforseoTrendsLocationsResponseInfo> localVarResp = dataforseoTrendsLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataDataforseoTrendsLocationsResponseInfo> keywordsDataDataforseoTrendsLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataDataforseoTrendsLocationsValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataDataforseoTrendsLocationsResponseInfo> dataforseoTrendsLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = dataforseoTrendsLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataDataforseoTrendsLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataDataforseoTrendsLocationsAsync(final ApiCallback<KeywordsDataDataforseoTrendsLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call dataforseoTrendsLocationsAsync(final ApiCallback<KeywordsDataDataforseoTrendsLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataDataforseoTrendsLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = dataforseoTrendsLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataDataforseoTrendsLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call keywordsDataDataforseoTrendsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call dataforseoTrendsLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2449,30 +2449,30 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataDataforseoTrendsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call dataforseoTrendsLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling keywordsDataDataforseoTrendsLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling dataforseoTrendsLocationsCountry(Async)");
        }
 
-       return keywordsDataDataforseoTrendsLocationsCountryCall(country, _callback);
+       return dataforseoTrendsLocationsCountryCall(country, _callback);
 
     }
 
-    public KeywordsDataDataforseoTrendsLocationsCountryResponseInfo keywordsDataDataforseoTrendsLocationsCountry(String country) throws ApiException {
-       ApiResponse<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> localVarResp = keywordsDataDataforseoTrendsLocationsCountryWithHttpInfo(country);
+    public KeywordsDataDataforseoTrendsLocationsCountryResponseInfo dataforseoTrendsLocationsCountry(String country) throws ApiException {
+       ApiResponse<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> localVarResp = dataforseoTrendsLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> keywordsDataDataforseoTrendsLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataDataforseoTrendsLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> dataforseoTrendsLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = dataforseoTrendsLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataDataforseoTrendsLocationsCountryAsync(String country, final ApiCallback<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call dataforseoTrendsLocationsCountryAsync(String country, final ApiCallback<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataDataforseoTrendsLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = dataforseoTrendsLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<KeywordsDataDataforseoTrendsLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -4202,7 +4202,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call keywordsDataBingKeywordPerformanceLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingKeywordPerformanceLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4249,26 +4249,26 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataBingKeywordPerformanceLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call bingKeywordPerformanceLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataBingKeywordPerformanceLocationsAndLanguagesCall(_callback);
+       return bingKeywordPerformanceLocationsAndLanguagesCall(_callback);
 
     }
 
-    public KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo keywordsDataBingKeywordPerformanceLocationsAndLanguages() throws ApiException {
-       ApiResponse<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> localVarResp = keywordsDataBingKeywordPerformanceLocationsAndLanguagesWithHttpInfo();
+    public KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo bingKeywordPerformanceLocationsAndLanguages() throws ApiException {
+       ApiResponse<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> localVarResp = bingKeywordPerformanceLocationsAndLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> keywordsDataBingKeywordPerformanceLocationsAndLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataBingKeywordPerformanceLocationsAndLanguagesValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> bingKeywordPerformanceLocationsAndLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = bingKeywordPerformanceLocationsAndLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataBingKeywordPerformanceLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call bingKeywordPerformanceLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataBingKeywordPerformanceLocationsAndLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = bingKeywordPerformanceLocationsAndLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataBingKeywordPerformanceLocationsAndLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -4563,7 +4563,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call bingSearchVolumeHistoryLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4610,26 +4610,26 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call bingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesCall(_callback);
+       return bingSearchVolumeHistoryLocationsAndLanguagesCall(_callback);
 
     }
 
-    public KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo keywordsDataBingSearchVolumeHistoryLocationsAndLanguages() throws ApiException {
-       ApiResponse<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> localVarResp = keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesWithHttpInfo();
+    public KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo bingSearchVolumeHistoryLocationsAndLanguages() throws ApiException {
+       ApiResponse<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> localVarResp = bingSearchVolumeHistoryLocationsAndLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> bingSearchVolumeHistoryLocationsAndLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = bingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call bingSearchVolumeHistoryLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataBingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = bingSearchVolumeHistoryLocationsAndLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -4924,7 +4924,7 @@ public class KeywordsDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call keywordsDataClickstreamDataLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call clickstreamDataLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -4971,26 +4971,26 @@ public class KeywordsDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call keywordsDataClickstreamDataLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call clickstreamDataLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return keywordsDataClickstreamDataLocationsAndLanguagesCall(_callback);
+       return clickstreamDataLocationsAndLanguagesCall(_callback);
 
     }
 
-    public KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo keywordsDataClickstreamDataLocationsAndLanguages() throws ApiException {
-       ApiResponse<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> localVarResp = keywordsDataClickstreamDataLocationsAndLanguagesWithHttpInfo();
+    public KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo clickstreamDataLocationsAndLanguages() throws ApiException {
+       ApiResponse<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> localVarResp = clickstreamDataLocationsAndLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> keywordsDataClickstreamDataLocationsAndLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = keywordsDataClickstreamDataLocationsAndLanguagesValidateBeforeCall(null);
+    public ApiResponse<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> clickstreamDataLocationsAndLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = clickstreamDataLocationsAndLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call keywordsDataClickstreamDataLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call clickstreamDataLocationsAndLanguagesAsync(final ApiCallback<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = keywordsDataClickstreamDataLocationsAndLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = clickstreamDataLocationsAndLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<KeywordsDataClickstreamDataLocationsAndLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

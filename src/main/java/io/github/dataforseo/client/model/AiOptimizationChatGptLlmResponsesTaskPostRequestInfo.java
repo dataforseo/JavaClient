@@ -238,33 +238,6 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public AiOptimizationChatGptLlmResponsesTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data array of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
   public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
   @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
   private String postbackUrl;
@@ -329,6 +302,33 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public AiOptimizationChatGptLlmResponsesTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data array of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
 
   public AiOptimizationChatGptLlmResponsesTaskPostRequestInfo() {
   }
@@ -379,9 +379,9 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
         Objects.equals(this.topP, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.topP) &&
         Objects.equals(this.systemMessage, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.systemMessage) &&
         Objects.equals(this.messageChain, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.messageChain) &&
-        Objects.equals(this.tag, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.tag) &&
         Objects.equals(this.postbackUrl, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.pingbackUrl, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.pingbackUrl, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.pingbackUrl) &&
+        Objects.equals(this.tag, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.tag);  
     
   }
 
@@ -391,7 +391,7 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(userPrompt, modelName, maxOutputTokens, temperature, topP, systemMessage, messageChain, tag, postbackUrl, pingbackUrl);
+  return Objects.hash(userPrompt, modelName, maxOutputTokens, temperature, topP, systemMessage, messageChain, postbackUrl, pingbackUrl, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -413,9 +413,9 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
     sb.append("    topP: ").append(toIndentedString(topP)).append("\n");
     sb.append("    systemMessage: ").append(toIndentedString(systemMessage)).append("\n");
     sb.append("    messageChain: ").append(toIndentedString(messageChain)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -453,11 +453,11 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
     
     openapiFields.add("message_chain");
     
-    openapiFields.add("tag");
-    
     openapiFields.add("postback_url");
     
     openapiFields.add("pingback_url");
+    
+    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

@@ -89,6 +89,60 @@ public class AiOptimizationLLmMentionsDomainElement  extends BaseAiOptimizationL
   }
 
 
+  public static final String SERIALIZED_NAME_SEARCH_SCOPE = "search_scope";
+  @SerializedName(SERIALIZED_NAME_SEARCH_SCOPE)
+  private List<String> searchScope;
+
+  public AiOptimizationLLmMentionsDomainElement searchScope(List<String> searchScope) {
+    this.searchScope = searchScope;
+    return this;
+  }
+
+  /**
+   * target domain search scope
+* optional field
+* possible values:
+* any, sources, search_results
+* default value: any
+   * @return searchScope
+   */
+  @javax.annotation.Nullable
+  public List<String> getSearchScope() {
+    return searchScope;
+  }
+
+  public void setSearchScope(List<String> searchScope) {
+    this.searchScope = searchScope;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_FILTER = "search_filter";
+  @SerializedName(SERIALIZED_NAME_SEARCH_FILTER)
+  private String searchFilter;
+
+  public AiOptimizationLLmMentionsDomainElement searchFilter(String searchFilter) {
+    this.searchFilter = searchFilter;
+    return this;
+  }
+
+  /**
+   * target domain search filter
+* optional field
+* possible values:
+* include, exclude
+* default value: include
+   * @return searchFilter
+   */
+  @javax.annotation.Nullable
+  public String getSearchFilter() {
+    return searchFilter;
+  }
+
+  public void setSearchFilter(String searchFilter) {
+    this.searchFilter = searchFilter;
+  }
+
+
 
   public AiOptimizationLLmMentionsDomainElement() {
   }
@@ -133,7 +187,9 @@ public class AiOptimizationLLmMentionsDomainElement  extends BaseAiOptimizationL
     return
 
         Objects.equals(this.domain, aiOptimizationLLmMentionsDomainElement.domain) &&
-        Objects.equals(this.includeSubdomains, aiOptimizationLLmMentionsDomainElement.includeSubdomains) && 
+        Objects.equals(this.includeSubdomains, aiOptimizationLLmMentionsDomainElement.includeSubdomains) &&
+        Objects.equals(this.searchScope, aiOptimizationLLmMentionsDomainElement.searchScope) &&
+        Objects.equals(this.searchFilter, aiOptimizationLLmMentionsDomainElement.searchFilter) && 
         super.equals(o);
     
   }
@@ -144,7 +200,7 @@ public class AiOptimizationLLmMentionsDomainElement  extends BaseAiOptimizationL
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, includeSubdomains);
+  return Objects.hash(domain, includeSubdomains, searchScope, searchFilter);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -161,6 +217,8 @@ public class AiOptimizationLLmMentionsDomainElement  extends BaseAiOptimizationL
 
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
+    sb.append("    searchScope: ").append(toIndentedString(searchScope)).append("\n");
+    sb.append("    searchFilter: ").append(toIndentedString(searchFilter)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -189,6 +247,10 @@ public class AiOptimizationLLmMentionsDomainElement  extends BaseAiOptimizationL
     openapiFields.add("domain");
     
     openapiFields.add("include_subdomains");
+    
+    openapiFields.add("search_scope");
+    
+    openapiFields.add("search_filter");
     
 
     // a set of required properties/fields (JSON key names)

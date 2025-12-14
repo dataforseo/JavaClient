@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**domain** | **String** | domain of the URL<br>domain of the URL where a special offer is posted |[optional]|
+**domain** | **String** | domain of the URL<br>domain of the URL where a special offer is posted<br>Note: this field is deprecated and will return null |[optional]|
 **title** | **String** | title of the element |[optional]|
 **description** | **String** | description of the product in Google Shopping SERP |[optional]|
-**url** | **String** | URL pointing at special offer page<br>URL where a special offer is posted |[optional]|
+**url** | **String** | URL pointing at special offer page<br>URL where a special offer is posted<br>Note: this field is deprecated and will return null |[optional]|
 **shoppingUrl** | **String** | URL to the product page on Google Shopping |[optional]|
 **tags** | **List<String>** | tags assigned to the product |[optional]|
 **price** | **Double** | product price<br>example:<br>384.99 |[optional]|

@@ -48,7 +48,7 @@ public class DataLabsPodcastsSerpElementItem  extends BaseDataforseoLabsApiEleme
   }
 
   /**
-   * elements of search results found in SERP
+   * historical SERPs and related data found in the database
    * @return items
    */
   @javax.annotation.Nullable

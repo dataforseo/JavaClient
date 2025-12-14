@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**items** | **List<MultiCarouselElement>** | elements of search results found in SERP |[optional]|
+**items** | **List<MultiCarouselElement>** | historical SERPs and related data found in the database |[optional]|

@@ -94,7 +94,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * source title
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -211,7 +211,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * source URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -234,7 +234,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * source domain
+   * domain
    * @return domain
    */
   @javax.annotation.Nullable

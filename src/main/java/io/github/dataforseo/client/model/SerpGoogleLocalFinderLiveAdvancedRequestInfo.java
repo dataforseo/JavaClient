@@ -67,63 +67,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -135,9 +78,9 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
 * example:
 * 2840
    * @return locationCode
@@ -152,66 +95,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,zoom” format
-* if “zoom” is not specified, 9z will be applied as a default value
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “zoom”: 4z
-* the maximum value for “zoom”: 18z
-* example:
-* 52.6178549,-155.352142,20z
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -223,9 +106,9 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
 * example:en
    * @return languageCode
    */
@@ -236,60 +119,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_DEVICE = "device";
-  @SerializedName(SERIALIZED_NAME_DEVICE)
-  private String device;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo device(String device) {
-    this.device = device;
-    return this;
-  }
-
-  /**
-   * device type
-* optional field
-* can take the values:desktop, mobile
-* default value: desktop
-   * @return device
-   */
-  @javax.annotation.Nullable
-  public String getDevice() {
-    return device;
-  }
-
-  public void setDevice(String device) {
-    this.device = device;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
   }
 
 
@@ -326,11 +155,209 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_DEVICE = "device";
+  @SerializedName(SERIALIZED_NAME_DEVICE)
+  private String device;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo device(String device) {
+    this.device = device;
+    return this;
+  }
+
+  /**
+   * device type
+* optional field
+* can take the values:desktop, mobile
+* default value: desktop
+   * @return device
+   */
+  @javax.annotation.Nullable
+  public String getDevice() {
+    return device;
+  }
+
+  public void setDevice(String device) {
+    this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * device operating system
+* optional field
+* if you specify desktop in the device field, choose from the following values: windows, macos
+* default value: windows
+* if you specify mobile in the device field, choose from the following values: android, ios
+* default value: android
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_PRIORITY = "priority";
+  @SerializedName(SERIALIZED_NAME_PRIORITY)
+  private Integer priority;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo priority(Integer priority) {
+    this.priority = priority;
+    return this;
+  }
+
+  /**
+   * task priority
+* optional field
+* can take the following values:
+* 1 – normal execution priority (set by default)
+* 2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority.
+* The cost can be calculated on the Pricing page.
+   * @return priority
+   */
+  @javax.annotation.Nullable
+  public Integer getPriority() {
+    return priority;
+  }
+
+  public void setPriority(Integer priority) {
+    this.priority = priority;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude,zoom' format
+* if 'zoom' is not specified, 9z will be applied as a default value
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
+* the minimum value for 'zoom': 4z
+* the maximum value for 'zoom': 18z
+* example:
+* 52.6178549,-155.352142,20z
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+  }
+
+
   public static final String SERIALIZED_NAME_MIN_RATING = "min_rating";
   @SerializedName(SERIALIZED_NAME_MIN_RATING)
-  private Double minRating;
+  private String minRating;
 
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo minRating(Double minRating) {
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo minRating(String minRating) {
     this.minRating = minRating;
     return this;
   }
@@ -343,11 +370,11 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
    * @return minRating
    */
   @javax.annotation.Nullable
-  public Double getMinRating() {
+  public String getMinRating() {
     return minRating;
   }
 
-  public void setMinRating(Double minRating) {
+  public void setMinRating(String minRating) {
     this.minRating = minRating;
   }
 
@@ -379,33 +406,6 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   public void setTimeFilter(String timeFilter) {
     this.timeFilter = timeFilter;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
   }
 
 
@@ -453,18 +453,18 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleLocalFinderLiveAdvancedRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpGoogleLocalFinderLiveAdvancedRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationCoordinate) &&
-        Objects.equals(this.languageName, serpGoogleLocalFinderLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleLocalFinderLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpGoogleLocalFinderLiveAdvancedRequestInfo.device) &&
-        Objects.equals(this.os, serpGoogleLocalFinderLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.depth, serpGoogleLocalFinderLiveAdvancedRequestInfo.depth) &&
+        Objects.equals(this.device, serpGoogleLocalFinderLiveAdvancedRequestInfo.device) &&
+        Objects.equals(this.locationName, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleLocalFinderLiveAdvancedRequestInfo.languageName) &&
+        Objects.equals(this.os, serpGoogleLocalFinderLiveAdvancedRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleLocalFinderLiveAdvancedRequestInfo.tag) &&
+        Objects.equals(this.priority, serpGoogleLocalFinderLiveAdvancedRequestInfo.priority) &&
+        Objects.equals(this.locationCoordinate, serpGoogleLocalFinderLiveAdvancedRequestInfo.locationCoordinate) &&
         Objects.equals(this.minRating, serpGoogleLocalFinderLiveAdvancedRequestInfo.minRating) &&
-        Objects.equals(this.timeFilter, serpGoogleLocalFinderLiveAdvancedRequestInfo.timeFilter) &&
-        Objects.equals(this.tag, serpGoogleLocalFinderLiveAdvancedRequestInfo.tag);  
+        Objects.equals(this.timeFilter, serpGoogleLocalFinderLiveAdvancedRequestInfo.timeFilter);  
     
   }
 
@@ -474,7 +474,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, minRating, timeFilter, tag);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, priority, locationCoordinate, minRating, timeFilter);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -490,18 +490,18 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     sb.append("class SerpGoogleLocalFinderLiveAdvancedRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    minRating: ").append(toIndentedString(minRating)).append("\n");
     sb.append("    timeFilter: ").append(toIndentedString(timeFilter)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -527,29 +527,29 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
+    openapiFields.add("depth");
+    
     openapiFields.add("device");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
     
     openapiFields.add("os");
     
-    openapiFields.add("depth");
+    openapiFields.add("tag");
+    
+    openapiFields.add("priority");
+    
+    openapiFields.add("location_coordinate");
     
     openapiFields.add("min_rating");
     
     openapiFields.add("time_filter");
-    
-    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

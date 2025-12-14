@@ -87,9 +87,9 @@ public class OnPageHtmlResourceItem  extends BaseOnPageResourceItem  {
 
   public static final String SERIALIZED_NAME_ONPAGE_SCORE = "onpage_score";
   @SerializedName(SERIALIZED_NAME_ONPAGE_SCORE)
-  private Integer onpageScore;
+  private Double onpageScore;
 
-  public OnPageHtmlResourceItem onpageScore(Integer onpageScore) {
+  public OnPageHtmlResourceItem onpageScore(Double onpageScore) {
     this.onpageScore = onpageScore;
     return this;
   }
@@ -102,11 +102,11 @@ public class OnPageHtmlResourceItem  extends BaseOnPageResourceItem  {
    * @return onpageScore
    */
   @javax.annotation.Nullable
-  public Integer getOnpageScore() {
+  public Double getOnpageScore() {
     return onpageScore;
   }
 
-  public void setOnpageScore(Integer onpageScore) {
+  public void setOnpageScore(Double onpageScore) {
     this.onpageScore = onpageScore;
   }
 

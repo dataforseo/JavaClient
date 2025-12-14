@@ -292,7 +292,7 @@ public class DomainAnalyticsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call domainAnalyticsTechnologiesLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call technologiesLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -339,32 +339,32 @@ public class DomainAnalyticsApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call domainAnalyticsTechnologiesLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call technologiesLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return domainAnalyticsTechnologiesLocationsCall(_callback);
+       return technologiesLocationsCall(_callback);
 
     }
 
-    public DomainAnalyticsTechnologiesLocationsResponseInfo domainAnalyticsTechnologiesLocations() throws ApiException {
-       ApiResponse<DomainAnalyticsTechnologiesLocationsResponseInfo> localVarResp = domainAnalyticsTechnologiesLocationsWithHttpInfo();
+    public DomainAnalyticsTechnologiesLocationsResponseInfo technologiesLocations() throws ApiException {
+       ApiResponse<DomainAnalyticsTechnologiesLocationsResponseInfo> localVarResp = technologiesLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<DomainAnalyticsTechnologiesLocationsResponseInfo> domainAnalyticsTechnologiesLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = domainAnalyticsTechnologiesLocationsValidateBeforeCall(null);
+    public ApiResponse<DomainAnalyticsTechnologiesLocationsResponseInfo> technologiesLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = technologiesLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<DomainAnalyticsTechnologiesLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call domainAnalyticsTechnologiesLocationsAsync(final ApiCallback<DomainAnalyticsTechnologiesLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call technologiesLocationsAsync(final ApiCallback<DomainAnalyticsTechnologiesLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = domainAnalyticsTechnologiesLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = technologiesLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<DomainAnalyticsTechnologiesLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call domainAnalyticsTechnologiesLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call technologiesLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -411,26 +411,26 @@ public class DomainAnalyticsApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call domainAnalyticsTechnologiesLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call technologiesLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return domainAnalyticsTechnologiesLanguagesCall(_callback);
+       return technologiesLanguagesCall(_callback);
 
     }
 
-    public DomainAnalyticsTechnologiesLanguagesResponseInfo domainAnalyticsTechnologiesLanguages() throws ApiException {
-       ApiResponse<DomainAnalyticsTechnologiesLanguagesResponseInfo> localVarResp = domainAnalyticsTechnologiesLanguagesWithHttpInfo();
+    public DomainAnalyticsTechnologiesLanguagesResponseInfo technologiesLanguages() throws ApiException {
+       ApiResponse<DomainAnalyticsTechnologiesLanguagesResponseInfo> localVarResp = technologiesLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<DomainAnalyticsTechnologiesLanguagesResponseInfo> domainAnalyticsTechnologiesLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = domainAnalyticsTechnologiesLanguagesValidateBeforeCall(null);
+    public ApiResponse<DomainAnalyticsTechnologiesLanguagesResponseInfo> technologiesLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = technologiesLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<DomainAnalyticsTechnologiesLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call domainAnalyticsTechnologiesLanguagesAsync(final ApiCallback<DomainAnalyticsTechnologiesLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call technologiesLanguagesAsync(final ApiCallback<DomainAnalyticsTechnologiesLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = domainAnalyticsTechnologiesLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = technologiesLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<DomainAnalyticsTechnologiesLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

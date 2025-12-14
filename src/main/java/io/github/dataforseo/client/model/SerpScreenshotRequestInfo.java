@@ -154,6 +154,7 @@ public class SerpScreenshotRequestInfo  {
    * browser scale factor
 * optional field
 * can be specified in the following range: 0.5-3
+* default value: 1
    * @return browserScreenScaleFactor
    */
   @javax.annotation.Nullable

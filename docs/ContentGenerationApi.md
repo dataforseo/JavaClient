@@ -10,10 +10,10 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**generateSubTopicsLive**](ContentGenerationApi.md#generateSubTopicsLive) | **POST**  /v3/content_generation/generate_sub_topics/live  |
 | [**paraphraseLive**](ContentGenerationApi.md#paraphraseLive) | **POST**  /v3/content_generation/paraphrase/live  |
 | [**checkGrammarLive**](ContentGenerationApi.md#checkGrammarLive) | **POST**  /v3/content_generation/check_grammar/live  |
-| [**contentGenerationCheckGrammarLanguages**](ContentGenerationApi.md#contentGenerationCheckGrammarLanguages) | **GET**  /v3/content_generation/check_grammar/languages  |
+| [**checkGrammarLanguages**](ContentGenerationApi.md#checkGrammarLanguages) | **GET**  /v3/content_generation/check_grammar/languages  |
 | [**grammarRules**](ContentGenerationApi.md#grammarRules) | **GET**  /v3/content_generation/grammar_rules  |
 | [**textSummaryLive**](ContentGenerationApi.md#textSummaryLive) | **POST**  /v3/content_generation/text_summary/live  |
-| [**contentGenerationTextSummaryLanguages**](ContentGenerationApi.md#contentGenerationTextSummaryLanguages) | **GET**  /v3/content_generation/text_summary/languages  |
+| [**textSummaryLanguages**](ContentGenerationApi.md#textSummaryLanguages) | **GET**  /v3/content_generation/text_summary/languages  |
 
 <a id="generateLive"></a>
 # **generateLive**
@@ -44,22 +44,44 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
-    ContentGenerationGenerateLiveRequestInfo model = new ContentGenerationGenerateLiveRequestInfo()
+    ContentGenerationGenerateLiveResponseInfo response = apiInstance.generateLive(
+       List.of(
+    
+           new ContentGenerationGenerateLiveRequestInfo()
+        
            .text("SEO is")
+        
+        
            .maxNewTokens(100)
-           .creativityIndex(1d)
-           .avoidStartingWords(
-               List.of(
-                   "SEO",
-                   "search engine optimization",
-                   "SEO is"
-                ))
-           .stopWords(
-               List.of(
-                   "123",
-                   "n"
-                ));
-    ContentGenerationGenerateLiveResponseInfo response = apiInstance.generateLive(List.of(model));
+        
+        
+           .tokenRepetitionPenalty(1.01d)
+        
+        
+           .stopWords(List.of(
+    
+           "123",
+    
+           "n"
+    
+       ))
+        
+        
+           .creativityIndex(1)
+        
+        
+           .avoidStartingWords(List.of(
+    
+           "SEO",
+    
+           "search engine optimization",
+    
+           "SEO is"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentGenerationApi#generateLive");
@@ -127,25 +149,49 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
-    ContentGenerationGenerateTextLiveRequestInfo model = new ContentGenerationGenerateTextLiveRequestInfo()
+    ContentGenerationGenerateTextLiveResponseInfo response = apiInstance.generateTextLive(
+       List.of(
+    
+           new ContentGenerationGenerateTextLiveRequestInfo()
+        
            .topic("Steve Jobs")
-           .wordCount(50l)
-           .subTopics(
-               List.of(
-                   "Apple",
-                   "Pixar",
-                   "Amazing Products"
-                ))
+        
+        
+           .subTopics(List.of(
+    
+           "Apple",
+    
+           "Pixar",
+    
+           "Amazing Products"
+    
+       ))
+        
+        
            .description("Take a closer look at Steve Jobs' life and his incredible impact on the tech industry, with a special focus on the development of the iPhone.")
-           .metaKeywords(
-               List.of(
-                   "iPhone",
-                   "sell",
-                   "CEO"
-                ))
+        
+        
+           .metaKeywords(List.of(
+    
+           "iPhone",
+    
+           "sell",
+    
+           "CEO"
+    
+       ))
+        
+        
            .creativityIndex(0.8d)
-           .includeConclusion(true);
-    ContentGenerationGenerateTextLiveResponseInfo response = apiInstance.generateTextLive(List.of(model));
+        
+        
+           .wordCount(50)
+        
+        
+           .includeConclusion(true)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentGenerationApi#generateTextLive");
@@ -213,9 +259,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
-    ContentGenerationGenerateMetaTagsLiveRequestInfo model = new ContentGenerationGenerateMetaTagsLiveRequestInfo()
-           .text("The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings. There were simply no tools that could streamline their work and provide the functionality the agency needed.nn“We started to develop the idea of ··our tool capable of doing Google Business SEO audits, tracking stats, and generating business proposals at the same time.");
-    ContentGenerationGenerateMetaTagsLiveResponseInfo response = apiInstance.generateMetaTagsLive(List.of(model));
+    ContentGenerationGenerateMetaTagsLiveResponseInfo response = apiInstance.generateMetaTagsLive(
+       List.of(
+    
+           new ContentGenerationGenerateMetaTagsLiveRequestInfo()
+        
+           .text("The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings. There were simply no tools that could streamline their work and provide the functionality the agency needed.nn“We started to develop the idea of ··our tool capable of doing Google Business SEO audits, tracking stats, and generating business proposals at the same time.")
+        
+        
+           .creativityIndex(0.9d)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentGenerationApi#generateMetaTagsLive");
@@ -283,10 +338,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
-    ContentGenerationGenerateSubTopicsLiveRequestInfo model = new ContentGenerationGenerateSubTopicsLiveRequestInfo()
+    ContentGenerationGenerateSubTopicsLiveResponseInfo response = apiInstance.generateSubTopicsLive(
+       List.of(
+    
+           new ContentGenerationGenerateSubTopicsLiveRequestInfo()
+        
            .topic("Steve Jobs")
-           .creativityIndex(0.9d);
-    ContentGenerationGenerateSubTopicsLiveResponseInfo response = apiInstance.generateSubTopicsLive(List.of(model));
+        
+        
+           .creativityIndex(0.9d)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentGenerationApi#generateSubTopicsLive");
@@ -354,10 +417,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
-    ContentGenerationParaphraseLiveRequestInfo model = new ContentGenerationParaphraseLiveRequestInfo()
+    ContentGenerationParaphraseLiveResponseInfo response = apiInstance.paraphraseLive(
+       List.of(
+    
+           new ContentGenerationParaphraseLiveRequestInfo()
+        
            .text("The idea to develop an instrument for local SEO didn’t come to the GMB Crush CEO, Matteo Barletta, out of the blue. Having a huge interest in search engine optimization, Matteo has come a long way from being an SEO freelancer to launching his own agency, SEO Heroes. At some point, he and his team noticed that it was quite challenging to work with local SEO projects, especially those related to Google My Business listings.")
-           .creativityIndex(0.8d);
-    ContentGenerationParaphraseLiveResponseInfo response = apiInstance.paraphraseLive(List.of(model));
+        
+        
+           .creativityIndex(0.8d)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentGenerationApi#paraphraseLive");
@@ -425,10 +496,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
-    ContentGenerationCheckGrammarLiveRequestInfo model = new ContentGenerationCheckGrammarLiveRequestInfo()
+    ContentGenerationCheckGrammarLiveResponseInfo response = apiInstance.checkGrammarLive(
+       List.of(
+    
+           new ContentGenerationCheckGrammarLiveRequestInfo()
+        
            .text("Hello, my name is John! And I'm very glad to work with you toda")
-           .languageCode("en-US");
-    ContentGenerationCheckGrammarLiveResponseInfo response = apiInstance.checkGrammarLive(List.of(model));
+        
+        
+           .languageCode("en-US")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentGenerationApi#checkGrammarLive");
@@ -467,9 +546,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentGenerationCheckGrammarLanguages"></a>
-# **contentGenerationCheckGrammarLanguages**
-> ContentGenerationCheckGrammarLanguagesResponseInfo contentGenerationCheckGrammarLanguages()
+<a id="checkGrammarLanguages"></a>
+# **checkGrammarLanguages**
+> ContentGenerationCheckGrammarLanguagesResponseInfo checkGrammarLanguages()
 
 
 ### Example
@@ -497,10 +576,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
 
-    ContentGenerationCheckGrammarLanguagesResponseInfo response = apiInstance.contentGenerationCheckGrammarLanguages();
+    ContentGenerationCheckGrammarLanguagesResponseInfo response = apiInstance.checkGrammarLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling ContentGenerationApi#contentGenerationCheckGrammarLanguages");
+      System.err.println("Exception when calling ContentGenerationApi#checkGrammarLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -634,10 +713,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
-    ContentGenerationTextSummaryLiveRequestInfo model = new ContentGenerationTextSummaryLiveRequestInfo()
+    ContentGenerationTextSummaryLiveResponseInfo response = apiInstance.textSummaryLive(
+       List.of(
+    
+           new ContentGenerationTextSummaryLiveRequestInfo()
+        
            .text("Removing [RequireHttps] does nothing but break the https redirection, and doesn't enforce an https url on my route. I've got one method which i want to expose over http and a different one over https. If i accidentally enter http in my url for the https-only method, it should redirect. It currently works as is, the problem is that there is an undocument (seemingly unrelated) setting I have to add to get it all working. And that is the SslPort thing")
-           .languageName("English (United States)");
-    ContentGenerationTextSummaryLiveResponseInfo response = apiInstance.textSummaryLive(List.of(model));
+        
+        
+           .languageName("English (United States)")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentGenerationApi#textSummaryLive");
@@ -676,9 +763,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="contentGenerationTextSummaryLanguages"></a>
-# **contentGenerationTextSummaryLanguages**
-> ContentGenerationTextSummaryLanguagesResponseInfo contentGenerationTextSummaryLanguages()
+<a id="textSummaryLanguages"></a>
+# **textSummaryLanguages**
+> ContentGenerationTextSummaryLanguagesResponseInfo textSummaryLanguages()
 
 
 ### Example
@@ -706,10 +793,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     ContentGenerationApi apiInstance = new ContentGenerationApi(defaultClient);
 
-    ContentGenerationTextSummaryLanguagesResponseInfo response = apiInstance.contentGenerationTextSummaryLanguages();
+    ContentGenerationTextSummaryLanguagesResponseInfo response = apiInstance.textSummaryLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling ContentGenerationApi#contentGenerationTextSummaryLanguages");
+      System.err.println("Exception when calling ContentGenerationApi#textSummaryLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());

@@ -235,6 +235,36 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_HISTORICAL_SERP_MODE = "historical_serp_mode";
+  @SerializedName(SERIALIZED_NAME_HISTORICAL_SERP_MODE)
+  private String historicalSerpMode;
+
+  public DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo historicalSerpMode(String historicalSerpMode) {
+    this.historicalSerpMode = historicalSerpMode;
+    return this;
+  }
+
+  /**
+   * data collection mode
+* optional field
+* you can use this field to filter the results;
+* possible types of filtering:
+* live — return metrics for SERPs in which the specified target currently has ranking results;
+* lost — return metrics for SERPs in which the specified target had previously had ranking results, but didn’t have them during the last check;
+* all — return metrics for both types of SERPs.
+* default value: live
+   * @return historicalSerpMode
+   */
+  @javax.annotation.Nullable
+  public String getHistoricalSerpMode() {
+    return historicalSerpMode;
+  }
+
+  public void setHistoricalSerpMode(String historicalSerpMode) {
+    this.historicalSerpMode = historicalSerpMode;
+  }
+
+
   public static final String SERIALIZED_NAME_ITEM_TYPES = "item_types";
   @SerializedName(SERIALIZED_NAME_ITEM_TYPES)
   private List<String> itemTypes;
@@ -466,6 +496,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo  {
         Objects.equals(this.languageCode, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.languageCode) &&
         Objects.equals(this.includeSubcategories, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.includeSubcategories) &&
         Objects.equals(this.includeClickstreamData, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.includeClickstreamData) &&
+        Objects.equals(this.historicalSerpMode, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.historicalSerpMode) &&
         Objects.equals(this.itemTypes, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.itemTypes) &&
         Objects.equals(this.filters, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, dataforseoLabsGoogleCategoriesForDomainLiveRequestInfo.orderBy) &&
@@ -481,7 +512,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSubcategories, includeClickstreamData, itemTypes, filters, orderBy, limit, offset, tag);
+  return Objects.hash(target, locationName, locationCode, languageName, languageCode, includeSubcategories, includeClickstreamData, historicalSerpMode, itemTypes, filters, orderBy, limit, offset, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -503,6 +534,7 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo  {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    includeSubcategories: ").append(toIndentedString(includeSubcategories)).append("\n");
     sb.append("    includeClickstreamData: ").append(toIndentedString(includeClickstreamData)).append("\n");
+    sb.append("    historicalSerpMode: ").append(toIndentedString(historicalSerpMode)).append("\n");
     sb.append("    itemTypes: ").append(toIndentedString(itemTypes)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
@@ -545,6 +577,8 @@ public class DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo  {
     openapiFields.add("include_subcategories");
     
     openapiFields.add("include_clickstream_data");
+    
+    openapiFields.add("historical_serp_mode");
     
     openapiFields.add("item_types");
     

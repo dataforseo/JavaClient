@@ -85,6 +85,30 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_BRAND_ENTITIES = "brand_entities";
+  @SerializedName(SERIALIZED_NAME_BRAND_ENTITIES)
+  private List<ChatGptBrandEntity> brandEntities;
+
+  public ChatGptTextElementItem brandEntities(List<ChatGptBrandEntity> brandEntities) {
+    this.brandEntities = brandEntities;
+    return this;
+  }
+
+  /**
+   * array of brand entities
+* contains information on brands mentioned in the text
+   * @return brandEntities
+   */
+  @javax.annotation.Nullable
+  public List<ChatGptBrandEntity> getBrandEntities() {
+    return brandEntities;
+  }
+
+  public void setBrandEntities(List<ChatGptBrandEntity> brandEntities) {
+    this.brandEntities = brandEntities;
+  }
+
+
 
   public ChatGptTextElementItem() {
   }
@@ -129,7 +153,8 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
     return
 
         Objects.equals(this.markdown, chatGptTextElementItem.markdown) &&
-        Objects.equals(this.sources, chatGptTextElementItem.sources) && 
+        Objects.equals(this.sources, chatGptTextElementItem.sources) &&
+        Objects.equals(this.brandEntities, chatGptTextElementItem.brandEntities) && 
         super.equals(o);
     
   }
@@ -140,7 +165,7 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(markdown, sources);
+  return Objects.hash(markdown, sources, brandEntities);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -157,6 +182,7 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
 
     sb.append("    markdown: ").append(toIndentedString(markdown)).append("\n");
     sb.append("    sources: ").append(toIndentedString(sources)).append("\n");
+    sb.append("    brandEntities: ").append(toIndentedString(brandEntities)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -186,6 +212,8 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
     openapiFields.add("markdown");
     
     openapiFields.add("sources");
+    
+    openapiFields.add("brand_entities");
     
 
     // a set of required properties/fields (JSON key names)

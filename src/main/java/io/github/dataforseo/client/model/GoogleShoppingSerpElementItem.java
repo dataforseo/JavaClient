@@ -50,6 +50,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   /**
    * domain of the URL
 * domain of the URL where a special offer is posted
+* Note: this field is deprecated and will return null
    * @return domain
    */
   @javax.annotation.Nullable
@@ -120,6 +121,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   /**
    * URL pointing at special offer page
 * URL where a special offer is posted
+* Note: this field is deprecated and will return null
    * @return url
    */
   @javax.annotation.Nullable

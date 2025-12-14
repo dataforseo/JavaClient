@@ -108,7 +108,7 @@ public class AiOptimizationApi {
     }
 
 
-    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -155,32 +155,32 @@ public class AiOptimizationApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call aiOptimizationChatGptLlmScraperLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call chatGptLlmScraperLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return aiOptimizationChatGptLlmScraperLocationsCall(_callback);
+       return chatGptLlmScraperLocationsCall(_callback);
 
     }
 
-    public AiOptimizationChatGptLlmScraperLocationsResponseInfo aiOptimizationChatGptLlmScraperLocations() throws ApiException {
-       ApiResponse<AiOptimizationChatGptLlmScraperLocationsResponseInfo> localVarResp = aiOptimizationChatGptLlmScraperLocationsWithHttpInfo();
+    public AiOptimizationChatGptLlmScraperLocationsResponseInfo chatGptLlmScraperLocations() throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperLocationsResponseInfo> localVarResp = chatGptLlmScraperLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<AiOptimizationChatGptLlmScraperLocationsResponseInfo> aiOptimizationChatGptLlmScraperLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsValidateBeforeCall(null);
+    public ApiResponse<AiOptimizationChatGptLlmScraperLocationsResponseInfo> chatGptLlmScraperLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmScraperLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsAsync(final ApiCallback<AiOptimizationChatGptLlmScraperLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLocationsAsync(final ApiCallback<AiOptimizationChatGptLlmScraperLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = chatGptLlmScraperLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -228,36 +228,36 @@ public class AiOptimizationApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call chatGptLlmScraperLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling aiOptimizationChatGptLlmScraperLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling chatGptLlmScraperLocationsCountry(Async)");
        }
 
-       return aiOptimizationChatGptLlmScraperLocationsCountryCall(country, _callback);
+       return chatGptLlmScraperLocationsCountryCall(country, _callback);
 
     }
 
-    public AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo aiOptimizationChatGptLlmScraperLocationsCountry(String country) throws ApiException {
-       ApiResponse<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> localVarResp = aiOptimizationChatGptLlmScraperLocationsCountryWithHttpInfo(country);
+    public AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo chatGptLlmScraperLocationsCountry(String country) throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> localVarResp = chatGptLlmScraperLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> aiOptimizationChatGptLlmScraperLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> chatGptLlmScraperLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmScraperLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call aiOptimizationChatGptLlmScraperLocationsCountryAsync(String country, final ApiCallback<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLocationsCountryAsync(String country, final ApiCallback<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = chatGptLlmScraperLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call aiOptimizationChatGptLlmScraperLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -304,26 +304,26 @@ public class AiOptimizationApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call aiOptimizationChatGptLlmScraperLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call chatGptLlmScraperLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return aiOptimizationChatGptLlmScraperLanguagesCall(_callback);
+       return chatGptLlmScraperLanguagesCall(_callback);
 
     }
 
-    public AiOptimizationChatGptLlmScraperLanguagesResponseInfo aiOptimizationChatGptLlmScraperLanguages() throws ApiException {
-       ApiResponse<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> localVarResp = aiOptimizationChatGptLlmScraperLanguagesWithHttpInfo();
+    public AiOptimizationChatGptLlmScraperLanguagesResponseInfo chatGptLlmScraperLanguages() throws ApiException {
+       ApiResponse<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> localVarResp = chatGptLlmScraperLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> aiOptimizationChatGptLlmScraperLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLanguagesValidateBeforeCall(null);
+    public ApiResponse<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> chatGptLlmScraperLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = chatGptLlmScraperLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call aiOptimizationChatGptLlmScraperLanguagesAsync(final ApiCallback<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call chatGptLlmScraperLanguagesAsync(final ApiCallback<AiOptimizationChatGptLlmScraperLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = aiOptimizationChatGptLlmScraperLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = chatGptLlmScraperLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AiOptimizationChatGptLlmScraperLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -625,7 +625,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call aiOptimizationLlmMentionsLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call llmMentionsLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -672,26 +672,26 @@ public class AiOptimizationApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call aiOptimizationLlmMentionsLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call llmMentionsLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return aiOptimizationLlmMentionsLocationsAndLanguagesCall(_callback);
+       return llmMentionsLocationsAndLanguagesCall(_callback);
 
     }
 
-    public AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo aiOptimizationLlmMentionsLocationsAndLanguages() throws ApiException {
-       ApiResponse<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> localVarResp = aiOptimizationLlmMentionsLocationsAndLanguagesWithHttpInfo();
+    public AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo llmMentionsLocationsAndLanguages() throws ApiException {
+       ApiResponse<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> localVarResp = llmMentionsLocationsAndLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> aiOptimizationLlmMentionsLocationsAndLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = aiOptimizationLlmMentionsLocationsAndLanguagesValidateBeforeCall(null);
+    public ApiResponse<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> llmMentionsLocationsAndLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = llmMentionsLocationsAndLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call aiOptimizationLlmMentionsLocationsAndLanguagesAsync(final ApiCallback<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call llmMentionsLocationsAndLanguagesAsync(final ApiCallback<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = aiOptimizationLlmMentionsLocationsAndLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = llmMentionsLocationsAndLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -2416,7 +2416,7 @@ public class AiOptimizationApi {
        return localVarCall;
     }
 
-    public okhttp3.Call aiOptimizationAiKeywordDataLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call aiKeywordDataLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2463,26 +2463,26 @@ public class AiOptimizationApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call aiOptimizationAiKeywordDataLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call aiKeywordDataLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return aiOptimizationAiKeywordDataLocationsAndLanguagesCall(_callback);
+       return aiKeywordDataLocationsAndLanguagesCall(_callback);
 
     }
 
-    public AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo aiOptimizationAiKeywordDataLocationsAndLanguages() throws ApiException {
-       ApiResponse<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> localVarResp = aiOptimizationAiKeywordDataLocationsAndLanguagesWithHttpInfo();
+    public AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo aiKeywordDataLocationsAndLanguages() throws ApiException {
+       ApiResponse<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> localVarResp = aiKeywordDataLocationsAndLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> aiOptimizationAiKeywordDataLocationsAndLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = aiOptimizationAiKeywordDataLocationsAndLanguagesValidateBeforeCall(null);
+    public ApiResponse<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> aiKeywordDataLocationsAndLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = aiKeywordDataLocationsAndLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call aiOptimizationAiKeywordDataLocationsAndLanguagesAsync(final ApiCallback<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call aiKeywordDataLocationsAndLanguagesAsync(final ApiCallback<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = aiOptimizationAiKeywordDataLocationsAndLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = aiKeywordDataLocationsAndLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

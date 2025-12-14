@@ -5,10 +5,10 @@ All URIs are relative to *https://api.dataforseo.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**dataforseoLabsIdList**](DataforseoLabsApi.md#dataforseoLabsIdList) | **POST**  /v3/dataforseo_labs/id_list  |
-| [**dataforseoLabsStatus**](DataforseoLabsApi.md#dataforseoLabsStatus) | **GET**  /v3/dataforseo_labs/status  |
+| [**status**](DataforseoLabsApi.md#status) | **GET**  /v3/dataforseo_labs/status  |
 | [**dataforseoLabsErrors**](DataforseoLabsApi.md#dataforseoLabsErrors) | **POST**  /v3/dataforseo_labs/errors  |
 | [**availableFilters**](DataforseoLabsApi.md#availableFilters) | **GET**  /v3/dataforseo_labs/available_filters  |
-| [**dataforseoLabsLocationsAndLanguages**](DataforseoLabsApi.md#dataforseoLabsLocationsAndLanguages) | **GET**  /v3/dataforseo_labs/locations_and_languages  |
+| [**locationsAndLanguages**](DataforseoLabsApi.md#locationsAndLanguages) | **GET**  /v3/dataforseo_labs/locations_and_languages  |
 | [**categories**](DataforseoLabsApi.md#categories) | **GET**  /v3/dataforseo_labs/categories  |
 | [**googleAvailableHistory**](DataforseoLabsApi.md#googleAvailableHistory) | **GET**  /v3/dataforseo_labs/google/available_history  |
 | [**googleKeywordsForSiteLive**](DataforseoLabsApi.md#googleKeywordsForSiteLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_site/live  |
@@ -17,7 +17,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleKeywordIdeasLive**](DataforseoLabsApi.md#googleKeywordIdeasLive) | **POST**  /v3/dataforseo_labs/google/keyword_ideas/live  |
 | [**googleBulkKeywordDifficultyLive**](DataforseoLabsApi.md#googleBulkKeywordDifficultyLive) | **POST**  /v3/dataforseo_labs/google/bulk_keyword_difficulty/live  |
 | [**googleSearchIntentLive**](DataforseoLabsApi.md#googleSearchIntentLive) | **POST**  /v3/dataforseo_labs/google/search_intent/live  |
-| [**dataforseoLabsGoogleCategoriesForKeywordsLanguages**](DataforseoLabsApi.md#dataforseoLabsGoogleCategoriesForKeywordsLanguages) | **GET**  /v3/dataforseo_labs/google/categories_for_keywords/languages  |
+| [**googleCategoriesForKeywordsLanguages**](DataforseoLabsApi.md#googleCategoriesForKeywordsLanguages) | **GET**  /v3/dataforseo_labs/google/categories_for_keywords/languages  |
 | [**googleCategoriesForDomainLive**](DataforseoLabsApi.md#googleCategoriesForDomainLive) | **POST**  /v3/dataforseo_labs/google/categories_for_domain/live  |
 | [**googleCategoriesForKeywordsLive**](DataforseoLabsApi.md#googleCategoriesForKeywordsLive) | **POST**  /v3/dataforseo_labs/google/categories_for_keywords/live  |
 | [**googleKeywordsForCategoriesLive**](DataforseoLabsApi.md#googleKeywordsForCategoriesLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_categories/live  |
@@ -93,13 +93,30 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsIdListRequestInfo model = new DataforseoLabsIdListRequestInfo()
-           .datetimeFrom("2025-08-22 08:06:56 +00:00")
-           .datetimeTo("2025-10-22 08:06:56 +00:00")
+    DataforseoLabsIdListResponseInfo response = apiInstance.dataforseoLabsIdList(
+       List.of(
+    
+           new DataforseoLabsIdListRequestInfo()
+        
+           .datetimeFrom()
+        
+        
+           .datetimeTo()
+        
+        
            .limit(100)
+        
+        
            .offset(0)
-           .sort("desc");
-    DataforseoLabsIdListResponseInfo response = apiInstance.dataforseoLabsIdList(List.of(model));
+        
+        
+           .sort("desc")
+        
+        
+           .includeMetadata(true)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#dataforseoLabsIdList");
@@ -138,9 +155,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="dataforseoLabsStatus"></a>
-# **dataforseoLabsStatus**
-> DataforseoLabsStatusResponseInfo dataforseoLabsStatus()
+<a id="status"></a>
+# **status**
+> DataforseoLabsStatusResponseInfo status()
 
 
 ### Example
@@ -168,10 +185,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
 
-    DataforseoLabsStatusResponseInfo response = apiInstance.dataforseoLabsStatus();
+    DataforseoLabsStatusResponseInfo response = apiInstance.status();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling DataforseoLabsApi#dataforseoLabsStatus");
+      System.err.println("Exception when calling DataforseoLabsApi#status");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -236,10 +253,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsErrorsRequestInfo model = new DataforseoLabsErrorsRequestInfo()
+    DataforseoLabsErrorsResponseInfo response = apiInstance.dataforseoLabsErrors(
+       List.of(
+    
+           new DataforseoLabsErrorsRequestInfo()
+        
            .limit(10)
-           .offset(0);
-    DataforseoLabsErrorsResponseInfo response = apiInstance.dataforseoLabsErrors(List.of(model));
+        
+        
+           .offset(0)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#dataforseoLabsErrors");
@@ -347,9 +372,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="dataforseoLabsLocationsAndLanguages"></a>
-# **dataforseoLabsLocationsAndLanguages**
-> DataforseoLabsLocationsAndLanguagesResponseInfo dataforseoLabsLocationsAndLanguages()
+<a id="locationsAndLanguages"></a>
+# **locationsAndLanguages**
+> DataforseoLabsLocationsAndLanguagesResponseInfo locationsAndLanguages()
 
 
 ### Example
@@ -377,10 +402,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
 
-    DataforseoLabsLocationsAndLanguagesResponseInfo response = apiInstance.dataforseoLabsLocationsAndLanguages();
+    DataforseoLabsLocationsAndLanguagesResponseInfo response = apiInstance.locationsAndLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling DataforseoLabsApi#dataforseoLabsLocationsAndLanguages");
+      System.err.println("Exception when calling DataforseoLabsApi#locationsAndLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -583,14 +608,41 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo model = new DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo()
+    DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo response = apiInstance.googleKeywordsForSiteLive(
+       List.of(
+    
+           new DataforseoLabsGoogleKeywordsForSiteLiveRequestInfo()
+        
            .target("apple.com")
-           .locationCode(2840)
+        
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
            .includeSerpInfo(true)
+        
+        
            .includeSubdomains(true)
-           .limit(3);
-    DataforseoLabsGoogleKeywordsForSiteLiveResponseInfo response = apiInstance.googleKeywordsForSiteLive(List.of(model));
+        
+        
+           .filters(List.of(
+    
+           "serp_info.se_results_count",
+    
+           ">",
+    
+           0
+    
+       ))
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleKeywordsForSiteLive");
@@ -658,12 +710,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo model = new DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo()
+    DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo response = apiInstance.googleRelatedKeywordsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleRelatedKeywordsLiveRequestInfo()
+        
            .keyword("phone")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(3);
-    DataforseoLabsGoogleRelatedKeywordsLiveResponseInfo response = apiInstance.googleRelatedKeywordsLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleRelatedKeywordsLive");
@@ -731,14 +795,30 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo model = new DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo()
+    DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo response = apiInstance.googleKeywordSuggestionsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleKeywordSuggestionsLiveRequestInfo()
+        
            .keyword("phone")
+        
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
-           .includeSeedKeyword(true)
+        
+        
            .includeSerpInfo(true)
-           .limit(1);
-    DataforseoLabsGoogleKeywordSuggestionsLiveResponseInfo response = apiInstance.googleKeywordSuggestionsLive(List.of(model));
+        
+        
+           .includeSeedKeyword(true)
+        
+        
+           .limit(1)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleKeywordSuggestionsLive");
@@ -806,17 +886,33 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleKeywordIdeasLiveRequestInfo model = new DataforseoLabsGoogleKeywordIdeasLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "phone",
-                   "watch"
-                ))
+    DataforseoLabsGoogleKeywordIdeasLiveResponseInfo response = apiInstance.googleKeywordIdeasLive(
+       List.of(
+    
+           new DataforseoLabsGoogleKeywordIdeasLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "phone",
+    
+           "watch"
+    
+       ))
+        
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
+        
+        
            .includeSerpInfo(true)
-           .limit(3);
-    DataforseoLabsGoogleKeywordIdeasLiveResponseInfo response = apiInstance.googleKeywordIdeasLive(List.of(model));
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleKeywordIdeasLive");
@@ -884,16 +980,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo model = new DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "dentist new york",
-                   "pizza brooklyn",
-                   "car dealer los angeles"
-                ))
+    DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo response = apiInstance.googleBulkKeywordDifficultyLive(
+       List.of(
+    
+           new DataforseoLabsGoogleBulkKeywordDifficultyLiveRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    DataforseoLabsGoogleBulkKeywordDifficultyLiveResponseInfo response = apiInstance.googleBulkKeywordDifficultyLive(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "dentist new york",
+    
+           "pizza brooklyn",
+    
+           "car dealer los angeles"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleBulkKeywordDifficultyLive");
@@ -961,16 +1070,28 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleSearchIntentLiveRequestInfo model = new DataforseoLabsGoogleSearchIntentLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "login page",
-                   "audi a7",
-                   "elon musk",
-                   "milk store new york"
-                ))
-           .languageCode("en");
-    DataforseoLabsGoogleSearchIntentLiveResponseInfo response = apiInstance.googleSearchIntentLive(List.of(model));
+    DataforseoLabsGoogleSearchIntentLiveResponseInfo response = apiInstance.googleSearchIntentLive(
+       List.of(
+    
+           new DataforseoLabsGoogleSearchIntentLiveRequestInfo()
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "login page",
+    
+           "audi a7",
+    
+           "elon musk",
+    
+           "milk store new york"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleSearchIntentLive");
@@ -1009,9 +1130,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="dataforseoLabsGoogleCategoriesForKeywordsLanguages"></a>
-# **dataforseoLabsGoogleCategoriesForKeywordsLanguages**
-> DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo dataforseoLabsGoogleCategoriesForKeywordsLanguages()
+<a id="googleCategoriesForKeywordsLanguages"></a>
+# **googleCategoriesForKeywordsLanguages**
+> DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo googleCategoriesForKeywordsLanguages()
 
 
 ### Example
@@ -1039,10 +1160,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
 
-    DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo response = apiInstance.dataforseoLabsGoogleCategoriesForKeywordsLanguages();
+    DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo response = apiInstance.googleCategoriesForKeywordsLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling DataforseoLabsApi#dataforseoLabsGoogleCategoriesForKeywordsLanguages");
+      System.err.println("Exception when calling DataforseoLabsApi#googleCategoriesForKeywordsLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1107,19 +1228,37 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo model = new DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo()
+    DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo response = apiInstance.googleCategoriesForDomainLive(
+       List.of(
+    
+           new DataforseoLabsGoogleCategoriesForDomainLiveRequestInfo()
+        
            .target("dataforseo.com")
-           .locationName("United States")
+        
+        
            .languageCode("en")
-           .itemTypes(
-               List.of(
-                   "paid",
-                   "organic",
-                   "featured_snippet",
-                   "local_pack"
-                ))
-           .limit(3);
-    DataforseoLabsGoogleCategoriesForDomainLiveResponseInfo response = apiInstance.googleCategoriesForDomainLive(List.of(model));
+        
+        
+           .locationName("United States")
+        
+        
+           .itemTypes(List.of(
+    
+           "paid",
+    
+           "organic",
+    
+           "featured_snippet",
+    
+           "local_pack"
+    
+       ))
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleCategoriesForDomainLive");
@@ -1187,15 +1326,26 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo model = new DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "dentist new york",
-                   "pizza brooklyn",
-                   "car dealer los angeles"
-                ))
-           .languageCode("en");
-    DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo response = apiInstance.googleCategoriesForKeywordsLive(List.of(model));
+    DataforseoLabsGoogleCategoriesForKeywordsLiveResponseInfo response = apiInstance.googleCategoriesForKeywordsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleCategoriesForKeywordsLiveRequestInfo()
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "dentist new york",
+    
+           "pizza brooklyn",
+    
+           "car dealer los angeles"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleCategoriesForKeywordsLive");
@@ -1263,17 +1413,33 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo model = new DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo()
-           .categoryCodes(
-               List.of(
-                   "12191",
-                   "12193"
-                ))
-           .locationCode(2840)
+    DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo response = apiInstance.googleKeywordsForCategoriesLive(
+       List.of(
+    
+           new DataforseoLabsGoogleKeywordsForCategoriesLiveRequestInfo()
+        
+           .categoryCodes(List.of(
+    
+           12191,
+    
+           12193
+    
+       ))
+        
+        
            .languageName("English")
+        
+        
+           .locationCode(2840)
+        
+        
            .includeSerpInfo(true)
-           .limit(3);
-    DataforseoLabsGoogleKeywordsForCategoriesLiveResponseInfo response = apiInstance.googleKeywordsForCategoriesLive(List.of(model));
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleKeywordsForCategoriesLive");
@@ -1341,18 +1507,36 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo model = new DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo()
-           .categoryCodes(
-               List.of(
-                   "13418",
-                   "11494"
-                ))
-           .firstDate("2025-08-22")
-           .secondDate("2025-10-22")
+    DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo response = apiInstance.googleDomainMetricsByCategoriesLive(
+       List.of(
+    
+           new DataforseoLabsGoogleDomainMetricsByCategoriesLiveRequestInfo()
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
-           .limit(3);
-    DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo response = apiInstance.googleDomainMetricsByCategoriesLive(List.of(model));
+        
+        
+           .categoryCodes(List.of(
+    
+           13418,
+    
+           11494
+    
+       ))
+        
+        
+           .firstDate()
+        
+        
+           .secondDate()
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleDomainMetricsByCategoriesLive");
@@ -1420,11 +1604,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleTopSearchesLiveRequestInfo model = new DataforseoLabsGoogleTopSearchesLiveRequestInfo()
-           .locationCode(2840)
+    DataforseoLabsGoogleTopSearchesLiveResponseInfo response = apiInstance.googleTopSearchesLive(
+       List.of(
+    
+           new DataforseoLabsGoogleTopSearchesLiveRequestInfo()
+        
            .languageName("English")
-           .limit(3);
-    DataforseoLabsGoogleTopSearchesLiveResponseInfo response = apiInstance.googleTopSearchesLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleTopSearchesLive");
@@ -1492,9 +1686,36 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo model = new DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo()
-           .limit(2);
-    DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo response = apiInstance.googleDomainWhoisOverviewLive(List.of(model));
+    DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo response = apiInstance.googleDomainWhoisOverviewLive(
+       List.of(
+    
+           new DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo()
+        
+           .limit(2)
+        
+        
+           .filters(List.of(
+    
+           List.of(
+    
+           "epp_status_codes",
+    
+           "in",
+    
+           List.of(
+    
+           "client_transfer_prohibited",
+    
+           "client_update_prohibited"
+    
+       )
+    
+       )
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleDomainWhoisOverviewLive");
@@ -1562,13 +1783,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleRankedKeywordsLiveRequestInfo model = new DataforseoLabsGoogleRankedKeywordsLiveRequestInfo()
+    DataforseoLabsGoogleRankedKeywordsLiveResponseInfo response = apiInstance.googleRankedKeywordsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleRankedKeywordsLiveRequestInfo()
+        
            .target("dataforseo.com")
-           .locationName("United States")
+        
+        
            .languageName("English")
+        
+        
+           .locationName("United States")
+        
+        
+           .loadRankAbsolute(true)
+        
+        
            .limit(3)
-           .loadRankAbsolute(true);
-    DataforseoLabsGoogleRankedKeywordsLiveResponseInfo response = apiInstance.googleRankedKeywordsLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleRankedKeywordsLive");
@@ -1636,19 +1871,35 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo model = new DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "phone"
-                ))
-           .locationCode(2840)
+    DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo response = apiInstance.googleSerpCompetitorsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "phone"
+    
+       ))
+        
+        
            .languageName("English")
-           .itemTypes(
-               List.of(
-                   "organic"
-                ))
-           .limit(5);
-    DataforseoLabsGoogleSerpCompetitorsLiveResponseInfo response = apiInstance.googleSerpCompetitorsLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .itemTypes(List.of(
+    
+           "organic"
+    
+       ))
+        
+        
+           .limit(5)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleSerpCompetitorsLive");
@@ -1716,18 +1967,35 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo model = new DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo()
+    DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo response = apiInstance.googleCompetitorsDomainLive(
+       List.of(
+    
+           new DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo()
+        
            .target("newmouth.com")
-           .locationCode(2840)
+        
+        
+           .intersectingDomains(List.of(
+    
+           "dentaly.org",
+    
+           "health.com",
+    
+           "trysnow.com"
+    
+       ))
+        
+        
            .languageName("English")
+        
+        
+           .locationCode(2840)
+        
+        
            .limit(3)
-           .intersectingDomains(
-               List.of(
-                   "dentaly.org",
-                   "health.com",
-                   "trysnow.com"
-                ));
-    DataforseoLabsGoogleCompetitorsDomainLiveResponseInfo response = apiInstance.googleCompetitorsDomainLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleCompetitorsDomainLive");
@@ -1795,14 +2063,30 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleDomainIntersectionLiveRequestInfo model = new DataforseoLabsGoogleDomainIntersectionLiveRequestInfo()
+    DataforseoLabsGoogleDomainIntersectionLiveResponseInfo response = apiInstance.googleDomainIntersectionLive(
+       List.of(
+    
+           new DataforseoLabsGoogleDomainIntersectionLiveRequestInfo()
+        
            .target1("mom.com")
+        
+        
            .target2("quora.com")
-           .locationCode(2840)
+        
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
            .includeSerpInfo(true)
-           .limit(3);
-    DataforseoLabsGoogleDomainIntersectionLiveResponseInfo response = apiInstance.googleDomainIntersectionLive(List.of(model));
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleDomainIntersectionLive");
@@ -1870,11 +2154,48 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleSubdomainsLiveRequestInfo model = new DataforseoLabsGoogleSubdomainsLiveRequestInfo()
+    DataforseoLabsGoogleSubdomainsLiveResponseInfo response = apiInstance.googleSubdomainsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleSubdomainsLiveRequestInfo()
+        
            .target("dataforseo.com")
+        
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    DataforseoLabsGoogleSubdomainsLiveResponseInfo response = apiInstance.googleSubdomainsLive(List.of(model));
+        
+        
+           .filters(List.of(
+    
+           List.of(
+    
+           "metrics.organic.pos_1",
+    
+           "<>",
+    
+           0
+    
+       ),
+    
+           "or",
+    
+           List.of(
+    
+           "metrics.organic.pos_2_3",
+    
+           "<>",
+    
+           0
+    
+       )
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleSubdomainsLive");
@@ -1942,12 +2263,51 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleRelevantPagesLiveRequestInfo model = new DataforseoLabsGoogleRelevantPagesLiveRequestInfo()
+    DataforseoLabsGoogleRelevantPagesLiveResponseInfo response = apiInstance.googleRelevantPagesLive(
+       List.of(
+    
+           new DataforseoLabsGoogleRelevantPagesLiveRequestInfo()
+        
            .target("amazon.com")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(3);
-    DataforseoLabsGoogleRelevantPagesLiveResponseInfo response = apiInstance.googleRelevantPagesLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .filters(List.of(
+    
+           List.of(
+    
+           "metrics.organic.pos_1",
+    
+           "<>",
+    
+           0
+    
+       ),
+    
+           "or",
+    
+           List.of(
+    
+           "metrics.organic.pos_2_3",
+    
+           "<>",
+    
+           0
+    
+       )
+    
+       ))
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleRelevantPagesLive");
@@ -2015,11 +2375,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo model = new DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo()
+    DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo response = apiInstance.googleDomainRankOverviewLive(
+       List.of(
+    
+           new DataforseoLabsGoogleDomainRankOverviewLiveRequestInfo()
+        
            .target("dataforseo.com")
+        
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    DataforseoLabsGoogleDomainRankOverviewLiveResponseInfo response = apiInstance.googleDomainRankOverviewLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleDomainRankOverviewLive");
@@ -2087,13 +2457,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo model = new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo()
+    DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo response = apiInstance.googleHistoricalSerpsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleHistoricalSerpsLiveRequestInfo()
+        
            .keyword("albert einstein")
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    DataforseoLabsGoogleHistoricalSerpsLiveResponseInfo response = apiInstance.googleHistoricalSerpsLive(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleHistoricalSerpsLive");
@@ -2161,13 +2545,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo model = new DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo()
+    DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo response = apiInstance.googleHistoricalRankOverviewLive(
+       List.of(
+    
+           new DataforseoLabsGoogleHistoricalRankOverviewLiveRequestInfo()
+        
            .target("dataforseo.com")
+        
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22");
-    DataforseoLabsGoogleHistoricalRankOverviewLiveResponseInfo response = apiInstance.googleHistoricalRankOverviewLive(List.of(model));
+        
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleHistoricalRankOverviewLive");
@@ -2235,15 +2633,35 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGooglePageIntersectionLiveRequestInfo model = new DataforseoLabsGooglePageIntersectionLiveRequestInfo()
-       .pages(
-           Map.ofEntries(
-               ))
-           .locationCode(2840)
+    DataforseoLabsGooglePageIntersectionLiveResponseInfo response = apiInstance.googlePageIntersectionLive(
+       List.of(
+    
+           new DataforseoLabsGooglePageIntersectionLiveRequestInfo()
+        
+           .pages(Map.of(
+    
+           "1", "https://forbes.com"
+           ,
+    
+           "2", "https://cnn.com/*"
+    
+    
+       ))
+        
+        
            .languageName("English")
+        
+        
+           .locationCode(2840)
+        
+        
+           .includeSerpInfo(true)
+        
+        
            .limit(3)
-           .includeSerpInfo(true);
-    DataforseoLabsGooglePageIntersectionLiveResponseInfo response = apiInstance.googlePageIntersectionLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googlePageIntersectionLive");
@@ -2311,21 +2729,38 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo model = new DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo()
-           .targets(
-               List.of(
-                   "dataforseo.com",
-                   "cnn.com",
-                   "forbes.com"
-                ))
+    DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo response = apiInstance.googleBulkTrafficEstimationLive(
+       List.of(
+    
+           new DataforseoLabsGoogleBulkTrafficEstimationLiveRequestInfo()
+        
+           .targets(List.of(
+    
+           "dataforseo.com",
+    
+           "cnn.com",
+    
+           "forbes.com"
+    
+       ))
+        
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
-           .itemTypes(
-               List.of(
-                   "organic",
-                   "paid"
-                ));
-    DataforseoLabsGoogleBulkTrafficEstimationLiveResponseInfo response = apiInstance.googleBulkTrafficEstimationLive(List.of(model));
+        
+        
+           .itemTypes(List.of(
+    
+           "organic",
+    
+           "paid"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleBulkTrafficEstimationLive");
@@ -2393,23 +2828,44 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo model = new DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo()
-           .targets(
-               List.of(
-                   "dataforseo.com",
-                   "cnn.com",
-                   "forbes.com"
-                ))
+    DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo response = apiInstance.googleHistoricalBulkTrafficEstimationLive(
+       List.of(
+    
+           new DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo()
+        
+           .targets(List.of(
+    
+           "dataforseo.com",
+    
+           "cnn.com",
+    
+           "forbes.com"
+    
+       ))
+        
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
-           .dateFrom("2025-08-22")
-           .dateTo("2025-10-22")
-           .itemTypes(
-               List.of(
-                   "organic",
-                   "paid"
-                ));
-    DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveResponseInfo response = apiInstance.googleHistoricalBulkTrafficEstimationLive(List.of(model));
+        
+        
+           .dateFrom()
+        
+        
+           .dateTo()
+        
+        
+           .itemTypes(List.of(
+    
+           "organic",
+    
+           "paid"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleHistoricalBulkTrafficEstimationLive");
@@ -2477,14 +2933,25 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo model = new DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "iphone"
-                ))
+    DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo response = apiInstance.googleHistoricalKeywordDataLive(
+       List.of(
+    
+           new DataforseoLabsGoogleHistoricalKeywordDataLiveRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    DataforseoLabsGoogleHistoricalKeywordDataLiveResponseInfo response = apiInstance.googleHistoricalKeywordDataLive(List.of(model));
+        
+        
+           .keywords(List.of(
+    
+           "iphone"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleHistoricalKeywordDataLive");
@@ -2552,16 +3019,31 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleKeywordOverviewLiveRequestInfo model = new DataforseoLabsGoogleKeywordOverviewLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "iphone"
-                ))
-           .locationCode(2840)
+    DataforseoLabsGoogleKeywordOverviewLiveResponseInfo response = apiInstance.googleKeywordOverviewLive(
+       List.of(
+    
+           new DataforseoLabsGoogleKeywordOverviewLiveRequestInfo()
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
+           .includeClickstreamData(true)
+        
+        
            .includeSerpInfo(true)
-           .includeClickstreamData(true);
-    DataforseoLabsGoogleKeywordOverviewLiveResponseInfo response = apiInstance.googleKeywordOverviewLive(List.of(model));
+        
+        
+           .keywords(List.of(
+    
+           "iphone"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleKeywordOverviewLive");
@@ -2629,16 +3111,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo model = new DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "buy laptop",
-                   "cheap laptops for sale",
-                   "purchase laptop"
-                ))
+    DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo response = apiInstance.amazonBulkSearchVolumeLive(
+       List.of(
+    
+           new DataforseoLabsAmazonBulkSearchVolumeLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "buy laptop",
+    
+           "cheap laptops for sale",
+    
+           "purchase laptop"
+    
+       ))
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    DataforseoLabsAmazonBulkSearchVolumeLiveResponseInfo response = apiInstance.amazonBulkSearchVolumeLive(List.of(model));
+        
+        
+           .languageCode("en")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#amazonBulkSearchVolumeLive");
@@ -2706,13 +3201,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo model = new DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo()
+    DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo response = apiInstance.amazonRelatedKeywordsLive(
+       List.of(
+    
+           new DataforseoLabsAmazonRelatedKeywordsLiveRequestInfo()
+        
            .keyword("computer mouse")
-           .locationCode(2840)
+        
+        
            .languageName("English")
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(5)
+        
+        
            .includeSeedKeyword(true)
-           .limit(5);
-    DataforseoLabsAmazonRelatedKeywordsLiveResponseInfo response = apiInstance.amazonRelatedKeywordsLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#amazonRelatedKeywordsLive");
@@ -2780,11 +3289,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAmazonRankedKeywordsLiveRequestInfo model = new DataforseoLabsAmazonRankedKeywordsLiveRequestInfo()
+    DataforseoLabsAmazonRankedKeywordsLiveResponseInfo response = apiInstance.amazonRankedKeywordsLive(
+       List.of(
+    
+           new DataforseoLabsAmazonRankedKeywordsLiveRequestInfo()
+        
            .asin("B00R92CL5E")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    DataforseoLabsAmazonRankedKeywordsLiveResponseInfo response = apiInstance.amazonRankedKeywordsLive(List.of(model));
+        
+        
+           .languageCode("en")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#amazonRankedKeywordsLive");
@@ -2852,15 +3371,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAmazonProductRankOverviewLiveRequestInfo model = new DataforseoLabsAmazonProductRankOverviewLiveRequestInfo()
-           .asins(
-               List.of(
-                   "B001TJ3HUG",
-                   "B01LW2SL7R"
-                ))
+    DataforseoLabsAmazonProductRankOverviewLiveResponseInfo response = apiInstance.amazonProductRankOverviewLive(
+       List.of(
+    
+           new DataforseoLabsAmazonProductRankOverviewLiveRequestInfo()
+        
+           .asins(List.of(
+    
+           "B001TJ3HUG",
+    
+           "B01LW2SL7R"
+    
+       ))
+        
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    DataforseoLabsAmazonProductRankOverviewLiveResponseInfo response = apiInstance.amazonProductRankOverviewLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#amazonProductRankOverviewLive");
@@ -2928,11 +3459,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAmazonProductCompetitorsLiveRequestInfo model = new DataforseoLabsAmazonProductCompetitorsLiveRequestInfo()
+    DataforseoLabsAmazonProductCompetitorsLiveResponseInfo response = apiInstance.amazonProductCompetitorsLive(
+       List.of(
+    
+           new DataforseoLabsAmazonProductCompetitorsLiveRequestInfo()
+        
            .asin("019005476X")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    DataforseoLabsAmazonProductCompetitorsLiveResponseInfo response = apiInstance.amazonProductCompetitorsLive(List.of(model));
+        
+        
+           .languageCode("en")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#amazonProductCompetitorsLive");
@@ -3000,13 +3541,32 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo model = new DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo()
-       .asins(
-           Map.ofEntries(
-               ))
+    DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo response = apiInstance.amazonProductKeywordIntersectionsLive(
+       List.of(
+    
+           new DataforseoLabsAmazonProductKeywordIntersectionsLiveRequestInfo()
+        
+           .asins(Map.of(
+    
+           "1", "B09172433Z"
+           ,
+    
+           "2", "B07GBZ4Q68"
+           ,
+    
+           "3", "B07GCKQD77"
+    
+    
+       ))
+        
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    DataforseoLabsAmazonProductKeywordIntersectionsLiveResponseInfo response = apiInstance.amazonProductKeywordIntersectionsLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#amazonProductKeywordIntersectionsLive");
@@ -3074,16 +3634,29 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo model = new DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "dentist new york",
-                   "pizza brooklyn",
-                   "car dealer los angeles"
-                ))
+    DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo response = apiInstance.bingBulkKeywordDifficultyLive(
+       List.of(
+    
+           new DataforseoLabsBingBulkKeywordDifficultyLiveRequestInfo()
+        
            .locationCode(2840)
-           .languageCode("en");
-    DataforseoLabsBingBulkKeywordDifficultyLiveResponseInfo response = apiInstance.bingBulkKeywordDifficultyLive(List.of(model));
+        
+        
+           .languageCode("en")
+        
+        
+           .keywords(List.of(
+    
+           "dentist new york",
+    
+           "pizza brooklyn",
+    
+           "car dealer los angeles"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingBulkKeywordDifficultyLive");
@@ -3151,21 +3724,38 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo model = new DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo()
-           .targets(
-               List.of(
-                   "dataforseo.com",
-                   "cnn.com",
-                   "forbes.com"
-                ))
+    DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo response = apiInstance.bingBulkTrafficEstimationLive(
+       List.of(
+    
+           new DataforseoLabsBingBulkTrafficEstimationLiveRequestInfo()
+        
+           .targets(List.of(
+    
+           "dataforseo.com",
+    
+           "cnn.com",
+    
+           "forbes.com"
+    
+       ))
+        
+        
            .locationCode(2840)
+        
+        
            .languageCode("en")
-           .itemTypes(
-               List.of(
-                   "organic",
-                   "paid"
-                ));
-    DataforseoLabsBingBulkTrafficEstimationLiveResponseInfo response = apiInstance.bingBulkTrafficEstimationLive(List.of(model));
+        
+        
+           .itemTypes(List.of(
+    
+           "organic",
+    
+           "paid"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingBulkTrafficEstimationLive");
@@ -3233,18 +3823,35 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingCompetitorsDomainLiveRequestInfo model = new DataforseoLabsBingCompetitorsDomainLiveRequestInfo()
+    DataforseoLabsBingCompetitorsDomainLiveResponseInfo response = apiInstance.bingCompetitorsDomainLive(
+       List.of(
+    
+           new DataforseoLabsBingCompetitorsDomainLiveRequestInfo()
+        
            .target("newmouth.com")
-           .locationCode(2840)
+        
+        
+           .intersectingDomains(List.of(
+    
+           "dentaly.org",
+    
+           "health.com",
+    
+           "trysnow.com"
+    
+       ))
+        
+        
            .languageName("English")
+        
+        
+           .locationCode(2840)
+        
+        
            .limit(3)
-           .intersectingDomains(
-               List.of(
-                   "dentaly.org",
-                   "health.com",
-                   "trysnow.com"
-                ));
-    DataforseoLabsBingCompetitorsDomainLiveResponseInfo response = apiInstance.bingCompetitorsDomainLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingCompetitorsDomainLive");
@@ -3312,13 +3919,54 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingDomainIntersectionLiveRequestInfo model = new DataforseoLabsBingDomainIntersectionLiveRequestInfo()
+    DataforseoLabsBingDomainIntersectionLiveResponseInfo response = apiInstance.bingDomainIntersectionLive(
+       List.of(
+    
+           new DataforseoLabsBingDomainIntersectionLiveRequestInfo()
+        
            .target1("mom.me")
+        
+        
            .target2("quora.com")
-           .locationCode(2840)
+        
+        
            .languageCode("en")
-           .limit(5);
-    DataforseoLabsBingDomainIntersectionLiveResponseInfo response = apiInstance.bingDomainIntersectionLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .filters(List.of(
+    
+           List.of(
+    
+           "first_domain_serp_element.etv",
+    
+           ">",
+    
+           0
+    
+       ),
+    
+           "and",
+    
+           List.of(
+    
+           "first_domain_serp_element.description",
+    
+           "like",
+    
+           "%goat%"
+    
+       )
+    
+       ))
+        
+        
+           .limit(5)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingDomainIntersectionLive");
@@ -3386,11 +4034,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingDomainRankOverviewLiveRequestInfo model = new DataforseoLabsBingDomainRankOverviewLiveRequestInfo()
+    DataforseoLabsBingDomainRankOverviewLiveResponseInfo response = apiInstance.bingDomainRankOverviewLive(
+       List.of(
+    
+           new DataforseoLabsBingDomainRankOverviewLiveRequestInfo()
+        
            .target("dataforseo.com")
+        
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    DataforseoLabsBingDomainRankOverviewLiveResponseInfo response = apiInstance.bingDomainRankOverviewLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingDomainRankOverviewLive");
@@ -3458,14 +4116,32 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingPageIntersectionLiveRequestInfo model = new DataforseoLabsBingPageIntersectionLiveRequestInfo()
-       .pages(
-           Map.ofEntries(
-               ))
-           .locationCode(2840)
+    DataforseoLabsBingPageIntersectionLiveResponseInfo response = apiInstance.bingPageIntersectionLive(
+       List.of(
+    
+           new DataforseoLabsBingPageIntersectionLiveRequestInfo()
+        
+           .pages(Map.of(
+    
+           "1", "https://dataforseo.com"
+           ,
+    
+           "2", "https://ahrefs.com/*"
+    
+    
+       ))
+        
+        
            .languageName("English")
-           .limit(3);
-    DataforseoLabsBingPageIntersectionLiveResponseInfo response = apiInstance.bingPageIntersectionLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingPageIntersectionLive");
@@ -3533,13 +4209,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingRankedKeywordsLiveRequestInfo model = new DataforseoLabsBingRankedKeywordsLiveRequestInfo()
+    DataforseoLabsBingRankedKeywordsLiveResponseInfo response = apiInstance.bingRankedKeywordsLive(
+       List.of(
+    
+           new DataforseoLabsBingRankedKeywordsLiveRequestInfo()
+        
            .target("dataforseo.com")
-           .locationName("United States")
+        
+        
            .languageName("English")
+        
+        
+           .locationName("United States")
+        
+        
+           .loadRankAbsolute(true)
+        
+        
            .limit(3)
-           .loadRankAbsolute(true);
-    DataforseoLabsBingRankedKeywordsLiveResponseInfo response = apiInstance.bingRankedKeywordsLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingRankedKeywordsLive");
@@ -3607,12 +4297,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingRelatedKeywordsLiveRequestInfo model = new DataforseoLabsBingRelatedKeywordsLiveRequestInfo()
+    DataforseoLabsBingRelatedKeywordsLiveResponseInfo response = apiInstance.bingRelatedKeywordsLive(
+       List.of(
+    
+           new DataforseoLabsBingRelatedKeywordsLiveRequestInfo()
+        
            .keyword("phone")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(3);
-    DataforseoLabsBingRelatedKeywordsLiveResponseInfo response = apiInstance.bingRelatedKeywordsLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingRelatedKeywordsLive");
@@ -3680,12 +4382,51 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingRelevantPagesLiveRequestInfo model = new DataforseoLabsBingRelevantPagesLiveRequestInfo()
+    DataforseoLabsBingRelevantPagesLiveResponseInfo response = apiInstance.bingRelevantPagesLive(
+       List.of(
+    
+           new DataforseoLabsBingRelevantPagesLiveRequestInfo()
+        
            .target("dataforseo.com")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(5);
-    DataforseoLabsBingRelevantPagesLiveResponseInfo response = apiInstance.bingRelevantPagesLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .filters(List.of(
+    
+           List.of(
+    
+           "metrics.organic.pos_1",
+    
+           "<>",
+    
+           0
+    
+       ),
+    
+           "or",
+    
+           List.of(
+    
+           "metrics.organic.pos_2_3",
+    
+           "<>",
+    
+           0
+    
+       )
+    
+       ))
+        
+        
+           .limit(5)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingRelevantPagesLive");
@@ -3753,19 +4494,35 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingSerpCompetitorsLiveRequestInfo model = new DataforseoLabsBingSerpCompetitorsLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "phone"
-                ))
-           .locationCode(2840)
+    DataforseoLabsBingSerpCompetitorsLiveResponseInfo response = apiInstance.bingSerpCompetitorsLive(
+       List.of(
+    
+           new DataforseoLabsBingSerpCompetitorsLiveRequestInfo()
+        
+           .keywords(List.of(
+    
+           "phone"
+    
+       ))
+        
+        
            .languageName("English")
-           .itemTypes(
-               List.of(
-                   "organic"
-                ))
-           .limit(5);
-    DataforseoLabsBingSerpCompetitorsLiveResponseInfo response = apiInstance.bingSerpCompetitorsLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .itemTypes(List.of(
+    
+           "organic"
+    
+       ))
+        
+        
+           .limit(5)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingSerpCompetitorsLive");
@@ -3833,12 +4590,51 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsBingSubdomainsLiveRequestInfo model = new DataforseoLabsBingSubdomainsLiveRequestInfo()
+    DataforseoLabsBingSubdomainsLiveResponseInfo response = apiInstance.bingSubdomainsLive(
+       List.of(
+    
+           new DataforseoLabsBingSubdomainsLiveRequestInfo()
+        
            .target("dataforseo.com")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(5);
-    DataforseoLabsBingSubdomainsLiveResponseInfo response = apiInstance.bingSubdomainsLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .filters(List.of(
+    
+           List.of(
+    
+           "metrics.organic.pos_1",
+    
+           "<>",
+    
+           0
+    
+       ),
+    
+           "or",
+    
+           List.of(
+    
+           "metrics.organic.pos_2_3",
+    
+           "<>",
+    
+           0
+    
+       )
+    
+       ))
+        
+        
+           .limit(5)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#bingSubdomainsLive");
@@ -3906,15 +4702,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo model = new DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo()
-           .appIds(
-               List.of(
-                   "org.telegram.messenger",
-                   "com.zhiliaoapp.musically"
-                ))
+    DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo response = apiInstance.googleBulkAppMetricsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleBulkAppMetricsLiveRequestInfo()
+        
+           .appIds(List.of(
+    
+           "org.telegram.messenger",
+    
+           "com.zhiliaoapp.musically"
+    
+       ))
+        
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    DataforseoLabsGoogleBulkAppMetricsLiveResponseInfo response = apiInstance.googleBulkAppMetricsLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleBulkAppMetricsLive");
@@ -3982,12 +4790,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleKeywordsForAppLiveRequestInfo model = new DataforseoLabsGoogleKeywordsForAppLiveRequestInfo()
+    DataforseoLabsGoogleKeywordsForAppLiveResponseInfo response = apiInstance.googleKeywordsForAppLive(
+       List.of(
+    
+           new DataforseoLabsGoogleKeywordsForAppLiveRequestInfo()
+        
            .appId("org.telegram.messenger")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(10);
-    DataforseoLabsGoogleKeywordsForAppLiveResponseInfo response = apiInstance.googleKeywordsForAppLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(10)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleKeywordsForAppLive");
@@ -4055,12 +4875,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleAppCompetitorsLiveRequestInfo model = new DataforseoLabsGoogleAppCompetitorsLiveRequestInfo()
+    DataforseoLabsGoogleAppCompetitorsLiveResponseInfo response = apiInstance.googleAppCompetitorsLive(
+       List.of(
+    
+           new DataforseoLabsGoogleAppCompetitorsLiveRequestInfo()
+        
            .appId("org.telegram.messenger")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(10);
-    DataforseoLabsGoogleAppCompetitorsLiveResponseInfo response = apiInstance.googleAppCompetitorsLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(10)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleAppCompetitorsLive");
@@ -4128,14 +4960,32 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleAppIntersectionLiveRequestInfo model = new DataforseoLabsGoogleAppIntersectionLiveRequestInfo()
-       .appIds(
-           Map.ofEntries(
-               ))
-           .locationCode(2840)
+    DataforseoLabsGoogleAppIntersectionLiveResponseInfo response = apiInstance.googleAppIntersectionLive(
+       List.of(
+    
+           new DataforseoLabsGoogleAppIntersectionLiveRequestInfo()
+        
+           .appIds(Map.of(
+    
+           "1", "org.telegram.messenger"
+           ,
+    
+           "2", "com.zhiliaoapp.musically"
+    
+    
+       ))
+        
+        
            .languageName("English")
-           .limit(10);
-    DataforseoLabsGoogleAppIntersectionLiveResponseInfo response = apiInstance.googleAppIntersectionLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(10)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#googleAppIntersectionLive");
@@ -4203,15 +5053,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAppleBulkAppMetricsLiveRequestInfo model = new DataforseoLabsAppleBulkAppMetricsLiveRequestInfo()
-           .appIds(
-               List.of(
-                   "686449807",
-                   "382617920"
-                ))
+    DataforseoLabsAppleBulkAppMetricsLiveResponseInfo response = apiInstance.appleBulkAppMetricsLive(
+       List.of(
+    
+           new DataforseoLabsAppleBulkAppMetricsLiveRequestInfo()
+        
+           .appIds(List.of(
+    
+           "686449807",
+    
+           "382617920"
+    
+       ))
+        
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    DataforseoLabsAppleBulkAppMetricsLiveResponseInfo response = apiInstance.appleBulkAppMetricsLive(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#appleBulkAppMetricsLive");
@@ -4279,12 +5141,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAppleKeywordsForAppLiveRequestInfo model = new DataforseoLabsAppleKeywordsForAppLiveRequestInfo()
+    DataforseoLabsAppleKeywordsForAppLiveResponseInfo response = apiInstance.appleKeywordsForAppLive(
+       List.of(
+    
+           new DataforseoLabsAppleKeywordsForAppLiveRequestInfo()
+        
            .appId("686449807")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(10);
-    DataforseoLabsAppleKeywordsForAppLiveResponseInfo response = apiInstance.appleKeywordsForAppLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(10)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#appleKeywordsForAppLive");
@@ -4352,12 +5226,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAppleAppCompetitorsLiveRequestInfo model = new DataforseoLabsAppleAppCompetitorsLiveRequestInfo()
+    DataforseoLabsAppleAppCompetitorsLiveResponseInfo response = apiInstance.appleAppCompetitorsLive(
+       List.of(
+    
+           new DataforseoLabsAppleAppCompetitorsLiveRequestInfo()
+        
            .appId("686449807")
-           .locationCode(2840)
+        
+        
            .languageName("English")
-           .limit(10);
-    DataforseoLabsAppleAppCompetitorsLiveResponseInfo response = apiInstance.appleAppCompetitorsLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(10)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#appleAppCompetitorsLive");
@@ -4425,14 +5311,32 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsAppleAppIntersectionLiveRequestInfo model = new DataforseoLabsAppleAppIntersectionLiveRequestInfo()
-       .appIds(
-           Map.ofEntries(
-               ))
-           .locationCode(2840)
+    DataforseoLabsAppleAppIntersectionLiveResponseInfo response = apiInstance.appleAppIntersectionLive(
+       List.of(
+    
+           new DataforseoLabsAppleAppIntersectionLiveRequestInfo()
+        
+           .appIds(Map.of(
+    
+           "1", "686449807"
+           ,
+    
+           "2", "382617920"
+    
+    
+       ))
+        
+        
            .languageName("English")
-           .limit(10);
-    DataforseoLabsAppleAppIntersectionLiveResponseInfo response = apiInstance.appleAppIntersectionLive(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .limit(10)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DataforseoLabsApi#appleAppIntersectionLive");

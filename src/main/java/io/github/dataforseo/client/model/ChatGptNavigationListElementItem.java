@@ -48,7 +48,7 @@ public class ChatGptNavigationListElementItem  extends BaseChatGptLlmScraperElem
   }
 
   /**
-   * title of the element
+   * name of the brand
    * @return title
    */
   @javax.annotation.Nullable

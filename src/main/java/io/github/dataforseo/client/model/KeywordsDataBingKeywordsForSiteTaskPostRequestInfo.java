@@ -294,6 +294,7 @@ public class KeywordsDataBingKeywordsForSiteTaskPostRequestInfo  {
   /**
    * starting date of the time range
 * optional field
+* minimal value: 24 months from today’s date;
 * if you don’t specify this field, data will be provided for the last 12 months
 * date format: 'yyyy-mm-dd'
 * example:

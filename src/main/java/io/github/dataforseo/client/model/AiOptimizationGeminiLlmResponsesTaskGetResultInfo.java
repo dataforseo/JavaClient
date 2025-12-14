@@ -206,6 +206,30 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
+  @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
+  private List<String> fanOutQueries;
+
+  public AiOptimizationGeminiLlmResponsesTaskGetResultInfo fanOutQueries(List<String> fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+    return this;
+  }
+
+  /**
+   * array of fan-out queries
+* contains related search queries derived from the main query to provide a more comprehensive response
+   * @return fanOutQueries
+   */
+  @javax.annotation.Nullable
+  public List<String> getFanOutQueries() {
+    return fanOutQueries;
+  }
+
+  public void setFanOutQueries(List<String> fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+  }
+
+
 
   public AiOptimizationGeminiLlmResponsesTaskGetResultInfo() {
   }
@@ -255,7 +279,8 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
         Objects.equals(this.webSearch, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.webSearch) &&
         Objects.equals(this.moneySpent, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.moneySpent) &&
         Objects.equals(this.datetime, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.datetime) &&
-        Objects.equals(this.items, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.items);  
+        Objects.equals(this.items, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.items) &&
+        Objects.equals(this.fanOutQueries, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.fanOutQueries);  
     
   }
 
@@ -265,7 +290,7 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(modelName, inputTokens, outputTokens, webSearch, moneySpent, datetime, items);
+  return Objects.hash(modelName, inputTokens, outputTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -287,6 +312,7 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
     sb.append("    moneySpent: ").append(toIndentedString(moneySpent)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
+    sb.append("    fanOutQueries: ").append(toIndentedString(fanOutQueries)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -323,6 +349,8 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
     openapiFields.add("datetime");
     
     openapiFields.add("items");
+    
+    openapiFields.add("fan_out_queries");
     
 
     // a set of required properties/fields (JSON key names)

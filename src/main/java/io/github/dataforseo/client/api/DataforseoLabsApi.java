@@ -239,7 +239,7 @@ public class DataforseoLabsApi {
             return localVarCall;
         }
 
-    public okhttp3.Call dataforseoLabsStatusCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call statusCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -286,26 +286,26 @@ public class DataforseoLabsApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call dataforseoLabsStatusValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call statusValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return dataforseoLabsStatusCall(_callback);
+       return statusCall(_callback);
 
     }
 
-    public DataforseoLabsStatusResponseInfo dataforseoLabsStatus() throws ApiException {
-       ApiResponse<DataforseoLabsStatusResponseInfo> localVarResp = dataforseoLabsStatusWithHttpInfo();
+    public DataforseoLabsStatusResponseInfo status() throws ApiException {
+       ApiResponse<DataforseoLabsStatusResponseInfo> localVarResp = statusWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<DataforseoLabsStatusResponseInfo> dataforseoLabsStatusWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = dataforseoLabsStatusValidateBeforeCall(null);
+    public ApiResponse<DataforseoLabsStatusResponseInfo> statusWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = statusValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<DataforseoLabsStatusResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call dataforseoLabsStatusAsync(final ApiCallback<DataforseoLabsStatusResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call statusAsync(final ApiCallback<DataforseoLabsStatusResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = dataforseoLabsStatusValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = statusValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<DataforseoLabsStatusResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -453,7 +453,7 @@ public class DataforseoLabsApi {
        return localVarCall;
     }
 
-    public okhttp3.Call dataforseoLabsLocationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call locationsAndLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -500,26 +500,26 @@ public class DataforseoLabsApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call dataforseoLabsLocationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call locationsAndLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return dataforseoLabsLocationsAndLanguagesCall(_callback);
+       return locationsAndLanguagesCall(_callback);
 
     }
 
-    public DataforseoLabsLocationsAndLanguagesResponseInfo dataforseoLabsLocationsAndLanguages() throws ApiException {
-       ApiResponse<DataforseoLabsLocationsAndLanguagesResponseInfo> localVarResp = dataforseoLabsLocationsAndLanguagesWithHttpInfo();
+    public DataforseoLabsLocationsAndLanguagesResponseInfo locationsAndLanguages() throws ApiException {
+       ApiResponse<DataforseoLabsLocationsAndLanguagesResponseInfo> localVarResp = locationsAndLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<DataforseoLabsLocationsAndLanguagesResponseInfo> dataforseoLabsLocationsAndLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = dataforseoLabsLocationsAndLanguagesValidateBeforeCall(null);
+    public ApiResponse<DataforseoLabsLocationsAndLanguagesResponseInfo> locationsAndLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = locationsAndLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<DataforseoLabsLocationsAndLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call dataforseoLabsLocationsAndLanguagesAsync(final ApiCallback<DataforseoLabsLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call locationsAndLanguagesAsync(final ApiCallback<DataforseoLabsLocationsAndLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = dataforseoLabsLocationsAndLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = locationsAndLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<DataforseoLabsLocationsAndLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -1089,7 +1089,7 @@ public class DataforseoLabsApi {
             return localVarCall;
         }
 
-    public okhttp3.Call dataforseoLabsGoogleCategoriesForKeywordsLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call googleCategoriesForKeywordsLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -1136,26 +1136,26 @@ public class DataforseoLabsApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call dataforseoLabsGoogleCategoriesForKeywordsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call googleCategoriesForKeywordsLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return dataforseoLabsGoogleCategoriesForKeywordsLanguagesCall(_callback);
+       return googleCategoriesForKeywordsLanguagesCall(_callback);
 
     }
 
-    public DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo dataforseoLabsGoogleCategoriesForKeywordsLanguages() throws ApiException {
-       ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> localVarResp = dataforseoLabsGoogleCategoriesForKeywordsLanguagesWithHttpInfo();
+    public DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo googleCategoriesForKeywordsLanguages() throws ApiException {
+       ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> localVarResp = googleCategoriesForKeywordsLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> dataforseoLabsGoogleCategoriesForKeywordsLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = dataforseoLabsGoogleCategoriesForKeywordsLanguagesValidateBeforeCall(null);
+    public ApiResponse<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> googleCategoriesForKeywordsLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = googleCategoriesForKeywordsLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call dataforseoLabsGoogleCategoriesForKeywordsLanguagesAsync(final ApiCallback<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call googleCategoriesForKeywordsLanguagesAsync(final ApiCallback<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = dataforseoLabsGoogleCategoriesForKeywordsLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = googleCategoriesForKeywordsLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<DataforseoLabsGoogleCategoriesForKeywordsLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

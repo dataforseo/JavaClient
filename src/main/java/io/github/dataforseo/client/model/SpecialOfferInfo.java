@@ -210,6 +210,7 @@ public class SpecialOfferInfo  {
 
   /**
    * URL to the product page on the seller’s website
+* Note: this field is deprecated and will return null
    * @return url
    */
   @javax.annotation.Nullable

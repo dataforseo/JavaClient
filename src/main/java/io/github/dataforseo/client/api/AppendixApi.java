@@ -134,7 +134,7 @@ public class AppendixApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appendixErrorsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call errorsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -181,26 +181,26 @@ public class AppendixApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call appendixErrorsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call errorsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return appendixErrorsCall(_callback);
+       return errorsCall(_callback);
 
     }
 
-    public AppendixErrorsResponseInfo appendixErrors() throws ApiException {
-       ApiResponse<AppendixErrorsResponseInfo> localVarResp = appendixErrorsWithHttpInfo();
+    public AppendixErrorsResponseInfo errors() throws ApiException {
+       ApiResponse<AppendixErrorsResponseInfo> localVarResp = errorsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<AppendixErrorsResponseInfo> appendixErrorsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = appendixErrorsValidateBeforeCall(null);
+    public ApiResponse<AppendixErrorsResponseInfo> errorsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = errorsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<AppendixErrorsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call appendixErrorsAsync(final ApiCallback<AppendixErrorsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call errorsAsync(final ApiCallback<AppendixErrorsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = appendixErrorsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = errorsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AppendixErrorsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

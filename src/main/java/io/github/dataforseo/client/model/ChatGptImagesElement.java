@@ -71,7 +71,7 @@ public class ChatGptImagesElement  {
   }
 
   /**
-   * source URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable

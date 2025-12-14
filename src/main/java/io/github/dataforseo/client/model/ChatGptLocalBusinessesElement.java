@@ -71,7 +71,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * source title
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -186,7 +186,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * source URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -209,7 +209,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * source domain
+   * domain
    * @return domain
    */
   @javax.annotation.Nullable

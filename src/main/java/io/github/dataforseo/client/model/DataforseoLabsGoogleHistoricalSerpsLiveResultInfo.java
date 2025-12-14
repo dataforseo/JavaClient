@@ -48,7 +48,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * search engine type
+   * search engine type in a POST array
    * @return seType
    */
   @javax.annotation.Nullable
@@ -133,23 +133,23 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_TOTAL_COUNT = "total_count";
   @SerializedName(SERIALIZED_NAME_TOTAL_COUNT)
-  private Integer totalCount;
+  private Long totalCount;
 
-  public DataforseoLabsGoogleHistoricalSerpsLiveResultInfo totalCount(Integer totalCount) {
+  public DataforseoLabsGoogleHistoricalSerpsLiveResultInfo totalCount(Long totalCount) {
     this.totalCount = totalCount;
     return this;
   }
 
   /**
-   * the number of results returned in the items array
+   * the total amount of results in our database relevant to your request
    * @return totalCount
    */
   @javax.annotation.Nullable
-  public Integer getTotalCount() {
+  public Long getTotalCount() {
     return totalCount;
   }
 
-  public void setTotalCount(Integer totalCount) {
+  public void setTotalCount(Long totalCount) {
     this.totalCount = totalCount;
   }
 
@@ -187,7 +187,8 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * contains arrays of specific images
+   * additional items present in the element
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

@@ -162,6 +162,7 @@ public class ContentAnalysisCategoryTrendsLiveRequestInfo  {
   /**
    * starting date of the time range
 * required field
+* minimum value: 2022-10-31
 * date format: 'yyyy-mm-dd'
 * example:
 * '2019-01-15'

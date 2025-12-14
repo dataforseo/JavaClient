@@ -109,6 +109,30 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
   }
 
 
+  public static final String SERIALIZED_NAME_BRAND_ENTITIES = "brand_entities";
+  @SerializedName(SERIALIZED_NAME_BRAND_ENTITIES)
+  private List<ChatGptBrandEntity> brandEntities;
+
+  public ChatGptTableElementItem brandEntities(List<ChatGptBrandEntity> brandEntities) {
+    this.brandEntities = brandEntities;
+    return this;
+  }
+
+  /**
+   * array of brand entities
+* contains information on brands mentioned in the text
+   * @return brandEntities
+   */
+  @javax.annotation.Nullable
+  public List<ChatGptBrandEntity> getBrandEntities() {
+    return brandEntities;
+  }
+
+  public void setBrandEntities(List<ChatGptBrandEntity> brandEntities) {
+    this.brandEntities = brandEntities;
+  }
+
+
 
   public ChatGptTableElementItem() {
   }
@@ -154,7 +178,8 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
 
         Objects.equals(this.text, chatGptTableElementItem.text) &&
         Objects.equals(this.markdown, chatGptTableElementItem.markdown) &&
-        Objects.equals(this.table, chatGptTableElementItem.table) && 
+        Objects.equals(this.table, chatGptTableElementItem.table) &&
+        Objects.equals(this.brandEntities, chatGptTableElementItem.brandEntities) && 
         super.equals(o);
     
   }
@@ -165,7 +190,7 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
 
   @Override
   public int hashCode() {
-  return Objects.hash(text, markdown, table);
+  return Objects.hash(text, markdown, table, brandEntities);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -183,6 +208,7 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
     sb.append("    markdown: ").append(toIndentedString(markdown)).append("\n");
     sb.append("    table: ").append(toIndentedString(table)).append("\n");
+    sb.append("    brandEntities: ").append(toIndentedString(brandEntities)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -214,6 +240,8 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
     openapiFields.add("markdown");
     
     openapiFields.add("table");
+    
+    openapiFields.add("brand_entities");
     
 
     // a set of required properties/fields (JSON key names)

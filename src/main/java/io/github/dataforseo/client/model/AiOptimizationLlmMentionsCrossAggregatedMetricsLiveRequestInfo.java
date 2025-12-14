@@ -176,7 +176,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
    * target keyword search scope
 * optional field
 * possible values:
-* any, question, answer
+* any, question, answer, brand_entities, fan_out_queries
 * default value: any
    * @return searchScope
    */
@@ -289,8 +289,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 * if you use this field, you don’t need to specify location_code
 * if you don’t specify this field, the location_code with 2840 value will be used by default;
 * you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* example:
-* United States
+* Note: chat_gpt data is available for United States only
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -317,9 +316,8 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 * optional field
 * if you use this field, you don’t need to specify location_name
 * you can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* example:
-* 2840
 * default value: 2840
+* Note: chat_gpt data is available for 2840 only
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -347,6 +345,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 * if you use this field, you don’t need to specify language_code;
 * if you don’t specify this field, the language_code with en value will be used by default;
 * you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
+* Note: chat_gpt data is available for English only
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -374,6 +373,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 * if you use this field, you don’t need to specify language_name;
 * you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
 * default value: en
+* Note: chat_gpt data is available for en only
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -401,6 +401,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 * possible values:
 * chat_gpt, google
 * default value: google
+* Note:chat_gpt data is available for the United States and English only
    * @return platform
    */
   @javax.annotation.Nullable
@@ -413,12 +414,12 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_FILTERS = "filters";
-  @SerializedName(SERIALIZED_NAME_FILTERS)
-  private List<Object> filters;
+  public static final String SERIALIZED_NAME_INITIAL_DATASET_FILTERS = "initial_dataset_filters";
+  @SerializedName(SERIALIZED_NAME_INITIAL_DATASET_FILTERS)
+  private List<Object> initialDatasetFilters;
 
-  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo filters(List<Object> filters) {
-    this.filters = filters;
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo initialDatasetFilters(List<Object> initialDatasetFilters) {
+    this.initialDatasetFilters = initialDatasetFilters;
     return this;
   }
 
@@ -433,15 +434,15 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 * example:
 * ['ai_search_volume','>','1000']
 * The full list of possible filters is available here.
-   * @return filters
+   * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
-  public List<Object> getFilters() {
-    return filters;
+  public List<Object> getInitialDatasetFilters() {
+    return initialDatasetFilters;
   }
 
-  public void setFilters(List<Object> filters) {
-    this.filters = filters;
+  public void setInitialDatasetFilters(List<Object> initialDatasetFilters) {
+    this.initialDatasetFilters = initialDatasetFilters;
   }
 
 
@@ -559,7 +560,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
         Objects.equals(this.languageName, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.languageName) &&
         Objects.equals(this.languageCode, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.languageCode) &&
         Objects.equals(this.platform, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.platform) &&
-        Objects.equals(this.filters, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.filters) &&
+        Objects.equals(this.initialDatasetFilters, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.initialDatasetFilters) &&
         Objects.equals(this.internalListLimit, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.internalListLimit) &&
         Objects.equals(this.tag, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.tag);  
     
@@ -571,7 +572,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(targets, aggregationKey, target, domain, searchFilter, searchScope, includeSubdomains, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, filters, internalListLimit, tag);
+  return Objects.hash(targets, aggregationKey, target, domain, searchFilter, searchScope, includeSubdomains, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, initialDatasetFilters, internalListLimit, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -600,7 +601,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    platform: ").append(toIndentedString(platform)).append("\n");
-    sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
+    sb.append("    initialDatasetFilters: ").append(toIndentedString(initialDatasetFilters)).append("\n");
     sb.append("    internalListLimit: ").append(toIndentedString(internalListLimit)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
@@ -654,7 +655,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
     
     openapiFields.add("platform");
     
-    openapiFields.add("filters");
+    openapiFields.add("initial_dataset_filters");
     
     openapiFields.add("internal_list_limit");
     

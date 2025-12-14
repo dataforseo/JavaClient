@@ -48,7 +48,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem  {
   }
 
   /**
-   * search engine type
+   * search engine type in a POST array
    * @return seType
    */
   @javax.annotation.Nullable
@@ -71,8 +71,8 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem  {
   }
 
   /**
-   * keyword obtained as a result of search engine autocorrection
-* the results will be provided for the corrected keyword
+   * keyword received in a POST array
+* the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -333,8 +333,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * contains results featured in the ‘hotels_pack’ element of SERP
    * @return items
    */
   @javax.annotation.Nullable

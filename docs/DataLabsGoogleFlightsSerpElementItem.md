@@ -7,4 +7,4 @@
 |------------ | ------------- | ------------- | -------------|
 **title** | **String** | title of the result in SERP |[optional]|
 **url** | **String** | sitelink URL |[optional]|
-**items** | **List<GoogleFlightsElement>** | elements of search results found in SERP |[optional]|
+**items** | **List<GoogleFlightsElement>** | historical SERPs and related data found in the database |[optional]|

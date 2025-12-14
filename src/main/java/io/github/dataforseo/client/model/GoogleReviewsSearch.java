@@ -203,6 +203,29 @@ public class GoogleReviewsSearch  {
   }
 
 
+  public static final String SERIALIZED_NAME_ORIGINAL_LANGUAGE = "original_language";
+  @SerializedName(SERIALIZED_NAME_ORIGINAL_LANGUAGE)
+  private String originalLanguage;
+
+  public GoogleReviewsSearch originalLanguage(String originalLanguage) {
+    this.originalLanguage = originalLanguage;
+    return this;
+  }
+
+  /**
+   * original language of the review text
+   * @return originalLanguage
+   */
+  @javax.annotation.Nullable
+  public String getOriginalLanguage() {
+    return originalLanguage;
+  }
+
+  public void setOriginalLanguage(String originalLanguage) {
+    this.originalLanguage = originalLanguage;
+  }
+
+
   public static final String SERIALIZED_NAME_TIME_AGO = "time_ago";
   @SerializedName(SERIALIZED_NAME_TIME_AGO)
   private String timeAgo;
@@ -657,6 +680,7 @@ public class GoogleReviewsSearch  {
         Objects.equals(this.xpath, googleReviewsSearch.xpath) &&
         Objects.equals(this.reviewText, googleReviewsSearch.reviewText) &&
         Objects.equals(this.originalReviewText, googleReviewsSearch.originalReviewText) &&
+        Objects.equals(this.originalLanguage, googleReviewsSearch.originalLanguage) &&
         Objects.equals(this.timeAgo, googleReviewsSearch.timeAgo) &&
         Objects.equals(this.timestamp, googleReviewsSearch.timestamp) &&
         Objects.equals(this.rating, googleReviewsSearch.rating) &&
@@ -683,7 +707,7 @@ public class GoogleReviewsSearch  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, reviewText, originalReviewText, timeAgo, timestamp, rating, reviewsCount, photosCount, localGuide, profileName, profileUrl, reviewUrl, profileImageUrl, ownerAnswer, originalOwnerAnswer, ownerTimeAgo, ownerTimestamp, reviewId, images, reviewHighlights);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, reviewText, originalReviewText, originalLanguage, timeAgo, timestamp, rating, reviewsCount, photosCount, localGuide, profileName, profileUrl, reviewUrl, profileImageUrl, ownerAnswer, originalOwnerAnswer, ownerTimeAgo, ownerTimestamp, reviewId, images, reviewHighlights);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -705,6 +729,7 @@ public class GoogleReviewsSearch  {
     sb.append("    xpath: ").append(toIndentedString(xpath)).append("\n");
     sb.append("    reviewText: ").append(toIndentedString(reviewText)).append("\n");
     sb.append("    originalReviewText: ").append(toIndentedString(originalReviewText)).append("\n");
+    sb.append("    originalLanguage: ").append(toIndentedString(originalLanguage)).append("\n");
     sb.append("    timeAgo: ").append(toIndentedString(timeAgo)).append("\n");
     sb.append("    timestamp: ").append(toIndentedString(timestamp)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
@@ -758,6 +783,8 @@ public class GoogleReviewsSearch  {
     openapiFields.add("review_text");
     
     openapiFields.add("original_review_text");
+    
+    openapiFields.add("original_language");
     
     openapiFields.add("time_ago");
     

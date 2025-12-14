@@ -40,9 +40,9 @@ public class AiOptimizationLlmMentionsTopPagesLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
-  private Total total;
+  private AiOptimizationResultTotalInfo total;
 
-  public AiOptimizationLlmMentionsTopPagesLiveResultInfo total(Total total) {
+  public AiOptimizationLlmMentionsTopPagesLiveResultInfo total(AiOptimizationResultTotalInfo total) {
     this.total = total;
     return this;
   }
@@ -53,11 +53,11 @@ public class AiOptimizationLlmMentionsTopPagesLiveResultInfo  {
    * @return total
    */
   @javax.annotation.Nullable
-  public Total getTotal() {
+  public AiOptimizationResultTotalInfo getTotal() {
     return total;
   }
 
-  public void setTotal(Total total) {
+  public void setTotal(AiOptimizationResultTotalInfo total) {
     this.total = total;
   }
 

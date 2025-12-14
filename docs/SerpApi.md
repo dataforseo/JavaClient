@@ -4,13 +4,13 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**serpIdList**](SerpApi.md#serpIdList) | **POST**  /v3/serp/id_list  |
-| [**serpErrors**](SerpApi.md#serpErrors) | **POST**  /v3/serp/errors  |
+| [**idList**](SerpApi.md#idList) | **POST**  /v3/serp/id_list  |
+| [**errors**](SerpApi.md#errors) | **POST**  /v3/serp/errors  |
 | [**screenshot**](SerpApi.md#screenshot) | **POST**  /v3/serp/screenshot  |
 | [**aiSummary**](SerpApi.md#aiSummary) | **POST**  /v3/serp/ai_summary  |
-| [**serpGoogleLocations**](SerpApi.md#serpGoogleLocations) | **GET**  /v3/serp/google/locations  |
-| [**serpGoogleLocationsCountry**](SerpApi.md#serpGoogleLocationsCountry) | **GET**  /v3/serp/google/locations/{country}  |
-| [**serpGoogleLanguages**](SerpApi.md#serpGoogleLanguages) | **GET**  /v3/serp/google/languages  |
+| [**googleLocations**](SerpApi.md#googleLocations) | **GET**  /v3/serp/google/locations  |
+| [**googleLocationsCountry**](SerpApi.md#googleLocationsCountry) | **GET**  /v3/serp/google/locations/{country}  |
+| [**googleLanguages**](SerpApi.md#googleLanguages) | **GET**  /v3/serp/google/languages  |
 | [**googleOrganicTaskPost**](SerpApi.md#googleOrganicTaskPost) | **POST**  /v3/serp/google/organic/task_post  |
 | [**googleOrganicTasksReady**](SerpApi.md#googleOrganicTasksReady) | **GET**  /v3/serp/google/organic/tasks_ready  |
 | [**tasksReady**](SerpApi.md#tasksReady) | **GET**  /v3/serp/tasks_ready  |
@@ -21,7 +21,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleOrganicLiveRegular**](SerpApi.md#googleOrganicLiveRegular) | **POST**  /v3/serp/google/organic/live/regular  |
 | [**googleOrganicLiveAdvanced**](SerpApi.md#googleOrganicLiveAdvanced) | **POST**  /v3/serp/google/organic/live/advanced  |
 | [**googleOrganicLiveHtml**](SerpApi.md#googleOrganicLiveHtml) | **POST**  /v3/serp/google/organic/live/html  |
-| [**serpGoogleAiModeLanguages**](SerpApi.md#serpGoogleAiModeLanguages) | **GET**  /v3/serp/google/ai_mode/languages  |
+| [**googleAiModeLanguages**](SerpApi.md#googleAiModeLanguages) | **GET**  /v3/serp/google/ai_mode/languages  |
 | [**googleAiModeTaskPost**](SerpApi.md#googleAiModeTaskPost) | **POST**  /v3/serp/google/ai_mode/task_post  |
 | [**googleAiModeTasksReady**](SerpApi.md#googleAiModeTasksReady) | **GET**  /v3/serp/google/ai_mode/tasks_ready  |
 | [**googleAiModeTasksFixed**](SerpApi.md#googleAiModeTasksFixed) | **GET**  /v3/serp/google/ai_mode/tasks_fixed  |
@@ -84,17 +84,17 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleDatasetInfoTasksFixed**](SerpApi.md#googleDatasetInfoTasksFixed) | **GET**  /v3/serp/google/dataset_info/tasks_fixed  |
 | [**googleDatasetInfoTaskGetAdvanced**](SerpApi.md#googleDatasetInfoTaskGetAdvanced) | **GET**  /v3/serp/google/dataset_info/task_get/advanced/{id}  |
 | [**googleDatasetInfoLiveAdvanced**](SerpApi.md#googleDatasetInfoLiveAdvanced) | **POST**  /v3/serp/google/dataset_info/live/advanced  |
-| [**serpGoogleAdsAdvertisersLocations**](SerpApi.md#serpGoogleAdsAdvertisersLocations) | **GET**  /v3/serp/google/ads_advertisers/locations  |
+| [**googleAdsAdvertisersLocations**](SerpApi.md#googleAdsAdvertisersLocations) | **GET**  /v3/serp/google/ads_advertisers/locations  |
 | [**googleAdsAdvertisersTaskPost**](SerpApi.md#googleAdsAdvertisersTaskPost) | **POST**  /v3/serp/google/ads_advertisers/task_post  |
 | [**googleAdsAdvertisersTasksReady**](SerpApi.md#googleAdsAdvertisersTasksReady) | **GET**  /v3/serp/google/ads_advertisers/tasks_ready  |
 | [**googleAdsAdvertisersTaskGetAdvanced**](SerpApi.md#googleAdsAdvertisersTaskGetAdvanced) | **GET**  /v3/serp/google/ads_advertisers/task_get/advanced/{id}  |
-| [**serpGoogleAdsSearchLocations**](SerpApi.md#serpGoogleAdsSearchLocations) | **GET**  /v3/serp/google/ads_search/locations  |
+| [**googleAdsSearchLocations**](SerpApi.md#googleAdsSearchLocations) | **GET**  /v3/serp/google/ads_search/locations  |
 | [**googleAdsSearchTaskPost**](SerpApi.md#googleAdsSearchTaskPost) | **POST**  /v3/serp/google/ads_search/task_post  |
 | [**googleAdsSearchTasksReady**](SerpApi.md#googleAdsSearchTasksReady) | **GET**  /v3/serp/google/ads_search/tasks_ready  |
 | [**googleAdsSearchTaskGetAdvanced**](SerpApi.md#googleAdsSearchTaskGetAdvanced) | **GET**  /v3/serp/google/ads_search/task_get/advanced/{id}  |
-| [**serpBingLocations**](SerpApi.md#serpBingLocations) | **GET**  /v3/serp/bing/locations  |
-| [**serpBingLocationsCountry**](SerpApi.md#serpBingLocationsCountry) | **GET**  /v3/serp/bing/locations/{country}  |
-| [**serpBingLanguages**](SerpApi.md#serpBingLanguages) | **GET**  /v3/serp/bing/languages  |
+| [**bingLocations**](SerpApi.md#bingLocations) | **GET**  /v3/serp/bing/locations  |
+| [**bingLocationsCountry**](SerpApi.md#bingLocationsCountry) | **GET**  /v3/serp/bing/locations/{country}  |
+| [**bingLanguages**](SerpApi.md#bingLanguages) | **GET**  /v3/serp/bing/languages  |
 | [**bingOrganicTaskPost**](SerpApi.md#bingOrganicTaskPost) | **POST**  /v3/serp/bing/organic/task_post  |
 | [**bingOrganicTasksReady**](SerpApi.md#bingOrganicTasksReady) | **GET**  /v3/serp/bing/organic/tasks_ready  |
 | [**bingOrganicTasksFixed**](SerpApi.md#bingOrganicTasksFixed) | **GET**  /v3/serp/bing/organic/tasks_fixed  |
@@ -111,9 +111,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**bingLocalPackTaskGetHtml**](SerpApi.md#bingLocalPackTaskGetHtml) | **GET**  /v3/serp/bing/local_pack/task_get/html/{id}  |
 | [**bingLocalPackLiveRegular**](SerpApi.md#bingLocalPackLiveRegular) | **POST**  /v3/serp/bing/local_pack/live/regular  |
 | [**bingLocalPackLiveHtml**](SerpApi.md#bingLocalPackLiveHtml) | **POST**  /v3/serp/bing/local_pack/live/html  |
-| [**serpYoutubeLocations**](SerpApi.md#serpYoutubeLocations) | **GET**  /v3/serp/youtube/locations  |
-| [**serpYoutubeLocationsCountry**](SerpApi.md#serpYoutubeLocationsCountry) | **GET**  /v3/serp/youtube/locations/{country}  |
-| [**serpYoutubeLanguages**](SerpApi.md#serpYoutubeLanguages) | **GET**  /v3/serp/youtube/languages  |
+| [**youtubeLocations**](SerpApi.md#youtubeLocations) | **GET**  /v3/serp/youtube/locations  |
+| [**youtubeLocationsCountry**](SerpApi.md#youtubeLocationsCountry) | **GET**  /v3/serp/youtube/locations/{country}  |
+| [**youtubeLanguages**](SerpApi.md#youtubeLanguages) | **GET**  /v3/serp/youtube/languages  |
 | [**youtubeVideoInfoTaskPost**](SerpApi.md#youtubeVideoInfoTaskPost) | **POST**  /v3/serp/youtube/video_info/task_post  |
 | [**youtubeVideoInfoTasksReady**](SerpApi.md#youtubeVideoInfoTasksReady) | **GET**  /v3/serp/youtube/video_info/tasks_ready  |
 | [**youtubeVideoInfoTasksFixed**](SerpApi.md#youtubeVideoInfoTasksFixed) | **GET**  /v3/serp/youtube/video_info/tasks_fixed  |
@@ -129,9 +129,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**youtubeVideoCommentsTasksFixed**](SerpApi.md#youtubeVideoCommentsTasksFixed) | **GET**  /v3/serp/youtube/video_comments/tasks_fixed  |
 | [**youtubeVideoCommentsTaskGetAdvanced**](SerpApi.md#youtubeVideoCommentsTaskGetAdvanced) | **GET**  /v3/serp/youtube/video_comments/task_get/advanced/{id}  |
 | [**youtubeVideoCommentsLiveAdvanced**](SerpApi.md#youtubeVideoCommentsLiveAdvanced) | **POST**  /v3/serp/youtube/video_comments/live/advanced  |
-| [**serpYahooLocations**](SerpApi.md#serpYahooLocations) | **GET**  /v3/serp/yahoo/locations  |
-| [**serpYahooLocationsCountry**](SerpApi.md#serpYahooLocationsCountry) | **GET**  /v3/serp/yahoo/locations/{country}  |
-| [**serpYahooLanguages**](SerpApi.md#serpYahooLanguages) | **GET**  /v3/serp/yahoo/languages  |
+| [**yahooLocations**](SerpApi.md#yahooLocations) | **GET**  /v3/serp/yahoo/locations  |
+| [**yahooLocationsCountry**](SerpApi.md#yahooLocationsCountry) | **GET**  /v3/serp/yahoo/locations/{country}  |
+| [**yahooLanguages**](SerpApi.md#yahooLanguages) | **GET**  /v3/serp/yahoo/languages  |
 | [**yahooOrganicTaskPost**](SerpApi.md#yahooOrganicTaskPost) | **POST**  /v3/serp/yahoo/organic/task_post  |
 | [**yahooOrganicTasksReady**](SerpApi.md#yahooOrganicTasksReady) | **GET**  /v3/serp/yahoo/organic/tasks_ready  |
 | [**yahooOrganicTasksFixed**](SerpApi.md#yahooOrganicTasksFixed) | **GET**  /v3/serp/yahoo/organic/tasks_fixed  |
@@ -141,9 +141,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**yahooOrganicLiveRegular**](SerpApi.md#yahooOrganicLiveRegular) | **POST**  /v3/serp/yahoo/organic/live/regular  |
 | [**yahooOrganicLiveAdvanced**](SerpApi.md#yahooOrganicLiveAdvanced) | **POST**  /v3/serp/yahoo/organic/live/advanced  |
 | [**yahooOrganicLiveHtml**](SerpApi.md#yahooOrganicLiveHtml) | **POST**  /v3/serp/yahoo/organic/live/html  |
-| [**serpBaiduLocations**](SerpApi.md#serpBaiduLocations) | **GET**  /v3/serp/baidu/locations  |
-| [**serpBaiduLocationsCountry**](SerpApi.md#serpBaiduLocationsCountry) | **GET**  /v3/serp/baidu/locations/{country}  |
-| [**serpBaiduLanguages**](SerpApi.md#serpBaiduLanguages) | **GET**  /v3/serp/baidu/languages  |
+| [**baiduLocations**](SerpApi.md#baiduLocations) | **GET**  /v3/serp/baidu/locations  |
+| [**baiduLocationsCountry**](SerpApi.md#baiduLocationsCountry) | **GET**  /v3/serp/baidu/locations/{country}  |
+| [**baiduLanguages**](SerpApi.md#baiduLanguages) | **GET**  /v3/serp/baidu/languages  |
 | [**baiduOrganicTaskPost**](SerpApi.md#baiduOrganicTaskPost) | **POST**  /v3/serp/baidu/organic/task_post  |
 | [**baiduOrganicTasksReady**](SerpApi.md#baiduOrganicTasksReady) | **GET**  /v3/serp/baidu/organic/tasks_ready  |
 | [**baiduOrganicTasksFixed**](SerpApi.md#baiduOrganicTasksFixed) | **GET**  /v3/serp/baidu/organic/tasks_fixed  |
@@ -156,9 +156,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**naverOrganicTaskGetRegular**](SerpApi.md#naverOrganicTaskGetRegular) | **GET**  /v3/serp/naver/organic/task_get/regular/{id}  |
 | [**naverOrganicTaskGetAdvanced**](SerpApi.md#naverOrganicTaskGetAdvanced) | **GET**  /v3/serp/naver/organic/task_get/advanced/{id}  |
 | [**naverOrganicTaskGetHtml**](SerpApi.md#naverOrganicTaskGetHtml) | **GET**  /v3/serp/naver/organic/task_get/html/{id}  |
-| [**serpSeznamLocations**](SerpApi.md#serpSeznamLocations) | **GET**  /v3/serp/seznam/locations  |
-| [**serpSeznamLocationsCountry**](SerpApi.md#serpSeznamLocationsCountry) | **GET**  /v3/serp/seznam/locations/{country}  |
-| [**serpSeznamLanguages**](SerpApi.md#serpSeznamLanguages) | **GET**  /v3/serp/seznam/languages  |
+| [**seznamLocations**](SerpApi.md#seznamLocations) | **GET**  /v3/serp/seznam/locations  |
+| [**seznamLocationsCountry**](SerpApi.md#seznamLocationsCountry) | **GET**  /v3/serp/seznam/locations/{country}  |
+| [**seznamLanguages**](SerpApi.md#seznamLanguages) | **GET**  /v3/serp/seznam/languages  |
 | [**seznamOrganicTaskPost**](SerpApi.md#seznamOrganicTaskPost) | **POST**  /v3/serp/seznam/organic/task_post  |
 | [**seznamOrganicTasksReady**](SerpApi.md#seznamOrganicTasksReady) | **GET**  /v3/serp/seznam/organic/tasks_ready  |
 | [**seznamOrganicTasksFixed**](SerpApi.md#seznamOrganicTasksFixed) | **GET**  /v3/serp/seznam/organic/tasks_fixed  |
@@ -188,9 +188,9 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleFinanceTickerSearchTaskGetAdvanced**](SerpApi.md#googleFinanceTickerSearchTaskGetAdvanced) | **GET**  /v3/serp/google/finance_ticker_search/task_get/advanced/{id}  |
 | [**googleFinanceTickerSearchLiveAdvanced**](SerpApi.md#googleFinanceTickerSearchLiveAdvanced) | **POST**  /v3/serp/google/finance_ticker_search/live/advanced  |
 
-<a id="serpIdList"></a>
-# **serpIdList**
-> SerpIdListResponseInfo serpIdList()
+<a id="idList"></a>
+# **idList**
+> SerpIdListResponseInfo idList()
 
 
 ### Example
@@ -217,16 +217,33 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpIdListRequestInfo model = new SerpIdListRequestInfo()
-           .datetimeFrom("2025-08-22 08:04:48 +00:00")
-           .datetimeTo("2025-10-22 08:04:48 +00:00")
+    SerpIdListResponseInfo response = apiInstance.idList(
+       List.of(
+    
+           new SerpIdListRequestInfo()
+        
+           .datetimeFrom()
+        
+        
+           .datetimeTo()
+        
+        
            .limit(100)
+        
+        
            .offset(0)
-           .sort("desc");
-    SerpIdListResponseInfo response = apiInstance.serpIdList(List.of(model));
+        
+        
+           .sort("desc")
+        
+        
+           .includeMetadata(true)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpIdList");
+      System.err.println("Exception when calling SerpApi#idList");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -262,9 +279,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpErrors"></a>
-# **serpErrors**
-> SerpErrorsResponseInfo serpErrors()
+<a id="errors"></a>
+# **errors**
+> SerpErrorsResponseInfo errors()
 
 
 ### Example
@@ -291,14 +308,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpErrorsRequestInfo model = new SerpErrorsRequestInfo()
+    SerpErrorsResponseInfo response = apiInstance.errors(
+       List.of(
+    
+           new SerpErrorsRequestInfo()
+        
            .limit(10)
+        
+        
            .offset(0)
-           .filteredFunction("pingback_url");
-    SerpErrorsResponseInfo response = apiInstance.serpErrors(List.of(model));
+        
+        
+           .filteredFunction("pingback_url")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpErrors");
+      System.err.println("Exception when calling SerpApi#errors");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -363,10 +390,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpScreenshotRequestInfo model = new SerpScreenshotRequestInfo()
+    SerpScreenshotResponseInfo response = apiInstance.screenshot(
+       List.of(
+    
+           new SerpScreenshotRequestInfo()
+        
            .taskId("06211235-0696-0139-1000-36727fbd3c90")
-           .browserScreenScaleFactor(0.5d);
-    SerpScreenshotResponseInfo response = apiInstance.screenshot(List.of(model));
+        
+        
+           .browserScreenScaleFactor(0.5d)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#screenshot");
@@ -434,12 +469,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpAiSummaryRequestInfo model = new SerpAiSummaryRequestInfo()
+    SerpAiSummaryResponseInfo response = apiInstance.aiSummary(
+       List.of(
+    
+           new SerpAiSummaryRequestInfo()
+        
            .taskId("07031739-1535-0139-0000-9d1e639a5b7d")
+        
+        
            .prompt("explain what DataForSEO is")
+        
+        
+           .includeLinks(true)
+        
+        
            .fetchContent(true)
-           .includeLinks(true);
-    SerpAiSummaryResponseInfo response = apiInstance.aiSummary(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#aiSummary");
@@ -478,9 +525,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleLocations"></a>
-# **serpGoogleLocations**
-> SerpGoogleLocationsResponseInfo serpGoogleLocations()
+<a id="googleLocations"></a>
+# **googleLocations**
+> SerpGoogleLocationsResponseInfo googleLocations()
 
 
 ### Example
@@ -508,10 +555,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpGoogleLocationsResponseInfo response = apiInstance.serpGoogleLocations();
+    SerpGoogleLocationsResponseInfo response = apiInstance.googleLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleLocations");
+      System.err.println("Exception when calling SerpApi#googleLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -547,9 +594,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleLocationsCountry"></a>
-# **serpGoogleLocationsCountry**
-> SerpGoogleLocationsCountryResponseInfo serpGoogleLocationsCountry()
+<a id="googleLocationsCountry"></a>
+# **googleLocationsCountry**
+> SerpGoogleLocationsCountryResponseInfo googleLocationsCountry()
 
 
 ### Example
@@ -576,11 +623,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us";
-    SerpGoogleLocationsCountryResponseInfo response = apiInstance.serpGoogleLocationsCountry(country);
+    String country = ;
+    SerpGoogleLocationsCountryResponseInfo response = apiInstance.googleLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleLocationsCountry");
+      System.err.println("Exception when calling SerpApi#googleLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -616,9 +663,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleLanguages"></a>
-# **serpGoogleLanguages**
-> SerpGoogleLanguagesResponseInfo serpGoogleLanguages()
+<a id="googleLanguages"></a>
+# **googleLanguages**
+> SerpGoogleLanguagesResponseInfo googleLanguages()
 
 
 ### Example
@@ -646,10 +693,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpGoogleLanguagesResponseInfo response = apiInstance.serpGoogleLanguages();
+    SerpGoogleLanguagesResponseInfo response = apiInstance.googleLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleLanguages");
+      System.err.println("Exception when calling SerpApi#googleLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -714,11 +761,50 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleOrganicTaskPostRequestInfo model = new SerpGoogleOrganicTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleOrganicTaskPostResponseInfo response = apiInstance.googleOrganicTaskPost(
+       List.of(
+    
+           new SerpGoogleOrganicTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleOrganicTaskPostResponseInfo response = apiInstance.googleOrganicTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein"),
+    
+           new SerpGoogleOrganicTaskPostRequestInfo()
+        
+           .languageName("English")
+        
+        
+           .locationName("United States")
+        
+        
+           .keyword("albert einstein")
+        
+        
+           .priority(2)
+        
+        
+           .tag("some_string_123")
+        
+        
+           .pingbackUrl("https://your-server.com/pingscript?id=$id&tag=$tag"),
+    
+           new SerpGoogleOrganicTaskPostRequestInfo()
+        
+           .url("https://www.google.co.uk/search?q=albert%20einstein&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS")
+        
+        
+           .postbackData("html")
+        
+        
+           .postbackUrl("https://your-server.com/postbackscript")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicTaskPost");
@@ -993,7 +1079,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleOrganicTaskGetRegularResponseInfo response = apiInstance.googleOrganicTaskGetRegular(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1062,7 +1148,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleOrganicTaskGetAdvancedResponseInfo response = apiInstance.googleOrganicTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1131,7 +1217,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleOrganicTaskGetHtmlResponseInfo response = apiInstance.googleOrganicTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1200,11 +1286,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleOrganicLiveRegularRequestInfo model = new SerpGoogleOrganicLiveRegularRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleOrganicLiveRegularResponseInfo response = apiInstance.googleOrganicLiveRegular(
+       List.of(
+    
+           new SerpGoogleOrganicLiveRegularRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleOrganicLiveRegularResponseInfo response = apiInstance.googleOrganicLiveRegular(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicLiveRegular");
@@ -1272,12 +1368,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleOrganicLiveAdvancedRequestInfo model = new SerpGoogleOrganicLiveAdvancedRequestInfo()
-           .keyword("albert einstein")
-           .locationCode(2840)
+    SerpGoogleOrganicLiveAdvancedResponseInfo response = apiInstance.googleOrganicLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleOrganicLiveAdvancedRequestInfo()
+        
            .languageCode("en")
-           .calculateRectangles(true);
-    SerpGoogleOrganicLiveAdvancedResponseInfo response = apiInstance.googleOrganicLiveAdvanced(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .keyword("albert einstein")
+        
+        
+           .calculateRectangles(true)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicLiveAdvanced");
@@ -1345,11 +1453,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleOrganicLiveHtmlRequestInfo model = new SerpGoogleOrganicLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleOrganicLiveHtmlResponseInfo response = apiInstance.googleOrganicLiveHtml(
+       List.of(
+    
+           new SerpGoogleOrganicLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleOrganicLiveHtmlResponseInfo response = apiInstance.googleOrganicLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleOrganicLiveHtml");
@@ -1388,9 +1506,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleAiModeLanguages"></a>
-# **serpGoogleAiModeLanguages**
-> SerpGoogleAiModeLanguagesResponseInfo serpGoogleAiModeLanguages()
+<a id="googleAiModeLanguages"></a>
+# **googleAiModeLanguages**
+> SerpGoogleAiModeLanguagesResponseInfo googleAiModeLanguages()
 
 
 ### Example
@@ -1418,10 +1536,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpGoogleAiModeLanguagesResponseInfo response = apiInstance.serpGoogleAiModeLanguages();
+    SerpGoogleAiModeLanguagesResponseInfo response = apiInstance.googleAiModeLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleAiModeLanguages");
+      System.err.println("Exception when calling SerpApi#googleAiModeLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -1486,11 +1604,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleAiModeTaskPostRequestInfo model = new SerpGoogleAiModeTaskPostRequestInfo()
-           .keyword("what is google ai mode")
+    SerpGoogleAiModeTaskPostResponseInfo response = apiInstance.googleAiModeTaskPost(
+       List.of(
+    
+           new SerpGoogleAiModeTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleAiModeTaskPostResponseInfo response = apiInstance.googleAiModeTaskPost(List.of(model));
+        
+        
+           .keyword("what is google ai mode")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAiModeTaskPost");
@@ -1696,7 +1824,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleAiModeTaskGetAdvancedResponseInfo response = apiInstance.googleAiModeTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1765,7 +1893,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleAiModeTaskGetHtmlResponseInfo response = apiInstance.googleAiModeTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1834,11 +1962,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleAiModeLiveAdvancedRequestInfo model = new SerpGoogleAiModeLiveAdvancedRequestInfo()
-           .keyword("what is google ai mode")
+    SerpGoogleAiModeLiveAdvancedResponseInfo response = apiInstance.googleAiModeLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleAiModeLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleAiModeLiveAdvancedResponseInfo response = apiInstance.googleAiModeLiveAdvanced(List.of(model));
+        
+        
+           .keyword("what is google ai mode")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAiModeLiveAdvanced");
@@ -1906,11 +2044,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleAiModeLiveHtmlRequestInfo model = new SerpGoogleAiModeLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleAiModeLiveHtmlResponseInfo response = apiInstance.googleAiModeLiveHtml(
+       List.of(
+    
+           new SerpGoogleAiModeLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleAiModeLiveHtmlResponseInfo response = apiInstance.googleAiModeLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAiModeLiveHtml");
@@ -1978,11 +2126,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleMapsTaskPostRequestInfo model = new SerpGoogleMapsTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleMapsTaskPostResponseInfo response = apiInstance.googleMapsTaskPost(
+       List.of(
+    
+           new SerpGoogleMapsTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleMapsTaskPostResponseInfo response = apiInstance.googleMapsTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleMapsTaskPost");
@@ -2188,7 +2346,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleMapsTaskGetAdvancedResponseInfo response = apiInstance.googleMapsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2257,11 +2415,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleMapsLiveAdvancedRequestInfo model = new SerpGoogleMapsLiveAdvancedRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleMapsLiveAdvancedResponseInfo response = apiInstance.googleMapsLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleMapsLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleMapsLiveAdvancedResponseInfo response = apiInstance.googleMapsLiveAdvanced(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleMapsLiveAdvanced");
@@ -2329,13 +2497,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleLocalFinderTaskPostRequestInfo model = new SerpGoogleLocalFinderTaskPostRequestInfo()
-           .keyword("local nail services")
-           .locationCode(2840)
+    SerpGoogleLocalFinderTaskPostResponseInfo response = apiInstance.googleLocalFinderTaskPost(
+       List.of(
+    
+           new SerpGoogleLocalFinderTaskPostRequestInfo()
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
+           .keyword("local nail services")
+        
+        
            .minRating(4.5d)
-           .timeFilter("monday");
-    SerpGoogleLocalFinderTaskPostResponseInfo response = apiInstance.googleLocalFinderTaskPost(List.of(model));
+        
+        
+           .timeFilter("monday")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleLocalFinderTaskPost");
@@ -2541,7 +2723,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleLocalFinderTaskGetAdvancedResponseInfo response = apiInstance.googleLocalFinderTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2610,7 +2792,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleLocalFinderTaskGetHtmlResponseInfo response = apiInstance.googleLocalFinderTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2679,13 +2861,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleLocalFinderLiveAdvancedRequestInfo model = new SerpGoogleLocalFinderLiveAdvancedRequestInfo()
-           .keyword("local nail services")
-           .locationCode(2840)
+    SerpGoogleLocalFinderLiveAdvancedResponseInfo response = apiInstance.googleLocalFinderLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleLocalFinderLiveAdvancedRequestInfo()
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
+           .keyword("local nail services")
+        
+        
            .minRating(4.5d)
-           .timeFilter("monday");
-    SerpGoogleLocalFinderLiveAdvancedResponseInfo response = apiInstance.googleLocalFinderLiveAdvanced(List.of(model));
+        
+        
+           .timeFilter("monday")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleLocalFinderLiveAdvanced");
@@ -2753,11 +2949,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleLocalFinderLiveHtmlRequestInfo model = new SerpGoogleLocalFinderLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleLocalFinderLiveHtmlResponseInfo response = apiInstance.googleLocalFinderLiveHtml(
+       List.of(
+    
+           new SerpGoogleLocalFinderLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleLocalFinderLiveHtmlResponseInfo response = apiInstance.googleLocalFinderLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleLocalFinderLiveHtml");
@@ -2825,11 +3031,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleNewsTaskPostRequestInfo model = new SerpGoogleNewsTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleNewsTaskPostResponseInfo response = apiInstance.googleNewsTaskPost(
+       List.of(
+    
+           new SerpGoogleNewsTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleNewsTaskPostResponseInfo response = apiInstance.googleNewsTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleNewsTaskPost");
@@ -3035,7 +3251,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleNewsTaskGetAdvancedResponseInfo response = apiInstance.googleNewsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3104,7 +3320,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleNewsTaskGetHtmlResponseInfo response = apiInstance.googleNewsTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3173,11 +3389,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleNewsLiveAdvancedRequestInfo model = new SerpGoogleNewsLiveAdvancedRequestInfo()
-           .keyword("android")
+    SerpGoogleNewsLiveAdvancedResponseInfo response = apiInstance.googleNewsLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleNewsLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleNewsLiveAdvancedResponseInfo response = apiInstance.googleNewsLiveAdvanced(List.of(model));
+        
+        
+           .keyword("android")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleNewsLiveAdvanced");
@@ -3245,11 +3471,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleNewsLiveHtmlRequestInfo model = new SerpGoogleNewsLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleNewsLiveHtmlResponseInfo response = apiInstance.googleNewsLiveHtml(
+       List.of(
+    
+           new SerpGoogleNewsLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleNewsLiveHtmlResponseInfo response = apiInstance.googleNewsLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleNewsLiveHtml");
@@ -3317,11 +3553,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleEventsTaskPostRequestInfo model = new SerpGoogleEventsTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleEventsTaskPostResponseInfo response = apiInstance.googleEventsTaskPost(
+       List.of(
+    
+           new SerpGoogleEventsTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleEventsTaskPostResponseInfo response = apiInstance.googleEventsTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleEventsTaskPost");
@@ -3527,7 +3773,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleEventsTaskGetAdvancedResponseInfo response = apiInstance.googleEventsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3596,11 +3842,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleEventsLiveAdvancedRequestInfo model = new SerpGoogleEventsLiveAdvancedRequestInfo()
+    SerpGoogleEventsLiveAdvancedResponseInfo response = apiInstance.googleEventsLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleEventsLiveAdvancedRequestInfo()
+        
            .keyword("concerts")
+        
+        
            .locationName("Los Angeles,California,United States")
-           .dateRange("today");
-    SerpGoogleEventsLiveAdvancedResponseInfo response = apiInstance.googleEventsLiveAdvanced(List.of(model));
+        
+        
+           .dateRange("today")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleEventsLiveAdvanced");
@@ -3668,11 +3924,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleImagesTaskPostRequestInfo model = new SerpGoogleImagesTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleImagesTaskPostResponseInfo response = apiInstance.googleImagesTaskPost(
+       List.of(
+    
+           new SerpGoogleImagesTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleImagesTaskPostResponseInfo response = apiInstance.googleImagesTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleImagesTaskPost");
@@ -3878,7 +4144,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleImagesTaskGetAdvancedResponseInfo response = apiInstance.googleImagesTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3947,7 +4213,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleImagesTaskGetHtmlResponseInfo response = apiInstance.googleImagesTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4016,11 +4282,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleImagesLiveAdvancedRequestInfo model = new SerpGoogleImagesLiveAdvancedRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleImagesLiveAdvancedResponseInfo response = apiInstance.googleImagesLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleImagesLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleImagesLiveAdvancedResponseInfo response = apiInstance.googleImagesLiveAdvanced(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleImagesLiveAdvanced");
@@ -4088,11 +4364,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleImagesLiveHtmlRequestInfo model = new SerpGoogleImagesLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpGoogleImagesLiveHtmlResponseInfo response = apiInstance.googleImagesLiveHtml(
+       List.of(
+    
+           new SerpGoogleImagesLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleImagesLiveHtmlResponseInfo response = apiInstance.googleImagesLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleImagesLiveHtml");
@@ -4160,11 +4446,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleSearchByImageTaskPostRequestInfo model = new SerpGoogleSearchByImageTaskPostRequestInfo()
-           .imageUrl("https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png")
+    SerpGoogleSearchByImageTaskPostResponseInfo response = apiInstance.googleSearchByImageTaskPost(
+       List.of(
+    
+           new SerpGoogleSearchByImageTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleSearchByImageTaskPostResponseInfo response = apiInstance.googleSearchByImageTaskPost(List.of(model));
+        
+        
+           .imageUrl("https://dataforseo.com/wp-content/uploads/2016/11/data_for_seo_light_429.png")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleSearchByImageTaskPost");
@@ -4370,7 +4666,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleSearchByImageTaskGetAdvancedResponseInfo response = apiInstance.googleSearchByImageTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4439,11 +4735,37 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleJobsTaskPostRequestInfo model = new SerpGoogleJobsTaskPostRequestInfo()
-           .keyword(".net developer")
+    SerpGoogleJobsTaskPostResponseInfo response = apiInstance.googleJobsTaskPost(
+       List.of(
+    
+           new SerpGoogleJobsTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleJobsTaskPostResponseInfo response = apiInstance.googleJobsTaskPost(List.of(model));
+        
+        
+           .keyword(".net developer"),
+    
+           new SerpGoogleJobsTaskPostRequestInfo()
+        
+           .languageName("English")
+        
+        
+           .locationName("United States")
+        
+        
+           .keyword(".net developer")
+        
+        
+           .tag("some_string_123")
+        
+        
+           .pingbackUrl("https://your-server.com/pingscript?id=$id&tag=$tag")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleJobsTaskPost");
@@ -4649,7 +4971,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleJobsTaskGetAdvancedResponseInfo response = apiInstance.googleJobsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4718,7 +5040,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleJobsTaskGetHtmlResponseInfo response = apiInstance.googleJobsTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4787,12 +5109,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleAutocompleteTaskPostRequestInfo model = new SerpGoogleAutocompleteTaskPostRequestInfo()
-           .keyword("albert einstein")
-           .locationCode(2840)
+    SerpGoogleAutocompleteTaskPostResponseInfo response = apiInstance.googleAutocompleteTaskPost(
+       List.of(
+    
+           new SerpGoogleAutocompleteTaskPostRequestInfo()
+        
            .languageCode("en")
-           .cursorPointer(6);
-    SerpGoogleAutocompleteTaskPostResponseInfo response = apiInstance.googleAutocompleteTaskPost(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .keyword("albert einstein")
+        
+        
+           .cursorPointer(6)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAutocompleteTaskPost");
@@ -4998,7 +5332,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleAutocompleteTaskGetAdvancedResponseInfo response = apiInstance.googleAutocompleteTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -5067,12 +5401,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleAutocompleteLiveAdvancedRequestInfo model = new SerpGoogleAutocompleteLiveAdvancedRequestInfo()
-           .keyword("albert einstein")
-           .locationCode(2840)
+    SerpGoogleAutocompleteLiveAdvancedResponseInfo response = apiInstance.googleAutocompleteLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleAutocompleteLiveAdvancedRequestInfo()
+        
            .languageCode("en")
-           .client("gws-wiz-serp");
-    SerpGoogleAutocompleteLiveAdvancedResponseInfo response = apiInstance.googleAutocompleteLiveAdvanced(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .keyword("albert einstein")
+        
+        
+           .client("gws-wiz-serp")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAutocompleteLiveAdvanced");
@@ -5140,22 +5486,42 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleDatasetSearchTaskPostRequestInfo model = new SerpGoogleDatasetSearchTaskPostRequestInfo()
+    SerpGoogleDatasetSearchTaskPostResponseInfo response = apiInstance.googleDatasetSearchTaskPost(
+       List.of(
+    
+           new SerpGoogleDatasetSearchTaskPostRequestInfo()
+        
            .keyword("water quality")
+        
+        
            .lastUpdated("1m")
-           .fileFormats(
-               List.of(
-                   "archive",
-                   "image"
-                ))
+        
+        
+           .fileFormats(List.of(
+    
+           "archive",
+    
+           "image"
+    
+       ))
+        
+        
            .usageRights("noncommercial")
+        
+        
            .isFree(true)
-           .topics(
-               List.of(
-                   "natural_sciences",
-                   "geo"
-                ));
-    SerpGoogleDatasetSearchTaskPostResponseInfo response = apiInstance.googleDatasetSearchTaskPost(List.of(model));
+        
+        
+           .topics(List.of(
+    
+           "natural_sciences",
+    
+           "geo"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleDatasetSearchTaskPost");
@@ -5361,7 +5727,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleDatasetSearchTaskGetAdvancedResponseInfo response = apiInstance.googleDatasetSearchTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -5430,22 +5796,42 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleDatasetSearchLiveAdvancedRequestInfo model = new SerpGoogleDatasetSearchLiveAdvancedRequestInfo()
+    SerpGoogleDatasetSearchLiveAdvancedResponseInfo response = apiInstance.googleDatasetSearchLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleDatasetSearchLiveAdvancedRequestInfo()
+        
            .keyword("water quality")
+        
+        
            .lastUpdated("1m")
-           .fileFormats(
-               List.of(
-                   "archive",
-                   "image"
-                ))
+        
+        
+           .fileFormats(List.of(
+    
+           "archive",
+    
+           "image"
+    
+       ))
+        
+        
            .usageRights("noncommercial")
+        
+        
            .isFree(true)
-           .topics(
-               List.of(
-                   "natural_sciences",
-                   "geo"
-                ));
-    SerpGoogleDatasetSearchLiveAdvancedResponseInfo response = apiInstance.googleDatasetSearchLiveAdvanced(List.of(model));
+        
+        
+           .topics(List.of(
+    
+           "natural_sciences",
+    
+           "geo"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleDatasetSearchLiveAdvanced");
@@ -5513,9 +5899,15 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleDatasetInfoTaskPostRequestInfo model = new SerpGoogleDatasetInfoTaskPostRequestInfo()
-           .datasetId("L2cvMTFqbl85ZHN6MQ==");
-    SerpGoogleDatasetInfoTaskPostResponseInfo response = apiInstance.googleDatasetInfoTaskPost(List.of(model));
+    SerpGoogleDatasetInfoTaskPostResponseInfo response = apiInstance.googleDatasetInfoTaskPost(
+       List.of(
+    
+           new SerpGoogleDatasetInfoTaskPostRequestInfo()
+        
+           .datasetId("L2cvMTFqbl85ZHN6MQ==")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleDatasetInfoTaskPost");
@@ -5721,7 +6113,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleDatasetInfoTaskGetAdvancedResponseInfo response = apiInstance.googleDatasetInfoTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -5790,9 +6182,15 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleDatasetInfoLiveAdvancedRequestInfo model = new SerpGoogleDatasetInfoLiveAdvancedRequestInfo()
-           .datasetId("L2cvMTFqbl85ZHN6MQ==");
-    SerpGoogleDatasetInfoLiveAdvancedResponseInfo response = apiInstance.googleDatasetInfoLiveAdvanced(List.of(model));
+    SerpGoogleDatasetInfoLiveAdvancedResponseInfo response = apiInstance.googleDatasetInfoLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleDatasetInfoLiveAdvancedRequestInfo()
+        
+           .datasetId("L2cvMTFqbl85ZHN6MQ==")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleDatasetInfoLiveAdvanced");
@@ -5831,9 +6229,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleAdsAdvertisersLocations"></a>
-# **serpGoogleAdsAdvertisersLocations**
-> SerpGoogleAdsAdvertisersLocationsResponseInfo serpGoogleAdsAdvertisersLocations()
+<a id="googleAdsAdvertisersLocations"></a>
+# **googleAdsAdvertisersLocations**
+> SerpGoogleAdsAdvertisersLocationsResponseInfo googleAdsAdvertisersLocations()
 
 
 ### Example
@@ -5861,10 +6259,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpGoogleAdsAdvertisersLocationsResponseInfo response = apiInstance.serpGoogleAdsAdvertisersLocations();
+    SerpGoogleAdsAdvertisersLocationsResponseInfo response = apiInstance.googleAdsAdvertisersLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleAdsAdvertisersLocations");
+      System.err.println("Exception when calling SerpApi#googleAdsAdvertisersLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -5929,10 +6327,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleAdsAdvertisersTaskPostRequestInfo model = new SerpGoogleAdsAdvertisersTaskPostRequestInfo()
+    SerpGoogleAdsAdvertisersTaskPostResponseInfo response = apiInstance.googleAdsAdvertisersTaskPost(
+       List.of(
+    
+           new SerpGoogleAdsAdvertisersTaskPostRequestInfo()
+        
+           .locationCode(2840)
+        
+        
            .keyword("apple")
-           .locationCode(2840);
-    SerpGoogleAdsAdvertisersTaskPostResponseInfo response = apiInstance.googleAdsAdvertisersTaskPost(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAdsAdvertisersTaskPost");
@@ -6069,7 +6475,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleAdsAdvertisersTaskGetAdvancedResponseInfo response = apiInstance.googleAdsAdvertisersTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -6109,9 +6515,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpGoogleAdsSearchLocations"></a>
-# **serpGoogleAdsSearchLocations**
-> SerpGoogleAdsSearchLocationsResponseInfo serpGoogleAdsSearchLocations()
+<a id="googleAdsSearchLocations"></a>
+# **googleAdsSearchLocations**
+> SerpGoogleAdsSearchLocationsResponseInfo googleAdsSearchLocations()
 
 
 ### Example
@@ -6139,10 +6545,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpGoogleAdsSearchLocationsResponseInfo response = apiInstance.serpGoogleAdsSearchLocations();
+    SerpGoogleAdsSearchLocationsResponseInfo response = apiInstance.googleAdsSearchLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpGoogleAdsSearchLocations");
+      System.err.println("Exception when calling SerpApi#googleAdsSearchLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -6207,15 +6613,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleAdsSearchTaskPostRequestInfo model = new SerpGoogleAdsSearchTaskPostRequestInfo()
-           .advertiserIds(
-               List.of(
-                   "AR13752565271262920705",
-                   "AR02439908557932462081"
-                ))
+    SerpGoogleAdsSearchTaskPostResponseInfo response = apiInstance.googleAdsSearchTaskPost(
+       List.of(
+    
+           new SerpGoogleAdsSearchTaskPostRequestInfo()
+        
            .locationCode(2840)
-           .platform("google_search");
-    SerpGoogleAdsSearchTaskPostResponseInfo response = apiInstance.googleAdsSearchTaskPost(List.of(model));
+        
+        
+           .platform("google_search")
+        
+        
+           .advertiserIds(List.of(
+    
+           "AR13752565271262920705",
+    
+           "AR02439908557932462081"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleAdsSearchTaskPost");
@@ -6352,7 +6770,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleAdsSearchTaskGetAdvancedResponseInfo response = apiInstance.googleAdsSearchTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -6392,9 +6810,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBingLocations"></a>
-# **serpBingLocations**
-> SerpBingLocationsResponseInfo serpBingLocations()
+<a id="bingLocations"></a>
+# **bingLocations**
+> SerpBingLocationsResponseInfo bingLocations()
 
 
 ### Example
@@ -6422,10 +6840,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpBingLocationsResponseInfo response = apiInstance.serpBingLocations();
+    SerpBingLocationsResponseInfo response = apiInstance.bingLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBingLocations");
+      System.err.println("Exception when calling SerpApi#bingLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -6461,9 +6879,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBingLocationsCountry"></a>
-# **serpBingLocationsCountry**
-> SerpBingLocationsCountryResponseInfo serpBingLocationsCountry()
+<a id="bingLocationsCountry"></a>
+# **bingLocationsCountry**
+> SerpBingLocationsCountryResponseInfo bingLocationsCountry()
 
 
 ### Example
@@ -6490,11 +6908,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us";
-    SerpBingLocationsCountryResponseInfo response = apiInstance.serpBingLocationsCountry(country);
+    String country = ;
+    SerpBingLocationsCountryResponseInfo response = apiInstance.bingLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBingLocationsCountry");
+      System.err.println("Exception when calling SerpApi#bingLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -6530,9 +6948,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBingLanguages"></a>
-# **serpBingLanguages**
-> SerpBingLanguagesResponseInfo serpBingLanguages()
+<a id="bingLanguages"></a>
+# **bingLanguages**
+> SerpBingLanguagesResponseInfo bingLanguages()
 
 
 ### Example
@@ -6560,10 +6978,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpBingLanguagesResponseInfo response = apiInstance.serpBingLanguages();
+    SerpBingLanguagesResponseInfo response = apiInstance.bingLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBingLanguages");
+      System.err.println("Exception when calling SerpApi#bingLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -6628,11 +7046,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBingOrganicTaskPostRequestInfo model = new SerpBingOrganicTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpBingOrganicTaskPostResponseInfo response = apiInstance.bingOrganicTaskPost(
+       List.of(
+    
+           new SerpBingOrganicTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpBingOrganicTaskPostResponseInfo response = apiInstance.bingOrganicTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicTaskPost");
@@ -6838,7 +7266,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBingOrganicTaskGetRegularResponseInfo response = apiInstance.bingOrganicTaskGetRegular(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -6907,7 +7335,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBingOrganicTaskGetAdvancedResponseInfo response = apiInstance.bingOrganicTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -6976,7 +7404,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBingOrganicTaskGetHtmlResponseInfo response = apiInstance.bingOrganicTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -7045,11 +7473,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBingOrganicLiveRegularRequestInfo model = new SerpBingOrganicLiveRegularRequestInfo()
-           .keyword("albert einstein")
+    SerpBingOrganicLiveRegularResponseInfo response = apiInstance.bingOrganicLiveRegular(
+       List.of(
+    
+           new SerpBingOrganicLiveRegularRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpBingOrganicLiveRegularResponseInfo response = apiInstance.bingOrganicLiveRegular(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicLiveRegular");
@@ -7117,11 +7555,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBingOrganicLiveAdvancedRequestInfo model = new SerpBingOrganicLiveAdvancedRequestInfo()
-           .keyword("flight ticket new york san francisco")
+    SerpBingOrganicLiveAdvancedResponseInfo response = apiInstance.bingOrganicLiveAdvanced(
+       List.of(
+    
+           new SerpBingOrganicLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpBingOrganicLiveAdvancedResponseInfo response = apiInstance.bingOrganicLiveAdvanced(List.of(model));
+        
+        
+           .keyword("flight ticket new york san francisco")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicLiveAdvanced");
@@ -7189,11 +7637,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBingOrganicLiveHtmlRequestInfo model = new SerpBingOrganicLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpBingOrganicLiveHtmlResponseInfo response = apiInstance.bingOrganicLiveHtml(
+       List.of(
+    
+           new SerpBingOrganicLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpBingOrganicLiveHtmlResponseInfo response = apiInstance.bingOrganicLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingOrganicLiveHtml");
@@ -7261,11 +7719,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBingLocalPackTaskPostRequestInfo model = new SerpBingLocalPackTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpBingLocalPackTaskPostResponseInfo response = apiInstance.bingLocalPackTaskPost(
+       List.of(
+    
+           new SerpBingLocalPackTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpBingLocalPackTaskPostResponseInfo response = apiInstance.bingLocalPackTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingLocalPackTaskPost");
@@ -7471,7 +7939,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBingLocalPackTaskGetRegularResponseInfo response = apiInstance.bingLocalPackTaskGetRegular(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -7540,7 +8008,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBingLocalPackTaskGetHtmlResponseInfo response = apiInstance.bingLocalPackTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -7609,11 +8077,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBingLocalPackLiveRegularRequestInfo model = new SerpBingLocalPackLiveRegularRequestInfo()
-           .keyword("albert einstein")
+    SerpBingLocalPackLiveRegularResponseInfo response = apiInstance.bingLocalPackLiveRegular(
+       List.of(
+    
+           new SerpBingLocalPackLiveRegularRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpBingLocalPackLiveRegularResponseInfo response = apiInstance.bingLocalPackLiveRegular(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingLocalPackLiveRegular");
@@ -7681,11 +8159,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBingLocalPackLiveHtmlRequestInfo model = new SerpBingLocalPackLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpBingLocalPackLiveHtmlResponseInfo response = apiInstance.bingLocalPackLiveHtml(
+       List.of(
+    
+           new SerpBingLocalPackLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpBingLocalPackLiveHtmlResponseInfo response = apiInstance.bingLocalPackLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#bingLocalPackLiveHtml");
@@ -7724,9 +8212,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYoutubeLocations"></a>
-# **serpYoutubeLocations**
-> SerpYoutubeLocationsResponseInfo serpYoutubeLocations()
+<a id="youtubeLocations"></a>
+# **youtubeLocations**
+> SerpYoutubeLocationsResponseInfo youtubeLocations()
 
 
 ### Example
@@ -7754,10 +8242,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpYoutubeLocationsResponseInfo response = apiInstance.serpYoutubeLocations();
+    SerpYoutubeLocationsResponseInfo response = apiInstance.youtubeLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYoutubeLocations");
+      System.err.println("Exception when calling SerpApi#youtubeLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -7793,9 +8281,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYoutubeLocationsCountry"></a>
-# **serpYoutubeLocationsCountry**
-> SerpYoutubeLocationsCountryResponseInfo serpYoutubeLocationsCountry()
+<a id="youtubeLocationsCountry"></a>
+# **youtubeLocationsCountry**
+> SerpYoutubeLocationsCountryResponseInfo youtubeLocationsCountry()
 
 
 ### Example
@@ -7822,11 +8310,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us";
-    SerpYoutubeLocationsCountryResponseInfo response = apiInstance.serpYoutubeLocationsCountry(country);
+    String country = ;
+    SerpYoutubeLocationsCountryResponseInfo response = apiInstance.youtubeLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYoutubeLocationsCountry");
+      System.err.println("Exception when calling SerpApi#youtubeLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -7862,9 +8350,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYoutubeLanguages"></a>
-# **serpYoutubeLanguages**
-> SerpYoutubeLanguagesResponseInfo serpYoutubeLanguages()
+<a id="youtubeLanguages"></a>
+# **youtubeLanguages**
+> SerpYoutubeLanguagesResponseInfo youtubeLanguages()
 
 
 ### Example
@@ -7892,10 +8380,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpYoutubeLanguagesResponseInfo response = apiInstance.serpYoutubeLanguages();
+    SerpYoutubeLanguagesResponseInfo response = apiInstance.youtubeLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYoutubeLanguages");
+      System.err.println("Exception when calling SerpApi#youtubeLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -7960,11 +8448,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYoutubeVideoInfoTaskPostRequestInfo model = new SerpYoutubeVideoInfoTaskPostRequestInfo()
-           .videoId("vQXvyV0zIP4")
+    SerpYoutubeVideoInfoTaskPostResponseInfo response = apiInstance.youtubeVideoInfoTaskPost(
+       List.of(
+    
+           new SerpYoutubeVideoInfoTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYoutubeVideoInfoTaskPostResponseInfo response = apiInstance.youtubeVideoInfoTaskPost(List.of(model));
+        
+        
+           .videoId("vQXvyV0zIP4")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#youtubeVideoInfoTaskPost");
@@ -8170,7 +8668,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo response = apiInstance.youtubeVideoInfoTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -8239,11 +8737,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYoutubeVideoInfoLiveAdvancedRequestInfo model = new SerpYoutubeVideoInfoLiveAdvancedRequestInfo()
-           .videoId("vQXvyV0zIP4")
+    SerpYoutubeVideoInfoLiveAdvancedResponseInfo response = apiInstance.youtubeVideoInfoLiveAdvanced(
+       List.of(
+    
+           new SerpYoutubeVideoInfoLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYoutubeVideoInfoLiveAdvancedResponseInfo response = apiInstance.youtubeVideoInfoLiveAdvanced(List.of(model));
+        
+        
+           .videoId("vQXvyV0zIP4")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#youtubeVideoInfoLiveAdvanced");
@@ -8311,11 +8819,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYoutubeVideoSubtitlesTaskPostRequestInfo model = new SerpYoutubeVideoSubtitlesTaskPostRequestInfo()
-           .videoId("Y8Wu4rSNJms")
+    SerpYoutubeVideoSubtitlesTaskPostResponseInfo response = apiInstance.youtubeVideoSubtitlesTaskPost(
+       List.of(
+    
+           new SerpYoutubeVideoSubtitlesTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYoutubeVideoSubtitlesTaskPostResponseInfo response = apiInstance.youtubeVideoSubtitlesTaskPost(List.of(model));
+        
+        
+           .videoId("Y8Wu4rSNJms")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesTaskPost");
@@ -8521,7 +9039,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpYoutubeVideoSubtitlesTaskGetAdvancedResponseInfo response = apiInstance.youtubeVideoSubtitlesTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -8590,11 +9108,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo model = new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo()
-           .videoId("Y8Wu4rSNJms")
+    SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo response = apiInstance.youtubeVideoSubtitlesLiveAdvanced(
+       List.of(
+    
+           new SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYoutubeVideoSubtitlesLiveAdvancedResponseInfo response = apiInstance.youtubeVideoSubtitlesLiveAdvanced(List.of(model));
+        
+        
+           .videoId("Y8Wu4rSNJms")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#youtubeVideoSubtitlesLiveAdvanced");
@@ -8662,11 +9190,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYoutubeVideoCommentsTaskPostRequestInfo model = new SerpYoutubeVideoCommentsTaskPostRequestInfo()
-           .videoId("vQXvyV0zIP4")
+    SerpYoutubeVideoCommentsTaskPostResponseInfo response = apiInstance.youtubeVideoCommentsTaskPost(
+       List.of(
+    
+           new SerpYoutubeVideoCommentsTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYoutubeVideoCommentsTaskPostResponseInfo response = apiInstance.youtubeVideoCommentsTaskPost(List.of(model));
+        
+        
+           .videoId("vQXvyV0zIP4")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#youtubeVideoCommentsTaskPost");
@@ -8872,7 +9410,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpYoutubeVideoCommentsTaskGetAdvancedResponseInfo response = apiInstance.youtubeVideoCommentsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -8941,11 +9479,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYoutubeVideoCommentsLiveAdvancedRequestInfo model = new SerpYoutubeVideoCommentsLiveAdvancedRequestInfo()
-           .videoId("vQXvyV0zIP4")
+    SerpYoutubeVideoCommentsLiveAdvancedResponseInfo response = apiInstance.youtubeVideoCommentsLiveAdvanced(
+       List.of(
+    
+           new SerpYoutubeVideoCommentsLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYoutubeVideoCommentsLiveAdvancedResponseInfo response = apiInstance.youtubeVideoCommentsLiveAdvanced(List.of(model));
+        
+        
+           .videoId("vQXvyV0zIP4")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#youtubeVideoCommentsLiveAdvanced");
@@ -8984,9 +9532,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYahooLocations"></a>
-# **serpYahooLocations**
-> SerpYahooLocationsResponseInfo serpYahooLocations()
+<a id="yahooLocations"></a>
+# **yahooLocations**
+> SerpYahooLocationsResponseInfo yahooLocations()
 
 
 ### Example
@@ -9014,10 +9562,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpYahooLocationsResponseInfo response = apiInstance.serpYahooLocations();
+    SerpYahooLocationsResponseInfo response = apiInstance.yahooLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYahooLocations");
+      System.err.println("Exception when calling SerpApi#yahooLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -9053,9 +9601,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYahooLocationsCountry"></a>
-# **serpYahooLocationsCountry**
-> SerpYahooLocationsCountryResponseInfo serpYahooLocationsCountry()
+<a id="yahooLocationsCountry"></a>
+# **yahooLocationsCountry**
+> SerpYahooLocationsCountryResponseInfo yahooLocationsCountry()
 
 
 ### Example
@@ -9082,11 +9630,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us";
-    SerpYahooLocationsCountryResponseInfo response = apiInstance.serpYahooLocationsCountry(country);
+    String country = ;
+    SerpYahooLocationsCountryResponseInfo response = apiInstance.yahooLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYahooLocationsCountry");
+      System.err.println("Exception when calling SerpApi#yahooLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -9122,9 +9670,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpYahooLanguages"></a>
-# **serpYahooLanguages**
-> SerpYahooLanguagesResponseInfo serpYahooLanguages()
+<a id="yahooLanguages"></a>
+# **yahooLanguages**
+> SerpYahooLanguagesResponseInfo yahooLanguages()
 
 
 ### Example
@@ -9152,10 +9700,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpYahooLanguagesResponseInfo response = apiInstance.serpYahooLanguages();
+    SerpYahooLanguagesResponseInfo response = apiInstance.yahooLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpYahooLanguages");
+      System.err.println("Exception when calling SerpApi#yahooLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -9220,11 +9768,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYahooOrganicTaskPostRequestInfo model = new SerpYahooOrganicTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpYahooOrganicTaskPostResponseInfo response = apiInstance.yahooOrganicTaskPost(
+       List.of(
+    
+           new SerpYahooOrganicTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYahooOrganicTaskPostResponseInfo response = apiInstance.yahooOrganicTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicTaskPost");
@@ -9430,7 +9988,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpYahooOrganicTaskGetRegularResponseInfo response = apiInstance.yahooOrganicTaskGetRegular(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -9499,7 +10057,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpYahooOrganicTaskGetAdvancedResponseInfo response = apiInstance.yahooOrganicTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -9568,7 +10126,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpYahooOrganicTaskGetHtmlResponseInfo response = apiInstance.yahooOrganicTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -9637,11 +10195,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYahooOrganicLiveRegularRequestInfo model = new SerpYahooOrganicLiveRegularRequestInfo()
-           .keyword("albert einstein")
+    SerpYahooOrganicLiveRegularResponseInfo response = apiInstance.yahooOrganicLiveRegular(
+       List.of(
+    
+           new SerpYahooOrganicLiveRegularRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYahooOrganicLiveRegularResponseInfo response = apiInstance.yahooOrganicLiveRegular(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicLiveRegular");
@@ -9709,11 +10277,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYahooOrganicLiveAdvancedRequestInfo model = new SerpYahooOrganicLiveAdvancedRequestInfo()
-           .keyword("albert einstein")
+    SerpYahooOrganicLiveAdvancedResponseInfo response = apiInstance.yahooOrganicLiveAdvanced(
+       List.of(
+    
+           new SerpYahooOrganicLiveAdvancedRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYahooOrganicLiveAdvancedResponseInfo response = apiInstance.yahooOrganicLiveAdvanced(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicLiveAdvanced");
@@ -9781,11 +10359,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpYahooOrganicLiveHtmlRequestInfo model = new SerpYahooOrganicLiveHtmlRequestInfo()
-           .keyword("albert einstein")
+    SerpYahooOrganicLiveHtmlResponseInfo response = apiInstance.yahooOrganicLiveHtml(
+       List.of(
+    
+           new SerpYahooOrganicLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpYahooOrganicLiveHtmlResponseInfo response = apiInstance.yahooOrganicLiveHtml(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#yahooOrganicLiveHtml");
@@ -9824,9 +10412,9 @@ public class Example {
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBaiduLocations"></a>
-# **serpBaiduLocations**
-> SerpBaiduLocationsResponseInfo serpBaiduLocations()
+<a id="baiduLocations"></a>
+# **baiduLocations**
+> SerpBaiduLocationsResponseInfo baiduLocations()
 
 
 ### Example
@@ -9854,10 +10442,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpBaiduLocationsResponseInfo response = apiInstance.serpBaiduLocations();
+    SerpBaiduLocationsResponseInfo response = apiInstance.baiduLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBaiduLocations");
+      System.err.println("Exception when calling SerpApi#baiduLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -9893,9 +10481,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBaiduLocationsCountry"></a>
-# **serpBaiduLocationsCountry**
-> SerpBaiduLocationsCountryResponseInfo serpBaiduLocationsCountry()
+<a id="baiduLocationsCountry"></a>
+# **baiduLocationsCountry**
+> SerpBaiduLocationsCountryResponseInfo baiduLocationsCountry()
 
 
 ### Example
@@ -9922,11 +10510,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us";
-    SerpBaiduLocationsCountryResponseInfo response = apiInstance.serpBaiduLocationsCountry(country);
+    String country = ;
+    SerpBaiduLocationsCountryResponseInfo response = apiInstance.baiduLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBaiduLocationsCountry");
+      System.err.println("Exception when calling SerpApi#baiduLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -9962,9 +10550,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpBaiduLanguages"></a>
-# **serpBaiduLanguages**
-> SerpBaiduLanguagesResponseInfo serpBaiduLanguages()
+<a id="baiduLanguages"></a>
+# **baiduLanguages**
+> SerpBaiduLanguagesResponseInfo baiduLanguages()
 
 
 ### Example
@@ -9992,10 +10580,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpBaiduLanguagesResponseInfo response = apiInstance.serpBaiduLanguages();
+    SerpBaiduLanguagesResponseInfo response = apiInstance.baiduLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpBaiduLanguages");
+      System.err.println("Exception when calling SerpApi#baiduLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -10060,12 +10648,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpBaiduOrganicTaskPostRequestInfo model = new SerpBaiduOrganicTaskPostRequestInfo()
-           .keyword("best iphone ever")
-           .priority(2)
+    SerpBaiduOrganicTaskPostResponseInfo response = apiInstance.baiduOrganicTaskPost(
+       List.of(
+    
+           new SerpBaiduOrganicTaskPostRequestInfo()
+        
            .locationCode(2156)
-           .tag("some_string_123");
-    SerpBaiduOrganicTaskPostResponseInfo response = apiInstance.baiduOrganicTaskPost(List.of(model));
+        
+        
+           .keyword("best iphone ever")
+        
+        
+           .tag("some_string_123")
+        
+        
+           .priority(2)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#baiduOrganicTaskPost");
@@ -10271,7 +10871,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBaiduOrganicTaskGetRegularResponseInfo response = apiInstance.baiduOrganicTaskGetRegular(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -10340,7 +10940,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBaiduOrganicTaskGetAdvancedResponseInfo response = apiInstance.baiduOrganicTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -10409,7 +11009,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpBaiduOrganicTaskGetHtmlResponseInfo response = apiInstance.baiduOrganicTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -10478,13 +11078,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpNaverOrganicTaskPostRequestInfo model = new SerpNaverOrganicTaskPostRequestInfo()
+    SerpNaverOrganicTaskPostResponseInfo response = apiInstance.naverOrganicTaskPost(
+       List.of(
+    
+           new SerpNaverOrganicTaskPostRequestInfo()
+        
            .keyword("albert einstein")
+        
+        
            .device("desktop")
+        
+        
            .tag("some_string_123")
+        
+        
            .postbackUrl("https://your-server.com/postbackscript.php")
-           .postbackData("regular");
-    SerpNaverOrganicTaskPostResponseInfo response = apiInstance.naverOrganicTaskPost(List.of(model));
+        
+        
+           .postbackData("regular")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#naverOrganicTaskPost");
@@ -10690,7 +11304,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpNaverOrganicTaskGetRegularResponseInfo response = apiInstance.naverOrganicTaskGetRegular(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -10759,7 +11373,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpNaverOrganicTaskGetAdvancedResponseInfo response = apiInstance.naverOrganicTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -10828,7 +11442,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpNaverOrganicTaskGetHtmlResponseInfo response = apiInstance.naverOrganicTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -10868,9 +11482,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpSeznamLocations"></a>
-# **serpSeznamLocations**
-> SerpSeznamLocationsResponseInfo serpSeznamLocations()
+<a id="seznamLocations"></a>
+# **seznamLocations**
+> SerpSeznamLocationsResponseInfo seznamLocations()
 
 
 ### Example
@@ -10898,10 +11512,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpSeznamLocationsResponseInfo response = apiInstance.serpSeznamLocations();
+    SerpSeznamLocationsResponseInfo response = apiInstance.seznamLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpSeznamLocations");
+      System.err.println("Exception when calling SerpApi#seznamLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -10937,9 +11551,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpSeznamLocationsCountry"></a>
-# **serpSeznamLocationsCountry**
-> SerpSeznamLocationsCountryResponseInfo serpSeznamLocationsCountry()
+<a id="seznamLocationsCountry"></a>
+# **seznamLocationsCountry**
+> SerpSeznamLocationsCountryResponseInfo seznamLocationsCountry()
 
 
 ### Example
@@ -10966,11 +11580,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String country = "us";
-    SerpSeznamLocationsCountryResponseInfo response = apiInstance.serpSeznamLocationsCountry(country);
+    String country = ;
+    SerpSeznamLocationsCountryResponseInfo response = apiInstance.seznamLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpSeznamLocationsCountry");
+      System.err.println("Exception when calling SerpApi#seznamLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -11006,9 +11620,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="serpSeznamLanguages"></a>
-# **serpSeznamLanguages**
-> SerpSeznamLanguagesResponseInfo serpSeznamLanguages()
+<a id="seznamLanguages"></a>
+# **seznamLanguages**
+> SerpSeznamLanguagesResponseInfo seznamLanguages()
 
 
 ### Example
@@ -11036,10 +11650,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
 
-    SerpSeznamLanguagesResponseInfo response = apiInstance.serpSeznamLanguages();
+    SerpSeznamLanguagesResponseInfo response = apiInstance.seznamLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling SerpApi#serpSeznamLanguages");
+      System.err.println("Exception when calling SerpApi#seznamLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -11104,11 +11718,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpSeznamOrganicTaskPostRequestInfo model = new SerpSeznamOrganicTaskPostRequestInfo()
-           .keyword("albert einstein")
+    SerpSeznamOrganicTaskPostResponseInfo response = apiInstance.seznamOrganicTaskPost(
+       List.of(
+    
+           new SerpSeznamOrganicTaskPostRequestInfo()
+        
+           .languageCode("cs")
+        
+        
            .locationCode(2203)
-           .languageCode("cs");
-    SerpSeznamOrganicTaskPostResponseInfo response = apiInstance.seznamOrganicTaskPost(List.of(model));
+        
+        
+           .keyword("albert einstein")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#seznamOrganicTaskPost");
@@ -11314,7 +11938,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpSeznamOrganicTaskGetRegularResponseInfo response = apiInstance.seznamOrganicTaskGetRegular(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -11383,7 +12007,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpSeznamOrganicTaskGetAdvancedResponseInfo response = apiInstance.seznamOrganicTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -11452,7 +12076,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpSeznamOrganicTaskGetHtmlResponseInfo response = apiInstance.seznamOrganicTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -11521,10 +12145,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceExploreTaskPostRequestInfo model = new SerpGoogleFinanceExploreTaskPostRequestInfo()
+    SerpGoogleFinanceExploreTaskPostResponseInfo response = apiInstance.googleFinanceExploreTaskPost(
+       List.of(
+    
+           new SerpGoogleFinanceExploreTaskPostRequestInfo()
+        
            .locationCode(2840)
-           .languageName("English");
-    SerpGoogleFinanceExploreTaskPostResponseInfo response = apiInstance.googleFinanceExploreTaskPost(List.of(model));
+        
+        
+           .languageName("English")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceExploreTaskPost");
@@ -11661,7 +12293,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleFinanceExploreTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceExploreTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -11730,7 +12362,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleFinanceExploreTaskGetHtmlResponseInfo response = apiInstance.googleFinanceExploreTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -11799,10 +12431,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceExploreLiveAdvancedRequestInfo model = new SerpGoogleFinanceExploreLiveAdvancedRequestInfo()
+    SerpGoogleFinanceExploreLiveAdvancedResponseInfo response = apiInstance.googleFinanceExploreLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleFinanceExploreLiveAdvancedRequestInfo()
+        
            .locationCode(2840)
-           .languageName("English");
-    SerpGoogleFinanceExploreLiveAdvancedResponseInfo response = apiInstance.googleFinanceExploreLiveAdvanced(List.of(model));
+        
+        
+           .languageName("English")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveAdvanced");
@@ -11870,10 +12510,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceExploreLiveHtmlRequestInfo model = new SerpGoogleFinanceExploreLiveHtmlRequestInfo()
+    SerpGoogleFinanceExploreLiveHtmlResponseInfo response = apiInstance.googleFinanceExploreLiveHtml(
+       List.of(
+    
+           new SerpGoogleFinanceExploreLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleFinanceExploreLiveHtmlResponseInfo response = apiInstance.googleFinanceExploreLiveHtml(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceExploreLiveHtml");
@@ -11941,10 +12589,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceMarketsTaskPostRequestInfo model = new SerpGoogleFinanceMarketsTaskPostRequestInfo()
+    SerpGoogleFinanceMarketsTaskPostResponseInfo response = apiInstance.googleFinanceMarketsTaskPost(
+       List.of(
+    
+           new SerpGoogleFinanceMarketsTaskPostRequestInfo()
+        
            .locationCode(2840)
-           .languageName("English");
-    SerpGoogleFinanceMarketsTaskPostResponseInfo response = apiInstance.googleFinanceMarketsTaskPost(List.of(model));
+        
+        
+           .languageName("English")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceMarketsTaskPost");
@@ -12081,7 +12737,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleFinanceMarketsTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceMarketsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -12150,7 +12806,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleFinanceMarketsTaskGetHtmlResponseInfo response = apiInstance.googleFinanceMarketsTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -12219,10 +12875,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceMarketsLiveAdvancedRequestInfo model = new SerpGoogleFinanceMarketsLiveAdvancedRequestInfo()
+    SerpGoogleFinanceMarketsLiveAdvancedResponseInfo response = apiInstance.googleFinanceMarketsLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleFinanceMarketsLiveAdvancedRequestInfo()
+        
            .locationCode(2840)
-           .languageName("English");
-    SerpGoogleFinanceMarketsLiveAdvancedResponseInfo response = apiInstance.googleFinanceMarketsLiveAdvanced(List.of(model));
+        
+        
+           .languageName("English")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveAdvanced");
@@ -12290,10 +12954,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceMarketsLiveHtmlRequestInfo model = new SerpGoogleFinanceMarketsLiveHtmlRequestInfo()
+    SerpGoogleFinanceMarketsLiveHtmlResponseInfo response = apiInstance.googleFinanceMarketsLiveHtml(
+       List.of(
+    
+           new SerpGoogleFinanceMarketsLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleFinanceMarketsLiveHtmlResponseInfo response = apiInstance.googleFinanceMarketsLiveHtml(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceMarketsLiveHtml");
@@ -12361,11 +13033,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceQuoteTaskPostRequestInfo model = new SerpGoogleFinanceQuoteTaskPostRequestInfo()
+    SerpGoogleFinanceQuoteTaskPostResponseInfo response = apiInstance.googleFinanceQuoteTaskPost(
+       List.of(
+    
+           new SerpGoogleFinanceQuoteTaskPostRequestInfo()
+        
            .keyword(".DJI:INDEXDJX")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    SerpGoogleFinanceQuoteTaskPostResponseInfo response = apiInstance.googleFinanceQuoteTaskPost(List.of(model));
+        
+        
+           .languageName("English")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceQuoteTaskPost");
@@ -12502,7 +13184,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleFinanceQuoteTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceQuoteTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -12571,7 +13253,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleFinanceQuoteTaskGetHtmlResponseInfo response = apiInstance.googleFinanceQuoteTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -12640,11 +13322,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceQuoteLiveAdvancedRequestInfo model = new SerpGoogleFinanceQuoteLiveAdvancedRequestInfo()
+    SerpGoogleFinanceQuoteLiveAdvancedResponseInfo response = apiInstance.googleFinanceQuoteLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleFinanceQuoteLiveAdvancedRequestInfo()
+        
            .keyword("CLW00:NYMEX")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    SerpGoogleFinanceQuoteLiveAdvancedResponseInfo response = apiInstance.googleFinanceQuoteLiveAdvanced(List.of(model));
+        
+        
+           .languageName("English")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveAdvanced");
@@ -12712,11 +13404,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceQuoteLiveHtmlRequestInfo model = new SerpGoogleFinanceQuoteLiveHtmlRequestInfo()
-           .keyword("NASDAQ-100")
+    SerpGoogleFinanceQuoteLiveHtmlResponseInfo response = apiInstance.googleFinanceQuoteLiveHtml(
+       List.of(
+    
+           new SerpGoogleFinanceQuoteLiveHtmlRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    SerpGoogleFinanceQuoteLiveHtmlResponseInfo response = apiInstance.googleFinanceQuoteLiveHtml(List.of(model));
+        
+        
+           .keyword("NASDAQ-100")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceQuoteLiveHtml");
@@ -12784,13 +13486,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceTickerSearchTaskPostRequestInfo model = new SerpGoogleFinanceTickerSearchTaskPostRequestInfo()
-           .keyword("DJ")
-           .locationCode(2840)
+    SerpGoogleFinanceTickerSearchTaskPostResponseInfo response = apiInstance.googleFinanceTickerSearchTaskPost(
+       List.of(
+    
+           new SerpGoogleFinanceTickerSearchTaskPostRequestInfo()
+        
            .languageName("English")
+        
+        
+           .locationCode(2840)
+        
+        
+           .category("all")
+        
+        
+           .keyword("DJ")
+        
+        
            .priority(2)
-           .category("all");
-    SerpGoogleFinanceTickerSearchTaskPostResponseInfo response = apiInstance.googleFinanceTickerSearchTaskPost(List.of(model));
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchTaskPost");
@@ -12927,7 +13643,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     SerpGoogleFinanceTickerSearchTaskGetAdvancedResponseInfo response = apiInstance.googleFinanceTickerSearchTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -12996,12 +13712,24 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     SerpApi apiInstance = new SerpApi(defaultClient);
-    SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo model = new SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo()
-           .keyword("DJ")
-           .locationCode(2840)
+    SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo response = apiInstance.googleFinanceTickerSearchLiveAdvanced(
+       List.of(
+    
+           new SerpGoogleFinanceTickerSearchLiveAdvancedRequestInfo()
+        
            .languageName("English")
-           .category("all");
-    SerpGoogleFinanceTickerSearchLiveAdvancedResponseInfo response = apiInstance.googleFinanceTickerSearchLiveAdvanced(List.of(model));
+        
+        
+           .locationCode(2840)
+        
+        
+           .category("all")
+        
+        
+           .keyword("DJ")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling SerpApi#googleFinanceTickerSearchLiveAdvanced");

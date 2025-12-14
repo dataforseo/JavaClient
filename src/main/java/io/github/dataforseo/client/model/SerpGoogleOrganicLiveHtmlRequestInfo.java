@@ -38,33 +38,6 @@ import io.github.dataforseo.client.JSON;
 public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpGoogleOrganicLiveHtmlRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
@@ -78,10 +51,10 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
    * keyword
 * required field
 * you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
+* all %## will be decoded (plus character '+' will be decoded to a space character)
+* if you need to use the '%' character for your keyword, please specify it as '%25';
 * if you need to use the “+” character for your keyword, please specify it as “%2B”;
-* if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’, the charge per task will be multiplied by 5
+* if this field contains such parameters as 'allinanchor:', 'allintext:', 'allintitle:', 'allinurl:', 'define:', 'filetype:', 'id:', 'inanchor:', 'info:', 'intext:', 'intitle:', 'inurl:', 'link:', 'related:', 'site:', the charge per task will be multiplied by 5
 * Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
    * @return keyword
    */
@@ -92,34 +65,6 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   public void setKeyword(String keyword) {
     this.keyword = keyword;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleOrganicLiveHtmlRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
   }
 
 
@@ -134,9 +79,9 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
 * example:
 * 2840
    * @return locationCode
@@ -151,65 +96,6 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpGoogleOrganicLiveHtmlRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “radius”: 199.9 (mm)
-* the maximum value for “radius”: 199999 (mm)
-* example:
-* 53.476225,-2.243572,200
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleOrganicLiveHtmlRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -221,9 +107,9 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
 * example:
 * en
    * @return languageCode
@@ -235,6 +121,36 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_DEPTH = "depth";
+  @SerializedName(SERIALIZED_NAME_DEPTH)
+  private Integer depth;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo depth(Integer depth) {
+    this.depth = depth;
+    return this;
+  }
+
+  /**
+   * parsing depth
+* optional field
+* number of results in SERP
+* default value: 10
+* max value: 200
+* Your account will be billed per each SERP containing up to 10 results;
+* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+* The cost can be calculated on the Pricing page.
+   * @return depth
+   */
+  @javax.annotation.Nullable
+  public Integer getDepth() {
+    return depth;
+  }
+
+  public void setDepth(Integer depth) {
+    this.depth = depth;
   }
 
 
@@ -261,6 +177,91 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   public void setDevice(String device) {
     this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW = "load_async_ai_overview";
+  @SerializedName(SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW)
+  private Boolean loadAsyncAiOverview;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo loadAsyncAiOverview(Boolean loadAsyncAiOverview) {
+    this.loadAsyncAiOverview = loadAsyncAiOverview;
+    return this;
+  }
+
+  /**
+   * load asynchronous ai overview
+* optional field
+* set to true to obtain ai_overview items is SERPs even if they are loaded asynchronously;
+* if set to false, you will only obtain ai_overview items from cache;
+* default value: false
+* Note your account will be billed $0.002 extra for each request;
+* if the element is absent or contains 'asynchronous_ai_overview': false, all extra charges will be returned to your account balance
+   * @return loadAsyncAiOverview
+   */
+  @javax.annotation.Nullable
+  public Boolean getLoadAsyncAiOverview() {
+    return loadAsyncAiOverview;
+  }
+
+  public void setLoadAsyncAiOverview(Boolean loadAsyncAiOverview) {
+    this.loadAsyncAiOverview = loadAsyncAiOverview;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
   }
 
 
@@ -292,61 +293,113 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
-  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
-  private String seDomain;
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
 
-  public SerpGoogleOrganicLiveHtmlRequestInfo seDomain(String seDomain) {
-    this.seDomain = seDomain;
+  public SerpGoogleOrganicLiveHtmlRequestInfo tag(String tag) {
+    this.tag = tag;
     return this;
   }
 
   /**
-   * search engine domain
+   * user-defined task identifier
 * optional field
-* we choose the relevant search engine domain automatically according to the location and language you specify
-* however, you can set a custom search engine domain in this field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
+  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
+  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* optional field
+* if specified, the response will contain SERP results up to and including the specified match_value;
+* you can specify up to 10 target values in this array
 * example:
-* google.co.uk, google.com.au, google.de, etc.
-   * @return seDomain
+* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
+* Your account will be billed per each SERP crawled through the specified targets
+   * @return stopCrawlOnMatch
    */
   @javax.annotation.Nullable
-  public String getSeDomain() {
-    return seDomain;
+  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
+    return stopCrawlOnMatch;
   }
 
-  public void setSeDomain(String seDomain) {
-    this.seDomain = seDomain;
+  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
   }
 
 
-  public static final String SERIALIZED_NAME_DEPTH = "depth";
-  @SerializedName(SERIALIZED_NAME_DEPTH)
-  private Integer depth;
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private String matchType;
 
-  public SerpGoogleOrganicLiveHtmlRequestInfo depth(Integer depth) {
-    this.depth = depth;
+  public SerpGoogleOrganicLiveHtmlRequestInfo matchType(String matchType) {
+    this.matchType = matchType;
     return this;
   }
 
   /**
-   * parsing depth
+   * target match type
 * optional field
-* number of results in SERP
-* default value: 10
-* max value: 200
-* Your account will be billed per each SERP containing up to 10 results;
-* Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
-* The cost can be calculated on the Pricing page.
-   * @return depth
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
    */
   @javax.annotation.Nullable
-  public Integer getDepth() {
-    return depth;
+  public String getMatchType() {
+    return matchType;
   }
 
-  public void setDepth(Integer depth) {
-    this.depth = depth;
+  public void setMatchType(String matchType) {
+    this.matchType = matchType;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpGoogleOrganicLiveHtmlRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * target domain or wildcard value
+* optional field
+* specify a target domain or wildcard value;
+* Note: domain name must be specified without a request protocol;
+* example: dataforseo.com
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
   }
 
 
@@ -405,35 +458,6 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW = "load_async_ai_overview";
-  @SerializedName(SERIALIZED_NAME_LOAD_ASYNC_AI_OVERVIEW)
-  private Boolean loadAsyncAiOverview;
-
-  public SerpGoogleOrganicLiveHtmlRequestInfo loadAsyncAiOverview(Boolean loadAsyncAiOverview) {
-    this.loadAsyncAiOverview = loadAsyncAiOverview;
-    return this;
-  }
-
-  /**
-   * load asynchronous ai overview
-* optional field
-* set to true to obtain ai_overview items is SERPs even if they are loaded asynchronously;
-* if set to false, you will only obtain ai_overview items from cache;
-* default value: false
-* Note your account will be billed $0.002 extra for each request;
-* if the element is absent or contains 'asynchronous_ai_overview': false, all extra charges will be returned to your account balance
-   * @return loadAsyncAiOverview
-   */
-  @javax.annotation.Nullable
-  public Boolean getLoadAsyncAiOverview() {
-    return loadAsyncAiOverview;
-  }
-
-  public void setLoadAsyncAiOverview(Boolean loadAsyncAiOverview) {
-    this.loadAsyncAiOverview = loadAsyncAiOverview;
-  }
-
-
   public static final String SERIALIZED_NAME_EXPAND_AI_OVERVIEW = "expand_ai_overview";
   @SerializedName(SERIALIZED_NAME_EXPAND_AI_OVERVIEW)
   private Boolean expandAiOverview;
@@ -460,86 +484,89 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
 
-  public SerpGoogleOrganicLiveHtmlRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  public SerpGoogleOrganicLiveHtmlRequestInfo url(String url) {
+    this.url = url;
     return this;
   }
 
   /**
-   * array of targets to stop crawling
+   * direct URL of the search query
 * optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
+* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
 * example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
+* https://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
+   * @return url
    */
   @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
+  public String getUrl() {
+    return url;
   }
 
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  public void setUrl(String url) {
+    this.url = url;
   }
 
 
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
 
-  public SerpGoogleOrganicLiveHtmlRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
+  public SerpGoogleOrganicLiveHtmlRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
     return this;
   }
 
   /**
-   * target domain or wildcard value
-* required field if stop_crawl_on_match is specified;
-* specify a target domain or wildcard value;
-* Note: domain name must be specified without a request protocol;
-* example: dataforseo.com
-   * @return matchValue
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
+* the minimum value for 'radius': 199.9 (mm)
+* the maximum value for 'radius': 199999 (mm)
+* example:
+* 53.476225,-2.243572,200
+   * @return locationCoordinate
    */
   @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
+  public String getLocationCoordinate() {
+    return locationCoordinate;
   }
 
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
   }
 
 
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
+  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
+  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
+  private String seDomain;
 
-  public SerpGoogleOrganicLiveHtmlRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
+  public SerpGoogleOrganicLiveHtmlRequestInfo seDomain(String seDomain) {
+    this.seDomain = seDomain;
     return this;
   }
 
   /**
-   * target match type
-* required field if stop_crawl_on_match is specified;
-* type of match for the match_value
-* possible values: domain, with_subdomains, wildcard
-   * @return matchType
+   * search engine domain
+* optional field
+* we choose the relevant search engine domain automatically according to the location and language you specify
+* however, you can set a custom search engine domain in this field
+* example:
+* google.co.uk, google.com.au, google.de, etc.
+   * @return seDomain
    */
   @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
+  public String getSeDomain() {
+    return seDomain;
   }
 
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
+  public void setSeDomain(String seDomain) {
+    this.seDomain = seDomain;
   }
 
 
@@ -637,33 +664,6 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleOrganicLiveHtmlRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
 
   public SerpGoogleOrganicLiveHtmlRequestInfo() {
   }
@@ -707,28 +707,28 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
     SerpGoogleOrganicLiveHtmlRequestInfo serpGoogleOrganicLiveHtmlRequestInfo = (SerpGoogleOrganicLiveHtmlRequestInfo) o;
     return
 
-        Objects.equals(this.url, serpGoogleOrganicLiveHtmlRequestInfo.url) &&
         Objects.equals(this.keyword, serpGoogleOrganicLiveHtmlRequestInfo.keyword) &&
-        Objects.equals(this.locationName, serpGoogleOrganicLiveHtmlRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleOrganicLiveHtmlRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, serpGoogleOrganicLiveHtmlRequestInfo.locationCoordinate) &&
-        Objects.equals(this.languageName, serpGoogleOrganicLiveHtmlRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleOrganicLiveHtmlRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpGoogleOrganicLiveHtmlRequestInfo.device) &&
-        Objects.equals(this.os, serpGoogleOrganicLiveHtmlRequestInfo.os) &&
-        Objects.equals(this.seDomain, serpGoogleOrganicLiveHtmlRequestInfo.seDomain) &&
         Objects.equals(this.depth, serpGoogleOrganicLiveHtmlRequestInfo.depth) &&
+        Objects.equals(this.device, serpGoogleOrganicLiveHtmlRequestInfo.device) &&
+        Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicLiveHtmlRequestInfo.loadAsyncAiOverview) &&
+        Objects.equals(this.locationName, serpGoogleOrganicLiveHtmlRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleOrganicLiveHtmlRequestInfo.languageName) &&
+        Objects.equals(this.os, serpGoogleOrganicLiveHtmlRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleOrganicLiveHtmlRequestInfo.tag) &&
+        Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicLiveHtmlRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchType, serpGoogleOrganicLiveHtmlRequestInfo.matchType) &&
+        Objects.equals(this.matchValue, serpGoogleOrganicLiveHtmlRequestInfo.matchValue) &&
         Objects.equals(this.maxCrawlPages, serpGoogleOrganicLiveHtmlRequestInfo.maxCrawlPages) &&
         Objects.equals(this.searchParam, serpGoogleOrganicLiveHtmlRequestInfo.searchParam) &&
-        Objects.equals(this.loadAsyncAiOverview, serpGoogleOrganicLiveHtmlRequestInfo.loadAsyncAiOverview) &&
         Objects.equals(this.expandAiOverview, serpGoogleOrganicLiveHtmlRequestInfo.expandAiOverview) &&
-        Objects.equals(this.stopCrawlOnMatch, serpGoogleOrganicLiveHtmlRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchValue, serpGoogleOrganicLiveHtmlRequestInfo.matchValue) &&
-        Objects.equals(this.matchType, serpGoogleOrganicLiveHtmlRequestInfo.matchType) &&
+        Objects.equals(this.url, serpGoogleOrganicLiveHtmlRequestInfo.url) &&
+        Objects.equals(this.locationCoordinate, serpGoogleOrganicLiveHtmlRequestInfo.locationCoordinate) &&
+        Objects.equals(this.seDomain, serpGoogleOrganicLiveHtmlRequestInfo.seDomain) &&
         Objects.equals(this.targetSearchMode, serpGoogleOrganicLiveHtmlRequestInfo.targetSearchMode) &&
         Objects.equals(this.findTargetsIn, serpGoogleOrganicLiveHtmlRequestInfo.findTargetsIn) &&
-        Objects.equals(this.ignoreTargetsIn, serpGoogleOrganicLiveHtmlRequestInfo.ignoreTargetsIn) &&
-        Objects.equals(this.tag, serpGoogleOrganicLiveHtmlRequestInfo.tag);  
+        Objects.equals(this.ignoreTargetsIn, serpGoogleOrganicLiveHtmlRequestInfo.ignoreTargetsIn);  
     
   }
 
@@ -738,7 +738,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, seDomain, depth, maxCrawlPages, searchParam, loadAsyncAiOverview, expandAiOverview, stopCrawlOnMatch, matchValue, matchType, targetSearchMode, findTargetsIn, ignoreTargetsIn, tag);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, loadAsyncAiOverview, locationName, languageName, os, tag, stopCrawlOnMatch, matchType, matchValue, maxCrawlPages, searchParam, expandAiOverview, url, locationCoordinate, seDomain, targetSearchMode, findTargetsIn, ignoreTargetsIn);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -753,28 +753,28 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpGoogleOrganicLiveHtmlRequestInfo {\n");
 
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
     sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    loadAsyncAiOverview: ").append(toIndentedString(loadAsyncAiOverview)).append("\n");
     sb.append("    expandAiOverview: ").append(toIndentedString(expandAiOverview)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
+    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    targetSearchMode: ").append(toIndentedString(targetSearchMode)).append("\n");
     sb.append("    findTargetsIn: ").append(toIndentedString(findTargetsIn)).append("\n");
     sb.append("    ignoreTargetsIn: ").append(toIndentedString(ignoreTargetsIn)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -798,49 +798,49 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("url");
-    
     openapiFields.add("keyword");
-    
-    openapiFields.add("location_name");
     
     openapiFields.add("location_code");
     
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("language_name");
-    
     openapiFields.add("language_code");
+    
+    openapiFields.add("depth");
     
     openapiFields.add("device");
     
+    openapiFields.add("load_async_ai_overview");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
     openapiFields.add("os");
     
-    openapiFields.add("se_domain");
+    openapiFields.add("tag");
     
-    openapiFields.add("depth");
+    openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_type");
+    
+    openapiFields.add("match_value");
     
     openapiFields.add("max_crawl_pages");
     
     openapiFields.add("search_param");
     
-    openapiFields.add("load_async_ai_overview");
-    
     openapiFields.add("expand_ai_overview");
     
-    openapiFields.add("stop_crawl_on_match");
+    openapiFields.add("url");
     
-    openapiFields.add("match_value");
+    openapiFields.add("location_coordinate");
     
-    openapiFields.add("match_type");
+    openapiFields.add("se_domain");
     
     openapiFields.add("target_search_mode");
     
     openapiFields.add("find_targets_in");
     
     openapiFields.add("ignore_targets_in");
-    
-    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

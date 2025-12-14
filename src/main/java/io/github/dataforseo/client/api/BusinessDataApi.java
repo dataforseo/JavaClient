@@ -276,7 +276,7 @@ public class BusinessDataApi {
             return localVarCall;
         }
 
-    public okhttp3.Call businessDataBusinessListingsLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call businessListingsLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -323,26 +323,26 @@ public class BusinessDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call businessDataBusinessListingsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call businessListingsLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return businessDataBusinessListingsLocationsCall(_callback);
+       return businessListingsLocationsCall(_callback);
 
     }
 
-    public BusinessDataBusinessListingsLocationsResponseInfo businessDataBusinessListingsLocations() throws ApiException {
-       ApiResponse<BusinessDataBusinessListingsLocationsResponseInfo> localVarResp = businessDataBusinessListingsLocationsWithHttpInfo();
+    public BusinessDataBusinessListingsLocationsResponseInfo businessListingsLocations() throws ApiException {
+       ApiResponse<BusinessDataBusinessListingsLocationsResponseInfo> localVarResp = businessListingsLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<BusinessDataBusinessListingsLocationsResponseInfo> businessDataBusinessListingsLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = businessDataBusinessListingsLocationsValidateBeforeCall(null);
+    public ApiResponse<BusinessDataBusinessListingsLocationsResponseInfo> businessListingsLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = businessListingsLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<BusinessDataBusinessListingsLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call businessDataBusinessListingsLocationsAsync(final ApiCallback<BusinessDataBusinessListingsLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call businessListingsLocationsAsync(final ApiCallback<BusinessDataBusinessListingsLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = businessDataBusinessListingsLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = businessListingsLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<BusinessDataBusinessListingsLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
@@ -3323,7 +3323,7 @@ public class BusinessDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call businessDataTripadvisorLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3370,32 +3370,32 @@ public class BusinessDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call businessDataTripadvisorLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call tripadvisorLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return businessDataTripadvisorLocationsCall(_callback);
+       return tripadvisorLocationsCall(_callback);
 
     }
 
-    public BusinessDataTripadvisorLocationsResponseInfo businessDataTripadvisorLocations() throws ApiException {
-       ApiResponse<BusinessDataTripadvisorLocationsResponseInfo> localVarResp = businessDataTripadvisorLocationsWithHttpInfo();
+    public BusinessDataTripadvisorLocationsResponseInfo tripadvisorLocations() throws ApiException {
+       ApiResponse<BusinessDataTripadvisorLocationsResponseInfo> localVarResp = tripadvisorLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<BusinessDataTripadvisorLocationsResponseInfo> businessDataTripadvisorLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = businessDataTripadvisorLocationsValidateBeforeCall(null);
+    public ApiResponse<BusinessDataTripadvisorLocationsResponseInfo> tripadvisorLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = tripadvisorLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<BusinessDataTripadvisorLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call businessDataTripadvisorLocationsAsync(final ApiCallback<BusinessDataTripadvisorLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLocationsAsync(final ApiCallback<BusinessDataTripadvisorLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = businessDataTripadvisorLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = tripadvisorLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<BusinessDataTripadvisorLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call businessDataTripadvisorLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLocationsCountryCall( String country,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3443,36 +3443,36 @@ public class BusinessDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call businessDataTripadvisorLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call tripadvisorLocationsCountryValidateBeforeCall(String country, final ApiCallback _callback) throws ApiException {
        // verify the required parameter 'country' is set
        if (country == null) {
-           throw new ApiException("Missing the required parameter 'country' when calling businessDataTripadvisorLocationsCountry(Async)");
+           throw new ApiException("Missing the required parameter 'country' when calling tripadvisorLocationsCountry(Async)");
        }
 
-       return businessDataTripadvisorLocationsCountryCall(country, _callback);
+       return tripadvisorLocationsCountryCall(country, _callback);
 
     }
 
-    public BusinessDataTripadvisorLocationsCountryResponseInfo businessDataTripadvisorLocationsCountry(String country) throws ApiException {
-       ApiResponse<BusinessDataTripadvisorLocationsCountryResponseInfo> localVarResp = businessDataTripadvisorLocationsCountryWithHttpInfo(country);
+    public BusinessDataTripadvisorLocationsCountryResponseInfo tripadvisorLocationsCountry(String country) throws ApiException {
+       ApiResponse<BusinessDataTripadvisorLocationsCountryResponseInfo> localVarResp = tripadvisorLocationsCountryWithHttpInfo(country);
        return localVarResp.getData();
     }
 
-    public ApiResponse<BusinessDataTripadvisorLocationsCountryResponseInfo> businessDataTripadvisorLocationsCountryWithHttpInfo(String country) throws ApiException {
-       okhttp3.Call localVarCall = businessDataTripadvisorLocationsCountryValidateBeforeCall(country, null);
+    public ApiResponse<BusinessDataTripadvisorLocationsCountryResponseInfo> tripadvisorLocationsCountryWithHttpInfo(String country) throws ApiException {
+       okhttp3.Call localVarCall = tripadvisorLocationsCountryValidateBeforeCall(country, null);
        Type localVarReturnType = new TypeToken<BusinessDataTripadvisorLocationsCountryResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call businessDataTripadvisorLocationsCountryAsync(String country, final ApiCallback<BusinessDataTripadvisorLocationsCountryResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLocationsCountryAsync(String country, final ApiCallback<BusinessDataTripadvisorLocationsCountryResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = businessDataTripadvisorLocationsCountryValidateBeforeCall(country, _callback);
+       okhttp3.Call localVarCall = tripadvisorLocationsCountryValidateBeforeCall(country, _callback);
        Type localVarReturnType = new TypeToken<BusinessDataTripadvisorLocationsCountryResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call businessDataTripadvisorLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -3519,26 +3519,26 @@ public class BusinessDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call businessDataTripadvisorLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call tripadvisorLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return businessDataTripadvisorLanguagesCall(_callback);
+       return tripadvisorLanguagesCall(_callback);
 
     }
 
-    public BusinessDataTripadvisorLanguagesResponseInfo businessDataTripadvisorLanguages() throws ApiException {
-       ApiResponse<BusinessDataTripadvisorLanguagesResponseInfo> localVarResp = businessDataTripadvisorLanguagesWithHttpInfo();
+    public BusinessDataTripadvisorLanguagesResponseInfo tripadvisorLanguages() throws ApiException {
+       ApiResponse<BusinessDataTripadvisorLanguagesResponseInfo> localVarResp = tripadvisorLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<BusinessDataTripadvisorLanguagesResponseInfo> businessDataTripadvisorLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = businessDataTripadvisorLanguagesValidateBeforeCall(null);
+    public ApiResponse<BusinessDataTripadvisorLanguagesResponseInfo> tripadvisorLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = tripadvisorLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<BusinessDataTripadvisorLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call businessDataTripadvisorLanguagesAsync(final ApiCallback<BusinessDataTripadvisorLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call tripadvisorLanguagesAsync(final ApiCallback<BusinessDataTripadvisorLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = businessDataTripadvisorLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = tripadvisorLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<BusinessDataTripadvisorLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

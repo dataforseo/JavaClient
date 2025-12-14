@@ -2014,7 +2014,7 @@ public class AppDataApi {
        return localVarCall;
     }
 
-    public okhttp3.Call appDataAppleLocationsCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2061,32 +2061,32 @@ public class AppDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call appDataAppleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call appleLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return appDataAppleLocationsCall(_callback);
+       return appleLocationsCall(_callback);
 
     }
 
-    public AppDataAppleLocationsResponseInfo appDataAppleLocations() throws ApiException {
-       ApiResponse<AppDataAppleLocationsResponseInfo> localVarResp = appDataAppleLocationsWithHttpInfo();
+    public AppDataAppleLocationsResponseInfo appleLocations() throws ApiException {
+       ApiResponse<AppDataAppleLocationsResponseInfo> localVarResp = appleLocationsWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<AppDataAppleLocationsResponseInfo> appDataAppleLocationsWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = appDataAppleLocationsValidateBeforeCall(null);
+    public ApiResponse<AppDataAppleLocationsResponseInfo> appleLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = appleLocationsValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<AppDataAppleLocationsResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call appDataAppleLocationsAsync(final ApiCallback<AppDataAppleLocationsResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call appleLocationsAsync(final ApiCallback<AppDataAppleLocationsResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = appDataAppleLocationsValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = appleLocationsValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AppDataAppleLocationsResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
 
-    public okhttp3.Call appDataAppleLanguagesCall( final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call appleLanguagesCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
        String[] localBasePaths = new String[] {  };
@@ -2133,26 +2133,26 @@ public class AppDataApi {
 
     
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call appDataAppleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call appleLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
 
-       return appDataAppleLanguagesCall(_callback);
+       return appleLanguagesCall(_callback);
 
     }
 
-    public AppDataAppleLanguagesResponseInfo appDataAppleLanguages() throws ApiException {
-       ApiResponse<AppDataAppleLanguagesResponseInfo> localVarResp = appDataAppleLanguagesWithHttpInfo();
+    public AppDataAppleLanguagesResponseInfo appleLanguages() throws ApiException {
+       ApiResponse<AppDataAppleLanguagesResponseInfo> localVarResp = appleLanguagesWithHttpInfo();
        return localVarResp.getData();
     }
 
-    public ApiResponse<AppDataAppleLanguagesResponseInfo> appDataAppleLanguagesWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = appDataAppleLanguagesValidateBeforeCall(null);
+    public ApiResponse<AppDataAppleLanguagesResponseInfo> appleLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = appleLanguagesValidateBeforeCall(null);
        Type localVarReturnType = new TypeToken<AppDataAppleLanguagesResponseInfo>(){}.getType();
        return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    public okhttp3.Call appDataAppleLanguagesAsync(final ApiCallback<AppDataAppleLanguagesResponseInfo> _callback) throws ApiException {
+    public okhttp3.Call appleLanguagesAsync(final ApiCallback<AppDataAppleLanguagesResponseInfo> _callback) throws ApiException {
 
-       okhttp3.Call localVarCall = appDataAppleLanguagesValidateBeforeCall(_callback);
+       okhttp3.Call localVarCall = appleLanguagesValidateBeforeCall(_callback);
        Type localVarReturnType = new TypeToken<AppDataAppleLanguagesResponseInfo>(){}.getType();
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;

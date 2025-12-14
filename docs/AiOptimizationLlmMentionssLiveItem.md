@@ -11,3 +11,5 @@
 **platform** | **List<GroupElement>** | platform-based grouping<br>array of group elements containing page mention metrics segmented by AI platform |[optional]|
 **sourcesDomain** | **List<GroupElement>** | source domains relevant to the specific page<br>array of objects containing data on domains that are cited as sources in LLM responses |[optional]|
 **searchResultsDomain** | **List<GroupElement>** | search results domains relevant to the specific page<br>array of objects containing data on domains that appear in search results related to LLM queries |[optional]|
+**brandEntitiesTitle** | **List<GroupElement>** | data on brand entities relevant to the target<br>array of objects containing data on brand entity titles that appear in search results related to LLM queries |[optional]|
+**brandEntitiesCategory** | **List<GroupElement>** | data on brand entities relevant to the target<br>array of objects containing data on brand entity categories that appear in search results related to LLM queries |[optional]|

@@ -249,6 +249,106 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_FIRST_RESPONSE_AT = "first_response_at";
+  @SerializedName(SERIALIZED_NAME_FIRST_RESPONSE_AT)
+  private String firstResponseAt;
+
+  public AiOptimizationLlmMentionsSearchLiveItem firstResponseAt(String firstResponseAt) {
+    this.firstResponseAt = firstResponseAt;
+    return this;
+  }
+
+  /**
+   * date and time when the response data was first recorded
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2025-10-21 06:25:30 +00:00
+   * @return firstResponseAt
+   */
+  @javax.annotation.Nullable
+  public String getFirstResponseAt() {
+    return firstResponseAt;
+  }
+
+  public void setFirstResponseAt(String firstResponseAt) {
+    this.firstResponseAt = firstResponseAt;
+  }
+
+
+  public static final String SERIALIZED_NAME_LAST_RESPONSE_AT = "last_response_at";
+  @SerializedName(SERIALIZED_NAME_LAST_RESPONSE_AT)
+  private String lastResponseAt;
+
+  public AiOptimizationLlmMentionsSearchLiveItem lastResponseAt(String lastResponseAt) {
+    this.lastResponseAt = lastResponseAt;
+    return this;
+  }
+
+  /**
+   * date and time when the response data was last updated
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2025-10-21 06:25:30 +00:00
+   * @return lastResponseAt
+   */
+  @javax.annotation.Nullable
+  public String getLastResponseAt() {
+    return lastResponseAt;
+  }
+
+  public void setLastResponseAt(String lastResponseAt) {
+    this.lastResponseAt = lastResponseAt;
+  }
+
+
+  public static final String SERIALIZED_NAME_BRAND_ENTITIES = "brand_entities";
+  @SerializedName(SERIALIZED_NAME_BRAND_ENTITIES)
+  private List<BrandEntities> brandEntities;
+
+  public AiOptimizationLlmMentionsSearchLiveItem brandEntities(List<BrandEntities> brandEntities) {
+    this.brandEntities = brandEntities;
+    return this;
+  }
+
+  /**
+   * array of brand entities
+* contains information on brands mentioned in the response
+   * @return brandEntities
+   */
+  @javax.annotation.Nullable
+  public List<BrandEntities> getBrandEntities() {
+    return brandEntities;
+  }
+
+  public void setBrandEntities(List<BrandEntities> brandEntities) {
+    this.brandEntities = brandEntities;
+  }
+
+
+  public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
+  @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
+  private List<String> fanOutQueries;
+
+  public AiOptimizationLlmMentionsSearchLiveItem fanOutQueries(List<String> fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+    return this;
+  }
+
+  /**
+   * array of fan-out queries
+* contains related search queries derived from the main query to provide a more comprehensive response
+   * @return fanOutQueries
+   */
+  @javax.annotation.Nullable
+  public List<String> getFanOutQueries() {
+    return fanOutQueries;
+  }
+
+  public void setFanOutQueries(List<String> fanOutQueries) {
+    this.fanOutQueries = fanOutQueries;
+  }
+
+
 
   public AiOptimizationLlmMentionsSearchLiveItem() {
   }
@@ -300,7 +400,11 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
         Objects.equals(this.sources, aiOptimizationLlmMentionsSearchLiveItem.sources) &&
         Objects.equals(this.searchResults, aiOptimizationLlmMentionsSearchLiveItem.searchResults) &&
         Objects.equals(this.aiSearchVolume, aiOptimizationLlmMentionsSearchLiveItem.aiSearchVolume) &&
-        Objects.equals(this.monthlySearches, aiOptimizationLlmMentionsSearchLiveItem.monthlySearches);  
+        Objects.equals(this.monthlySearches, aiOptimizationLlmMentionsSearchLiveItem.monthlySearches) &&
+        Objects.equals(this.firstResponseAt, aiOptimizationLlmMentionsSearchLiveItem.firstResponseAt) &&
+        Objects.equals(this.lastResponseAt, aiOptimizationLlmMentionsSearchLiveItem.lastResponseAt) &&
+        Objects.equals(this.brandEntities, aiOptimizationLlmMentionsSearchLiveItem.brandEntities) &&
+        Objects.equals(this.fanOutQueries, aiOptimizationLlmMentionsSearchLiveItem.fanOutQueries);  
     
   }
 
@@ -310,7 +414,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(platform, locationCode, languageCode, question, answer, sources, searchResults, aiSearchVolume, monthlySearches);
+  return Objects.hash(platform, locationCode, languageCode, question, answer, sources, searchResults, aiSearchVolume, monthlySearches, firstResponseAt, lastResponseAt, brandEntities, fanOutQueries);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -334,6 +438,10 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
     sb.append("    searchResults: ").append(toIndentedString(searchResults)).append("\n");
     sb.append("    aiSearchVolume: ").append(toIndentedString(aiSearchVolume)).append("\n");
     sb.append("    monthlySearches: ").append(toIndentedString(monthlySearches)).append("\n");
+    sb.append("    firstResponseAt: ").append(toIndentedString(firstResponseAt)).append("\n");
+    sb.append("    lastResponseAt: ").append(toIndentedString(lastResponseAt)).append("\n");
+    sb.append("    brandEntities: ").append(toIndentedString(brandEntities)).append("\n");
+    sb.append("    fanOutQueries: ").append(toIndentedString(fanOutQueries)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -374,6 +482,14 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
     openapiFields.add("ai_search_volume");
     
     openapiFields.add("monthly_searches");
+    
+    openapiFields.add("first_response_at");
+    
+    openapiFields.add("last_response_at");
+    
+    openapiFields.add("brand_entities");
+    
+    openapiFields.add("fan_out_queries");
     
 
     // a set of required properties/fields (JSON key names)

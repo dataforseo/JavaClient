@@ -4,14 +4,14 @@ All URIs are relative to *https://api.dataforseo.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**aiOptimizationChatGptLlmScraperLocations**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLocations) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations  |
-| [**aiOptimizationChatGptLlmScraperLocationsCountry**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLocationsCountry) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations/{country}  |
-| [**aiOptimizationChatGptLlmScraperLanguages**](AiOptimizationApi.md#aiOptimizationChatGptLlmScraperLanguages) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/languages  |
+| [**chatGptLlmScraperLocations**](AiOptimizationApi.md#chatGptLlmScraperLocations) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations  |
+| [**chatGptLlmScraperLocationsCountry**](AiOptimizationApi.md#chatGptLlmScraperLocationsCountry) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/locations/{country}  |
+| [**chatGptLlmScraperLanguages**](AiOptimizationApi.md#chatGptLlmScraperLanguages) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/languages  |
 | [**chatGptLlmScraperTaskPost**](AiOptimizationApi.md#chatGptLlmScraperTaskPost) | **POST**  /v3/ai_optimization/chat_gpt/llm_scraper/task_post  |
 | [**chatGptLlmScraperTasksReady**](AiOptimizationApi.md#chatGptLlmScraperTasksReady) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/tasks_ready  |
 | [**chatGptLlmScraperTaskGetAdvanced**](AiOptimizationApi.md#chatGptLlmScraperTaskGetAdvanced) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/advanced/{id}  |
 | [**chatGptLlmScraperTaskGetHtml**](AiOptimizationApi.md#chatGptLlmScraperTaskGetHtml) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/html/{id}  |
-| [**aiOptimizationLlmMentionsLocationsAndLanguages**](AiOptimizationApi.md#aiOptimizationLlmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
+| [**llmMentionsLocationsAndLanguages**](AiOptimizationApi.md#llmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
 | [**llmMentionsAvailableFilters**](AiOptimizationApi.md#llmMentionsAvailableFilters) | **GET**  /v3/ai_optimization/llm_mentions/available_filters  |
 | [**llmMentionsSearchLive**](AiOptimizationApi.md#llmMentionsSearchLive) | **POST**  /v3/ai_optimization/llm_mentions/search/live  |
 | [**llmMentionsTopPagesLive**](AiOptimizationApi.md#llmMentionsTopPagesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_pages/live  |
@@ -36,12 +36,12 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**perplexityLlmResponsesModels**](AiOptimizationApi.md#perplexityLlmResponsesModels) | **GET**  /v3/ai_optimization/perplexity/llm_responses/models  |
 | [**perplexityLlmResponsesLive**](AiOptimizationApi.md#perplexityLlmResponsesLive) | **POST**  /v3/ai_optimization/perplexity/llm_responses/live  |
 | [**aiKeywordDataAvailableFilters**](AiOptimizationApi.md#aiKeywordDataAvailableFilters) | **GET**  /v3/ai_optimization/ai_keyword_data/available_filters  |
-| [**aiOptimizationAiKeywordDataLocationsAndLanguages**](AiOptimizationApi.md#aiOptimizationAiKeywordDataLocationsAndLanguages) | **GET**  /v3/ai_optimization/ai_keyword_data/locations_and_languages  |
+| [**aiKeywordDataLocationsAndLanguages**](AiOptimizationApi.md#aiKeywordDataLocationsAndLanguages) | **GET**  /v3/ai_optimization/ai_keyword_data/locations_and_languages  |
 | [**aiKeywordDataKeywordsSearchVolumeLive**](AiOptimizationApi.md#aiKeywordDataKeywordsSearchVolumeLive) | **POST**  /v3/ai_optimization/ai_keyword_data/keywords_search_volume/live  |
 
-<a id="aiOptimizationChatGptLlmScraperLocations"></a>
-# **aiOptimizationChatGptLlmScraperLocations**
-> AiOptimizationChatGptLlmScraperLocationsResponseInfo aiOptimizationChatGptLlmScraperLocations()
+<a id="chatGptLlmScraperLocations"></a>
+# **chatGptLlmScraperLocations**
+> AiOptimizationChatGptLlmScraperLocationsResponseInfo chatGptLlmScraperLocations()
 
 
 ### Example
@@ -69,10 +69,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
 
-    AiOptimizationChatGptLlmScraperLocationsResponseInfo response = apiInstance.aiOptimizationChatGptLlmScraperLocations();
+    AiOptimizationChatGptLlmScraperLocationsResponseInfo response = apiInstance.chatGptLlmScraperLocations();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#aiOptimizationChatGptLlmScraperLocations");
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmScraperLocations");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -108,9 +108,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationChatGptLlmScraperLocationsCountry"></a>
-# **aiOptimizationChatGptLlmScraperLocationsCountry**
-> AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo aiOptimizationChatGptLlmScraperLocationsCountry()
+<a id="chatGptLlmScraperLocationsCountry"></a>
+# **chatGptLlmScraperLocationsCountry**
+> AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo chatGptLlmScraperLocationsCountry()
 
 
 ### Example
@@ -137,11 +137,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    String country = "us";
-    AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo response = apiInstance.aiOptimizationChatGptLlmScraperLocationsCountry(country);
+    String country = ;
+    AiOptimizationChatGptLlmScraperLocationsCountryResponseInfo response = apiInstance.chatGptLlmScraperLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#aiOptimizationChatGptLlmScraperLocationsCountry");
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmScraperLocationsCountry");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -177,9 +177,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationChatGptLlmScraperLanguages"></a>
-# **aiOptimizationChatGptLlmScraperLanguages**
-> AiOptimizationChatGptLlmScraperLanguagesResponseInfo aiOptimizationChatGptLlmScraperLanguages()
+<a id="chatGptLlmScraperLanguages"></a>
+# **chatGptLlmScraperLanguages**
+> AiOptimizationChatGptLlmScraperLanguagesResponseInfo chatGptLlmScraperLanguages()
 
 
 ### Example
@@ -207,10 +207,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
 
-    AiOptimizationChatGptLlmScraperLanguagesResponseInfo response = apiInstance.aiOptimizationChatGptLlmScraperLanguages();
+    AiOptimizationChatGptLlmScraperLanguagesResponseInfo response = apiInstance.chatGptLlmScraperLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#aiOptimizationChatGptLlmScraperLanguages");
+      System.err.println("Exception when calling AiOptimizationApi#chatGptLlmScraperLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -275,11 +275,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationChatGptLlmScraperTaskPostRequestInfo model = new AiOptimizationChatGptLlmScraperTaskPostRequestInfo()
-           .keyword("what is chatgpt")
+    AiOptimizationChatGptLlmScraperTaskPostResponseInfo response = apiInstance.chatGptLlmScraperTaskPost(
+       List.of(
+    
+           new AiOptimizationChatGptLlmScraperTaskPostRequestInfo()
+        
+           .languageCode("en")
+        
+        
            .locationCode(2840)
-           .languageCode("en");
-    AiOptimizationChatGptLlmScraperTaskPostResponseInfo response = apiInstance.chatGptLlmScraperTaskPost(List.of(model));
+        
+        
+           .keyword("what is chatgpt")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#chatGptLlmScraperTaskPost");
@@ -416,7 +426,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     AiOptimizationChatGptLlmScraperTaskGetAdvancedResponseInfo response = apiInstance.chatGptLlmScraperTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -485,7 +495,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     AiOptimizationChatGptLlmScraperTaskGetHtmlResponseInfo response = apiInstance.chatGptLlmScraperTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -525,9 +535,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationLlmMentionsLocationsAndLanguages"></a>
-# **aiOptimizationLlmMentionsLocationsAndLanguages**
-> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo aiOptimizationLlmMentionsLocationsAndLanguages()
+<a id="llmMentionsLocationsAndLanguages"></a>
+# **llmMentionsLocationsAndLanguages**
+> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo llmMentionsLocationsAndLanguages()
 
 
 ### Example
@@ -555,10 +565,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
 
-    AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo response = apiInstance.aiOptimizationLlmMentionsLocationsAndLanguages();
+    AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo response = apiInstance.llmMentionsLocationsAndLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#aiOptimizationLlmMentionsLocationsAndLanguages");
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsLocationsAndLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -692,18 +702,72 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsSearchLiveRequestInfo model = new AiOptimizationLlmMentionsSearchLiveRequestInfo()
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .locationCode(2840)
+    AiOptimizationLlmMentionsSearchLiveResponseInfo response = apiInstance.llmMentionsSearchLive(
+       List.of(
+    
+           new AiOptimizationLlmMentionsSearchLiveRequestInfo()
+        
            .languageName("English")
+        
+        
+           .locationCode(2840)
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsDomainElement()
+        
+           .domain("dataforseo.com")
+        
+        
+           .searchFilter("exclude"),
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("bmw")
+        
+        
+           .searchScope(List.of(
+    
+           "answer"
+    
+       ))
+    
+       ))
+        
+        
            .platform("google")
+        
+        
+           .filters(List.of(
+    
+           List.of(
+    
+           "ai_search_volume",
+    
+           ">",
+    
+           1000
+    
+       )
+    
+       ))
+        
+        
+           .orderBy(List.of(
+    
+           "ai_search_volume,desc"
+    
+       ))
+        
+        
            .offset(0)
-           .limit(3);
-    AiOptimizationLlmMentionsSearchLiveResponseInfo response = apiInstance.llmMentionsSearchLive(List.of(model));
+        
+        
+           .limit(3)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#llmMentionsSearchLive");
@@ -771,19 +835,75 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsTopPagesLiveRequestInfo model = new AiOptimizationLlmMentionsTopPagesLiveRequestInfo()
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .locationCode(2840)
+    AiOptimizationLlmMentionsTopPagesLiveResponseInfo response = apiInstance.llmMentionsTopPagesLive(
+       List.of(
+    
+           new AiOptimizationLlmMentionsTopPagesLiveRequestInfo()
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
            .platform("google")
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("bmw")
+        
+        
+           .searchScope(List.of(
+    
+           "answer"
+    
+       )),
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("auto")
+        
+        
+           .searchScope(List.of(
+    
+           "question"
+    
+       ))
+        
+        
+           .matchType("partial_match")
+    
+       ))
+        
+        
            .linksScope("sources")
+        
+        
+           .initialDatasetFilters(List.of(
+    
+           List.of(
+    
+           "ai_search_volume",
+    
+           ">",
+    
+           10
+    
+       )
+    
+       ))
+        
+        
            .itemsListLimit(3)
-           .internalListLimit(2);
-    AiOptimizationLlmMentionsTopPagesLiveResponseInfo response = apiInstance.llmMentionsTopPagesLive(List.of(model));
+        
+        
+           .internalListLimit(2)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopPagesLive");
@@ -851,19 +971,75 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsTopDomainsLiveRequestInfo model = new AiOptimizationLlmMentionsTopDomainsLiveRequestInfo()
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .locationCode(2840)
+    AiOptimizationLlmMentionsTopDomainsLiveResponseInfo response = apiInstance.llmMentionsTopDomainsLive(
+       List.of(
+    
+           new AiOptimizationLlmMentionsTopDomainsLiveRequestInfo()
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
            .platform("chat_gpt")
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("bmw")
+        
+        
+           .searchScope(List.of(
+    
+           "answer"
+    
+       )),
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("auto")
+        
+        
+           .searchScope(List.of(
+    
+           "question"
+    
+       ))
+        
+        
+           .matchType("partial_match")
+    
+       ))
+        
+        
            .linksScope("sources")
+        
+        
+           .initialDatasetFilters(List.of(
+    
+           List.of(
+    
+           "ai_search_volume",
+    
+           ">",
+    
+           10
+    
+       )
+    
+       ))
+        
+        
            .itemsListLimit(3)
-           .internalListLimit(2);
-    AiOptimizationLlmMentionsTopDomainsLiveResponseInfo response = apiInstance.llmMentionsTopDomainsLive(List.of(model));
+        
+        
+           .internalListLimit(2)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopDomainsLive");
@@ -931,17 +1107,62 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo()
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .locationCode(2840)
+    AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsAggregatedMetricsLive(
+       List.of(
+    
+           new AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo()
+        
            .languageCode("es")
+        
+        
+           .locationCode(2840)
+        
+        
            .platform("google")
-           .internalListLimit(10);
-    AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsAggregatedMetricsLive(List.of(model));
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsDomainElement()
+        
+           .domain("en.wikipedia.org")
+        
+        
+           .searchFilter("exclude"),
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("bmw")
+        
+        
+           .searchScope(List.of(
+    
+           "answer"
+    
+       ))
+    
+       ))
+        
+        
+           .initialDatasetFilters(List.of(
+    
+           List.of(
+    
+           "ai_search_volume",
+    
+           ">",
+    
+           10
+    
+       )
+    
+       ))
+        
+        
+           .internalListLimit(10)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#llmMentionsAggregatedMetricsLive");
@@ -1009,19 +1230,99 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo()
-           .targets(
-               List.of(
-                   ,
-                   ,
-                   ,
-               
-                ))
-           .locationCode(2840)
+    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsCrossAggregatedMetricsLive(
+       List.of(
+    
+           new AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo()
+        
            .languageCode("en")
+        
+        
+           .locationCode(2840)
+        
+        
            .platform("google")
-           .internalListLimit(5);
-    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsCrossAggregatedMetricsLive(List.of(model));
+        
+        
+           .targets(List.of(
+    
+           new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
+        
+           .aggregationKey("chat_gpt")
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("chat gpt")
+    
+       )),
+    
+           new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
+        
+           .aggregationKey("claude")
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("claude")
+    
+       )),
+    
+           new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
+        
+           .aggregationKey("gemini")
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("gemini")
+    
+       )),
+    
+           new AiOptimizationLLmMentionsCrossAggregateMetricsTargetInfo()
+        
+           .aggregationKey("perplexity")
+        
+        
+           .target(List.of(
+    
+           new AiOptimizationLLmMentionsKeywordElement()
+        
+           .keyword("perplexity")
+        
+        
+           .searchFilter("include")
+    
+       ))
+    
+       ))
+        
+        
+           .initialDatasetFilters(List.of(
+    
+           List.of(
+    
+           "ai_search_volume",
+    
+           ">",
+    
+           10
+    
+       )
+    
+       ))
+        
+        
+           .internalListLimit(5)
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#llmMentionsCrossAggregatedMetricsLive");
@@ -1158,22 +1459,58 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationChatGptLlmResponsesLiveRequestInfo model = new AiOptimizationChatGptLlmResponsesLiveRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("gpt-4.1-mini")
-           .maxOutputTokens(200)
-           .temperature(0.3d)
-           .topP(0.5d)
-           .webSearch(true)
-           .webSearchCountryIsoCode("FR")
-           .webSearchCity("Paris")
+    AiOptimizationChatGptLlmResponsesLiveResponseInfo response = apiInstance.chatGptLlmResponsesLive(
+       List.of(
+    
+           new AiOptimizationChatGptLlmResponsesLiveRequestInfo()
+        
            .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationChatGptLlmResponsesLiveResponseInfo response = apiInstance.chatGptLlmResponsesLive(List.of(model));
+        
+        
+           .messageChain(List.of(
+    
+           new LlmMessageChainItem()
+        
+           .role("user")
+        
+        
+           .message("Hello, what’s up?"),
+    
+           new LlmMessageChainItem()
+        
+           .role("ai")
+        
+        
+           .message("Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?")
+    
+       ))
+        
+        
+           .maxOutputTokens(200)
+        
+        
+           .temperature(0.3d)
+        
+        
+           .topP(0.5d)
+        
+        
+           .modelName("gpt-4.1-mini")
+        
+        
+           .webSearch(true)
+        
+        
+           .webSearchCountryIsoCode("FR")
+        
+        
+           .webSearchCity("Paris")
+        
+        
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesLive");
@@ -1241,16 +1578,40 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationChatGptLlmResponsesTaskPostRequestInfo model = new AiOptimizationChatGptLlmResponsesTaskPostRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("gpt-4.1-mini")
+    AiOptimizationChatGptLlmResponsesTaskPostResponseInfo response = apiInstance.chatGptLlmResponsesTaskPost(
+       List.of(
+    
+           new AiOptimizationChatGptLlmResponsesTaskPostRequestInfo()
+        
            .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationChatGptLlmResponsesTaskPostResponseInfo response = apiInstance.chatGptLlmResponsesTaskPost(List.of(model));
+        
+        
+           .messageChain(List.of(
+    
+           new LlmMessageChainItem()
+        
+           .role("user")
+        
+        
+           .message("Hello, what’s up?"),
+    
+           new LlmMessageChainItem()
+        
+           .role("ai")
+        
+        
+           .message("Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?")
+    
+       ))
+        
+        
+           .modelName("gpt-4.1-mini")
+        
+        
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#chatGptLlmResponsesTaskPost");
@@ -1387,7 +1748,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     AiOptimizationChatGptLlmResponsesTaskGetResponseInfo response = apiInstance.chatGptLlmResponsesTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1525,21 +1886,55 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationClaudeLlmResponsesLiveRequestInfo model = new AiOptimizationClaudeLlmResponsesLiveRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("claude-opus-4-0")
-           .maxOutputTokens(200)
-           .temperature(0.3d)
-           .topP(0.5d)
-           .webSearch(true)
-           .webSearchCountryIsoCode("FR")
+    AiOptimizationClaudeLlmResponsesLiveResponseInfo response = apiInstance.claudeLlmResponsesLive(
+       List.of(
+    
+           new AiOptimizationClaudeLlmResponsesLiveRequestInfo()
+        
            .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationClaudeLlmResponsesLiveResponseInfo response = apiInstance.claudeLlmResponsesLive(List.of(model));
+        
+        
+           .messageChain(List.of(
+    
+           new LlmMessageChainItem()
+        
+           .role("user")
+        
+        
+           .message("Hello, what’s up?"),
+    
+           new LlmMessageChainItem()
+        
+           .role("ai")
+        
+        
+           .message("Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?")
+    
+       ))
+        
+        
+           .maxOutputTokens(200)
+        
+        
+           .modelName("claude-opus-4-0")
+        
+        
+           .temperature(0.3d)
+        
+        
+           .topP(0.5d)
+        
+        
+           .webSearch(true)
+        
+        
+           .webSearchCountryIsoCode("FR")
+        
+        
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#claudeLlmResponsesLive");
@@ -1607,21 +2002,55 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationClaudeLlmResponsesTaskPostRequestInfo model = new AiOptimizationClaudeLlmResponsesTaskPostRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("claude-sonnet-4-0")
-           .maxOutputTokens(1024)
-           .temperature(0.3d)
-           .topP(0.5d)
-           .webSearch(true)
-           .webSearchCountryIsoCode("FR")
+    AiOptimizationClaudeLlmResponsesTaskPostResponseInfo response = apiInstance.claudeLlmResponsesTaskPost(
+       List.of(
+    
+           new AiOptimizationClaudeLlmResponsesTaskPostRequestInfo()
+        
            .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationClaudeLlmResponsesTaskPostResponseInfo response = apiInstance.claudeLlmResponsesTaskPost(List.of(model));
+        
+        
+           .messageChain(List.of(
+    
+           new LlmMessageChainItem()
+        
+           .role("user")
+        
+        
+           .message("Hello, what’s up?"),
+    
+           new LlmMessageChainItem()
+        
+           .role("ai")
+        
+        
+           .message("Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?")
+    
+       ))
+        
+        
+           .maxOutputTokens(1024)
+        
+        
+           .temperature(0.3d)
+        
+        
+           .topP(0.5d)
+        
+        
+           .webSearchCountryIsoCode("FR")
+        
+        
+           .modelName("claude-sonnet-4-0")
+        
+        
+           .webSearch(true)
+        
+        
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#claudeLlmResponsesTaskPost");
@@ -1758,7 +2187,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     AiOptimizationClaudeLlmResponsesTaskGetResponseInfo response = apiInstance.claudeLlmResponsesTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1896,16 +2325,40 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationGeminiLlmResponsesTaskPostRequestInfo model = new AiOptimizationGeminiLlmResponsesTaskPostRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("gemini-2.5-flash")
+    AiOptimizationGeminiLlmResponsesTaskPostResponseInfo response = apiInstance.geminiLlmResponsesTaskPost(
+       List.of(
+    
+           new AiOptimizationGeminiLlmResponsesTaskPostRequestInfo()
+        
            .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationGeminiLlmResponsesTaskPostResponseInfo response = apiInstance.geminiLlmResponsesTaskPost(List.of(model));
+        
+        
+           .messageChain(List.of(
+    
+           new LlmMessageChainItem()
+        
+           .role("user")
+        
+        
+           .message("Hello, what’s up?"),
+    
+           new LlmMessageChainItem()
+        
+           .role("ai")
+        
+        
+           .message("Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?")
+    
+       ))
+        
+        
+           .modelName("gemini-2.5-flash")
+        
+        
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#geminiLlmResponsesTaskPost");
@@ -2042,7 +2495,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    String id = "00000000-0000-0000-0000-000000000000";
+    String id = ;
     AiOptimizationGeminiLlmResponsesTaskGetResponseInfo response = apiInstance.geminiLlmResponsesTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2111,20 +2564,52 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationGeminiLlmResponsesLiveRequestInfo model = new AiOptimizationGeminiLlmResponsesLiveRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("gemini-2.5-flash")
-           .maxOutputTokens(200)
-           .temperature(0.3d)
-           .topP(0.5d)
-           .webSearch(true)
+    AiOptimizationGeminiLlmResponsesLiveResponseInfo response = apiInstance.geminiLlmResponsesLive(
+       List.of(
+    
+           new AiOptimizationGeminiLlmResponsesLiveRequestInfo()
+        
            .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationGeminiLlmResponsesLiveResponseInfo response = apiInstance.geminiLlmResponsesLive(List.of(model));
+        
+        
+           .messageChain(List.of(
+    
+           new LlmMessageChainItem()
+        
+           .role("user")
+        
+        
+           .message("Hello, what’s up?"),
+    
+           new LlmMessageChainItem()
+        
+           .role("ai")
+        
+        
+           .message("Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?")
+    
+       ))
+        
+        
+           .maxOutputTokens(200)
+        
+        
+           .temperature(0.3d)
+        
+        
+           .topP(0.5d)
+        
+        
+           .modelName("gemini-2.5-flash")
+        
+        
+           .webSearch(true)
+        
+        
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#geminiLlmResponsesLive");
@@ -2261,20 +2746,52 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationPerplexityLlmResponsesLiveRequestInfo model = new AiOptimizationPerplexityLlmResponsesLiveRequestInfo()
-           .userPrompt("provide information on how relevant the amusement park business is in France now")
-           .modelName("sonar-reasoning")
-           .maxOutputTokens(200)
-           .temperature(0.3d)
-           .topP(0.5d)
-           .webSearchCountryIsoCode("FR")
+    AiOptimizationPerplexityLlmResponsesLiveResponseInfo response = apiInstance.perplexityLlmResponsesLive(
+       List.of(
+    
+           new AiOptimizationPerplexityLlmResponsesLiveRequestInfo()
+        
            .systemMessage("communicate as if we are in a business meeting")
-           .messageChain(
-               List.of(
-                   ,
-               
-                ));
-    AiOptimizationPerplexityLlmResponsesLiveResponseInfo response = apiInstance.perplexityLlmResponsesLive(List.of(model));
+        
+        
+           .messageChain(List.of(
+    
+           new LlmMessageChainItem()
+        
+           .role("user")
+        
+        
+           .message("Hello, what’s up?"),
+    
+           new LlmMessageChainItem()
+        
+           .role("ai")
+        
+        
+           .message("Hello! I’m doing well, thank you. How can I assist you today? Are there any specific topics or projects you’d like to discuss in our meeting?")
+    
+       ))
+        
+        
+           .maxOutputTokens(200)
+        
+        
+           .temperature(0.3d)
+        
+        
+           .topP(0.5d)
+        
+        
+           .webSearchCountryIsoCode("FR")
+        
+        
+           .modelName("sonar-reasoning")
+        
+        
+           .userPrompt("provide information on how relevant the amusement park business is in France now")
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#perplexityLlmResponsesLive");
@@ -2382,9 +2899,9 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 | **200** | Successful operation |  -  |
 
-<a id="aiOptimizationAiKeywordDataLocationsAndLanguages"></a>
-# **aiOptimizationAiKeywordDataLocationsAndLanguages**
-> AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo aiOptimizationAiKeywordDataLocationsAndLanguages()
+<a id="aiKeywordDataLocationsAndLanguages"></a>
+# **aiKeywordDataLocationsAndLanguages**
+> AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo aiKeywordDataLocationsAndLanguages()
 
 
 ### Example
@@ -2412,10 +2929,10 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
 
-    AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo response = apiInstance.aiOptimizationAiKeywordDataLocationsAndLanguages();
+    AiOptimizationAiKeywordDataLocationsAndLanguagesResponseInfo response = apiInstance.aiKeywordDataLocationsAndLanguages();
     System.out.println(result);
   } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#aiOptimizationAiKeywordDataLocationsAndLanguages");
+      System.err.println("Exception when calling AiOptimizationApi#aiKeywordDataLocationsAndLanguages");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -2480,15 +2997,27 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo model = new AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo()
-           .keywords(
-               List.of(
-                   "iphone",
-                   "seo"
-                ))
+    AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResponseInfo response = apiInstance.aiKeywordDataKeywordsSearchVolumeLive(
+       List.of(
+    
+           new AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo()
+        
+           .languageName("English")
+        
+        
            .locationCode(2840)
-           .languageName("English");
-    AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResponseInfo response = apiInstance.aiKeywordDataKeywordsSearchVolumeLive(List.of(model));
+        
+        
+           .keywords(List.of(
+    
+           "iphone",
+    
+           "seo"
+    
+       ))
+    
+       )
+    );
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AiOptimizationApi#aiKeywordDataKeywordsSearchVolumeLive");
