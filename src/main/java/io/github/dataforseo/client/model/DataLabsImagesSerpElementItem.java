@@ -109,9 +109,9 @@ public class DataLabsImagesSerpElementItem  extends BaseDataforseoLabsApiElement
 
   public static final String SERIALIZED_NAME_RELATED_IMAGE_SEARCHES = "related_image_searches";
   @SerializedName(SERIALIZED_NAME_RELATED_IMAGE_SEARCHES)
-  private List<RelatedImageSearchesElement> relatedImageSearches;
+  private RelatedImageSearchesElement relatedImageSearches;
 
-  public DataLabsImagesSerpElementItem relatedImageSearches(List<RelatedImageSearchesElement> relatedImageSearches) {
+  public DataLabsImagesSerpElementItem relatedImageSearches(RelatedImageSearchesElement relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
     return this;
   }
@@ -122,11 +122,11 @@ public class DataLabsImagesSerpElementItem  extends BaseDataforseoLabsApiElement
    * @return relatedImageSearches
    */
   @javax.annotation.Nullable
-  public List<RelatedImageSearchesElement> getRelatedImageSearches() {
+  public RelatedImageSearchesElement getRelatedImageSearches() {
     return relatedImageSearches;
   }
 
-  public void setRelatedImageSearches(List<RelatedImageSearchesElement> relatedImageSearches) {
+  public void setRelatedImageSearches(RelatedImageSearchesElement relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
   }
 

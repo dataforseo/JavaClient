@@ -38,33 +38,6 @@ import io.github.dataforseo.client.JSON;
 public class SerpBingOrganicTaskPostRequestInfo  {
 
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpBingOrganicTaskPostRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
@@ -78,8 +51,8 @@ public class SerpBingOrganicTaskPostRequestInfo  {
    * keyword
 * required field
 * you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
+* all %## will be decoded (plus character '+' will be decoded to a space character)
+* if you need to use the '%' character for your keyword, please specify it as '%25';
 * if you need to use the “+” character for your keyword, please specify it as “%2B”
 * learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
@@ -94,63 +67,6 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpBingOrganicTaskPostRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpBingOrganicTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -162,9 +78,9 @@ public class SerpBingOrganicTaskPostRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
 * example:
 * 2840
    * @return locationCode
@@ -179,63 +95,6 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpBingOrganicTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* example:
-* 53.476225,-2.243572
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpBingOrganicTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -247,9 +106,9 @@ public class SerpBingOrganicTaskPostRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
 * example:
 * en
    * @return languageCode
@@ -261,60 +120,6 @@ public class SerpBingOrganicTaskPostRequestInfo  {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_DEVICE = "device";
-  @SerializedName(SERIALIZED_NAME_DEVICE)
-  private String device;
-
-  public SerpBingOrganicTaskPostRequestInfo device(String device) {
-    this.device = device;
-    return this;
-  }
-
-  /**
-   * device type
-* optional field
-* can take the values:desktop, mobile
-* default value: desktop
-   * @return device
-   */
-  @javax.annotation.Nullable
-  public String getDevice() {
-    return device;
-  }
-
-  public void setDevice(String device) {
-    this.device = device;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpBingOrganicTaskPostRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
   }
 
 
@@ -348,6 +153,346 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_PRIORITY = "priority";
+  @SerializedName(SERIALIZED_NAME_PRIORITY)
+  private Integer priority;
+
+  public SerpBingOrganicTaskPostRequestInfo priority(Integer priority) {
+    this.priority = priority;
+    return this;
+  }
+
+  /**
+   * task priority
+* optional field
+* can take the following values:
+* 1 – normal execution priority (set by default)
+* 2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority.
+* The cost can be calculated on the Pricing page.
+   * @return priority
+   */
+  @javax.annotation.Nullable
+  public Integer getPriority() {
+    return priority;
+  }
+
+  public void setPriority(Integer priority) {
+    this.priority = priority;
+  }
+
+
+  public static final String SERIALIZED_NAME_DEVICE = "device";
+  @SerializedName(SERIALIZED_NAME_DEVICE)
+  private String device;
+
+  public SerpBingOrganicTaskPostRequestInfo device(String device) {
+    this.device = device;
+    return this;
+  }
+
+  /**
+   * device type
+* optional field
+* can take the values:desktop, mobile
+* default value: desktop
+   * @return device
+   */
+  @javax.annotation.Nullable
+  public String getDevice() {
+    return device;
+  }
+
+  public void setDevice(String device) {
+    this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
+
+  public SerpBingOrganicTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+    return this;
+  }
+
+  /**
+   * notification URL of a completed task
+* optional field
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special characters in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return pingbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPingbackUrl() {
+    return pingbackUrl;
+  }
+
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+  }
+
+
+  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
+  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
+  private String postbackUrl;
+
+  public SerpBingOrganicTaskPostRequestInfo postbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+    return this;
+  }
+
+  /**
+   * return URL for sending task results
+* optional field
+* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/postbackscript?id=$id
+* http://your-server.com/postbackscript?id=$id&tag=$tag
+* Note: special characters in postback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return postbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPostbackUrl() {
+    return postbackUrl;
+  }
+
+  public void setPostbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+  }
+
+
+  public static final String SERIALIZED_NAME_POSTBACK_DATA = "postback_data";
+  @SerializedName(SERIALIZED_NAME_POSTBACK_DATA)
+  private String postbackData;
+
+  public SerpBingOrganicTaskPostRequestInfo postbackData(String postbackData) {
+    this.postbackData = postbackData;
+    return this;
+  }
+
+  /**
+   * postback_url datatype
+* required field if you specify postback_url
+* corresponds to the datatype that will be sent to your server
+* possible values:
+* regular, advanced, html
+   * @return postbackData
+   */
+  @javax.annotation.Nullable
+  public String getPostbackData() {
+    return postbackData;
+  }
+
+  public void setPostbackData(String postbackData) {
+    this.postbackData = postbackData;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpBingOrganicTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpBingOrganicTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpBingOrganicTaskPostRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * device operating system
+* optional field
+* if you specify desktop in the device field, choose from the following values: windows, macos
+* default value: windows
+* if you specify mobile in the device field, choose from the following values: android, ios
+* default value: android
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpBingOrganicTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
+  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
+  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
+
+  public SerpBingOrganicTaskPostRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+    return this;
+  }
+
+  /**
+   * array of targets to stop crawling
+* optional field
+* if specified, the response will contain SERP results up to and including the specified match_value;
+* you can specify up to 10 target values in this array
+* example:
+* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
+* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
+* Your account will be billed per each SERP crawled through the specified targets
+   * @return stopCrawlOnMatch
+   */
+  @javax.annotation.Nullable
+  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
+    return stopCrawlOnMatch;
+  }
+
+  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
+    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private String matchType;
+
+  public SerpBingOrganicTaskPostRequestInfo matchType(String matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * target match type
+* required field if stop_crawl_on_match is specified;
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public String getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(String matchType) {
+    this.matchType = matchType;
+  }
+
+
+  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
+  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
+  private String matchValue;
+
+  public SerpBingOrganicTaskPostRequestInfo matchValue(String matchValue) {
+    this.matchValue = matchValue;
+    return this;
+  }
+
+  /**
+   * target domain or wildcard value
+* required field if stop_crawl_on_match is specified;
+* specify a target domain or wildcard value;
+* Note: domain name must be specified without a request protocol;
+* example: dataforseo.com
+   * @return matchValue
+   */
+  @javax.annotation.Nullable
+  public String getMatchValue() {
+    return matchValue;
+  }
+
+  public void setMatchValue(String matchValue) {
+    this.matchValue = matchValue;
+  }
+
+
   public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
   @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
   private Integer maxCrawlPages;
@@ -374,6 +519,31 @@ public class SerpBingOrganicTaskPostRequestInfo  {
 
   public void setMaxCrawlPages(Integer maxCrawlPages) {
     this.maxCrawlPages = maxCrawlPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
+  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
+  private String searchParam;
+
+  public SerpBingOrganicTaskPostRequestInfo searchParam(String searchParam) {
+    this.searchParam = searchParam;
+    return this;
+  }
+
+  /**
+   * additional parameters of the search query
+* optional field
+* get the list of available parameters and additional details here
+   * @return searchParam
+   */
+  @javax.annotation.Nullable
+  public String getSearchParam() {
+    return searchParam;
+  }
+
+  public void setSearchParam(String searchParam) {
+    this.searchParam = searchParam;
   }
 
 
@@ -495,229 +665,59 @@ public class SerpBingOrganicTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
-  private String searchParam;
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
 
-  public SerpBingOrganicTaskPostRequestInfo searchParam(String searchParam) {
-    this.searchParam = searchParam;
+  public SerpBingOrganicTaskPostRequestInfo url(String url) {
+    this.url = url;
     return this;
   }
 
   /**
-   * additional parameters of the search query
+   * direct URL of the search query
 * optional field
-* get the list of available parameters and additional details here
-   * @return searchParam
-   */
-  @javax.annotation.Nullable
-  public String getSearchParam() {
-    return searchParam;
-  }
-
-  public void setSearchParam(String searchParam) {
-    this.searchParam = searchParam;
-  }
-
-
-  public static final String SERIALIZED_NAME_STOP_CRAWL_ON_MATCH = "stop_crawl_on_match";
-  @SerializedName(SERIALIZED_NAME_STOP_CRAWL_ON_MATCH)
-  private List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch;
-
-  public SerpBingOrganicTaskPostRequestInfo stopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
-    return this;
-  }
-
-  /**
-   * array of targets to stop crawling
-* optional field
-* if specified, the response will contain SERP results up to and including the specified match_value;
-* you can specify up to 10 target values in this array
+* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
 * example:
-* 'stop_crawl_on_match':[{'match_value':'dataforseo.com','match_type':'with_subdomains'}]
-* learn more about this parameter on our Help Center - https://dataforseo.com/help-center/using-the-stop_crawl_on_match-parameter-in-serp-api
-* Your account will be billed per each SERP crawled through the specified targets
-   * @return stopCrawlOnMatch
+* https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE
+   * @return url
    */
   @javax.annotation.Nullable
-  public List<SerpApiStopCrawlOnMatchInfo> getStopCrawlOnMatch() {
-    return stopCrawlOnMatch;
+  public String getUrl() {
+    return url;
   }
 
-  public void setStopCrawlOnMatch(List<SerpApiStopCrawlOnMatchInfo> stopCrawlOnMatch) {
-    this.stopCrawlOnMatch = stopCrawlOnMatch;
+  public void setUrl(String url) {
+    this.url = url;
   }
 
 
-  public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
-  @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
-  private String matchValue;
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
 
-  public SerpBingOrganicTaskPostRequestInfo matchValue(String matchValue) {
-    this.matchValue = matchValue;
+  public SerpBingOrganicTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
     return this;
   }
 
   /**
-   * target domain or wildcard value
-* required field if stop_crawl_on_match is specified;
-* specify a target domain or wildcard value;
-* Note: domain name must be specified without a request protocol;
-* example: dataforseo.com
-   * @return matchValue
-   */
-  @javax.annotation.Nullable
-  public String getMatchValue() {
-    return matchValue;
-  }
-
-  public void setMatchValue(String matchValue) {
-    this.matchValue = matchValue;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
-
-  public SerpBingOrganicTaskPostRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * target match type
-* required field if stop_crawl_on_match is specified;
-* type of match for the match_value
-* possible values: domain, with_subdomains, wildcard
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpBingOrganicTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
-  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
-  private String postbackUrl;
-
-  public SerpBingOrganicTaskPostRequestInfo postbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-    return this;
-  }
-
-  /**
-   * return URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude' format
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
 * example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return postbackUrl
+* 53.476225,-2.243572
+   * @return locationCoordinate
    */
   @javax.annotation.Nullable
-  public String getPostbackUrl() {
-    return postbackUrl;
+  public String getLocationCoordinate() {
+    return locationCoordinate;
   }
 
-  public void setPostbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-  }
-
-
-  public static final String SERIALIZED_NAME_POSTBACK_DATA = "postback_data";
-  @SerializedName(SERIALIZED_NAME_POSTBACK_DATA)
-  private String postbackData;
-
-  public SerpBingOrganicTaskPostRequestInfo postbackData(String postbackData) {
-    this.postbackData = postbackData;
-    return this;
-  }
-
-  /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* possible values:
-* regular, advanced, html
-   * @return postbackData
-   */
-  @javax.annotation.Nullable
-  public String getPostbackData() {
-    return postbackData;
-  }
-
-  public void setPostbackData(String postbackData) {
-    this.postbackData = postbackData;
-  }
-
-
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
-
-  public SerpBingOrganicTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
-    return this;
-  }
-
-  /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return pingbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
-  }
-
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
   }
 
 
@@ -764,30 +764,30 @@ public class SerpBingOrganicTaskPostRequestInfo  {
     SerpBingOrganicTaskPostRequestInfo serpBingOrganicTaskPostRequestInfo = (SerpBingOrganicTaskPostRequestInfo) o;
     return
 
-        Objects.equals(this.url, serpBingOrganicTaskPostRequestInfo.url) &&
         Objects.equals(this.keyword, serpBingOrganicTaskPostRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpBingOrganicTaskPostRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpBingOrganicTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpBingOrganicTaskPostRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, serpBingOrganicTaskPostRequestInfo.locationCoordinate) &&
-        Objects.equals(this.languageName, serpBingOrganicTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpBingOrganicTaskPostRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpBingOrganicTaskPostRequestInfo.device) &&
-        Objects.equals(this.os, serpBingOrganicTaskPostRequestInfo.os) &&
         Objects.equals(this.depth, serpBingOrganicTaskPostRequestInfo.depth) &&
+        Objects.equals(this.priority, serpBingOrganicTaskPostRequestInfo.priority) &&
+        Objects.equals(this.device, serpBingOrganicTaskPostRequestInfo.device) &&
+        Objects.equals(this.pingbackUrl, serpBingOrganicTaskPostRequestInfo.pingbackUrl) &&
+        Objects.equals(this.postbackUrl, serpBingOrganicTaskPostRequestInfo.postbackUrl) &&
+        Objects.equals(this.postbackData, serpBingOrganicTaskPostRequestInfo.postbackData) &&
+        Objects.equals(this.locationName, serpBingOrganicTaskPostRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpBingOrganicTaskPostRequestInfo.languageName) &&
+        Objects.equals(this.os, serpBingOrganicTaskPostRequestInfo.os) &&
+        Objects.equals(this.tag, serpBingOrganicTaskPostRequestInfo.tag) &&
+        Objects.equals(this.stopCrawlOnMatch, serpBingOrganicTaskPostRequestInfo.stopCrawlOnMatch) &&
+        Objects.equals(this.matchType, serpBingOrganicTaskPostRequestInfo.matchType) &&
+        Objects.equals(this.matchValue, serpBingOrganicTaskPostRequestInfo.matchValue) &&
         Objects.equals(this.maxCrawlPages, serpBingOrganicTaskPostRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.searchParam, serpBingOrganicTaskPostRequestInfo.searchParam) &&
         Objects.equals(this.calculateRectangles, serpBingOrganicTaskPostRequestInfo.calculateRectangles) &&
         Objects.equals(this.browserScreenWidth, serpBingOrganicTaskPostRequestInfo.browserScreenWidth) &&
         Objects.equals(this.browserScreenHeight, serpBingOrganicTaskPostRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpBingOrganicTaskPostRequestInfo.browserScreenResolutionRatio) &&
-        Objects.equals(this.searchParam, serpBingOrganicTaskPostRequestInfo.searchParam) &&
-        Objects.equals(this.stopCrawlOnMatch, serpBingOrganicTaskPostRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchValue, serpBingOrganicTaskPostRequestInfo.matchValue) &&
-        Objects.equals(this.matchType, serpBingOrganicTaskPostRequestInfo.matchType) &&
-        Objects.equals(this.tag, serpBingOrganicTaskPostRequestInfo.tag) &&
-        Objects.equals(this.postbackUrl, serpBingOrganicTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpBingOrganicTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.pingbackUrl, serpBingOrganicTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.url, serpBingOrganicTaskPostRequestInfo.url) &&
+        Objects.equals(this.locationCoordinate, serpBingOrganicTaskPostRequestInfo.locationCoordinate);  
     
   }
 
@@ -797,7 +797,7 @@ public class SerpBingOrganicTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, maxCrawlPages, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, searchParam, stopCrawlOnMatch, matchValue, matchType, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(keyword, locationCode, languageCode, depth, priority, device, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, stopCrawlOnMatch, matchType, matchValue, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -812,30 +812,30 @@ public class SerpBingOrganicTaskPostRequestInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpBingOrganicTaskPostRequestInfo {\n");
 
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
+    sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
+    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
     sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
-    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
-    sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -859,29 +859,41 @@ public class SerpBingOrganicTaskPostRequestInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("url");
-    
     openapiFields.add("keyword");
-    
-    openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
     
     openapiFields.add("location_code");
     
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("language_name");
-    
     openapiFields.add("language_code");
-    
-    openapiFields.add("device");
-    
-    openapiFields.add("os");
     
     openapiFields.add("depth");
     
+    openapiFields.add("priority");
+    
+    openapiFields.add("device");
+    
+    openapiFields.add("pingback_url");
+    
+    openapiFields.add("postback_url");
+    
+    openapiFields.add("postback_data");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
+    
+    openapiFields.add("stop_crawl_on_match");
+    
+    openapiFields.add("match_type");
+    
+    openapiFields.add("match_value");
+    
     openapiFields.add("max_crawl_pages");
+    
+    openapiFields.add("search_param");
     
     openapiFields.add("calculate_rectangles");
     
@@ -891,21 +903,9 @@ public class SerpBingOrganicTaskPostRequestInfo  {
     
     openapiFields.add("browser_screen_resolution_ratio");
     
-    openapiFields.add("search_param");
+    openapiFields.add("url");
     
-    openapiFields.add("stop_crawl_on_match");
-    
-    openapiFields.add("match_value");
-    
-    openapiFields.add("match_type");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("postback_url");
-    
-    openapiFields.add("postback_data");
-    
-    openapiFields.add("pingback_url");
+    openapiFields.add("location_coordinate");
     
 
     // a set of required properties/fields (JSON key names)

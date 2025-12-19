@@ -163,9 +163,9 @@ public class OnPageIdListResultInfo  {
 
   public static final String SERIALIZED_NAME_COST = "cost";
   @SerializedName(SERIALIZED_NAME_COST)
-  private Double cost;
+  private Integer cost;
 
-  public OnPageIdListResultInfo cost(Double cost) {
+  public OnPageIdListResultInfo cost(Integer cost) {
     this.cost = cost;
     return this;
   }
@@ -175,11 +175,11 @@ public class OnPageIdListResultInfo  {
    * @return cost
    */
   @javax.annotation.Nullable
-  public Double getCost() {
+  public Integer getCost() {
     return cost;
   }
 
-  public void setCost(Double cost) {
+  public void setCost(Integer cost) {
     this.cost = cost;
   }
 

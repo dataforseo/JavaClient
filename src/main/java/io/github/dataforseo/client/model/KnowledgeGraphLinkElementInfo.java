@@ -71,7 +71,7 @@ public class KnowledgeGraphLinkElementInfo  {
   }
 
   /**
-   * title of the result in SERP
+   * title of the link
    * @return title
    */
   @javax.annotation.Nullable

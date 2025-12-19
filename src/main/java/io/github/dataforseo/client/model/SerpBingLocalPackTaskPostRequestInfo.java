@@ -38,33 +38,6 @@ import io.github.dataforseo.client.JSON;
 public class SerpBingLocalPackTaskPostRequestInfo  {
 
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpBingLocalPackTaskPostRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
@@ -78,8 +51,8 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
    * keyword
 * required field
 * you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
+* all %## will be decoded (plus character '+' will be decoded to a space character)
+* if you need to use the '%' character for your keyword, please specify it as '%25';
 * if you need to use the “+” character for your keyword, please specify it as “%2B”;
 * learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
@@ -94,63 +67,6 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpBingLocalPackTaskPostRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpBingLocalPackTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -162,9 +78,9 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
 * example:
 * 2840
    * @return locationCode
@@ -179,63 +95,6 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpBingLocalPackTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* example:
-* 53.476225,-2.243572
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpBingLocalPackTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available locations of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -247,9 +106,9 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available locations of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available locations of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
 * example:
 * en
    * @return languageCode
@@ -261,33 +120,6 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpBingLocalPackTaskPostRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating system
-* optional field
-* note that this API provides results for desktop only
-* choose from the following values: windows, macos
-* default value: windows
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
   }
 
 
@@ -321,83 +153,64 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
-  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
-  private Integer maxCrawlPages;
+  public static final String SERIALIZED_NAME_PRIORITY = "priority";
+  @SerializedName(SERIALIZED_NAME_PRIORITY)
+  private Integer priority;
 
-  public SerpBingLocalPackTaskPostRequestInfo maxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
+  public SerpBingLocalPackTaskPostRequestInfo priority(Integer priority) {
+    this.priority = priority;
     return this;
   }
 
   /**
-   * page crawl limit
+   * task priority
 * optional field
-* number of search results pages to crawl
-* max value: 100
-* Note: the max_crawl_pages and depth parameters complement each other;
-* learn more at our help center
-   * @return maxCrawlPages
+* can take the following values:
+* 1 – normal execution priority (set by default)
+* 2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority.
+* The cost can be calculated on the Pricing page.
+   * @return priority
    */
   @javax.annotation.Nullable
-  public Integer getMaxCrawlPages() {
-    return maxCrawlPages;
+  public Integer getPriority() {
+    return priority;
   }
 
-  public void setMaxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
+  public void setPriority(Integer priority) {
+    this.priority = priority;
   }
 
 
-  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
-  private String searchParam;
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
 
-  public SerpBingLocalPackTaskPostRequestInfo searchParam(String searchParam) {
-    this.searchParam = searchParam;
+  public SerpBingLocalPackTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
     return this;
   }
 
   /**
-   * additional parameters of the search query
+   * notification URL of a completed task
 * optional field
-* get the list of available parameters and additional details here
-   * @return searchParam
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special characters in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return pingbackUrl
    */
   @javax.annotation.Nullable
-  public String getSearchParam() {
-    return searchParam;
+  public String getPingbackUrl() {
+    return pingbackUrl;
   }
 
-  public void setSearchParam(String searchParam) {
-    this.searchParam = searchParam;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpBingLocalPackTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
   }
 
 
@@ -460,35 +273,222 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
 
-  public SerpBingLocalPackTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public SerpBingLocalPackTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
     return this;
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
 * example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return pingbackUrl
+* London,England,United Kingdom
+   * @return locationName
    */
   @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
+  public String getLocationName() {
+    return locationName;
   }
 
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpBingLocalPackTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available locations of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpBingLocalPackTaskPostRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * device operating system
+* optional field
+* note that this API provides results for desktop only
+* choose from the following values: windows, macos
+* default value: windows
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpBingLocalPackTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
+  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
+  private Integer maxCrawlPages;
+
+  public SerpBingLocalPackTaskPostRequestInfo maxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
+    return this;
+  }
+
+  /**
+   * page crawl limit
+* optional field
+* number of search results pages to crawl
+* max value: 100
+* Note: the max_crawl_pages and depth parameters complement each other;
+* learn more at our help center
+   * @return maxCrawlPages
+   */
+  @javax.annotation.Nullable
+  public Integer getMaxCrawlPages() {
+    return maxCrawlPages;
+  }
+
+  public void setMaxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
+  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
+  private String searchParam;
+
+  public SerpBingLocalPackTaskPostRequestInfo searchParam(String searchParam) {
+    this.searchParam = searchParam;
+    return this;
+  }
+
+  /**
+   * additional parameters of the search query
+* optional field
+* get the list of available parameters and additional details here
+   * @return searchParam
+   */
+  @javax.annotation.Nullable
+  public String getSearchParam() {
+    return searchParam;
+  }
+
+  public void setSearchParam(String searchParam) {
+    this.searchParam = searchParam;
+  }
+
+
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
+
+  public SerpBingLocalPackTaskPostRequestInfo url(String url) {
+    this.url = url;
+    return this;
+  }
+
+  /**
+   * direct URL of the search query
+* optional field
+* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
+* example:
+* https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE
+   * @return url
+   */
+  @javax.annotation.Nullable
+  public String getUrl() {
+    return url;
+  }
+
+  public void setUrl(String url) {
+    this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public SerpBingLocalPackTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude' format
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
+* example:
+* 53.476225,-2.243572
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
   }
 
 
@@ -535,22 +535,22 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
     SerpBingLocalPackTaskPostRequestInfo serpBingLocalPackTaskPostRequestInfo = (SerpBingLocalPackTaskPostRequestInfo) o;
     return
 
-        Objects.equals(this.url, serpBingLocalPackTaskPostRequestInfo.url) &&
         Objects.equals(this.keyword, serpBingLocalPackTaskPostRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpBingLocalPackTaskPostRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpBingLocalPackTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpBingLocalPackTaskPostRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, serpBingLocalPackTaskPostRequestInfo.locationCoordinate) &&
-        Objects.equals(this.languageName, serpBingLocalPackTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpBingLocalPackTaskPostRequestInfo.languageCode) &&
-        Objects.equals(this.os, serpBingLocalPackTaskPostRequestInfo.os) &&
         Objects.equals(this.depth, serpBingLocalPackTaskPostRequestInfo.depth) &&
-        Objects.equals(this.maxCrawlPages, serpBingLocalPackTaskPostRequestInfo.maxCrawlPages) &&
-        Objects.equals(this.searchParam, serpBingLocalPackTaskPostRequestInfo.searchParam) &&
-        Objects.equals(this.tag, serpBingLocalPackTaskPostRequestInfo.tag) &&
+        Objects.equals(this.priority, serpBingLocalPackTaskPostRequestInfo.priority) &&
+        Objects.equals(this.pingbackUrl, serpBingLocalPackTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpBingLocalPackTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpBingLocalPackTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.pingbackUrl, serpBingLocalPackTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.locationName, serpBingLocalPackTaskPostRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpBingLocalPackTaskPostRequestInfo.languageName) &&
+        Objects.equals(this.os, serpBingLocalPackTaskPostRequestInfo.os) &&
+        Objects.equals(this.tag, serpBingLocalPackTaskPostRequestInfo.tag) &&
+        Objects.equals(this.maxCrawlPages, serpBingLocalPackTaskPostRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.searchParam, serpBingLocalPackTaskPostRequestInfo.searchParam) &&
+        Objects.equals(this.url, serpBingLocalPackTaskPostRequestInfo.url) &&
+        Objects.equals(this.locationCoordinate, serpBingLocalPackTaskPostRequestInfo.locationCoordinate);  
     
   }
 
@@ -560,7 +560,7 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, os, depth, maxCrawlPages, searchParam, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(keyword, locationCode, languageCode, depth, priority, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, maxCrawlPages, searchParam, url, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -575,22 +575,22 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpBingLocalPackTaskPostRequestInfo {\n");
 
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
-    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
-    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -614,37 +614,37 @@ public class SerpBingLocalPackTaskPostRequestInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("url");
-    
     openapiFields.add("keyword");
-    
-    openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
     
     openapiFields.add("location_code");
     
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("language_name");
-    
     openapiFields.add("language_code");
-    
-    openapiFields.add("os");
     
     openapiFields.add("depth");
     
-    openapiFields.add("max_crawl_pages");
+    openapiFields.add("priority");
     
-    openapiFields.add("search_param");
-    
-    openapiFields.add("tag");
+    openapiFields.add("pingback_url");
     
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
     
-    openapiFields.add("pingback_url");
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
+    
+    openapiFields.add("max_crawl_pages");
+    
+    openapiFields.add("search_param");
+    
+    openapiFields.add("url");
+    
+    openapiFields.add("location_coordinate");
     
 
     // a set of required properties/fields (JSON key names)

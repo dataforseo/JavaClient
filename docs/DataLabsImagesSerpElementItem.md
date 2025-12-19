@@ -8,4 +8,4 @@
 **title** | **String** | title of the result in SERP |[optional]|
 **url** | **String** | sitelink URL |[optional]|
 **items** | **List<AiModeImagesElementInfo>** | historical SERPs and related data found in the database |[optional]|
-**relatedImageSearches** | **List<RelatedImageSearchesElement>** | contains keywords and images related to the specified search term<br>if there are none, equals null |[optional]|
+**relatedImageSearches** | **RelatedImageSearchesElement** | contains keywords and images related to the specified search term<br>if there are none, equals null |[optional]|

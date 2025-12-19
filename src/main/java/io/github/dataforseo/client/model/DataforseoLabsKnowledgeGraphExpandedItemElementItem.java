@@ -48,7 +48,7 @@ public class DataforseoLabsKnowledgeGraphExpandedItemElementItem  extends BaseDa
   }
 
   /**
-   * title of the element
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -88,23 +88,23 @@ public class DataforseoLabsKnowledgeGraphExpandedItemElementItem  extends BaseDa
 
   public static final String SERIALIZED_NAME_EXPANDED_ELEMENT = "expanded_element";
   @SerializedName(SERIALIZED_NAME_EXPANDED_ELEMENT)
-  private String expandedElement;
+  private Object expandedElement;
 
-  public DataforseoLabsKnowledgeGraphExpandedItemElementItem expandedElement(String expandedElement) {
+  public DataforseoLabsKnowledgeGraphExpandedItemElementItem expandedElement(Object expandedElement) {
     this.expandedElement = expandedElement;
     return this;
   }
 
   /**
-   * expanded element
+   * link of the element
    * @return expandedElement
    */
   @javax.annotation.Nullable
-  public String getExpandedElement() {
+  public Object getExpandedElement() {
     return expandedElement;
   }
 
-  public void setExpandedElement(String expandedElement) {
+  public void setExpandedElement(Object expandedElement) {
     this.expandedElement = expandedElement;
   }
 

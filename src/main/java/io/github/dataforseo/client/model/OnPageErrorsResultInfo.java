@@ -229,9 +229,9 @@ public class OnPageErrorsResultInfo  {
 
   public static final String SERIALIZED_NAME_HTTP_TIME = "http_time";
   @SerializedName(SERIALIZED_NAME_HTTP_TIME)
-  private Double httpTime;
+  private Integer httpTime;
 
-  public OnPageErrorsResultInfo httpTime(Double httpTime) {
+  public OnPageErrorsResultInfo httpTime(Integer httpTime) {
     this.httpTime = httpTime;
     return this;
   }
@@ -242,11 +242,11 @@ public class OnPageErrorsResultInfo  {
    * @return httpTime
    */
   @javax.annotation.Nullable
-  public Double getHttpTime() {
+  public Integer getHttpTime() {
     return httpTime;
   }
 
-  public void setHttpTime(Double httpTime) {
+  public void setHttpTime(Integer httpTime) {
     this.httpTime = httpTime;
   }
 

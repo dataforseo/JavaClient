@@ -38,33 +38,6 @@ import io.github.dataforseo.client.JSON;
 public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpBingOrganicLiveAdvancedRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search query
-* optional field
-* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
-* example:
-* https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
   public static final String SERIALIZED_NAME_KEYWORD = "keyword";
   @SerializedName(SERIALIZED_NAME_KEYWORD)
   private String keyword;
@@ -78,8 +51,8 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
    * keyword
 * required field
 * you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
+* all %## will be decoded (plus character '+' will be decoded to a space character)
+* if you need to use the '%' character for your keyword, please specify it as '%25';
 * if you need to use the “+” character for your keyword, please specify it as “%2B”;
 * learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
@@ -94,34 +67,6 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpBingOrganicLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -133,9 +78,9 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/locations
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
 * example:
 * 2840
    * @return locationCode
@@ -150,63 +95,6 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpBingOrganicLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* example:
-* 53.476225,-2.243572
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpBingOrganicLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -218,9 +106,9 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/bing/languages
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
 * example:
 * en
    * @return languageCode
@@ -232,60 +120,6 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_DEVICE = "device";
-  @SerializedName(SERIALIZED_NAME_DEVICE)
-  private String device;
-
-  public SerpBingOrganicLiveAdvancedRequestInfo device(String device) {
-    this.device = device;
-    return this;
-  }
-
-  /**
-   * device type
-* optional field
-* can take the values:desktop, mobile
-* default value: desktop
-   * @return device
-   */
-  @javax.annotation.Nullable
-  public String getDevice() {
-    return device;
-  }
-
-  public void setDevice(String device) {
-    this.device = device;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpBingOrganicLiveAdvancedRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
   }
 
 
@@ -319,32 +153,140 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
-  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
-  private Integer maxCrawlPages;
+  public static final String SERIALIZED_NAME_DEVICE = "device";
+  @SerializedName(SERIALIZED_NAME_DEVICE)
+  private String device;
 
-  public SerpBingOrganicLiveAdvancedRequestInfo maxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
+  public SerpBingOrganicLiveAdvancedRequestInfo device(String device) {
+    this.device = device;
     return this;
   }
 
   /**
-   * page crawl limit
+   * device type
 * optional field
-* number of search results pages to crawl
-* default value: 1
-* max value: 100
-* Note: the max_crawl_pages and depth parameters complement each other;
-* learn more at our help center
-   * @return maxCrawlPages
+* can take the values:desktop, mobile
+* default value: desktop
+   * @return device
    */
   @javax.annotation.Nullable
-  public Integer getMaxCrawlPages() {
-    return maxCrawlPages;
+  public String getDevice() {
+    return device;
   }
 
-  public void setMaxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
+  public void setDevice(String device) {
+    this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpBingOrganicLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpBingOrganicLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpBingOrganicLiveAdvancedRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * device operating system
+* optional field
+* if you specify desktop in the device field, choose from the following values: windows, macos
+* default value: windows
+* if you specify mobile in the device field, choose from the following values: android, ios
+* default value: android
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpBingOrganicLiveAdvancedRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -364,12 +306,12 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 * note that the results of target-specific tasks will only include SERP elements that contain a url string;
 * you can also use a wildcard (‘*’) character to specify the search pattern in SERP and narrow down the results;
 * examples:
-* example.com  – returns results for the website’s home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
-* example.com* – returns results for the domain, including all its pages;
-* *example.com* – returns results for the entire domain, including all its pages and subdomains;
-* *example.com  – returns results for the home page regardless of the subdomain, such as https://en.example.com;
-* example.com/example-page  – returns results for the exact URL;
-* example.com/example-page*  – returns results for all domain’s URLs that start with the specified string
+* example.com  - returns results for the website's home page with URLs, such as https://example.com, or https://www.example.com/, or https://example.com/;
+* example.com* - returns results for the domain, including all its pages;
+* *example.com* - returns results for the entire domain, including all its pages and subdomains;
+* *example.com  - returns results for the home page regardless of the subdomain, such as https://en.example.com;
+* example.com/example-page  - returns results for the exact URL;
+* example.com/example-page*  - returns results for all domain's URLs that start with the specified string
    * @return target
    */
   @javax.annotation.Nullable
@@ -412,6 +354,32 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
+  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
+  private String matchType;
+
+  public SerpBingOrganicLiveAdvancedRequestInfo matchType(String matchType) {
+    this.matchType = matchType;
+    return this;
+  }
+
+  /**
+   * target match type
+* required field if stop_crawl_on_match is specified;
+* type of match for the match_value
+* possible values: domain, with_subdomains, wildcard
+   * @return matchType
+   */
+  @javax.annotation.Nullable
+  public String getMatchType() {
+    return matchType;
+  }
+
+  public void setMatchType(String matchType) {
+    this.matchType = matchType;
+  }
+
+
   public static final String SERIALIZED_NAME_MATCH_VALUE = "match_value";
   @SerializedName(SERIALIZED_NAME_MATCH_VALUE)
   private String matchValue;
@@ -439,29 +407,57 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
+  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
+  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
+  private Integer maxCrawlPages;
 
-  public SerpBingOrganicLiveAdvancedRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
+  public SerpBingOrganicLiveAdvancedRequestInfo maxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
     return this;
   }
 
   /**
-   * target match type
-* required field if stop_crawl_on_match is specified;
-* type of match for the match_value
-* possible values: domain, with_subdomains, wildcard
-   * @return matchType
+   * page crawl limit
+* optional field
+* number of search results pages to crawl
+* default value: 1
+* max value: 100
+* Note: the max_crawl_pages and depth parameters complement each other;
+* learn more at our help center
+   * @return maxCrawlPages
    */
   @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
+  public Integer getMaxCrawlPages() {
+    return maxCrawlPages;
   }
 
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
+  public void setMaxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
+  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
+  private String searchParam;
+
+  public SerpBingOrganicLiveAdvancedRequestInfo searchParam(String searchParam) {
+    this.searchParam = searchParam;
+    return this;
+  }
+
+  /**
+   * additional parameters of the search query
+* optional field
+* get the list of available parameters and additional details here
+   * @return searchParam
+   */
+  @javax.annotation.Nullable
+  public String getSearchParam() {
+    return searchParam;
+  }
+
+  public void setSearchParam(String searchParam) {
+    this.searchParam = searchParam;
   }
 
 
@@ -583,55 +579,59 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
-  private String searchParam;
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
 
-  public SerpBingOrganicLiveAdvancedRequestInfo searchParam(String searchParam) {
-    this.searchParam = searchParam;
+  public SerpBingOrganicLiveAdvancedRequestInfo url(String url) {
+    this.url = url;
     return this;
   }
 
   /**
-   * additional parameters of the search query
+   * direct URL of the search query
 * optional field
-* get the list of available parameters and additional details here
-   * @return searchParam
+* you can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.
+* example:
+* https://www.bing.com/search?q=rank%20checker&count=50&first=1&setlang=en&cc=US&safesearch=Moderate&FORM=SEPAGE
+   * @return url
    */
   @javax.annotation.Nullable
-  public String getSearchParam() {
-    return searchParam;
+  public String getUrl() {
+    return url;
   }
 
-  public void setSearchParam(String searchParam) {
-    this.searchParam = searchParam;
+  public void setUrl(String url) {
+    this.url = url;
   }
 
 
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
 
-  public SerpBingOrganicLiveAdvancedRequestInfo tag(String tag) {
-    this.tag = tag;
+  public SerpBingOrganicLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
     return this;
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude' format
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
+* example:
+* 53.476225,-2.243572
+   * @return locationCoordinate
    */
   @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
+  public String getLocationCoordinate() {
+    return locationCoordinate;
   }
 
-  public void setTag(String tag) {
-    this.tag = tag;
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
   }
 
 
@@ -678,27 +678,27 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
     SerpBingOrganicLiveAdvancedRequestInfo serpBingOrganicLiveAdvancedRequestInfo = (SerpBingOrganicLiveAdvancedRequestInfo) o;
     return
 
-        Objects.equals(this.url, serpBingOrganicLiveAdvancedRequestInfo.url) &&
         Objects.equals(this.keyword, serpBingOrganicLiveAdvancedRequestInfo.keyword) &&
-        Objects.equals(this.locationName, serpBingOrganicLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpBingOrganicLiveAdvancedRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, serpBingOrganicLiveAdvancedRequestInfo.locationCoordinate) &&
-        Objects.equals(this.languageName, serpBingOrganicLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpBingOrganicLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpBingOrganicLiveAdvancedRequestInfo.device) &&
-        Objects.equals(this.os, serpBingOrganicLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.depth, serpBingOrganicLiveAdvancedRequestInfo.depth) &&
-        Objects.equals(this.maxCrawlPages, serpBingOrganicLiveAdvancedRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.device, serpBingOrganicLiveAdvancedRequestInfo.device) &&
+        Objects.equals(this.locationName, serpBingOrganicLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpBingOrganicLiveAdvancedRequestInfo.languageName) &&
+        Objects.equals(this.os, serpBingOrganicLiveAdvancedRequestInfo.os) &&
+        Objects.equals(this.tag, serpBingOrganicLiveAdvancedRequestInfo.tag) &&
         Objects.equals(this.target, serpBingOrganicLiveAdvancedRequestInfo.target) &&
         Objects.equals(this.stopCrawlOnMatch, serpBingOrganicLiveAdvancedRequestInfo.stopCrawlOnMatch) &&
-        Objects.equals(this.matchValue, serpBingOrganicLiveAdvancedRequestInfo.matchValue) &&
         Objects.equals(this.matchType, serpBingOrganicLiveAdvancedRequestInfo.matchType) &&
+        Objects.equals(this.matchValue, serpBingOrganicLiveAdvancedRequestInfo.matchValue) &&
+        Objects.equals(this.maxCrawlPages, serpBingOrganicLiveAdvancedRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.searchParam, serpBingOrganicLiveAdvancedRequestInfo.searchParam) &&
         Objects.equals(this.calculateRectangles, serpBingOrganicLiveAdvancedRequestInfo.calculateRectangles) &&
         Objects.equals(this.browserScreenWidth, serpBingOrganicLiveAdvancedRequestInfo.browserScreenWidth) &&
         Objects.equals(this.browserScreenHeight, serpBingOrganicLiveAdvancedRequestInfo.browserScreenHeight) &&
         Objects.equals(this.browserScreenResolutionRatio, serpBingOrganicLiveAdvancedRequestInfo.browserScreenResolutionRatio) &&
-        Objects.equals(this.searchParam, serpBingOrganicLiveAdvancedRequestInfo.searchParam) &&
-        Objects.equals(this.tag, serpBingOrganicLiveAdvancedRequestInfo.tag);  
+        Objects.equals(this.url, serpBingOrganicLiveAdvancedRequestInfo.url) &&
+        Objects.equals(this.locationCoordinate, serpBingOrganicLiveAdvancedRequestInfo.locationCoordinate);  
     
   }
 
@@ -708,7 +708,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, device, os, depth, maxCrawlPages, target, stopCrawlOnMatch, matchValue, matchType, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, searchParam, tag);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, target, stopCrawlOnMatch, matchType, matchValue, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, url, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -723,27 +723,27 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpBingOrganicLiveAdvancedRequestInfo {\n");
 
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
-    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    stopCrawlOnMatch: ").append(toIndentedString(stopCrawlOnMatch)).append("\n");
-    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
     sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
+    sb.append("    matchValue: ").append(toIndentedString(matchValue)).append("\n");
+    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
     sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
     sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
     sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
     sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
-    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -767,35 +767,35 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("url");
-    
     openapiFields.add("keyword");
-    
-    openapiFields.add("location_name");
     
     openapiFields.add("location_code");
     
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("language_name");
-    
     openapiFields.add("language_code");
-    
-    openapiFields.add("device");
-    
-    openapiFields.add("os");
     
     openapiFields.add("depth");
     
-    openapiFields.add("max_crawl_pages");
+    openapiFields.add("device");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
     
     openapiFields.add("target");
     
     openapiFields.add("stop_crawl_on_match");
     
+    openapiFields.add("match_type");
+    
     openapiFields.add("match_value");
     
-    openapiFields.add("match_type");
+    openapiFields.add("max_crawl_pages");
+    
+    openapiFields.add("search_param");
     
     openapiFields.add("calculate_rectangles");
     
@@ -805,9 +805,9 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
     
     openapiFields.add("browser_screen_resolution_ratio");
     
-    openapiFields.add("search_param");
+    openapiFields.add("url");
     
-    openapiFields.add("tag");
+    openapiFields.add("location_coordinate");
     
 
     // a set of required properties/fields (JSON key names)

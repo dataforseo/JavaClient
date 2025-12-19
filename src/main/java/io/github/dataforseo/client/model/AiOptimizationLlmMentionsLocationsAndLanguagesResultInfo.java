@@ -86,9 +86,9 @@ public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
 
   public static final String SERIALIZED_NAME_AVAILABLE_LANGUAGES = "available_languages";
   @SerializedName(SERIALIZED_NAME_AVAILABLE_LANGUAGES)
-  private List<AvailableLanguages> availableLanguages;
+  private List<ResultAvailableLanguages> availableLanguages;
 
-  public AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo availableLanguages(List<AvailableLanguages> availableLanguages) {
+  public AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo availableLanguages(List<ResultAvailableLanguages> availableLanguages) {
     this.availableLanguages = availableLanguages;
     return this;
   }
@@ -99,11 +99,11 @@ public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
    * @return availableLanguages
    */
   @javax.annotation.Nullable
-  public List<AvailableLanguages> getAvailableLanguages() {
+  public List<ResultAvailableLanguages> getAvailableLanguages() {
     return availableLanguages;
   }
 
-  public void setAvailableLanguages(List<AvailableLanguages> availableLanguages) {
+  public void setAvailableLanguages(List<ResultAvailableLanguages> availableLanguages) {
     this.availableLanguages = availableLanguages;
   }
 

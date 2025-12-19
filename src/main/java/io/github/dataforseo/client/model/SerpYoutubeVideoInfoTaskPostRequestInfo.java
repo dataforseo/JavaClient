@@ -50,7 +50,7 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
   /**
    * ID of the video
 * required field
-* you can find video ID in the URL or ‘youtube_video’ item of YouTube Organic result
+* you can find video ID in the URL or 'youtube_video' item of YouTube Organic result
 * example:
 * vQXvyV0zIP4
    * @return videoId
@@ -62,6 +62,62 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
 
   public void setVideoId(String videoId) {
     this.videoId = videoId;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
+  private Integer locationCode;
+
+  public SerpYoutubeVideoInfoTaskPostRequestInfo locationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+    return this;
+  }
+
+  /**
+   * search engine location code
+* required field if you don't specify location_name
+* if you use this field, you don't need to specify location_name
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
+* example:
+* 2840
+   * @return locationCode
+   */
+  @javax.annotation.Nullable
+  public Integer getLocationCode() {
+    return locationCode;
+  }
+
+  public void setLocationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
+  private String languageCode;
+
+  public SerpYoutubeVideoInfoTaskPostRequestInfo languageCode(String languageCode) {
+    this.languageCode = languageCode;
+    return this;
+  }
+
+  /**
+   * search engine language code
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
+* example:
+* en
+   * @return languageCode
+   */
+  @javax.annotation.Nullable
+  public String getLanguageCode() {
+    return languageCode;
+  }
+
+  public void setLanguageCode(String languageCode) {
+    this.languageCode = languageCode;
   }
 
 
@@ -94,118 +150,6 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpYoutubeVideoInfoTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
-  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
-  private Integer locationCode;
-
-  public SerpYoutubeVideoInfoTaskPostRequestInfo locationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-    return this;
-  }
-
-  /**
-   * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* 2840
-   * @return locationCode
-   */
-  @javax.annotation.Nullable
-  public Integer getLocationCode() {
-    return locationCode;
-  }
-
-  public void setLocationCode(Integer locationCode) {
-    this.locationCode = locationCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpYoutubeVideoInfoTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
-
-  public SerpYoutubeVideoInfoTaskPostRequestInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* en
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
-  }
-
-
   public static final String SERIALIZED_NAME_DEVICE = "device";
   @SerializedName(SERIALIZED_NAME_DEVICE)
   private String device;
@@ -231,56 +175,35 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
 
-  public SerpYoutubeVideoInfoTaskPostRequestInfo os(String os) {
-    this.os = os;
+  public SerpYoutubeVideoInfoTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
     return this;
   }
 
   /**
-   * device operating system
+   * notification URL of a completed task
 * optional field
-* choose from the following values: windows, macos
-* default value: windows
-   * @return os
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special characters in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return pingbackUrl
    */
   @javax.annotation.Nullable
-  public String getOs() {
-    return os;
+  public String getPingbackUrl() {
+    return pingbackUrl;
   }
 
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpYoutubeVideoInfoTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
   }
 
 
@@ -343,35 +266,112 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
 
-  public SerpYoutubeVideoInfoTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public SerpYoutubeVideoInfoTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
     return this;
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+   * full name of search engine location
+* required field if you don't specify location_code
+* if you use this field, you don't need to specify location_code
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
 * example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return pingbackUrl
+* United States
+   * @return locationName
    */
   @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
+  public String getLocationName() {
+    return locationName;
   }
 
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpYoutubeVideoInfoTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpYoutubeVideoInfoTaskPostRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * device operating system
+* optional field
+* choose from the following values: windows, macos
+* default value: windows
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpYoutubeVideoInfoTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -419,17 +419,17 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
     return
 
         Objects.equals(this.videoId, serpYoutubeVideoInfoTaskPostRequestInfo.videoId) &&
-        Objects.equals(this.priority, serpYoutubeVideoInfoTaskPostRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpYoutubeVideoInfoTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpYoutubeVideoInfoTaskPostRequestInfo.locationCode) &&
-        Objects.equals(this.languageName, serpYoutubeVideoInfoTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpYoutubeVideoInfoTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.priority, serpYoutubeVideoInfoTaskPostRequestInfo.priority) &&
         Objects.equals(this.device, serpYoutubeVideoInfoTaskPostRequestInfo.device) &&
-        Objects.equals(this.os, serpYoutubeVideoInfoTaskPostRequestInfo.os) &&
-        Objects.equals(this.tag, serpYoutubeVideoInfoTaskPostRequestInfo.tag) &&
+        Objects.equals(this.pingbackUrl, serpYoutubeVideoInfoTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpYoutubeVideoInfoTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpYoutubeVideoInfoTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.pingbackUrl, serpYoutubeVideoInfoTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.locationName, serpYoutubeVideoInfoTaskPostRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpYoutubeVideoInfoTaskPostRequestInfo.languageName) &&
+        Objects.equals(this.os, serpYoutubeVideoInfoTaskPostRequestInfo.os) &&
+        Objects.equals(this.tag, serpYoutubeVideoInfoTaskPostRequestInfo.tag);  
     
   }
 
@@ -439,7 +439,7 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(videoId, priority, locationName, locationCode, languageName, languageCode, device, os, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(videoId, locationCode, languageCode, priority, device, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -455,17 +455,17 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
     sb.append("class SerpYoutubeVideoInfoTaskPostRequestInfo {\n");
 
     sb.append("    videoId: ").append(toIndentedString(videoId)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -491,27 +491,27 @@ public class SerpYoutubeVideoInfoTaskPostRequestInfo  {
     
     openapiFields.add("video_id");
     
-    openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
+    openapiFields.add("priority");
+    
     openapiFields.add("device");
     
-    openapiFields.add("os");
-    
-    openapiFields.add("tag");
+    openapiFields.add("pingback_url");
     
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
     
-    openapiFields.add("pingback_url");
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

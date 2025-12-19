@@ -67,32 +67,29 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
+  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
+  private String languageCode;
 
-  public SerpGoogleDatasetSearchTaskPostRequestInfo priority(Integer priority) {
-    this.priority = priority;
+  public SerpGoogleDatasetSearchTaskPostRequestInfo languageCode(String languageCode) {
+    this.languageCode = languageCode;
     return this;
   }
 
   /**
-   * task priority
+   * search engine language code
 * optional field
-* can take the following values:
-* 1 – normal execution priority (set by default)
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.
-* The cost can be calculated on the Pricing page.
-   * @return priority
+* possible value:
+* en
+   * @return languageCode
    */
   @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
+  public String getLanguageCode() {
+    return languageCode;
   }
 
-  public void setPriority(Integer priority) {
-    this.priority = priority;
+  public void setLanguageCode(String languageCode) {
+    this.languageCode = languageCode;
   }
 
 
@@ -126,56 +123,32 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
+  public static final String SERIALIZED_NAME_PRIORITY = "priority";
+  @SerializedName(SERIALIZED_NAME_PRIORITY)
+  private Integer priority;
 
-  public SerpGoogleDatasetSearchTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
+  public SerpGoogleDatasetSearchTaskPostRequestInfo priority(Integer priority) {
+    this.priority = priority;
     return this;
   }
 
   /**
-   * full name of search engine language
+   * task priority
 * optional field
-* if you use this field, you don’t need to specify language_code
-* possible value:
-* English
-   * @return languageName
+* can take the following values:
+* 1 – normal execution priority (set by default)
+* 2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority.
+* The cost can be calculated on the Pricing page.
+   * @return priority
    */
   @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
+  public Integer getPriority() {
+    return priority;
   }
 
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
-  private String languageCode;
-
-  public SerpGoogleDatasetSearchTaskPostRequestInfo languageCode(String languageCode) {
-    this.languageCode = languageCode;
-    return this;
-  }
-
-  /**
-   * search engine language code
-* optional field
-* possible value:
-* en
-   * @return languageCode
-   */
-  @javax.annotation.Nullable
-  public String getLanguageCode() {
-    return languageCode;
-  }
-
-  public void setLanguageCode(String languageCode) {
-    this.languageCode = languageCode;
+  public void setPriority(Integer priority) {
+    this.priority = priority;
   }
 
 
@@ -204,6 +177,123 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
+
+  public SerpGoogleDatasetSearchTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+    return this;
+  }
+
+  /**
+   * notification URL of a completed task
+* optional field
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special characters in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return pingbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPingbackUrl() {
+    return pingbackUrl;
+  }
+
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
+  }
+
+
+  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
+  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
+  private String postbackUrl;
+
+  public SerpGoogleDatasetSearchTaskPostRequestInfo postbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+    return this;
+  }
+
+  /**
+   * return URL for sending task results
+* optional field
+* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request
+* example:
+* http://your-server.com/postbackscript?id=$id
+* http://your-server.com/postbackscript?id=$id&tag=$tag
+* Note: special characters in postback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return postbackUrl
+   */
+  @javax.annotation.Nullable
+  public String getPostbackUrl() {
+    return postbackUrl;
+  }
+
+  public void setPostbackUrl(String postbackUrl) {
+    this.postbackUrl = postbackUrl;
+  }
+
+
+  public static final String SERIALIZED_NAME_POSTBACK_DATA = "postback_data";
+  @SerializedName(SERIALIZED_NAME_POSTBACK_DATA)
+  private String postbackData;
+
+  public SerpGoogleDatasetSearchTaskPostRequestInfo postbackData(String postbackData) {
+    this.postbackData = postbackData;
+    return this;
+  }
+
+  /**
+   * postback_url datatype
+* required field if you specify postback_url
+* corresponds to the datatype that will be sent to your server
+* only value: advanced
+   * @return postbackData
+   */
+  @javax.annotation.Nullable
+  public String getPostbackData() {
+    return postbackData;
+  }
+
+  public void setPostbackData(String postbackData) {
+    this.postbackData = postbackData;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleDatasetSearchTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* optional field
+* if you use this field, you don't need to specify language_code
+* possible value:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
   public static final String SERIALIZED_NAME_OS = "os";
   @SerializedName(SERIALIZED_NAME_OS)
   private String os;
@@ -227,6 +317,33 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
 
   public void setOs(String os) {
     this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleDatasetSearchTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -355,123 +472,6 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleDatasetSearchTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_POSTBACK_URL = "postback_url";
-  @SerializedName(SERIALIZED_NAME_POSTBACK_URL)
-  private String postbackUrl;
-
-  public SerpGoogleDatasetSearchTaskPostRequestInfo postbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-    return this;
-  }
-
-  /**
-   * return URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special characters in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return postbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPostbackUrl() {
-    return postbackUrl;
-  }
-
-  public void setPostbackUrl(String postbackUrl) {
-    this.postbackUrl = postbackUrl;
-  }
-
-
-  public static final String SERIALIZED_NAME_POSTBACK_DATA = "postback_data";
-  @SerializedName(SERIALIZED_NAME_POSTBACK_DATA)
-  private String postbackData;
-
-  public SerpGoogleDatasetSearchTaskPostRequestInfo postbackData(String postbackData) {
-    this.postbackData = postbackData;
-    return this;
-  }
-
-  /**
-   * postback_url datatype
-* required field if you specify postback_url
-* corresponds to the datatype that will be sent to your server
-* only value: advanced
-   * @return postbackData
-   */
-  @javax.annotation.Nullable
-  public String getPostbackData() {
-    return postbackData;
-  }
-
-  public void setPostbackData(String postbackData) {
-    this.postbackData = postbackData;
-  }
-
-
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
-
-  public SerpGoogleDatasetSearchTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
-    return this;
-  }
-
-  /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return pingbackUrl
-   */
-  @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
-  }
-
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
-  }
-
-
 
   public SerpGoogleDatasetSearchTaskPostRequestInfo() {
   }
@@ -516,21 +516,21 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleDatasetSearchTaskPostRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpGoogleDatasetSearchTaskPostRequestInfo.priority) &&
-        Objects.equals(this.depth, serpGoogleDatasetSearchTaskPostRequestInfo.depth) &&
-        Objects.equals(this.languageName, serpGoogleDatasetSearchTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleDatasetSearchTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.depth, serpGoogleDatasetSearchTaskPostRequestInfo.depth) &&
+        Objects.equals(this.priority, serpGoogleDatasetSearchTaskPostRequestInfo.priority) &&
         Objects.equals(this.device, serpGoogleDatasetSearchTaskPostRequestInfo.device) &&
+        Objects.equals(this.pingbackUrl, serpGoogleDatasetSearchTaskPostRequestInfo.pingbackUrl) &&
+        Objects.equals(this.postbackUrl, serpGoogleDatasetSearchTaskPostRequestInfo.postbackUrl) &&
+        Objects.equals(this.postbackData, serpGoogleDatasetSearchTaskPostRequestInfo.postbackData) &&
+        Objects.equals(this.languageName, serpGoogleDatasetSearchTaskPostRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleDatasetSearchTaskPostRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleDatasetSearchTaskPostRequestInfo.tag) &&
         Objects.equals(this.lastUpdated, serpGoogleDatasetSearchTaskPostRequestInfo.lastUpdated) &&
         Objects.equals(this.fileFormats, serpGoogleDatasetSearchTaskPostRequestInfo.fileFormats) &&
         Objects.equals(this.usageRights, serpGoogleDatasetSearchTaskPostRequestInfo.usageRights) &&
         Objects.equals(this.isFree, serpGoogleDatasetSearchTaskPostRequestInfo.isFree) &&
-        Objects.equals(this.topics, serpGoogleDatasetSearchTaskPostRequestInfo.topics) &&
-        Objects.equals(this.tag, serpGoogleDatasetSearchTaskPostRequestInfo.tag) &&
-        Objects.equals(this.postbackUrl, serpGoogleDatasetSearchTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleDatasetSearchTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.pingbackUrl, serpGoogleDatasetSearchTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.topics, serpGoogleDatasetSearchTaskPostRequestInfo.topics);  
     
   }
 
@@ -540,7 +540,7 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, priority, depth, languageName, languageCode, device, os, lastUpdated, fileFormats, usageRights, isFree, topics, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(keyword, languageCode, depth, priority, device, pingbackUrl, postbackUrl, postbackData, languageName, os, tag, lastUpdated, fileFormats, usageRights, isFree, topics);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -556,21 +556,21 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
     sb.append("class SerpGoogleDatasetSearchTaskPostRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
+    sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    lastUpdated: ").append(toIndentedString(lastUpdated)).append("\n");
     sb.append("    fileFormats: ").append(toIndentedString(fileFormats)).append("\n");
     sb.append("    usageRights: ").append(toIndentedString(usageRights)).append("\n");
     sb.append("    isFree: ").append(toIndentedString(isFree)).append("\n");
     sb.append("    topics: ").append(toIndentedString(topics)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
-    sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -596,17 +596,25 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("priority");
+    openapiFields.add("language_code");
     
     openapiFields.add("depth");
     
-    openapiFields.add("language_name");
-    
-    openapiFields.add("language_code");
+    openapiFields.add("priority");
     
     openapiFields.add("device");
     
+    openapiFields.add("pingback_url");
+    
+    openapiFields.add("postback_url");
+    
+    openapiFields.add("postback_data");
+    
+    openapiFields.add("language_name");
+    
     openapiFields.add("os");
+    
+    openapiFields.add("tag");
     
     openapiFields.add("last_updated");
     
@@ -617,14 +625,6 @@ public class SerpGoogleDatasetSearchTaskPostRequestInfo  {
     openapiFields.add("is_free");
     
     openapiFields.add("topics");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("postback_url");
-    
-    openapiFields.add("postback_data");
-    
-    openapiFields.add("pingback_url");
     
 
     // a set of required properties/fields (JSON key names)

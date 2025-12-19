@@ -50,7 +50,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
   /**
    * ID of the video
 * required field
-* you can find video ID in the URL or ‘youtube_video’ item of YouTube Organic result
+* you can find video ID in the URL or 'youtube_video' item of YouTube Organic result
 * example:
 * Y8Wu4rSNJms
    * @return videoId
@@ -65,83 +65,6 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SUBTITLES_LANGUAGE = "subtitles_language";
-  @SerializedName(SERIALIZED_NAME_SUBTITLES_LANGUAGE)
-  private String subtitlesLanguage;
-
-  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo subtitlesLanguage(String subtitlesLanguage) {
-    this.subtitlesLanguage = subtitlesLanguage;
-    return this;
-  }
-
-  /**
-   * language code of original text
-* you can get the language code from YouTube Video Info result
-   * @return subtitlesLanguage
-   */
-  @javax.annotation.Nullable
-  public String getSubtitlesLanguage() {
-    return subtitlesLanguage;
-  }
-
-  public void setSubtitlesLanguage(String subtitlesLanguage) {
-    this.subtitlesLanguage = subtitlesLanguage;
-  }
-
-
-  public static final String SERIALIZED_NAME_SUBTITLES_TRANSLATE_LANGUAGE = "subtitles_translate_language";
-  @SerializedName(SERIALIZED_NAME_SUBTITLES_TRANSLATE_LANGUAGE)
-  private String subtitlesTranslateLanguage;
-
-  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo subtitlesTranslateLanguage(String subtitlesTranslateLanguage) {
-    this.subtitlesTranslateLanguage = subtitlesTranslateLanguage;
-    return this;
-  }
-
-  /**
-   * language code of translated text
-* possible values:
-* 'az', 'ay', 'ak', 'sq', 'am', 'en', 'ar', 'hy', 'as', 'af', 'eu', 'be', 'bn', 'my', 'bg', 'bs', 'bho', 'cy', 'hu', 'vi', 'haw', 'ht', 'gl', 'lg', 'el', 'ka', 'gn', 'gu', 'gd', 'da', 'fy', 'zu', 'iw', 'ig', 'yi', 'id', 'ga', 'is', 'es', 'it', 'yo', 'kk', 'kn', 'ca', 'qu', 'rw', 'ky', 'zh-Hant', 'zh-Hans', 'ko', 'co', 'xh', 'ku', 'km', 'lo', 'la', 'lv', 'ln', 'lt', 'lb', 'mk', 'mg', 'ms', 'ml', 'dv', 'mt', 'mi', 'mr', 'mn', 'und', 'de', 'ne', 'nl', 'no', 'ny', 'or', 'om', 'pa', 'fa', 'pl', 'pt', 'ps', 'ro', 'ru', 'sm', 'sa', 'ceb', 'nso', 'sr', 'si', 'sd', 'sk', 'sl', 'so', 'sw', 'su', 'tg', 'th', 'ta', 'tt', 'te', 'ti', 'ts', 'tr', 'tk', 'uz', 'ug', 'uk', 'ur', 'fil', 'fi', 'fr', 'ha', 'hi', 'hmn', 'hr', 'cs', 'sv', 'sn', 'ee', 'eo', 'et', 'st', 'jv', 'ja', 'kri'
-   * @return subtitlesTranslateLanguage
-   */
-  @javax.annotation.Nullable
-  public String getSubtitlesTranslateLanguage() {
-    return subtitlesTranslateLanguage;
-  }
-
-  public void setSubtitlesTranslateLanguage(String subtitlesTranslateLanguage) {
-    this.subtitlesTranslateLanguage = subtitlesTranslateLanguage;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
-* example:
-* United States
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -153,8 +76,8 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name 
-* if you use this field, you don’t need to specify location_name
+* required field if you don't specify location_name 
+* if you use this field, you don't need to specify location_name
 * you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
 * example:
 * 2840
@@ -170,34 +93,6 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -209,8 +104,8 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
 * you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
 * example:
 * en
@@ -248,6 +143,62 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
 
   public void setDevice(String device) {
     this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code
+* if you use this field, you don't need to specify location_code
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/locations
+* example:
+* United States
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/youtube/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
   }
 
 
@@ -304,6 +255,55 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_SUBTITLES_LANGUAGE = "subtitles_language";
+  @SerializedName(SERIALIZED_NAME_SUBTITLES_LANGUAGE)
+  private String subtitlesLanguage;
+
+  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo subtitlesLanguage(String subtitlesLanguage) {
+    this.subtitlesLanguage = subtitlesLanguage;
+    return this;
+  }
+
+  /**
+   * language code of original text
+* you can get the language code from YouTube Video Info result
+   * @return subtitlesLanguage
+   */
+  @javax.annotation.Nullable
+  public String getSubtitlesLanguage() {
+    return subtitlesLanguage;
+  }
+
+  public void setSubtitlesLanguage(String subtitlesLanguage) {
+    this.subtitlesLanguage = subtitlesLanguage;
+  }
+
+
+  public static final String SERIALIZED_NAME_SUBTITLES_TRANSLATE_LANGUAGE = "subtitles_translate_language";
+  @SerializedName(SERIALIZED_NAME_SUBTITLES_TRANSLATE_LANGUAGE)
+  private String subtitlesTranslateLanguage;
+
+  public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo subtitlesTranslateLanguage(String subtitlesTranslateLanguage) {
+    this.subtitlesTranslateLanguage = subtitlesTranslateLanguage;
+    return this;
+  }
+
+  /**
+   * language code of translated text
+* possible values:
+* 'az', 'ay', 'ak', 'sq', 'am', 'en', 'ar', 'hy', 'as', 'af', 'eu', 'be', 'bn', 'my', 'bg', 'bs', 'bho', 'cy', 'hu', 'vi', 'haw', 'ht', 'gl', 'lg', 'el', 'ka', 'gn', 'gu', 'gd', 'da', 'fy', 'zu', 'iw', 'ig', 'yi', 'id', 'ga', 'is', 'es', 'it', 'yo', 'kk', 'kn', 'ca', 'qu', 'rw', 'ky', 'zh-Hant', 'zh-Hans', 'ko', 'co', 'xh', 'ku', 'km', 'lo', 'la', 'lv', 'ln', 'lt', 'lb', 'mk', 'mg', 'ms', 'ml', 'dv', 'mt', 'mi', 'mr', 'mn', 'und', 'de', 'ne', 'nl', 'no', 'ny', 'or', 'om', 'pa', 'fa', 'pl', 'pt', 'ps', 'ro', 'ru', 'sm', 'sa', 'ceb', 'nso', 'sr', 'si', 'sd', 'sk', 'sl', 'so', 'sw', 'su', 'tg', 'th', 'ta', 'tt', 'te', 'ti', 'ts', 'tr', 'tk', 'uz', 'ug', 'uk', 'ur', 'fil', 'fi', 'fr', 'ha', 'hi', 'hmn', 'hr', 'cs', 'sv', 'sn', 'ee', 'eo', 'et', 'st', 'jv', 'ja', 'kri'
+   * @return subtitlesTranslateLanguage
+   */
+  @javax.annotation.Nullable
+  public String getSubtitlesTranslateLanguage() {
+    return subtitlesTranslateLanguage;
+  }
+
+  public void setSubtitlesTranslateLanguage(String subtitlesTranslateLanguage) {
+    this.subtitlesTranslateLanguage = subtitlesTranslateLanguage;
+  }
+
+
 
   public SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo() {
   }
@@ -348,15 +348,15 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
     return
 
         Objects.equals(this.videoId, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.videoId) &&
-        Objects.equals(this.subtitlesLanguage, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.subtitlesLanguage) &&
-        Objects.equals(this.subtitlesTranslateLanguage, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.subtitlesTranslateLanguage) &&
-        Objects.equals(this.locationName, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.locationCode) &&
-        Objects.equals(this.languageName, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.languageCode) &&
         Objects.equals(this.device, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.device) &&
+        Objects.equals(this.locationName, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.os, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.os) &&
-        Objects.equals(this.tag, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.tag);  
+        Objects.equals(this.tag, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.tag) &&
+        Objects.equals(this.subtitlesLanguage, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.subtitlesLanguage) &&
+        Objects.equals(this.subtitlesTranslateLanguage, serpYoutubeVideoSubtitlesLiveAdvancedRequestInfo.subtitlesTranslateLanguage);  
     
   }
 
@@ -366,7 +366,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(videoId, subtitlesLanguage, subtitlesTranslateLanguage, locationName, locationCode, languageName, languageCode, device, os, tag);
+  return Objects.hash(videoId, locationCode, languageCode, device, locationName, languageName, os, tag, subtitlesLanguage, subtitlesTranslateLanguage);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -382,15 +382,15 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
     sb.append("class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo {\n");
 
     sb.append("    videoId: ").append(toIndentedString(videoId)).append("\n");
-    sb.append("    subtitlesLanguage: ").append(toIndentedString(subtitlesLanguage)).append("\n");
-    sb.append("    subtitlesTranslateLanguage: ").append(toIndentedString(subtitlesTranslateLanguage)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    subtitlesLanguage: ").append(toIndentedString(subtitlesLanguage)).append("\n");
+    sb.append("    subtitlesTranslateLanguage: ").append(toIndentedString(subtitlesTranslateLanguage)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -416,23 +416,23 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedRequestInfo  {
     
     openapiFields.add("video_id");
     
-    openapiFields.add("subtitles_language");
-    
-    openapiFields.add("subtitles_translate_language");
-    
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
     openapiFields.add("device");
     
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
     openapiFields.add("os");
     
     openapiFields.add("tag");
+    
+    openapiFields.add("subtitles_language");
+    
+    openapiFields.add("subtitles_translate_language");
     
 
     // a set of required properties/fields (JSON key names)

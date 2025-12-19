@@ -87,9 +87,9 @@ public class GroupElement  {
 
   public static final String SERIALIZED_NAME_MENTIONS = "mentions";
   @SerializedName(SERIALIZED_NAME_MENTIONS)
-  private Integer mentions;
+  private Long mentions;
 
-  public GroupElement mentions(Integer mentions) {
+  public GroupElement mentions(Long mentions) {
     this.mentions = mentions;
     return this;
   }
@@ -100,11 +100,11 @@ public class GroupElement  {
    * @return mentions
    */
   @javax.annotation.Nullable
-  public Integer getMentions() {
+  public Long getMentions() {
     return mentions;
   }
 
-  public void setMentions(Integer mentions) {
+  public void setMentions(Long mentions) {
     this.mentions = mentions;
   }
 
@@ -135,9 +135,9 @@ public class GroupElement  {
 
   public static final String SERIALIZED_NAME_IMPRESSIONS = "impressions";
   @SerializedName(SERIALIZED_NAME_IMPRESSIONS)
-  private Integer impressions;
+  private Long impressions;
 
-  public GroupElement impressions(Integer impressions) {
+  public GroupElement impressions(Long impressions) {
     this.impressions = impressions;
     return this;
   }
@@ -147,11 +147,11 @@ public class GroupElement  {
    * @return impressions
    */
   @javax.annotation.Nullable
-  public Integer getImpressions() {
+  public Long getImpressions() {
     return impressions;
   }
 
-  public void setImpressions(Integer impressions) {
+  public void setImpressions(Long impressions) {
     this.impressions = impressions;
   }
 

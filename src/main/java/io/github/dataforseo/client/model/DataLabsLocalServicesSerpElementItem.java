@@ -109,9 +109,9 @@ public class DataLabsLocalServicesSerpElementItem  extends BaseDataforseoLabsApi
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<LocalServicesElement> items;
+  private Object items;
 
-  public DataLabsLocalServicesSerpElementItem items(List<LocalServicesElement> items) {
+  public DataLabsLocalServicesSerpElementItem items(Object items) {
     this.items = items;
     return this;
   }
@@ -121,11 +121,11 @@ public class DataLabsLocalServicesSerpElementItem  extends BaseDataforseoLabsApi
    * @return items
    */
   @javax.annotation.Nullable
-  public List<LocalServicesElement> getItems() {
+  public Object getItems() {
     return items;
   }
 
-  public void setItems(List<LocalServicesElement> items) {
+  public void setItems(Object items) {
     this.items = items;
   }
 

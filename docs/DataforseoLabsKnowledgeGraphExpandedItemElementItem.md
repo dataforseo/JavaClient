@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the element |[optional]|
+**title** | **String** | title of a given link element |[optional]|
 **dataAttrid** | **String** | google defined data attribute ID<br>example:<br>kc:/local:place qa |[optional]|
-**expandedElement** | **String** | expanded element |[optional]|
+**expandedElement** | **Object** | link of the element |[optional]|

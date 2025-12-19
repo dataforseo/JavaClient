@@ -67,63 +67,6 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpGoogleAutocompleteTaskPostRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default);
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority;
-* The cost can be calculated on the Pricing page
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleAutocompleteTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code;
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/serp/google/autocomplete/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -135,7 +78,7 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name;
+* required field if you don't specify location_name;
 * you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/serp/google/locations
 * example:
 * 2840
@@ -151,34 +94,6 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleAutocompleteTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code;
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/serp/google/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -190,8 +105,8 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name;
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name;
 * you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:
 * en
@@ -224,9 +139,9 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
 * minimal value: 0
 * default value: the number of the last character of the specified keyword
 * example:
-* |which query are s – 'cursor_pointer': 0
-* which query is s| – 'cursor_pointer': 16
-* which que|ry is s – 'cursor_pointer': 9
+* |which query are s - 'cursor_pointer': 0
+* which query is s| - 'cursor_pointer': 16
+* which que|ry is s - 'cursor_pointer': 9
    * @return cursorPointer
    */
   @javax.annotation.Nullable
@@ -239,68 +154,64 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_CLIENT = "client";
-  @SerializedName(SERIALIZED_NAME_CLIENT)
-  private String client;
+  public static final String SERIALIZED_NAME_PRIORITY = "priority";
+  @SerializedName(SERIALIZED_NAME_PRIORITY)
+  private Integer priority;
 
-  public SerpGoogleAutocompleteTaskPostRequestInfo client(String client) {
-    this.client = client;
+  public SerpGoogleAutocompleteTaskPostRequestInfo priority(Integer priority) {
+    this.priority = priority;
     return this;
   }
 
   /**
-   * search client for autocomplete
+   * task priority
 * optional field
-* autocomplete results may differ depending on the search client;
-* possible values:
-* chrome — used when google search is opened in google chrome;
-* chrome-omni — used in the address bar in chrome;
-* gws-wiz — used in google search home page;
-* gws-wiz-serp — used in google search engine results page;
-* safari — used when google search is opened in safari browser;
-* firefox — used when google search is opened in firefox browser;
-* psy-ab — may be used when google search is opened in google chrome browser;
-* toolbar — returns XML;
-* youtube — returns JSONP;
-* gws-wiz-local — used in google local;
-* img — used in google’s image search;
-* products-cc — used in google shopping search
-   * @return client
+* can take the following values:
+* 1 – normal execution priority (set by default);
+* 2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority;
+* The cost can be calculated on the Pricing page
+   * @return priority
    */
   @javax.annotation.Nullable
-  public String getClient() {
-    return client;
+  public Integer getPriority() {
+    return priority;
   }
 
-  public void setClient(String client) {
-    this.client = client;
+  public void setPriority(Integer priority) {
+    this.priority = priority;
   }
 
 
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
 
-  public SerpGoogleAutocompleteTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
+  public SerpGoogleAutocompleteTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
     return this;
   }
 
   /**
-   * user-defined task identifier
+   * notification URL of a completed task
 * optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special characters in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return pingbackUrl
    */
   @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
+  public String getPingbackUrl() {
+    return pingbackUrl;
   }
 
-  public void setTag(String tag) {
-    this.tag = tag;
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
   }
 
 
@@ -363,35 +274,124 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
+  public static final String SERIALIZED_NAME_CLIENT = "client";
+  @SerializedName(SERIALIZED_NAME_CLIENT)
+  private String client;
 
-  public SerpGoogleAutocompleteTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public SerpGoogleAutocompleteTaskPostRequestInfo client(String client) {
+    this.client = client;
     return this;
   }
 
   /**
-   * notification URL of a completed task
+   * search client for autocomplete
 * optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return pingbackUrl
+* autocomplete results may differ depending on the search client;
+* possible values:
+* chrome — used when google search is opened in google chrome;
+* chrome-omni — used in the address bar in chrome;
+* gws-wiz — used in google search home page;
+* gws-wiz-serp — used in google search engine results page;
+* safari — used when google search is opened in safari browser;
+* firefox — used when google search is opened in firefox browser;
+* psy-ab — may be used when google search is opened in google chrome browser;
+* toolbar — returns XML;
+* youtube — returns JSONP;
+* gws-wiz-local — used in google local;
+* img — used in google's image search;
+* products-cc — used in google shopping search
+   * @return client
    */
   @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
+  public String getClient() {
+    return client;
   }
 
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public void setClient(String client) {
+    this.client = client;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleAutocompleteTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code
+* if you use this field, you don't need to specify location_code;
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/serp/google/autocomplete/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleAutocompleteTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code;
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/serp/google/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleAutocompleteTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -439,17 +439,17 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleAutocompleteTaskPostRequestInfo.keyword) &&
-        Objects.equals(this.priority, serpGoogleAutocompleteTaskPostRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpGoogleAutocompleteTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleAutocompleteTaskPostRequestInfo.locationCode) &&
-        Objects.equals(this.languageName, serpGoogleAutocompleteTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleAutocompleteTaskPostRequestInfo.languageCode) &&
         Objects.equals(this.cursorPointer, serpGoogleAutocompleteTaskPostRequestInfo.cursorPointer) &&
-        Objects.equals(this.client, serpGoogleAutocompleteTaskPostRequestInfo.client) &&
-        Objects.equals(this.tag, serpGoogleAutocompleteTaskPostRequestInfo.tag) &&
+        Objects.equals(this.priority, serpGoogleAutocompleteTaskPostRequestInfo.priority) &&
+        Objects.equals(this.pingbackUrl, serpGoogleAutocompleteTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleAutocompleteTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpGoogleAutocompleteTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.pingbackUrl, serpGoogleAutocompleteTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.client, serpGoogleAutocompleteTaskPostRequestInfo.client) &&
+        Objects.equals(this.locationName, serpGoogleAutocompleteTaskPostRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleAutocompleteTaskPostRequestInfo.languageName) &&
+        Objects.equals(this.tag, serpGoogleAutocompleteTaskPostRequestInfo.tag);  
     
   }
 
@@ -459,7 +459,7 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, priority, locationName, locationCode, languageName, languageCode, cursorPointer, client, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(keyword, locationCode, languageCode, cursorPointer, priority, pingbackUrl, postbackUrl, postbackData, client, locationName, languageName, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -475,17 +475,17 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
     sb.append("class SerpGoogleAutocompleteTaskPostRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    cursorPointer: ").append(toIndentedString(cursorPointer)).append("\n");
-    sb.append("    client: ").append(toIndentedString(client)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    client: ").append(toIndentedString(client)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -511,27 +511,27 @@ public class SerpGoogleAutocompleteTaskPostRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
     openapiFields.add("cursor_pointer");
     
-    openapiFields.add("client");
+    openapiFields.add("priority");
     
-    openapiFields.add("tag");
+    openapiFields.add("pingback_url");
     
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
     
-    openapiFields.add("pingback_url");
+    openapiFields.add("client");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

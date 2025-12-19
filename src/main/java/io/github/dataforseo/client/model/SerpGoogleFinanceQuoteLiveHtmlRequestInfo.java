@@ -68,34 +68,6 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleFinanceQuoteLiveHtmlRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -107,8 +79,8 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you don’t need to specify location_name
+* required field if you don't specify location_name
+* if you use this field, you don't need to specify location_name
 * you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/serp/google/locations
 * example:
 * 2840
@@ -124,34 +96,6 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleFinanceQuoteLiveHtmlRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code 
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -163,8 +107,8 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
 * you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:
 * en
@@ -205,6 +149,62 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleFinanceQuoteLiveHtmlRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code
+* if you use this field, you don't need to specify location_code
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleFinanceQuoteLiveHtmlRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code 
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
   public static final String SERIALIZED_NAME_OS = "os";
   @SerializedName(SERIALIZED_NAME_OS)
   private String os;
@@ -227,32 +227,6 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
 
   public void setOs(String os) {
     this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_WINDOW = "window";
-  @SerializedName(SERIALIZED_NAME_WINDOW)
-  private String window;
-
-  public SerpGoogleFinanceQuoteLiveHtmlRequestInfo window(String window) {
-    this.window = window;
-    return this;
-  }
-
-  /**
-   * time window for google_finance_quote graph
-* optional field
-* possible values: 1D, 5D, 1M, 6M, YTD, 1Y, 5Y, MAX
-* default value: 1D
-   * @return window
-   */
-  @javax.annotation.Nullable
-  public String getWindow() {
-    return window;
-  }
-
-  public void setWindow(String window) {
-    this.window = window;
   }
 
 
@@ -280,6 +254,32 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
 
   public void setTag(String tag) {
     this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_WINDOW = "window";
+  @SerializedName(SERIALIZED_NAME_WINDOW)
+  private String window;
+
+  public SerpGoogleFinanceQuoteLiveHtmlRequestInfo window(String window) {
+    this.window = window;
+    return this;
+  }
+
+  /**
+   * time window for google_finance_quote graph
+* optional field
+* possible values: 1D, 5D, 1M, 6M, YTD, 1Y, 5Y, MAX
+* default value: 1D
+   * @return window
+   */
+  @javax.annotation.Nullable
+  public String getWindow() {
+    return window;
+  }
+
+  public void setWindow(String window) {
+    this.window = window;
   }
 
 
@@ -327,14 +327,14 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleFinanceQuoteLiveHtmlRequestInfo.keyword) &&
-        Objects.equals(this.locationName, serpGoogleFinanceQuoteLiveHtmlRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleFinanceQuoteLiveHtmlRequestInfo.locationCode) &&
-        Objects.equals(this.languageName, serpGoogleFinanceQuoteLiveHtmlRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleFinanceQuoteLiveHtmlRequestInfo.languageCode) &&
         Objects.equals(this.device, serpGoogleFinanceQuoteLiveHtmlRequestInfo.device) &&
+        Objects.equals(this.locationName, serpGoogleFinanceQuoteLiveHtmlRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleFinanceQuoteLiveHtmlRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleFinanceQuoteLiveHtmlRequestInfo.os) &&
-        Objects.equals(this.window, serpGoogleFinanceQuoteLiveHtmlRequestInfo.window) &&
-        Objects.equals(this.tag, serpGoogleFinanceQuoteLiveHtmlRequestInfo.tag);  
+        Objects.equals(this.tag, serpGoogleFinanceQuoteLiveHtmlRequestInfo.tag) &&
+        Objects.equals(this.window, serpGoogleFinanceQuoteLiveHtmlRequestInfo.window);  
     
   }
 
@@ -344,7 +344,7 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, device, os, window, tag);
+  return Objects.hash(keyword, locationCode, languageCode, device, locationName, languageName, os, tag, window);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -360,14 +360,14 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
     sb.append("class SerpGoogleFinanceQuoteLiveHtmlRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    window: ").append(toIndentedString(window)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    window: ").append(toIndentedString(window)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -393,21 +393,21 @@ public class SerpGoogleFinanceQuoteLiveHtmlRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
     openapiFields.add("device");
     
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
     openapiFields.add("os");
     
-    openapiFields.add("window");
-    
     openapiFields.add("tag");
+    
+    openapiFields.add("window");
     
 
     // a set of required properties/fields (JSON key names)

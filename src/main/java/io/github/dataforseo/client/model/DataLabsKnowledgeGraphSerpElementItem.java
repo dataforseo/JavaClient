@@ -163,7 +163,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * URL of the image
+   * URL of a specific image
    * @return imageUrl
    */
   @javax.annotation.Nullable

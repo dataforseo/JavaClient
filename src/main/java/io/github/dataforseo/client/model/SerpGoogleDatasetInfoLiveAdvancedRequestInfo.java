@@ -65,33 +65,6 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* optional field
-* if you use this field, you don’t need to specify language_code
-* possible value:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -104,7 +77,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   /**
    * search engine language code
 * optional field
-* if you use this field, you don’t need to specify language_name
+* if you use this field, you don't need to specify language_name
 * possible value:
 * en
    * @return languageCode
@@ -141,6 +114,33 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
   public void setDevice(String device) {
     this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* optional field
+* if you use this field, you don't need to specify language_code
+* possible value:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
   }
 
 
@@ -241,9 +241,9 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
     return
 
         Objects.equals(this.datasetId, serpGoogleDatasetInfoLiveAdvancedRequestInfo.datasetId) &&
-        Objects.equals(this.languageName, serpGoogleDatasetInfoLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleDatasetInfoLiveAdvancedRequestInfo.languageCode) &&
         Objects.equals(this.device, serpGoogleDatasetInfoLiveAdvancedRequestInfo.device) &&
+        Objects.equals(this.languageName, serpGoogleDatasetInfoLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleDatasetInfoLiveAdvancedRequestInfo.os) &&
         Objects.equals(this.tag, serpGoogleDatasetInfoLiveAdvancedRequestInfo.tag);  
     
@@ -255,7 +255,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(datasetId, languageName, languageCode, device, os, tag);
+  return Objects.hash(datasetId, languageCode, device, languageName, os, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -271,9 +271,9 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
     sb.append("class SerpGoogleDatasetInfoLiveAdvancedRequestInfo {\n");
 
     sb.append("    datasetId: ").append(toIndentedString(datasetId)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
@@ -301,11 +301,11 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
     
     openapiFields.add("dataset_id");
     
-    openapiFields.add("language_name");
-    
     openapiFields.add("language_code");
     
     openapiFields.add("device");
+    
+    openapiFields.add("language_name");
     
     openapiFields.add("os");
     

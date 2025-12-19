@@ -68,34 +68,6 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleFinanceQuoteTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -107,8 +79,8 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you don’t need to specify location_name
+* required field if you don't specify location_name
+* if you use this field, you don't need to specify location_name
 * you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/serp/google/locations
 * example:
 * 2840
@@ -124,34 +96,6 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleFinanceQuoteTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code 
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -163,8 +107,8 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
 * you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:
 * en
@@ -177,35 +121,6 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpGoogleFinanceQuoteTaskPostRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priority
-* optional field
-* can take the following values:
-* 1 – normal execution priority (set by default);
-* 2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority;
-* The cost can be calculated on the Pricing page
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
   }
 
 
@@ -234,82 +149,35 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
+  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
+  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
+  private String pingbackUrl;
 
-  public SerpGoogleFinanceQuoteTaskPostRequestInfo os(String os) {
-    this.os = os;
+  public SerpGoogleFinanceQuoteTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
     return this;
   }
 
   /**
-   * device operating system
+   * notification URL of a completed task
 * optional field
-* possible values: windows
-   * @return os
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special characters in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23
+* learn more on our Help Center
+   * @return pingbackUrl
    */
   @javax.annotation.Nullable
-  public String getOs() {
-    return os;
+  public String getPingbackUrl() {
+    return pingbackUrl;
   }
 
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_WINDOW = "window";
-  @SerializedName(SERIALIZED_NAME_WINDOW)
-  private String window;
-
-  public SerpGoogleFinanceQuoteTaskPostRequestInfo window(String window) {
-    this.window = window;
-    return this;
-  }
-
-  /**
-   * time window for google_finance_quote graph
-* optional field
-* possible values: 1D, 5D, 1M, 6M, YTD, 1Y, 5Y, MAX
-* default value: 1D
-* Note: if you specify a value that is different from 1D, the charge per task will be multiplied by 2
-   * @return window
-   */
-  @javax.annotation.Nullable
-  public String getWindow() {
-    return window;
-  }
-
-  public void setWindow(String window) {
-    this.window = window;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleFinanceQuoteTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
+  public void setPingbackUrl(String pingbackUrl) {
+    this.pingbackUrl = pingbackUrl;
   }
 
 
@@ -371,35 +239,167 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_PINGBACK_URL = "pingback_url";
-  @SerializedName(SERIALIZED_NAME_PINGBACK_URL)
-  private String pingbackUrl;
+  public static final String SERIALIZED_NAME_PRIORITY = "priority";
+  @SerializedName(SERIALIZED_NAME_PRIORITY)
+  private Integer priority;
 
-  public SerpGoogleFinanceQuoteTaskPostRequestInfo pingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public SerpGoogleFinanceQuoteTaskPostRequestInfo priority(Integer priority) {
+    this.priority = priority;
     return this;
   }
 
   /**
-   * notification URL of a completed task
+   * task priority
 * optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
-   * @return pingbackUrl
+* can take the following values:
+* 1 – normal execution priority (set by default);
+* 2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority;
+* The cost can be calculated on the Pricing page
+   * @return priority
    */
   @javax.annotation.Nullable
-  public String getPingbackUrl() {
-    return pingbackUrl;
+  public Integer getPriority() {
+    return priority;
   }
 
-  public void setPingbackUrl(String pingbackUrl) {
-    this.pingbackUrl = pingbackUrl;
+  public void setPriority(Integer priority) {
+    this.priority = priority;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleFinanceQuoteTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code
+* if you use this field, you don't need to specify location_code
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleFinanceQuoteTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code 
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpGoogleFinanceQuoteTaskPostRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * device operating system
+* optional field
+* possible values: windows
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleFinanceQuoteTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_WINDOW = "window";
+  @SerializedName(SERIALIZED_NAME_WINDOW)
+  private String window;
+
+  public SerpGoogleFinanceQuoteTaskPostRequestInfo window(String window) {
+    this.window = window;
+    return this;
+  }
+
+  /**
+   * time window for google_finance_quote graph
+* optional field
+* possible values: 1D, 5D, 1M, 6M, YTD, 1Y, 5Y, MAX
+* default value: 1D
+* Note: if you specify a value that is different from 1D, the charge per task will be multiplied by 2
+   * @return window
+   */
+  @javax.annotation.Nullable
+  public String getWindow() {
+    return window;
+  }
+
+  public void setWindow(String window) {
+    this.window = window;
   }
 
 
@@ -447,18 +447,18 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
     return
 
         Objects.equals(this.keyword, serpGoogleFinanceQuoteTaskPostRequestInfo.keyword) &&
-        Objects.equals(this.locationName, serpGoogleFinanceQuoteTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleFinanceQuoteTaskPostRequestInfo.locationCode) &&
-        Objects.equals(this.languageName, serpGoogleFinanceQuoteTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleFinanceQuoteTaskPostRequestInfo.languageCode) &&
-        Objects.equals(this.priority, serpGoogleFinanceQuoteTaskPostRequestInfo.priority) &&
         Objects.equals(this.device, serpGoogleFinanceQuoteTaskPostRequestInfo.device) &&
-        Objects.equals(this.os, serpGoogleFinanceQuoteTaskPostRequestInfo.os) &&
-        Objects.equals(this.window, serpGoogleFinanceQuoteTaskPostRequestInfo.window) &&
-        Objects.equals(this.tag, serpGoogleFinanceQuoteTaskPostRequestInfo.tag) &&
+        Objects.equals(this.pingbackUrl, serpGoogleFinanceQuoteTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleFinanceQuoteTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpGoogleFinanceQuoteTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.pingbackUrl, serpGoogleFinanceQuoteTaskPostRequestInfo.pingbackUrl);  
+        Objects.equals(this.priority, serpGoogleFinanceQuoteTaskPostRequestInfo.priority) &&
+        Objects.equals(this.locationName, serpGoogleFinanceQuoteTaskPostRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleFinanceQuoteTaskPostRequestInfo.languageName) &&
+        Objects.equals(this.os, serpGoogleFinanceQuoteTaskPostRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleFinanceQuoteTaskPostRequestInfo.tag) &&
+        Objects.equals(this.window, serpGoogleFinanceQuoteTaskPostRequestInfo.window);  
     
   }
 
@@ -468,7 +468,7 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, priority, device, os, window, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(keyword, locationCode, languageCode, device, pingbackUrl, postbackUrl, postbackData, priority, locationName, languageName, os, tag, window);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -484,18 +484,18 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
     sb.append("class SerpGoogleFinanceQuoteTaskPostRequestInfo {\n");
 
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    window: ").append(toIndentedString(window)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    window: ").append(toIndentedString(window)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -521,29 +521,29 @@ public class SerpGoogleFinanceQuoteTaskPostRequestInfo  {
     
     openapiFields.add("keyword");
     
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
-    openapiFields.add("priority");
-    
     openapiFields.add("device");
     
-    openapiFields.add("os");
-    
-    openapiFields.add("window");
-    
-    openapiFields.add("tag");
+    openapiFields.add("pingback_url");
     
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
     
-    openapiFields.add("pingback_url");
+    openapiFields.add("priority");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
+    
+    openapiFields.add("window");
     
 
     // a set of required properties/fields (JSON key names)

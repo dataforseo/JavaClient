@@ -40,9 +40,9 @@ public class ContentAnalysisCategoryTrendsLiveRequestInfo  {
 
   public static final String SERIALIZED_NAME_CATEGORY_CODE = "category_code";
   @SerializedName(SERIALIZED_NAME_CATEGORY_CODE)
-  private String categoryCode;
+  private Integer categoryCode;
 
-  public ContentAnalysisCategoryTrendsLiveRequestInfo categoryCode(String categoryCode) {
+  public ContentAnalysisCategoryTrendsLiveRequestInfo categoryCode(Integer categoryCode) {
     this.categoryCode = categoryCode;
     return this;
   }
@@ -54,11 +54,11 @@ public class ContentAnalysisCategoryTrendsLiveRequestInfo  {
    * @return categoryCode
    */
   @javax.annotation.Nullable
-  public String getCategoryCode() {
+  public Integer getCategoryCode() {
     return categoryCode;
   }
 
-  public void setCategoryCode(String categoryCode) {
+  public void setCategoryCode(Integer categoryCode) {
     this.categoryCode = categoryCode;
   }
 

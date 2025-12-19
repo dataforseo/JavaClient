@@ -8,4 +8,4 @@
 **title** | **String** | title of the result in SERP |[optional]|
 **url** | **String** | sitelink URL |[optional]|
 **domain** | **String** | domain in SERP |[optional]|
-**items** | **List<LocalServicesElement>** | historical SERPs and related data found in the database |[optional]|
+**items** | **Object** | historical SERPs and related data found in the database |[optional]|

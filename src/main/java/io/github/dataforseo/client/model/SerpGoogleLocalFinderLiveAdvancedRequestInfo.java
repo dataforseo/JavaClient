@@ -355,9 +355,9 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
 
   public static final String SERIALIZED_NAME_MIN_RATING = "min_rating";
   @SerializedName(SERIALIZED_NAME_MIN_RATING)
-  private String minRating;
+  private Double minRating;
 
-  public SerpGoogleLocalFinderLiveAdvancedRequestInfo minRating(String minRating) {
+  public SerpGoogleLocalFinderLiveAdvancedRequestInfo minRating(Double minRating) {
     this.minRating = minRating;
     return this;
   }
@@ -370,11 +370,11 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
    * @return minRating
    */
   @javax.annotation.Nullable
-  public String getMinRating() {
+  public Double getMinRating() {
     return minRating;
   }
 
-  public void setMinRating(String minRating) {
+  public void setMinRating(Double minRating) {
     this.minRating = minRating;
   }
 

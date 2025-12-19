@@ -48,7 +48,7 @@ public class DataforseoLabsKnowledgeGraphShoppingItemElementItem  extends BaseDa
   }
 
   /**
-   * title of a given link element
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable

@@ -38,34 +38,6 @@ import io.github.dataforseo.client.JSON;
 public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleFinanceMarketsLiveHtmlRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
-* example:
-* London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -77,8 +49,8 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you don’t need to specify location_name
+* required field if you don't specify location_name
+* if you use this field, you don't need to specify location_name
 * you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/serp/google/locations
 * example:
 * 2840
@@ -94,34 +66,6 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleFinanceMarketsLiveHtmlRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine language
-* required field if you don’t specify language_code 
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
-* example:
-* English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
   public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
   private String languageCode;
@@ -133,8 +77,8 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
 
   /**
    * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
 * you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:
 * en
@@ -175,6 +119,62 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleFinanceMarketsLiveHtmlRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of search engine location
+* required field if you don't specify location_code
+* if you use this field, you don't need to specify location_code
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locations
+* example:
+* London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleFinanceMarketsLiveHtmlRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of search engine language
+* required field if you don't specify language_code 
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
+* example:
+* English
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
   public static final String SERIALIZED_NAME_OS = "os";
   @SerializedName(SERIALIZED_NAME_OS)
   private String os;
@@ -197,32 +197,6 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
 
   public void setOs(String os) {
     this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_MARKET_TYPE = "market_type";
-  @SerializedName(SERIALIZED_NAME_MARKET_TYPE)
-  private String marketType;
-
-  public SerpGoogleFinanceMarketsLiveHtmlRequestInfo marketType(String marketType) {
-    this.marketType = marketType;
-    return this;
-  }
-
-  /**
-   * type of google finance market
-* optional field
-* possible values: most-active, indexes, indexes/americas, indexes/europe-middle-east-africa, indexes/asia-pacific, gainers, losers, climate-leaders, cryptocurrencies, currencies
-* default value: most-active
-   * @return marketType
-   */
-  @javax.annotation.Nullable
-  public String getMarketType() {
-    return marketType;
-  }
-
-  public void setMarketType(String marketType) {
-    this.marketType = marketType;
   }
 
 
@@ -250,6 +224,32 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
 
   public void setTag(String tag) {
     this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_MARKET_TYPE = "market_type";
+  @SerializedName(SERIALIZED_NAME_MARKET_TYPE)
+  private String marketType;
+
+  public SerpGoogleFinanceMarketsLiveHtmlRequestInfo marketType(String marketType) {
+    this.marketType = marketType;
+    return this;
+  }
+
+  /**
+   * type of google finance market
+* optional field
+* possible values: most-active, indexes, indexes/americas, indexes/europe-middle-east-africa, indexes/asia-pacific, gainers, losers, climate-leaders, cryptocurrencies, currencies
+* default value: most-active
+   * @return marketType
+   */
+  @javax.annotation.Nullable
+  public String getMarketType() {
+    return marketType;
+  }
+
+  public void setMarketType(String marketType) {
+    this.marketType = marketType;
   }
 
 
@@ -296,14 +296,14 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
     SerpGoogleFinanceMarketsLiveHtmlRequestInfo serpGoogleFinanceMarketsLiveHtmlRequestInfo = (SerpGoogleFinanceMarketsLiveHtmlRequestInfo) o;
     return
 
-        Objects.equals(this.locationName, serpGoogleFinanceMarketsLiveHtmlRequestInfo.locationName) &&
         Objects.equals(this.locationCode, serpGoogleFinanceMarketsLiveHtmlRequestInfo.locationCode) &&
-        Objects.equals(this.languageName, serpGoogleFinanceMarketsLiveHtmlRequestInfo.languageName) &&
         Objects.equals(this.languageCode, serpGoogleFinanceMarketsLiveHtmlRequestInfo.languageCode) &&
         Objects.equals(this.device, serpGoogleFinanceMarketsLiveHtmlRequestInfo.device) &&
+        Objects.equals(this.locationName, serpGoogleFinanceMarketsLiveHtmlRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleFinanceMarketsLiveHtmlRequestInfo.languageName) &&
         Objects.equals(this.os, serpGoogleFinanceMarketsLiveHtmlRequestInfo.os) &&
-        Objects.equals(this.marketType, serpGoogleFinanceMarketsLiveHtmlRequestInfo.marketType) &&
-        Objects.equals(this.tag, serpGoogleFinanceMarketsLiveHtmlRequestInfo.tag);  
+        Objects.equals(this.tag, serpGoogleFinanceMarketsLiveHtmlRequestInfo.tag) &&
+        Objects.equals(this.marketType, serpGoogleFinanceMarketsLiveHtmlRequestInfo.marketType);  
     
   }
 
@@ -313,7 +313,7 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(locationName, locationCode, languageName, languageCode, device, os, marketType, tag);
+  return Objects.hash(locationCode, languageCode, device, locationName, languageName, os, tag, marketType);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -328,14 +328,14 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class SerpGoogleFinanceMarketsLiveHtmlRequestInfo {\n");
 
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    marketType: ").append(toIndentedString(marketType)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    marketType: ").append(toIndentedString(marketType)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -359,21 +359,21 @@ public class SerpGoogleFinanceMarketsLiveHtmlRequestInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("location_name");
-    
     openapiFields.add("location_code");
-    
-    openapiFields.add("language_name");
     
     openapiFields.add("language_code");
     
     openapiFields.add("device");
     
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
     openapiFields.add("os");
     
-    openapiFields.add("market_type");
-    
     openapiFields.add("tag");
+    
+    openapiFields.add("market_type");
     
 
     // a set of required properties/fields (JSON key names)

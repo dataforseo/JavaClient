@@ -464,7 +464,7 @@ public class Example {
            .keyword("iphone")
         
         
-           .priceMin("5")
+           .priceMin(5)
     
        )
     );

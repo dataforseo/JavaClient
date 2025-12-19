@@ -296,7 +296,7 @@ public class KeywordsDataGoogleAdsSearchVolumeTaskGetResultInfo  {
 
   /**
    * cost per click
-* indicates the amount paid for each click on the ad displayed for a given keyword
+* indicates the amount paid (USD) for each click on the ad displayed for a given keyword
    * @return cpc
    */
   @javax.annotation.Nullable

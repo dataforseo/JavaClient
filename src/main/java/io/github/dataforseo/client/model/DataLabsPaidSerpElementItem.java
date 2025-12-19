@@ -405,7 +405,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * backlinks information for the target website
+   * backlinks information for the relevant page URL
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

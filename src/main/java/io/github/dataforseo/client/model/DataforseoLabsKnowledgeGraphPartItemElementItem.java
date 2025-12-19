@@ -48,7 +48,7 @@ public class DataforseoLabsKnowledgeGraphPartItemElementItem  extends BaseDatafo
   }
 
   /**
-   * title of the result in SERP
+   * title of the place
    * @return title
    */
   @javax.annotation.Nullable

@@ -361,7 +361,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
 
   /**
    * target match type
-* optional field
+* required field if stop_crawl_on_match is specified;
 * type of match for the match_value
 * possible values: domain, with_subdomains, wildcard
    * @return matchType
@@ -387,7 +387,7 @@ public class SerpGoogleOrganicLiveAdvancedRequestInfo  {
 
   /**
    * target domain or wildcard value
-* optional field
+* required field if stop_crawl_on_match is specified;
 * specify a target domain or wildcard value;
 * Note: domain name must be specified without a request protocol;
 * example: dataforseo.com
