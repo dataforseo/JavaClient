@@ -133,7 +133,7 @@ public class ApiClient {
         json = new JSON();
 
         // Set default User-Agent.
-        setUserAgent("java-client/2.0.15");
+        setUserAgent("java-client/2.0.16");
 
         authentications = new HashMap<String, Authentication>();
     }

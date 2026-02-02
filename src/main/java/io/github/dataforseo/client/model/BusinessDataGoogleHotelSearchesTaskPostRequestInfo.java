@@ -185,6 +185,35 @@ public class BusinessDataGoogleHotelSearchesTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_SEARCH_THIS_AREA = "search_this_area";
+  @SerializedName(SERIALIZED_NAME_SEARCH_THIS_AREA)
+  private Boolean searchThisArea;
+
+  public BusinessDataGoogleHotelSearchesTaskPostRequestInfo searchThisArea(Boolean searchThisArea) {
+    this.searchThisArea = searchThisArea;
+    return this;
+  }
+
+  /**
+   * show hotels from the displayed area
+* optional field
+* can take the values: true, false
+* default value: true
+* if set to false the search_this_area mode will be turned off
+* Note: if the search_this_area mode is turned off, the location_name won’t be appended to the keyword during search
+* learn more about this parameter on our Help Center
+   * @return searchThisArea
+   */
+  @javax.annotation.Nullable
+  public Boolean getSearchThisArea() {
+    return searchThisArea;
+  }
+
+  public void setSearchThisArea(Boolean searchThisArea) {
+    this.searchThisArea = searchThisArea;
+  }
+
+
   public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
   @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
   private String languageName;
@@ -795,6 +824,7 @@ public class BusinessDataGoogleHotelSearchesTaskPostRequestInfo  {
         Objects.equals(this.locationName, businessDataGoogleHotelSearchesTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, businessDataGoogleHotelSearchesTaskPostRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, businessDataGoogleHotelSearchesTaskPostRequestInfo.locationCoordinate) &&
+        Objects.equals(this.searchThisArea, businessDataGoogleHotelSearchesTaskPostRequestInfo.searchThisArea) &&
         Objects.equals(this.languageName, businessDataGoogleHotelSearchesTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, businessDataGoogleHotelSearchesTaskPostRequestInfo.languageCode) &&
         Objects.equals(this.depth, businessDataGoogleHotelSearchesTaskPostRequestInfo.depth) &&
@@ -823,7 +853,7 @@ public class BusinessDataGoogleHotelSearchesTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, depth, checkIn, checkOut, currency, adults, children, stars, minRating, sortBy, minPrice, maxPrice, freeCancellation, isVacationRentals, amenities, tag, postbackUrl, pingbackUrl);
+  return Objects.hash(keyword, priority, locationName, locationCode, locationCoordinate, searchThisArea, languageName, languageCode, depth, checkIn, checkOut, currency, adults, children, stars, minRating, sortBy, minPrice, maxPrice, freeCancellation, isVacationRentals, amenities, tag, postbackUrl, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -843,6 +873,7 @@ public class BusinessDataGoogleHotelSearchesTaskPostRequestInfo  {
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
+    sb.append("    searchThisArea: ").append(toIndentedString(searchThisArea)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
@@ -894,6 +925,8 @@ public class BusinessDataGoogleHotelSearchesTaskPostRequestInfo  {
     openapiFields.add("location_code");
     
     openapiFields.add("location_coordinate");
+    
+    openapiFields.add("search_this_area");
     
     openapiFields.add("language_name");
     
