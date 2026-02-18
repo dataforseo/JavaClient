@@ -167,6 +167,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
   /**
    * device type
 * optional field
+* return results for a specific device type
 * can take the values:desktop, mobile
 * default value: desktop
    * @return device

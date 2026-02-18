@@ -104,10 +104,10 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   /**
    * maximum number of tokens in the AI response
 * optional field
-* minimum value: 1
-* maximum value: 2048
-* default value: 2048
-* Note: when web_search is set to true, the output token count may exceed the specified max_output_tokens limit
+* minimum value: 1;
+* maximum value: 4096;
+* default value: 2048;
+* Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -137,6 +137,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
 * minimum value: 0
 * maximum value: 1
 * default value: 0.7
+* Note: temperature cannot be used together with top_p in the same request
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -165,6 +166,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
 * minimum value: 0
 * maximum value: 1
 * default value: null
+* Note: top_p cannot be used together with temperature in the same request
    * @return topP
    */
   @javax.annotation.Nullable
@@ -378,7 +380,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
+   * URL for sending task results
 * optional field
 * once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
 * you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

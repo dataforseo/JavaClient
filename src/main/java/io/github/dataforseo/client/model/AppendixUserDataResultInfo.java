@@ -182,6 +182,34 @@ public class AppendixUserDataResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_LLM_MENTIONS_SUBSCRIPTION_EXPIRY_DATE = "llm_mentions_subscription_expiry_date";
+  @SerializedName(SERIALIZED_NAME_LLM_MENTIONS_SUBSCRIPTION_EXPIRY_DATE)
+  private String llmMentionsSubscriptionExpiryDate;
+
+  public AppendixUserDataResultInfo llmMentionsSubscriptionExpiryDate(String llmMentionsSubscriptionExpiryDate) {
+    this.llmMentionsSubscriptionExpiryDate = llmMentionsSubscriptionExpiryDate;
+    return this;
+  }
+
+  /**
+   * expiry date of the llm mentions api subscription
+* date and time when the current subscription to LLM Mentions API expires;
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2026-02-28 14:01:38 +00:00
+* Note: if there is no active subscription to LLM Mentions API, the value equals null
+   * @return llmMentionsSubscriptionExpiryDate
+   */
+  @javax.annotation.Nullable
+  public String getLlmMentionsSubscriptionExpiryDate() {
+    return llmMentionsSubscriptionExpiryDate;
+  }
+
+  public void setLlmMentionsSubscriptionExpiryDate(String llmMentionsSubscriptionExpiryDate) {
+    this.llmMentionsSubscriptionExpiryDate = llmMentionsSubscriptionExpiryDate;
+  }
+
+
 
   public AppendixUserDataResultInfo() {
   }
@@ -230,7 +258,8 @@ public class AppendixUserDataResultInfo  {
         Objects.equals(this.rates, appendixUserDataResultInfo.rates) &&
         Objects.equals(this.money, appendixUserDataResultInfo.money) &&
         Objects.equals(this.price, appendixUserDataResultInfo.price) &&
-        Objects.equals(this.backlinksSubscriptionExpiryDate, appendixUserDataResultInfo.backlinksSubscriptionExpiryDate);  
+        Objects.equals(this.backlinksSubscriptionExpiryDate, appendixUserDataResultInfo.backlinksSubscriptionExpiryDate) &&
+        Objects.equals(this.llmMentionsSubscriptionExpiryDate, appendixUserDataResultInfo.llmMentionsSubscriptionExpiryDate);  
     
   }
 
@@ -240,7 +269,7 @@ public class AppendixUserDataResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(login, timezone, rates, money, price, backlinksSubscriptionExpiryDate);
+  return Objects.hash(login, timezone, rates, money, price, backlinksSubscriptionExpiryDate, llmMentionsSubscriptionExpiryDate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -261,6 +290,7 @@ public class AppendixUserDataResultInfo  {
     sb.append("    money: ").append(toIndentedString(money)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    backlinksSubscriptionExpiryDate: ").append(toIndentedString(backlinksSubscriptionExpiryDate)).append("\n");
+    sb.append("    llmMentionsSubscriptionExpiryDate: ").append(toIndentedString(llmMentionsSubscriptionExpiryDate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -295,6 +325,8 @@ public class AppendixUserDataResultInfo  {
     openapiFields.add("price");
     
     openapiFields.add("backlinks_subscription_expiry_date");
+    
+    openapiFields.add("llm_mentions_subscription_expiry_date");
     
 
     // a set of required properties/fields (JSON key names)

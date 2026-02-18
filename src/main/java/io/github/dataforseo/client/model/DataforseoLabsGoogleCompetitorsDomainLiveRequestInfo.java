@@ -52,6 +52,7 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveRequestInfo  {
 * required field
 * the domain name of the target website
 * the domain should be specified without https:// and www.
+* you can specify page URL, but the results will be specific to the domain in the specified URL
    * @return target
    */
   @javax.annotation.Nullable

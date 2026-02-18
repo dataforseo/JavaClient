@@ -10,5 +10,5 @@
 **seType** | **String** | type of search engine |[optional]|
 **datePosted** | **String** | date when the task was posted (in the UTC format) |[optional]|
 **tag** | **String** | user-defined task identifier |[optional]|
-**endpointAdvanced** | **String** | URL for collecting the results of the Amazon Reviews Advanced task |[optional]|
-**endpointHtml** | **String** | URL for collecting the results of the Amazon Reviews HTML task |[optional]|
+**endpointAdvanced** | **String** | URL for collecting the results of Amazon Sellers Advanced task |[optional]|
+**endpointHtml** | **String** | URL for collecting the results of Amazon Sellers HTML task |[optional]|

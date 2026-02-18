@@ -94,7 +94,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * description of the local businesses
+   * description of the local business
    * @return description
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * address of the local businesses
+   * address of the local business
    * @return address
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * phone of the local businesses
+   * phone of the local business
    * @return phone
    */
   @javax.annotation.Nullable
@@ -163,7 +163,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * total number of reviews submitted for the local businesses
+   * total number of reviews submitted for the local business
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -232,7 +232,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * rating of the corresponding local businesses
+   * rating of the corresponding local business
 * popularity rate based on reviews as displayed in the results
    * @return rating
    */

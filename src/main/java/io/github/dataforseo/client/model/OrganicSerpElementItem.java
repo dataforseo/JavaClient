@@ -494,7 +494,8 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+* the popularity rate based on reviews and displayed in SERP;
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable
@@ -640,7 +641,8 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   /**
    * contains information from the ‘About this result’ panel
 * ‘About this result’ panel provides additional context about why Google returned this result for the given query;
-* this feature appears after clicking on the three dots next to most results
+* this feature appears after clicking on the three dots next to most results;
+* if there is none, equals null
    * @return aboutThisResult
    */
   @javax.annotation.Nullable

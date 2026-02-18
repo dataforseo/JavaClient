@@ -229,9 +229,9 @@ public class AppDataAppleAppListingsSearchLiveTaskInfo  {
 
   public static final String SERIALIZED_NAME_RESULT = "result";
   @SerializedName(SERIALIZED_NAME_RESULT)
-  private Object result;
+  private List<AppDataAppleAppListingsSearchLiveResultInfo> result;
 
-  public AppDataAppleAppListingsSearchLiveTaskInfo result(Object result) {
+  public AppDataAppleAppListingsSearchLiveTaskInfo result(List<AppDataAppleAppListingsSearchLiveResultInfo> result) {
     this.result = result;
     return this;
   }
@@ -241,11 +241,11 @@ public class AppDataAppleAppListingsSearchLiveTaskInfo  {
    * @return result
    */
   @javax.annotation.Nullable
-  public Object getResult() {
+  public List<AppDataAppleAppListingsSearchLiveResultInfo> getResult() {
     return result;
   }
 
-  public void setResult(Object result) {
+  public void setResult(List<AppDataAppleAppListingsSearchLiveResultInfo> result) {
     this.result = result;
   }
 

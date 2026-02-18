@@ -157,9 +157,9 @@ public class DataforseoLabsGoogleBulkKeywordDifficultyLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsBulkKeywordDifficultyLiveItem> items;
+  private List<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem> items;
 
-  public DataforseoLabsGoogleBulkKeywordDifficultyLiveResultInfo items(List<DataforseoLabsBulkKeywordDifficultyLiveItem> items) {
+  public DataforseoLabsGoogleBulkKeywordDifficultyLiveResultInfo items(List<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem> items) {
     this.items = items;
     return this;
   }
@@ -169,11 +169,11 @@ public class DataforseoLabsGoogleBulkKeywordDifficultyLiveResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<DataforseoLabsBulkKeywordDifficultyLiveItem> getItems() {
+  public List<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsBulkKeywordDifficultyLiveItem> items) {
+  public void setItems(List<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem> items) {
     this.items = items;
   }
 

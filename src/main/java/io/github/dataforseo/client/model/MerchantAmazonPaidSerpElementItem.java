@@ -373,6 +373,31 @@ public class MerchantAmazonPaidSerpElementItem  extends BaseMerchantAmazonElemen
   }
 
 
+  public static final String SERIALIZED_NAME_LABELS = "labels";
+  @SerializedName(SERIALIZED_NAME_LABELS)
+  private List<AmazonLabelElement> labels;
+
+  public MerchantAmazonPaidSerpElementItem labels(List<AmazonLabelElement> labels) {
+    this.labels = labels;
+    return this;
+  }
+
+  /**
+   * product labels
+* array containing an object with main Amazon labels’ information
+* if the product contains no labels, the value will be null
+   * @return labels
+   */
+  @javax.annotation.Nullable
+  public List<AmazonLabelElement> getLabels() {
+    return labels;
+  }
+
+  public void setLabels(List<AmazonLabelElement> labels) {
+    this.labels = labels;
+  }
+
+
 
   public MerchantAmazonPaidSerpElementItem() {
   }
@@ -429,7 +454,8 @@ public class MerchantAmazonPaidSerpElementItem  extends BaseMerchantAmazonElemen
         Objects.equals(this.rating, merchantAmazonPaidSerpElementItem.rating) &&
         Objects.equals(this.isAmazonChoice, merchantAmazonPaidSerpElementItem.isAmazonChoice) &&
         Objects.equals(this.isBestSeller, merchantAmazonPaidSerpElementItem.isBestSeller) &&
-        Objects.equals(this.deliveryInfo, merchantAmazonPaidSerpElementItem.deliveryInfo) && 
+        Objects.equals(this.deliveryInfo, merchantAmazonPaidSerpElementItem.deliveryInfo) &&
+        Objects.equals(this.labels, merchantAmazonPaidSerpElementItem.labels) && 
         super.equals(o);
     
   }
@@ -440,7 +466,7 @@ public class MerchantAmazonPaidSerpElementItem  extends BaseMerchantAmazonElemen
 
   @Override
   public int hashCode() {
-  return Objects.hash(domain, title, url, imageUrl, boughtPastMonth, priceFrom, priceTo, currency, specialOffers, dataAsin, rating, isAmazonChoice, isBestSeller, deliveryInfo);
+  return Objects.hash(domain, title, url, imageUrl, boughtPastMonth, priceFrom, priceTo, currency, specialOffers, dataAsin, rating, isAmazonChoice, isBestSeller, deliveryInfo, labels);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -469,6 +495,7 @@ public class MerchantAmazonPaidSerpElementItem  extends BaseMerchantAmazonElemen
     sb.append("    isAmazonChoice: ").append(toIndentedString(isAmazonChoice)).append("\n");
     sb.append("    isBestSeller: ").append(toIndentedString(isBestSeller)).append("\n");
     sb.append("    deliveryInfo: ").append(toIndentedString(deliveryInfo)).append("\n");
+    sb.append("    labels: ").append(toIndentedString(labels)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -523,6 +550,8 @@ public class MerchantAmazonPaidSerpElementItem  extends BaseMerchantAmazonElemen
     openapiFields.add("is_best_seller");
     
     openapiFields.add("delivery_info");
+    
+    openapiFields.add("labels");
     
 
     // a set of required properties/fields (JSON key names)

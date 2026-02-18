@@ -91,9 +91,9 @@ public class VisualStoriesSerpElementItem  extends BaseSerpApiElementItem  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<LicensesElement> items;
+  private List<AmazonLabelElement> items;
 
-  public VisualStoriesSerpElementItem items(List<LicensesElement> items) {
+  public VisualStoriesSerpElementItem items(List<AmazonLabelElement> items) {
     this.items = items;
     return this;
   }
@@ -103,11 +103,11 @@ public class VisualStoriesSerpElementItem  extends BaseSerpApiElementItem  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<LicensesElement> getItems() {
+  public List<AmazonLabelElement> getItems() {
     return items;
   }
 
-  public void setItems(List<LicensesElement> items) {
+  public void setItems(List<AmazonLabelElement> items) {
     this.items = items;
   }
 

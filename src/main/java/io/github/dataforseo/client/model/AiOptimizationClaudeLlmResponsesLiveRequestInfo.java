@@ -104,10 +104,10 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   /**
    * maximum number of tokens in the AI response
 * optional field
-* minimum value: 1
-* maximum value: 2048
-* default value: 2048
-* Note: when web_search is set to true, the output token count may exceed the specified max_output_tokens limit
+* minimum value: 1;
+* maximum value: 4096;
+* default value: 2048;
+* Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -137,6 +137,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
 * minimum value: 0
 * maximum value: 1
 * default value: 0.7
+* Note: temperature cannot be used together with top_p in the same request
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -165,6 +166,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
 * minimum value: 0
 * maximum value: 1
 * default value: null
+* Note: top_p cannot be used together with temperature in the same request
    * @return topP
    */
   @javax.annotation.Nullable

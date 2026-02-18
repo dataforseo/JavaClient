@@ -187,6 +187,7 @@ public class KnowledgeGraphExpandedElement  {
 
   /**
    * images of the element
+* if there are none, equals null
    * @return images
    */
   @javax.annotation.Nullable

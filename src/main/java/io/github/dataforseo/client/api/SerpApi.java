@@ -147,16 +147,6 @@ import io.github.dataforseo.client.model.SerpBingOrganicLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicLiveHtmlRequestInfo;
 import io.github.dataforseo.client.model.SerpBingOrganicLiveHtmlResponseInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackTaskPostRequestInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackTaskPostResponseInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackTasksReadyResponseInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackTasksFixedResponseInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackTaskGetRegularResponseInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackTaskGetHtmlResponseInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackLiveRegularRequestInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackLiveRegularResponseInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackLiveHtmlRequestInfo;
-import io.github.dataforseo.client.model.SerpBingLocalPackLiveHtmlResponseInfo;
 import io.github.dataforseo.client.model.SerpYoutubeLocationsResponseInfo;
 import io.github.dataforseo.client.model.SerpYoutubeLocationsCountryResponseInfo;
 import io.github.dataforseo.client.model.SerpYoutubeLanguagesResponseInfo;
@@ -167,6 +157,13 @@ import io.github.dataforseo.client.model.SerpYoutubeVideoInfoTasksFixedResponseI
 import io.github.dataforseo.client.model.SerpYoutubeVideoInfoTaskGetAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpYoutubeVideoInfoLiveAdvancedRequestInfo;
 import io.github.dataforseo.client.model.SerpYoutubeVideoInfoLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpYoutubeOrganicTaskPostRequestInfo;
+import io.github.dataforseo.client.model.SerpYoutubeOrganicTaskPostResponseInfo;
+import io.github.dataforseo.client.model.SerpYoutubeOrganicTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.SerpYoutubeOrganicTasksFixedResponseInfo;
+import io.github.dataforseo.client.model.SerpYoutubeOrganicTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.SerpYoutubeOrganicLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.SerpYoutubeOrganicLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.SerpYoutubeVideoSubtitlesTaskPostRequestInfo;
 import io.github.dataforseo.client.model.SerpYoutubeVideoSubtitlesTaskPostResponseInfo;
 import io.github.dataforseo.client.model.SerpYoutubeVideoSubtitlesTasksReadyResponseInfo;
@@ -7560,514 +7557,6 @@ public class SerpApi {
             return localVarCall;
         }
 
-    public okhttp3.Call bingLocalPackTaskPostCall(List<SerpBingLocalPackTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/serp/bing/local_pack/task_post";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call bingLocalPackTaskPostValidateBeforeCall(List<SerpBingLocalPackTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return bingLocalPackTaskPostCall(payload, _callback);
- 
-        }
- 
-        public SerpBingLocalPackTaskPostResponseInfo bingLocalPackTaskPost(List<SerpBingLocalPackTaskPostRequestInfo> payload) throws ApiException {
-            ApiResponse<SerpBingLocalPackTaskPostResponseInfo> localVarResp = bingLocalPackTaskPostWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<SerpBingLocalPackTaskPostResponseInfo> bingLocalPackTaskPostWithHttpInfo(List<SerpBingLocalPackTaskPostRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = bingLocalPackTaskPostValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<SerpBingLocalPackTaskPostResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call bingLocalPackTaskPostAsync(List<SerpBingLocalPackTaskPostRequestInfo> payload, final ApiCallback<SerpBingLocalPackTaskPostResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = bingLocalPackTaskPostValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<SerpBingLocalPackTaskPostResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
-    public okhttp3.Call bingLocalPackTasksReadyCall( final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-          String localVarPath = "/v3/serp/bing/local_pack/tasks_ready";
-   
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call bingLocalPackTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-
-       return bingLocalPackTasksReadyCall(_callback);
-
-    }
-
-    public SerpBingLocalPackTasksReadyResponseInfo bingLocalPackTasksReady() throws ApiException {
-       ApiResponse<SerpBingLocalPackTasksReadyResponseInfo> localVarResp = bingLocalPackTasksReadyWithHttpInfo();
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<SerpBingLocalPackTasksReadyResponseInfo> bingLocalPackTasksReadyWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = bingLocalPackTasksReadyValidateBeforeCall(null);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTasksReadyResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call bingLocalPackTasksReadyAsync(final ApiCallback<SerpBingLocalPackTasksReadyResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = bingLocalPackTasksReadyValidateBeforeCall(_callback);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTasksReadyResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call bingLocalPackTasksFixedCall( final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-          String localVarPath = "/v3/serp/bing/local_pack/tasks_fixed";
-   
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call bingLocalPackTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
-
-       return bingLocalPackTasksFixedCall(_callback);
-
-    }
-
-    public SerpBingLocalPackTasksFixedResponseInfo bingLocalPackTasksFixed() throws ApiException {
-       ApiResponse<SerpBingLocalPackTasksFixedResponseInfo> localVarResp = bingLocalPackTasksFixedWithHttpInfo();
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<SerpBingLocalPackTasksFixedResponseInfo> bingLocalPackTasksFixedWithHttpInfo() throws ApiException {
-       okhttp3.Call localVarCall = bingLocalPackTasksFixedValidateBeforeCall(null);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTasksFixedResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call bingLocalPackTasksFixedAsync(final ApiCallback<SerpBingLocalPackTasksFixedResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = bingLocalPackTasksFixedValidateBeforeCall(_callback);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTasksFixedResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call bingLocalPackTaskGetRegularCall( String id,  final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-   
-       String localVarPath = "/v3/serp/bing/local_pack/task_get/regular/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
-
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call bingLocalPackTaskGetRegularValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
-       // verify the required parameter 'id' is set
-       if (id == null) {
-           throw new ApiException("Missing the required parameter 'id' when calling bingLocalPackTaskGetRegular(Async)");
-       }
-
-       return bingLocalPackTaskGetRegularCall(id, _callback);
-
-    }
-
-    public SerpBingLocalPackTaskGetRegularResponseInfo bingLocalPackTaskGetRegular(String id) throws ApiException {
-       ApiResponse<SerpBingLocalPackTaskGetRegularResponseInfo> localVarResp = bingLocalPackTaskGetRegularWithHttpInfo(id);
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<SerpBingLocalPackTaskGetRegularResponseInfo> bingLocalPackTaskGetRegularWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = bingLocalPackTaskGetRegularValidateBeforeCall(id, null);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTaskGetRegularResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call bingLocalPackTaskGetRegularAsync(String id, final ApiCallback<SerpBingLocalPackTaskGetRegularResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = bingLocalPackTaskGetRegularValidateBeforeCall(id, _callback);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTaskGetRegularResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call bingLocalPackTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
-       String basePath = null;
-       // Operation Servers
-       String[] localBasePaths = new String[] {  };
-
-       // Determine Base Path to Use
-       if (localCustomBaseUrl != null){
-           basePath = localCustomBaseUrl;
-       } else if ( localBasePaths.length > 0 ) {
-           basePath = localBasePaths[localHostIndex];
-       } else {
-           basePath = null;
-       }
-
-       Object localVarPostBody = null;
-
-       // create path and map variables
-   
-       String localVarPath = "/v3/serp/bing/local_pack/task_get/html/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
-
-
-       List<Pair> localVarQueryParams = new ArrayList<Pair>();
-       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-       Map<String, String> localVarCookieParams = new HashMap<String, String>();
-       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-       final String[] localVarAccepts = {
-           "application/json"
-       };
-       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-       if (localVarAccept != null) {
-           localVarHeaderParams.put("Accept", localVarAccept);
-       }
-
-       final String[] localVarContentTypes = {
-       };
-       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-       if (localVarContentType != null) {
-           localVarHeaderParams.put("Content-Type", localVarContentType);
-       }
-
-       String[] localVarAuthNames = new String[] { "basicAuth" };
-       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-    }
-
-    
-    @SuppressWarnings("rawtypes")
-    private okhttp3.Call bingLocalPackTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
-       // verify the required parameter 'id' is set
-       if (id == null) {
-           throw new ApiException("Missing the required parameter 'id' when calling bingLocalPackTaskGetHtml(Async)");
-       }
-
-       return bingLocalPackTaskGetHtmlCall(id, _callback);
-
-    }
-
-    public SerpBingLocalPackTaskGetHtmlResponseInfo bingLocalPackTaskGetHtml(String id) throws ApiException {
-       ApiResponse<SerpBingLocalPackTaskGetHtmlResponseInfo> localVarResp = bingLocalPackTaskGetHtmlWithHttpInfo(id);
-       return localVarResp.getData();
-    }
-
-    public ApiResponse<SerpBingLocalPackTaskGetHtmlResponseInfo> bingLocalPackTaskGetHtmlWithHttpInfo(String id) throws ApiException {
-       okhttp3.Call localVarCall = bingLocalPackTaskGetHtmlValidateBeforeCall(id, null);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTaskGetHtmlResponseInfo>(){}.getType();
-       return localVarApiClient.execute(localVarCall, localVarReturnType);
-    }
-
-    public okhttp3.Call bingLocalPackTaskGetHtmlAsync(String id, final ApiCallback<SerpBingLocalPackTaskGetHtmlResponseInfo> _callback) throws ApiException {
-
-       okhttp3.Call localVarCall = bingLocalPackTaskGetHtmlValidateBeforeCall(id, _callback);
-       Type localVarReturnType = new TypeToken<SerpBingLocalPackTaskGetHtmlResponseInfo>(){}.getType();
-       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-       return localVarCall;
-    }
-
-    public okhttp3.Call bingLocalPackLiveRegularCall(List<SerpBingLocalPackLiveRegularRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/serp/bing/local_pack/live/regular";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call bingLocalPackLiveRegularValidateBeforeCall(List<SerpBingLocalPackLiveRegularRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return bingLocalPackLiveRegularCall(payload, _callback);
- 
-        }
- 
-        public SerpBingLocalPackLiveRegularResponseInfo bingLocalPackLiveRegular(List<SerpBingLocalPackLiveRegularRequestInfo> payload) throws ApiException {
-            ApiResponse<SerpBingLocalPackLiveRegularResponseInfo> localVarResp = bingLocalPackLiveRegularWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<SerpBingLocalPackLiveRegularResponseInfo> bingLocalPackLiveRegularWithHttpInfo(List<SerpBingLocalPackLiveRegularRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = bingLocalPackLiveRegularValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<SerpBingLocalPackLiveRegularResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call bingLocalPackLiveRegularAsync(List<SerpBingLocalPackLiveRegularRequestInfo> payload, final ApiCallback<SerpBingLocalPackLiveRegularResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = bingLocalPackLiveRegularValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<SerpBingLocalPackLiveRegularResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
-    public okhttp3.Call bingLocalPackLiveHtmlCall(List<SerpBingLocalPackLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/serp/bing/local_pack/live/html";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call bingLocalPackLiveHtmlValidateBeforeCall(List<SerpBingLocalPackLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return bingLocalPackLiveHtmlCall(payload, _callback);
- 
-        }
- 
-        public SerpBingLocalPackLiveHtmlResponseInfo bingLocalPackLiveHtml(List<SerpBingLocalPackLiveHtmlRequestInfo> payload) throws ApiException {
-            ApiResponse<SerpBingLocalPackLiveHtmlResponseInfo> localVarResp = bingLocalPackLiveHtmlWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<SerpBingLocalPackLiveHtmlResponseInfo> bingLocalPackLiveHtmlWithHttpInfo(List<SerpBingLocalPackLiveHtmlRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = bingLocalPackLiveHtmlValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<SerpBingLocalPackLiveHtmlResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call bingLocalPackLiveHtmlAsync(List<SerpBingLocalPackLiveHtmlRequestInfo> payload, final ApiCallback<SerpBingLocalPackLiveHtmlResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = bingLocalPackLiveHtmlValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<SerpBingLocalPackLiveHtmlResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
     public okhttp3.Call youtubeLocationsCall( final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
@@ -8646,6 +8135,367 @@ public class SerpApi {
  
             okhttp3.Call localVarCall = youtubeVideoInfoLiveAdvancedValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<SerpYoutubeVideoInfoLiveAdvancedResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call youtubeOrganicTaskPostCall(List<SerpYoutubeOrganicTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/serp/youtube/organic/task_post";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call youtubeOrganicTaskPostValidateBeforeCall(List<SerpYoutubeOrganicTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return youtubeOrganicTaskPostCall(payload, _callback);
+ 
+        }
+ 
+        public SerpYoutubeOrganicTaskPostResponseInfo youtubeOrganicTaskPost(List<SerpYoutubeOrganicTaskPostRequestInfo> payload) throws ApiException {
+            ApiResponse<SerpYoutubeOrganicTaskPostResponseInfo> localVarResp = youtubeOrganicTaskPostWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<SerpYoutubeOrganicTaskPostResponseInfo> youtubeOrganicTaskPostWithHttpInfo(List<SerpYoutubeOrganicTaskPostRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = youtubeOrganicTaskPostValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTaskPostResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call youtubeOrganicTaskPostAsync(List<SerpYoutubeOrganicTaskPostRequestInfo> payload, final ApiCallback<SerpYoutubeOrganicTaskPostResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = youtubeOrganicTaskPostValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTaskPostResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call youtubeOrganicTasksReadyCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/serp/youtube/organic/tasks_ready";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call youtubeOrganicTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return youtubeOrganicTasksReadyCall(_callback);
+
+    }
+
+    public SerpYoutubeOrganicTasksReadyResponseInfo youtubeOrganicTasksReady() throws ApiException {
+       ApiResponse<SerpYoutubeOrganicTasksReadyResponseInfo> localVarResp = youtubeOrganicTasksReadyWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<SerpYoutubeOrganicTasksReadyResponseInfo> youtubeOrganicTasksReadyWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = youtubeOrganicTasksReadyValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTasksReadyResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call youtubeOrganicTasksReadyAsync(final ApiCallback<SerpYoutubeOrganicTasksReadyResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = youtubeOrganicTasksReadyValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTasksReadyResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call youtubeOrganicTasksFixedCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/serp/youtube/organic/tasks_fixed";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call youtubeOrganicTasksFixedValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return youtubeOrganicTasksFixedCall(_callback);
+
+    }
+
+    public SerpYoutubeOrganicTasksFixedResponseInfo youtubeOrganicTasksFixed() throws ApiException {
+       ApiResponse<SerpYoutubeOrganicTasksFixedResponseInfo> localVarResp = youtubeOrganicTasksFixedWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<SerpYoutubeOrganicTasksFixedResponseInfo> youtubeOrganicTasksFixedWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = youtubeOrganicTasksFixedValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTasksFixedResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call youtubeOrganicTasksFixedAsync(final ApiCallback<SerpYoutubeOrganicTasksFixedResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = youtubeOrganicTasksFixedValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTasksFixedResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call youtubeOrganicTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/serp/youtube/organic/task_get/advanced/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call youtubeOrganicTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'id' is set
+       if (id == null) {
+           throw new ApiException("Missing the required parameter 'id' when calling youtubeOrganicTaskGetAdvanced(Async)");
+       }
+
+       return youtubeOrganicTaskGetAdvancedCall(id, _callback);
+
+    }
+
+    public SerpYoutubeOrganicTaskGetAdvancedResponseInfo youtubeOrganicTaskGetAdvanced(String id) throws ApiException {
+       ApiResponse<SerpYoutubeOrganicTaskGetAdvancedResponseInfo> localVarResp = youtubeOrganicTaskGetAdvancedWithHttpInfo(id);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<SerpYoutubeOrganicTaskGetAdvancedResponseInfo> youtubeOrganicTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+       okhttp3.Call localVarCall = youtubeOrganicTaskGetAdvancedValidateBeforeCall(id, null);
+       Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTaskGetAdvancedResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call youtubeOrganicTaskGetAdvancedAsync(String id, final ApiCallback<SerpYoutubeOrganicTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = youtubeOrganicTaskGetAdvancedValidateBeforeCall(id, _callback);
+       Type localVarReturnType = new TypeToken<SerpYoutubeOrganicTaskGetAdvancedResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call youtubeOrganicLiveAdvancedCall(List<SerpYoutubeOrganicLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/serp/youtube/organic/live/advanced";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call youtubeOrganicLiveAdvancedValidateBeforeCall(List<SerpYoutubeOrganicLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return youtubeOrganicLiveAdvancedCall(payload, _callback);
+ 
+        }
+ 
+        public SerpYoutubeOrganicLiveAdvancedResponseInfo youtubeOrganicLiveAdvanced(List<SerpYoutubeOrganicLiveAdvancedRequestInfo> payload) throws ApiException {
+            ApiResponse<SerpYoutubeOrganicLiveAdvancedResponseInfo> localVarResp = youtubeOrganicLiveAdvancedWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<SerpYoutubeOrganicLiveAdvancedResponseInfo> youtubeOrganicLiveAdvancedWithHttpInfo(List<SerpYoutubeOrganicLiveAdvancedRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = youtubeOrganicLiveAdvancedValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<SerpYoutubeOrganicLiveAdvancedResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call youtubeOrganicLiveAdvancedAsync(List<SerpYoutubeOrganicLiveAdvancedRequestInfo> payload, final ApiCallback<SerpYoutubeOrganicLiveAdvancedResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = youtubeOrganicLiveAdvancedValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<SerpYoutubeOrganicLiveAdvancedResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }

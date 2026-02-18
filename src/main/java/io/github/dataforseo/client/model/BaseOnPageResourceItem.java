@@ -48,7 +48,7 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * type of element
+   * type of the returned resource = ‘html’
    * @return resourceType
    */
   @javax.annotation.Nullable

@@ -106,6 +106,7 @@ public class SerpGoogleFinanceMarketsLiveAdvancedRequestInfo  {
   /**
    * device type
 * optional field
+* return results for a specific device type
 * possible value: desktop
    * @return device
    */

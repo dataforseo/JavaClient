@@ -148,6 +148,9 @@ public class SerpBingLocationsCountryResultInfo  {
 
   /**
    * location type
+* indicates the geographic classification of the location
+* example:
+* 'location_type': 'Country', or 'location_type': 'State'
    * @return locationType
    */
   @javax.annotation.Nullable

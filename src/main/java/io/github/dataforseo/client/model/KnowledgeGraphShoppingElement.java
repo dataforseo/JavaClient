@@ -141,7 +141,8 @@ public class KnowledgeGraphShoppingElement  {
 
   /**
    * pricing details
-* contains the pricing details of the product or service featured in the result
+* contains the pricing details of the product or service featured in the result;
+* if there is none, equals null
    * @return price
    */
   @javax.annotation.Nullable

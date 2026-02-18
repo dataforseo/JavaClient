@@ -82,7 +82,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
 * required field if you don’t specify location_code 
 * you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
 * example:
-* London,England,United Kingdom
+* United Kingdom
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -109,7 +109,7 @@ public class KeywordsDataClickstreamDataDataforseoSearchVolumeLiveRequestInfo  {
 * required field if you don’t specify location_name
 * if you use this field, you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/keywords_data/clickstream_data/locations_and_languages
 * example:
-* 2840
+* 2826
    * @return locationCode
    */
   @javax.annotation.Nullable

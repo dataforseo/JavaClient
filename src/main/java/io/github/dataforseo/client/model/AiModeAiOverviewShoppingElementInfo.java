@@ -165,6 +165,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   /**
    * the item’s rating 
 * the popularity rate based on reviews and displayed in SERP
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable
@@ -188,7 +189,8 @@ public class AiModeAiOverviewShoppingElementInfo  {
 
   /**
    * pricing details
-* contains the pricing details of the product or service featured in the result
+* contains the pricing details of the product or service featured in the result;
+* if there is none, equals null
    * @return price
    */
   @javax.annotation.Nullable

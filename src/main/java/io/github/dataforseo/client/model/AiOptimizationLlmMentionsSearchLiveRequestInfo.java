@@ -79,6 +79,7 @@ public class AiOptimizationLlmMentionsSearchLiveRequestInfo  {
   /**
    * target domain
 * required field if you don’t specify keyword
+* you can specify up to 63 characters in the domain field;
 * a domain should be specified without https:// and www.
    * @return domain
    */
@@ -184,7 +185,7 @@ public class AiOptimizationLlmMentionsSearchLiveRequestInfo  {
   /**
    * target keyword
 * required field if you don’t specify domain
-* you can specify up to 2000 characters in the keyword field
+* you can specify up to 250 characters in the keyword field
 * all %## will be decoded (plus character ‘+’ will be decoded to a space character)
 * if you need to use the “%” character for your keyword, please specify it as “%25”;
 * if you need to use the “+” character for your keyword, please specify it as “%2B”
@@ -448,8 +449,8 @@ public class AiOptimizationLlmMentionsSearchLiveRequestInfo  {
    * offset in the results array of the returned mentions data
 * optional field
 * default value: 0
-* if you specify the 10 value, the first ten mentions objects in the results array will be omitted and the data will be provided for the successive objects;
-* Note: the maximum value is 20,000, use the search_after_token if you would like to offset more results
+* example: if you specify the 10 value, the first ten mentions objects in the results array will be omitted and the data will be provided for the successive objects;
+* Note: the maximum value is 9,000, use the search_after_token if you would like to offset more results
    * @return offset
    */
   @javax.annotation.Nullable

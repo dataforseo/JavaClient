@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**resourceType** | **String** | type of element |[optional]|
+**resourceType** | **String** | type of the returned resource = ‘html’ |[optional]|
 **statusCode** | **Integer** | status code of the page |[optional]|
 **location** | **String** | location header<br>indicates the URL to redirect a page to |[optional]|
 **url** | **String** | page URL |[optional]|

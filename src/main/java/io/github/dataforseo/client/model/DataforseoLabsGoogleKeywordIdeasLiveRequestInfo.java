@@ -333,6 +333,8 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
 * optional field
 * default value: 0
 * if you specify the 10 value, the first ten keywords in the results array will be omitted and the data will be provided for the successive keywords
+* Note: we recommend using this parameter only when retrieving up to 10,000 results
+* for retrieving over 10,000 results, use the offset_token instead.
    * @return offset
    */
   @javax.annotation.Nullable
@@ -362,6 +364,7 @@ public class DataforseoLabsGoogleKeywordIdeasLiveRequestInfo  {
 * by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;
 * offset_token values are unique for each subsequent task
 * Note: if the offset_token is specified in the request, all other parameters except limit will not be taken into account when processing a task.
+* learn more about this parameter on our Help Center
    * @return offsetToken
    */
   @javax.annotation.Nullable

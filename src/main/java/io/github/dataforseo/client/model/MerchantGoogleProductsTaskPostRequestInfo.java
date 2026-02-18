@@ -304,7 +304,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   /**
    * parsing depth
 * optional field
-* number of results to be retrieved from the Google Shopping results page
+* number of results to be retrieved from Google Shopping SERP
 * default value: 40
 * max value: 120
 * Your account will be billed per each SERP containing up to 40 results;
@@ -507,7 +507,7 @@ public class MerchantGoogleProductsTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
+   * URL for sending task results
 * optional field
 * once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
 * you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

@@ -169,7 +169,8 @@ public class ThirdPartyReviewsSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
+* the popularity rate based on reviews and displayed in SERP;
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable

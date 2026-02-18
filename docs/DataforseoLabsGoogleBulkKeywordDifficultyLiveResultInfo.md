@@ -10,4 +10,4 @@
 **languageCode** | **String** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
 **totalCount** | **Long** | total amount of results in our database relevant to your request |[optional]|
 **itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<DataforseoLabsBulkKeywordDifficultyLiveItem>** | contains keywords and related keyword difficulty scores |[optional]|
+**items** | **List<DataforseoLabsGoogleBulkKeywordDifficultyLiveItem>** | contains keywords and related keyword difficulty scores |[optional]|

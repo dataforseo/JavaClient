@@ -164,7 +164,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Amazon Reviews Advanced task
+   * URL for collecting the results of Amazon Sellers Advanced task
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -187,7 +187,7 @@ public class MerchantTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Amazon Reviews HTML task
+   * URL for collecting the results of Amazon Sellers HTML task
    * @return endpointHtml
    */
   @javax.annotation.Nullable

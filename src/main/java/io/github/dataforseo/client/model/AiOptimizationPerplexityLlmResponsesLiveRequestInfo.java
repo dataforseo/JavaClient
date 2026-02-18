@@ -104,8 +104,9 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
    * maximum number of tokens in the AI response
 * optional field
 * minimum value: 1
-* maximum value: 2048
-* default value: 2048
+* maximum value: 4096;
+* default value: 2048;
+* Note: if the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable

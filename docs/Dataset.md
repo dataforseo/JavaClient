@@ -18,10 +18,10 @@
 **uniqueIdentifier** | **String** | digital identifier of an object<br>unique digital identifier of the dataset<br>example: https://doi.org/10.5061/dryad.hmgqnk9m3 |[optional]|
 **relatedArticle** | **String** | link to related article<br>link to the published article that is related to the dataset |[optional]|
 **links** | **List<LinkElement>** | sitelinks<br>the links shown below some of Google Dataset’s search results<br>if there are none, equals null |[optional]|
-**datasetProviders** | **List<LicensesElement>** | the list of institutions that provided the dataset |[optional]|
+**datasetProviders** | **List<AmazonLabelElement>** | the list of institutions that provided the dataset |[optional]|
 **formats** | **List<FormatsElement>** | the list of file formats of the dataset |[optional]|
 **authors** | **List<AuthorsElement>** | the list of authors of the dataset |[optional]|
-**licenses** | **List<LicensesElement>** | the list of licenses issued to the dataset |[optional]|
+**licenses** | **List<AmazonLabelElement>** | the list of licenses issued to the dataset |[optional]|
 **updatedDate** | **String** | date and time when the result was last updated<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-11-27 02:00:00 +00:00 |[optional]|
 **areaCovered** | **List<String>** | the list of areas covered in the dataset<br>for example: Africa, Global |[optional]|
 **periodCovered** | **PeriodCovered** | period covered in the dataset |[optional]|

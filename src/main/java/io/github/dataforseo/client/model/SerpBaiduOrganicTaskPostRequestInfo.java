@@ -308,6 +308,7 @@ public class SerpBaiduOrganicTaskPostRequestInfo  {
   /**
    * device type
 * optional field
+* return results for a specific device type
 * can take the values: desktop, mobile, tablet
 * default value: desktop
    * @return device
@@ -421,11 +422,12 @@ public class SerpBaiduOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * target domain or wildcard value
-* required field if stop_crawl_on_match is specified;
-* specify a target domain or wildcard value;
-* Note: domain name must be specified without a request protocol;
-* example: dataforseo.com
+   * target domain, subdomain, or wildcard value
+* required field if stop_crawl_on_match is specified
+* specify a target domain, subdomain, or wildcard value;
+* Note: domain or subdomain must be specified without a request protocol;
+* example: 'match_value': 'dataforseo.com',
+* 'match_value': '/blog/post-*'
    * @return matchValue
    */
   @javax.annotation.Nullable
@@ -449,9 +451,12 @@ public class SerpBaiduOrganicTaskPostRequestInfo  {
 
   /**
    * target match type
-* required field if stop_crawl_on_match is specified;
+* required field if stop_crawl_on_match is specified
 * type of match for the match_value
-* possible values: domain, with_subdomains, wildcard
+* possible values:
+* domain – specific domain or subdomain
+* with_subdomains – main domain and subdomains
+* wildcard –  wildcard pattern
    * @return matchType
    */
   @javax.annotation.Nullable
@@ -501,7 +506,7 @@ public class SerpBaiduOrganicTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
+   * URL for sending task results
 * optional field
 * once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
 * you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

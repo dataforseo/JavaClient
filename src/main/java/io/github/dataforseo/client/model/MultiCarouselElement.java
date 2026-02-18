@@ -95,6 +95,7 @@ public class MultiCarouselElement  {
 
   /**
    * multi_carousel_snippet results
+* if there are none, equals null
    * @return multiCarouselSnippets
    */
   @javax.annotation.Nullable

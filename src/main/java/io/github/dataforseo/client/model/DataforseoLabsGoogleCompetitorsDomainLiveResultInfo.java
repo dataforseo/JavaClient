@@ -178,9 +178,9 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsCompetitorsDomainLiveItem> items;
+  private List<DataforseoLabsGoogleCompetitorsDomainLiveItem> items;
 
-  public DataforseoLabsGoogleCompetitorsDomainLiveResultInfo items(List<DataforseoLabsCompetitorsDomainLiveItem> items) {
+  public DataforseoLabsGoogleCompetitorsDomainLiveResultInfo items(List<DataforseoLabsGoogleCompetitorsDomainLiveItem> items) {
     this.items = items;
     return this;
   }
@@ -190,11 +190,11 @@ public class DataforseoLabsGoogleCompetitorsDomainLiveResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<DataforseoLabsCompetitorsDomainLiveItem> getItems() {
+  public List<DataforseoLabsGoogleCompetitorsDomainLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsCompetitorsDomainLiveItem> items) {
+  public void setItems(List<DataforseoLabsGoogleCompetitorsDomainLiveItem> items) {
     this.items = items;
   }
 

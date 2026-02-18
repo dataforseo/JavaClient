@@ -9,4 +9,4 @@
 **title** | **String** | title of the element |[optional]|
 **url** | **String** | search URL with refinement parameters |[optional]|
 **domain** | **String** | domain in SERP |[optional]|
-**options** | **List<LicensesElement>** | further search refinement options |[optional]|
+**options** | **List<AmazonLabelElement>** | further search refinement options |[optional]|

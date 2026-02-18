@@ -167,6 +167,7 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
   /**
    * device type
 * optional field
+* return results for a specific device type
 * can take the values:desktop, mobile
 * default value: desktop
 * note: for mobile device, only 20 results are returned for every SERP
@@ -418,7 +419,7 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * [popup_img text='search this area' width='751' height='524' src='https://docs_v3.dataforseo.com/wp-content/uploads/2020/10/search_this_area_751x524-1.png']
+   * show results from the displayed area
 * optional field
 * can take the values:true, false
 * default value: true

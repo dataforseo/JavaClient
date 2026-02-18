@@ -24,6 +24,7 @@
 **isAmazonChoice** | **Boolean** | “Amazon’s choice” label<br>if the value is true, the product is marked with the “Amazon’s choice” label |[optional]|
 **rating** | **RatingElement** | product rating info |[optional]|
 **isNewerModelAvailable** | **Boolean** | indicates whether the newer model of the product is available |[optional]|
+**isPrimeVideo** | **Boolean** | indicates whether a product has an Amazon Prime Video label<br>if true, specified product is a part of Amazon Prime Video service |[optional]|
 **applicableVouchers** | **List<AmazonApplicableVouchersItem>** | array of objects containing information about applicable vouchers |[optional]|
 **newerModel** | **AmazonProductNewerModelInfo** | information about the newer model of the product |[optional]|
 **categories** | **List<ProductCategoryInfo>** | contains related product categories |[optional]|

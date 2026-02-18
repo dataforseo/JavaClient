@@ -741,7 +741,7 @@ public class GoogleFinanceMetricsBundleInfo  {
   }
 
   /**
-   * cash from financing/em>
+   * cash from financing
    * @return cashFromFinancing
    */
   @javax.annotation.Nullable

@@ -104,11 +104,10 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   /**
    * maximum number of tokens in the AI response
 * optional field
-* minimum value for reasoning models (e.g., model_name starts with ‘o’): 1024;
+* minimum value for reasoning models (e.g., reasoning is true in the Models endpoint): 1024;
 * minimum value for non-reasoning models: 16;
-* maximum value for reasoning models: 4096;
-* maximum value for non-reasoning models: 2048;
-* default value for both reasoning and non-reasoning models: 2048;
+* maximum value: 4096;
+* default value: 2048
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -248,7 +247,7 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
+   * URL for sending task results
 * optional field
 * once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
 * you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.

@@ -2088,9 +2088,6 @@ public class Example {
            .temperature(0.3d)
         
         
-           .topP(0.5d)
-        
-        
            .webSearch(true)
         
         
@@ -2199,9 +2196,6 @@ public class Example {
         
         
            .temperature(0.3d)
-        
-        
-           .topP(0.5d)
         
         
            .webSearchCountryIsoCode("FR")
@@ -2951,7 +2945,7 @@ public class Example {
            .webSearchCountryIsoCode("FR")
         
         
-           .modelName("sonar-reasoning")
+           .modelName("sonar")
         
         
            .userPrompt("provide information on how relevant the amusement park business is in France now")

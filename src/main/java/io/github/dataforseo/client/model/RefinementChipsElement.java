@@ -132,9 +132,9 @@ public class RefinementChipsElement  {
 
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
-  private List<LicensesElement> options;
+  private List<AmazonLabelElement> options;
 
-  public RefinementChipsElement options(List<LicensesElement> options) {
+  public RefinementChipsElement options(List<AmazonLabelElement> options) {
     this.options = options;
     return this;
   }
@@ -144,11 +144,11 @@ public class RefinementChipsElement  {
    * @return options
    */
   @javax.annotation.Nullable
-  public List<LicensesElement> getOptions() {
+  public List<AmazonLabelElement> getOptions() {
     return options;
   }
 
-  public void setOptions(List<LicensesElement> options) {
+  public void setOptions(List<AmazonLabelElement> options) {
     this.options = options;
   }
 

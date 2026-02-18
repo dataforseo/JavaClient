@@ -50,9 +50,10 @@ public class SerpIdListRequestInfo  {
   /**
    * start time for filtering results
 * required field
-* if include_metadata is set to true, maximum value: a month from current datetime;
-* if include_metadata is set to false, maximum value: six months from current datetime;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* if include_metadata is set to true, minimum start value: a month from current datetime;
+* if include_metadata is set to false, minimum start value: six months from current datetime;
+* maximum start value: current datetime;
+* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
 * example:
 * 2023-01-15 12:57:46 +00:00
    * @return datetimeFrom
@@ -79,8 +80,11 @@ public class SerpIdListRequestInfo  {
   /**
    * finish time for filtering results
 * required field
-* maximum value: current datetime;
-* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* if include_metadata is set to true, minimum finish value: a month from current datetime;
+* if include_metadata is set to false, minimum finish value: six months from current datetime;
+* maximum finish value: current datetime;
+* Note: datetime_to must be greater than datetime_from;
+* must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
 * example:
 * 2023-01-31 13:57:46 +00:00
    * @return datetimeTo
@@ -109,6 +113,7 @@ public class SerpIdListRequestInfo  {
 * optional field
 * default value: 1000
 * maximum value: 1000
+* minimum value: 1
    * @return limit
    */
   @javax.annotation.Nullable
@@ -133,8 +138,9 @@ public class SerpIdListRequestInfo  {
   /**
    * offset in the results array of returned task IDs
 * optional field
-* default value: 0
-* if you specify the 10 value, the first ten tasks in the results array will be omitted
+* if you specify the 10 value, the first ten tasks in the results array will be omitted;
+* minimum and default value: 0;
+* maximum value: 100M (100 million)
    * @return offset
    */
   @javax.annotation.Nullable
@@ -183,8 +189,9 @@ public class SerpIdListRequestInfo  {
   }
 
   /**
-   * include task metadata in the respond
+   * include task metadata in the response
 * optional field
+* if set to true, the metadata object containing parameters specified in the POST request will be provided in the response;
 * default value: false
    * @return includeMetadata
    */

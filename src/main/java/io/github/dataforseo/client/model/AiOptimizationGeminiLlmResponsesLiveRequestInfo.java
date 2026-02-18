@@ -105,9 +105,9 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
    * maximum number of tokens in the AI response
 * optional field
 * minimum value: 1
-* maximum value: 2048
-* default value: 2048
-* Note: when web_search is set to true, the output token count may exceed the specified max_output_tokens limit
+* maximum value: 4096;
+* default value: 2048;
+* Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable

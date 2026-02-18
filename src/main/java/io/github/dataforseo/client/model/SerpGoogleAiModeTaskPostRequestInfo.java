@@ -161,6 +161,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
   /**
    * device type
 * optional field
+* return results for a specific device type
 * can take the values:desktop, mobile
 * default value: desktop
    * @return device
@@ -217,7 +218,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
+   * URL for sending task results
 * optional field
 * once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
 * you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
@@ -415,6 +416,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
    * browser screen width
 * optional field
 * you can set a custom browser screen width to calculate pixel rankings for a particular device;
+* can be specified within the following range: 240-9999;
 * by default, the parameter is set to:
 * 1920 for desktop;
 * 360 for mobile on android;
@@ -445,6 +447,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
    * browser screen height
 * optional field
 * you can set a custom browser screen height to calculate pixel rankings for a particular device;
+* can be specified within the following range: 240-9999;
 * by default, the parameter is set to:
 * 1080 for desktop;
 * 640 for mobile on android;
@@ -475,6 +478,7 @@ public class SerpGoogleAiModeTaskPostRequestInfo  {
    * browser screen resolution ratio
 * optional field
 * you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
+* can be specified within the following range: 0.5-3;
 * by default, the parameter is set to:
 * 1 for desktop;
 * 3 for mobile on android;

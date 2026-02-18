@@ -143,6 +143,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
 
   /**
    * images of the element
+* if there is none, equals null
    * @return images
    */
   @javax.annotation.Nullable

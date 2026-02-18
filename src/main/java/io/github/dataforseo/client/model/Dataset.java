@@ -352,9 +352,9 @@ public class Dataset  {
 
   public static final String SERIALIZED_NAME_DATASET_PROVIDERS = "dataset_providers";
   @SerializedName(SERIALIZED_NAME_DATASET_PROVIDERS)
-  private List<LicensesElement> datasetProviders;
+  private List<AmazonLabelElement> datasetProviders;
 
-  public Dataset datasetProviders(List<LicensesElement> datasetProviders) {
+  public Dataset datasetProviders(List<AmazonLabelElement> datasetProviders) {
     this.datasetProviders = datasetProviders;
     return this;
   }
@@ -364,11 +364,11 @@ public class Dataset  {
    * @return datasetProviders
    */
   @javax.annotation.Nullable
-  public List<LicensesElement> getDatasetProviders() {
+  public List<AmazonLabelElement> getDatasetProviders() {
     return datasetProviders;
   }
 
-  public void setDatasetProviders(List<LicensesElement> datasetProviders) {
+  public void setDatasetProviders(List<AmazonLabelElement> datasetProviders) {
     this.datasetProviders = datasetProviders;
   }
 
@@ -421,9 +421,9 @@ public class Dataset  {
 
   public static final String SERIALIZED_NAME_LICENSES = "licenses";
   @SerializedName(SERIALIZED_NAME_LICENSES)
-  private List<LicensesElement> licenses;
+  private List<AmazonLabelElement> licenses;
 
-  public Dataset licenses(List<LicensesElement> licenses) {
+  public Dataset licenses(List<AmazonLabelElement> licenses) {
     this.licenses = licenses;
     return this;
   }
@@ -433,11 +433,11 @@ public class Dataset  {
    * @return licenses
    */
   @javax.annotation.Nullable
-  public List<LicensesElement> getLicenses() {
+  public List<AmazonLabelElement> getLicenses() {
     return licenses;
   }
 
-  public void setLicenses(List<LicensesElement> licenses) {
+  public void setLicenses(List<AmazonLabelElement> licenses) {
     this.licenses = licenses;
   }
 

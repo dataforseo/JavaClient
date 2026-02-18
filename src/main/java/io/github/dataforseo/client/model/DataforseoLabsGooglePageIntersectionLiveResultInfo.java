@@ -201,9 +201,9 @@ public class DataforseoLabsGooglePageIntersectionLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<DataforseoLabsPageIntersectionLiveItem> items;
+  private List<DataforseoLabsGooglePageIntersectionLiveItem> items;
 
-  public DataforseoLabsGooglePageIntersectionLiveResultInfo items(List<DataforseoLabsPageIntersectionLiveItem> items) {
+  public DataforseoLabsGooglePageIntersectionLiveResultInfo items(List<DataforseoLabsGooglePageIntersectionLiveItem> items) {
     this.items = items;
     return this;
   }
@@ -213,11 +213,11 @@ public class DataforseoLabsGooglePageIntersectionLiveResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<DataforseoLabsPageIntersectionLiveItem> getItems() {
+  public List<DataforseoLabsGooglePageIntersectionLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(List<DataforseoLabsPageIntersectionLiveItem> items) {
+  public void setItems(List<DataforseoLabsGooglePageIntersectionLiveItem> items) {
     this.items = items;
   }
 

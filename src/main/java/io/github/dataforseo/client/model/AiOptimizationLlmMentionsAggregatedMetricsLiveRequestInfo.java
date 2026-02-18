@@ -79,6 +79,7 @@ public class AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo  {
   /**
    * target domain
 * required field if you don’t specify keyword
+* you can specify up to 63 characters in the domain field;
 * a domain should be specified without https:// and www.
    * @return domain
    */
@@ -184,7 +185,7 @@ public class AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo  {
   /**
    * target keyword
 * required field if you don’t specify domain
-* you can specify up to 2000 characters in the keyword field
+* you can specify up to 250 characters in the keyword field
 * all %## will be decoded (plus character ‘+’ will be decoded to a space character)
 * if you need to use the “%” character for your keyword, please specify it as “%25”;
 * if you need to use the “+” character for your keyword, please specify it as “%2B”
@@ -418,8 +419,8 @@ public class AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo  {
 * sources_domain
 * search_results_domain
 * minimum value: 1
-* maximum value: 10
-* default value: 5
+* maximum value: 20
+* default value: 10
    * @return internalListLimit
    */
   @javax.annotation.Nullable

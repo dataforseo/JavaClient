@@ -196,6 +196,7 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   /**
    * device type
 * optional field
+* return results for a specific device type
 * can take the values:desktop, mobile
 * default value: desktop
 * note: for mobile device, only 20 results are returned for every SERP
@@ -253,7 +254,7 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
+   * URL for sending task results
 * optional field
 * once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
 * you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
@@ -514,7 +515,8 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
    * show results from the displayed area
 * optional field
 * can take the values:true, false
-* default value: trueif set to false, the search_this_area mode will be turned off
+* default value: true
+* if set to false, the search_this_area mode will be turned off
 * Note: if the search_this_area mode is turned off, Google Maps listings might contain results beyond the displayed area
    * @return searchThisArea
    */

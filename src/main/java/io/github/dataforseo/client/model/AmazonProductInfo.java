@@ -486,6 +486,30 @@ public class AmazonProductInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_IS_PRIME_VIDEO = "is_prime_video";
+  @SerializedName(SERIALIZED_NAME_IS_PRIME_VIDEO)
+  private Boolean isPrimeVideo;
+
+  public AmazonProductInfo isPrimeVideo(Boolean isPrimeVideo) {
+    this.isPrimeVideo = isPrimeVideo;
+    return this;
+  }
+
+  /**
+   * indicates whether a product has an Amazon Prime Video label
+* if true, specified product is a part of Amazon Prime Video service
+   * @return isPrimeVideo
+   */
+  @javax.annotation.Nullable
+  public Boolean getIsPrimeVideo() {
+    return isPrimeVideo;
+  }
+
+  public void setIsPrimeVideo(Boolean isPrimeVideo) {
+    this.isPrimeVideo = isPrimeVideo;
+  }
+
+
   public static final String SERIALIZED_NAME_APPLICABLE_VOUCHERS = "applicable_vouchers";
   @SerializedName(SERIALIZED_NAME_APPLICABLE_VOUCHERS)
   private List<AmazonApplicableVouchersItem> applicableVouchers;
@@ -779,6 +803,7 @@ public class AmazonProductInfo  {
         Objects.equals(this.isAmazonChoice, amazonProductInfo.isAmazonChoice) &&
         Objects.equals(this.rating, amazonProductInfo.rating) &&
         Objects.equals(this.isNewerModelAvailable, amazonProductInfo.isNewerModelAvailable) &&
+        Objects.equals(this.isPrimeVideo, amazonProductInfo.isPrimeVideo) &&
         Objects.equals(this.applicableVouchers, amazonProductInfo.applicableVouchers) &&
         Objects.equals(this.newerModel, amazonProductInfo.newerModel) &&
         Objects.equals(this.categories, amazonProductInfo.categories) &&
@@ -798,7 +823,7 @@ public class AmazonProductInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, percentageDiscount, currency, isAmazonChoice, rating, isNewerModelAvailable, applicableVouchers, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, xpath, title, details, imageUrl, author, dataAsin, parentAsin, productAsins, priceFrom, priceTo, percentageDiscount, currency, isAmazonChoice, rating, isNewerModelAvailable, isPrimeVideo, applicableVouchers, newerModel, categories, productInformation, productImagesList, productVideosList, description, isAvailable, topLocalReviews, topGlobalReviews);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -832,6 +857,7 @@ public class AmazonProductInfo  {
     sb.append("    isAmazonChoice: ").append(toIndentedString(isAmazonChoice)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    isNewerModelAvailable: ").append(toIndentedString(isNewerModelAvailable)).append("\n");
+    sb.append("    isPrimeVideo: ").append(toIndentedString(isPrimeVideo)).append("\n");
     sb.append("    applicableVouchers: ").append(toIndentedString(applicableVouchers)).append("\n");
     sb.append("    newerModel: ").append(toIndentedString(newerModel)).append("\n");
     sb.append("    categories: ").append(toIndentedString(categories)).append("\n");
@@ -902,6 +928,8 @@ public class AmazonProductInfo  {
     openapiFields.add("rating");
     
     openapiFields.add("is_newer_model_available");
+    
+    openapiFields.add("is_prime_video");
     
     openapiFields.add("applicable_vouchers");
     

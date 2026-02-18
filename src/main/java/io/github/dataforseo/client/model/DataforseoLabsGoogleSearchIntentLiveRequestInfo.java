@@ -113,7 +113,7 @@ public class DataforseoLabsGoogleSearchIntentLiveRequestInfo  {
 * Bosnian, bs,
 * Greek, el,
 * Hungarian, hu,
-* Slovakian, sk,
+* Slovak, sk,
 * Turkish, tr
 * example:
 * English

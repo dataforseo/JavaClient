@@ -197,7 +197,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * additional items present in the element
+   * keywords relevant to the initial search query
 * if there are none, equals null
    * @return items
    */

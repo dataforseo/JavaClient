@@ -215,7 +215,8 @@ public class SerpGoogleOrganicTaskGetRegularResultInfo  {
 
   /**
    * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection;
+* if there is none, the value is null
    * @return spell
    */
   @javax.annotation.Nullable
@@ -239,6 +240,7 @@ public class SerpGoogleOrganicTaskGetRegularResultInfo  {
 
   /**
    * search refinement chips
+* if there are none, the value is null
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -264,7 +266,7 @@ public class SerpGoogleOrganicTaskGetRegularResultInfo  {
    * types of search results found in SERP
 * contains types of all search results (items) found in the returned SERP
 * possible item types:
-* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, images, jobs, knowledge_graph, local_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, ai_overview
+* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, google_posts, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box, visual_stories, commercial_units, local_services, google_hotels, math_solver, currency_box, product_considerations, found_on_web, short_videos, refine_products, explore_brands, perspectives, discussions_and_forums, compare_sites, courses, ai_overview
 * note that this array contains all types of search results found in the returned SERP;
 * however, this endpoint provides data for featured_snippet, organic and paid types only;
 * to get all items (including SERP features and rich snippets) found in the returned SERP, please refer to the Google Organiс Advanced SERP endpoint

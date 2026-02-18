@@ -94,7 +94,7 @@ public class SerpApiAiOverviewShoppingItem  extends BaseSerpApiAiOverviewElement
   }
 
   /**
-   * additional items present in the element
+   * popular keywords relevant to the initial search query
 * if there are none, equals null
    * @return items
    */

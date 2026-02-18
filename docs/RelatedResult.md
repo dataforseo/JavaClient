@@ -22,7 +22,7 @@
 **extendedSnippet** | **String** | includes additional information appended after the result description in SERP |[optional]|
 **images** | **List<AiModeImagesElementInfo>** | images of the component<br>if there are none, equals null |[optional]|
 **ampVersion** | **Boolean** | Accelerated Mobile Pages<br>indicates whether an item has the Accelerated Mobile Page (AMP) version |[optional]|
-**rating** | **RatingInfo** | the element’s rating<br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**rating** | **RatingInfo** | the element’s rating<br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals null |[optional]|
 **price** | **PriceInfo** | price indicated in the element |[optional]|
 **highlighted** | **List<String>** | words highlighted in bold within the results description |[optional]|
 **aboutThisResult** | **AboutThisResultElement** | contains information from the ‘About this result’ panel<br>‘About this result’ panel provides additional context about why Google returned this result for the given query;<br>this feature appears after clicking on the three dots next to most results |[optional]|

@@ -78,7 +78,7 @@ public class SerpScreenshotRequestInfo  {
 * optional field
 * browser preset associated with a certain device type
 * can take the following values: desktop, tablet, mobile
-* note: by default, browser preset corresponds to the device type specified in the POST request
+* Note: by default, browser preset corresponds to the device type specified in the POST request
    * @return browserPreset
    */
   @javax.annotation.Nullable
@@ -104,6 +104,9 @@ public class SerpScreenshotRequestInfo  {
    * width of the browser resolution
 * optional field
 * can be specified in the following range: 240-9999
+* default value for desktop: 1920
+* default value for mobile: 390
+* default value for table: 1024
    * @return browserScreenWidth
    */
   @javax.annotation.Nullable
@@ -129,6 +132,9 @@ public class SerpScreenshotRequestInfo  {
    * height of the browser resolution
 * optional field
 * can be specified in the following range: 240-9999
+* default value for desktop: 1080
+* default value for mobile: 844
+* default value for table: 1366
    * @return browserScreenHeight
    */
   @javax.annotation.Nullable
@@ -154,7 +160,9 @@ public class SerpScreenshotRequestInfo  {
    * browser scale factor
 * optional field
 * can be specified in the following range: 0.5-3
-* default value: 1
+* default value for desktop: 1
+* default value for mobile: 3
+* default value for table: 2
    * @return browserScreenScaleFactor
    */
   @javax.annotation.Nullable

@@ -310,6 +310,7 @@ public class SerpYoutubeVideoSubtitlesLiveAdvancedResultInfo  {
 
   /**
    * the category the video belongs to
+* Note: this field is deprecated and always returns null
    * @return category
    */
   @javax.annotation.Nullable

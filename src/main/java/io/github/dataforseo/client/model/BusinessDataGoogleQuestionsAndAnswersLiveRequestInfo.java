@@ -57,11 +57,9 @@ public class BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo  {
 * this field can also be used to pass the following parameters:
 * cid – a unique, google-defined id of the business entity;
 * place_id – an identifier of the business entity in Google Maps;
-* spp – a unique identifier of local services featured in the local_pack element of Google SERP
 * example:
 * cid:194604053573767737
 * place_id:GhIJQWDl0CIeQUARxks3icF8U8A
-* spp:CgsvZy8xdGN4cWRraBoUChIJPZDrEzLsZIgRoNrpodC5P30
 * learn more about the cid and place_id identifiers in this help center article
 * learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword

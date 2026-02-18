@@ -117,7 +117,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * rating of the corresponding local businesses
+   * rating of the corresponding local business
 * popularity rate based on reviews as displayed in the results
    * @return rating
    */

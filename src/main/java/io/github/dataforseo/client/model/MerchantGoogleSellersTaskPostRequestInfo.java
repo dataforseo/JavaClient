@@ -121,6 +121,33 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_PVF = "pvf";
+  @SerializedName(SERIALIZED_NAME_PVF)
+  private String pvf;
+
+  public MerchantGoogleSellersTaskPostRequestInfo pvf(String pvf) {
+    this.pvf = pvf;
+    return this;
+  }
+
+  /**
+   * product variant filter  on Google Shopping
+* optional field
+* parameter in Google Shopping URL, setting optional product variant filtration;
+* example:
+* Eg4iBWNvbG9yKgV3aGl0ZRISIgxwYWNrYWdlIHNpemUqAjE0EgoiBHNpemUqAnhs
+   * @return pvf
+   */
+  @javax.annotation.Nullable
+  public String getPvf() {
+    return pvf;
+  }
+
+  public void setPvf(String pvf) {
+    this.pvf = pvf;
+  }
+
+
   public static final String SERIALIZED_NAME_PRIORITY = "priority";
   @SerializedName(SERIALIZED_NAME_PRIORITY)
   private Integer priority;
@@ -292,6 +319,36 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_DEPTH = "depth";
+  @SerializedName(SERIALIZED_NAME_DEPTH)
+  private Integer depth;
+
+  public MerchantGoogleSellersTaskPostRequestInfo depth(Integer depth) {
+    this.depth = depth;
+    return this;
+  }
+
+  /**
+   * parsing depth
+* optional field
+* number of results to be retrieved from Google Shopping SERP
+* default value: 10
+* max value: 200
+* your account will be billed per each SERP containing up to 10 results;
+* setting depth above 10 may result in additional charges if the search engine returns more than 10 results;
+* the cost can be calculated on the Pricing page
+   * @return depth
+   */
+  @javax.annotation.Nullable
+  public Integer getDepth() {
+    return depth;
+  }
+
+  public void setDepth(Integer depth) {
+    this.depth = depth;
+  }
+
+
   public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
   @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
   private String seDomain;
@@ -411,7 +468,7 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
   }
 
   /**
-   * return URL for sending task results
+   * URL for sending task results
 * optional field
 * once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
 * you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
@@ -538,12 +595,14 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
         Objects.equals(this.productId, merchantGoogleSellersTaskPostRequestInfo.productId) &&
         Objects.equals(this.dataDocid, merchantGoogleSellersTaskPostRequestInfo.dataDocid) &&
         Objects.equals(this.gid, merchantGoogleSellersTaskPostRequestInfo.gid) &&
+        Objects.equals(this.pvf, merchantGoogleSellersTaskPostRequestInfo.pvf) &&
         Objects.equals(this.priority, merchantGoogleSellersTaskPostRequestInfo.priority) &&
         Objects.equals(this.locationName, merchantGoogleSellersTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, merchantGoogleSellersTaskPostRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, merchantGoogleSellersTaskPostRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, merchantGoogleSellersTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, merchantGoogleSellersTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.depth, merchantGoogleSellersTaskPostRequestInfo.depth) &&
         Objects.equals(this.seDomain, merchantGoogleSellersTaskPostRequestInfo.seDomain) &&
         Objects.equals(this.getShopsOnGoogle, merchantGoogleSellersTaskPostRequestInfo.getShopsOnGoogle) &&
         Objects.equals(this.additionalSpecifications, merchantGoogleSellersTaskPostRequestInfo.additionalSpecifications) &&
@@ -560,7 +619,7 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(productId, dataDocid, gid, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, getShopsOnGoogle, additionalSpecifications, tag, postbackUrl, postbackData, pingbackUrl);
+  return Objects.hash(productId, dataDocid, gid, pvf, priority, locationName, locationCode, locationCoordinate, languageName, languageCode, depth, seDomain, getShopsOnGoogle, additionalSpecifications, tag, postbackUrl, postbackData, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -578,12 +637,14 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("    dataDocid: ").append(toIndentedString(dataDocid)).append("\n");
     sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
+    sb.append("    pvf: ").append(toIndentedString(pvf)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    getShopsOnGoogle: ").append(toIndentedString(getShopsOnGoogle)).append("\n");
     sb.append("    additionalSpecifications: ").append(toIndentedString(additionalSpecifications)).append("\n");
@@ -620,6 +681,8 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
     
     openapiFields.add("gid");
     
+    openapiFields.add("pvf");
+    
     openapiFields.add("priority");
     
     openapiFields.add("location_name");
@@ -631,6 +694,8 @@ public class MerchantGoogleSellersTaskPostRequestInfo  {
     openapiFields.add("language_name");
     
     openapiFields.add("language_code");
+    
+    openapiFields.add("depth");
     
     openapiFields.add("se_domain");
     

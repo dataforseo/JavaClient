@@ -11,4 +11,4 @@
 **dateFrom** | **String** | starting date of stay<br>in the format “year-month-date”<br>example:<br>2019-11-15 |[optional]|
 **dateTo** | **String** | ending date of stay<br>in the format “year-month-date”<br>example:<br>2019-11-17 |[optional]|
 **dataAttrid** | **String** | google defined data attribute ID<br>example:<br>kc:/local:hotel booking |[optional]|
-**items** | **List<KnowledgeGraphHotelsBookingElement>** | additional items present in the element<br>if there are none, equals null |[optional]|
+**items** | **List<KnowledgeGraphHotelsBookingElement>** | keywords relevant to the initial search query<br>if there are none, equals null |[optional]|

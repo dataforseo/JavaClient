@@ -165,6 +165,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   /**
    * device type
 * optional field
+* return results for a specific device type
 * can take the values:desktop, mobile
 * default value: desktop
    * @return device
@@ -365,9 +366,12 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
 
   /**
    * target match type
-* required field if stop_crawl_on_match is specified;
+* required field if stop_crawl_on_match is specified
 * type of match for the match_value
-* possible values: domain, with_subdomains, wildcard
+* possible values:
+* domain – specific domain or subdomain
+* with_subdomains – main domain and subdomains
+* wildcard –  wildcard pattern
    * @return matchType
    */
   @javax.annotation.Nullable
@@ -390,11 +394,12 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
   }
 
   /**
-   * target domain or wildcard value
-* required field if stop_crawl_on_match is specified;
-* specify a target domain or wildcard value;
-* Note: domain name must be specified without a request protocol;
-* example: dataforseo.com
+   * target domain, subdomain, or wildcard value
+* required field if stop_crawl_on_match is specified
+* specify a target domain, subdomain, or wildcard value;
+* Note: domain or subdomain must be specified without a request protocol;
+* example: 'match_value': 'dataforseo.com',
+* 'match_value': '/blog/post-*'
    * @return matchValue
    */
   @javax.annotation.Nullable
@@ -502,6 +507,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
    * browser screen width
 * optional field
 * you can set a custom browser screen width to calculate pixel rankings for a particular device;
+* can be specified within the following range: 240-9999;
 * by default, the parameter is set to:
 * 1920 for desktop;
 * 360 for mobile on android;
@@ -532,6 +538,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
    * browser screen height
 * optional field
 * you can set a custom browser screen height to calculate pixel rankings for a particular device;
+* can be specified within the following range: 240-9999;
 * by default, the parameter is set to:
 * 1080 for desktop;
 * 640 for mobile on android;
@@ -562,6 +569,7 @@ public class SerpBingOrganicLiveAdvancedRequestInfo  {
    * browser screen resolution ratio
 * optional field
 * you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;
+* can be specified within the following range: 0.5-3;
 * by default, the parameter is set to:
 * 1 for desktop;
 * 3 for mobile on android;

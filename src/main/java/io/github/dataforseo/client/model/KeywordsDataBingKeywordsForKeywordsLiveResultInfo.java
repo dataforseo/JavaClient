@@ -159,9 +159,9 @@ public class KeywordsDataBingKeywordsForKeywordsLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_COMPETITION = "competition";
   @SerializedName(SERIALIZED_NAME_COMPETITION)
-  private Double competition;
+  private Integer competition;
 
-  public KeywordsDataBingKeywordsForKeywordsLiveResultInfo competition(Double competition) {
+  public KeywordsDataBingKeywordsForKeywordsLiveResultInfo competition(Integer competition) {
     this.competition = competition;
     return this;
   }
@@ -176,11 +176,11 @@ public class KeywordsDataBingKeywordsForKeywordsLiveResultInfo  {
    * @return competition
    */
   @javax.annotation.Nullable
-  public Double getCompetition() {
+  public Integer getCompetition() {
     return competition;
   }
 
-  public void setCompetition(Double competition) {
+  public void setCompetition(Integer competition) {
     this.competition = competition;
   }
 
