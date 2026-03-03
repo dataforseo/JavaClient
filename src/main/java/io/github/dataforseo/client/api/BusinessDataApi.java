@@ -83,8 +83,6 @@ import io.github.dataforseo.client.model.BusinessDataTripadvisorReviewsTasksRead
 import io.github.dataforseo.client.model.BusinessDataTripadvisorReviewsTaskGetResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaPinterestLiveRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaPinterestLiveResponseInfo;
-import io.github.dataforseo.client.model.BusinessDataSocialMediaFacebookLiveRequestInfo;
-import io.github.dataforseo.client.model.BusinessDataSocialMediaFacebookLiveResponseInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaRedditLiveRequestInfo;
 import io.github.dataforseo.client.model.BusinessDataSocialMediaRedditLiveResponseInfo;
 
@@ -4048,76 +4046,6 @@ public class BusinessDataApi {
  
             okhttp3.Call localVarCall = socialMediaPinterestLiveValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<BusinessDataSocialMediaPinterestLiveResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
-    public okhttp3.Call socialMediaFacebookLiveCall(List<BusinessDataSocialMediaFacebookLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/business_data/social_media/facebook/live";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call socialMediaFacebookLiveValidateBeforeCall(List<BusinessDataSocialMediaFacebookLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return socialMediaFacebookLiveCall(payload, _callback);
- 
-        }
- 
-        public BusinessDataSocialMediaFacebookLiveResponseInfo socialMediaFacebookLive(List<BusinessDataSocialMediaFacebookLiveRequestInfo> payload) throws ApiException {
-            ApiResponse<BusinessDataSocialMediaFacebookLiveResponseInfo> localVarResp = socialMediaFacebookLiveWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<BusinessDataSocialMediaFacebookLiveResponseInfo> socialMediaFacebookLiveWithHttpInfo(List<BusinessDataSocialMediaFacebookLiveRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = socialMediaFacebookLiveValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<BusinessDataSocialMediaFacebookLiveResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call socialMediaFacebookLiveAsync(List<BusinessDataSocialMediaFacebookLiveRequestInfo> payload, final ApiCallback<BusinessDataSocialMediaFacebookLiveResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = socialMediaFacebookLiveValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<BusinessDataSocialMediaFacebookLiveResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }

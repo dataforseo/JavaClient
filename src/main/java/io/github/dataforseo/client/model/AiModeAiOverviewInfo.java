@@ -71,9 +71,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -96,8 +94,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * absolute rank in SERPabsolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -120,7 +117,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * 
+   * SERP pageSERP page on which the element ranks
    * @return page
    */
   @javax.annotation.Nullable
@@ -143,9 +140,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * the alignment of the element in SERPcan take the following values:left, right
    * @return position
    */
   @javax.annotation.Nullable
@@ -191,8 +186,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * content of the element in markdown format
-* the text of the ai_overview formatted in the markdown markup language
+   * content of the element in markdown formatthe text of the ai_overview formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -238,8 +232,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * additional references relevant to the item
-* includes references to webpages that may have been used to generate the ai_overview
+   * additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview
    * @return references
    */
   @javax.annotation.Nullable
@@ -262,9 +255,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * rectangle parameters
-* contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-* equals null if calculate_rectangles in the POST request is not set to true
+   * rectangle parameterscontains cartesian coordinates and pixel dimensions of the result's snippet in SERPequals null if calculate_rectangles in the POST request is not set to true
    * @return rectangle
    */
   @javax.annotation.Nullable

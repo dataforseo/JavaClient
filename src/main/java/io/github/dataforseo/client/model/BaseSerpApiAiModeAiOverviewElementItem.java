@@ -71,9 +71,7 @@ public class BaseSerpApiAiModeAiOverviewElementItem  {
   }
 
   /**
-   * the alignment of the element in SERP
-* can take the following values:
-* left, right
+   * the alignment of the element in SERPcan take the following values:left, right
    * @return position
    */
   @javax.annotation.Nullable

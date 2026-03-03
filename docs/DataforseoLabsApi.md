@@ -23,7 +23,6 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**googleKeywordsForCategoriesLive**](DataforseoLabsApi.md#googleKeywordsForCategoriesLive) | **POST**  /v3/dataforseo_labs/google/keywords_for_categories/live  |
 | [**googleDomainMetricsByCategoriesLive**](DataforseoLabsApi.md#googleDomainMetricsByCategoriesLive) | **POST**  /v3/dataforseo_labs/google/domain_metrics_by_categories/live  |
 | [**googleTopSearchesLive**](DataforseoLabsApi.md#googleTopSearchesLive) | **POST**  /v3/dataforseo_labs/google/top_searches/live  |
-| [**googleDomainWhoisOverviewLive**](DataforseoLabsApi.md#googleDomainWhoisOverviewLive) | **POST**  /v3/dataforseo_labs/google/domain_whois_overview/live  |
 | [**googleRankedKeywordsLive**](DataforseoLabsApi.md#googleRankedKeywordsLive) | **POST**  /v3/dataforseo_labs/google/ranked_keywords/live  |
 | [**googleSerpCompetitorsLive**](DataforseoLabsApi.md#googleSerpCompetitorsLive) | **POST**  /v3/dataforseo_labs/google/serp_competitors/live  |
 | [**googleCompetitorsDomainLive**](DataforseoLabsApi.md#googleCompetitorsDomainLive) | **POST**  /v3/dataforseo_labs/google/competitors_domain/live  |
@@ -1631,103 +1630,6 @@ public class Example {
 ### Return type
 
 [**DataforseoLabsGoogleTopSearchesLiveResponseInfo**](DataforseoLabsGoogleTopSearchesLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="googleDomainWhoisOverviewLive"></a>
-# **googleDomainWhoisOverviewLive**
-> DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo googleDomainWhoisOverviewLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    DataforseoLabsApi apiInstance = new DataforseoLabsApi(defaultClient);
-    DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo response = apiInstance.googleDomainWhoisOverviewLive(
-       List.of(
-    
-           new DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo()
-        
-           .limit(2)
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "epp_status_codes",
-    
-           "in",
-    
-           List.of(
-    
-           "client_transfer_prohibited",
-    
-           "client_update_prohibited"
-    
-       )
-    
-       )
-    
-       ))
-    
-       )
-    );
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling DataforseoLabsApi#googleDomainWhoisOverviewLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>&gt;**](List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo**](DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo.md)
 
 ### Authorization
 

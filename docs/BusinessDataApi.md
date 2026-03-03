@@ -58,7 +58,6 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**tripadvisorReviewsTasksReady**](BusinessDataApi.md#tripadvisorReviewsTasksReady) | **GET**  /v3/business_data/tripadvisor/reviews/tasks_ready  |
 | [**tripadvisorReviewsTaskGet**](BusinessDataApi.md#tripadvisorReviewsTaskGet) | **GET**  /v3/business_data/tripadvisor/reviews/task_get/{id}  |
 | [**socialMediaPinterestLive**](BusinessDataApi.md#socialMediaPinterestLive) | **POST**  /v3/business_data/social_media/pinterest/live  |
-| [**socialMediaFacebookLive**](BusinessDataApi.md#socialMediaFacebookLive) | **POST**  /v3/business_data/social_media/facebook/live  |
 | [**socialMediaRedditLive**](BusinessDataApi.md#socialMediaRedditLive) | **POST**  /v3/business_data/social_media/reddit/live  |
 
 <a id="businessDataIdList"></a>
@@ -4187,93 +4186,6 @@ public class Example {
 ### Return type
 
 [**BusinessDataSocialMediaPinterestLiveResponseInfo**](BusinessDataSocialMediaPinterestLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="socialMediaFacebookLive"></a>
-# **socialMediaFacebookLive**
-> BusinessDataSocialMediaFacebookLiveResponseInfo socialMediaFacebookLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataSocialMediaFacebookLiveResponseInfo response = apiInstance.socialMediaFacebookLive(
-       List.of(
-    
-           new BusinessDataSocialMediaFacebookLiveRequestInfo()
-        
-           .targets(List.of(
-    
-           "https://prnt.sc/",
-    
-           "https://developers.facebook.com/docs/plugins/like-button/",
-    
-           "https://www.shbarcelona.com/blog/en/salsa-dance-clubs-in-barcelona/"
-    
-       ))
-        
-        
-           .tag("some_string_123")
-    
-       )
-    );
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling BusinessDataApi#socialMediaFacebookLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<BusinessDataSocialMediaFacebookLiveRequestInfo>&gt;**](List<BusinessDataSocialMediaFacebookLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**BusinessDataSocialMediaFacebookLiveResponseInfo**](BusinessDataSocialMediaFacebookLiveResponseInfo.md)
 
 ### Authorization
 

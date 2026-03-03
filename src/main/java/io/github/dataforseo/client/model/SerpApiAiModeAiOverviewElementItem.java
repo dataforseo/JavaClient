@@ -117,7 +117,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * website links featured in the element
+   * website links featured in the elementif there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable
@@ -140,8 +140,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * images of the element
-* if there are none, equals null
+   * images of the elementif there are none, equals null
    * @return images
    */
   @javax.annotation.Nullable
@@ -164,8 +163,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * references relevant to the elementincludes references to webpages that were used to generate the ai_overview_element
    * @return references
    */
   @javax.annotation.Nullable

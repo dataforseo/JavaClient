@@ -390,10 +390,10 @@ public class MerchantGoogleProductInfoTaskPostRequestInfo  {
 
   /**
    * postback_url datatype
-* required field if you specify postback_url
+* optional field
 * corresponds to the datatype that will be sent to your server
 * possible values:
-* advanced, html
+* advanced
    * @return postbackData
    */
   @javax.annotation.Nullable

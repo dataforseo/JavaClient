@@ -109,7 +109,7 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
 * optional field
 * if you use this field, you don't need to specify language_name
 * by default, language settings correspond to one of the local official languages of the specified location
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:
 * en
    * @return languageCode
@@ -197,7 +197,7 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
 * optional field
 * if you use this field, you don't need to specify language_code
 * by default, language settings correspond to one of the local official languages of the specified location
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:
 * English
    * @return languageName

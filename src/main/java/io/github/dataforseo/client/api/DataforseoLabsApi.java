@@ -40,8 +40,6 @@ import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainMetricsByCate
 import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainMetricsByCategoriesLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleTopSearchesLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleTopSearchesLiveResponseInfo;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo;
-import io.github.dataforseo.client.model.DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleRankedKeywordsLiveRequestInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleRankedKeywordsLiveResponseInfo;
 import io.github.dataforseo.client.model.DataforseoLabsGoogleSerpCompetitorsLiveRequestInfo;
@@ -1485,76 +1483,6 @@ public class DataforseoLabsApi {
  
             okhttp3.Call localVarCall = googleTopSearchesLiveValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<DataforseoLabsGoogleTopSearchesLiveResponseInfo>(){}.getType();
-            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
-            return localVarCall;
-        }
-
-    public okhttp3.Call googleDomainWhoisOverviewLiveCall(List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-           String basePath = null;
-           // Operation Servers
-           String[] localBasePaths = new String[] {  };
-
-           // Determine Base Path to Use
-           if (localCustomBaseUrl != null){
-               basePath = localCustomBaseUrl;
-           } else if ( localBasePaths.length > 0 ) {
-               basePath = localBasePaths[localHostIndex];
-           } else {
-               basePath = null;
-           }
-
-           Object localVarPostBody = payload;
-
-           // create path and map variables
-           String localVarPath = "/v3/dataforseo_labs/google/domain_whois_overview/live";
-
-           List<Pair> localVarQueryParams = new ArrayList<Pair>();
-           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
-           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-           Map<String, String> localVarCookieParams = new HashMap<String, String>();
-           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-           final String[] localVarAccepts = {
-               "application/json"
-           };
-           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
-           if (localVarAccept != null) {
-               localVarHeaderParams.put("Accept", localVarAccept);
-           }
-
-           final String[] localVarContentTypes = {
-               "application/json"
-           };
-           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
-           if (localVarContentType != null) {
-               localVarHeaderParams.put("Content-Type", localVarContentType);
-           }
-
-           String[] localVarAuthNames = new String[] { "basicAuth" };
-           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
-       }
-
-        @SuppressWarnings("rawtypes")
-        private okhttp3.Call googleDomainWhoisOverviewLiveValidateBeforeCall(List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> payload, final ApiCallback _callback) throws ApiException {
-            return googleDomainWhoisOverviewLiveCall(payload, _callback);
- 
-        }
- 
-        public DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo googleDomainWhoisOverviewLive(List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> payload) throws ApiException {
-            ApiResponse<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> localVarResp = googleDomainWhoisOverviewLiveWithHttpInfo(payload);
-            return localVarResp.getData();
-        }
- 
-        public ApiResponse<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> googleDomainWhoisOverviewLiveWithHttpInfo(List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> payload) throws ApiException {
-            okhttp3.Call localVarCall = googleDomainWhoisOverviewLiveValidateBeforeCall(payload, null);
-            Type localVarReturnType = new TypeToken<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
-        }
- 
-        public okhttp3.Call googleDomainWhoisOverviewLiveAsync(List<DataforseoLabsGoogleDomainWhoisOverviewLiveRequestInfo> payload, final ApiCallback<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo> _callback) throws ApiException {
- 
-            okhttp3.Call localVarCall = googleDomainWhoisOverviewLiveValidateBeforeCall(payload, _callback);
-            Type localVarReturnType = new TypeToken<DataforseoLabsGoogleDomainWhoisOverviewLiveResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }

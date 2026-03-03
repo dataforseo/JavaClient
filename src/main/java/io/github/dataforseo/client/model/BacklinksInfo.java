@@ -49,6 +49,7 @@ public class BacklinksInfo  {
 
   /**
    * number of referring domains
+* referring domains include subdomains that are counted as separate domains for this metric
    * @return referringDomains
    */
   @javax.annotation.Nullable
@@ -94,7 +95,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * number of referring pages
+   * number of pages pointing to the target website
    * @return referringPages
    */
   @javax.annotation.Nullable
@@ -165,7 +166,7 @@ public class BacklinksInfo  {
 
   /**
    * date and time when backlink data was updated
-* in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
 * example:
 * 2019-11-15 12:57:46 +00:00
    * @return timeUpdate

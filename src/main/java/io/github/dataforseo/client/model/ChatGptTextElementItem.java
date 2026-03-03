@@ -64,9 +64,9 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
 
   public static final String SERIALIZED_NAME_SOURCES = "sources";
   @SerializedName(SERIALIZED_NAME_SOURCES)
-  private List<ChatGptSource> sources;
+  private List<SourceInfo> sources;
 
-  public ChatGptTextElementItem sources(List<ChatGptSource> sources) {
+  public ChatGptTextElementItem sources(List<SourceInfo> sources) {
     this.sources = sources;
     return this;
   }
@@ -76,11 +76,11 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
    * @return sources
    */
   @javax.annotation.Nullable
-  public List<ChatGptSource> getSources() {
+  public List<SourceInfo> getSources() {
     return sources;
   }
 
-  public void setSources(List<ChatGptSource> sources) {
+  public void setSources(List<SourceInfo> sources) {
     this.sources = sources;
   }
 

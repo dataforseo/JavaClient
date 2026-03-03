@@ -56,6 +56,17 @@ import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTasksRe
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesTaskGetResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesLiveRequestInfo;
 import io.github.dataforseo.client.model.AiOptimizationGeminiLlmResponsesLiveResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLocationsResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLanguagesResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperTaskPostRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperTaskPostResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperTasksReadyResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesModelsResponseInfo;
 import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesLiveRequestInfo;
 import io.github.dataforseo.client.model.AiOptimizationPerplexityLlmResponsesLiveResponseInfo;
@@ -2342,6 +2353,586 @@ public class AiOptimizationApi {
  
             okhttp3.Call localVarCall = geminiLlmResponsesLiveValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmResponsesLiveResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call geminiLlmScraperLocationsCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/locations";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call geminiLlmScraperLocationsValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return geminiLlmScraperLocationsCall(_callback);
+
+    }
+
+    public AiOptimizationGeminiLlmScraperLocationsResponseInfo geminiLlmScraperLocations() throws ApiException {
+       ApiResponse<AiOptimizationGeminiLlmScraperLocationsResponseInfo> localVarResp = geminiLlmScraperLocationsWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationGeminiLlmScraperLocationsResponseInfo> geminiLlmScraperLocationsWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = geminiLlmScraperLocationsValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLocationsResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call geminiLlmScraperLocationsAsync(final ApiCallback<AiOptimizationGeminiLlmScraperLocationsResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = geminiLlmScraperLocationsValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLocationsResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call geminiLlmScraperLanguagesCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/languages";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call geminiLlmScraperLanguagesValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return geminiLlmScraperLanguagesCall(_callback);
+
+    }
+
+    public AiOptimizationGeminiLlmScraperLanguagesResponseInfo geminiLlmScraperLanguages() throws ApiException {
+       ApiResponse<AiOptimizationGeminiLlmScraperLanguagesResponseInfo> localVarResp = geminiLlmScraperLanguagesWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationGeminiLlmScraperLanguagesResponseInfo> geminiLlmScraperLanguagesWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = geminiLlmScraperLanguagesValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLanguagesResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call geminiLlmScraperLanguagesAsync(final ApiCallback<AiOptimizationGeminiLlmScraperLanguagesResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = geminiLlmScraperLanguagesValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLanguagesResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call geminiLlmScraperTaskPostCall(List<AiOptimizationGeminiLlmScraperTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/task_post";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call geminiLlmScraperTaskPostValidateBeforeCall(List<AiOptimizationGeminiLlmScraperTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return geminiLlmScraperTaskPostCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationGeminiLlmScraperTaskPostResponseInfo geminiLlmScraperTaskPost(List<AiOptimizationGeminiLlmScraperTaskPostRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationGeminiLlmScraperTaskPostResponseInfo> localVarResp = geminiLlmScraperTaskPostWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationGeminiLlmScraperTaskPostResponseInfo> geminiLlmScraperTaskPostWithHttpInfo(List<AiOptimizationGeminiLlmScraperTaskPostRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = geminiLlmScraperTaskPostValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTaskPostResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call geminiLlmScraperTaskPostAsync(List<AiOptimizationGeminiLlmScraperTaskPostRequestInfo> payload, final ApiCallback<AiOptimizationGeminiLlmScraperTaskPostResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = geminiLlmScraperTaskPostValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTaskPostResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call geminiLlmScraperTasksReadyCall( final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+          String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/tasks_ready";
+   
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call geminiLlmScraperTasksReadyValidateBeforeCall(final ApiCallback _callback) throws ApiException {
+
+       return geminiLlmScraperTasksReadyCall(_callback);
+
+    }
+
+    public AiOptimizationGeminiLlmScraperTasksReadyResponseInfo geminiLlmScraperTasksReady() throws ApiException {
+       ApiResponse<AiOptimizationGeminiLlmScraperTasksReadyResponseInfo> localVarResp = geminiLlmScraperTasksReadyWithHttpInfo();
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationGeminiLlmScraperTasksReadyResponseInfo> geminiLlmScraperTasksReadyWithHttpInfo() throws ApiException {
+       okhttp3.Call localVarCall = geminiLlmScraperTasksReadyValidateBeforeCall(null);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTasksReadyResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call geminiLlmScraperTasksReadyAsync(final ApiCallback<AiOptimizationGeminiLlmScraperTasksReadyResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = geminiLlmScraperTasksReadyValidateBeforeCall(_callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTasksReadyResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call geminiLlmScraperTaskGetAdvancedCall( String id,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/task_get/advanced/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call geminiLlmScraperTaskGetAdvancedValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'id' is set
+       if (id == null) {
+           throw new ApiException("Missing the required parameter 'id' when calling geminiLlmScraperTaskGetAdvanced(Async)");
+       }
+
+       return geminiLlmScraperTaskGetAdvancedCall(id, _callback);
+
+    }
+
+    public AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo geminiLlmScraperTaskGetAdvanced(String id) throws ApiException {
+       ApiResponse<AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo> localVarResp = geminiLlmScraperTaskGetAdvancedWithHttpInfo(id);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo> geminiLlmScraperTaskGetAdvancedWithHttpInfo(String id) throws ApiException {
+       okhttp3.Call localVarCall = geminiLlmScraperTaskGetAdvancedValidateBeforeCall(id, null);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call geminiLlmScraperTaskGetAdvancedAsync(String id, final ApiCallback<AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = geminiLlmScraperTaskGetAdvancedValidateBeforeCall(id, _callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTaskGetAdvancedResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call geminiLlmScraperTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
+       String basePath = null;
+       // Operation Servers
+       String[] localBasePaths = new String[] {  };
+
+       // Determine Base Path to Use
+       if (localCustomBaseUrl != null){
+           basePath = localCustomBaseUrl;
+       } else if ( localBasePaths.length > 0 ) {
+           basePath = localBasePaths[localHostIndex];
+       } else {
+           basePath = null;
+       }
+
+       Object localVarPostBody = null;
+
+       // create path and map variables
+   
+       String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/task_get/html/{id}".replace("{" + "id" + "}", localVarApiClient.escapeString(id.toString()));
+
+
+       List<Pair> localVarQueryParams = new ArrayList<Pair>();
+       List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+       Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+       Map<String, String> localVarCookieParams = new HashMap<String, String>();
+       Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+       final String[] localVarAccepts = {
+           "application/json"
+       };
+       final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+       if (localVarAccept != null) {
+           localVarHeaderParams.put("Accept", localVarAccept);
+       }
+
+       final String[] localVarContentTypes = {
+       };
+       final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+       if (localVarContentType != null) {
+           localVarHeaderParams.put("Content-Type", localVarContentType);
+       }
+
+       String[] localVarAuthNames = new String[] { "basicAuth" };
+       return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call geminiLlmScraperTaskGetHtmlValidateBeforeCall(String id, final ApiCallback _callback) throws ApiException {
+       // verify the required parameter 'id' is set
+       if (id == null) {
+           throw new ApiException("Missing the required parameter 'id' when calling geminiLlmScraperTaskGetHtml(Async)");
+       }
+
+       return geminiLlmScraperTaskGetHtmlCall(id, _callback);
+
+    }
+
+    public AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo geminiLlmScraperTaskGetHtml(String id) throws ApiException {
+       ApiResponse<AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo> localVarResp = geminiLlmScraperTaskGetHtmlWithHttpInfo(id);
+       return localVarResp.getData();
+    }
+
+    public ApiResponse<AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo> geminiLlmScraperTaskGetHtmlWithHttpInfo(String id) throws ApiException {
+       okhttp3.Call localVarCall = geminiLlmScraperTaskGetHtmlValidateBeforeCall(id, null);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo>(){}.getType();
+       return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    public okhttp3.Call geminiLlmScraperTaskGetHtmlAsync(String id, final ApiCallback<AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo> _callback) throws ApiException {
+
+       okhttp3.Call localVarCall = geminiLlmScraperTaskGetHtmlValidateBeforeCall(id, _callback);
+       Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperTaskGetHtmlResponseInfo>(){}.getType();
+       localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+       return localVarCall;
+    }
+
+    public okhttp3.Call geminiLlmScraperLiveAdvancedCall(List<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/live/advanced";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call geminiLlmScraperLiveAdvancedValidateBeforeCall(List<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return geminiLlmScraperLiveAdvancedCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo geminiLlmScraperLiveAdvanced(List<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo> localVarResp = geminiLlmScraperLiveAdvancedWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo> geminiLlmScraperLiveAdvancedWithHttpInfo(List<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = geminiLlmScraperLiveAdvancedValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call geminiLlmScraperLiveAdvancedAsync(List<AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo> payload, final ApiCallback<AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = geminiLlmScraperLiveAdvancedValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLiveAdvancedResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call geminiLlmScraperLiveHtmlCall(List<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/ai_optimization/gemini/llm_scraper/live/html";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call geminiLlmScraperLiveHtmlValidateBeforeCall(List<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return geminiLlmScraperLiveHtmlCall(payload, _callback);
+ 
+        }
+ 
+        public AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo geminiLlmScraperLiveHtml(List<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo> payload) throws ApiException {
+            ApiResponse<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo> localVarResp = geminiLlmScraperLiveHtmlWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo> geminiLlmScraperLiveHtmlWithHttpInfo(List<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = geminiLlmScraperLiveHtmlValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call geminiLlmScraperLiveHtmlAsync(List<AiOptimizationGeminiLlmScraperLiveHtmlRequestInfo> payload, final ApiCallback<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = geminiLlmScraperLiveHtmlValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<AiOptimizationGeminiLlmScraperLiveHtmlResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }

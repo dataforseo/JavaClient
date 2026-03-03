@@ -140,8 +140,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * images of the component
-* if there are none, equals null
+   * images of the componentif there are none, equals null
    * @return images
    */
   @javax.annotation.Nullable
@@ -164,9 +163,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * sitelinksthe links shown below some of Google's search resultsif there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable
@@ -189,8 +186,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * references relevant to the element
-* includes references to webpages that were used to generate the ai_overview_element
+   * references relevant to the elementincludes references to webpages that were used to generate the ai_overview_element
    * @return references
    */
   @javax.annotation.Nullable

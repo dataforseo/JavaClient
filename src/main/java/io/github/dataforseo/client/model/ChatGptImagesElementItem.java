@@ -64,9 +64,9 @@ public class ChatGptImagesElementItem  extends BaseChatGptLlmScraperElementItem 
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<ChatGptImagesElement> items;
+  private List<GeminiImagesElement> items;
 
-  public ChatGptImagesElementItem items(List<ChatGptImagesElement> items) {
+  public ChatGptImagesElementItem items(List<GeminiImagesElement> items) {
     this.items = items;
     return this;
   }
@@ -76,11 +76,11 @@ public class ChatGptImagesElementItem  extends BaseChatGptLlmScraperElementItem 
    * @return items
    */
   @javax.annotation.Nullable
-  public List<ChatGptImagesElement> getItems() {
+  public List<GeminiImagesElement> getItems() {
     return items;
   }
 
-  public void setItems(List<ChatGptImagesElement> items) {
+  public void setItems(List<GeminiImagesElement> items) {
     this.items = items;
   }
 

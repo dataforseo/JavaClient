@@ -80,7 +80,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
    * search engine location code
 * required field if you don't specify location_name or location_coordinate
 * if you use this field, you don't need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
 * example:
 * 2840
    * @return locationCode
@@ -108,7 +108,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
    * search engine language code
 * required field if you don't specify language_name
 * if you use this field, you don't need to specify language_name
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:en
    * @return languageCode
    */
@@ -195,7 +195,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
    * full name of search engine location
 * required field if you don't specify location_code or location_coordinate
 * if you use this field, you don't need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
+* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locations
 * example:
 * London,England,United Kingdom
    * @return locationName
@@ -223,7 +223,7 @@ public class SerpGoogleLocalFinderLiveAdvancedRequestInfo  {
    * full name of search engine language
 * required field if you don't specify language_code
 * if you use this field, you don't need to specify language_code
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages
+* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languages
 * example:
 * English
    * @return languageName

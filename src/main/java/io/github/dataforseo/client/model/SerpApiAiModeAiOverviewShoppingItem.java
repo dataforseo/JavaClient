@@ -71,8 +71,7 @@ public class SerpApiAiModeAiOverviewShoppingItem  extends BaseSerpApiAiModeAiOve
   }
 
   /**
-   * content of the element in markdown format
-* the text of the ai_overview formatted in the markdown markup language
+   * content of the element in markdown formatthe text of the ai_overview formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable

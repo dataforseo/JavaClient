@@ -71,8 +71,7 @@ public class SerpApiAiModeAiOverviewExpandedElementItem  extends BaseSerpApiAiMo
   }
 
   /**
-   * reference text
-* text snippet from the page that was used to generate the ai_overview_element
+   * reference texttext snippet from the page that was used to generate the ai_overview_element
    * @return text
    */
   @javax.annotation.Nullable
@@ -118,8 +117,7 @@ public class SerpApiAiModeAiOverviewExpandedElementItem  extends BaseSerpApiAiMo
   }
 
   /**
-   * additional references relevant to the item
-* includes references to webpages that may have been used to generate the ai_overview
+   * additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview
    * @return references
    */
   @javax.annotation.Nullable

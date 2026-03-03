@@ -71,8 +71,7 @@ public class AiModeTableInfo  {
   }
 
   /**
-   * array of contents of the table present in the element
-* each array represents the table row
+   * array of contents of the table present in the elementeach array represents the table row
    * @return tableContent
    */
   @javax.annotation.Nullable

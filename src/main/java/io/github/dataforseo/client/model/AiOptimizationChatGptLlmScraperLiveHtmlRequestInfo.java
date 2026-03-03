@@ -54,6 +54,7 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
 * all %## will be decoded (plus character ‘+’ will be decoded to a space character)
 * if you need to use the “%” character for your keyword, please specify it as “%25”;
 * if you need to use the “+” character for your keyword, please specify it as “%2B”
+* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -77,8 +78,8 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
 
   /**
    * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
+* required field if you don’t specify location_code
+* if you use this field, you don’t need to specify location_code
 * you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/locations
 * example:
 * London,England,United Kingdom
@@ -105,8 +106,8 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
 
   /**
    * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
+* required field if you don’t specify location_name
+* if you use this field, you don’t need to specify location_name
 * you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_scraper/locations
 * example:
 * 2840
@@ -119,35 +120,6 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
 
   public void setLocationCode(Integer locationCode) {
     this.locationCode = locationCode;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude,longitude” format
-* Note: location will be automatically set to the country that contains the specified coordinates
-* example:
-* 52.6178549,-155.352142
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
   }
 
 
@@ -333,7 +305,6 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
         Objects.equals(this.keyword, aiOptimizationChatGptLlmScraperLiveHtmlRequestInfo.keyword) &&
         Objects.equals(this.locationName, aiOptimizationChatGptLlmScraperLiveHtmlRequestInfo.locationName) &&
         Objects.equals(this.locationCode, aiOptimizationChatGptLlmScraperLiveHtmlRequestInfo.locationCode) &&
-        Objects.equals(this.locationCoordinate, aiOptimizationChatGptLlmScraperLiveHtmlRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, aiOptimizationChatGptLlmScraperLiveHtmlRequestInfo.languageName) &&
         Objects.equals(this.languageCode, aiOptimizationChatGptLlmScraperLiveHtmlRequestInfo.languageCode) &&
         Objects.equals(this.forceWebSearch, aiOptimizationChatGptLlmScraperLiveHtmlRequestInfo.forceWebSearch) &&
@@ -348,7 +319,7 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, forceWebSearch, expandCitations, tag);
+  return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, forceWebSearch, expandCitations, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -366,7 +337,6 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    forceWebSearch: ").append(toIndentedString(forceWebSearch)).append("\n");
@@ -400,8 +370,6 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlRequestInfo  {
     openapiFields.add("location_name");
     
     openapiFields.add("location_code");
-    
-    openapiFields.add("location_coordinate");
     
     openapiFields.add("language_name");
     

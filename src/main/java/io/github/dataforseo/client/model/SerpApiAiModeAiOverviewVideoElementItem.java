@@ -140,8 +140,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -187,9 +186,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * date when the video was published or indexed
-* example:
-* Apr 26, 2024
+   * date when the video was published or indexedexample: Apr 26, 2024
    * @return date
    */
   @javax.annotation.Nullable
@@ -212,10 +209,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * date and time when the video was published or indexed
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * date and time when the video was published or indexedin the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'example:2019-11-15 12:57:46 +00:00
    * @return timestamp
    */
   @javax.annotation.Nullable
