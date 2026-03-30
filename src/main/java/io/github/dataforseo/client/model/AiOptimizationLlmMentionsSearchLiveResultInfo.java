@@ -94,9 +94,7 @@ public class AiOptimizationLlmMentionsSearchLiveResultInfo  {
   }
 
   /**
-   * token for subsequent requests
-* by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;
-* search_after_token values are unique for each subsequent task
+   * token for subsequent requestsby specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;search_after_token values are unique for each subsequent task
    * @return searchAfterToken
    */
   @javax.annotation.Nullable

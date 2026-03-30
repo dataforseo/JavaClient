@@ -199,6 +199,29 @@ public class OnPageAvailableFiltersResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_INVALID_RESOURCES = "invalid_resources";
+  @SerializedName(SERIALIZED_NAME_INVALID_RESOURCES)
+  private Map<String, String> invalidResources;
+
+  public OnPageAvailableFiltersResultInfo invalidResources(Map<String, String> invalidResources) {
+    this.invalidResources = invalidResources;
+    return this;
+  }
+
+  /**
+   * 
+   * @return invalidResources
+   */
+  @javax.annotation.Nullable
+  public Map<String, String> getInvalidResources() {
+    return invalidResources;
+  }
+
+  public void setInvalidResources(Map<String, String> invalidResources) {
+    this.invalidResources = invalidResources;
+  }
+
+
 
   public OnPageAvailableFiltersResultInfo() {
   }
@@ -248,7 +271,8 @@ public class OnPageAvailableFiltersResultInfo  {
         Objects.equals(this.links, onPageAvailableFiltersResultInfo.links) &&
         Objects.equals(this.pagesByResource, onPageAvailableFiltersResultInfo.pagesByResource) &&
         Objects.equals(this.redirectChains, onPageAvailableFiltersResultInfo.redirectChains) &&
-        Objects.equals(this.keywordDensity, onPageAvailableFiltersResultInfo.keywordDensity);  
+        Objects.equals(this.keywordDensity, onPageAvailableFiltersResultInfo.keywordDensity) &&
+        Objects.equals(this.invalidResources, onPageAvailableFiltersResultInfo.invalidResources);  
     
   }
 
@@ -258,7 +282,7 @@ public class OnPageAvailableFiltersResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(resources, pages, nonIndexable, links, pagesByResource, redirectChains, keywordDensity);
+  return Objects.hash(resources, pages, nonIndexable, links, pagesByResource, redirectChains, keywordDensity, invalidResources);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -280,6 +304,7 @@ public class OnPageAvailableFiltersResultInfo  {
     sb.append("    pagesByResource: ").append(toIndentedString(pagesByResource)).append("\n");
     sb.append("    redirectChains: ").append(toIndentedString(redirectChains)).append("\n");
     sb.append("    keywordDensity: ").append(toIndentedString(keywordDensity)).append("\n");
+    sb.append("    invalidResources: ").append(toIndentedString(invalidResources)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -316,6 +341,8 @@ public class OnPageAvailableFiltersResultInfo  {
     openapiFields.add("redirect_chains");
     
     openapiFields.add("keyword_density");
+    
+    openapiFields.add("invalid_resources");
     
 
     // a set of required properties/fields (JSON key names)

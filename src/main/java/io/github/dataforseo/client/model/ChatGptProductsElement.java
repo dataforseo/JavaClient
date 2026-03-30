@@ -84,6 +84,53 @@ public class ChatGptProductsElement  {
   }
 
 
+  public static final String SERIALIZED_NAME_MERCHANTS = "merchants";
+  @SerializedName(SERIALIZED_NAME_MERCHANTS)
+  private String merchants;
+
+  public ChatGptProductsElement merchants(String merchants) {
+    this.merchants = merchants;
+    return this;
+  }
+
+  /**
+   * merchant(s) offering the product
+   * @return merchants
+   */
+  @javax.annotation.Nullable
+  public String getMerchants() {
+    return merchants;
+  }
+
+  public void setMerchants(String merchants) {
+    this.merchants = merchants;
+  }
+
+
+  public static final String SERIALIZED_NAME_ID_TO_TOKEN_MAP = "id_to_token_map";
+  @SerializedName(SERIALIZED_NAME_ID_TO_TOKEN_MAP)
+  private String idToTokenMap;
+
+  public ChatGptProductsElement idToTokenMap(String idToTokenMap) {
+    this.idToTokenMap = idToTokenMap;
+    return this;
+  }
+
+  /**
+   * product identifier token
+* Base64-encoded token containing Google Shopping product IDs associated with the product
+   * @return idToTokenMap
+   */
+  @javax.annotation.Nullable
+  public String getIdToTokenMap() {
+    return idToTokenMap;
+  }
+
+  public void setIdToTokenMap(String idToTokenMap) {
+    this.idToTokenMap = idToTokenMap;
+  }
+
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -271,6 +318,30 @@ public class ChatGptProductsElement  {
   }
 
 
+  public static final String SERIALIZED_NAME_PRODUCT_IDS = "product_ids";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_IDS)
+  private List<ChatGptGoogleShoppingProduct> productIds;
+
+  public ChatGptProductsElement productIds(List<ChatGptGoogleShoppingProduct> productIds) {
+    this.productIds = productIds;
+    return this;
+  }
+
+  /**
+   * Google Shopping product identifiers
+* array of Google Shopping product IDs associated with the product
+   * @return productIds
+   */
+  @javax.annotation.Nullable
+  public List<ChatGptGoogleShoppingProduct> getProductIds() {
+    return productIds;
+  }
+
+  public void setProductIds(List<ChatGptGoogleShoppingProduct> productIds) {
+    this.productIds = productIds;
+  }
+
+
 
   public ChatGptProductsElement() {
   }
@@ -316,6 +387,8 @@ public class ChatGptProductsElement  {
 
         Objects.equals(this.type, chatGptProductsElement.type) &&
         Objects.equals(this.productId, chatGptProductsElement.productId) &&
+        Objects.equals(this.merchants, chatGptProductsElement.merchants) &&
+        Objects.equals(this.idToTokenMap, chatGptProductsElement.idToTokenMap) &&
         Objects.equals(this.title, chatGptProductsElement.title) &&
         Objects.equals(this.rating, chatGptProductsElement.rating) &&
         Objects.equals(this.price, chatGptProductsElement.price) &&
@@ -323,7 +396,8 @@ public class ChatGptProductsElement  {
         Objects.equals(this.tag, chatGptProductsElement.tag) &&
         Objects.equals(this.url, chatGptProductsElement.url) &&
         Objects.equals(this.domain, chatGptProductsElement.domain) &&
-        Objects.equals(this.images, chatGptProductsElement.images);  
+        Objects.equals(this.images, chatGptProductsElement.images) &&
+        Objects.equals(this.productIds, chatGptProductsElement.productIds);  
     
   }
 
@@ -333,7 +407,7 @@ public class ChatGptProductsElement  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, productId, title, rating, price, currency, tag, url, domain, images);
+  return Objects.hash(type, productId, merchants, idToTokenMap, title, rating, price, currency, tag, url, domain, images, productIds);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -350,6 +424,8 @@ public class ChatGptProductsElement  {
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    merchants: ").append(toIndentedString(merchants)).append("\n");
+    sb.append("    idToTokenMap: ").append(toIndentedString(idToTokenMap)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
@@ -358,6 +434,7 @@ public class ChatGptProductsElement  {
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
+    sb.append("    productIds: ").append(toIndentedString(productIds)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -385,6 +462,10 @@ public class ChatGptProductsElement  {
     
     openapiFields.add("product_id");
     
+    openapiFields.add("merchants");
+    
+    openapiFields.add("id_to_token_map");
+    
     openapiFields.add("title");
     
     openapiFields.add("rating");
@@ -400,6 +481,8 @@ public class ChatGptProductsElement  {
     openapiFields.add("domain");
     
     openapiFields.add("images");
+    
+    openapiFields.add("product_ids");
     
 
     // a set of required properties/fields (JSON key names)

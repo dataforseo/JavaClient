@@ -48,8 +48,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResultInfo  {
   }
 
   /**
-   * aggregated mentions metrics summary
-* contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensions
+   * aggregated mentions metrics summarycontains overall aggregated LLM mention metrics across all found domains, grouped by various dimensions
    * @return total
    */
   @javax.annotation.Nullable

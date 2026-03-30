@@ -71,7 +71,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * subdomain in SERP
+   * domain in SERP of the Ad element
    * @return domain
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * relevant URL in SERP
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -305,8 +305,8 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
 
   /**
    * estimated traffic volume
-* estimated paid monthly traffic to the target
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
+* estimated organic monthly traffic to the domain
+* calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -330,8 +330,8 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * estimated cost of monthly search traffic
-* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
+   * estimated cost of paid monthly search traffic
+* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -405,7 +405,7 @@ public class DataLabsPaidSerpElementItem  extends BaseDataforseoLabsApiElementIt
   }
 
   /**
-   * backlinks information for the relevant page URL
+   * backlinks information for the ranked website
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

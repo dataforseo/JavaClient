@@ -109,6 +109,30 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_REASONING_TOKENS = "reasoning_tokens";
+  @SerializedName(SERIALIZED_NAME_REASONING_TOKENS)
+  private Integer reasoningTokens;
+
+  public AiOptimizationClaudeLlmResponsesTaskGetResultInfo reasoningTokens(Integer reasoningTokens) {
+    this.reasoningTokens = reasoningTokens;
+    return this;
+  }
+
+  /**
+   * number of reasoning tokens
+* total count of tokens used to generate reasoning content
+   * @return reasoningTokens
+   */
+  @javax.annotation.Nullable
+  public Integer getReasoningTokens() {
+    return reasoningTokens;
+  }
+
+  public void setReasoningTokens(Integer reasoningTokens) {
+    this.reasoningTokens = reasoningTokens;
+  }
+
+
   public static final String SERIALIZED_NAME_WEB_SEARCH = "web_search";
   @SerializedName(SERIALIZED_NAME_WEB_SEARCH)
   private Boolean webSearch;
@@ -184,9 +208,9 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<AiOptimizationItem> items;
+  private List<BaseAiOptimizationLlmResponseElementItem> items;
 
-  public AiOptimizationClaudeLlmResponsesTaskGetResultInfo items(List<AiOptimizationItem> items) {
+  public AiOptimizationClaudeLlmResponsesTaskGetResultInfo items(List<BaseAiOptimizationLlmResponseElementItem> items) {
     this.items = items;
     return this;
   }
@@ -197,20 +221,20 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<AiOptimizationItem> getItems() {
+  public List<BaseAiOptimizationLlmResponseElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<AiOptimizationItem> items) {
+  public void setItems(List<BaseAiOptimizationLlmResponseElementItem> items) {
     this.items = items;
   }
 
 
   public static final String SERIALIZED_NAME_FAN_OUT_QUERIES = "fan_out_queries";
   @SerializedName(SERIALIZED_NAME_FAN_OUT_QUERIES)
-  private Object fanOutQueries;
+  private List<String> fanOutQueries;
 
-  public AiOptimizationClaudeLlmResponsesTaskGetResultInfo fanOutQueries(Object fanOutQueries) {
+  public AiOptimizationClaudeLlmResponsesTaskGetResultInfo fanOutQueries(List<String> fanOutQueries) {
     this.fanOutQueries = fanOutQueries;
     return this;
   }
@@ -221,11 +245,11 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
    * @return fanOutQueries
    */
   @javax.annotation.Nullable
-  public Object getFanOutQueries() {
+  public List<String> getFanOutQueries() {
     return fanOutQueries;
   }
 
-  public void setFanOutQueries(Object fanOutQueries) {
+  public void setFanOutQueries(List<String> fanOutQueries) {
     this.fanOutQueries = fanOutQueries;
   }
 
@@ -276,6 +300,7 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
         Objects.equals(this.modelName, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.modelName) &&
         Objects.equals(this.inputTokens, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.inputTokens) &&
         Objects.equals(this.outputTokens, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.outputTokens) &&
+        Objects.equals(this.reasoningTokens, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.reasoningTokens) &&
         Objects.equals(this.webSearch, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.webSearch) &&
         Objects.equals(this.moneySpent, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.moneySpent) &&
         Objects.equals(this.datetime, aiOptimizationClaudeLlmResponsesTaskGetResultInfo.datetime) &&
@@ -290,7 +315,7 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(modelName, inputTokens, outputTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
+  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -308,6 +333,7 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
     sb.append("    modelName: ").append(toIndentedString(modelName)).append("\n");
     sb.append("    inputTokens: ").append(toIndentedString(inputTokens)).append("\n");
     sb.append("    outputTokens: ").append(toIndentedString(outputTokens)).append("\n");
+    sb.append("    reasoningTokens: ").append(toIndentedString(reasoningTokens)).append("\n");
     sb.append("    webSearch: ").append(toIndentedString(webSearch)).append("\n");
     sb.append("    moneySpent: ").append(toIndentedString(moneySpent)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
@@ -341,6 +367,8 @@ public class AiOptimizationClaudeLlmResponsesTaskGetResultInfo  {
     openapiFields.add("input_tokens");
     
     openapiFields.add("output_tokens");
+    
+    openapiFields.add("reasoning_tokens");
     
     openapiFields.add("web_search");
     

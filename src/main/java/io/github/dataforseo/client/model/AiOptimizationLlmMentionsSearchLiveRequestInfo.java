@@ -358,7 +358,8 @@ public class AiOptimizationLlmMentionsSearchLiveRequestInfo  {
 * possible values:
 * chat_gpt, google
 * default value: google
-* Note:chat_gpt data is available for the United States and English only
+* Note: the data returned depends on the selected platform
+* Note #2:chat_gpt data is available for the United States and English only
    * @return platform
    */
   @javax.annotation.Nullable

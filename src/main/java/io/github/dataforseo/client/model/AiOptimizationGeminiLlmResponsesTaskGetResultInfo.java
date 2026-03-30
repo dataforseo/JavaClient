@@ -109,6 +109,30 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_REASONING_TOKENS = "reasoning_tokens";
+  @SerializedName(SERIALIZED_NAME_REASONING_TOKENS)
+  private Integer reasoningTokens;
+
+  public AiOptimizationGeminiLlmResponsesTaskGetResultInfo reasoningTokens(Integer reasoningTokens) {
+    this.reasoningTokens = reasoningTokens;
+    return this;
+  }
+
+  /**
+   * number of reasoning tokens
+* total count of tokens used to generate reasoning content
+   * @return reasoningTokens
+   */
+  @javax.annotation.Nullable
+  public Integer getReasoningTokens() {
+    return reasoningTokens;
+  }
+
+  public void setReasoningTokens(Integer reasoningTokens) {
+    this.reasoningTokens = reasoningTokens;
+  }
+
+
   public static final String SERIALIZED_NAME_WEB_SEARCH = "web_search";
   @SerializedName(SERIALIZED_NAME_WEB_SEARCH)
   private Boolean webSearch;
@@ -184,9 +208,9 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<AiOptimizationItem> items;
+  private List<BaseAiOptimizationLlmResponseElementItem> items;
 
-  public AiOptimizationGeminiLlmResponsesTaskGetResultInfo items(List<AiOptimizationItem> items) {
+  public AiOptimizationGeminiLlmResponsesTaskGetResultInfo items(List<BaseAiOptimizationLlmResponseElementItem> items) {
     this.items = items;
     return this;
   }
@@ -197,11 +221,11 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public List<AiOptimizationItem> getItems() {
+  public List<BaseAiOptimizationLlmResponseElementItem> getItems() {
     return items;
   }
 
-  public void setItems(List<AiOptimizationItem> items) {
+  public void setItems(List<BaseAiOptimizationLlmResponseElementItem> items) {
     this.items = items;
   }
 
@@ -276,6 +300,7 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
         Objects.equals(this.modelName, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.modelName) &&
         Objects.equals(this.inputTokens, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.inputTokens) &&
         Objects.equals(this.outputTokens, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.outputTokens) &&
+        Objects.equals(this.reasoningTokens, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.reasoningTokens) &&
         Objects.equals(this.webSearch, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.webSearch) &&
         Objects.equals(this.moneySpent, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.moneySpent) &&
         Objects.equals(this.datetime, aiOptimizationGeminiLlmResponsesTaskGetResultInfo.datetime) &&
@@ -290,7 +315,7 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(modelName, inputTokens, outputTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
+  return Objects.hash(modelName, inputTokens, outputTokens, reasoningTokens, webSearch, moneySpent, datetime, items, fanOutQueries);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -308,6 +333,7 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
     sb.append("    modelName: ").append(toIndentedString(modelName)).append("\n");
     sb.append("    inputTokens: ").append(toIndentedString(inputTokens)).append("\n");
     sb.append("    outputTokens: ").append(toIndentedString(outputTokens)).append("\n");
+    sb.append("    reasoningTokens: ").append(toIndentedString(reasoningTokens)).append("\n");
     sb.append("    webSearch: ").append(toIndentedString(webSearch)).append("\n");
     sb.append("    moneySpent: ").append(toIndentedString(moneySpent)).append("\n");
     sb.append("    datetime: ").append(toIndentedString(datetime)).append("\n");
@@ -341,6 +367,8 @@ public class AiOptimizationGeminiLlmResponsesTaskGetResultInfo  {
     openapiFields.add("input_tokens");
     
     openapiFields.add("output_tokens");
+    
+    openapiFields.add("reasoning_tokens");
     
     openapiFields.add("web_search");
     

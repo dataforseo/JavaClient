@@ -9,6 +9,7 @@
 **description** | **String** | description of the results element in SERP |[optional]|
 **domain** | **String** | domain of the organic result |[optional]|
 **phone** | **String** | phone number |[optional]|
+**bookingUrl** | **String** |  |[optional]|
 **url** | **String** | relevant URL |[optional]|
 **isPaid** | **Boolean** | indicates whether the element is an ad |[optional]|
 **rating** | **RatingInfo** | the item’s rating<br>the popularity rate based on reviews and displayed in SERP |[optional]|

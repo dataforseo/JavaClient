@@ -108,6 +108,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
 * maximum value: 4096;
 * default value: 2048;
 * Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
+* Note #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1025
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -343,6 +344,36 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_USE_REASONING = "use_reasoning";
+  @SerializedName(SERIALIZED_NAME_USE_REASONING)
+  private Boolean useReasoning;
+
+  public AiOptimizationClaudeLlmResponsesLiveRequestInfo useReasoning(Boolean useReasoning) {
+    this.useReasoning = useReasoning;
+    return this;
+  }
+
+  /**
+   * enable reasoning for the AI model
+* optional field
+* when enabled, the model will perform reasoning before generating a response
+* refer to the Models endpoint for a list of models that support reasoning
+* default value: false
+* Note: if set to true, the minimum value for max_output_tokens is 1025
+* Note #2: if set to true, force_web_search must be set to false
+* Note #3: if set to true, the temperature and top_p cannot be used
+   * @return useReasoning
+   */
+  @javax.annotation.Nullable
+  public Boolean getUseReasoning() {
+    return useReasoning;
+  }
+
+  public void setUseReasoning(Boolean useReasoning) {
+    this.useReasoning = useReasoning;
+  }
+
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -424,6 +455,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
         Objects.equals(this.webSearchCity, aiOptimizationClaudeLlmResponsesLiveRequestInfo.webSearchCity) &&
         Objects.equals(this.systemMessage, aiOptimizationClaudeLlmResponsesLiveRequestInfo.systemMessage) &&
         Objects.equals(this.messageChain, aiOptimizationClaudeLlmResponsesLiveRequestInfo.messageChain) &&
+        Objects.equals(this.useReasoning, aiOptimizationClaudeLlmResponsesLiveRequestInfo.useReasoning) &&
         Objects.equals(this.tag, aiOptimizationClaudeLlmResponsesLiveRequestInfo.tag);  
     
   }
@@ -434,7 +466,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(userPrompt, modelName, maxOutputTokens, temperature, topP, webSearch, forceWebSearch, webSearchCountryIsoCode, webSearchCity, systemMessage, messageChain, tag);
+  return Objects.hash(userPrompt, modelName, maxOutputTokens, temperature, topP, webSearch, forceWebSearch, webSearchCountryIsoCode, webSearchCity, systemMessage, messageChain, useReasoning, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -460,6 +492,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
     sb.append("    webSearchCity: ").append(toIndentedString(webSearchCity)).append("\n");
     sb.append("    systemMessage: ").append(toIndentedString(systemMessage)).append("\n");
     sb.append("    messageChain: ").append(toIndentedString(messageChain)).append("\n");
+    sb.append("    useReasoning: ").append(toIndentedString(useReasoning)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -505,6 +538,8 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
     openapiFields.add("system_message");
     
     openapiFields.add("message_chain");
+    
+    openapiFields.add("use_reasoning");
     
     openapiFields.add("tag");
     

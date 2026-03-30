@@ -192,6 +192,7 @@ public class BusinessDataBusinessListingsSearchLiveRequestInfo  {
 * example:
 * ['rating.value','>',3]
 * you can receive the list of available filters by making a separate request to https://api.dataforseo.com/v3/business_data/business_listings/available_filters
+* The full list of possible filters is available here.
    * @return filters
    */
   @javax.annotation.Nullable

@@ -49,8 +49,8 @@ public class KnowledgeGraphAiOverviewItemSerpElementItem  extends BaseSerpApiEle
 
   /**
    * indicates whether the element is loaded asynchronously
-* if true, the ai_overview element is loaded asynchronously;
-* if false, the ai_overview element is loaded from cache
+* if true, the people_also_ask_ai_overview_expanded_element element is loaded asynchronously;
+* if false, the people_also_ask_ai_overview_expanded_element element is loaded from cache;
    * @return asynchronousAiOverview
    */
   @javax.annotation.Nullable

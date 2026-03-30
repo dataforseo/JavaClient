@@ -108,7 +108,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
 * if you ignore this field, we will return data for all categories unless you specify audits
 * use this field to get data for specific categories you indicate here
 * possible values:
-* seo, pwa, performance, best_practices, accessibility
+* seo, performance, best_practices, accessibility
    * @return categories
    */
   @javax.annotation.Nullable

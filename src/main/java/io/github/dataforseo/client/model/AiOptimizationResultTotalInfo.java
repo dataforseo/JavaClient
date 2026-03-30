@@ -48,8 +48,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * location-based grouping
-* array of objects containing mention metrics segmented by geographical location
+   * location-based groupingarray of objects containing mention metrics segmented by geographical location
    * @return location
    */
   @javax.annotation.Nullable
@@ -72,8 +71,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * language-based grouping
-* array of objects containing mention metrics segmented by content language
+   * language-based groupingarray of objects containing mention metrics segmented by content language
    * @return language
    */
   @javax.annotation.Nullable
@@ -96,8 +94,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * platform-based grouping
-* array of group elements containing mention metrics segmented by AI platform
+   * platform-based groupingarray of group elements containing mention metrics segmented by AI platform
    * @return platform
    */
   @javax.annotation.Nullable
@@ -120,8 +117,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * found source domains relevant to the target
-* array of objects containing data on top domains that are cited as sources in LLM responses
+   * found source domains relevant to the targetarray of objects containing data on top domains that are cited as sources in LLM responses
    * @return sourcesDomain
    */
   @javax.annotation.Nullable
@@ -144,8 +140,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * found search results domains relevant to the target
-* array of objects containing data on top domains that appear in search results related to LLM queries
+   * found search results domains relevant to the targetarray of objects containing data on top domains that appear in search results related to LLM queries
    * @return searchResultsDomain
    */
   @javax.annotation.Nullable
@@ -168,8 +163,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * data on brand entities relevant to the target
-* array of objects containing data on brand entity titles that appear in search results related to LLM queries
+   * data on brand entities relevant to the targetarray of objects containing data on brand entity titles that appear in search results related to LLM queries
    * @return brandEntitiesTitle
    */
   @javax.annotation.Nullable
@@ -192,8 +186,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * data on brand entities relevant to the target
-* array of objects containing data on brand entity categories that appear in search results related to LLM queries
+   * data on brand entities relevant to the targetarray of objects containing data on brand entity categories that appear in search results related to LLM queries
    * @return brandEntitiesCategory
    */
   @javax.annotation.Nullable

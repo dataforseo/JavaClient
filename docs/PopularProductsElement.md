@@ -8,6 +8,7 @@
 **type** | **String** | type of element |[optional]|
 **title** | **String** | title of the row |[optional]|
 **description** | **String** | description of the results element in SERP |[optional]|
+**moreSellers** | **Boolean** | indicates whether the product is sold by multiple sellers |[optional]|
 **seller** | **String** | seller of the product |[optional]|
 **imageUrl** | **String** | URL of the image |[optional]|
 **price** | **PriceInfo** | price of the app element |[optional]|

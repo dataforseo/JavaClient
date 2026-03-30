@@ -71,8 +71,7 @@ public class GroupElement  {
   }
 
   /**
-   * grouping identifier
-* the specific identifier for the grouping dimension
+   * grouping identifierthe specific identifier for the grouping dimension
    * @return key
    */
   @javax.annotation.Nullable
@@ -95,8 +94,7 @@ public class GroupElement  {
   }
 
   /**
-   * total LLM mentions count
-* the number of times the target keyword or domain were mentioned in relation to this specific grouping key
+   * total LLM mentions countthe number of times the target keyword or domain were mentioned in relation to this specific grouping key
    * @return mentions
    */
   @javax.annotation.Nullable
@@ -119,8 +117,7 @@ public class GroupElement  {
   }
 
   /**
-   * current AI search volume rate of a keyword
-* learn more about this metric here
+   * current AI search volume rate of a keywordlearn more about this metric here
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable
@@ -135,9 +132,9 @@ public class GroupElement  {
 
   public static final String SERIALIZED_NAME_IMPRESSIONS = "impressions";
   @SerializedName(SERIALIZED_NAME_IMPRESSIONS)
-  private Long impressions;
+  private Integer impressions;
 
-  public GroupElement impressions(Long impressions) {
+  public GroupElement impressions(Integer impressions) {
     this.impressions = impressions;
     return this;
   }
@@ -147,11 +144,11 @@ public class GroupElement  {
    * @return impressions
    */
   @javax.annotation.Nullable
-  public Long getImpressions() {
+  public Integer getImpressions() {
     return impressions;
   }
 
-  public void setImpressions(Long impressions) {
+  public void setImpressions(Integer impressions) {
     this.impressions = impressions;
   }
 

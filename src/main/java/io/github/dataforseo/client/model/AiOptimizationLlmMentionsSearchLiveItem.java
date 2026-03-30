@@ -140,8 +140,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * relevant answer in markdown format
-* content of the result formatted in the markdown markup language
+   * relevant answer in markdown formatcontent of the result formatted in the markdown markup language
    * @return answer
    */
   @javax.annotation.Nullable
@@ -164,8 +163,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * array of sources
-* the sources the model cited or relied on in its final answer
+   * array of sourcesthe sources the model cited or relied on in its final answer
    * @return sources
    */
   @javax.annotation.Nullable
@@ -188,8 +186,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * array of search results
-* all web search outputs the model retrieved when looking up information, including duplicates and unused entries
+   * array of search resultsall web search outputs the model retrieved when looking up information, including duplicates and unused entries
    * @return searchResults
    */
   @javax.annotation.Nullable
@@ -212,8 +209,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * current AI search volume rate of a keyword
-* learn more about this metric here
+   * current AI search volume rate of a keywordlearn more about this metric here
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable
@@ -236,7 +232,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * 
+   * monthly AI search volume ratesarray of objects with AI search volume rates in a certain month of a year
    * @return monthlySearches
    */
   @javax.annotation.Nullable
@@ -259,10 +255,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * date and time when the response data was first recorded
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-10-21 06:25:30 +00:00
+   * date and time when the response data was first recordedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2025-10-21 06:25:30 +00:00
    * @return firstResponseAt
    */
   @javax.annotation.Nullable
@@ -285,10 +278,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * date and time when the response data was last updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-10-21 06:25:30 +00:00
+   * date and time when the response data was last updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2025-10-21 06:25:30 +00:00
    * @return lastResponseAt
    */
   @javax.annotation.Nullable
@@ -311,8 +301,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * array of brand entities
-* contains information on brands mentioned in the response
+   * array of brand entitiescontains information on brands mentioned in the response
    * @return brandEntities
    */
   @javax.annotation.Nullable
@@ -335,8 +324,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * array of fan-out queries
-* contains related search queries derived from the main query to provide a more comprehensive response
+   * array of fan-out queriescontains related search queries derived from the main query to provide a more comprehensive response
    * @return fanOutQueries
    */
   @javax.annotation.Nullable

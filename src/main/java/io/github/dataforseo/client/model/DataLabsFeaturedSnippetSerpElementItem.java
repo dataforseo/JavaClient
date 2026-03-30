@@ -48,7 +48,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * domain in SERP of the Ad element
+   * domain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * the title of the featured snippets source page
+   * title of a given element
    * @return featuredTitle
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * result’s URL
+   * sitelink URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -163,8 +163,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * results table
-* if there are none, equals null
+   * table element
    * @return table
    */
   @javax.annotation.Nullable
@@ -234,7 +233,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
 
   /**
    * estimated traffic volume
-* estimated organic monthly traffic to the domain
+* estimated organic monthly traffic a featured URL delivers to the domain
 * calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
 * learn more about how the metric is calculated in this help center article
    * @return etv
@@ -259,8 +258,9 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * estimated cost of paid monthly search traffic
-* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
+   * estimated cost of converting organic search traffic into paid
+* represents the estimated monthly cost of running ads for the returned keyword
+* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -284,10 +284,7 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
   }
 
   /**
-   * estimated traffic volume based on clickstream data
-* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true
-* learn more about how the metric is calculated in this help center article
+   * 
    * @return clickstreamEtv
    */
   @javax.annotation.Nullable
@@ -311,7 +308,8 @@ public class DataLabsFeaturedSnippetSerpElementItem  extends BaseDataforseoLabsA
 
   /**
    * changes in rankings
-* contains information about the ranking changes of the SERP element since the previous_updated_time
+* ranking changes of the SERP element compared to the preceding month;
+* Note: the changes are calculated even if the preceding month is not included in a POST request
    * @return rankChanges
    */
   @javax.annotation.Nullable

@@ -181,6 +181,29 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_BOOKING_URL = "booking_url";
+  @SerializedName(SERIALIZED_NAME_BOOKING_URL)
+  private String bookingUrl;
+
+  public LocalPackSerpElementItem bookingUrl(String bookingUrl) {
+    this.bookingUrl = bookingUrl;
+    return this;
+  }
+
+  /**
+   * URL of the booking page
+   * @return bookingUrl
+   */
+  @javax.annotation.Nullable
+  public String getBookingUrl() {
+    return bookingUrl;
+  }
+
+  public void setBookingUrl(String bookingUrl) {
+    this.bookingUrl = bookingUrl;
+  }
+
+
   public static final String SERIALIZED_NAME_URL = "url";
   @SerializedName(SERIALIZED_NAME_URL)
   private String url;
@@ -324,6 +347,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
         Objects.equals(this.description, localPackSerpElementItem.description) &&
         Objects.equals(this.domain, localPackSerpElementItem.domain) &&
         Objects.equals(this.phone, localPackSerpElementItem.phone) &&
+        Objects.equals(this.bookingUrl, localPackSerpElementItem.bookingUrl) &&
         Objects.equals(this.url, localPackSerpElementItem.url) &&
         Objects.equals(this.isPaid, localPackSerpElementItem.isPaid) &&
         Objects.equals(this.rating, localPackSerpElementItem.rating) &&
@@ -338,7 +362,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(rankGroup, rankAbsolute, title, description, domain, phone, url, isPaid, rating, cid);
+  return Objects.hash(rankGroup, rankAbsolute, title, description, domain, phone, bookingUrl, url, isPaid, rating, cid);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -359,6 +383,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
+    sb.append("    bookingUrl: ").append(toIndentedString(bookingUrl)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    isPaid: ").append(toIndentedString(isPaid)).append("\n");
     sb.append("    rating: ").append(toIndentedString(rating)).append("\n");
@@ -402,6 +427,8 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
     openapiFields.add("domain");
     
     openapiFields.add("phone");
+    
+    openapiFields.add("booking_url");
     
     openapiFields.add("url");
     
