@@ -48,8 +48,7 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * task identifier of the completed taskunique task identifier in our system in the UUID format
    * @return id
    */
   @javax.annotation.Nullable
@@ -95,8 +94,7 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * type of search engine
-* example: llm_scraper
+   * type of search engineexample: llm_scraper
    * @return seType
    */
   @javax.annotation.Nullable
@@ -165,8 +163,7 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Regular task
-* if the Regular function is not supported in the specified endpoint, the value will be null
+   * URL for collecting the results of the Regular taskif the Regular function is not supported in the specified endpoint, the value will be null
    * @return endpointRegular
    */
   @javax.annotation.Nullable
@@ -189,8 +186,7 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Advanced task
-* if the Advanced function is not supported in the specified endpoint, the value will be null
+   * URL for collecting the results of the Advanced taskif the Advanced function is not supported in the specified endpoint, the value will be null
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -213,8 +209,7 @@ public class AiOptimizationChatGptLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the HTML task
-* if the HTML function is not supported in the specified endpoint, the value will be null
+   * URL for collecting the results of the HTML taskif the HTML function is not supported in the specified endpoint, the value will be null
    * @return endpointHtml
    */
   @javax.annotation.Nullable

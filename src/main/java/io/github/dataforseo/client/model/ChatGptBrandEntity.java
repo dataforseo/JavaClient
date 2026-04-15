@@ -117,8 +117,7 @@ public class ChatGptBrandEntity  {
   }
 
   /**
-   * brand name in markdown format
-* contains brand name formatted in the markdown markup language
+   * brand name in markdown formatcontains brand name formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable

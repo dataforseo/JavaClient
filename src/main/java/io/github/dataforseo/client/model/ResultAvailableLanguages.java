@@ -48,9 +48,7 @@ public class ResultAvailableLanguages  {
   }
 
   /**
-   * supported LLM platforms
-* contains the sources of data supported for a specific location and language combination
-* only google and chat_gpt are currently available
+   * supported LLM platformscontains the sources of data supported for a specific location and language combinationonly google and chat_gpt are currently available
    * @return availablePlatforms
    */
   @javax.annotation.Nullable
@@ -119,8 +117,7 @@ public class ResultAvailableLanguages  {
   }
 
   /**
-   * number of LLM responses
-* the number of LLM responses available in the database for the certain location and language parameters
+   * number of LLM responsesthe number of LLM responses available in the database for the certain location and language parameters
    * @return responsesCount
    */
   @javax.annotation.Nullable

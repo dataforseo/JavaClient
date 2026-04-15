@@ -48,8 +48,7 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * keyword received in a POST arraykeyword is returned with decoded %## (plus character '+' will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -118,10 +117,7 @@ public class AiOptimizationChatGptLlmScraperLiveHtmlResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable

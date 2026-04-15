@@ -84,6 +84,52 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_OFFSET = "offset";
+  @SerializedName(SERIALIZED_NAME_OFFSET)
+  private Integer offset;
+
+  public DomainAnalyticsWhoisOverviewLiveResultInfo offset(Integer offset) {
+    this.offset = offset;
+    return this;
+  }
+
+  /**
+   * results offset value specified in POST request
+   * @return offset
+   */
+  @javax.annotation.Nullable
+  public Integer getOffset() {
+    return offset;
+  }
+
+  public void setOffset(Integer offset) {
+    this.offset = offset;
+  }
+
+
+  public static final String SERIALIZED_NAME_OFFSET_TOKEN = "offset_token";
+  @SerializedName(SERIALIZED_NAME_OFFSET_TOKEN)
+  private String offsetToken;
+
+  public DomainAnalyticsWhoisOverviewLiveResultInfo offsetToken(String offsetToken) {
+    this.offsetToken = offsetToken;
+    return this;
+  }
+
+  /**
+   * 
+   * @return offsetToken
+   */
+  @javax.annotation.Nullable
+  public String getOffsetToken() {
+    return offsetToken;
+  }
+
+  public void setOffsetToken(String offsetToken) {
+    this.offsetToken = offsetToken;
+  }
+
+
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
   private List<DomainAnalyticsWhoisOverviewLiveItem> items;
@@ -152,6 +198,8 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
 
         Objects.equals(this.totalCount, domainAnalyticsWhoisOverviewLiveResultInfo.totalCount) &&
         Objects.equals(this.itemsCount, domainAnalyticsWhoisOverviewLiveResultInfo.itemsCount) &&
+        Objects.equals(this.offset, domainAnalyticsWhoisOverviewLiveResultInfo.offset) &&
+        Objects.equals(this.offsetToken, domainAnalyticsWhoisOverviewLiveResultInfo.offsetToken) &&
         Objects.equals(this.items, domainAnalyticsWhoisOverviewLiveResultInfo.items);  
     
   }
@@ -162,7 +210,7 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(totalCount, itemsCount, items);
+  return Objects.hash(totalCount, itemsCount, offset, offsetToken, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -179,6 +227,8 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
 
     sb.append("    totalCount: ").append(toIndentedString(totalCount)).append("\n");
     sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
+    sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
+    sb.append("    offsetToken: ").append(toIndentedString(offsetToken)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -206,6 +256,10 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
     openapiFields.add("total_count");
     
     openapiFields.add("items_count");
+    
+    openapiFields.add("offset");
+    
+    openapiFields.add("offset_token");
     
     openapiFields.add("items");
     

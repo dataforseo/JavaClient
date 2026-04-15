@@ -48,13 +48,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 2000 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywordrequired fieldyou can specify up to 2000 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -77,12 +71,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code
-* if you use this field, you don’t need to specify location_code
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locations
-* example:
-* United States
+   * full name of search engine locationrequired field if you don't specify location_codeif you use this field, you don't need to specify location_codeyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locationsexample:United States
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -105,12 +94,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locations
-* example:
-* 2840
+   * search engine location coderequired field if you don't specify location_nameif you use this field, you don't need to specify location_nameyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locationsexample:2840
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -133,11 +117,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code;
-* if you use this field, you don’t need to specify language_code;
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languages
-* example: English
+   * full name of search engine languagerequired field if you don't specify language_code;if you use this field, you don't need to specify language_code;you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languagesexample: English
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -160,11 +140,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name;
-* if you use this field, you don’t need to specify language_name;
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languages
-* example: en
+   * search engine language coderequired field if you don't specify language_name;if you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languagesexample: enn
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -187,11 +163,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable

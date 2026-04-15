@@ -67,6 +67,29 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_DOMAIN_ENTITY = "domain_entity";
+  @SerializedName(SERIALIZED_NAME_DOMAIN_ENTITY)
+  private Object domainEntity;
+
+  public AiOptimizationLlmMentionsTopDomainsLiveRequestInfo domainEntity(Object domainEntity) {
+    this.domainEntity = domainEntity;
+    return this;
+  }
+
+  /**
+   * domain entity in the target arrayexample:{'domain': 'en.wikipedia.org', 'search_filter': 'exclude', 'search_scope': ['sources']}
+   * @return domainEntity
+   */
+  @javax.annotation.Nullable
+  public Object getDomainEntity() {
+    return domainEntity;
+  }
+
+  public void setDomainEntity(Object domainEntity) {
+    this.domainEntity = domainEntity;
+  }
+
+
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
   private String domain;
@@ -77,10 +100,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * target domain
-* required field if you don’t specify keyword
-* you can specify up to 63 characters in the domain field;
-* a domain should be specified without https:// and www.
+   * target domainrequired field if you don't specify keywordyou can specify up to 63 characters in the domain field;a domain should be specified without https:// and www.
    * @return domain
    */
   @javax.annotation.Nullable
@@ -103,11 +123,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * target keyword search filter
-* optional field
-* possible values:
-* include, exclude
-* default value: include
+   * target keyword search filteroptional fieldpossible values:include, excludedefault value: include
    * @return searchFilter
    */
   @javax.annotation.Nullable
@@ -130,11 +146,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * target keyword search scope
-* optional field
-* possible values:
-* any, question, answer, brand_entities, fan_out_queries
-* default value: any
+   * target keyword search scopeoptional fieldpossible values:any, question, answer, brand_entities, fan_out_queriesdefault value: any
    * @return searchScope
    */
   @javax.annotation.Nullable
@@ -157,10 +169,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains of the target domain will be included in the search
-* optional field
-* if set to true, the subdomains will be included in the search
-* default value: false
+   * indicates if the subdomains of the target domain will be included in the searchoptional fieldif set to true, the subdomains will be included in the searchdefault value: false
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -170,6 +179,29 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
 
   public void setIncludeSubdomains(Boolean includeSubdomains) {
     this.includeSubdomains = includeSubdomains;
+  }
+
+
+  public static final String SERIALIZED_NAME_KEYWORD_ENTITY = "keyword_entity";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_ENTITY)
+  private Object keywordEntity;
+
+  public AiOptimizationLlmMentionsTopDomainsLiveRequestInfo keywordEntity(Object keywordEntity) {
+    this.keywordEntity = keywordEntity;
+    return this;
+  }
+
+  /**
+   * keyword entity in the target arrayexample:{'keyword': 'bmw', 'search_filter': 'include', 'search_scope': ['question'], 'match_type ': 'partial_match'}
+   * @return keywordEntity
+   */
+  @javax.annotation.Nullable
+  public Object getKeywordEntity() {
+    return keywordEntity;
+  }
+
+  public void setKeywordEntity(Object keywordEntity) {
+    this.keywordEntity = keywordEntity;
   }
 
 
@@ -183,13 +215,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * target keyword
-* required field if you don’t specify domain
-* you can specify up to 250 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * target keywordrequired field if you don't specify domainyou can specify up to 250 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -212,13 +238,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * target keyword match type
-* optional field
-* possible values:
-* word_match, partial_match
-* word_match – full-text search for terms that match the specified seed keyword with additional words included before, after, or within the seed key phrase.
-* partial_match – searches for any occurrence of the keyword or its parts within the content
-* default value: word_match
+   * target keyword match typeoptional fieldpossible values:word_match, partial_matchword_match - full-text search for terms that match the specified seed keyword with additional words included before, after, or within the seed key phrase.partial_match - searches for any occurrence of the keyword or its parts within the contentdefault value: word_match
    * @return matchType
    */
   @javax.annotation.Nullable
@@ -241,12 +261,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * full name of search location
-* optional field
-* if you use this field, you don’t need to specify location_code
-* if you don’t specify this field, the location_code with 2840 value will be used by default;
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* Note: chat_gpt data is available for United States only
+   * full name of search locationoptional fieldif you use this field, you don't need to specify location_codeif you don't specify this field, the location_code with 2840 value will be used by default;you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesNote: chat_gpt data is available for United States only
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -269,12 +284,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * search location code
-* optional field
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* default value: 2840
-* Note: chat_gpt data is available for 2840 only
+   * search location codeoptional fieldif you use this field, you don't need to specify location_nameyou can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesdefault value: 2840Note: chat_gpt data is available for 2840 only
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -297,12 +307,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * full name of search language
-* optional field
-* if you use this field, you don’t need to specify language_code;
-* if you don’t specify this field, the language_code with en value will be used by default;
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* Note: chat_gpt data is available for English only
+   * full name of search languageoptional fieldif you use this field, you don't need to specify language_code;if you don't specify this field, the language_code with en value will be used by default;you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesNote: chat_gpt data is available for English only
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -325,12 +330,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * search language code
-* optional field
-* if you use this field, you don’t need to specify language_name;
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* default value: en
-* Note: chat_gpt data is available for en only
+   * search language codeoptional fieldif you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesdefault value: enNote: chat_gpt data is available for en onlyn
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -353,13 +353,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * target platform
-* optional field
-* possible values:
-* chat_gpt, google
-* default value: google
-* Note: the data returned depends on the selected platform
-* Note #2:chat_gpt data is available for the United States and English only
+   * target platformoptional fieldpossible values:chat_gpt, googledefault value: googleNote: the data returned depends on the selected platformNote #2:chat_gpt data is available for the United States and English only
    * @return platform
    */
   @javax.annotation.Nullable
@@ -382,11 +376,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * links source scope
-* optional field
-* this parameter specifies which links will be used to extract domains and aggregation data
-* possible values: sources, search_results
-* default value: sources
+   * links source scopeoptional fieldthis parameter specifies which links will be used to extract domains and aggregation datapossible values: sources, search_resultsdefault value: sources
    * @return linksScope
    */
   @javax.annotation.Nullable
@@ -409,17 +399,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * array of filter expressions applied before aggregation
-* optional field
-* you can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['ai_search_volume','>','1000']
-* The full list of possible filters is available here.
+   * array of filter expressions applied before aggregationoptional fieldyou can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;you can add several filters at once (8 filters maximum)you should set a logical operator and, or between the conditionsthe following operators are supported:=, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_matchyou can use the % operator with like and not_like to match any string of zero or more charactersexample:['ai_search_volume','>','1000']The full list of possible filters is available here.
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
@@ -442,12 +422,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * maximum number of results in the items array
-* optional field
-* you can use this parameter to limit the number of data objects you receive in the items array
-* minimum value: 1
-* maximum value: 10
-* default value: 5
+   * maximum number of results in the items arrayoptional fieldyou can use this parameter to limit the number of data objects you receive in the items arrayminimum value: 1maximum value: 10default value: 5
    * @return itemsListLimit
    */
   @javax.annotation.Nullable
@@ -470,14 +445,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the following arrays:
-* sources_domain
-* search_results_domain
-* minimum value: 1
-* maximum value: 10
-* default value: 5
+   * maximum number of elements within internal arraysoptional fieldyou can use this field to limit the number of elements within the following arrays:sources_domainsearch_results_domainminimum value: 1maximum value: 10default value: 5
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -500,11 +468,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -561,10 +525,12 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
     return
 
         Objects.equals(this.target, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.target) &&
+        Objects.equals(this.domainEntity, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.domainEntity) &&
         Objects.equals(this.domain, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.domain) &&
         Objects.equals(this.searchFilter, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.searchFilter) &&
         Objects.equals(this.searchScope, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.searchScope) &&
         Objects.equals(this.includeSubdomains, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.includeSubdomains) &&
+        Objects.equals(this.keywordEntity, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.keywordEntity) &&
         Objects.equals(this.keyword, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.keyword) &&
         Objects.equals(this.matchType, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.matchType) &&
         Objects.equals(this.locationName, aiOptimizationLlmMentionsTopDomainsLiveRequestInfo.locationName) &&
@@ -586,7 +552,7 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(target, domain, searchFilter, searchScope, includeSubdomains, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, linksScope, initialDatasetFilters, itemsListLimit, internalListLimit, tag);
+  return Objects.hash(target, domainEntity, domain, searchFilter, searchScope, includeSubdomains, keywordEntity, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, linksScope, initialDatasetFilters, itemsListLimit, internalListLimit, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -602,10 +568,12 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
     sb.append("class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo {\n");
 
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
+    sb.append("    domainEntity: ").append(toIndentedString(domainEntity)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    searchFilter: ").append(toIndentedString(searchFilter)).append("\n");
     sb.append("    searchScope: ").append(toIndentedString(searchScope)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
+    sb.append("    keywordEntity: ").append(toIndentedString(keywordEntity)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
     sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
@@ -643,6 +611,8 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
     
     openapiFields.add("target");
     
+    openapiFields.add("domain_entity");
+    
     openapiFields.add("domain");
     
     openapiFields.add("search_filter");
@@ -650,6 +620,8 @@ public class AiOptimizationLlmMentionsTopDomainsLiveRequestInfo  {
     openapiFields.add("search_scope");
     
     openapiFields.add("include_subdomains");
+    
+    openapiFields.add("keyword_entity");
     
     openapiFields.add("keyword");
     

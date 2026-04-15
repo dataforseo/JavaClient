@@ -71,10 +71,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * aggregation key for grouping the results
-* required field
-* groups results for comparison and serves as a label for the group;
-* you can specify up to 250 characters in the aggregation_key field
+   * aggregation key for grouping the resultsrequired fieldgroups results for comparison and serves as a label for the group;you can specify up to 250 characters in the aggregation_key field
    * @return aggregationKey
    */
   @javax.annotation.Nullable
@@ -97,9 +94,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * array of objects containing target entities
-* required field
-* a single target can contain up to 10 domain and/or keyword entities
+   * array of objects containing target entitiesrequired fielda single target can contain up to 10 domain and/or keyword entities
    * @return target
    */
   @javax.annotation.Nullable
@@ -109,6 +104,29 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 
   public void setTarget(List<String> target) {
     this.target = target;
+  }
+
+
+  public static final String SERIALIZED_NAME_DOMAIN_ENTITY = "domain_entity";
+  @SerializedName(SERIALIZED_NAME_DOMAIN_ENTITY)
+  private Object domainEntity;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo domainEntity(Object domainEntity) {
+    this.domainEntity = domainEntity;
+    return this;
+  }
+
+  /**
+   * domain entity in the target arrayexample:{'domain': 'en.wikipedia.org', 'search_filter': 'exclude', 'search_scope': ['sources']}
+   * @return domainEntity
+   */
+  @javax.annotation.Nullable
+  public Object getDomainEntity() {
+    return domainEntity;
+  }
+
+  public void setDomainEntity(Object domainEntity) {
+    this.domainEntity = domainEntity;
   }
 
 
@@ -122,10 +140,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * target domain
-* required field if you don’t specify a keyword
-* you can specify up to 63 characters in the domain field;
-* a domain should be specified without https:// and www.
+   * target domainrequired field if you don't specify a keywordyou can specify up to 63 characters in the domain field;a domain should be specified without https:// and www.
    * @return domain
    */
   @javax.annotation.Nullable
@@ -148,11 +163,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * target keyword search filter
-* optional field
-* possible values:
-* include, exclude
-* default value: include
+   * target keyword search filteroptional fieldpossible values:include, excludedefault value: include
    * @return searchFilter
    */
   @javax.annotation.Nullable
@@ -175,11 +186,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * target keyword search scope
-* optional field
-* possible values:
-* any, question, answer, brand_entities, fan_out_queries
-* default value: any
+   * target keyword search scopeoptional fieldpossible values:any, question, answer, brand_entities, fan_out_queriesdefault value: any
    * @return searchScope
    */
   @javax.annotation.Nullable
@@ -202,10 +209,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains of the target domain will be included in the search
-* optional field
-* if set to true, the subdomains will be included in the search
-* default value: false
+   * indicates if the subdomains of the target domain will be included in the searchoptional fieldif set to true, the subdomains will be included in the searchdefault value: false
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -215,6 +219,29 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 
   public void setIncludeSubdomains(Boolean includeSubdomains) {
     this.includeSubdomains = includeSubdomains;
+  }
+
+
+  public static final String SERIALIZED_NAME_KEYWORD_ENTITY = "keyword_entity";
+  @SerializedName(SERIALIZED_NAME_KEYWORD_ENTITY)
+  private Object keywordEntity;
+
+  public AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo keywordEntity(Object keywordEntity) {
+    this.keywordEntity = keywordEntity;
+    return this;
+  }
+
+  /**
+   * keyword entity in the target arrayexample:{'keyword': 'bmw', 'search_filter': 'include', 'search_scope': ['question'], 'match_type ': 'partial_match'}
+   * @return keywordEntity
+   */
+  @javax.annotation.Nullable
+  public Object getKeywordEntity() {
+    return keywordEntity;
+  }
+
+  public void setKeywordEntity(Object keywordEntity) {
+    this.keywordEntity = keywordEntity;
   }
 
 
@@ -228,13 +255,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * target keyword
-* required field if you don’t specify a domain
-* you can specify up to 250 characters in the keyword field
-* all %## will be decoded (plus character ‘+’ will be decoded to a space character)
-* if you need to use the “%” character for your keyword, please specify it as “%25”;
-* if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * target keywordrequired field if you don't specify a domainyou can specify up to 250 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -257,13 +278,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * target keyword match type
-* defines how the specified keyword is matched
-* optional field
-* possible values:
-* word_match – full-text search for terms that match the specified seed keyword with additional words included before, after, or within the key phrase (e.g., search for “light” will return results with “light bulb”, “light switch”);
-* partial_match – substring search that finds all instances containing the specified sequence of characters, even if it appears inside a longer word (e.g., search for “light” will return results with “lighting”, “highlight”);
-* default value: word_match
+   * target keyword match typedefines how the specified keyword is matchedoptional fieldpossible values:word_match - full-text search for terms that match the specified seed keyword with additional words included before, after, or within the key phrase (e.g., search for 'light' will return results with 'light bulb', 'light switch');partial_match - substring search that finds all instances containing the specified sequence of characters, even if it appears inside a longer word (e.g., search for 'light' will return results with 'lighting', 'highlight');default value: word_match
    * @return matchType
    */
   @javax.annotation.Nullable
@@ -286,12 +301,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * full name of search location
-* optional field
-* if you use this field, you don’t need to specify location_code
-* if you don’t specify this field, the location_code with 2840 value will be used by default;
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* Note: chat_gpt data is available for United States only
+   * full name of search locationoptional fieldif you use this field, you don't need to specify location_codeif you don't specify this field, the location_code with 2840 value will be used by default;you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesNote: chat_gpt data is available for United States only
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -314,12 +324,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * search location code
-* optional field
-* if you use this field, you don’t need to specify location_name
-* you can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* default value: 2840
-* Note: chat_gpt data is available for 2840 only
+   * search location codeoptional fieldif you use this field, you don't need to specify location_nameyou can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesdefault value: 2840Note: chat_gpt data is available for 2840 only
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -342,12 +347,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * full name of search language
-* optional field
-* if you use this field, you don’t need to specify language_code;
-* if you don’t specify this field, the language_code with en value will be used by default;
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* Note: chat_gpt data is available for English only
+   * full name of search languageoptional fieldif you use this field, you don't need to specify language_code;if you don't specify this field, the language_code with en value will be used by default;you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesNote: chat_gpt data is available for English only
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -370,12 +370,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * search language code
-* optional field
-* if you use this field, you don’t need to specify language_name;
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* default value: en
-* Note: chat_gpt data is available for en only
+   * search language codeoptional fieldif you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languagesdefault value: enNote: chat_gpt data is available for en onlyn
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -398,13 +393,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * target platform
-* optional field
-* possible values:
-* chat_gpt, google
-* default value: google
-* Note: the data returned depends on the selected platform
-* Note #2:chat_gpt data is available for the United States and English only
+   * target platformoptional fieldpossible values:chat_gpt, googledefault value: googleNote: the data returned depends on the selected platformNote #2:chat_gpt data is available for the United States and English only
    * @return platform
    */
   @javax.annotation.Nullable
@@ -427,17 +416,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * array of filter expressions applied before aggregation
-* optional field
-* you can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['ai_search_volume','>','1000']
-* The full list of possible filters is available here.
+   * array of filter expressions applied before aggregationoptional fieldyou can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;you can add several filters at once (8 filters maximum)you should set a logical operator and, or between the conditionsthe following operators are supported:=, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_matchyou can use the % operator with like and not_like to match any string of zero or more charactersexample:['ai_search_volume','>','1000']The full list of possible filters is available here.
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
@@ -460,14 +439,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the following arrays:
-* sources_domain
-* search_results_domain
-* minimum value: 1
-* maximum value: 10
-* default value: 5
+   * maximum number of elements within internal arraysoptional fieldyou can use this field to limit the number of elements within the following arrays:sources_domainsearch_results_domainminimum value: 1maximum value: 10default value: 5
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -490,11 +462,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -553,10 +521,12 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
         Objects.equals(this.targets, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.targets) &&
         Objects.equals(this.aggregationKey, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.aggregationKey) &&
         Objects.equals(this.target, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.target) &&
+        Objects.equals(this.domainEntity, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.domainEntity) &&
         Objects.equals(this.domain, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.domain) &&
         Objects.equals(this.searchFilter, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.searchFilter) &&
         Objects.equals(this.searchScope, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.searchScope) &&
         Objects.equals(this.includeSubdomains, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.includeSubdomains) &&
+        Objects.equals(this.keywordEntity, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.keywordEntity) &&
         Objects.equals(this.keyword, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.keyword) &&
         Objects.equals(this.matchType, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.matchType) &&
         Objects.equals(this.locationName, aiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo.locationName) &&
@@ -576,7 +546,7 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(targets, aggregationKey, target, domain, searchFilter, searchScope, includeSubdomains, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, initialDatasetFilters, internalListLimit, tag);
+  return Objects.hash(targets, aggregationKey, target, domainEntity, domain, searchFilter, searchScope, includeSubdomains, keywordEntity, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, initialDatasetFilters, internalListLimit, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -594,10 +564,12 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
     sb.append("    targets: ").append(toIndentedString(targets)).append("\n");
     sb.append("    aggregationKey: ").append(toIndentedString(aggregationKey)).append("\n");
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
+    sb.append("    domainEntity: ").append(toIndentedString(domainEntity)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    searchFilter: ").append(toIndentedString(searchFilter)).append("\n");
     sb.append("    searchScope: ").append(toIndentedString(searchScope)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
+    sb.append("    keywordEntity: ").append(toIndentedString(keywordEntity)).append("\n");
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
     sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
@@ -637,6 +609,8 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
     
     openapiFields.add("target");
     
+    openapiFields.add("domain_entity");
+    
     openapiFields.add("domain");
     
     openapiFields.add("search_filter");
@@ -644,6 +618,8 @@ public class AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo  {
     openapiFields.add("search_scope");
     
     openapiFields.add("include_subdomains");
+    
+    openapiFields.add("keyword_entity");
     
     openapiFields.add("keyword");
     

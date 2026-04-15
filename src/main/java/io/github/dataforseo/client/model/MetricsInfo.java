@@ -324,10 +324,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * estimated traffic volume
-* estimated organic monthly traffic to the domain
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for
-* learn more about how the metric is calculated in this help center article
+   * estimated traffic volumeestimated organic monthly traffic to the domaincalculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks forlearn more about how the metric is calculated in this help center article
    * @return etv
    */
   @javax.annotation.Nullable
@@ -373,10 +370,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid
-* represents the estimated monthly cost of running ads (USD) for all keywords a domain ranks for
-* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
-* learn more about how the metric is calculated in this help center article
+   * estimated cost of converting organic search traffic into paidrepresents the estimated monthly cost of running ads (USD) for all keywords a domain ranks forthe metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Searchlearn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable

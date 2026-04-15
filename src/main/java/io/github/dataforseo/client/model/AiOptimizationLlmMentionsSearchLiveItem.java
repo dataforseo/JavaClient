@@ -61,6 +61,29 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_MODEL_NAME = "model_name";
+  @SerializedName(SERIALIZED_NAME_MODEL_NAME)
+  private String modelName;
+
+  public AiOptimizationLlmMentionsSearchLiveItem modelName(String modelName) {
+    this.modelName = modelName;
+    return this;
+  }
+
+  /**
+   * name of the AI model from which the data was retrievedNote: for the google platform type, the value is always google_ai_overview
+   * @return modelName
+   */
+  @javax.annotation.Nullable
+  public String getModelName() {
+    return modelName;
+  }
+
+  public void setModelName(String modelName) {
+    this.modelName = modelName;
+  }
+
+
   public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
   @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
   private Integer locationCode;
@@ -381,6 +404,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
     return
 
         Objects.equals(this.platform, aiOptimizationLlmMentionsSearchLiveItem.platform) &&
+        Objects.equals(this.modelName, aiOptimizationLlmMentionsSearchLiveItem.modelName) &&
         Objects.equals(this.locationCode, aiOptimizationLlmMentionsSearchLiveItem.locationCode) &&
         Objects.equals(this.languageCode, aiOptimizationLlmMentionsSearchLiveItem.languageCode) &&
         Objects.equals(this.question, aiOptimizationLlmMentionsSearchLiveItem.question) &&
@@ -402,7 +426,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(platform, locationCode, languageCode, question, answer, sources, searchResults, aiSearchVolume, monthlySearches, firstResponseAt, lastResponseAt, brandEntities, fanOutQueries);
+  return Objects.hash(platform, modelName, locationCode, languageCode, question, answer, sources, searchResults, aiSearchVolume, monthlySearches, firstResponseAt, lastResponseAt, brandEntities, fanOutQueries);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -418,6 +442,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
     sb.append("class AiOptimizationLlmMentionsSearchLiveItem {\n");
 
     sb.append("    platform: ").append(toIndentedString(platform)).append("\n");
+    sb.append("    modelName: ").append(toIndentedString(modelName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    question: ").append(toIndentedString(question)).append("\n");
@@ -454,6 +479,8 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("platform");
+    
+    openapiFields.add("model_name");
     
     openapiFields.add("location_code");
     

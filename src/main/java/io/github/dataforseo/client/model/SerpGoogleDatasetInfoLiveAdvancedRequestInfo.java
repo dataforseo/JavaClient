@@ -48,11 +48,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * ID of the dataset
-* required field
-* you can find dataset ID in the dataset URL or dataset item of Google Dataset Search result
-* example:
-* L2cvMTFqbl85ZHN6MQ==
+   * ID of the datasetrequired fieldyou can find dataset ID in the dataset URL or dataset item of Google Dataset Search resultexample:L2cvMTFqbl85ZHN6MQ==
    * @return datasetId
    */
   @javax.annotation.Nullable
@@ -75,11 +71,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language code
-* optional field
-* if you use this field, you don't need to specify language_name
-* possible value:
-* en
+   * search engine language codeoptional fieldif you use this field, you don't need to specify language_namepossible value:en
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -102,10 +94,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* return results for a specific device type
-* possible value: desktop
+   * device typeoptional fieldreturn results for a specific device typepossible value: desktop
    * @return device
    */
   @javax.annotation.Nullable
@@ -128,11 +117,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* optional field
-* if you use this field, you don't need to specify language_code
-* possible value:
-* English
+   * full name of search engine languageoptional fieldif you use this field, you don't need to specify language_codepossible value:English
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -155,10 +140,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* possible values: windows, macos
-* default value: windows
+   * device operating systemoptional fieldpossible values: windows, macosdefault value: windows
    * @return os
    */
   @javax.annotation.Nullable
@@ -181,11 +163,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable

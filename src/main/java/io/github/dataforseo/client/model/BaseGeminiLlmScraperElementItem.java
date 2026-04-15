@@ -71,9 +71,7 @@ public class BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -96,8 +94,7 @@ public class BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements in SERP
+   * absolute rank in SERPabsolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -120,8 +117,7 @@ public class BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * content of the element in markdown format
-* content of the result formatted in the markdown markup language
+   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable

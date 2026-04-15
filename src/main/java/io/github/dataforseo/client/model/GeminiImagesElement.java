@@ -117,8 +117,7 @@ public class GeminiImagesElement  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -141,8 +140,7 @@ public class GeminiImagesElement  {
   }
 
   /**
-   * content of the element in markdown format
-* content of the result formatted in the markdown markup language
+   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable

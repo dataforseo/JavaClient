@@ -257,8 +257,8 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
 
   /**
    * estimated traffic volume
-* estimated organic monthly traffic to the domain
-* calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
+* estimated paid monthly traffic to the target
+* calculated as the product of CTR (click-through-rate) and search volume values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -282,9 +282,8 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid
-* represents the estimated monthly cost of running ads (USD) for the returned keyword
-* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
+   * estimated cost of monthly search traffic
+* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values of all keywords in the category that the target ranks for
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -358,7 +357,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * backlinks information for the ranked website
+   * backlinks information for the relevant page URL
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

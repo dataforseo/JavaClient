@@ -48,8 +48,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+   * keyword received in a POST arraythe keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -141,8 +140,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided exact results
+   * direct URL to search engine resultsyou can use it to make sure that we provided exact results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -165,10 +163,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -191,8 +186,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * content of the element in markdown format
-* content of the result formatted in the markdown markup language
+   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -215,8 +209,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * array of search results
-* all web search outputs the model retrieved when looking up information, including duplicates and unused entries
+   * array of search resultsall web search outputs the model retrieved when looking up information, including duplicates and unused entries
    * @return searchResults
    */
   @javax.annotation.Nullable
@@ -239,8 +232,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * array of sources
-* the sources the model actually cited or relied on in its final answer
+   * array of sourcesthe sources the model actually cited or relied on in its final answer
    * @return sources
    */
   @javax.annotation.Nullable
@@ -263,8 +255,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * array of fan-out queries
-* contains related search queries derived from the main query to provide a more comprehensive response
+   * array of fan-out queriescontains related search queries derived from the main query to provide a more comprehensive response
    * @return fanOutQueries
    */
   @javax.annotation.Nullable
@@ -287,8 +278,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * array of brand entities
-* contains information on brands mentioned in the response
+   * array of brand entitiescontains information on brands mentioned in the response
    * @return brandEntities
    */
   @javax.annotation.Nullable
@@ -334,10 +324,7 @@ public class AiOptimizationChatGptLlmScraperTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * types of search results
-* contains types of search results (items) found.
-* possible item types:
-* chat_gpt_text, chat_gpt_table, chat_gpt_navigation_list, chat_gpt_images, chat_gpt_local_businesses, chat_gpt_products
+   * types of search resultscontains types of search results (items) found.possible item types:chat_gpt_text, chat_gpt_table, chat_gpt_navigation_list, chat_gpt_images, chat_gpt_local_businesses, chat_gpt_products
    * @return itemTypes
    */
   @javax.annotation.Nullable

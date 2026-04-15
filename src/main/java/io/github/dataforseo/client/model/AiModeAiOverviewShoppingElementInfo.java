@@ -84,6 +84,52 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_DATA_DOCID = "data_docid";
+  @SerializedName(SERIALIZED_NAME_DATA_DOCID)
+  private String dataDocid;
+
+  public AiModeAiOverviewShoppingElementInfo dataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
+    return this;
+  }
+
+  /**
+   * 
+   * @return dataDocid
+   */
+  @javax.annotation.Nullable
+  public String getDataDocid() {
+    return dataDocid;
+  }
+
+  public void setDataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
+  }
+
+
+  public static final String SERIALIZED_NAME_GID = "gid";
+  @SerializedName(SERIALIZED_NAME_GID)
+  private String gid;
+
+  public AiModeAiOverviewShoppingElementInfo gid(String gid) {
+    this.gid = gid;
+    return this;
+  }
+
+  /**
+   * 
+   * @return gid
+   */
+  @javax.annotation.Nullable
+  public String getGid() {
+    return gid;
+  }
+
+  public void setGid(String gid) {
+    this.gid = gid;
+  }
+
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -368,6 +414,8 @@ public class AiModeAiOverviewShoppingElementInfo  {
 
         Objects.equals(this.type, aiModeAiOverviewShoppingElementInfo.type) &&
         Objects.equals(this.productId, aiModeAiOverviewShoppingElementInfo.productId) &&
+        Objects.equals(this.dataDocid, aiModeAiOverviewShoppingElementInfo.dataDocid) &&
+        Objects.equals(this.gid, aiModeAiOverviewShoppingElementInfo.gid) &&
         Objects.equals(this.title, aiModeAiOverviewShoppingElementInfo.title) &&
         Objects.equals(this.url, aiModeAiOverviewShoppingElementInfo.url) &&
         Objects.equals(this.domain, aiModeAiOverviewShoppingElementInfo.domain) &&
@@ -387,7 +435,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, productId, title, url, domain, rating, price, seller, snippet, marketplace, marketplaceUrl, imageUrl);
+  return Objects.hash(type, productId, dataDocid, gid, title, url, domain, rating, price, seller, snippet, marketplace, marketplaceUrl, imageUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -404,6 +452,8 @@ public class AiModeAiOverviewShoppingElementInfo  {
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    dataDocid: ").append(toIndentedString(dataDocid)).append("\n");
+    sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
@@ -440,6 +490,10 @@ public class AiModeAiOverviewShoppingElementInfo  {
     openapiFields.add("type");
     
     openapiFields.add("product_id");
+    
+    openapiFields.add("data_docid");
+    
+    openapiFields.add("gid");
     
     openapiFields.add("title");
     

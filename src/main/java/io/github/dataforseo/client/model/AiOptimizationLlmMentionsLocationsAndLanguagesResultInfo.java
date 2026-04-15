@@ -94,8 +94,7 @@ public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * supported languages
-* contains the languages which are supported for a specific location
+   * supported languagescontains the languages which are supported for a specific location
    * @return availableLanguages
    */
   @javax.annotation.Nullable

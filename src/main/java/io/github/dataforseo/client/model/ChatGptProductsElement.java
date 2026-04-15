@@ -117,8 +117,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * product identifier token
-* Base64-encoded token containing Google Shopping product IDs associated with the product
+   * product identifier tokenBase64-encoded token containing Google Shopping product IDs associated with the product
    * @return idToTokenMap
    */
   @javax.annotation.Nullable
@@ -164,8 +163,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * rating of the corresponding local business
-* popularity rate based on reviews as displayed in the results
+   * rating of the corresponding local businesspopularity rate based on reviews as displayed in the results
    * @return rating
    */
   @javax.annotation.Nullable
@@ -211,8 +209,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * currency of the listed price
-* ISO code of the currency applied to the price
+   * currency of the listed priceISO code of the currency applied to the price
    * @return currency
    */
   @javax.annotation.Nullable
@@ -304,8 +301,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * image URLs of the element
-* contains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available)
+   * image URLs of the elementcontains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available)
    * @return images
    */
   @javax.annotation.Nullable
@@ -328,8 +324,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * Google Shopping product identifiers
-* array of Google Shopping product IDs associated with the product
+   * Google Shopping product identifiersarray of Google Shopping product IDs associated with the product
    * @return productIds
    */
   @javax.annotation.Nullable

@@ -13,4 +13,4 @@
 **reviewsCount** | **Long** | total number of reviews submitted for the local business |[optional]|
 **url** | **String** | URL |[optional]|
 **domain** | **String** | domain |[optional]|
-**rating** | **RatingInfo** | rating of the corresponding local business<br>popularity rate based on reviews as displayed in the results |[optional]|
+**rating** | **RatingInfo** | rating of the corresponding local businesspopularity rate based on reviews as displayed in the results |[optional]|

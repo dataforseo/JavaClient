@@ -71,8 +71,7 @@ public class GeminiTableElementItem  extends BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * table present in the element
-* the header and content of the table present in the element
+   * table present in the elementthe header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable

@@ -280,7 +280,7 @@ public class BusinessDataBusinessListingsSearchLiveRequestInfo  {
 * default value: 0
 * if you specify the 10 value, the first ten entities in the results array will be omitted and the data will be provided for the successive entities
 * Note: we recommend using this parameter only when retrieving up to 10,000 results
-* for retrieving over 10,000 results, use the offset_token instead.
+* for retrieving over 10,000 results, use the offset_token instead
    * @return offset
    */
   @javax.annotation.Nullable

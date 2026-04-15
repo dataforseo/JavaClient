@@ -71,8 +71,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * event identifier
-* internal event identifier used by Google
+   * event identifierinternal event identifier used by Google
    * @return ei
    */
   @javax.annotation.Nullable
@@ -95,8 +94,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * product identifier
-* can be used as a data_docid in Google Shopping API endpoints
+   * product identifiercan be used as a data_docid in Google Shopping API endpoints
    * @return productId
    */
   @javax.annotation.Nullable
@@ -119,8 +117,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * Google Shopping catalog identifier of the product
-* can be used as a product_id in Google Shopping API endpoints
+   * Google Shopping catalog identifier of the productcan be used as a product_id in Google Shopping API endpoints
    * @return catalogId
    */
   @javax.annotation.Nullable
@@ -143,8 +140,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * Google product cluster identifier
-* can be used as a gid in Google Shopping API endpoints
+   * Google product cluster identifiercan be used as a gid in Google Shopping API endpoints
    * @return gpcid
    */
   @javax.annotation.Nullable
@@ -167,8 +163,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * document identifier of the main offer in the headline
-* can be used as a data_docid in Google Shopping API endpoints
+   * document identifier of the main offer in the headlinecan be used as a data_docid in Google Shopping API endpoints
    * @return headlineOfferDocid
    */
   @javax.annotation.Nullable
@@ -214,8 +209,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * resource descriptor string 
-* internal Google resource descriptor string that identifies the product within Google’s Shopping index
+   * resource descriptor string internal Google resource descriptor string that identifies the product within Google's Shopping index
    * @return rds
    */
   @javax.annotation.Nullable
@@ -238,8 +232,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * search query
-* search query used by ChatGPT to retrieve the product from Google Shopping
+   * search querysearch query used by ChatGPT to retrieve the product from Google Shopping
    * @return query
    */
   @javax.annotation.Nullable
@@ -262,8 +255,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * merchant identifier
-* identifier of the seller or merchant account in Google Shopping
+   * merchant identifieridentifier of the seller or merchant account in Google Shopping
    * @return mid
    */
   @javax.annotation.Nullable
@@ -286,8 +278,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * product view type
-* internal Google parameter that specifies the product view type used when rendering the product item
+   * product view typeinternal Google parameter that specifies the product view type used when rendering the product item
    * @return pvt
    */
   @javax.annotation.Nullable
@@ -310,8 +301,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * encoded location parameter
-* indicates the location for a search
+   * encoded location parameterindicates the location for a search
    * @return uule
    */
   @javax.annotation.Nullable
@@ -334,8 +324,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * country code
-* indicates the location for which search results are displayed
+   * country codeindicates the location for which search results are displayed
    * @return gl
    */
   @javax.annotation.Nullable
@@ -358,8 +347,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * host language code
-* indicates the language in which search results are displayed
+   * host language codeindicates the language in which search results are displayed
    * @return hl
    */
   @javax.annotation.Nullable

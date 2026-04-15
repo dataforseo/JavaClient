@@ -48,8 +48,7 @@ public class ChatGptImagesElementItem  extends BaseChatGptLlmScraperElementItem 
   }
 
   /**
-   * content of the element in markdown format
-* content of the result formatted in the markdown markup language
+   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable

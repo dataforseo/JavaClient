@@ -48,8 +48,7 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * content of the element in markdown format
-* content of the result formatted in the markdown markup language
+   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -95,8 +94,7 @@ public class ChatGptTextElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * array of brand entities
-* contains information on brands mentioned in the text
+   * array of brand entitiescontains information on brands mentioned in the text
    * @return brandEntities
    */
   @javax.annotation.Nullable

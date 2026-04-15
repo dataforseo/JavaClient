@@ -48,10 +48,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * prompt for the AI model
-* required field
-* the question or task you want to send to the AI model;
-* you can specify up to 500 characters in the user_prompt field
+   * prompt for the AI modelrequired fieldthe question or task you want to send to the AI model;you can specify up to 500 characters in the user_prompt field
    * @return userPrompt
    */
   @javax.annotation.Nullable
@@ -74,12 +71,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * name of the AI model
-* required field
-* model_nameconsists of the actual model name and version name;
-* if the basic model name is specified, its latest version will be set by default;
-* for example, if claude-opus-4-0 is specified, the claude-opus-4-20250514 will be set as model_name automatically;
-* you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/claude/llm_responses/models
+   * name of the AI modelrequired fieldmodel_nameconsists of the actual model name and version name;if the basic model name is specified, its latest version will be set by default;for example, if claude-opus-4-0 is specified, the claude-opus-4-20250514 will be set as model_name automatically;you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/claude/llm_responses/models
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -102,13 +94,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * maximum number of tokens in the AI response
-* optional field
-* minimum value: 1;
-* maximum value: 4096;
-* default value: 2048;
-* Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
-* Note #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1025
+   * maximum number of tokens in the AI responseoptional fieldminimum value: 1;maximum value: 4096;default value: 2048;Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limitNote #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1025
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -131,14 +117,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * randomness of the AI response
-* optional field
-* higher values make output more diverse;
-* lower values make output more focused;
-* minimum value: 0
-* maximum value: 1
-* default value: 0.7
-* Note: temperature cannot be used together with top_p in the same request
+   * randomness of the AI responseoptional fieldhigher values make output more diverse; lower values make output more focused;minimum value: 0maximum value: 1default value: 0.7Note: temperature cannot be used together with top_p in the same request
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -161,13 +140,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * diversity of the AI response
-* optional field
-* controls diversity of the response by limiting token selection;
-* minimum value: 0
-* maximum value: 1
-* default value: null
-* Note: top_p cannot be used together with temperature in the same request
+   * diversity of the AI responseoptional field controls diversity of the response by limiting token selection;minimum value: 0maximum value: 1 default value: nullNote: top_p cannot be used together with temperature in the same request
    * @return topP
    */
   @javax.annotation.Nullable
@@ -190,12 +163,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * enable web search for current information
-* optional field
-* when enabled, the AI model can access and cite current web information;
-* Note: refer to the Models endpoint for a list of models that support web_search;
-* default value: false;
-* The cost of the parameter can be calculated on the Pricing page
+   * enable web search for current informationoptional fieldwhen enabled, the AI model can access and cite current web information;Note: refer to the Models endpoint for a list of models that support web_search; default value: false;The cost of the parameter can be calculated on the Pricing page
    * @return webSearch
    */
   @javax.annotation.Nullable
@@ -218,12 +186,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * force AI agent to use web search
-* optional field
-* to enable this parameter, web_search must also be enabled;
-* when enabled, the AI model is forced to access and cite current web information;
-* default value: false;
-* Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response
+   * force AI agent to use web searchoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model is forced to access and cite current web information;default value: false;Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response
    * @return forceWebSearch
    */
   @javax.annotation.Nullable
@@ -246,9 +209,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * ISO country code of the location
-* optional field
-* possible values: 'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'
+   * ISO country code of the locationoptional fieldpossible values: 'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'
    * @return webSearchCountryIsoCode
    */
   @javax.annotation.Nullable
@@ -271,9 +232,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * city name of the location
-* optional field
-* Note: specify web_search_country_iso_code to use this parameter
+   * city name of the locationoptional fieldNote: specify web_search_country_iso_code to use this parameter
    * @return webSearchCity
    */
   @javax.annotation.Nullable
@@ -296,10 +255,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * instructions for the AI behaviour
-* optional field
-* defines the AI’s role, tone, or specific behavior;
-* you can specify up to 500 characters in the system_message field
+   * instructions for the AI behaviouroptional fielddefines the AI's role, tone, or specific behavior;you can specify up to 500 characters in the system_message field
    * @return systemMessage
    */
   @javax.annotation.Nullable
@@ -354,14 +310,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * enable reasoning for the AI model
-* optional field
-* when enabled, the model will perform reasoning before generating a response
-* refer to the Models endpoint for a list of models that support reasoning
-* default value: false
-* Note: if set to true, the minimum value for max_output_tokens is 1025
-* Note #2: if set to true, force_web_search must be set to false
-* Note #3: if set to true, the temperature and top_p cannot be used
+   * enable reasoning for the AI modeloptional fieldwhen enabled, the model will perform reasoning before generating a responserefer to the Models endpoint for a list of models that support reasoningdefault value: falseNote: if set to true, the minimum value for max_output_tokens is 1025Note #2: if set to true, force_web_search must be set to falseNote #3: if set to true, the temperature and top_p cannot be used
    * @return useReasoning
    */
   @javax.annotation.Nullable
@@ -384,11 +333,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -411,16 +356,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task results
-* optional field
-* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/postbackscript?id=$id
-* http://your-server.com/postbackscript?id=$id&tag=$tag
-* Note: special character in postback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special character in postback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -443,16 +379,7 @@ public class AiOptimizationClaudeLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special character in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special character in pingback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

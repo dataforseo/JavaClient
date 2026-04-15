@@ -7,6 +7,8 @@
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
 **productId** | **String** |  |[optional]|
+**dataDocid** | **String** |  |[optional]|
+**gid** | **String** |  |[optional]|
 **title** | **String** | title of the element |[optional]|
 **url** | **String** | reference page URL |[optional]|
 **domain** | **String** | domain in link |[optional]|

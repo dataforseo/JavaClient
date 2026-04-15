@@ -85,6 +85,31 @@ public class SerpApiPeopleAlsoAskAiOverviewExpandedElementItem  extends BaseSerp
   }
 
 
+  public static final String SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW = "asynchronous_ai_overview";
+  @SerializedName(SERIALIZED_NAME_ASYNCHRONOUS_AI_OVERVIEW)
+  private Boolean asynchronousAiOverview;
+
+  public SerpApiPeopleAlsoAskAiOverviewExpandedElementItem asynchronousAiOverview(Boolean asynchronousAiOverview) {
+    this.asynchronousAiOverview = asynchronousAiOverview;
+    return this;
+  }
+
+  /**
+   * indicates whether the element is loaded asynchronously
+* if true, the people_also_ask_ai_overview_expanded_element element is loaded asynchronously;
+* if false, the people_also_ask_ai_overview_expanded_element element is loaded from cache
+   * @return asynchronousAiOverview
+   */
+  @javax.annotation.Nullable
+  public Boolean getAsynchronousAiOverview() {
+    return asynchronousAiOverview;
+  }
+
+  public void setAsynchronousAiOverview(Boolean asynchronousAiOverview) {
+    this.asynchronousAiOverview = asynchronousAiOverview;
+  }
+
+
 
   public SerpApiPeopleAlsoAskAiOverviewExpandedElementItem() {
   }
@@ -129,7 +154,8 @@ public class SerpApiPeopleAlsoAskAiOverviewExpandedElementItem  extends BaseSerp
     return
 
         Objects.equals(this.items, serpApiPeopleAlsoAskAiOverviewExpandedElementItem.items) &&
-        Objects.equals(this.references, serpApiPeopleAlsoAskAiOverviewExpandedElementItem.references) && 
+        Objects.equals(this.references, serpApiPeopleAlsoAskAiOverviewExpandedElementItem.references) &&
+        Objects.equals(this.asynchronousAiOverview, serpApiPeopleAlsoAskAiOverviewExpandedElementItem.asynchronousAiOverview) && 
         super.equals(o);
     
   }
@@ -140,7 +166,7 @@ public class SerpApiPeopleAlsoAskAiOverviewExpandedElementItem  extends BaseSerp
 
   @Override
   public int hashCode() {
-  return Objects.hash(items, references);
+  return Objects.hash(items, references, asynchronousAiOverview);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -157,6 +183,7 @@ public class SerpApiPeopleAlsoAskAiOverviewExpandedElementItem  extends BaseSerp
 
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    references: ").append(toIndentedString(references)).append("\n");
+    sb.append("    asynchronousAiOverview: ").append(toIndentedString(asynchronousAiOverview)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -184,6 +211,8 @@ public class SerpApiPeopleAlsoAskAiOverviewExpandedElementItem  extends BaseSerp
     openapiFields.add("items");
     
     openapiFields.add("references");
+    
+    openapiFields.add("asynchronous_ai_overview");
     
 
     // a set of required properties/fields (JSON key names)

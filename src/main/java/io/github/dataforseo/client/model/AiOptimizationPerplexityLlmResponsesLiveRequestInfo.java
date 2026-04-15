@@ -48,10 +48,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * prompt for the AI model
-* required field
-* the question or task you want to send to the AI model;
-* you can specify up to 500 characters in the user_prompt field
+   * prompt for the AI modelrequired fieldthe question or task you want to send to the AI model;you can specify up to 500 characters in the user_prompt field
    * @return userPrompt
    */
   @javax.annotation.Nullable
@@ -74,11 +71,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * name of the AI model
-* required field
-* model_nameconsists of the actual model name and version name;
-* if the basic model name is specified, its latest version will be set by default;
-* you can receive the list of available LLM models by making a separate request to the following endpoint: https://api.dataforseo.com/v3/ai_optimization/perplexity/llm_responses/models
+   * name of the AI modelrequired fieldmodel_nameconsists of the actual model name and version name;if the basic model name is specified, its latest version will be set by default;you can receive the list of available LLM models by making a separate request to the following endpoint: https://api.dataforseo.com/v3/ai_optimization/perplexity/llm_responses/models
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -101,12 +94,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * maximum number of tokens in the AI response
-* optional field
-* minimum value: 1
-* maximum value: 4096;
-* default value: 2048;
-* Note: if the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
+   * maximum number of tokens in the AI responseoptional fieldminimum value: 1maximum value: 4096;default value: 2048;Note: if the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -129,13 +117,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * randomness of the AI response
-* optional field
-* higher values make output more diverse
-* lower values make output more focused
-* minimum value: 0
-* maximum value: 1.9
-* default value: 0.77
+   * randomness of the AI responseoptional fieldhigher values make output more diverse lower values make output more focusedminimum value: 0maximum value: 1.9default value: 0.77
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -158,12 +140,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * diversity of the AI response
-* optional field
-* controls diversity of the response by limiting token selection
-* minimum value: 0
-* maximum value: 1
-* default value: 0.9
+   * diversity of the AI responseoptional field controls diversity of the response by limiting token selectionminimum value: 0maximum value: 1 default value: 0.9
    * @return topP
    */
   @javax.annotation.Nullable
@@ -186,11 +163,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * country code for web search localization
-* optional field
-* specify the country  ISO code to get localized web search results
-* Note: available only for Perplexity Sonar models
-* example: US
+   * country code for web search localizationoptional fieldspecify the country  ISO code to get localized web search resultsNote: available only for Perplexity Sonar modelsexample: US
    * @return webSearchCountryIsoCode
    */
   @javax.annotation.Nullable
@@ -213,10 +186,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * instructions for the AI behavior
-* optional field
-* defines the AI’s role, tone, or specific behavior
-* you can specify up to 500 characters in the system_message field
+   * instructions for the AI behavioroptional fielddefines the AI's role, tone, or specific behavior you can specify up to 500 characters in the system_message field
    * @return systemMessage
    */
   @javax.annotation.Nullable
@@ -271,11 +241,7 @@ public class AiOptimizationPerplexityLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable

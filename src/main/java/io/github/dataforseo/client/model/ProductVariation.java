@@ -85,6 +85,77 @@ public class ProductVariation  {
   }
 
 
+  public static final String SERIALIZED_NAME_GID = "gid";
+  @SerializedName(SERIALIZED_NAME_GID)
+  private String gid;
+
+  public ProductVariation gid(String gid) {
+    this.gid = gid;
+    return this;
+  }
+
+  /**
+   * GID ID in a POST array
+* learn more about the parameter in this help center guide
+   * @return gid
+   */
+  @javax.annotation.Nullable
+  public String getGid() {
+    return gid;
+  }
+
+  public void setGid(String gid) {
+    this.gid = gid;
+  }
+
+
+  public static final String SERIALIZED_NAME_DATA_DOCID = "data_docid";
+  @SerializedName(SERIALIZED_NAME_DATA_DOCID)
+  private String dataDocid;
+
+  public ProductVariation dataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
+    return this;
+  }
+
+  /**
+   * unique identifier of the SERP data element in the POST array
+   * @return dataDocid
+   */
+  @javax.annotation.Nullable
+  public String getDataDocid() {
+    return dataDocid;
+  }
+
+  public void setDataDocid(String dataDocid) {
+    this.dataDocid = dataDocid;
+  }
+
+
+  public static final String SERIALIZED_NAME_PVF = "pvf";
+  @SerializedName(SERIALIZED_NAME_PVF)
+  private String pvf;
+
+  public ProductVariation pvf(String pvf) {
+    this.pvf = pvf;
+    return this;
+  }
+
+  /**
+   * product variation filter
+* used in the product variation URL as the identifier of the specific product variation
+   * @return pvf
+   */
+  @javax.annotation.Nullable
+  public String getPvf() {
+    return pvf;
+  }
+
+  public void setPvf(String pvf) {
+    this.pvf = pvf;
+  }
+
+
   public static final String SERIALIZED_NAME_TITLE = "title";
   @SerializedName(SERIALIZED_NAME_TITLE)
   private String title;
@@ -118,7 +189,7 @@ public class ProductVariation  {
   }
 
   /**
-   * product url on google shopping
+   * product variation URL on Google Shopping
    * @return url
    */
   @javax.annotation.Nullable
@@ -128,6 +199,30 @@ public class ProductVariation  {
 
   public void setUrl(String url) {
     this.url = url;
+  }
+
+
+  public static final String SERIALIZED_NAME_VARIATION_CATEGORY = "variation_category";
+  @SerializedName(SERIALIZED_NAME_VARIATION_CATEGORY)
+  private String variationCategory;
+
+  public ProductVariation variationCategory(String variationCategory) {
+    this.variationCategory = variationCategory;
+    return this;
+  }
+
+  /**
+   * category of the product variation
+* example: 'Storage Capacity'
+   * @return variationCategory
+   */
+  @javax.annotation.Nullable
+  public String getVariationCategory() {
+    return variationCategory;
+  }
+
+  public void setVariationCategory(String variationCategory) {
+    this.variationCategory = variationCategory;
   }
 
 
@@ -176,8 +271,12 @@ public class ProductVariation  {
 
         Objects.equals(this.type, productVariation.type) &&
         Objects.equals(this.productId, productVariation.productId) &&
+        Objects.equals(this.gid, productVariation.gid) &&
+        Objects.equals(this.dataDocid, productVariation.dataDocid) &&
+        Objects.equals(this.pvf, productVariation.pvf) &&
         Objects.equals(this.title, productVariation.title) &&
-        Objects.equals(this.url, productVariation.url);  
+        Objects.equals(this.url, productVariation.url) &&
+        Objects.equals(this.variationCategory, productVariation.variationCategory);  
     
   }
 
@@ -187,7 +286,7 @@ public class ProductVariation  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, productId, title, url);
+  return Objects.hash(type, productId, gid, dataDocid, pvf, title, url, variationCategory);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -204,8 +303,12 @@ public class ProductVariation  {
 
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
+    sb.append("    dataDocid: ").append(toIndentedString(dataDocid)).append("\n");
+    sb.append("    pvf: ").append(toIndentedString(pvf)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    variationCategory: ").append(toIndentedString(variationCategory)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -233,9 +336,17 @@ public class ProductVariation  {
     
     openapiFields.add("product_id");
     
+    openapiFields.add("gid");
+    
+    openapiFields.add("data_docid");
+    
+    openapiFields.add("pvf");
+    
     openapiFields.add("title");
     
     openapiFields.add("url");
+    
+    openapiFields.add("variation_category");
     
 
     // a set of required properties/fields (JSON key names)

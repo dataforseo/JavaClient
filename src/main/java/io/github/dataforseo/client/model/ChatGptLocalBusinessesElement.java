@@ -232,8 +232,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * rating of the corresponding local business
-* popularity rate based on reviews as displayed in the results
+   * rating of the corresponding local businesspopularity rate based on reviews as displayed in the results
    * @return rating
    */
   @javax.annotation.Nullable

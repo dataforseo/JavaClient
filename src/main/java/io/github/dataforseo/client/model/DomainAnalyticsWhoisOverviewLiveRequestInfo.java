@@ -48,10 +48,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned domains
-* optional field
-* default value: 100
-* maximum value: 1000
+   * the maximum number of returned domainsoptional fielddefault value: 100maximum value: 1000
    * @return limit
    */
   @javax.annotation.Nullable
@@ -74,10 +71,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned items
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten items in the results array will be omitted and the data will be provided for the successive items
+   * offset in the results array of returned itemsoptional fielddefault value: 0if you specify the 10 value, the first ten items in the results array will be omitted and the data will be provided for the successive items;Note: we recommend using this parameter only when retrieving up to 10,000 results for retrieving over 10,000 results, use the offset_token instead
    * @return offset
    */
   @javax.annotation.Nullable
@@ -87,6 +81,29 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
 
   public void setOffset(Integer offset) {
     this.offset = offset;
+  }
+
+
+  public static final String SERIALIZED_NAME_OFFSET_TOKEN = "offset_token";
+  @SerializedName(SERIALIZED_NAME_OFFSET_TOKEN)
+  private String offsetToken;
+
+  public DomainAnalyticsWhoisOverviewLiveRequestInfo offsetToken(String offsetToken) {
+    this.offsetToken = offsetToken;
+    return this;
+  }
+
+  /**
+   * token for subsequent requestsoptional fieldprovided in the identical filed of the response to each request;use this parameter to avoid timeouts while trying to obtain over 100,000 results in a single request;by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;offset_token values are unique for each subsequent taskNote: if the offset_token is specified in the request, all other parameters should be identical to the previous requestlearn more about this parameter on our Help Center
+   * @return offsetToken
+   */
+  @javax.annotation.Nullable
+  public String getOffsetToken() {
+    return offsetToken;
+  }
+
+  public void setOffsetToken(String offsetToken) {
+    this.offsetToken = offsetToken;
   }
 
 
@@ -100,20 +117,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, <, <=, >, >=, =, <>, in, not_in, like, not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* examples:
-* ['expiration_datetime', '<', '2021-02-15 01:00:00 +00:00']
-* [['expiration_datetime', '<', '2021-02-15 01:00:00 +00:00'],
-*  'and', 
-* ['domain', 'like', '%seo%']]
-* 
-* for more information about filters, please refer to Filters Page or this help center guide
+   * array of results filtering parametersoptional fieldyou can add several filters at once (8 filters maximum)you should set a logical operator and, or between the conditionsthe following operators are supported:regex, <, <=, >, >=, =, <>, in, not_in, like, not_likeyou can use the % operator with like and not_like to match any string of zero or more characters
    * @return filters
    */
   @javax.annotation.Nullable
@@ -136,21 +140,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc - results will be sorted in the ascending order
-* desc - results will be sorted in the descending order
-* the comma is used as a separator
-* example:
-* ['metrics.organic.pos_1,desc']
-* default rule:
-* ['metrics.organic.count,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['expiration_datetime,asc','metrics.organic.etv,desc','metrics.organic.pos_1,desc']
+   * results sorting rulesoptional fieldyou can use the same values as in the filters array to sort the resultspossible sorting types:asc - results will be sorted in the ascending orderdesc - results will be sorted in the descending orderthe comma is used as a separatorexample:['metrics.organic.pos_1,desc']default rule:['metrics.organic.count,desc']note that you can set no more than three sorting rules in a single requestyou should use a comma to separate several sorting rulesexample:['expiration_datetime,asc','metrics.organic.etv,desc','metrics.organic.pos_1,desc']
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -173,11 +163,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -235,6 +221,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
 
         Objects.equals(this.limit, domainAnalyticsWhoisOverviewLiveRequestInfo.limit) &&
         Objects.equals(this.offset, domainAnalyticsWhoisOverviewLiveRequestInfo.offset) &&
+        Objects.equals(this.offsetToken, domainAnalyticsWhoisOverviewLiveRequestInfo.offsetToken) &&
         Objects.equals(this.filters, domainAnalyticsWhoisOverviewLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, domainAnalyticsWhoisOverviewLiveRequestInfo.orderBy) &&
         Objects.equals(this.tag, domainAnalyticsWhoisOverviewLiveRequestInfo.tag);  
@@ -247,7 +234,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(limit, offset, filters, orderBy, tag);
+  return Objects.hash(limit, offset, offsetToken, filters, orderBy, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -264,6 +251,7 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
 
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
+    sb.append("    offsetToken: ").append(toIndentedString(offsetToken)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -293,6 +281,8 @@ public class DomainAnalyticsWhoisOverviewLiveRequestInfo  {
     openapiFields.add("limit");
     
     openapiFields.add("offset");
+    
+    openapiFields.add("offset_token");
     
     openapiFields.add("filters");
     
