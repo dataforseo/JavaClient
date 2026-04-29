@@ -66,30 +66,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantIdListResponseInfo response = apiInstance.merchantIdList(
-       List.of(
-    
-           new MerchantIdListRequestInfo()
-        
-           .datetimeFrom()
-        
-        
-           .datetimeTo()
-        
-        
+    MerchantIdListRequestInfo model = new MerchantIdListRequestInfo()
            .limit(100)
-        
-        
            .offset(0)
-        
-        
            .sort("desc")
-        
-        
-           .includeMetadata(true)
-    
-       )
-    );
+           .includeMetadata(true);
+    MerchantIdListResponseInfo response = apiInstance.merchantIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#merchantIdList");
@@ -157,21 +139,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantErrorsResponseInfo response = apiInstance.merchantErrors(
-       List.of(
-    
-           new MerchantErrorsRequestInfo()
-        
+    MerchantErrorsRequestInfo model = new MerchantErrorsRequestInfo()
            .limit(10)
-        
-        
            .offset(0)
-        
-        
-           .filteredFunction("pingback_url")
-    
-       )
-    );
+           .filteredFunction("pingback_url");
+    MerchantErrorsResponseInfo response = apiInstance.merchantErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#merchantErrors");
@@ -377,7 +349,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String country = ;
+    String country = "us";
     MerchantGoogleLocationsCountryResponseInfo response = apiInstance.merchantGoogleLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
@@ -446,24 +418,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantGoogleProductsTaskPostResponseInfo response = apiInstance.googleProductsTaskPost(
-       List.of(
-    
-           new MerchantGoogleProductsTaskPostRequestInfo()
-        
+    MerchantGoogleProductsTaskPostRequestInfo model = new MerchantGoogleProductsTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationCode(2840)
-        
-        
            .keyword("iphone")
-        
-        
-           .priceMin(5)
-    
-       )
-    );
+           .priceMin(5);
+    MerchantGoogleProductsTaskPostResponseInfo response = apiInstance.googleProductsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#googleProductsTaskPost");
@@ -669,7 +629,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantGoogleProductsTaskGetAdvancedResponseInfo response = apiInstance.googleProductsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -738,7 +698,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantGoogleProductsTaskGetHtmlResponseInfo response = apiInstance.googleProductsTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -807,21 +767,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantGoogleSellersTaskPostResponseInfo response = apiInstance.googleSellersTaskPost(
-       List.of(
-    
-           new MerchantGoogleSellersTaskPostRequestInfo()
-        
+    MerchantGoogleSellersTaskPostRequestInfo model = new MerchantGoogleSellersTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationCode(2840)
-        
-        
-           .productId("1113158713975221117")
-    
-       )
-    );
+           .productId("1113158713975221117");
+    MerchantGoogleSellersTaskPostResponseInfo response = apiInstance.googleSellersTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#googleSellersTaskPost");
@@ -958,7 +908,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantGoogleSellersTaskGetAdvancedResponseInfo response = apiInstance.googleSellersTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1027,21 +977,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantGoogleProductInfoTaskPostResponseInfo response = apiInstance.googleProductInfoTaskPost(
-       List.of(
-    
-           new MerchantGoogleProductInfoTaskPostRequestInfo()
-        
+    MerchantGoogleProductInfoTaskPostRequestInfo model = new MerchantGoogleProductInfoTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationCode(2840)
-        
-        
-           .productId("1113158713975221117")
-    
-       )
-    );
+           .productId("1113158713975221117");
+    MerchantGoogleProductInfoTaskPostResponseInfo response = apiInstance.googleProductInfoTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#googleProductInfoTaskPost");
@@ -1178,7 +1118,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantGoogleProductInfoTaskGetAdvancedResponseInfo response = apiInstance.googleProductInfoTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1247,7 +1187,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String shop_ad_aclk = ;
+    String shop_ad_aclk = "DChcSEwiSl5TKpbPoAhVFmdUKHfa_B_wYABADGgJ3cw&sig";
     MerchantGoogleSellersAdUrlResponseInfo response = apiInstance.googleSellersAdUrl(shop_ad_aclk);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1385,7 +1325,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String country = ;
+    String country = "us";
     MerchantAmazonLocationsCountryResponseInfo response = apiInstance.amazonLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1523,21 +1463,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantAmazonProductsTaskPostResponseInfo response = apiInstance.amazonProductsTaskPost(
-       List.of(
-    
-           new MerchantAmazonProductsTaskPostRequestInfo()
-        
+    MerchantAmazonProductsTaskPostRequestInfo model = new MerchantAmazonProductsTaskPostRequestInfo()
            .languageCode("en_US")
-        
-        
            .locationCode(2840)
-        
-        
-           .keyword("shoes")
-    
-       )
-    );
+           .keyword("shoes");
+    MerchantAmazonProductsTaskPostResponseInfo response = apiInstance.amazonProductsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#amazonProductsTaskPost");
@@ -1674,7 +1604,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantAmazonProductsTaskGetAdvancedResponseInfo response = apiInstance.amazonProductsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1743,7 +1673,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantAmazonProductsTaskGetHtmlResponseInfo response = apiInstance.amazonProductsTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1812,21 +1742,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantAmazonAsinTaskPostResponseInfo response = apiInstance.amazonAsinTaskPost(
-       List.of(
-    
-           new MerchantAmazonAsinTaskPostRequestInfo()
-        
+    MerchantAmazonAsinTaskPostRequestInfo model = new MerchantAmazonAsinTaskPostRequestInfo()
            .languageCode("en_US")
-        
-        
            .locationCode(2840)
-        
-        
-           .asin("B0756FCPPN")
-    
-       )
-    );
+           .asin("B0756FCPPN");
+    MerchantAmazonAsinTaskPostResponseInfo response = apiInstance.amazonAsinTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#amazonAsinTaskPost");
@@ -1963,7 +1883,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantAmazonAsinTaskGetAdvancedResponseInfo response = apiInstance.amazonAsinTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2032,7 +1952,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantAmazonAsinTaskGetHtmlResponseInfo response = apiInstance.amazonAsinTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2101,21 +2021,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    MerchantAmazonSellersTaskPostResponseInfo response = apiInstance.amazonSellersTaskPost(
-       List.of(
-    
-           new MerchantAmazonSellersTaskPostRequestInfo()
-        
+    MerchantAmazonSellersTaskPostRequestInfo model = new MerchantAmazonSellersTaskPostRequestInfo()
            .languageCode("en_US")
-        
-        
            .locationCode(2840)
-        
-        
-           .asin("B085RFFC9Q")
-    
-       )
-    );
+           .asin("B085RFFC9Q");
+    MerchantAmazonSellersTaskPostResponseInfo response = apiInstance.amazonSellersTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling MerchantApi#amazonSellersTaskPost");
@@ -2252,7 +2162,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantAmazonSellersTaskGetAdvancedResponseInfo response = apiInstance.amazonSellersTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2321,7 +2231,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     MerchantApi apiInstance = new MerchantApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     MerchantAmazonSellersTaskGetHtmlResponseInfo response = apiInstance.amazonSellersTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {

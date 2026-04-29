@@ -71,7 +71,8 @@ public class FaqBox  {
   }
 
   /**
-   * contains arrays of specific images
+   * additional items present in the element
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

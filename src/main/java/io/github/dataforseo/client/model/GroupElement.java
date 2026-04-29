@@ -132,9 +132,9 @@ public class GroupElement  {
 
   public static final String SERIALIZED_NAME_IMPRESSIONS = "impressions";
   @SerializedName(SERIALIZED_NAME_IMPRESSIONS)
-  private Long impressions;
+  private Integer impressions;
 
-  public GroupElement impressions(Long impressions) {
+  public GroupElement impressions(Integer impressions) {
     this.impressions = impressions;
     return this;
   }
@@ -144,11 +144,11 @@ public class GroupElement  {
    * @return impressions
    */
   @javax.annotation.Nullable
-  public Long getImpressions() {
+  public Integer getImpressions() {
     return impressions;
   }
 
-  public void setImpressions(Long impressions) {
+  public void setImpressions(Integer impressions) {
     this.impressions = impressions;
   }
 

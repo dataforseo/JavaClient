@@ -48,7 +48,7 @@ public class Graph  {
   }
 
   /**
-   * link of the element
+   * items present in the element
    * @return items
    */
   @javax.annotation.Nullable

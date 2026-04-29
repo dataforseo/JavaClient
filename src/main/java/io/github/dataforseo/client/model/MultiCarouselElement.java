@@ -71,7 +71,7 @@ public class MultiCarouselElement  {
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable

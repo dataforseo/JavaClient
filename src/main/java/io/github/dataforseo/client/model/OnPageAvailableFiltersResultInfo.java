@@ -199,26 +199,26 @@ public class OnPageAvailableFiltersResultInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_INVALID_RESOURCES = "invalid_resources";
-  @SerializedName(SERIALIZED_NAME_INVALID_RESOURCES)
-  private Map<String, String> invalidResources;
+  public static final String SERIALIZED_NAME_UNCRAWLABLE_RESOURCES = "uncrawlable_resources";
+  @SerializedName(SERIALIZED_NAME_UNCRAWLABLE_RESOURCES)
+  private Map<String, String> uncrawlableResources;
 
-  public OnPageAvailableFiltersResultInfo invalidResources(Map<String, String> invalidResources) {
-    this.invalidResources = invalidResources;
+  public OnPageAvailableFiltersResultInfo uncrawlableResources(Map<String, String> uncrawlableResources) {
+    this.uncrawlableResources = uncrawlableResources;
     return this;
   }
 
   /**
    * 
-   * @return invalidResources
+   * @return uncrawlableResources
    */
   @javax.annotation.Nullable
-  public Map<String, String> getInvalidResources() {
-    return invalidResources;
+  public Map<String, String> getUncrawlableResources() {
+    return uncrawlableResources;
   }
 
-  public void setInvalidResources(Map<String, String> invalidResources) {
-    this.invalidResources = invalidResources;
+  public void setUncrawlableResources(Map<String, String> uncrawlableResources) {
+    this.uncrawlableResources = uncrawlableResources;
   }
 
 
@@ -272,7 +272,7 @@ public class OnPageAvailableFiltersResultInfo  {
         Objects.equals(this.pagesByResource, onPageAvailableFiltersResultInfo.pagesByResource) &&
         Objects.equals(this.redirectChains, onPageAvailableFiltersResultInfo.redirectChains) &&
         Objects.equals(this.keywordDensity, onPageAvailableFiltersResultInfo.keywordDensity) &&
-        Objects.equals(this.invalidResources, onPageAvailableFiltersResultInfo.invalidResources);  
+        Objects.equals(this.uncrawlableResources, onPageAvailableFiltersResultInfo.uncrawlableResources);  
     
   }
 
@@ -282,7 +282,7 @@ public class OnPageAvailableFiltersResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(resources, pages, nonIndexable, links, pagesByResource, redirectChains, keywordDensity, invalidResources);
+  return Objects.hash(resources, pages, nonIndexable, links, pagesByResource, redirectChains, keywordDensity, uncrawlableResources);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -304,7 +304,7 @@ public class OnPageAvailableFiltersResultInfo  {
     sb.append("    pagesByResource: ").append(toIndentedString(pagesByResource)).append("\n");
     sb.append("    redirectChains: ").append(toIndentedString(redirectChains)).append("\n");
     sb.append("    keywordDensity: ").append(toIndentedString(keywordDensity)).append("\n");
-    sb.append("    invalidResources: ").append(toIndentedString(invalidResources)).append("\n");
+    sb.append("    uncrawlableResources: ").append(toIndentedString(uncrawlableResources)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -342,7 +342,7 @@ public class OnPageAvailableFiltersResultInfo  {
     
     openapiFields.add("keyword_density");
     
-    openapiFields.add("invalid_resources");
+    openapiFields.add("uncrawlable_resources");
     
 
     // a set of required properties/fields (JSON key names)

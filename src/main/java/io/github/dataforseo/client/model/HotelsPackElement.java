@@ -71,7 +71,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * price of the app element
+   * price indicated in the element
    * @return price
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -165,7 +165,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * domain where a link points
+   * website domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -188,7 +188,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -234,8 +234,9 @@ public class HotelsPackElement  {
   }
 
   /**
-   * the element’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * the item’s rating 
+* the popularity rate based on reviews and displayed in SERP;
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable

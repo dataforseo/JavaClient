@@ -71,7 +71,7 @@ public class PodcastsElement  {
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class PodcastsElement  {
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable

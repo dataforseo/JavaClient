@@ -67,190 +67,6 @@ public class AiOptimizationLlmMentionsTopPagesLiveRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_DOMAIN_ENTITY = "domain_entity";
-  @SerializedName(SERIALIZED_NAME_DOMAIN_ENTITY)
-  private Object domainEntity;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo domainEntity(Object domainEntity) {
-    this.domainEntity = domainEntity;
-    return this;
-  }
-
-  /**
-   * domain entity in the target arrayexample:{'domain': 'en.wikipedia.org', 'search_filter': 'exclude', 'search_scope': ['sources']}
-   * @return domainEntity
-   */
-  @javax.annotation.Nullable
-  public Object getDomainEntity() {
-    return domainEntity;
-  }
-
-  public void setDomainEntity(Object domainEntity) {
-    this.domainEntity = domainEntity;
-  }
-
-
-  public static final String SERIALIZED_NAME_DOMAIN = "domain";
-  @SerializedName(SERIALIZED_NAME_DOMAIN)
-  private String domain;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo domain(String domain) {
-    this.domain = domain;
-    return this;
-  }
-
-  /**
-   * target domainrequired field if you don't specify keywordyou can specify up to 63 characters in the domain field;a domain should be specified without https:// and www.
-   * @return domain
-   */
-  @javax.annotation.Nullable
-  public String getDomain() {
-    return domain;
-  }
-
-  public void setDomain(String domain) {
-    this.domain = domain;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_FILTER = "search_filter";
-  @SerializedName(SERIALIZED_NAME_SEARCH_FILTER)
-  private String searchFilter;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo searchFilter(String searchFilter) {
-    this.searchFilter = searchFilter;
-    return this;
-  }
-
-  /**
-   * target keyword search filteroptional fieldpossible values:include, excludedefault value: include
-   * @return searchFilter
-   */
-  @javax.annotation.Nullable
-  public String getSearchFilter() {
-    return searchFilter;
-  }
-
-  public void setSearchFilter(String searchFilter) {
-    this.searchFilter = searchFilter;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_SCOPE = "search_scope";
-  @SerializedName(SERIALIZED_NAME_SEARCH_SCOPE)
-  private List<String> searchScope;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo searchScope(List<String> searchScope) {
-    this.searchScope = searchScope;
-    return this;
-  }
-
-  /**
-   * target keyword search scopeoptional fieldpossible values:any, question, answer, brand_entities, fan_out_queriesdefault value: any
-   * @return searchScope
-   */
-  @javax.annotation.Nullable
-  public List<String> getSearchScope() {
-    return searchScope;
-  }
-
-  public void setSearchScope(List<String> searchScope) {
-    this.searchScope = searchScope;
-  }
-
-
-  public static final String SERIALIZED_NAME_INCLUDE_SUBDOMAINS = "include_subdomains";
-  @SerializedName(SERIALIZED_NAME_INCLUDE_SUBDOMAINS)
-  private Boolean includeSubdomains;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo includeSubdomains(Boolean includeSubdomains) {
-    this.includeSubdomains = includeSubdomains;
-    return this;
-  }
-
-  /**
-   * indicates if the subdomains of the target domain will be included in the searchoptional fieldif set to true, the subdomains will be included in the searchdefault value: false
-   * @return includeSubdomains
-   */
-  @javax.annotation.Nullable
-  public Boolean getIncludeSubdomains() {
-    return includeSubdomains;
-  }
-
-  public void setIncludeSubdomains(Boolean includeSubdomains) {
-    this.includeSubdomains = includeSubdomains;
-  }
-
-
-  public static final String SERIALIZED_NAME_KEYWORD_ENTITY = "keyword_entity";
-  @SerializedName(SERIALIZED_NAME_KEYWORD_ENTITY)
-  private Object keywordEntity;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo keywordEntity(Object keywordEntity) {
-    this.keywordEntity = keywordEntity;
-    return this;
-  }
-
-  /**
-   * keyword entity in the target arrayexample:{'keyword': 'bmw', 'search_filter': 'include', 'search_scope': ['question'], 'match_type ': 'partial_match'}
-   * @return keywordEntity
-   */
-  @javax.annotation.Nullable
-  public Object getKeywordEntity() {
-    return keywordEntity;
-  }
-
-  public void setKeywordEntity(Object keywordEntity) {
-    this.keywordEntity = keywordEntity;
-  }
-
-
-  public static final String SERIALIZED_NAME_KEYWORD = "keyword";
-  @SerializedName(SERIALIZED_NAME_KEYWORD)
-  private String keyword;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo keyword(String keyword) {
-    this.keyword = keyword;
-    return this;
-  }
-
-  /**
-   * target keywordrequired field if you don't specify domainyou can specify up to 250 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
-   * @return keyword
-   */
-  @javax.annotation.Nullable
-  public String getKeyword() {
-    return keyword;
-  }
-
-  public void setKeyword(String keyword) {
-    this.keyword = keyword;
-  }
-
-
-  public static final String SERIALIZED_NAME_MATCH_TYPE = "match_type";
-  @SerializedName(SERIALIZED_NAME_MATCH_TYPE)
-  private String matchType;
-
-  public AiOptimizationLlmMentionsTopPagesLiveRequestInfo matchType(String matchType) {
-    this.matchType = matchType;
-    return this;
-  }
-
-  /**
-   * target keyword match typeoptional fieldpossible values:word_match, partial_matchword_match - full-text search for terms that match the specified seed keyword with additional words included before, after, or within the seed key phrase.partial_match - searches for any occurrence of the keyword or its parts within the contentdefault value: word_match
-   * @return matchType
-   */
-  @javax.annotation.Nullable
-  public String getMatchType() {
-    return matchType;
-  }
-
-  public void setMatchType(String matchType) {
-    this.matchType = matchType;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
@@ -399,7 +215,7 @@ public class AiOptimizationLlmMentionsTopPagesLiveRequestInfo  {
   }
 
   /**
-   * array of filter expressions applied before aggregationoptional fieldyou can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;you can add several filters at once (8 filters maximum)you should set a logical operator and, or between the conditionsthe following operators are supported:=, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_matchyou can use the % operator with like and not_like to match any string of zero or more charactersexample:['ai_search_volume','>','1000']The full list of possible filters is available here.
+   * array of filter expressions applied before aggregationoptional fieldyou can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;you can add several filters at once (8 filters maximum)you should set a logical operator and, or between the conditionsthe following operators are supported:=, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_matchyou can use the % operator with like and not_like to match any string of zero or more charactersexample:['ai_search_volume','>','1000']the full list of possible filters is available here.learn more about the initial dataset filters in this help center article.
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
@@ -525,14 +341,6 @@ public class AiOptimizationLlmMentionsTopPagesLiveRequestInfo  {
     return
 
         Objects.equals(this.target, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.target) &&
-        Objects.equals(this.domainEntity, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.domainEntity) &&
-        Objects.equals(this.domain, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.domain) &&
-        Objects.equals(this.searchFilter, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.searchFilter) &&
-        Objects.equals(this.searchScope, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.searchScope) &&
-        Objects.equals(this.includeSubdomains, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.includeSubdomains) &&
-        Objects.equals(this.keywordEntity, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.keywordEntity) &&
-        Objects.equals(this.keyword, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.keyword) &&
-        Objects.equals(this.matchType, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.matchType) &&
         Objects.equals(this.locationName, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.locationName) &&
         Objects.equals(this.locationCode, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.locationCode) &&
         Objects.equals(this.languageName, aiOptimizationLlmMentionsTopPagesLiveRequestInfo.languageName) &&
@@ -552,7 +360,7 @@ public class AiOptimizationLlmMentionsTopPagesLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(target, domainEntity, domain, searchFilter, searchScope, includeSubdomains, keywordEntity, keyword, matchType, locationName, locationCode, languageName, languageCode, platform, linksScope, initialDatasetFilters, itemsListLimit, internalListLimit, tag);
+  return Objects.hash(target, locationName, locationCode, languageName, languageCode, platform, linksScope, initialDatasetFilters, itemsListLimit, internalListLimit, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -568,14 +376,6 @@ public class AiOptimizationLlmMentionsTopPagesLiveRequestInfo  {
     sb.append("class AiOptimizationLlmMentionsTopPagesLiveRequestInfo {\n");
 
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
-    sb.append("    domainEntity: ").append(toIndentedString(domainEntity)).append("\n");
-    sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
-    sb.append("    searchFilter: ").append(toIndentedString(searchFilter)).append("\n");
-    sb.append("    searchScope: ").append(toIndentedString(searchScope)).append("\n");
-    sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
-    sb.append("    keywordEntity: ").append(toIndentedString(keywordEntity)).append("\n");
-    sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
-    sb.append("    matchType: ").append(toIndentedString(matchType)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
@@ -610,22 +410,6 @@ public class AiOptimizationLlmMentionsTopPagesLiveRequestInfo  {
     openapiFields = new HashSet<String>();
     
     openapiFields.add("target");
-    
-    openapiFields.add("domain_entity");
-    
-    openapiFields.add("domain");
-    
-    openapiFields.add("search_filter");
-    
-    openapiFields.add("search_scope");
-    
-    openapiFields.add("include_subdomains");
-    
-    openapiFields.add("keyword_entity");
-    
-    openapiFields.add("keyword");
-    
-    openapiFields.add("match_type");
     
     openapiFields.add("location_name");
     

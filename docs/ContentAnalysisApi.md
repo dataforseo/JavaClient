@@ -45,30 +45,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    ContentAnalysisIdListResponseInfo response = apiInstance.contentAnalysisIdList(
-       List.of(
-    
-           new ContentAnalysisIdListRequestInfo()
-        
-           .datetimeFrom()
-        
-        
-           .datetimeTo()
-        
-        
+    ContentAnalysisIdListRequestInfo model = new ContentAnalysisIdListRequestInfo()
            .limit(100)
-        
-        
            .offset(0)
-        
-        
            .sort("desc")
-        
-        
-           .includeMetadata(true)
-    
-       )
-    );
+           .includeMetadata(true);
+    ContentAnalysisIdListResponseInfo response = apiInstance.contentAnalysisIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisIdList");
@@ -412,62 +394,32 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    ContentAnalysisSearchLiveResponseInfo response = apiInstance.searchLive(
-       List.of(
-    
-           new ContentAnalysisSearchLiveRequestInfo()
-        
-           .keywordFields(Map.of(
-    
-           "snippet", "logitech"
-    
-    
-       ))
-        
-        
+    ContentAnalysisSearchLiveRequestInfo model = new ContentAnalysisSearchLiveRequestInfo()
+       .keywordFields(
+           Map.ofEntries(
+               ))
            .keyword("logitech")
-        
-        
-           .pageType(List.of(
-    
-           "ecommerce",
-    
-           "news",
-    
-           "blogs",
-    
-           "message-boards",
-    
-           "organization"
-    
-       ))
-        
-        
+           .pageType(
+               List.of(
+                   "ecommerce",
+                   "news",
+                   "blogs",
+                   "message-boards",
+                   "organization"
+                ))
            .searchMode("as_is")
-        
-        
-           .filters(List.of(
-    
-           "main_domain",
-    
-           "=",
-    
-           "reviewfinder.ca"
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "content_info.sentiment_connotations.anger,desc"
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .filters(
+               List.of(
+                   "main_domain",
+                   "=",
+                   "reviewfinder.ca"
+                ))
+           .orderBy(
+               List.of(
+                   "content_info.sentiment_connotations.anger,desc"
+                ))
+           .limit(10);
+    ContentAnalysisSearchLiveResponseInfo response = apiInstance.searchLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#searchLive");
@@ -535,36 +487,19 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    ContentAnalysisSummaryLiveResponseInfo response = apiInstance.contentAnalysisSummaryLive(
-       List.of(
-    
-           new ContentAnalysisSummaryLiveRequestInfo()
-        
+    ContentAnalysisSummaryLiveRequestInfo model = new ContentAnalysisSummaryLiveRequestInfo()
            .keyword("logitech")
-        
-        
-           .pageType(List.of(
-    
-           "ecommerce",
-    
-           "news",
-    
-           "blogs",
-    
-           "message-boards",
-    
-           "organization"
-    
-       ))
-        
-        
+           .pageType(
+               List.of(
+                   "ecommerce",
+                   "news",
+                   "blogs",
+                   "message-boards",
+                   "organization"
+                ))
            .internalListLimit(8)
-        
-        
-           .positiveConnotationThreshold(0.5d)
-    
-       )
-    );
+           .positiveConnotationThreshold(0.5d);
+    ContentAnalysisSummaryLiveResponseInfo response = apiInstance.contentAnalysisSummaryLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#contentAnalysisSummaryLive");
@@ -632,18 +567,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    ContentAnalysisSentimentAnalysisLiveResponseInfo response = apiInstance.sentimentAnalysisLive(
-       List.of(
-    
-           new ContentAnalysisSentimentAnalysisLiveRequestInfo()
-        
+    ContentAnalysisSentimentAnalysisLiveRequestInfo model = new ContentAnalysisSentimentAnalysisLiveRequestInfo()
            .keyword("logitech")
-        
-        
-           .internalListLimit(1)
-    
-       )
-    );
+           .internalListLimit(1);
+    ContentAnalysisSentimentAnalysisLiveResponseInfo response = apiInstance.sentimentAnalysisLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#sentimentAnalysisLive");
@@ -711,21 +638,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    ContentAnalysisRatingDistributionLiveResponseInfo response = apiInstance.ratingDistributionLive(
-       List.of(
-    
-           new ContentAnalysisRatingDistributionLiveRequestInfo()
-        
+    ContentAnalysisRatingDistributionLiveRequestInfo model = new ContentAnalysisRatingDistributionLiveRequestInfo()
            .keyword("logitech")
-        
-        
            .searchMode("as_is")
-        
-        
-           .internalListLimit(10)
-    
-       )
-    );
+           .internalListLimit(10);
+    ContentAnalysisRatingDistributionLiveResponseInfo response = apiInstance.ratingDistributionLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#ratingDistributionLive");
@@ -793,24 +710,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    ContentAnalysisPhraseTrendsLiveResponseInfo response = apiInstance.phraseTrendsLive(
-       List.of(
-    
-           new ContentAnalysisPhraseTrendsLiveRequestInfo()
-        
+    ContentAnalysisPhraseTrendsLiveRequestInfo model = new ContentAnalysisPhraseTrendsLiveRequestInfo()
            .keyword("logitech")
-        
-        
            .searchMode("as_is")
-        
-        
-           .dateFrom()
-        
-        
-           .dateGroup("month")
-    
-       )
-    );
+           .dateGroup("month");
+    ContentAnalysisPhraseTrendsLiveResponseInfo response = apiInstance.phraseTrendsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#phraseTrendsLive");
@@ -878,24 +782,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     ContentAnalysisApi apiInstance = new ContentAnalysisApi(defaultClient);
-    ContentAnalysisCategoryTrendsLiveResponseInfo response = apiInstance.categoryTrendsLive(
-       List.of(
-    
-           new ContentAnalysisCategoryTrendsLiveRequestInfo()
-        
+    ContentAnalysisCategoryTrendsLiveRequestInfo model = new ContentAnalysisCategoryTrendsLiveRequestInfo()
            .categoryCode(10994)
-        
-        
            .searchMode("as_is")
-        
-        
-           .dateFrom()
-        
-        
-           .dateGroup("month")
-    
-       )
-    );
+           .dateGroup("month");
+    ContentAnalysisCategoryTrendsLiveResponseInfo response = apiInstance.categoryTrendsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling ContentAnalysisApi#categoryTrendsLive");

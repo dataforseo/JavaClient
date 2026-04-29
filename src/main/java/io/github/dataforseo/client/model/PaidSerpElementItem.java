@@ -74,8 +74,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * absolute rank in SERP
-* absolute position among all the elements found in SERP
-* note values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
+* absolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
 * to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
    * @return rankAbsolute
    */
@@ -402,7 +401,9 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * price of booking a place for the specified dates of stay
+   * pricing details
+* contains the pricing details of the product or service featured in the result;
+* if there is none, equals null
    * @return price
    */
   @javax.annotation.Nullable
@@ -426,7 +427,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
+* the popularity rate based on reviews and displayed in SERP
 * if there is none, equals null
    * @return rating
    */

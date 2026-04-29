@@ -76,30 +76,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataIdListResponseInfo response = apiInstance.appDataIdList(
-       List.of(
-    
-           new AppDataIdListRequestInfo()
-        
-           .datetimeFrom()
-        
-        
-           .datetimeTo()
-        
-        
+    AppDataIdListRequestInfo model = new AppDataIdListRequestInfo()
            .limit(100)
-        
-        
            .offset(0)
-        
-        
            .sort("desc")
-        
-        
-           .includeMetadata(true)
-    
-       )
-    );
+           .includeMetadata(true);
+    AppDataIdListResponseInfo response = apiInstance.appDataIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appDataIdList");
@@ -167,21 +149,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataErrorsResponseInfo response = apiInstance.appDataErrors(
-       List.of(
-    
-           new AppDataErrorsRequestInfo()
-        
+    AppDataErrorsRequestInfo model = new AppDataErrorsRequestInfo()
            .limit(10)
-        
-        
            .offset(0)
-        
-        
-           .filteredFunction("pingback_url")
-    
-       )
-    );
+           .filteredFunction("pingback_url");
+    AppDataErrorsResponseInfo response = apiInstance.appDataErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appDataErrors");
@@ -387,7 +359,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String country = ;
+    String country = "us";
     AppDataGoogleLocationsCountryResponseInfo response = apiInstance.appDataGoogleLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
@@ -525,24 +497,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataGoogleAppSearchesTaskPostResponseInfo response = apiInstance.googleAppSearchesTaskPost(
-       List.of(
-    
-           new AppDataGoogleAppSearchesTaskPostRequestInfo()
-        
+    AppDataGoogleAppSearchesTaskPostRequestInfo model = new AppDataGoogleAppSearchesTaskPostRequestInfo()
            .keyword("vpn")
-        
-        
            .locationCode(2840)
-        
-        
            .languageCode("en")
-        
-        
-           .depth(30)
-    
-       )
-    );
+           .depth(30);
+    AppDataGoogleAppSearchesTaskPostResponseInfo response = apiInstance.googleAppSearchesTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#googleAppSearchesTaskPost");
@@ -748,7 +708,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppSearchesTaskGetAdvancedResponseInfo response = apiInstance.googleAppSearchesTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -817,7 +777,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppSearchesTaskGetHtmlResponseInfo response = apiInstance.googleAppSearchesTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -886,24 +846,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataGoogleAppListTaskPostResponseInfo response = apiInstance.googleAppListTaskPost(
-       List.of(
-    
-           new AppDataGoogleAppListTaskPostRequestInfo()
-        
+    AppDataGoogleAppListTaskPostRequestInfo model = new AppDataGoogleAppListTaskPostRequestInfo()
            .appCollection("topselling_free")
-        
-        
            .locationCode(2840)
-        
-        
            .languageCode("en")
-        
-        
-           .depth(100)
-    
-       )
-    );
+           .depth(100);
+    AppDataGoogleAppListTaskPostResponseInfo response = apiInstance.googleAppListTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#googleAppListTaskPost");
@@ -1040,7 +988,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppListTaskGetAdvancedResponseInfo response = apiInstance.googleAppListTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1109,7 +1057,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppListTaskGetHtmlResponseInfo response = apiInstance.googleAppListTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1178,21 +1126,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataGoogleAppInfoTaskPostResponseInfo response = apiInstance.googleAppInfoTaskPost(
-       List.of(
-    
-           new AppDataGoogleAppInfoTaskPostRequestInfo()
-        
+    AppDataGoogleAppInfoTaskPostRequestInfo model = new AppDataGoogleAppInfoTaskPostRequestInfo()
            .appId("org.telegram.messenger")
-        
-        
            .locationCode(2840)
-        
-        
-           .languageCode("en")
-    
-       )
-    );
+           .languageCode("en");
+    AppDataGoogleAppInfoTaskPostResponseInfo response = apiInstance.googleAppInfoTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#googleAppInfoTaskPost");
@@ -1329,7 +1267,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppInfoTaskGetAdvancedResponseInfo response = apiInstance.googleAppInfoTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1398,7 +1336,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppInfoTaskGetHtmlResponseInfo response = apiInstance.googleAppInfoTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1467,24 +1405,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataGoogleAppReviewsTaskPostResponseInfo response = apiInstance.googleAppReviewsTaskPost(
-       List.of(
-    
-           new AppDataGoogleAppReviewsTaskPostRequestInfo()
-        
+    AppDataGoogleAppReviewsTaskPostRequestInfo model = new AppDataGoogleAppReviewsTaskPostRequestInfo()
            .appId("org.telegram.messenger")
-        
-        
            .locationCode(2840)
-        
-        
            .languageCode("en")
-        
-        
-           .depth(150)
-    
-       )
-    );
+           .depth(150);
+    AppDataGoogleAppReviewsTaskPostResponseInfo response = apiInstance.googleAppReviewsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#googleAppReviewsTaskPost");
@@ -1621,7 +1547,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppReviewsTaskGetAdvancedResponseInfo response = apiInstance.googleAppReviewsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1690,7 +1616,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataGoogleAppReviewsTaskGetHtmlResponseInfo response = apiInstance.googleAppReviewsTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1828,50 +1754,23 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataGoogleAppListingsSearchLiveResponseInfo response = apiInstance.googleAppListingsSearchLive(
-       List.of(
-    
-           new AppDataGoogleAppListingsSearchLiveRequestInfo()
-        
+    AppDataGoogleAppListingsSearchLiveRequestInfo model = new AppDataGoogleAppListingsSearchLiveRequestInfo()
            .title("vpn")
-        
-        
            .description("vpn")
-        
-        
-           .categories(List.of(
-    
-           "Tools"
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "item.installs_count,asc"
-    
-       ))
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "item.rating.value",
-    
-           ">",
-    
-           4.5d
-    
-       )
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .categories(
+               List.of(
+                   "Tools"
+                ))
+           .orderBy(
+               List.of(
+                   "item.installs_count,asc"
+                ))
+           .filters(
+               List.of(
+               
+                ))
+           .limit(10);
+    AppDataGoogleAppListingsSearchLiveResponseInfo response = apiInstance.googleAppListingsSearchLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#googleAppListingsSearchLive");
@@ -2146,24 +2045,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataAppleAppSearchesTaskPostResponseInfo response = apiInstance.appleAppSearchesTaskPost(
-       List.of(
-    
-           new AppDataAppleAppSearchesTaskPostRequestInfo()
-        
+    AppDataAppleAppSearchesTaskPostRequestInfo model = new AppDataAppleAppSearchesTaskPostRequestInfo()
            .keyword("vpn")
-        
-        
            .locationCode(2840)
-        
-        
            .languageCode("en")
-        
-        
-           .depth(200)
-    
-       )
-    );
+           .depth(200);
+    AppDataAppleAppSearchesTaskPostResponseInfo response = apiInstance.appleAppSearchesTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appleAppSearchesTaskPost");
@@ -2300,7 +2187,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataAppleAppSearchesTaskGetAdvancedResponseInfo response = apiInstance.appleAppSearchesTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2369,21 +2256,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataAppleAppInfoTaskPostResponseInfo response = apiInstance.appleAppInfoTaskPost(
-       List.of(
-    
-           new AppDataAppleAppInfoTaskPostRequestInfo()
-        
+    AppDataAppleAppInfoTaskPostRequestInfo model = new AppDataAppleAppInfoTaskPostRequestInfo()
            .appId("835599320")
-        
-        
            .locationCode(2840)
-        
-        
-           .languageCode("en")
-    
-       )
-    );
+           .languageCode("en");
+    AppDataAppleAppInfoTaskPostResponseInfo response = apiInstance.appleAppInfoTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appleAppInfoTaskPost");
@@ -2520,7 +2397,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataAppleAppInfoTaskGetAdvancedResponseInfo response = apiInstance.appleAppInfoTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2589,27 +2466,13 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataAppleAppListTaskPostResponseInfo response = apiInstance.appleAppListTaskPost(
-       List.of(
-    
-           new AppDataAppleAppListTaskPostRequestInfo()
-        
+    AppDataAppleAppListTaskPostRequestInfo model = new AppDataAppleAppListTaskPostRequestInfo()
            .appCollection("top_free_ios")
-        
-        
            .locationCode(2840)
-        
-        
            .languageCode("en")
-        
-        
            .depth(200)
-        
-        
-           .appCategory("games")
-    
-       )
-    );
+           .appCategory("games");
+    AppDataAppleAppListTaskPostResponseInfo response = apiInstance.appleAppListTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appleAppListTaskPost");
@@ -2746,7 +2609,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataAppleAppListTaskGetAdvancedResponseInfo response = apiInstance.appleAppListTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2815,24 +2678,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataAppleAppReviewsTaskPostResponseInfo response = apiInstance.appleAppReviewsTaskPost(
-       List.of(
-    
-           new AppDataAppleAppReviewsTaskPostRequestInfo()
-        
+    AppDataAppleAppReviewsTaskPostRequestInfo model = new AppDataAppleAppReviewsTaskPostRequestInfo()
            .appId("835599320")
-        
-        
            .locationCode(2840)
-        
-        
            .languageCode("en")
-        
-        
-           .depth(200)
-    
-       )
-    );
+           .depth(200);
+    AppDataAppleAppReviewsTaskPostResponseInfo response = apiInstance.appleAppReviewsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appleAppReviewsTaskPost");
@@ -2969,7 +2820,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     AppDataAppleAppReviewsTaskGetAdvancedResponseInfo response = apiInstance.appleAppReviewsTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3107,50 +2958,23 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppDataApi apiInstance = new AppDataApi(defaultClient);
-    AppDataAppleAppListingsSearchLiveResponseInfo response = apiInstance.appleAppListingsSearchLive(
-       List.of(
-    
-           new AppDataAppleAppListingsSearchLiveRequestInfo()
-        
+    AppDataAppleAppListingsSearchLiveRequestInfo model = new AppDataAppleAppListingsSearchLiveRequestInfo()
            .title("vpn")
-        
-        
            .description("vpn")
-        
-        
-           .categories(List.of(
-    
-           "Tools"
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "item.rating.value,desc"
-    
-       ))
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "item.rating.value",
-    
-           ">",
-    
-           4.5d
-    
-       )
-    
-       ))
-        
-        
-           .limit(2)
-    
-       )
-    );
+           .categories(
+               List.of(
+                   "Tools"
+                ))
+           .orderBy(
+               List.of(
+                   "item.rating.value,desc"
+                ))
+           .filters(
+               List.of(
+               
+                ))
+           .limit(2);
+    AppDataAppleAppListingsSearchLiveResponseInfo response = apiInstance.appleAppListingsSearchLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppDataApi#appleAppListingsSearchLive");

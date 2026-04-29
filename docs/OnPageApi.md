@@ -22,6 +22,7 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**waterfall**](OnPageApi.md#waterfall) | **POST**  /v3/on_page/waterfall  |
 | [**keywordDensity**](OnPageApi.md#keywordDensity) | **POST**  /v3/on_page/keyword_density  |
 | [**microdata**](OnPageApi.md#microdata) | **POST**  /v3/on_page/microdata  |
+| [**uncrawlableResources**](OnPageApi.md#uncrawlableResources) | **POST**  /v3/on_page/uncrawlable_resources  |
 | [**rawHtml**](OnPageApi.md#rawHtml) | **POST**  /v3/on_page/raw_html  |
 | [**pageScreenshot**](OnPageApi.md#pageScreenshot) | **POST**  /v3/on_page/page_screenshot  |
 | [**contentParsing**](OnPageApi.md#contentParsing) | **POST**  /v3/on_page/content_parsing  |
@@ -64,30 +65,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageIdListResponseInfo response = apiInstance.onPageIdList(
-       List.of(
-    
-           new OnPageIdListRequestInfo()
-        
-           .datetimeFrom()
-        
-        
-           .datetimeTo()
-        
-        
+    OnPageIdListRequestInfo model = new OnPageIdListRequestInfo()
            .limit(100)
-        
-        
            .offset(0)
-        
-        
            .sort("desc")
-        
-        
-           .includeMetadata(true)
-    
-       )
-    );
+           .includeMetadata(true);
+    OnPageIdListResponseInfo response = apiInstance.onPageIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#onPageIdList");
@@ -155,21 +138,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageErrorsResponseInfo response = apiInstance.onPageErrors(
-       List.of(
-    
-           new OnPageErrorsRequestInfo()
-        
+    OnPageErrorsRequestInfo model = new OnPageErrorsRequestInfo()
            .limit(10)
-        
-        
            .offset(0)
-        
-        
-           .filteredFunction("pingback_url")
-    
-       )
-    );
+           .filteredFunction("pingback_url");
+    OnPageErrorsResponseInfo response = apiInstance.onPageErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#onPageErrors");
@@ -237,19 +210,9 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageForceStopResponseInfo response = apiInstance.forceStop(
-       List.of(
-    
-           new OnPageForceStopRequestInfo()
-        
-           .id("08121600-1535-0216-0000-37b4c7a34453"),
-    
-           new OnPageForceStopRequestInfo()
-        
-           .id("08121600-1535-0216-0000-d6a5000b6897")
-    
-       )
-    );
+    OnPageForceStopRequestInfo model = new OnPageForceStopRequestInfo()
+           .id("08121600-1535-0216-0000-37b4c7a34453");
+    OnPageForceStopResponseInfo response = apiInstance.forceStop(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#forceStop");
@@ -386,33 +349,15 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageTaskPostResponseInfo response = apiInstance.taskPost(
-       List.of(
-    
-           new OnPageTaskPostRequestInfo()
-        
+    OnPageTaskPostRequestInfo model = new OnPageTaskPostRequestInfo()
            .target("dataforseo.com")
-        
-        
            .maxCrawlPages(10)
-        
-        
            .loadResources(true)
-        
-        
            .enableJavascript(true)
-        
-        
            .customJs("meta = {}; meta.url = document.URL; meta;")
-        
-        
            .tag("some_string_123")
-        
-        
-           .pingbackUrl("https://your-server.com/pingscript?id=$id&tag=$tag")
-    
-       )
-    );
+           .pingbackUrl("https://your-server.com/pingscript?id=$id&tag=$tag");
+    OnPageTaskPostResponseInfo response = apiInstance.taskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#taskPost");
@@ -549,7 +494,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     OnPageSummaryResponseInfo response = apiInstance.summary(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -618,52 +563,20 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPagePagesResponseInfo response = apiInstance.pages(
-       List.of(
-    
-           new OnPagePagesRequestInfo()
-        
+    OnPagePagesRequestInfo model = new OnPagePagesRequestInfo()
            .id("07281559-0695-0216-0000-c269be8b7592")
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "resource_type",
-    
-           "=",
-    
-           "html"
-    
-       ),
-    
-           "and",
-    
-           List.of(
-    
-           "meta.scripts_count",
-    
-           ">",
-    
-           40
-    
-       )
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "meta.content.plain_text_word_count,desc"
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ))
+           .orderBy(
+               List.of(
+                   "meta.content.plain_text_word_count,desc"
+                ))
+           .limit(10);
+    OnPagePagesResponseInfo response = apiInstance.pages(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#pages");
@@ -731,18 +644,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPagePagesByResourceResponseInfo response = apiInstance.pagesByResource(
-       List.of(
-    
-           new OnPagePagesByResourceRequestInfo()
-        
+    OnPagePagesByResourceRequestInfo model = new OnPagePagesByResourceRequestInfo()
            .id("02241700-1535-0216-0000-034137259bc1")
-        
-        
-           .url("https://www.etsy.com/about/jobs.workco2018.js?")
-    
-       )
-    );
+           .url("https://www.etsy.com/about/jobs.workco2018.js?");
+    OnPagePagesByResourceResponseInfo response = apiInstance.pagesByResource(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#pagesByResource");
@@ -810,52 +715,20 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageResourcesResponseInfo response = apiInstance.resources(
-       List.of(
-    
-           new OnPageResourcesRequestInfo()
-        
+    OnPageResourcesRequestInfo model = new OnPageResourcesRequestInfo()
            .id("07281559-0695-0216-0000-c269be8b7592")
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "resource_type",
-    
-           "=",
-    
-           "image"
-    
-       ),
-    
-           "and",
-    
-           List.of(
-    
-           "size",
-    
-           ">",
-    
-           100000
-    
-       )
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "size,desc"
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ))
+           .orderBy(
+               List.of(
+                   "size,desc"
+                ))
+           .limit(10);
+    OnPageResourcesResponseInfo response = apiInstance.resources(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#resources");
@@ -923,21 +796,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageDuplicateTagsResponseInfo response = apiInstance.duplicateTags(
-       List.of(
-    
-           new OnPageDuplicateTagsRequestInfo()
-        
+    OnPageDuplicateTagsRequestInfo model = new OnPageDuplicateTagsRequestInfo()
            .id("07281559-0695-0216-0000-c269be8b7592")
-        
-        
            .type("duplicate_description")
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .limit(10);
+    OnPageDuplicateTagsResponseInfo response = apiInstance.duplicateTags(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#duplicateTags");
@@ -1005,18 +868,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageDuplicateContentResponseInfo response = apiInstance.duplicateContent(
-       List.of(
-    
-           new OnPageDuplicateContentRequestInfo()
-        
+    OnPageDuplicateContentRequestInfo model = new OnPageDuplicateContentRequestInfo()
            .id("07281559-0695-0216-0000-c269be8b7592")
-        
-        
-           .url("https://www.etsy.com/")
-    
-       )
-    );
+           .url("https://www.etsy.com/");
+    OnPageDuplicateContentResponseInfo response = apiInstance.duplicateContent(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#duplicateContent");
@@ -1084,48 +939,17 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageLinksResponseInfo response = apiInstance.links(
-       List.of(
-    
-           new OnPageLinksRequestInfo()
-        
+    OnPageLinksRequestInfo model = new OnPageLinksRequestInfo()
            .id("07281559-0695-0216-0000-c269be8b7592")
-        
-        
            .pageFrom("/apis/google-trends-api")
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "dofollow",
-    
-           "=",
-    
-           true
-    
-       ),
-    
-           "and",
-    
-           List.of(
-    
-           "direction",
-    
-           "=",
-    
-           "external"
-    
-       )
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ))
+           .limit(10);
+    OnPageLinksResponseInfo response = apiInstance.links(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#links");
@@ -1193,18 +1017,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageRedirectChainsResponseInfo response = apiInstance.redirectChains(
-       List.of(
-    
-           new OnPageRedirectChainsRequestInfo()
-        
+    OnPageRedirectChainsRequestInfo model = new OnPageRedirectChainsRequestInfo()
            .id("03051327-4536-0216-1000-3b458a2cfcca")
-        
-        
-           .url("https://test_rdr.dataforseo.com/a/")
-    
-       )
-    );
+           .url("https://test_rdr.dataforseo.com/a/");
+    OnPageRedirectChainsResponseInfo response = apiInstance.redirectChains(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#redirectChains");
@@ -1272,45 +1088,16 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageNonIndexableResponseInfo response = apiInstance.nonIndexable(
-       List.of(
-    
-           new OnPageNonIndexableRequestInfo()
-        
+    OnPageNonIndexableRequestInfo model = new OnPageNonIndexableRequestInfo()
            .id("07281559-0695-0216-0000-c269be8b7592")
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "reason",
-    
-           "=",
-    
-           "robots_txt"
-    
-       ),
-    
-           "and",
-    
-           List.of(
-    
-           "url",
-    
-           "like",
-    
-           "%go%"
-    
-       )
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ))
+           .limit(10);
+    OnPageNonIndexableResponseInfo response = apiInstance.nonIndexable(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#nonIndexable");
@@ -1378,18 +1165,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageWaterfallResponseInfo response = apiInstance.waterfall(
-       List.of(
-    
-           new OnPageWaterfallRequestInfo()
-        
+    OnPageWaterfallRequestInfo model = new OnPageWaterfallRequestInfo()
            .id("08101204-0696-0216-0000-644a7b21a48a")
-        
-        
-           .url("https://dataforseo.com/tag/broken-links")
-    
-       )
-    );
+           .url("https://dataforseo.com/tag/broken-links");
+    OnPageWaterfallResponseInfo response = apiInstance.waterfall(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#waterfall");
@@ -1457,32 +1236,17 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageKeywordDensityResponseInfo response = apiInstance.keywordDensity(
-       List.of(
-    
-           new OnPageKeywordDensityRequestInfo()
-        
+    OnPageKeywordDensityRequestInfo model = new OnPageKeywordDensityRequestInfo()
            .id("09101923-1535-0216-0000-2389a8854b70")
-        
-        
            .url("https://dataforseo.com/")
-        
-        
            .keywordLength(2)
-        
-        
-           .filters(List.of(
-    
-           "frequency",
-    
-           ">",
-    
-           5
-    
-       ))
-    
-       )
-    );
+           .filters(
+               List.of(
+                   "frequency",
+                   ">",
+                   5
+                ));
+    OnPageKeywordDensityResponseInfo response = apiInstance.keywordDensity(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#keywordDensity");
@@ -1550,18 +1314,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageMicrodataResponseInfo response = apiInstance.microdata(
-       List.of(
-    
-           new OnPageMicrodataRequestInfo()
-        
+    OnPageMicrodataRequestInfo model = new OnPageMicrodataRequestInfo()
            .id("02241700-1535-0216-0000-034137259bc1")
-        
-        
-           .url("https://dataforseo.com/apis")
-    
-       )
-    );
+           .url("https://dataforseo.com/apis");
+    OnPageMicrodataResponseInfo response = apiInstance.microdata(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#microdata");
@@ -1585,6 +1341,83 @@ public class Example {
 ### Return type
 
 [**OnPageMicrodataResponseInfo**](OnPageMicrodataResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="uncrawlableResources"></a>
+# **uncrawlableResources**
+> OnPageUncrawlableResourcesResponseInfo uncrawlableResources()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    OnPageApi apiInstance = new OnPageApi(defaultClient);
+    OnPageUncrawlableResourcesRequestInfo model = new OnPageUncrawlableResourcesRequestInfo()
+           .id("07281559-0695-0216-0000-c269be8b7592")
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ))
+           .limit(10);
+    OnPageUncrawlableResourcesResponseInfo response = apiInstance.uncrawlableResources(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling OnPageApi#uncrawlableResources");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<OnPageUncrawlableResourcesRequestInfo>&gt;**](List<OnPageUncrawlableResourcesRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**OnPageUncrawlableResourcesResponseInfo**](OnPageUncrawlableResourcesResponseInfo.md)
 
 ### Authorization
 
@@ -1629,18 +1462,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageRawHtmlResponseInfo response = apiInstance.rawHtml(
-       List.of(
-    
-           new OnPageRawHtmlRequestInfo()
-        
+    OnPageRawHtmlRequestInfo model = new OnPageRawHtmlRequestInfo()
            .id("07281559-0695-0216-0000-c269be8b7592")
-        
-        
-           .url("https://dataforseo.com/apis")
-    
-       )
-    );
+           .url("https://dataforseo.com/apis");
+    OnPageRawHtmlResponseInfo response = apiInstance.rawHtml(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#rawHtml");
@@ -1708,15 +1533,9 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPagePageScreenshotResponseInfo response = apiInstance.pageScreenshot(
-       List.of(
-    
-           new OnPagePageScreenshotRequestInfo()
-        
-           .url("https://dataforseo.com/apis")
-    
-       )
-    );
+    OnPagePageScreenshotRequestInfo model = new OnPagePageScreenshotRequestInfo()
+           .url("https://dataforseo.com/apis");
+    OnPagePageScreenshotResponseInfo response = apiInstance.pageScreenshot(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#pageScreenshot");
@@ -1784,18 +1603,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageContentParsingResponseInfo response = apiInstance.contentParsing(
-       List.of(
-    
-           new OnPageContentParsingRequestInfo()
-        
+    OnPageContentParsingRequestInfo model = new OnPageContentParsingRequestInfo()
            .url("https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api")
-        
-        
-           .id("11161551-1535-0216-0000-500b3f307f92")
-    
-       )
-    );
+           .id("11161551-1535-0216-0000-500b3f307f92");
+    OnPageContentParsingResponseInfo response = apiInstance.contentParsing(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#contentParsing");
@@ -1863,15 +1674,9 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageContentParsingLiveResponseInfo response = apiInstance.contentParsingLive(
-       List.of(
-    
-           new OnPageContentParsingLiveRequestInfo()
-        
-           .url("https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api")
-    
-       )
-    );
+    OnPageContentParsingLiveRequestInfo model = new OnPageContentParsingLiveRequestInfo()
+           .url("https://dataforseo.com/blog/a-versatile-alternative-to-google-trends-exploring-the-power-of-dataforseo-trends-api");
+    OnPageContentParsingLiveResponseInfo response = apiInstance.contentParsingLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#contentParsingLive");
@@ -1939,21 +1744,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageInstantPagesResponseInfo response = apiInstance.instantPages(
-       List.of(
-    
-           new OnPageInstantPagesRequestInfo()
-        
+    OnPageInstantPagesRequestInfo model = new OnPageInstantPagesRequestInfo()
            .url("https://dataforseo.com/blog")
-        
-        
            .enableJavascript(true)
-        
-        
-           .customJs("meta = {}; meta.url = document.URL; meta;")
-    
-       )
-    );
+           .customJs("meta = {}; meta.url = document.URL; meta;");
+    OnPageInstantPagesResponseInfo response = apiInstance.instantPages(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#instantPages");
@@ -2228,24 +2023,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageLighthouseTaskPostResponseInfo response = apiInstance.lighthouseTaskPost(
-       List.of(
-    
-           new OnPageLighthouseTaskPostRequestInfo()
-        
+    OnPageLighthouseTaskPostRequestInfo model = new OnPageLighthouseTaskPostRequestInfo()
            .url("https://dataforseo.com")
-        
-        
            .forMobile(true)
-        
-        
            .tag("some_string_123")
-        
-        
-           .pingbackUrl("https://your-server.com/pingscript?id=$id&tag=$tag")
-    
-       )
-    );
+           .pingbackUrl("https://your-server.com/pingscript?id=$id&tag=$tag");
+    OnPageLighthouseTaskPostResponseInfo response = apiInstance.lighthouseTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#lighthouseTaskPost");
@@ -2382,7 +2165,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     OnPageLighthouseTaskGetJsonResponseInfo response = apiInstance.lighthouseTaskGetJson(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2451,21 +2234,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     OnPageApi apiInstance = new OnPageApi(defaultClient);
-    OnPageLighthouseLiveJsonResponseInfo response = apiInstance.lighthouseLiveJson(
-       List.of(
-    
-           new OnPageLighthouseLiveJsonRequestInfo()
-        
+    OnPageLighthouseLiveJsonRequestInfo model = new OnPageLighthouseLiveJsonRequestInfo()
            .url("https://dataforseo.com")
-        
-        
            .forMobile(true)
-        
-        
-           .tag("some_string_123")
-    
-       )
-    );
+           .tag("some_string_123");
+    OnPageLighthouseLiveJsonResponseInfo response = apiInstance.lighthouseLiveJson(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling OnPageApi#lighthouseLiveJson");

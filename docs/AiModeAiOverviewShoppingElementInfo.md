@@ -6,16 +6,16 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**productId** | **String** |  |[optional]|
-**dataDocid** | **String** |  |[optional]|
-**gid** | **String** |  |[optional]|
-**title** | **String** | title of the element |[optional]|
-**url** | **String** | reference page URL |[optional]|
+**productId** | **String** | unique product identifier on Google Shoppinglearn more about the parameter in this help center guide |[optional]|
+**dataDocid** | **String** | unique identifier of the SERP data element |[optional]|
+**gid** | **String** | global product identifier on Google Shoppinglearn more about the parameter in this help center guide |[optional]|
+**title** | **String** | reference page title |[optional]|
+**url** | **String** | URL in link |[optional]|
 **domain** | **String** | domain in link |[optional]|
-**rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP<br>if there is none, equals null |[optional]|
-**price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result;<br>if there is none, equals null |[optional]|
-**seller** | **String** | seller of the product |[optional]|
-**snippet** | **String** | text alongside the link title |[optional]|
-**marketplace** | **String** | merchant account provider<br>commerce site that hosts products or websites of individual sellers under the same merchant account<br>example:<br>by Google |[optional]|
-**marketplaceUrl** | **String** | relevant marketplace URL<br>URL of the page on the marketplace website where the product is hosted |[optional]|
-**imageUrl** | **String** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**rating** | **RatingInfo** | product rating the popularity rate based on reviews if there is none, the value will be null |[optional]|
+**price** | **PriceInfo** | product priceproduct price details on the seller's website; if there is none, the value will be null |[optional]|
+**seller** | **String** | product sellername of the product's seller as displayed in search results |[optional]|
+**snippet** | **String** | additional information about the result |[optional]|
+**marketplace** | **String** | merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant accountexample:by Google |[optional]|
+**marketplaceUrl** | **String** | URL to the merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant account |[optional]|
+**imageUrl** | **String** | URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|

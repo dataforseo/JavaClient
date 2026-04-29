@@ -71,7 +71,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * 
+   * unique product identifier on Google Shoppinglearn more about the parameter in this help center guide
    * @return productId
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * 
+   * unique identifier of the SERP data element
    * @return dataDocid
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * 
+   * global product identifier on Google Shoppinglearn more about the parameter in this help center guide
    * @return gid
    */
   @javax.annotation.Nullable
@@ -140,7 +140,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * title of the element
+   * reference page title
    * @return title
    */
   @javax.annotation.Nullable
@@ -163,7 +163,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * reference page URL
+   * URL in link
    * @return url
    */
   @javax.annotation.Nullable
@@ -209,9 +209,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP
-* if there is none, equals null
+   * product rating the popularity rate based on reviews if there is none, the value will be null
    * @return rating
    */
   @javax.annotation.Nullable
@@ -234,9 +232,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * pricing details
-* contains the pricing details of the product or service featured in the result;
-* if there is none, equals null
+   * product priceproduct price details on the seller's website; if there is none, the value will be null
    * @return price
    */
   @javax.annotation.Nullable
@@ -259,7 +255,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * seller of the product
+   * product sellername of the product's seller as displayed in search results
    * @return seller
    */
   @javax.annotation.Nullable
@@ -282,7 +278,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * text alongside the link title
+   * additional information about the result
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -305,10 +301,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * merchant account provider
-* commerce site that hosts products or websites of individual sellers under the same merchant account
-* example:
-* by Google
+   * merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant accountexample:by Google
    * @return marketplace
    */
   @javax.annotation.Nullable
@@ -331,8 +324,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * relevant marketplace URL
-* URL of the page on the marketplace website where the product is hosted
+   * URL to the merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant account
    * @return marketplaceUrl
    */
   @javax.annotation.Nullable
@@ -355,8 +347,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable

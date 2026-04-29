@@ -271,6 +271,7 @@ public class ContentAnalysisRatingDistributionLiveRequestInfo  {
 * 'or',
 * ['content_info.text_category','has',10994]]]
 * for more information about filters, please refer to Content Analysis API – Filters
+* learn more about the initial dataset filters in this help center article.
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable

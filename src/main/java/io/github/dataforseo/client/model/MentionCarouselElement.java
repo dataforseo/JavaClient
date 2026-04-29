@@ -71,7 +71,7 @@ public class MentionCarouselElement  {
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class MentionCarouselElement  {
   }
 
   /**
-   * price of the app element
+   * price indicated in the element
    * @return price
    */
   @javax.annotation.Nullable
@@ -117,8 +117,9 @@ public class MentionCarouselElement  {
   }
 
   /**
-   * the element’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * the item’s rating 
+* the popularity rate based on reviews and displayed in SERP;
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable

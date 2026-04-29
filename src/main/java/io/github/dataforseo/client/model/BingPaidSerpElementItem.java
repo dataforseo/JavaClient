@@ -348,7 +348,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * price of the shopping element
+   * price of booking a place for the specified dates of stay
    * @return price
    */
   @javax.annotation.Nullable
@@ -371,7 +371,7 @@ public class BingPaidSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * the item’s rating
+   * the item’s rating 
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */

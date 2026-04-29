@@ -48,11 +48,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * target URL
-* required field
-* target page should be specified with its absolute URL (including http:// or https://)
-* example:
-* https://dataforseo.com/
+   * target URLrequired fieldtarget page should be specified with its absolute URL (including http:// or https://)example:https://dataforseo.com/
    * @return url
    */
   @javax.annotation.Nullable
@@ -75,11 +71,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * applies mobile emulation
-* optional field
-* if set to true, Lighthouse will use mobile device and screen emulation to test the page against mobile environment
-* if set to false, the results will be provided for desktop
-* default value: false
+   * applies mobile emulationoptional fieldif set to true, Lighthouse will use mobile device and screen emulation to test the page against mobile environmentif set to false, the results will be provided for desktopdefault value: false
    * @return forMobile
    */
   @javax.annotation.Nullable
@@ -102,13 +94,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * categories of Lighthouse audits
-* optional field
-* each category is a collection of audits and audit groups that applies weighting and scoring to the section (see official definition)
-* if you ignore this field, we will return data for all categories unless you specify audits
-* use this field to get data for specific categories you indicate here
-* possible values:
-* seo, performance, best_practices, accessibility
+   * categories of Lighthouse auditsoptional fieldeach category is a collection of audits and audit groups that applies weighting and scoring to the section (see official definition)if you ignore this field, we will return data for all categories unless you specify auditsuse this field to get data for specific categories you indicate herepossible values:seo, performance, best_practices, accessibility
    * @return categories
    */
   @javax.annotation.Nullable
@@ -131,18 +117,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * Lighthouse audits
-* optional field
-* audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition);  
-* if you ignore this field, we will return data for all audits;
-* use this field to get data for specific audits you indicate here;
-* Note: that some audits do not belong to a specific category and are stand-alone page quality measurements;
-* in general, there can be several use cases:
-* 1. if you ignore categories, you can use this field to get data for the specified audits only
-* for example, if you ignore 'categories' and specify 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get data only for these audits
-* 2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specified
-* for example, if you specify 'categories': ['seo'] and 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get only these audits under “performance” and all audits under “seo”
-* you can get the full list of possible audits here
+   * Lighthouse auditsoptional fieldaudits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition);  if you ignore this field, we will return data for all audits;use this field to get data for specific audits you indicate here;Note: that some audits do not belong to a specific category and are stand-alone page quality measurements;in general, there can be several use cases:1. if you ignore categories, you can use this field to get data for the specified audits onlyfor example, if you ignore 'categories' and specify 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get data only for these audits2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specifiedfor example, if you specify 'categories': ['seo'] and 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get only these audits under 'performance' and all audits under 'seo'you can get the full list of possible audits here
    * @return audits
    */
   @javax.annotation.Nullable
@@ -165,10 +140,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * lighthouse version
-* optional field
-* you can obtain the results specific to a certain Lighthouse version by specifying its number
-* the list of available versions is available through the Lighthouse Versions endpoint
+   * lighthouse versionoptional fieldyou can obtain the results specific to a certain Lighthouse version by specifying its numberthe list of available versions is available through the Lighthouse Versions endpoint
    * @return version
    */
   @javax.annotation.Nullable
@@ -191,11 +163,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * lighthouse language name
-* optional field
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languages
-* default value:
-* English
+   * lighthouse language nameoptional fieldyou can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languagesdefault value:English
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -218,11 +186,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * lighthouse language code
-* optional field
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languages
-* default value:
-* en
+   * lighthouse language codeoptional fieldyou can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languagesdefault value:en
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -232,6 +196,167 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
 
   public void setLanguageCode(String languageCode) {
     this.languageCode = languageCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_CUSTOM_USER_AGENT = "custom_user_agent";
+  @SerializedName(SERIALIZED_NAME_CUSTOM_USER_AGENT)
+  private String customUserAgent;
+
+  public OnPageLighthouseLiveJsonRequestInfo customUserAgent(String customUserAgent) {
+    this.customUserAgent = customUserAgent;
+    return this;
+  }
+
+  /**
+   * custom user agentoptional fieldspecify the custom user agent used by the browser when running the Lighthouse audit;can be specified with up to 254 characters;
+   * @return customUserAgent
+   */
+  @javax.annotation.Nullable
+  public String getCustomUserAgent() {
+    return customUserAgent;
+  }
+
+  public void setCustomUserAgent(String customUserAgent) {
+    this.customUserAgent = customUserAgent;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_WIDTH = "browser_screen_width";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_WIDTH)
+  private Long browserScreenWidth;
+
+  public OnPageLighthouseLiveJsonRequestInfo browserScreenWidth(Long browserScreenWidth) {
+    this.browserScreenWidth = browserScreenWidth;
+    return this;
+  }
+
+  /**
+   * browser screen widthoptional fieldset the screen width of the browser used for the Lighthouse audit to emulate a specific device;can be specified within the following range: 240–9999;
+   * @return browserScreenWidth
+   */
+  @javax.annotation.Nullable
+  public Long getBrowserScreenWidth() {
+    return browserScreenWidth;
+  }
+
+  public void setBrowserScreenWidth(Long browserScreenWidth) {
+    this.browserScreenWidth = browserScreenWidth;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT = "browser_screen_height";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT)
+  private Integer browserScreenHeight;
+
+  public OnPageLighthouseLiveJsonRequestInfo browserScreenHeight(Integer browserScreenHeight) {
+    this.browserScreenHeight = browserScreenHeight;
+    return this;
+  }
+
+  /**
+   * browser screen heightoptional fieldset the screen height of the browser used for the Lighthouse audit to emulate a specific device;can be specified within the following range: 240–9999;
+   * @return browserScreenHeight
+   */
+  @javax.annotation.Nullable
+  public Integer getBrowserScreenHeight() {
+    return browserScreenHeight;
+  }
+
+  public void setBrowserScreenHeight(Integer browserScreenHeight) {
+    this.browserScreenHeight = browserScreenHeight;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_SCALE_FACTOR = "browser_screen_scale_factor";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_SCALE_FACTOR)
+  private Double browserScreenScaleFactor;
+
+  public OnPageLighthouseLiveJsonRequestInfo browserScreenScaleFactor(Double browserScreenScaleFactor) {
+    this.browserScreenScaleFactor = browserScreenScaleFactor;
+    return this;
+  }
+
+  /**
+   * browser screen scale factoroptional fieldset the device pixel ratio of the browser used for the Lighthouse audit;can be specified within the following range: 0.5–3;
+   * @return browserScreenScaleFactor
+   */
+  @javax.annotation.Nullable
+  public Double getBrowserScreenScaleFactor() {
+    return browserScreenScaleFactor;
+  }
+
+  public void setBrowserScreenScaleFactor(Double browserScreenScaleFactor) {
+    this.browserScreenScaleFactor = browserScreenScaleFactor;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING_METHOD = "browser_network_throttling_method";
+  @SerializedName(SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING_METHOD)
+  private String browserNetworkThrottlingMethod;
+
+  public OnPageLighthouseLiveJsonRequestInfo browserNetworkThrottlingMethod(String browserNetworkThrottlingMethod) {
+    this.browserNetworkThrottlingMethod = browserNetworkThrottlingMethod;
+    return this;
+  }
+
+  /**
+   * browser network throttling methodoptional fielddefines the method used to apply throttling during the Lighthouse audit;possible vaules:simulate - calculates estimated performance metrics without applying explicit throttling;devtools -  applies the throttling settings specified in browser_network_throttling and browser_cpu_throttling_multiplier;provided - uses the network conditions of the crawling environment;
+   * @return browserNetworkThrottlingMethod
+   */
+  @javax.annotation.Nullable
+  public String getBrowserNetworkThrottlingMethod() {
+    return browserNetworkThrottlingMethod;
+  }
+
+  public void setBrowserNetworkThrottlingMethod(String browserNetworkThrottlingMethod) {
+    this.browserNetworkThrottlingMethod = browserNetworkThrottlingMethod;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_CPU_THROTTLING_MULTIPLIER = "browser_cpu_throttling_multiplier";
+  @SerializedName(SERIALIZED_NAME_BROWSER_CPU_THROTTLING_MULTIPLIER)
+  private Double browserCpuThrottlingMultiplier;
+
+  public OnPageLighthouseLiveJsonRequestInfo browserCpuThrottlingMultiplier(Double browserCpuThrottlingMultiplier) {
+    this.browserCpuThrottlingMultiplier = browserCpuThrottlingMultiplier;
+    return this;
+  }
+
+  /**
+   * browser CPU throttling multiplierrequired if browser_network_throttling_method is set to devtools;set the CPU throttling multiplier to simulate device performance conditions during the Lighthouse audit;can be specified within the following range: 1–4;Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+   * @return browserCpuThrottlingMultiplier
+   */
+  @javax.annotation.Nullable
+  public Double getBrowserCpuThrottlingMultiplier() {
+    return browserCpuThrottlingMultiplier;
+  }
+
+  public void setBrowserCpuThrottlingMultiplier(Double browserCpuThrottlingMultiplier) {
+    this.browserCpuThrottlingMultiplier = browserCpuThrottlingMultiplier;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING = "browser_network_throttling";
+  @SerializedName(SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING)
+  private String browserNetworkThrottling;
+
+  public OnPageLighthouseLiveJsonRequestInfo browserNetworkThrottling(String browserNetworkThrottling) {
+    this.browserNetworkThrottling = browserNetworkThrottling;
+    return this;
+  }
+
+  /**
+   * browser network throttlingrequired if browser_network_throttling_method is set to devtools;set the network throttling profile to simulate connection speed conditions during the Lighthouse audit;possible values: no_throttling, fast_4g, slow_4g, regular_3g, pc;Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+   * @return browserNetworkThrottling
+   */
+  @javax.annotation.Nullable
+  public String getBrowserNetworkThrottling() {
+    return browserNetworkThrottling;
+  }
+
+  public void setBrowserNetworkThrottling(String browserNetworkThrottling) {
+    this.browserNetworkThrottling = browserNetworkThrottling;
   }
 
 
@@ -245,11 +370,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -312,6 +433,13 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
         Objects.equals(this.version, onPageLighthouseLiveJsonRequestInfo.version) &&
         Objects.equals(this.languageName, onPageLighthouseLiveJsonRequestInfo.languageName) &&
         Objects.equals(this.languageCode, onPageLighthouseLiveJsonRequestInfo.languageCode) &&
+        Objects.equals(this.customUserAgent, onPageLighthouseLiveJsonRequestInfo.customUserAgent) &&
+        Objects.equals(this.browserScreenWidth, onPageLighthouseLiveJsonRequestInfo.browserScreenWidth) &&
+        Objects.equals(this.browserScreenHeight, onPageLighthouseLiveJsonRequestInfo.browserScreenHeight) &&
+        Objects.equals(this.browserScreenScaleFactor, onPageLighthouseLiveJsonRequestInfo.browserScreenScaleFactor) &&
+        Objects.equals(this.browserNetworkThrottlingMethod, onPageLighthouseLiveJsonRequestInfo.browserNetworkThrottlingMethod) &&
+        Objects.equals(this.browserCpuThrottlingMultiplier, onPageLighthouseLiveJsonRequestInfo.browserCpuThrottlingMultiplier) &&
+        Objects.equals(this.browserNetworkThrottling, onPageLighthouseLiveJsonRequestInfo.browserNetworkThrottling) &&
         Objects.equals(this.tag, onPageLighthouseLiveJsonRequestInfo.tag);  
     
   }
@@ -322,7 +450,7 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, forMobile, categories, audits, version, languageName, languageCode, tag);
+  return Objects.hash(url, forMobile, categories, audits, version, languageName, languageCode, customUserAgent, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, browserNetworkThrottlingMethod, browserCpuThrottlingMultiplier, browserNetworkThrottling, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -344,6 +472,13 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    customUserAgent: ").append(toIndentedString(customUserAgent)).append("\n");
+    sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
+    sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
+    sb.append("    browserScreenScaleFactor: ").append(toIndentedString(browserScreenScaleFactor)).append("\n");
+    sb.append("    browserNetworkThrottlingMethod: ").append(toIndentedString(browserNetworkThrottlingMethod)).append("\n");
+    sb.append("    browserCpuThrottlingMultiplier: ").append(toIndentedString(browserCpuThrottlingMultiplier)).append("\n");
+    sb.append("    browserNetworkThrottling: ").append(toIndentedString(browserNetworkThrottling)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -381,6 +516,20 @@ public class OnPageLighthouseLiveJsonRequestInfo  {
     openapiFields.add("language_name");
     
     openapiFields.add("language_code");
+    
+    openapiFields.add("custom_user_agent");
+    
+    openapiFields.add("browser_screen_width");
+    
+    openapiFields.add("browser_screen_height");
+    
+    openapiFields.add("browser_screen_scale_factor");
+    
+    openapiFields.add("browser_network_throttling_method");
+    
+    openapiFields.add("browser_cpu_throttling_multiplier");
+    
+    openapiFields.add("browser_network_throttling");
     
     openapiFields.add("tag");
     

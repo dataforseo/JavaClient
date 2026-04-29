@@ -89,30 +89,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataIdListResponseInfo response = apiInstance.businessDataIdList(
-       List.of(
-    
-           new BusinessDataIdListRequestInfo()
-        
-           .datetimeFrom()
-        
-        
-           .datetimeTo()
-        
-        
+    BusinessDataIdListRequestInfo model = new BusinessDataIdListRequestInfo()
            .limit(100)
-        
-        
            .offset(0)
-        
-        
            .sort("desc")
-        
-        
-           .includeMetadata(true)
-    
-       )
-    );
+           .includeMetadata(true);
+    BusinessDataIdListResponseInfo response = apiInstance.businessDataIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#businessDataIdList");
@@ -180,21 +162,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataErrorsResponseInfo response = apiInstance.businessDataErrors(
-       List.of(
-    
-           new BusinessDataErrorsRequestInfo()
-        
+    BusinessDataErrorsRequestInfo model = new BusinessDataErrorsRequestInfo()
            .limit(10)
-        
-        
            .offset(0)
-        
-        
-           .filteredFunction("pingback_url")
-    
-       )
-    );
+           .filteredFunction("pingback_url");
+    BusinessDataErrorsResponseInfo response = apiInstance.businessDataErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#businessDataErrors");
@@ -469,56 +441,25 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataBusinessListingsSearchLiveResponseInfo response = apiInstance.businessListingsSearchLive(
-       List.of(
-    
-           new BusinessDataBusinessListingsSearchLiveRequestInfo()
-        
-           .categories(List.of(
-    
-           "pizza_restaurant"
-    
-       ))
-        
-        
+    BusinessDataBusinessListingsSearchLiveRequestInfo model = new BusinessDataBusinessListingsSearchLiveRequestInfo()
+           .categories(
+               List.of(
+                   "pizza_restaurant"
+                ))
            .description("pizza")
-        
-        
            .title("pizza")
-        
-        
            .isClaimed(true)
-        
-        
            .locationCoordinate("53.476225,-2.243572,10")
-        
-        
-           .orderBy(List.of(
-    
-           "rating.value,desc"
-    
-       ))
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "rating.value",
-    
-           ">",
-    
-           3
-    
-       )
-    
-       ))
-        
-        
-           .limit(3)
-    
-       )
-    );
+           .orderBy(
+               List.of(
+                   "rating.value,desc"
+                ))
+           .filters(
+               List.of(
+               
+                ))
+           .limit(3);
+    BusinessDataBusinessListingsSearchLiveResponseInfo response = apiInstance.businessListingsSearchLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#businessListingsSearchLive");
@@ -586,49 +527,21 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo response = apiInstance.businessListingsCategoriesAggregationLive(
-       List.of(
-    
-           new BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo()
-        
-           .categories(List.of(
-    
-           "pizza_restaurant"
-    
-       ))
-        
-        
+    BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo model = new BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo()
+           .categories(
+               List.of(
+                   "pizza_restaurant"
+                ))
            .description("pizza")
-        
-        
            .title("pizza")
-        
-        
            .isClaimed(true)
-        
-        
            .locationCoordinate("53.476225,-2.243572,10")
-        
-        
-           .initialDatasetFilters(List.of(
-    
-           List.of(
-    
-           "rating.value",
-    
-           ">",
-    
-           3
-    
-       )
-    
-       ))
-        
-        
-           .limit(3)
-    
-       )
-    );
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3);
+    BusinessDataBusinessListingsCategoriesAggregationLiveResponseInfo response = apiInstance.businessListingsCategoriesAggregationLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#businessListingsCategoriesAggregationLive");
@@ -765,7 +678,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String country = ;
+    String country = "us";
     BusinessDataGoogleLocationsCountryResponseInfo response = apiInstance.businessDataGoogleLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
@@ -903,21 +816,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo response = apiInstance.googleMyBusinessInfoTaskPost(
-       List.of(
-    
-           new BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo()
-        
+    BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo model = new BusinessDataGoogleMyBusinessInfoTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
-           .keyword("RustyBrick, Inc.")
-    
-       )
-    );
+           .keyword("RustyBrick, Inc.");
+    BusinessDataGoogleMyBusinessInfoTaskPostResponseInfo response = apiInstance.googleMyBusinessInfoTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleMyBusinessInfoTaskPost");
@@ -1123,7 +1026,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleMyBusinessInfoTaskGetResponseInfo response = apiInstance.googleMyBusinessInfoTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1192,21 +1095,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleMyBusinessInfoLiveResponseInfo response = apiInstance.googleMyBusinessInfoLive(
-       List.of(
-    
-           new BusinessDataGoogleMyBusinessInfoLiveRequestInfo()
-        
+    BusinessDataGoogleMyBusinessInfoLiveRequestInfo model = new BusinessDataGoogleMyBusinessInfoLiveRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
-           .keyword("RustyBrick, Inc.")
-    
-       )
-    );
+           .keyword("RustyBrick, Inc.");
+    BusinessDataGoogleMyBusinessInfoLiveResponseInfo response = apiInstance.googleMyBusinessInfoLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleMyBusinessInfoLive");
@@ -1274,21 +1167,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo response = apiInstance.googleMyBusinessUpdatesTaskPost(
-       List.of(
-    
-           new BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo()
-        
+    BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo model = new BusinessDataGoogleMyBusinessUpdatesTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
-           .keyword("RustyBrick, Inc.")
-    
-       )
-    );
+           .keyword("RustyBrick, Inc.");
+    BusinessDataGoogleMyBusinessUpdatesTaskPostResponseInfo response = apiInstance.googleMyBusinessUpdatesTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleMyBusinessUpdatesTaskPost");
@@ -1425,7 +1308,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleMyBusinessUpdatesTaskGetResponseInfo response = apiInstance.googleMyBusinessUpdatesTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1494,49 +1377,20 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleHotelSearchesTaskPostResponseInfo response = apiInstance.googleHotelSearchesTaskPost(
-       List.of(
-    
-           new BusinessDataGoogleHotelSearchesTaskPostRequestInfo()
-        
+    BusinessDataGoogleHotelSearchesTaskPostRequestInfo model = new BusinessDataGoogleHotelSearchesTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
            .keyword("cheap hotel")
-        
-        
-           .checkIn()
-        
-        
-           .checkOut()
-        
-        
            .currency("USD")
-        
-        
            .adults(2)
-        
-        
-           .children(List.of(
-    
-           14
-    
-       ))
-        
-        
+           .children(
+               List.of(
+                   "14"
+                ))
            .sortBy("highest_rating")
-        
-        
            .priority(2)
-        
-        
-           .tag("example")
-    
-       )
-    );
+           .tag("example");
+    BusinessDataGoogleHotelSearchesTaskPostResponseInfo response = apiInstance.googleHotelSearchesTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleHotelSearchesTaskPost");
@@ -1673,7 +1527,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleHotelSearchesTaskGetResponseInfo response = apiInstance.googleHotelSearchesTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -1742,46 +1596,19 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleHotelSearchesLiveResponseInfo response = apiInstance.googleHotelSearchesLive(
-       List.of(
-    
-           new BusinessDataGoogleHotelSearchesLiveRequestInfo()
-        
+    BusinessDataGoogleHotelSearchesLiveRequestInfo model = new BusinessDataGoogleHotelSearchesLiveRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
            .keyword("cheap hotel")
-        
-        
-           .checkIn()
-        
-        
-           .checkOut()
-        
-        
            .currency("USD")
-        
-        
            .adults(2)
-        
-        
-           .children(List.of(
-    
-           14
-    
-       ))
-        
-        
+           .children(
+               List.of(
+                   "14"
+                ))
            .sortBy("highest_rating")
-        
-        
-           .tag("example")
-    
-       )
-    );
+           .tag("example");
+    BusinessDataGoogleHotelSearchesLiveResponseInfo response = apiInstance.googleHotelSearchesLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleHotelSearchesLive");
@@ -1849,30 +1676,14 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleHotelInfoTaskPostResponseInfo response = apiInstance.googleHotelInfoTaskPost(
-       List.of(
-    
-           new BusinessDataGoogleHotelInfoTaskPostRequestInfo()
-        
+    BusinessDataGoogleHotelInfoTaskPostRequestInfo model = new BusinessDataGoogleHotelInfoTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
            .hotelIdentifier("ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE")
-        
-        
            .tag("some_string_123")
-        
-        
            .postbackUrl("https://your-server.com/postbackscript.php")
-        
-        
-           .postbackData("advanced")
-    
-       )
-    );
+           .postbackData("advanced");
+    BusinessDataGoogleHotelInfoTaskPostResponseInfo response = apiInstance.googleHotelInfoTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleHotelInfoTaskPost");
@@ -2009,7 +1820,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleHotelInfoTaskGetAdvancedResponseInfo response = apiInstance.googleHotelInfoTaskGetAdvanced(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2078,7 +1889,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleHotelInfoTaskGetHtmlResponseInfo response = apiInstance.googleHotelInfoTaskGetHtml(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2147,21 +1958,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo response = apiInstance.googleHotelInfoLiveAdvanced(
-       List.of(
-    
-           new BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo()
-        
+    BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo model = new BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
-           .hotelIdentifier("CgoI-KWyzenM_MV3EAE")
-    
-       )
-    );
+           .hotelIdentifier("CgoI-KWyzenM_MV3EAE");
+    BusinessDataGoogleHotelInfoLiveAdvancedResponseInfo response = apiInstance.googleHotelInfoLiveAdvanced(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleHotelInfoLiveAdvanced");
@@ -2229,21 +2030,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleHotelInfoLiveHtmlResponseInfo response = apiInstance.googleHotelInfoLiveHtml(
-       List.of(
-    
-           new BusinessDataGoogleHotelInfoLiveHtmlRequestInfo()
-        
+    BusinessDataGoogleHotelInfoLiveHtmlRequestInfo model = new BusinessDataGoogleHotelInfoLiveHtmlRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("New York,New York,United States")
-        
-        
-           .hotelIdentifier("ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE")
-    
-       )
-    );
+           .hotelIdentifier("ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE");
+    BusinessDataGoogleHotelInfoLiveHtmlResponseInfo response = apiInstance.googleHotelInfoLiveHtml(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleHotelInfoLiveHtml");
@@ -2311,27 +2102,13 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleReviewsTaskPostResponseInfo response = apiInstance.googleReviewsTaskPost(
-       List.of(
-    
-           new BusinessDataGoogleReviewsTaskPostRequestInfo()
-        
+    BusinessDataGoogleReviewsTaskPostRequestInfo model = new BusinessDataGoogleReviewsTaskPostRequestInfo()
            .locationName("London,England,United Kingdom")
-        
-        
            .languageName("English")
-        
-        
            .keyword("hedonism wines")
-        
-        
            .depth(50)
-        
-        
-           .sortBy("highest_rating")
-    
-       )
-    );
+           .sortBy("highest_rating");
+    BusinessDataGoogleReviewsTaskPostResponseInfo response = apiInstance.googleReviewsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleReviewsTaskPost");
@@ -2468,7 +2245,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleReviewsTaskGetResponseInfo response = apiInstance.googleReviewsTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2537,21 +2314,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleExtendedReviewsTaskPostResponseInfo response = apiInstance.googleExtendedReviewsTaskPost(
-       List.of(
-    
-           new BusinessDataGoogleExtendedReviewsTaskPostRequestInfo()
-        
+    BusinessDataGoogleExtendedReviewsTaskPostRequestInfo model = new BusinessDataGoogleExtendedReviewsTaskPostRequestInfo()
            .locationName("London,England,United Kingdom")
-        
-        
            .languageName("english")
-        
-        
-           .cid("17626775537598922320")
-    
-       )
-    );
+           .cid("17626775537598922320");
+    BusinessDataGoogleExtendedReviewsTaskPostResponseInfo response = apiInstance.googleExtendedReviewsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleExtendedReviewsTaskPost");
@@ -2688,7 +2455,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleExtendedReviewsTaskGetResponseInfo response = apiInstance.googleExtendedReviewsTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2757,21 +2524,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo response = apiInstance.googleQuestionsAndAnswersTaskPost(
-       List.of(
-    
-           new BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo()
-        
+    BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo model = new BusinessDataGoogleQuestionsAndAnswersTaskPostRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("Los Angeles,California,United States")
-        
-        
-           .keyword("The Last Bookstore")
-    
-       )
-    );
+           .keyword("The Last Bookstore");
+    BusinessDataGoogleQuestionsAndAnswersTaskPostResponseInfo response = apiInstance.googleQuestionsAndAnswersTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleQuestionsAndAnswersTaskPost");
@@ -2908,7 +2665,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataGoogleQuestionsAndAnswersTaskGetResponseInfo response = apiInstance.googleQuestionsAndAnswersTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -2977,21 +2734,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo response = apiInstance.googleQuestionsAndAnswersLive(
-       List.of(
-    
-           new BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo()
-        
+    BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo model = new BusinessDataGoogleQuestionsAndAnswersLiveRequestInfo()
            .languageCode("en")
-        
-        
            .locationName("Los Angeles,California,United States")
-        
-        
-           .keyword("The Last Bookstore")
-    
-       )
-    );
+           .keyword("The Last Bookstore");
+    BusinessDataGoogleQuestionsAndAnswersLiveResponseInfo response = apiInstance.googleQuestionsAndAnswersLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#googleQuestionsAndAnswersLive");
@@ -3059,18 +2806,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataTrustpilotSearchTaskPostResponseInfo response = apiInstance.trustpilotSearchTaskPost(
-       List.of(
-    
-           new BusinessDataTrustpilotSearchTaskPostRequestInfo()
-        
+    BusinessDataTrustpilotSearchTaskPostRequestInfo model = new BusinessDataTrustpilotSearchTaskPostRequestInfo()
            .keyword("pizza restaurant")
-        
-        
-           .depth(20)
-    
-       )
-    );
+           .depth(20);
+    BusinessDataTrustpilotSearchTaskPostResponseInfo response = apiInstance.trustpilotSearchTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#trustpilotSearchTaskPost");
@@ -3207,7 +2946,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataTrustpilotSearchTaskGetResponseInfo response = apiInstance.trustpilotSearchTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3276,18 +3015,10 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataTrustpilotReviewsTaskPostResponseInfo response = apiInstance.trustpilotReviewsTaskPost(
-       List.of(
-    
-           new BusinessDataTrustpilotReviewsTaskPostRequestInfo()
-        
+    BusinessDataTrustpilotReviewsTaskPostRequestInfo model = new BusinessDataTrustpilotReviewsTaskPostRequestInfo()
            .domain("www.thepearlsource.com")
-        
-        
-           .depth(40)
-    
-       )
-    );
+           .depth(40);
+    BusinessDataTrustpilotReviewsTaskPostResponseInfo response = apiInstance.trustpilotReviewsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#trustpilotReviewsTaskPost");
@@ -3424,7 +3155,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataTrustpilotReviewsTaskGetResponseInfo response = apiInstance.trustpilotReviewsTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3562,7 +3293,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String country = ;
+    String country = "us";
     BusinessDataTripadvisorLocationsCountryResponseInfo response = apiInstance.tripadvisorLocationsCountry(country);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3700,21 +3431,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataTripadvisorSearchTaskPostResponseInfo response = apiInstance.tripadvisorSearchTaskPost(
-       List.of(
-    
-           new BusinessDataTripadvisorSearchTaskPostRequestInfo()
-        
+    BusinessDataTripadvisorSearchTaskPostRequestInfo model = new BusinessDataTripadvisorSearchTaskPostRequestInfo()
            .keyword("pizza")
-        
-        
            .locationCode(1003854)
-        
-        
-           .depth(30)
-    
-       )
-    );
+           .depth(30);
+    BusinessDataTripadvisorSearchTaskPostResponseInfo response = apiInstance.tripadvisorSearchTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#tripadvisorSearchTaskPost");
@@ -3851,7 +3572,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataTripadvisorSearchTaskGetResponseInfo response = apiInstance.tripadvisorSearchTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -3920,24 +3641,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataTripadvisorReviewsTaskPostResponseInfo response = apiInstance.tripadvisorReviewsTaskPost(
-       List.of(
-    
-           new BusinessDataTripadvisorReviewsTaskPostRequestInfo()
-        
+    BusinessDataTripadvisorReviewsTaskPostRequestInfo model = new BusinessDataTripadvisorReviewsTaskPostRequestInfo()
            .urlPath("Hotel_Review-g60763-d23462501-Reviews-Margaritaville_Times_Square-New_York_City_New_York.html")
-        
-        
            .locationCode(1003854)
-        
-        
            .pingbackUrl("https://your-server.com/pingback.php?id=$id&tag=$tag")
-        
-        
-           .tag("some_string_123")
-    
-       )
-    );
+           .tag("some_string_123");
+    BusinessDataTripadvisorReviewsTaskPostResponseInfo response = apiInstance.tripadvisorReviewsTaskPost(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#tripadvisorReviewsTaskPost");
@@ -4074,7 +3783,7 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    String id = ;
+    String id = "00000000-0000-0000-0000-000000000000";
     BusinessDataTripadvisorReviewsTaskGetResponseInfo response = apiInstance.tripadvisorReviewsTaskGet(id);
     System.out.println(result);
   } catch (ApiException e) {
@@ -4143,26 +3852,15 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataSocialMediaPinterestLiveResponseInfo response = apiInstance.socialMediaPinterestLive(
-       List.of(
-    
-           new BusinessDataSocialMediaPinterestLiveRequestInfo()
-        
-           .targets(List.of(
-    
-           "https://www.simplyrecipes.com/recipes/grilled_salmon_with_cucumber_mango_salsa/",
-    
-           "https://tasty.co/recipe/classic-lasagna",
-    
-           "https://www.allrecipes.com/recipe/255263/sicilian-roasted-chicken/"
-    
-       ))
-        
-        
-           .tag("some_string_123")
-    
-       )
-    );
+    BusinessDataSocialMediaPinterestLiveRequestInfo model = new BusinessDataSocialMediaPinterestLiveRequestInfo()
+           .targets(
+               List.of(
+                   "https://www.simplyrecipes.com/recipes/grilled_salmon_with_cucumber_mango_salsa/",
+                   "https://tasty.co/recipe/classic-lasagna",
+                   "https://www.allrecipes.com/recipe/255263/sicilian-roasted-chicken/"
+                ))
+           .tag("some_string_123");
+    BusinessDataSocialMediaPinterestLiveResponseInfo response = apiInstance.socialMediaPinterestLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#socialMediaPinterestLive");
@@ -4230,32 +3928,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataSocialMediaRedditLiveResponseInfo response = apiInstance.socialMediaRedditLive(
-       List.of(
-    
-           new BusinessDataSocialMediaRedditLiveRequestInfo()
-        
-           .targets(List.of(
-    
-           "https://vk.com/",
-    
-           "https://ahrefs.com/",
-    
-           "https://google.com/",
-    
-           "https://twitter.com/",
-    
-           "https://reddit.com/",
-    
-           "https://facebook.com/"
-    
-       ))
-        
-        
-           .tag("some_string_123")
-    
-       )
-    );
+    BusinessDataSocialMediaRedditLiveRequestInfo model = new BusinessDataSocialMediaRedditLiveRequestInfo()
+           .targets(
+               List.of(
+                   "https://vk.com/",
+                   "https://ahrefs.com/",
+                   "https://google.com/",
+                   "https://twitter.com/",
+                   "https://reddit.com/",
+                   "https://facebook.com/"
+                ))
+           .tag("some_string_123");
+    BusinessDataSocialMediaRedditLiveResponseInfo response = apiInstance.socialMediaRedditLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling BusinessDataApi#socialMediaRedditLive");

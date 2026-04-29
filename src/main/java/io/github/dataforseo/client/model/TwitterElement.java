@@ -143,7 +143,7 @@ public class TwitterElement  {
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable

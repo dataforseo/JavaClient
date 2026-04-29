@@ -74,8 +74,7 @@ public class FeaturedSnippetSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * absolute rank in SERP
-* absolute position among all the elements found in SERP
-* note values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
+* absolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
 * to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
    * @return rankAbsolute
    */

@@ -71,7 +71,7 @@ public class RecipesElement  {
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class RecipesElement  {
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +117,7 @@ public class RecipesElement  {
   }
 
   /**
-   * domain where a link points
+   * website domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -210,8 +210,9 @@ public class RecipesElement  {
   }
 
   /**
-   * the element’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * the item’s rating 
+* the popularity rate based on reviews and displayed in SERP;
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable

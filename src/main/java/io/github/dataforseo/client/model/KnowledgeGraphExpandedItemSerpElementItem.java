@@ -99,7 +99,7 @@ public class KnowledgeGraphExpandedItemSerpElementItem  extends BaseSerpApiEleme
   }
 
   /**
-   * title of a given link element
+   * reference page title
    * @return title
    */
   @javax.annotation.Nullable

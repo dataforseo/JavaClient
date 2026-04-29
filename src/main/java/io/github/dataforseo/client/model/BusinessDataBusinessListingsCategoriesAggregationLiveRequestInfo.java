@@ -191,7 +191,8 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
 * example:
 * ['rating.value','>',3]
 * you can receive the list of available filters by making a separate request to https://api.dataforseo.com/v3/business_data/business_listings/available_filters
-* The full list of possible filters is available here.
+* the full list of possible filters is available here.
+* learn more about the initial dataset filters in this help center article.
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable

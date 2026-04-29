@@ -41,6 +41,8 @@ import io.github.dataforseo.client.model.OnPageKeywordDensityRequestInfo;
 import io.github.dataforseo.client.model.OnPageKeywordDensityResponseInfo;
 import io.github.dataforseo.client.model.OnPageMicrodataRequestInfo;
 import io.github.dataforseo.client.model.OnPageMicrodataResponseInfo;
+import io.github.dataforseo.client.model.OnPageUncrawlableResourcesRequestInfo;
+import io.github.dataforseo.client.model.OnPageUncrawlableResourcesResponseInfo;
 import io.github.dataforseo.client.model.OnPageRawHtmlRequestInfo;
 import io.github.dataforseo.client.model.OnPageRawHtmlResponseInfo;
 import io.github.dataforseo.client.model.OnPagePageScreenshotRequestInfo;
@@ -1376,6 +1378,76 @@ public class OnPageApi {
  
             okhttp3.Call localVarCall = microdataValidateBeforeCall(payload, _callback);
             Type localVarReturnType = new TypeToken<OnPageMicrodataResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
+    public okhttp3.Call uncrawlableResourcesCall(List<OnPageUncrawlableResourcesRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/on_page/uncrawlable_resources";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call uncrawlableResourcesValidateBeforeCall(List<OnPageUncrawlableResourcesRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return uncrawlableResourcesCall(payload, _callback);
+ 
+        }
+ 
+        public OnPageUncrawlableResourcesResponseInfo uncrawlableResources(List<OnPageUncrawlableResourcesRequestInfo> payload) throws ApiException {
+            ApiResponse<OnPageUncrawlableResourcesResponseInfo> localVarResp = uncrawlableResourcesWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<OnPageUncrawlableResourcesResponseInfo> uncrawlableResourcesWithHttpInfo(List<OnPageUncrawlableResourcesRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = uncrawlableResourcesValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<OnPageUncrawlableResourcesResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call uncrawlableResourcesAsync(List<OnPageUncrawlableResourcesRequestInfo> payload, final ApiCallback<OnPageUncrawlableResourcesResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = uncrawlableResourcesValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<OnPageUncrawlableResourcesResponseInfo>(){}.getType();
             localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
             return localVarCall;
         }

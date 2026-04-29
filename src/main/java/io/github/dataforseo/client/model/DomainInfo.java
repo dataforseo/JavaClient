@@ -298,6 +298,31 @@ public class DomainInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_TOTAL_UNCRAWLABLE_RESOURCES = "total_uncrawlable_resources";
+  @SerializedName(SERIALIZED_NAME_TOTAL_UNCRAWLABLE_RESOURCES)
+  private Long totalUncrawlableResources;
+
+  public DomainInfo totalUncrawlableResources(Long totalUncrawlableResources) {
+    this.totalUncrawlableResources = totalUncrawlableResources;
+    return this;
+  }
+
+  /**
+   * total uncrawlable resources
+* the total number of resources that could not be crawled;
+* the resource is considered uncrawlable when the actual content type of the resource doesn’t match the content type expected by the crawler
+   * @return totalUncrawlableResources
+   */
+  @javax.annotation.Nullable
+  public Long getTotalUncrawlableResources() {
+    return totalUncrawlableResources;
+  }
+
+  public void setTotalUncrawlableResources(Long totalUncrawlableResources) {
+    this.totalUncrawlableResources = totalUncrawlableResources;
+  }
+
+
   public static final String SERIALIZED_NAME_PAGE_NOT_FOUND_STATUS_CODE = "page_not_found_status_code";
   @SerializedName(SERIALIZED_NAME_PAGE_NOT_FOUND_STATUS_CODE)
   private Integer pageNotFoundStatusCode;
@@ -473,6 +498,7 @@ public class DomainInfo  {
         Objects.equals(this.sslInfo, domainInfo.sslInfo) &&
         Objects.equals(this.checks, domainInfo.checks) &&
         Objects.equals(this.totalPages, domainInfo.totalPages) &&
+        Objects.equals(this.totalUncrawlableResources, domainInfo.totalUncrawlableResources) &&
         Objects.equals(this.pageNotFoundStatusCode, domainInfo.pageNotFoundStatusCode) &&
         Objects.equals(this.canonicalizationStatusCode, domainInfo.canonicalizationStatusCode) &&
         Objects.equals(this.directoryBrowsingStatusCode, domainInfo.directoryBrowsingStatusCode) &&
@@ -487,7 +513,7 @@ public class DomainInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(name, cms, ip, server, crawlStart, crawlEnd, extendedCrawlStatus, sslInfo, checks, totalPages, pageNotFoundStatusCode, canonicalizationStatusCode, directoryBrowsingStatusCode, wwwRedirectStatusCode, mainDomain);
+  return Objects.hash(name, cms, ip, server, crawlStart, crawlEnd, extendedCrawlStatus, sslInfo, checks, totalPages, totalUncrawlableResources, pageNotFoundStatusCode, canonicalizationStatusCode, directoryBrowsingStatusCode, wwwRedirectStatusCode, mainDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -512,6 +538,7 @@ public class DomainInfo  {
     sb.append("    sslInfo: ").append(toIndentedString(sslInfo)).append("\n");
     sb.append("    checks: ").append(toIndentedString(checks)).append("\n");
     sb.append("    totalPages: ").append(toIndentedString(totalPages)).append("\n");
+    sb.append("    totalUncrawlableResources: ").append(toIndentedString(totalUncrawlableResources)).append("\n");
     sb.append("    pageNotFoundStatusCode: ").append(toIndentedString(pageNotFoundStatusCode)).append("\n");
     sb.append("    canonicalizationStatusCode: ").append(toIndentedString(canonicalizationStatusCode)).append("\n");
     sb.append("    directoryBrowsingStatusCode: ").append(toIndentedString(directoryBrowsingStatusCode)).append("\n");
@@ -559,6 +586,8 @@ public class DomainInfo  {
     openapiFields.add("checks");
     
     openapiFields.add("total_pages");
+    
+    openapiFields.add("total_uncrawlable_resources");
     
     openapiFields.add("page_not_found_status_code");
     

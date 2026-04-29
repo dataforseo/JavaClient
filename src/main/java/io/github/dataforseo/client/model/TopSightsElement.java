@@ -71,7 +71,7 @@ public class TopSightsElement  {
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class TopSightsElement  {
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,8 +140,9 @@ public class TopSightsElement  {
   }
 
   /**
-   * the element’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * the item’s rating 
+* the popularity rate based on reviews and displayed in SERP;
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable

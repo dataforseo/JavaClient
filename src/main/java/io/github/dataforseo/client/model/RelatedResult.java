@@ -118,7 +118,7 @@ public class RelatedResult  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -141,7 +141,7 @@ public class RelatedResult  {
   }
 
   /**
-   * reference page title
+   * title of the link
    * @return title
    */
   @javax.annotation.Nullable
@@ -164,7 +164,7 @@ public class RelatedResult  {
   }
 
   /**
-   * URL
+   * reference page URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -443,7 +443,7 @@ public class RelatedResult  {
   }
 
   /**
-   * the element’s rating
+   * the item’s rating 
 * the popularity rate based on reviews and displayed in SERP;
 * if there is none, equals null
    * @return rating
@@ -468,7 +468,7 @@ public class RelatedResult  {
   }
 
   /**
-   * price indicated in the element
+   * price of booking a place for the specified dates of stay
    * @return price
    */
   @javax.annotation.Nullable

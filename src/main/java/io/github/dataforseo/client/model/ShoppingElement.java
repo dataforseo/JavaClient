@@ -71,7 +71,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * title of the row
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * price of the app element
+   * price indicated in the element
    * @return price
    */
   @javax.annotation.Nullable
@@ -165,7 +165,7 @@ public class ShoppingElement  {
 
   /**
    * merchant account provider
-* ecommerce site that hosts products or websites of individual sellers under the same merchant account
+* commerce site that hosts products or websites of individual sellers under the same merchant account
 * example:
 * by Google
    * @return marketplace
@@ -190,8 +190,8 @@ public class ShoppingElement  {
   }
 
   /**
-   * URL to the merchant account provider
-* ecommerce site that hosts products or websites of individual sellers under the same merchant account
+   * relevant marketplace URL
+* URL of the page on the marketplace website where the product is hosted
    * @return marketplaceUrl
    */
   @javax.annotation.Nullable
@@ -214,7 +214,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * URL of element
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -237,8 +237,9 @@ public class ShoppingElement  {
   }
 
   /**
-   * the element’s rating 
-* the popularity rate based on reviews and displayed in SERP
+   * the item’s rating 
+* the popularity rate based on reviews and displayed in SERP;
+* if there is none, equals null
    * @return rating
    */
   @javax.annotation.Nullable

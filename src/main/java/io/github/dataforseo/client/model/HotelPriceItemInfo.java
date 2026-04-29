@@ -204,6 +204,29 @@ public class HotelPriceItemInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_OFFICIAL_SITE = "official_site";
+  @SerializedName(SERIALIZED_NAME_OFFICIAL_SITE)
+  private Boolean officialSite;
+
+  public HotelPriceItemInfo officialSite(Boolean officialSite) {
+    this.officialSite = officialSite;
+    return this;
+  }
+
+  /**
+   * 
+   * @return officialSite
+   */
+  @javax.annotation.Nullable
+  public Boolean getOfficialSite() {
+    return officialSite;
+  }
+
+  public void setOfficialSite(Boolean officialSite) {
+    this.officialSite = officialSite;
+  }
+
+
   public static final String SERIALIZED_NAME_FREE_CANCELLATION_UNTIL = "free_cancellation_until";
   @SerializedName(SERIALIZED_NAME_FREE_CANCELLATION_UNTIL)
   private String freeCancellationUntil;
@@ -302,6 +325,7 @@ public class HotelPriceItemInfo  {
         Objects.equals(this.url, hotelPriceItemInfo.url) &&
         Objects.equals(this.domain, hotelPriceItemInfo.domain) &&
         Objects.equals(this.isPaid, hotelPriceItemInfo.isPaid) &&
+        Objects.equals(this.officialSite, hotelPriceItemInfo.officialSite) &&
         Objects.equals(this.freeCancellationUntil, hotelPriceItemInfo.freeCancellationUntil) &&
         Objects.equals(this.offers, hotelPriceItemInfo.offers);  
     
@@ -313,7 +337,7 @@ public class HotelPriceItemInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, title, price, currency, url, domain, isPaid, freeCancellationUntil, offers);
+  return Objects.hash(type, title, price, currency, url, domain, isPaid, officialSite, freeCancellationUntil, offers);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -335,6 +359,7 @@ public class HotelPriceItemInfo  {
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    isPaid: ").append(toIndentedString(isPaid)).append("\n");
+    sb.append("    officialSite: ").append(toIndentedString(officialSite)).append("\n");
     sb.append("    freeCancellationUntil: ").append(toIndentedString(freeCancellationUntil)).append("\n");
     sb.append("    offers: ").append(toIndentedString(offers)).append("\n");
     sb.append("}");
@@ -373,6 +398,8 @@ public class HotelPriceItemInfo  {
     openapiFields.add("domain");
     
     openapiFields.add("is_paid");
+    
+    openapiFields.add("official_site");
     
     openapiFields.add("free_cancellation_until");
     

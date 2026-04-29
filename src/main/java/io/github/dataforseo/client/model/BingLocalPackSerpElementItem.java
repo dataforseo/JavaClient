@@ -48,7 +48,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the result in SERP
+   * title of the item
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * domain of the organic result
+   * domain where the video is hosted
    * @return domain
    */
   @javax.annotation.Nullable
@@ -163,7 +163,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * relevant URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -209,7 +209,7 @@ public class BingLocalPackSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * the item’s rating
+   * the item’s rating 
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */

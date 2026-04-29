@@ -12,4 +12,4 @@
 **pagesByResource** | **Map<String, String>** |  |[optional]|
 **redirectChains** | **Map<String, String>** |  |[optional]|
 **keywordDensity** | **Map<String, String>** |  |[optional]|
-**invalidResources** | **Map<String, String>** |  |[optional]|
+**uncrawlableResources** | **Map<String, String>** |  |[optional]|

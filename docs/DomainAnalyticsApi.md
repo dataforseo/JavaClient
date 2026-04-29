@@ -48,30 +48,12 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsIdListResponseInfo response = apiInstance.domainAnalyticsIdList(
-       List.of(
-    
-           new DomainAnalyticsIdListRequestInfo()
-        
-           .datetimeFrom()
-        
-        
-           .datetimeTo()
-        
-        
+    DomainAnalyticsIdListRequestInfo model = new DomainAnalyticsIdListRequestInfo()
            .limit(100)
-        
-        
            .offset(0)
-        
-        
            .sort("desc")
-        
-        
-           .includeMetadata(true)
-    
-       )
-    );
+           .includeMetadata(true);
+    DomainAnalyticsIdListResponseInfo response = apiInstance.domainAnalyticsIdList(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsIdList");
@@ -139,21 +121,11 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsErrorsResponseInfo response = apiInstance.domainAnalyticsErrors(
-       List.of(
-    
-           new DomainAnalyticsErrorsRequestInfo()
-        
+    DomainAnalyticsErrorsRequestInfo model = new DomainAnalyticsErrorsRequestInfo()
            .limit(10)
-        
-        
            .offset(0)
-        
-        
-           .filteredFunction("pingback_url")
-    
-       )
-    );
+           .filteredFunction("pingback_url");
+    DomainAnalyticsErrorsResponseInfo response = apiInstance.domainAnalyticsErrors(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#domainAnalyticsErrors");
@@ -497,58 +469,22 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo response = apiInstance.technologiesAggregationTechnologiesLive(
-       List.of(
-    
-           new DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo()
-        
+    DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo model = new DomainAnalyticsTechnologiesAggregationTechnologiesLiveRequestInfo()
            .mode("entry")
-        
-        
            .technology("Nginx")
-        
-        
            .keyword("WordPress")
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "country_iso_code",
-    
-           "=",
-    
-           "US"
-    
-       ),
-    
-           "and",
-    
-           List.of(
-    
-           "domain_rank",
-    
-           ">",
-    
-           800
-    
-       )
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "groups_count,desc"
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ))
+           .orderBy(
+               List.of(
+                   "groups_count,desc"
+                ))
+           .limit(10);
+    DomainAnalyticsTechnologiesAggregationTechnologiesLiveResponseInfo response = apiInstance.technologiesAggregationTechnologiesLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesAggregationTechnologiesLive");
@@ -616,56 +552,23 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo response = apiInstance.technologiesTechnologiesSummaryLive(
-       List.of(
-    
-           new DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo()
-        
+    DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo model = new DomainAnalyticsTechnologiesTechnologiesSummaryLiveRequestInfo()
            .mode("entry")
-        
-        
-           .technologies(List.of(
-    
-           "Ngi"
-    
-       ))
-        
-        
-           .keywords(List.of(
-    
-           "WordPress"
-    
-       ))
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "country_iso_code",
-    
-           "=",
-    
-           "US"
-    
-       ),
-    
-           "and",
-    
-           List.of(
-    
-           "domain_rank",
-    
-           ">",
-    
-           800
-    
-       )
-    
-       ))
-    
-       )
-    );
+           .technologies(
+               List.of(
+                   "Ngi"
+                ))
+           .keywords(
+               List.of(
+                   "WordPress"
+                ))
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ));
+    DomainAnalyticsTechnologiesTechnologiesSummaryLiveResponseInfo response = apiInstance.technologiesTechnologiesSummaryLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesTechnologiesSummaryLive");
@@ -733,21 +636,9 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo response = apiInstance.technologiesTechnologyStatsLive(
-       List.of(
-    
-           new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
-        
-           .technology("jQuery")
-        
-        
-           .dateFrom()
-        
-        
-           .dateTo()
-    
-       )
-    );
+    DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo model = new DomainAnalyticsTechnologiesTechnologyStatsLiveRequestInfo()
+           .technology("jQuery");
+    DomainAnalyticsTechnologiesTechnologyStatsLiveResponseInfo response = apiInstance.technologiesTechnologyStatsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesTechnologyStatsLive");
@@ -815,56 +706,23 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo response = apiInstance.technologiesDomainsByTechnologyLive(
-       List.of(
-    
-           new DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo()
-        
-           .technologies(List.of(
-    
-           "Nginx"
-    
-       ))
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "country_iso_code",
-    
-           "=",
-    
-           "US"
-    
-       ),
-    
-           "and",
-    
-           List.of(
-    
-           "domain_rank",
-    
-           ">",
-    
-           800
-    
-       )
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "last_visited,desc"
-    
-       ))
-        
-        
-           .limit(10)
-    
-       )
-    );
+    DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo model = new DomainAnalyticsTechnologiesDomainsByTechnologyLiveRequestInfo()
+           .technologies(
+               List.of(
+                   "Nginx"
+                ))
+           .filters(
+               List.of(
+                   ,
+                   "and",
+               
+                ))
+           .orderBy(
+               List.of(
+                   "last_visited,desc"
+                ))
+           .limit(10);
+    DomainAnalyticsTechnologiesDomainsByTechnologyLiveResponseInfo response = apiInstance.technologiesDomainsByTechnologyLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainsByTechnologyLive");
@@ -932,32 +790,18 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo response = apiInstance.technologiesDomainsByHtmlTermsLive(
-       List.of(
-    
-           new DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo()
-        
-           .searchTerms(List.of(
-    
-           "data-attrid"
-    
-       ))
-        
-        
-           .orderBy(List.of(
-    
-           "last_visited,desc"
-    
-       ))
-        
-        
+    DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo model = new DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveRequestInfo()
+           .searchTerms(
+               List.of(
+                   "data-attrid"
+                ))
+           .orderBy(
+               List.of(
+                   "last_visited,desc"
+                ))
            .limit(10)
-        
-        
-           .offset(0)
-    
-       )
-    );
+           .offset(0);
+    DomainAnalyticsTechnologiesDomainsByHtmlTermsLiveResponseInfo response = apiInstance.technologiesDomainsByHtmlTermsLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainsByHtmlTermsLive");
@@ -1025,15 +869,9 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo response = apiInstance.technologiesDomainTechnologiesLive(
-       List.of(
-    
-           new DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo()
-        
-           .target("dataforseo.com")
-    
-       )
-    );
+    DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo model = new DomainAnalyticsTechnologiesDomainTechnologiesLiveRequestInfo()
+           .target("dataforseo.com");
+    DomainAnalyticsTechnologiesDomainTechnologiesLiveResponseInfo response = apiInstance.technologiesDomainTechnologiesLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#technologiesDomainTechnologiesLive");
@@ -1170,36 +1008,13 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     DomainAnalyticsApi apiInstance = new DomainAnalyticsApi(defaultClient);
-    DomainAnalyticsWhoisOverviewLiveResponseInfo response = apiInstance.whoisOverviewLive(
-       List.of(
-    
-           new DomainAnalyticsWhoisOverviewLiveRequestInfo()
-        
+    DomainAnalyticsWhoisOverviewLiveRequestInfo model = new DomainAnalyticsWhoisOverviewLiveRequestInfo()
            .limit(2)
-        
-        
-           .filters(List.of(
-    
-           List.of(
-    
-           "epp_status_codes",
-    
-           "in",
-    
-           List.of(
-    
-           "client_transfer_prohibited",
-    
-           "client_update_prohibited"
-    
-       )
-    
-       )
-    
-       ))
-    
-       )
-    );
+           .filters(
+               List.of(
+               
+                ));
+    DomainAnalyticsWhoisOverviewLiveResponseInfo response = apiInstance.whoisOverviewLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling DomainAnalyticsApi#whoisOverviewLive");

@@ -163,7 +163,7 @@ public class AiOptimizationGeminiLlmScraperTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language coderequired field if you don't specify language_name;if you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languagesexample:enn
+   * search engine language coderequired field if you don't specify language_name;if you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/languagesexample:en
    * @return languageCode
    */
   @javax.annotation.Nullable

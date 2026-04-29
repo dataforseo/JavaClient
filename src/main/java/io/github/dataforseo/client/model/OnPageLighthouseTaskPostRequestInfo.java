@@ -199,6 +199,167 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_CUSTOM_USER_AGENT = "custom_user_agent";
+  @SerializedName(SERIALIZED_NAME_CUSTOM_USER_AGENT)
+  private String customUserAgent;
+
+  public OnPageLighthouseTaskPostRequestInfo customUserAgent(String customUserAgent) {
+    this.customUserAgent = customUserAgent;
+    return this;
+  }
+
+  /**
+   * custom user agentoptional fieldspecify the custom user agent used by the browser when running the Lighthouse audit;can be specified with up to 254 characters;
+   * @return customUserAgent
+   */
+  @javax.annotation.Nullable
+  public String getCustomUserAgent() {
+    return customUserAgent;
+  }
+
+  public void setCustomUserAgent(String customUserAgent) {
+    this.customUserAgent = customUserAgent;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_WIDTH = "browser_screen_width";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_WIDTH)
+  private Long browserScreenWidth;
+
+  public OnPageLighthouseTaskPostRequestInfo browserScreenWidth(Long browserScreenWidth) {
+    this.browserScreenWidth = browserScreenWidth;
+    return this;
+  }
+
+  /**
+   * browser screen widthoptional fieldset the screen width of the browser used for the Lighthouse audit to emulate a specific device;can be specified within the following range: 240–9999;
+   * @return browserScreenWidth
+   */
+  @javax.annotation.Nullable
+  public Long getBrowserScreenWidth() {
+    return browserScreenWidth;
+  }
+
+  public void setBrowserScreenWidth(Long browserScreenWidth) {
+    this.browserScreenWidth = browserScreenWidth;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT = "browser_screen_height";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT)
+  private Integer browserScreenHeight;
+
+  public OnPageLighthouseTaskPostRequestInfo browserScreenHeight(Integer browserScreenHeight) {
+    this.browserScreenHeight = browserScreenHeight;
+    return this;
+  }
+
+  /**
+   * browser screen heightoptional fieldset the screen height of the browser used for the Lighthouse audit to emulate a specific device;can be specified within the following range: 240–9999;
+   * @return browserScreenHeight
+   */
+  @javax.annotation.Nullable
+  public Integer getBrowserScreenHeight() {
+    return browserScreenHeight;
+  }
+
+  public void setBrowserScreenHeight(Integer browserScreenHeight) {
+    this.browserScreenHeight = browserScreenHeight;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_SCALE_FACTOR = "browser_screen_scale_factor";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_SCALE_FACTOR)
+  private Double browserScreenScaleFactor;
+
+  public OnPageLighthouseTaskPostRequestInfo browserScreenScaleFactor(Double browserScreenScaleFactor) {
+    this.browserScreenScaleFactor = browserScreenScaleFactor;
+    return this;
+  }
+
+  /**
+   * browser screen scale factoroptional fieldset the device pixel ratio of the browser used for the Lighthouse audit;can be specified within the following range: 0.5–3;
+   * @return browserScreenScaleFactor
+   */
+  @javax.annotation.Nullable
+  public Double getBrowserScreenScaleFactor() {
+    return browserScreenScaleFactor;
+  }
+
+  public void setBrowserScreenScaleFactor(Double browserScreenScaleFactor) {
+    this.browserScreenScaleFactor = browserScreenScaleFactor;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING_METHOD = "browser_network_throttling_method";
+  @SerializedName(SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING_METHOD)
+  private String browserNetworkThrottlingMethod;
+
+  public OnPageLighthouseTaskPostRequestInfo browserNetworkThrottlingMethod(String browserNetworkThrottlingMethod) {
+    this.browserNetworkThrottlingMethod = browserNetworkThrottlingMethod;
+    return this;
+  }
+
+  /**
+   * browser network throttling methodoptional fielddefines the method used to apply throttling during the Lighthouse audit;possible vaules:simulate - calculates estimated performance metrics without applying explicit throttling;devtools -  applies the throttling settings specified in browser_network_throttling and browser_cpu_throttling_multiplier;provided - uses the network conditions of the crawling environment;
+   * @return browserNetworkThrottlingMethod
+   */
+  @javax.annotation.Nullable
+  public String getBrowserNetworkThrottlingMethod() {
+    return browserNetworkThrottlingMethod;
+  }
+
+  public void setBrowserNetworkThrottlingMethod(String browserNetworkThrottlingMethod) {
+    this.browserNetworkThrottlingMethod = browserNetworkThrottlingMethod;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_CPU_THROTTLING_MULTIPLIER = "browser_cpu_throttling_multiplier";
+  @SerializedName(SERIALIZED_NAME_BROWSER_CPU_THROTTLING_MULTIPLIER)
+  private Double browserCpuThrottlingMultiplier;
+
+  public OnPageLighthouseTaskPostRequestInfo browserCpuThrottlingMultiplier(Double browserCpuThrottlingMultiplier) {
+    this.browserCpuThrottlingMultiplier = browserCpuThrottlingMultiplier;
+    return this;
+  }
+
+  /**
+   * browser CPU throttling multiplierrequired if browser_network_throttling_method is set to devtools;set the CPU throttling multiplier to simulate device performance conditions during the Lighthouse audit;can be specified within the following range: 1–4;Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+   * @return browserCpuThrottlingMultiplier
+   */
+  @javax.annotation.Nullable
+  public Double getBrowserCpuThrottlingMultiplier() {
+    return browserCpuThrottlingMultiplier;
+  }
+
+  public void setBrowserCpuThrottlingMultiplier(Double browserCpuThrottlingMultiplier) {
+    this.browserCpuThrottlingMultiplier = browserCpuThrottlingMultiplier;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING = "browser_network_throttling";
+  @SerializedName(SERIALIZED_NAME_BROWSER_NETWORK_THROTTLING)
+  private String browserNetworkThrottling;
+
+  public OnPageLighthouseTaskPostRequestInfo browserNetworkThrottling(String browserNetworkThrottling) {
+    this.browserNetworkThrottling = browserNetworkThrottling;
+    return this;
+  }
+
+  /**
+   * browser network throttlingrequired if browser_network_throttling_method is set to devtools;set the network throttling profile to simulate connection speed conditions during the Lighthouse audit;possible values: no_throttling, fast_4g, slow_4g, regular_3g, pc;Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+   * @return browserNetworkThrottling
+   */
+  @javax.annotation.Nullable
+  public String getBrowserNetworkThrottling() {
+    return browserNetworkThrottling;
+  }
+
+  public void setBrowserNetworkThrottling(String browserNetworkThrottling) {
+    this.browserNetworkThrottling = browserNetworkThrottling;
+  }
+
+
   public static final String SERIALIZED_NAME_TAG = "tag";
   @SerializedName(SERIALIZED_NAME_TAG)
   private String tag;
@@ -295,6 +456,13 @@ public class OnPageLighthouseTaskPostRequestInfo  {
         Objects.equals(this.version, onPageLighthouseTaskPostRequestInfo.version) &&
         Objects.equals(this.languageName, onPageLighthouseTaskPostRequestInfo.languageName) &&
         Objects.equals(this.languageCode, onPageLighthouseTaskPostRequestInfo.languageCode) &&
+        Objects.equals(this.customUserAgent, onPageLighthouseTaskPostRequestInfo.customUserAgent) &&
+        Objects.equals(this.browserScreenWidth, onPageLighthouseTaskPostRequestInfo.browserScreenWidth) &&
+        Objects.equals(this.browserScreenHeight, onPageLighthouseTaskPostRequestInfo.browserScreenHeight) &&
+        Objects.equals(this.browserScreenScaleFactor, onPageLighthouseTaskPostRequestInfo.browserScreenScaleFactor) &&
+        Objects.equals(this.browserNetworkThrottlingMethod, onPageLighthouseTaskPostRequestInfo.browserNetworkThrottlingMethod) &&
+        Objects.equals(this.browserCpuThrottlingMultiplier, onPageLighthouseTaskPostRequestInfo.browserCpuThrottlingMultiplier) &&
+        Objects.equals(this.browserNetworkThrottling, onPageLighthouseTaskPostRequestInfo.browserNetworkThrottling) &&
         Objects.equals(this.tag, onPageLighthouseTaskPostRequestInfo.tag) &&
         Objects.equals(this.pingbackUrl, onPageLighthouseTaskPostRequestInfo.pingbackUrl);  
     
@@ -306,7 +474,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(url, forMobile, categories, audits, version, languageName, languageCode, tag, pingbackUrl);
+  return Objects.hash(url, forMobile, categories, audits, version, languageName, languageCode, customUserAgent, browserScreenWidth, browserScreenHeight, browserScreenScaleFactor, browserNetworkThrottlingMethod, browserCpuThrottlingMultiplier, browserNetworkThrottling, tag, pingbackUrl);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -328,6 +496,13 @@ public class OnPageLighthouseTaskPostRequestInfo  {
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    customUserAgent: ").append(toIndentedString(customUserAgent)).append("\n");
+    sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
+    sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
+    sb.append("    browserScreenScaleFactor: ").append(toIndentedString(browserScreenScaleFactor)).append("\n");
+    sb.append("    browserNetworkThrottlingMethod: ").append(toIndentedString(browserNetworkThrottlingMethod)).append("\n");
+    sb.append("    browserCpuThrottlingMultiplier: ").append(toIndentedString(browserCpuThrottlingMultiplier)).append("\n");
+    sb.append("    browserNetworkThrottling: ").append(toIndentedString(browserNetworkThrottling)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("}");
@@ -366,6 +541,20 @@ public class OnPageLighthouseTaskPostRequestInfo  {
     openapiFields.add("language_name");
     
     openapiFields.add("language_code");
+    
+    openapiFields.add("custom_user_agent");
+    
+    openapiFields.add("browser_screen_width");
+    
+    openapiFields.add("browser_screen_height");
+    
+    openapiFields.add("browser_screen_scale_factor");
+    
+    openapiFields.add("browser_network_throttling_method");
+    
+    openapiFields.add("browser_cpu_throttling_multiplier");
+    
+    openapiFields.add("browser_network_throttling");
     
     openapiFields.add("tag");
     

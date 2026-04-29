@@ -357,8 +357,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

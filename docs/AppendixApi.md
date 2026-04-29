@@ -176,15 +176,9 @@ public class Example {
     basicAuth.setUsername("USERNAME");
     basicAuth.setPassword("PASSWORD");
     AppendixApi apiInstance = new AppendixApi(defaultClient);
-    AppendixWebhookResendResponseInfo response = apiInstance.webhookResend(
-       List.of(
-    
-           new AppendixWebhookResendRequestInfo()
-        
-           .id("08161139-0001-0066-1000-06491d097ed5")
-    
-       )
-    );
+    AppendixWebhookResendRequestInfo model = new AppendixWebhookResendRequestInfo()
+           .id("08161139-0001-0066-1000-06491d097ed5");
+    AppendixWebhookResendResponseInfo response = apiInstance.webhookResend(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
       System.err.println("Exception when calling AppendixApi#webhookResend");

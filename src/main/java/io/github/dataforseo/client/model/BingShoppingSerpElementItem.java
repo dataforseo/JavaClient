@@ -48,7 +48,7 @@ public class BingShoppingSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * title of the result in SERP
+   * title of the item
    * @return title
    */
   @javax.annotation.Nullable
@@ -71,8 +71,7 @@ public class BingShoppingSerpElementItem  extends BaseBingSerpApiElementItem  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * contains results featured in the ‘hotels_pack’ element of SERP
    * @return items
    */
   @javax.annotation.Nullable

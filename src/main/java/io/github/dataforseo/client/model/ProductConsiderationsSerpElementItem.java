@@ -99,7 +99,7 @@ public class ProductConsiderationsSerpElementItem  extends BaseSerpApiElementIte
   }
 
   /**
-   * title of a given link element
+   * reference page title
    * @return title
    */
   @javax.annotation.Nullable
@@ -122,7 +122,7 @@ public class ProductConsiderationsSerpElementItem  extends BaseSerpApiElementIte
   }
 
   /**
-   * contains arrays of elements available in the list
+   * contains arrays of specific images
    * @return items
    */
   @javax.annotation.Nullable

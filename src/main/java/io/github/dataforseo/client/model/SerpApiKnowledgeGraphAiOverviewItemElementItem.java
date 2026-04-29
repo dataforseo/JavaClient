@@ -74,7 +74,8 @@ public class SerpApiKnowledgeGraphAiOverviewItemElementItem  extends BaseSerpApi
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * popular keywords relevant to the initial search query
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable
