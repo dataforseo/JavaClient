@@ -1019,6 +1019,29 @@ public class GoogleBusinessInfo  {
   }
 
 
+  public static final String SERIALIZED_NAME_SERVICES = "services";
+  @SerializedName(SERIALIZED_NAME_SERVICES)
+  private List<Services> services;
+
+  public GoogleBusinessInfo services(List<Services> services) {
+    this.services = services;
+    return this;
+  }
+
+  /**
+   * list of services offered by the business
+   * @return services
+   */
+  @javax.annotation.Nullable
+  public List<Services> getServices() {
+    return services;
+  }
+
+  public void setServices(List<Services> services) {
+    this.services = services;
+  }
+
+
 
   public GoogleBusinessInfo() {
   }
@@ -1102,7 +1125,8 @@ public class GoogleBusinessInfo  {
         Objects.equals(this.popularTimes, googleBusinessInfo.popularTimes) &&
         Objects.equals(this.localBusinessLinks, googleBusinessInfo.localBusinessLinks) &&
         Objects.equals(this.isDirectoryItem, googleBusinessInfo.isDirectoryItem) &&
-        Objects.equals(this.directory, googleBusinessInfo.directory);  
+        Objects.equals(this.directory, googleBusinessInfo.directory) &&
+        Objects.equals(this.services, googleBusinessInfo.services);  
     
   }
 
@@ -1112,7 +1136,7 @@ public class GoogleBusinessInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, title, originalTitle, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, contributorUrl, bookOnlineUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, title, originalTitle, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, contactUrl, contributorUrl, bookOnlineUrl, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, questionsAndAnswersCount, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, isDirectoryItem, directory, services);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1168,6 +1192,7 @@ public class GoogleBusinessInfo  {
     sb.append("    localBusinessLinks: ").append(toIndentedString(localBusinessLinks)).append("\n");
     sb.append("    isDirectoryItem: ").append(toIndentedString(isDirectoryItem)).append("\n");
     sb.append("    directory: ").append(toIndentedString(directory)).append("\n");
+    sb.append("    services: ").append(toIndentedString(services)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -1272,6 +1297,8 @@ public class GoogleBusinessInfo  {
     openapiFields.add("is_directory_item");
     
     openapiFields.add("directory");
+    
+    openapiFields.add("services");
     
 
     // a set of required properties/fields (JSON key names)

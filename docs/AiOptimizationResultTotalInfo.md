@@ -8,7 +8,7 @@
 **location** | **List<GroupElement>** | location-based groupingarray of objects containing mention metrics segmented by geographical location |[optional]|
 **language** | **List<GroupElement>** | language-based groupingarray of objects containing mention metrics segmented by content language |[optional]|
 **platform** | **List<GroupElement>** | platform-based groupingarray of group elements containing mention metrics segmented by AI platform |[optional]|
-**sourcesDomain** | **List<GroupElement>** | found source domains relevant to the targetarray of objects containing data on top domains that are cited as sources in LLM responses |[optional]|
+**sourcesDomain** | **List<GroupElement>** | found source domains relevant to the targetarray of objects containing data on top domains that are cited as sources in LLM responseslearn more about the sources and how to retrieve LLM citation data at our Help Center |[optional]|
 **searchResultsDomain** | **List<GroupElement>** | found search results domains relevant to the targetarray of objects containing data on top domains that appear in search results related to LLM queries |[optional]|
 **brandEntitiesTitle** | **List<GroupElement>** | data on brand entities relevant to the targetarray of objects containing data on brand entity titles that appear in search results related to LLM queries |[optional]|
 **brandEntitiesCategory** | **List<GroupElement>** | data on brand entities relevant to the targetarray of objects containing data on brand entity categories that appear in search results related to LLM queries |[optional]|

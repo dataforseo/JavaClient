@@ -117,7 +117,7 @@ public class AiOptimizationResultTotalInfo  {
   }
 
   /**
-   * found source domains relevant to the targetarray of objects containing data on top domains that are cited as sources in LLM responses
+   * found source domains relevant to the targetarray of objects containing data on top domains that are cited as sources in LLM responseslearn more about the sources and how to retrieve LLM citation data at our Help Center
    * @return sourcesDomain
    */
   @javax.annotation.Nullable

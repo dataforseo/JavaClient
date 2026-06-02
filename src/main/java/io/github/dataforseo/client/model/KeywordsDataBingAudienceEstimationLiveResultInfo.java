@@ -178,9 +178,9 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_SUGGESTED_BID = "suggested_bid";
   @SerializedName(SERIALIZED_NAME_SUGGESTED_BID)
-  private Double suggestedBid;
+  private Integer suggestedBid;
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo suggestedBid(Double suggestedBid) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo suggestedBid(Integer suggestedBid) {
     this.suggestedBid = suggestedBid;
     return this;
   }
@@ -190,11 +190,11 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
    * @return suggestedBid
    */
   @javax.annotation.Nullable
-  public Double getSuggestedBid() {
+  public Integer getSuggestedBid() {
     return suggestedBid;
   }
 
-  public void setSuggestedBid(Double suggestedBid) {
+  public void setSuggestedBid(Integer suggestedBid) {
     this.suggestedBid = suggestedBid;
   }
 

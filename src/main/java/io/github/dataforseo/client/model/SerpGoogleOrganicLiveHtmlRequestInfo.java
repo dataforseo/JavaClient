@@ -48,7 +48,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character '+' will be decoded to a space character)if you need to use the '%' character for your keyword, please specify it as '%25';if you need to use the “+” character for your keyword, please specify it as “%2B”;if this field contains such parameters as 'allinanchor:', 'allintext:', 'allintitle:', 'allinurl:', 'define:', 'filetype:', 'id:', 'inanchor:', 'info:', 'intext:', 'intitle:', 'inurl:', 'link:', 'related:', 'site:', the charge per task will be multiplied by 5Note: queries containing the ‘cache:’ parameter are not supported and will return a validation error
+   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character '+' will be decoded to a space character)if you need to use the '%' character for your keyword, please specify it as '%25';if you need to use the “+” character for your keyword, please specify it as “%2B”;if this field contains such parameters as 'allinanchor:', 'allintext:', 'allintitle:', 'allinurl:', ‘cache:’, 'define:', 'filetype:', 'id:', 'inanchor:', 'info:', 'intext:', 'intitle:', 'inurl:', 'link:', 'related:', 'site:', the charge per task will be multiplied by 5
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -377,7 +377,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
   /**
-   * additional parameters of the search queryoptional fieldget the list of available parameters and additional details here
+   * additional parameters of the search queryoptional fieldget the list of available parameters and additional details hereNote: the following search engine parameters are not supported and will be automatically unset if specified: lr, cr, as_qdr, as_sitesearch, as_occt, as_filetype.
    * @return searchParam
    */
   @javax.annotation.Nullable
@@ -423,7 +423,7 @@ public class SerpGoogleOrganicLiveHtmlRequestInfo  {
   }
 
   /**
-   * direct URL of the search queryoptional fieldyou can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.example:https://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZS
+   * direct URL of the search queryoptional fieldyou can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.example:https://www.google.co.uk/search?q=%20rank%20tracker%20api&hl=en&gl=GB&uule=w+CAIQIFISCXXeIa8LoNhHEZkq1d1aOpZSNote: the following search engine parameters are not supported and will be automatically unset if specified in the URL: lr, cr, as_qdr, as_sitesearch, as_occt, as_filetype.
    * @return url
    */
   @javax.annotation.Nullable

@@ -63,9 +63,9 @@ public class AiOptimizationLlmMentionsAggregatedMetricsLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private Object items;
+  private List<AiOptimizationLlmMentionssLiveItem> items;
 
-  public AiOptimizationLlmMentionsAggregatedMetricsLiveResultInfo items(Object items) {
+  public AiOptimizationLlmMentionsAggregatedMetricsLiveResultInfo items(List<AiOptimizationLlmMentionssLiveItem> items) {
     this.items = items;
     return this;
   }
@@ -75,11 +75,11 @@ public class AiOptimizationLlmMentionsAggregatedMetricsLiveResultInfo  {
    * @return items
    */
   @javax.annotation.Nullable
-  public Object getItems() {
+  public List<AiOptimizationLlmMentionssLiveItem> getItems() {
     return items;
   }
 
-  public void setItems(Object items) {
+  public void setItems(List<AiOptimizationLlmMentionssLiveItem> items) {
     this.items = items;
   }
 

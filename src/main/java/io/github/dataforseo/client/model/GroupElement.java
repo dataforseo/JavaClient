@@ -140,7 +140,7 @@ public class GroupElement  {
   }
 
   /**
-   * current AI impressions rate of a keyword
+   * AI impressions rate of a keyworddeprecated field, the value will be null
    * @return impressions
    */
   @javax.annotation.Nullable

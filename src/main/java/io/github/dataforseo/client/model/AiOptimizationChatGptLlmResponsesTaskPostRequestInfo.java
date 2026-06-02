@@ -140,7 +140,7 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * 
+   * diversity of the AI responseoptional field controls diversity of the response by limiting token selection;minimum value: 0maximum value: 1 default value: 0.92Note:  top_p cannot be used together with temperature in the same request
    * @return topP
    */
   @javax.annotation.Nullable
@@ -150,6 +150,98 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
 
   public void setTopP(Double topP) {
     this.topP = topP;
+  }
+
+
+  public static final String SERIALIZED_NAME_WEB_SEARCH = "web_search";
+  @SerializedName(SERIALIZED_NAME_WEB_SEARCH)
+  private Boolean webSearch;
+
+  public AiOptimizationChatGptLlmResponsesTaskPostRequestInfo webSearch(Boolean webSearch) {
+    this.webSearch = webSearch;
+    return this;
+  }
+
+  /**
+   * enable web searchoptional fieldwhen enabled, the AI model can access and cite current web information;default value: false;Note: refer to the Models endpoint for a list of models that support web_search;
+   * @return webSearch
+   */
+  @javax.annotation.Nullable
+  public Boolean getWebSearch() {
+    return webSearch;
+  }
+
+  public void setWebSearch(Boolean webSearch) {
+    this.webSearch = webSearch;
+  }
+
+
+  public static final String SERIALIZED_NAME_FORCE_WEB_SEARCH = "force_web_search";
+  @SerializedName(SERIALIZED_NAME_FORCE_WEB_SEARCH)
+  private Boolean forceWebSearch;
+
+  public AiOptimizationChatGptLlmResponsesTaskPostRequestInfo forceWebSearch(Boolean forceWebSearch) {
+    this.forceWebSearch = forceWebSearch;
+    return this;
+  }
+
+  /**
+   * force AI agent to use web searchoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model is forced to access and cite current web information;default value: false;Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response Note #2: not supported in reasoning models
+   * @return forceWebSearch
+   */
+  @javax.annotation.Nullable
+  public Boolean getForceWebSearch() {
+    return forceWebSearch;
+  }
+
+  public void setForceWebSearch(Boolean forceWebSearch) {
+    this.forceWebSearch = forceWebSearch;
+  }
+
+
+  public static final String SERIALIZED_NAME_WEB_SEARCH_COUNTRY_ISO_CODE = "web_search_country_iso_code";
+  @SerializedName(SERIALIZED_NAME_WEB_SEARCH_COUNTRY_ISO_CODE)
+  private String webSearchCountryIsoCode;
+
+  public AiOptimizationChatGptLlmResponsesTaskPostRequestInfo webSearchCountryIsoCode(String webSearchCountryIsoCode) {
+    this.webSearchCountryIsoCode = webSearchCountryIsoCode;
+    return this;
+  }
+
+  /**
+   * ISO country code of the locationoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model will search the web from the country you specify;Note: not supported in o3-mini, o1-pro, o1 models
+   * @return webSearchCountryIsoCode
+   */
+  @javax.annotation.Nullable
+  public String getWebSearchCountryIsoCode() {
+    return webSearchCountryIsoCode;
+  }
+
+  public void setWebSearchCountryIsoCode(String webSearchCountryIsoCode) {
+    this.webSearchCountryIsoCode = webSearchCountryIsoCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_WEB_SEARCH_CITY = "web_search_city";
+  @SerializedName(SERIALIZED_NAME_WEB_SEARCH_CITY)
+  private String webSearchCity;
+
+  public AiOptimizationChatGptLlmResponsesTaskPostRequestInfo webSearchCity(String webSearchCity) {
+    this.webSearchCity = webSearchCity;
+    return this;
+  }
+
+  /**
+   * city name of the locationoptional fieldNote: not supported in o3-mini, o1-pro, o1 models
+   * @return webSearchCity
+   */
+  @javax.annotation.Nullable
+  public String getWebSearchCity() {
+    return webSearchCity;
+  }
+
+  public void setWebSearchCity(String webSearchCity) {
+    this.webSearchCity = webSearchCity;
   }
 
 
@@ -325,6 +417,10 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
         Objects.equals(this.maxOutputTokens, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.maxOutputTokens) &&
         Objects.equals(this.temperature, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.temperature) &&
         Objects.equals(this.topP, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.topP) &&
+        Objects.equals(this.webSearch, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.webSearch) &&
+        Objects.equals(this.forceWebSearch, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.forceWebSearch) &&
+        Objects.equals(this.webSearchCountryIsoCode, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.webSearchCountryIsoCode) &&
+        Objects.equals(this.webSearchCity, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.webSearchCity) &&
         Objects.equals(this.systemMessage, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.systemMessage) &&
         Objects.equals(this.messageChain, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.messageChain) &&
         Objects.equals(this.postbackUrl, aiOptimizationChatGptLlmResponsesTaskPostRequestInfo.postbackUrl) &&
@@ -339,7 +435,7 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(userPrompt, modelName, maxOutputTokens, temperature, topP, systemMessage, messageChain, postbackUrl, pingbackUrl, tag);
+  return Objects.hash(userPrompt, modelName, maxOutputTokens, temperature, topP, webSearch, forceWebSearch, webSearchCountryIsoCode, webSearchCity, systemMessage, messageChain, postbackUrl, pingbackUrl, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -359,6 +455,10 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
     sb.append("    maxOutputTokens: ").append(toIndentedString(maxOutputTokens)).append("\n");
     sb.append("    temperature: ").append(toIndentedString(temperature)).append("\n");
     sb.append("    topP: ").append(toIndentedString(topP)).append("\n");
+    sb.append("    webSearch: ").append(toIndentedString(webSearch)).append("\n");
+    sb.append("    forceWebSearch: ").append(toIndentedString(forceWebSearch)).append("\n");
+    sb.append("    webSearchCountryIsoCode: ").append(toIndentedString(webSearchCountryIsoCode)).append("\n");
+    sb.append("    webSearchCity: ").append(toIndentedString(webSearchCity)).append("\n");
     sb.append("    systemMessage: ").append(toIndentedString(systemMessage)).append("\n");
     sb.append("    messageChain: ").append(toIndentedString(messageChain)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
@@ -396,6 +496,14 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
     openapiFields.add("temperature");
     
     openapiFields.add("top_p");
+    
+    openapiFields.add("web_search");
+    
+    openapiFields.add("force_web_search");
+    
+    openapiFields.add("web_search_country_iso_code");
+    
+    openapiFields.add("web_search_city");
     
     openapiFields.add("system_message");
     

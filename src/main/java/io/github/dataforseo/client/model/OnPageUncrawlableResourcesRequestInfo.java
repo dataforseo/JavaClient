@@ -94,7 +94,7 @@ public class OnPageUncrawlableResourcesRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned uncrawlable resourcesoptional fielddefault value: 0if you specify the 10 value, the first ten invalid resources in the results array will be omitted and the data will be provided for the successive invalid resources
+   * offset in the results array of returned uncrawlable resourcesoptional fielddefault value: 0 maximum value: 2000000if you specify the 10 value, the first ten invalid resources in the results array will be omitted and the data will be provided for the successive invalid resources
    * @return offset
    */
   @javax.annotation.Nullable

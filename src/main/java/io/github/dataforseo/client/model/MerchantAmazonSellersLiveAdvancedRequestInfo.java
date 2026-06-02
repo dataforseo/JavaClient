@@ -1,0 +1,444 @@
+package io.github.dataforseo.client.model;
+
+import java.util.Objects;
+import com.google.gson.TypeAdapter;
+import com.google.gson.annotations.JsonAdapter;
+import com.google.gson.annotations.SerializedName;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import org.openapitools.jackson.nullable.JsonNullable;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+import com.google.gson.TypeAdapterFactory;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeAdapter;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
+import java.io.IOException;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import io.github.dataforseo.client.JSON;
+
+
+
+public class MerchantAmazonSellersLiveAdvancedRequestInfo  {
+
+
+  public static final String SERIALIZED_NAME_ASIN = "asin";
+  @SerializedName(SERIALIZED_NAME_ASIN)
+  private String asin;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo asin(String asin) {
+    this.asin = asin;
+    return this;
+  }
+
+  /**
+   * unique product identifier on Amazonrequired fieldyou can get this value making a separate request to the Amazon Products endpointnote that there is no full list of possible values as the asin values is a dynamic value assigned by Amazonexample:B085RFFC9Qlearn more about the identifier in this help center guide
+   * @return asin
+   */
+  @javax.annotation.Nullable
+  public String getAsin() {
+    return asin;
+  }
+
+  public void setAsin(String asin) {
+    this.asin = asin;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * full name of the locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available Amazon locations with their location_name by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locationsexample:London,England,United Kingdom
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_CODE = "location_code";
+  @SerializedName(SERIALIZED_NAME_LOCATION_CODE)
+  private Integer locationCode;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo locationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+    return this;
+  }
+
+  /**
+   * location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available Amazon locations with their location_code by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locationsexample:2840
+   * @return locationCode
+   */
+  @javax.annotation.Nullable
+  public Integer getLocationCode() {
+    return locationCode;
+  }
+
+  public void setLocationCode(Integer locationCode) {
+    this.locationCode = locationCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * GPS coordinates of a locationrequired field if you don't specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,radius' formatthe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'radius': 199.9example:53.476225,-2.243572,200
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * full name of the languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available Amazon languages with their language_name by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languagesexample:English (United States)
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_CODE = "language_code";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_CODE)
+  private String languageCode;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo languageCode(String languageCode) {
+    this.languageCode = languageCode;
+    return this;
+  }
+
+  /**
+   * language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available Amazon languages with their language_code by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languagesexample:en_US
+   * @return languageCode
+   */
+  @javax.annotation.Nullable
+  public String getLanguageCode() {
+    return languageCode;
+  }
+
+  public void setLanguageCode(String languageCode) {
+    this.languageCode = languageCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
+  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
+  private String seDomain;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo seDomain(String seDomain) {
+    this.seDomain = seDomain;
+    return this;
+  }
+
+  /**
+   * search engine domainoptional fieldwe choose the relevant search engine domain automatically according to the location and language you specifyhowever, you can set a custom search engine domain in this fieldexample:amazon.co.uk, amazon.com.au, amazon.de, etc.
+   * @return seDomain
+   */
+  @javax.annotation.Nullable
+  public String getSeDomain() {
+    return seDomain;
+  }
+
+  public void setSeDomain(String seDomain) {
+    this.seDomain = seDomain;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo() {
+  }
+
+  
+    
+  private Map<String, Object> additionalProperties;
+
+  public MerchantAmazonSellersLiveAdvancedRequestInfo putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
+
+  
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+
+
+    
+    MerchantAmazonSellersLiveAdvancedRequestInfo merchantAmazonSellersLiveAdvancedRequestInfo = (MerchantAmazonSellersLiveAdvancedRequestInfo) o;
+    return
+
+        Objects.equals(this.asin, merchantAmazonSellersLiveAdvancedRequestInfo.asin) &&
+        Objects.equals(this.locationName, merchantAmazonSellersLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.locationCode, merchantAmazonSellersLiveAdvancedRequestInfo.locationCode) &&
+        Objects.equals(this.locationCoordinate, merchantAmazonSellersLiveAdvancedRequestInfo.locationCoordinate) &&
+        Objects.equals(this.languageName, merchantAmazonSellersLiveAdvancedRequestInfo.languageName) &&
+        Objects.equals(this.languageCode, merchantAmazonSellersLiveAdvancedRequestInfo.languageCode) &&
+        Objects.equals(this.seDomain, merchantAmazonSellersLiveAdvancedRequestInfo.seDomain) &&
+        Objects.equals(this.tag, merchantAmazonSellersLiveAdvancedRequestInfo.tag);  
+    
+  }
+
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
+  @Override
+  public int hashCode() {
+  return Objects.hash(asin, locationName, locationCode, locationCoordinate, languageName, languageCode, seDomain, tag);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class MerchantAmazonSellersLiveAdvancedRequestInfo {\n");
+
+    sb.append("    asin: ").append(toIndentedString(asin)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
+    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
+    if (o == null) {
+      return "null";
+    }
+    return o.toString().replace("\n", "\n    ");
+  }
+
+
+  public static HashSet<String> openapiFields;
+  public static HashSet<String> openapiRequiredFields;
+
+  static {
+    // a set of all properties/fields (JSON key names)
+    openapiFields = new HashSet<String>();
+    
+    openapiFields.add("asin");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("location_code");
+    
+    openapiFields.add("location_coordinate");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("language_code");
+    
+    openapiFields.add("se_domain");
+    
+    openapiFields.add("tag");
+    
+
+    // a set of required properties/fields (JSON key names)
+    openapiRequiredFields = new HashSet<String>();
+  }
+
+
+  
+
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to MerchantAmazonSellersLiveAdvancedRequestInfo
+   */
+  public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+  }
+
+  public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
+    @SuppressWarnings("unchecked")
+    @Override
+    public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
+       if (!MerchantAmazonSellersLiveAdvancedRequestInfo.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'MerchantAmazonSellersLiveAdvancedRequestInfo' and its subtypes
+       }
+       final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
+       final TypeAdapter<MerchantAmazonSellersLiveAdvancedRequestInfo> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(MerchantAmazonSellersLiveAdvancedRequestInfo.class));
+
+       return (TypeAdapter<T>) new TypeAdapter<MerchantAmazonSellersLiveAdvancedRequestInfo>() {
+           @Override
+           public void write(JsonWriter out, MerchantAmazonSellersLiveAdvancedRequestInfo value) throws IOException {
+             JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
+             elementAdapter.write(out, obj);
+           }
+
+           @Override
+           public MerchantAmazonSellersLiveAdvancedRequestInfo read(JsonReader in) throws IOException {
+             JsonElement jsonElement = elementAdapter.read(in);
+             validateJsonElement(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             MerchantAmazonSellersLiveAdvancedRequestInfo instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
+           }
+
+       }.nullSafe();
+    }
+  }
+
+
+  public static MerchantAmazonSellersLiveAdvancedRequestInfo fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, MerchantAmazonSellersLiveAdvancedRequestInfo.class);
+  }
+
+  public String toJson() {
+    return JSON.getGson().toJson(this);
+  }
+}

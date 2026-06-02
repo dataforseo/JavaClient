@@ -186,7 +186,7 @@ public class AiOptimizationLlmMentionsSearchLiveItem  {
   }
 
   /**
-   * array of sourcesthe sources the model cited or relied on in its final answer
+   * array of sourcesthe sources the model cited or relied on in its final answerlearn more about the sources and how to retrieve LLM citation data at our Help Center
    * @return sources
    */
   @javax.annotation.Nullable

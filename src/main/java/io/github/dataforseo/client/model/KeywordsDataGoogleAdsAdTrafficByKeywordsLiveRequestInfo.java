@@ -123,32 +123,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SEARCH_PARTNERS = "search_partners";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARTNERS)
-  private Boolean searchPartners;
-
-  public KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo searchPartners(Boolean searchPartners) {
-    this.searchPartners = searchPartners;
-    return this;
-  }
-
-  /**
-   * include Google search partners
-* optional field
-* if you specify true, the results will be delivered for owned, operated, and syndicated networks across Google and partner sites that host Google search;
-* default value: false – results are returned for Google search sites
-   * @return searchPartners
-   */
-  @javax.annotation.Nullable
-  public Boolean getSearchPartners() {
-    return searchPartners;
-  }
-
-  public void setSearchPartners(Boolean searchPartners) {
-    this.searchPartners = searchPartners;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
@@ -478,7 +452,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo  {
         Objects.equals(this.keywords, keywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo.keywords) &&
         Objects.equals(this.bid, keywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo.bid) &&
         Objects.equals(this.match, keywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo.match) &&
-        Objects.equals(this.searchPartners, keywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo.searchPartners) &&
         Objects.equals(this.locationName, keywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo.locationName) &&
         Objects.equals(this.locationCode, keywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, keywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo.locationCoordinate) &&
@@ -498,7 +471,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keywords, bid, match, searchPartners, locationName, locationCode, locationCoordinate, languageName, languageCode, dateFrom, dateTo, dateInterval, sortBy, tag);
+  return Objects.hash(keywords, bid, match, locationName, locationCode, locationCoordinate, languageName, languageCode, dateFrom, dateTo, dateInterval, sortBy, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -516,7 +489,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo  {
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");
     sb.append("    bid: ").append(toIndentedString(bid)).append("\n");
     sb.append("    match: ").append(toIndentedString(match)).append("\n");
-    sb.append("    searchPartners: ").append(toIndentedString(searchPartners)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
@@ -555,8 +527,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveRequestInfo  {
     openapiFields.add("bid");
     
     openapiFields.add("match");
-    
-    openapiFields.add("search_partners");
     
     openapiFields.add("location_name");
     

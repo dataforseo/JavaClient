@@ -38,6 +38,98 @@ import io.github.dataforseo.client.JSON;
 public class DeliveryInfo  {
 
 
+  public static final String SERIALIZED_NAME_DELIVERY_DATE_FROM = "delivery_date_from";
+  @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_FROM)
+  private String deliveryDateFrom;
+
+  public DeliveryInfo deliveryDateFrom(String deliveryDateFrom) {
+    this.deliveryDateFrom = deliveryDateFrom;
+    return this;
+  }
+
+  /**
+   * earliest delivery datethe earliest date when the product can be shipped
+   * @return deliveryDateFrom
+   */
+  @javax.annotation.Nullable
+  public String getDeliveryDateFrom() {
+    return deliveryDateFrom;
+  }
+
+  public void setDeliveryDateFrom(String deliveryDateFrom) {
+    this.deliveryDateFrom = deliveryDateFrom;
+  }
+
+
+  public static final String SERIALIZED_NAME_DELIVERY_DATE_TO = "delivery_date_to";
+  @SerializedName(SERIALIZED_NAME_DELIVERY_DATE_TO)
+  private String deliveryDateTo;
+
+  public DeliveryInfo deliveryDateTo(String deliveryDateTo) {
+    this.deliveryDateTo = deliveryDateTo;
+    return this;
+  }
+
+  /**
+   * latest delivery datethe latest date when the product can be delivered
+   * @return deliveryDateTo
+   */
+  @javax.annotation.Nullable
+  public String getDeliveryDateTo() {
+    return deliveryDateTo;
+  }
+
+  public void setDeliveryDateTo(String deliveryDateTo) {
+    this.deliveryDateTo = deliveryDateTo;
+  }
+
+
+  public static final String SERIALIZED_NAME_FASTEST_DELIVERY_DATE_FROM = "fastest_delivery_date_from";
+  @SerializedName(SERIALIZED_NAME_FASTEST_DELIVERY_DATE_FROM)
+  private String fastestDeliveryDateFrom;
+
+  public DeliveryInfo fastestDeliveryDateFrom(String fastestDeliveryDateFrom) {
+    this.fastestDeliveryDateFrom = fastestDeliveryDateFrom;
+    return this;
+  }
+
+  /**
+   * earliest free delivery datethe earliest date when the product can be delivered with a fast delivery option
+   * @return fastestDeliveryDateFrom
+   */
+  @javax.annotation.Nullable
+  public String getFastestDeliveryDateFrom() {
+    return fastestDeliveryDateFrom;
+  }
+
+  public void setFastestDeliveryDateFrom(String fastestDeliveryDateFrom) {
+    this.fastestDeliveryDateFrom = fastestDeliveryDateFrom;
+  }
+
+
+  public static final String SERIALIZED_NAME_FASTEST_DELIVERY_DATE_TO = "fastest_delivery_date_to";
+  @SerializedName(SERIALIZED_NAME_FASTEST_DELIVERY_DATE_TO)
+  private String fastestDeliveryDateTo;
+
+  public DeliveryInfo fastestDeliveryDateTo(String fastestDeliveryDateTo) {
+    this.fastestDeliveryDateTo = fastestDeliveryDateTo;
+    return this;
+  }
+
+  /**
+   * latest free delivery datethe latest date when the product can be delivered with a fast delivery option
+   * @return fastestDeliveryDateTo
+   */
+  @javax.annotation.Nullable
+  public String getFastestDeliveryDateTo() {
+    return fastestDeliveryDateTo;
+  }
+
+  public void setFastestDeliveryDateTo(String fastestDeliveryDateTo) {
+    this.fastestDeliveryDateTo = fastestDeliveryDateTo;
+  }
+
+
   public static final String SERIALIZED_NAME_DELIVERY_MESSAGE = "delivery_message";
   @SerializedName(SERIALIZED_NAME_DELIVERY_MESSAGE)
   private String deliveryMessage;
@@ -48,8 +140,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * delivery information
-* message accompanying the delivery information as posted by the seller
+   * delivery informationmessage accompanying the delivery information as posted by the seller
    * @return deliveryMessage
    */
   @javax.annotation.Nullable
@@ -72,9 +163,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * price for the delivery
-* price of the delivery based on the location you specified in the POST request;
-* if free delivery is available, the value is null
+   * price for the deliveryprice of the delivery based on the location you specified in the POST request;if free delivery is available, the value is null
    * @return deliveryPrice
    */
   @javax.annotation.Nullable
@@ -130,6 +219,10 @@ public class DeliveryInfo  {
     DeliveryInfo deliveryInfo = (DeliveryInfo) o;
     return
 
+        Objects.equals(this.deliveryDateFrom, deliveryInfo.deliveryDateFrom) &&
+        Objects.equals(this.deliveryDateTo, deliveryInfo.deliveryDateTo) &&
+        Objects.equals(this.fastestDeliveryDateFrom, deliveryInfo.fastestDeliveryDateFrom) &&
+        Objects.equals(this.fastestDeliveryDateTo, deliveryInfo.fastestDeliveryDateTo) &&
         Objects.equals(this.deliveryMessage, deliveryInfo.deliveryMessage) &&
         Objects.equals(this.deliveryPrice, deliveryInfo.deliveryPrice);  
     
@@ -141,7 +234,7 @@ public class DeliveryInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(deliveryMessage, deliveryPrice);
+  return Objects.hash(deliveryDateFrom, deliveryDateTo, fastestDeliveryDateFrom, fastestDeliveryDateTo, deliveryMessage, deliveryPrice);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -156,6 +249,10 @@ public class DeliveryInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class DeliveryInfo {\n");
 
+    sb.append("    deliveryDateFrom: ").append(toIndentedString(deliveryDateFrom)).append("\n");
+    sb.append("    deliveryDateTo: ").append(toIndentedString(deliveryDateTo)).append("\n");
+    sb.append("    fastestDeliveryDateFrom: ").append(toIndentedString(fastestDeliveryDateFrom)).append("\n");
+    sb.append("    fastestDeliveryDateTo: ").append(toIndentedString(fastestDeliveryDateTo)).append("\n");
     sb.append("    deliveryMessage: ").append(toIndentedString(deliveryMessage)).append("\n");
     sb.append("    deliveryPrice: ").append(toIndentedString(deliveryPrice)).append("\n");
     sb.append("}");
@@ -180,6 +277,14 @@ public class DeliveryInfo  {
   static {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
+    
+    openapiFields.add("delivery_date_from");
+    
+    openapiFields.add("delivery_date_to");
+    
+    openapiFields.add("fastest_delivery_date_from");
+    
+    openapiFields.add("fastest_delivery_date_to");
     
     openapiFields.add("delivery_message");
     

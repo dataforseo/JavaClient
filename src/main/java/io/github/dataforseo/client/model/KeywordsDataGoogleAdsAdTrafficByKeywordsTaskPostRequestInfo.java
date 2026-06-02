@@ -124,32 +124,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_SEARCH_PARTNERS = "search_partners";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARTNERS)
-  private Boolean searchPartners;
-
-  public KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo searchPartners(Boolean searchPartners) {
-    this.searchPartners = searchPartners;
-    return this;
-  }
-
-  /**
-   * include Google search partners
-* optional field
-* if you specify true, the results will be delivered for owned, operated, and syndicated networks across Google and partner sites that host Google search;
-* default value: false – results are returned for Google search sites
-   * @return searchPartners
-   */
-  @javax.annotation.Nullable
-  public Boolean getSearchPartners() {
-    return searchPartners;
-  }
-
-  public void setSearchPartners(Boolean searchPartners) {
-    this.searchPartners = searchPartners;
-  }
-
-
   public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
   @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
   private String locationName;
@@ -392,7 +366,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
   /**
    * results sorting parameters
 * optional field
-* Use these parameters to sort the results by relevance, impressions, ctr, average_cpc, cost, or clicks in the descending order
+* Use these parameters to sort the results by relevance, average_cpc, cost, or clicks in the descending order
 * default value: relevance
    * @return sortBy
    */
@@ -543,7 +517,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
         Objects.equals(this.keywords, keywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.keywords) &&
         Objects.equals(this.bid, keywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.bid) &&
         Objects.equals(this.match, keywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.match) &&
-        Objects.equals(this.searchPartners, keywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.searchPartners) &&
         Objects.equals(this.locationName, keywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.locationName) &&
         Objects.equals(this.locationCode, keywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.locationCode) &&
         Objects.equals(this.locationCoordinate, keywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo.locationCoordinate) &&
@@ -565,7 +538,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keywords, bid, match, searchPartners, locationName, locationCode, locationCoordinate, languageName, languageCode, dateFrom, dateTo, dateInterval, sortBy, postbackUrl, pingbackUrl, tag);
+  return Objects.hash(keywords, bid, match, locationName, locationCode, locationCoordinate, languageName, languageCode, dateFrom, dateTo, dateInterval, sortBy, postbackUrl, pingbackUrl, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -583,7 +556,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
     sb.append("    keywords: ").append(toIndentedString(keywords)).append("\n");
     sb.append("    bid: ").append(toIndentedString(bid)).append("\n");
     sb.append("    match: ").append(toIndentedString(match)).append("\n");
-    sb.append("    searchPartners: ").append(toIndentedString(searchPartners)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
@@ -624,8 +596,6 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsTaskPostRequestInfo  {
     openapiFields.add("bid");
     
     openapiFields.add("match");
-    
-    openapiFields.add("search_partners");
     
     openapiFields.add("location_name");
     

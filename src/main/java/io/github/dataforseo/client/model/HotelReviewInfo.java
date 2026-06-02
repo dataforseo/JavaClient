@@ -144,7 +144,7 @@ public class HotelReviewInfo  {
 
   /**
    * reviews on third-party sites
-* reviews from third-paty sites
+* reviews from third-party sites
    * @return otherSitesReviews
    */
   @javax.annotation.Nullable

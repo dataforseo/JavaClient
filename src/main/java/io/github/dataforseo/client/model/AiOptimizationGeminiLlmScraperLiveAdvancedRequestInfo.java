@@ -71,7 +71,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine locationrequired field if you don't specify location_codeif you use this field, you don't need to specify location_codeyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locationsexample:United States
+   * full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locationsexample:United States
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_nameif you use this field, you don't need to specify location_nameyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locationsexample:2840
+   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_scraper/locationsexample:2840
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -104,6 +104,29 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
 
   public void setLocationCode(Integer locationCode) {
     this.locationCode = locationCode;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * GPS coordinates of a locationrequired field if you don't specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,radius' formatthe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'radius': 199 (mm)the maximum value for 'radius': 199999 (mm)example:53.476225,-2.243572,200
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
   }
 
 
@@ -222,6 +245,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
         Objects.equals(this.keyword, aiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo.keyword) &&
         Objects.equals(this.locationName, aiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo.locationName) &&
         Objects.equals(this.locationCode, aiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo.locationCode) &&
+        Objects.equals(this.locationCoordinate, aiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo.locationCoordinate) &&
         Objects.equals(this.languageName, aiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo.languageName) &&
         Objects.equals(this.languageCode, aiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo.languageCode) &&
         Objects.equals(this.tag, aiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo.tag);  
@@ -234,7 +258,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationName, locationCode, languageName, languageCode, tag);
+  return Objects.hash(keyword, locationName, locationCode, locationCoordinate, languageName, languageCode, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -252,6 +276,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
     sb.append("    keyword: ").append(toIndentedString(keyword)).append("\n");
     sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -283,6 +308,8 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedRequestInfo  {
     openapiFields.add("location_name");
     
     openapiFields.add("location_code");
+    
+    openapiFields.add("location_coordinate");
     
     openapiFields.add("language_name");
     

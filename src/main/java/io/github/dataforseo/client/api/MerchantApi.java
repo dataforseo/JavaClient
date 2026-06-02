@@ -37,17 +37,29 @@ import io.github.dataforseo.client.model.MerchantAmazonProductsTaskPostRequestIn
 import io.github.dataforseo.client.model.MerchantAmazonProductsTaskPostResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonProductsTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonProductsTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.MerchantAmazonProductsLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.MerchantAmazonProductsLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonProductsTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.MerchantAmazonProductsLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.MerchantAmazonProductsLiveHtmlResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonAsinTaskPostRequestInfo;
 import io.github.dataforseo.client.model.MerchantAmazonAsinTaskPostResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonAsinTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonAsinTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.MerchantAmazonAsinLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.MerchantAmazonAsinLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonAsinTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.MerchantAmazonAsinLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.MerchantAmazonAsinLiveHtmlResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonSellersTaskPostRequestInfo;
 import io.github.dataforseo.client.model.MerchantAmazonSellersTaskPostResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonSellersTasksReadyResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonSellersTaskGetAdvancedResponseInfo;
+import io.github.dataforseo.client.model.MerchantAmazonSellersLiveAdvancedRequestInfo;
+import io.github.dataforseo.client.model.MerchantAmazonSellersLiveAdvancedResponseInfo;
 import io.github.dataforseo.client.model.MerchantAmazonSellersTaskGetHtmlResponseInfo;
+import io.github.dataforseo.client.model.MerchantAmazonSellersLiveHtmlRequestInfo;
+import io.github.dataforseo.client.model.MerchantAmazonSellersLiveHtmlResponseInfo;
 
 import io.github.dataforseo.client.ApiCallback;
 import io.github.dataforseo.client.ApiClient;
@@ -1781,6 +1793,76 @@ public class MerchantApi {
        return localVarCall;
     }
 
+    public okhttp3.Call amazonProductsLiveAdvancedCall(List<MerchantAmazonProductsLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/merchant/amazon/products/live/advanced";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call amazonProductsLiveAdvancedValidateBeforeCall(List<MerchantAmazonProductsLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return amazonProductsLiveAdvancedCall(payload, _callback);
+ 
+        }
+ 
+        public MerchantAmazonProductsLiveAdvancedResponseInfo amazonProductsLiveAdvanced(List<MerchantAmazonProductsLiveAdvancedRequestInfo> payload) throws ApiException {
+            ApiResponse<MerchantAmazonProductsLiveAdvancedResponseInfo> localVarResp = amazonProductsLiveAdvancedWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<MerchantAmazonProductsLiveAdvancedResponseInfo> amazonProductsLiveAdvancedWithHttpInfo(List<MerchantAmazonProductsLiveAdvancedRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = amazonProductsLiveAdvancedValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<MerchantAmazonProductsLiveAdvancedResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call amazonProductsLiveAdvancedAsync(List<MerchantAmazonProductsLiveAdvancedRequestInfo> payload, final ApiCallback<MerchantAmazonProductsLiveAdvancedResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = amazonProductsLiveAdvancedValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<MerchantAmazonProductsLiveAdvancedResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
     public okhttp3.Call amazonProductsTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
@@ -1857,6 +1939,76 @@ public class MerchantApi {
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
+
+    public okhttp3.Call amazonProductsLiveHtmlCall(List<MerchantAmazonProductsLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/merchant/amazon/products/live/html";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call amazonProductsLiveHtmlValidateBeforeCall(List<MerchantAmazonProductsLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return amazonProductsLiveHtmlCall(payload, _callback);
+ 
+        }
+ 
+        public MerchantAmazonProductsLiveHtmlResponseInfo amazonProductsLiveHtml(List<MerchantAmazonProductsLiveHtmlRequestInfo> payload) throws ApiException {
+            ApiResponse<MerchantAmazonProductsLiveHtmlResponseInfo> localVarResp = amazonProductsLiveHtmlWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<MerchantAmazonProductsLiveHtmlResponseInfo> amazonProductsLiveHtmlWithHttpInfo(List<MerchantAmazonProductsLiveHtmlRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = amazonProductsLiveHtmlValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<MerchantAmazonProductsLiveHtmlResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call amazonProductsLiveHtmlAsync(List<MerchantAmazonProductsLiveHtmlRequestInfo> payload, final ApiCallback<MerchantAmazonProductsLiveHtmlResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = amazonProductsLiveHtmlValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<MerchantAmazonProductsLiveHtmlResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
 
     public okhttp3.Call amazonAsinTaskPostCall(List<MerchantAmazonAsinTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
            String basePath = null;
@@ -2077,6 +2229,76 @@ public class MerchantApi {
        return localVarCall;
     }
 
+    public okhttp3.Call amazonAsinLiveAdvancedCall(List<MerchantAmazonAsinLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/merchant/amazon/asin/live/advanced";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call amazonAsinLiveAdvancedValidateBeforeCall(List<MerchantAmazonAsinLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return amazonAsinLiveAdvancedCall(payload, _callback);
+ 
+        }
+ 
+        public MerchantAmazonAsinLiveAdvancedResponseInfo amazonAsinLiveAdvanced(List<MerchantAmazonAsinLiveAdvancedRequestInfo> payload) throws ApiException {
+            ApiResponse<MerchantAmazonAsinLiveAdvancedResponseInfo> localVarResp = amazonAsinLiveAdvancedWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<MerchantAmazonAsinLiveAdvancedResponseInfo> amazonAsinLiveAdvancedWithHttpInfo(List<MerchantAmazonAsinLiveAdvancedRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = amazonAsinLiveAdvancedValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<MerchantAmazonAsinLiveAdvancedResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call amazonAsinLiveAdvancedAsync(List<MerchantAmazonAsinLiveAdvancedRequestInfo> payload, final ApiCallback<MerchantAmazonAsinLiveAdvancedResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = amazonAsinLiveAdvancedValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<MerchantAmazonAsinLiveAdvancedResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
     public okhttp3.Call amazonAsinTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
@@ -2153,6 +2375,76 @@ public class MerchantApi {
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
+
+    public okhttp3.Call amazonAsinLiveHtmlCall(List<MerchantAmazonAsinLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/merchant/amazon/asin/live/html";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call amazonAsinLiveHtmlValidateBeforeCall(List<MerchantAmazonAsinLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return amazonAsinLiveHtmlCall(payload, _callback);
+ 
+        }
+ 
+        public MerchantAmazonAsinLiveHtmlResponseInfo amazonAsinLiveHtml(List<MerchantAmazonAsinLiveHtmlRequestInfo> payload) throws ApiException {
+            ApiResponse<MerchantAmazonAsinLiveHtmlResponseInfo> localVarResp = amazonAsinLiveHtmlWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<MerchantAmazonAsinLiveHtmlResponseInfo> amazonAsinLiveHtmlWithHttpInfo(List<MerchantAmazonAsinLiveHtmlRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = amazonAsinLiveHtmlValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<MerchantAmazonAsinLiveHtmlResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call amazonAsinLiveHtmlAsync(List<MerchantAmazonAsinLiveHtmlRequestInfo> payload, final ApiCallback<MerchantAmazonAsinLiveHtmlResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = amazonAsinLiveHtmlValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<MerchantAmazonAsinLiveHtmlResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
 
     public okhttp3.Call amazonSellersTaskPostCall(List<MerchantAmazonSellersTaskPostRequestInfo> payload, final ApiCallback _callback) throws ApiException {
            String basePath = null;
@@ -2373,6 +2665,76 @@ public class MerchantApi {
        return localVarCall;
     }
 
+    public okhttp3.Call amazonSellersLiveAdvancedCall(List<MerchantAmazonSellersLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/merchant/amazon/sellers/live/advanced";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call amazonSellersLiveAdvancedValidateBeforeCall(List<MerchantAmazonSellersLiveAdvancedRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return amazonSellersLiveAdvancedCall(payload, _callback);
+ 
+        }
+ 
+        public MerchantAmazonSellersLiveAdvancedResponseInfo amazonSellersLiveAdvanced(List<MerchantAmazonSellersLiveAdvancedRequestInfo> payload) throws ApiException {
+            ApiResponse<MerchantAmazonSellersLiveAdvancedResponseInfo> localVarResp = amazonSellersLiveAdvancedWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<MerchantAmazonSellersLiveAdvancedResponseInfo> amazonSellersLiveAdvancedWithHttpInfo(List<MerchantAmazonSellersLiveAdvancedRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = amazonSellersLiveAdvancedValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<MerchantAmazonSellersLiveAdvancedResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call amazonSellersLiveAdvancedAsync(List<MerchantAmazonSellersLiveAdvancedRequestInfo> payload, final ApiCallback<MerchantAmazonSellersLiveAdvancedResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = amazonSellersLiveAdvancedValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<MerchantAmazonSellersLiveAdvancedResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
+
     public okhttp3.Call amazonSellersTaskGetHtmlCall( String id,  final ApiCallback _callback) throws ApiException {
        String basePath = null;
        // Operation Servers
@@ -2449,6 +2811,76 @@ public class MerchantApi {
        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
        return localVarCall;
     }
+
+    public okhttp3.Call amazonSellersLiveHtmlCall(List<MerchantAmazonSellersLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+           String basePath = null;
+           // Operation Servers
+           String[] localBasePaths = new String[] {  };
+
+           // Determine Base Path to Use
+           if (localCustomBaseUrl != null){
+               basePath = localCustomBaseUrl;
+           } else if ( localBasePaths.length > 0 ) {
+               basePath = localBasePaths[localHostIndex];
+           } else {
+               basePath = null;
+           }
+
+           Object localVarPostBody = payload;
+
+           // create path and map variables
+           String localVarPath = "/v3/merchant/amazon/sellers/live/html";
+
+           List<Pair> localVarQueryParams = new ArrayList<Pair>();
+           List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+           Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+           Map<String, String> localVarCookieParams = new HashMap<String, String>();
+           Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+           final String[] localVarAccepts = {
+               "application/json"
+           };
+           final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+           if (localVarAccept != null) {
+               localVarHeaderParams.put("Accept", localVarAccept);
+           }
+
+           final String[] localVarContentTypes = {
+               "application/json"
+           };
+           final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+           if (localVarContentType != null) {
+               localVarHeaderParams.put("Content-Type", localVarContentType);
+           }
+
+           String[] localVarAuthNames = new String[] { "basicAuth" };
+           return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+       }
+
+        @SuppressWarnings("rawtypes")
+        private okhttp3.Call amazonSellersLiveHtmlValidateBeforeCall(List<MerchantAmazonSellersLiveHtmlRequestInfo> payload, final ApiCallback _callback) throws ApiException {
+            return amazonSellersLiveHtmlCall(payload, _callback);
+ 
+        }
+ 
+        public MerchantAmazonSellersLiveHtmlResponseInfo amazonSellersLiveHtml(List<MerchantAmazonSellersLiveHtmlRequestInfo> payload) throws ApiException {
+            ApiResponse<MerchantAmazonSellersLiveHtmlResponseInfo> localVarResp = amazonSellersLiveHtmlWithHttpInfo(payload);
+            return localVarResp.getData();
+        }
+ 
+        public ApiResponse<MerchantAmazonSellersLiveHtmlResponseInfo> amazonSellersLiveHtmlWithHttpInfo(List<MerchantAmazonSellersLiveHtmlRequestInfo> payload) throws ApiException {
+            okhttp3.Call localVarCall = amazonSellersLiveHtmlValidateBeforeCall(payload, null);
+            Type localVarReturnType = new TypeToken<MerchantAmazonSellersLiveHtmlResponseInfo>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
+        }
+ 
+        public okhttp3.Call amazonSellersLiveHtmlAsync(List<MerchantAmazonSellersLiveHtmlRequestInfo> payload, final ApiCallback<MerchantAmazonSellersLiveHtmlResponseInfo> _callback) throws ApiException {
+ 
+            okhttp3.Call localVarCall = amazonSellersLiveHtmlValidateBeforeCall(payload, _callback);
+            Type localVarReturnType = new TypeToken<MerchantAmazonSellersLiveHtmlResponseInfo>(){}.getType();
+            localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+            return localVarCall;
+        }
 
 
 }

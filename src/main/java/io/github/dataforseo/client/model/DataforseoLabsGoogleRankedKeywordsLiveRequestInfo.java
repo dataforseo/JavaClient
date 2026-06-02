@@ -50,8 +50,9 @@ public class DataforseoLabsGoogleRankedKeywordsLiveRequestInfo  {
   /**
    * domain name or page url
 * required field
-* the domain name of the target website or URL of the target webpage;
+* the domain name of the target website, subdomain or URL of the target webpage;
 * the domain name must be specified without https:// or www.;
+* the subdomain must be specified without https://;
 * the webpage URL must be specified with https:// or www.
 * Note: if you specify the webpage URL without https:// or www., the result will be returned for the entire domain rather than the specific page
    * @return target

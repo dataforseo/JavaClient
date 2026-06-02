@@ -237,9 +237,7 @@ public class OnPageLighthouseTaskGetJsonTaskInfo  {
   }
 
   /**
-   * results of Lighthouse audit
-* this array will include data according to the parameters specified in the POST request;
-* description of the fields in the result array is available in the official documentation
+   * 
    * @return result
    */
   @javax.annotation.Nullable

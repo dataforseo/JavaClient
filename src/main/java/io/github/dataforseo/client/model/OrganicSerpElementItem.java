@@ -592,7 +592,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   /**
    * frequently asked questions
 * questions and answers extension shown below some of Google’s search results
-* if there are none, equals null
+* Note: this object is deprecated and always returns null
    * @return faq
    */
   @javax.annotation.Nullable
