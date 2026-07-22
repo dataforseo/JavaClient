@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo  {
 
 
@@ -248,7 +247,7 @@ public class DataforseoLabsGoogleHistoricalBulkTrafficEstimationLiveRequestInfo 
   /**
    * ignore highly similar keywords
 * optional field
-* if set to true, only core keywords will be returned, all highly similar keywords will be excluded;
+* if set to true only core keywords will be returned, all highly similar keywords will be excluded;
 * default value: false
    * @return ignoreSynonyms
    */

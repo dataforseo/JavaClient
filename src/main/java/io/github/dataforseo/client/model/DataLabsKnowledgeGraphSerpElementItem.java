@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsApiElementItem  {
 
 
@@ -140,7 +139,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * sitelink URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class DataLabsKnowledgeGraphSerpElementItem  extends BaseDataforseoLabsAp
   }
 
   /**
-   * URL of a specific image
+   * URL of the image from knowledge graph
    * @return imageUrl
    */
   @javax.annotation.Nullable

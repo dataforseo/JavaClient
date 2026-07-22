@@ -34,7 +34,10 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
+/**
+ * @deprecated
+ */
+@Deprecated
 public class GooglePostsSerpElementItem  extends BaseSerpApiElementItem  {
 
 

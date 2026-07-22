@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BusinessDataBusinessListingsSearchLiveResultInfo  {
 
 
@@ -95,7 +94,7 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo  {
   }
 
   /**
-   * offset in the results array of returned businesses
+   * 
    * @return offset
    */
   @javax.annotation.Nullable
@@ -118,9 +117,7 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo  {
   }
 
   /**
-   * token for subsequent requests
-* by specifying the unique offset_token when setting a new task, you will get the subsequent results of the initial task;
-* offset_token values are unique for each subsequent task
+   * 
    * @return offsetToken
    */
   @javax.annotation.Nullable

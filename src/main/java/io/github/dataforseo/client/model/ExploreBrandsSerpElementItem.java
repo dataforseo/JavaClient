@@ -34,7 +34,10 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
+/**
+ * @deprecated
+ */
+@Deprecated
 public class ExploreBrandsSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +102,7 @@ public class ExploreBrandsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -122,7 +125,7 @@ public class ExploreBrandsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

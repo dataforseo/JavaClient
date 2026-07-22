@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingProductsElementItem  {
 
 
@@ -48,9 +47,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * domain of the URL
-* domain of the URL where a special offer is posted
-* Note: this field is deprecated and will return null
+   * domain of the URLdomain of the URL where a special offer is postedNote: this field is deprecated and will return null
    * @return domain
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * URL pointing at special offer page
-* URL where a special offer is posted
-* Note: this field is deprecated and will return null
+   * URL pointing at special offer pageURL where a special offer is postedNote: this field is deprecated and will return null
    * @return url
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * unique ad click referral parameter
-* using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+   * unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
    * @return shopAdAclk
    */
   @javax.annotation.Nullable

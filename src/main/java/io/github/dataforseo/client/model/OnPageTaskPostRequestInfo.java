@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OnPageTaskPostRequestInfo  {
 
 
@@ -800,7 +799,6 @@ public class OnPageTaskPostRequestInfo  {
 * 'test': 'test'
 * }
 * Note: the length of the script you enter must be no more than 2000 characters
-* Note: if you use this parameter, additional charges will apply; learn more about the cost of tasks with this parameter in our help article; the cost can be calculated on the Pricing Page
    * @return customJs
    */
   @javax.annotation.Nullable

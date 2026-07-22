@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpApiProductConsiderationExpandedElementItem  {
 
 
@@ -48,7 +47,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * title of the row
+   * title of the carousel item
    * @return title
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * text alongside the title
+   * text alongside the link title
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * domain where a link points
+   * source domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
   }
 
   /**
-   * URL of element
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -226,6 +225,7 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
 
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
   private AboutThisResultElement aboutThisResult;
 
@@ -236,15 +236,17 @@ public class SerpApiProductConsiderationsExpandedElementItem  extends BaseSerpAp
 
   /**
    * contains information from the ‘About this result’ panel
-* ‘About this result’ panel provides additional context about why Google returned this result for the given query;
-* this feature appears after clicking on the three dots next to most results
+* Note: element no longer appears in SERP and has been deprecated in SERP API
+   * @deprecated
    * @return aboutThisResult
    */
   @javax.annotation.Nullable
+  @Deprecated
   public AboutThisResultElement getAboutThisResult() {
     return aboutThisResult;
   }
 
+  @Deprecated
   public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }

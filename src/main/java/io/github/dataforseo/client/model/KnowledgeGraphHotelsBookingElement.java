@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphHotelsBookingElement  {
 
 
@@ -71,7 +70,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * source of additional information about the result
+   * name of the source of the video
    * @return source
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * relevant URL
+   * image source URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class KnowledgeGraphHotelsBookingElement  {
   }
 
   /**
-   * domain where a link points
+   * website domain
    * @return domain
    */
   @javax.annotation.Nullable

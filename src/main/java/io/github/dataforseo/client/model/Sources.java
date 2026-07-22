@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class Sources  {
 
 
@@ -117,7 +116,8 @@ public class Sources  {
   }
 
   /**
-   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
+   * content of the element in markdown format
+* content of the result formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -130,26 +130,26 @@ public class Sources  {
   }
 
 
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private Integer position;
+  public static final String SERIALIZED_NAME_RANK = "rank";
+  @SerializedName(SERIALIZED_NAME_RANK)
+  private Integer rank;
 
-  public Sources position(Integer position) {
-    this.position = position;
+  public Sources rank(Integer rank) {
+    this.rank = rank;
     return this;
   }
 
   /**
-   * position in the results
-   * @return position
+   * rank in the results
+   * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getPosition() {
-    return position;
+  public Integer getRank() {
+    return rank;
   }
 
-  public void setPosition(Integer position) {
-    this.position = position;
+  public void setRank(Integer rank) {
+    this.rank = rank;
   }
 
 
@@ -232,7 +232,10 @@ public class Sources  {
   }
 
   /**
-   * date and time when the result was publishedin the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”example:2019-11-15 12:57:46 +00:00
+   * date and time when the result was published
+* in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
+* example:
+* 2019-11-15 12:57:46 +00:00
    * @return publicationDate
    */
   @javax.annotation.Nullable
@@ -292,7 +295,7 @@ public class Sources  {
         Objects.equals(this.sourceName, sources.sourceName) &&
         Objects.equals(this.thumbnail, sources.thumbnail) &&
         Objects.equals(this.markdown, sources.markdown) &&
-        Objects.equals(this.position, sources.position) &&
+        Objects.equals(this.rank, sources.rank) &&
         Objects.equals(this.title, sources.title) &&
         Objects.equals(this.domain, sources.domain) &&
         Objects.equals(this.url, sources.url) &&
@@ -306,7 +309,7 @@ public class Sources  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(snippet, sourceName, thumbnail, markdown, position, title, domain, url, publicationDate);
+  return Objects.hash(snippet, sourceName, thumbnail, markdown, rank, title, domain, url, publicationDate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -325,7 +328,7 @@ public class Sources  {
     sb.append("    sourceName: ").append(toIndentedString(sourceName)).append("\n");
     sb.append("    thumbnail: ").append(toIndentedString(thumbnail)).append("\n");
     sb.append("    markdown: ").append(toIndentedString(markdown)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    rank: ").append(toIndentedString(rank)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -361,7 +364,7 @@ public class Sources  {
     
     openapiFields.add("markdown");
     
-    openapiFields.add("position");
+    openapiFields.add("rank");
     
     openapiFields.add("title");
     

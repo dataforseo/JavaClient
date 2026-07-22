@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerpApiKnowledgeGraphElementItem  {
 
 
@@ -197,7 +196,7 @@ public class SerpApiKnowledgeGraphHotelsBookingItemElementItem  extends BaseSerp
   }
 
   /**
-   * keywords relevant to the initial search query
+   * popular keywords relevant to the initial search query
 * if there are none, equals null
    * @return items
    */

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OnPageUncrawlableResourcesResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class OnPageUncrawlableResourcesResultInfo  {
   }
 
   /**
-   * status of the crawling sessionpossible values: in_progress, finished
+   * status of the crawling session
+* possible values: in_progress, finished
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -117,7 +117,8 @@ public class OnPageUncrawlableResourcesResultInfo  {
   }
 
   /**
-   * total number of uncrawlable resources found total number of uncrawlable resources found during the crawl of the target domain
+   * total number of uncrawlable resources found
+*  total number of uncrawlable resources found during the crawl of the target domain
    * @return totalItemsCount
    */
   @javax.annotation.Nullable

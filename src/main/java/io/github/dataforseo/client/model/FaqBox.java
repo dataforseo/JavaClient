@@ -34,7 +34,10 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
+/**
+ * @deprecated
+ */
+@Deprecated
 public class FaqBox  {
 
 
@@ -71,8 +74,7 @@ public class FaqBox  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * contains arrays of specific images
    * @return items
    */
   @javax.annotation.Nullable

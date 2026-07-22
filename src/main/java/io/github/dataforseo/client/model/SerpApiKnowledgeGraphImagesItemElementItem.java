@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiKnowledgeGraphImagesItemElementItem  extends BaseSerpApiKnowledgeGraphElementItem  {
 
 
@@ -120,7 +119,8 @@ public class SerpApiKnowledgeGraphImagesItemElementItem  extends BaseSerpApiKnow
   }
 
   /**
-   * items featured in the faq_box
+   * additional items present in the element
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

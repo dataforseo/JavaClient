@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
 
 
@@ -187,8 +186,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveResultInfo  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * historical SERPs and related data found in the database
    * @return items
    */
   @javax.annotation.Nullable

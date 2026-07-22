@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BaseMerchantGoogleShoppingProductsElementItem  {
 
 
@@ -71,8 +70,7 @@ public class BaseMerchantGoogleShoppingProductsElementItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * position within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class BaseMerchantGoogleShoppingProductsElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements found in Google Shopping SERP
+   * absolute rank in SERPabsolute position among all the elements found in Google Shopping SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class BaseMerchantGoogleShoppingProductsElementItem  {
   }
 
   /**
-   * alignment of the element in SERP
-* can take the following values:
-* left, right
+   * alignment of the element in SERPcan take the following values:left, right
    * @return position
    */
   @javax.annotation.Nullable

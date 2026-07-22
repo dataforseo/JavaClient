@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class WaterfallResourceInfo  {
 
 
@@ -140,8 +139,8 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * time to start downloading the resource
-* the amount of time the browser needs to start downloading a resource
+   * time to start downloading the HTML resource
+* the amount of time the browser needs to start downloading a page
    * @return fetchStart
    */
   @javax.annotation.Nullable
@@ -164,8 +163,8 @@ public class WaterfallResourceInfo  {
   }
 
   /**
-   * time to complete downloading the resource
-* the amount of time the browser needs to complete downloading a resource
+   * time to complete downloading the HTML resource
+* the amount of time the browser needs to complete downloading a page
    * @return fetchEnd
    */
   @javax.annotation.Nullable

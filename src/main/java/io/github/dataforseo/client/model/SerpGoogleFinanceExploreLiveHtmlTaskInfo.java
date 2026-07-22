@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleFinanceExploreLiveHtmlTaskInfo  {
 
     
@@ -237,7 +236,7 @@ public class SerpGoogleFinanceExploreLiveHtmlTaskInfo  {
   }
 
   /**
-   * array of results
+   * 
    * @return result
    */
   @javax.annotation.Nullable

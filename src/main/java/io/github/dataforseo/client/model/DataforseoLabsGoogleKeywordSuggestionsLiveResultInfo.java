@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
 
 
@@ -119,6 +118,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
 
   /**
    * location code in a POST array
+* if there is no data, then the value is null
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -142,6 +142,7 @@ public class DataforseoLabsGoogleKeywordSuggestionsLiveResultInfo  {
 
   /**
    * language code in a POST array
+* if there is no data, then the value is null
    * @return languageCode
    */
   @javax.annotation.Nullable

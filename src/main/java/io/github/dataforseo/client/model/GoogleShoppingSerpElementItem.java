@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingProductsElementItem  {
 
 
@@ -48,9 +47,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * domain of the URL
-* domain of the URL where a special offer is posted
-* Note: this field is deprecated and will return null
+   * domain of the URLdomain of the URL where a special offer is postedNote: this field is deprecated and will return null
    * @return domain
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * URL pointing at special offer page
-* URL where a special offer is posted
-* Note: this field is deprecated and will return null
+   * URL pointing at special offer pageURL where a special offer is postedNote: this field is deprecated and will return null
    * @return url
    */
   @javax.annotation.Nullable
@@ -190,9 +185,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * product price
-* example:
-* 384.99
+   * product priceexample:384.99
    * @return price
    */
   @javax.annotation.Nullable
@@ -215,8 +208,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * price multiplier for instalment plan
-* indicates the number of months covered by the monthly payment for the product
+   * price multiplier for instalment planindicates the number of months covered by the monthly payment for the product
    * @return priceMultiplier
    */
   @javax.annotation.Nullable
@@ -239,10 +231,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * product old price
-* displayed if the product price has been changed
-* example:
-* 499
+   * product old pricedisplayed if the product price has been changedexample:499
    * @return oldPrice
    */
   @javax.annotation.Nullable
@@ -265,9 +254,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * currency in the ISO format
-* example:
-* USD
+   * currency in the ISO formatexample:USD
    * @return currency
    */
   @javax.annotation.Nullable
@@ -290,12 +277,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * unique product identifier on Google Shopping
-* note that there is no full list of possible values as the product_id is a dynamic value assigned by Google
-* if there are no values, you will get null
-* example:
-* 4485466949985702538
-* learn more about the parameter in this help center guide
+   * unique product identifier on Google Shoppingnote that there is no full list of possible values as the product_id is a dynamic value assigned by Googleif there are no values, you will get nullexample:4485466949985702538learn more about the parameter in this help center guide
    * @return productId
    */
   @javax.annotation.Nullable
@@ -318,10 +300,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * unique identifier of the SERP data element
-* note that there is no full list of possible values as the data_docid is a dynamic value assigned by Google
-* example:
-* 17363035694596624076
+   * unique identifier of the SERP data elementnote that there is no full list of possible values as the data_docid is a dynamic value assigned by Googleexample:17363035694596624076
    * @return dataDocid
    */
   @javax.annotation.Nullable
@@ -344,8 +323,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * name of the seller
-* the name of the company that placed a corresponding product on Google Shopping
+   * name of the sellerthe name of the company that placed a corresponding product on Google Shopping
    * @return seller
    */
   @javax.annotation.Nullable
@@ -368,8 +346,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * object containing additional url parameters
-* you can get more details about the product by using this object in the POST request to the Google Shopping Product Specification and Google Shopping Sellers endpoint
+   * object containing additional url parametersyou can get more details about the product by using this object in the POST request to the Google Shopping Product Specification and Google Shopping Sellers endpoint
    * @return additionalSpecifications
    */
   @javax.annotation.Nullable
@@ -392,9 +369,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * number of product reviews
-* indicates the number of reviews left by users on Google Shopping
-* if there are no values, you will get null
+   * number of product reviewsindicates the number of reviews left by users on Google Shoppingif there are no values, you will get null
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -417,9 +392,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * “best match” label
-* if the value is true, the product is marked with the “best match” label
-* if there are no values, you will get null
+   * 'best match' labelif the value is true, the product is marked with the 'best match' labelif there are no values, you will get null
    * @return isBestMatch
    */
   @javax.annotation.Nullable
@@ -442,8 +415,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * product rating
-* the product popularity rate based on product reviews
+   * product ratingthe product popularity rate based on product reviews
    * @return productRating
    */
   @javax.annotation.Nullable
@@ -466,8 +438,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * shop rating
-* the popularity rate of the seller based on user reviews
+   * shop ratingthe popularity rate of the seller based on user reviews
    * @return shopRating
    */
   @javax.annotation.Nullable
@@ -490,8 +461,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * URLs to the images of the product
-* the first URL in the array is the featured image of the product
+   * URLs to the images of the productthe first URL in the array is the featured image of the product
    * @return productImages
    */
   @javax.annotation.Nullable
@@ -514,8 +484,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * unique ad click referral parameter
-* using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+   * unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
    * @return shopAdAclk
    */
   @javax.annotation.Nullable
@@ -538,12 +507,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * global product identifier on Google Shopping
-* note that there is no full list of possible values as the gid is a dynamic value assigned by Google
-* if there are no values, you will get null
-* example:
-* 4702526954592161872
-* learn more about gid parameter in this help center guide
+   * global product identifier on Google Shoppingnote that there is no full list of possible values as the gid is a dynamic value assigned by Googleif there are no values, you will get nullexample:4702526954592161872learn more about gid parameter in this help center guide
    * @return gid
    */
   @javax.annotation.Nullable
@@ -566,8 +530,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * delivery information
-* delivery information including free and fast delivery date ranges
+   * delivery informationdelivery information including free and fast delivery date ranges
    * @return deliveryInfo
    */
   @javax.annotation.Nullable
@@ -590,8 +553,7 @@ public class GoogleShoppingSerpElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * stores count information
-* contains information about the number of stores that offer the same product
+   * stores count informationcontains information about the number of stores that offer the same product
    * @return storesCountInfo
    */
   @javax.annotation.Nullable

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationClaudeLlmResponsesTasksReadyResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class AiOptimizationClaudeLlmResponsesTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed taskunique task identifier in our system in the UUID format
+   * task identifier of the completed task
+* unique task identifier in our system in the UUID format
    * @return id
    */
   @javax.annotation.Nullable

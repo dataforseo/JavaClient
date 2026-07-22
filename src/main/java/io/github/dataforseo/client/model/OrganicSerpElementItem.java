@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -48,9 +47,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
-* to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
+   * absolute rank in SERPabsolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -565,9 +560,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * link of the element
    * @return links
    */
   @javax.annotation.Nullable
@@ -581,6 +574,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
 
   public static final String SERIALIZED_NAME_FAQ = "faq";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_FAQ)
   private FaqBox faq;
 
@@ -593,13 +587,16 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
    * frequently asked questions
 * questions and answers extension shown below some of Google’s search results
 * Note: this object is deprecated and always returns null
+   * @deprecated
    * @return faq
    */
   @javax.annotation.Nullable
+  @Deprecated
   public FaqBox getFaq() {
     return faq;
   }
 
+  @Deprecated
   public void setFaq(FaqBox faq) {
     this.faq = faq;
   }
@@ -631,6 +628,7 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
   private AboutThisResultElement aboutThisResult;
 
@@ -641,16 +639,17 @@ public class OrganicSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * contains information from the ‘About this result’ panel
-* ‘About this result’ panel provides additional context about why Google returned this result for the given query;
-* this feature appears after clicking on the three dots next to most results;
-* if there is none, equals null
+* Note: this object is deprecated and always returns null
+   * @deprecated
    * @return aboutThisResult
    */
   @javax.annotation.Nullable
+  @Deprecated
   public AboutThisResultElement getAboutThisResult() {
     return aboutThisResult;
   }
 
+  @Deprecated
   public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }

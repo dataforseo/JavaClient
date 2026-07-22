@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OnPageLighthouseLiveJsonTaskInfo  {
 
     
@@ -237,9 +236,7 @@ public class OnPageLighthouseLiveJsonTaskInfo  {
   }
 
   /**
-   * results of Lighthouse audit
-* this array will include data according to the parameters you specified when setting a task;
-* all fields and their descriptions are available in the official documentation by this link.
+   * 
    * @return result
    */
   @javax.annotation.Nullable

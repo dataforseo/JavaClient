@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class MerchantAmazonAsinLiveHtmlRequestInfo  {
 
 
@@ -48,7 +47,10 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * product IDrequired fieldunique product identifier (ASIN) in Amazonyou can receive the asin parameter by making a separate request to the Amazon Products endpoint
+   * product ID
+* required field
+* unique product identifier (ASIN) in Amazon
+* you can receive the asin parameter by making a separate request to the Amazon Products endpoint
    * @return asin
    */
   @javax.annotation.Nullable
@@ -71,7 +73,12 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations with their location_name parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locationsexample:HA1,England,United Kingdom
+   * full name of search engine location
+* required field if you don't specify location_code or location_coordinate
+* if you use this field, you don't need to specify location_code or location_coordinate
+* you can receive the list of available locations with their location_name parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
+* example:
+* HA1,England,United Kingdom
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -94,7 +101,13 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations with their location_code parameters by making a separate request to thehttps://api.dataforseo.com/v3/merchant/amazon/locationsexample:9045969
+   * search engine location code
+* required field if you don't specify location_name or location_coordinate
+* if you use this field, you don't need to specify location_name or location_coordinate
+* you can receive the list of available locations with their location_code parameters by making a separate request to the
+* https://api.dataforseo.com/v3/merchant/amazon/locations
+* example:
+* 9045969
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,7 +130,14 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a locationrequired field if you don't specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,radius' formatthe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'radius': 199.9example:53.476225,-2.243572,200
+   * GPS coordinates of a location
+* required field if you don't specify location_name or location_code
+* if you use this field, you don't need to specify location_name or location_code
+* location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
+* the maximum number of decimal digits for 'latitude' and 'longitude': 7
+* the minimum value for 'radius': 199.9
+* example:
+* 53.476225,-2.243572,200
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -140,7 +160,13 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available languages with their language_name parameters by making a separate request to thehttps://api.dataforseo.com/v3/merchant/amazon/languagesexample:English (United Kingdom)
+   * full name of search engine language
+* required field if you don't specify language_code
+* if you use this field, you don't need to specify language_code
+* you can receive the list of available languages with their language_name parameters by making a separate request to the
+* https://api.dataforseo.com/v3/merchant/amazon/languages
+* example:
+* English (United Kingdom)
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -163,7 +189,12 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages with their language_code parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languagesexample:en_GB
+   * search engine language code
+* required field if you don't specify language_name
+* if you use this field, you don't need to specify language_name
+* you can receive the list of available languages with their language_code parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
+* example:
+* en_GB
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -186,7 +217,12 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine domainoptional fieldwe choose the relevant search engine domain automatically according to the location and language you specifyhowever, you can set a custom search engine domain in this fieldexample:amazon.com, amazon.co.uk, amazon.fr, etc.
+   * search engine domain
+* optional field
+* we choose the relevant search engine domain automatically according to the location and language you specify
+* however, you can set a custom search engine domain in this field
+* example:
+* amazon.com, amazon.co.uk, amazon.fr, etc.
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -209,7 +245,11 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable

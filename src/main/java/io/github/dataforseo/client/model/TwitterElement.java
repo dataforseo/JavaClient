@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class TwitterElement  {
 
 
@@ -143,7 +142,7 @@ public class TwitterElement  {
   }
 
   /**
-   * URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable

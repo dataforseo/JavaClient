@@ -34,30 +34,29 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class MerchantAmazonAsinLiveHtmlResultInfo  {
 
 
-  public static final String SERIALIZED_NAME_PRODUCT_ID = "product_id";
-  @SerializedName(SERIALIZED_NAME_PRODUCT_ID)
-  private String productId;
+  public static final String SERIALIZED_NAME_ASIN = "asin";
+  @SerializedName(SERIALIZED_NAME_ASIN)
+  private String asin;
 
-  public MerchantAmazonAsinLiveHtmlResultInfo productId(String productId) {
-    this.productId = productId;
+  public MerchantAmazonAsinLiveHtmlResultInfo asin(String asin) {
+    this.asin = asin;
     return this;
   }
 
   /**
    * ASIN received in a POST array
-   * @return productId
+   * @return asin
    */
   @javax.annotation.Nullable
-  public String getProductId() {
-    return productId;
+  public String getAsin() {
+    return asin;
   }
 
-  public void setProductId(String productId) {
-    this.productId = productId;
+  public void setAsin(String asin) {
+    this.asin = asin;
   }
 
 
@@ -163,7 +162,10 @@ public class MerchantAmazonAsinLiveHtmlResultInfo  {
   }
 
   /**
-   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * date and time when the result was received
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -265,7 +267,7 @@ public class MerchantAmazonAsinLiveHtmlResultInfo  {
     MerchantAmazonAsinLiveHtmlResultInfo merchantAmazonAsinLiveHtmlResultInfo = (MerchantAmazonAsinLiveHtmlResultInfo) o;
     return
 
-        Objects.equals(this.productId, merchantAmazonAsinLiveHtmlResultInfo.productId) &&
+        Objects.equals(this.asin, merchantAmazonAsinLiveHtmlResultInfo.asin) &&
         Objects.equals(this.type, merchantAmazonAsinLiveHtmlResultInfo.type) &&
         Objects.equals(this.seDomain, merchantAmazonAsinLiveHtmlResultInfo.seDomain) &&
         Objects.equals(this.locationCode, merchantAmazonAsinLiveHtmlResultInfo.locationCode) &&
@@ -282,7 +284,7 @@ public class MerchantAmazonAsinLiveHtmlResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(productId, type, seDomain, locationCode, languageCode, datetime, itemsCount, items);
+  return Objects.hash(asin, type, seDomain, locationCode, languageCode, datetime, itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -297,7 +299,7 @@ public class MerchantAmazonAsinLiveHtmlResultInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantAmazonAsinLiveHtmlResultInfo {\n");
 
-    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    asin: ").append(toIndentedString(asin)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
@@ -328,7 +330,7 @@ public class MerchantAmazonAsinLiveHtmlResultInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("product_id");
+    openapiFields.add("asin");
     
     openapiFields.add("type");
     

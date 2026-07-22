@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
 
 
@@ -48,7 +47,10 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * prompt for the AI modelrequired fieldthe question or task you want to send to the AI model;you can specify up to 500 characters in the user_prompt field
+   * prompt for the AI model
+* required field
+* the question or task you want to send to the AI model;
+* you can specify up to 500 characters in the user_prompt field
    * @return userPrompt
    */
   @javax.annotation.Nullable
@@ -71,7 +73,12 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * name of the AI modelrequired fieldmodel_nameconsists of the actual model name and version name;if the basic model name is specified, its latest version will be set by default;for example, if gemini-1.5-pro is specified, the gemini-1.5-pro-002 will be set as model_name automatically;you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_responses/models
+   * name of the AI model
+* required field
+* model_nameconsists of the actual model name and version name;
+* if the basic model name is specified, its latest version will be set by default;
+* for example, if gemini-1.5-pro is specified, the gemini-1.5-pro-002 will be set as model_name automatically;
+* you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/gemini/llm_responses/models
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -94,7 +101,13 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * maximum number of tokens in the AI responseoptional fieldminimum value: 1maximum value: 4096;default value: 2048;Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limitNote #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1024
+   * maximum number of tokens in the AI response
+* optional field
+* minimum value: 1
+* maximum value: 4096;
+* default value: 2048;
+* Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
+* Note #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1024
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -117,7 +130,13 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * randomness of the AI responseoptional fieldhigher values make output more diverse lower values make output more focusedminimum value: 0maximum value: 2default value: 1.3
+   * randomness of the AI response
+* optional field
+* higher values make output more diverse 
+* lower values make output more focused
+* minimum value: 0
+* maximum value: 2
+* default value: 1.3
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -140,7 +159,12 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * diversity of the AI responseoptional field controls diversity of the response by limiting token selectionminimum value: 0maximum value: 1 default value: 0.9
+   * diversity of the AI response
+* optional field 
+* controls diversity of the response by limiting token selection
+* minimum value: 0
+* maximum value: 1 
+* default value: 0.9
    * @return topP
    */
   @javax.annotation.Nullable
@@ -163,7 +187,12 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * enable web search for current informationoptional fieldwhen enabled, the AI model can access and cite current web information;Note: refer to the Models endpoint for a list of models that support web_search; default value: false;The cost of the parameter can be calculated on the Pricing page
+   * enable web search for current information
+* optional field
+* when enabled, the AI model can access and cite current web information;
+* Note: refer to the Models endpoint for a list of models that support web_search; 
+* default value: false;
+* The cost of the parameter can be calculated on the Pricing page
    * @return webSearch
    */
   @javax.annotation.Nullable
@@ -186,7 +215,10 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * instructions for the AI behavioroptional fielddefines the AI's role, tone, or specific behavior you can specify up to 500 characters in the system_message field
+   * instructions for the AI behavior
+* optional field
+* defines the AI's role, tone, or specific behavior 
+* you can specify up to 500 characters in the system_message field
    * @return systemMessage
    */
   @javax.annotation.Nullable
@@ -241,7 +273,13 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * enable reasoning for the AI modeloptional fieldwhen enabled, the model will perform reasoning before generating a responserefer to the Models endpoint for a list of models that support reasoningdefault value: falseNote: if set to true, the minimum value for max_output_tokens is 1024Note #2: for Gemini Pro models, the use_reasoning will automatically be set to true
+   * enable reasoning for the AI model
+* optional field
+* when enabled, the model will perform reasoning before generating a response
+* refer to the Models endpoint for a list of models that support reasoning
+* default value: false
+* Note: if set to true, the minimum value for max_output_tokens is 1024
+* Note #2: for Gemini Pro models, the use_reasoning will automatically be set to true
    * @return useReasoning
    */
   @javax.annotation.Nullable
@@ -264,7 +302,11 @@ public class AiOptimizationGeminiLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data object of the response
    * @return tag
    */
   @javax.annotation.Nullable

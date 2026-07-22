@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class HotelsPackSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +98,7 @@ public class HotelsPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -174,7 +173,7 @@ public class HotelsPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

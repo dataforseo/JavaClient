@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoTrendsDataforseoTrendsGraphElementItem  extends BaseKeywordDataDataforseoTrendsItem  {
 
 
@@ -48,7 +47,7 @@ public class DataforseoTrendsDataforseoTrendsGraphElementItem  extends BaseKeywo
   }
 
   /**
-   * DataForSEO Trends data for the specified parameters
+   * contains the same parameters that you specified in the POST request
    * @return data
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class DataforseoTrendsDataforseoTrendsGraphElementItem  extends BaseKeywo
   }
 
   /**
-   * keyword popularity values averaged over the whole time range
+   * 
    * @return averages
    */
   @javax.annotation.Nullable

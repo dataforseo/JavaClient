@@ -13,13 +13,6 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**chatGptLlmScraperTaskGetHtml**](AiOptimizationApi.md#chatGptLlmScraperTaskGetHtml) | **GET**  /v3/ai_optimization/chat_gpt/llm_scraper/task_get/html/{id}  |
 | [**chatGptLlmScraperLiveAdvanced**](AiOptimizationApi.md#chatGptLlmScraperLiveAdvanced) | **POST**  /v3/ai_optimization/chat_gpt/llm_scraper/live/advanced  |
 | [**chatGptLlmScraperLiveHtml**](AiOptimizationApi.md#chatGptLlmScraperLiveHtml) | **POST**  /v3/ai_optimization/chat_gpt/llm_scraper/live/html  |
-| [**llmMentionsLocationsAndLanguages**](AiOptimizationApi.md#llmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
-| [**llmMentionsAvailableFilters**](AiOptimizationApi.md#llmMentionsAvailableFilters) | **GET**  /v3/ai_optimization/llm_mentions/available_filters  |
-| [**llmMentionsSearchLive**](AiOptimizationApi.md#llmMentionsSearchLive) | **POST**  /v3/ai_optimization/llm_mentions/search/live  |
-| [**llmMentionsTopPagesLive**](AiOptimizationApi.md#llmMentionsTopPagesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_pages/live  |
-| [**llmMentionsTopDomainsLive**](AiOptimizationApi.md#llmMentionsTopDomainsLive) | **POST**  /v3/ai_optimization/llm_mentions/top_domains/live  |
-| [**llmMentionsAggregatedMetricsLive**](AiOptimizationApi.md#llmMentionsAggregatedMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/aggregated_metrics/live  |
-| [**llmMentionsCrossAggregatedMetricsLive**](AiOptimizationApi.md#llmMentionsCrossAggregatedMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/cross_aggregated_metrics/live  |
 | [**chatGptLlmResponsesModels**](AiOptimizationApi.md#chatGptLlmResponsesModels) | **GET**  /v3/ai_optimization/chat_gpt/llm_responses/models  |
 | [**chatGptLlmResponsesLive**](AiOptimizationApi.md#chatGptLlmResponsesLive) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/live  |
 | [**chatGptLlmResponsesTaskPost**](AiOptimizationApi.md#chatGptLlmResponsesTaskPost) | **POST**  /v3/ai_optimization/chat_gpt/llm_responses/task_post  |
@@ -48,6 +41,23 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**aiKeywordDataAvailableFilters**](AiOptimizationApi.md#aiKeywordDataAvailableFilters) | **GET**  /v3/ai_optimization/ai_keyword_data/available_filters  |
 | [**aiKeywordDataLocationsAndLanguages**](AiOptimizationApi.md#aiKeywordDataLocationsAndLanguages) | **GET**  /v3/ai_optimization/ai_keyword_data/locations_and_languages  |
 | [**aiKeywordDataKeywordsSearchVolumeLive**](AiOptimizationApi.md#aiKeywordDataKeywordsSearchVolumeLive) | **POST**  /v3/ai_optimization/ai_keyword_data/keywords_search_volume/live  |
+| [**llmMentionsAvailableFilters**](AiOptimizationApi.md#llmMentionsAvailableFilters) | **GET**  /v3/ai_optimization/llm_mentions/available_filters  |
+| [**llmMentionsLocationsAndLanguages**](AiOptimizationApi.md#llmMentionsLocationsAndLanguages) | **GET**  /v3/ai_optimization/llm_mentions/locations_and_languages  |
+| [**llmMentionsSearchMentionsLive**](AiOptimizationApi.md#llmMentionsSearchMentionsLive) | **POST**  /v3/ai_optimization/llm_mentions/search_mentions/live  |
+| [**llmMentionsTargetMetricsLive**](AiOptimizationApi.md#llmMentionsTargetMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/target_metrics/live  |
+| [**llmMentionsMultiTargetMetricsLive**](AiOptimizationApi.md#llmMentionsMultiTargetMetricsLive) | **POST**  /v3/ai_optimization/llm_mentions/multi_target_metrics/live  |
+| [**llmMentionsTopMentionedDomainsLive**](AiOptimizationApi.md#llmMentionsTopMentionedDomainsLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_domains/live  |
+| [**llmMentionsTopMentionedPagesLive**](AiOptimizationApi.md#llmMentionsTopMentionedPagesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_pages/live  |
+| [**llmMentionsTopMentionedBrandsLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandsLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brands/live  |
+| [**llmMentionsTopMentionedBrandCategoriesLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandCategoriesLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brand_categories/live  |
+| [**llmMentionsTargetMetricsLiteLive**](AiOptimizationApi.md#llmMentionsTargetMetricsLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/target_metrics_lite/live  |
+| [**llmMentionsTopMentionedDomainsLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedDomainsLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_domains_lite/live  |
+| [**llmMentionsTopMentionedPagesLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedPagesLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_pages_lite/live  |
+| [**llmMentionsTopMentionedBrandsLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandsLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brands_lite/live  |
+| [**llmMentionsTopMentionedBrandCategoriesLiteLive**](AiOptimizationApi.md#llmMentionsTopMentionedBrandCategoriesLiteLive) | **POST**  /v3/ai_optimization/llm_mentions/top_mentioned_brand_categories_lite/live  |
+| [**llmMentionsHistoricalLive**](AiOptimizationApi.md#llmMentionsHistoricalLive) | **POST**  /v3/ai_optimization/llm_mentions/historical/live  |
+| [**llmMentionsTimeseriesDeltaLive**](AiOptimizationApi.md#llmMentionsTimeseriesDeltaLive) | **POST**  /v3/ai_optimization/llm_mentions/timeseries_delta/live  |
+| [**llmMentionsTimeseriesNewLostLive**](AiOptimizationApi.md#llmMentionsTimeseriesNewLostLive) | **POST**  /v3/ai_optimization/llm_mentions/timeseries_new_lost/live  |
 
 <a id="chatGptLlmScraperLocations"></a>
 # **chatGptLlmScraperLocations**
@@ -664,565 +674,6 @@ public class Example {
 ### Return type
 
 [**AiOptimizationChatGptLlmScraperLiveHtmlResponseInfo**](AiOptimizationChatGptLlmScraperLiveHtmlResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsLocationsAndLanguages"></a>
-# **llmMentionsLocationsAndLanguages**
-> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo llmMentionsLocationsAndLanguages()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-
-    AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo response = apiInstance.llmMentionsLocationsAndLanguages();
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#llmMentionsLocationsAndLanguages");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo**](AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsAvailableFilters"></a>
-# **llmMentionsAvailableFilters**
-> AiOptimizationLlmMentionsAvailableFiltersResponseInfo llmMentionsAvailableFilters()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-
-    AiOptimizationLlmMentionsAvailableFiltersResponseInfo response = apiInstance.llmMentionsAvailableFilters();
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#llmMentionsAvailableFilters");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-
-    
-This endpoint does not need any parameter.
-    
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsAvailableFiltersResponseInfo**](AiOptimizationLlmMentionsAvailableFiltersResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsSearchLive"></a>
-# **llmMentionsSearchLive**
-> AiOptimizationLlmMentionsSearchLiveResponseInfo llmMentionsSearchLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsSearchLiveRequestInfo model = new AiOptimizationLlmMentionsSearchLiveRequestInfo()
-           .languageName("English")
-           .locationCode(2840)
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .platform("google")
-           .filters(
-               List.of(
-               
-                ))
-           .orderBy(
-               List.of(
-                   "ai_search_volume,desc"
-                ))
-           .offset(0)
-           .limit(3);
-    AiOptimizationLlmMentionsSearchLiveResponseInfo response = apiInstance.llmMentionsSearchLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#llmMentionsSearchLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<AiOptimizationLlmMentionsSearchLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsSearchLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsSearchLiveResponseInfo**](AiOptimizationLlmMentionsSearchLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsTopPagesLive"></a>
-# **llmMentionsTopPagesLive**
-> AiOptimizationLlmMentionsTopPagesLiveResponseInfo llmMentionsTopPagesLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsTopPagesLiveRequestInfo model = new AiOptimizationLlmMentionsTopPagesLiveRequestInfo()
-           .languageCode("en")
-           .locationCode(2840)
-           .platform("google")
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .linksScope("sources")
-           .initialDatasetFilters(
-               List.of(
-               
-                ))
-           .itemsListLimit(3)
-           .internalListLimit(2);
-    AiOptimizationLlmMentionsTopPagesLiveResponseInfo response = apiInstance.llmMentionsTopPagesLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopPagesLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopPagesLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsTopPagesLiveResponseInfo**](AiOptimizationLlmMentionsTopPagesLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsTopDomainsLive"></a>
-# **llmMentionsTopDomainsLive**
-> AiOptimizationLlmMentionsTopDomainsLiveResponseInfo llmMentionsTopDomainsLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsTopDomainsLiveRequestInfo model = new AiOptimizationLlmMentionsTopDomainsLiveRequestInfo()
-           .languageCode("en")
-           .locationCode(2840)
-           .platform("chat_gpt")
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .linksScope("sources")
-           .initialDatasetFilters(
-               List.of(
-               
-                ))
-           .itemsListLimit(3)
-           .internalListLimit(2);
-    AiOptimizationLlmMentionsTopDomainsLiveResponseInfo response = apiInstance.llmMentionsTopDomainsLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopDomainsLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopDomainsLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsTopDomainsLiveResponseInfo**](AiOptimizationLlmMentionsTopDomainsLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsAggregatedMetricsLive"></a>
-# **llmMentionsAggregatedMetricsLive**
-> AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo llmMentionsAggregatedMetricsLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo()
-           .languageCode("es")
-           .locationCode(2840)
-           .platform("google")
-           .target(
-               List.of(
-                   ,
-               
-                ))
-           .initialDatasetFilters(
-               List.of(
-               
-                ))
-           .internalListLimit(10);
-    AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsAggregatedMetricsLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#llmMentionsAggregatedMetricsLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsAggregatedMetricsLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo**](AiOptimizationLlmMentionsAggregatedMetricsLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="llmMentionsCrossAggregatedMetricsLive"></a>
-# **llmMentionsCrossAggregatedMetricsLive**
-> AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo llmMentionsCrossAggregatedMetricsLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
-    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo()
-           .languageCode("en")
-           .locationCode(2840)
-           .platform("google")
-           .targets(
-               List.of(
-                   ,
-                   ,
-                   ,
-               
-                ))
-           .initialDatasetFilters(
-               List.of(
-               
-                ))
-           .internalListLimit(5);
-    AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo response = apiInstance.llmMentionsCrossAggregatedMetricsLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling AiOptimizationApi#llmMentionsCrossAggregatedMetricsLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsCrossAggregatedMetricsLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo**](AiOptimizationLlmMentionsCrossAggregatedMetricsLiveResponseInfo.md)
 
 ### Authorization
 
@@ -3249,6 +2700,1380 @@ public class Example {
 ### Return type
 
 [**AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResponseInfo**](AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsAvailableFilters"></a>
+# **llmMentionsAvailableFilters**
+> AiOptimizationLlmMentionsAvailableFiltersResponseInfo llmMentionsAvailableFilters()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+
+    AiOptimizationLlmMentionsAvailableFiltersResponseInfo response = apiInstance.llmMentionsAvailableFilters();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsAvailableFilters");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsAvailableFiltersResponseInfo**](AiOptimizationLlmMentionsAvailableFiltersResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsLocationsAndLanguages"></a>
+# **llmMentionsLocationsAndLanguages**
+> AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo llmMentionsLocationsAndLanguages()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+
+    AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo response = apiInstance.llmMentionsLocationsAndLanguages();
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsLocationsAndLanguages");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+
+    
+This endpoint does not need any parameter.
+    
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo**](AiOptimizationLlmMentionsLocationsAndLanguagesResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsSearchMentionsLive"></a>
+# **llmMentionsSearchMentionsLive**
+> AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo llmMentionsSearchMentionsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo model = new AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo()
+           .languageName("English")
+           .locationCode(2840)
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .platform("google")
+           .filters(
+               List.of(
+               
+                ))
+           .orderBy(
+               List.of(
+                   "ai_search_volume,desc"
+                ))
+           .offset(0)
+           .limit(3);
+    AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo response = apiInstance.llmMentionsSearchMentionsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsSearchMentionsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsSearchMentionsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo**](AiOptimizationLlmMentionsSearchMentionsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTargetMetricsLive"></a>
+# **llmMentionsTargetMetricsLive**
+> AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo llmMentionsTargetMetricsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .internalListLimit(10);
+    AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo response = apiInstance.llmMentionsTargetMetricsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTargetMetricsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo**](AiOptimizationLlmMentionsTargetMetricsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsMultiTargetMetricsLive"></a>
+# **llmMentionsMultiTargetMetricsLive**
+> AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo llmMentionsMultiTargetMetricsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo model = new AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("google")
+           .targets(
+               List.of(
+                   ,
+                   ,
+                   ,
+               
+                ))
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .internalListLimit(5);
+    AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo response = apiInstance.llmMentionsMultiTargetMetricsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsMultiTargetMetricsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsMultiTargetMetricsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo**](AiOptimizationLlmMentionsMultiTargetMetricsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedDomainsLive"></a>
+# **llmMentionsTopMentionedDomainsLive**
+> AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo llmMentionsTopMentionedDomainsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .linksScope("sources")
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo response = apiInstance.llmMentionsTopMentionedDomainsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedDomainsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedDomainsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedDomainsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedPagesLive"></a>
+# **llmMentionsTopMentionedPagesLive**
+> AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo llmMentionsTopMentionedPagesLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .linksScope("sources")
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo response = apiInstance.llmMentionsTopMentionedPagesLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedPagesLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedPagesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedPagesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandsLive"></a>
+# **llmMentionsTopMentionedBrandsLive**
+> AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo llmMentionsTopMentionedBrandsLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo response = apiInstance.llmMentionsTopMentionedBrandsLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedBrandsLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedBrandsLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandsLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandCategoriesLive"></a>
+# **llmMentionsTopMentionedBrandCategoriesLive**
+> AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo llmMentionsTopMentionedBrandCategoriesLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo response = apiInstance.llmMentionsTopMentionedBrandCategoriesLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedBrandCategoriesLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTargetMetricsLiteLive"></a>
+# **llmMentionsTargetMetricsLiteLive**
+> AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo llmMentionsTargetMetricsLiteLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo model = new AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo()
+           .languageCode("es")
+           .locationCode(2840)
+           .platform("google")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(6);
+    AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo response = apiInstance.llmMentionsTargetMetricsLiteLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTargetMetricsLiteLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTargetMetricsLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo**](AiOptimizationLlmMentionsTargetMetricsLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedDomainsLiteLive"></a>
+# **llmMentionsTopMentionedDomainsLiteLive**
+> AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo llmMentionsTopMentionedDomainsLiteLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .linksScope("sources")
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo response = apiInstance.llmMentionsTopMentionedDomainsLiteLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedDomainsLiteLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedPagesLiteLive"></a>
+# **llmMentionsTopMentionedPagesLiteLive**
+> AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo llmMentionsTopMentionedPagesLiteLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .linksScope("sources")
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo response = apiInstance.llmMentionsTopMentionedPagesLiteLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedPagesLiteLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedPagesLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedPagesLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandsLiteLive"></a>
+# **llmMentionsTopMentionedBrandsLiteLive**
+> AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo llmMentionsTopMentionedBrandsLiteLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo response = apiInstance.llmMentionsTopMentionedBrandsLiteLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedBrandsLiteLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandsLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTopMentionedBrandCategoriesLiteLive"></a>
+# **llmMentionsTopMentionedBrandCategoriesLiteLive**
+> AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo llmMentionsTopMentionedBrandCategoriesLiteLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo model = new AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo()
+           .languageCode("en")
+           .locationCode(2840)
+           .platform("chat_gpt")
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .initialDatasetFilters(
+               List.of(
+               
+                ))
+           .limit(3)
+           .internalListLimit(2);
+    AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo response = apiInstance.llmMentionsTopMentionedBrandCategoriesLiteLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTopMentionedBrandCategoriesLiteLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo**](AiOptimizationLlmMentionsTopMentionedBrandCategoriesLiteLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsHistoricalLive"></a>
+# **llmMentionsHistoricalLive**
+> AiOptimizationLlmMentionsHistoricalLiveResponseInfo llmMentionsHistoricalLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsHistoricalLiveRequestInfo model = new AiOptimizationLlmMentionsHistoricalLiveRequestInfo()
+           .languageCode("es")
+           .locationCode(2840)
+           .platform("google")
+           .target(
+               List.of(
+                   ,
+               
+                ));
+    AiOptimizationLlmMentionsHistoricalLiveResponseInfo response = apiInstance.llmMentionsHistoricalLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsHistoricalLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsHistoricalLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsHistoricalLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsHistoricalLiveResponseInfo**](AiOptimizationLlmMentionsHistoricalLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTimeseriesDeltaLive"></a>
+# **llmMentionsTimeseriesDeltaLive**
+> AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo llmMentionsTimeseriesDeltaLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo model = new AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo()
+           .languageName("English")
+           .locationCode(2840)
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .platform("google")
+           .groupRange("month");
+    AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo response = apiInstance.llmMentionsTimeseriesDeltaLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTimeseriesDeltaLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTimeseriesDeltaLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo**](AiOptimizationLlmMentionsTimeseriesDeltaLiveResponseInfo.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful operation |  -  |
+
+<a id="llmMentionsTimeseriesNewLostLive"></a>
+# **llmMentionsTimeseriesNewLostLive**
+> AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo llmMentionsTimeseriesNewLostLive()
+
+
+### Example
+```java
+    
+import io.github.dataforseo.client.ApiClient;
+import io.github.dataforseo.client.ApiException;
+import io.github.dataforseo.client.Configuration;
+import io.github.dataforseo.client.auth.*;
+import io.github.dataforseo.client.model.*;
+import io.github.dataforseo.client.api.SerpApi;
+import java.util.List;
+import java.util.Map;
+
+public class Example {
+  public static void main(String[] args) {
+  try {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://api.dataforseo.com");
+
+
+    // Configure HTTP basic authorization: basicAuth
+    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
+    basicAuth.setUsername("USERNAME");
+    basicAuth.setPassword("PASSWORD");
+    AiOptimizationApi apiInstance = new AiOptimizationApi(defaultClient);
+    AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo model = new AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo()
+           .languageName("English")
+           .locationCode(2840)
+           .target(
+               List.of(
+                   ,
+               
+                ))
+           .platform("google")
+           .groupRange("month");
+    AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo response = apiInstance.llmMentionsTimeseriesNewLostLive(List.of(model));
+    System.out.println(result);
+  } catch (ApiException e) {
+      System.err.println("Exception when calling AiOptimizationApi#llmMentionsTimeseriesNewLostLive");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+    | Name | Type | Description  | Notes |
+    |------------- | ------------- | ------------- | -------------|
+    | **** | [**List&lt;List<AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo>&gt;**](List<AiOptimizationLlmMentionsTimeseriesNewLostLiveRequestInfo>.md)|  | [optional] |
+
+
+
+### Return type
+
+[**AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo**](AiOptimizationLlmMentionsTimeseriesNewLostLiveResponseInfo.md)
 
 ### Authorization
 

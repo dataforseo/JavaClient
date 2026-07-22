@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class GoogleShoppingCarouselElementItem  extends BaseMerchantGoogleShoppingProductsElementItem  {
 
 
@@ -71,8 +70,7 @@ public class GoogleShoppingCarouselElementItem  extends BaseMerchantGoogleShoppi
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * additional items present in the elementif there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

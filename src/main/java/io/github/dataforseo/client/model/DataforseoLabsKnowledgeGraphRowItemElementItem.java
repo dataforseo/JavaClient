@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDataforseoLabsKnowledgeGraphElementItem  {
 
 
@@ -48,7 +47,7 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   }
 
   /**
-   * title of the element
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -73,7 +72,7 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   /**
    * google defined data attribute ID
 * example:
-* kc:/local:place qa
+* action:listen_artist
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -96,7 +95,7 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   }
 
   /**
-   * content within the item
+   * description content
    * @return text
    */
   @javax.annotation.Nullable
@@ -119,7 +118,9 @@ public class DataforseoLabsKnowledgeGraphRowItemElementItem  extends BaseDatafor
   }
 
   /**
-   * link of the element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable

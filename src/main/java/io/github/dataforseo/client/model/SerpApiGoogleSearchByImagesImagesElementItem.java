@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiGoogleSearchByImagesImagesElementItem  extends BaseSerpApiGoogleSearchByImagesElementItem  {
 
 
@@ -62,6 +61,7 @@ public class SerpApiGoogleSearchByImagesImagesElementItem  extends BaseSerpApiGo
 
 
   public static final String SERIALIZED_NAME_RELATED_IMAGE_SEARCHES = "related_image_searches";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_RELATED_IMAGE_SEARCHES)
   private List<RelatedImageSearchesElement> relatedImageSearches;
 
@@ -73,13 +73,16 @@ public class SerpApiGoogleSearchByImagesImagesElementItem  extends BaseSerpApiGo
   /**
    * contains keywords and images related to the specified search term
 * if there are none, equals null
+   * @deprecated
    * @return relatedImageSearches
    */
   @javax.annotation.Nullable
+  @Deprecated
   public List<RelatedImageSearchesElement> getRelatedImageSearches() {
     return relatedImageSearches;
   }
 
+  @Deprecated
   public void setRelatedImageSearches(List<RelatedImageSearchesElement> relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
   }

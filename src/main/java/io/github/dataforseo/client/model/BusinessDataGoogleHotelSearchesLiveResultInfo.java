@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
 
 
@@ -192,8 +191,9 @@ public class BusinessDataGoogleHotelSearchesLiveResultInfo  {
   }
 
   /**
-   * array of items
-* note: this field always equals null; use it to facilitate integration and ensure interoperability with the Hotel Info endpoint
+   * encountered item types
+* types of search engine results encountered in the items array;
+* possible item types: hotel_search_item
    * @return items
    */
   @javax.annotation.Nullable

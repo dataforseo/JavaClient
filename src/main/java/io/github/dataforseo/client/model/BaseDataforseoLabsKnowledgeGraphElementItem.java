@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BaseDataforseoLabsKnowledgeGraphElementItem  {
 
 
@@ -71,7 +70,8 @@ public class BaseDataforseoLabsKnowledgeGraphElementItem  {
   }
 
   /**
-   * position within a group of elements with identical type values
+   * group rank in SERP
+* position within a group of elements with identical type values
 * positions of elements with different type values are omitted from rank_group
    * @return rankGroup
    */

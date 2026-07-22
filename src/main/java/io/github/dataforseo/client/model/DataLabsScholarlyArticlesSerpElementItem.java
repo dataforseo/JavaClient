@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataLabsScholarlyArticlesSerpElementItem  extends BaseDataforseoLabsApiElementItem  {
 
 
@@ -71,7 +70,7 @@ public class DataLabsScholarlyArticlesSerpElementItem  extends BaseDataforseoLab
   }
 
   /**
-   * sitelink URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable

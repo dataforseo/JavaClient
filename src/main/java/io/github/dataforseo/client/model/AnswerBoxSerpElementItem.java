@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AnswerBoxSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -123,7 +122,9 @@ public class AnswerBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * website links featured in the element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable

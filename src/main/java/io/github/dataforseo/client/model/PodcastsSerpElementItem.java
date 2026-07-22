@@ -34,7 +34,10 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
+/**
+ * @deprecated
+ */
+@Deprecated
 public class PodcastsSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +102,7 @@ public class PodcastsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

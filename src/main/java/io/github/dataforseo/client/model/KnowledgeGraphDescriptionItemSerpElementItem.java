@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphDescriptionItemSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -123,7 +122,9 @@ public class KnowledgeGraphDescriptionItemSerpElementItem  extends BaseSerpApiEl
   }
 
   /**
-   * website links featured in the element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable

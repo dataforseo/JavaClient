@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphImagesItemSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -122,7 +121,7 @@ public class KnowledgeGraphImagesItemSerpElementItem  extends BaseSerpApiElement
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

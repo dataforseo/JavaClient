@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
 
 
@@ -48,7 +47,10 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * prompt for the AI modelrequired fieldthe question or task you want to send to the AI model;you can specify up to 500 characters in the user_prompt field
+   * prompt for the AI model
+* required field
+* the question or task you want to send to the AI model;
+* you can specify up to 500 characters in the user_prompt field
    * @return userPrompt
    */
   @javax.annotation.Nullable
@@ -71,7 +73,12 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * name of the AI modelrequired fieldmodel_nameconsists of the actual model name and version name;if the basic model name is specified, its latest version will be set by default;for example, if gpt-4.1 is specified, the gpt-4.1-2025-04-14 will be set as model_name automatically;you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_responses/models
+   * name of the AI model
+* required field
+* model_nameconsists of the actual model name and version name;
+* if the basic model name is specified, its latest version will be set by default;
+* for example, if gpt-4.1 is specified, the gpt-4.1-2025-04-14 will be set as model_name automatically;
+* you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_responses/models
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -94,7 +101,12 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * maximum number of tokens in the AI responseoptional fieldminimum value for reasoning models (e.g., reasoning is true in the Models endpoint): 1024;minimum value for non-reasoning models: 16;maximum value: 4096;default value: 2048
+   * maximum number of tokens in the AI response
+* optional field
+* minimum value for reasoning models (e.g., reasoning is true in the Models endpoint): 1024;
+* minimum value for non-reasoning models: 16;
+* maximum value: 4096;
+* default value: 2048
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -117,7 +129,14 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * randomness of the AI responseoptional fieldhigher values make output more diverse; lower values make output more focused;minimum value: 0maximum value: 2default value: 0.94Note: not supported in reasoning models
+   * randomness of the AI response
+* optional field
+* higher values make output more diverse; 
+* lower values make output more focused;
+* minimum value: 0
+* maximum value: 2
+* default value: 0.94
+* Note: not supported in reasoning models
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -140,7 +159,12 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * diversity of the AI responseoptional field controls diversity of the response by limiting token selection;minimum value: 0maximum value: 1 default value: 0.92Note:  top_p cannot be used together with temperature in the same request
+   * diversity of the AI response
+* optional field 
+* controls diversity of the response by limiting token selection;
+* minimum value: 0
+* maximum value: 1 
+* default value: 0.92Note:  top_p cannot be used together with temperature in the same request
    * @return topP
    */
   @javax.annotation.Nullable
@@ -163,7 +187,11 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * enable web searchoptional fieldwhen enabled, the AI model can access and cite current web information;default value: false;Note: refer to the Models endpoint for a list of models that support web_search;
+   * enable web search
+* optional field
+* when enabled, the AI model can access and cite current web information;
+* default value: false;
+* Note: refer to the Models endpoint for a list of models that support web_search;
    * @return webSearch
    */
   @javax.annotation.Nullable
@@ -186,7 +214,13 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * force AI agent to use web searchoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model is forced to access and cite current web information;default value: false;Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response Note #2: not supported in reasoning models
+   * force AI agent to use web search
+* optional field
+* to enable this parameter, web_search must also be enabled;
+* when enabled, the AI model is forced to access and cite current web information;
+* default value: false;
+* Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response 
+* Note #2: not supported in reasoning models
    * @return forceWebSearch
    */
   @javax.annotation.Nullable
@@ -209,7 +243,11 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * ISO country code of the locationoptional fieldto enable this parameter, web_search must also be enabled;when enabled, the AI model will search the web from the country you specify;Note: not supported in o3-mini, o1-pro, o1 models
+   * ISO country code of the location
+* optional field
+* to enable this parameter, web_search must also be enabled;
+* when enabled, the AI model will search the web from the country you specify;
+* Note: not supported in o3-mini, o1-pro, o1 models
    * @return webSearchCountryIsoCode
    */
   @javax.annotation.Nullable
@@ -232,7 +270,9 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * city name of the locationoptional fieldNote: not supported in o3-mini, o1-pro, o1 models
+   * city name of the location
+* optional field
+* Note: not supported in o3-mini, o1-pro, o1 models
    * @return webSearchCity
    */
   @javax.annotation.Nullable
@@ -255,7 +295,10 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * instructions for the AI behaviouroptional fielddefines the AI's role, tone, or specific behavior;you can specify up to 500 characters in the system_message field
+   * instructions for the AI behaviour
+* optional field
+* defines the AI's role, tone, or specific behavior;
+* you can specify up to 500 characters in the system_message field
    * @return systemMessage
    */
   @javax.annotation.Nullable
@@ -310,7 +353,15 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special character in postback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * URL for sending task results
+* optional field
+* once the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
+* example:
+* http://your-server.com/postbackscript?id=$id
+* http://your-server.com/postbackscript?id=$id&tag=$tag
+* Note: special character in postback_url will be urlencoded;
+* i.a., the # character will be encoded into %23learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -333,7 +384,15 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special character in pingback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * notification URL of a completed task
+* optional field
+* when a task is completed we will notify you by GET request sent to the URL you have specified
+* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request
+* example:
+* http://your-server.com/pingscript?id=$id
+* http://your-server.com/pingscript?id=$id&tag=$tag
+* Note: special character in pingback_url will be urlencoded;
+* i.a., the # character will be encoded into %23learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -356,7 +415,11 @@ public class AiOptimizationChatGptLlmResponsesTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data array of the response
+   * user-defined task identifier
+* optional field
+* the character limit is 255
+* you can use this parameter to identify the task and match it with the result
+* you will find the specified tag value in the data array of the response
    * @return tag
    */
   @javax.annotation.Nullable

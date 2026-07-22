@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiMonthlySearches  {
 
 
@@ -94,7 +93,8 @@ public class AiMonthlySearches  {
   }
 
   /**
-   * AI search volume rate in a certain month of a yearlearn more about this metric here
+   * current AI search volume rate of a keyword
+* learn more about this metric here
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable

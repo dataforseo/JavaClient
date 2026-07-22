@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**title** | **String** | link anchor text |[optional]|
+**title** | **String** | title of the result in SERP |[optional]|
 **subtitle** | **String** | subtitle of the item |[optional]|
 **url** | **String** | sitelink URL |[optional]|
 **domain** | **String** | domain in SERP |[optional]|

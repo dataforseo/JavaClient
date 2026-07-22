@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AppStoreSearchOrganic  {
 
 
@@ -144,7 +143,7 @@ public class AppStoreSearchOrganic  {
   }
 
   /**
-   * id of the app
+   * id of the app in a POST array
    * @return appId
    */
   @javax.annotation.Nullable

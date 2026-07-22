@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BaseKeywordDataDataforseoTrendsItem  {
 
 
@@ -95,8 +94,7 @@ public class BaseKeywordDataDataforseoTrendsItem  {
   }
 
   /**
-   * relevant keywords
-* the data included in the dataforseo_trends_graph element is based on the keywords listed in this array
+   * keywords in a POST array
    * @return keywords
    */
   @javax.annotation.Nullable

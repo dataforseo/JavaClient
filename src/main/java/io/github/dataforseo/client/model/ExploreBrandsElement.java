@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class ExploreBrandsElement  {
 
 
@@ -71,7 +70,7 @@ public class ExploreBrandsElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class ExploreBrandsElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class ExploreBrandsElement  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -164,7 +163,6 @@ public class ExploreBrandsElement  {
 
   /**
    * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BaseOnPageResourceItem  {
 
 
@@ -71,7 +70,9 @@ public class BaseOnPageResourceItem  {
   }
 
   /**
-   * status code of the page
+   * general status code
+* you can find the full list of the response codes here
+* Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable

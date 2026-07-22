@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class PopularProductsElement  {
 
 
@@ -94,7 +93,7 @@ public class PopularProductsElement  {
   }
 
   /**
-   * description of the results element in SERP
+   * link description
    * @return description
    */
   @javax.annotation.Nullable

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsleAppCompetitorsLiveItem  {
 
 
@@ -71,7 +70,7 @@ public class DataforseoLabsleAppCompetitorsLiveItem  {
   }
 
   /**
-   * id of the competitor app
+   * id of the app in a POST array
    * @return appId
    */
   @javax.annotation.Nullable

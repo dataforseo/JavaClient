@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpYahooOrganicLiveAdvancedRequestInfo  {
 
 
@@ -334,7 +333,7 @@ public class SerpYahooOrganicLiveAdvancedRequestInfo  {
 * optional field
 * number of results in SERP
 * default value: 6
-* max value: 700
+* max value: 200
 * Your account will be billed per each SERP;
 * Each Yahoo SERP can contain fewer than 10 results, so setting depth above the default value may result in additional charges ;
 * The cost can be calculated on the Pricing page.

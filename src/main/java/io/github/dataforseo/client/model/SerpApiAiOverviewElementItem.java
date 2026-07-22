@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementItem  {
 
 
@@ -117,9 +116,7 @@ public class SerpApiAiOverviewElementItem  extends BaseSerpApiAiOverviewElementI
   }
 
   /**
-   * sitelinks
-* the links shown below some of Google’s search results
-* if there are none, equals null
+   * website links featured in the element
    * @return links
    */
   @javax.annotation.Nullable

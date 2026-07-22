@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiKnowledgeGraphPartItemElementItem  extends BaseSerpApiKnowledgeGraphElementItem  {
 
 
@@ -97,7 +96,7 @@ public class SerpApiKnowledgeGraphPartItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * title of the result in SERP
+   * title of the place
    * @return title
    */
   @javax.annotation.Nullable

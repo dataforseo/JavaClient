@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class JobsElement  {
 
 
@@ -94,7 +93,7 @@ public class JobsElement  {
   }
 
   /**
-   * description of the results element in SERP
+   * link description
    * @return description
    */
   @javax.annotation.Nullable
@@ -258,7 +257,7 @@ public class JobsElement  {
   }
 
   /**
-   * URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable

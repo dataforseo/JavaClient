@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class ClickstreamKeywordInfo  {
 
 
@@ -48,7 +47,8 @@ public class ClickstreamKeywordInfo  {
   }
 
   /**
-   * current search volume rate of a keyword
+   * average monthly search volume rate
+* represents the (approximate) number of searches for the given keyword idea on google.com
    * @return searchVolume
    */
   @javax.annotation.Nullable
@@ -71,7 +71,7 @@ public class ClickstreamKeywordInfo  {
   }
 
   /**
-   * date and time when backlink data was updated
+   * date and time when keyword data was updated
 * in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
 * example:
 * 2019-11-15 12:57:46 +00:00

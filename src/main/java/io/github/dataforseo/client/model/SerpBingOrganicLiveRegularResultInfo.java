@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpBingOrganicLiveRegularResultInfo  {
 
 
@@ -357,8 +356,7 @@ public class SerpBingOrganicLiveRegularResultInfo  {
   }
 
   /**
-   * items inside the element
-* array of 8 search queries related to the keyword
+   * items in SERP
    * @return items
    */
   @javax.annotation.Nullable

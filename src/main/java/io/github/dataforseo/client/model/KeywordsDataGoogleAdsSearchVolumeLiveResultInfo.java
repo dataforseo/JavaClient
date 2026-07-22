@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
 
 
@@ -222,7 +221,9 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * monthly average search volume rate
+   * monthly average search volume rate;
+* represents either the (approximate) number of searches for the given keyword idea on google.com or google.com and partners, depending on the user’s targeting;
+* if there is no data then the value is null
    * @return searchVolume
    */
   @javax.annotation.Nullable

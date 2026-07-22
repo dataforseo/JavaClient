@@ -18,4 +18,4 @@
 **seResultsCount** | **Long** | total number of results in SERP |[optional]|
 **pagesCount** | **Long** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
 **itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<BaseBingSerpApiElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|
+**items** | **List<BaseBingSerpApiElementItem>** | elements of search results found in SERP |[optional]|

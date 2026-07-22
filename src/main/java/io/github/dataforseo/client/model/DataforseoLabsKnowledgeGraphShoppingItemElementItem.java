@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsKnowledgeGraphShoppingItemElementItem  extends BaseDataforseoLabsKnowledgeGraphElementItem  {
 
 
@@ -48,7 +47,7 @@ public class DataforseoLabsKnowledgeGraphShoppingItemElementItem  extends BaseDa
   }
 
   /**
-   * title of the element
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -73,7 +72,7 @@ public class DataforseoLabsKnowledgeGraphShoppingItemElementItem  extends BaseDa
   /**
    * google defined data attribute ID
 * example:
-* kc:/shopping/gpc:organic-offers
+* action:listen_artist
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -96,8 +95,7 @@ public class DataforseoLabsKnowledgeGraphShoppingItemElementItem  extends BaseDa
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * historical SERPs and related data found in the database
    * @return items
    */
   @javax.annotation.Nullable

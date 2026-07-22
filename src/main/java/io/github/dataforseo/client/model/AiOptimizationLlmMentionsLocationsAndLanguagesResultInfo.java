@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
 
 
@@ -94,7 +93,8 @@ public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * supported languagescontains the languages which are supported for a specific location
+   * supported languages
+* contains the languages which are supported for a specific location
    * @return availableLanguages
    */
   @javax.annotation.Nullable

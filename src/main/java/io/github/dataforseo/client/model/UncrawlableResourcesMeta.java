@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class UncrawlableResourcesMeta  {
 
 
@@ -71,7 +70,8 @@ public class UncrawlableResourcesMeta  {
   }
 
   /**
-   * expected content types for the resourcelist of content types that were expected by the crawler based on how the resource is referenced on the page
+   * expected content types for the resource
+* list of content types that were expected by the crawler based on how the resource is referenced on the page
    * @return expectedContentTypes
    */
   @javax.annotation.Nullable

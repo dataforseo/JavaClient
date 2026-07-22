@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpYahooOrganicTasksFixedTaskInfo  {
 
     

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +98,7 @@ public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -122,7 +121,7 @@ public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * URL of the third-party review source
    * @return url
    */
   @javax.annotation.Nullable
@@ -145,7 +144,7 @@ public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable
@@ -159,6 +158,7 @@ public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
 
 
   public static final String SERIALIZED_NAME_RELATED_IMAGE_SEARCHES = "related_image_searches";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_RELATED_IMAGE_SEARCHES)
   private List<RelatedImageSearchesElement> relatedImageSearches;
 
@@ -169,14 +169,17 @@ public class ImagesSerpElementItem  extends BaseSerpApiElementItem  {
 
   /**
    * contains keywords and images related to the specified search term
-* if there are none, equals null
+* Note: this array is deprecated and always returns null
+   * @deprecated
    * @return relatedImageSearches
    */
   @javax.annotation.Nullable
+  @Deprecated
   public List<RelatedImageSearchesElement> getRelatedImageSearches() {
     return relatedImageSearches;
   }
 
+  @Deprecated
   public void setRelatedImageSearches(List<RelatedImageSearchesElement> relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
   }

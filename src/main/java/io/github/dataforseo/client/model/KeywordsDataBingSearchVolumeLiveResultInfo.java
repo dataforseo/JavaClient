@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KeywordsDataBingSearchVolumeLiveResultInfo  {
 
 
@@ -220,7 +219,9 @@ public class KeywordsDataBingSearchVolumeLiveResultInfo  {
 
   /**
    * monthly average search volume rate
-* search volume is rounded to the nearest tens
+* represents either the (approximate) number of searches for the given keyword idea on bing search engine depending on the user’s targeting;
+* search volume is rounded to the nearest tens;
+* if there is no data, the value is null
    * @return searchVolume
    */
   @javax.annotation.Nullable

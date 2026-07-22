@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiProductConsiderationsAiOverviewExpandedElementItem  extends BaseSerpApiProductConsiderationExpandedElementItem  {
 
 
@@ -48,7 +47,7 @@ public class SerpApiProductConsiderationsAiOverviewExpandedElementItem  extends 
   }
 
   /**
-   * contains arrays of elements available in the list
+   * items present in the element
    * @return items
    */
   @javax.annotation.Nullable

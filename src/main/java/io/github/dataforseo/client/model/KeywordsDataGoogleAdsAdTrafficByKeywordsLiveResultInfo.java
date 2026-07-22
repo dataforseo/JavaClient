@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResultInfo  {
 
 
@@ -293,9 +292,7 @@ public class KeywordsDataGoogleAdsAdTrafficByKeywordsLiveResultInfo  {
   }
 
   /**
-   * charge for an ad
-* amount that will be charged for running an ad within the specified time period
-* if there is no data, then the value is null
+   * total tasks cost, USD
    * @return cost
    */
   @javax.annotation.Nullable

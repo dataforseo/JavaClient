@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
 
 
@@ -48,8 +47,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * 
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * 
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * 
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * 
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -142,10 +139,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * 
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -168,8 +162,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * 
    * @return spell
    */
   @javax.annotation.Nullable
@@ -192,9 +185,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERP
-* contains types of search results (items) found in SERP.
-* possible item type: dataset
+   * 
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -209,46 +200,46 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private Long seResultsCount;
+  private Integer seResultsCount;
 
-  public SerpGoogleDatasetInfoLiveAdvancedResultInfo seResultsCount(Long seResultsCount) {
+  public SerpGoogleDatasetInfoLiveAdvancedResultInfo seResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
 
   /**
-   * total number of results in SERP
+   * 
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public Long getSeResultsCount() {
+  public Integer getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(Long seResultsCount) {
+  public void setSeResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private Integer itemsCount;
 
-  public SerpGoogleDatasetInfoLiveAdvancedResultInfo itemsCount(Long itemsCount) {
+  public SerpGoogleDatasetInfoLiveAdvancedResultInfo itemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
 
   /**
-   * the number of results returned in the items array
+   * 
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public Integer getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -263,7 +254,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedResultInfo  {
   }
 
   /**
-   * elements of search results found in SERP
+   * 
    * @return items
    */
   @javax.annotation.Nullable

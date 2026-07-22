@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleMapsLiveAdvancedRequestInfo  {
 
 
@@ -48,7 +47,7 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character '+' will be decoded to a space character)if you need to use the '%' character for your keyword, please specify it as '%25';if you need to use the “+” character for your keyword, please specify it as “%2B”;if this field contains such parameters as 'allinanchor:', 'allintext:', 'allintitle:', 'allinurl:', ‘cache:’, 'define:', 'filetype:', 'id:', 'inanchor:', 'info:', 'intext:', 'intitle:', 'inurl:', 'link:', 'related:', 'site:', the charge per task will be multiplied by 5learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character '+' will be decoded to a space character)if you need to use the '%' character for your keyword, please specify it as '%25';if you need to use the “+” character for your keyword, please specify it as “%2B”;learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -117,7 +116,8 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * parsing depthoptional fieldnumber of results in SERPdefault value: 100max value: 700Your account will be billed per each SERP containing up to 100 results;Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;The cost can be calculated on the Pricing page.
+   * parsing depthoptional fieldnumber of results in SERPdefault value: 100max value: 700
+* Your account will be billed per each SERP containing up to 100 results;Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -150,236 +150,6 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
 
   public void setDevice(String device) {
     this.device = device;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available languages  of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating systemoptional fieldif you specify desktop in the device field, choose from the following values: windows, macosdefault value: windowsif you specify mobile in the device field, choose from the following values: android, iosdefault value: android
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
-  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
-  private Integer maxCrawlPages;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo maxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-    return this;
-  }
-
-  /**
-   * page crawl limitoptional fieldnumber of search results pages to crawlmax value: 100Note: the max_crawl_pages and depth parameters complement each other;learn more at our help center
-   * @return maxCrawlPages
-   */
-  @javax.annotation.Nullable
-  public Integer getMaxCrawlPages() {
-    return maxCrawlPages;
-  }
-
-  public void setMaxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-  }
-
-
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search queryoptional fieldyou can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.example:https://google.com/maps/search/pizza/@37.09024,-95.712891,4zNote: the following search engine parameters are not supported and will be automatically unset if specified in the URL: allinanchor:, allintext:, allintitle:, allinurl:, cache:, define:, definition:, filetype:, id:, inanchor:, info:, intext:, intitle:, inurl:, link:, site:.
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a locationrequired field if you don't specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,zoom' formatif 'zoom' is not specified, 17z will be applied as a default valuethe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'zoom': 3zthe maximum value for 'zoom': 21zexample:52.6178549,-155.352142,20z
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
-  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
-  private String seDomain;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo seDomain(String seDomain) {
-    this.seDomain = seDomain;
-    return this;
-  }
-
-  /**
-   * search engine domainoptional fieldwe choose the relevant search engine domain automatically according to the location and language you specifyhowever, you can set a custom search engine domain in this fieldexample:google.co.uk, google.com.au, google.de, etc.
-   * @return seDomain
-   */
-  @javax.annotation.Nullable
-  public String getSeDomain() {
-    return seDomain;
-  }
-
-  public void setSeDomain(String seDomain) {
-    this.seDomain = seDomain;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_THIS_AREA = "search_this_area";
-  @SerializedName(SERIALIZED_NAME_SEARCH_THIS_AREA)
-  private Boolean searchThisArea;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo searchThisArea(Boolean searchThisArea) {
-    this.searchThisArea = searchThisArea;
-    return this;
-  }
-
-  /**
-   * show results from the displayed areaoptional fieldcan take the values:true, falsedefault value: trueif set to false, the search_this_area mode will be turned offNote: if the search_this_area mode is turned off, Google Maps listings might contain results beyond the displayed area
-   * @return searchThisArea
-   */
-  @javax.annotation.Nullable
-  public Boolean getSearchThisArea() {
-    return searchThisArea;
-  }
-
-  public void setSearchThisArea(Boolean searchThisArea) {
-    this.searchThisArea = searchThisArea;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_PLACES = "search_places";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PLACES)
-  private Boolean searchPlaces;
-
-  public SerpGoogleMapsLiveAdvancedRequestInfo searchPlaces(Boolean searchPlaces) {
-    this.searchPlaces = searchPlaces;
-    return this;
-  }
-
-  /**
-   * search places modeoptional fieldthe search places mode allows to obtain Google Maps results on a certain place (e.g., Apple Store in New York)however, due to the pecularities of our data mining algorithm, this mode might interfere with some local-intent queries - and display results for a location that is different from that specified in the request;to prevent this interference and obtain correct results for keywords with local intent you may set this parameter to false;default value: trueNote: if the search_places mode is turned off and no results were found in the search area, the results array will be empty
-   * @return searchPlaces
-   */
-  @javax.annotation.Nullable
-  public Boolean getSearchPlaces() {
-    return searchPlaces;
-  }
-
-  public void setSearchPlaces(Boolean searchPlaces) {
-    this.searchPlaces = searchPlaces;
   }
 
 
@@ -430,17 +200,7 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
         Objects.equals(this.locationCode, serpGoogleMapsLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleMapsLiveAdvancedRequestInfo.languageCode) &&
         Objects.equals(this.depth, serpGoogleMapsLiveAdvancedRequestInfo.depth) &&
-        Objects.equals(this.device, serpGoogleMapsLiveAdvancedRequestInfo.device) &&
-        Objects.equals(this.locationName, serpGoogleMapsLiveAdvancedRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleMapsLiveAdvancedRequestInfo.languageName) &&
-        Objects.equals(this.os, serpGoogleMapsLiveAdvancedRequestInfo.os) &&
-        Objects.equals(this.tag, serpGoogleMapsLiveAdvancedRequestInfo.tag) &&
-        Objects.equals(this.maxCrawlPages, serpGoogleMapsLiveAdvancedRequestInfo.maxCrawlPages) &&
-        Objects.equals(this.url, serpGoogleMapsLiveAdvancedRequestInfo.url) &&
-        Objects.equals(this.locationCoordinate, serpGoogleMapsLiveAdvancedRequestInfo.locationCoordinate) &&
-        Objects.equals(this.seDomain, serpGoogleMapsLiveAdvancedRequestInfo.seDomain) &&
-        Objects.equals(this.searchThisArea, serpGoogleMapsLiveAdvancedRequestInfo.searchThisArea) &&
-        Objects.equals(this.searchPlaces, serpGoogleMapsLiveAdvancedRequestInfo.searchPlaces);  
+        Objects.equals(this.device, serpGoogleMapsLiveAdvancedRequestInfo.device);  
     
   }
 
@@ -450,7 +210,7 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, device, locationName, languageName, os, tag, maxCrawlPages, url, locationCoordinate, seDomain, searchThisArea, searchPlaces);
+  return Objects.hash(keyword, locationCode, languageCode, depth, device);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -470,16 +230,6 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
-    sb.append("    searchThisArea: ").append(toIndentedString(searchThisArea)).append("\n");
-    sb.append("    searchPlaces: ").append(toIndentedString(searchPlaces)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -512,26 +262,6 @@ public class SerpGoogleMapsLiveAdvancedRequestInfo  {
     openapiFields.add("depth");
     
     openapiFields.add("device");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("os");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("max_crawl_pages");
-    
-    openapiFields.add("url");
-    
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("se_domain");
-    
-    openapiFields.add("search_this_area");
-    
-    openapiFields.add("search_places");
     
 
     // a set of required properties/fields (JSON key names)

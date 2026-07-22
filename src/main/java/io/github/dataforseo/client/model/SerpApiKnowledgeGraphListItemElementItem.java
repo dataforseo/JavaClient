@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowledgeGraphElementItem  {
 
 
@@ -97,7 +96,7 @@ public class SerpApiKnowledgeGraphListItemElementItem  extends BaseSerpApiKnowle
   }
 
   /**
-   * title of the link element
+   * title of the item
    * @return title
    */
   @javax.annotation.Nullable

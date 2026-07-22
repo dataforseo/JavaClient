@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class ItemsGoogleBusinessInfo  {
 
 
@@ -998,9 +997,9 @@ public class ItemsGoogleBusinessInfo  {
 
   public static final String SERIALIZED_NAME_SERVICES = "services";
   @SerializedName(SERIALIZED_NAME_SERVICES)
-  private List<Services> services;
+  private List<BusinessDataServiceInfo> services;
 
-  public ItemsGoogleBusinessInfo services(List<Services> services) {
+  public ItemsGoogleBusinessInfo services(List<BusinessDataServiceInfo> services) {
     this.services = services;
     return this;
   }
@@ -1010,11 +1009,11 @@ public class ItemsGoogleBusinessInfo  {
    * @return services
    */
   @javax.annotation.Nullable
-  public List<Services> getServices() {
+  public List<BusinessDataServiceInfo> getServices() {
     return services;
   }
 
-  public void setServices(List<Services> services) {
+  public void setServices(List<BusinessDataServiceInfo> services) {
     this.services = services;
   }
 

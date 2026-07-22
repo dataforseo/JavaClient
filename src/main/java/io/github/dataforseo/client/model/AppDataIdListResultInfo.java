@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AppDataIdListResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * id of the task
+   * task identifier
+* unique task identifier in our system in the UUID format
    * @return id
    */
   @javax.annotation.Nullable
@@ -171,7 +171,7 @@ public class AppDataIdListResultInfo  {
   }
 
   /**
-   * cost of the task, USD
+   * total tasks cost, USD
    * @return cost
    */
   @javax.annotation.Nullable

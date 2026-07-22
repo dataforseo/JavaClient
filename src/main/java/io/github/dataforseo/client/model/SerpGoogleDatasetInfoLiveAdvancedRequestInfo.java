@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
 
@@ -107,75 +106,6 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languageoptional fieldif you use this field, you don't need to specify language_codepossible value:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating systemoptional fieldpossible values: windows, macosdefault value: windows
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
 
   public SerpGoogleDatasetInfoLiveAdvancedRequestInfo() {
   }
@@ -221,10 +151,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
         Objects.equals(this.datasetId, serpGoogleDatasetInfoLiveAdvancedRequestInfo.datasetId) &&
         Objects.equals(this.languageCode, serpGoogleDatasetInfoLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpGoogleDatasetInfoLiveAdvancedRequestInfo.device) &&
-        Objects.equals(this.languageName, serpGoogleDatasetInfoLiveAdvancedRequestInfo.languageName) &&
-        Objects.equals(this.os, serpGoogleDatasetInfoLiveAdvancedRequestInfo.os) &&
-        Objects.equals(this.tag, serpGoogleDatasetInfoLiveAdvancedRequestInfo.tag);  
+        Objects.equals(this.device, serpGoogleDatasetInfoLiveAdvancedRequestInfo.device);  
     
   }
 
@@ -234,7 +161,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(datasetId, languageCode, device, languageName, os, tag);
+  return Objects.hash(datasetId, languageCode, device);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -252,9 +179,6 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
     sb.append("    datasetId: ").append(toIndentedString(datasetId)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -283,12 +207,6 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("device");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("os");
-    
-    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

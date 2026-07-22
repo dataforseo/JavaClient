@@ -34,7 +34,10 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
+/**
+ * @deprecated
+ */
+@Deprecated
 public class FaqBoxElement  {
 
 
@@ -71,7 +74,7 @@ public class FaqBoxElement  {
   }
 
   /**
-   * title of the element in SERP
+   * title of the link
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +97,7 @@ public class FaqBoxElement  {
   }
 
   /**
-   * description of the link
+   * description of the hotel booking element
    * @return description
    */
   @javax.annotation.Nullable

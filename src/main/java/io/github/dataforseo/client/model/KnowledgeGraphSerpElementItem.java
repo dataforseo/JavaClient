@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -284,7 +283,8 @@ public class KnowledgeGraphSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * additional items present in the element
+* if there are none, equals null
    * @return items
    */
   @javax.annotation.Nullable

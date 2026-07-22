@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class FeaturedSnippetSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -48,9 +47,7 @@ public class FeaturedSnippetSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERP
-* position within a group of elements with identical type values
-* positions of elements with different type values are omitted from rank_group
+   * group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -73,9 +70,7 @@ public class FeaturedSnippetSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERP
-* absolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;
-* to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
+   * absolute rank in SERPabsolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
    * @return rankAbsolute
    */
   @javax.annotation.Nullable

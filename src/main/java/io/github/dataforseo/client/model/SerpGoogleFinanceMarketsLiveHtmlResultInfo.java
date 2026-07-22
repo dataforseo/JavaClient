@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
 
 
@@ -48,8 +47,7 @@ public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * 
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * 
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * 
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * 
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -164,10 +162,7 @@ public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * 
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -182,23 +177,23 @@ public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private Integer itemsCount;
 
-  public SerpGoogleFinanceMarketsLiveHtmlResultInfo itemsCount(Long itemsCount) {
+  public SerpGoogleFinanceMarketsLiveHtmlResultInfo itemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
 
   /**
-   * the number of results returned in the items array
+   * 
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public Integer getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -213,7 +208,7 @@ public class SerpGoogleFinanceMarketsLiveHtmlResultInfo  {
   }
 
   /**
-   * elements of search results found in SERP
+   * 
    * @return items
    */
   @javax.annotation.Nullable

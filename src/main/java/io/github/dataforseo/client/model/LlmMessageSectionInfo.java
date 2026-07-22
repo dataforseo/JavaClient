@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class LlmMessageSectionInfo  {
 
 
@@ -71,7 +70,8 @@ public class LlmMessageSectionInfo  {
   }
 
   /**
-   * AI-generated text content
+   * text of the reasoning chain section
+* text of the reasoning chain  section summarizing the model's thought process
    * @return text
    */
   @javax.annotation.Nullable
@@ -94,7 +94,9 @@ public class LlmMessageSectionInfo  {
   }
 
   /**
-   * array of references used to generate the responseequals null if the web_search parameter is not set to trueNote: annotations may return empty even when web_search is true, as the AI will attempt to retrieve web information but may not find relevant results
+   * array of references used to generate the response
+* equals null if the web_search parameter is not set to true
+* Note: annotations may return empty even when web_search is true, as the AI will attempt to retrieve web information but may not find relevant results
    * @return annotations
    */
   @javax.annotation.Nullable

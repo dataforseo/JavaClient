@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpBingOrganicLiveAdvancedResultInfo  {
 
 
@@ -359,8 +358,7 @@ public class SerpBingOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * elements of search results found in SERP
    * @return items
    */
   @javax.annotation.Nullable

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class MentionCarouselElement  {
 
 
@@ -71,7 +70,7 @@ public class MentionCarouselElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class MentionCarouselElement  {
   }
 
   /**
-   * price indicated in the element
+   * price of the app element
    * @return price
    */
   @javax.annotation.Nullable
@@ -117,9 +116,8 @@ public class MentionCarouselElement  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * the element’s rating 
+* the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable

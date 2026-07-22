@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphExpandedItemSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +98,7 @@ public class KnowledgeGraphExpandedItemSerpElementItem  extends BaseSerpApiEleme
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable

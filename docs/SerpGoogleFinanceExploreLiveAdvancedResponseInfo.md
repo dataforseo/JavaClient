@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleFinanceExploreLiveAdvancedTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpGoogleFinanceExploreLiveAdvancedTaskInfo>** |  |[optional]|

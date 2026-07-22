@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleAutocompleteLiveAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleAutocompleteLiveAdvancedResultInfo>** |  |[optional]|

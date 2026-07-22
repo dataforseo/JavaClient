@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class HotelsPackElement  {
 
 
@@ -117,7 +116,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * description of the results element in SERP
+   * link description
    * @return description
    */
   @javax.annotation.Nullable
@@ -165,7 +164,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -188,7 +187,7 @@ public class HotelsPackElement  {
   }
 
   /**
-   * URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable

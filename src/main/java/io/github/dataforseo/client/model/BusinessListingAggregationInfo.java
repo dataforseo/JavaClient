@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BusinessListingAggregationInfo  {
 
 
@@ -119,7 +118,8 @@ public class BusinessListingAggregationInfo  {
   }
 
   /**
-   * number of unique entities
+   * item types
+* the number of items in the items array
    * @return count
    */
   @javax.annotation.Nullable

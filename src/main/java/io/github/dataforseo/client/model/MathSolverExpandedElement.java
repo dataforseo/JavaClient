@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class MathSolverExpandedElement  {
 
 
@@ -71,7 +70,7 @@ public class MathSolverExpandedElement  {
   }
 
   /**
-   * title of the row
+   * title of the carousel item
    * @return title
    */
   @javax.annotation.Nullable

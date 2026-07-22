@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class Graph  {
 
 
@@ -48,7 +47,7 @@ public class Graph  {
   }
 
   /**
-   * items present in the element
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable

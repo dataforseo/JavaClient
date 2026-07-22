@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class MathSolverSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +98,7 @@ public class MathSolverSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -146,7 +145,7 @@ public class MathSolverSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * contains arrays of specific images
+   * contains arrays of elements available in the list
    * @return items
    */
   @javax.annotation.Nullable
@@ -169,7 +168,9 @@ public class MathSolverSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * website links featured in the element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AmazonRankedSerpElement  {
 
 
@@ -168,8 +167,8 @@ public class AmazonRankedSerpElement  {
   }
 
   /**
-   * date and time when SERP data was last updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+   * date and time when keyword data was updated
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
 * example:
 * 2019-11-15 12:57:46 +00:00
    * @return lastUpdatedTime

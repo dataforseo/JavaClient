@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleLocalFinderTaskPostResponseInfo  {
 
     
@@ -212,7 +211,7 @@ public class SerpGoogleLocalFinderTaskPostResponseInfo  {
   }
 
   /**
-   * array of tasks
+   * 
    * @return tasks
    */
   @javax.annotation.Nullable

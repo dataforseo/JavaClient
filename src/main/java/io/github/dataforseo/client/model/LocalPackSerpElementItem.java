@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +98,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -122,7 +121,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * link description
+   * description of the link
    * @return description
    */
   @javax.annotation.Nullable
@@ -145,7 +144,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain name of the reference
+   * domain of the website hosting the video
    * @return domain
    */
   @javax.annotation.Nullable
@@ -214,7 +213,7 @@ public class LocalPackSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * URL of the third-party review source
    * @return url
    */
   @javax.annotation.Nullable

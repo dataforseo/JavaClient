@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphShoppingElement  {
 
 
@@ -71,7 +70,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * title of the result in SERP
+   * title of the element
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * relevant URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -165,7 +164,7 @@ public class KnowledgeGraphShoppingElement  {
   }
 
   /**
-   * source of additional information about the result
+   * reference source name or title
    * @return source
    */
   @javax.annotation.Nullable

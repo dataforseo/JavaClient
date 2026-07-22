@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationGeminiLlmScraperLiveAdvancedResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST arraythe keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
+   * keyword received in a POST array
+* the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -140,7 +140,10 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * date and time when the result was received
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -163,7 +166,8 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
+   * content of the element in markdown format
+* content of the result formatted in the markdown markup language
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -186,7 +190,8 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * array of sourcesthe sources the model actually cited or relied on in its final answer
+   * array of sources
+* the sources the model actually cited or relied on in its final answer
    * @return sources
    */
   @javax.annotation.Nullable
@@ -232,7 +237,10 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search resultscontains types of search results (items) found in SERP.possible item types:gemini_text, gemini_table, gemini_images
+   * types of search results
+* contains types of search results (items) found in SERP.
+* possible item types:
+* gemini_text, gemini_table, gemini_images
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -278,7 +286,7 @@ public class AiOptimizationGeminiLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * items present in the element
+   * elements of Gemini results
    * @return items
    */
   @javax.annotation.Nullable

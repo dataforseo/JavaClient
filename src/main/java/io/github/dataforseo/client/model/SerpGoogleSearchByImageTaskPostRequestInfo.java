@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleSearchByImageTaskPostRequestInfo  {
 
 
@@ -71,7 +70,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:2840
+   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locationsexample:2840
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:en
+   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languagesexample:en
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,8 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -140,7 +140,8 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -173,282 +174,6 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
 
   public void setPostbackData(String postbackData) {
     this.postbackData = postbackData;
-  }
-
-
-  public static final String SERIALIZED_NAME_PRIORITY = "priority";
-  @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Integer priority;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo priority(Integer priority) {
-    this.priority = priority;
-    return this;
-  }
-
-  /**
-   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
-   * @return priority
-   */
-  @javax.annotation.Nullable
-  public Integer getPriority() {
-    return priority;
-  }
-
-  public void setPriority(Integer priority) {
-    this.priority = priority;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
-  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
-  private Integer maxCrawlPages;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo maxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-    return this;
-  }
-
-  /**
-   * page crawl limitoptional fieldnumber of search results pages to crawlmax value: 100Note: the max_crawl_pages and depth parameters complement each other;learn more at our help center
-   * @return maxCrawlPages
-   */
-  @javax.annotation.Nullable
-  public Integer getMaxCrawlPages() {
-    return maxCrawlPages;
-  }
-
-  public void setMaxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_PARAM = "search_param";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PARAM)
-  private String searchParam;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo searchParam(String searchParam) {
-    this.searchParam = searchParam;
-    return this;
-  }
-
-  /**
-   * additional parameters of the search queryoptional fieldget the list of available parameters and additional details here
-   * @return searchParam
-   */
-  @javax.annotation.Nullable
-  public String getSearchParam() {
-    return searchParam;
-  }
-
-  public void setSearchParam(String searchParam) {
-    this.searchParam = searchParam;
-  }
-
-
-  public static final String SERIALIZED_NAME_CALCULATE_RECTANGLES = "calculate_rectangles";
-  @SerializedName(SERIALIZED_NAME_CALCULATE_RECTANGLES)
-  private Boolean calculateRectangles;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo calculateRectangles(Boolean calculateRectangles) {
-    this.calculateRectangles = calculateRectangles;
-    return this;
-  }
-
-  /**
-   * calculate pixel rankings for SERP elements in advanced resultsoptional fieldpixel ranking refers to the distance between the result snippet and top left corner of the screen;Visit Help Center to learn more>>by default, the parameter is set to falseNote: if set to true, the charge per task will be multiplied by 2
-   * @return calculateRectangles
-   */
-  @javax.annotation.Nullable
-  public Boolean getCalculateRectangles() {
-    return calculateRectangles;
-  }
-
-  public void setCalculateRectangles(Boolean calculateRectangles) {
-    this.calculateRectangles = calculateRectangles;
-  }
-
-
-  public static final String SERIALIZED_NAME_BROWSER_SCREEN_WIDTH = "browser_screen_width";
-  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_WIDTH)
-  private Long browserScreenWidth;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo browserScreenWidth(Long browserScreenWidth) {
-    this.browserScreenWidth = browserScreenWidth;
-    return this;
-  }
-
-  /**
-   * browser screen widthoptional fieldyou can set a custom browser screen width to calculate pixel rankings for a particular device;by default, the parameter is set to 1920;Note: to use this parameter, set calculate_rectangles to true
-   * @return browserScreenWidth
-   */
-  @javax.annotation.Nullable
-  public Long getBrowserScreenWidth() {
-    return browserScreenWidth;
-  }
-
-  public void setBrowserScreenWidth(Long browserScreenWidth) {
-    this.browserScreenWidth = browserScreenWidth;
-  }
-
-
-  public static final String SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT = "browser_screen_height";
-  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT)
-  private Integer browserScreenHeight;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo browserScreenHeight(Integer browserScreenHeight) {
-    this.browserScreenHeight = browserScreenHeight;
-    return this;
-  }
-
-  /**
-   * browser screen heightoptional fieldyou can set a custom browser screen height to calculate pixel rankings for a particular device;by default, the parameter is set to 1080;Note: to use this parameter, set calculate_rectangles to true
-   * @return browserScreenHeight
-   */
-  @javax.annotation.Nullable
-  public Integer getBrowserScreenHeight() {
-    return browserScreenHeight;
-  }
-
-  public void setBrowserScreenHeight(Integer browserScreenHeight) {
-    this.browserScreenHeight = browserScreenHeight;
-  }
-
-
-  public static final String SERIALIZED_NAME_BROWSER_SCREEN_RESOLUTION_RATIO = "browser_screen_resolution_ratio";
-  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_RESOLUTION_RATIO)
-  private Integer browserScreenResolutionRatio;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo browserScreenResolutionRatio(Integer browserScreenResolutionRatio) {
-    this.browserScreenResolutionRatio = browserScreenResolutionRatio;
-    return this;
-  }
-
-  /**
-   * browser screen resolution ratiooptional fieldyou can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;by default, the parameter is set to 1;Note: to use this parameter, set calculate_rectangles to true
-   * @return browserScreenResolutionRatio
-   */
-  @javax.annotation.Nullable
-  public Integer getBrowserScreenResolutionRatio() {
-    return browserScreenResolutionRatio;
-  }
-
-  public void setBrowserScreenResolutionRatio(Integer browserScreenResolutionRatio) {
-    this.browserScreenResolutionRatio = browserScreenResolutionRatio;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a locationrequired field if you don't specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,radius' formatthe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'radius': 199.9 (mm)the maximum value for 'radius': 199999 (mm)example:53.476225,-2.243572,200
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
-  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
-  private String seDomain;
-
-  public SerpGoogleSearchByImageTaskPostRequestInfo seDomain(String seDomain) {
-    this.seDomain = seDomain;
-    return this;
-  }
-
-  /**
-   * search engine domainoptional fieldwe choose the relevant search engine domain automatically according to the location and language you specifyhowever, you can set a custom search engine domain in this fieldexample:google.co.uk, google.com.au, google.de, etc.
-   * @return seDomain
-   */
-  @javax.annotation.Nullable
-  public String getSeDomain() {
-    return seDomain;
-  }
-
-  public void setSeDomain(String seDomain) {
-    this.seDomain = seDomain;
   }
 
 
@@ -500,19 +225,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
         Objects.equals(this.languageCode, serpGoogleSearchByImageTaskPostRequestInfo.languageCode) &&
         Objects.equals(this.pingbackUrl, serpGoogleSearchByImageTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleSearchByImageTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleSearchByImageTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.priority, serpGoogleSearchByImageTaskPostRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpGoogleSearchByImageTaskPostRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleSearchByImageTaskPostRequestInfo.languageName) &&
-        Objects.equals(this.tag, serpGoogleSearchByImageTaskPostRequestInfo.tag) &&
-        Objects.equals(this.maxCrawlPages, serpGoogleSearchByImageTaskPostRequestInfo.maxCrawlPages) &&
-        Objects.equals(this.searchParam, serpGoogleSearchByImageTaskPostRequestInfo.searchParam) &&
-        Objects.equals(this.calculateRectangles, serpGoogleSearchByImageTaskPostRequestInfo.calculateRectangles) &&
-        Objects.equals(this.browserScreenWidth, serpGoogleSearchByImageTaskPostRequestInfo.browserScreenWidth) &&
-        Objects.equals(this.browserScreenHeight, serpGoogleSearchByImageTaskPostRequestInfo.browserScreenHeight) &&
-        Objects.equals(this.browserScreenResolutionRatio, serpGoogleSearchByImageTaskPostRequestInfo.browserScreenResolutionRatio) &&
-        Objects.equals(this.locationCoordinate, serpGoogleSearchByImageTaskPostRequestInfo.locationCoordinate) &&
-        Objects.equals(this.seDomain, serpGoogleSearchByImageTaskPostRequestInfo.seDomain);  
+        Objects.equals(this.postbackData, serpGoogleSearchByImageTaskPostRequestInfo.postbackData);  
     
   }
 
@@ -522,7 +235,7 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(imageUrl, locationCode, languageCode, pingbackUrl, postbackUrl, postbackData, priority, locationName, languageName, tag, maxCrawlPages, searchParam, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, locationCoordinate, seDomain);
+  return Objects.hash(imageUrl, locationCode, languageCode, pingbackUrl, postbackUrl, postbackData);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -543,18 +256,6 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
-    sb.append("    searchParam: ").append(toIndentedString(searchParam)).append("\n");
-    sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
-    sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
-    sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
-    sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -589,30 +290,6 @@ public class SerpGoogleSearchByImageTaskPostRequestInfo  {
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
-    
-    openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("max_crawl_pages");
-    
-    openapiFields.add("search_param");
-    
-    openapiFields.add("calculate_rectangles");
-    
-    openapiFields.add("browser_screen_width");
-    
-    openapiFields.add("browser_screen_height");
-    
-    openapiFields.add("browser_screen_resolution_ratio");
-    
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("se_domain");
     
 
     // a set of required properties/fields (JSON key names)

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KeywordsDataDataforseoTrendsSubregionInterestsLiveResultInfo  {
 
 
@@ -191,8 +190,7 @@ public class KeywordsDataDataforseoTrendsSubregionInterestsLiveResultInfo  {
   }
 
   /**
-   * keyword popularity values per location
-* values in this array represent percentages relative to the maximum value within each region
+   * contains keyword popularity and related data
    * @return items
    */
   @javax.annotation.Nullable

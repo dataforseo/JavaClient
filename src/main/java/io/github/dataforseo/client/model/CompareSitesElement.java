@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class CompareSitesElement  {
 
 
@@ -94,7 +93,7 @@ public class CompareSitesElement  {
   }
 
   /**
-   * URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class CompareSitesElement  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -164,8 +163,7 @@ public class CompareSitesElement  {
   }
 
   /**
-   * source of the element
-* indicates the source of information included in the top_stories_element
+   * reference source name or title
    * @return source
    */
   @javax.annotation.Nullable

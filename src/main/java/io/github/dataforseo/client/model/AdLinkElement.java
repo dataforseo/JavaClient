@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AdLinkElement  {
 
 
@@ -71,7 +70,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * reference page title
+   * title of the element in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class AdLinkElement  {
   }
 
   /**
-   * link description
+   * description of the link
    * @return description
    */
   @javax.annotation.Nullable

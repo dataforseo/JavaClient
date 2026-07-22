@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class GoogleTrendsGoogleTrendsGraphElementItem  extends BaseKeywordDataGoogleTrendsItem  {
 
 
@@ -71,7 +70,7 @@ public class GoogleTrendsGoogleTrendsGraphElementItem  extends BaseKeywordDataGo
   }
 
   /**
-   * keyword popularity values averaged over the whole time range
+   * 
    * @return averages
    */
   @javax.annotation.Nullable

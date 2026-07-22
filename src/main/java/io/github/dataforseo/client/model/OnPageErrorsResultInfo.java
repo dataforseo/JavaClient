@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OnPageErrorsResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class OnPageErrorsResultInfo  {
   }
 
   /**
-   * id of the task
+   * task identifier
+* unique task identifier in our system in the UUID format
    * @return id
    */
   @javax.annotation.Nullable

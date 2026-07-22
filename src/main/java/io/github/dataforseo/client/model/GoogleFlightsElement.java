@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class GoogleFlightsElement  {
 
 
@@ -71,7 +70,7 @@ public class GoogleFlightsElement  {
   }
 
   /**
-   * description of the results element in SERP
+   * link description
    * @return description
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class GoogleFlightsElement  {
   }
 
   /**
-   * URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable

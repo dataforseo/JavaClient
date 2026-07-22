@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsKnowledgeGraphImagesItemElementItem  extends BaseDataforseoLabsKnowledgeGraphElementItem  {
 
 
@@ -71,7 +70,7 @@ public class DataforseoLabsKnowledgeGraphImagesItemElementItem  extends BaseData
   }
 
   /**
-   * elements of search results found in SERP
+   * historical SERPs and related data found in the database
    * @return items
    */
   @javax.annotation.Nullable

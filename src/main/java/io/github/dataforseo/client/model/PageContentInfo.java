@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class PageContentInfo  {
 
 
@@ -48,7 +47,7 @@ public class PageContentInfo  {
   }
 
   /**
-   * content of the header of the table
+   * parsed content of the header
    * @return header
    */
   @javax.annotation.Nullable

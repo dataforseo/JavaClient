@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphImagesElement  {
 
 
@@ -71,7 +70,7 @@ public class KnowledgeGraphImagesElement  {
   }
 
   /**
-   * relevant URL in SERP
+   * relevant URL of the Ad element in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class KnowledgeGraphImagesElement  {
   }
 
   /**
-   * domain in SERP of the ad element
+   * domain in SERP
    * @return domain
    */
   @javax.annotation.Nullable

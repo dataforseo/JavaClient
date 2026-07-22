@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KeywordsDataBingSearchVolumeHistoryLiveRequestInfo  {
 
 
@@ -52,8 +51,7 @@ public class KeywordsDataBingSearchVolumeHistoryLiveRequestInfo  {
 * required field
 * The maximum number of keywords you can specify: 1000
 * The maximum number of characters for each keyword: 100
-* the specified keywords will be converted to lowercase, data will be provided in a separate array
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+* the specified keywords will be converted to lowercase, data will be provided in a separate arraylearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -217,7 +215,7 @@ public class KeywordsDataBingSearchVolumeHistoryLiveRequestInfo  {
 * optional field
 * specify this field if you want to get the data for a particular device types
 * possible values: mobile, desktop, tablet, non_smartphones
-* default value:  ['mobile', 'desktop', 'tablet', 'non_smartphones']
+* default value: ['mobile', 'desktop', 'tablet', 'non_smartphones']
    * @return device
    */
   @javax.annotation.Nullable
@@ -242,12 +240,11 @@ public class KeywordsDataBingSearchVolumeHistoryLiveRequestInfo  {
   /**
    * aggregates the returned data to a certain time period
 * optional field
-* specify this field if you want to get the data in monthly, weekly or daily format
-* possible values: monthly, weekly, daily
+* specify this field if you want to get the data in monthly, weekly or daily formatpossible values: monthly, weekly, daily
 * monthly – returns data up to past 24 months
 * weekly – returns data up to past 15 weeks
 * daily – returns data up to past 45 days
-* default value:  monthly
+* default value: monthly
    * @return period
    */
   @javax.annotation.Nullable
@@ -276,8 +273,7 @@ public class KeywordsDataBingSearchVolumeHistoryLiveRequestInfo  {
 * maximum value: one day from today’s date
 * date format: 'yyyy-mm-dd'
 * example:
-* '2020-01-01'
-* Note: we do not recommend using a custom time range
+* '2020-01-01'Note: we do not recommend using a custom time range
 * Note 2: if date_from and date_to parameters are not specified, the data will be returned for the past 24 months
 * if you specify the period parameter:
 * with value weekly, you will get results for the past 15 weeks
@@ -305,8 +301,7 @@ public class KeywordsDataBingSearchVolumeHistoryLiveRequestInfo  {
 
   /**
    * ending date of the time range
-* optional field
-* minimum value: two years back from today’s date;
+* optional fieldminimum value: two years back from today’s date;
 * maximum value: one day from today’s date;
 * date format: 'yyyy-mm-dd'
 * example:

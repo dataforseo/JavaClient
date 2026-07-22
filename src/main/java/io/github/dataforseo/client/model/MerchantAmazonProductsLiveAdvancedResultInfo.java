@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class MerchantAmazonProductsLiveAdvancedResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST arraykeyword is returned with decoded %## (plus character '+' will be decoded to a space character)
+   * keyword received in a POST array
+* keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -163,7 +163,8 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to Amazon resultsyou can use it to make sure that we provided accurate results
+   * direct URL to Amazon results
+* you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -186,7 +187,10 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * date and time when the result was received
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -209,7 +213,8 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engineif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * autocorrection of the search engine
+* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -232,7 +237,10 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results found in Amazon SERPcontains types of all search results (items) found in the returned SERPpossible item types:amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
+   * types of search results found in Amazon SERP
+* contains types of all search results (items) found in the returned SERP
+* possible item types:
+* amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -324,7 +332,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * Amazon product items within the editorial_recommendations element
+   * Amazon product items
    * @return items
    */
   @javax.annotation.Nullable

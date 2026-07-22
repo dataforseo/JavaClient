@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsKnowledgeGraphCarouselItemElementItem  extends BaseDataforseoLabsKnowledgeGraphElementItem  {
 
 
@@ -48,7 +47,7 @@ public class DataforseoLabsKnowledgeGraphCarouselItemElementItem  extends BaseDa
   }
 
   /**
-   * title of the item
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable
@@ -119,8 +118,7 @@ public class DataforseoLabsKnowledgeGraphCarouselItemElementItem  extends BaseDa
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * historical SERPs and related data found in the database
    * @return items
    */
   @javax.annotation.Nullable

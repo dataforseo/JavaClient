@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleMapsTaskPostRequestInfo  {
 
 
@@ -48,7 +47,7 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters  in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;if this field contains such parameters as ‘allinanchor:’, ‘allintext:’, ‘allintitle:’, ‘allinurl:’, ‘cache:’, ‘define:’, ‘filetype:’, ‘id:’, ‘inanchor:’, ‘info:’, ‘intext:’, ‘intitle:’, ‘inurl:’, ‘link:’, ‘related:’, ‘site:’, the charge per task will be multiplied by 5learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywordrequired fieldyou can specify up to 700 characters  in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:2840
+   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locationsexample:2840
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:en
+   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languagesexample:en
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,8 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depthoptional fieldnumber of results in SERPdefault value: 100max value: 700Your account will be billed per each SERP containing up to 100 results;Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;The cost can be calculated on the Pricing page.
+   * parsing depthoptional fieldnumber of results in SERPdefault value: 100max value: 700
+* Your account will be billed per each SERP containing up to 100 results;Setting depth above 100 may result in additional charges if the search engine returns more than 100 results;The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -140,7 +140,8 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
+   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -186,7 +187,8 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -209,7 +211,8 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -242,236 +245,6 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
 
   public void setPostbackData(String postbackData) {
     this.postbackData = postbackData;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleMapsTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleMapsTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpGoogleMapsTaskPostRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating systemoptional fieldif you specify desktop in the device field, choose from the following values: windows, macosdefault value: windowsif you specify mobile in the device field, choose from the following values: android, iosdefault value: android
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
-  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
-  private Integer maxCrawlPages;
-
-  public SerpGoogleMapsTaskPostRequestInfo maxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-    return this;
-  }
-
-  /**
-   * page crawl limitoptional fieldnumber of search results pages to crawlmax value: 100Note: the max_crawl_pages and depth parameters complement each other;learn more at our help center
-   * @return maxCrawlPages
-   */
-  @javax.annotation.Nullable
-  public Integer getMaxCrawlPages() {
-    return maxCrawlPages;
-  }
-
-  public void setMaxCrawlPages(Integer maxCrawlPages) {
-    this.maxCrawlPages = maxCrawlPages;
-  }
-
-
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
-
-  public SerpGoogleMapsTaskPostRequestInfo url(String url) {
-    this.url = url;
-    return this;
-  }
-
-  /**
-   * direct URL of the search queryoptional fieldyou can specify a direct URL and we will sort it out to the necessary fields. Note that this method is the most difficult for our API to process and also requires you to specify the exact language and location in the URL. In most cases, we wouldn’t recommend using this method.example:https://google.com/maps/search/pizza/@37.09024,-95.712891,4zNote: the following search engine parameters are not supported and will be automatically unset if specified in the URL: allinanchor:, allintext:, allintitle:, allinurl:, cache:, define:, definition:, filetype:, id:, inanchor:, info:, intext:, intitle:, inurl:, link:, site:.
-   * @return url
-   */
-  @javax.annotation.Nullable
-  public String getUrl() {
-    return url;
-  }
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpGoogleMapsTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a locationrequired field if you don't specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,zoom' formatif 'zoom' is not specified, 17z will be applied as a default valuethe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'zoom': 3zthe maximum value for 'zoom': 21zexample:52.6178549,-155.352142,20z
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
-  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
-  private String seDomain;
-
-  public SerpGoogleMapsTaskPostRequestInfo seDomain(String seDomain) {
-    this.seDomain = seDomain;
-    return this;
-  }
-
-  /**
-   * search engine domainoptional fieldwe choose the relevant search engine domain automatically according to the location and language you specifyhowever, you can set a custom search engine domain in this fieldexample:google.co.uk
-   * @return seDomain
-   */
-  @javax.annotation.Nullable
-  public String getSeDomain() {
-    return seDomain;
-  }
-
-  public void setSeDomain(String seDomain) {
-    this.seDomain = seDomain;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_THIS_AREA = "search_this_area";
-  @SerializedName(SERIALIZED_NAME_SEARCH_THIS_AREA)
-  private Boolean searchThisArea;
-
-  public SerpGoogleMapsTaskPostRequestInfo searchThisArea(Boolean searchThisArea) {
-    this.searchThisArea = searchThisArea;
-    return this;
-  }
-
-  /**
-   * show results from the displayed areaoptional fieldcan take the values:true, falsedefault value: trueif set to false, the search_this_area mode will be turned offNote: if the search_this_area mode is turned off, Google Maps listings might contain results beyond the displayed area
-   * @return searchThisArea
-   */
-  @javax.annotation.Nullable
-  public Boolean getSearchThisArea() {
-    return searchThisArea;
-  }
-
-  public void setSearchThisArea(Boolean searchThisArea) {
-    this.searchThisArea = searchThisArea;
-  }
-
-
-  public static final String SERIALIZED_NAME_SEARCH_PLACES = "search_places";
-  @SerializedName(SERIALIZED_NAME_SEARCH_PLACES)
-  private Boolean searchPlaces;
-
-  public SerpGoogleMapsTaskPostRequestInfo searchPlaces(Boolean searchPlaces) {
-    this.searchPlaces = searchPlaces;
-    return this;
-  }
-
-  /**
-   * search places modeoptional fieldthe search places mode allows to obtain Google Maps results on a certain place (e.g., Apple Store in New York)however, due to the pecularities of our data mining algorithm, this mode might interfere with some local-intent queries - and display results for a location that is different from that specified in the request;to prevent this interference and obtain correct results for keywords with local intent you may set this parameter to false;default value: trueNote: if the search_places mode is turned off and no results were found in the search area, the results array will be empty
-   * @return searchPlaces
-   */
-  @javax.annotation.Nullable
-  public Boolean getSearchPlaces() {
-    return searchPlaces;
-  }
-
-  public void setSearchPlaces(Boolean searchPlaces) {
-    this.searchPlaces = searchPlaces;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleMapsTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
   }
 
 
@@ -526,17 +299,7 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
         Objects.equals(this.device, serpGoogleMapsTaskPostRequestInfo.device) &&
         Objects.equals(this.pingbackUrl, serpGoogleMapsTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleMapsTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleMapsTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.locationName, serpGoogleMapsTaskPostRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleMapsTaskPostRequestInfo.languageName) &&
-        Objects.equals(this.os, serpGoogleMapsTaskPostRequestInfo.os) &&
-        Objects.equals(this.maxCrawlPages, serpGoogleMapsTaskPostRequestInfo.maxCrawlPages) &&
-        Objects.equals(this.url, serpGoogleMapsTaskPostRequestInfo.url) &&
-        Objects.equals(this.locationCoordinate, serpGoogleMapsTaskPostRequestInfo.locationCoordinate) &&
-        Objects.equals(this.seDomain, serpGoogleMapsTaskPostRequestInfo.seDomain) &&
-        Objects.equals(this.searchThisArea, serpGoogleMapsTaskPostRequestInfo.searchThisArea) &&
-        Objects.equals(this.searchPlaces, serpGoogleMapsTaskPostRequestInfo.searchPlaces) &&
-        Objects.equals(this.tag, serpGoogleMapsTaskPostRequestInfo.tag);  
+        Objects.equals(this.postbackData, serpGoogleMapsTaskPostRequestInfo.postbackData);  
     
   }
 
@@ -546,7 +309,7 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, priority, device, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, maxCrawlPages, url, locationCoordinate, seDomain, searchThisArea, searchPlaces, tag);
+  return Objects.hash(keyword, locationCode, languageCode, depth, priority, device, pingbackUrl, postbackUrl, postbackData);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -570,16 +333,6 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
-    sb.append("    searchThisArea: ").append(toIndentedString(searchThisArea)).append("\n");
-    sb.append("    searchPlaces: ").append(toIndentedString(searchPlaces)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -620,26 +373,6 @@ public class SerpGoogleMapsTaskPostRequestInfo  {
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("os");
-    
-    openapiFields.add("max_crawl_pages");
-    
-    openapiFields.add("url");
-    
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("se_domain");
-    
-    openapiFields.add("search_this_area");
-    
-    openapiFields.add("search_places");
-    
-    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiKnowledgeGraphAiOverviewItemElementItem  extends BaseSerpApiKnowledgeGraphElementItem  {
 
 
@@ -74,8 +73,7 @@ public class SerpApiKnowledgeGraphAiOverviewItemElementItem  extends BaseSerpApi
   }
 
   /**
-   * popular keywords relevant to the initial search query
-* if there are none, equals null
+   * contains results featured in the ‘hotels_pack’ element of SERP
    * @return items
    */
   @javax.annotation.Nullable

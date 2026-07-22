@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsGoogleHistoricalSerpsLiveItem  {
 
 
@@ -333,7 +332,7 @@ public class DataforseoLabsGoogleHistoricalSerpsLiveItem  {
   }
 
   /**
-   * contains results featured in the ‘hotels_pack’ element of SERP
+   * historical SERPs and related data found in the database
    * @return items
    */
   @javax.annotation.Nullable

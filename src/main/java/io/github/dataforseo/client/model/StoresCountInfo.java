@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class StoresCountInfo  {
 
 
@@ -94,11 +93,7 @@ public class StoresCountInfo  {
   }
 
   /**
-   * whether the number of stores is taken from text
-* indicates whether the number of stores is taken from displayed_text;
-* if the API finds the exact number of stores in the HTML code of the Google Shopping page, this parameter is false;
-* if the API cannot find the number of stores in the HTML code of the page, it takes the number from the displayed_text;
-* in this case, the parameter is true
+   * whether the number of stores is taken from textindicates whether the number of stores is taken from displayed_text;if the API finds the exact number of stores in the HTML code of the Google Shopping page, this parameter is false;if the API cannot find the number of stores in the HTML code of the page, it takes the number from the displayed_text;in this case, the parameter is true
    * @return countFromText
    */
   @javax.annotation.Nullable

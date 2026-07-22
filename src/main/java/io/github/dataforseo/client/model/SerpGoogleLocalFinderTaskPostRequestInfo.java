@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleLocalFinderTaskPostRequestInfo  {
 
 
@@ -48,7 +47,8 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”
+* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +71,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:2840
+   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locationsexample:2840
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +94,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:en
+   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_nameyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languagesexample:en
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,7 +117,8 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depthoptional fieldnumber of results in SERPdefault value for desktop: 20max value for desktop: 500default value for mobile: 10max value for mobile: 350Your account will be billed per each SERP containing up to 20 results for desktop or up to 10 results for a mobile device;Setting depth above 20 for desktop or above 10 for mobile may result in additional charges if the search engine returns more than 20 or 10 results respectively;If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automaticallyThe cost can be calculated on the Pricing page.
+   * parsing depthoptional fieldnumber of results in SERPdefault value for desktop: 20max value for desktop: 500default value for mobile: 10max value for mobile: 350
+* Your account will be billed per each SERP containing up to 20 results for desktop or up to 10 results for a mobile device;Setting depth above 20 for desktop or above 10 for mobile may result in additional charges if the search engine returns more than 20 or 10 results respectively;If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automaticallyThe cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -140,7 +141,8 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priorityYou will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
+   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -186,7 +188,8 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -209,7 +212,8 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -242,167 +246,6 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
 
   public void setPostbackData(String postbackData) {
     this.postbackData = postbackData;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleLocalFinderTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_code or location_coordinateif you use this field, you don't need to specify location_code or location_coordinateyou can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleLocalFinderTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_codeyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpGoogleLocalFinderTaskPostRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating systemoptional fieldif you specify desktop in the device field, choose from the following values: windows, macosdefault value: windowsif you specify mobile in the device field, choose from the following values: android, iosdefault value: android
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleLocalFinderTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
-  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
-  private String locationCoordinate;
-
-  public SerpGoogleLocalFinderTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-    return this;
-  }
-
-  /**
-   * GPS coordinates of a locationrequired field if you don't specify location_name or location_codeif you use this field, you don't need to specify location_name or location_codelocation_coordinate parameter should be specified in the 'latitude,longitude,zoom' formatif 'zoom' is not specified, 9z will be applied as a default valuethe maximum number of decimal digits for 'latitude' and 'longitude': 7the minimum value for 'zoom': 4zthe maximum value for 'zoom': 18zexample:52.6178549,-155.352142,18z
-   * @return locationCoordinate
-   */
-  @javax.annotation.Nullable
-  public String getLocationCoordinate() {
-    return locationCoordinate;
-  }
-
-  public void setLocationCoordinate(String locationCoordinate) {
-    this.locationCoordinate = locationCoordinate;
-  }
-
-
-  public static final String SERIALIZED_NAME_MIN_RATING = "min_rating";
-  @SerializedName(SERIALIZED_NAME_MIN_RATING)
-  private Double minRating;
-
-  public SerpGoogleLocalFinderTaskPostRequestInfo minRating(Double minRating) {
-    this.minRating = minRating;
-    return this;
-  }
-
-  /**
-   * filter results by minimum ratingoptional fieldpossible values for desktop: 3.5, 4, 4.5;possible values for mobile: 2, 2.5, 3, 3.5, 4, 4.5
-   * @return minRating
-   */
-  @javax.annotation.Nullable
-  public Double getMinRating() {
-    return minRating;
-  }
-
-  public void setMinRating(Double minRating) {
-    this.minRating = minRating;
-  }
-
-
-  public static final String SERIALIZED_NAME_TIME_FILTER = "time_filter";
-  @SerializedName(SERIALIZED_NAME_TIME_FILTER)
-  private String timeFilter;
-
-  public SerpGoogleLocalFinderTaskPostRequestInfo timeFilter(String timeFilter) {
-    this.timeFilter = timeFilter;
-    return this;
-  }
-
-  /**
-   * filter results by open hoursoptional fieldusing this field, you can filter places in the results by the time a place is open for visitorsnote that Google may also provide results that do not match this filterpossible values: 'open_now', '24_hours', '$day_value', '$day_value;$time_value';instead of $day_value use one of these values: 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday';instead of $time_value use one of these values: '00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23'example: 'tuesday;18'
-   * @return timeFilter
-   */
-  @javax.annotation.Nullable
-  public String getTimeFilter() {
-    return timeFilter;
-  }
-
-  public void setTimeFilter(String timeFilter) {
-    this.timeFilter = timeFilter;
   }
 
 
@@ -457,14 +300,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
         Objects.equals(this.device, serpGoogleLocalFinderTaskPostRequestInfo.device) &&
         Objects.equals(this.pingbackUrl, serpGoogleLocalFinderTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleLocalFinderTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleLocalFinderTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.locationName, serpGoogleLocalFinderTaskPostRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleLocalFinderTaskPostRequestInfo.languageName) &&
-        Objects.equals(this.os, serpGoogleLocalFinderTaskPostRequestInfo.os) &&
-        Objects.equals(this.tag, serpGoogleLocalFinderTaskPostRequestInfo.tag) &&
-        Objects.equals(this.locationCoordinate, serpGoogleLocalFinderTaskPostRequestInfo.locationCoordinate) &&
-        Objects.equals(this.minRating, serpGoogleLocalFinderTaskPostRequestInfo.minRating) &&
-        Objects.equals(this.timeFilter, serpGoogleLocalFinderTaskPostRequestInfo.timeFilter);  
+        Objects.equals(this.postbackData, serpGoogleLocalFinderTaskPostRequestInfo.postbackData);  
     
   }
 
@@ -474,7 +310,7 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, priority, device, pingbackUrl, postbackUrl, postbackData, locationName, languageName, os, tag, locationCoordinate, minRating, timeFilter);
+  return Objects.hash(keyword, locationCode, languageCode, depth, priority, device, pingbackUrl, postbackUrl, postbackData);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -498,13 +334,6 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
-    sb.append("    minRating: ").append(toIndentedString(minRating)).append("\n");
-    sb.append("    timeFilter: ").append(toIndentedString(timeFilter)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -545,20 +374,6 @@ public class SerpGoogleLocalFinderTaskPostRequestInfo  {
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("os");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("location_coordinate");
-    
-    openapiFields.add("min_rating");
-    
-    openapiFields.add("time_filter");
     
 
     // a set of required properties/fields (JSON key names)

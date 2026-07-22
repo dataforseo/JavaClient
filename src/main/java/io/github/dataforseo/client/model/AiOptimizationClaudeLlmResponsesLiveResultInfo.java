@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
 
 
@@ -71,7 +70,8 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * number of tokens in the inputtotal count of tokens processed
+   * number of tokens in the input
+* total count of tokens processed
    * @return inputTokens
    */
   @javax.annotation.Nullable
@@ -94,7 +94,8 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * number of tokens in the outputtotal count of tokens generated in the AI response
+   * number of tokens in the output
+* total count of tokens generated in the AI response
    * @return outputTokens
    */
   @javax.annotation.Nullable
@@ -117,7 +118,8 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * number of reasoning tokenstotal count of tokens used to generate reasoning content
+   * number of reasoning tokens
+* total count of tokens used to generate reasoning content
    * @return reasoningTokens
    */
   @javax.annotation.Nullable
@@ -163,7 +165,8 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * cost of AI tokens, USDthe price charged by the third-party AI model provider for according to its Pricing
+   * cost of AI tokens, USD
+* the price charged by the third-party AI model provider for according to its Pricing
    * @return moneySpent
    */
   @javax.annotation.Nullable
@@ -186,7 +189,10 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * date and time when the result was received
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -209,7 +215,8 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * array of response itemscontains structured AI response data
+   * array of response items
+* contains structured AI response data
    * @return items
    */
   @javax.annotation.Nullable
@@ -232,7 +239,8 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * array of fan-out queriescontains related search queries derived from the main query to provide a more comprehensive response
+   * array of fan-out queries
+* contains related search queries derived from the main query to provide a more comprehensive response
    * @return fanOutQueries
    */
   @javax.annotation.Nullable

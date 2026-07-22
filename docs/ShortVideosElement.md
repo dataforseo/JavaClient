@@ -7,6 +7,6 @@
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
 **title** | **String** | title of a given link element |[optional]|
-**url** | **String** | URL |[optional]|
-**domain** | **String** | website domain |[optional]|
-**source** | **String** | source of the element<br>indicates the source of information included in the top_stories_element |[optional]|
+**url** | **String** | source URL |[optional]|
+**domain** | **String** | domain where a link points |[optional]|
+**source** | **String** | reference source name or title |[optional]|

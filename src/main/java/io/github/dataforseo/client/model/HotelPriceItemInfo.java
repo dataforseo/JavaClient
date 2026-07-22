@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class HotelPriceItemInfo  {
 
 
@@ -262,7 +261,7 @@ public class HotelPriceItemInfo  {
   }
 
   /**
-   * featured price offers
+   * 
    * @return offers
    */
   @javax.annotation.Nullable

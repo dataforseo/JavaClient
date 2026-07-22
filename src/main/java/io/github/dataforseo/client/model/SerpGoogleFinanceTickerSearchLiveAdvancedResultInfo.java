@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
 
 
@@ -48,8 +47,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * 
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * 
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * 
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * 
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * 
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -188,10 +185,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * 
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -214,8 +208,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * 
    * @return spell
    */
   @javax.annotation.Nullable
@@ -238,8 +231,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * search refinement chips
-* in this case, the value will be null
+   * 
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -262,9 +254,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERP
-* contains types of search results (items) found in SERP;
-* possible item types: google_finance_market_index, google_finance_asset_pair, google_finance_market_instrument
+   * 
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -279,46 +269,46 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private Long seResultsCount;
+  private Integer seResultsCount;
 
-  public SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo seResultsCount(Long seResultsCount) {
+  public SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo seResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
 
   /**
-   * total number of results in SERP
+   * 
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public Long getSeResultsCount() {
+  public Integer getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(Long seResultsCount) {
+  public void setSeResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private Integer itemsCount;
 
-  public SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo itemsCount(Long itemsCount) {
+  public SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo itemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
 
   /**
-   * the number of results returned in the items array
+   * 
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public Integer getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -333,9 +323,7 @@ public class SerpGoogleFinanceTickerSearchLiveAdvancedResultInfo  {
   }
 
   /**
-   * items of search results found in SERP
-* array of items containing market indexes data;
-* possible type of items: google_finance_market_index, google_finance_asset_pair, google_finance_market_instrument
+   * 
    * @return items
    */
   @javax.annotation.Nullable

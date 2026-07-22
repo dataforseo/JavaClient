@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class GoogleHotelsSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -124,7 +123,7 @@ public class GoogleHotelsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * URL of the third-party review source
    * @return url
    */
   @javax.annotation.Nullable

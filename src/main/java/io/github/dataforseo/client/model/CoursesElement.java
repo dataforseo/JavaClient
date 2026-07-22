@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class CoursesElement  {
 
 
@@ -71,7 +70,7 @@ public class CoursesElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class CoursesElement  {
   }
 
   /**
-   * URL
+   * URL of element
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class CoursesElement  {
   }
 
   /**
-   * website domain
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable
@@ -211,7 +210,6 @@ public class CoursesElement  {
 
   /**
    * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -234,9 +232,8 @@ public class CoursesElement  {
   }
 
   /**
-   * the item’s rating 
-* the popularity rate based on reviews and displayed in SERP;
-* if there is none, equals null
+   * the element’s rating 
+* the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable

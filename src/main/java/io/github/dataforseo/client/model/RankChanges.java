@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class RankChanges  {
 
 
@@ -73,8 +72,8 @@ public class RankChanges  {
   }
 
   /**
-   * element was previously present in SERP
-* if the value is true, previously collected SERP didn’t contain this element
+   * number of new ranked elements
+* indicates how many new ranked elements were found for this domain or webpage
    * @return isNew
    */
   @javax.annotation.Nullable
@@ -97,8 +96,8 @@ public class RankChanges  {
   }
 
   /**
-   * rank of this element went up
-* if the value is true, position of the element in SERP is higher compared to the previous check
+   * rank went up
+* indicates how many ranked elements of this target went up in Google Search
    * @return isUp
    */
   @javax.annotation.Nullable
@@ -121,8 +120,8 @@ public class RankChanges  {
   }
 
   /**
-   * rank of this element went down
-* if the value is true, position of the element in SERP is lower compared to the previous check
+   * rank went down
+* indicates how many ranked elements of this target went down in Google Search
    * @return isDown
    */
   @javax.annotation.Nullable

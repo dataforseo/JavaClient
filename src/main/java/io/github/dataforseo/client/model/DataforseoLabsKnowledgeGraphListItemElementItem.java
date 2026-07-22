@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsKnowledgeGraphListItemElementItem  extends BaseDataforseoLabsKnowledgeGraphElementItem  {
 
 
@@ -73,7 +72,7 @@ public class DataforseoLabsKnowledgeGraphListItemElementItem  extends BaseDatafo
   /**
    * google defined data attribute ID
 * example:
-* ss:/webfacts:net_worth
+* action:listen_artist
    * @return dataAttrid
    */
   @javax.annotation.Nullable
@@ -119,8 +118,7 @@ public class DataforseoLabsKnowledgeGraphListItemElementItem  extends BaseDatafo
   }
 
   /**
-   * additional items present in the element
-* if there are none, equals null
+   * historical SERPs and related data found in the database
    * @return items
    */
   @javax.annotation.Nullable

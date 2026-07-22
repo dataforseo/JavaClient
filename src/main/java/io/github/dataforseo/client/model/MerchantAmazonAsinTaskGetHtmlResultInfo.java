@@ -34,30 +34,29 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class MerchantAmazonAsinTaskGetHtmlResultInfo  {
 
 
-  public static final String SERIALIZED_NAME_PRODUCT_ID = "product_id";
-  @SerializedName(SERIALIZED_NAME_PRODUCT_ID)
-  private String productId;
+  public static final String SERIALIZED_NAME_ASIN = "asin";
+  @SerializedName(SERIALIZED_NAME_ASIN)
+  private String asin;
 
-  public MerchantAmazonAsinTaskGetHtmlResultInfo productId(String productId) {
-    this.productId = productId;
+  public MerchantAmazonAsinTaskGetHtmlResultInfo asin(String asin) {
+    this.asin = asin;
     return this;
   }
 
   /**
    * ASIN received in a POST array
-   * @return productId
+   * @return asin
    */
   @javax.annotation.Nullable
-  public String getProductId() {
-    return productId;
+  public String getAsin() {
+    return asin;
   }
 
-  public void setProductId(String productId) {
-    this.productId = productId;
+  public void setAsin(String asin) {
+    this.asin = asin;
   }
 
 
@@ -268,7 +267,7 @@ public class MerchantAmazonAsinTaskGetHtmlResultInfo  {
     MerchantAmazonAsinTaskGetHtmlResultInfo merchantAmazonAsinTaskGetHtmlResultInfo = (MerchantAmazonAsinTaskGetHtmlResultInfo) o;
     return
 
-        Objects.equals(this.productId, merchantAmazonAsinTaskGetHtmlResultInfo.productId) &&
+        Objects.equals(this.asin, merchantAmazonAsinTaskGetHtmlResultInfo.asin) &&
         Objects.equals(this.type, merchantAmazonAsinTaskGetHtmlResultInfo.type) &&
         Objects.equals(this.seDomain, merchantAmazonAsinTaskGetHtmlResultInfo.seDomain) &&
         Objects.equals(this.locationCode, merchantAmazonAsinTaskGetHtmlResultInfo.locationCode) &&
@@ -285,7 +284,7 @@ public class MerchantAmazonAsinTaskGetHtmlResultInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(productId, type, seDomain, locationCode, languageCode, datetime, itemsCount, items);
+  return Objects.hash(asin, type, seDomain, locationCode, languageCode, datetime, itemsCount, items);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -300,7 +299,7 @@ public class MerchantAmazonAsinTaskGetHtmlResultInfo  {
     StringBuilder sb = new StringBuilder();
     sb.append("class MerchantAmazonAsinTaskGetHtmlResultInfo {\n");
 
-    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    asin: ").append(toIndentedString(asin)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
@@ -331,7 +330,7 @@ public class MerchantAmazonAsinTaskGetHtmlResultInfo  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("product_id");
+    openapiFields.add("asin");
     
     openapiFields.add("type");
     

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +98,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -122,7 +121,8 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference source name or title
+   * source of the element
+* indicates the source of information included in the recipes_element
    * @return source
    */
   @javax.annotation.Nullable
@@ -191,7 +191,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * URL of the third-party review source
    * @return url
    */
   @javax.annotation.Nullable
@@ -214,7 +214,7 @@ public class StocksBoxSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain name of the reference
+   * domain of the website hosting the video
    * @return domain
    */
   @javax.annotation.Nullable

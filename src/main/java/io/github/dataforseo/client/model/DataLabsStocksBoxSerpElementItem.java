@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElementItem  {
 
 
@@ -71,8 +70,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * source of the element
-* indicates the source of the video
+   * source of additional information about the result
    * @return source
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * snippet of the element
+   * text alongside the link title
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * price of the shopping element
+   * price of booking a place for the specified dates of stay
    * @return price
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class DataLabsStocksBoxSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * sitelink URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable

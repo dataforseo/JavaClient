@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class ShoppingElement  {
 
 
@@ -117,8 +116,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * source of the element
-* indicates the source of information included in the top_stories_element
+   * reference source name or title
    * @return source
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * description of the results element in SERP
+   * link description
    * @return description
    */
   @javax.annotation.Nullable
@@ -214,7 +212,7 @@ public class ShoppingElement  {
   }
 
   /**
-   * URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable

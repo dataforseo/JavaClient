@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleNewsTaskPostTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpGoogleNewsTaskPostTaskInfo>** |  |[optional]|

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleOrganicLiveHtmlTaskInfo  {
 
     
@@ -237,7 +236,7 @@ public class SerpGoogleOrganicLiveHtmlTaskInfo  {
   }
 
   /**
-   * array of results
+   * 
    * @return result
    */
   @javax.annotation.Nullable

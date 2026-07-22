@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleOrganicLiveAdvancedResultInfo  {
 
 
@@ -48,8 +47,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+   * 
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * 
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * 
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * 
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * 
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -188,10 +185,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * 
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -214,8 +208,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * 
    * @return spell
    */
   @javax.annotation.Nullable
@@ -238,7 +231,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * search refinement chips
+   * 
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -261,10 +254,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERP
-* contains types of search results (items) found in SERP.
-* possible item types:
-* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, google_posts, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box, visual_stories, commercial_units, local_services, google_hotels, math_solver, currency_box,product_considerations, found_on_web, short_videos, refine_products, explore_brands, perspectives, discussions_and_forums, compare_sites, courses, ai_overview
+   * 
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -279,70 +269,69 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
 
   public static final String SERIALIZED_NAME_SE_RESULTS_COUNT = "se_results_count";
   @SerializedName(SERIALIZED_NAME_SE_RESULTS_COUNT)
-  private Long seResultsCount;
+  private Integer seResultsCount;
 
-  public SerpGoogleOrganicLiveAdvancedResultInfo seResultsCount(Long seResultsCount) {
+  public SerpGoogleOrganicLiveAdvancedResultInfo seResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
     return this;
   }
 
   /**
-   * total number of results in SERP
+   * 
    * @return seResultsCount
    */
   @javax.annotation.Nullable
-  public Long getSeResultsCount() {
+  public Integer getSeResultsCount() {
     return seResultsCount;
   }
 
-  public void setSeResultsCount(Long seResultsCount) {
+  public void setSeResultsCount(Integer seResultsCount) {
     this.seResultsCount = seResultsCount;
   }
 
 
   public static final String SERIALIZED_NAME_PAGES_COUNT = "pages_count";
   @SerializedName(SERIALIZED_NAME_PAGES_COUNT)
-  private Long pagesCount;
+  private Integer pagesCount;
 
-  public SerpGoogleOrganicLiveAdvancedResultInfo pagesCount(Long pagesCount) {
+  public SerpGoogleOrganicLiveAdvancedResultInfo pagesCount(Integer pagesCount) {
     this.pagesCount = pagesCount;
     return this;
   }
 
   /**
-   * total search results pages retrieved
-* total number of retrieved SERPs in the result
+   * 
    * @return pagesCount
    */
   @javax.annotation.Nullable
-  public Long getPagesCount() {
+  public Integer getPagesCount() {
     return pagesCount;
   }
 
-  public void setPagesCount(Long pagesCount) {
+  public void setPagesCount(Integer pagesCount) {
     this.pagesCount = pagesCount;
   }
 
 
   public static final String SERIALIZED_NAME_ITEMS_COUNT = "items_count";
   @SerializedName(SERIALIZED_NAME_ITEMS_COUNT)
-  private Long itemsCount;
+  private Integer itemsCount;
 
-  public SerpGoogleOrganicLiveAdvancedResultInfo itemsCount(Long itemsCount) {
+  public SerpGoogleOrganicLiveAdvancedResultInfo itemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
     return this;
   }
 
   /**
-   * the number of results returned in the items array
+   * 
    * @return itemsCount
    */
   @javax.annotation.Nullable
-  public Long getItemsCount() {
+  public Integer getItemsCount() {
     return itemsCount;
   }
 
-  public void setItemsCount(Long itemsCount) {
+  public void setItemsCount(Integer itemsCount) {
     this.itemsCount = itemsCount;
   }
 
@@ -357,7 +346,7 @@ public class SerpGoogleOrganicLiveAdvancedResultInfo  {
   }
 
   /**
-   * contains arrays of elements available in the list
+   * 
    * @return items
    */
   @javax.annotation.Nullable

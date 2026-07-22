@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SpecialOfferInfo  {
 
 
@@ -209,8 +208,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * URL to the product page on the seller’s website
-* Note: this field is deprecated and will return null
+   * URL to the product page on the seller's websiteNote: this field is deprecated and will return null
    * @return url
    */
   @javax.annotation.Nullable

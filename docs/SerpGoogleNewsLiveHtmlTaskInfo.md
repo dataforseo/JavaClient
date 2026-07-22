@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleNewsLiveHtmlResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleNewsLiveHtmlResultInfo>** |  |[optional]|

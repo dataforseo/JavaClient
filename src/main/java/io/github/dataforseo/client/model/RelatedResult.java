@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class RelatedResult  {
 
 
@@ -118,7 +117,7 @@ public class RelatedResult  {
   }
 
   /**
-   * domain where a link points
+   * website domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -141,7 +140,7 @@ public class RelatedResult  {
   }
 
   /**
-   * title of the link
+   * title of a given link element
    * @return title
    */
   @javax.annotation.Nullable
@@ -164,7 +163,7 @@ public class RelatedResult  {
   }
 
   /**
-   * reference page URL
+   * URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -326,7 +325,7 @@ public class RelatedResult  {
   }
 
   /**
-   * description of the hotel booking element
+   * description of the results element in SERP
    * @return description
    */
   @javax.annotation.Nullable
@@ -505,6 +504,7 @@ public class RelatedResult  {
 
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
   private AboutThisResultElement aboutThisResult;
 
@@ -515,15 +515,17 @@ public class RelatedResult  {
 
   /**
    * contains information from the ‘About this result’ panel
-* ‘About this result’ panel provides additional context about why Google returned this result for the given query;
-* this feature appears after clicking on the three dots next to most results
+* Note: this object is deprecated and always returns null
+   * @deprecated
    * @return aboutThisResult
    */
   @javax.annotation.Nullable
+  @Deprecated
   public AboutThisResultElement getAboutThisResult() {
     return aboutThisResult;
   }
 
+  @Deprecated
   public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }
@@ -539,7 +541,7 @@ public class RelatedResult  {
   }
 
   /**
-   * date and time when the video was published or indexed
+   * date and time when the result was published
 * in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
 * example:
 * 2019-11-15 12:57:46 +00:00

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed taskunique task identifier in our system in the UUID format
+   * task identifier of the completed task
+* unique task identifier in our system in the UUID format
    * @return id
    */
   @javax.annotation.Nullable
@@ -94,7 +94,8 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * search engine functionexample: llm_scraper
+   * search engine function
+* example: llm_scraper
    * @return function
    */
   @javax.annotation.Nullable
@@ -163,7 +164,8 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Advanced taskif the Advanced function is not supported in the specified endpoint, the value will be null
+   * URL for collecting the results of the Advanced task
+* if the Advanced function is not supported in the specified endpoint, the value will be null
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -186,7 +188,8 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the HTML taskif the HTML function is not supported in the specified endpoint, the value will be null
+   * URL for collecting the results of the HTML task
+* if the HTML function is not supported in the specified endpoint, the value will be null
    * @return endpointHtml
    */
   @javax.annotation.Nullable

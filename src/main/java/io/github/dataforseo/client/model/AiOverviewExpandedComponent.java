@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOverviewExpandedComponent  {
 
 
@@ -71,7 +70,7 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * title of the element
+   * reference page title
    * @return title
    */
   @javax.annotation.Nullable
@@ -165,7 +164,9 @@ public class AiOverviewExpandedComponent  {
   }
 
   /**
-   * website links featured in the element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable

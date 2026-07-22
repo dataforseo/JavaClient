@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class RatingElement  {
 
 
@@ -71,9 +70,7 @@ public class RatingElement  {
   }
 
   /**
-   * the alignment of the element in Google Shopping SERP
-* possible values:
-* left, right
+   * the alignment of the element in Google Shopping SERPpossible values:left, right
    * @return position
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class RatingElement  {
   }
 
   /**
-   * the type of rating
-* here you can find the following elements: Max5, Percents, CustomMax
+   * the type of ratinghere you can find the following elements: Max5, Percents, CustomMax
    * @return ratingType
    */
   @javax.annotation.Nullable

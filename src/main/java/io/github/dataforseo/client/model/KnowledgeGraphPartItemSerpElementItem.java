@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphPartItemSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -99,7 +98,7 @@ public class KnowledgeGraphPartItemSerpElementItem  extends BaseSerpApiElementIt
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -171,7 +170,9 @@ public class KnowledgeGraphPartItemSerpElementItem  extends BaseSerpApiElementIt
   }
 
   /**
-   * website links featured in the element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable

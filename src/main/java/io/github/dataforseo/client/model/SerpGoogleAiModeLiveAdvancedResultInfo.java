@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleAiModeLiveAdvancedResultInfo  {
 
 
@@ -48,7 +47,8 @@ public class SerpGoogleAiModeLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST arraythe keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
+   * keyword received in a POST array
+* the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -163,7 +163,8 @@ public class SerpGoogleAiModeLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine resultsyou can use it to make sure that we provided exact results
+   * direct URL to search engine results
+* you can use it to make sure that we provided exact results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -186,7 +187,10 @@ public class SerpGoogleAiModeLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * date and time when the result was received
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2019-11-15 12:57:46 +00:00
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -209,7 +213,9 @@ public class SerpGoogleAiModeLiveAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engineif the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection;in this case, the value will be null
+   * autocorrection of the search engine
+* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection;
+* in this case, the value will be null
    * @return spell
    */
   @javax.annotation.Nullable
@@ -232,7 +238,8 @@ public class SerpGoogleAiModeLiveAdvancedResultInfo  {
   }
 
   /**
-   * search refinement chipsin this case, the value will be null
+   * search refinement chips
+* in this case, the value will be null
    * @return refinementChips
    */
   @javax.annotation.Nullable
@@ -255,7 +262,10 @@ public class SerpGoogleAiModeLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results in SERPcontains types of search results (items) found in SERP.possible item types:ai_overview
+   * types of search results in SERP
+* contains types of search results (items) found in SERP.
+* possible item types:
+* ai_overview
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -324,7 +334,7 @@ public class SerpGoogleAiModeLiveAdvancedResultInfo  {
   }
 
   /**
-   * items present in the element
+   * items of the element
    * @return items
    */
   @javax.annotation.Nullable

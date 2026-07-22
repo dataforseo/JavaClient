@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiModeAiOverviewReferenceInfo  {
 
 
@@ -119,7 +118,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * domain in SERP
+   * domain name of the reference
    * @return domain
    */
   @javax.annotation.Nullable
@@ -142,7 +141,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * image source URL
+   * link URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -165,7 +164,7 @@ public class AiModeAiOverviewReferenceInfo  {
   }
 
   /**
-   * title of the element
+   * link anchor text
    * @return title
    */
   @javax.annotation.Nullable

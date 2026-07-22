@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OnPageResourceIssueItemInfo  {
 
 
@@ -118,16 +117,9 @@ public class OnPageResourceIssueItemInfo  {
   }
 
   /**
-   * status code of the error
-* possible values:
-* 0 — Unidentified Error;
-* 501 — Html Parse Error;
-* 1501 — JS Parse Error;
-* 2501 — CSS Parse Error;
-* 3501 — Image Parse Error;
-* 3502 — Image Scale Is Zero;
-* 3503 — Image Size Is Zero;
-* 3504 — Image Format Invalid
+   * general status code
+* you can find the full list of the response codes here
+* Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable

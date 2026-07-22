@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
 
 
@@ -178,9 +177,9 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_SUGGESTED_BID = "suggested_bid";
   @SerializedName(SERIALIZED_NAME_SUGGESTED_BID)
-  private Integer suggestedBid;
+  private Double suggestedBid;
 
-  public KeywordsDataBingAudienceEstimationLiveResultInfo suggestedBid(Integer suggestedBid) {
+  public KeywordsDataBingAudienceEstimationLiveResultInfo suggestedBid(Double suggestedBid) {
     this.suggestedBid = suggestedBid;
     return this;
   }
@@ -190,11 +189,11 @@ public class KeywordsDataBingAudienceEstimationLiveResultInfo  {
    * @return suggestedBid
    */
   @javax.annotation.Nullable
-  public Integer getSuggestedBid() {
+  public Double getSuggestedBid() {
     return suggestedBid;
   }
 
-  public void setSuggestedBid(Integer suggestedBid) {
+  public void setSuggestedBid(Double suggestedBid) {
     this.suggestedBid = suggestedBid;
   }
 

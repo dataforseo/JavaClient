@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsGoogleRelatedKeywordsLiveItem  {
 
 
@@ -49,7 +48,6 @@ public class DataforseoLabsGoogleRelatedKeywordsLiveItem  {
 
   /**
    * search engine type
-* possible values: google
    * @return seType
    */
   @javax.annotation.Nullable

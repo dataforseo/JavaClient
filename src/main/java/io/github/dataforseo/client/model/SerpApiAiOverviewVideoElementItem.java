@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewElementItem  {
 
 
@@ -94,7 +93,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * relevant URL
+   * reference page URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * domain name of the reference
+   * domain in link
    * @return domain
    */
   @javax.annotation.Nullable
@@ -163,7 +162,8 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * reference source name or title
+   * web source of the shopping element
+* indicates the source of information included in the element
    * @return source
    */
   @javax.annotation.Nullable
@@ -211,7 +211,7 @@ public class SerpApiAiOverviewVideoElementItem  extends BaseSerpApiAiOverviewEle
   }
 
   /**
-   * date and time when the result was published
+   * date and time when the video was published or indexed
 * in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
 * example:
 * 2019-11-15 12:57:46 +00:00

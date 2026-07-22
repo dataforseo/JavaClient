@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataLabsImagesSerpElementItem  extends BaseDataforseoLabsApiElementItem  {
 
 
@@ -71,7 +70,7 @@ public class DataLabsImagesSerpElementItem  extends BaseDataforseoLabsApiElement
   }
 
   /**
-   * sitelink URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -108,6 +107,7 @@ public class DataLabsImagesSerpElementItem  extends BaseDataforseoLabsApiElement
 
 
   public static final String SERIALIZED_NAME_RELATED_IMAGE_SEARCHES = "related_image_searches";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_RELATED_IMAGE_SEARCHES)
   private RelatedImageSearchesElement relatedImageSearches;
 
@@ -119,13 +119,16 @@ public class DataLabsImagesSerpElementItem  extends BaseDataforseoLabsApiElement
   /**
    * contains keywords and images related to the specified search term
 * if there are none, equals null
+   * @deprecated
    * @return relatedImageSearches
    */
   @javax.annotation.Nullable
+  @Deprecated
   public RelatedImageSearchesElement getRelatedImageSearches() {
     return relatedImageSearches;
   }
 
+  @Deprecated
   public void setRelatedImageSearches(RelatedImageSearchesElement relatedImageSearches) {
     this.relatedImageSearches = relatedImageSearches;
   }

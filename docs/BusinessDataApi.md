@@ -58,7 +58,6 @@ All URIs are relative to *https://api.dataforseo.com*
 | [**tripadvisorReviewsTasksReady**](BusinessDataApi.md#tripadvisorReviewsTasksReady) | **GET**  /v3/business_data/tripadvisor/reviews/tasks_ready  |
 | [**tripadvisorReviewsTaskGet**](BusinessDataApi.md#tripadvisorReviewsTaskGet) | **GET**  /v3/business_data/tripadvisor/reviews/task_get/{id}  |
 | [**socialMediaPinterestLive**](BusinessDataApi.md#socialMediaPinterestLive) | **POST**  /v3/business_data/social_media/pinterest/live  |
-| [**socialMediaRedditLive**](BusinessDataApi.md#socialMediaRedditLive) | **POST**  /v3/business_data/social_media/reddit/live  |
 
 <a id="businessDataIdList"></a>
 # **businessDataIdList**
@@ -442,23 +441,6 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
     BusinessDataBusinessListingsSearchLiveRequestInfo model = new BusinessDataBusinessListingsSearchLiveRequestInfo()
-           .categories(
-               List.of(
-                   "pizza_restaurant"
-                ))
-           .description("pizza")
-           .title("pizza")
-           .isClaimed(true)
-           .locationCoordinate("53.476225,-2.243572,10")
-           .orderBy(
-               List.of(
-                   "rating.value,desc"
-                ))
-           .filters(
-               List.of(
-               
-                ))
-           .limit(3);
     BusinessDataBusinessListingsSearchLiveResponseInfo response = apiInstance.businessListingsSearchLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {
@@ -3884,85 +3866,6 @@ public class Example {
 ### Return type
 
 [**BusinessDataSocialMediaPinterestLiveResponseInfo**](BusinessDataSocialMediaPinterestLiveResponseInfo.md)
-
-### Authorization
-
-[basicAuth](../README.md#basicAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful operation |  -  |
-
-<a id="socialMediaRedditLive"></a>
-# **socialMediaRedditLive**
-> BusinessDataSocialMediaRedditLiveResponseInfo socialMediaRedditLive()
-
-
-### Example
-```java
-    
-import io.github.dataforseo.client.ApiClient;
-import io.github.dataforseo.client.ApiException;
-import io.github.dataforseo.client.Configuration;
-import io.github.dataforseo.client.auth.*;
-import io.github.dataforseo.client.model.*;
-import io.github.dataforseo.client.api.SerpApi;
-import java.util.List;
-import java.util.Map;
-
-public class Example {
-  public static void main(String[] args) {
-  try {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://api.dataforseo.com");
-
-
-    // Configure HTTP basic authorization: basicAuth
-    HttpBasicAuth basicAuth = (HttpBasicAuth) defaultClient.getAuthentication("basicAuth");
-    basicAuth.setUsername("USERNAME");
-    basicAuth.setPassword("PASSWORD");
-    BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
-    BusinessDataSocialMediaRedditLiveRequestInfo model = new BusinessDataSocialMediaRedditLiveRequestInfo()
-           .targets(
-               List.of(
-                   "https://vk.com/",
-                   "https://ahrefs.com/",
-                   "https://google.com/",
-                   "https://twitter.com/",
-                   "https://reddit.com/",
-                   "https://facebook.com/"
-                ))
-           .tag("some_string_123");
-    BusinessDataSocialMediaRedditLiveResponseInfo response = apiInstance.socialMediaRedditLive(List.of(model));
-    System.out.println(result);
-  } catch (ApiException e) {
-      System.err.println("Exception when calling BusinessDataApi#socialMediaRedditLive");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-    | Name | Type | Description  | Notes |
-    |------------- | ------------- | ------------- | -------------|
-    | **** | [**List&lt;List<BusinessDataSocialMediaRedditLiveRequestInfo>&gt;**](List<BusinessDataSocialMediaRedditLiveRequestInfo>.md)|  | [optional] |
-
-
-
-### Return type
-
-[**BusinessDataSocialMediaRedditLiveResponseInfo**](BusinessDataSocialMediaRedditLiveResponseInfo.md)
 
 ### Authorization
 

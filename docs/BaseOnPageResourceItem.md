@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **resourceType** | **String** | type of the returned resource = ‘html’ |[optional]|
-**statusCode** | **Integer** | status code of the page |[optional]|
+**statusCode** | **Integer** | general status code<br>you can find the full list of the response codes here<br>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions |[optional]|
 **location** | **String** | location header<br>indicates the URL to redirect a page to |[optional]|
 **url** | **String** | page URL |[optional]|
 **resourceErrors** | **OnPageResourceIssueInfo** | resource errors and warnings |[optional]|

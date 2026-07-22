@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **countryIsoCode** | **String** | country ISO code |[optional]|
-**searchVolume** | **Long** | search volume in a given country |[optional]|
+**searchVolume** | **Long** | clickstream-based average monthly search volume rate<br>represents the (approximate) number of searches for the given keyword idea based on clickstream<br>you can learn more about clickstream search volume in this Help Center article |[optional]|
 **percentage** | **Double** | percentage of global search volume |[optional]|

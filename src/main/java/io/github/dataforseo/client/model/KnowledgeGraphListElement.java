@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphListElement  {
 
 
@@ -71,7 +70,7 @@ public class KnowledgeGraphListElement  {
   }
 
   /**
-   * link anchor text
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable

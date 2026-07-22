@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BaseSerpApiElementItem  {
 
 
@@ -71,8 +70,7 @@ public class BaseSerpApiElementItem  {
   }
 
   /**
-   * search results page number
-* indicates the number of the SERP page on which the element is located
+   * search results page numberindicates the number of the SERP page on which the element is located
    * @return page
    */
   @javax.annotation.Nullable

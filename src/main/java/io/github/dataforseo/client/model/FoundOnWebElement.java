@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class FoundOnWebElement  {
 
 
@@ -71,7 +70,7 @@ public class FoundOnWebElement  {
   }
 
   /**
-   * title of a given link element
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable

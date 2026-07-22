@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowledgeGraphElementItem  {
 
 
@@ -97,7 +96,7 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * title of the item
+   * title of the link
    * @return title
    */
   @javax.annotation.Nullable
@@ -169,7 +168,9 @@ public class SerpApiKnowledgeGraphRowItemElementItem  extends BaseSerpApiKnowled
   }
 
   /**
-   * links featured in the faq_box_element
+   * sitelinks
+* the links shown below some of Google’s search results
+* if there are none, equals null
    * @return links
    */
   @javax.annotation.Nullable

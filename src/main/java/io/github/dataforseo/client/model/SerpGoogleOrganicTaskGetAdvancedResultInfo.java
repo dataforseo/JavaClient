@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
 
 
@@ -264,7 +263,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
    * types of search results in SERP
 * contains types of search results (items) found in SERP.
 * possible item types:
-* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, google_posts, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, mention_carousel, recipes, top_sights, scholarly_articles, popular_products, podcasts, questions_and_answers, find_results_on, stocks_box, visual_stories, commercial_units, local_services, google_hotels, math_solver, currency_box,product_considerations, found_on_web, short_videos, refine_products, explore_brands, perspectives, discussions_and_forums, compare_sites, courses, ai_overview
+* answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, recipes, top_sights, scholarly_articles, popular_products,  questions_and_answers, find_results_on, stocks_box, commercial_units, local_services, google_hotels, math_solver, currency_box,product_considerations, short_videos, refine_products, perspectives, discussions_and_forums, compare_sites, ai_overview
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -357,7 +356,7 @@ public class SerpGoogleOrganicTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * contains arrays of elements available in the list
+   * link of the element
    * @return items
    */
   @javax.annotation.Nullable

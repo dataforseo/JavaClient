@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AmazonInfo  {
 
 
@@ -259,8 +258,7 @@ public class AmazonInfo  {
   }
 
   /**
-   * ASIN of the product
-* learn more about ASIN in this help center guide
+   * ASIN in a POST array
    * @return asin
    */
   @javax.annotation.Nullable

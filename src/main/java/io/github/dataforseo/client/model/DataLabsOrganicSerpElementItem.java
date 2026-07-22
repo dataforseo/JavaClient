@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElementItem  {
 
 
@@ -48,7 +47,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * domain in SERP of the Ad element
+   * subdomain in SERP
    * @return domain
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * sitelink URL
+   * relevant URL in SERP
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * 
+   * relevant website name in SERP
    * @return websiteName
    */
   @javax.annotation.Nullable
@@ -411,6 +410,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
   private AboutThisResultElement aboutThisResult;
 
@@ -423,13 +423,16 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
    * contains information from the ‘About this result’ panel
 * ‘About this result’ panel provides additional context about why Google returned this result for the given query;
 * this feature appears after clicking on the three dots next to most results
+   * @deprecated
    * @return aboutThisResult
    */
   @javax.annotation.Nullable
+  @Deprecated
   public AboutThisResultElement getAboutThisResult() {
     return aboutThisResult;
   }
 
+  @Deprecated
   public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }
@@ -492,8 +495,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   /**
    * estimated traffic volume
-* estimated organic monthly traffic to the domain
-* calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
+* estimated organic monthly traffic to the domain or webpage;
+* calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -517,8 +520,9 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * estimated cost of paid monthly search traffic
-* represents the estimated cost of paid monthly traffic (USD) based on etv and cpc values
+   * estimated cost of converting organic search traffic into paid
+* represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;
+* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -543,8 +547,8 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
 
   /**
    * estimated traffic volume based on clickstream data
-* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true
+* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;
+* to retrieve results for this field, the parameter include_clickstream_data must be set to true;
 * learn more about how the metric is calculated in this help center article
    * @return clickstreamEtv
    */
@@ -592,7 +596,7 @@ public class DataLabsOrganicSerpElementItem  extends BaseDataforseoLabsApiElemen
   }
 
   /**
-   * backlinks information for the ranked website
+   * backlinks information for the relevant page URL
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

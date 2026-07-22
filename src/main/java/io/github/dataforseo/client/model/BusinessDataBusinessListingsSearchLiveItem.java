@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BusinessDataBusinessListingsSearchLiveItem  {
 
 
@@ -622,7 +621,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * the element’s rating 
+   * the element's rating 
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
@@ -905,6 +904,29 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
 
+  public static final String SERIALIZED_NAME_SERVICES = "services";
+  @SerializedName(SERIALIZED_NAME_SERVICES)
+  private List<BusinessDataServiceInfo> services;
+
+  public BusinessDataBusinessListingsSearchLiveItem services(List<BusinessDataServiceInfo> services) {
+    this.services = services;
+    return this;
+  }
+
+  /**
+   * 
+   * @return services
+   */
+  @javax.annotation.Nullable
+  public List<BusinessDataServiceInfo> getServices() {
+    return services;
+  }
+
+  public void setServices(List<BusinessDataServiceInfo> services) {
+    this.services = services;
+  }
+
+
 
   public BusinessDataBusinessListingsSearchLiveItem() {
   }
@@ -983,7 +1005,8 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
         Objects.equals(this.contactInfo, businessDataBusinessListingsSearchLiveItem.contactInfo) &&
         Objects.equals(this.checkUrl, businessDataBusinessListingsSearchLiveItem.checkUrl) &&
         Objects.equals(this.lastUpdatedTime, businessDataBusinessListingsSearchLiveItem.lastUpdatedTime) &&
-        Objects.equals(this.firstSeen, businessDataBusinessListingsSearchLiveItem.firstSeen);  
+        Objects.equals(this.firstSeen, businessDataBusinessListingsSearchLiveItem.firstSeen) &&
+        Objects.equals(this.services, businessDataBusinessListingsSearchLiveItem.services);  
     
   }
 
@@ -993,7 +1016,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, title, originalTitle, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime, firstSeen);
+  return Objects.hash(type, title, originalTitle, description, category, categoryIds, additionalCategories, cid, featureId, address, addressInfo, placeId, phone, url, domain, logo, mainImage, totalPhotos, snippet, latitude, longitude, isClaimed, attributes, placeTopics, rating, hotelRating, priceLevel, ratingDistribution, peopleAlsoSearch, workTime, popularTimes, localBusinessLinks, contactInfo, checkUrl, lastUpdatedTime, firstSeen, services);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -1044,6 +1067,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
     sb.append("    checkUrl: ").append(toIndentedString(checkUrl)).append("\n");
     sb.append("    lastUpdatedTime: ").append(toIndentedString(lastUpdatedTime)).append("\n");
     sb.append("    firstSeen: ").append(toIndentedString(firstSeen)).append("\n");
+    sb.append("    services: ").append(toIndentedString(services)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -1138,6 +1162,8 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
     openapiFields.add("last_updated_time");
     
     openapiFields.add("first_seen");
+    
+    openapiFields.add("services");
     
 
     // a set of required properties/fields (JSON key names)

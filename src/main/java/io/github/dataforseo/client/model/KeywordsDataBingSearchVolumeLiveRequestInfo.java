@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KeywordsDataBingSearchVolumeLiveRequestInfo  {
 
 
@@ -52,8 +51,7 @@ public class KeywordsDataBingSearchVolumeLiveRequestInfo  {
 * required field
 * The maximum number of keywords you can specify: 1000
 * The maximum number of characters for each keyword: 100
-* the specified keywords will be converted to lowercase, data will be provided in a separate array
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+* the specified keywords will be converted to lowercase, data will be provided in a separate arraylearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -275,8 +273,7 @@ public class KeywordsDataBingSearchVolumeLiveRequestInfo  {
 * minimum value: two years back from today’s date
 * date format: 'yyyy-mm-dd'
 * example:
-* '2020-01-01'
-* Note: we do not recommend using a custom time range for the past year’s dates
+* '2020-01-01'Note: we do not recommend using a custom time range for the past year’s dates
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -307,8 +304,7 @@ public class KeywordsDataBingSearchVolumeLiveRequestInfo  {
 * note: we do not recommend using a custom time range for the past year’s dates;
 * date format: 'yyyy-mm-dd'
 * example:
-* '2020-03-15'
-* Note: we do not recommend using a custom time range for the past year’s dates
+* '2020-03-15'Note: we do not recommend using a custom time range for the past year’s dates
    * @return dateTo
    */
   @javax.annotation.Nullable

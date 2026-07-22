@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class PeopleAlsoSearch  {
 
 
@@ -121,7 +120,7 @@ public class PeopleAlsoSearch  {
   }
 
   /**
-   * the element’s rating 
+   * the element's rating 
 * the popularity rate based on reviews and displayed in SERP
    * @return rating
    */

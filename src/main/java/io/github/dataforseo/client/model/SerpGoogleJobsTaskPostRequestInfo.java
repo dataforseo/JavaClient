@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleJobsTaskPostRequestInfo  {
 
 
@@ -48,7 +47,8 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;Note: the keyword you specify must indicate the job title;example: .net developerlearn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;Note: the keyword you specify must indicate the job title;example: .net developer
+* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -117,7 +117,8 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depthoptional fieldnumber of results in SERP;default value: 10max value: 200Your account will be billed per each SERP containing up to 10 results;Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically;The cost can be calculated on the Pricing page.
+   * parsing depthoptional fieldnumber of results in SERP;default value: 10max value: 200
+* Your account will be billed per each SERP containing up to 10 results;Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically;The cost can be calculated on the Pricing page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -140,7 +141,8 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
   }
 
   /**
-   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default);2 – high execution priorityYou will be additionally charged for the tasks with high execution priority;The cost can be calculated on the Pricing page
+   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default);2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority;The cost can be calculated on the Pricing page
    * @return priority
    */
   @javax.annotation.Nullable
@@ -163,7 +165,8 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -186,7 +189,8 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -219,121 +223,6 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
 
   public void setPostbackData(String postbackData) {
     this.postbackData = postbackData;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleJobsTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_codeif you use this field, you don't need to specify location_code;you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/serp/google/jobs/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleJobsTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_code;you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleJobsTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_RADIUS = "location_radius";
-  @SerializedName(SERIALIZED_NAME_LOCATION_RADIUS)
-  private String locationRadius;
-
-  public SerpGoogleJobsTaskPostRequestInfo locationRadius(String locationRadius) {
-    this.locationRadius = locationRadius;
-    return this;
-  }
-
-  /**
-   * location search radiusoptional fieldlocation search radius in kilometers;Note: for countries that use the imperial system of units, you will need to convert miles to kilometers by multiplying the value in miles by 1.609;if value is not specified, search is executed anywhere within the specified location;maximal value: 300minimal value: > 0
-   * @return locationRadius
-   */
-  @javax.annotation.Nullable
-  public String getLocationRadius() {
-    return locationRadius;
-  }
-
-  public void setLocationRadius(String locationRadius) {
-    this.locationRadius = locationRadius;
-  }
-
-
-  public static final String SERIALIZED_NAME_EMPLOYMENT_TYPE = "employment_type";
-  @SerializedName(SERIALIZED_NAME_EMPLOYMENT_TYPE)
-  private List<String> employmentType;
-
-  public SerpGoogleJobsTaskPostRequestInfo employmentType(List<String> employmentType) {
-    this.employmentType = employmentType;
-    return this;
-  }
-
-  /**
-   * employment contract typeoptional fieldtype of employment contract for which the search results will be returned;possible values:fulltime, partime, contractor, intern
-   * @return employmentType
-   */
-  @javax.annotation.Nullable
-  public List<String> getEmploymentType() {
-    return employmentType;
-  }
-
-  public void setEmploymentType(List<String> employmentType) {
-    this.employmentType = employmentType;
   }
 
 
@@ -387,12 +276,7 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
         Objects.equals(this.priority, serpGoogleJobsTaskPostRequestInfo.priority) &&
         Objects.equals(this.pingbackUrl, serpGoogleJobsTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleJobsTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleJobsTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.locationName, serpGoogleJobsTaskPostRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleJobsTaskPostRequestInfo.languageName) &&
-        Objects.equals(this.tag, serpGoogleJobsTaskPostRequestInfo.tag) &&
-        Objects.equals(this.locationRadius, serpGoogleJobsTaskPostRequestInfo.locationRadius) &&
-        Objects.equals(this.employmentType, serpGoogleJobsTaskPostRequestInfo.employmentType);  
+        Objects.equals(this.postbackData, serpGoogleJobsTaskPostRequestInfo.postbackData);  
     
   }
 
@@ -402,7 +286,7 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth, priority, pingbackUrl, postbackUrl, postbackData, locationName, languageName, tag, locationRadius, employmentType);
+  return Objects.hash(keyword, locationCode, languageCode, depth, priority, pingbackUrl, postbackUrl, postbackData);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -425,11 +309,6 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    locationRadius: ").append(toIndentedString(locationRadius)).append("\n");
-    sb.append("    employmentType: ").append(toIndentedString(employmentType)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -468,16 +347,6 @@ public class SerpGoogleJobsTaskPostRequestInfo  {
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("location_radius");
-    
-    openapiFields.add("employment_type");
     
 
     // a set of required properties/fields (JSON key names)

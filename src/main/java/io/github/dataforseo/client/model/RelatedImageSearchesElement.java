@@ -34,7 +34,10 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
+/**
+ * @deprecated
+ */
+@Deprecated
 public class RelatedImageSearchesElement  {
 
 
@@ -71,7 +74,7 @@ public class RelatedImageSearchesElement  {
   }
 
   /**
-   * title of a given shopping element
+   * title of the result in SERP
    * @return title
    */
   @javax.annotation.Nullable

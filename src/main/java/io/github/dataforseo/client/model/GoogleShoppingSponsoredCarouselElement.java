@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class GoogleShoppingSponsoredCarouselElement  {
 
 
@@ -140,8 +139,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * name of the seller
-* the name of the company that placed a corresponding product on Google Shopping
+   * name of the sellerthe name of the company that placed a corresponding product on Google Shopping
    * @return seller
    */
   @javax.annotation.Nullable
@@ -164,9 +162,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * product price
-* example:
-* 384.99
+   * product priceexample:384.99
    * @return price
    */
   @javax.annotation.Nullable
@@ -189,9 +185,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * currency in the ISO format
-* example:
-* USD
+   * currency in the ISO formatexample:USD
    * @return currency
    */
   @javax.annotation.Nullable
@@ -214,8 +208,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * product rating
-* the product popularity rate based on product reviews
+   * product ratingthe product popularity rate based on product reviews
    * @return productRating
    */
   @javax.annotation.Nullable
@@ -238,8 +231,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * URLs to the images of the product
-* the first URL in the array is the featured image of the product
+   * URLs to the images of the productthe first URL in the array is the featured image of the product
    * @return productImages
    */
   @javax.annotation.Nullable
@@ -262,8 +254,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * unique ad click referral parameter
-* using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+   * unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
    * @return shopAdAclk
    */
   @javax.annotation.Nullable
@@ -286,8 +277,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * delivery information
-* delivery information including free and fast delivery date ranges
+   * delivery informationdelivery information including free and fast delivery date ranges
    * @return deliveryInfo
    */
   @javax.annotation.Nullable
@@ -310,8 +300,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * special offer from the seller
-* information on the special offer from the seller, including discount and coupon info
+   * special offer from the sellerinformation on the special offer from the seller, including discount and coupon info
    * @return specialOfferInfo
    */
   @javax.annotation.Nullable

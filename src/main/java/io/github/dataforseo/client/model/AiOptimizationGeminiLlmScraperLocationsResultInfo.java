@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationGeminiLlmScraperLocationsResultInfo  {
 
 
@@ -94,7 +93,12 @@ public class AiOptimizationGeminiLlmScraperLocationsResultInfo  {
   }
 
   /**
-   * the code of the superordinate locationexample:'location_code': 9041134,'location_name': 'Vienna International Airport,Lower Austria,Austria','location_code_parent': 20044where location_code_parent corresponds to:'location_code': 20044,'location_name': 'Lower Austria,Austria'
+   * the code of the superordinate location
+* example:
+* 'location_code': 9041134,
+* 'location_name': 'Vienna International Airport,Lower Austria,Austria',
+* 'location_code_parent': 20044where location_code_parent corresponds to:'location_code': 20044,
+* 'location_name': 'Lower Austria,Austria'
    * @return locationCodeParent
    */
   @javax.annotation.Nullable

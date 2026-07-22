@@ -11,6 +11,7 @@
 **position** | **String** | the alignment of the element in SERP<br>can take the following values: left |[optional]|
 **appId** | **String** | ID of the app |[optional]|
 **title** | **String** | title of the app |[optional]|
+**subtitle** | **String** | subtitle of the app |[optional]|
 **url** | **String** | URL to the app page on App Store |[optional]|
 **icon** | **String** | URL to the app icon |[optional]|
 **description** | **String** | description of the app |[optional]|

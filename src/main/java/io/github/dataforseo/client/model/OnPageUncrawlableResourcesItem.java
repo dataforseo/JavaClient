@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OnPageUncrawlableResourcesItem  {
 
 
@@ -71,7 +70,8 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * reason the resource is uncrawlablecan take the following values: content_type_inconsistency
+   * reason the resource is uncrawlable
+* can take the following values: content_type_inconsistency
    * @return reason
    */
   @javax.annotation.Nullable
@@ -94,7 +94,9 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * HTTP response code returned by the uncrawlable resourcepossible values: 200
+   * general status code
+* you can find the full list of the response codes here
+* Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable
@@ -117,7 +119,10 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * date and time when the resource was fetchedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2026-03-09 18:20:32 +00:00
+   * date and time when the resource was fetched
+* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+* example:
+* 2026-03-09 18:20:32 +00:00
    * @return fetchTime
    */
   @javax.annotation.Nullable

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiOptimizationClaudeLlmResponsesTaskPostTaskInfo  {
 
     
@@ -229,24 +228,23 @@ public class AiOptimizationClaudeLlmResponsesTaskPostTaskInfo  {
 
   public static final String SERIALIZED_NAME_RESULT = "result";
   @SerializedName(SERIALIZED_NAME_RESULT)
-  private Object result;
+  private String result;
 
-  public AiOptimizationClaudeLlmResponsesTaskPostTaskInfo result(Object result) {
+  public AiOptimizationClaudeLlmResponsesTaskPostTaskInfo result(String result) {
     this.result = result;
     return this;
   }
 
   /**
-   * array of results
-* in this case, the value will be null
+   * 
    * @return result
    */
   @javax.annotation.Nullable
-  public Object getResult() {
+  public String getResult() {
     return result;
   }
 
-  public void setResult(Object result) {
+  public void setResult(String result) {
     this.result = result;
   }
 

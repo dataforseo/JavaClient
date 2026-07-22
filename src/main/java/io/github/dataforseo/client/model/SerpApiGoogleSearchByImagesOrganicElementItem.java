@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiGoogleSearchByImagesElementItem  {
 
 
@@ -482,6 +481,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
 
 
   public static final String SERIALIZED_NAME_FAQ = "faq";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_FAQ)
   private FaqBox faq;
 
@@ -494,13 +494,16 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
    * frequently asked questions
 * questions and answers extension shown below some of Google’s search results
 * if there are none, equals null
+   * @deprecated
    * @return faq
    */
   @javax.annotation.Nullable
+  @Deprecated
   public FaqBox getFaq() {
     return faq;
   }
 
+  @Deprecated
   public void setFaq(FaqBox faq) {
     this.faq = faq;
   }
@@ -532,6 +535,7 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
 
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
   private AboutThisResultElement aboutThisResult;
 
@@ -544,13 +548,16 @@ public class SerpApiGoogleSearchByImagesOrganicElementItem  extends BaseSerpApiG
    * contains information from the ‘About this result’ panel
 * ‘About this result’ panel provides additional context about why Google returned this result for the given query;
 * this feature appears after clicking on the three dots next to most results
+   * @deprecated
    * @return aboutThisResult
    */
   @javax.annotation.Nullable
+  @Deprecated
   public AboutThisResultElement getAboutThisResult() {
     return aboutThisResult;
   }
 
+  @Deprecated
   public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BacklinksInfo  {
 
 
@@ -48,8 +47,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * number of referring domains
-* referring domains include subdomains that are counted as separate domains for this metric
+   * average number of referring domains
    * @return referringDomains
    */
   @javax.annotation.Nullable
@@ -72,7 +70,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * number of referring main domains
+   * average number of referring main domains
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * number of pages pointing to the target website
+   * average number of referring pages
    * @return referringPages
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * number of dofollow links
+   * average number of dofollow links
    * @return dofollow
    */
   @javax.annotation.Nullable
@@ -141,8 +139,7 @@ public class BacklinksInfo  {
   }
 
   /**
-   * total number of backlinks
-* the total number of backlinks, including dofollow and nofollow links
+   * average number of backlinks
    * @return backlinks
    */
   @javax.annotation.Nullable

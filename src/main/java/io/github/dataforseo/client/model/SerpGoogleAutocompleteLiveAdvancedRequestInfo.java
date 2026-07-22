@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
 
 
@@ -48,7 +47,8 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;
+* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -130,98 +130,6 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleAutocompleteLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_codeif you use this field, you don't need to specify location_code;you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/serp/google/autocomplete/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleAutocompleteLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_codeif you use this field, you don't need to specify language_code;you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_CLIENT = "client";
-  @SerializedName(SERIALIZED_NAME_CLIENT)
-  private String client;
-
-  public SerpGoogleAutocompleteLiveAdvancedRequestInfo client(String client) {
-    this.client = client;
-    return this;
-  }
-
-  /**
-   * search client for autocompleteoptional fieldautocomplete results may differ depending on the search client;possible values:chrome — used when google search is opened in google chrome;chrome-omni — used in the address bar in chrome;gws-wiz — used in google search home page;gws-wiz-serp — used in google search engine results page;safari — used when google search is opened in safari browser;firefox — used when google search is opened in firefox browser;psy-ab — may be used when google search is opened in google chrome browser;toolbar — returns XML;youtube — returns JSONP;gws-wiz-local — used in google local;img — used in google's image search;products-cc — used in google shopping search
-   * @return client
-   */
-  @javax.annotation.Nullable
-  public String getClient() {
-    return client;
-  }
-
-  public void setClient(String client) {
-    this.client = client;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleAutocompleteLiveAdvancedRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
 
   public SerpGoogleAutocompleteLiveAdvancedRequestInfo() {
   }
@@ -268,11 +176,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
         Objects.equals(this.keyword, serpGoogleAutocompleteLiveAdvancedRequestInfo.keyword) &&
         Objects.equals(this.locationCode, serpGoogleAutocompleteLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleAutocompleteLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.cursorPointer, serpGoogleAutocompleteLiveAdvancedRequestInfo.cursorPointer) &&
-        Objects.equals(this.locationName, serpGoogleAutocompleteLiveAdvancedRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleAutocompleteLiveAdvancedRequestInfo.languageName) &&
-        Objects.equals(this.client, serpGoogleAutocompleteLiveAdvancedRequestInfo.client) &&
-        Objects.equals(this.tag, serpGoogleAutocompleteLiveAdvancedRequestInfo.tag);  
+        Objects.equals(this.cursorPointer, serpGoogleAutocompleteLiveAdvancedRequestInfo.cursorPointer);  
     
   }
 
@@ -282,7 +186,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, cursorPointer, locationName, languageName, client, tag);
+  return Objects.hash(keyword, locationCode, languageCode, cursorPointer);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -301,10 +205,6 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    cursorPointer: ").append(toIndentedString(cursorPointer)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    client: ").append(toIndentedString(client)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -335,14 +235,6 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("cursor_pointer");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("client");
-    
-    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

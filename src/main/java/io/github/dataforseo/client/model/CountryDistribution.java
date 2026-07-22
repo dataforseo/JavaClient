@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class CountryDistribution  {
 
 
@@ -71,7 +70,9 @@ public class CountryDistribution  {
   }
 
   /**
-   * search volume in a given country
+   * clickstream-based average monthly search volume rate
+* represents the (approximate) number of searches for the given keyword idea based on clickstream
+* you can learn more about clickstream search volume in this Help Center article
    * @return searchVolume
    */
   @javax.annotation.Nullable

@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
 
 
@@ -528,6 +527,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
 
 
   public static final String SERIALIZED_NAME_FAQ = "faq";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_FAQ)
   private FaqBox faq;
 
@@ -540,13 +540,16 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
    * frequently asked questions
 * questions and answers extension shown below some search results
 * if there are none, equals null
+   * @deprecated
    * @return faq
    */
   @javax.annotation.Nullable
+  @Deprecated
   public FaqBox getFaq() {
     return faq;
   }
 
+  @Deprecated
   public void setFaq(FaqBox faq) {
     this.faq = faq;
   }
@@ -578,6 +581,7 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
 
 
   public static final String SERIALIZED_NAME_ABOUT_THIS_RESULT = "about_this_result";
+  @Deprecated
   @SerializedName(SERIALIZED_NAME_ABOUT_THIS_RESULT)
   private AboutThisResultElement aboutThisResult;
 
@@ -589,13 +593,16 @@ public class BingOrganicSerpElementItem  extends BaseBingSerpApiElementItem  {
   /**
    * contains information from the ‘About this result’ panel
 * note: about_this_result feature is not available in Bing search engine, that’s why it always equals null
+   * @deprecated
    * @return aboutThisResult
    */
   @javax.annotation.Nullable
+  @Deprecated
   public AboutThisResultElement getAboutThisResult() {
     return aboutThisResult;
   }
 
+  @Deprecated
   public void setAboutThisResult(AboutThisResultElement aboutThisResult) {
     this.aboutThisResult = aboutThisResult;
   }

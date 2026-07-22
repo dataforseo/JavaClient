@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo  {
 
 
@@ -117,7 +116,7 @@ public class DomainAnalyticsTechnologiesAggregationTechnologiesLiveResultInfo  {
   }
 
   /**
-   * items array
+   * 
    * @return items
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<SerpGoogleAiModeTaskPostTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<SerpGoogleAiModeTaskPostTaskInfo>** |  |[optional]|

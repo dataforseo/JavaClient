@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AiModeImagesElementInfo  {
 
 
@@ -94,7 +93,7 @@ public class AiModeImagesElementInfo  {
   }
 
   /**
-   * URL link
+   * relevant URL
    * @return url
    */
   @javax.annotation.Nullable

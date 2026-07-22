@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class FetchTiming  {
 
 
@@ -48,7 +47,7 @@ public class FetchTiming  {
   }
 
   /**
-   * indicates how many seconds it took to download a page
+   * total time it takes until a browser receives a complete response from a server (in milliseconds)
    * @return durationTime
    */
   @javax.annotation.Nullable

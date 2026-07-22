@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AmazonProductInfo  {
 
 
@@ -535,9 +534,9 @@ public class AmazonProductInfo  {
 
   public static final String SERIALIZED_NAME_NEWER_MODEL = "newer_model";
   @SerializedName(SERIALIZED_NAME_NEWER_MODEL)
-  private AmazonProductNewerModelInfo newerModel;
+  private NewerModel newerModel;
 
-  public AmazonProductInfo newerModel(AmazonProductNewerModelInfo newerModel) {
+  public AmazonProductInfo newerModel(NewerModel newerModel) {
     this.newerModel = newerModel;
     return this;
   }
@@ -547,20 +546,20 @@ public class AmazonProductInfo  {
    * @return newerModel
    */
   @javax.annotation.Nullable
-  public AmazonProductNewerModelInfo getNewerModel() {
+  public NewerModel getNewerModel() {
     return newerModel;
   }
 
-  public void setNewerModel(AmazonProductNewerModelInfo newerModel) {
+  public void setNewerModel(NewerModel newerModel) {
     this.newerModel = newerModel;
   }
 
 
   public static final String SERIALIZED_NAME_CATEGORIES = "categories";
   @SerializedName(SERIALIZED_NAME_CATEGORIES)
-  private List<ProductCategoryInfo> categories;
+  private List<Categories> categories;
 
-  public AmazonProductInfo categories(List<ProductCategoryInfo> categories) {
+  public AmazonProductInfo categories(List<Categories> categories) {
     this.categories = categories;
     return this;
   }
@@ -570,11 +569,11 @@ public class AmazonProductInfo  {
    * @return categories
    */
   @javax.annotation.Nullable
-  public List<ProductCategoryInfo> getCategories() {
+  public List<Categories> getCategories() {
     return categories;
   }
 
-  public void setCategories(List<ProductCategoryInfo> categories) {
+  public void setCategories(List<Categories> categories) {
     this.categories = categories;
   }
 

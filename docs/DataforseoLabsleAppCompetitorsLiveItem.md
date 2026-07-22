@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **seType** | **String** | search engine type |[optional]|
-**appId** | **String** | id of the competitor app |[optional]|
+**appId** | **String** | id of the app in a POST array |[optional]|
 **avgPosition** | **Float** | average position of the app in Google Play SERP<br>Note: average position is calculated for intersected keywords only;<br>the value for a given application may differ when combined with different target applications |[optional]|
 **sumPosition** | **Integer** | sum of all app positions in Google Play SERP<br>Note: sum position is calculated for intersected keywords only;<br>the value for a given application may differ when combined with different target applications |[optional]|
 **intersections** | **Integer** | number of intersecting keywords |[optional]|

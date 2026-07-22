@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class OnPageLighthouseLiveJsonResponseInfo  {
 
     
@@ -212,7 +211,7 @@ public class OnPageLighthouseLiveJsonResponseInfo  {
   }
 
   /**
-   * array of tasks
+   * 
    * @return tasks
    */
   @javax.annotation.Nullable

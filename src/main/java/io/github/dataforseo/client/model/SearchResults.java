@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SearchResults  {
 
 
@@ -84,26 +83,26 @@ public class SearchResults  {
   }
 
 
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private Integer position;
+  public static final String SERIALIZED_NAME_RANK = "rank";
+  @SerializedName(SERIALIZED_NAME_RANK)
+  private Integer rank;
 
-  public SearchResults position(Integer position) {
-    this.position = position;
+  public SearchResults rank(Integer rank) {
+    this.rank = rank;
     return this;
   }
 
   /**
-   * position in the results
-   * @return position
+   * rank in the results
+   * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getPosition() {
-    return position;
+  public Integer getRank() {
+    return rank;
   }
 
-  public void setPosition(Integer position) {
-    this.position = position;
+  public void setRank(Integer rank) {
+    this.rank = rank;
   }
 
 
@@ -117,7 +116,7 @@ public class SearchResults  {
   }
 
   /**
-   * result title
+   * source title
    * @return title
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class SearchResults  {
   }
 
   /**
-   * result domain
+   * source domain
    * @return domain
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class SearchResults  {
   }
 
   /**
-   * result URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -186,7 +185,10 @@ public class SearchResults  {
   }
 
   /**
-   * date and time when the result was publishedin the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”example:2019-11-15 12:57:46 +00:00
+   * date and time when the result was published
+* in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
+* example:
+* 2019-11-15 12:57:46 +00:00
    * @return publicationDate
    */
   @javax.annotation.Nullable
@@ -244,7 +246,7 @@ public class SearchResults  {
 
         Objects.equals(this.description, searchResults.description) &&
         Objects.equals(this.breadcrumb, searchResults.breadcrumb) &&
-        Objects.equals(this.position, searchResults.position) &&
+        Objects.equals(this.rank, searchResults.rank) &&
         Objects.equals(this.title, searchResults.title) &&
         Objects.equals(this.domain, searchResults.domain) &&
         Objects.equals(this.url, searchResults.url) &&
@@ -258,7 +260,7 @@ public class SearchResults  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(description, breadcrumb, position, title, domain, url, publicationDate);
+  return Objects.hash(description, breadcrumb, rank, title, domain, url, publicationDate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -275,7 +277,7 @@ public class SearchResults  {
 
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    breadcrumb: ").append(toIndentedString(breadcrumb)).append("\n");
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    rank: ").append(toIndentedString(rank)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    domain: ").append(toIndentedString(domain)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
@@ -307,7 +309,7 @@ public class SearchResults  {
     
     openapiFields.add("breadcrumb");
     
-    openapiFields.add("position");
+    openapiFields.add("rank");
     
     openapiFields.add("title");
     

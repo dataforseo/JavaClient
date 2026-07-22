@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleFinanceQuoteLiveAdvancedRequestInfo  {
 
 
@@ -48,7 +47,8 @@ public class SerpGoogleFinanceQuoteLiveAdvancedRequestInfo  {
   }
 
   /**
-   * ticker or stock symbolrequired fieldin this field you can pass the ticker symbol of publicly traded shares of a particular stock or security on a particular stock exchange;you can specify up to 700 characters in the keyword field;all %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * ticker or stock symbolrequired fieldin this field you can pass the ticker symbol of publicly traded shares of a particular stock or security on a particular stock exchange;you can specify up to 700 characters in the keyword field;all %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;
+* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -130,121 +130,6 @@ public class SerpGoogleFinanceQuoteLiveAdvancedRequestInfo  {
   }
 
 
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleFinanceQuoteLiveAdvancedRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_codeif you use this field, you don't need to specify location_codeyou can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleFinanceQuoteLiveAdvancedRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_code if you use this field, you don't need to specify language_codeyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpGoogleFinanceQuoteLiveAdvancedRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating systemoptional fieldpossible values: windows
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleFinanceQuoteLiveAdvancedRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_WINDOW = "window";
-  @SerializedName(SERIALIZED_NAME_WINDOW)
-  private String window;
-
-  public SerpGoogleFinanceQuoteLiveAdvancedRequestInfo window(String window) {
-    this.window = window;
-    return this;
-  }
-
-  /**
-   * time window for google_finance_quote graphoptional fieldpossible values: 1D, 5D, 1M, 6M, YTD, 1Y, 5Y, MAXdefault value: 1DNote: if you specify a value that is different from 1D, the charge per task will be multiplied by 2
-   * @return window
-   */
-  @javax.annotation.Nullable
-  public String getWindow() {
-    return window;
-  }
-
-  public void setWindow(String window) {
-    this.window = window;
-  }
-
-
 
   public SerpGoogleFinanceQuoteLiveAdvancedRequestInfo() {
   }
@@ -291,12 +176,7 @@ public class SerpGoogleFinanceQuoteLiveAdvancedRequestInfo  {
         Objects.equals(this.keyword, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.keyword) &&
         Objects.equals(this.locationCode, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.device) &&
-        Objects.equals(this.locationName, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.languageName) &&
-        Objects.equals(this.os, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.os) &&
-        Objects.equals(this.tag, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.tag) &&
-        Objects.equals(this.window, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.window);  
+        Objects.equals(this.device, serpGoogleFinanceQuoteLiveAdvancedRequestInfo.device);  
     
   }
 
@@ -306,7 +186,7 @@ public class SerpGoogleFinanceQuoteLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, device, locationName, languageName, os, tag, window);
+  return Objects.hash(keyword, locationCode, languageCode, device);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -325,11 +205,6 @@ public class SerpGoogleFinanceQuoteLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    window: ").append(toIndentedString(window)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -360,16 +235,6 @@ public class SerpGoogleFinanceQuoteLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("device");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("os");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("window");
     
 
     // a set of required properties/fields (JSON key names)

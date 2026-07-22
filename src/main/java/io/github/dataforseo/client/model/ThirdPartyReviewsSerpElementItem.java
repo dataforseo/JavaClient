@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class ThirdPartyReviewsSerpElementItem  extends BaseSerpApiElementItem  {
 
 
@@ -122,7 +121,7 @@ public class ThirdPartyReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * reference page title
+   * title of the row
    * @return title
    */
   @javax.annotation.Nullable
@@ -145,7 +144,7 @@ public class ThirdPartyReviewsSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * URL
+   * URL of the third-party review source
    * @return url
    */
   @javax.annotation.Nullable

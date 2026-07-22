@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
 
 
@@ -71,9 +70,7 @@ public class DataforseoLabsAmazonProductCompetitorsLiveItem  {
   }
 
   /**
-   * ASIN of the product
-* unique product identifier on Amazon;
-* for more information, refer to this help center guide
+   * ASIN in a POST array
    * @return asin
    */
   @javax.annotation.Nullable

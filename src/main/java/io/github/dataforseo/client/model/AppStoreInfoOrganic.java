@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AppStoreInfoOrganic  {
 
 
@@ -176,6 +175,29 @@ public class AppStoreInfoOrganic  {
 
   public void setTitle(String title) {
     this.title = title;
+  }
+
+
+  public static final String SERIALIZED_NAME_SUBTITLE = "subtitle";
+  @SerializedName(SERIALIZED_NAME_SUBTITLE)
+  private String subtitle;
+
+  public AppStoreInfoOrganic subtitle(String subtitle) {
+    this.subtitle = subtitle;
+    return this;
+  }
+
+  /**
+   * subtitle of the app
+   * @return subtitle
+   */
+  @javax.annotation.Nullable
+  public String getSubtitle() {
+    return subtitle;
+  }
+
+  public void setSubtitle(String subtitle) {
+    this.subtitle = subtitle;
   }
 
 
@@ -770,6 +792,7 @@ public class AppStoreInfoOrganic  {
         Objects.equals(this.position, appStoreInfoOrganic.position) &&
         Objects.equals(this.appId, appStoreInfoOrganic.appId) &&
         Objects.equals(this.title, appStoreInfoOrganic.title) &&
+        Objects.equals(this.subtitle, appStoreInfoOrganic.subtitle) &&
         Objects.equals(this.url, appStoreInfoOrganic.url) &&
         Objects.equals(this.icon, appStoreInfoOrganic.icon) &&
         Objects.equals(this.description, appStoreInfoOrganic.description) &&
@@ -802,7 +825,7 @@ public class AppStoreInfoOrganic  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(type, rankGroup, rankAbsolute, position, appId, title, url, icon, description, reviewsCount, rating, price, isFree, mainCategory, categories, languages, advisories, developer, developerId, developerUrl, version, minimumOsVersion, size, releasedDate, lastUpdateDate, updateNotes, images, similarApps, moreAppsByDeveloper);
+  return Objects.hash(type, rankGroup, rankAbsolute, position, appId, title, subtitle, url, icon, description, reviewsCount, rating, price, isFree, mainCategory, categories, languages, advisories, developer, developerId, developerUrl, version, minimumOsVersion, size, releasedDate, lastUpdateDate, updateNotes, images, similarApps, moreAppsByDeveloper);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -823,6 +846,7 @@ public class AppStoreInfoOrganic  {
     sb.append("    position: ").append(toIndentedString(position)).append("\n");
     sb.append("    appId: ").append(toIndentedString(appId)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
+    sb.append("    subtitle: ").append(toIndentedString(subtitle)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("    icon: ").append(toIndentedString(icon)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
@@ -880,6 +904,8 @@ public class AppStoreInfoOrganic  {
     openapiFields.add("app_id");
     
     openapiFields.add("title");
+    
+    openapiFields.add("subtitle");
     
     openapiFields.add("url");
     

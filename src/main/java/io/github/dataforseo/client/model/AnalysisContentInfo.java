@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class AnalysisContentInfo  {
 
 
@@ -282,7 +281,7 @@ public class AnalysisContentInfo  {
   }
 
   /**
-   * content language
+   * main language of the domain
 * to obtain a full list of available languages, refer to the Languages endpoint
    * @return language
    */

@@ -34,30 +34,29 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BrandEntities  {
 
 
-  public static final String SERIALIZED_NAME_POSITION = "position";
-  @SerializedName(SERIALIZED_NAME_POSITION)
-  private Integer position;
+  public static final String SERIALIZED_NAME_RANK = "rank";
+  @SerializedName(SERIALIZED_NAME_RANK)
+  private Integer rank;
 
-  public BrandEntities position(Integer position) {
-    this.position = position;
+  public BrandEntities rank(Integer rank) {
+    this.rank = rank;
     return this;
   }
 
   /**
-   * position in the results
-   * @return position
+   * rank in the results
+   * @return rank
    */
   @javax.annotation.Nullable
-  public Integer getPosition() {
-    return position;
+  public Integer getRank() {
+    return rank;
   }
 
-  public void setPosition(Integer position) {
-    this.position = position;
+  public void setRank(Integer rank) {
+    this.rank = rank;
   }
 
 
@@ -71,7 +70,7 @@ public class BrandEntities  {
   }
 
   /**
-   * name of the brand
+   * source title
    * @return title
    */
   @javax.annotation.Nullable
@@ -150,7 +149,7 @@ public class BrandEntities  {
     BrandEntities brandEntities = (BrandEntities) o;
     return
 
-        Objects.equals(this.position, brandEntities.position) &&
+        Objects.equals(this.rank, brandEntities.rank) &&
         Objects.equals(this.title, brandEntities.title) &&
         Objects.equals(this.category, brandEntities.category);  
     
@@ -162,7 +161,7 @@ public class BrandEntities  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(position, title, category);
+  return Objects.hash(rank, title, category);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -177,7 +176,7 @@ public class BrandEntities  {
     StringBuilder sb = new StringBuilder();
     sb.append("class BrandEntities {\n");
 
-    sb.append("    position: ").append(toIndentedString(position)).append("\n");
+    sb.append("    rank: ").append(toIndentedString(rank)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
     sb.append("}");
@@ -203,7 +202,7 @@ public class BrandEntities  {
     // a set of all properties/fields (JSON key names)
     openapiFields = new HashSet<String>();
     
-    openapiFields.add("position");
+    openapiFields.add("rank");
     
     openapiFields.add("title");
     

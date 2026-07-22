@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class KnowledgeGraphExpandedElement  {
 
 
@@ -117,7 +116,7 @@ public class KnowledgeGraphExpandedElement  {
   }
 
   /**
-   * domain in SERP
+   * domain where a link points
    * @return domain
    */
   @javax.annotation.Nullable

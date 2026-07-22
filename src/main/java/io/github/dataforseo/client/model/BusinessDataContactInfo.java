@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class BusinessDataContactInfo  {
 
 
@@ -71,9 +70,7 @@ public class BusinessDataContactInfo  {
   }
 
   /**
-   * contact displayed in SERP 
-* example:
-* '+119797979736'
+   * the value of the rating
    * @return value
    */
   @javax.annotation.Nullable

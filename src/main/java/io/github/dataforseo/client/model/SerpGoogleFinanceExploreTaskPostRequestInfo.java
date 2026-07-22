@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
 
 
@@ -117,7 +116,8 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -140,7 +140,8 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23learn more on our Help Center
+   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
+* learn more on our Help Center
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -186,7 +187,8 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
   }
 
   /**
-   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default);2 – high execution priorityYou will be additionally charged for the tasks with high execution priority;The cost can be calculated on the Pricing page
+   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default);2 – high execution priority
+* You will be additionally charged for the tasks with high execution priority;The cost can be calculated on the Pricing page
    * @return priority
    */
   @javax.annotation.Nullable
@@ -196,121 +198,6 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
 
   public void setPriority(Integer priority) {
     this.priority = priority;
-  }
-
-
-  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
-  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
-  private String locationName;
-
-  public SerpGoogleFinanceExploreTaskPostRequestInfo locationName(String locationName) {
-    this.locationName = locationName;
-    return this;
-  }
-
-  /**
-   * full name of search engine locationrequired field if you don't specify location_codeif you use this field, you don't need to specify location_codeyou can receive the list of available locations of the search engine with their location_name by making a separate request to  https://api.dataforseo.com/v3/serp/google/locationsexample:London,England,United Kingdom
-   * @return locationName
-   */
-  @javax.annotation.Nullable
-  public String getLocationName() {
-    return locationName;
-  }
-
-  public void setLocationName(String locationName) {
-    this.locationName = locationName;
-  }
-
-
-  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
-  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
-  private String languageName;
-
-  public SerpGoogleFinanceExploreTaskPostRequestInfo languageName(String languageName) {
-    this.languageName = languageName;
-    return this;
-  }
-
-  /**
-   * full name of search engine languagerequired field if you don't specify language_code if you use this field, you don't need to specify language_codeyou can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:English
-   * @return languageName
-   */
-  @javax.annotation.Nullable
-  public String getLanguageName() {
-    return languageName;
-  }
-
-  public void setLanguageName(String languageName) {
-    this.languageName = languageName;
-  }
-
-
-  public static final String SERIALIZED_NAME_OS = "os";
-  @SerializedName(SERIALIZED_NAME_OS)
-  private String os;
-
-  public SerpGoogleFinanceExploreTaskPostRequestInfo os(String os) {
-    this.os = os;
-    return this;
-  }
-
-  /**
-   * device operating systemoptional fieldpossible values: windows
-   * @return os
-   */
-  @javax.annotation.Nullable
-  public String getOs() {
-    return os;
-  }
-
-  public void setOs(String os) {
-    this.os = os;
-  }
-
-
-  public static final String SERIALIZED_NAME_TAG = "tag";
-  @SerializedName(SERIALIZED_NAME_TAG)
-  private String tag;
-
-  public SerpGoogleFinanceExploreTaskPostRequestInfo tag(String tag) {
-    this.tag = tag;
-    return this;
-  }
-
-  /**
-   * user-defined task identifieroptional fieldthe character limit is 255you can use this parameter to identify the task and match it with the resultyou will find the specified tag value in the data object of the response
-   * @return tag
-   */
-  @javax.annotation.Nullable
-  public String getTag() {
-    return tag;
-  }
-
-  public void setTag(String tag) {
-    this.tag = tag;
-  }
-
-
-  public static final String SERIALIZED_NAME_NEWS_TYPE = "news_type";
-  @SerializedName(SERIALIZED_NAME_NEWS_TYPE)
-  private String newsType;
-
-  public SerpGoogleFinanceExploreTaskPostRequestInfo newsType(String newsType) {
-    this.newsType = newsType;
-    return this;
-  }
-
-  /**
-   * financial news filtersoptional fieldpossible values: top_stories, local_market, world_marketsdefault value: top_storiesNote: if you specify local_market or world_markets, the charge per task will be multiplied by 2
-   * @return newsType
-   */
-  @javax.annotation.Nullable
-  public String getNewsType() {
-    return newsType;
-  }
-
-  public void setNewsType(String newsType) {
-    this.newsType = newsType;
   }
 
 
@@ -363,12 +250,7 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
         Objects.equals(this.pingbackUrl, serpGoogleFinanceExploreTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleFinanceExploreTaskPostRequestInfo.postbackUrl) &&
         Objects.equals(this.postbackData, serpGoogleFinanceExploreTaskPostRequestInfo.postbackData) &&
-        Objects.equals(this.priority, serpGoogleFinanceExploreTaskPostRequestInfo.priority) &&
-        Objects.equals(this.locationName, serpGoogleFinanceExploreTaskPostRequestInfo.locationName) &&
-        Objects.equals(this.languageName, serpGoogleFinanceExploreTaskPostRequestInfo.languageName) &&
-        Objects.equals(this.os, serpGoogleFinanceExploreTaskPostRequestInfo.os) &&
-        Objects.equals(this.tag, serpGoogleFinanceExploreTaskPostRequestInfo.tag) &&
-        Objects.equals(this.newsType, serpGoogleFinanceExploreTaskPostRequestInfo.newsType);  
+        Objects.equals(this.priority, serpGoogleFinanceExploreTaskPostRequestInfo.priority);  
     
   }
 
@@ -378,7 +260,7 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(locationCode, languageCode, device, pingbackUrl, postbackUrl, postbackData, priority, locationName, languageName, os, tag, newsType);
+  return Objects.hash(locationCode, languageCode, device, pingbackUrl, postbackUrl, postbackData, priority);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -400,11 +282,6 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
-    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
-    sb.append("    os: ").append(toIndentedString(os)).append("\n");
-    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
-    sb.append("    newsType: ").append(toIndentedString(newsType)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -441,16 +318,6 @@ public class SerpGoogleFinanceExploreTaskPostRequestInfo  {
     openapiFields.add("postback_data");
     
     openapiFields.add("priority");
-    
-    openapiFields.add("location_name");
-    
-    openapiFields.add("language_name");
-    
-    openapiFields.add("os");
-    
-    openapiFields.add("tag");
-    
-    openapiFields.add("news_type");
     
 
     // a set of required properties/fields (JSON key names)

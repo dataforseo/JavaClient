@@ -34,7 +34,6 @@ import java.util.Set;
 import io.github.dataforseo.client.JSON;
 
 
-
 public class ScholarlyArticlesElement  {
 
 
@@ -94,7 +93,7 @@ public class ScholarlyArticlesElement  {
   }
 
   /**
-   * URL
+   * source URL
    * @return url
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class ScholarlyArticlesElement  {
   }
 
   /**
-   * description of the results element in SERP
+   * link description
    * @return description
    */
   @javax.annotation.Nullable

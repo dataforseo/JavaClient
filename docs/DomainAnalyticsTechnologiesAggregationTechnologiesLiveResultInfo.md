@@ -8,4 +8,4 @@
 **totalCount** | **Long** | total amount of results in our database relevant to your request |[optional]|
 **itemsCount** | **Long** | the number of results returned in the items array |[optional]|
 **offset** | **Integer** | offset in the results array of returned domains |[optional]|
-**items** | **List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem>** | items array |[optional]|
+**items** | **List<DomainAnalyticsTechnologiesAggregationTechnologiesLiveItem>** |  |[optional]|
