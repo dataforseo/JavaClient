@@ -47,8 +47,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
+   * <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to Amazon results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to Amazon results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * autocorrection of the search engine
-* if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+   * <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
    * @return spell
    */
   @javax.annotation.Nullable
@@ -237,10 +231,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results found in Amazon SERP
-* contains types of all search results (items) found in the returned SERP
-* possible item types:
-* amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
+   * <em>types of search results found in Amazon SERP</em><br>contains types of all search results (<code>items</code>) found in the returned SERP<br>possible item types:<br><code>amazon_serp</code>, <code>amazon_paid</code>, <code>editorial_recommendations</code>, <code>top_rated_from_our_brands</code>, <code>related_searches</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -263,7 +254,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * search engine results count
+   * <em>search engine results count</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -286,7 +277,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * amazon product departments and subcategories
+   * <em>amazon product departments and subcategories</em>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -309,7 +300,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -332,7 +323,7 @@ public class MerchantAmazonProductsLiveAdvancedResultInfo  {
   }
 
   /**
-   * Amazon product items
+   * <em>Amazon product items</em>
    * @return items
    */
   @javax.annotation.Nullable

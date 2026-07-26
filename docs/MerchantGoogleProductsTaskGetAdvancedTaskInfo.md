@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<MerchantGoogleProductsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<MerchantGoogleProductsTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

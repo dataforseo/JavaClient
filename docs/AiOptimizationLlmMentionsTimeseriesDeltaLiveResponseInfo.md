@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AiOptimizationLlmMentionsTimeseriesDeltaLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AiOptimizationLlmMentionsTimeseriesDeltaLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

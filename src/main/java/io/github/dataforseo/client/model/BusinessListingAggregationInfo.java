@@ -47,8 +47,7 @@ public class BusinessListingAggregationInfo  {
   }
 
   /**
-   * the most mentioned related categories
-* top categories displayed with the number of businesses in each category
+   * <em>the most mentioned related categories</em><br>top categories displayed with the number of businesses in each category
    * @return topCategories
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class BusinessListingAggregationInfo  {
   }
 
   /**
-   * the most mentioned counties
-* country codes with the biggest number of businesses in the category
+   * <em>the most mentioned counties</em><br>country codes with the biggest number of businesses in the category
    * @return topCountries
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class BusinessListingAggregationInfo  {
   }
 
   /**
-   * number of unique websites
+   * <em>number of unique websites</em>
    * @return websitesCount
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class BusinessListingAggregationInfo  {
   }
 
   /**
-   * item types
-* the number of items in the items array
+   * <em>item types</em><br>the number of items in the <code>items</code> array
    * @return count
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class BusinessListingAggregationInfo  {
   }
 
   /**
-   * the most mentioned service details
-* service details of a business entity displayed in a form of checks and the number of entities mentioning each attribute
+   * <em>the most mentioned service details</em><br>service details of a business entity displayed in a form of checks and the number of entities mentioning each attribute
    * @return topAttributes
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class BusinessListingAggregationInfo  {
   }
 
   /**
-   * top keywords mentioned in customer reviews
-* contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword
+   * <em>top keywords mentioned in customer reviews</em><br>contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword
    * @return topPlaceTopics
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationLlmMentionsTimeseriesNewLostLiveResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationLlmMentionsTimeseriesNewLostLiveResultInfo>** | <em>array of results</em> |[optional]|

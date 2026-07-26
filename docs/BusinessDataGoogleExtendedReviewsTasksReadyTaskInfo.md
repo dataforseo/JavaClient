@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataGoogleExtendedReviewsTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataGoogleExtendedReviewsTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

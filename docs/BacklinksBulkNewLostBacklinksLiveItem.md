@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**target** | **String** | domain, subdomain or webpage from a POST array |[optional]|
-**newBacklinks** | **Long** | number of new backlinks<br>number of new backlinks pointing to the target |[optional]|
-**lostBacklinks** | **Long** | number of lost backlinks<br>number of lost backlinks of the target |[optional]|
+**target** | **String** | <em>domain, subdomain or webpage from a POST array</em> |[optional]|
+**newBacklinks** | **Long** | <em>number of new backlinks</code></em><br>number of new backlinks pointing to the <code>target</code> |[optional]|
+**lostBacklinks** | **Long** | <em>number of lost backlinks</code></em><br>number of lost backlinks of the <code>target</code> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**items** | **List<GeminiImagesElement>** | elements of Gemini results |[optional]|
+**items** | **List<GeminiImagesElement>** | <em>elements of Gemini results</em> |[optional]|

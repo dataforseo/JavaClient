@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**originalText** | **String** | unformatted text content of the element |[optional]|
-**sources** | **List<SourceInfo>** | array of sources |[optional]|
+**originalText** | **String** | <em>unformatted text content of the element</em> |[optional]|
+**sources** | **List<SourceInfo>** | <em>array of sources</em> |[optional]|

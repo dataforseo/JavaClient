@@ -47,7 +47,7 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
   }
 
   /**
-   * total amount of results in our database relevant to your request
+   * <em>total amount of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
   }
 
   /**
-   * results offset value specified in POST request
+   * <em> results offset value specified in POST request</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class DomainAnalyticsWhoisOverviewLiveResultInfo  {
   }
 
   /**
-   * contains ranking and traffic data
+   * <em>contains ranking and traffic data</em>
    * @return items
    */
   @javax.annotation.Nullable

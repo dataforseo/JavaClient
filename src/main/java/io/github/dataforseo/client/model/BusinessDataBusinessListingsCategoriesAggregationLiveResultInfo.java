@@ -47,7 +47,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo  {
   }
 
   /**
-   * total number of results in our database relevant to your request
+   * <em>total number of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo  {
   }
 
   /**
-   * item types
-* the number of items in the items array
+   * <em>item types</em><br>the number of items in the <code>items</code> array
    * @return count
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo  {
   }
 
   /**
-   * offset in the results array of returned categories
+   * <em>offset in the results array of returned categories</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -109,25 +108,23 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_OFFSET_TOKEN = "offset_token";
   @SerializedName(SERIALIZED_NAME_OFFSET_TOKEN)
-  private String offsetToken;
+  private Object offsetToken;
 
-  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo offsetToken(String offsetToken) {
+  public BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo offsetToken(Object offsetToken) {
     this.offsetToken = offsetToken;
     return this;
   }
 
   /**
-   * token for subsequent requests
-* by specifying the unique offset_token when setting a new task, you will get the subsequent results of the initial task;
-* offset_token values are unique for each subsequent task
+   * <em>token for subsequent requests</em><br>by specifying the unique <code>offset_token</code> when setting a new task, you will get the subsequent results of the initial task;<br><code>offset_token</code> values are unique for each subsequent task
    * @return offsetToken
    */
   @javax.annotation.Nullable
-  public String getOffsetToken() {
+  public Object getOffsetToken() {
     return offsetToken;
   }
 
-  public void setOffsetToken(String offsetToken) {
+  public void setOffsetToken(Object offsetToken) {
     this.offsetToken = offsetToken;
   }
 
@@ -142,9 +139,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveResultInfo  {
   }
 
   /**
-   * encountered item types
-* types of search engine results encountered in the items array;
-* possible item types: business_category
+   * <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>business_category</code>
    * @return items
    */
   @javax.annotation.Nullable

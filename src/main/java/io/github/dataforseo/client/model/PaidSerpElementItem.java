@@ -47,7 +47,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * absolute rank in SERPabsolute position among all the elements found in SERPnote values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;to get all items (including SERP features and rich snippets) with their positions, please refer to the Google Organiс Advanced SERP endpoint
+   * <em> absolute rank in SERP</em><br>absolute position among all the elements found in SERP<strong>note</strong> values are returned in the ascending order, with values corresponding to advanced SERP features omitted from the results;<br>to get all items (including SERP features and rich snippets) with their positions, please refer to the <a href='https://docs.dataforseo.com/v3/serp/google/organic/live/advanced/?php'>Google Organiс Advanced SERP</a> endpoint
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * title of the results element in SERP
+   * <em>title of the results element in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * description of the results element in SERP
+   * <em>description of the results element in SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * relevant URL in SERP
+   * <em> relevant URL in SERP</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class PaidSerpElementItem  extends BaseSerpApiElementItem  {
   }
 
   /**
-   * breadcrumb in SERP
+   * <em>breadcrumb in SERP</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable

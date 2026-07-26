@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BusinessDataBusinessListingsCategoriesAggregationLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BusinessDataBusinessListingsCategoriesAggregationLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

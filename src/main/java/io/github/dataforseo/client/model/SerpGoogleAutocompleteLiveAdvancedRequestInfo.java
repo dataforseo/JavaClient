@@ -47,8 +47,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”;
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <p><em>keyword</em><p><strong>required field</strong><p>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<p>all %## will be decoded (plus character ‘+’ will be decoded to a space character)<p>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”;<p>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”;</p><br><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a></p>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_name;you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/serp/google/locationsexample:2840
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code>;<p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/serp/google/locations</code><p>example:<p><code class='long-string'>2840</code></p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language coderequired field if you don't specify language_nameif you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/languagesexample:en
+   * <p><em>search engine language code</em><p><strong>required field if you don't specify</strong> <code>language_name</code><p><strong>if you use this field, you don't need to specify <code>language_name</code></strong>;<p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/languages</code><em><p></em>example:<em><p></em><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search bar cursor pointeroptional fieldthe horizontal numerical position of the cursor pointer within the keyword in the search bar;by modifying the position of the cursor pointer, you will obtain different autocomplete suggestions for the same seed keyword;minimal value: 0default value: the number of the last character of the specified keywordexample:|which query are s - 'cursor_pointer': 0which query is s| - 'cursor_pointer': 16which que|ry is s - 'cursor_pointer': 9
+   * <p><em>search bar cursor pointer</em><p>optional field<p>the horizontal numerical position of the cursor pointer within the keyword in the search bar;<p>by modifying the position of the cursor pointer, you will obtain different autocomplete suggestions for the same seed keyword;<p>minimal value: <code>0</code><p>default value: the number of the last character of the specified <code>keyword</code><p>example:<p><code>|which query are s</code> - <code>'cursor_pointer': 0</code><p><code>which query is s|</code> - <code>'cursor_pointer': 16</code><p><code>which que|ry is s</code> - <code>'cursor_pointer': 9</code></p>
    * @return cursorPointer
    */
   @javax.annotation.Nullable
@@ -127,6 +126,98 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
 
   public void setCursorPointer(Integer cursorPointer) {
     this.cursorPointer = cursorPointer;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleAutocompleteLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_code</code></strong>;<p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/serp/google/autocomplete/locations</code><p>example:<p><code class='long-string'>London,England,United Kingdom</code></p>
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleAutocompleteLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine language</em><p><strong>required field if you don't specify</strong> <code>language_code</code><p><strong>if you use this field, you don't need to specify <code>language_code</code></strong>;<p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/serp/google/languages</code><p>example:<p><code class='long-string'>English</code></p>
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_CLIENT = "client";
+  @SerializedName(SERIALIZED_NAME_CLIENT)
+  private String client;
+
+  public SerpGoogleAutocompleteLiveAdvancedRequestInfo client(String client) {
+    this.client = client;
+    return this;
+  }
+
+  /**
+   * <p><em>search client for autocomplete</em><p>optional field<p>autocomplete results may differ depending on the search client;<p>possible values:<p><code>chrome</code> — used when google search is opened in google chrome;<p><code>chrome-omni</code> — used in the address bar in chrome;<p><code>gws-wiz</code> — used in google search home page;<p><code>gws-wiz-serp</code> — used in google search engine results page;<p><code>safari</code> — used when google search is opened in safari browser;<p><code>firefox</code> — used when google search is opened in firefox browser;<p><code>psy-ab</code> — may be used when google search is opened in google chrome browser;<p><code>toolbar</code> — returns XML;<p><code>youtube</code> — returns JSONP;<p><code>gws-wiz-local</code> — used in google local;<p><code>img</code> — used in google's image search;<p><code>products-cc</code> — used in google shopping search</p>
+   * @return client
+   */
+  @javax.annotation.Nullable
+  public String getClient() {
+    return client;
+  }
+
+  public void setClient(String client) {
+    this.client = client;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleAutocompleteLiveAdvancedRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -176,7 +267,11 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
         Objects.equals(this.keyword, serpGoogleAutocompleteLiveAdvancedRequestInfo.keyword) &&
         Objects.equals(this.locationCode, serpGoogleAutocompleteLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleAutocompleteLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.cursorPointer, serpGoogleAutocompleteLiveAdvancedRequestInfo.cursorPointer);  
+        Objects.equals(this.cursorPointer, serpGoogleAutocompleteLiveAdvancedRequestInfo.cursorPointer) &&
+        Objects.equals(this.locationName, serpGoogleAutocompleteLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleAutocompleteLiveAdvancedRequestInfo.languageName) &&
+        Objects.equals(this.client, serpGoogleAutocompleteLiveAdvancedRequestInfo.client) &&
+        Objects.equals(this.tag, serpGoogleAutocompleteLiveAdvancedRequestInfo.tag);  
     
   }
 
@@ -186,7 +281,7 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, cursorPointer);
+  return Objects.hash(keyword, locationCode, languageCode, cursorPointer, locationName, languageName, client, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -205,6 +300,10 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    cursorPointer: ").append(toIndentedString(cursorPointer)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    client: ").append(toIndentedString(client)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -235,6 +334,14 @@ public class SerpGoogleAutocompleteLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("cursor_pointer");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("client");
+    
+    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

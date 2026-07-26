@@ -47,7 +47,7 @@ public class AiModeTableInfo  {
   }
 
   /**
-   * content in the header of the table
+   * <em>content in the header of the table</em>
    * @return tableHeader
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiModeTableInfo  {
   }
 
   /**
-   * array of contents of the table present in the elementeach array represents the table row
+   * <em>array of contents of the table present in the element</em><br>each array represents the table row
    * @return tableContent
    */
   @javax.annotation.Nullable

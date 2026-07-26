@@ -47,8 +47,7 @@ public class OtherSitesReviewsInfo  {
   }
 
   /**
-   * review title
-* contains a name of the third-party site where review initially appeared
+   * <em>review title</em><br>contains a name of the third-party site where review initially appeared
    * @return title
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class OtherSitesReviewsInfo  {
   }
 
   /**
-   * review url
-* URL to the a third-party site where review initially appeared
+   * <em>review url</em><br>URL to the a third-party site where review initially appeared
    * @return url
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class OtherSitesReviewsInfo  {
   }
 
   /**
-   * review text
-* text of the review
+   * <em>review text</em><br>text of the review
    * @return reviewText
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class OtherSitesReviewsInfo  {
   }
 
   /**
-   * rating in the review
-* information about the rating enclosed in the review on a third-party site
+   * <em>rating in the review</em><br>information about the rating enclosed in the review on a third-party site
    * @return rating
    */
   @javax.annotation.Nullable

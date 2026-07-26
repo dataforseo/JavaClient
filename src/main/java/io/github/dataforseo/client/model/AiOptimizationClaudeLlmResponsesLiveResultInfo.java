@@ -47,7 +47,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * name of the AI model used
+   * <em>name of the AI model used</em>
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * number of tokens in the input
-* total count of tokens processed
+   * <em>number of tokens in the input</em><br>total count of tokens processed
    * @return inputTokens
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * number of tokens in the output
-* total count of tokens generated in the AI response
+   * <em>number of tokens in the output</em><br>total count of tokens generated in the AI response
    * @return outputTokens
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * number of reasoning tokens
-* total count of tokens used to generate reasoning content
+   * <em>number of reasoning tokens</em><br>total count of tokens used to generate reasoning content
    * @return reasoningTokens
    */
   @javax.annotation.Nullable
@@ -142,7 +139,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * indicates if web search was used
+   * <em>indicates if web search was used</em>
    * @return webSearch
    */
   @javax.annotation.Nullable
@@ -165,8 +162,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * cost of AI tokens, USD
-* the price charged by the third-party AI model provider for according to its Pricing
+   * <em>cost of AI tokens, USD</em><br>the price charged by the third-party AI model provider for according to its <a href='https://docs.anthropic.com/en/docs/about-claude/pricing' target='_blank'>Pricing</a>
    * @return moneySpent
    */
   @javax.annotation.Nullable
@@ -189,10 +185,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -215,8 +208,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * array of response items
-* contains structured AI response data
+   * <em>array of response items</em><br>contains structured AI response data
    * @return items
    */
   @javax.annotation.Nullable
@@ -239,8 +231,7 @@ public class AiOptimizationClaudeLlmResponsesLiveResultInfo  {
   }
 
   /**
-   * array of fan-out queries
-* contains related search queries derived from the main query to provide a more comprehensive response
+   * <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response
    * @return fanOutQueries
    */
   @javax.annotation.Nullable

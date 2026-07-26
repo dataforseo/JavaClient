@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**workHours** | **WorkHours** | open hours<br>information about work hours of the local establishment |[optional]|
+**workHours** | **WorkHours** | <em>open hours</em><br>information about work hours of the local establishment |[optional]|

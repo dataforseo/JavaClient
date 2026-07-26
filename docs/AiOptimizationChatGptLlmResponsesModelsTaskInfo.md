@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationChatGptLlmResponsesModelsResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationChatGptLlmResponsesModelsResultInfo>** | <em>array of results</em> |[optional]|

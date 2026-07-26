@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**totalCount** | **Long** | total number of relevant items in the database |[optional]|
-**itemsCount** | **Long** | number of items in the items array |[optional]|
-**items** | **List<BacklinksCompetitorsLiveItem>** | items array |[optional]|
+**totalCount** | **Long** | <em>total number of relevant items in the database</em> |[optional]|
+**itemsCount** | **Long** | <em>number of items in the <code>items</code> array</em> |[optional]|
+**items** | **List<BacklinksCompetitorsLiveItem>** | <em>items array</em> |[optional]|

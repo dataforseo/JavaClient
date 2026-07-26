@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationClaudeLlmResponsesTasksReadyResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationClaudeLlmResponsesTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

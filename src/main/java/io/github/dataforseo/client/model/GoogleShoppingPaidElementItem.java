@@ -47,7 +47,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * domain of the URLdomain of the URL where a special offer is postedNote: this field is deprecated and will return null
+   * <em>domain of the URL</em><br>domain of the URL where a special offer is posted<br><strong>Note:</strong> this field is deprecated and will return <code>null</code>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * description of the product in Google Shopping SERP
+   * <em>description of the product in Google Shopping SERP</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * URL pointing at special offer pageURL where a special offer is postedNote: this field is deprecated and will return null
+   * <em>URL pointing at special offer page</em><br>URL where a special offer is posted<br><strong>Note:</strong> this field is deprecated and will return <code>null</code>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class GoogleShoppingPaidElementItem  extends BaseMerchantGoogleShoppingPr
   }
 
   /**
-   * unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+   * <em>unique ad click referral parameter</em><br>using this parameter you can get a URL of the advertisement in <a href='/v3/merchant/google/sellers/ad_url/'>Google Shopping Sellers Ad URL</a>
    * @return shopAdAclk
    */
   @javax.annotation.Nullable

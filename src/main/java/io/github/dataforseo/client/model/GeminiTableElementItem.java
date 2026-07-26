@@ -47,7 +47,7 @@ public class GeminiTableElementItem  extends BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * unformatted text content of the element
+   * <em>unformatted text content of the element</em>
    * @return originalText
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class GeminiTableElementItem  extends BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * table present in the elementthe header and content of the table present in the element
+   * <em>table present in the element</em><br>the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class GeminiTextElementItem  extends BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * unformatted text content of the element
+   * <em>unformatted text content of the element</em>
    * @return originalText
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class GeminiTextElementItem  extends BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * array of sources
+   * <em>array of sources</em>
    * @return sources
    */
   @javax.annotation.Nullable

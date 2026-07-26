@@ -47,7 +47,7 @@ public class MerchantAmazonSellersLiveHtmlResultInfo  {
   }
 
   /**
-   * ASIN received in a POST array
+   * <em>ASIN received in a POST array </em>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class MerchantAmazonSellersLiveHtmlResultInfo  {
   }
 
   /**
-   * search engine domain in a POST array
+   * <em>search engine domain in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class MerchantAmazonSellersLiveHtmlResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class MerchantAmazonSellersLiveHtmlResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -162,10 +162,7 @@ public class MerchantAmazonSellersLiveHtmlResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class MerchantAmazonSellersLiveHtmlResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -211,7 +208,7 @@ public class MerchantAmazonSellersLiveHtmlResultInfo  {
   }
 
   /**
-   * elements of search results found on Amazon
+   * <em>elements of search results found on Amazon</em>
    * @return items
    */
   @javax.annotation.Nullable

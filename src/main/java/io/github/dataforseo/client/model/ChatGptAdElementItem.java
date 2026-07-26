@@ -47,7 +47,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * name of the brand
+   * <em>name of the brand</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * source description
+   * <em>source description</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * domain
+   * <em>domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * URL of the image displayed in the ad
+   * <em>URL of the image displayed in the ad</em>
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class ChatGptAdElementItem  extends BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * information about the advertiser associated with the ad
+   * <em>information about the advertiser associated with the ad</em>
    * @return advertiser
    */
   @javax.annotation.Nullable

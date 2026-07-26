@@ -47,7 +47,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * ID of the datasetrequired fieldyou can find dataset ID in the dataset URL or dataset item of Google Dataset Search resultexample:L2cvMTFqbl85ZHN6MQ==
+   * <p><em>ID of the dataset</em><p><strong>required field</strong><p>you can find dataset ID in the dataset URL or <code>dataset</code> item of <a href='https://docs.dataforseo.com/v3/serp/google/dataset_search/live/advanced'>Google Dataset Search</a> result<p>example:<p><code>L2cvMTFqbl85ZHN6MQ==</code></p>
    * @return datasetId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language codeoptional fieldif you use this field, you don't need to specify language_namepossible value:en
+   * <p><em>search engine language code</em><p>optional field<p>if you use this field, you don't need to specify <code>language_name</code><p>possible value:<p><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device typeoptional fieldreturn results for a specific device typepossible value: desktop
+   * <p><em>device type</em><p>optional field<p>return results for a specific device type<p>possible value: <code>desktop</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -103,6 +103,75 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
   public void setDevice(String device) {
     this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine language</em><p>optional field<p>if you use this field, you don't need to specify <code>language_code</code><p>possible value:<p><code class='long-string'>English</code></p>
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * <p><em>device operating system</em><p>optional field<p>possible values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code></p>
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleDatasetInfoLiveAdvancedRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -151,7 +220,10 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
         Objects.equals(this.datasetId, serpGoogleDatasetInfoLiveAdvancedRequestInfo.datasetId) &&
         Objects.equals(this.languageCode, serpGoogleDatasetInfoLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpGoogleDatasetInfoLiveAdvancedRequestInfo.device);  
+        Objects.equals(this.device, serpGoogleDatasetInfoLiveAdvancedRequestInfo.device) &&
+        Objects.equals(this.languageName, serpGoogleDatasetInfoLiveAdvancedRequestInfo.languageName) &&
+        Objects.equals(this.os, serpGoogleDatasetInfoLiveAdvancedRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleDatasetInfoLiveAdvancedRequestInfo.tag);  
     
   }
 
@@ -161,7 +233,7 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(datasetId, languageCode, device);
+  return Objects.hash(datasetId, languageCode, device, languageName, os, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -179,6 +251,9 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
     sb.append("    datasetId: ").append(toIndentedString(datasetId)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -207,6 +282,12 @@ public class SerpGoogleDatasetInfoLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("device");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

@@ -70,8 +70,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveItem  {
   }
 
   /**
-   * business categories
-* Google My Business general category that best describes the cluster of related categories
+   * <em>business categories</em><br>Google My Business general category that best describes the cluster of related categories
    * @return categories
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveItem  {
   }
 
   /**
-   * aggregation of the category
+   * <em>aggregation of the category</em>
    * @return aggregation
    */
   @javax.annotation.Nullable

@@ -47,12 +47,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * keywords
-* required field
-* UTF-8 encoding
-* The maximum number of keywords you can specify: 1000;
-* The maximum number of characters in a single keyword: 250;
-* The keywords will be converted to lowercase format;learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <em>keywords</em><br><strong>required field</strong><br>UTF-8 encoding<br>The maximum number of keywords you can specify: 1000;<br>The maximum number of characters in a single keyword: 250;<br>The keywords will be converted to lowercase format;<p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a>
    * @return keywords
    */
   @javax.annotation.Nullable
@@ -75,13 +70,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * full name of the location
-* required field if you don't specify location_code
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_name by making a separate request to the
-* https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages
-* example:
-* United Kingdom
+   * <em>full name of the location</em><br><strong>required field if you don't specify</strong> <code>location_code</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_name</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages</code><br>example:<br><code class='long-string'>United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -104,13 +93,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * unique location identifier
-* required field if you don't specify location_name
-* Note: it is required to specify either location_name or location_code
-* you can receive the list of available locations with their location_code by making a separate request to the 
-* https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages
-* example:
-* 2840
+   * <em>unique location identifier</em><br><strong>required field if you don't specify</strong> <code>location_name</code><br><strong>Note:</strong> it is required to specify either <code>location_name</code> or <code>location_code</code><br>you can receive the list of available locations with their <code>location_code</code> by making a separate request to the <br><code>https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages</code><br>example:<br><code class='long-string'>2840</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -133,13 +116,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * full name of the language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages with their language_name by making a separate request to the
-* https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages
-* example:
-* English
+   * <em>full name of the language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify</strong> <code>language_code</code><br>you can receive the list of available languages with their <code>language_name</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -162,13 +139,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to the
-* https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages
-* example:
-* en
+   * <em>language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify</strong> <code>language_name</code><br>you can receive the list of available languages with their <code>language_code</code> by making a separate request to the<br><code>https://api.dataforseo.com/v3/ai_optimization/ai_keyword_data/locations_and_languages</code><br>example:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -191,11 +162,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

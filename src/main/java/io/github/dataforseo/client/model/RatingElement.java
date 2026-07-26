@@ -70,7 +70,7 @@ public class RatingElement  {
   }
 
   /**
-   * the alignment of the element in Google Shopping SERPpossible values:left, right
+   * <em>the alignment of the element in Google Shopping SERP</em><br>possible values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class RatingElement  {
   }
 
   /**
-   * the type of ratinghere you can find the following elements: Max5, Percents, CustomMax
+   * <i>the type of rating</i><br>here you can find the following elements: <code>Max5</code>, <code>Percents</code>, <code>CustomMax</code>
    * @return ratingType
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class RatingElement  {
   }
 
   /**
-   * value of the rating
+   * <em>value of the rating</em>
    * @return value
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class RatingElement  {
   }
 
   /**
-   * the amount of feedback
+   * <em>the amount of feedback</em>
    * @return votesCount
    */
   @javax.annotation.Nullable

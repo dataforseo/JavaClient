@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**category** | **String** | standardised category of the ammenity |[optional]|
-**categoryLabel** | **String** | label of the category |[optional]|
-**items** | **List<HotelAmenityItemInfo>** | specific amenities and details |[optional]|
+**category** | **String** | <em>standardised category of the ammenity</em> |[optional]|
+**categoryLabel** | **String** | <em>label of the category</em> |[optional]|
+**items** | **List<HotelAmenityItemInfo>** | <em>specific amenities and details</em> |[optional]|

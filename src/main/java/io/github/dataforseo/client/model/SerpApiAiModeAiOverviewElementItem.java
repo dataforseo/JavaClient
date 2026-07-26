@@ -47,7 +47,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * text or description of the element in SERP
+   * <em>text or description of the element in SERP</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * content of the element in markdown format
+   * <em>content of the element in markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * website links featured in the elementif there are none, equals null
+   * <em>website links featured in the element</em><br>if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * images of the elementif there are none, equals null
+   * <em>images of the element</em><br>if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpApiAiModeAiOverviewElementItem  extends BaseSerpApiAiModeAiOver
   }
 
   /**
-   * references relevant to the elementincludes references to webpages that were used to generate the ai_overview_element
+   * <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code>
    * @return references
    */
   @javax.annotation.Nullable

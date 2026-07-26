@@ -47,7 +47,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * platform received in a POST array
+   * <em>platform received in a POST array</em>
    * @return platform
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * name of the AI model from which the data was retrieved
-* Note: for the google platform type, the value is always google_ai_overview
+   * <em>name of the AI model from which the data was retrieved</em><br><strong>Note:</strong> for the <code>google</code> platform type, the value is always <code>google_ai_overview</code>
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * relevant question
+   * <em>relevant question</em>
    * @return question
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * relevant answer in markdown format
-* content of the result formatted in the markdown markup language
+   * <em>relevant answer in markdown format</em><br>content of the result formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return answer
    */
   @javax.annotation.Nullable
@@ -187,9 +185,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * array of sources
-* the sources the model cited or relied on in its final answer
-* learn more about the sources and how to retrieve LLM citation data at our Help Center
+   * <em>array of sources</em><br>the sources the model cited or relied on in its final answer<br>learn more about the sources and how to retrieve LLM citation data at our <a href='https://dataforseo.com/help-center/how-to-get-llm-citation-data-with-llm-mentions-api' target='_blank'>Help Center</a>
    * @return sources
    */
   @javax.annotation.Nullable
@@ -212,8 +208,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * array of search results
-* all web search outputs the model retrieved when looking up information, including duplicates and unused entries
+   * <em>array of search results</em><br>all web search outputs the model retrieved when looking up information, including duplicates and unused entries
    * @return searchResults
    */
   @javax.annotation.Nullable
@@ -236,8 +231,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * current AI search volume rate of a keyword
-* learn more about this metric here
+   * <em>current AI search volume rate of a keyword</em><br>learn more about this metric <a href='https://dataforseo.com/help-center/how-the-ai-search-volume-metric-works-in-llm-mentions' rel='noopener noreferrer' target='_blank'>here</a>
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable
@@ -260,8 +254,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * monthly AI search volume rates
-* array of objects with AI search volume rates in a certain month of a year
+   * <em>monthly AI search volume rates</em><br>array of objects with AI search volume rates in a certain month of a year
    * @return monthlySearches
    */
   @javax.annotation.Nullable
@@ -284,10 +277,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * date and time when the response data was first recorded
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-10-21 06:25:30 +00:00
+   * <em>date and time when the response data was first recorded</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2025-10-21 06:25:30 +00:00</code>
    * @return firstResponseAt
    */
   @javax.annotation.Nullable
@@ -310,10 +300,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * date and time when the response data was last updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2025-10-21 06:25:30 +00:00
+   * <em>date and time when the response data was last updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2025-10-21 06:25:30 +00:00</code>
    * @return lastResponseAt
    */
   @javax.annotation.Nullable
@@ -336,8 +323,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * array of brand entities
-* contains information on brands mentioned in the response
+   * <em>array of brand entities</em><br>contains information on brands mentioned in the response
    * @return brandEntities
    */
   @javax.annotation.Nullable
@@ -360,8 +346,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * array of fan-out queries
-* contains related search queries derived from the main query to provide a more comprehensive response
+   * <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response
    * @return fanOutQueries
    */
   @javax.annotation.Nullable
@@ -384,9 +369,7 @@ public class AiOptimizationLlmMentionsSearchMentionsLiveItem  {
   }
 
   /**
-   * indicates whether the response was generated using web search results
-* if true, the model retrieved live web search results to produce the response
-* if false, the response was generated from the model's internal knowledge
+   * <em>indicates whether the response was generated using web search results</em><br>if <code>true</code>, the model retrieved live web search results to produce the response<br>if <code>false</code>, the response was generated from the model's internal knowledge
    * @return isWebSearchBased
    */
   @javax.annotation.Nullable

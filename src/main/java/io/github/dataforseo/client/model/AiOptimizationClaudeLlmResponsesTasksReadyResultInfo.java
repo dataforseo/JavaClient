@@ -47,8 +47,7 @@ public class AiOptimizationClaudeLlmResponsesTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class AiOptimizationClaudeLlmResponsesTasksReadyResultInfo  {
   }
 
   /**
-   * LLM model specified when setting the task
+   * <em>LLM model specified when setting the task</em>
    * @return se
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class AiOptimizationClaudeLlmResponsesTasksReadyResultInfo  {
   }
 
   /**
-   * date when the task was posted (in the UTC format)
+   * <em>date when the task was posted (in the UTC format)</em>
    * @return datePosted
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class AiOptimizationClaudeLlmResponsesTasksReadyResultInfo  {
   }
 
   /**
-   * user-defined task identifier
+   * <em>user-defined task identifier</em>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class AiOptimizationClaudeLlmResponsesTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the task
+   * <em>URL for collecting the results of the task</em>
    * @return endpoint
    */
   @javax.annotation.Nullable

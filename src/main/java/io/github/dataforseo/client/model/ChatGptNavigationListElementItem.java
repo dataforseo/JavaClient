@@ -47,7 +47,7 @@ public class ChatGptNavigationListElementItem  extends BaseChatGptLlmScraperElem
   }
 
   /**
-   * name of the brand
+   * <em>name of the brand</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ChatGptNavigationListElementItem  extends BaseChatGptLlmScraperElem
   }
 
   /**
-   * array of sources
+   * <em>array of sources</em>
    * @return sources
    */
   @javax.annotation.Nullable

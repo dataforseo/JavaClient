@@ -47,7 +47,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * number of results returned in the items array
+   * <em>number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo  {
   }
 
   /**
-   * contains specified keywords with their AI search volume rates
+   * <em>contains specified keywords with their AI search volume rates</em>
    * @return items
    */
   @javax.annotation.Nullable

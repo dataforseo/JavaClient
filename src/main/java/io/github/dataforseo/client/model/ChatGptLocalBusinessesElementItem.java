@@ -47,7 +47,7 @@ public class ChatGptLocalBusinessesElementItem  extends BaseChatGptLlmScraperEle
   }
 
   /**
-   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
+   * <em>content of the element in markdown format</em><br>content of the result formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ChatGptLocalBusinessesElementItem  extends BaseChatGptLlmScraperEle
   }
 
   /**
-   * elements of ChatGPT results
+   * <em>elements of ChatGPT results</em>
    * @return items
    */
   @javax.annotation.Nullable

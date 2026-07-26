@@ -47,7 +47,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
   }
 
   /**
-   * ID of the datasetrequired fieldyou can find dataset ID in the dataset URL or dataset item of Google Dataset Search resultexample:L2cvMTFqbl85ZHN6MQ==
+   * <p><em>ID of the dataset</em><p><strong>required field</strong><p>you can find dataset ID in the dataset URL or <code>dataset</code> item of <a href='https://docs.dataforseo.com/v3/serp/google/dataset_search/live/advanced'>Google Dataset Search</a> result<p>example:<p><code>L2cvMTFqbl85ZHN6MQ==</code></p>
    * @return datasetId
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
   }
 
   /**
-   * search engine language codeoptional fieldif you use this field, you don't need to specify language_namepossible value:en
+   * <p><em>search engine language code</em><p>optional field<p>if you use this field, you don't need to specify <code>language_name</code><p>possible value:<p><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
   }
 
   /**
-   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-dataset-info-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
   }
 
   /**
-   * device typeoptional fieldreturn results for a specific device typepossible value: desktop
+   * <p><em>device type</em><p>optional field<p>return results for a specific device type<p>possible value: <code>desktop</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>notification URL of a completed task</em><p>optional field<p>when a task is completed we will notify you by GET request sent to the URL you have specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/pingscript?id=$id</code><p><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the requestexample:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>URL for sending task results</em><p>optional field<p>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request<p>example:<p><code>http://your-server.com/postbackscript?id=$id</code><p><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -188,7 +185,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatyperequired field if you specify postback_urlcorresponds to the datatype that will be sent to your serverpossible value: advanced
+   * <p><em>postback_url datatype</em><p><strong>required field if you specify <code>postback_url</code></strong><p>corresponds to the datatype that will be sent to your server<p>possible value: <code>advanced</code></p>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -198,6 +195,75 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
 
   public void setPostbackData(String postbackData) {
     this.postbackData = postbackData;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleDatasetInfoTaskPostRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine language</em><p>optional field<p>if you use this field, you don't need to specify <code>language_code</code><p>possible value:<p><code class='long-string'>English</code></p>
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpGoogleDatasetInfoTaskPostRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * <p><em>device operating system</em><p>optional field<p>choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code></p>
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleDatasetInfoTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -250,7 +316,10 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
         Objects.equals(this.device, serpGoogleDatasetInfoTaskPostRequestInfo.device) &&
         Objects.equals(this.pingbackUrl, serpGoogleDatasetInfoTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleDatasetInfoTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleDatasetInfoTaskPostRequestInfo.postbackData);  
+        Objects.equals(this.postbackData, serpGoogleDatasetInfoTaskPostRequestInfo.postbackData) &&
+        Objects.equals(this.languageName, serpGoogleDatasetInfoTaskPostRequestInfo.languageName) &&
+        Objects.equals(this.os, serpGoogleDatasetInfoTaskPostRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleDatasetInfoTaskPostRequestInfo.tag);  
     
   }
 
@@ -260,7 +329,7 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(datasetId, languageCode, priority, device, pingbackUrl, postbackUrl, postbackData);
+  return Objects.hash(datasetId, languageCode, priority, device, pingbackUrl, postbackUrl, postbackData, languageName, os, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -282,6 +351,9 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -318,6 +390,12 @@ public class SerpGoogleDatasetInfoTaskPostRequestInfo  {
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
     
 
     // a set of required properties/fields (JSON key names)

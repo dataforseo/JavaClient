@@ -47,7 +47,7 @@ public class AnnotationInfo  {
   }
 
   /**
-   * the domain name or title of the quoted source
+   * <em>the domain name or title of the quoted source</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AnnotationInfo  {
   }
 
   /**
-   * URL of the quoted source
+   * <em>URL of the quoted source</em>
    * @return url
    */
   @javax.annotation.Nullable

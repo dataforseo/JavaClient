@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AiOptimizationGeminiLlmScraperLiveHtmlTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AiOptimizationGeminiLlmScraperLiveHtmlTaskInfo>** | <em>array of tasks</em> |[optional]|

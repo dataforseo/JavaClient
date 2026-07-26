@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the special offer |[optional]|
-**items** | **List<GoogleShoppingCarouselElement>** | additional items present in the elementif there are none, equals null |[optional]|
+**title** | **String** | <em>title of the special offer</em> |[optional]|
+**items** | **List<GoogleShoppingCarouselElement>** | <em>additional items present in the element</em><br>if there are none, equals <code>null</code> |[optional]|

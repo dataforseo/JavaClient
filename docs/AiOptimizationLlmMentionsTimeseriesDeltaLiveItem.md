@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**date** | **String** | date timestamp<br> date format: 'yyyy-mm-dd' |[optional]|
-**deltaMentions** | **Integer** | LLM mentions count delta<br>the difference in mentions between the current timestamp and the previous one |[optional]|
-**deltaAiSearchVolume** | **Long** | LLM mentions count delta<br>the difference in ai_search_volume values between the current timestamp and the previous one<br>learn more about this metric here |[optional]|
+**date** | **String** | <em>date timestamp</em><br> date format: <code>'yyyy-mm-dd'</code> |[optional]|
+**deltaMentions** | **Integer** | <em>LLM mentions count delta</em><br>the difference in <code>mentions</code> between the current timestamp and the previous one |[optional]|
+**deltaAiSearchVolume** | **Long** | <em>LLM mentions count delta</em><br>the difference in <code>ai_search_volume</code> values between the current timestamp and the previous one<br>learn more about this metric <a href='https://dataforseo.com/help-center/how-ai-search-volume-metrics-work-in-the-llm-mentions-timeseries-endpoints' rel='noopener noreferrer' target='_blank'>here</a> |[optional]|

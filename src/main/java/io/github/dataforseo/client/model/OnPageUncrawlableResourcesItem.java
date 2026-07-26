@@ -47,7 +47,7 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * URL of the uncrawlable resource
+   * <em>URL of the uncrawlable resource</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * reason the resource is uncrawlable
-* can take the following values: content_type_inconsistency
+   * <em>reason the resource is uncrawlable</em><br>can take the following values: <code>content_type_inconsistency</code>
    * @return reason
    */
   @javax.annotation.Nullable
@@ -94,9 +93,7 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * general status code
-* you can find the full list of the response codes here
-* Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
+   * <i>general status code</i><br>you can find the full list of the response codes <a href='/v3/appendix/errors'>here</a><br><strong>Note:</strong> we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable
@@ -119,10 +116,7 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * date and time when the resource was fetched
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2026-03-09 18:20:32 +00:00
+   * <em>date and time when the resource was fetched</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2026-03-09 18:20:32 +00:00</code>
    * @return fetchTime
    */
   @javax.annotation.Nullable
@@ -145,7 +139,7 @@ public class OnPageUncrawlableResourcesItem  {
   }
 
   /**
-   * metadata of the uncrawlable resource
+   * <em>metadata of the uncrawlable resource</em>
    * @return meta
    */
   @javax.annotation.Nullable

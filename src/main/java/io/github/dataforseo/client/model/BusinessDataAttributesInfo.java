@@ -47,8 +47,7 @@ public class BusinessDataAttributesInfo  {
   }
 
   /**
-   * available attributes
-* indicates attributes a business entity can offer
+   * <em>available attributes</em><br>indicates attributes a business entity can offer
    * @return availableAttributes
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class BusinessDataAttributesInfo  {
   }
 
   /**
-   * unavailable attributes
-* indicates attributes a business entity cannot offer
+   * <em>unavailable attributes</em><br>indicates attributes a business entity cannot offer
    * @return unavailableAttributes
    */
   @javax.annotation.Nullable

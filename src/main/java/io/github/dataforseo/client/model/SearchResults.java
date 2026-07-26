@@ -47,7 +47,7 @@ public class SearchResults  {
   }
 
   /**
-   * result description
+   * <em>result description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SearchResults  {
   }
 
   /**
-   * breadcrumb
+   * <em>breadcrumb</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SearchResults  {
   }
 
   /**
-   * rank in the results
+   * <em>rank in the results</em>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SearchResults  {
   }
 
   /**
-   * source title
+   * <em>source title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SearchResults  {
   }
 
   /**
-   * source domain
+   * <em>source domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SearchResults  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -185,10 +185,7 @@ public class SearchResults  {
   }
 
   /**
-   * date and time when the result was published
-* in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return publicationDate
    */
   @javax.annotation.Nullable

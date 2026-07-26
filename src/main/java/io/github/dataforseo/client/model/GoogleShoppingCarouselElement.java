@@ -70,7 +70,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * XPath of the element
+   * <em><a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * tags assigned to the product
+   * <em>tags assigned to the product</em>
    * @return tags
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * name of the sellerthe name of the company that placed a corresponding product on Google Shopping
+   * <em>name of the seller</em><br>the name of the company that placed a corresponding product on Google Shopping
    * @return seller
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * product priceexample:384.99
+   * <em>product price</em><br>example:<br><code>384.99</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * currency in the ISO formatexample:USD
+   * <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * product ratingthe product popularity rate based on product reviews
+   * <em>product rating</em><br>the product popularity rate based on product reviews
    * @return productRating
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * URLs to the images of the productthe first URL in the array is the featured image of the product
+   * <em>URLs to the images of the product</em><br>the first URL in the array is the featured image of the product
    * @return productImages
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * URL to the product page on Google Shopping
+   * <em>URL to the product page on Google Shopping</em>
    * @return shoppingUrl
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * unique product identifier on Google Shoppingnote that there is no full list of possible values as the product_id is a dynamic value assigned by Googleif there are no values, you will get nullexample:4485466949985702538learn more about the parameter in this help center guide
+   * <em>unique product identifier on Google Shopping</em><br>note that there is no full list of possible values as the <code>product_id</code> is a dynamic value assigned by Google<br>if there are no values, you will get <code>null</code><br>example:<br><code>4485466949985702538</code><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/product-id-google-shopping' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return productId
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * unique identifier of the SERP data elementnote that there is no full list of possible values as the data_docid is a dynamic value assigned by Googleexample:17363035694596624076
+   * <em>unique identifier of the SERP data element</em><br>note that there is no full list of possible values as the <code>data_docid</code> is a dynamic value assigned by Google<br>example:<br><code>17363035694596624076</code>
    * @return dataDocid
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * global product identifier on Google Shoppingnote that there is no full list of possible values as the gid is a dynamic value assigned by Googleif there are no values, you will get nullexample:4702526954592161872learn more about gid parameter in this help center guide
+   * <em>global product identifier on Google Shopping</em><br>note that there is no full list of possible values as the <code>gid</code> is a dynamic value assigned by Google<br>if there are no values, you will get <code>null</code><br>example:<br><code>4702526954592161872</code><br>learn more about <code>gid</code> parameter in <a href='https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api' target='_blank'>this help center guide</a>
    * @return gid
    */
   @javax.annotation.Nullable
@@ -346,7 +346,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * delivery informationdelivery information including free and fast delivery date ranges
+   * <em>delivery information</em><br>delivery information including free and fast delivery date ranges
    * @return deliveryInfo
    */
   @javax.annotation.Nullable
@@ -369,7 +369,7 @@ public class GoogleShoppingCarouselElement  {
   }
 
   /**
-   * special offer from the sellerinformation on the special offer from the seller, including discount and coupon info
+   * <em>special offer from the seller</em><br>information on the special offer from the seller, including discount and coupon info
    * @return specialOfferInfo
    */
   @javax.annotation.Nullable

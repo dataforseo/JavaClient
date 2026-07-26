@@ -441,6 +441,23 @@ public class Example {
     basicAuth.setPassword("PASSWORD");
     BusinessDataApi apiInstance = new BusinessDataApi(defaultClient);
     BusinessDataBusinessListingsSearchLiveRequestInfo model = new BusinessDataBusinessListingsSearchLiveRequestInfo()
+           .categories(
+               List.of(
+                   "pizza_restaurant"
+                ))
+           .description("pizza")
+           .title("pizza")
+           .isClaimed(true)
+           .locationCoordinate("53.476225,-2.243572,10")
+           .orderBy(
+               List.of(
+                   "rating.value,desc"
+                ))
+           .filters(
+               List.of(
+               
+                ))
+           .limit(3);
     BusinessDataBusinessListingsSearchLiveResponseInfo response = apiInstance.businessListingsSearchLive(List.of(model));
     System.out.println(result);
   } catch (ApiException e) {

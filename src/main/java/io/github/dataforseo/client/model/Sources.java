@@ -47,7 +47,7 @@ public class Sources  {
   }
 
   /**
-   * source description
+   * <em>source description</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class Sources  {
   }
 
   /**
-   * source name
+   * <em>source name</em>
    * @return sourceName
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class Sources  {
   }
 
   /**
-   * source thumbnail
+   * <em>source thumbnail</em>
    * @return thumbnail
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class Sources  {
   }
 
   /**
-   * content of the element in markdown format
-* content of the result formatted in the markdown markup language
+   * <em>content of the element in markdown format</em><br>content of the result formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class Sources  {
   }
 
   /**
-   * rank in the results
+   * <em>rank in the results</em>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class Sources  {
   }
 
   /**
-   * source title
+   * <em>source title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -186,7 +185,7 @@ public class Sources  {
   }
 
   /**
-   * source domain
+   * <em>source domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -209,7 +208,7 @@ public class Sources  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -232,10 +231,7 @@ public class Sources  {
   }
 
   /**
-   * date and time when the result was published
-* in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was published</em><br>in the format: “year-month-date:minutes:UTC_difference_hours:UTC_difference_minutes”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return publicationDate
    */
   @javax.annotation.Nullable

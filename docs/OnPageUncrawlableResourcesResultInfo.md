@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**crawlProgress** | **String** | status of the crawling session<br>possible values: in_progress, finished |[optional]|
-**crawlStatus** | **CrawlStatusInfo** | details of the crawling session |[optional]|
+**crawlProgress** | **String** | <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code> |[optional]|
+**crawlStatus** | **CrawlStatusInfo** | <em>details of the crawling session</em> |[optional]|
 **currentOffset** | **Integer** |  |[optional]|
-**totalItemsCount** | **Long** | total number of uncrawlable resources found<br> total number of uncrawlable resources found during the crawl of the target domain |[optional]|
-**itemsCount** | **Long** | number of uncrawlable resources in the items array |[optional]|
-**items** | **List<OnPageUncrawlableResourcesItem>** | array of uncrawlable resources |[optional]|
+**totalItemsCount** | **Long** | <em>total number of uncrawlable resources found</em><br> total number of uncrawlable resources found during the crawl of the target domain |[optional]|
+**itemsCount** | **Long** | <em>number of uncrawlable resources in the <code>items</code> array</em> |[optional]|
+**items** | **List<OnPageUncrawlableResourcesItem>** | <em>array of uncrawlable resources</em> |[optional]|

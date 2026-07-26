@@ -47,7 +47,7 @@ public class GeminiImagesElementItem  extends BaseGeminiLlmScraperElementItem  {
   }
 
   /**
-   * elements of Gemini results
+   * <em>elements of Gemini results</em>
    * @return items
    */
   @javax.annotation.Nullable

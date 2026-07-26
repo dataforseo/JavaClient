@@ -236,7 +236,7 @@ public class BacklinksCompetitorsLiveTaskInfo  {
   }
 
   /**
-   * array of results
+   * <em>array of results</em>
    * @return result
    */
   @javax.annotation.Nullable

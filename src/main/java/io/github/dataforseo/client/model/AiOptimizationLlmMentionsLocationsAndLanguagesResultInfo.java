@@ -47,7 +47,7 @@ public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo  {
   }
 
   /**
-   * supported languages
-* contains the languages which are supported for a specific location
+   * <em>supported languages</em><br>contains the languages which are supported for a specific location
    * @return availableLanguages
    */
   @javax.annotation.Nullable

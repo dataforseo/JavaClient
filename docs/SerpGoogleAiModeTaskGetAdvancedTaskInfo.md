@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleAiModeTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleAiModeTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

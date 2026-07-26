@@ -47,7 +47,7 @@ public class AiOptimizationLlmMentionsHistoricalLiveItem  {
   }
 
   /**
-   * year
+   * <em>year</em>
    * @return year
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiOptimizationLlmMentionsHistoricalLiveItem  {
   }
 
   /**
-   * month
+   * <em>month</em>
    * @return month
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiOptimizationLlmMentionsHistoricalLiveItem  {
   }
 
   /**
-   * aggregated mentions metrics for the given month of a year
+   * <em>aggregated mentions metrics for the given month of a year</em>
    * @return metrics
    */
   @javax.annotation.Nullable

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationClaudeLlmResponsesModelsResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationClaudeLlmResponsesModelsResultInfo>** | <em>array of results</em> |[optional]|

@@ -47,10 +47,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * prompt for the AI model
-* required field
-* the question or task you want to send to the AI model;
-* you can specify up to 500 characters in the user_prompt field
+   * <em>prompt for the AI model</em><br><strong>required field</strong><br>the question or task you want to send to the AI model;<br>you can specify <strong>up to 500 characters</strong> in the <code>user_prompt</code> field
    * @return userPrompt
    */
   @javax.annotation.Nullable
@@ -73,12 +70,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * name of the AI model
-* required field
-* model_nameconsists of the actual model name and version name;
-* if the basic model name is specified, its latest version will be set by default;
-* for example, if claude-opus-4-0 is specified, the claude-opus-4-20250514 will be set as model_name automatically;
-* you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/claude/llm_responses/models
+   * <em>name of the AI model</em><br><strong>required field</strong><br><code>model_name</code >consists of the actual model name and version name;<br>if the basic model name is specified, its latest version will be set by default;<br>for example, if <code>claude-opus-4-0</code> is specified, the <code>claude-opus-4-20250514</code> will be set as <code>model_name</code> automatically;<br>you can receive the list of available LLM models by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/claude/llm_responses/models</code>
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -101,13 +93,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * maximum number of tokens in the AI response
-* optional field
-* minimum value: 1;
-* maximum value: 4096;
-* default value: 2048;
-* Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
-* Note #2: if use_reasoning is set to true, the minimum value for max_output_tokens is 1025
+   * <em>maximum number of tokens in the AI response</em><br>optional field<br>minimum value: <code>1</code>;<br>maximum value: <code>4096</code>;<br>default value: <code>2048</code>;<br><strong>Note:</strong> if <code>web_search</code> is set to <code>true</code> or the reasoning model is specified in the request, the output token count may exceed the specified <code>max_output_tokens</code> limit<br><strong>Note #2:</strong> if <code>use_reasoning</code> is set to <code>true</code>, the minimum value for <code>max_output_tokens</code> is <code>1025</code>
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -130,13 +116,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * randomness of the AI response
-* optional field
-* higher values make output more diverse; 
-* lower values make output more focused;
-* minimum value: 0
-* maximum value: 1
-* default value: 0.7Note: temperature cannot be used together with top_p in the same request
+   * <em>randomness of the AI response</em><br>optional field<br>higher values make output more diverse; <br>lower values make output more focused;<br>minimum value: <code>0</code><br>maximum value: <code>1</code><br>default value: <code>0.7</code><p><strong>Note:</strong> <code>temperature</code> cannot be used together with <code>top_p</code> in the same request
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -159,12 +139,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * diversity of the AI response
-* optional field 
-* controls diversity of the response by limiting token selection;
-* minimum value: 0
-* maximum value: 1 
-* default value: nullNote: top_p cannot be used together with temperature in the same request
+   * <em>diversity of the AI response</em><br>optional field <br>controls diversity of the response by limiting token selection;<br>minimum value: <code>0</code><br>maximum value: <code>1</code> <br>default value: <code>null</code><p><strong>Note:</strong> <code>top_p</code> cannot be used together with <code>temperature</code> in the same request
    * @return topP
    */
   @javax.annotation.Nullable
@@ -187,12 +162,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * enable web search for current information
-* optional field
-* when enabled, the AI model can access and cite current web information;
-* Note: refer to the Models endpoint for a list of models that support web_search; 
-* default value: false;
-* The cost of the parameter can be calculated on the Pricing page
+   * <em>enable web search for current information</em><br>optional field<br>when enabled, the AI model can access and cite current web information;<br><strong>Note:</strong> refer to the <a href='https://docs.dataforseo.com/v3/ai_optimization/claude/llm_responses/models/'>Models endpoint</a> for a list of models that support <code>web_search</code>; <br>default value: <code>false</code>;<br>The cost of the parameter can be calculated on the <a title='Anthropic API Pricing' href='https://docs.anthropic.com/en/docs/about-claude/pricing' target='_blank' rel='noopener noreferrer'>Pricing</a> page
    * @return webSearch
    */
   @javax.annotation.Nullable
@@ -215,12 +185,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * force AI agent to use web search
-* optional field
-* to enable this parameter, web_search must also be enabled;
-* when enabled, the AI model is forced to access and cite current web information;
-* default value: false;
-* Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response
+   * <em>force AI agent to use web search</em><br>optional field<br>to enable this parameter, <code>web_search</code> must also be enabled;<br>when enabled, the AI model is forced to access and cite current web information;<br>default value: <code>false</code>;<br><strong>Note:</strong> even if the parameter is set to <code>true</code>, there is no guarantee web sources will be cited in the response
    * @return forceWebSearch
    */
   @javax.annotation.Nullable
@@ -243,9 +208,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * ISO country code of the location used for searching the web
-* optional field
-* possible values: 'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'
+   * <em>ISO country code of the location used for searching the web</em><br>optional field<br>possible values: <code>'AR','AT','AU','BE','BR','CA','CH','CL','CN','DE','DK','ES','FI','FR','GB','HK','ID','IN','IT','JP','KR','MX','MY','NL','NO','NZ','PH','PL','PT','RU','SA','SE','TR','TW','US','ZA'</code>
    * @return webSearchCountryIsoCode
    */
   @javax.annotation.Nullable
@@ -268,8 +231,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * city name of the location used for searching the web
-* optional field
+   * <em>city name of the location used for searching the web</em><br>optional field<br>
    * @return webSearchCity
    */
   @javax.annotation.Nullable
@@ -292,10 +254,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * instructions for the AI behaviour
-* optional field
-* defines the AI's role, tone, or specific behavior;
-* you can specify up to 500 characters in the system_message field
+   * <em>instructions for the AI behaviour</em><br>optional field<br>defines the AI's role, tone, or specific behavior;<br>you can specify <strong>up to 500 characters</strong> in the <code>system_message</code> field
    * @return systemMessage
    */
   @javax.annotation.Nullable
@@ -350,14 +309,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * enable reasoning for the AI model
-* optional field
-* when enabled, the model will perform reasoning before generating a response
-* refer to the Models endpoint for a list of models that support reasoning
-* default value: false
-* Note: if set to true, the minimum value for max_output_tokens is 1025
-* Note #2: if set to true, force_web_search must be set to false
-* Note #3: if set to true, the temperature and top_p cannot be used
+   * <em>enable reasoning for the AI model</em><br>optional field<br>when enabled, the model will perform reasoning before generating a response<br>refer to the <a href='https://docs.dataforseo.com/v3/ai_optimization/claude/llm_responses/models/' target='_blank'>Models endpoint</a> for a list of models that support <code>reasoning</code><br>default value: <code>false</code><br><strong>Note:</strong> if set to <code>true</code>, the minimum value for <code>max_output_tokens</code> is <code>1025</code><br><strong>Note #2:</strong> if set to <code>true</code>, <code>force_web_search</code> must be set to <code>false</code><br><strong>Note #3:</strong> if set to <code>true</code>, the <code>temperature</code> and <code>top_p</code> cannot be used
    * @return useReasoning
    */
   @javax.annotation.Nullable
@@ -380,11 +332,7 @@ public class AiOptimizationClaudeLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

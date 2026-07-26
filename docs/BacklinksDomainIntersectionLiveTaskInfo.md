@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BacklinksDomainIntersectionLiveResultInfo>** | array of results |[optional]|
+**result** | **List<BacklinksDomainIntersectionLiveResultInfo>** | <em>array of results</em> |[optional]|

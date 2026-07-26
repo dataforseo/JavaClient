@@ -47,7 +47,7 @@ public class HotelAmenityInfo  {
   }
 
   /**
-   * standardised category of the ammenity
+   * <em>standardised category of the ammenity</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class HotelAmenityInfo  {
   }
 
   /**
-   * label of the category
+   * <em>label of the category</em>
    * @return categoryLabel
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class HotelAmenityInfo  {
   }
 
   /**
-   * specific amenities and details
+   * <em>specific amenities and details</em>
    * @return items
    */
   @javax.annotation.Nullable

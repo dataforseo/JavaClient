@@ -47,8 +47,7 @@ public class BusinessWorkHoursInfo  {
   }
 
   /**
-   * open hours
-* information about work hours of the local establishment
+   * <em>open hours</em><br>information about work hours of the local establishment
    * @return workHours
    */
   @javax.annotation.Nullable

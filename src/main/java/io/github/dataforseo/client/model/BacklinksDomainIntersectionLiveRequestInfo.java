@@ -47,16 +47,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * domains, subdomains or webpages to get links for
-* required field
-* you can set up to 20 domains, subdomains or webpages
-* a domain or a subdomain should be specified without https:// and www.
-* a page should be specified with absolute URL (including http:// or https://)
-* example:
-* 'targets': {
-* '1': 'http://planet.postgresql.org/',
-* '2': 'http://gborg.postgresql.org/'
-* }
+   * <em>domains, subdomains or webpages to get links for</em><br><strong>required field</strong><br>you can set up to 20 domains, subdomains or webpages<br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>a page should be specified with absolute URL (including <code>http://</code> or <code>https://</code>)<br>example:<br><code>'targets':</code> <code>{<br>'1': 'http://planet.postgresql.org/',</code><br><code>'2': 'http://gborg.postgresql.org/'<br>}</code>
    * @return targets
    */
   @javax.annotation.Nullable
@@ -79,15 +70,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * domains, subdomains or webpages you want to exclude
-* optional field
-* you can specify up to 10 domains, subdomains or webpages
-* if you use this array, results will contain the referring domains that link to targets but don’t link to exclude_targets
-* example:
-* 'exclude_targets': [
-* 'bbc.com',
-* 'https://www.apple.com/iphone/*',
-* 'https://dataforseo.com/apis/*']
+   * <em>domains, subdomains or webpages you want to exclude</em><br>optional field<br>you can specify up to 10 domains, subdomains or webpages<br>if you use this array, results will contain the referring domains that link to <code>targets</code> but don't link to <code>exclude_targets</code><br>example:<br><code>'exclude_targets': [<br>'bbc.com',<br>'https://www.apple.com/iphone/*',<br>'https://dataforseo.com/apis/*']</code>
    * @return excludeTargets
    */
   @javax.annotation.Nullable
@@ -110,22 +93,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['1.internal_links_count','>','1']
-* [['2.referring_pages','>','2'],
-* 'and',
-* ['1.backlinks','>','10']]
-* [['1.first_seen','>','2017-10-23 11:31:45 +00:00'],
-* 'and',
-* [['2.target','like','%dataforseo.com%'],'or',['1.referring_domains','>','10']]]
-* The full list of possible filters is available here.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code>, <code>ilike</code>, <code>not_ilike</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['1.internal_links_count','>','1']</code><p><code>[['2.referring_pages','>','2'],<br>'and',<br>['1.backlinks','>','10']]</code><p><code>[['1.first_seen','>','2017-10-23 11:31:45 +00:00'],<br>'and',<br>[['2.target','like','%dataforseo.com%'],'or',['1.referring_domains','>','10']]]</code><p>The full list of possible filters is available <a href='/v3/backlinks/filters/?bash' rel='noopener noreferrer' target='_blank'>here.</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -148,19 +116,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['backlinks,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['backlinks,desc','rank,asc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['backlinks,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['backlinks,desc','rank,asc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -183,10 +139,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * offset in the array of returned results
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks
+   * <em>offset in the array of returned results</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks
    * @return offset
    */
   @javax.annotation.Nullable
@@ -209,10 +162,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned results
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned results</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -235,16 +185,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the following arrays:
-* referring_links_tld
-* referring_links_types
-* referring_links_attributes
-* referring_links_platform_types
-* referring_links_semantic_locations
-* default value: 10
-* maximum value: 1000
+   * <em>maximum number of elements within internal arrays</em><br>optional field<br>you can use this field to limit the number of elements within the following arrays:<br><code>referring_links_tld</code><br><code>referring_links_types</code><br><code>referring_links_attributes</code><br><code>referring_links_platform_types</code><br><code>referring_links_semantic_locations</code><p>default value: <code>10</code><br>maximum value: <code>1000</code>
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -267,14 +208,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * set what backlinks to return and count
-* optional field
-* you can use this field to choose what backlinks will be returned and used for aggregated metrics for your targets;
-* possible values:
-* all – all backlinks will be returned and counted;
-* live – backlinks found during the last check will be returned and counted;
-* lost – lost backlinks will be returned and counted;
-* default value: live
+   * <em>set what backlinks to return and count</em><br>optional field<br>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your <code>targets</code>;<br>possible values: <br><code>all</code> - all backlinks will be returned and counted;<br><code>live</code> - backlinks found during the last check will be returned and counted;<br><code>lost</code> - lost backlinks will be returned and counted;<p>default value: <code>live</code>
    * @return backlinksStatusType
    */
   @javax.annotation.Nullable
@@ -297,13 +231,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * filter the backlinks of your target
-* optional field
-* you can use this field to filter the initial backlinks that will be included in the dataset for aggregated metrics for your target
-* you can filter the backlinks by all fields available in the response of this endpoint
-* using this parameter, you can include only dofollow backlinks in the response and create a flexible backlinks dataset to calculate the metrics for
-* example:
-* 'backlinks_filters': [['dofollow', '=', true]]
+   * <em>filter the backlinks of your <code>target</code></em><br>optional field<br>you can use this field to filter the initial backlinks that will be included in the dataset for aggregated metrics for your <code>target</code><br>you can filter the backlinks by all fields available in the response of <a href='/v3/backlinks/backlinks/live'>this endpoint</a><br>using this parameter, you can include only dofollow backlinks in the response and create a flexible backlinks dataset to calculate the metrics for<br>example:<br><code>'backlinks_filters': [['dofollow', '=', true]]</code>
    * @return backlinksFilters
    */
   @javax.annotation.Nullable
@@ -326,10 +254,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains of the target will be included in the search
-* optional field
-* if set to false, the subdomains will be ignored
-* default value: true
+   * <em>indicates if the subdomains of the <code>target</code> will be included in the search</em><br>optional field<br>if set to <code>false</code>, the subdomains will be ignored<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -352,11 +277,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * indicates if indirect links to the targets will be included in the results
-* optional field
-* if set to true, the results will include data on indirect links pointing to a page that either redirects to a target, or points to a canonical page
-* if set to false, indirect links will be ignored
-* default value: true
+   * <em>indicates if indirect links to the <code>targets</code> will be included in the results</em><br>optional field<br>if set to <code>true</code>, the results will include data on indirect links pointing to a page that either redirects to a target, or points to a canonical page<br>if set to <code>false</code>, indirect links will be ignored<br>default value: <code>true</code>
    * @return includeIndirectLinks
    */
   @javax.annotation.Nullable
@@ -379,10 +300,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * indicates whether the backlinks from subdomains of the target are excluded
-* optional field
-* if set to false, the backlinks from subdomains of the target will be omitted and you won’t receive the same domain in the response;
-* default value: true
+   * <em>indicates whether the backlinks from subdomains of the <code>target</code> are excluded</em><br>optional field<br>if set to <code>false</code>, the backlinks from subdomains of the <code>target</code> will be omitted and you won't receive the same domain in the response;<br>default value: <code>true</code>
    * @return excludeInternalBacklinks
    */
   @javax.annotation.Nullable
@@ -405,13 +323,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * indicates whether to intersect backlinks
-* optional field
-* use this field to intersect or merge results for the specified domains
-* possible values: all, partial
-* all – results are based on all backlinks;
-* partial – results are based on the intersecting backlinks only;
-* default value: all
+   * <em>indicates whether to intersect backlinks</em><br>optional field<br>use this field to intersect or merge results for the specified domains<br>possible values: <code>all</code>, <code>partial</code><br><code>all</code> - results are based on all backlinks;<br><code>partial</code> - results are based on the intersecting backlinks only;<br>default value: <code>all</code>
    * @return intersectionMode
    */
   @javax.annotation.Nullable
@@ -434,14 +346,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
-* optional field
-* you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
-* possible values:
-* one_hundred — rank values are displayed on a 0–100 scale
-* one_thousand — rank values are displayed on a 0–1000 scale
-* default value: one_thousand
-* learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * <em>defines the scale used for calculating and displaying the <code>rank</code>, <code>domain_from_rank</code>, and <code>page_from_rank</code> values</em><br>optional field<p>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<p>possible values:<br><code>one_hundred</code> — rank values are displayed on a 0–100 scale<br><code>one_thousand</code> — rank values are displayed on a 0–1000 scale<p>default value: <code>one_thousand</code><p>learn more about how this parameter works and how ranking metrics are calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale'>this Help Center article</a>
    * @return rankScale
    */
   @javax.annotation.Nullable
@@ -464,11 +369,7 @@ public class BacklinksDomainIntersectionLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

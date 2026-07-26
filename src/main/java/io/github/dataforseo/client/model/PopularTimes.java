@@ -47,8 +47,7 @@ public class PopularTimes  {
   }
 
   /**
-   * popular hours
-* information about busy hours of the local establishment on each day of the week
+   * <em>popular hours</em><br>information about busy hours of the local establishment on each day of the week
    * @return popularTimesByDays
    */
   @javax.annotation.Nullable

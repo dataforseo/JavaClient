@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AiOptimizationLlmMentionsTimeseriesNewLostLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AiOptimizationLlmMentionsTimeseriesNewLostLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

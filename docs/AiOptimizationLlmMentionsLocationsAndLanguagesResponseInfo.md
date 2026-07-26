@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<AiOptimizationLlmMentionsLocationsAndLanguagesTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<AiOptimizationLlmMentionsLocationsAndLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

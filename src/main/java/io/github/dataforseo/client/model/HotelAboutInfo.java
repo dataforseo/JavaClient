@@ -47,8 +47,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * description of the hotel
-* the description of the hotel entity for which the results are collected
+   * <em>description of the hotel</em><br>the description of the hotel entity for which the results are collected
    * @return description
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * additional description of the hotel
-* details about the hotel provided in addition to the description
+   * <em>additional description of the hotel</em><br>details about the hotel provided in addition to the description
    * @return subDescriptions
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * hotel check-in time
-* check-in time indicated in the hotel listing
+   * <em>hotel check-in time</em><br>check-in time indicated in the hotel listing
    * @return checkInTime
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * hotel check-out time
-* check-out time indicated in the hotel listing
+   * <em>hotel check-out time</em><br>check-out time indicated in the hotel listing
    * @return checkOutTime
    */
   @javax.annotation.Nullable
@@ -143,8 +139,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * full address of the hotel
-* address of the hotel indicated in the standardised format
+   * <em>full address of the hotel</em><br>address of the hotel indicated in the standardised format
    * @return fullAddress
    */
   @javax.annotation.Nullable
@@ -167,8 +162,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * hotel domain
-* domain of the hotel’s website
+   * <em>hotel domain</em><br>domain of the hotel's website
    * @return domain
    */
   @javax.annotation.Nullable
@@ -191,8 +185,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * hotel url
-* URL to the hotel’s website indicated in the listing
+   * <em>hotel url</em><br>URL to the hotel's website indicated in the listing
    * @return url
    */
   @javax.annotation.Nullable
@@ -215,8 +208,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * hotel amenities
-* information about hotel amenities
+   * <em>hotel amenities</em><br>information about hotel amenities
    * @return amenities
    */
   @javax.annotation.Nullable
@@ -239,8 +231,7 @@ public class HotelAboutInfo  {
   }
 
   /**
-   * hotel amenities
-* information about hotel amenities labelled as “popular”
+   * <em>hotel amenities</em><br>information about hotel amenities labelled as 'popular'
    * @return popularAmenities
    */
   @javax.annotation.Nullable

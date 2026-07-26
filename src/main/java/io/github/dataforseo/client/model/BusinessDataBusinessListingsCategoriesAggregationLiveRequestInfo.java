@@ -47,11 +47,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * business categories
-* optional field
-* the categories you specify are used to search for business listings;
-* if you don’t use this field, we will return business listings found in the specified location;
-* you can specify up to 10 categories
+   * <em>business categories</em><br>optional field<br>the categories you specify are used to search for business listings;<br>if you don't use this field, we will return business listings found in the specified location;<br>you can specify <strong>up to 10 categories</strong>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -74,10 +70,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * description of the element in SERP
-* optional field
-* the description of the business entity for which the results are collected;
-* can contain up to 200 characters
+   * <em>description of the element in SERP</em><br>optional field<br>the description of the business entity for which the results are collected;<br>can contain up to 200 characters
    * @return description
    */
   @javax.annotation.Nullable
@@ -100,10 +93,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * title of the element in SERP
-* optional field
-* the name of the business entity for which the results are collected;
-* can contain up to 200 characters
+   * <em>title of the element in SERP</em><br>optional field<br>the name of the business entity for which the results are collected;<br>can contain up to 200 characters
    * @return title
    */
   @javax.annotation.Nullable
@@ -126,8 +116,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * indicates whether the business is verified by its owner on Google Maps
-* optional field
+   * <em>indicates whether the business is verified by its owner on Google Maps</em><br>optional field
    * @return isClaimed
    */
   @javax.annotation.Nullable
@@ -150,14 +139,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* optional field
-* location_coordinate parameter should be specified in the “latitude,longitude,radius” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* the minimum value for “radius”: 1
-* the maximum value for “radius”: 100000
-* example:
-* 53.476225,-2.243572,200
+   * <em>GPS coordinates of a location</em><br>optional field<br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: <code>1</code><br>the maximum value for <em>'radius'</em>: <code>100000</code><br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -180,18 +162,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like, not_like, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['rating.value','>',3]
-* you can receive the list of available filters by making a separate request to https://api.dataforseo.com/v3/business_data/business_listings/available_filters
-* the full list of possible filters is available here.
-* learn more about the initial dataset filters in this help center article.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['rating.value','>',3]</code><p>you can receive the list of available filters_by making a separate request to <code>https://api.dataforseo.com/v3/business_data/business_listings/available_filters</code><br>the full list of possible filters is available <a href='/v3/business_data/business_listings/filters/?bash' rel='noopener noreferrer' target='_blank'>here.</a><br>learn more about the initial dataset filters in <a href='https://dataforseo.com/help-center/what-are-the-initial-dataset-filters-and-how-do-they-work' rel='noopener noreferrer' target='_blank'>this help center article.</a>n
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
@@ -214,10 +185,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the aggregated categories
-* default value: 10
+   * <em>maximum number of elements within internal arrays</em><br>optional field<br>you can use this field to limit the number of elements within the aggregated categories<br>default value: <code>10</code>
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -240,10 +208,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned businesses
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned businesses</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -266,8 +231,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned businesses
-* optional field
+   * <em>the maximum number of returned businesses</em><br>optional field
    * @return offset
    */
   @javax.annotation.Nullable
@@ -290,11 +254,7 @@ public class BusinessDataBusinessListingsCategoriesAggregationLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

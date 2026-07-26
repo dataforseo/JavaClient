@@ -47,7 +47,7 @@ public class Source  {
   }
 
   /**
-   * name of the source where the review was posted
+   * <em>name of the source where the review was posted</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class Source  {
   }
 
   /**
-   * featured image of the source
+   * <em>featured image of the source</em>
    * @return image
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class Source  {
   }
 
   /**
-   * domain of the source where the review was posted
+   * <em>domain of the source where the review was posted</em>
    * @return domain
    */
   @javax.annotation.Nullable

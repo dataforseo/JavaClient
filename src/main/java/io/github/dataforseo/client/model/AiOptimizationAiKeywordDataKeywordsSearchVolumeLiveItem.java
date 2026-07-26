@@ -47,7 +47,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveItem  {
   }
 
   /**
-   * specified keyword
+   * <em>specified keyword</em>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveItem  {
   }
 
   /**
-   * current AI search volume rate of a keyword
-* learn more about this metric here
+   * <em>current AI search volume rate of a keyword</em><br>learn more about this metric <a href='https://dataforseo.com/help-center/what-is-ai-search-volume-in-dataforseo' rel='noopener noreferrer' target='_blank'>here</a>
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveItem  {
   }
 
   /**
-   * monthly AI search volume rates
-* array of objects with AI search volume rates in a certain month of a year
+   * <em>monthly AI search volume rates</em><br>array of objects with AI search volume rates in a certain month of a year
    * @return aiMonthlySearches
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * product title
+   * <em>product title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * subtitle of the special offer
+   * <em>subtitle of the special offer</em>
    * @return subTitle
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * amount of the fixed discount
+   * <em>amount of the fixed discount</em>
    * @return fixedDiscount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * currency of the fixed discount
+   * <em>currency of the fixed discount</em>
    * @return fixedDiscountCurrency
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * percentage of the discount
+   * <em>percentage of the discount</em>
    * @return percentageDiscount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * code of coupon discount
+   * <em>code of coupon discount</em>
    * @return couponCode
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * information on coupon discount
+   * <em>information on coupon discount</em>
    * @return couponInfo
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * URL to the product page on the seller's websiteNote: this field is deprecated and will return null
+   * <em>URL to the product page on the seller's website</em><br><strong>Note:</strong> this field is deprecated and will return <code>null</code>
    * @return url
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class SpecialOfferInfo  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable

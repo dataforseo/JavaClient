@@ -256,8 +256,8 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
 
   /**
    * estimated traffic volume
-* estimated organic monthly traffic to the domain or webpage;
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;
+* estimated organic monthly traffic to the domain
+* calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
 * learn more about how the metric is calculated in this help center article
    * @return etv
    */
@@ -282,8 +282,8 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
 
   /**
    * estimated cost of converting organic search traffic into paid
-* represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;
-* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;
+* represents the estimated monthly cost of running ads (USD) for the returned keyword
+* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
 * learn more about how the metric is calculated in this help center article
    * @return estimatedPaidTrafficCost
    */
@@ -308,8 +308,8 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
 
   /**
    * estimated traffic volume based on clickstream data
-* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;
-* to retrieve results for this field, the parameter include_clickstream_data must be set to true;
+* calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
+* to retrieve results for this field, the parameter include_clickstream_data must be set to true
 * learn more about how the metric is calculated in this help center article
    * @return clickstreamEtv
    */
@@ -357,7 +357,7 @@ public class DataLabsLocalPackSerpElementItem  extends BaseDataforseoLabsApiElem
   }
 
   /**
-   * backlinks information for the relevant page URL
+   * backlinks information for the ranked website
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

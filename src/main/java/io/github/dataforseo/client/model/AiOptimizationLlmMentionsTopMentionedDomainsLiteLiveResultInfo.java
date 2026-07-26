@@ -47,7 +47,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResultInfo  {
   }
 
   /**
-   * total number of results
+   * <em>total number of results</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResultInfo  {
   }
 
   /**
-   * offset in the results array of the returned mentions data
-* offset specified in the reqest
+   * <em>offset in the results array of the returned mentions data</em><br><code>offset</code> specified in the reqest
    * @return offset
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResultInfo  {
   }
 
   /**
-   * aggregated mentions metrics summary
-* contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensionsin this case, the value will be null
+   * <em>aggregated mentions metrics summary</em><br>contains overall aggregated LLM mention metrics across all found domains, grouped by various dimensions</br>in this case, the value will be <code>null</code>
    * @return aggregatedMetrics
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class AiOptimizationLlmMentionsTopMentionedDomainsLiteLiveResultInfo  {
   }
 
   /**
-   * contains relevant mentions data
+   * <em>contains relevant mentions data</em>
    * @return items
    */
   @javax.annotation.Nullable

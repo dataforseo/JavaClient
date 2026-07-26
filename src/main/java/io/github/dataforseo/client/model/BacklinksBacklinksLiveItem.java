@@ -70,7 +70,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * domain referring to the target domain or webpage
+   * <em>domain referring to the target domain or webpage</em>
    * @return domainFrom
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * URL of the page where the backlink is found
+   * <em>URL of the page where the backlink is found</em>
    * @return urlFrom
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates whether the referring URL is secured with HTTPS
-* if true, the referring URL is secured with HTTPS
+   * <em>indicates whether the referring URL is secured with HTTPS</em><br>if <code>true</code>, the referring URL is secured with HTTPS
    * @return urlFromHttps
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * domain the backlink is pointing to
+   * <em>domain the backlink is pointing to</em>
    * @return domainTo
    */
   @javax.annotation.Nullable
@@ -163,7 +162,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * URL the backlink is pointing to
+   * <em>URL the backlink is pointing to</em>
    * @return urlTo
    */
   @javax.annotation.Nullable
@@ -186,8 +185,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates if the URL the backlink is pointing to is secured with HTTPS
-* if true, the URL is secured with HTTPS
+   * <em>indicates if the URL the backlink is pointing to is secured with HTTPS</em><br>if <code>true</code>, the URL is secured with HTTPS
    * @return urlToHttps
    */
   @javax.annotation.Nullable
@@ -210,7 +208,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * top-level domain of the referring URL
+   * <em>top-level domain of the referring URL</em>
    * @return tldFrom
    */
   @javax.annotation.Nullable
@@ -233,8 +231,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates whether the backlink is new
-* if true, the backlink was found on the page last time our crawler visited it
+   * <em>indicates whether the backlink is new</em><br>if <code>true</code>, the backlink was found on the page last time our crawler visited it
    * @return isNew
    */
   @javax.annotation.Nullable
@@ -257,8 +254,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates whether the backlink was removed
-* if true, the backlink or the entire page was removed
+   * <em>indicates whether the backlink was removed</em><br>if <code>true</code>, the backlink or the entire page was removed
    * @return isLost
    */
   @javax.annotation.Nullable
@@ -281,8 +277,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * spam score of the backlink
-* learn more about how the metric is calculated on this help center page
+   * <em>spam score of the backlink</em><br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a>
    * @return backlinkSpamScore
    */
   @javax.annotation.Nullable
@@ -305,10 +300,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * backlink rank
-* rank that the given backlink passes to the target
-* rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-* learn more about the metric and how it is calculated in this help center article
+   * <em>backlink rank</em><br>rank that the given backlink passes to the <code>target</code><br><code>rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -331,9 +323,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * page rank of the referring page
-* page_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-* learn more about the metric and how it is calculated in this help center article
+   * <em>page rank of the referring page</em><br><code>page_from_rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return pageFromRank
    */
   @javax.annotation.Nullable
@@ -356,9 +346,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * domain rank of the referring domain
-* domain_from_rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-* learn more about the metric and how it is calculated in this help center article
+   * <em>domain rank of the referring domain</em><br><code>domain_from_rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return domainFromRank
    */
   @javax.annotation.Nullable
@@ -381,8 +369,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * platform types of the referring domain
-* possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
+   * <em>platform types of the referring domain</em><p>possible values: <code>cms</code>, <code>blogs</code>, <code>ecommerce</code>, <code>message-boards</code>, <code>wikis</code>, <code>news</code>, <code>organization</code>
    * @return domainFromPlatformType
    */
   @javax.annotation.Nullable
@@ -405,8 +392,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates if the domain is IP
-* if true, the domain functions as an IP address and does not have a domain name
+   * <em>indicates if the domain is IP</em><br>if <code>true</code>, the domain functions as an IP address and does not have a domain name
    * @return domainFromIsIp
    */
   @javax.annotation.Nullable
@@ -429,7 +415,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * IP address of the referring domain
+   * <em>IP address of the referring domain</em>
    * @return domainFromIp
    */
   @javax.annotation.Nullable
@@ -452,7 +438,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * ISO country code of the referring domain
+   * <em>ISO country code of the referring domain</em>
    * @return domainFromCountry
    */
   @javax.annotation.Nullable
@@ -475,7 +461,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * number of external links found on the referring page
+   * <em>number of external links found on the referring page</em>
    * @return pageFromExternalLinks
    */
   @javax.annotation.Nullable
@@ -498,7 +484,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * number of internal links found on the referring page
+   * <em>number of internal links found on the referring page</em>
    * @return pageFromInternalLinks
    */
   @javax.annotation.Nullable
@@ -521,9 +507,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * size of the referring page, in bytes
-* example:
-* 63357
+   * <em>size of the referring page, in bytes</em><br>example:<br><code>63357</code>
    * @return pageFromSize
    */
   @javax.annotation.Nullable
@@ -546,9 +530,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * character encoding of the referring page
-* example:
-* utf-8
+   * <em>character encoding of the referring page</em><br>example:<br><code>utf-8</code>
    * @return pageFromEncoding
    */
   @javax.annotation.Nullable
@@ -571,10 +553,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * language of the referring page
-* in ISO 639-1 format
-* example:
-* en
+   * <em>language of the referring page</em><br>in ISO 639-1 format<br>example:<br><code>en</code>
    * @return pageFromLanguage
    */
   @javax.annotation.Nullable
@@ -597,7 +576,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * title of the referring page
+   * <em>title of the referring page</em>
    * @return pageFromTitle
    */
   @javax.annotation.Nullable
@@ -620,9 +599,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * HTTP status code returned by the referring page
-* example:
-* 200
+   * <em>HTTP status code returned by the referring page</em><br>example:<br><code>200</code>
    * @return pageFromStatusCode
    */
   @javax.annotation.Nullable
@@ -645,10 +622,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * date and time when our crawler found the backlink for the first time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when our crawler found the backlink for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return firstSeen
    */
   @javax.annotation.Nullable
@@ -671,10 +645,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * previous to the most recent date when our crawler visited the backlink
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>previous to the most recent date when our crawler visited the backlink</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return prevSeen
    */
   @javax.annotation.Nullable
@@ -697,10 +668,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * most recent date when our crawler visited the backlink
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>most recent date when our crawler visited the backlink</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return lastSeen
    */
   @javax.annotation.Nullable
@@ -723,9 +691,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * link type
-* possible values:
-* anchor, image, meta, canonical, alternate, redirect
+   * <em>link type</em><br>possible values:<br><code>anchor</code>, <code>image</code>, <code>meta</code>, <code>canonical</code>, <code>alternate</code>, <code>redirect</code>
    * @return itemType
    */
   @javax.annotation.Nullable
@@ -748,9 +714,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * link attributes of the referring links
-* example:
-* nofollow
+   * <em>link attributes of the referring links</em><br>example:<br><code>nofollow</code>
    * @return attributes
    */
   @javax.annotation.Nullable
@@ -773,8 +737,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates whether the backlink is dofollow
-* if false, the backlink is nofollow
+   * <em>indicates whether the backlink is dofollow</em><br>if <code>false</code>, the backlink is nofollow
    * @return dofollow
    */
   @javax.annotation.Nullable
@@ -797,7 +760,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates whether the backlink was present on the referring page when our crawler first visited it
+   * <em>indicates whether the backlink was present on the referring page when our crawler first visited it</em>
    * @return original
    */
   @javax.annotation.Nullable
@@ -820,8 +783,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * alternative text of the image
-* this field will be null if backlink type is not image
+   * <em>alternative text of the image</em><br>this field will be <code>null</code> if backlink <code>type</code> is not image
    * @return alt
    */
   @javax.annotation.Nullable
@@ -844,8 +806,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * URL of the image
-* the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -868,7 +829,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * anchor text of the backlink
+   * <em>anchor text of the backlink</em>
    * @return anchor
    */
   @javax.annotation.Nullable
@@ -891,7 +852,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * snippet before the anchor text
+   * <em>snippet before the anchor text</em>
    * @return textPre
    */
   @javax.annotation.Nullable
@@ -914,7 +875,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * snippet after the anchor text
+   * <em>snippet after the anchor text</em>
    * @return textPost
    */
   @javax.annotation.Nullable
@@ -937,10 +898,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates semantic element in HTML where the backlink is found
-* you can get the full list of semantic elements here
-* examples:
-* article, section, summary
+   * <em>indicates semantic element in HTML where the backlink is found</em><br>you can get the full list of semantic elements <a href='https://www.w3schools.com/html/html5_semantic_elements.asp' target='_blank' rel='noopener noreferrer'>here</a><br>examples:<br><code>article</code>, <code>section</code>, <code>summary</code>
    * @return semanticLocation
    */
   @javax.annotation.Nullable
@@ -963,7 +921,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * number of identical backlinks found on the referring page
+   * <em>number of identical backlinks found on the referring page</em>
    * @return linksCount
    */
   @javax.annotation.Nullable
@@ -986,8 +944,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates total number of backlinks from this domain
-* for example, if mode is set to one_per_domain, this field will indicate the total number of backlinks coming from this domain
+   * <em>indicates total number of backlinks from this domain</em><br>for example, if <code>mode</code> is set to <code>one_per_domain</code>, this field will indicate the total number of backlinks coming from this domain
    * @return groupCount
    */
   @javax.annotation.Nullable
@@ -1010,8 +967,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates whether the backlink is broken
-* if true, the backlink is pointing to a page responding with a 4xx or 5xx status code
+   * <em>indicates whether the backlink is broken</em><br>if <code>true</code>, the backlink is pointing to a page responding with a 4xx or 5xx status code
    * @return isBroken
    */
   @javax.annotation.Nullable
@@ -1034,10 +990,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * status code of the referenced page
-* if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to
-* example:
-* 200
+   * <em>status code of the referenced page</em><br>if the value is <code>null</code>, our crawler hasn't yet visited the webpage the link is pointing to<br>example:<br><code>200</code>
    * @return urlToStatusCode
    */
   @javax.annotation.Nullable
@@ -1060,9 +1013,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * spam score of the referenced page
-* if the value is null, our crawler hasn’t yet visited the webpage the link is pointing to;
-* learn more about how the metric is calculated on this help center page
+   * <em>spam score of the referenced page</em><br>if the value is <code>null</code>, our crawler hasn't yet visited the webpage the link is pointing to;<br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a>
    * @return urlToSpamScore
    */
   @javax.annotation.Nullable
@@ -1085,8 +1036,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * target url of the redirect
-* target page the redirect is pointing to
+   * <em>target url of the redirect</em><br>target page the redirect is pointing to
    * @return urlToRedirectTarget
    */
   @javax.annotation.Nullable
@@ -1109,7 +1059,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * number of keywords for which the page is ranked in top search results
+   * 
    * @return rankedKeywordsInfo
    */
   @javax.annotation.Nullable
@@ -1132,8 +1082,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indicates whether the backlink is an indirect link
-* if true, the backlink is an indirect link pointing to a page that either redirects to url_to, or points to a canonical page
+   * <em>indicates whether the backlink is an indirect link</em><br>if <code>true</code>, the backlink is an indirect link pointing to a page that either redirects to <code>url_to</code>, or points to a canonical page
    * @return isIndirectLink
    */
   @javax.annotation.Nullable
@@ -1156,8 +1105,7 @@ public class BacklinksBacklinksLiveItem  {
   }
 
   /**
-   * indirect link path
-* indicates a URL or a sequence of URLs that lead to url_to
+   * <em>indirect link path</em><br>indicates a URL or a sequence of URLs that lead to <code>url_to</code>
    * @return indirectLinkPath
    */
   @javax.annotation.Nullable

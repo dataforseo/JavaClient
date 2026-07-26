@@ -47,7 +47,7 @@ public class BusinessDataBusinessListingsLocationsResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BusinessDataBusinessListingsLocationsResultInfo  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BusinessDataBusinessListingsLocationsResultInfo  {
   }
 
   /**
-   * number of businesses in this location in our database
+   * <em>number of businesses in this location in our database</em>
    * @return businessCount
    */
   @javax.annotation.Nullable

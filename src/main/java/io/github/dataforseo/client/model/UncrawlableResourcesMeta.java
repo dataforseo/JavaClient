@@ -47,7 +47,7 @@ public class UncrawlableResourcesMeta  {
   }
 
   /**
-   * actual content type of the resource
+   * <em>actual content type of the resource</em>
    * @return contentType
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class UncrawlableResourcesMeta  {
   }
 
   /**
-   * expected content types for the resource
-* list of content types that were expected by the crawler based on how the resource is referenced on the page
+   * <em>expected content types for the resource</em><br>list of content types that were expected by the crawler based on how the resource is referenced on the page
    * @return expectedContentTypes
    */
   @javax.annotation.Nullable

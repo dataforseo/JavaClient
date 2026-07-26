@@ -70,7 +70,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * XPath of the element
+   * <em><a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * tags assigned to the product
+   * <em>tags assigned to the product</em>
    * @return tags
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * name of the sellerthe name of the company that placed a corresponding product on Google Shopping
+   * <em>name of the seller</em><br>the name of the company that placed a corresponding product on Google Shopping
    * @return seller
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * product priceexample:384.99
+   * <em>product price</em><br>example:<br><code>384.99</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * currency in the ISO formatexample:USD
+   * <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * product ratingthe product popularity rate based on product reviews
+   * <em>product rating</em><br>the product popularity rate based on product reviews
    * @return productRating
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * URLs to the images of the productthe first URL in the array is the featured image of the product
+   * <em>URLs to the images of the product</em><br>the first URL in the array is the featured image of the product
    * @return productImages
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * unique ad click referral parameterusing this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+   * <em>unique ad click referral parameter</em><br>using this parameter you can get a URL of the advertisement in <a href='/v3/merchant/google/sellers/ad_url/'>Google Shopping Sellers Ad URL</a>
    * @return shopAdAclk
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * delivery informationdelivery information including free and fast delivery date ranges
+   * <em>delivery information</em><br>delivery information including free and fast delivery date ranges
    * @return deliveryInfo
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class GoogleShoppingSponsoredCarouselElement  {
   }
 
   /**
-   * special offer from the sellerinformation on the special offer from the seller, including discount and coupon info
+   * <em>special offer from the seller</em><br>information on the special offer from the seller, including discount and coupon info
    * @return specialOfferInfo
    */
   @javax.annotation.Nullable

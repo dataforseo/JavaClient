@@ -47,7 +47,7 @@ public class AiOptimizationLlmMentionsTopMentionedBrandsLiveResultInfo  {
   }
 
   /**
-   * total amount of results relevant the request
+   * <em>total amount of results relevant the request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiOptimizationLlmMentionsTopMentionedBrandsLiveResultInfo  {
   }
 
   /**
-   * the number of mentions objects that are omitted in the items array
+   * <em>the number of mentions objects that are omitted in the <code>items</code> array</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiOptimizationLlmMentionsTopMentionedBrandsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class AiOptimizationLlmMentionsTopMentionedBrandsLiveResultInfo  {
   }
 
   /**
-   * aggregated mentions metrics
-* contains aggregated LLM mention metrics across all found brands, grouped by various dimensions
+   * <em>aggregated mentions metrics</em><br>contains aggregated LLM mention metrics across all found brands, grouped by various dimensions
    * @return aggregatedMetrics
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class AiOptimizationLlmMentionsTopMentionedBrandsLiveResultInfo  {
   }
 
   /**
-   * individual domain results
-* array containing detailed mention metrics for each of the found top domains
+   * <em>individual domain results</em><br>array containing detailed mention metrics for each of the found top domains
    * @return items
    */
   @javax.annotation.Nullable

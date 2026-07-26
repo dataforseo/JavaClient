@@ -47,10 +47,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * domain, subdomain or webpage to get competitor domains for
-* required field
-* a domain or a subdomain should be specified without https:// and www.
-* a page should be specified with absolute URL (including http:// or https://)
+   * <em>domain, subdomain or webpage to get competitor domains for</em><br><strong>required field</strong><br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>a page should be specified with absolute URL (including <code>http://</code> or <code>https://</code>)
    * @return target
    */
   @javax.annotation.Nullable
@@ -73,10 +70,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned domains
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned domains</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -99,10 +93,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned domains
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten domains in the results array will be omitted and the data will be provided for the successive pages
+   * <em>offset in the results array of returned domains</em><br>optional field<br>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten domains in the results array will be omitted and the data will be provided for the successive pages
    * @return offset
    */
   @javax.annotation.Nullable
@@ -125,19 +116,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['rank','>','100']
-* [['target','like','%forbes%'],
-* 'and',
-* [['rank','>','100'],'or',['intersections','>','5']]]
-* The full list of possible filters is available here.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code>, <code>ilike</code>, <code>not_ilike</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['rank','>','100']</code><p><code>[['target','like','%forbes%'],<br>'and',<br>[['rank','>','100'],'or',['intersections','>','5']]]</code><p>The full list of possible filters is available <a href='/v3/backlinks/filters/?bash' rel='noopener noreferrer' target='_blank'>here.</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -160,19 +139,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['rank,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['intersections,desc','rank,asc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['rank,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['intersections,desc','rank,asc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -195,10 +162,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * indicates if only main domain of the target will be included in the search
-* optional field
-* if set to true, only the main domain will be included in search;
-* default value: true
+   * <em>indicates if only main domain of the <code>target</code> will be included in the search</em><br>optional field<br>if set to <code>true</code>, only the main domain will be included in search;<br>default value: <code>true</code>
    * @return mainDomain
    */
   @javax.annotation.Nullable
@@ -221,10 +185,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * indicates whether large domain will appear in results
-* optional field
-* if set to true, the results from the large domain (google.com, amazon.com, etc.) will be omitted;
-* default value: true
+   * <em>indicates whether large domain will appear in results</em><br>optional field<br>if set to <code>true</code>, the results from the large domain (google.com, amazon.com, etc.) will be omitted;<br>default value: <code>true</code>
    * @return excludeLargeDomains
    */
   @javax.annotation.Nullable
@@ -247,11 +208,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * indicates if internal backlinks from subdomains to the target will be excluded from the results
-* optional field
-* if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target
-* if set to false, internal links will be included in the results
-* default value: true
+   * <em>indicates if internal backlinks from subdomains to the <code>target</code> will be excluded from the results</em><br>optional field<br>if set to <code>true</code>, the results will not include data on internal backlinks from subdomains of the same domain as <code>target</code><br>if set to <code>false</code>, internal links will be included in the results<br>default value: <code>true</code>
    * @return excludeInternalBacklinks
    */
   @javax.annotation.Nullable
@@ -274,14 +231,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
-* optional field
-* you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
-* possible values:
-* one_hundred — rank values are displayed on a 0–100 scale
-* one_thousand — rank values are displayed on a 0–1000 scale
-* default value: one_thousand
-* learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * <em>defines the scale used for calculating and displaying the <code>rank</code>, <code>domain_from_rank</code>, and <code>page_from_rank</code> values</em><br>optional field<p>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<p>possible values:<br><code>one_hundred</code> — rank values are displayed on a 0–100 scale<br><code>one_thousand</code> — rank values are displayed on a 0–1000 scale<p>default value: <code>one_thousand</code><p>learn more about how this parameter works and how ranking metrics are calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale'>this Help Center article</a>
    * @return rankScale
    */
   @javax.annotation.Nullable
@@ -304,11 +254,7 @@ public class BacklinksCompetitorsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

@@ -70,8 +70,7 @@ public class LlmMessageSectionInfo  {
   }
 
   /**
-   * text of the reasoning chain section
-* text of the reasoning chain  section summarizing the model's thought process
+   * <em>text of the reasoning chain section</em><br>text of the reasoning chain  section summarizing the model's thought process
    * @return text
    */
   @javax.annotation.Nullable
@@ -94,9 +93,7 @@ public class LlmMessageSectionInfo  {
   }
 
   /**
-   * array of references used to generate the response
-* equals null if the web_search parameter is not set to true
-* Note: annotations may return empty even when web_search is true, as the AI will attempt to retrieve web information but may not find relevant results
+   * <em>array of references used to generate the response</em><br>equals <code>null</code> if the <code>web_search</code> parameter is not set to <code>true</code><br><strong>Note:</strong> <code>annotations</code> may return empty even when <code>web_search</code> is <code>true</code>, as the AI will attempt to retrieve web information but may not find relevant results
    * @return annotations
    */
   @javax.annotation.Nullable

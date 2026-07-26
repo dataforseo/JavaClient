@@ -47,7 +47,7 @@ public class AiOptimizationLlmMentionsHistoricalLiveResultInfo  {
   }
 
   /**
-   * the number of resuts returned in the items array
+   * <em>the number of resuts returned in the <code>items</code> array</em><br>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -70,9 +70,7 @@ public class AiOptimizationLlmMentionsHistoricalLiveResultInfo  {
   }
 
   /**
-   * array of historical mention metrics
-* contains objects with historical mention metrics for the specified target
-* each object contains aggregated mentions metrics for one calendar month
+   * <em>array of historical mention metrics</em><br>contains objects with historical mention metrics for the specified target<br>each object contains aggregated mentions metrics for one calendar month
    * @return items
    */
   @javax.annotation.Nullable

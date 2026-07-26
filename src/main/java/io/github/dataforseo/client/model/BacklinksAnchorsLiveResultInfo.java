@@ -47,7 +47,7 @@ public class BacklinksAnchorsLiveResultInfo  {
   }
 
   /**
-   * target in the post array
+   * <em>target in the post array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksAnchorsLiveResultInfo  {
   }
 
   /**
-   * total number of relevant items in the database
+   * <em>total number of relevant items in the database</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksAnchorsLiveResultInfo  {
   }
 
   /**
-   * number of items in the results array
+   * <em>number of items in the results array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BacklinksAnchorsLiveResultInfo  {
   }
 
   /**
-   * items array
+   * <em>items array</em>
    * @return items
    */
   @javax.annotation.Nullable

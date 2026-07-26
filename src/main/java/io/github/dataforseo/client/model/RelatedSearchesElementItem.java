@@ -47,7 +47,7 @@ public class RelatedSearchesElementItem  extends BaseMerchantGoogleShoppingProdu
   }
 
   /**
-   * additional items present in the elementif there are none, equals null
+   * <em>additional items present in the element</em><br>if there are none, equals <code>null</code>
    * @return items
    */
   @javax.annotation.Nullable

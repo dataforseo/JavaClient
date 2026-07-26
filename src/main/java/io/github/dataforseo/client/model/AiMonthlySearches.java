@@ -47,7 +47,7 @@ public class AiMonthlySearches  {
   }
 
   /**
-   * year
+   * <em>year</em>
    * @return year
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiMonthlySearches  {
   }
 
   /**
-   * month
+   * <em>month</em>
    * @return month
    */
   @javax.annotation.Nullable
@@ -93,8 +93,7 @@ public class AiMonthlySearches  {
   }
 
   /**
-   * current AI search volume rate of a keyword
-* learn more about this metric here
+   * <em>current AI search volume rate of a keyword</em><br>learn more about this metric <a href='https://dataforseo.com/help-center/what-is-ai-search-volume-in-dataforseo' rel='noopener noreferrer' target='_blank'>here</a>
    * @return aiSearchVolume
    */
   @javax.annotation.Nullable

@@ -47,7 +47,7 @@ public class RankedKeywordsInfo  {
   }
 
   /**
-   * number of keywords for which the page is ranked in top 3 search results
+   * 
    * @return pageFromKeywordsCountTop3
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class RankedKeywordsInfo  {
   }
 
   /**
-   * number of keywords for which the page is ranked in top 10 search results
+   * 
    * @return pageFromKeywordsCountTop10
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class RankedKeywordsInfo  {
   }
 
   /**
-   * number of keywords for which the page is ranked in top 100 search results
+   * 
    * @return pageFromKeywordsCountTop100
    */
   @javax.annotation.Nullable

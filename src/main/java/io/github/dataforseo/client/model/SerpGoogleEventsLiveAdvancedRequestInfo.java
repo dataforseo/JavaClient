@@ -47,8 +47,7 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character '+' will be decoded to a space character)if you need to use the '%' character for your keyword, please specify it as '%25';if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <p><em>keyword</em><p><strong>required field</strong><p>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<p>all %## will be decoded (plus character '+' will be decoded to a space character)<p>if you need to use the '%' character for your <code>keyword</code>, please specify it as '%25';<p>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”</p><br><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a></p>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/events/locationsexample:2840
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_coordinate</code><p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/events/locations</code><p>example:<p><code class='long-string'>2840</code></p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language codeoptional fieldif you use this field, you don't need to specify language_nameby default, language settings correspond to one of the local official languages of the specified locationyou can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/languagesexample:en
+   * <p><em>search engine language code</em><p>optional field<p><strong>if you use this field, you don't need to specify <code>language_name</code></strong><p>by default, language settings correspond to one of the local official languages of the specified location<p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><em><p></em>example:<em><p></em><code class='long-string'>en</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
   }
 
   /**
-   * parsing depthoptional fieldnumber of results in SERPdefault value: 10max value: 200
-* Your account will be billed per each SERP containing up to 10 results;Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically;The cost can be calculated on the Pricing page.
+   * <p><em>parsing depth</em><p>optional field<p>number of results in SERP<p>default value: <code>10</code><p>max value: <code>200</code></p><br><strong>Your account will be billed per each SERP containing up to 10 results;</strong><p>Setting depth above 10 may result in additional charges if the search engine returns more than 10 results;<p>If the specified depth is higher than the number of results in the response, the difference will be refunded to your account balance automatically;<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-events-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -128,6 +126,190 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
 
   public void setDepth(Integer depth) {
     this.depth = depth;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><p><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/events/locations</code><p>example:<p><code class='long-string'>London,England,United Kingdom</code></p>
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine language</em><p>optional field<p><strong>if you use this field, you don't need to specify <code>language_code</code></strong><p>by default, language settings correspond to one of the local official languages of the specified location<p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/languages</code><p>example:<p><code class='long-string'>English</code></p>
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * <p><em>device operating system</em><p>optional field<p><strong>note that this API provides results for desktop only</strong><p>choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code></p>
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_MAX_CRAWL_PAGES = "max_crawl_pages";
+  @SerializedName(SERIALIZED_NAME_MAX_CRAWL_PAGES)
+  private Integer maxCrawlPages;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo maxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
+    return this;
+  }
+
+  /**
+   * <p><em>page crawl limit</em><p>optional field<p>number of search results pages to crawl<p>max value: <code>100</code><p><strong>Note:</strong> the <code>max_crawl_pages</code> and <code>depth</code> parameters complement each other;<p>learn more at <a href='https://dataforseo.com/help-center/what-is-max-crawl-pages-and-how-does-it-work' rel='noopener noreferrer' target='_blank'>our help center</a></p>
+   * @return maxCrawlPages
+   */
+  @javax.annotation.Nullable
+  public Integer getMaxCrawlPages() {
+    return maxCrawlPages;
+  }
+
+  public void setMaxCrawlPages(Integer maxCrawlPages) {
+    this.maxCrawlPages = maxCrawlPages;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * <p><em>GPS coordinates of a location</em><p><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><p><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<p><strong>data will be provided for the country the specified coordinates belong to</strong><p>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<p>the minimum value for <em>'radius'</em>: 199.9 (mm)<p>the maximum value for <em>'radius'</em>: 199999 (mm)<p>example:<p><code class='long-string'>53.476225,-2.243572,200</code></p>
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+  }
+
+
+  public static final String SERIALIZED_NAME_DATE_RANGE = "date_range";
+  @SerializedName(SERIALIZED_NAME_DATE_RANGE)
+  private String dateRange;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo dateRange(String dateRange) {
+    this.dateRange = dateRange;
+    return this;
+  }
+
+  /**
+   * <p><em>date range to get events for</em><p>optional field<p>if you do not use this field, we will return all events<p>possible values: <code>today</code>, <code>tomorrow</code>, <code>week</code>, <code>weekend</code>, <code>next_week</code>, <code>month</code>, <code>next_month</code></p>
+   * @return dateRange
+   */
+  @javax.annotation.Nullable
+  public String getDateRange() {
+    return dateRange;
+  }
+
+  public void setDateRange(String dateRange) {
+    this.dateRange = dateRange;
+  }
+
+
+  public static final String SERIALIZED_NAME_SE_DOMAIN = "se_domain";
+  @SerializedName(SERIALIZED_NAME_SE_DOMAIN)
+  private String seDomain;
+
+  public SerpGoogleEventsLiveAdvancedRequestInfo seDomain(String seDomain) {
+    this.seDomain = seDomain;
+    return this;
+  }
+
+  /**
+   * <p><em>search engine domain</em><p>optional field<p>we choose the relevant search engine domain automatically according to the location you specify<p>however, you can set a custom search engine domain in this field<p>example:<p><code><em>google.co.uk</em></code>, <code><em>google.com.au</em></code>, <code><em>google.de</em></code>, etc.</p>
+   * @return seDomain
+   */
+  @javax.annotation.Nullable
+  public String getSeDomain() {
+    return seDomain;
+  }
+
+  public void setSeDomain(String seDomain) {
+    this.seDomain = seDomain;
   }
 
 
@@ -177,7 +359,15 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
         Objects.equals(this.keyword, serpGoogleEventsLiveAdvancedRequestInfo.keyword) &&
         Objects.equals(this.locationCode, serpGoogleEventsLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleEventsLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.depth, serpGoogleEventsLiveAdvancedRequestInfo.depth);  
+        Objects.equals(this.depth, serpGoogleEventsLiveAdvancedRequestInfo.depth) &&
+        Objects.equals(this.locationName, serpGoogleEventsLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleEventsLiveAdvancedRequestInfo.languageName) &&
+        Objects.equals(this.os, serpGoogleEventsLiveAdvancedRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleEventsLiveAdvancedRequestInfo.tag) &&
+        Objects.equals(this.maxCrawlPages, serpGoogleEventsLiveAdvancedRequestInfo.maxCrawlPages) &&
+        Objects.equals(this.locationCoordinate, serpGoogleEventsLiveAdvancedRequestInfo.locationCoordinate) &&
+        Objects.equals(this.dateRange, serpGoogleEventsLiveAdvancedRequestInfo.dateRange) &&
+        Objects.equals(this.seDomain, serpGoogleEventsLiveAdvancedRequestInfo.seDomain);  
     
   }
 
@@ -187,7 +377,7 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, depth);
+  return Objects.hash(keyword, locationCode, languageCode, depth, locationName, languageName, os, tag, maxCrawlPages, locationCoordinate, dateRange, seDomain);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -206,6 +396,14 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    maxCrawlPages: ").append(toIndentedString(maxCrawlPages)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
+    sb.append("    dateRange: ").append(toIndentedString(dateRange)).append("\n");
+    sb.append("    seDomain: ").append(toIndentedString(seDomain)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -236,6 +434,22 @@ public class SerpGoogleEventsLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("depth");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
+    
+    openapiFields.add("max_crawl_pages");
+    
+    openapiFields.add("location_coordinate");
+    
+    openapiFields.add("date_range");
+    
+    openapiFields.add("se_domain");
     
 
     // a set of required properties/fields (JSON key names)

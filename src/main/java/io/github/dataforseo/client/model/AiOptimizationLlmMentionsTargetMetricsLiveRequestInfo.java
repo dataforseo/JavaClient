@@ -76,12 +76,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * full name of search location
-* optional field
-* if you use this field, you don't need to specify location_code
-* if you don't specify this field, the location_code with 2840 value will be used by default;
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* Note: chat_gpt data is available for United States only
+   * <em>full name of search location</em><br>optional field<br>if you use this field, you don't need to specify <code>location_code</code><br>if you don't specify this field, the <code>location_code</code> with <code class='long-string'>2840</code> value will be used by default;<br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages</code><br><strong>Note: <code>chat_gpt</code> data is available for <code class='long-string'>United States</code> only
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -104,12 +99,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * search location code
-* optional field
-* if you use this field, you don't need to specify location_name
-* you can receive the list of available locations of the search engine with their location_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* default value: 2840
-* Note: chat_gpt data is available for 2840 only
+   * <em>search location code</em><br>optional field<br>if you use this field, you don't need to specify <code>location_name</code><br>you can receive the list of available locations of the search engine with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages</code><br>default value: <code class='long-string'>2840</code><br><strong>Note: <code>chat_gpt</code> data is available for <code class='long-string'>2840</code> only
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -132,12 +122,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * full name of search language
-* optional field
-* if you use this field, you don't need to specify language_code;
-* if you don't specify this field, the language_code with en value will be used by default;
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* Note: chat_gpt data is available for English only
+   * <em>full name of search language</em><br>optional field<br>if you use this field, you don't need to specify <code>language_code</code>;<br>if you don't specify this field, the <code>language_code</code> with <code class='long-string'>en</code> value will be used by default;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages</code><br><strong>Note: <code>chat_gpt</code> data is available for <code class='long-string'>English</code> only
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -160,12 +145,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * search language code
-* optional field
-* if you use this field, you don't need to specify language_name;
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages
-* default value: en
-* Note: chat_gpt data is available for en only
+   * <em>search language code</em><br>optional field<br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/llm_mentions/locations_and_languages</code><br>default value: <code class='long-string'>en</code><br><strong>Note: <code>chat_gpt</code> data is available for <code class='long-string'>en</code> only
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -188,12 +168,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * target platform
-* optional field
-* possible values:
-* chat_gpt, google
-* Note: if the platform is not specified, the data is returned for both platforms
-* Note #2:chat_gpt data is available for the United States and English only
+   * <em>target platform</em><br>optional field<br>possible values:<br><code>chat_gpt</code>, <code>google</code><br><strong>Note:</strong> if the <code>platform</code> is not specified, the data is returned for both platforms<br><strong>Note #2:</strong><code>chat_gpt</code> data is available for the <code>United States</code> and <code>English</code> only
    * @return platform
    */
   @javax.annotation.Nullable
@@ -216,16 +191,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * array of filter expressions applied before aggregation
-* optional field
-* you can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* =, <>, in, not_in, like, not_like, ilike, not_ilike, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['ai_search_volume','>',1000]the full list of possible filters is available here.
-* learn more about the initial dataset filters in this help center article.
+   * <em>array of filter expressions applied before aggregation</em><br>optional field<br>you can use this array to filter expressions applied to the raw mentions database before aggregation to limit the rows contributing to the result;<p><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code>, <code>ilike</code>, <code>not_ilike</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['ai_search_volume','>',1000]</code><p>the full list of possible filters is available <a href='/v3/ai_optimization/llm_mentions/filters' rel='noopener noreferrer' target='_blank'>here.</a><br>learn more about the initial dataset filters in <a href='https://dataforseo.com/help-center/what-are-the-initial-dataset-filters-and-how-do-they-work' rel='noopener noreferrer' target='_blank'>this help center article.</a>
    * @return initialDatasetFilters
    */
   @javax.annotation.Nullable
@@ -248,14 +214,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * maximum number of elements within internal arrays
-* optional field
-* you can use this field to limit the number of elements within the following arrays:
-* sources_domain
-* search_results_domain
-* minimum value: 1
-* maximum value: 10
-* default value: 10
+   * <em>maximum number of elements within internal arrays</em><br>optional field<br>you can use this field to limit the number of elements within the following arrays:<br><code>sources_domain</code><br><code>search_results_domain</code><br>minimum value: <code>1</code><br>maximum value: <code>10</code><br>default value: <code>10</code>
    * @return internalListLimit
    */
   @javax.annotation.Nullable
@@ -278,11 +237,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

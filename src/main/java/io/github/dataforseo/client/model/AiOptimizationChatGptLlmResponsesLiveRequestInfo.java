@@ -47,10 +47,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * prompt for the AI model
-* required field
-* the question or task you want to send to the AI model;
-* you can specify up to 500 characters in the user_prompt field
+   * <em>prompt for the AI model</em><br><strong>required field</strong><br>the question or task you want to send to the AI model;<br>you can specify <strong>up to 500 characters</strong> in the <code>user_prompt</code> field
    * @return userPrompt
    */
   @javax.annotation.Nullable
@@ -73,12 +70,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * name of the AI model
-* required field
-* model_nameconsists of the actual model name and version name;
-* if the basic model name is specified, its latest version will be set by default;
-* for example, if gpt-4.1 is specified, the gpt-4.1-2025-04-14 will be set as model_name automatically;
-* you can receive the list of available LLM models by making a separate request to the https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_responses/models
+   * <em>name of the AI model</em><br><strong>required field</strong><br><code>model_name</code >consists of the actual model name and version name;<br>if the basic model name is specified, its latest version will be set by default;<br>for example, if <code>gpt-4.1</code> is specified, the <code>gpt-4.1-2025-04-14</code> will be set as <code>model_name</code> automatically;<br>you can receive the list of available LLM models by making a separate request to the <code>https://api.dataforseo.com/v3/ai_optimization/chat_gpt/llm_responses/models</code>
    * @return modelName
    */
   @javax.annotation.Nullable
@@ -101,13 +93,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * maximum number of tokens in the AI response
-* optional field
-* minimum value for reasoning models (e.g., reasoning is true in the Models endpoint): 1024;
-* minimum value for non-reasoning models: 16;
-* maximum value: 4096;
-* default value: 2048
-* Note: if web_search is set to true or the reasoning model is specified in the request, the output token count may exceed the specified max_output_tokens limit
+   * <em>maximum number of tokens in the AI response</em><br>optional field<br>minimum value for reasoning models (e.g., <code>reasoning</code> is <code>true</code> in the <a href='/v3/ai_optimization/chat_gpt/llm_responses/models/' target='_blank'>Models endpoint</a>): <code>1024</code>;<br>minimum value for non-reasoning models: <code>16</code>;<br>maximum value: <code>4096</code>;<br>default value: <code>2048</code><br><strong>Note:</strong> if <code>web_search</code> is set to <code>true</code> or the reasoning model is specified in the request, the output token count may exceed the specified <code>max_output_tokens</code> limit
    * @return maxOutputTokens
    */
   @javax.annotation.Nullable
@@ -130,14 +116,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * randomness of the AI response
-* optional field
-* higher values make output more diverse; 
-* lower values make output more focused;
-* minimum value: 0
-* maximum value: 2
-* default value: 0.94
-* Note: not supported in reasoning models
+   * <em>randomness of the AI response</em><br>optional field<br>higher values make output more diverse; <br>lower values make output more focused;<br>minimum value: <code>0</code><br>maximum value: <code>2</code><br>default value: <code>0.94</code><br><strong>Note:</strong> not supported in reasoning models
    * @return temperature
    */
   @javax.annotation.Nullable
@@ -160,12 +139,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * diversity of the AI response
-* optional field 
-* controls diversity of the response by limiting token selection;
-* minimum value: 0
-* maximum value: 1 
-* default value: 0.92Note:  top_p cannot be used together with temperature in the same request
+   * <em>diversity of the AI response</em><br>optional field <br>controls diversity of the response by limiting token selection;<br>minimum value: <code>0</code><br>maximum value: <code>1</code> <br>default value: <code>0.92</code><p><strong>Note:</strong>  <code>top_p</code> cannot be used together with <code>temperature</code> in the same request
    * @return topP
    */
   @javax.annotation.Nullable
@@ -188,11 +162,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * enable web search
-* optional field
-* when enabled, the AI model can access and cite current web information;
-* default value: false;
-* Note: refer to the Models endpoint for a list of models that support web_search;
+   * <em>enable web search</em><br>optional field<br>when enabled, the AI model can access and cite current web information;<br>default value: <code>false</code>;<br><strong>Note:</strong> refer to the <a href='https://docs.dataforseo.com/v3/ai_optimization/chat_gpt/llm_responses/models/'>Models endpoint</a> for a list of models that support <code>web_search</code>;
    * @return webSearch
    */
   @javax.annotation.Nullable
@@ -215,13 +185,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * force AI agent to use web search
-* optional field
-* to enable this parameter, web_search must also be enabled;
-* when enabled, the AI model is forced to access and cite current web information;
-* default value: false;
-* Note: even if the parameter is set to true, there is no guarantee web sources will be cited in the response 
-* Note #2: not supported in reasoning models
+   * <em>force AI agent to use web search</em><br>optional field<br>to enable this parameter, <code>web_search</code> must also be enabled;<br>when enabled, the AI model is forced to access and cite current web information;<br>default value: <code>false</code>;<br><strong>Note:</strong> even if the parameter is set to <code>true</code>, there is no guarantee web sources will be cited in the response <br><strong>Note #2:</strong> not supported in reasoning models
    * @return forceWebSearch
    */
   @javax.annotation.Nullable
@@ -244,11 +208,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * ISO country code of the location
-* optional field
-* to enable this parameter, web_search must also be enabled;
-* when enabled, the AI model will search the web from the country you specify;
-* Note: not supported in o3-mini, o1-pro, o1 models
+   * <em>ISO country code of the location</em><br>optional field<br>to enable this parameter, <code>web_search</code> must also be enabled;<br>when enabled, the AI model will search the web from the country you specify;<br><strong>Note:</strong> not supported in <code>o3-mini</code>, <code>o1-pro</code>, <code>o1</code> models
    * @return webSearchCountryIsoCode
    */
   @javax.annotation.Nullable
@@ -271,9 +231,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * city name of the location
-* optional field
-* Note: not supported in o3-mini, o1-pro, o1 models
+   * <em>city name of the location</em><br>optional field<br><strong>Note:</strong> not supported in <code>o3-mini</code>, <code>o1-pro</code>, <code>o1</code> models
    * @return webSearchCity
    */
   @javax.annotation.Nullable
@@ -296,10 +254,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * instructions for the AI behaviour
-* optional field
-* defines the AI's role, tone, or specific behavior 
-* you can specify up to 500 characters in the system_message field
+   * <em>instructions for the AI behaviour</em><br>optional field<br>defines the AI's role, tone, or specific behavior <br>you can specify <strong>up to 500 characters</strong> in the <code>system_message</code> field
    * @return systemMessage
    */
   @javax.annotation.Nullable
@@ -354,11 +309,7 @@ public class AiOptimizationChatGptLlmResponsesLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

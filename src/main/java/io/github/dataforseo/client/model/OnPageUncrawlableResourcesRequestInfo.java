@@ -47,11 +47,7 @@ public class OnPageUncrawlableResourcesRequestInfo  {
   }
 
   /**
-   * ID of the task
-* required field
-* you can get this ID in the response of the Task POST endpoint
-* example:
-* '07131248-1535-0216-1000-17384017ad04'
+   * <em>ID of the task</em><br><strong>required field</strong><br>you can get this ID in the response of the <a href='/v3/on_page/task_post/'>Task POST</a> endpoint<br>example:<br>'07131248-1535-0216-1000-17384017ad04'
    * @return id
    */
   @javax.annotation.Nullable
@@ -74,10 +70,7 @@ public class OnPageUncrawlableResourcesRequestInfo  {
   }
 
   /**
-   * the maximum number of returned uncrawlable resources
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned uncrawlable resources</em><br>optional field<br>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -100,11 +93,7 @@ public class OnPageUncrawlableResourcesRequestInfo  {
   }
 
   /**
-   * offset in the results array of returned uncrawlable resources
-* optional field
-* default value: 0
-*  maximum value: 2000000
-* if you specify the 10 value, the first ten invalid resources in the results array will be omitted and the data will be provided for the successive invalid resources
+   * <em>offset in the results array of returned uncrawlable resources</em><br>optional field<br>default value: <code>0</code><br> maximum value: <code>2000000</code><br>if you specify the <code>10</code> value, the first ten invalid resources in the results array will be omitted and the data will be provided for the successive invalid resources
    * @return offset
    */
   @javax.annotation.Nullable
@@ -127,19 +116,7 @@ public class OnPageUncrawlableResourcesRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc - results will be sorted in the ascending order
-* desc - results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['meta.content_type,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['meta.content_type,asc','fetch_time,desc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['meta.content_type,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['meta.content_type,asc','fetch_time,desc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -162,17 +139,7 @@ public class OnPageUncrawlableResourcesRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* regex, not_regex, <, <=, >, >=, =, <>, in, not_in, like, not_like
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-*  [['meta.content_type','=','image/jpeg'],
-* 'and',
-* ['url','not_like','%/help-center/%']]The full list of possible filters is available by this link.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>regex</code>, <code>not_regex</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code> [['meta.content_type','=','image/jpeg'],<br>'and',<br>['url','not_like','%/help-center/%']]</code><p>The full list of possible filters is available <a href='/v3/on_page/filters_and_thresholds/?bash' target='_blank' rel='noopener noreferrer'>by this link.</a>
    * @return filters
    */
   @javax.annotation.Nullable

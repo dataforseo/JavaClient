@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**title** | **String** | title of the element |[optional]|
-**description** | **String** | link description |[optional]|
-**url** | **String** | search URL with refinement parameters |[optional]|
-**domain** | **String** | domain in SERP |[optional]|
+**title** | **String** | <em>title of the element</em> |[optional]|
+**description** | **String** | <em>link description</em> |[optional]|
+**url** | **String** | <em>search URL with refinement parameters</em> |[optional]|
+**domain** | **String** | <em>domain in SERP</em> |[optional]|

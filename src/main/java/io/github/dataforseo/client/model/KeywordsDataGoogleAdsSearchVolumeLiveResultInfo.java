@@ -263,9 +263,9 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
 
   public static final String SERIALIZED_NAME_HIGH_TOP_OF_PAGE_BID = "high_top_of_page_bid";
   @SerializedName(SERIALIZED_NAME_HIGH_TOP_OF_PAGE_BID)
-  private Double highTopOfPageBid;
+  private Integer highTopOfPageBid;
 
-  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo highTopOfPageBid(Double highTopOfPageBid) {
+  public KeywordsDataGoogleAdsSearchVolumeLiveResultInfo highTopOfPageBid(Integer highTopOfPageBid) {
     this.highTopOfPageBid = highTopOfPageBid;
     return this;
   }
@@ -277,11 +277,11 @@ public class KeywordsDataGoogleAdsSearchVolumeLiveResultInfo  {
    * @return highTopOfPageBid
    */
   @javax.annotation.Nullable
-  public Double getHighTopOfPageBid() {
+  public Integer getHighTopOfPageBid() {
     return highTopOfPageBid;
   }
 
-  public void setHighTopOfPageBid(Double highTopOfPageBid) {
+  public void setHighTopOfPageBid(Integer highTopOfPageBid) {
     this.highTopOfPageBid = highTopOfPageBid;
   }
 

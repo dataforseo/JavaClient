@@ -47,9 +47,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * earliest delivery date
-* the earliest date when the product can be shipped, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example: 2019-11-15 12:57:46 +00:00
+   * <em>earliest delivery date</em><br>the earliest date when the product can be shipped, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example: <code>2019-11-15 12:57:46 +00:00</code>
    * @return deliveryDateFrom
    */
   @javax.annotation.Nullable
@@ -72,9 +70,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * latest delivery date
-* the latest date when the product can be delivered, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example: 2019-11-15 12:57:46 +00:00
+   * <em>latest delivery date</em><br>the latest date when the product can be delivered, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example: <code>2019-11-15 12:57:46 +00:00</code>
    * @return deliveryDateTo
    */
   @javax.annotation.Nullable
@@ -97,9 +93,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * earliest free delivery date
-* the earliest date when the product can be delivered with a fast delivery option, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example: 2019-11-15 12:57:46 +00:00
+   * <em>earliest free delivery date</em><br>the earliest date when the product can be delivered with a fast delivery option, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example: <code>2019-11-15 12:57:46 +00:00</code>
    * @return fastestDeliveryDateFrom
    */
   @javax.annotation.Nullable
@@ -122,9 +116,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * latest free delivery date
-* the latest date when the product can be delivered with a fast delivery option, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example: 2019-11-15 12:57:46 +00:00
+   * <em>latest free delivery date</em><br>the latest date when the product can be delivered with a fast delivery option, in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example: <code>2019-11-15 12:57:46 +00:00</code>
    * @return fastestDeliveryDateTo
    */
   @javax.annotation.Nullable
@@ -147,8 +139,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * delivery information
-* message accompanying the delivery information as posted by the seller
+   * <em>delivery information</em><br>message accompanying the delivery information as posted by the seller
    * @return deliveryMessage
    */
   @javax.annotation.Nullable
@@ -171,9 +162,7 @@ public class DeliveryInfo  {
   }
 
   /**
-   * price for the delivery
-* price of the delivery based on the location you specified in the POST request;
-* if free delivery is available, the value is null
+   * <em>price for the delivery</em><br>price of the delivery based on the location you specified in the POST request;<br>if free delivery is available, the value is <code>null</code>
    * @return deliveryPrice
    */
   @javax.annotation.Nullable

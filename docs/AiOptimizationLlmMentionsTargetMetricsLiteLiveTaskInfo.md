@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationLlmMentionsTargetMetricsLiteLiveResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationLlmMentionsTargetMetricsLiteLiveResultInfo>** | <em>array of results</em> |[optional]|

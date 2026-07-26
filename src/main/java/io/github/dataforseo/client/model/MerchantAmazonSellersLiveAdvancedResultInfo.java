@@ -47,8 +47,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * asin received in a POST array
-* learn more about ASINs in this help center guide
+   * <em><code>asin</code> received in a POST array</em><br>learn more about ASINs in <a href='https://dataforseo.com/help-center/asin-in-amazon-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * search engine domain received in a POST array
+   * <em>search engine domain received in a POST array</em>
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * location code received in a POST array
+   * <em>location code received in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -140,7 +139,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * language code received in a POST array
+   * <em>language code received in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -163,8 +162,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to Amazon results
-* you can use it to make sure the provided results are accurate
+   * <em>direct URL to Amazon results</em><br>you can use it to make sure the provided results are accurate
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -187,10 +185,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -213,8 +208,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * product title
-* title of the product relevant to the asin received in a POST array
+   * <em>product title</em><br>title of the product relevant to the <code>asin</code> received in a POST array
    * @return title
    */
   @javax.annotation.Nullable
@@ -237,8 +231,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * product image url
-* image URL of the product relevant to the asin received in a POST array
+   * <em>product image url</em><br>image URL of the product relevant to the <code>asin</code> received in a POST array
    * @return image
    */
   @javax.annotation.Nullable
@@ -261,10 +254,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results found in Amazon Sellers SERP
-* contains types of all search results (items) found in the returned SERP
-* possible item types:
-* amazon_seller_main_item, amazon_seller_item
+   * <em>types of search results found in Amazon Sellers SERP</em><br>contains types of all search results (<code>items</code>) found in the returned SERP<br>possible item types:<br><code>amazon_seller_main_item</code>, <code>amazon_seller_item</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -287,7 +277,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -310,7 +300,7 @@ public class MerchantAmazonSellersLiveAdvancedResultInfo  {
   }
 
   /**
-   * items in SERP
+   * <em>items in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

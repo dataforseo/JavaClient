@@ -70,7 +70,7 @@ public class ChatGptBrandEntity  {
   }
 
   /**
-   * name of the brand
+   * <em>name of the brand</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatGptBrandEntity  {
   }
 
   /**
-   * category of the brand
+   * <em>category of the brand</em>
    * @return category
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ChatGptBrandEntity  {
   }
 
   /**
-   * brand name in markdown formatcontains brand name formatted in the markdown markup language
+   * <em>brand name in markdown format</em><br>contains brand name formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ChatGptBrandEntity  {
   }
 
   /**
-   * array of URLs and domains relevant to the brand
+   * <em> array of URLs and domains relevant to the brand</em>
    * @return urls
    */
   @javax.annotation.Nullable

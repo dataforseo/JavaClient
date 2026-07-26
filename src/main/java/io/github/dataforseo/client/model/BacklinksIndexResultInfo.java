@@ -47,7 +47,7 @@ public class BacklinksIndexResultInfo  {
   }
 
   /**
-   * total number of backlinks our database contains for the moment of checking
+   * <em>total number of backlinks our database contains for the moment of checking</em>
    * @return totalBacklinks
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksIndexResultInfo  {
   }
 
   /**
-   * total number of pages our database contains for the moment of checking
+   * <em>total number of pages our database contains for the moment of checking</em>
    * @return totalPages
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksIndexResultInfo  {
   }
 
   /**
-   * index volume data for the past 12 months
+   * <em>index volume data for the past 12 months</em>
    * @return indexHistory
    */
   @javax.annotation.Nullable

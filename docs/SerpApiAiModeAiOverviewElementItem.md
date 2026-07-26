@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | title of the element |[optional]|
-**text** | **String** | text or description of the element in SERP |[optional]|
-**markdown** | **String** | content of the element in markdown format |[optional]|
-**links** | **List<AiModeLinkElementInfo>** | website links featured in the elementif there are none, equals null |[optional]|
-**images** | **List<AiModeImagesElementInfo>** | images of the elementif there are none, equals null |[optional]|
-**references** | **List<AiModeAiOverviewReferenceInfo>** | references relevant to the elementincludes references to webpages that were used to generate the ai_overview_element |[optional]|
+**title** | **String** | <em>title of the element</em> |[optional]|
+**text** | **String** | <em>text or description of the element in SERP</em> |[optional]|
+**markdown** | **String** | <em>content of the element in markdown format</em> |[optional]|
+**links** | **List<AiModeLinkElementInfo>** | <em>website links featured in the element</em><br>if there are none, equals <code>null</code> |[optional]|
+**images** | **List<AiModeImagesElementInfo>** | <em>images of the element</em><br>if there are none, equals <code>null</code> |[optional]|
+**references** | **List<AiModeAiOverviewReferenceInfo>** | <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code> |[optional]|

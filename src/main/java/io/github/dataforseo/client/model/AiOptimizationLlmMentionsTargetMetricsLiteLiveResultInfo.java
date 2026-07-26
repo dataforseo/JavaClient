@@ -47,7 +47,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiteLiveResultInfo  {
   }
 
   /**
-   * total amount of results relevant the request
+   * <em>total amount of results relevant the request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiteLiveResultInfo  {
   }
 
   /**
-   * the number of mentions objects that are omitted in the items array
+   * <em>the number of mentions objects that are omitted in the <code>items</code> array</em>
    * @return offset
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiteLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -116,8 +116,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiteLiveResultInfo  {
   }
 
   /**
-   * aggregated mentions metrics
-* in this case, always returns null
+   * <em>aggregated mentions metrics</em><br>in this case, always returns <code>null</code>
    * @return aggregatedMetrics
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class AiOptimizationLlmMentionsTargetMetricsLiteLiveResultInfo  {
   }
 
   /**
-   * array of aggregated mentions metrics
-* contains objects with aggregated mention metrics for the specified target
+   * <em>array of aggregated mentions metrics</em><br>contains objects with aggregated mention metrics for the specified target
    * @return items
    */
   @javax.annotation.Nullable

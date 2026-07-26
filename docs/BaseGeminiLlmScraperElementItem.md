@@ -6,6 +6,6 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**rankGroup** | **Integer** | group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERPabsolute position among all the elements in SERP |[optional]|
-**markdown** | **String** | content of the element in markdown formatcontent of the result formatted in the markdown markup language |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**markdown** | **String** | <em>content of the element in markdown format</em><br>content of the result formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a> |[optional]|

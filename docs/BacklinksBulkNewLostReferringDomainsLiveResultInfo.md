@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<BacklinksBulkNewLostReferringDomainsLiveItem>** | contains relevant backlinks and referring domains data |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**items** | **List<BacklinksBulkNewLostReferringDomainsLiveItem>** | <em>contains relevant backlinks and referring domains data</em> |[optional]|

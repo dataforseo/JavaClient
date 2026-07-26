@@ -47,7 +47,7 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo  {
   }
 
   /**
-   * total number of results in our database relevant to your request
+   * <em>total number of results in our database relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo  {
   }
 
   /**
-   * item types
-* the number of items in the items array
+   * <em>item types</em><br>the number of items in the <code>items</code> array
    * @return count
    */
   @javax.annotation.Nullable
@@ -140,9 +139,7 @@ public class BusinessDataBusinessListingsSearchLiveResultInfo  {
   }
 
   /**
-   * encountered item types
-* types of search engine results encountered in the items array;
-* possible item types: business_listing
+   * <em>encountered item types</em><br>types of search engine results encountered in the <code>items</code> array;<br>possible item types: <code>business_listing</code>
    * @return items
    */
   @javax.annotation.Nullable

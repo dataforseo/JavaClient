@@ -47,7 +47,7 @@ public class MetricsBundleInfo  {
   }
 
   /**
-   * ranking and traffic data from organic search
+   * <em>ranking and traffic data from organic search</em>
    * @return organic
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class MetricsBundleInfo  {
   }
 
   /**
-   * ranking and traffic data from paid search
+   * <em>ranking and traffic data from paid search</em>
    * @return paid
    */
   @javax.annotation.Nullable

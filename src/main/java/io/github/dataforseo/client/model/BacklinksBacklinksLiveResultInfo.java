@@ -47,7 +47,7 @@ public class BacklinksBacklinksLiveResultInfo  {
   }
 
   /**
-   * target domain in a POST array
+   * <em>target domain in a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksBacklinksLiveResultInfo  {
   }
 
   /**
-   * mode specified in a POST array
+   * <em>mode specified in a POST array</em>
    * @return mode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksBacklinksLiveResultInfo  {
   }
 
   /**
-   * custom mode specified in a POST array
+   * <em>custom mode specified in a POST array</em>
    * @return customMode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BacklinksBacklinksLiveResultInfo  {
   }
 
   /**
-   * total amount of results relevant the request
+   * <em>total amount of results relevant the request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BacklinksBacklinksLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class BacklinksBacklinksLiveResultInfo  {
   }
 
   /**
-   * contains relevant backlinks and referring domains data
+   * <em>contains relevant backlinks and referring domains data</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -185,9 +185,7 @@ public class BacklinksBacklinksLiveResultInfo  {
   }
 
   /**
-   * token for subsequent requests
-* by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;
-* search_after_token values are unique for each subsequent task
+   * <em>token for subsequent requests</em><br>by specifying the unique <code>search_after_token</code> when setting a new task, you will get the subsequent results of the initial task;<br><code>search_after_token</code> values are unique for each subsequent task
    * @return searchAfterToken
    */
   @javax.annotation.Nullable

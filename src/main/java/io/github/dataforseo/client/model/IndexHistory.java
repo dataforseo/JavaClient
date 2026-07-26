@@ -47,10 +47,7 @@ public class IndexHistory  {
   }
 
   /**
-   * date for which index volume data is provided
-* in the UTC format: “yyyy-mm-dd”
-* example:
-* 2021-10-01
+   * <em>date for which index volume data is provided</em><br>in the UTC format: 'yyyy-mm-dd'<br>example:<br><code>2021-10-01</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -73,7 +70,7 @@ public class IndexHistory  {
   }
 
   /**
-   * total number of backlinks our database contained on the given date
+   * <em>total number of backlinks our database contained on the given <code>date</code></em>
    * @return totalBacklinks
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class IndexHistory  {
   }
 
   /**
-   * total number of pages our database contained on the given date
+   * <em>total number of pages our database contained on the given <code>date</code></em>
    * @return totalPages
    */
   @javax.annotation.Nullable

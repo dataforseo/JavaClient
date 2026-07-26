@@ -47,7 +47,7 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
   }
 
   /**
-   * text of the element
+   * <em>text of the element</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
   }
 
   /**
-   * content of the element in markdown formatcontent of the result formatted in the markdown markup language
+   * <em>content of the element in markdown format</em><br>content of the result formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
   }
 
   /**
-   * table present in the elementthe header and content of the table present in the element
+   * <em>table present in the element</em><br>the header and content of the table present in the element
    * @return table
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ChatGptTableElementItem  extends BaseChatGptLlmScraperElementItem  
   }
 
   /**
-   * array of brand entitiescontains information on brands mentioned in the text
+   * <em>array of brand entities</em><br>contains information on brands mentioned in the text
    * @return brandEntities
    */
   @javax.annotation.Nullable

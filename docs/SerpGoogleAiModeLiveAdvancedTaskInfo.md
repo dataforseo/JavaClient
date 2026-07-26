@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<SerpGoogleAiModeLiveAdvancedResultInfo>** | array of results |[optional]|
+**result** | **List<SerpGoogleAiModeLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

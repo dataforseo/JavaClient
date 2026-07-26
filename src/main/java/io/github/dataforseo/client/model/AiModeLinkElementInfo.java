@@ -70,7 +70,7 @@ public class AiModeLinkElementInfo  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiModeLinkElementInfo  {
   }
 
   /**
-   * link description
+   * <em>link description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AiModeLinkElementInfo  {
   }
 
   /**
-   * search URL with refinement parameters
+   * <em>search URL with refinement parameters</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiModeLinkElementInfo  {
   }
 
   /**
-   * domain in SERP
+   * <em>domain in SERP</em>
    * @return domain
    */
   @javax.annotation.Nullable

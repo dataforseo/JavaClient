@@ -70,7 +70,7 @@ public class ChatgptSearchResult  {
   }
 
   /**
-   * result URL
+   * <em>result URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatgptSearchResult  {
   }
 
   /**
-   * result domain
+   * <em>result domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ChatgptSearchResult  {
   }
 
   /**
-   * result title
+   * <em>result title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ChatgptSearchResult  {
   }
 
   /**
-   * result description
+   * <em>result description</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class ChatgptSearchResult  {
   }
 
   /**
-   * breadcrumb
+   * <em>breadcrumb</em>
    * @return breadcrumb
    */
   @javax.annotation.Nullable

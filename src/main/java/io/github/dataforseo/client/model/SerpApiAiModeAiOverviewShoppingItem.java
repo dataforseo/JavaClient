@@ -47,7 +47,7 @@ public class SerpApiAiModeAiOverviewShoppingItem  extends BaseSerpApiAiModeAiOve
   }
 
   /**
-   * title of the link
+   * <em>title of the link</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAiModeAiOverviewShoppingItem  extends BaseSerpApiAiModeAiOve
   }
 
   /**
-   * content of the element in markdown formatthe text of the ai_overview formatted in the markdown markup language
+   * <em>content of the element in markdown format</em><br>the text of the <code>ai_overview</code> formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiAiModeAiOverviewShoppingItem  extends BaseSerpApiAiModeAiOve
   }
 
   /**
-   * items of the element
+   * <em>items of the element</em>
    * @return items
    */
   @javax.annotation.Nullable

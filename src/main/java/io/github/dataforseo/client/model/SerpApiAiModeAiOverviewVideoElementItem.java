@@ -47,7 +47,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * title of the element in SERP
+   * <em>title of the element in SERP</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * additional information for the video
+   * <em>additional information for the video</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * relevant URL
+   * <em>relevant URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * domain name of the reference
+   * <em>domain name of the reference</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * reference source name or title
+   * <em>reference source name or title</em>
    * @return source
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * date when the video was published or indexedexample: Apr 26, 2024
+   * <em>date when the video was published or indexed</em><br>example: <br><code>Apr 26, 2024</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class SerpApiAiModeAiOverviewVideoElementItem  extends BaseSerpApiAiModeA
   }
 
   /**
-   * date and time when the video was published or indexedin the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'example:2019-11-15 12:57:46 +00:00
+   * <em>date and time when the video was published or indexed</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return timestamp
    */
   @javax.annotation.Nullable

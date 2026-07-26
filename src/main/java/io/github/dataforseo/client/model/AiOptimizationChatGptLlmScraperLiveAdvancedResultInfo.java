@@ -47,8 +47,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * keyword received in a POST array
-* the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
+   * <em>keyword received in a POST array<br></em><strong>the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * indicates the model version
+   * <em>indicates the model version</em>
    * @return model
    */
   @javax.annotation.Nullable
@@ -140,8 +139,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided exact results
+   * <em>direct URL to search engine results<br></em>you can use it to make sure that we provided exact results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -164,10 +162,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -190,8 +185,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * content of the element in markdown format
-* content of the result formatted in the markdown markup language
+   * <em>content of the element in markdown format</em><br>content of the result formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -214,8 +208,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * array of search results
-* all web search outputs the model retrieved when looking up information, including duplicates and unused entries
+   * <em>array of search results</em><br>all web search outputs the model retrieved when looking up information, including duplicates and unused entries
    * @return searchResults
    */
   @javax.annotation.Nullable
@@ -238,8 +231,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * array of sources
-* the sources the model actually cited or relied on in its final answer
+   * <em>array of sources</em><br>the sources the model actually cited or relied on in its final answer
    * @return sources
    */
   @javax.annotation.Nullable
@@ -262,8 +254,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * array of fan-out queries
-* contains related search queries derived from the main query to provide a more comprehensive response
+   * <em>array of fan-out queries</em><br>contains related search queries derived from the main query to provide a more comprehensive response
    * @return fanOutQueries
    */
   @javax.annotation.Nullable
@@ -286,8 +277,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * array of brand entities
-* contains information on brands mentioned in the response
+   * <em>array of brand entities</em><br>contains information on brands mentioned in the response
    * @return brandEntities
    */
   @javax.annotation.Nullable
@@ -310,7 +300,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * total number of results
+   * <em> total number of results</em>
    * @return seResultsCount
    */
   @javax.annotation.Nullable
@@ -333,10 +323,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * types of search results
-* contains types of search results (items) found in SERP.
-* possible item types:
-* chat_gpt_text, chat_gpt_table, chat_gpt_navigation_list, chat_gpt_images, chat_gpt_local_businesses, chat_gpt_products
+   * <em>types of search results</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item types:<br><code>chat_gpt_text</code>, <code>chat_gpt_table</code>, <code>chat_gpt_navigation_list</code>, <code>chat_gpt_images</code>, <code>chat_gpt_local_businesses</code>, <code>chat_gpt_products</code>
    * @return itemTypes
    */
   @javax.annotation.Nullable
@@ -359,7 +346,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -382,7 +369,7 @@ public class AiOptimizationChatGptLlmScraperLiveAdvancedResultInfo  {
   }
 
   /**
-   * elements of ChatGPT results
+   * <em>elements of ChatGPT results</em>
    * @return items
    */
   @javax.annotation.Nullable

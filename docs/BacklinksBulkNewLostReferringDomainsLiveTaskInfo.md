@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BacklinksBulkNewLostReferringDomainsLiveResultInfo>** | array of results |[optional]|
+**result** | **List<BacklinksBulkNewLostReferringDomainsLiveResultInfo>** | <em>array of results</em> |[optional]|

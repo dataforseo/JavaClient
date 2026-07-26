@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationLlmMentionsLocationsAndLanguagesResultInfo>** | <em>array of results</em> |[optional]|

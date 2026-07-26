@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | name of the brand |[optional]|
-**snippet** | **String** | source description |[optional]|
-**url** | **String** | URL |[optional]|
-**domain** | **String** | domain |[optional]|
-**imageUrl** | **String** | URL of the image displayed in the ad |[optional]|
-**advertiser** | **ChatGptAdAdvertiser** | information about the advertiser associated with the ad |[optional]|
+**title** | **String** | <em>name of the brand</em> |[optional]|
+**snippet** | **String** | <em>source description</em> |[optional]|
+**url** | **String** | <em>URL</em> |[optional]|
+**domain** | **String** | <em>domain</em> |[optional]|
+**imageUrl** | **String** | <em>URL of the image displayed in the ad</em> |[optional]|
+**advertiser** | **ChatGptAdAdvertiser** | <em>information about the advertiser associated with the ad</em> |[optional]|

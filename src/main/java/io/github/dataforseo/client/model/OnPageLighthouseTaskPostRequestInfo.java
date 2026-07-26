@@ -47,11 +47,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * target URL
-* required field
-* target page should be specified with its absolute URL (including http:// or https://)
-* example:
-* https://dataforseo.com/
+   * <em>target URL</em><br><strong>required field</strong><br>target page should be specified with its absolute URL (including http:// or https://)<br>example:<br><code>https://dataforseo.com/</code>
    * @return url
    */
   @javax.annotation.Nullable
@@ -74,11 +70,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * applies mobile emulation
-* optional field
-* if set to true, Lighthouse will use mobile device and screen emulation to test the page against mobile environment
-* if set to false, the results will be provided for desktop
-* default value: false
+   * <em>applies mobile emulation</em><br>optional field<br>if set to <code>true</code>, Lighthouse will use mobile device and screen emulation to test the page against mobile environment<br>if set to <code>false</code>, the results will be provided for desktop<br>default value: <code>false</code>
    * @return forMobile
    */
   @javax.annotation.Nullable
@@ -101,11 +93,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * categories of Lighthouse audits
-* optional field
-* each category is a collection of audits and audit groups that applies weighting and scoring to the section (see official definition)if you ignore this field, we will return data for all categories unless you specify audits
-* use this field to get data for specific categories you indicate herepossible values:
-* seo, performance, best_practices, accessibility
+   * <em>categories of Lighthouse audits</em><br>optional field<br>each category is a collection of audits and audit groups that applies weighting and scoring to the section (<a href='https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md#auditreport-terminology' target='_blank' rel='noopener noreferrer'>see official definition</a>)<strong>if you ignore this field, we will return data for all categories unless you specify <code>audits</code></strong><br>use this field to get data for specific categories you indicate here<p>possible values:<br><code>seo</code>, <code>performance</code>, <code>best_practices</code>, <code>accessibility</code>
    * @return categories
    */
   @javax.annotation.Nullable
@@ -128,12 +116,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * Lighthouse audits
-* optional field
-* audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (see official definition)if you ignore this field, we will return data for all audits
-* use this field to get data for specific audits you indicate herenote that some audits do not belong to a specific category and are stand-alone page quality measurementsin general, there can be several use cases:1. if you ignore categories, you can use this field to get data for the specified audits only
-* for example, if you ignore 'categories' and specify 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get data only for these audits2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specified
-* for example, if you specify 'categories': ['seo'] and 'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time'], you will get only these audits under 'performance' and all audits under 'seo'you can get the full list of possible audits here
+   * <em>Lighthouse audits</em><br>optional field<br>audits are individual tests Lighthouse runs for each specific feature/optimization/metric to produce a numeric score (<a href='https://github.com/GoogleChrome/lighthouse/blob/master/docs/architecture.md#components--terminology' target='_blank' rel='noopener noreferrer'>see official definition</a>)<strong>if you ignore this field, we will return data for all audits</strong><br>use this field to get data for specific audits you indicate here<p><strong>note</strong> that some audits do not belong to a specific category and are stand-alone page quality measurements<p>in general, there can be several use cases:<p>1. if you ignore <code>categories</code>, you can use this field to get data for the specified audits only<br>for example, if you ignore <code>'categories'</code> and specify <code>'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time']</code>, you will get data only for these audits<p>2. if you specify a category, you can use this field to additionally receive audits that do not belong to the category(-ies) you specified<br>for example, if you specify <code>'categories': ['seo']</code> and <code>'audits': ['metrics/cumulative-layout-shift','metrics/largest-contentful-paint','metrics/total-blocking-time']</code>, you will get only these audits under 'performance' and all audits under 'seo'<p>you can get <a href='/v3/on_page/lighthouse/audits/'>the full list of possible audits here</a>
    * @return audits
    */
   @javax.annotation.Nullable
@@ -156,10 +139,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * lighthouse version
-* optional field
-* you can obtain the results specific to a certain Lighthouse version by specifying its number
-* the list of available versions is available through the Lighthouse Versions endpoint
+   * <em>lighthouse version</em><br>optional field<br>you can obtain the results specific to a certain Lighthouse version by specifying its number<br>the list of available versions is available through the <a href='/v3/on_page/lighthouse/versions/' target='_blank' rel='noopener noreferrer'>Lighthouse Versions endpoint</a>
    * @return version
    */
   @javax.annotation.Nullable
@@ -182,11 +162,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * lighthouse language name
-* optional field
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languages
-* default value:
-* English
+   * <em>lighthouse language name</em><br>optional field<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/on_page/lighthouse/languages</code><br>default value:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -209,11 +185,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * lighthouse language code
-* optional field
-* you can receive the list of available languages of the search engine with their language_code by making a separate request to https://api.dataforseo.com/v3/on_page/lighthouse/languages
-* default value:
-* en
+   * <em>lighthouse language code</em><br>optional field<br>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to <code>https://api.dataforseo.com/v3/on_page/lighthouse/languages</code><br>default value:<br><code class='long-string'>en</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -236,10 +208,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * custom user agent
-* optional field
-* specify the custom user agent used by the browser when running the Lighthouse audit;
-* can be specified with up to 254 characters;
+   * <em>custom user agent</em><br>optional field<br>specify the custom user agent used by the browser when running the Lighthouse audit;<br>can be specified with up to 254 characters;
    * @return customUserAgent
    */
   @javax.annotation.Nullable
@@ -262,10 +231,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen width
-* optional field
-* set the screen width of the browser used for the Lighthouse audit to emulate a specific device;
-* can be specified within the following range: 240–9999;
+   * <em>browser screen width</em><br>optional field<br>set the screen width of the browser used for the Lighthouse audit to emulate a specific device;<br>can be specified within the following range: <code>240–9999</code>;
    * @return browserScreenWidth
    */
   @javax.annotation.Nullable
@@ -288,10 +254,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen height
-* optional field
-* set the screen height of the browser used for the Lighthouse audit to emulate a specific device;
-* can be specified within the following range: 240–9999;
+   * <em>browser screen height</em><br>optional field<br>set the screen height of the browser used for the Lighthouse audit to emulate a specific device;<br>can be specified within the following range: <code>240–9999</code>;
    * @return browserScreenHeight
    */
   @javax.annotation.Nullable
@@ -314,10 +277,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * browser screen scale factor
-* optional field
-* set the device pixel ratio of the browser used for the Lighthouse audit;
-* can be specified within the following range: 0.5–3;
+   * <em>browser screen scale factor</em><br>optional field<br>set the device pixel ratio of the browser used for the Lighthouse audit;<br>can be specified within the following range: <code>0.5–3</code>;
    * @return browserScreenScaleFactor
    */
   @javax.annotation.Nullable
@@ -340,13 +300,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * browser network throttling method
-* optional field
-* defines the method used to apply throttling during the Lighthouse audit;
-* possible vaules:
-* simulate - calculates estimated performance metrics without applying explicit throttling;
-* devtools -  applies the throttling settings specified in browser_network_throttling and browser_cpu_throttling_multiplier;
-* provided - uses the network conditions of the crawling environment;
+   * <em>browser network throttling method</em><br>optional field<br>defines the method used to apply throttling during the Lighthouse audit;<br>possible vaules:<br><code>simulate</code> - calculates estimated performance metrics without applying explicit throttling;<br><code>devtools</code> -  applies the throttling settings specified in <code>browser_network_throttling</code> and <code>browser_cpu_throttling_multiplier</code>;<br><code>provided</code> - uses the network conditions of the crawling environment;
    * @return browserNetworkThrottlingMethod
    */
   @javax.annotation.Nullable
@@ -369,11 +323,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * browser CPU throttling multiplier
-* required if browser_network_throttling_method is set to devtools;
-* set the CPU throttling multiplier to simulate device performance conditions during the Lighthouse audit;
-* can be specified within the following range: 1–4;
-* Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+   * <em>browser CPU throttling multiplier</em><br><strong>required if <code>browser_network_throttling_method</code> is set to <code>devtools</code>;</strong><br>set the CPU throttling multiplier to simulate device performance conditions during the Lighthouse audit;<br>can be specified within the following range: <code>1–4</code>;<br><strong>Note:</strong> this parameter is applied only when <code>browser_network_throttling_method</code> is set to <code>devtools</code>;
    * @return browserCpuThrottlingMultiplier
    */
   @javax.annotation.Nullable
@@ -396,11 +346,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * browser network throttling
-* required if browser_network_throttling_method is set to devtools;
-* set the network throttling profile to simulate connection speed conditions during the Lighthouse audit;
-* possible values: no_throttling, fast_4g, slow_4g, regular_3g, pc;
-* Note: this parameter is applied only when browser_network_throttling_method is set to devtools;
+   * <em>browser network throttling</em><br><strong>required if <code>browser_network_throttling_method</code> is set to <code>devtools</code>;</strong><br>set the network throttling profile to simulate connection speed conditions during the Lighthouse audit;<br>possible values: <code>no_throttling</code>, <code>fast_4g</code>, <code>slow_4g</code>, <code>regular_3g</code>, <code>pc</code>;<br><strong>Note:</strong> this parameter is applied only when <code>browser_network_throttling_method</code> is set to <code>devtools</code>;
    * @return browserNetworkThrottling
    */
   @javax.annotation.Nullable
@@ -423,11 +369,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -450,15 +392,7 @@ public class OnPageLighthouseTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed task
-* optional field
-* when a task is completed we will notify you by GET request sent to the URL you have specified
-* you can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.
-* example:
-* http://your-server.com/pingscript?id=$id
-* http://your-server.com/pingscript?id=$id&tag=$tag
-* Note: special characters in pingback_url will be urlencoded;
-* i.a., the # character will be encoded into %23learn more on our Help Center
+   * <em>notification URL of a completed task</em><br>optional field<br>when a task is completed we will notify you by GET request sent to the URL you have specified<br>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<br>example:<br><code>http://your-server.com/pingscript?id=$id</code><br><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><br><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<br>i.a., the <code>#</code> character will be encoded into <code>%23</code>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable

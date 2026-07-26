@@ -47,7 +47,7 @@ public class HotelAmenityItemInfo  {
   }
 
   /**
-   * standardised amenity name
+   * <em>standardised amenity name</em>
    * @return amenity
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class HotelAmenityItemInfo  {
   }
 
   /**
-   * displayed amenity name
+   * <em>displayed amenity name</em>
    * @return amenityLabel
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class HotelAmenityItemInfo  {
   }
 
   /**
-   * standardised details about the amenity
+   * <em>standardised details about the amenity</em>
    * @return hint
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class HotelAmenityItemInfo  {
   }
 
   /**
-   * displayed details about the amenity
+   * <em>displayed details about the amenity</em>
    * @return hintLabel
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class HotelAmenityItemInfo  {
   }
 
   /**
-   * indicates whether the amenity is available in the hotel
+   * <em>indicates whether the <code>amenity</code> is available in the hotel</em>
    * @return isAvailable
    */
   @javax.annotation.Nullable

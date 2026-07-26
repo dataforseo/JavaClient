@@ -70,7 +70,7 @@ public class BaseSerpApiElementItem  {
   }
 
   /**
-   * search results page numberindicates the number of the SERP page on which the element is located
+   * <em>search results page number</em><br>indicates the number of the SERP page on which the element is located
    * @return page
    */
   @javax.annotation.Nullable

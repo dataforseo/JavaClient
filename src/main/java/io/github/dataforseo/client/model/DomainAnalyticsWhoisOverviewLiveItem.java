@@ -47,7 +47,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * domain name
+   * <em>domain name</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -70,10 +70,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * date and time of registration
-* date and time (in the ISO 8601 format) when the domain was first registered 
-* example: 
-* '1997-03-29 03:00:00 +00:00'
+   * <em>date and time of registration</em><br>date and time (in the <a href='https://en.wikipedia.org/wiki/ISO_8601' rel='noopener noreferrer' target='_blank'>ISO 8601 format</a>) when the domain was first registered <br>example: <br><code>'1997-03-29 03:00:00 +00:00'</code>
    * @return createdDatetime
    */
   @javax.annotation.Nullable
@@ -96,10 +93,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * date and time when the domain entry was changed
-* date and time (in the ISO 8601 format) when the domain entry was last modified
-* example: 
-* '2021-01-14 08:36:28 +00:00'
+   * <em>date and time when the domain entry was changed</em><br>date and time (in the <a href='https://en.wikipedia.org/wiki/ISO_8601' rel='noopener noreferrer' target='_blank'>ISO 8601 format</a>) when the domain entry was last modified<br>example: <br><code>'2021-01-14 08:36:28 +00:00'</code>
    * @return changedDatetime
    */
   @javax.annotation.Nullable
@@ -122,10 +116,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * date and time when the domain will expire
-* date and time (in the ISO 8601 format) when the domain is due to expire 
-* example: 
-* '2022-11-26 17:21:23 +00:00'
+   * <em>date and time when the domain will expire</em><br>date and time (in the <a href='https://en.wikipedia.org/wiki/ISO_8601' rel='noopener noreferrer' target='_blank'>ISO 8601 format</a>) when the domain is due to expire <br>example: <br><code>'2022-11-26 17:21:23 +00:00'</code>
    * @return expirationDatetime
    */
   @javax.annotation.Nullable
@@ -148,10 +139,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * date and time when the domain was updated
-* date and time (in the ISO 8601 format) when the domain was last updated 
-* example: 
-* '2021-01-29 13:59:38 +00:00'
+   * <em>date and time when the domain was updated</em><br>date and time (in the <a href='https://en.wikipedia.org/wiki/ISO_8601' rel='noopener noreferrer' target='_blank'>ISO 8601 format</a>) when the domain was last updated <br>example: <br><code>'2021-01-29 13:59:38 +00:00'</code>
    * @return updatedDatetime
    */
   @javax.annotation.Nullable
@@ -174,10 +162,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * date and time when our crawler found the domain for the first time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example: 
-* '2019-11-15 12:57:46 +00:00'
+   * <em>date and time when our crawler found the domain for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example: <br><code>'2019-11-15 12:57:46 +00:00'</code>
    * @return firstSeen
    */
   @javax.annotation.Nullable
@@ -200,8 +185,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * extensive provisioning protocol status codes
-* the status of a domain name registration as defined by ICANN
+   * <em>extensive provisioning protocol status codes</em><br>the status of a domain name registration <a href='https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en' rel='noopener noreferrer' target='_blank'>as defined by ICANN</a>
    * @return eppStatusCodes
    */
   @javax.annotation.Nullable
@@ -224,8 +208,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * top-level domain
-* top-level domain in the DNS root zone
+   * <em>top-level domain</em><br>top-level domain in the <a href='https://www.iana.org/domains/root/db' rel='noopener noreferrer' target='_blank'>DNS root zone</a>
    * @return tld
    */
   @javax.annotation.Nullable
@@ -248,9 +231,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * domain registration status
-* if false, the domain name registration has expired
-* Note: expired domains will remain in the database for only a short period of time
+   * <em>domain registration status</em><br>if <code>false</code>, the domain name registration has expired<br><strong>Note: expired domains will remain in the database for only a short period of time</strong>
    * @return registered
    */
   @javax.annotation.Nullable
@@ -273,10 +254,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * domain registrar
-* if null, the domain registrar is unknown
-* example:
-* NameCheap, Inc.
+   * <em>domain registrar</em><br>if <code>null</code>, the domain registrar is unknown<br>example:<br><code>NameCheap, Inc.</code>
    * @return registrar
    */
   @javax.annotation.Nullable
@@ -299,7 +277,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * ranking data relevant to the specified domain
+   * <em>ranking data relevant to the specified domain</em>
    * @return metrics
    */
   @javax.annotation.Nullable
@@ -322,7 +300,7 @@ public class DomainAnalyticsWhoisOverviewLiveItem  {
   }
 
   /**
-   * backlink data for the returned domain
+   * <em>backlink data for the returned domain</em>
    * @return backlinksInfo
    */
   @javax.annotation.Nullable

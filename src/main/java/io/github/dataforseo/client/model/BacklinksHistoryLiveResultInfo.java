@@ -47,7 +47,7 @@ public class BacklinksHistoryLiveResultInfo  {
   }
 
   /**
-   * target from the POST array
+   * <em><code>target</code> from the POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,10 +70,7 @@ public class BacklinksHistoryLiveResultInfo  {
   }
 
   /**
-   * starting date of the time range
-* in the UTC format: “yyyy-mm-dd”
-* example:
-* 2019-01-01
+   * <em>starting date of the time range</em><br>in the UTC format: “yyyy-mm-dd”<br>example:<br><code>2019-01-01</code>
    * @return dateFrom
    */
   @javax.annotation.Nullable
@@ -96,10 +93,7 @@ public class BacklinksHistoryLiveResultInfo  {
   }
 
   /**
-   * ending date of the time range
-* in the UTC format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>ending date of the time range</em><br>in the UTC format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return dateTo
    */
   @javax.annotation.Nullable
@@ -122,7 +116,7 @@ public class BacklinksHistoryLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -145,9 +139,7 @@ public class BacklinksHistoryLiveResultInfo  {
   }
 
   /**
-   * contains historical backlink data for the specified domain
-* the data is provided month-by-month;
-* the metrics are aggregated according to the backlinks the specified domain had on the first day of each given month
+   * <em>contains historical backlink data for the specified domain</em><br>the data is provided month-by-month;<br>the metrics are aggregated according to the backlinks the specified domain had on the first day of each given month
    * @return items
    */
   @javax.annotation.Nullable

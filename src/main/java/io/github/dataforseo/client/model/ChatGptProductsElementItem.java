@@ -47,7 +47,7 @@ public class ChatGptProductsElementItem  extends BaseChatGptLlmScraperElementIte
   }
 
   /**
-   * elements of ChatGPT results
+   * <em>elements of ChatGPT results</em>
    * @return items
    */
   @javax.annotation.Nullable

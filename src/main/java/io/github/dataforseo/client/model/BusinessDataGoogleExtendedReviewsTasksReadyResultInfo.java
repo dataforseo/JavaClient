@@ -47,8 +47,7 @@ public class BusinessDataGoogleExtendedReviewsTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class BusinessDataGoogleExtendedReviewsTasksReadyResultInfo  {
   }
 
   /**
-   * search engine specified when setting the task
-* can take the following values: google
+   * <em>search engine specified when setting the task</em><br>can take the following values: <code>google</code>
    * @return se
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class BusinessDataGoogleExtendedReviewsTasksReadyResultInfo  {
   }
 
   /**
-   * type of search engine
+   * <em>type of search engine</em>
    * @return seType
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class BusinessDataGoogleExtendedReviewsTasksReadyResultInfo  {
   }
 
   /**
-   * date when the task was posted (in the UTC format)
+   * <em>date when the task was posted (in the UTC format)</em>
    * @return datePosted
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class BusinessDataGoogleExtendedReviewsTasksReadyResultInfo  {
   }
 
   /**
-   * user-defined task identifier
+   * <em>user-defined task identifier</em>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class BusinessDataGoogleExtendedReviewsTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the task
+   * <em>URL for collecting the results of the task</em>
    * @return endpoint
    */
   @javax.annotation.Nullable

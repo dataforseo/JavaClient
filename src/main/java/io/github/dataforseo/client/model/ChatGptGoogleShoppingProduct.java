@@ -70,7 +70,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * event identifierinternal event identifier used by Google
+   * <em>event identifier</em><br>internal event identifier used by Google
    * @return ei
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * product identifiercan be used as a data_docid in Google Shopping API endpoints
+   * <em>product identifier</em><br>can be used as a <code>data_docid</code> in <a href='https://docs.dataforseo.com/v3/merchant/google/overview/' target='_blank'>Google Shopping API endpoints
    * @return productId
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * Google Shopping catalog identifier of the productcan be used as a product_id in Google Shopping API endpoints
+   * <em>Google Shopping catalog identifier of the product</em><br>can be used as a <code>product_id</code> in <a href='https://docs.dataforseo.com/v3/merchant/google/overview/' target='_blank'>Google Shopping API endpoints</a>
    * @return catalogId
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * Google product cluster identifiercan be used as a gid in Google Shopping API endpoints
+   * <em>Google product cluster identifier</em><br>can be used as a <code>gid</code> in <a href='https://docs.dataforseo.com/v3/merchant/google/overview/' target='_blank'>Google Shopping API endpoints</a>
    * @return gpcid
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * document identifier of the main offer in the headlinecan be used as a data_docid in Google Shopping API endpoints
+   * <em>document identifier of the main offer in the headline</em><br>can be used as a <code>data_docid</code> in <a href='https://docs.dataforseo.com/v3/merchant/google/overview/' target='_blank'>Google Shopping API endpoints</a>
    * @return headlineOfferDocid
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * identifier for the displayed product’s image
+   * <em>identifier for the displayed product’s image</em>
    * @return imageDocid
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * resource descriptor string internal Google resource descriptor string that identifies the product within Google's Shopping index
+   * <em>resource descriptor string </em><br>internal Google resource descriptor string that identifies the product within Google's Shopping index
    * @return rds
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * search querysearch query used by ChatGPT to retrieve the product from Google Shopping
+   * <em>search query</em><br>search query used by ChatGPT to retrieve the product from Google Shopping
    * @return query
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * merchant identifieridentifier of the seller or merchant account in Google Shopping
+   * <em>merchant identifier</em><br>identifier of the seller or merchant account in Google Shopping
    * @return mid
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * product view typeinternal Google parameter that specifies the product view type used when rendering the product item
+   * <em>product view type</em><br>internal Google parameter that specifies the product view type used when rendering the product item
    * @return pvt
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * encoded location parameterindicates the location for a search
+   * <em>encoded location parameter</em><br>indicates the location for a search
    * @return uule
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * country codeindicates the location for which search results are displayed
+   * <em>country code</em><br>indicates the location for which search results are displayed
    * @return gl
    */
   @javax.annotation.Nullable
@@ -346,7 +346,7 @@ public class ChatGptGoogleShoppingProduct  {
   }
 
   /**
-   * host language codeindicates the language in which search results are displayed
+   * <em>host language code</em><br>indicates the language in which search results are displayed
    * @return hl
    */
   @javax.annotation.Nullable

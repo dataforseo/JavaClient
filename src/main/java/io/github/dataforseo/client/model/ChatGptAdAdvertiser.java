@@ -47,7 +47,7 @@ public class ChatGptAdAdvertiser  {
   }
 
   /**
-   * name of the advertiser
+   * <em>name of the advertiser</em>
    * @return name
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ChatGptAdAdvertiser  {
   }
 
   /**
-   * source URL
+   * <em>source URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatGptAdAdvertiser  {
   }
 
   /**
-   * URL of the advertiser's favicon image
+   * <em>URL of the advertiser's favicon image</em>
    * @return faviconUrl
    */
   @javax.annotation.Nullable

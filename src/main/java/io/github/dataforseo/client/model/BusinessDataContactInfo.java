@@ -70,7 +70,7 @@ public class BusinessDataContactInfo  {
   }
 
   /**
-   * the value of the rating
+   * <em>the value of the rating</em>
    * @return value
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BusinessDataContactInfo  {
   }
 
   /**
-   * data source
+   * <em>data source</em>
    * @return source
    */
   @javax.annotation.Nullable

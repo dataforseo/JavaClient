@@ -47,7 +47,7 @@ public class BrandEntities  {
   }
 
   /**
-   * rank in the results
+   * <em>rank in the results</em>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BrandEntities  {
   }
 
   /**
-   * source title
+   * <em>source title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BrandEntities  {
   }
 
   /**
-   * category of the brand
+   * <em>category of the brand</em>
    * @return category
    */
   @javax.annotation.Nullable

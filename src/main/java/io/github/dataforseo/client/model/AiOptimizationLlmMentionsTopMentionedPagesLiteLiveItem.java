@@ -47,8 +47,7 @@ public class AiOptimizationLlmMentionsTopMentionedPagesLiteLiveItem  {
   }
 
   /**
-   * page URL 
-* page identifier of aggregated metrics
+   * <em>page URL </em><br>page identifier of aggregated metrics
    * @return page
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class AiOptimizationLlmMentionsTopMentionedPagesLiteLiveItem  {
   }
 
   /**
-   * location identifier
-* location of aggregated metrics
+   * <em>location identifier</em><br>location of aggregated metrics
    * @return location
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class AiOptimizationLlmMentionsTopMentionedPagesLiteLiveItem  {
   }
 
   /**
-   * language identifier
-* language of aggregated metrics
+   * <em>language identifier</em><br>language of aggregated metrics
    * @return language
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class AiOptimizationLlmMentionsTopMentionedPagesLiteLiveItem  {
   }
 
   /**
-   * LLM platform identifiers
-* LLM platform of aggregated metrics
+   * <em>LLM platform identifiers</em><br>LLM platform of aggregated metrics
    * @return platform
    */
   @javax.annotation.Nullable
@@ -143,8 +139,7 @@ public class AiOptimizationLlmMentionsTopMentionedPagesLiteLiveItem  {
   }
 
   /**
-   * LLM metrics
-* metrics aggregated by specific parameters and respective identifiers
+   * <em>LLM metrics</em><br>metrics aggregated by specific parameters and respective identifiers
    * @return metrics
    */
   @javax.annotation.Nullable

@@ -47,8 +47,7 @@ public class OnPageUncrawlableResourcesResultInfo  {
   }
 
   /**
-   * status of the crawling session
-* possible values: in_progress, finished
+   * <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code>
    * @return crawlProgress
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class OnPageUncrawlableResourcesResultInfo  {
   }
 
   /**
-   * details of the crawling session
+   * <em>details of the crawling session</em>
    * @return crawlStatus
    */
   @javax.annotation.Nullable
@@ -117,8 +116,7 @@ public class OnPageUncrawlableResourcesResultInfo  {
   }
 
   /**
-   * total number of uncrawlable resources found
-*  total number of uncrawlable resources found during the crawl of the target domain
+   * <em>total number of uncrawlable resources found</em><br> total number of uncrawlable resources found during the crawl of the target domain
    * @return totalItemsCount
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class OnPageUncrawlableResourcesResultInfo  {
   }
 
   /**
-   * number of uncrawlable resources in the items array
+   * <em>number of uncrawlable resources in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -164,7 +162,7 @@ public class OnPageUncrawlableResourcesResultInfo  {
   }
 
   /**
-   * array of uncrawlable resources
+   * <em>array of uncrawlable resources</em>
    * @return items
    */
   @javax.annotation.Nullable

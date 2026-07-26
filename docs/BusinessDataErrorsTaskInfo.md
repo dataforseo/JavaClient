@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataErrorsResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataErrorsResultInfo>** | <em>array of results</em> |[optional]|

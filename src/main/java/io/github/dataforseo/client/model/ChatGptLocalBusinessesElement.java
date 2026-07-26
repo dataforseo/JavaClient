@@ -70,7 +70,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * description of the local business
+   * <em>description of the local business</em>
    * @return description
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * address of the local business
+   * <em>address of the local business</em>
    * @return address
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * phone of the local business
+   * <em>phone of the local business</em>
    * @return phone
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * total number of reviews submitted for the local business
+   * <em>total number of reviews submitted for the local business</em>
    * @return reviewsCount
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * domain
+   * <em>domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class ChatGptLocalBusinessesElement  {
   }
 
   /**
-   * rating of the corresponding local businesspopularity rate based on reviews as displayed in the results
+   * <em>rating of the corresponding local business</em><br>popularity rate based on reviews as displayed in the results
    * @return rating
    */
   @javax.annotation.Nullable

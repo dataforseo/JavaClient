@@ -47,8 +47,7 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * task identifier of the completed task
-* unique task identifier in our system in the UUID format
+   * <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong>
    * @return id
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * search engine specified when setting the task
+   * <em>search engine specified when setting the task</em>
    * @return se
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * search engine function
-* example: llm_scraper
+   * <em>search engine function</em><br>example: <code>llm_scraper</code>
    * @return function
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * date when the task was posted (in the UTC format)
+   * <em>date when the task was posted (in the UTC format)</em>
    * @return datePosted
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * user-defined task identifier
+   * <em>user-defined task identifier</em>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -164,8 +162,7 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the Advanced task
-* if the Advanced function is not supported in the specified endpoint, the value will be null
+   * <em>URL for collecting the results of the Advanced task</em><br>if the Advanced function is not supported in the specified endpoint, the value will be <code>null</code>
    * @return endpointAdvanced
    */
   @javax.annotation.Nullable
@@ -188,8 +185,7 @@ public class AiOptimizationGeminiLlmScraperTasksReadyResultInfo  {
   }
 
   /**
-   * URL for collecting the results of the HTML task
-* if the HTML function is not supported in the specified endpoint, the value will be null
+   * <em>URL for collecting the results of the HTML task</em><br>if the HTML function is not supported in the specified endpoint, the value will be <code>null</code>
    * @return endpointHtml
    */
   @javax.annotation.Nullable

@@ -47,12 +47,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo  {
   }
 
   /**
-   * domains, subdomains or webpages to get summary data for
-* required field
-* a domain or a subdomain should be specified without https:// and www.
-* a page should be specified with absolute URL (including http:// or https://)
-* you can specify up to 1000 pages, domains, or subdomains in each request.
-* note that the URLs you set in a single request cannot belong to more than 100 different domains.
+   * <em>domains, subdomains or webpages to get summary data for</em><br><strong>required field</strong><br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>a page should be specified with absolute URL (including <code>http://</code> or <code>https://</code>)<br>you can specify up to 1000 pages, domains, or subdomains in each request.<br><strong>note that the URLs you set in a single request cannot belong to more than 100 different domains</strong>.
    * @return targets
    */
   @javax.annotation.Nullable
@@ -75,10 +70,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains of the target will be included in the search
-* optional field
-* if set to false, the subdomains will be ignored
-* default value: true
+   * <em>indicates if the subdomains of the <code>target</code> will be included in the search</em><br>optional field<br>if set to <code>false</code>, the subdomains will be ignored<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -101,14 +93,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo  {
   }
 
   /**
-   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
-* optional field
-* you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
-* possible values:
-* one_hundred — rank values are displayed on a 0–100 scale
-* one_thousand — rank values are displayed on a 0–1000 scale
-* default value: one_thousand
-* learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * <em>defines the scale used for calculating and displaying the <code>rank</code>, <code>domain_from_rank</code>, and <code>page_from_rank</code> values</em><br>optional field<p>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<p>possible values:<br><code>one_hundred</code> — rank values are displayed on a 0–100 scale<br><code>one_thousand</code> — rank values are displayed on a 0–1000 scale<p>default value: <code>one_thousand</code><p>learn more about how this parameter works and how ranking metrics are calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale'>this Help Center article</a>
    * @return rankScale
    */
   @javax.annotation.Nullable
@@ -131,11 +116,7 @@ public class BacklinksBulkPagesSummaryLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

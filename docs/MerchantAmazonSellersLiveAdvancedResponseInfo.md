@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<MerchantAmazonSellersLiveAdvancedTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<MerchantAmazonSellersLiveAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

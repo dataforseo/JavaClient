@@ -47,7 +47,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetHtmlResultInfo  {
   }
 
   /**
-   * keyword received in a POST arraykeyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
+   * <em>keyword received in a POST array<br></em><strong>keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)</strong>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetHtmlResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetHtmlResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetHtmlResultInfo  {
   }
 
   /**
-   * date and time when the result was receivedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetHtmlResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <strong><code>items</code></strong> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AiOptimizationGeminiLlmScraperTaskGetHtmlResultInfo  {
   }
 
   /**
-   * elements of search results found
+   * <em>elements of search results found</em>
    * @return items
    */
   @javax.annotation.Nullable

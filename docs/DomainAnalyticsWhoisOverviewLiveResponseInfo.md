@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<DomainAnalyticsWhoisOverviewLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<DomainAnalyticsWhoisOverviewLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

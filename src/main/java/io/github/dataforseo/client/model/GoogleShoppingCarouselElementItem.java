@@ -47,7 +47,7 @@ public class GoogleShoppingCarouselElementItem  extends BaseMerchantGoogleShoppi
   }
 
   /**
-   * title of the special offer
+   * <em>title of the special offer</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class GoogleShoppingCarouselElementItem  extends BaseMerchantGoogleShoppi
   }
 
   /**
-   * additional items present in the elementif there are none, equals null
+   * <em>additional items present in the element</em><br>if there are none, equals <code>null</code>
    * @return items
    */
   @javax.annotation.Nullable

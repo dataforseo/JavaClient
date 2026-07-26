@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**tasks** | **List<BacklinksHistoryLiveTaskInfo>** | array of tasks |[optional]|
+**tasks** | **List<BacklinksHistoryLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

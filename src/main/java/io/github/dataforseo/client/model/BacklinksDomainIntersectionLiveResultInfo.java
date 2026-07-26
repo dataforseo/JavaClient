@@ -47,7 +47,7 @@ public class BacklinksDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * target domains, subdomains or webpages in a POST array
+   * <em>target domains, subdomains or webpages in a POST array</em>
    * @return targets
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * total amount of results relevant to your request
+   * <em>total amount of results relevant to your request</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BacklinksDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BacklinksDomainIntersectionLiveResultInfo  {
   }
 
   /**
-   * contains domain that link to all targets from the POST array
+   * <em>contains domain that link to all <code>targets</code> from the POST array</em>
    * @return items
    */
   @javax.annotation.Nullable

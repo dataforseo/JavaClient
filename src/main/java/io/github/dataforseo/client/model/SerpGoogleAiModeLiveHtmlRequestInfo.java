@@ -47,12 +47,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * keyword
-* required field
-* you can specify up to 700 characters in the keyword field
-* all %## will be decoded (plus character '+' will be decoded to a space character)
-* if you need to use the '%' character for your keyword, please specify it as '%25';
-* if you need to use the “+” character for your keyword, please specify it as “%2B”;
+   * <em>keyword</em><br><strong>required field</strong><br>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<br>all %## will be decoded (plus character '+' will be decoded to a space character)<br>if you need to use the '%' character for your <code>keyword</code>, please specify it as '%25';<br>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”;
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -75,12 +70,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don't specify location_code or location_coordinate
-* if you use this field, you don't need to specify location_code or location_coordinate
-* you can receive the list of available locations of the search engine with their location_name by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -103,12 +93,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don't specify location_name_or location_coordinate
-* if you use this field, you don't need to specify location_name or location_coordinate
-* you can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations
-* example:
-* 2840n
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/{{low_se_name}}/locations</code><br>example:<br><code class='long-string'>2840</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -131,15 +116,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don't specify location_name_or location_code
-* if you use this field, you don't need to specify location_name or location_code
-* location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
-* the maximum number of decimal digits for 'latitude' and 'longitude': 7
-* the minimum value for 'radius': 199.9 (mm)
-* the maximum value for 'radius': 199999 (mm)
-* example:
-* 53.476225,-2.243572,200n
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code>_or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: 199.9 (mm)<br>the maximum value for <em>'radius'</em>: 199999 (mm)<br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>n
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -162,10 +139,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don't specify language_code;
-* if you use this field, you don't need to specify language_code;
-* you can receive the list of available languages of the search engine with their language_name by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages;
+   * <em>full name of search engine language</em><br>required field if you don't specify <code>language_code</code>;<br>if you use this field, you don't need to specify <code>language_code</code>;<br>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>;
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -188,10 +162,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don't specify language_name;
-* if you use this field, you don't need to specify language_name;
-* you can receive the list of available languages of the search engine with their language_code_by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languagesn
+   * <em>search engine language code</em><br>required field if you don't specify <code>language_name</code>;<br>if you use this field, you don't need to specify <code>language_name</code>;<br>you can receive the list of available languages of the search engine with their <code>language_code</code>_by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -214,11 +185,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * device type
-* optional field
-* return results for a specific device type
-* can take the values:desktop, mobile
-* default value: desktop
+   * <em>device type</em><br>optional field<br>return results for a specific device type<br>can take the values:<code>desktop</code>, <code>mobile</code><br>default value: <code>desktop</code>
    * @return device
    */
   @javax.annotation.Nullable
@@ -241,12 +208,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * device operating system
-* optional field
-* if you specify desktop in the device field, choose from the following values: windows, macos
-* default value: windows
-* if you specify mobile in the device field, choose from the following values: android, ios
-* default value: android
+   * <em>device operating system</em><br>optional field<br>if you specify <code>desktop</code> in the <code>device</code> field, choose from the following values: <code>windows</code>, <code>macos</code><br>default value: <code>windows</code><br>if you specify <code>mobile</code> in the <code>device</code> field, choose from the following values: <code>android</code>, <code>ios</code><br>default value: <code>android</code>
    * @return os
    */
   @javax.annotation.Nullable
@@ -269,11 +231,7 @@ public class SerpGoogleAiModeLiveHtmlRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

@@ -47,8 +47,7 @@ public class AiOptimizationLlmMentionsTimeseriesNewLostLiveItem  {
   }
 
   /**
-   * date timestamp
-*  date format: 'yyyy-mm-dd'
+   * <em>date timestamp</em><br> date format: <code>'yyyy-mm-dd'</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class AiOptimizationLlmMentionsTimeseriesNewLostLiveItem  {
   }
 
   /**
-   * new LLM mentions
-* indicates the LLM responses that contain the target at the date_to timestamp, did not contain it at the date_from timestamp
+   * <em>new LLM mentions</em><br>indicates the LLM responses that contain the target at the <code>date_to</code> timestamp, did not contain it at the <code>date_from</code> timestamp
    * @return newMentions
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class AiOptimizationLlmMentionsTimeseriesNewLostLiveItem  {
   }
 
   /**
-   * lost LLM mentions
-* indicates the LLM responses that contained the specified target at the date_from timestamp, do not contain it at the date_to timestamp
+   * <em>lost LLM mentions</em><br>indicates the LLM responses that contained the specified target at the <code>date_from</code> timestamp, do not contain it at the <code>date_to</code> timestamp
    * @return lostMentions
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class AiOptimizationLlmMentionsTimeseriesNewLostLiveItem  {
   }
 
   /**
-   * ai_search_volume increment
-* indicates the increase of ai_search_volume values between the current timestamp and the previous one
-* learn more about this metric here
+   * <em>ai_search_volume increment</em><br>indicates the increase of <code>ai_search_volume</code> values between the current timestamp and the previous one<br>learn more about this metric <a href='https://dataforseo.com/help-center/how-ai-search-volume-metrics-work-in-the-llm-mentions-timeseries-endpoints' rel='noopener noreferrer' target='_blank'>here</a>
    * @return newAiSearchVolume
    */
   @javax.annotation.Nullable
@@ -144,9 +139,7 @@ public class AiOptimizationLlmMentionsTimeseriesNewLostLiveItem  {
   }
 
   /**
-   * ai_search_volume decrement
-* indicates the decrease of ai_search_volume values between the current timestamp and the previous one
-* learn more about this metric here
+   * <em>ai_search_volume decrement</em><br>indicates the decrease of <code>ai_search_volume</code> values between the current timestamp and the previous one<br>learn more about this metric <a href='https://dataforseo.com/help-center/how-ai-search-volume-metrics-work-in-the-llm-mentions-timeseries-endpoints' rel='noopener noreferrer' target='_blank'>here</a>
    * @return lostAiSearchVolume
    */
   @javax.annotation.Nullable

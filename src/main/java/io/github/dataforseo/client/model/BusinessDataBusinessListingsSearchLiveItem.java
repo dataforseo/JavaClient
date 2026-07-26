@@ -70,8 +70,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * title of the element in SERP
-* the name of the business entity for which the results are collected
+   * <em>title of the element in SERP</em><br>the name of the business entity for which the results are collected
    * @return title
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * original title of the element
-* original title not translated by Google
+   * <em>original title of the element</em><br>original title not translated by Google
    * @return originalTitle
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * description of the element in SERP
-* the description of the business entity for which the results are collected
+   * <em>description of the element in SERP</em><br>the description of the business entity for which the results are collected
    * @return description
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * business category
-* Google My Business general category that best describes the services provided by the business entity
+   * <em>business category</em><br>Google My Business general category that best describes the services provided by the business entity
    * @return category
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * global category IDs
-* universal category IDs that do not change based on the selected country
+   * <em>global category IDs</em><br>universal category IDs that do not change based on the selected country
    * @return categoryIds
    */
   @javax.annotation.Nullable
@@ -190,8 +185,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * additional business categories
-* additional Google My Business categories that describe the services provided by the business entity in more detail
+   * <em>additional business categories</em><br>additional Google My Business categories that describe the services provided by the business entity in more detail
    * @return additionalCategories
    */
   @javax.annotation.Nullable
@@ -214,9 +208,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment
-* learn more about the identifier in this help center article
+   * <em>google-defined client id</em><br>unique id of a local establishment<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -239,8 +231,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * the unique identifier of the element in SERP
-* learn more about the identifier in this help center article
+   * <em>the unique identifier of the element in SERP</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -263,7 +254,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * address of the business entity
+   * <em>address of the business entity</em>
    * @return address
    */
   @javax.annotation.Nullable
@@ -286,7 +277,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * object containing address components of the business entity
+   * <em>object containing address components of the business entity</em>
    * @return addressInfo
    */
   @javax.annotation.Nullable
@@ -309,9 +300,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * unique place identifier
-* place id of the local establishment featured in the element
-* learn more about the identifier in this help center article
+   * <em>unique place identifier</em><br><a href='https://developers.google.com/places/place-id'>place id</a> of the local establishment featured in the element<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return placeId
    */
   @javax.annotation.Nullable
@@ -334,7 +323,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * phone number of the business entity
+   * <em>phone number of the business entity</em>
    * @return phone
    */
   @javax.annotation.Nullable
@@ -357,7 +346,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * absolute url of the business entity
+   * <em>absolute url of the business entity</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -380,7 +369,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * domain of the business entity
+   * <em>domain of the business entity</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -403,7 +392,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * URL of the logo featured in Google My Business profile
+   * <em>URL of the logo featured in Google My Business profile</em>
    * @return logo
    */
   @javax.annotation.Nullable
@@ -426,7 +415,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * URL of the main image featured in Google My Business profile
+   * <em>URL of the main image featured in Google My Business profile</em>
    * @return mainImage
    */
   @javax.annotation.Nullable
@@ -449,7 +438,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * total count of images featured in Google My Business profile
+   * <em>total count of images featured in Google My Business profile</em>
    * @return totalPhotos
    */
   @javax.annotation.Nullable
@@ -472,7 +461,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * additional information on the business entity
+   * <em>additional information on the business entity</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -495,9 +484,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * latitude coordinate of the local establishments in google maps
-* example:
-* 'latitude': 51.584091
+   * <i>latitude coordinate of the local establishments in google maps</i><br>example:<br><code>'latitude': 51.584091</code>
    * @return latitude
    */
   @javax.annotation.Nullable
@@ -520,9 +507,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * longitude coordinate of the local establishment in google maps
-* example:
-* 'longitude': -0.31365919999999997
+   * <i>longitude coordinate of the local establishment in google maps</i><br>example:<br><code>'longitude': -0.31365919999999997</code>
    * @return longitude
    */
   @javax.annotation.Nullable
@@ -545,7 +530,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * shows whether the entity is verified by its owner on Google Maps
+   * <i>shows whether the entity is verified by its owner on Google Maps</i>
    * @return isClaimed
    */
   @javax.annotation.Nullable
@@ -568,8 +553,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * service details in a form of user-reviewed checks;
-* service details of a business entity displayed in a form of checks and based on user feedback and business category
+   * <em>service details in a form of user-reviewed checks;</em><br>service details of a business entity displayed in a form of checks and based on user feedback and business <code>category</code>
    * @return attributes
    */
   @javax.annotation.Nullable
@@ -592,13 +576,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * keywords mentioned in customer reviews
-* contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword
-* example: 
-* 'place_topics': {
-* 'egg roll': 48,
-* 'birthday': 33
-* }
+   * <em>keywords mentioned in customer reviews</em><br>contains most popular keywords related to products/services mentioned in customer reviews of a business entity and the number of reviews mentioning each keyword<br>example: <code><br>'place_topics': {<br>'egg roll': 48,<br>'birthday': 33<br>}</code>
    * @return placeTopics
    */
   @javax.annotation.Nullable
@@ -621,8 +599,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * the element's rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the element's rating </em><br>the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable
@@ -645,9 +622,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * hotel class rating
-* class ratings range between 1-5 stars, learn more
-* if there is no hotel class rating information, the value will be null
+   * <em>hotel class rating</em><br>class ratings range between 1-5 stars, <a href='https://support.google.com/business/answer/7660515?hl=en' rel='noopener noreferrer' target='_blank'>learn more</a><br>if there is no hotel class rating information, the value will be <code>null</code>
    * @return hotelRating
    */
   @javax.annotation.Nullable
@@ -670,9 +645,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * property price level
-* can take values: inexpensive, moderate, expensive, very_expensive
-* if there is no price level information, the value will be null
+   * <em>property price level</em><br>can take values: <code>inexpensive</code>, <code>moderate</code>, <code>expensive</code>, <code>very_expensive</code><br>if there is no price level information, the value will be <code>null</code>
    * @return priceLevel
    */
   @javax.annotation.Nullable
@@ -695,8 +668,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * the distribution of ratings of the business entity
-* the object displays the number of 1-star to 5-star ratings, as reviewed by users
+   * <em>the distribution of ratings of the business entity</em><br>the object displays the number of 1-star to 5-star ratings, as reviewed by users
    * @return ratingDistribution
    */
   @javax.annotation.Nullable
@@ -719,7 +691,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * related business entities
+   * <em>related business entities</em>
    * @return peopleAlsoSearch
    */
   @javax.annotation.Nullable
@@ -742,8 +714,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * work time details
-* information related to operational hours of the business entity
+   * <em>work time details</em><br>information related to operational hours of the business entity
    * @return workTime
    */
   @javax.annotation.Nullable
@@ -766,8 +737,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * popular times
-* information related to busy hours of the business entity
+   * <em>popular times</em><br>information related to busy hours of the business entity
    * @return popularTimes
    */
   @javax.annotation.Nullable
@@ -790,8 +760,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * available interactions with the business
-* list of options to interact with the business directly from search results
+   * <em>available interactions with the business</em><br>list of options to interact with the business directly from search results
    * @return localBusinessLinks
    */
   @javax.annotation.Nullable
@@ -814,8 +783,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * available contacts of the business
-* list of contacts to interact with the business
+   * <em>available contacts of the business</em><br>list of contacts to interact with the business
    * @return contactInfo
    */
   @javax.annotation.Nullable
@@ -838,8 +806,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -862,10 +829,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * date and time when the data was last updated
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2023-01-26 09:03:15 +00:00
+   * <em>date and time when the data was last updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2023-01-26 09:03:15 +00:00</code>
    * @return lastUpdatedTime
    */
   @javax.annotation.Nullable
@@ -888,10 +852,7 @@ public class BusinessDataBusinessListingsSearchLiveItem  {
   }
 
   /**
-   * date and time when our crawler found the business listing element for the first time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2023-03-11 10:04:11 +00:00
+   * <em>date and time when our crawler found the business listing element for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2023-03-11 10:04:11 +00:00</code>
    * @return firstSeen
    */
   @javax.annotation.Nullable

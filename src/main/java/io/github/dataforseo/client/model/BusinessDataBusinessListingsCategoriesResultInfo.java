@@ -47,7 +47,7 @@ public class BusinessDataBusinessListingsCategoriesResultInfo  {
   }
 
   /**
-   * full name of the category
+   * <em>full name of the category</em>
    * @return categoryName
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BusinessDataBusinessListingsCategoriesResultInfo  {
   }
 
   /**
-   * number of businesses in the category
+   * <em>number of businesses in the category</em>
    * @return businessCount
    */
   @javax.annotation.Nullable

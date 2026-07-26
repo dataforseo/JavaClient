@@ -47,8 +47,7 @@ public class BacklinksDomainIntersectionLiveItem  {
   }
 
   /**
-   * contains data on domains that link to the corresponding targets specified in the POST array
-* data is provided in separate objects corresponding to domains, subdomains or pages specified in the targets object
+   * <em>contains data on domains that link to the corresponding targets specified in the POST array</em><br>data is provided in separate objects corresponding to domains, subdomains or pages specified in the <code>targets</code> object
    * @return domainIntersection
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class BacklinksDomainIntersectionLiveItem  {
   }
 
   /**
-   * contains the domain intersections summary
+   * <em>contains the domain intersections summary</em>
    * @return summary
    */
   @javax.annotation.Nullable

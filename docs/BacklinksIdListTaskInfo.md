@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BacklinksIdListResultInfo>** | array of results |[optional]|
+**result** | **List<BacklinksIdListResultInfo>** | <em>array of results</em> |[optional]|

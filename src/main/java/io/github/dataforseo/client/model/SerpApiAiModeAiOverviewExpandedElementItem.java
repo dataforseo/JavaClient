@@ -47,7 +47,7 @@ public class SerpApiAiModeAiOverviewExpandedElementItem  extends BaseSerpApiAiMo
   }
 
   /**
-   * link anchor text
+   * <em>link anchor text</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class SerpApiAiModeAiOverviewExpandedElementItem  extends BaseSerpApiAiMo
   }
 
   /**
-   * reference texttext snippet from the page that was used to generate the ai_overview_element
+   * <em>reference text</em><br>text snippet from the page that was used to generate the <code>ai_overview_element</code>
    * @return text
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class SerpApiAiModeAiOverviewExpandedElementItem  extends BaseSerpApiAiMo
   }
 
   /**
-   * array of components of the element
+   * <em>array of components of the element</em>
    * @return components
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class SerpApiAiModeAiOverviewExpandedElementItem  extends BaseSerpApiAiMo
   }
 
   /**
-   * additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview
+   * <em>additional references relevant to the item</em><br>includes references to webpages that may have been used to generate the <code>ai_overview</code>
    * @return references
    */
   @javax.annotation.Nullable

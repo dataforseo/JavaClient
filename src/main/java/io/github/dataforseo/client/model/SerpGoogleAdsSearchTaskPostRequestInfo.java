@@ -47,8 +47,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * advertiser identifiersrequired field if target is not specified
-* you can specify the maximum of 25 values in this array;advertiser_ids values for this parameter can be found in the Google Ads Advertisers endpoint;
+   * <p><em>advertiser identifiers</em><p><strong>required field if <code>target</code> is not specified</strong></p><br><p>you can specify the maximum of 25 values in this array;<p><code>advertiser_ids</code> values for this parameter can be found in the <a href='http://docs.dataforseo.com/v3/serp/google/ads_advertisers/task_get/advanced/' rel='noopener noreferrer' target='_blank'>Google Ads Advertisers</a> endpoint;</p>
    * @return advertiserIds
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * domain namerequired field if advertiser_ids is not specifieddomain name associated with an advertiser account
+   * <p><em>domain name</em><p><strong>required field if <code>advertiser_ids</code> is not specified</strong><p>domain name associated with an advertiser account</p>
    * @return target
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * search engine location codeoptional fieldif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ads_search/locationsexample:2840
-* Note: if you don't specify location_name, location_code, or location_coordinate, the ads will be searched across all the available locations
+   * <p><em>search engine location code</em><p>optional field<p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ads_search/locations</code><p>example:<p><code class='long-string'>2840</code></p><br><p><strong>Note:</strong> if you don't specify <code>location_name</code>, <code>location_code</code>, or <code>location_coordinate</code>, the ads will be searched across all the available locations</p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -118,8 +116,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * parsing depthoptional fieldnumber of results in SERPdefault value: 40max value: 700
-* Your account will be billed per each SERP containing up to 40 results;Setting depth above 40 may result in additional charges if the search engine returns more than 40 results;The cost can be calculated on the Pricing page.
+   * <p><em>parsing depth</em><p>optional field<p>number of results in SERP<p>default value: <code>40</code><p>max value: <code>700</code></p><br><strong>Your account will be billed per each SERP containing up to 40 results;</strong><p>Setting depth above 40 may result in additional charges <a href='https://dataforseo.com/help-center/how-many-results-scraped' rel='noopener noreferrer' target='_blank'>if the search engine returns more than 40 results</a>;<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-ads-search-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return depth
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * task priorityoptional fieldcan take the following values:1 – normal execution priority (set by default)2 – high execution priority
-* You will be additionally charged for the tasks with high execution priority.The cost can be calculated on the Pricing page.
+   * <p><em>task priority</em><p>optional field<p>can take the following values:<p>1 – normal execution priority (set by default)<p>2 – high execution priority</p><br>You will be additionally charged for the tasks with high execution priority.<p>The cost can be calculated on the <a title='Pricing' href='https://dataforseo.com/pricing/serp/google-ads-search-serp-api' target='_blank' rel='noopener noreferrer'>Pricing</a> page.
    * @return priority
    */
   @javax.annotation.Nullable
@@ -166,8 +162,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * notification URL of a completed taskoptional fieldwhen a task is completed we will notify you by GET request sent to the URL you have specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/pingscript?id=$idhttp://your-server.com/pingscript?id=$id&tag=$tagNote: special characters in pingback_url will be urlencoded;i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>notification URL of a completed task</em><p>optional field<p>when a task is completed we will notify you by GET request sent to the URL you have specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/pingscript?id=$id</code><p><code>http://your-server.com/pingscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>pingback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return pingbackUrl
    */
   @javax.annotation.Nullable
@@ -190,8 +185,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * URL for sending task resultsoptional fieldonce the task is completed, we will send a POST request with its results compressed in the gzip format to the postback_url you specifiedyou can use the ‘$id’ string as a $id variable and ‘$tag’ as urlencoded $tag variable. We will set the necessary values before sending the request.example:http://your-server.com/postbackscript?id=$idhttp://your-server.com/postbackscript?id=$id&tag=$tagNote: special characters in postback_url will be urlencoded;i.a., the # character will be encoded into %23
-* learn more on our Help Center
+   * <p><em>URL for sending task results</em><p>optional field<p>once the task is completed, we will send a POST request with its results compressed in the <code>gzip</code> format to the <code>postback_url</code> you specified<p>you can use the ‘$id’ string as a <code>$id</code> variable and ‘$tag’ as urlencoded <code>$tag</code> variable. We will set the necessary values before sending the request.<p>example:<p><code>http://your-server.com/postbackscript?id=$id</code><p><code>http://your-server.com/postbackscript?id=$id&tag=$tag</code><p><strong>Note:</strong> special characters in <code>postback_url</code> will be urlencoded;<p>i.a., the <code>#</code> character will be encoded into <code>%23</code></p><br><p>learn more on our <a href='https://dataforseo.com/help-center/pingbacks-postbacks-with-dataforseo-api' target='_blank' rel='noopener noreferrer'>Help Center</a></p>
    * @return postbackUrl
    */
   @javax.annotation.Nullable
@@ -214,7 +208,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
   }
 
   /**
-   * postback_url datatyperequired field if you specify postback_urlcorresponds to the function you used for setting a taskpossible values:advanced
+   * <p><em>postback_url datatype</em><p><strong>required field if you specify <code>postback_url</code></strong><p>corresponds to the function you used for setting a task<p>possible values:<p><code>advanced</code></p>
    * @return postbackData
    */
   @javax.annotation.Nullable
@@ -224,6 +218,167 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
 
   public void setPostbackData(String postbackData) {
     this.postbackData = postbackData;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleAdsSearchTaskPostRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine location</em><p>optional field<p><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ads_search/locations</code><p>example:<p><code class='long-string'>London,England,United Kingdom</code></p><br><p><strong>Note:</strong> if you don't specify <code>location_name</code>, <code>location_code</code>, or <code>location_coordinate</code>, the ads will be searched across all the available locations</p>
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public SerpGoogleAdsSearchTaskPostRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * <p><em>GPS coordinates of a location</em><p>optional field<p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><p>example:<p><code class='long-string'>52.6178549,-155.352142</code></p><br><p><strong>Note:</strong> if you don't specify <code>location_name</code>, <code>location_code</code>, or <code>location_coordinate</code>, the ads will be searched across all the available locations</p>
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleAdsSearchTaskPostRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_PLATFORM = "platform";
+  @SerializedName(SERIALIZED_NAME_PLATFORM)
+  private String platform;
+
+  public SerpGoogleAdsSearchTaskPostRequestInfo platform(String platform) {
+    this.platform = platform;
+    return this;
+  }
+
+  /**
+   * <p><em>advertising platform</em><p>optional field<p>possible values: <code>all</code>, <code>google_play</code>, <code>google_maps</code>, <code>google_search</code>, <code>google_shopping</code>, <code>youtube</code><p>default value: <code>all</code></p>
+   * @return platform
+   */
+  @javax.annotation.Nullable
+  public String getPlatform() {
+    return platform;
+  }
+
+  public void setPlatform(String platform) {
+    this.platform = platform;
+  }
+
+
+  public static final String SERIALIZED_NAME_FORMAT = "format";
+  @SerializedName(SERIALIZED_NAME_FORMAT)
+  private String format;
+
+  public SerpGoogleAdsSearchTaskPostRequestInfo format(String format) {
+    this.format = format;
+    return this;
+  }
+
+  /**
+   * <p><em>ad format</em><p>optional field<p>possible values: <code>all</code>, <code>text</code>, <code>image</code>, <code>video</code></p>
+   * @return format
+   */
+  @javax.annotation.Nullable
+  public String getFormat() {
+    return format;
+  }
+
+  public void setFormat(String format) {
+    this.format = format;
+  }
+
+
+  public static final String SERIALIZED_NAME_DATE_FROM = "date_from";
+  @SerializedName(SERIALIZED_NAME_DATE_FROM)
+  private String dateFrom;
+
+  public SerpGoogleAdsSearchTaskPostRequestInfo dateFrom(String dateFrom) {
+    this.dateFrom = dateFrom;
+    return this;
+  }
+
+  /**
+   * <p><em>starting date of the time range</em><p>optional field<p>required field if <code>date_to</code> is specified; </p><br><p>date format: <code>'yyyy-mm-dd'</code><p>minimum value: 2018-05-31<p>maximum value: today's date<p>example:<p><code>'2020-01-01'</code></p>
+   * @return dateFrom
+   */
+  @javax.annotation.Nullable
+  public String getDateFrom() {
+    return dateFrom;
+  }
+
+  public void setDateFrom(String dateFrom) {
+    this.dateFrom = dateFrom;
+  }
+
+
+  public static final String SERIALIZED_NAME_DATE_TO = "date_to";
+  @SerializedName(SERIALIZED_NAME_DATE_TO)
+  private String dateTo;
+
+  public SerpGoogleAdsSearchTaskPostRequestInfo dateTo(String dateTo) {
+    this.dateTo = dateTo;
+    return this;
+  }
+
+  /**
+   * <p><em>ending date of the time range</em><p>optional field<p>required field if <code>date_from</code> is specified; </p><br><p>date format: <code>'yyyy-mm-dd'</code><p>minimum value: 2018-05-31<p>maximum value: today's date<p>example:<p><code>'2020-01-01'</code></p>
+   * @return dateTo
+   */
+  @javax.annotation.Nullable
+  public String getDateTo() {
+    return dateTo;
+  }
+
+  public void setDateTo(String dateTo) {
+    this.dateTo = dateTo;
   }
 
 
@@ -277,7 +432,14 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
         Objects.equals(this.priority, serpGoogleAdsSearchTaskPostRequestInfo.priority) &&
         Objects.equals(this.pingbackUrl, serpGoogleAdsSearchTaskPostRequestInfo.pingbackUrl) &&
         Objects.equals(this.postbackUrl, serpGoogleAdsSearchTaskPostRequestInfo.postbackUrl) &&
-        Objects.equals(this.postbackData, serpGoogleAdsSearchTaskPostRequestInfo.postbackData);  
+        Objects.equals(this.postbackData, serpGoogleAdsSearchTaskPostRequestInfo.postbackData) &&
+        Objects.equals(this.locationName, serpGoogleAdsSearchTaskPostRequestInfo.locationName) &&
+        Objects.equals(this.locationCoordinate, serpGoogleAdsSearchTaskPostRequestInfo.locationCoordinate) &&
+        Objects.equals(this.tag, serpGoogleAdsSearchTaskPostRequestInfo.tag) &&
+        Objects.equals(this.platform, serpGoogleAdsSearchTaskPostRequestInfo.platform) &&
+        Objects.equals(this.format, serpGoogleAdsSearchTaskPostRequestInfo.format) &&
+        Objects.equals(this.dateFrom, serpGoogleAdsSearchTaskPostRequestInfo.dateFrom) &&
+        Objects.equals(this.dateTo, serpGoogleAdsSearchTaskPostRequestInfo.dateTo);  
     
   }
 
@@ -287,7 +449,7 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(advertiserIds, target, locationCode, depth, priority, pingbackUrl, postbackUrl, postbackData);
+  return Objects.hash(advertiserIds, target, locationCode, depth, priority, pingbackUrl, postbackUrl, postbackData, locationName, locationCoordinate, tag, platform, format, dateFrom, dateTo);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -310,6 +472,13 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
     sb.append("    pingbackUrl: ").append(toIndentedString(pingbackUrl)).append("\n");
     sb.append("    postbackUrl: ").append(toIndentedString(postbackUrl)).append("\n");
     sb.append("    postbackData: ").append(toIndentedString(postbackData)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    platform: ").append(toIndentedString(platform)).append("\n");
+    sb.append("    format: ").append(toIndentedString(format)).append("\n");
+    sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
+    sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -348,6 +517,20 @@ public class SerpGoogleAdsSearchTaskPostRequestInfo  {
     openapiFields.add("postback_url");
     
     openapiFields.add("postback_data");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("location_coordinate");
+    
+    openapiFields.add("tag");
+    
+    openapiFields.add("platform");
+    
+    openapiFields.add("format");
+    
+    openapiFields.add("date_from");
+    
+    openapiFields.add("date_to");
     
 
     // a set of required properties/fields (JSON key names)

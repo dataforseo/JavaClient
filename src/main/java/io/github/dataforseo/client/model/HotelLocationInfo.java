@@ -47,7 +47,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * name of the neighborhood where the hotel is located
+   * <em>name of the neighborhood where the hotel is located</em>
    * @return neighborhood
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * description of the neighborhood where the hotel is located
+   * <em>description of the neighborhood where the hotel is located</em>
    * @return neighborhoodDescription
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * url to the location of the hotel in google maps
+   * <em>url to the location of the hotel in google maps</em>
    * @return mapsUrl
    */
   @javax.annotation.Nullable
@@ -116,10 +116,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * overall score of the hotel location
-* indicates the overall score of the hotel’s location in the range from 1 to 5;
-* calculated based on data from the hotel’s proximity to nearby things to do and restaurants, transportation, and airports;
-* note that the criteria are not weighted equally in the overall score
+   * <em>overall score of the hotel location</em><br>indicates the overall score of the hotel's location in the range from 1 to 5;<br>calculated based on data from the hotel's proximity to nearby things to do and restaurants, transportation, and airports;<br>note that the criteria are not weighted equally in the overall score
    * @return overallScore
    */
   @javax.annotation.Nullable
@@ -142,8 +139,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * category scores of the hotel location
-* the scores of the hotel’s location tied to the categories that indicate the proximity to nearby things to do, restaurants, transportation, and airports;
+   * <em>category scores of the hotel location</em><br>the scores of the hotel's location tied to the categories that indicate the proximity to nearby things to do, restaurants, transportation, and airports;
    * @return scoreByCategories
    */
   @javax.annotation.Nullable
@@ -166,10 +162,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * hotel latitude
-* latitude coordinates of the hotel’s location
-* example:
-* 39.4806397
+   * <em>hotel latitude</em><br>latitude coordinates of the hotel's location<br>example:<br><code>39.4806397</code>
    * @return latitude
    */
   @javax.annotation.Nullable
@@ -192,10 +185,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * hotel longitude
-* latitude coordinates of the hotel’s location
-* example:
-* -106.0512973
+   * <em>hotel longitude</em><br>latitude coordinates of the hotel's location<br>example:<br><code>-106.0512973</code>
    * @return longitude
    */
   @javax.annotation.Nullable
@@ -218,8 +208,7 @@ public class HotelLocationInfo  {
   }
 
   /**
-   * elements of the location chain
-* additional parameters of each element of the location chain
+   * <em>elements of the location chain</em><br>additional parameters of each element of the location chain
    * @return locationChain
    */
   @javax.annotation.Nullable

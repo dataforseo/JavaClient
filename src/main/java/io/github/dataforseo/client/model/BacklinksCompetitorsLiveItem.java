@@ -70,7 +70,7 @@ public class BacklinksCompetitorsLiveItem  {
   }
 
   /**
-   * competitor domain
+   * <em>competitor domain</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -93,10 +93,7 @@ public class BacklinksCompetitorsLiveItem  {
   }
 
   /**
-   * domain rank
-* domain rank across all domains in the database
-* rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-* learn more about the metric and how it is calculated in this help center article
+   * <em>domain rank</em><br>domain rank across all domains in the database<br><code>rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class BacklinksCompetitorsLiveItem  {
   }
 
   /**
-   * indicates the number of backlink intersections with the target specified in the POST array
+   * <em>indicates the number of backlink intersections with the <code>target</code> specified in the POST array</em>
    * @return intersections
    */
   @javax.annotation.Nullable

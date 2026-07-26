@@ -70,9 +70,7 @@ public class BacklinksRedirectInfo  {
   }
 
   /**
-   * general status code
-* you can find the full list of the response codes here
-* Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
+   * <i>general status code</i><br>you can find the full list of the response codes <a href='/v3/appendix/errors'>here</a><br><strong>Note:</strong> we strongly recommend designing a necessary system for handling related exceptional or error conditions
    * @return statusCode
    */
   @javax.annotation.Nullable
@@ -95,7 +93,7 @@ public class BacklinksRedirectInfo  {
   }
 
   /**
-   * indirect link URL
+   * <em>indirect link URL</em>
    * @return url
    */
   @javax.annotation.Nullable

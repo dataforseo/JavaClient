@@ -47,10 +47,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * unique hotel identifier
-* this field will contain the hotel_identifier parameter;
-* example:
-* CgoI-KWyzenM_MV3EAE
+   * <em>unique hotel identifier</em><br>this field will contain the <code>hotel_identifier</code> parameter;<br>example:<br><code>CgoI-KWyzenM_MV3EAE</code>
    * @return hotelIdentifier
    */
   @javax.annotation.Nullable
@@ -73,7 +70,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * location code in a POST array
+   * <em>location code in a POST array</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -96,7 +93,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * language code in a POST array
+   * <em>language code in a POST array</em>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -119,8 +116,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * direct URL to search engine results
-* you can use it to make sure that we provided accurate results
+   * <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results
    * @return checkUrl
    */
   @javax.annotation.Nullable
@@ -143,10 +139,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * date and time when the result was received
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code>
    * @return datetime
    */
   @javax.annotation.Nullable
@@ -169,8 +162,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * hotel title
-* the title of the hotel entity for which the results are collected
+   * <em>hotel title</em><br>the title of the hotel entity for which the results are collected
    * @return title
    */
   @javax.annotation.Nullable
@@ -193,8 +185,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * hotel class rating
-* class rating that ranges between 1-5 stars and displayed after review ratings in hotel summary
+   * <em>hotel class rating</em><br>class rating that ranges between 1-5 stars and displayed after review ratings in hotel summary
    * @return stars
    */
   @javax.annotation.Nullable
@@ -217,8 +208,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * hotel class rating
-* class rating that ranges between 1-5 stars and displayed after review ratings in the hotel summary
+   * <em>hotel class rating</em><br>class rating that ranges between 1-5 stars and displayed after review ratings in the hotel summary
    * @return starsDescription
    */
   @javax.annotation.Nullable
@@ -241,8 +231,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * hotel address
-* physical address of the hotel
+   * <em>hotel address</em><br>physical address of the hotel
    * @return address
    */
   @javax.annotation.Nullable
@@ -265,8 +254,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * hotel phone number
-* contact phone number of the hotel
+   * <em>hotel phone number</em><br>contact phone number of the hotel
    * @return phone
    */
   @javax.annotation.Nullable
@@ -289,7 +277,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * information about the hotel
+   * <em>information about the hotel</em>
    * @return about
    */
   @javax.annotation.Nullable
@@ -312,8 +300,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * information about the hotel location
-* information about the location where the hotel is located
+   * <em>information about the hotel location</em><br>information about the location where the hotel is located
    * @return location
    */
   @javax.annotation.Nullable
@@ -336,8 +323,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * hotel reviews by criteria
-* information about reviews of the hotel entity
+   * <em>hotel reviews by criteria</em><br>information about reviews of the hotel entity
    * @return reviews
    */
   @javax.annotation.Nullable
@@ -360,8 +346,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * images displayed in the hotel overview
-* array containing URLs to images displayed in the hotel overview
+   * <em>images displayed in the hotel overview</em><br>array containing URLs to images displayed in the hotel overview
    * @return overviewImages
    */
   @javax.annotation.Nullable
@@ -384,8 +369,7 @@ public class BusinessDataGoogleHotelInfoTaskGetAdvancedResultInfo  {
   }
 
   /**
-   * pricing details of the hotel entity
-* contains information about the hotel’s prices
+   * <em>pricing details of the hotel entity</em><br>contains information about the hotel's prices
    * @return prices
    */
   @javax.annotation.Nullable

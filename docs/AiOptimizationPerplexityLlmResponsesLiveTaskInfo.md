@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationPerplexityLlmResponsesLiveResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationPerplexityLlmResponsesLiveResultInfo>** | <em>array of results</em> |[optional]|

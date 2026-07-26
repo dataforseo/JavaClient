@@ -47,7 +47,7 @@ public class ReviewMentionInfo  {
   }
 
   /**
-   * title of the evaluated criterion
+   * <em>title of the evaluated criterion</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class ReviewMentionInfo  {
   }
 
   /**
-   * positive score by criterion
+   * <em>positive score by criterion</em>
    * @return positiveScore
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ReviewMentionInfo  {
   }
 
   /**
-   * count of positive reviews by criterion
+   * <em>count of positive reviews by criterion</em>
    * @return positiveCount
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ReviewMentionInfo  {
   }
 
   /**
-   * count of negative reviews by criterion
+   * <em>count of negative reviews by criterion</em>
    * @return negativeCount
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ReviewMentionInfo  {
   }
 
   /**
-   * count of all reviews by criterion
+   * <em>count of all reviews by criterion</em>
    * @return totalCount
    */
   @javax.annotation.Nullable
@@ -162,8 +162,7 @@ public class ReviewMentionInfo  {
   }
 
   /**
-   * element is visible by default
-* indicates whether the review element is visible by default
+   * <em>element is visible by default</em><br>indicates whether the review element is visible by default
    * @return visibleByDefault
    */
   @javax.annotation.Nullable

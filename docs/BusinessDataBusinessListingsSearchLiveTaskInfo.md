@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BusinessDataBusinessListingsSearchLiveResultInfo>** | array of results |[optional]|
+**result** | **List<BusinessDataBusinessListingsSearchLiveResultInfo>** | <em>array of results</em> |[optional]|

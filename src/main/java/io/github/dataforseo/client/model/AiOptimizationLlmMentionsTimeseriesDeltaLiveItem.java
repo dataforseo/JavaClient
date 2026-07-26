@@ -47,8 +47,7 @@ public class AiOptimizationLlmMentionsTimeseriesDeltaLiveItem  {
   }
 
   /**
-   * date timestamp
-*  date format: 'yyyy-mm-dd'
+   * <em>date timestamp</em><br> date format: <code>'yyyy-mm-dd'</code>
    * @return date
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class AiOptimizationLlmMentionsTimeseriesDeltaLiveItem  {
   }
 
   /**
-   * LLM mentions count delta
-* the difference in mentions between the current timestamp and the previous one
+   * <em>LLM mentions count delta</em><br>the difference in <code>mentions</code> between the current timestamp and the previous one
    * @return deltaMentions
    */
   @javax.annotation.Nullable
@@ -95,9 +93,7 @@ public class AiOptimizationLlmMentionsTimeseriesDeltaLiveItem  {
   }
 
   /**
-   * LLM mentions count delta
-* the difference in ai_search_volume values between the current timestamp and the previous one
-* learn more about this metric here
+   * <em>LLM mentions count delta</em><br>the difference in <code>ai_search_volume</code> values between the current timestamp and the previous one<br>learn more about this metric <a href='https://dataforseo.com/help-center/how-ai-search-volume-metrics-work-in-the-llm-mentions-timeseries-endpoints' rel='noopener noreferrer' target='_blank'>here</a>
    * @return deltaAiSearchVolume
    */
   @javax.annotation.Nullable

@@ -47,10 +47,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * product ID
-* required field
-* unique product identifier (ASIN) in Amazon
-* you can receive the asin parameter by making a separate request to the Amazon Products endpoint
+   * <em>product ID</em><br><strong>required field</strong><br><a href='https://dataforseo.com/help-center/asin-in-amazon-api' target='_blank' rel='noopener noreferrer'>unique product identifier (ASIN)</a> in Amazon<br>you can receive the <code>asin</code> parameter by making a separate request to the <a href='/v3/merchant/amazon/products/products/live/advanced/' target='_blank' rel='noopener noreferrer'>Amazon Products endpoint</a>
    * @return asin
    */
   @javax.annotation.Nullable
@@ -73,12 +70,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don't specify location_code or location_coordinate
-* if you use this field, you don't need to specify location_code or location_coordinate
-* you can receive the list of available locations with their location_name parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/locations
-* example:
-* HA1,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with their <code>location_name</code> parameters by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/locations</code><br>example:<br><code class='long-string'>HA1,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -101,13 +93,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don't specify location_name or location_coordinate
-* if you use this field, you don't need to specify location_name or location_coordinate
-* you can receive the list of available locations with their location_code parameters by making a separate request to the
-* https://api.dataforseo.com/v3/merchant/amazon/locations
-* example:
-* 9045969
+   * <em>search engine location code</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_coordinate</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with their <code>location_code</code> parameters by making a separate request to the<br><code>https://api.dataforseo.com/v3/merchant/amazon/locations</code><br>example:<br><code class='long-string'>9045969</code>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -130,14 +116,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don't specify location_name or location_code
-* if you use this field, you don't need to specify location_name or location_code
-* location_coordinate parameter should be specified in the 'latitude,longitude,radius' format
-* the maximum number of decimal digits for 'latitude' and 'longitude': 7
-* the minimum value for 'radius': 199.9
-* example:
-* 53.476225,-2.243572,200
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_code</code><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,radius'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br>the minimum value for <em>'radius'</em>: 199.9<br>example:<br><code class='long-string'>53.476225,-2.243572,200</code>
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -160,13 +139,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don't specify language_code
-* if you use this field, you don't need to specify language_code
-* you can receive the list of available languages with their language_name parameters by making a separate request to the
-* https://api.dataforseo.com/v3/merchant/amazon/languages
-* example:
-* English (United Kingdom)
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify</strong> <code>language_code</code><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages with their <code>language_name</code> parameters by making a separate request to the<br><code>https://api.dataforseo.com/v3/merchant/amazon/languages</code><br>example:<br><code class='long-string'>English (United Kingdom)</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -189,12 +162,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don't specify language_name
-* if you use this field, you don't need to specify language_name
-* you can receive the list of available languages with their language_code parameters by making a separate request to the https://api.dataforseo.com/v3/merchant/amazon/languages
-* example:
-* en_GB
+   * <em>search engine language code</em><br><strong>required field if you don't specify</strong> <code>language_name</code><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code> parameters by making a separate request to the <code>https://api.dataforseo.com/v3/merchant/amazon/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en_GB</code>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -217,12 +185,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * search engine domain
-* optional field
-* we choose the relevant search engine domain automatically according to the location and language you specify
-* however, you can set a custom search engine domain in this field
-* example:
-* amazon.com, amazon.co.uk, amazon.fr, etc.
+   * <em>search engine domain</em><br>optional field<br>we choose the relevant search engine domain automatically according to the location and language you specify<br>however, you can set a custom search engine domain in this field<br>example:<br><em><code>amazon.com</code></em>, <em><code>amazon.co.uk</code></em>, <em><code>amazon.fr</code></em>, etc.
    * @return seDomain
    */
   @javax.annotation.Nullable
@@ -245,11 +208,7 @@ public class MerchantAmazonAsinLiveHtmlRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

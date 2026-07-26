@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**totalCount** | **Long** | total amount of results relevant the request |[optional]|
+**totalCount** | **Long** | <em>total amount of results relevant the request</em> |[optional]|
 **offset** | **Integer** |  |[optional]|
-**searchAfterToken** | **String** | token for subsequent requests<br>by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;<br>search_after_token values are unique for each subsequent task |[optional]|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<AiOptimizationLlmMentionsSearchMentionsLiveItem>** | contains relevant mentions data |[optional]|
+**searchAfterToken** | **String** | <em>token for subsequent requests</em><br>by specifying the unique <code>search_after_token</code> when setting a new task, you will get the subsequent results of the initial task;<br><code>search_after_token</code> values are unique for each subsequent task |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**items** | **List<AiOptimizationLlmMentionsSearchMentionsLiveItem>** | <em>contains relevant mentions data</em> |[optional]|

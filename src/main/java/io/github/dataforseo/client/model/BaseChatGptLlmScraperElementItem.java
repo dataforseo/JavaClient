@@ -70,7 +70,7 @@ public class BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BaseChatGptLlmScraperElementItem  {
   }
 
   /**
-   * absolute rank in SERPabsolute position among all the elements
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements
    * @return rankAbsolute
    */
   @javax.annotation.Nullable

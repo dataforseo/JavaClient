@@ -47,7 +47,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #1
+   * <em>number of organic SERPs where the domain ranks #1</em>
    * @return pos1
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #2-3
+   * <em>number of organic SERPs where the domain ranks #2-3</em>
    * @return pos23
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #4-10
+   * <em>number of organic SERPs where the domain ranks #4-10</em>
    * @return pos410
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #11-20
+   * <em>number of organic SERPs where the domain ranks #11-20</em>
    * @return pos1120
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #21-30
+   * <em>number of organic SERPs where the domain ranks #21-30</em>
    * @return pos2130
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #31-40
+   * <em>number of organic SERPs where the domain ranks #31-40</em>
    * @return pos3140
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #41-50
+   * <em>number of organic SERPs where the domain ranks #41-50</em>
    * @return pos4150
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #51-60
+   * <em>number of organic SERPs where the domain ranks #51-60</em>
    * @return pos5160
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #61-70
+   * <em>number of organic SERPs where the domain ranks #61-70</em>
    * @return pos6170
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #71-80
+   * <em>number of organic SERPs where the domain ranks #71-80</em>
    * @return pos7180
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #81-90
+   * <em>number of organic SERPs where the domain ranks #81-90</em>
    * @return pos8190
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * number of organic SERPs where the domain ranks #91-100
+   * <em>number of organic SERPs where the domain ranks #91-100</em>
    * @return pos91100
    */
   @javax.annotation.Nullable
@@ -323,10 +323,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * estimated traffic volume
-* estimated organic monthly traffic to the domain
-* calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated traffic volume</em><br>estimated organic monthly traffic to the domain<br>calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain ranks for<br>learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-etv-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return etv
    */
   @javax.annotation.Nullable
@@ -349,7 +346,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * total count of organic SERPs that contain the domain
+   * <em>total count of organic SERPs that contain the domain</em>
    * @return count
    */
   @javax.annotation.Nullable
@@ -372,10 +369,7 @@ public class MetricsInfo  {
   }
 
   /**
-   * estimated cost of converting organic search traffic into paid
-* represents the estimated monthly cost of running ads (USD) for all keywords a domain ranks for
-* the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
-* learn more about how the metric is calculated in this help center article
+   * <em>estimated cost of converting organic search traffic into paid</em><br>represents the estimated monthly cost of running ads (USD) for all keywords a domain ranks for<br>the metric is calculated as the product of organic <code>etv</code> and paid <code>cpc</code> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search<br>learn more about how the metric is calculated in <a href='https://dataforseo.com/help-center/how-is-traffic-cost-calculated' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return estimatedPaidTrafficCost
    */
   @javax.annotation.Nullable

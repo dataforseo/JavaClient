@@ -47,7 +47,7 @@ public class BacklinksBulkBacklinksLiveItem  {
   }
 
   /**
-   * domain, subdomain or webpage from a POST array
+   * <em>domain, subdomain or webpage from a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksBulkBacklinksLiveItem  {
   }
 
   /**
-   * number of backlinks pointing to the target
+   * <em>number of backlinks pointing to the <code>target</code></em>
    * @return backlinks
    */
   @javax.annotation.Nullable

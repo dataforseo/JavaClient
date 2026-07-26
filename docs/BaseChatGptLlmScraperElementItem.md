@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **type** | **String** | type of element |[optional]|
-**rankGroup** | **Integer** | group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group |[optional]|
-**rankAbsolute** | **Integer** | absolute rank in SERPabsolute position among all the elements |[optional]|
+**rankGroup** | **Integer** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**rankAbsolute** | **Integer** | <em>absolute rank in SERP</em><br>absolute position among all the elements |[optional]|

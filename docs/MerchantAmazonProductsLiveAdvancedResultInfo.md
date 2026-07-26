@@ -5,16 +5,16 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**keyword** | **String** | keyword received in a POST array<br>keyword is returned with decoded %## (plus character '+' will be decoded to a space character) |[optional]|
+**keyword** | **String** | <em>keyword received in a POST array</em><br><strong>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)</strong> |[optional]|
 **type** | **String** | type of element |[optional]|
-**seDomain** | **String** | search engine domain in a POST array |[optional]|
-**locationCode** | **Integer** | location code in a POST array |[optional]|
-**languageCode** | **String** | language code in a POST array |[optional]|
-**checkUrl** | **String** | direct URL to Amazon results<br>you can use it to make sure that we provided accurate results |[optional]|
-**datetime** | **String** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
-**itemTypes** | **List<String>** | types of search results found in Amazon SERP<br>contains types of all search results (items) found in the returned SERP<br>possible item types:<br>amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches |[optional]|
-**seResultsCount** | **Long** | search engine results count |[optional]|
-**categories** | **Object** | amazon product departments and subcategories |[optional]|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<BaseMerchantAmazonElementItem>** | Amazon product items |[optional]|
+**seDomain** | **String** | <em>search engine domain in a POST array</em> |[optional]|
+**locationCode** | **Integer** | <em>location code in a POST array</em> |[optional]|
+**languageCode** | **String** | <em>language code in a POST array</em> |[optional]|
+**checkUrl** | **String** | <em>direct URL to Amazon results</em><br>you can use it to make sure that we provided accurate results |[optional]|
+**datetime** | **String** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**spell** | **SpellInfo** | <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
+**itemTypes** | **List<String>** | <em>types of search results found in Amazon SERP</em><br>contains types of all search results (<code>items</code>) found in the returned SERP<br>possible item types:<br><code>amazon_serp</code>, <code>amazon_paid</code>, <code>editorial_recommendations</code>, <code>top_rated_from_our_brands</code>, <code>related_searches</code> |[optional]|
+**seResultsCount** | **Long** | <em>search engine results count</em> |[optional]|
+**categories** | **Object** | <em>amazon product departments and subcategories</em> |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <strong><code>items</code></strong> array</em> |[optional]|
+**items** | **List<BaseMerchantAmazonElementItem>** | <em>Amazon product items</em> |[optional]|

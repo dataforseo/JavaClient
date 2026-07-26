@@ -47,8 +47,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
   }
 
   /**
-   * keywordrequired fieldyou can specify up to 700 characters in the keyword fieldall %## will be decoded (plus character ‘+’ will be decoded to a space character)if you need to use the “%” character for your keyword, please specify it as “%25”;if you need to use the “+” character for your keyword, please specify it as “%2B”
-* learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+   * <p><em>keyword</em><p><strong>required field</strong><p>you can specify <strong>up to 700 characters</strong> in the <code>keyword</code> field<p>all %## will be decoded (plus character ‘+’ will be decoded to a space character)<p>if you need to use the “%” character for your <code>keyword</code>, please specify it as “%25”;<p>if you need to use the “+” character for your <code>keyword</code>, please specify it as “%2B”</p><br><p>learn more about rules and limitations of <code>keyword</code> and <code>keywords</code> fields in DataForSEO APIs in this <a href='https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis' rel='noopener noreferrer' target='_blank'>Help Center article</a></p>
    * @return keyword
    */
   @javax.annotation.Nullable
@@ -71,7 +70,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location coderequired field if you don't specify location_name or location_coordinateif you use this field, you don't need to specify location_name or location_coordinateyou can receive the list of available locations of the search engines with their location_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/locationsNote: check  Google Search Help for the list of countries where AI Mode is currently available
+   * <p><em>search engine location code</em><p><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_coordinate</code><p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engines with their <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/locations</code><p><strong>Note:</strong> check <a href='https://support.google.com/websearch/answer/16011537?hl=en&co=GENIE.Platform%3DAndroid#' target='_blank'> Google Search Help</a> for the list of countries where AI Mode is currently available</p>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -94,7 +93,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language coderequired field if you don't specify language_name;if you use this field, you don't need to specify language_name;you can receive the list of available languages of the search engine with their language_code by making a separate request to the https://api.dataforseo.com/v3/serp/google/ai_mode/languages
+   * <p><em>search engine language code</em><p>required field if you don't specify <code>language_name</code>;<p>if you use this field, you don't need to specify <code>language_name</code>;<p>you can receive the list of available languages of the search engine with their <code>language_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code></p>
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -117,7 +116,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
   }
 
   /**
-   * device typeoptional fieldreturn results for a specific device typecan take the values:desktop, mobiledefault value: desktop
+   * <p><em>device type</em><p>optional field<p>return results for a specific device type<p>can take the values:<code>desktop</code>, <code>mobile</code><p>default value: <code>desktop</code></p>
    * @return device
    */
   @javax.annotation.Nullable
@@ -127,6 +126,213 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
 
   public void setDevice(String device) {
     this.device = device;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_NAME = "location_name";
+  @SerializedName(SERIALIZED_NAME_LOCATION_NAME)
+  private String locationName;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo locationName(String locationName) {
+    this.locationName = locationName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine location</em><p><strong>required field if you don't specify</strong> <code>location_code</code> or <code>location_coordinate</code><p><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><p>you can receive the list of available locations of the search engine with their <code>location_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/locations</code><p><strong>Note:</strong> check <a href='https://support.google.com/websearch/answer/16011537?hl=en&co=GENIE.Platform%3DAndroid#' target='_blank'> Google Search Help</a> for the list of countries where AI Mode is currently available</p>
+   * @return locationName
+   */
+  @javax.annotation.Nullable
+  public String getLocationName() {
+    return locationName;
+  }
+
+  public void setLocationName(String locationName) {
+    this.locationName = locationName;
+  }
+
+
+  public static final String SERIALIZED_NAME_LANGUAGE_NAME = "language_name";
+  @SerializedName(SERIALIZED_NAME_LANGUAGE_NAME)
+  private String languageName;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo languageName(String languageName) {
+    this.languageName = languageName;
+    return this;
+  }
+
+  /**
+   * <p><em>full name of search engine language</em><p>required field if you don't specify <code>language_code</code>;<p>if you use this field, you don't need to specify <code>language_code</code>;<p>you can receive the list of available languages of the search engine with their <code>language_name</code> by making a separate request to the <code>https://api.dataforseo.com/v3/serp/google/ai_mode/languages</code>;</p>
+   * @return languageName
+   */
+  @javax.annotation.Nullable
+  public String getLanguageName() {
+    return languageName;
+  }
+
+  public void setLanguageName(String languageName) {
+    this.languageName = languageName;
+  }
+
+
+  public static final String SERIALIZED_NAME_OS = "os";
+  @SerializedName(SERIALIZED_NAME_OS)
+  private String os;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo os(String os) {
+    this.os = os;
+    return this;
+  }
+
+  /**
+   * <p><em>device operating system</em><p>optional field<p>if you specify <code>desktop</code> in the <code>device</code> field, choose from the following values: <code>windows</code>, <code>macos</code><p>default value: <code>windows</code><p>if you specify <code>mobile</code> in the <code>device</code> field, choose from the following values: <code>android</code>, <code>ios</code><p>default value: <code>android</code></p>
+   * @return os
+   */
+  @javax.annotation.Nullable
+  public String getOs() {
+    return os;
+  }
+
+  public void setOs(String os) {
+    this.os = os;
+  }
+
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo tag(String tag) {
+    this.tag = tag;
+    return this;
+  }
+
+  /**
+   * <p><em>user-defined task identifier</em><p>optional field<p><em>the character limit is 255</em><p>you can use this parameter to identify the task and match it with the result<p>you will find the specified <code>tag</code> value in the <code>data</code> object of the response</p>
+   * @return tag
+   */
+  @javax.annotation.Nullable
+  public String getTag() {
+    return tag;
+  }
+
+  public void setTag(String tag) {
+    this.tag = tag;
+  }
+
+
+  public static final String SERIALIZED_NAME_CALCULATE_RECTANGLES = "calculate_rectangles";
+  @SerializedName(SERIALIZED_NAME_CALCULATE_RECTANGLES)
+  private Boolean calculateRectangles;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo calculateRectangles(Boolean calculateRectangles) {
+    this.calculateRectangles = calculateRectangles;
+    return this;
+  }
+
+  /**
+   * <p><em>calculate pixel rankings for SERP elements in advanced results</em><p>optional field<p>pixel ranking refers to the distance between the result snippet and top left corner of the screen;<p><a href='https://dataforseo.com/help-center/pixel-ranking-in-serp-api'>Visit Help Center to learn more>></a><p>by default, the parameter is set to <code>false</code><p><strong>Note:</strong> if set to <code>true</code>, the charge per task will be multiplied by 2</p>
+   * @return calculateRectangles
+   */
+  @javax.annotation.Nullable
+  public Boolean getCalculateRectangles() {
+    return calculateRectangles;
+  }
+
+  public void setCalculateRectangles(Boolean calculateRectangles) {
+    this.calculateRectangles = calculateRectangles;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_WIDTH = "browser_screen_width";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_WIDTH)
+  private Long browserScreenWidth;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo browserScreenWidth(Long browserScreenWidth) {
+    this.browserScreenWidth = browserScreenWidth;
+    return this;
+  }
+
+  /**
+   * <p><em>browser screen width</em><p>optional field<p>you can set a custom browser screen width to calculate pixel rankings for a particular device;<p>can be specified within the following range: <code>240-9999</code>;<p>by default, the parameter is set to:<p><code>1920</code> for <code>desktop</code>;<p><code>360</code> for <code>mobile</code> on <code>android</code>;<p><code>375</code> for <code>mobile</code> on <code>iOS</code>;<p><strong>Note:</strong> to use this parameter, set <code>calculate_rectangles</code> to <code>true</code></p>
+   * @return browserScreenWidth
+   */
+  @javax.annotation.Nullable
+  public Long getBrowserScreenWidth() {
+    return browserScreenWidth;
+  }
+
+  public void setBrowserScreenWidth(Long browserScreenWidth) {
+    this.browserScreenWidth = browserScreenWidth;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT = "browser_screen_height";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_HEIGHT)
+  private Integer browserScreenHeight;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo browserScreenHeight(Integer browserScreenHeight) {
+    this.browserScreenHeight = browserScreenHeight;
+    return this;
+  }
+
+  /**
+   * <p><em>browser screen height</em><p>optional field<p>you can set a custom browser screen height to calculate pixel rankings for a particular device;<p>can be specified within the following range: <code>240-9999</code>;<p>by default, the parameter is set to:<p><code>1080</code> for <code>desktop</code>;<p><code>640</code> for <code>mobile</code> on <code>android</code>;<p><code>812</code> for <code>mobile</code> on <code>iOS</code>;<p><strong>Note:</strong> to use this parameter, set <code>calculate_rectangles</code> to <code>true</code></p>
+   * @return browserScreenHeight
+   */
+  @javax.annotation.Nullable
+  public Integer getBrowserScreenHeight() {
+    return browserScreenHeight;
+  }
+
+  public void setBrowserScreenHeight(Integer browserScreenHeight) {
+    this.browserScreenHeight = browserScreenHeight;
+  }
+
+
+  public static final String SERIALIZED_NAME_BROWSER_SCREEN_RESOLUTION_RATIO = "browser_screen_resolution_ratio";
+  @SerializedName(SERIALIZED_NAME_BROWSER_SCREEN_RESOLUTION_RATIO)
+  private Integer browserScreenResolutionRatio;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo browserScreenResolutionRatio(Integer browserScreenResolutionRatio) {
+    this.browserScreenResolutionRatio = browserScreenResolutionRatio;
+    return this;
+  }
+
+  /**
+   * <p><em>browser screen resolution ratio</em><p>optional field<p>you can set a custom browser screen resolution ratio to calculate pixel rankings for a particular device;<p>can be specified within the following range: <code>0.5-3</code>;<p>by default, the parameter is set to:<p><code>1</code> for <code>desktop</code>;<p><code>3</code> for <code>mobile</code> on <code>android</code>;<p><code>3</code> for <code>mobile</code> on <code>iOS</code>;<p><strong>Note:</strong> to use this parameter, set <code>calculate_rectangles</code> to <code>true</code></p>
+   * @return browserScreenResolutionRatio
+   */
+  @javax.annotation.Nullable
+  public Integer getBrowserScreenResolutionRatio() {
+    return browserScreenResolutionRatio;
+  }
+
+  public void setBrowserScreenResolutionRatio(Integer browserScreenResolutionRatio) {
+    this.browserScreenResolutionRatio = browserScreenResolutionRatio;
+  }
+
+
+  public static final String SERIALIZED_NAME_LOCATION_COORDINATE = "location_coordinate";
+  @SerializedName(SERIALIZED_NAME_LOCATION_COORDINATE)
+  private String locationCoordinate;
+
+  public SerpGoogleAiModeLiveAdvancedRequestInfo locationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
+    return this;
+  }
+
+  /**
+   * <p><em>GPS coordinates of a location</em><p><strong>required field if you don't specify</strong> <code>location_name</code> or <code>location_code</code><p><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><p><code>location_coordinate</code> parameter should be specified in the <em>'latitude,longitude,zoom'</em> format<p>if <em>'zoom'</em> is not specified, <em>9z</em> will be applied as a default value<p>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<p>the minimum value for <em>'zoom'</em>: 4z<p>the maximum value for <em>'zoom'</em>: 18z<p>example:<p><code class='long-string'>52.6178549,-155.352142,18z</code></p>
+   * @return locationCoordinate
+   */
+  @javax.annotation.Nullable
+  public String getLocationCoordinate() {
+    return locationCoordinate;
+  }
+
+  public void setLocationCoordinate(String locationCoordinate) {
+    this.locationCoordinate = locationCoordinate;
   }
 
 
@@ -176,7 +382,16 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
         Objects.equals(this.keyword, serpGoogleAiModeLiveAdvancedRequestInfo.keyword) &&
         Objects.equals(this.locationCode, serpGoogleAiModeLiveAdvancedRequestInfo.locationCode) &&
         Objects.equals(this.languageCode, serpGoogleAiModeLiveAdvancedRequestInfo.languageCode) &&
-        Objects.equals(this.device, serpGoogleAiModeLiveAdvancedRequestInfo.device);  
+        Objects.equals(this.device, serpGoogleAiModeLiveAdvancedRequestInfo.device) &&
+        Objects.equals(this.locationName, serpGoogleAiModeLiveAdvancedRequestInfo.locationName) &&
+        Objects.equals(this.languageName, serpGoogleAiModeLiveAdvancedRequestInfo.languageName) &&
+        Objects.equals(this.os, serpGoogleAiModeLiveAdvancedRequestInfo.os) &&
+        Objects.equals(this.tag, serpGoogleAiModeLiveAdvancedRequestInfo.tag) &&
+        Objects.equals(this.calculateRectangles, serpGoogleAiModeLiveAdvancedRequestInfo.calculateRectangles) &&
+        Objects.equals(this.browserScreenWidth, serpGoogleAiModeLiveAdvancedRequestInfo.browserScreenWidth) &&
+        Objects.equals(this.browserScreenHeight, serpGoogleAiModeLiveAdvancedRequestInfo.browserScreenHeight) &&
+        Objects.equals(this.browserScreenResolutionRatio, serpGoogleAiModeLiveAdvancedRequestInfo.browserScreenResolutionRatio) &&
+        Objects.equals(this.locationCoordinate, serpGoogleAiModeLiveAdvancedRequestInfo.locationCoordinate);  
     
   }
 
@@ -186,7 +401,7 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(keyword, locationCode, languageCode, device);
+  return Objects.hash(keyword, locationCode, languageCode, device, locationName, languageName, os, tag, calculateRectangles, browserScreenWidth, browserScreenHeight, browserScreenResolutionRatio, locationCoordinate);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -205,6 +420,15 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
     sb.append("    locationCode: ").append(toIndentedString(locationCode)).append("\n");
     sb.append("    languageCode: ").append(toIndentedString(languageCode)).append("\n");
     sb.append("    device: ").append(toIndentedString(device)).append("\n");
+    sb.append("    locationName: ").append(toIndentedString(locationName)).append("\n");
+    sb.append("    languageName: ").append(toIndentedString(languageName)).append("\n");
+    sb.append("    os: ").append(toIndentedString(os)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
+    sb.append("    calculateRectangles: ").append(toIndentedString(calculateRectangles)).append("\n");
+    sb.append("    browserScreenWidth: ").append(toIndentedString(browserScreenWidth)).append("\n");
+    sb.append("    browserScreenHeight: ").append(toIndentedString(browserScreenHeight)).append("\n");
+    sb.append("    browserScreenResolutionRatio: ").append(toIndentedString(browserScreenResolutionRatio)).append("\n");
+    sb.append("    locationCoordinate: ").append(toIndentedString(locationCoordinate)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -235,6 +459,24 @@ public class SerpGoogleAiModeLiveAdvancedRequestInfo  {
     openapiFields.add("language_code");
     
     openapiFields.add("device");
+    
+    openapiFields.add("location_name");
+    
+    openapiFields.add("language_name");
+    
+    openapiFields.add("os");
+    
+    openapiFields.add("tag");
+    
+    openapiFields.add("calculate_rectangles");
+    
+    openapiFields.add("browser_screen_width");
+    
+    openapiFields.add("browser_screen_height");
+    
+    openapiFields.add("browser_screen_resolution_ratio");
+    
+    openapiFields.add("location_coordinate");
     
 
     // a set of required properties/fields (JSON key names)

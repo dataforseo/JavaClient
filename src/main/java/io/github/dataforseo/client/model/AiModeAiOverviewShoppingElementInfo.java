@@ -70,7 +70,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * unique product identifier on Google Shoppinglearn more about the parameter in this help center guide
+   * <em>unique product identifier on Google Shopping</em><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/product-id-google-shopping' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return productId
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * unique identifier of the SERP data element
+   * <em>unique identifier of the SERP data element</em>
    * @return dataDocid
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * global product identifier on Google Shoppinglearn more about the parameter in this help center guide
+   * <em>global product identifier on Google Shopping</em><br>learn more about the parameter in <a href='https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api' rel='noopener noreferrer' target='_blank'>this help center guide</a>
    * @return gid
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * reference page title
+   * <em>reference page title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * URL in link
+   * <em>URL in link</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * domain in link
+   * <em>domain in link</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * product rating the popularity rate based on reviews if there is none, the value will be null
+   * <em>product rating </em><br>the popularity rate based on reviews<br> if there is none, the value will be <code>null</code>
    * @return rating
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * product priceproduct price details on the seller's website; if there is none, the value will be null
+   * <em>product price</em><br>product price details on the seller's website;<br> if there is none, the value will be <code>null</code>
    * @return price
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * product sellername of the product's seller as displayed in search results
+   * <em>product seller</em><br>name of the product's seller as displayed in search results
    * @return seller
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * additional information about the result
+   * <em>additional information about the result</em>
    * @return snippet
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant accountexample:by Google
+   * <em>merchant account provider</em><br>e-commerce site that hosts products or websites of individual sellers under the same merchant account<br>example:<br><code>by Google</code>
    * @return marketplace
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * URL to the merchant account providere-commerce site that hosts products or websites of individual sellers under the same merchant account
+   * <em>URL to the merchant account provider</em><br>e-commerce site that hosts products or websites of individual sellers under the same merchant account
    * @return marketplaceUrl
    */
   @javax.annotation.Nullable
@@ -346,7 +346,7 @@ public class AiModeAiOverviewShoppingElementInfo  {
   }
 
   /**
-   * URL of the imagethe URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available)
    * @return imageUrl
    */
   @javax.annotation.Nullable

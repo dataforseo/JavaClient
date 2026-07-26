@@ -47,7 +47,7 @@ public class IntersectionSummaryInfo  {
   }
 
   /**
-   * total number of intersections
+   * <em>total number of intersections</em>
    * @return intersectionsCount
    */
   @javax.annotation.Nullable

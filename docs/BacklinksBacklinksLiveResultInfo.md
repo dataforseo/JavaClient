@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**target** | **String** | target domain in a POST array |[optional]|
-**mode** | **String** | mode specified in a POST array |[optional]|
-**customMode** | **Map<String, Object>** | custom mode specified in a POST array |[optional]|
-**totalCount** | **Long** | total amount of results relevant the request |[optional]|
-**itemsCount** | **Long** | the number of results returned in the items array |[optional]|
-**items** | **List<BacklinksBacklinksLiveItem>** | contains relevant backlinks and referring domains data |[optional]|
-**searchAfterToken** | **String** | token for subsequent requests<br>by specifying the unique search_after_token when setting a new task, you will get the subsequent results of the initial task;<br>search_after_token values are unique for each subsequent task |[optional]|
+**target** | **String** | <em>target domain in a POST array</em> |[optional]|
+**mode** | **String** | <em>mode specified in a POST array</em> |[optional]|
+**customMode** | **Map<String, Object>** | <em>custom mode specified in a POST array</em> |[optional]|
+**totalCount** | **Long** | <em>total amount of results relevant the request</em> |[optional]|
+**itemsCount** | **Long** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**items** | **List<BacklinksBacklinksLiveItem>** | <em>contains relevant backlinks and referring domains data</em> |[optional]|
+**searchAfterToken** | **String** | <em>token for subsequent requests</em><br>by specifying the unique <code>search_after_token</code> when setting a new task, you will get the subsequent results of the initial task;<br><code>search_after_token</code> values are unique for each subsequent task |[optional]|

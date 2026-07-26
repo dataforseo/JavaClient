@@ -47,12 +47,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * unique hotel identifier
-* required field
-* unique identifier of a hotel entity in Google search;
-* you can obtain the value by making a request to Advanced Google SERP API (enclosed in the hotels element of the response), or the Hotel Searches endpoint of Business Data API
-* example:
-* ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE
+   * <em>unique hotel identifier</em><br><strong>required field</strong><br>unique identifier of a hotel entity in Google search;<br>you can obtain the value by making a request to Advanced <a href='/v3/serp/google/organic/overview/' rel='noopener noreferrer' target='_blank'>Google SERP API</a> (enclosed in the <code>hotels</code> element of the response), or the <a href='/v3/business_data/google/hotel_searches/task_post' rel='noopener noreferrer' target='_blank'>Hotel Searches endpoint</a> of Business Data API<br>example:<br><code>ChYIq6SB--i6p6cpGgovbS8wN2s5ODZfEAE</code>
    * @return hotelIdentifier
    */
   @javax.annotation.Nullable
@@ -75,12 +70,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine location
-* required field if you don’t specify location_code or location_coordinate
-* if you use this field, you don’t need to specify location_code or location_coordinate
-* you can receive the list of available locations with location_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/locations
-* example:
-* London,England,United Kingdom
+   * <em>full name of search engine location</em><br><strong>required field if you don't specify <code>location_code</code> or <code>location_coordinate</code></strong><br><strong>if you use this field, you don't need to specify <code>location_code</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with <code>location_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/business_data/google/locations</code><br>example:<br><code class='long-string'>London,England,United Kingdom</code>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -103,12 +93,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine location code
-* required field if you don’t specify location_name or location_coordinate
-* if you use this field, you don’t need to specify location_name or location_coordinate
-* you can receive the list of available locations with location_code by making a separate request to the https://api.dataforseo.com/v3/business_data/google/locations
-* example:
-* 2840
+   * <em>search engine location code</em><br><strong>required field if you don't specify <code>location_name</code>_or <code>location_coordinate</code></strong><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_coordinate</code></strong><br>you can receive the list of available locations with <code>location_code</code> by making a separate request to the <code>https://api.dataforseo.com/v3/business_data/google/locations</code><br>example:<br><code class='long-string'>2840</code>n
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -131,14 +116,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * GPS coordinates of a location
-* required field if you don’t specify location_name or location_code
-* if you use this field, you don’t need to specify location_name or location_code
-* location_coordinate parameter should be specified in the “latitude, longitude” format
-* the maximum number of decimal digits for “latitude” and “longitude”: 7
-* Note: if the coordinates are used to set a location, the search will occur in the nearest settlement;
-* example:
-* 53.476225,-2.243572
+   * <em>GPS coordinates of a location</em><br><strong>required field if you don't specify <code>location_name</code>_or <code>location_code</code></strong><br><strong>if you use this field, you don't need to specify <code>location_name</code> or <code>location_code</code></strong><br><code>location_coordinate</code> parameter should be specified in the <em>'latitude, longitude'</em> format<br>the maximum number of decimal digits for <em>'latitude'</em> and <em>'longitude'</em>: 7<br><strong>Note</strong>: if the coordinates are used to set a location, the search will occur in the nearest settlement;<br>example:<br><code class='long-string'>53.476225,-2.243572</code>n
    * @return locationCoordinate
    */
   @javax.annotation.Nullable
@@ -161,12 +139,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * full name of search engine language
-* required field if you don’t specify language_code
-* if you use this field, you don’t need to specify language_code
-* you can receive the list of available languages with language_name by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages
-* example:
-* English
+   * <em>full name of search engine language</em><br><strong>required field if you don't specify <code>language_code</code></strong><br><strong>if you use this field, you don't need to specify <code>language_code</code></strong><br>you can receive the list of available languages with <code>language_name</code> by making a separate request to <code>https://api.dataforseo.com/v3/business_data/google/languages</code><br>example:<br><code class='long-string'>English</code>
    * @return languageName
    */
   @javax.annotation.Nullable
@@ -189,12 +162,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * search engine language code
-* required field if you don’t specify language_name
-* if you use this field, you don’t need to specify language_name
-* you can receive the list of available languages with their language_code by making a separate request to https://api.dataforseo.com/v3/business_data/google/languages
-* example:
-* en
+   * <em>search engine language code</em><br><strong>required field if you don't specify <code>language_name</code></strong><br><strong>if you use this field, you don't need to specify <code>language_name</code></strong><br>you can receive the list of available languages with their <code>language_code</code>_by making a separate request to <code>https://api.dataforseo.com/v3/business_data/google/languages</code><em><br></em>example:<em><br></em><code class='long-string'>en</code>n
    * @return languageCode
    */
   @javax.annotation.Nullable
@@ -217,13 +185,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * check-in date
-* optional field
-* if you don’t specify this field, tomorrow’s date will be used by default;
-* the value must not be earlier than today’s date
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>check-in date</em><br>optional field<br>if you don't specify this field, tomorrow's date will be used by default;<br>the value must not be earlier than today's date<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return checkIn
    */
   @javax.annotation.Nullable
@@ -246,14 +208,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * check-out date
-* optional field
-* if you don’t specify this field, our system will apply the date of two days from now by default;
-* Note: the value cannot be less than or equal to check_in;
-* the range between check_in and check_out values cannot exceed 30 days
-* date format: 'yyyy-mm-dd'
-* example:
-* '2019-01-15'
+   * <em>check-out date</em><br>optional field<br>if you don't specify this field, our system will apply the date of two days from now by default;<br><strong>Note:</strong> the value cannot be less than or equal to <code>check_in</code>;<br>the range between <code>check_in</code> and <code>check_out</code> values cannot exceed 30 days<br>date format: <code>'yyyy-mm-dd'</code><br>example:<br><code>'2019-01-15'</code>
    * @return checkOut
    */
   @javax.annotation.Nullable
@@ -276,10 +231,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * currency
-* optional field
-* example:
-* 'USD'
+   * <em>currency</em><br>optional field<br>example:<br><code>'USD'</code>
    * @return currency
    */
   @javax.annotation.Nullable
@@ -302,11 +254,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * number of adults
-* optional field
-* if you don’t specify this field, two adults will be used by default
-* example:
-* 1
+   * <em>number of adults</em><br>optional field<br>if you don't specify this field, two adults will be used by default<br>example:<br><code>1</code>
    * @return adults
    */
   @javax.annotation.Nullable
@@ -329,13 +277,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * number and age of children
-* optional field
-* if you don’t specify this field, no children will be included in the search;
-* set the following value if you want to include one 14-years-old child:
-* [14]
-* set the following value if you want to include one 13-years-old child and one 8-years-old child:
-* [13,8]
+   * <em>number and age of children</em><br>optional field<br>if you don't specify this field, no children will be included in the search;<p>set the following value if you want to include one 14-years-old child:<br><code>[14]</code><br>set the following value if you want to include one 13-years-old child and one 8-years-old child:<br><code>[13,8]</code>
    * @return children
    */
   @javax.annotation.Nullable
@@ -358,10 +300,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * load hotel stay prices by dates
-* optional field
-* if you specify this parameter with true, the response will include the prices_by_dates array with hotel stay prices divided by dates
-* if you use this parameter, you will be charged double the base price for a request
+   * <em>load hotel stay prices by dates</em><br>optional field<br>if you specify this parameter with <code>true</code>, the response will include the <code>prices_by_dates</code> array with hotel stay prices divided by dates<br>if you use this parameter, you will be charged <strong>double the base price for a request</strong>
    * @return loadPricesByDates
    */
   @javax.annotation.Nullable
@@ -384,13 +323,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * start date to load prices by dates
-* optional field
-* to use this parameter, you must specify load_prices_by_dates with true
-* if this parameter is not specified, the start date is set to check_in date
-* date format: yyyy-mm-dd
-* example:
-* 2025-05-20
+   * <em>start date to load prices by dates</em><br>optional field<br>to use this parameter, you must specify <code>load_prices_by_dates</code> with <code>true</code><br>if this parameter is not specified, the start date is set to <code>check_in</code> date<br>date format: <code>yyyy-mm-dd</code><br>example:<br><code>2025-05-20</code>
    * @return pricesStartDate
    */
   @javax.annotation.Nullable
@@ -413,13 +346,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * end date to load prices by dates
-* optional field
-* to use this parameter, you must specify load_prices_by_dates with true
-* if this parameter is not specified, you will get prices by date for the month
-* date format: yyyy-mm-dd
-* example:
-* 2025-05-21
+   * <em>end date to load prices by dates</em><br>optional field<br>to use this parameter, you must specify <code>load_prices_by_dates</code> with <code>true</code><br>if this parameter is not specified, you will get prices by date for the month <br>date format: <code>yyyy-mm-dd</code><br>example:<br><code>2025-05-21</code>
    * @return pricesEndDate
    */
   @javax.annotation.Nullable
@@ -442,12 +369,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * predefined period for retrieving daily price data
-* optional field
-* to use this parameter, you must specify load_prices_by_dates with true
-* if the prices_start_date is not specified, the start date is set to check_in date
-* possible values: month, three_months, six_months, year
-* default value: month
+   * <em>predefined period for retrieving daily price data</em><br>optional field<br>to use this parameter, you must specify <code>load_prices_by_dates</code> with <code>true</code><br>if the <code>prices_start_date </code>is not specified, the start date is set to <code>check_in</code> date<br>possible values: <code>month</code>, <code>three_months</code>, <code>six_months</code>, <code>year</code><br>default value: <code>month</code>
    * @return pricesDateRange
    */
   @javax.annotation.Nullable
@@ -470,11 +392,7 @@ public class BusinessDataGoogleHotelInfoLiveAdvancedRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable

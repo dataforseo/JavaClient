@@ -70,7 +70,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * anchor of the backlink
+   * <em>anchor of the backlink</em>
    * @return anchor
    */
   @javax.annotation.Nullable
@@ -93,10 +93,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * rank of the anchor links
-* rank volume that referring websites pass to the target through links with a particular anchor
-* rank is calculated based on the method for node ranking in a linked database – a principle used in the original Google PageRank algorithm
-* learn more about the metric and how it is calculated in this help center article
+   * <em>rank of the anchor links</em><br>rank volume that referring websites pass to the <code>target</code> through links with a particular anchor<br><code>rank</code> is calculated based on the method for node ranking in a linked database - a principle used in the original Google PageRank algorithm<br>learn more about the metric and how it is calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api' rel='noopener noreferrer' target='_blank'>this help center article</a>
    * @return rank
    */
   @javax.annotation.Nullable
@@ -119,7 +116,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * indicates the number of backlinks
+   * <em>indicates the number of backlinks</em>
    * @return backlinks
    */
   @javax.annotation.Nullable
@@ -142,10 +139,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * date and time when our crawler found the backlink with this anchor for the first time
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2019-11-15 12:57:46 +00:00
+   * <em>date and time when our crawler found the backlink with this anchor for the first time</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2019-11-15 12:57:46 +00:00</code>
    * @return firstSeen
    */
   @javax.annotation.Nullable
@@ -168,11 +162,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * date and time when the last backlink with this anchor was lost
-* indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed
-* in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-* example:
-* 2017-01-24 13:20:59 +00:00
+   * <em>date and time when the last backlink with this anchor was lost</em><br>indicates the date and time when our crawler visited the page and it responded with 4xx or 5xx status code or the last backlink was removed<br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code>2017-01-24 13:20:59 +00:00</code>
    * @return lostDate
    */
   @javax.annotation.Nullable
@@ -195,8 +185,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * average spam score of all backlinks with this anchor
-* learn more about how the metric is calculated on this help center page
+   * <em>average spam score of all backlinks with this anchor</em><br>learn more about how the metric is calculated on <a href='https://dataforseo.com/help-center/what-is-spam-score-and-how-is-it-calculated' rel='noopener noreferrer' target='_blank'>this help center page</a>
    * @return backlinksSpamScore
    */
   @javax.annotation.Nullable
@@ -219,8 +208,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * number of broken backlinks
-* number of broken backlinks pointing to the target
+   * <em>number of broken backlinks</em><br>number of broken backlinks pointing to the <code>target</code>
    * @return brokenBacklinks
    */
   @javax.annotation.Nullable
@@ -243,8 +231,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * number of broken pages
-* number of pages that respond with 4xx or 5xx status codes where backlinks are pointing to
+   * <em>number of broken pages</em><br>number of pages that respond with 4xx or 5xx status codes where backlinks are pointing to
    * @return brokenPages
    */
   @javax.annotation.Nullable
@@ -267,7 +254,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * indicates the number of referring domains
+   * <em>indicates the number of referring domains</em>
    * @return referringDomains
    */
   @javax.annotation.Nullable
@@ -290,7 +277,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * number of domains pointing at least one nofollow link to the target
+   * <em>number of domains pointing at least one nofollow link to the <code>target</code></em>
    * @return referringDomainsNofollow
    */
   @javax.annotation.Nullable
@@ -313,7 +300,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * indicates the number of referring main domains
+   * <em>indicates the number of referring main domains</em>
    * @return referringMainDomains
    */
   @javax.annotation.Nullable
@@ -336,7 +323,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * number of main domains pointing at least one nofollow link to the target
+   * <em>number of main domains pointing at least one nofollow link to the <code>target</code></em>
    * @return referringMainDomainsNofollow
    */
   @javax.annotation.Nullable
@@ -359,8 +346,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * number of referring IP addresses
-* number of IP addresses pointing to this page
+   * <em>number of referring IP addresses</em><br>number of IP addresses pointing to this page
    * @return referringIps
    */
   @javax.annotation.Nullable
@@ -383,7 +369,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * number of referring subnetworks
+   * <em>number of referring subnetworks</em>
    * @return referringSubnets
    */
   @javax.annotation.Nullable
@@ -406,7 +392,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * indicates the number of pages pointing to target with this anchor
+   * <em>indicates the number of pages pointing to <code>target</code> with this anchor</em>
    * @return referringPages
    */
   @javax.annotation.Nullable
@@ -429,7 +415,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * number of referring pages pointing at least one nofollow link to the target with this anchor
+   * <em>number of referring pages pointing at least one nofollow link to the <code>target</code> with this anchor</em>
    * @return referringPagesNofollow
    */
   @javax.annotation.Nullable
@@ -452,8 +438,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * top-level domains of the referring links
-* contains top level domains and referring link count per each
+   * <em>top-level domains of the referring links</em><br>contains top level domains and referring link count per each
    * @return referringLinksTld
    */
   @javax.annotation.Nullable
@@ -476,10 +461,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * types of referring links
-* indicates the types of the referring links and link count per each type
-* possible values:
-* anchor, image, link, meta, canonical, alternate, redirect
+   * <em>types of referring links</em><br>indicates the types of the referring links and link count per each type<br>possible values:<br><code>anchor</code>, <code>image</code>, <code>link</code>, <code>meta</code>, <code>canonical</code>, <code>alternate</code>, <code>redirect</code>
    * @return referringLinksTypes
    */
   @javax.annotation.Nullable
@@ -502,8 +484,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * link attributes of the referring links
-* indicates link attributes of the referring links and link count per each attribute
+   * <em>link attributes of the referring links</em><br>indicates link attributes of the referring links and link count per each attribute
    * @return referringLinksAttributes
    */
   @javax.annotation.Nullable
@@ -526,9 +507,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * types of referring platforms
-* indicates referring platform types and and link count per each platform
-* possible values: cms, blogs, ecommerce, message-boards, wikis, news, organization
+   * <em>types of referring platforms</em><br>indicates referring platform types and and link count per each platform<p>possible values: <code>cms</code>, <code>blogs</code>, <code>ecommerce</code>, <code>message-boards</code>, <code>wikis</code>, <code>news</code>, <code>organization</code>
    * @return referringLinksPlatformTypes
    */
   @javax.annotation.Nullable
@@ -551,11 +530,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * semantic locations of the referring links
-* indicates semantic elements in HTML where the referring links are located and link count per each semantic location
-* you can get the full list of semantic elements here
-* examples:
-* article, section, summary
+   * <em>semantic locations of the referring links</em><br>indicates semantic elements in HTML where the referring links are located and link count per each semantic location<p>you can get the full list of semantic elements <a href='https://www.w3schools.com/html/html5_semantic_elements.asp' target='_blank' rel='noopener noreferrer'>here</a><br>examples:<br><code>article</code>, <code>section</code>, <code>summary</code>
    * @return referringLinksSemanticLocations
    */
   @javax.annotation.Nullable
@@ -578,8 +553,7 @@ public class BacklinksAnchorsLiveItem  {
   }
 
   /**
-   * ISO country codes of the referring links
-* indicates ISO country codes of the domains where the referring links are located and the link count per each country
+   * <em>ISO country codes of the referring links</em><br>indicates ISO country codes of the domains where the referring links are located and the link count per each country
    * @return referringLinksCountries
    */
   @javax.annotation.Nullable

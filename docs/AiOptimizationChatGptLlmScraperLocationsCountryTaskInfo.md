@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationChatGptLlmScraperLocationsCountryResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationChatGptLlmScraperLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

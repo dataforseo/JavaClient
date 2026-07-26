@@ -70,7 +70,7 @@ public class BaseMerchantGoogleShoppingProductsElementItem  {
   }
 
   /**
-   * position within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
+   * <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class BaseMerchantGoogleShoppingProductsElementItem  {
   }
 
   /**
-   * absolute rank in SERPabsolute position among all the elements found in Google Shopping SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements found in Google Shopping SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class BaseMerchantGoogleShoppingProductsElementItem  {
   }
 
   /**
-   * alignment of the element in SERPcan take the following values:left, right
+   * <em>alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class BaseMerchantGoogleShoppingProductsElementItem  {
   }
 
   /**
-   * XPath of the element
+   * <em><a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable

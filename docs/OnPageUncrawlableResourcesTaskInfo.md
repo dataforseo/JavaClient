@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<OnPageUncrawlableResourcesResultInfo>** | array of results |[optional]|
+**result** | **List<OnPageUncrawlableResourcesResultInfo>** | <em>array of results</em> |[optional]|

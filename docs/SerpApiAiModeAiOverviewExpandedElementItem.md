@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**title** | **String** | link anchor text |[optional]|
-**text** | **String** | reference texttext snippet from the page that was used to generate the ai_overview_element |[optional]|
-**components** | **List<AiModeAiOverviewExpandedComponentInfo>** | array of components of the element |[optional]|
-**references** | **List<AiModeAiOverviewReferenceInfo>** | additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview |[optional]|
+**title** | **String** | <em>link anchor text</em> |[optional]|
+**text** | **String** | <em>reference text</em><br>text snippet from the page that was used to generate the <code>ai_overview_element</code> |[optional]|
+**components** | **List<AiModeAiOverviewExpandedComponentInfo>** | <em>array of components of the element</em> |[optional]|
+**references** | **List<AiModeAiOverviewReferenceInfo>** | <em>additional references relevant to the item</em><br>includes references to webpages that may have been used to generate the <code>ai_overview</code> |[optional]|

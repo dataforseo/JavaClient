@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**target** | **String** | target in the post array |[optional]|
-**totalCount** | **Long** | total number of relevant items in the database |[optional]|
-**itemsCount** | **Long** | number of items in the results array |[optional]|
-**items** | **List<BacklinksAnchorsLiveItem>** | items array |[optional]|
+**target** | **String** | <em>target in the post array</em> |[optional]|
+**totalCount** | **Long** | <em>total number of relevant items in the database</em> |[optional]|
+**itemsCount** | **Long** | <em>number of items in the results array</em> |[optional]|
+**items** | **List<BacklinksAnchorsLiveItem>** | <em>items array</em> |[optional]|

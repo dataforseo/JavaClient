@@ -70,7 +70,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * group rank in SERPposition within a group of elements with identical type valuespositions of elements with different type values are omitted from rank_group
+   * <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>
    * @return rankGroup
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * absolute rank in SERPabsolute position among all the elements in SERP
+   * <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP
    * @return rankAbsolute
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * SERP pageSERP page on which the element ranks
+   * <em>SERP page</em><br>SERP page on which the element ranks
    * @return page
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * the alignment of the element in SERPcan take the following values:left, right
+   * <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code>
    * @return position
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * the XPath of the element
+   * <em>the <a href='https://en.wikipedia.org/wiki/XPath' rel='noopener noreferrer' target='_blank'>XPath</a> of the element</em>
    * @return xpath
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * content of the element in markdown formatthe text of the ai_overview formatted in the markdown markup language
+   * <em>content of the element in markdown format</em><br>the text of the <code>ai_overview</code> formatted in the <a href='https://en.wikipedia.org/wiki/Markdown' target='_blank'>markdown markup language</a>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * elements of search results found in SERP
+   * <em>items present in the element</em>
    * @return items
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * additional references relevant to the itemincludes references to webpages that may have been used to generate the ai_overview
+   * <em>additional references relevant to the item</em><br>includes references to webpages that may have been used to generate the <code>ai_overview</code>
    * @return references
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class AiModeAiOverviewInfo  {
   }
 
   /**
-   * rectangle parameterscontains cartesian coordinates and pixel dimensions of the result's snippet in SERPequals null if calculate_rectangles in the POST request is not set to true
+   * <em>rectangle parameters</em><br>contains cartesian coordinates and pixel dimensions of the result's snippet in SERP<br>equals <code>null</code> if <code>calculate_rectangles</code> in the POST request is not set to <code>true</code>
    * @return rectangle
    */
   @javax.annotation.Nullable

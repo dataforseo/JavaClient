@@ -47,9 +47,7 @@ public class PeopleAlsoSearch  {
   }
 
   /**
-   * google-defined client id
-* unique id of a local establishment
-* learn more about the identifier in this help center article
+   * <em>google-defined client id</em><br>unique id of a local establishment<br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -72,8 +70,7 @@ public class PeopleAlsoSearch  {
   }
 
   /**
-   * the unique identifier of the element in SERP
-* learn more about the identifier in this help center article
+   * <em>the unique identifier of the element in SERP</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -96,8 +93,7 @@ public class PeopleAlsoSearch  {
   }
 
   /**
-   * title of the element in SERP
-* the name of the business entity for which the results are collected
+   * <em>title of the element in SERP</em><br>the name of the business entity for which the results are collected
    * @return title
    */
   @javax.annotation.Nullable
@@ -120,8 +116,7 @@ public class PeopleAlsoSearch  {
   }
 
   /**
-   * the element's rating 
-* the popularity rate based on reviews and displayed in SERP
+   * <em>the element's rating </em><br>the popularity rate based on reviews and displayed in SERP
    * @return rating
    */
   @javax.annotation.Nullable

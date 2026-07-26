@@ -47,7 +47,7 @@ public class LocationChain  {
   }
 
   /**
-   * card identifier
+   * <em>card identifier</em>
    * @return cardId
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class LocationChain  {
   }
 
   /**
-   * feature identifier
-* learn more about the identifier in this help center article
+   * <em>feature identifier</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return featureId
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class LocationChain  {
   }
 
   /**
-   * client id
-* learn more about the identifier in this help center article
+   * <em>client id</em><br>learn more about the identifier in <a href='https://dataforseo.com/help-center/what-is-cid-place-id-feature-id' target='_blank' rel='noopener noreferrer'>this help center article</a>
    * @return cid
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class LocationChain  {
   }
 
   /**
-   * title of the element in the location chain
+   * <em>title of the element in the location chain</em>
    * @return title
    */
   @javax.annotation.Nullable

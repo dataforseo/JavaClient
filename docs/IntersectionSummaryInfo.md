@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**intersectionsCount** | **Long** | total number of intersections |[optional]|
+**intersectionsCount** | **Long** | <em>total number of intersections</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<BacklinksErrorsResultInfo>** | array of results |[optional]|
+**result** | **List<BacklinksErrorsResultInfo>** | <em>array of results</em> |[optional]|

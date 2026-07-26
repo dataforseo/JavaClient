@@ -47,7 +47,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveResultInfo  {
   }
 
   /**
-   * the number of results returned in the items array
+   * <em>the number of results returned in the <code>items</code> array</em>
    * @return itemsCount
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveResultInfo  {
   }
 
   /**
-   * contains relevant backlinks and referring domains data
+   * <em>contains relevant backlinks and referring domains data</em>
    * @return items
    */
   @javax.annotation.Nullable

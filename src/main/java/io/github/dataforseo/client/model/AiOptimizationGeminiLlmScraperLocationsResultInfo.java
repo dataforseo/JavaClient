@@ -47,7 +47,7 @@ public class AiOptimizationGeminiLlmScraperLocationsResultInfo  {
   }
 
   /**
-   * location code
+   * <em>location code</em>
    * @return locationCode
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class AiOptimizationGeminiLlmScraperLocationsResultInfo  {
   }
 
   /**
-   * full name of the location
+   * <em>full name of the location</em>
    * @return locationName
    */
   @javax.annotation.Nullable
@@ -93,12 +93,7 @@ public class AiOptimizationGeminiLlmScraperLocationsResultInfo  {
   }
 
   /**
-   * the code of the superordinate location
-* example:
-* 'location_code': 9041134,
-* 'location_name': 'Vienna International Airport,Lower Austria,Austria',
-* 'location_code_parent': 20044where location_code_parent corresponds to:'location_code': 20044,
-* 'location_name': 'Lower Austria,Austria'
+   * <em>the code of the superordinate location</em><br>example:<br><code>'location_code': 9041134,<br>'location_name': 'Vienna International Airport,Lower Austria,Austria',<br>'location_code_parent': 20044</code><p>where <code>location_code_parent</code> corresponds to:<p><code>'location_code': 20044,<br>'location_name': 'Lower Austria,Austria'</code>
    * @return locationCodeParent
    */
   @javax.annotation.Nullable
@@ -121,7 +116,7 @@ public class AiOptimizationGeminiLlmScraperLocationsResultInfo  {
   }
 
   /**
-   * ISO country code of the location
+   * <em>ISO country code of the location</em>
    * @return countryIsoCode
    */
   @javax.annotation.Nullable
@@ -144,7 +139,7 @@ public class AiOptimizationGeminiLlmScraperLocationsResultInfo  {
   }
 
   /**
-   * location type
+   * <em>location type</em>
    * @return locationType
    */
   @javax.annotation.Nullable

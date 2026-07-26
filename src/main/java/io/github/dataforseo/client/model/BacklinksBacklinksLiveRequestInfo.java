@@ -47,10 +47,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * domain, subdomain or webpage to get backlinks for
-* required field
-* a domain or a subdomain should be specified without https:// and www.
-* a page should be specified with absolute URL (including http:// or https://)
+   * <em>domain, subdomain or webpage to get backlinks for</em><br><strong>required field</strong><br>a domain or a subdomain should be specified without <code>https://</code> and <code>www.</code><br>a page should be specified with absolute URL (including <code>http://</code> or <code>https://</code>)
    * @return target
    */
   @javax.annotation.Nullable
@@ -73,13 +70,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * results grouping type
-* optional field
-* possible grouping types:
-* as_is – returns all backlinks
-* one_per_domain – returns one backlink per domain
-* one_per_anchor – returns one backlink per anchor
-* default value: as_is
+   * <em>results grouping type</em><br>optional field<br>possible grouping types:<br><code>as_is</code> - returns all backlinks<br><code>one_per_domain</code> - returns one backlink per domain<br><code>one_per_anchor</code> - returns one backlink per anchor<p>default value: <code>as_is</code>
    * @return mode
    */
   @javax.annotation.Nullable
@@ -102,12 +93,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * detailed results grouping type
-* optional field
-* use this object to get a specific number of backlinks per field
-* if you use custom_mode, then mode will be ignored
-* example:
-* 'custom_mode': {'field': 'domain', 'value': 100}
+   * <em>detailed results grouping type</em><br>optional field<br>use this object to get a specific number of backlinks per <code>field</code><br>if you use <code>custom_mode</code>, then <code>mode</code> will be ignored<br>example:<br><code>'custom_mode': {'field': 'domain', 'value': 100}</code>
    * @return customMode
    */
   @javax.annotation.Nullable
@@ -117,65 +103,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
 
   public void setCustomMode(Map<String, Object> customMode) {
     this.customMode = customMode;
-  }
-
-
-  public static final String SERIALIZED_NAME_FIELD = "field";
-  @SerializedName(SERIALIZED_NAME_FIELD)
-  private String field;
-
-  public BacklinksBacklinksLiveRequestInfo field(String field) {
-    this.field = field;
-    return this;
-  }
-
-  /**
-   * response field
-* required field if you choose to specify custom_mode
-* possible values:
-* anchor
-* domain_from
-* domain_from_country
-* tld_from
-* page_from_encoding
-* page_from_language
-* item_type
-* page_from_status_code
-* semantic_location
-   * @return field
-   */
-  @javax.annotation.Nullable
-  public String getField() {
-    return field;
-  }
-
-  public void setField(String field) {
-    this.field = field;
-  }
-
-
-  public static final String SERIALIZED_NAME_VALUE = "value";
-  @SerializedName(SERIALIZED_NAME_VALUE)
-  private Integer value;
-
-  public BacklinksBacklinksLiveRequestInfo value(Integer value) {
-    this.value = value;
-    return this;
-  }
-
-  /**
-   * number of backlinks to return per field
-* required field if you choose to specify custom_mode
-* can be set from 1 to 1000
-   * @return value
-   */
-  @javax.annotation.Nullable
-  public Integer getValue() {
-    return value;
-  }
-
-  public void setValue(Integer value) {
-    this.value = value;
   }
 
 
@@ -189,22 +116,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * array of results filtering parameters
-* optional field
-* you can add several filters at once (8 filters maximum)
-* you should set a logical operator and, or between the conditions
-* the following operators are supported:
-* =, <>, in, not_in, like, not_like, ilike, not_ilike, regex, not_regex, match, not_match
-* you can use the % operator with like and not_like to match any string of zero or more characters
-* example:
-* ['rank','>','80']
-* [['page_from_rank','>','55'],
-* 'and',
-* ['dofollow','=',true]]
-* [['first_seen','>','2017-10-23 11:31:45 +00:00'],
-* 'and',
-* [['anchor','like','%seo%'],'or',['text_pre','like','%seo%']]]
-* The full list of possible filters is available here.
+   * <em>array of results filtering parameters</em><br>optional field<br><strong>you can add several filters at once (8 filters maximum)</strong><br>you should set a logical operator <code>and</code>, <code>or</code> between the conditions<br>the following operators are supported:<br><code>=</code>, <code><></code>, <code>in</code>, <code>not_in</code>, <code>like</code>, <code>not_like</code>, <code>ilike</code>, <code>not_ilike</code>, <code>regex</code>, <code>not_regex</code>, <code>match</code>, <code>not_match</code><br>you can use the <code>%</code> operator with <code>like</code> and <code>not_like</code> to match any string of zero or more characters<br>example:<br><code>['rank','>','80']</code><p><code>[['page_from_rank','>','55'],<br>'and',<br>['dofollow','=',true]]</code><p><code>[['first_seen','>','2017-10-23 11:31:45 +00:00'],<br>'and',<br>[['anchor','like','%seo%'],'or',['text_pre','like','%seo%']]]</code><p>The full list of possible filters is available <a href='/v3/backlinks/filters/?bash' rel='noopener noreferrer' target='_blank'>here.</a>
    * @return filters
    */
   @javax.annotation.Nullable
@@ -227,19 +139,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * results sorting rules
-* optional field
-* you can use the same values as in the filters array to sort the results
-* possible sorting types:
-* asc – results will be sorted in the ascending order
-* desc – results will be sorted in the descending order
-* you should use a comma to set up a sorting type
-* example:
-* ['rank,desc']
-* note that you can set no more than three sorting rules in a single request
-* you should use a comma to separate several sorting rules
-* example:
-* ['domain_from_rank,desc','page_from_rank,asc']
+   * <em>results sorting rules</em><br>optional field<br>you can use the same values as in the <code>filters</code> array to sort the results<br>possible sorting types:<br><code>asc</code> - results will be sorted in the ascending order<br><code>desc</code> - results will be sorted in the descending order<br>you should use a comma to set up a sorting type<br>example:<br><code>['rank,desc']</code><br><strong>note that you can set no more than three sorting rules in a single request</strong><br>you should use a comma to separate several sorting rules<br>example:<br><code>['domain_from_rank,desc','page_from_rank,asc']</code>
    * @return orderBy
    */
   @javax.annotation.Nullable
@@ -262,11 +162,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * offset in the results array of the returned backlinks
-* optional field
-* default value: 0
-* if you specify the 10 value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks;
-* Note: the maximum value is 20,000, use the search_after_token if you would like to offset more results
+   * <em>offset in the results array of the returned backlinks</em><br>optional field<p>default value: <code>0</code><br>if you specify the <code>10</code> value, the first ten backlinks in the results array will be omitted and the data will be provided for the successive backlinks;<br><strong>Note:</strong> the maximum value is <code>20,000</code>, use the <code>search_after_token</code> if you would like to offset more results
    * @return offset
    */
   @javax.annotation.Nullable
@@ -289,13 +185,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * token for subsequent requests
-* optional field
-* provided in the identical filed of the response to each request;
-* use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
-* by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
-* search_after_token values are unique for each subsequent task ;
-* Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+   * <em>token for subsequent requests</em><br>optional field<br>provided in the identical filed of the response to each request;<br>use this parameter to avoid timeouts while trying to obtain over <code>20,000</code> results in a single request;<br>by specifying the unique <code>search_after_token</code> value from the response array, you will get the subsequent results of the initial task;<br><code>search_after_token</code> values are unique for each subsequent task ;<br><strong>Note:</strong> if the <code>search_after_token</code> is specified in the request, all other parameters should be identical to the previous request
    * @return searchAfterToken
    */
   @javax.annotation.Nullable
@@ -318,10 +208,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * the maximum number of returned backlinks
-* optional field
-* default value: 100
-* maximum value: 1000
+   * <em>the maximum number of returned backlinks</em><br>optional field<p>default value: <code>100</code><br>maximum value: <code>1000</code>
    * @return limit
    */
   @javax.annotation.Nullable
@@ -344,14 +231,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * set what backlinks to return and count
-* optional field
-* you can use this field to choose what backlinks will be returned and used for aggregated metrics for your target;
-* possible values:
-* all – all backlinks will be returned and counted;
-* live – backlinks found during the last check will be returned and counted;
-* lost – lost backlinks will be returned and counted;
-* default value: live
+   * <em>set what backlinks to return and count</em><br>optional field<br>you can use this field to choose what backlinks will be returned and used for aggregated metrics for your <code>target</code>;<br>possible values: <br><code>all</code> - all backlinks will be returned and counted;<br><code>live</code> - backlinks found during the last check will be returned and counted;<br><code>lost</code> - lost backlinks will be returned and counted;<p>default value: <code>live</code>
    * @return backlinksStatusType
    */
   @javax.annotation.Nullable
@@ -374,10 +254,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * indicates if the subdomains of the target will be included in the search
-* optional field
-* if set to false, the subdomains will be ignored
-* default value: true
+   * <em>indicates if the subdomains of the <code>target</code> will be included in the search</em><br>optional field<br>if set to <code>false</code>, the subdomains will be ignored<br>default value: <code>true</code>
    * @return includeSubdomains
    */
   @javax.annotation.Nullable
@@ -387,33 +264,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
 
   public void setIncludeSubdomains(Boolean includeSubdomains) {
     this.includeSubdomains = includeSubdomains;
-  }
-
-
-  public static final String SERIALIZED_NAME_INCLUDE_INDIRECT_LINKS = "include_indirect_links";
-  @SerializedName(SERIALIZED_NAME_INCLUDE_INDIRECT_LINKS)
-  private Boolean includeIndirectLinks;
-
-  public BacklinksBacklinksLiveRequestInfo includeIndirectLinks(Boolean includeIndirectLinks) {
-    this.includeIndirectLinks = includeIndirectLinks;
-    return this;
-  }
-
-  /**
-   * indicates if indirect links to the target will be included in the results
-* optional field
-* if set to true, the results will include data on indirect links pointing to a page that either redirects to the target, or points to a canonical page
-* if set to false, indirect links will be ignored
-* default value: true
-   * @return includeIndirectLinks
-   */
-  @javax.annotation.Nullable
-  public Boolean getIncludeIndirectLinks() {
-    return includeIndirectLinks;
-  }
-
-  public void setIncludeIndirectLinks(Boolean includeIndirectLinks) {
-    this.includeIndirectLinks = includeIndirectLinks;
   }
 
 
@@ -427,11 +277,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * indicates if internal backlinks from subdomains to the target will be excluded from the results
-* optional field
-* if set to true, the results will not include data on internal backlinks from subdomains of the same domain as target
-* if set to false, internal links will be included in the results
-* default value: true
+   * <em>indicates if internal backlinks from subdomains to the <code>target</code> will be excluded from the results</em><br>optional field<br>if set to <code>true</code>, the results will not include data on internal backlinks from subdomains of the same domain as <code>target</code><br>if set to <code>false</code>, internal links will be included in the results<br>default value: <code>true</code>
    * @return excludeInternalBacklinks
    */
   @javax.annotation.Nullable
@@ -454,14 +300,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * defines the scale used for calculating and displaying the rank, domain_from_rank, and page_from_rank values
-* optional field
-* you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale
-* possible values:
-* one_hundred — rank values are displayed on a 0–100 scale
-* one_thousand — rank values are displayed on a 0–1000 scale
-* default value: one_thousand
-* learn more about how this parameter works and how ranking metrics are calculated in this Help Center article
+   * <em>defines the scale used for calculating and displaying the <code>rank</code>, <code>domain_from_rank</code>, and <code>page_from_rank</code> values</em><br>optional field<p>you can use this parameter to choose whether rank values are presented on a 0–100 or 0–1000 scale<p>possible values:<br><code>one_hundred</code> — rank values are displayed on a 0–100 scale<br><code>one_thousand</code> — rank values are displayed on a 0–1000 scale<p>default value: <code>one_thousand</code><p>learn more about how this parameter works and how ranking metrics are calculated in <a href='https://dataforseo.com/help-center/what_is_rank_in_backlinks_api#rank_scale'>this Help Center article</a>
    * @return rankScale
    */
   @javax.annotation.Nullable
@@ -484,11 +323,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
   }
 
   /**
-   * user-defined task identifier
-* optional field
-* the character limit is 255
-* you can use this parameter to identify the task and match it with the result
-* you will find the specified tag value in the data object of the response
+   * <em>user-defined task identifier</em><br>optional field<br><em>the character limit is 255</em><br>you can use this parameter to identify the task and match it with the result<br>you will find the specified <code>tag</code> value in the <code>data</code> object of the response
    * @return tag
    */
   @javax.annotation.Nullable
@@ -547,8 +382,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
         Objects.equals(this.target, backlinksBacklinksLiveRequestInfo.target) &&
         Objects.equals(this.mode, backlinksBacklinksLiveRequestInfo.mode) &&
         Objects.equals(this.customMode, backlinksBacklinksLiveRequestInfo.customMode) &&
-        Objects.equals(this.field, backlinksBacklinksLiveRequestInfo.field) &&
-        Objects.equals(this.value, backlinksBacklinksLiveRequestInfo.value) &&
         Objects.equals(this.filters, backlinksBacklinksLiveRequestInfo.filters) &&
         Objects.equals(this.orderBy, backlinksBacklinksLiveRequestInfo.orderBy) &&
         Objects.equals(this.offset, backlinksBacklinksLiveRequestInfo.offset) &&
@@ -556,7 +389,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
         Objects.equals(this.limit, backlinksBacklinksLiveRequestInfo.limit) &&
         Objects.equals(this.backlinksStatusType, backlinksBacklinksLiveRequestInfo.backlinksStatusType) &&
         Objects.equals(this.includeSubdomains, backlinksBacklinksLiveRequestInfo.includeSubdomains) &&
-        Objects.equals(this.includeIndirectLinks, backlinksBacklinksLiveRequestInfo.includeIndirectLinks) &&
         Objects.equals(this.excludeInternalBacklinks, backlinksBacklinksLiveRequestInfo.excludeInternalBacklinks) &&
         Objects.equals(this.rankScale, backlinksBacklinksLiveRequestInfo.rankScale) &&
         Objects.equals(this.tag, backlinksBacklinksLiveRequestInfo.tag);  
@@ -569,7 +401,7 @@ public class BacklinksBacklinksLiveRequestInfo  {
 
   @Override
   public int hashCode() {
-  return Objects.hash(target, mode, customMode, field, value, filters, orderBy, offset, searchAfterToken, limit, backlinksStatusType, includeSubdomains, includeIndirectLinks, excludeInternalBacklinks, rankScale, tag);
+  return Objects.hash(target, mode, customMode, filters, orderBy, offset, searchAfterToken, limit, backlinksStatusType, includeSubdomains, excludeInternalBacklinks, rankScale, tag);
   }
 
   private static <T> int hashCodeNullable(JsonNullable<T> a) {
@@ -587,8 +419,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
     sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("    mode: ").append(toIndentedString(mode)).append("\n");
     sb.append("    customMode: ").append(toIndentedString(customMode)).append("\n");
-    sb.append("    field: ").append(toIndentedString(field)).append("\n");
-    sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");
     sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("    offset: ").append(toIndentedString(offset)).append("\n");
@@ -596,7 +426,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
     sb.append("    limit: ").append(toIndentedString(limit)).append("\n");
     sb.append("    backlinksStatusType: ").append(toIndentedString(backlinksStatusType)).append("\n");
     sb.append("    includeSubdomains: ").append(toIndentedString(includeSubdomains)).append("\n");
-    sb.append("    includeIndirectLinks: ").append(toIndentedString(includeIndirectLinks)).append("\n");
     sb.append("    excludeInternalBacklinks: ").append(toIndentedString(excludeInternalBacklinks)).append("\n");
     sb.append("    rankScale: ").append(toIndentedString(rankScale)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
@@ -629,10 +458,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
     
     openapiFields.add("custom_mode");
     
-    openapiFields.add("field");
-    
-    openapiFields.add("value");
-    
     openapiFields.add("filters");
     
     openapiFields.add("order_by");
@@ -646,8 +471,6 @@ public class BacklinksBacklinksLiveRequestInfo  {
     openapiFields.add("backlinks_status_type");
     
     openapiFields.add("include_subdomains");
-    
-    openapiFields.add("include_indirect_links");
     
     openapiFields.add("exclude_internal_backlinks");
     

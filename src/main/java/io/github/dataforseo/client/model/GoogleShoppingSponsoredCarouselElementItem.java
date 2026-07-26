@@ -47,7 +47,7 @@ public class GoogleShoppingSponsoredCarouselElementItem  extends BaseMerchantGoo
   }
 
   /**
-   * title of the special offer
+   * <em>title of the special offer</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -70,7 +70,7 @@ public class GoogleShoppingSponsoredCarouselElementItem  extends BaseMerchantGoo
   }
 
   /**
-   * items in SERP
+   * <em>items in SERP</em>
    * @return items
    */
   @javax.annotation.Nullable

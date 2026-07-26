@@ -70,7 +70,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * reference page title
+   * <em>reference page title</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * additional text of the element in SERP
+   * <em>additional text of the element in SERP</em>
    * @return text
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * content of the element in markdown format
+   * <em>content of the element in markdown format</em>
    * @return markdown
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * images of the componentif there are none, equals null
+   * <em>images of the component</em><br>if there are none, equals <code>null</code>
    * @return images
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * sitelinksthe links shown below some of Google's search resultsif there are none, equals null
+   * <em>sitelinks</em><br>the links shown below some of Google's search results<br>if there are none, equals <code>null</code>
    * @return links
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class AiModeAiOverviewExpandedComponentInfo  {
   }
 
   /**
-   * references relevant to the elementincludes references to webpages that were used to generate the ai_overview_element
+   * <em>references relevant to the element</em><br>includes references to webpages that were used to generate the <code>ai_overview_element</code>
    * @return references
    */
   @javax.annotation.Nullable

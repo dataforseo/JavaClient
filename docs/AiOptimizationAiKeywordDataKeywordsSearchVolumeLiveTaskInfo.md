@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**result** | **List<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo>** | array of results |[optional]|
+**result** | **List<AiOptimizationAiKeywordDataKeywordsSearchVolumeLiveResultInfo>** | <em>array of results</em> |[optional]|

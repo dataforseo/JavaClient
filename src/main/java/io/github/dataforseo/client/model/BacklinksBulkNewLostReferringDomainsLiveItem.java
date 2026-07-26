@@ -47,7 +47,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem  {
   }
 
   /**
-   * domain, subdomain or webpage from a POST array
+   * <em>domain, subdomain or webpage from a POST array</em>
    * @return target
    */
   @javax.annotation.Nullable
@@ -70,8 +70,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem  {
   }
 
   /**
-   * number of new referring domains
-* number of new referring domains pointing to the target
+   * <em>number of new referring domains</code></em><br>number of new referring domains pointing to the <code>target</code>
    * @return newReferringDomains
    */
   @javax.annotation.Nullable
@@ -94,8 +93,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem  {
   }
 
   /**
-   * number of lost referring domains
-* number of lost referring domains of the target
+   * <em>number of lost referring domains</code></em><br>number of lost referring domains of the <code>target</code>
    * @return lostReferringDomains
    */
   @javax.annotation.Nullable
@@ -118,7 +116,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem  {
   }
 
   /**
-   * number of new referring main domains pointing to the target
+   * <em>number of new referring main domains pointing to the <code>target</code></em>
    * @return newReferringMainDomains
    */
   @javax.annotation.Nullable
@@ -141,7 +139,7 @@ public class BacklinksBulkNewLostReferringDomainsLiveItem  {
   }
 
   /**
-   * number of lost referring main domains pointing to the target
+   * <em>number of lost referring main domains pointing to the <code>target</code></em>
    * @return lostReferringMainDomains
    */
   @javax.annotation.Nullable

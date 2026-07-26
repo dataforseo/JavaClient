@@ -70,7 +70,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * product id
+   * <em>product id</em>
    * @return productId
    */
   @javax.annotation.Nullable
@@ -93,7 +93,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * merchant(s) offering the product
+   * <em>merchant(s) offering the product</em>
    * @return merchants
    */
   @javax.annotation.Nullable
@@ -116,7 +116,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * product identifier tokenBase64-encoded token containing Google Shopping product IDs associated with the product
+   * <em>product identifier token</em><br>Base64-encoded token containing Google Shopping product IDs associated with the product
    * @return idToTokenMap
    */
   @javax.annotation.Nullable
@@ -139,7 +139,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * title of the element
+   * <em>title of the element</em>
    * @return title
    */
   @javax.annotation.Nullable
@@ -162,7 +162,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * rating of the corresponding local businesspopularity rate based on reviews as displayed in the results
+   * <em>rating of the corresponding local business</em><br>popularity rate based on reviews as displayed in the results
    * @return rating
    */
   @javax.annotation.Nullable
@@ -185,7 +185,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * product price
+   * <em>product price</em>
    * @return price
    */
   @javax.annotation.Nullable
@@ -208,7 +208,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * currency of the listed priceISO code of the currency applied to the price
+   * <em>currency of the listed price</em><br>ISO code of the currency applied to the price
    * @return currency
    */
   @javax.annotation.Nullable
@@ -231,7 +231,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * tag text
+   * <em>tag text</em>
    * @return tag
    */
   @javax.annotation.Nullable
@@ -254,7 +254,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * URL
+   * <em>URL</em>
    * @return url
    */
   @javax.annotation.Nullable
@@ -277,7 +277,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * domain
+   * <em>domain</em>
    * @return domain
    */
   @javax.annotation.Nullable
@@ -300,7 +300,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * image URLs of the elementcontains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available)
+   * <em>image URLs of the element</em><br>contains URLs leading to the images on the original resource or DataForSEO storage (in case the original source is not available)
    * @return images
    */
   @javax.annotation.Nullable
@@ -323,7 +323,7 @@ public class ChatGptProductsElement  {
   }
 
   /**
-   * Google Shopping product identifiersarray of Google Shopping product IDs associated with the product
+   * <em>Google Shopping product identifiers</em><br>array of Google Shopping product IDs associated with the product
    * @return productIds
    */
   @javax.annotation.Nullable

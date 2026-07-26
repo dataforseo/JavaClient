@@ -47,8 +47,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * location-based grouping
-* array of objects containing mention metrics segmented by geographical location
+   * <em>location-based grouping</em><br>array of objects containing mention metrics segmented by geographical location
    * @return location
    */
   @javax.annotation.Nullable
@@ -71,8 +70,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * language-based grouping
-* array of objects containing mention metrics segmented by content language
+   * <em>language-based grouping</em><br>array of objects containing mention metrics segmented by content language
    * @return language
    */
   @javax.annotation.Nullable
@@ -95,8 +93,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * platform-based grouping
-* array of group elements containing mention metrics segmented by AI platform
+   * <em>platform-based grouping</em><br>array of group elements containing mention metrics segmented by AI platform
    * @return platform
    */
   @javax.annotation.Nullable
@@ -119,9 +116,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * found top source domains relevant to the target
-* array of objects containing data on top domains that are cited as sources in LLM responses
-* learn more about the sources and how to retrieve LLM citation data at our Help Center
+   * <em>found top source domains relevant to the target</em><br>array of objects containing data on top domains that are cited as sources in LLM responses<br>learn more about the sources and how to retrieve LLM citation data at our <a href='https://dataforseo.com/help-center/how-to-get-llm-citation-data-with-llm-mentions-api' target='_blank'>Help Center</a>
    * @return sourcesDomain
    */
   @javax.annotation.Nullable
@@ -144,8 +139,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * found top search results domains relevant to the target
-* array of objects containing data on top domains that appear in search results related to LLM queries
+   * <em>found top search results domains relevant to the target</em><br>array of objects containing data on top domains that appear in search results related to LLM queries
    * @return searchResultsDomain
    */
   @javax.annotation.Nullable
@@ -168,8 +162,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * data on brand entities relevant to the target
-* array of objects containing data on brand entity titles that appear in search results related to LLM queries
+   * <em>data on brand entities relevant to the target</em><br>array of objects containing data on brand entity titles that appear in search results related to LLM queries
    * @return brandEntitiesTitle
    */
   @javax.annotation.Nullable
@@ -192,8 +185,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * data on brand entities relevant to the target
-* array of objects containing data on brand entity categories that appear in search results related to LLM queries
+   * <em>data on brand entities relevant to the target</em><br>array of objects containing data on brand entity categories that appear in search results related to LLM queries
    * @return brandEntitiesCategory
    */
   @javax.annotation.Nullable
@@ -216,8 +208,7 @@ public class LlmMentionsAggregatedMetricsInfo  {
   }
 
   /**
-   * aggregated mentions metrics summary
-* contains overall aggregated LLM mention metrics across all found domains
+   * <em>aggregated mentions metrics summary</em><br>contains overall aggregated LLM mention metrics across all found domains
    * @return total
    */
   @javax.annotation.Nullable

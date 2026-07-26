@@ -5,11 +5,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**id** | **String** | task identifier of the completed task<br>unique task identifier in our system in the UUID format |[optional]|
-**se** | **String** | search engine specified when setting the task |[optional]|
-**seType** | **String** | type of search engine<br>example: {{low_se_type_under}} |[optional]|
-**datePosted** | **String** | date when the task was posted (in the UTC format) |[optional]|
-**tag** | **String** | user-defined task identifier |[optional]|
-**endpointRegular** | **String** | URL for collecting the results of the Regular task<br>if the Regular function is not supported in the specified endpoint, the value will be null |[optional]|
-**endpointAdvanced** | **String** | URL for collecting the results of the Advanced task<br>if the Advanced function is not supported in the specified endpoint, the value will be null |[optional]|
-**endpointHtml** | **String** | URL for collecting the results of the HTML task<br>if the HTML function is not supported in the specified endpoint, the value will be null |[optional]|
+**id** | **String** | <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong> |[optional]|
+**se** | **String** | <em>search engine specified when setting the task</em> |[optional]|
+**seType** | **String** | <em>type of search engine</em><br>example: <code>{{low_se_type_under}}</code> |[optional]|
+**datePosted** | **String** | <em>date when the task was posted (in the UTC format)</em> |[optional]|
+**tag** | **String** | <em>user-defined task identifier</em> |[optional]|
+**endpointRegular** | **String** | <em>URL for collecting the results of the Regular task</em><br>if the Regular function is not supported in the specified endpoint, the value will be <code>null</code> |[optional]|
+**endpointAdvanced** | **String** | <em>URL for collecting the results of the Advanced task</em><br>if the Advanced function is not supported in the specified endpoint, the value will be <code>null</code> |[optional]|
+**endpointHtml** | **String** | <em>URL for collecting the results of the HTML task</em><br>if the HTML function is not supported in the specified endpoint, the value will be <code>null</code> |[optional]|
